@@ -2170,49 +2170,6 @@
 			}
 		}
 	},
-	"SceLibRudp": {
-		"nid": 87,
-		"modules": {
-			"SceLibRudp": {
-				"nid": 88,
-				"kernel": false,
-				"functions": {
-					"sceRudpActivate": 4044692881,
-					"sceRudpBind": 2339791112,
-					"sceRudpCreateContext": 1999374312,
-					"sceRudpEnableInternalIOThread": 977886825,
-					"sceRudpEnd": 1050711582,
-					"sceRudpFlush": 2370157138,
-					"sceRudpGetContextStatus": 3592467799,
-					"sceRudpGetLocalInfo": 1304704658,
-					"sceRudpGetMaxSegmentSize": 1755654241,
-					"sceRudpGetNumberOfPacketsToRead": 1560568013,
-					"sceRudpGetOption": 3867149795,
-					"sceRudpGetRemoteInfo": 273567035,
-					"sceRudpGetSizeReadable": 1802816034,
-					"sceRudpGetSizeWritable": 2917242588,
-					"sceRudpGetStatus": 3615041733,
-					"sceRudpInit": 583641641,
-					"sceRudpInitiate": 1186346429,
-					"sceRudpNetReceived": 740193134,
-					"sceRudpPollCancel": 2847485694,
-					"sceRudpPollControl": 409373656,
-					"sceRudpPollCreate": 2487064300,
-					"sceRudpPollDestroy": 3383541232,
-					"sceRudpPollWait": 1435602044,
-					"sceRudpProcessEvents": 618884665,
-					"sceRudpRead": 816399246,
-					"sceRudpSetEventHandler": 963257558,
-					"sceRudpSetMaxSegmentSize": 3789395525,
-					"sceRudpSetOption": 3179783626,
-					"sceRudpTerminate": 1428892990,
-					"sceRudpWrite": 1774837269
-				},
-				"variables": {
-				}
-			}
-		}
-	},
 	"SceLiveArea": {
 		"nid": 97,
 		"modules": {
@@ -3501,6 +3458,49 @@
 					"sceRtcTickAddTicks": 1163518683,
 					"sceRtcTickAddWeeks": 3876832832,
 					"sceRtcTickAddYears": 3748412955
+				},
+				"variables": {
+				}
+			}
+		}
+	},
+	"SceRudp": {
+		"nid": 87,
+		"modules": {
+			"SceLibRudp": {
+				"nid": 88,
+				"kernel": false,
+				"functions": {
+					"sceRudpActivate": 4044692881,
+					"sceRudpBind": 2339791112,
+					"sceRudpCreateContext": 1999374312,
+					"sceRudpEnableInternalIOThread": 977886825,
+					"sceRudpEnd": 1050711582,
+					"sceRudpFlush": 2370157138,
+					"sceRudpGetContextStatus": 3592467799,
+					"sceRudpGetLocalInfo": 1304704658,
+					"sceRudpGetMaxSegmentSize": 1755654241,
+					"sceRudpGetNumberOfPacketsToRead": 1560568013,
+					"sceRudpGetOption": 3867149795,
+					"sceRudpGetRemoteInfo": 273567035,
+					"sceRudpGetSizeReadable": 1802816034,
+					"sceRudpGetSizeWritable": 2917242588,
+					"sceRudpGetStatus": 3615041733,
+					"sceRudpInit": 583641641,
+					"sceRudpInitiate": 1186346429,
+					"sceRudpNetReceived": 740193134,
+					"sceRudpPollCancel": 2847485694,
+					"sceRudpPollControl": 409373656,
+					"sceRudpPollCreate": 2487064300,
+					"sceRudpPollDestroy": 3383541232,
+					"sceRudpPollWait": 1435602044,
+					"sceRudpProcessEvents": 618884665,
+					"sceRudpRead": 816399246,
+					"sceRudpSetEventHandler": 963257558,
+					"sceRudpSetMaxSegmentSize": 3789395525,
+					"sceRudpSetOption": 3179783626,
+					"sceRudpTerminate": 1428892990,
+					"sceRudpWrite": 1774837269
 				},
 				"variables": {
 				}
