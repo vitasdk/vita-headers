@@ -12,12 +12,7 @@
 				},
 				"variables": {
 				}
-			}
-		}
-	},
-	"SceAppMgrUser": {
-		"nid": 3,
-		"modules": {
+			},
 			"SceAppMgrUser": {
 				"nid": 4,
 				"kernel": false,
@@ -164,7 +159,7 @@
 			}
 		}
 	},
-	"SceAudiodecUser": {
+	"SceAudiodec": {
 		"nid": 13,
 		"modules": {
 			"SceAudiodecUser": {
@@ -189,7 +184,7 @@
 			}
 		}
 	},
-	"SceAudioencUser": {
+	"SceAudioenc": {
 		"nid": 15,
 		"modules": {
 			"SceAudioencUser": {
@@ -330,7 +325,7 @@
 			}
 		}
 	},
-	"SceCodecEngineUser": {
+	"SceCodecEngine": {
 		"nid": 25,
 		"modules": {
 			"SceCodecEngineUser": {
@@ -471,30 +466,12 @@
 				},
 				"variables": {
 				}
-			}
-		}
-	},
-	"SceCoredumpNounlink": {
-		"nid": 31,
-		"modules": {
+			},
 			"SceCoredumpNounlink": {
 				"nid": 32,
 				"kernel": false,
 				"functions": {
 					"sceCoredumpWriteUserData": 3744685519
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceCpu": {
-		"nid": 33,
-		"modules": {
-			"SceCpu": {
-				"nid": 34,
-				"kernel": false,
-				"functions": {
 				},
 				"variables": {
 				}
@@ -559,22 +536,7 @@
 			}
 		}
 	},
-	"SceDebugLed": {
-		"nid": 41,
-		"modules": {
-			"SceDebugLed": {
-				"nid": 42,
-				"kernel": false,
-				"functions": {
-					"sceKernelGetGPI": 351634127,
-					"sceKernelSetGPO": 2028405459
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceDeci4pUserp": {
+	"SceDeci4p": {
 		"nid": 43,
 		"modules": {
 			"SceDeci4pUserp": {
@@ -623,22 +585,6 @@
 			}
 		}
 	},
-	"SceDipsw": {
-		"nid": 47,
-		"modules": {
-			"SceDipsw": {
-				"nid": 48,
-				"kernel": false,
-				"functions": {
-					"sceKernelCheckDipsw": 477642674,
-					"sceKernelClearDipsw": 2148457665,
-					"sceKernelSetDipsw": 2171622356
-				},
-				"variables": {
-				}
-			}
-		}
-	},
 	"SceDisplay": {
 		"nid": 49,
 		"modules": {
@@ -661,12 +607,7 @@
 				},
 				"variables": {
 				}
-			}
-		}
-	},
-	"SceDisplayUser": {
-		"nid": 51,
-		"modules": {
+			},
 			"SceDisplayUser": {
 				"nid": 52,
 				"kernel": false,
@@ -1421,55 +1362,7 @@
 			}
 		}
 	},
-	"SceIofilemgr": {
-		"nid": 75,
-		"modules": {
-			"SceIofilemgr": {
-				"nid": 76,
-				"kernel": false,
-				"functions": {
-					"sceIoClose": 3339421830,
-					"sceIoDclose": 1110057498,
-					"sceIoGetPriority": 4070863521,
-					"sceIoGetProcessDefaultPriority": 231010747,
-					"sceIoGetThreadDefaultPriority": 2708917507,
-					"sceIoLseek32": 1227172763,
-					"sceIoRead": 4256375443,
-					"sceIoSetPriority": 347264364,
-					"sceIoSetProcessDefaultPriority": 2133506991,
-					"sceIoSetThreadDefaultPriority": 1227956488,
-					"sceIoSyncByFd": 374419289,
-					"sceIoWrite": 888133750
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceJpegEncUser": {
-		"nid": 77,
-		"modules": {
-			"SceJpegEncUser": {
-				"nid": 78,
-				"kernel": false,
-				"functions": {
-					"sceJpegEncoderCsc": 2185919823,
-					"sceJpegEncoderEncode": 3322800460,
-					"sceJpegEncoderEnd": 3363481673,
-					"sceJpegEncoderGetContextSize": 727024717,
-					"sceJpegEncoderInit": 2296025780,
-					"sceJpegEncoderInitWithParam": 781182045,
-					"sceJpegEncoderSetCompressionRatio": 2998413548,
-					"sceJpegEncoderSetHeaderMode": 794341676,
-					"sceJpegEncoderSetOutputAddr": 634727831,
-					"sceJpegEncoderSetValidRegion": 2500981692
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceJpegUser": {
+	"SceJpeg": {
 		"nid": 79,
 		"modules": {
 			"SceJpegUser": {
@@ -1493,9 +1386,81 @@
 			}
 		}
 	},
-	"SceLibKernel": {
+	"SceJpegEnc": {
+		"nid": 77,
+		"modules": {
+			"SceJpegEncUser": {
+				"nid": 78,
+				"kernel": false,
+				"functions": {
+					"sceJpegEncoderCsc": 2185919823,
+					"sceJpegEncoderEncode": 3322800460,
+					"sceJpegEncoderEnd": 3363481673,
+					"sceJpegEncoderGetContextSize": 727024717,
+					"sceJpegEncoderInit": 2296025780,
+					"sceJpegEncoderInitWithParam": 781182045,
+					"sceJpegEncoderSetCompressionRatio": 2998413548,
+					"sceJpegEncoderSetHeaderMode": 794341676,
+					"sceJpegEncoderSetOutputAddr": 634727831,
+					"sceJpegEncoderSetValidRegion": 2500981692
+				},
+				"variables": {
+				}
+			}
+		}
+	},
+	"SceKernel": {
 		"nid": 81,
 		"modules": {
+			"SceCpu": {
+				"nid": 34,
+				"kernel": false,
+				"functions": {
+				},
+				"variables": {
+				}
+			},
+			"SceDebugLed": {
+				"nid": 42,
+				"kernel": false,
+				"functions": {
+					"sceKernelGetGPI": 351634127,
+					"sceKernelSetGPO": 2028405459
+				},
+				"variables": {
+				}
+			},
+			"SceDipsw": {
+				"nid": 48,
+				"kernel": false,
+				"functions": {
+					"sceKernelCheckDipsw": 477642674,
+					"sceKernelClearDipsw": 2148457665,
+					"sceKernelSetDipsw": 2171622356
+				},
+				"variables": {
+				}
+			},
+			"SceIofilemgr": {
+				"nid": 76,
+				"kernel": false,
+				"functions": {
+					"sceIoClose": 3339421830,
+					"sceIoDclose": 1110057498,
+					"sceIoGetPriority": 4070863521,
+					"sceIoGetProcessDefaultPriority": 231010747,
+					"sceIoGetThreadDefaultPriority": 2708917507,
+					"sceIoLseek32": 1227172763,
+					"sceIoRead": 4256375443,
+					"sceIoSetPriority": 347264364,
+					"sceIoSetProcessDefaultPriority": 2133506991,
+					"sceIoSetThreadDefaultPriority": 1227956488,
+					"sceIoSyncByFd": 374419289,
+					"sceIoWrite": 888133750
+				},
+				"variables": {
+				}
+			},
 			"SceLibKernel": {
 				"nid": 82,
 				"kernel": false,
@@ -1766,54 +1731,132 @@
 				},
 				"variables": {
 				}
-			}
-		}
-	},
-	"SceLibLocation": {
-		"nid": 83,
-		"modules": {
-			"SceLibLocation": {
-				"nid": 84,
+			},
+			"SceModulemgr": {
+				"nid": 102,
 				"kernel": false,
 				"functions": {
-					"sceLocationCancelGetLocation": 1901081169,
-					"sceLocationClose": 352220904,
-					"sceLocationConfirm": 3365266791,
-					"sceLocationConfirmAbort": 3821795445,
-					"sceLocationConfirmGetResult": 4278283283,
-					"sceLocationConfirmGetStatus": 1930426434,
-					"sceLocationDenyApplication": 2326740925,
-					"sceLocationGetHeading": 1319001817,
-					"sceLocationGetLocation": 364652488,
-					"sceLocationGetLocationWithTimeout": 385097424,
-					"sceLocationGetMethod": 411885572,
-					"sceLocationGetPermission": 1210458822,
-					"sceLocationInit": 163903092,
-					"sceLocationOpen": 3710326369,
-					"sceLocationReopen": 2985644133,
-					"sceLocationSetGpsEmulationFile": 3725237924,
-					"sceLocationSetThreadParameter": 2852285267,
-					"sceLocationStartHeadingCallback": 131391456,
-					"sceLocationStartLocationCallback": 315748586,
-					"sceLocationStopHeadingCallback": 2464497556,
-					"sceLocationStopLocationCallback": 3979839232,
-					"sceLocationTerm": 511711642
+					"sceKernelGetModuleIdByAddr": 4118383740,
+					"sceKernelGetModuleInfo": 911760815,
+					"sceKernelGetModuleList": 787634207
 				},
 				"variables": {
 				}
-			}
-		}
-	},
-	"SceLibLocationExtension": {
-		"nid": 85,
-		"modules": {
-			"SceLibLocationExtension": {
-				"nid": 86,
+			},
+			"SceProcessmgr": {
+				"nid": 158,
 				"kernel": false,
 				"functions": {
-					"sceLocationCancelQueryLocationWifiHistory": 1188229188,
-					"sceLocationGetLocationWifiHistory": 2195627000,
-					"sceLocationQueryLocationWifiHistory": 662546709
+					"sceKernelGetStderr": 4200479450,
+					"sceKernelGetStdin": 3245506393,
+					"sceKernelGetStdout": 3853148764,
+					"sceKernelLibcClock": 2655377929,
+					"sceKernelLibcGettimeofday": 1267175513,
+					"sceKernelLibcGmtime_r": 3164878797,
+					"sceKernelLibcLocaltime_r": 2498773485,
+					"sceKernelLibcMktime": 2299255865,
+					"sceKernelLibcTime": 3784261,
+					"sceKernelPowerTick": 575834380
+				},
+				"variables": {
+				}
+			},
+			"SceSysmem": {
+				"nid": 220,
+				"kernel": false,
+				"functions": {
+					"sceKernelAllocMemBlock": 3117804510,
+					"sceKernelFindMemBlockByAddr": 2738592209,
+					"sceKernelFreeMemBlock": 2837321198,
+					"sceKernelGetFreeMemorySize": 2278316043,
+					"sceKernelGetMemBlockBase": 3102693400,
+					"sceKernelGetMemBlockInfoByAddr": 1074834789,
+					"sceKernelGetMemBlockInfoByRange": 7290292
+				},
+				"variables": {
+				}
+			},
+			"SceThreadmgr": {
+				"nid": 226,
+				"kernel": false,
+				"functions": {
+					"sceKernelCancelCallback": 812916466,
+					"sceKernelChangeActiveCpuMask": 1143800,
+					"sceKernelChangeThreadCpuAffinityMask": 353538420,
+					"sceKernelChangeThreadPriority": 3170974194,
+					"sceKernelChangeThreadVfpException": 3424189358,
+					"sceKernelCheckCallback": 3846062582,
+					"sceKernelCheckWaitableStatus": 3653072107,
+					"sceKernelClearEvent": 2066369320,
+					"sceKernelClearEventFlag": 1287158951,
+					"sceKernelCloseCond": 365334752,
+					"sceKernelCloseEventFlag": 2590569799,
+					"sceKernelCloseMsgPipe": 319135845,
+					"sceKernelCloseMutex": 65157878,
+					"sceKernelCloseRWLock": 4250654145,
+					"sceKernelCloseSema": 2732072862,
+					"sceKernelCloseSimpleEvent": 4277455443,
+					"sceKernelCloseTimer": 2900758090,
+					"sceKernelCreateCallback": 2979854313,
+					"sceKernelCreateThreadForUser": 3237672611,
+					"sceKernelDelayThread": 1265065221,
+					"sceKernelDelayThreadCB": 2617344225,
+					"sceKernelDeleteCallback": 3563677547,
+					"sceKernelDeleteCond": 2275307197,
+					"sceKernelDeleteEventFlag": 1480594988,
+					"sceKernelDeleteMsgPipe": 3884698871,
+					"sceKernelDeleteMutex": 3413668109,
+					"sceKernelDeleteRWLock": 3879094730,
+					"sceKernelDeleteSema": 3677525130,
+					"sceKernelDeleteSimpleEvent": 546111016,
+					"sceKernelDeleteThread": 465429465,
+					"sceKernelDeleteTimer": 2870887108,
+					"sceKernelExitDeleteThread": 488103631,
+					"sceKernelGetCallbackCount": 59131093,
+					"sceKernelGetProcessId": 2647346042,
+					"sceKernelGetThreadStackFreeSize": 1334459808,
+					"sceKernelGetThreadmgrUIDClass": 3379007359,
+					"sceKernelGetTimerBaseWide": 1572608352,
+					"sceKernelGetTimerTimeWide": 1056780645,
+					"sceKernelNotifyCallback": 2758292882,
+					"sceKernelOpenCond": 1992138799,
+					"sceKernelOpenEventFlag": 3155818657,
+					"sceKernelOpenMsgPipe": 236763638,
+					"sceKernelOpenMutex": 1390506370,
+					"sceKernelOpenRWLock": 3461415318,
+					"sceKernelOpenSema": 3420599751,
+					"sceKernelOpenSimpleEvent": 1310608888,
+					"sceKernelOpenTimer": 3068298983,
+					"sceKernelPollSema": 2255417416,
+					"sceKernelPulseEvent": 2368191190,
+					"sceKernelRegisterCallbackToEvent": 1996175337,
+					"sceKernelSendSignal": 3569575858,
+					"sceKernelSetEvent": 843192525,
+					"sceKernelSetEventFlag": 3969179639,
+					"sceKernelSetTimerTimeWide": 658197069,
+					"sceKernelSignalCond": 1859314396,
+					"sceKernelSignalCondAll": 3269962786,
+					"sceKernelSignalCondTo": 308933868,
+					"sceKernelSignalSema": 3870777809,
+					"sceKernelStartTimer": 1208557068,
+					"sceKernelStopTimer": 2258542368,
+					"sceKernelTryLockMutex": 1929125716,
+					"sceKernelTryLockReadRWLock": 4024280150,
+					"sceKernelTryLockWriteRWLock": 543996774,
+					"sceKernelUnlockMutex": 439824072,
+					"sceKernelUnlockReadRWLock": 1056510277,
+					"sceKernelUnlockWriteRWLock": 3021280151,
+					"sceKernelUnregisterCallbackFromEvent": 407251729,
+					"sceKernelUnregisterCallbackFromEventAll": 2290774881
+				},
+				"variables": {
+				}
+			},
+			"SceThreadmgrCoredumpTime": {
+				"nid": 228,
+				"kernel": false,
+				"functions": {
+					"sceKernelExitThread": 210385121
 				},
 				"variables": {
 				}
@@ -4068,7 +4111,7 @@
 			}
 		}
 	},
-	"SceLiveAreaUtil": {
+	"SceLiveArea": {
 		"nid": 97,
 		"modules": {
 			"SceLiveAreaUtil": {
@@ -4089,6 +4132,57 @@
 			}
 		}
 	},
+	"SceLocation": {
+		"nid": 83,
+		"modules": {
+			"SceLibLocation": {
+				"nid": 84,
+				"kernel": false,
+				"functions": {
+					"sceLocationCancelGetLocation": 1901081169,
+					"sceLocationClose": 352220904,
+					"sceLocationConfirm": 3365266791,
+					"sceLocationConfirmAbort": 3821795445,
+					"sceLocationConfirmGetResult": 4278283283,
+					"sceLocationConfirmGetStatus": 1930426434,
+					"sceLocationDenyApplication": 2326740925,
+					"sceLocationGetHeading": 1319001817,
+					"sceLocationGetLocation": 364652488,
+					"sceLocationGetLocationWithTimeout": 385097424,
+					"sceLocationGetMethod": 411885572,
+					"sceLocationGetPermission": 1210458822,
+					"sceLocationInit": 163903092,
+					"sceLocationOpen": 3710326369,
+					"sceLocationReopen": 2985644133,
+					"sceLocationSetGpsEmulationFile": 3725237924,
+					"sceLocationSetThreadParameter": 2852285267,
+					"sceLocationStartHeadingCallback": 131391456,
+					"sceLocationStartLocationCallback": 315748586,
+					"sceLocationStopHeadingCallback": 2464497556,
+					"sceLocationStopLocationCallback": 3979839232,
+					"sceLocationTerm": 511711642
+				},
+				"variables": {
+				}
+			}
+		}
+	},
+	"SceLocationExtension": {
+		"nid": 85,
+		"modules": {
+			"SceLibLocationExtension": {
+				"nid": 86,
+				"kernel": false,
+				"functions": {
+					"sceLocationCancelQueryLocationWifiHistory": 1188229188,
+					"sceLocationGetLocationWifiHistory": 2195627000,
+					"sceLocationQueryLocationWifiHistory": 662546709
+				},
+				"variables": {
+				}
+			}
+		}
+	},
 	"SceMd5": {
 		"nid": 99,
 		"modules": {
@@ -4100,22 +4194,6 @@
 					"sceMd5BlockResult": 3108683651,
 					"sceMd5BlockUpdate": 155863298,
 					"sceMd5Digest": 3091578059
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceModulemgr": {
-		"nid": 101,
-		"modules": {
-			"SceModulemgr": {
-				"nid": 102,
-				"kernel": false,
-				"functions": {
-					"sceKernelGetModuleIdByAddr": 4118383740,
-					"sceKernelGetModuleInfo": 911760815,
-					"sceKernelGetModuleList": 787634207
 				},
 				"variables": {
 				}
@@ -4729,7 +4807,7 @@
 			}
 		}
 	},
-	"SceNpPartyGameUtil": {
+	"SceNpParty": {
 		"nid": 135,
 		"modules": {
 			"SceNpPartyGameUtil": {
@@ -5115,29 +5193,6 @@
 			}
 		}
 	},
-	"SceProcessmgr": {
-		"nid": 157,
-		"modules": {
-			"SceProcessmgr": {
-				"nid": 158,
-				"kernel": false,
-				"functions": {
-					"sceKernelGetStderr": 4200479450,
-					"sceKernelGetStdin": 3245506393,
-					"sceKernelGetStdout": 3853148764,
-					"sceKernelLibcClock": 2655377929,
-					"sceKernelLibcGettimeofday": 1267175513,
-					"sceKernelLibcGmtime_r": 3164878797,
-					"sceKernelLibcLocaltime_r": 2498773485,
-					"sceKernelLibcMktime": 2299255865,
-					"sceKernelLibcTime": 3784261,
-					"sceKernelPowerTick": 575834380
-				},
-				"variables": {
-				}
-			}
-		}
-	},
 	"ScePspnetAdhoc": {
 		"nid": 159,
 		"modules": {
@@ -5299,12 +5354,7 @@
 				},
 				"variables": {
 				}
-			}
-		}
-	},
-	"SceRtcUser": {
-		"nid": 169,
-		"modules": {
+			},
 			"SceRtcUser": {
 				"nid": 170,
 				"kernel": false,
@@ -6044,26 +6094,6 @@
 			}
 		}
 	},
-	"SceSysmem": {
-		"nid": 219,
-		"modules": {
-			"SceSysmem": {
-				"nid": 220,
-				"kernel": false,
-				"functions": {
-					"sceKernelAllocMemBlock": 3117804510,
-					"sceKernelFindMemBlockByAddr": 2738592209,
-					"sceKernelFreeMemBlock": 2837321198,
-					"sceKernelGetFreeMemorySize": 2278316043,
-					"sceKernelGetMemBlockBase": 3102693400,
-					"sceKernelGetMemBlockInfoByAddr": 1074834789,
-					"sceKernelGetMemBlockInfoByRange": 7290292
-				},
-				"variables": {
-				}
-			}
-		}
-	},
 	"SceSysmodule": {
 		"nid": 221,
 		"modules": {
@@ -6104,101 +6134,6 @@
 					"sceSystemGestureUpdatePrimitiveTouchRecognizer": 3746326106,
 					"sceSystemGestureUpdateTouchRecognizer": 2233446724,
 					"sceSystemGestureUpdateTouchRecognizerRectangle": 2849712630
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceThreadmgr": {
-		"nid": 225,
-		"modules": {
-			"SceThreadmgr": {
-				"nid": 226,
-				"kernel": false,
-				"functions": {
-					"sceKernelCancelCallback": 812916466,
-					"sceKernelChangeActiveCpuMask": 1143800,
-					"sceKernelChangeThreadCpuAffinityMask": 353538420,
-					"sceKernelChangeThreadPriority": 3170974194,
-					"sceKernelChangeThreadVfpException": 3424189358,
-					"sceKernelCheckCallback": 3846062582,
-					"sceKernelCheckWaitableStatus": 3653072107,
-					"sceKernelClearEvent": 2066369320,
-					"sceKernelClearEventFlag": 1287158951,
-					"sceKernelCloseCond": 365334752,
-					"sceKernelCloseEventFlag": 2590569799,
-					"sceKernelCloseMsgPipe": 319135845,
-					"sceKernelCloseMutex": 65157878,
-					"sceKernelCloseRWLock": 4250654145,
-					"sceKernelCloseSema": 2732072862,
-					"sceKernelCloseSimpleEvent": 4277455443,
-					"sceKernelCloseTimer": 2900758090,
-					"sceKernelCreateCallback": 2979854313,
-					"sceKernelCreateThreadForUser": 3237672611,
-					"sceKernelDelayThread": 1265065221,
-					"sceKernelDelayThreadCB": 2617344225,
-					"sceKernelDeleteCallback": 3563677547,
-					"sceKernelDeleteCond": 2275307197,
-					"sceKernelDeleteEventFlag": 1480594988,
-					"sceKernelDeleteMsgPipe": 3884698871,
-					"sceKernelDeleteMutex": 3413668109,
-					"sceKernelDeleteRWLock": 3879094730,
-					"sceKernelDeleteSema": 3677525130,
-					"sceKernelDeleteSimpleEvent": 546111016,
-					"sceKernelDeleteThread": 465429465,
-					"sceKernelDeleteTimer": 2870887108,
-					"sceKernelExitDeleteThread": 488103631,
-					"sceKernelGetCallbackCount": 59131093,
-					"sceKernelGetProcessId": 2647346042,
-					"sceKernelGetThreadStackFreeSize": 1334459808,
-					"sceKernelGetThreadmgrUIDClass": 3379007359,
-					"sceKernelGetTimerBaseWide": 1572608352,
-					"sceKernelGetTimerTimeWide": 1056780645,
-					"sceKernelNotifyCallback": 2758292882,
-					"sceKernelOpenCond": 1992138799,
-					"sceKernelOpenEventFlag": 3155818657,
-					"sceKernelOpenMsgPipe": 236763638,
-					"sceKernelOpenMutex": 1390506370,
-					"sceKernelOpenRWLock": 3461415318,
-					"sceKernelOpenSema": 3420599751,
-					"sceKernelOpenSimpleEvent": 1310608888,
-					"sceKernelOpenTimer": 3068298983,
-					"sceKernelPollSema": 2255417416,
-					"sceKernelPulseEvent": 2368191190,
-					"sceKernelRegisterCallbackToEvent": 1996175337,
-					"sceKernelSendSignal": 3569575858,
-					"sceKernelSetEvent": 843192525,
-					"sceKernelSetEventFlag": 3969179639,
-					"sceKernelSetTimerTimeWide": 658197069,
-					"sceKernelSignalCond": 1859314396,
-					"sceKernelSignalCondAll": 3269962786,
-					"sceKernelSignalCondTo": 308933868,
-					"sceKernelSignalSema": 3870777809,
-					"sceKernelStartTimer": 1208557068,
-					"sceKernelStopTimer": 2258542368,
-					"sceKernelTryLockMutex": 1929125716,
-					"sceKernelTryLockReadRWLock": 4024280150,
-					"sceKernelTryLockWriteRWLock": 543996774,
-					"sceKernelUnlockMutex": 439824072,
-					"sceKernelUnlockReadRWLock": 1056510277,
-					"sceKernelUnlockWriteRWLock": 3021280151,
-					"sceKernelUnregisterCallbackFromEvent": 407251729,
-					"sceKernelUnregisterCallbackFromEventAll": 2290774881
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"SceThreadmgrCoredumpTime": {
-		"nid": 227,
-		"modules": {
-			"SceThreadmgrCoredumpTime": {
-				"nid": 228,
-				"kernel": false,
-				"functions": {
-					"sceKernelExitThread": 210385121
 				},
 				"variables": {
 				}
@@ -6300,7 +6235,7 @@
 			}
 		}
 	},
-	"SceVideodecUser": {
+	"SceVideodec": {
 		"nid": 233,
 		"modules": {
 			"SceVideodecUser": {
@@ -6399,65 +6334,6 @@
 					"sceVoiceQoSSetConnectionAttribute": 3881271407,
 					"sceVoiceQoSSetLocalEndpointAttribute": 1410132901,
 					"sceVoiceQoSWritePacket": 803336847
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"sceNetEmulationGet": {
-		"nid": 239,
-		"modules": {
-			"sceNetEmulationGet": {
-				"nid": 240,
-				"kernel": false,
-				"functions": {
-					"ceNetClearDnsCache": 4274067053,
-					"ceNetDumpCreate": 2952395341,
-					"ceNetEpollCreate": 4191224494,
-					"ceNetErrnoLoc": 3816764586,
-					"ceNetEtherStrton": 4006008671,
-					"ceNetGetSockInfo": 2981062720,
-					"ceNetGetsockopt": 3127189602,
-					"ceNetInetPton": 3589189704,
-					"ceNetInit": 3942900325,
-					"ceNetNtohl": 3538593349,
-					"ceNetNtohll": 4214437542,
-					"ceNetRecvfrom": 2988839819,
-					"ceNetRecvmsg": 3734292222,
-					"ceNetSend": 3822947545,
-					"ceNetSetDnsInfo": 3593400856,
-					"ceNetSocket": 4035247331,
-					"ceNetTerm": 3929850502
-				},
-				"variables": {
-				}
-			}
-		}
-	},
-	"sceNetEmulationSet": {
-		"nid": 241,
-		"modules": {
-			"sceNetEmulationSet": {
-				"nid": 242,
-				"kernel": false,
-				"functions": {
-					"ceNetDumpDestroy": 2195574627,
-					"ceNetEpollAbort": 2482816232,
-					"ceNetEpollDestroy": 2031471347,
-					"ceNetEpollWaitCB": 2463360871,
-					"ceNetEtherNtostr": 2217954994,
-					"ceNetGetStatisticsInfo": 2825883621,
-					"ceNetHtons": 2678268027,
-					"ceNetInetNtop": 2558761844,
-					"ceNetListen": 2056102036,
-					"ceNetResolverCreate": 1839371033,
-					"ceNetResolverGetError": 2270098688,
-					"ceNetSendmsg": 2579855790,
-					"ceNetShowIfconfig": 1703645243,
-					"ceNetShowRoute": 1790162763,
-					"ceNetShutdown": 1776618421,
-					"ceNetSocketAbort": 2300320667
 				},
 				"variables": {
 				}
