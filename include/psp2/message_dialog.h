@@ -44,7 +44,7 @@ enum {
 	//! Displays "There is not enough free space on the memory card."
 	SCE_MSG_DIALOG_SYSMSG_TYPE_NOSPACE					= 2,
 
-	//! Displays "Move away from the source of interface, or adjust the compass by moving your PS Vita system as shown below."
+	//! Displays "Move away from the source of interference, or adjust the compass by moving your PS Vita system as shown below."
 	SCE_MSG_DIALOG_SYSMSG_TYPE_MAGNETIC_CALIBRATION		= 3,
 
 	//! Displays "Please wait." in a small message dialog
