@@ -12,7 +12,6 @@
 #ifndef _COMMON_API_H_
 #define _COMMON_API_H_
 
-#include <psp2/kernel/clib.h>
 #include <psp2/system_param.h>
 #include <psp2/gxm.h>
 #include <psp2/types.h>

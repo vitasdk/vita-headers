@@ -12,7 +12,7 @@
 #ifndef _MSG_DIALOG_H_
 #define _MSG_DIALOG_H_
 
-#include "common_api.h"
+#include "common_dialog.h"
 #include <psp2/types.h>
 
 enum {
