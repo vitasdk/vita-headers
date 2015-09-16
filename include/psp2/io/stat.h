@@ -127,14 +127,6 @@ int sceIoMkdir(const char *dir, SceMode mode);
 int sceIoRmdir(const char *path);
 
 /**
-  * Change the current directory.
-  *
-  * @param path - The path to change to.
-  * @return < 0 on error.
-  */
-int sceIoChdir(const char *path);
-
-/**
   * Get the status of a file.
   *
   * @param file - The path to the file.
