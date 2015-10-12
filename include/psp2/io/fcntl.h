@@ -21,22 +21,22 @@ extern "C" {
 /* Note: Not all of these sceIoOpen() flags are not compatible with the
    open() flags found in sys/unistd.h. */
 enum {
-	PSP2_O_RDONLY   = 0x0001,
-	PSP2_O_WRONLY   = 0x0002,
-	PSP2_O_RDWR     = (PSP2_O_RDONLY | PSP2_O_WRONLY),
-	PSP2_O_NBLOCK   = 0x0004,
-	PSP2_O_DIROPEN  = 0x0008,  // Internal use for dopen
-	PSP2_O_APPEND   = 0x0100,
-	PSP2_O_CREAT    = 0x0200,
-	PSP2_O_TRUNC    = 0x0400,
-	PSP2_O_EXCL     = 0x0800,
-	PSP2_O_NOWAIT   = 0x8000
+	SCE_O_RDONLY   = 0x0001,
+	SCE_O_WRONLY   = 0x0002,
+	SCE_O_RDWR     = (SCE_O_RDONLY | SCE_O_WRONLY),
+	SCE_O_NBLOCK   = 0x0004,
+	SCE_O_DIROPEN  = 0x0008,  // Internal use for dopen
+	SCE_O_APPEND   = 0x0100,
+	SCE_O_CREAT    = 0x0200,
+	SCE_O_TRUNC    = 0x0400,
+	SCE_O_EXCL     = 0x0800,
+	SCE_O_NOWAIT   = 0x8000
 };
 
 enum {
-	PSP2_SEEK_SET,
-	PSP2_SEEK_CUR,
-	PSP2_SEEK_END
+	SCE_SEEK_SET,
+	SCE_SEEK_CUR,
+	SCE_SEEK_END
 };
 
 /**

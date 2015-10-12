@@ -46,8 +46,8 @@ typedef int SceSSize;
 typedef int SceBool;
 
 enum {
-	PSP2_FALSE,
-	PSP2_TRUE
+	SCE_FALSE,
+	SCE_TRUE
 };
 
 typedef float SceFloat;
@@ -238,9 +238,9 @@ typedef SceInt64 SceOff; //!< Offset type
 typedef int SceUID; //!< UIDs are used to describe many different kernel objects.
 
 typedef int ScePID; //!< Process ID
-#define PSP2_KERNEL_PROCESS_ID_SELF 0 //!< Current running process ID is always 0
+#define SCE_KERNEL_PROCESS_ID_SELF 0 //!< Current running process ID is always 0
 
 typedef char* SceName; //!< Names are used to describe object names
-#define PSP2_UID_NAMELEN 31 //!< Maximum length for kernel object names
+#define SCE_UID_NAMELEN 31 //!< Maximum length for kernel object names
 
 #endif

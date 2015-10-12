@@ -41,23 +41,19 @@ enum {
 	SCE_AUDIOENC_CELP_ERROR_INVALID_CONFIG	= 0x80861001,
 };
 
-#define PSP2_AUDIOENC_WORD_LENGTH_16BITS	16		//!< Definition of wordlength
-
-#define PSP2_AUDIOENC_TYPE_CELP 		0x2006U		//!< Audio encoder type
-
-#define PSP2_AUDIOENC_CELP_MAX_STREAMS		1		//!< Max number of streams
-#define PSP2_AUDIOENC_CELP_MAX_SAMPLES		320		//!< Max number of samples
-#define PSP2_AUDIOENC_CELP_MAX_ES_SIZE		24		//!< Max elementary stream size
-
-#define PSP2_AUDIOENC_CELP_MPE			(0)		//!< CELP encoder default excitation mode
-
-#define PSP2_AUDIOENC_CELP_SAMPLING_RATE_8KHZ	(8000)		//!< CELP encoder default sampling rate
+#define SCE_AUDIOENC_WORD_LENGTH_16BITS         16      //!< Definition of wordlength
+#define SCE_AUDIOENC_TYPE_CELP                  0x2006U //!< Audio encoder type
+#define SCE_AUDIOENC_CELP_MAX_STREAMS           1       //!< Max number of streams
+#define SCE_AUDIOENC_CELP_MAX_SAMPLES           320     //!< Max number of samples
+#define SCE_AUDIOENC_CELP_MAX_ES_SIZE           24      //!< Max elementary stream size
+#define SCE_AUDIOENC_CELP_MPE                   (0)     //!< CELP encoder default excitation mode
+#define SCE_AUDIOENC_CELP_SAMPLING_RATE_8KHZ    (8000)  //!< CELP encoder default sampling rate
 
 enum {
-	PSP2_AUDIOENC_CELP_BIT_RATE_3850BPS = 3850,
-	PSP2_AUDIOENC_CELP_BIT_RATE_4650BPS = 4650,
-	PSP2_AUDIOENC_CELP_BIT_RATE_5700BPS = 5700,
-	PSP2_AUDIOENC_CELP_BIT_RATE_7300BPS = 7300
+	SCE_AUDIOENC_CELP_BIT_RATE_3850BPS = 3850,
+	SCE_AUDIOENC_CELP_BIT_RATE_4650BPS = 4650,
+	SCE_AUDIOENC_CELP_BIT_RATE_5700BPS = 5700,
+	SCE_AUDIOENC_CELP_BIT_RATE_7300BPS = 7300
 };
 
 /** Initialization structure to provide to ::SceAudioencInitParam */

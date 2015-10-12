@@ -9,11 +9,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef _MSG_DIALOG_H_
-#define _MSG_DIALOG_H_
+#ifndef _PSP2_MSG_DIALOG_H_
+#define _PSP2_MSG_DIALOG_H_
 
 #include "common_dialog.h"
 #include <psp2/types.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 enum {
 	//! Illegal parameter
@@ -207,5 +211,9 @@ int sceMsgDialogProgressBarSetValue( SceMsgDialogProgressBarTarget target, SceUI
  * @note - If NULL is provided as FrameBuf pointer, output is blacked out.
 */
 int sceMsgDialogProgressBarSetMsg( SceMsgDialogProgressBarTarget target, const SceChar8 *barMsg );
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
