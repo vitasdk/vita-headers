@@ -21,77 +21,77 @@ extern "C" {
 /** Access modes for st_mode in SceIoStat (confirm?). */
 enum {
 	/** Format bits mask */
-	PSP2_S_IFMT		= 0xF000,
+	SCE_S_IFMT		= 0xF000,
 	/** Symbolic link */
-	PSP2_S_IFLNK		= 0x4000,
+	SCE_S_IFLNK		= 0x4000,
 	/** Directory */
-	PSP2_S_IFDIR		= 0x1000,
+	SCE_S_IFDIR		= 0x1000,
 	/** Regular file */
-	PSP2_S_IFREG		= 0x2000,
+	SCE_S_IFREG		= 0x2000,
 
 	/** Set UID */
-	PSP2_S_ISUID		= 0x0800,
+	SCE_S_ISUID		= 0x0800,
 	/** Set GID */
-	PSP2_S_ISGID		= 0x0400,
+	SCE_S_ISGID		= 0x0400,
 	/** Sticky */
-	PSP2_S_ISVTX		= 0x0200,
+	SCE_S_ISVTX		= 0x0200,
 
 	/** User access rights mask */
-	PSP2_S_IRWXU		= 0x01C0,
+	SCE_S_IRWXU		= 0x01C0,
 	/** Read user permission */
-	PSP2_S_IRUSR		= 0x0100,
+	SCE_S_IRUSR		= 0x0100,
 	/** Write user permission */
-	PSP2_S_IWUSR		= 0x0080,
+	SCE_S_IWUSR		= 0x0080,
 	/** Execute user permission */
-	PSP2_S_IXUSR		= 0x0040,
+	SCE_S_IXUSR		= 0x0040,
 
 	/** Group access rights mask */
-	PSP2_S_IRWXG		= 0x0038,
+	SCE_S_IRWXG		= 0x0038,
 	/** Group read permission */
-	PSP2_S_IRGRP		= 0x0020,
+	SCE_S_IRGRP		= 0x0020,
 	/** Group write permission */
-	PSP2_S_IWGRP		= 0x0010,
+	SCE_S_IWGRP		= 0x0010,
 	/** Group execute permission */
-	PSP2_S_IXGRP		= 0x0008,
+	SCE_S_IXGRP		= 0x0008,
 
 	/** Others access rights mask */
-	PSP2_S_IRWXO		= 0x0007,
+	SCE_S_IRWXO		= 0x0007,
 	/** Others read permission */
-	PSP2_S_IROTH		= 0x0004,
+	SCE_S_IROTH		= 0x0004,
 	/** Others write permission */
-	PSP2_S_IWOTH		= 0x0002,
+	SCE_S_IWOTH		= 0x0002,
 	/** Others execute permission */
-	PSP2_S_IXOTH		= 0x0001,
+	SCE_S_IXOTH		= 0x0001,
 };
 
 // File mode checking macros
-#define PSP2_S_ISLNK(m)	(((m) & PSP2_S_IFMT) == PSP2_S_IFLNK)
-#define PSP2_S_ISREG(m)	(((m) & PSP2_S_IFMT) == PSP2_S_IFREG)
-#define PSP2_S_ISDIR(m)	(((m) & PSP2_S_IFMT) == PSP2_S_IFDIR)
+#define SCE_S_ISLNK(m)	(((m) & SCE_S_IFMT) == SCE_S_IFLNK)
+#define SCE_S_ISREG(m)	(((m) & SCE_S_IFMT) == SCE_S_IFREG)
+#define SCE_S_ISDIR(m)	(((m) & SCE_S_IFMT) == SCE_S_IFDIR)
 
 /** File modes, used for the st_attr parameter in SceIoStat (confirm?). */
 enum {
 	/** Format mask */
-	PSP2_SO_IFMT             = 0x0038,               // Format mask
+	SCE_SO_IFMT             = 0x0038,               // Format mask
 	/** Symlink */
-	PSP2_SO_IFLNK            = 0x0008,               // Symbolic link
+	SCE_SO_IFLNK            = 0x0008,               // Symbolic link
 	/** Directory */
-	PSP2_SO_IFDIR            = 0x0010,               // Directory
+	SCE_SO_IFDIR            = 0x0010,               // Directory
 	/** Regular file */
-	PSP2_SO_IFREG            = 0x0020,               // Regular file
+	SCE_SO_IFREG            = 0x0020,               // Regular file
 
 	/** Hidden read permission */
-	PSP2_SO_IROTH            = 0x0004,               // read
+	SCE_SO_IROTH            = 0x0004,               // read
 	/** Hidden write permission */
-	PSP2_SO_IWOTH            = 0x0002,               // write
+	SCE_SO_IWOTH            = 0x0002,               // write
 	/** Hidden execute permission */
-	PSP2_SO_IXOTH            = 0x0001,               // execute
+	SCE_SO_IXOTH            = 0x0001,               // execute
 };
 
 // File mode checking macros
-#define PSP2_SO_ISLNK(m)	(((m) & PSP2_SO_IFMT) == PSP2_SO_IFLNK)
-#define PSP2_SO_ISREG(m)	(((m) & PSP2_SO_IFMT) == PSP2_SO_IFREG)
-#define PSP2_SO_ISDIR(m)	(((m) & PSP2_SO_IFMT) == PSP2_SO_IFDIR)
+#define SCE_SO_ISLNK(m)	(((m) & SCE_SO_IFMT) == SCE_SO_IFLNK)
+#define SCE_SO_ISREG(m)	(((m) & SCE_SO_IFMT) == SCE_SO_IFREG)
+#define SCE_SO_ISDIR(m)	(((m) & SCE_SO_IFMT) == SCE_SO_IFDIR)
 
 /** Structure to hold the status information about a file */
 typedef struct SceIoStat {

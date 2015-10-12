@@ -98,15 +98,15 @@ typedef struct SceKernelThreadRunStatus {
 } SceKernelThreadRunStatus;
 
 /* Sure there must be more than this, but haven't seen them */
-typedef enum Psp2ThreadStatus
+typedef enum SceThreadStatus
 {
-	PSP2_THREAD_RUNNING = 1,
-	PSP2_THREAD_READY   = 2,
-	PSP2_THREAD_WAITING = 4,
-	PSP2_THREAD_SUSPEND = 8,
-	PSP2_THREAD_STOPPED = 16,
-	PSP2_THREAD_KILLED  = 32, /* Thread manager has killed the thread (stack overflow) */
-} Psp2ThreadStatus;
+	SCE_THREAD_RUNNING = 1,
+	SCE_THREAD_READY   = 2,
+	SCE_THREAD_WAITING = 4,
+	SCE_THREAD_SUSPEND = 8,
+	SCE_THREAD_STOPPED = 16,
+	SCE_THREAD_KILLED  = 32, /* Thread manager has killed the thread (stack overflow) */
+} SceThreadStatus;
 
 /**
  * Create a thread
@@ -121,7 +121,7 @@ typedef enum Psp2ThreadStatus
  * @param entry - The thread function to run when started.
  * @param initPriority - The initial priority of the thread. Less if higher priority.
  * @param stackSize - The size of the initial stack.
- * @param attr - The thread attributes, zero or more of ::Psp2ThreadAttributes.
+ * @param attr - The thread attributes, zero or more of ::SceThreadAttributes.
  * @param cpuAffinityMask - The CPU affinity mask
  * @param option - Additional options specified by ::SceKernelThreadOptParam.
 
@@ -213,7 +213,7 @@ int sceKernelDelayThreadCB(SceUInt delay);
  * Modify the attributes of the current thread.
  *
  * @param unknown - Set to 0.
- * @param attr - The thread attributes to modify.  One of ::Psp2ThreadAttributes.
+ * @param attr - The thread attributes to modify.  One of ::SceThreadAttributes.
  *
  * @return < 0 on error.
  */
@@ -610,26 +610,26 @@ typedef struct SceKernelEventFlagOptParam {
 typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
 
 /** Event flag creation attributes */
-typedef enum Psp2EventFlagAttributes {
+typedef enum SceEventFlagAttributes {
 	/** Allow the event flag to be waited upon by multiple threads */
-	PSP2_EVENT_WAITMULTIPLE = 0x200
-} Psp2EventFlagAttributes;
+	SCE_EVENT_WAITMULTIPLE = 0x200
+} SceEventFlagAttributes;
 
 /** Event flag wait types */
-typedef enum Psp2EventFlagWaitTypes {
+typedef enum SceEventFlagWaitTypes {
 	/** Wait for all bits in the pattern to be set */
-	PSP2_EVENT_WAITAND = 0,
+	SCE_EVENT_WAITAND = 0,
 	/** Wait for one or more bits in the pattern to be set */
-	PSP2_EVENT_WAITOR  = 1,
+	SCE_EVENT_WAITOR  = 1,
 	/** Clear the wait pattern when it matches */
-	PSP2_EVENT_WAITCLEAR = 0x20
-} Psp2EventFlagWaitTypes;
+	SCE_EVENT_WAITCLEAR = 0x20
+} SceEventFlagWaitTypes;
 
 /**
   * Create an event flag.
   *
   * @param name - The name of the event flag.
-  * @param attr - Attributes from ::Psp2EventFlagAttributes
+  * @param attr - Attributes from ::SceEventFlagAttributes
   * @param bits - Initial bit pattern.
   * @param opt  - Options, set to NULL
   * @return < 0 on error. >= 0 event flag id.
@@ -667,7 +667,7 @@ int sceKernelClearEventFlag(SceUID evid, unsigned int bits);
   *
   * @param evid - The event id returned by sceKernelCreateEventFlag.
   * @param bits - The bit pattern to poll for.
-  * @param wait - Wait type, one or more of ::Psp2EventFlagWaitTypes or'ed together
+  * @param wait - Wait type, one or more of ::SceEventFlagWaitTypes or'ed together
   * @param outBits - The bit pattern that was matched.
   * @return < 0 On error
   */
@@ -678,7 +678,7 @@ int sceKernelPollEventFlag(int evid, unsigned int bits, unsigned int wait, unsig
   *
   * @param evid - The event id returned by sceKernelCreateEventFlag.
   * @param bits - The bit pattern to poll for.
-  * @param wait - Wait type, one or more of ::Psp2EventFlagWaitTypes or'ed together
+  * @param wait - Wait type, one or more of ::SceEventFlagWaitTypes or'ed together
   * @param outBits - The bit pattern that was matched.
   * @param timeout  - Timeout in microseconds
   * @return < 0 On error
@@ -690,7 +690,7 @@ int sceKernelWaitEventFlag(int evid, unsigned int bits, unsigned int wait, unsig
   *
   * @param evid - The event id returned by sceKernelCreateEventFlag.
   * @param bits - The bit pattern to poll for.
-  * @param wait - Wait type, one or more of ::Psp2EventFlagWaitTypes or'ed together
+  * @param wait - Wait type, one or more of ::SceEventFlagWaitTypes or'ed together
   * @param outBits - The bit pattern that was matched.
   * @param timeout  - Timeout in microseconds
   * @return < 0 On error

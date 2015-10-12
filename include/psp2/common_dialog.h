@@ -1,6 +1,6 @@
 /**
  * \file
- * \brief Header file which defines common dialog functions used along with message dialogs
+ * \brief Header file which defines common dialog functions
  *
  * Copyright (C) 2015 PSP2SDK Project
  *
@@ -9,12 +9,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef _COMMON_API_H_
-#define _COMMON_API_H_
+#ifndef _PSP2_COMMON_API_H_
+#define _PSP2_COMMON_API_H_
 
 #include <psp2/system_param.h>
 #include <psp2/gxm.h>
 #include <psp2/types.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Errors */
 enum {
@@ -64,10 +68,10 @@ typedef struct SceCommonDialogRenderTargetInfo {
 	ScePVoid depthSurfaceData;
 	ScePVoid colorSurfaceData;
 	SceGxmColorSurfaceType surfaceType;
-   SceGxmColorFormat colorFormat;
+	SceGxmColorFormat colorFormat;
 	SceUInt32 width;
-   SceUInt32 height;
-   SceUInt32 strideInPixels;
+	SceUInt32 height;
+	SceUInt32 strideInPixels;
 	SceUInt8 reserved[32];
 } SceCommonDialogRenderTargetInfo;
 
@@ -111,5 +115,9 @@ void sceCommonDialogConfigParamInit(SceCommonDialogConfigParam *param)
 
 int sceCommonDialogSetConfigParam(const SceCommonDialogConfigParam *configParam);
 int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

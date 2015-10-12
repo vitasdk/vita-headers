@@ -34,22 +34,22 @@ enum {
 
 enum {
 	//! Used for main audio output, freq must be set to 48000 Hz
-	PSP2_AUDIO_OUT_PORT_TYPE_MAIN	= 0,
+	SCE_AUDIO_OUT_PORT_TYPE_MAIN	= 0,
 
 	//! Used for Background Music port
-	PSP2_AUDIO_OUT_PORT_TYPE_BGM	= 1,
+	SCE_AUDIO_OUT_PORT_TYPE_BGM	= 1,
 
 	//! Used for voice chat port
-	PSP2_AUDIO_OUT_PORT_TYPE_VOICE	= 2
+	SCE_AUDIO_OUT_PORT_TYPE_VOICE	= 2
 };
 
 enum {
-	PSP2_AUDIO_OUT_MODE_MONO	= 0,
-	PSP2_AUDIO_OUT_MODE_STEREO	= 1
+	SCE_AUDIO_OUT_MODE_MONO	= 0,
+	SCE_AUDIO_OUT_MODE_STEREO	= 1
 };
 
-#define PSP2_AUDIO_MIN_LEN 64		//!< Minimum granularity
-#define PSP2_AUDIO_MAX_LEN 65472	//!< Maximum granularity
+#define SCE_AUDIO_MIN_LEN 64		//!< Minimum granularity
+#define SCE_AUDIO_MAX_LEN 65472	//!< Maximum granularity
 
 /**
  * Initialize audio port
@@ -86,13 +86,13 @@ int sceAudioOutReleasePort(int port);
  */
 int sceAudioOutOutput(int port, const void *buf);
 
-#define PSP2_AUDIO_OUT_MAX_VOL 32768 					//!< Maximum output port volume
-#define PSP2_AUDIO_VOLUME_0DB  PSP2_AUDIO_OUT_MAX_VOL	//!< Maximum output port volume
+#define SCE_AUDIO_OUT_MAX_VOL 32768 					//!< Maximum output port volume
+#define SCE_AUDIO_VOLUME_0DB  PSP2_AUDIO_OUT_MAX_VOL	//!< Maximum output port volume
 
 /** Flags to use as 'ch' argument for ::sceAudioOutSetVolume */
 enum {
-	PSP2_AUDIO_VOLUME_FLAG_L_CH	= 0x1, //!< Left Channel
-	PSP2_AUDIO_VOLUME_FLAG_R_CH	= 0x2  //!< Right Channel
+	SCE_AUDIO_VOLUME_FLAG_L_CH	= 0x1, //!< Left Channel
+	SCE_AUDIO_VOLUME_FLAG_R_CH	= 0x2  //!< Right Channel
 };
 
 /**
@@ -121,9 +121,9 @@ int sceAudioOutSetConfig(int port, int len, int freq, int mode);
 
 /** Config type values to specify to ::sceAudioOutGetConfig */
 enum {
-	PSP2_AUDIO_OUT_CONFIG_TYPE_LEN	= 0,
-	PSP2_AUDIO_OUT_CONFIG_TYPE_FREQ	= 1,
-	PSP2_AUDIO_OUT_CONFIG_TYPE_MODE	= 2
+	SCE_AUDIO_OUT_CONFIG_TYPE_LEN	= 0,
+	SCE_AUDIO_OUT_CONFIG_TYPE_FREQ	= 1,
+	SCE_AUDIO_OUT_CONFIG_TYPE_MODE	= 2
 };
 
 /**
@@ -138,9 +138,9 @@ int sceAudioOutGetConfig(int port, int type);
 
 /** Argument 'mode' to specify to ::sceAudioOutSetAlcMode */
 enum {
-	PSP2_AUDIO_ALC_OFF	= 0,
-	PSP2_AUDIO_ALC_MODE1	= 1,
-	PSP2_AUDIO_ALC_MODE_MAX	= 2
+	SCE_AUDIO_ALC_OFF	= 0,
+	SCE_AUDIO_ALC_MODE1	= 1,
+	SCE_AUDIO_ALC_MODE_MAX	= 2
 };
 
 /**
