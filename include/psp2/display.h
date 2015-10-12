@@ -52,7 +52,7 @@ typedef struct SceDisplayFrameBuf {
 	SceSize size;	//!< sizeof(SceDisplayFrameBuf)
 	void *base;	//!< Pointer to framebuffer
 	unsigned int pitch;	//!< pitch pixels
-	unsigned int pixelformat;	//!< use PSP2_DISPLAY_PIXELFORMAT_A8B8G8R8
+	unsigned int pixelformat;	//!< use SCE_DISPLAY_PIXELFORMAT_A8B8G8R8
 	unsigned int width;	//!< framebuffer width
 	unsigned int height;	//!< framebuffer height
 } SceDisplayFrameBuf;

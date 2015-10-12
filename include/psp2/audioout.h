@@ -55,13 +55,13 @@ enum {
  * Initialize audio port
  *
  * @param[in] type - One of ::AudioOutPortType
- * @param[in] len - Number of samples, between ::PSP2_AUDIO_MIN_LEN and ::PSP2_AUDIO_MAX_LEN (multiple of 64)
+ * @param[in] len - Number of samples, between ::SCE_AUDIO_MIN_LEN and ::SCE_AUDIO_MAX_LEN (multiple of 64)
  * @param[in] freq - Samping frequency (in Hz), one of the followings :
  * 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
  * @param[in] mode - One of ::AudioOutMode
  *
  * @return port number, < 0 on error.
- * @note - The volume is initially set to its max value (::PSP2_AUDIO_OUT_MAX_VOL)
+ * @note - The volume is initially set to its max value (::SCE_AUDIO_OUT_MAX_VOL)
 */
 int sceAudioOutOpenPort(int type, int len, int freq, int mode);
 
@@ -87,7 +87,7 @@ int sceAudioOutReleasePort(int port);
 int sceAudioOutOutput(int port, const void *buf);
 
 #define SCE_AUDIO_OUT_MAX_VOL 32768 					//!< Maximum output port volume
-#define SCE_AUDIO_VOLUME_0DB  PSP2_AUDIO_OUT_MAX_VOL	//!< Maximum output port volume
+#define SCE_AUDIO_VOLUME_0DB  SCE_AUDIO_OUT_MAX_VOL	//!< Maximum output port volume
 
 /** Flags to use as 'ch' argument for ::sceAudioOutSetVolume */
 enum {

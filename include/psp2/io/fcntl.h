@@ -44,13 +44,13 @@ enum {
  *
  * @par Example1: Open a file for reading
  * @code
- * if(!(fd = sceIoOpen("device:/path/to/file", PSP2_O_RDONLY, 0777)) {
+ * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_RDONLY, 0777)) {
  *	// error
  * }
  * @endcode
  * @par Example2: Open a file for writing, creating it if it doesnt exist
  * @code
- * if(!(fd = sceIoOpen("device:/path/to/file", PSP2_O_WRONLY|PSP2_O_CREAT, 0777)) {
+ * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_WRONLY|SCE_O_CREAT, 0777)) {
  *	// error
  * }
  * @endcode

@@ -47,7 +47,7 @@ enum {
 	SCE_CTRL_MODE_DIGITAL = 0,
 	/** Digital buttons + Analog support. */
 	SCE_CTRL_MODE_ANALOG = 1,
-	/** Same as ::PSP2_CTRL_MODE_ANALOG, but with larger range for analog sticks. */
+	/** Same as ::SCE_CTRL_MODE_ANALOG, but with larger range for analog sticks. */
 	SCE_CTRL_MODE_ANALOG_WIDE = 2
 };
 
