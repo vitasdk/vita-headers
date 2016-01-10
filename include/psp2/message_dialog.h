@@ -134,7 +134,7 @@ typedef struct SceMsgDialogProgressBarParam {
 	SceMsgDialogProgressBarType barType;		// Progress bar type
 	SceMsgDialogSystemMessageParam sysMsgParam;	// Displayed system message
 	const SceChar8 *msg;		// Displayed user message
-	SceChar8 reserved[32];		// Reserved range
+	SceInt32 reserved[32/4];		// Reserved range
 } SceMsgDialogProgressBarParam;
 
 typedef struct SceMsgDialogParam {
@@ -156,20 +156,12 @@ typedef struct SceMsgDialogResult {
 	SceChar8 reserved[32];		// Reserved range
 } SceMsgDialogResult;
 
-#define SCE_COMMON_DIALOG_MAGIC_NUMBER 0xC0D1A109
-
-static inline
-void _sceCommonDialogSetMagicNumber(SceCommonDialogParam *param)
-{
-	param->magic = SCE_COMMON_DIALOG_MAGIC_NUMBER + (SceUInt32)param;
-}
-
 static inline
 void sceMsgDialogParamInit(SceMsgDialogParam *param)
 {
 	memset( param, 0x0, sizeof(SceMsgDialogParam) );
 	_sceCommonDialogSetMagicNumber( &param->commonParam );
-	param->sdkVersion = NULL;
+	param->sdkVersion = 0x03150021;
 }
 
 int sceMsgDialogInit(const SceMsgDialogParam *param);
