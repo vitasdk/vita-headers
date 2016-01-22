@@ -1,26 +1,49 @@
 {
 	"SceAppMgr": {
-		"nid": 1,
+		"nid": 0,
 		"modules": {
 			"SceAppMgr": {
-				"nid": 2,
+				"nid": 1,
 				"kernel": false,
 				"functions": {
+					"_sceAppMgrConvertVs0UserDrivePath": 431451409,
+					"_sceAppMgrLaunchAppByUri": 936262020,
+					"_sceAppMgrLaunchAppByUri2": 1262873280,
+					"_sceAppMgrSaveDataDataSave": 3088545719,
 					"sceAppMgrAcquireBgmPort": 2949557142,
+					"sceAppMgrIsDevelopmentMode": 2102366083,
+					"sceAppMgrIsGameProgram": 4294506480,
 					"sceAppMgrReleaseBgmPort": 4084301367,
-					"sceAppMgrSetInfobarState": 2911904417
+					"sceAppMgrSetInfobarState": 2911904417,
+					"sceAppMgrSetInfobarStateForCommonDialog": 3598027598
 				},
 				"variables": {
 				}
 			},
 			"SceAppMgrUser": {
-				"nid": 4,
+				"nid": 2,
 				"kernel": false,
 				"functions": {
 					"_sceAppMgrGetAppState": 1585852826,
+					"sceAppMgrAppDataMount": 689634268,
+					"sceAppMgrAppDataMountById": 3904713405,
+					"sceAppMgrAppParamGetString": 208878306,
+					"sceAppMgrConvertVs0UserDrivePath": 2913625486,
+					"sceAppMgrGetDevInfo": 1735414673,
+					"sceAppMgrGetRawPath": 244131816,
+					"sceAppMgrGetVs0UserDataDrive": 3227719496,
+					"sceAppMgrGetVs0UserModuleDrive": 2422297822,
+					"sceAppMgrLaunchAppByName2": 1117019495,
+					"sceAppMgrLaunchAppByUri": 3957583,
+					"sceAppMgrLaunchAppByUri2": 248950612,
 					"sceAppMgrLoadExec": 3866577596,
+					"sceAppMgrMmsMount": 4101180328,
+					"sceAppMgrPspSaveDataRootMount": 3377167908,
 					"sceAppMgrReceiveSystemEvent": 280327775,
-					"sceAppMgrSetNetworkDisconnectionWarningDialogState": 3813847708
+					"sceAppMgrSaveDataDataSave": 2229171911,
+					"sceAppMgrSetNetworkDisconnectionWarningDialogState": 3813847708,
+					"sceAppMgrWorkDirMount": 2604380749,
+					"sceAppMgrWorkDirMountById": 2162716226
 				},
 				"variables": {
 				}
@@ -28,10 +51,10 @@
 		}
 	},
 	"SceAppUtil": {
-		"nid": 5,
+		"nid": 3,
 		"modules": {
 			"SceAppUtil": {
-				"nid": 6,
+				"nid": 4,
 				"kernel": false,
 				"functions": {
 					"sceAppUtilAddCookieWebBrowser": 3380436382,
@@ -79,14 +102,23 @@
 				},
 				"variables": {
 				}
+			},
+			"SceAppUtilCache": {
+				"nid": 5,
+				"kernel": false,
+				"functions": {
+					"sceAppUtilCacheMount": 178610499
+				},
+				"variables": {
+				}
 			}
 		}
 	},
 	"SceAtrac": {
-		"nid": 7,
+		"nid": 6,
 		"modules": {
 			"SceAtrac": {
-				"nid": 8,
+				"nid": 7,
 				"kernel": false,
 				"functions": {
 					"sceAtracAddStreamData": 1399156508,
@@ -120,10 +152,10 @@
 		}
 	},
 	"SceAudio": {
-		"nid": 9,
+		"nid": 8,
 		"modules": {
 			"SceAudio": {
-				"nid": 10,
+				"nid": 9,
 				"kernel": false,
 				"functions": {
 					"sceAudioOutGetAdopt": 318445415,
@@ -142,10 +174,10 @@
 		}
 	},
 	"SceAudioIn": {
-		"nid": 11,
+		"nid": 10,
 		"modules": {
 			"SceAudioIn": {
-				"nid": 12,
+				"nid": 11,
 				"kernel": false,
 				"functions": {
 					"sceAudioInGetAdopt": 1449837619,
@@ -160,10 +192,10 @@
 		}
 	},
 	"SceAudiodec": {
-		"nid": 13,
+		"nid": 12,
 		"modules": {
 			"SceAudiodecUser": {
-				"nid": 14,
+				"nid": 13,
 				"kernel": false,
 				"functions": {
 					"sceAudiodecClearContext": 4147092324,
@@ -185,10 +217,10 @@
 		}
 	},
 	"SceAudioenc": {
-		"nid": 15,
+		"nid": 14,
 		"modules": {
 			"SceAudioencUser": {
-				"nid": 16,
+				"nid": 15,
 				"kernel": false,
 				"functions": {
 					"sceAudioencClearContext": 2475095085,
@@ -209,10 +241,10 @@
 		}
 	},
 	"SceAvPlayer": {
-		"nid": 17,
+		"nid": 16,
 		"modules": {
 			"SceAvPlayer": {
-				"nid": 18,
+				"nid": 17,
 				"kernel": false,
 				"functions": {
 					"sceAvPlayerAddSource": 3162753277,
@@ -241,11 +273,27 @@
 			}
 		}
 	},
+	"SceBt": {
+		"nid": 18,
+		"modules": {
+			"SceBt": {
+				"nid": 19,
+				"kernel": false,
+				"functions": {
+					"sceBtReadEvent": 649773629,
+					"sceBtRegisterCallback": 2722083156,
+					"sceBtUnregisterCallback": 1616836383
+				},
+				"variables": {
+				}
+			}
+		}
+	},
 	"SceCamera": {
-		"nid": 19,
+		"nid": 20,
 		"modules": {
 			"SceCamera": {
-				"nid": 20,
+				"nid": 21,
 				"kernel": false,
 				"functions": {
 					"sceCameraClose": 3446545660,
@@ -294,10 +342,10 @@
 		}
 	},
 	"SceClipboard": {
-		"nid": 21,
+		"nid": 22,
 		"modules": {
 			"SceClipboard": {
-				"nid": 22,
+				"nid": 23,
 				"kernel": false,
 				"functions": {
 					"sceClipboardGetText": 1538329794,
@@ -308,28 +356,11 @@
 			}
 		}
 	},
-	"SceCodecEnginePerf": {
-		"nid": 23,
-		"modules": {
-			"SceCodecEnginePerf": {
-				"nid": 24,
-				"kernel": false,
-				"functions": {
-					"sceCodecEnginePmonGetProcessorLoad": 748529425,
-					"sceCodecEnginePmonReset": 1568005986,
-					"sceCodecEnginePmonStart": 104196983,
-					"sceCodecEnginePmonStop": 3538923169
-				},
-				"variables": {
-				}
-			}
-		}
-	},
 	"SceCodecEngine": {
-		"nid": 25,
+		"nid": 24,
 		"modules": {
 			"SceCodecEngineUser": {
-				"nid": 26,
+				"nid": 25,
 				"kernel": false,
 				"functions": {
 					"sceCodecEngineAllocMemoryFromUnmapMemBlock": 440030181,
@@ -342,11 +373,28 @@
 			}
 		}
 	},
+	"SceCodecEnginePerf": {
+		"nid": 26,
+		"modules": {
+			"SceCodecEnginePerf": {
+				"nid": 27,
+				"kernel": false,
+				"functions": {
+					"sceCodecEnginePmonGetProcessorLoad": 748529425,
+					"sceCodecEnginePmonReset": 1568005986,
+					"sceCodecEnginePmonStart": 104196983,
+					"sceCodecEnginePmonStop": 3538923169
+				},
+				"variables": {
+				}
+			}
+		}
+	},
 	"SceCommonDialog": {
-		"nid": 27,
+		"nid": 28,
 		"modules": {
 			"SceCommonDialog": {
-				"nid": 28,
+				"nid": 29,
 				"kernel": false,
 				"functions": {
 					"sceCameraImportDialogAbort": 2287122852,
@@ -455,10 +503,10 @@
 		}
 	},
 	"SceCoredump": {
-		"nid": 29,
+		"nid": 30,
 		"modules": {
 			"SceCoredump": {
-				"nid": 30,
+				"nid": 31,
 				"kernel": false,
 				"functions": {
 					"sceCoredumpRegisterCoredumpHandler": 52282910,
@@ -479,18 +527,20 @@
 		}
 	},
 	"SceCtrl": {
-		"nid": 35,
+		"nid": 33,
 		"modules": {
 			"SceCtrl": {
-				"nid": 36,
+				"nid": 34,
 				"kernel": false,
 				"functions": {
 					"sceCtrlClearRapidFire": 3626585244,
 					"sceCtrlGetSamplingMode": 3967101615,
 					"sceCtrlPeekBufferNegative": 273600935,
 					"sceCtrlPeekBufferPositive": 2848181974,
+					"sceCtrlPeekBufferPositive2": 368582284,
 					"sceCtrlReadBufferNegative": 368668592,
 					"sceCtrlReadBufferPositive": 1743235971,
+					"sceCtrlSetButtonIntercept": 1128100340,
 					"sceCtrlSetRapidFire": 3922422216,
 					"sceCtrlSetSamplingMode": 2761404752
 				},
@@ -500,10 +550,10 @@
 		}
 	},
 	"SceDTrace": {
-		"nid": 37,
+		"nid": 35,
 		"modules": {
 			"SceDTrace": {
-				"nid": 38,
+				"nid": 36,
 				"kernel": false,
 				"functions": {
 					"sceDTraceAddHelperDof": 2759329751,
@@ -519,10 +569,10 @@
 		}
 	},
 	"SceDbg": {
-		"nid": 39,
+		"nid": 37,
 		"modules": {
 			"SceDbg": {
-				"nid": 40,
+				"nid": 38,
 				"kernel": false,
 				"functions": {
 					"sceDbgAssertionHandler": 452159371,
@@ -537,10 +587,10 @@
 		}
 	},
 	"SceDeci4p": {
-		"nid": 43,
+		"nid": 39,
 		"modules": {
 			"SceDeci4pUserp": {
-				"nid": 44,
+				"nid": 40,
 				"kernel": false,
 				"functions": {
 					"sceKernelDeci4pClose": 1672529167,
@@ -558,10 +608,10 @@
 		}
 	},
 	"SceDeflt": {
-		"nid": 45,
+		"nid": 41,
 		"modules": {
 			"SceDeflt": {
-				"nid": 46,
+				"nid": 42,
 				"kernel": false,
 				"functions": {
 					"sceDeflateDecompress": 286085200,
@@ -586,10 +636,10 @@
 		}
 	},
 	"SceDisplay": {
-		"nid": 49,
+		"nid": 43,
 		"modules": {
 			"SceDisplay": {
-				"nid": 50,
+				"nid": 44,
 				"kernel": false,
 				"functions": {
 					"sceDisplayGetRefreshRate": 2693572109,
@@ -609,7 +659,7 @@
 				}
 			},
 			"SceDisplayUser": {
-				"nid": 52,
+				"nid": 45,
 				"kernel": false,
 				"functions": {
 					"sceDisplayGetFrameBuf": 1118727100,
@@ -621,10 +671,10 @@
 		}
 	},
 	"SceFace": {
-		"nid": 53,
+		"nid": 46,
 		"modules": {
 			"SceFace": {
-				"nid": 54,
+				"nid": 47,
 				"kernel": false,
 				"functions": {
 					"sceFaceAgeGetWorkingMemorySize": 1944680733,
@@ -655,10 +705,10 @@
 		}
 	},
 	"SceFiber": {
-		"nid": 55,
+		"nid": 48,
 		"modules": {
 			"SceFiber": {
-				"nid": 56,
+				"nid": 49,
 				"kernel": false,
 				"functions": {
 					"_sceFiberAttachContextAndRun": 2097970651,
@@ -683,10 +733,10 @@
 		}
 	},
 	"SceFios2": {
-		"nid": 57,
+		"nid": 50,
 		"modules": {
 			"SceFios2": {
-				"nid": 58,
+				"nid": 51,
 				"kernel": false,
 				"functions": {
 					"sceFiosArchiveGetDecompressorThreadCount": 1902883105,
@@ -846,10 +896,10 @@
 		}
 	},
 	"SceFpu": {
-		"nid": 59,
+		"nid": 52,
 		"modules": {
 			"SceFpu": {
-				"nid": 60,
+				"nid": 53,
 				"kernel": false,
 				"functions": {
 					"sceFpuAcosf": 1688795646,
@@ -873,10 +923,10 @@
 		}
 	},
 	"SceGameUpdate": {
-		"nid": 61,
+		"nid": 54,
 		"modules": {
 			"SceGameUpdate": {
-				"nid": 62,
+				"nid": 55,
 				"kernel": false,
 				"functions": {
 					"sceGameUpdateAbort": 336683015,
@@ -890,10 +940,10 @@
 		}
 	},
 	"SceGxm": {
-		"nid": 63,
+		"nid": 56,
 		"modules": {
 			"SceGxm": {
-				"nid": 64,
+				"nid": 57,
 				"kernel": false,
 				"functions": {
 					"sceGxmAddRazorGpuCaptureBuffer": 3924299891,
@@ -1156,10 +1206,10 @@
 		}
 	},
 	"SceHandwriting": {
-		"nid": 65,
+		"nid": 58,
 		"modules": {
 			"SceHandwriting": {
-				"nid": 66,
+				"nid": 59,
 				"kernel": false,
 				"functions": {
 					"sceHandwritingGetBufferSize": 1278905673,
@@ -1180,10 +1230,10 @@
 		}
 	},
 	"SceHeap": {
-		"nid": 67,
+		"nid": 60,
 		"modules": {
 			"SceHeap": {
-				"nid": 68,
+				"nid": 61,
 				"kernel": false,
 				"functions": {
 					"sceHeapAllocHeapMemory": 3069971361,
@@ -1203,10 +1253,10 @@
 		}
 	},
 	"SceHmac": {
-		"nid": 69,
+		"nid": 62,
 		"modules": {
 			"SceHmac": {
-				"nid": 70,
+				"nid": 63,
 				"kernel": false,
 				"functions": {
 					"sceHmacMd5BlockInit": 3605148365,
@@ -1244,10 +1294,10 @@
 		}
 	},
 	"SceHttp": {
-		"nid": 71,
+		"nid": 64,
 		"modules": {
 			"SceHttp": {
-				"nid": 72,
+				"nid": 65,
 				"kernel": false,
 				"functions": {
 					"sceHttpAbortRequest": 3932251695,
@@ -1344,10 +1394,10 @@
 		}
 	},
 	"SceIme": {
-		"nid": 73,
+		"nid": 66,
 		"modules": {
 			"SceIme": {
-				"nid": 74,
+				"nid": 67,
 				"kernel": false,
 				"functions": {
 					"sceImeClose": 2291827745,
@@ -1363,10 +1413,10 @@
 		}
 	},
 	"SceJpeg": {
-		"nid": 79,
+		"nid": 68,
 		"modules": {
 			"SceJpegUser": {
-				"nid": 80,
+				"nid": 69,
 				"kernel": false,
 				"functions": {
 					"sceJpegCreateSplitDecoder": 305874740,
@@ -1387,10 +1437,10 @@
 		}
 	},
 	"SceJpegEnc": {
-		"nid": 77,
+		"nid": 70,
 		"modules": {
 			"SceJpegEncUser": {
-				"nid": 78,
+				"nid": 71,
 				"kernel": false,
 				"functions": {
 					"sceJpegEncoderCsc": 2185919823,
@@ -1410,10 +1460,10 @@
 		}
 	},
 	"SceKernel": {
-		"nid": 81,
+		"nid": 72,
 		"modules": {
 			"SceCpu": {
-				"nid": 34,
+				"nid": 73,
 				"kernel": false,
 				"functions": {
 				},
@@ -1421,7 +1471,7 @@
 				}
 			},
 			"SceDebugLed": {
-				"nid": 42,
+				"nid": 74,
 				"kernel": false,
 				"functions": {
 					"sceKernelGetGPI": 351634127,
@@ -1431,7 +1481,7 @@
 				}
 			},
 			"SceDipsw": {
-				"nid": 48,
+				"nid": 75,
 				"kernel": false,
 				"functions": {
 					"sceKernelCheckDipsw": 477642674,
@@ -1445,24 +1495,33 @@
 				"nid": 76,
 				"kernel": false,
 				"functions": {
+					"sceIoCancel": 3472132149,
 					"sceIoClose": 3339421830,
+					"sceIoCloseAsync": 2393071978,
+					"sceIoComplete": 3519323439,
 					"sceIoDclose": 1110057498,
+					"sceIoFlockForSystem": 1050207266,
 					"sceIoGetPriority": 4070863521,
 					"sceIoGetProcessDefaultPriority": 231010747,
 					"sceIoGetThreadDefaultPriority": 2708917507,
 					"sceIoLseek32": 1227172763,
 					"sceIoRead": 4256375443,
+					"sceIoReadAsync": 2000600389,
 					"sceIoSetPriority": 347264364,
+					"sceIoSetPriorityForSystem": 657928501,
 					"sceIoSetProcessDefaultPriority": 2133506991,
 					"sceIoSetThreadDefaultPriority": 1227956488,
+					"sceIoSetThreadDefaultPriorityForSystem": 3117009359,
 					"sceIoSyncByFd": 374419289,
-					"sceIoWrite": 888133750
+					"sceIoSyncByFdAsync": 2115200971,
+					"sceIoWrite": 888133750,
+					"sceIoWriteAsync": 3772136746
 				},
 				"variables": {
 				}
 			},
 			"SceLibKernel": {
-				"nid": 82,
+				"nid": 77,
 				"kernel": false,
 				"functions": {
 					"SceKernelStackChkGuard": 1146666227,
@@ -1479,6 +1538,7 @@
 					"sceClibMemcmpConstTime": 268472751,
 					"sceClibMemcpy": 350870487,
 					"sceClibMemcpyChk": 529854277,
+					"sceClibMemcpy_safe": 775619233,
 					"sceClibMemmove": 1936151496,
 					"sceClibMemmoveChk": 2709547260,
 					"sceClibMemset": 1663664343,
@@ -1625,6 +1685,7 @@
 					"sceKernelCancelTimer": 2630841996,
 					"sceKernelChangeCurrentThreadAttr": 914571155,
 					"sceKernelCheckThreadStack": 2215194576,
+					"sceKernelCloseModule": 1702864142,
 					"sceKernelCreateCond": 1347891162,
 					"sceKernelCreateEventFlag": 2232864832,
 					"sceKernelCreateLwCond": 1221061350,
@@ -1649,6 +1710,7 @@
 					"sceKernelGetLwCondInfoById": 2535398888,
 					"sceKernelGetLwMutexInfo": 4158190076,
 					"sceKernelGetLwMutexInfoById": 1212571965,
+					"sceKernelGetModuleInfoByAddr": 3508162819,
 					"sceKernelGetMsgPipeInfo": 1078382955,
 					"sceKernelGetMutexInfo": 2590786506,
 					"sceKernelGetOpenPsId": 639511604,
@@ -1680,6 +1742,7 @@
 					"sceKernelLockReadRWLockCB": 759849655,
 					"sceKernelLockWriteRWLock": 1738639291,
 					"sceKernelLockWriteRWLockCB": 2759291010,
+					"sceKernelOpenModule": 1328384789,
 					"sceKernelPMonThreadGetCounter": 2578628373,
 					"sceKernelPollEvent": 606025268,
 					"sceKernelPollEventFlag": 532352993,
@@ -1733,51 +1796,65 @@
 				}
 			},
 			"SceModulemgr": {
-				"nid": 102,
+				"nid": 78,
 				"kernel": false,
 				"functions": {
 					"sceKernelGetModuleIdByAddr": 4118383740,
 					"sceKernelGetModuleInfo": 911760815,
-					"sceKernelGetModuleList": 787634207
+					"sceKernelGetModuleList": 787634207,
+					"sceKernelGetSystemSwVersion": 1367532050
 				},
 				"variables": {
 				}
 			},
 			"SceProcessmgr": {
-				"nid": 158,
+				"nid": 79,
 				"kernel": false,
 				"functions": {
 					"sceKernelGetStderr": 4200479450,
 					"sceKernelGetStdin": 3245506393,
 					"sceKernelGetStdout": 3853148764,
+					"sceKernelIsCDialogAvailable": 339461334,
+					"sceKernelIsGameBudget": 3457090288,
 					"sceKernelLibcClock": 2655377929,
 					"sceKernelLibcGettimeofday": 1267175513,
 					"sceKernelLibcGmtime_r": 3164878797,
 					"sceKernelLibcLocaltime_r": 2498773485,
 					"sceKernelLibcMktime": 2299255865,
 					"sceKernelLibcTime": 3784261,
-					"sceKernelPowerTick": 575834380
+					"sceKernelPowerLock": 2057778040,
+					"sceKernelPowerTick": 575834380,
+					"sceKernelPowerUnlock": 1181486269,
+					"sceKernelRegisterProcessTerminationCallback": 1590130800,
+					"sceKernelUnregisterProcessTerminationCallback": 2537178407
 				},
 				"variables": {
 				}
 			},
 			"SceSysmem": {
-				"nid": 220,
+				"nid": 80,
 				"kernel": false,
 				"functions": {
 					"sceKernelAllocMemBlock": 3117804510,
+					"sceKernelAllocMemBlockForVM": 3805798711,
+					"sceKernelCloseMemBlock": 3061900192,
+					"sceKernelCloseVMDomain": 3603584714,
 					"sceKernelFindMemBlockByAddr": 2738592209,
 					"sceKernelFreeMemBlock": 2837321198,
 					"sceKernelGetFreeMemorySize": 2278316043,
 					"sceKernelGetMemBlockBase": 3102693400,
 					"sceKernelGetMemBlockInfoByAddr": 1074834789,
-					"sceKernelGetMemBlockInfoByRange": 7290292
+					"sceKernelGetMemBlockInfoByRange": 7290292,
+					"sceKernelGetModelForCDialog": 2731225647,
+					"sceKernelOpenMemBlock": 2394480571,
+					"sceKernelOpenVMDomain": 2627988267,
+					"sceKernelSyncVMDomain": 433235994
 				},
 				"variables": {
 				}
 			},
 			"SceThreadmgr": {
-				"nid": 226,
+				"nid": 81,
 				"kernel": false,
 				"functions": {
 					"sceKernelCancelCallback": 812916466,
@@ -1813,6 +1890,7 @@
 					"sceKernelDeleteTimer": 2870887108,
 					"sceKernelExitDeleteThread": 488103631,
 					"sceKernelGetCallbackCount": 59131093,
+					"sceKernelGetMsgPipeCreatorId": 1893902034,
 					"sceKernelGetProcessId": 2647346042,
 					"sceKernelGetThreadStackFreeSize": 1334459808,
 					"sceKernelGetThreadmgrUIDClass": 3379007359,
@@ -1853,7 +1931,7 @@
 				}
 			},
 			"SceThreadmgrCoredumpTime": {
-				"nid": 228,
+				"nid": 82,
 				"kernel": false,
 				"functions": {
 					"sceKernelExitThread": 210385121
@@ -1864,10 +1942,10 @@
 		}
 	},
 	"SceLibMonoBridge": {
-		"nid": 3563487460,
+		"nid": 83,
 		"modules": {
 			"SceLibMonoBridge": {
-				"nid": 3563487460,
+				"nid": 84,
 				"kernel": false,
 				"functions": {
 					"__aeabi_unwind_cpp_pr0": 3513950710,
@@ -2170,11 +2248,34 @@
 			}
 		}
 	},
+	"SceLibc": {
+		"nid": 85,
+		"modules": {
+			"SceLibc": {
+				"nid": 86,
+				"kernel": false,
+				"functions": {
+					"fgets": 3121885743,
+					"fopen": 4294697529,
+					"gets": 4185623715,
+					"malloc": 2002390194,
+					"memchr": 792615702,
+					"memcpy": 1912979419,
+					"sprintf": 1950987097,
+					"srand": 984433072,
+					"strcpy": 2243503287,
+					"strlen": 2330773619
+				},
+				"variables": {
+				}
+			}
+		}
+	},
 	"SceLiveArea": {
-		"nid": 97,
+		"nid": 87,
 		"modules": {
 			"SceLiveAreaUtil": {
-				"nid": 98,
+				"nid": 88,
 				"kernel": false,
 				"functions": {
 					"sceLiveAreaGetFrameRevision": 3605930516,
@@ -2192,10 +2293,10 @@
 		}
 	},
 	"SceLocation": {
-		"nid": 83,
+		"nid": 89,
 		"modules": {
 			"SceLibLocation": {
-				"nid": 84,
+				"nid": 90,
 				"kernel": false,
 				"functions": {
 					"sceLocationCancelGetLocation": 1901081169,
@@ -2227,10 +2328,10 @@
 		}
 	},
 	"SceLocationExtension": {
-		"nid": 85,
+		"nid": 91,
 		"modules": {
 			"SceLibLocationExtension": {
-				"nid": 86,
+				"nid": 92,
 				"kernel": false,
 				"functions": {
 					"sceLocationCancelQueryLocationWifiHistory": 1188229188,
@@ -2243,10 +2344,10 @@
 		}
 	},
 	"SceMd5": {
-		"nid": 99,
+		"nid": 93,
 		"modules": {
 			"SceMd5": {
-				"nid": 100,
+				"nid": 94,
 				"kernel": false,
 				"functions": {
 					"sceMd5BlockInit": 1298413305,
@@ -2260,10 +2361,10 @@
 		}
 	},
 	"SceMotion": {
-		"nid": 103,
+		"nid": 95,
 		"modules": {
 			"SceMotion": {
-				"nid": 104,
+				"nid": 96,
 				"kernel": false,
 				"functions": {
 					"sceMotionGetAngleThreshold": 1234922631,
@@ -2292,10 +2393,10 @@
 		}
 	},
 	"SceMt19937": {
-		"nid": 105,
+		"nid": 97,
 		"modules": {
 			"SceMt19937": {
-				"nid": 106,
+				"nid": 98,
 				"kernel": false,
 				"functions": {
 					"sceMt19937Init": 3998982780,
@@ -2307,10 +2408,10 @@
 		}
 	},
 	"SceMusicExport": {
-		"nid": 107,
+		"nid": 99,
 		"modules": {
 			"SceMusicExport": {
-				"nid": 108,
+				"nid": 100,
 				"kernel": false,
 				"functions": {
 					"sceMusicExportFromFile": 134219129
@@ -2321,10 +2422,10 @@
 		}
 	},
 	"SceNearDialogUtil": {
-		"nid": 109,
+		"nid": 101,
 		"modules": {
 			"SceNearDialogUtil": {
-				"nid": 110,
+				"nid": 102,
 				"kernel": false,
 				"functions": {
 					"sceNearDialogAbort": 2005974452,
@@ -2367,10 +2468,10 @@
 		}
 	},
 	"SceNearUtil": {
-		"nid": 111,
+		"nid": 103,
 		"modules": {
 			"SceNearUtil": {
-				"nid": 112,
+				"nid": 104,
 				"kernel": false,
 				"functions": {
 					"sceNearCloseDiscoveredGiftImage": 2292616480,
@@ -2409,10 +2510,10 @@
 		}
 	},
 	"SceNet": {
-		"nid": 113,
+		"nid": 105,
 		"modules": {
 			"SceNet": {
-				"nid": 114,
+				"nid": 106,
 				"kernel": false,
 				"functions": {
 					"sceNetAccept": 450862001,
@@ -2478,10 +2579,10 @@
 		}
 	},
 	"SceNetAdhocMatching": {
-		"nid": 115,
+		"nid": 107,
 		"modules": {
 			"SceNetAdhocMatching": {
-				"nid": 116,
+				"nid": 108,
 				"kernel": false,
 				"functions": {
 					"sceNetAdhocMatchingAbortSendData": 4269245214,
@@ -2505,10 +2606,10 @@
 		}
 	},
 	"SceNetCtl": {
-		"nid": 117,
+		"nid": 109,
 		"modules": {
 			"SceNetCtl": {
-				"nid": 118,
+				"nid": 110,
 				"kernel": false,
 				"functions": {
 					"sceNetCtlAdhocDisconnect": 3980638106,
@@ -2536,10 +2637,10 @@
 		}
 	},
 	"SceNgs": {
-		"nid": 119,
+		"nid": 111,
 		"modules": {
 			"SceNgs": {
-				"nid": 120,
+				"nid": 112,
 				"kernel": false,
 				"functions": {
 					"sceNgsAT9GetSectionDetails": 715105537,
@@ -2617,10 +2718,10 @@
 		}
 	},
 	"SceNpActivity": {
-		"nid": 121,
+		"nid": 113,
 		"modules": {
 			"SceNpActivity": {
-				"nid": 122,
+				"nid": 114,
 				"kernel": false,
 				"functions": {
 					"sceNpActivityInit": 3774869143,
@@ -2633,10 +2734,10 @@
 		}
 	},
 	"SceNpBasic": {
-		"nid": 123,
+		"nid": 115,
 		"modules": {
 			"SceNpBasic": {
-				"nid": 124,
+				"nid": 116,
 				"kernel": false,
 				"functions": {
 					"sceNpBasicCheckCallback": 538209004,
@@ -2673,10 +2774,10 @@
 		}
 	},
 	"SceNpCommerce2": {
-		"nid": 125,
+		"nid": 117,
 		"modules": {
 			"SceNpCommerce2": {
-				"nid": 126,
+				"nid": 118,
 				"kernel": false,
 				"functions": {
 					"sceNpCommerce2AbortReq": 3880282720,
@@ -2728,10 +2829,10 @@
 		}
 	},
 	"SceNpCommon": {
-		"nid": 127,
+		"nid": 119,
 		"modules": {
 			"SceNpCommon": {
-				"nid": 128,
+				"nid": 120,
 				"kernel": false,
 				"functions": {
 					"sceNpAuthAbortRequest": 3797427573,
@@ -2756,10 +2857,10 @@
 		}
 	},
 	"SceNpManager": {
-		"nid": 129,
+		"nid": 121,
 		"modules": {
 			"SceNpManager": {
-				"nid": 130,
+				"nid": 122,
 				"kernel": false,
 				"functions": {
 					"sceNpCheckCallback": 990570921,
@@ -2780,10 +2881,10 @@
 		}
 	},
 	"SceNpMatching2": {
-		"nid": 131,
+		"nid": 123,
 		"modules": {
 			"SceNpMatching2": {
-				"nid": 132,
+				"nid": 124,
 				"kernel": false,
 				"functions": {
 					"sceNpMatching2AbortContextStart": 4068769339,
@@ -2843,10 +2944,10 @@
 		}
 	},
 	"SceNpMessage": {
-		"nid": 133,
+		"nid": 125,
 		"modules": {
 			"SceNpMessage": {
-				"nid": 134,
+				"nid": 126,
 				"kernel": false,
 				"functions": {
 					"sceNpMessageAbort": 1887119042,
@@ -2867,10 +2968,10 @@
 		}
 	},
 	"SceNpParty": {
-		"nid": 135,
+		"nid": 127,
 		"modules": {
 			"SceNpPartyGameUtil": {
-				"nid": 136,
+				"nid": 128,
 				"kernel": false,
 				"functions": {
 					"sceNpPartyCheckCallback": 3054707970,
@@ -2888,10 +2989,10 @@
 		}
 	},
 	"SceNpScore": {
-		"nid": 137,
+		"nid": 129,
 		"modules": {
 			"SceNpScore": {
-				"nid": 138,
+				"nid": 130,
 				"kernel": false,
 				"functions": {
 					"sceNpScoreAbortRequest": 2817080545,
@@ -2931,10 +3032,10 @@
 		}
 	},
 	"SceNpSignaling": {
-		"nid": 139,
+		"nid": 131,
 		"modules": {
 			"SceNpSignaling": {
-				"nid": 140,
+				"nid": 132,
 				"kernel": false,
 				"functions": {
 					"sceNpSignalingActivateConnection": 2466233827,
@@ -2962,10 +3063,10 @@
 		}
 	},
 	"SceNpSnsFacebook": {
-		"nid": 141,
+		"nid": 133,
 		"modules": {
 			"SceNpSnsFacebook": {
-				"nid": 142,
+				"nid": 134,
 				"kernel": false,
 				"functions": {
 					"sceNpSnsFacebookAbortRequest": 855320353,
@@ -2982,10 +3083,10 @@
 		}
 	},
 	"SceNpTrophy": {
-		"nid": 143,
+		"nid": 135,
 		"modules": {
 			"SceNpTrophy": {
-				"nid": 144,
+				"nid": 136,
 				"kernel": false,
 				"functions": {
 					"sceNpTrophyAbortHandle": 3579604812,
@@ -3010,10 +3111,10 @@
 		}
 	},
 	"SceNpTus": {
-		"nid": 145,
+		"nid": 137,
 		"modules": {
 			"SceNpTus": {
-				"nid": 146,
+				"nid": 138,
 				"kernel": false,
 				"functions": {
 					"sceNpTssGetData": 3637889722,
@@ -3086,10 +3187,10 @@
 		}
 	},
 	"SceNpUtility": {
-		"nid": 147,
+		"nid": 139,
 		"modules": {
 			"SceNpUtility": {
-				"nid": 148,
+				"nid": 140,
 				"kernel": false,
 				"functions": {
 					"sceNpBandwidthTestAbort": 850421956,
@@ -3133,10 +3234,10 @@
 		}
 	},
 	"ScePerf": {
-		"nid": 149,
+		"nid": 141,
 		"modules": {
 			"ScePerf": {
-				"nid": 150,
+				"nid": 142,
 				"kernel": false,
 				"functions": {
 					"_pLibPerfCaptureFlagPtr": 2473221937,
@@ -3173,10 +3274,10 @@
 		}
 	},
 	"ScePgf": {
-		"nid": 151,
+		"nid": 143,
 		"modules": {
 			"ScePgf": {
-				"nid": 152,
+				"nid": 144,
 				"kernel": false,
 				"functions": {
 					"sceFontClose": 1249022953,
@@ -3209,10 +3310,10 @@
 		}
 	},
 	"ScePhotoExport": {
-		"nid": 153,
+		"nid": 145,
 		"modules": {
 			"ScePhotoExport": {
-				"nid": 154,
+				"nid": 146,
 				"kernel": false,
 				"functions": {
 					"scePhotoExportFromData": 1884365601,
@@ -3226,30 +3327,29 @@
 		}
 	},
 	"ScePower": {
-		"nid": 155,
+		"nid": 147,
 		"modules": {
 			"ScePower": {
-				"nid": 156,
+				"nid": 148,
 				"kernel": false,
 				"functions": {
+					"scePowerGetArmClockFrequency": 2881943695,
 					"scePowerGetBatteryFullCapacity": 4246249727,
 					"scePowerGetBatteryLifePercent": 545640797,
 					"scePowerGetBatteryLifeTime": 2398830498,
 					"scePowerGetBatteryRemainCapacity": 2499126591,
+					"scePowerGetBusClockFrequency": 1200613109,
+					"scePowerGetGpuClockFrequency": 453288406,
 					"scePowerIsBatteryCharging": 508101633,
 					"scePowerIsLowBattery": 3540474150,
 					"scePowerIsPowerOnline": 2269384542,
 					"scePowerIsSuspendRequired": 2023860118,
 					"scePowerRegisterCallback": 79132270,
+					"scePowerSetArmClockFrequency": 1960532709,
+					"scePowerSetBusClockFrequency": 3101144059,
 					"scePowerSetConfigurationMode": 1021413302,
-					"scePowerUnregisterCallback": 3752377080,
-                    "scePowerGetArmClockFrequency": 2881943695,
-                    "scePowerSetArmClockFrequency": 1960532709,
-                    "scePowerGetBusClockFrequency": 1200613109,
-                    "scePowerSetBusClockFrequency": 3101144059,
-                    "scePowerGetGpuClockFrequency": 453288406,
-                    "scePowerSetGpuClockFrequency": 1904062572,
-                    "scePowerSetConfigurationMode": 1021413302
+					"scePowerSetGpuClockFrequency": 1904062572,
+					"scePowerUnregisterCallback": 3752377080
 				},
 				"variables": {
 				}
@@ -3257,10 +3357,10 @@
 		}
 	},
 	"ScePspnetAdhoc": {
-		"nid": 159,
+		"nid": 149,
 		"modules": {
 			"ScePspnetAdhoc": {
-				"nid": 160,
+				"nid": 150,
 				"kernel": false,
 				"functions": {
 					"sceNetAdhocGetPdpStat": 34179945,
@@ -3298,10 +3398,10 @@
 		}
 	},
 	"ScePvf": {
-		"nid": 161,
+		"nid": 151,
 		"modules": {
 			"ScePvf": {
-				"nid": 162,
+				"nid": 152,
 				"kernel": false,
 				"functions": {
 					"__scePvfSetFt2DoneLibCHook": 1477717361,
@@ -3354,10 +3454,10 @@
 		}
 	},
 	"SceRazorCapture": {
-		"nid": 163,
+		"nid": 153,
 		"modules": {
 			"SceRazorCapture": {
-				"nid": 164,
+				"nid": 154,
 				"kernel": false,
 				"functions": {
 					"sceRazorCaptureIsInProgress": 2434665120,
@@ -3377,10 +3477,10 @@
 		}
 	},
 	"SceRazorHud": {
-		"nid": 165,
+		"nid": 155,
 		"modules": {
 			"SceRazorHud": {
-				"nid": 166,
+				"nid": 156,
 				"kernel": false,
 				"functions": {
 					"sceRazorCpuHudSetUserMarkerTraceBuffer": 3974325231,
@@ -3406,11 +3506,58 @@
 			}
 		}
 	},
+	"SceReg": {
+		"nid": 157,
+		"modules": {
+			"SceRegMgr": {
+				"nid": 158,
+				"kernel": false,
+				"functions": {
+					"sceRegMgrGetKeyBin": 194565702,
+					"sceRegMgrGetKeyInt": 383644636,
+					"sceRegMgrGetKeyStr": 3783800879,
+					"sceRegMgrSetKeyBin": 1449793427,
+					"sceRegMgrSetKeyInt": 3610157977,
+					"sceRegMgrSetKeyStr": 1104355525
+				},
+				"variables": {
+				}
+			},
+			"SceRegMgrForGame": {
+				"nid": 159,
+				"kernel": false,
+				"functions": {
+					"sceRegMgrSystemParamGetBin": 2147364063,
+					"sceRegMgrSystemParamGetInt": 880548827,
+					"sceRegMgrSystemParamGetStr": 2272975679,
+					"sceRegMgrSystemParamSetBin": 3584505175,
+					"sceRegMgrSystemParamSetInt": 3371643665,
+					"sceRegMgrSystemParamSetStr": 3409069795
+				},
+				"variables": {
+				}
+			},
+			"SceRegMgrForSDK": {
+				"nid": 160,
+				"kernel": false,
+				"functions": {
+					"sceRegMgrUtilityGetBin": 4023361922,
+					"sceRegMgrUtilityGetInt": 2169820822,
+					"sceRegMgrUtilityGetStr": 535336094,
+					"sceRegMgrUtilitySetBin": 1929698322,
+					"sceRegMgrUtilitySetInt": 3010503375,
+					"sceRegMgrUtilitySetStr": 1217970658
+				},
+				"variables": {
+				}
+			}
+		}
+	},
 	"SceRtc": {
-		"nid": 167,
+		"nid": 161,
 		"modules": {
 			"SceRtc": {
-				"nid": 168,
+				"nid": 162,
 				"kernel": false,
 				"functions": {
 					"sceRtcGetAccumulativeTime": 629926124
@@ -3419,7 +3566,7 @@
 				}
 			},
 			"SceRtcUser": {
-				"nid": 170,
+				"nid": 163,
 				"kernel": false,
 				"functions": {
 					"sceRtcCheckValid": 3613534517,
@@ -3469,10 +3616,10 @@
 		}
 	},
 	"SceRudp": {
-		"nid": 87,
+		"nid": 164,
 		"modules": {
 			"SceLibRudp": {
-				"nid": 88,
+				"nid": 165,
 				"kernel": false,
 				"functions": {
 					"sceRudpActivate": 4044692881,
@@ -3512,10 +3659,10 @@
 		}
 	},
 	"SceSas": {
-		"nid": 171,
+		"nid": 166,
 		"modules": {
 			"SceSas": {
-				"nid": 172,
+				"nid": 167,
 				"kernel": false,
 				"functions": {
 					"sceSasCore": 2051437234,
@@ -3558,10 +3705,10 @@
 		}
 	},
 	"SceScreenShot": {
-		"nid": 173,
+		"nid": 168,
 		"modules": {
 			"SceScreenShot": {
-				"nid": 174,
+				"nid": 169,
 				"kernel": false,
 				"functions": {
 					"sceScreenShotCapture": 3574201096,
@@ -3579,10 +3726,10 @@
 		}
 	},
 	"SceSfmt11213": {
-		"nid": 175,
+		"nid": 170,
 		"modules": {
 			"SceSfmt11213": {
-				"nid": 176,
+				"nid": 171,
 				"kernel": false,
 				"functions": {
 					"sceSfmt11213FillArray32": 4251542917,
@@ -3598,10 +3745,10 @@
 		}
 	},
 	"SceSfmt1279": {
-		"nid": 177,
+		"nid": 172,
 		"modules": {
 			"SceSfmt1279": {
-				"nid": 178,
+				"nid": 173,
 				"kernel": false,
 				"functions": {
 					"sceSfmt1279FillArray32": 3891673144,
@@ -3617,10 +3764,10 @@
 		}
 	},
 	"SceSfmt132049": {
-		"nid": 179,
+		"nid": 174,
 		"modules": {
 			"SceSfmt132049": {
-				"nid": 180,
+				"nid": 175,
 				"kernel": false,
 				"functions": {
 					"sceSfmt132049FillArray32": 3633424799,
@@ -3636,10 +3783,10 @@
 		}
 	},
 	"SceSfmt19937": {
-		"nid": 181,
+		"nid": 176,
 		"modules": {
 			"SceSfmt19937": {
-				"nid": 182,
+				"nid": 177,
 				"kernel": false,
 				"functions": {
 					"sceSfmt19937FillArray32": 2714129624,
@@ -3655,10 +3802,10 @@
 		}
 	},
 	"SceSfmt216091": {
-		"nid": 183,
+		"nid": 178,
 		"modules": {
 			"SceSfmt216091": {
-				"nid": 184,
+				"nid": 179,
 				"kernel": false,
 				"functions": {
 					"sceSfmt216091FillArray32": 3712112368,
@@ -3674,10 +3821,10 @@
 		}
 	},
 	"SceSfmt2281": {
-		"nid": 185,
+		"nid": 180,
 		"modules": {
 			"SceSfmt2281": {
-				"nid": 186,
+				"nid": 181,
 				"kernel": false,
 				"functions": {
 					"sceSfmt2281FillArray32": 3146373360,
@@ -3693,10 +3840,10 @@
 		}
 	},
 	"SceSfmt4253": {
-		"nid": 187,
+		"nid": 182,
 		"modules": {
 			"SceSfmt4253": {
-				"nid": 188,
+				"nid": 183,
 				"kernel": false,
 				"functions": {
 					"sceSfmt4253FillArray32": 1503771132,
@@ -3712,10 +3859,10 @@
 		}
 	},
 	"SceSfmt44497": {
-		"nid": 189,
+		"nid": 184,
 		"modules": {
 			"SceSfmt44497": {
-				"nid": 190,
+				"nid": 185,
 				"kernel": false,
 				"functions": {
 					"sceSfmt44497FillArray32": 473444906,
@@ -3731,10 +3878,10 @@
 		}
 	},
 	"SceSfmt607": {
-		"nid": 191,
+		"nid": 186,
 		"modules": {
 			"SceSfmt607": {
-				"nid": 192,
+				"nid": 187,
 				"kernel": false,
 				"functions": {
 					"sceSfmt607FillArray32": 2726866361,
@@ -3750,10 +3897,10 @@
 		}
 	},
 	"SceSfmt86243": {
-		"nid": 193,
+		"nid": 188,
 		"modules": {
 			"SceSfmt86243": {
-				"nid": 194,
+				"nid": 189,
 				"kernel": false,
 				"functions": {
 					"sceSfmt86243FillArray32": 3264734897,
@@ -3769,10 +3916,10 @@
 		}
 	},
 	"SceSha0": {
-		"nid": 195,
+		"nid": 190,
 		"modules": {
 			"SceSha0": {
-				"nid": 196,
+				"nid": 191,
 				"kernel": false,
 				"functions": {
 					"sceSha0BlockInit": 3170294586,
@@ -3786,10 +3933,10 @@
 		}
 	},
 	"SceSha1": {
-		"nid": 197,
+		"nid": 192,
 		"modules": {
 			"SceSha1": {
-				"nid": 198,
+				"nid": 193,
 				"kernel": false,
 				"functions": {
 					"sceSha1BlockInit": 2973590954,
@@ -3803,10 +3950,10 @@
 		}
 	},
 	"SceSha224": {
-		"nid": 199,
+		"nid": 194,
 		"modules": {
 			"SceSha224": {
-				"nid": 200,
+				"nid": 195,
 				"kernel": false,
 				"functions": {
 					"sceSha224BlockInit": 1401881806,
@@ -3820,10 +3967,10 @@
 		}
 	},
 	"SceSha256": {
-		"nid": 201,
+		"nid": 196,
 		"modules": {
 			"SceSha256": {
-				"nid": 202,
+				"nid": 197,
 				"kernel": false,
 				"functions": {
 					"sceSha256BlockInit": 3800119119,
@@ -3837,10 +3984,10 @@
 		}
 	},
 	"SceSha384": {
-		"nid": 203,
+		"nid": 198,
 		"modules": {
 			"SceSha384": {
-				"nid": 204,
+				"nid": 199,
 				"kernel": false,
 				"functions": {
 					"sceSha384BlockInit": 58371047,
@@ -3854,10 +4001,10 @@
 		}
 	},
 	"SceSha512": {
-		"nid": 205,
+		"nid": 200,
 		"modules": {
 			"SceSha512": {
-				"nid": 206,
+				"nid": 201,
 				"kernel": false,
 				"functions": {
 					"sceSha512BlockInit": 3759647181,
@@ -3871,10 +4018,10 @@
 		}
 	},
 	"SceSha512t": {
-		"nid": 207,
+		"nid": 202,
 		"modules": {
 			"SceSha512t": {
-				"nid": 208,
+				"nid": 203,
 				"kernel": false,
 				"functions": {
 					"sceSha512tBlockInit": 2030459826,
@@ -3888,10 +4035,10 @@
 		}
 	},
 	"SceShutterSound": {
-		"nid": 209,
+		"nid": 204,
 		"modules": {
 			"SceShutterSound": {
-				"nid": 210,
+				"nid": 205,
 				"kernel": false,
 				"functions": {
 					"sceShutterSoundPlay": 2147183993
@@ -3902,10 +4049,10 @@
 		}
 	},
 	"SceSmart": {
-		"nid": 211,
+		"nid": 206,
 		"modules": {
 			"SceSmart": {
-				"nid": 212,
+				"nid": 207,
 				"kernel": false,
 				"functions": {
 					"sceSmartCreateLearnedImageTarget": 1513178222,
@@ -3955,10 +4102,10 @@
 		}
 	},
 	"SceSqlite": {
-		"nid": 213,
+		"nid": 208,
 		"modules": {
 			"SceSqlite": {
-				"nid": 214,
+				"nid": 209,
 				"kernel": false,
 				"functions": {
 					"sceSqliteConfigMallocMethods": 540337591,
@@ -4141,10 +4288,10 @@
 		}
 	},
 	"SceSsl": {
-		"nid": 215,
+		"nid": 210,
 		"modules": {
 			"SceSsl": {
-				"nid": 216,
+				"nid": 211,
 				"kernel": false,
 				"functions": {
 					"sceSslFreeSslCertName": 3342239716,
@@ -4165,10 +4312,10 @@
 		}
 	},
 	"SceSulpha": {
-		"nid": 217,
+		"nid": 212,
 		"modules": {
 			"SceSulpha": {
-				"nid": 218,
+				"nid": 213,
 				"kernel": false,
 				"functions": {
 					"sceSulphaAgentsGetNeededMemory": 3312790379,
@@ -4201,13 +4348,16 @@
 		}
 	},
 	"SceSysmodule": {
-		"nid": 221,
+		"nid": 214,
 		"modules": {
 			"SceSysmodule": {
-				"nid": 222,
+				"nid": 215,
 				"kernel": false,
 				"functions": {
+					"_sceSysmoduleLoadModuleInternalWithArg": 3284296505,
+					"_sceSysmoduleUnloadModuleInternalWithArg": 2733902924,
 					"sceSysmoduleIsLoaded": 1393138554,
+					"sceSysmoduleIsLoadedInternal": 161787677,
 					"sceSysmoduleLoadModule": 2040534538,
 					"sceSysmoduleUnloadModule": 836270085
 				},
@@ -4217,10 +4367,10 @@
 		}
 	},
 	"SceSystemGesture": {
-		"nid": 223,
+		"nid": 216,
 		"modules": {
 			"SceSystemGesture": {
-				"nid": 224,
+				"nid": 217,
 				"kernel": false,
 				"functions": {
 					"sceSystemGestureCreateTouchRecognizer": 3275125616,
@@ -4247,19 +4397,26 @@
 		}
 	},
 	"SceTouch": {
-		"nid": 229,
+		"nid": 218,
 		"modules": {
 			"SceTouch": {
-				"nid": 230,
+				"nid": 219,
 				"kernel": false,
 				"functions": {
+					"sceTouchActivateRegion": 3176781394,
+					"sceTouchClearRegion": 764734186,
 					"sceTouchDisableTouchForce": 1092174865,
 					"sceTouchEnableTouchForce": 2978181314,
 					"sceTouchGetPanelInfo": 279104037,
+					"sceTouchGetPixelDensity": 4033891571,
 					"sceTouchGetSamplingState": 642979110,
 					"sceTouchPeek": 4278726128,
+					"sceTouchPeekRegion": 71566882,
+					"sceTouchPeekRegionExt": 754374626,
 					"sceTouchRead": 379198808,
-					"sceTouchSetSamplingState": 463232276
+					"sceTouchSetRegion": 1630855102,
+					"sceTouchSetSamplingState": 463232276,
+					"sceTouchSetSamplingStateExt": 332266563
 				},
 				"variables": {
 				}
@@ -4267,10 +4424,10 @@
 		}
 	},
 	"SceUlt": {
-		"nid": 231,
+		"nid": 220,
 		"modules": {
 			"SceUlt": {
-				"nid": 232,
+				"nid": 221,
 				"kernel": false,
 				"functions": {
 					"_sceUltConditionVariableCreate": 3614053740,
@@ -4342,10 +4499,10 @@
 		}
 	},
 	"SceVideodec": {
-		"nid": 233,
+		"nid": 222,
 		"modules": {
 			"SceVideodecUser": {
-				"nid": 234,
+				"nid": 223,
 				"kernel": false,
 				"functions": {
 					"sceAvcdecCreateDecoder": 3895178907,
@@ -4376,10 +4533,10 @@
 		}
 	},
 	"SceVoice": {
-		"nid": 235,
+		"nid": 224,
 		"modules": {
 			"SceVoice": {
-				"nid": 236,
+				"nid": 225,
 				"kernel": false,
 				"functions": {
 					"sceVoiceCheckTopology": 2269140174,
@@ -4417,10 +4574,10 @@
 		}
 	},
 	"SceVoiceQoS": {
-		"nid": 237,
+		"nid": 226,
 		"modules": {
 			"SceVoiceQoS": {
-				"nid": 238,
+				"nid": 227,
 				"kernel": false,
 				"functions": {
 					"sceVoiceQoSConnect": 3771059950,
