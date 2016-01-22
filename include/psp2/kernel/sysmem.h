@@ -40,8 +40,6 @@ enum {
 */
 SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, void *optp);
 
-SceUID sceKernelAllocMemBlockForVM(const char *, SceSize);
-
 /***
  * Frees new memoy block
  *
@@ -61,11 +59,32 @@ int sceKernelFreeMemBlock(SceUID uid);
 */
 int sceKernelGetMemBlockBase(SceUID uid, void **basep);
 
-SceUID sceKernelFindMemBlockByAddr(const void *, int);
+typedef struct SceKernelMemBlockInfo {
+	SceSize size;
+	void *mappedBase;
+	SceSize mappedSize;
+	int memoryType;
+	SceUInt32 access;
+	SceKernelMemBlockType type;
+} SceKernelMemBlockInfo;
 
-void sceKernelSyncVMDomain(SceUID, void *, SceSize);
-void sceKernelOpenVMDomain();
-void sceKernelCloseVMDomain();
+#define SCE_KERNEL_MEMORY_TYPE_NORMAL_NC 0x80
+#define SCE_KERNEL_MEMORY_TYPE_NORMAL 0xD0
+
+#define SCE_KERNEL_MEMORY_ACCESS_X 0x01
+#define SCE_KERNEL_MEMORY_ACCESS_W 0x02
+#define SCE_KERNEL_MEMORY_ACCESS_R 0x04
+
+int sceKernelGetMemBlockInfoByAddr(void *base, SceKernelMemBlockInfo *info);
+int sceKernelGetMemBlockInfoByRange(void *base, SceSize size, SceKernelMemBlockInfo *info);
+
+SceUID sceKernelAllocMemBlockForVM(const char *name, SceSize size);
+int sceKernelSyncVMDomain(SceUID uid, void *data, SceSize size);
+int sceKernelOpenVMDomain(void);
+int sceKernelCloseVMDomain(void);
+
+int sceKernelOpenMemBlock(const char *name, int flags);
+int sceKernelCloseMemBlock(SceUID uid);
 
 #ifdef __cplusplus
 }
