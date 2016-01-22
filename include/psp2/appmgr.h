@@ -96,6 +96,36 @@ typedef struct sceAppMgrLoadExecOptParam {
 int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 	const SceAppMgrExecOptParam *optParam);
 
+int sceAppMgrLaunchAppByUri(int flags, char *uri);
+
+//! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
+int sceAppMgrAppDataMount(int id, char *mount_point);
+
+//! id: 106 (ad), 107 (ad)
+int sceAppMgrAppDataMountById(int id, char *titleid, char *mount_point);
+
+//! param: 12 (titleid)
+int sceAppMgrAppParamGetString(int pid, int param, char *string, int length);
+
+int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
+
+//! dev: ux0:
+int sceAppMgrGetDevInfo(char *dev, uint64_t *max_size, uint64_t *free_size);
+
+int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
+
+//! id: 400 (ad), 401 (ad), 402 (ad)
+int sceAppMgrMmsMount(int id, char *mount_point);
+
+//! ms
+int sceAppMgrPspSaveDataRootMount(char *mount_point);
+
+//! id: 200 (td), 201 (td), 203 (td), 204 (td), 206 (td)
+int sceAppMgrWorkDirMount(int id, char *mount_point);
+
+//! id: 205 (cache0), 207 (td)
+int sceAppMgrWorkDirMountById(int id, char *titleid, char *mount_point);
+
 #ifdef __cplusplus
 }
 #endif
