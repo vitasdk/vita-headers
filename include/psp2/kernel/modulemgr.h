@@ -22,7 +22,7 @@ typedef struct
 	SceUInt memsz;	//< size in memory
 	SceUInt flags;	//< meanig unknown
 	SceUInt res;	//< unused?
-} Psp2SegmentInfo;
+} SceKernelSegmentInfo;
 
 typedef struct
 {
@@ -42,13 +42,25 @@ typedef struct
 	SceSize tlsInitSize;
 	SceSize tlsAreaSize;
 	char path[256];
-	Psp2SegmentInfo segments[4];
+	SceKernelSegmentInfo segments[4];
 	SceUInt type;	//< 6 = user-mode PRX?
-} Psp2LoadedModuleInfo;
+} SceKernelModuleInfo;
 
-int sceKernelGetModuleList(int, SceUID *, unsigned int *);
-int sceKernelGetModuleInfo(SceUID, Psp2LoadedModuleInfo *);
-SceUID sceKernelLoadModule(const char *path, int flags, int *res);
-int sceKernelUnloadModule(SceUID);
+typedef struct {
+	SceSize size;
+} SceKernelLMOption;
+
+typedef struct {
+	SceSize size;
+} SceKernelULMOption;
+
+int sceKernelGetModuleList(int flags, SceUID *modids, int *num);
+int sceKernelGetModuleInfo(SceUID modid, SceKernelModuleInfo *info);
+
+SceUID sceKernelLoadModule(char *path, int flags, SceKernelLMOption *option);
+int sceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
+
+SceUID sceKernelLoadStartModule(char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 #endif
