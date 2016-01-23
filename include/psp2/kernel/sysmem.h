@@ -75,6 +75,8 @@ typedef struct SceKernelMemBlockInfo {
 #define SCE_KERNEL_MEMORY_ACCESS_W 0x02
 #define SCE_KERNEL_MEMORY_ACCESS_R 0x04
 
+SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
+
 int sceKernelGetMemBlockInfoByAddr(void *base, SceKernelMemBlockInfo *info);
 int sceKernelGetMemBlockInfoByRange(void *base, SceSize size, SceKernelMemBlockInfo *info);
 
@@ -85,6 +87,8 @@ int sceKernelCloseVMDomain(void);
 
 int sceKernelOpenMemBlock(const char *name, int flags);
 int sceKernelCloseMemBlock(SceUID uid);
+
+int sceKernelGetModelForCDialog();
 
 #ifdef __cplusplus
 }
