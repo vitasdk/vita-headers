@@ -21,8 +21,8 @@ extern "C" {
 
 /* typedef */
 
-typedef SceUID SceFontLibHandle;
-typedef SceUID SceFontHandle;
+typedef void *SceFontLibHandle;
+typedef void *SceFontHandle;
 
 /* struct */
 
@@ -51,41 +51,55 @@ typedef struct SceSceFontNewLibParams {
 	void *ioFinishFunc;
 } SceFontNewLibParams;
 
-typedef enum FontFamily {
-	FONT_FAMILY_SANS_SERIF	= 1,
-	FONT_FAMILY_SERIF	= 2,
-} FontFamily;
+typedef enum SceFontFamilyCode {
+	SCE_FONT_FAMILY_DEFAULT    = 0,
+	SCE_FONT_FAMILY_SANS_SERIF = 1,
+	SCE_FONT_FAMILY_SERIF      = 2,
+	SCE_FONT_FAMILY_ROUNDED    = 3,
+} SceFontFamilyCode;
 
-typedef enum FontStyle {
-	FONT_STYLE_REGULAR	= 1,
-	FONT_STYLE_ITALIC	= 2,
-	FONT_STYLE_BOLD	= 5,
-	FONT_STYLE_BOLD_ITALIC	= 6,
-	FONT_STYLE_DB	= 103, // Demi-Bold / semi-bold
-} FontStyle;
+typedef enum SceFontStyleCode {
+	SCE_FONT_STYLE_DEFAULT       = 0,
+	SCE_FONT_STYLE_REGULAR       = 1,
+	SCE_FONT_STYLE_ITALIC        = 2,
+	SCE_FONT_STYLE_NARROW        = 3,
+	SCE_FONT_STYLE_NARROW_ITALIC = 4,
+	SCE_FONT_STYLE_BOLD          = 5,
+	SCE_FONT_STYLE_BOLD_ITALIC   = 6,
+	SCE_FONT_STYLE_BLACK         = 7,
+	SCE_FONT_STYLE_BLACK_ITALIC  = 8,
+	SCE_FONT_STYLE_L             = 101,
+	SCE_FONT_STYLE_M             = 102,
+	SCE_FONT_STYLE_DB            = 103, // Demi-Bold / semi-bold
+	SCE_FONT_STYLE_B             = 104,
+	SCE_FONT_STYLE_EB            = 105,
+	SCE_FONT_STYLE_UB            = 106,
+} SceFontStyleCode;
 
-typedef enum FontLanguage {
-	FONT_LANGUAGE_JAPANESE	= 1,
-	FONT_LANGUAGE_LATIN	= 2,
-	FONT_LANGUAGE_KOREAN	= 3,
-	FONT_LANGUAGE_CHINESE	= 4,
-}FontLanguage;
+typedef enum SceFontLanguageCode {
+	SCE_FONT_LANGUAGE_DEFAULT  = 0,
+	SCE_FONT_LANGUAGE_JAPANESE = 1,
+	SCE_FONT_LANGUAGE_LATIN    = 2,
+	SCE_FONT_LANGUAGE_KOREAN   = 3,
+	SCE_FONT_LANGUAGE_CHINESE  = 4,
+	SCE_FONT_LANGUAGE_CJK      = 5,
+} SceFontLanguageCode;
 
-typedef enum FontPixelFormat {
-	FONT_PIXELFORMAT_4	= 0, // 2 pixels packed in 1 byte (natural order)
-	FONT_PIXELFORMAT_4_REV	= 1, // 2 pixels packed in 1 byte (reversed order)
-	FONT_PIXELFORMAT_8	= 2, // 1 pixel in 1 byte
-	FONT_PIXELFORMAT_24	= 3, // 1 pixel in 3 bytes (RGB)
-	FONT_PIXELFORMAT_32	= 4, // 1 pixel in 4 bytes (RGBA)
-} FontPixelFormat;
+typedef enum SceFontPixelFormatCode {
+	SCE_FONT_PIXELFORMAT_4     = 0, // 2 pixels packed in 1 byte (natural order)
+	SCE_FONT_PIXELFORMAT_4_REV = 1, // 2 pixels packed in 1 byte (reversed order)
+	SCE_FONT_PIXELFORMAT_8     = 2, // 1 pixel in 1 byte
+	SCE_FONT_PIXELFORMAT_24    = 3, // 1 pixel in 3 bytes (RGB)
+	SCE_FONT_PIXELFORMAT_32    = 4, // 1 pixel in 4 bytes (RGBA)
+} SceFontPixelFormatCode;
 
 typedef struct SceFontImageRect {
-	short width;
-	short height;
+	unsigned short width;
+	unsigned short height;
 } SceFontImageRect;
 
 typedef struct SceFontGlyphImage {
-	FontPixelFormat pixelFormat;
+	unsigned int pixelFormat;
 	int xPos64;
 	int yPos64;
 	unsigned short bufWidth;
