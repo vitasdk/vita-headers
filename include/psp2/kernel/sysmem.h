@@ -28,6 +28,16 @@ enum {
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW	= 0x09408060
 };
 
+typedef struct SceKernelAllocMemBlockOpt {
+	SceSize size;
+	SceUInt32 attr;
+	SceSize alignment;
+	SceUInt32 uidBaseBlock;
+	const char *strBaseBlockName;
+	int flags; //! Unknown flags 0x10 or 0x30 for sceKernelOpenMemBlock
+	int reserved[10];
+} SceKernelAllocMemBlockOpt;
+
 /***
  * Allocates a new memoy block
  *
@@ -38,7 +48,7 @@ enum {
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, void *optp);
+SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockOpt *optp);
 
 /***
  * Frees new memoy block
@@ -68,12 +78,12 @@ typedef struct SceKernelMemBlockInfo {
 	SceKernelMemBlockType type;
 } SceKernelMemBlockInfo;
 
-#define SCE_KERNEL_MEMORY_TYPE_NORMAL_NC 0x80
-#define SCE_KERNEL_MEMORY_TYPE_NORMAL 0xD0
-
 #define SCE_KERNEL_MEMORY_ACCESS_X 0x01
 #define SCE_KERNEL_MEMORY_ACCESS_W 0x02
 #define SCE_KERNEL_MEMORY_ACCESS_R 0x04
+
+#define SCE_KERNEL_MEMORY_TYPE_NORMAL_NC 0x80
+#define SCE_KERNEL_MEMORY_TYPE_NORMAL 0xD0
 
 SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 
