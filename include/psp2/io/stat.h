@@ -137,6 +137,16 @@ int sceIoRmdir(const char *path);
 int sceIoGetstat(const char *file, SceIoStat *stat);
 
 /**
+  * Get the status of a file descriptor.
+  *
+  * @param fd - The file descriptor.
+  * @param stat - A pointer to an io_stat_t structure.
+  *
+  * @return < 0 on error.
+  */
+int sceIoGetstatByFd(SceUID fd, SceIoStat *stat);
+
+/**
   * Change the status of a file.
   *
   * @param file - The path to the file.
