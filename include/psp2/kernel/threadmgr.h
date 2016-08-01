@@ -621,8 +621,10 @@ typedef enum SceEventFlagWaitTypes {
 	SCE_EVENT_WAITAND = 0,
 	/** Wait for one or more bits in the pattern to be set */
 	SCE_EVENT_WAITOR  = 1,
+	/** Clear all the bits when it matches */
+	SCE_EVENT_WAITCLEAR = 2,
 	/** Clear the wait pattern when it matches */
-	SCE_EVENT_WAITCLEAR = 0x20
+	SCE_EVENT_WAITCLEAR_PAT = 4
 } SceEventFlagWaitTypes;
 
 /**
