@@ -41,8 +41,8 @@ enum {
  * @see sceTouchSetSamplingState()
  */
 enum {
-	SCE_TOUCH_SAMPLING_STATE_START	= 0,
-	SCE_TOUCH_SAMPLING_STATE_STOP	= 1
+	SCE_TOUCH_SAMPLING_STATE_STOP	= 0,
+	SCE_TOUCH_SAMPLING_STATE_START	= 1
 };
 
 /**
