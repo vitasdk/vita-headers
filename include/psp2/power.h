@@ -32,7 +32,10 @@ int scePowerGetBatteryLifeTime();
 int scePowerGetBatteryRemainCapacity(); //?
 int scePowerIsLowBattery();
 int scePowerUnregisterCallback(int slot);
-int  scePowerGetBatteryFullCapacity(); //?
+int scePowerGetBatteryFullCapacity(); //?
+int scePowerGetArmClockFrequency(); //Get Clock Frequency of the ARM
+int scePowerGetBusClockFrequency(); //Get Clock Frequency of the BUS
+int scePowerGetGpuClockFrequency(); //Get Clock Frequency of the Gpu
 
 #ifdef __cplusplus
 }
