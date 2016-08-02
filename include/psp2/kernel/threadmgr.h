@@ -1009,6 +1009,22 @@ typedef enum SceKernelIdListType {
  */
 SceKernelIdListType sceKernelGetThreadmgrUIDClass(SceUID uid);
 
+
+
+typedef struct	SceKernelLwMutexWork {
+	SceInt64 data[4];
+} SceKernelLwMutexWork;
+
+typedef struct SceKernelLwMutexOptParam {
+	SceSize	size;
+} SceKernelLwMutexOptParam;
+
+int sceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
+int sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
+int sceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
+int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
+
+
 #ifdef __cplusplus
 }
 #endif
