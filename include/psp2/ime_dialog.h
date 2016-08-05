@@ -1,4 +1,4 @@
-﻿/**
+/**
  * \file
  * \brief Header file which defines power variables and functions
  *
@@ -37,14 +37,25 @@ extern "C" {
 #define SCE_IME_LANGUAGE_SIMPLIFIED_CHINESE  0x00008000ULL
 #define SCE_IME_LANGUAGE_TRADITIONAL_CHINESE 0x00010000ULL
 
-#define SCE_IME_TYPE_DEFAULT                 0
-#define SCE_IME_TYPE_BASIC_LATIN             1
-
 #define SCE_IME_DIALOG_MAX_TITLE_LENGTH			(128)
 #define SCE_IME_DIALOG_MAX_TEXT_LENGTH		    (512)
 
+#define SCE_IME_TYPE_DEFAULT             0
+#define SCE_IME_TYPE_BASIC_LATIN         1
+#define SCE_IME_TYPE_NUMBER              2
+#define SCE_IME_TYPE_EXTENDED_NUMBER     3
+
+#define SCE_IME_OPTION_MULTILINE      0x01
+
+#define SCE_IME_DIALOG_DIALOG_MODE_DEFAULT	    0
+#define SCE_IME_DIALOG_DIALOG_MODE_WITH_CANCEL  1
+
 #define SCE_IME_DIALOG_TEXTBOX_MODE_DEFAULT     0
 #define SCE_IME_DIALOG_TEXTBOX_MODE_PASSWORD    1
+
+#define SCE_IME_DIALOG_BUTTON_NONE 0
+#define SCE_IME_DIALOG_BUTTON_CLOSE 1
+#define SCE_IME_DIALOG_BUTTON_ENTER 2
 
 typedef SceInt32 (*SceImeCharFilter)(SceWChar16 ch);
 
@@ -67,13 +78,13 @@ typedef struct SceImeDialogParam {
 
 	SceCommonDialogParam commonParam;
 
-	SceChar8 reserved[32];
+	SceChar8 reserved[36];
 } SceImeDialogParam;
 
 typedef struct SceImeDialogResult {
-	SceInt32 unk;
 	SceInt32 result;
-	SceChar8 reserved[32];
+	SceInt32 button;
+	SceChar8 reserved[28];
 } SceImeDialogResult;
 
 static inline
