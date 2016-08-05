@@ -194,7 +194,7 @@ int sceAppUtilSystemParamGetInt(unsigned int paramId, int *value);
 
 //! Get application parameters for string type
 int sceAppUtilSystemParamGetString(unsigned int paramId,
-	SceWChar16 *buf, SceSize bufSize);
+	SceChar8 *buf, SceSize bufSize);
 
 //! Get application parameters for int type
 int sceAppUtilParamGetInt(SceAppUtilAppParamId paramId, int *value);
