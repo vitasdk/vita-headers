@@ -1,6 +1,6 @@
 /**
  * \file
- * \brief Header file which defines output audio related variables and functions
+ * \brief Header file which defines sqlite related variables and functions
  *
  * Copyright (C) 2015 PSP2SDK Project
  *
