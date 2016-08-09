@@ -79,6 +79,12 @@ typedef struct SceCtrlRapidFireRule {
 	unsigned int Break;
 } SceCtrlRapidFireRule;
 
+/** Structure to pass as argument to ::sceCtrlSetActuator */
+typedef struct SceCtrlActuator {
+	int enable;  //!< Enable the actuator vibration
+	int unk;     //!< Unknown
+} SceCtrlActuator;
+
 /**
  * Set the controller mode.
  *
@@ -161,6 +167,16 @@ int sceCtrlSetRapidFire(int port, int idx, const SceCtrlRapidFireRule* pRule);
  * @return 0, <0 on error.
  */
 int sceCtrlClearRapidFire(int port, int idx);
+
+/**
+ * Control the actuator (vibrate) on paired controllers.
+ *
+ * @param[in] port - use 1 for the first paired controller, etc.
+ * @param[in] state - see ::SceCtrlActuator
+ *
+ * @return 0, <0 on error.
+ */
+int sceCtrlSetActuator(int port, const SceCtrlActuator* pState);
 
 #ifdef __cplusplus
 }
