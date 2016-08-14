@@ -178,6 +178,18 @@ int sceCtrlClearRapidFire(int port, int idx);
  */
 int sceCtrlSetActuator(int port, const SceCtrlActuator* pState);
 
+/**
+ * Control the light bar on paired controllers.
+ *
+ * @param[in] port - use 1 for the first paired controller, etc.
+ * @param[in] r - red intensity
+ * @param[in] g - green intensity
+ * @param[in] b - blue intensity
+ *
+ * @return 0, <0 on error.
+ */
+int sceCtrlSetLightBar(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
+
 #ifdef __cplusplus
 }
 #endif
