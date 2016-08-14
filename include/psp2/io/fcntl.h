@@ -235,6 +235,15 @@ int sceIoRename(const char *oldname, const char *newname);
 int sceIoSync(const char *device, unsigned int unk);
 
 /**
+ * Synchronize the file data for one file
+ *
+ * @param fd - Opened file descriptor to sync
+ *
+ * @return < 0 on error.
+ */
+int sceIoSyncByFd(SceUID fd);
+
+/**
   * Wait for asyncronous completion.
   *
   * @param fd - The file descriptor which is current performing an asynchronous action.
