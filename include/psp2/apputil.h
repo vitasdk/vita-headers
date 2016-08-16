@@ -197,7 +197,7 @@ int sceAppUtilSystemParamGetString(unsigned int paramId,
 	SceChar8 *buf, SceSize bufSize);
 
 //! Get application parameters for int type
-int sceAppUtilParamGetInt(SceAppUtilAppParamId paramId, int *value);
+int sceAppUtilAppParamGetInt(SceAppUtilAppParamId paramId, int *value);
 
 //! Save safe memory
 int sceAppUtilSaveSafeMemory(void *buf, SceSize bufSize, SceOff offset);
