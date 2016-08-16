@@ -98,6 +98,8 @@ int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 
 int sceAppMgrLaunchAppByUri(int flags, char *uri);
 
+int sceAppMgrLaunchAppByName2(char *name);
+
 //! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
 int sceAppMgrAppDataMount(int id, char *mount_point);
 
