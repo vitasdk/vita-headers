@@ -12,6 +12,8 @@
 #ifndef _PSP2_SSL_LIBSSL_H
 #define _PSP2_SSL_LIBSSL_H
 
+#include <psp2/rtc.h>
+
 #define SCE_SSL_ERROR_BEFORE_INIT    0x80435001
 #define SCE_SSL_ERROR_ALREADY_INITED 0x80435020
 #define SCE_SSL_ERROR_OUT_OF_MEMORY  0x80435022
@@ -40,8 +42,8 @@ int sceSslInit(unsigned poolSize);
 int sceSslTerm(void);
 int sceSslGetMemoryPoolStats(SceSslMemoryPoolStats* currentStat);
 int sceSslGetSerialNumber(SceSslCert *sslCert, const char **sboData, unsigned *sboLen);
-int sceSslGetNotBefore(SceSslCert *sslCert, uint64_t *begin);
-int sceSslGetNotAfter(SceSslCert *sslCert, uint64_t *limit);
+int sceSslGetNotBefore(SceSslCert *sslCert, SceRtcTick *begin);
+int sceSslGetNotAfter(SceSslCert *sslCert, SceRtcTick *limit);
 int sceSslGetNameEntryCount(SceSslCertName *certName);
 int sceSslGetNameEntryInfo(SceSslCertName *certName, int entryNum, char *oidname, unsigned maxOidnameLen, char *value, unsigned maxValueLen, unsigned *valueLen);
 SceSslCertName *sceSslGetSubjectName(SceSslCert *sslCert);
