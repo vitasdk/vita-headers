@@ -13,6 +13,7 @@
 #define _PSP2_CTRL_H_
 
 #include <stdint.h>
+#include <psp2/types.h>
 
 #ifdef __cplusplus
 extern "C" {
