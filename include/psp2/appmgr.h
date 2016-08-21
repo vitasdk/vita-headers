@@ -96,6 +96,7 @@ typedef struct sceAppMgrLoadExecOptParam {
 int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 	const SceAppMgrExecOptParam *optParam);
 
+//! flags: 0x20000 to launch, otherwise it just goes to the livearea page
 int sceAppMgrLaunchAppByUri(int flags, char *uri);
 
 int sceAppMgrLaunchAppByName2(char *name);
@@ -106,7 +107,7 @@ int sceAppMgrAppDataMount(int id, char *mount_point);
 //! id: 106 (ad), 107 (ad)
 int sceAppMgrAppDataMountById(int id, char *titleid, char *mount_point);
 
-//! param: 12 (titleid)
+//! param: 8 (category), 9 (stitle/title?), 10 (title/stitle?), 12 (titleid)
 int sceAppMgrAppParamGetString(int pid, int param, char *string, int length);
 
 int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
