@@ -12,6 +12,7 @@
 #ifndef _PSP2_COMMON_API_H_
 #define _PSP2_COMMON_API_H_
 
+#include <string.h>
 #include <psp2/system_param.h>
 #include <psp2/gxm.h>
 #include <psp2/types.h>
