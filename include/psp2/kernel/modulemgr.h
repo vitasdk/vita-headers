@@ -14,6 +14,10 @@
 
 #include <psp2/types.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct
 {
 	SceUInt size;	//< this structure size (0x18)
@@ -63,4 +67,8 @@ int sceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
 SceUID sceKernelLoadStartModule(char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
+#ifdef __cplusplus
+}
 #endif
+
+#endif /* _PSP2_KERNEL_MODULEMGR_H_ */
