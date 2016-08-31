@@ -176,6 +176,11 @@ int sceAppUtilSaveDataDataSave(SceAppUtilSaveDataFileSlot *slot,
 	SceAppUtilSaveDataFile *files, unsigned int fileNum,
 	SceAppUtilSaveDataMountPoint *mountPoint,
 	SceSize *requiredSizeKB);
+	
+//!< Delete savedata files
+int sceAppUtilSaveDataDataRemove(SceAppUtilSaveDataFileSlot *slot,
+	SceAppUtilSaveDataRemoveItem *files, unsigned int fileNum,
+	SceAppUtilSaveDataMountPoint *mountPoint);
 
 //! Mount music data
 int sceAppUtilMusicMount();
