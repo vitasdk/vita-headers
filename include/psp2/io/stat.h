@@ -36,14 +36,14 @@ enum {
 	/** Sticky */
 	SCE_S_ISVTX		= 0x0200,
 
-	/** User access rights mask */
-	SCE_S_IRWXU		= 0x01C0,
-	/** Read user permission */
-	SCE_S_IRUSR		= 0x0100,
-	/** Write user permission */
-	SCE_S_IWUSR		= 0x0080,
-	/** Execute user permission */
-	SCE_S_IXUSR		= 0x0040,
+	/** Others access rights mask */
+	SCE_S_IRWXO		= 0x01C0,
+	/** Others read permission */
+	SCE_S_IROTH		= 0x0100,
+	/** Others write permission */
+	SCE_S_IWOTH		= 0x0080,
+	/** Others execute permission */
+	SCE_S_IXOTH		= 0x0040,
 
 	/** Group access rights mask */
 	SCE_S_IRWXG		= 0x0038,
@@ -54,14 +54,14 @@ enum {
 	/** Group execute permission */
 	SCE_S_IXGRP		= 0x0008,
 
-	/** Others access rights mask */
-	SCE_S_IRWXO		= 0x0007,
-	/** Others read permission */
-	SCE_S_IROTH		= 0x0004,
-	/** Others write permission */
-	SCE_S_IWOTH		= 0x0002,
-	/** Others execute permission */
-	SCE_S_IXOTH		= 0x0001,
+	/** User access rights mask */
+	SCE_S_IRWXU		= 0x0007,
+	/** User read permission */
+	SCE_S_IRUSR		= 0x0004,
+	/** User write permission */
+	SCE_S_IWUSR		= 0x0002,
+	/** User execute permission */
+	SCE_S_IXUSR		= 0x0001,
 };
 
 // File mode checking macros
