@@ -1024,6 +1024,12 @@ int sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
 int sceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
 int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 
+/**
+ * Get the system time (wide version)
+ *
+ * @return The system time
+ */
+SceInt64 sceKernelGetSystemTimeWide(void);
 
 #ifdef __cplusplus
 }
