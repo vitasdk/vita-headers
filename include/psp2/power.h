@@ -36,7 +36,9 @@ int scePowerGetBatteryFullCapacity(); //?
 int scePowerGetArmClockFrequency(); //Get Clock Frequency of the ARM
 int scePowerGetBusClockFrequency(); //Get Clock Frequency of the BUS
 int scePowerGetGpuClockFrequency(); //Get Clock Frequency of the Gpu
-int scePowerSetArmClockFrequency(int freq); // Set Cet Clock Frequency of the ARM
+int scePowerSetArmClockFrequency(int freq); // Set Clock Frequency of the ARM
+int scePowerSetBusClockFrequency(int freq); // Set Clock Frequency of the BUS
+int scePowerSetGpuClockFrequency(int freq); // Set Clock Frequency of the Gpu
 
 #ifdef __cplusplus
 }
