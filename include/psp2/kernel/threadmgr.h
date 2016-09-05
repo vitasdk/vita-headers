@@ -237,15 +237,6 @@ int sceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
 int sceKernelChangeThreadPriority(SceUID thid, int priority);
 
 /**
- * Rotate thread ready queue at a set priority
- *
- * @param priority - The priority of the queue
- *
- * @return 0 on success, < 0 on error.
- */
-int sceKernelRotateThreadReadyQueue(int priority);
-
-/**
  * Release a thread in the wait state.
  *
  * @param thid - The UID of the thread.
