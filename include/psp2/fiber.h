@@ -1,6 +1,6 @@
 /**
  * \file
- * \brief Header file which defines SSL variables and functions
+ * \brief Header file which defines SceFiber variables and functions
  *
  * Copyright (C) 2015 PSP2SDK Project
  *
