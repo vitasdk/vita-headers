@@ -1015,6 +1015,21 @@ int sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
 int sceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
 int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 
+typedef struct	SceKernelLwCondWork {
+	SceInt64 data[4];
+} SceKernelLwCondWork;
+
+typedef struct SceKernelLwCondOptParam {
+	SceSize	size;
+} SceKernelLwCondOptParam;
+
+int sceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigned int attr, SceKernelLwMutexWork *pLwMutex, const SceKernelLwCondOptParam *pOptParam);
+int sceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
+int sceKernelSignalLwCond(SceKernelLwCondWork *pWork);
+int sceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
+
+
+
 /**
  * Get the system time (wide version)
  *
