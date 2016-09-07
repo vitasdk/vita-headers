@@ -1188,6 +1188,8 @@ typedef struct SceGxmRenderTargetParams {
 	uint16_t scenesPerFrame;        //!< The expected number of scenes per frame, in the range [1,#SCE_GXM_MAX_SCENES_PER_RENDERTARGET].
 	uint16_t multisampleMode;       //!< A value from the #SceGxmMultisampleMode enum.
 	uint32_t multisampleLocations;  //!< If enabled in the flags, the multisample locations to use.
+	void *hostMem;                  //!< The host memory to use for the render target CPU data structures.
+	unsigned int hostMemSize;       //!< The size of the host memory block.
 	SceUID driverMemBlock;          //!< The uncached LPDDR memblock for the render target GPU data structures or SCE_UID_INVALID_UID to specify memory should be allocated in libgxm.
 } SceGxmRenderTargetParams;
 
