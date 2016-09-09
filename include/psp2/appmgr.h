@@ -70,6 +70,8 @@ typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
+int _sceAppMgrDestroyAppByName(char *name);
+
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
 
 /**
