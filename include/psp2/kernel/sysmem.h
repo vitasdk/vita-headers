@@ -99,6 +99,7 @@ int sceKernelOpenMemBlock(const char *name, int flags);
 int sceKernelCloseMemBlock(SceUID uid);
 
 int sceKernelGetModelForCDialog();
+int sceKernelGetModel();
 
 #ifdef __cplusplus
 }
