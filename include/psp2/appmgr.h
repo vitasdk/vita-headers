@@ -70,6 +70,7 @@ typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
+//! name: The Title ID of the application
 int _sceAppMgrDestroyAppByName(char *name);
 
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
@@ -101,6 +102,7 @@ int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 //! flags: 0x20000 to launch, otherwise it just goes to the livearea page
 int sceAppMgrLaunchAppByUri(int flags, char *uri);
 
+//! name: The Title ID of the application
 int sceAppMgrLaunchAppByName2(char *name);
 
 //! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
