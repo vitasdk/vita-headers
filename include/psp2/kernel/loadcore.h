@@ -9,8 +9,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef _PSP2_KERNEL_LOADCORE_
-#define _PSP2_KERNEL_LOADCORE_
+#ifndef _PSP2_KERNEL_LOADCORE_H_
+#define _PSP2_KERNEL_LOADCORE_H_
 
 #include <stdint.h>
 
