@@ -18,29 +18,160 @@
 extern "C" {
 #endif
 
-/* callback */
+/* Callbacks */
+
+/** Callback function prototype */
 typedef void (*ScePowerCallback)(int unknown, int powerInfo);
 
-/* prototypes */
+/**
+ * Registers a ScePower Callback
+ *
+ * @param slot - Slot for the specified callback
+ * @param cbid - The UID of the specified callback
+ *
+ * @return 0 on success, < 0 on error
+ */
 int scePowerRegisterCallback(int slot, SceUID cbid);
-int scePowerIsBatteryCharging(void);
-int scePowerGetBatteryLifePercent(void);
-int scePowerSetConfigurationMode(int mode); //?
-SceBool scePowerIsSuspendRequired(void); //?
-int scePowerIsPowerOnline(void);
-int scePowerGetBatteryLifeTime(void);
-int scePowerGetBatteryRemainCapacity(void); //?
-int scePowerIsLowBattery(void);
+
+/**
+ * Unregister a callback
+ *
+ * @param slot - Callback slot to unregister
+ *
+ * @return 0 on success, < 0 on error
+ */
 int scePowerUnregisterCallback(int slot);
-int scePowerGetBatteryFullCapacity(void); //?
-int scePowerGetArmClockFrequency(void); //Get Clock Frequency of the ARM
-int scePowerGetBusClockFrequency(void); //Get Clock Frequency of the BUS
-int scePowerGetGpuClockFrequency(void); //Get Clock Frequency of the Gpu
-int scePowerGetGpuXbarClockFrequency(void); //Get Clock Frequency of the Gpu Crossbar
-int scePowerSetArmClockFrequency(int freq); // Set Clock Frequency of the ARM
-int scePowerSetBusClockFrequency(int freq); // Set Clock Frequency of the BUS
-int scePowerSetGpuClockFrequency(int freq); // Set Clock Frequency of the Gpu
-int scePowerSetGpuXbarClockFrequency(int freq); // Set Clock Frequency of the Gpu Crossbar
+
+/* Prototypes */
+
+/**
+ * Returns battery charging status
+ *
+ * @return SCE_TRUE if under charge, SCE_FALSE otherwise
+ */
+SceBool scePowerIsBatteryCharging(void);
+
+/**
+ * Returns battery life percentage
+ *
+ * @return Battery life percentage
+ */
+int scePowerGetBatteryLifePercent(void);
+
+/**
+ * Set configuration mode ?
+ *
+ * @param mode - The mode to set
+ *
+ * @return ?
+ */
+int scePowerSetConfigurationMode(int mode);
+
+/**
+ * Check if a suspend is required
+ *
+ * @return SCE_TRUE if suspend is required, SCE_FALSE otherwise
+ */
+SceBool scePowerIsSuspendRequired(void);
+
+/**
+ * Check if AC is plugged in
+ *
+ * @return SCE_TRUE if plugged in, SCE_FALSE otherwise
+ */
+SceBool scePowerIsPowerOnline(void);
+
+/**
+ * Returns battery life time
+ *
+ * @return Battery life time in seconds
+ */
+int scePowerGetBatteryLifeTime(void);
+
+/**
+ * Returns battery remaining capacity ?
+ *
+ * @return ?
+ */
+int scePowerGetBatteryRemainCapacity(void);
+
+/**
+ * Returns battery state
+ *
+ * @return SCE_TRUE if battery is low, SCE_FALSE otherwise
+ */
+SceBool scePowerIsLowBattery(void);
+
+/**
+ * Returns battery full capacity ?
+ *
+ * @return ?
+ */
+int scePowerGetBatteryFullCapacity(void);
+
+/**
+ * Returns CPU clock frequency
+ *
+ * @return CPU clock frequency in Mhz
+ */
+int scePowerGetArmClockFrequency(void); 
+
+/**
+ * Returns BUS clock frequency
+ *
+ * @return BUS clock frequency in Mhz
+ */
+int scePowerGetBusClockFrequency(void);
+
+/**
+ * Returns GPU clock frequency
+ *
+ * @return GPU clock frequency in Mhz
+ */
+int scePowerGetGpuClockFrequency(void);
+
+/**
+ * Returns GPU crossbar clock frequency
+ *
+ * @return GPU crossbar clock frequency in Mhz
+ */
+int scePowerGetGpuXbarClockFrequency(void);
+
+/**
+ * Sets CPU clock frequency
+ *
+ * @param freq - Frequency to set in Mhz
+ *
+ * @return 0 on success, < 0 on error
+ */
+int scePowerSetArmClockFrequency(int freq);
+
+/**
+ * Sets BUS clock frequency
+ *
+ * @param freq - Frequency to set in Mhz
+ *
+ * @return 0 on success, < 0 on error
+ */
+int scePowerSetBusClockFrequency(int freq);
+
+/**
+ * Sets GPU clock frequency
+ *
+ * @param freq - Frequency to set in Mhz
+ *
+ * @return 0 on success, < 0 on error
+ */
+int scePowerSetGpuClockFrequency(int freq);
+
+/**
+ * Sets GPU crossbar clock frequency
+ *
+ * @param freq - Frequency to set in Mhz
+ *
+ * @return 0 on success, < 0 on error
+ */
+int scePowerSetGpuXbarClockFrequency(int freq);
 
 #ifdef __cplusplus
 }
