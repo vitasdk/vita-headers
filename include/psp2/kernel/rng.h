@@ -2,6 +2,7 @@
  * \file
  * \brief Functions to generate random numbers
  *
+ * Copyright (C) 2015 PSP2SDK Project
  * Copyright (C) 2016 vitasdk
  * This header file is licensed under the MIT license.
  *
