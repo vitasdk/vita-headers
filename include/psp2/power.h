@@ -23,22 +23,24 @@ typedef void (*ScePowerCallback)(int unknown, int powerInfo);
 
 /* prototypes */
 int scePowerRegisterCallback(int slot, SceUID cbid);
-int scePowerIsBatteryCharging();
-int scePowerGetBatteryLifePercent();
+int scePowerIsBatteryCharging(void);
+int scePowerGetBatteryLifePercent(void);
 int scePowerSetConfigurationMode(int mode); //?
-SceBool scePowerIsSuspendRequired(); //?
-int scePowerIsPowerOnline();
-int scePowerGetBatteryLifeTime();
-int scePowerGetBatteryRemainCapacity(); //?
-int scePowerIsLowBattery();
+SceBool scePowerIsSuspendRequired(void); //?
+int scePowerIsPowerOnline(void);
+int scePowerGetBatteryLifeTime(void);
+int scePowerGetBatteryRemainCapacity(void); //?
+int scePowerIsLowBattery(void);
 int scePowerUnregisterCallback(int slot);
-int scePowerGetBatteryFullCapacity(); //?
-int scePowerGetArmClockFrequency(); //Get Clock Frequency of the ARM
-int scePowerGetBusClockFrequency(); //Get Clock Frequency of the BUS
-int scePowerGetGpuClockFrequency(); //Get Clock Frequency of the Gpu
+int scePowerGetBatteryFullCapacity(void); //?
+int scePowerGetArmClockFrequency(void); //Get Clock Frequency of the ARM
+int scePowerGetBusClockFrequency(void); //Get Clock Frequency of the BUS
+int scePowerGetGpuClockFrequency(void); //Get Clock Frequency of the Gpu
+int scePowerGetGpuXbarClockFrequency(void); //Get Clock Frequency of the Gpu Crossbar
 int scePowerSetArmClockFrequency(int freq); // Set Clock Frequency of the ARM
 int scePowerSetBusClockFrequency(int freq); // Set Clock Frequency of the BUS
 int scePowerSetGpuClockFrequency(int freq); // Set Clock Frequency of the Gpu
+int scePowerSetGpuXbarClockFrequency(int freq); // Set Clock Frequency of the Gpu Crossbar
 
 #ifdef __cplusplus
 }
