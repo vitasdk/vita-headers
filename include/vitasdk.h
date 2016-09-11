@@ -12,6 +12,8 @@
 #ifndef _VITASDK_H_
 #define _VITASDK_H_
 
+#include <vitasdk/utils.h>
+
 #include <psp2/types.h>
 #include <psp2/appmgr.h>
 #include <psp2/apputil.h>
@@ -24,6 +26,7 @@
 #include <psp2/common_dialog.h>
 #include <psp2/ctrl.h>
 #include <psp2/display.h>
+#include <psp2/fiber.h>
 #include <psp2/gxm.h>
 #include <psp2/gxt.h>
 #include <psp2/ime_dialog.h>
@@ -52,6 +55,7 @@
 #include <psp2/kernel/loadcore.h>
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/kernel/processmgr.h>
+#include <psp2/kernel/openpsid.h>
 #include <psp2/kernel/rng.h>
 #include <psp2/kernel/sysmem.h>
 #include <psp2/kernel/threadmgr.h>
