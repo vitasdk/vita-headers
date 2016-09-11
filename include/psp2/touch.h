@@ -18,9 +18,9 @@ extern "C" {
 
 #include <psp2/types.h>
 
-// SCE_TOUCH_MAX_REPORT = 8
 enum {
-	SCE_TOUCH_MAX_REPORT	= 8	//!< FIXME 6 on front | 4 on back
+	SCE_TOUCH_MAX_REPORT_BACK	= 4,
+	SCE_TOUCH_MAX_REPORT_FRONT	= 6
 };
 
 /**
