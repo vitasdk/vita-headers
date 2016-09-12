@@ -38,6 +38,11 @@ typedef struct SceKernelAllocMemBlockOpt {
 	int reserved[10];
 } SceKernelAllocMemBlockOpt;
 
+enum {
+	SCE_KERNEL_MODEL_VITA = 0x10000,
+	SCE_KERNEL_MODEL_VITATV = 0x20000
+};
+
 /***
  * Allocates a new memoy block
  *
@@ -98,7 +103,18 @@ int sceKernelCloseVMDomain(void);
 int sceKernelOpenMemBlock(const char *name, int flags);
 int sceKernelCloseMemBlock(SceUID uid);
 
+/***
+ * Get the model number of the device
+ *
+ * @return A value from SCE_KERNEL_MODEL
+*/
 int sceKernelGetModelForCDialog();
+
+/***
+ * Get the model number of the device
+ *
+ * @return A value from SCE_KERNEL_MODEL
+*/
 int sceKernelGetModel();
 
 #ifdef __cplusplus
