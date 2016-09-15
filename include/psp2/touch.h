@@ -19,9 +19,13 @@ extern "C" {
 
 #include <psp2/types.h>
 
+/**
+ * Max reports of touch panels
+ */
 enum {
-	SCE_TOUCH_MAX_REPORT_BACK	= 4,
-	SCE_TOUCH_MAX_REPORT_FRONT	= 6
+	SCE_TOUCH_MAX_REPORT_BACK	= 4, //!< Back touch panel max report value
+	SCE_TOUCH_MAX_REPORT_FRONT	= 6, //!< Front touch panel max report value
+	SCE_TOUCH_MAX_REPORT	= 8 //!< ??? Internally used by SceTouchData struct
 };
 
 /**
