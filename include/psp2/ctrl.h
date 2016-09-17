@@ -25,9 +25,12 @@ enum {
 	SCE_CTRL_ERROR_FATAL		= 0x803400FF
 };
 
-/** Enumeration for the digital controller buttons. */
+/** Enumeration for the digital controller buttons.
+ * L1/R1/L3/R3 only can bind using sceCtrlReadBufferPositiveExt2 */
 enum {
 	SCE_CTRL_SELECT     = 0x000001,	//!< Select button.
+	SCE_CTRL_L3         = 0x000002,	//!< L3 button.
+	SCE_CTRL_R3         = 0x000004,	//!< R3 button.
 	SCE_CTRL_START      = 0x000008,	//!< Start button.
 	SCE_CTRL_UP         = 0x000010,	//!< Up D-Pad button.
 	SCE_CTRL_RIGHT      = 0x000020,	//!< Right D-Pad button.
@@ -35,6 +38,8 @@ enum {
 	SCE_CTRL_LEFT       = 0x000080,	//!< Left D-Pad button.
 	SCE_CTRL_LTRIGGER   = 0x000100,	//!< Left trigger.
 	SCE_CTRL_RTRIGGER   = 0x000200,	//!< Right trigger.
+	SCE_CTRL_L1         = 0x000400,	//!< L1 button.
+	SCE_CTRL_R1         = 0x000800,	//!< R1 button.
 	SCE_CTRL_TRIANGLE   = 0x001000,	//!< Triangle button.
 	SCE_CTRL_CIRCLE     = 0x002000,	//!< Circle button.
 	SCE_CTRL_CROSS      = 0x004000,	//!< Cross button.
@@ -96,6 +101,15 @@ typedef struct SceCtrlActuator {
 int sceCtrlSetSamplingMode(int mode);
 
 /**
+ * Set the controller extend mode.
+ *
+ * @param[in] mode - One of ::CtrlMode.
+ *
+ * @return The previous mode, <0 on error.
+ */
+int sceCtrlSetSamplingModeExt(int mode);
+
+/**
  * Get the current controller mode.
  *
  * @param[out] pMode - Return value, see ::CtrlMode.
@@ -136,6 +150,19 @@ int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
 int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the controller extended state information (blocking, positive logic).
+ *
+ * This function will bind L/R tringger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ *
+ * @param[in] port - use 0.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (blocking, negative logic).
@@ -191,6 +218,13 @@ int sceCtrlSetActuator(int port, const SceCtrlActuator* pState);
  */
 int sceCtrlSetLightBar(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
 
+/**
+ * Get controller port information.
+ *
+ * @param[out] info - Return value, use char[16] buffer
+ * @return 0, <0 on error
+ */
+int sceCtrlGetControllerPortInfo(void *info);
 #ifdef __cplusplus
 }
 #endif
