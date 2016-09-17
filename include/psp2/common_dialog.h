@@ -48,6 +48,7 @@ enum {
 };
 
 typedef struct SceCommonDialogConfigParam {
+	SceUInt32 sdkVersion;
 	SceSystemParamLang language;
 	SceSystemParamEnterButtonAssign enterButtonAssign;
 	SceUInt8 reserved[32];
@@ -120,6 +121,7 @@ void sceCommonDialogConfigParamInit(SceCommonDialogConfigParam *param)
 	memset(param, 0x0, sizeof(SceCommonDialogConfigParam));
 	param->language = ~0U;
 	param->enterButtonAssign = ~0U;
+	param->sdkVersion = 0x03150021;
 };
 
 int sceCommonDialogSetConfigParam(const SceCommonDialogConfigParam *configParam);
