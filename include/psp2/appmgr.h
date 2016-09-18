@@ -83,6 +83,9 @@ int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t ve
 
 int sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *systemEvent);
 
+//! Copies app param to an array
+int sceAppMgrGetAppParam(char *param);
+
 //! Obtains the BGM port, even when it is not in front
 int sceAppMgrAcquireBgmPort(void);
 
