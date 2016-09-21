@@ -85,6 +85,7 @@ int sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *systemEvent);
 
 //! Copies app param to an array
 //! App param example: type=LAUNCH_APP_BY_URI&uri=psgm:play?titleid=NPXS10031
+//! param: pointer to a 1024 byte location to store the app param
 //! Returns 0 for success
 int sceAppMgrGetAppParam(char *param);
 
