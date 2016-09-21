@@ -75,7 +75,8 @@ typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing
 int sceAppMgrDestroyAppByName(char *name);
 
 //! name: The Title ID of the application
-int _sceAppMgrDestroyAppByName(char *name, char temp[3]);
+//! temp: A 12bytes temporary work buffer (content important)
+int _sceAppMgrDestroyAppByName(const char *name, char temp[3]);
 
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
 
@@ -107,7 +108,8 @@ int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 int sceAppMgrLaunchAppByUri(int flags, char *uri);
 
 //! name: The Title ID of the application
-int sceAppMgrLaunchAppByName2(char *name, char *param, SceAppMgrLaunchAppOptParam *optParam);
+//! param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam
+int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
 //! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
 int sceAppMgrAppDataMount(int id, char *mount_point);
