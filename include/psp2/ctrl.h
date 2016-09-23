@@ -47,6 +47,15 @@ enum {
 	SCE_CTRL_ANY        = 0x010000	//!< Any input intercepted.
 };
 
+/** Enumeration for the controller types. */
+enum {
+	SCE_CTRL_TYPE_UNPAIRED  = 0,
+	SCE_CTRL_TYPE_PHY       = 1, //!< Physical controller for VITA
+	SCE_CTRL_TYPE_VIRT      = 2, //!< Virtual controller for PSTV
+	SCE_CTRL_TYPE_DS3       = 4, //!< DualShock 3
+	SCE_CTRL_TYPE_DS4       = 8  //!< DualShock 4
+};
+
 /** Controller mode. */
 enum {
 	/** Digitial buttons only. */
@@ -90,6 +99,12 @@ typedef struct SceCtrlActuator {
 	int enable;  //!< Enable the actuator vibration
 	int unk;     //!< Unknown
 } SceCtrlActuator;
+
+/** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
+typedef struct SceCtrlPortInfo {
+	uint8_t port[5];  //!< Controller type of each ports
+	uint8_t unk[11];  //!< Unknown
+} SceCtrlPortInfo;
 
 /**
  * Set the controller mode.
@@ -221,10 +236,10 @@ int sceCtrlSetLightBar(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
 /**
  * Get controller port information.
  *
- * @param[out] info - Return value, use char[16] buffer
+ * @param[out] info - see ::SceCtrlPortInfo
  * @return 0, <0 on error
  */
-int sceCtrlGetControllerPortInfo(void *info);
+int sceCtrlGetControllerPortInfo(SceCtrlPortInfo *info);
 #ifdef __cplusplus
 }
 #endif
