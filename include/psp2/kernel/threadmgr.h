@@ -814,14 +814,14 @@ int sceKernelCheckCallback(void);
  * Create a message pipe
  *
  * @param name - Name of the pipe
- * @param part - ID of the memory partition
- * @param attr - Set to 0?
- * @param unk1 - Unknown
+ * @param type - The type of memory attribute to use internally (set to 0x40)
+ * @param attr - Set to 12
+ * @param bufSize - The size of the internal buffer in multiples of 0x1000 (4KB)
  * @param opt  - Message pipe options (set to NULL)
  *
  * @return The UID of the created pipe, < 0 on error
  */
-SceUID sceKernelCreateMsgPipe(const char *name, int part, int attr, void *unk1, void *opt);
+SceUID sceKernelCreateMsgPipe(const char *name, int type, int attr, unsigned int bufSize, void *opt);
 
 /**
  * Delete a message pipe
@@ -838,9 +838,9 @@ int sceKernelDeleteMsgPipe(SceUID uid);
  * @param uid - The UID of the pipe
  * @param message - Pointer to the message
  * @param size - Size of the message
- * @param unk1 - Unknown
- * @param unk2 - Unknown
- * @param timeout - Timeout for send
+ * @param unk1 - Unknown - async vs sync? use 0 for sync
+ * @param unk2 - Unknown - use NULL
+ * @param timeout - Timeout for send in us. use NULL to wait indefinitely
  *
  * @return 0 on success, < 0 on error
  */
@@ -852,9 +852,9 @@ int sceKernelSendMsgPipe(SceUID uid, void *message, unsigned int size, int unk1,
  * @param uid - The UID of the pipe
  * @param message - Pointer to the message
  * @param size - Size of the message
- * @param unk1 - Unknown
- * @param unk2 - Unknown
- * @param timeout - Timeout for send
+ * @param unk1 - Unknown - async vs sync? use 0 for sync
+ * @param unk2 - Unknown - use NULL
+ * @param timeout - Timeout for send in us. use NULL to wait indefinitely
  *
  * @return 0 on success, < 0 on error
  */
@@ -866,8 +866,8 @@ int sceKernelSendMsgPipeCB(SceUID uid, void *message, unsigned int size, int unk
  * @param uid - The UID of the pipe
  * @param message - Pointer to the message
  * @param size - Size of the message
- * @param unk1 - Unknown
- * @param unk2 - Unknown
+ * @param unk1 - Unknown - use 0
+ * @param unk2 - Unknown - use NULL
  *
  * @return 0 on success, < 0 on error
  */
@@ -879,9 +879,9 @@ int sceKernelTrySendMsgPipe(SceUID uid, void *message, unsigned int size, int un
  * @param uid - The UID of the pipe
  * @param message - Pointer to the message
  * @param size - Size of the message
- * @param unk1 - Unknown
- * @param unk2 - Unknown
- * @param timeout - Timeout for receive
+ * @param unk1 - Unknown - async vs sync? use 0 for sync
+ * @param unk2 - Unknown - use NULL
+ * @param timeout - Timeout for receive in us. use NULL to wait indefinitely
  *
  * @return 0 on success, < 0 on error
  */
@@ -893,9 +893,9 @@ int sceKernelReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int un
  * @param uid - The UID of the pipe
  * @param message - Pointer to the message
  * @param size - Size of the message
- * @param unk1 - Unknown
- * @param unk2 - Unknown
- * @param timeout - Timeout for receive
+ * @param unk1 - Unknown - async vs sync? use 0 for sync
+ * @param unk2 - Unknown - use NULL
+ * @param timeout - Timeout for receive in us. use NULL to wait indefinitely
  *
  * @return 0 on success, < 0 on error
  */
@@ -907,8 +907,8 @@ int sceKernelReceiveMsgPipeCB(SceUID uid, void *message, unsigned int size, int 
  * @param uid - The UID of the pipe
  * @param message - Pointer to the message
  * @param size - Size of the message
- * @param unk1 - Unknown
- * @param unk2 - Unknown
+ * @param unk1 - Unknown - use 0
+ * @param unk2 - Unknown - use NULL
  *
  * @return 0 on success, < 0 on error
  */
@@ -918,8 +918,8 @@ int sceKernelTryReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int
  * Cancel a message pipe
  *
  * @param uid - UID of the pipe to cancel
- * @param psend - Receive number of sending threads?
- * @param precv - Receive number of receiving threads?
+ * @param psend - Receive number of sending threads, NULL is valid
+ * @param precv - Receive number of receiving threads, NULL is valid
  *
  * @return 0 on success, < 0 on error
  */
