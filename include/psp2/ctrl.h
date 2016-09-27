@@ -81,7 +81,13 @@ typedef struct SceCtrlData {
 	/** Right analogue stick, Y axis. */
 	unsigned char 	ry;
 	/** Reserved. */
-	uint8_t 	reserved[16];
+	uint8_t		reserved0[4];
+	/** Left trigger (L2) */
+	unsigned char	lt;
+	/** Right trigger (R2) */
+	unsigned char	rt;
+	/** Reserved. */
+	uint8_t 	reserved1[10];
 } SceCtrlData;
 
 /** Structure to pass as argument to ::sceCtrlSetRapidFire */
@@ -240,6 +246,16 @@ int sceCtrlSetLightBar(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
  * @return 0, <0 on error
  */
 int sceCtrlGetControllerPortInfo(SceCtrlPortInfo *info);
+
+/**
+ * Get controller battery information.
+ *
+ * @param[in] port - use 1 for the first paired controller, etc.
+ * @param[out] batt - battery level, between 0-5, 0xEE charging, 0xEF charged
+ *
+ * @return 0, <0 on error.
+ */
+int sceCtrlGetBatteryInfo(int port, SceUInt8 *batt);
 #ifdef __cplusplus
 }
 #endif
