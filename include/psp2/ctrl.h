@@ -102,8 +102,9 @@ typedef struct SceCtrlRapidFireRule {
 
 /** Structure to pass as argument to ::sceCtrlSetActuator */
 typedef struct SceCtrlActuator {
-	int enable;  //!< Enable the actuator vibration
-	int unk;     //!< Unknown
+	unsigned char small; //!< Vibration strength of the small motor
+	unsigned char large; //!< Vibration strength of the large motor
+	uint8_t unk[6]; //!< Unknown
 } SceCtrlActuator;
 
 /** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
