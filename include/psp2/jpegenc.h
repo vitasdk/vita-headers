@@ -16,6 +16,7 @@
  
 typedef enum sceJpegEncoderPixelFormat{
 	PIXELFORMAT_ARGB8888 = 0,
+	PIXELFORMAT_YCBCR420 = 8,
 	PIXELFORMAT_YCBCR422 = 9,
 	PIXELFORMAT_CSC_ARGB_YCBCR = 16 // ARGB to YCbCr color conversion flag
 }sceJpegEncoderPixelFormat;
