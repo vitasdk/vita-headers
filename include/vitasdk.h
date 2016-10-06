@@ -30,6 +30,7 @@
 #include <psp2/gxm.h>
 #include <psp2/gxt.h>
 #include <psp2/ime_dialog.h>
+#include <psp2/jpegenc.h>
 #include <psp2/libssl.h>
 #include <psp2/message_dialog.h>
 #include <psp2/moduleinfo.h>
