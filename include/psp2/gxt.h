@@ -58,7 +58,7 @@ typedef struct SceGxtTextureInfo {
  * @retval	SCE_OK
  * @retval	SCE_GXT_ERROR_INVALID_VALUE Magic or version invalid
  */
-SceGxtErrorCode sceGxtCheckData(const void *gxt);
+enum SceGxtErrorCode sceGxtCheckData(const void *gxt);
 
 /**
  * Gets the start address of the texture data.
@@ -105,10 +105,10 @@ uint32_t sceGxtGetTextureCount(const void *gxt);
  * @retval	SCE_GXT_ERROR_INVALID_VALUE
  * @retval	SCE_GXT_ERROR_INVALID_POINTER
  */
-SceGxtErrorCode sceGxtSetPalette(SceGxmTexture *texture,
-				const void *gxt,
-				const void *textureData,
-				uint32_t paletteIndex);
+enum SceGxtErrorCode sceGxtSetPalette(SceGxmTexture *texture,
+				     const void *gxt,
+				     const void *textureData,
+				     uint32_t paletteIndex);
 
 #ifdef __cplusplus
 }
