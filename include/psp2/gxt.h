@@ -22,12 +22,12 @@ extern "C" {
 #include <psp2/gxm.h>
 
 /** GXT error codes */
-enum SceGxtErrorCode {
+typedef enum SceGxtErrorCode {
 	SCE_OK = 0,
 	SCE_GXT_ERROR_INVALID_ALIGNMENT,
 	SCE_GXT_ERROR_INVALID_VALUE,
 	SCE_GXT_ERROR_INVALID_POINTER
-};
+} SceGxtErrorCode;
 
 /** Header for a GXT file */
 typedef struct SceGxtHeader {
