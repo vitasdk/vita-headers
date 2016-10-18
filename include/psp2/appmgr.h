@@ -139,6 +139,11 @@ int sceAppMgrWorkDirMount(int id, char *mount_point);
 //! id: 205 (cache0), 207 (td)
 int sceAppMgrWorkDirMountById(int id, char *titleid, char *mount_point);
 
+//! Unmount a mountpoint
+//! Unmount app0: for example to enable write access to ux0:app/TITLEID
+//! Returns 0 on success
+int sceAppMgrUmount(const char *mount_point);
+	
 #ifdef __cplusplus
 }
 #endif
