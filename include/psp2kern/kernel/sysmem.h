@@ -106,6 +106,9 @@ int sceKernelMemcpyUserToKernel(void *dst, uintptr_t src, size_t len);
 int sceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, size_t len);
 int sceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, size_t len);
 
+int sceKernelStrncpyUserToKernel(void *dst, uintptr_t src, size_t len);
+int sceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, size_t len);
+
 typedef struct {
   char data[0x2C];
 } SceClass;
