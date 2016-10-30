@@ -18,6 +18,20 @@
 extern "C" {
 #endif
 
+/**
+ * @brief      Return values for plugins `module_start` and `module_stop`
+ */
+/** @{ */
+#define SCE_KERNEL_START_SUCCESS      (0)
+#define SCE_KERNEL_START_RESIDENT     SCE_KERNEL_START_SUCCESS
+#define SCE_KERNEL_START_NO_RESIDENT  (1)
+#define SCE_KERNEL_START_FAILED       (2)
+
+#define SCE_KERNEL_STOP_SUCCESS       (0)
+#define SCE_KERNEL_STOP_FAIL          (1)
+#define SCE_KERNEL_STOP_CANCEL        SCE_KERNEL_STOP_FAIL
+/** @} */
+
 typedef struct
 {
 	SceUInt size;	//< this structure size (0x18)
