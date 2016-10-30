@@ -103,6 +103,7 @@ void sceKernelMemPoolFree(SceUID pool, void *ptr);
 
 int sceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
 int sceKernelMemcpyUserToKernel(void *dst, uintptr_t src, size_t len);
+int sceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, size_t len);
 int sceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, size_t len);
 
 typedef struct {
