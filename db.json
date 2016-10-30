@@ -1821,7 +1821,7 @@
         "nid": 2694642268,
         "modules": {
             "SceThreadmgrForKernel": {
-                "kernel": false,
+                "kernel": true,
                 "nid": 2831814397,
                 "variables": {},
                 "functions": {
@@ -1833,7 +1833,7 @@
                 }
             }, 
             "SceThreadmgrForDriver": {
-                "kernel": false,
+                "kernel": true,
                 "nid": 3804497444,
                 "variables": {},
                 "functions": {
@@ -2071,7 +2071,7 @@
             }
         }
     },
-    "SceKernel": {
+    "SceLibKernel": {
         "modules": {
             "SceLibKernel": {
                 "functions": {
@@ -5467,7 +5467,7 @@
         "nid": 4259156986, 
         "modules": {
             "SceSblSsMgrForDriver": {
-                "kernel": false, 
+                "kernel": true, 
                 "nid": 1642676877, 
                 "variables": {}, 
                 "functions": {
