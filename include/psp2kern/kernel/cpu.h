@@ -19,6 +19,25 @@ extern "C" {
 #endif
 
 /**
+ * @brief      Call this when entering a syscall
+ *
+ * @param      state  The state
+ */
+#define ENTER_SYSCALL(state) do { \
+  asm volatile ("mrc p15, 0, %0, c13, c0, 3" : "=r" (state)); \
+  asm volatile ("mcr p15, 0, %0, c13, c0, 3" :: "r" (state << 16) : "memory"); \
+} while(0)
+
+/**
+ * @brief      Call this when existing a syscall
+ *
+ * @param      state  The state
+ */
+#define EXIT_SYSCALL(state) do { \
+  asm volatile ("mcr p15, 0, %0, c13, c0, 3" :: "r" (state) : "memory"); \
+} while (0)
+
+/**
  * @brief      Save process context
  *
  * @param      context  The context
