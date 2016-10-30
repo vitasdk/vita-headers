@@ -72,11 +72,22 @@ typedef struct {
   SceSize size;
 } SceKernelULMOption;
 
+typedef struct
+{
+  SceSize size;
+  char versionString[16];
+  SceUInt unk_14;
+  SceUInt unk_18;
+  SceUInt version;
+  SceUInt unk_20;
+  SceUInt unk_24;
+} SceKernelFwInfo;
+
 int sceKernelGetModuleListForKernel(SceUID pid, int flags1, int flags2, SceUID *modids, size_t *num);
 int sceKernelGetModuleInfoForKernel(SceUID pid, SceUID modid, SceKernelModuleInfo *info);
 int sceKernelGetModuleInternal(SceUID modid, void **module);
 
-int sceKernelGetSystemSwVersion(uint32_t *data);
+int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 
 SceUID sceKernelLoadModuleForDriver(const char *path, int flags, SceKernelLMOption *option);
 int sceKernelStartModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
