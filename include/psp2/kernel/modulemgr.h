@@ -81,6 +81,19 @@ int sceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
 SceUID sceKernelLoadStartModule(char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
+typedef struct
+{
+  SceSize size;
+  char versionString[16];
+  SceUInt unk_14;
+  SceUInt unk_18;
+  SceUInt unk_1C;
+  SceUInt version;
+  SceUInt unk_24;
+} SceKernelFwInfo;
+
+int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
+
 #ifdef __cplusplus
 }
 #endif
