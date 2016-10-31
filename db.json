@@ -1790,7 +1790,8 @@
                 "nid": 915528261,
                 "variables": {},
                 "functions": {
-                    "sceKernelGetSysrootBuffer": 1044731970
+                    "sceKernelGetSysrootBuffer": 1044731970,
+                    "sceKernelGetProcessTitleIdForKernel": 3962643619
                 }
             },
             "SceSysmem": {
@@ -1981,7 +1982,8 @@
                     "sceKernelLoadModuleForDriver": 2262357556,
                     "sceKernelStartModuleForDriver": 108377730,
                     "sceKernelStopUnloadModuleForDriver": 269332153,
-                    "sceKernelUnloadModuleForDriver": 1921938086
+                    "sceKernelUnloadModuleForDriver": 1921938086,
+                    "sceKernelLoadStartSharedModuleForPid": 3803049869
                 }
             },
             "SceModulemgr": {
@@ -2073,6 +2075,14 @@
                 "kernel": false, 
                 "nid": 769202194, 
                 "variables": {}
+            },
+            "SceProcessmgrForKernel": {
+                "kernel": true, 
+                "nid": 2053758598, 
+                "variables": {}, 
+                "functions": {
+                    "sceKernelGetProcessKernelBuf": 3118891154
+                }
             }
         }
     },
