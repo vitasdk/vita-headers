@@ -132,6 +132,8 @@ int sceKernelSwitchVmaForPid(SceUID pid);
 void *sceKernelGetSysrootBuffer(void);
 int sceKernelGetPidContext(SceUID pid, int **ctx);
 
+int sceKernelGetProcessTitleIdForKernel(SceUID pid, char *titleid, size_t len);
+
 #ifdef __cplusplus
 }
 #endif

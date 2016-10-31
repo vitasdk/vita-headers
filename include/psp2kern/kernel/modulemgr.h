@@ -92,6 +92,8 @@ int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 SceUID sceKernelLoadModuleForDriver(const char *path, int flags, SceKernelLMOption *option);
 int sceKernelStartModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 
+SceUID sceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+
 int sceKernelUnloadModuleForDriver(SceUID modid, int flags);
 
 int sceKernelStopUnloadModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
