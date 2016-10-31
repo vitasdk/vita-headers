@@ -78,8 +78,8 @@ typedef struct
   char versionString[16];
   SceUInt unk_14;
   SceUInt unk_18;
+  SceUInt unk_1C;
   SceUInt version;
-  SceUInt unk_20;
   SceUInt unk_24;
 } SceKernelFwInfo;
 
