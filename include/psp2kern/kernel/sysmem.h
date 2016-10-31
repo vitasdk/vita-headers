@@ -108,6 +108,7 @@ int sceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *s
 
 int sceKernelStrncpyUserToKernel(void *dst, uintptr_t src, size_t len);
 int sceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, size_t len);
+int sceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
 
 typedef struct {
   char data[0x2C];
