@@ -27,8 +27,8 @@ enum {
   SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW  = 0x0d808060,
   SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW  = 0x09408060,
   SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX = 0x1020D005,
-  SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX = 0x3A0D050,
-  SCE_KERNEL_MEMBLOCK_TYPE_USER_RX = 0xE20D050,
+  SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX = 0x390D050,
+  SCE_KERNEL_MEMBLOCK_TYPE_USER_RX = 0xC20D050,
   SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0 = 0x6020D006
 };
 
@@ -134,6 +134,8 @@ void *sceKernelGetSysrootBuffer(void);
 int sceKernelGetPidContext(SceUID pid, int **ctx);
 
 int sceKernelGetProcessTitleIdForKernel(SceUID pid, char *titleid, size_t len);
+
+int sceKernelMapBlockUserVisible(SceUID uid);
 
 #ifdef __cplusplus
 }

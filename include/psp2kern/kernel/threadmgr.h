@@ -1061,6 +1061,17 @@ void *sceKernelGetTLSAddrForKernel(int key);
  */
 SceUID sceKernelGetProcessId(void);
 
+/**
+ * @brief      Runs a function with larger stack size
+ *
+ * @param[in]  stack_size  The stack size
+ * @param[in]  to_call     To call
+ * @param      args        The arguments
+ *
+ * @return     Zero on success
+ */
+int sceKernelRunWithStack(int stack_size, int (*to_call)(void *), void *args);
+
 #ifdef __cplusplus
 }
 #endif
