@@ -3,6 +3,7 @@
  * \brief Header file which defines touch related variables and functions
  *
  * Copyright (C) 2015 PSP2SDK Project
+ * Copyright (C) 2016 vitasdk
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -18,9 +19,13 @@ extern "C" {
 
 #include <psp2/types.h>
 
-// SCE_TOUCH_MAX_REPORT = 8
+/**
+ * Max reports of touch panels
+ */
 enum {
-	SCE_TOUCH_MAX_REPORT	= 8	//!< FIXME 6 on front | 4 on back
+	SCE_TOUCH_MAX_REPORT_BACK	= 4, //!< Back touch panel max report value
+	SCE_TOUCH_MAX_REPORT_FRONT	= 6, //!< Front touch panel max report value
+	SCE_TOUCH_MAX_REPORT	= 8 //!< ??? Internally used by SceTouchData struct
 };
 
 /**
