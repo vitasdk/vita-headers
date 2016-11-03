@@ -74,10 +74,6 @@ typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing
 //! name: The Title ID of the application
 int sceAppMgrDestroyAppByName(char *name);
 
-//! name: The Title ID of the application
-//! temp: A 12bytes temporary work buffer (content important)
-int _sceAppMgrDestroyAppByName(const char *name, char temp[3]);
-
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
 
 /**
