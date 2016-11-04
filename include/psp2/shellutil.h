@@ -39,13 +39,13 @@ enum {
 typedef void (SceShellUtilEventHandler)(int result, int mode, int type, void *userData);
 
 /**
- * Init? Must be called
+ * Init events
  *
  * @param[in] unk - Unknown, use 0
  *
  * @return 0 on success, < 0 on error.
 */
-int SceShellUtil_E8AD11EC(int unk);
+int sceShellUtilInitEvents(int unk);
 
 /**
  * Register event handler
@@ -56,7 +56,7 @@ int SceShellUtil_E8AD11EC(int unk);
  *
  * @return 0 on success, < 0 on error.
 */
-int SceShellUtil_7B5EDFE7(SceShellUtilEventHandler *handler, void *userData);
+int sceShellUtilRegisterEventHandler(SceShellUtilEventHandler *handler, void *userData);
 
 /**
  * Lock event
