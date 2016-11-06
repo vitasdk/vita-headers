@@ -59,6 +59,16 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
   SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
 
+typedef struct SceKernelMemPoolCreateOpt {
+  SceSize size;
+  SceUInt32 uselock;
+  SceUInt32 field_8;
+  SceUInt32 field_C;
+  SceUInt32 field_10;
+  SceUInt32 field_14;
+  SceUInt32 field_18;
+} SceKernelMemPoolCreateOpt;
+
 enum {
   SCE_KERNEL_MODEL_VITA = 0x10000,
   SCE_KERNEL_MODEL_VITATV = 0x20000
@@ -97,7 +107,7 @@ int sceKernelFreeMemBlockForKernel(SceUID uid);
 */
 int sceKernelGetMemBlockBaseForKernel(SceUID uid, void **basep);
 
-SceUID sceKernelMemPoolCreate(const char *name, SceSize size, void *opt);
+SceUID sceKernelMemPoolCreate(const char *name, SceSize size, SceKernelMemPoolCreateOpt *opt);
 int sceKernelMemPoolDestroy(SceUID pool);
 void *sceKernelMemPoolAlloc(SceUID pool, SceSize size);
 void sceKernelMemPoolFree(SceUID pool, void *ptr);
