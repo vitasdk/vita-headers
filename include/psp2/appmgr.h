@@ -67,11 +67,12 @@ typedef struct SceAppMgrSystemEvent {
 
 typedef struct SceAppMgrAppState SceAppMgrAppState; // Missing struct
 typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
+typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing struct
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
 //! name: The Title ID of the application
-int _sceAppMgrDestroyAppByName(char *name);
+int sceAppMgrDestroyAppByName(char *name);
 
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
 
@@ -109,7 +110,8 @@ int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 int sceAppMgrLaunchAppByUri(int flags, char *uri);
 
 //! name: The Title ID of the application
-int sceAppMgrLaunchAppByName2(char *name);
+//! param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam
+int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
 //! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
 int sceAppMgrAppDataMount(int id, char *mount_point);
