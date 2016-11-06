@@ -70,7 +70,7 @@ typedef struct SceKernelMemPoolCreateOpt {
 } SceKernelMemPoolCreateOpt;
 
 typedef struct SceCreateUidObjOpt {
-  SceUInt32 field_0;
+  SceUInt32 flags;
   SceUInt32 field_4;
   SceUInt32 field_8;
   SceUInt32 pid;
