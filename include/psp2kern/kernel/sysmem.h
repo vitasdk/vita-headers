@@ -69,6 +69,16 @@ typedef struct SceKernelMemPoolCreateOpt {
   SceUInt32 field_18;
 } SceKernelMemPoolCreateOpt;
 
+typedef struct SceCreateUidObjOpt {
+  SceUInt32 field_0;
+  SceUInt32 field_4;
+  SceUInt32 field_8;
+  SceUInt32 pid;
+  SceUInt32 field_10;
+  SceUInt32 field_14;
+  SceUInt32 field_18;
+} SceCreateUidObjOpt;
+
 enum {
   SCE_KERNEL_MODEL_VITA = 0x10000,
   SCE_KERNEL_MODEL_VITATV = 0x20000
@@ -131,7 +141,7 @@ typedef struct {
 
 SceUID sceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
 SceUID sceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
-SceUID sceKernelCreateUidObj(SceClass *cls, const char *name, void *opt, SceObjectBase **obj);
+SceUID sceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
 int sceKernelGetObjForUid(SceUID uid, SceClass *cls, SceObjectBase **obj);
 SceClass *sceKernelGetUidClass(void);
 typedef int (*SceClassCallback)(void *item);
