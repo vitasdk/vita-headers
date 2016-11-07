@@ -26,21 +26,20 @@ typedef void (*ScePowerCallback)(int unknown, int powerInfo);
 /**
  * Registers a ScePower Callback
  *
- * @param slot - Slot for the specified callback
  * @param cbid - The UID of the specified callback
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerRegisterCallback(int slot, SceUID cbid);
+int scePowerRegisterCallback(SceUID cbid);
 
 /**
  * Unregister a callback
  *
- * @param slot - Callback slot to unregister
+ * @param cbid - The UID of the specified callback
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerUnregisterCallback(int slot);
+int scePowerUnregisterCallback(SceUID cbid);
 
 /* Prototypes */
 
