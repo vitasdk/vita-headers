@@ -53,6 +53,7 @@ unsigned int sceUsbSerialGetLenForDriver(void);
  * @param[out] len int len of serial buffer data 
  * @param unk1 Unknown
  * @param unk2 Unknown
+ * @note max send length is 0x10000
  */
 unsigned int sceUsbSerialSendForDriver(const void *buffer, unsigned int len, int unk1, int unk2);	
 /**
@@ -62,6 +63,7 @@ unsigned int sceUsbSerialSendForDriver(const void *buffer, unsigned int len, int
  * @param max_len max data length to receive
  * @param unk1 Unknown
  * @param unk2 Unknown
+ * @note max recv length is 0x10000
  */
 unsigned int sceUsbSerialRecvForDriver(void *buffer, unsigned int max_len, int unk1, int unk2);
 
@@ -115,6 +117,7 @@ unsigned int sceUsbSerialGetLen(void);
  * @param[out] len int len of serial buffer data 
  * @param unk1 Unknown
  * @param unk2 Unknown
+ * @note max send length is 0x10000
  * @note Wrapper for kernel function sceUsbSerialSendForDriver()
  */
 unsigned int sceUsbSerialSend(const void *buffer, unsigned int len, int unk1, int unk2);
@@ -125,7 +128,7 @@ unsigned int sceUsbSerialSend(const void *buffer, unsigned int len, int unk1, in
  * @param max_len max data length to receive
  * @param unk1 Unknown
  * @param unk2 Unknown
- *
+ * @note max recv length is 0x10000
  * @note Wrapper for kernel function sceUsbSerialRecvForDriver()
  */
 unsigned int sceUsbSerialrecv(void *buffer, unsigned int max_len, int unk1, int unk2);
