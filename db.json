@@ -5523,5 +5523,39 @@
                 }
             }
         }
+    },
+    "SceUsbSerial":{
+	"nid": 4175008527,
+	"modules": {
+	    "SceUsbSerialForDriver": {
+		"kernel": true,
+		"nid": 2284438259,
+		"variables": {},
+		"functions":{
+			"sceUsbSerialStartForDriver": 4276614330,
+			"sceUsbSerialSetupForDriver": 1493929879,
+			"sceUsbSerialStatusForDriver": 2353162502,
+			"sceUsbSerialCloseForDriver": 3870418511,
+			"sceUsbSerialGetLenForDriver": 4113675694,
+			"sceUsbSerialSendForDriver": 204370880,
+			"sceUsbSerialRecvForDriver": 1801333103
+		  }
+		},
+		"SceUsbSerial": {
+		  "kernel": false,
+		  "nid": 673190269,
+		  "variables":{},
+		  "functions":{
+			"sceUsbSerialStart": 3820929420,
+			"sceUsbSerialSetup": 688785588,
+			"sceUsbSerialStatus": 2795697630,
+			"sceUsbSerialClose": 4064368723,
+			"sceUsbSerialGetLen": 3897981575,
+			"sceUsbSerialSend": 2313622018,
+			"sceUsbSerialRecv": 4067281112
+			}
+		}
+
     }
+}
 }
