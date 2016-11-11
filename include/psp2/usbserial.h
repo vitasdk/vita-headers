@@ -10,10 +10,13 @@
  */
 #ifndef _PSP2_USBSER_H_
 #define _PSP2_USBSER_H_
+
 #include <psp2/types.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 /**
  * Activate USB serial device
  *
@@ -22,6 +25,7 @@ extern "C" {
  * @note The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device. 
  */
 int sceUsbSerialStartForDriver(void);
+
 /**
  * Setup USB serial device
  *
@@ -30,32 +34,37 @@ int sceUsbSerialStartForDriver(void);
  * @param unk Unknown
  */
 int sceUsbSerialSetupForDriver(int unk);
+
 /**
  * Get USB device status
  *
  * @return Returns 1 when serial port is open
  */
 int sceUsbSerialStatusForDriver(void);
+
 /**
  * Close USB serial device
  */
 int sceUsbSerialCloseForDriver(void);
+
 /**
  * Get receive buffer length
  *
  * @return Returns length of USB rx buffer
  */
 unsigned int sceUsbSerialGetLenForDriver(void);
+
 /**
  * Send data
  *
  * @param[out] *buffer data to send over usb
- * @param[out] len int len of serial buffer data 
+ * @param len int len of serial buffer data 
  * @param unk1 Unknown
  * @param unk2 Unknown
  * @note max send length is 0x10000
  */
 unsigned int sceUsbSerialSendForDriver(const void *buffer, unsigned int len, int unk1, int unk2);	
+
 /**
  * Receive Data
  *
@@ -67,7 +76,6 @@ unsigned int sceUsbSerialSendForDriver(const void *buffer, unsigned int len, int
  */
 unsigned int sceUsbSerialRecvForDriver(void *buffer, unsigned int max_len, int unk1, int unk2);
 
-
 /**
  * Activate USB serial device
  *
@@ -78,6 +86,7 @@ unsigned int sceUsbSerialRecvForDriver(void *buffer, unsigned int max_len, int u
  * @note Wrapper for kernel function sceUsbSerialStartForDriver()
  */
 int sceUsbSerialStart(void);
+
 /**
  * Setup USB serial device
  *
@@ -88,12 +97,14 @@ int sceUsbSerialStart(void);
  * @note Wrapper for kernel function sceUsbSerialSetupForDriver()
  */
 int sceUsbSerialSetup(int unk);	
+
 /**
  * Close USB serial device
  *
  * @note Wrapper for kernel function sceUsbSerialCloseForDriver()
  */
 int sceUsbSerialClose(void);
+
 /**
  * Close USB serial device
  *
@@ -102,6 +113,7 @@ int sceUsbSerialClose(void);
  * @note Wrapper for kernel function sceUsbSerialStatusForDriver()
  */
 int sceUsbSerialStatus(void);
+
 /**
  * Get receive buffer length
  *
@@ -110,17 +122,19 @@ int sceUsbSerialStatus(void);
  * @note Wrapper for kernel function sceUsbSerialGetLenForDriver()
  */
 unsigned int sceUsbSerialGetLen(void);
+
 /**
  * Send data
  *
  * @param[out] *buffer data to send over usb
- * @param[out] len int len of serial buffer data 
+ * @param len int len of serial buffer data 
  * @param unk1 Unknown
  * @param unk2 Unknown
  * @note max send length is 0x10000
  * @note Wrapper for kernel function sceUsbSerialSendForDriver()
  */
 unsigned int sceUsbSerialSend(const void *buffer, unsigned int len, int unk1, int unk2);
+
 /**
  * Receive Data
  *
@@ -132,6 +146,7 @@ unsigned int sceUsbSerialSend(const void *buffer, unsigned int len, int unk1, in
  * @note Wrapper for kernel function sceUsbSerialRecvForDriver()
  */
 unsigned int sceUsbSerialRecv(void *buffer, unsigned int max_len, int unk1, int unk2);
+
 #ifdef __cplusplus
 }
 #endif
