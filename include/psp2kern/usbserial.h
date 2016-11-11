@@ -24,7 +24,7 @@ extern "C" {
  *
  * @note The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device. 
  */
-int sceUsbSerialStartForDriver(void);
+int sceUsbSerialStartForKernel(void);
 
 /**
  * Setup USB serial device
@@ -33,26 +33,26 @@ int sceUsbSerialStartForDriver(void);
  *
  * @param unk Unknown
  */
-int sceUsbSerialSetupForDriver(int unk);
+int sceUsbSerialSetupForKernel(int unk);
 
 /**
  * Get USB device status
  *
  * @return Returns 1 when serial port is open
  */
-int sceUsbSerialStatusForDriver(void);
+int sceUsbSerialStatusForKernel(void);
 
 /**
  * Close USB serial device
  */
-int sceUsbSerialCloseForDriver(void);
+int sceUsbSerialCloseForKernel(void);
 
 /**
  * Get receive buffer length
  *
  * @return Returns length of USB rx buffer
  */
-unsigned int sceUsbSerialGetLenForDriver(void);
+unsigned int sceUsbSerialGetLenForKernel(void);
 
 /**
  * Send data
@@ -63,7 +63,7 @@ unsigned int sceUsbSerialGetLenForDriver(void);
  * @param unk2 Unknown
  * @note max send length is 0x10000
  */
-unsigned int sceUsbSerialSendForDriver(const void *buffer, unsigned int len, int unk1, int unk2);	
+unsigned int sceUsbSerialSendForKernel(const void *buffer, unsigned int len, int unk1, int unk2);	
 
 /**
  * Receive Data
@@ -74,7 +74,7 @@ unsigned int sceUsbSerialSendForDriver(const void *buffer, unsigned int len, int
  * @param unk2 Unknown
  * @note max recv length is 0x10000
  */
-unsigned int sceUsbSerialRecvForDriver(void *buffer, unsigned int max_len, int unk1, int unk2);
+unsigned int sceUsbSerialRecvForKernel(void *buffer, unsigned int max_len, int unk1, int unk2);
 
 #ifdef __cplusplus
 }
