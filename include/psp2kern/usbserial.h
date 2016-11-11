@@ -52,7 +52,7 @@ int sceUsbSerialCloseForKernel(void);
  *
  * @return Returns length of USB rx buffer
  */
-unsigned int sceUsbSerialGetLenForKernel(void);
+unsigned int sceUsbSerialGetRecvBufferSizeForKernel(void);
 
 /**
  * Send data

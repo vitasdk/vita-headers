@@ -62,7 +62,7 @@ int sceUsbSerialStatus(void);
  *
  * @note Wrapper for kernel function sceUsbSerialGetLenForDriver()
  */
-unsigned int sceUsbSerialGetLen(void);
+unsigned int sceUsbSerialGetRecvBufferSize(void);
 
 /**
  * Send data
