@@ -131,7 +131,7 @@ unsigned int sceUsbSerialSend(const void *buffer, unsigned int len, int unk1, in
  * @note max recv length is 0x10000
  * @note Wrapper for kernel function sceUsbSerialRecvForDriver()
  */
-unsigned int sceUsbSerialrecv(void *buffer, unsigned int max_len, int unk1, int unk2);
+unsigned int sceUsbSerialRecv(void *buffer, unsigned int max_len, int unk1, int unk2);
 #ifdef __cplusplus
 }
 #endif
