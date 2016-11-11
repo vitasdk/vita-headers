@@ -34,7 +34,7 @@
 		}
 	},
 	"SceAppMgr": {
-		"nid": 0,
+		"nid": 3107541190,
 		"modules": {
 			"SceAppMgr": {
 				"kernel": false,
@@ -170,6 +170,7 @@
 					"sceAppMgrAcquireSoundOutExclusive": 2897510517,
 					"sceAppMgrAcquireSoundOutExclusive2": 3107345474,
 					"sceAppMgrActivateApp": 1130566920,
+					"sceAppMgrAddContMount": 107471114,
 					"sceAppMgrDeactivateApp": 4288713689,
 					"sceAppMgrDeclareSystemChatApp": 2012121373,
 					"sceAppMgrDestroyAppByAppId": 1412860427,
@@ -183,7 +184,9 @@
 					"sceAppMgrExitToLiveboardForGameApp": 2312231509,
 					"sceAppMgrFinishCoredumpForShell": 1392468945,
 					"sceAppMgrGetAppIdByAppId": 858561944,
+					"sceAppMgrGetCoredumpStateForShell": 64847461,
 					"sceAppMgrGetExtraAppParam": 2493981372,
+					"sceAppMgrGetNameById": 149501314,
 					"sceAppMgrGetProcessIdByAppIdForShell": 1677378217,
 					"sceAppMgrGetSystemDataFile": 2932118835,
 					"sceAppMgrGrowMemory": 2217725580,
@@ -210,6 +213,7 @@
 					"sceAppMgrResumeBgAppByShell": 1692222241,
 					"sceAppMgrReturnLiveAreaOperationResultForShell": 1559476793,
 					"sceAppMgrSaveDataGetCachedRequiredSizeKiB": 1458430106,
+					"sceAppMgrSaveDataSlotSetStatus": 51121316,
 					"sceAppMgrSaveSafeMemory": 3546720836,
 					"sceAppMgrSendLiveBoardMode": 1045086338,
 					"sceAppMgrSetAppProtectionModeOnMemoryShortage": 2945220603,
@@ -223,7 +227,18 @@
 					"sceAppMgrSetSystemImposeState": 3513487797,
 					"sceAppMgrSetSystemImposeState2": 560166298,
 					"sceAppMgrSuspendBgAppByShell": 1540319527,
-					"sceAppMgrSuspendUntilActivated": 3974922128
+					"sceAppMgrSuspendUntilActivated": 3974922128,
+					"sceAppMgrUmountByPid": 172071880,
+					"sceAppMgrWorkDirMount": 206136734
+				}
+			},
+			"SceAppMgrForDriver": {
+				"kernel": true,
+				"nid": 3705766136,
+				"functions": {
+					"sceAppMgrGetSystemDataFile": 2932118835,
+					"sceAppMgrLoadSafeMemory": 4210285226,
+					"sceAppMgrSaveSafeMemory": 3546720836
 				}
 			},
 			"SceAppMgrUser": {
@@ -354,32 +369,6 @@
 					"sceAppMgrWorkDirMount": 2604380749,
 					"sceAppMgrWorkDirMountById": 2162716226
 				}
-			}
-		}
-	},
-	"SceAppMgr": {
-		"nid": 1770482910,
-		"modules": {
-			"SceAppMgr": {
-				"kernel": false,
-				"nid": 2331079702,
-				"functions": {
-					"sceAppMgrAddContMount": 107471114,
-					"sceAppMgrGetCoredumpStateForShell": 64847461,
-					"sceAppMgrGetNameById": 149501314,
-					"sceAppMgrSaveDataSlotSetStatus": 51121316,
-					"sceAppMgrUmountByPid": 172071880,
-					"sceAppMgrWorkDirMount": 206136734
-				}
-			},
-			"SceAppMgrForDriver": {
-				"kernel": true,
-				"nid": 3705766136,
-				"functions": {
-					"sceAppMgrGetSystemDataFile": 2932118835,
-					"sceAppMgrLoadSafeMemory": 4210285226,
-					"sceAppMgrSaveSafeMemory": 3546720836
-				}
 			},
 			"SceSharedFb": {
 				"kernel": false,
@@ -410,7 +399,7 @@
 		}
 	},
 	"SceAppUtil": {
-		"nid": 3,
+		"nid": 3107541190,
 		"modules": {
 			"SceAppUtil": {
 				"kernel": false,
@@ -470,7 +459,7 @@
 		}
 	},
 	"SceAtrac": {
-		"nid": 6,
+		"nid": 3107541190,
 		"modules": {
 			"SceAtrac": {
 				"kernel": false,
@@ -505,27 +494,7 @@
 		}
 	},
 	"SceAudio": {
-		"nid": 8,
-		"modules": {
-			"SceAudio": {
-				"kernel": false,
-				"nid": 1133230423,
-				"functions": {
-					"sceAudioOutGetAdopt": 318445415,
-					"sceAudioOutGetConfig": 2626607850,
-					"sceAudioOutGetRestSample": 2589159620,
-					"sceAudioOutOpenPort": 1539523044,
-					"sceAudioOutOutput": 47923039,
-					"sceAudioOutReleasePort": 1776477877,
-					"sceAudioOutSetAlcMode": 2483872873,
-					"sceAudioOutSetConfig": 3099200775,
-					"sceAudioOutSetVolume": 1679195921
-				}
-			}
-		}
-	},
-	"SceAudio": {
-		"nid": 2395887240,
+		"nid": 3107541190,
 		"modules": {
 			"SceAudio": {
 				"kernel": false,
@@ -557,7 +526,7 @@
 		}
 	},
 	"SceAudioIn": {
-		"nid": 10,
+		"nid": 3107541190,
 		"modules": {
 			"SceAudioIn": {
 				"kernel": false,
@@ -573,7 +542,7 @@
 		}
 	},
 	"SceAudiodec": {
-		"nid": 12,
+		"nid": 3107541190,
 		"modules": {
 			"SceAudiodecUser": {
 				"kernel": false,
@@ -596,7 +565,7 @@
 		}
 	},
 	"SceAudioenc": {
-		"nid": 14,
+		"nid": 3107541190,
 		"modules": {
 			"SceAudioencUser": {
 				"kernel": false,
@@ -646,7 +615,7 @@
 		}
 	},
 	"SceAvPlayer": {
-		"nid": 16,
+		"nid": 3107541190,
 		"modules": {
 			"SceAvPlayer": {
 				"kernel": false,
@@ -804,25 +773,11 @@
 		}
 	},
 	"SceBt": {
-		"nid": 18,
+		"nid": 3107541190,
 		"modules": {
 			"SceBt": {
 				"kernel": false,
-				"nid": 19,
-				"functions": {
-					"sceBtReadEvent": 649773629,
-					"sceBtRegisterCallback": 2722083156,
-					"sceBtUnregisterCallback": 1616836383
-				}
-			}
-		}
-	},
-	"SceBt": {
-		"nid": 3980237369,
-		"modules": {
-			"SceBt": {
-				"kernel": false,
-				"nid": 2542132072,
+				"nid": 3565987373,
 				"functions": {
 					"sceBtAvrcpReadVolume": 16778545,
 					"sceBtAvrcpSendButton": 2676434151,
@@ -878,57 +833,7 @@
 		}
 	},
 	"SceCamera": {
-		"nid": 20,
-		"modules": {
-			"SceCamera": {
-				"kernel": false,
-				"nid": 3666981869,
-				"functions": {
-					"sceCameraClose": 3446545660,
-					"sceCameraGetAntiFlicker": 2681916313,
-					"sceCameraGetAutoControlHold": 111287227,
-					"sceCameraGetBacklight": 2379295019,
-					"sceCameraGetBrightness": 2245367069,
-					"sceCameraGetContrast": 2411627710,
-					"sceCameraGetDeviceLocation": 659486545,
-					"sceCameraGetEV": 2338218311,
-					"sceCameraGetEffect": 2123297714,
-					"sceCameraGetExposureCeiling": 1604694459,
-					"sceCameraGetGain": 741791475,
-					"sceCameraGetISO": 1321032808,
-					"sceCameraGetNightmode": 313982758,
-					"sceCameraGetReverse": 1156973631,
-					"sceCameraGetSaturation": 1649374803,
-					"sceCameraGetSharpness": 2859647964,
-					"sceCameraGetWhiteBalance": 3690963418,
-					"sceCameraGetZoom": 114524524,
-					"sceCameraIsActive": 272266680,
-					"sceCameraOpen": 2757949441,
-					"sceCameraRead": 2041955038,
-					"sceCameraSetAntiFlicker": 3809645962,
-					"sceCameraSetAutoControlHold": 973974461,
-					"sceCameraSetBacklight": 2919698500,
-					"sceCameraSetBrightness": 2564232584,
-					"sceCameraSetContrast": 117123328,
-					"sceCameraSetEV": 1655697592,
-					"sceCameraSetEffect": 3922907057,
-					"sceCameraSetExposureCeiling": 83053550,
-					"sceCameraSetGain": 3864854150,
-					"sceCameraSetISO": 1022767265,
-					"sceCameraSetNightmode": 1059463998,
-					"sceCameraSetReverse": 292942967,
-					"sceCameraSetSaturation": 4193765949,
-					"sceCameraSetSharpness": 3517299467,
-					"sceCameraSetWhiteBalance": 1296372908,
-					"sceCameraSetZoom": 4148576790,
-					"sceCameraStart": 2835263029,
-					"sceCameraStop": 500812238
-				}
-			}
-		}
-	},
-	"SceCamera": {
-		"nid": 4016485656,
+		"nid": 3107541190,
 		"modules": {
 			"SceCamera": {
 				"kernel": false,
@@ -990,7 +895,7 @@
 		}
 	},
 	"SceClipboard": {
-		"nid": 22,
+		"nid": 3107541190,
 		"modules": {
 			"SceClipboard": {
 				"kernel": false,
@@ -1031,7 +936,7 @@
 		}
 	},
 	"SceCodecEngine": {
-		"nid": 24,
+		"nid": 3107541190,
 		"modules": {
 			"SceCodecEngineUser": {
 				"kernel": false,
@@ -1046,7 +951,7 @@
 		}
 	},
 	"SceCodecEnginePerf": {
-		"nid": 26,
+		"nid": 3107541190,
 		"modules": {
 			"SceCodecEnginePerf": {
 				"kernel": false,
@@ -1061,7 +966,7 @@
 		}
 	},
 	"SceCommonDialog": {
-		"nid": 28,
+		"nid": 3107541190,
 		"modules": {
 			"SceCommonDialog": {
 				"kernel": false,
@@ -1211,38 +1116,33 @@
 		}
 	},
 	"SceCoredump": {
-		"nid": 30,
+		"nid": 3107541190,
 		"modules": {
 			"SceCoredump": {
 				"kernel": false,
-				"nid": 31,
+				"nid": 2740023626,
 				"functions": {
 					"sceCoredumpRegisterCoredumpHandler": 52282910,
 					"sceCoredumpUnregisterCoredumpHandler": 1614258883
 				}
 			},
+			"SceCoredumpForDriver": {
+				"kernel": true,
+				"nid": 2740023626,
+				"functions": {
+				}
+			},
 			"SceCoredumpNounlink": {
 				"kernel": false,
-				"nid": 32,
+				"nid": 2740023626,
 				"functions": {
 					"sceCoredumpWriteUserData": 3744685519
 				}
 			}
 		}
 	},
-	"SceCoredump": {
-		"nid": 1286729932,
-		"modules": {
-			"SceCoredumpForDriver": {
-				"kernel": true,
-				"nid": 2740023626,
-				"functions": {
-				}
-			}
-		}
-	},
 	"SceCtrl": {
-		"nid": 33,
+		"nid": 3107541190,
 		"modules": {
 			"SceCtrl": {
 				"kernel": false,
@@ -1254,6 +1154,7 @@
 					"sceCtrlGetButtonIntercept": 1873784069,
 					"sceCtrlGetControllerPortInfo": 844045158,
 					"sceCtrlGetSamplingMode": 3967101615,
+					"sceCtrlGetSamplingModeExt": 3173513264,
 					"sceCtrlPeekBufferNegative": 273600935,
 					"sceCtrlPeekBufferPositive": 2848181974,
 					"sceCtrlPeekBufferPositive2": 368582284,
@@ -1262,6 +1163,7 @@
 					"sceCtrlReadBufferNegative": 368668592,
 					"sceCtrlReadBufferPositive": 1743235971,
 					"sceCtrlReadBufferPositive2": 3290589758,
+					"sceCtrlReadBufferPositiveExt": 3805909654,
 					"sceCtrlReadBufferPositiveExt2": 2803337312,
 					"sceCtrlSetActuator": 3687489737,
 					"sceCtrlSetButtonIntercept": 1128100340,
@@ -1270,31 +1172,6 @@
 					"sceCtrlSetSamplingMode": 2761404752,
 					"sceCtrlSetSamplingModeExt": 2984002424,
 					"sceCtrlSingleControllerMode": 52159382
-				}
-			}
-		}
-	},
-	"SceCtrl": {
-		"nid": 1586276256,
-		"modules": {
-			"SceCtrl": {
-				"kernel": false,
-				"nid": 3516392391,
-				"functions": {
-					"sceCtrlClearRapidFire": 3626585244,
-					"sceCtrlGetButtonIntercept": 1873784069,
-					"sceCtrlGetSamplingMode": 3967101615,
-					"sceCtrlGetSamplingModeExt": 3173513264,
-					"sceCtrlPeekBufferNegative": 273600935,
-					"sceCtrlPeekBufferPositive": 2848181974,
-					"sceCtrlPeekBufferPositiveExt": 2777961683,
-					"sceCtrlReadBufferNegative": 368668592,
-					"sceCtrlReadBufferPositive": 1743235971,
-					"sceCtrlReadBufferPositiveExt": 3805909654,
-					"sceCtrlSetButtonIntercept": 1128100340,
-					"sceCtrlSetRapidFire": 3922422216,
-					"sceCtrlSetSamplingMode": 2761404752,
-					"sceCtrlSetSamplingModeExt": 2984002424
 				}
 			},
 			"SceCtrlForDriver": {
@@ -1311,7 +1188,7 @@
 		}
 	},
 	"SceDTrace": {
-		"nid": 35,
+		"nid": 3107541190,
 		"modules": {
 			"SceDTrace": {
 				"kernel": false,
@@ -1328,7 +1205,7 @@
 		}
 	},
 	"SceDbg": {
-		"nid": 37,
+		"nid": 3107541190,
 		"modules": {
 			"SceDbg": {
 				"kernel": false,
@@ -1344,7 +1221,7 @@
 		}
 	},
 	"SceDeci4p": {
-		"nid": 39,
+		"nid": 3107541190,
 		"modules": {
 			"SceDeci4pUserp": {
 				"kernel": false,
@@ -1363,7 +1240,7 @@
 		}
 	},
 	"SceDeflt": {
-		"nid": 41,
+		"nid": 3107541190,
 		"modules": {
 			"SceDeflt": {
 				"kernel": false,
@@ -1389,38 +1266,7 @@
 		}
 	},
 	"SceDisplay": {
-		"nid": 43,
-		"modules": {
-			"SceDisplay": {
-				"kernel": false,
-				"nid": 1591277972,
-				"functions": {
-					"sceDisplayGetRefreshRate": 2693572109,
-					"sceDisplayGetVcount": 3070091450,
-					"sceDisplayRegisterVblankStartCallback": 1809796173,
-					"sceDisplayUnregisterVblankStartCallback": 2554555008,
-					"sceDisplayWaitSetFrameBuf": 2485343756,
-					"sceDisplayWaitSetFrameBufCB": 2169278639,
-					"sceDisplayWaitSetFrameBufMulti": 2107139240,
-					"sceDisplayWaitSetFrameBufMultiCB": 1048145653,
-					"sceDisplayWaitVblankStart": 1469442200,
-					"sceDisplayWaitVblankStartCB": 2025069458,
-					"sceDisplayWaitVblankStartMulti": 3708425144,
-					"sceDisplayWaitVblankStartMultiCB": 99776356
-				}
-			},
-			"SceDisplayUser": {
-				"kernel": false,
-				"nid": 1336593681,
-				"functions": {
-					"sceDisplayGetFrameBuf": 1118727100,
-					"sceDisplaySetFrameBuf": 2051083108
-				}
-			}
-		}
-	},
-	"SceDisplay": {
-		"nid": 2815752058,
+		"nid": 3107541190,
 		"modules": {
 			"SceDisplay": {
 				"kernel": false,
@@ -1455,6 +1301,14 @@
 					"sceDisplaySetFrameBufForDriver.28const_SceDisplayFrameBuf_.2ApParam.2C_int_sync.29": 681411326,
 					"sceDisplaySetFrameBufInternalForDriver.28const_SceDisplayFrameBuf_.2ApParam.2C_int_sync.29": 373712501
 				}
+			},
+			"SceDisplayUser": {
+				"kernel": false,
+				"nid": 1336593681,
+				"functions": {
+					"sceDisplayGetFrameBuf": 1118727100,
+					"sceDisplaySetFrameBuf": 2051083108
+				}
 			}
 		}
 	},
@@ -1487,7 +1341,7 @@
 		}
 	},
 	"SceFace": {
-		"nid": 46,
+		"nid": 3107541190,
 		"modules": {
 			"SceFace": {
 				"kernel": false,
@@ -1519,7 +1373,7 @@
 		}
 	},
 	"SceFiber": {
-		"nid": 48,
+		"nid": 3107541190,
 		"modules": {
 			"SceFiber": {
 				"kernel": false,
@@ -1545,7 +1399,7 @@
 		}
 	},
 	"SceFios2": {
-		"nid": 50,
+		"nid": 3107541190,
 		"modules": {
 			"SceFios2": {
 				"kernel": false,
@@ -1743,7 +1597,7 @@
 		}
 	},
 	"SceGameUpdate": {
-		"nid": 54,
+		"nid": 3107541190,
 		"modules": {
 			"SceGameUpdate": {
 				"kernel": false,
@@ -1781,7 +1635,7 @@
 		}
 	},
 	"SceGxm": {
-		"nid": 56,
+		"nid": 3107541190,
 		"modules": {
 			"SceGxm": {
 				"kernel": false,
@@ -2045,7 +1899,7 @@
 		}
 	},
 	"SceHandwriting": {
-		"nid": 58,
+		"nid": 3107541190,
 		"modules": {
 			"SceHandwriting": {
 				"kernel": false,
@@ -2078,7 +1932,7 @@
 		}
 	},
 	"SceHeap": {
-		"nid": 60,
+		"nid": 3107541190,
 		"modules": {
 			"SceHeap": {
 				"kernel": false,
@@ -2099,7 +1953,7 @@
 		}
 	},
 	"SceHmac": {
-		"nid": 62,
+		"nid": 3107541190,
 		"modules": {
 			"SceHmac": {
 				"kernel": false,
@@ -2149,7 +2003,7 @@
 		}
 	},
 	"SceHttp": {
-		"nid": 64,
+		"nid": 3107541190,
 		"modules": {
 			"SceHttp": {
 				"kernel": false,
@@ -2258,7 +2112,7 @@
 		}
 	},
 	"SceIme": {
-		"nid": 66,
+		"nid": 3107541190,
 		"modules": {
 			"SceIme": {
 				"kernel": false,
@@ -2390,7 +2244,7 @@
 		}
 	},
 	"SceJpeg": {
-		"nid": 68,
+		"nid": 3107541190,
 		"modules": {
 			"SceJpegUser": {
 				"kernel": false,
@@ -2412,7 +2266,7 @@
 		}
 	},
 	"SceJpegEnc": {
-		"nid": 70,
+		"nid": 3107541190,
 		"modules": {
 			"SceJpegEncUser": {
 				"kernel": false,
@@ -2461,51 +2315,14 @@
 				"kernel": false,
 				"nid": 3941406230,
 				"functions": {
-					"sceKernelGetModuleIdByAddr": 4118383740,
-					"sceKernelGetModuleInfo": 911760815,
-					"sceKernelGetModuleList": 787634207,
-					"sceKernelGetSystemSwVersion": 1367532050
-				}
-			},
-			"SceModulemgrForDriver": {
-				"kernel": true,
-				"nid": 3567651410,
-				"functions": {
-					"sceKernelGetSystemSwVersion": 1367532050,
-					"sceKernelLoadModuleForDriver": 2262357556,
-					"sceKernelLoadStartModuleForDriver": 412875707,
-					"sceKernelLoadStartModuleForPid": 2643803170,
-					"sceKernelLoadStartSharedModuleForPid": 3803049869,
-					"sceKernelStartModuleForDriver": 108377730,
-					"sceKernelStopUnloadModuleForDriver": 269332153,
-					"sceKernelUnloadModuleForDriver": 1921938086
-				}
-			},
-			"SceModulemgrForKernel": {
-				"kernel": true,
-				"nid": 3292920419,
-				"functions": {
-					"sceKernelGetModuleInfoForKernel": 3530160405,
-					"sceKernelGetModuleInternal": 4264573027,
-					"sceKernelGetModuleListForKernel": 2546957134,
-					"sceKernelLoadModuleForPid": 4196522187
-				}
-			}
-		}
-	},
-	"SceKernelModulemgr": {
-		"nid": 2950329794,
-		"modules": {
-			"SceModulemgr": {
-				"kernel": false,
-				"nid": 3941406230,
-				"functions": {
 					"sceKernelCloseModule": 1392756015,
 					"sceKernelGetAllowedSdkVersionOnSystem": 1134033998,
 					"sceKernelGetLibraryInfoByNID": 3941274386,
 					"sceKernelGetModuleIdByAddr": 4118383740,
+					"sceKernelGetModuleInfo": 911760815,
 					"sceKernelGetModuleInfo_2": 911760815,
 					"sceKernelGetModuleList": 787634207,
+					"sceKernelGetSystemSwVersion": 1367532050,
 					"sceKernelGetSystemSwVersion_2": 1367532050,
 					"sceKernelKttyWrite": 1299632030,
 					"sceKernelLoadModuleWithoutStart": 2766592589,
@@ -2523,14 +2340,24 @@
 				"functions": {
 					"sceKernelGetModuleInfo": 911760815,
 					"sceKernelGetSystemSwVersion": 1367532050,
+					"sceKernelLoadModuleForDriver": 2262357556,
 					"sceKernelLoadStartModuleForDriver": 412875707,
-					"sceKernelSetSystemSwVersion": 2435509107
+					"sceKernelLoadStartModuleForPid": 2643803170,
+					"sceKernelLoadStartSharedModuleForPid": 3803049869,
+					"sceKernelSetSystemSwVersion": 2435509107,
+					"sceKernelStartModuleForDriver": 108377730,
+					"sceKernelStopUnloadModuleForDriver": 269332153,
+					"sceKernelUnloadModuleForDriver": 1921938086
 				}
 			},
 			"SceModulemgrForKernel": {
 				"kernel": true,
 				"nid": 3292920419,
 				"functions": {
+					"sceKernelGetModuleInfoForKernel": 3530160405,
+					"sceKernelGetModuleInternal": 4264573027,
+					"sceKernelGetModuleListForKernel": 2546957134,
+					"sceKernelLoadModuleForPid": 4196522187
 				}
 			}
 		}
@@ -2890,7 +2717,7 @@
 		}
 	},
 	"SceLibKernel": {
-		"nid": 72,
+		"nid": 2182988835,
 		"modules": {
 			"SceLibKernel": {
 				"kernel": false,
@@ -3174,13 +3001,8 @@
 			}
 		}
 	},
-	"SceLibKernel": {
-		"nid": 211804074,
-		"modules": {
-		}
-	},
 	"SceLibMonoBridge": {
-		"nid": 83,
+		"nid": 2182988835,
 		"modules": {
 			"SceLibMonoBridge": {
 				"kernel": false,
@@ -3485,7 +3307,7 @@
 		}
 	},
 	"SceLibc": {
-		"nid": 85,
+		"nid": 2182988835,
 		"modules": {
 			"SceLibc": {
 				"kernel": false,
@@ -3788,7 +3610,7 @@
 		}
 	},
 	"SceLiveArea": {
-		"nid": 87,
+		"nid": 2182988835,
 		"modules": {
 			"SceLiveAreaUtil": {
 				"kernel": false,
@@ -3807,7 +3629,7 @@
 		}
 	},
 	"SceLocation": {
-		"nid": 89,
+		"nid": 2182988835,
 		"modules": {
 			"SceLibLocation": {
 				"kernel": false,
@@ -3840,7 +3662,7 @@
 		}
 	},
 	"SceLocationExtension": {
-		"nid": 91,
+		"nid": 2182988835,
 		"modules": {
 			"SceLibLocationExtension": {
 				"kernel": false,
@@ -3930,7 +3752,7 @@
 		}
 	},
 	"SceMd5": {
-		"nid": 93,
+		"nid": 2182988835,
 		"modules": {
 			"SceMd5": {
 				"kernel": false,
@@ -3945,7 +3767,7 @@
 		}
 	},
 	"SceMotion": {
-		"nid": 95,
+		"nid": 2182988835,
 		"modules": {
 			"SceMotion": {
 				"kernel": false,
@@ -4023,7 +3845,7 @@
 		}
 	},
 	"SceMt19937": {
-		"nid": 97,
+		"nid": 2182988835,
 		"modules": {
 			"SceMt19937": {
 				"kernel": false,
@@ -4053,7 +3875,7 @@
 		}
 	},
 	"SceMusicExport": {
-		"nid": 99,
+		"nid": 2182988835,
 		"modules": {
 			"SceMusicExport": {
 				"kernel": false,
@@ -4065,7 +3887,7 @@
 		}
 	},
 	"SceNearDialogUtil": {
-		"nid": 101,
+		"nid": 2182988835,
 		"modules": {
 			"SceNearDialogUtil": {
 				"kernel": false,
@@ -4109,7 +3931,7 @@
 		}
 	},
 	"SceNearUtil": {
-		"nid": 103,
+		"nid": 2182988835,
 		"modules": {
 			"SceNearUtil": {
 				"kernel": false,
@@ -4149,7 +3971,7 @@
 		}
 	},
 	"SceNet": {
-		"nid": 105,
+		"nid": 2182988835,
 		"modules": {
 			"SceNet": {
 				"kernel": false,
@@ -4216,7 +4038,7 @@
 		}
 	},
 	"SceNetAdhocMatching": {
-		"nid": 107,
+		"nid": 2182988835,
 		"modules": {
 			"SceNetAdhocMatching": {
 				"kernel": false,
@@ -4241,7 +4063,7 @@
 		}
 	},
 	"SceNetCtl": {
-		"nid": 109,
+		"nid": 2182988835,
 		"modules": {
 			"SceNetCtl": {
 				"kernel": false,
@@ -4321,7 +4143,7 @@
 		}
 	},
 	"SceNgs": {
-		"nid": 111,
+		"nid": 2182988835,
 		"modules": {
 			"SceNgs": {
 				"kernel": false,
@@ -4396,12 +4218,7 @@
 					"sceSulphaNgsShutdown": 3508846513,
 					"sceSulphaNgsTrace": 3699117829
 				}
-			}
-		}
-	},
-	"SceNgs": {
-		"nid": 749858636,
-		"modules": {
+			},
 			"SceNgsForDriver": {
 				"kernel": true,
 				"nid": 1462320658,
@@ -4488,7 +4305,7 @@
 		}
 	},
 	"SceNpActivity": {
-		"nid": 113,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpActivity": {
 				"kernel": false,
@@ -4502,7 +4319,7 @@
 		}
 	},
 	"SceNpBasic": {
-		"nid": 115,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpBasic": {
 				"kernel": false,
@@ -4540,7 +4357,7 @@
 		}
 	},
 	"SceNpCommerce2": {
-		"nid": 117,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpCommerce2": {
 				"kernel": false,
@@ -4593,7 +4410,7 @@
 		}
 	},
 	"SceNpCommon": {
-		"nid": 119,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpCommon": {
 				"kernel": false,
@@ -4656,7 +4473,7 @@
 		}
 	},
 	"SceNpManager": {
-		"nid": 121,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpManager": {
 				"kernel": false,
@@ -4678,7 +4495,7 @@
 		}
 	},
 	"SceNpMatching2": {
-		"nid": 123,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpMatching2": {
 				"kernel": false,
@@ -4739,7 +4556,7 @@
 		}
 	},
 	"SceNpMessage": {
-		"nid": 125,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpMessage": {
 				"kernel": false,
@@ -4761,7 +4578,7 @@
 		}
 	},
 	"SceNpParty": {
-		"nid": 127,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpPartyGameUtil": {
 				"kernel": false,
@@ -4780,7 +4597,7 @@
 		}
 	},
 	"SceNpScore": {
-		"nid": 129,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpScore": {
 				"kernel": false,
@@ -4821,7 +4638,7 @@
 		}
 	},
 	"SceNpSignaling": {
-		"nid": 131,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpSignaling": {
 				"kernel": false,
@@ -4850,7 +4667,7 @@
 		}
 	},
 	"SceNpSnsFacebook": {
-		"nid": 133,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpSnsFacebook": {
 				"kernel": false,
@@ -4868,7 +4685,7 @@
 		}
 	},
 	"SceNpTrophy": {
-		"nid": 135,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpTrophy": {
 				"kernel": false,
@@ -4894,7 +4711,7 @@
 		}
 	},
 	"SceNpTus": {
-		"nid": 137,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpTus": {
 				"kernel": false,
@@ -4968,7 +4785,7 @@
 		}
 	},
 	"SceNpUtility": {
-		"nid": 139,
+		"nid": 2182988835,
 		"modules": {
 			"SceNpUtility": {
 				"kernel": false,
@@ -5024,7 +4841,7 @@
 		}
 	},
 	"ScePerf": {
-		"nid": 141,
+		"nid": 2182988835,
 		"modules": {
 			"ScePerf": {
 				"kernel": false,
@@ -5073,7 +4890,7 @@
 		}
 	},
 	"ScePgf": {
-		"nid": 143,
+		"nid": 2182988835,
 		"modules": {
 			"ScePgf": {
 				"kernel": false,
@@ -5107,7 +4924,7 @@
 		}
 	},
 	"ScePhotoExport": {
-		"nid": 145,
+		"nid": 2182988835,
 		"modules": {
 			"ScePhotoExport": {
 				"kernel": false,
@@ -5121,14 +4938,15 @@
 			}
 		}
 	},
-	"ScePhotoExport": {
-		"nid": 2973057997,
-		"modules": {
-		}
-	},
 	"ScePower": {
-		"nid": 147,
+		"nid": 2182988835,
 		"modules": {
+			"SceLedForDriver": {
+				"kernel": true,
+				"nid": 673977123,
+				"functions": {
+				}
+			},
 			"ScePower": {
 				"kernel": false,
 				"nid": 277011071,
@@ -5165,57 +4983,6 @@
 					"scePowerRequestSuspend": 2889009612,
 					"scePowerSetArmClockFrequency": 1960532709,
 					"scePowerSetBusClockFrequency": 3101144059,
-					"scePowerSetConfigurationMode": 1021413302,
-					"scePowerSetGpuClockFrequency": 1904062572,
-					"scePowerSetGpuXbarClockFrequency": 2809372094,
-					"scePowerSetIdleTimerCount": 2971595081,
-					"scePowerSetUsingWireless": 1298750495,
-					"scePowerUnregisterCallback": 3752377080
-				}
-			}
-		}
-	},
-	"ScePower": {
-		"nid": 4037929075,
-		"modules": {
-			"SceLedForDriver": {
-				"kernel": true,
-				"nid": 673977123,
-				"functions": {
-				}
-			},
-			"ScePower": {
-				"kernel": false,
-				"nid": 277011071,
-				"functions": {
-					"scePowerBatteryUpdateInfo": 670247212,
-					"scePowerCancelRequest": 3680684495,
-					"scePowerGetArmClockFrequency": 2881943695,
-					"scePowerGetBatteryChargingStatus": 3024301000,
-					"scePowerGetBatteryCycleCount": 9065657,
-					"scePowerGetBatteryElec": 2250957222,
-					"scePowerGetBatteryFullCapacity": 4246249727,
-					"scePowerGetBatteryLifePercent": 545640797,
-					"scePowerGetBatteryLifeTime": 2398830498,
-					"scePowerGetBatteryRemainCapacity": 2499126591,
-					"scePowerGetBatterySOH": 2827627365,
-					"scePowerGetBatteryTemp": 685842467,
-					"scePowerGetBatteryVolt": 1211951211,
-					"scePowerGetCaseTemp": 1381339876,
-					"scePowerGetGpuClockFrequency": 453288406,
-					"scePowerGetGpuXbarClockFrequency": 175443438,
-					"scePowerGetUsingWireless": 3577872131,
-					"scePowerIsBatteryCharging": 508101633,
-					"scePowerIsBatteryExist": 184356235,
-					"scePowerIsLowBattery": 3540474150,
-					"scePowerIsPowerOnline": 2269384542,
-					"scePowerIsRequest": 2141456093,
-					"scePowerIsSuspendRequired": 2023860118,
-					"scePowerRegisterCallback": 79132270,
-					"scePowerRequestColdReset": 71489618,
-					"scePowerRequestStandby": 729578740,
-					"scePowerRequestSuspend": 2889009612,
-					"scePowerSetArmClockFrequency": 1960532709,
 					"scePowerSetConfigurationMode": 1021413302,
 					"scePowerSetGpuClockFrequency": 1904062572,
 					"scePowerSetGpuXbarClockFrequency": 2809372094,
@@ -5341,7 +5108,7 @@
 		}
 	},
 	"ScePspnetAdhoc": {
-		"nid": 149,
+		"nid": 2182988835,
 		"modules": {
 			"ScePspnetAdhoc": {
 				"kernel": false,
@@ -5380,7 +5147,7 @@
 		}
 	},
 	"ScePvf": {
-		"nid": 151,
+		"nid": 2182988835,
 		"modules": {
 			"ScePvf": {
 				"kernel": false,
@@ -5434,7 +5201,7 @@
 		}
 	},
 	"SceRazorCapture": {
-		"nid": 153,
+		"nid": 2182988835,
 		"modules": {
 			"SceRazorCapture": {
 				"kernel": false,
@@ -5455,7 +5222,7 @@
 		}
 	},
 	"SceRazorHud": {
-		"nid": 155,
+		"nid": 2182988835,
 		"modules": {
 			"SceRazorHud": {
 				"kernel": false,
@@ -5483,7 +5250,7 @@
 		}
 	},
 	"SceReg": {
-		"nid": 157,
+		"nid": 2182988835,
 		"modules": {
 			"SceRegMgr": {
 				"kernel": false,
@@ -5632,13 +5399,33 @@
 		}
 	},
 	"SceRtc": {
-		"nid": 161,
+		"nid": 2182988835,
 		"modules": {
 			"SceRtc": {
 				"kernel": false,
 				"nid": 889407614,
 				"functions": {
-					"sceRtcGetAccumulativeTime": 629926124
+					"sceRtcConvertLocalTimeToUtc": 264809537,
+					"sceRtcConvertUtcToLocalTime": 509730212,
+					"sceRtcFormatRFC2822": 752266374,
+					"sceRtcFormatRFC2822LocalTime": 1283380041,
+					"sceRtcFormatRFC3339": 2128792559,
+					"sceRtcFormatRFC3339LocalTime": 1211516749,
+					"sceRtcGetAccumulativeTime": 629926124,
+					"sceRtcGetCurrentClock": 613708628,
+					"sceRtcGetCurrentClockLocalTime": 1101449313,
+					"sceRtcGetCurrentGpsTick": 1000874213,
+					"sceRtcGetCurrentNetworkTick": 116864254,
+					"sceRtcGetCurrentRetainedNetworkTick": 3246303241,
+					"sceRtcGetCurrentTick": 612295483,
+					"sceRtcGetLastAdjustedTick": 3927277253,
+					"sceRtcGetLastReincarnatedTick": 3778875365
+				}
+			},
+			"SceRtcForDriver": {
+				"kernel": true,
+				"nid": 55695399,
+				"functions": {
 				}
 			},
 			"SceRtcUser": {
@@ -5689,40 +5476,8 @@
 			}
 		}
 	},
-	"SceRtc": {
-		"nid": 1926466314,
-		"modules": {
-			"SceRtc": {
-				"kernel": false,
-				"nid": 889407614,
-				"functions": {
-					"sceRtcConvertLocalTimeToUtc": 264809537,
-					"sceRtcConvertUtcToLocalTime": 509730212,
-					"sceRtcFormatRFC2822": 752266374,
-					"sceRtcFormatRFC2822LocalTime": 1283380041,
-					"sceRtcFormatRFC3339": 2128792559,
-					"sceRtcFormatRFC3339LocalTime": 1211516749,
-					"sceRtcGetAccumulativeTime": 629926124,
-					"sceRtcGetCurrentClock": 613708628,
-					"sceRtcGetCurrentClockLocalTime": 1101449313,
-					"sceRtcGetCurrentGpsTick": 1000874213,
-					"sceRtcGetCurrentNetworkTick": 116864254,
-					"sceRtcGetCurrentRetainedNetworkTick": 3246303241,
-					"sceRtcGetCurrentTick": 612295483,
-					"sceRtcGetLastAdjustedTick": 3927277253,
-					"sceRtcGetLastReincarnatedTick": 3778875365
-				}
-			},
-			"SceRtcForDriver": {
-				"kernel": true,
-				"nid": 55695399,
-				"functions": {
-				}
-			}
-		}
-	},
 	"SceRudp": {
-		"nid": 164,
+		"nid": 2182988835,
 		"modules": {
 			"SceLibRudp": {
 				"kernel": false,
@@ -5763,7 +5518,7 @@
 		}
 	},
 	"SceSas": {
-		"nid": 166,
+		"nid": 2182988835,
 		"modules": {
 			"SceSas": {
 				"kernel": false,
@@ -6052,7 +5807,7 @@
 		}
 	},
 	"SceScreenShot": {
-		"nid": 168,
+		"nid": 2182988835,
 		"modules": {
 			"SceScreenShot": {
 				"kernel": false,
@@ -6087,7 +5842,7 @@
 		}
 	},
 	"SceSfmt11213": {
-		"nid": 170,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt11213": {
 				"kernel": false,
@@ -6104,7 +5859,7 @@
 		}
 	},
 	"SceSfmt1279": {
-		"nid": 172,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt1279": {
 				"kernel": false,
@@ -6121,7 +5876,7 @@
 		}
 	},
 	"SceSfmt132049": {
-		"nid": 174,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt132049": {
 				"kernel": false,
@@ -6138,7 +5893,7 @@
 		}
 	},
 	"SceSfmt19937": {
-		"nid": 176,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt19937": {
 				"kernel": false,
@@ -6155,7 +5910,7 @@
 		}
 	},
 	"SceSfmt216091": {
-		"nid": 178,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt216091": {
 				"kernel": false,
@@ -6172,7 +5927,7 @@
 		}
 	},
 	"SceSfmt2281": {
-		"nid": 180,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt2281": {
 				"kernel": false,
@@ -6189,7 +5944,7 @@
 		}
 	},
 	"SceSfmt4253": {
-		"nid": 182,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt4253": {
 				"kernel": false,
@@ -6206,7 +5961,7 @@
 		}
 	},
 	"SceSfmt44497": {
-		"nid": 184,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt44497": {
 				"kernel": false,
@@ -6223,7 +5978,7 @@
 		}
 	},
 	"SceSfmt607": {
-		"nid": 186,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt607": {
 				"kernel": false,
@@ -6240,7 +5995,7 @@
 		}
 	},
 	"SceSfmt86243": {
-		"nid": 188,
+		"nid": 2182988835,
 		"modules": {
 			"SceSfmt86243": {
 				"kernel": false,
@@ -6257,7 +6012,7 @@
 		}
 	},
 	"SceSha0": {
-		"nid": 190,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha0": {
 				"kernel": false,
@@ -6272,7 +6027,7 @@
 		}
 	},
 	"SceSha1": {
-		"nid": 192,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha1": {
 				"kernel": false,
@@ -6287,7 +6042,7 @@
 		}
 	},
 	"SceSha224": {
-		"nid": 194,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha224": {
 				"kernel": false,
@@ -6302,7 +6057,7 @@
 		}
 	},
 	"SceSha256": {
-		"nid": 196,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha256": {
 				"kernel": false,
@@ -6317,7 +6072,7 @@
 		}
 	},
 	"SceSha384": {
-		"nid": 198,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha384": {
 				"kernel": false,
@@ -6332,7 +6087,7 @@
 		}
 	},
 	"SceSha512": {
-		"nid": 200,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha512": {
 				"kernel": false,
@@ -6347,7 +6102,7 @@
 		}
 	},
 	"SceSha512t": {
-		"nid": 202,
+		"nid": 2182988835,
 		"modules": {
 			"SceSha512t": {
 				"kernel": false,
@@ -6377,7 +6132,7 @@
 		}
 	},
 	"SceShutterSound": {
-		"nid": 204,
+		"nid": 1998222272,
 		"modules": {
 			"SceShutterSound": {
 				"kernel": false,
@@ -6389,7 +6144,7 @@
 		}
 	},
 	"SceSmart": {
-		"nid": 206,
+		"nid": 1998222272,
 		"modules": {
 			"SceSmart": {
 				"kernel": false,
@@ -6440,7 +6195,7 @@
 		}
 	},
 	"SceSqlite": {
-		"nid": 208,
+		"nid": 1998222272,
 		"modules": {
 			"SceSqlite": {
 				"kernel": false,
@@ -6624,7 +6379,7 @@
 		}
 	},
 	"SceSsl": {
-		"nid": 210,
+		"nid": 1998222272,
 		"modules": {
 			"SceSsl": {
 				"kernel": false,
@@ -6673,7 +6428,7 @@
 		}
 	},
 	"SceSulpha": {
-		"nid": 212,
+		"nid": 1998222272,
 		"modules": {
 			"SceSulpha": {
 				"kernel": false,
@@ -6977,7 +6732,7 @@
 		}
 	},
 	"SceSysmodule": {
-		"nid": 214,
+		"nid": 1998222272,
 		"modules": {
 			"SceSysmodule": {
 				"kernel": false,
@@ -6995,20 +6750,8 @@
 			}
 		}
 	},
-	"SceSysmodule": {
-		"nid": 2096901316,
-		"modules": {
-			"SceSysmodule": {
-				"kernel": false,
-				"nid": 66908573,
-				"functions": {
-					"sceSysmoduleIsLoadedInternal": 161787677
-				}
-			}
-		}
-	},
 	"SceSystemGesture": {
-		"nid": 216,
+		"nid": 1998222272,
 		"modules": {
 			"SceSystemGesture": {
 				"kernel": false,
@@ -7047,32 +6790,7 @@
 		}
 	},
 	"SceTouch": {
-		"nid": 218,
-		"modules": {
-			"SceTouch": {
-				"kernel": false,
-				"nid": 1045383809,
-				"functions": {
-					"sceTouchActivateRegion": 3176781394,
-					"sceTouchClearRegion": 764734186,
-					"sceTouchDisableTouchForce": 1092174865,
-					"sceTouchEnableTouchForce": 2978181314,
-					"sceTouchGetPanelInfo": 279104037,
-					"sceTouchGetPixelDensity": 4033891571,
-					"sceTouchGetSamplingState": 642979110,
-					"sceTouchPeek": 4278726128,
-					"sceTouchPeekRegion": 71566882,
-					"sceTouchPeekRegionExt": 754374626,
-					"sceTouchRead": 379198808,
-					"sceTouchSetRegion": 1630855102,
-					"sceTouchSetSamplingState": 463232276,
-					"sceTouchSetSamplingStateExt": 332266563
-				}
-			}
-		}
-	},
-	"SceTouch": {
-		"nid": 2867618821,
+		"nid": 1998222272,
 		"modules": {
 			"SceTouch": {
 				"kernel": false,
@@ -7149,7 +6867,7 @@
 		}
 	},
 	"SceUlt": {
-		"nid": 220,
+		"nid": 1998222272,
 		"modules": {
 			"SceUlt": {
 				"kernel": false,
@@ -7374,7 +7092,7 @@
 		}
 	},
 	"SceVideodec": {
-		"nid": 222,
+		"nid": 1998222272,
 		"modules": {
 			"SceVideodecUser": {
 				"kernel": false,
@@ -7406,7 +7124,7 @@
 		}
 	},
 	"SceVoice": {
-		"nid": 224,
+		"nid": 1998222272,
 		"modules": {
 			"SceVoice": {
 				"kernel": false,
@@ -7445,7 +7163,7 @@
 		}
 	},
 	"SceVoiceQoS": {
-		"nid": 226,
+		"nid": 1998222272,
 		"modules": {
 			"SceVoiceQoS": {
 				"kernel": false,
@@ -7473,8 +7191,14 @@
 		}
 	},
 	"SceVshBridge": {
-		"nid": 227,
+		"nid": 1998222272,
 		"modules": {
+			"SceDrmBridge": {
+				"kernel": false,
+				"nid": 4283225727,
+				"functions": {
+				}
+			},
 			"SceVshBridge": {
 				"kernel": false,
 				"nid": 902147284,
@@ -7666,23 +7390,6 @@
 					"vshSysconShowModeClear": 3622247572,
 					"vshSysconShowModeSet": 1579846589,
 					"vshSysconVerifyConfigstorageScript": 3789732560
-				}
-			}
-		}
-	},
-	"SceVshBridge": {
-		"nid": 1727411787,
-		"modules": {
-			"SceDrmBridge": {
-				"kernel": false,
-				"nid": 4283225727,
-				"functions": {
-				}
-			},
-			"SceVshBridge": {
-				"kernel": false,
-				"nid": 902147284,
-				"functions": {
 				}
 			},
 			"SceVshBridgeAdditional": {
