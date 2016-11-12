@@ -89,16 +89,19 @@ int sceKernelGetModuleInternal(SceUID modid, void **module);
 
 int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 
+int sceKernelLoadStartModuleForDriver(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 SceUID sceKernelLoadModuleForDriver(const char *path, int flags, SceKernelLMOption *option);
 int sceKernelStartModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+int sceKernelUnloadModuleForDriver(SceUID modid, int flags, SceKernelULMOption *option);
+int sceKernelStopModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int sceKernelStopUnloadModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 SceUID sceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 SceUID sceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 SceUID sceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKernelLMOption *option);
-
-int sceKernelUnloadModuleForDriver(SceUID modid, int flags);
-
-int sceKernelStopUnloadModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+SceUID sceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelULMOption *option);
+int sceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int sceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 #ifdef __cplusplus
 }

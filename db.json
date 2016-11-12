@@ -1969,7 +1969,9 @@
                     "sceKernelGetModuleListForKernel": 2546957134,
                     "sceKernelGetModuleInternal": 4264573027,
                     "sceKernelGetModuleInfoForKernel": 3530160405,
-                    "sceKernelLoadModuleForPid": 4196522187
+                    "sceKernelLoadModuleForPid": 4196522187,
+                    "sceKernelStopModuleForPid": 2075446868,
+                    "sceKernelUnloadModuleForPid": 1500701388
                 }
             }, 
             "SceModulemgrForDriver": {
@@ -1981,10 +1983,12 @@
                     "sceKernelLoadStartModuleForDriver": 412875707,
                     "sceKernelLoadModuleForDriver": 2262357556,
                     "sceKernelStartModuleForDriver": 108377730,
-                    "sceKernelStopUnloadModuleForDriver": 269332153,
+                    "sceKernelStopModuleForDriver": 269332153,
+                    "sceKernelStopUnloadModuleForDriver": 62065534,
                     "sceKernelUnloadModuleForDriver": 1921938086,
                     "sceKernelLoadStartSharedModuleForPid": 3803049869,
-                    "sceKernelLoadStartModuleForPid": 2643803170
+                    "sceKernelLoadStartModuleForPid": 2643803170,
+                    "sceKernelStopUnloadModuleForPid": 1235480007
                 }
             },
             "SceModulemgr": {
