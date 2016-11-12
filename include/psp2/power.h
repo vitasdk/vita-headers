@@ -1,4 +1,6 @@
 /**
+ * \defgroup ScePower ScePower
+ * @{
  * \file
  * \brief Header file which defines power variables and functions
  *
@@ -177,3 +179,5 @@ int scePowerSetGpuXbarClockFrequency(int freq);
 #endif
 
 #endif /* _PSP2_POWER_H_ */
+
+/** @} */
