@@ -1,4 +1,18 @@
 /**
+ * \addtogroup SceThreadMgr Thread Manager Library
+ * \brief List the running threads, start, stop and send a message.
+ *
+ *
+ */
+
+/**
+ * \defgroup SceThreadMgrUser User
+ *  \ingroup SceThreadMgr
+ * \brief Exports for User
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file related to thread management
  *
@@ -1057,3 +1071,7 @@ void *sceKernelGetTLSAddr(int key);
 #endif
 
 #endif /* _PSP2_KERNEL_THREADMGR_H_ */
+
+/**
+ * \}
+ */

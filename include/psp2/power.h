@@ -1,6 +1,19 @@
 /**
- * \defgroup ScePower ScePower
- * @{
+ * \addtogroup ScePower Power Library
+ * Battery status, CPU speed...
+ */
+
+/**
+ * \defgroup ScePowerUser User
+ *  \ingroup ScePower
+ * Exports for User
+ * \code
+ * #include <psp2/power.h>
+ * \endcode
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines power variables and functions
  *
@@ -15,6 +28,7 @@
 #define _PSP2_POWER_H_
 
 #include <psp2/types.h>
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -180,4 +194,6 @@ int scePowerSetGpuXbarClockFrequency(int freq);
 
 #endif /* _PSP2_POWER_H_ */
 
-/** @} */
+/**
+ * \}
+ */

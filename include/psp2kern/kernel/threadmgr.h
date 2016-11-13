@@ -1,4 +1,21 @@
 /**
+ * \addtogroup SceThreadMgr Thread Manager Library
+ * \brief List the running threads, start, stop and send a message.
+ *
+ *
+ */
+
+/**
+ * \defgroup SceThreadMgrKernel Kernel
+ *  \ingroup SceThreadMgr
+ * \brief Exports for Kernel
+ * \code
+ * #include <psp2kern/threadmgr.h>
+ * \endcode
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file related to thread management
  *
@@ -111,7 +128,7 @@ typedef enum SceThreadStatus
 } SceThreadStatus;
 
 /**
- * Create a thread
+ * \brief Create a thread
  *
  * @par Example:
  * @code
@@ -1077,3 +1094,7 @@ int sceKernelRunWithStack(int stack_size, int (*to_call)(void *), void *args);
 #endif
 
 #endif /* _PSP2_KERNEL_THREADMGR_H_ */
+
+/**
+ * @}
+ */
