@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Graphics Graphics
+ * GPU, textures, JPEG encoding, fonts...
+ * \{
+ */
+
+/**
  * \addtogroup ScePgf PGF Font Library 
  * Display text using a PGF font
  */
+
+/** \} */
 
 /**
  * \defgroup ScePgfUser User

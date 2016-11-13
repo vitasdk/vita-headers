@@ -1,7 +1,15 @@
 ﻿/**
+ * \addtogroup Input Input
+ * Keypad, Joystick, Touch, Location, Camera...
+ * \{
+ */
+
+/**
  * \addtogroup SceLocation Location Library 
  * GPS Location
  */
+
+/** \} */
 
 /**
  * \defgroup SceLocationUser User

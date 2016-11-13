@@ -1,8 +1,15 @@
 /**
- * \addtogroup SceAtrac Atrac Library
- * Get info and decode the Atrac audio format
+ * \addtogroup Audio Audio 
+ * Play, capture, decode Audio
  * \{
  */
+
+/**
+ * \addtogroup SceAtrac Atrac Library
+ * Get info and decode the Atrac audio format
+ */
+
+/** \} */
 
 /**
  * \defgroup SceAtracUser User

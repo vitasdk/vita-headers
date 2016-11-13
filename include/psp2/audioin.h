@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Audio Audio 
+ * Play, capture, decode Audio
+ * \{
+ */
+
+/**
  * \addtogroup SceAudioIn Audio In Library
  * Open and close Audio In ports
  */
+
+/** \} */
 
 /**
  * \defgroup SceAudioInUser User

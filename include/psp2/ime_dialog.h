@@ -1,7 +1,15 @@
 /**
- * \addtogroup SceIme Ime Dialog Library 
- * Set the parameters of an Ime Dialog, and display it
+ * \addtogroup Dialog Dialog
+ * Display a message or get input in a dialog
+ * \{
  */
+
+/**
+ * \addtogroup SceIme Ime Dialog Library 
+ * Get text from an Ime Dialog
+ */
+
+/** \} */
 
 /**
  * \defgroup SceImeUser User

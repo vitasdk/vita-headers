@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemStatus System Status
+ * Time, battery...
+ * \{
+ */
+
+/**
  * \addtogroup ScePower Power Library
  * Battery status, CPU speed...
  */
+
+/** \} */
 
 /**
  * \defgroup ScePowerUser User

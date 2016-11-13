@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Dialog Dialog
+ * Display a message or get input in a dialog
+ * \{
+ */
+
+/**
  * \addtogroup SceCommonDialog Common Dialog Library
  * Set the parameters of a Dialog, and display it
  */
+
+/** \} */
 
 /**
  * \defgroup SceCommonDialogUser User

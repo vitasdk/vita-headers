@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemParams System Parameters
+ * Various parameters about the system
+ * \{
+ */
+
+/**
  * \addtogroup SceMusicExport Music Exporting Library
  * Export music from a file
  */
+
+/** \} */
 
 /**
  * \defgroup SceMusicExportUser User

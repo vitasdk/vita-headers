@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Dialog Dialog
+ * Display a message or get input in a dialog
+ * \{
+ */
+
+/**
  * \addtogroup SceMessageDialog Message Dialog Library 
  * Init a Message Dialog and display it
  */
+
+/** \} */
 
 /**
  * \defgroup SceMessageDialogUser User

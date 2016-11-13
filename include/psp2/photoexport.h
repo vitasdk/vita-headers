@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemParams System Parameters
+ * Various parameters about the system
+ * \{
+ */
+
+/**
  * \addtogroup ScePhotoExport Photo Export Library
  * Export a photo from a file or data
  */
+
+/** \} */
 
 /**
  * \defgroup ScePhotoExportUser User

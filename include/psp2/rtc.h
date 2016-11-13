@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemStatus System Status
+ * Time, battery...
+ * \{
+ */
+
+/**
  * \addtogroup SceRtc Real-time Clock Library 
  * Get/Set RTC time and date
  */
+
+/** \} */
 
 /**
  * \defgroup SceRtcUser User

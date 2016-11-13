@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Input Input
+ * Keypad, Joystick, Touch, Location, Camera...
+ * \{
+ */
+
+/**
  * \addtogroup SceMotion Motion Library 
  * Orientation, speed, magnetometer...
  */
+
+/** \} */
 
 /**
  * \defgroup SceMotionUser User

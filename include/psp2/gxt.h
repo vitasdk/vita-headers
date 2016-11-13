@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Graphics Graphics
+ * GPU, textures, JPEG encoding, fonts...
+ * \{
+ */
+
+/**
  * \addtogroup SceGxt GXT Files Manipulation Library
  * Runtime manipulation of GXT files produced using the offline texture tools.
  */
+
+/** \} */
 
 /**
  * \defgroup SceGxtUser User

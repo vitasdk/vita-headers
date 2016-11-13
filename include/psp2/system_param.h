@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemParams System Parameters
+ * Various parameters about the system
+ * \{
+ */
+
+/**
  * \addtogroup SceSystemParam System Parameters defines
  * Defines for various System Parameters (Date/Time Format, Language, Enter button...)
  */
+
+/** \} */
 
 /**
  * \defgroup SceSystemParamUser User

@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Miscellaneous Miscellaneous
+ * Various Libraries that don't fit in other categories
+ * \{
+ */
+
+/**
  * \addtogroup SceSqlite Sqlite Library
  * Use the Sqlite Library on the Vita
  */
+
+/** \} */
 
 /**
  * \defgroup SceSqliteUser User

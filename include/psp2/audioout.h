@@ -1,7 +1,14 @@
 /**
+ * \addtogroup Audio Audio 
+ * Play, capture, decode Audio
+ * \{
+ */
+
+/**
  * \addtogroup SceAudio Audio Library
  * Ouput audio from a port, set the volume, and set the config
  */
+/** \} */
 
 /**
  * \defgroup SceAudioUser User

@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemParams System Parameters
+ * Various parameters about the system
+ * \{
+ */
+
+/**
  * \addtogroup SceScreenshot Screenshot Library 
  * Set screenshot params, Enable/Disable them
  */
+
+/** \} */
 
 /**
  * \defgroup SceScreenshotUser User

@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemParams System Parameters
+ * Various parameters about the system
+ * \{
+ */
+
+/**
  * \addtogroup ScePss PSS Code Memory Handling
  * Seems to allow to allocate, lock and unlock code memory for the Mono interpreter
  */
+
+/** \} */
 
 /**
  * \defgroup ScePssUser User

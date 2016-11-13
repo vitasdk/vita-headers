@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemStatus System Status
+ * Time, battery...
+ * \{
+ */
+
+/**
  * \addtogroup SceSblACMgr Sbl AC Manager
  * Check if a process is a Game or Shell process
  */
+
+/** \} */
 
 /**
  * \defgroup SceSblACMgrKernel Kernel

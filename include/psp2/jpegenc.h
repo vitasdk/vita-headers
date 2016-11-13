@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Graphics Graphics
+ * GPU, textures, JPEG encoding, fonts...
+ * \{
+ */
+
+/**
  * \addtogroup SceJpegEnc JPEG Encoding Library 
  * Encode a JPEG from a buffer
  */
+
+/** \} */
 
 /**
  * \defgroup SceJpegEncUser User

@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Input Input
+ * Keypad, Joystick, Touch, Location, Camera...
+ * \{
+ */
+
+/**
  * \addtogroup SceCtrl Control Library
  * Read keypad and remote controller status
  */
+
+/** \} */
 
 /**
  * \defgroup SceCtrlUser User

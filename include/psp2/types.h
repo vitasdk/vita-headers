@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Vitasdk Vitasdk
+ * Defines used by the vitasdk
+ * \{
+ */
+
+/**
  * \addtogroup SceTypes Types Defines
  * Define various Sce* types that are used in the Vitasdk
  */
+
+/** \} */
 
 /**
  * \defgroup SceTypesUser User

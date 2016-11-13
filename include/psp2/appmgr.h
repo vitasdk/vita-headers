@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemStatus System Status
+ * Time, battery...
+ * \{
+ */
+
+/**
  * \addtogroup SceAppMgr Application Manager Library 
  * Launch Apps and get their params
  */
+
+/** \} */
 
 /**
  * \defgroup SceAppMgrUser User

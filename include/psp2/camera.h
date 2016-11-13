@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Input Input
+ * Keypad, Joystick, Touch, Location, Camera...
+ * \{
+ */
+
+/**
  * \addtogroup SceCamera Camera Library
  * Set Camera parameters, and capture images
  */
+
+/** \} */
 
 /**
  * \defgroup SceCameraUser User

@@ -1,9 +1,17 @@
 /**
+ * \addtogroup Miscellaneous Miscellaneous
+ * Various Libraries that don't fit in other categories
+ * \{
+ */
+
+/**
  * \addtogroup SceFiber Fiber Library 
  * Initialize and execute Fibers (individual execution units)
  *
  * Fibers are individual execution units that are like lightweight mini-threads. See [Fiber at Wikipedia](https://en.wikipedia.org/wiki/Fiber_(computer_science)).
  */
+
+/** \} */
 
 /**
  * \defgroup SceFiberUser User

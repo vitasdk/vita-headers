@@ -1,7 +1,14 @@
 /**
+ * \addtogroup Net Network
+ * Everything related to sockets, HTTP, and Adhoc
+ * \{
+ */
+
+/**
  * \addtogroup SceLibSsl SSL Library 
  * SSL library for the Vita
  */
+/** \} */
 
 /**
  * \defgroup SceLibSslUser User

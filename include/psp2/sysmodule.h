@@ -1,7 +1,14 @@
 /**
+ * \addtogroup Kernel Kernel
+ * Modules, Processes, Threads, Memory blocks
+ * \{
+ */
+
+/**
  * \addtogroup SceSysmodule System Module Library 
  * Load/Unload System modules
  */
+/** \} */
 
 /**
  * \defgroup SceSysmoduleUser User

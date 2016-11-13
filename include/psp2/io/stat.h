@@ -1,5 +1,5 @@
 /**
- * \addtogroup FilesystemIO Filesystem Input/Ouput 
+ * \addtogroup Filesystem Filesystem
  * List dirs, find files, delete them, mount partitions...
  * \{
  */

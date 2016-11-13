@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Graphics Graphics
+ * GPU, textures, JPEG encoding, fonts...
+ * \{
+ */
+
+/**
  * \addtogroup SceGxm GPU Graphics Library 
  * Everything related to drawing using the Vita GPU
  */
+
+/** \} */
 
 /**
  * \defgroup SceGxmUser User

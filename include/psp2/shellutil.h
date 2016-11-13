@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemStatus System Status
+ * Time, battery...
+ * \{
+ */
+
+/**
  * \addtogroup SceShellSvc Shell Utils Library 
  * Set handlers for opening various menus
  */
+
+/** \} */
 
 /**
  * \defgroup SceShellSvcUser User

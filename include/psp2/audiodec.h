@@ -1,7 +1,14 @@
 ﻿/**
+ * \addtogroup Audio Audio 
+ * Play, capture, decode Audio
+ * \{
+ */
+
+/**
  * \addtogroup SceAudiodec Audio Decoding Library
  * Decode Mp3, Aac, Atrac, and external formats
  */
+/** \} */
 
 /**
  * \defgroup SceAudiodecUser User

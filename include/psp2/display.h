@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Graphics Graphics
+ * GPU, textures, JPEG encoding, fonts...
+ * \{
+ */
+
+/**
  * \addtogroup SceDisplay Display Library 
  * Set the framebuffer, wait for VBlankStart...
  */
+
+/** \} */
 
 /**
  * \defgroup SceDisplayUser User

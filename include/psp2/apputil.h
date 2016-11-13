@@ -1,7 +1,15 @@
 /**
+ * \addtogroup SystemStatus System Status
+ * Time, battery...
+ * \{
+ */
+
+/**
  * \addtogroup SceAppUtil Application Utilities Library
  * Mount folder of specific Apps, Savedata Slot Management, launch web browser.
  */
+
+/** \} */
 
 /**
  * \defgroup SceAppUtilUser User

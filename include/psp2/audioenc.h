@@ -1,7 +1,14 @@
 /**
+ * \addtogroup Audio Audio 
+ * Play, capture, decode Audio
+ * \{
+ */
+
+/**
  * \addtogroup SceAudioenc Audio Encoding Library
  * Encode Audio from a stream
  */
+/** \} */
 
 /**
  * \defgroup SceAudioencUser User

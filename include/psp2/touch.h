@@ -1,7 +1,15 @@
 /**
+ * \addtogroup Input Input
+ * Keypad, Joystick, Touch, Location, Camera...
+ * \{
+ */
+
+/**
  * \addtogroup SceTouch Touch Library 
  * Read touch input
  */
+
+/** \} */
 
 /**
  * \defgroup SceTouchUser User
