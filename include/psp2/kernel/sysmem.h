@@ -1,4 +1,36 @@
 /**
+ * \addtogroup Kernel Kernel
+ * Modules, Processes, Threads, Memory blocks
+ * \{
+ */
+
+/**
+ * \addtogroup SceSysmem System Memory Library
+ * Find/Get/Open memory blocks, get the model of the Vita
+ */
+/** \} */
+
+/**
+ * \defgroup SceSysmemUser User
+ *  \ingroup SceSysmem
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/kernel/sysmem.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceSysmem_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines memory related variables and functions
  *
@@ -122,3 +154,5 @@ int sceKernelGetModel();
 #endif
 
 #endif
+
+/** \} */

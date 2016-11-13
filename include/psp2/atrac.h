@@ -1,4 +1,30 @@
 /**
+ * \addtogroup SceAtrac Atrac Library
+ * Get info and decode the Atrac audio format
+ * \{
+ */
+
+/**
+ * \defgroup SceAtracUser User
+ *  \ingroup SceAtrac
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/atrac.h>
+ * \endcode
+ *
+ * Link the library in your Makefile:
+ * \code
+ * -lSceAtrac_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -179,3 +205,5 @@ int sceAtracGetInternalError(int atracHandle, int *pInternalError);
 #endif
 
 #endif
+
+/** \} */

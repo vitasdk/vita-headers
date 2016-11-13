@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceSblACMgr Sbl AC Manager
+ * Check if a process is a Game or Shell process
+ */
+
+/**
+ * \defgroup SceSblACMgrKernel Kernel
+ *  \ingroup SceSblACMgr
+ * Exports for Kernel
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2kern/sblacmgr.h>
+ * \endcode
+ *
+ * Link the library in your Makefile:
+ * \code
+ * -lSceSblACMgr_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file related to SceSblACMgr for kernel
  *
@@ -28,3 +53,5 @@ int sceSblACMgrIsDevelopmentMode(void);
 #endif
 
 #endif /* _PSP2_KERNEL_SBLACMGR_H_ */
+
+/** \} */

@@ -1,14 +1,32 @@
 /**
- * \addtogroup SceThreadMgr Thread Manager Library
- * \brief List the running threads, start, stop and send a message.
- *
- *
+ * \addtogroup Kernel Kernel
+ * Modules, Processes, Threads, Memory blocks
+ * \{
  */
+
+/**
+ * \addtogroup SceThreadMgr Thread Manager Library
+ * List the running threads, start, stop and send a message.
+ */
+/** \} */
 
 /**
  * \defgroup SceThreadMgrUser User
  *  \ingroup SceThreadMgr
- * \brief Exports for User
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/kernel/threadmgr.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceKernel_stub
+ * \endcode
+ * ------------------------
  * \{
  */
 
@@ -1072,6 +1090,4 @@ void *sceKernelGetTLSAddr(int key);
 
 #endif /* _PSP2_KERNEL_THREADMGR_H_ */
 
-/**
- * \}
- */
+/** \} */

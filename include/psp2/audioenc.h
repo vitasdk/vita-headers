@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceAudioenc Audio Encoding Library
+ * Encode Audio from a stream
+ */
+
+/**
+ * \defgroup SceAudioencUser User
+ *  \ingroup SceAudioenc
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/audioenc.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceAudioenc_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines encoding audio library related variables and functions
  *
@@ -124,3 +149,5 @@ int sceAudioencGetInternalError(SceAudioencCtrl *pCtrl, int *pInternalError);
 #endif
 
 #endif /* _PSP2_AUDIOENC_H_ */
+
+/** \} */

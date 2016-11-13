@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceIme Ime Dialog Library 
+ * Set the parameters of an Ime Dialog, and display it
+ */
+
+/**
+ * \defgroup SceImeUser User
+ *  \ingroup SceIme
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/ime_dialog.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceIme_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines power variables and functions
  *
@@ -118,3 +143,5 @@ SceInt32 sceImeDialogTerm( void );
 #endif
 
 #endif
+
+/** \} */

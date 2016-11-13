@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceAppUtil Application Utilities Library
+ * Mount folder of specific Apps, Savedata Slot Management, launch web browser.
+ */
+
+/**
+ * \defgroup SceAppUtilUser User
+ *  \ingroup SceAppUtil
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/apputil.h>
+ * \endcode
+ *
+ * Link the library in your Makefile:
+ * \code
+ * -lSceAppUtil_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * Copyright (C) 2015 PSP2SDK Project
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -232,3 +257,5 @@ int sceAppUtilLaunchWebBrowser(SceAppUtilWebBrowserParam *param);
 #endif
 
 #endif /* _PSP2_APPUTL_H_ */
+
+/** \} */

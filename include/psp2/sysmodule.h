@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceSysmodule System Module Library 
+ * Load/Unload System modules
+ */
+
+/**
+ * \defgroup SceSysmoduleUser User
+ *  \ingroup SceSysmodule
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/sysmodule.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceSysmodule_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \defgroup sceSysModule
  * \file
  * \brief Header file which defines system modules related variables and functions
@@ -95,3 +120,5 @@ int sceSysmoduleIsLoaded(SceUInt16 id);
 #endif
 
 #endif /* _PSP2_SYSMODULE_H_ */
+
+/** \} */

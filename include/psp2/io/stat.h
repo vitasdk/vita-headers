@@ -1,4 +1,36 @@
 /**
+ * \addtogroup FilesystemIO Filesystem Input/Ouput 
+ * List dirs, find files, delete them, mount partitions...
+ * \{
+ */
+
+/**
+ * \addtogroup SceStat File Status Library 
+ * Make/Remove a dir, Read/Change the status of a file
+ */
+/** \} */
+
+/**
+ * \defgroup SceStatUser User
+ *  \ingroup SceStat
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/io/stat.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * ?
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which describes file structures
  *
@@ -162,3 +194,5 @@ int sceIoChstat(const char *file, SceIoStat *stat, int bits);
 #endif
 
 #endif /* _PSP2_IO_STAT_H_ */
+
+/** \} */

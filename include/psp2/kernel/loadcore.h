@@ -1,4 +1,31 @@
 /**
+ * \addtogroup Kernel Kernel
+ * Modules, Processes, Threads, Memory blocks
+ * \{
+ */
+
+/**
+ * \addtogroup SceLoadcore Loadcore Library
+ *
+ */
+/** \} */
+
+/**
+ * \defgroup SceLoadcoreUser User
+ *  \ingroup SceLoadcore
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/kernel/loadcore.h>
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file related to module load core
  *
@@ -28,3 +55,5 @@ typedef struct {
 } SceLibraryEntryTable;
 
 #endif
+
+/** \} */

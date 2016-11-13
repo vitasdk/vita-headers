@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceGxm GPU Graphics Library 
+ * Everything related to drawing using the Vita GPU
+ */
+
+/**
+ * \defgroup SceGxmUser User
+ *  \ingroup SceGxm
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/gxm.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceGxm_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines GXM variables and functions
  *
@@ -1460,3 +1485,5 @@ int sceGxmSetUniformDataF(void *uniformBuffer, const SceGxmProgramParameter *par
 #endif
 
 #endif /* _PSP2_GXM_ */
+
+/** \} */

@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceMotion Motion Library 
+ * Orientation, speed, magnetometer...
+ */
+
+/**
+ * \defgroup SceMotionUser User
+ *  \ingroup SceMotion
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/motion.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceMotion_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines motion variables and functions
  *
@@ -70,3 +95,5 @@ int sceMotionStopSampling(void);
 #endif
 
 #endif /* _PSP2_MOTION_H_ */
+
+/** \} */

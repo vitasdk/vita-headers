@@ -1,4 +1,36 @@
 /**
+ * \addtogroup FilesystemIO Filesystem Input/Ouput 
+ * List dirs, find files, delete them, mount partitions...
+ * \{
+ */
+
+/**
+ * \addtogroup SceDirEnt Directory Entries Library 
+ * Open a dir, and list the files in it
+ */
+/** \} */
+
+/**
+ * \defgroup SceDirEntUser User
+ *  \ingroup SceDirEnt
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/io/dirent.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * ?
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which describes the directory entry struct
  *
@@ -71,3 +103,5 @@ int sceIoDclose(SceUID fd);
 #endif
 
 #endif /* _PSP2_IO_DRENT_H_ */
+
+/** \} */

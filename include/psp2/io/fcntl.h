@@ -1,4 +1,36 @@
 /**
+ * \addtogroup FilesystemIO Filesystem Input/Ouput 
+ * List dirs, find files, delete them, mount partitions...
+ * \{
+ */
+
+/**
+ * \addtogroup SceFcntl File Control Library 
+ * Open, Rename, Read, Write files
+ */
+/** \} */
+
+/**
+ * \defgroup SceFcntlUser User
+ *  \ingroup SceFcntl
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/io/fcntl.h>
+ * \endcode
+ *
+ * Link the library in your Makefile:
+ * \code
+ * ?
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines file control options
  *
@@ -328,3 +360,5 @@ int sceIoSetAsyncCallback(SceUID fd, SceUID cb, void *argp);
 #endif
 
 #endif /* _PSP2_IO_FCNTL_H_ */
+
+/** \} */

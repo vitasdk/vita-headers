@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceJpegEnc JPEG Encoding Library 
+ * Encode a JPEG from a buffer
+ */
+
+/**
+ * \defgroup SceJpegEncUser User
+ *  \ingroup SceJpegEnc
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/jpegenc.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceJpegEnc_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines native jpeg encoder related variables and functions
  *
@@ -108,3 +133,5 @@ SceUID sceJpegEncoderGetContextSize(void);
 SceUID sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int inHeight);
 
 #endif
+
+/** \} */

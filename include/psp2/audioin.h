@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceAudioIn Audio In Library
+ * Open and close Audio In ports
+ */
+
+/**
+ * \defgroup SceAudioInUser User
+ *  \ingroup SceAudioIn
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/audioin.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceAudioIn_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -78,3 +103,5 @@ int sceAudioInGetStatus(int select);
 #endif
 
 #endif /* _PSP2_AUDIOIN_H_ */
+
+/** \} */

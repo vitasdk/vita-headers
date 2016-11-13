@@ -1,4 +1,29 @@
 ﻿/**
+ * \addtogroup SceAudiodec Audio Decoding Library
+ * Decode Mp3, Aac, Atrac, and external formats
+ */
+
+/**
+ * \defgroup SceAudiodecUser User
+ *  \ingroup SceAudiodec
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/audiodec.h>
+ * \endcode
+ *
+ * Link the library in your Makefile:
+ * \code
+ * -lSceAudiodec_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -194,3 +219,5 @@ extern SceInt32 sceAudiodecDeleteDecoderExternal(SceAudiodecCtrl *pCtrl, SceUInt
 #endif
 
 #endif
+
+/** \} */

@@ -1,4 +1,24 @@
 /**
+ * \addtogroup SceTypes Types Defines
+ * Define various Sce* types that are used in the Vitasdk
+ */
+
+/**
+ * \defgroup SceTypesUser User
+ *  \ingroup SceTypes
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/types.h>
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines unique variable types
  *
@@ -244,3 +264,5 @@ typedef char* SceName; //!< Names are used to describe object names
 #define SCE_UID_NAMELEN 31 //!< Maximum length for kernel object names
 
 #endif
+
+/** \} */

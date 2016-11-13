@@ -1,4 +1,31 @@
 /**
+ * \addtogroup SceFiber Fiber Library 
+ * Initialize and execute Fibers (individual execution units)
+ *
+ * Fibers are individual execution units that are like lightweight mini-threads. See [Fiber at Wikipedia](https://en.wikipedia.org/wiki/Fiber_(computer_science)).
+ */
+
+/**
+ * \defgroup SceFiberUser User
+ *  \ingroup SceFiber
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/fiber.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceFiber_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines SceFiber variables and functions
  *
@@ -73,3 +100,5 @@ SceInt32 sceFiberGetInfo(SceFiber* fiber, SceFiberInfo* fiberInfo);
 }
 #endif
 #endif
+
+/** \} */

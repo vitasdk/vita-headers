@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceCamera Camera Library
+ * Set Camera parameters, and capture images
+ */
+
+/**
+ * \defgroup SceCameraUser User
+ *  \ingroup SceCamera
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/camera.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceCamera_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines camera related variables and functions
  *
@@ -120,3 +145,5 @@ int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 #endif
 
 #endif /* _PSP2_CAMERA_H_ */
+
+/** \} */

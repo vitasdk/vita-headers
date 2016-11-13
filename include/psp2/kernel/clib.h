@@ -1,4 +1,36 @@
 /**
+ * \addtogroup Kernel Kernel
+ * Modules, Processes, Threads, Memory blocks
+ * \{
+ */
+
+/**
+ * \addtogroup SceCLib C Standard Library
+ * String comparison and string printf
+ */
+/** \} */
+
+/**
+ * \defgroup SceCLibUser User
+ *  \ingroup SceCLib
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/kernel/clib.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceKernel_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines sceClib functions
  *
@@ -29,3 +61,5 @@ int sceClibVsnprintf(char *, SceSize, const char *, va_list);
 #endif
 
 #endif /* _PSP2_KERNEL_CLIB_H_ */
+
+/** \} */

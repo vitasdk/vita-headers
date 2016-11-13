@@ -7,9 +7,19 @@
  * \defgroup ScePowerUser User
  *  \ingroup ScePower
  * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
  * \code
  * #include <psp2/power.h>
  * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lScePower_stub
+ * \endcode
+ * ------------------------
  * \{
  */
 
@@ -194,6 +204,4 @@ int scePowerSetGpuXbarClockFrequency(int freq);
 
 #endif /* _PSP2_POWER_H_ */
 
-/**
- * \}
- */
+/** \} */

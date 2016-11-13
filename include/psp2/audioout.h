@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceAudio Audio Library
+ * Ouput audio from a port, set the volume, and set the config
+ */
+
+/**
+ * \defgroup SceAudioUser User
+ *  \ingroup SceAudio
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/audioout.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceAudio_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines output audio related variables and functions
  *
@@ -180,3 +205,5 @@ int sceAudioOutGetAdopt(int type);
 #endif
 
 #endif /* _PSP2_AUDIOOUT_H_ */
+
+/** \} */

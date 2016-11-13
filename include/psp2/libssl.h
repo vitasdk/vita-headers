@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceLibSsl SSL Library 
+ * SSL library for the Vita
+ */
+
+/**
+ * \defgroup SceLibSslUser User
+ *  \ingroup SceLibSsl
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/libssl.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * ?
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines SSL variables and functions
  *
@@ -54,3 +79,5 @@ int sceSslFreeSslCertName(SceSslCertName* certName);
 }
 #endif
 #endif
+
+/** \} */

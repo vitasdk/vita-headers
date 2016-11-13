@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceCommonDialog Common Dialog Library
+ * Set the parameters of a Dialog, and display it
+ */
+
+/**
+ * \defgroup SceCommonDialogUser User
+ *  \ingroup SceCommonDialog
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/common_dialog.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceCommonDialog_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines common dialog functions
  *
@@ -132,3 +157,5 @@ int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);
 #endif
 
 #endif
+
+/** \} */

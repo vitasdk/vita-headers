@@ -1,4 +1,29 @@
 /**
+ * \addtogroup SceScreenshot Screenshot Library 
+ * Set screenshot params, Enable/Disable them
+ */
+
+/**
+ * \defgroup SceScreenshotUser User
+ *  \ingroup SceScreenshot
+ * Exports for User
+ *
+ * ------------------------
+ * ### Using this library in your project ###
+ * Include the header file in your project:
+ * \code
+ * #include <psp2/screenshot.h>
+ * \endcode
+ *
+ * Link the library in your makefile:
+ * \code
+ * -lSceScreenShot_stub
+ * \endcode
+ * ------------------------
+ * \{
+ */
+
+/**
  * \file
  * \brief Header file which defines output audio related variables and functions
  *
@@ -72,3 +97,5 @@ int sceScreenshotEnable(void);
 #endif
 
 #endif /* _PSP2_SCREENSHOT_H_ */
+
+/** \} */
