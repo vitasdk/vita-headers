@@ -1,0 +1,24 @@
+sudo: false
+
+addons:
+    apt:
+        packages:
+            - doxygen
+
+script:
+    - cd $TRAVIS_BUILD_DIR/docs && doxygen
+
+before_deploy:
+    - cd $TRAVIS_BUILD_DIR
+    - git config --global user.email "builds@travis-ci.com"
+    - git config --global user.name "Travis CI"
+
+deploy:
+    provider: script
+    overwrite: true
+    skip_cleanup: true
+    script: bash $TRAVIS_BUILD_DIR/.travis.d/deploy_docs.sh
+    on:
+        tags: false
+        branch:
+            - master
