@@ -1,0 +1,28 @@
+var group__SceFcntlUser =
+[
+    [ "fcntl.h", "io_2fcntl_8h.html", null ],
+    [ "sceIoCancel", "group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22", null ],
+    [ "sceIoChangeAsyncPriority", "group__SceFcntlUser.html#ga099e9c6cb3e72104424cb391ad77b0a0", null ],
+    [ "sceIoClose", "group__SceFcntlUser.html#ga125921b287807c747491aed6ef16acd9", null ],
+    [ "sceIoCloseAsync", "group__SceFcntlUser.html#ga2e37fd75f4a07b76bb0a9e4a4deda70e", null ],
+    [ "sceIoGetAsyncStat", "group__SceFcntlUser.html#ga5ec46984e483737b1ad50edc61f6ad4d", null ],
+    [ "sceIoGetDevType", "group__SceFcntlUser.html#gacadaf47fc7a88a01a23262a49be60e15", null ],
+    [ "sceIoLseek", "group__SceFcntlUser.html#ga7a57926cba9d70d9632396eaf69e0e96", null ],
+    [ "sceIoLseek32", "group__SceFcntlUser.html#gaca489d7dcc95d9ee8f85248601c2102c", null ],
+    [ "sceIoLseek32Async", "group__SceFcntlUser.html#ga5bb7c1bb1c61591dabb6f8462be88fa4", null ],
+    [ "sceIoLseekAsync", "group__SceFcntlUser.html#ga39a8423cdcb9a592df18ece834962461", null ],
+    [ "sceIoOpen", "group__SceFcntlUser.html#ga88dc53eaa661c18698ff606859f69ec8", null ],
+    [ "sceIoOpenAsync", "group__SceFcntlUser.html#gaa40c35536dfada200f9963b51ebc0b0b", null ],
+    [ "sceIoPollAsync", "group__SceFcntlUser.html#ga6065e5b5f6e1851fea13662e0f241901", null ],
+    [ "sceIoRead", "group__SceFcntlUser.html#ga5dc250bdac642a1c7365ea18a21d3635", null ],
+    [ "sceIoReadAsync", "group__SceFcntlUser.html#gac39b5495f04c81e5efefc7b7fbabdf7b", null ],
+    [ "sceIoRemove", "group__SceFcntlUser.html#gaf0878533048cf65a30d96350d296b253", null ],
+    [ "sceIoRename", "group__SceFcntlUser.html#gaa574a64450b9f7a8aa062f48872e47e6", null ],
+    [ "sceIoSetAsyncCallback", "group__SceFcntlUser.html#ga765de85ca20cd84bee1b69f6e0f27d0c", null ],
+    [ "sceIoSync", "group__SceFcntlUser.html#ga67be32ffdbd12b23149ebbc78b09c775", null ],
+    [ "sceIoSyncByFd", "group__SceFcntlUser.html#gaa55663b552e8a30b1c64a59067c0662e", null ],
+    [ "sceIoWaitAsync", "group__SceFcntlUser.html#gaec0343058b21c5c2ece5f25fda929efa", null ],
+    [ "sceIoWaitAsyncCB", "group__SceFcntlUser.html#gad66745a9a6b78309b6ddfc1be7475929", null ],
+    [ "sceIoWrite", "group__SceFcntlUser.html#gabead74a0aac2fded08b72a5a43902170", null ],
+    [ "sceIoWriteAsync", "group__SceFcntlUser.html#ga8ebeef57f41f8fe8aa435cfe889589bf", null ]
+];

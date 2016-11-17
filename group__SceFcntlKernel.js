@@ -1,0 +1,28 @@
+var group__SceFcntlKernel =
+[
+    [ "fcntl.h", "ern_2io_2fcntl_8h.html", null ],
+    [ "sceIoCancelForDriver", "group__SceFcntlKernel.html#ga2e8fcc7cb7e208601915824a382f226a", null ],
+    [ "sceIoChangeAsyncPriorityForDriver", "group__SceFcntlKernel.html#ga2c75adf7255b2d226794cd952dc95a82", null ],
+    [ "sceIoCloseAsyncForDriver", "group__SceFcntlKernel.html#gabcfb153a4021aed897f518d8d0575022", null ],
+    [ "sceIoCloseForDriver", "group__SceFcntlKernel.html#ga37808fd75a2f6cbc1bbc0ae4812ff544", null ],
+    [ "sceIoGetAsyncStatForDriver", "group__SceFcntlKernel.html#gac7adef404955e95a372a7f10b3f4a0ea", null ],
+    [ "sceIoGetDevTypeForDriver", "group__SceFcntlKernel.html#ga851168caf3b8dffeef99026b1c1ab739", null ],
+    [ "sceIoLseek32AsyncForDriver", "group__SceFcntlKernel.html#ga032b90281b0648f052fccbda720a61a3", null ],
+    [ "sceIoLseek32ForDriver", "group__SceFcntlKernel.html#gad1b5dd5596b09361c7b799a9467aa7d6", null ],
+    [ "sceIoLseekAsyncForDriver", "group__SceFcntlKernel.html#ga648c3f1fcc9678692e9db72e123493b9", null ],
+    [ "sceIoLseekForDriver", "group__SceFcntlKernel.html#ga0f06ee484d513ee4c2c73cd02dfcf25a", null ],
+    [ "sceIoOpenAsyncForDriver", "group__SceFcntlKernel.html#gaad25a8de13e8ba39559606235f04bcd9", null ],
+    [ "sceIoOpenForDriver", "group__SceFcntlKernel.html#ga01add0a35ee0b8d5f0e1e0a3980a3c23", null ],
+    [ "sceIoPollAsyncForDriver", "group__SceFcntlKernel.html#ga2b0bab02657d1a3d3426c6852679db92", null ],
+    [ "sceIoReadAsyncForDriver", "group__SceFcntlKernel.html#ga7b2e7b46f1cf0f9ea9433ddf09476f99", null ],
+    [ "sceIoReadForDriver", "group__SceFcntlKernel.html#gad00436d928bdd114f81b804827b28077", null ],
+    [ "sceIoRemoveForDriver", "group__SceFcntlKernel.html#gad8df569fb3a6d2aa20723ad3ff479b8d", null ],
+    [ "sceIoRenameForDriver", "group__SceFcntlKernel.html#gab8ff4267fc0e69dc75d1a07c6e8975ec", null ],
+    [ "sceIoSetAsyncCallbackForDriver", "group__SceFcntlKernel.html#ga32365b458912b74435819650193b27ce", null ],
+    [ "sceIoSyncByFdForDriver", "group__SceFcntlKernel.html#gabf4d343e638a8cfde56402d906283b77", null ],
+    [ "sceIoSyncForDriver", "group__SceFcntlKernel.html#ga0862306019a5b05644f3000e94131b77", null ],
+    [ "sceIoWaitAsyncCBForDriver", "group__SceFcntlKernel.html#ga4a1018baac72706f6ab6a26445dac5f7", null ],
+    [ "sceIoWaitAsyncForDriver", "group__SceFcntlKernel.html#ga0a2ed7e998bba29190193201ac3f8afe", null ],
+    [ "sceIoWriteAsyncForDriver", "group__SceFcntlKernel.html#gac148fb36486b3e74c5d2ce7166f7c312", null ],
+    [ "sceIoWriteForDriver", "group__SceFcntlKernel.html#ga5fc1c40bd578442868ab0b1b887e9354", null ]
+];
