@@ -76,7 +76,7 @@
  * \defgroup Filesystem Filesystem
  *  List dirs, find files, delete them, mount partitions...
  * \{
- *     \defgroup SceDevCtl device control library 
+ *     \defgroup SceDevCtl Device Control Library 
  *      send devctl commands, (un)assign io devices
  *
  *     \defgroup SceDirEnt Directory Entries Library 

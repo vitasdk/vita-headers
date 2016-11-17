@@ -4,7 +4,6 @@
  */
 
 /**
- * \defgroup sceSysModule
  * \file
  * \brief Header file which defines system modules related variables and functions
  *

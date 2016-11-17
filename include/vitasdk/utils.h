@@ -1,5 +1,5 @@
 /**
- * \file vitasdkutils.h
+ * \file utils.h
  * \brief Header for internal vitasdk utilities
  *
  * Copyright (C) 2016 vitasdk
