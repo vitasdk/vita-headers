@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceAudioenc}
+ * \usage{psp2/audioenc.h,-lSceAudioenc_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines encoding audio library related variables and functions
  *
@@ -124,3 +129,4 @@ int sceAudioencGetInternalError(SceAudioencCtrl *pCtrl, int *pInternalError);
 #endif
 
 #endif /* _PSP2_AUDIOENC_H_ */
+

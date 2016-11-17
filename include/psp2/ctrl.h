@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceCtrl}
+ * \usage{psp2/ctrl.h,-lSceCtrl_stub}
+ */
+
+/**
  * \file ctrl.h
  * \brief Header file which defines control related variables and functions
  *

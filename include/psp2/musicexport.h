@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceMusicExport}
+ * \usage{psp2/musicexport.h,-lSceMusicExport_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines music related variables and functions
  *
@@ -30,3 +35,4 @@ int sceMusicExportFromFile(const char* path, const MusicExportParam* param, void
 #endif
 
 #endif /* _PSP2_MUSIC_EXPORT_H_ */
+

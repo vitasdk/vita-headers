@@ -1,4 +1,9 @@
 /**
+ * \usergroup{ScePhotoExport}
+ * \usage{psp2/photoexport.h,-lScePhotoExport_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines camera related variables and functions
  */
@@ -29,3 +34,4 @@ int scePhotoExportFromFile(const char* path, const PhotoExportParam* param, void
 #endif
 
 #endif /* _PSP2_PHOTO_EXPORT_H_ */
+

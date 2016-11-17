@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceCPU}
+ * \usage{psp2kern/kernel/cpu.h,?}
+ */
+
+/**
  * \file
  * \brief Header file related to ARM CPU functions for kernel
  *
@@ -150,3 +155,4 @@ int sceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, size_t len);
 #endif
 
 #endif /* _PSP2_KERNEL_CPU_H_ */
+

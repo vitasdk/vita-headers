@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceGxm}
+ * \usage{psp2/gxm.h,-lSceGxm_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines GXM variables and functions
  *
@@ -1460,3 +1465,4 @@ int sceGxmSetUniformDataF(void *uniformBuffer, const SceGxmProgramParameter *par
 #endif
 
 #endif /* _PSP2_GXM_ */
+

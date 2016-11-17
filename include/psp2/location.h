@@ -1,4 +1,9 @@
 ﻿/**
+ * \usergroup{SceLocation}
+ * \usage{psp2/location.h,?}
+ */
+
+/**
 * \file location.h
 * \brief Header file which defines location related variables and functions
 *
@@ -205,3 +210,4 @@ SceInt32 sceLocationSetGpsEmulationFile(unsigned char *filename);
 #endif
 
 #endif /* _PSP2_LOCATION_H_ */
+

@@ -1,4 +1,9 @@
 ﻿/**
+ * \usergroup{SceAudiodec}
+ * \usage{psp2/audiodec.h,-lSceAudiodec_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -194,3 +199,4 @@ extern SceInt32 sceAudiodecDeleteDecoderExternal(SceAudiodecCtrl *pCtrl, SceUInt
 #endif
 
 #endif
+

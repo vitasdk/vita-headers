@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceDisplay}
+ * \usage{psp2/display.h,-lSceDisplay_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines display related variables and functions
  *
@@ -164,3 +169,4 @@ int sceDisplayUnregisterVblankStartCallback(SceUID uid);
 #endif
 
 #endif /* _PSP2_DISPLAY_H_ */
+

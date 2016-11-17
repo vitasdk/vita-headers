@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceAppMgr}
+ * \usage{psp2/appmgr.h,-lSceAppMgr_Stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -151,3 +156,4 @@ int sceAppMgrUmount(const char *mount_point);
 #endif
 
 #endif /* _PSP2_APPMGR_H_ */
+

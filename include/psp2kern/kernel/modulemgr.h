@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceModulemgr}
+ * \usage{psp2kern/kernel/modulemgr.h,?}
+ */
+
+/**
  * \file
  * \brief Header file related to module management for kernel
  *
@@ -108,3 +113,4 @@ int sceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void
 #endif
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
+

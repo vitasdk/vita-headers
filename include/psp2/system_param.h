@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceSystemParam}
+ * \usage{psp2/system_param.h}
+ */
+
+/**
  * \file
  * \brief Header file which defines output audio related variables and functions
  *
@@ -102,3 +107,4 @@ enum {
 #endif
 
 #endif
+

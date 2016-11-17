@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceIme}
+ * \usage{psp2/ime_dialog.h,-lSceIme_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines power variables and functions
  *
@@ -118,3 +123,4 @@ SceInt32 sceImeDialogTerm( void );
 #endif
 
 #endif
+

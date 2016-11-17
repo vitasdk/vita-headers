@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceAudio}
+ * \usage{psp2/audioout.h,-lSceAudio_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines output audio related variables and functions
  *
@@ -180,3 +185,4 @@ int sceAudioOutGetAdopt(int type);
 #endif
 
 #endif /* _PSP2_AUDIOOUT_H_ */
+

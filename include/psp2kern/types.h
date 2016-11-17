@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceTypes}
+ * \usage{psp2kern/types.h}
+ */
+
+/**
  * \file
  * \brief Header file which defines unique variable types
  *
@@ -244,3 +249,4 @@ typedef char* SceName; //!< Names are used to describe object names
 #define SCE_UID_NAMELEN 31 //!< Maximum length for kernel object names
 
 #endif
+

@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceAudioIn}
+ * \usage{psp2/audioin.h,-lSceAudioIn_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -78,3 +83,4 @@ int sceAudioInGetStatus(int select);
 #endif
 
 #endif /* _PSP2_AUDIOIN_H_ */
+

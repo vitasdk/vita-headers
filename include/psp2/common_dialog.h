@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceCommonDialog}
+ * \usage{psp2/common_dialog.h,-lSceCommonDialog_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines common dialog functions
  *
@@ -132,3 +137,4 @@ int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);
 #endif
 
 #endif
+

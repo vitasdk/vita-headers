@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceNet}
+ * \usage{psp2/net/net.h,-lSceNet_stub}
+ */
+
+/**
  * \file
  * \brief Header file related to net
  *
@@ -780,3 +785,4 @@ unsigned short int sceNetNtohs(unsigned short int net16);
 #endif
 
 #endif /* _PSP2_NET_NET_H_ */
+

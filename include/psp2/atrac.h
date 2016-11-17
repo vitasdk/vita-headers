@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceAtrac}
+ * \usage{psp2/atrac.h,-lSceAtrac_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines control related variables and functions
  *
@@ -179,3 +184,4 @@ int sceAtracGetInternalError(int atracHandle, int *pInternalError);
 #endif
 
 #endif
+

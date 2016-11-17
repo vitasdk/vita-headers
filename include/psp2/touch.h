@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceTouch}
+ * \usage{psp2/touch.h,-lSceTouch_stub}
+ */
+
+/**
  * \file touch.h
  * \brief Header file which defines touch related variables and functions
  *
@@ -152,3 +157,4 @@ int sceTouchDisableTouchForce(SceUInt32 port);
 #endif
 
 #endif
+

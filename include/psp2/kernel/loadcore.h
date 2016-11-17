@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceLoadcore}
+ * \usage{psp2/kernel/loadcore.h}
+ */
+
+/**
  * \file
  * \brief Header file related to module load core
  *
@@ -28,3 +33,4 @@ typedef struct {
 } SceLibraryEntryTable;
 
 #endif
+

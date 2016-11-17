@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceProcessmgr}
+ * \usage{psp2/kernel/processmgr.h,-lSceKernel_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines processes related variables and functions
  *
@@ -96,3 +101,4 @@ SceUID sceKernelGetProcessId(void);
 #endif
 
 #endif /* _PSP2_KERNEL_PROCESSMGR_H_ */
+

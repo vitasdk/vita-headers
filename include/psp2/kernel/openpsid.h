@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceOpenPsid}
+ * \usage{psp2/kernel/openpsid.h,-lSceKernel_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines processes related variables and functions
  *
@@ -27,3 +32,4 @@ int sceKernelGetOpenPsId(SceKernelOpenPsId *id);
 #endif
 
 #endif
+

@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceFcntl}
+ * \usage{psp2/io/fcntl.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which defines file control options
  *
@@ -328,3 +333,4 @@ int sceIoSetAsyncCallback(SceUID fd, SceUID cb, void *argp);
 #endif
 
 #endif /* _PSP2_IO_FCNTL_H_ */
+

@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceSblACMgr}
+ * \usage{psp2kern/sblacmgr.h,?}
+ */
+
+/**
  * \file
  * \brief Header file related to SceSblACMgr for kernel
  *
@@ -28,3 +33,4 @@ int sceSblACMgrIsDevelopmentMode(void);
 #endif
 
 #endif /* _PSP2_KERNEL_SBLACMGR_H_ */
+

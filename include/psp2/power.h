@@ -1,4 +1,9 @@
 /**
+ * \usergroup{ScePower}
+ * \usage{psp2/power.h,-lScePower_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines power variables and functions
  *
@@ -13,6 +18,7 @@
 #define _PSP2_POWER_H_
 
 #include <psp2/types.h>
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -177,3 +183,4 @@ int scePowerSetGpuXbarClockFrequency(int freq);
 #endif
 
 #endif /* _PSP2_POWER_H_ */
+

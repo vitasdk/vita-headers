@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceRng}
+ * \usage{psp2/kernel/rng.h,-lSceKernel_stub}
+ */
+
+/**
  * \file
  * \brief Functions to generate random numbers
  *
@@ -46,3 +51,4 @@ int sceKernelGetRandomNumber(void *output, unsigned size);
 #endif
 
 #endif /* _PSP2_KERNEL_RNG_H_ */
+
