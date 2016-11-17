@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemStatus System Status
- * Time, battery...
- * \{
- */
-
-/**
- * \addtogroup SceAppMgr Application Manager Library 
- * Launch Apps and get their params
- */
-
-/** \} */
-
-/**
- * \defgroup SceAppMgrUser User
- *  \ingroup SceAppMgr
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/appmgr.h>
- * \endcode
- *
- * Link the library in your Makefile:
- * \code
- * -lSceAppMgr_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceAppMgr}
+ * \usage{psp2/appmgr.h,-lSceAppMgr_Stub}
  */
 
 /**
@@ -185,4 +157,3 @@ int sceAppMgrUmount(const char *mount_point);
 
 #endif /* _PSP2_APPMGR_H_ */
 
-/** \} */

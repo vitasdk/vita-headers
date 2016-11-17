@@ -1,33 +1,6 @@
 /**
- * \addtogroup Kernel Kernel
- * Modules, Processes, Threads, Memory blocks
- * \{
- */
-
-/**
- * \addtogroup SceModulemgr Module Manager Library
- * Get a list of all loaded modules, Load a module
- */
-/** \} */
-
-/**
- * \defgroup SceModulemgrKernel Kernel
- *  \ingroup SceModulemgr
- * Exports for Kernel
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2kern/kernel/modulemgr.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * ?
- * \endcode
- * ------------------------
- * \{
+ * \kernelgroup{SceModulemgr}
+ * \usage{psp2kern/kernel/modulemgr.h,?}
  */
 
 /**
@@ -138,4 +111,3 @@ int sceKernelStopUnloadModuleForDriver(SceUID modid, SceSize args, void *argp, i
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
 
-/** \} */

@@ -162,7 +162,7 @@ FULL_PATH_NAMES        = YES
 # will be relative from the directory where doxygen is started.
 # This tag requires that the tag FULL_PATH_NAMES is set to YES.
 
-STRIP_FROM_PATH        =
+STRIP_FROM_PATH        = ../
 
 # The STRIP_FROM_INC_PATH tag can be used to strip a user-defined part of the
 # path mentioned in the documentation of a class, which tells the reader which
@@ -207,7 +207,7 @@ QT_AUTOBRIEF           = NO
 # not recognized any more.
 # The default value is: NO.
 
-MULTILINE_CPP_IS_BRIEF = NO
+MULTILINE_CPP_IS_BRIEF = YES
 
 # If the INHERIT_DOCS tag is set to YES then an undocumented member inherits the
 # documentation from any documented member that it re-implements.
@@ -238,7 +238,14 @@ TAB_SIZE               = 4
 # "Side Effects:". You can put \n's in the value part of an alias to insert
 # newlines.
 
-ALIASES                =
+ALIASES                = projectstart="---------------------\n### Using this library in your project ###\n"
+ALIASES               += projectinc{1}="Include the header file in your project:\n\code #include <\1> \endcode\n"
+ALIASES               += projectlib{1}="Link the library in your Makefile:\n\code \1 \endcode \n"
+ALIASES               += projectend="---------------------\n"
+ALIASES               += usage{1}="\projectstart \projectinc{\1} \projectend"
+ALIASES               += usage{2}="\projectstart \projectinc{\1} \projectlib{\2} \projectend"
+ALIASES               += usergroup{1}="\defgroup \1User User\n \ingroup \1\n Exports for User\n\\{\n"
+ALIASES               += kernelgroup{1}="\defgroup \1Kernel Kernel\n \ingroup \1\n Exports for Kernel\n\\{\n"
 
 # This tag can be used to specify a number of word-keyword mappings (TCL only).
 # A mapping has the form "name=value". For example adding "class=itcl::class"
@@ -597,7 +604,7 @@ SORT_MEMBERS_CTORS_1ST = NO
 # appear in their defined order.
 # The default value is: NO.
 
-SORT_GROUP_NAMES       = YES
+SORT_GROUP_NAMES       = NO
 
 # If the SORT_BY_SCOPE_NAME tag is set to YES, the class list will be sorted by
 # fully-qualified names, including namespaces. If set to NO, the class list will
@@ -703,7 +710,7 @@ FILE_VERSION_FILTER    =
 # DoxygenLayout.xml, doxygen will parse it automatically even if the LAYOUT_FILE
 # tag is left empty.
 
-LAYOUT_FILE            =
+LAYOUT_FILE            = DoxygenLayout.xml
 
 # The CITE_BIB_FILES tag can be used to specify one or more bib files containing
 # the reference definitions. This must be a list of .bib files. The .bib
@@ -790,7 +797,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = "Mainpage.dox" \
+INPUT                  = "definitions.h" \
+                         "Mainpage.dox" \
                          "../include/"
 
 # This tag can be used to specify the character encoding of the source files
@@ -1223,7 +1231,7 @@ HTML_COLORSTYLE_GAMMA  = 80
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_TIMESTAMP         = NO
+HTML_TIMESTAMP         = YES
 
 # If the HTML_DYNAMIC_SECTIONS tag is set to YES then the generated HTML
 # documentation will contain sections that can be hidden and shown after the
@@ -1266,7 +1274,7 @@ GENERATE_DOCSET        = NO
 # The default value is: Doxygen generated docs.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_FEEDNAME        = "Doxygen generated docs"
+DOCSET_FEEDNAME        = "Vitasdk documentation"
 
 # This tag specifies a string that should uniquely identify the documentation
 # set bundle. This should be a reverse domain-name style string, e.g.
@@ -1274,7 +1282,7 @@ DOCSET_FEEDNAME        = "Doxygen generated docs"
 # The default value is: org.doxygen.Project.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_BUNDLE_ID       = org.doxygen.Project
+DOCSET_BUNDLE_ID       = io.github.vitasdk
 
 # The DOCSET_PUBLISHER_ID tag specifies a string that should uniquely identify
 # the documentation publisher. This should be a reverse domain-name style
@@ -1282,13 +1290,13 @@ DOCSET_BUNDLE_ID       = org.doxygen.Project
 # The default value is: org.doxygen.Publisher.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
+DOCSET_PUBLISHER_ID    = io.github.vitasdk
 
 # The DOCSET_PUBLISHER_NAME tag identifies the documentation publisher.
 # The default value is: Publisher.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_PUBLISHER_NAME  = Publisher
+DOCSET_PUBLISHER_NAME  = Vitasdk
 
 # If the GENERATE_HTMLHELP tag is set to YES then doxygen generates three
 # additional HTML index files: index.hhp, index.hhc, and index.hhk. The

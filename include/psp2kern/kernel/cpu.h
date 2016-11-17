@@ -1,33 +1,6 @@
 /**
- * \addtogroup Kernel Kernel
- * Modules, Processes, Threads, Memory blocks
- * \{
- */
-
-/**
- * \addtogroup SceCPU CPU Library
- * Flush caches, unrestricted memcpy...
- */
-/** \} */
-
-/**
- * \defgroup SceCPUKernel Kernel
- *  \ingroup SceCPU
- * Exports for Kernel
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2kern/kernel/cpu.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * ?
- * \endcode
- * ------------------------
- * \{
+ * \kernelgroup{SceCPU}
+ * \usage{psp2kern/kernel/cpu.h,?}
  */
 
 /**
@@ -183,4 +156,3 @@ int sceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, size_t len);
 
 #endif /* _PSP2_KERNEL_CPU_H_ */
 
-/** \} */

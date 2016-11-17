@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemParams System Parameters
- * Various parameters about the system
- * \{
- */
-
-/**
- * \addtogroup ScePss PSS Code Memory Handling
- * Seems to allow to allocate, lock and unlock code memory for the Mono interpreter
- */
-
-/** \} */
-
-/**
- * \defgroup ScePssUser User
- *  \ingroup ScePss
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/pss.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceLibMonoBridge_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{ScePss}
+ * \usage{psp2/pss.h,-lSceLibMonoBridge_stub}
  */
 
 /**
@@ -62,4 +34,3 @@ void pss_code_mem_unlock(void);
 
 #endif /* _PSP2_PSS_H_ */
 
-/** \} */

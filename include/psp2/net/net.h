@@ -1,33 +1,6 @@
 /**
- * \addtogroup Net Network
- * Everything related to sockets, HTTP, and Adhoc
- * \{
- */
-
-/**
- * \addtogroup SceNet Socket Library
- * Send sockets, Listen to a port...
- */
-/** \} */
-
-/**
- * \defgroup SceNetUser User
- *  \ingroup SceNet
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/net/net.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceNet_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceNet}
+ * \usage{psp2/net/net.h,-lSceNet_stub}
  */
 
 /**
@@ -813,4 +786,3 @@ unsigned short int sceNetNtohs(unsigned short int net16);
 
 #endif /* _PSP2_NET_NET_H_ */
 
-/** \} */

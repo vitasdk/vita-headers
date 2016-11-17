@@ -1,34 +1,6 @@
 /**
- * \addtogroup Input Input
- * Keypad, Joystick, Touch, Location, Camera...
- * \{
- */
-
-/**
- * \addtogroup SceMotion Motion Library 
- * Orientation, speed, magnetometer...
- */
-
-/** \} */
-
-/**
- * \defgroup SceMotionUser User
- *  \ingroup SceMotion
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/motion.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceMotion_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceMotion}
+ * \usage{psp2/motion.h,-lSceMotion_stub}
  */
 
 /**
@@ -104,4 +76,3 @@ int sceMotionStopSampling(void);
 
 #endif /* _PSP2_MOTION_H_ */
 
-/** \} */

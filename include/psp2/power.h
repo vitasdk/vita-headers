@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemStatus System Status
- * Time, battery...
- * \{
- */
-
-/**
- * \addtogroup ScePower Power Library
- * Battery status, CPU speed...
- */
-
-/** \} */
-
-/**
- * \defgroup ScePowerUser User
- *  \ingroup ScePower
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/power.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lScePower_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{ScePower}
+ * \usage{psp2/power.h,-lScePower_stub}
  */
 
 /**
@@ -212,4 +184,3 @@ int scePowerSetGpuXbarClockFrequency(int freq);
 
 #endif /* _PSP2_POWER_H_ */
 
-/** \} */

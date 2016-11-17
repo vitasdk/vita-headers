@@ -1,33 +1,6 @@
 /**
- * \addtogroup Filesystem Filesystem
- * List dirs, find files, delete them, mount partitions...
- * \{
- */
-
-/**
- * \addtogroup SceFcntl File Control Library 
- * Open, Rename, Read, Write files
- */
-/** \} */
-
-/**
- * \defgroup SceFcntlKernel Kernel
- *  \ingroup SceFcntl
- * Exports for Kernel
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2kern/io/fcntl.h>
- * \endcode
- *
- * Link the library in your Makefile:
- * \code
- * ?
- * \endcode
- * ------------------------
- * \{
+ * \kernelgroup{SceFcntl}
+ * \usage{psp2kern/io/fcntl.h,?}
  */
 
 /**
@@ -361,4 +334,3 @@ int sceIoSetAsyncCallbackForDriver(SceUID fd, SceUID cb, void *argp);
 
 #endif /* _PSP2_IO_FCNTL_H_ */
 
-/** \} */

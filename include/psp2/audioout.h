@@ -1,33 +1,6 @@
 /**
- * \addtogroup Audio Audio 
- * Play, capture, decode Audio
- * \{
- */
-
-/**
- * \addtogroup SceAudio Audio Library
- * Ouput audio from a port, set the volume, and set the config
- */
-/** \} */
-
-/**
- * \defgroup SceAudioUser User
- *  \ingroup SceAudio
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/audioout.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceAudio_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceAudio}
+ * \usage{psp2/audioout.h,-lSceAudio_stub}
  */
 
 /**
@@ -213,4 +186,3 @@ int sceAudioOutGetAdopt(int type);
 
 #endif /* _PSP2_AUDIOOUT_H_ */
 
-/** \} */

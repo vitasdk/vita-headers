@@ -1,34 +1,6 @@
 /**
- * \addtogroup Graphics Graphics
- * GPU, textures, JPEG encoding, fonts...
- * \{
- */
-
-/**
- * \addtogroup ScePgf PGF Font Library 
- * Display text using a PGF font
- */
-
-/** \} */
-
-/**
- * \defgroup ScePgfUser User
- *  \ingroup ScePgf
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/pgf.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lScePgf_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{ScePgf}
+ * \usage{psp2/pgf.h,-lScePgf_stub}
  */
 
 /**
@@ -288,4 +260,3 @@ int sceFontFlush(SceFontHandle fontHandle);
 
 #endif /* _PSP2_PGF_H_ */
 
-/** \} */

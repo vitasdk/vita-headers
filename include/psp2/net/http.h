@@ -1,33 +1,6 @@
 /**
- * \addtogroup Net Network
- * Everything related to sockets, HTTP, and Adhoc
- * \{
- */
-
-/**
- * \addtogroup SceHttp Hyper Text Transfer Protocol Library 
- * Send HTTP requests, Parse a URI, Connect to a Proxy...
- */
-/** \} */
-
-/**
- * \defgroup SceHttpUser User
- *  \ingroup SceHttp
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/net/http.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceHttp_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceHttp}
+ * \usage{psp2/net/http.h,-lSceHttp_stub}
  */
 
 /**
@@ -384,4 +357,3 @@ int sceHttpSetCookieSendCallback(int id, SceHttpCookieSendCallback cbfunc, void 
 
 #endif /* _PSP2_NET_HTTP_H_ */
 
-/** \} */

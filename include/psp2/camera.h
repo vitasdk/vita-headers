@@ -1,34 +1,6 @@
 /**
- * \addtogroup Input Input
- * Keypad, Joystick, Touch, Location, Camera...
- * \{
- */
-
-/**
- * \addtogroup SceCamera Camera Library
- * Set Camera parameters, and capture images
- */
-
-/** \} */
-
-/**
- * \defgroup SceCameraUser User
- *  \ingroup SceCamera
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/camera.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceCamera_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceCamera}
+ * \usage{psp2/camera.h,-lSceCamera_stub}
  */
 
 /**
@@ -154,4 +126,3 @@ int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 
 #endif /* _PSP2_CAMERA_H_ */
 
-/** \} */

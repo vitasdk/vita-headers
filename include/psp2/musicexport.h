@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemParams System Parameters
- * Various parameters about the system
- * \{
- */
-
-/**
- * \addtogroup SceMusicExport Music Exporting Library
- * Export music from a file
- */
-
-/** \} */
-
-/**
- * \defgroup SceMusicExportUser User
- *  \ingroup SceMusicExport
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/musicexport.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceMusicExport_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceMusicExport}
+ * \usage{psp2/musicexport.h,-lSceMusicExport_stub}
  */
 
 /**
@@ -64,4 +36,3 @@ int sceMusicExportFromFile(const char* path, const MusicExportParam* param, void
 
 #endif /* _PSP2_MUSIC_EXPORT_H_ */
 
-/** \} */

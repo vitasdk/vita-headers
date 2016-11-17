@@ -1,34 +1,6 @@
 ﻿/**
- * \addtogroup Input Input
- * Keypad, Joystick, Touch, Location, Camera...
- * \{
- */
-
-/**
- * \addtogroup SceLocation Location Library 
- * GPS Location
- */
-
-/** \} */
-
-/**
- * \defgroup SceLocationUser User
- *  \ingroup SceLocation
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/location.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * ?
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceLocation}
+ * \usage{psp2/location.h,?}
  */
 
 /**
@@ -239,4 +211,3 @@ SceInt32 sceLocationSetGpsEmulationFile(unsigned char *filename);
 
 #endif /* _PSP2_LOCATION_H_ */
 
-/** \} */

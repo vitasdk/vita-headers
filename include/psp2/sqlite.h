@@ -1,34 +1,6 @@
 /**
- * \addtogroup Miscellaneous Miscellaneous
- * Various Libraries that don't fit in other categories
- * \{
- */
-
-/**
- * \addtogroup SceSqlite Sqlite Library
- * Use the Sqlite Library on the Vita
- */
-
-/** \} */
-
-/**
- * \defgroup SceSqliteUser User
- *  \ingroup SceSqlite
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/sqlite.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceSqlite_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceSqlite}
+ * \usage{psp2/sqlite.h,-lSceSqlite_stub}
  */
 
 /**
@@ -70,4 +42,3 @@ int sceSqliteConfigMallocMethods(SceSqliteMallocMethods* methods);
 
 #endif /* _PSP2_SQLITE_H_ */
 
-/** \} */

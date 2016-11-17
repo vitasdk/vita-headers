@@ -1,34 +1,6 @@
 /**
- * \addtogroup Dialog Dialog
- * Display a message or get input in a dialog
- * \{
- */
-
-/**
- * \addtogroup SceIme Ime Dialog Library 
- * Get text from an Ime Dialog
- */
-
-/** \} */
-
-/**
- * \defgroup SceImeUser User
- *  \ingroup SceIme
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/ime_dialog.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceIme_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceIme}
+ * \usage{psp2/ime_dialog.h,-lSceIme_stub}
  */
 
 /**
@@ -152,4 +124,3 @@ SceInt32 sceImeDialogTerm( void );
 
 #endif
 
-/** \} */

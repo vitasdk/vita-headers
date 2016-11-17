@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemStatus System Status
- * Time, battery...
- * \{
- */
-
-/**
- * \addtogroup SceAppUtil Application Utilities Library
- * Mount folder of specific Apps, Savedata Slot Management, launch web browser.
- */
-
-/** \} */
-
-/**
- * \defgroup SceAppUtilUser User
- *  \ingroup SceAppUtil
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/apputil.h>
- * \endcode
- *
- * Link the library in your Makefile:
- * \code
- * -lSceAppUtil_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceAppUtil}
+ * \usage{psp2/apputil.h,-lSceAppUtil_stub}
  */
 
 /**
@@ -266,4 +238,3 @@ int sceAppUtilLaunchWebBrowser(SceAppUtilWebBrowserParam *param);
 
 #endif /* _PSP2_APPUTL_H_ */
 
-/** \} */

@@ -1,34 +1,6 @@
 /**
- * \addtogroup Input Input
- * Keypad, Joystick, Touch, Location, Camera...
- * \{
- */
-
-/**
- * \addtogroup SceCtrl Control Library
- * Read keypad and remote controller status
- */
-
-/** \} */
-
-/**
- * \defgroup SceCtrlUser User
- *  \ingroup SceCtrl
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/ctrl.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceCtrl_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceCtrl}
+ * \usage{psp2/ctrl.h,-lSceCtrl_stub}
  */
 
 /**

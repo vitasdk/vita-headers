@@ -1,34 +1,6 @@
 /**
- * \addtogroup Graphics Graphics
- * GPU, textures, JPEG encoding, fonts...
- * \{
- */
-
-/**
- * \addtogroup SceGxt GXT Files Manipulation Library
- * Runtime manipulation of GXT files produced using the offline texture tools.
- */
-
-/** \} */
-
-/**
- * \defgroup SceGxtUser User
- *  \ingroup SceGxt
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/gxt.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * ?
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceGxt}
+ * \usage{psp2/gxt.h,?}
  */
 
 /**
@@ -149,4 +121,3 @@ SceGxtErrorCode sceGxtSetPalette(SceGxmTexture *texture,
 
 #endif /* _PSP2_GXT_H_ */
 
-/** \} */

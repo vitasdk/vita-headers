@@ -1,29 +1,6 @@
 /**
- * \addtogroup SystemParams System Parameters
- * Various parameters about the system
- * \{
- */
-
-/**
- * \addtogroup SceSystemParam System Parameters defines
- * Defines for various System Parameters (Date/Time Format, Language, Enter button...)
- */
-
-/** \} */
-
-/**
- * \defgroup SceSystemParamUser User
- *  \ingroup SceSystemParam
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/system_param.h>
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceSystemParam}
+ * \usage{psp2/system_param.h}
  */
 
 /**
@@ -131,4 +108,3 @@ enum {
 
 #endif
 
-/** \} */

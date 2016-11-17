@@ -1,33 +1,6 @@
 /**
- * \addtogroup Kernel Kernel
- * Modules, Processes, Threads, Memory blocks
- * \{
- */
-
-/**
- * \addtogroup SceProcessmgr Process Manager Library
- * Get time, ID of the current Process and exit it
- */
-/** \} */
-
-/**
- * \defgroup SceProcessmgrUser User
- *  \ingroup SceProcessmgr
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/kernel/processmgr.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceKernel_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceProcessmgr}
+ * \usage{psp2/kernel/processmgr.h,-lSceKernel_stub}
  */
 
 /**
@@ -129,4 +102,3 @@ SceUID sceKernelGetProcessId(void);
 
 #endif /* _PSP2_KERNEL_PROCESSMGR_H_ */
 
-/** \} */

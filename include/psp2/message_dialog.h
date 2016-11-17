@@ -1,34 +1,6 @@
 /**
- * \addtogroup Dialog Dialog
- * Display a message or get input in a dialog
- * \{
- */
-
-/**
- * \addtogroup SceMessageDialog Message Dialog Library 
- * Init a Message Dialog and display it
- */
-
-/** \} */
-
-/**
- * \defgroup SceMessageDialogUser User
- *  \ingroup SceMessageDialog
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/message_dialog.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceCommonDialog_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceMessageDialog}
+ * \usage{psp2/message_dialog.h,-lSceCommonDialog_stub}
  */
 
 /**
@@ -243,4 +215,3 @@ int sceMsgDialogProgressBarSetMsg( SceMsgDialogProgressBarTarget target, const S
 
 #endif
 
-/** \} */

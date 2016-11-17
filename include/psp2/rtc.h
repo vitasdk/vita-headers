@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemStatus System Status
- * Time, battery...
- * \{
- */
-
-/**
- * \addtogroup SceRtc Real-time Clock Library 
- * Get/Set RTC time and date
- */
-
-/** \} */
-
-/**
- * \defgroup SceRtcUser User
- *  \ingroup SceRtc
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/rtc.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceRtc_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceRtc}
+ * \usage{psp2/rtc.h,-lSceRtc_stub}
  */
 
 /**
@@ -203,4 +175,3 @@ static inline int sceRtcSetMicrosecond(SceDateTime *time, int microsecond){
 
 #endif /* _PSP2_RTC_H_ */
 
-/** \} */

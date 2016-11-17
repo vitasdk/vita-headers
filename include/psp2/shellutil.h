@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemStatus System Status
- * Time, battery...
- * \{
- */
-
-/**
- * \addtogroup SceShellSvc Shell Utils Library 
- * Set handlers for opening various menus
- */
-
-/** \} */
-
-/**
- * \defgroup SceShellSvcUser User
- *  \ingroup SceShellSvc
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/shellutil.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceShellSvc_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceShellSvc}
+ * \usage{psp2/shellutil.h,-lSceShellSvc_stub}
  */
 
 /**
@@ -115,4 +87,3 @@ int sceShellUtilUnlock(int type);
 
 #endif /* _PSP2_SHELLUTIL_H_ */
 
-/** \} */

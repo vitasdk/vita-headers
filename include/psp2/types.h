@@ -1,29 +1,6 @@
 /**
- * \addtogroup Vitasdk Vitasdk
- * Defines used by the vitasdk
- * \{
- */
-
-/**
- * \addtogroup SceTypes Types Defines
- * Define various Sce* types that are used in the Vitasdk
- */
-
-/** \} */
-
-/**
- * \defgroup SceTypesUser User
- *  \ingroup SceTypes
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/types.h>
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceTypes}
+ * \usage{psp2/types.h}
  */
 
 /**
@@ -273,4 +250,3 @@ typedef char* SceName; //!< Names are used to describe object names
 
 #endif
 
-/** \} */

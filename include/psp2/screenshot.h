@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemParams System Parameters
- * Various parameters about the system
- * \{
- */
-
-/**
- * \addtogroup SceScreenshot Screenshot Library 
- * Set screenshot params, Enable/Disable them
- */
-
-/** \} */
-
-/**
- * \defgroup SceScreenshotUser User
- *  \ingroup SceScreenshot
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/screenshot.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceScreenShot_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceScreenshot}
+ * \usage{psp2/screenshot.h,-lSceScreenShot_stub}
  */
 
 /**
@@ -106,4 +78,3 @@ int sceScreenshotEnable(void);
 
 #endif /* _PSP2_SCREENSHOT_H_ */
 
-/** \} */

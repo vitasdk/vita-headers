@@ -1,34 +1,6 @@
 /**
- * \addtogroup Graphics Graphics
- * GPU, textures, JPEG encoding, fonts...
- * \{
- */
-
-/**
- * \addtogroup SceDisplay Display Library 
- * Set the framebuffer, wait for VBlankStart...
- */
-
-/** \} */
-
-/**
- * \defgroup SceDisplayUser User
- *  \ingroup SceDisplay
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/display.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceDisplay_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceDisplay}
+ * \usage{psp2/display.h,-lSceDisplay_stub}
  */
 
 /**
@@ -198,4 +170,3 @@ int sceDisplayUnregisterVblankStartCallback(SceUID uid);
 
 #endif /* _PSP2_DISPLAY_H_ */
 
-/** \} */

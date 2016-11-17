@@ -1,33 +1,6 @@
 /**
- * \addtogroup Kernel Kernel
- * Modules, Processes, Threads, Memory blocks
- * \{
- */
-
-/**
- * \addtogroup SceModulemgr Module Manager Library
- * Get a list of all loaded modules, Load a module
- */
-/** \} */
-
-/**
- * \defgroup SceModulemgrUser User
- *  \ingroup SceModulemgr
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/kernel/modulemgr.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceKernel_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceModulemgr}
+ * \usage{psp2/kernel/modulemgr.h,-lSceKernel_stub}
  */
 
 /**
@@ -132,4 +105,3 @@ int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
 
-/** \} */

@@ -1,28 +1,6 @@
 /**
- * \addtogroup Kernel Kernel
- * Modules, Processes, Threads, Memory blocks
- * \{
- */
-
-/**
- * \addtogroup SceKernelError Kernel Errors
- * List of the Kernel Errors that can happen
- */
-/** \} */
-
-/**
- * \defgroup SceKernelErrorUser User
- *  \ingroup SceKernelError
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/kernel/error.h>
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceKernelError}
+ * \usage{psp2/kernel/error.h,?}
  */
 
 /**
@@ -360,4 +338,3 @@ enum {
 
 #endif
 
-/** \} */

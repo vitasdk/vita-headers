@@ -1,34 +1,6 @@
 /**
- * \addtogroup Input Input
- * Keypad, Joystick, Touch, Location, Camera...
- * \{
- */
-
-/**
- * \addtogroup SceTouch Touch Library 
- * Read touch input
- */
-
-/** \} */
-
-/**
- * \defgroup SceTouchUser User
- *  \ingroup SceTouch
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/touch.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lSceTouch_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceTouch}
+ * \usage{psp2/touch.h,-lSceTouch_stub}
  */
 
 /**
@@ -186,4 +158,3 @@ int sceTouchDisableTouchForce(SceUInt32 port);
 
 #endif
 
-/** \} */

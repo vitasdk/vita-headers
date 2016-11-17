@@ -1,33 +1,6 @@
 /**
- * \addtogroup Filesystem Filesystem
- * List dirs, find files, delete them, mount partitions...
- * \{
- */
-
-/**
- * \addtogroup SceDevCtl Device Control Library 
- * Send DevCtl commands, (Un)Assign IO devices
- */
-/** \} */
-
-/**
- * \defgroup SceDevCtlUser User
- *  \ingroup SceDevCtl
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/io/devctl.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * ?
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{SceDevCtl}
+ * \usage{psp2/io/devctl.h,?}
  */
 
 /**
@@ -128,4 +101,3 @@ int sceIoIoctlAsync(SceUID fd, unsigned int cmd, void *indata, int inlen, void *
 
 #endif /* _PSP2_IO_DEVCTRL_H_ */
 
-/** \} */

@@ -1,21 +1,6 @@
 /**
- * \addtogroup SceTypes Types Defines
- * Define various Sce* types that are used in the Vitasdk
- */
-
-/**
- * \defgroup SceTypesKernel Kernel
- *  \ingroup SceTypes
- * Exports for Kernel
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2kern/types.h>
- * \endcode
- * ------------------------
- * \{
+ * \kernelgroup{SceTypes}
+ * \usage{psp2kern/types.h}
  */
 
 /**
@@ -265,4 +250,3 @@ typedef char* SceName; //!< Names are used to describe object names
 
 #endif
 
-/** \} */

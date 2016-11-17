@@ -1,34 +1,6 @@
 /**
- * \addtogroup SystemParams System Parameters
- * Various parameters about the system
- * \{
- */
-
-/**
- * \addtogroup ScePhotoExport Photo Export Library
- * Export a photo from a file or data
- */
-
-/** \} */
-
-/**
- * \defgroup ScePhotoExportUser User
- *  \ingroup ScePhotoExport
- * Exports for User
- *
- * ------------------------
- * ### Using this library in your project ###
- * Include the header file in your project:
- * \code
- * #include <psp2/photoexport.h>
- * \endcode
- *
- * Link the library in your makefile:
- * \code
- * -lScePhotoExport_stub
- * \endcode
- * ------------------------
- * \{
+ * \usergroup{ScePhotoExport}
+ * \usage{psp2/photoexport.h,-lScePhotoExport_stub}
  */
 
 /**
@@ -63,4 +35,3 @@ int scePhotoExportFromFile(const char* path, const PhotoExportParam* param, void
 
 #endif /* _PSP2_PHOTO_EXPORT_H_ */
 
-/** \} */
