@@ -6,7 +6,7 @@ addons:
             - doxygen
 
 script:
-    - cd $TRAVIS_BUILD_DIR/docs && doxygen
+    - echo "TODO need to build testing with samples"
 
 before_deploy:
     - cd $TRAVIS_BUILD_DIR

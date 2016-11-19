@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
+set -e
+
+cd $TRAVIS_BUILD_DIR/docs && doxygen
+
 cd $TRAVIS_BUILD_DIR
-git fetch origin gh-pages:origin/gh-pages
-git checkout origin/gh-pages -b gh-pages || git checkout --orphan gh-pages
+git fetch origin gh-pages:origin/gh-pages && git checkout origin/gh-pages -b gh-pages || git checkout --orphan gh-pages
 git reset
 ls | grep -v 'docs' | xargs rm -rf
 mv docs/html/* .
