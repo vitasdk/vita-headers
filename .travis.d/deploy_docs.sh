@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-cd $TRAVIS_BUILD_DIR/docs && doxygen
+cd $TRAVIS_BUILD_DIR/docs
+$HOME/doxygen/doxygen*/bin/doxygen
 
 cd $TRAVIS_BUILD_DIR
 git fetch origin gh-pages:origin/gh-pages && git checkout origin/gh-pages -b gh-pages || git checkout --orphan gh-pages
