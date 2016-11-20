@@ -4,7 +4,7 @@ var group__SceNetUser_structSceNetEmulationParam =
     [ "flags", "group__SceNetUser.html#gadecd01fe7637327d075dc704eb9350f3", null ],
     [ "option_number", "group__SceNetUser.html#gabc5a8073bcca0b72dbe7be5da9889c86", null ],
     [ "recv", "group__SceNetUser.html#gafbd7beab9a1755eb377e4e2487c8647f", null ],
-    [ "reserved", "group__SceNetUser.html#ga1193297c84ae1825cefc1dc6239e9ee4", null ],
+    [ "reserved", "group__SceNetUser.html#ga5e588a8c1f750b04225a3bdea973e2de", null ],
     [ "reserved1", "group__SceNetUser.html#ga915740cb5414ce0e6383848e8f3707a3", null ],
     [ "result", "group__SceNetUser.html#ga8c043b0390224449e5f32ac196088d4b", null ],
     [ "seed", "group__SceNetUser.html#ga48d74eb3c14face8d2f8fccc81f68b58", null ],

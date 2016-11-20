@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['gamecomment',['gameComment',['../group__ScePhotoExportUser.html#gab76527d7f923a60c4013450ea719c624',1,'PhotoExportParam::gameComment()'],['../group__SceScreenshotUser.html#ga6ae967f563ed15317539a093a7ad6409',1,'ScreenshotParam::gameComment()']]],
-  ['gametitle',['gameTitle',['../group__ScePhotoExportUser.html#ga49a8bf1670e99de07a5e7bf00fe73c5e',1,'PhotoExportParam::gameTitle()'],['../group__SceScreenshotUser.html#ga3415dbc1fccc79c98b667bb6ea5b22d2',1,'ScreenshotParam::gameTitle()']]],
-  ['graphics',['Graphics',['../group__Graphics.html',1,'']]],
-  ['gxm_2eh',['gxm.h',['../gxm_8h.html',1,'']]],
-  ['gxt_2eh',['gxt.h',['../gxt_8h.html',1,'']]],
-  ['gpu_20graphics_20library',['GPU Graphics Library',['../group__SceGxm.html',1,'']]],
-  ['gxt_20files_20manipulation_20library',['GXT Files Manipulation Library',['../group__SceGxt.html',1,'']]]
+  ['fcntl_2eh',['fcntl.h',['../io_2fcntl_8h.html',1,'']]],
+  ['fcntl_2eh',['fcntl.h',['../ern_2io_2fcntl_8h.html',1,'']]],
+  ['fiber_2eh',['fiber.h',['../fiber_8h.html',1,'']]],
+  ['filesystem',['Filesystem',['../group__Filesystem.html',1,'']]],
+  ['flags',['flags',['../group__SceGxmUser.html#ga5d7bde36f2fbce511fd961b2dc0a68a6',1,'SceGxmRenderTargetParams::flags()'],['../group__SceGxtUser.html#ga87008c3b5a69ba63130135491d4556de',1,'SceGxtTextureInfo::flags()']]],
+  ['fnotifycallback',['fNotifyCallback',['../group__SceThreadMgrUser.html#ga1d15ee410a08b0b4f8ce0910a0df465b',1,'SceKernelThreadInfo']]],
+  ['force',['force',['../group__SceTouchUser.html#gae072da63b0a4253b6d05777911dd16a5',1,'SceTouchReport']]],
+  ['file_20control_20library',['File Control Library',['../group__SceFcntl.html',1,'']]],
+  ['fiber_20library',['Fiber Library',['../group__SceFiber.html',1,'']]],
+  ['file_20status_20library',['File Status Library',['../group__SceStat.html',1,'']]]
 ];

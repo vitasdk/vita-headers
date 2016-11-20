@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['fcntl_2eh',['fcntl.h',['../io_2fcntl_8h.html',1,'']]],
-  ['fcntl_2eh',['fcntl.h',['../ern_2io_2fcntl_8h.html',1,'']]],
-  ['fiber_2eh',['fiber.h',['../fiber_8h.html',1,'']]],
-  ['filesystem',['Filesystem',['../group__Filesystem.html',1,'']]],
-  ['flags',['flags',['../group__SceGxmUser.html#ga5d7bde36f2fbce511fd961b2dc0a68a6',1,'SceGxmRenderTargetParams::flags()'],['../group__SceGxtUser.html#ga87008c3b5a69ba63130135491d4556de',1,'SceGxtTextureInfo::flags()']]],
-  ['fnotifycallback',['fNotifyCallback',['../group__SceThreadMgrUser.html#ga1d15ee410a08b0b4f8ce0910a0df465b',1,'SceKernelThreadInfo']]],
-  ['force',['force',['../group__SceTouchUser.html#gae072da63b0a4253b6d05777911dd16a5',1,'SceTouchReport']]],
-  ['file_20control_20library',['File Control Library',['../group__SceFcntl.html',1,'']]],
-  ['fiber_20library',['Fiber Library',['../group__SceFiber.html',1,'']]],
-  ['file_20status_20library',['File Status Library',['../group__SceStat.html',1,'']]]
+  ['emptyparam',['emptyParam',['../group__SceAppUtilUser.html#ga579eae0cbdf9beb992506f24d78858ef',1,'SceAppUtilSaveDataSlot']]],
+  ['encoderversion',['encoderVersion',['../group__SceAudioencUser.html#ga9e68b409a66ebebbb6f951e74a4fee36',1,'SceAudioencOptInfoCelp']]],
+  ['enter_5fsyscall',['ENTER_SYSCALL',['../group__SceCPUKernel.html#gaa5b75a3c600994738e933102d28329e3',1,'cpu.h']]],
+  ['entry',['entry',['../group__SceThreadMgrUser.html#ga3ca76db6f243d1b628b21b1421a05582',1,'SceKernelThreadInfo']]],
+  ['error_2eh',['error.h',['../error_8h.html',1,'']]],
+  ['excitationmode',['excitationMode',['../group__SceAudioencUser.html#gafd9b4cbdc47b221217c7f99b6d562d1a',1,'SceAudioencInfoCelp']]],
+  ['exit_5fsyscall',['EXIT_SYSCALL',['../group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9',1,'cpu.h']]],
+  ['exitstatus',['exitStatus',['../group__SceThreadMgrUser.html#ga1cae3fc7c5ea6f075950689c4e1b2cb0',1,'SceKernelThreadInfo']]]
 ];

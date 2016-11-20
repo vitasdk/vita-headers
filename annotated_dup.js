@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "_sceNpDrmPackageDecrypt_opt", "npdrmpackage_8h.html#struct__sceNpDrmPackageDecrypt__opt", "npdrmpackage_8h_struct__sceNpDrmPackageDecrypt__opt" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
     [ "sceAppMgrLoadExecOptParam", "group__SceAppMgrUser.html#structsceAppMgrLoadExecOptParam", "group__SceAppMgrUser_structsceAppMgrLoadExecOptParam" ],

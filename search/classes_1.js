@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['photoexportparam',['PhotoExportParam',['../group__ScePhotoExportUser.html#structPhotoExportParam',1,'']]]
+  ['musicexportparam',['MusicExportParam',['../group__SceMusicExportUser.html#structMusicExportParam',1,'']]]
 ];

@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['iconbuf',['iconBuf',['../group__SceAppUtilUser.html#gae03e076ab91c2a61b360ce21f1c80621',1,'SceAppUtilSaveDataSlotEmptyParam']]],
-  ['iconbufsize',['iconBufSize',['../group__SceAppUtilUser.html#gacc90a5c01be82817605dd1ec31f14fae',1,'SceAppUtilSaveDataSlotEmptyParam']]],
-  ['iconpath',['iconPath',['../group__SceAppUtilUser.html#ga7d0630b99d616b3096c49b58008eadbb',1,'SceAppUtilSaveDataSlotEmptyParam::iconPath()'],['../group__SceAppUtilUser.html#ga688c67a1b184ec84034bd7daa77a3165',1,'SceAppUtilSaveDataSlotParam::iconPath()']]],
-  ['id',['id',['../group__SceAppUtilUser.html#ga9724ce66a0232fd2cec6ccd5b0f4f1da',1,'SceAppUtilSaveDataSlot::id()'],['../group__SceAppUtilUser.html#ga2ebd671d3f1ba36b26c4ca578567338f',1,'SceAppUtilStoreBrowseParam::id()'],['../group__SceTouchUser.html#ga7edfed3212f24f385c4dc15063cdc7dd',1,'SceTouchReport::id()']]],
-  ['ime_5fdialog_2eh',['ime_dialog.h',['../ime__dialog_8h.html',1,'']]],
-  ['info',['info',['../group__SceTouchUser.html#gaa5ed4e02f010dba620b6789034aaffef',1,'SceTouchReport']]],
-  ['initcount',['initCount',['../group__SceThreadMgrUser.html#gadfd8c09ff32bf0047269054e9d032c87',1,'SceKernelSemaInfo::initCount()'],['../group__SceThreadMgrUser.html#gacb357f408aa6ec60103b8ac4d6381fe6',1,'SceKernelMutexInfo::initCount()']]],
-  ['initcpuaffinitymask',['initCpuAffinityMask',['../group__SceThreadMgrUser.html#ga6768fb899917a948529958afef5d9e5f',1,'SceKernelThreadInfo']]],
-  ['initpriority',['initPriority',['../group__SceThreadMgrUser.html#gaca89b4d1d6e9c6a5b932a510b41c899a',1,'SceKernelThreadInfo']]],
-  ['input',['Input',['../group__Input.html',1,'']]],
-  ['inputessize',['inputEsSize',['../group__SceAudiodecUser.html#ga9ac42c69918b0cb41ee1d4de9c493932',1,'SceAudiodecCtrl']]],
-  ['inputpcmsize',['inputPcmSize',['../group__SceAudioencUser.html#gaff2833cf4249b601249d23437a78c5a4',1,'SceAudioencCtrl']]],
-  ['intrpreemptcount',['intrPreemptCount',['../group__SceThreadMgrUser.html#ga6aca98c6db3c1f55abb43588f98ea548',1,'SceKernelThreadInfo']]],
-  ['ime_20dialog_20library',['Ime Dialog Library',['../group__SceIme.html',1,'']]]
+  ['handle',['handle',['../group__SceAudioencUser.html#gaddb3588f2f5628c9957131de455c0f02',1,'SceAudioencCtrl']]],
+  ['header',['header',['../group__SceAudioencUser.html#gad0352b837f2cd1b3d51f472b76f7464e',1,'SceAudioencOptInfoCelp']]],
+  ['headersize',['headerSize',['../group__SceAudioencUser.html#ga3087182f030eb83483ba95ef0543a4f7',1,'SceAudioencOptInfoCelp']]],
+  ['headingvectorx',['headingVectorX',['../group__SceLocationUser.html#gab787f06246360da95fe7921d2b283d85',1,'SceLocationHeadingInfo']]],
+  ['headingvectory',['headingVectorY',['../group__SceLocationUser.html#ga8bd80a2e7056863a3674af6692126716',1,'SceLocationHeadingInfo']]],
+  ['headingvectorz',['headingVectorZ',['../group__SceLocationUser.html#ga67ce7f9de0879ac9059163004b7e4162',1,'SceLocationHeadingInfo']]],
+  ['height',['height',['../group__SceDisplayUser.html#gacf6c5759f48d231bd31415cbe552ca3d',1,'SceDisplayFrameBuf::height()'],['../group__SceGxmUser.html#ga28ed28a19c12fc9541c0d656e8bf9a08',1,'SceGxmAuxiliarySurface::height()'],['../group__SceGxmUser.html#ga89cac9234de02e899a0954c87d9cd6ba',1,'SceGxmRenderTargetParams::height()']]],
+  ['http_2eh',['http.h',['../http_8h.html',1,'']]],
+  ['hyper_20text_20transfer_20protocol_20library',['Hyper Text Transfer Protocol Library',['../group__SceHttp.html',1,'']]]
 ];

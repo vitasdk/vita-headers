@@ -2,12 +2,12 @@ var pgf_8h =
 [
     [ "SceFontHandle", "group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea", null ],
     [ "SceFontLibHandle", "group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454", null ],
-    [ "SCE_FONT_ERROR_OUT_OF_MEMORY", "group__ScePgfUser.html#gga4b4213b1f9d54da7c7e36bde32fc7c80a13ef4ce7513694c50d3fefe6ad822732", null ],
-    [ "SCE_FONT_ERROR_INVALID_LIBID", "group__ScePgfUser.html#gga4b4213b1f9d54da7c7e36bde32fc7c80a1e3f805ac7261ba18dd1817c7128f3a2", null ],
-    [ "SCE_FONT_ERROR_INVALID_PARAMETER", "group__ScePgfUser.html#gga4b4213b1f9d54da7c7e36bde32fc7c80aa3018271fd8eb0bb95f5acd91453f20a", null ],
-    [ "SCE_FONT_ERROR_HANDLER_OPEN_FAILED", "group__ScePgfUser.html#gga4b4213b1f9d54da7c7e36bde32fc7c80a1d72041ee5043f10221a1b21634c0d92", null ],
-    [ "SCE_FONT_ERROR_TOO_MANY_OPEN_FONTS", "group__ScePgfUser.html#gga4b4213b1f9d54da7c7e36bde32fc7c80a02003a080dfb1d0561a87a3936ce0861", null ],
-    [ "SCE_FONT_ERROR_INVALID_FONT_DATA", "group__ScePgfUser.html#gga4b4213b1f9d54da7c7e36bde32fc7c80a5a3318f536ea810ad7a5d2a1175af1c9", null ],
+    [ "SCE_FONT_ERROR_OUT_OF_MEMORY", "group__ScePgfUser.html#ggaa491173a6b1628f4ff82067b2e1ceaa9a13ef4ce7513694c50d3fefe6ad822732", null ],
+    [ "SCE_FONT_ERROR_INVALID_LIBID", "group__ScePgfUser.html#ggaa491173a6b1628f4ff82067b2e1ceaa9a1e3f805ac7261ba18dd1817c7128f3a2", null ],
+    [ "SCE_FONT_ERROR_INVALID_PARAMETER", "group__ScePgfUser.html#ggaa491173a6b1628f4ff82067b2e1ceaa9aa3018271fd8eb0bb95f5acd91453f20a", null ],
+    [ "SCE_FONT_ERROR_HANDLER_OPEN_FAILED", "group__ScePgfUser.html#ggaa491173a6b1628f4ff82067b2e1ceaa9a1d72041ee5043f10221a1b21634c0d92", null ],
+    [ "SCE_FONT_ERROR_TOO_MANY_OPEN_FONTS", "group__ScePgfUser.html#ggaa491173a6b1628f4ff82067b2e1ceaa9a02003a080dfb1d0561a87a3936ce0861", null ],
+    [ "SCE_FONT_ERROR_INVALID_FONT_DATA", "group__ScePgfUser.html#ggaa491173a6b1628f4ff82067b2e1ceaa9a5a3318f536ea810ad7a5d2a1175af1c9", null ],
     [ "SceFontFamilyCode", "group__ScePgfUser.html#ga132b2b5c6a8ce994bc16ee5bef11f2ef", [
       [ "SCE_FONT_FAMILY_DEFAULT", "group__ScePgfUser.html#gga132b2b5c6a8ce994bc16ee5bef11f2efa20f4deaa4a410d8442fbf30efd0a67db", null ],
       [ "SCE_FONT_FAMILY_SANS_SERIF", "group__ScePgfUser.html#gga132b2b5c6a8ce994bc16ee5bef11f2efad5b16f0110ed599fbfb6c155d6ed2399", null ],

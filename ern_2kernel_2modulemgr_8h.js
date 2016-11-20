@@ -13,9 +13,14 @@ var ern_2kernel_2modulemgr_8h =
     [ "sceKernelGetSystemSwVersion", "group__SceModulemgrKernel.html#ga31a1b23ed8dbee2a197bcaaea296c327", null ],
     [ "sceKernelLoadModuleForDriver", "group__SceModulemgrKernel.html#ga5c37a8361008affda98528ae4c7a93e7", null ],
     [ "sceKernelLoadModuleForPid", "group__SceModulemgrKernel.html#ga94589061b2b43f00c2d0174534031059", null ],
+    [ "sceKernelLoadStartModuleForDriver", "group__SceModulemgrKernel.html#ga94003a37d62b145ee14e33ea24b1e68d", null ],
     [ "sceKernelLoadStartModuleForPid", "group__SceModulemgrKernel.html#ga81350290677bc670e8c4bbf95f09c9f5", null ],
     [ "sceKernelLoadStartSharedModuleForPid", "group__SceModulemgrKernel.html#ga57b98a7d98de1d102372b41d3ea10860", null ],
     [ "sceKernelStartModuleForDriver", "group__SceModulemgrKernel.html#ga9367ddcb3c2d576c7d771f743e1dc078", null ],
+    [ "sceKernelStopModuleForDriver", "group__SceModulemgrKernel.html#ga5bbea8878c8967d470949981643adf18", null ],
+    [ "sceKernelStopModuleForPid", "group__SceModulemgrKernel.html#ga448d2510f9d47511a5588ae50dfbe1de", null ],
     [ "sceKernelStopUnloadModuleForDriver", "group__SceModulemgrKernel.html#gaa055e1f46bb8b29852f3c468c57ece67", null ],
-    [ "sceKernelUnloadModuleForDriver", "group__SceModulemgrKernel.html#ga00217a809dbbf63209690c4da95da936", null ]
+    [ "sceKernelStopUnloadModuleForPid", "group__SceModulemgrKernel.html#ga6d085fc0b5de0341a2dc95834725445b", null ],
+    [ "sceKernelUnloadModuleForDriver", "group__SceModulemgrKernel.html#ga654976b93783d0697d5f58dbbeccac46", null ],
+    [ "sceKernelUnloadModuleForPid", "group__SceModulemgrKernel.html#ga69652d5bb3f0feb7a716c0589943e3da", null ]
 ];

@@ -41,6 +41,6 @@ var types_8h =
     [ "SceVoid", "group__SceTypesUser.html#ga3c8a0746fb1e68de4a180ba16ab4c134", null ],
     [ "SceWChar16", "group__SceTypesUser.html#gaca550defc27d041b849d9ef72e040595", null ],
     [ "SceWChar32", "group__SceTypesUser.html#gabaf29f46fe41a7ce15cb04bd0d15b063", null ],
-    [ "SCE_FALSE", "group__SceTypesUser.html#gga0b887f38fa71033f0904f8e2330b6815a905def7c2528ee21e546716ec3ea247b", null ],
-    [ "SCE_TRUE", "group__SceTypesUser.html#gga0b887f38fa71033f0904f8e2330b6815a8b45ff35248ec8024afcb466484107c0", null ]
+    [ "SCE_FALSE", "group__SceTypesUser.html#gga84fe57ba52f8e237004a413b27ea4db8a905def7c2528ee21e546716ec3ea247b", null ],
+    [ "SCE_TRUE", "group__SceTypesUser.html#gga84fe57ba52f8e237004a413b27ea4db8a8b45ff35248ec8024afcb466484107c0", null ]
 ];
