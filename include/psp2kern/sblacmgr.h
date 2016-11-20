@@ -23,10 +23,10 @@
 extern "C" {
 #endif
 
-int sceSblACMgrIsShell(SceUID pid);
-int sceSblACMgrIsGameProgram(SceUID pid);
-int sceSblACMgrIsNonGameProgram(SceUID pid);
-int sceSblACMgrIsDevelopmentMode(void);
+int ksceSblACMgrIsShell(SceUID pid);
+int ksceSblACMgrIsGameProgram(SceUID pid);
+int ksceSblACMgrIsNonGameProgram(SceUID pid);
+int ksceSblACMgrIsDevelopmentMode(void);
 
 #ifdef __cplusplus
 }

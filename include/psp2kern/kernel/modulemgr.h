@@ -88,25 +88,25 @@ typedef struct
   SceUInt unk_24;
 } SceKernelFwInfo;
 
-int sceKernelGetModuleListForKernel(SceUID pid, int flags1, int flags2, SceUID *modids, size_t *num);
-int sceKernelGetModuleInfoForKernel(SceUID pid, SceUID modid, SceKernelModuleInfo *info);
-int sceKernelGetModuleInternal(SceUID modid, void **module);
+int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, size_t *num);
+int ksceKernelGetModuleInfo(SceUID pid, SceUID modid, SceKernelModuleInfo *info);
+int ksceKernelGetModuleInternal(SceUID modid, void **module);
 
-int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
+int ksceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 
-int sceKernelLoadStartModuleForDriver(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
-SceUID sceKernelLoadModuleForDriver(const char *path, int flags, SceKernelLMOption *option);
-int sceKernelStartModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
-int sceKernelUnloadModuleForDriver(SceUID modid, int flags, SceKernelULMOption *option);
-int sceKernelStopModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
-int sceKernelStopUnloadModuleForDriver(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadModule(const char *path, int flags, SceKernelLMOption *option);
+int ksceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+int ksceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
+int ksceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
-SceUID sceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
-SceUID sceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
-SceUID sceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKernelLMOption *option);
-SceUID sceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelULMOption *option);
-int sceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
-int sceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+SceUID ksceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKernelLMOption *option);
+SceUID ksceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelULMOption *option);
+int ksceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 #ifdef __cplusplus
 }

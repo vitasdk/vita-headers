@@ -47,7 +47,7 @@ extern "C" {
  *
  * @param      context  The context
  */
-static inline void sceKernelCpuSaveContext(int context[3]) {
+static inline void ksceKernelCpuSaveContext(int context[3]) {
   asm ("mrc p15, 0, %0, c2, c0, 1" : "=r" (context[0]));
   asm ("mrc p15, 0, %0, c3, c0, 0" : "=r" (context[1]));
   asm ("mrc p15, 0, %0, c13, c0, 1" : "=r" (context[2]));
@@ -56,9 +56,9 @@ static inline void sceKernelCpuSaveContext(int context[3]) {
 /**
  * @brief      Restore process context
  *
- * @param      context  The context, can be from `sceKernelGetPidContext`
+ * @param      context  The context, can be from `ksceKernelGetPidContext`
  */
-static inline void sceKernelCpuRestoreContext(int context[3]) {
+static inline void ksceKernelCpuRestoreContext(int context[3]) {
   int cpsr;
   int tmp;
 
@@ -84,7 +84,7 @@ static inline void sceKernelCpuRestoreContext(int context[3]) {
  *
  * @return     Interrupt masks before disabling
  */
-int sceKernelCpuDisableInterrupts(void);
+int ksceKernelCpuDisableInterrupts(void);
 
 /**
  * @brief      Enable interrupts
@@ -93,7 +93,7 @@ int sceKernelCpuDisableInterrupts(void);
  *
  * @return     Zero on success
  */
-int sceKernelCpuEnableInterrupts(int flags);
+int ksceKernelCpuEnableInterrupts(int flags);
 
 /**
  * @brief      Flush L1 dcache and L2
@@ -105,7 +105,7 @@ int sceKernelCpuEnableInterrupts(int flags);
  *
  * @return     Zero on success
  */
-int sceKernelCpuDcacheAndL2Flush(void *ptr, size_t len);
+int ksceKernelCpuDcacheAndL2Flush(void *ptr, size_t len);
 
 /**
  * @brief      Flush L2 dcache without L2
@@ -115,7 +115,7 @@ int sceKernelCpuDcacheAndL2Flush(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int sceKernelCpuDcacheFlush(void *ptr, size_t len);
+int ksceKernelCpuDcacheFlush(void *ptr, size_t len);
 
 /**
  * @brief      Flush L1 icache and L2
@@ -125,7 +125,7 @@ int sceKernelCpuDcacheFlush(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int sceKernelCpuIcacheAndL2Flush(void *ptr, size_t len);
+int ksceKernelCpuIcacheAndL2Flush(void *ptr, size_t len);
 
 /**
  * @brief      Flush L1 dcache and L2 for DMA operations
@@ -135,7 +135,7 @@ int sceKernelCpuIcacheAndL2Flush(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int sceKernelCpuDcacheAndL2AndDMAFlush(void *ptr, size_t len);
+int ksceKernelCpuDcacheAndL2AndDMAFlush(void *ptr, size_t len);
 
 /**
  * @brief      MMU permission bypassing memcpy
@@ -148,7 +148,7 @@ int sceKernelCpuDcacheAndL2AndDMAFlush(void *ptr, size_t len);
  *
  * @return     Zero on success.
  */
-int sceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, size_t len);
+int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, size_t len);
 
 #ifdef __cplusplus
 }

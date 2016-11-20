@@ -101,7 +101,7 @@ enum {
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID sceKernelAllocMemBlockForKernel(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockKernelOpt *optp);
+SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockKernelOpt *optp);
 
 /***
  * Frees new memoy block
@@ -110,7 +110,7 @@ SceUID sceKernelAllocMemBlockForKernel(const char *name, SceKernelMemBlockType t
  *
  * @return 0 on success, < 0 on error.
 */
-int sceKernelFreeMemBlockForKernel(SceUID uid);
+int ksceKernelFreeMemBlock(SceUID uid);
 
 /***
  * Gets the base address of a memoy block
@@ -120,21 +120,21 @@ int sceKernelFreeMemBlockForKernel(SceUID uid);
  *
  * @return 0 on success, < 0 on error.
 */
-int sceKernelGetMemBlockBaseForKernel(SceUID uid, void **basep);
+int ksceKernelGetMemBlockBase(SceUID uid, void **basep);
 
-SceUID sceKernelMemPoolCreate(const char *name, SceSize size, SceKernelMemPoolCreateOpt *opt);
-int sceKernelMemPoolDestroy(SceUID pool);
-void *sceKernelMemPoolAlloc(SceUID pool, SceSize size);
-void sceKernelMemPoolFree(SceUID pool, void *ptr);
+SceUID ksceKernelMemPoolCreate(const char *name, SceSize size, SceKernelMemPoolCreateOpt *opt);
+int ksceKernelMemPoolDestroy(SceUID pool);
+void *ksceKernelMemPoolAlloc(SceUID pool, SceSize size);
+void ksceKernelMemPoolFree(SceUID pool, void *ptr);
 
-int sceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
-int sceKernelMemcpyUserToKernel(void *dst, uintptr_t src, size_t len);
-int sceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, size_t len);
-int sceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, size_t len);
+int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
+int ksceKernelMemcpyUserToKernel(void *dst, uintptr_t src, size_t len);
+int ksceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, size_t len);
+int ksceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, size_t len);
 
-int sceKernelStrncpyUserToKernel(void *dst, uintptr_t src, size_t len);
-int sceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, size_t len);
-int sceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
+int ksceKernelStrncpyUserToKernel(void *dst, uintptr_t src, size_t len);
+int ksceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, size_t len);
+int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
 
 typedef struct {
   char data[0x2C];
@@ -144,24 +144,24 @@ typedef struct {
   uint32_t sce_reserved[2];
 } SceObjectBase;
 
-SceUID sceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
-SceUID sceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
-SceUID sceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
-int sceKernelGetObjForUid(SceUID uid, SceClass *cls, SceObjectBase **obj);
-SceClass *sceKernelGetUidClass(void);
+SceUID ksceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
+SceUID ksceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
+SceUID ksceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
+int ksceKernelGetObjForUid(SceUID uid, SceClass *cls, SceObjectBase **obj);
+SceClass *ksceKernelGetUidClass(void);
 typedef int (*SceClassCallback)(void *item);
-int sceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, size_t itemsize, SceClassCallback create, SceClassCallback destroy);
-int sceKernelDeleteUserUid(SceUID pid, SceUID user_uid);
-int sceKernelDeleteUid(SceUID uid);
+int ksceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, size_t itemsize, SceClassCallback create, SceClassCallback destroy);
+int ksceKernelDeleteUserUid(SceUID pid, SceUID user_uid);
+int ksceKernelDeleteUid(SceUID uid);
 
-int sceKernelSwitchVmaForPid(SceUID pid);
+int ksceKernelSwitchVmaForPid(SceUID pid);
 
-void *sceKernelGetSysrootBuffer(void);
-int sceKernelGetPidContext(SceUID pid, int **ctx);
+void *ksceKernelGetSysrootBuffer(void);
+int ksceKernelGetPidContext(SceUID pid, int **ctx);
 
-int sceKernelGetProcessTitleIdForKernel(SceUID pid, char *titleid, size_t len);
+int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, size_t len);
 
-int sceKernelMapBlockUserVisible(SceUID uid);
+int ksceKernelMapBlockUserVisible(SceUID uid);
 
 #ifdef __cplusplus
 }
