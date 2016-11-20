@@ -11,4 +11,4 @@ This repository contains all Vita headers needed for development.
 
 ## Documentation
 
-The documentation is rebuilt every time a commit is pushed to master and it is hosted at the following address: http://vitasdk.github.com/vita-headers
+The documentation is rebuilt every time a commit is pushed to master and it is hosted at the following address: http://vitasdk.github.io/vita-headers
