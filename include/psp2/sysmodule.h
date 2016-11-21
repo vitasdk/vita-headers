@@ -90,9 +90,17 @@ enum {
 	SCE_SYSMODULE_AVPLAYER              = 0x004c
 };
 
+/* internal module IDs */
+enum {
+	SCE_SYSMODULE_PROMOTER_UTIL         = 0x80000024
+};
+
 int sceSysmoduleLoadModule(SceUInt16 id);
 int sceSysmoduleUnloadModule(SceUInt16 id);
 int sceSysmoduleIsLoaded(SceUInt16 id);
+int sceSysmoduleLoadModuleInternal(SceUInt32 id);
+int sceSysmoduleUnloadModuleInternal(SceUInt32 id);
+int sceSysmoduleIsLoadedInternal(SceUInt32 id);
 
 #ifdef __cplusplus
 }
