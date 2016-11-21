@@ -16,7 +16,7 @@ int scePromoterUtilityInit(void);
 int scePromoterUtilityExit(void);
 int scePromoterUtilityDeletePkg(void *unk);
 int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
-int scePromoterUtilityPromotePkg(char *path, int unk);
+int scePromoterUtilityPromotePkg(const char *path, int unk);
 int scePromoterUtilityPromotePkgWithRif(const char *path, int unk);
 int scePromoterUtilityGetState(int *state);
 int scePromoterUtilityGetResult(int *res);
