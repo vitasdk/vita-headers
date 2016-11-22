@@ -102,6 +102,7 @@ int sceSysmoduleIsLoaded(SceUInt16 id);
 int sceSysmoduleLoadModuleInternal(SceUInt32 id);
 int sceSysmoduleUnloadModuleInternal(SceUInt32 id);
 int sceSysmoduleIsLoadedInternal(SceUInt32 id);
+int sceSysmoduleLoadModuleInternalWithArg(SceUInt32 id, SceSize args, void *argp, void *unk);
 
 #ifdef __cplusplus
 }
