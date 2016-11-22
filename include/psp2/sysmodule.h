@@ -92,6 +92,7 @@ enum {
 
 /* internal module IDs */
 enum {
+	SCE_SYSMODULE_PAF                   = 0x80000008,
 	SCE_SYSMODULE_PROMOTER_UTIL         = 0x80000024
 };
 
