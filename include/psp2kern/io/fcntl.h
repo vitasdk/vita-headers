@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceFcntl}
+ * \usage{psp2kern/io/fcntl.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which defines file control options
  *
@@ -328,3 +333,4 @@ int sceIoSetAsyncCallbackForDriver(SceUID fd, SceUID cb, void *argp);
 #endif
 
 #endif /* _PSP2_IO_FCNTL_H_ */
+

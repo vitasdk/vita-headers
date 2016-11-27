@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceCLib}
+ * \usage{psp2/kernel/clib.h,-lSceKernel_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines sceClib functions
  *
@@ -40,3 +45,4 @@ void *sceClibMemmove(void *, const void *, SceSize);
 #endif
 
 #endif /* _PSP2_KERNEL_CLIB_H_ */
+

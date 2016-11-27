@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceMotion}
+ * \usage{psp2/motion.h,-lSceMotion_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines motion variables and functions
  *
@@ -70,3 +75,4 @@ int sceMotionStopSampling(void);
 #endif
 
 #endif /* _PSP2_MOTION_H_ */
+

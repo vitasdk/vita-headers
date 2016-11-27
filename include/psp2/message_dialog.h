@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceMessageDialog}
+ * \usage{psp2/message_dialog.h,-lSceCommonDialog_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines message dialog functions
  *
@@ -209,3 +214,4 @@ int sceMsgDialogProgressBarSetMsg( SceMsgDialogProgressBarTarget target, const S
 #endif
 
 #endif
+

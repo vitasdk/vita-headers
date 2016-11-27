@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceSqlite}
+ * \usage{psp2/sqlite.h,-lSceSqlite_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines sqlite related variables and functions
  *
@@ -36,3 +41,4 @@ int sceSqliteConfigMallocMethods(SceSqliteMallocMethods* methods);
 #endif
 
 #endif /* _PSP2_SQLITE_H_ */
+

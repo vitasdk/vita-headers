@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceStat}
+ * \usage{psp2/io/stat.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which describes file structures
  *
@@ -162,3 +167,4 @@ int sceIoChstat(const char *file, SceIoStat *stat, int bits);
 #endif
 
 #endif /* _PSP2_IO_STAT_H_ */
+

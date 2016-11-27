@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceKernelError}
+ * \usage{psp2/kernel/error.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which defines kernel errors
  *
@@ -332,3 +337,4 @@ enum {
 };
 
 #endif
+

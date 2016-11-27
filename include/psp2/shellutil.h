@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceShellSvc}
+ * \usage{psp2/shellutil.h,-lSceShellSvc_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines shell utils
  *
@@ -81,3 +86,4 @@ int sceShellUtilUnlock(int type);
 #endif
 
 #endif /* _PSP2_SHELLUTIL_H_ */
+

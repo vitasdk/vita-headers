@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceHttp}
+ * \usage{psp2/net/http.h,-lSceHttp_stub}
+ */
+
+/**
  * \file
  * \brief Header file related to HTTP
  *
@@ -351,3 +356,4 @@ int sceHttpSetCookieSendCallback(int id, SceHttpCookieSendCallback cbfunc, void 
 #endif
 
 #endif /* _PSP2_NET_HTTP_H_ */
+

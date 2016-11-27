@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceNetCtl}
+ * \usage{psp2/net/netctl.h,-lSceNetCtl_stub}
+ */
+
+/**
  * \file
  * \brief Header file related to net control
  *
@@ -130,3 +135,4 @@ int sceNetCtlAdhocGetInAddr(SceNetInAddr *inaddr);
 #endif
 
 #endif /* _PSP2_NET_CTL_H_ */
+

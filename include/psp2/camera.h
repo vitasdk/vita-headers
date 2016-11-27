@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceCamera}
+ * \usage{psp2/camera.h,-lSceCamera_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines camera related variables and functions
  *
@@ -120,3 +125,4 @@ int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 #endif
 
 #endif /* _PSP2_CAMERA_H_ */
+

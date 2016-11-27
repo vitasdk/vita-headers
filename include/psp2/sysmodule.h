@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceSysmodule}
+ * \usage{psp2/sysmodule.h,-lSceSysmodule_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines system modules related variables and functions
  *
@@ -94,3 +99,4 @@ int sceSysmoduleIsLoaded(SceUInt16 id);
 #endif
 
 #endif /* _PSP2_SYSMODULE_H_ */
+

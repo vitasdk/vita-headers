@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceFiber}
+ * \usage{psp2/fiber.h,-lSceFiber_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines SceFiber variables and functions
  *
@@ -73,3 +78,4 @@ SceInt32 sceFiberGetInfo(SceFiber* fiber, SceFiberInfo* fiberInfo);
 }
 #endif
 #endif
+

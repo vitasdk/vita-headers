@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceScreenshot}
+ * \usage{psp2/screenshot.h,-lSceScreenShot_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines output audio related variables and functions
  *
@@ -72,3 +77,4 @@ int sceScreenshotEnable(void);
 #endif
 
 #endif /* _PSP2_SCREENSHOT_H_ */
+

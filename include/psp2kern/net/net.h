@@ -1,9 +1,4 @@
 /**
- * \usergroup{SceNet}
- * \usage{psp2/net/net.h,-lSceNet_stub}
- */
-
-/**
  * \file
  * \brief Header file related to net
  *
@@ -13,8 +8,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-#ifndef _PSP2_NET_NET_H_
-#define _PSP2_NET_NET_H_
+#ifndef _PSP2_KERNEL_NET_NET_H_
+#define _PSP2_KERNEL_NET_NET_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -711,78 +706,23 @@ typedef struct SceNetIcmpHeader {
 
 /* prototypes */
 
-int sceNetInit(SceNetInitParam *param);
-int sceNetTerm(void);
+int sceNetSocketForDriver(const char *name, int domain, int type, int protocol);
+int sceNetAcceptForDriver(int s, SceNetSockaddr *addr, unsigned int *addrlen);
+int sceNetBindForDriver(int s, const SceNetSockaddr *addr, unsigned int addrlen);
+int sceNetListenForDriver(int s, int backlog);
+int sceNetRecvForDriver(int s, void *buf, unsigned int len, int flags);
+int sceNetRecvfromForDriver(int s, void *buf, unsigned int len, int flags, SceNetSockaddr *from, unsigned int *fromlen);
+int sceNetSendForDriver(int s, const void *msg, unsigned int len, int flags);
+int sceNetSendtoForDriver(int s, const void *msg, unsigned int len, int flags, const SceNetSockaddr *to, unsigned int tolen);
+int sceNetSetsockoptForDriver(int s, int level, int optname, const void *optval, unsigned int optlen);
+int sceNetSocketCloseForDriver(int s);
 
-int sceNetShowIfconfig(void *p, int b);
-int sceNetShowRoute(void);
-int sceNetShowNetstat(void);
-
-int sceNetEmulationSet(SceNetEmulationParam *param, int flags);
-int sceNetEmulationGet(SceNetEmulationParam *param, int flags);
-
-int sceNetResolverCreate(const char *name, SceNetResolverParam *param, int flags);
-int sceNetResolverStartNtoa(int rid, const char *hostname, SceNetInAddr *addr, int timeout, int retry, int flags);
-int sceNetResolverStartAton(int rid, const SceNetInAddr *addr, char *hostname, int len, int timeout, int retry, int flags);
-int sceNetResolverGetError(int rid, int *result);
-int sceNetResolverDestroy(int rid);
-int sceNetResolverAbort(int rid, int flags);
-
-int sceNetDumpCreate(const char *name, int len, int flags);
-int sceNetDumpRead(int id, void *buf, int len, int *pflags);
-int sceNetDumpDestroy(int id);
-int sceNetDumpAbort(int id, int flags);
-int sceNetEpollCreate(const char *name, int flags);
-int sceNetEpollControl(int eid, int op, int id,SceNetEpollEvent *event);
-int sceNetEpollWait(int eid, SceNetEpollEvent *events, int maxevents, int timeout);
-int sceNetEpollWaitCB(int eid, SceNetEpollEvent *events, int maxevents, int timeout);
-int sceNetEpollDestroy(int eid);
-int sceNetEpollAbort(int eid, int flags);
-
-int sceNetEtherStrton(const char *str, SceNetEtherAddr *n);
-int sceNetEtherNtostr(const SceNetEtherAddr *n, char *str, unsigned int len);
-int sceNetGetMacAddress(SceNetEtherAddr *addr, int flags);
-
-int sceNetSocket(const char *name, int domain, int type, int protocol);
-int sceNetAccept(int s, SceNetSockaddr *addr, unsigned int *addrlen);
-int sceNetBind(int s, const SceNetSockaddr *addr, unsigned int addrlen);
-int sceNetConnect(int s, const SceNetSockaddr *name, unsigned int namelen);
-int sceNetGetpeername(int s, SceNetSockaddr *name, unsigned int *namelen);
-int sceNetGetsockname(int s, SceNetSockaddr *name, unsigned int *namelen);
-int sceNetGetsockopt(int s, int level, int optname, void *optval, unsigned int *optlen);
-int sceNetListen(int s, int backlog);
-int sceNetRecv(int s, void *buf, unsigned int len, int flags);
-int sceNetRecvfrom(int s, void *buf, unsigned int len, int flags, SceNetSockaddr *from, unsigned int *fromlen);
-int sceNetRecvmsg(int s, SceNetMsghdr *msg, int flags);
-int sceNetSend(int s, const void *msg, unsigned int len, int flags);
-int sceNetSendto(int s, const void *msg, unsigned int len, int flags, const SceNetSockaddr *to, unsigned int tolen);
-int sceNetSendmsg(int s, const SceNetMsghdr *msg, int flags);
-int sceNetSetsockopt(int s, int level, int optname, const void *optval, unsigned int optlen);
-int sceNetShutdown(int s, int how);
-int sceNetSocketClose(int s);
-int sceNetSocketAbort(int s, int flags);
-int sceNetGetSockInfo(int s, SceNetSockInfo *info, int n, int flags);
-int sceNetGetSockIdInfo(SceNetFdSet *fds, int sockinfoflags, int flags);
-int sceNetGetStatisticsInfo(SceNetStatisticsInfo *info, int flags);
-
-int sceNetSetDnsInfo(SceNetDnsInfo *info, int flags);
-int sceNetClearDnsCache(int flags);
-
-const char *sceNetInetNtop(int af,const void *src,char *dst,unsigned int size);
-int sceNetInetPton(int af, const char *src, void *dst);
-
-//TODO : create BSD aliases ?
-
-long long unsigned int sceNetHtonll(unsigned long long int host64);
-unsigned int sceNetHtonl(unsigned int host32);
-unsigned short int sceNetHtons(unsigned short int host16);
-unsigned long long int sceNetNtohll(unsigned long long int net64);
-unsigned int sceNetNtohl(unsigned int net32);
-unsigned short int sceNetNtohs(unsigned short int net16);
+/* fixme ? */
+#define sceNetHtonsForDriver __builtin_bswap16
+#define sceNetHtonlForDriver __builtin_bswap32
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* _PSP2_NET_NET_H_ */
-
+#endif /* _PSP2_KERNEL_NET_NET_H_ */

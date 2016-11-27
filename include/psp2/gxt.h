@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceGxt}
+ * \usage{psp2/gxt.h,?}
+ */
+
+/**
  * @file gxt.h
  * @brief Header file which defines GXT variables and functions
  *
@@ -115,3 +120,4 @@ SceGxtErrorCode sceGxtSetPalette(SceGxmTexture *texture,
 #endif
 
 #endif /* _PSP2_GXT_H_ */
+

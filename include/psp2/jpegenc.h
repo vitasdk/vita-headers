@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceJpegEnc}
+ * \usage{psp2/jpegenc.h,-lSceJpegEnc_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines native jpeg encoder related variables and functions
  *
@@ -108,3 +113,4 @@ SceUID sceJpegEncoderGetContextSize(void);
 SceUID sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int inHeight);
 
 #endif
+

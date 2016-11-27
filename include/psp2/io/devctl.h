@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceDevCtl}
+ * \usage{psp2/io/devctl.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which defines device control options
  *
@@ -95,3 +100,4 @@ int sceIoIoctlAsync(SceUID fd, unsigned int cmd, void *indata, int inlen, void *
 #endif
 
 #endif /* _PSP2_IO_DEVCTRL_H_ */
+

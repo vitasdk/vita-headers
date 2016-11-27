@@ -1,4 +1,9 @@
 /**
+ * \usergroup{ScePss}
+ * \usage{psp2/pss.h,-lSceLibMonoBridge_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines functions of SceLibMonoBridge
  *
@@ -28,3 +33,4 @@ void pss_code_mem_unlock(void);
 #endif
 
 #endif /* _PSP2_PSS_H_ */
+

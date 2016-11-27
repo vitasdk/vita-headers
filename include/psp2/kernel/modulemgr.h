@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceModulemgr}
+ * \usage{psp2/kernel/modulemgr.h,-lSceKernel_stub}
+ */
+
+/**
  * \file
  * \brief Header file related to module management
  *
@@ -99,3 +104,4 @@ int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 #endif
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
+

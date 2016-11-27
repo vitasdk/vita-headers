@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceLibSsl}
+ * \usage{psp2/libssl.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which defines SSL variables and functions
  *
@@ -54,3 +59,4 @@ int sceSslFreeSslCertName(SceSslCertName* certName);
 }
 #endif
 #endif
+

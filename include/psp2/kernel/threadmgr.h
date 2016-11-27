@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceThreadMgr}
+ * \usage{psp2/kernel/threadmgr.h,-lSceKernel_stub}
+ */
+
+/**
  * \file
  * \brief Header file related to thread management
  *
@@ -1057,3 +1062,4 @@ void *sceKernelGetTLSAddr(int key);
 #endif
 
 #endif /* _PSP2_KERNEL_THREADMGR_H_ */
+

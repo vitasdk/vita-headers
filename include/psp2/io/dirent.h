@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceDirEnt}
+ * \usage{psp2/io/dirent.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which describes the directory entry struct
  *
@@ -71,3 +76,4 @@ int sceIoDclose(SceUID fd);
 #endif
 
 #endif /* _PSP2_IO_DRENT_H_ */
+

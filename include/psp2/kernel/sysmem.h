@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceSysmem}
+ * \usage{psp2/kernel/sysmem.h,-lSceSysmem_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines memory related variables and functions
  *
@@ -122,3 +127,4 @@ int sceKernelGetModel();
 #endif
 
 #endif
+

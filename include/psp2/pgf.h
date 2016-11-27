@@ -1,4 +1,9 @@
 /**
+ * \usergroup{ScePgf}
+ * \usage{psp2/pgf.h,-lScePgf_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines font (PGF) variables and functions
  *
@@ -254,3 +259,4 @@ int sceFontFlush(SceFontHandle fontHandle);
 #endif
 
 #endif /* _PSP2_PGF_H_ */
+

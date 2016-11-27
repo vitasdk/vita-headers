@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceSysmem}
+ * \usage{psp2kern/kernel/sysmem.h,?}
+ */
+
+/**
  * \file
  * \brief Header file which defines memory related variables and functions
  *
@@ -163,3 +168,4 @@ int sceKernelMapBlockUserVisible(SceUID uid);
 #endif
 
 #endif
+

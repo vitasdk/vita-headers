@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceRtc}
+ * \usage{psp2/rtc.h,-lSceRtc_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines RTC variables and functions
  *
@@ -169,3 +174,4 @@ static inline int sceRtcSetMicrosecond(SceDateTime *time, int microsecond){
 #endif
 
 #endif /* _PSP2_RTC_H_ */
+

@@ -3385,6 +3385,28 @@
         }, 
         "nid": 105
     }, 
+    "SceNetPs": {
+        "nid": 1518062810,
+        "modules": {
+            "SceNetPsForDriver": {
+                "kernel": true,
+                "nid": 2997209376,
+                "variables": {},
+                "functions": {
+                    "sceNetSocketForDriver": 3952455716,
+                    "sceNetAcceptForDriver": 2282378275,
+                    "sceNetBindForDriver": 2225825039,
+                    "sceNetListenForDriver": 135035282,
+                    "sceNetRecvForDriver": 1236362908,
+                    "sceNetRecvfromForDriver": 1236362908,
+                    "sceNetSendForDriver": 2876532532,
+                    "sceNetSendtoForDriver": 2876532532,
+                    "sceNetSetsockoptForDriver": 1274411700,
+                    "sceNetSocketCloseForDriver": 569655949
+                }
+            }
+        }
+    },
     "SceNetAdhocMatching": {
         "modules": {
             "SceNetAdhocMatching": {
