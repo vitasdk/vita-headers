@@ -19,7 +19,7 @@ var ctrl_8h =
     [ "SCE_CTRL_CIRCLE", "group__SceCtrlUser.html#ggae4d5251432e1a9e6803c0240cc492e18acc26a837d4e5a5cfb62adaf48ddead2c", null ],
     [ "SCE_CTRL_CROSS", "group__SceCtrlUser.html#ggae4d5251432e1a9e6803c0240cc492e18a477d551daa482e03598b67aaf4466923", null ],
     [ "SCE_CTRL_SQUARE", "group__SceCtrlUser.html#ggae4d5251432e1a9e6803c0240cc492e18af935d4e61120671b2acdf6cee2f776e6", null ],
-    [ "SCE_CTRL_ANY", "group__SceCtrlUser.html#ggae4d5251432e1a9e6803c0240cc492e18aacd2017e734229793ce7b819dec0ffc1", null ],
+    [ "SCE_CTRL_INTERCEPTED", "group__SceCtrlUser.html#ggae4d5251432e1a9e6803c0240cc492e18a12085cf461189faeb160ccd99affe06d", null ],
     [ "SCE_CTRL_TYPE_UNPAIRED", "group__SceCtrlUser.html#gga7ff5f2dff38e7639981794c43dc9167ba967ebfcf1e78707101bf3b8d248ef20b", null ],
     [ "SCE_CTRL_TYPE_PHY", "group__SceCtrlUser.html#gga7ff5f2dff38e7639981794c43dc9167ba3270ad369e969b0f907370cf89900fbe", null ],
     [ "SCE_CTRL_TYPE_VIRT", "group__SceCtrlUser.html#gga7ff5f2dff38e7639981794c43dc9167ba9c0a6632fed8f8af8fe9d593084b3378", null ],
