@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "_SceBtHidRequest", "bt_8h.html#struct__SceBtHidRequest", "bt_8h_struct__SceBtHidRequest" ],
     [ "_sceNpDrmPackageDecrypt_opt", "npdrmpackage_8h.html#struct__sceNpDrmPackageDecrypt__opt", "npdrmpackage_8h_struct__sceNpDrmPackageDecrypt__opt" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
@@ -38,6 +39,8 @@ var annotated_dup =
     [ "SceAudioencInitStreamParam", "group__SceAudioencUser.html#structSceAudioencInitStreamParam", "group__SceAudioencUser_structSceAudioencInitStreamParam" ],
     [ "SceAudioencOptInfo", "group__SceAudioencUser.html#unionSceAudioencOptInfo", "group__SceAudioencUser_unionSceAudioencOptInfo" ],
     [ "SceAudioencOptInfoCelp", "group__SceAudioencUser.html#structSceAudioencOptInfoCelp", "group__SceAudioencUser_structSceAudioencOptInfoCelp" ],
+    [ "SceBtEvent", "bt_8h.html#structSceBtEvent", "bt_8h_structSceBtEvent" ],
+    [ "SceBtRegisteredInfo", "bt_8h.html#structSceBtRegisteredInfo", "bt_8h_structSceBtRegisteredInfo" ],
     [ "SceCameraInfo", "group__SceCameraUser.html#structSceCameraInfo", "group__SceCameraUser_structSceCameraInfo" ],
     [ "SceCameraRead", "group__SceCameraUser.html#structSceCameraRead", "group__SceCameraUser_structSceCameraRead" ],
     [ "SceClass", "group__SceSysmemKernel.html#structSceClass", "group__SceSysmemKernel_structSceClass" ],

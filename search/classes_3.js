@@ -35,6 +35,8 @@ var searchData=
   ['sceaudioencinitstreamparam',['SceAudioencInitStreamParam',['../group__SceAudioencUser.html#structSceAudioencInitStreamParam',1,'']]],
   ['sceaudioencoptinfo',['SceAudioencOptInfo',['../group__SceAudioencUser.html#unionSceAudioencOptInfo',1,'']]],
   ['sceaudioencoptinfocelp',['SceAudioencOptInfoCelp',['../group__SceAudioencUser.html#structSceAudioencOptInfoCelp',1,'']]],
+  ['scebtevent',['SceBtEvent',['../bt_8h.html#structSceBtEvent',1,'']]],
+  ['scebtregisteredinfo',['SceBtRegisteredInfo',['../bt_8h.html#structSceBtRegisteredInfo',1,'']]],
   ['scecamerainfo',['SceCameraInfo',['../group__SceCameraUser.html#structSceCameraInfo',1,'']]],
   ['scecameraread',['SceCameraRead',['../group__SceCameraUser.html#structSceCameraRead',1,'']]],
   ['sceclass',['SceClass',['../group__SceSysmemKernel.html#structSceClass',1,'']]],

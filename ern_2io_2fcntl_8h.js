@@ -36,5 +36,6 @@ var ern_2io_2fcntl_8h =
     [ "sceIoWaitAsyncCBForDriver", "group__SceFcntlKernel.html#ga4a1018baac72706f6ab6a26445dac5f7", null ],
     [ "sceIoWaitAsyncForDriver", "group__SceFcntlKernel.html#ga0a2ed7e998bba29190193201ac3f8afe", null ],
     [ "sceIoWriteAsyncForDriver", "group__SceFcntlKernel.html#gac148fb36486b3e74c5d2ce7166f7c312", null ],
-    [ "sceIoWriteForDriver", "group__SceFcntlKernel.html#ga5fc1c40bd578442868ab0b1b887e9354", null ]
+    [ "sceIoWriteForDriver", "group__SceFcntlKernel.html#ga5fc1c40bd578442868ab0b1b887e9354", null ],
+    [ "__attribute__", "group__SceFcntlKernel.html#ga7302ec2b8bff5e29bb93702156167796", null ]
 ];
