@@ -7,7 +7,7 @@
  * \file
  * \brief Header file which defines promoter utility related variables and functions
  *
- * Copyright (C) 2016 PSP2SDK Project
+ * Copyright (C) 2016 VITASDK Project
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
