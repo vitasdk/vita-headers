@@ -36,6 +36,7 @@ var searchData=
   ['user',['User',['../group__ScePhotoExportUser.html',1,'']]],
   ['user',['User',['../group__ScePowerUser.html',1,'']]],
   ['user',['User',['../group__SceProcessmgrUser.html',1,'']]],
+  ['user',['User',['../group__ScePromoterUtilUser.html',1,'']]],
   ['user',['User',['../group__ScePssUser.html',1,'']]],
   ['user',['User',['../group__SceRngUser.html',1,'']]],
   ['user',['User',['../group__SceRtcUser.html',1,'']]],

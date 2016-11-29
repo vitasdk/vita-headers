@@ -180,6 +180,7 @@ var annotated_dup =
     [ "SceNetSockInfo", "group__SceNetUser.html#structSceNetSockInfo", "group__SceNetUser_structSceNetSockInfo" ],
     [ "SceNetStatisticsInfo", "group__SceNetUser.html#structSceNetStatisticsInfo", "group__SceNetUser_structSceNetStatisticsInfo" ],
     [ "SceObjectBase", "group__SceSysmemKernel.html#structSceObjectBase", "group__SceSysmemKernel_structSceObjectBase" ],
+    [ "ScePromoterUtilityLAUpdate", "group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate", "group__ScePromoterUtilUser_structScePromoterUtilityLAUpdate" ],
     [ "SceRtcTick", "group__SceRtcUser.html#structSceRtcTick", "group__SceRtcUser_structSceRtcTick" ],
     [ "SceSqliteMallocMethods", "structSceSqliteMallocMethods.html", "structSceSqliteMallocMethods" ],
     [ "SceSslMemoryPoolStats", "group__SceLibSslUser.html#structSceSslMemoryPoolStats", "group__SceLibSslUser_structSceSslMemoryPoolStats" ],

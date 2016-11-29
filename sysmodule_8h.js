@@ -60,7 +60,13 @@ var sysmodule_8h =
     [ "SCE_SYSMODULE_NEAR_DIALOG_UTIL", "group__SceSysmoduleUser.html#ggae33c78feb670de33d2abf21ec0624531a849b6fb222d5bf2d4fd0f640ba92e949", null ],
     [ "SCE_SYSMODULE_LOCATION_EXTENSION", "group__SceSysmoduleUser.html#ggae33c78feb670de33d2abf21ec0624531a70969a9041f6508aa21fd867dc21332d", null ],
     [ "SCE_SYSMODULE_AVPLAYER", "group__SceSysmoduleUser.html#ggae33c78feb670de33d2abf21ec0624531a4ecd7c66a833206977d50d45a1fb7bdb", null ],
+    [ "SCE_SYSMODULE_PAF", "group__SceSysmoduleUser.html#gga950bf8e3371138ceb9649d45e9a96340aaccacac5f57b82a6a1d87276ea5055e4", null ],
+    [ "SCE_SYSMODULE_PROMOTER_UTIL", "group__SceSysmoduleUser.html#gga950bf8e3371138ceb9649d45e9a96340ab8c2c59c262360c7a45af0bb83d66ebe", null ],
     [ "sceSysmoduleIsLoaded", "group__SceSysmoduleUser.html#gad5523582521d0fb04033373317605a61", null ],
+    [ "sceSysmoduleIsLoadedInternal", "group__SceSysmoduleUser.html#gaba3a456a2a38746d2906ed5c3d593c86", null ],
     [ "sceSysmoduleLoadModule", "group__SceSysmoduleUser.html#ga69288ae78cf14ae4edb6ecdc3364596a", null ],
-    [ "sceSysmoduleUnloadModule", "group__SceSysmoduleUser.html#gad8ed955e3f4dcdc1d9ce7b7019c19679", null ]
+    [ "sceSysmoduleLoadModuleInternal", "group__SceSysmoduleUser.html#ga126353a920d50360b9cbcab65fe776b3", null ],
+    [ "sceSysmoduleLoadModuleInternalWithArg", "group__SceSysmoduleUser.html#gac38598f17f8e28149f5ebe647c6bc483", null ],
+    [ "sceSysmoduleUnloadModule", "group__SceSysmoduleUser.html#gad8ed955e3f4dcdc1d9ce7b7019c19679", null ],
+    [ "sceSysmoduleUnloadModuleInternal", "group__SceSysmoduleUser.html#ga1853cacca07ad90a2c47f5824fa84992", null ]
 ];

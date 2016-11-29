@@ -3,6 +3,7 @@ var searchData=
   ['pad',['pad',['../group__SceAppUtilUser.html#gae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem::pad()'],['../group__SceGxtUser.html#ga14e12fc1cc8117775be90486d564dc94',1,'SceGxtHeader::pad()']]],
   ['paletteindex',['paletteIndex',['../group__SceGxtUser.html#ga47e0ff16339e41f1fd99e4bf61d7c2df',1,'SceGxtTextureInfo']]],
   ['parentalstatus',['parentalstatus',['../group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b',1,'SceLocationPermissionInfo']]],
+  ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate']]],
   ['pgf_2eh',['pgf.h',['../pgf_8h.html',1,'']]],
   ['photoexport_2eh',['photoexport.h',['../photoexport_8h.html',1,'']]],
   ['photoexportparam',['PhotoExportParam',['../group__ScePhotoExportUser.html#structPhotoExportParam',1,'']]],
@@ -19,10 +20,12 @@ var searchData=
   ['processid',['processId',['../group__SceThreadMgrUser.html#gadeff847365036cb16421d965b6b17c80',1,'SceKernelThreadInfo']]],
   ['processmgr_2eh',['processmgr.h',['../kernel_2processmgr_8h.html',1,'']]],
   ['processmgr_2eh',['processmgr.h',['../ern_2kernel_2processmgr_8h.html',1,'']]],
+  ['promoterutil_2eh',['promoterutil.h',['../promoterutil_8h.html',1,'']]],
   ['pss_2eh',['pss.h',['../pss_8h.html',1,'']]],
   ['pgf_20font_20library',['PGF Font Library',['../group__ScePgf.html',1,'']]],
   ['photo_20export_20library',['Photo Export Library',['../group__ScePhotoExport.html',1,'']]],
   ['power_20library',['Power Library',['../group__ScePower.html',1,'']]],
   ['process_20manager_20library',['Process Manager Library',['../group__SceProcessmgr.html',1,'']]],
+  ['promoter_20utility',['Promoter utility',['../group__ScePromoterUtil.html',1,'']]],
   ['pss_20code_20memory_20handling',['PSS Code Memory Handling',['../group__ScePss.html',1,'']]]
 ];

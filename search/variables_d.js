@@ -3,6 +3,7 @@ var searchData=
   ['pad',['pad',['../group__SceAppUtilUser.html#gae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem::pad()'],['../group__SceGxtUser.html#ga14e12fc1cc8117775be90486d564dc94',1,'SceGxtHeader::pad()']]],
   ['paletteindex',['paletteIndex',['../group__SceGxtUser.html#ga47e0ff16339e41f1fd99e4bf61d7c2df',1,'SceGxtTextureInfo']]],
   ['parentalstatus',['parentalstatus',['../group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b',1,'SceLocationPermissionInfo']]],
+  ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate']]],
   ['phototitle',['photoTitle',['../group__ScePhotoExportUser.html#ga9d23c119763c0be9f042ff0d9cf01503',1,'PhotoExportParam::photoTitle()'],['../group__SceScreenshotUser.html#gae15f7e1d9f31e5a63b156199e9a2bc29',1,'ScreenshotParam::photoTitle()']]],
   ['pinfo',['pInfo',['../group__SceAudiodecUser.html#gad31633c35d75fcde2f8d0221111fb1b2',1,'SceAudiodecCtrl::pInfo()'],['../group__SceAudioencUser.html#ga2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl::pInfo()']]],
   ['pinputpcm',['pInputPcm',['../group__SceAudioencUser.html#ga136ce6a1b5a71d438b2c8dc6125af1be',1,'SceAudioencCtrl']]],

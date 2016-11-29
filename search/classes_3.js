@@ -174,6 +174,7 @@ var searchData=
   ['scenetsockinfo',['SceNetSockInfo',['../group__SceNetUser.html#structSceNetSockInfo',1,'']]],
   ['scenetstatisticsinfo',['SceNetStatisticsInfo',['../group__SceNetUser.html#structSceNetStatisticsInfo',1,'']]],
   ['sceobjectbase',['SceObjectBase',['../group__SceSysmemKernel.html#structSceObjectBase',1,'']]],
+  ['scepromoterutilitylaupdate',['ScePromoterUtilityLAUpdate',['../group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate',1,'']]],
   ['scertctick',['SceRtcTick',['../group__SceRtcUser.html#structSceRtcTick',1,'']]],
   ['scesqlitemallocmethods',['SceSqliteMallocMethods',['../structSceSqliteMallocMethods.html',1,'']]],
   ['scesslmemorypoolstats',['SceSslMemoryPoolStats',['../group__SceLibSslUser.html#structSceSslMemoryPoolStats',1,'']]],

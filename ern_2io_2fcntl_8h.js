@@ -1,18 +1,18 @@
 var ern_2io_2fcntl_8h =
 [
-    [ "SCE_O_RDONLY", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a6cadd0f04c521c58f5edf07e4b28e2bf", null ],
-    [ "SCE_O_WRONLY", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a36d04899ac60f4e66d4ac084c5e48dd2", null ],
-    [ "SCE_O_RDWR", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a562bd9fc0dd4c9a7b442bb674a50ffdb", null ],
-    [ "SCE_O_NBLOCK", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5aee20a6bacd31ddb17b1ffde2ab465461", null ],
-    [ "SCE_O_DIROPEN", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5ac1d504ef73b70869dbee8d8c6312b047", null ],
-    [ "SCE_O_APPEND", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a9cd113b1cdc656c012b72dc362b0a09c", null ],
-    [ "SCE_O_CREAT", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a7e178e5668551bc92f167f7a8a0d959d", null ],
-    [ "SCE_O_TRUNC", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a47a17ef972f7a5e4a7a87e712135f572", null ],
-    [ "SCE_O_EXCL", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5a2e8bfea13df7f057fefe59c9d21fec50", null ],
-    [ "SCE_O_NOWAIT", "group__SceFcntlKernel.html#gga78372742882dccd1c13323dbd66c25c5aa84f9036169788830a18039697c60683", null ],
-    [ "SCE_SEEK_SET", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26ad1b02bcec0f31c1c2f4a1d1314e51e03", null ],
-    [ "SCE_SEEK_CUR", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a30207bcde2a4a48be05f1dd2365492ec", null ],
-    [ "SCE_SEEK_END", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26abbdb8bcddabf0188e8ed9997fe979b38", null ],
+    [ "SCE_SEEK_SET", "group__SceFcntlKernel.html#gga73c53bacb25588538843a1dcfe5f382bad1b02bcec0f31c1c2f4a1d1314e51e03", null ],
+    [ "SCE_SEEK_CUR", "group__SceFcntlKernel.html#gga73c53bacb25588538843a1dcfe5f382ba30207bcde2a4a48be05f1dd2365492ec", null ],
+    [ "SCE_SEEK_END", "group__SceFcntlKernel.html#gga73c53bacb25588538843a1dcfe5f382babbdb8bcddabf0188e8ed9997fe979b38", null ],
+    [ "SCE_O_RDONLY", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a6cadd0f04c521c58f5edf07e4b28e2bf", null ],
+    [ "SCE_O_WRONLY", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a36d04899ac60f4e66d4ac084c5e48dd2", null ],
+    [ "SCE_O_RDWR", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a562bd9fc0dd4c9a7b442bb674a50ffdb", null ],
+    [ "SCE_O_NBLOCK", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26aee20a6bacd31ddb17b1ffde2ab465461", null ],
+    [ "SCE_O_DIROPEN", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26ac1d504ef73b70869dbee8d8c6312b047", null ],
+    [ "SCE_O_APPEND", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a9cd113b1cdc656c012b72dc362b0a09c", null ],
+    [ "SCE_O_CREAT", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a7e178e5668551bc92f167f7a8a0d959d", null ],
+    [ "SCE_O_TRUNC", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a47a17ef972f7a5e4a7a87e712135f572", null ],
+    [ "SCE_O_EXCL", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a2e8bfea13df7f057fefe59c9d21fec50", null ],
+    [ "SCE_O_NOWAIT", "group__SceFcntlKernel.html#gga2d5492e116eebd5075f247d21fb9db26aa84f9036169788830a18039697c60683", null ],
     [ "sceIoCancelForDriver", "group__SceFcntlKernel.html#ga2e8fcc7cb7e208601915824a382f226a", null ],
     [ "sceIoChangeAsyncPriorityForDriver", "group__SceFcntlKernel.html#ga2c75adf7255b2d226794cd952dc95a82", null ],
     [ "sceIoCloseAsyncForDriver", "group__SceFcntlKernel.html#gabcfb153a4021aed897f518d8d0575022", null ],
@@ -37,5 +37,5 @@ var ern_2io_2fcntl_8h =
     [ "sceIoWaitAsyncForDriver", "group__SceFcntlKernel.html#ga0a2ed7e998bba29190193201ac3f8afe", null ],
     [ "sceIoWriteAsyncForDriver", "group__SceFcntlKernel.html#gac148fb36486b3e74c5d2ce7166f7c312", null ],
     [ "sceIoWriteForDriver", "group__SceFcntlKernel.html#ga5fc1c40bd578442868ab0b1b887e9354", null ],
-    [ "__attribute__", "group__SceFcntlKernel.html#ga7302ec2b8bff5e29bb93702156167796", null ]
+    [ "__attribute__", "group__SceFcntlKernel.html#ga1c694b5b14d95cdb6e836c06f4b5d596", null ]
 ];
