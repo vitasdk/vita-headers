@@ -5032,3 +5032,18 @@ modules:
           sceUsbSerialGetRecvBufferSize: 0xE8567A87
           sceUsbSerialSend: 0x89E71202
           sceUsbSerialRecv: 0xF26DC8D8
+  ScePromoterUtil:
+    nid: 0xB31C2D5C
+    libraries:
+      ScePromoterUtil:
+        kernel: false
+        nid: 0x31F237B6
+        functions:
+          scePromoterUtilityInit: 0x93451536
+          scePromoterUtilityExit: 0xC95D24A6
+          scePromoterUtilityDeletePkg: 0x7D46752F
+          scePromoterUtilityUpdateLiveArea: 0x17D73ECA
+          scePromoterUtilityPromotePkg: 0x716C81F4
+          scePromoterUtilityPromotePkgWithRif: 0x86641BC6
+          scePromoterUtilityGetState: 0xABEC74D2
+          scePromoterUtilityGetResult: 0x49B473F0
