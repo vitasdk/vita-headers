@@ -143,6 +143,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga25f0643e210083fb88e075cb897e7690"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#ga25f0643e210083fb88e075cb897e7690">sceCtrlGetBatteryInfo</a> (int port, SceUInt8 *batt)</td></tr>
 <tr class="memdesc:ga25f0643e210083fb88e075cb897e7690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get controller battery information.  <a href="#ga25f0643e210083fb88e075cb897e7690">More...</a><br /></td></tr>
 <tr class="separator:ga25f0643e210083fb88e075cb897e7690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf555d744224719585e0607cb8c8f668a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#gaf555d744224719585e0607cb8c8f668a">sceCtrlSetButtonIntercept</a> (int intercept)</td></tr>
+<tr class="memdesc:gaf555d744224719585e0607cb8c8f668a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets intercept.  <a href="#gaf555d744224719585e0607cb8c8f668a">More...</a><br /></td></tr>
+<tr class="separator:gaf555d744224719585e0607cb8c8f668a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91999737bb971d0dd01720e72ac819e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#ga91999737bb971d0dd01720e72ac819e0">sceCtrlGetButtonIntercept</a> (int *intercept)</td></tr>
+<tr class="memdesc:ga91999737bb971d0dd01720e72ac819e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets intercept.  <a href="#ga91999737bb971d0dd01720e72ac819e0">More...</a><br /></td></tr>
+<tr class="separator:ga91999737bb971d0dd01720e72ac819e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCtrlData" id="structSceCtrlData"></a>
@@ -524,6 +530,33 @@ Unknown. </td></tr>
 
 </div>
 </div>
+<a id="ga91999737bb971d0dd01720e72ac819e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91999737bb971d0dd01720e72ac819e0">&sect;&nbsp;</a></span>sceCtrlGetButtonIntercept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceCtrlGetButtonIntercept </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>intercept</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets intercept. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">intercept</td><td>Boolean value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
 <a id="gacb1f90cc566c0f81727e9824fd682722"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacb1f90cc566c0f81727e9824fd682722">&sect;&nbsp;</a></span>sceCtrlGetControllerPortInfo()</h2>
 
@@ -842,6 +875,33 @@ Unknown. </td></tr>
 
 </div>
 </div>
+<a id="gaf555d744224719585e0607cb8c8f668a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf555d744224719585e0607cb8c8f668a">&sect;&nbsp;</a></span>sceCtrlSetButtonIntercept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceCtrlSetButtonIntercept </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intercept</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets intercept. </p>
+<p>If true, allows the current thread to intercept controls. The use case might be, for example, a game plugin that wishes to capture input without having the input sent to the game thread. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intercept</td><td>Boolean value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
 <a id="gaf0afda761bf0ba8283c74e0931b80242"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf0afda761bf0ba8283c74e0931b80242">&sect;&nbsp;</a></span>sceCtrlSetLightBar()</h2>
 
@@ -998,7 +1058,7 @@ Unknown. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 29 2016 23:42:20 for vitasdk by
+    <li class="footer">Generated on Sun Dec 4 2016 18:07:06 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
