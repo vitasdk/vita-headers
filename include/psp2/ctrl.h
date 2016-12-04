@@ -262,6 +262,27 @@ int sceCtrlGetControllerPortInfo(SceCtrlPortInfo *info);
  * @return 0, <0 on error.
  */
 int sceCtrlGetBatteryInfo(int port, SceUInt8 *batt);
+
+/**
+ * Sets intercept
+ * 
+ * If true, allows the current thread to intercept controls. The use case 
+ * might be, for example, a game plugin that wishes to capture input without 
+ * having the input sent to the game thread.
+ * @param[in]  intercept  Boolean value
+ *
+ * @return     0, < 0 on error
+ */
+int sceCtrlSetButtonIntercept(int intercept);
+
+/**
+ * Gets intercept
+ *
+ * @param[out]  intercept  Boolean value
+ *
+ * @return     0, < 0 on error
+ */
+int sceCtrlGetButtonIntercept(int *intercept);
 #ifdef __cplusplus
 }
 #endif
