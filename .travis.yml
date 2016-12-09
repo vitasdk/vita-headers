@@ -12,8 +12,24 @@ before_script:
 
 script:
     - cd $TRAVIS_BUILD_DIR
-    - echo "TODO need to build testing with samples"
-
+    - curl https://api.github.com/repos/vitasdk/autobuilds/releases  | grep browser_download_url | grep linux | head -n 1 | cut -d '"' -f 4 | xargs wget
+    - tar xjf *.tar.bz2
+    - export VITASDK=$PWD/vitasdk
+    - export PATH=$VITASDK/bin:$PATH
+    - cd $VITASDK/arm-vita-eabi/include
+    - rm -rf psp2 psp2kern vitasdk vitasdk.h
+    - cd $VITASDK/arm-vita-eabi/lib
+    - rm -rf *_stub.a
+    - cd $TRAVIS_BUILD_DIR
+    - cp -r include/* $VITASDK/arm-vita-eabi/include
+    - vita-libs-gen db.yml output
+    - cd output
+    - make
+    - cp *_stub.a $VITASDK/arm-vita-eabi/lib
+    - cd $TRAVIS_BUILD_DIR
+    - git clone https://github.com/vitasdk/samples
+    - cd samples
+    - for f in */Makefile; do make -C ${f%/*} all; done
 before_deploy:
     - git config --global user.email "builds@travis-ci.com"
     - git config --global user.name "Travis CI"
