@@ -41,6 +41,10 @@
 extern "C" {
 #endif
 
+typedef enum {
+	SCE_VIDEODEC_TYPE_HW_AVCDEC = 0x1001,
+} SceVideodecType;
+
 typedef struct SceVideodecQueryInitInfoHwAvcdec {
 	uint32_t size;
 	uint32_t horizontal;
@@ -148,9 +152,9 @@ typedef struct SceAvcdecArrayPicture {
 	SceAvcdecPicture **pPicture;
 } SceAvcdecArrayPicture;
 
-int sceVideodecInitLibrary(uint32_t codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
-int sceAvcdecQueryDecoderMemSize(uint32_t codec, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo);
-int sceAvcdecCreateDecoder(uint32_t codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
+int sceVideodecInitLibrary(SceVideodecType codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
+int sceAvcdecQueryDecoderMemSize(SceVideodecType codec, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo);
+int sceAvcdecCreateDecoder(SceVideodecType codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
 int sceAvcdecDecode(SceAvcdecCtrl *decoder, SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
 
 #ifdef __cplusplus
