@@ -1,148 +1,160 @@
-/*
-Copyright (C) 2016 Ivan
+/**
+ * \usergroup{SceVideoDec}
+ * \usage{psp2/videodec.h,-lSceVideodec_stub}
+ */
 
-This file may be modified and distributed under the terms of the MIT license:
+/**
+ * \file
+ * \brief Header file which defines video decoder related variables and functions
+ *
+ * Copyright (C) 2016 Ivan
+ * Copyright (C) 2016 vitasdk
+ *
+ * This header file is licensed under the MIT license.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+#ifndef _PSP2_VIDEODEC_H_
+#define _PSP2_VIDEODEC_H_
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+#include <psp2/types.h>
+#include <stdint.h>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-#pragma once
+typedef struct SceVideodecQueryInitInfoHwAvcdec {
+	uint32_t size;
+	uint32_t horizontal;
+	uint32_t vertical;
+	uint32_t numOfRefFrames;
+	uint32_t numOfStreams;
+} SceVideodecQueryInitInfoHwAvcdec;
 
-struct SceVideodecQueryInitInfoHwAvcdec
-{
-	le_t<u32> size;
-	le_t<u32> horizontal;
-	le_t<u32> vertical;
-	le_t<u32> numOfRefFrames;
-	le_t<u32> numOfStreams;
-};
-
-union SceVideodecQueryInitInfo
-{
-	u8 reserved[32];
+typedef union SceVideodecQueryInitInfo {
+	uint8_t reserved[32];
 	SceVideodecQueryInitInfoHwAvcdec hwAvc;
-};
+} SceVideodecQueryInitInfo;
 
-struct SceVideodecTimeStamp
-{
-	le_t<u32> upper;
-	le_t<u32> lower;
-};
+typedef struct SceVideodecTimeStamp {
+	uint32_t upper;
+	uint32_t lower;
+} SceVideodecTimeStamp;
 
-struct SceAvcdecQueryDecoderInfo
-{
-	le_t<u32> horizontal;
-	le_t<u32> vertical;
-	le_t<u32> numOfRefFrames;
-};
+typedef struct SceAvcdecQueryDecoderInfo {
+	uint32_t horizontal;
+	uint32_t vertical;
+	uint32_t numOfRefFrames;
+} SceAvcdecQueryDecoderInfo;
 
-struct SceAvcdecDecoderInfo
-{
-	le_t<u32> frameMemSize;
-};
+typedef struct SceAvcdecDecoderInfo {
+	uint32_t frameMemSize;
+} SceAvcdecDecoderInfo;
 
-struct SceAvcdecBuf
-{
-	vm::lptr<void> pBuf;
-	le_t<u32> size;
-};
+typedef struct SceAvcdecBuf {
+	void *pBuf;
+	uint32_t size;
+} SceAvcdecBuf;
 
-struct SceAvcdecCtrl
-{
-	le_t<u32> handle;
+typedef struct SceAvcdecCtrl {
+	uint32_t handle;
 	SceAvcdecBuf frameBuf;
-};
+} SceAvcdecCtrl;
 
-struct SceAvcdecAu
-{
+typedef struct SceAvcdecAu {
 	SceVideodecTimeStamp pts;
 	SceVideodecTimeStamp dts;
 	SceAvcdecBuf es;
-};
+} SceAvcdecAu;
 
-struct SceAvcdecInfo
-{
-	le_t<u32> numUnitsInTick;
-	le_t<u32> timeScale;
-	u8 fixedFrameRateFlag;
+typedef struct SceAvcdecInfo {
+	uint32_t numUnitsInTick;
+	uint32_t timeScale;
+	uint8_t fixedFrameRateFlag;
 
-	u8 aspectRatioIdc;
-	le_t<u16> sarWidth;
-	le_t<u16> sarHeight;
+	uint8_t aspectRatioIdc;
+	uint16_t sarWidth;
+	uint16_t sarHeight;
 
-	u8 colourPrimaries;
-	u8 transferCharacteristics;
-	u8 matrixCoefficients;
+	uint8_t colourPrimaries;
+	uint8_t transferCharacteristics;
+	uint8_t matrixCoefficients;
 
-	u8 videoFullRangeFlag;
+	uint8_t videoFullRangeFlag;
 
-	u8 picStruct[2];
-	u8 ctType;
+	uint8_t picStruct[2];
+	uint8_t ctType;
 
-	u8 padding[3];
-};
+	uint8_t padding[3];
+} SceAvcdecInfo;
 
-struct SceAvcdecFrameOptionRGBA
-{
-	u8 alpha;
-	u8 cscCoefficient;
-	u8 reserved[14];
-};
+typedef struct SceAvcdecFrameOptionRGBA {
+	uint8_t alpha;
+	uint8_t cscCoefficient;
+	uint8_t reserved[14];
+} SceAvcdecFrameOptionRGBA;
 
-union SceAvcdecFrameOption
-{
-	u8 reserved[16];
+typedef union SceAvcdecFrameOption {
+	uint8_t reserved[16];
 	SceAvcdecFrameOptionRGBA rgba;
-};
+} SceAvcdecFrameOption;
 
+typedef struct SceAvcdecFrame {
+	uint32_t pixelType;
+	uint32_t framePitch;
+	uint32_t frameWidth;
+	uint32_t frameHeight;
 
-struct SceAvcdecFrame
-{
-	le_t<u32> pixelType;
-	le_t<u32> framePitch;
-	le_t<u32> frameWidth;
-	le_t<u32> frameHeight;
+	uint32_t horizontalSize;
+	uint32_t verticalSize;
 
-	le_t<u32> horizontalSize;
-	le_t<u32> verticalSize;
-
-	le_t<u32> frameCropLeftOffset;
-	le_t<u32> frameCropRightOffset;
-	le_t<u32> frameCropTopOffset;
-	le_t<u32> frameCropBottomOffset;
+	uint32_t frameCropLeftOffset;
+	uint32_t frameCropRightOffset;
+	uint32_t frameCropTopOffset;
+	uint32_t frameCropBottomOffset;
 
 	SceAvcdecFrameOption opt;
 
-	vm::lptr<void> pPicture[2];
-};
+	void *pPicture[2];
+} SceAvcdecFrame;
 
-
-struct SceAvcdecPicture
-{
-	le_t<u32> size;
+typedef struct SceAvcdecPicture {
+	uint32_t size;
 	SceAvcdecFrame frame;
 	SceAvcdecInfo info;
-};
+} SceAvcdecPicture;
 
-struct SceAvcdecArrayPicture
-{
-	le_t<u32> numOfOutput;
-	le_t<u32> numOfElm;
-	vm::lpptr<SceAvcdecPicture> pPicture;
-};
+typedef struct SceAvcdecArrayPicture {
+	uint32_t numOfOutput;
+	uint32_t numOfElm;
+	SceAvcdecPicture **pPicture;
+} SceAvcdecArrayPicture;
+
+int sceVideodecInitLibrary(uint32_t codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
+int sceAvcdecQueryDecoderMemSize(uint32_t codec, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo);
+int sceAvcdecCreateDecoder(uint32_t codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
+int sceAvcdecDecode(SceAvcdecCtrl *decoder, SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* _PSP2_VIDEODEC_H_ */
