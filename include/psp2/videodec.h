@@ -46,7 +46,7 @@ typedef enum {
 } SceVideodecType;
 
 typedef struct SceVideodecQueryInitInfoHwAvcdec {
-	uint32_t size;
+	uint32_t size;				//!< struct size
 	uint32_t horizontal;
 	uint32_t vertical;
 	uint32_t numOfRefFrames;
@@ -122,7 +122,7 @@ typedef union SceAvcdecFrameOption {
 } SceAvcdecFrameOption;
 
 typedef struct SceAvcdecFrame {
-	uint32_t pixelType;
+	uint32_t pixelType;		//!< display pixel format
 	uint32_t framePitch;
 	uint32_t frameWidth;
 	uint32_t frameHeight;
@@ -137,7 +137,7 @@ typedef struct SceAvcdecFrame {
 
 	SceAvcdecFrameOption opt;
 
-	void *pPicture[2];
+	void *pPicture[2];		//!< address of picture buffer
 } SceAvcdecFrame;
 
 typedef struct SceAvcdecPicture {
@@ -152,10 +152,40 @@ typedef struct SceAvcdecArrayPicture {
 	SceAvcdecPicture **pPicture;
 } SceAvcdecArrayPicture;
 
+/***
+ * @param[in] codec - See ::SceVideodecType
+ * @param[in] initInfo - See ::SceVideodecQueryInitInfoHwAvcdec
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceVideodecInitLibrary(SceVideodecType codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
+
+/***
+ * @param[in] codec - See ::SceVideodecType
+ * @param[in] query - Should be copy from ::SceVideodecQueryInitInfoHwAvcdec.
+ * @param[out] decoderInfo - Must be initialized with zeros.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAvcdecQueryDecoderMemSize(SceVideodecType codec, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo);
+
+/***
+ * @param[in] codec - See ::SceVideodecType
+ * @param[out] decoder - Must be initialized frameBuf.size and frameBuf.pBuf
+ * @param[in] query - Should be copy from ::SceVideodecQueryInitInfoHwAvcdec.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAvcdecCreateDecoder(SceVideodecType codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
-int sceAvcdecDecode(SceAvcdecCtrl *decoder, SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
+
+/***
+ * @param[in] decoder
+ * @param[in] au - Must set buffer information(es) and be initialized timestamps with 0xFFFFFFFF
+ * @param[out] array_picture - Must set numOfElm and pPicture. See ::SceAvcdecArrayPicture
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvcdecDecode(const SceAvcdecCtrl *decoder, const SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
 
 #ifdef __cplusplus
 }
