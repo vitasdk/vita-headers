@@ -8,6 +8,7 @@ cd $TRAVIS_BUILD_DIR
 git fetch origin gh-pages:origin/gh-pages && git checkout origin/gh-pages -b gh-pages || git checkout --orphan gh-pages
 git reset
 ls | grep -v 'docs' | xargs rm -rf
+mv docs/CNAME .
 mv docs/html/* .
 rm -rf docs
 git add *
