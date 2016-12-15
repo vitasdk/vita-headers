@@ -9,9 +9,11 @@ var searchData=
   ['pinputpcm',['pInputPcm',['../group__SceAudioencUser.html#ga136ce6a1b5a71d438b2c8dc6125af1be',1,'SceAudioencCtrl']]],
   ['pitch',['pitch',['../group__SceDisplayUser.html#ga44160853361a441b8e43578d0a2941b9',1,'SceDisplayFrameBuf']]],
   ['pixelformat',['pixelformat',['../group__SceDisplayUser.html#ga00b8ff65e24a20a98cbced5ea7925089',1,'SceDisplayFrameBuf']]],
+  ['pixeltype',['pixelType',['../group__SceVideoDecUser.html#ga1215fe331510d752de6dda9ca76ec819',1,'SceAvcdecFrame']]],
   ['poptinfo',['pOptInfo',['../group__SceAudioencUser.html#ga74532d956576d8a2fe81c64e37c63f60',1,'SceAudioencCtrl']]],
   ['port',['port',['../group__SceCtrlUser.html#gab76856cb710404ffdab71c2082a6b3c4',1,'SceCtrlPortInfo']]],
   ['poutputes',['pOutputEs',['../group__SceAudioencUser.html#gac352baa6d5587fc7223769e46e147df2',1,'SceAudioencCtrl']]],
   ['ppcm',['pPcm',['../group__SceAudiodecUser.html#ga1ccae11df48a9852002f4f4e98ab5797',1,'SceAudiodecCtrl']]],
+  ['ppicture',['pPicture',['../group__SceVideoDecUser.html#ga180cbb7fc4da1185fab46c998ae22b2b',1,'SceAvcdecFrame']]],
   ['processid',['processId',['../group__SceThreadMgrUser.html#gadeff847365036cb16421d965b6b17c80',1,'SceKernelThreadInfo']]]
 ];

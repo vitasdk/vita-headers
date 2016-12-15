@@ -49,5 +49,6 @@ var searchData=
   ['user',['User',['../group__SceSystemParamUser.html',1,'']]],
   ['user',['User',['../group__SceThreadMgrUser.html',1,'']]],
   ['user',['User',['../group__SceTouchUser.html',1,'']]],
-  ['user',['User',['../group__SceTypesUser.html',1,'']]]
+  ['user',['User',['../group__SceTypesUser.html',1,'']]],
+  ['user',['User',['../group__SceVideoDecUser.html',1,'']]]
 ];

@@ -38,5 +38,6 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "system_param.h", "system__param_8h.html", "system__param_8h" ],
     [ "touch.h", "touch_8h.html", "touch_8h" ],
     [ "types.h", "types_8h.html", "types_8h" ],
-    [ "usbserial.h", "usbserial_8h.html", "usbserial_8h" ]
+    [ "usbserial.h", "usbserial_8h.html", "usbserial_8h" ],
+    [ "videodec.h", "videodec_8h.html", "videodec_8h" ]
 ];
