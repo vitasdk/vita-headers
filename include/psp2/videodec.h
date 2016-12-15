@@ -104,7 +104,7 @@ typedef struct SceAvcdecInfo {
 
 	uint8_t videoFullRangeFlag;
 
-	uint8_t padding[3];
+	uint8_t unknown[3]; // maybe picStruct & ctType
 
 	SceVideodecTimeStamp pts;
 } SceAvcdecInfo;
