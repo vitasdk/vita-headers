@@ -1,0 +1,44 @@
+sudo: false
+
+cache:
+    directories:
+        - $HOME/doxygen
+
+before_script:
+    # download doxygen 1.8.12
+    - mkdir -p $HOME/doxygen
+    - cd $HOME/doxygen
+    - ls doxygen* >/dev/null 2>&1 || curl -L ftp://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.12.linux.bin.tar.gz | tar xz
+
+script:
+    - cd $TRAVIS_BUILD_DIR
+    - curl https://api.github.com/repos/vitasdk/autobuilds/releases | grep browser_download_url | grep linux | head -n 1 | cut -d '"' -f 4 | xargs curl -L | tar xj
+    - export VITASDK=$PWD/vitasdk
+    - export PATH=$VITASDK/bin:$PATH
+    - cd $VITASDK/arm-vita-eabi/include
+    - rm -rf psp2 psp2kern vitasdk vitasdk.h
+    - cd $VITASDK/arm-vita-eabi/lib
+    - rm -rf *_stub.a
+    - cd $TRAVIS_BUILD_DIR
+    - cp -r include/* $VITASDK/arm-vita-eabi/include
+    - vita-libs-gen db.yml output
+    - cd output
+    - make
+    - cp *_stub.a $VITASDK/arm-vita-eabi/lib
+    - cd $TRAVIS_BUILD_DIR
+    - git clone https://github.com/vitasdk/samples
+    - cd samples
+    - for f in */Makefile; do make -C ${f%/*} all; done
+before_deploy:
+    - git config --global user.email "builds@travis-ci.com"
+    - git config --global user.name "Travis CI"
+
+deploy:
+    provider: script
+    overwrite: true
+    skip_cleanup: true
+    script: bash $TRAVIS_BUILD_DIR/.travis.d/deploy_docs.sh
+    on:
+        tags: false
+        branch:
+            - master
