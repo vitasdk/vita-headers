@@ -281,52 +281,52 @@ typedef struct _SceBtHidRequest {
 	struct _SceBtHidRequest *next;
 } __attribute__((packed)) SceBtHidRequest; /* size = 0x18 */
 
-int ksceBtAvrcpReadVolumeForDriver(int r0, int r1, int r2, int r3);
-int ksceBtAvrcpSendButtonForDriver(int r0, int r1, int r2, int r3);
-int ksceBtAvrcpSendVolumeForDriver(int r0, int r1, int r2, int r3);
-int ksceBtAvrcpSetPlayStatusForDriver(int r0, int r1, int r2, int r3);
-int ksceBtAvrcpSetTitleForDriver(int r0, int r1, int r2, int r3);
-int ksceBtDeleteRegisteredInfoForDriver(int r0, int r1, int r2, int r3);
-int ksceBtFreqAudioForDriver(int r0, int r1, int r2, int r3);
-int ksceBtGetConfigurationForDriver(void); // returns 0x0 BT disabled, 0x9 if enabled
-int ksceBtGetConnectingInfoForDriver(unsigned int mac0, unsigned int mac1); // 1 = disconnected?, 2 = connecting?, 5 = connected?
-int ksceBtGetDeviceNameForDriver(unsigned int mac0, unsigned int mac1, char name[0x79]);
-int ksceBtGetInfoForTestForDriver(int r0, int r1, int r2, int r3);
-int ksceBtGetLastErrorForDriver(void);
-int ksceBtGetRegisteredInfoForDriver(int device, int unk, SceBtRegisteredInfo *info, unsigned int info_size);
-int ksceBtGetStatusForTestForDriver(int r0, int r1, int r2, int r3);
-int ksceBtGetVidPidForDriver(unsigned int mac0, unsigned int mac1, unsigned short vid_pid[2]);
-int ksceBtHfpGetCurrentPhoneNumberForDriver(int r0, int r1, int r2, int r3);
-int ksceBtHfpRequestForDriver(int r0, int r1, int r2, int r3);
-int ksceBtHidGetReportDescriptorForDriver(unsigned int mac0, unsigned int mac1, void *buffer, unsigned int size);
-int ksceBtHidTransferForDriver(unsigned int mac0, unsigned int mac1, SceBtHidRequest *request);
-int ksceBtPairingOOBForDriver(int r0, int r1, int r2, int r3);
-int ksceBtPushBipForDriver(int r0, int r1, int r2, int r3);
-int ksceBtPushOppForDriver(int r0, int r1, int r2, int r3);
-int ksceBtReadEventForDriver(SceBtEvent *events, int num_events);
-int ksceBtRecvAudioForDriver(int r0, int r1, int r2, int r3);
-int ksceBtRecvBipForDriver(int r0, int r1, int r2, int r3);
-int ksceBtRecvOppForDriver(int r0, int r1, int r2, int r3);
-int ksceBtRecvSppForDriver(int r0, int r1, int r2, int r3);
-int ksceBtRegisterCallbackForDriver(SceUID cb, int unused, int flags1, int flags2); // looks like flags1 is a mask for permitted MACs
-int ksceBtReplyPinCodeForDriver(unsigned int mac0, unsigned int mac1, unsigned char *code, unsigned int length);
-int ksceBtReplyUserConfirmationForDriver(unsigned int mac0, unsigned int mac1, int unk);
-int ksceBtSendAudioForDriver(int r0, int r1, int r2, int r3);
-int ksceBtSendL2capEchoRequestForTestForDriver(int r0, int r1, int r2, int r3);
-int ksceBtSendSppForDriver(int r0, int r1, int r2, int r3);
-int ksceBtSetConfigurationForDriver(int r0); //0 = disable bt, 1 = enabling, 2 = enabled 3 = disabling?
-int ksceBtSetContentProtectionForDriver(int r0);
-int ksceBtSetInquiryResultForTestForDriver(unsigned char *);
-int ksceBtSetInquiryScanForDriver(int r0);
-int ksceBtSetL2capEchoResponseBufferForTestForDriver(int r0, int r1, int r2, int r3);
-int ksceBtSetStatusForTestForDriver(int r0, int r1, int r2, int r3);
-int ksceBtStartAudioForDriver(int r0, int r1, int r2, int r3);
-int ksceBtStartConnectForDriver(unsigned int mac0, unsigned int mac1); // mac0 can be used as a device index (already paired devices)?
-int ksceBtStartDisconnectForDriver(unsigned int mac0, unsigned int mac1);
-int ksceBtStartInquiryForDriver(void);
-int ksceBtStopAudioForDriver(int r0, int r1, int r2, int r3);
-int ksceBtStopInquiryForDriver(void);
-int ksceBtUnregisterCallbackForDriver(SceUID cb);
+int ksceBtAvrcpReadVolume(int r0, int r1, int r2, int r3);
+int ksceBtAvrcpSendButton(int r0, int r1, int r2, int r3);
+int ksceBtAvrcpSendVolume(int r0, int r1, int r2, int r3);
+int ksceBtAvrcpSetPlayStatus(int r0, int r1, int r2, int r3);
+int ksceBtAvrcpSetTitle(int r0, int r1, int r2, int r3);
+int ksceBtDeleteRegisteredInfo(int r0, int r1, int r2, int r3);
+int ksceBtFreqAudio(int r0, int r1, int r2, int r3);
+int ksceBtGetConfiguration(void); // returns 0x0 BT disabled, 0x9 if enabled
+int ksceBtGetConnectingInfo(unsigned int mac0, unsigned int mac1); // 1 = disconnected?, 2 = connecting?, 5 = connected?
+int ksceBtGetDeviceName(unsigned int mac0, unsigned int mac1, char name[0x79]);
+int ksceBtGetInfoForTest(int r0, int r1, int r2, int r3);
+int ksceBtGetLastError(void);
+int ksceBtGetRegisteredInfo(int device, int unk, SceBtRegisteredInfo *info, unsigned int info_size);
+int ksceBtGetStatusForTest(int r0, int r1, int r2, int r3);
+int ksceBtGetVidPid(unsigned int mac0, unsigned int mac1, unsigned short vid_pid[2]);
+int ksceBtHfpGetCurrentPhoneNumber(int r0, int r1, int r2, int r3);
+int ksceBtHfpRequest(int r0, int r1, int r2, int r3);
+int ksceBtHidGetReportDescriptor(unsigned int mac0, unsigned int mac1, void *buffer, unsigned int size);
+int ksceBtHidTransfer(unsigned int mac0, unsigned int mac1, SceBtHidRequest *request);
+int ksceBtPairingOOB(int r0, int r1, int r2, int r3);
+int ksceBtPushBip(int r0, int r1, int r2, int r3);
+int ksceBtPushOpp(int r0, int r1, int r2, int r3);
+int ksceBtReadEvent(SceBtEvent *events, int num_events);
+int ksceBtRecvAudio(int r0, int r1, int r2, int r3);
+int ksceBtRecvBip(int r0, int r1, int r2, int r3);
+int ksceBtRecvOpp(int r0, int r1, int r2, int r3);
+int ksceBtRecvSpp(int r0, int r1, int r2, int r3);
+int ksceBtRegisterCallback(SceUID cb, int unused, int flags1, int flags2); // looks like flags1 is a mask for permitted MACs
+int ksceBtReplyPinCode(unsigned int mac0, unsigned int mac1, unsigned char *code, unsigned int length);
+int ksceBtReplyUserConfirmation(unsigned int mac0, unsigned int mac1, int unk);
+int ksceBtSendAudio(int r0, int r1, int r2, int r3);
+int ksceBtSendL2capEchoRequestForTest(int r0, int r1, int r2, int r3);
+int ksceBtSendSpp(int r0, int r1, int r2, int r3);
+int ksceBtSetConfiguration(int r0); //0 = disable bt, 1 = enabling, 2 = enabled 3 = disabling?
+int ksceBtSetContentProtection(int r0);
+int ksceBtSetInquiryResultForTest(unsigned char *);
+int ksceBtSetInquiryScan(int r0);
+int ksceBtSetL2capEchoResponseBufferForTest(int r0, int r1, int r2, int r3);
+int ksceBtSetStatusForTest(int r0, int r1, int r2, int r3);
+int ksceBtStartAudio(int r0, int r1, int r2, int r3);
+int ksceBtStartConnect(unsigned int mac0, unsigned int mac1); // mac0 can be used as a device index (already paired devices)?
+int ksceBtStartDisconnect(unsigned int mac0, unsigned int mac1);
+int ksceBtStartInquiry(void);
+int ksceBtStopAudio(int r0, int r1, int r2, int r3);
+int ksceBtStopInquiry(void);
+int ksceBtUnregisterCallback(SceUID cb);
 
 #ifdef __cplusplus
 }
