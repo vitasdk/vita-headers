@@ -57,10 +57,12 @@ var menudata={children:[
 {text:'All',url:'globals.html',children:[
 {text:'_',url:'globals.html#index__'},
 {text:'e',url:'globals_e.html#index_e'},
+{text:'k',url:'globals_k.html#index_k'},
 {text:'s',url:'globals_s.html#index_s'},
 {text:'v',url:'globals_v.html#index_v'}]},
 {text:'Functions',url:'globals_func.html',children:[
 {text:'_',url:'globals_func.html#index__'},
+{text:'k',url:'globals_func_k.html#index_k'},
 {text:'s',url:'globals_func_s.html#index_s'},
 {text:'v',url:'globals_func_v.html#index_v'}]},
 {text:'Typedefs',url:'globals_type.html'},

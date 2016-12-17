@@ -222,12 +222,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a4e3ea0bd604a1874b44ad9a56819e40c"><td class="memItemLeft" align="right" valign="top"><a id="a4e3ea0bd604a1874b44ad9a56819e40c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_ID_SOCKET_MAX</b>&#160;&#160;&#160;1023</td></tr>
 <tr class="separator:a4e3ea0bd604a1874b44ad9a56819e40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7188ca066b23ec9434b3eb6ccc6955d8"><td class="memItemLeft" align="right" valign="top"><a id="a7188ca066b23ec9434b3eb6ccc6955d8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetHtonsForDriver</b>&#160;&#160;&#160;__builtin_bswap16</td></tr>
-<tr class="separator:a7188ca066b23ec9434b3eb6ccc6955d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8937193190fc5cc718d15c9b5ad4e0d5"><td class="memItemLeft" align="right" valign="top"><a id="a8937193190fc5cc718d15c9b5ad4e0d5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetHtonlForDriver</b>&#160;&#160;&#160;__builtin_bswap32</td></tr>
-<tr class="separator:a8937193190fc5cc718d15c9b5ad4e0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10afe2fe24e087420dbc3b54345cd886"><td class="memItemLeft" align="right" valign="top"><a id="a10afe2fe24e087420dbc3b54345cd886"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetHtons</b>&#160;&#160;&#160;__builtin_bswap16</td></tr>
+<tr class="separator:a10afe2fe24e087420dbc3b54345cd886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca3383275b64caf7192a28e759ed952"><td class="memItemLeft" align="right" valign="top"><a id="abca3383275b64caf7192a28e759ed952"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetHtonl</b>&#160;&#160;&#160;__builtin_bswap32</td></tr>
+<tr class="separator:abca3383275b64caf7192a28e759ed952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -554,7 +554,7 @@ Enumerations</h2></td></tr>
 <b>SCE_NET_DUMP_DONTWAIT</b> = 0x00000020, 
 <b>SCE_NET_DUMP_OVERFLOW</b> = 0x00000040, 
 <b>SCE_NET_DUMP_ABORT_FLAG_PRESERVATION</b> = 0x00000001
- }<tr class="memdesc:a29d44341ce767c5dfc737d622fc97ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetDumpRead() <br /></td></tr>
+ }<tr class="memdesc:a29d44341ce767c5dfc737d622fc97ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetDumpRead() <br /></td></tr>
 </td></tr>
 <tr class="separator:a29d44341ce767c5dfc737d622fc97ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7b7893d940926615b39239ac05829d"><td class="memItemLeft" align="right" valign="top"><a id="a1b7b7893d940926615b39239ac05829d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
@@ -571,7 +571,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a098384b0034af0daa7c9c5c82b563567"><td class="memItemLeft" align="right" valign="top"><a id="a098384b0034af0daa7c9c5c82b563567"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_NET_EPOLL_CTL_ADD</b> = 1, 
 <b>SCE_NET_EPOLL_CTL_MOD</b>, 
 <b>SCE_NET_EPOLL_CTL_DEL</b>
- }<tr class="memdesc:a098384b0034af0daa7c9c5c82b563567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetEpollControl() <br /></td></tr>
+ }<tr class="memdesc:a098384b0034af0daa7c9c5c82b563567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetEpollControl() <br /></td></tr>
 </td></tr>
 <tr class="separator:a098384b0034af0daa7c9c5c82b563567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92c4bd66c8074c3d126a069275a0a80c"><td class="memItemLeft" align="right" valign="top"><a id="a92c4bd66c8074c3d126a069275a0a80c"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
@@ -613,22 +613,22 @@ Enumerations</h2></td></tr>
 <tr class="separator:a2ee507fea44084259042ff7bb45ecabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7df87806f64f3b241c8cde9eb57cad5"><td class="memItemLeft" align="right" valign="top"><a id="aa7df87806f64f3b241c8cde9eb57cad5"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_NET_EMULATION_FLAG_ETH0</b> = 1, 
 <b>SCE_NET_EMULATION_FLAG_WLAN0</b>
- }<tr class="memdesc:aa7df87806f64f3b241c8cde9eb57cad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetEmulationGet() / sceNetEmulationSet() <br /></td></tr>
+ }<tr class="memdesc:aa7df87806f64f3b241c8cde9eb57cad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetEmulationGet() / ::ksceNetEmulationSet() <br /></td></tr>
 </td></tr>
 <tr class="separator:aa7df87806f64f3b241c8cde9eb57cad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1398dba5e4a5616b83437528bdb28e"><td class="memItemLeft" align="right" valign="top"><a id="a2f1398dba5e4a5616b83437528bdb28e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_NET_RESOLVER_ASYNC</b> = 0x00000001, 
 <b>SCE_NET_RESOLVER_START_NTOA_DISABLE_IPADDRESS</b> = 0x00010000
- }<tr class="memdesc:a2f1398dba5e4a5616b83437528bdb28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetResolverStartNtoa() / sceNetResolverStartAton() <br /></td></tr>
+ }<tr class="memdesc:a2f1398dba5e4a5616b83437528bdb28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetResolverStartNtoa() / ::ksceNetResolverStartAton() <br /></td></tr>
 </td></tr>
 <tr class="separator:a2f1398dba5e4a5616b83437528bdb28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac2de18c0ed342a690b3e2ba3c52426"><td class="memItemLeft" align="right" valign="top"><a id="aeac2de18c0ed342a690b3e2ba3c52426"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION</b> = 0x00000001, 
 <b>SCE_NET_RESOLVER_ABORT_FLAG_ATON_PRESERVATION</b> = 0x00000002
- }<tr class="memdesc:aeac2de18c0ed342a690b3e2ba3c52426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetResolverAbort() <br /></td></tr>
+ }<tr class="memdesc:aeac2de18c0ed342a690b3e2ba3c52426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetResolverAbort() <br /></td></tr>
 </td></tr>
 <tr class="separator:aeac2de18c0ed342a690b3e2ba3c52426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac0b7994a7d738aa77d2c1cfe8d6d13"><td class="memItemLeft" align="right" valign="top"><a id="a0ac0b7994a7d738aa77d2c1cfe8d6d13"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION</b> = 0x00000001, 
 <b>SCE_NET_SOCKET_ABORT_FLAG_SND_PRESERVATION</b> = 0x00000002
- }<tr class="memdesc:a0ac0b7994a7d738aa77d2c1cfe8d6d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetSocketAbort() <br /></td></tr>
+ }<tr class="memdesc:a0ac0b7994a7d738aa77d2c1cfe8d6d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetSocketAbort() <br /></td></tr>
 </td></tr>
 <tr class="separator:a0ac0b7994a7d738aa77d2c1cfe8d6d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bea799269f02f5b3395d6b2c068b618"><td class="memItemLeft" align="right" valign="top"><a id="a5bea799269f02f5b3395d6b2c068b618"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
@@ -714,7 +714,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afeaa6456e370d2eb59f5e139d9f8b00c"><td class="memItemLeft" align="right" valign="top"><a id="afeaa6456e370d2eb59f5e139d9f8b00c"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_NET_SHUT_RD</b>, 
 <b>SCE_NET_SHUT_WR</b>, 
 <b>SCE_NET_SHUT_RDWR</b>
- }<tr class="memdesc:afeaa6456e370d2eb59f5e139d9f8b00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to sceNetShutdown() <br /></td></tr>
+ }<tr class="memdesc:afeaa6456e370d2eb59f5e139d9f8b00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify as argument to ::ksceNetShutdown() <br /></td></tr>
 </td></tr>
 <tr class="separator:afeaa6456e370d2eb59f5e139d9f8b00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c0312ac66c00f31cf886616c48afa2"><td class="memItemLeft" align="right" valign="top"><a id="a26c0312ac66c00f31cf886616c48afa2"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
@@ -764,36 +764,36 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0b01add5801c392586d79d7ee4315eb4"><td class="memItemLeft" align="right" valign="top"><a id="a0b01add5801c392586d79d7ee4315eb4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSocketForDriver</b> (const char *name, int domain, int type, int protocol)</td></tr>
-<tr class="separator:a0b01add5801c392586d79d7ee4315eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735857a4b244b620bbabfe537d624444"><td class="memItemLeft" align="right" valign="top"><a id="a735857a4b244b620bbabfe537d624444"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetAcceptForDriver</b> (int s, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int *addrlen)</td></tr>
-<tr class="separator:a735857a4b244b620bbabfe537d624444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dddaff994610c5aae28522dc7e5e9f7"><td class="memItemLeft" align="right" valign="top"><a id="a7dddaff994610c5aae28522dc7e5e9f7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetBindForDriver</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int addrlen)</td></tr>
-<tr class="separator:a7dddaff994610c5aae28522dc7e5e9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9efcdaaf260502bd588d84ac1a08d108"><td class="memItemLeft" align="right" valign="top"><a id="a9efcdaaf260502bd588d84ac1a08d108"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetListenForDriver</b> (int s, int backlog)</td></tr>
-<tr class="separator:a9efcdaaf260502bd588d84ac1a08d108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74b672c04870697070c1d4c12e89086"><td class="memItemLeft" align="right" valign="top"><a id="ad74b672c04870697070c1d4c12e89086"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetRecvForDriver</b> (int s, void *buf, unsigned int len, int flags)</td></tr>
-<tr class="separator:ad74b672c04870697070c1d4c12e89086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4fe4d43bf5fa0d6e11dc96a686663e8"><td class="memItemLeft" align="right" valign="top"><a id="ac4fe4d43bf5fa0d6e11dc96a686663e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetRecvfromForDriver</b> (int s, void *buf, unsigned int len, int flags, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *from, unsigned int *fromlen)</td></tr>
-<tr class="separator:ac4fe4d43bf5fa0d6e11dc96a686663e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc34748186d28f0c27b614809bacd99"><td class="memItemLeft" align="right" valign="top"><a id="a7dc34748186d28f0c27b614809bacd99"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSendForDriver</b> (int s, const void *msg, unsigned int len, int flags)</td></tr>
-<tr class="separator:a7dc34748186d28f0c27b614809bacd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74858cc3c4cfba8070d2fb73b0116b63"><td class="memItemLeft" align="right" valign="top"><a id="a74858cc3c4cfba8070d2fb73b0116b63"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSendtoForDriver</b> (int s, const void *msg, unsigned int len, int flags, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *to, unsigned int tolen)</td></tr>
-<tr class="separator:a74858cc3c4cfba8070d2fb73b0116b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa656dd12c6a8d341e64e3f59934af2f"><td class="memItemLeft" align="right" valign="top"><a id="afa656dd12c6a8d341e64e3f59934af2f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSetsockoptForDriver</b> (int s, int level, int optname, const void *optval, unsigned int optlen)</td></tr>
-<tr class="separator:afa656dd12c6a8d341e64e3f59934af2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a511c537df631635ed67546185335e494"><td class="memItemLeft" align="right" valign="top"><a id="a511c537df631635ed67546185335e494"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSocketCloseForDriver</b> (int s)</td></tr>
-<tr class="separator:a511c537df631635ed67546185335e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a90e964603816ec07e5257903b81bc"><td class="memItemLeft" align="right" valign="top"><a id="a93a90e964603816ec07e5257903b81bc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocket</b> (const char *name, int domain, int type, int protocol)</td></tr>
+<tr class="separator:a93a90e964603816ec07e5257903b81bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb08399e5f29bcc5be778cb934ff99d2"><td class="memItemLeft" align="right" valign="top"><a id="aeb08399e5f29bcc5be778cb934ff99d2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetAccept</b> (int s, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int *addrlen)</td></tr>
+<tr class="separator:aeb08399e5f29bcc5be778cb934ff99d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0b8b6c209df33cf5227cd50dc4eea7"><td class="memItemLeft" align="right" valign="top"><a id="adb0b8b6c209df33cf5227cd50dc4eea7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetBind</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int addrlen)</td></tr>
+<tr class="separator:adb0b8b6c209df33cf5227cd50dc4eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae12b0040019ba59bb0a009aad15798"><td class="memItemLeft" align="right" valign="top"><a id="a1ae12b0040019ba59bb0a009aad15798"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetListen</b> (int s, int backlog)</td></tr>
+<tr class="separator:a1ae12b0040019ba59bb0a009aad15798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f0e7e05c351d4cc40fab13c27c5253"><td class="memItemLeft" align="right" valign="top"><a id="a84f0e7e05c351d4cc40fab13c27c5253"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetRecv</b> (int s, void *buf, unsigned int len, int flags)</td></tr>
+<tr class="separator:a84f0e7e05c351d4cc40fab13c27c5253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e370c4e42ea9b48326995b70514d05c"><td class="memItemLeft" align="right" valign="top"><a id="a6e370c4e42ea9b48326995b70514d05c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetRecvfrom</b> (int s, void *buf, unsigned int len, int flags, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *from, unsigned int *fromlen)</td></tr>
+<tr class="separator:a6e370c4e42ea9b48326995b70514d05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89334b47eed8886727381db56959b84"><td class="memItemLeft" align="right" valign="top"><a id="ac89334b47eed8886727381db56959b84"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSend</b> (int s, const void *msg, unsigned int len, int flags)</td></tr>
+<tr class="separator:ac89334b47eed8886727381db56959b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231191cd11f1b50a0416869c7c51aa2c"><td class="memItemLeft" align="right" valign="top"><a id="a231191cd11f1b50a0416869c7c51aa2c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSendto</b> (int s, const void *msg, unsigned int len, int flags, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *to, unsigned int tolen)</td></tr>
+<tr class="separator:a231191cd11f1b50a0416869c7c51aa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352f873a5a06c900f6c16317c3271d08"><td class="memItemLeft" align="right" valign="top"><a id="a352f873a5a06c900f6c16317c3271d08"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSetsockopt</b> (int s, int level, int optname, const void *optval, unsigned int optlen)</td></tr>
+<tr class="separator:a352f873a5a06c900f6c16317c3271d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3e341e56000623f9e12f2e97b3bd18"><td class="memItemLeft" align="right" valign="top"><a id="a5a3e341e56000623f9e12f2e97b3bd18"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocketClose</b> (int s)</td></tr>
+<tr class="separator:a5a3e341e56000623f9e12f2e97b3bd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file related to net. </p>
@@ -805,7 +805,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSocketCloseForDr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_897e19e60e1fdcde2ca75bb881442839.html">psp2kern</a></li><li class="navelem"><a class="el" href="dir_2ce7e998e987a9400106ba4a5e6baf69.html">net</a></li><li class="navelem"><a class="el" href="ern_2net_2net_8h.html">net.h</a></li>
-    <li class="footer">Generated on Thu Dec 15 2016 16:52:17 for vitasdk by
+    <li class="footer">Generated on Sat Dec 17 2016 20:18:38 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

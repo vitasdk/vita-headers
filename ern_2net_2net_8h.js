@@ -1,5 +1,7 @@
 var ern_2net_2net_8h =
 [
+    [ "ksceNetHtonl", "ern_2net_2net_8h.html#abca3383275b64caf7192a28e759ed952", null ],
+    [ "ksceNetHtons", "ern_2net_2net_8h.html#a10afe2fe24e087420dbc3b54345cd886", null ],
     [ "SCE_NET_ADHOC_PORT", "ern_2net_2net_8h.html#aedfdc3b695a87341e75104aaee1d4467", null ],
     [ "SCE_NET_AF_INET", "ern_2net_2net_8h.html#a63f759f69187fbdc1e4266fca9b9891c", null ],
     [ "SCE_NET_DEBUG_NAME_LEN_MAX", "ern_2net_2net_8h.html#a5676fe21a495a55df7ee92b79bef7ccf", null ],
@@ -22,8 +24,6 @@ var ern_2net_2net_8h =
     [ "SCE_NET_IPVERSION", "ern_2net_2net_8h.html#ae5c37b15d155123cb078e36b4f9f6b48", null ],
     [ "SCE_NET_RESOLVER_HOSTNAME_LEN_MAX", "ern_2net_2net_8h.html#a5a0f227806acd8e3f0127363d04a3240", null ],
     [ "SCE_NET_RESOLVER_PORT", "ern_2net_2net_8h.html#ab082cf5a54b7ab21e09b2912f601eba9", null ],
-    [ "sceNetHtonlForDriver", "ern_2net_2net_8h.html#a8937193190fc5cc718d15c9b5ad4e0d5", null ],
-    [ "sceNetHtonsForDriver", "ern_2net_2net_8h.html#a7188ca066b23ec9434b3eb6ccc6955d8", null ],
     [ "SceNetResolverFunctionAllocate", "ern_2net_2net_8h.html#a8d3b116dc09c949f38c2863cfef16c8e", null ],
     [ "SceNetResolverFunctionFree", "ern_2net_2net_8h.html#aff1dc586af8124462ebe48ab445c03b3", null ],
     [ "SCE_NET_ERROR_EPERM", "ern_2net_2net_8h.html#a1f3b6c692395e5007ff47ce5d9304c1ca97cc453d2525e19fb413f81b54fc1f15", null ],
@@ -382,14 +382,14 @@ var ern_2net_2net_8h =
     [ "SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS", "ern_2net_2net_8h.html#aecd12a18eeb0ee701fc7b0efd5068266a9c64982114f6a1bec91549499d44c498", null ],
     [ "SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED", "ern_2net_2net_8h.html#aecd12a18eeb0ee701fc7b0efd5068266abb2f7333af22d92323602aabb885ebe0", null ],
     [ "SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED", "ern_2net_2net_8h.html#aecd12a18eeb0ee701fc7b0efd5068266a1c69466cb5449e986f9601948e7b494e", null ],
-    [ "sceNetAcceptForDriver", "ern_2net_2net_8h.html#a735857a4b244b620bbabfe537d624444", null ],
-    [ "sceNetBindForDriver", "ern_2net_2net_8h.html#a7dddaff994610c5aae28522dc7e5e9f7", null ],
-    [ "sceNetListenForDriver", "ern_2net_2net_8h.html#a9efcdaaf260502bd588d84ac1a08d108", null ],
-    [ "sceNetRecvForDriver", "ern_2net_2net_8h.html#ad74b672c04870697070c1d4c12e89086", null ],
-    [ "sceNetRecvfromForDriver", "ern_2net_2net_8h.html#ac4fe4d43bf5fa0d6e11dc96a686663e8", null ],
-    [ "sceNetSendForDriver", "ern_2net_2net_8h.html#a7dc34748186d28f0c27b614809bacd99", null ],
-    [ "sceNetSendtoForDriver", "ern_2net_2net_8h.html#a74858cc3c4cfba8070d2fb73b0116b63", null ],
-    [ "sceNetSetsockoptForDriver", "ern_2net_2net_8h.html#afa656dd12c6a8d341e64e3f59934af2f", null ],
-    [ "sceNetSocketCloseForDriver", "ern_2net_2net_8h.html#a511c537df631635ed67546185335e494", null ],
-    [ "sceNetSocketForDriver", "ern_2net_2net_8h.html#a0b01add5801c392586d79d7ee4315eb4", null ]
+    [ "ksceNetAccept", "ern_2net_2net_8h.html#aeb08399e5f29bcc5be778cb934ff99d2", null ],
+    [ "ksceNetBind", "ern_2net_2net_8h.html#adb0b8b6c209df33cf5227cd50dc4eea7", null ],
+    [ "ksceNetListen", "ern_2net_2net_8h.html#a1ae12b0040019ba59bb0a009aad15798", null ],
+    [ "ksceNetRecv", "ern_2net_2net_8h.html#a84f0e7e05c351d4cc40fab13c27c5253", null ],
+    [ "ksceNetRecvfrom", "ern_2net_2net_8h.html#a6e370c4e42ea9b48326995b70514d05c", null ],
+    [ "ksceNetSend", "ern_2net_2net_8h.html#ac89334b47eed8886727381db56959b84", null ],
+    [ "ksceNetSendto", "ern_2net_2net_8h.html#a231191cd11f1b50a0416869c7c51aa2c", null ],
+    [ "ksceNetSetsockopt", "ern_2net_2net_8h.html#a352f873a5a06c900f6c16317c3271d08", null ],
+    [ "ksceNetSocket", "ern_2net_2net_8h.html#a93a90e964603816ec07e5257903b81bc", null ],
+    [ "ksceNetSocketClose", "ern_2net_2net_8h.html#a5a3e341e56000623f9e12f2e97b3bd18", null ]
 ];

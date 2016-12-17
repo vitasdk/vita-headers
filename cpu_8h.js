@@ -2,11 +2,11 @@ var cpu_8h =
 [
     [ "ENTER_SYSCALL", "group__SceCPUKernel.html#gaa5b75a3c600994738e933102d28329e3", null ],
     [ "EXIT_SYSCALL", "group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9", null ],
-    [ "sceKernelCpuDcacheAndL2AndDMAFlush", "group__SceCPUKernel.html#ga28ae229ee67caeed46bd478cdbc0d2b4", null ],
-    [ "sceKernelCpuDcacheAndL2Flush", "group__SceCPUKernel.html#gaae72fb2b0a226667b988388dd7ebe662", null ],
-    [ "sceKernelCpuDcacheFlush", "group__SceCPUKernel.html#ga74441ac2a703087d89c376853c1872b2", null ],
-    [ "sceKernelCpuDisableInterrupts", "group__SceCPUKernel.html#gaaee34b13cd390466728a9a3ff8618550", null ],
-    [ "sceKernelCpuEnableInterrupts", "group__SceCPUKernel.html#ga94c5b84b1a4d6f4a44d4ce01065b8603", null ],
-    [ "sceKernelCpuIcacheAndL2Flush", "group__SceCPUKernel.html#ga0f35b85cd314900679b9b05fe8692bba", null ],
-    [ "sceKernelCpuUnrestrictedMemcpy", "group__SceCPUKernel.html#gaeb2ce3af0941166fa954e5657de0c625", null ]
+    [ "ksceKernelCpuDcacheAndL2AndDMAFlush", "group__SceCPUKernel.html#gac2965bc34e8647b161ad1b78d0e01f40", null ],
+    [ "ksceKernelCpuDcacheAndL2Flush", "group__SceCPUKernel.html#ga88146b380005022344f20377b55ec644", null ],
+    [ "ksceKernelCpuDcacheFlush", "group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e", null ],
+    [ "ksceKernelCpuDisableInterrupts", "group__SceCPUKernel.html#ga5e4ae03a7a343e652e31eb16f815f543", null ],
+    [ "ksceKernelCpuEnableInterrupts", "group__SceCPUKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c", null ],
+    [ "ksceKernelCpuIcacheAndL2Flush", "group__SceCPUKernel.html#gad3f79f4b73ac98bff381799fafe715e4", null ],
+    [ "ksceKernelCpuUnrestrictedMemcpy", "group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5", null ]
 ];

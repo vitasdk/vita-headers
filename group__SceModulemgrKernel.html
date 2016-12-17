@@ -102,54 +102,54 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae52b678c804f091b14eba1382ca819f5"><td class="memItemLeft" align="right" valign="top"><a id="gae52b678c804f091b14eba1382ca819f5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModuleListForKernel</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, int flags1, int flags2, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *modids, size_t *num)</td></tr>
-<tr class="separator:gae52b678c804f091b14eba1382ca819f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2176be0894ded58fade0ee8ca131ffd"><td class="memItemLeft" align="right" valign="top"><a id="gac2176be0894ded58fade0ee8ca131ffd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModuleInfoForKernel</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, <a class="el" href="group__SceModulemgrUser.html#structSceKernelModuleInfo">SceKernelModuleInfo</a> *info)</td></tr>
-<tr class="separator:gac2176be0894ded58fade0ee8ca131ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e505b4eebf7bb3be6d1abf136463baf"><td class="memItemLeft" align="right" valign="top"><a id="ga6e505b4eebf7bb3be6d1abf136463baf"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModuleInternal</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, void **module)</td></tr>
-<tr class="separator:ga6e505b4eebf7bb3be6d1abf136463baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31a1b23ed8dbee2a197bcaaea296c327"><td class="memItemLeft" align="right" valign="top"><a id="ga31a1b23ed8dbee2a197bcaaea296c327"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetSystemSwVersion</b> (<a class="el" href="group__SceModulemgrUser.html#structSceKernelFwInfo">SceKernelFwInfo</a> *data)</td></tr>
-<tr class="separator:ga31a1b23ed8dbee2a197bcaaea296c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94003a37d62b145ee14e33ea24b1e68d"><td class="memItemLeft" align="right" valign="top"><a id="ga94003a37d62b145ee14e33ea24b1e68d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelLoadStartModuleForDriver</b> (const char *path, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga94003a37d62b145ee14e33ea24b1e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c37a8361008affda98528ae4c7a93e7"><td class="memItemLeft" align="right" valign="top"><a id="ga5c37a8361008affda98528ae4c7a93e7"></a>
-<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelLoadModuleForDriver</b> (const char *path, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option)</td></tr>
-<tr class="separator:ga5c37a8361008affda98528ae4c7a93e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9367ddcb3c2d576c7d771f743e1dc078"><td class="memItemLeft" align="right" valign="top"><a id="ga9367ddcb3c2d576c7d771f743e1dc078"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelStartModuleForDriver</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga9367ddcb3c2d576c7d771f743e1dc078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga654976b93783d0697d5f58dbbeccac46"><td class="memItemLeft" align="right" valign="top"><a id="ga654976b93783d0697d5f58dbbeccac46"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelUnloadModuleForDriver</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option)</td></tr>
-<tr class="separator:ga654976b93783d0697d5f58dbbeccac46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bbea8878c8967d470949981643adf18"><td class="memItemLeft" align="right" valign="top"><a id="ga5bbea8878c8967d470949981643adf18"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelStopModuleForDriver</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga5bbea8878c8967d470949981643adf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa055e1f46bb8b29852f3c468c57ece67"><td class="memItemLeft" align="right" valign="top"><a id="gaa055e1f46bb8b29852f3c468c57ece67"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelStopUnloadModuleForDriver</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
-<tr class="separator:gaa055e1f46bb8b29852f3c468c57ece67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57b98a7d98de1d102372b41d3ea10860"><td class="memItemLeft" align="right" valign="top"><a id="ga57b98a7d98de1d102372b41d3ea10860"></a>
-<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelLoadStartSharedModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, const char *path, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga57b98a7d98de1d102372b41d3ea10860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81350290677bc670e8c4bbf95f09c9f5"><td class="memItemLeft" align="right" valign="top"><a id="ga81350290677bc670e8c4bbf95f09c9f5"></a>
-<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelLoadStartModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, const char *path, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga81350290677bc670e8c4bbf95f09c9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94589061b2b43f00c2d0174534031059"><td class="memItemLeft" align="right" valign="top"><a id="ga94589061b2b43f00c2d0174534031059"></a>
-<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelLoadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, const char *path, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option)</td></tr>
-<tr class="separator:ga94589061b2b43f00c2d0174534031059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69652d5bb3f0feb7a716c0589943e3da"><td class="memItemLeft" align="right" valign="top"><a id="ga69652d5bb3f0feb7a716c0589943e3da"></a>
-<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelUnloadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option)</td></tr>
-<tr class="separator:ga69652d5bb3f0feb7a716c0589943e3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga448d2510f9d47511a5588ae50dfbe1de"><td class="memItemLeft" align="right" valign="top"><a id="ga448d2510f9d47511a5588ae50dfbe1de"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelStopModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga448d2510f9d47511a5588ae50dfbe1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d085fc0b5de0341a2dc95834725445b"><td class="memItemLeft" align="right" valign="top"><a id="ga6d085fc0b5de0341a2dc95834725445b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelStopUnloadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
-<tr class="separator:ga6d085fc0b5de0341a2dc95834725445b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ddc9e96b3db2392a7d13147a6962caf"><td class="memItemLeft" align="right" valign="top"><a id="ga5ddc9e96b3db2392a7d13147a6962caf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetModuleList</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, int flags1, int flags2, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *modids, size_t *num)</td></tr>
+<tr class="separator:ga5ddc9e96b3db2392a7d13147a6962caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacecebf1d4bb156b73646f76c4c16cee6"><td class="memItemLeft" align="right" valign="top"><a id="gacecebf1d4bb156b73646f76c4c16cee6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetModuleInfo</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, <a class="el" href="group__SceModulemgrUser.html#structSceKernelModuleInfo">SceKernelModuleInfo</a> *info)</td></tr>
+<tr class="separator:gacecebf1d4bb156b73646f76c4c16cee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59b7c4718267422ee29746bae7e34c92"><td class="memItemLeft" align="right" valign="top"><a id="ga59b7c4718267422ee29746bae7e34c92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetModuleInternal</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, void **module)</td></tr>
+<tr class="separator:ga59b7c4718267422ee29746bae7e34c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8e98274a12bb8b9822b24164ac5e3dc"><td class="memItemLeft" align="right" valign="top"><a id="gaf8e98274a12bb8b9822b24164ac5e3dc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetSystemSwVersion</b> (<a class="el" href="group__SceModulemgrUser.html#structSceKernelFwInfo">SceKernelFwInfo</a> *data)</td></tr>
+<tr class="separator:gaf8e98274a12bb8b9822b24164ac5e3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49a2511e42a0a05710b7d312476555dc"><td class="memItemLeft" align="right" valign="top"><a id="ga49a2511e42a0a05710b7d312476555dc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelLoadStartModule</b> (const char *path, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
+<tr class="separator:ga49a2511e42a0a05710b7d312476555dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a38255cc912a55eae4db7a3009a1709"><td class="memItemLeft" align="right" valign="top"><a id="ga1a38255cc912a55eae4db7a3009a1709"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelLoadModule</b> (const char *path, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option)</td></tr>
+<tr class="separator:ga1a38255cc912a55eae4db7a3009a1709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bf46bc5edd2edd2851025400b1ebcfb"><td class="memItemLeft" align="right" valign="top"><a id="ga9bf46bc5edd2edd2851025400b1ebcfb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStartModule</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
+<tr class="separator:ga9bf46bc5edd2edd2851025400b1ebcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3da21d8df445ea902fe5413ef24a43e3"><td class="memItemLeft" align="right" valign="top"><a id="ga3da21d8df445ea902fe5413ef24a43e3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelUnloadModule</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option)</td></tr>
+<tr class="separator:ga3da21d8df445ea902fe5413ef24a43e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga357387ab23ca53955199e2dd314a3964"><td class="memItemLeft" align="right" valign="top"><a id="ga357387ab23ca53955199e2dd314a3964"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStopModule</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
+<tr class="separator:ga357387ab23ca53955199e2dd314a3964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae71c53cea57549c43d14264d6b96aff"><td class="memItemLeft" align="right" valign="top"><a id="gaae71c53cea57549c43d14264d6b96aff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStopUnloadModule</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
+<tr class="separator:gaae71c53cea57549c43d14264d6b96aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2c8a7074f4aec0fd8dc7d47adbd5390"><td class="memItemLeft" align="right" valign="top"><a id="gaf2c8a7074f4aec0fd8dc7d47adbd5390"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelLoadStartSharedModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, const char *path, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
+<tr class="separator:gaf2c8a7074f4aec0fd8dc7d47adbd5390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9d7309b038ef7642f53dc8cc3b531dc"><td class="memItemLeft" align="right" valign="top"><a id="gae9d7309b038ef7642f53dc8cc3b531dc"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelLoadStartModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, const char *path, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option, int *status)</td></tr>
+<tr class="separator:gae9d7309b038ef7642f53dc8cc3b531dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6996022ffe32745aa390e674a3be23d"><td class="memItemLeft" align="right" valign="top"><a id="gae6996022ffe32745aa390e674a3be23d"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelLoadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, const char *path, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a> *option)</td></tr>
+<tr class="separator:gae6996022ffe32745aa390e674a3be23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad12b4043c7b084a411142eb294ef8d52"><td class="memItemLeft" align="right" valign="top"><a id="gad12b4043c7b084a411142eb294ef8d52"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelUnloadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option)</td></tr>
+<tr class="separator:gad12b4043c7b084a411142eb294ef8d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b1b8dbca558e89129d728c3bfb99cc5"><td class="memItemLeft" align="right" valign="top"><a id="ga6b1b8dbca558e89129d728c3bfb99cc5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStopModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
+<tr class="separator:ga6b1b8dbca558e89129d728c3bfb99cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad48e3014ec0cb8b0509fdb4b46e86a49"><td class="memItemLeft" align="right" valign="top"><a id="gad48e3014ec0cb8b0509fdb4b46e86a49"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStopUnloadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
+<tr class="separator:gad48e3014ec0cb8b0509fdb4b46e86a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa297434ef456cbbdf41df20a44238a85"><td class="memItemLeft" align="right" valign="top"><a id="gaa297434ef456cbbdf41df20a44238a85"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gaa297434ef456cbbdf41df20a44238a85">SCE_KERNEL_START_SUCCESS</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="memdesc:gaa297434ef456cbbdf41df20a44238a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return values for plugins <code>module_start</code> and <code>module_stop</code> <br /></td></tr>
@@ -462,7 +462,7 @@ versionString[16]</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Dec 15 2016 16:52:18 for vitasdk by
+    <li class="footer">Generated on Sat Dec 17 2016 20:18:38 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
