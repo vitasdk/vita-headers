@@ -266,7 +266,7 @@ enum {
 	SCE_NET_RESOLVER_EALIGNMENT
 };
 
-/** Flags to specify as argument to ::sceNetDumpRead() */
+/** Flags to specify as argument to ::ksceNetDumpRead() */
 enum {
 	SCE_NET_DUMP_PEEK						= 0x00000010,
 	SCE_NET_DUMP_DONTWAIT					= 0x00000020,
@@ -283,7 +283,7 @@ enum {
 	SCE_NET_EPOLLDESCID	= 0x00010000
 };
 
-/** Flags to specify as argument to ::sceNetEpollControl() */
+/** Flags to specify as argument to ::ksceNetEpollControl() */
 enum {
 	SCE_NET_EPOLL_CTL_ADD = 1,
 	SCE_NET_EPOLL_CTL_MOD,
@@ -320,25 +320,25 @@ enum {
 	SCE_NET_SOCKINFO_F_ALL				= 0x001F0007
 };
 
-/** Flags to specify as argument to ::sceNetEmulationGet() / ::sceNetEmulationSet() */
+/** Flags to specify as argument to ::ksceNetEmulationGet() / ::ksceNetEmulationSet() */
 enum {
 	SCE_NET_EMULATION_FLAG_ETH0	= 1,
 	SCE_NET_EMULATION_FLAG_WLAN0
 };
 
-/** Flags to specify as argument to ::sceNetResolverStartNtoa() / ::sceNetResolverStartAton() */
+/** Flags to specify as argument to ::ksceNetResolverStartNtoa() / ::ksceNetResolverStartAton() */
 enum {
 	SCE_NET_RESOLVER_ASYNC							= 0x00000001,
 	SCE_NET_RESOLVER_START_NTOA_DISABLE_IPADDRESS	= 0x00010000
 };
 
-/** Flags to specify as argument to ::sceNetResolverAbort() */
+/** Flags to specify as argument to ::ksceNetResolverAbort() */
 enum {
 	SCE_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION	= 0x00000001,
 	SCE_NET_RESOLVER_ABORT_FLAG_ATON_PRESERVATION	= 0x00000002
 };
 
-/** Flags to specify as argument to ::sceNetSocketAbort() */
+/** Flags to specify as argument to ::ksceNetSocketAbort() */
 enum {
 	SCE_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION	= 0x00000001,
 	SCE_NET_SOCKET_ABORT_FLAG_SND_PRESERVATION	= 0x00000002
@@ -412,7 +412,7 @@ enum {
 	SCE_NET_MSG_USESIGNATURE	= 0x00000800
 };
 
-/** Flags to specify as argument to ::sceNetShutdown() */
+/** Flags to specify as argument to ::ksceNetShutdown() */
 enum {
 	SCE_NET_SHUT_RD,
 	SCE_NET_SHUT_WR,
@@ -706,20 +706,20 @@ typedef struct SceNetIcmpHeader {
 
 /* prototypes */
 
-int sceNetSocketForDriver(const char *name, int domain, int type, int protocol);
-int sceNetAcceptForDriver(int s, SceNetSockaddr *addr, unsigned int *addrlen);
-int sceNetBindForDriver(int s, const SceNetSockaddr *addr, unsigned int addrlen);
-int sceNetListenForDriver(int s, int backlog);
-int sceNetRecvForDriver(int s, void *buf, unsigned int len, int flags);
-int sceNetRecvfromForDriver(int s, void *buf, unsigned int len, int flags, SceNetSockaddr *from, unsigned int *fromlen);
-int sceNetSendForDriver(int s, const void *msg, unsigned int len, int flags);
-int sceNetSendtoForDriver(int s, const void *msg, unsigned int len, int flags, const SceNetSockaddr *to, unsigned int tolen);
-int sceNetSetsockoptForDriver(int s, int level, int optname, const void *optval, unsigned int optlen);
-int sceNetSocketCloseForDriver(int s);
+int ksceNetSocket(const char *name, int domain, int type, int protocol);
+int ksceNetAccept(int s, SceNetSockaddr *addr, unsigned int *addrlen);
+int ksceNetBind(int s, const SceNetSockaddr *addr, unsigned int addrlen);
+int ksceNetListen(int s, int backlog);
+int ksceNetRecv(int s, void *buf, unsigned int len, int flags);
+int ksceNetRecvfrom(int s, void *buf, unsigned int len, int flags, SceNetSockaddr *from, unsigned int *fromlen);
+int ksceNetSend(int s, const void *msg, unsigned int len, int flags);
+int ksceNetSendto(int s, const void *msg, unsigned int len, int flags, const SceNetSockaddr *to, unsigned int tolen);
+int ksceNetSetsockopt(int s, int level, int optname, const void *optval, unsigned int optlen);
+int ksceNetSocketClose(int s);
 
 /* fixme ? */
-#define sceNetHtonsForDriver __builtin_bswap16
-#define sceNetHtonlForDriver __builtin_bswap32
+#define ksceNetHtons __builtin_bswap16
+#define ksceNetHtonl __builtin_bswap32
 
 #ifdef __cplusplus
 }

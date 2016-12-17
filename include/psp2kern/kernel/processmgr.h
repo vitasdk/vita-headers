@@ -23,7 +23,7 @@
 extern "C" {
 #endif
 
-void *sceKernelGetProcessKernelBuf(SceUID pid);
+void *ksceKernelGetProcessKernelBuf(SceUID pid);
 
 #ifdef __cplusplus
 }

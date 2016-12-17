@@ -23,7 +23,7 @@
 extern "C" {
 #endif
 
-/* Note: Not all of these sceIoOpen() flags are not compatible with the
+/* Note: Not all of these ksceIoOpen() flags are not compatible with the
    open() flags found in sys/unistd.h. */
 enum {
 	SCE_O_RDONLY   = 0x0001,
@@ -49,13 +49,13 @@ enum {
  *
  * @par Example1: Open a file for reading
  * @code
- * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_RDONLY, 0777)) {
+ * if(!(fd = ksceIoOpen("device:/path/to/file", SCE_O_RDONLY, 0777)) {
  *	// error
  * }
  * @endcode
  * @par Example2: Open a file for writing, creating it if it doesnt exist
  * @code
- * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_WRONLY|SCE_O_CREAT, 0777)) {
+ * if(!(fd = ksceIoOpen("device:/path/to/file", SCE_O_WRONLY|SCE_O_CREAT, 0777)) {
  *	// error
  * }
  * @endcode
@@ -65,7 +65,7 @@ enum {
  * @param mode - File access mode.
  * @return A non-negative integer is a valid fd, anything else an error
  */
-SceUID sceIoOpenForDriver(const char *file, int flags, SceMode mode);
+SceUID ksceIoOpen(const char *file, int flags, SceMode mode);
 
 /**
  * Open or create a file for reading or writing (asynchronous)
@@ -75,19 +75,19 @@ SceUID sceIoOpenForDriver(const char *file, int flags, SceMode mode);
  * @param mode - File access mode.
  * @return A non-negative integer is a valid fd, anything else an error
  */
-SceUID sceIoOpenAsyncForDriver(const char *file, int flags, SceMode mode);
+SceUID ksceIoOpenAsync(const char *file, int flags, SceMode mode);
 
 /**
  * Delete a descriptor
  *
  * @code
- * sceIoClose(fd);
+ * ksceIoClose(fd);
  * @endcode
  *
  * @param fd - File descriptor to close
  * @return < 0 on error
  */
-int sceIoCloseForDriver(SceUID fd);
+int ksceIoClose(SceUID fd);
 
 /**
  * Delete a descriptor (asynchronous)
@@ -95,14 +95,14 @@ int sceIoCloseForDriver(SceUID fd);
  * @param fd - File descriptor to close
  * @return < 0 on error
  */
-int sceIoCloseAsyncForDriver(SceUID fd);
+int ksceIoCloseAsync(SceUID fd);
 
 /**
  * Read input
  *
  * @par Example:
  * @code
- * bytes_read = sceIoRead(fd, data, 100);
+ * bytes_read = ksceIoRead(fd, data, 100);
  * @endcode
  *
  * @param fd - Opened file descriptor to read from
@@ -111,14 +111,14 @@ int sceIoCloseAsyncForDriver(SceUID fd);
  *
  * @return The number of bytes read
  */
-int sceIoReadForDriver(SceUID fd, void *data, SceSize size);
+int ksceIoRead(SceUID fd, void *data, SceSize size);
 
 /**
  * Read input (asynchronous)
  *
  * @par Example:
  * @code
- * bytes_read = sceIoRead(fd, data, 100);
+ * bytes_read = ksceIoRead(fd, data, 100);
  * @endcode
  *
  * @param fd - Opened file descriptor to read from
@@ -127,14 +127,14 @@ int sceIoReadForDriver(SceUID fd, void *data, SceSize size);
  *
  * @return < 0 on error.
  */
-int sceIoReadAsyncForDriver(SceUID fd, void *data, SceSize size);
+int ksceIoReadAsync(SceUID fd, void *data, SceSize size);
 
 /**
  * Write output
  *
  * @par Example:
  * @code
- * bytes_written = sceIoWrite(fd, data, 100);
+ * bytes_written = ksceIoWrite(fd, data, 100);
  * @endcode
  *
  * @param fd - Opened file descriptor to write to
@@ -143,7 +143,7 @@ int sceIoReadAsyncForDriver(SceUID fd, void *data, SceSize size);
  *
  * @return The number of bytes written
  */
-int sceIoWriteForDriver(SceUID fd, const void *data, SceSize size);
+int ksceIoWrite(SceUID fd, const void *data, SceSize size);
 
 /**
  * Write output (asynchronous)
@@ -154,14 +154,14 @@ int sceIoWriteForDriver(SceUID fd, const void *data, SceSize size);
  *
  * @return < 0 on error.
  */
-int sceIoWriteAsyncForDriver(SceUID fd, const void *data, SceSize size);
+int ksceIoWriteAsync(SceUID fd, const void *data, SceSize size);
 
 /**
  * Reposition read/write file descriptor offset
  *
  * @par Example:
  * @code
- * pos = sceIoLseek(fd, -10, SEEK_END);
+ * pos = ksceIoLseek(fd, -10, SEEK_END);
  * @endcode
  *
  * @param fd - Opened file descriptor with which to seek
@@ -171,7 +171,7 @@ int sceIoWriteAsyncForDriver(SceUID fd, const void *data, SceSize size);
  *
  * @return The position in the file after the seek.
  */
-SceOff sceIoLseekForDriver(SceUID fd, SceOff offset, int whence);
+SceOff ksceIoLseek(SceUID fd, SceOff offset, int whence);
 
 /**
  * Reposition read/write file descriptor offset (asynchronous)
@@ -181,16 +181,16 @@ SceOff sceIoLseekForDriver(SceUID fd, SceOff offset, int whence);
  * @param whence - Set to SEEK_SET to seek from the start of the file, SEEK_CUR
  * seek from the current position and SEEK_END to seek from the end.
  *
- * @return < 0 on error. Actual value should be passed returned by the ::sceIoWaitAsync call.
+ * @return < 0 on error. Actual value should be passed returned by the ::ksceIoWaitAsync call.
  */
-int sceIoLseekAsyncForDriver(SceUID fd, SceOff offset, int whence);
+int ksceIoLseekAsync(SceUID fd, SceOff offset, int whence);
 
 /**
  * Reposition read/write file descriptor offset (32bit mode)
  *
  * @par Example:
  * @code
- * pos = sceIoLseek32(fd, -10, SEEK_END);
+ * pos = ksceIoLseek32(fd, -10, SEEK_END);
  * @endcode
  *
  * @param fd - Opened file descriptor with which to seek
@@ -200,7 +200,7 @@ int sceIoLseekAsyncForDriver(SceUID fd, SceOff offset, int whence);
  *
  * @return The position in the file after the seek.
  */
-int sceIoLseek32ForDriver(SceUID fd, int offset, int whence);
+int ksceIoLseek32(SceUID fd, int offset, int whence);
 
 /**
  * Reposition read/write file descriptor offset (32bit mode, asynchronous)
@@ -212,7 +212,7 @@ int sceIoLseek32ForDriver(SceUID fd, int offset, int whence);
  *
  * @return < 0 on error.
  */
-int sceIoLseek32AsyncForDriver(SceUID fd, int offset, int whence);
+int ksceIoLseek32Async(SceUID fd, int offset, int whence);
 
 /**
  * Remove directory entry
@@ -220,7 +220,7 @@ int sceIoLseek32AsyncForDriver(SceUID fd, int offset, int whence);
  * @param file - Path to the file to remove
  * @return < 0 on error
  */
-int sceIoRemoveForDriver(const char *file);
+int ksceIoRemove(const char *file);
 
 /**
  * Change the name of a file
@@ -229,7 +229,7 @@ int sceIoRemoveForDriver(const char *file);
  * @param newname - The new filename
  * @return < 0 on error.
  */
-int sceIoRenameForDriver(const char *oldname, const char *newname);
+int ksceIoRename(const char *oldname, const char *newname);
 
 /**
   * Synchronise the file data on the device.
@@ -237,7 +237,7 @@ int sceIoRenameForDriver(const char *oldname, const char *newname);
   * @param device - The device to synchronise (e.g. msfat0:)
   * @param unk - Unknown
   */
-int sceIoSyncForDriver(const char *device, unsigned int unk);
+int ksceIoSync(const char *device, unsigned int unk);
 
 /**
  * Synchronize the file data for one file
@@ -246,7 +246,7 @@ int sceIoSyncForDriver(const char *device, unsigned int unk);
  *
  * @return < 0 on error.
  */
-int sceIoSyncByFdForDriver(SceUID fd);
+int ksceIoSyncByFd(SceUID fd);
 
 /**
   * Wait for asyncronous completion.
@@ -256,7 +256,7 @@ int sceIoSyncByFdForDriver(SceUID fd);
   *
   * @return < 0 on error.
   */
-int sceIoWaitAsyncForDriver(SceUID fd, SceInt64 *res);
+int ksceIoWaitAsync(SceUID fd, SceInt64 *res);
 
 /**
   * Wait for asyncronous completion (with callbacks).
@@ -266,7 +266,7 @@ int sceIoWaitAsyncForDriver(SceUID fd, SceInt64 *res);
   *
   * @return < 0 on error.
   */
-int sceIoWaitAsyncCBForDriver(SceUID fd, SceInt64 *res);
+int ksceIoWaitAsyncCB(SceUID fd, SceInt64 *res);
 
 /**
   * Poll for asyncronous completion.
@@ -276,7 +276,7 @@ int sceIoWaitAsyncCBForDriver(SceUID fd, SceInt64 *res);
   *
   * @return < 0 on error.
   */
-int sceIoPollAsyncForDriver(SceUID fd, SceInt64 *res);
+int ksceIoPollAsync(SceUID fd, SceInt64 *res);
 
 /**
   * Get the asyncronous completion status.
@@ -287,7 +287,7 @@ int sceIoPollAsyncForDriver(SceUID fd, SceInt64 *res);
   *
   * @return < 0 on error.
   */
-int sceIoGetAsyncStatForDriver(SceUID fd, int poll, SceInt64 *res);
+int ksceIoGetAsyncStat(SceUID fd, int poll, SceInt64 *res);
 
 /**
   * Cancel an asynchronous operation on a file descriptor.
@@ -296,7 +296,7 @@ int sceIoGetAsyncStatForDriver(SceUID fd, int poll, SceInt64 *res);
   *
   * @return < 0 on error.
   */
-int sceIoCancelForDriver(SceUID fd);
+int ksceIoCancel(SceUID fd);
 
 /**
   * Get the device type of the currently opened file descriptor.
@@ -305,7 +305,7 @@ int sceIoCancelForDriver(SceUID fd);
   *
   * @return < 0 on error. Otherwise the device type?
   */
-int sceIoGetDevTypeForDriver(SceUID fd);
+int ksceIoGetDevType(SceUID fd);
 
 /**
   * Change the priority of the asynchronous thread.
@@ -315,7 +315,7 @@ int sceIoGetDevTypeForDriver(SceUID fd);
   *
   * @return < 0 on error.
   */
-int sceIoChangeAsyncPriorityForDriver(SceUID fd, int pri);
+int ksceIoChangeAsyncPriority(SceUID fd, int pri);
 
 /**
   * Sets a callback for the asynchronous action.
@@ -326,7 +326,7 @@ int sceIoChangeAsyncPriorityForDriver(SceUID fd, int pri);
   *
   * @return < 0 on error.
   */
-int sceIoSetAsyncCallbackForDriver(SceUID fd, SceUID cb, void *argp);
+int ksceIoSetAsyncCallback(SceUID fd, SceUID cb, void *argp);
 
 #ifdef __cplusplus
 }
