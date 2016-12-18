@@ -26,12 +26,12 @@ extern "C" {
 /**
   * Send a devctl command to a device.
   *
-  * @par Example: Sending a simple command to a device (not a real devctl)
+  * @par Example: Sending a simple command to a device
   * @code
-  * sceIoDevctl("ms0:", 0x200000, indata, 4, NULL, NULL);
+  * sceIoDevctl("ux0:", 0x3001, NULL, 0, outdata, 0x18);
   * @endcode
   *
-  * @param dev - String for the device to send the devctl to (e.g. "ms0:")
+  * @param dev - String for the device to send the devctl to (e.g. "ux0:")
   * @param cmd - The command to send to the device
   * @param indata - A data block to send to the device, if NULL sends no data
   * @param inlen - Length of indata, if 0 sends no data
@@ -40,34 +40,6 @@ extern "C" {
   * @return 0 on success, < 0 on error
   */
 int sceIoDevctl(const char *dev, unsigned int cmd, void *indata, int inlen, void *outdata, int outlen);
-
-/**
-  * Assigns one IO device to another (I guess)
-  * @param dev1 - The device name to assign.
-  * @param dev2 - The block device to assign from.
-  * @param dev3 - The filesystem device to mape the block device to dev1
-  * @param mode - Read/Write mode. One of IoAssignPerms.
-  * @param unk1 - Unknown, set to NULL.
-  * @param unk2 - Unknown, set to 0.
-  * @return < 0 on error.
-  *
-  * @par Example: Reassign flash0 in read/write mode.
-  * @code
-  *	sceIoUnassign("flash0");
-  * sceIoAssign("flash0", "lflash0:0,0", "flashfat0:", IOASSIGN_RDWR, NULL, 0);
-  * @endcode
-  *
-  */
-int sceIoAssign(const char *dev1, const char *dev2, const char *dev3, int mode, void* unk1, long unk2);
-
-/**
-  * Unassign an IO device.
-  * @param dev - The device to unassign.
-  * @return < 0 on error
-  *
-  * @par Example: See ::sceIoAssign
-  */
-int sceIoUnassign(const char *dev);
 
 /**
   * Perform an ioctl on a device.
