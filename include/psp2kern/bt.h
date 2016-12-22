@@ -255,10 +255,17 @@ extern "C" {
 #define SCE_BT_ERROR_USER_CONFIRM_NOT_CONNECTED 0x802f0207
 
 typedef struct {
-	unsigned char mac[5];
-	unsigned char unk1[32 - 5];
+	unsigned char mac[6];
+	unsigned short unk0;
+	unsigned int bt_class;
+	unsigned int unk1;
+	unsigned int unk2;
+	unsigned short vid;
+	unsigned short pid;
+	unsigned int unk3;
+	unsigned int unk4;
 	char name[128];
-	unsigned char unk2[128];
+	unsigned char unk5[0x60];
 } SceBtRegisteredInfo; /* size = 0x100 */
 
 typedef struct {
