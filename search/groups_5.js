@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['hyper_20text_20transfer_20protocol_20library',['Hyper Text Transfer Protocol Library',['../group__SceHttp.html',1,'']]]
+  ['graphics',['Graphics',['../group__Graphics.html',1,'']]],
+  ['gpu_20graphics_20library',['GPU Graphics Library',['../group__SceGxm.html',1,'']]],
+  ['gxt_20files_20manipulation_20library',['GXT Files Manipulation Library',['../group__SceGxt.html',1,'']]]
 ];

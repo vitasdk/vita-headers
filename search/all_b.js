@@ -108,6 +108,7 @@ var searchData=
   ['ksceusbserialsetup',['ksceUsbSerialSetup',['../ern_2usbserial_8h.html#ad72dfb8ec9107537832d1eea400078ab',1,'usbserial.h']]],
   ['ksceusbserialstart',['ksceUsbSerialStart',['../ern_2usbserial_8h.html#a37d0ac547255559a0b8691a887d6c1de',1,'usbserial.h']]],
   ['ksceusbserialstatus',['ksceUsbSerialStatus',['../ern_2usbserial_8h.html#af94b720523fd86f2ef04b52098eea559',1,'usbserial.h']]],
+  ['kernel',['Kernel',['../group__SceBtKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceCPUKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceFcntlKernel.html',1,'']]],
   ['kernel_20errors',['Kernel Errors',['../group__SceKernelError.html',1,'']]],

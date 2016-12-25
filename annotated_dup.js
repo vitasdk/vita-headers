@@ -1,6 +1,6 @@
 var annotated_dup =
 [
-    [ "_SceBtHidRequest", "bt_8h.html#struct__SceBtHidRequest", "bt_8h_struct__SceBtHidRequest" ],
+    [ "_SceBtHidRequest", "group__SceBtKernel.html#struct__SceBtHidRequest", "group__SceBtKernel_struct__SceBtHidRequest" ],
     [ "_sceNpDrmPackageDecrypt_opt", "npdrmpackage_8h.html#struct__sceNpDrmPackageDecrypt__opt", "npdrmpackage_8h_struct__sceNpDrmPackageDecrypt__opt" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
@@ -50,8 +50,10 @@ var annotated_dup =
     [ "SceAvcdecInfo", "group__SceVideoDecUser.html#structSceAvcdecInfo", "group__SceVideoDecUser_structSceAvcdecInfo" ],
     [ "SceAvcdecPicture", "group__SceVideoDecUser.html#structSceAvcdecPicture", "group__SceVideoDecUser_structSceAvcdecPicture" ],
     [ "SceAvcdecQueryDecoderInfo", "group__SceVideoDecUser.html#structSceAvcdecQueryDecoderInfo", "group__SceVideoDecUser_structSceAvcdecQueryDecoderInfo" ],
-    [ "SceBtEvent", "bt_8h.html#structSceBtEvent", "bt_8h_structSceBtEvent" ],
-    [ "SceBtRegisteredInfo", "bt_8h.html#structSceBtRegisteredInfo", "bt_8h_structSceBtRegisteredInfo" ],
+    [ "SceBtEvent", "group__SceBtKernel.html#structSceBtEvent", "group__SceBtKernel_structSceBtEvent" ],
+    [ "SceBtEvent.__attribute__", "group__SceBtKernel.html#unionSceBtEvent_8____attribute____", "group__SceBtKernel_unionSceBtEvent_8____attribute____" ],
+    [ "SceBtEvent.__attribute__.__unnamed__", "group__SceBtKernel.html#structSceBtEvent_8____attribute_____8____unnamed____", "group__SceBtKernel_structSceBtEvent_8____attribute_____8____unnamed____" ],
+    [ "SceBtRegisteredInfo", "group__SceBtKernel.html#structSceBtRegisteredInfo", "group__SceBtKernel_structSceBtRegisteredInfo" ],
     [ "SceCameraInfo", "group__SceCameraUser.html#structSceCameraInfo", "group__SceCameraUser_structSceCameraInfo" ],
     [ "SceCameraRead", "group__SceCameraUser.html#structSceCameraRead", "group__SceCameraUser_structSceCameraRead" ],
     [ "SceClass", "group__SceSysmemKernel.html#structSceClass", "group__SceSysmemKernel_structSceClass" ],
