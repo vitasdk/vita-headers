@@ -1,6 +1,11 @@
 /**
+ * \kernelgroup{SceBt}
+ * \usage{psp2kern/bt.h,?}
+ */
+
+/**
  * \file
- * \brief Header file Which defines USB Serial related functions
+ * \brief Header file Which defines Bluetooth related functions
  *
  * Copyright (C) 2016 PSP2SDK Project
  *
@@ -271,7 +276,17 @@ typedef struct {
 typedef struct {
 	// mac0 is at *(unsigned int *)&data[0x08];
 	// mac1 is at *(unsigned int *)&data[0x0C];
-	unsigned char data[0x10];
+	union {
+		unsigned char data[0x10];
+		struct {
+			unsigned char id;
+			unsigned char unk1;
+			unsigned short unk2;
+			unsigned int unk3;
+			unsigned int mac0;
+			unsigned int mac1;
+		};
+	};
 } SceBtEvent;
 
 typedef void (*SceBtCallback)(int r0, int r1, int r2, int r3);
@@ -293,7 +308,7 @@ int ksceBtAvrcpSendButton(int r0, int r1, int r2, int r3);
 int ksceBtAvrcpSendVolume(int r0, int r1, int r2, int r3);
 int ksceBtAvrcpSetPlayStatus(int r0, int r1, int r2, int r3);
 int ksceBtAvrcpSetTitle(int r0, int r1, int r2, int r3);
-int ksceBtDeleteRegisteredInfo(int r0, int r1, int r2, int r3);
+int ksceBtDeleteRegisteredInfo(unsigned int mac0, unsigned int mac1);
 int ksceBtFreqAudio(int r0, int r1, int r2, int r3);
 int ksceBtGetConfiguration(void); // returns 0x0 BT disabled, 0x9 if enabled
 int ksceBtGetConnectingInfo(unsigned int mac0, unsigned int mac1); // 1 = disconnected?, 2 = connecting?, 5 = connected?

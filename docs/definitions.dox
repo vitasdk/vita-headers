@@ -2,19 +2,19 @@
  * \defgroup Graphics Graphics
  *  GPU, textures, JPEG encoding, fonts...
  * \{
- *     \defgroup SceDisplay Display Library 
+ *     \defgroup SceDisplay Display Library
  *      Set the framebuffer, wait for VBlankStart...
  *
- *     \defgroup ScePgf PGF Font Library 
+ *     \defgroup ScePgf PGF Font Library
  *      Display text using a PGF font
  *
- *     \defgroup SceGxm GPU Graphics Library 
+ *     \defgroup SceGxm GPU Graphics Library
  *      Everything related to drawing using the Vita GPU
  *
  *     \defgroup SceGxt GXT Files Manipulation Library
  *      Runtime manipulation of GXT files produced using the offline texture tools.
  *
- *     \defgroup SceJpegEnc JPEG Encoding Library 
+ *     \defgroup SceJpegEnc JPEG Encoding Library
  *      Encode a JPEG from a buffer
  *
  *     \defgroup SceVideodec Video Decoding Library
@@ -28,21 +28,21 @@
  *     \defgroup SceCtrl Control Library
  *      Read keypad and remote controller status
  *
- *     \defgroup SceTouch Touch Library 
+ *     \defgroup SceTouch Touch Library
  *      Read touch input
  *
  *     \defgroup SceCamera Camera Library
  *      Set Camera parameters, and capture images
  *
- *     \defgroup SceLocation Location Library 
+ *     \defgroup SceLocation Location Library
  *      GPS Location
  *
- *     \defgroup SceMotion Motion Library 
+ *     \defgroup SceMotion Motion Library
  *      Orientation, speed, magnetometer...
  * \}
  *
  *
- * \defgroup Audio Audio 
+ * \defgroup Audio Audio
  *  Play, capture, decode Audio
  * \{
  *     \defgroup SceAtrac Atrac Library
@@ -68,10 +68,10 @@
  *     \defgroup SceCommonDialog Common Dialog Library
  *      Set the parameters of a Dialog, and display it
  *
- *     \defgroup SceMessageDialog Message Dialog Library 
+ *     \defgroup SceMessageDialog Message Dialog Library
  *      Init a Message Dialog and display it
  *
- *     \defgroup SceIme Ime Dialog Library 
+ *     \defgroup SceIme Ime Dialog Library
  *      Get text from an Ime Dialog
  * \}
  *
@@ -79,16 +79,16 @@
  * \defgroup Filesystem Filesystem
  *  List dirs, find files, delete them, mount partitions...
  * \{
- *     \defgroup SceDevCtl Device Control Library 
+ *     \defgroup SceDevCtl Device Control Library
  *      send devctl commands, (un)assign io devices
  *
- *     \defgroup SceDirEnt Directory Entries Library 
+ *     \defgroup SceDirEnt Directory Entries Library
  *      Open a dir, and list the files in it
  *
- *     \defgroup SceFcntl File Control Library 
+ *     \defgroup SceFcntl File Control Library
  *      Open, Rename, Read, Write files
  *
- *     \defgroup SceStat File Status Library 
+ *     \defgroup SceStat File Status Library
  *      Make/Remove a dir, Read/Change the status of a file
  * \}
  *
@@ -102,7 +102,7 @@
  *     \defgroup SceCPU CPU Library
  *      Flush caches, unrestricted memcpy...
  *
- *     \defgroup SceSysmodule System Module Library 
+ *     \defgroup SceSysmodule System Module Library
  *      Load/Unload System modules
  *
  *     \defgroup SceKernelError Kernel Errors
@@ -132,18 +132,21 @@
  *
  *
  * \defgroup Net Network
- *  Everything related to sockets, HTTP, and Adhoc
+ *  Everything related to sockets, HTTP, Bluetooth and Adhoc
  * \{
- *     \defgroup SceHttp Hyper Text Transfer Protocol Library 
+ *     \defgroup SceHttp Hyper Text Transfer Protocol Library
  *      Send HTTP requests, Parse a URI, Connect to a Proxy...
  *
  *     \defgroup SceNet Socket Library
  *      Send sockets, Listen to a port...
  *
- *     \defgroup SceNetCtl Network Control Library 
+ *     \defgroup SceBt Bluetooth Library
+ *      Scan, connect, etc to Bluetooth devices
+ *
+ *     \defgroup SceNetCtl Network Control Library
  *      Get Inet/Adhoc status
  *
- *     \defgroup SceLibSsl SSL Library 
+ *     \defgroup SceLibSsl SSL Library
  *      SSL library for the Vita
  * \}
  *
@@ -151,7 +154,7 @@
  * \defgroup SystemStatus System Status
  *  Time, battery...
  * \{
- *     \defgroup SceAppMgr Application Manager Library 
+ *     \defgroup SceAppMgr Application Manager Library
  *      Launch Apps and get their params
  *
  *	   \defgroup SceAppUtil Application Utilities Library
@@ -160,13 +163,13 @@
  *     \defgroup ScePower Power Library
  *      Battery status, CPU speed...
  *
- *     \defgroup SceRtc Real-time Clock Library 
+ *     \defgroup SceRtc Real-time Clock Library
  *      Get/Set RTC time and date
  *
  *     \defgroup SceSblACMgr Sbl AC Manager
  *      Check if a process is a Game or Shell process
  *
- *     \defgroup SceShellSvc Shell Utils Library 
+ *     \defgroup SceShellSvc Shell Utils Library
  *      Set handlers for opening various menus
  * \}
  *
@@ -186,7 +189,7 @@
  *     \defgroup ScePss PSS Code Memory Handling
  *      Seems to allow to allocate, lock and unlock code memory for the Mono interpreter
  *
- *     \defgroup SceScreenshot Screenshot Library 
+ *     \defgroup SceScreenshot Screenshot Library
  *      Set screenshot params, Enable/Disable them
  * \}
  *
@@ -202,13 +205,13 @@
  * \defgroup Miscellaneous Miscellaneous
  *  Various Libraries that don't fit in other categories
  * \{
- *     \defgroup SceFiber Fiber Library 
+ *     \defgroup SceFiber Fiber Library
  *      Initialize and execute Fibers (individual execution units)
  *      Fibers are individual execution units that are like lightweight mini-threads. See [Fiber at Wikipedia](https://en.wikipedia.org/wiki/Fiber_(computer_science)).
  *
  *     \defgroup SceSqlite Sqlite Library
  *      Use the Sqlite Library on the Vita
- *     
+ *
  *     \defgroup ScePromoterUtil Promoter utility
  *      Install/Delete Packages
  * \}
