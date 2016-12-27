@@ -5,5 +5,5 @@ var group__Graphics =
     [ "GPU Graphics Library", "group__SceGxm.html", "group__SceGxm" ],
     [ "GXT Files Manipulation Library", "group__SceGxt.html", "group__SceGxt" ],
     [ "JPEG Encoding Library", "group__SceJpegEnc.html", "group__SceJpegEnc" ],
-    [ "Video Decoding Library", "group__SceVideodec.html", null ]
+    [ "Video Decoding Library", "group__SceVideoDec.html", "group__SceVideoDec" ]
 ];

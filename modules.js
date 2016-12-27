@@ -10,6 +10,5 @@ var modules =
     [ "System Status", "group__SystemStatus.html", "group__SystemStatus" ],
     [ "System Parameters", "group__SystemParams.html", "group__SystemParams" ],
     [ "Vitasdk", "group__Vitasdk.html", "group__Vitasdk" ],
-    [ "Miscellaneous", "group__Miscellaneous.html", "group__Miscellaneous" ],
-    [ "User", "group__SceVideoDecUser.html", "group__SceVideoDecUser" ]
+    [ "Miscellaneous", "group__Miscellaneous.html", "group__Miscellaneous" ]
 ];
