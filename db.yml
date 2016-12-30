@@ -1696,6 +1696,14 @@ modules:
         functions:
           ksceKernelGetSysrootBuffer: 0x3E455842
           ksceKernelGetProcessTitleId: 0xEC3124A3
+      SceKernelSuspendForDriver:
+        kernel: true
+        nid: 0x7290B21C
+        functions:
+          ksceKernelRegisterSuspendCallback: 0x04C05D10
+          ksceKernelUnregisterSuspendCallback: 0xDD61D621
+          ksceKernelNotifySuspendCallback: 0xD4622EA8
+          ksceKernelResetAutoSuspendTimer: 0xE0489831
       SceSysmem:
         functions:
           sceKernelAllocMemBlock: 0xB9D5EBDE
