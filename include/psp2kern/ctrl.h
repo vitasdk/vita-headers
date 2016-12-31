@@ -1,6 +1,6 @@
 /**
- * \usergroup{SceCtrl}
- * \usage{psp2/ctrl.h,-lSceCtrl_stub}
+ * \kernelgroup{SceCtrl}
+ * \usage{psp2kern/ctrl.h,-lSceCtrlForDriver_stub}
  */
 
 /**
@@ -14,10 +14,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef _PSP2_CTRL_H_
-#define _PSP2_CTRL_H_
+#ifndef _PSP2_KERNEL_CTRL_H_
+#define _PSP2_KERNEL_CTRL_H_
 
-#include <stdint.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -31,7 +30,7 @@ enum {
 };
 
 /** Enumeration for the digital controller buttons.
- * L1/R1/L3/R3 only can bind using sceCtrlReadBufferPositiveExt2 */
+ * L1/R1/L3/R3 only can bind using ksceCtrlReadBufferPositiveExt2 */
 enum SceCtrlPadButtons {
 	SCE_CTRL_SELECT      = 0x000001,	//!< Select button.
 	SCE_CTRL_L3          = 0x000002,	//!< L3 button.
@@ -55,7 +54,7 @@ enum SceCtrlPadButtons {
 };
 
 /** Enumeration for the controller types. */
-enum SceCtrlExternalInputMode {
+enum  SceCtrlExternalInputMode {
 	SCE_CTRL_TYPE_UNPAIRED  = 0,
 	SCE_CTRL_TYPE_PHY       = 1, //!< Physical controller for VITA
 	SCE_CTRL_TYPE_VIRT      = 2, //!< Virtual controller for PSTV
@@ -127,16 +126,7 @@ typedef struct SceCtrlPortInfo {
  *
  * @return The previous mode, <0 on error.
  */
-int sceCtrlSetSamplingMode(int mode);
-
-/**
- * Set the controller extend mode.
- *
- * @param[in] mode - One of ::CtrlMode.
- *
- * @return The previous mode, <0 on error.
- */
-int sceCtrlSetSamplingModeExt(int mode);
+int ksceCtrlSetSamplingMode(int mode);
 
 /**
  * Get the current controller mode.
@@ -145,7 +135,7 @@ int sceCtrlSetSamplingModeExt(int mode);
  *
  * @return The current mode, <0 on error.
  */
-int sceCtrlGetSamplingMode(int *pMode);
+int ksceCtrlGetSamplingMode(int *pMode);
 
 /**
  * Get the controller state information (polling, positive logic).
@@ -156,7 +146,7 @@ int sceCtrlGetSamplingMode(int *pMode);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
+int ksceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (polling, negative logic).
@@ -167,7 +157,7 @@ int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
+int ksceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (blocking, positive logic).
@@ -178,20 +168,7 @@ int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
-
-/**
- * Get the controller extended state information (blocking, positive logic).
- *
- * This function will bind L/R tringger value to L1/R1 instead of LTRIGGER/RTRIGGER
- *
- * @param[in] port - use 0.
- * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
- *
- * @return Buffers count, between 1 and 'count'. <0 on error.
- */
-int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
+int ksceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (blocking, negative logic).
@@ -202,7 +179,7 @@ int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
+int ksceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Set rules for button rapid fire
@@ -213,7 +190,7 @@ int sceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
  *
  * @return 0, <0 on error.
  */
-int sceCtrlSetRapidFire(int port, int idx, const SceCtrlRapidFireRule* pRule);
+int ksceCtrlSetRapidFire(int port, int idx, const SceCtrlRapidFireRule* pRule);
 
 /**
  * Clear rules for button rapid fire
@@ -223,29 +200,7 @@ int sceCtrlSetRapidFire(int port, int idx, const SceCtrlRapidFireRule* pRule);
  *
  * @return 0, <0 on error.
  */
-int sceCtrlClearRapidFire(int port, int idx);
-
-/**
- * Control the actuator (vibrate) on paired controllers.
- *
- * @param[in] port - use 1 for the first paired controller, etc.
- * @param[in] state - see ::SceCtrlActuator
- *
- * @return 0, <0 on error.
- */
-int sceCtrlSetActuator(int port, const SceCtrlActuator* pState);
-
-/**
- * Control the light bar on paired controllers.
- *
- * @param[in] port - use 1 for the first paired controller, etc.
- * @param[in] r - red intensity
- * @param[in] g - green intensity
- * @param[in] b - blue intensity
- *
- * @return 0, <0 on error.
- */
-int sceCtrlSetLightBar(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
+int ksceCtrlClearRapidFire(int port, int idx);
 
 /**
  * Get controller port information.
@@ -253,17 +208,7 @@ int sceCtrlSetLightBar(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
  * @param[out] info - see ::SceCtrlPortInfo
  * @return 0, <0 on error
  */
-int sceCtrlGetControllerPortInfo(SceCtrlPortInfo *info);
-
-/**
- * Get controller battery information.
- *
- * @param[in] port - use 1 for the first paired controller, etc.
- * @param[out] batt - battery level, between 0-5, 0xEE charging, 0xEF charged
- *
- * @return 0, <0 on error.
- */
-int sceCtrlGetBatteryInfo(int port, SceUInt8 *batt);
+int ksceCtrlGetControllerPortInfo(SceCtrlPortInfo *info);
 
 /**
  * Sets intercept
@@ -275,7 +220,7 @@ int sceCtrlGetBatteryInfo(int port, SceUInt8 *batt);
  *
  * @return     0, < 0 on error
  */
-int sceCtrlSetButtonIntercept(int intercept);
+int ksceCtrlSetButtonIntercept(int intercept);
 
 /**
  * Gets intercept
@@ -284,7 +229,51 @@ int sceCtrlSetButtonIntercept(int intercept);
  *
  * @return     0, < 0 on error
  */
-int sceCtrlGetButtonIntercept(int *intercept);
+int ksceCtrlGetButtonIntercept(int *intercept);
+
+/**
+ * Emulate buttons for the digital pad.
+ * @param port Use 0
+ * @param slot The slot used to set the custom values. Between 0 - 3. If multiple slots are used,
+ *             their settings are combined.
+ * @param userButtons Emulated user buttons of ::SceCtrlPadButtons. You cannot emulate kernel
+ *                    buttons and the emulated buttons will only be applied for applications
+ *                    running in user mode.
+ * @param kernelButtons Emulated buttons of ::SceCtrlPadButtons (you can emulate both user and
+ *                      kernel buttons). The emulated buttons will only be applied for applications
+ *                      running in kernel mode.
+ * @param uiMake Specifies the duration of the emulation. Meassured in sampling counts.
+ *
+ * @return 0 on success.
+ */
+int ksceCtrlSetButtonEmulation(unsigned int port, unsigned char slot,
+			       unsigned int userButtons, unsigned int kernelButtons,
+			       unsigned int uiMake);
+
+/**
+ * Emulate values for the analog pad's X- and Y-axis.
+ *
+ * @param port Use 0
+ * @param slot The slot used to set the custom values. Between 0 - 3. If multiple slots are used,
+ *             their settings are combined.
+ * @param lX New emulated value for the left joystick's X-axis. Between 0 - 0xFF.
+ * @param lY New emulate value for the left joystick's Y-axis. Between 0 - 0xFF.
+ * @param rX New emulated value for the right joystick's X-axis. Between 0 - 0xFF.
+ * @param rY New emulate value for the right joystick's Y-axis. Between 0 - 0xFF.
+ * @param unk0 Unknown
+ * @param unk1 Unknown
+ * @param lT New emulated value for the left trigger (L2) Between 0 - 0xFF.
+ * @param rT New emulated value for the right trigger (R2) Between 0 - 0xFF.
+ * @param uiMake Specifies the duration of the emulation. Meassured in sampling counts.
+ *
+ * @return 0 on success.
+ */
+int ksceCtrlSetAnalogEmulation(unsigned int port, unsigned char slot,
+			      unsigned char lX, unsigned char lY,
+			      unsigned char rX, unsigned char rY,
+			      unsigned char unk0, unsigned char unk1,
+			      unsigned char lT, unsigned char rT);
+
 #ifdef __cplusplus
 }
 #endif

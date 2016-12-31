@@ -826,10 +826,12 @@ modules:
         nid: 0xD197E3C7
       SceCtrlForDriver:
         functions:
+          ksceCtrlSetAnalogEmulation: 0x06577FE8
           ksceCtrlSetIdleCancelKey: 0x0A679512
           ksceCtrlSetButtonIntercept: 0x06AA5E1A
           ksceCtrlGetSamplingMode: 0x145B13BC
           ksceCtrlPeekBufferNegative: 0x19895843
+          ksceCtrlSetButtonEmulation: 0x1E750326
           ksceCtrlSetIdleCancelThreshold: 0x345E74FD
           ksceCtrlSetVibrationSetting: 0x4D8FE670
           ksceCtrlChangePortAssign: 0x53381364
