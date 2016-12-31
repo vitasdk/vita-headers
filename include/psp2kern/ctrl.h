@@ -4,7 +4,7 @@
  */
 
 /**
- * \file ctrl.h
+ * \file
  * \brief Header file which defines control related variables and functions
  *
  * Copyright (C) 2015 PSP2SDK Project
