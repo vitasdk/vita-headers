@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['scectrlexternalinputmode',['SceCtrlExternalInputMode',['../group__SceCtrlUser.html#ga4284796d5063074e02d4915af9d5ab04',1,'SceCtrlExternalInputMode():&#160;ctrl.h'],['../group__SceCtrlKernel.html#ga4284796d5063074e02d4915af9d5ab04',1,'SceCtrlExternalInputMode():&#160;ctrl.h']]],
+  ['scectrlpadbuttons',['SceCtrlPadButtons',['../group__SceCtrlUser.html#ga6104b860a63a93d46fa4348f596e8548',1,'SceCtrlPadButtons():&#160;ctrl.h'],['../group__SceCtrlKernel.html#ga6104b860a63a93d46fa4348f596e8548',1,'SceCtrlPadButtons():&#160;ctrl.h']]],
+  ['scectrlpadinputmode',['SceCtrlPadInputMode',['../group__SceCtrlUser.html#ga62ab7ac206d0514d11e60309f9621fb6',1,'SceCtrlPadInputMode():&#160;ctrl.h'],['../group__SceCtrlKernel.html#ga62ab7ac206d0514d11e60309f9621fb6',1,'SceCtrlPadInputMode():&#160;ctrl.h']]],
   ['sceeventflagattributes',['SceEventFlagAttributes',['../group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791',1,'SceEventFlagAttributes():&#160;threadmgr.h'],['../group__SceThreadMgrKernel.html#ga32240cfc9096477a62cfad5ee4768791',1,'SceEventFlagAttributes():&#160;threadmgr.h']]],
   ['sceeventflagwaittypes',['SceEventFlagWaitTypes',['../group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843',1,'SceEventFlagWaitTypes():&#160;threadmgr.h'],['../group__SceThreadMgrKernel.html#ga705f51eec6069fac8fdd74d430472843',1,'SceEventFlagWaitTypes():&#160;threadmgr.h']]],
   ['scegxterrorcode',['SceGxtErrorCode',['../group__SceGxtUser.html#ga138077ed21b596d15817981bde20f3b0',1,'gxt.h']]],

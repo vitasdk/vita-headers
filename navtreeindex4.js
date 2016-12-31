@@ -247,7 +247,7 @@ var NAVTREEINDEX4 =
 "group__SceCPUKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c":[1,5,1,0,7],
 "group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e":[3,0,0,1,1,0,4],
 "group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e":[1,5,1,0,5],
-"group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[3,0,0,1,1,0,1],
 "group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[1,5,1,0,2],
+"group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[3,0,0,1,1,0,1],
 "group__SceCPUKernel.html#ga5e4ae03a7a343e652e31eb16f815f543":[3,0,0,1,1,0,5]
 };

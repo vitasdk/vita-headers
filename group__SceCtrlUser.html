@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('group__SceCtrlUser.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#files">Files</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">User<div class="ingroups"><a class="el" href="group__Input.html">Input</a> &raquo; <a class="el" href="group__SceCtrl.html">Control Library</a></div></div>  </div>
@@ -92,14 +91,8 @@ $(document).ready(function(){initNavTree('group__SceCtrlUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ctrl_8h.html">psp2/ctrl.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">-lSceCtrl_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/ctrl.h&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">-lSceCtrl_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:ctrl_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ctrl_8h.html">ctrl.h</a></td></tr>
-<tr class="memdesc:ctrl_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file which defines control related variables and functions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad4ffc21082be15723e6d1eb0979417e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#gad4ffc21082be15723e6d1eb0979417e9">sceCtrlSetSamplingMode</a> (int mode)</td></tr>
@@ -191,13 +184,13 @@ ly</td>
 <td class="fielddoc">
 Left analogue stick, Y axis. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga49526eb7bf0cb85fa8ec1881ca6ed774"></a>uint8_t</td>
+<a id="ga50099ecf861a7075d32ed97a504d9bcc"></a>uint8_t</td>
 <td class="fieldname">
 reserved0[4]</td>
 <td class="fielddoc">
 Reserved. </td></tr>
 <tr><td class="fieldtype">
-<a id="gac46b7a6fb2bb000b63a33d004f8961c9"></a>uint8_t</td>
+<a id="ga7abbc57c181e04d91f1fcace4576c268"></a>uint8_t</td>
 <td class="fieldname">
 reserved1[10]</td>
 <td class="fielddoc">
@@ -311,7 +304,7 @@ small</td>
 <td class="fielddoc">
 Vibration strength of the small motor. </td></tr>
 <tr><td class="fieldtype">
-<a id="gadb45671391d9bef81c56d54e97d6bfc7"></a>uint8_t</td>
+<a id="ga15c58e5ea499c2108b7e04ef60740a86"></a>uint8_t</td>
 <td class="fieldname">
 unk[6]</td>
 <td class="fielddoc">
@@ -335,13 +328,13 @@ Unknown. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gab76856cb710404ffdab71c2082a6b3c4"></a>uint8_t</td>
+<a id="gabf143128d7f463532391a4290c6a1db4"></a>uint8_t</td>
 <td class="fieldname">
 port[5]</td>
 <td class="fielddoc">
 Controller type of each ports. </td></tr>
 <tr><td class="fieldtype">
-<a id="gad452c90769f307408f868524a99cb5c8"></a>uint8_t</td>
+<a id="gaf6ee01c0633dc66dcf2da6b7d1b7621b"></a>uint8_t</td>
 <td class="fieldname">
 unk[11]</td>
 <td class="fielddoc">
@@ -351,14 +344,48 @@ Unknown. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gae4d5251432e1a9e6803c0240cc492e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae4d5251432e1a9e6803c0240cc492e18">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga4284796d5063074e02d4915af9d5ab04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4284796d5063074e02d4915af9d5ab04">&sect;&nbsp;</a></span>SceCtrlExternalInputMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceCtrlUser.html#ga4284796d5063074e02d4915af9d5ab04">SceCtrlExternalInputMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration for the controller types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04a3270ad369e969b0f907370cf89900fbe"></a>SCE_CTRL_TYPE_PHY&#160;</td><td class="fielddoc"><p>Physical controller for VITA. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04a9c0a6632fed8f8af8fe9d593084b3378"></a>SCE_CTRL_TYPE_VIRT&#160;</td><td class="fielddoc"><p>Virtual controller for PSTV. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04a5abb31d61fe71e58aacce5a5979404eb"></a>SCE_CTRL_TYPE_DS3&#160;</td><td class="fielddoc"><p>DualShock 3. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04aadbee1b6c5e1bfc76593cb5c0b092751"></a>SCE_CTRL_TYPE_DS4&#160;</td><td class="fielddoc"><p>DualShock 4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04a3270ad369e969b0f907370cf89900fbe"></a>SCE_CTRL_TYPE_PHY&#160;</td><td class="fielddoc"><p>Physical controller for VITA. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04a9c0a6632fed8f8af8fe9d593084b3378"></a>SCE_CTRL_TYPE_VIRT&#160;</td><td class="fielddoc"><p>Virtual controller for PSTV. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04a5abb31d61fe71e58aacce5a5979404eb"></a>SCE_CTRL_TYPE_DS3&#160;</td><td class="fielddoc"><p>DualShock 3. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4284796d5063074e02d4915af9d5ab04aadbee1b6c5e1bfc76593cb5c0b092751"></a>SCE_CTRL_TYPE_DS4&#160;</td><td class="fielddoc"><p>DualShock 4. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga6104b860a63a93d46fa4348f596e8548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6104b860a63a93d46fa4348f596e8548">&sect;&nbsp;</a></span>SceCtrlPadButtons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceCtrlUser.html#ga6104b860a63a93d46fa4348f596e8548">SceCtrlPadButtons</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -366,89 +393,111 @@ Unknown. </td></tr>
 <p>Enumeration for the digital controller buttons. </p>
 <p>L1/R1/L3/R3 only can bind using sceCtrlReadBufferPositiveExt2 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18ad8cd1e340f5e13979b4cdefcf0487691"></a>SCE_CTRL_SELECT&#160;</td><td class="fielddoc"><p>Select button. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548ad8cd1e340f5e13979b4cdefcf0487691"></a>SCE_CTRL_SELECT&#160;</td><td class="fielddoc"><p>Select button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a1fb3c7b2e36870fca7507014d124e19b"></a>SCE_CTRL_L3&#160;</td><td class="fielddoc"><p>L3 button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a1fb3c7b2e36870fca7507014d124e19b"></a>SCE_CTRL_L3&#160;</td><td class="fielddoc"><p>L3 button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a3d1d42802f5ebd0a312e431285bd8dfc"></a>SCE_CTRL_R3&#160;</td><td class="fielddoc"><p>R3 button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a3d1d42802f5ebd0a312e431285bd8dfc"></a>SCE_CTRL_R3&#160;</td><td class="fielddoc"><p>R3 button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a8728e23635e8a8cb66bba777182be4de"></a>SCE_CTRL_START&#160;</td><td class="fielddoc"><p>Start button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a8728e23635e8a8cb66bba777182be4de"></a>SCE_CTRL_START&#160;</td><td class="fielddoc"><p>Start button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a4275a1d4d7b662514f3258423e0fd770"></a>SCE_CTRL_UP&#160;</td><td class="fielddoc"><p>Up D-Pad button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a4275a1d4d7b662514f3258423e0fd770"></a>SCE_CTRL_UP&#160;</td><td class="fielddoc"><p>Up D-Pad button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a69bf7b49f9cbe3fd1c3a6cf615d69dc1"></a>SCE_CTRL_RIGHT&#160;</td><td class="fielddoc"><p>Right D-Pad button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a69bf7b49f9cbe3fd1c3a6cf615d69dc1"></a>SCE_CTRL_RIGHT&#160;</td><td class="fielddoc"><p>Right D-Pad button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a152892bee6c021fb3a41aa1d753ca338"></a>SCE_CTRL_DOWN&#160;</td><td class="fielddoc"><p>Down D-Pad button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a152892bee6c021fb3a41aa1d753ca338"></a>SCE_CTRL_DOWN&#160;</td><td class="fielddoc"><p>Down D-Pad button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a2cead064cd16d43807e6a2445bf8a362"></a>SCE_CTRL_LEFT&#160;</td><td class="fielddoc"><p>Left D-Pad button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a2cead064cd16d43807e6a2445bf8a362"></a>SCE_CTRL_LEFT&#160;</td><td class="fielddoc"><p>Left D-Pad button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a04799c8e184d2ae7f7df6633fff89f86"></a>SCE_CTRL_LTRIGGER&#160;</td><td class="fielddoc"><p>Left trigger. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a04799c8e184d2ae7f7df6633fff89f86"></a>SCE_CTRL_LTRIGGER&#160;</td><td class="fielddoc"><p>Left trigger. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a8a8396d93981d7ac967a7ae405dbd990"></a>SCE_CTRL_RTRIGGER&#160;</td><td class="fielddoc"><p>Right trigger. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a8a8396d93981d7ac967a7ae405dbd990"></a>SCE_CTRL_RTRIGGER&#160;</td><td class="fielddoc"><p>Right trigger. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a5e20bb0f019d500e4da1c92fdcfd3661"></a>SCE_CTRL_L1&#160;</td><td class="fielddoc"><p>L1 button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a5e20bb0f019d500e4da1c92fdcfd3661"></a>SCE_CTRL_L1&#160;</td><td class="fielddoc"><p>L1 button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a62eba282b8050258e35271feb159a39a"></a>SCE_CTRL_R1&#160;</td><td class="fielddoc"><p>R1 button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a62eba282b8050258e35271feb159a39a"></a>SCE_CTRL_R1&#160;</td><td class="fielddoc"><p>R1 button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a9debd2be025f0e081238399dd396d456"></a>SCE_CTRL_TRIANGLE&#160;</td><td class="fielddoc"><p>Triangle button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a9debd2be025f0e081238399dd396d456"></a>SCE_CTRL_TRIANGLE&#160;</td><td class="fielddoc"><p>Triangle button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18acc26a837d4e5a5cfb62adaf48ddead2c"></a>SCE_CTRL_CIRCLE&#160;</td><td class="fielddoc"><p>Circle button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548acc26a837d4e5a5cfb62adaf48ddead2c"></a>SCE_CTRL_CIRCLE&#160;</td><td class="fielddoc"><p>Circle button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a477d551daa482e03598b67aaf4466923"></a>SCE_CTRL_CROSS&#160;</td><td class="fielddoc"><p>Cross button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a477d551daa482e03598b67aaf4466923"></a>SCE_CTRL_CROSS&#160;</td><td class="fielddoc"><p>Cross button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18af935d4e61120671b2acdf6cee2f776e6"></a>SCE_CTRL_SQUARE&#160;</td><td class="fielddoc"><p>Square button. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548af935d4e61120671b2acdf6cee2f776e6"></a>SCE_CTRL_SQUARE&#160;</td><td class="fielddoc"><p>Square button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae4d5251432e1a9e6803c0240cc492e18a12085cf461189faeb160ccd99affe06d"></a>SCE_CTRL_INTERCEPTED&#160;</td><td class="fielddoc"><p>Input not available because intercepted by another application. </p>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a12085cf461189faeb160ccd99affe06d"></a>SCE_CTRL_INTERCEPTED&#160;</td><td class="fielddoc"><p>Input not available because intercepted by another application. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a436d88aeb4ce14521088bd556eb863cc"></a>SCE_CTRL_VOLUP&#160;</td><td class="fielddoc"><p>Volume up button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548aeab7d0c864db59474af654aad4427963"></a>SCE_CTRL_VOLDOWN&#160;</td><td class="fielddoc"><p>Volume down button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548ad8cd1e340f5e13979b4cdefcf0487691"></a>SCE_CTRL_SELECT&#160;</td><td class="fielddoc"><p>Select button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a1fb3c7b2e36870fca7507014d124e19b"></a>SCE_CTRL_L3&#160;</td><td class="fielddoc"><p>L3 button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a3d1d42802f5ebd0a312e431285bd8dfc"></a>SCE_CTRL_R3&#160;</td><td class="fielddoc"><p>R3 button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a8728e23635e8a8cb66bba777182be4de"></a>SCE_CTRL_START&#160;</td><td class="fielddoc"><p>Start button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a4275a1d4d7b662514f3258423e0fd770"></a>SCE_CTRL_UP&#160;</td><td class="fielddoc"><p>Up D-Pad button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a69bf7b49f9cbe3fd1c3a6cf615d69dc1"></a>SCE_CTRL_RIGHT&#160;</td><td class="fielddoc"><p>Right D-Pad button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a152892bee6c021fb3a41aa1d753ca338"></a>SCE_CTRL_DOWN&#160;</td><td class="fielddoc"><p>Down D-Pad button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a2cead064cd16d43807e6a2445bf8a362"></a>SCE_CTRL_LEFT&#160;</td><td class="fielddoc"><p>Left D-Pad button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a04799c8e184d2ae7f7df6633fff89f86"></a>SCE_CTRL_LTRIGGER&#160;</td><td class="fielddoc"><p>Left trigger. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a8a8396d93981d7ac967a7ae405dbd990"></a>SCE_CTRL_RTRIGGER&#160;</td><td class="fielddoc"><p>Right trigger. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a5e20bb0f019d500e4da1c92fdcfd3661"></a>SCE_CTRL_L1&#160;</td><td class="fielddoc"><p>L1 button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a62eba282b8050258e35271feb159a39a"></a>SCE_CTRL_R1&#160;</td><td class="fielddoc"><p>R1 button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a9debd2be025f0e081238399dd396d456"></a>SCE_CTRL_TRIANGLE&#160;</td><td class="fielddoc"><p>Triangle button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548acc26a837d4e5a5cfb62adaf48ddead2c"></a>SCE_CTRL_CIRCLE&#160;</td><td class="fielddoc"><p>Circle button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a477d551daa482e03598b67aaf4466923"></a>SCE_CTRL_CROSS&#160;</td><td class="fielddoc"><p>Cross button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548af935d4e61120671b2acdf6cee2f776e6"></a>SCE_CTRL_SQUARE&#160;</td><td class="fielddoc"><p>Square button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a12085cf461189faeb160ccd99affe06d"></a>SCE_CTRL_INTERCEPTED&#160;</td><td class="fielddoc"><p>Input not available because intercepted by another application. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548a436d88aeb4ce14521088bd556eb863cc"></a>SCE_CTRL_VOLUP&#160;</td><td class="fielddoc"><p>Volume up button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6104b860a63a93d46fa4348f596e8548aeab7d0c864db59474af654aad4427963"></a>SCE_CTRL_VOLDOWN&#160;</td><td class="fielddoc"><p>Volume down button. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="ga7ff5f2dff38e7639981794c43dc9167b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ff5f2dff38e7639981794c43dc9167b">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga62ab7ac206d0514d11e60309f9621fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62ab7ac206d0514d11e60309f9621fb6">&sect;&nbsp;</a></span>SceCtrlPadInputMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumeration for the controller types. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7ff5f2dff38e7639981794c43dc9167ba3270ad369e969b0f907370cf89900fbe"></a>SCE_CTRL_TYPE_PHY&#160;</td><td class="fielddoc"><p>Physical controller for VITA. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga7ff5f2dff38e7639981794c43dc9167ba9c0a6632fed8f8af8fe9d593084b3378"></a>SCE_CTRL_TYPE_VIRT&#160;</td><td class="fielddoc"><p>Virtual controller for PSTV. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga7ff5f2dff38e7639981794c43dc9167ba5abb31d61fe71e58aacce5a5979404eb"></a>SCE_CTRL_TYPE_DS3&#160;</td><td class="fielddoc"><p>DualShock 3. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga7ff5f2dff38e7639981794c43dc9167baadbee1b6c5e1bfc76593cb5c0b092751"></a>SCE_CTRL_TYPE_DS4&#160;</td><td class="fielddoc"><p>DualShock 4. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="gaabfcbcb5ac86a1edac4035264bc7d2b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaabfcbcb5ac86a1edac4035264bc7d2b8">&sect;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceCtrlUser.html#ga62ab7ac206d0514d11e60309f9621fb6">SceCtrlPadInputMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Controller mode. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaabfcbcb5ac86a1edac4035264bc7d2b8a1951834c61aba21f0dfb38d7903f24ce"></a>SCE_CTRL_MODE_DIGITAL&#160;</td><td class="fielddoc"><p>Digitial buttons only. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga62ab7ac206d0514d11e60309f9621fb6a1951834c61aba21f0dfb38d7903f24ce"></a>SCE_CTRL_MODE_DIGITAL&#160;</td><td class="fielddoc"><p>Digitial buttons only. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaabfcbcb5ac86a1edac4035264bc7d2b8a780c329128179cd6389cd123b724bfdb"></a>SCE_CTRL_MODE_ANALOG&#160;</td><td class="fielddoc"><p>Digital buttons + Analog support. </p>
+<tr><td class="fieldname"><a id="gga62ab7ac206d0514d11e60309f9621fb6a780c329128179cd6389cd123b724bfdb"></a>SCE_CTRL_MODE_ANALOG&#160;</td><td class="fielddoc"><p>Digital buttons + Analog support. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaabfcbcb5ac86a1edac4035264bc7d2b8aadf52d1d57abe790115e1e5cc2352151"></a>SCE_CTRL_MODE_ANALOG_WIDE&#160;</td><td class="fielddoc"><p>Same as <a class="el" href="group__SceCtrlUser.html#ggaabfcbcb5ac86a1edac4035264bc7d2b8a780c329128179cd6389cd123b724bfdb" title="Digital buttons + Analog support. ">SCE_CTRL_MODE_ANALOG</a>, but with larger range for analog sticks. </p>
+<tr><td class="fieldname"><a id="gga62ab7ac206d0514d11e60309f9621fb6aadf52d1d57abe790115e1e5cc2352151"></a>SCE_CTRL_MODE_ANALOG_WIDE&#160;</td><td class="fielddoc"><p>Same as <a class="el" href="group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6a780c329128179cd6389cd123b724bfdb" title="Digital buttons + Analog support. ">SCE_CTRL_MODE_ANALOG</a>, but with larger range for analog sticks. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga62ab7ac206d0514d11e60309f9621fb6a1951834c61aba21f0dfb38d7903f24ce"></a>SCE_CTRL_MODE_DIGITAL&#160;</td><td class="fielddoc"><p>Digitial buttons only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga62ab7ac206d0514d11e60309f9621fb6a780c329128179cd6389cd123b724bfdb"></a>SCE_CTRL_MODE_ANALOG&#160;</td><td class="fielddoc"><p>Digital buttons + Analog support. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga62ab7ac206d0514d11e60309f9621fb6aadf52d1d57abe790115e1e5cc2352151"></a>SCE_CTRL_MODE_ANALOG_WIDE&#160;</td><td class="fielddoc"><p>Same as <a class="el" href="group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6a780c329128179cd6389cd123b724bfdb" title="Digital buttons + Analog support. ">SCE_CTRL_MODE_ANALOG</a>, but with larger range for analog sticks. </p>
 </td></tr>
 </table>
 
@@ -1059,7 +1108,7 @@ Unknown. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Dec 31 2016 10:46:49 for vitasdk by
+    <li class="footer">Generated on Sat Dec 31 2016 15:30:36 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

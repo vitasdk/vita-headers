@@ -12,7 +12,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "audioout.h", "audioout_8h.html", "audioout_8h" ],
     [ "camera.h", "camera_8h.html", "camera_8h" ],
     [ "common_dialog.h", "common__dialog_8h.html", "common__dialog_8h" ],
-    [ "ctrl.h", "ctrl_8h.html", "ctrl_8h" ],
+    [ "ctrl.h", "ctrl_8h_source.html", null ],
     [ "display.h", "display_8h.html", "display_8h" ],
     [ "fiber.h", "fiber_8h.html", "fiber_8h" ],
     [ "gxm.h", "gxm_8h.html", "gxm_8h" ],
