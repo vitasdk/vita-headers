@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"group__SceBtKernel.html#ga3735cf4226ccbbae34fb2714dbd4a876":[3,0,0,1,3,180],
 "group__SceBtKernel.html#ga38719489a60b9f9f9e3fbca1ee3f94d4":[3,0,0,1,3,134],
 "group__SceBtKernel.html#ga3966e550c2b4dbc1c59bf996e90986f7":[3,0,0,1,3,128],
 "group__SceBtKernel.html#ga3a2561253eafc8ce1a51f1bfcac1ce6e":[3,0,0,1,3,199],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e":[3,0,0,1,1,0,4],
 "group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e":[1,5,1,0,5],
 "group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[1,5,1,0,2],
-"group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[3,0,0,1,1,0,1],
-"group__SceCPUKernel.html#ga5e4ae03a7a343e652e31eb16f815f543":[3,0,0,1,1,0,5]
+"group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[3,0,0,1,1,0,1]
 };

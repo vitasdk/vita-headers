@@ -10,6 +10,7 @@ var searchData=
   ['common_5fdialog_2eh',['common_dialog.h',['../common__dialog_8h.html',1,'']]],
   ['controlwords',['controlWords',['../group__SceGxtUser.html#gab6e256ae974dac491a639e0b8eacda40',1,'SceGxtTextureInfo']]],
   ['cpu_2eh',['cpu.h',['../cpu_8h.html',1,'']]],
+  ['ctrl_2eh',['ctrl.h',['../ern_2ctrl_8h.html',1,'']]],
   ['currentcount',['currentCount',['../group__SceThreadMgrUser.html#gad0aef61d05f3ba87f555aecd2c81707d',1,'SceKernelSemaInfo::currentCount()'],['../group__SceThreadMgrUser.html#gac2d933dddbfbe8a103e0d898e6fe8f28',1,'SceKernelMutexInfo::currentCount()']]],
   ['currentcpuaffinitymask',['currentCpuAffinityMask',['../group__SceThreadMgrUser.html#gaaf23a644c1d865e80daa689818e674d8',1,'SceKernelThreadInfo']]],
   ['currentcpuid',['currentCpuId',['../group__SceThreadMgrUser.html#ga50906a74664a943234706e8e7f1be54e',1,'SceKernelThreadInfo']]],
