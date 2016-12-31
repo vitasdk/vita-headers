@@ -782,21 +782,21 @@ modules:
         kernel: false
         nid: 0xE537816C
   SceCoredump:
-    nid: 0x1E
+    nid: 0x3E0F5EBD
     libraries:
       SceCoredump:
         functions:
           sceCoredumpRegisterCoredumpHandler: 0x31DC61E
           sceCoredumpUnregisterCoredumpHandler: 0x6037A2C3
         kernel: false
-        nid: 0x1F
+        nid: 0xA143A77F
       SceCoredumpNounlink:
         functions:
           sceCoredumpWriteUserData: 0xDF335DCF
         kernel: false
-        nid: 0x20
+        nid: 0x2646E9D8
   SceCtrl:
-    nid: 0x21
+    nid: 0x3BAF0220
     libraries:
       SceCtrl:
         functions:
@@ -824,6 +824,30 @@ modules:
           sceCtrlGetBatteryInfo: 0x8F9B1CE5
         kernel: false
         nid: 0xD197E3C7
+      SceCtrlForDriver:
+        functions:
+          ksceCtrlSetIdleCancelKey: 0x0A679512
+          ksceCtrlSetButtonIntercept: 0x06AA5E1A
+          ksceCtrlGetSamplingMode: 0x145B13BC
+          ksceCtrlPeekBufferNegative: 0x19895843
+          ksceCtrlSetIdleCancelThreshold: 0x345E74FD
+          ksceCtrlSetVibrationSetting: 0x4D8FE670
+          ksceCtrlChangePortAssign: 0x53381364
+          ksceCtrlIsBdRemoconConnected: 0x5B849B22
+          ksceCtrlGetButtonIntercept: 0x6BEB1CD7
+          ksceCtrlSetSamplingMode: 0x80F5E418
+          ksceCtrlReadBufferNegative: 0x8D4E0DD1
+          ksceCtrlReadBufferPositive: 0x9B96A1AA
+          ksceCtrlUnregisterNotifyCallBack: 0x9DAB51C4
+          ksceCtrlSetRapidFire: 0xA248CDAE
+          ksceCtrlRegisterNotifyCallBack: 0xE170883E
+          ksceCtrlPeekBufferPositive: 0xEA1D3A34
+          ksceCtrlClearRapidFire: 0xED138A26
+          ksceCtrlSetTurnOffInterval: 0xED8F0129
+          ksceCtrlGetControllerPortInfo: 0xF11D0D30
+          ksceCtrlGetActiveControllerPort: 0xFA88D837
+        kernel: true
+        nid: 0x7823A5D1
   SceDTrace:
     nid: 0x23
     libraries:
@@ -887,7 +911,7 @@ modules:
         kernel: false
         nid: 0xF6A0A8B6
   SceDisplay:
-    nid: 0x2B
+    nid: 0x3F05296F
     libraries:
       SceDisplay:
         functions:
@@ -3019,7 +3043,7 @@ modules:
         kernel: false
         nid: 0x560D1608
   SceNet:
-    nid: 0x69
+    nid: 0x5A7BCCDA
     libraries:
       SceNet:
         functions:
@@ -4624,7 +4648,7 @@ modules:
         kernel: false
         nid: 0xAF3FE2D3
   SceTouch:
-    nid: 0xDA
+    nid: 0x7DAC4DEC
     libraries:
       SceTouch:
         functions:
@@ -4644,6 +4668,11 @@ modules:
           sceTouchSetSamplingStateExt: 0x13CDFC43
         kernel: false
         nid: 0x3E4F4A81
+      SceTouchForDriver:
+        functions:
+          ksceTouchSetTouchEmulationData: 0xA32529B8
+        kernel: true
+        nid: 0xA4A7DAFC
   SceUlt:
     nid: 0xDC
     libraries:
