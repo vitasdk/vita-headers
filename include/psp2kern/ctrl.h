@@ -260,10 +260,10 @@ int ksceCtrlSetButtonEmulation(unsigned int port, unsigned char slot,
  * @param lY New emulate value for the left joystick's Y-axis. Between 0 - 0xFF.
  * @param rX New emulated value for the right joystick's X-axis. Between 0 - 0xFF.
  * @param rY New emulate value for the right joystick's Y-axis. Between 0 - 0xFF.
- * @param unk0 Unknown
- * @param unk1 Unknown
  * @param lT New emulated value for the left trigger (L2) Between 0 - 0xFF.
  * @param rT New emulated value for the right trigger (R2) Between 0 - 0xFF.
+ * @param unk0 Unknown
+ * @param unk1 Unknown
  * @param uiMake Specifies the duration of the emulation. Meassured in sampling counts.
  *
  * @return 0 on success.
@@ -271,8 +271,9 @@ int ksceCtrlSetButtonEmulation(unsigned int port, unsigned char slot,
 int ksceCtrlSetAnalogEmulation(unsigned int port, unsigned char slot,
 			      unsigned char lX, unsigned char lY,
 			      unsigned char rX, unsigned char rY,
+			      unsigned char lT, unsigned char rT,
 			      unsigned char unk0, unsigned char unk1,
-			      unsigned char lT, unsigned char rT);
+			      unsigned int uiMake);
 
 #ifdef __cplusplus
 }
