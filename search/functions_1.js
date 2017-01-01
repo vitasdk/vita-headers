@@ -8,7 +8,7 @@ var searchData=
   ['kscectrlpeekbufferpositive',['ksceCtrlPeekBufferPositive',['../group__SceCtrlKernel.html#ga9bb2e72e0c38faa90c52e2a5f8dd261b',1,'ctrl.h']]],
   ['kscectrlreadbuffernegative',['ksceCtrlReadBufferNegative',['../group__SceCtrlKernel.html#ga4eca66f80aa7f143b94aa89c6c086922',1,'ctrl.h']]],
   ['kscectrlreadbufferpositive',['ksceCtrlReadBufferPositive',['../group__SceCtrlKernel.html#gadf5478055d11791f3b8e0605fae888bc',1,'ctrl.h']]],
-  ['kscectrlsetanalogemulation',['ksceCtrlSetAnalogEmulation',['../group__SceCtrlKernel.html#gaa5dcd41d38b946a6e7c3a468f723fc0a',1,'ctrl.h']]],
+  ['kscectrlsetanalogemulation',['ksceCtrlSetAnalogEmulation',['../group__SceCtrlKernel.html#gaa7f2940d65064a47181bc6cb406eabb9',1,'ctrl.h']]],
   ['kscectrlsetbuttonemulation',['ksceCtrlSetButtonEmulation',['../group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d',1,'ctrl.h']]],
   ['kscectrlsetbuttonintercept',['ksceCtrlSetButtonIntercept',['../group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab',1,'ctrl.h']]],
   ['kscectrlsetrapidfire',['ksceCtrlSetRapidFire',['../group__SceCtrlKernel.html#ga05db34aca37ced3e16ea9a0ecf6275dd',1,'ctrl.h']]],
