@@ -256,23 +256,23 @@ int ksceCtrlSetButtonEmulation(unsigned int port, unsigned char slot,
  * @param port Use 0
  * @param slot The slot used to set the custom values. Between 0 - 3. If multiple slots are used,
  *             their settings are combined.
- * @param lX New emulated value for the left joystick's X-axis. Between 0 - 0xFF.
- * @param lY New emulate value for the left joystick's Y-axis. Between 0 - 0xFF.
- * @param rX New emulated value for the right joystick's X-axis. Between 0 - 0xFF.
- * @param rY New emulate value for the right joystick's Y-axis. Between 0 - 0xFF.
- * @param lT New emulated value for the left trigger (L2) Between 0 - 0xFF.
- * @param rT New emulated value for the right trigger (R2) Between 0 - 0xFF.
- * @param unk0 Unknown
- * @param unk1 Unknown
+ * @param user_lX New emulated value for the left joystick's X-axis (userspace). Between 0 - 0xFF.
+ * @param user_lY New emulate value for the left joystick's Y-axis (userspace). Between 0 - 0xFF.
+ * @param user_rX New emulated value for the right joystick's X-axis (userspace). Between 0 - 0xFF.
+ * @param user_rY New emulate value for the right joystick's Y-axis (userspace). Between 0 - 0xFF.
+ * @param kernel_lX New emulated value for the left joystick's X-axis (kernelspace). Between 0 - 0xFF.
+ * @param kernel_lY New emulate value for the left joystick's Y-axis (kernelspace). Between 0 - 0xFF.
+ * @param kernel_rX New emulated value for the right joystick's X-axis (kernelspace). Between 0 - 0xFF.
+ * @param kernel_rY New emulate value for the right joystick's Y-axis (kernelspace). Between 0 - 0xFF.
  * @param uiMake Specifies the duration of the emulation. Meassured in sampling counts.
  *
  * @return 0 on success.
  */
 int ksceCtrlSetAnalogEmulation(unsigned int port, unsigned char slot,
-			      unsigned char lX, unsigned char lY,
-			      unsigned char rX, unsigned char rY,
-			      unsigned char lT, unsigned char rT,
-			      unsigned char unk0, unsigned char unk1,
+			      unsigned char user_lX, unsigned char user_lY,
+			      unsigned char user_rX, unsigned char user_rY,
+			      unsigned char kernel_lX, unsigned char kernel_lY,
+			      unsigned char kernel_rX, unsigned char kernel_rY,
 			      unsigned int uiMake);
 
 #ifdef __cplusplus
