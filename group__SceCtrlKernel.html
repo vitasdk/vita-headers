@@ -138,9 +138,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga228c34880869b12d0f256fb49782471d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d">ksceCtrlSetButtonEmulation</a> (unsigned int port, unsigned char slot, unsigned int userButtons, unsigned int kernelButtons, unsigned int uiMake)</td></tr>
 <tr class="memdesc:ga228c34880869b12d0f256fb49782471d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulate buttons for the digital pad.  <a href="#ga228c34880869b12d0f256fb49782471d">More...</a><br /></td></tr>
 <tr class="separator:ga228c34880869b12d0f256fb49782471d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7f2940d65064a47181bc6cb406eabb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gaa7f2940d65064a47181bc6cb406eabb9">ksceCtrlSetAnalogEmulation</a> (unsigned int port, unsigned char slot, unsigned char lX, unsigned char lY, unsigned char rX, unsigned char rY, unsigned char lT, unsigned char rT, unsigned char unk0, unsigned char unk1, unsigned int uiMake)</td></tr>
-<tr class="memdesc:gaa7f2940d65064a47181bc6cb406eabb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulate values for the analog pad's X- and Y-axis.  <a href="#gaa7f2940d65064a47181bc6cb406eabb9">More...</a><br /></td></tr>
-<tr class="separator:gaa7f2940d65064a47181bc6cb406eabb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4564b9daaee3dac2fd7a2928a793a22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22">ksceCtrlSetAnalogEmulation</a> (unsigned int port, unsigned char slot, unsigned char user_lX, unsigned char user_lY, unsigned char user_rX, unsigned char user_rY, unsigned char kernel_lX, unsigned char kernel_lY, unsigned char kernel_rX, unsigned char kernel_rY, unsigned int uiMake)</td></tr>
+<tr class="memdesc:gad4564b9daaee3dac2fd7a2928a793a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulate values for the analog pad's X- and Y-axis.  <a href="#gad4564b9daaee3dac2fd7a2928a793a22">More...</a><br /></td></tr>
+<tr class="separator:gad4564b9daaee3dac2fd7a2928a793a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCtrlData" id="structSceCtrlData"></a>
@@ -801,8 +801,8 @@ Unknown. </td></tr>
 
 </div>
 </div>
-<a id="gaa7f2940d65064a47181bc6cb406eabb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa7f2940d65064a47181bc6cb406eabb9">&sect;&nbsp;</a></span>ksceCtrlSetAnalogEmulation()</h2>
+<a id="gad4564b9daaee3dac2fd7a2928a793a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4564b9daaee3dac2fd7a2928a793a22">&sect;&nbsp;</a></span>ksceCtrlSetAnalogEmulation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -823,49 +823,49 @@ Unknown. </td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>lX</em>, </td>
+          <td class="paramname"><em>user_lX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>lY</em>, </td>
+          <td class="paramname"><em>user_lY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>rX</em>, </td>
+          <td class="paramname"><em>user_rX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>rY</em>, </td>
+          <td class="paramname"><em>user_rY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>lT</em>, </td>
+          <td class="paramname"><em>kernel_lX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>rT</em>, </td>
+          <td class="paramname"><em>kernel_lY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>unk0</em>, </td>
+          <td class="paramname"><em>kernel_rX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned char&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
+          <td class="paramname"><em>kernel_rY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -886,14 +886,14 @@ Unknown. </td></tr>
   <table class="params">
     <tr><td class="paramname">port</td><td>Use 0 </td></tr>
     <tr><td class="paramname">slot</td><td>The slot used to set the custom values. Between 0 - 3. If multiple slots are used, their settings are combined. </td></tr>
-    <tr><td class="paramname">lX</td><td>New emulated value for the left joystick's X-axis. Between 0 - 0xFF. </td></tr>
-    <tr><td class="paramname">lY</td><td>New emulate value for the left joystick's Y-axis. Between 0 - 0xFF. </td></tr>
-    <tr><td class="paramname">rX</td><td>New emulated value for the right joystick's X-axis. Between 0 - 0xFF. </td></tr>
-    <tr><td class="paramname">rY</td><td>New emulate value for the right joystick's Y-axis. Between 0 - 0xFF. </td></tr>
-    <tr><td class="paramname">lT</td><td>New emulated value for the left trigger (L2) Between 0 - 0xFF. </td></tr>
-    <tr><td class="paramname">rT</td><td>New emulated value for the right trigger (R2) Between 0 - 0xFF. </td></tr>
-    <tr><td class="paramname">unk0</td><td>Unknown </td></tr>
-    <tr><td class="paramname">unk1</td><td>Unknown </td></tr>
+    <tr><td class="paramname">user_lX</td><td>New emulated value for the left joystick's X-axis (userspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">user_lY</td><td>New emulate value for the left joystick's Y-axis (userspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">user_rX</td><td>New emulated value for the right joystick's X-axis (userspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">user_rY</td><td>New emulate value for the right joystick's Y-axis (userspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">kernel_lX</td><td>New emulated value for the left joystick's X-axis (kernelspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">kernel_lY</td><td>New emulate value for the left joystick's Y-axis (kernelspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">kernel_rX</td><td>New emulated value for the right joystick's X-axis (kernelspace). Between 0 - 0xFF. </td></tr>
+    <tr><td class="paramname">kernel_rY</td><td>New emulate value for the right joystick's Y-axis (kernelspace). Between 0 - 0xFF. </td></tr>
     <tr><td class="paramname">uiMake</td><td>Specifies the duration of the emulation. Meassured in sampling counts.</td></tr>
   </table>
   </dd>
@@ -1065,7 +1065,7 @@ Unknown. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 1 2017 13:05:53 for vitasdk by
+    <li class="footer">Generated on Mon Jan 2 2017 00:07:46 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

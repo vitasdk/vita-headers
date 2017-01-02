@@ -93,7 +93,7 @@ var group__SceCtrlKernel =
     [ "ksceCtrlPeekBufferPositive", "group__SceCtrlKernel.html#ga9bb2e72e0c38faa90c52e2a5f8dd261b", null ],
     [ "ksceCtrlReadBufferNegative", "group__SceCtrlKernel.html#ga4eca66f80aa7f143b94aa89c6c086922", null ],
     [ "ksceCtrlReadBufferPositive", "group__SceCtrlKernel.html#gadf5478055d11791f3b8e0605fae888bc", null ],
-    [ "ksceCtrlSetAnalogEmulation", "group__SceCtrlKernel.html#gaa7f2940d65064a47181bc6cb406eabb9", null ],
+    [ "ksceCtrlSetAnalogEmulation", "group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22", null ],
     [ "ksceCtrlSetButtonEmulation", "group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d", null ],
     [ "ksceCtrlSetButtonIntercept", "group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab", null ],
     [ "ksceCtrlSetRapidFire", "group__SceCtrlKernel.html#ga05db34aca37ced3e16ea9a0ecf6275dd", null ],
