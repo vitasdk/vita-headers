@@ -200,6 +200,19 @@ var annotated_dup =
     [ "SceTouchData", "group__SceTouchUser.html#structSceTouchData", "group__SceTouchUser_structSceTouchData" ],
     [ "SceTouchPanelInfo", "group__SceTouchUser.html#structSceTouchPanelInfo", "group__SceTouchUser_structSceTouchPanelInfo" ],
     [ "SceTouchReport", "group__SceTouchUser.html#structSceTouchReport", "group__SceTouchUser_structSceTouchReport" ],
+    [ "SceUdcdConfigDescriptor", "group__SceUdcdKernel.html#structSceUdcdConfigDescriptor", "group__SceUdcdKernel_structSceUdcdConfigDescriptor" ],
+    [ "SceUdcdConfiguration", "group__SceUdcdKernel.html#structSceUdcdConfiguration", "group__SceUdcdKernel_structSceUdcdConfiguration" ],
+    [ "SceUdcdDeviceDescriptor", "group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor", "group__SceUdcdKernel_structSceUdcdDeviceDescriptor" ],
+    [ "SceUdcdDeviceRequest", "structSceUdcdDeviceRequest.html", "structSceUdcdDeviceRequest" ],
+    [ "SceUdcdDriver", "structSceUdcdDriver.html", "structSceUdcdDriver" ],
+    [ "SceUdcdDriverName", "group__SceUdcdKernel.html#structSceUdcdDriverName", "group__SceUdcdKernel_structSceUdcdDriverName" ],
+    [ "SceUdcdEndpoint", "group__SceUdcdKernel.html#structSceUdcdEndpoint", "group__SceUdcdKernel_structSceUdcdEndpoint" ],
+    [ "SceUdcdEndpointDescriptor", "group__SceUdcdKernel.html#structSceUdcdEndpointDescriptor", "group__SceUdcdKernel_structSceUdcdEndpointDescriptor" ],
+    [ "SceUdcdEP0DeviceRequest", "group__SceUdcdKernel.html#structSceUdcdEP0DeviceRequest", "group__SceUdcdKernel_structSceUdcdEP0DeviceRequest" ],
+    [ "SceUdcdInterface", "group__SceUdcdKernel.html#structSceUdcdInterface", "group__SceUdcdKernel_structSceUdcdInterface" ],
+    [ "SceUdcdInterfaceDescriptor", "group__SceUdcdKernel.html#structSceUdcdInterfaceDescriptor", "group__SceUdcdKernel_structSceUdcdInterfaceDescriptor" ],
+    [ "SceUdcdInterfaceSettings", "group__SceUdcdKernel.html#structSceUdcdInterfaceSettings", "group__SceUdcdKernel_structSceUdcdInterfaceSettings" ],
+    [ "SceUdcdStringDescriptor", "group__SceUdcdKernel.html#structSceUdcdStringDescriptor", "group__SceUdcdKernel_structSceUdcdStringDescriptor" ],
     [ "SceUMatrix4", "group__SceTypesUser.html#structSceUMatrix4", "group__SceTypesUser_structSceUMatrix4" ],
     [ "SceUnion128", "group__SceTypesUser.html#unionSceUnion128", "group__SceTypesUser_unionSceUnion128" ],
     [ "SceUnion32", "group__SceTypesUser.html#unionSceUnion32", "group__SceTypesUser_unionSceUnion32" ],
@@ -208,5 +221,6 @@ var annotated_dup =
     [ "SceVideodecQueryInitInfo", "group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo", "group__SceVideoDecUser_unionSceVideodecQueryInitInfo" ],
     [ "SceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser_structSceVideodecQueryInitInfoHwAvcdec" ],
     [ "SceVideodecTimeStamp", "group__SceVideoDecUser.html#structSceVideodecTimeStamp", "group__SceVideoDecUser_structSceVideodecTimeStamp" ],
-    [ "ScreenshotParam", "group__SceScreenshotUser.html#structScreenshotParam", "group__SceScreenshotUser_structScreenshotParam" ]
+    [ "ScreenshotParam", "group__SceScreenshotUser.html#structScreenshotParam", "group__SceScreenshotUser_structScreenshotParam" ],
+    [ "UsbDeviceQualifierDescriptor", "group__SceUdcdKernel.html#structUsbDeviceQualifierDescriptor", "group__SceUdcdKernel_structUsbDeviceQualifierDescriptor" ]
 ];

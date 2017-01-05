@@ -7,5 +7,6 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "ctrl.h", "ern_2ctrl_8h.html", "ern_2ctrl_8h" ],
     [ "sblacmgr.h", "sblacmgr_8h.html", "sblacmgr_8h" ],
     [ "types.h", "ern_2types_8h.html", "ern_2types_8h" ],
+    [ "udcd.h", "udcd_8h.html", "udcd_8h" ],
     [ "usbserial.h", "ern_2usbserial_8h.html", "ern_2usbserial_8h" ]
 ];

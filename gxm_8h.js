@@ -1081,5 +1081,5 @@ var gxm_8h =
     [ "sceGxmUnmapMemory", "group__SceGxmUser.html#gad4a57723e7adcf155cfe5b3a348a413b", null ],
     [ "sceGxmUnmapVertexUsseMemory", "group__SceGxmUser.html#gab51f3e125420cb1da0f9bc10cc6d1b56", null ],
     [ "sceGxmVertexProgramGetProgram", "group__SceGxmUser.html#ga646cf6e5132ec515195d7038460d3d3e", null ],
-    [ "__attribute__", "group__SceGxmUser.html#ga9c979499dec4b18ca9f34ba7141dcbe7", null ]
+    [ "__attribute__", "group__SceGxmUser.html#ga2536a6ec23533eff5aeff4705f40f54d", null ]
 ];

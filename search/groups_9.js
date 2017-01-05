@@ -11,5 +11,6 @@ var searchData=
   ['kernel',['Kernel',['../group__SceSblACMgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceSysmemKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceThreadMgrKernel.html',1,'']]],
-  ['kernel',['Kernel',['../group__SceTypesKernel.html',1,'']]]
+  ['kernel',['Kernel',['../group__SceTypesKernel.html',1,'']]],
+  ['kernel',['Kernel',['../group__SceUdcdKernel.html',1,'']]]
 ];
