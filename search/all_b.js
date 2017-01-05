@@ -51,6 +51,7 @@ var searchData=
   ['kscekernelcpudcacheandl2anddmaflush',['ksceKernelCpuDcacheAndL2AndDMAFlush',['../group__SceCPUKernel.html#gac2965bc34e8647b161ad1b78d0e01f40',1,'cpu.h']]],
   ['kscekernelcpudcacheandl2flush',['ksceKernelCpuDcacheAndL2Flush',['../group__SceCPUKernel.html#ga88146b380005022344f20377b55ec644',1,'cpu.h']]],
   ['kscekernelcpudcacheflush',['ksceKernelCpuDcacheFlush',['../group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e',1,'cpu.h']]],
+  ['kscekernelcpudcachewritebackrange',['ksceKernelCpuDcacheWritebackRange',['../group__SceCPUKernel.html#gad5a9622957edc36c66eb80128af84518',1,'cpu.h']]],
   ['kscekernelcpudisableinterrupts',['ksceKernelCpuDisableInterrupts',['../group__SceCPUKernel.html#ga5e4ae03a7a343e652e31eb16f815f543',1,'cpu.h']]],
   ['kscekernelcpuenableinterrupts',['ksceKernelCpuEnableInterrupts',['../group__SceCPUKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c',1,'cpu.h']]],
   ['kscekernelcpuicacheandl2flush',['ksceKernelCpuIcacheAndL2Flush',['../group__SceCPUKernel.html#gad3f79f4b73ac98bff381799fafe715e4',1,'cpu.h']]],
