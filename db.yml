@@ -5082,6 +5082,15 @@ modules:
   SceUdcd:
     nid: 0x8E26B2A3
     libraries:
+      SceUdcd:
+        kernel: false
+        nid: 0xA84BDE8A
+        functions:
+          sceUdcdGetDeviceState: 0xFCD31220
+          sceUdcdGetDeviceInfo: 0x701C87CF
+          sceUdcdRegisterCallback: 0xA7070093
+          sceUdcdUnregisterCallback: 0xC3FBA889
+          sceUdcdWaitState: 0x59EFFAF1
       SceUdcdForDriver:
         kernel: true
         nid: 0xBC05A8FB
@@ -5098,6 +5107,9 @@ modules:
           ksceUdcdStart: 0x9FD733EA
           ksceUdcdGetDrvState: 0xC0CA5DDB
           ksceUdcdReqRecv: 0xC60A74B2
+          ksceUdcdWaitState: 0xD03017C0
+          ksceUdcdGetDeviceState: 0xE054B5E4
+          ksceUdcdGetDeviceInfo: 0xFBEA3703
   ScePromoterUtil:
     nid: 0xB31C2D5C
     libraries:
