@@ -4674,6 +4674,7 @@ modules:
       SceTouchForDriver:
         functions:
           ksceTouchSetTouchEmulationData: 0xA32529B8
+          ksceTouchSetRegion: 0x7985B164
         kernel: true
         nid: 0xA4A7DAFC
   SceUlt:
@@ -5078,6 +5079,25 @@ modules:
           sceUsbSerialGetRecvBufferSize: 0xE8567A87
           sceUsbSerialSend: 0x89E71202
           sceUsbSerialRecv: 0xF26DC8D8
+  SceUdcd:
+    nid: 0x8E26B2A3
+    libraries:
+      SceUdcdForDriver:
+        kernel: true
+        nid: 0xBC05A8FB
+        functions:
+          ksceUdcdUnregister: 0x0DECE532
+          ksceUdcdStop: 0x1494293B
+          ksceUdcdReqSend: 0x1ED0E89E
+          ksceUdcdStall: 0x34079250
+          ksceUdcdReqCancelAll: 0x38787672
+          ksceUdcdRegister: 0x4E55244D
+          ksceUdcdActivate: 0x4FDEA423
+          ksceUdcdDeactivate: 0x8AE87657
+          ksceUdcdClearFIFO: 0x9F53D64D
+          ksceUdcdStart: 0x9FD733EA
+          ksceUdcdGetDrvState: 0xC0CA5DDB
+          ksceUdcdReqRecv: 0xC60A74B2
   ScePromoterUtil:
     nid: 0xB31C2D5C
     libraries:

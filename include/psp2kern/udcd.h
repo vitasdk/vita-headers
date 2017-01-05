@@ -1,0 +1,538 @@
+/**
+ * \kernelgroup{SceUdcd}
+ * \usage{psp2kern/udcd.h,-lSceUdcdForDriver_stub}
+ */
+
+/**
+ * \file
+ * \brief Header file which defines USB Device Controller Driver related variables and functions
+ *
+ * Copyright (C) 2017 PSP2SDK Project
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
+#ifndef _PSP2_KERNEL_UDCD_H_
+#define _PSP2_KERNEL_UDCD_H_
+
+#include <psp2/types.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+ * Device and/or Interface Class codes
+ */
+#define USB_CLASS_PER_INTERFACE         0       /* for DeviceClass */
+#define USB_CLASS_AUDIO                 1
+#define USB_CLASS_COMM                  2
+#define USB_CLASS_HID                   3
+#define USB_CLASS_PRINTER               7
+#define USB_CLASS_PTP                   6
+#define USB_CLASS_MASS_STORAGE          8
+#define USB_CLASS_HUB                   9
+#define USB_CLASS_DATA                  10
+#define USB_CLASS_VENDOR_SPEC           0xff
+
+/*
+ * Descriptor types
+ */
+#define USB_DT_DEVICE                   0x01
+#define USB_DT_CONFIG                   0x02
+#define USB_DT_STRING                   0x03
+#define USB_DT_INTERFACE                0x04
+#define USB_DT_ENDPOINT                 0x05
+#define USB_DT_DEVQUAL                  0x06
+#define USB_DT_OTHERSPEED               0x07
+
+/*
+ * Descriptor sizes per descriptor type
+ */
+#define USB_DT_DEVICE_SIZE              18
+#define USB_DT_CONFIG_SIZE              9
+#define USB_DT_INTERFACE_SIZE           9
+#define USB_DT_ENDPOINT_SIZE            7
+#define USB_DT_DEVQUAL_SIZE             10
+
+/*
+ * Endpoint types and masks
+ */
+#define USB_ENDPOINT_ADDRESS_MASK       0x0f    /* in bEndpointAddress */
+#define USB_ENDPOINT_DIR_MASK           0x80
+
+#define USB_ENDPOINT_TYPE_MASK          0x03    /* in bmAttributes */
+#define USB_ENDPOINT_TYPE_CONTROL       0
+#define USB_ENDPOINT_TYPE_ISOCHRONOUS   1
+#define USB_ENDPOINT_TYPE_BULK          2
+#define USB_ENDPOINT_TYPE_INTERRUPT     3
+
+
+/*
+ * Standard requests
+ */
+#define USB_REQ_GET_STATUS              0x00
+#define USB_REQ_CLEAR_FEATURE           0x01
+/* 0x02 is reserved */
+#define USB_REQ_SET_FEATURE             0x03
+/* 0x04 is reserved */
+#define USB_REQ_SET_ADDRESS             0x05
+#define USB_REQ_GET_DESCRIPTOR          0x06
+#define USB_REQ_SET_DESCRIPTOR          0x07
+#define USB_REQ_GET_CONFIGURATION       0x08
+#define USB_REQ_SET_CONFIGURATION       0x09
+#define USB_REQ_GET_INTERFACE           0x0A
+#define USB_REQ_SET_INTERFACE           0x0B
+#define USB_REQ_SYNCH_FRAME             0x0C
+
+
+/*
+ * USB Status
+ */
+#define SCE_UDCD_STATUS_ACTIVATED              0x200
+#define SCE_UDCD_STATUS_DEACTIVATED            0x100
+#define SCE_UDCD_STATUS_CABLE_CONNECTED        0x020
+#define SCE_UDCD_STATUS_CABLE_DISCONNECTED     0x010
+#define SCE_UDCD_STATUS_CONNECTION_SUSPENDED   0x004
+#define SCE_UDCD_STATUS_CONNECTION_ESTABLISHED 0x002
+#define SCE_UDCD_STATUS_CONNECTION_NEW         0x001
+
+/*
+ * USB Driver status
+ */
+#define SCE_UDCD_STATUS_DRIVER_STARTED         0x01
+#define SCE_UDCD_STATUS_DRIVER_REGISTERED      0x02
+
+/*
+ * USB limits
+ */
+#define SCE_UDCD_MAX_INTERFACES     8
+#define SCE_UDCD_MAX_ENDPOINTS      9
+#define SCE_UDCD_MAX_ALTERNATE      2
+
+
+#define SCE_UDCD_RETCODE_CANCEL             -1
+#define SCE_UDCD_RETCODE_CANCEL_ALL         -2
+#define SCE_UDCD_RETCODE_CANCELTRANSMISSION -3
+#define SCE_UDCD_RETCODE_SUCCESS       0
+#define SCE_UDCD_RETCODE_SEND          1
+#define SCE_UDCD_RETCODE_RECV          2
+
+/*
+ * Error codes
+ */
+#define SCE_UDCD_ERROR_ALREADY_DONE		0x80243001
+#define SCE_UDCD_ERROR_INVALID_ARGUMENT		0x80243002
+#define SCE_UDCD_ERROR_ARGUMENT_EXCEEDED_LIMIT 	0x80243003
+#define SCE_UDCD_ERROR_MEMORY_EXHAUSTED		0x80243004
+#define SCE_UDCD_ERROR_DRIVER_NOT_FOUND		0x80243005
+#define SCE_UDCD_ERROR_DRIVER_IN_PROGRESS	0x80243006
+#define SCE_UDCD_ERROR_BUS_DRIVER_NOT_STARTED	0x80243007
+#define SCE_UDCD_ERROR_WAIT_TIMEOUT		0x80243008
+#define SCE_UDCD_ERROR_WAIT_CANCEL 		0x80243009
+#define SCE_UDCD_ERROR_INVALID_POINTER 		0x80000103
+#define SCE_UDCD_ERROR_INVALID_FLAG		0x80000105
+#define SCE_UDCD_ERROR_INVALID_VALUE 		0x800001FE
+#define SCE_UDCD_ERROR_ILLEGAL_CONTEXT		0x80000030
+#define SCE_UDCD_ERROR_INVALID_ARGUMENT		0x80243200
+#define SCE_UDCD_ERROR_USBDRIVER_INVALID_NAME	0x80243201
+#define SCE_UDCD_ERROR_USBDRIVER_INVALID_FUNCS	0x80243202
+
+
+/*
+ *  USB string descriptor
+ */
+struct SceUdcdStringDescriptor {
+	unsigned char bLength;
+	unsigned char bDescriptorType;
+	short         bString[31];
+};  /* Size 64 */
+
+/*
+ *  USB device descriptor
+ */
+struct SceUdcdDeviceDescriptor {
+	unsigned char  bLength;
+	unsigned char  bDescriptorType;
+	unsigned short bcdUSB;
+	unsigned char  bDeviceClass;
+	unsigned char  bDeviceSubClass;
+	unsigned char  bDeviceProtocol;
+	unsigned char  bMaxPacketSize0;
+	unsigned short idVendor;
+	unsigned short idProduct;
+	unsigned short bcdDevice;
+	unsigned char  iManufacturer;
+	unsigned char  iProduct;
+	unsigned char  iSerialNumber;
+	unsigned char  bNumConfigurations;
+} __attribute__ ((aligned(4))); /* size 20 */
+
+/*
+ *  USB device qualifier descriptor
+ */
+struct UsbDeviceQualifierDescriptor {
+	unsigned char  bLength;
+	unsigned char  bDescriptorType;
+	unsigned short bcdUSB;
+	unsigned char  bDeviceClass;
+	unsigned char  bDeviceSubClass;
+	unsigned char  bDeviceProtocol;
+	unsigned char  bMaxPacketSize0;
+	unsigned char  bNumConfigurations;
+	unsigned char  bReserved;
+} __attribute__ ((aligned(4))); /* size 12 */
+
+/*
+ *  USB configuration descriptor
+ */
+struct SceUdcdConfigDescriptor {
+	unsigned char  bLength;
+	unsigned char  bDescriptorType;
+	unsigned short wTotalLength;
+	unsigned char  bNumInterfaces;
+	unsigned char  bConfigurationValue;
+	unsigned char  iConfiguration;
+	unsigned char  bmAttributes;
+	unsigned char  bMaxPower;
+
+	struct SceUdcdInterfaceSettings *settings;
+
+	unsigned char *extra;   /* Extra descriptors */
+	int extraLength;
+}; /* size 24 */
+
+/*
+ *  USB driver interfaces structure
+ */
+struct SceUdcdInterfaceSettings {
+	/* Pointers to the individual interface descriptors */
+	struct SceUdcdInterfaceDescriptor *descriptors;
+
+	unsigned int alternateSetting;
+
+	/* Number of interface descriptors */
+	unsigned int numDescriptors;
+};
+
+/*
+ *  USB Interface descriptor
+ */
+struct SceUdcdInterfaceDescriptor {
+	unsigned char bLength;
+	unsigned char bDescriptorType;
+	unsigned char bInterfaceNumber;
+	unsigned char bAlternateSetting;
+	unsigned char bNumEndpoints;
+	unsigned char bInterfaceClass;
+	unsigned char bInterfaceSubClass;
+	unsigned char bInterfaceProtocol;
+	unsigned char iInterface;
+
+	struct SceUdcdEndpointDescriptor *endpoints;
+
+	unsigned char *extra;   /* Extra descriptors */
+	int extraLength;
+}; /* size 24 */
+
+/*
+ *  USB endpoint descriptor
+ */
+struct SceUdcdEndpointDescriptor {
+	unsigned char  bLength;
+	unsigned char  bDescriptorType;
+	unsigned char  bEndpointAddress;
+	unsigned char  bmAttributes;
+	unsigned short wMaxPacketSize;
+	unsigned char  bInterval;
+
+	unsigned char *extra;   /* Extra descriptors */
+	int extraLength;
+}; /* size 16 */
+
+/*
+ *  USB driver interface
+ */
+struct SceUdcdInterface {
+	/* Expectant interface number (interface number or -1) */
+	int expectNumber;
+	/* End interface  */
+	int interfaceNumber;
+	/* Number of interfaces */
+	int numInterfaces;
+};
+
+/*
+ *  USB driver endpoint
+ */
+struct SceUdcdEndpoint {
+	/* 0x80 = in, 0x00 = out */
+	int direction;
+	/* Driver Endpoint number (must be filled in sequentially) */
+	int driverEndpointNumber;
+	/* Endpoint number (Filled in by the bus driver) */
+	int endpointNumber;
+	/* Number of transmitted bytes */
+	int transmittedBytes;
+};
+
+/*
+ *  USB driver configuration
+ */
+struct SceUdcdConfiguration {
+	/* Pointer to the configuration descriptors */
+	struct SceUdcdConfigDescriptor *configDescriptors;
+	/* USB driver interface settings */
+	struct SceUdcdInterfaceSettings *settings;
+	/* Pointer to the first interface descriptor */
+	struct SceUdcdInterfaceDescriptor *interfaceDescriptors;
+	/* Pointer to the first endpoint descriptor */
+	struct SceUdcdEndpointDescriptor *endpointDescriptors;
+};
+
+/*
+ *  USB EP0 Device Request
+ */
+struct SceUdcdEP0DeviceRequest {
+	unsigned char  bmRequestType;
+	unsigned char  bRequest;
+	unsigned short wValue;
+	unsigned short wIndex;
+	unsigned short wLength;
+};
+
+/*
+ *  USB driver structure
+ */
+struct SceUdcdDriver {
+	/* Name of the USB driver */
+	const char *driverName;
+	/* Number of endpoints in this driver (including default control) */
+	int numEndpoints;
+	/* List of endpoint structures (used when calling other functions) */
+	struct SceUdcdEndpoint *endpoints;
+	/* Interface list */
+	struct SceUdcdInterface *interface;
+	/* Pointer to hi-speed device descriptor */
+	struct SceUdcdDeviceDescriptor *descriptor_hi;
+	/* Pointer to hi-speed device configuration */
+	struct SceUdcdConfiguration *configuration_hi;
+	/* Pointer to full-speed device descriptor */
+	struct SceUdcdDeviceDescriptor *descriptor;
+	/* Pointer to full-speed device configuration */
+	struct SceUdcdConfiguration *configuration;
+	/* Unk0 */
+	struct SceUdcdStringDescriptor *stringDescriptorsUnk0;
+	/* Default String descriptor */
+	struct SceUdcdStringDescriptor *stringDescriptorsUnk1;
+	/* String descriptors (unknown) */
+	struct SceUdcdStringDescriptor *stringDescriptorsUnk2;
+	/* Received a control request  */
+	int (*processRequest) (int recipient, int arg /* endpoint number or interface number */, struct SceUdcdEP0DeviceRequest *req);
+	/* Change alternate setting */
+	int (*changeSetting) (int interfaceNumber, int alternateSetting);
+	/* Configuration set (attach) function */
+	int (*attach) (int usb_version);
+	/* Configuration unset (detach) function */
+	void (*detach) (void);
+	/* Configure the device */
+	void (*configure) (int usb_version, int desc_count, struct SceUdcdInterfaceSettings *settings);
+	/* Function called when the driver is started */
+	int (*start) (int size, void *args);
+	/* Function called when the driver is stopped */
+	int (*stop) (int size, void *args);
+	/* Unk */
+	unsigned int unk1;
+	unsigned int unk2;
+	/* Link to next USB driver in the chain, set to NULL */
+	struct SceUdcdDriver *link;
+};
+
+/*
+ *  USB device request
+ */
+struct SceUdcdDeviceRequest {
+	/* Pointer to the endpoint to queue request on */
+	struct SceUdcdEndpoint *endpoint;
+	/* Pointer to the data buffer to use in the request */
+	void *data;
+	/* Unknown */
+	unsigned int unk;
+	/* Size of the data buffer */
+	int  size;
+	/* Is a control request? */
+	int  isControlRequest;
+	/* Pointer to the function to call on completion */
+	void (*onComplete)(struct SceUdcdDeviceRequest *req);
+	/* Number of transmitted bytes  */
+	int  transmitted;
+	/* Return code of the request, 0 == success, -3 == cancelled */
+	int  returnCode;
+	/* Link pointer to next request used by the driver, set it to NULL */
+	struct SceUdcdDeviceRequest *next;
+	/* An unused value (maybe an argument) */
+	void *unused;
+	/* Physical address */
+	void *physicalAddress;
+};
+
+/*
+ *  USB driver name
+ */
+struct SceUdcdDriverName {
+	int  size;
+	char name[32];
+	int  flags;
+} __attribute__ ((aligned(16))) /* size 48 */;
+
+
+/**
+  * Start a USB driver.
+  *
+  * @param driverName - name of the USB driver to start
+  * @param size - Size of arguments to pass to USB driver start
+  * @param args - Arguments to pass to USB driver start
+  *
+  * @return 0 on success
+  */
+int ksceUdcdStart(const char *driverName, int size, void *args);
+
+/**
+  * Stop a USB driver.
+  *
+  * @param driverName - name of the USB driver to stop
+  * @param size - Size of arguments to pass to USB driver start
+  * @param args - Arguments to pass to USB driver start
+  *
+  * @return 0 on success
+  */
+int ksceUdcdStop(const char *driverName, int size, void *args);
+
+/**
+  * Activate a USB driver.
+  *
+  * @param pid - Product ID for the default USB Driver
+  *
+  * @return 0 on success
+  */
+int ksceUdcdActivate(unsigned int productId);
+
+/**
+  * Deactivate USB driver.
+  *
+  * @return 0 on success
+  */
+int ksceUdcdDeactivate(void);
+
+/**
+  * Get USB state
+  *
+  * @return OR'd SCE_UDCD_STATUS_* constants
+  */
+int ksceUdcdGetState(void);
+
+/**
+  * Get state of a specific USB driver
+  *
+  * @param driverName - name of USB driver to get status from
+  *
+  * @return SCE_UDCD_STATUS_DRIVER_STARTED  if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped
+  */
+int ksceUdcdGetDrvState(const char *driverName);
+
+/**
+ *  Get the list of drivers
+ *  @param flags - combination of SCE_UDCD_STATUS_DRIVER_STARTED or SCE_UDCD_STATUS_DRIVER_REGISTERED
+ *  @param list - points to the output list
+ *  @param size - number of entries in the output list
+ *  @return the number of drivers in the output or < 0 in case of error
+ */
+int ksceUdcdGetDrvList(unsigned int flags, struct SceUdcdDriverName *list, int size);
+
+/**
+ * Wait for USB state
+ * @param state - combination of states(returned by ksceUdcdGetState)
+ * @param waitMode - one of the ::SceEventFlagWaitTypes
+ * @param timeout - pointer to timeout
+ * @return the usb state or < 0 in case of error
+ */
+int ksceUdcdWaitState(unsigned int state, unsigned int waitMode, SceUInt *timeout);
+
+/**
+ * Cancel a pending ksceUdcdWaitState
+ * @return 0 on success
+ */
+int ksceUdcdWaitCancel(void);
+
+
+
+/**
+ * Register a USB driver.
+ *
+ * @param drv - Pointer to a filled out USB driver
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdRegister(struct SceUdcdDriver *drv);
+
+/**
+ * Unregister a USB driver
+ *
+ * @param drv - Pointer to a filled out USB driver
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdUnregister(struct SceUdcdDriver *drv);
+
+/**
+ * Clear the FIFO on an endpoint
+ *
+ * @param endp - The endpoint to clear
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdClearFIFO(struct SceUdcdEndpoint *endp);
+
+/**
+ * Cancel any pending requests on an endpoint.
+ *
+ * @param endp - The endpoint to cancel
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdReqCancelAll(struct SceUdcdEndpoint *endp);
+
+/**
+ * Stall an endpoint
+ *
+ * @param endp - The endpoint to stall
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdStall(struct SceUdcdEndpoint *endp);
+
+/**
+ * Queue a send request(IN from host pov)
+ *
+ * @param req - Pointer to a filled out UsbbdDeviceRequest structure.
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdReqSend(struct SceUdcdDeviceRequest *req);
+
+/**
+ * Queue a receive request(OUT from host pov)
+ *
+ * @param req - Pointer to a filled out UsbbdDeviceRequest structure
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdReqRecv(struct SceUdcdDeviceRequest *req);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* _PSP2_KERNEL_UDCD_H_ */
