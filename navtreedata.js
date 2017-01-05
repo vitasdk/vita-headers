@@ -45,11 +45,11 @@ var NAVTREEINDEX =
 "group__SceModulemgrKernel.html#ga59b7c4718267422ee29746bae7e34c92",
 "group__SceNetUser.html#gga56a0f36da7f9eaaf54bd05cc2bf49173a8a18b99919f7c3da9f13eb9650c964cd",
 "group__SceNetUser.html#ggafa9be5679ab03d785820f2474c5ccc6ea850ecddf3266e23f7fa4e113d44feec1",
-"group__SceRtcUser.html#ga8d8c139dd4d6d5a76b741891bddc8135",
-"group__SceSysmemUser.html#ga6281437591421d071476197c1c5ca2a5",
-"group__SceThreadMgrKernel.html#ga8b91fe8a1677319b9ddf388b88d107ff",
-"group__SceThreadMgrUser.html#ga5e010f92f8ea412645ee00124dab3d89",
-"group__SceUdcdKernel.html#ga0eb3845dcaf168d3755565f7a89b3f6e"
+"group__SceRtcUser.html#ga7ef2a9c762546ede423c80c4f5d03d7e",
+"group__SceSysmemUser.html#ga22b00c1e2a37a6b016d2047f7f52b4da",
+"group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305",
+"group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f",
+"group__SceTypesUser.html#ggaea33efd5e2c69d615faad5c5965510aaa905def7c2528ee21e546716ec3ea247b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

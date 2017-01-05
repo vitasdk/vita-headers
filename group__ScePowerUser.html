@@ -148,6 +148,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa183d660f4d44413be9be1662253da7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#gaa183d660f4d44413be9be1662253da7f">scePowerGetGpuXbarClockFrequency</a> (void)</td></tr>
 <tr class="memdesc:gaa183d660f4d44413be9be1662253da7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns GPU crossbar clock frequency.  <a href="#gaa183d660f4d44413be9be1662253da7f">More...</a><br /></td></tr>
 <tr class="separator:gaa183d660f4d44413be9be1662253da7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5f6d7e8f98580a9fcc0ccdcb3104d90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#gac5f6d7e8f98580a9fcc0ccdcb3104d90">scePowerRequestColdReset</a> (void)</td></tr>
+<tr class="memdesc:gac5f6d7e8f98580a9fcc0ccdcb3104d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests PS Vita to do a cold reset.  <a href="#gac5f6d7e8f98580a9fcc0ccdcb3104d90">More...</a><br /></td></tr>
+<tr class="separator:gac5f6d7e8f98580a9fcc0ccdcb3104d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc0ba4947347ed5e7b40bcfcb76f65e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#gafc0ba4947347ed5e7b40bcfcb76f65e7">scePowerRequestStandby</a> (void)</td></tr>
+<tr class="memdesc:gafc0ba4947347ed5e7b40bcfcb76f65e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests PS Vita to go into standby.  <a href="#gafc0ba4947347ed5e7b40bcfcb76f65e7">More...</a><br /></td></tr>
+<tr class="separator:gafc0ba4947347ed5e7b40bcfcb76f65e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa17e71c25ae476469347956af18e4dbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#gaa17e71c25ae476469347956af18e4dbf">scePowerRequestSuspend</a> (void)</td></tr>
+<tr class="memdesc:gaa17e71c25ae476469347956af18e4dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests PS Vita to suspend.  <a href="#gaa17e71c25ae476469347956af18e4dbf">More...</a><br /></td></tr>
+<tr class="separator:gaa17e71c25ae476469347956af18e4dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60e340ae4ae835b6504880efe9ce2069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#ga60e340ae4ae835b6504880efe9ce2069">scePowerSetArmClockFrequency</a> (int freq)</td></tr>
 <tr class="memdesc:ga60e340ae4ae835b6504880efe9ce2069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets CPU clock frequency.  <a href="#ga60e340ae4ae835b6504880efe9ce2069">More...</a><br /></td></tr>
 <tr class="separator:ga60e340ae4ae835b6504880efe9ce2069"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +457,69 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 </div>
 </div>
+<a id="gac5f6d7e8f98580a9fcc0ccdcb3104d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5f6d7e8f98580a9fcc0ccdcb3104d90">&sect;&nbsp;</a></span>scePowerRequestColdReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerRequestColdReset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests PS Vita to do a cold reset. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
+<a id="gafc0ba4947347ed5e7b40bcfcb76f65e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc0ba4947347ed5e7b40bcfcb76f65e7">&sect;&nbsp;</a></span>scePowerRequestStandby()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerRequestStandby </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests PS Vita to go into standby. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaa17e71c25ae476469347956af18e4dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa17e71c25ae476469347956af18e4dbf">&sect;&nbsp;</a></span>scePowerRequestSuspend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerRequestSuspend </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests PS Vita to suspend. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
 <a id="ga60e340ae4ae835b6504880efe9ce2069"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga60e340ae4ae835b6504880efe9ce2069">&sect;&nbsp;</a></span>scePowerSetArmClockFrequency()</h2>
 
@@ -615,7 +687,7 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 5 2017 13:46:18 for vitasdk by
+    <li class="footer">Generated on Thu Jan 5 2017 19:37:36 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
