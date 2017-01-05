@@ -143,6 +143,27 @@ int scePowerGetGpuClockFrequency(void);
 int scePowerGetGpuXbarClockFrequency(void);
 
 /**
+ * Requests PS Vita to do a cold reset
+ *
+ * @return always 0
+ */
+int scePowerRequestColdReset(void);
+
+/**
+ * Requests PS Vita to go into standby
+ *
+ * @return always 0
+ */
+int scePowerRequestStandby(void);
+
+/**
+ * Requests PS Vita to suspend
+ *
+ * @return always 0
+ */
+int scePowerRequestSuspend(void);
+
+/**
  * Sets CPU clock frequency
  *
  * @param freq - Frequency to set in Mhz
