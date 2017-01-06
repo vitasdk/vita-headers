@@ -494,7 +494,7 @@ int ksceUdcdDeactivate(void);
   *
   * @return OR'd SCE_UDCD_STATUS_* constants
   */
-int ksceUdcdGetState(void);
+int ksceUdcdGetDeviceState(void);
 
 /**
   * Get state of a specific USB driver
