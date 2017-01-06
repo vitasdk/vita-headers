@@ -121,9 +121,9 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:ga71a1ed3ffe8404b87be819b2080c60cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga71a1ed3ffe8404b87be819b2080c60cb">ksceUdcdDeactivate</a> (void)</td></tr>
 <tr class="memdesc:ga71a1ed3ffe8404b87be819b2080c60cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate USB driver.  <a href="#ga71a1ed3ffe8404b87be819b2080c60cb">More...</a><br /></td></tr>
 <tr class="separator:ga71a1ed3ffe8404b87be819b2080c60cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9272a5af4ffe424f82994cb01875941"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaa9272a5af4ffe424f82994cb01875941">ksceUdcdGetState</a> (void)</td></tr>
-<tr class="memdesc:gaa9272a5af4ffe424f82994cb01875941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB state.  <a href="#gaa9272a5af4ffe424f82994cb01875941">More...</a><br /></td></tr>
-<tr class="separator:gaa9272a5af4ffe424f82994cb01875941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158c8122feafcc64f46565c0a354ba76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76">ksceUdcdGetDeviceState</a> (void)</td></tr>
+<tr class="memdesc:ga158c8122feafcc64f46565c0a354ba76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB state.  <a href="#ga158c8122feafcc64f46565c0a354ba76">More...</a><br /></td></tr>
+<tr class="separator:ga158c8122feafcc64f46565c0a354ba76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0">ksceUdcdGetDrvState</a> (const char *driverName)</td></tr>
 <tr class="memdesc:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of a specific USB driver.  <a href="#ga990e7c4f2cc70b36239b4dfd2cb10fa0">More...</a><br /></td></tr>
 <tr class="separator:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1243,6 +1243,27 @@ size</td>
 
 </div>
 </div>
+<a id="ga158c8122feafcc64f46565c0a354ba76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga158c8122feafcc64f46565c0a354ba76">&sect;&nbsp;</a></span>ksceUdcdGetDeviceState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdGetDeviceState </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get USB state. </p>
+<dl class="section return"><dt>Returns</dt><dd>OR'd SCE_UDCD_STATUS_* constants </dd></dl>
+
+</div>
+</div>
 <a id="gadb12d45f9a88a2db0b8fd0e0477c9078"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadb12d45f9a88a2db0b8fd0e0477c9078">&sect;&nbsp;</a></span>ksceUdcdGetDrvList()</h2>
 
@@ -1312,27 +1333,6 @@ size</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped </dd></dl>
-
-</div>
-</div>
-<a id="gaa9272a5af4ffe424f82994cb01875941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9272a5af4ffe424f82994cb01875941">&sect;&nbsp;</a></span>ksceUdcdGetState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUdcdGetState </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get USB state. </p>
-<dl class="section return"><dt>Returns</dt><dd>OR'd SCE_UDCD_STATUS_* constants </dd></dl>
 
 </div>
 </div>
@@ -1659,7 +1659,7 @@ size</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 6 2017 11:44:44 for vitasdk by
+    <li class="footer">Generated on Fri Jan 6 2017 16:02:45 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
