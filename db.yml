@@ -5126,3 +5126,25 @@ modules:
           scePromoterUtilityPromotePkgWithRif: 0x86641BC6
           scePromoterUtilityGetState: 0xABEC74D2
           scePromoterUtilityGetResult: 0x49B473F0
+  SceMtpIfDriver:
+    nid: 0xEA885947
+    libraries:
+      SceMtpIf:
+        kernel: false
+        nid: 0x5EFA4138
+        functions:
+          sceMtpIfStartPort: 0x1624280E
+          sceMtpIfWaitConnect: 0x1E0156BE
+          sceMtpIfReset: 0x315FDE8E
+          sceMtpIfGetPort: 0x352F61B9
+          sceMtpIfRecvCommand: 0x468B6E3E
+          sceMtpIfChangePhase: 0x695B0DE4
+          sceMtpIfRecvDataWithParam: 0x6EDB6FB4
+          sceMtpIfCancelTransfer: 0x80D1CA60
+          sceMtpIfSendDataWithParam: 0x87CC6686
+          sceMtpIfIsConnected: 0xA9C97661
+          sceMtpIfStopDriver: 0xC0CFA3BC
+          sceMtpIfStartDriver: 0xC5327CAC
+          sceMtpIfStopPort: 0xD3C974D9
+          sceMtpIfSendResponse: 0xDD08CA01
+          sceMtpIfSendEvent: 0xE3C33379
