@@ -5111,6 +5111,17 @@ modules:
           ksceUdcdWaitState: 0xD03017C0
           ksceUdcdGetDeviceState: 0xE054B5E4
           ksceUdcdGetDeviceInfo: 0xFBEA3703
+  SceUsbstorVStorDriver:
+    nid: 0x1150E326
+    libraries:
+      SceUsbstorVStor:
+        kernel: false
+        nid: 0x17F294B9
+        functions:
+          sceUsbstorVStorSetDeviceInfo: 0x14455C20
+          sceUsbstorVStorSetImgFilePath: 0x8C9F93AB
+          sceUsbstorVStorStart: 0xB606F1AF
+          sceUsbstorVStorStop: 0x0FD67059
   ScePromoterUtil:
     nid: 0xB31C2D5C
     libraries:
