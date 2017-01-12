@@ -11,5 +11,8 @@ var modules =
     [ "System Parameters", "group__SystemParams.html", "group__SystemParams" ],
     [ "Vitasdk", "group__Vitasdk.html", "group__Vitasdk" ],
     [ "Miscellaneous", "group__Miscellaneous.html", "group__Miscellaneous" ],
+    [ "User", "group__SceMtpIfDriverUser.html", "group__SceMtpIfDriverUser" ],
+    [ "User", "group__SceUdcdUser.html", "group__SceUdcdUser" ],
+    [ "User", "group__SceUsbstorVStorDriverUser.html", "group__SceUsbstorVStorDriverUser" ],
     [ "Kernel", "group__SceUdcdKernel.html", "group__SceUdcdKernel" ]
 ];

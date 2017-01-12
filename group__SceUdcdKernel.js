@@ -1,6 +1,6 @@
 var group__SceUdcdKernel =
 [
-    [ "udcd.h", "udcd_8h.html", null ],
+    [ "udcd.h", "ern_2udcd_8h.html", null ],
     [ "ksceUdcdActivate", "group__SceUdcdKernel.html#gafbdc0991ab0f211224c3bf70598a33e5", null ],
     [ "ksceUdcdClearFIFO", "group__SceUdcdKernel.html#gad2c23ab90db864091337fe8d071a1125", null ],
     [ "ksceUdcdDeactivate", "group__SceUdcdKernel.html#ga71a1ed3ffe8404b87be819b2080c60cb", null ],

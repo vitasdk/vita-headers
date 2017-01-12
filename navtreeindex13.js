@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798a33916f3ecacad35bb753e274d764cbff":[3,0,0,0,1,1,24],
+"group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798a346286030e33007cc55efbefc575dd96":[3,0,0,0,1,1,43],
 "group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798a348779c163594e32fa99aea9071214e9":[3,0,0,0,1,1,135],
 "group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798a34b1600cf8a0cdb3af5cecd7d201c395":[3,0,0,0,1,1,105],
 "group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798a35a6239ca5aaeba47e2d99ac02876cd8":[3,0,0,0,1,1,246],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798aff9f9bd16303000fa1b6183087955782":[3,0,0,0,1,1,15],
 "group__SceKernelErrorUser.html#gga77867ab4129f63159b37bca3b652a798affee0eeaffdaec2ab653d8a9ebba2934":[3,0,0,0,1,1,14],
 "group__SceLibSsl.html":[1,6,4],
-"group__SceLibSslUser.html":[1,6,4,0],
-"group__SceLibSslUser.html#ga13926687f23c60d45340f013b1382f75":[3,0,0,0,19,19],
-"group__SceLibSslUser.html#ga1e75cf79605b30062c33b03b622438da":[3,0,0,0,19,11]
+"group__SceLibSslUser.html":[1,6,4,0]
 };

@@ -1,8 +1,8 @@
 var ern_2ctrl_8h =
 [
-    [ "SCE_CTRL_ERROR_INVALID_ARG", "group__SceCtrlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a9c7f7832117e5049f2e46fc6fc6e593b", null ],
-    [ "SCE_CTRL_ERROR_PRIV_REQUIRED", "group__SceCtrlKernel.html#gga2d5492e116eebd5075f247d21fb9db26aec312d9456dbdf71b353fea0af81c002", null ],
-    [ "SCE_CTRL_ERROR_FATAL", "group__SceCtrlKernel.html#gga2d5492e116eebd5075f247d21fb9db26a8e0c5486f9e6f6ae651131abfb526715", null ],
+    [ "SCE_CTRL_ERROR_INVALID_ARG", "group__SceCtrlKernel.html#gga73c53bacb25588538843a1dcfe5f382ba9c7f7832117e5049f2e46fc6fc6e593b", null ],
+    [ "SCE_CTRL_ERROR_PRIV_REQUIRED", "group__SceCtrlKernel.html#gga73c53bacb25588538843a1dcfe5f382baec312d9456dbdf71b353fea0af81c002", null ],
+    [ "SCE_CTRL_ERROR_FATAL", "group__SceCtrlKernel.html#gga73c53bacb25588538843a1dcfe5f382ba8e0c5486f9e6f6ae651131abfb526715", null ],
     [ "SceCtrlExternalInputMode", "group__SceCtrlKernel.html#ga4284796d5063074e02d4915af9d5ab04", [
       [ "SCE_CTRL_TYPE_UNPAIRED", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a967ebfcf1e78707101bf3b8d248ef20b", null ],
       [ "SCE_CTRL_TYPE_PHY", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a3270ad369e969b0f907370cf89900fbe", null ],

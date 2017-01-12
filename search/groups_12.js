@@ -28,6 +28,7 @@ var searchData=
   ['user',['User',['../group__SceMessageDialogUser.html',1,'']]],
   ['user',['User',['../group__SceModulemgrUser.html',1,'']]],
   ['user',['User',['../group__SceMotionUser.html',1,'']]],
+  ['user',['User',['../group__SceMtpIfDriverUser.html',1,'']]],
   ['user',['User',['../group__SceMusicExportUser.html',1,'']]],
   ['user',['User',['../group__SceNetCtlUser.html',1,'']]],
   ['user',['User',['../group__SceNetUser.html',1,'']]],
@@ -50,5 +51,7 @@ var searchData=
   ['user',['User',['../group__SceThreadMgrUser.html',1,'']]],
   ['user',['User',['../group__SceTouchUser.html',1,'']]],
   ['user',['User',['../group__SceTypesUser.html',1,'']]],
+  ['user',['User',['../group__SceUdcdUser.html',1,'']]],
+  ['user',['User',['../group__SceUsbstorVStorDriverUser.html',1,'']]],
   ['user',['User',['../group__SceVideoDecUser.html',1,'']]]
 ];

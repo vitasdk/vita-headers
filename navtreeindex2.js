@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"functions_vars_p.html":[2,2,1,13],
+"functions_vars_r.html":[2,2,1,14],
 "functions_vars_s.html":[2,2,1,15],
 "functions_vars_t.html":[2,2,1,16],
 "functions_vars_u.html":[2,2,1,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "group__SceAudioUser.html#ga18622208d3fd0c9de3bb47c875feb15b":[1,2,1,0,4],
 "group__SceAudioUser.html#ga1b314a7ffd85758df00963dcda043ff0":[3,0,0,0,9,38],
 "group__SceAudioUser.html#ga1b314a7ffd85758df00963dcda043ff0":[1,2,1,0,16],
-"group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114":[3,0,0,0,9,36],
-"group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114":[1,2,1,0,14],
-"group__SceAudioUser.html#ga3d36db862416db2c2f762d79ebd4e914":[3,0,0,0,9,32]
+"group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114":[3,0,0,0,9,36]
 };

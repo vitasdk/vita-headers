@@ -23,6 +23,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "location.h", "location_8h.html", "location_8h" ],
     [ "message_dialog.h", "message__dialog_8h.html", "message__dialog_8h" ],
     [ "motion.h", "motion_8h.html", "motion_8h" ],
+    [ "mtpif.h", "mtpif_8h.html", "mtpif_8h" ],
     [ "musicexport.h", "musicexport_8h.html", "musicexport_8h" ],
     [ "npdrmpackage.h", "npdrmpackage_8h.html", "npdrmpackage_8h" ],
     [ "pgf.h", "pgf_8h.html", "pgf_8h" ],
@@ -38,6 +39,8 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "system_param.h", "system__param_8h.html", "system__param_8h" ],
     [ "touch.h", "touch_8h.html", "touch_8h" ],
     [ "types.h", "types_8h.html", "types_8h" ],
+    [ "udcd.h", "udcd_8h.html", "udcd_8h" ],
     [ "usbserial.h", "usbserial_8h.html", "usbserial_8h" ],
+    [ "usbstorvstor.h", "usbstorvstor_8h.html", "usbstorvstor_8h" ],
     [ "videodec.h", "videodec_8h.html", "videodec_8h" ]
 ];
