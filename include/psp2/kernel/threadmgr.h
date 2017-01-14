@@ -745,8 +745,8 @@ typedef struct SceKernelCondInfo {
  *
  * @par Example:
  * @code
- * int condition variableid;
- * condition variableid = sceKernelCreateCond("MyCond", 0, mutexId, NULL);
+ * SceUID condId;
+ * condId = sceKernelCreateCond("MyCond", 0, mutexId, NULL);
  * @endcode
  *
  * @param name - Specifies the name of the condition variable
