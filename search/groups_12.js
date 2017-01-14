@@ -39,6 +39,7 @@ var searchData=
   ['user',['User',['../group__SceProcessmgrUser.html',1,'']]],
   ['user',['User',['../group__ScePromoterUtilUser.html',1,'']]],
   ['user',['User',['../group__ScePssUser.html',1,'']]],
+  ['user',['User',['../group__ScePvfUser.html',1,'']]],
   ['user',['User',['../group__SceRngUser.html',1,'']]],
   ['user',['User',['../group__SceRtcUser.html',1,'']]],
   ['user',['User',['../group__SceScreenshotUser.html',1,'']]],

@@ -31,6 +31,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "power.h", "power_8h.html", "power_8h" ],
     [ "promoterutil.h", "promoterutil_8h.html", "promoterutil_8h" ],
     [ "pss.h", "pss_8h.html", "pss_8h" ],
+    [ "pvf.h", "pvf_8h.html", "pvf_8h" ],
     [ "rtc.h", "rtc_8h.html", "rtc_8h" ],
     [ "screenshot.h", "screenshot_8h.html", "screenshot_8h" ],
     [ "shellutil.h", "shellutil_8h.html", "shellutil_8h" ],

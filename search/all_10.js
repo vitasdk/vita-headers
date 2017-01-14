@@ -24,10 +24,12 @@ var searchData=
   ['processmgr_2eh',['processmgr.h',['../ern_2kernel_2processmgr_8h.html',1,'']]],
   ['promoterutil_2eh',['promoterutil.h',['../promoterutil_8h.html',1,'']]],
   ['pss_2eh',['pss.h',['../pss_8h.html',1,'']]],
+  ['pvf_2eh',['pvf.h',['../pvf_8h.html',1,'']]],
   ['pgf_20font_20library',['PGF Font Library',['../group__ScePgf.html',1,'']]],
   ['photo_20export_20library',['Photo Export Library',['../group__ScePhotoExport.html',1,'']]],
   ['power_20library',['Power Library',['../group__ScePower.html',1,'']]],
   ['process_20manager_20library',['Process Manager Library',['../group__SceProcessmgr.html',1,'']]],
   ['promoter_20utility',['Promoter utility',['../group__ScePromoterUtil.html',1,'']]],
-  ['pss_20code_20memory_20handling',['PSS Code Memory Handling',['../group__ScePss.html',1,'']]]
+  ['pss_20code_20memory_20handling',['PSS Code Memory Handling',['../group__ScePss.html',1,'']]],
+  ['pvf_20font_20library',['PVF Font Library',['../group__ScePvf.html',1,'']]]
 ];
