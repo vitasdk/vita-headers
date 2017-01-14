@@ -1827,7 +1827,7 @@ size</td>
 </div><div class="memdoc">
 
 <p>Creates a new condition variable. </p>
-<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> condition variableid;</div><div class="line">condition variableid = <a class="code" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a>(<span class="stringliteral">&quot;MyCond&quot;</span>, 0, mutexId, NULL);</div></div><!-- fragment --></dd></dl>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId;</div><div class="line">condId = <a class="code" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a>(<span class="stringliteral">&quot;MyCond&quot;</span>, 0, mutexId, NULL);</div></div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>- Specifies the name of the condition variable </td></tr>
@@ -4316,7 +4316,7 @@ size</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 14 2017 09:48:50 for vitasdk by
+    <li class="footer">Generated on Sat Jan 14 2017 09:50:01 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
