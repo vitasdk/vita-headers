@@ -384,11 +384,17 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 <li>sceKernelClearEventFlag()
 : <a class="el" href="group__SceThreadMgrUser.html#gab576197fc9afd63693c7661d1f46a257">threadmgr.h</a>
 </li>
+<li>sceKernelCloseCond()
+: <a class="el" href="group__SceThreadMgrUser.html#gacd25a0ee48955846fa0d6ae1eab46fe4">threadmgr.h</a>
+</li>
 <li>sceKernelCloseMutex()
 : <a class="el" href="group__SceThreadMgrUser.html#gad7853d8d265439fb92befcd366b71c6f">threadmgr.h</a>
 </li>
 <li>sceKernelCreateCallback()
 : <a class="el" href="group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f">threadmgr.h</a>
+</li>
+<li>sceKernelCreateCond()
+: <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">threadmgr.h</a>
 </li>
 <li>sceKernelCreateEventFlag()
 : <a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7">threadmgr.h</a>
@@ -413,6 +419,9 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 </li>
 <li>sceKernelDeleteCallback()
 : <a class="el" href="group__SceThreadMgrUser.html#ga08fcc15c1357518a5b910066c9cb1666">threadmgr.h</a>
+</li>
+<li>sceKernelDeleteCond()
+: <a class="el" href="group__SceThreadMgrUser.html#ga2c719ce688b6a8cf699b2829cae70098">threadmgr.h</a>
 </li>
 <li>sceKernelDeleteEventFlag()
 : <a class="el" href="group__SceThreadMgrUser.html#gabcb2a121e8e7821396cbf644fb2d377d">threadmgr.h</a>
@@ -495,6 +504,9 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 <li>sceKernelNotifyCallback()
 : <a class="el" href="group__SceThreadMgrUser.html#ga3786870930297f68fe805758c0970153">threadmgr.h</a>
 </li>
+<li>sceKernelOpenCond()
+: <a class="el" href="group__SceThreadMgrUser.html#ga80f9140d8b5b22f84cacb5ae58e8f20a">threadmgr.h</a>
+</li>
 <li>sceKernelOpenMutex()
 : <a class="el" href="group__SceThreadMgrUser.html#gaec88b8bd6f478426538b184ddd6816bf">threadmgr.h</a>
 </li>
@@ -522,6 +534,15 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 <li>sceKernelSetEventFlag()
 : <a class="el" href="group__SceThreadMgrUser.html#ga5afb3a756d7bf79e4bc7f2ad16b4dcfe">threadmgr.h</a>
 </li>
+<li>sceKernelSignalCond()
+: <a class="el" href="group__SceThreadMgrUser.html#ga401ae7da9aa0f8e021971be3bb98efb1">threadmgr.h</a>
+</li>
+<li>sceKernelSignalCondAll()
+: <a class="el" href="group__SceThreadMgrUser.html#gaf322509d51c79142d26a9ce379eacad4">threadmgr.h</a>
+</li>
+<li>sceKernelSignalCondTo()
+: <a class="el" href="group__SceThreadMgrUser.html#gae56028c8da4be211466b0a8ebba4d0a3">threadmgr.h</a>
+</li>
 <li>sceKernelSignalSema()
 : <a class="el" href="group__SceThreadMgrUser.html#gab81b0362839d7f9cbdcbf64305e7e603">threadmgr.h</a>
 </li>
@@ -539,6 +560,12 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 </li>
 <li>sceKernelUnlockMutex()
 : <a class="el" href="group__SceThreadMgrUser.html#ga4bdb55e9ac1a0cbdd35142f972c8431a">threadmgr.h</a>
+</li>
+<li>sceKernelWaitCond()
+: <a class="el" href="group__SceThreadMgrUser.html#gae2d1aad3b2d00e3fae4003cb32338697">threadmgr.h</a>
+</li>
+<li>sceKernelWaitCondCB()
+: <a class="el" href="group__SceThreadMgrUser.html#gaf68d3fc1069a77dcec0ae8044d444144">threadmgr.h</a>
 </li>
 <li>sceKernelWaitEventFlag()
 : <a class="el" href="group__SceThreadMgrUser.html#gae3c48d812a5c14da11d73dde64d5e0e5">threadmgr.h</a>
@@ -807,7 +834,7 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 12 2017 18:51:07 for vitasdk by
+    <li class="footer">Generated on Sat Jan 14 2017 09:48:50 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

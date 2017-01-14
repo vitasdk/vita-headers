@@ -123,6 +123,8 @@ var annotated_dup =
     [ "SceKernelAllocMemBlockKernelOpt", "group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt", "group__SceSysmemKernel_structSceKernelAllocMemBlockKernelOpt" ],
     [ "SceKernelAllocMemBlockOpt", "group__SceSysmemUser.html#structSceKernelAllocMemBlockOpt", "group__SceSysmemUser_structSceKernelAllocMemBlockOpt" ],
     [ "SceKernelCallbackInfo", "group__SceThreadMgrUser.html#structSceKernelCallbackInfo", "group__SceThreadMgrUser_structSceKernelCallbackInfo" ],
+    [ "SceKernelCondInfo", "group__SceThreadMgrUser.html#structSceKernelCondInfo", "group__SceThreadMgrUser_structSceKernelCondInfo" ],
+    [ "SceKernelCondOptParam", "group__SceThreadMgrUser.html#structSceKernelCondOptParam", "group__SceThreadMgrUser_structSceKernelCondOptParam" ],
     [ "SceKernelEventFlagInfo", "group__SceThreadMgrUser.html#structSceKernelEventFlagInfo", "group__SceThreadMgrUser_structSceKernelEventFlagInfo" ],
     [ "SceKernelEventFlagOptParam", "group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam", "group__SceThreadMgrUser_structSceKernelEventFlagOptParam" ],
     [ "SceKernelFwInfo", "group__SceModulemgrUser.html#structSceKernelFwInfo", "group__SceModulemgrUser_structSceKernelFwInfo" ],

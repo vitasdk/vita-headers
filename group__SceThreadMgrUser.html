@@ -238,6 +238,33 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf8d66461efa0b7abcf055c765ac7c427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaf8d66461efa0b7abcf055c765ac7c427">sceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> event, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
 <tr class="memdesc:gaf8d66461efa0b7abcf055c765ac7c427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of an event flag.  <a href="#gaf8d66461efa0b7abcf055c765ac7c427">More...</a><br /></td></tr>
 <tr class="separator:gaf8d66461efa0b7abcf055c765ac7c427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49188b83b8954dc367fdbe4709424729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a> (const char *name, SceUInt attr, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> mutexId, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a> *option)</td></tr>
+<tr class="memdesc:ga49188b83b8954dc367fdbe4709424729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new condition variable.  <a href="#ga49188b83b8954dc367fdbe4709424729">More...</a><br /></td></tr>
+<tr class="separator:ga49188b83b8954dc367fdbe4709424729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c719ce688b6a8cf699b2829cae70098"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga2c719ce688b6a8cf699b2829cae70098">sceKernelDeleteCond</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId)</td></tr>
+<tr class="memdesc:ga2c719ce688b6a8cf699b2829cae70098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a condition variable.  <a href="#ga2c719ce688b6a8cf699b2829cae70098">More...</a><br /></td></tr>
+<tr class="separator:ga2c719ce688b6a8cf699b2829cae70098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80f9140d8b5b22f84cacb5ae58e8f20a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga80f9140d8b5b22f84cacb5ae58e8f20a">sceKernelOpenCond</a> (const char *name)</td></tr>
+<tr class="memdesc:ga80f9140d8b5b22f84cacb5ae58e8f20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a condition variable.  <a href="#ga80f9140d8b5b22f84cacb5ae58e8f20a">More...</a><br /></td></tr>
+<tr class="separator:ga80f9140d8b5b22f84cacb5ae58e8f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd25a0ee48955846fa0d6ae1eab46fe4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gacd25a0ee48955846fa0d6ae1eab46fe4">sceKernelCloseCond</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId)</td></tr>
+<tr class="memdesc:gacd25a0ee48955846fa0d6ae1eab46fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a condition variable.  <a href="#gacd25a0ee48955846fa0d6ae1eab46fe4">More...</a><br /></td></tr>
+<tr class="separator:gacd25a0ee48955846fa0d6ae1eab46fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2d1aad3b2d00e3fae4003cb32338697"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae2d1aad3b2d00e3fae4003cb32338697">sceKernelWaitCond</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId, unsigned int *timeout)</td></tr>
+<tr class="memdesc:gae2d1aad3b2d00e3fae4003cb32338697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for a signal of a condition variable.  <a href="#gae2d1aad3b2d00e3fae4003cb32338697">More...</a><br /></td></tr>
+<tr class="separator:gae2d1aad3b2d00e3fae4003cb32338697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf68d3fc1069a77dcec0ae8044d444144"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaf68d3fc1069a77dcec0ae8044d444144">sceKernelWaitCondCB</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId, unsigned int *timeout)</td></tr>
+<tr class="memdesc:gaf68d3fc1069a77dcec0ae8044d444144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for a signal of a condition variable (with callbacks)  <a href="#gaf68d3fc1069a77dcec0ae8044d444144">More...</a><br /></td></tr>
+<tr class="separator:gaf68d3fc1069a77dcec0ae8044d444144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga401ae7da9aa0f8e021971be3bb98efb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga401ae7da9aa0f8e021971be3bb98efb1">sceKernelSignalCond</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId)</td></tr>
+<tr class="memdesc:ga401ae7da9aa0f8e021971be3bb98efb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals a condition variable.  <a href="#ga401ae7da9aa0f8e021971be3bb98efb1">More...</a><br /></td></tr>
+<tr class="separator:ga401ae7da9aa0f8e021971be3bb98efb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf322509d51c79142d26a9ce379eacad4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaf322509d51c79142d26a9ce379eacad4">sceKernelSignalCondAll</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId)</td></tr>
+<tr class="memdesc:gaf322509d51c79142d26a9ce379eacad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals a condition variable to all threads waiting for it.  <a href="#gaf322509d51c79142d26a9ce379eacad4">More...</a><br /></td></tr>
+<tr class="separator:gaf322509d51c79142d26a9ce379eacad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae56028c8da4be211466b0a8ebba4d0a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae56028c8da4be211466b0a8ebba4d0a3">sceKernelSignalCondTo</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId)</td></tr>
+<tr class="memdesc:gae56028c8da4be211466b0a8ebba4d0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals a condition variable to a specific thread waiting for it.  <a href="#gae56028c8da4be211466b0a8ebba4d0a3">More...</a><br /></td></tr>
+<tr class="separator:gae56028c8da4be211466b0a8ebba4d0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c134afe50ead67789cc86ea1172548f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f">sceKernelCreateCallback</a> (const char *name, unsigned int attr, <a class="el" href="group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714">SceKernelCallbackFunction</a> func, void *arg)</td></tr>
 <tr class="memdesc:ga5c134afe50ead67789cc86ea1172548f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create callback.  <a href="#ga5c134afe50ead67789cc86ea1172548f">More...</a><br /></td></tr>
 <tr class="separator:ga5c134afe50ead67789cc86ea1172548f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -881,6 +908,85 @@ size</td>
 
 </div>
 </div>
+<a name="structSceKernelCondOptParam" id="structSceKernelCondOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCondOptParam">&sect;&nbsp;</a></span>SceKernelCondOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelCondOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Additional options used when creating condition variables. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga6720a3d5f4aeb9939333a67495a8d6d3"></a>SceSize</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam" title="Additional options used when creating condition variables. ">SceKernelCondOptParam</a> structure. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelCondInfo" id="structSceKernelCondInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCondInfo">&sect;&nbsp;</a></span>SceKernelCondInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelCondInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Current state of a condition variable. </p>
+<dl class="section see"><dt>See also</dt><dd>sceKernelGetCondInfo. </dd></dl>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga807a56525bcc6ed7ac1c9adfbff5ead5"></a>SceUInt</td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+Attributes. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga21278202592d9e26fb63d5afe6588a87"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+condId</td>
+<td class="fielddoc">
+The UID of the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7017fc75aec39f056ac175dcfc63bdf0"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+mutexId</td>
+<td class="fielddoc">
+Mutex associated with the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaeec9e514748bd6aa5f408bdb44a0497e"></a>char</td>
+<td class="fieldname">
+name[32]</td>
+<td class="fielddoc">
+NUL-terminated name of the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga2f16f3839984fbf70fa382148f63fbf6"></a>int</td>
+<td class="fieldname">
+numWaitThreads</td>
+<td class="fielddoc">
+The number of threads waiting on the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga01c95bfe129bab21f63f82815e2f391e"></a>SceSize</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo" title="Current state of a condition variable. ">SceKernelCondInfo</a> structure. </td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceKernelCallbackInfo" id="structSceKernelCallbackInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCallbackInfo">&sect;&nbsp;</a></span>SceKernelCallbackInfo</h2>
 
@@ -1034,13 +1140,13 @@ activeCpuMask</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga115be85971143f4b23b89b52b3f6468b"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
+<a id="ga53b981f9083e4ebd61502ee7842872ed"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga53b981f9083e4ebd61502ee7842872ed"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
+<a id="ga115be85971143f4b23b89b52b3f6468b"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
@@ -1576,6 +1682,33 @@ size</td>
 
 </div>
 </div>
+<a id="gacd25a0ee48955846fa0d6ae1eab46fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd25a0ee48955846fa0d6ae1eab46fe4">&sect;&nbsp;</a></span>sceKernelCloseCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelCloseCond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close a condition variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condition</td><td>variableid - The condition variable id returned from sceKernelCreateCond </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
+
+</div>
+</div>
 <a id="gad7853d8d265439fb92befcd366b71c6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad7853d8d265439fb92befcd366b71c6f">&sect;&nbsp;</a></span>sceKernelCloseMutex()</h2>
 
@@ -1652,6 +1785,59 @@ size</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&gt;= 0 A callback id which can be used in subsequent functions, &lt; 0 an error. </dd></dl>
+
+</div>
+</div>
+<a id="ga49188b83b8954dc367fdbe4709424729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49188b83b8954dc367fdbe4709424729">&sect;&nbsp;</a></span>sceKernelCreateCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelCreateCond </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SceUInt&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>mutexId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a> *&#160;</td>
+          <td class="paramname"><em>option</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new condition variable. </p>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> condition variableid;</div><div class="line">condition variableid = <a class="code" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a>(<span class="stringliteral">&quot;MyCond&quot;</span>, 0, mutexId, NULL);</div></div><!-- fragment --></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- Specifies the name of the condition variable </td></tr>
+    <tr><td class="paramname">attr</td><td>- Condition variable attribute flags (normally set to 0) </td></tr>
+    <tr><td class="paramname">mutexId</td><td>- Mutex to be related to the condition variable </td></tr>
+    <tr><td class="paramname">option</td><td>- Condition variable options (normally set to 0) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A condition variable id </dd></dl>
 
 </div>
 </div>
@@ -2032,6 +2218,33 @@ size</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga2c719ce688b6a8cf699b2829cae70098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c719ce688b6a8cf699b2829cae70098">&sect;&nbsp;</a></span>sceKernelDeleteCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelDeleteCond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a condition variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condition</td><td>variableid - The condition variable id returned from sceKernelCreateCond </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
 
 </div>
 </div>
@@ -2880,6 +3093,33 @@ size</td>
 
 </div>
 </div>
+<a id="ga80f9140d8b5b22f84cacb5ae58e8f20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80f9140d8b5b22f84cacb5ae58e8f20a">&sect;&nbsp;</a></span>sceKernelOpenCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelOpenCond </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a condition variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- The name of the condition variable to open </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
+
+</div>
+</div>
 <a id="gaec88b8bd6f478426538b184ddd6816bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaec88b8bd6f478426538b184ddd6816bf">&sect;&nbsp;</a></span>sceKernelOpenMutex()</h2>
 
@@ -3326,6 +3566,98 @@ size</td>
 
 </div>
 </div>
+<a id="ga401ae7da9aa0f8e021971be3bb98efb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga401ae7da9aa0f8e021971be3bb98efb1">&sect;&nbsp;</a></span>sceKernelSignalCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelSignalCond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signals a condition variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 On error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf322509d51c79142d26a9ce379eacad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf322509d51c79142d26a9ce379eacad4">&sect;&nbsp;</a></span>sceKernelSignalCondAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelSignalCondAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signals a condition variable to all threads waiting for it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 On error. </dd></dl>
+
+</div>
+</div>
+<a id="gae56028c8da4be211466b0a8ebba4d0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae56028c8da4be211466b0a8ebba4d0a3">&sect;&nbsp;</a></span>sceKernelSignalCondTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelSignalCondTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>threadId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signals a condition variable to a specific thread waiting for it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">threadId</td><td>- The thread id returned from sceKernelCreateThread </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 On error. </dd></dl>
+
+</div>
+</div>
 <a id="gab81b0362839d7f9cbdcbf64305e7e603"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab81b0362839d7f9cbdcbf64305e7e603">&sect;&nbsp;</a></span>sceKernelSignalSema()</h2>
 
@@ -3596,6 +3928,82 @@ size</td>
   <table class="params">
     <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
     <tr><td class="paramname">unlockCount</td><td>- The value to decrement to the lock count of the mutex </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 On error. </dd></dl>
+
+</div>
+</div>
+<a id="gae2d1aad3b2d00e3fae4003cb32338697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2d1aad3b2d00e3fae4003cb32338697">&sect;&nbsp;</a></span>sceKernelWaitCond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelWaitCond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits for a signal of a condition variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 On error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf68d3fc1069a77dcec0ae8044d444144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf68d3fc1069a77dcec0ae8044d444144">&sect;&nbsp;</a></span>sceKernelWaitCondCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelWaitCondCB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>condId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits for a signal of a condition variable (with callbacks) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed) </td></tr>
   </table>
   </dd>
 </dl>
@@ -3908,7 +4316,7 @@ size</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 12 2017 18:51:07 for vitasdk by
+    <li class="footer">Generated on Sat Jan 14 2017 09:48:50 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

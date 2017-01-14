@@ -27,7 +27,7 @@ var searchData=
   ['multisamplemode',['multisampleMode',['../group__SceGxmUser.html#gaec2baabec32a7276227af7c0d4e1d157',1,'SceGxmRenderTargetParams']]],
   ['musicexport_2eh',['musicexport.h',['../musicexport_8h.html',1,'']]],
   ['musicexportparam',['MusicExportParam',['../group__SceMusicExportUser.html#structMusicExportParam',1,'']]],
-  ['mutexid',['mutexId',['../group__SceThreadMgrUser.html#ga9e5d6104cffd7550a5a81838fa7b32db',1,'SceKernelMutexInfo']]],
+  ['mutexid',['mutexId',['../group__SceThreadMgrUser.html#ga9e5d6104cffd7550a5a81838fa7b32db',1,'SceKernelMutexInfo::mutexId()'],['../group__SceThreadMgrUser.html#ga7017fc75aec39f056ac175dcfc63bdf0',1,'SceKernelCondInfo::mutexId()']]],
   ['message_20dialog_20library',['Message Dialog Library',['../group__SceMessageDialog.html',1,'']]],
   ['module_20manager_20library',['Module Manager Library',['../group__SceModulemgr.html',1,'']]],
   ['motion_20library',['Motion Library',['../group__SceMotion.html',1,'']]],

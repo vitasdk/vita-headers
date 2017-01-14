@@ -8,6 +8,7 @@ var searchData=
   ['colorformat',['colorFormat',['../group__SceGxmUser.html#gac9c35dd93c157754948fddc261b8b68a',1,'SceGxmAuxiliarySurface']]],
   ['common',['common',['../group__SceThreadMgrUser.html#gae30047cfeffadfd5ce94b0c598690bb4',1,'SceKernelCallbackInfo']]],
   ['common_5fdialog_2eh',['common_dialog.h',['../common__dialog_8h.html',1,'']]],
+  ['condid',['condId',['../group__SceThreadMgrUser.html#ga21278202592d9e26fb63d5afe6588a87',1,'SceKernelCondInfo']]],
   ['controlwords',['controlWords',['../group__SceGxtUser.html#gab6e256ae974dac491a639e0b8eacda40',1,'SceGxtTextureInfo']]],
   ['cpu_2eh',['cpu.h',['../cpu_8h.html',1,'']]],
   ['ctrl_2eh',['ctrl.h',['../ern_2ctrl_8h.html',1,'']]],

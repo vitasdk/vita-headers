@@ -119,6 +119,8 @@ var searchData=
   ['scekernelallocmemblockkernelopt',['SceKernelAllocMemBlockKernelOpt',['../group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt',1,'']]],
   ['scekernelallocmemblockopt',['SceKernelAllocMemBlockOpt',['../group__SceSysmemUser.html#structSceKernelAllocMemBlockOpt',1,'']]],
   ['scekernelcallbackinfo',['SceKernelCallbackInfo',['../group__SceThreadMgrUser.html#structSceKernelCallbackInfo',1,'']]],
+  ['scekernelcondinfo',['SceKernelCondInfo',['../group__SceThreadMgrUser.html#structSceKernelCondInfo',1,'']]],
+  ['scekernelcondoptparam',['SceKernelCondOptParam',['../group__SceThreadMgrUser.html#structSceKernelCondOptParam',1,'']]],
   ['scekerneleventflaginfo',['SceKernelEventFlagInfo',['../group__SceThreadMgrUser.html#structSceKernelEventFlagInfo',1,'']]],
   ['scekerneleventflagoptparam',['SceKernelEventFlagOptParam',['../group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam',1,'']]],
   ['scekernelfwinfo',['SceKernelFwInfo',['../group__SceModulemgrUser.html#structSceKernelFwInfo',1,'']]],

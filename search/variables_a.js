@@ -18,5 +18,5 @@ var searchData=
   ['modifiedtime',['modifiedTime',['../group__SceAppUtilUser.html#ga3cb25df5c4e0fcbffd280ce960f9adc4',1,'SceAppUtilSaveDataSlotParam']]],
   ['multisamplelocations',['multisampleLocations',['../group__SceGxmUser.html#ga05af0dbbf86ed791aa1a437700531eeb',1,'SceGxmRenderTargetParams']]],
   ['multisamplemode',['multisampleMode',['../group__SceGxmUser.html#gaec2baabec32a7276227af7c0d4e1d157',1,'SceGxmRenderTargetParams']]],
-  ['mutexid',['mutexId',['../group__SceThreadMgrUser.html#ga9e5d6104cffd7550a5a81838fa7b32db',1,'SceKernelMutexInfo']]]
+  ['mutexid',['mutexId',['../group__SceThreadMgrUser.html#ga9e5d6104cffd7550a5a81838fa7b32db',1,'SceKernelMutexInfo::mutexId()'],['../group__SceThreadMgrUser.html#ga7017fc75aec39f056ac175dcfc63bdf0',1,'SceKernelCondInfo::mutexId()']]]
 ];
