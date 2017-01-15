@@ -4,7 +4,8 @@ import re
 import fnmatch
 
 CURR_DIR = os.path.dirname(os.path.realpath(__file__))
-DEF_FILE_PATH = os.path.join(CURR_DIR, '..', 'docs', 'definitions.dox')
+DEF_FILE = 'definitions.dox'
+DEF_FILE_PATH = os.path.join(CURR_DIR, '..', 'docs', DEF_FILE)
 INCLUDE_DIR = os.path.join(CURR_DIR, '..', 'include')
 
 DEFINE_RULE = re.compile(r' \*     \\defgroup ([a-zA-Z]+) [a-zA-Z ]+')
@@ -46,20 +47,22 @@ def check_headers(definitions):
                 if not m:
                     continue
                 if have_group_define:
-                    errors.append('Has multiple groups: %s' % header_file)
+                    errors.append('%s: Has multiple groups' % header_file)
                     break
                 group = m.group(2)
                 if definitions.get(group) == None:
-                    errors.append('Unknown group: %s' % m.group(2))
+                    errors.append('%s: Unknown group %s' %
+                                  (header_file, m.group(2)))
                     break
                 definitions[group] += 1
                 have_group_define = True
             if not have_group_define:
-                errors.append('Could not find definition: %s' % header_file)
+                errors.append('%s: Could not find definition' % header_file)
     # reverse check if exist header
     for k, v in definitions.iteritems():
         if v == 0:
-            errors.append('Could not find using header: %s' % k)
+            errors.append('%s: Could not find using header: %s' %
+                          (DEF_FILE, k))
     return errors
 
 if __name__ == '__main__':
