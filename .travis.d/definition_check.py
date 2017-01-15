@@ -40,16 +40,15 @@ def check_headers(definitions):
         if header_file in IGNORE_FILES:
             continue
         with open(header_path, 'r') as h:
-            user_group = None
             for line in h.xreadlines():
                 m = USER_GROUP_RULE.match(line)
                 if not m:
                     continue
-                usergroup = m.group(2)
-                if definitions.get(usergroup) == None:
+                group = m.group(2)
+                if definitions.get(group) == None:
                     errors.append('Unknown group: %s' % m.group(2))
                 else:
-                    definitions[usergroup] += 1
+                    definitions[group] += 1
                 break
             else:
                 errors.append('Could not find definition: %s' % header_file)
