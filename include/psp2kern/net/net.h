@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceNet}
+ * \usage{psp2kern/net/net.h,-lSceNetPs_stub}
+ */
+
+/**
  * \file
  * \brief Header file related to net
  *

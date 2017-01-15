@@ -1,4 +1,9 @@
 /**
+ * \usergroup{SceNpDrmPackage}
+ * \usage{psp2/npdrmpackage.h,-lSceNpDrmPackage_stub}
+ */
+
+/**
  * \file
  * \brief Header file which defines NpDrmPackage related variables and functions
  *

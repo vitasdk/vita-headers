@@ -57,7 +57,7 @@
  *     \defgroup SceAudiodec Audio Decoding Library
  *      Decode Mp3, Aac, Atrac, and external formats
  *
- *     \addtogroup SceAudioenc Audio Encoding Library
+ *     \defgroup SceAudioenc Audio Encoding Library
  *      Encode Audio from a stream
  *
  *     \defgroup SceAudioIn Audio In Library
@@ -160,7 +160,7 @@
  *     \defgroup SceAppMgr Application Manager Library
  *      Launch Apps and get their params
  *
- *	   \defgroup SceAppUtil Application Utilities Library
+ *     \defgroup SceAppUtil Application Utilities Library
  *      Mount folder of specific Apps, Savedata Slot Management, launch web browser.
  *
  *     \defgroup ScePower Power Library
@@ -174,6 +174,23 @@
  *
  *     \defgroup SceShellSvc Shell Utils Library
  *      Set handlers for opening various menus
+ * \}
+ *
+ *
+ * \defgroup SerialCommunication Serial Communication
+ *  USB, MTP, ...
+ * \{
+ *     \defgroup SceUdcd USB Device Controller Driver Library
+ *      Setting, control UDCD
+ *
+ *     \defgroup SceUsbSerial USB Serial Library
+ *      Control USB serial interface
+ *
+ *     \defgroup SceUsbstorVStorDriver USB Virtual Storage Driver Library
+ *      Control USB virtual storage driver
+ *
+ *     \defgroup SceMtpIfDriver MTP Interface Driver Library
+ *      Control MTP driver
  * \}
  *
  *
@@ -217,5 +234,8 @@
  *
  *     \defgroup ScePromoterUtil Promoter utility
  *      Install/Delete Packages
+ *
+ *     \defgroup SceNpDrmPackage NpDrmPackage utility
+ *      Check/Decrypt NpDrmPackages
  * \}
  */
