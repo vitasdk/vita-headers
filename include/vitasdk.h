@@ -33,14 +33,15 @@
 #include <psp2/jpegenc.h>
 #include <psp2/libssl.h>
 #include <psp2/message_dialog.h>
-#include <psp2/moduleinfo.h>
 #include <psp2/motion.h>
+#include <psp2/musicexport.h>
 #include <psp2/pgf.h>
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
 #include <psp2/pss.h>
 #include <psp2/rtc.h>
 #include <psp2/screenshot.h>
+#include <psp2/shellutil.h>
 #include <psp2/sqlite.h>
 #include <psp2/sysmodule.h>
 #include <psp2/system_param.h>
