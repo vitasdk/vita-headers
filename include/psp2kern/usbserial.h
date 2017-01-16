@@ -1,4 +1,9 @@
 /**
+ * \kernelgroup{SceUsbSerial}
+ * \usage{psp2kern/usbserial.h,-lSceUsbSerialForDriver_stub}
+ */
+
+/**
  * \file
  * \brief Header file Which defines USB Serial related functions
  *
