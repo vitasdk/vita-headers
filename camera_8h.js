@@ -16,6 +16,40 @@ var camera_8h =
     [ "SCE_CAMERA_ERROR_MAX_PROCESS", "group__SceCameraUser.html#gga39fca1837c5ce7715cbf571669660c13a3de4d2382c2d5ef6269311b7c8bccddf", null ],
     [ "SCE_CAMERA_ERROR_NOT_ACTIVE", "group__SceCameraUser.html#gga39fca1837c5ce7715cbf571669660c13a67c018777160480e7a197e3978e4cab0", null ],
     [ "SCE_CAMERA_ERROR_FATAL", "group__SceCameraUser.html#gga39fca1837c5ce7715cbf571669660c13a123d27ecda043fa45def6814d89d24d6", null ],
+    [ "SceCameraDevice", "group__SceCameraUser.html#ga526c5f58e3b338f604cd84ab419dc9ad", [
+      [ "SCE_CAMERA_DEVICE_FRONT", "group__SceCameraUser.html#gga526c5f58e3b338f604cd84ab419dc9adae35764ab6ca57f6631913458d18c8e1c", null ],
+      [ "SCE_CAMERA_DEVICE_BACK", "group__SceCameraUser.html#gga526c5f58e3b338f604cd84ab419dc9ada076932b034fa7a6efea9b2abf7c071cd", null ]
+    ] ],
+    [ "SceCameraFrameRate", "group__SceCameraUser.html#ga4588e783c667860efff696257a2b40d0", [
+      [ "SCE_CAMERA_FRAMERATE_3_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0aa86e799f5db488028118721b6a71731a", null ],
+      [ "SCE_CAMERA_FRAMERATE_5_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a0c4246feaa627a4436adf4ee33c0d160", null ],
+      [ "SCE_CAMERA_FRAMERATE_7_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a887342eb6bab2c67fe315873b026500c", null ],
+      [ "SCE_CAMERA_FRAMERATE_10_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a46f8ce2fee17d3837c286e0787962ac3", null ],
+      [ "SCE_CAMERA_FRAMERATE_15_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0ab449d3a938009cba7dcbeda20dadc20a", null ],
+      [ "SCE_CAMERA_FRAMERATE_20_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a33da3762a8493bed6932c1cafe826f96", null ],
+      [ "SCE_CAMERA_FRAMERATE_30_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0ae439d776892e797052fdacbc25dd87d6", null ],
+      [ "SCE_CAMERA_FRAMERATE_60_FPS", "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a81e3a744573a434750de7ef84da9de56", null ]
+    ] ],
+    [ "SceCameraFxMode", "group__SceCameraUser.html#gac297c1fac1b730ff36142e97fafbd235", [
+      [ "SCE_CAMERA_FXMODE_NORMAL", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a0d55b856f8bf7fe54855587774e8b2c0", null ],
+      [ "SCE_CAMERA_FXMODE_NEGATIVE", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a4f08760aaf36d27349e90ce162af8715", null ],
+      [ "SCE_CAMERA_FXMODE_BLACKWHITE", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a927592c329d049ae538ee860a51994cd", null ],
+      [ "SCE_CAMERA_FXMODE_SEPIA", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a57f53e1616d56a5381158cccf69183e8", null ],
+      [ "SCE_CAMERA_FXMODE_BLUE", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a8b13a34470cd6a147550abb1e793858a", null ],
+      [ "SCE_CAMERA_FXMODE_RED", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a2551a46860b583d2be97679a08e0c043", null ],
+      [ "SCE_CAMERA_FXMODE_GREEN", "group__SceCameraUser.html#ggac297c1fac1b730ff36142e97fafbd235a4b10efaac6947de94007fc18bf2b0944", null ]
+    ] ],
+    [ "SceCameraResolution", "group__SceCameraUser.html#ga30bcce68a36fb599a8d7dd63f31b037a", [
+      [ "SCE_CAMERA_RESOLUTION_0_0", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa2f758a107f47fb3808c33fcd1f39daa8", null ],
+      [ "SCE_CAMERA_RESOLUTION_640_480", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aafb0c2525d6f1bcebbcc3ff0878b2b43e", null ],
+      [ "SCE_CAMERA_RESOLUTION_320_240", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa6d6c25f129efa22d9d72e5d6b10076b8", null ],
+      [ "SCE_CAMERA_RESOLUTION_160_120", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aaadcceab21df92234bf7c60b1407801b8", null ],
+      [ "SCE_CAMERA_RESOLUTION_352_288", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa066652992bcc83b2e5418dafc0b3260c", null ],
+      [ "SCE_CAMERA_RESOLUTION_176_144", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aaeefbc9d85eda1dfdf0f4f2f8625126b1", null ],
+      [ "SCE_CAMERA_RESOLUTION_480_272", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa2bc3bd0b36d38ccf0d81c0990c8623f3", null ],
+      [ "SCE_CAMERA_RESOLUTION_640_360", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa74ebb60d6eec269532eb5f50cc986ac1", null ],
+      [ "SCE_CAMERA_RESOLUTION_640_360_1", "group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa62735117990253daf69375fafb08a76f", null ]
+    ] ],
     [ "sceCameraClose", "group__SceCameraUser.html#gacd40aface688fb979afa5098db9859c1", null ],
     [ "sceCameraGetAntiFlicker", "group__SceCameraUser.html#ga1d80130d09f7621879a0059663ef54f5", null ],
     [ "sceCameraGetAutoControlHold", "group__SceCameraUser.html#ga3eb27f29e6ea41ac4ca77f1f3ecc415b", null ],
