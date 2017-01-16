@@ -8,11 +8,8 @@ var modules =
     [ "Kernel", "group__kernel.html", "group__kernel" ],
     [ "Network", "group__Net.html", "group__Net" ],
     [ "System Status", "group__SystemStatus.html", "group__SystemStatus" ],
+    [ "Serial Communication", "group__SerialCommunication.html", "group__SerialCommunication" ],
     [ "System Parameters", "group__SystemParams.html", "group__SystemParams" ],
     [ "Vitasdk", "group__Vitasdk.html", "group__Vitasdk" ],
-    [ "Miscellaneous", "group__Miscellaneous.html", "group__Miscellaneous" ],
-    [ "User", "group__SceMtpIfDriverUser.html", "group__SceMtpIfDriverUser" ],
-    [ "User", "group__SceUdcdUser.html", "group__SceUdcdUser" ],
-    [ "User", "group__SceUsbstorVStorDriverUser.html", "group__SceUsbstorVStorDriverUser" ],
-    [ "Kernel", "group__SceUdcdKernel.html", "group__SceUdcdKernel" ]
+    [ "Miscellaneous", "group__Miscellaneous.html", "group__Miscellaneous" ]
 ];

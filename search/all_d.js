@@ -31,5 +31,6 @@ var searchData=
   ['message_20dialog_20library',['Message Dialog Library',['../group__SceMessageDialog.html',1,'']]],
   ['module_20manager_20library',['Module Manager Library',['../group__SceModulemgr.html',1,'']]],
   ['motion_20library',['Motion Library',['../group__SceMotion.html',1,'']]],
+  ['mtp_20interface_20driver_20library',['MTP Interface Driver Library',['../group__SceMtpIfDriver.html',1,'']]],
   ['music_20exporting_20library',['Music Exporting Library',['../group__SceMusicExport.html',1,'']]]
 ];

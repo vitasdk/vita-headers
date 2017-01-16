@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('ern_2usbserial_8h.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">usbserial.h File Reference</div>  </div>
+<div class="title">usbserial.h File Reference<div class="ingroups"><a class="el" href="group__SerialCommunication.html">Serial Communication</a> &raquo; <a class="el" href="group__SceUsbSerial.html">USB Serial Library</a> &raquo; <a class="el" href="group__SceUsbSerialKernel.html">Kernel</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -96,236 +96,40 @@ $(document).ready(function(){initNavTree('ern_2usbserial_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a37d0ac547255559a0b8691a887d6c1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#a37d0ac547255559a0b8691a887d6c1de">ksceUsbSerialStart</a> (void)</td></tr>
-<tr class="memdesc:a37d0ac547255559a0b8691a887d6c1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate USB serial device.  <a href="#a37d0ac547255559a0b8691a887d6c1de">More...</a><br /></td></tr>
-<tr class="separator:a37d0ac547255559a0b8691a887d6c1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72dfb8ec9107537832d1eea400078ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#ad72dfb8ec9107537832d1eea400078ab">ksceUsbSerialSetup</a> (int unk)</td></tr>
-<tr class="memdesc:ad72dfb8ec9107537832d1eea400078ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup USB serial device.  <a href="#ad72dfb8ec9107537832d1eea400078ab">More...</a><br /></td></tr>
-<tr class="separator:ad72dfb8ec9107537832d1eea400078ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94b720523fd86f2ef04b52098eea559"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#af94b720523fd86f2ef04b52098eea559">ksceUsbSerialStatus</a> (void)</td></tr>
-<tr class="memdesc:af94b720523fd86f2ef04b52098eea559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB device status.  <a href="#af94b720523fd86f2ef04b52098eea559">More...</a><br /></td></tr>
-<tr class="separator:af94b720523fd86f2ef04b52098eea559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d591ede8f9ea6a7e3847533efa8f0b"><td class="memItemLeft" align="right" valign="top"><a id="a14d591ede8f9ea6a7e3847533efa8f0b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#a14d591ede8f9ea6a7e3847533efa8f0b">ksceUsbSerialClose</a> (void)</td></tr>
-<tr class="memdesc:a14d591ede8f9ea6a7e3847533efa8f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close USB serial device. <br /></td></tr>
-<tr class="separator:a14d591ede8f9ea6a7e3847533efa8f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa307036066531884177ea8048a8a8abb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#aa307036066531884177ea8048a8a8abb">ksceUsbSerialGetRecvBufferSize</a> (void)</td></tr>
-<tr class="memdesc:aa307036066531884177ea8048a8a8abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get receive buffer length.  <a href="#aa307036066531884177ea8048a8a8abb">More...</a><br /></td></tr>
-<tr class="separator:aa307036066531884177ea8048a8a8abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678a38e05b0c3fe7fe1d137780e887b5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#a678a38e05b0c3fe7fe1d137780e887b5">ksceUsbSerialSend</a> (const void *buffer, unsigned int len, int unk1, int unk2)</td></tr>
-<tr class="memdesc:a678a38e05b0c3fe7fe1d137780e887b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data.  <a href="#a678a38e05b0c3fe7fe1d137780e887b5">More...</a><br /></td></tr>
-<tr class="separator:a678a38e05b0c3fe7fe1d137780e887b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c36524ec4c14fbe5d932bbe0ae56ce0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2usbserial_8h.html#a7c36524ec4c14fbe5d932bbe0ae56ce0">ksceUsbSerialRecv</a> (void *buffer, unsigned int max_len, int unk1, int unk2)</td></tr>
-<tr class="memdesc:a7c36524ec4c14fbe5d932bbe0ae56ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive Data.  <a href="#a7c36524ec4c14fbe5d932bbe0ae56ce0">More...</a><br /></td></tr>
-<tr class="separator:a7c36524ec4c14fbe5d932bbe0ae56ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37d0ac547255559a0b8691a887d6c1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#ga37d0ac547255559a0b8691a887d6c1de">ksceUsbSerialStart</a> (void)</td></tr>
+<tr class="memdesc:ga37d0ac547255559a0b8691a887d6c1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate USB serial device.  <a href="group__SceUsbSerialKernel.html#ga37d0ac547255559a0b8691a887d6c1de">More...</a><br /></td></tr>
+<tr class="separator:ga37d0ac547255559a0b8691a887d6c1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad72dfb8ec9107537832d1eea400078ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#gad72dfb8ec9107537832d1eea400078ab">ksceUsbSerialSetup</a> (int unk)</td></tr>
+<tr class="memdesc:gad72dfb8ec9107537832d1eea400078ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup USB serial device.  <a href="group__SceUsbSerialKernel.html#gad72dfb8ec9107537832d1eea400078ab">More...</a><br /></td></tr>
+<tr class="separator:gad72dfb8ec9107537832d1eea400078ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf94b720523fd86f2ef04b52098eea559"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#gaf94b720523fd86f2ef04b52098eea559">ksceUsbSerialStatus</a> (void)</td></tr>
+<tr class="memdesc:gaf94b720523fd86f2ef04b52098eea559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB device status.  <a href="group__SceUsbSerialKernel.html#gaf94b720523fd86f2ef04b52098eea559">More...</a><br /></td></tr>
+<tr class="separator:gaf94b720523fd86f2ef04b52098eea559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14d591ede8f9ea6a7e3847533efa8f0b"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#ga14d591ede8f9ea6a7e3847533efa8f0b">ksceUsbSerialClose</a> (void)</td></tr>
+<tr class="memdesc:ga14d591ede8f9ea6a7e3847533efa8f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close USB serial device. <br /></td></tr>
+<tr class="separator:ga14d591ede8f9ea6a7e3847533efa8f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa307036066531884177ea8048a8a8abb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#gaa307036066531884177ea8048a8a8abb">ksceUsbSerialGetRecvBufferSize</a> (void)</td></tr>
+<tr class="memdesc:gaa307036066531884177ea8048a8a8abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get receive buffer length.  <a href="group__SceUsbSerialKernel.html#gaa307036066531884177ea8048a8a8abb">More...</a><br /></td></tr>
+<tr class="separator:gaa307036066531884177ea8048a8a8abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga678a38e05b0c3fe7fe1d137780e887b5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#ga678a38e05b0c3fe7fe1d137780e887b5">ksceUsbSerialSend</a> (const void *buffer, unsigned int len, int unk1, int unk2)</td></tr>
+<tr class="memdesc:ga678a38e05b0c3fe7fe1d137780e887b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data.  <a href="group__SceUsbSerialKernel.html#ga678a38e05b0c3fe7fe1d137780e887b5">More...</a><br /></td></tr>
+<tr class="separator:ga678a38e05b0c3fe7fe1d137780e887b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c36524ec4c14fbe5d932bbe0ae56ce0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbSerialKernel.html#ga7c36524ec4c14fbe5d932bbe0ae56ce0">ksceUsbSerialRecv</a> (void *buffer, unsigned int max_len, int unk1, int unk2)</td></tr>
+<tr class="memdesc:ga7c36524ec4c14fbe5d932bbe0ae56ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive Data.  <a href="group__SceUsbSerialKernel.html#ga7c36524ec4c14fbe5d932bbe0ae56ce0">More...</a><br /></td></tr>
+<tr class="separator:ga7c36524ec4c14fbe5d932bbe0ae56ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file Which defines USB Serial related functions. </p>
 <p>Copyright (C) 2016 PSP2SDK Project</p>
 <p>This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/">http://mozilla.org/MPL/2.0/</a>. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="aa307036066531884177ea8048a8a8abb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa307036066531884177ea8048a8a8abb">&sect;&nbsp;</a></span>ksceUsbSerialGetRecvBufferSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int ksceUsbSerialGetRecvBufferSize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get receive buffer length. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns length of USB rx buffer </dd></dl>
-
-</div>
-</div>
-<a id="a7c36524ec4c14fbe5d932bbe0ae56ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c36524ec4c14fbe5d932bbe0ae56ce0">&sect;&nbsp;</a></span>ksceUsbSerialRecv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int ksceUsbSerialRecv </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>max_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receive Data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buffer</td><td>buffer for incoming data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">max_len</td><td>max data length to receive </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk1</td><td>Unknown </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk2</td><td>Unknown </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>max recv length is 0x10000 </dd></dl>
-
-</div>
-</div>
-<a id="a678a38e05b0c3fe7fe1d137780e887b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a678a38e05b0c3fe7fe1d137780e887b5">&sect;&nbsp;</a></span>ksceUsbSerialSend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int ksceUsbSerialSend </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buffer</td><td>data to send over usb </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">len</td><td>int len of serial buffer data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk1</td><td>Unknown </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk2</td><td>Unknown </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>max send length is 0x10000 </dd></dl>
-
-</div>
-</div>
-<a id="ad72dfb8ec9107537832d1eea400078ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72dfb8ec9107537832d1eea400078ab">&sect;&nbsp;</a></span>ksceUsbSerialSetup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUsbSerialSetup </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Setup USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">unk</td><td>Unknown </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a37d0ac547255559a0b8691a887d6c1de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37d0ac547255559a0b8691a887d6c1de">&sect;&nbsp;</a></span>ksceUsbSerialStart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUsbSerialStart </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Activate USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device. </dd></dl>
-
-</div>
-</div>
-<a id="af94b720523fd86f2ef04b52098eea559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af94b720523fd86f2ef04b52098eea559">&sect;&nbsp;</a></span>ksceUsbSerialStatus()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUsbSerialStatus </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get USB device status. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns 1 when serial port is open </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_897e19e60e1fdcde2ca75bb881442839.html">psp2kern</a></li><li class="navelem"><a class="el" href="ern_2usbserial_8h.html">usbserial.h</a></li>
-    <li class="footer">Generated on Sat Jan 14 2017 16:04:03 for vitasdk by
+    <li class="footer">Generated on Mon Jan 16 2017 07:40:25 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

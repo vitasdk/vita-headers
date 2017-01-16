@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "_SceBtHidRequest", "group__SceBtKernel.html#struct__SceBtHidRequest", "group__SceBtKernel_struct__SceBtHidRequest" ],
-    [ "_sceNpDrmPackageDecrypt_opt", "npdrmpackage_8h.html#struct__sceNpDrmPackageDecrypt__opt", "npdrmpackage_8h_struct__sceNpDrmPackageDecrypt__opt" ],
+    [ "_sceNpDrmPackageDecrypt_opt", "group__SceNpDrmPackageUser.html#struct__sceNpDrmPackageDecrypt__opt", "group__SceNpDrmPackageUser_struct__sceNpDrmPackageDecrypt__opt" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
     [ "sceAppMgrLoadExecOptParam", "group__SceAppMgrUser.html#structsceAppMgrLoadExecOptParam", "group__SceAppMgrUser_structsceAppMgrLoadExecOptParam" ],

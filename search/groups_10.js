@@ -9,6 +9,7 @@ var searchData=
   ['system_20memory_20library',['System Memory Library',['../group__SceSysmem.html',1,'']]],
   ['system_20module_20library',['System Module Library',['../group__SceSysmodule.html',1,'']]],
   ['system_20parameters_20defines',['System Parameters defines',['../group__SceSystemParam.html',1,'']]],
+  ['serial_20communication',['Serial Communication',['../group__SerialCommunication.html',1,'']]],
   ['system_20parameters',['System Parameters',['../group__SystemParams.html',1,'']]],
   ['system_20status',['System Status',['../group__SystemStatus.html',1,'']]]
 ];
