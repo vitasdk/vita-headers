@@ -1644,10 +1644,10 @@ modules:
           ksceKernelGetMemBlockBase: 0xA841EDDA
           ksceKernelFindMemBlockByAddr: 0x8A1742F6
           ksceKernelRemapBlock: 0xDFE2C8CB
-          ksceKernelMemPoolCreate: 0x9328E0E8
-          ksceKernelMemPoolDestroy: 0xD6437637
-          ksceKernelMemPoolAlloc: 0x7B4CB60A
-          ksceKernelMemPoolFree: 0x3EBCE343
+          ksceKernelCreateHeap: 0x9328E0E8
+          ksceKernelDeleteHeap: 0xD6437637
+          ksceKernelAllocHeapMemory: 0x7B4CB60A
+          ksceKernelFreeHeapMemory: 0x3EBCE343
           ksceKernelMapUserBlock: 0x7D4F8B5F
           ksceKernelSwitchVmaForPid: 0x6F2ACDAE
           ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
