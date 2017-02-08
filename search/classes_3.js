@@ -233,6 +233,8 @@ var searchData=
   ['sceusbddeviceaddress',['SceUsbdDeviceAddress',['../group__SceUsbdUser.html#structSceUsbdDeviceAddress',1,'']]],
   ['sceusbddeviceinfo',['SceUsbdDeviceInfo',['../group__SceUsbdUser.html#structSceUsbdDeviceInfo',1,'']]],
   ['sceusbddriver',['SceUsbdDriver',['../structSceUsbdDriver.html',1,'']]],
+  ['sceusbdreceiveevent',['SceUsbdReceiveEvent',['../group__SceUsbdUser.html#structSceUsbdReceiveEvent',1,'']]],
+  ['sceusbdtransferdata',['SceUsbdTransferData',['../group__SceUsbdUser.html#structSceUsbdTransferData',1,'']]],
   ['sceuvector4',['SceUVector4',['../group__SceTypesUser.html#structSceUVector4',1,'']]],
   ['scevideodecqueryinitinfo',['SceVideodecQueryInitInfo',['../group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo',1,'']]],
   ['scevideodecqueryinitinfohwavcdec',['SceVideodecQueryInitInfoHwAvcdec',['../group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec',1,'']]],

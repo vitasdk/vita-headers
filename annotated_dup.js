@@ -239,6 +239,8 @@ var annotated_dup =
     [ "SceUsbdDeviceAddress", "group__SceUsbdUser.html#structSceUsbdDeviceAddress", "group__SceUsbdUser_structSceUsbdDeviceAddress" ],
     [ "SceUsbdDeviceInfo", "group__SceUsbdUser.html#structSceUsbdDeviceInfo", "group__SceUsbdUser_structSceUsbdDeviceInfo" ],
     [ "SceUsbdDriver", "structSceUsbdDriver.html", "structSceUsbdDriver" ],
+    [ "SceUsbdReceiveEvent", "group__SceUsbdUser.html#structSceUsbdReceiveEvent", "group__SceUsbdUser_structSceUsbdReceiveEvent" ],
+    [ "SceUsbdTransferData", "group__SceUsbdUser.html#structSceUsbdTransferData", "group__SceUsbdUser_structSceUsbdTransferData" ],
     [ "SceUVector4", "group__SceTypesUser.html#structSceUVector4", "group__SceTypesUser_structSceUVector4" ],
     [ "SceVideodecQueryInitInfo", "group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo", "group__SceVideoDecUser_unionSceVideodecQueryInitInfo" ],
     [ "SceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser_structSceVideodecQueryInitInfoHwAvcdec" ],

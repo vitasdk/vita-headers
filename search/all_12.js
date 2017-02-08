@@ -703,6 +703,8 @@ var searchData=
   ['sceusbddeviceaddress',['SceUsbdDeviceAddress',['../group__SceUsbdUser.html#structSceUsbdDeviceAddress',1,'']]],
   ['sceusbddeviceinfo',['SceUsbdDeviceInfo',['../group__SceUsbdUser.html#structSceUsbdDeviceInfo',1,'']]],
   ['sceusbddriver',['SceUsbdDriver',['../structSceUsbdDriver.html',1,'']]],
+  ['sceusbdreceiveevent',['SceUsbdReceiveEvent',['../group__SceUsbdUser.html#structSceUsbdReceiveEvent',1,'']]],
+  ['sceusbdtransferdata',['SceUsbdTransferData',['../group__SceUsbdUser.html#structSceUsbdTransferData',1,'']]],
   ['sceusbserialclose',['sceUsbSerialClose',['../group__SceUsbSerialUser.html#gac8a3910e0b34e9d388a5dbe918fd14ac',1,'usbserial.h']]],
   ['sceusbserialgetrecvbuffersize',['sceUsbSerialGetRecvBufferSize',['../group__SceUsbSerialUser.html#ga58d0de74c4fbc75ed8744d92e39377ca',1,'usbserial.h']]],
   ['sceusbserialrecv',['sceUsbSerialRecv',['../group__SceUsbSerialUser.html#gadcec07fbae05cb758157598ed6d4b5d6',1,'usbserial.h']]],

@@ -102,6 +102,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:structSceUsbdDeviceInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceUsbdDeviceAddress"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdUser.html#structSceUsbdDeviceAddress">SceUsbdDeviceAddress</a></td></tr>
 <tr class="separator:structSceUsbdDeviceAddress"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceUsbdTransferData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdUser.html#structSceUsbdTransferData">SceUsbdTransferData</a></td></tr>
+<tr class="separator:structSceUsbdTransferData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceUsbdReceiveEvent"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdUser.html#structSceUsbdReceiveEvent">SceUsbdReceiveEvent</a></td></tr>
+<tr class="separator:structSceUsbdReceiveEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -159,63 +163,63 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdRegisterCallbac
 <tr class="memitem:ga6bc3639f5b00bef1490ef9b7c69896ee"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdUnregisterCallback</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> cbid)</td></tr>
 <tr class="separator:ga6bc3639f5b00bef1490ef9b7c69896ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8610dfa2dd6af65a7af565b9ca8b0cca"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdResetDevice</b> ()</td></tr>
-<tr class="separator:ga8610dfa2dd6af65a7af565b9ca8b0cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffe0cc7e297fa9260036ef324d85b3d9"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdAttach</b> ()</td></tr>
-<tr class="separator:gaffe0cc7e297fa9260036ef324d85b3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e8bdbb9e7f1871e018a5dfd5c4bd557"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdOpenDefaultPipe</b> ()</td></tr>
-<tr class="separator:ga1e8bdbb9e7f1871e018a5dfd5c4bd557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b10839537b79583dac04e2791224145"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdOpenPipe</b> ()</td></tr>
-<tr class="separator:ga5b10839537b79583dac04e2791224145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b1c99bbfa3ab3cded8f67e4311f598f"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdClosePipe</b> ()</td></tr>
-<tr class="separator:ga5b1c99bbfa3ab3cded8f67e4311f598f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga119bb1f1c322667f1f0802ad1c0ea4d3"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdResetDevice</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id)</td></tr>
+<tr class="separator:ga119bb1f1c322667f1f0802ad1c0ea4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fcf0424915a4053be4ad3197b4872db"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdAttach</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, int, int, int)</td></tr>
+<tr class="separator:ga8fcf0424915a4053be4ad3197b4872db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf816ff59de8ed2efb01ea8f36302d11a"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDeviceList</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int num, <a class="el" href="group__SceUsbdUser.html#structSceUsbdDeviceInfo">SceUsbdDeviceInfo</a> *info)</td></tr>
 <tr class="separator:gaf816ff59de8ed2efb01ea8f36302d11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f865a4fc7e21d0677c14ac62235b4f9"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDescriptor</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int descriptor_id, void *descriptor, unsigned int size)</td></tr>
-<tr class="separator:ga6f865a4fc7e21d0677c14ac62235b4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga257b42dfce3d6040d1fba021610d99bd"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDescriptorSize</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int descriptor_id)</td></tr>
-<tr class="separator:ga257b42dfce3d6040d1fba021610d99bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf557a4ea9f918389905843942db332a"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDeviceAddress</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, int, <a class="el" href="group__SceUsbdUser.html#structSceUsbdDeviceAddress">SceUsbdDeviceAddress</a> *addr)</td></tr>
-<tr class="separator:gacf557a4ea9f918389905843942db332a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67343a295ac34eab4a9bbc796c85071c"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDeviceSpeed</b> ()</td></tr>
-<tr class="separator:ga67343a295ac34eab4a9bbc796c85071c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85065040259f70ef872e7dee12abca3b"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetTransferStatus</b> ()</td></tr>
-<tr class="separator:ga85065040259f70ef872e7dee12abca3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7a8bd5a9e38a7f0df1fc9cc61e1cc10"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetIsochTransferStatus</b> ()</td></tr>
-<tr class="separator:gaa7a8bd5a9e38a7f0df1fc9cc61e1cc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0aab19f7d31817a5152cb4d8c265026e"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdTransferData</b> ()</td></tr>
-<tr class="separator:ga0aab19f7d31817a5152cb4d8c265026e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93472a20dafca1989691947abedc257b"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdIsochTransferData</b> ()</td></tr>
-<tr class="separator:ga93472a20dafca1989691947abedc257b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafde73b79b646a7435816d4244a8169ff"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdReceiveEvent</b> ()</td></tr>
-<tr class="separator:gafde73b79b646a7435816d4244a8169ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga067ca7f4187b442306d12ba096803c15"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdRegisterLdd</b> ()</td></tr>
-<tr class="separator:ga067ca7f4187b442306d12ba096803c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d608dd63db50d54b14fe1baad1465ca"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdUnregisterLdd</b> ()</td></tr>
-<tr class="separator:ga3d608dd63db50d54b14fe1baad1465ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac03cd796212bc7816f9af524883d575b"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdRegisterCompositeLdd</b> ()</td></tr>
-<tr class="separator:gac03cd796212bc7816f9af524883d575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc64c9ef0f1212a54b54dcae469e358e"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdAttachCompositeLdd</b> ()</td></tr>
-<tr class="separator:gacc64c9ef0f1212a54b54dcae469e358e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga792c0c82926d86fe23a711269c12c357"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDescriptor</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id, unsigned char *descriptor, unsigned int size)</td></tr>
+<tr class="separator:ga792c0c82926d86fe23a711269c12c357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d5eda0af15165689e0905d1246e382c"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDescriptorSize</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id)</td></tr>
+<tr class="separator:ga6d5eda0af15165689e0905d1246e382c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c80ad63a2d17c5af08f095f1dcd298a"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDeviceAddress</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id, <a class="el" href="group__SceUsbdUser.html#structSceUsbdDeviceAddress">SceUsbdDeviceAddress</a> *addr)</td></tr>
+<tr class="separator:ga0c80ad63a2d17c5af08f095f1dcd298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac35d7fd242ee3342d574a1ed648d5bcf"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetDeviceSpeed</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id, unsigned int *speed)</td></tr>
+<tr class="separator:gac35d7fd242ee3342d574a1ed648d5bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87d8e5d9021010b2a1b448e013abe61f"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetTransferStatus</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned char buff[0x10])</td></tr>
+<tr class="separator:ga87d8e5d9021010b2a1b448e013abe61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9d58fbab30534856e1d082c88bece18"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdGetIsochTransferStatus</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned char buff[0x10])</td></tr>
+<tr class="separator:gab9d58fbab30534856e1d082c88bece18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22e144470b8eb60d89e2cd3dfdf1c086"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdOpenDefaultPipe</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id)</td></tr>
+<tr class="separator:ga22e144470b8eb60d89e2cd3dfdf1c086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b8d7f3d5a02fa52168bd31d38b65143"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdOpenPipe</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned char unk[0x18])</td></tr>
+<tr class="separator:ga8b8d7f3d5a02fa52168bd31d38b65143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4641337969c3cf5045a7cc40ba61fe9"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdClosePipe</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, unsigned int device_id)</td></tr>
+<tr class="separator:gae4641337969c3cf5045a7cc40ba61fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad29255686a3988810f2f9d704ce38991"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdTransferData</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceUsbdUser.html#structSceUsbdTransferData">SceUsbdTransferData</a> *data)</td></tr>
+<tr class="separator:gad29255686a3988810f2f9d704ce38991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9300eb8f18e2871c47a5f58b91de2c3a"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdIsochTransferData</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, int unk, unsigned char buff[0x28])</td></tr>
+<tr class="separator:ga9300eb8f18e2871c47a5f58b91de2c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga996e7027a033ea905b090ea54e6f1e46"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdReceiveEvent</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceUsbdUser.html#structSceUsbdReceiveEvent">SceUsbdReceiveEvent</a> *event)</td></tr>
+<tr class="separator:ga996e7027a033ea905b090ea54e6f1e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecfb65613a731e338b96897c844fc180"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdRegisterLdd</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, const char str[0x100])</td></tr>
+<tr class="separator:gaecfb65613a731e338b96897c844fc180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61813e82ebd25d930cb7497f0a32f6a0"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdUnregisterLdd</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, const char str[0x100])</td></tr>
+<tr class="separator:ga61813e82ebd25d930cb7497f0a32f6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga356c1dcc89c8195cc6098b281ffd644e"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdRegisterCompositeLdd</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, const char str[0x100])</td></tr>
+<tr class="separator:ga356c1dcc89c8195cc6098b281ffd644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d85c9e045fc26c3eec3404eff077e88"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdAttachCompositeLdd</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>, unsigned char unk[0x14])</td></tr>
+<tr class="separator:ga0d85c9e045fc26c3eec3404eff077e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file which defines USB driver related variables and functions. </p>
@@ -227,7 +231,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceUsbdAttachComposite
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b01009cebf28d8f720b9c837209f59b1.html">psp2</a></li><li class="navelem"><a class="el" href="usbd_8h.html">usbd.h</a></li>
-    <li class="footer">Generated on Wed Feb 8 2017 15:15:40 for vitasdk by
+    <li class="footer">Generated on Wed Feb 8 2017 17:21:55 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
