@@ -49,8 +49,8 @@ typedef struct SceUsbdDeviceAddress {
 } SceUsbdDeviceAddress; /* size = 0x6 */
 
 typedef struct SceUsbdTransferData {
-	unsigned int device_id;
-	void *buff1;
+	unsigned int pipe;
+	const void *buff1;
 	unsigned int size1;
 	void *buff2;
 	unsigned int size2;
@@ -63,7 +63,7 @@ typedef struct SceUsbdReceiveEvent {
 	unsigned int unk3;
 	unsigned int unk4;
 	unsigned int unk5;
-	unsigned int unk6;
+	unsigned int transfer_id;
 } SceUsbdReceiveEvent; /* size = 0x1C */
 
 int sceUsbdInit(SceUID *uid);
