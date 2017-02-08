@@ -5080,12 +5080,17 @@ modules:
           sceUsbdClosePipe: 0xAA3AF5D5
           sceUsbdGetDescriptor: 0xAE671F22
           sceUsbdGetDescriptorSize: 0xB357AC81
-          sceUsbdGetDeviceLocation: 0xC54F9D11
+          sceUsbdGetDeviceAddress: 0xC54F9D11
           sceUsbdAttachCompositeLdd: 0xCA8F2F59
           sceUsbdGetTransferStatus: 0xCDF5B6E0
           sceUsbdResetDevice: 0xDEB3BE59
           sceUsbdAttach: 0xEACEAE86
           sceUsbdOpenPipe: 0xF94521A6
+      SceUsbdForDriver:
+        kernel: true
+        nid: 0xA0EBCA41
+        functions:
+          ksceUsbdRegisterDriver: 0x1EC94F18
   SceUsbSerial:
     nid: 0xF8D9930F
     libraries:
