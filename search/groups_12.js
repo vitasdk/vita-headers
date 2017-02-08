@@ -55,6 +55,8 @@ var searchData=
   ['user',['User',['../group__SceTypesUser.html',1,'']]],
   ['usb_20device_20controller_20driver_20library',['USB Device Controller Driver Library',['../group__SceUdcd.html',1,'']]],
   ['user',['User',['../group__SceUdcdUser.html',1,'']]],
+  ['usb_20driver_20library',['USB Driver Library',['../group__SceUsbd.html',1,'']]],
+  ['user',['User',['../group__SceUsbdUser.html',1,'']]],
   ['usb_20serial_20library',['USB Serial Library',['../group__SceUsbSerial.html',1,'']]],
   ['user',['User',['../group__SceUsbSerialUser.html',1,'']]],
   ['usb_20virtual_20storage_20driver_20library',['USB Virtual Storage Driver Library',['../group__SceUsbstorVStorDriver.html',1,'']]],
