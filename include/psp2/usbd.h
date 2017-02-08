@@ -39,7 +39,7 @@ extern "C" {
 
 typedef struct SceUsbdDeviceInfo {
 	unsigned int unk0;
-	unsigned int unk1;
+	unsigned int device_id;
 	unsigned int unk2;
 } SceUsbdDeviceInfo; /* size = 0xC */
 
@@ -48,35 +48,53 @@ typedef struct SceUsbdDeviceAddress {
 	unsigned short unk1;
 } SceUsbdDeviceAddress; /* size = 0x6 */
 
+typedef struct SceUsbdTransferData {
+	unsigned int device_id;
+	void *buff1;
+	unsigned int size1;
+	void *buff2;
+	unsigned int size2;
+} SceUsbdTransferData; /* size = 0x14 */
+
+typedef struct SceUsbdReceiveEvent {
+	unsigned int unk0;
+	unsigned int unk1;
+	unsigned int unk2;
+	unsigned int unk3;
+	unsigned int unk4;
+	unsigned int unk5;
+	unsigned int unk6;
+} SceUsbdReceiveEvent; /* size = 0x1C */
+
 int sceUsbdInit(SceUID *uid);
 int sceUsbdEnd(SceUID uid);
 
 int sceUsbdRegisterCallback(SceUID cbid, int);
 int sceUsbdUnregisterCallback(SceUID cbid);
 
-int sceUsbdResetDevice();
-int sceUsbdAttach();
-
-int sceUsbdOpenDefaultPipe();
-int sceUsbdOpenPipe();
-int sceUsbdClosePipe();
+int sceUsbdResetDevice(SceUID uid, unsigned int device_id);
+int sceUsbdAttach(SceUID uid, int, int, int);
 
 int sceUsbdGetDeviceList(SceUID uid, unsigned int num, SceUsbdDeviceInfo *info);
-int sceUsbdGetDescriptor(SceUID uid, unsigned int descriptor_id, void *descriptor, unsigned int size);
-int sceUsbdGetDescriptorSize(SceUID uid, unsigned int descriptor_id);
-int sceUsbdGetDeviceAddress(SceUID uid, int, SceUsbdDeviceAddress *addr);
-int sceUsbdGetDeviceSpeed();
-int sceUsbdGetTransferStatus();
-int sceUsbdGetIsochTransferStatus();
+int sceUsbdGetDescriptor(SceUID uid, unsigned int device_id, unsigned char *descriptor, unsigned int size);
+int sceUsbdGetDescriptorSize(SceUID uid, unsigned int device_id);
+int sceUsbdGetDeviceAddress(SceUID uid, unsigned int device_id, SceUsbdDeviceAddress *addr);
+int sceUsbdGetDeviceSpeed(SceUID uid, unsigned int device_id, unsigned int *speed);
+int sceUsbdGetTransferStatus(SceUID uid, unsigned char buff[0x10]);
+int sceUsbdGetIsochTransferStatus(SceUID uid, unsigned char buff[0x10]);
 
-int sceUsbdTransferData();
-int sceUsbdIsochTransferData();
-int sceUsbdReceiveEvent();
+int sceUsbdOpenDefaultPipe(SceUID uid, unsigned int device_id);
+int sceUsbdOpenPipe(SceUID uid, unsigned char unk[0x18]);
+int sceUsbdClosePipe(SceUID uid, unsigned int device_id);
 
-int sceUsbdRegisterLdd();
-int sceUsbdUnregisterLdd();
-int sceUsbdRegisterCompositeLdd();
-int sceUsbdAttachCompositeLdd();
+int sceUsbdTransferData(SceUID uid, SceUsbdTransferData *data);
+int sceUsbdIsochTransferData(SceUID uid, int unk, unsigned char buff[0x28]);
+int sceUsbdReceiveEvent(SceUID uid, SceUsbdReceiveEvent *event);
+
+int sceUsbdRegisterLdd(SceUID uid, const char str[0x100]);
+int sceUsbdUnregisterLdd(SceUID uid, const char str[0x100]);
+int sceUsbdRegisterCompositeLdd(SceUID uid, const char str[0x100]);
+int sceUsbdAttachCompositeLdd(SceUID, unsigned char unk[0x14]);
 
 #ifdef __cplusplus
 }
