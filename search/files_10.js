@@ -5,6 +5,7 @@ var searchData=
   ['shellutil_2eh',['shellutil.h',['../shellutil_8h.html',1,'']]],
   ['sqlite_2eh',['sqlite.h',['../sqlite_8h.html',1,'']]],
   ['stat_2eh',['stat.h',['../stat_8h.html',1,'']]],
+  ['suspend_2eh',['suspend.h',['../suspend_8h.html',1,'']]],
   ['sysmem_2eh',['sysmem.h',['../kernel_2sysmem_8h.html',1,'']]],
   ['sysmem_2eh',['sysmem.h',['../ern_2kernel_2sysmem_8h.html',1,'']]],
   ['sysmodule_2eh',['sysmodule.h',['../sysmodule_8h.html',1,'']]],

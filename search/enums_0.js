@@ -7,6 +7,7 @@ var searchData=
   ['sceeventflagwaittypes',['SceEventFlagWaitTypes',['../group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843',1,'SceEventFlagWaitTypes():&#160;threadmgr.h'],['../group__SceThreadMgrKernel.html#ga705f51eec6069fac8fdd74d430472843',1,'SceEventFlagWaitTypes():&#160;threadmgr.h']]],
   ['scegxterrorcode',['SceGxtErrorCode',['../group__SceGxtUser.html#ga138077ed21b596d15817981bde20f3b0',1,'gxt.h']]],
   ['scekernelidlisttype',['SceKernelIdListType',['../group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc',1,'SceKernelIdListType():&#160;threadmgr.h'],['../group__SceThreadMgrKernel.html#gab73e1647ba8ce49d40132e57883602dc',1,'SceKernelIdListType():&#160;threadmgr.h']]],
+  ['scekernelpowerticktype',['SceKernelPowerTickType',['../group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f',1,'suspend.h']]],
   ['scelocationdialogresult',['SceLocationDialogResult',['../group__SceLocationUser.html#gacd49038cc21f91a3d337af5d14f17d00',1,'location.h']]],
   ['scelocationdialogstatus',['SceLocationDialogStatus',['../group__SceLocationUser.html#gaede1fcb282a8e02c31961adc7dd28001',1,'location.h']]],
   ['scelocationheadingmethod',['SceLocationHeadingMethod',['../group__SceLocationUser.html#gafb8512aad9366c1c282da8218df682b6',1,'location.h']]],

@@ -10,5 +10,6 @@ var group__kernel =
     [ "Thread Manager Library", "group__SceThreadMgr.html", "group__SceThreadMgr" ],
     [ "System Memory Library", "group__SceSysmem.html", "group__SceSysmem" ],
     [ "OpenPsid Library", "group__SceOpenPsid.html", "group__SceOpenPsid" ],
-    [ "Random Number Library", "group__SceRng.html", "group__SceRng" ]
+    [ "Random Number Library", "group__SceRng.html", "group__SceRng" ],
+    [ "Suspend Library", "group__SceSuspend.html", "group__SceSuspend" ]
 ];
