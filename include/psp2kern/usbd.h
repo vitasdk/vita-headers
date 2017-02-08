@@ -1,11 +1,11 @@
 /**
  * \usergroup{SceUsbd}
- * \usage{psp2/usbd.h,-lSceUsbd_stub}
+ * \usage{psp2kern/usbd.h,-lSceUsbdForDriver_stub}
  */
 
 /**
  * \file
- * \brief Header file which defines USB driver related variables and functions
+ * \brief Header file which defines USB driver kernel related variables and functions
  *
  * Copyright (C) 2017 vitasdk developers
  *
@@ -14,10 +14,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef _PSP2_USBD_H_
-#define _PSP2_USBD_H_
+#ifndef _PSP2_KERNEL_USBD_H_
+#define _PSP2_KERNEL_USBD_H_
 
-#include <psp2/kernel/threadmgr.h>
+#include <psp2kern/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -48,38 +48,19 @@ typedef struct SceUsbdDeviceAddress {
 	unsigned short unk1;
 } SceUsbdDeviceAddress; /* size = 0x6 */
 
-int sceUsbdInit(SceUID *uid);
-int sceUsbdEnd(SceUID uid);
+typedef struct SceUsbdDriver {
+	const char *name;
+	int (*func_unk0)(int);
+	int (*func_unk1)(int);
+	int (*func_unk2)(int);
+	SceUsbdDriver *next;
+} SceUsbdDriver; /* size = 0x14 */
 
-int sceUsbdRegisterCallback(SceUID cbid, int);
-int sceUsbdUnregisterCallback(SceUID cbid);
+int ksceUsbdRegisterDriver(SceUsbdDriver *driver);
 
-int sceUsbdResetDevice();
-int sceUsbdAttach();
-
-int sceUsbdOpenDefaultPipe();
-int sceUsbdOpenPipe();
-int sceUsbdClosePipe();
-
-int sceUsbdGetDeviceList(SceUID uid, unsigned int num, SceUsbdDeviceInfo *info);
-int sceUsbdGetDescriptor(SceUID uid, unsigned int descriptor_id, void *descriptor, unsigned int size);
-int sceUsbdGetDescriptorSize(SceUID uid, unsigned int descriptor_id);
-int sceUsbdGetDeviceAddress(SceUID uid, int, SceUsbdDeviceAddress *addr);
-int sceUsbdGetDeviceSpeed();
-int sceUsbdGetTransferStatus();
-int sceUsbdGetIsochTransferStatus();
-
-int sceUsbdTransferData();
-int sceUsbdIsochTransferData();
-int sceUsbdReceiveEvent();
-
-int sceUsbdRegisterLdd();
-int sceUsbdUnregisterLdd();
-int sceUsbdRegisterCompositeLdd();
-int sceUsbdAttachCompositeLdd();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* _PSP2_USBD_H_ */
+#endif /* _PSP2_KERNEL_USBD_H_ */
