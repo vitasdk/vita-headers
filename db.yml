@@ -5056,6 +5056,34 @@ modules:
           ksceSblACMgrIsGameProgram: 0x1298C647
           ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
           ksceSblACMgrIsDevelopmentMode: 0xE87D1777
+  SceUsbd:
+    nid: 0x3525FE7A
+    libraries:
+      SceUsbdForUser:
+        kernel: false
+        nid: 0xC3AEAB67
+        functions:
+          sceUsbdReceiveEvent: 0x16FEE05D
+          sceUsbdRegisterCompositeLdd: 0x2A7C0263
+          sceUsbdGetDeviceList: 0x2DE0239E
+          sceUsbdUnregisterLdd: 0x473692CC
+          sceUsbdOpenDefaultPipe: 0x4A26DDCC
+          sceUsbdEnd: 0x5736A150
+          sceUsbdIsochTransferData: 0x594D82FD
+          sceUsbdRegisterLdd: 0x6AD28166
+          sceUsbdGetDeviceSpeed: 0x6C5AACD0
+          sceUsbdTransferData: 0x716048C1
+          sceUsbdInit: 0x77D58B31
+          sceUsbdGetIsochTransferStatus: 0xA0A2C826
+          sceUsbdClosePipe: 0xAA3AF5D5
+          sceUsbdGetDescriptor: 0xAE671F22
+          sceUsbdGetDescriptorSize: 0xB357AC81
+          sceUsbdGetDeviceLocation: 0xC54F9D11
+          sceUsbdAttachCompositeLdd: 0xCA8F2F59
+          sceUsbdGetTransferStatus: 0xCDF5B6E0
+          sceUsbdResetDevice: 0xDEB3BE59
+          sceUsbdAttach: 0xEACEAE86
+          sceUsbdOpenPipe: 0xF94521A6
   SceUsbSerial:
     nid: 0xF8D9930F
     libraries:
