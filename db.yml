@@ -5063,6 +5063,7 @@ modules:
         kernel: false
         nid: 0xC3AEAB67
         functions:
+          sceUsbdUnregisterCallback: 0x0585EA80
           sceUsbdReceiveEvent: 0x16FEE05D
           sceUsbdRegisterCompositeLdd: 0x2A7C0263
           sceUsbdGetDeviceList: 0x2DE0239E
@@ -5074,6 +5075,7 @@ modules:
           sceUsbdGetDeviceSpeed: 0x6C5AACD0
           sceUsbdTransferData: 0x716048C1
           sceUsbdInit: 0x77D58B31
+          sceUsbdRegisterCallback: 0x9A820167
           sceUsbdGetIsochTransferStatus: 0xA0A2C826
           sceUsbdClosePipe: 0xAA3AF5D5
           sceUsbdGetDescriptor: 0xAE671F22
