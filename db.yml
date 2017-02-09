@@ -937,6 +937,15 @@ modules:
           sceDisplaySetFrameBuf: 0x7A410B64
         kernel: false
         nid: 0x4FAACD11
+      SceDisplayForDriver:
+        functions:
+          ksceDisplayGetFrameBufDimensions: 0x5AFE6CD3
+          ksceDisplaySetFrameBuf: 0x289D82FE
+          ksceDisplayGetFrameBuf: 0xEEDA2E54
+          ksceDisplaySetFrameBufInternal: 0x16466675
+          ksceDisplayGetFrameBufInternal: 0x19F94C63
+        kernel: true
+        nid: 0x9FED47AC
   SceFace:
     nid: 0x2E
     libraries:
