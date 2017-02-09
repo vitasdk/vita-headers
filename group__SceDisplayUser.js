@@ -1,11 +1,19 @@
 var group__SceDisplayUser =
 [
-    [ "display.h", "display_8h.html", [
+    [ "display.h", "display_8h.html", null ],
+    [ "display.h", "ern_2display_8h.html", [
+      [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcbaed1ba9da79d96bef5d2c401d271ed016", null ],
+      [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcba942be0a40abb1c6466d4583f2cefa98c", null ],
       [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167baed1ba9da79d96bef5d2c401d271ed016", null ],
       [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167ba942be0a40abb1c6466d4583f2cefa98c", null ]
     ] ],
     [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167baed1ba9da79d96bef5d2c401d271ed016", null ],
+    [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcbaed1ba9da79d96bef5d2c401d271ed016", null ],
     [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167ba942be0a40abb1c6466d4583f2cefa98c", null ],
+    [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcba942be0a40abb1c6466d4583f2cefa98c", null ],
+    [ "ksceDisplayGetFrameBuf", "group__SceDisplayUser.html#ga5d16b8195b9c190d39fa83939443eb89", null ],
+    [ "ksceDisplayGetFrameBufDimensions", "group__SceDisplayUser.html#ga0cb12ad2f870bd91623d2946683334e7", null ],
+    [ "ksceDisplaySetFrameBuf", "group__SceDisplayUser.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
     [ "sceDisplayGetFrameBuf", "group__SceDisplayUser.html#gad6f2cec6a63415b3198cd77f28620076", null ],
     [ "sceDisplayGetRefreshRate", "group__SceDisplayUser.html#ga08eff4b36dd9ecab705260100edcf919", null ],
     [ "sceDisplayGetVcount", "group__SceDisplayUser.html#ga5890d97145fdad4c46cf94469e80ce2a", null ],

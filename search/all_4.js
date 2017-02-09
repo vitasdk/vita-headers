@@ -13,6 +13,7 @@ var searchData=
   ['dialog',['Dialog',['../group__Dialog.html',1,'']]],
   ['direction',['direction',['../group__SceLocationUser.html#gaeecc7aa4df7eeba837f21cd636b54a61',1,'SceLocationLocationInfo']]],
   ['dirent_2eh',['dirent.h',['../dirent_8h.html',1,'']]],
+  ['display_2eh',['display.h',['../ern_2display_8h.html',1,'']]],
   ['display_2eh',['display.h',['../display_8h.html',1,'']]],
   ['drivermemblock',['driverMemBlock',['../group__SceGxmUser.html#ga41939c7d27a460b8f47d514c6d575cc7',1,'SceGxmRenderTargetParams']]],
   ['device_20control_20library',['Device Control Library',['../group__SceDevCtl.html',1,'']]],
