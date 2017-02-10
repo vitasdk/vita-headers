@@ -50,9 +50,9 @@ typedef struct SceUsbdDeviceAddress {
 
 typedef struct SceUsbdDriver {
 	const char *name;
-	int (*func_unk0)(int);
-	int (*func_unk1)(int);
-	int (*func_unk2)(int);
+	int (*probe)(SceUID id);
+	int (*attach)(SceUID id);
+	int (*detach)(SceUID id);
 	SceUsbdDriver *next;
 } SceUsbdDriver; /* size = 0x14 */
 
