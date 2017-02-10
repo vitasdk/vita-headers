@@ -3,19 +3,6 @@
  * \usage{psp2/gxt.h,?}
  */
 
-/**
- * @file gxt.h
- * @brief Header file which defines GXT variables and functions
- *
- * The GXT library facilitates the runtime manipulation of GXT files
- * produced using the offline texture tools.
- *
- * Copyright (C) 2015 PSP2SDK Project
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- */
 
 #ifndef _PSP2_GXT_H_
 #define _PSP2_GXT_H_

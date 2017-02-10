@@ -3,16 +3,6 @@
  * \usage{psp2/udcd.h,-lSceUdcd_stub}
  */
 
-/**
- * \file
- * \brief Header file which defines USB Device Controller Driver related variables and functions
- *
- * Copyright (C) 2017 vitasdk developers
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- */
 
 #ifndef _PSP2_UDCD_H_
 #define _PSP2_UDCD_H_

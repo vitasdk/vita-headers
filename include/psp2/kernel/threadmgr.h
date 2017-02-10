@@ -3,16 +3,6 @@
  * \usage{psp2/kernel/threadmgr.h,-lSceKernel_stub}
  */
 
-/**
- * \file
- * \brief Header file related to thread management
- *
- * Copyright (C) 2015 PSP2SDK Project
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- */
 
 #ifndef _PSP2_KERNEL_THREADMGR_H_
 #define _PSP2_KERNEL_THREADMGR_H_
@@ -1115,7 +1105,6 @@ typedef enum SceKernelIdListType {
 SceKernelIdListType sceKernelGetThreadmgrUIDClass(SceUID uid);
 
 
-
 typedef struct	SceKernelLwMutexWork {
 	SceInt64 data[4];
 } SceKernelLwMutexWork;
@@ -1141,7 +1130,6 @@ int sceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigne
 int sceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
 int sceKernelSignalLwCond(SceKernelLwCondWork *pWork);
 int sceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
-
 
 
 /**

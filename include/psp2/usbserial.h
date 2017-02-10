@@ -3,16 +3,7 @@
  * \usage{psp2/usbserial.h,-lSceUsbSerial_stub}
  */
 
-/**
- * \file
- * \brief Header file Which defines USB Serial related functions
- *
- * Copyright (C) 2016 PSP2SDK Project
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- */
+
 #ifndef _PSP2_USBSERIAL_H_
 #define _PSP2_USBSERIAL_H_
 

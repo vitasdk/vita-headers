@@ -1,14 +1,3 @@
-/**
- * \file
- * \brief Header file which includes all the others
- *
- * Copyright (C) 2016 vitasdk
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- */
- 
 #ifndef _VITASDK_H_
 #define _VITASDK_H_
 
