@@ -1712,20 +1712,21 @@ modules:
         kernel: true
         nid: 0x54BF2BAB
         functions:
+          ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x19F17BD0
           ksceKernelCpuSaveContext: 0x211B89DA
-          ksceKernelCpuRestoreContext: 0xA4F0FB9
-          ksceKernelCpuIcacheAndL2Flush: 0x19F17BD0
           ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
-          ksceKernelCpuDcacheFlush: 0x6BA2E51C
+          ksceKernelCpuDcacheWritebackInvalidateRange: 0x6BA2E51C
+          ksceKernelCpuRestoreContext: 0xA4F0FB9
       SceCpuForDriver:
         kernel: true
         nid: 0x40ECDB0E
         functions:
+          ksceKernelCpuDcacheAndL2InvalidateRange: 0x02796361
+          ksceKernelCpuDcacheAndL2WritebackRange: 0x103872A5
+          ksceKernelCpuDcacheAndL2WritebackInvalidateRange: 0x364E68A4
           ksceKernelCpuDisableInterrupts: 0x821FC0EE
+          ksceKernelCpuDcacheWritebackRange: 0x9CB9F0CE
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
-          ksceKernelCpuDcacheAndL2AndDMAFlush: 0x364E68A4
-          ksceKernelCpuDcacheAndL2Flush: 0x9CB9F0CE
-          ksceKernelCpuDcacheWritebackRange: 0x103872A5
       SceSysrootForKernel:
         kernel: true
         nid: 0x3691DA45
