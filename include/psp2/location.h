@@ -3,16 +3,6 @@
  * \usage{psp2/location.h,?}
  */
 
-/**
-* \file location.h
-* \brief Header file which defines location related variables and functions
-*
-* Copyright (C) 2016 Vitasdk developers
-*
-* This Source Code Form is subject to the terms of the Mozilla Public
-* License, v. 2.0. If a copy of the MPL was not distributed with this
-* file, You can obtain one at http://mozilla.org/MPL/2.0/.
-*/
 
 #ifndef _PSP2_LOCATION_H_
 #define _PSP2_LOCATION_H_
