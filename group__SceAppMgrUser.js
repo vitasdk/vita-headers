@@ -1,12 +1,5 @@
 var group__SceAppMgrUser =
 [
-    [ "appmgr.h", "appmgr_8h.html", [
-      [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983", null ],
-      [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d", null ],
-      [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38", null ],
-      [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082", null ],
-      [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290", null ]
-    ] ],
     [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983", null ],
     [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082", null ],
     [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290", null ],

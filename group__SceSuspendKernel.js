@@ -1,6 +1,5 @@
 var group__SceSuspendKernel =
 [
-    [ "suspend.h", "suspend_8h.html", null ],
     [ "SceKernelPowerTickType", "group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f", [
       [ "SCE_KERNEL_POWER_TICK_DEFAULT", "group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9", null ],
       [ "SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND", "group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa3e8b9af3aaeb7cd8fb6ce66a8063d872", null ],

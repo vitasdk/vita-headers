@@ -1,4 +1,4 @@
 var group__SceGxm =
 [
-    [ "User", "group__SceGxmUser.html", "group__SceGxmUser" ]
+    [ "User", "group__SceGxmUser.html", null ]
 ];

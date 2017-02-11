@@ -1,6 +1,5 @@
 var group__SceTypesKernel =
 [
-    [ "types.h", "ern_2types_8h.html", null ],
     [ "SCE_KERNEL_PROCESS_ID_SELF", "group__SceTypesKernel.html#gae50a711d10b726734d4b4d27295ff0e2", null ],
     [ "SCE_UID_NAMELEN", "group__SceTypesKernel.html#ga2582b3509efd06e62a9b6f79a6cf82e2", null ],
     [ "SceMode", "group__SceTypesKernel.html#gad563fb9897e927ac60a231ba16859629", null ],

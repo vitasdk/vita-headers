@@ -1,9 +1,13 @@
 var group__SceLocationUser =
 [
-    [ "location.h", "location_8h.html", null ],
     [ "SceLocationHandle", "group__SceLocationUser.html#ga46a55d856edecaa6a7a3376365276be0", null ],
     [ "SceLocationHeadingInfoCallback", "group__SceLocationUser.html#gaf379391927de99daef6f95dffb73f226", null ],
-    [ "SceLocationLocationInfoCallback", "group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2", null ],
+    [ "SceLocationLocationInfoCallback", "group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2", [
+      [ "SCE_TOUCH_MAX_REPORT", "group__SceTouchUser.html#gga4f126a0a9b1d8c6a8f46a051ef8830bbaa3e4b337c895c44be3754e0e532a96fb", null ],
+      [ "SCE_TOUCH_PORT_FRONT", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a0d2580e55567d3c921b1031a4684f6a7", null ],
+      [ "SCE_TOUCH_PORT_BACK", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a2e861439acd3722f5c25f1a13e0b8758", null ],
+      [ "SCE_TOUCH_PORT_MAX_NUM", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a60ab295a1586005154cf1c5bb888336f", null ]
+    ] ],
     [ "SceLocationDialogResult", "group__SceLocationUser.html#gacd49038cc21f91a3d337af5d14f17d00", [
       [ "SCE_LOCATION_DIALOG_RESULT_NONE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00ac1d4cf0db1c00e9a61f08c550f1822c6", null ],
       [ "SCE_LOCATION_DIALOG_RESULT_DISABLE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a2a19317a8dc0eb7196ad0fe82ba910da", null ],

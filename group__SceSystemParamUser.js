@@ -1,7 +1,11 @@
 var group__SceSystemParamUser =
 [
-    [ "system_param.h", "system__param_8h.html", null ],
     [ "SCE_SYSTEM_PARAM_USERNAME_MAXSIZE", "group__SceSystemParamUser.html#ga4c6088344a220d81300f2f117d755e38", [
+      [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983", null ],
+      [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d", null ],
+      [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38", null ],
+      [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082", null ],
+      [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290", null ],
       [ "SCE_SYSTEM_PARAM_ID_LANG", "group__SceSystemParamUser.html#ggab39a415800ebd0d977c477376649649bae324f1a04aa994ae0ee5d365acf4f8d0", null ],
       [ "SCE_SYSTEM_PARAM_ID_ENTER_BUTTON", "group__SceSystemParamUser.html#ggab39a415800ebd0d977c477376649649ba5047b42dc0be2d067b0776df3a0720ff", null ],
       [ "SCE_SYSTEM_PARAM_ID_USERNAME", "group__SceSystemParamUser.html#ggab39a415800ebd0d977c477376649649ba60fd28ac53ae32ef8b766a73752cb995", null ],

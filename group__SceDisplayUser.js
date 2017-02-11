@@ -1,12 +1,5 @@
 var group__SceDisplayUser =
 [
-    [ "display.h", "display_8h.html", null ],
-    [ "display.h", "ern_2display_8h.html", [
-      [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcbaed1ba9da79d96bef5d2c401d271ed016", null ],
-      [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcba942be0a40abb1c6466d4583f2cefa98c", null ],
-      [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167baed1ba9da79d96bef5d2c401d271ed016", null ],
-      [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167ba942be0a40abb1c6466d4583f2cefa98c", null ]
-    ] ],
     [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167baed1ba9da79d96bef5d2c401d271ed016", null ],
     [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ee8d0f117a79ca7eb1e0076a9182bcbaed1ba9da79d96bef5d2c401d271ed016", null ],
     [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167ba942be0a40abb1c6466d4583f2cefa98c", null ],

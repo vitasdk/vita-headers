@@ -243,7 +243,7 @@ var searchData=
   ['scepowersetgpuclockfrequency',['scePowerSetGpuClockFrequency',['../group__ScePowerUser.html#ga0fef02f3a46358da26a4ee2e38240df1',1,'power.h']]],
   ['scepowersetgpuxbarclockfrequency',['scePowerSetGpuXbarClockFrequency',['../group__ScePowerUser.html#gaea7881caee1ac4ea9fc0e25e5553dc51',1,'power.h']]],
   ['scepowerunregistercallback',['scePowerUnregisterCallback',['../group__ScePowerUser.html#ga5a9c0154c265e0f011ad09f679176714',1,'power.h']]],
-  ['scepromoterutilitydeletepkg',['scePromoterUtilityDeletePkg',['../group__ScePromoterUtilUser.html#gab1ac7663e0832a68075c3f5ce5b0d03a',1,'promoterutil.h']]],
+  ['scepromoterutilitydeletepkg',['scePromoterUtilityDeletePkg',['../group__ScePromoterUtilUser.html#gad7e2600fdb1009e6ace97ee67219a408',1,'promoterutil.h']]],
   ['scepromoterutilityexit',['scePromoterUtilityExit',['../group__ScePromoterUtilUser.html#gabaf2f7034ae507707a7d8bd76d3992a8',1,'promoterutil.h']]],
   ['scepromoterutilitygetresult',['scePromoterUtilityGetResult',['../group__ScePromoterUtilUser.html#ga33fffeec15e5daff578d42102ad9572f',1,'promoterutil.h']]],
   ['scepromoterutilitygetstate',['scePromoterUtilityGetState',['../group__ScePromoterUtilUser.html#ga0bb20f69381f605e9fe5eff670b6ffd2',1,'promoterutil.h']]],

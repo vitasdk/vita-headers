@@ -1,6 +1,5 @@
 var group__SceFcntlUser =
 [
-    [ "fcntl.h", "io_2fcntl_8h.html", null ],
     [ "sceIoCancel", "group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22", null ],
     [ "sceIoChangeAsyncPriority", "group__SceFcntlUser.html#ga099e9c6cb3e72104424cb391ad77b0a0", null ],
     [ "sceIoClose", "group__SceFcntlUser.html#ga125921b287807c747491aed6ef16acd9", null ],

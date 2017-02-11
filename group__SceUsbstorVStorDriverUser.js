@@ -1,6 +1,5 @@
 var group__SceUsbstorVStorDriverUser =
 [
-    [ "usbstorvstor.h", "usbstorvstor_8h.html", null ],
     [ "sceUsbstorVStorSetDeviceInfo", "group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533", null ],
     [ "sceUsbstorVStorSetImgFilePath", "group__SceUsbstorVStorDriverUser.html#ga3e1ae93f0049e1ef455141314dd763b3", null ],
     [ "sceUsbstorVStorStart", "group__SceUsbstorVStorDriverUser.html#ga7e2ec6ea6d351f4efa1cba014f821d32", null ],

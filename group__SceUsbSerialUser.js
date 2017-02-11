@@ -1,6 +1,5 @@
 var group__SceUsbSerialUser =
 [
-    [ "usbserial.h", "usbserial_8h.html", null ],
     [ "sceUsbSerialClose", "group__SceUsbSerialUser.html#gac8a3910e0b34e9d388a5dbe918fd14ac", null ],
     [ "sceUsbSerialGetRecvBufferSize", "group__SceUsbSerialUser.html#ga58d0de74c4fbc75ed8744d92e39377ca", null ],
     [ "sceUsbSerialRecv", "group__SceUsbSerialUser.html#gadcec07fbae05cb758157598ed6d4b5d6", null ],

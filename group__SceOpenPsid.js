@@ -1,4 +1,4 @@
 var group__SceOpenPsid =
 [
-    [ "User", "group__SceOpenPsidUser.html", "group__SceOpenPsidUser" ]
+    [ "User", "group__SceOpenPsidUser.html", null ]
 ];

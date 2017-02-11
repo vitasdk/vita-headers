@@ -1,6 +1,5 @@
 var group__SceThreadMgrKernel =
 [
-    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714", null ],
     [ "SceKernelSysClock", "group__SceThreadMgrKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8", null ],
     [ "SceEventFlagAttributes", "group__SceThreadMgrKernel.html#ga32240cfc9096477a62cfad5ee4768791", [

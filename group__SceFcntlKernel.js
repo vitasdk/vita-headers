@@ -1,6 +1,5 @@
 var group__SceFcntlKernel =
 [
-    [ "fcntl.h", "ern_2io_2fcntl_8h.html", null ],
     [ "ksceIoCancel", "group__SceFcntlKernel.html#gaae7e727a2b51ecfe3f180826f0bf4387", null ],
     [ "ksceIoChangeAsyncPriority", "group__SceFcntlKernel.html#gabf153989bd1f9cdfa82e3056ecc2f760", null ],
     [ "ksceIoClose", "group__SceFcntlKernel.html#ga61d016967bca18f3640a97edf1594dfd", null ],

@@ -82,8 +82,8 @@ $(document).ready(function(){initNavTree('group__SceModulemgrKernel.html','');})
 
 <div class="header">
   <div class="summary">
-<a href="#files">Files</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceModulemgr.html">Module Manager Library</a></div></div>  </div>
 </div><!--header-->
@@ -92,14 +92,8 @@ $(document).ready(function(){initNavTree('group__SceModulemgrKernel.html','');})
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2modulemgr_8h.html">psp2kern/kernel/modulemgr.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">? </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/kernel/modulemgr.h&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">? </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:ern_2kernel_2modulemgr_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ern_2kernel_2modulemgr_8h.html">modulemgr.h</a></td></tr>
-<tr class="memdesc:ern_2kernel_2modulemgr_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file related to module management for kernel. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga5ddc9e96b3db2392a7d13147a6962caf"><td class="memItemLeft" align="right" valign="top"><a id="ga5ddc9e96b3db2392a7d13147a6962caf"></a>
@@ -150,6 +144,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStopModuleFo
 <tr class="memitem:gad48e3014ec0cb8b0509fdb4b46e86a49"><td class="memItemLeft" align="right" valign="top"><a id="gad48e3014ec0cb8b0509fdb4b46e86a49"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelStopUnloadModuleForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, SceSize args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
 <tr class="separator:gad48e3014ec0cb8b0509fdb4b46e86a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
 <tr class="memitem:gaa297434ef456cbbdf41df20a44238a85"><td class="memItemLeft" align="right" valign="top"><a id="gaa297434ef456cbbdf41df20a44238a85"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gaa297434ef456cbbdf41df20a44238a85">SCE_KERNEL_START_SUCCESS</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="memdesc:gaa297434ef456cbbdf41df20a44238a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return values for plugins <code>module_start</code> and <code>module_stop</code> <br /></td></tr>
@@ -462,7 +459,7 @@ versionString[16]</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 9 2017 13:09:53 for vitasdk by
+    <li class="footer">Generated on Sat Feb 11 2017 07:53:39 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

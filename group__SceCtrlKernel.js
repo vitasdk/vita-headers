@@ -1,6 +1,5 @@
 var group__SceCtrlKernel =
 [
-    [ "ctrl.h", "ern_2ctrl_8h.html", null ],
     [ "SceCtrlExternalInputMode", "group__SceCtrlKernel.html#ga4284796d5063074e02d4915af9d5ab04", [
       [ "SCE_CTRL_TYPE_PHY", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a3270ad369e969b0f907370cf89900fbe", null ],
       [ "SCE_CTRL_TYPE_VIRT", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a9c0a6632fed8f8af8fe9d593084b3378", null ],

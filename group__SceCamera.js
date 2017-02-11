@@ -1,4 +1,4 @@
 var group__SceCamera =
 [
-    [ "User", "group__SceCameraUser.html", "group__SceCameraUser" ]
+    [ "User", "group__SceCameraUser.html", null ]
 ];

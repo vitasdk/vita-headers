@@ -1,6 +1,5 @@
 var group__SceScreenshotUser =
 [
-    [ "screenshot.h", "screenshot_8h.html", null ],
     [ "SCE_SCREENSHOT_MAX_FS_PATH", "group__SceScreenshotUser.html#gaf593723d6f325ac0dfc86196430a4987", null ],
     [ "SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN", "group__SceScreenshotUser.html#ga32f2e4a76310f5e753c85b5414f10d0c", null ],
     [ "SCE_SCREENSHOT_MAX_GAME_COMMENT_SIZE", "group__SceScreenshotUser.html#ga3220812f42ada801802370b870856929", null ],

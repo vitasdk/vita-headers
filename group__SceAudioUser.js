@@ -1,6 +1,5 @@
 var group__SceAudioUser =
 [
-    [ "audioout.h", "audioout_8h.html", null ],
     [ "SCE_AUDIO_MAX_LEN", "group__SceAudioUser.html#gad3ef67ce3a4849804a3730727e30fc6a", null ],
     [ "SCE_AUDIO_MIN_LEN", "group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c", null ],
     [ "SCE_AUDIO_OUT_MAX_VOL", "group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da", null ],

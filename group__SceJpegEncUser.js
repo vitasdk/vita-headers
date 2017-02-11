@@ -1,6 +1,5 @@
 var group__SceJpegEncUser =
 [
-    [ "jpegenc.h", "jpegenc_8h.html", null ],
     [ "sceJpegEncoderCsc", "group__SceJpegEncUser.html#gae6f4c24704615070f1a4feac8bda49ae", null ],
     [ "sceJpegEncoderEncode", "group__SceJpegEncUser.html#ga51d97e72ae0ff6996267c983627a0854", null ],
     [ "sceJpegEncoderEnd", "group__SceJpegEncUser.html#ga02de151671088a0fc05d395a36ac6fbe", null ],

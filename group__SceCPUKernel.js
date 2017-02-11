@@ -1,6 +1,5 @@
 var group__SceCPUKernel =
 [
-    [ "cpu.h", "cpu_8h.html", null ],
     [ "ENTER_SYSCALL", "group__SceCPUKernel.html#gaa5b75a3c600994738e933102d28329e3", null ],
     [ "EXIT_SYSCALL", "group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9", null ],
     [ "ksceKernelCpuDcacheAndL2AndDMAFlush", "group__SceCPUKernel.html#gac2965bc34e8647b161ad1b78d0e01f40", null ],

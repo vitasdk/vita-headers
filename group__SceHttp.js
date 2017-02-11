@@ -1,4 +1,4 @@
 var group__SceHttp =
 [
-    [ "User", "group__SceHttpUser.html", "group__SceHttpUser" ]
+    [ "User", "group__SceHttpUser.html", null ]
 ];

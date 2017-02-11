@@ -7,6 +7,5 @@ var searchData=
   ['headingvectory',['headingVectorY',['../group__SceLocationUser.html#ga8bd80a2e7056863a3674af6692126716',1,'SceLocationHeadingInfo']]],
   ['headingvectorz',['headingVectorZ',['../group__SceLocationUser.html#ga67ce7f9de0879ac9059163004b7e4162',1,'SceLocationHeadingInfo']]],
   ['height',['height',['../group__SceDisplayUser.html#gacf6c5759f48d231bd31415cbe552ca3d',1,'SceDisplayFrameBuf::height()'],['../group__SceGxmUser.html#ga28ed28a19c12fc9541c0d656e8bf9a08',1,'SceGxmAuxiliarySurface::height()'],['../group__SceGxmUser.html#ga89cac9234de02e899a0954c87d9cd6ba',1,'SceGxmRenderTargetParams::height()']]],
-  ['http_2eh',['http.h',['../http_8h.html',1,'']]],
   ['hyper_20text_20transfer_20protocol_20library',['Hyper Text Transfer Protocol Library',['../group__SceHttp.html',1,'']]]
 ];

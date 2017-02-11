@@ -1,7 +1,6 @@
 var group__ScePromoterUtilUser =
 [
-    [ "promoterutil.h", "promoterutil_8h.html", null ],
-    [ "scePromoterUtilityDeletePkg", "group__ScePromoterUtilUser.html#gab1ac7663e0832a68075c3f5ce5b0d03a", null ],
+    [ "scePromoterUtilityDeletePkg", "group__ScePromoterUtilUser.html#gad7e2600fdb1009e6ace97ee67219a408", null ],
     [ "scePromoterUtilityExit", "group__ScePromoterUtilUser.html#gabaf2f7034ae507707a7d8bd76d3992a8", null ],
     [ "scePromoterUtilityGetResult", "group__ScePromoterUtilUser.html#ga33fffeec15e5daff578d42102ad9572f", null ],
     [ "scePromoterUtilityGetState", "group__ScePromoterUtilUser.html#ga0bb20f69381f605e9fe5eff670b6ffd2", null ],

@@ -1,6 +1,5 @@
 var group__ScePowerUser =
 [
-    [ "power.h", "power_8h.html", null ],
     [ "ScePowerCallback", "group__ScePowerUser.html#gac6557813efad4f274c4f3d4ecdb07da0", null ],
     [ "scePowerGetArmClockFrequency", "group__ScePowerUser.html#ga43c4f0084152cff03dc037525a5dd311", null ],
     [ "scePowerGetBatteryFullCapacity", "group__ScePowerUser.html#gab183cfc3f4f67d1e6137983c18155337", null ],

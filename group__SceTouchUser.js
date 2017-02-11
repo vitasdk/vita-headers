@@ -1,11 +1,5 @@
 var group__SceTouchUser =
 [
-    [ "touch.h", "touch_8h.html", [
-      [ "SCE_TOUCH_MAX_REPORT", "group__SceTouchUser.html#gga4f126a0a9b1d8c6a8f46a051ef8830bbaa3e4b337c895c44be3754e0e532a96fb", null ],
-      [ "SCE_TOUCH_PORT_FRONT", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a0d2580e55567d3c921b1031a4684f6a7", null ],
-      [ "SCE_TOUCH_PORT_BACK", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a2e861439acd3722f5c25f1a13e0b8758", null ],
-      [ "SCE_TOUCH_PORT_MAX_NUM", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a60ab295a1586005154cf1c5bb888336f", null ]
-    ] ],
     [ "SCE_TOUCH_MAX_REPORT", "group__SceTouchUser.html#gga4f126a0a9b1d8c6a8f46a051ef8830bbaa3e4b337c895c44be3754e0e532a96fb", null ],
     [ "SCE_TOUCH_PORT_BACK", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a2e861439acd3722f5c25f1a13e0b8758", null ],
     [ "SCE_TOUCH_PORT_FRONT", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329a0d2580e55567d3c921b1031a4684f6a7", null ],

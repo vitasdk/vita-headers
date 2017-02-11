@@ -1,6 +1,5 @@
 var group__SceTypesUser =
 [
-    [ "types.h", "types_8h.html", null ],
     [ "SCE_KERNEL_PROCESS_ID_SELF", "group__SceTypesUser.html#gae50a711d10b726734d4b4d27295ff0e2", null ],
     [ "SCE_UID_NAMELEN", "group__SceTypesUser.html#ga2582b3509efd06e62a9b6f79a6cf82e2", null ],
     [ "SceMode", "group__SceTypesUser.html#gad563fb9897e927ac60a231ba16859629", null ],

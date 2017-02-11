@@ -1,6 +1,5 @@
 var group__SceAudioencUser =
 [
-    [ "audioenc.h", "audioenc_8h.html", null ],
     [ "SCE_AUDIOENC_CELP_MAX_ES_SIZE", "group__SceAudioencUser.html#ga8f43ee8a32e48bd728df53065e84edba", null ],
     [ "SCE_AUDIOENC_CELP_MAX_SAMPLES", "group__SceAudioencUser.html#ga3a2251b317f2f14049a477415bccf722", null ],
     [ "SCE_AUDIOENC_CELP_MAX_STREAMS", "group__SceAudioencUser.html#gae52560aa93159eebd8001535dd0e8baa", null ],
