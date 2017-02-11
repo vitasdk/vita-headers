@@ -2,7 +2,7 @@ version: 2
 firmware: 3.60
 modules:
   SceAppMgr:
-    nid: 0x0
+    nid: 0xDBB29DB7
     libraries:
       SceAppMgr:
         functions:
@@ -944,6 +944,7 @@ modules:
           ksceDisplayGetFrameBuf: 0xEEDA2E54
           ksceDisplaySetFrameBufInternal: 0x16466675
           ksceDisplayGetFrameBufInternal: 0x19F94C63
+          ksceDisplayRegisterFrameBufCallback: 0x6E22990E
         kernel: true
         nid: 0x9FED47AC
   SceFace:
@@ -1588,6 +1589,28 @@ modules:
           sceHttpsUnloadCert: 0x8577833F
         kernel: false
         nid: 0xE8F15CDE
+  SceIdStorage:
+    nid: 0x4BDAF254
+    libraries:
+      SceIdStorageForDriver:
+        functions:
+          ksceIdStorageCreateLeaf: 0x08A471A6
+          ksceIdStorageDeleteLeaf: 0x2C97AB36
+          ksceIdStorageFlush: 0x3AD32523
+          ksceIdStorageFormat: 0x958089DB
+          ksceIdStorageGetFreeLeaves: 0x37833CB8
+          ksceIdStorageGetLeafSize: 0xEB830733
+          ksceIdStorageIsDirty: 0xB9069BAD
+          ksceIdStorageIsFormatted: 0xFEFA40C2
+          ksceIdStorageIsReadOnly: 0x2D633688
+          ksceIdStorageLookup: 0x6FE062D1
+          ksceIdStorageReadLeaf: 0xEB00C509
+          ksceIdStorageRestart: 0x60B647A5
+          ksceIdStorageUnformat: 0xF4BCB3EE
+          ksceIdStorageUpdate: 0x683AAC10
+          ksceIdStorageWriteLeaf: 0x1FA4D135
+        kernel: true
+        nid: 0xE1AC6D7C
   SceIme:
     nid: 0x42
     libraries:
@@ -1639,55 +1662,50 @@ modules:
   SceSysmem:
     nid: 0xB93950C6
     libraries:
-      SceSysmemForDriver:
-        kernel: true
-        nid: 0x6F25E18A
+      SceCpuForDriver:
         functions:
-          ksceKernelMemcpyKernelToUser: 0x6D88EF8A
-          ksceKernelMemcpyUserToKernel: 0xBC996A7A
-          ksceKernelStrncpyKernelToUser: 0x80BD6FEB
-          ksceKernelStrncpyUserToKernel: 0xDB3EC244
-          ksceKernelStrlenUser: 0xB429D419
-          ksceKernelGetPaddr: 0x8D160E65
-          ksceKernelGetPaddrList: 0xE68BEEBD
-          ksceKernelGetMemBlockBase: 0xA841EDDA
-          ksceKernelFindMemBlockByAddr: 0x8A1742F6
-          ksceKernelRemapBlock: 0xDFE2C8CB
-          ksceKernelMemPoolCreate: 0x9328E0E8
-          ksceKernelMemPoolDestroy: 0xD6437637
-          ksceKernelMemPoolAlloc: 0x7B4CB60A
-          ksceKernelMemPoolFree: 0x3EBCE343
-          ksceKernelMapUserBlock: 0x7D4F8B5F
-          ksceKernelSwitchVmaForPid: 0x6F2ACDAE
-          ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
-          ksceKernelFirstDifferentIntUserForPid: 0x8334454F
-          ksceKernelStrnlenUserForPid: 0x9929EB07
-          ksceKernelStrncpyUserForPid: 0x75AAF178
-          ksceKernelMemcpyKernelToUserForPidUnchecked: 0xFED82F2D
-          ksceKernelMemcpyKernelToUserForPid: 0x6B825479
-          ksceKernelMemcpyUserToKernelForPid: 0x605275F8
-          ksceKernelMemcpyUserToUserForPid: 0x8E086C33
-          ksceKernelKernelUidForUserUid: 0x45D22597
-          ksceKernelCreateUserUid: 0xBF209859
-          ksceKernelGetObjForUid: 0xED6C14
-          ksceKernelGetUidClass: 0x85336A1C
-          ksceKernelCreateClass: 0x61317102
-          ksceKernelDeleteUid: 0x47D32F2
-          ksceKernelDeleteUserUid: 0x84A4AF5E
-          ksceKernelAllocMemBlock: 0xC94850C9
-          ksceKernelGetMemBlockBase: 0xA841EDDA
-          ksceKernelFreeMemBlock: 0x9E1C61
-          ksceKernelGetPidContext: 0x2ECF7944
-          ksceKernelMapBlockUserVisible: 0x58D21746
-      SceSysmemForKernel:
+          ksceKernelCpuDisableInterrupts: 0x821FC0EE
+          ksceKernelCpuEnableInterrupts: 0xF5BAD43B
+          ksceKernelCpuDcacheAndL2AndDMAFlush: 0x364E68A4
+          ksceKernelCpuDcacheAndL2Flush: 0x9CB9F0CE
+          ksceKernelCpuDcacheWritebackRange: 0x103872A5
         kernel: true
-        nid: 0x63A519E5
+        nid: 0x40ECDB0E
+      SceCpuForKernel:
         functions:
-          ksceKernelCreateUidObj: 0xDF0288D7
-          ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
+          ksceKernelCpuSaveContext: 0x211B89DA
+          ksceKernelCpuRestoreContext: 0xA4F0FB9
+          ksceKernelCpuIcacheAndL2Flush: 0x19F17BD0
+          ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
+          ksceKernelCpuDcacheFlush: 0x6BA2E51C
+        kernel: true
+        nid: 0x54BF2BAB
+      SceSblAIMgrForDriver:
+        functions:
+          ksceSblAimgrIsTest: 0x3B638885
+          ksceSblAimgrIsTool: 0x274663A0
+          ksceSblAimgrIsDEX: 0xF4B98F66
+          ksceSblAimgrIsCEX: 0xD78B04A2
+          ksceSblAimgrIsVITA: 0x4273B97B
+          ksceSblAimgrIsDolce: 0x71608CA3
+          ksceSblAimgrIsGenuineVITA: 0x963CA644
+          ksceSblAimgrIsGenuineDolce: 0xC6E83F34
+        kernel: true
+        nid: 0xFD00C69A
+      SceKernelSuspendForDriver:
+        functions:
+          ksceKernelRegisterSuspendCallback: 0x04C05D10
+          ksceKernelUnregisterSuspendCallback: 0xDD61D621
+          ksceKernelNotifySuspendCallback: 0xD4622EA8
+          ksceKernelPowerTick: 0xE0489831
+        kernel: true
+        nid: 0x7290B21C
+      SceKernelUtilsForDriver:
+        functions:
+          ksceKernelDeflateDecompress: 0x8AF1FAD4
+        kernel: true
+        nid: 0x496AD8B4
       SceSysclibForDriver:
-        kernel: true
-        nid: 0x7EE45391
         functions:
           __stack_chk_fail: 0xB997493D
           memchr: 0x60DAEA30
@@ -1697,7 +1715,6 @@ modules:
           memset: 0xAB9BF5C
           rshift: 0x1D89F6C0
           snprintf: 0xAE7A8981
-          sprintf: 0x3DDBE2E1
           strchr: 0x38463759
           strcmp: 0xB33BC43
           strlen: 0xCFC6A9AC
@@ -1708,44 +1725,8 @@ modules:
           strrchr: 0x7F0E0835
           strstr: 0x1304A69D
           strtol: 0xAB77C5AA
-      SceCpuForKernel:
         kernel: true
-        nid: 0x54BF2BAB
-        functions:
-          ksceKernelCpuSaveContext: 0x211B89DA
-          ksceKernelCpuRestoreContext: 0xA4F0FB9
-          ksceKernelCpuIcacheAndL2Flush: 0x19F17BD0
-          ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
-          ksceKernelCpuDcacheFlush: 0x6BA2E51C
-      SceCpuForDriver:
-        kernel: true
-        nid: 0x40ECDB0E
-        functions:
-          ksceKernelCpuDisableInterrupts: 0x821FC0EE
-          ksceKernelCpuEnableInterrupts: 0xF5BAD43B
-          ksceKernelCpuDcacheAndL2AndDMAFlush: 0x364E68A4
-          ksceKernelCpuDcacheAndL2Flush: 0x9CB9F0CE
-          ksceKernelCpuDcacheWritebackRange: 0x103872A5
-      SceSysrootForKernel:
-        kernel: true
-        nid: 0x3691DA45
-        functions:
-          ksceKernelGetSysrootBuffer: 0x3E455842
-          ksceKernelGetProcessTitleId: 0xEC3124A3
-          ksceSysrootIsBsodReboot: 0x4373AC96
-          ksceSysrootIsExternalBootMode: 0x89D19090
-          ksceSysrootIsManufacturingMode: 0x55392965
-          ksceSysrootIsSafeMode: 0x834439A7
-          ksceSysrootIsUpdateMode: 0xB0E1FC67
-          ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
-      SceKernelSuspendForDriver:
-        kernel: true
-        nid: 0x7290B21C
-        functions:
-          ksceKernelRegisterSuspendCallback: 0x04C05D10
-          ksceKernelUnregisterSuspendCallback: 0xDD61D621
-          ksceKernelNotifySuspendCallback: 0xD4622EA8
-          ksceKernelPowerTick: 0xE0489831
+        nid: 0x7EE45391
       SceSysmem:
         functions:
           sceKernelAllocMemBlock: 0xB9D5EBDE
@@ -1765,12 +1746,69 @@ modules:
           sceKernelSyncVMDomain: 0x19D2A81A
         kernel: false
         nid: 0x37FE725A
+      SceSysmemForDriver:
+        kernel: true
+        nid: 0x6F25E18A
+        functions:
+          ksceKernelAllocMemBlock: 0xC94850C9
+          ksceKernelCreateClass: 0x61317102
+          ksceKernelCreateUserUid: 0xBF209859
+          ksceKernelDeleteUid: 0x47D32F2
+          ksceKernelDeleteUserUid: 0x84A4AF5E
+          ksceKernelFindMemBlockByAddr: 0x8A1742F6
+          ksceKernelFirstDifferentIntUserForPid: 0x8334454F
+          ksceKernelFreeMemBlock: 0x9E1C61
+          ksceKernelGetMemBlockBase: 0xA841EDDA
+          ksceKernelGetMemBlockBase: 0xA841EDDA
+          ksceKernelGetObjForUid: 0xED6C14
+          ksceKernelGetPaddr: 0x8D160E65
+          ksceKernelGetPaddrList: 0xE68BEEBD
+          ksceKernelGetPidContext: 0x2ECF7944
+          ksceKernelGetUidClass: 0x85336A1C
+          ksceKernelKernelUidForUserUid: 0x45D22597
+          ksceKernelMapBlockUserVisible: 0x58D21746
+          ksceKernelMapUserBlock: 0x7D4F8B5F
+          ksceKernelMemcpyKernelToUser: 0x6D88EF8A
+          ksceKernelMemcpyKernelToUserForPid: 0x6B825479
+          ksceKernelMemcpyKernelToUserForPidUnchecked: 0xFED82F2D
+          ksceKernelMemcpyUserToKernel: 0xBC996A7A
+          ksceKernelMemcpyUserToKernelForPid: 0x605275F8
+          ksceKernelMemcpyUserToUserForPid: 0x8E086C33
+          ksceKernelMemPoolAlloc: 0x7B4CB60A
+          ksceKernelMemPoolCreate: 0x9328E0E8
+          ksceKernelMemPoolDestroy: 0xD6437637
+          ksceKernelMemPoolFree: 0x3EBCE343
+          ksceKernelRemapBlock: 0xDFE2C8CB
+          ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
+          ksceKernelStrlenUser: 0xB429D419
+          ksceKernelStrncpyKernelToUser: 0x80BD6FEB
+          ksceKernelStrncpyUserForPid: 0x75AAF178
+          ksceKernelStrncpyUserToKernel: 0xDB3EC244
+          ksceKernelStrnlenUserForPid: 0x9929EB07
+          ksceKernelSwitchVmaForPid: 0x6F2ACDAE
+          ksceKernelUnmapMemBlock: 0xFFCD9B60
+      SceSysmemForKernel:
+        functions:
+          ksceKernelCreateUidObj: 0xDF0288D7
+          ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
+        kernel: true
+        nid: 0x63A519E5
+      SceSysrootForKernel:
+        functions:
+          ksceKernelGetSysrootBuffer: 0x3E455842
+          ksceKernelGetProcessTitleId: 0xEC3124A3
+          ksceSysrootIsBsodReboot: 0x4373AC96
+          ksceSysrootIsExternalBootMode: 0x89D19090
+          ksceSysrootIsManufacturingMode: 0x55392965
+          ksceSysrootIsSafeMode: 0x834439A7
+          ksceSysrootIsUpdateMode: 0xB0E1FC67
+          ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
+        kernel: true
+        nid: 0x3691DA45
   SceKernelThreadMgr:
     nid: 0xA09CFA5C
     libraries:
       SceThreadmgrForDriver:
-        kernel: true
-        nid: 0xE2C40624
         functions:
           ksceKernelCancelMutex: 0x7204B846
           ksceKernelClearEventFlag: 0x4F1DA3BE
@@ -1790,6 +1828,7 @@ modules:
           ksceKernelGetSystemTimeLow: 0x47F6DE49
           ksceKernelGetSystemTimeWide: 0xF4EE4FA9
           ksceKernelGetThreadCurrentPriority: 0x01414F0B
+          ksceKernelGetThreadmgrUIDClass: 0x0A20775A
           ksceKernelInitializeFastMutex: 0xAF8E1266
           ksceKernelLockMutex: 0x16AC80C5
           ksceKernelRunWithStack: 0xE54FD746
@@ -1799,6 +1838,8 @@ modules:
           ksceKernelWaitEventFlag: 0x0C1D3F20
           ksceKernelWaitEventFlagCB: 0x8A35F714
           ksceKernelWaitThreadEnd: 0x3E20216F
+        kernel: true
+        nid: 0xE2C40624
       SceThreadmgr:
         functions:
           sceKernelCancelCallback: 0x30741EF2
@@ -1899,8 +1940,6 @@ modules:
     nid: 0x726C6635
     libraries:
       SceModulemgrForKernel:
-        kernel: true
-        nid: 0xC445FA63
         functions:
           ksceKernelGetModuleList: 0x97CF7B4E
           ksceKernelGetModuleInternal: 0xFE303863
@@ -1908,20 +1947,23 @@ modules:
           ksceKernelLoadModuleForPid: 0xFA21D8CB
           ksceKernelStopModuleForPid: 0x7BB4CE54
           ksceKernelUnloadModuleForPid: 0x5972E2CC
-      SceModulemgrForDriver:
         kernel: true
-        nid: 0xD4A60A52
+        nid: 0xC445FA63
+      SceModulemgrForDriver:
         functions:
           ksceKernelGetSystemSwVersion: 0x5182E212
-          ksceKernelLoadStartModule: 0x189BFBBB
           ksceKernelLoadModule: 0x86D8D634
+          ksceKernelLoadStartModule: 0x189BFBBB
+          ksceKernelLoadStartModuleForPid: 0x9D953C22
+          ksceKernelLoadStartSharedModuleForPid: 0xE2ADEF8D
+          ksceKernelSearchModuleByName: 0xBBE1771C
           ksceKernelStartModule: 0x675B682
           ksceKernelStopModule: 0x100DAEB9
           ksceKernelStopUnloadModule: 0x3B30B7E
-          ksceKernelUnloadModule: 0x728E72A6
-          ksceKernelLoadStartSharedModuleForPid: 0xE2ADEF8D
-          ksceKernelLoadStartModuleForPid: 0x9D953C22
           ksceKernelStopUnloadModuleForPid: 0x49A3EDC7
+          ksceKernelUnloadModule: 0x728E72A6
+        kernel: true
+        nid: 0xD4A60A52
       SceModulemgr:
         functions:
           sceKernelGetModuleIdByAddr: 0xF5798C7C
@@ -1934,31 +1976,41 @@ modules:
     nid: 0x3E244C17
     libraries:
       SceIofilemgrForDriver:
-        kernel: true
-        nid: 0x40FD29C7
         functions:
           ksceIoChstat: 0x7D42B8DC
           ksceIoChstatByFd: 0xDF57A75F
+          ksceIoClearErrorEvent: 0x40B933C7
           ksceIoClose: 0xF99DD8A3
-          ksceIoDevctl: 0x16882FC4
+          ksceIoCreateErrorEvent: 0x3C0343DB
+          ksceIoCreateMountEvent: 0x2DFA192F
           ksceIoDclose: 0x19C81DD6
+          ksceIoDeleteErrorEvent: 0xC6158F8D
+          ksceIoDeleteMountEvent: 0x43DB0AE4
+          ksceIoDevctl: 0x16882FC4
           ksceIoDopen: 0x463B25CC
           ksceIoDread: 0x20CF5FC7
+          ksceIoFlock: 0x16336A0D
+          ksceIoGetProcessDefaultPriorityForSystem: 0xCE397158
           ksceIoGetstat: 0x75C96D25
           ksceIoGetstatByFd: 0x462F059B
           ksceIoLseek: 0x62090481
           ksceIoMkdir: 0x7F710B25
+          ksceIoMount: 0xD070BC48
           ksceIoOpen: 0x75192972
           ksceIoRead: 0xE17EFC03
           ksceIoReadAsync: 0x69047C81
           ksceIoRemove: 0x0D7BB3E1
           ksceIoRename: 0xDC0C4997
           ksceIoRmdir: 0x1CC9C634
+          ksceIoSetProcessDefaultPriorityForSystem: 0xABE65071
           ksceIoSync: 0xDDF78594
           ksceIoSyncByFd: 0x338DCD68
           ksceIoSyncByFdAsync: 0x041209CF
+          ksceIoUmount: 0x20574100
           ksceIoWrite: 0x21EE91F0
           ksceIoWriteAsync: 0xA1BD13D0
+        kernel: true
+        nid: 0x40FD29C7
       SceIofilemgr:
         functions:
           sceIoCancel: 0xCEF48835
@@ -2007,11 +2059,31 @@ modules:
           sceKernelUnregisterProcessTerminationCallback: 0x973A4527
         kernel: false
         nid: 0x2DD91812
-      SceProcessmgrForKernel:
+      SceProcessmgrForDriver:
+        functions:
+          ksceKernelGetCompiledSdkVersionByPid: 0xD141C076
         kernel: true
-        nid: 0x7A69DE86
+        nid: 0x746EC971
+      SceProcessmgrForKernel:
         functions:
           ksceKernelGetProcessKernelBuf: 0xB9E68092
+        kernel: true
+        nid: 0x7A69DE86
+  ScePromoterUtil:
+    nid: 0xB31C2D5C
+    libraries:
+      ScePromoterUtil:
+        functions:
+          scePromoterUtilityInit: 0x93451536
+          scePromoterUtilityExit: 0xC95D24A6
+          scePromoterUtilityDeletePkg: 0x7D46752F
+          scePromoterUtilityUpdateLiveArea: 0x17D73ECA
+          scePromoterUtilityPromotePkg: 0x716C81F4
+          scePromoterUtilityPromotePkgWithRif: 0x86641BC6
+          scePromoterUtilityGetState: 0xABEC74D2
+          scePromoterUtilityGetResult: 0x49B473F0
+        kernel: false
+        nid: 0x31F237B6
   SceLibKernel:
     nid: 0x48
     libraries:
@@ -2991,6 +3063,28 @@ modules:
           sceMt19937UInt: 0x29E43BB5
         kernel: false
         nid: 0x2F4FAB93
+  SceMtpIfDriver:
+    nid: 0xEA885947
+    libraries:
+      SceMtpIf:
+        functions:
+          sceMtpIfStartPort: 0x1624280E
+          sceMtpIfWaitConnect: 0x1E0156BE
+          sceMtpIfReset: 0x315FDE8E
+          sceMtpIfGetPort: 0x352F61B9
+          sceMtpIfRecvCommand: 0x468B6E3E
+          sceMtpIfChangePhase: 0x695B0DE4
+          sceMtpIfRecvDataWithParam: 0x6EDB6FB4
+          sceMtpIfCancelTransfer: 0x80D1CA60
+          sceMtpIfSendDataWithParam: 0x87CC6686
+          sceMtpIfIsConnected: 0xA9C97661
+          sceMtpIfStopDriver: 0xC0CFA3BC
+          sceMtpIfStartDriver: 0xC5327CAC
+          sceMtpIfStopPort: 0xD3C974D9
+          sceMtpIfSendResponse: 0xDD08CA01
+          sceMtpIfSendEvent: 0xE3C33379
+        kernel: false
+        nid: 0x5EFA4138
   SceMusicExport:
     nid: 0x63
     libraries:
@@ -4004,6 +4098,17 @@ modules:
           sceRtcGetAccumulativeTime: 0x258BE8EC
         kernel: false
         nid: 0x3503487E
+      SceRtcForDriver:
+        functions:
+          ksceRtcSetConf: 0xACFE5A9F
+          ksceRtcIsAlarmed: 0xCD295F0C
+          ksceRtcRegisterCallback: 0x5220870D
+          ksceRtcUnregisterCallback: 0x9546C68B
+          ksceRtcIsSecureAlarmed: 0xE39F2ABE
+          ksceRtcRegisterSecureAlarmCallback: 0xCF84DFC0
+          ksceRtcUnregisterSecureAlarmCallback: 0xEDDC2325
+        kernel: true
+        nid: 0x0351D827
       SceRtcUser:
         functions:
           sceRtcCheckValid: 0xD7622935
@@ -4125,6 +4230,25 @@ modules:
           sceSasSetVolume: 0xBE8204D
         kernel: false
         nid: 0xEE47EC43
+  SceSblACMgr:
+    nid: 0xB6E5AEBE
+    libraries:
+      SceSblACMgrForDriver:
+        functions:
+          ksceSblACMgrIsShell: 0x8612B243
+          ksceSblACMgrIsGameProgram: 0x1298C647
+          ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
+          ksceSblACMgrIsDevelopmentMode: 0xE87D1777
+        kernel: true
+        nid: 0x9AD8E213
+  SceSblSsMgr:
+    nid: 0xFDDD93FA
+    libraries:
+      SceSblSsMgrForDriver:
+        functions:
+          ksceKernelGetRandomNumber: 0x4F9BFBE5
+        kernel: true
+        nid: 0x61E9428D
   SceScreenShot:
     nid: 0xA8
     libraries:
@@ -4611,6 +4735,14 @@ modules:
           sceSslTerm: 0x3CE6E3A
         kernel: false
         nid: 0xCAF5F2E9
+  SceStdio:
+    nid: 0x771A73C0
+    libraries:
+      SceDebugForDriver:
+        functions:
+          printf: 0x391B74B7
+        kernel: true
+        nid: 0x88758561
   SceSulpha:
     nid: 0xD4
     libraries:
@@ -4707,6 +4839,38 @@ modules:
           ksceTouchSetRegion: 0x7985B164
         kernel: true
         nid: 0xA4A7DAFC
+  SceUdcd:
+    nid: 0x8E26B2A3
+    libraries:
+      SceUdcd:
+        functions:
+          sceUdcdGetDeviceState: 0xFCD31220
+          sceUdcdGetDeviceInfo: 0x701C87CF
+          sceUdcdGetDrvState: 0x99B3DA5D
+          sceUdcdRegisterCallback: 0xA7070093
+          sceUdcdUnregisterCallback: 0xC3FBA889
+          sceUdcdWaitState: 0x59EFFAF1
+        kernel: false
+        nid: 0xA84BDE8A
+      SceUdcdForDriver:
+        functions:
+          ksceUdcdUnregister: 0x0DECE532
+          ksceUdcdStop: 0x1494293B
+          ksceUdcdReqSend: 0x1ED0E89E
+          ksceUdcdStall: 0x34079250
+          ksceUdcdReqCancelAll: 0x38787672
+          ksceUdcdRegister: 0x4E55244D
+          ksceUdcdActivate: 0x4FDEA423
+          ksceUdcdDeactivate: 0x8AE87657
+          ksceUdcdClearFIFO: 0x9F53D64D
+          ksceUdcdStart: 0x9FD733EA
+          ksceUdcdGetDrvState: 0xC0CA5DDB
+          ksceUdcdReqRecv: 0xC60A74B2
+          ksceUdcdWaitState: 0xD03017C0
+          ksceUdcdGetDeviceState: 0xE054B5E4
+          ksceUdcdGetDeviceInfo: 0xFBEA3703
+        kernel: true
+        nid: 0xBC05A8FB
   SceUlt:
     nid: 0xDC
     libraries:
@@ -4776,6 +4940,79 @@ modules:
           sceUltWaitingQueueResourcePoolGetWorkAreaSize: 0x644DA029
         kernel: false
         nid: 0x220668A5
+  SceUsbd:
+    nid: 0x3525FE7A
+    libraries:
+      SceUsbdForUser:
+        functions:
+          sceUsbdUnregisterCallback: 0x0585EA80
+          sceUsbdReceiveEvent: 0x16FEE05D
+          sceUsbdRegisterCompositeLdd: 0x2A7C0263
+          sceUsbdGetDeviceList: 0x2DE0239E
+          sceUsbdUnregisterLdd: 0x473692CC
+          sceUsbdOpenDefaultPipe: 0x4A26DDCC
+          sceUsbdEnd: 0x5736A150
+          sceUsbdIsochTransferData: 0x594D82FD
+          sceUsbdRegisterLdd: 0x6AD28166
+          sceUsbdGetDeviceSpeed: 0x6C5AACD0
+          sceUsbdTransferData: 0x716048C1
+          sceUsbdInit: 0x77D58B31
+          sceUsbdRegisterCallback: 0x9A820167
+          sceUsbdGetIsochTransferStatus: 0xA0A2C826
+          sceUsbdClosePipe: 0xAA3AF5D5
+          sceUsbdGetDescriptor: 0xAE671F22
+          sceUsbdGetDescriptorSize: 0xB357AC81
+          sceUsbdGetDeviceAddress: 0xC54F9D11
+          sceUsbdAttachCompositeLdd: 0xCA8F2F59
+          sceUsbdGetTransferStatus: 0xCDF5B6E0
+          sceUsbdResetDevice: 0xDEB3BE59
+          sceUsbdAttach: 0xEACEAE86
+          sceUsbdOpenPipe: 0xF94521A6
+        kernel: false
+        nid: 0xC3AEAB67
+      SceUsbdForDriver:
+        functions:
+          ksceUsbdRegisterCompositeLdd: 0x6E53D7F4
+          ksceUsbdRegisterDriver: 0x1EC94F18
+          ksceUsbdSuspendPhase2: 0xD7AA730D
+        kernel: true
+        nid: 0xA0EBCA41
+  SceUsbSerial:
+    nid: 0xF8D9930F
+    libraries:
+      SceUsbSerialForDriver:
+        functions:
+          ksceUsbSerialStart: 0xFEE7F4BA
+          ksceUsbSerialSetup: 0x590B8F97
+          ksceUsbSerialStatus: 0x8C426906
+          ksceUsbSerialClose: 0xE6B1E64F
+          ksceUsbSerialGetRecvBufferSize: 0xF531B5AE
+          ksceUsbSerialSend: 0xC2E73C0
+          ksceUsbSerialRecv: 0x6B5E296F
+        kernel: true
+        nid: 0x8829C2F3
+      SceUsbSerial:
+        functions:
+          sceUsbSerialStart: 0xE3BEC18C
+          sceUsbSerialSetup: 0x290E08B4
+          sceUsbSerialStatus: 0xA6A2F5DE
+          sceUsbSerialClose: 0xF2415853
+          sceUsbSerialGetRecvBufferSize: 0xE8567A87
+          sceUsbSerialSend: 0x89E71202
+          sceUsbSerialRecv: 0xF26DC8D8
+        kernel: false
+        nid: 0x2820117D
+  SceUsbstorVStorDriver:
+    nid: 0x1150E326
+    libraries:
+      SceUsbstorVStor:
+        functions:
+          sceUsbstorVStorSetDeviceInfo: 0x14455C20
+          sceUsbstorVStorSetImgFilePath: 0x8C9F93AB
+          sceUsbstorVStorStart: 0xB606F1AF
+          sceUsbstorVStorStop: 0x0FD67059
+        kernel: false
+        nid: 0x17F294B9
   SceVideodec:
     nid: 0xDE
     libraries:
@@ -5057,171 +5294,3 @@ modules:
           vshSysconVerifyConfigstorageScript: 0xE1E2BAD0
         kernel: false
         nid: 0x35C5ACD4
-  SceStdio:
-    nid: 0x771A73C0
-    libraries:
-      SceDebugForDriver:
-        kernel: true
-        nid: 0x88758561
-        functions:
-          printf: 0x391B74B7
-  SceSblSsMgr:
-    nid: 0xFDDD93FA
-    libraries:
-      SceSblSsMgrForDriver:
-        kernel: true
-        nid: 0x61E9428D
-        functions:
-          ksceKernelGetRandomNumber: 0x4F9BFBE5
-  SceSblACMgr:
-    nid: 0xB6E5AEBE
-    libraries:
-      SceSblACMgrForDriver:
-        kernel: true
-        nid: 0x9AD8E213
-        functions:
-          ksceSblACMgrIsShell: 0x8612B243
-          ksceSblACMgrIsGameProgram: 0x1298C647
-          ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
-          ksceSblACMgrIsDevelopmentMode: 0xE87D1777
-  SceUsbd:
-    nid: 0x3525FE7A
-    libraries:
-      SceUsbdForUser:
-        kernel: false
-        nid: 0xC3AEAB67
-        functions:
-          sceUsbdUnregisterCallback: 0x0585EA80
-          sceUsbdReceiveEvent: 0x16FEE05D
-          sceUsbdRegisterCompositeLdd: 0x2A7C0263
-          sceUsbdGetDeviceList: 0x2DE0239E
-          sceUsbdUnregisterLdd: 0x473692CC
-          sceUsbdOpenDefaultPipe: 0x4A26DDCC
-          sceUsbdEnd: 0x5736A150
-          sceUsbdIsochTransferData: 0x594D82FD
-          sceUsbdRegisterLdd: 0x6AD28166
-          sceUsbdGetDeviceSpeed: 0x6C5AACD0
-          sceUsbdTransferData: 0x716048C1
-          sceUsbdInit: 0x77D58B31
-          sceUsbdRegisterCallback: 0x9A820167
-          sceUsbdGetIsochTransferStatus: 0xA0A2C826
-          sceUsbdClosePipe: 0xAA3AF5D5
-          sceUsbdGetDescriptor: 0xAE671F22
-          sceUsbdGetDescriptorSize: 0xB357AC81
-          sceUsbdGetDeviceAddress: 0xC54F9D11
-          sceUsbdAttachCompositeLdd: 0xCA8F2F59
-          sceUsbdGetTransferStatus: 0xCDF5B6E0
-          sceUsbdResetDevice: 0xDEB3BE59
-          sceUsbdAttach: 0xEACEAE86
-          sceUsbdOpenPipe: 0xF94521A6
-      SceUsbdForDriver:
-        kernel: true
-        nid: 0xA0EBCA41
-        functions:
-          ksceUsbdRegisterCompositeLdd: 0x6E53D7F4
-          ksceUsbdRegisterDriver: 0x1EC94F18
-  SceUsbSerial:
-    nid: 0xF8D9930F
-    libraries:
-      SceUsbSerialForDriver:
-        kernel: true
-        nid: 0x8829C2F3
-        functions:
-          ksceUsbSerialStart: 0xFEE7F4BA
-          ksceUsbSerialSetup: 0x590B8F97
-          ksceUsbSerialStatus: 0x8C426906
-          ksceUsbSerialClose: 0xE6B1E64F
-          ksceUsbSerialGetRecvBufferSize: 0xF531B5AE
-          ksceUsbSerialSend: 0xC2E73C0
-          ksceUsbSerialRecv: 0x6B5E296F
-      SceUsbSerial:
-        kernel: false
-        nid: 0x2820117D
-        functions:
-          sceUsbSerialStart: 0xE3BEC18C
-          sceUsbSerialSetup: 0x290E08B4
-          sceUsbSerialStatus: 0xA6A2F5DE
-          sceUsbSerialClose: 0xF2415853
-          sceUsbSerialGetRecvBufferSize: 0xE8567A87
-          sceUsbSerialSend: 0x89E71202
-          sceUsbSerialRecv: 0xF26DC8D8
-  SceUdcd:
-    nid: 0x8E26B2A3
-    libraries:
-      SceUdcd:
-        kernel: false
-        nid: 0xA84BDE8A
-        functions:
-          sceUdcdGetDeviceState: 0xFCD31220
-          sceUdcdGetDeviceInfo: 0x701C87CF
-          sceUdcdGetDrvState: 0x99B3DA5D
-          sceUdcdRegisterCallback: 0xA7070093
-          sceUdcdUnregisterCallback: 0xC3FBA889
-          sceUdcdWaitState: 0x59EFFAF1
-      SceUdcdForDriver:
-        kernel: true
-        nid: 0xBC05A8FB
-        functions:
-          ksceUdcdUnregister: 0x0DECE532
-          ksceUdcdStop: 0x1494293B
-          ksceUdcdReqSend: 0x1ED0E89E
-          ksceUdcdStall: 0x34079250
-          ksceUdcdReqCancelAll: 0x38787672
-          ksceUdcdRegister: 0x4E55244D
-          ksceUdcdActivate: 0x4FDEA423
-          ksceUdcdDeactivate: 0x8AE87657
-          ksceUdcdClearFIFO: 0x9F53D64D
-          ksceUdcdStart: 0x9FD733EA
-          ksceUdcdGetDrvState: 0xC0CA5DDB
-          ksceUdcdReqRecv: 0xC60A74B2
-          ksceUdcdWaitState: 0xD03017C0
-          ksceUdcdGetDeviceState: 0xE054B5E4
-          ksceUdcdGetDeviceInfo: 0xFBEA3703
-  SceUsbstorVStorDriver:
-    nid: 0x1150E326
-    libraries:
-      SceUsbstorVStor:
-        kernel: false
-        nid: 0x17F294B9
-        functions:
-          sceUsbstorVStorSetDeviceInfo: 0x14455C20
-          sceUsbstorVStorSetImgFilePath: 0x8C9F93AB
-          sceUsbstorVStorStart: 0xB606F1AF
-          sceUsbstorVStorStop: 0x0FD67059
-  ScePromoterUtil:
-    nid: 0xB31C2D5C
-    libraries:
-      ScePromoterUtil:
-        kernel: false
-        nid: 0x31F237B6
-        functions:
-          scePromoterUtilityInit: 0x93451536
-          scePromoterUtilityExit: 0xC95D24A6
-          scePromoterUtilityDeletePkg: 0x7D46752F
-          scePromoterUtilityUpdateLiveArea: 0x17D73ECA
-          scePromoterUtilityPromotePkg: 0x716C81F4
-          scePromoterUtilityPromotePkgWithRif: 0x86641BC6
-          scePromoterUtilityGetState: 0xABEC74D2
-          scePromoterUtilityGetResult: 0x49B473F0
-  SceMtpIfDriver:
-    nid: 0xEA885947
-    libraries:
-      SceMtpIf:
-        kernel: false
-        nid: 0x5EFA4138
-        functions:
-          sceMtpIfStartPort: 0x1624280E
-          sceMtpIfWaitConnect: 0x1E0156BE
-          sceMtpIfReset: 0x315FDE8E
-          sceMtpIfGetPort: 0x352F61B9
-          sceMtpIfRecvCommand: 0x468B6E3E
-          sceMtpIfChangePhase: 0x695B0DE4
-          sceMtpIfRecvDataWithParam: 0x6EDB6FB4
-          sceMtpIfCancelTransfer: 0x80D1CA60
-          sceMtpIfSendDataWithParam: 0x87CC6686
-          sceMtpIfIsConnected: 0xA9C97661
-          sceMtpIfStopDriver: 0xC0CFA3BC
-          sceMtpIfStartDriver: 0xC5327CAC
-          sceMtpIfStopPort: 0xD3C974D9
-          sceMtpIfSendResponse: 0xDD08CA01
-          sceMtpIfSendEvent: 0xE3C33379
