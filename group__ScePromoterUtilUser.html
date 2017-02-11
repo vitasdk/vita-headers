@@ -101,9 +101,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabaf2f7034ae507707a7d8bd76d3992a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#gabaf2f7034ae507707a7d8bd76d3992a8">scePromoterUtilityExit</a> (void)</td></tr>
 <tr class="memdesc:gabaf2f7034ae507707a7d8bd76d3992a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit the promoter utility.  <a href="#gabaf2f7034ae507707a7d8bd76d3992a8">More...</a><br /></td></tr>
 <tr class="separator:gabaf2f7034ae507707a7d8bd76d3992a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7e2600fdb1009e6ace97ee67219a408"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#gad7e2600fdb1009e6ace97ee67219a408">scePromoterUtilityDeletePkg</a> (void *unk)</td></tr>
-<tr class="memdesc:gad7e2600fdb1009e6ace97ee67219a408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a package from the LiveArea.  <a href="#gad7e2600fdb1009e6ace97ee67219a408">More...</a><br /></td></tr>
-<tr class="separator:gad7e2600fdb1009e6ace97ee67219a408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1ac7663e0832a68075c3f5ce5b0d03a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#gab1ac7663e0832a68075c3f5ce5b0d03a">scePromoterUtilityDeletePkg</a> (const char *titleid)</td></tr>
+<tr class="memdesc:gab1ac7663e0832a68075c3f5ce5b0d03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a package from the LiveArea.  <a href="#gab1ac7663e0832a68075c3f5ce5b0d03a">More...</a><br /></td></tr>
+<tr class="separator:gab1ac7663e0832a68075c3f5ce5b0d03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0dda33e468ce7227977204a10da6b28e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#ga0dda33e468ce7227977204a10da6b28e">scePromoterUtilityUpdateLiveArea</a> (<a class="el" href="group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate">ScePromoterUtilityLAUpdate</a> *args)</td></tr>
 <tr class="memdesc:ga0dda33e468ce7227977204a10da6b28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the LiveArea ressources of an app.  <a href="#ga0dda33e468ce7227977204a10da6b28e">More...</a><br /></td></tr>
 <tr class="separator:ga0dda33e468ce7227977204a10da6b28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,8 +152,8 @@ Target app. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad7e2600fdb1009e6ace97ee67219a408"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad7e2600fdb1009e6ace97ee67219a408">&sect;&nbsp;</a></span>scePromoterUtilityDeletePkg()</h2>
+<a id="gab1ac7663e0832a68075c3f5ce5b0d03a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1ac7663e0832a68075c3f5ce5b0d03a">&sect;&nbsp;</a></span>scePromoterUtilityDeletePkg()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,14 +161,20 @@ Target app. </td></tr>
         <tr>
           <td class="memname">int scePromoterUtilityDeletePkg </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>unk</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>titleid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Delete a package from the LiveArea. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*titleid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
@@ -380,7 +386,7 @@ Target app. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 11 2017 07:53:39 for vitasdk by
+    <li class="footer">Generated on Sat Feb 11 2017 08:38:44 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
