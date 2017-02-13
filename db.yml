@@ -5260,3 +5260,11 @@ modules:
         nid: 0x60A35F64
         functions:
           ksceSysconCmdSync: 0x6E517D22
+  SceLowio:
+    nid: 0x17E0D8DF
+    libraries:
+      SceGpioForDriver:
+        kernel: true
+        nid: 0xF0EF5743
+        functions:
+          ksceGpioQueryIntr: 0x010DC295
