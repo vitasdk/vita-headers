@@ -1800,6 +1800,9 @@ modules:
           ksceKernelWaitEventFlag: 0x0C1D3F20
           ksceKernelWaitEventFlagCB: 0x8A35F714
           ksceKernelWaitThreadEnd: 0x3E20216F
+          ksceKernelCreateSema: 0x30E93C31
+          ksceKernelWaitSema: 0x3C8B55A9
+          ksceKernelDeleteSema: 0x16A35E58
       SceThreadmgr:
         functions:
           sceKernelCancelCallback: 0x30741EF2
@@ -5249,3 +5252,11 @@ modules:
           ksceKernelTriggerSubIntr: 0xCC94B294
           ksceKernelEnableSubIntr: 0x901E41D8
           ksceKernelDisableSubIntr: 0x259C6D9E
+  SceSyscon:
+    nid: 0x5358BA05
+    libraries:
+      SceSysconForDriver:
+        kernel: true
+        nid: 0x60A35F64
+        functions:
+          ksceSysconCmdSync: 0x6E517D22
