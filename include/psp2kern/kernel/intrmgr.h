@@ -36,12 +36,11 @@ typedef struct SceKernelIntrOptParam {
 } SceKernelIntrOptParam;
 
 typedef int (*SceKernelIntrHandler)(int unk, void *userCtx);
+typedef int (*SceKernelSubIntrHandler)(void *arg, int unk0, int unk1);
 
 int ksceKernelRegisterIntrHandler(int intr_code, const char *name, int interrupt_type,
-	SceKernelIntrHandler *func, void *userCtx, int priority, int targetcpu, SceKernelIntrOptParam *opt);
-
+	SceKernelIntrHandler *handler, void *userCtx, int priority, int targetcpu, SceKernelIntrOptParam *opt);
 int ksceKernelReleaseIntrHandler(int intr_code);
-
 int ksceKernelMaskIntr(int intr_code);
 int ksceKernelUnmaskIntr(int intr_code);
 int ksceKernelSetIntrMasked(int intr_code, int masked);
@@ -52,6 +51,9 @@ int ksceKernelSetIntrPriority(int intr_code, unsigned char priority);
 int ksceKernelSetIntrTarget(int intr_code, int cpu_target_list);
 int ksceKernelTriggerSGI(int intr_code, unsigned int target_list_filter, unsigned int cpu_target_list);
 int ksceKernelIsIntrAllowedInCurrentContext(int intr_code);
+int ksceKernelRegisterSubIntrHandler(int intr_code, int subintr_code, const char *name,
+	SceKernelSubIntrHandler handler, void *register_arg);
+int ksceKernelTriggerSubIntr(int intr_code, int subintr_code, void *subintr_arg);
 
 #ifdef __cplusplus
 }
