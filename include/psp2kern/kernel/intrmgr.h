@@ -12,33 +12,33 @@
 extern "C" {
 #endif
 
-typedef int (*intr_callback)(int code, int arg);
+typedef int (*SceKernelIntrOptParam2Callback)(int code, int arg);
 
-typedef struct reg_intr_opt2 {
+typedef struct SceKernelIntrOptParam2 {
 	uint32_t size; // 0x28
 	uint32_t unk_4;
 	uint32_t unk_8;
 	uint32_t unk_C;
-	intr_callback *fptr0; // function pointer
-	intr_callback *fptr1; // function pointer
-	intr_callback *fptr2; // function pointer
+	SceKernelIntrOptParam2Callback *fptr0; // function pointer
+	SceKernelIntrOptParam2Callback *fptr1; // function pointer
+	SceKernelIntrOptParam2Callback *fptr2; // function pointer
 	uint32_t unk_1C;
 	uint32_t unk_20;
 	uint32_t unk_24;
-} reg_intr_opt2;
+} SceKernelIntrOptParam2;
 
-typedef struct reg_intr_opt {
+typedef struct SceKernelIntrOptParam {
 	uint32_t size; // 0x14
 	uint32_t num;
-	reg_intr_opt2 *opt2;
+	SceKernelIntrOptParam2 *opt2;
 	uint32_t unk_C;
 	uint32_t unk_10;
-} reg_intr_opt;
+} SceKernelIntrOptParam;
 
-typedef int (*intr_callback_func)(int unk, void *userCtx);
+typedef int (*SceKernelIntrHandler)(int unk, void *userCtx);
 
 int ksceKernelRegisterIntrHandler(int intr_code, const char *name, int interrupt_type,
-	intr_callback_func *func, void *userCtx, int priority, int targetcpu, reg_intr_opt *opt);
+	SceKernelIntrHandler *func, void *userCtx, int priority, int targetcpu, SceKernelIntrOptParam *opt);
 
 int ksceKernelReleaseIntrHandler(int intr_code);
 
