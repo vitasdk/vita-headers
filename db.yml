@@ -5226,3 +5226,22 @@ modules:
           sceMtpIfStopPort: 0xD3C974D9
           sceMtpIfSendResponse: 0xDD08CA01
           sceMtpIfSendEvent: 0xE3C33379
+  SceKernelIntrMgr:
+    nid: 0x73B1F972
+    libraries:
+      SceIntrmgrForDriver:
+        kernel: true
+        nid: 0x9DF04041
+        functions:
+          ksceKernelRegisterIntrHandler: 0x5C1FEB29
+          ksceKernelReleaseIntrHandler: 0xD6009B98
+          ksceKernelMaskIntr: 0x180435EC
+          ksceKernelUnmaskIntr: 0x7117E827
+          ksceKernelSetIntrMasked: 0x7117E827
+          ksceKernelGetIntrMasked: 0x6EC07C56
+          ksceKernelIsIntrPending: 0xA269003D
+          ksceKernelClearIntrPending: 0x4DC48A01
+          ksceKernelSetIntrPriority: 0x71020E29
+          ksceKernelSetIntrTarget: 0x973BACCC
+          ksceKernelTriggerSGI: 0x29F62500
+          ksceKernelIsIntrAllowedInCurrentContext: 0x182EE3E3
