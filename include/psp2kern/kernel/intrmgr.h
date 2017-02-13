@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-typedef int (*SceKernelIntrOptParam2Callback)(int code, int arg);
+typedef int (*SceKernelIntrOptParam2Callback)(int intr_code, int subintr_code);
 
 typedef struct SceKernelIntrOptParam2 {
 	uint32_t size; // 0x28
@@ -20,7 +20,7 @@ typedef struct SceKernelIntrOptParam2 {
 	uint32_t unk_8;
 	uint32_t unk_C;
 	SceKernelIntrOptParam2Callback *fptr0; // function pointer
-	SceKernelIntrOptParam2Callback *fptr1; // function pointer
+	SceKernelIntrOptParam2Callback *enable_subinterrupt_cb;
 	SceKernelIntrOptParam2Callback *fptr2; // function pointer
 	uint32_t unk_1C;
 	uint32_t unk_20;
@@ -54,6 +54,7 @@ int ksceKernelIsIntrAllowedInCurrentContext(int intr_code);
 int ksceKernelRegisterSubIntrHandler(int intr_code, int subintr_code, const char *name,
 	SceKernelSubIntrHandler handler, void *register_arg);
 int ksceKernelTriggerSubIntr(int intr_code, int subintr_code, void *subintr_arg);
+int ksceKernelEnableSubIntr(int intr_code, int subintr_code);
 
 #ifdef __cplusplus
 }
