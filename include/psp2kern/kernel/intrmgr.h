@@ -55,6 +55,7 @@ int ksceKernelRegisterSubIntrHandler(int intr_code, int subintr_code, const char
 	SceKernelSubIntrHandler handler, void *register_arg);
 int ksceKernelTriggerSubIntr(int intr_code, int subintr_code, void *subintr_arg);
 int ksceKernelEnableSubIntr(int intr_code, int subintr_code);
+int ksceKernelDisableSubIntr(int intr_code, int subintr_code);
 
 #ifdef __cplusplus
 }
