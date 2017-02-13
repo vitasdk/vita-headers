@@ -11,5 +11,6 @@ var group__kernel =
     [ "System Memory Library", "group__SceSysmem.html", "group__SceSysmem" ],
     [ "OpenPsid Library", "group__SceOpenPsid.html", "group__SceOpenPsid" ],
     [ "Random Number Library", "group__SceRng.html", "group__SceRng" ],
-    [ "Suspend Library", "group__SceSuspend.html", "group__SceSuspend" ]
+    [ "Suspend Library", "group__SceSuspend.html", "group__SceSuspend" ],
+    [ "Interrupt Manager Library", "group__SceIntrMgr.html", "group__SceIntrMgr" ]
 ];

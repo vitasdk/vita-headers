@@ -465,6 +465,8 @@ var searchData=
   ['scekernelgetthreadtlsaddr',['sceKernelGetThreadTLSAddr',['../group__SceThreadMgrUser.html#ga5c88ce8f3b9a96ce584ec3822744fe97',1,'threadmgr.h']]],
   ['scekernelgettlsaddr',['sceKernelGetTLSAddr',['../group__SceThreadMgrUser.html#gae74b3a3318e9781fe140bd49f56f43b6',1,'threadmgr.h']]],
   ['scekernelidlisttype',['SceKernelIdListType',['../group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc',1,'SceKernelIdListType():&#160;threadmgr.h'],['../group__SceThreadMgrKernel.html#gab73e1647ba8ce49d40132e57883602dc',1,'SceKernelIdListType():&#160;threadmgr.h']]],
+  ['scekernelintroptparam',['SceKernelIntrOptParam',['../group__SceIntrMgrKernel.html#structSceKernelIntrOptParam',1,'']]],
+  ['scekernelintroptparam2',['SceKernelIntrOptParam2',['../group__SceIntrMgrKernel.html#structSceKernelIntrOptParam2',1,'']]],
   ['scekernellmoption',['SceKernelLMOption',['../group__SceModulemgrUser.html#structSceKernelLMOption',1,'']]],
   ['scekernellockmutex',['sceKernelLockMutex',['../group__SceThreadMgrUser.html#ga1d4bf3502c562f1451a8efe3b387523a',1,'threadmgr.h']]],
   ['scekernellockmutexcb',['sceKernelLockMutexCB',['../group__SceThreadMgrUser.html#gab3271053ff0af4ae7ffdea199013e5ec',1,'threadmgr.h']]],

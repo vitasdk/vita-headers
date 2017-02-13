@@ -102,21 +102,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ga09e3d6e169f9611ddf583e6d03328e2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c">ksceKernelCpuEnableInterrupts</a> (int flags)</td></tr>
 <tr class="memdesc:ga09e3d6e169f9611ddf583e6d03328e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts.  <a href="#ga09e3d6e169f9611ddf583e6d03328e2c">More...</a><br /></td></tr>
 <tr class="separator:ga09e3d6e169f9611ddf583e6d03328e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88146b380005022344f20377b55ec644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga88146b380005022344f20377b55ec644">ksceKernelCpuDcacheAndL2Flush</a> (void *ptr, size_t len)</td></tr>
-<tr class="memdesc:ga88146b380005022344f20377b55ec644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush L1 dcache and L2.  <a href="#ga88146b380005022344f20377b55ec644">More...</a><br /></td></tr>
-<tr class="separator:ga88146b380005022344f20377b55ec644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2df0335e673dab98391ff197cd886c3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga2df0335e673dab98391ff197cd886c3e">ksceKernelCpuDcacheFlush</a> (void *ptr, size_t len)</td></tr>
-<tr class="memdesc:ga2df0335e673dab98391ff197cd886c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush L2 dcache without L2.  <a href="#ga2df0335e673dab98391ff197cd886c3e">More...</a><br /></td></tr>
-<tr class="separator:ga2df0335e673dab98391ff197cd886c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5a9622957edc36c66eb80128af84518"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gad5a9622957edc36c66eb80128af84518">ksceKernelCpuDcacheWritebackRange</a> (void *ptr, size_t len)</td></tr>
-<tr class="memdesc:gad5a9622957edc36c66eb80128af84518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback a range of L1 dcache (not sure if L2 too)  <a href="#gad5a9622957edc36c66eb80128af84518">More...</a><br /></td></tr>
+<tr class="memdesc:gad5a9622957edc36c66eb80128af84518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback a range of L1 dcache (without L2)  <a href="#gad5a9622957edc36c66eb80128af84518">More...</a><br /></td></tr>
 <tr class="separator:gad5a9622957edc36c66eb80128af84518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3f79f4b73ac98bff381799fafe715e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gad3f79f4b73ac98bff381799fafe715e4">ksceKernelCpuIcacheAndL2Flush</a> (void *ptr, size_t len)</td></tr>
-<tr class="memdesc:gad3f79f4b73ac98bff381799fafe715e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush L1 icache and L2.  <a href="#gad3f79f4b73ac98bff381799fafe715e4">More...</a><br /></td></tr>
-<tr class="separator:gad3f79f4b73ac98bff381799fafe715e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2965bc34e8647b161ad1b78d0e01f40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gac2965bc34e8647b161ad1b78d0e01f40">ksceKernelCpuDcacheAndL2AndDMAFlush</a> (void *ptr, size_t len)</td></tr>
-<tr class="memdesc:gac2965bc34e8647b161ad1b78d0e01f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush L1 dcache and L2 for DMA operations.  <a href="#gac2965bc34e8647b161ad1b78d0e01f40">More...</a><br /></td></tr>
-<tr class="separator:gac2965bc34e8647b161ad1b78d0e01f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadac7ba6fca70b8927e524f57043b4ae9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gadac7ba6fca70b8927e524f57043b4ae9">ksceKernelCpuDcacheWritebackInvalidateRange</a> (void *ptr, size_t len)</td></tr>
+<tr class="memdesc:gadac7ba6fca70b8927e524f57043b4ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback and invalidate a range of L1 dcache (without L2)  <a href="#gadac7ba6fca70b8927e524f57043b4ae9">More...</a><br /></td></tr>
+<tr class="separator:gadac7ba6fca70b8927e524f57043b4ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31ceee373340f8d5aa1925ad8b036784"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga31ceee373340f8d5aa1925ad8b036784">ksceKernelCpuDcacheAndL2WritebackRange</a> (void *ptr, size_t len)</td></tr>
+<tr class="memdesc:ga31ceee373340f8d5aa1925ad8b036784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback a range of L1 dcache and L2.  <a href="#ga31ceee373340f8d5aa1925ad8b036784">More...</a><br /></td></tr>
+<tr class="separator:ga31ceee373340f8d5aa1925ad8b036784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3914d5e447e9790fa8e193512369a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gae3914d5e447e9790fa8e193512369a9e">ksceKernelCpuDcacheAndL2InvalidateRange</a> (void *ptr, size_t len)</td></tr>
+<tr class="memdesc:gae3914d5e447e9790fa8e193512369a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback and invalidate a range of L1 and L2 dcache.  <a href="#gae3914d5e447e9790fa8e193512369a9e">More...</a><br /></td></tr>
+<tr class="separator:gae3914d5e447e9790fa8e193512369a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad200618d43d192875a226623cfdc0137"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gad200618d43d192875a226623cfdc0137">ksceKernelCpuIcacheAndL2WritebackInvalidateRange</a> (void *ptr, size_t len)</td></tr>
+<tr class="memdesc:gad200618d43d192875a226623cfdc0137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback and invalidate a range of L1 icache and L2.  <a href="#gad200618d43d192875a226623cfdc0137">More...</a><br /></td></tr>
+<tr class="separator:gad200618d43d192875a226623cfdc0137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga014cc92b4af1e5255d72bf8b08e41877"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga014cc92b4af1e5255d72bf8b08e41877">ksceKernelCpuDcacheAndL2WritebackInvalidateRange</a> (void *ptr, size_t len)</td></tr>
+<tr class="memdesc:ga014cc92b4af1e5255d72bf8b08e41877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback and invalidate a range of L1 dcache and L2.  <a href="#ga014cc92b4af1e5255d72bf8b08e41877">More...</a><br /></td></tr>
+<tr class="separator:ga014cc92b4af1e5255d72bf8b08e41877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6034673708645325ee6c952ddd6cbcb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5">ksceKernelCpuUnrestrictedMemcpy</a> (void *dst, const void *src, size_t len)</td></tr>
 <tr class="memdesc:ga6034673708645325ee6c952ddd6cbcb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MMU permission bypassing memcpy.  <a href="#ga6034673708645325ee6c952ddd6cbcb5">More...</a><br /></td></tr>
 <tr class="separator:ga6034673708645325ee6c952ddd6cbcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,14 +187,14 @@ Macros</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac2965bc34e8647b161ad1b78d0e01f40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2965bc34e8647b161ad1b78d0e01f40">&sect;&nbsp;</a></span>ksceKernelCpuDcacheAndL2AndDMAFlush()</h2>
+<a id="gae3914d5e447e9790fa8e193512369a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3914d5e447e9790fa8e193512369a9e">&sect;&nbsp;</a></span>ksceKernelCpuDcacheAndL2InvalidateRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuDcacheAndL2AndDMAFlush </td>
+          <td class="memname">int ksceKernelCpuDcacheAndL2InvalidateRange </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -210,7 +213,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flush L1 dcache and L2 for DMA operations. </p>
+<p>Writeback and invalidate a range of L1 and L2 dcache. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
@@ -222,14 +225,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga88146b380005022344f20377b55ec644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga88146b380005022344f20377b55ec644">&sect;&nbsp;</a></span>ksceKernelCpuDcacheAndL2Flush()</h2>
+<a id="ga014cc92b4af1e5255d72bf8b08e41877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga014cc92b4af1e5255d72bf8b08e41877">&sect;&nbsp;</a></span>ksceKernelCpuDcacheAndL2WritebackInvalidateRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuDcacheAndL2Flush </td>
+          <td class="memname">int ksceKernelCpuDcacheAndL2WritebackInvalidateRange </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -248,8 +251,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flush L1 dcache and L2. </p>
-<p>Note: symbols currently does not work on 3.x, need to find new ones.</p>
+<p>Writeback and invalidate a range of L1 dcache and L2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
@@ -261,14 +263,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2df0335e673dab98391ff197cd886c3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2df0335e673dab98391ff197cd886c3e">&sect;&nbsp;</a></span>ksceKernelCpuDcacheFlush()</h2>
+<a id="ga31ceee373340f8d5aa1925ad8b036784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31ceee373340f8d5aa1925ad8b036784">&sect;&nbsp;</a></span>ksceKernelCpuDcacheAndL2WritebackRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuDcacheFlush </td>
+          <td class="memname">int ksceKernelCpuDcacheAndL2WritebackRange </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -287,7 +289,45 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flush L2 dcache without L2. </p>
+<p>Writeback a range of L1 dcache and L2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a id="gadac7ba6fca70b8927e524f57043b4ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadac7ba6fca70b8927e524f57043b4ae9">&sect;&nbsp;</a></span>ksceKernelCpuDcacheWritebackInvalidateRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelCpuDcacheWritebackInvalidateRange </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writeback and invalidate a range of L1 dcache (without L2) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
@@ -325,7 +365,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writeback a range of L1 dcache (not sure if L2 too) </p>
+<p>Writeback a range of L1 dcache (without L2) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
@@ -385,14 +425,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="gad3f79f4b73ac98bff381799fafe715e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3f79f4b73ac98bff381799fafe715e4">&sect;&nbsp;</a></span>ksceKernelCpuIcacheAndL2Flush()</h2>
+<a id="gad200618d43d192875a226623cfdc0137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad200618d43d192875a226623cfdc0137">&sect;&nbsp;</a></span>ksceKernelCpuIcacheAndL2WritebackInvalidateRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuIcacheAndL2Flush </td>
+          <td class="memname">int ksceKernelCpuIcacheAndL2WritebackInvalidateRange </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -411,7 +451,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flush L1 icache and L2. </p>
+<p>Writeback and invalidate a range of L1 icache and L2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
@@ -474,7 +514,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 11 2017 08:38:44 for vitasdk by
+    <li class="footer">Generated on Mon Feb 13 2017 22:04:17 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

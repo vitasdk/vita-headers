@@ -13,5 +13,6 @@ var searchData=
   ['inputessize',['inputEsSize',['../group__SceAudiodecUser.html#ga9ac42c69918b0cb41ee1d4de9c493932',1,'SceAudiodecCtrl']]],
   ['inputpcmsize',['inputPcmSize',['../group__SceAudioencUser.html#gaff2833cf4249b601249d23437a78c5a4',1,'SceAudioencCtrl']]],
   ['intrpreemptcount',['intrPreemptCount',['../group__SceThreadMgrUser.html#ga6aca98c6db3c1f55abb43588f98ea548',1,'SceKernelThreadInfo']]],
-  ['ime_20dialog_20library',['Ime Dialog Library',['../group__SceIme.html',1,'']]]
+  ['ime_20dialog_20library',['Ime Dialog Library',['../group__SceIme.html',1,'']]],
+  ['interrupt_20manager_20library',['Interrupt Manager Library',['../group__SceIntrMgr.html',1,'']]]
 ];

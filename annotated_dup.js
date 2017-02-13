@@ -128,6 +128,8 @@ var annotated_dup =
     [ "SceKernelEventFlagInfo", "group__SceThreadMgrUser.html#structSceKernelEventFlagInfo", "group__SceThreadMgrUser_structSceKernelEventFlagInfo" ],
     [ "SceKernelEventFlagOptParam", "group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam", "group__SceThreadMgrUser_structSceKernelEventFlagOptParam" ],
     [ "SceKernelFwInfo", "group__SceModulemgrUser.html#structSceKernelFwInfo", "group__SceModulemgrUser_structSceKernelFwInfo" ],
+    [ "SceKernelIntrOptParam", "group__SceIntrMgrKernel.html#structSceKernelIntrOptParam", "group__SceIntrMgrKernel_structSceKernelIntrOptParam" ],
+    [ "SceKernelIntrOptParam2", "group__SceIntrMgrKernel.html#structSceKernelIntrOptParam2", "group__SceIntrMgrKernel_structSceKernelIntrOptParam2" ],
     [ "SceKernelLMOption", "group__SceModulemgrUser.html#structSceKernelLMOption", "group__SceModulemgrUser_structSceKernelLMOption" ],
     [ "SceKernelLwCondOptParam", "group__SceThreadMgrUser.html#structSceKernelLwCondOptParam", "group__SceThreadMgrUser_structSceKernelLwCondOptParam" ],
     [ "SceKernelLwCondWork", "group__SceThreadMgrUser.html#structSceKernelLwCondWork", "group__SceThreadMgrUser_structSceKernelLwCondWork" ],

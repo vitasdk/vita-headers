@@ -124,6 +124,8 @@ var searchData=
   ['scekerneleventflaginfo',['SceKernelEventFlagInfo',['../group__SceThreadMgrUser.html#structSceKernelEventFlagInfo',1,'']]],
   ['scekerneleventflagoptparam',['SceKernelEventFlagOptParam',['../group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam',1,'']]],
   ['scekernelfwinfo',['SceKernelFwInfo',['../group__SceModulemgrUser.html#structSceKernelFwInfo',1,'']]],
+  ['scekernelintroptparam',['SceKernelIntrOptParam',['../group__SceIntrMgrKernel.html#structSceKernelIntrOptParam',1,'']]],
+  ['scekernelintroptparam2',['SceKernelIntrOptParam2',['../group__SceIntrMgrKernel.html#structSceKernelIntrOptParam2',1,'']]],
   ['scekernellmoption',['SceKernelLMOption',['../group__SceModulemgrUser.html#structSceKernelLMOption',1,'']]],
   ['scekernellwcondoptparam',['SceKernelLwCondOptParam',['../group__SceThreadMgrUser.html#structSceKernelLwCondOptParam',1,'']]],
   ['scekernellwcondwork',['SceKernelLwCondWork',['../group__SceThreadMgrUser.html#structSceKernelLwCondWork',1,'']]],

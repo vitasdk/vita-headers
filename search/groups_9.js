@@ -5,6 +5,7 @@ var searchData=
   ['kernel',['Kernel',['../group__SceCPUKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceCtrlKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceFcntlKernel.html',1,'']]],
+  ['kernel',['Kernel',['../group__SceIntrMgrKernel.html',1,'']]],
   ['kernel_20errors',['Kernel Errors',['../group__SceKernelError.html',1,'']]],
   ['kernel',['Kernel',['../group__SceModulemgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceNetKernel.html',1,'']]],
