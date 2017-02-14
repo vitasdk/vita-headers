@@ -944,6 +944,7 @@ modules:
           ksceDisplayGetFrameBuf: 0xEEDA2E54
           ksceDisplaySetFrameBufInternal: 0x16466675
           ksceDisplayGetFrameBufInternal: 0x19F94C63
+          ksceDisplayRegisterFrameBufCallback: 0x6E22990E
         kernel: true
         nid: 0x9FED47AC
   SceFace:
@@ -1588,6 +1589,28 @@ modules:
           sceHttpsUnloadCert: 0x8577833F
         kernel: false
         nid: 0xE8F15CDE
+  SceIdStorage:
+    nid: 0x4BDAF254
+    libraries:
+      SceIdStorageForDriver:
+        functions:
+          ksceIdStorageCreateLeaf: 0x08A471A6
+          ksceIdStorageDeleteLeaf: 0x2C97AB36
+          ksceIdStorageFlush: 0x3AD32523
+          ksceIdStorageFormat: 0x958089DB
+          ksceIdStorageGetFreeLeaves: 0x37833CB8
+          ksceIdStorageGetLeafSize: 0xEB830733
+          ksceIdStorageIsDirty: 0xB9069BAD
+          ksceIdStorageIsFormatted: 0xFEFA40C2
+          ksceIdStorageIsReadOnly: 0x2D633688
+          ksceIdStorageLookup: 0x6FE062D1
+          ksceIdStorageReadLeaf: 0xEB00C509
+          ksceIdStorageRestart: 0x60B647A5
+          ksceIdStorageUnformat: 0xF4BCB3EE
+          ksceIdStorageUpdate: 0x683AAC10
+          ksceIdStorageWriteLeaf: 0x1FA4D135
+        kernel: true
+        nid: 0xE1AC6D7C
   SceIme:
     nid: 0x42
     libraries:
@@ -1679,6 +1702,7 @@ modules:
           ksceKernelFreeMemBlock: 0x9E1C61
           ksceKernelGetPidContext: 0x2ECF7944
           ksceKernelMapBlockUserVisible: 0x58D21746
+          ksceKernelUnmapMemBlock: 0xFFCD9B60
       SceSysmemForKernel:
         kernel: true
         nid: 0x63A519E5
@@ -1697,7 +1721,6 @@ modules:
           memset: 0xAB9BF5C
           rshift: 0x1D89F6C0
           snprintf: 0xAE7A8981
-          sprintf: 0x3DDBE2E1
           strchr: 0x38463759
           strcmp: 0xB33BC43
           strlen: 0xCFC6A9AC
@@ -1766,6 +1789,23 @@ modules:
           sceKernelSyncVMDomain: 0x19D2A81A
         kernel: false
         nid: 0x37FE725A
+      SceSblAIMgrForDriver:
+        functions:
+          ksceSblAimgrIsTest: 0x3B638885
+          ksceSblAimgrIsTool: 0x274663A0
+          ksceSblAimgrIsDEX: 0xF4B98F66
+          ksceSblAimgrIsCEX: 0xD78B04A2
+          ksceSblAimgrIsVITA: 0x4273B97B
+          ksceSblAimgrIsDolce: 0x71608CA3
+          ksceSblAimgrIsGenuineVITA: 0x963CA644
+          ksceSblAimgrIsGenuineDolce: 0xC6E83F34
+        kernel: true
+        nid: 0xFD00C69A
+      SceKernelUtilsForDriver:
+        functions:
+          ksceKernelDeflateDecompress: 0x8AF1FAD4
+        kernel: true
+        nid: 0x496AD8B4
   SceKernelThreadMgr:
     nid: 0xA09CFA5C
     libraries:
@@ -1791,6 +1831,7 @@ modules:
           ksceKernelGetSystemTimeLow: 0x47F6DE49
           ksceKernelGetSystemTimeWide: 0xF4EE4FA9
           ksceKernelGetThreadCurrentPriority: 0x01414F0B
+          ksceKernelGetThreadmgrUIDClass: 0x0A20775A
           ksceKernelInitializeFastMutex: 0xAF8E1266
           ksceKernelLockMutex: 0x16AC80C5
           ksceKernelRunWithStack: 0xE54FD746
@@ -1926,6 +1967,7 @@ modules:
           ksceKernelLoadStartSharedModuleForPid: 0xE2ADEF8D
           ksceKernelLoadStartModuleForPid: 0x9D953C22
           ksceKernelStopUnloadModuleForPid: 0x49A3EDC7
+          ksceKernelSearchModuleByName: 0xBBE1771C
       SceModulemgr:
         functions:
           sceKernelGetModuleIdByAddr: 0xF5798C7C
@@ -1938,31 +1980,41 @@ modules:
     nid: 0x3E244C17
     libraries:
       SceIofilemgrForDriver:
-        kernel: true
-        nid: 0x40FD29C7
         functions:
           ksceIoChstat: 0x7D42B8DC
           ksceIoChstatByFd: 0xDF57A75F
+          ksceIoClearErrorEvent: 0x40B933C7
           ksceIoClose: 0xF99DD8A3
-          ksceIoDevctl: 0x16882FC4
+          ksceIoCreateErrorEvent: 0x3C0343DB
+          ksceIoCreateMountEvent: 0x2DFA192F
           ksceIoDclose: 0x19C81DD6
+          ksceIoDeleteErrorEvent: 0xC6158F8D
+          ksceIoDeleteMountEvent: 0x43DB0AE4
+          ksceIoDevctl: 0x16882FC4
           ksceIoDopen: 0x463B25CC
           ksceIoDread: 0x20CF5FC7
+          ksceIoFlock: 0x16336A0D
+          ksceIoGetProcessDefaultPriorityForSystem: 0xCE397158
           ksceIoGetstat: 0x75C96D25
           ksceIoGetstatByFd: 0x462F059B
           ksceIoLseek: 0x62090481
           ksceIoMkdir: 0x7F710B25
+          ksceIoMount: 0xD070BC48
           ksceIoOpen: 0x75192972
           ksceIoRead: 0xE17EFC03
           ksceIoReadAsync: 0x69047C81
           ksceIoRemove: 0x0D7BB3E1
           ksceIoRename: 0xDC0C4997
           ksceIoRmdir: 0x1CC9C634
+          ksceIoSetProcessDefaultPriorityForSystem: 0xABE65071
           ksceIoSync: 0xDDF78594
           ksceIoSyncByFd: 0x338DCD68
           ksceIoSyncByFdAsync: 0x041209CF
+          ksceIoUmount: 0x20574100
           ksceIoWrite: 0x21EE91F0
           ksceIoWriteAsync: 0xA1BD13D0
+        kernel: true
+        nid: 0x40FD29C7
       SceIofilemgr:
         functions:
           sceIoCancel: 0xCEF48835
@@ -4008,6 +4060,17 @@ modules:
           sceRtcGetAccumulativeTime: 0x258BE8EC
         kernel: false
         nid: 0x3503487E
+      SceRtcForDriver:
+        functions:
+          ksceRtcSetConf: 0xACFE5A9F
+          ksceRtcIsAlarmed: 0xCD295F0C
+          ksceRtcRegisterCallback: 0x5220870D
+          ksceRtcUnregisterCallback: 0x9546C68B
+          ksceRtcIsSecureAlarmed: 0xE39F2ABE
+          ksceRtcRegisterSecureAlarmCallback: 0xCF84DFC0
+          ksceRtcUnregisterSecureAlarmCallback: 0xEDDC2325
+        kernel: true
+        nid: 0x0351D827
       SceRtcUser:
         functions:
           sceRtcCheckValid: 0xD7622935
@@ -5124,6 +5187,7 @@ modules:
         functions:
           ksceUsbdRegisterCompositeLdd: 0x6E53D7F4
           ksceUsbdRegisterDriver: 0x1EC94F18
+          ksceUsbdSuspendPhase2: 0xD7AA730D
   SceUsbSerial:
     nid: 0xF8D9930F
     libraries:

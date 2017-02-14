@@ -66,6 +66,9 @@ typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
+//! Destroy all other apps
+int sceAppMgrDestroyOtherApp(void);
+
 //! name: The Title ID of the application
 int sceAppMgrDestroyAppByName(char *name);
 
