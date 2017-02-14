@@ -10,6 +10,7 @@ var group__SceAppMgrUser =
     [ "sceAppMgrAppDataMountById", "group__SceAppMgrUser.html#gabec071a8f0ed2f1cc4def5c33454c92c", null ],
     [ "sceAppMgrAppParamGetString", "group__SceAppMgrUser.html#gac405fb989da489896c044f36f7980a7d", null ],
     [ "sceAppMgrDestroyAppByName", "group__SceAppMgrUser.html#ga11a4b09749234b6aa99f1764c6bb4ff9", null ],
+    [ "sceAppMgrDestroyOtherApp", "group__SceAppMgrUser.html#ga075c1e3c8dfcab225b2c778d5f33d517", null ],
     [ "sceAppMgrGetAppParam", "group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6", null ],
     [ "sceAppMgrGetDevInfo", "group__SceAppMgrUser.html#ga4c58805a1324edf28fc3ffde4a9d45c8", null ],
     [ "sceAppMgrLaunchAppByName2", "group__SceAppMgrUser.html#ga372b7edb499d710ac40016b9012511cc", null ],

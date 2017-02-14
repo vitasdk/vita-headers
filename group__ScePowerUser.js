@@ -15,6 +15,7 @@ var group__ScePowerUser =
     [ "scePowerIsSuspendRequired", "group__ScePowerUser.html#ga70b22089c1e4e0ae2c823b026109ad9f", null ],
     [ "scePowerRegisterCallback", "group__ScePowerUser.html#gab0c85add301950702a57859121a60b26", null ],
     [ "scePowerRequestColdReset", "group__ScePowerUser.html#gac5f6d7e8f98580a9fcc0ccdcb3104d90", null ],
+    [ "scePowerRequestDisplayOff", "group__ScePowerUser.html#gaec524a23603f344b0a24fd038da311f7", null ],
     [ "scePowerRequestStandby", "group__ScePowerUser.html#gafc0ba4947347ed5e7b40bcfcb76f65e7", null ],
     [ "scePowerRequestSuspend", "group__ScePowerUser.html#gaa17e71c25ae476469347956af18e4dbf", null ],
     [ "scePowerSetArmClockFrequency", "group__ScePowerUser.html#ga60e340ae4ae835b6504880efe9ce2069", null ],
