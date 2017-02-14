@@ -3849,7 +3849,7 @@ modules:
         kernel: false
         nid: 0x79166BD9
   ScePower:
-    nid: 0x93
+    nid: 0x5EAE6AEC
     libraries:
       ScePower:
         functions:
@@ -3893,6 +3893,11 @@ modules:
           scePowerUnregisterCallback: 0xDFA8BAF8
         kernel: false
         nid: 0x1082DA7F
+      SceLedForDriver:
+        kernel: true
+        nid: 0x282C1323
+        functions:
+          ksceLedSetMode: 0xEA24BE03
   ScePspnetAdhoc:
     nid: 0x95
     libraries:
