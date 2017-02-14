@@ -1594,6 +1594,7 @@ modules:
     libraries:
       SceIdStorageForDriver:
         functions:
+          ksceIdStorageCreateAtomicLeaves: 0x99ACCB71
           ksceIdStorageCreateLeaf: 0x08A471A6
           ksceIdStorageDeleteLeaf: 0x2C97AB36
           ksceIdStorageFlush: 0x3AD32523
@@ -1713,6 +1714,7 @@ modules:
         kernel: true
         nid: 0x7EE45391
         functions:
+          __muldi3: 0x7554AB04
           __stack_chk_fail: 0xB997493D
           memchr: 0x60DAEA30
           memcmp: 0xF939E83D
@@ -1762,6 +1764,8 @@ modules:
           ksceSysrootIsSafeMode: 0x834439A7
           ksceSysrootIsUpdateMode: 0xB0E1FC67
           ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
+          ksceSysrootUseExternalStorage: 0x55392965
+          ksceSysrootUseInternalStorage: 0x50FE3B4D
       SceKernelSuspendForDriver:
         kernel: true
         nid: 0x7290B21C
@@ -1791,6 +1795,7 @@ modules:
         nid: 0x37FE725A
       SceSblAIMgrForDriver:
         functions:
+          ksceSblAimgrGetSMI: 0x47D9CF13
           ksceSblAimgrIsTest: 0x3B638885
           ksceSblAimgrIsTool: 0x274663A0
           ksceSblAimgrIsDEX: 0xF4B98F66
@@ -3893,6 +3898,18 @@ modules:
           scePowerUnregisterCallback: 0xDFA8BAF8
         kernel: false
         nid: 0x1082DA7F
+      ScePowerForDriver:
+        functions:
+          kscePowerGetWakeupFactor: 0x9F26222A
+          kscePowerRequestColdReset: 0x0442D852
+          kscePowerRequestHibernate: 0x08951418
+          kscePowerSetBatteryFakeStatus: 0x0C6973B8
+          kscePowerSetMipsClockFrequency: 0xFFC84E69
+          kscePowerSetPowerSwMode: 0xC1853BA7
+          kscePowerSetPsButtonPushTime: 0xCF8F0529
+          kscePowerSetStandbyButtonPushTime: 0x675A84ED
+        kernel: true
+        nid: 0x1590166F
       SceLedForDriver:
         kernel: true
         nid: 0x282C1323
@@ -4067,12 +4084,21 @@ modules:
         nid: 0x3503487E
       SceRtcForDriver:
         functions:
-          ksceRtcSetConf: 0xACFE5A9F
+          ksceRtcGetAlarmTick: 0xC838275A
+          ksceRtcGetCurrentSecureTick: 0x401C0954
+          ksceRtcGetSecureAlarmTick: 0xBD53731C
           ksceRtcIsAlarmed: 0xCD295F0C
-          ksceRtcRegisterCallback: 0x5220870D
-          ksceRtcUnregisterCallback: 0x9546C68B
           ksceRtcIsSecureAlarmed: 0xE39F2ABE
+          ksceRtcRegisterCallback: 0x5220870D
           ksceRtcRegisterSecureAlarmCallback: 0xCF84DFC0
+          ksceRtcSetAlarmTick: 0xD610C646
+          ksceRtcSetConf: 0xACFE5A9F
+          ksceRtcSetCurrentDebugNetworkTick: 0xAAB6053F
+          ksceRtcSetCurrentNetworkTick: 0x162E486E
+          ksceRtcSetCurrentSecureTick: 0x7D431C87
+          ksceRtcSetCurrentTick: 0x70A78CD2
+          ksceRtcSetSecureAlarmTick: 0x8333790D
+          ksceRtcUnregisterCallback: 0x9546C68B
           ksceRtcUnregisterSecureAlarmCallback: 0xEDDC2325
         kernel: true
         nid: 0x0351D827
@@ -5152,6 +5178,7 @@ modules:
         kernel: true
         nid: 0x9AD8E213
         functions:
+          ksceSblACMgrHasCapability: 0xC2D1F2FC
           ksceSblACMgrIsShell: 0x8612B243
           ksceSblACMgrIsGameProgram: 0x1298C647
           ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
@@ -5328,7 +5355,34 @@ modules:
         kernel: true
         nid: 0x60A35F64
         functions:
+          ksceSysconBeginConfigstorageTransaction: 0xA4968B8C
+          ksceSysconClearTemperatureLog: 0x3843D657
           ksceSysconCmdSync: 0x6E517D22
+          ksceSysconCommitConfigstorageTransaction: 0x7B9B3617
+          ksceSysconCtrlManualChargeMode: 0xC6A2C9EF
+          ksceSysconEnableHibernateIO: 0x4946538A
+          ksceSysconEndConfigstorageTransaction: 0xFCC3E8EE
+          ksceSysconGetHardwareInfo2: 0x965C68C3
+          ksceSysconGetHardwareInfo: 0xCBD6D8BC
+          ksceSysconGetLogInfo: 0x701535FC
+          ksceSysconGetManualChargeMode: 0x4FEC564C
+          ksceSysconGetManufacturesStatus: 0x3E09A1F4
+          ksceSysconGetTemperatureLog: 0x3B354824
+          ksceSysconGetUsbDetStatus: 0xEF810687
+          ksceSysconHasWWAN: 0xCBD6D8BC
+          ksceSysconIduModeClear: 0x34574496
+          ksceSysconIduModeSet: 0x956D07CB
+          ksceSysconIsDownLoaderMode: 0x9ADD60D2
+          ksceSysconIsIduMode: 0xCBD6D8BC
+          ksceSysconIsMCEmuCapable: 0xCBD6D8BC
+          ksceSysconIsShowMode: 0xCBD6D8BC
+          ksceSysconLoadConfigstorageScript: 0x89C5CFD6
+          ksceSysconLogReadData: 0x487D97F3
+          ksceSysconLogStart: 0x4E55CF5E
+          ksceSysconLogStartWaiting: 0x9C0B1E61
+          ksceSysconShowModeClear: 0x8D7724C0
+          ksceSysconShowModeSet: 0x6D65B70F
+          ksceSysconVerifyConfigstorageScript: 0xCC6F90A8
   SceLowio:
     nid: 0x17E0D8DF
     libraries:
