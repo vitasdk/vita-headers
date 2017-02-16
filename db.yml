@@ -1737,6 +1737,8 @@ modules:
         kernel: true
         nid: 0x54BF2BAB
         functions:
+          ksceKernelCpuIcacheInvalidateRange: 0xF4C7F578
+          ksceKernelCpuIcacheInvalidateAll: 0x264DA250
           ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x19F17BD0
           ksceKernelCpuSaveContext: 0x211B89DA
           ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
@@ -1751,6 +1753,7 @@ modules:
           ksceKernelCpuDcacheAndL2WritebackInvalidateRange: 0x364E68A4
           ksceKernelCpuDisableInterrupts: 0x821FC0EE
           ksceKernelCpuDcacheWritebackRange: 0x9CB9F0CE
+          ksceKernelCpuDcacheInvalidateRange: 0x8B4C26DF
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
       SceSysrootForKernel:
         kernel: true
@@ -3939,6 +3942,7 @@ modules:
           kscePowerSetBatteryFakeStatus: 0x0C6973B8
           kscePowerSetMipsClockFrequency: 0xFFC84E69
           kscePowerSetPowerSwMode: 0xC1853BA7
+          kscePowerGetPowerSwMode: 0x165CE085
           kscePowerSetPsButtonPushTime: 0xCF8F0529
           kscePowerSetStandbyButtonPushTime: 0x675A84ED
         kernel: true
