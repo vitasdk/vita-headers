@@ -40,13 +40,15 @@ typedef struct SceUsbdDeviceAddress {
 
 typedef struct SceUsbdDriver {
 	const char *name;
-	int (*probe)(SceUID id);
-	int (*attach)(SceUID id);
-	int (*detach)(SceUID id);
-	SceUsbdDriver *next;
+	int (*probe)(int device_id);
+	int (*attach)(int device_id);
+	int (*detach)(int device_id);
+	struct SceUsbdDriver *next;
 } SceUsbdDriver; /* size = 0x14 */
 
-int ksceUsbdRegisterDriver(SceUsbdDriver *driver);
+int ksceUsbdRegisterDriver(const SceUsbdDriver *driver);
+int ksceUsbdRegisterCompositeLdd(const SceUsbdDriver *driver);
+int ksceUsbdUnregisterDriver(const SceUsbdDriver *driver);
 
 
 #ifdef __cplusplus
