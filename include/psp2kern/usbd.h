@@ -27,11 +27,22 @@ extern "C" {
 #define SCE_USBD_ERROR_PIPE 0x80240009
 #define SCE_USBD_ERROR_TIMEOUT 0x80240007
 
-typedef struct SceUsbdDeviceInfo {
-	unsigned int unk0;
-	unsigned int unk1;
-	unsigned int unk2;
-} SceUsbdDeviceInfo; /* size = 0xC */
+typedef struct SceUsbdDeviceDescriptor {
+	unsigned char  bLength;
+	unsigned char  bDescriptorType;
+	unsigned short bcdUSB;
+	unsigned char  bDeviceClass;
+	unsigned char  bDeviceSubClass;
+	unsigned char  bDeviceProtocol;
+	unsigned char  bMaxPacketSize0;
+	unsigned short idVendor;
+	unsigned short idProduct;
+	unsigned short bcdDevice;
+	unsigned char  iManufacturer;
+	unsigned char  iProduct;
+	unsigned char  iSerialNumber;
+	unsigned char  bNumConfigurations;
+} SceUsbdDeviceDescriptor; /* size = 20 */
 
 typedef struct SceUsbdDeviceAddress {
 	unsigned int unk0;
@@ -49,7 +60,7 @@ typedef struct SceUsbdDriver {
 int ksceUsbdRegisterDriver(const SceUsbdDriver *driver);
 int ksceUsbdRegisterCompositeLdd(const SceUsbdDriver *driver);
 int ksceUsbdUnregisterDriver(const SceUsbdDriver *driver);
-
+void *ksceUsbdGetDescriptor(int device_id, int index, unsigned char bDescriptorType);
 
 #ifdef __cplusplus
 }
