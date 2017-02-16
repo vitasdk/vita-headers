@@ -116,6 +116,27 @@ int ksceKernelCpuDcacheInvalidateRange(void *ptr, size_t len);
 int ksceKernelCpuDcacheWritebackInvalidateRange(void *ptr, size_t len);
 
 /**
+ * @brief      Invalidate all the L1 dcache (without L2)
+ *
+ * @return     Zero on success
+ */
+int ksceKernelCpuDcacheInvalidateAll(void);
+
+/**
+ * @brief      Writeback all the L1 dcache (without L2)
+ *
+ * @return     Zero on success
+ */
+int ksceKernelCpuDcacheWritebackAll(void);
+
+/**
+ * @brief      Writeback and invalidate all the L1 dcache (without L2)
+ *
+ * @return     Zero on success
+ */
+int ksceKernelCpuDcacheWritebackInvalidateAll(void);
+
+/**
  * @brief      Writeback a range of L1 dcache and L2
  *
  * @param      ptr   The pointer
