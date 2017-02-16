@@ -1,8 +1,8 @@
 var structSceUsbdDriver =
 [
-    [ "attach", "group__SceUsbdUser.html#gaffddcabd0a66f219403d40e95473f5a8", null ],
-    [ "detach", "group__SceUsbdUser.html#gab98de40dcce28684bae773dccb5d2ec7", null ],
+    [ "attach", "group__SceUsbdUser.html#ga918b1249f86a5c722508c63ea50796be", null ],
+    [ "detach", "group__SceUsbdUser.html#gab670d9607c9f75ae64ed36be4150ab46", null ],
     [ "name", "group__SceUsbdUser.html#ga7eda3da4135a10c450ea14aa19eb6754", null ],
-    [ "next", "group__SceUsbdUser.html#gae340d13dc2e490c51eee93c317291985", null ],
-    [ "probe", "group__SceUsbdUser.html#gaa4d0d7dc0dfd4fc99633ca59880e5af2", null ]
+    [ "next", "group__SceUsbdUser.html#ga84c99146b4ae0b999448302bb316adb9", null ],
+    [ "probe", "group__SceUsbdUser.html#ga14f589644b4b4ccd23f89e4cd8982e00", null ]
 ];
