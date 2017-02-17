@@ -106,18 +106,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelFreeMemBlock
 <tr class="memitem:gac104b3b9eaaddf1bd3e47a2ffc3e19a1"><td class="memItemLeft" align="right" valign="top"><a id="gac104b3b9eaaddf1bd3e47a2ffc3e19a1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetMemBlockBase</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, void **basep)</td></tr>
 <tr class="separator:gac104b3b9eaaddf1bd3e47a2ffc3e19a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8534afc575b21fc5d0275b39b7e05139"><td class="memItemLeft" align="right" valign="top"><a id="ga8534afc575b21fc5d0275b39b7e05139"></a>
-<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMemPoolCreate</b> (const char *name, SceSize size, <a class="el" href="group__SceSysmemKernel.html#structSceKernelMemPoolCreateOpt">SceKernelMemPoolCreateOpt</a> *opt)</td></tr>
-<tr class="separator:ga8534afc575b21fc5d0275b39b7e05139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga730ab609d02a923b73bdb1f96e27c531"><td class="memItemLeft" align="right" valign="top"><a id="ga730ab609d02a923b73bdb1f96e27c531"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMemPoolDestroy</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pool)</td></tr>
-<tr class="separator:ga730ab609d02a923b73bdb1f96e27c531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64a41015e2dfaf204de0342ca0d51449"><td class="memItemLeft" align="right" valign="top"><a id="ga64a41015e2dfaf204de0342ca0d51449"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMemPoolAlloc</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pool, SceSize size)</td></tr>
-<tr class="separator:ga64a41015e2dfaf204de0342ca0d51449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadaeec160774e107834e8d486a4aeb3ad"><td class="memItemLeft" align="right" valign="top"><a id="gadaeec160774e107834e8d486a4aeb3ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMemPoolFree</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pool, void *ptr)</td></tr>
-<tr class="separator:gadaeec160774e107834e8d486a4aeb3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafba2b363434bce815c1627756f6ea8e8"><td class="memItemLeft" align="right" valign="top"><a id="gafba2b363434bce815c1627756f6ea8e8"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelCreateHeap</b> (const char *name, SceSize size, <a class="el" href="group__SceSysmemKernel.html#structSceKernelHeapCreateOpt">SceKernelHeapCreateOpt</a> *opt)</td></tr>
+<tr class="separator:gafba2b363434bce815c1627756f6ea8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf594ff037a5035136c9ae2c396e61c2"><td class="memItemLeft" align="right" valign="top"><a id="gadf594ff037a5035136c9ae2c396e61c2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelDeleteHeap</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="separator:gadf594ff037a5035136c9ae2c396e61c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga970cf22744d7678723a41c23d75d4bc6"><td class="memItemLeft" align="right" valign="top"><a id="ga970cf22744d7678723a41c23d75d4bc6"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelAllocHeapMemory</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, SceSize size)</td></tr>
+<tr class="separator:ga970cf22744d7678723a41c23d75d4bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e013f57c291dd2da318c998225516bc"><td class="memItemLeft" align="right" valign="top"><a id="ga6e013f57c291dd2da318c998225516bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelFreeHeapMemory</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, void *ptr)</td></tr>
+<tr class="separator:ga6e013f57c291dd2da318c998225516bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0ad7da2e36d13ad5535b741a13b934c"><td class="memItemLeft" align="right" valign="top"><a id="gac0ad7da2e36d13ad5535b741a13b934c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMemcpyUserToKernelForPid</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, void *dst, uintptr_t src, size_t len)</td></tr>
 <tr class="separator:gac0ad7da2e36d13ad5535b741a13b934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,57 +344,57 @@ size</td>
 
 </div>
 </div>
-<a name="structSceKernelMemPoolCreateOpt" id="structSceKernelMemPoolCreateOpt"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMemPoolCreateOpt">&sect;&nbsp;</a></span>SceKernelMemPoolCreateOpt</h2>
+<a name="structSceKernelHeapCreateOpt" id="structSceKernelHeapCreateOpt"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelHeapCreateOpt">&sect;&nbsp;</a></span>SceKernelHeapCreateOpt</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelMemPoolCreateOpt</td>
+          <td class="memname">struct SceKernelHeapCreateOpt</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga69a71de3ce47b5f48197537a048955d5"></a>SceUInt32</td>
+<a id="ga12f0ad88f188e6128be333a124f59c55"></a>SceUInt32</td>
 <td class="fieldname">
 field_10</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga983c629742264f288296dea2caf14848"></a>SceUInt32</td>
+<a id="ga4a61233c0c52fb72b5504a31b419376f"></a>SceUInt32</td>
 <td class="fieldname">
 field_14</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga9d2a9586beace743174a83e4b10a249a"></a>SceUInt32</td>
+<a id="gae5f95bb604fd2dd4d7895e8ab453d086"></a>SceUInt32</td>
 <td class="fieldname">
 field_18</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gadee13f02a770f66025508b47c05033fb"></a>SceUInt32</td>
+<a id="ga2f1ff5bf0360c2f0a974ace91fc865b9"></a>SceUInt32</td>
 <td class="fieldname">
 field_8</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gac7873c3f8c84e02d8ccc55e8733ee627"></a>SceUInt32</td>
+<a id="ga7b292dc95eee9a8b66585a5a0d6be33f"></a>SceUInt32</td>
 <td class="fieldname">
 field_C</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga85599c4e7bfb03fb6b42a44285064eb4"></a>SceSize</td>
+<a id="gaab384e9f3825bf13922da049bdd4fe41"></a>SceSize</td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gac9eec6bcab79e5c1bafb5a8d1fccb565"></a>SceUInt32</td>
+<a id="ga24b6507241dfa6f337cad5abb303c63d"></a>SceUInt32</td>
 <td class="fieldname">
 uselock</td>
 <td class="fielddoc">
@@ -513,7 +513,7 @@ sce_reserved[2]</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 16 2017 17:40:01 for vitasdk by
+    <li class="footer">Generated on Fri Feb 17 2017 22:15:24 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
