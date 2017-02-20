@@ -153,6 +153,8 @@ int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, size_t len);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
 
+int ksceKernelGetPaddr(void *addr, uintptr_t *paddr);
+
 #ifdef __cplusplus
 }
 #endif
