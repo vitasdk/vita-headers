@@ -11,6 +11,7 @@ before_script:
     - ls doxygen* >/dev/null 2>&1 || curl -L ftp://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.12.linux.bin.tar.gz | tar xz
 
 script:
+    - set -e
     - cd $TRAVIS_BUILD_DIR
     - python $TRAVIS_BUILD_DIR/.travis.d/definition_check.py
     - curl https://api.github.com/repos/vitasdk/autobuilds/releases | grep browser_download_url | grep linux | head -n 1 | cut -d '"' -f 4 | xargs curl -L | tar xj
