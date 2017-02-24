@@ -649,6 +649,7 @@ var searchData=
   ['scepvfuserimagebufferrec',['ScePvfUserImageBufferRec',['../group__ScePvfUser.html#structScePvfUserImageBufferRec',1,'']]],
   ['scertctick',['SceRtcTick',['../group__SceRtcUser.html#structSceRtcTick',1,'']]],
   ['sbl_20ac_20manager',['Sbl AC Manager',['../group__SceSblACMgr.html',1,'']]],
+  ['sbl_20auth_20manager',['Sbl Auth Manager',['../group__SceSblAuthMgr.html',1,'']]],
   ['screenshot_20library',['Screenshot Library',['../group__SceScreenshot.html',1,'']]],
   ['scescreenshotdisable',['sceScreenshotDisable',['../group__SceScreenshotUser.html#ga0237c8cfaaacdb869c9cb048c70bf388',1,'screenshot.h']]],
   ['scescreenshotenable',['sceScreenshotEnable',['../group__SceScreenshotUser.html#ga50b0b82394ce9bb6dd039fdc65aafe67',1,'screenshot.h']]],
