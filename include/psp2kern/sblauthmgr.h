@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceSblAuthMgr}
- * \usage{psp2kern/sblauthmgr.h,?}
+ * \usage{psp2kern/sblauthmgr.h,-lSceSblAuthMgrForKernel_stub}
  */
 
 
