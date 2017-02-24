@@ -5438,3 +5438,15 @@ modules:
           ksceGpioPortSet: 0xD454A584
           ksceGpioPortClear: 0xF6310435
           ksceGpioAcquireIntr: 0x35AAD77A
+  SceSblAuthMgr:
+    nid: 0xEA5DFC93
+    libraries:
+      SceSblAuthMgrForKernel:
+        kernel: true
+        nid: 0x7ABF5135
+        functions:
+          ksceSblAuthMgrClearDmac5Key: 0xF2BB723E
+          ksceSblAuthMgrSetDmac5Key: 0x122ACDEA
+      SceSblAuthMgrForDriver:
+        kernel: true
+        nid: 0x4EB2B1BB
