@@ -112,6 +112,16 @@ int ksceKernelFreeMemBlock(SceUID uid);
 */
 int ksceKernelGetMemBlockBase(SceUID uid, void **basep);
 
+/**
+ * Changes the block type
+ *
+ * @param[in] uid - SceUID of the memory block to change
+ * @param[in] type - Type of the memory to change to
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
+
 SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *opt);
 int ksceKernelDeleteHeap(SceUID uid);
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
