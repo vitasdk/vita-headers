@@ -106,6 +106,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelFreeMemBlock
 <tr class="memitem:gac104b3b9eaaddf1bd3e47a2ffc3e19a1"><td class="memItemLeft" align="right" valign="top"><a id="gac104b3b9eaaddf1bd3e47a2ffc3e19a1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetMemBlockBase</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, void **basep)</td></tr>
 <tr class="separator:gac104b3b9eaaddf1bd3e47a2ffc3e19a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad43b8bc5f01d6bf319108edababd2e33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33">ksceKernelRemapBlock</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, SceKernelMemBlockType type)</td></tr>
+<tr class="memdesc:gad43b8bc5f01d6bf319108edababd2e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the block type.  <a href="#gad43b8bc5f01d6bf319108edababd2e33">More...</a><br /></td></tr>
+<tr class="separator:gad43b8bc5f01d6bf319108edababd2e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafba2b363434bce815c1627756f6ea8e8"><td class="memItemLeft" align="right" valign="top"><a id="gafba2b363434bce815c1627756f6ea8e8"></a>
 <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelCreateHeap</b> (const char *name, SceSize size, <a class="el" href="group__SceSysmemKernel.html#structSceKernelHeapCreateOpt">SceKernelHeapCreateOpt</a> *opt)</td></tr>
 <tr class="separator:gafba2b363434bce815c1627756f6ea8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -511,12 +514,51 @@ sce_reserved[2]</td>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gad43b8bc5f01d6bf319108edababd2e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43b8bc5f01d6bf319108edababd2e33">&sect;&nbsp;</a></span>ksceKernelRemapBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelRemapBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SceKernelMemBlockType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the block type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- SceUID of the memory block to change </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Type of the memory to change to</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 24 2017 12:10:46 for vitasdk by
+    <li class="footer">Generated on Sat Feb 25 2017 04:19:49 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

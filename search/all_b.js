@@ -109,6 +109,7 @@ var searchData=
   ['kscekernelreceivemsgpipe',['ksceKernelReceiveMsgPipe',['../group__SceThreadMgrKernel.html#gaeb2e5cb9a883c103edb63c9965987a2c',1,'threadmgr.h']]],
   ['kscekernelreceivemsgpipecb',['ksceKernelReceiveMsgPipeCB',['../group__SceThreadMgrKernel.html#gaf9e4dd274a03c4c38eac9d04786b02fc',1,'threadmgr.h']]],
   ['kscekernelreleasewaitthread',['ksceKernelReleaseWaitThread',['../group__SceThreadMgrKernel.html#ga4fa9d88e598d106f09de2c46e640a959',1,'threadmgr.h']]],
+  ['kscekernelremapblock',['ksceKernelRemapBlock',['../group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33',1,'sysmem.h']]],
   ['kscekernelrunwithstack',['ksceKernelRunWithStack',['../group__SceThreadMgrKernel.html#gaba75fba95109d4d0346cd2f8ecc2df61',1,'threadmgr.h']]],
   ['kscekernelsendmsgpipe',['ksceKernelSendMsgPipe',['../group__SceThreadMgrKernel.html#gaf0c2ff8d0430c487a4cb458383ca6c4a',1,'threadmgr.h']]],
   ['kscekernelsendmsgpipecb',['ksceKernelSendMsgPipeCB',['../group__SceThreadMgrKernel.html#ga4666c6e85dc5166be9620ec28db53dc7',1,'threadmgr.h']]],
