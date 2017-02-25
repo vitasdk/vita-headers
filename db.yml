@@ -1784,16 +1784,21 @@ modules:
         functions:
           sceKernelAllocMemBlock: 0xB9D5EBDE
           sceKernelAllocMemBlockForVM: 0xE2D7E137
+          sceKernelAllocUnmapMemBlock: 0xEC636BCB
+          sceKernelCheckModelCapability: 0x0144FBD9
           sceKernelCloseMemBlock: 0xB680E3A0
           sceKernelCloseVMDomain: 0xD6CA56CA
           sceKernelFindMemBlockByAddr: 0xA33B99D1
           sceKernelFreeMemBlock: 0xA91E15EE
+          sceKernelFreeMemBlockForVM: 0x4EA13FEA
           sceKernelGetFreeMemorySize: 0x87CC580B
           sceKernelGetMemBlockBase: 0xB8EF5818
           sceKernelGetMemBlockInfoByAddr: 0x4010AD65
           sceKernelGetMemBlockInfoByRange: 0x6F3DB4
           sceKernelGetModelForCDialog: 0xA2CB322F
           sceKernelGetModel: 0xD0D4F729
+          sceKernelGetSubbudgetInfo: 0x832B4A65
+          sceKernelIsPSVitaTV: 0x1453A5E5
           sceKernelOpenMemBlock: 0x8EB8DFBB
           sceKernelOpenVMDomain: 0x9CA3EB2B
           sceKernelSyncVMDomain: 0x19D2A81A
@@ -2025,10 +2030,13 @@ modules:
           ksceKernelSearchModuleByName: 0xBBE1771C
       SceModulemgr:
         functions:
+          sceKernelGetAllowedSdkVersionOnSystem: 0x4397FC4E
+          sceKernelGetLibraryInfoByNID: 0xEAEB1312
           sceKernelGetModuleIdByAddr: 0xF5798C7C
           sceKernelGetModuleInfo: 0x36585DAF
           sceKernelGetModuleList: 0x2EF2581F
           sceKernelGetSystemSwVersion: 0x5182E212
+          sceKernelIsCalledFromSysModule: 0x85E6D2BB
         kernel: false
         nid: 0xEAED1616
   SceIofilemgr:
