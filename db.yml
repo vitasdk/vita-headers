@@ -1817,6 +1817,17 @@ modules:
           ksceKernelDeflateDecompress: 0x8AF1FAD4
         kernel: true
         nid: 0x496AD8B4
+      SceDebugForDriver:
+        kernel: true
+        nid: 0x88758561
+        functions:
+          printf: 0x391B74B7
+      SceDebugForKernel:
+        kernel: true
+        nid: 0x88C17370
+        functions:
+          ksceDebugSetHandlers: 0x10067B7B
+          ksceDebugDisableInfoDump: 0xF857CDD6
   SceKernelThreadMgr:
     nid: 0xA09CFA5C
     libraries:
@@ -5198,13 +5209,13 @@ modules:
   SceStdio:
     nid: 0x771A73C0
     libraries:
-      SceDebugForDriver:
-        kernel: true
-        nid: 0x88758561
+      SceStdio:
+        kernel: false
+        nid: 0x8997609C
         functions:
-          printf: 0x391B74B7
-          ksceDebugDisableInfoDump: 0xF857CDD6
-          ksceDebugSetHandlers: 0x10067B7B
+          sceKernelStderr: 0x35EE7CF5
+          sceKernelStdin: 0x54237407
+          sceKernelStdout: 0x9033E9BD
   SceSblSsMgr:
     nid: 0xFDDD93FA
     libraries:
