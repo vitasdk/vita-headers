@@ -53,33 +53,40 @@ int scePromoterUtilityDeletePkg(const char *titleid);
 int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
 
 /**
- * Install a package from a directory, and add an icon on the LiveArea.
- * \note It is an asynchronous function.
+ * Install a backup from a directory, and add an icon on the LiveArea.
  *
- * @param[in] *path - the path of the directory where the extracted content of the package is
- * @param unk - unknown, pass 0
+ * @param[in] *path - the path of the directory where the extracted content of the backup is
  *
  * @return 0 on success.
  */
-int scePromoterUtilityPromotePkg(const char *path, int unk);
+int scePromoterUtilityPromoteBackup(const char *path);
+
+/**
+ * Install a package from a directory, and add an icon on the LiveArea.
+ *
+ * @param[in] *path - the path of the directory where the extracted content of the package is
+ * @param sync - pass 0 for asynchronous, 1 for synchronous
+ *
+ * @return 0 on success.
+ */
+int scePromoterUtilityPromotePkg(const char *path, int sync);
 
 /**
  * Install a package from a directory and generate a rif.
- * \note It is an asynchronous function.
  *
  * @param[in] *path - the path of the directory where the extracted content of the package is
- * @param unk - unknown, pass 0
+ * @param sync - pass 0 for asynchronous, 1 for synchronous
  *
  * @return 0 on success.
  */
-int scePromoterUtilityPromotePkgWithRif(const char *path, int unk);
+int scePromoterUtilityPromotePkgWithRif(const char *path, int sync);
 
 /**
  * Returns the state of an operation.
  *
  * @param[out] *state - the current status, 0 when finished
  *
- * @return <0 if failed.
+ * @return < 0 if failed.
  */
 int scePromoterUtilityGetState(int *state);
 
@@ -88,9 +95,18 @@ int scePromoterUtilityGetState(int *state);
  *
  * @param[out] *res - the result, 0 on success
  *
- * @return <0 if failed.
+ * @return < 0 if failed.
  */
 int scePromoterUtilityGetResult(int *res);
+
+/**
+ * Check if titleid exists
+ *
+ * @param[out] *res - the result, unknown meaning
+ *
+ * @return 0 if exit, < 0 otherwise.
+ */
+int scePromoterUtilityCheckExist(const char *titleid, int *res);
 
 #ifdef __cplusplus
 }
