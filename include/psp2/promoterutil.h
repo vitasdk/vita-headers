@@ -104,7 +104,7 @@ int scePromoterUtilityGetResult(int *res);
  *
  * @param[out] *res - the result, unknown meaning
  *
- * @return 0 if exit, < 0 otherwise.
+ * @return 0 if exists, < 0 otherwise.
  */
 int scePromoterUtilityCheckExist(const char *titleid, int *res);
 
