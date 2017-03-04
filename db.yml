@@ -3511,9 +3511,29 @@ modules:
           sceNpSetPlatformType: 0xE807D0BC
         kernel: false
         nid: 0xECB62224
-  SceNpDrmPackage:
-    nid: 0x78
+  SceNpDrm:
+    nid: 0xE7E2CE05
     libraries:
+      SceNpDrmForDriver:
+        functions:
+          ksceNpDrmCheckActData: 0x9265B350
+          ksceNpDrmEbootSigConvert: 0xA29B75F9
+          ksceNpDrmEbootSigGenMultiDisc: 0x39A7A666
+          ksceNpDrmEbootSigGenPs1: 0x6D9223E1
+          ksceNpDrmEbootSigGenPsp: 0x90B1A6D3
+          ksceNpDrmEbootSigVerify: 0x7A319692
+          ksceNpDrmGetFixedRifName: 0x5D73448C
+          ksceNpDrmGetLegacyDocKey: 0x4E321BDE
+          ksceNpDrmGetRifInfo: 0xDB406EAE
+          ksceNpDrmGetRifName: 0xDF62F3B8
+          ksceNpDrmGetRifNameForInstall: 0x17573133
+          ksceNpDrmPspEbootSigGen: 0xEF387FC4
+          ksceNpDrmPspEbootVerify: 0xB6CA3A2C
+          ksceNpDrmRemoveActData: 0x8B85A509
+          ksceNpDrmUpdateAccountId: 0x116FC0D6
+          ksceNpDrmUpdateDebugSettings: 0xA91C7443
+        kernel: true
+        nid: 0xD84DC44A
       SceNpDrmPackage:
         functions:
           _sceNpDrmPackageCheck: 0xA1D885FA
