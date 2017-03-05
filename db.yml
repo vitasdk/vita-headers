@@ -3514,6 +3514,32 @@ modules:
   SceNpDrm:
     nid: 0xE7E2CE05
     libraries:
+      SceNpDrmPackage:
+        functions:
+          _sceNpDrmPackageCheck: 0xA1D885FA
+          _sceNpDrmPackageDecrypt: 0xD6F05ACC
+          _sceNpDrmPackageInstallFinished: 0x6896EAF2
+          _sceNpDrmPackageInstallStarted: 0xCEC18DA4
+          _sceNpDrmPackageTransform: 0x0567DCA1
+          _sceNpDrmPackageUninstallFinished: 0x23A28861
+          _sceNpDrmPackageUninstallStarted: 0x4901C3E6
+          sceNpDrmPackageInstallOngoing: 0xED0471FE
+          sceNpDrmPackageIsGameExist: 0xB9337914
+          sceNpDrmPackageUninstallOngoing: 0xF1FF6193
+        kernel: false
+        nid: 0x88514DB2
+      SceNpDrm:
+        functions:
+          _sceNpDrmCheckActData: 0xFEEBCD62
+          _sceNpDrmCheckDrmReset: 0x4458812B
+          _sceNpDrmGetFixedRifName: 0xE935B0FC
+          _sceNpDrmGetRifInfo: 0xE8343660
+          _sceNpDrmGetRifName: 0xB8C5DA7C
+          _sceNpDrmGetRifNameForInstall: 0xD312424D
+          _sceNpDrmPresetRifProvisionalFlag: 0x2523F57F
+          _sceNpDrmRemoveActData: 0x507D06A6
+        kernel: false
+        nid: 0xF2799B1B
       SceNpDrmForDriver:
         functions:
           ksceNpDrmCheckActData: 0x9265B350
@@ -3527,6 +3553,9 @@ modules:
           ksceNpDrmGetRifInfo: 0xDB406EAE
           ksceNpDrmGetRifName: 0xDF62F3B8
           ksceNpDrmGetRifNameForInstall: 0x17573133
+          ksceNpDrmGetRifPspKey: 0xDACB71F4
+          ksceNpDrmGetRifVitaKey: 0x723322B5
+          ksceNpDrmPresetRifProvisionalFlag: 0xC070FE89
           ksceNpDrmPspEbootSigGen: 0xEF387FC4
           ksceNpDrmPspEbootVerify: 0xB6CA3A2C
           ksceNpDrmRemoveActData: 0x8B85A509
@@ -3534,12 +3563,6 @@ modules:
           ksceNpDrmUpdateDebugSettings: 0xA91C7443
         kernel: true
         nid: 0xD84DC44A
-      SceNpDrmPackage:
-        functions:
-          _sceNpDrmPackageCheck: 0xA1D885FA
-          _sceNpDrmPackageDecrypt: 0xD6F05ACC
-        kernel: false
-        nid: 0x88514DB2
   SceNpManager:
     nid: 0x79
     libraries:
