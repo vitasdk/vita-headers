@@ -1819,15 +1819,34 @@ modules:
         nid: 0xFD00C69A
       SceKernelUtilsForDriver:
         functions:
+          ksceDeflateDecompress: 0x8AF1FAD4
+          ksceDeflateDecompressPartial: 0x3D74CCDF
           ksceGzipDecompress: 0x367EE3DF
           ksceGzipGetComment: 0xCD3AE08F
           ksceGzipGetCompressedData: 0x63619124
           ksceGzipGetInfo: 0xFFC6A10F
           ksceGzipGetName: 0xF901FD3E
           ksceGzipIsValid: 0xD8FAEFD4
-          ksceKernelDeflateDecompress: 0x8AF1FAD4
           ksceMt19937Init: 0x4C9A5730
           ksceMt19937UInt: 0x92AEDFBC
+          ksceSfmt19937FillArray32: 0x2B30548B
+          ksceSfmt19937FillArray64: 0x49B41540
+          ksceSfmt19937GenRand32: 0xBBE4701A
+          ksceSfmt19937GenRand64: 0x45DEAAD6
+          ksceSfmt19937InitByArray: 0x33AE1203
+          ksceSfmt19937InitGenRand: 0xAB48C3CA
+          ksceSha1BlockInit: 0xE4390FFA
+          ksceSha1BlockResult: 0x48F24106
+          ksceSha1BlockUpdate: 0x478A6F3C
+          ksceSha1Digest: 0x87DC7F2F
+          ksceSha224BlockInit: 0xC762EA6D
+          ksceSha224BlockResult: 0xFBF2A442
+          ksceSha224BlockUpdate: 0x7556E611
+          ksceSha224Digest: 0x9EA9D4DC
+          ksceSha256BlockInit: 0xD909FA2C
+          ksceSha256BlockResult: 0x4899CD4B
+          ksceSha256BlockUpdate: 0x236A9097
+          ksceSha256Digest: 0xA773A6A8
           ksceZlibDecompress: 0x900148DB
           ksceZlibGetCompressedData: 0x01EB6C45
           ksceZlibGetInfo: 0x5B9BCD75
