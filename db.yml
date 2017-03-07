@@ -1819,7 +1819,18 @@ modules:
         nid: 0xFD00C69A
       SceKernelUtilsForDriver:
         functions:
+          ksceGzipDecompress: 0x367EE3DF
+          ksceGzipGetComment: 0xCD3AE08F
+          ksceGzipGetCompressedData: 0x63619124
+          ksceGzipGetInfo: 0xFFC6A10F
+          ksceGzipGetName: 0xF901FD3E
+          ksceGzipIsValid: 0xD8FAEFD4
           ksceKernelDeflateDecompress: 0x8AF1FAD4
+          ksceMt19937Init: 0x4C9A5730
+          ksceMt19937UInt: 0x92AEDFBC
+          ksceZlibDecompress: 0x900148DB
+          ksceZlibGetCompressedData: 0x01EB6C45
+          ksceZlibGetInfo: 0x5B9BCD75
         kernel: true
         nid: 0x496AD8B4
       SceDebugForDriver:
