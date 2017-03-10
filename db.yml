@@ -1714,7 +1714,6 @@ modules:
         kernel: true
         nid: 0x7EE45391
         functions:
-          __muldi3: 0x7554AB04
           __stack_chk_fail: 0xB997493D
           memchr: 0x60DAEA30
           memcmp: 0xF939E83D
@@ -1725,6 +1724,7 @@ modules:
           snprintf: 0xAE7A8981
           strchr: 0x38463759
           strcmp: 0xB33BC43
+          strcpy: 0x7FB4EBEC
           strlen: 0xCFC6A9AC
           strncat: 0xA1D1C32C
           strncmp: 0x12CEE649
@@ -1733,6 +1733,8 @@ modules:
           strrchr: 0x7F0E0835
           strstr: 0x1304A69D
           strtol: 0xAB77C5AA
+          tolower: 0x0021DAF9
+          toupper: 0xA685DCB1
       SceCpuForKernel:
         kernel: true
         nid: 0x54BF2BAB
