@@ -242,5 +242,5 @@ var searchData=
   ['scevideodecqueryinitinfo',['SceVideodecQueryInitInfo',['../group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo',1,'']]],
   ['scevideodecqueryinitinfohwavcdec',['SceVideodecQueryInitInfoHwAvcdec',['../group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec',1,'']]],
   ['scevideodectimestamp',['SceVideodecTimeStamp',['../group__SceVideoDecUser.html#structSceVideodecTimeStamp',1,'']]],
-  ['screenshotparam',['ScreenshotParam',['../group__SceScreenshotUser.html#structScreenshotParam',1,'']]]
+  ['screenshotparam',['ScreenShotParam',['../group__SceScreenshotUser.html#structScreenShotParam',1,'']]]
 ];
