@@ -43,24 +43,24 @@ enum {
 //! Max size of comment (description) (includes NUL terminator)
 #define SCE_SCREENSHOT_MAX_GAME_COMMENT_SIZE	(SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN * 4)
 
-typedef struct ScreenshotParam {
+typedef struct ScreenShotParam {
 	const SceWChar32 *photoTitle; //!< Photo title
 	const SceWChar32 *gameTitle;  //!< Game title
 	const SceWChar32 *gameComment;  //!< Game description
 	void *reserved; //!< Reserved range (Must be NULL)
-} ScreenshotParam;
+} ScreenShotParam;
 
 //! Set screenshot params
-int sceScreenshotSetParam(const ScreenshotParam *param);
+int sceScreenShotSetParam(const ScreenshotParam *param);
 
 //! Set overlay image
-int sceScreenshotOverlayImage(const char *filepath, int offsetX, int offsetY);
+int sceScreenShotSetOverlayImage(const char *filepath, int offsetX, int offsetY);
 
 //! Disable screenshot
-int sceScreenshotDisable(void);
+int sceScreenShotDisable(void);
 
 //! Enable screnshot
-int sceScreenshotEnable(void);
+int sceScreenShotEnable(void);
 
 #ifdef __cplusplus
 }
