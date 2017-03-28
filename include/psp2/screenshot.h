@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceScreenshot}
+ * \usergroup{SceScreenShot}
  * \usage{psp2/screenshot.h,-lSceScreenShot_stub}
  */
 
