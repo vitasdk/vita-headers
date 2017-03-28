@@ -109,7 +109,7 @@ typedef struct SceIoStat {
  *
  * @param dir
  * @param mode - Access mode.
- * @return Returns the value 0 if its succesful otherwise -1
+ * @return Returns the value 0 if it's successful, otherwise -1
  */
 int sceIoMkdir(const char *dir, SceMode mode);
 
@@ -117,7 +117,7 @@ int sceIoMkdir(const char *dir, SceMode mode);
  * Remove a directory file
  *
  * @param path - Removes a directory file pointed by the string path
- * @return Returns the value 0 if its succesful otherwise -1
+ * @return Returns the value 0 if it's successful, otherwise -1
  */
 int sceIoRmdir(const char *path);
 

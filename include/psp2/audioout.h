@@ -54,7 +54,7 @@ enum {
  *
  * @param[in] type - One of ::AudioOutPortType
  * @param[in] len - Number of samples, between ::SCE_AUDIO_MIN_LEN and ::SCE_AUDIO_MAX_LEN (multiple of 64)
- * @param[in] freq - Samping frequency (in Hz), one of the followings :
+ * @param[in] freq - Sampling frequency (in Hz), one of the followings :
  * 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
  * @param[in] mode - One of ::AudioOutMode
  *

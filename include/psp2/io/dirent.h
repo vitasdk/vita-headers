@@ -48,7 +48,7 @@ SceUID sceIoDopen(const char *dirname);
   *
   * @return Read status
   * -   0 - No more directory entries left
-  * - > 0 - More directory entired to go
+  * - > 0 - More directory entries to go
   * - < 0 - Error
   */
 int sceIoDread(SceUID fd, SceIoDirent *dir);

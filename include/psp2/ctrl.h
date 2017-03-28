@@ -55,7 +55,7 @@ enum SceCtrlExternalInputMode {
 
 /** Controller mode. */
 enum SceCtrlPadInputMode {
-	/** Digitial buttons only. */
+	/** Digital buttons only. */
 	SCE_CTRL_MODE_DIGITAL = 0,
 	/** Digital buttons + Analog support. */
 	SCE_CTRL_MODE_ANALOG = 1,
@@ -173,7 +173,7 @@ int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
 /**
  * Get the controller extended state information (blocking, positive logic).
  *
- * This function will bind L/R tringger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.

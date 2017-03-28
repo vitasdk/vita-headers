@@ -43,7 +43,7 @@ enum {
  *	// error
  * }
  * @endcode
- * @par Example2: Open a file for writing, creating it if it doesnt exist
+ * @par Example2: Open a file for writing, creating it if it doesn't exist
  * @code
  * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_WRONLY|SCE_O_CREAT, 0777)) {
  *	// error
@@ -222,9 +222,9 @@ int sceIoRemove(const char *file);
 int sceIoRename(const char *oldname, const char *newname);
 
 /**
-  * Synchronise the file data on the device.
+  * Synchronize the file data on the device.
   *
-  * @param device - The device to synchronise (e.g. msfat0:)
+  * @param device - The device to synchronize (e.g. msfat0:)
   * @param unk - Unknown
   */
 int sceIoSync(const char *device, unsigned int unk);
@@ -239,7 +239,7 @@ int sceIoSync(const char *device, unsigned int unk);
 int sceIoSyncByFd(SceUID fd);
 
 /**
-  * Wait for asyncronous completion.
+  * Wait for asynchronous completion.
   *
   * @param fd - The file descriptor which is current performing an asynchronous action.
   * @param res - The result of the async action.
@@ -249,7 +249,7 @@ int sceIoSyncByFd(SceUID fd);
 int sceIoWaitAsync(SceUID fd, SceInt64 *res);
 
 /**
-  * Wait for asyncronous completion (with callbacks).
+  * Wait for asynchronous completion (with callbacks).
   *
   * @param fd - The file descriptor which is current performing an asynchronous action.
   * @param res - The result of the async action.
@@ -259,7 +259,7 @@ int sceIoWaitAsync(SceUID fd, SceInt64 *res);
 int sceIoWaitAsyncCB(SceUID fd, SceInt64 *res);
 
 /**
-  * Poll for asyncronous completion.
+  * Poll for asynchronous completion.
   *
   * @param fd - The file descriptor which is current performing an asynchronous action.
   * @param res - The result of the async action.
@@ -269,7 +269,7 @@ int sceIoWaitAsyncCB(SceUID fd, SceInt64 *res);
 int sceIoPollAsync(SceUID fd, SceInt64 *res);
 
 /**
-  * Get the asyncronous completion status.
+  * Get the asynchronous completion status.
   *
   * @param fd - The file descriptor which is current performing an asynchronous action.
   * @param poll - If 0 then waits for the status, otherwise it polls the fd.
