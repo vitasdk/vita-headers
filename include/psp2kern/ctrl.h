@@ -54,7 +54,7 @@ enum  SceCtrlExternalInputMode {
 
 /** Controller mode. */
 enum SceCtrlPadInputMode {
-	/** Digitial buttons only. */
+	/** Digital buttons only. */
 	SCE_CTRL_MODE_DIGITAL = 0,
 	/** Digital buttons + Analog support. */
 	SCE_CTRL_MODE_ANALOG = 1,
@@ -232,7 +232,7 @@ int ksceCtrlGetButtonIntercept(int *intercept);
  * @param kernelButtons Emulated buttons of ::SceCtrlPadButtons (you can emulate both user and
  *                      kernel buttons). The emulated buttons will only be applied for applications
  *                      running in kernel mode.
- * @param uiMake Specifies the duration of the emulation. Meassured in sampling counts.
+ * @param uiMake Specifies the duration of the emulation. Measured in sampling counts.
  *
  * @return 0 on success.
  */
@@ -254,7 +254,7 @@ int ksceCtrlSetButtonEmulation(unsigned int port, unsigned char slot,
  * @param kernel_lY New emulate value for the left joystick's Y-axis (kernelspace). Between 0 - 0xFF.
  * @param kernel_rX New emulated value for the right joystick's X-axis (kernelspace). Between 0 - 0xFF.
  * @param kernel_rY New emulate value for the right joystick's Y-axis (kernelspace). Between 0 - 0xFF.
- * @param uiMake Specifies the duration of the emulation. Meassured in sampling counts.
+ * @param uiMake Specifies the duration of the emulation. Measured in sampling counts.
  *
  * @return 0 on success.
  */

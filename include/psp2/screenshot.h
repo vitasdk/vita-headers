@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceScreenshot}
+ * \usergroup{SceScreenShot}
  * \usage{psp2/screenshot.h,-lSceScreenShot_stub}
  */
 
@@ -28,7 +28,7 @@ enum {
 //! Max length of photo title
 #define SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN	(64)
 
-//! Max size of photo title (includes NULL terminater)
+//! Max size of photo title (includes NULL terminator)
 #define SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE (SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN * 4)
 
 //! Max length of game title
@@ -51,7 +51,7 @@ typedef struct ScreenShotParam {
 } ScreenShotParam;
 
 //! Set screenshot params
-int sceScreenShotSetParam(const ScreenshotParam *param);
+int sceScreenShotSetParam(const ScreenShotParam *param);
 
 //! Set overlay image
 int sceScreenShotSetOverlayImage(const char *filepath, int offsetX, int offsetY);
@@ -59,7 +59,7 @@ int sceScreenShotSetOverlayImage(const char *filepath, int offsetX, int offsetY)
 //! Disable screenshot
 int sceScreenShotDisable(void);
 
-//! Enable screnshot
+//! Enable screenshot
 int sceScreenShotEnable(void);
 
 #ifdef __cplusplus

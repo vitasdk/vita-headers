@@ -421,7 +421,7 @@ struct SceUdcdDeviceRequest {
 	void (*onComplete)(struct SceUdcdDeviceRequest *req);
 	/* Number of transmitted bytes  */
 	int  transmitted;
-	/* Return code of the request, 0 == success, -3 == cancelled */
+	/* Return code of the request, 0 == success, -3 == canceled */
 	int  returnCode;
 	/* Link pointer to next request used by the driver, set it to NULL */
 	struct SceUdcdDeviceRequest *next;

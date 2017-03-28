@@ -304,7 +304,7 @@ int ksceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info);
 /**
  * Retrive the runtime status of a thread.
  *
- * @param thid - UID of the thread to retrive status.
+ * @param thid - UID of the thread to retrieve status.
  * @param status - Pointer to a ::SceKernelThreadRunStatus struct to receive the runtime status.
  *
  * @return 0 if successful, otherwise the error code.
@@ -364,7 +364,7 @@ SceUID ksceKernelCreateSema(const char *name, SceUInt attr, int initVal, int max
  * Destroy a semaphore
  *
  * @param semaid - The semaid returned from a previous create call.
- * @return Returns the value 0 if its succesful otherwise -1
+ * @return Returns the value 0 if it's successful, otherwise -1
  */
 int ksceKernelDeleteSema(SceUID semaid);
 
@@ -417,7 +417,7 @@ int ksceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout);
 int ksceKernelWaitSemaCB(SceUID semaid, int signal, SceUInt *timeout);
 
 /**
- * Poll a sempahore.
+ * Poll a semaphore.
  *
  * @param semaid - UID of the semaphore to poll.
  * @param signal - The value to test for.
@@ -499,7 +499,7 @@ SceUID ksceKernelCreateMutex(const char *name, SceUInt attr, int initCount, SceK
  * Destroy a mutex
  *
  * @param mutexid - The mutex id returned from ksceKernelCreateMutex
- * @return Returns the value 0 if its succesful otherwise -1
+ * @return Returns the value 0 if it's successful, otherwise -1
  */
 int ksceKernelDeleteMutex(SceUID mutexid);
 
@@ -507,7 +507,7 @@ int ksceKernelDeleteMutex(SceUID mutexid);
  * Open a mutex
  *
  * @param name - The name of the mutex to open
- * @return Returns the value 0 if its succesful otherwise -1
+ * @return Returns the value 0 if it's successful, otherwise -1
  */
 int ksceKernelOpenMutex(const char *name);
 
@@ -515,7 +515,7 @@ int ksceKernelOpenMutex(const char *name);
  * Close a mutex
  *
  * @param mutexid - The mutex id returned from ksceKernelCreateMutex
- * @return Returns the value 0 if its succesful otherwise -1
+ * @return Returns the value 0 if it's successful, otherwise -1
  */
 int ksceKernelCloseMutex(SceUID mutexid);
 
@@ -754,7 +754,7 @@ int ksceKernelCreateCallback(const char *name, unsigned int attr, SceKernelCallb
   *
   * @param cb - The UID of the callback to retrieve info for.
   * @param status - Pointer to a status structure. The size parameter should be
-  * initialised before calling.
+  * initialized before calling.
   *
   * @return < 0 on error.
   */
@@ -784,7 +784,7 @@ int ksceKernelNotifyCallback(SceUID cb, int arg2);
  *
  * @param cb - The UID of the specified callback
  *
- * @return 0 on succes, < 0 on error
+ * @return 0 on success, < 0 on error
  */
 int ksceKernelCancelCallback(SceUID cb);
 
@@ -989,7 +989,7 @@ typedef enum SceKernelIdListType {
 } SceKernelIdListType;
 
 /**
- * Get the type of a threadman uid
+ * Get the type of a Threadmgr uid
  *
  * @param uid - The uid to get the type from
  *

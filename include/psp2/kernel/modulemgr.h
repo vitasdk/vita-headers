@@ -33,7 +33,7 @@ typedef struct
 	SceUInt perms;	//< probably rwx in low bits
 	void *vaddr;	//< address in memory
 	SceUInt memsz;	//< size in memory
-	SceUInt flags;	//< meanig unknown
+	SceUInt flags;	//< meaning unknown
 	SceUInt res;	//< unused?
 } SceKernelSegmentInfo;
 

@@ -89,14 +89,14 @@ enum {
 #define SCE_ATRAC_LOOP_STATUS_RESETABLE_PART              (0x00000001)
 #define SCE_ATRAC_LOOP_STATUS_NON_RESETABLE_PART          (0x00000000)
 
-/* The strucure for decoder group */
+/* The structure for decoder group */
 typedef struct {
 	SceUInt32 size;
 	SceUInt32 wordLength;
 	SceUInt32 totalCh;
 } SceAtracDecoderGroup;
 
-/* Content infomation strucuture */
+/* Content information structure */
 typedef struct {
 	SceUInt32 size;
 	SceUInt32 atracType;
@@ -113,7 +113,7 @@ typedef struct {
 	SceUInt32 loopBlockSize;
 } SceAtracContentInfo;
 
-/* Stream infomation strucuture */
+/* Stream information structure */
 typedef struct {
 	SceUInt32 size;
 	SceUChar8 *pWritePosition;
