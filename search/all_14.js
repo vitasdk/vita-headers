@@ -43,7 +43,7 @@ var searchData=
   ['user',['User',['../group__ScePvfUser.html',1,'']]],
   ['user',['User',['../group__SceRngUser.html',1,'']]],
   ['user',['User',['../group__SceRtcUser.html',1,'']]],
-  ['user',['User',['../group__SceScreenshotUser.html',1,'']]],
+  ['user',['User',['../group__SceScreenShotUser.html',1,'']]],
   ['user',['User',['../group__SceShellSvcUser.html',1,'']]],
   ['user',['User',['../group__SceSqliteUser.html',1,'']]],
   ['user',['User',['../group__SceStatUser.html',1,'']]],

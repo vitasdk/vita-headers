@@ -246,8 +246,8 @@ var NAVTREEINDEX2 =
 "group__SceSblACMgrKernel.html":[1,7,4,0],
 "group__SceSblAuthMgr.html":[1,7,5],
 "group__SceSblAuthMgrKernel.html":[1,7,5,0],
-"group__SceScreenshot.html":[1,9,4],
-"group__SceScreenshotUser.html":[1,9,4,0],
-"group__SceScreenshotUser.html#ga3220812f42ada801802370b870856929":[1,9,4,0,2],
-"group__SceScreenshotUser.html#ga32f2e4a76310f5e753c85b5414f10d0c":[1,9,4,0,1]
+"group__SceScreenShot.html":[1,9,4],
+"group__SceScreenShotUser.html":[1,9,4,0],
+"group__SceScreenShotUser.html#ga3220812f42ada801802370b870856929":[1,9,4,0,2],
+"group__SceScreenShotUser.html#ga32f2e4a76310f5e753c85b5414f10d0c":[1,9,4,0,1]
 };

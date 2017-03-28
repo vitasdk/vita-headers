@@ -170,7 +170,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga190de898b1f987c33a02420552aee63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a semaphore and handle callbacks if necessary.  <a href="#ga190de898b1f987c33a02420552aee63f">More...</a><br /></td></tr>
 <tr class="separator:ga190de898b1f987c33a02420552aee63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga440ff54f76e0f8caf5640695750206ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga440ff54f76e0f8caf5640695750206ed">ksceKernelPollSema</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> semaid, int signal)</td></tr>
-<tr class="memdesc:ga440ff54f76e0f8caf5640695750206ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll a sempahore.  <a href="#ga440ff54f76e0f8caf5640695750206ed">More...</a><br /></td></tr>
+<tr class="memdesc:ga440ff54f76e0f8caf5640695750206ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll a semaphore.  <a href="#ga440ff54f76e0f8caf5640695750206ed">More...</a><br /></td></tr>
 <tr class="separator:ga440ff54f76e0f8caf5640695750206ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20242a04377d1c480f58ad59e1df1c5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga20242a04377d1c480f58ad59e1df1c5d">ksceKernelCancelSema</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> semaid, int setCount, int *numWaitThreads)</td></tr>
 <tr class="memdesc:ga20242a04377d1c480f58ad59e1df1c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels a semaphore.  <a href="#ga20242a04377d1c480f58ad59e1df1c5d">More...</a><br /></td></tr>
@@ -287,7 +287,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gafa17d33132fbdcce5fa3d260d51385c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system information.  <a href="#gafa17d33132fbdcce5fa3d260d51385c2">More...</a><br /></td></tr>
 <tr class="separator:gafa17d33132fbdcce5fa3d260d51385c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga163c78f3bb573018e2e4c9b61071cc70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc">SceKernelIdListType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga163c78f3bb573018e2e4c9b61071cc70">ksceKernelGetThreadmgrUIDClass</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
-<tr class="memdesc:ga163c78f3bb573018e2e4c9b61071cc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of a threadman uid.  <a href="#ga163c78f3bb573018e2e4c9b61071cc70">More...</a><br /></td></tr>
+<tr class="memdesc:ga163c78f3bb573018e2e4c9b61071cc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of a Threadmgr uid.  <a href="#ga163c78f3bb573018e2e4c9b61071cc70">More...</a><br /></td></tr>
 <tr class="separator:ga163c78f3bb573018e2e4c9b61071cc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c9cad5fc7a1f568006aa2887555c345"><td class="memItemLeft" align="right" valign="top"><a id="ga0c9cad5fc7a1f568006aa2887555c345"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelCreateLwMutex</b> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a> *pWork, const char *pName, unsigned int attr, int initCount, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a> *pOptParam)</td></tr>
@@ -1286,7 +1286,7 @@ size</td>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on succes, &lt; 0 on error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
 
 </div>
 </div>
@@ -1605,7 +1605,7 @@ size</td>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if it's successful, otherwise -1 </dd></dl>
 
 </div>
 </div>
@@ -2118,7 +2118,7 @@ size</td>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if it's successful, otherwise -1 </dd></dl>
 
 </div>
 </div>
@@ -2145,7 +2145,7 @@ size</td>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if it's successful, otherwise -1 </dd></dl>
 
 </div>
 </div>
@@ -2285,7 +2285,7 @@ size</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb</td><td>- The UID of the callback to retrieve info for. </td></tr>
-    <tr><td class="paramname">status</td><td>- Pointer to a status structure. The size parameter should be initialised before calling.</td></tr>
+    <tr><td class="paramname">status</td><td>- Pointer to a status structure. The size parameter should be initialized before calling.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2638,7 +2638,7 @@ size</td>
       </table>
 </div><div class="memdoc">
 
-<p>Get the type of a threadman uid. </p>
+<p>Get the type of a Threadmgr uid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uid</td><td>- The uid to get the type from</td></tr>
@@ -2678,7 +2678,7 @@ size</td>
 <p>Retrive the runtime status of a thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thid</td><td>- UID of the thread to retrive status. </td></tr>
+    <tr><td class="paramname">thid</td><td>- UID of the thread to retrieve status. </td></tr>
     <tr><td class="paramname">status</td><td>- Pointer to a <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus" title="Statistics about a running thread. ">SceKernelThreadRunStatus</a> struct to receive the runtime status.</td></tr>
   </table>
   </dd>
@@ -2930,7 +2930,7 @@ size</td>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if its succesful otherwise -1 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the value 0 if it's successful, otherwise -1 </dd></dl>
 
 </div>
 </div>
@@ -3012,7 +3012,7 @@ size</td>
       </table>
 </div><div class="memdoc">
 
-<p>Poll a sempahore. </p>
+<p>Poll a semaphore. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">semaid</td><td>- UID of the semaphore to poll. </td></tr>
@@ -3980,7 +3980,7 @@ size</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Mar 26 2017 17:22:02 for vitasdk by
+    <li class="footer">Generated on Tue Mar 28 2017 20:33:57 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

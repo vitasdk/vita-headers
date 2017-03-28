@@ -4,7 +4,7 @@ var searchData=
   ['socket_20library',['Socket Library',['../group__SceNet.html',1,'']]],
   ['sbl_20ac_20manager',['Sbl AC Manager',['../group__SceSblACMgr.html',1,'']]],
   ['sbl_20auth_20manager',['Sbl Auth Manager',['../group__SceSblAuthMgr.html',1,'']]],
-  ['screenshot_20library',['Screenshot Library',['../group__SceScreenshot.html',1,'']]],
+  ['screenshot_20library',['ScreenShot Library',['../group__SceScreenShot.html',1,'']]],
   ['shell_20utils_20library',['Shell Utils Library',['../group__SceShellSvc.html',1,'']]],
   ['sqlite_20library',['Sqlite Library',['../group__SceSqlite.html',1,'']]],
   ['suspend_20library',['Suspend Library',['../group__SceSuspend.html',1,'']]],

@@ -5,7 +5,7 @@ var searchData=
   ['parentalstatus',['parentalstatus',['../group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b',1,'SceLocationPermissionInfo']]],
   ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate']]],
   ['photoexportparam',['PhotoExportParam',['../group__ScePhotoExportUser.html#structPhotoExportParam',1,'']]],
-  ['phototitle',['photoTitle',['../group__ScePhotoExportUser.html#ga9d23c119763c0be9f042ff0d9cf01503',1,'PhotoExportParam::photoTitle()'],['../group__SceScreenshotUser.html#gaa1c1ceaff101bb92d959583c8220eca2',1,'ScreenShotParam::photoTitle()']]],
+  ['phototitle',['photoTitle',['../group__ScePhotoExportUser.html#ga9d23c119763c0be9f042ff0d9cf01503',1,'PhotoExportParam::photoTitle()'],['../group__SceScreenShotUser.html#gaa1c1ceaff101bb92d959583c8220eca2',1,'ScreenShotParam::photoTitle()']]],
   ['pinfo',['pInfo',['../group__SceAudiodecUser.html#gad31633c35d75fcde2f8d0221111fb1b2',1,'SceAudiodecCtrl::pInfo()'],['../group__SceAudioencUser.html#ga2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl::pInfo()']]],
   ['pinputpcm',['pInputPcm',['../group__SceAudioencUser.html#ga136ce6a1b5a71d438b2c8dc6125af1be',1,'SceAudioencCtrl']]],
   ['pitch',['pitch',['../group__SceDisplayUser.html#ga44160853361a441b8e43578d0a2941b9',1,'SceDisplayFrameBuf']]],
