@@ -802,26 +802,41 @@ modules:
         functions:
           sceCtrlClearRapidFire: 0xD8294C9C
           sceCtrlGetSamplingMode: 0xEC752AAF
+          sceCtrlGetSamplingModeExt: 0xBD27F830
           sceCtrlGetControllerPortInfo: 0x324F1B66
           sceCtrlPeekBufferNegative: 0x104ED1A7
+          sceCtrlPeekBufferNegative2: 0x81A89660
           sceCtrlPeekBufferPositive: 0xA9C3CED6
           sceCtrlPeekBufferPositive2: 0x15F81E8C
           sceCtrlPeekBufferPositiveExt: 0xA59454D3
           sceCtrlPeekBufferPositiveExt2: 0x860BF292
           sceCtrlReadBufferNegative: 0x15F96FB0
+          sceCtrlReadBufferNegative2: 0x27A0C5FB
           sceCtrlReadBufferPositive: 0x67E7AB83
           sceCtrlReadBufferPositive2: 0xC4226A3E
+          sceCtrlReadBufferPositiveExt: 0xE2D99296
           sceCtrlReadBufferPositiveExt2: 0xA7178860
           sceCtrlSetActuator: 0xDBCAA0C9
           sceCtrlSetButtonIntercept: 0x433D71F4
           sceCtrlGetButtonIntercept: 0x6FAFAD05
           sceCtrlSetLightBar: 0xDA11D433
+          sceCtrlResetLightBar: 0x7E110E90
           sceCtrlSetRapidFire: 0xE9CB69C8
           sceCtrlSetSamplingMode: 0xA497B150
           sceCtrlSetSamplingModeExt: 0xB1DC4378
           sceCtrlDisconnect: 0x16D26DC7
           sceCtrlSingleControllerMode: 0x31BE396
           sceCtrlGetBatteryInfo: 0x8F9B1CE5
+          sceCtrlSetButtonRemappingInfo: 0x8A187F98
+          sceCtrlRegisterBdRMCCallback: 0x0A06B7E4
+          sceCtrlUnregisterBdRMCCallback: 0x103EB2B0
+          sceCtrlIsMultiControllerSupported: 0x1FFFD965
+          sceCtrlGetAnalogStickCheckMode: 0x35BCD3BB
+          sceCtrlGetProcessStatus: 0xA2A56685
+          sceCtrlSetAnalogStickCheckMode: 0xB2C98244
+          sceCtrlGetWirelessControllerInfo: 0xB8844141
+          sceCtrlGetAnalogStickCheckTarget: 0xD01DE63A
+          sceCtrlSetAnalogStickCheckTarget: 0xFB12A0A7
         kernel: false
         nid: 0xD197E3C7
       SceCtrlForDriver:
