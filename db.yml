@@ -5638,3 +5638,51 @@ modules:
       SceSblAuthMgrForDriver:
         kernel: true
         nid: 0x4EB2B1BB
+  SceMotionDev:
+    nid: 0x466A97BD
+    libraries:
+      SceMotionDev:
+        kernel: false
+        nid: 0x1F766AC7
+        functions:
+          sceMotionDevGetCurrentMagnStabilityLevel: 0x067F06D9
+          sceMotionDevGetGyroBias2: 0x12B9F05E
+          sceMotionDevGetGyroCalibData2: 0x160E8DE9
+          sceMotionDevMagnSamplingStart: 0x16DD5913
+          sceMotionDevGetDeviceInfo: 0x1F1EFEFB
+          sceMotionDevGetDs3CalibData: 0x1FD76B5E
+          sceMotionDevRead3: 0x27954BC7
+          sceMotionDevSetSamplingMode: 0x3EAA8A4F
+          sceMotionDevSamplingStart: 0x47948D9C
+          sceMotionDevSamplingStop: 0x56C1551E
+          sceMotionDevGetDeviceLocation: 0x5EDEA879
+          sceMotionDevGetGyroBias: 0x6D033072
+          sceMotionDevGetCalibrationData: 0x716C685B
+          sceMotionDevGetGyroCalibData: 0x74555D91
+          sceMotionDevGetFactoryMagnCalibData: 0x777D57D2
+          sceMotionDevUpdateMagnCalibData: 0x787384FA
+          sceMotionDevSamplingStop2: 0x9E868205
+          sceMotionDevGetControllerType: 0xA2CD11F6
+          sceMotionDevGetCurrentMagnCalibData: 0xAAB4B41F
+          sceMotionDevGetAccCalibData: 0xAF014866
+          sceMotionDevSamplingStart2: 0xB51E02E8
+          sceMotionDevGetCalibrationHeader: 0xBDEC1E32
+          sceMotionDevRead: 0xC0095F0F
+          sceMotionDevReadForMagnCalib: 0xCC4FDA6A
+          sceMotionDevSetGyroFeedBack: 0xCCAEBF59
+          sceMotionDevGetAccCalibData2: 0xD582B628
+          sceMotionDevMagnSamplingStop: 0xE72A35B8
+          sceMotionDevIsReady: 0xE8A3E48E
+          sceMotionDevGetMeasMode: 0xEA95D3C9
+          sceMotionDevUpdateMagnStabilityLevel: 0xEC94F683
+          sceMotionDevRead2: 0xFB87948E
+      SceMotionDevForDriver:
+        kernel: true
+        nid: 0xA501409A
+        functions:
+          ksceMotionDevIsReady: 0x10AAC8EA
+          ksceMotionDevRead: 0x3A3407B5
+          ksceMotionDevGetDeviceInfo: 0x3E4BCBC0
+          ksceMotionDevSamplingStart: 0xC02C85AB
+          ksceMotionDevSetSamplingMode: 0xDBAF611A
+          ksceMotionDevSamplingStop: 0xFD0B0785
