@@ -4981,26 +4981,52 @@ modules:
     libraries:
       SceTouch:
         functions:
-          sceTouchActivateRegion: 0xBD59D652
-          sceTouchClearRegion: 0x2D94EAEA
-          sceTouchDisableTouchForce: 0x41194411
-          sceTouchEnableTouchForce: 0xB18370C2
+          sceTouchEnableIdleTimerCancelSetting: 0x012EAE3A
+          sceTouchPeekRegion: 0x04440622
+          sceTouchSetRegionAttr: 0x08DD4C7C
           sceTouchGetPanelInfo: 0x10A2CA25
-          sceTouchGetPixelDensity: 0xF0704CF3
-          sceTouchGetSamplingState: 0x26531526
-          sceTouchPeek: 0xFF082DF0
-          sceTouchPeekRegion: 0x4440622
-          sceTouchPeekRegionExt: 0x2CF6D7E2
-          sceTouchRead: 0x169A1D58
-          sceTouchSetRegion: 0x6134DFBE
-          sceTouchSetSamplingState: 0x1B9C5D14
           sceTouchSetSamplingStateExt: 0x13CDFC43
+          sceTouchRead: 0x169A1D58
+          sceTouchSetSamplingState: 0x1B9C5D14
+          sceTouchGetSamplingState: 0x26531526
+          sceTouchPeekRegionExt: 0x2CF6D7E2
+          sceTouchClearRegion: 0x2D94EAEA
+          sceTouchPeek2: 0x3AD3D0A1
+          sceTouchRead2: 0x39401BEA
+          sceTouchDisableTouchForce: 0x41194411
+          sceTouchSetProcessPrivilege: 0x609EA489
+          sceTouchSetRegion: 0x6134DFBE
+          sceTouchReadRegion: 0x93B5635B
+          sceTouchReadRegionExt: 0x9F0ACAF9
+          sceTouchEnableTouchForceExt: 0xA3FE877B
+          sceTouchGetProcessInfo: 0xAB364C23
+          sceTouchEnableTouchForce: 0xB18370C2
+          sceTouchActivateRegion: 0xBD59D652
+          sceTouchGetDeviceInfo: 0xD7889B91
+          sceTouchGetSamplingStateExt: 0xDC8671EA
+          sceTouchDisableTouchForceExt: 0xED25DFDC
+          sceTouchGetPixelDensity: 0xF0704CF3
+          sceTouchPeek: 0xFF082DF0
         kernel: false
         nid: 0x3E4F4A81
       SceTouchForDriver:
         functions:
-          ksceTouchSetTouchEmulationData: 0xA32529B8
+          ksceTouchSetRegionAttr: 0x10A998DE
+          ksceTouchSetSamplingState: 0x1247257A
+          ksceTouchGetSamplingState: 0x174D0333
+          ksceTouchGetProcessInfo: 0x4DF3A37C
+          ksceTouchRead: 0x70C8AACE
           ksceTouchSetRegion: 0x7985B164
+          ksceTouchGetPanelInfo: 0x937DB4C0
+          ksceTouchReadRegion: 0x9A91F624
+          ksceTouchPeekRegion: 0x9B3F7207
+          ksceTouchSetTouchEmulationData: 0xA32529B8
+          ksceTouchPeek: 0xBAD1960B
+          ksceTouchActivateRegion: 0xC7F0DAA0
+          ksceTouchDisableTouchForce: 0xCDE79889
+          ksceTouchEnableTouchForce: 0xE41B4BF8
+          ksceTouchEnableIdleTimerCancelSetting: 0xEBF4C86A
+          ksceTouchGetDeviceInfo: 0xFD2E0278
         kernel: true
         nid: 0xA4A7DAFC
   SceUlt:
