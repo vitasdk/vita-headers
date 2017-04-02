@@ -180,12 +180,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdUnregisterDriv
 <tr class="memitem:ga2b06692d7a2d4aab33d10fc987c6f6e1"><td class="memItemLeft" align="right" valign="top"><a id="ga2b06692d7a2d4aab33d10fc987c6f6e1"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetDescriptor</b> (int device_id, int index, unsigned char bDescriptorType)</td></tr>
 <tr class="separator:ga2b06692d7a2d4aab33d10fc987c6f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7c5a1d5fc1845f3179df9128bb94e59"><td class="memItemLeft" align="right" valign="top"><a id="gaa7c5a1d5fc1845f3179df9128bb94e59"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetEndpointId</b> (int device_id, <a class="el" href="group__SceUsbdUser.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *endpoint)</td></tr>
-<tr class="separator:gaa7c5a1d5fc1845f3179df9128bb94e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13b1880485678d5b9e9030f471160c4b"><td class="memItemLeft" align="right" valign="top"><a id="ga13b1880485678d5b9e9030f471160c4b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdOpenEndpoint</b> (int device_id, <a class="el" href="group__SceUsbdUser.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *endpoint)</td></tr>
+<tr class="separator:ga13b1880485678d5b9e9030f471160c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga739dbd8c9a2046fdbefb564bc5d369b7"><td class="memItemLeft" align="right" valign="top"><a id="ga739dbd8c9a2046fdbefb564bc5d369b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdCloseEndpoint</b> (int endpoint_id)</td></tr>
+<tr class="separator:ga739dbd8c9a2046fdbefb564bc5d369b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga952916d62ad4f8aab79f378f2e568365"><td class="memItemLeft" align="right" valign="top"><a id="ga952916d62ad4f8aab79f378f2e568365"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdControlTransfer</b> (int endpoint_id, const <a class="el" href="group__SceUsbdUser.html#structSceUsbdControlTransferRequest">SceUsbdControlTransferRequest</a> *req, unsigned char *buffer, int(*cb)(int, int, int), void *user_data)</td></tr>
 <tr class="separator:ga952916d62ad4f8aab79f378f2e568365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c99704db8909498914c04b778bdb7b7"><td class="memItemLeft" align="right" valign="top"><a id="ga7c99704db8909498914c04b778bdb7b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdInterruptTransfer</b> (int endpoint_id, unsigned char *buffer, unsigned int length, int(*cb)(int, int, int), void *user_data)</td></tr>
+<tr class="separator:ga7c99704db8909498914c04b778bdb7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -657,7 +663,7 @@ wValue</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 2 2017 15:25:51 for vitasdk by
+    <li class="footer">Generated on Sun Apr 2 2017 15:44:55 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
