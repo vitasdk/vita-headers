@@ -180,6 +180,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdUnregisterDriv
 <tr class="memitem:ga2b06692d7a2d4aab33d10fc987c6f6e1"><td class="memItemLeft" align="right" valign="top"><a id="ga2b06692d7a2d4aab33d10fc987c6f6e1"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetDescriptor</b> (int device_id, int index, unsigned char bDescriptorType)</td></tr>
 <tr class="separator:ga2b06692d7a2d4aab33d10fc987c6f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7c5a1d5fc1845f3179df9128bb94e59"><td class="memItemLeft" align="right" valign="top"><a id="gaa7c5a1d5fc1845f3179df9128bb94e59"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetEndpointId</b> (int device_id, <a class="el" href="group__SceUsbdUser.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *endpoint)</td></tr>
+<tr class="separator:gaa7c5a1d5fc1845f3179df9128bb94e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga952916d62ad4f8aab79f378f2e568365"><td class="memItemLeft" align="right" valign="top"><a id="ga952916d62ad4f8aab79f378f2e568365"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdControlTransfer</b> (int endpoint_id, const <a class="el" href="group__SceUsbdUser.html#structSceUsbdControlTransferRequest">SceUsbdControlTransferRequest</a> *req, unsigned char *buffer, int(*cb)(int, int, int), void *user_data)</td></tr>
+<tr class="separator:ga952916d62ad4f8aab79f378f2e568365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -534,12 +540,124 @@ iSerialNumber</td>
 
 </div>
 </div>
+<a name="structSceUsbdEndpointDescriptor" id="structSceUsbdEndpointDescriptor"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceUsbdEndpointDescriptor">&sect;&nbsp;</a></span>SceUsbdEndpointDescriptor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceUsbdEndpointDescriptor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gad5c22be42b405033220404b4cb6ffb3e"></a>unsigned char</td>
+<td class="fieldname">
+bDescriptorType</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga1227dcd036586d4e9c25637cfffe45cf"></a>unsigned char</td>
+<td class="fieldname">
+bEndpointAddress</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gadaafdcf3e587c9825b0a260d0888936a"></a>unsigned char</td>
+<td class="fieldname">
+bInterval</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga14cf5795e78034e9e794052184c0099c"></a>unsigned char</td>
+<td class="fieldname">
+bLength</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga187e497f622d007d700ac7b21004817a"></a>unsigned char</td>
+<td class="fieldname">
+bmAttributes</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga60ad0b0e8f5a73046b76aff458b7e265"></a>unsigned char *</td>
+<td class="fieldname">
+extra</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9ebd62dcacd0be9278906365d763822e"></a>int</td>
+<td class="fieldname">
+extraLength</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga80d9a866f5e83300f799014c3a7b09a2"></a>unsigned short</td>
+<td class="fieldname">
+wMaxPacketSize</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceUsbdControlTransferRequest" id="structSceUsbdControlTransferRequest"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceUsbdControlTransferRequest">&sect;&nbsp;</a></span>SceUsbdControlTransferRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceUsbdControlTransferRequest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga549a954395037555dd51b15ea7850489"></a>unsigned char</td>
+<td class="fieldname">
+bmRequestType</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2bfeaf4e89beb401c1f37310ce05b3b5"></a>unsigned char</td>
+<td class="fieldname">
+bRequest</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gac1ac3f690a0ddbe28456b96f751d14e1"></a>unsigned short</td>
+<td class="fieldname">
+wIndex</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad2bbca5e42a44daa52820e9da23a2fd0"></a>unsigned short</td>
+<td class="fieldname">
+wLength</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8e7ee96d972c30939cf3eeb13337b0a3"></a>unsigned short</td>
+<td class="fieldname">
+wValue</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 2 2017 10:33:51 for vitasdk by
+    <li class="footer">Generated on Sun Apr 2 2017 15:00:42 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
