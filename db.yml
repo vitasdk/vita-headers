@@ -5467,7 +5467,8 @@ modules:
           ksceUsbdUnregisterDriver: 0x216F108D
           ksceUsbdSuspendPhase2: 0xD7AA730D
           ksceUsbdGetDescriptor: 0xBC3EF82B
-          ksceUsbdGetEndpointId: 0x1CDBFF9F
+          ksceUsbdOpenEndpoint: 0x1CDBFF9F
+          ksceUsbdCloseEndpoint: 0xF304DC5C
           ksceUsbdControlTransfer: 0x2E05660F
   SceUsbSerial:
     nid: 0xF8D9930F
