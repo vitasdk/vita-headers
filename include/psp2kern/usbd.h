@@ -93,6 +93,12 @@ int ksceUsbdControlTransfer(int endpoint_id,
 	int (*cb)(int, int, int),
 	void *user_data);
 
+int ksceUsbdInterruptTransfer(int endpoint_id,
+	unsigned char *buffer,
+	unsigned int length,
+	int (*cb)(int, int, int),
+	void *user_data);
+
 #ifdef __cplusplus
 }
 #endif
