@@ -113,12 +113,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4eca66f80aa7f143b94aa89c6c086922"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga4eca66f80aa7f143b94aa89c6c086922">ksceCtrlReadBufferNegative</a> (int port, <a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *pad_data, int count)</td></tr>
 <tr class="memdesc:ga4eca66f80aa7f143b94aa89c6c086922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the controller state information (blocking, negative logic).  <a href="#ga4eca66f80aa7f143b94aa89c6c086922">More...</a><br /></td></tr>
 <tr class="separator:ga4eca66f80aa7f143b94aa89c6c086922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1310fe9e90cfe120f4a31fcefb650156"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga1310fe9e90cfe120f4a31fcefb650156">ksceCtrlPeekBufferPositiveExt</a> (int port, <a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *pad_data, int count)</td></tr>
-<tr class="memdesc:ga1310fe9e90cfe120f4a31fcefb650156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the controller extended state information (polling, positive logic).  <a href="#ga1310fe9e90cfe120f4a31fcefb650156">More...</a><br /></td></tr>
-<tr class="separator:ga1310fe9e90cfe120f4a31fcefb650156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ab7a3d3d8c0a33f162c990a7ac95628"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga0ab7a3d3d8c0a33f162c990a7ac95628">ksceCtrlPeekBufferNegativeExt</a> (int port, <a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *pad_data, int count)</td></tr>
-<tr class="memdesc:ga0ab7a3d3d8c0a33f162c990a7ac95628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the controller extended state information (polling, negative logic).  <a href="#ga0ab7a3d3d8c0a33f162c990a7ac95628">More...</a><br /></td></tr>
-<tr class="separator:ga0ab7a3d3d8c0a33f162c990a7ac95628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05db34aca37ced3e16ea9a0ecf6275dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga05db34aca37ced3e16ea9a0ecf6275dd">ksceCtrlSetRapidFire</a> (int port, int idx, const <a class="el" href="group__SceCtrlUser.html#structSceCtrlRapidFireRule">SceCtrlRapidFireRule</a> *pRule)</td></tr>
 <tr class="memdesc:ga05db34aca37ced3e16ea9a0ecf6275dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rules for button rapid fire.  <a href="#ga05db34aca37ced3e16ea9a0ecf6275dd">More...</a><br /></td></tr>
 <tr class="separator:ga05db34aca37ced3e16ea9a0ecf6275dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -665,52 +659,6 @@ Unknown. </td></tr>
 
 </div>
 </div>
-<a id="ga0ab7a3d3d8c0a33f162c990a7ac95628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ab7a3d3d8c0a33f162c990a7ac95628">&sect;&nbsp;</a></span>ksceCtrlPeekBufferNegativeExt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceCtrlPeekBufferNegativeExt </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *&#160;</td>
-          <td class="paramname"><em>pad_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the controller extended state information (polling, negative logic). </p>
-<p>This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- use 0. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pad_data</td><td>- see <a class="el" href="group__SceCtrlUser.html#structSceCtrlData" title="Returned controller data. ">SceCtrlData</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>- Buffers count.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Buffers count, between 1 and 'count'. &lt;0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga9bb2e72e0c38faa90c52e2a5f8dd261b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9bb2e72e0c38faa90c52e2a5f8dd261b">&sect;&nbsp;</a></span>ksceCtrlPeekBufferPositive()</h2>
 
@@ -744,52 +692,6 @@ Unknown. </td></tr>
 </div><div class="memdoc">
 
 <p>Get the controller state information (polling, positive logic). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- use 0. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pad_data</td><td>- see <a class="el" href="group__SceCtrlUser.html#structSceCtrlData" title="Returned controller data. ">SceCtrlData</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>- Buffers count.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Buffers count, between 1 and 'count'. &lt;0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga1310fe9e90cfe120f4a31fcefb650156"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1310fe9e90cfe120f4a31fcefb650156">&sect;&nbsp;</a></span>ksceCtrlPeekBufferPositiveExt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceCtrlPeekBufferPositiveExt </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *&#160;</td>
-          <td class="paramname"><em>pad_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the controller extended state information (polling, positive logic). </p>
-<p>This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- use 0. </td></tr>
@@ -1156,7 +1058,7 @@ Unknown. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 9 2017 18:26:46 for vitasdk by
+    <li class="footer">Generated on Sun Apr 9 2017 19:33:37 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

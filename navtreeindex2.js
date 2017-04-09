@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"group__SceFcntlUser.html#ga2e37fd75f4a07b76bb0a9e4a4deda70e":[1,4,2,0,3],
-"group__SceFcntlUser.html#ga39a8423cdcb9a592df18ece834962461":[1,4,2,0,9],
 "group__SceFcntlUser.html#ga5bb7c1bb1c61591dabb6f8462be88fa4":[1,4,2,0,8],
 "group__SceFcntlUser.html#ga5dc250bdac642a1c7365ea18a21d3635":[1,4,2,0,13],
 "group__SceFcntlUser.html#ga5ec46984e483737b1ad50edc61f6ad4d":[1,4,2,0,4],
@@ -222,8 +220,8 @@ var NAVTREEINDEX2 =
 "group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a55cba5df6d5a94e9b0188c47696cb650":[53],
 "group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a61d6ff07f428ecf1f42ecb4644002d39":[1,5,6,0,3],
 "group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a61d6ff07f428ecf1f42ecb4644002d39":[52],
-"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55ae71baa308d1cf3469b372f41a74de0e9":[1,5,6,0,0],
 "group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55ae71baa308d1cf3469b372f41a74de0e9":[50],
+"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55ae71baa308d1cf3469b372f41a74de0e9":[1,5,6,0,0],
 "group__ScePromoterUtil.html":[1,11,2],
 "group__ScePromoterUtilUser.html":[1,11,2,0],
 "group__ScePromoterUtilUser.html#ga0afd202451e3ba424136da630b5f3617":[1,11,2,0,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "group__SceSblAuthMgr.html":[1,7,5],
 "group__SceSblAuthMgrKernel.html":[1,7,5,0],
 "group__SceScreenShot.html":[1,9,4],
-"group__SceScreenShotUser.html":[1,9,4,0]
+"group__SceScreenShotUser.html":[1,9,4,0],
+"group__SceScreenShotUser.html#ga3220812f42ada801802370b870856929":[1,9,4,0,2],
+"group__SceScreenShotUser.html#ga32f2e4a76310f5e753c85b5414f10d0c":[1,9,4,0,1]
 };
