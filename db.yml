@@ -5644,11 +5644,15 @@ modules:
         nid: 0xF0EF5743
         functions:
           ksceGpioQueryIntr: 0x010DC295
-          ksceGpioSetPortMode: 0x372022A4
-          ksceGpioSetIntrMode: 0xBBEA1DDC
-          ksceGpioPortSet: 0xD454A584
-          ksceGpioPortClear: 0xF6310435
+          ksceGpioPortRead: 0x129DF5AC
           ksceGpioAcquireIntr: 0x35AAD77A
+          ksceGpioSetPortMode: 0x372022A4
+          ksceGpioPortReset: 0xA1B5A462
+          ksceGpioSetIntrMode: 0xBBEA1DDC
+          ksceGpioGetPortMode: 0xC4CB78E2
+          ksceGpioPortSet: 0xD454A584
+          ksceGpioGetIntrMode: 0xE97A3B31
+          ksceGpioPortClear: 0xF6310435
   SceSblAuthMgr:
     nid: 0xEA5DFC93
     libraries:
