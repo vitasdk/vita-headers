@@ -172,6 +172,32 @@ int ksceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
 int ksceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
 
 /**
+ * Get the controller extended state information (polling, positive logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ *
+ * @param[in] port - use 0.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int ksceCtrlPeekBufferPositiveExt(int port, SceCtrlData *pad_data, int count);
+		
+/**
+ * Get the controller extended state information (polling, negative logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ *
+ * @param[in] port - use 0.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int ksceCtrlPeekBufferNegativeExt(int port, SceCtrlData *pad_data, int count);
+	
+/**
  * Set rules for button rapid fire
  *
  * @param[in] port - use 0.
