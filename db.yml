@@ -1779,6 +1779,8 @@ modules:
           ksceKernelCpuDcacheWritebackRange: 0x9CB9F0CE
           ksceKernelCpuDcacheInvalidateRange: 0x8B4C26DF
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
+          ksceKernelCpuResumeIntr: 0x7BB9D5DF
+          ksceKernelCpuSuspendIntr: 0xD32ACE9E
       SceSysrootForKernel:
         kernel: true
         nid: 0x3691DA45
