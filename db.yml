@@ -469,6 +469,15 @@ modules:
           sceAudioencTermLibrary: 0xAB32D022
         kernel: false
         nid: 0xA938B1A6
+  SceAVConfig:
+    nid: 0x222DDEB1
+    libraries:
+      SceAVConfig:
+        functions:
+          sceAVConfigGetDisplayMaxBrightness: 0x6ABA67F4
+          sceAVConfigSetDisplayBrightness: 0xE0C1B743
+        kernel: false
+        nid: 0x79E0F03F
   SceAvPlayer:
     nid: 0x10
     libraries:
