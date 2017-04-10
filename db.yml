@@ -1779,6 +1779,8 @@ modules:
           ksceKernelCpuDcacheWritebackRange: 0x9CB9F0CE
           ksceKernelCpuDcacheInvalidateRange: 0x8B4C26DF
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
+          ksceKernelCpuResumeIntr: 0x7BB9D5DF
+          ksceKernelCpuSuspendIntr: 0xD32ACE9E
       SceSysrootForKernel:
         kernel: true
         nid: 0x3691DA45
@@ -5608,6 +5610,7 @@ modules:
         kernel: true
         nid: 0x60A35F64
         functions:
+          ksceSysconCtrlLED: 0x04EC7579
           ksceSysconBeginConfigstorageTransaction: 0xA4968B8C
           ksceSysconClearTemperatureLog: 0x3843D657
           ksceSysconCmdSync: 0x6E517D22
@@ -5644,11 +5647,15 @@ modules:
         nid: 0xF0EF5743
         functions:
           ksceGpioQueryIntr: 0x010DC295
-          ksceGpioSetPortMode: 0x372022A4
-          ksceGpioSetIntrMode: 0xBBEA1DDC
-          ksceGpioPortSet: 0xD454A584
-          ksceGpioPortClear: 0xF6310435
+          ksceGpioPortRead: 0x129DF5AC
           ksceGpioAcquireIntr: 0x35AAD77A
+          ksceGpioSetPortMode: 0x372022A4
+          ksceGpioPortReset: 0xA1B5A462
+          ksceGpioSetIntrMode: 0xBBEA1DDC
+          ksceGpioGetPortMode: 0xC4CB78E2
+          ksceGpioPortSet: 0xD454A584
+          ksceGpioGetIntrMode: 0xE97A3B31
+          ksceGpioPortClear: 0xF6310435
   SceSblAuthMgr:
     nid: 0xEA5DFC93
     libraries:

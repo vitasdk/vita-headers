@@ -206,6 +206,26 @@ int ksceKernelCpuIcacheAndL2WritebackInvalidateRange(void *ptr, size_t len);
  */
 int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, size_t len);
 
+/**
+ * @brief      Suspend all interrupts (disables IRQs)
+ *
+ * @param[in]  addr   Mutex associated to the suspend-resume pair
+ *
+ * @return     The current state of the interrupt controller, to be used with ksceKernelCpuResumeIntr.
+ */
+int ksceKernelCpuSuspendIntr(int *addr);
+
+/**
+ * @brief      Resume all interrupts (enables IRQs)
+ *
+ * @param[in]  addr   Mutex associated to the suspend-resume pair
+ * @param[in]  prev_state   State obtained from ksceKernelCpuSuspendIntr
+ *
+ * @return     The previous state of the interrupt controller.
+ */
+int ksceKernelCpuResumeIntr(int *addr, int prev_state);
+
+
 #ifdef __cplusplus
 }
 #endif
