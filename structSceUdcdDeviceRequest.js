@@ -1,7 +1,7 @@
 var structSceUdcdDeviceRequest =
 [
     [ "data", "group__SceUdcdKernel.html#gac54ebd1b5b864a72aeece506d22b3f62", null ],
-    [ "endpoint", "group__SceUdcdKernel.html#ga5e30ca4b1a980b726f5b61e40472a46d", null ],
+    [ "endpoint", "group__SceUdcdKernel.html#ga5edb1ba86159a0555016ad5f7c3d1a4b", null ],
     [ "isControlRequest", "group__SceUdcdKernel.html#ga028b21ac213b591d617bf1eae866d8f0", null ],
     [ "next", "group__SceUdcdKernel.html#ga895468ea4a596c8009448587194e3c59", null ],
     [ "onComplete", "group__SceUdcdKernel.html#ga1c2e309e930ae7b8dc881316082fe5bb", null ],

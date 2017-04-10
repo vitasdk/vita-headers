@@ -216,6 +216,7 @@ var searchData=
   ['sceudcdconfiguration',['SceUdcdConfiguration',['../group__SceUdcdKernel.html#structSceUdcdConfiguration',1,'']]],
   ['sceudcddevicedescriptor',['SceUdcdDeviceDescriptor',['../group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor',1,'']]],
   ['sceudcddeviceinfo',['SceUdcdDeviceInfo',['../group__SceUdcdUser.html#structSceUdcdDeviceInfo',1,'']]],
+  ['sceudcddevicequalifierdescriptor',['SceUdcdDeviceQualifierDescriptor',['../group__SceUdcdKernel.html#structSceUdcdDeviceQualifierDescriptor',1,'']]],
   ['sceudcddevicerequest',['SceUdcdDeviceRequest',['../structSceUdcdDeviceRequest.html',1,'']]],
   ['sceudcddevicestate',['SceUdcdDeviceState',['../group__SceUdcdUser.html#structSceUdcdDeviceState',1,'']]],
   ['sceudcddriver',['SceUdcdDriver',['../structSceUdcdDriver.html',1,'']]],
