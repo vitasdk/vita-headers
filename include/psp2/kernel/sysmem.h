@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceSysmem}
- * \usage{psp2/kernel/sysmem.h,-lSceSysmem_stub}
+ * \usage{psp2/kernel/sysmem.h,SceSysmem_stub}
  */
 
 

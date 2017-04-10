@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceUsbd}
- * \usage{psp2/usbd.h,-lSceUsbd_stub}
+ * \usage{psp2/usbd.h,SceUsbd_stub}
  */
 
 

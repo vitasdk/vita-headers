@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceGxt}
- * \usage{psp2/gxt.h,-lSceGxm_stub}
+ * \usage{psp2/gxt.h,SceGxm_stub}
  */
 
 

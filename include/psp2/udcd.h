@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceUdcd}
- * \usage{psp2/udcd.h,-lSceUdcd_stub}
+ * \usage{psp2/udcd.h,SceUdcd_stub}
  */
 
 

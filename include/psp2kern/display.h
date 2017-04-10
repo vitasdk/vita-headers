@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceDisplay}
- * \usage{psp2kern/display.h,-lSceDisplayForDriver_stub}
+ * \usage{psp2kern/display.h,SceDisplayForDriver_stub}
  */
 
 

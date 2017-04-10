@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceSysmodule}
- * \usage{psp2/sysmodule.h,-lSceSysmodule_stub}
+ * \usage{psp2/sysmodule.h,SceSysmodule_stub}
  */
 
 

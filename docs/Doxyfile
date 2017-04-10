@@ -240,7 +240,7 @@ TAB_SIZE               = 4
 
 ALIASES                = projectstart="---------------------\n### Using this library in your project ###\n"
 ALIASES               += projectinc{1}="Include the header file in your project:\n\code #include <\1> \endcode\n"
-ALIASES               += projectlib{1}="Link the library in your Makefile:\n\code \1 \endcode \n"
+ALIASES               += projectlib{1}="Link the library to the executable:\n\code \1 \endcode \n"
 ALIASES               += projectend="---------------------\n"
 ALIASES               += usage{1}="\projectstart \projectinc{\1} \projectend"
 ALIASES               += usage{2}="\projectstart \projectinc{\1} \projectlib{\2} \projectend"

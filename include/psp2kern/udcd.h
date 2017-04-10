@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceUdcd}
- * \usage{psp2kern/udcd.h,-lSceUdcdForDriver_stub}
+ * \usage{psp2kern/udcd.h,SceUdcdForDriver_stub}
  */
 
 

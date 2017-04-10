@@ -1,6 +1,6 @@
 /**
  * \usergroup{ScePss}
- * \usage{psp2/pss.h,-lSceLibMonoBridge_stub}
+ * \usage{psp2/pss.h,SceLibMonoBridge_stub}
  */
 
 

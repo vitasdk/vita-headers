@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceShellSvc}
- * \usage{psp2/shellutil.h,-lSceShellSvc_stub}
+ * \usage{psp2/shellutil.h,SceShellSvc_stub}
  */
 
 

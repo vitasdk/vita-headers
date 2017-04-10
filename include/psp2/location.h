@@ -1,6 +1,6 @@
 ﻿/**
  * \usergroup{SceLocation}
- * \usage{psp2/location.h,-lSceLibLocation_stub}
+ * \usage{psp2/location.h,SceLibLocation_stub}
  */
 
 

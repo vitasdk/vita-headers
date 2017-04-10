@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceNpDrmPackage}
- * \usage{psp2/npdrmpackage.h,-lSceNpDrmPackage_stub}
+ * \usage{psp2/npdrmpackage.h,SceNpDrmPackage_stub}
  */
 
 

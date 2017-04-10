@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceRtc}
- * \usage{psp2/rtc.h,-lSceRtc_stub}
+ * \usage{psp2/rtc.h,SceRtc_stub}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{ScePower}
- * \usage{psp2/power.h,-lScePower_stub}
+ * \usage{psp2/power.h,ScePower_stub}
  */
 
 

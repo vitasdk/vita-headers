@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceJpegEnc}
- * \usage{psp2/jpegenc.h,-lSceJpegEnc_stub}
+ * \usage{psp2/jpegenc.h,SceJpegEnc_stub}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceAppMgr}
- * \usage{psp2/appmgr.h,-lSceAppMgr_Stub}
+ * \usage{psp2/appmgr.h,SceAppMgr_Stub}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceMotion}
- * \usage{psp2/motion.h,-lSceMotion_stub}
+ * \usage{psp2/motion.h,SceMotion_stub}
  */
 
 

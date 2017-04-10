@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceTouch}
- * \usage{psp2/touch.h,-lSceTouch_stub}
+ * \usage{psp2/touch.h,SceTouch_stub}
  */
 
 

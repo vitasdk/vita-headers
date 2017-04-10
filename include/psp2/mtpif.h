@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceMtpIfDriver}
- * \usage{psp2/mtpif.h,-lSceMtpIfDriver_stub}
+ * \usage{psp2/mtpif.h,SceMtpIfDriver_stub}
  */
 
 

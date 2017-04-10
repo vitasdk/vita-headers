@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceCamera}
- * \usage{psp2/camera.h,-lSceCamera_stub}
+ * \usage{psp2/camera.h,SceCamera_stub}
  */
 
 

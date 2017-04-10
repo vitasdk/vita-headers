@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceFiber}
- * \usage{psp2/fiber.h,-lSceFiber_stub}
+ * \usage{psp2/fiber.h,SceFiber_stub}
  */
 
 

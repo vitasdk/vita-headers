@@ -1,6 +1,6 @@
 /**
  * \usergroup{ScePromoterUtil}
- * \usage{psp2/promoterutil.h,-lScePromoterUtil_stub}
+ * \usage{psp2/promoterutil.h,ScePromoterUtil_stub}
  */
 
 

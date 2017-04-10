@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceDisplay}
- * \usage{psp2/display.h,-lSceDisplay_stub}
+ * \usage{psp2/display.h,SceDisplay_stub}
  */
 
 

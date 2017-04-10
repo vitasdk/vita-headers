@@ -1,6 +1,6 @@
 /**
  * \usergroup{ScePvf}
- * \usage{psp2/pvf.h,-lScePvf_stub}
+ * \usage{psp2/pvf.h,ScePvf_stub}
  */
 
 

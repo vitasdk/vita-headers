@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceCtrl}
- * \usage{psp2kern/ctrl.h,-lSceCtrlForDriver_stub}
+ * \usage{psp2kern/ctrl.h,SceCtrlForDriver_stub}
  */
 
 
