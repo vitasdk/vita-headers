@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceDevCtl}
- * \usage{psp2/io/devctl.h,?}
+ * \usage{psp2/io/devctl.h,-lSceLibKernel_stub}
  */
 
 

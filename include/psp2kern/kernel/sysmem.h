@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceSysmem}
- * \usage{psp2kern/kernel/sysmem.h,?}
+ * \usage{psp2kern/kernel/sysmem.h,-lSceSysmemForDriver_stub}
  */
 
 

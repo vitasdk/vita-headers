@@ -10,12 +10,12 @@
  
 #define SceJpegEncoderContext void*
  
-typedef enum sceJpegEncoderPixelFormat{
+typedef enum SceJpegEncoderPixelFormat{
 	PIXELFORMAT_ARGB8888 = 0,
 	PIXELFORMAT_YCBCR420 = 8,
 	PIXELFORMAT_YCBCR422 = 9,
 	PIXELFORMAT_CSC_ARGB_YCBCR = 16 // ARGB to YCbCr color conversion flag
-}sceJpegEncoderPixelFormat;
+}SceJpegEncoderPixelFormat;
 
 /**
  * Initialize a jpeg encoder
@@ -23,13 +23,13 @@ typedef enum sceJpegEncoderPixelFormat{
  * @param[in] context - A pointer to a big enough allocated memory block
  * @param[in] inWidth - Input width in pixels
  * @param[in] inHeight - Input height in pixels
- * @param[in] pixelformat - A valid sceJpegEncoderPixelFormat set of values
+ * @param[in] pixelformat - A valid SceJpegEncoderPixelFormat set of values
  * @param[in] outBuffer - A physically continuous memory block 256 bytes aligned
  * @param[in] outSize - Output size in bytes
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderInit(SceJpegEncoderContext context, int inWidth,int inHeight, sceJpegEncoderPixelFormat pixelformat, void* outBuffer, int outSize);
+SceUID sceJpegEncoderInit(SceJpegEncoderContext context, int inWidth,int inHeight, SceJpegEncoderPixelFormat pixelformat, void* outBuffer, int outSize);
 
 /**
  * Terminate a jpeg encoder
@@ -79,11 +79,11 @@ SceUID sceJpegEncoderSetOutputAddr(SceJpegEncoderContext context,void* outBuffer
  * @param[in] outBuffer - A physical continuous memory block 256 bytes aligned
  * @param[in] inBuffer - A pointer to a valid ARGB buffer
  * @param[in] inPitch - Input pitch value in pixels
- * @param[in] inPixelFormat - A valid sceJpegEncoderPixelFormat set of values
+ * @param[in] inPixelFormat - A valid SceJpegEncoderPixelFormat set of values
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderCsc(SceJpegEncoderContext context,void* outBuffer,void* inBuffer,int inPitch,sceJpegEncoderPixelFormat inPixelFormat);
+SceUID sceJpegEncoderCsc(SceJpegEncoderContext context,void* outBuffer,void* inBuffer,int inPitch,SceJpegEncoderPixelFormat inPixelFormat);
 
 /**
  * Return required free size to allocate a jpeg encoder

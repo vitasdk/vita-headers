@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceThreadMgr}
- * \usage{psp2kern/kernel/threadmgr.h,?}
+ * \usage{psp2kern/kernel/threadmgr.h,-lSceThreadmgrForDriver_stub}
  */
 
 

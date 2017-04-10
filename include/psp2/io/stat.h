@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceStat}
- * \usage{psp2/io/stat.h,?}
+ * \usage{psp2/io/stat.h,-lSceLibKernel_stub}
  */
 
 
