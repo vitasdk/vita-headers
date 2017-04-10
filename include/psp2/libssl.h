@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceLibSsl}
- * \usage{psp2/libssl.h,?}
+ * \usage{psp2/libssl.h,-lSceSsl_stub}
  */
 
 

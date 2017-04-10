@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceSuspend}
- * \usage{psp2kern/kernel/suspend.h,?}
+ * \usage{psp2kern/kernel/suspend.h,-lSceKernelSuspendForDriver_stub}
  */
 
 

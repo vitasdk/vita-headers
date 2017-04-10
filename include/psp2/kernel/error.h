@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceKernelError}
- * \usage{psp2/kernel/error.h,?}
+ * \usage{psp2/kernel/error.h}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceModulemgr}
- * \usage{psp2/kernel/modulemgr.h,-lSceKernel_stub}
+ * \usage{psp2/kernel/modulemgr.h}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceCLib}
- * \usage{psp2/kernel/clib.h,-lSceKernel_stub}
+ * \usage{psp2/kernel/clib.h}
  */
 
 

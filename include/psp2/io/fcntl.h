@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceFcntl}
- * \usage{psp2/io/fcntl.h,?}
+ * \usage{psp2/io/fcntl.h}
  */
 
 

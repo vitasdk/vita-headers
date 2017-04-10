@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceRng}
- * \usage{psp2/kernel/rng.h,-lSceKernel_stub}
+ * \usage{psp2/kernel/rng.h}
  */
 
 

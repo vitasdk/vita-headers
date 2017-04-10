@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceThreadMgr}
- * \usage{psp2/kernel/threadmgr.h,-lSceKernel_stub}
+ * \usage{psp2/kernel/threadmgr.h}
  */
 
 
