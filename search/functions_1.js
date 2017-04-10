@@ -64,6 +64,8 @@ var searchData=
   ['kscekernelcpuicacheandl2writebackinvalidaterange',['ksceKernelCpuIcacheAndL2WritebackInvalidateRange',['../group__SceCPUKernel.html#gad200618d43d192875a226623cfdc0137',1,'cpu.h']]],
   ['kscekernelcpuicacheinvalidateall',['ksceKernelCpuIcacheInvalidateAll',['../group__SceCPUKernel.html#ga82fbbeae621b85af21dd6986d16898e0',1,'cpu.h']]],
   ['kscekernelcpuicacheinvalidaterange',['ksceKernelCpuIcacheInvalidateRange',['../group__SceCPUKernel.html#ga2611f3a804fef0fe90955871f0505f93',1,'cpu.h']]],
+  ['kscekernelcpuresumeintr',['ksceKernelCpuResumeIntr',['../group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8',1,'cpu.h']]],
+  ['kscekernelcpususpendintr',['ksceKernelCpuSuspendIntr',['../group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766',1,'cpu.h']]],
   ['kscekernelcpuunrestrictedmemcpy',['ksceKernelCpuUnrestrictedMemcpy',['../group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5',1,'cpu.h']]],
   ['kscekernelcreatecallback',['ksceKernelCreateCallback',['../group__SceThreadMgrKernel.html#ga1a18a5f6673003272934c42bd3353aae',1,'threadmgr.h']]],
   ['kscekernelcreateeventflag',['ksceKernelCreateEventFlag',['../group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9',1,'threadmgr.h']]],

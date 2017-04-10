@@ -141,6 +141,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6034673708645325ee6c952ddd6cbcb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5">ksceKernelCpuUnrestrictedMemcpy</a> (void *dst, const void *src, size_t len)</td></tr>
 <tr class="memdesc:ga6034673708645325ee6c952ddd6cbcb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MMU permission bypassing memcpy.  <a href="#ga6034673708645325ee6c952ddd6cbcb5">More...</a><br /></td></tr>
 <tr class="separator:ga6034673708645325ee6c952ddd6cbcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74cc811b572caa5ef2a7616707f2f766"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766">ksceKernelCpuSuspendIntr</a> (int *addr)</td></tr>
+<tr class="memdesc:ga74cc811b572caa5ef2a7616707f2f766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend all interrupts (disables IRQs)  <a href="#ga74cc811b572caa5ef2a7616707f2f766">More...</a><br /></td></tr>
+<tr class="separator:ga74cc811b572caa5ef2a7616707f2f766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9f7f38286e8d0b08837729bab4face8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8">ksceKernelCpuResumeIntr</a> (int *addr, int prev_state)</td></tr>
+<tr class="memdesc:gad9f7f38286e8d0b08837729bab4face8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume all interrupts (enables IRQs)  <a href="#gad9f7f38286e8d0b08837729bab4face8">More...</a><br /></td></tr>
+<tr class="separator:gad9f7f38286e8d0b08837729bab4face8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -641,6 +647,71 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gad9f7f38286e8d0b08837729bab4face8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9f7f38286e8d0b08837729bab4face8">&sect;&nbsp;</a></span>ksceKernelCpuResumeIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelCpuResumeIntr </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prev_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resume all interrupts (enables IRQs) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the suspend-resume pair </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prev_state</td><td>State obtained from ksceKernelCpuSuspendIntr</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The previous state of the interrupt controller. </dd></dl>
+
+</div>
+</div>
+<a id="ga74cc811b572caa5ef2a7616707f2f766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74cc811b572caa5ef2a7616707f2f766">&sect;&nbsp;</a></span>ksceKernelCpuSuspendIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelCpuSuspendIntr </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Suspend all interrupts (disables IRQs) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the suspend-resume pair</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current state of the interrupt controller, to be used with ksceKernelCpuResumeIntr. </dd></dl>
+
+</div>
+</div>
 <a id="ga6034673708645325ee6c952ddd6cbcb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6034673708645325ee6c952ddd6cbcb5">&sect;&nbsp;</a></span>ksceKernelCpuUnrestrictedMemcpy()</h2>
 
@@ -692,7 +763,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 9 2017 19:33:37 for vitasdk by
+    <li class="footer">Generated on Mon Apr 10 2017 09:51:50 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
