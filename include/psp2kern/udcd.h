@@ -197,16 +197,16 @@ extern "C" {
 /*
  *  USB string descriptor
  */
-struct SceUdcdStringDescriptor {
+typedef struct SceUdcdStringDescriptor {
 	unsigned char bLength;
 	unsigned char bDescriptorType;
 	short         bString[31];
-};  /* Size 64 */
+} SceUdcdStringDescriptor;  /* Size 64 */
 
 /*
  *  USB device descriptor
  */
-struct SceUdcdDeviceDescriptor {
+typedef struct SceUdcdDeviceDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned short bcdUSB;
@@ -221,12 +221,12 @@ struct SceUdcdDeviceDescriptor {
 	unsigned char  iProduct;
 	unsigned char  iSerialNumber;
 	unsigned char  bNumConfigurations;
-} __attribute__ ((aligned(4))); /* size 20 */
+} __attribute__ ((aligned(4))) SceUdcdDeviceDescriptor; /* size 20 */
 
 /*
  *  USB device qualifier descriptor
  */
-struct UsbDeviceQualifierDescriptor {
+typedef struct SceUdcdDeviceQualifierDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned short bcdUSB;
@@ -236,12 +236,12 @@ struct UsbDeviceQualifierDescriptor {
 	unsigned char  bMaxPacketSize0;
 	unsigned char  bNumConfigurations;
 	unsigned char  bReserved;
-} __attribute__ ((aligned(4))); /* size 12 */
+} __attribute__ ((aligned(4))) SceUdcdDeviceQualifierDescriptor; /* size 12 */
 
 /*
  *  USB configuration descriptor
  */
-struct SceUdcdConfigDescriptor {
+typedef struct SceUdcdConfigDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned short wTotalLength;
@@ -255,12 +255,12 @@ struct SceUdcdConfigDescriptor {
 
 	unsigned char *extra;   /* Extra descriptors */
 	int extraLength;
-}; /* size 24 */
+} SceUdcdConfigDescriptor; /* size 24 */
 
 /*
  *  USB driver interfaces structure
  */
-struct SceUdcdInterfaceSettings {
+typedef struct SceUdcdInterfaceSettings {
 	/* Pointers to the individual interface descriptors */
 	struct SceUdcdInterfaceDescriptor *descriptors;
 
@@ -268,12 +268,12 @@ struct SceUdcdInterfaceSettings {
 
 	/* Number of interface descriptors */
 	unsigned int numDescriptors;
-};
+} SceUdcdInterfaceSettings;
 
 /*
  *  USB Interface descriptor
  */
-struct SceUdcdInterfaceDescriptor {
+typedef struct SceUdcdInterfaceDescriptor {
 	unsigned char bLength;
 	unsigned char bDescriptorType;
 	unsigned char bInterfaceNumber;
@@ -288,12 +288,12 @@ struct SceUdcdInterfaceDescriptor {
 
 	unsigned char *extra;   /* Extra descriptors */
 	int extraLength;
-}; /* size 24 */
+} SceUdcdInterfaceDescriptor; /* size 24 */
 
 /*
  *  USB endpoint descriptor
  */
-struct SceUdcdEndpointDescriptor {
+typedef struct SceUdcdEndpointDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned char  bEndpointAddress;
@@ -303,24 +303,24 @@ struct SceUdcdEndpointDescriptor {
 
 	unsigned char *extra;   /* Extra descriptors */
 	int extraLength;
-}; /* size 16 */
+} SceUdcdEndpointDescriptor; /* size 16 */
 
 /*
  *  USB driver interface
  */
-struct SceUdcdInterface {
+typedef struct SceUdcdInterface {
 	/* Expectant interface number (interface number or -1) */
 	int expectNumber;
 	/* End interface  */
 	int interfaceNumber;
 	/* Number of interfaces */
 	int numInterfaces;
-};
+} SceUdcdInterface;
 
 /*
  *  USB driver endpoint
  */
-struct SceUdcdEndpoint {
+typedef struct SceUdcdEndpoint {
 	/* 0x80 = in, 0x00 = out */
 	int direction;
 	/* Driver Endpoint number (must be filled in sequentially) */
@@ -329,61 +329,61 @@ struct SceUdcdEndpoint {
 	int endpointNumber;
 	/* Number of transmitted bytes */
 	int transmittedBytes;
-};
+} SceUdcdEndpoint;
 
 /*
  *  USB driver configuration
  */
-struct SceUdcdConfiguration {
+typedef struct SceUdcdConfiguration {
 	/* Pointer to the configuration descriptors */
-	struct SceUdcdConfigDescriptor *configDescriptors;
+	SceUdcdConfigDescriptor *configDescriptors;
 	/* USB driver interface settings */
-	struct SceUdcdInterfaceSettings *settings;
+	SceUdcdInterfaceSettings *settings;
 	/* Pointer to the first interface descriptor */
-	struct SceUdcdInterfaceDescriptor *interfaceDescriptors;
+	SceUdcdInterfaceDescriptor *interfaceDescriptors;
 	/* Pointer to the first endpoint descriptor */
-	struct SceUdcdEndpointDescriptor *endpointDescriptors;
-};
+	SceUdcdEndpointDescriptor *endpointDescriptors;
+} SceUdcdConfiguration;
 
 /*
  *  USB EP0 Device Request
  */
-struct SceUdcdEP0DeviceRequest {
+typedef struct SceUdcdEP0DeviceRequest {
 	unsigned char  bmRequestType;
 	unsigned char  bRequest;
 	unsigned short wValue;
 	unsigned short wIndex;
 	unsigned short wLength;
-};
+} SceUdcdEP0DeviceRequest;
 
 /*
  *  USB driver structure
  */
-struct SceUdcdDriver {
+typedef struct SceUdcdDriver {
 	/* Name of the USB driver */
 	const char *driverName;
 	/* Number of endpoints in this driver (including default control) */
 	int numEndpoints;
 	/* List of endpoint structures (used when calling other functions) */
-	struct SceUdcdEndpoint *endpoints;
+	SceUdcdEndpoint *endpoints;
 	/* Interface list */
-	struct SceUdcdInterface *interface;
+	SceUdcdInterface *interface;
 	/* Pointer to hi-speed device descriptor */
-	struct SceUdcdDeviceDescriptor *descriptor_hi;
+	SceUdcdDeviceDescriptor *descriptor_hi;
 	/* Pointer to hi-speed device configuration */
-	struct SceUdcdConfiguration *configuration_hi;
+	SceUdcdConfiguration *configuration_hi;
 	/* Pointer to full-speed device descriptor */
-	struct SceUdcdDeviceDescriptor *descriptor;
+	SceUdcdDeviceDescriptor *descriptor;
 	/* Pointer to full-speed device configuration */
-	struct SceUdcdConfiguration *configuration;
+	SceUdcdConfiguration *configuration;
 	/* Unk0 */
-	struct SceUdcdStringDescriptor *stringDescriptorsUnk0;
+	SceUdcdStringDescriptor *stringDescriptorsUnk0;
 	/* Default String descriptor */
-	struct SceUdcdStringDescriptor *stringDescriptorsUnk1;
+	SceUdcdStringDescriptor *stringDescriptorsUnk1;
 	/* String descriptors (unknown) */
-	struct SceUdcdStringDescriptor *stringDescriptorsUnk2;
+	SceUdcdStringDescriptor *stringDescriptorsUnk2;
 	/* Received a control request  */
-	int (*processRequest) (int recipient, int arg /* endpoint number or interface number */, struct SceUdcdEP0DeviceRequest *req);
+	int (*processRequest) (int recipient, int arg /* endpoint number or interface number */, SceUdcdEP0DeviceRequest *req);
 	/* Change alternate setting */
 	int (*changeSetting) (int interfaceNumber, int alternateSetting);
 	/* Configuration set (attach) function */
@@ -391,7 +391,7 @@ struct SceUdcdDriver {
 	/* Configuration unset (detach) function */
 	void (*detach) (void);
 	/* Configure the device */
-	void (*configure) (int usb_version, int desc_count, struct SceUdcdInterfaceSettings *settings);
+	void (*configure) (int usb_version, int desc_count, SceUdcdInterfaceSettings *settings);
 	/* Function called when the driver is started */
 	int (*start) (int size, void *args);
 	/* Function called when the driver is stopped */
@@ -401,14 +401,14 @@ struct SceUdcdDriver {
 	unsigned int unk2;
 	/* Link to next USB driver in the chain, set to NULL */
 	struct SceUdcdDriver *link;
-};
+} SceUdcdDriver;
 
 /*
  *  USB device request
  */
-struct SceUdcdDeviceRequest {
+typedef struct SceUdcdDeviceRequest {
 	/* Pointer to the endpoint to queue request on */
-	struct SceUdcdEndpoint *endpoint;
+	SceUdcdEndpoint *endpoint;
 	/* Pointer to the data buffer to use in the request */
 	void *data;
 	/* Unknown */
@@ -429,17 +429,23 @@ struct SceUdcdDeviceRequest {
 	void *unused;
 	/* Physical address */
 	void *physicalAddress;
-};
+} SceUdcdDeviceRequest;
 
 /*
  *  USB driver name
  */
-struct SceUdcdDriverName {
+typedef struct SceUdcdDriverName {
 	int  size;
 	char name[32];
 	int  flags;
-} __attribute__ ((aligned(16))) /* size 48 */;
+} __attribute__ ((aligned(16))) SceUdcdDriverName; /* size 48 */
 
+/*
+ *  USB device information
+ */
+typedef struct SceUdcdDeviceInfo {
+	unsigned char info[64];
+} SceUdcdDeviceInfo;
 
 /**
   * Start a USB driver.
@@ -487,6 +493,15 @@ int ksceUdcdDeactivate(void);
 int ksceUdcdGetDeviceState(void);
 
 /**
+ * Get device information
+ *
+ * @param[out] devInfo - Device information
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceUdcdGetDeviceInfo(SceUdcdDeviceInfo *devInfo);
+
+/**
   * Get state of a specific USB driver
   *
   * @param driverName - name of USB driver to get status from
@@ -502,7 +517,7 @@ int ksceUdcdGetDrvState(const char *driverName);
  *  @param size - number of entries in the output list
  *  @return the number of drivers in the output or < 0 in case of error
  */
-int ksceUdcdGetDrvList(unsigned int flags, struct SceUdcdDriverName *list, int size);
+int ksceUdcdGetDrvList(unsigned int flags, SceUdcdDriverName *list, int size);
 
 /**
  * Wait for USB state
@@ -519,7 +534,6 @@ int ksceUdcdWaitState(unsigned int state, unsigned int waitMode, SceUInt *timeou
  */
 int ksceUdcdWaitCancel(void);
 
-
 /**
  * Register a USB driver.
  *
@@ -527,7 +541,7 @@ int ksceUdcdWaitCancel(void);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdRegister(struct SceUdcdDriver *drv);
+int ksceUdcdRegister(SceUdcdDriver *drv);
 
 /**
  * Unregister a USB driver
@@ -536,7 +550,7 @@ int ksceUdcdRegister(struct SceUdcdDriver *drv);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdUnregister(struct SceUdcdDriver *drv);
+int ksceUdcdUnregister(SceUdcdDriver *drv);
 
 /**
  * Clear the FIFO on an endpoint
@@ -545,7 +559,7 @@ int ksceUdcdUnregister(struct SceUdcdDriver *drv);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdClearFIFO(struct SceUdcdEndpoint *endp);
+int ksceUdcdClearFIFO(SceUdcdEndpoint *endp);
 
 /**
  * Cancel any pending requests on an endpoint.
@@ -554,7 +568,7 @@ int ksceUdcdClearFIFO(struct SceUdcdEndpoint *endp);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdReqCancelAll(struct SceUdcdEndpoint *endp);
+int ksceUdcdReqCancelAll(SceUdcdEndpoint *endp);
 
 /**
  * Stall an endpoint
@@ -563,25 +577,25 @@ int ksceUdcdReqCancelAll(struct SceUdcdEndpoint *endp);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdStall(struct SceUdcdEndpoint *endp);
+int ksceUdcdStall(SceUdcdEndpoint *endp);
 
 /**
  * Queue a send request(IN from host pov)
  *
- * @param req - Pointer to a filled out UsbbdDeviceRequest structure.
+ * @param req - Pointer to a filled out SceUdcdDeviceRequest structure.
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdReqSend(struct SceUdcdDeviceRequest *req);
+int ksceUdcdReqSend(SceUdcdDeviceRequest *req);
 
 /**
  * Queue a receive request(OUT from host pov)
  *
- * @param req - Pointer to a filled out UsbbdDeviceRequest structure
+ * @param req - Pointer to a filled out SceUdcdDeviceRequest structure
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdReqRecv(struct SceUdcdDeviceRequest *req);
+int ksceUdcdReqRecv(SceUdcdDeviceRequest *req);
 
 #ifdef __cplusplus
 }
