@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceDirEnt}
- * \usage{psp2kern/io/dirent.h,?}
+ * \usage{psp2kern/io/dirent.h,-lSceIofilemgrForDriver_stub}
  */
 
 
@@ -43,7 +43,7 @@ SceUID ksceIoDopen(const char *dirname);
 /**
   * Reads an entry from an opened file descriptor.
   *
-  * @param fd - Already opened file descriptor (using sceIoDopen)
+  * @param fd - Already opened file descriptor (using ksceIoDopen)
   * @param dir - Pointer to an io_dirent_t structure to hold the file information
   *
   * @return Read status
@@ -56,7 +56,7 @@ int ksceIoDread(SceUID fd, SceIoDirent *dir);
 /**
   * Close an opened directory file descriptor
   *
-  * @param fd - Already opened file descriptor (using sceIoDopen)
+  * @param fd - Already opened file descriptor (using ksceIoDopen)
   * @return < 0 on error
   */
 int ksceIoDclose(SceUID fd);
