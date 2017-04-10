@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceGpio}
- * \usage{psp2kern/lowio/gpio.h,?}
+ * \usage{psp2kern/lowio/gpio.h,-lSceGpioForDriver_stub}
  */
 
 #ifndef _PSP2_LOWIO_GPIO_H_
