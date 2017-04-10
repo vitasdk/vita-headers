@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceDirEnt}
- * \usage{psp2/io/dirent.h,-lSceLibKernel_stub}
+ * \usage{psp2/io/dirent.h}
  */
 
 
