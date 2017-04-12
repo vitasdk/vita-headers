@@ -12,5 +12,6 @@ var searchData=
   ['audio_20library',['Audio Library',['../group__SceAudio.html',1,'']]],
   ['audio_20decoding_20library',['Audio Decoding Library',['../group__SceAudiodec.html',1,'']]],
   ['audio_20encoding_20library',['Audio Encoding Library',['../group__SceAudioenc.html',1,'']]],
-  ['audio_20in_20library',['Audio In Library',['../group__SceAudioIn.html',1,'']]]
+  ['audio_20in_20library',['Audio In Library',['../group__SceAudioIn.html',1,'']]],
+  ['audio_2dvideo_20configuration_20library',['Audio-Video Configuration Library',['../group__SceAVConfig.html',1,'']]]
 ];
