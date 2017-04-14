@@ -6,6 +6,7 @@ var searchData=
   ['kernel',['Kernel',['../group__SceCtrlKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceDevCtlKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceDirEntKernel.html',1,'']]],
+  ['kernel',['Kernel',['../group__SceDisplayKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceFcntlKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceGpioKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceIntrMgrKernel.html',1,'']]],

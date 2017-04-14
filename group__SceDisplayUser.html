@@ -93,10 +93,7 @@ $(document).ready(function(){initNavTree('group__SceDisplayUser.html','');});
 <hr/>
  <h3>Using this library in your project</h3>
 <p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/display.h&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">-lSceDisplay_stub </div></div><!-- fragment --><hr/>
-<hr/>
- <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/display.h&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">-lSceDisplayForDriver_stub </div></div><!-- fragment --><hr/>
- <table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga064aa2a62fc1b55f67f21c4af0c31a8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga064aa2a62fc1b55f67f21c4af0c31a8c">sceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
@@ -146,21 +143,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a">sceDisplayUnregisterVblankStartCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="memdesc:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback used at each vertical blank start.  <a href="#ga86f33274ad8c58dabe53ec4ec5e7f20a">More...</a><br /></td></tr>
 <tr class="separator:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcd65e70dc1ca74899fef49010f7c5a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gadcd65e70dc1ca74899fef49010f7c5a8">ksceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
-<tr class="memdesc:gadcd65e70dc1ca74899fef49010f7c5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Update framebuffer parameters.  <a href="#gadcd65e70dc1ca74899fef49010f7c5a8">More...</a><br /></td></tr>
-<tr class="separator:gadcd65e70dc1ca74899fef49010f7c5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d16b8195b9c190d39fa83939443eb89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga5d16b8195b9c190d39fa83939443eb89">ksceDisplayGetFrameBuf</a> (<a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
-<tr class="memdesc:ga5d16b8195b9c190d39fa83939443eb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer parameters.  <a href="#ga5d16b8195b9c190d39fa83939443eb89">More...</a><br /></td></tr>
-<tr class="separator:ga5d16b8195b9c190d39fa83939443eb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0cb12ad2f870bd91623d2946683334e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga0cb12ad2f870bd91623d2946683334e7">ksceDisplayGetFrameBufDimensions</a> (int *width, int *height)</td></tr>
-<tr class="memdesc:ga0cb12ad2f870bd91623d2946683334e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer dimensions.  <a href="#ga0cb12ad2f870bd91623d2946683334e7">More...</a><br /></td></tr>
-<tr class="separator:ga0cb12ad2f870bd91623d2946683334e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"><td class="memItemLeft" align="right" valign="top"><a id="ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8</b>&#160;&#160;&#160;0x00000000U</td></tr>
-<tr class="separator:ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"><td class="memItemLeft" align="right" valign="top"><a id="ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8</b>&#160;&#160;&#160;0x00000000U</td></tr>
 <tr class="separator:ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,26 +208,6 @@ framebuffer width </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga7ee8d0f117a79ca7eb1e0076a9182bcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ee8d0f117a79ca7eb1e0076a9182bcb">&sect;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7ee8d0f117a79ca7eb1e0076a9182bcbaed1ba9da79d96bef5d2c401d271ed016"></a>SCE_DISPLAY_SETBUF_IMMEDIATE&#160;</td><td class="fielddoc"><p>Buffer change effective immediately. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga7ee8d0f117a79ca7eb1e0076a9182bcba942be0a40abb1c6466d4583f2cefa98c"></a>SCE_DISPLAY_SETBUF_NEXTFRAME&#160;</td><td class="fielddoc"><p>Buffer change effective next frame. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="ga7ff5f2dff38e7639981794c43dc9167b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7ff5f2dff38e7639981794c43dc9167b">&sect;&nbsp;</a></span>anonymous enum</h2>
 
@@ -264,121 +229,6 @@ framebuffer width </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5d16b8195b9c190d39fa83939443eb89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d16b8195b9c190d39fa83939443eb89">&sect;&nbsp;</a></span>ksceDisplayGetFrameBuf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDisplayGetFrameBuf </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
-          <td class="paramname"><em>pParam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sync</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current framebuffer parameters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer. ">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga0cb12ad2f870bd91623d2946683334e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0cb12ad2f870bd91623d2946683334e7">&sect;&nbsp;</a></span>ksceDisplayGetFrameBufDimensions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDisplayGetFrameBufDimensions </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current framebuffer dimensions. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Framebuffer width </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Framebuffer height</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gadcd65e70dc1ca74899fef49010f7c5a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadcd65e70dc1ca74899fef49010f7c5a8">&sect;&nbsp;</a></span>ksceDisplaySetFrameBuf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDisplaySetFrameBuf </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
-          <td class="paramname"><em>pParam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sync</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set/Update framebuffer parameters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer. ">SceDisplayFrameBuf</a> structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>- If NULL is provided as pParam pointer, output is blacked out. </dd></dl>
-
-</div>
-</div>
 <a id="gad6f2cec6a63415b3198cd77f28620076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad6f2cec6a63415b3198cd77f28620076">&sect;&nbsp;</a></span>sceDisplayGetFrameBuf()</h2>
 
@@ -645,7 +495,7 @@ framebuffer width </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2017 19:13:39 for vitasdk by
+    <li class="footer">Generated on Fri Apr 14 2017 21:15:56 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
