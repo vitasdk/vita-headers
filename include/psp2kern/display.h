@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceDisplay}
+ * \kernelgroup{SceDisplay}
  * \usage{psp2kern/display.h,SceDisplayForDriver_stub}
  */
 
