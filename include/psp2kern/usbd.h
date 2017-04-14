@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceUsbd}
+ * \kernelgroup{SceUsbd}
  * \usage{psp2kern/usbd.h,-lSceUsbdForDriver_stub}
  */
 
