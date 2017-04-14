@@ -182,5 +182,6 @@ var searchData=
   ['kernel',['Kernel',['../group__SceThreadMgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceTypesKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceUdcdKernel.html',1,'']]],
+  ['kernel',['Kernel',['../group__SceUsbdKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceUsbSerialKernel.html',1,'']]]
 ];
