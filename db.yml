@@ -2,7 +2,7 @@ version: 2
 firmware: 3.60
 modules:
   SceAppMgr:
-    nid: 0x0
+    nid: 0xDBB29DB7
     libraries:
       SceAppMgr:
         functions:
@@ -320,7 +320,7 @@ modules:
         kernel: false
         nid: 0xA6605D6F
   SceAppUtil:
-    nid: 0x3
+    nid: 0xCE3E25D4
     libraries:
       SceAppUtil:
         functions:
@@ -372,9 +372,9 @@ modules:
         functions:
           sceAppUtilCacheMount: 0xAA56143
         kernel: false
-        nid: 0x5
+        nid: 0xE96B941B
   SceAtrac:
-    nid: 0x6
+    nid: 0x738129ED
     libraries:
       SceAtrac:
         functions:
@@ -403,9 +403,9 @@ modules:
           sceAtracSetOutputSamples: 0x75B0C63
           sceAtracSetSubBuffer: 0x272B4CBA
         kernel: false
-        nid: 0x7
+        nid: 0x9AAEDAA0
   SceAudio:
-    nid: 0x8
+    nid: 0x0DA7714A
     libraries:
       SceAudio:
         functions:
@@ -479,7 +479,7 @@ modules:
         kernel: false
         nid: 0x79E0F03F
   SceAvPlayer:
-    nid: 0x10
+    nid: 0xD9653DF7
     libraries:
       SceAvPlayer:
         functions:
@@ -504,9 +504,9 @@ modules:
           sceAvPlayerStop: 0xBD35E360
           sceAvPlayerStreamCount: 0x2CD86FD6
         kernel: false
-        nid: 0x11
+        nid: 0xFA10CE65
   SceBt:
-    nid: 0xED3D9A39
+    nid: 0xF56868B7
     libraries:
       SceBt:
         functions:
@@ -608,7 +608,7 @@ modules:
         kernel: true
         nid: 0xD48CA62D
   SceCamera:
-    nid: 0x14
+    nid: 0xEC26CAF9
     libraries:
       SceCamera:
         functions:
@@ -654,7 +654,7 @@ modules:
         kernel: false
         nid: 0xDA91B3ED
   SceClipboard:
-    nid: 0x16
+    nid: 0xB4042D2E
     libraries:
       SceClipboard:
         functions:
@@ -672,7 +672,7 @@ modules:
           sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x6A31831D
           sceCodecEngineOpenUnmapMemBlock: 0xF0B4C892
         kernel: false
-        nid: 0x19
+        nid: 0x469AB062
   SceCodecEnginePerf:
     nid: 0x1A
     libraries:
@@ -685,7 +685,7 @@ modules:
         kernel: false
         nid: 0x9BF4FFAD
   SceCommonDialog:
-    nid: 0x1C
+    nid: 0x124B6C74
     libraries:
       SceCommonDialog:
         functions:
@@ -1004,7 +1004,7 @@ modules:
         kernel: false
         nid: 0x2F
   SceFiber:
-    nid: 0x30
+    nid: 0x5BA67C8A
     libraries:
       SceFiber:
         functions:
@@ -1192,9 +1192,9 @@ modules:
           sceGameUpdateRun: 0x3C616238
           sceGameUpdateTerm: 0x48D879BA
         kernel: false
-        nid: 0x37
+        nid: 0x2DD9A62D
   SceGxm:
-    nid: 0x38
+    nid: 0x0D0AA0CB
     libraries:
       SceGxm:
         functions:
@@ -1454,7 +1454,7 @@ modules:
         kernel: false
         nid: 0xF76B66BD
   SceHandwriting:
-    nid: 0x3A
+    nid: 0x18983E63
     libraries:
       SceHandwriting:
         functions:
@@ -1641,7 +1641,7 @@ modules:
         kernel: true
         nid: 0xE1AC6D7C
   SceIme:
-    nid: 0x42
+    nid: 0x80AE930F
     libraries:
       SceIme:
         functions:
@@ -1689,7 +1689,7 @@ modules:
         kernel: false
         nid: 0x3748BFD3
   SceSysmem:
-    nid: 0xB93950C6
+    nid: 0x3380B323
     libraries:
       SceSysmemForDriver:
         kernel: true
@@ -1896,7 +1896,7 @@ modules:
           ksceDebugSetHandlers: 0x10067B7B
           ksceDebugDisableInfoDump: 0xF857CDD6
   SceKernelThreadMgr:
-    nid: 0xA09CFA5C
+    nid: 0xF46ED7B2
     libraries:
       SceThreadmgrForDriver:
         kernel: true
@@ -2102,7 +2102,7 @@ modules:
         kernel: false
         nid: 0xEAED1616
   SceIofilemgr:
-    nid: 0x3E244C17
+    nid: 0x9642948C
     libraries:
       SceIofilemgrForDriver:
         functions:
@@ -2166,7 +2166,7 @@ modules:
         kernel: false
         nid: 0xF2FF276E
   SceProcessmgr:
-    nid: 0xF019E1DA
+    nid: 0x8B8A6263
     libraries:
       SceProcessmgr:
         functions:
@@ -2195,7 +2195,7 @@ modules:
           ksceKernelGetProcessAuthid: 0xE4C83B0D
           ksceKernelGetProcessKernelBuf: 0xB9E68092
   SceLibKernel:
-    nid: 0x48
+    nid: 0xF9C9C52F
     libraries:
       SceLibKernel:
         functions:
@@ -2775,7 +2775,7 @@ modules:
         kernel: false
         nid: 0x54
   SceLibc:
-    nid: 0x55
+    nid: 0x43FBA801
     libraries:
       SceLibc:
         functions:
@@ -3126,7 +3126,7 @@ modules:
           sceLocationGetLocationWifiHistory: 0x82DE9BF8
           sceLocationQueryLocationWifiHistory: 0x277DA915
         kernel: false
-        nid: 0x5C
+        nid: 0x2ECC3C56
   SceMd5:
     nid: 0x5D
     libraries:
@@ -3174,7 +3174,7 @@ modules:
         kernel: false
         nid: 0x2F4FAB93
   SceMusicExport:
-    nid: 0x63
+    nid: 0x6A89E620
     libraries:
       SceMusicExport:
         functions:
@@ -3182,7 +3182,7 @@ modules:
         kernel: false
         nid: 0xF2E30EED
   SceNearDialogUtil:
-    nid: 0x65
+    nid: 0x102F200B
     libraries:
       SceNearDialogUtil:
         functions:
@@ -3220,9 +3220,9 @@ modules:
           sceNearUtilitySetGift: 0x294693CB
           sceNearUtilitySetGift2: 0xDBEFB12E
         kernel: false
-        nid: 0x66
+        nid: 0x65408075
   SceNearUtil:
-    nid: 0x67
+    nid: 0xFE577596
     libraries:
       SceNearUtil:
         functions:
@@ -3258,7 +3258,7 @@ modules:
         kernel: false
         nid: 0x560D1608
   SceNet:
-    nid: 0x5A7BCCDA
+    nid: 0x30BFE75C
     libraries:
       SceNet:
         functions:
@@ -3338,7 +3338,7 @@ modules:
           ksceNetSetsockopt: 0x4BF5FAB4
           ksceNetSocketClose: 0x21F4428D
   SceNetAdhocMatching:
-    nid: 0x6B
+    nid: 0xF2F9C205
     libraries:
       SceNetAdhocMatching:
         functions:
@@ -3357,7 +3357,7 @@ modules:
           sceNetAdhocMatchingStop: 0x63ABB632
           sceNetAdhocMatchingTerm: 0x6E195CD1
         kernel: false
-        nid: 0x962A4A
+        nid: 0x00962A4A
   SceNetCtl:
     nid: 0x6D
     libraries:
@@ -3384,7 +3384,7 @@ modules:
         kernel: false
         nid: 0xC6083AE1
   SceNgs:
-    nid: 0x6F
+    nid: 0x90671548
     libraries:
       SceNgs:
         functions:
@@ -3459,7 +3459,7 @@ modules:
         kernel: false
         nid: 0xB01598D9
   SceNpActivity:
-    nid: 0x71
+    nid: 0x096735F5
     libraries:
       SceNpActivity:
         functions:
@@ -3469,7 +3469,7 @@ modules:
         kernel: false
         nid: 0xFEF492ED
   SceNpBasic:
-    nid: 0x73
+    nid: 0x52A291CE
     libraries:
       SceNpBasic:
         functions:
@@ -3503,7 +3503,7 @@ modules:
         kernel: false
         nid: 0x605BA760
   SceNpCommerce2:
-    nid: 0x75
+    nid: 0x52126DD9
     libraries:
       SceNpCommerce2:
         functions:
@@ -3552,7 +3552,7 @@ modules:
         kernel: false
         nid: 0x40120DC3
   SceNpCommon:
-    nid: 0x77
+    nid: 0x2F703603
     libraries:
       SceNpCommon:
         functions:
@@ -3626,7 +3626,7 @@ modules:
         kernel: true
         nid: 0xD84DC44A
   SceNpManager:
-    nid: 0x79
+    nid: 0x2D4B5F41
     libraries:
       SceNpManager:
         functions:
@@ -3644,7 +3644,7 @@ modules:
         kernel: false
         nid: 0xD8835093
   SceNpMatching2:
-    nid: 0x7B
+    nid: 0x4BEBBDF3
     libraries:
       SceNpMatching2:
         functions:
@@ -3701,7 +3701,7 @@ modules:
         kernel: false
         nid: 0x7106F303
   SceNpMessage:
-    nid: 0x7D
+    nid: 0x9FED9721
     libraries:
       SceNpMessage:
         functions:
@@ -3734,7 +3734,7 @@ modules:
         kernel: false
         nid: 0xB3B34742
   SceNpScore:
-    nid: 0x81
+    nid: 0x535502C2
     libraries:
       SceNpScore:
         functions:
@@ -3771,7 +3771,7 @@ modules:
         kernel: false
         nid: 0x75F052DB
   SceNpSignaling:
-    nid: 0x83
+    nid: 0xEA76DE9E
     libraries:
       SceNpSignaling:
         functions:
@@ -3794,9 +3794,9 @@ modules:
           sceNpSignalingTerm: 0xBC892D18
           sceNpSignalingTerminateConnection: 0xA413F8C2
         kernel: false
-        nid: 0x84
+        nid: 0xEE59FC02
   SceNpSnsFacebook:
-    nid: 0x85
+    nid: 0x723E758D
     libraries:
       SceNpSnsFacebook:
         functions:
@@ -3808,9 +3808,9 @@ modules:
           sceNpSnsFacebookInit: 0x80557AA0
           sceNpSnsFacebookTerm: 0xA71E6847
         kernel: false
-        nid: 0x86
+        nid: 0x1EF501B8
   SceNpTrophy:
-    nid: 0x87
+    nid: 0xE4EBB3E3
     libraries:
       SceNpTrophy:
         functions:
@@ -3832,7 +3832,7 @@ modules:
         kernel: false
         nid: 0x4332C10D
   SceNpTus:
-    nid: 0x89
+    nid: 0xCFC5C3E6
     libraries:
       SceNpTus:
         functions:
@@ -3902,7 +3902,7 @@ modules:
         kernel: false
         nid: 0xAE84BDEA
   SceNpUtility:
-    nid: 0x8B
+    nid: 0x14246C21
     libraries:
       SceNpUtility:
         functions:
@@ -3943,7 +3943,7 @@ modules:
         kernel: false
         nid: 0x7B47D9CF
   ScePerf:
-    nid: 0x8D
+    nid: 0xA2727E86
     libraries:
       ScePerf:
         functions:
@@ -4007,7 +4007,7 @@ modules:
         kernel: false
         nid: 0x9F3504F2
   ScePhotoExport:
-    nid: 0x91
+    nid: 0x97935D63
     libraries:
       ScePhotoExport:
         functions:
@@ -4114,7 +4114,7 @@ modules:
           sceNetAdhocctlInit: 0xE2FE9DD6
           sceNetAdhocctlTerm: 0x97A80065
         kernel: false
-        nid: 0x96
+        nid: 0x19C6AFDC
   ScePvf:
     nid: 0x97
     libraries:
@@ -4273,7 +4273,7 @@ modules:
           sceRegMgrSystemParamSetInt: 0xC8F73311
           sceRegMgrSystemParamSetStr: 0xCB3246E3
         kernel: false
-        nid: 0xB351269
+        nid: 0x0B351269
       SceRegMgrForSDK:
         functions:
           sceRegMgrUtilityGetBin: 0xEFCFA182
@@ -4303,7 +4303,7 @@ modules:
         kernel: true
         nid: 0x12431F66
   SceRtc:
-    nid: 0xA1
+    nid: 0x1E923AD1
     libraries:
       SceRtc:
         functions:
@@ -4452,7 +4452,7 @@ modules:
         kernel: false
         nid: 0xEE47EC43
   SceScreenShot:
-    nid: 0xA8
+    nid: 0x56675E0A
     libraries:
       SceScreenShot:
         functions:
@@ -4685,7 +4685,7 @@ modules:
         kernel: false
         nid: 0xD2B1C8AE
   SceShutterSound:
-    nid: 0xCC
+    nid: 0x9B8396F9
     libraries:
       SceShutterSound:
         functions:
@@ -4740,7 +4740,7 @@ modules:
         kernel: false
         nid: 0xCF
   SceSqlite:
-    nid: 0xD0
+    nid: 0x8D6CC544
     libraries:
       SceSqlite:
         functions:
@@ -4968,7 +4968,7 @@ modules:
         kernel: false
         nid: 0x533DEBDE
   SceSysmodule:
-    nid: 0xD6
+    nid: 0x0958E8D1
     libraries:
       SceSysmodule:
         functions:
@@ -4981,9 +4981,9 @@ modules:
           sceSysmoduleLoadModuleInternal: 0x2399BF45
           sceSysmoduleUnloadModuleInternal: 0xFF206B19
         kernel: false
-        nid: 0x3FCF19D
+        nid: 0x03FCF19D
   SceSystemGesture:
-    nid: 0xD8
+    nid: 0xCC78BA95
     libraries:
       SceSystemGesture:
         functions:
@@ -5060,7 +5060,7 @@ modules:
         kernel: true
         nid: 0xA4A7DAFC
   SceUlt:
-    nid: 0xDC
+    nid: 0xDC2996DB
     libraries:
       SceUlt:
         functions:
@@ -5157,7 +5157,7 @@ modules:
         kernel: false
         nid: 0x163C3727
   SceVoice:
-    nid: 0xE0
+    nid: 0xF5F3E7CA
     libraries:
       SceVoice:
         functions:
@@ -5192,7 +5192,7 @@ modules:
         kernel: false
         nid: 0xCE56E214
   SceVoiceQoS:
-    nid: 0xE2
+    nid: 0x9A89A62B
     libraries:
       SceVoiceQoS:
         functions:
@@ -5216,7 +5216,7 @@ modules:
         kernel: false
         nid: 0x650551BC
   SceVshBridge:
-    nid: 0xE3
+    nid: 0xA2BE1892
     libraries:
       SceVshBridge:
         functions:
@@ -5420,7 +5420,7 @@ modules:
           sceKernelStdin: 0x54237407
           sceKernelStdout: 0x9033E9BD
   SceSblSsMgr:
-    nid: 0xFDDD93FA
+    nid: 0x4E913538
     libraries:
       SceSblSsMgrForDriver:
         kernel: true
@@ -5428,7 +5428,7 @@ modules:
         functions:
           ksceKernelGetRandomNumber: 0x4F9BFBE5
   SceSblACMgr:
-    nid: 0xB6E5AEBE
+    nid: 0x7474D6F9
     libraries:
       SceSblACMgrForDriver:
         kernel: true
@@ -5483,7 +5483,7 @@ modules:
           ksceUsbdControlTransfer: 0x2E05660F
           ksceUsbdInterruptTransfer: 0xA0BF85B8
   SceUsbSerial:
-    nid: 0xF8D9930F
+    nid: 0xB3C543D4
     libraries:
       SceUsbSerialForDriver:
         kernel: true
@@ -5551,7 +5551,7 @@ modules:
           sceUsbstorVStorStart: 0xB606F1AF
           sceUsbstorVStorStop: 0x0FD67059
   ScePromoterUtil:
-    nid: 0xB31C2D5C
+    nid: 0x770E22E0
     libraries:
       ScePromoterUtil:
         kernel: false
@@ -5666,7 +5666,7 @@ modules:
           ksceGpioGetIntrMode: 0xE97A3B31
           ksceGpioPortClear: 0xF6310435
   SceSblAuthMgr:
-    nid: 0xEA5DFC93
+    nid: 0x1773372D
     libraries:
       SceSblAuthMgrForKernel:
         kernel: true
