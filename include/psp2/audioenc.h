@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceAudioenc}
- * \usage{psp2/audioenc.h,-lSceAudioenc_stub}
+ * \usage{psp2/audioenc.h,SceAudioenc_stub}
  */
 
 

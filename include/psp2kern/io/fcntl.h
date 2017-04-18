@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceFcntl}
- * \usage{psp2kern/io/fcntl.h,-lSceIofilemgrForDriver_stub}
+ * \usage{psp2kern/io/fcntl.h,SceIofilemgrForDriver_stub}
  */
 
 

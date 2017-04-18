@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceVideoDec}
- * \usage{psp2/videodec.h,-lSceVideodec_stub}
+ * \usage{psp2/videodec.h,SceVideodec_stub}
  */
 
 

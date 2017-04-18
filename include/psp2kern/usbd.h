@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceUsbd}
- * \usage{psp2kern/usbd.h,-lSceUsbdForDriver_stub}
+ * \usage{psp2kern/usbd.h,SceUsbdForDriver_stub}
  */
 
 

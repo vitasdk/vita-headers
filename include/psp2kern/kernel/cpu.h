@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceCPU}
- * \usage{psp2kern/kernel/cpu.h,-lSceCpuForDriver_stub}
+ * \usage{psp2kern/kernel/cpu.h,SceCpuForDriver_stub}
  */
 
 

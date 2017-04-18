@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceUsbSerial}
- * \usage{psp2/usbserial.h,-lSceUsbSerial_stub}
+ * \usage{psp2/usbserial.h,SceUsbSerial_stub}
  */
 
 

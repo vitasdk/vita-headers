@@ -1,6 +1,6 @@
 /**
  * \usergroup{ScePgf}
- * \usage{psp2/pgf.h,-lScePgf_stub}
+ * \usage{psp2/pgf.h,ScePgf_stub}
  */
 
 

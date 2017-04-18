@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceIntrMgr}
- * \usage{psp2kern/kernel/intrmgr.h,-lSceIntrmgrForDriver_stub}
+ * \usage{psp2kern/kernel/intrmgr.h,SceIntrmgrForDriver_stub}
  */
 
 #ifndef _PSP2_KERNEL_INTRMGR_H_

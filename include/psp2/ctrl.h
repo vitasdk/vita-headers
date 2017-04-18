@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceCtrl}
- * \usage{psp2/ctrl.h,-lSceCtrl_stub}
+ * \usage{psp2/ctrl.h,SceCtrl_stub}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceAppUtil}
- * \usage{psp2/apputil.h,-lSceAppUtil_stub}
+ * \usage{psp2/apputil.h,SceAppUtil_stub}
  */
 
 

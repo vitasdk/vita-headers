@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceUsbSerial}
- * \usage{psp2kern/usbserial.h,-lSceUsbSerialForDriver_stub}
+ * \usage{psp2kern/usbserial.h,SceUsbSerialForDriver_stub}
  */
 
 

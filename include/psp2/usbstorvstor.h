@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceUsbstorVStorDriver}
- * \usage{psp2/usbstorvstor.h,-lSceUsbstorVStorDriver_stub}
+ * \usage{psp2/usbstorvstor.h,SceUsbstorVStorDriver_stub}
  */
 
 

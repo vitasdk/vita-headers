@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceNetCtl}
- * \usage{psp2/net/netctl.h,-lSceNetCtl_stub}
+ * \usage{psp2/net/netctl.h,SceNetCtl_stub}
  */
 
 

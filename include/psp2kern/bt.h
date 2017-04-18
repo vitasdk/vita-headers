@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceBt}
- * \usage{psp2kern/bt.h,-lSceBtForDriver_stub}
+ * \usage{psp2kern/bt.h,SceBtForDriver_stub}
  */
 
 
