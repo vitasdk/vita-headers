@@ -7,7 +7,6 @@ var searchData=
   ['user',['User',['../group__SceAudioencUser.html',1,'']]],
   ['user',['User',['../group__SceAudioInUser.html',1,'']]],
   ['user',['User',['../group__SceAudioUser.html',1,'']]],
-  ['user',['User',['../group__SceAVConfigUser.html',1,'']]],
   ['user',['User',['../group__SceCameraUser.html',1,'']]],
   ['user',['User',['../group__SceCLibUser.html',1,'']]],
   ['user',['User',['../group__SceCommonDialogUser.html',1,'']]],
@@ -64,5 +63,6 @@ var searchData=
   ['user',['User',['../group__SceUsbstorVStorDriverUser.html',1,'']]],
   ['user',['User',['../group__SceVideoDecUser.html',1,'']]],
   ['unk',['unk',['../group__SceCtrlUser.html#ga15c58e5ea499c2108b7e04ef60740a86',1,'SceCtrlActuator::unk()'],['../group__SceCtrlUser.html#gaf6ee01c0633dc66dcf2da6b7d1b7621b',1,'SceCtrlPortInfo::unk()']]],
+  ['usbdevicequalifierdescriptor',['UsbDeviceQualifierDescriptor',['../group__SceUdcdKernel.html#structUsbDeviceQualifierDescriptor',1,'']]],
   ['userparam',['userParam',['../group__SceAppUtilUser.html#gae91086ccf24d94482c46a14f35f29d67',1,'SceAppUtilSaveDataSlot::userParam()'],['../group__SceAppUtilUser.html#ga2606b270579d2d52833b258e01f61832',1,'SceAppUtilSaveDataSlotParam::userParam()']]]
 ];

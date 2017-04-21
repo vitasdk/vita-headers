@@ -1,7 +1,7 @@
 var group__SceUdcdKernel_structSceUdcdConfiguration =
 [
-    [ "configDescriptors", "group__SceUdcdKernel.html#gad7a1796c107cad9ea56a32eb53093c8f", null ],
-    [ "endpointDescriptors", "group__SceUdcdKernel.html#ga11f6f1bd71d16d1391cabd1f01cad3b6", null ],
-    [ "interfaceDescriptors", "group__SceUdcdKernel.html#gaf0c3f6876410b4d67b275b60ca860c39", null ],
-    [ "settings", "group__SceUdcdKernel.html#ga014eb1d42b5f398150c321cd1702a3f8", null ]
+    [ "configDescriptors", "group__SceUdcdKernel.html#ga1d4201b97a513aa6d3b91e50f4d294cb", null ],
+    [ "endpointDescriptors", "group__SceUdcdKernel.html#gaedd9ab20b647af9ffdd5a608b1664d5d", null ],
+    [ "interfaceDescriptors", "group__SceUdcdKernel.html#ga7e80f8f1a9db0d7bb09e4d15131d351a", null ],
+    [ "settings", "group__SceUdcdKernel.html#ga7fd9224fde9b2989b0fdf2e9a0ce043b", null ]
 ];

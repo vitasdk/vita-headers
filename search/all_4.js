@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['d_5fname',['d_name',['../group__SceDirEntUser.html#ga162a7061852cd91ab6b9d3cb8586c7d1',1,'SceIoDirent']]],
-  ['d_5fprivate',['d_private',['../group__SceDirEntUser.html#ga11eed026297784f0e2723679abe80406',1,'SceIoDirent']]],
+  ['d_5fname',['d_name',['../group__SceDirEntUser.html#ga26afa621714ed02e988a758c8e69496a',1,'SceIoDirent']]],
+  ['d_5fprivate',['d_private',['../group__SceDirEntUser.html#ga3a5a0bd642cc54433fbeca9ce1d10682',1,'SceIoDirent']]],
   ['d_5fstat',['d_stat',['../group__SceDirEntUser.html#ga3a4bcbbc3ff31daf29269f6edd0ef058',1,'SceIoDirent']]],
   ['dat',['dat',['../group__SceAppUtilUser.html#ga7d09358eed2b67385a90ab954ffbbf31',1,'SceAppUtilAppEventParam']]],
   ['data',['data',['../group__SceAppUtilUser.html#ga1a4253e798ff793644c1df6b6241f529',1,'SceAppUtilMountPoint::data()'],['../group__SceGxmUser.html#ga4685b49d3bb6183be17c23a021c066fe',1,'SceGxmAuxiliarySurface::data()']]],

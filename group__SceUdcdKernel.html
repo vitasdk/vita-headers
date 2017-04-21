@@ -92,16 +92,16 @@ $(document).ready(function(){initNavTree('group__SceUdcdKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/udcd.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUdcdForDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/udcd.h&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">-lSceUdcdForDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gada369f1e54928cb7cb0cb885a044e155"><td class="memItemLeft" align="right" valign="top"><a id="gada369f1e54928cb7cb0cb885a044e155"></a>
-struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">SceUdcdDeviceDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((aligned(4))) <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">SceUdcdDeviceDescriptor</a></td></tr>
-<tr class="separator:gada369f1e54928cb7cb0cb885a044e155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="memItemLeft" align="right" valign="top"><a id="gaecaf20cb4b5ebc2a129339b3a3e5a0c4"></a>
-struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a>&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((aligned(16))) <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a></td></tr>
-<tr class="separator:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab28aafd8124b975582710da0ec434325"><td class="memItemLeft" align="right" valign="top"><a id="gab28aafd8124b975582710da0ec434325"></a>
+struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">SceUdcdDeviceDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((aligned(4)))</td></tr>
+<tr class="separator:gab28aafd8124b975582710da0ec434325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16d93638c1d53b60412cb1b290a562cb"><td class="memItemLeft" align="right" valign="top"><a id="ga16d93638c1d53b60412cb1b290a562cb"></a>
+struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a>&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((aligned(16)))</td></tr>
+<tr class="separator:ga16d93638c1d53b60412cb1b290a562cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff5e76ddee35a8a368621fe6e534740c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c">ksceUdcdStart</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gaff5e76ddee35a8a368621fe6e534740c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver.  <a href="#gaff5e76ddee35a8a368621fe6e534740c">More...</a><br /></td></tr>
 <tr class="separator:gaff5e76ddee35a8a368621fe6e534740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,42 +117,39 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:ga158c8122feafcc64f46565c0a354ba76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76">ksceUdcdGetDeviceState</a> (void)</td></tr>
 <tr class="memdesc:ga158c8122feafcc64f46565c0a354ba76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB state.  <a href="#ga158c8122feafcc64f46565c0a354ba76">More...</a><br /></td></tr>
 <tr class="separator:ga158c8122feafcc64f46565c0a354ba76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0bac6115280db28c030b53f5ef597541"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga0bac6115280db28c030b53f5ef597541">ksceUdcdGetDeviceInfo</a> (<a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *devInfo)</td></tr>
-<tr class="memdesc:ga0bac6115280db28c030b53f5ef597541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device information.  <a href="#ga0bac6115280db28c030b53f5ef597541">More...</a><br /></td></tr>
-<tr class="separator:ga0bac6115280db28c030b53f5ef597541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0">ksceUdcdGetDrvState</a> (const char *driverName)</td></tr>
 <tr class="memdesc:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of a specific USB driver.  <a href="#ga990e7c4f2cc70b36239b4dfd2cb10fa0">More...</a><br /></td></tr>
 <tr class="separator:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60e4cb4b464c7afeddf6426f371f7def"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga60e4cb4b464c7afeddf6426f371f7def">ksceUdcdGetDrvList</a> (unsigned int flags, <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a> *list, int size)</td></tr>
-<tr class="memdesc:ga60e4cb4b464c7afeddf6426f371f7def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of drivers.  <a href="#ga60e4cb4b464c7afeddf6426f371f7def">More...</a><br /></td></tr>
-<tr class="separator:ga60e4cb4b464c7afeddf6426f371f7def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb12d45f9a88a2db0b8fd0e0477c9078"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadb12d45f9a88a2db0b8fd0e0477c9078">ksceUdcdGetDrvList</a> (unsigned int flags, struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a> *list, int size)</td></tr>
+<tr class="memdesc:gadb12d45f9a88a2db0b8fd0e0477c9078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of drivers.  <a href="#gadb12d45f9a88a2db0b8fd0e0477c9078">More...</a><br /></td></tr>
+<tr class="separator:gadb12d45f9a88a2db0b8fd0e0477c9078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga32fcbde8265107dc487376019b45adb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga32fcbde8265107dc487376019b45adb9">ksceUdcdWaitState</a> (unsigned int state, unsigned int waitMode, SceUInt *timeout)</td></tr>
 <tr class="memdesc:ga32fcbde8265107dc487376019b45adb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for USB state.  <a href="#ga32fcbde8265107dc487376019b45adb9">More...</a><br /></td></tr>
 <tr class="separator:ga32fcbde8265107dc487376019b45adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf3b835b0016db9d77d0b21412c2d2d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gacf3b835b0016db9d77d0b21412c2d2d3">ksceUdcdWaitCancel</a> (void)</td></tr>
 <tr class="memdesc:gacf3b835b0016db9d77d0b21412c2d2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a pending ksceUdcdWaitState.  <a href="#gacf3b835b0016db9d77d0b21412c2d2d3">More...</a><br /></td></tr>
 <tr class="separator:gacf3b835b0016db9d77d0b21412c2d2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f">ksceUdcdRegister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
-<tr class="memdesc:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver.  <a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">More...</a><br /></td></tr>
-<tr class="separator:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4b42b6e886000b962fa71ba289e5bb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac4b42b6e886000b962fa71ba289e5bb7">ksceUdcdUnregister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
-<tr class="memdesc:gac4b42b6e886000b962fa71ba289e5bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a USB driver.  <a href="#gac4b42b6e886000b962fa71ba289e5bb7">More...</a><br /></td></tr>
-<tr class="separator:gac4b42b6e886000b962fa71ba289e5bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8a34ffed9270892c5bf0e7825aa40b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gae8a34ffed9270892c5bf0e7825aa40b1">ksceUdcdClearFIFO</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
-<tr class="memdesc:gae8a34ffed9270892c5bf0e7825aa40b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the FIFO on an endpoint.  <a href="#gae8a34ffed9270892c5bf0e7825aa40b1">More...</a><br /></td></tr>
-<tr class="separator:gae8a34ffed9270892c5bf0e7825aa40b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae77811300ecf6782eb2bd68e603d3a81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gae77811300ecf6782eb2bd68e603d3a81">ksceUdcdReqCancelAll</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
-<tr class="memdesc:gae77811300ecf6782eb2bd68e603d3a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel any pending requests on an endpoint.  <a href="#gae77811300ecf6782eb2bd68e603d3a81">More...</a><br /></td></tr>
-<tr class="separator:gae77811300ecf6782eb2bd68e603d3a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65ccedf631899c526483cf2f08034e81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga65ccedf631899c526483cf2f08034e81">ksceUdcdStall</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
-<tr class="memdesc:ga65ccedf631899c526483cf2f08034e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stall an endpoint.  <a href="#ga65ccedf631899c526483cf2f08034e81">More...</a><br /></td></tr>
-<tr class="separator:ga65ccedf631899c526483cf2f08034e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafcf76b28b30c36a612e3eed344fa3aa4">ksceUdcdReqSend</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
-<tr class="memdesc:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a send request(IN from host pov)  <a href="#gafcf76b28b30c36a612e3eed344fa3aa4">More...</a><br /></td></tr>
-<tr class="separator:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga912d7d79a404bfc6939fbe2d866e981a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga912d7d79a404bfc6939fbe2d866e981a">ksceUdcdReqRecv</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
-<tr class="memdesc:ga912d7d79a404bfc6939fbe2d866e981a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a receive request(OUT from host pov)  <a href="#ga912d7d79a404bfc6939fbe2d866e981a">More...</a><br /></td></tr>
-<tr class="separator:ga912d7d79a404bfc6939fbe2d866e981a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf61a97491be9da151036c9899970d20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaaf61a97491be9da151036c9899970d20">ksceUdcdRegister</a> (struct <a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
+<tr class="memdesc:gaaf61a97491be9da151036c9899970d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver.  <a href="#gaaf61a97491be9da151036c9899970d20">More...</a><br /></td></tr>
+<tr class="separator:gaaf61a97491be9da151036c9899970d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9904134ab42742190897f7137c76a831"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga9904134ab42742190897f7137c76a831">ksceUdcdUnregister</a> (struct <a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
+<tr class="memdesc:ga9904134ab42742190897f7137c76a831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a USB driver.  <a href="#ga9904134ab42742190897f7137c76a831">More...</a><br /></td></tr>
+<tr class="separator:ga9904134ab42742190897f7137c76a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2c23ab90db864091337fe8d071a1125"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad2c23ab90db864091337fe8d071a1125">ksceUdcdClearFIFO</a> (struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
+<tr class="memdesc:gad2c23ab90db864091337fe8d071a1125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the FIFO on an endpoint.  <a href="#gad2c23ab90db864091337fe8d071a1125">More...</a><br /></td></tr>
+<tr class="separator:gad2c23ab90db864091337fe8d071a1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57cbabac3687764164596a738c94bd82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga57cbabac3687764164596a738c94bd82">ksceUdcdReqCancelAll</a> (struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
+<tr class="memdesc:ga57cbabac3687764164596a738c94bd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel any pending requests on an endpoint.  <a href="#ga57cbabac3687764164596a738c94bd82">More...</a><br /></td></tr>
+<tr class="separator:ga57cbabac3687764164596a738c94bd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb58020e65c06386e549d4d8ad24408d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaeb58020e65c06386e549d4d8ad24408d">ksceUdcdStall</a> (struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
+<tr class="memdesc:gaeb58020e65c06386e549d4d8ad24408d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stall an endpoint.  <a href="#gaeb58020e65c06386e549d4d8ad24408d">More...</a><br /></td></tr>
+<tr class="separator:gaeb58020e65c06386e549d4d8ad24408d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59109cb47393d98c07b011c2827f1236"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga59109cb47393d98c07b011c2827f1236">ksceUdcdReqSend</a> (struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
+<tr class="memdesc:ga59109cb47393d98c07b011c2827f1236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a send request(IN from host pov)  <a href="#ga59109cb47393d98c07b011c2827f1236">More...</a><br /></td></tr>
+<tr class="separator:ga59109cb47393d98c07b011c2827f1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbf6c9316f9de295724cb002f18c0f7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafbf6c9316f9de295724cb002f18c0f7a">ksceUdcdReqRecv</a> (struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
+<tr class="memdesc:gafbf6c9316f9de295724cb002f18c0f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a receive request(OUT from host pov)  <a href="#gafbf6c9316f9de295724cb002f18c0f7a">More...</a><br /></td></tr>
+<tr class="separator:gafbf6c9316f9de295724cb002f18c0f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -621,69 +618,69 @@ iSerialNumber</td>
 
 </div>
 </div>
-<a name="structSceUdcdDeviceQualifierDescriptor" id="structSceUdcdDeviceQualifierDescriptor"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceUdcdDeviceQualifierDescriptor">&sect;&nbsp;</a></span>SceUdcdDeviceQualifierDescriptor</h2>
+<a name="structUsbDeviceQualifierDescriptor" id="structUsbDeviceQualifierDescriptor"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structUsbDeviceQualifierDescriptor">&sect;&nbsp;</a></span>UsbDeviceQualifierDescriptor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceUdcdDeviceQualifierDescriptor</td>
+          <td class="memname">struct UsbDeviceQualifierDescriptor</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gacd732acad21a383e98cfd04d75056d96"></a>unsigned short</td>
+<a id="gaf84ec27ffd38a820383683b3bf5d615e"></a>unsigned short</td>
 <td class="fieldname">
 bcdUSB</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga93459ee2806ff0f88fab15edb28d7778"></a>unsigned char</td>
+<a id="gadb088366f0480c61a550726dc464a28b"></a>unsigned char</td>
 <td class="fieldname">
 bDescriptorType</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga47e776657c3f370ddc28cc0c4bfe62d1"></a>unsigned char</td>
+<a id="ga5409490dea1560621e5c90369698ae6d"></a>unsigned char</td>
 <td class="fieldname">
 bDeviceClass</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga0ad1fa09fb59f7a8129055aa1e43b02c"></a>unsigned char</td>
+<a id="ga58b58288798841b459ce81872eed1e97"></a>unsigned char</td>
 <td class="fieldname">
 bDeviceProtocol</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf687ab81b407cc6409b2e045dffb6a84"></a>unsigned char</td>
+<a id="ga5f52bed6c4a5a09abef942445b07fdbf"></a>unsigned char</td>
 <td class="fieldname">
 bDeviceSubClass</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gab99052e45d45d6ff8288a7107782efe7"></a>unsigned char</td>
+<a id="gaca63c55572d70e5d8d834d4abc208640"></a>unsigned char</td>
 <td class="fieldname">
 bLength</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gabde35286ff148ee7688c919dcf267bd9"></a>unsigned char</td>
+<a id="gaa324fab07807c7e55e93c76211e1a994"></a>unsigned char</td>
 <td class="fieldname">
 bMaxPacketSize0</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf0a7e96026e5c3e054bda2df44e65d45"></a>unsigned char</td>
+<a id="ga84c688246e12013090bcd42b51b8318a"></a>unsigned char</td>
 <td class="fieldname">
 bNumConfigurations</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga916ae624afebbad025c029b5f6d7d35b"></a>unsigned char</td>
+<a id="ga0dc85c77479f699bc4dbbf0641c704a4"></a>unsigned char</td>
 <td class="fieldname">
 bReserved</td>
 <td class="fielddoc">
@@ -1054,25 +1051,25 @@ transmittedBytes</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gad7a1796c107cad9ea56a32eb53093c8f"></a><a class="el" href="group__SceUdcdKernel.html#structSceUdcdConfigDescriptor">SceUdcdConfigDescriptor</a> *</td>
+<a id="ga1d4201b97a513aa6d3b91e50f4d294cb"></a>struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdConfigDescriptor">SceUdcdConfigDescriptor</a> *</td>
 <td class="fieldname">
 configDescriptors</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga11f6f1bd71d16d1391cabd1f01cad3b6"></a><a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpointDescriptor">SceUdcdEndpointDescriptor</a> *</td>
+<a id="gaedd9ab20b647af9ffdd5a608b1664d5d"></a>struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpointDescriptor">SceUdcdEndpointDescriptor</a> *</td>
 <td class="fieldname">
 endpointDescriptors</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf0c3f6876410b4d67b275b60ca860c39"></a><a class="el" href="group__SceUdcdKernel.html#structSceUdcdInterfaceDescriptor">SceUdcdInterfaceDescriptor</a> *</td>
+<a id="ga7e80f8f1a9db0d7bb09e4d15131d351a"></a>struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdInterfaceDescriptor">SceUdcdInterfaceDescriptor</a> *</td>
 <td class="fieldname">
 interfaceDescriptors</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga014eb1d42b5f398150c321cd1702a3f8"></a><a class="el" href="group__SceUdcdKernel.html#structSceUdcdInterfaceSettings">SceUdcdInterfaceSettings</a> *</td>
+<a id="ga7fd9224fde9b2989b0fdf2e9a0ce043b"></a>struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdInterfaceSettings">SceUdcdInterfaceSettings</a> *</td>
 <td class="fieldname">
 settings</td>
 <td class="fielddoc">
@@ -1163,35 +1160,6 @@ size</td>
 
 </div>
 </div>
-<a name="structSceUdcdDeviceInfo" id="structSceUdcdDeviceInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceUdcdDeviceInfo">&sect;&nbsp;</a></span>SceUdcdDeviceInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceUdcdDeviceInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga77d11f38b49d80da19676eb1ea807b4c"></a>uint8_t</td>
-<td class="fieldname">
-info[64]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga0740b966ec21c03fab166e37f6e52af8"></a>unsigned char</td>
-<td class="fieldname">
-info[64]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gafbdc0991ab0f211224c3bf70598a33e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafbdc0991ab0f211224c3bf70598a33e5">&sect;&nbsp;</a></span>ksceUdcdActivate()</h2>
@@ -1220,8 +1188,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="gae8a34ffed9270892c5bf0e7825aa40b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae8a34ffed9270892c5bf0e7825aa40b1">&sect;&nbsp;</a></span>ksceUdcdClearFIFO()</h2>
+<a id="gad2c23ab90db864091337fe8d071a1125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2c23ab90db864091337fe8d071a1125">&sect;&nbsp;</a></span>ksceUdcdClearFIFO()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1229,7 +1197,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdClearFIFO </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
           <td class="paramname"><em>endp</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1268,33 +1236,6 @@ info[64]</td>
 
 </div>
 </div>
-<a id="ga0bac6115280db28c030b53f5ef597541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0bac6115280db28c030b53f5ef597541">&sect;&nbsp;</a></span>ksceUdcdGetDeviceInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUdcdGetDeviceInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *&#160;</td>
-          <td class="paramname"><em>devInfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get device information. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">devInfo</td><td>- Device information</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga158c8122feafcc64f46565c0a354ba76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga158c8122feafcc64f46565c0a354ba76">&sect;&nbsp;</a></span>ksceUdcdGetDeviceState()</h2>
 
@@ -1316,8 +1257,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="ga60e4cb4b464c7afeddf6426f371f7def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60e4cb4b464c7afeddf6426f371f7def">&sect;&nbsp;</a></span>ksceUdcdGetDrvList()</h2>
+<a id="gadb12d45f9a88a2db0b8fd0e0477c9078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb12d45f9a88a2db0b8fd0e0477c9078">&sect;&nbsp;</a></span>ksceUdcdGetDrvList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1331,7 +1272,7 @@ info[64]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a> *&#160;</td>
           <td class="paramname"><em>list</em>, </td>
         </tr>
         <tr>
@@ -1388,8 +1329,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="gadf2a3f2bddec0047b9447c1eba90cd8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">&sect;&nbsp;</a></span>ksceUdcdRegister()</h2>
+<a id="gaaf61a97491be9da151036c9899970d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf61a97491be9da151036c9899970d20">&sect;&nbsp;</a></span>ksceUdcdRegister()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1397,7 +1338,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdRegister </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
           <td class="paramname"><em>drv</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1415,8 +1356,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="gae77811300ecf6782eb2bd68e603d3a81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae77811300ecf6782eb2bd68e603d3a81">&sect;&nbsp;</a></span>ksceUdcdReqCancelAll()</h2>
+<a id="ga57cbabac3687764164596a738c94bd82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57cbabac3687764164596a738c94bd82">&sect;&nbsp;</a></span>ksceUdcdReqCancelAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1424,7 +1365,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdReqCancelAll </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
           <td class="paramname"><em>endp</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1442,8 +1383,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="ga912d7d79a404bfc6939fbe2d866e981a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga912d7d79a404bfc6939fbe2d866e981a">&sect;&nbsp;</a></span>ksceUdcdReqRecv()</h2>
+<a id="gafbf6c9316f9de295724cb002f18c0f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbf6c9316f9de295724cb002f18c0f7a">&sect;&nbsp;</a></span>ksceUdcdReqRecv()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1451,7 +1392,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdReqRecv </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td>
           <td class="paramname"><em>req</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1461,7 +1402,7 @@ info[64]</td>
 <p>Queue a receive request(OUT from host pov) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">req</td><td>- Pointer to a filled out <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> structure</td></tr>
+    <tr><td class="paramname">req</td><td>- Pointer to a filled out UsbbdDeviceRequest structure</td></tr>
   </table>
   </dd>
 </dl>
@@ -1469,8 +1410,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="gafcf76b28b30c36a612e3eed344fa3aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafcf76b28b30c36a612e3eed344fa3aa4">&sect;&nbsp;</a></span>ksceUdcdReqSend()</h2>
+<a id="ga59109cb47393d98c07b011c2827f1236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59109cb47393d98c07b011c2827f1236">&sect;&nbsp;</a></span>ksceUdcdReqSend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1478,7 +1419,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdReqSend </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td>
           <td class="paramname"><em>req</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1488,7 +1429,7 @@ info[64]</td>
 <p>Queue a send request(IN from host pov) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">req</td><td>- Pointer to a filled out <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> structure.</td></tr>
+    <tr><td class="paramname">req</td><td>- Pointer to a filled out UsbbdDeviceRequest structure.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1496,8 +1437,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="ga65ccedf631899c526483cf2f08034e81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65ccedf631899c526483cf2f08034e81">&sect;&nbsp;</a></span>ksceUdcdStall()</h2>
+<a id="gaeb58020e65c06386e549d4d8ad24408d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb58020e65c06386e549d4d8ad24408d">&sect;&nbsp;</a></span>ksceUdcdStall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1505,7 +1446,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdStall </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
           <td class="paramname"><em>endp</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1613,8 +1554,8 @@ info[64]</td>
 
 </div>
 </div>
-<a id="gac4b42b6e886000b962fa71ba289e5bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4b42b6e886000b962fa71ba289e5bb7">&sect;&nbsp;</a></span>ksceUdcdUnregister()</h2>
+<a id="ga9904134ab42742190897f7137c76a831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9904134ab42742190897f7137c76a831">&sect;&nbsp;</a></span>ksceUdcdUnregister()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1622,7 +1563,7 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdUnregister </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
           <td class="paramname"><em>drv</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1711,7 +1652,7 @@ info[64]</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 19 2017 00:46:56 for vitasdk by
+    <li class="footer">Generated on Fri Apr 21 2017 02:31:07 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

@@ -7,7 +7,6 @@ var searchData=
   ['user',['User',['../group__SceAudioencUser.html',1,'']]],
   ['user',['User',['../group__SceAudioInUser.html',1,'']]],
   ['user',['User',['../group__SceAudioUser.html',1,'']]],
-  ['user',['User',['../group__SceAVConfigUser.html',1,'']]],
   ['user',['User',['../group__SceCameraUser.html',1,'']]],
   ['user',['User',['../group__SceCLibUser.html',1,'']]],
   ['user',['User',['../group__SceCommonDialogUser.html',1,'']]],

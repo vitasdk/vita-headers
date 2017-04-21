@@ -10,7 +10,7 @@ var searchData=
   ['st_5fatime',['st_atime',['../group__SceStatUser.html#gaa4fdf932210dbb1abf8b171732efe946',1,'SceIoStat']]],
   ['st_5fctime',['st_ctime',['../group__SceStatUser.html#gaa05df6c104b75d64411e07b73e3c92a8',1,'SceIoStat']]],
   ['st_5fmtime',['st_mtime',['../group__SceStatUser.html#ga3c15df236ec4703d958ab0d8fdbd1ba3',1,'SceIoStat']]],
-  ['st_5fprivate',['st_private',['../group__SceStatUser.html#ga912c5d6a87cc369f86a165d3019bb9b7',1,'SceIoStat']]],
+  ['st_5fprivate',['st_private',['../group__SceStatUser.html#gaf7b69aca53d97b66ebebfa7d2c7309a8',1,'SceIoStat']]],
   ['st_5fsize',['st_size',['../group__SceStatUser.html#ga67a3e4e86264a440da54204caeeafb16',1,'SceIoStat']]],
   ['stack',['stack',['../group__SceThreadMgrUser.html#gaf45401f5a22dfcde99d76b8341837b80',1,'SceKernelThreadInfo']]],
   ['stacksize',['stackSize',['../group__SceThreadMgrUser.html#ga3ea54db9fd9d81dc69a94ee56f3a6c9b',1,'SceKernelThreadInfo']]],
