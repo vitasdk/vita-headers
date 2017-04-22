@@ -92,13 +92,13 @@ $(document).ready(function(){initNavTree('group__SceJpegEncUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/jpegenc.h&gt;</span> </div></div><!-- fragment --><p> Link the library in your Makefile: </p><div class="fragment"><div class="line">-lSceJpegEnc_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/jpegenc.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceJpegEnc_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga63e349420730a8520712029cdacd1aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga63e349420730a8520712029cdacd1aba">sceJpegEncoderInit</a> (SceJpegEncoderContext context, int inWidth, int inHeight, sceJpegEncoderPixelFormat pixelformat, void *outBuffer, int outSize)</td></tr>
-<tr class="memdesc:ga63e349420730a8520712029cdacd1aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a jpeg encoder.  <a href="#ga63e349420730a8520712029cdacd1aba">More...</a><br /></td></tr>
-<tr class="separator:ga63e349420730a8520712029cdacd1aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga021a5c0080a6815131f917d6bbefac8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga021a5c0080a6815131f917d6bbefac8d">sceJpegEncoderInit</a> (SceJpegEncoderContext context, int inWidth, int inHeight, SceJpegEncoderPixelFormat pixelformat, void *outBuffer, int outSize)</td></tr>
+<tr class="memdesc:ga021a5c0080a6815131f917d6bbefac8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a jpeg encoder.  <a href="#ga021a5c0080a6815131f917d6bbefac8d">More...</a><br /></td></tr>
+<tr class="separator:ga021a5c0080a6815131f917d6bbefac8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02de151671088a0fc05d395a36ac6fbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga02de151671088a0fc05d395a36ac6fbe">sceJpegEncoderEnd</a> (SceJpegEncoderContext context)</td></tr>
 <tr class="memdesc:ga02de151671088a0fc05d395a36ac6fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a jpeg encoder.  <a href="#ga02de151671088a0fc05d395a36ac6fbe">More...</a><br /></td></tr>
 <tr class="separator:ga02de151671088a0fc05d395a36ac6fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,9 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga45d153069910d9b91c5f02f9103805e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga45d153069910d9b91c5f02f9103805e6">sceJpegEncoderSetOutputAddr</a> (SceJpegEncoderContext context, void *outBuffer, int outSize)</td></tr>
 <tr class="memdesc:ga45d153069910d9b91c5f02f9103805e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set encoder output address.  <a href="#ga45d153069910d9b91c5f02f9103805e6">More...</a><br /></td></tr>
 <tr class="separator:ga45d153069910d9b91c5f02f9103805e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6f4c24704615070f1a4feac8bda49ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#gae6f4c24704615070f1a4feac8bda49ae">sceJpegEncoderCsc</a> (SceJpegEncoderContext context, void *outBuffer, void *inBuffer, int inPitch, sceJpegEncoderPixelFormat inPixelFormat)</td></tr>
-<tr class="memdesc:gae6f4c24704615070f1a4feac8bda49ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a color conversion from ARGB to YCbCr.  <a href="#gae6f4c24704615070f1a4feac8bda49ae">More...</a><br /></td></tr>
-<tr class="separator:gae6f4c24704615070f1a4feac8bda49ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d32b94253c6b509c781abcc0f490e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga7d32b94253c6b509c781abcc0f490e8e">sceJpegEncoderCsc</a> (SceJpegEncoderContext context, void *outBuffer, void *inBuffer, int inPitch, SceJpegEncoderPixelFormat inPixelFormat)</td></tr>
+<tr class="memdesc:ga7d32b94253c6b509c781abcc0f490e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a color conversion from ARGB to YCbCr.  <a href="#ga7d32b94253c6b509c781abcc0f490e8e">More...</a><br /></td></tr>
+<tr class="separator:ga7d32b94253c6b509c781abcc0f490e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8866ee27a4f90c9c06287d451d6c17c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#gac8866ee27a4f90c9c06287d451d6c17c">sceJpegEncoderGetContextSize</a> (void)</td></tr>
 <tr class="memdesc:gac8866ee27a4f90c9c06287d451d6c17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return required free size to allocate a jpeg encoder.  <a href="#gac8866ee27a4f90c9c06287d451d6c17c">More...</a><br /></td></tr>
 <tr class="separator:gac8866ee27a4f90c9c06287d451d6c17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +128,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga023b9850f7b1eb15acc19470b5dbdf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae6f4c24704615070f1a4feac8bda49ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae6f4c24704615070f1a4feac8bda49ae">&sect;&nbsp;</a></span>sceJpegEncoderCsc()</h2>
+<a id="ga7d32b94253c6b509c781abcc0f490e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d32b94253c6b509c781abcc0f490e8e">&sect;&nbsp;</a></span>sceJpegEncoderCsc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +161,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sceJpegEncoderPixelFormat&#160;</td>
+          <td class="paramtype">SceJpegEncoderPixelFormat&#160;</td>
           <td class="paramname"><em>inPixelFormat</em>&#160;</td>
         </tr>
         <tr>
@@ -179,7 +179,7 @@ Macros</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physical continuous memory block 256 bytes aligned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>- A pointer to a valid ARGB buffer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inPitch</td><td>- Input pitch value in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inPixelFormat</td><td>- A valid sceJpegEncoderPixelFormat set of values</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inPixelFormat</td><td>- A valid SceJpegEncoderPixelFormat set of values</td></tr>
   </table>
   </dd>
 </dl>
@@ -273,8 +273,8 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga63e349420730a8520712029cdacd1aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga63e349420730a8520712029cdacd1aba">&sect;&nbsp;</a></span>sceJpegEncoderInit()</h2>
+<a id="ga021a5c0080a6815131f917d6bbefac8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga021a5c0080a6815131f917d6bbefac8d">&sect;&nbsp;</a></span>sceJpegEncoderInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,7 +300,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sceJpegEncoderPixelFormat&#160;</td>
+          <td class="paramtype">SceJpegEncoderPixelFormat&#160;</td>
           <td class="paramname"><em>pixelformat</em>, </td>
         </tr>
         <tr>
@@ -329,7 +329,7 @@ Macros</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to a big enough allocated memory block </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inWidth</td><td>- Input width in pixels </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inHeight</td><td>- Input height in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pixelformat</td><td>- A valid sceJpegEncoderPixelFormat set of values </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixelformat</td><td>- A valid SceJpegEncoderPixelFormat set of values </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physically continuous memory block 256 bytes aligned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output size in bytes</td></tr>
   </table>
@@ -472,7 +472,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 21 2017 02:31:07 for vitasdk by
+    <li class="footer">Generated on Sat Apr 22 2017 23:13:56 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
