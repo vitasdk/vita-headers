@@ -12,6 +12,7 @@ DEFINE_RULE = re.compile(r' \*     \\defgroup ([a-zA-Z]+) [a-zA-Z ]+')
 USER_GROUP_RULE = re.compile(r' \* \\(user|kernel)group\{([a-zA-Z]+)\}')
 IGNORE_FILES = [
     'vitasdk.h',
+    'vitasdkkern.h',
     'vitasdk/utils.h',
 ]
 
