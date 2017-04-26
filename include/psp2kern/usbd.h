@@ -44,7 +44,7 @@ typedef struct SceUsbdDeviceDescriptor {
 	unsigned char  bNumConfigurations;
 } SceUsbdDeviceDescriptor; /* size = 20 */
 
-struct SceUsbdEndpointDescriptor {
+typedef struct SceUsbdEndpointDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned char  bEndpointAddress;
