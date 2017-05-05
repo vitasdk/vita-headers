@@ -105,9 +105,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdRegisterCompos
 <tr class="memitem:gafe62b8ed21f2bc3b00495cac91f03bf3"><td class="memItemLeft" align="right" valign="top"><a id="gafe62b8ed21f2bc3b00495cac91f03bf3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdUnregisterDriver</b> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
 <tr class="separator:gafe62b8ed21f2bc3b00495cac91f03bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b06692d7a2d4aab33d10fc987c6f6e1"><td class="memItemLeft" align="right" valign="top"><a id="ga2b06692d7a2d4aab33d10fc987c6f6e1"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetDescriptor</b> (int device_id, int index, unsigned char bDescriptorType)</td></tr>
-<tr class="separator:ga2b06692d7a2d4aab33d10fc987c6f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcf34f4b1163d2e0ee9bca4d950e39cd"><td class="memItemLeft" align="right" valign="top"><a id="gafcf34f4b1163d2e0ee9bca4d950e39cd"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetDescriptor</b> (int device_id, void *prevDescriptor, unsigned char bDescriptorType)</td></tr>
+<tr class="separator:gafcf34f4b1163d2e0ee9bca4d950e39cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga13b1880485678d5b9e9030f471160c4b"><td class="memItemLeft" align="right" valign="top"><a id="ga13b1880485678d5b9e9030f471160c4b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdOpenEndpoint</b> (int device_id, <a class="el" href="group__SceUsbdKernel.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *endpoint)</td></tr>
 <tr class="separator:ga13b1880485678d5b9e9030f471160c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -411,7 +411,7 @@ wValue</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 26 2017 16:22:36 for vitasdk by
+    <li class="footer">Generated on Fri May 5 2017 14:26:36 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
