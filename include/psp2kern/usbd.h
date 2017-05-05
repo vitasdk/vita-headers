@@ -81,7 +81,7 @@ int ksceUsbdRegisterDriver(const SceUsbdDriver *driver);
 int ksceUsbdRegisterCompositeLdd(const SceUsbdDriver *driver);
 int ksceUsbdUnregisterDriver(const SceUsbdDriver *driver);
 
-void *ksceUsbdGetDescriptor(int device_id, int index, unsigned char bDescriptorType);
+void *ksceUsbdGetDescriptor(int device_id, void *prevDescriptor, unsigned char bDescriptorType);
 
 // endpoint = NULL to open the default control endpoint
 int ksceUsbdOpenEndpoint(int device_id, SceUsbdEndpointDescriptor *endpoint);
