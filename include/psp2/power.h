@@ -84,9 +84,9 @@ SceBool scePowerIsPowerOnline(void);
 int scePowerGetBatteryLifeTime(void);
 
 /**
- * Returns battery remaining capacity ?
+ * Returns battery remaining capacity
  *
- * @return ?
+ * @return battery remaining capacity in mAh (milliampere hour)
  */
 int scePowerGetBatteryRemainCapacity(void);
 
@@ -98,9 +98,9 @@ int scePowerGetBatteryRemainCapacity(void);
 SceBool scePowerIsLowBattery(void);
 
 /**
- * Returns battery full capacity ?
+ * Returns battery full capacity
  *
- * @return ?
+ * @return battery full capacity in mAh (milliampere hour)
  */
 int scePowerGetBatteryFullCapacity(void);
 
