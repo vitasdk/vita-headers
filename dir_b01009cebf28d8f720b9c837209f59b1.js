@@ -33,6 +33,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "promoterutil.h", "promoterutil_8h_source.html", null ],
     [ "pss.h", "pss_8h_source.html", null ],
     [ "pvf.h", "pvf_8h_source.html", null ],
+    [ "registrymgr.h", "registrymgr_8h_source.html", null ],
     [ "rtc.h", "rtc_8h_source.html", null ],
     [ "screenshot.h", "screenshot_8h_source.html", null ],
     [ "shellutil.h", "shellutil_8h_source.html", null ],

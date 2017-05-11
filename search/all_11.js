@@ -11,6 +11,7 @@ var searchData=
   ['runclocks',['runClocks',['../group__SceThreadMgrUser.html#gaae5d077149cdb57c93f4b6509acded5a',1,'SceKernelThreadInfo']]],
   ['rx',['rx',['../group__SceCtrlUser.html#ga5323c52f9aecefbffe336b13dcc95bf0',1,'SceCtrlData']]],
   ['ry',['ry',['../group__SceCtrlUser.html#ga78916a922b10ff5cb943ad2034980117',1,'SceCtrlData']]],
+  ['registry_20manager_20library',['Registry Manager Library',['../group__SceRegistryMgr.html',1,'']]],
   ['random_20number_20library',['Random Number Library',['../group__SceRng.html',1,'']]],
   ['real_2dtime_20clock_20library',['Real-time Clock Library',['../group__SceRtc.html',1,'']]]
 ];

@@ -4,5 +4,6 @@ var group__SystemParams =
     [ "Music Exporting Library", "group__SceMusicExport.html", "group__SceMusicExport" ],
     [ "Photo Export Library", "group__ScePhotoExport.html", "group__ScePhotoExport" ],
     [ "PSS Code Memory Handling", "group__ScePss.html", "group__ScePss" ],
+    [ "Registry Manager Library", "group__SceRegistryMgr.html", "group__SceRegistryMgr" ],
     [ "ScreenShot Library", "group__SceScreenShot.html", "group__SceScreenShot" ]
 ];
