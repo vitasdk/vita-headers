@@ -84,9 +84,9 @@ SceBool scePowerIsPowerOnline(void);
 int scePowerGetBatteryLifeTime(void);
 
 /**
- * Returns battery remaining capacity ?
+ * Returns battery remaining capacity
  *
- * @return ?
+ * @return battery remaining capacity in mAh (milliampere hour)
  */
 int scePowerGetBatteryRemainCapacity(void);
 
@@ -98,11 +98,39 @@ int scePowerGetBatteryRemainCapacity(void);
 SceBool scePowerIsLowBattery(void);
 
 /**
- * Returns battery full capacity ?
+ * Returns battery full capacity
  *
- * @return ?
+ * @return battery full capacity in mAh (milliampere hour)
  */
 int scePowerGetBatteryFullCapacity(void);
+
+/**
+ * Returns battery temperature
+ *
+ * @return temperature in degrees celcius * 100
+ */
+int scePowerGetBatteryTemp(void);
+
+/**
+ * Returns battery voltage
+ *
+ * @return battery voltage in mV (millivolts)
+ */
+int scePowerGetBatteryVolt(void);
+
+/**
+ * Returns battery state of health
+ *
+ * @return battery state of health percent
+ */
+int scePowerGetBatterySOH(void);
+
+/**
+ * Returns battery cycle count
+ *
+ * @return battery cycle count
+ */
+int scePowerGetBatteryCycleCount(void);
 
 /**
  * Returns CPU clock frequency
