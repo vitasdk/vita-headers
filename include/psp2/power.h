@@ -114,7 +114,7 @@ int scePowerGetBatteryTemp(void);
 /**
  * Returns battery voltage
  *
- * @return battery voltage in kilo volts
+ * @return battery voltage in mV (millivolts)
  */
 int scePowerGetBatteryVolt(void);
 
