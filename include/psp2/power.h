@@ -105,6 +105,34 @@ SceBool scePowerIsLowBattery(void);
 int scePowerGetBatteryFullCapacity(void);
 
 /**
+ * Returns battery temperature
+ *
+ * @return temperature in degrees celcius * 100
+ */
+int scePowerGetBatteryTemp(void);
+
+/**
+ * Returns battery voltage
+ *
+ * @return battery voltage in kilo volts
+ */
+int scePowerGetBatteryVolt(void);
+
+/**
+ * Returns battery state of health
+ *
+ * @return battery state of health percent
+ */
+int scePowerGetBatterySOH(void);
+
+/**
+ * Returns battery cycle count
+ *
+ * @return battery cycle count
+ */
+int scePowerGetBatteryCycleCount(void);
+
+/**
  * Returns CPU clock frequency
  *
  * @return CPU clock frequency in Mhz
