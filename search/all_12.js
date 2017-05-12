@@ -152,7 +152,7 @@ var searchData=
   ['sce_5fsystem_5fparam_5fid_5fusername',['SCE_SYSTEM_PARAM_ID_USERNAME',['../group__SceSystemParamUser.html#ggab39a415800ebd0d977c477376649649ba60fd28ac53ae32ef8b766a73752cb995',1,'system_param.h']]],
   ['sce_5fsystem_5fparam_5flang_5fchinese_5fs',['SCE_SYSTEM_PARAM_LANG_CHINESE_S',['../group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531ab3d4e7cd60acef9b2f3526a11afb7a54',1,'system_param.h']]],
   ['sce_5fsystem_5fparam_5flang_5fchinese_5ft',['SCE_SYSTEM_PARAM_LANG_CHINESE_T',['../group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531a391ec6df3f7b3b8d850c1c37b4077961',1,'system_param.h']]],
-  ['sce_5fsystem_5fparam_5flang_5fpolish_5fbr',['SCE_SYSTEM_PARAM_LANG_POLISH_BR',['../group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531a0a3c87a09fb37d8a1c21a15ffb9ca7e5',1,'system_param.h']]],
+  ['sce_5fsystem_5fparam_5flang_5fportuguese_5fbr',['SCE_SYSTEM_PARAM_LANG_PORTUGUESE_BR',['../group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531ac2aa31693fdcfeabee0d9ff739caa7f6',1,'system_param.h']]],
   ['sce_5fsystem_5fparam_5ftime_5fformat_5f12hr',['SCE_SYSTEM_PARAM_TIME_FORMAT_12HR',['../group__SceSystemParamUser.html#ggaad393aa3e173d7f081ab4bbc6ba5027da2d56d36b76a40ec7a0b73e4144965fa8',1,'system_param.h']]],
   ['sce_5fsystem_5fparam_5ftime_5fformat_5f24hr',['SCE_SYSTEM_PARAM_TIME_FORMAT_24HR',['../group__SceSystemParamUser.html#ggaad393aa3e173d7f081ab4bbc6ba5027da8c7aac731da6a34a4fcd9442534b9188',1,'system_param.h']]],
   ['sce_5fsystem_5fparam_5fusername_5fmaxsize',['SCE_SYSTEM_PARAM_USERNAME_MAXSIZE',['../group__SceSystemParamUser.html#ga4c6088344a220d81300f2f117d755e38',1,'system_param.h']]],

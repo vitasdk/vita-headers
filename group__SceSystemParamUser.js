@@ -14,7 +14,7 @@ var group__SceSystemParamUser =
       [ "SCE_SYSTEM_PARAM_ID_TIME_ZONE", "group__SceSystemParamUser.html#ggab39a415800ebd0d977c477376649649ba80c4a1bcce663be500af1499e721a5c1", null ],
       [ "SCE_SYSTEM_PARAM_LANG_CHINESE_T", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531a391ec6df3f7b3b8d850c1c37b4077961", null ],
       [ "SCE_SYSTEM_PARAM_LANG_CHINESE_S", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531ab3d4e7cd60acef9b2f3526a11afb7a54", null ],
-      [ "SCE_SYSTEM_PARAM_LANG_POLISH_BR", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531a0a3c87a09fb37d8a1c21a15ffb9ca7e5", null ],
+      [ "SCE_SYSTEM_PARAM_LANG_PORTUGUESE_BR", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531ac2aa31693fdcfeabee0d9ff739caa7f6", null ],
       [ "SCE_SYSTEM_PARAM_DATE_FORMAT_YYYYMMDD", "group__SceSystemParamUser.html#gga5a77d65f4abba81d4456fa6ba8136e24a8fffe26842775a390e3bb8e8540922a3", null ],
       [ "SCE_SYSTEM_PARAM_DATE_FORMAT_DDMMYYYY", "group__SceSystemParamUser.html#gga5a77d65f4abba81d4456fa6ba8136e24af7ab2d73ba07983d7a60cc64a14807f5", null ],
       [ "SCE_SYSTEM_PARAM_DATE_FORMAT_MMDDYYYY", "group__SceSystemParamUser.html#gga5a77d65f4abba81d4456fa6ba8136e24a4ba9e05e96e5bb192c3cec13df4cbbd4", null ],
@@ -32,7 +32,7 @@ var group__SceSystemParamUser =
     [ "SCE_SYSTEM_PARAM_ID_USERNAME", "group__SceSystemParamUser.html#ggab39a415800ebd0d977c477376649649ba60fd28ac53ae32ef8b766a73752cb995", null ],
     [ "SCE_SYSTEM_PARAM_LANG_CHINESE_S", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531ab3d4e7cd60acef9b2f3526a11afb7a54", null ],
     [ "SCE_SYSTEM_PARAM_LANG_CHINESE_T", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531a391ec6df3f7b3b8d850c1c37b4077961", null ],
-    [ "SCE_SYSTEM_PARAM_LANG_POLISH_BR", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531a0a3c87a09fb37d8a1c21a15ffb9ca7e5", null ],
+    [ "SCE_SYSTEM_PARAM_LANG_PORTUGUESE_BR", "group__SceSystemParamUser.html#ggae33c78feb670de33d2abf21ec0624531ac2aa31693fdcfeabee0d9ff739caa7f6", null ],
     [ "SCE_SYSTEM_PARAM_TIME_FORMAT_12HR", "group__SceSystemParamUser.html#ggaad393aa3e173d7f081ab4bbc6ba5027da2d56d36b76a40ec7a0b73e4144965fa8", null ],
     [ "SCE_SYSTEM_PARAM_TIME_FORMAT_24HR", "group__SceSystemParamUser.html#ggaad393aa3e173d7f081ab4bbc6ba5027da8c7aac731da6a34a4fcd9442534b9188", null ]
 ];
