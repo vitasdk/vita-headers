@@ -9,6 +9,5 @@ var searchData=
   ['scename',['SceName',['../group__SceTypesUser.html#ga024ba7ccff867a062790a9d0d3d4effe',1,'SceName():&#160;types.h'],['../group__SceTypesKernel.html#ga024ba7ccff867a062790a9d0d3d4effe',1,'SceName():&#160;types.h']]],
   ['sceoff',['SceOff',['../group__SceTypesUser.html#gac20a0c334ac3c41e9a7b295e31f6b111',1,'SceOff():&#160;types.h'],['../group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111',1,'SceOff():&#160;types.h']]],
   ['scepid',['ScePID',['../group__SceTypesUser.html#ga198945239e12673127404eae56f28a91',1,'ScePID():&#160;types.h'],['../group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91',1,'ScePID():&#160;types.h']]],
-  ['scepowercallback',['ScePowerCallback',['../group__ScePowerUser.html#gac6557813efad4f274c4f3d4ecdb07da0',1,'power.h']]],
   ['sceuid',['SceUID',['../group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663',1,'SceUID():&#160;types.h'],['../group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663',1,'SceUID():&#160;types.h']]]
 ];

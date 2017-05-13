@@ -270,7 +270,7 @@ Y position. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga78562f0c77e1e77f0ddfe8c9e4a1b184"></a><a class="el" href="group__SceTouchUser.html#structSceTouchReport">SceTouchReport</a></td>
 <td class="fieldname">
-report[<a class="el" href="group__SceTouchUser.html#gga4f126a0a9b1d8c6a8f46a051ef8830bbaa3e4b337c895c44be3754e0e532a96fb">SCE_TOUCH_MAX_REPORT</a>]</td>
+report[<a class="el" href="group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329aa3e4b337c895c44be3754e0e532a96fb">SCE_TOUCH_MAX_REPORT</a>]</td>
 <td class="fielddoc">
 Touch reports. </td></tr>
 <tr><td class="fieldtype">
@@ -296,24 +296,6 @@ Data timestamp. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga4f126a0a9b1d8c6a8f46a051ef8830bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4f126a0a9b1d8c6a8f46a051ef8830bb">&sect;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4f126a0a9b1d8c6a8f46a051ef8830bbaa3e4b337c895c44be3754e0e532a96fb"></a>SCE_TOUCH_MAX_REPORT&#160;</td><td class="fielddoc"><p>FIXME 6 on front | 4 on back. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="gadbaf9202177df73e6880eab6e6aab329"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadbaf9202177df73e6880eab6e6aab329">&sect;&nbsp;</a></span>anonymous enum</h2>
 
@@ -325,17 +307,8 @@ Data timestamp. </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Port numbers of touch panels. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceTouchUser.html#ga1be514c50dff91429a192c78f227f4b0" title="Get touch data (Blocking) ">sceTouchRead()</a> </dd>
-<dd>
-<a class="el" href="group__SceTouchUser.html#ga3abee1c2d7d15f632f80b3c3f3a5a680" title="Get touch data (Polling) ">sceTouchPeek()</a> </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadbaf9202177df73e6880eab6e6aab329a0d2580e55567d3c921b1031a4684f6a7"></a>SCE_TOUCH_PORT_FRONT&#160;</td><td class="fielddoc"><p>Front touch panel id. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggadbaf9202177df73e6880eab6e6aab329a2e861439acd3722f5c25f1a13e0b8758"></a>SCE_TOUCH_PORT_BACK&#160;</td><td class="fielddoc"><p>Back touch panel id. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggadbaf9202177df73e6880eab6e6aab329a60ab295a1586005154cf1c5bb888336f"></a>SCE_TOUCH_PORT_MAX_NUM&#160;</td><td class="fielddoc"><p>Number of touch panels. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadbaf9202177df73e6880eab6e6aab329aa3e4b337c895c44be3754e0e532a96fb"></a>SCE_TOUCH_MAX_REPORT&#160;</td><td class="fielddoc"><p>FIXME 6 on front | 4 on back. </p>
 </td></tr>
 </table>
 
@@ -353,13 +326,40 @@ Data timestamp. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sampling port setting of the touch panel. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceTouchUser.html#ga8347c6a78379ee67b5f8bc1964bd7e7f" title="Set sampling state of touch panel. ">sceTouchSetSamplingState()</a> </dd></dl>
+<p>Port numbers of touch panels. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceTouchUser.html#ga1be514c50dff91429a192c78f227f4b0" title="Get touch data (Blocking) ">sceTouchRead()</a> </dd>
+<dd>
+<a class="el" href="group__SceTouchUser.html#ga3abee1c2d7d15f632f80b3c3f3a5a680" title="Get touch data (Polling) ">sceTouchPeek()</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7495a48740c9d555f7fbcb48246dbd93a0d2580e55567d3c921b1031a4684f6a7"></a>SCE_TOUCH_PORT_FRONT&#160;</td><td class="fielddoc"><p>Front touch panel id. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7495a48740c9d555f7fbcb48246dbd93a2e861439acd3722f5c25f1a13e0b8758"></a>SCE_TOUCH_PORT_BACK&#160;</td><td class="fielddoc"><p>Back touch panel id. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7495a48740c9d555f7fbcb48246dbd93a60ab295a1586005154cf1c5bb888336f"></a>SCE_TOUCH_PORT_MAX_NUM&#160;</td><td class="fielddoc"><p>Number of touch panels. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
 <a id="ga9a3be2d66956bd67c0b66c32d8b30f17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9a3be2d66956bd67c0b66c32d8b30f17">&sect;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sampling port setting of the touch panel. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceTouchUser.html#ga8347c6a78379ee67b5f8bc1964bd7e7f" title="Set sampling state of touch panel. ">sceTouchSetSamplingState()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga2dbb833ef0dcc466dd02ee76badaf709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dbb833ef0dcc466dd02ee76badaf709">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -632,7 +632,7 @@ Data timestamp. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat May 13 2017 08:51:54 for vitasdk by
+    <li class="footer">Generated on Sat May 13 2017 11:36:36 for vitasdk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
