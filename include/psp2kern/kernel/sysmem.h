@@ -147,7 +147,43 @@ typedef struct {
 SceUID ksceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
 SceUID ksceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
 SceUID ksceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
+
+/**
+ * Gets an object from a UID.
+ * 
+ * This retains the object internally! You must call `ksceKernelUidRelease` 
+ * after you are done using it.
+ *
+ * @param[in]  uid   The uid
+ * @param      cls   The class
+ * @param      obj   The object
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceKernelGetObjForUid(SceUID uid, SceClass *cls, SceObjectBase **obj);
+
+/**
+ * Retains an object referenced by the UID.
+ * 
+ * This increases the internal reference count.
+ *
+ * @param[in]  uid   The uid
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelUidRetain(SceUID uid);
+
+/**
+ * Releases an object referenced by the UID.
+ * 
+ * This decreases the internal reference count.
+ *
+ * @param[in]  uid   The uid
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelUidRelease(SceUID uid);
+
 SceClass *ksceKernelGetUidClass(void);
 typedef int (*SceClassCallback)(void *item);
 int ksceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, size_t itemsize, SceClassCallback create, SceClassCallback destroy);
@@ -164,6 +200,8 @@ int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, size_t len);
 int ksceKernelMapBlockUserVisible(SceUID uid);
 
 int ksceKernelGetPaddr(void *addr, uintptr_t *paddr);
+
+int ksceSysrootIsManufacturingMode(void);
 
 #ifdef __cplusplus
 }
