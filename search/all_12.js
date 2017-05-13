@@ -600,7 +600,7 @@ var searchData=
   ['sceobjectbase',['SceObjectBase',['../group__SceSysmemKernel.html#structSceObjectBase',1,'']]],
   ['sceoff',['SceOff',['../group__SceTypesUser.html#gac20a0c334ac3c41e9a7b295e31f6b111',1,'SceOff():&#160;types.h'],['../group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111',1,'SceOff():&#160;types.h']]],
   ['scepid',['ScePID',['../group__SceTypesUser.html#ga198945239e12673127404eae56f28a91',1,'ScePID():&#160;types.h'],['../group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91',1,'ScePID():&#160;types.h']]],
-  ['scepowercallback',['ScePowerCallback',['../group__ScePowerUser.html#gabe5576480a18ff444a958cfb22ae2312',1,'power.h']]],
+  ['scepowercallback',['ScePowerCallback',['../group__ScePowerUser.html#ga2905d0fcc48aa6fb36b6edf2bf78cb2c',1,'power.h']]],
   ['scepowergetarmclockfrequency',['scePowerGetArmClockFrequency',['../group__ScePowerUser.html#ga43c4f0084152cff03dc037525a5dd311',1,'power.h']]],
   ['scepowergetbatterycyclecount',['scePowerGetBatteryCycleCount',['../group__ScePowerUser.html#gac46c2fbaf0a6216917a886277aa98649',1,'power.h']]],
   ['scepowergetbatteryfullcapacity',['scePowerGetBatteryFullCapacity',['../group__ScePowerUser.html#gab183cfc3f4f67d1e6137983c18155337',1,'power.h']]],

@@ -1,5 +1,12 @@
 var group__ScePowerUser =
 [
+    [ "ScePowerCallback", "group__ScePowerUser.html#ga2905d0fcc48aa6fb36b6edf2bf78cb2c", [
+      [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983", null ],
+      [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d", null ],
+      [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38", null ],
+      [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082", null ],
+      [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290", null ]
+    ] ],
     [ "scePowerGetArmClockFrequency", "group__ScePowerUser.html#ga43c4f0084152cff03dc037525a5dd311", null ],
     [ "scePowerGetBatteryCycleCount", "group__ScePowerUser.html#gac46c2fbaf0a6216917a886277aa98649", null ],
     [ "scePowerGetBatteryFullCapacity", "group__ScePowerUser.html#gab183cfc3f4f67d1e6137983c18155337", null ],
