@@ -33,6 +33,7 @@
 #include <psp2/promoterutil.h>
 #include <psp2/pss.h>
 #include <psp2/pvf.h>
+#include <psp2/registrymgr.h>
 #include <psp2/rtc.h>
 #include <psp2/screenshot.h>
 #include <psp2/shellutil.h>
@@ -51,6 +52,7 @@
 #include <psp2/io/stat.h>
 
 #include <psp2/kernel/clib.h>
+#include <psp2/kernel/dmac.h>
 #include <psp2/kernel/error.h>
 #include <psp2/kernel/loadcore.h>
 #include <psp2/kernel/modulemgr.h>
