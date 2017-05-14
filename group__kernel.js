@@ -9,6 +9,7 @@ var group__kernel =
     [ "Process Manager Library", "group__SceProcessmgr.html", "group__SceProcessmgr" ],
     [ "Thread Manager Library", "group__SceThreadMgr.html", "group__SceThreadMgr" ],
     [ "System Memory Library", "group__SceSysmem.html", "group__SceSysmem" ],
+    [ "Direct Memory Access Controller", "group__SceDmacMgr.html", "group__SceDmacMgr" ],
     [ "OpenPsid Library", "group__SceOpenPsid.html", "group__SceOpenPsid" ],
     [ "Random Number Library", "group__SceRng.html", "group__SceRng" ],
     [ "Suspend Library", "group__SceSuspend.html", "group__SceSuspend" ],

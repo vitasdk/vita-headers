@@ -1,6 +1,7 @@
 var dir_c85e5402da127eb3731401e7b9ea3cf3 =
 [
     [ "clib.h", "clib_8h_source.html", null ],
+    [ "dmac.h", "kernel_2dmac_8h_source.html", null ],
     [ "error.h", "error_8h_source.html", null ],
     [ "loadcore.h", "loadcore_8h_source.html", null ],
     [ "modulemgr.h", "kernel_2modulemgr_8h_source.html", null ],

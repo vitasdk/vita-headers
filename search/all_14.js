@@ -15,6 +15,7 @@ var searchData=
   ['user',['User',['../group__SceDevCtlUser.html',1,'']]],
   ['user',['User',['../group__SceDirEntUser.html',1,'']]],
   ['user',['User',['../group__SceDisplayUser.html',1,'']]],
+  ['user',['User',['../group__SceDmacMgrUser.html',1,'']]],
   ['user',['User',['../group__SceFcntlUser.html',1,'']]],
   ['user',['User',['../group__SceFiberUser.html',1,'']]],
   ['user',['User',['../group__SceGxmUser.html',1,'']]],
