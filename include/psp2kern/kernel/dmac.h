@@ -1,6 +1,6 @@
 /**
- * \usergroup{SceKernelDmacMgr}
- * \usage{psp2kern/kernel/dmac.h,SceKernelDmacMgr_stub}
+ * \kernelgroup{SceKernelDmacMgr}
+ * \usage{psp2kern/kernel/dmac.h,SceDmacmgrForDriver_stub}
  */
 
 
