@@ -18,6 +18,7 @@
 #include <psp2kern/io/stat.h>
 
 #include <psp2kern/kernel/cpu.h>
+#include <psp2kern/kernel/dmac.h>
 #include <psp2kern/kernel/intrmgr.h>
 #include <psp2kern/kernel/modulemgr.h>
 #include <psp2kern/kernel/processmgr.h>
