@@ -4,6 +4,7 @@
 #include <vitasdk/utils.h>
 
 #include <psp2kern/types.h>
+#include <psp2kern/bt.h>
 #include <psp2kern/ctrl.h>
 #include <psp2kern/display.h>
 #include <psp2kern/sblacmgr.h>
@@ -25,6 +26,8 @@
 #include <psp2kern/kernel/suspend.h>
 #include <psp2kern/kernel/sysmem.h>
 #include <psp2kern/kernel/threadmgr.h>
+
+#include <psp2kern/lowio/gpio.h>
 
 #include <psp2kern/net/net.h>
 
