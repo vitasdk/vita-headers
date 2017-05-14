@@ -1731,6 +1731,8 @@ modules:
           ksceKernelGetPidContext: 0x2ECF7944
           ksceKernelMapBlockUserVisible: 0x58D21746
           ksceKernelUnmapMemBlock: 0xFFCD9B60
+          ksceKernelUidRetain: 0xF5C84B7
+          ksceKernelUidRelease: 0x149885C4
       SceSysmemForKernel:
         kernel: true
         nid: 0x63A519E5
@@ -1801,7 +1803,6 @@ modules:
           ksceSysrootIsSafeMode: 0x834439A7
           ksceSysrootIsUpdateMode: 0xB0E1FC67
           ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
-          ksceSysrootUseExternalStorage: 0x55392965
           ksceSysrootUseInternalStorage: 0x50FE3B4D
       SceKernelSuspendForDriver:
         kernel: true
@@ -2072,6 +2073,7 @@ modules:
           ksceKernelGetModuleInternal: 0xFE303863
           ksceKernelGetModuleInfo: 0xD269F915
           ksceKernelLoadModuleForPid: 0xFA21D8CB
+          ksceKernelStartModuleForPid: 0x6DF745D5
           ksceKernelStopModuleForPid: 0x7BB4CE54
           ksceKernelUnloadModuleForPid: 0x5972E2CC
       SceModulemgrForDriver:
