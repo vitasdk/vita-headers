@@ -5740,3 +5740,18 @@ modules:
           sce_paf_private_strlen: 0xF5A2AA0C
           sce_paf_private_snprintf: 0x4E0D907E
           sce_paf_private_strchr: 0x1A22784C
+  SceKernelDmacMgr:
+    nid: 0xF926C804
+    libraries:
+      SceDmacmgr:
+        kernel: false
+        nid: 0xA9E5B2F0
+        functions:
+          sceDmacMemcpy: 0x9B2FF739
+          sceDmacMemset: 0xA4C33F11
+      SceDmacmgrForDriver:
+        kernel: true
+        nid: 0xEB4E3738
+        functions:
+          ksceDmacMemcpy: 0x00896B11
+          ksceDmacMemset: 0x4BAC049B
