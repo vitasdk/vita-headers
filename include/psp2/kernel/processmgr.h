@@ -57,6 +57,24 @@ int sceKernelExitProcess(int res);
 int sceKernelPowerTick(int type);
 
 /***
+ * Locks certain timers from triggering.
+ *
+ * @param[in] type - One of ::KernelPowerTickType
+ *
+ * @return 0
+*/
+int sceKernelPowerLock(int type);
+
+/***
+ * Unlocks certain timers.
+ *
+ * @param[in] type - One of ::KernelPowerTickType
+ *
+ * @return 0
+*/
+int sceKernelPowerUnlock(int type);
+
+/***
  * Get the process time of the current process.
  *
  * @param[out] type - Pointer to a ::SceKernelSysClock structure which will receive the process time.
