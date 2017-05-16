@@ -1,0 +1,43 @@
+type: map
+mapping:
+  version:
+    type: int
+  firmware:
+    type: float
+  modules:
+    type: map
+    matching-rule: 'any'
+    mapping:
+      regex;(^\w+$):
+        type: map
+        mapping:
+          nid:
+            type: text
+            pattern: "^0x[0-9A-F]{1,8}$"
+          libraries:
+            type: map
+            matching-rule: 'any'
+            mapping:
+              regex;(^\w+$):
+                type: map
+                mapping:
+                  nid:
+                    type: text
+                    pattern: "^0x[0-9A-F]{1,8}$"
+                  kernel:
+                    type: bool
+                  variables:
+                    type: map
+                    matching-rule: 'any'
+                    mapping:
+                      regex;(^\w+$):
+                        type: text
+                        pattern: "^0x[0-9A-F]{1,8}$"                    
+                  functions:
+                    type: map
+                    matching-rule: 'any'
+                    mapping:
+                      regex;(^\w+$):
+                        type: text
+                        pattern: "^0x[0-9A-F]{1,8}$"
+ 
