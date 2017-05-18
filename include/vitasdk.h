@@ -11,6 +11,7 @@
 #include <psp2/audioenc.h>
 #include <psp2/audioin.h>
 #include <psp2/audioout.h>
+#include <psp2/avconfig.h>
 #include <psp2/camera.h>
 #include <psp2/common_dialog.h>
 #include <psp2/ctrl.h>
@@ -33,6 +34,7 @@
 #include <psp2/promoterutil.h>
 #include <psp2/pss.h>
 #include <psp2/pvf.h>
+#include <psp2/registrymgr.h>
 #include <psp2/rtc.h>
 #include <psp2/screenshot.h>
 #include <psp2/shellutil.h>
@@ -41,6 +43,7 @@
 #include <psp2/system_param.h>
 #include <psp2/touch.h>
 #include <psp2/udcd.h>
+#include <psp2/usbd.h>
 #include <psp2/usbserial.h>
 #include <psp2/usbstorvstor.h>
 #include <psp2/videodec.h>
@@ -51,6 +54,7 @@
 #include <psp2/io/stat.h>
 
 #include <psp2/kernel/clib.h>
+#include <psp2/kernel/dmac.h>
 #include <psp2/kernel/error.h>
 #include <psp2/kernel/loadcore.h>
 #include <psp2/kernel/modulemgr.h>
