@@ -1,6 +1,6 @@
 ﻿/**
  * \usergroup{SceAVConfig}
- * \usage{psp2/avconfig.h,-lSceAVConfig_stub}
+ * \usage{psp2/avconfig.h,SceAVConfig_stub}
  */
 
 

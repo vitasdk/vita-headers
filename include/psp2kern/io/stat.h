@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceStat}
- * \usage{psp2kern/io/stat.h,-lSceIofilemgrForDriver_stub}
+ * \usage{psp2kern/io/stat.h,SceIofilemgrForDriver_stub}
  */
 
 

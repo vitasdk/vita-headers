@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceDevCtl}
- * \usage{psp2kern/io/devctl.h,-lSceIofilemgrForDriver_stub}
+ * \usage{psp2kern/io/devctl.h,SceIofilemgrForDriver_stub}
  */
 
 

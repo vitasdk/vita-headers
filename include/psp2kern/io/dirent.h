@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceDirEnt}
- * \usage{psp2kern/io/dirent.h,-lSceIofilemgrForDriver_stub}
+ * \usage{psp2kern/io/dirent.h,SceIofilemgrForDriver_stub}
  */
 
 

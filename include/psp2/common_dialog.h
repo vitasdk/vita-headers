@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceCommonDialog}
- * \usage{psp2/common_dialog.h,-lSceCommonDialog_stub}
+ * \usage{psp2/common_dialog.h,SceCommonDialog_stub}
  */
 
 
