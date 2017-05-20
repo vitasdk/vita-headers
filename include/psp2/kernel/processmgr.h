@@ -14,19 +14,19 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceKernelProcessPrioritySystem {
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_HIGH	= 32,
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_DEFAULT	= 96,
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_LOW		= 159
-};
+} SceKernelProcessPrioritySystem;
 
-enum {
+typedef enum SceKernelProcessPriorityUser {
 	SCE_KERNEL_PROCESS_PRIORITY_USER_HIGH		= 64,
 	SCE_KERNEL_PROCESS_PRIORITY_USER_DEFAULT	= 96,
 	SCE_KERNEL_PROCESS_PRIORITY_USER_LOW		= 127
-};
+} SceKernelProcessPriorityUser;
 
-enum {
+typedef enum SceKernelPowerTickType {
 	/** Cancel all timers */
 	SCE_KERNEL_POWER_TICK_DEFAULT				= 0,
 	/** Cancel automatic suspension timer */
@@ -35,7 +35,7 @@ enum {
 	SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF		= 4,
 	/** Cancel OLED dimming timer */
 	SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING	= 6
-};
+} SceKernelPowerTickType;
 
 /***
  * Exit current Process with specified return code
@@ -50,29 +50,29 @@ int sceKernelExitProcess(int res);
 /***
  * Cancel specified idle timers to prevent entering in power save processing.
  *
- * @param[in] type - One of ::KernelPowerTickType
+ * @param[in] type - One of ::SceKernelPowerTickType
  *
  * @return 0
 */
-int sceKernelPowerTick(int type);
+int sceKernelPowerTick(SceKernelPowerTickType type);
 
 /***
  * Locks certain timers from triggering.
  *
- * @param[in] type - One of ::KernelPowerTickType
+ * @param[in] type - One of ::SceKernelPowerTickType
  *
  * @return 0
 */
-int sceKernelPowerLock(int type);
+int sceKernelPowerLock(SceKernelPowerTickType type);
 
 /***
  * Unlocks certain timers.
  *
- * @param[in] type - One of ::KernelPowerTickType
+ * @param[in] type - One of ::SceKernelPowerTickType
  *
  * @return 0
 */
-int sceKernelPowerUnlock(int type);
+int sceKernelPowerUnlock(SceKernelPowerTickType type);
 
 /***
  * Get the process time of the current process.

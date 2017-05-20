@@ -14,15 +14,15 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceAppUtilSaveDataRemoveMode {
 	SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_DEFAULT = 0,
-};
+} SceAppUtilSaveDataDataRemoveMode;
 
-enum {
+typedef enum SceAppUtilSaveDataSaveMode {
 	SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_FILE = 0,
-};
+} SceAppUtilSaveDataDataSaveMode;
 
-enum {
+typedef enum SceAppUtilErrorCode {
 	SCE_APPUTIL_ERROR_PARAMETER			= 0x80100600,
 	SCE_APPUTIL_ERROR_NOT_INITIALIZED		= 0x80100601,
 	SCE_APPUTIL_ERROR_NO_MEMORY			= 0x80100602,
@@ -35,7 +35,7 @@ enum {
 	SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_QUOTA	= 0x80100642,
 	SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_FS		= 0x80100643,
 	SCE_APPUTIL_ERROR_PHOTO_DEVICE_NOT_FOUND	= 0x80100680,
-};
+} SceAppUtilErrorCode;
 
 typedef unsigned int SceAppUtilBootAttribute;
 typedef unsigned int SceAppUtilAppEventType;

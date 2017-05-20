@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceShellUtilLockType {
 	SCE_SHELL_UTIL_LOCK_TYPE_PS_BTN				= 0x1,
 	SCE_SHELL_UTIL_LOCK_TYPE_QUICK_MENU			= 0x2,
 	SCE_SHELL_UTIL_LOCK_TYPE_POWEROFF_MENU		= 0x4,
@@ -23,15 +23,15 @@ enum {
 	SCE_SHELL_UTIL_LOCK_TYPE_UNK100				= 0x100,
 	SCE_SHELL_UTIL_LOCK_TYPE_UNK200				= 0x200,
 	SCE_SHELL_UTIL_LOCK_TYPE_MUSIC_PLAYER		= 0x400,
-	SCE_SHELL_UTIL_LOCK_TYPE_PS_BTN_2			= 0x800, //! without the stop symbol
-};
+	SCE_SHELL_UTIL_LOCK_TYPE_PS_BTN_2			= 0x800 //! without the stop symbol
+} SceShellUtilLockType;
 
-enum {
+typedef enum SceShellUtilLockMode {
 	SCE_SHELL_UTIL_LOCK_MODE_LOCK		= 0x1,
-	SCE_SHELL_UTIL_LOCK_MODE_UNLOCK		= 0x2,
-};
+	SCE_SHELL_UTIL_LOCK_MODE_UNLOCK		= 0x2
+} SceShellUtilLockMode;
 
-typedef void (SceShellUtilEventHandler)(int result, int mode, int type, void *userData);
+typedef void (SceShellUtilEventHandler)(int result, SceShellUtilLockMode mode, SceShellUtilLockType type, void *userData);
 
 /**
  * Init events
@@ -56,20 +56,20 @@ int sceShellUtilRegisterEventHandler(SceShellUtilEventHandler *handler, void *us
 /**
  * Lock event
  *
- * @param[in] type - One of ::ShellUtilLockType
+ * @param[in] type - One of ::SceShellUtilLockType
  *
  * @return 0 on success, < 0 on error.
 */
-int sceShellUtilLock(int type);
+int sceShellUtilLock(SceShellUtilLockType type);
 
 /**
  * Unlock event
  *
- * @param[in] type - One of ::ShellUtilLockType
+ * @param[in] type - One of ::SceShellUtilLockType
  *
  * @return 0 on success, < 0 on error.
 */
-int sceShellUtilUnlock(int type);
+int sceShellUtilUnlock(SceShellUtilLockType type);
 
 #ifdef __cplusplus
 }

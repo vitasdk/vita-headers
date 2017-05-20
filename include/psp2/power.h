@@ -14,14 +14,14 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum ScePowerCallbackType {
 	/*indicates the unit is suspending, seems to occur due to inactivity*/
 	SCE_POWER_CB_SUSPENDING	= 0x00010000,
 	/*indicates the unit is resuming from suspend mode*/
 	SCE_POWER_CB_RESUMING	= 0x00020000,
 	/*indicates the unit has finish resuming from suspend mode*/
 	SCE_POWER_CB_RESUME_COMPLETE	= 0x00040000
-};
+}ScePowerCallbackType;
 
 /* Callbacks */
 

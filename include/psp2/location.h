@@ -18,7 +18,7 @@ extern "C" {
 #define SCE_LOCATION_DATA_INVALID (-9999.0)
 
 /** Location error codes */
-enum {
+typedef enum SceLocationErrorCode {
 	SCE_LOCATION_SUCCESS                            = 0,
 
 	SCE_LOCATION_INFO_UNDETERMINED_LOCATION         = -2146430464,
@@ -46,7 +46,7 @@ enum {
 	SCE_LOCATION_ERROR_NO_SERVER_MEMORY             = -2146430331,
 	SCE_LOCATION_ERROR_INVALID_TITLE_ID             = -2146430330,
 	SCE_LOCATION_ERROR_FATAL_ERROR                  = -2146430209
-};
+} SceLocationErrorCode;
 
 //TO DO: further comment each struct and function (i.e. parameters)
 
@@ -54,22 +54,21 @@ enum {
 typedef SceUInt8 SceLocationHandle;
 
 /** Usage permission dialog display status */
-typedef enum {
+typedef enum SceLocationDialogStatus {
 	SCE_LOCATION_DIALOG_STATUS_IDLE     = 0, //!< Dialog initial idle status
 	SCE_LOCATION_DIALOG_STATUS_RUNNING  = 1, //!< Dialog running
 	SCE_LOCATION_DIALOG_STATUS_FINISHED = 2  //!< Dialog operation finished
 } SceLocationDialogStatus;
 
 /** Usage permission dialog result */
-typedef enum {
+typedef enum SceLocationDialogResult {
 	SCE_LOCATION_DIALOG_RESULT_NONE    = 0, //!< Result is not stored
 	SCE_LOCATION_DIALOG_RESULT_DISABLE = 1, //!< Negative result is stored
 	SCE_LOCATION_DIALOG_RESULT_ENABLE  = 2  //!< Positive result is stored
 } SceLocationDialogResult;
 
 /** location usage permission status for individual application */
-typedef enum SceLocationPermissionApplicationStatus
-{
+typedef enum SceLocationPermissionApplicationStatus {
 	SCE_LOCATION_PERMISSION_APPLICATION_NONE = 0,  //!< liblocation not used
 	SCE_LOCATION_PERMISSION_APPLICATION_INIT = 1,  //!< liblocation not accessed
 	SCE_LOCATION_PERMISSION_APPLICATION_DENY = 2,  //!< liblocation access denied status
@@ -77,15 +76,13 @@ typedef enum SceLocationPermissionApplicationStatus
 } SceLocationPermissionApplicationStatus;
 
 /** location usage permission status */
-typedef enum SceLocationPermissionStatus
-{
+typedef enum SceLocationPermissionStatus {
 	SCE_LOCATION_PERMISSION_DENY = 0,  //!< liblocation access denied status
 	SCE_LOCATION_PERMISSION_ALLOW = 1  //!< liblocation access allowed status
 } SceLocationPermissionStatus;
 
 /** Location measurement method */
-typedef enum SceLocationLocationMethod
-{
+typedef enum SceLocationLocationMethod {
 	SCE_LOCATION_LMETHOD_NONE = 0,                  //!< Do not perform location measurement
 	SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI = 1,  //!< Perform measurement by switching between AGPS, Wi-Fi, and 3G
 	SCE_LOCATION_LMETHOD_GPS_AND_WIFI = 2,          //!< Perform measurement by switching between GPS and Wi-Fi
@@ -95,8 +92,7 @@ typedef enum SceLocationLocationMethod
 }SceLocationLocationMethod;
 
 /** Direction measurement method */
-typedef enum SceLocationHeadingMethod
-{
+typedef enum SceLocationHeadingMethod {
 	SCE_LOCATION_HMETHOD_NONE = 0,          //!< Don't perform heading measurement
 	SCE_LOCATION_HMETHOD_AUTO = 1,          //!< Automatically determine hold orientation and outputs its value
 	SCE_LOCATION_HMETHOD_VERTICAL = 2,      //!< Output value in vertical hold reference system
@@ -105,8 +101,7 @@ typedef enum SceLocationHeadingMethod
 } SceLocationHeadingMethod;
 
 /** Structure of location information */
-typedef struct SceLocationLocationInfo
-{
+typedef struct SceLocationLocationInfo {
 	SceDouble64 latitude;   //!< Latitude (deg). Valid range: -90 to + 90. If cannot be obtained, SCE_LOCATION_DATA_INVALID
 	SceDouble64 longitude;  //!< Longitude (deg). Valid range: -180 to +180. If cannot be obtained, SCE_LOCATION_DATA_INVALID
 	SceDouble64 altitude;   //!< Altitude (m). If cannot be obtained, SCE_LOCATION_DATA_INVALID
@@ -119,8 +114,7 @@ typedef struct SceLocationLocationInfo
 
 
 /** Structure of heading information */
-typedef struct SceLocationHeadingInfo
-{
+typedef struct SceLocationHeadingInfo {
 	SceFloat32 trueHeading;     //!< Clockwise angle from true north (0 to 360 degrees). If cannot be acquired, SCE_LOCATION_INVALID_DATA
 	SceFloat32 headingVectorX;  //!< Direction vector X coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA
 	SceFloat32 headingVectorY;  //!< Direction vector Y coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA

@@ -13,10 +13,7 @@ extern "C" {
 
 #include <psp2/types.h>
 
-// SCE_TOUCH_MAX_REPORT = 8
-enum {
-	SCE_TOUCH_MAX_REPORT	= 8	//!< FIXME 6 on front | 4 on back
-};
+#define SCE_TOUCH_MAX_REPORT 8	//!< FIXME 6 on front | 4 on back
 
 /**
  * Port numbers of touch panels
@@ -24,37 +21,37 @@ enum {
  * @see sceTouchRead()
  * @see sceTouchPeek()
  */
-enum {
+typedef enum SceTouchPortType {
 	SCE_TOUCH_PORT_FRONT	= 0,	//!< Front touch panel id
 	SCE_TOUCH_PORT_BACK	= 1,	//!< Back touch panel id
 	SCE_TOUCH_PORT_MAX_NUM	= 2	//!< Number of touch panels
-};
+} SceTouchPortType;
 
 /**
  * Sampling port setting of the touch panel
  *
  * @see sceTouchSetSamplingState()
  */
-enum {
+typedef enum SceTouchSamplingState {
 	SCE_TOUCH_SAMPLING_STATE_STOP	= 0,
 	SCE_TOUCH_SAMPLING_STATE_START	= 1
-};
+} SceTouchSamplingState;
 
 /**
  * Info field of SceTouchReport structure
  *
  * @see SceTouchReport()
  */
-enum {
+typedef enum SceTouchReportInfo {
 	SCE_TOUCH_REPORT_INFO_HIDE_UPPER_LAYER = 0x0001
-};
+} SceTouchReportInfo;
 
 /** Touch error codes */
-enum {
+typedef enum SceTouchErrorCode {
 	SCE_TOUCH_ERROR_INVALID_ARG	= 0x80350001,
 	SCE_TOUCH_ERROR_PRIV_REQUIRED	= 0x80350002,
 	SCE_TOUCH_ERROR_FATAL		= 0x803500ff
-};
+} SceTouchErrorCode;
 
 typedef struct SceTouchPanelInfo {
 	SceInt16 minAaX;	//!< Min active area X position
@@ -118,7 +115,7 @@ int sceTouchPeek(SceUInt32 port, SceTouchData *pData, SceUInt32 nBufs);
  * @param[in]	port	Port number.
  * @param[in]	state	Sampling state.
  */
-int sceTouchSetSamplingState(SceUInt32 port, SceUInt32 state);
+int sceTouchSetSamplingState(SceUInt32 port, SceTouchSamplingState state);
 
 /**
  * Get sampling state of touch panel.
@@ -126,7 +123,7 @@ int sceTouchSetSamplingState(SceUInt32 port, SceUInt32 state);
  * @param[in]	port	Port number.
  * @param[out]	pState	The buffer to receive sampling state.
  */
-int sceTouchGetSamplingState(SceUInt32 port, SceUInt32 *pState);
+int sceTouchGetSamplingState(SceUInt32 port, SceTouchSamplingState *pState);
 
 /**
  * Enable touch force output.

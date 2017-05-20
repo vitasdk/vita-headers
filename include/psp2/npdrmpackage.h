@@ -14,7 +14,7 @@ extern "C" {
 #endif
 
 /** Options for _sceNpDrmPackageDecrypt */
-typedef struct {
+typedef struct _sceNpDrmPackageDecrypt {
 	/** The offset in the encrypted data */
 	SceOff offset;
 

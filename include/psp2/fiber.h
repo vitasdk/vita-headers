@@ -15,7 +15,7 @@ extern "C" {
 
 // Error Codes
 
-enum {
+typedef enum SceFiberErrorCode {
  SCE_FIBER_ERROR_NULL = 0x80590001,
  SCE_FIBER_ERROR_ALIGNMENT = 0x80590002,
  SCE_FIBER_ERROR_RANGE = 0x80590003,
@@ -25,7 +25,7 @@ enum {
  SCE_FIBER_ERROR_BUSY = 0x80590007,
  SCE_FIBER_ERROR_AGAIN = 0x80590008,
  SCE_FIBER_ERROR_FATAL = 0x80590009
-};
+} SceFiberErrorCode;
 
 typedef struct SceFiber {
 	char reserved[128];

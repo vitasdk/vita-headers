@@ -12,7 +12,7 @@ extern "C" {
 #endif
 
 /** Net Error Codes */
-enum {
+typedef enum SceNetErrorCode {
 	SCE_NET_ERROR_EPERM					= 0x80410101,
 	SCE_NET_ERROR_ENOENT					= 0x80410102,
 	SCE_NET_ERROR_ESRCH					= 0x80410103,
@@ -130,10 +130,10 @@ enum {
 	SCE_NET_ERROR_RESOLVER_ESERVERREFUSED	= 0x804101E8,
 	SCE_NET_ERROR_RESOLVER_ENORECORD		= 0x804101E9,
 	SCE_NET_ERROR_RESOLVER_EALIGNMENT		= 0x804101EA
-};
+} SceNetErrorCode;
 
 /** Specific kernel and libnet error codes */
-enum {
+typedef enum  SceNetKernelErrorCode {
 	SCE_NET_EPERM				= 1,
 	SCE_NET_ENOENT				= 2,
 	SCE_NET_ESRCH				= 3,
@@ -230,21 +230,21 @@ enum {
 	SCE_NET_EADHOC				= 160,
 	SCE_NET_EDISABLEDIF		= 161,
 	SCE_NET_ERESUME			= 162
-};
+} SceNetKernelErrorCode;
 
 
 /** libnet specific error codes */
-enum {
+typedef enum SceNetLibnetErrorCode {
 	SCE_NET_ENOTINIT	= 200,
 	SCE_NET_ENOLIBMEM,
 	SCE_NET_ETLS,
 	SCE_NET_ECALLBACK,
 	SCE_NET_EINTERNAL,
 	SCE_NET_ERETURN
-};
+} SceNetLibnetErrorCode;
 
 /** Resolver specific error codes */
-enum {
+typedef enum SceNetResolverErrorCode {
 	SCE_NET_RESOLVER_EINTERNAL	= 220,
 	SCE_NET_RESOLVER_EBUSY,
 	SCE_NET_RESOLVER_ENOSPACE,
@@ -260,34 +260,34 @@ enum {
 	SCE_NET_RESOLVER_ESERVERREFUSED,
 	SCE_NET_RESOLVER_ENORECORD,
 	SCE_NET_RESOLVER_EALIGNMENT
-};
+} SceNetResolverErrorCode;
 
 /** Flags to specify as argument to ::sceNetDumpRead() */
-enum {
+typedef enum SceNetDumpType {
 	SCE_NET_DUMP_PEEK						= 0x00000010,
 	SCE_NET_DUMP_DONTWAIT					= 0x00000020,
 	SCE_NET_DUMP_OVERFLOW					= 0x00000040,
 	SCE_NET_DUMP_ABORT_FLAG_PRESERVATION	= 0x00000001
-};
+} SceNetDumpType;
 
 /** Events for ::SceNetEpollEvent */
-enum {
+typedef enum SceNetEpollEventType {
 	SCE_NET_EPOLLIN		= 0x00000001,
 	SCE_NET_EPOLLOUT		= 0x00000002,
 	SCE_NET_EPOLLERR		= 0x00000008,
 	SCE_NET_EPOLLHUP		= 0x00000010,
 	SCE_NET_EPOLLDESCID	= 0x00010000
-};
+} SceNetEpollEventType;
 
 /** Flags to specify as argument to ::sceNetEpollControl() */
-enum {
+typedef enum SceNetEpollControlFlag {
 	SCE_NET_EPOLL_CTL_ADD = 1,
 	SCE_NET_EPOLL_CTL_MOD,
 	SCE_NET_EPOLL_CTL_DEL
-};
+} SceNetEpollControlFlag;
 
 /** state for ::SceNetSockInfo structure */
-enum {
+typedef enum SceNetSockInfoState {
 	SCE_NET_SOCKINFO_STATE_UNKNOWN,
 	SCE_NET_SOCKINFO_STATE_CLOSED,
 	SCE_NET_SOCKINFO_STATE_OPENED,
@@ -301,10 +301,10 @@ enum {
 	SCE_NET_SOCKINFO_STATE_CLOSING,
 	SCE_NET_SOCKINFO_STATE_LAST_ACK,
 	SCE_NET_SOCKINFO_STATE_TIME_WAIT
-};
+} SceNetSockInfoState;
 
 /** flags for ::SceNetSockInfo structure */
-enum {
+typedef enum SceNetSockInfoFlag {
 	SCE_NET_SOCKINFO_F_SELF			= 0x00000001,
 	SCE_NET_SOCKINFO_F_KERNEL			= 0x00000002,
 	SCE_NET_SOCKINFO_F_OTHERS			= 0x00000004,
@@ -314,44 +314,44 @@ enum {
 	SCE_NET_SOCKINFO_F_SEND_EWAIT		= 0x00080000,
 	SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL	= 0x00100000,
 	SCE_NET_SOCKINFO_F_ALL				= 0x001F0007
-};
+} SceNetSockInfoFlag;
 
 /** Flags to specify as argument to ::sceNetEmulationGet() / ::sceNetEmulationSet() */
-enum {
+typedef enum SceNetEmulationFlag {
 	SCE_NET_EMULATION_FLAG_ETH0	= 1,
 	SCE_NET_EMULATION_FLAG_WLAN0
-};
+} SceNetEmulationFlag;
 
 /** Flags to specify as argument to ::sceNetResolverStartNtoa() / ::sceNetResolverStartAton() */
-enum {
+typedef enum SceNetResolverFlag {
 	SCE_NET_RESOLVER_ASYNC							= 0x00000001,
 	SCE_NET_RESOLVER_START_NTOA_DISABLE_IPADDRESS	= 0x00010000
-};
+} SceNetResolverFlag;
 
 /** Flags to specify as argument to ::sceNetResolverAbort() */
-enum {
+typedef enum SceNetResolverAbortFlag {
 	SCE_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION	= 0x00000001,
 	SCE_NET_RESOLVER_ABORT_FLAG_ATON_PRESERVATION	= 0x00000002
-};
+} SceNetResolverAbortFlag;
 
 /** Flags to specify as argument to ::sceNetSocketAbort() */
-enum {
+typedef enum SceNetSocketAbortFlag {
 	SCE_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION	= 0x00000001,
 	SCE_NET_SOCKET_ABORT_FLAG_SND_PRESERVATION	= 0x00000002
-};
+} SceNetSocketAbortFlag;
 
 /** Net Protocols */
-enum {
+typedef enum SceNetProtocol {
 	SCE_NET_IPPROTO_IP		= 0,
 	SCE_NET_IPPROTO_ICMP	= 1,
 	SCE_NET_IPPROTO_IGMP	= 2,
 	SCE_NET_IPPROTO_TCP	= 6,
 	SCE_NET_IPPROTO_UDP	= 17,
 	SCE_NET_SOL_SOCKET		= 0xffff
-};
+} SceNetProtocol;
 
 /** Socket Options */
-enum {
+typedef enum SceNetSocketOption {
 	/* IP */
 	SCE_NET_IP_HDRINCL				= 2,
 	SCE_NET_IP_TOS					= 3,
@@ -388,35 +388,35 @@ enum {
 	SCE_NET_SO_NBIO				= 0x1100,
 	SCE_NET_SO_TPPOLICY			= 0x1101,
 	SCE_NET_SO_NAME				= 0x1102
-};
+} SceNetSocketOption;
 
 /** Socket types */
-enum {
+typedef enum SceNetSocketType {
 	SCE_NET_SOCK_STREAM		= 1,
 	SCE_NET_SOCK_DGRAM			= 2,
 	SCE_NET_SOCK_RAW			= 3,
 	SCE_NET_SOCK_DGRAM_P2P		= 6,
 	SCE_NET_SOCK_STREAM_P2P	= 10
-};
+} SceNetSocketType;
 
 /** MSG Flags */
-enum {
+typedef enum SceNetMsgFlag {
 	SCE_NET_MSG_PEEK			= 0x00000002,
 	SCE_NET_MSG_WAITALL		= 0x00000040,
 	SCE_NET_MSG_DONTWAIT		= 0x00000080,
 	SCE_NET_MSG_USECRYPTO		= 0x00000400,
 	SCE_NET_MSG_USESIGNATURE	= 0x00000800
-};
+} SceNetMsgFlag;
 
-/** Flags to specify as argument to ::sceNetShutdown() */
-enum {
+/** Flags to specify as argument to ::sceNetShutdown */
+typedef enum SceNetShutdownFlag {
 	SCE_NET_SHUT_RD,
 	SCE_NET_SHUT_WR,
 	SCE_NET_SHUT_RDWR
-};
+} SceNetShutdownFlag;
 
 /** Types to specify to ::SceNetIcmpHeader structure */
-enum {
+typedef enum SceNetIcmpType {
 	SCE_NET_ICMP_TYPE_ECHO_REPLY			= 0,
 	SCE_NET_ICMP_TYPE_DEST_UNREACH			= 3,
 	SCE_NET_ICMP_TYPE_SOURCE_QUENCH		= 4,
@@ -430,10 +430,10 @@ enum {
 	SCE_NET_ICMP_TYPE_INFORMATION_REPLY	= 16,
 	SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST	= 17,
 	SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY	= 18
-};
+} SceNetIcmpType;
 
 /** Codes to specify to ::SceNetIcmpHeader structure */
-enum {
+typedef enum SceNetIcmpCode {
 	SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH				= 0,
 	SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH			= 1,
 	SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH			= 2,
@@ -449,7 +449,7 @@ enum {
 	SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS				= 12,
 	SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED			= 0,
 	SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED			= 1
-};
+} SceNetIcmpCode;
 
 /* Defines */
 #define SCE_NET_EPOLL_ABORT_FLAG_PRESERVATION   0x00000001

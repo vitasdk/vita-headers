@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceAudiodecErrorCode {
 	SCE_AUDIODEC_ERROR_API_FAIL				= 0x807F0000,
 	SCE_AUDIODEC_ERROR_INVALID_TYPE			= 0x807F0001,
 	SCE_AUDIODEC_ERROR_INVALID_INIT_PARAM	= 0x807F0002,
@@ -38,7 +38,7 @@ enum {
 	SCE_AUDIODEC_MP3_ERROR_INVALID_MPEG_VERSION		= 0x807F2801,
 	SCE_AUDIODEC_AAC_ERROR_INVALID_CH		= 0x807F3000,
 	SCE_AUDIODEC_CELP_ERROR_INVALID_CONFIG	= 0x807F3800
-};
+} SceAudiodecErrorCode;
 
 #define SCE_AUDIODEC_ALIGNMENT_SIZE 0x100U
 #define SCE_AUDIODEC_ROUND_UP(size) ((size + SCE_AUDIODEC_ALIGNMENT_SIZE - 1) & ~(SCE_AUDIODEC_ALIGNMENT_SIZE - 1))
@@ -94,10 +94,12 @@ enum {
 
 #define SCE_AUDIODEC_CELP_SAMPLING_RATE_8KHZ 8000
 
-#define SCE_AUDIODEC_CELP_BIT_RATE_3850BPS 3850
-#define SCE_AUDIODEC_CELP_BIT_RATE_4650BPS 4650
-#define SCE_AUDIODEC_CELP_BIT_RATE_5700BPS 5700
-#define SCE_AUDIODEC_CELP_BIT_RATE_7300BPS 7300
+typedef enum SceAudiodecCelpBitrate {
+	SCE_AUDIODEC_CELP_BIT_RATE_3850BPS = 3850,
+	SCE_AUDIODEC_CELP_BIT_RATE_4650BPS = 4650,
+	SCE_AUDIODEC_CELP_BIT_RATE_5700BPS = 5700,
+	SCE_AUDIODEC_CELP_BIT_RATE_7300BPS = 7300
+} SceAudiodecCelpBitrate;
 
 typedef struct SceAudiodecInitStreamParam {
 	SceUInt32 size;
@@ -141,11 +143,12 @@ typedef struct SceAudiodecInfoAac {
 	SceUInt32 isSbr;
 } SceAudiodecInfoAac;
 
+/** Information structure for CELP */
 typedef struct SceAudiodecInfoCelp {
-	SceUInt32 size;
-	SceUInt32 excitationMode;
-	SceUInt32 samplingRate;
-	SceUInt32 bitRate;
+	SceUInt32 size;				//!< sizeof(SceAudiodecInfoCelp)
+	SceUInt32 excitationMode;		//!< Excitation mode
+	SceUInt32 samplingRate;		//!< Sampling rate
+	SceAudiodecCelpBitrate bitRate; //!< Bit rate
 	SceUInt32 lostCount;
 } SceAudiodecInfoCelp;
 
@@ -189,4 +192,3 @@ extern SceInt32 sceAudiodecDeleteDecoderExternal(SceAudiodecCtrl *pCtrl, SceUInt
 #endif
 
 #endif
-

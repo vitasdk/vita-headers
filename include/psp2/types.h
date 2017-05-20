@@ -38,12 +38,10 @@ typedef uint64_t SceULong64;
 typedef unsigned int SceSize;
 typedef int SceSSize;
 
-typedef int SceBool;
-
-enum {
+typedef enum SceBool {
 	SCE_FALSE,
 	SCE_TRUE
-};
+} SceBool;
 
 typedef float SceFloat;
 typedef float SceFloat32;

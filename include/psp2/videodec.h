@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-typedef enum {
+typedef enum SceVideodecType {
 	SCE_VIDEODEC_TYPE_HW_AVCDEC = 0x1001,
 } SceVideodecType;
 

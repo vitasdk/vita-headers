@@ -17,7 +17,7 @@ extern "C" {
 #endif
 
 /* Errors */
-enum {
+typedef enum SceCommonDialogErrorCode {
 	SCE_COMMON_DIALOG_ERROR_BUSY							= 0x80020401,
 	SCE_COMMON_DIALOG_ERROR_NULL							= 0x80020402,
 	SCE_COMMON_DIALOG_ERROR_INVALID_ARGUMENT				= 0x80020403,
@@ -40,7 +40,7 @@ enum {
 	SCE_COMMON_DIALOG_ERROR_INVALID_BG_COLOR				= 0x80020434,
 	SCE_COMMON_DIALOG_ERROR_INVALID_DIMMER_COLOR			= 0x80020435,
 	SCE_COMMON_DIALOG_ERROR_UNEXPECTED_FATAL				= 0x8002047F
-};
+} SceCommonDialogErrorCode;
 
 typedef struct SceCommonDialogConfigParam {
 	SceUInt32 sdkVersion;
@@ -49,13 +49,13 @@ typedef struct SceCommonDialogConfigParam {
 	SceUInt8 reserved[32];
 } SceCommonDialogConfigParam;
 
-typedef enum {
+typedef enum SceCommonDialogStatus {
 	SCE_COMMON_DIALOG_STATUS_NONE		= 0,
 	SCE_COMMON_DIALOG_STATUS_RUNNING	= 1,
 	SCE_COMMON_DIALOG_STATUS_FINISHED	= 2
 } SceCommonDialogStatus;
 
-typedef enum {
+typedef enum SceCommonDialogResult {
 	SCE_COMMON_DIALOG_RESULT_OK,
 	SCE_COMMON_DIALOG_RESULT_USER_CANCELED,
 	SCE_COMMON_DIALOG_RESULT_ABORTED

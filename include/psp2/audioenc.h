@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceAudioencErrorCode {
 	SCE_AUDIOENC_ERROR_API_FAIL		= 0x80860000,
 	SCE_AUDIOENC_ERROR_INVALID_TYPE		= 0x80860001,
 	SCE_AUDIOENC_ERROR_INVALID_INIT_PARAM	= 0x80860002,
@@ -30,11 +30,11 @@ enum {
 	SCE_AUDIOENC_ERROR_INVALID_WORD_LENGTH	= 0x8086000C,
 	SCE_AUDIOENC_ERROR_INVALID_SIZE		= 0x8086000D,
 	SCE_AUDIOENC_ERROR_INVALID_ALIGNMENT	= 0x8086000E
-};
+} SceAudioencErrorCode;
 
-enum {
+typedef enum SceAudioencCelpErrorCode {
 	SCE_AUDIOENC_CELP_ERROR_INVALID_CONFIG	= 0x80861001,
-};
+} SceAudioencCelpErrorCode;
 
 #define SCE_AUDIOENC_WORD_LENGTH_16BITS         16      //!< Definition of wordlength
 #define SCE_AUDIOENC_TYPE_CELP                  0x2006U //!< Audio encoder type
@@ -44,12 +44,12 @@ enum {
 #define SCE_AUDIOENC_CELP_MPE                   (0)     //!< CELP encoder default excitation mode
 #define SCE_AUDIOENC_CELP_SAMPLING_RATE_8KHZ    (8000)  //!< CELP encoder default sampling rate
 
-enum {
+typedef enum SceAudioencCelpBitrate {
 	SCE_AUDIOENC_CELP_BIT_RATE_3850BPS = 3850,
 	SCE_AUDIOENC_CELP_BIT_RATE_4650BPS = 4650,
 	SCE_AUDIOENC_CELP_BIT_RATE_5700BPS = 5700,
 	SCE_AUDIOENC_CELP_BIT_RATE_7300BPS = 7300
-};
+} SceAudioencCelpBitrate;
 
 /** Initialization structure to provide to ::SceAudioencInitParam */
 typedef struct SceAudioencInitStreamParam {
@@ -62,7 +62,7 @@ typedef struct SceAudioencInfoCelp {
 	SceSize size;				//!< sizeof(SceAudioencInfoCelp)
 	unsigned int excitationMode;		//!< Excitation mode
 	unsigned int samplingRate;		//!< Sampling rate
-	unsigned int bitRate;			//!< Bit rate
+	SceAudioencCelpBitrate bitRate;			//!< Bit rate
 } SceAudioencInfoCelp;
 
 /** Optional information structure for CELP */
@@ -119,4 +119,3 @@ int sceAudioencGetInternalError(SceAudioencCtrl *pCtrl, int *pInternalError);
 #endif
 
 #endif /* _PSP2_AUDIOENC_H_ */
-

@@ -13,15 +13,13 @@
 extern "C" {
 #endif
 
-typedef int SceKernelMemBlockType;
-
-enum {
+typedef enum SceKernelMemBlockType {
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_RW	= 0x0c20d060,
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE	= 0x0c208060,
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW	= 0x0c80d060,
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW	= 0x0d808060,
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW	= 0x09408060
-};
+} SceKernelMemBlockType;
 
 typedef struct SceKernelAllocMemBlockOpt {
 	SceSize size;
@@ -33,10 +31,10 @@ typedef struct SceKernelAllocMemBlockOpt {
 	int reserved[10];
 } SceKernelAllocMemBlockOpt;
 
-enum {
+typedef enum SceKernelModel {
 	SCE_KERNEL_MODEL_VITA = 0x10000,
 	SCE_KERNEL_MODEL_VITATV = 0x20000
-};
+} SceKernelModel;
 
 /***
  * Allocates a new memory block
@@ -78,12 +76,16 @@ typedef struct SceKernelMemBlockInfo {
 	SceKernelMemBlockType type;
 } SceKernelMemBlockInfo;
 
-#define SCE_KERNEL_MEMORY_ACCESS_X 0x01
-#define SCE_KERNEL_MEMORY_ACCESS_W 0x02
-#define SCE_KERNEL_MEMORY_ACCESS_R 0x04
+typedef enum SceKernelMemoryAccessType {
+	SCE_KERNEL_MEMORY_ACCESS_X = 0x01,
+	SCE_KERNEL_MEMORY_ACCESS_W = 0x02,
+	SCE_KERNEL_MEMORY_ACCESS_R = 0x04
+} SceKernelMemoryAccessType;
 
-#define SCE_KERNEL_MEMORY_TYPE_NORMAL_NC 0x80
-#define SCE_KERNEL_MEMORY_TYPE_NORMAL 0xD0
+typedef enum SceKernelMemoryType {
+	SCE_KERNEL_MEMORY_TYPE_NORMAL_NC = 0x80,
+	SCE_KERNEL_MEMORY_TYPE_NORMAL = 0xD0
+} SceKernelMemoryType;
 
 SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 

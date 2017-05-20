@@ -11,10 +11,7 @@
 extern "C" {
 #endif
 
-#define SCE_AUDIO_OUT_PARAM_FORMAT_S16_MONO		0
-#define SCE_AUDIO_OUT_PARAM_FORMAT_S16_STEREO	1
-
-enum {
+typedef enum SceAudioOutErrorCode {
 	SCE_AUDIO_OUT_ERROR_NOT_OPENED		= 0x80260001,
 	SCE_AUDIO_OUT_ERROR_BUSY		= 0x80260002,
 	SCE_AUDIO_OUT_ERROR_INVALID_PORT	= 0x80260003,
@@ -28,9 +25,14 @@ enum {
 	SCE_AUDIO_OUT_ERROR_INVALID_FX_TYPE	= 0x8026000B,
 	SCE_AUDIO_OUT_ERROR_INVALID_CONF_TYPE	= 0x8026000C,
 	SCE_AUDIO_OUT_ERROR_OUT_OF_MEMORY	= 0x8026000D
-};
+} SceAudioOutErrorCode;
 
-enum {
+typedef enum SceAudioOutParam {
+	SCE_AUDIO_OUT_PARAM_FORMAT_S16_MONO	= 0,
+	SCE_AUDIO_OUT_PARAM_FORMAT_S16_STEREO = 1
+} SceAudioOutParam;
+
+typedef enum SceAudioOutPortType {
 	//! Used for main audio output, freq must be set to 48000 Hz
 	SCE_AUDIO_OUT_PORT_TYPE_MAIN	= 0,
 
@@ -39,15 +41,38 @@ enum {
 
 	//! Used for voice chat port
 	SCE_AUDIO_OUT_PORT_TYPE_VOICE	= 2
-};
+} SceAudioOutPortType;
 
-enum {
+typedef enum SceAudioOutMode {
 	SCE_AUDIO_OUT_MODE_MONO	= 0,
 	SCE_AUDIO_OUT_MODE_STEREO	= 1
-};
+} SceAudioOutMode;
 
 #define SCE_AUDIO_MIN_LEN 64		//!< Minimum granularity
 #define SCE_AUDIO_MAX_LEN 65472	//!< Maximum granularity
+
+#define SCE_AUDIO_OUT_MAX_VOL 32768 					//!< Maximum output port volume
+#define SCE_AUDIO_VOLUME_0DB  SCE_AUDIO_OUT_MAX_VOL	//!< Maximum output port volume
+
+/** Flags to use as 'ch' argument for ::sceAudioOutSetVolume */
+typedef enum SceAudioOutChannelFlag {
+	SCE_AUDIO_VOLUME_FLAG_L_CH	= 0x1, //!< Left Channel
+	SCE_AUDIO_VOLUME_FLAG_R_CH	= 0x2  //!< Right Channel
+} SceAudioOutChannelFlag ;
+
+/** Config type values to specify to ::sceAudioOutGetConfig */
+typedef enum SceAudioOutConfigType {
+	SCE_AUDIO_OUT_CONFIG_TYPE_LEN	= 0,
+	SCE_AUDIO_OUT_CONFIG_TYPE_FREQ	= 1,
+	SCE_AUDIO_OUT_CONFIG_TYPE_MODE	= 2
+} SceAudioOutConfigType;
+
+/** Argument 'mode' to specify to ::sceAudioOutSetAlcMode */
+typedef enum SceAudioOutAlcMode {
+	SCE_AUDIO_ALC_OFF	= 0,
+	SCE_AUDIO_ALC_MODE1	= 1,
+	SCE_AUDIO_ALC_MODE_MAX	= 2
+} SceAudioOutAlcMode;
 
 /**
  * Initialize audio port
@@ -61,7 +86,7 @@ enum {
  * @return port number, < 0 on error.
  * @note - The volume is initially set to its max value (::SCE_AUDIO_OUT_MAX_VOL)
 */
-int sceAudioOutOpenPort(int type, int len, int freq, int mode);
+int sceAudioOutOpenPort(SceAudioOutPortType type, int len, int freq, SceAudioOutMode mode);
 
 /**
  * Release an audio port
@@ -84,25 +109,16 @@ int sceAudioOutReleasePort(int port);
  */
 int sceAudioOutOutput(int port, const void *buf);
 
-#define SCE_AUDIO_OUT_MAX_VOL 32768 					//!< Maximum output port volume
-#define SCE_AUDIO_VOLUME_0DB  SCE_AUDIO_OUT_MAX_VOL	//!< Maximum output port volume
-
-/** Flags to use as 'ch' argument for ::sceAudioOutSetVolume */
-enum {
-	SCE_AUDIO_VOLUME_FLAG_L_CH	= 0x1, //!< Left Channel
-	SCE_AUDIO_VOLUME_FLAG_R_CH	= 0x2  //!< Right Channel
-};
-
 /**
  * Set volume of specified output audio port
  *
  * @param[in] port - Port number returned by ::sceAudioOutOpenPort
- * @param[in] ch - Channel numbers as flags (see ::AudioOutChannelFlag)
+ * @param[in] ch - Channel numbers as flags (see ::SceAudioOutChannelFlag)
  * @param[in] *vol - Array to int specifying volume for each channel (Left channel first for stereo)
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutSetVolume(int port, int ch, int *vol);
+int sceAudioOutSetVolume(int port, SceAudioOutChannelFlag ch, int *vol);
 
 /**
  * Change configuration of specified output port
@@ -115,41 +131,27 @@ int sceAudioOutSetVolume(int port, int ch, int *vol);
  * @return 0 on success, < 0 on error.
  * @note - If (-1) is specified for any argument (excepted for port), current configuration is used instead.
  */
-int sceAudioOutSetConfig(int port, int len, int freq, int mode);
-
-/** Config type values to specify to ::sceAudioOutGetConfig */
-enum {
-	SCE_AUDIO_OUT_CONFIG_TYPE_LEN	= 0,
-	SCE_AUDIO_OUT_CONFIG_TYPE_FREQ	= 1,
-	SCE_AUDIO_OUT_CONFIG_TYPE_MODE	= 2
-};
+int sceAudioOutSetConfig(int port, int len, int freq, SceAudioOutMode mode);
 
 /**
  * Get a parameter value of specified output port
  *
  * @param[in] port - Port number returned by ::sceAudioOutOpenPort
- * @param[in] type - One of ::AudioOutConfigType
+ * @param[in] type - One of ::SceAudioOutConfigType
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutGetConfig(int port, int type);
-
-/** Argument 'mode' to specify to ::sceAudioOutSetAlcMode */
-enum {
-	SCE_AUDIO_ALC_OFF	= 0,
-	SCE_AUDIO_ALC_MODE1	= 1,
-	SCE_AUDIO_ALC_MODE_MAX	= 2
-};
+int sceAudioOutGetConfig(int port, SceAudioOutConfigType type);
 
 /**
  * Set 'Automatic Level Control' mode on the BGM port
  * ALC is also known as 'Dynamic Normalizer'
  *
- * @param[in] mode - One of
+ * @param[in] mode - One of ::SceAudioOutAlcMode
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutSetAlcMode(int mode);
+int sceAudioOutSetAlcMode(SceAudioOutAlcMode mode);
 
 /**
  * Get the number of remaining samples to be output on the specified port
@@ -164,11 +166,11 @@ int sceAudioOutGetRestSample(int port);
  * Get status of port type
  * Return different value on whether the port type is used for sound generation or not.
  *
- * @param[in] type - One of ::AudioOutPortType
+ * @param[in] type - One of ::SceAudioOutPortType
  *
  * @return (1) if port is in use, (0) otherwise. < 0 on error.
  */
-int sceAudioOutGetAdopt(int type);
+int sceAudioOutGetAdopt(SceAudioOutPortType type);
 
 #ifdef __cplusplus
 }

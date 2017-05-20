@@ -21,14 +21,14 @@ typedef void *SceFontHandle;
 
 /* struct */
 
-enum {
+typedef enum SceFontErrorCode {
 	SCE_FONT_ERROR_OUT_OF_MEMORY        = 0x80460001,
 	SCE_FONT_ERROR_INVALID_LIBID        = 0x80460002,
 	SCE_FONT_ERROR_INVALID_PARAMETER    = 0x80460003,
 	SCE_FONT_ERROR_HANDLER_OPEN_FAILED  = 0x80460005,
 	SCE_FONT_ERROR_TOO_MANY_OPEN_FONTS  = 0x80460009,
 	SCE_FONT_ERROR_INVALID_FONT_DATA    = 0x8046000a,
-};
+} SceFontErrorCode;
 
 typedef struct SceSceFontNewLibParams {
 	void *userData;
@@ -249,4 +249,3 @@ int sceFontFlush(SceFontHandle fontHandle);
 #endif
 
 #endif /* _PSP2_PGF_H_ */
-

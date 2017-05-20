@@ -14,27 +14,23 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceMsgDialogErrorCode {
 	//! Illegal parameter
 	SCE_MSG_DIALOG_ERROR_PARAM	= 0x80100a01
-};
+} SceMsgDialogErrorCode;
 
-enum {
-	//! Max length of a user message
-	SCE_MSG_DIALOG_USER_MSG_SIZE	= 512
-};
+//! Max length of a user message
+#define SCE_MSG_DIALOG_USER_MSG_SIZE	512
 
-typedef SceInt32 SceMsgDialogMode;
-enum {
+typedef enum SceMsgDialogMode {
 	SCE_MSG_DIALOG_MODE_INVALID      = 0,
 	SCE_MSG_DIALOG_MODE_USER_MSG     = 1,
 	SCE_MSG_DIALOG_MODE_SYSTEM_MSG   = 2,
 	SCE_MSG_DIALOG_MODE_ERROR_CODE   = 3,
 	SCE_MSG_DIALOG_MODE_PROGRESS_BAR	= 4
-};
+} SceMsgDialogMode;
 
-typedef SceInt32 SceMsgDialogSystemMessageType;
-enum {
+typedef enum SceMsgDialogSystemMessageType {
 	SCE_MSG_DIALOG_SYSMSG_TYPE_INVALID					= 0,
 
 	//! Displays "Please wait."
@@ -69,44 +65,34 @@ enum {
 
 	//! Displays "No content is available yet."
 	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_EMPTY_STORE					= 103,
-};
+} SceMsgDialogSystemMessageType;
 
-typedef SceInt32 SceMsgDialogButtonType;
-
-enum {
+typedef enum SceMsgDialogButtonType {
 	SCE_MSG_DIALOG_BUTTON_TYPE_OK          = 0,
 	SCE_MSG_DIALOG_BUTTON_TYPE_YESNO       = 1,
 	SCE_MSG_DIALOG_BUTTON_TYPE_NONE        = 2,
 	SCE_MSG_DIALOG_BUTTON_TYPE_OK_CANCEL   = 3,
 	SCE_MSG_DIALOG_BUTTON_TYPE_CANCEL      = 4
-};
+}SceMsgDialogButtonType;
 
-typedef SceInt32 SceMsgDialogButtonId;
-
-enum {
+typedef enum SceMsgDialogButtonId {
 	SCE_MSG_DIALOG_BUTTON_ID_INVALID    = 0,
 	SCE_MSG_DIALOG_BUTTON_ID_OK         = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_YES        = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_NO         = 2
-};
+}SceMsgDialogButtonId;
 
-typedef SceInt32 SceMsgDialogProgressBarType;
-
-enum {
+typedef enum SceMsgDialogProgressBarType {
 	SCE_MSG_DIALOG_PROGRESSBAR_TYPE_PERCENTAGE   = 0
-};
+}SceMsgDialogProgressBarType;
 
-typedef SceInt32 SceMsgDialogProgressBarTarget;
-
-enum {
+typedef enum SceMsgDialogProgressBarTarget {
 	SCE_MSG_DIALOG_PROGRESSBAR_TARGET_BAR_DEFAULT   = 0
-};
+}SceMsgDialogProgressBarTarget;
 
-typedef SceUInt32 SceMsgDialogEnvFlag;
-
-enum {
+typedef enum SceMsgDialogEnvFlag {
 	SCE_MSG_DIALOG_ENV_FLAG_DEFAULT		= 0
-};
+}SceMsgDialogEnvFlag;
 
 typedef struct SceMsgDialogUserMessageParam {
 	SceMsgDialogButtonType buttonType; // Type of button set
@@ -121,7 +107,7 @@ typedef struct SceMsgDialogSystemMessageParam {
 } SceMsgDialogSystemMessageParam;
 
 typedef struct SceMsgDialogErrorCodeParam {
-	SceInt32 errorCode;		// Displayed error code
+	SceInt32 ErrorCode;		// Displayed error code
 	SceChar8 reserved[32];	// Reserved range
 } SceMsgDialogErrorCodeParam;
 

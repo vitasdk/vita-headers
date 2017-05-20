@@ -15,7 +15,7 @@ extern "C" {
 
 // Error Codes
 
-enum {
+typedef enum SceGxmErrorCode {
 	SCE_GXM_ERROR_UNINITIALIZED	= 0x805B0000,
 	SCE_GXM_ERROR_ALREADY_INITIALIZED	= 0x805B0001,
 	SCE_GXM_ERROR_OUT_OF_MEMORY	= 0x805B0002,
@@ -39,7 +39,7 @@ enum {
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE	= 0x805B0015,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE	= 0x805B0016,
 	SCE_GXM_ERROR_DRIVER	= 0x805B0017
-};
+} SceGxmErrorCode;
 
 typedef void (SceGxmDisplayQueueCallback)(const void *callbackData);
 

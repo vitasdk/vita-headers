@@ -12,9 +12,7 @@ extern "C" {
 #endif
 
 /* System param id */
-typedef SceUInt32 SceSystemParamId;
-
-enum {
+typedef enum SceSystemParamId {
 	//!< Language settings
 	SCE_SYSTEM_PARAM_ID_LANG = 1,
 
@@ -35,12 +33,10 @@ enum {
 
 	//!< Daylight savings time (0 = Disabled, 1 = Enabled)
 	SCE_SYSTEM_PARAM_ID_DAYLIGHT_SAVINGS
-};
+} SceSystemParamId;
 
 /* Language settings */
-typedef SceInt32 SceSystemParamLang;
-
-enum {
+typedef enum SceSystemParamLang {
 	SCE_SYSTEM_PARAM_LANG_JAPANESE,
 	SCE_SYSTEM_PARAM_LANG_ENGLISH_US,
 	SCE_SYSTEM_PARAM_LANG_FRENCH,
@@ -67,35 +63,32 @@ enum {
 	SCE_SYSTEM_PARAM_LANG_PORTUGUESE_BR,
 	SCE_SYSTEM_PARAM_LANG_ENGLISH_GB,
 	SCE_SYSTEM_PARAM_LANG_TURKISH
-};
+} SceSystemParamLang;
 
 /* Assignment of enter button */
-typedef SceInt32 SceSystemParamEnterButtonAssign;
-
-enum {
+typedef enum SceSystemParamEnterButtonAssign {
 	SCE_SYSTEM_PARAM_ENTER_BUTTON_CIRCLE,
 	SCE_SYSTEM_PARAM_ENTER_BUTTON_CROSS
-};
+} SceSystemParamEnterButtonAssign;
 
 /* Username */
 #define SCE_SYSTEM_PARAM_USERNAME_MAXSIZE	(17) //!< Max size of username
 
 /* Date display format */
-enum {
+typedef enum SceSystemParamDateFormat {
 	SCE_SYSTEM_PARAM_DATE_FORMAT_YYYYMMDD, //!< Year/Month/Day
 	SCE_SYSTEM_PARAM_DATE_FORMAT_DDMMYYYY, //!< Day/Month/Year
 	SCE_SYSTEM_PARAM_DATE_FORMAT_MMDDYYYY //!< Month/Day/Year
-};
+} SceSystemParamDateFormat;
 
 /* Time display format */
-enum {
+typedef enum SceSystemParamTimeFormat {
 	SCE_SYSTEM_PARAM_TIME_FORMAT_12HR, //!< 12-hour clock
 	SCE_SYSTEM_PARAM_TIME_FORMAT_24HR //!< 24-hour clock
-};
+} SceSystemParamTimeFormat;
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-

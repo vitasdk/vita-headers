@@ -14,7 +14,7 @@ typedef enum SceJpegEncoderPixelFormat{
 	PIXELFORMAT_ARGB8888 = 0,
 	PIXELFORMAT_YCBCR420 = 8,
 	PIXELFORMAT_YCBCR422 = 9,
-	PIXELFORMAT_CSC_ARGB_YCBCR = 16 // ARGB to YCbCr color conversion flag
+	PIXELFORMAT_CSC_ARGB_YCBCR = 16 //!< ARGB to YCbCr color conversion flag
 }SceJpegEncoderPixelFormat;
 
 /**
@@ -23,7 +23,7 @@ typedef enum SceJpegEncoderPixelFormat{
  * @param[in] context - A pointer to a big enough allocated memory block
  * @param[in] inWidth - Input width in pixels
  * @param[in] inHeight - Input height in pixels
- * @param[in] pixelformat - A valid SceJpegEncoderPixelFormat set of values
+ * @param[in] pixelformat - A valid ::SceJpegEncoderPixelFormat set of values
  * @param[in] outBuffer - A physically continuous memory block 256 bytes aligned
  * @param[in] outSize - Output size in bytes
  *

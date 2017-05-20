@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceAudioInErrorCode {
 	//! Undefined error
 	SCE_AUDIO_IN_ERROR_FATAL		= 0x80260100,
 
@@ -44,20 +44,20 @@ enum {
 
 	//! Tried to input while busy
 	SCE_AUDIO_IN_ERROR_BUSY			= 0x8026010A
-};
+} SceAudioInErrorCode;
 
-enum {
+typedef enum SceAudioInPortType {
 	SCE_AUDIO_IN_PORT_TYPE_VOICE	= 0,
 	SCE_AUDIO_IN_PORT_TYPE_RAW	= 0x0002
-};
+} SceAudioInPortType;
 
-enum {
+typedef enum SceAudioInParam {
 	SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO	= 0,
 	SCE_AUDIO_IN_GETSTATUS_MUTE		= 1
-};
+} SceAudioInParam;
 
 //! Open port
-int sceAudioInOpenPort(int portType, int grain, int freq, int param);
+int sceAudioInOpenPort(SceAudioInPortType portType, int grain, int freq, SceAudioInParam param);
 
 //! Close port
 int sceAudioInReleasePort(int port);
@@ -65,7 +65,7 @@ int sceAudioInReleasePort(int port);
 int sceAudioInInput(int port, void *destPtr);
 
 /* get status */
-int sceAudioInGetAdopt(int portType);
+int sceAudioInGetAdopt(SceAudioInPortType portType);
 int sceAudioInGetStatus(int select);
 
 #ifdef __cplusplus

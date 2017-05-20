@@ -14,15 +14,15 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceCtrlErrorCode {
 	SCE_CTRL_ERROR_INVALID_ARG	= 0x80340001,
 	SCE_CTRL_ERROR_PRIV_REQUIRED	= 0x80340002,
 	SCE_CTRL_ERROR_FATAL		= 0x803400FF
-};
+} SceCtrlErrorCode;
 
 /** Enumeration for the digital controller buttons.
  * L1/R1/L3/R3 only can bind using sceCtrlReadBufferPositiveExt2 */
-enum SceCtrlPadButtons {
+typedef enum SceCtrlButtons {
 	SCE_CTRL_SELECT      = 0x000001,	//!< Select button.
 	SCE_CTRL_L3          = 0x000002,	//!< L3 button.
 	SCE_CTRL_R3          = 0x000004,	//!< R3 button.
@@ -42,32 +42,32 @@ enum SceCtrlPadButtons {
 	SCE_CTRL_INTERCEPTED = 0x010000,        //!< Input not available because intercepted by another application
 	SCE_CTRL_VOLUP       = 0x100000,	//!< Volume up button.
 	SCE_CTRL_VOLDOWN     = 0x200000		//!< Volume down button.
-};
+} SceCtrlButtons;
 
 /** Enumeration for the controller types. */
-enum SceCtrlExternalInputMode {
+typedef enum SceCtrlExternalInputMode {
 	SCE_CTRL_TYPE_UNPAIRED  = 0,
 	SCE_CTRL_TYPE_PHY       = 1, //!< Physical controller for VITA
 	SCE_CTRL_TYPE_VIRT      = 2, //!< Virtual controller for PSTV
 	SCE_CTRL_TYPE_DS3       = 4, //!< DualShock 3
 	SCE_CTRL_TYPE_DS4       = 8  //!< DualShock 4
-};
+} SceCtrlExternalInputMode;
 
 /** Controller mode. */
-enum SceCtrlPadInputMode {
+typedef enum SceCtrlPadInputMode {
 	/** Digital buttons only. */
 	SCE_CTRL_MODE_DIGITAL = 0,
 	/** Digital buttons + Analog support. */
 	SCE_CTRL_MODE_ANALOG = 1,
 	/** Same as ::SCE_CTRL_MODE_ANALOG, but with larger range for analog sticks. */
 	SCE_CTRL_MODE_ANALOG_WIDE = 2
-};
+} SceCtrlPadInputMode;
 
 /** Returned controller data */
 typedef struct SceCtrlData {
 	/** The current read frame. */
 	uint64_t	timeStamp;
-	/** Bit mask containing zero or more of ::CtrlButtons. */
+	/** Bit mask containing zero or more of ::SceCtrlButtons. */
 	unsigned int 	buttons;
 	/** Left analogue stick, X axis. */
 	unsigned char 	lx;
@@ -106,36 +106,36 @@ typedef struct SceCtrlActuator {
 
 /** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
 typedef struct SceCtrlPortInfo {
-	uint8_t port[5];  //!< Controller type of each ports
+	SceCtrlExternalInputMode port[5];  //!< Controller type of each ports
 	uint8_t unk[11];  //!< Unknown
 } SceCtrlPortInfo;
 
 /**
  * Set the controller mode.
  *
- * @param[in] mode - One of ::CtrlMode.
+ * @param[in] mode - One of ::SceCtrlPadInputMode.
  *
  * @return The previous mode, <0 on error.
  */
-int sceCtrlSetSamplingMode(int mode);
+int sceCtrlSetSamplingMode(SceCtrlPadInputMode mode);
 
 /**
  * Set the controller extend mode.
  *
- * @param[in] mode - One of ::CtrlMode.
+ * @param[in] mode - One of ::SceCtrlPadInputMode.
  *
  * @return The previous mode, <0 on error.
  */
-int sceCtrlSetSamplingModeExt(int mode);
+int sceCtrlSetSamplingModeExt(SceCtrlPadInputMode mode);
 
 /**
  * Get the current controller mode.
  *
- * @param[out] pMode - Return value, see ::CtrlMode.
+ * @param[out] pMode - Return value, see ::SceCtrlPadInputMode.
  *
  * @return The current mode, <0 on error.
  */
-int sceCtrlGetSamplingMode(int *pMode);
+int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
 
 /**
  * Get the controller state information (polling, positive logic).
