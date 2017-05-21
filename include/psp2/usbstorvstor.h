@@ -12,8 +12,8 @@ extern "C" {
 #endif
 
 typedef enum SceUsbstorVstorType {
-	SCE_USBSTOR_VSTOR_TYPE_FAT		= 0,
-	SCE_USBSTOR_VSTOR_TYPE_CDROM	= 5,
+	SCE_USBSTOR_VSTOR_TYPE_FAT     = 0,
+	SCE_USBSTOR_VSTOR_TYPE_CDROM   = 5
 } SceUsbstorVstorType;
 
 /**

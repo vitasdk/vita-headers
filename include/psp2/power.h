@@ -15,18 +15,20 @@ extern "C" {
 #endif
 
 typedef enum ScePowerCallbackType {
-	/*indicates the unit is suspending, seems to occur due to inactivity*/
-	SCE_POWER_CB_SUSPENDING	= 0x00010000,
-	/*indicates the unit is resuming from suspend mode*/
-	SCE_POWER_CB_RESUMING	= 0x00020000,
-	/*indicates the unit has finish resuming from suspend mode*/
-	SCE_POWER_CB_RESUME_COMPLETE	= 0x00040000
+	/** indicates the unit is suspending, seems to occur due to inactivity */
+	SCE_POWER_CB_SUSPENDING       = 0x00010000,
+	/** indicates the unit is resuming from suspend mode */
+	SCE_POWER_CB_RESUMING         = 0x00020000,
+	/** indicates the unit has finish resuming from suspend mode */
+	SCE_POWER_CB_RESUME_COMPLETE  = 0x00040000
 }ScePowerCallbackType;
 
 /* Callbacks */
 
 /** Callback function prototype */
 typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo);
+
+/* Prototypes */
 
 /**
  * Registers a ScePower Callback
@@ -45,8 +47,6 @@ int scePowerRegisterCallback(SceUID cbid);
  * @return 0 on success, < 0 on error
  */
 int scePowerUnregisterCallback(SceUID cbid);
-
-/* Prototypes */
 
 /**
  * Returns battery charging status
@@ -238,4 +238,3 @@ int scePowerSetGpuXbarClockFrequency(int freq);
 #endif
 
 #endif /* _PSP2_POWER_H_ */
-

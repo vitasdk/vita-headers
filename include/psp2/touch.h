@@ -13,74 +13,74 @@ extern "C" {
 
 #include <psp2/types.h>
 
+/** Touch error codes */
+typedef enum SceTouchErrorCode {
+	SCE_TOUCH_ERROR_INVALID_ARG	  = 0x80350001,
+	SCE_TOUCH_ERROR_PRIV_REQUIRED = 0x80350002,
+	SCE_TOUCH_ERROR_FATAL         = 0x803500ff
+} SceTouchErrorCode;
+
 #define SCE_TOUCH_MAX_REPORT 8	//!< FIXME 6 on front | 4 on back
 
 /**
  * Port numbers of touch panels
  *
- * @see sceTouchRead()
- * @see sceTouchPeek()
+ * @see ::sceTouchRead
+ * @see ::sceTouchPeek
  */
 typedef enum SceTouchPortType {
-	SCE_TOUCH_PORT_FRONT	= 0,	//!< Front touch panel id
-	SCE_TOUCH_PORT_BACK	= 1,	//!< Back touch panel id
-	SCE_TOUCH_PORT_MAX_NUM	= 2	//!< Number of touch panels
+	SCE_TOUCH_PORT_FRONT   = 0, //!< Front touch panel id
+	SCE_TOUCH_PORT_BACK    = 1, //!< Back touch panel id
+	SCE_TOUCH_PORT_MAX_NUM = 2  //!< Number of touch panels
 } SceTouchPortType;
 
 /**
  * Sampling port setting of the touch panel
  *
- * @see sceTouchSetSamplingState()
+ * @see ::sceTouchSetSamplingState
  */
 typedef enum SceTouchSamplingState {
-	SCE_TOUCH_SAMPLING_STATE_STOP	= 0,
-	SCE_TOUCH_SAMPLING_STATE_START	= 1
+	SCE_TOUCH_SAMPLING_STATE_STOP   = 0,
+	SCE_TOUCH_SAMPLING_STATE_START  = 1
 } SceTouchSamplingState;
 
 /**
- * Info field of SceTouchReport structure
+ * Info field of ::SceTouchReport structure
  *
- * @see SceTouchReport()
+ * @see ::SceTouchReport
  */
 typedef enum SceTouchReportInfo {
 	SCE_TOUCH_REPORT_INFO_HIDE_UPPER_LAYER = 0x0001
 } SceTouchReportInfo;
 
-/** Touch error codes */
-typedef enum SceTouchErrorCode {
-	SCE_TOUCH_ERROR_INVALID_ARG	= 0x80350001,
-	SCE_TOUCH_ERROR_PRIV_REQUIRED	= 0x80350002,
-	SCE_TOUCH_ERROR_FATAL		= 0x803500ff
-} SceTouchErrorCode;
-
 typedef struct SceTouchPanelInfo {
-	SceInt16 minAaX;	//!< Min active area X position
-	SceInt16 minAaY;	//!< Min active area Y position
-	SceInt16 maxAaX;	//!< Max active area X position
-	SceInt16 maxAaY;	//!< Max active area Y position
-	SceInt16 minDispX;	//!< Min display X origin (top left)
-	SceInt16 minDispY;	//!< Min display Y origin (top left)
-	SceInt16 maxDispX;	//!< Max display X origin (bottom right)
-	SceInt16 maxDispY;	//!< Max display Y origin (bottom right)
-	SceUInt8 minForce;	//!< Min touch force value
-	SceUInt8 maxForce;	//!< Max touch force value
-	SceUInt8 reserved[30];	//!< Reserved
+	SceInt16 minAaX;        //!< Min active area X position
+	SceInt16 minAaY;        //!< Min active area Y position
+	SceInt16 maxAaX;        //!< Max active area X position
+	SceInt16 maxAaY;        //!< Max active area Y position
+	SceInt16 minDispX;      //!< Min display X origin (top left)
+	SceInt16 minDispY;      //!< Min display Y origin (top left)
+	SceInt16 maxDispX;      //!< Max display X origin (bottom right)
+	SceInt16 maxDispY;      //!< Max display Y origin (bottom right)
+	SceUInt8 minForce;      //!< Min touch force value
+	SceUInt8 maxForce;      //!< Max touch force value
+	SceUInt8 reserved[30];  //!< Reserved
 } SceTouchPanelInfo;
 
 typedef struct SceTouchReport {
-	SceUInt8	id;		//!< Touch ID
-	SceUInt8 	force;		//!< Touch force
-	SceInt16 	x;		//!< X position
-	SceInt16 	y;		//!< Y position
-	SceUInt8 	reserved[8];	//!< Reserved
-	SceUInt16 	info;		//!< Information of this touch
+	SceUInt8	id;          //!< Touch ID
+	SceUInt8 	force;       //!< Touch force
+	SceInt16 	x;           //!< X position
+	SceInt16 	y;           //!< Y position
+	SceUInt8 	reserved[8]; //!< Reserved
+	SceUInt16 	info;        //!< Information of this touch
 } SceTouchReport;
 
 typedef struct SceTouchData {
-	SceUInt64	timeStamp;	//!< Data timestamp
-	SceUInt32	status;		//!< Unused
-	SceUInt32 	reportNum;	//!< Number of touch reports
-	SceTouchReport	report[SCE_TOUCH_MAX_REPORT];	//!< Touch reports
+	SceUInt64	timeStamp;                        //!< Data timestamp
+	SceUInt32	status;                           //!< Unused
+	SceUInt32 	reportNum;                        //!< Number of touch reports
+	SceTouchReport	report[SCE_TOUCH_MAX_REPORT]; //!< Touch reports
 } SceTouchData;
 
 /**

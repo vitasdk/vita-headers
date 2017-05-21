@@ -225,15 +225,15 @@ typedef struct SceDateTime {
     unsigned int microsecond;
 } SceDateTime;
 
-typedef int SceMode; //!< Mode for I/O functions
+typedef int SceMode;     //!< Mode for I/O functions
 typedef SceInt64 SceOff; //!< Offset type
 
 typedef int SceUID; //!< UIDs are used to describe many different kernel objects.
 
-typedef int ScePID; //!< Process ID
+typedef int ScePID;                  //!< Process ID
 #define SCE_KERNEL_PROCESS_ID_SELF 0 //!< Current running process ID is always 0
 
-typedef char* SceName; //!< Names are used to describe object names
+typedef char* SceName;     //!< Names are used to describe object names
 #define SCE_UID_NAMELEN 31 //!< Maximum length for kernel object names
 
 #endif

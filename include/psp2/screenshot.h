@@ -14,12 +14,12 @@ extern "C" {
 #endif
 
 typedef enum SceScreenshotErrorCode {
-	SCE_SCREENSHOT_ERROR_INVALID_ARGUMENT		= 0x80102f01,
-	SCE_SCREENSHOT_ERROR_NO_MEMORY			= 0x80102f02,
-	SCE_SCREENSHOT_ERROR_FILE_NOT_FOUND		= 0x80102f03,
-	SCE_SCREENSHOT_ERROR_NOT_SUPPORTED_FORMAT	= 0x80102f04,
-	SCE_SCREENSHOT_ERROR_MEDIA_FULL			= 0x80102f05,
-	SCE_SCREENSHOT_ERROR_INTERNAL			= 0x80102f06
+	SCE_SCREENSHOT_ERROR_INVALID_ARGUMENT       = 0x80102f01,
+	SCE_SCREENSHOT_ERROR_NO_MEMORY              = 0x80102f02,
+	SCE_SCREENSHOT_ERROR_FILE_NOT_FOUND         = 0x80102f03,
+	SCE_SCREENSHOT_ERROR_NOT_SUPPORTED_FORMAT   = 0x80102f04,
+	SCE_SCREENSHOT_ERROR_MEDIA_FULL             = 0x80102f05,
+	SCE_SCREENSHOT_ERROR_INTERNAL               = 0x80102f06
 } SceScreenshotErrorCode;
 
 //! Max size of path strings (includes device name and NULL terminator)
@@ -44,10 +44,10 @@ typedef enum SceScreenshotErrorCode {
 #define SCE_SCREENSHOT_MAX_GAME_COMMENT_SIZE	(SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN * 4)
 
 typedef struct SceScreenShotParam {
-	const SceWChar32 *photoTitle; //!< Photo title
-	const SceWChar32 *gameTitle;  //!< Game title
+	const SceWChar32 *photoTitle;   //!< Photo title
+	const SceWChar32 *gameTitle;    //!< Game title
 	const SceWChar32 *gameComment;  //!< Game description
-	void *reserved; //!< Reserved range (Must be NULL)
+	void *reserved;                 //!< Reserved range (Must be NULL)
 } SceScreenShotParam;
 
 //! Set screenshot params

@@ -15,38 +15,38 @@ extern "C" {
 #endif
 
 typedef enum SceCtrlErrorCode {
-	SCE_CTRL_ERROR_INVALID_ARG	= 0x80340001,
-	SCE_CTRL_ERROR_PRIV_REQUIRED	= 0x80340002,
-	SCE_CTRL_ERROR_FATAL		= 0x803400FF
+	SCE_CTRL_ERROR_INVALID_ARG   = 0x80340001,
+	SCE_CTRL_ERROR_PRIV_REQUIRED = 0x80340002,
+	SCE_CTRL_ERROR_FATAL         = 0x803400FF
 } SceCtrlErrorCode;
 
 /** Enumeration for the digital controller buttons.
  * L1/R1/L3/R3 only can bind using sceCtrlReadBufferPositiveExt2 */
 typedef enum SceCtrlButtons {
-	SCE_CTRL_SELECT      = 0x000001,	//!< Select button.
-	SCE_CTRL_L3          = 0x000002,	//!< L3 button.
-	SCE_CTRL_R3          = 0x000004,	//!< R3 button.
-	SCE_CTRL_START       = 0x000008,	//!< Start button.
-	SCE_CTRL_UP          = 0x000010,	//!< Up D-Pad button.
-	SCE_CTRL_RIGHT       = 0x000020,	//!< Right D-Pad button.
-	SCE_CTRL_DOWN        = 0x000040,	//!< Down D-Pad button.
-	SCE_CTRL_LEFT        = 0x000080,	//!< Left D-Pad button.
-	SCE_CTRL_LTRIGGER    = 0x000100,	//!< Left trigger.
-	SCE_CTRL_RTRIGGER    = 0x000200,	//!< Right trigger.
-	SCE_CTRL_L1          = 0x000400,	//!< L1 button.
-	SCE_CTRL_R1          = 0x000800,	//!< R1 button.
-	SCE_CTRL_TRIANGLE    = 0x001000,	//!< Triangle button.
-	SCE_CTRL_CIRCLE      = 0x002000,	//!< Circle button.
-	SCE_CTRL_CROSS       = 0x004000,	//!< Cross button.
-	SCE_CTRL_SQUARE      = 0x008000,	//!< Square button.
-	SCE_CTRL_INTERCEPTED = 0x010000,        //!< Input not available because intercepted by another application
-	SCE_CTRL_VOLUP       = 0x100000,	//!< Volume up button.
-	SCE_CTRL_VOLDOWN     = 0x200000		//!< Volume down button.
+	SCE_CTRL_SELECT      = 0x000001,    //!< Select button.
+	SCE_CTRL_L3          = 0x000002,    //!< L3 button.
+	SCE_CTRL_R3          = 0x000004,    //!< R3 button.
+	SCE_CTRL_START       = 0x000008,    //!< Start button.
+	SCE_CTRL_UP          = 0x000010,    //!< Up D-Pad button.
+	SCE_CTRL_RIGHT       = 0x000020,    //!< Right D-Pad button.
+	SCE_CTRL_DOWN        = 0x000040,    //!< Down D-Pad button.
+	SCE_CTRL_LEFT        = 0x000080,    //!< Left D-Pad button.
+	SCE_CTRL_LTRIGGER    = 0x000100,    //!< Left trigger.
+	SCE_CTRL_RTRIGGER    = 0x000200,    //!< Right trigger.
+	SCE_CTRL_L1          = 0x000400,    //!< L1 button.
+	SCE_CTRL_R1          = 0x000800,    //!< R1 button.
+	SCE_CTRL_TRIANGLE    = 0x001000,    //!< Triangle button.
+	SCE_CTRL_CIRCLE      = 0x002000,    //!< Circle button.
+	SCE_CTRL_CROSS       = 0x004000,    //!< Cross button.
+	SCE_CTRL_SQUARE      = 0x008000,    //!< Square button.
+	SCE_CTRL_INTERCEPTED = 0x010000,    //!< Input not available because intercepted by another application
+	SCE_CTRL_VOLUP       = 0x100000,    //!< Volume up button.
+	SCE_CTRL_VOLDOWN     = 0x200000     //!< Volume down button.
 } SceCtrlButtons;
 
 /** Enumeration for the controller types. */
 typedef enum SceCtrlExternalInputMode {
-	SCE_CTRL_TYPE_UNPAIRED  = 0,
+	SCE_CTRL_TYPE_UNPAIRED  = 0, //!< Unpaired controller
 	SCE_CTRL_TYPE_PHY       = 1, //!< Physical controller for VITA
 	SCE_CTRL_TYPE_VIRT      = 2, //!< Virtual controller for PSTV
 	SCE_CTRL_TYPE_DS3       = 4, //!< DualShock 3
@@ -56,9 +56,9 @@ typedef enum SceCtrlExternalInputMode {
 /** Controller mode. */
 typedef enum SceCtrlPadInputMode {
 	/** Digital buttons only. */
-	SCE_CTRL_MODE_DIGITAL = 0,
+	SCE_CTRL_MODE_DIGITAL     = 0,
 	/** Digital buttons + Analog support. */
-	SCE_CTRL_MODE_ANALOG = 1,
+	SCE_CTRL_MODE_ANALOG      = 1,
 	/** Same as ::SCE_CTRL_MODE_ANALOG, but with larger range for analog sticks. */
 	SCE_CTRL_MODE_ANALOG_WIDE = 2
 } SceCtrlPadInputMode;
@@ -101,13 +101,13 @@ typedef struct SceCtrlRapidFireRule {
 typedef struct SceCtrlActuator {
 	unsigned char small; //!< Vibration strength of the small motor
 	unsigned char large; //!< Vibration strength of the large motor
-	uint8_t unk[6]; //!< Unknown
+	uint8_t unk[6];      //!< Unknown
 } SceCtrlActuator;
 
 /** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
 typedef struct SceCtrlPortInfo {
 	SceCtrlExternalInputMode port[5];  //!< Controller type of each ports
-	uint8_t unk[11];  //!< Unknown
+	uint8_t unk[11];                   //!< Unknown
 } SceCtrlPortInfo;
 
 /**

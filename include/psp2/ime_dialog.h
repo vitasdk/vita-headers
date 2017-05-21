@@ -37,8 +37,8 @@ typedef SceImeLanguage {
 	SCE_IME_LANGUAGE_TURKISH             = 0x00080000ULL
 } SceImeLanguage;
 
-#define SCE_IME_DIALOG_MAX_TITLE_LENGTH			(128)
-#define SCE_IME_DIALOG_MAX_TEXT_LENGTH		    (512)
+#define SCE_IME_DIALOG_MAX_TITLE_LENGTH    (128)
+#define SCE_IME_DIALOG_MAX_TEXT_LENGTH     (512)
 
 typedef SceImeType {
 	SCE_IME_TYPE_DEFAULT             = 0,
@@ -74,7 +74,7 @@ typedef SceImeDialogTextboxMode {
 typedef SceImeDialogButton {
 	SCE_IME_DIALOG_BUTTON_NONE  = 0,
 	SCE_IME_DIALOG_BUTTON_CLOSE = 1,
-	SCE_IME_DIALOG_BUTTON_ENTER = 2,
+	SCE_IME_DIALOG_BUTTON_ENTER = 2
 } SceImeDialogButton;
 
 typedef SceInt32 (*SceImeCharFilter)(SceWChar16 ch);

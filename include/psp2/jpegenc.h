@@ -11,9 +11,9 @@
 #define SceJpegEncoderContext void*
  
 typedef enum SceJpegEncoderPixelFormat{
-	PIXELFORMAT_ARGB8888 = 0,
-	PIXELFORMAT_YCBCR420 = 8,
-	PIXELFORMAT_YCBCR422 = 9,
+	PIXELFORMAT_ARGB8888 = 0,       //!< ARGB8888 format
+	PIXELFORMAT_YCBCR420 = 8,       //!< YCbCr420 format
+	PIXELFORMAT_YCBCR422 = 9,       //!< YCbCr422 format
 	PIXELFORMAT_CSC_ARGB_YCBCR = 16 //!< ARGB to YCbCr color conversion flag
 }SceJpegEncoderPixelFormat;
 
