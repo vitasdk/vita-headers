@@ -36,7 +36,7 @@ typedef enum SceAudioOutPortType {
 	//! Used for main audio output, freq must be set to 48000 Hz
 	SCE_AUDIO_OUT_PORT_TYPE_MAIN    = 0,
 	//! Used for Background Music port
-	SCE_AUDIO_OUT_PORT_TYPE_BGM	    = 1,
+	SCE_AUDIO_OUT_PORT_TYPE_BGM     = 1,
 	//! Used for voice chat port
 	SCE_AUDIO_OUT_PORT_TYPE_VOICE   = 2
 } SceAudioOutPortType;

@@ -15,7 +15,7 @@ extern "C" {
 #endif
 
 typedef struct PhotoExportParam {
-	int version;					//!< Version
+	int version;                    //!< Version
 	const SceWChar32 *photoTitle;   //!< Photo title
 	const SceWChar32 *gameTitle;    //!< Game title
 	const SceWChar32 *gameComment;  //!< Game description

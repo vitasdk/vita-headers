@@ -87,7 +87,7 @@ typedef union SceAudioencInfo {
 
 /** Audio encoder optional info */
 typedef union SceAudioencOptInfo {
-	SceSize size;				  //!< Size of this structure
+	SceSize size;                 //!< sizeof(SceAudioencOptInfo)
 	SceAudioencOptInfoCelp celp;  //!< Optional information structure for CELP
 } SceAudioencOptInfo;
 
