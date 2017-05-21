@@ -5440,6 +5440,14 @@ modules:
           ksceSblACMgrIsGameProgram: 0x1298C647
           ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
           ksceSblACMgrIsDevelopmentMode: 0xE87D1777
+  SceSblUpdateMgr:
+     nid: 0x528F6BF5
+     libraries:
+       SceSblSsUpdateMgr:
+         kernel: false
+         nid: 0x31406C49
+         functions:
+           sceSblSsUpdateMgrSetBootMode: 0xC725E3F0
   SceUsbd:
     nid: 0x3525FE7A
     libraries:
