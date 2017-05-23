@@ -84,15 +84,15 @@ typedef enum SceMsgDialogEnvFlag {
 }SceMsgDialogEnvFlag;
 
 typedef struct SceMsgDialogUserMessageParam {
-	SceMsgDialogButtonType buttonType; //!< Type of button set
-	const SceChar8 *msg;               //!< Displayed message 
-	SceChar8 reserved[32];             //!< Reserved range
+	SceMsgDialogButtonType buttonType : 32; //!< Type of button set
+	const SceChar8 *msg;                    //!< Displayed message 
+	SceChar8 reserved[32];                  //!< Reserved range
 } SceMsgDialogUserMessageParam;
 
 typedef struct SceMsgDialogSystemMessageParam {
-	SceMsgDialogSystemMessageType sysMsgType;  //!< System message type
-	SceInt32 value;                            //!< Additional value
-	SceChar8 reserved[32];                     //!< Reserved range
+	SceMsgDialogSystemMessageType sysMsgType : 32;  //!< System message type
+	SceInt32 value;                                 //!< Additional value
+	SceChar8 reserved[32];                          //!< Reserved range
 } SceMsgDialogSystemMessageParam;
 
 typedef struct SceMsgDialogErrorCodeParam {
@@ -101,7 +101,7 @@ typedef struct SceMsgDialogErrorCodeParam {
 } SceMsgDialogErrorCodeParam;
 
 typedef struct SceMsgDialogProgressBarParam {
-	SceMsgDialogProgressBarType barType;        //!< Progress bar type
+	SceMsgDialogProgressBarType barType : 32;   //!< Progress bar type
 	SceMsgDialogSystemMessageParam sysMsgParam; //!< Displayed system message
 	const SceChar8 *msg;                        //!< Displayed user message
 	SceInt32 reserved[8];                       //!< Reserved range
@@ -110,20 +110,20 @@ typedef struct SceMsgDialogProgressBarParam {
 typedef struct SceMsgDialogParam {
 	SceUInt32 sdkVersion;                         //!< Required to use MsgDialog. Just use NULL
 	SceCommonDialogParam commonParam;             //!< Common parameter
-	SceMsgDialogMode mode;                        //!< MsgDialog Mode
+	SceMsgDialogMode mode : 32;                   //!< Mode of function
 	SceMsgDialogUserMessageParam *userMsgParam;   //!< Parameter for user message
 	SceMsgDialogSystemMessageParam *sysMsgParam;  //!< Parameter for system prepared message
 	SceMsgDialogErrorCodeParam *errorCodeParam;   //!< Parameter for display error code
 	SceMsgDialogProgressBarParam *progBarParam;   //!< Parameter for progress bar
-	SceMsgDialogEnvFlag flag;                     //!< Settings for dialog environment
+	SceMsgDialogEnvFlag flag : 32;                //!< Settings for dialog environment
 	SceChar8 reserved[32];                        //!< Reserved range
 } SceMsgDialogParam;
 
 typedef struct SceMsgDialogResult {
-	SceMsgDialogMode mode;          //!< Mode of function
-	SceInt32 result;                //!< Result of executing function
-	SceMsgDialogButtonId buttonId;  //!< Id of button user selected
-	SceChar8 reserved[32];          //!< Reserved range
+	SceMsgDialogMode mode : 32;          //!< Mode of function
+	SceInt32 result;                     //!< Result of executing function
+	SceMsgDialogButtonId buttonId : 32;  //!< Id of button user selected
+	SceChar8 reserved[32];               //!< Reserved range
 } SceMsgDialogResult;
 
 static inline

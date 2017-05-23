@@ -75,8 +75,8 @@ typedef struct SceCameraInfo {
 	SceSize size;
 	uint16_t priority;
 	uint16_t format;
-	SceCameraResolution resolution;
-	SceCameraFrameRate framerate;
+	uint16_t resolution; //!< Resolution (one of ::SceCameraResolution)
+	uint16_t framerate;  //!< Framerate (one of ::SceCameraFrameRate)
 	uint16_t width;
 	uint16_t height;
 	uint16_t range;

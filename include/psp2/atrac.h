@@ -80,7 +80,7 @@ typedef enum SceAtracErrorCode {
 #define SCE_ATRAC_INFINITE_SAMPLES  (-1)
 
 /* The definition of ATRAC decoder status */
-typedef SceAtracDecoderStatus {
+typedef enum SceAtracDecoderStatus {
 	SCE_ATRAC_DECODER_STATUS_ALL_DATA_WAS_DECODED       = 0x00000001,
 	SCE_ATRAC_DECODER_STATUS_ALL_DATA_IS_ON_MEMORY      = 0x00000002,
 	SCE_ATRAC_DECODER_STATUS_NONLOOP_PART_IS_ON_MEMORY  = 0x00000004,
@@ -88,7 +88,7 @@ typedef SceAtracDecoderStatus {
 } SceAtracDecoderStatus;
 
 /* The definition of loop status */
-typedef SceAtracLoopStatus {
+typedef enum SceAtracLoopStatus {
 	SCE_ATRAC_LOOP_STATUS_NON_RESETABLE_PART          = 0x00000000,
 	SCE_ATRAC_LOOP_STATUS_RESETABLE_PART              = 0x00000001
 } SceAtracLoopStatus;

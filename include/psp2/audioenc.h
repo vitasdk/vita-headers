@@ -62,7 +62,7 @@ typedef struct SceAudioencInfoCelp {
 	SceSize size;                    //!< sizeof(SceAudioencInfoCelp)
 	unsigned int excitationMode;     //!< Excitation mode
 	unsigned int samplingRate;       //!< Sampling rate
-	SceAudioencCelpBitrate bitRate;  //!< Bit rate
+	unsigned int bitRate;            //!< Bit rate (one of ::SceAudioencCelpBitrate)
 } SceAudioencInfoCelp;
 
 /** Optional information structure for CELP */

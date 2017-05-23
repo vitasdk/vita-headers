@@ -106,8 +106,8 @@ typedef struct SceCtrlActuator {
 
 /** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
 typedef struct SceCtrlPortInfo {
-	SceCtrlExternalInputMode port[5];  //!< Controller type of each ports
-	uint8_t unk[11];                   //!< Unknown
+	uint8_t port[5];  //!< Controller type of each port (See ::SceCtrlExternalInputMode)
+	uint8_t unk[11];  //!< Unknown
 } SceCtrlPortInfo;
 
 /**

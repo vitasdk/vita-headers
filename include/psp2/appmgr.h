@@ -51,7 +51,7 @@ typedef enum SceAppMgrInfoBarTransparency {
 } SceAppMgrInfoBarTransparency;
 
 typedef struct SceAppMgrSystemEvent {
-	SceAppMgrSystemEventType systemEvent;
+	int systemEvent; //!< One of ::SceAppMgrSystemEventType
 	uint8_t reserved[60];
 } SceAppMgrSystemEvent;
 

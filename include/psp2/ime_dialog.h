@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-typedef SceImeLanguage {
+typedef enum SceImeLanguage {
 	SCE_IME_LANGUAGE_DANISH              = 0x00000001ULL,
 	SCE_IME_LANGUAGE_GERMAN              = 0x00000002ULL,
 	SCE_IME_LANGUAGE_ENGLISH             = 0x00000004ULL,
@@ -40,38 +40,38 @@ typedef SceImeLanguage {
 #define SCE_IME_DIALOG_MAX_TITLE_LENGTH    (128)
 #define SCE_IME_DIALOG_MAX_TEXT_LENGTH     (512)
 
-typedef SceImeType {
+typedef enum SceImeType {
 	SCE_IME_TYPE_DEFAULT             = 0,
 	SCE_IME_TYPE_BASIC_LATIN         = 1,
 	SCE_IME_TYPE_NUMBER              = 2,
 	SCE_IME_TYPE_EXTENDED_NUMBER     = 3
 } SceImeType;
 
-typedef SceImeEnterLabel {
+typedef enum SceImeEnterLabel {
 	SCE_IME_ENTER_LABEL_DEFAULT = 0,
 	SCE_IME_ENTER_LABEL_SEND    = 1,
 	SCE_IME_ENTER_LABEL_SEARCH  = 2,
 	SCE_IME_ENTER_LABEL_GO      = 3
 } SceImeEnterLabel;
 
-typedef SceImeOption {
+typedef enum SceImeOption {
 	SCE_IME_OPTION_MULTILINE               = 0x01,
 	SCE_IME_OPTION_NO_AUTO_CAPITALIZATION  = 0x02,
 	SCE_IME_OPTION_NO_ASSISTANCE           = 0x04
 } SceImeOption;
 
-typedef SceImeDialogDialogMode {
-	SCE_IME_DIALOG_DIALOG_MODE_DEFAULT	    = 0,
+typedef enum SceImeDialogDialogMode {
+	SCE_IME_DIALOG_DIALOG_MODE_DEFAULT      = 0,
 	SCE_IME_DIALOG_DIALOG_MODE_WITH_CANCEL  = 1
 } SceImeDialogDialogMode;
 
-typedef SceImeDialogTextboxMode {
+typedef enum SceImeDialogTextboxMode {
 	SCE_IME_DIALOG_TEXTBOX_MODE_DEFAULT     = 0,
 	SCE_IME_DIALOG_TEXTBOX_MODE_PASSWORD    = 1,
 	SCE_IME_DIALOG_TEXTBOX_MODE_WITH_CLEAR	= 2
 } SceImeDialogTextboxMode;
 
-typedef SceImeDialogButton {
+typedef enum SceImeDialogButton {
 	SCE_IME_DIALOG_BUTTON_NONE  = 0,
 	SCE_IME_DIALOG_BUTTON_CLOSE = 1,
 	SCE_IME_DIALOG_BUTTON_ENTER = 2
@@ -83,14 +83,14 @@ typedef struct SceImeDialogParam {
 	SceUInt32 sdkVersion;
 
 	SceUInt32 inputMethod;
-	SceUInt64 supportedLanguages; //!< One or more ::SceImeLanguage
+	SceUInt64 supportedLanguages;         //!< Dialog languages (One or more ::SceImeLanguage)
 	SceBool languagesForced;
-	SceImeType type;
-	SceImeOption option;
+	SceUInt32 type;                       //!< Dialog type (One of ::SceImeType)
+	SceUInt32 option;                     //!< Dialog options (One or more ::SceImeOption)
 	SceImeCharFilter filter;
 
-	SceImeDialogDialogMode dialogMode;
-	SceImeDialogTextboxMode textBoxMode;
+	SceUInt32 dialogMode;                 //!< Dialog mode (One of ::SceImeDialogDialogMode)
+	SceUInt32 textBoxMode;                //!< Textbox mode (One of ::SceImeDialogTextboxMode)
 	const SceWChar16 *title;
 	SceUInt32 maxTextLength;
 	SceWChar16 *initialText;

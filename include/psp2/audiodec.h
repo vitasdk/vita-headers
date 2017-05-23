@@ -134,9 +134,9 @@ typedef struct SceAudiodecInfoAt9 {
 } SceAudiodecInfoAt9;
 
 typedef struct SceAudiodecInfoMp3 {
-	SceUInt32 size;
-	SceUInt32 ch;	//! number of channels (mono: 1, stereo/joint stereo/two mono: 2)
-	SceUInt32 version;	//! MPEG version (MPEG1: 3, MPEG2: 2, MPEG2.5: 0)
+	SceUInt32 size;      //!< sizeof(SceAudiodecInfoMp3)
+	SceUInt32 ch;        //!< number of channels (mono: 1, stereo/joint stereo/two mono: 2)
+	SceUInt32 version;   //!< MPEG version (MPEG1: 3, MPEG2: 2, MPEG2.5: 0)
 } SceAudiodecInfoMp3;
 
 typedef struct SceAudiodecInfoAac {
@@ -149,10 +149,10 @@ typedef struct SceAudiodecInfoAac {
 
 /** Information structure for CELP */
 typedef struct SceAudiodecInfoCelp {
-	SceUInt32 size;				//!< sizeof(SceAudiodecInfoCelp)
-	SceUInt32 excitationMode;		//!< Excitation mode
-	SceUInt32 samplingRate;		//!< Sampling rate
-	SceAudiodecCelpBitrate bitRate; //!< Bit rate
+	SceUInt32 size;                  //!< sizeof(SceAudiodecInfoCelp)
+	SceUInt32 excitationMode;        //!< Excitation mode
+	SceUInt32 samplingRate;          //!< Sampling rate
+	SceUInt32 bitRate;               //!< Bit rate (one of ::SceAudiodecCelpBitrate)
 	SceUInt32 lostCount;
 } SceAudiodecInfoCelp;
 

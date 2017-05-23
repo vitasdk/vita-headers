@@ -46,12 +46,12 @@ typedef enum SceDisplaySetBufSync {
  * @note - This structure is returned by ::sceDisplayGetFrameBuf
 */
 typedef struct SceDisplayFrameBuf {
-	SceSize size;                       //!< sizeof(SceDisplayFrameBuf)
-	void *base;                         //!< Pointer to framebuffer
-	unsigned int pitch;                 //!< pitch pixels
-	SceDisplayPixelFormat pixelformat;  //!< one of ::SceDisplayPixelFormat
-	unsigned int width;                 //!< framebuffer width
-	unsigned int height;                //!< framebuffer height
+	SceSize size;               //!< sizeof(SceDisplayFrameBuf)
+	void *base;                 //!< Pointer to framebuffer
+	unsigned int pitch;         //!< pitch pixels
+	unsigned int pixelformat;   //!< pixel format (one of ::SceDisplayPixelFormat)
+	unsigned int width;         //!< framebuffer width
+	unsigned int height;        //!< framebuffer height
 } SceDisplayFrameBuf;
 
 /**
