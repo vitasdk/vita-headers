@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceHid}
- * \usage{psp2/hid.h,-lSceHid_stub}
+ * \usage{psp2/hid.h,SceHid_stub}
  */
 
 
@@ -14,7 +14,7 @@ extern "C" {
 #include <psp2/types.h>
 
 typedef struct SceHidKeyboardReport {
-    SceUInt8 unk0[2];
+	SceUInt8 unk0[2];
 	SceUInt8 modifier;
 	SceUInt8 key1;
 	SceUInt8 key2;
@@ -26,9 +26,7 @@ typedef struct SceHidKeyboardReport {
 	
 } SceHidKeyboardReport;
 
-enum {
-	SCE_HID_KEYBOARD_MAX_REPORT	= 16
-};
+#define SCE_HID_KEYBOARD_MAX_REPORT 16
 
 /**
  * Enumerate hid keyboards.
