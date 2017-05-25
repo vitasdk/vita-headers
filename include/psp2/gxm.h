@@ -1169,10 +1169,10 @@ typedef enum SceGxmRenderTargetFlags {
 } SceGxmRenderTargetFlags;
 
 typedef struct SceGxmRenderTargetParams {
-	uint32_t flags;	                //!< Bitwise combined flags from #SceGxmRenderTargetFlags.
+	uint32_t flags;	                //!< Bitwise combined flags from ::SceGxmRenderTargetFlags.
 	uint16_t width;	                //!< The width of the render target in pixels.
 	uint16_t height;                //!< The height of the render target in pixels.
-	uint16_t scenesPerFrame;        //!< The expected number of scenes per frame, in the range [1,#SCE_GXM_MAX_SCENES_PER_RENDERTARGET].
+	uint16_t scenesPerFrame;        //!< The expected number of scenes per frame, in the range [1,SCE_GXM_MAX_SCENES_PER_RENDERTARGET].
 	uint16_t multisampleMode;       //!< A value from the #SceGxmMultisampleMode enum.
 	uint32_t multisampleLocations;  //!< If enabled in the flags, the multisample locations to use.
 	SceUID driverMemBlock;          //!< The uncached LPDDR memblock for the render target GPU data structures or SCE_UID_INVALID_UID to specify memory should be allocated in libgxm.
