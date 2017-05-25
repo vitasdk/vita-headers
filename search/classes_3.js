@@ -102,6 +102,7 @@ var searchData=
   ['scegxmvertexstream',['SceGxmVertexStream',['../group__SceGxmUser.html#structSceGxmVertexStream',1,'']]],
   ['scegxtheader',['SceGxtHeader',['../group__SceGxtUser.html#structSceGxtHeader',1,'']]],
   ['scegxttextureinfo',['SceGxtTextureInfo',['../group__SceGxtUser.html#structSceGxtTextureInfo',1,'']]],
+  ['scehidkeyboardreport',['SceHidKeyboardReport',['../group__SceHidUser.html#structSceHidKeyboardReport',1,'']]],
   ['scehttpmemorypoolstats',['SceHttpMemoryPoolStats',['../group__SceHttpUser.html#structSceHttpMemoryPoolStats',1,'']]],
   ['scehttpscalist',['SceHttpsCaList',['../group__SceHttpUser.html#structSceHttpsCaList',1,'']]],
   ['scehttpsdata',['SceHttpsData',['../group__SceHttpUser.html#structSceHttpsData',1,'']]],

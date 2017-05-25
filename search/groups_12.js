@@ -20,6 +20,7 @@ var searchData=
   ['user',['User',['../group__SceFiberUser.html',1,'']]],
   ['user',['User',['../group__SceGxmUser.html',1,'']]],
   ['user',['User',['../group__SceGxtUser.html',1,'']]],
+  ['user',['User',['../group__SceHidUser.html',1,'']]],
   ['user',['User',['../group__SceHttpUser.html',1,'']]],
   ['user',['User',['../group__SceImeUser.html',1,'']]],
   ['user',['User',['../group__SceJpegEncUser.html',1,'']]],

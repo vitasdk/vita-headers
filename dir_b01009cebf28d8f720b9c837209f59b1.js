@@ -18,6 +18,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "fiber.h", "fiber_8h_source.html", null ],
     [ "gxm.h", "gxm_8h_source.html", null ],
     [ "gxt.h", "gxt_8h_source.html", null ],
+    [ "hid.h", "hid_8h_source.html", null ],
     [ "ime_dialog.h", "ime__dialog_8h_source.html", null ],
     [ "jpegenc.h", "jpegenc_8h_source.html", null ],
     [ "libssl.h", "libssl_8h_source.html", null ],

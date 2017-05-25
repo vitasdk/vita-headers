@@ -106,6 +106,7 @@ var annotated_dup =
     [ "SceGxmVertexStream", "group__SceGxmUser.html#structSceGxmVertexStream", "group__SceGxmUser_structSceGxmVertexStream" ],
     [ "SceGxtHeader", "group__SceGxtUser.html#structSceGxtHeader", "group__SceGxtUser_structSceGxtHeader" ],
     [ "SceGxtTextureInfo", "group__SceGxtUser.html#structSceGxtTextureInfo", "group__SceGxtUser_structSceGxtTextureInfo" ],
+    [ "SceHidKeyboardReport", "group__SceHidUser.html#structSceHidKeyboardReport", "group__SceHidUser_structSceHidKeyboardReport" ],
     [ "SceHttpMemoryPoolStats", "group__SceHttpUser.html#structSceHttpMemoryPoolStats", "group__SceHttpUser_structSceHttpMemoryPoolStats" ],
     [ "SceHttpsCaList", "group__SceHttpUser.html#structSceHttpsCaList", "group__SceHttpUser_structSceHttpsCaList" ],
     [ "SceHttpsData", "group__SceHttpUser.html#structSceHttpsData", "group__SceHttpUser_structSceHttpsData" ],
