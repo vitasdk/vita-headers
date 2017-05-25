@@ -1488,6 +1488,15 @@ modules:
           sceHeapReallocHeapMemoryWithOption: 0xBE8FC3
         kernel: false
         nid: 0x4631A6F0
+  SceHid:
+    nid: 0x76B8FA74
+    libraries:
+      SceHid:
+        functions:
+            sceHidKeyboardEnumerate: 0x34BDFACE
+            sceHidKeyboardRead: 0x224A8AD8
+        kernel: false
+        nid: 0xE23FAD62
   SceHmac:
     nid: 0x3E
     libraries:
