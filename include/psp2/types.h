@@ -39,7 +39,7 @@ typedef unsigned int SceSize;
 typedef int SceSSize;
 
 typedef int SceBool;
-enum SceBool {
+enum {
 	SCE_FALSE,
 	SCE_TRUE
 };
