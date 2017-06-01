@@ -26,7 +26,7 @@ enum {
 	SCE_DISPLAY_ERROR_NO_PIXEL_DATA		= 0x80290008
 };
 
-#define SCE_DISPLAY_PIXELFORMAT_A8B8G8R8 0x00000000U
+#define SCE_DISPLAY_PIXELFORMAT_U8U8U8U8 0x00000000U
 
 enum {
 	/** Buffer change effective immediately */
