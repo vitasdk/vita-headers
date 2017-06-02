@@ -371,8 +371,19 @@ modules:
       SceAppUtilCache:
         functions:
           sceAppUtilCacheMount: 0xAA56143
+          SceAppUtilCache_0x1171B736: 0x1171B736
+          SceAppUtilCache_0x72D26BF4: 0x72D26BF4
         kernel: false
         nid: 0xE96B941B
+        SceAppUtilUmount:
+        functions:
+          SceAppUtilUmount_0xBC38A89: 0xBC38A89
+          SceAppUtilUmount_0x6D8CF67E: 0x6D8CF67E
+          SceAppUtilUmount_0x96C76886L: 0x96C76886L
+          SceAppUtilUmount_0xAE1230D3L: 0xAE1230D3L
+          SceAppUtilUmount_0xCC85F96FL: 0xCC85F96FL
+        kernel: false
+        nid: 0x92F4DAFD
   SceAtrac:
     nid: 0x738129ED
     libraries:
