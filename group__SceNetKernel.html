@@ -109,15 +109,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetBind</b> (int s
 <tr class="memitem:ga1ae12b0040019ba59bb0a009aad15798"><td class="memItemLeft" align="right" valign="top"><a id="ga1ae12b0040019ba59bb0a009aad15798"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetListen</b> (int s, int backlog)</td></tr>
 <tr class="separator:ga1ae12b0040019ba59bb0a009aad15798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84f0e7e05c351d4cc40fab13c27c5253"><td class="memItemLeft" align="right" valign="top"><a id="ga84f0e7e05c351d4cc40fab13c27c5253"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetRecv</b> (int s, void *buf, unsigned int len, int flags)</td></tr>
-<tr class="separator:ga84f0e7e05c351d4cc40fab13c27c5253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e370c4e42ea9b48326995b70514d05c"><td class="memItemLeft" align="right" valign="top"><a id="ga6e370c4e42ea9b48326995b70514d05c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetRecvfrom</b> (int s, void *buf, unsigned int len, int flags, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *from, unsigned int *fromlen)</td></tr>
 <tr class="separator:ga6e370c4e42ea9b48326995b70514d05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac89334b47eed8886727381db56959b84"><td class="memItemLeft" align="right" valign="top"><a id="gac89334b47eed8886727381db56959b84"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSend</b> (int s, const void *msg, unsigned int len, int flags)</td></tr>
-<tr class="separator:gac89334b47eed8886727381db56959b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga231191cd11f1b50a0416869c7c51aa2c"><td class="memItemLeft" align="right" valign="top"><a id="ga231191cd11f1b50a0416869c7c51aa2c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSendto</b> (int s, const void *msg, unsigned int len, int flags, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *to, unsigned int tolen)</td></tr>
 <tr class="separator:ga231191cd11f1b50a0416869c7c51aa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +199,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga4e3ea0bd604a1874b44ad9a56819e40c"><td class="memItemLeft" align="right" valign="top"><a id="ga4e3ea0bd604a1874b44ad9a56819e40c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_ID_SOCKET_MAX</b>&#160;&#160;&#160;1023</td></tr>
 <tr class="separator:ga4e3ea0bd604a1874b44ad9a56819e40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7ff4a39bc51313e4303df323cb43de6"><td class="memItemLeft" align="right" valign="top"><a id="gad7ff4a39bc51313e4303df323cb43de6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetRecv</b>(s,  buf,  len,  flags)&#160;&#160;&#160;ksceNetRecvfrom(s, buf, len, flags, NULL, 0)</td></tr>
+<tr class="separator:gad7ff4a39bc51313e4303df323cb43de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99fdf484ea24a657917ec8a8890d0dfb"><td class="memItemLeft" align="right" valign="top"><a id="ga99fdf484ea24a657917ec8a8890d0dfb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSend</b>(s,  msg,  len,  flags)&#160;&#160;&#160;ksceNetSendto(s, msg, len, flags, NULL, 0)</td></tr>
+<tr class="separator:ga99fdf484ea24a657917ec8a8890d0dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10afe2fe24e087420dbc3b54345cd886"><td class="memItemLeft" align="right" valign="top"><a id="ga10afe2fe24e087420dbc3b54345cd886"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetHtons</b>&#160;&#160;&#160;__builtin_bswap16</td></tr>
 <tr class="separator:ga10afe2fe24e087420dbc3b54345cd886"><td class="memSeparator" colspan="2">&#160;</td></tr>
