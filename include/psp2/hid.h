@@ -14,27 +14,32 @@ extern "C" {
 #include <psp2/types.h>
 
 typedef struct SceHidKeyboardReport {
-	SceUInt8 unk0[2];
-	SceUInt8 modifier;
-	SceUInt8 key1;
-	SceUInt8 key2;
-	SceUInt8 key3;
-	SceUInt8 key4;
-	SceUInt8 key5;
-	SceUInt8 key6;
+	SceUInt8 reserved;
+	SceUInt8 modifiers[2]; //modifiers[0] Standard modifiers Ctrl Shift Alt, modifiers[1] Caps Lock, ..?
+	SceUInt8 keycodes[6];
 	SceUInt8 unk1[15];
 	
 } SceHidKeyboardReport;
 
-#define SCE_HID_KEYBOARD_MAX_REPORT 16
+typedef struct SceHidMouseReport {
+	SceUInt8 buttons;
+	SceUInt8 reserved;
+	SceInt16 rel_x;
+	SceInt16 rel_y;
+	SceInt8 unk[10];
+	
+} SceHidMouseReport;
+
+#define SCE_HID_MAX_REPORT 16
+#define SCE_HID_MAX_DEVICE_COUNT 8
 
 /**
  * Enumerate hid keyboards.
  *
- * @param[out]	handle	Hid handle.
- * @param[int]	port?	Use 1.
+ * @param[out]	handle	Buffer to receive keyboard hid handles.
+ * @param[int]	count   Number of keyboards to enumerate
  */
-int sceHidKeyboardEnumerate(int* handle, int port);
+int sceHidKeyboardEnumerate(int* handle, int count);
 
 
 /**
@@ -45,6 +50,25 @@ int sceHidKeyboardEnumerate(int* handle, int port);
  * @param[in]	nReports	Number of reports to receive.
  */
 int sceHidKeyboardRead(SceUInt32 handle, SceHidKeyboardReport *reports[], int nReports);
+
+/**
+ * Enumerate hid mice.
+ *
+ * @param[out]	handle	Buffer to receive mouse hid handles.
+ * @param[int]	count   Number of mice to enumerate
+ */
+int sceHidMouseEnumerate(int* handle, int count);
+
+
+/**
+ * Get hid mouse reports.
+ *
+ * @param[in]	handle		Hid handle.
+ * @param[in]	reports		Buffer to receive reports.
+ * @param[in]	nReports	Number of reports to receive.
+ */
+int sceHidMouseRead(SceUInt32 handle, SceHidMouseReport *reports[], int nReports);
+
 
 #ifdef __cplusplus
 }
