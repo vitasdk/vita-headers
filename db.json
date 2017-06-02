@@ -5080,7 +5080,6 @@
                     "sqlite3_step": 3397866935, 
                     "sqlite3_stmt_status": 4155241978, 
                     "sqlite3_strnicmp": 316865560, 
-                    "sqlite3_temp_directory": 451682164, 
                     "sqlite3_test_control": 843927293, 
                     "sqlite3_thread_cleanup": 389848075, 
                     "sqlite3_threadsafe": 2746751194, 
@@ -5101,7 +5100,6 @@
                     "sqlite3_value_text16be": 998877837, 
                     "sqlite3_value_text16le": 21521318, 
                     "sqlite3_value_type": 3320757085, 
-                    "sqlite3_version": 3087877063, 
                     "sqlite3_vfs_find": 208525507, 
                     "sqlite3_vfs_register": 1710570396, 
                     "sqlite3_vfs_unregister": 1775190385, 
@@ -5109,7 +5107,10 @@
                 }, 
                 "kernel": false, 
                 "nid": 1743793693, 
-                "variables": {}
+                "variables": {
+                    "sqlite3_temp_directory": 451682164,
+                    "sqlite3_version": 3087877063
+                }
             }
         }, 
         "nid": 208
