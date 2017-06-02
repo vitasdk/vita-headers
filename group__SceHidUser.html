@@ -96,18 +96,27 @@ $(document).ready(function(){initNavTree('group__SceHidUser.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3194652ee00358743b0c23c23a2adc4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#ga3194652ee00358743b0c23c23a2adc4a">sceHidKeyboardEnumerate</a> (int *handle, int port)</td></tr>
-<tr class="memdesc:ga3194652ee00358743b0c23c23a2adc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate hid keyboards.  <a href="#ga3194652ee00358743b0c23c23a2adc4a">More...</a><br /></td></tr>
-<tr class="separator:ga3194652ee00358743b0c23c23a2adc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3fc6d6c925fb50c2481e892c6c28390"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#gab3fc6d6c925fb50c2481e892c6c28390">sceHidKeyboardEnumerate</a> (int *handle, int count)</td></tr>
+<tr class="memdesc:gab3fc6d6c925fb50c2481e892c6c28390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate hid keyboards.  <a href="#gab3fc6d6c925fb50c2481e892c6c28390">More...</a><br /></td></tr>
+<tr class="separator:gab3fc6d6c925fb50c2481e892c6c28390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae64163d66f649a7683dd785fa3c3b6e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5">sceHidKeyboardRead</a> (SceUInt32 handle, <a class="el" href="group__SceHidUser.html#structSceHidKeyboardReport">SceHidKeyboardReport</a> *reports[], int nReports)</td></tr>
 <tr class="memdesc:gae64163d66f649a7683dd785fa3c3b6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get hid keyboard reports.  <a href="#gae64163d66f649a7683dd785fa3c3b6e5">More...</a><br /></td></tr>
 <tr class="separator:gae64163d66f649a7683dd785fa3c3b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad77a117cc8011d4dad133b634cf590f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8">sceHidMouseEnumerate</a> (int *handle, int count)</td></tr>
+<tr class="memdesc:gad77a117cc8011d4dad133b634cf590f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate hid mice.  <a href="#gad77a117cc8011d4dad133b634cf590f8">More...</a><br /></td></tr>
+<tr class="separator:gad77a117cc8011d4dad133b634cf590f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga760bcae67335ed739bc63a2de0433ca3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#ga760bcae67335ed739bc63a2de0433ca3">sceHidMouseRead</a> (SceUInt32 handle, <a class="el" href="group__SceHidUser.html#structSceHidMouseReport">SceHidMouseReport</a> *reports[], int nReports)</td></tr>
+<tr class="memdesc:ga760bcae67335ed739bc63a2de0433ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get hid mouse reports.  <a href="#ga760bcae67335ed739bc63a2de0433ca3">More...</a><br /></td></tr>
+<tr class="separator:ga760bcae67335ed739bc63a2de0433ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaccb1167c18d1d63cab3ecf5509d14147"><td class="memItemLeft" align="right" valign="top"><a id="gaccb1167c18d1d63cab3ecf5509d14147"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_HID_KEYBOARD_MAX_REPORT</b>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:gaccb1167c18d1d63cab3ecf5509d14147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabeaa4e952b223e4eccf70e88e79bd442"><td class="memItemLeft" align="right" valign="top"><a id="gabeaa4e952b223e4eccf70e88e79bd442"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_HID_MAX_REPORT</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:gabeaa4e952b223e4eccf70e88e79bd442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac44af84b16730925f260248d462c572a"><td class="memItemLeft" align="right" valign="top"><a id="gac44af84b16730925f260248d462c572a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_HID_MAX_DEVICE_COUNT</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:gac44af84b16730925f260248d462c572a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceHidKeyboardReport" id="structSceHidKeyboardReport"></a>
@@ -124,51 +133,21 @@ Macros</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga3fa860728415d93ea52d34d3d3f44c95"></a>SceUInt8</td>
+<a id="gaf140a7a5feafb623b27547dc95cc434a"></a>SceUInt8</td>
 <td class="fieldname">
-key1</td>
+keycodes[6]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa92c556ee2f1220618871a8bcfa3294e"></a>SceUInt8</td>
+<a id="ga0f986bc02aad809eda545ab33f9085d1"></a>SceUInt8</td>
 <td class="fieldname">
-key2</td>
+modifiers[2]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa0a7855ba3faabde4866c189601dcd6a"></a>SceUInt8</td>
+<a id="ga7ec8b54a01b6bc621282295d8a1fcc77"></a>SceUInt8</td>
 <td class="fieldname">
-key3</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gacc6b06b9539f2e3d7838d6d0a6c4419b"></a>SceUInt8</td>
-<td class="fieldname">
-key4</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga7e465e284261fece31506baa199933d3"></a>SceUInt8</td>
-<td class="fieldname">
-key5</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gacb73c3baeb1be68b384b75fcda064a43"></a>SceUInt8</td>
-<td class="fieldname">
-key6</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gae0dff5efd1dc1bf9676adecfc6569b85"></a>SceUInt8</td>
-<td class="fieldname">
-modifier</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga6f9f63d71329b063091e2ad391c5bbbe"></a>SceUInt8</td>
-<td class="fieldname">
-unk0[2]</td>
+reserved</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -181,9 +160,56 @@ unk1[15]</td>
 
 </div>
 </div>
+<a name="structSceHidMouseReport" id="structSceHidMouseReport"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceHidMouseReport">&sect;&nbsp;</a></span>SceHidMouseReport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceHidMouseReport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga6b8dcdfa9567f28b70c31baea0190f59"></a>SceUInt8</td>
+<td class="fieldname">
+buttons</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gac2932af16fd9ee7297bee234f0552fc1"></a>SceInt16</td>
+<td class="fieldname">
+rel_x</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga71717cfd6f60ee2087f7953baf200c77"></a>SceInt16</td>
+<td class="fieldname">
+rel_y</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga25f11dc21a634387abfb62ea3f389bcb"></a>SceUInt8</td>
+<td class="fieldname">
+reserved</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf30daf00a9fb1b67337c62f4ee71ee8a"></a>SceInt8</td>
+<td class="fieldname">
+unk[10]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga3194652ee00358743b0c23c23a2adc4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3194652ee00358743b0c23c23a2adc4a">&sect;&nbsp;</a></span>sceHidKeyboardEnumerate()</h2>
+<a id="gab3fc6d6c925fb50c2481e892c6c28390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3fc6d6c925fb50c2481e892c6c28390">&sect;&nbsp;</a></span>sceHidKeyboardEnumerate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +224,7 @@ unk1[15]</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -211,7 +237,7 @@ unk1[15]</td>
 <p>Enumerate hid keyboards. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Hid handle. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Buffer to receive keyboard hid handles. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
   </table>
   </dd>
@@ -252,6 +278,87 @@ unk1[15]</td>
 </div><div class="memdoc">
 
 <p>Get hid keyboard reports. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Hid handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reports</td><td>Buffer to receive reports. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nReports</td><td>Number of reports to receive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad77a117cc8011d4dad133b634cf590f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad77a117cc8011d4dad133b634cf590f8">&sect;&nbsp;</a></span>sceHidMouseEnumerate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceHidMouseEnumerate </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumerate hid mice. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Buffer to receive mouse hid handles. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga760bcae67335ed739bc63a2de0433ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga760bcae67335ed739bc63a2de0433ca3">&sect;&nbsp;</a></span>sceHidMouseRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceHidMouseRead </td>
+          <td>(</td>
+          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceHidUser.html#structSceHidMouseReport">SceHidMouseReport</a> *&#160;</td>
+          <td class="paramname"><em>reports</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nReports</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get hid mouse reports. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Hid handle. </td></tr>

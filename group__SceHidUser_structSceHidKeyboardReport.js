@@ -1,12 +1,7 @@
 var group__SceHidUser_structSceHidKeyboardReport =
 [
-    [ "key1", "group__SceHidUser.html#ga3fa860728415d93ea52d34d3d3f44c95", null ],
-    [ "key2", "group__SceHidUser.html#gaa92c556ee2f1220618871a8bcfa3294e", null ],
-    [ "key3", "group__SceHidUser.html#gaa0a7855ba3faabde4866c189601dcd6a", null ],
-    [ "key4", "group__SceHidUser.html#gacc6b06b9539f2e3d7838d6d0a6c4419b", null ],
-    [ "key5", "group__SceHidUser.html#ga7e465e284261fece31506baa199933d3", null ],
-    [ "key6", "group__SceHidUser.html#gacb73c3baeb1be68b384b75fcda064a43", null ],
-    [ "modifier", "group__SceHidUser.html#gae0dff5efd1dc1bf9676adecfc6569b85", null ],
-    [ "unk0", "group__SceHidUser.html#ga6f9f63d71329b063091e2ad391c5bbbe", null ],
+    [ "keycodes", "group__SceHidUser.html#gaf140a7a5feafb623b27547dc95cc434a", null ],
+    [ "modifiers", "group__SceHidUser.html#ga0f986bc02aad809eda545ab33f9085d1", null ],
+    [ "reserved", "group__SceHidUser.html#ga7ec8b54a01b6bc621282295d8a1fcc77", null ],
     [ "unk1", "group__SceHidUser.html#ga9e2cfe8cfe538654e9899f14d94e3269", null ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"group__SceVideoDecUser.html":[1,0,6,0],
+"group__SerialCommunication.html":[1,9],
 "group__SystemParams.html":[1,10],
 "group__SystemStatus.html":[1,8],
 "group__Vitasdk.html":[1,11],

@@ -57,7 +57,9 @@ var NAVTREEINDEX2 =
 "group__SceGxtUser.html#gace19a804aa3b3122f0eb38887e21e6d5":[1,0,4,0,4],
 "group__SceHid.html":[1,1,5],
 "group__SceHidUser.html":[1,1,5,0],
-"group__SceHidUser.html#ga3194652ee00358743b0c23c23a2adc4a":[1,1,5,0,0],
+"group__SceHidUser.html#ga760bcae67335ed739bc63a2de0433ca3":[1,1,5,0,3],
+"group__SceHidUser.html#gab3fc6d6c925fb50c2481e892c6c28390":[1,1,5,0,0],
+"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[1,1,5,0,2],
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[1,1,5,0,1],
 "group__SceHttp.html":[1,7,0],
 "group__SceHttpUser.html":[1,7,0,0],
@@ -129,8 +131,8 @@ var NAVTREEINDEX2 =
 "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00ac1d4cf0db1c00e9a61f08c550f1822c6":[1,1,3,0,11],
 "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a17a9685831b73c1c27697153454e7cec":[1,1,3,0,4,0],
 "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a17a9685831b73c1c27697153454e7cec":[1,1,3,0,13],
-"group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b":[1,1,3,0,14],
 "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b":[1,1,3,0,4,1],
+"group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b":[1,1,3,0,14],
 "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001ae07806ef76fbf1f702da4f26724ebcb1":[1,1,3,0,4,2],
 "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001ae07806ef76fbf1f702da4f26724ebcb1":[1,1,3,0,12],
 "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a670cfd55c1f596592ae4cdf8aaa07cb6":[1,1,3,0,6,0],
@@ -244,10 +246,8 @@ var NAVTREEINDEX2 =
 "group__SceProcessmgr.html":[1,6,6],
 "group__SceProcessmgrKernel.html":[1,6,6,1],
 "group__SceProcessmgrUser.html":[1,6,6,0],
-"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a3e8b9af3aaeb7cd8fb6ce66a8063d872":[1,6,6,0,1],
 "group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a3e8b9af3aaeb7cd8fb6ce66a8063d872":[77],
+"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a3e8b9af3aaeb7cd8fb6ce66a8063d872":[1,6,6,0,1],
 "group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a55cba5df6d5a94e9b0188c47696cb650":[1,6,6,0,2],
-"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a55cba5df6d5a94e9b0188c47696cb650":[79],
-"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a61d6ff07f428ecf1f42ecb4644002d39":[1,6,6,0,3],
-"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a61d6ff07f428ecf1f42ecb4644002d39":[78]
+"group__SceProcessmgrUser.html#ggafa231099d07583c3ed0981e0bb665f55a55cba5df6d5a94e9b0188c47696cb650":[79]
 };
