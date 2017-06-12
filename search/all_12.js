@@ -292,6 +292,7 @@ var searchData=
   ['scectrlsetrapidfire',['sceCtrlSetRapidFire',['../group__SceCtrlUser.html#gac0e09a8c837fbf0a63adcd083d9eb705',1,'ctrl.h']]],
   ['scectrlsetsamplingmode',['sceCtrlSetSamplingMode',['../group__SceCtrlUser.html#gad4ffc21082be15723e6d1eb0979417e9',1,'ctrl.h']]],
   ['scectrlsetsamplingmodeext',['sceCtrlSetSamplingModeExt',['../group__SceCtrlUser.html#gaf0aa347063c8a4ac69e06e0831114458',1,'ctrl.h']]],
+  ['scectrlvirtualcontrollerdriver',['SceCtrlVirtualControllerDriver',['../structSceCtrlVirtualControllerDriver.html',1,'']]],
   ['scedatetime',['SceDateTime',['../group__SceTypesUser.html#structSceDateTime',1,'']]],
   ['scedisplayframebuf',['SceDisplayFrameBuf',['../group__SceDisplayUser.html#structSceDisplayFrameBuf',1,'']]],
   ['scedisplaygetframebuf',['sceDisplayGetFrameBuf',['../group__SceDisplayUser.html#gad6f2cec6a63415b3198cd77f28620076',1,'display.h']]],

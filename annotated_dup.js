@@ -68,6 +68,7 @@ var annotated_dup =
     [ "SceCtrlData", "group__SceCtrlUser.html#structSceCtrlData", "group__SceCtrlUser_structSceCtrlData" ],
     [ "SceCtrlPortInfo", "group__SceCtrlUser.html#structSceCtrlPortInfo", "group__SceCtrlUser_structSceCtrlPortInfo" ],
     [ "SceCtrlRapidFireRule", "group__SceCtrlUser.html#structSceCtrlRapidFireRule", "group__SceCtrlUser_structSceCtrlRapidFireRule" ],
+    [ "SceCtrlVirtualControllerDriver", "structSceCtrlVirtualControllerDriver.html", "structSceCtrlVirtualControllerDriver" ],
     [ "SceDateTime", "group__SceTypesUser.html#structSceDateTime", "group__SceTypesUser_structSceDateTime" ],
     [ "SceDisplayFrameBuf", "group__SceDisplayUser.html#structSceDisplayFrameBuf", "group__SceDisplayUser_structSceDisplayFrameBuf" ],
     [ "SceFColor", "group__SceTypesUser.html#structSceFColor", "group__SceTypesUser_structSceFColor" ],

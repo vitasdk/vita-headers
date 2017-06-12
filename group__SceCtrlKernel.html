@@ -134,6 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad4564b9daaee3dac2fd7a2928a793a22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22">ksceCtrlSetAnalogEmulation</a> (unsigned int port, unsigned char slot, unsigned char user_lX, unsigned char user_lY, unsigned char user_rX, unsigned char user_rY, unsigned char kernel_lX, unsigned char kernel_lY, unsigned char kernel_rX, unsigned char kernel_rY, unsigned int uiMake)</td></tr>
 <tr class="memdesc:gad4564b9daaee3dac2fd7a2928a793a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulate values for the analog pad's X- and Y-axis.  <a href="#gad4564b9daaee3dac2fd7a2928a793a22">More...</a><br /></td></tr>
 <tr class="separator:gad4564b9daaee3dac2fd7a2928a793a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa282e6a36485649ee6059c41468f7bef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef">ksceCtrlRegisterVirtualControllerDriver</a> (<a class="el" href="structSceCtrlVirtualControllerDriver.html">SceCtrlVirtualControllerDriver</a> *driver)</td></tr>
+<tr class="memdesc:gaa282e6a36485649ee6059c41468f7bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register virtual controller driver.  <a href="#gaa282e6a36485649ee6059c41468f7bef">More...</a><br /></td></tr>
+<tr class="separator:gaa282e6a36485649ee6059c41468f7bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCtrlData" id="structSceCtrlData"></a>
@@ -791,6 +794,34 @@ Unknown. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Buffers count, between 1 and 'count'. &lt;0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa282e6a36485649ee6059c41468f7bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa282e6a36485649ee6059c41468f7bef">&sect;&nbsp;</a></span>ksceCtrlRegisterVirtualControllerDriver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCtrlRegisterVirtualControllerDriver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSceCtrlVirtualControllerDriver.html">SceCtrlVirtualControllerDriver</a> *&#160;</td>
+          <td class="paramname"><em>driver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register virtual controller driver. </p>
+<p>This function always overwrites global settings and not exist unregister method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">driver</td><td>- See <a class="el" href="structSceCtrlVirtualControllerDriver.html" title="Structure to pass as argument to ksceCtrlRegisterVirtualControllerDriver. ">SceCtrlVirtualControllerDriver</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. &lt;0 on error </dd></dl>
 
 </div>
 </div>

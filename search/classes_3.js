@@ -64,6 +64,7 @@ var searchData=
   ['scectrldata',['SceCtrlData',['../group__SceCtrlUser.html#structSceCtrlData',1,'']]],
   ['scectrlportinfo',['SceCtrlPortInfo',['../group__SceCtrlUser.html#structSceCtrlPortInfo',1,'']]],
   ['scectrlrapidfirerule',['SceCtrlRapidFireRule',['../group__SceCtrlUser.html#structSceCtrlRapidFireRule',1,'']]],
+  ['scectrlvirtualcontrollerdriver',['SceCtrlVirtualControllerDriver',['../structSceCtrlVirtualControllerDriver.html',1,'']]],
   ['scedatetime',['SceDateTime',['../group__SceTypesUser.html#structSceDateTime',1,'']]],
   ['scedisplayframebuf',['SceDisplayFrameBuf',['../group__SceDisplayUser.html#structSceDisplayFrameBuf',1,'']]],
   ['scefcolor',['SceFColor',['../group__SceTypesUser.html#structSceFColor',1,'']]],

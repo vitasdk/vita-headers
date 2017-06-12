@@ -9,6 +9,7 @@ var searchData=
   ['kscectrlpeekbufferpositive',['ksceCtrlPeekBufferPositive',['../group__SceCtrlKernel.html#ga9bb2e72e0c38faa90c52e2a5f8dd261b',1,'ctrl.h']]],
   ['kscectrlreadbuffernegative',['ksceCtrlReadBufferNegative',['../group__SceCtrlKernel.html#ga4eca66f80aa7f143b94aa89c6c086922',1,'ctrl.h']]],
   ['kscectrlreadbufferpositive',['ksceCtrlReadBufferPositive',['../group__SceCtrlKernel.html#gadf5478055d11791f3b8e0605fae888bc',1,'ctrl.h']]],
+  ['kscectrlregistervirtualcontrollerdriver',['ksceCtrlRegisterVirtualControllerDriver',['../group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef',1,'ctrl.h']]],
   ['kscectrlsetanalogemulation',['ksceCtrlSetAnalogEmulation',['../group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22',1,'ctrl.h']]],
   ['kscectrlsetbuttonemulation',['ksceCtrlSetButtonEmulation',['../group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d',1,'ctrl.h']]],
   ['kscectrlsetbuttonintercept',['ksceCtrlSetButtonIntercept',['../group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab',1,'ctrl.h']]],
