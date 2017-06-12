@@ -109,6 +109,23 @@ typedef struct SceCtrlPortInfo {
 	uint8_t unk[11];  //!< Unknown
 } SceCtrlPortInfo;
 
+/** Structure to pass as argument to ::ksceCtrlRegisterVirtualControllerDriver */
+typedef struct SceCtrlVirtualControllerDriver {
+	int (*readButtons)(int port, SceCtrlData *pad_data, int count);
+	int (*setActuator)(int port, const SceCtrlActuator* pState);
+	int (*getBatteryInfo)(int port, SceUInt8 *batt);
+	int (*disconnect)(int port);
+	int (*setTurnOffInterval)(int port);
+	int (*getActiveControllerPort)(void);
+	int (*changePortAssign)(int port1, int port2);
+	int (*unk0)(void);
+	int (*getControllerPortInfo)(SceCtrlPortInfo *info);
+	int (*setLightBar)(int port, SceUInt8 r, SceUInt8 g, SceUInt8 b);
+	int (*resetLightBar)(int port);
+	int (*unk1)(int port);
+	int (*singleControllerMode)(int port);
+} SceCtrlVirtualControllerDriver;
+
 /**
  * Set the controller mode.
  *
@@ -264,6 +281,17 @@ int ksceCtrlSetAnalogEmulation(unsigned int port, unsigned char slot,
 			      unsigned char kernel_lX, unsigned char kernel_lY,
 			      unsigned char kernel_rX, unsigned char kernel_rY,
 			      unsigned int uiMake);
+
+/**
+ * Register virtual controller driver.
+ *
+ * This function always overwrites global settings and not exist unregister method.
+ *
+ * @param[in] driver - See ::SceCtrlVirtualControllerDriver
+ *
+ * @return 0 on success. <0 on error
+ */
+int ksceCtrlRegisterVirtualControllerDriver(SceCtrlVirtualControllerDriver *driver);
 
 #ifdef __cplusplus
 }
