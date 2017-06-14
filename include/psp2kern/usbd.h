@@ -66,8 +66,7 @@ typedef struct SceUsbdDriver {
 	int (*probe)(int device_id);
 	int (*attach)(int device_id);
 	int (*detach)(int device_id);
-	struct SceUsbdDriver *next;
-} SceUsbdDriver; /* size = 0x14 */
+} SceUsbdDriver; /* size = 0x10 */
 
 typedef struct SceUsbdControlTransferRequest {
 	unsigned char bmRequestType;
