@@ -29,6 +29,7 @@
 #include <psp2kern/kernel/threadmgr.h>
 
 #include <psp2kern/lowio/gpio.h>
+#include <psp2kern/lowio/i2c.h>
 
 #include <psp2kern/net/net.h>
 
