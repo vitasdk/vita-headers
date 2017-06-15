@@ -104,6 +104,8 @@
  * \{
  *     \defgroup SceGpio GPIO Library
  *      Read/write GPIO ports, configure GPIO interrupts...
+  *     \defgroup SceI2c I2C Library
+ *      Do read/write I2C transfers, etc.
  * \}
  *
  *
@@ -139,7 +141,7 @@
  *
  *     \defgroup SceDmacMgr Direct Memory Access Controller
  *      Direct Memcpy and Memset to private memory locations
- *     
+ *
  *     \defgroup SceOpenPsid OpenPsid Library
  *      Get the Vita unique Open Psid
  *
@@ -236,7 +238,7 @@
  *      Export a photo from a file or data
  *
  *     \defgroup ScePss PSS Code Memory Handling
- *      Seems to allow to allocate, lock and unlock code memory for the Mono interpreter 
+ *      Seems to allow to allocate, lock and unlock code memory for the Mono interpreter
  *
  *     \defgroup SceRegistryMgr Registry Manager Library
  *      Get/Set Registry keys

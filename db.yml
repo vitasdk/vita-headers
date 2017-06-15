@@ -1907,6 +1907,14 @@ modules:
         functions:
           ksceDebugSetHandlers: 0x10067B7B
           ksceDebugDisableInfoDump: 0xF857CDD6
+      SceUartForKernel:
+        kernel: true
+        nid: 0xC03DBE40
+        functions:
+          ksceUartReadAvailable: 0x38DB7629
+          ksceUartWrite: 0x41973874
+          ksceUartRead: 0x9BBF1255
+          ksceUartInit: 0xA9C74212
   SceKernelThreadMgr:
     nid: 0xF46ED7B2
     libraries:
@@ -5667,6 +5675,13 @@ modules:
           ksceSysconShowModeClear: 0x8D7724C0
           ksceSysconShowModeSet: 0x6D65B70F
           ksceSysconVerifyConfigstorageScript: 0xCC6F90A8
+          ksceSysconCmdExec: 0x9ADDCA4A
+          ksceSysconCmdExecAsync: 0xC2224E82
+          ksceSysconGetTimeStamp: 0x4D588A0A
+          ksceSysconResetDevice: 0x8A95D35C
+          ksceSysconReadCommand: 0x299B1CE7
+          ksceSysconSendCommand: 0xE26488B9
+          ksceSysconSetDebugHandlers: 0xF245CD6F
   SceLowio:
     nid: 0x17E0D8DF
     libraries:
@@ -5684,6 +5699,14 @@ modules:
           ksceGpioPortSet: 0xD454A584
           ksceGpioGetIntrMode: 0xE97A3B31
           ksceGpioPortClear: 0xF6310435
+      SceI2cForDriver:
+        kernel: true
+        nid: 0xE14BEF6E
+        functions:
+          ksceI2cTransferWriteRead: 0x0A40B7BF
+          ksceI2cSetDebugHandlers: 0xA2C7CE62
+          ksceI2cTransferWrite: 0xCA94A759
+          ksceI2cTransferRead: 0xD1D0A9A4
   SceSblAuthMgr:
     nid: 0x1773372D
     libraries:
