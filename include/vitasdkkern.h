@@ -7,6 +7,7 @@
 #include <psp2kern/bt.h>
 #include <psp2kern/ctrl.h>
 #include <psp2kern/display.h>
+#include <psp2kern/registrymgr.h>
 #include <psp2kern/sblacmgr.h>
 #include <psp2kern/sblauthmgr.h>
 #include <psp2kern/udcd.h>
