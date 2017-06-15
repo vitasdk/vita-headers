@@ -15,11 +15,11 @@ extern "C" {
 #endif
 
 typedef struct PhotoExportParam {
-	int version;
-	const SceWChar32 *photoTitle; //!< Photo title
-	const SceWChar32 *gameTitle;  //!< Game title
+	int version;                    //!< Version
+	const SceWChar32 *photoTitle;   //!< Photo title
+	const SceWChar32 *gameTitle;    //!< Game title
 	const SceWChar32 *gameComment;  //!< Game description
-	int reserved[8];
+	int reserved[8];                //!< Reserved data
 } PhotoExportParam;
 
 int scePhotoExportFromData(const void* data, SceSize size, const PhotoExportParam* param, void* workingMemory, void* cancelCb, void* user, char* outPath, SceSize outPathSize);
@@ -30,4 +30,3 @@ int scePhotoExportFromFile(const char* path, const PhotoExportParam* param, void
 #endif
 
 #endif /* _PSP2_PHOTO_EXPORT_H_ */
-

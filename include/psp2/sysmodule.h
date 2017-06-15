@@ -13,15 +13,15 @@
 extern "C" {
 #endif
 
-enum {
-	SCE_SYSMODULE_LOADED				= 0,
-	SCE_SYSMODULE_ERROR_INVALID_VALUE	= 0x805A1000,
-	SCE_SYSMODULE_ERROR_UNLOADED		= 0x805A1001,
-	SCE_SYSMODULE_ERROR_FATAL			= 0x805A10FF,
-};
+typedef enum SceSysmoduleErrorCode {
+	SCE_SYSMODULE_LOADED                = 0,
+	SCE_SYSMODULE_ERROR_INVALID_VALUE   = 0x805A1000,
+	SCE_SYSMODULE_ERROR_UNLOADED        = 0x805A1001,
+	SCE_SYSMODULE_ERROR_FATAL           = 0x805A10FF,
+} SceSysmoduleErrorCode;
 
 /* module IDs */
-enum {
+typedef enum SceSysmoduleModuleId {
 	SCE_SYSMODULE_INVALID               = 0x0000,
 	SCE_SYSMODULE_NET                   = 0x0001,
 	SCE_SYSMODULE_HTTP                  = 0x0002,
@@ -78,21 +78,21 @@ enum {
 	SCE_SYSMODULE_NEAR_DIALOG_UTIL      = 0x004a,
 	SCE_SYSMODULE_LOCATION_EXTENSION    = 0x004b,
 	SCE_SYSMODULE_AVPLAYER              = 0x004c
-};
+} SceSysmoduleModuleId;
 
 /* internal module IDs */
-enum {
+typedef enum SceSysmoduleInternalModuleId {
 	SCE_SYSMODULE_PAF                   = 0x80000008,
 	SCE_SYSMODULE_PROMOTER_UTIL         = 0x80000024
-};
+} SceSysmoduleInternalModuleId;
 
-int sceSysmoduleLoadModule(SceUInt16 id);
-int sceSysmoduleUnloadModule(SceUInt16 id);
-int sceSysmoduleIsLoaded(SceUInt16 id);
-int sceSysmoduleLoadModuleInternal(SceUInt32 id);
-int sceSysmoduleUnloadModuleInternal(SceUInt32 id);
-int sceSysmoduleIsLoadedInternal(SceUInt32 id);
-int sceSysmoduleLoadModuleInternalWithArg(SceUInt32 id, SceSize args, void *argp, void *unk);
+int sceSysmoduleLoadModule(SceSysmoduleModuleId id);
+int sceSysmoduleUnloadModule(SceSysmoduleModuleId id);
+int sceSysmoduleIsLoaded(SceSysmoduleModuleId id);
+int sceSysmoduleLoadModuleInternal(SceSysmoduleInternalModuleId id);
+int sceSysmoduleUnloadModuleInternal(SceSysmoduleInternalModuleId id);
+int sceSysmoduleIsLoadedInternal(SceSysmoduleInternalModuleId id);
+int sceSysmoduleLoadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, void *unk);
 
 #ifdef __cplusplus
 }

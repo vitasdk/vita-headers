@@ -15,7 +15,7 @@ extern "C" {
 #endif
 
 typedef struct MusicExportParam {
-	char reserved[128];
+	char reserved[128];  //!< Reserved data
 } MusicExportParam;
 
 int sceMusicExportFromFile(const char* path, const MusicExportParam* param, void* workingMemory, void* cancelCb, void (*progress)(void*, int), void* user, char* outPath, SceSize outPathSize);

@@ -14,12 +14,12 @@
 extern "C" {
 #endif
 
-typedef enum {
-	SCE_VIDEODEC_TYPE_HW_AVCDEC = 0x1001,
+typedef enum SceVideodecType {
+	SCE_VIDEODEC_TYPE_HW_AVCDEC = 0x1001
 } SceVideodecType;
 
 typedef struct SceVideodecQueryInitInfoHwAvcdec {
-	uint32_t size;				//!< struct size
+	uint32_t size;				//!< sizeof(SceVideodecQueryInitInfoHwAvcdec)
 	uint32_t horizontal;
 	uint32_t vertical;
 	uint32_t numOfRefFrames;

@@ -21,14 +21,14 @@ typedef void *SceFontHandle;
 
 /* struct */
 
-enum {
+typedef enum SceFontErrorCode {
 	SCE_FONT_ERROR_OUT_OF_MEMORY        = 0x80460001,
 	SCE_FONT_ERROR_INVALID_LIBID        = 0x80460002,
 	SCE_FONT_ERROR_INVALID_PARAMETER    = 0x80460003,
 	SCE_FONT_ERROR_HANDLER_OPEN_FAILED  = 0x80460005,
 	SCE_FONT_ERROR_TOO_MANY_OPEN_FONTS  = 0x80460009,
 	SCE_FONT_ERROR_INVALID_FONT_DATA    = 0x8046000a,
-};
+} SceFontErrorCode;
 
 typedef struct SceSceFontNewLibParams {
 	void *userData;
@@ -65,7 +65,7 @@ typedef enum SceFontStyleCode {
 	SCE_FONT_STYLE_BLACK_ITALIC  = 8,
 	SCE_FONT_STYLE_L             = 101,
 	SCE_FONT_STYLE_M             = 102,
-	SCE_FONT_STYLE_DB            = 103, // Demi-Bold / semi-bold
+	SCE_FONT_STYLE_DB            = 103, //!< Demi-Bold / semi-bold
 	SCE_FONT_STYLE_B             = 104,
 	SCE_FONT_STYLE_EB            = 105,
 	SCE_FONT_STYLE_UB            = 106,
@@ -81,11 +81,11 @@ typedef enum SceFontLanguageCode {
 } SceFontLanguageCode;
 
 typedef enum SceFontPixelFormatCode {
-	SCE_FONT_PIXELFORMAT_4     = 0, // 2 pixels packed in 1 byte (natural order)
-	SCE_FONT_PIXELFORMAT_4_REV = 1, // 2 pixels packed in 1 byte (reversed order)
-	SCE_FONT_PIXELFORMAT_8     = 2, // 1 pixel in 1 byte
-	SCE_FONT_PIXELFORMAT_24    = 3, // 1 pixel in 3 bytes (RGB)
-	SCE_FONT_PIXELFORMAT_32    = 4, // 1 pixel in 4 bytes (RGBA)
+	SCE_FONT_PIXELFORMAT_4     = 0, //!< 2 pixels packed in 1 byte (natural order)
+	SCE_FONT_PIXELFORMAT_4_REV = 1, //!< 2 pixels packed in 1 byte (reversed order)
+	SCE_FONT_PIXELFORMAT_8     = 2, //!< 1 pixel in 1 byte
+	SCE_FONT_PIXELFORMAT_24    = 3, //!< 1 pixel in 3 bytes (RGB)
+	SCE_FONT_PIXELFORMAT_32    = 4, //!< 1 pixel in 4 bytes (RGBA)
 } SceFontPixelFormatCode;
 
 typedef struct SceFontImageRect {
@@ -171,13 +171,13 @@ typedef struct SceFontInfo {
 	// Bitmap dimensions.
 	short maxGlyphWidth;
 	short maxGlyphHeight;
-	unsigned int charMapLength;   // Number of elements in the font's charmap.
-	unsigned int shadowMapLength; // Number of elements in the font's shadow charmap.
+	unsigned int charMapLength;   //!< Number of elements in the font's charmap.
+	unsigned int shadowMapLength; //!< Number of elements in the font's shadow charmap.
 
 	// Font style (used by font comparison functions).
 	SceFontStyle fontStyle;
 
-	uint8_t BPP; // Font's BPP.
+	uint8_t BPP; //!< Font's BPP.
 	uint8_t pad[3];
 } SceFontInfo;
 
@@ -249,4 +249,3 @@ int sceFontFlush(SceFontHandle fontHandle);
 #endif
 
 #endif /* _PSP2_PGF_H_ */
-

@@ -14,141 +14,116 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceMsgDialogErrorCode {
 	//! Illegal parameter
 	SCE_MSG_DIALOG_ERROR_PARAM	= 0x80100a01
-};
+} SceMsgDialogErrorCode;
 
-enum {
-	//! Max length of a user message
-	SCE_MSG_DIALOG_USER_MSG_SIZE	= 512
-};
+//! Max length of a user message
+#define SCE_MSG_DIALOG_USER_MSG_SIZE	512
 
-typedef SceInt32 SceMsgDialogMode;
-enum {
+typedef enum SceMsgDialogMode {
 	SCE_MSG_DIALOG_MODE_INVALID      = 0,
 	SCE_MSG_DIALOG_MODE_USER_MSG     = 1,
 	SCE_MSG_DIALOG_MODE_SYSTEM_MSG   = 2,
 	SCE_MSG_DIALOG_MODE_ERROR_CODE   = 3,
-	SCE_MSG_DIALOG_MODE_PROGRESS_BAR	= 4
-};
+	SCE_MSG_DIALOG_MODE_PROGRESS_BAR = 4
+} SceMsgDialogMode;
 
-typedef SceInt32 SceMsgDialogSystemMessageType;
-enum {
-	SCE_MSG_DIALOG_SYSMSG_TYPE_INVALID					= 0,
-
+typedef enum SceMsgDialogSystemMessageType {
+	SCE_MSG_DIALOG_SYSMSG_TYPE_INVALID                        = 0,
 	//! Displays "Please wait."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT						= 1,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT                           = 1,
 	//! Displays "There is not enough free space on the memory card."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_NOSPACE					= 2,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_NOSPACE                        = 2,
 	//! Displays "Move away from the source of interference, or adjust the compass by moving your PS Vita system as shown below."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_MAGNETIC_CALIBRATION		= 3,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_MAGNETIC_CALIBRATION           = 3,
 	//! Displays "Please wait." in a small message dialog
-	SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_SMALL				= 5,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_SMALL                     = 5,
 	//! Displays "Please wait..." with a cancel button
-	SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_CANCEL				= 6,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_CANCEL                    = 6,
 	//! Displays "Cannot continue the application. No memory card is inserted."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_CONTINUE			= 7,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_CONTINUE               = 7,
 	//! Displays "Cannot perform this operation. No memory card is inserted."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_OPERATION		= 8,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_OPERATION              = 8,
 	//! Displays "You must enable the microphone."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_MIC_DISABLED					= 100,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_MIC_DISABLED               = 100,
 	//! Displays "You must use Wi-Fi to do this."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_OPERATION		= 101,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_OPERATION    = 101,
 	//! Displays "You must use Wi-Fi to use this application."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_APPLICATION	= 102,
-
+	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_APPLICATION  = 102,
 	//! Displays "No content is available yet."
-	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_EMPTY_STORE					= 103,
-};
+	SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_EMPTY_STORE                = 103
+} SceMsgDialogSystemMessageType;
 
-typedef SceInt32 SceMsgDialogButtonType;
-
-enum {
+typedef enum SceMsgDialogButtonType {
 	SCE_MSG_DIALOG_BUTTON_TYPE_OK          = 0,
 	SCE_MSG_DIALOG_BUTTON_TYPE_YESNO       = 1,
 	SCE_MSG_DIALOG_BUTTON_TYPE_NONE        = 2,
 	SCE_MSG_DIALOG_BUTTON_TYPE_OK_CANCEL   = 3,
 	SCE_MSG_DIALOG_BUTTON_TYPE_CANCEL      = 4
-};
+}SceMsgDialogButtonType;
 
-typedef SceInt32 SceMsgDialogButtonId;
-
-enum {
+typedef enum SceMsgDialogButtonId {
 	SCE_MSG_DIALOG_BUTTON_ID_INVALID    = 0,
 	SCE_MSG_DIALOG_BUTTON_ID_OK         = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_YES        = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_NO         = 2
-};
+}SceMsgDialogButtonId;
 
-typedef SceInt32 SceMsgDialogProgressBarType;
-
-enum {
+typedef enum SceMsgDialogProgressBarType {
 	SCE_MSG_DIALOG_PROGRESSBAR_TYPE_PERCENTAGE   = 0
-};
+}SceMsgDialogProgressBarType;
 
-typedef SceInt32 SceMsgDialogProgressBarTarget;
-
-enum {
+typedef enum SceMsgDialogProgressBarTarget {
 	SCE_MSG_DIALOG_PROGRESSBAR_TARGET_BAR_DEFAULT   = 0
-};
+}SceMsgDialogProgressBarTarget;
 
-typedef SceUInt32 SceMsgDialogEnvFlag;
-
-enum {
+typedef enum SceMsgDialogEnvFlag {
 	SCE_MSG_DIALOG_ENV_FLAG_DEFAULT		= 0
-};
+}SceMsgDialogEnvFlag;
 
 typedef struct SceMsgDialogUserMessageParam {
-	SceMsgDialogButtonType buttonType; // Type of button set
-	const SceChar8 *msg;		// Displayed message 
-	SceChar8 reserved[32];		// Reserved range
+	SceMsgDialogButtonType buttonType : 32; //!< Type of button set
+	const SceChar8 *msg;                    //!< Displayed message 
+	SceChar8 reserved[32];                  //!< Reserved range
 } SceMsgDialogUserMessageParam;
 
 typedef struct SceMsgDialogSystemMessageParam {
-	SceMsgDialogSystemMessageType sysMsgType;	// System message type
-	SceInt32 value;		// Additional value
-	SceChar8 reserved[32];	// Reserved range
+	SceMsgDialogSystemMessageType sysMsgType : 32;  //!< System message type
+	SceInt32 value;                                 //!< Additional value
+	SceChar8 reserved[32];                          //!< Reserved range
 } SceMsgDialogSystemMessageParam;
 
 typedef struct SceMsgDialogErrorCodeParam {
-	SceInt32 errorCode;		// Displayed error code
-	SceChar8 reserved[32];	// Reserved range
+	SceInt32 ErrorCode;     //!< Displayed error code
+	SceChar8 reserved[32];  //!< Reserved range
 } SceMsgDialogErrorCodeParam;
 
 typedef struct SceMsgDialogProgressBarParam {
-	SceMsgDialogProgressBarType barType;		// Progress bar type
-	SceMsgDialogSystemMessageParam sysMsgParam;	// Displayed system message
-	const SceChar8 *msg;		// Displayed user message
-	SceInt32 reserved[32/4];		// Reserved range
+	SceMsgDialogProgressBarType barType : 32;   //!< Progress bar type
+	SceMsgDialogSystemMessageParam sysMsgParam; //!< Displayed system message
+	const SceChar8 *msg;                        //!< Displayed user message
+	SceInt32 reserved[8];                       //!< Reserved range
 } SceMsgDialogProgressBarParam;
 
 typedef struct SceMsgDialogParam {
-	SceUInt32 sdkVersion;      // Required to use MsgDialog. Just use NULL
-	SceCommonDialogParam commonParam;	// Common parameter
-	SceMsgDialogMode mode;		// MsgDialog Mode
-	SceMsgDialogUserMessageParam *userMsgParam;		// Parameter for user message
-	SceMsgDialogSystemMessageParam *sysMsgParam;	// Parameter for system prepared message
-	SceMsgDialogErrorCodeParam *errorCodeParam;		// Parameter for display error code
-	SceMsgDialogProgressBarParam *progBarParam;		// Parameter for progress bar
-	SceMsgDialogEnvFlag flag;		// Settings for dialog environment
-	SceChar8 reserved[32];		// Reserved range
+	SceUInt32 sdkVersion;                         //!< Required to use MsgDialog. Just use NULL
+	SceCommonDialogParam commonParam;             //!< Common parameter
+	SceMsgDialogMode mode : 32;                   //!< Mode of function
+	SceMsgDialogUserMessageParam *userMsgParam;   //!< Parameter for user message
+	SceMsgDialogSystemMessageParam *sysMsgParam;  //!< Parameter for system prepared message
+	SceMsgDialogErrorCodeParam *errorCodeParam;   //!< Parameter for display error code
+	SceMsgDialogProgressBarParam *progBarParam;   //!< Parameter for progress bar
+	SceMsgDialogEnvFlag flag : 32;                //!< Settings for dialog environment
+	SceChar8 reserved[32];                        //!< Reserved range
 } SceMsgDialogParam;
 
 typedef struct SceMsgDialogResult {
-	SceMsgDialogMode mode;		// Mode of function
-	SceInt32 result;		// Result of executing function
-	SceMsgDialogButtonId buttonId;	// Id of button user selected
-	SceChar8 reserved[32];		// Reserved range
+	SceMsgDialogMode mode : 32;          //!< Mode of function
+	SceInt32 result;                     //!< Result of executing function
+	SceMsgDialogButtonId buttonId : 32;  //!< Id of button user selected
+	SceChar8 reserved[32];               //!< Reserved range
 } SceMsgDialogResult;
 
 static inline
