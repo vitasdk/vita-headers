@@ -1809,6 +1809,7 @@ modules:
         functions:
           ksceKernelGetSysrootBuffer: 0x3E455842
           ksceKernelGetProcessTitleId: 0xEC3124A3
+          ksceSysrootIsAuCodecIcConexant: 0x46E72428
           ksceSysrootIsBsodReboot: 0x4373AC96
           ksceSysrootIsExternalBootMode: 0x89D19090
           ksceSysrootIsManufacturingMode: 0x55392965
@@ -2093,8 +2094,10 @@ modules:
           ksceKernelGetModuleInternal: 0xFE303863
           ksceKernelGetModuleInfo: 0xD269F915
           ksceKernelLoadModuleForPid: 0xFA21D8CB
+          ksceKernelMountBootfs: 0x01360661
           ksceKernelStartModuleForPid: 0x6DF745D5
           ksceKernelStopModuleForPid: 0x7BB4CE54
+          ksceKernelUmountBootfs: 0x9C838A6B
           ksceKernelUnloadModuleForPid: 0x5972E2CC
       SceModulemgrForDriver:
         kernel: true
@@ -5076,6 +5079,7 @@ modules:
           ksceTouchEnableTouchForce: 0xE41B4BF8
           ksceTouchEnableIdleTimerCancelSetting: 0xEBF4C86A
           ksceTouchGetDeviceInfo: 0xFD2E0278
+          ksceTouchRegisterVirtualTouchDriver: 0x03C3AC7C
         kernel: true
         nid: 0xA4A7DAFC
   SceUlt:
@@ -5767,6 +5771,7 @@ modules:
           ksceMotionDevSamplingStart: 0xC02C85AB
           ksceMotionDevSetSamplingMode: 0xDBAF611A
           ksceMotionDevSamplingStop: 0xFD0B0785
+          ksceMotionDevRegisterVirtualMotionDriver: 0x7FD06731
   ScePaf:
     nid: 0xCD679177
     libraries:
@@ -5778,9 +5783,11 @@ modules:
           sce_paf_private_memset: 0xE148AF94
           sce_paf_private_strcmp: 0x5CD08A47
           sce_paf_private_malloc: 0xFC5CD359
+          sce_paf_private_memcpy: 0x2C5B6F9C
           sce_paf_private_strlen: 0xF5A2AA0C
           sce_paf_private_snprintf: 0x4E0D907E
           sce_paf_private_strchr: 0x1A22784C
+          sce_paf_private_strncmp: 0x1E1EA818
   SceKernelDmacMgr:
     nid: 0xF926C804
     libraries:
