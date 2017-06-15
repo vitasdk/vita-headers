@@ -8,8 +8,8 @@ DEF_FILE = 'definitions.dox'
 DEF_FILE_PATH = os.path.join(CURR_DIR, '..', 'docs', DEF_FILE)
 INCLUDE_DIR = os.path.join(CURR_DIR, '..', 'include')
 
-DEFINE_RULE = re.compile(r' \*     \\defgroup ([a-zA-Z]+) [a-zA-Z ]+')
-USER_GROUP_RULE = re.compile(r' \* \\(user|kernel)group\{([a-zA-Z]+)\}')
+DEFINE_RULE = re.compile(r' \*     \\defgroup (Sce\w+) \w+')
+USER_GROUP_RULE = re.compile(r' \* \\(user|kernel)group\{(Sce\w+)\}')
 IGNORE_FILES = [
     'vitasdk.h',
     'vitasdkkern.h',
