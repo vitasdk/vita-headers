@@ -215,7 +215,9 @@ var annotated_dup =
     [ "ScePvfKerningInfo", "group__ScePvfUser.html#structScePvfKerningInfo", "group__ScePvfUser_structScePvfKerningInfo" ],
     [ "ScePvfRect", "group__ScePvfUser.html#structScePvfRect", "group__ScePvfUser_structScePvfRect" ],
     [ "ScePvfUserImageBufferRec", "group__ScePvfUser.html#structScePvfUserImageBufferRec", "group__ScePvfUser_structScePvfUserImageBufferRec" ],
+    [ "SceRtcDayOfWeek", "group__SceRtcUser.html#structSceRtcDayOfWeek", "group__SceRtcUser_structSceRtcDayOfWeek" ],
     [ "SceRtcTick", "group__SceRtcUser.html#structSceRtcTick", "group__SceRtcUser_structSceRtcTick" ],
+    [ "SceScreenShotParam", "group__SceScreenShotUser.html#structSceScreenShotParam", "group__SceScreenShotUser_structSceScreenShotParam" ],
     [ "SceSqliteMallocMethods", "structSceSqliteMallocMethods.html", "structSceSqliteMallocMethods" ],
     [ "SceSslMemoryPoolStats", "group__SceLibSslUser.html#structSceSslMemoryPoolStats", "group__SceLibSslUser_structSceSslMemoryPoolStats" ],
     [ "SceTouchData", "group__SceTouchUser.html#structSceTouchData", "group__SceTouchUser_structSceTouchData" ],
@@ -253,6 +255,5 @@ var annotated_dup =
     [ "SceUVector4", "group__SceTypesUser.html#structSceUVector4", "group__SceTypesUser_structSceUVector4" ],
     [ "SceVideodecQueryInitInfo", "group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo", "group__SceVideoDecUser_unionSceVideodecQueryInitInfo" ],
     [ "SceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser_structSceVideodecQueryInitInfoHwAvcdec" ],
-    [ "SceVideodecTimeStamp", "group__SceVideoDecUser.html#structSceVideodecTimeStamp", "group__SceVideoDecUser_structSceVideodecTimeStamp" ],
-    [ "ScreenShotParam", "group__SceScreenShotUser.html#structScreenShotParam", "group__SceScreenShotUser_structScreenShotParam" ]
+    [ "SceVideodecTimeStamp", "group__SceVideoDecUser.html#structSceVideodecTimeStamp", "group__SceVideoDecUser_structSceVideodecTimeStamp" ]
 ];

@@ -124,10 +124,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga57e55396a9cc33ab9dc5f2a5bf566315">sceAppMgrReleaseBgmPort</a> (void)</td></tr>
 <tr class="memdesc:ga57e55396a9cc33ab9dc5f2a5bf566315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release acquired BGM port. <br /></td></tr>
 <tr class="separator:ga57e55396a9cc33ab9dc5f2a5bf566315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga703fd52e350cf06140a391cb9ac66a10"><td class="memItemLeft" align="right" valign="top"><a id="ga703fd52e350cf06140a391cb9ac66a10"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga703fd52e350cf06140a391cb9ac66a10">sceAppMgrSetInfobarState</a> (int visibility, int color, int transparency)</td></tr>
-<tr class="memdesc:ga703fd52e350cf06140a391cb9ac66a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set infobar state. <br /></td></tr>
-<tr class="separator:ga703fd52e350cf06140a391cb9ac66a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga780c093d4d4cb329f6a669018243955b"><td class="memItemLeft" align="right" valign="top"><a id="ga780c093d4d4cb329f6a669018243955b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga780c093d4d4cb329f6a669018243955b">sceAppMgrSetInfobarState</a> (SceAppMgrInfoBarVisibility visibility, SceAppMgrInfoBarColor color, SceAppMgrInfoBarTransparency transparency)</td></tr>
+<tr class="memdesc:ga780c093d4d4cb329f6a669018243955b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set infobar state. <br /></td></tr>
+<tr class="separator:ga780c093d4d4cb329f6a669018243955b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d1f55f68294a3d243c61d418d14c587"><td class="memItemLeft" align="right" valign="top"><a id="ga6d1f55f68294a3d243c61d418d14c587"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAppMgrLoadExec</b> (const char *appPath, char *const argv[], const SceAppMgrExecOptParam *optParam)</td></tr>
 <tr class="separator:ga6d1f55f68294a3d243c61d418d14c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +225,7 @@ reserved[60]</td>
 <td class="fieldname">
 systemEvent</td>
 <td class="fielddoc">
-</td></tr>
+One of ::SceAppMgrSystemEventType. </td></tr>
 </table>
 
 </div>
@@ -244,9 +244,9 @@ systemEvent</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gaabb2ff47ba8dd4dfeca0b1b1da565926"></a>int</td>
+<a id="ga880a16d214e749381b0ddc2ca963fcb3"></a>int</td>
 <td class="fieldname">
-reserved[256/4]</td>
+reserved[64]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -254,28 +254,28 @@ reserved[256/4]</td>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga06fc87d81c62e9abb8790b6e5713c55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06fc87d81c62e9abb8790b6e5713c55b">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga771df8407677ccb8145733c989f0903d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga771df8407677ccb8145733c989f0903d">&sect;&nbsp;</a></span>SceAppMgrErrorCode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#ga771df8407677ccb8145733c989f0903d">SceAppMgrErrorCode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983"></a>SCE_APPMGR_ERROR_BUSY&#160;</td><td class="fielddoc"><p>Busy. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983"></a>SCE_APPMGR_ERROR_BUSY&#160;</td><td class="fielddoc"><p>Busy. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d"></a>SCE_APPMGR_ERROR_STATE&#160;</td><td class="fielddoc"><p>Invalid state. </p>
+<tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d"></a>SCE_APPMGR_ERROR_STATE&#160;</td><td class="fielddoc"><p>Invalid state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38"></a>SCE_APPMGR_ERROR_NULL_POINTER&#160;</td><td class="fielddoc"><p>NULL pointer. </p>
+<tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903da3e88f785f699bd45efd239ed2b4f4e38"></a>SCE_APPMGR_ERROR_NULL_POINTER&#160;</td><td class="fielddoc"><p>NULL pointer. </p>
 <p>Invalid param </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082"></a>SCE_APPMGR_ERROR_INVALID&#160;</td><td class="fielddoc"><p>Invalid self path. </p>
+<tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903dac704cf756ac0c7fc05aa0d20bf5d7082"></a>SCE_APPMGR_ERROR_INVALID&#160;</td><td class="fielddoc"><p>Invalid self path. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290"></a>SCE_APPMGR_ERROR_INVALID_SELF_PATH&#160;</td><td class="fielddoc"><p>argv is too long </p>
+<tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903daf867515f2ab516d22bed1df741e1a290"></a>SCE_APPMGR_ERROR_INVALID_SELF_PATH&#160;</td><td class="fielddoc"><p>argv is too long </p>
 </td></tr>
 </table>
 

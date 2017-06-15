@@ -209,7 +209,9 @@ var searchData=
   ['scepvfkerninginfo',['ScePvfKerningInfo',['../group__ScePvfUser.html#structScePvfKerningInfo',1,'']]],
   ['scepvfrect',['ScePvfRect',['../group__ScePvfUser.html#structScePvfRect',1,'']]],
   ['scepvfuserimagebufferrec',['ScePvfUserImageBufferRec',['../group__ScePvfUser.html#structScePvfUserImageBufferRec',1,'']]],
+  ['scertcdayofweek',['SceRtcDayOfWeek',['../group__SceRtcUser.html#structSceRtcDayOfWeek',1,'']]],
   ['scertctick',['SceRtcTick',['../group__SceRtcUser.html#structSceRtcTick',1,'']]],
+  ['scescreenshotparam',['SceScreenShotParam',['../group__SceScreenShotUser.html#structSceScreenShotParam',1,'']]],
   ['scesqlitemallocmethods',['SceSqliteMallocMethods',['../structSceSqliteMallocMethods.html',1,'']]],
   ['scesslmemorypoolstats',['SceSslMemoryPoolStats',['../group__SceLibSslUser.html#structSceSslMemoryPoolStats',1,'']]],
   ['scetouchdata',['SceTouchData',['../group__SceTouchUser.html#structSceTouchData',1,'']]],
@@ -247,6 +249,5 @@ var searchData=
   ['sceuvector4',['SceUVector4',['../group__SceTypesUser.html#structSceUVector4',1,'']]],
   ['scevideodecqueryinitinfo',['SceVideodecQueryInitInfo',['../group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo',1,'']]],
   ['scevideodecqueryinitinfohwavcdec',['SceVideodecQueryInitInfoHwAvcdec',['../group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec',1,'']]],
-  ['scevideodectimestamp',['SceVideodecTimeStamp',['../group__SceVideoDecUser.html#structSceVideodecTimeStamp',1,'']]],
-  ['screenshotparam',['ScreenShotParam',['../group__SceScreenShotUser.html#structScreenShotParam',1,'']]]
+  ['scevideodectimestamp',['SceVideodecTimeStamp',['../group__SceVideoDecUser.html#structSceVideodecTimeStamp',1,'']]]
 ];

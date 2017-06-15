@@ -102,18 +102,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5f9b9fbf5cf33d8d99c7de6fe5ea2307"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#ga5f9b9fbf5cf33d8d99c7de6fe5ea2307">sceShellUtilRegisterEventHandler</a> (SceShellUtilEventHandler *handler, void *userData)</td></tr>
 <tr class="memdesc:ga5f9b9fbf5cf33d8d99c7de6fe5ea2307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register event handler.  <a href="#ga5f9b9fbf5cf33d8d99c7de6fe5ea2307">More...</a><br /></td></tr>
 <tr class="separator:ga5f9b9fbf5cf33d8d99c7de6fe5ea2307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0603dc8d8a2579056ec1f6f77caca76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#gac0603dc8d8a2579056ec1f6f77caca76">sceShellUtilLock</a> (int type)</td></tr>
-<tr class="memdesc:gac0603dc8d8a2579056ec1f6f77caca76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock event.  <a href="#gac0603dc8d8a2579056ec1f6f77caca76">More...</a><br /></td></tr>
-<tr class="separator:gac0603dc8d8a2579056ec1f6f77caca76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ac553514288d8a77b5cf036a603f64f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#ga0ac553514288d8a77b5cf036a603f64f">sceShellUtilUnlock</a> (int type)</td></tr>
-<tr class="memdesc:ga0ac553514288d8a77b5cf036a603f64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock event.  <a href="#ga0ac553514288d8a77b5cf036a603f64f">More...</a><br /></td></tr>
-<tr class="separator:ga0ac553514288d8a77b5cf036a603f64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed63c312c55dc285ae4f6f60517f2786"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#gaed63c312c55dc285ae4f6f60517f2786">sceShellUtilLock</a> (SceShellUtilLockType type)</td></tr>
+<tr class="memdesc:gaed63c312c55dc285ae4f6f60517f2786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock event.  <a href="#gaed63c312c55dc285ae4f6f60517f2786">More...</a><br /></td></tr>
+<tr class="separator:gaed63c312c55dc285ae4f6f60517f2786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7817cd6e37c91b1756b06b143663896"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896">sceShellUtilUnlock</a> (SceShellUtilLockType type)</td></tr>
+<tr class="memdesc:gaf7817cd6e37c91b1756b06b143663896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock event.  <a href="#gaf7817cd6e37c91b1756b06b143663896">More...</a><br /></td></tr>
+<tr class="separator:gaf7817cd6e37c91b1756b06b143663896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaa850fda50515f4889dc6c72522be1a52"><td class="memItemLeft" align="right" valign="top"><a id="gaa850fda50515f4889dc6c72522be1a52"></a>
-typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtilEventHandler</b>) (int result, int mode, int type, void *userData)</td></tr>
-<tr class="separator:gaa850fda50515f4889dc6c72522be1a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f462a5d46a0fe27f578aad04e333892"><td class="memItemLeft" align="right" valign="top"><a id="ga7f462a5d46a0fe27f578aad04e333892"></a>
+typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtilEventHandler</b>) (int result, SceShellUtilLockMode mode, SceShellUtilLockType type, void *userData)</td></tr>
+<tr class="separator:ga7f462a5d46a0fe27f578aad04e333892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga32143337fcc63e9c76ef0717e95763d8"></a>
@@ -143,8 +143,8 @@ typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtil
 
 </div>
 </div>
-<a id="gac0603dc8d8a2579056ec1f6f77caca76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac0603dc8d8a2579056ec1f6f77caca76">&sect;&nbsp;</a></span>sceShellUtilLock()</h2>
+<a id="gaed63c312c55dc285ae4f6f60517f2786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed63c312c55dc285ae4f6f60517f2786">&sect;&nbsp;</a></span>sceShellUtilLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,7 +152,7 @@ typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtil
         <tr>
           <td class="memname">int sceShellUtilLock </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">SceShellUtilLockType&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -162,7 +162,7 @@ typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtil
 <p>Lock event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of ::ShellUtilLockType</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of ::SceShellUtilLockType</td></tr>
   </table>
   </dd>
 </dl>
@@ -208,8 +208,8 @@ typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtil
 
 </div>
 </div>
-<a id="ga0ac553514288d8a77b5cf036a603f64f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ac553514288d8a77b5cf036a603f64f">&sect;&nbsp;</a></span>sceShellUtilUnlock()</h2>
+<a id="gaf7817cd6e37c91b1756b06b143663896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7817cd6e37c91b1756b06b143663896">&sect;&nbsp;</a></span>sceShellUtilUnlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +217,7 @@ typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtil
         <tr>
           <td class="memname">int sceShellUtilUnlock </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">SceShellUtilLockType&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -227,7 +227,7 @@ typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceShellUtil
 <p>Unlock event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of ::ShellUtilLockType</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of ::SceShellUtilLockType</td></tr>
   </table>
   </dd>
 </dl>

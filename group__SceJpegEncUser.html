@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('group__SceJpegEncUser.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga021a5c0080a6815131f917d6bbefac8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga021a5c0080a6815131f917d6bbefac8d">sceJpegEncoderInit</a> (SceJpegEncoderContext context, int inWidth, int inHeight, SceJpegEncoderPixelFormat pixelformat, void *outBuffer, int outSize)</td></tr>
+<tr class="memitem:ga021a5c0080a6815131f917d6bbefac8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga021a5c0080a6815131f917d6bbefac8d">sceJpegEncoderInit</a> (SceJpegEncoderContext context, int inWidth, int inHeight, <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> pixelformat, void *outBuffer, int outSize)</td></tr>
 <tr class="memdesc:ga021a5c0080a6815131f917d6bbefac8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a jpeg encoder.  <a href="#ga021a5c0080a6815131f917d6bbefac8d">More...</a><br /></td></tr>
 <tr class="separator:ga021a5c0080a6815131f917d6bbefac8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02de151671088a0fc05d395a36ac6fbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga02de151671088a0fc05d395a36ac6fbe">sceJpegEncoderEnd</a> (SceJpegEncoderContext context)</td></tr>
@@ -111,7 +111,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga45d153069910d9b91c5f02f9103805e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga45d153069910d9b91c5f02f9103805e6">sceJpegEncoderSetOutputAddr</a> (SceJpegEncoderContext context, void *outBuffer, int outSize)</td></tr>
 <tr class="memdesc:ga45d153069910d9b91c5f02f9103805e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set encoder output address.  <a href="#ga45d153069910d9b91c5f02f9103805e6">More...</a><br /></td></tr>
 <tr class="separator:ga45d153069910d9b91c5f02f9103805e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d32b94253c6b509c781abcc0f490e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga7d32b94253c6b509c781abcc0f490e8e">sceJpegEncoderCsc</a> (SceJpegEncoderContext context, void *outBuffer, void *inBuffer, int inPitch, SceJpegEncoderPixelFormat inPixelFormat)</td></tr>
+<tr class="memitem:ga7d32b94253c6b509c781abcc0f490e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#ga7d32b94253c6b509c781abcc0f490e8e">sceJpegEncoderCsc</a> (SceJpegEncoderContext context, void *outBuffer, void *inBuffer, int inPitch, <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> inPixelFormat)</td></tr>
 <tr class="memdesc:ga7d32b94253c6b509c781abcc0f490e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a color conversion from ARGB to YCbCr.  <a href="#ga7d32b94253c6b509c781abcc0f490e8e">More...</a><br /></td></tr>
 <tr class="separator:ga7d32b94253c6b509c781abcc0f490e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8866ee27a4f90c9c06287d451d6c17c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncUser.html#gac8866ee27a4f90c9c06287d451d6c17c">sceJpegEncoderGetContextSize</a> (void)</td></tr>
@@ -127,6 +127,31 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SceJpegEncoderContext</b>&#160;&#160;&#160;void*</td></tr>
 <tr class="separator:ga023b9850f7b1eb15acc19470b5dbdf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga8603f36fb28263ac28ce4be90d8b604e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8603f36fb28263ac28ce4be90d8b604e">&sect;&nbsp;</a></span>SceJpegEncoderPixelFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8603f36fb28263ac28ce4be90d8b604eac72bfe0991870cf95d42063641f42a9e"></a>PIXELFORMAT_ARGB8888&#160;</td><td class="fielddoc"><p>ARGB8888 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8603f36fb28263ac28ce4be90d8b604ea2596552f698d45ff8793f4c36be882c1"></a>PIXELFORMAT_YCBCR420&#160;</td><td class="fielddoc"><p>YCbCr420 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8603f36fb28263ac28ce4be90d8b604ea223d2032db9ab9b97c5b3bf8210493cd"></a>PIXELFORMAT_YCBCR422&#160;</td><td class="fielddoc"><p>YCbCr422 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8603f36fb28263ac28ce4be90d8b604eae258e85a0268623a76486fcb917bf709"></a>PIXELFORMAT_CSC_ARGB_YCBCR&#160;</td><td class="fielddoc"><p>ARGB to YCbCr color conversion flag. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga7d32b94253c6b509c781abcc0f490e8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d32b94253c6b509c781abcc0f490e8e">&sect;&nbsp;</a></span>sceJpegEncoderCsc()</h2>
@@ -161,7 +186,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceJpegEncoderPixelFormat&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a>&#160;</td>
           <td class="paramname"><em>inPixelFormat</em>&#160;</td>
         </tr>
         <tr>
@@ -175,11 +200,11 @@ Macros</h2></td></tr>
 <p>Execute a color conversion from ARGB to YCbCr. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized sceJpegEncoderContext </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized ::SceJpegEncoderContext </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physical continuous memory block 256 bytes aligned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>- A pointer to a valid ARGB buffer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inPitch</td><td>- Input pitch value in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inPixelFormat</td><td>- A valid SceJpegEncoderPixelFormat set of values</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inPixelFormat</td><td>- A valid <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> set of values</td></tr>
   </table>
   </dd>
 </dl>
@@ -216,7 +241,7 @@ Macros</h2></td></tr>
 <p>Execute a jpeg encode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized sceJpegEncoderContext </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized ::SceJpegEncoderContext </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>- A physically continuous memory block 256 bytes aligned</td></tr>
   </table>
   </dd>
@@ -244,7 +269,7 @@ Macros</h2></td></tr>
 <p>Terminate a jpeg encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized sceJpegEncoderContext</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized ::SceJpegEncoderContext</td></tr>
   </table>
   </dd>
 </dl>
@@ -300,7 +325,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceJpegEncoderPixelFormat&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a>&#160;</td>
           <td class="paramname"><em>pixelformat</em>, </td>
         </tr>
         <tr>
@@ -329,7 +354,7 @@ Macros</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to a big enough allocated memory block </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inWidth</td><td>- Input width in pixels </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inHeight</td><td>- Input height in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pixelformat</td><td>- A valid SceJpegEncoderPixelFormat set of values </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixelformat</td><td>- A valid <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> set of values </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physically continuous memory block 256 bytes aligned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output size in bytes</td></tr>
   </table>
@@ -368,7 +393,7 @@ Macros</h2></td></tr>
 <p>Set encoder compression ratio. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized sceJpegEncoderContext </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized ::SceJpegEncoderContext </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>- A value between 0 and 255 (higher = better compression, lower = better speed)</td></tr>
   </table>
   </dd>
@@ -412,7 +437,7 @@ Macros</h2></td></tr>
 <p>Set encoder output address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized sceJpegEncoderContext </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized ::SceJpegEncoderContext </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physically continuous memory block 256 bytes aligned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output buffer size in bytes</td></tr>
   </table>
@@ -457,7 +482,7 @@ Macros</h2></td></tr>
 <p>Set encoder valid region (?) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized sceJpegEncoderContext </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized ::SceJpegEncoderContext </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inWidth</td><td>- Input width in pixels </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inHeight</td><td>- Input height in pixels</td></tr>
   </table>

@@ -570,13 +570,13 @@ Wait type. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae7d50cbebc78dde597b2266c54f5f4a7"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
+<a id="gab1877a06b8e0549fad2a15685c8e3867"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gae131bcf1d5b7b92aa9875c0018811949"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
+<a id="gad612901f3255d5f0e899d13d374c545b"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
@@ -1133,13 +1133,13 @@ activeCpuMask</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga7e29f0ccb2a2d45e1256afee175be928"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
+<a id="gad210ea78c3396d179a7fc802eac931dd"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga115be85971143f4b23b89b52b3f6468b"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
+<a id="ga63947991e331cb2d40227cf4e259e362"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
@@ -1463,7 +1463,7 @@ size</td>
 <p>Cancels a mutex. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
     <tr><td class="paramname">newCount</td><td>- The new lock count of the mutex </td></tr>
     <tr><td class="paramname">numWaitThreads</td><td>- Number of threads waiting for the mutex </td></tr>
   </table>
@@ -1508,7 +1508,7 @@ size</td>
 <p>Cancels a semaphore. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">semaid</td><td>- The sema id returned from sceKernelCreateSema </td></tr>
+    <tr><td class="paramname">semaid</td><td>- The sema id returned from <a class="el" href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad" title="Creates a new semaphore. ">sceKernelCreateSema</a> </td></tr>
     <tr><td class="paramname">setCount</td><td>- The new lock count of the semaphore </td></tr>
     <tr><td class="paramname">numWaitThreads</td><td>- Number of threads waiting for the semaphore </td></tr>
   </table>
@@ -1585,7 +1585,7 @@ size</td>
 <p>Change the threads current priority. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thid</td><td>- The ID of the thread (from sceKernelCreateThread or sceKernelGetThreadId) </td></tr>
+    <tr><td class="paramname">thid</td><td>- The ID of the thread (from <a class="el" href="group__SceThreadMgrUser.html#gac39eb69b24f2b6b55b5091b78b010c44" title="Create a thread. ">sceKernelCreateThread</a> or <a class="el" href="group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7" title="Get the current thread Id. ">sceKernelGetThreadId</a>) </td></tr>
     <tr><td class="paramname">priority</td><td>- The new priority (the lower the number the higher the priority)</td></tr>
   </table>
   </dd>
@@ -1694,7 +1694,7 @@ size</td>
 <p>Close a condition variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condition</td><td>variableid - The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">condition</td><td>variableid - The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1721,7 +1721,7 @@ size</td>
 <p>Close a mutex. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -2233,7 +2233,7 @@ size</td>
 <p>Destroy a condition variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condition</td><td>variableid - The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">condition</td><td>variableid - The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -2260,7 +2260,7 @@ size</td>
 <p>Delete an event flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">evid</td><td>- The event id returned by sceKernelCreateEventFlag.</td></tr>
+    <tr><td class="paramname">evid</td><td>- The event id returned by <a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7" title="Create an event flag. ">sceKernelCreateEventFlag</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2314,7 +2314,7 @@ size</td>
 <p>Destroy a mutex. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -2993,7 +2993,7 @@ size</td>
 <p>Lock a mutex. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
     <tr><td class="paramname">lockCount</td><td>- The value to increment to the lock count of the mutex </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed) </td></tr>
   </table>
@@ -3038,7 +3038,7 @@ size</td>
 <p>Lock a mutex and handle callbacks if necessary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
     <tr><td class="paramname">lockCount</td><td>- The value to increment to the lock count of the mutex </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed) </td></tr>
   </table>
@@ -3181,7 +3181,7 @@ size</td>
 <p>Poll an event flag for a given bit pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">evid</td><td>- The event id returned by sceKernelCreateEventFlag. </td></tr>
+    <tr><td class="paramname">evid</td><td>- The event id returned by <a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7" title="Create an event flag. ">sceKernelCreateEventFlag</a>. </td></tr>
     <tr><td class="paramname">bits</td><td>- The bit pattern to poll for. </td></tr>
     <tr><td class="paramname">wait</td><td>- Wait type, one or more of <a class="el" href="group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843" title="Event flag wait types. ">SceEventFlagWaitTypes</a> or'ed together </td></tr>
     <tr><td class="paramname">outBits</td><td>- The bit pattern that was matched. </td></tr>
@@ -3550,7 +3550,7 @@ size</td>
 <p>Set an event flag bit pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">evid</td><td>- The event id returned by sceKernelCreateEventFlag. </td></tr>
+    <tr><td class="paramname">evid</td><td>- The event id returned by <a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7" title="Create an event flag. ">sceKernelCreateEventFlag</a>. </td></tr>
     <tr><td class="paramname">bits</td><td>- The bit pattern to set.</td></tr>
   </table>
   </dd>
@@ -3578,7 +3578,7 @@ size</td>
 <p>Signals a condition variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -3605,7 +3605,7 @@ size</td>
 <p>Signals a condition variable to all threads waiting for it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -3642,8 +3642,8 @@ size</td>
 <p>Signals a condition variable to a specific thread waiting for it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
-    <tr><td class="paramname">threadId</td><td>- The thread id returned from sceKernelCreateThread </td></tr>
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
+    <tr><td class="paramname">threadId</td><td>- The thread id returned from <a class="el" href="group__SceThreadMgrUser.html#gac39eb69b24f2b6b55b5091b78b010c44" title="Create a thread. ">sceKernelCreateThread</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -3681,7 +3681,7 @@ size</td>
 <dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="comment">// Signal the sema</span></div><div class="line"><a class="code" href="group__SceThreadMgrUser.html#gab81b0362839d7f9cbdcbf64305e7e603">sceKernelSignalSema</a>(semaid, 1);</div></div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">semaid</td><td>- The sema id returned from sceKernelCreateSema </td></tr>
+    <tr><td class="paramname">semaid</td><td>- The sema id returned from <a class="el" href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad" title="Creates a new semaphore. ">sceKernelCreateSema</a> </td></tr>
     <tr><td class="paramname">signal</td><td>- The amount to signal the sema (i.e. if 2 then increment the sema by 2)</td></tr>
   </table>
   </dd>
@@ -3725,7 +3725,7 @@ size</td>
 <p>Start a created thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thid</td><td>- Thread id from sceKernelCreateThread </td></tr>
+    <tr><td class="paramname">thid</td><td>- Thread id from <a class="el" href="group__SceThreadMgrUser.html#gac39eb69b24f2b6b55b5091b78b010c44" title="Create a thread. ">sceKernelCreateThread</a> </td></tr>
     <tr><td class="paramname">arglen</td><td>- Length of the data pointed to by argp, in bytes </td></tr>
     <tr><td class="paramname">argp</td><td>- Pointer to the arguments. </td></tr>
   </table>
@@ -3763,7 +3763,7 @@ size</td>
 <p>Try to lock a mutex (non-blocking) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
     <tr><td class="paramname">lockCount</td><td>- The value to increment to the lock count of the mutex </td></tr>
   </table>
   </dd>
@@ -3919,7 +3919,7 @@ size</td>
 <p>Try to unlock a mutex (non-blocking) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from sceKernelCreateMutex </td></tr>
+    <tr><td class="paramname">mutexid</td><td>- The mutex id returned from <a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf" title="Creates a new mutex. ">sceKernelCreateMutex</a> </td></tr>
     <tr><td class="paramname">unlockCount</td><td>- The value to decrement to the lock count of the mutex </td></tr>
   </table>
   </dd>
@@ -3957,7 +3957,7 @@ size</td>
 <p>Waits for a signal of a condition variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed) </td></tr>
   </table>
   </dd>
@@ -3995,7 +3995,7 @@ size</td>
 <p>Waits for a signal of a condition variable (with callbacks) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condId</td><td>- The condition variable id returned from sceKernelCreateCond </td></tr>
+    <tr><td class="paramname">condId</td><td>- The condition variable id returned from <a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729" title="Creates a new condition variable. ">sceKernelCreateCond</a> </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed) </td></tr>
   </table>
   </dd>
@@ -4051,7 +4051,7 @@ size</td>
 <p>Wait for an event flag for a given bit pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">evid</td><td>- The event id returned by sceKernelCreateEventFlag. </td></tr>
+    <tr><td class="paramname">evid</td><td>- The event id returned by <a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7" title="Create an event flag. ">sceKernelCreateEventFlag</a>. </td></tr>
     <tr><td class="paramname">bits</td><td>- The bit pattern to poll for. </td></tr>
     <tr><td class="paramname">wait</td><td>- Wait type, one or more of <a class="el" href="group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843" title="Event flag wait types. ">SceEventFlagWaitTypes</a> or'ed together </td></tr>
     <tr><td class="paramname">outBits</td><td>- The bit pattern that was matched. </td></tr>
@@ -4110,7 +4110,7 @@ size</td>
 <p>Wait for an event flag for a given bit pattern with callback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">evid</td><td>- The event id returned by sceKernelCreateEventFlag. </td></tr>
+    <tr><td class="paramname">evid</td><td>- The event id returned by <a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7" title="Create an event flag. ">sceKernelCreateEventFlag</a>. </td></tr>
     <tr><td class="paramname">bits</td><td>- The bit pattern to poll for. </td></tr>
     <tr><td class="paramname">wait</td><td>- Wait type, one or more of <a class="el" href="group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843" title="Event flag wait types. ">SceEventFlagWaitTypes</a> or'ed together </td></tr>
     <tr><td class="paramname">outBits</td><td>- The bit pattern that was matched. </td></tr>
@@ -4158,7 +4158,7 @@ size</td>
 <dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__SceThreadMgrUser.html#gabae55d2ad8fa3ea26c7402fe34bbf8d5">sceKernelWaitSema</a>(semaid, 1, 0);</div></div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">semaid</td><td>- The sema id returned from sceKernelCreateSema </td></tr>
+    <tr><td class="paramname">semaid</td><td>- The sema id returned from <a class="el" href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad" title="Creates a new semaphore. ">sceKernelCreateSema</a> </td></tr>
     <tr><td class="paramname">signal</td><td>- The value to wait for (i.e. if 1 then wait till reaches a signal state of 1) </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed).</td></tr>
   </table>
@@ -4204,7 +4204,7 @@ size</td>
 <dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__SceThreadMgrUser.html#ga39f2a84f2c014b35ca17a2412dafbd4b">sceKernelWaitSemaCB</a>(semaid, 1, 0);</div></div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">semaid</td><td>- The sema id returned from sceKernelCreateSema </td></tr>
+    <tr><td class="paramname">semaid</td><td>- The sema id returned from <a class="el" href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad" title="Creates a new semaphore. ">sceKernelCreateSema</a> </td></tr>
     <tr><td class="paramname">signal</td><td>- The value to wait for (i.e. if 1 then wait till reaches a signal state of 1) </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed).</td></tr>
   </table>

@@ -10,5 +10,5 @@ var group__SceScreenShotUser =
     [ "sceScreenShotDisable", "group__SceScreenShotUser.html#ga87815ecf3513b92b1c63f0ff004ed8ab", null ],
     [ "sceScreenShotEnable", "group__SceScreenShotUser.html#gaac49665e204a84239aadcf4832884b30", null ],
     [ "sceScreenShotSetOverlayImage", "group__SceScreenShotUser.html#gab2c2e9b166ea755e957ca19c6c1d18b9", null ],
-    [ "sceScreenShotSetParam", "group__SceScreenShotUser.html#ga4e3ce19a86edcb1a8e7ee411d24e1d90", null ]
+    [ "sceScreenShotSetParam", "group__SceScreenShotUser.html#ga08d841dd57fbdcd1838e239f89f92ff8", null ]
 ];

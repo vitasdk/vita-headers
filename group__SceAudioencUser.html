@@ -172,7 +172,7 @@ Macros</h2></td></tr>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
-Size of this structure. </td></tr>
+sizeof(SceAudioencInitStreamParam) </td></tr>
 <tr><td class="fieldtype">
 <a id="ga829d2c82e8adc3ca62ed756e7d9caca1"></a>unsigned int</td>
 <td class="fieldname">
@@ -202,7 +202,7 @@ Total number of audio streams. </td></tr>
 <td class="fieldname">
 bitRate</td>
 <td class="fielddoc">
-Bit rate. </td></tr>
+Bit rate (one of ::SceAudioencCelpBitrate) </td></tr>
 <tr><td class="fieldtype">
 <a id="gafd9b4cbdc47b221217c7f99b6d562d1a"></a>unsigned int</td>
 <td class="fieldname">
@@ -316,7 +316,7 @@ sizeof(SceAudioencInitParam) </td></tr>
 <td class="fieldname">
 celp</td>
 <td class="fielddoc">
-</td></tr>
+Information structure for CELP. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga74bb972e0aad2f2f13a0e5e1e1273f5b"></a>SceSize</td>
 <td class="fieldname">
@@ -346,13 +346,13 @@ sizeof(SceAudioencInfo) </td></tr>
 <td class="fieldname">
 celp</td>
 <td class="fielddoc">
-</td></tr>
+Optional information structure for CELP. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaed6bf8ca02445e1a6eb8c592fbef4f60"></a>SceSize</td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
-Size of this structure. </td></tr>
+sizeof(SceAudioencOptInfo) </td></tr>
 </table>
 
 </div>

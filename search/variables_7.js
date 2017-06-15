@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle',['handle',['../group__SceAudioencUser.html#gaddb3588f2f5628c9957131de455c0f02',1,'SceAudioencCtrl']]],
+  ['handle',['handle',['../group__SceAudioencUser.html#gaddb3588f2f5628c9957131de455c0f02',1,'SceAudioencCtrl::handle()'],['../group__SceModulemgrUser.html#ga517048842f3ca8d2ddfac00186b86d43',1,'SceKernelModuleInfo::handle()']]],
   ['header',['header',['../group__SceAudioencUser.html#gad0352b837f2cd1b3d51f472b76f7464e',1,'SceAudioencOptInfoCelp']]],
   ['headersize',['headerSize',['../group__SceAudioencUser.html#ga3087182f030eb83483ba95ef0543a4f7',1,'SceAudioencOptInfoCelp']]],
   ['headingvectorx',['headingVectorX',['../group__SceLocationUser.html#gab787f06246360da95fe7921d2b283d85',1,'SceLocationHeadingInfo']]],

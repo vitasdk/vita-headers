@@ -98,15 +98,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf64b2cd0fc96095e3f77dee2dc9a68c3"><td class="memItemLeft" align="right" valign="top"><a id="gaf64b2cd0fc96095e3f77dee2dc9a68c3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelExitProcess</b> (int res)</td></tr>
 <tr class="separator:gaf64b2cd0fc96095e3f77dee2dc9a68c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga860fa47728b0f7bd54cb85f958580df5"><td class="memItemLeft" align="right" valign="top"><a id="ga860fa47728b0f7bd54cb85f958580df5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelPowerTick</b> (int type)</td></tr>
-<tr class="separator:ga860fa47728b0f7bd54cb85f958580df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0eee5a2f0f814c682664b12aeaaa53e"><td class="memItemLeft" align="right" valign="top"><a id="gab0eee5a2f0f814c682664b12aeaaa53e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelPowerLock</b> (int type)</td></tr>
-<tr class="separator:gab0eee5a2f0f814c682664b12aeaaa53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc38bc6611ad23291ac41abaa9067e22"><td class="memItemLeft" align="right" valign="top"><a id="gabc38bc6611ad23291ac41abaa9067e22"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelPowerUnlock</b> (int type)</td></tr>
-<tr class="separator:gabc38bc6611ad23291ac41abaa9067e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2255f042fe267ddd8b38eee5fa578e33"><td class="memItemLeft" align="right" valign="top"><a id="ga2255f042fe267ddd8b38eee5fa578e33"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelPowerTick</b> (<a class="el" href="group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> type)</td></tr>
+<tr class="separator:ga2255f042fe267ddd8b38eee5fa578e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cd2b3124993e2b420003f7d9d6dc5a8"><td class="memItemLeft" align="right" valign="top"><a id="ga2cd2b3124993e2b420003f7d9d6dc5a8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelPowerLock</b> (<a class="el" href="group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> type)</td></tr>
+<tr class="separator:ga2cd2b3124993e2b420003f7d9d6dc5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37afabdf671c166288c4b5f787d95734"><td class="memItemLeft" align="right" valign="top"><a id="ga37afabdf671c166288c4b5f787d95734"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelPowerUnlock</b> (<a class="el" href="group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> type)</td></tr>
+<tr class="separator:ga37afabdf671c166288c4b5f787d95734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace1d546dfe4aaad8846f6deef9e078ea"><td class="memItemLeft" align="right" valign="top"><a id="gace1d546dfe4aaad8846f6deef9e078ea"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetProcessTime</b> (<a class="el" href="group__SceThreadMgrUser.html#gaf51ef41af830ba6422cc9c5106fb68b8">SceKernelSysClock</a> *pSysClock)</td></tr>
 <tr class="separator:gace1d546dfe4aaad8846f6deef9e078ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,25 +121,33 @@ SceUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetProc
 <tr class="separator:ga1a5d235002e6c9023ee239d7f0e4ef6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gafa231099d07583c3ed0981e0bb665f55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafa231099d07583c3ed0981e0bb665f55">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga1b448620c7525b730a2b94164e34d77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b448620c7525b730a2b94164e34d77f">&sect;&nbsp;</a></span>SceKernelPowerTickType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafa231099d07583c3ed0981e0bb665f55ae71baa308d1cf3469b372f41a74de0e9"></a>SCE_KERNEL_POWER_TICK_DEFAULT&#160;</td><td class="fielddoc"><p>Cancel all timers. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9"></a>SCE_KERNEL_POWER_TICK_DEFAULT&#160;</td><td class="fielddoc"><p>Cancel all timers. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafa231099d07583c3ed0981e0bb665f55a3e8b9af3aaeb7cd8fb6ce66a8063d872"></a>SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND&#160;</td><td class="fielddoc"><p>Cancel automatic suspension timer. </p>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa3e8b9af3aaeb7cd8fb6ce66a8063d872"></a>SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND&#160;</td><td class="fielddoc"><p>Cancel automatic suspension timer. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafa231099d07583c3ed0981e0bb665f55a61d6ff07f428ecf1f42ecb4644002d39"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF&#160;</td><td class="fielddoc"><p>Cancel OLED-off timer. </p>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa61d6ff07f428ecf1f42ecb4644002d39"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF&#160;</td><td class="fielddoc"><p>Cancel OLED-off timer. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafa231099d07583c3ed0981e0bb665f55a55cba5df6d5a94e9b0188c47696cb650"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING&#160;</td><td class="fielddoc"><p>Cancel OLED dimming timer. </p>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING&#160;</td><td class="fielddoc"><p>Cancel OLED dimming timer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9"></a>SCE_KERNEL_POWER_TICK_DEFAULT&#160;</td><td class="fielddoc"><p>Cancel all timers. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa3e8b9af3aaeb7cd8fb6ce66a8063d872"></a>SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND&#160;</td><td class="fielddoc"><p>Cancel automatic suspension timer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa61d6ff07f428ecf1f42ecb4644002d39"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF&#160;</td><td class="fielddoc"><p>Cancel OLED-off timer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING&#160;</td><td class="fielddoc"><p>Cancel OLED dimming timer. </p>
 </td></tr>
 </table>
 

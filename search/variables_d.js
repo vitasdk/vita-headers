@@ -4,7 +4,8 @@ var searchData=
   ['paletteindex',['paletteIndex',['../group__SceGxtUser.html#ga47e0ff16339e41f1fd99e4bf61d7c2df',1,'SceGxtTextureInfo']]],
   ['parentalstatus',['parentalstatus',['../group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b',1,'SceLocationPermissionInfo']]],
   ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate']]],
-  ['phototitle',['photoTitle',['../group__ScePhotoExportUser.html#ga9d23c119763c0be9f042ff0d9cf01503',1,'PhotoExportParam::photoTitle()'],['../group__SceScreenShotUser.html#gaa1c1ceaff101bb92d959583c8220eca2',1,'ScreenShotParam::photoTitle()']]],
+  ['perms',['perms',['../group__SceModulemgrUser.html#gabc6834d76118d38b49191bd37c5cc05a',1,'SceKernelSegmentInfo']]],
+  ['phototitle',['photoTitle',['../group__ScePhotoExportUser.html#ga9d23c119763c0be9f042ff0d9cf01503',1,'PhotoExportParam::photoTitle()'],['../group__SceScreenShotUser.html#ga670e84779f617e0172a286e05e90b841',1,'SceScreenShotParam::photoTitle()']]],
   ['pinfo',['pInfo',['../group__SceAudiodecUser.html#gad31633c35d75fcde2f8d0221111fb1b2',1,'SceAudiodecCtrl::pInfo()'],['../group__SceAudioencUser.html#ga2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl::pInfo()']]],
   ['pinputpcm',['pInputPcm',['../group__SceAudioencUser.html#ga136ce6a1b5a71d438b2c8dc6125af1be',1,'SceAudioencCtrl']]],
   ['pitch',['pitch',['../group__SceDisplayUser.html#ga44160853361a441b8e43578d0a2941b9',1,'SceDisplayFrameBuf']]],
@@ -15,5 +16,6 @@ var searchData=
   ['poutputes',['pOutputEs',['../group__SceAudioencUser.html#gac352baa6d5587fc7223769e46e147df2',1,'SceAudioencCtrl']]],
   ['ppcm',['pPcm',['../group__SceAudiodecUser.html#ga1ccae11df48a9852002f4f4e98ab5797',1,'SceAudiodecCtrl']]],
   ['ppicture',['pPicture',['../group__SceVideoDecUser.html#ga180cbb7fc4da1185fab46c998ae22b2b',1,'SceAvcdecFrame']]],
-  ['processid',['processId',['../group__SceThreadMgrUser.html#gadeff847365036cb16421d965b6b17c80',1,'SceKernelThreadInfo']]]
+  ['processid',['processId',['../group__SceThreadMgrUser.html#gadeff847365036cb16421d965b6b17c80',1,'SceKernelThreadInfo']]],
+  ['progbarparam',['progBarParam',['../group__SceMessageDialogUser.html#gaaebe622651f725bfdab05b062e942b3e',1,'SceMsgDialogParam']]]
 ];

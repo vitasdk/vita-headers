@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('group__SceAudioInUser.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5c8fe16d67c100a072e30d7b247ff3d4"><td class="memItemLeft" align="right" valign="top"><a id="ga5c8fe16d67c100a072e30d7b247ff3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga5c8fe16d67c100a072e30d7b247ff3d4">sceAudioInOpenPort</a> (int portType, int grain, int freq, int param)</td></tr>
-<tr class="memdesc:ga5c8fe16d67c100a072e30d7b247ff3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open port. <br /></td></tr>
-<tr class="separator:ga5c8fe16d67c100a072e30d7b247ff3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd74510965e47b7194e496808d47458b"><td class="memItemLeft" align="right" valign="top"><a id="gafd74510965e47b7194e496808d47458b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b">sceAudioInOpenPort</a> (SceAudioInPortType portType, int grain, int freq, SceAudioInParam param)</td></tr>
+<tr class="memdesc:gafd74510965e47b7194e496808d47458b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open port. <br /></td></tr>
+<tr class="separator:gafd74510965e47b7194e496808d47458b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c14f220a4c636c0c69960dc6b5aa9df"><td class="memItemLeft" align="right" valign="top"><a id="ga1c14f220a4c636c0c69960dc6b5aa9df"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga1c14f220a4c636c0c69960dc6b5aa9df">sceAudioInReleasePort</a> (int port)</td></tr>
 <tr class="memdesc:ga1c14f220a4c636c0c69960dc6b5aa9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close port. <br /></td></tr>
@@ -106,47 +106,47 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga4f513ba6e4c39b562ecc6cf9439c648a"><td class="memItemLeft" align="right" valign="top"><a id="ga4f513ba6e4c39b562ecc6cf9439c648a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioInInput</b> (int port, void *destPtr)</td></tr>
 <tr class="separator:ga4f513ba6e4c39b562ecc6cf9439c648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7b965af824d10fc02f378344be7a078"><td class="memItemLeft" align="right" valign="top"><a id="gaa7b965af824d10fc02f378344be7a078"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioInGetAdopt</b> (int portType)</td></tr>
-<tr class="separator:gaa7b965af824d10fc02f378344be7a078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae05aa5901840b461c396f4ac050843a6"><td class="memItemLeft" align="right" valign="top"><a id="gae05aa5901840b461c396f4ac050843a6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioInGetAdopt</b> (SceAudioInPortType portType)</td></tr>
+<tr class="separator:gae05aa5901840b461c396f4ac050843a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3156b2e164d368f2c9d20cec93b5dee2"><td class="memItemLeft" align="right" valign="top"><a id="ga3156b2e164d368f2c9d20cec93b5dee2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioInGetStatus</b> (int select)</td></tr>
 <tr class="separator:ga3156b2e164d368f2c9d20cec93b5dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga05589fbab0657f08285ebdfe93f5ec9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05589fbab0657f08285ebdfe93f5ec9e">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga28abc8ed0115ce4f3c3b19bbac143dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28abc8ed0115ce4f3c3b19bbac143dcc">&sect;&nbsp;</a></span>SceAudioInErrorCode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceAudioInUser.html#ga28abc8ed0115ce4f3c3b19bbac143dcc">SceAudioInErrorCode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea74b0f071efb8647de3441a15a0b96f1a"></a>SCE_AUDIO_IN_ERROR_FATAL&#160;</td><td class="fielddoc"><p>Undefined error. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a"></a>SCE_AUDIO_IN_ERROR_FATAL&#160;</td><td class="fielddoc"><p>Undefined error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea0bd19f43d7f1bdfc42e26ca75f35c54f"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT&#160;</td><td class="fielddoc"><p>Bad value of port number. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT&#160;</td><td class="fielddoc"><p>Bad value of port number. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea35bdf669ddfbf4d998046fbf6de95238"></a>SCE_AUDIO_IN_ERROR_INVALID_SIZE&#160;</td><td class="fielddoc"><p>Invalid sample length. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca35bdf669ddfbf4d998046fbf6de95238"></a>SCE_AUDIO_IN_ERROR_INVALID_SIZE&#160;</td><td class="fielddoc"><p>Invalid sample length. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea304714f75da98e79d1dcca568c93aa68"></a>SCE_AUDIO_IN_ERROR_INVALID_SAMPLE_FREQ&#160;</td><td class="fielddoc"><p>Invalid sample frequency. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca304714f75da98e79d1dcca568c93aa68"></a>SCE_AUDIO_IN_ERROR_INVALID_SAMPLE_FREQ&#160;</td><td class="fielddoc"><p>Invalid sample frequency. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea3c576051078ad8374a033b1a081d8c54"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE&#160;</td><td class="fielddoc"><p>Invalid port type. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca3c576051078ad8374a033b1a081d8c54"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE&#160;</td><td class="fielddoc"><p>Invalid port type. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea5bf1f3890489da0880e376c3def5f3b9"></a>SCE_AUDIO_IN_ERROR_INVALID_POINTER&#160;</td><td class="fielddoc"><p>Invalid pointer value. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9"></a>SCE_AUDIO_IN_ERROR_INVALID_POINTER&#160;</td><td class="fielddoc"><p>Invalid pointer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea331c76dcdf481f0fde08d4fb3fe11910"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM&#160;</td><td class="fielddoc"><p>Invalid port param. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM&#160;</td><td class="fielddoc"><p>Invalid port param. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea124621b1ade9c8d226e0966077a0876c"></a>SCE_AUDIO_IN_ERROR_PORT_FULL&#160;</td><td class="fielddoc"><p>Cannot open no ports. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c"></a>SCE_AUDIO_IN_ERROR_PORT_FULL&#160;</td><td class="fielddoc"><p>Cannot open no ports. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9eae74ee704b2c1df5cf7d6aa883e5d7d94"></a>SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY&#160;</td><td class="fielddoc"><p>Not enough memory. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94"></a>SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY&#160;</td><td class="fielddoc"><p>Not enough memory. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9ea82a478e6fe50da6cf1a9a29e0b9f1594"></a>SCE_AUDIO_IN_ERROR_NOT_OPENED&#160;</td><td class="fielddoc"><p>Port is not opened. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594"></a>SCE_AUDIO_IN_ERROR_NOT_OPENED&#160;</td><td class="fielddoc"><p>Port is not opened. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga05589fbab0657f08285ebdfe93f5ec9eaaf35bb52dc924ad77e10a8c0fc7f4885"></a>SCE_AUDIO_IN_ERROR_BUSY&#160;</td><td class="fielddoc"><p>Tried to input while busy. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885"></a>SCE_AUDIO_IN_ERROR_BUSY&#160;</td><td class="fielddoc"><p>Tried to input while busy. </p>
 </td></tr>
 </table>
 

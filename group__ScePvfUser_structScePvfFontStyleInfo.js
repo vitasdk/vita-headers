@@ -10,6 +10,6 @@ var group__ScePvfUser_structScePvfFontStyleInfo =
     [ "regionCode", "group__ScePvfUser.html#gaf3d293216a3feb58e253c62ef3c63485", null ],
     [ "style", "group__ScePvfUser.html#ga02aceef205d6dad9161ac52db4996ee6", null ],
     [ "styleName", "group__ScePvfUser.html#ga9eced9bdaa4cc57bf1bc13274279c64f", null ],
-    [ "subStyle", "group__ScePvfUser.html#ga4c84f139d3f39e5abf143a79cfa58aa1", null ],
+    [ "subStyle", "group__ScePvfUser.html#ga7163152176695df060ecdba22cef9c8b", null ],
     [ "weight", "group__ScePvfUser.html#ga7135cdb01acb71d4e6f3cd992178d26a", null ]
 ];

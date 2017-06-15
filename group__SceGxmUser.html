@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('group__SceGxmUser.html','');});
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">User<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceGxm.html">GPU Graphics Library</a></div></div>  </div>
 </div><!--header-->
@@ -319,7 +320,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmPadHeartbeat</b>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmPadTriggerGpuPaTrace</b> ()</td></tr>
 <tr class="separator:ga013e71dc0370023b351716cae431753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2a6171a70d67a68649e12ddbd81124c"><td class="memItemLeft" align="right" valign="top"><a id="gae2a6171a70d67a68649e12ddbd81124c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceInit</b> (<a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface, SceGxmColorFormat colorFormat, SceGxmColorSurfaceType surfaceType, SceGxmColorSurfaceScaleMode scaleMode, SceGxmOutputRegisterSize outputRegisterSize, unsigned int width, unsigned int height, unsigned int strideInPixels, void *data)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceInit</b> (<a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface, <a class="el" href="group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3">SceGxmColorFormat</a> colorFormat, SceGxmColorSurfaceType surfaceType, SceGxmColorSurfaceScaleMode scaleMode, SceGxmOutputRegisterSize outputRegisterSize, unsigned int width, unsigned int height, unsigned int strideInPixels, void *data)</td></tr>
 <tr class="separator:gae2a6171a70d67a68649e12ddbd81124c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad273bb77a2026f24867df268c98cd97"><td class="memItemLeft" align="right" valign="top"><a id="gaad273bb77a2026f24867df268c98cd97"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceInitDisabled</b> (<a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface)</td></tr>
@@ -346,10 +347,10 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceG
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceSetData</b> (<a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface, void *data)</td></tr>
 <tr class="separator:ga3f28eac40c16ea73ed238a75201e9b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa6e910bcd475bac0bdbffa5aa52b821c"><td class="memItemLeft" align="right" valign="top"><a id="gaa6e910bcd475bac0bdbffa5aa52b821c"></a>
-SceGxmColorFormat&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceGetFormat</b> (const <a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface)</td></tr>
+<a class="el" href="group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3">SceGxmColorFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceGetFormat</b> (const <a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface)</td></tr>
 <tr class="separator:gaa6e910bcd475bac0bdbffa5aa52b821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1802ba7a1f549db5a2729eefd092ae8"><td class="memItemLeft" align="right" valign="top"><a id="gab1802ba7a1f549db5a2729eefd092ae8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceSetFormat</b> (<a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface, SceGxmColorFormat format)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceSetFormat</b> (<a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface, <a class="el" href="group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3">SceGxmColorFormat</a> format)</td></tr>
 <tr class="separator:gab1802ba7a1f549db5a2729eefd092ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga796ca133e397729f6543aa33cd80bf73"><td class="memItemLeft" align="right" valign="top"><a id="ga796ca133e397729f6543aa33cd80bf73"></a>
 SceGxmColorSurfaceType&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmColorSurfaceGetType</b> (const <a class="el" href="group__SceGxmUser.html#structSceGxmColorSurface">SceGxmColorSurface</a> *surface)</td></tr>
@@ -783,6 +784,66 @@ typedef void *(&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmShad
 <tr class="memitem:ga9683ab244b38b8bcb1865d0ee986662d"><td class="memItemLeft" align="right" valign="top"><a id="ga9683ab244b38b8bcb1865d0ee986662d"></a>
 typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmShaderPatcherUsseFreeCallback</b>) (void *userData, void *mem)</td></tr>
 <tr class="separator:ga9683ab244b38b8bcb1865d0ee986662d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga43da350f68dc480b9111a1265ac0e102"><td class="memItemLeft" align="right" valign="top"><a id="ga43da350f68dc480b9111a1265ac0e102"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_MINIMUM_CONTEXT_HOST_MEM_SIZE</b>&#160;&#160;&#160;(2 * 1024)</td></tr>
+<tr class="separator:ga43da350f68dc480b9111a1265ac0e102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae240038779d359a51b7f5f47b63f8b3f"><td class="memItemLeft" align="right" valign="top"><a id="gae240038779d359a51b7f5f47b63f8b3f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_DEFAULT_PARAMETER_BUFFER_SIZE</b>&#160;&#160;&#160;(16 * 1024 * 1024)</td></tr>
+<tr class="separator:gae240038779d359a51b7f5f47b63f8b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga656ee35f47c90ae9fad2368e78a3b2a7"><td class="memItemLeft" align="right" valign="top"><a id="ga656ee35f47c90ae9fad2368e78a3b2a7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_DEFAULT_VDM_RING_BUFFER_SIZE</b>&#160;&#160;&#160;(128 * 1024)</td></tr>
+<tr class="separator:ga656ee35f47c90ae9fad2368e78a3b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6481041dc5082d641946e6b41000111"><td class="memItemLeft" align="right" valign="top"><a id="gae6481041dc5082d641946e6b41000111"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_DEFAULT_VERTEX_RING_BUFFER_SIZE</b>&#160;&#160;&#160;(2 * 1024 * 1024)</td></tr>
+<tr class="separator:gae6481041dc5082d641946e6b41000111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5258c50eb1b4478bfe8011d6030c5fdc"><td class="memItemLeft" align="right" valign="top"><a id="ga5258c50eb1b4478bfe8011d6030c5fdc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_DEFAULT_FRAGMENT_RING_BUFFER_SIZE</b>&#160;&#160;&#160;(512 * 1024)</td></tr>
+<tr class="separator:ga5258c50eb1b4478bfe8011d6030c5fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1349947d1cba28c4bd23c1133b2598c8"><td class="memItemLeft" align="right" valign="top"><a id="ga1349947d1cba28c4bd23c1133b2598c8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_DEFAULT_FRAGMENT_USSE_RING_BUFFER_SIZE</b>&#160;&#160;&#160;(16 * 1024)</td></tr>
+<tr class="separator:ga1349947d1cba28c4bd23c1133b2598c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a77bcff7ecdf324a832ddfac8fd0ba6"><td class="memItemLeft" align="right" valign="top"><a id="ga2a77bcff7ecdf324a832ddfac8fd0ba6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_MAX_VERTEX_ATTRIBUTES</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga2a77bcff7ecdf324a832ddfac8fd0ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad95035ecaff8324514e9e1dcbd541783"><td class="memItemLeft" align="right" valign="top"><a id="gad95035ecaff8324514e9e1dcbd541783"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_MAX_VERTEX_STREAMS</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:gad95035ecaff8324514e9e1dcbd541783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab46ca1254a5ba4b105b2018b09b5a7cc"><td class="memItemLeft" align="right" valign="top"><a id="gab46ca1254a5ba4b105b2018b09b5a7cc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_MAX_TEXTURE_UNITS</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:gab46ca1254a5ba4b105b2018b09b5a7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6c01c40eb9cc1d9ca13b9ea747e6996"><td class="memItemLeft" align="right" valign="top"><a id="gac6c01c40eb9cc1d9ca13b9ea747e6996"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_MAX_UNIFORM_BUFFERS</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:gac6c01c40eb9cc1d9ca13b9ea747e6996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga779136ff27a7753151298f2335a03fb1"><td class="memItemLeft" align="right" valign="top"><a id="ga779136ff27a7753151298f2335a03fb1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_MAX_AUXILIARY_SURFACES</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga779136ff27a7753151298f2335a03fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac83332b79af909ad2b2e57c705bb18e"><td class="memItemLeft" align="right" valign="top"><a id="gaac83332b79af909ad2b2e57c705bb18e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_TILE_SHIFTX</b>&#160;&#160;&#160;5U</td></tr>
+<tr class="separator:gaac83332b79af909ad2b2e57c705bb18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6b0c28870b2b6dd2e585e82bb103d47"><td class="memItemLeft" align="right" valign="top"><a id="gae6b0c28870b2b6dd2e585e82bb103d47"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_TILE_SHIFTY</b>&#160;&#160;&#160;5U</td></tr>
+<tr class="separator:gae6b0c28870b2b6dd2e585e82bb103d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac037f7056a1cb3e040d279c85709443b"><td class="memItemLeft" align="right" valign="top"><a id="gac037f7056a1cb3e040d279c85709443b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_TILE_SIZEX</b>&#160;&#160;&#160;(1U &lt;&lt; SCE_GXM_TILE_SHIFTX)</td></tr>
+<tr class="separator:gac037f7056a1cb3e040d279c85709443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98a5fcea8977bf71c14987ea02ad36d6"><td class="memItemLeft" align="right" valign="top"><a id="ga98a5fcea8977bf71c14987ea02ad36d6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_TILE_SIZEY</b>&#160;&#160;&#160;(1U &lt;&lt; SCE_GXM_TILE_SHIFTY)</td></tr>
+<tr class="separator:ga98a5fcea8977bf71c14987ea02ad36d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a1376d9d0e088695a0ec3109f899dd9"><td class="memItemLeft" align="right" valign="top"><a id="ga3a1376d9d0e088695a0ec3109f899dd9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_COLOR_SURFACE_ALIGNMENT</b>&#160;&#160;&#160;4U</td></tr>
+<tr class="separator:ga3a1376d9d0e088695a0ec3109f899dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3acba5462774e58394ebd814d665aafc"><td class="memItemLeft" align="right" valign="top"><a id="ga3acba5462774e58394ebd814d665aafc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_TEXTURE_ALIGNMENT</b>&#160;&#160;&#160;16U</td></tr>
+<tr class="separator:ga3acba5462774e58394ebd814d665aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacdca6d670adb7d863927656aea91ff0"><td class="memItemLeft" align="right" valign="top"><a id="gaacdca6d670adb7d863927656aea91ff0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_DEPTHSTENCIL_SURFACE_ALIGNMENT</b>&#160;&#160;&#160;16U</td></tr>
+<tr class="separator:gaacdca6d670adb7d863927656aea91ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a0896d4e4e8fca31256c5a0f162d4cf"><td class="memItemLeft" align="right" valign="top"><a id="ga6a0896d4e4e8fca31256c5a0f162d4cf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_GXM_PALETTE_ALIGNMENT</b>&#160;&#160;&#160;64U</td></tr>
+<tr class="separator:ga6a0896d4e4e8fca31256c5a0f162d4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceGxmInitializeParams" id="structSceGxmInitializeParams"></a>
@@ -1497,7 +1558,7 @@ The uncached LPDDR memblock for the render target GPU data structures or SCE_UID
 <td class="fieldname">
 flags</td>
 <td class="fielddoc">
-Bitwise combined flags from #SceGxmRenderTargetFlags. </td></tr>
+Bitwise combined flags from ::SceGxmRenderTargetFlags. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga89cac9234de02e899a0954c87d9cd6ba"></a>uint16_t</td>
 <td class="fieldname">
@@ -1521,7 +1582,7 @@ A value from the #SceGxmMultisampleMode enum. </td></tr>
 <td class="fieldname">
 scenesPerFrame</td>
 <td class="fielddoc">
-The expected number of scenes per frame, in the range [1,#SCE_GXM_MAX_SCENES_PER_RENDERTARGET]. </td></tr>
+The expected number of scenes per frame, in the range [1,SCE_GXM_MAX_SCENES_PER_RENDERTARGET]. </td></tr>
 <tr><td class="fieldtype">
 <a id="gab5684ffc402f806883fcdd6abc815b42"></a>uint16_t</td>
 <td class="fieldname">

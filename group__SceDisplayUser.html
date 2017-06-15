@@ -82,8 +82,7 @@ $(document).ready(function(){initNavTree('group__SceDisplayUser.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">User<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceDisplay.html">Display Library</a></div></div>  </div>
 </div><!--header-->
@@ -96,12 +95,12 @@ $(document).ready(function(){initNavTree('group__SceDisplayUser.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga064aa2a62fc1b55f67f21c4af0c31a8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga064aa2a62fc1b55f67f21c4af0c31a8c">sceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
-<tr class="memdesc:ga064aa2a62fc1b55f67f21c4af0c31a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Update framebuffer parameters.  <a href="#ga064aa2a62fc1b55f67f21c4af0c31a8c">More...</a><br /></td></tr>
-<tr class="separator:ga064aa2a62fc1b55f67f21c4af0c31a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6f2cec6a63415b3198cd77f28620076"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gad6f2cec6a63415b3198cd77f28620076">sceDisplayGetFrameBuf</a> (<a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
-<tr class="memdesc:gad6f2cec6a63415b3198cd77f28620076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer parameters.  <a href="#gad6f2cec6a63415b3198cd77f28620076">More...</a><br /></td></tr>
-<tr class="separator:gad6f2cec6a63415b3198cd77f28620076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5b985953c60c63c1981bf4ea5ce717f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f">sceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a> sync)</td></tr>
+<tr class="memdesc:gad5b985953c60c63c1981bf4ea5ce717f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Update framebuffer parameters.  <a href="#gad5b985953c60c63c1981bf4ea5ce717f">More...</a><br /></td></tr>
+<tr class="separator:gad5b985953c60c63c1981bf4ea5ce717f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf833a23b956140624e23129be886b8be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be">sceDisplayGetFrameBuf</a> (<a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a> sync)</td></tr>
+<tr class="memdesc:gaf833a23b956140624e23129be886b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer parameters.  <a href="#gaf833a23b956140624e23129be886b8be">More...</a><br /></td></tr>
+<tr class="separator:gaf833a23b956140624e23129be886b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08eff4b36dd9ecab705260100edcf919"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga08eff4b36dd9ecab705260100edcf919">sceDisplayGetRefreshRate</a> (float *pFps)</td></tr>
 <tr class="memdesc:ga08eff4b36dd9ecab705260100edcf919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current number of fps for the current screen mode.  <a href="#ga08eff4b36dd9ecab705260100edcf919">More...</a><br /></td></tr>
 <tr class="separator:ga08eff4b36dd9ecab705260100edcf919"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,12 +142,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a">sceDisplayUnregisterVblankStartCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="memdesc:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback used at each vertical blank start.  <a href="#ga86f33274ad8c58dabe53ec4ec5e7f20a">More...</a><br /></td></tr>
 <tr class="separator:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"><td class="memItemLeft" align="right" valign="top"><a id="ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8</b>&#160;&#160;&#160;0x00000000U</td></tr>
-<tr class="separator:ga3d1fbcdddf4eb625dfd1b8e0bad4cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceDisplayFrameBuf" id="structSceDisplayFrameBuf"></a>
@@ -162,7 +155,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Structure used with sceDisplaySetFrameBuf to set/update framebuffer. </p>
+<div class="textblock"><p>Structure used with <a class="el" href="group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f" title="Set/Update framebuffer parameters. ">sceDisplaySetFrameBuf</a> to set/update framebuffer. </p>
+<p>Structure used with sceDisplaySetFrameBuf to set/update framebuffer.</p>
+<p>Original screen resolution is 960x544, but the following resolutions can also be supplied as width and height : 480x272, 640x368, 720x408</p>
+<dl class="section note"><dt>Note</dt><dd>- This structure is returned by <a class="el" href="group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be" title="Get current framebuffer parameters. ">sceDisplayGetFrameBuf</a></dd></dl>
 <p>Original screen resolution is 960x544, but the following resolutions can also be supplied as width and height : 480x272, 640x368, 720x408</p>
 <dl class="section note"><dt>Note</dt><dd>- This structure is returned by sceDisplayGetFrameBuf </dd></dl>
 </div><table class="fieldtable">
@@ -190,7 +186,8 @@ pitch pixels </td></tr>
 <td class="fieldname">
 pixelformat</td>
 <td class="fielddoc">
-use SCE_DISPLAY_PIXELFORMAT_A8B8G8R8 </td></tr>
+pixel format (one of ::SceDisplayPixelFormat) <p>use SCE_DISPLAY_PIXELFORMAT_A8B8G8R8 </p>
+</td></tr>
 <tr><td class="fieldtype">
 <a id="ga4818747e9c93ab650824cd4c484506df"></a>SceSize</td>
 <td class="fieldname">
@@ -208,29 +205,29 @@ framebuffer width </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga7ff5f2dff38e7639981794c43dc9167b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ff5f2dff38e7639981794c43dc9167b">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga1cccbd19bead1c902688ec8409ff0c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cccbd19bead1c902688ec8409ff0c55">&sect;&nbsp;</a></span>SceDisplaySetBufSync</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7ff5f2dff38e7639981794c43dc9167baed1ba9da79d96bef5d2c401d271ed016"></a>SCE_DISPLAY_SETBUF_IMMEDIATE&#160;</td><td class="fielddoc"><p>Buffer change effective immediately. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016"></a>SCE_DISPLAY_SETBUF_IMMEDIATE&#160;</td><td class="fielddoc"><p>Buffer change effective immediately. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga7ff5f2dff38e7639981794c43dc9167ba942be0a40abb1c6466d4583f2cefa98c"></a>SCE_DISPLAY_SETBUF_NEXTFRAME&#160;</td><td class="fielddoc"><p>Buffer change effective next frame. </p>
+<tr><td class="fieldname"><a id="gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c"></a>SCE_DISPLAY_SETBUF_NEXTFRAME&#160;</td><td class="fielddoc"><p>Buffer change effective next frame. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad6f2cec6a63415b3198cd77f28620076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad6f2cec6a63415b3198cd77f28620076">&sect;&nbsp;</a></span>sceDisplayGetFrameBuf()</h2>
+<a id="gaf833a23b956140624e23129be886b8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf833a23b956140624e23129be886b8be">&sect;&nbsp;</a></span>sceDisplayGetFrameBuf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +241,7 @@ framebuffer width </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
           <td class="paramname"><em>sync</em>&#160;</td>
         </tr>
         <tr>
@@ -259,7 +256,7 @@ framebuffer width </td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer. ">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -321,8 +318,8 @@ framebuffer width </td></tr>
 
 </div>
 </div>
-<a id="ga064aa2a62fc1b55f67f21c4af0c31a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga064aa2a62fc1b55f67f21c4af0c31a8c">&sect;&nbsp;</a></span>sceDisplaySetFrameBuf()</h2>
+<a id="gad5b985953c60c63c1981bf4ea5ce717f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5b985953c60c63c1981bf4ea5ce717f">&sect;&nbsp;</a></span>sceDisplaySetFrameBuf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +333,7 @@ framebuffer width </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
           <td class="paramname"><em>sync</em>&#160;</td>
         </tr>
         <tr>
@@ -351,7 +348,7 @@ framebuffer width </td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer. ">SceDisplayFrameBuf</a> structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>

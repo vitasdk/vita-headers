@@ -2,12 +2,7 @@ var group__SceLocationUser =
 [
     [ "SceLocationHandle", "group__SceLocationUser.html#ga46a55d856edecaa6a7a3376365276be0", null ],
     [ "SceLocationHeadingInfoCallback", "group__SceLocationUser.html#gaf379391927de99daef6f95dffb73f226", null ],
-    [ "SceLocationLocationInfoCallback", "group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2", [
-      [ "SCE_TOUCH_MAX_REPORT", "group__SceTouchUser.html#ggadbaf9202177df73e6880eab6e6aab329aa3e4b337c895c44be3754e0e532a96fb", null ],
-      [ "SCE_TOUCH_PORT_FRONT", "group__SceTouchUser.html#gga7495a48740c9d555f7fbcb48246dbd93a0d2580e55567d3c921b1031a4684f6a7", null ],
-      [ "SCE_TOUCH_PORT_BACK", "group__SceTouchUser.html#gga7495a48740c9d555f7fbcb48246dbd93a2e861439acd3722f5c25f1a13e0b8758", null ],
-      [ "SCE_TOUCH_PORT_MAX_NUM", "group__SceTouchUser.html#gga7495a48740c9d555f7fbcb48246dbd93a60ab295a1586005154cf1c5bb888336f", null ]
-    ] ],
+    [ "SceLocationLocationInfoCallback", "group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2", null ],
     [ "SceLocationDialogResult", "group__SceLocationUser.html#gacd49038cc21f91a3d337af5d14f17d00", [
       [ "SCE_LOCATION_DIALOG_RESULT_NONE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00ac1d4cf0db1c00e9a61f08c550f1822c6", null ],
       [ "SCE_LOCATION_DIALOG_RESULT_DISABLE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a2a19317a8dc0eb7196ad0fe82ba910da", null ],
@@ -18,6 +13,7 @@ var group__SceLocationUser =
       [ "SCE_LOCATION_DIALOG_STATUS_RUNNING", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b", null ],
       [ "SCE_LOCATION_DIALOG_STATUS_FINISHED", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001ae07806ef76fbf1f702da4f26724ebcb1", null ]
     ] ],
+    [ "SceLocationErrorCode", "group__SceLocationUser.html#gaddf7a2c21ea1e16531aab2a10ba01038", null ],
     [ "SceLocationHeadingMethod", "group__SceLocationUser.html#gafb8512aad9366c1c282da8218df682b6", [
       [ "SCE_LOCATION_HMETHOD_NONE", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a93f38ff16e3eb125437ecb1b3efcc6c9", null ],
       [ "SCE_LOCATION_HMETHOD_AUTO", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a820912380d4f5a2232eed224b652bab4", null ],

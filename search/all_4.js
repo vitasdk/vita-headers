@@ -10,6 +10,7 @@ var searchData=
   ['datasize',['dataSize',['../group__SceGxtUser.html#gad9df8107b083fc5096884b245c7fcfa1',1,'SceGxtHeader::dataSize()'],['../group__SceGxtUser.html#ga505cfef5dc50e1dc1737400ec21b7488',1,'SceGxtTextureInfo::dataSize()']]],
   ['detail',['detail',['../group__SceAppUtilUser.html#ga414bb4cf053496ac6b97fed47af719de',1,'SceAppUtilSaveDataSlotParam']]],
   ['dialog',['Dialog',['../group__Dialog.html',1,'']]],
+  ['dialogmode',['dialogMode',['../group__SceImeUser.html#ga6b8bd8d09fe7912aa1d78450ea8cd314',1,'SceImeDialogParam']]],
   ['direction',['direction',['../group__SceLocationUser.html#gaeecc7aa4df7eeba837f21cd636b54a61',1,'SceLocationLocationInfo']]],
   ['drivermemblock',['driverMemBlock',['../group__SceGxmUser.html#ga41939c7d27a460b8f47d514c6d575cc7',1,'SceGxmRenderTargetParams']]],
   ['device_20control_20library',['Device Control Library',['../group__SceDevCtl.html',1,'']]],

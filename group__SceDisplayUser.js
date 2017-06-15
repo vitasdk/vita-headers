@@ -1,12 +1,16 @@
 var group__SceDisplayUser =
 [
-    [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167baed1ba9da79d96bef5d2c401d271ed016", null ],
-    [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga7ff5f2dff38e7639981794c43dc9167ba942be0a40abb1c6466d4583f2cefa98c", null ],
-    [ "sceDisplayGetFrameBuf", "group__SceDisplayUser.html#gad6f2cec6a63415b3198cd77f28620076", null ],
+    [ "SceDisplaySetBufSync", "group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55", [
+      [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016", null ],
+      [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c", null ]
+    ] ],
+    [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayUser.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016", null ],
+    [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayUser.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c", null ],
+    [ "sceDisplayGetFrameBuf", "group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be", null ],
     [ "sceDisplayGetRefreshRate", "group__SceDisplayUser.html#ga08eff4b36dd9ecab705260100edcf919", null ],
     [ "sceDisplayGetVcount", "group__SceDisplayUser.html#ga5890d97145fdad4c46cf94469e80ce2a", null ],
     [ "sceDisplayRegisterVblankStartCallback", "group__SceDisplayUser.html#gadc0e756f9b27e8e14ce748e9fbec14d6", null ],
-    [ "sceDisplaySetFrameBuf", "group__SceDisplayUser.html#ga064aa2a62fc1b55f67f21c4af0c31a8c", null ],
+    [ "sceDisplaySetFrameBuf", "group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f", null ],
     [ "sceDisplayUnregisterVblankStartCallback", "group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a", null ],
     [ "sceDisplayWaitSetFrameBuf", "group__SceDisplayUser.html#gad325c49f33859c1ea8a4a64642cffb44", null ],
     [ "sceDisplayWaitSetFrameBufCB", "group__SceDisplayUser.html#ga65a0c4b9e01c2359b7b05d75ba29bbdc", null ],

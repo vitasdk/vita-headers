@@ -1,10 +1,17 @@
 var group__SceAppMgrUser =
 [
-    [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983", null ],
-    [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082", null ],
-    [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290", null ],
-    [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38", null ],
-    [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d", null ],
+    [ "SceAppMgrErrorCode", "group__SceAppMgrUser.html#ga771df8407677ccb8145733c989f0903d", [
+      [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983", null ],
+      [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
+      [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da3e88f785f699bd45efd239ed2b4f4e38", null ],
+      [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dac704cf756ac0c7fc05aa0d20bf5d7082", null ],
+      [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903daf867515f2ab516d22bed1df741e1a290", null ]
+    ] ],
+    [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983", null ],
+    [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dac704cf756ac0c7fc05aa0d20bf5d7082", null ],
+    [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903daf867515f2ab516d22bed1df741e1a290", null ],
+    [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da3e88f785f699bd45efd239ed2b4f4e38", null ],
+    [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
     [ "sceAppMgrAcquireBgmPort", "group__SceAppMgrUser.html#ga4128e9d22cadd7263e8bd9364e01f846", null ],
     [ "sceAppMgrAppDataMount", "group__SceAppMgrUser.html#ga9db93ab9560007190a344444baca0bd0", null ],
     [ "sceAppMgrAppDataMountById", "group__SceAppMgrUser.html#gabec071a8f0ed2f1cc4def5c33454c92c", null ],
@@ -19,7 +26,7 @@ var group__SceAppMgrUser =
     [ "sceAppMgrPspSaveDataRootMount", "group__SceAppMgrUser.html#gaa7fb2782fd6ae0fb436ccf904cbb40b0", null ],
     [ "sceAppMgrReceiveSystemEvent", "group__SceAppMgrUser.html#gaeaa4505d7d38aa901fd7786c34467fb7", null ],
     [ "sceAppMgrReleaseBgmPort", "group__SceAppMgrUser.html#ga57e55396a9cc33ab9dc5f2a5bf566315", null ],
-    [ "sceAppMgrSetInfobarState", "group__SceAppMgrUser.html#ga703fd52e350cf06140a391cb9ac66a10", null ],
+    [ "sceAppMgrSetInfobarState", "group__SceAppMgrUser.html#ga780c093d4d4cb329f6a669018243955b", null ],
     [ "sceAppMgrUmount", "group__SceAppMgrUser.html#gae0445d2b1486eae77b3195a7141f7313", null ],
     [ "sceAppMgrWorkDirMount", "group__SceAppMgrUser.html#gac33520d95199dd67f692a74df95054d7", null ],
     [ "sceAppMgrWorkDirMountById", "group__SceAppMgrUser.html#ga13a59ab923a2dcfd7f7080f1754223f1", null ]

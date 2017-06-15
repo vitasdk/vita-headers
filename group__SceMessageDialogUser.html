@@ -83,7 +83,7 @@ $(document).ready(function(){initNavTree('group__SceMessageDialogUser.html','');
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">User<div class="ingroups"><a class="el" href="group__Dialog.html">Dialog</a> &raquo; <a class="el" href="group__SceMessageDialog.html">Message Dialog Library</a></div></div>  </div>
 </div><!--header-->
@@ -124,29 +124,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogProgressBa
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogProgressBarSetMsg</b> (SceMsgDialogProgressBarTarget target, const SceChar8 *barMsg)</td></tr>
 <tr class="separator:gad8d55afceb7185ed6bc55ddfea3f3d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga0efb7f9d73c1f726d5780df167083ce2"><td class="memItemLeft" align="right" valign="top"><a id="ga0efb7f9d73c1f726d5780df167083ce2"></a>
-typedef SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogMode</b></td></tr>
-<tr class="separator:ga0efb7f9d73c1f726d5780df167083ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga755ea9970bbedab3325d83c17cb5f65a"><td class="memItemLeft" align="right" valign="top"><a id="ga755ea9970bbedab3325d83c17cb5f65a"></a>
-typedef SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogSystemMessageType</b></td></tr>
-<tr class="separator:ga755ea9970bbedab3325d83c17cb5f65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24aaf0711c277d48d0dfba1d8c374ee3"><td class="memItemLeft" align="right" valign="top"><a id="ga24aaf0711c277d48d0dfba1d8c374ee3"></a>
-typedef SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogButtonType</b></td></tr>
-<tr class="separator:ga24aaf0711c277d48d0dfba1d8c374ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e7450c628284d2273c033eddc8f12c8"><td class="memItemLeft" align="right" valign="top"><a id="ga5e7450c628284d2273c033eddc8f12c8"></a>
-typedef SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogButtonId</b></td></tr>
-<tr class="separator:ga5e7450c628284d2273c033eddc8f12c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea6fea65c0b51e502eec42dfc8740adc"><td class="memItemLeft" align="right" valign="top"><a id="gaea6fea65c0b51e502eec42dfc8740adc"></a>
-typedef SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogProgressBarType</b></td></tr>
-<tr class="separator:gaea6fea65c0b51e502eec42dfc8740adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa0a54847d2cc556c4251514708aba59"><td class="memItemLeft" align="right" valign="top"><a id="gaaa0a54847d2cc556c4251514708aba59"></a>
-typedef SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogProgressBarTarget</b></td></tr>
-<tr class="separator:gaaa0a54847d2cc556c4251514708aba59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c8268f3d16da968fa647c95bad898f8"><td class="memItemLeft" align="right" valign="top"><a id="ga1c8268f3d16da968fa647c95bad898f8"></a>
-typedef SceUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDialogEnvFlag</b></td></tr>
-<tr class="separator:ga1c8268f3d16da968fa647c95bad898f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaccbe96d1159d666e39a72bc036cda5ea"><td class="memItemLeft" align="right" valign="top"><a id="gaccbe96d1159d666e39a72bc036cda5ea"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMessageDialogUser.html#gaccbe96d1159d666e39a72bc036cda5ea">SCE_MSG_DIALOG_USER_MSG_SIZE</a>&#160;&#160;&#160;512</td></tr>
+<tr class="memdesc:gaccbe96d1159d666e39a72bc036cda5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max length of a user message. <br /></td></tr>
+<tr class="separator:gaccbe96d1159d666e39a72bc036cda5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceMsgDialogUserMessageParam" id="structSceMsgDialogUserMessageParam"></a>
@@ -165,21 +148,21 @@ typedef SceUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>SceMsgDi
 <tr><td class="fieldtype">
 <a id="gabfd248e6d828a56d8b99c0f440cb68fc"></a>SceMsgDialogButtonType</td>
 <td class="fieldname">
-buttonType</td>
+buttonType: 32</td>
 <td class="fielddoc">
-</td></tr>
+Type of button set. </td></tr>
 <tr><td class="fieldtype">
 <a id="gae472754423a8b707fbd4854208684626"></a>const SceChar8 *</td>
 <td class="fieldname">
 msg</td>
 <td class="fielddoc">
-</td></tr>
+Displayed message. </td></tr>
 <tr><td class="fieldtype">
 <a id="gada0d0da50bcdc2723ef089c23a6635c9"></a>SceChar8</td>
 <td class="fieldname">
 reserved[32]</td>
 <td class="fielddoc">
-</td></tr>
+Reserved range. </td></tr>
 </table>
 
 </div>
@@ -202,19 +185,19 @@ reserved[32]</td>
 <td class="fieldname">
 reserved[32]</td>
 <td class="fielddoc">
-</td></tr>
+Reserved range. </td></tr>
 <tr><td class="fieldtype">
-<a id="gafdcacd3a2f4ec671a4767081ae7627e1"></a>SceMsgDialogSystemMessageType</td>
+<a id="gafdcacd3a2f4ec671a4767081ae7627e1"></a><a class="el" href="group__SceMessageDialogUser.html#ga94102d21b8d9b9ceec5f24c9e9d96556">SceMsgDialogSystemMessageType</a></td>
 <td class="fieldname">
-sysMsgType</td>
+sysMsgType: 32</td>
 <td class="fielddoc">
-</td></tr>
+System message type. </td></tr>
 <tr><td class="fieldtype">
 <a id="gadf361aebb694402f18780b01a45fa191"></a>SceInt32</td>
 <td class="fieldname">
 value</td>
 <td class="fielddoc">
-</td></tr>
+Additional value. </td></tr>
 </table>
 
 </div>
@@ -233,17 +216,17 @@ value</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga837f3b691740ff458efaa49543ff1391"></a>SceInt32</td>
+<a id="gae062781933b864ea655144530a86e435"></a>SceInt32</td>
 <td class="fieldname">
-errorCode</td>
+ErrorCode</td>
 <td class="fielddoc">
-</td></tr>
+Displayed error code. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaedc85330c71e3d1b475e0bbe8e6e2d72"></a>SceChar8</td>
 <td class="fieldname">
 reserved[32]</td>
 <td class="fielddoc">
-</td></tr>
+Reserved range. </td></tr>
 </table>
 
 </div>
@@ -264,27 +247,27 @@ reserved[32]</td>
 <tr><td class="fieldtype">
 <a id="ga273261364518f66aa2df0129e4f631d4"></a>SceMsgDialogProgressBarType</td>
 <td class="fieldname">
-barType</td>
+barType: 32</td>
 <td class="fielddoc">
-</td></tr>
+Progress bar type. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga8b017da880c14e9a58ff3cbb0fc541a9"></a>const SceChar8 *</td>
 <td class="fieldname">
 msg</td>
 <td class="fielddoc">
-</td></tr>
+Displayed user message. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga4a714ef21d4c10f52d6ea37c4e23891b"></a>SceInt32</td>
+<a id="ga7cd953bf6f8ebc0bf37ff572de702060"></a>SceInt32</td>
 <td class="fieldname">
-reserved[32/4]</td>
+reserved[8]</td>
 <td class="fielddoc">
-</td></tr>
+Reserved range. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga2773e650c3b3a470e86423dca252fb10"></a><a class="el" href="group__SceMessageDialogUser.html#structSceMsgDialogSystemMessageParam">SceMsgDialogSystemMessageParam</a></td>
 <td class="fieldname">
 sysMsgParam</td>
 <td class="fielddoc">
-</td></tr>
+Displayed system message. </td></tr>
 </table>
 
 </div>
@@ -307,55 +290,55 @@ sysMsgParam</td>
 <td class="fieldname">
 commonParam</td>
 <td class="fielddoc">
-</td></tr>
+Common parameter. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaae1bfe4b3a3cbec5d8c7e6aef1cc1a0c"></a><a class="el" href="group__SceMessageDialogUser.html#structSceMsgDialogErrorCodeParam">SceMsgDialogErrorCodeParam</a> *</td>
 <td class="fieldname">
 errorCodeParam</td>
 <td class="fielddoc">
-</td></tr>
+Parameter for display error code. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaa88503ffe10d2cf54db7b5b5b59f3fb0"></a>SceMsgDialogEnvFlag</td>
 <td class="fieldname">
-flag</td>
+flag: 32</td>
 <td class="fielddoc">
-</td></tr>
+Settings for dialog environment. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga7071fb784b835bbec25501b20673cb29"></a>SceMsgDialogMode</td>
 <td class="fieldname">
-mode</td>
+mode: 32</td>
 <td class="fielddoc">
-</td></tr>
+Mode of function. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaaebe622651f725bfdab05b062e942b3e"></a><a class="el" href="group__SceMessageDialogUser.html#structSceMsgDialogProgressBarParam">SceMsgDialogProgressBarParam</a> *</td>
 <td class="fieldname">
 progBarParam</td>
 <td class="fielddoc">
-</td></tr>
+Parameter for progress bar. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga6fb6076c8f8753d4478a783ba4012daa"></a>SceChar8</td>
 <td class="fieldname">
 reserved[32]</td>
 <td class="fielddoc">
-</td></tr>
+Reserved range. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga830272687720291c409360288a5db670"></a>SceUInt32</td>
 <td class="fieldname">
 sdkVersion</td>
 <td class="fielddoc">
-</td></tr>
+Required to use MsgDialog. Just use NULL. </td></tr>
 <tr><td class="fieldtype">
 <a id="gac38e26368ccecba2140d849521441850"></a><a class="el" href="group__SceMessageDialogUser.html#structSceMsgDialogSystemMessageParam">SceMsgDialogSystemMessageParam</a> *</td>
 <td class="fieldname">
 sysMsgParam</td>
 <td class="fielddoc">
-</td></tr>
+Parameter for system prepared message. </td></tr>
 <tr><td class="fieldtype">
 <a id="gacec3853d564aa3bf9d50863c8c413b58"></a><a class="el" href="group__SceMessageDialogUser.html#structSceMsgDialogUserMessageParam">SceMsgDialogUserMessageParam</a> *</td>
 <td class="fieldname">
 userMsgParam</td>
 <td class="fielddoc">
-</td></tr>
+Parameter for user message. </td></tr>
 </table>
 
 </div>
@@ -376,101 +359,83 @@ userMsgParam</td>
 <tr><td class="fieldtype">
 <a id="gae0d666e490ddcd93027de4f3d80ed75a"></a>SceMsgDialogButtonId</td>
 <td class="fieldname">
-buttonId</td>
+buttonId: 32</td>
 <td class="fielddoc">
-</td></tr>
+Id of button user selected. </td></tr>
 <tr><td class="fieldtype">
 <a id="gad063b892c1d17e6157c9ab11caef7ba2"></a>SceMsgDialogMode</td>
 <td class="fieldname">
-mode</td>
+mode: 32</td>
 <td class="fielddoc">
-</td></tr>
+Mode of function. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga383162cd44f562cf469c40aa5e141801"></a>SceChar8</td>
 <td class="fieldname">
 reserved[32]</td>
 <td class="fielddoc">
-</td></tr>
+Reserved range. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga465eead5f05903c9f210b3f8db346eee"></a>SceInt32</td>
 <td class="fieldname">
 result</td>
 <td class="fielddoc">
-</td></tr>
+Result of executing function. </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gaf3520ff6d43011872bab77edd27d4de3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf3520ff6d43011872bab77edd27d4de3">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga4e98cd87a9a8ee1842a0bf760ab1ce84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e98cd87a9a8ee1842a0bf760ab1ce84">&sect;&nbsp;</a></span>SceMsgDialogErrorCode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceMessageDialogUser.html#ga4e98cd87a9a8ee1842a0bf760ab1ce84">SceMsgDialogErrorCode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf3520ff6d43011872bab77edd27d4de3a88da922f1bdb66c7237800d6dfc21049"></a>SCE_MSG_DIALOG_ERROR_PARAM&#160;</td><td class="fielddoc"><p>Illegal parameter. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e98cd87a9a8ee1842a0bf760ab1ce84a88da922f1bdb66c7237800d6dfc21049"></a>SCE_MSG_DIALOG_ERROR_PARAM&#160;</td><td class="fielddoc"><p>Illegal parameter. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="gae8a3b6a5d0d3244ed73924ab2421a0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae8a3b6a5d0d3244ed73924ab2421a0d0">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga94102d21b8d9b9ceec5f24c9e9d96556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94102d21b8d9b9ceec5f24c9e9d96556">&sect;&nbsp;</a></span>SceMsgDialogSystemMessageType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__SceMessageDialogUser.html#ga94102d21b8d9b9ceec5f24c9e9d96556">SceMsgDialogSystemMessageType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae8a3b6a5d0d3244ed73924ab2421a0d0a1943bdb1d15a482431bfa4fb22fbecbd"></a>SCE_MSG_DIALOG_USER_MSG_SIZE&#160;</td><td class="fielddoc"><p>Max length of a user message. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a4336794f22d4ce63bf92edb04d7efb98"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT&#160;</td><td class="fielddoc"><p>Displays "Please wait.". </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a id="gafb730582952b7ceec73d7dc9bf7bef39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafb730582952b7ceec73d7dc9bf7bef39">&sect;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a4336794f22d4ce63bf92edb04d7efb98"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT&#160;</td><td class="fielddoc"><p>Displays "Please wait.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a8fac5bb23f38e6bb6b30e6fa3a0d84e8"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_NOSPACE&#160;</td><td class="fielddoc"><p>Displays "There is not enough free space on the memory card.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a8fac5bb23f38e6bb6b30e6fa3a0d84e8"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_NOSPACE&#160;</td><td class="fielddoc"><p>Displays "There is not enough free space on the memory card.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a6e9d06294309bcfce1c9a99686ea8a20"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_MAGNETIC_CALIBRATION&#160;</td><td class="fielddoc"><p>Displays "Move away from the source of interference, or adjust the compass by moving your PS Vita system as shown below.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a6e9d06294309bcfce1c9a99686ea8a20"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_MAGNETIC_CALIBRATION&#160;</td><td class="fielddoc"><p>Displays "Move away from the source of interference, or adjust the compass by moving your PS Vita system as shown below.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a0a0baf717752aaffd728d38ada23672f"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_SMALL&#160;</td><td class="fielddoc"><p>Displays "Please wait." in a small message dialog. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a0a0baf717752aaffd728d38ada23672f"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_SMALL&#160;</td><td class="fielddoc"><p>Displays "Please wait." in a small message dialog. </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556aea95a145c9d088bfc3e3c8cabce54dc6"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_CANCEL&#160;</td><td class="fielddoc"><p>Displays "Please wait..." with a cancel button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39aea95a145c9d088bfc3e3c8cabce54dc6"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_CANCEL&#160;</td><td class="fielddoc"><p>Displays "Please wait..." with a cancel button. </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a7733f0e2eab0c3810d7228821d29808e"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_CONTINUE&#160;</td><td class="fielddoc"><p>Displays "Cannot continue the application. No memory card is inserted.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a7733f0e2eab0c3810d7228821d29808e"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_CONTINUE&#160;</td><td class="fielddoc"><p>Displays "Cannot continue the application. No memory card is inserted.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556aa93a887eac8503a536139d915aa82d58"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_OPERATION&#160;</td><td class="fielddoc"><p>Displays "Cannot perform this operation. No memory card is inserted.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39aa93a887eac8503a536139d915aa82d58"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_NEED_MC_OPERATION&#160;</td><td class="fielddoc"><p>Displays "Cannot perform this operation. No memory card is inserted.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a7f2dcfb9b274eae79042b47ba608bb34"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_MIC_DISABLED&#160;</td><td class="fielddoc"><p>Displays "You must enable the microphone.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a7f2dcfb9b274eae79042b47ba608bb34"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_MIC_DISABLED&#160;</td><td class="fielddoc"><p>Displays "You must enable the microphone.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556aa1cca54a94c4bce3886f3c89a8ee69b4"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_OPERATION&#160;</td><td class="fielddoc"><p>Displays "You must use Wi-Fi to do this.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39aa1cca54a94c4bce3886f3c89a8ee69b4"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_OPERATION&#160;</td><td class="fielddoc"><p>Displays "You must use Wi-Fi to do this.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a30725878fd9510a0fbd2b4d2f0f43a47"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_APPLICATION&#160;</td><td class="fielddoc"><p>Displays "You must use Wi-Fi to use this application.". </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a30725878fd9510a0fbd2b4d2f0f43a47"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_APPLICATION&#160;</td><td class="fielddoc"><p>Displays "You must use Wi-Fi to use this application.". </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggafb730582952b7ceec73d7dc9bf7bef39a7e83586b2825827e2978c67f2b70705d"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_EMPTY_STORE&#160;</td><td class="fielddoc"><p>Displays "No content is available yet.". </p>
+<tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a7e83586b2825827e2978c67f2b70705d"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_EMPTY_STORE&#160;</td><td class="fielddoc"><p>Displays "No content is available yet.". </p>
 </td></tr>
 </table>
 
