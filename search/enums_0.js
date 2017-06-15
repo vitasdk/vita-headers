@@ -17,6 +17,7 @@ var searchData=
   ['scefontstylecode',['SceFontStyleCode',['../group__ScePgfUser.html#ga6ac7a656bfe63e8227ad8e8b6414171d',1,'pgf.h']]],
   ['scegxmcolorformat',['SceGxmColorFormat',['../group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3',1,'gxm.h']]],
   ['scegxterrorcode',['SceGxtErrorCode',['../group__SceGxtUser.html#ga138077ed21b596d15817981bde20f3b0',1,'gxt.h']]],
+  ['scejpegencoderheadermode',['SceJpegEncoderHeaderMode',['../group__SceJpegEncUser.html#ga4f1c1a954eccddb0e002f24da4d13d1c',1,'jpegenc.h']]],
   ['scejpegencoderpixelformat',['SceJpegEncoderPixelFormat',['../group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e',1,'jpegenc.h']]],
   ['scekernelidlisttype',['SceKernelIdListType',['../group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc',1,'SceKernelIdListType():&#160;threadmgr.h'],['../group__SceThreadMgrKernel.html#gab73e1647ba8ce49d40132e57883602dc',1,'SceKernelIdListType():&#160;threadmgr.h']]],
   ['scekernelpowerticktype',['SceKernelPowerTickType',['../group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f',1,'SceKernelPowerTickType():&#160;processmgr.h'],['../group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f',1,'SceKernelPowerTickType():&#160;suspend.h']]],

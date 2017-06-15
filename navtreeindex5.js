@@ -1,5 +1,11 @@
 var NAVTREEINDEX5 =
 {
+"group__SceThreadMgrUser.html#gaefe11af04ae86030017a9c7c9c80c365":[1,6,7,0,16],
+"group__SceThreadMgrUser.html#gaf322509d51c79142d26a9ce379eacad4":[1,6,7,0,70],
+"group__SceThreadMgrUser.html#gaf51ef41af830ba6422cc9c5106fb68b8":[1,6,7,0,1],
+"group__SceThreadMgrUser.html#gaf68d3fc1069a77dcec0ae8044d444144":[1,6,7,0,79],
+"group__SceThreadMgrUser.html#gaf707dc75e5c17029e116b9098ffad383":[1,6,7,0,12],
+"group__SceThreadMgrUser.html#gaf8d66461efa0b7abcf055c765ac7c427":[1,6,7,0,41],
 "group__SceThreadMgrUser.html#gaf951d0cf8f791972e4b467e16042364c":[1,6,7,0,14],
 "group__SceThreadMgrUser.html#gafee4714c33cfa560511663e4110e1f9d":[1,6,7,0,53],
 "group__SceTouch.html":[1,1,1],

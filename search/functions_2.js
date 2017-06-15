@@ -129,6 +129,7 @@ var searchData=
   ['scejpegencodergetcontextsize',['sceJpegEncoderGetContextSize',['../group__SceJpegEncUser.html#gac8866ee27a4f90c9c06287d451d6c17c',1,'jpegenc.h']]],
   ['scejpegencoderinit',['sceJpegEncoderInit',['../group__SceJpegEncUser.html#ga021a5c0080a6815131f917d6bbefac8d',1,'jpegenc.h']]],
   ['scejpegencodersetcompressionratio',['sceJpegEncoderSetCompressionRatio',['../group__SceJpegEncUser.html#ga6b039832b2340bcc8e2a49f283090799',1,'jpegenc.h']]],
+  ['scejpegencodersetheadermode',['sceJpegEncoderSetHeaderMode',['../group__SceJpegEncUser.html#ga51420dacf933dd0b9e428e5f0401dfe6',1,'jpegenc.h']]],
   ['scejpegencodersetoutputaddr',['sceJpegEncoderSetOutputAddr',['../group__SceJpegEncUser.html#ga45d153069910d9b91c5f02f9103805e6',1,'jpegenc.h']]],
   ['scejpegencodersetvalidregion',['sceJpegEncoderSetValidRegion',['../group__SceJpegEncUser.html#ga30272414b239976bb406d75f9b7fe9ce',1,'jpegenc.h']]],
   ['scekernelcancelcallback',['sceKernelCancelCallback',['../group__SceThreadMgrUser.html#gaca08520842550dcac247e7c7839e1881',1,'threadmgr.h']]],
