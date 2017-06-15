@@ -9,13 +9,28 @@
 #define _JPEGENC_H_
  
 #define SceJpegEncoderContext void*
- 
-typedef enum SceJpegEncoderPixelFormat{
+
+typedef enum SceJpegEncErrorCode {
+	SCE_JPEGENC_ERROR_IMAGE_SIZE                = 0x80650200,
+	SCE_JPEGENC_ERROR_INSUFFICIENT_BUFFER       = 0x80650201,
+	SCE_JPEGNEC_ERROR_INVALID_COMPRATIO         = 0x80650202,
+	SCE_JPEGENC_ERROR_INVALID_PIXELFORMAT       = 0x80650203,
+	SCE_JPEGENC_ERROR_INVALID_HEADER_MODE       = 0x80650204,
+	SCE_JPEGENC_ERROR_INVALID_POINTER           = 0x80650205,
+	SCE_JPEGENC_ERROR_NOT_PHY_CONTINUOUS_MEMORY = 0x80650206
+} SceJpegEncErrorCode;
+
+typedef enum SceJpegEncoderPixelFormat {
 	PIXELFORMAT_ARGB8888 = 0,       //!< ARGB8888 format
 	PIXELFORMAT_YCBCR420 = 8,       //!< YCbCr420 format
 	PIXELFORMAT_YCBCR422 = 9,       //!< YCbCr422 format
 	PIXELFORMAT_CSC_ARGB_YCBCR = 16 //!< ARGB to YCbCr color conversion flag
-}SceJpegEncoderPixelFormat;
+} SceJpegEncoderPixelFormat;
+
+typedef enum SceJpegEncoderHeaderMode {
+	HEADER_MODE_JPEG = 0,   //!< JPEG header mode
+	HEADER_MODE_MJPEG = 1   //!< MJPEG header mode
+} SceJpegEncoderHeaderMode;
 
 /**
  * Initialize a jpeg encoder
@@ -102,6 +117,16 @@ SceUID sceJpegEncoderGetContextSize(void);
  * @return 0 on success, < 0 on error.
  */
 SceUID sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int inHeight);
+
+/**
+ * Set header used for output file
+ *
+ * @param[in] context - A pointer to an already initialized ::SceJpegEncoderContext
+ * @param[in] mode - One of ::SceJpegEncoderHeaderMode
+ *
+ * @return 0 on success, < 0 on error.
+ */
+SceUID sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
 #endif
 
