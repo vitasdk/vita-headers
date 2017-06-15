@@ -19,6 +19,7 @@
 #include <psp2/fiber.h>
 #include <psp2/gxm.h>
 #include <psp2/gxt.h>
+#include <psp2/hid.h>
 #include <psp2/ime_dialog.h>
 #include <psp2/jpegenc.h>
 #include <psp2/libssl.h>
@@ -58,6 +59,7 @@
 #include <psp2/kernel/error.h>
 #include <psp2/kernel/loadcore.h>
 #include <psp2/kernel/modulemgr.h>
+#include <psp2/kernel/openpsid.h>
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/rng.h>
 #include <psp2/kernel/sysmem.h>
