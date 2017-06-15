@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__SceFcntlUser.html#ga7a57926cba9d70d9632396eaf69e0e96":[1,4,2,0,6],
 "group__SceFcntlUser.html#ga88dc53eaa661c18698ff606859f69ec8":[1,4,2,0,10],
 "group__SceFcntlUser.html#ga8ebeef57f41f8fe8aa435cfe889589bf":[1,4,2,0,23],
 "group__SceFcntlUser.html#gaa40c35536dfada200f9963b51ebc0b0b":[1,4,2,0,11],
@@ -37,6 +38,8 @@ var NAVTREEINDEX2 =
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[1,1,5,0,1],
 "group__SceHttp.html":[1,7,0],
 "group__SceHttpUser.html":[1,7,0,0],
+"group__SceI2c.html":[1,5,1],
+"group__SceI2cKernel.html":[1,5,1,0],
 "group__SceIme.html":[1,3,2],
 "group__SceImeUser.html":[1,3,2,0],
 "group__SceIntrMgr.html":[1,6,13],
@@ -220,8 +223,8 @@ var NAVTREEINDEX2 =
 "group__ScePgfUser.html#ga6ac7a656bfe63e8227ad8e8b6414171d":[1,0,1,0,1],
 "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a107185882b6a465e907e108a0ad7a12f":[1,0,1,0,0,5],
 "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a107185882b6a465e907e108a0ad7a12f":[1,0,1,0,2],
-"group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a42fb1c78a295e76bf42f7c7de5cc04d6":[1,0,1,0,5],
 "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a42fb1c78a295e76bf42f7c7de5cc04d6":[1,0,1,0,0,3],
+"group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a42fb1c78a295e76bf42f7c7de5cc04d6":[1,0,1,0,5],
 "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a847fc827f672351447eb09eb2487f43e":[1,0,1,0,0,2],
 "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a847fc827f672351447eb09eb2487f43e":[1,0,1,0,4],
 "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3ab594d479f3f44a20fa8f0483e56e542c":[1,0,1,0,0,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "group__ScePowerUser.html#ga70b22089c1e4e0ae2c823b026109ad9f":[1,8,3,0,20],
 "group__ScePowerUser.html#ga84cf9ac365a262e7ee71c1f6a4302da7":[1,8,3,0,27],
 "group__ScePowerUser.html#ga87add7efd8177f03fecc6fdf9233c57a":[1,8,3,0,1],
-"group__ScePowerUser.html#ga9e199f8a81622c73ac1b3c88a89deb23":[1,8,3,0,14],
-"group__ScePowerUser.html#gaa0d74be80d0753a60a66ddc87ab19596":[1,8,3,0,28],
-"group__ScePowerUser.html#gaa17e71c25ae476469347956af18e4dbf":[1,8,3,0,25],
-"group__ScePowerUser.html#gaa183d660f4d44413be9be1662253da7f":[1,8,3,0,16]
+"group__ScePowerUser.html#ga9e199f8a81622c73ac1b3c88a89deb23":[1,8,3,0,14]
 };

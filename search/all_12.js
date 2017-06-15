@@ -404,6 +404,7 @@ var searchData=
   ['scehttpscalist',['SceHttpsCaList',['../group__SceHttpUser.html#structSceHttpsCaList',1,'']]],
   ['scehttpsdata',['SceHttpsData',['../group__SceHttpUser.html#structSceHttpsData',1,'']]],
   ['scehttpurielement',['SceHttpUriElement',['../group__SceHttpUser.html#structSceHttpUriElement',1,'']]],
+  ['scei2cdebughandlers',['SceI2cDebugHandlers',['../structSceI2cDebugHandlers.html',1,'']]],
   ['sceimatrix2',['SceIMatrix2',['../group__SceTypesUser.html#structSceIMatrix2',1,'']]],
   ['sceimatrix3',['SceIMatrix3',['../group__SceTypesUser.html#structSceIMatrix3',1,'']]],
   ['sceimatrix4',['SceIMatrix4',['../group__SceTypesUser.html#structSceIMatrix4',1,'']]],

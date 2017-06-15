@@ -113,6 +113,7 @@ var annotated_dup =
     [ "SceHttpsCaList", "group__SceHttpUser.html#structSceHttpsCaList", "group__SceHttpUser_structSceHttpsCaList" ],
     [ "SceHttpsData", "group__SceHttpUser.html#structSceHttpsData", "group__SceHttpUser_structSceHttpsData" ],
     [ "SceHttpUriElement", "group__SceHttpUser.html#structSceHttpUriElement", "group__SceHttpUser_structSceHttpUriElement" ],
+    [ "SceI2cDebugHandlers", "structSceI2cDebugHandlers.html", "structSceI2cDebugHandlers" ],
     [ "SceIMatrix2", "group__SceTypesUser.html#structSceIMatrix2", "group__SceTypesUser_structSceIMatrix2" ],
     [ "SceIMatrix3", "group__SceTypesUser.html#structSceIMatrix3", "group__SceTypesUser_structSceIMatrix3" ],
     [ "SceIMatrix4", "group__SceTypesUser.html#structSceIMatrix4", "group__SceTypesUser_structSceIMatrix4" ],

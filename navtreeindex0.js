@@ -40,10 +40,11 @@ var NAVTREEINDEX0 =
 "ern_2kernel_2sysmem_8h_source.html":[3,0,0,1,1,6],
 "ern_2kernel_2threadmgr_8h_source.html":[3,0,0,1,1,7],
 "ern_2net_2net_8h_source.html":[3,0,0,1,3,0],
-"ern_2types_8h_source.html":[3,0,0,1,9],
-"ern_2udcd_8h_source.html":[3,0,0,1,10],
-"ern_2usbd_8h_source.html":[3,0,0,1,11],
-"ern_2usbserial_8h_source.html":[3,0,0,1,12],
+"ern_2registrymgr_8h_source.html":[3,0,0,1,7],
+"ern_2types_8h_source.html":[3,0,0,1,10],
+"ern_2udcd_8h_source.html":[3,0,0,1,11],
+"ern_2usbd_8h_source.html":[3,0,0,1,12],
+"ern_2usbserial_8h_source.html":[3,0,0,1,13],
 "error_8h_source.html":[3,0,0,0,1,2],
 "fiber_8h_source.html":[3,0,0,0,15],
 "files.html":[3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceCPUKernel.html#gad200618d43d192875a226623cfdc0137":[1,6,1,0,13],
 "group__SceCPUKernel.html#gad5a9622957edc36c66eb80128af84518":[1,6,1,0,10],
 "group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8":[1,6,1,0,16],
-"group__SceCPUKernel.html#gadac7ba6fca70b8927e524f57043b4ae9":[1,6,1,0,9],
-"group__SceCPUKernel.html#gae3914d5e447e9790fa8e193512369a9e":[1,6,1,0,2]
+"group__SceCPUKernel.html#gadac7ba6fca70b8927e524f57043b4ae9":[1,6,1,0,9]
 };

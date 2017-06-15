@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>vitasdk: Low-level I/O</title>
+<title>vitasdk: SceI2cDebugHandlers Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__Lowio.html','');});
+$(document).ready(function(){initNavTree('structSceI2cDebugHandlers.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -82,28 +82,45 @@ $(document).ready(function(){initNavTree('group__Lowio.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Low-level I/O</div>  </div>
+<div class="title">SceI2cDebugHandlers Struct Reference<div class="ingroups"><a class="el" href="group__Lowio.html">Low-level I/O</a> &raquo; <a class="el" href="group__SceI2c.html">I2C Library</a> &raquo; <a class="el" href="group__SceI2cKernel.html">Kernel</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>GPIO, I2C, PWM, DSI, CSI, Clocks... </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group__SceGpio"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpio.html">GPIO Library</a></td></tr>
-<tr class="memdesc:group__SceGpio"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read/write GPIO ports, configure GPIO interrupts... <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__SceI2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2c.html">I2C Library</a></td></tr>
-<tr class="memdesc:group__SceI2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do read/write I2C transfers, etc. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:gae463ec16de70164b2086f5c0419d0f68"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="separator:gae463ec16de70164b2086f5c0419d0f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbdc8dc8b4acd97b496bac2b350d5daf"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_start</b> )(int bus, int device, unsigned char *buffer, int size)</td></tr>
+<tr class="separator:gadbdc8dc8b4acd97b496bac2b350d5daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ef1910255e2ed7e24cd68b041351c65"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_error</b> )(int bus, int error, int result)</td></tr>
+<tr class="separator:ga0ef1910255e2ed7e24cd68b041351c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga761cbd1d11d77290edc54bdd155ded21"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_start</b> )(int bus, int device, unsigned char *buffer, int size)</td></tr>
+<tr class="separator:ga761cbd1d11d77290edc54bdd155ded21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb6c41817a5b83b4fd5d86f2280df9c6"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_error</b> )(int bus, int error, int result)</td></tr>
+<tr class="separator:gaeb6c41817a5b83b4fd5d86f2280df9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga450b2c097ed6806fd793e9978b855f7a"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_start</b> )(int bus, int write_device, unsigned char *write_buffer, int write_size)</td></tr>
+<tr class="separator:ga450b2c097ed6806fd793e9978b855f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac6a1de4134f0305b2b619441778aa15"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_error</b> )(int bus, int error, int result)</td></tr>
+<tr class="separator:gaac6a1de4134f0305b2b619441778aa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/psp2kern/lowio/<a class="el" href="i2c_8h_source.html">i2c.h</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="structSceI2cDebugHandlers.html">SceI2cDebugHandlers</a></li>
     <li class="footer"><a href="http://vitasdk.org">Vita SDK</a></li>
   </ul>
 </div>

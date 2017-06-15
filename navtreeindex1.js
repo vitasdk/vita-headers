@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__SceCPUKernel.html#gae3914d5e447e9790fa8e193512369a9e":[1,6,1,0,2],
 "group__SceCamera.html":[1,1,2],
 "group__SceCameraUser.html":[1,1,2,0],
 "group__SceCommonDialog.html":[1,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceFcntlUser.html#ga5ec46984e483737b1ad50edc61f6ad4d":[1,4,2,0,4],
 "group__SceFcntlUser.html#ga6065e5b5f6e1851fea13662e0f241901":[1,4,2,0,12],
 "group__SceFcntlUser.html#ga67be32ffdbd12b23149ebbc78b09c775":[1,4,2,0,18],
-"group__SceFcntlUser.html#ga765de85ca20cd84bee1b69f6e0f27d0c":[1,4,2,0,17],
-"group__SceFcntlUser.html#ga7a57926cba9d70d9632396eaf69e0e96":[1,4,2,0,6]
+"group__SceFcntlUser.html#ga765de85ca20cd84bee1b69f6e0f27d0c":[1,4,2,0,17]
 };
