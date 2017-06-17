@@ -1,21 +1,21 @@
 var group__SceJpegEncUser =
 [
     [ "SceJpegEncoderHeaderMode", "group__SceJpegEncUser.html#ga4f1c1a954eccddb0e002f24da4d13d1c", [
-      [ "HEADER_MODE_JPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca23cf893c3f3567b0db3774554775f6e5", null ],
-      [ "HEADER_MODE_MJPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca38ad8b2e622e36d49a00895b7a4997c7", null ]
+      [ "SCE_JPEGENC_HEADER_MODE_JPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985", null ],
+      [ "SCE_JPEGENC_HEADER_MODE_MJPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221", null ]
     ] ],
     [ "SceJpegEncoderPixelFormat", "group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e", [
-      [ "PIXELFORMAT_ARGB8888", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eac72bfe0991870cf95d42063641f42a9e", null ],
-      [ "PIXELFORMAT_YCBCR420", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604ea2596552f698d45ff8793f4c36be882c1", null ],
-      [ "PIXELFORMAT_YCBCR422", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604ea223d2032db9ab9b97c5b3bf8210493cd", null ],
-      [ "PIXELFORMAT_CSC_ARGB_YCBCR", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eae258e85a0268623a76486fcb917bf709", null ]
+      [ "SCE_JPEGENC_PIXELFORMAT_ARGB8888", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951", null ],
+      [ "SCE_JPEGENC_PIXELFORMAT_YCBCR420", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4", null ],
+      [ "SCE_JPEGENC_PIXELFORMAT_YCBCR422", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eae1a3397a8144cc8da7dbcc2e4350112e", null ],
+      [ "SCE_JPEGENC_PIXELFORMAT_CSC_ARGB_YCBCR", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405", null ]
     ] ],
-    [ "HEADER_MODE_JPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca23cf893c3f3567b0db3774554775f6e5", null ],
-    [ "HEADER_MODE_MJPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca38ad8b2e622e36d49a00895b7a4997c7", null ],
-    [ "PIXELFORMAT_ARGB8888", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eac72bfe0991870cf95d42063641f42a9e", null ],
-    [ "PIXELFORMAT_CSC_ARGB_YCBCR", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eae258e85a0268623a76486fcb917bf709", null ],
-    [ "PIXELFORMAT_YCBCR420", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604ea2596552f698d45ff8793f4c36be882c1", null ],
-    [ "PIXELFORMAT_YCBCR422", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604ea223d2032db9ab9b97c5b3bf8210493cd", null ],
+    [ "SCE_JPEGENC_HEADER_MODE_JPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985", null ],
+    [ "SCE_JPEGENC_HEADER_MODE_MJPEG", "group__SceJpegEncUser.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221", null ],
+    [ "SCE_JPEGENC_PIXELFORMAT_ARGB8888", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951", null ],
+    [ "SCE_JPEGENC_PIXELFORMAT_CSC_ARGB_YCBCR", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405", null ],
+    [ "SCE_JPEGENC_PIXELFORMAT_YCBCR420", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4", null ],
+    [ "SCE_JPEGENC_PIXELFORMAT_YCBCR422", "group__SceJpegEncUser.html#gga8603f36fb28263ac28ce4be90d8b604eae1a3397a8144cc8da7dbcc2e4350112e", null ],
     [ "sceJpegEncoderCsc", "group__SceJpegEncUser.html#ga7d32b94253c6b509c781abcc0f490e8e", null ],
     [ "sceJpegEncoderEncode", "group__SceJpegEncUser.html#ga51d97e72ae0ff6996267c983627a0854", null ],
     [ "sceJpegEncoderEnd", "group__SceJpegEncUser.html#ga02de151671088a0fc05d395a36ac6fbe", null ],
