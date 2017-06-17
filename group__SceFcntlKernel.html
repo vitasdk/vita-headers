@@ -167,6 +167,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaabf7cf0695525250df440664dd6819eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlKernel.html#gaabf7cf0695525250df440664dd6819eb">ksceIoSetAsyncCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> cb, void *argp)</td></tr>
 <tr class="memdesc:gaabf7cf0695525250df440664dd6819eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a callback for the asynchronous action.  <a href="#gaabf7cf0695525250df440664dd6819eb">More...</a><br /></td></tr>
 <tr class="separator:gaabf7cf0695525250df440664dd6819eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75d8f502a4cb2c3e28bdb0d75d020b89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlKernel.html#ga75d8f502a4cb2c3e28bdb0d75d020b89">ksceIoMount</a> (int id, const char *path, int permission, int a4, int a5, int a6)</td></tr>
+<tr class="memdesc:ga75d8f502a4cb2c3e28bdb0d75d020b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mounts a device.  <a href="#ga75d8f502a4cb2c3e28bdb0d75d020b89">More...</a><br /></td></tr>
+<tr class="separator:ga75d8f502a4cb2c3e28bdb0d75d020b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4ba496c026bde1c5fc674ce0d77de5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlKernel.html#gad4ba496c026bde1c5fc674ce0d77de5a">ksceIoUmount</a> (int id, int a2, int a3, int a4)</td></tr>
+<tr class="memdesc:gad4ba496c026bde1c5fc674ce0d77de5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmounts a device.  <a href="#gad4ba496c026bde1c5fc674ce0d77de5a">More...</a><br /></td></tr>
+<tr class="separator:gad4ba496c026bde1c5fc674ce0d77de5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaae7e727a2b51ecfe3f180826f0bf4387"></a>
@@ -539,6 +545,72 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. Actual value should be passed returned by the <a class="el" href="group__SceFcntlKernel.html#gac015fe048976ba65066e3783071830d5" title="Wait for asynchronous completion. ">ksceIoWaitAsync</a> call. </dd></dl>
+
+</div>
+</div>
+<a id="ga75d8f502a4cb2c3e28bdb0d75d020b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75d8f502a4cb2c3e28bdb0d75d020b89">&sect;&nbsp;</a></span>ksceIoMount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceIoMount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>permission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a6</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mounts a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Device to mount </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Where to mount to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">permission</td><td>Permission flags </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">a4</td><td>Unknown, set to 0 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">a5</td><td>Unknown, set to 0 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">a6</td><td>Unknown, set to 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -931,6 +1003,58 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fd</td><td>- Opened file descriptor to sync</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gad4ba496c026bde1c5fc674ce0d77de5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4ba496c026bde1c5fc674ce0d77de5a">&sect;&nbsp;</a></span>ksceIoUmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceIoUmount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmounts a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Device to unmount </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a2</td><td>Unknown, set to 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a3</td><td>Unknown, set to 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a4</td><td>Unknown, set to 0</td></tr>
   </table>
   </dd>
 </dl>

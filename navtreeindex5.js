@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"group__SceThreadMgrUser.html#gaec88b8bd6f478426538b184ddd6816bf":[1,6,7,0,60],
+"group__SceThreadMgrUser.html#gaecd0cce97640372fbc0905426f9e367e":[1,6,7,0,63],
 "group__SceThreadMgrUser.html#gaefe11af04ae86030017a9c7c9c80c365":[1,6,7,0,16],
 "group__SceThreadMgrUser.html#gaf322509d51c79142d26a9ce379eacad4":[1,6,7,0,70],
 "group__SceThreadMgrUser.html#gaf51ef41af830ba6422cc9c5106fb68b8":[1,6,7,0,1],
