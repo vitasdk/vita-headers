@@ -69,7 +69,7 @@ typedef enum SceHttpErrorCode {
 	SCE_HTTP_ERROR_RESOLVER_ENORECORD           = 0x8043600a
 } SceHttpErrorCode;
 
-typedef SceHttpsErrorCode {
+typedef enum SceHttpsErrorCode {
 	SCE_HTTPS_ERROR_CERT                        = 0x80435060,
 	SCE_HTTPS_ERROR_HANDSHAKE                   = 0x80435061,
 	SCE_HTTPS_ERROR_IO                          = 0x80435062,
@@ -77,14 +77,14 @@ typedef SceHttpsErrorCode {
 	SCE_HTTPS_ERROR_PROXY                       = 0x80435064
 } SceHttpsErrorCode;
 
-typedef SceHttpsSslErrorCode {
+typedef enum SceHttpsSslErrorCode {
 	SCE_HTTPS_ERROR_SSL_INTERNAL                = (0x01U),
 	SCE_HTTPS_ERROR_SSL_INVALID_CERT            = (0x02U),
 	SCE_HTTPS_ERROR_SSL_CN_CHECK                = (0x04U),
 	SCE_HTTPS_ERROR_SSL_NOT_AFTER_CHECK         = (0x08U),
 	SCE_HTTPS_ERROR_SSL_NOT_BEFORE_CHECK        = (0x10U),
 	SCE_HTTPS_ERROR_SSL_UNKNOWN_CA              = (0x20U)
-} SceHttpsErrorCode;
+} SceHttpsSslErrorCode;
 
 #define SCE_HTTP_ENABLE     (1)
 #define SCE_HTTP_DISABLE    (0)
@@ -92,7 +92,7 @@ typedef SceHttpsSslErrorCode {
 #define SCE_HTTP_USERNAME_MAX_SIZE  256
 #define SCE_HTTP_PASSWORD_MAX_SIZE  256
 
-typedef SceHttpStatusCode {
+typedef enum SceHttpStatusCode {
 	SCE_HTTP_STATUS_CODE_CONTINUE                       = 100,
 	SCE_HTTP_STATUS_CODE_SWITCHING_PROTOCOLS            = 101,
 	SCE_HTTP_STATUS_CODE_PROCESSING                     = 102,
@@ -142,7 +142,7 @@ typedef SceHttpStatusCode {
 	SCE_HTTP_STATUS_CODE_INSUFFICIENT_STORAGE           = 507
 } SceHttpStatuscode;
 
-typedef SceHttpUriBuildType {
+typedef enum SceHttpUriBuildType {
 	SCE_HTTP_URI_BUILD_WITH_SCHEME      = 0x01,
 	SCE_HTTP_URI_BUILD_WITH_HOSTNAME    = 0x02,
 	SCE_HTTP_URI_BUILD_WITH_PORT        = 0x04,
@@ -154,7 +154,7 @@ typedef SceHttpUriBuildType {
 	SCE_HTTP_URI_BUILD_WITH_ALL         = 0xFFFF
 } SceHttpUriBuildType;
 
-typedef SceHttpsFlag {
+typedef enum SceHttpsFlag {
 	SCE_HTTPS_FLAG_SERVER_VERIFY        = (0x01U),
 	SCE_HTTPS_FLAG_CLIENT_VERIFY        = (0x02U),
 	SCE_HTTPS_FLAG_CN_CHECK             = (0x04U),
