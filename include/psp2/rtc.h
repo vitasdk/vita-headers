@@ -31,7 +31,7 @@ typedef enum SceRtcErrorCode {
 } SceRtcErrorCode;
 
 /* As returned by sceRtcGetDayOfWeek */
-typedef struct SceRtcDayOfWeek {
+typedef enum SceRtcDayOfWeek {
 	SCE_RTC_DAYOFWEEK_SUNDAY    = 0,
 	SCE_RTC_DAYOFWEEK_MONDAY    = 1,
 	SCE_RTC_DAYOFWEEK_TUESDAY   = 2,
