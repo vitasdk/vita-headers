@@ -216,7 +216,6 @@ var annotated_dup =
     [ "ScePvfKerningInfo", "group__ScePvfUser.html#structScePvfKerningInfo", "group__ScePvfUser_structScePvfKerningInfo" ],
     [ "ScePvfRect", "group__ScePvfUser.html#structScePvfRect", "group__ScePvfUser_structScePvfRect" ],
     [ "ScePvfUserImageBufferRec", "group__ScePvfUser.html#structScePvfUserImageBufferRec", "group__ScePvfUser_structScePvfUserImageBufferRec" ],
-    [ "SceRtcDayOfWeek", "group__SceRtcUser.html#structSceRtcDayOfWeek", "group__SceRtcUser_structSceRtcDayOfWeek" ],
     [ "SceRtcTick", "group__SceRtcUser.html#structSceRtcTick", "group__SceRtcUser_structSceRtcTick" ],
     [ "SceScreenShotParam", "group__SceScreenShotUser.html#structSceScreenShotParam", "group__SceScreenShotUser_structSceScreenShotParam" ],
     [ "SceSqliteMallocMethods", "structSceSqliteMallocMethods.html", "structSceSqliteMallocMethods" ],

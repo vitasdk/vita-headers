@@ -210,7 +210,6 @@ var searchData=
   ['scepvfkerninginfo',['ScePvfKerningInfo',['../group__ScePvfUser.html#structScePvfKerningInfo',1,'']]],
   ['scepvfrect',['ScePvfRect',['../group__ScePvfUser.html#structScePvfRect',1,'']]],
   ['scepvfuserimagebufferrec',['ScePvfUserImageBufferRec',['../group__ScePvfUser.html#structScePvfUserImageBufferRec',1,'']]],
-  ['scertcdayofweek',['SceRtcDayOfWeek',['../group__SceRtcUser.html#structSceRtcDayOfWeek',1,'']]],
   ['scertctick',['SceRtcTick',['../group__SceRtcUser.html#structSceRtcTick',1,'']]],
   ['scescreenshotparam',['SceScreenShotParam',['../group__SceScreenShotUser.html#structSceScreenShotParam',1,'']]],
   ['scesqlitemallocmethods',['SceSqliteMallocMethods',['../structSceSqliteMallocMethods.html',1,'']]],

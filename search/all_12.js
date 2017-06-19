@@ -740,7 +740,6 @@ var searchData=
   ['sceregmgrsetkeybin',['sceRegMgrSetKeyBin',['../group__SceRegistryMgrUser.html#ga1e3a66ccf8bfa1c4e237a93cb572c4d5',1,'registrymgr.h']]],
   ['sceregmgrsetkeyint',['sceRegMgrSetKeyInt',['../group__SceRegistryMgrUser.html#ga152a4e28f4eef4fdd7ebd7089d7dd627',1,'registrymgr.h']]],
   ['sceregmgrsetkeystr',['sceRegMgrSetKeyStr',['../group__SceRegistryMgrUser.html#gaf54ea2b44345c1b15a8be946c32442b6',1,'registrymgr.h']]],
-  ['scertcdayofweek',['SceRtcDayOfWeek',['../group__SceRtcUser.html#structSceRtcDayOfWeek',1,'']]],
   ['scertctick',['SceRtcTick',['../group__SceRtcUser.html#structSceRtcTick',1,'']]],
   ['sbl_20ac_20manager',['Sbl AC Manager',['../group__SceSblACMgr.html',1,'']]],
   ['sbl_20auth_20manager',['Sbl Auth Manager',['../group__SceSblAuthMgr.html',1,'']]],
