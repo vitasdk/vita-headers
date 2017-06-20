@@ -21,7 +21,7 @@ typedef enum ScePowerCallbackType {
 	SCE_POWER_CB_RESUMING         = 0x00020000,
 	/** indicates the unit has finish resuming from suspend mode */
 	SCE_POWER_CB_RESUME_COMPLETE  = 0x00040000
-}ScePowerCallbackType;
+} ScePowerCallbackType;
 
 /* Callbacks */
 
@@ -146,7 +146,7 @@ int scePowerGetBatteryCycleCount(void);
  *
  * @return CPU clock frequency in Mhz
  */
-int scePowerGetArmClockFrequency(void); 
+int scePowerGetArmClockFrequency(void);
 
 /**
  * Returns BUS clock frequency

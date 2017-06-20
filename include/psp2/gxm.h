@@ -16,7 +16,7 @@ extern "C" {
 // Error Codes
 
 typedef enum SceGxmErrorCode {
-	SCE_GXM_ERROR_UNINITIALIZED	                                = 0x805B0000,
+	SCE_GXM_ERROR_UNINITIALIZED                                 = 0x805B0000,
 	SCE_GXM_ERROR_ALREADY_INITIALIZED                           = 0x805B0001,
 	SCE_GXM_ERROR_OUT_OF_MEMORY                                 = 0x805B0002,
 	SCE_GXM_ERROR_INVALID_VALUE                                 = 0x805B0003,

@@ -17,7 +17,7 @@ extern "C" {
  * Get the maximum brightness.
  *
  * @param[out] maxBrightness - Maximum brightness.
- * 
+ *
  * @return 0 on success, < 0 on error.
  */
 int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
@@ -26,7 +26,7 @@ int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
  * Set the screen brightness.
  *
  * @param brightness - Brightness that the screen will be set to (range 21-65536, 0 turns off the screen).
- * 
+ *
  * @return 0 on success, < 0 on error.
  */
 int sceAVConfigSetDisplayBrightness(int brightness);

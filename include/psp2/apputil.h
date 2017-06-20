@@ -147,7 +147,7 @@ typedef struct SceAppUtilWebBrowserParam {
  *
  * @param[out] initParam - App init info. Must be initialized with zeros.
  * @param[out] bootParam - App boot info. Must be initialized with zeros.
- * 
+ *
  * @return 0 on success, < 0 on error.
  */
 int sceAppUtilInit(SceAppUtilInitParam *initParam, SceAppUtilBootParam *bootParam);
@@ -182,7 +182,7 @@ int sceAppUtilSaveDataDataSave(SceAppUtilSaveDataFileSlot *slot,
 	SceAppUtilSaveDataFile *files, unsigned int fileNum,
 	SceAppUtilSaveDataMountPoint *mountPoint,
 	SceSize *requiredSizeKB);
-	
+
 //!< Delete savedata files
 int sceAppUtilSaveDataDataRemove(SceAppUtilSaveDataFileSlot *slot,
 	SceAppUtilSaveDataRemoveItem *files, unsigned int fileNum,

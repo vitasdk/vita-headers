@@ -133,7 +133,7 @@ typedef enum SceNetErrorCode {
 } SceNetErrorCode;
 
 /** Specific kernel and libnet error codes */
-typedef enum  SceNetKernelErrorCode {
+typedef enum SceNetKernelErrorCode {
 	SCE_NET_EPERM               = 1,
 	SCE_NET_ENOENT              = 2,
 	SCE_NET_ESRCH               = 3,

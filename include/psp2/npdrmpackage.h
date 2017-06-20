@@ -49,7 +49,7 @@ int _sceNpDrmPackageCheck(const void *buffer, SceSize size, int zero, unsigned i
  * @return 0 on success, != 0 on error
  */
 int _sceNpDrmPackageDecrypt(void * __restrict__ buffer, SceSize size, _sceNpDrmPackageDecrypt_opt * __restrict__ opt);
-	
+
 #ifdef __cplusplus
 }
 #endif

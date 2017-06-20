@@ -49,7 +49,7 @@ typedef enum SceNetCtlState {
 	SCE_NETCTL_STATE_FINALIZING,
 	SCE_NETCTL_STATE_CONNECTED
 } SceNetCtlState;
-	
+
 /* callback */
 
 typedef void *(*SceNetCtlCallback)(
