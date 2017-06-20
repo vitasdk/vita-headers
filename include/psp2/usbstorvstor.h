@@ -38,11 +38,11 @@ int sceUsbstorVStorSetDeviceInfo(const char *name, const char *version);
 /**
  * Start USB virtual storage
  *
- * @param[in] type - One of ::SceUsbStorVstorType
+ * @param[in] type - One of ::SceUsbstorVstorType
  *
  * @return 0 on success, < 0 on error.
 */
-int sceUsbstorVStorStart(SceUsbStorVstorType type);
+int sceUsbstorVStorStart(SceUsbstorVstorType type);
 
 /**
  * Stop USB virtual storage
