@@ -89,7 +89,7 @@ typedef enum SceLocationLocationMethod {
 	SCE_LOCATION_LMETHOD_WIFI                 = 3,  //!< Use only Wi-Fi
 	SCE_LOCATION_LMETHOD_3G                   = 4,  //!< Use only 3G
 	SCE_LOCATION_LMETHOD_GPS                  = 5   //!< Use only GPS
-}SceLocationLocationMethod;
+} SceLocationLocationMethod;
 
 /** Direction measurement method */
 typedef enum SceLocationHeadingMethod {

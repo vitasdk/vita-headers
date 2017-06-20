@@ -18,7 +18,7 @@ extern "C" {
  *
  * @return 0 on success, < 0 on error
  *
- * @note The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device. 
+ * @note The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device.
  *
  * @note Wrapper for kernel function sceUsbSerialStartForDriver()
  */
@@ -29,11 +29,11 @@ int sceUsbSerialStart(void);
  *
  * @return 0 on success, < 0 on error
  *
- * @param unk Unknown 
+ * @param unk Unknown
  *
  * @note Wrapper for kernel function sceUsbSerialSetupForDriver()
  */
-int sceUsbSerialSetup(int unk);	
+int sceUsbSerialSetup(int unk);
 
 /**
  * Close USB serial device
@@ -63,7 +63,7 @@ unsigned int sceUsbSerialGetRecvBufferSize(void);
 /**
  * Send data
  * @param[in] *buffer data to send over usb
- * @param len int len of serial buffer data 
+ * @param len int len of serial buffer data
  * @param unk1 Unknown
  * @param unk2 Unknown
  * @note max send length is 0x10000

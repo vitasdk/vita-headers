@@ -4,10 +4,9 @@
  */
 
 
- 
 #ifndef _JPEGENC_H_
 #define _JPEGENC_H_
- 
+
 #define SceJpegEncoderContext void*
 
 typedef enum SceJpegEncErrorCode {

@@ -15,7 +15,7 @@ typedef struct{
 	void *(*xMalloc)(int);
 	void *(*xRealloc)(void*,int);
 	void (*xFree)(void*);
-}SceSqliteMallocMethods;
+} SceSqliteMallocMethods;
 
 /**
  * Wrapper for sqlite3_config(SQLITE_CONFIG_MALLOC)

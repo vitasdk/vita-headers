@@ -2,7 +2,7 @@
  * \kernelgroup{SceRegistryMgr}
  * \usage{psp2kern/registrymgr.h,SceRegMgrForDriver_stub}
  */
- 
+
 #ifndef _PSP2_REGISTRYMGR_H_
 #define _PSP2_REGISTRYMGR_H_
 
