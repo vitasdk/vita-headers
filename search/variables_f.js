@@ -23,6 +23,6 @@ var searchData=
   ['subtitle',['subTitle',['../group__SceAppUtilUser.html#ga9f6719584d48a06848947fa70695431e',1,'SceAppUtilSaveDataSlotParam']]],
   ['supportedlanguages',['supportedLanguages',['../group__SceImeUser.html#gaac540a8ee1bfb29a3145518fe5938b97',1,'SceImeDialogParam']]],
   ['sysmsgparam',['sysMsgParam',['../group__SceMessageDialogUser.html#ga2773e650c3b3a470e86423dca252fb10',1,'SceMsgDialogProgressBarParam::sysMsgParam()'],['../group__SceMessageDialogUser.html#gac38e26368ccecba2140d849521441850',1,'SceMsgDialogParam::sysMsgParam()']]],
-  ['sysmsgtype',['sysMsgType',['../group__SceMessageDialogUser.html#gafdcacd3a2f4ec671a4767081ae7627e1',1,'SceMsgDialogSystemMessageParam']]],
+  ['sysmsgtype',['sysMsgType',['../group__SceMessageDialogUser.html#gae4a01ae40842440933682998ad6a4c4b',1,'SceMsgDialogSystemMessageParam']]],
   ['systemevent',['systemEvent',['../group__SceAppMgrUser.html#ga6276dd7491147b755f8592f575408d1a',1,'SceAppMgrSystemEvent']]]
 ];
