@@ -826,7 +826,7 @@ var searchData=
   ['sceusbserialstatus',['sceUsbSerialStatus',['../group__SceUsbSerialUser.html#gadc31c0bdb29c2a196d61141bbe384601',1,'usbserial.h']]],
   ['sceusbstorvstorsetdeviceinfo',['sceUsbstorVStorSetDeviceInfo',['../group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533',1,'usbstorvstor.h']]],
   ['sceusbstorvstorsetimgfilepath',['sceUsbstorVStorSetImgFilePath',['../group__SceUsbstorVStorDriverUser.html#ga3e1ae93f0049e1ef455141314dd763b3',1,'usbstorvstor.h']]],
-  ['sceusbstorvstorstart',['sceUsbstorVStorStart',['../group__SceUsbstorVStorDriverUser.html#ga5f183109ad821206816b149423805d43',1,'usbstorvstor.h']]],
+  ['sceusbstorvstorstart',['sceUsbstorVStorStart',['../group__SceUsbstorVStorDriverUser.html#ga91ac980e580d85503ba23b8eb191d9bb',1,'usbstorvstor.h']]],
   ['sceusbstorvstorstop',['sceUsbstorVStorStop',['../group__SceUsbstorVStorDriverUser.html#ga342bce6f1463f98310c428884d508a63',1,'usbstorvstor.h']]],
   ['sceuvector4',['SceUVector4',['../group__SceTypesUser.html#structSceUVector4',1,'']]],
   ['scevideodecqueryinitinfo',['SceVideodecQueryInitInfo',['../group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo',1,'']]],
