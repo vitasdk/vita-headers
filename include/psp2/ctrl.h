@@ -39,7 +39,7 @@ typedef enum SceCtrlButtons {
 	SCE_CTRL_CIRCLE      = 0x002000,    //!< Circle button.
 	SCE_CTRL_CROSS       = 0x004000,    //!< Cross button.
 	SCE_CTRL_SQUARE      = 0x008000,    //!< Square button.
-	SCE_CTRL_HP          = 0x080000,    //!< Headphone pressent.
+	SCE_CTRL_HP          = 0x080000,    //!< Headphone plugged in.
 	SCE_CTRL_INTERCEPTED = 0x010000,    //!< Input not available because intercepted by another application
 	SCE_CTRL_VOLUP       = 0x100000,    //!< Volume up button.
 	SCE_CTRL_VOLDOWN     = 0x200000,    //!< Volume down button.
