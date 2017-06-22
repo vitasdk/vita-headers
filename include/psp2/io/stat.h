@@ -152,6 +152,17 @@ int sceIoGetstatByFd(SceUID fd, SceIoStat *stat);
   */
 int sceIoChstat(const char *file, SceIoStat *stat, int bits);
 
+/**
+  * Change the status of a file descriptor.
+  *
+  * @param fd - The file descriptor.
+  * @param stat - A pointer to an io_stat_t structure.
+  * @param bits - Bitmask defining which bits to change.
+  *
+  * @return < 0 on error.
+  */
+int sceIoChstatByFd(SceUID fd, SceIoStat *stat, int bits);
+
 #ifdef __cplusplus
 }
 #endif
