@@ -25,7 +25,7 @@ typedef struct VideoExportOutputParam {
 } VideoExportOutputParam;
 
 /**
- * Init events
+ * Export video file
  *
  * @param[in] in_param - Input param
  * @param[in] unk - Unknown, pass 1
