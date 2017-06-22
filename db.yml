@@ -5844,3 +5844,11 @@ modules:
           sceCompatWaitSpecialRequest: 0x714F7ED6
           sceCompatWriteShared32: 0x1CD51530
           sceCompatWriteSharedCtrl: 0x2306FFED
+  SceVideoExport:
+    nid: 0x86B46C2D
+    libraries:
+      SceVideoExport:
+        kernel: false
+        nid: 0xF0812A7C
+        functions:
+          sceVideoExportFromFile: 0x4F60A3C8
