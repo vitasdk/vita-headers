@@ -5807,3 +5807,44 @@ modules:
         functions:
           ksceDmacMemcpy: 0x00896B11
           ksceDmacMemset: 0x4BAC049B
+  SceCompat:
+    nid: 0x8F2D0378
+    libraries:
+      SceCompat:
+        kernel: true
+        nid: 0x0F35909D
+        functions:
+          sceCompatGetUpdateState: 0x0CDE9EC5
+          sceCompatGetDevInf: 0x138006A8
+          sceCompatGetPeripheralState: 0x176B2906
+          sceCompatWriteShared32: 0x1CD51530
+          sceCompatWriteSharedCtrl: 0x2306FFED
+          sceCompatSuspendResume: 0x324112CA
+          sceCompatSetDisplayConfig: 0x32BA3DCF
+          sceCompatAvailableColorSpaceSetting: 0x456226DD
+          sceCompatCache: 0x6777390E
+          sceCompatWaitSpecialRequest: 0x714F7ED6
+          sceCompatReadShared32: 0x73AA4871
+          sceCompatIsPocketStationTitle: 0x7DCFBCCE
+          sceCompatWaitAndGetRequest: 0x8176C238
+          sceCompatSetUpdateState: 0x8A44206F
+          sceCompatStart: 0x8CA1632D
+          sceCompatIdStorageLookup: 0x94AAA245
+          sceCompatCheckPocketStation: 0x96FC2A87
+          sceCompatGetTitleList: 0x99F13E04
+          sceCompatGetCurrentSecureTick: 0xA073EBEE
+          sceCompatAllocCdramWithHole: 0xA5039FFA
+          sceCompatGetPspSystemSoftwareVersion: 0xB113DCC0
+          sceCompatFrameBufferInit: 0xBC0E2B4C
+          sceCompatLCDCSync: 0xBD177787
+          sceCompatWaitIntr: 0xC1E14CF5
+          sceCompatDatRead: 0xCBE73EBE
+          sceCompatReturnValueEx: 0xCC02A9FF
+          sceCompatGetStatus: 0xD2E3370E
+          sceCompatInterrupt: 0xD6AA36DD
+          sceCompatSetRif: 0xD8B69F23
+          sceCompatGetPrimaryHead: 0xDC9EE33A
+          sceCompatSetSuspendSema: 0xDD30239E
+          sceCompatInitEx: 0xE97C1B5F
+          sceCompatUninit: 0xEF929397
+          sceCompatStop: 0xFCE2422F
