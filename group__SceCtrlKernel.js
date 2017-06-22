@@ -28,9 +28,11 @@ var group__SceCtrlKernel =
       [ "SCE_CTRL_CIRCLE", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548acc26a837d4e5a5cfb62adaf48ddead2c", null ],
       [ "SCE_CTRL_CROSS", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a477d551daa482e03598b67aaf4466923", null ],
       [ "SCE_CTRL_SQUARE", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548af935d4e61120671b2acdf6cee2f776e6", null ],
+      [ "SCE_CTRL_HEADPHONE", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a7be5b5b91911f1074bb6d9b34fe92a02", null ],
       [ "SCE_CTRL_INTERCEPTED", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a12085cf461189faeb160ccd99affe06d", null ],
       [ "SCE_CTRL_VOLUP", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a436d88aeb4ce14521088bd556eb863cc", null ],
-      [ "SCE_CTRL_VOLDOWN", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548aeab7d0c864db59474af654aad4427963", null ]
+      [ "SCE_CTRL_VOLDOWN", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548aeab7d0c864db59474af654aad4427963", null ],
+      [ "SCE_CTRL_POWER", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a3eaa931d99a6cf318f44bf035648c961", null ]
     ] ],
     [ "SceCtrlPadInputMode", "group__SceCtrlKernel.html#ga62ab7ac206d0514d11e60309f9621fb6", [
       [ "SCE_CTRL_MODE_DIGITAL", "group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6a1951834c61aba21f0dfb38d7903f24ce", null ],
@@ -43,6 +45,7 @@ var group__SceCtrlKernel =
     [ "SCE_CTRL_CIRCLE", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548acc26a837d4e5a5cfb62adaf48ddead2c", null ],
     [ "SCE_CTRL_CROSS", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a477d551daa482e03598b67aaf4466923", null ],
     [ "SCE_CTRL_DOWN", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a152892bee6c021fb3a41aa1d753ca338", null ],
+    [ "SCE_CTRL_HEADPHONE", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a7be5b5b91911f1074bb6d9b34fe92a02", null ],
     [ "SCE_CTRL_INTERCEPTED", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a12085cf461189faeb160ccd99affe06d", null ],
     [ "SCE_CTRL_L1", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a5e20bb0f019d500e4da1c92fdcfd3661", null ],
     [ "SCE_CTRL_L3", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a1fb3c7b2e36870fca7507014d124e19b", null ],
@@ -51,6 +54,7 @@ var group__SceCtrlKernel =
     [ "SCE_CTRL_MODE_ANALOG", "group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6a780c329128179cd6389cd123b724bfdb", null ],
     [ "SCE_CTRL_MODE_ANALOG_WIDE", "group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6aadf52d1d57abe790115e1e5cc2352151", null ],
     [ "SCE_CTRL_MODE_DIGITAL", "group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6a1951834c61aba21f0dfb38d7903f24ce", null ],
+    [ "SCE_CTRL_POWER", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a3eaa931d99a6cf318f44bf035648c961", null ],
     [ "SCE_CTRL_R1", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a62eba282b8050258e35271feb159a39a", null ],
     [ "SCE_CTRL_R3", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a3d1d42802f5ebd0a312e431285bd8dfc", null ],
     [ "SCE_CTRL_RIGHT", "group__SceCtrlKernel.html#gga6104b860a63a93d46fa4348f596e8548a69bf7b49f9cbe3fd1c3a6cf615d69dc1", null ],
