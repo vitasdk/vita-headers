@@ -1901,7 +1901,8 @@ modules:
         kernel: true
         nid: 0x88758561
         functions:
-          printf: 0x391B74B7
+          ksceDebugPrintf: 0x391B74B7
+          ksceDebugPrintf2: 0x02B04343
       SceDebugForKernel:
         kernel: true
         nid: 0x88C17370

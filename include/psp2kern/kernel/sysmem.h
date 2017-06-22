@@ -203,6 +203,10 @@ int ksceKernelGetPaddr(void *addr, uintptr_t *paddr);
 
 int ksceSysrootIsManufacturingMode(void);
 
+int ksceDebugPrintf(const char *fmt, ...);
+
+int ksceDebugPrintf2(int unk0, int unk1, const char *fmt, ...);
+
 #ifdef __cplusplus
 }
 #endif
