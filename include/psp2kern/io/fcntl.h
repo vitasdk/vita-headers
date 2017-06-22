@@ -120,6 +120,23 @@ int ksceIoRead(SceUID fd, void *data, SceSize size);
 int ksceIoReadAsync(SceUID fd, void *data, SceSize size);
 
 /**
+ * Read input at offset
+ *
+ * @par Example:
+ * @code
+ * bytes_read = ksceIoPread(fd, data, 100, 0x1000);
+ * @endcode
+ *
+ * @param fd - Opened file descriptor to read from
+ * @param data - Pointer to the buffer where the read data will be placed
+ * @param size - Size of the read in bytes
+ * @param offset - Offset to read
+ *
+ * @return < 0 on error.
+ */
+int ksceIoPread(SceUID fd, void *data, SceSize size, SceOff offset);
+
+/**
  * Write output
  *
  * @par Example:
@@ -145,6 +162,23 @@ int ksceIoWrite(SceUID fd, const void *data, SceSize size);
  * @return < 0 on error.
  */
 int ksceIoWriteAsync(SceUID fd, const void *data, SceSize size);
+
+/**
+ * Write output at offset
+ *
+ * @par Example:
+ * @code
+ * bytes_written = ksceIoPwrite(fd, data, 100, 0x1000);
+ * @endcode
+ *
+ * @param fd - Opened file descriptor to write to
+ * @param data - Pointer to the data to write
+ * @param size - Size of data to write
+ * @param offset - Offset to write
+ *
+ * @return The number of bytes written
+ */
+int ksceIoPwrite(SceUID fd, const void *data, SceSize size, SceOff offset);
 
 /**
  * Reposition read/write file descriptor offset
