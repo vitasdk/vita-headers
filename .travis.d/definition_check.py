@@ -6,10 +6,24 @@ import fnmatch
 CURR_DIR = os.path.dirname(os.path.realpath(__file__))
 DEF_FILE = 'definitions.dox'
 DEF_FILE_PATH = os.path.join(CURR_DIR, '..', 'docs', DEF_FILE)
+DB_FILE = 'db.yml'
+DB_FILE_PATH = os.path.join(CURR_DIR, '..', 'db.yml')
 INCLUDE_DIR = os.path.join(CURR_DIR, '..', 'include')
 
 DEFINE_RULE = re.compile(r' \*     \\defgroup (Sce\w+) \w+')
 USER_GROUP_RULE = re.compile(r' \* \\(user|kernel)group\{(Sce\w+)\}')
+
+FUNC_RULE_PATTERN = (
+    # ret
+    '^\w+\s+' +
+    # func name
+    '(_*k?sce\w+|__\w+)' +
+    # args; if define with multiline, end with comma, if not end with `);`
+    '\(.*(,|\);)' +
+    # white spaces
+    '\s*$'
+)
+FUNCTION_RULE = re.compile(FUNC_RULE_PATTERN)
 IGNORE_FILES = [
     'vitasdk.h',
     'vitasdkkern.h',
@@ -34,7 +48,22 @@ def read_def_groups():
             definitions[m.group(1)] = 0
     return definitions
 
-def check_headers(definitions):
+def read_nids():
+    nids = dict()
+    with open(DB_FILE_PATH, 'r') as d:
+        SECTION = None
+        for line in d.xreadlines():
+            line = line.strip()
+            k, v = line.split(':')[:2]
+            if not v.strip():
+                SECTION = k
+                continue
+            if SECTION != 'functions':
+                continue
+            nids[k] = 1
+    return nids
+
+def check_header_groups(definitions):
     errors = []
     # check exists in definitions
     for header_path in findfile(INCLUDE_DIR, '*.h'):
@@ -66,8 +95,33 @@ def check_headers(definitions):
                           (DEF_FILE, k))
     return errors
 
+def check_function_nids(nids):
+    errors = []
+    functions = dict()
+    for header_path in findfile(INCLUDE_DIR, '*.h'):
+        header_file = header_path.split('include/')[1]
+        if header_file in IGNORE_FILES:
+            continue
+        with open(header_path, 'r') as h:
+            have_group_define = False
+            for line in h.xreadlines():
+                m = FUNCTION_RULE.match(line)
+                if not m:
+                    continue
+                fn = m.group(1)
+                if functions.get(fn):
+                    errors.append('%s: Already defined %s' %
+                                  (header_file, fn))
+                    continue
+                if not nids.get(fn):
+                    errors.append('%s: Could not find NID %s' %
+                                  (header_file, fn))
+                functions[fn] = 1
+    return errors
+
 if __name__ == '__main__':
-    errors = check_headers(read_def_groups())
+    errors = check_header_groups(read_def_groups()) \
+        + check_function_nids(read_nids())
     if len(errors):
         for e in errors:
             print e
