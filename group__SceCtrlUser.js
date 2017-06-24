@@ -17,8 +17,8 @@ var group__SceCtrlUser =
       [ "SCE_CTRL_CIRCLE", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760acc26a837d4e5a5cfb62adaf48ddead2c", null ],
       [ "SCE_CTRL_CROSS", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760a477d551daa482e03598b67aaf4466923", null ],
       [ "SCE_CTRL_SQUARE", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760af935d4e61120671b2acdf6cee2f776e6", null ],
-      [ "SCE_CTRL_HEADPHONE", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760a7be5b5b91911f1074bb6d9b34fe92a02", null ],
       [ "SCE_CTRL_INTERCEPTED", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760a12085cf461189faeb160ccd99affe06d", null ],
+      [ "SCE_CTRL_HEADPHONE", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760a7be5b5b91911f1074bb6d9b34fe92a02", null ],
       [ "SCE_CTRL_VOLUP", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760a436d88aeb4ce14521088bd556eb863cc", null ],
       [ "SCE_CTRL_VOLDOWN", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760aeab7d0c864db59474af654aad4427963", null ],
       [ "SCE_CTRL_POWER", "group__SceCtrlUser.html#gga7e5a5d40bbb69e9af702d5dedac70760a3eaa931d99a6cf318f44bf035648c961", null ]
