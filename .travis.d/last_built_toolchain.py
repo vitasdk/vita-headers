@@ -29,8 +29,11 @@ number = build_info['repo']['last_build_number']
 for x in range(10):
     tag = (TAG_FORMAT % dict(branch='master', os='linux', build=int(number) - x))
     req = urllib2.Request(GITHUB_TAG + '/' + tag)
-    path = find_sdk(urllib2.urlopen(req).read())
-    if not path:
+    try:
+        path = find_sdk(urllib2.urlopen(req).read())
+        if not path:
+            continue
+    except urllib2.HTTPError:
         continue
     print GITHUB + path
     raise SystemExit(0)
