@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 set -e
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 cd $TRAVIS_BUILD_DIR
-curl -sL https://github.com/vitasdk/autobuilds/releases | grep linux | grep tar.bz2 | head -n 1 | cut -d '"' -f 2 | xargs -I PATH curl -L https://github.comPATH | tar xj
+curl -sL $(python $DIR/last_built_toolchain.py) | tar xj
