@@ -112,6 +112,16 @@ int ksceKernelFreeMemBlock(SceUID uid);
 */
 int ksceKernelGetMemBlockBase(SceUID uid, void **basep);
 
+/***
+ * Find the SceUID of a memory block
+ *
+ * @param[in] addr - Base address of the memory block
+ * @param[in] size - Size to search for (usally set to 0)
+ *
+ * @return SceUID of the memory block on success, < 0 on error.
+*/
+SceUID ksceKernelFindMemBlockByAddr(const void *addr, SceSize size);
+
 /**
  * Changes the block type
  *
