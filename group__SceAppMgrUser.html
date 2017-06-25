@@ -105,6 +105,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga11a4b09749234b6aa99f1764c6bb4ff9">sceAppMgrDestroyAppByName</a> (char *name)</td></tr>
 <tr class="memdesc:ga11a4b09749234b6aa99f1764c6bb4ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">name: The Title ID of the application <br /></td></tr>
 <tr class="separator:ga11a4b09749234b6aa99f1764c6bb4ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a04c57c6875a5e80fe43be0221fb248"><td class="memItemLeft" align="right" valign="top"><a id="ga5a04c57c6875a5e80fe43be0221fb248"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga5a04c57c6875a5e80fe43be0221fb248">sceAppMgrDestroyAppByAppId</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> appId)</td></tr>
+<tr class="memdesc:ga5a04c57c6875a5e80fe43be0221fb248"><td class="mdescLeft">&#160;</td><td class="mdescRight">appId: The application id of the application <br /></td></tr>
+<tr class="separator:ga5a04c57c6875a5e80fe43be0221fb248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3edf7ba35c47903d5a4cd9916ded48e4"><td class="memItemLeft" align="right" valign="top"><a id="ga3edf7ba35c47903d5a4cd9916ded48e4"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga3edf7ba35c47903d5a4cd9916ded48e4">sceAppMgrGetProcessIdByAppIdForShell</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> appId)</td></tr>
+<tr class="memdesc:ga3edf7ba35c47903d5a4cd9916ded48e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get process id by app id for shell. <br /></td></tr>
+<tr class="separator:ga3edf7ba35c47903d5a4cd9916ded48e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6f8ae1dc9b47e8dcba25eb599a59dce"><td class="memItemLeft" align="right" valign="top"><a id="gac6f8ae1dc9b47e8dcba25eb599a59dce"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gac6f8ae1dc9b47e8dcba25eb599a59dce">sceAppMgrGetRunningAppIdListForShell</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *appIds, int count)</td></tr>
+<tr class="memdesc:gac6f8ae1dc9b47e8dcba25eb599a59dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of running app ids (usually returns 1 app id) <br /></td></tr>
+<tr class="separator:gac6f8ae1dc9b47e8dcba25eb599a59dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7234b0f71099e86cc4dde971a7888bb7"><td class="memItemLeft" align="right" valign="top"><a id="ga7234b0f71099e86cc4dde971a7888bb7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>_sceAppMgrGetAppState</b> (SceAppMgrAppState *appState, uint32_t len, uint32_t version)</td></tr>
 <tr class="separator:ga7234b0f71099e86cc4dde971a7888bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +151,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga372b7edb499d710ac40016b9012511cc">sceAppMgrLaunchAppByName2</a> (const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam)</td></tr>
 <tr class="memdesc:ga372b7edb499d710ac40016b9012511cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">name: The Title ID of the application param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam <br /></td></tr>
 <tr class="separator:ga372b7edb499d710ac40016b9012511cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab865fbedcc3772e21b221cf1d5862966"><td class="memItemLeft" align="right" valign="top"><a id="gab865fbedcc3772e21b221cf1d5862966"></a>
+<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gab865fbedcc3772e21b221cf1d5862966">sceAppMgrLaunchAppByName2ForShell</a> (const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam)</td></tr>
+<tr class="memdesc:gab865fbedcc3772e21b221cf1d5862966"><td class="mdescLeft">&#160;</td><td class="mdescRight">name: The Title ID of the application param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam return AppId ? <br /></td></tr>
+<tr class="separator:gab865fbedcc3772e21b221cf1d5862966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9db93ab9560007190a344444baca0bd0"><td class="memItemLeft" align="right" valign="top"><a id="ga9db93ab9560007190a344444baca0bd0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga9db93ab9560007190a344444baca0bd0">sceAppMgrAppDataMount</a> (int id, char *mount_point)</td></tr>
 <tr class="memdesc:ga9db93ab9560007190a344444baca0bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar) <br /></td></tr>
