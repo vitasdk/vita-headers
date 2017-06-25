@@ -36,7 +36,9 @@ var searchData=
   ['user',['User',['../group__SceNetCtlUser.html',1,'']]],
   ['user',['User',['../group__SceNetUser.html',1,'']]],
   ['user',['User',['../group__SceNpDrmPackageUser.html',1,'']]],
+  ['user',['User',['../group__SceNpDrmUser.html',1,'']]],
   ['user',['User',['../group__SceOpenPsidUser.html',1,'']]],
+  ['user',['User',['../group__ScePafUser.html',1,'']]],
   ['user',['User',['../group__ScePgfUser.html',1,'']]],
   ['user',['User',['../group__ScePhotoExportUser.html',1,'']]],
   ['user',['User',['../group__ScePowerUser.html',1,'']]],
@@ -66,6 +68,7 @@ var searchData=
   ['usb_20virtual_20storage_20driver_20library',['USB Virtual Storage Driver Library',['../group__SceUsbstorVStorDriver.html',1,'']]],
   ['user',['User',['../group__SceUsbstorVStorDriverUser.html',1,'']]],
   ['user',['User',['../group__SceVideoDecUser.html',1,'']]],
+  ['user',['User',['../group__SceVideoExportUser.html',1,'']]],
   ['unk',['unk',['../group__SceCtrlUser.html#ga15c58e5ea499c2108b7e04ef60740a86',1,'SceCtrlActuator::unk()'],['../group__SceCtrlUser.html#gaf6ee01c0633dc66dcf2da6b7d1b7621b',1,'SceCtrlPortInfo::unk()']]],
   ['usermsgparam',['userMsgParam',['../group__SceMessageDialogUser.html#gacec3853d564aa3bf9d50863c8c413b58',1,'SceMsgDialogParam']]],
   ['userparam',['userParam',['../group__SceAppUtilUser.html#gae91086ccf24d94482c46a14f35f29d67',1,'SceAppUtilSaveDataSlot::userParam()'],['../group__SceAppUtilUser.html#ga2606b270579d2d52833b258e01f61832',1,'SceAppUtilSaveDataSlotParam::userParam()']]]

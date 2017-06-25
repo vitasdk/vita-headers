@@ -100,6 +100,8 @@ var group__SceFcntlUser =
     [ "sceIoOpen", "group__SceFcntlUser.html#ga88dc53eaa661c18698ff606859f69ec8", null ],
     [ "sceIoOpenAsync", "group__SceFcntlUser.html#gaa40c35536dfada200f9963b51ebc0b0b", null ],
     [ "sceIoPollAsync", "group__SceFcntlUser.html#ga6065e5b5f6e1851fea13662e0f241901", null ],
+    [ "sceIoPread", "group__SceFcntlUser.html#ga2efe04d9b1400860ce35aef8129efd05", null ],
+    [ "sceIoPwrite", "group__SceFcntlUser.html#ga23326161aae209fdecf47256d4560d22", null ],
     [ "sceIoRead", "group__SceFcntlUser.html#ga5dc250bdac642a1c7365ea18a21d3635", null ],
     [ "sceIoReadAsync", "group__SceFcntlUser.html#gac39b5495f04c81e5efefc7b7fbabdf7b", null ],
     [ "sceIoRemove", "group__SceFcntlUser.html#gaf0878533048cf65a30d96350d296b253", null ],

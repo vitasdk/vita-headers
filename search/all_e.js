@@ -9,5 +9,6 @@ var searchData=
   ['numtextures',['numTextures',['../group__SceGxtUser.html#gae860d9be2c1f3a221509c39273d9089d',1,'SceGxtHeader']]],
   ['numwaitthreads',['numWaitThreads',['../group__SceThreadMgrUser.html#ga77ee30ffb32694f53a405f0e81aa9989',1,'SceKernelSemaInfo::numWaitThreads()'],['../group__SceThreadMgrUser.html#gab929111a2429f8351b817ba01949648d',1,'SceKernelMutexInfo::numWaitThreads()'],['../group__SceThreadMgrUser.html#ga2f16f3839984fbf70fa382148f63fbf6',1,'SceKernelCondInfo::numWaitThreads()']]],
   ['network_20control_20library',['Network Control Library',['../group__SceNetCtl.html',1,'']]],
+  ['npdrm_20utility',['NpDrm utility',['../group__SceNpDrm.html',1,'']]],
   ['npdrmpackage_20utility',['NpDrmPackage utility',['../group__SceNpDrmPackage.html',1,'']]]
 ];

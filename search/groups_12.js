@@ -36,7 +36,9 @@ var searchData=
   ['user',['User',['../group__SceNetCtlUser.html',1,'']]],
   ['user',['User',['../group__SceNetUser.html',1,'']]],
   ['user',['User',['../group__SceNpDrmPackageUser.html',1,'']]],
+  ['user',['User',['../group__SceNpDrmUser.html',1,'']]],
   ['user',['User',['../group__SceOpenPsidUser.html',1,'']]],
+  ['user',['User',['../group__ScePafUser.html',1,'']]],
   ['user',['User',['../group__ScePgfUser.html',1,'']]],
   ['user',['User',['../group__ScePhotoExportUser.html',1,'']]],
   ['user',['User',['../group__ScePowerUser.html',1,'']]],
@@ -65,5 +67,6 @@ var searchData=
   ['user',['User',['../group__SceUsbSerialUser.html',1,'']]],
   ['usb_20virtual_20storage_20driver_20library',['USB Virtual Storage Driver Library',['../group__SceUsbstorVStorDriver.html',1,'']]],
   ['user',['User',['../group__SceUsbstorVStorDriverUser.html',1,'']]],
-  ['user',['User',['../group__SceVideoDecUser.html',1,'']]]
+  ['user',['User',['../group__SceVideoDecUser.html',1,'']]],
+  ['user',['User',['../group__SceVideoExportUser.html',1,'']]]
 ];

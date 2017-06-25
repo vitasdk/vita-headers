@@ -3,7 +3,7 @@ var searchData=
   ['pad',['pad',['../group__SceAppUtilUser.html#gae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem::pad()'],['../group__SceGxtUser.html#ga14e12fc1cc8117775be90486d564dc94',1,'SceGxtHeader::pad()']]],
   ['paletteindex',['paletteIndex',['../group__SceGxtUser.html#ga47e0ff16339e41f1fd99e4bf61d7c2df',1,'SceGxtTextureInfo']]],
   ['parentalstatus',['parentalstatus',['../group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b',1,'SceLocationPermissionInfo']]],
-  ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate']]],
+  ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate::path()'],['../group__SceVideoExportUser.html#ga794c1b18e09138204357290a701450dc',1,'VideoExportInputParam::path()'],['../group__SceVideoExportUser.html#ga37c5cd7c67b4bc641077d0715e5384c6',1,'VideoExportOutputParam::path()']]],
   ['perms',['perms',['../group__SceModulemgrUser.html#gabc6834d76118d38b49191bd37c5cc05a',1,'SceKernelSegmentInfo']]],
   ['phototitle',['photoTitle',['../group__ScePhotoExportUser.html#ga9d23c119763c0be9f042ff0d9cf01503',1,'PhotoExportParam::photoTitle()'],['../group__SceScreenShotUser.html#ga670e84779f617e0172a286e05e90b841',1,'SceScreenShotParam::photoTitle()']]],
   ['pinfo',['pInfo',['../group__SceAudiodecUser.html#gad31633c35d75fcde2f8d0221111fb1b2',1,'SceAudiodecCtrl::pInfo()'],['../group__SceAudioencUser.html#ga2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl::pInfo()']]],

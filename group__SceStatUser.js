@@ -83,6 +83,7 @@ var group__SceStatUser =
     [ "SCE_SO_IWOTH", "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d", null ],
     [ "SCE_SO_IXOTH", "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7ae1de730fbc3b0012e320b46ef9b298f0", null ],
     [ "sceIoChstat", "group__SceStatUser.html#ga89361a511354826e6ac54ff587368e33", null ],
+    [ "sceIoChstatByFd", "group__SceStatUser.html#ga264d77b3e53139e704b3535edcd189d0", null ],
     [ "sceIoGetstat", "group__SceStatUser.html#ga4e3afddc6b738ae99872eb74eb70a509", null ],
     [ "sceIoGetstatByFd", "group__SceStatUser.html#gaa0a12c50241cb6fd705c8e569163fb33", null ],
     [ "sceIoMkdir", "group__SceStatUser.html#gae05d18e89cc4baa82de5ce6aa14e7e95", null ],

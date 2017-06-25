@@ -95,6 +95,7 @@ var searchData=
   ['sceiocancel',['sceIoCancel',['../group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22',1,'fcntl.h']]],
   ['sceiochangeasyncpriority',['sceIoChangeAsyncPriority',['../group__SceFcntlUser.html#ga099e9c6cb3e72104424cb391ad77b0a0',1,'fcntl.h']]],
   ['sceiochstat',['sceIoChstat',['../group__SceStatUser.html#ga89361a511354826e6ac54ff587368e33',1,'stat.h']]],
+  ['sceiochstatbyfd',['sceIoChstatByFd',['../group__SceStatUser.html#ga264d77b3e53139e704b3535edcd189d0',1,'stat.h']]],
   ['sceioclose',['sceIoClose',['../group__SceFcntlUser.html#ga125921b287807c747491aed6ef16acd9',1,'fcntl.h']]],
   ['sceiocloseasync',['sceIoCloseAsync',['../group__SceFcntlUser.html#ga2e37fd75f4a07b76bb0a9e4a4deda70e',1,'fcntl.h']]],
   ['sceiodclose',['sceIoDclose',['../group__SceDirEntUser.html#gacc2ca2130e3e8947f5fd18f5e2bd10e9',1,'dirent.h']]],
@@ -115,6 +116,8 @@ var searchData=
   ['sceioopen',['sceIoOpen',['../group__SceFcntlUser.html#ga88dc53eaa661c18698ff606859f69ec8',1,'fcntl.h']]],
   ['sceioopenasync',['sceIoOpenAsync',['../group__SceFcntlUser.html#gaa40c35536dfada200f9963b51ebc0b0b',1,'fcntl.h']]],
   ['sceiopollasync',['sceIoPollAsync',['../group__SceFcntlUser.html#ga6065e5b5f6e1851fea13662e0f241901',1,'fcntl.h']]],
+  ['sceiopread',['sceIoPread',['../group__SceFcntlUser.html#ga2efe04d9b1400860ce35aef8129efd05',1,'fcntl.h']]],
+  ['sceiopwrite',['sceIoPwrite',['../group__SceFcntlUser.html#ga23326161aae209fdecf47256d4560d22',1,'fcntl.h']]],
   ['sceioread',['sceIoRead',['../group__SceFcntlUser.html#ga5dc250bdac642a1c7365ea18a21d3635',1,'fcntl.h']]],
   ['sceioreadasync',['sceIoReadAsync',['../group__SceFcntlUser.html#gac39b5495f04c81e5efefc7b7fbabdf7b',1,'fcntl.h']]],
   ['sceioremove',['sceIoRemove',['../group__SceFcntlUser.html#gaf0878533048cf65a30d96350d296b253',1,'fcntl.h']]],
@@ -305,5 +308,6 @@ var searchData=
   ['sceusbstorvstorsetdeviceinfo',['sceUsbstorVStorSetDeviceInfo',['../group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533',1,'usbstorvstor.h']]],
   ['sceusbstorvstorsetimgfilepath',['sceUsbstorVStorSetImgFilePath',['../group__SceUsbstorVStorDriverUser.html#ga3e1ae93f0049e1ef455141314dd763b3',1,'usbstorvstor.h']]],
   ['sceusbstorvstorstart',['sceUsbstorVStorStart',['../group__SceUsbstorVStorDriverUser.html#ga91ac980e580d85503ba23b8eb191d9bb',1,'usbstorvstor.h']]],
-  ['sceusbstorvstorstop',['sceUsbstorVStorStop',['../group__SceUsbstorVStorDriverUser.html#ga342bce6f1463f98310c428884d508a63',1,'usbstorvstor.h']]]
+  ['sceusbstorvstorstop',['sceUsbstorVStorStop',['../group__SceUsbstorVStorDriverUser.html#ga342bce6f1463f98310c428884d508a63',1,'usbstorvstor.h']]],
+  ['scevideoexportfromfile',['sceVideoExportFromFile',['../group__SceVideoExportUser.html#gae32e438dc817ea300cd368812143688f',1,'videoexport.h']]]
 ];

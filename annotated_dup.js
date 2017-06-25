@@ -256,5 +256,7 @@ var annotated_dup =
     [ "SceUVector4", "group__SceTypesUser.html#structSceUVector4", "group__SceTypesUser_structSceUVector4" ],
     [ "SceVideodecQueryInitInfo", "group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo", "group__SceVideoDecUser_unionSceVideodecQueryInitInfo" ],
     [ "SceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser_structSceVideodecQueryInitInfoHwAvcdec" ],
-    [ "SceVideodecTimeStamp", "group__SceVideoDecUser.html#structSceVideodecTimeStamp", "group__SceVideoDecUser_structSceVideodecTimeStamp" ]
+    [ "SceVideodecTimeStamp", "group__SceVideoDecUser.html#structSceVideodecTimeStamp", "group__SceVideoDecUser_structSceVideodecTimeStamp" ],
+    [ "VideoExportInputParam", "group__SceVideoExportUser.html#structVideoExportInputParam", "group__SceVideoExportUser_structVideoExportInputParam" ],
+    [ "VideoExportOutputParam", "group__SceVideoExportUser.html#structVideoExportOutputParam", "group__SceVideoExportUser_structVideoExportOutputParam" ]
 ];

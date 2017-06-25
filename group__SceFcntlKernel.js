@@ -101,6 +101,8 @@ var group__SceFcntlKernel =
     [ "ksceIoOpen", "group__SceFcntlKernel.html#gab063eafa246ec17e96caea985fc8ad7e", null ],
     [ "ksceIoOpenAsync", "group__SceFcntlKernel.html#ga18d77ff63aba0b732c7a9e6a51b654fd", null ],
     [ "ksceIoPollAsync", "group__SceFcntlKernel.html#ga6386a98d00f116d47e1b25447562bdc1", null ],
+    [ "ksceIoPread", "group__SceFcntlKernel.html#ga5a02c9bd89b3e79524cd18336d12c324", null ],
+    [ "ksceIoPwrite", "group__SceFcntlKernel.html#ga3ef81fe38532500ab3b2385595bd9c67", null ],
     [ "ksceIoRead", "group__SceFcntlKernel.html#ga79bd3298402eb3d60aeeae08342a8e4a", null ],
     [ "ksceIoReadAsync", "group__SceFcntlKernel.html#ga0cd2f861ce324920ddca703e4c0fb90c", null ],
     [ "ksceIoRemove", "group__SceFcntlKernel.html#gaf1c3ab11e7942db4639e4652a67cea3f", null ],
