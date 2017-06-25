@@ -16,13 +16,10 @@ extern "C" {
 
 /** Describes a single directory entry */
 typedef struct SceIoDirent {
-	/** File status. */
-	SceIoStat	d_stat;
-	/** File name. */
-	char	d_name[256];
-	/** Device-specific data. */
-	void	*d_private;
-	int	dummy;
+	SceIoStat d_stat; //!< File status
+	char d_name[256]; //!< File name
+	void *d_private;  //!< Device-specific data
+	int dummy;        //!< Unknown
 } SceIoDirent;
 
 /**
@@ -43,8 +40,8 @@ SceUID sceIoDopen(const char *dirname);
 /**
   * Reads an entry from an opened file descriptor.
   *
-  * @param fd - Already opened file descriptor (using sceIoDopen)
-  * @param dir - Pointer to an io_dirent_t structure to hold the file information
+  * @param fd - Already opened file descriptor (using ::sceIoDopen)
+  * @param dir - Pointer to a ::SceIoDirent structure to hold the file information
   *
   * @return Read status
   * -   0 - No more directory entries left
@@ -56,7 +53,7 @@ int sceIoDread(SceUID fd, SceIoDirent *dir);
 /**
   * Close an opened directory file descriptor
   *
-  * @param fd - Already opened file descriptor (using sceIoDopen)
+  * @param fd - Already opened file descriptor (using ::sceIoDopen)
   * @return < 0 on error
   */
 int sceIoDclose(SceUID fd);
