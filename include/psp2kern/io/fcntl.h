@@ -32,6 +32,7 @@ typedef enum SceIoMode {
 	SCE_O_NOBUF     = 0x4000,                         //!< Number device buffer
 	SCE_O_NOWAIT    = 0x8000                          //!< Asynchronous I/O
 	SCE_O_FDEXCL    = 0x01000000,                     //!< Exclusive access
+	SCE_O_PWLOCK    = 0x02000000,                     //!< Power control lock
 	SCE_O_FGAMEDATA = 0x40000000                      //!< Gamedata access
 } SceIoMode;
 
