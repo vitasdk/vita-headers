@@ -44,7 +44,7 @@ typedef enum SceIoSeekMode {
 typedef enum SceIoDevType {
 	SCE_DEV_TYPE_NULL     = 0x00, //!< Dummy device
 	SCE_DEV_TYPE_CHAR     = 0x01, //!< Character device
-	SCE_DEV_TYPE_BLOCK    = 0X04, //!< Block device
+	SCE_DEV_TYPE_BLOCK    = 0x04, //!< Block device
 	SCE_DEV_TYPE_FS       = 0x10, //!< File system device
 	SCE_DEV_TYPE_ALIAS    = 0x20, //!< Alias name
 	SCE_DEV_TYPE_MOUNTPT  = 0x40  //!< Mount point

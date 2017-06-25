@@ -19,7 +19,7 @@ typedef struct SceIoDirent {
 	SceIoStat d_stat; //!< File status
 	char d_name[256]; //!< File name
 	void *d_private;  //!< Device-specific data
-	int dummy;        //!< Unknown
+	int dummy;        //!< Dummy data
 } SceIoDirent;
 
 /**
