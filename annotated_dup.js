@@ -152,6 +152,7 @@ var annotated_dup =
     [ "SceKernelSystemInfo", "group__SceThreadMgrUser.html#structSceKernelSystemInfo", "group__SceThreadMgrUser_structSceKernelSystemInfo" ],
     [ "SceKernelSystemInfo.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo", "group__SceThreadMgrUser_structSceKernelSystemInfo_8cpuInfo" ],
     [ "SceKernelSystemInfo.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo", "group__SceThreadMgrUser_structSceKernelSystemInfo_8cpuInfo" ],
+    [ "SceKernelSystemInfo.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo", "group__SceThreadMgrUser_structSceKernelSystemInfo_8cpuInfo" ],
     [ "SceKernelThreadInfo", "group__SceThreadMgrUser.html#structSceKernelThreadInfo", "group__SceThreadMgrUser_structSceKernelThreadInfo" ],
     [ "SceKernelThreadOptParam", "group__SceThreadMgrUser.html#structSceKernelThreadOptParam", "group__SceThreadMgrUser_structSceKernelThreadOptParam" ],
     [ "SceKernelThreadRunStatus", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus", "group__SceThreadMgrUser_structSceKernelThreadRunStatus" ],

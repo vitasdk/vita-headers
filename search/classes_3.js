@@ -146,7 +146,7 @@ var searchData=
   ['scekernelsemainfo',['SceKernelSemaInfo',['../group__SceThreadMgrUser.html#structSceKernelSemaInfo',1,'']]],
   ['scekernelsemaoptparam',['SceKernelSemaOptParam',['../group__SceThreadMgrUser.html#structSceKernelSemaOptParam',1,'']]],
   ['scekernelsysteminfo',['SceKernelSystemInfo',['../group__SceThreadMgrUser.html#structSceKernelSystemInfo',1,'']]],
-  ['scekernelsysteminfo_2ecpuinfo',['SceKernelSystemInfo.cpuInfo',['../group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo',1,'SceKernelSystemInfo.cpuInfo'],['../group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo',1,'SceKernelSystemInfo.cpuInfo']]],
+  ['scekernelsysteminfo_2ecpuinfo',['SceKernelSystemInfo.cpuInfo',['../group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo',1,'SceKernelSystemInfo.cpuInfo'],['../group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo',1,'SceKernelSystemInfo.cpuInfo'],['../group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo',1,'SceKernelSystemInfo.cpuInfo']]],
   ['scekernelthreadinfo',['SceKernelThreadInfo',['../group__SceThreadMgrUser.html#structSceKernelThreadInfo',1,'']]],
   ['scekernelthreadoptparam',['SceKernelThreadOptParam',['../group__SceThreadMgrUser.html#structSceKernelThreadOptParam',1,'']]],
   ['scekernelthreadrunstatus',['SceKernelThreadRunStatus',['../group__SceThreadMgrUser.html#structSceKernelThreadRunStatus',1,'']]],

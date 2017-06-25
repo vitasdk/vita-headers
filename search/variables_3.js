@@ -11,5 +11,6 @@ var searchData=
   ['detail',['detail',['../group__SceAppUtilUser.html#ga414bb4cf053496ac6b97fed47af719de',1,'SceAppUtilSaveDataSlotParam']]],
   ['dialogmode',['dialogMode',['../group__SceImeUser.html#ga6b8bd8d09fe7912aa1d78450ea8cd314',1,'SceImeDialogParam']]],
   ['direction',['direction',['../group__SceLocationUser.html#gaeecc7aa4df7eeba837f21cd636b54a61',1,'SceLocationLocationInfo']]],
-  ['drivermemblock',['driverMemBlock',['../group__SceGxmUser.html#ga41939c7d27a460b8f47d514c6d575cc7',1,'SceGxmRenderTargetParams']]]
+  ['drivermemblock',['driverMemBlock',['../group__SceGxmUser.html#ga41939c7d27a460b8f47d514c6d575cc7',1,'SceGxmRenderTargetParams']]],
+  ['dummy',['dummy',['../group__SceDirEntUser.html#gac2a6943eda6b27d5c20d6389ad9ab680',1,'SceIoDirent']]]
 ];
