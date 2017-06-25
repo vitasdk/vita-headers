@@ -71,6 +71,15 @@ int sceAppMgrDestroyOtherApp(void);
 //! name: The Title ID of the application
 int sceAppMgrDestroyAppByName(char *name);
 
+//! appId: The application id of the application
+int sceAppMgrDestroyAppByAppId(SceUID appId);
+
+//! Get process id by app id for shell
+SceUID sceAppMgrGetProcessIdByAppIdForShell(SceUID appId);
+
+//! Get list of running app ids (usually returns 1 app id)
+int sceAppMgrGetRunningAppIdListForShell(SceUID *appIds, int count);
+
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
 
 /**
@@ -105,6 +114,11 @@ int sceAppMgrLaunchAppByUri(int flags, char *uri);
 //! name: The Title ID of the application
 //! param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam
 int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
+
+//! name: The Title ID of the application
+//! param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam
+//! return AppId ?
+SceUID sceAppMgrLaunchAppByName2ForShell(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
 //! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
 int sceAppMgrAppDataMount(int id, char *mount_point);
