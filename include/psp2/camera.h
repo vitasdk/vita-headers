@@ -144,8 +144,6 @@ int sceCameraGetExposureCeiling(int devnum, int *pMode);
 int sceCameraSetExposureCeiling(int devnum, int mode);
 int sceCameraGetAutoControlHold(int devnum, int *pMode);
 int sceCameraSetAutoControlHold(int devnum, int mode);
-int sceCameraGetEV(int devnum, int *pMode);
-int sceCameraSetEV(int devnum, int mode);
 int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 
 #ifdef __cplusplus
