@@ -296,7 +296,7 @@ int sceCameraIsActive(int devnum);
  * Get camera saturation value.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLevel - Pointer to a variable where to save the result. (See ::SceCameraSaturation)
+ * @param[out] pLevel - Pointer to a variable where to save the result. (See ::SceCameraSaturation)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -316,7 +316,7 @@ int sceCameraSetSaturation(int devnum, int level);
  * Get camera brightness value.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLevel - Pointer to a variable where to save the result.
+ * @param[out] pLevel - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
@@ -338,7 +338,7 @@ int sceCameraSetBrightness(int devnum, int level);
  * Get camera contrast value.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLevel - Pointer to a variable where to save the result.
+ * @param[out] pLevel - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
@@ -360,7 +360,7 @@ int sceCameraSetContrast(int devnum, int level);
  * Get camera sharpness value.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLevel - Pointer to a variable where to save the result. (See ::SceCameraSharpness)
+ * @param[out] pLevel - Pointer to a variable where to save the result. (See ::SceCameraSharpness)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -380,7 +380,7 @@ int sceCameraSetSharpness(int devnum, int level);
  * Get camera reverse mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraReverse)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraReverse)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -400,7 +400,7 @@ int sceCameraSetReverse(int devnum, int mode);
  * Get active camera effects.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result.
+ * @param[out] pMode - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
@@ -420,7 +420,7 @@ int sceCameraSetEffect(int devnum, int mode);
  * Get camera exposure compensation value.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLevel - Pointer to a variable where to save the result (See ::SceCameraExposureCompensation).
+ * @param[out] pLevel - Pointer to a variable where to save the result (See ::SceCameraExposureCompensation).
  *
  * @return SCE_OK , <0 on error.
  */
@@ -440,7 +440,7 @@ int sceCameraSetEV(int devnum, int level);
  * Get camera zoom value.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLevel - Pointer to a variable where to save the result.
+ * @param[out] pLevel - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
@@ -460,7 +460,7 @@ int sceCameraSetZoom(int devnum, int level);
  * Get camera anti-flickering mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraAntiFlicker)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraAntiFlicker)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -480,7 +480,7 @@ int sceCameraSetAntiFlicker(int devnum, int mode);
  * Get camera ISO speed mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraISO)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraISO)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -500,7 +500,7 @@ int sceCameraSetISO(int devnum, int mode);
  * Get camera gain mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraGain)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraGain)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -520,7 +520,7 @@ int sceCameraSetGain(int devnum, int mode);
  * Get camera white balance mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraWhiteBalance)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraWhiteBalance)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -540,7 +540,7 @@ int sceCameraSetWhiteBalance(int devnum, int mode);
  * Get camera backlight compensation mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraBacklight)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraBacklight)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -560,7 +560,7 @@ int sceCameraSetBacklight(int devnum, int mode);
  * Get nightmode mode.
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result. (See ::SceCameraNightmode)
+ * @param[out] pMode - Pointer to a variable where to save the result. (See ::SceCameraNightmode)
  *
  * @return SCE_OK , <0 on error.
  */
@@ -580,7 +580,7 @@ int sceCameraSetNightmode(int devnum, int mode);
  * Get exposure ceiling mode. (?)
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result.
+ * @param[out] pMode - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
@@ -600,7 +600,7 @@ int sceCameraSetExposureCeiling(int devnum, int mode);
  * Get auto control hold mode. (?)
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pMode - Pointer to a variable where to save the result.
+ * @param[out] pMode - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
@@ -620,7 +620,7 @@ int sceCameraSetAutoControlHold(int devnum, int mode);
  * Get camera device location. (?)
  *
  * @param[in] devnum - One of ::SceCameraDevice.
- * @param[in] pLocation - Pointer to a variable where to save the result.
+ * @param[out] pLocation - Pointer to a variable where to save the result.
  *
  * @return SCE_OK , <0 on error.
  */
