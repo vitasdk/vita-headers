@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pad',['pad',['../group__SceAppUtilUser.html#gae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem::pad()'],['../group__SceGxtUser.html#ga14e12fc1cc8117775be90486d564dc94',1,'SceGxtHeader::pad()']]],
+  ['pad',['pad',['../group__SceAppUtilUser.html#gae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem::pad()'],['../group__SceCameraUser.html#ga772a366fa0830116a944a100386750b7',1,'SceCameraInfo::pad()'],['../group__SceGxtUser.html#ga14e12fc1cc8117775be90486d564dc94',1,'SceGxtHeader::pad()']]],
   ['paletteindex',['paletteIndex',['../group__SceGxtUser.html#ga47e0ff16339e41f1fd99e4bf61d7c2df',1,'SceGxtTextureInfo']]],
   ['parentalstatus',['parentalstatus',['../group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b',1,'SceLocationPermissionInfo']]],
   ['path',['path',['../group__ScePromoterUtilUser.html#ga9502adfd940ed44d8d41cf232a51d6ed',1,'ScePromoterUtilityLAUpdate::path()'],['../group__SceVideoExportUser.html#ga794c1b18e09138204357290a701450dc',1,'VideoExportInputParam::path()'],['../group__SceVideoExportUser.html#ga37c5cd7c67b4bc641077d0715e5384c6',1,'VideoExportOutputParam::path()']]],
@@ -16,6 +16,7 @@ var searchData=
   ['poutputes',['pOutputEs',['../group__SceAudioencUser.html#gac352baa6d5587fc7223769e46e147df2',1,'SceAudioencCtrl']]],
   ['ppcm',['pPcm',['../group__SceAudiodecUser.html#ga1ccae11df48a9852002f4f4e98ab5797',1,'SceAudiodecCtrl']]],
   ['ppicture',['pPicture',['../group__SceVideoDecUser.html#ga180cbb7fc4da1185fab46c998ae22b2b',1,'SceAvcdecFrame']]],
+  ['priority',['priority',['../group__SceCameraUser.html#ga9cb79a755c2a090cbdcff993ab122f17',1,'SceCameraInfo']]],
   ['processid',['processId',['../group__SceThreadMgrUser.html#gadeff847365036cb16421d965b6b17c80',1,'SceKernelThreadInfo']]],
   ['progbarparam',['progBarParam',['../group__SceMessageDialogUser.html#gaaebe622651f725bfdab05b062e942b3e',1,'SceMsgDialogParam']]]
 ];
