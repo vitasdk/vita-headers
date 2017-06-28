@@ -600,7 +600,7 @@ typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
 /** Event flag creation attributes */
 typedef enum SceEventFlagAttributes {
   /** Allow the event flag to be waited upon by multiple threads */
-  SCE_EVENT_WAITMULTIPLE = 0x200
+  SCE_EVENT_WAITMULTIPLE = 0x1000
 } SceEventFlagAttributes;
 
 /** Event flag wait types */

@@ -153,9 +153,9 @@ typedef enum SceCameraAntiFlicker {
 /** Enumeration for the camera ISO speed modes. */
 typedef enum SceCameraISO {
 	SCE_CAMERA_ISO_AUTO = 1,  //!< Automatic mode
-	SCE_CAMERA_ISO_100 = 100, //!< ISO100/21°
-	SCE_CAMERA_ISO_200 = 200, //!< ISO200/24°
-	SCE_CAMERA_ISO_400 = 400  //!< ISO400/27°
+	SCE_CAMERA_ISO_100 = 100, //!< ISO100/21ï¿½
+	SCE_CAMERA_ISO_200 = 200, //!< ISO200/24ï¿½
+	SCE_CAMERA_ISO_400 = 400  //!< ISO400/27ï¿½
 } SceCameraISO;
 
 /** Enumeration for the camera gain modes. */
@@ -624,6 +624,7 @@ int sceCameraSetAutoControlHold(int devnum, int mode);
  *
  * @return SCE_OK , <0 on error.
  */
+
 int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 
 #ifdef __cplusplus

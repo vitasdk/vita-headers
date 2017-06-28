@@ -83,6 +83,7 @@ typedef enum SceSysmoduleModuleId {
 /* internal module IDs */
 typedef enum SceSysmoduleInternalModuleId {
 	SCE_SYSMODULE_PAF                   = 0x80000008,
+	SCE_SYSMODULE_VIDEO_EXPORT          = 0x80000020,
 	SCE_SYSMODULE_PROMOTER_UTIL         = 0x80000024
 } SceSysmoduleInternalModuleId;
 

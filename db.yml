@@ -5666,13 +5666,9 @@ modules:
           ksceSysconGetManufacturesStatus: 0x3E09A1F4
           ksceSysconGetTemperatureLog: 0x3B354824
           ksceSysconGetUsbDetStatus: 0xEF810687
-          ksceSysconHasWWAN: 0xCBD6D8BC
           ksceSysconIduModeClear: 0x34574496
           ksceSysconIduModeSet: 0x956D07CB
           ksceSysconIsDownLoaderMode: 0x9ADD60D2
-          ksceSysconIsIduMode: 0xCBD6D8BC
-          ksceSysconIsMCEmuCapable: 0xCBD6D8BC
-          ksceSysconIsShowMode: 0xCBD6D8BC
           ksceSysconLoadConfigstorageScript: 0x89C5CFD6
           ksceSysconLogReadData: 0x487D97F3
           ksceSysconLogStart: 0x4E55CF5E
@@ -5781,14 +5777,18 @@ modules:
         nid: 0xA7D28DAE
         functions:
           sce_paf_private_free: 0x1B77082E
-          sce_paf_private_memset: 0xE148AF94
-          sce_paf_private_strcmp: 0x5CD08A47
           sce_paf_private_malloc: 0xFC5CD359
           sce_paf_private_memcpy: 0x2C5B6F9C
-          sce_paf_private_strlen: 0xF5A2AA0C
+          sce_paf_private_memset: 0xE148AF94
           sce_paf_private_snprintf: 0x4E0D907E
+          sce_paf_private_strcasecmp: 0x70A459B2
           sce_paf_private_strchr: 0x1A22784C
+          sce_paf_private_strcmp: 0x5CD08A47
+          sce_paf_private_strlen: 0xF5A2AA0C
+          sce_paf_private_strncasecmp: 0xA6014289
           sce_paf_private_strncmp: 0x1E1EA818
+          sce_paf_private_strncpy: 0x5883A6E3
+          sce_paf_private_strrchr: 0xFA2C892F
   SceKernelDmacMgr:
     nid: 0xF926C804
     libraries:
@@ -5804,3 +5804,52 @@ modules:
         functions:
           ksceDmacMemcpy: 0x00896B11
           ksceDmacMemset: 0x4BAC049B
+  SceCompat:
+    nid: 0x8F2D0378
+    libraries:
+      SceCompat:
+        kernel: true
+        nid: 0x0F35909D
+        functions:
+          sceCompatAllocCdramWithHole: 0xA5039FFA
+          sceCompatAvailableColorSpaceSetting: 0x456226DD
+          sceCompatCache: 0x6777390E
+          sceCompatCheckPocketStation: 0x96FC2A87
+          sceCompatDatRead: 0xCBE73EBE
+          sceCompatFrameBufferInit: 0xBC0E2B4C
+          sceCompatGetCurrentSecureTick: 0xA073EBEE
+          sceCompatGetDevInf: 0x138006A8
+          sceCompatGetPeripheralState: 0x176B2906
+          sceCompatGetPrimaryHead: 0xDC9EE33A
+          sceCompatGetPspSystemSoftwareVersion: 0xB113DCC0
+          sceCompatGetStatus: 0xD2E3370E
+          sceCompatGetTitleList: 0x99F13E04
+          sceCompatGetUpdateState: 0x0CDE9EC5
+          sceCompatIdStorageLookup: 0x94AAA245
+          sceCompatInitEx: 0xE97C1B5F
+          sceCompatInterrupt: 0xD6AA36DD
+          sceCompatIsPocketStationTitle: 0x7DCFBCCE
+          sceCompatLCDCSync: 0xBD177787
+          sceCompatReadShared32: 0x73AA4871
+          sceCompatReturnValueEx: 0xCC02A9FF
+          sceCompatSetDisplayConfig: 0x32BA3DCF
+          sceCompatSetRif: 0xD8B69F23
+          sceCompatSetSuspendSema: 0xDD30239E
+          sceCompatSetUpdateState: 0x8A44206F
+          sceCompatStart: 0x8CA1632D
+          sceCompatStop: 0xFCE2422F
+          sceCompatSuspendResume: 0x324112CA
+          sceCompatUninit: 0xEF929397
+          sceCompatWaitAndGetRequest: 0x8176C238
+          sceCompatWaitIntr: 0xC1E14CF5
+          sceCompatWaitSpecialRequest: 0x714F7ED6
+          sceCompatWriteShared32: 0x1CD51530
+          sceCompatWriteSharedCtrl: 0x2306FFED
+  SceVideoExport:
+    nid: 0x86B46C2D
+    libraries:
+      SceVideoExport:
+        kernel: false
+        nid: 0xF0812A7C
+        functions:
+          sceVideoExportFromFile: 0x4F60A3C8

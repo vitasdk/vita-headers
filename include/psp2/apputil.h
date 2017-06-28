@@ -41,8 +41,6 @@ typedef unsigned int SceAppUtilBootAttribute;
 typedef unsigned int SceAppUtilAppEventType;
 typedef unsigned int SceAppUtilSaveDataSlotId;
 typedef unsigned int SceAppUtilSaveDataSlotStatus;
-typedef unsigned int SceAppUtilSaveDataSaveMode;
-typedef unsigned int SceAppUtilSaveDataRemoveMode;
 typedef unsigned int SceAppUtilAppParamId;
 typedef unsigned int SceAppUtilBgdlStatusType;
 
@@ -104,7 +102,7 @@ typedef struct SceAppUtilSaveDataSaveItem {
 	const void *buf;                  //!< Buffer of savedata file
 	uint32_t pad;                     //!< Padding
 	SceOff offset;                    //!< Offset of savedata file
-	SceAppUtilSaveDataSaveMode mode;  //!< Savedata save mode
+	int mode;                         //!< Savedata save mode (One of ::SceAppUtilSaveDataSaveMode)
 	uint8_t reserved[36];             //!< Reserved range
 } SceAppUtilSaveDataSaveItem;
 
@@ -126,7 +124,7 @@ typedef struct SceAppUtilSaveDataFileSlot {
 
 typedef struct SceAppUtilSaveDataRemoveItem {
 	const char *dataPath;               //!< Path to savedata data
-	SceAppUtilSaveDataRemoveMode mode;  //!< Savedata remove mode
+	int mode;                           //!< Savedata remove mode (One of ::SceAppUtilSaveDataRemoveMode)
 	uint8_t reserved[36];               //!< Reserved range
 } SceAppUtilSaveDataRemoveItem;
 

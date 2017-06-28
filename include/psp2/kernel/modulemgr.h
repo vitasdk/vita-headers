@@ -73,6 +73,9 @@ int sceKernelGetModuleInfo(SceUID modid, SceKernelModuleInfo *info);
 SceUID sceKernelLoadModule(char *path, int flags, SceKernelLMOption *option);
 int sceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
 
+int sceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, void *option, int *status);
+int sceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, void *option, int *status);
+
 SceUID sceKernelLoadStartModule(char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
