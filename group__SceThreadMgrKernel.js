@@ -52,7 +52,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelGetCallbackInfo", "group__SceThreadMgrKernel.html#gae25a5422c06f87c151df7c1055709e37", null ],
     [ "ksceKernelGetEventFlagInfo", "group__SceThreadMgrKernel.html#ga03767c0e35320e1f7e7f3c4bface1f56", null ],
     [ "ksceKernelGetMsgPipeInfo", "group__SceThreadMgrKernel.html#ga3182fc90c5915940f349f400ea49e619", null ],
-    [ "ksceKernelGetMutexInfo", "group__SceThreadMgrKernel.html#ga9beec1964633d459efc52120d5634967", null ],
+    [ "ksceKernelGetMutexInfo", "group__SceThreadMgrKernel.html#ga05007c0e839fa8cf5e777e7732d5fbf3", null ],
     [ "ksceKernelGetProcessId", "group__SceThreadMgrKernel.html#gad96a0666be5b944b1d8595b952ef8041", null ],
     [ "ksceKernelGetSemaInfo", "group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215", null ],
     [ "ksceKernelGetSystemInfo", "group__SceThreadMgrKernel.html#gafa17d33132fbdcce5fa3d260d51385c2", null ],

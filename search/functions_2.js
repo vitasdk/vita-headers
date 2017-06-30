@@ -211,7 +211,7 @@ var searchData=
   ['scekernelgetcallbackinfo',['sceKernelGetCallbackInfo',['../group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f',1,'threadmgr.h']]],
   ['scekernelgeteventflaginfo',['sceKernelGetEventFlagInfo',['../group__SceThreadMgrUser.html#gaf8d66461efa0b7abcf055c765ac7c427',1,'threadmgr.h']]],
   ['scekernelgetmsgpipeinfo',['sceKernelGetMsgPipeInfo',['../group__SceThreadMgrUser.html#gad263478e578668ed10a772b57e4562f4',1,'threadmgr.h']]],
-  ['scekernelgetmutexinfo',['sceKernelGetMutexInfo',['../group__SceThreadMgrUser.html#gaae794f92821640b3e72ed2482b3b8db2',1,'threadmgr.h']]],
+  ['scekernelgetmutexinfo',['sceKernelGetMutexInfo',['../group__SceThreadMgrUser.html#gab244325100e9ff4376d6b3a2d48ea138',1,'threadmgr.h']]],
   ['scekernelgetsemainfo',['sceKernelGetSemaInfo',['../group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a',1,'threadmgr.h']]],
   ['scekernelgetsysteminfo',['sceKernelGetSystemInfo',['../group__SceThreadMgrUser.html#ga098d45a290dbe3ca0b23883b4c480f48',1,'threadmgr.h']]],
   ['scekernelgetsystemtimewide',['sceKernelGetSystemTimeWide',['../group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3',1,'threadmgr.h']]],
