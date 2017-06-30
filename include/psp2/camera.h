@@ -47,7 +47,7 @@ typedef enum SceCameraDevice {
 typedef enum SceCameraPriority {
 	SCE_CAMERA_PRIORITY_SHARE      = 0, //!< Share mode
 	SCE_CAMERA_PRIORITY_EXCLUSIVE  = 1  //!< Exclusive mode
-} SceCameraDevice;
+} SceCameraPriority;
 
 /** Enumeration for the camera output formats. */
 typedef enum SceCameraFormat {
@@ -104,7 +104,7 @@ typedef enum SceCameraExposureCompensation {
 	SCE_CAMERA_EV_POSITIVE_15 = 15,  //!< +1.5
 	SCE_CAMERA_EV_POSITIVE_17 = 17,  //!< +1.7
 	SCE_CAMERA_EV_POSITIVE_20 = 20   //!< +2.0
-} SceCameraFrameRate;
+} SceCameraExposureCompensation;
 
 /** Enumeration for the camera effects. */
 typedef enum SceCameraEffect {
