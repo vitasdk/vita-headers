@@ -572,7 +572,7 @@ int sceKernelCancelMutex(SceUID mutexid, int newCount, int *numWaitThreads);
  *
  * @return < 0 on error.
  */
-int sceKernelGetMutexInfo(SceUID mutexid, SceKernelMutexInfo info);
+int sceKernelGetMutexInfo(SceUID mutexid, SceKernelMutexInfo *info);
 
 
 /* Event flags. */
