@@ -1,4 +1,4 @@
-﻿/**
+/**
  * \usergroup{SceAudiodec}
  * \usage{psp2/audiodec.h,SceAudiodec_stub}
  */

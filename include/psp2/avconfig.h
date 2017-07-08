@@ -1,4 +1,4 @@
-﻿/**
+/**
  * \usergroup{SceAVConfig}
  * \usage{psp2/avconfig.h,SceAVConfig_stub}
  */
