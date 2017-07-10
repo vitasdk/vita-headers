@@ -2084,6 +2084,13 @@ modules:
           sceKernelSetDipsw: 0x817053D4
         kernel: false
         nid: 0xB36D5922
+      SceDipswForDriver:
+        nid: 0xC9E26388
+        kernel: true
+        functions:
+          ksceKernelSetDipsw: 0x82E45FBF
+          ksceKernelCheckDipsw: 0xA98FC2FD
+          ksceKernelClearDipsw: 0xF1F3E9FE
   SceKernelModulemgr:
     nid: 0x726C6635
     libraries:
@@ -5705,6 +5712,7 @@ modules:
         nid: 0xE14BEF6E
         functions:
           ksceI2cTransferWriteRead: 0x0A40B7BF
+          ksceI2cInit: 0x9CF8F3D6
           ksceI2cSetDebugHandlers: 0xA2C7CE62
           ksceI2cTransferWrite: 0xCA94A759
           ksceI2cTransferRead: 0xD1D0A9A4
