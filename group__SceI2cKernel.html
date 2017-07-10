@@ -95,15 +95,18 @@ $(document).ready(function(){initNavTree('group__SceI2cKernel.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga204d34e146d23c0009f9a796ed9acb3a"><td class="memItemLeft" align="right" valign="top"><a id="ga204d34e146d23c0009f9a796ed9acb3a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cTransferRead</b> (int bus, unsigned int address, unsigned char *buffer, int size)</td></tr>
-<tr class="separator:ga204d34e146d23c0009f9a796ed9acb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf6fe27e8b79aa99a4f68908d907f56bd"><td class="memItemLeft" align="right" valign="top"><a id="gaf6fe27e8b79aa99a4f68908d907f56bd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cTransferWrite</b> (int bus, unsigned int device, const unsigned char *buffer, int size)</td></tr>
-<tr class="separator:gaf6fe27e8b79aa99a4f68908d907f56bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabee77d7fd96bec9a8b8d0d5fdc1839df"><td class="memItemLeft" align="right" valign="top"><a id="gabee77d7fd96bec9a8b8d0d5fdc1839df"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cTransferWriteRead</b> (int bus, unsigned int write_device, const unsigned char *write_buffer, int write_size, unsigned int read_device, unsigned char *read_buffer, int read_size)</td></tr>
-<tr class="separator:gabee77d7fd96bec9a8b8d0d5fdc1839df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga697cf987ecf0cd2e1cf544bdd4e1a6de"><td class="memItemLeft" align="right" valign="top"><a id="ga697cf987ecf0cd2e1cf544bdd4e1a6de"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cInit</b> (int bus)</td></tr>
+<tr class="separator:ga697cf987ecf0cd2e1cf544bdd4e1a6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdfd9cabb3cea3d91d9681c0839c0aca"><td class="memItemLeft" align="right" valign="top"><a id="gabdfd9cabb3cea3d91d9681c0839c0aca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cTransferRead</b> (int bus, unsigned int addr, unsigned char *buffer, int size)</td></tr>
+<tr class="separator:gabdfd9cabb3cea3d91d9681c0839c0aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4ecfde30b63f6a3e3080c6d3845b463"><td class="memItemLeft" align="right" valign="top"><a id="gae4ecfde30b63f6a3e3080c6d3845b463"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cTransferWrite</b> (int bus, unsigned int addr, const unsigned char *buffer, int size)</td></tr>
+<tr class="separator:gae4ecfde30b63f6a3e3080c6d3845b463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6b568a62be22225e3646c1604663f68"><td class="memItemLeft" align="right" valign="top"><a id="gae6b568a62be22225e3646c1604663f68"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cTransferWriteRead</b> (int bus, unsigned int write_addr, unsigned char *write_buffer, int write_size, unsigned int read_addr, unsigned char *read_buffer, int read_size)</td></tr>
+<tr class="separator:gae6b568a62be22225e3646c1604663f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e042297db7f0bbdcf22bbab4956063b"><td class="memItemLeft" align="right" valign="top"><a id="ga6e042297db7f0bbdcf22bbab4956063b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceI2cSetDebugHandlers</b> (int bus, <a class="el" href="structSceI2cDebugHandlers.html">SceI2cDebugHandlers</a> *debug_handlers)</td></tr>
 <tr class="separator:ga6e042297db7f0bbdcf22bbab4956063b"><td class="memSeparator" colspan="2">&#160;</td></tr>

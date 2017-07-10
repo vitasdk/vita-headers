@@ -1,10 +1,10 @@
 var structSceI2cDebugHandlers =
 [
-    [ "read_error", "group__SceI2cKernel.html#gaeb6c41817a5b83b4fd5d86f2280df9c6", null ],
-    [ "read_start", "group__SceI2cKernel.html#ga761cbd1d11d77290edc54bdd155ded21", null ],
+    [ "read_end", "group__SceI2cKernel.html#gafc06133c688ab03589247571a5300646", null ],
+    [ "read_start", "group__SceI2cKernel.html#ga801448022c8a9eab02bc2fb023d62789", null ],
     [ "size", "group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68", null ],
-    [ "write_error", "group__SceI2cKernel.html#ga0ef1910255e2ed7e24cd68b041351c65", null ],
-    [ "write_read_error", "group__SceI2cKernel.html#gaac6a1de4134f0305b2b619441778aa15", null ],
-    [ "write_read_start", "group__SceI2cKernel.html#ga450b2c097ed6806fd793e9978b855f7a", null ],
-    [ "write_start", "group__SceI2cKernel.html#gadbdc8dc8b4acd97b496bac2b350d5daf", null ]
+    [ "write_end", "group__SceI2cKernel.html#gac5ce99ad217cd98a5f8f7df2dfcc5fba", null ],
+    [ "write_read_end", "group__SceI2cKernel.html#ga8f1168916f5371c66638a47a635fb4e4", null ],
+    [ "write_read_start", "group__SceI2cKernel.html#ga72850026d74300d5ee984083e945cf09", null ],
+    [ "write_start", "group__SceI2cKernel.html#ga53a420dd363a0779d7b2803cb3ce6e6b", null ]
 ];

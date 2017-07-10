@@ -93,24 +93,24 @@ Data Fields</h2></td></tr>
 <tr class="memitem:gae463ec16de70164b2086f5c0419d0f68"><td class="memItemLeft" align="right" valign="top">
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
 <tr class="separator:gae463ec16de70164b2086f5c0419d0f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbdc8dc8b4acd97b496bac2b350d5daf"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_start</b> )(int bus, int device, unsigned char *buffer, int size)</td></tr>
-<tr class="separator:gadbdc8dc8b4acd97b496bac2b350d5daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ef1910255e2ed7e24cd68b041351c65"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_error</b> )(int bus, int error, int result)</td></tr>
-<tr class="separator:ga0ef1910255e2ed7e24cd68b041351c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga761cbd1d11d77290edc54bdd155ded21"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_start</b> )(int bus, int device, unsigned char *buffer, int size)</td></tr>
-<tr class="separator:ga761cbd1d11d77290edc54bdd155ded21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb6c41817a5b83b4fd5d86f2280df9c6"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_error</b> )(int bus, int error, int result)</td></tr>
-<tr class="separator:gaeb6c41817a5b83b4fd5d86f2280df9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga450b2c097ed6806fd793e9978b855f7a"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_start</b> )(int bus, int write_device, unsigned char *write_buffer, int write_size)</td></tr>
-<tr class="separator:ga450b2c097ed6806fd793e9978b855f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac6a1de4134f0305b2b619441778aa15"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_error</b> )(int bus, int error, int result)</td></tr>
-<tr class="separator:gaac6a1de4134f0305b2b619441778aa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_start</b> )(int bus, int addr, unsigned char *buffer, int size)</td></tr>
+<tr class="separator:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_end</b> )(int bus, int error, int result)</td></tr>
+<tr class="separator:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga801448022c8a9eab02bc2fb023d62789"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_start</b> )(int bus, int addr, unsigned char *buffer, int size)</td></tr>
+<tr class="separator:ga801448022c8a9eab02bc2fb023d62789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc06133c688ab03589247571a5300646"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_end</b> )(int bus, int error, int result)</td></tr>
+<tr class="separator:gafc06133c688ab03589247571a5300646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72850026d74300d5ee984083e945cf09"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_start</b> )(int bus, int write_addr, unsigned char *write_buffer, int write_size, unsigned int read_addr, unsigned char *read_buffer, int read_size)</td></tr>
+<tr class="separator:ga72850026d74300d5ee984083e945cf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f1168916f5371c66638a47a635fb4e4"><td class="memItemLeft" align="right" valign="top">
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_end</b> )(int bus, int error, int result)</td></tr>
+<tr class="separator:ga8f1168916f5371c66638a47a635fb4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/psp2kern/lowio/<a class="el" href="i2c_8h_source.html">i2c.h</a></li>
