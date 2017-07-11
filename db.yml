@@ -1908,6 +1908,9 @@ modules:
         nid: 0x88C17370
         functions:
           ksceDebugSetHandlers: 0x10067B7B
+          ksceDebugPutchar: 0x82D2EDCE
+          ksceDebugRegisterPutcharHandler: 0xE6115A72
+          ksceDebugGetPutcharHandler: 0xE783518C
           ksceDebugDisableInfoDump: 0xF857CDD6
       SceUartForKernel:
         kernel: true

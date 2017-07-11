@@ -217,6 +217,14 @@ int ksceDebugPrintf(const char *fmt, ...);
 
 int ksceDebugPrintf2(int unk0, int unk1, const char *fmt, ...);
 
+int ksceDebugSetHandlers(int (*func)(void *args, char c), void *args);
+
+int ksceDebugRegisterPutcharHandler(int (*func)(void *args, char c), void *args);
+
+void *ksceDebugGetPutcharHandler(void);
+
+int ksceDebugPutchar(int character);
+
 #ifdef __cplusplus
 }
 #endif
