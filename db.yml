@@ -4097,6 +4097,31 @@ modules:
         nid: 0x1082DA7F
       ScePowerForDriver:
         functions:
+          kscePowerGetResumeCount: 0x0074EF9B
+          kscePowerRegisterCallback: 0x04B7766E
+          kscePowerIsBatteryExist: 0x0AFD0D8B
+          kscePowerIsBatteryCharging: 0x1E490401
+          kscePowerGetBatteryLifePercent: 0x2085D15D
+          kscePowerWlanDeactivate: 0x23BB0A60
+          kscePowerBatteryUpdateInfo: 0x27F3292C
+          kscePowerGetBatteryTemp: 0x28E12023
+          kscePowerEncodeUBattery: 0x3951AF53
+          kscePowerGetBusClockFrequency: 0x478FE6F5
+          kscePowerGetBatteryVolt: 0x483CE86B
+          kscePowerGetCaseTemp: 0x525592E4
+          kscePowerWlanActivate: 0x6D2CA84B
+          kscePowerIsRequest: 0x7FA406DD
+          kcePowerGetBatteryElec: 0x862AE1A6
+          kscePowerIsPowerOnline: 0x87440F5E
+          kscePowerGetBatteryLifeTime: 0x8EFB3FA2
+          kscePowerGetBatteryRemainCapacity: 0x94F5A53F
+          kscePowerGetBatteryChargingStatus: 0xB4432BC8
+          kscePowerSetBusClockFrequency: 0xB8D7B3FB
+          kscePowerIsLowBattery: 0xD3075926
+          kscePowerCancelRequest: 0xDB62C9CF
+          kscePowerUnregisterCallback: 0xDFA8BAF8
+          kscePowerGetIdleTimer: 0xEDC13FE5
+          kscePowerTick: 0xEFD3C963
           kscePowerGetWakeupFactor: 0x9F26222A
           kscePowerRequestColdReset: 0x0442D852
           kscePowerRequestDisplayOff: 0x160EB506
@@ -4106,6 +4131,7 @@ modules:
           kscePowerRequestStandby: 0x2B7C7CF4
           kscePowerRequestSuspend: 0xAC32C9CC
           kscePowerSetBatteryFakeStatus: 0x0C6973B8
+          kscePowerSetIdleCallback: 0x1BA2FCAE
           kscePowerSetMipsClockFrequency: 0xFFC84E69
           kscePowerSetPowerSwMode: 0xC1853BA7
           kscePowerGetPowerSwMode: 0x165CE085
