@@ -14,13 +14,13 @@ extern "C" {
 #endif
 
 typedef struct SceKernelProcessInfo {
-	SceSize size; // size of this struct, make sure it's 0xE8
-	SceUID pid; // our process ID
+	SceSize size;		// size of this struct, make sure it's 0xE8
+	SceUID pid;		// our process ID
 	int unk1;
 	int unk2;
 	int unk3;
-	SceUID ppid; // parent process ID
-	// the rest is unknown
+	SceUID ppid;		// parent process ID
+	int unk[0xE8 / 4 - 6];	// the rest is unknown
 } SceKernelProcessInfo;
 
 void *ksceKernelGetProcessKernelBuf(SceUID pid);
