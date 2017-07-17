@@ -98,7 +98,73 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6b3b5f895ae1e3fd5e89bb57467e55ca"><td class="memItemLeft" align="right" valign="top"><a id="ga6b3b5f895ae1e3fd5e89bb57467e55ca"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetProcessKernelBuf</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid)</td></tr>
 <tr class="separator:ga6b3b5f895ae1e3fd5e89bb57467e55ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0900825db6367507b27169093cf58227"><td class="memItemLeft" align="right" valign="top"><a id="ga0900825db6367507b27169093cf58227"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetProcessInfo</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessInfo">SceKernelProcessInfo</a> *info)</td></tr>
+<tr class="separator:ga0900825db6367507b27169093cf58227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3845b5bbcdb0cbb823dab8a5ec669971"><td class="memItemLeft" align="right" valign="top"><a id="ga3845b5bbcdb0cbb823dab8a5ec669971"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelCreateProcessLocalStorage</b> (const char *name, SceSize size)</td></tr>
+<tr class="separator:ga3845b5bbcdb0cbb823dab8a5ec669971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06498ae67bc5e0b2fbe26112d9bc6050"><td class="memItemLeft" align="right" valign="top"><a id="ga06498ae67bc5e0b2fbe26112d9bc6050"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetProcessLocalStorageAddr</b> (int key)</td></tr>
+<tr class="separator:ga06498ae67bc5e0b2fbe26112d9bc6050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39a1574fe9df600af7cfcb0cb6202573"><td class="memItemLeft" align="right" valign="top"><a id="ga39a1574fe9df600af7cfcb0cb6202573"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetPidProcessLocalStorageAddr</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, int key, void **out_addr, int create_if_doesnt_exist)</td></tr>
+<tr class="separator:ga39a1574fe9df600af7cfcb0cb6202573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceKernelProcessInfo" id="structSceKernelProcessInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelProcessInfo">&sect;&nbsp;</a></span>SceKernelProcessInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelProcessInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaa95eacc11e4f27b9ba03bdef9778123c"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+pid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga45c22a568eacf4c46a726758fdd0fc91"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+ppid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga047c8b9d7085d156a18657b1b63b1e4e"></a>SceSize</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gafa45f89cd794dc7c0c13cc8f7fe4e70e"></a>int</td>
+<td class="fieldname">
+unk1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gabe879068b67d678d26b8c4391988cb79"></a>int</td>
+<td class="fieldname">
+unk2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3363060615c17c97807fb5c2361bcc21"></a>int</td>
+<td class="fieldname">
+unk3</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

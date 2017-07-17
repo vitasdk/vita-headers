@@ -142,6 +142,7 @@ var searchData=
   ['scekernelmutexinfo',['SceKernelMutexInfo',['../group__SceThreadMgrUser.html#structSceKernelMutexInfo',1,'']]],
   ['scekernelmutexoptparam',['SceKernelMutexOptParam',['../group__SceThreadMgrUser.html#structSceKernelMutexOptParam',1,'']]],
   ['scekernelopenpsid',['SceKernelOpenPsId',['../group__SceOpenPsidUser.html#structSceKernelOpenPsId',1,'']]],
+  ['scekernelprocessinfo',['SceKernelProcessInfo',['../group__SceProcessmgrKernel.html#structSceKernelProcessInfo',1,'']]],
   ['scekernelsegmentinfo',['SceKernelSegmentInfo',['../group__SceModulemgrUser.html#structSceKernelSegmentInfo',1,'']]],
   ['scekernelsemainfo',['SceKernelSemaInfo',['../group__SceThreadMgrUser.html#structSceKernelSemaInfo',1,'']]],
   ['scekernelsemaoptparam',['SceKernelSemaOptParam',['../group__SceThreadMgrUser.html#structSceKernelSemaOptParam',1,'']]],

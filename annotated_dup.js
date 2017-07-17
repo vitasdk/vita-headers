@@ -146,6 +146,7 @@ var annotated_dup =
     [ "SceKernelMutexInfo", "group__SceThreadMgrUser.html#structSceKernelMutexInfo", "group__SceThreadMgrUser_structSceKernelMutexInfo" ],
     [ "SceKernelMutexOptParam", "group__SceThreadMgrUser.html#structSceKernelMutexOptParam", "group__SceThreadMgrUser_structSceKernelMutexOptParam" ],
     [ "SceKernelOpenPsId", "group__SceOpenPsidUser.html#structSceKernelOpenPsId", "group__SceOpenPsidUser_structSceKernelOpenPsId" ],
+    [ "SceKernelProcessInfo", "group__SceProcessmgrKernel.html#structSceKernelProcessInfo", "group__SceProcessmgrKernel_structSceKernelProcessInfo" ],
     [ "SceKernelSegmentInfo", "group__SceModulemgrUser.html#structSceKernelSegmentInfo", "group__SceModulemgrUser_structSceKernelSegmentInfo" ],
     [ "SceKernelSemaInfo", "group__SceThreadMgrUser.html#structSceKernelSemaInfo", "group__SceThreadMgrUser_structSceKernelSemaInfo" ],
     [ "SceKernelSemaOptParam", "group__SceThreadMgrUser.html#structSceKernelSemaOptParam", "group__SceThreadMgrUser_structSceKernelSemaOptParam" ],

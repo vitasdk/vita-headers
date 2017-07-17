@@ -717,6 +717,7 @@ var searchData=
   ['scekernelpolleventflag',['sceKernelPollEventFlag',['../group__SceThreadMgrUser.html#ga538f4519bdfb1dd2a1437af50da2370d',1,'threadmgr.h']]],
   ['scekernelpollsema',['sceKernelPollSema',['../group__SceThreadMgrUser.html#ga57b23ac4e988e2f461812aa06cb7928a',1,'threadmgr.h']]],
   ['scekernelpowerticktype',['SceKernelPowerTickType',['../group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f',1,'SceKernelPowerTickType():&#160;processmgr.h'],['../group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f',1,'SceKernelPowerTickType():&#160;suspend.h']]],
+  ['scekernelprocessinfo',['SceKernelProcessInfo',['../group__SceProcessmgrKernel.html#structSceKernelProcessInfo',1,'']]],
   ['scekernelreceivemsgpipe',['sceKernelReceiveMsgPipe',['../group__SceThreadMgrUser.html#gaecd0cce97640372fbc0905426f9e367e',1,'threadmgr.h']]],
   ['scekernelreceivemsgpipecb',['sceKernelReceiveMsgPipeCB',['../group__SceThreadMgrUser.html#gae0943b8da3da312380dffbbec9b0593d',1,'threadmgr.h']]],
   ['scekernelreleasewaitthread',['sceKernelReleaseWaitThread',['../group__SceThreadMgrUser.html#ga864276ceccb242a7d3df092de89020ba',1,'threadmgr.h']]],
