@@ -13,7 +13,23 @@
 extern "C" {
 #endif
 
+typedef struct SceKernelProcessInfo {
+	SceSize size; // size of this struct, make sure it's 0xE8
+	SceUID pid; // our process ID
+	int unk1;
+	int unk2;
+	int unk3;
+	SceUID ppid; // parent process ID
+	// the rest is unknown
+} SceKernelProcessInfo;
+
 void *ksceKernelGetProcessKernelBuf(SceUID pid);
+
+int ksceKernelGetProcessInfo(SceUID pid, SceKernelProcessInfo *info);
+
+int ksceKernelCreateProcessLocalStorage(const char *name, SceSize size);
+void *ksceKernelGetProcessLocalStorageAddr(int key);
+int ksceKernelGetPidProcessLocalStorageAddr(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
 
 #ifdef __cplusplus
 }

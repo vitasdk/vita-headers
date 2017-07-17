@@ -2261,6 +2261,20 @@ modules:
         functions:
           ksceKernelGetProcessAuthid: 0xE4C83B0D
           ksceKernelGetProcessKernelBuf: 0xB9E68092
+      SceProcessmgrForDriver:
+        kernel: true
+        nid: 0x746EC971
+        functions:
+          ksceKernelGetProcessTimeLowCore: 0x02179E12
+          ksceKernelGetProcessInfo: 0x0AFF3EAE
+          ksceKernelIsCDialogAvailable: 0x2F6020B7
+          ksceKernelCreateProcessLocalStorage: 0x3801D7D6
+          ksceKernelGetProcessTimeWideCore: 0x82D94BE9
+          ksceKernelGetPidProcessLocalStorageAddr: 0xAF80F39C
+          ksceKernelGetRemoteProcessTime: 0xC074EB31
+          ksceKernelGetProcessTimeCore: 0xEC283166
+          ksceKernelGetProcessLocalStorageAddr: 0xEE694840
+          ksceKernelIsGameBudget: 0xF7A8BB25
   SceLibKernel:
     nid: 0xF9C9C52F
     libraries:
@@ -4135,6 +4149,7 @@ modules:
           kscePowerIsBatteryCharging: 0x1E490401
           kscePowerGetBatteryLifePercent: 0x2085D15D
           kscePowerWlanDeactivate: 0x23BB0A60
+          kscePowerSetGpuClockFrequency: 0x264C24FC
           kscePowerBatteryUpdateInfo: 0x27F3292C
           kscePowerGetBatteryTemp: 0x28E12023
           kscePowerEncodeUBattery: 0x3951AF53
@@ -4142,6 +4157,9 @@ modules:
           kscePowerGetBatteryVolt: 0x483CE86B
           kscePowerGetCaseTemp: 0x525592E4
           kscePowerWlanActivate: 0x6D2CA84B
+          kscePowerSetArmClockFrequency: 0x74DB5AE5
+          kscePowerSetGpuXbarClockFrequency: 0xA7739DBE
+          kscePowerGetGpuXbarClockFrequency: 0x0A750DEE
           kscePowerIsRequest: 0x7FA406DD
           kcePowerGetBatteryElec: 0x862AE1A6
           kscePowerIsPowerOnline: 0x87440F5E
