@@ -13,12 +13,20 @@
 extern "C" {
 #endif
 
+typedef struct SceIoDevInfo {
+	SceOff max_size;
+	SceOff free_size;
+	SceSize cluster_size;
+	void *unk;
+} SceIoDevInfo;
+
 /**
   * Send a devctl command to a device.
   *
   * @par Example: Sending a simple command to a device
   * @code
-  * sceIoDevctl("ux0:", 0x3001, NULL, 0, outdata, 0x18);
+  * SceIoDevInfo info;
+  * sceIoDevctl("ux0:", 0x3001, NULL, 0, &info, sizeof(SceIoDevInfo));
   * @endcode
   *
   * @param dev - String for the device to send the devctl to (e.g. "ux0:")
