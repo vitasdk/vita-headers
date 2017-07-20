@@ -105,6 +105,48 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga71371e769022cfa0eac4fa7003c9c94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an ioctl on a device.  <a href="#ga71371e769022cfa0eac4fa7003c9c94a">More...</a><br /></td></tr>
 <tr class="separator:ga71371e769022cfa0eac4fa7003c9c94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceIoDevInfo" id="structSceIoDevInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceIoDevInfo">&sect;&nbsp;</a></span>SceIoDevInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceIoDevInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga9f8a7d31dd90980c2a8c31e672b9c1d6"></a>SceSize</td>
+<td class="fieldname">
+cluster_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad75b9b528ae43fb7c0f6de70ac305512"></a><a class="el" href="group__SceTypesUser.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a></td>
+<td class="fieldname">
+free_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga186cfae72ffe72d61eac92d8db3521d9"></a><a class="el" href="group__SceTypesUser.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a></td>
+<td class="fieldname">
+max_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga81996162f81e2b43b2c1082586fe13db"></a>void *</td>
+<td class="fieldname">
+unk</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaa2d114c652feb1e81b4e6ef1d3edc846"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa2d114c652feb1e81b4e6ef1d3edc846">&sect;&nbsp;</a></span>sceIoDevctl()</h2>
@@ -157,7 +199,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send a devctl command to a device. </p>
-<dl class="section user"><dt>Example: Sending a simple command to a device</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__SceDevCtlUser.html#gaa2d114c652feb1e81b4e6ef1d3edc846">sceIoDevctl</a>(<span class="stringliteral">&quot;ux0:&quot;</span>, 0x3001, NULL, 0, outdata, 0x18);</div></div><!-- fragment --></dd></dl>
+<dl class="section user"><dt>Example: Sending a simple command to a device</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__SceDevCtlUser.html#structSceIoDevInfo">SceIoDevInfo</a> info;</div><div class="line"><a class="code" href="group__SceDevCtlUser.html#gaa2d114c652feb1e81b4e6ef1d3edc846">sceIoDevctl</a>(<span class="stringliteral">&quot;ux0:&quot;</span>, 0x3001, NULL, 0, &amp;info, <span class="keyword">sizeof</span>(<a class="code" href="group__SceDevCtlUser.html#structSceIoDevInfo">SceIoDevInfo</a>));</div></div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>- String for the device to send the devctl to (e.g. "ux0:") </td></tr>

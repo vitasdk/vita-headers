@@ -14,8 +14,9 @@ var NAVTREEINDEX0 =
 "classes.html":[2,1],
 "clib_8h_source.html":[3,0,0,0,1,0],
 "common__dialog_8h_source.html":[3,0,0,0,12],
+"compat_8h_source.html":[3,0,0,0,13],
 "cpu_8h_source.html":[3,0,0,1,1,0],
-"ctrl_8h_source.html":[3,0,0,0,13],
+"ctrl_8h_source.html":[3,0,0,0,14],
 "dir_28c9b31b794be7dddd0cd6c658658b14.html":[3,0,0,0,2],
 "dir_2ce7e998e987a9400106ba4a5e6baf69.html":[3,0,0,1,3],
 "dir_6015d6cf5db9da37bec39df762552f36.html":[3,0,0,2],
@@ -27,7 +28,7 @@ var NAVTREEINDEX0 =
 "dir_cf7e5d7ecd3aa122b437e9d709bbde3b.html":[3,0,0,1,0],
 "dir_d44c64559bbebec7f509842c48db8b23.html":[3,0,0],
 "dir_ec7ce0decaf119d3f3f03563c1567600.html":[3,0,0,1,1],
-"display_8h_source.html":[3,0,0,0,14],
+"display_8h_source.html":[3,0,0,0,15],
 "ern_2ctrl_8h_source.html":[3,0,0,1,5],
 "ern_2display_8h_source.html":[3,0,0,1,6],
 "ern_2io_2devctl_8h_source.html":[3,0,0,1,0,0],
@@ -46,7 +47,7 @@ var NAVTREEINDEX0 =
 "ern_2usbd_8h_source.html":[3,0,0,1,12],
 "ern_2usbserial_8h_source.html":[3,0,0,1,13],
 "error_8h_source.html":[3,0,0,0,1,2],
-"fiber_8h_source.html":[3,0,0,0,15],
+"fiber_8h_source.html":[3,0,0,0,16],
 "files.html":[3,0],
 "functions.html":[2,2,0],
 "functions.html":[2,2,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5":[1,6,1,0,18],
 "group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766":[1,6,1,0,17],
 "group__SceCPUKernel.html#ga82fbbeae621b85af21dd6986d16898e0":[1,6,1,0,14],
-"group__SceCPUKernel.html#gaa5b75a3c600994738e933102d28329e3":[1,6,1,0,0],
-"group__SceCPUKernel.html#gacb2397373c553acca09aeb261d8e50c4":[1,6,1,0,8]
+"group__SceCPUKernel.html#gaa5b75a3c600994738e933102d28329e3":[1,6,1,0,0]
 };

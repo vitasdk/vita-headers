@@ -5,5 +5,6 @@ var group__Miscellaneous =
     [ "Promoter utility", "group__ScePromoterUtil.html", "group__ScePromoterUtil" ],
     [ "NpDrmPackage utility", "group__SceNpDrmPackage.html", "group__SceNpDrmPackage" ],
     [ "NpDrm utility", "group__SceNpDrm.html", "group__SceNpDrm" ],
-    [ "Paf utility", "group__ScePaf.html", "group__ScePaf" ]
+    [ "Paf utility", "group__ScePaf.html", "group__ScePaf" ],
+    [ "Compat Library", "group__SceCompat.html", "group__SceCompat" ]
 ];

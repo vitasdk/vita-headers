@@ -13,6 +13,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "avconfig.h", "avconfig_8h_source.html", null ],
     [ "camera.h", "camera_8h_source.html", null ],
     [ "common_dialog.h", "common__dialog_8h_source.html", null ],
+    [ "compat.h", "compat_8h_source.html", null ],
     [ "ctrl.h", "ctrl_8h_source.html", null ],
     [ "display.h", "display_8h_source.html", null ],
     [ "fiber.h", "fiber_8h_source.html", null ],
