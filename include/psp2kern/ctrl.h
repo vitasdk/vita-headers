@@ -38,7 +38,7 @@ enum SceCtrlPadButtons {
 	SCE_CTRL_CIRCLE      = 0x00002000,  //!< Circle button.
 	SCE_CTRL_CROSS       = 0x00004000,  //!< Cross button.
 	SCE_CTRL_SQUARE      = 0x00008000,  //!< Square button.
-	SCE_CTRL_INTERCEPTED = 0x00010000,  //!< Input not available because intercepted by another application
+	SCE_CTRL_PSBUTTON    = 0x00010000,  //!< Playstation (Home) button.
 	SCE_CTRL_HEADPHONE   = 0x00080000,  //!< Headphone plugged in.
 	SCE_CTRL_VOLUP       = 0x00100000,  //!< Volume up button.
 	SCE_CTRL_VOLDOWN     = 0x00200000,  //!< Volume down button.
