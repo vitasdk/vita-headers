@@ -21,29 +21,32 @@ typedef enum SceCtrlErrorCode {
 } SceCtrlErrorCode;
 
 /** Enumeration for the digital controller buttons.
- * L1/R1/L3/R3 only can bind using sceCtrlReadBufferPositiveExt2 */
+ * @note - L1/R1/L3/R3 only can bind using ::sceCtrlReadBufferPositiveExt2 
+ * @note - Values bigger than 0x00010000 can be intercepted only with shell privileges
+ */
 typedef enum SceCtrlButtons {
-	SCE_CTRL_SELECT      = 0x00000001,  //!< Select button.
-	SCE_CTRL_L3          = 0x00000002,  //!< L3 button.
-	SCE_CTRL_R3          = 0x00000004,  //!< R3 button.
-	SCE_CTRL_START       = 0x00000008,  //!< Start button.
-	SCE_CTRL_UP          = 0x00000010,  //!< Up D-Pad button.
-	SCE_CTRL_RIGHT       = 0x00000020,  //!< Right D-Pad button.
-	SCE_CTRL_DOWN        = 0x00000040,  //!< Down D-Pad button.
-	SCE_CTRL_LEFT        = 0x00000080,  //!< Left D-Pad button.
-	SCE_CTRL_LTRIGGER    = 0x00000100,  //!< Left trigger.
-	SCE_CTRL_RTRIGGER    = 0x00000200,  //!< Right trigger.
-	SCE_CTRL_L1          = 0x00000400,  //!< L1 button.
-	SCE_CTRL_R1          = 0x00000800,  //!< R1 button.
-	SCE_CTRL_TRIANGLE    = 0x00001000,  //!< Triangle button.
-	SCE_CTRL_CIRCLE      = 0x00002000,  //!< Circle button.
-	SCE_CTRL_CROSS       = 0x00004000,  //!< Cross button.
-	SCE_CTRL_SQUARE      = 0x00008000,  //!< Square button.
-	SCE_CTRL_INTERCEPTED = 0x00010000,  //!< Input not available because intercepted by another application
-	SCE_CTRL_HEADPHONE   = 0x00080000,  //!< Headphone plugged in.
-	SCE_CTRL_VOLUP       = 0x00100000,  //!< Volume up button.
-	SCE_CTRL_VOLDOWN     = 0x00200000,  //!< Volume down button.
-	SCE_CTRL_POWER       = 0x40000000   //!< Power button.
+	SCE_CTRL_SELECT      = 0x00000001,            //!< Select button.
+	SCE_CTRL_L3          = 0x00000002,            //!< L3 button.
+	SCE_CTRL_R3          = 0x00000004,            //!< R3 button.
+	SCE_CTRL_START       = 0x00000008,            //!< Start button.
+	SCE_CTRL_UP          = 0x00000010,            //!< Up D-Pad button.
+	SCE_CTRL_RIGHT       = 0x00000020,            //!< Right D-Pad button.
+	SCE_CTRL_DOWN        = 0x00000040,            //!< Down D-Pad button.
+	SCE_CTRL_LEFT        = 0x00000080,            //!< Left D-Pad button.
+	SCE_CTRL_LTRIGGER    = 0x00000100,            //!< Left trigger.
+	SCE_CTRL_RTRIGGER    = 0x00000200,            //!< Right trigger.
+	SCE_CTRL_L1          = 0x00000400,            //!< L1 button.
+	SCE_CTRL_R1          = 0x00000800,            //!< R1 button.
+	SCE_CTRL_TRIANGLE    = 0x00001000,            //!< Triangle button.
+	SCE_CTRL_CIRCLE      = 0x00002000,            //!< Circle button.
+	SCE_CTRL_CROSS       = 0x00004000,            //!< Cross button.
+	SCE_CTRL_SQUARE      = 0x00008000,            //!< Square button.
+	SCE_CTRL_INTERCEPTED = 0x00010000,            //!< Input not available because intercepted by another application
+	SCE_CTRL_PSBUTTON    = SCE_CTRL_INTERCEPTED,  //!< Playstation (Home) button.
+	SCE_CTRL_HEADPHONE   = 0x00080000,            //!< Headphone plugged in.
+	SCE_CTRL_VOLUP       = 0x00100000,            //!< Volume up button.
+	SCE_CTRL_VOLDOWN     = 0x00200000,            //!< Volume down button.
+	SCE_CTRL_POWER       = 0x40000000             //!< Power button.
 } SceCtrlButtons;
 
 /** Enumeration for the controller types. */
