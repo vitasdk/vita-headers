@@ -72,6 +72,13 @@ typedef struct SceIoStat {
 	unsigned int st_private[6];  //!< Device-specific data
 } SceIoStat;
 
+/** Defines for `sceIoChstat` and `sceIoChstatByFd` **/
+#define SCE_CST_MODE        0x0001
+#define SCE_CST_SIZE        0x0004
+#define SCE_CST_CT          0x0008
+#define SCE_CST_AT          0x0010
+#define SCE_CST_MT          0x0020
+
 /**
  * Make a directory file
  *
@@ -129,7 +136,7 @@ int sceIoChstat(const char *file, SceIoStat *stat, int bits);
   *
   * @return < 0 on error.
   */
-int sceIoChstatByFd(SceUID fd, SceIoStat *stat, int bits);
+int sceIoChstatByFd(SceUID fd, const SceIoStat *buf, unsigned int cbit);
 
 #ifdef __cplusplus
 }
