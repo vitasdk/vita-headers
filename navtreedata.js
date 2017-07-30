@@ -25,8 +25,8 @@ var NAVTREEINDEX =
 "group__SceDisplayUser.html#gab0dbd41679e2aab2325ceac6a41cc052",
 "group__SceGxtUser.html#ga14156f39d541149e445154fc7dc3718e",
 "group__ScePowerUser.html#gaea7881caee1ac4ea9fc0e25e5553dc51",
-"group__SceSuspend.html",
-"group__SceThreadMgrUser.html#ga7fa2373891f0175338c0c5975b371c1c"
+"group__SceStatUser.html#gae600835f7388ec3b81bff230b14f38e7",
+"group__SceThreadMgrUser.html#ga7b51417e5999e727715379282cc2bf8b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

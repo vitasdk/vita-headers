@@ -1,5 +1,6 @@
 var group__SceStatUser =
 [
+    [ "SCE_CST_MODE", "group__SceStatUser.html#ga3ab2de5cda3b6e533aad21afe05a8dab", null ],
     [ "SceIoAccessMode", "group__SceStatUser.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16", [
       [ "SCE_S_IXUSR", "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a51bb8db57c5ddb8d0403e214e36d9672", null ],
       [ "SCE_S_IWUSR", "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a2961bfcb4526e512eef589bbc43d2879", null ],
@@ -83,7 +84,7 @@ var group__SceStatUser =
     [ "SCE_SO_IWOTH", "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d", null ],
     [ "SCE_SO_IXOTH", "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7ae1de730fbc3b0012e320b46ef9b298f0", null ],
     [ "sceIoChstat", "group__SceStatUser.html#ga89361a511354826e6ac54ff587368e33", null ],
-    [ "sceIoChstatByFd", "group__SceStatUser.html#ga264d77b3e53139e704b3535edcd189d0", null ],
+    [ "sceIoChstatByFd", "group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39", null ],
     [ "sceIoGetstat", "group__SceStatUser.html#ga4e3afddc6b738ae99872eb74eb70a509", null ],
     [ "sceIoGetstatByFd", "group__SceStatUser.html#gaa0a12c50241cb6fd705c8e569163fb33", null ],
     [ "sceIoMkdir", "group__SceStatUser.html#gae05d18e89cc4baa82de5ce6aa14e7e95", null ],

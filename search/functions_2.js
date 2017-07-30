@@ -164,7 +164,7 @@ var searchData=
   ['sceiocancel',['sceIoCancel',['../group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22',1,'fcntl.h']]],
   ['sceiochangeasyncpriority',['sceIoChangeAsyncPriority',['../group__SceFcntlUser.html#ga099e9c6cb3e72104424cb391ad77b0a0',1,'fcntl.h']]],
   ['sceiochstat',['sceIoChstat',['../group__SceStatUser.html#ga89361a511354826e6ac54ff587368e33',1,'stat.h']]],
-  ['sceiochstatbyfd',['sceIoChstatByFd',['../group__SceStatUser.html#ga264d77b3e53139e704b3535edcd189d0',1,'stat.h']]],
+  ['sceiochstatbyfd',['sceIoChstatByFd',['../group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39',1,'stat.h']]],
   ['sceioclose',['sceIoClose',['../group__SceFcntlUser.html#ga125921b287807c747491aed6ef16acd9',1,'fcntl.h']]],
   ['sceiocloseasync',['sceIoCloseAsync',['../group__SceFcntlUser.html#ga2e37fd75f4a07b76bb0a9e4a4deda70e',1,'fcntl.h']]],
   ['sceiodclose',['sceIoDclose',['../group__SceDirEntUser.html#gacc2ca2130e3e8947f5fd18f5e2bd10e9',1,'dirent.h']]],

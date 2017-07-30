@@ -111,9 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga89361a511354826e6ac54ff587368e33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga89361a511354826e6ac54ff587368e33">sceIoChstat</a> (const char *file, <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *stat, int bits)</td></tr>
 <tr class="memdesc:ga89361a511354826e6ac54ff587368e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the status of a file.  <a href="#ga89361a511354826e6ac54ff587368e33">More...</a><br /></td></tr>
 <tr class="separator:ga89361a511354826e6ac54ff587368e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga264d77b3e53139e704b3535edcd189d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga264d77b3e53139e704b3535edcd189d0">sceIoChstatByFd</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *stat, int bits)</td></tr>
-<tr class="memdesc:ga264d77b3e53139e704b3535edcd189d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the status of a file descriptor.  <a href="#ga264d77b3e53139e704b3535edcd189d0">More...</a><br /></td></tr>
-<tr class="separator:ga264d77b3e53139e704b3535edcd189d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97db4dbfd789bc92aa7e1eb7ffefed39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39">sceIoChstatByFd</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *buf, unsigned int cbit)</td></tr>
+<tr class="memdesc:ga97db4dbfd789bc92aa7e1eb7ffefed39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the status of a file descriptor.  <a href="#ga97db4dbfd789bc92aa7e1eb7ffefed39">More...</a><br /></td></tr>
+<tr class="separator:ga97db4dbfd789bc92aa7e1eb7ffefed39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -135,6 +135,22 @@ Macros</h2></td></tr>
 <tr class="memitem:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memItemLeft" align="right" valign="top"><a id="gaad6e5e897cea0e2efda29316e139f7c9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SO_ISDIR</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a>)</td></tr>
 <tr class="separator:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="memItemLeft" align="right" valign="top"><a id="ga3ab2de5cda3b6e533aad21afe05a8dab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga3ab2de5cda3b6e533aad21afe05a8dab">SCE_CST_MODE</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines for <code>sceIoChstat</code> and <code>sceIoChstatByFd</code> <br /></td></tr>
+<tr class="separator:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee878502d4240f77073d169f35ec4ba"><td class="memItemLeft" align="right" valign="top"><a id="ga8ee878502d4240f77073d169f35ec4ba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_CST_SIZE</b>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="separator:ga8ee878502d4240f77073d169f35ec4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d07f7450a30ba0304df744cbfa54ed9"><td class="memItemLeft" align="right" valign="top"><a id="ga8d07f7450a30ba0304df744cbfa54ed9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_CST_CT</b>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="separator:ga8d07f7450a30ba0304df744cbfa54ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433f965611f5901f62760ab8492db663"><td class="memItemLeft" align="right" valign="top"><a id="ga433f965611f5901f62760ab8492db663"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_CST_AT</b>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="separator:ga433f965611f5901f62760ab8492db663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6fcd74ddb836b83e71785a2d2f84ca6"><td class="memItemLeft" align="right" valign="top"><a id="gad6fcd74ddb836b83e71785a2d2f84ca6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_CST_MT</b>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="separator:gad6fcd74ddb836b83e71785a2d2f84ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceIoStat" id="structSceIoStat"></a>
@@ -384,8 +400,8 @@ Size of the file in bytes. </td></tr>
 
 </div>
 </div>
-<a id="ga264d77b3e53139e704b3535edcd189d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga264d77b3e53139e704b3535edcd189d0">&sect;&nbsp;</a></span>sceIoChstatByFd()</h2>
+<a id="ga97db4dbfd789bc92aa7e1eb7ffefed39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97db4dbfd789bc92aa7e1eb7ffefed39">&sect;&nbsp;</a></span>sceIoChstatByFd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,14 +415,14 @@ Size of the file in bytes. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *&#160;</td>
-          <td class="paramname"><em>stat</em>, </td>
+          <td class="paramtype">const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bits</em>&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>cbit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
