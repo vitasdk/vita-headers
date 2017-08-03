@@ -21,6 +21,7 @@ var group__ScePowerUser =
     [ "scePowerGetBusClockFrequency", "group__ScePowerUser.html#ga9e199f8a81622c73ac1b3c88a89deb23", null ],
     [ "scePowerGetGpuClockFrequency", "group__ScePowerUser.html#gae803d4a38296a4af32d597e9edeea871", null ],
     [ "scePowerGetGpuXbarClockFrequency", "group__ScePowerUser.html#gaa183d660f4d44413be9be1662253da7f", null ],
+    [ "scePowerGetUsingWireless", "group__ScePowerUser.html#ga9cd6e67e13f31cd310d8d88dd5793fa1", null ],
     [ "scePowerIsBatteryCharging", "group__ScePowerUser.html#gafaa0e75b6d63ef96afa0121695361e08", null ],
     [ "scePowerIsLowBattery", "group__ScePowerUser.html#ga2db32656437169ce25ea50c2c190b930", null ],
     [ "scePowerIsPowerOnline", "group__ScePowerUser.html#gae26d2c35668cf682c0d69e3b4ce35087", null ],
@@ -35,5 +36,6 @@ var group__ScePowerUser =
     [ "scePowerSetConfigurationMode", "group__ScePowerUser.html#gaa0d74be80d0753a60a66ddc87ab19596", null ],
     [ "scePowerSetGpuClockFrequency", "group__ScePowerUser.html#ga0fef02f3a46358da26a4ee2e38240df1", null ],
     [ "scePowerSetGpuXbarClockFrequency", "group__ScePowerUser.html#gaea7881caee1ac4ea9fc0e25e5553dc51", null ],
+    [ "scePowerSetUsingWireless", "group__ScePowerUser.html#ga5f0e6c6b5ecbb7bc329d69673b9d1416", null ],
     [ "scePowerUnregisterCallback", "group__ScePowerUser.html#ga5a9c0154c265e0f011ad09f679176714", null ]
 ];
