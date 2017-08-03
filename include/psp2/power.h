@@ -233,6 +233,22 @@ int scePowerSetGpuClockFrequency(int freq);
  */
 int scePowerSetGpuXbarClockFrequency(int freq);
 
+/**
+ * Sets wireless features usage
+ *
+ * @param enabled - SCE_TRUE to enable, SCE_FALSE to disable
+ *
+ * @return 0 on success, < 0 on error
+ */
+int scePowerSetUsingWireless(SceBool enabled);
+
+/**
+ * Gets wireless features usage
+ *
+ * @return SCE_TRUE if enabled, SCE_FALSE otherwise
+ */
+int scePowerGetUsingWireless(void);
+
 #ifdef __cplusplus
 }
 #endif
