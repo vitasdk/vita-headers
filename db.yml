@@ -2025,19 +2025,6 @@ modules:
   SceKernelThreadMgr:
     nid: 0xF46ED7B2
     libraries:
-      SceThreadmgrForKernel:
-        nid: 0xA8CA0EFD
-        kernel: true
-        functions:
-          ksceKernelCreateMutex: 0xFBAA026E
-          ksceKernelCreateSema: 0x30E93C31
-          ksceKernelDeleteMutex: 0x0A912340
-          ksceKernelDeleteSema: 0x16A35E58
-          ksceKernelLockMutex_089: 0x16AC80C5
-          ksceKernelRunWithStack: 0xE54FD746
-          ksceKernelSignalSema: 0xD270498B
-          ksceKernelUnlockMutex_089: 0x1E82E5D0
-          ksceKernelWaitSema: 0x3C8B55A9
       SceThreadmgrForDriver:
         nid: 0xE2C40624
         kernel: true
