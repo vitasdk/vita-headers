@@ -1737,12 +1737,6 @@ modules:
   SceSysmem:
     nid: 0x3380B323
     libraries:
-      SceSysmemForKernel:
-        nid: 0x63A519E5
-        kernel: true
-        functions:
-          ksceKernelCreateUidObj: 0xDF0288D7
-          ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
       SceSysmemForDriver:
         nid: 0x6F25E18A
         kernel: true
@@ -1786,6 +1780,12 @@ modules:
           ksceKernelUidRelease: 0x149885C4
           ksceKernelUidRetain: 0x0F5C84B7
           ksceKernelUnmapMemBlock: 0xFFCD9B60
+      SceSysmemForKernel:
+        nid: 0x63A519E5
+        kernel: true
+        functions:
+          ksceKernelCreateUidObj: 0xDF0288D7
+          ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
       SceSysmem:
         nid: 0x37FE725A
         kernel: false
