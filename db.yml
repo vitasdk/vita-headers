@@ -5790,6 +5790,22 @@ modules:
   SceLowio:
     nid: 0x17E0D8DF
     libraries:
+      ScePervasiveForDriver:
+        kernel: true
+        nid: 0xE692C727
+        functions:
+          kscePervasiveUartResetEnable: 0x788B6C61
+          kscePervasiveUartResetDisable: 0xA7CE7DCC
+          kscePervasiveUartClockEnable: 0xEFD084D8
+          kscePervasiveUartClockDisable: 0x18DD8043
+          kscePervasiveGpioResetEnable: 0x731A097D
+          kscePervasiveGpioResetDisable: 0x78C34032
+          kscePervasiveGpioClockEnable: 0x2F195C97
+          kscePervasiveGpioClockDisable: 0xEB176898
+          kscePervasiveSpiResetEnable: 0x7B16F900
+          kscePervasiveSpiResetDisable: 0xE4B145AE
+          kscePervasiveSpiClockDisable: 0xA85BF98A
+          kscePervasiveSpiClockEnable: 0xDFD96BFC
       SceGpioForDriver:
         kernel: true
         nid: 0xF0EF5743
