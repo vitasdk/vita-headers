@@ -1008,6 +1008,14 @@ modules:
           ksceDisplayRegisterFrameBufCallback: 0x6E22990E
           ksceDisplayGetActualViewportConf: 0x40ACFE51
           ksceDisplaySetViewportConf: 0xEE5EB52D
+          ksceDisplaySetInvertColors: 0x19140ACD
+          ksceDisplaySetBrightness: 0x9E3C6DC6
+          ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
+          ksceDisplayUnregisterVblankStartCallback: 0xB027433E
+          ksceDisplayWaitVblankStartMulti: 0x40F1469C
+          ksceDisplayWaitVblankStartMultiCB: 0x46F186C3
+          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
+          ksceDisplayWaitVblankStart: 0x984C27E7
         kernel: true
         nid: 0x9FED47AC
   SceFace:
@@ -5801,6 +5809,7 @@ modules:
         nid: 0xE14BEF6E
         functions:
           ksceI2cTransferWriteRead: 0x0A40B7BF
+          ksceI2cReset: 0x76D277AB
           ksceI2cInit: 0x9CF8F3D6
           ksceI2cSetDebugHandlers: 0xA2C7CE62
           ksceI2cTransferWrite: 0xCA94A759

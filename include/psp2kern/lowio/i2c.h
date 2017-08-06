@@ -30,6 +30,7 @@ typedef struct SceI2cDebugHandlers {
 } SceI2cDebugHandlers;
 
 int ksceI2cInit(int bus);
+int ksceI2cReset(int bus);
 int ksceI2cTransferRead(int bus, unsigned int addr, unsigned char *buffer, int size);
 int ksceI2cTransferWrite(int bus, unsigned int addr, const unsigned char *buffer, int size);
 int ksceI2cTransferWriteRead(int bus,
