@@ -1850,7 +1850,8 @@ modules:
         kernel: true
         nid: 0x3691DA45
         functions:
-          ksceKernelGetSysrootBuffer: 0x3E455842
+          ksceKernelGetSysbase: 0x3E455842
+          ksceKernelGetSysrootBuffer: 0x9DB56D1F
           ksceKernelGetProcessTitleId: 0xEC3124A3
           ksceSysrootIsAuCodecIcConexant: 0x46E72428
           ksceSysrootIsBsodReboot: 0x4373AC96
@@ -5788,6 +5789,8 @@ modules:
           ksceSysconSetDebugHandlers: 0xF245CD6F
           ksceSysconSetLowBatteryCallback: 0x3F0DB7C0
           ksceSysconSetThermalAlertCallback: 0x773B8126
+          ksceSysconWaitInitialized: 0x55DF1C9B
+          ksceSysconGetBaryon: 0xFF86F4C5
   SceLowio:
     nid: 0x17E0D8DF
     libraries:
@@ -5807,6 +5810,10 @@ modules:
           kscePervasiveSpiResetDisable: 0xE4B145AE
           kscePervasiveSpiClockDisable: 0xA85BF98A
           kscePervasiveSpiClockEnable: 0xDFD96BFC
+          kscePervasiveDsiResetEnable: 0xE3FC1C8D
+          kscePervasiveDsiResetDisable: 0xFFB43AC2
+          kscePervasiveDsiClockEnable: 0xBC42C72F
+          kscePervasiveDsiClockDisable: 0x25AE181E
       SceGpioForDriver:
         kernel: true
         nid: 0xF0EF5743
