@@ -193,6 +193,7 @@ var searchData=
   ['kernel',['Kernel',['../group__SceProcessmgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceRegistryMgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceSblACMgrKernel.html',1,'']]],
+  ['kernel',['Kernel',['../group__SceSblAIMgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceSblAuthMgrKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceStatKernel.html',1,'']]],
   ['kernel',['Kernel',['../group__SceSuspendKernel.html',1,'']]],

@@ -9,6 +9,7 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "display.h", "ern_2display_8h_source.html", null ],
     [ "registrymgr.h", "ern_2registrymgr_8h_source.html", null ],
     [ "sblacmgr.h", "sblacmgr_8h_source.html", null ],
+    [ "sblaimgr.h", "sblaimgr_8h_source.html", null ],
     [ "sblauthmgr.h", "sblauthmgr_8h_source.html", null ],
     [ "types.h", "ern_2types_8h_source.html", null ],
     [ "udcd.h", "ern_2udcd_8h_source.html", null ],

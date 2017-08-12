@@ -951,6 +951,7 @@ var searchData=
   ['sceregmgrsetkeystr',['sceRegMgrSetKeyStr',['../group__SceRegistryMgrUser.html#gaf54ea2b44345c1b15a8be946c32442b6',1,'registrymgr.h']]],
   ['scertctick',['SceRtcTick',['../group__SceRtcUser.html#structSceRtcTick',1,'']]],
   ['sbl_20ac_20manager',['Sbl AC Manager',['../group__SceSblACMgr.html',1,'']]],
+  ['sbl_20ai_20manager',['Sbl AI Manager',['../group__SceSblAIMgr.html',1,'']]],
   ['sbl_20auth_20manager',['Sbl Auth Manager',['../group__SceSblAuthMgr.html',1,'']]],
   ['screenshot_20library',['ScreenShot Library',['../group__SceScreenShot.html',1,'']]],
   ['scescreenshotdisable',['sceScreenShotDisable',['../group__SceScreenShotUser.html#ga87815ecf3513b92b1c63f0ff004ed8ab',1,'screenshot.h']]],
