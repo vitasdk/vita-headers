@@ -5815,6 +5815,11 @@ modules:
           kscePervasiveDsiResetDisable: 0xFFB43AC2
           kscePervasiveDsiClockEnable: 0xBC42C72F
           kscePervasiveDsiClockDisable: 0x25AE181E
+          kscePervasiveMsifResetEnable: 0xA3569FF1
+          kscePervasiveMsifResetDisable: 0xCB0F15CD
+          kscePervasiveMsifClockEnable: 0x7704C013
+          kscePervasiveMsifClockDisable: 0x2A9778CD
+          kscePervasiveRemovableMemoryGetCardInsertState: 0x551EEE82
       SceGpioForDriver:
         kernel: true
         nid: 0xF0EF5743
