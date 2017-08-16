@@ -5791,7 +5791,11 @@ modules:
           ksceSysconSetLowBatteryCallback: 0x3F0DB7C0
           ksceSysconSetThermalAlertCallback: 0x773B8126
           ksceSysconWaitInitialized: 0x55DF1C9B
-          ksceSysconGetBaryon: 0xFF86F4C5
+          ksceSysconGetBaryonVersion: 0xFF86F4C5
+          ksceSysconGetBaryonTimestamp: 0x4D588A0A
+          ksceSysconCtrlMsPower: 0x710A7CF0
+          ksceSysconCtrlSdPower: 0xBE1ADE4F
+          ksceSysconCtrlHdmiCecPower: 0x62155962
   SceLowio:
     nid: 0x17E0D8DF
     libraries:
@@ -5819,6 +5823,7 @@ modules:
           kscePervasiveMsifResetDisable: 0xCB0F15CD
           kscePervasiveMsifClockEnable: 0x7704C013
           kscePervasiveMsifClockDisable: 0x2A9778CD
+          kscePervasiveMsifSetClock: 0x64ABE589
           kscePervasiveRemovableMemoryGetCardInsertState: 0x551EEE82
       SceGpioForDriver:
         kernel: true
