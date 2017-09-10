@@ -1864,9 +1864,9 @@ modules:
         kernel: true
         nid: 0x7290B21C
         functions:
-          ksceKernelRegisterSuspendCallback: 0x04C05D10
-          ksceKernelUnregisterSuspendCallback: 0xDD61D621
-          ksceKernelNotifySuspendCallback: 0xD4622EA8
+          ksceKernelRegisterSysEventHandler: 0x04C05D10
+          ksceKernelUnregisterSysEventHandler: 0xDD61D621
+          ksceKernelSysEventDispatch: 0xD4622EA8
           ksceKernelPowerTick: 0xE0489831
       SceSysmem:
         functions:
