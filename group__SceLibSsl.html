@@ -17,8 +17,8 @@
   $(document).ready(initResizable);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="vitasdk"/>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,10 +46,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,true,'search.html','Search');
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -68,6 +66,20 @@ $(function() {
 $(document).ready(function(){initNavTree('group__SceLibSsl.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a>  </div>
