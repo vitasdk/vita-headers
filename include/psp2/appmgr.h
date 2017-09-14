@@ -65,10 +65,10 @@ typedef struct sceAppMgrLoadExecOptParam {
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
-// Get process ID by name (name of SceShell is NPXS19999)
+//! Get process ID by name (name of SceShell is NPXS19999)
 int sceAppMgrGetIdByName(SceUID *pid, const char *name);
 
-// Get process name by ID
+//! Get process name by ID
 int sceAppMgrGetNameById(SceUID pid, char *name);
 
 //! Destroy all other apps
