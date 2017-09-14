@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3":[1,6,7,0,46],
+"group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591":[1,6,7,0,50],
 "group__SceThreadMgrUser.html#ga7011e5610981eae9983059ca93b4eaba":[1,6,7,0,11],
 "group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843":[1,6,7,0,3],
 "group__SceThreadMgrUser.html#ga73595f343ff0270f9d14ceba5b629cce":[1,6,7,0,33],
@@ -158,8 +160,8 @@ var NAVTREEINDEX7 =
 "http_8h_source.html":[3,0,0,0,2,0],
 "i2c_8h_source.html":[3,0,0,1,2,1],
 "ime__dialog_8h_source.html":[3,0,0,0,20],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h_source.html":[3,0,0,1,1,2],
 "io_2devctl_8h_source.html":[3,0,0,0,0,0],
 "io_2dirent_8h_source.html":[3,0,0,0,0,1],
