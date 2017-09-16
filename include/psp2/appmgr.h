@@ -126,6 +126,9 @@ int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaun
 //! return AppId ?
 SceUID sceAppMgrLaunchAppByName2ForShell(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
+//! Mount pfs, set unk and unk2 to 0
+int sceAppMgrGameDataMount(const char *path, int unk, int unk2, char *mount_point);
+	
 //! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
 int sceAppMgrAppDataMount(int id, char *mount_point);
 
