@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">appmgr.h</field>
     <field name="url">appmgr_8h_source.html#l00062</field>
     <field name="keywords"></field>
-    <field name="text">sceAppMgrLoadExecOptParam reserved sceAppMgrLoadExecOptParam sceAppMgrGetIdByName SceUID pid name sceAppMgrGetNameById SceUID pid name sceAppMgrDestroyOtherApp sceAppMgrDestroyAppByName name sceAppMgrDestroyAppByAppId SceUID appId SceUID sceAppMgrGetProcessIdByAppIdForShell SceUID appId sceAppMgrGetRunningAppIdListForShell SceUID appIds count _sceAppMgrGetAppState SceAppMgrAppState appState uint32_t len uint32_t version sceAppMgrReceiveSystemEvent SceAppMgrSystemEvent systemEvent sceAppMgrGetAppParam param sceAppMgrAcquireBgmPort sceAppMgrReleaseBgmPort sceAppMgrSetInfobarState SceAppMgrInfoBarVisibility visibility SceAppMgrInfoBarColor color SceAppMgrInfoBarTransparency transparency sceAppMgrLoadExec appPath argv SceAppMgrExecOptParam optParam sceAppMgrLaunchAppByUri flags uri sceAppMgrLaunchAppByName2 name param SceAppMgrLaunchAppOptParam optParam SceUID sceAppMgrLaunchAppByName2ForShell name param SceAppMgrLaunchAppOptParam optParam sceAppMgrAppDataMount mount_point sceAppMgrAppDataMountById titleid mount_point sceAppMgrAppParamGetString pid param length sceAppMgrConvertVs0UserDrivePath path mount_point unk sceAppMgrGetDevInfo dev uint64_t max_size uint64_t free_size sceAppMgrGetRawPath path mount_point unk sceAppMgrMmsMount mount_point sceAppMgrPspSaveDataRootMount mount_point sceAppMgrWorkDirMount mount_point sceAppMgrWorkDirMountById titleid mount_point sceAppMgrUmount mount_point</field>
+    <field name="text">sceAppMgrLoadExecOptParam reserved sceAppMgrLoadExecOptParam sceAppMgrGetIdByName SceUID pid name sceAppMgrGetNameById SceUID pid name sceAppMgrDestroyOtherApp sceAppMgrDestroyAppByName name sceAppMgrDestroyAppByAppId SceUID appId SceUID sceAppMgrGetProcessIdByAppIdForShell SceUID appId sceAppMgrGetRunningAppIdListForShell SceUID appIds count _sceAppMgrGetAppState SceAppMgrAppState appState uint32_t len uint32_t version sceAppMgrReceiveSystemEvent SceAppMgrSystemEvent systemEvent sceAppMgrGetAppParam param sceAppMgrAcquireBgmPort sceAppMgrReleaseBgmPort sceAppMgrSetInfobarState SceAppMgrInfoBarVisibility visibility SceAppMgrInfoBarColor color SceAppMgrInfoBarTransparency transparency sceAppMgrLoadExec appPath argv SceAppMgrExecOptParam optParam sceAppMgrLaunchAppByUri flags uri sceAppMgrLaunchAppByName2 name param SceAppMgrLaunchAppOptParam optParam SceUID sceAppMgrLaunchAppByName2ForShell name param SceAppMgrLaunchAppOptParam optParam sceAppMgrGameDataMount path unk unk2 mount_point sceAppMgrAppDataMount mount_point sceAppMgrAppDataMountById titleid mount_point sceAppMgrAppParamGetString pid param length sceAppMgrConvertVs0UserDrivePath path mount_point unk sceAppMgrGetDevInfo dev uint64_t max_size uint64_t free_size sceAppMgrGetRawPath path mount_point unk sceAppMgrMmsMount mount_point sceAppMgrPspSaveDataRootMount mount_point sceAppMgrWorkDirMount mount_point sceAppMgrWorkDirMountById titleid mount_point sceAppMgrUmount mount_point</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -9097,6 +9097,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceAppMgrUser.html#gab865fbedcc3772e21b221cf1d5862966</field>
     <field name="keywords">sceAppMgrLaunchAppByName2ForShell</field>
     <field name="text">name The Title ID of the application param The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam return AppId</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAppMgrGameDataMount</field>
+    <field name="args">(const char *path, int unk, int unk2, char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#ga45da82901f2b6d0aa0aca11c886222c1</field>
+    <field name="keywords">sceAppMgrGameDataMount</field>
+    <field name="text">Mount pfs set unk and unk2 to 0</field>
   </doc>
   <doc>
     <field name="type">function</field>
