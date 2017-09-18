@@ -85,6 +85,11 @@ int ksceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, int sync);
 */
 int ksceDisplayGetFrameBufDimensions(int *width, int *height);
 
+/**
+ * Wait for vertical blank start
+ */
+int ksceDisplayWaitVblankStart(void);
+
 #ifdef __cplusplus
 }
 #endif
