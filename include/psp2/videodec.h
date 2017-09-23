@@ -134,6 +134,13 @@ int sceVideodecInitLibrary(SceVideodecType codec, const SceVideodecQueryInitInfo
 
 /***
  * @param[in] codec - See ::SceVideodecType
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceVideodecTermLibrary(SceVideodecType codec);
+
+/***
+ * @param[in] codec - See ::SceVideodecType
  * @param[in] query - Should be copy from ::SceVideodecQueryInitInfoHwAvcdec.
  * @param[out] decoderInfo - Must be initialized with zeros.
  *
@@ -149,6 +156,13 @@ int sceAvcdecQueryDecoderMemSize(SceVideodecType codec, const SceAvcdecQueryDeco
  * @return 0 on success, < 0 on error.
  */
 int sceAvcdecCreateDecoder(SceVideodecType codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
+
+/***
+ * @param[in] decoder - A ::SceAvcdecCtrl decoder initialized with ::sceAvcdecCreateDecoder
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvcdecDeleteDecoder(SceAvcdecCtrl *decoder);
 
 /***
  * @param[in] decoder
