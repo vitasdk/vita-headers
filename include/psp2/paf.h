@@ -21,6 +21,7 @@ void *sce_paf_private_memchr(const void *ptr, int value, size_t num);
 int sce_paf_private_memcmp(const void *ptr1, const void *ptr2, size_t num);
 int sce_paf_private_memcmp2(const void *ptr1, const void *ptr2, size_t num);
 void *sce_paf_private_memcpy(void *destination, const void *source, size_t num);
+void *sce_paf_private_memcpy2(void *destination, const void *source, size_t num);
 void *sce_paf_private_memmove(void *destination, const void *source, size_t num);
 void *sce_paf_private_memmove2(void *destination, const void *source, size_t num);
 void *sce_paf_private_memset(void *ptr, int value, size_t num);
