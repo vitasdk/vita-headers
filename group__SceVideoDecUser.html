@@ -127,13 +127,13 @@ horizontal</td>
 <td class="fieldname">
 numOfRefFrames</td>
 <td class="fielddoc">
-</td></tr>
+Number of reference frames to use. </td></tr>
 <tr><td class="fieldtype">
 <a id="gad4c8cdf3df78a5dbb2239c1fc7bfd83b"></a>uint32_t</td>
 <td class="fieldname">
 numOfStreams</td>
 <td class="fielddoc">
-</td></tr>
+Must be set to 1. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga0b24188e8e67c0b3fb566ef7ba3197cd"></a>uint32_t</td>
 <td class="fieldname">
@@ -232,7 +232,7 @@ horizontal</td>
 <td class="fieldname">
 numOfRefFrames</td>
 <td class="fielddoc">
-</td></tr>
+Number of reference frames. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga6ec30bf07243aa69a08b1fa2d98f404e"></a>uint32_t</td>
 <td class="fieldname">
@@ -385,6 +385,12 @@ colourPrimaries</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="gac245eb3dc60d1dd1d84bf24a18f40a42"></a>uint8_t</td>
+<td class="fieldname">
+ctType</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga7a1ee27e6030e15d66a54fd376b1be09"></a>uint8_t</td>
 <td class="fieldname">
 fixedFrameRateFlag</td>
@@ -400,6 +406,12 @@ matrixCoefficients</td>
 <a id="gad091fb253ac7835865f4a4317dda096b"></a>uint32_t</td>
 <td class="fieldname">
 numUnitsInTick</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf787771137a7f4cbeeb09eade7eb20fa"></a>uint8_t</td>
+<td class="fieldname">
+picStruct[2]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -430,12 +442,6 @@ timeScale</td>
 <a id="ga0900a19c69ec41d5a64b53d0b35364f4"></a>uint8_t</td>
 <td class="fieldname">
 transferCharacteristics</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5d271627f7fd1f962ad04c4343a47388"></a>uint8_t</td>
-<td class="fieldname">
-unknown[3]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -584,7 +590,7 @@ opt</td>
 <td class="fieldname">
 pixelType</td>
 <td class="fielddoc">
-display pixel format </td></tr>
+One of ::SceAvcdecPixelFormat. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga180cbb7fc4da1185fab46c998ae22b2b"></a>void *</td>
 <td class="fieldname">
@@ -654,13 +660,13 @@ size</td>
 <td class="fieldname">
 numOfElm</td>
 <td class="fielddoc">
-</td></tr>
+Number of elements. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga311131644601a5cd8f195bd049ca92eb"></a>uint32_t</td>
 <td class="fieldname">
 numOfOutput</td>
 <td class="fielddoc">
-</td></tr>
+Number of outputs. </td></tr>
 <tr><td class="fieldtype">
 <a id="gad3ac22010c7c47569e346a720b9fbffa"></a><a class="el" href="group__SceVideoDecUser.html#structSceAvcdecPicture">SceAvcdecPicture</a> **</td>
 <td class="fieldname">
