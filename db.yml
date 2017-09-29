@@ -61,13 +61,13 @@ modules:
           _sceAppMgrGameDataMount: 0x454EB183
           _sceAppMgrGetAppInfo: 0x6E65D746
           _sceAppMgrGetAppMgrState: 0x55C60D20
-          _sceAppMgrGetAppParam2: 0x26D43923
           _sceAppMgrGetAppParam: 0x258C3E3C
+          _sceAppMgrGetAppParam2: 0x26D43923
           _sceAppMgrGetBootParam: 0xEEFBC756
           _sceAppMgrGetBudgetInfo: 0xEACF2237
           _sceAppMgrGetCoredumpStateForShell: 0x03DD7E65
-          _sceAppMgrGetCurrentBgmState2: 0x3F7B9BB5
           _sceAppMgrGetCurrentBgmState: 0x81569A58
+          _sceAppMgrGetCurrentBgmState2: 0x3F7B9BB5
           _sceAppMgrGetDevInfo: 0x52766019
           _sceAppMgrGetFgAppInfo: 0xAC9968B7
           _sceAppMgrGetIdByName: 0xC311CC17
@@ -95,14 +95,14 @@ modules:
           _sceAppMgrInitSafeMemoryById: 0x03FA4036
           _sceAppMgrInstallDirMount: 0xED37D810
           _sceAppMgrIsCameraActive: 0x7F0C9410
+          _sceAppMgrLaunchAppByName: 0xDAC0AF12
+          _sceAppMgrLaunchAppByNameForShell: 0x4C3B5BB8
           _sceAppMgrLaunchAppByName2: 0xAEF06983
           _sceAppMgrLaunchAppByName2ForShell: 0xC6BA9596
           _sceAppMgrLaunchAppByName2ndStage: 0xDEDD2AED
-          _sceAppMgrLaunchAppByName: 0xDAC0AF12
-          _sceAppMgrLaunchAppByNameForShell: 0x4C3B5BB8
           _sceAppMgrLaunchAppByPath4: 0x8FE4F651
-          _sceAppMgrLaunchAppByUri2: 0x4B45EAC0
           _sceAppMgrLaunchAppByUri: 0x37CE3984
+          _sceAppMgrLaunchAppByUri2: 0x4B45EAC0
           _sceAppMgrLaunchVideoStreamingApp: 0x29650EE6
           _sceAppMgrLoadExec: 0xDC2F23E0
           _sceAppMgrLoadSaveDataSystemFile: 0xA630BC5D
@@ -122,10 +122,10 @@ modules:
           _sceAppMgrReceiveShellEvent: 0xE0DADF51
           _sceAppMgrReceiveSystemEvent: 0x7240375B
           _sceAppMgrSaveDataAddMount: 0xD1391ACE
-          _sceAppMgrSaveDataDataRemove2: 0x435E0BCB
           _sceAppMgrSaveDataDataRemove: 0xA579A39E
-          _sceAppMgrSaveDataDataSave2: 0xFDACCA65
+          _sceAppMgrSaveDataDataRemove2: 0x435E0BCB
           _sceAppMgrSaveDataDataSave: 0xB81777B7
+          _sceAppMgrSaveDataDataSave2: 0xFDACCA65
           _sceAppMgrSaveDataGetQuota: 0xF28A426B
           _sceAppMgrSaveDataMount: 0x95A6B1BF
           _sceAppMgrSaveDataSlotCreate: 0xC48833AA
@@ -141,8 +141,8 @@ modules:
           _sceAppMgrSaveDataUmount: 0x53623420
           _sceAppMgrSendNotificationRequest: 0xF42E27AD
           _sceAppMgrSendParam: 0xD29236AD
-          _sceAppMgrSendSystemEvent2: 0xD70D5EEC
           _sceAppMgrSendSystemEvent: 0xCEAF12B6
+          _sceAppMgrSendSystemEvent2: 0xD70D5EEC
           _sceAppMgrSetBackRenderPortOwner: 0xE8357021
           _sceAppMgrSetBgmProxyApp: 0xF6B093BC
           _sceAppMgrSetNetworkDisconnectionWarningDialogState: 0xD4B0CDB4
@@ -166,8 +166,8 @@ modules:
           sceAppMgrAcquireBgmPortForMusicPlayer: 0x44EC36FA
           sceAppMgrAcquireBgmPortWithPriority: 0xAAED7419
           sceAppMgrAcquireBtrm: 0xD752695D
-          sceAppMgrAcquireSoundOutExclusive2: 0xB9365442
           sceAppMgrAcquireSoundOutExclusive: 0xACB48075
+          sceAppMgrAcquireSoundOutExclusive2: 0xB9365442
           sceAppMgrActivateApp: 0x43631508
           sceAppMgrDeactivateApp: 0xFFA093D9
           sceAppMgrDeclareSystemChatApp: 0x77EE891D
@@ -202,9 +202,9 @@ modules:
           sceAppMgrReceiveShellEventNum: 0xFB67BABD
           sceAppMgrReleaseBgmPort: 0xF3717E37
           sceAppMgrReleaseBtrm: 0xACDCE4DB
+          sceAppMgrReleaseSoundOutExclusive: 0x3BA41199
           sceAppMgrReleaseSoundOutExclusive2: 0x2BB68701
           sceAppMgrReleaseSoundOutExclusive3: 0x626C339D
-          sceAppMgrReleaseSoundOutExclusive: 0x3BA41199
           sceAppMgrRestoreBgmSettingForShell: 0xD9BCC50C
           sceAppMgrRestoreDisplaySettingForShell: 0xE455922D
           sceAppMgrResumeBgAppByShell: 0x64DD4321
@@ -221,8 +221,8 @@ modules:
           sceAppMgrSetInfobarStateForCommonDialog: 0xD6758B4E
           sceAppMgrSetInfobarStateForShellByAppId: 0xF7DFE96E
           sceAppMgrSetRecommendedScreenOrientationActivated: 0x75876896
-          sceAppMgrSetSystemImposeState2: 0x2163759A
           sceAppMgrSetSystemImposeState: 0xD16B91B5
+          sceAppMgrSetSystemImposeState2: 0x2163759A
           sceAppMgrSuspendBgAppByShell: 0x5BCF6927
           sceAppMgrSuspendUntilActivated: 0xECEC7F90
         kernel: false
