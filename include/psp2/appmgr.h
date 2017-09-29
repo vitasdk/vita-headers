@@ -150,6 +150,26 @@ int _sceAppMgrSaveDataSlotSetParam(SceAppMgrSaveDataSlot* data);
 int _sceAppMgrSaveDataSlotDelete(SceAppMgrSaveDataSlotDelete* data);
 
 /**
+ * Get Process ID by Title ID
+ *
+ * @param[out] pid - Process ID
+ * @param[in] name - Title ID
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAppMgrGetIdByName(SceUID *pid, const char *name);
+
+/**
+ * Get Title ID by Process ID
+ *
+ * @param[in] pid - Process ID
+ * @param[out] name - Title ID
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAppMgrGetNameById(SceUID pid, char *name);
+
+/**
  * Destroy other apps
  *
  * @return 0 on success, < 0 on error.
