@@ -8,24 +8,19 @@
 #define _PSP2_APPMGR_H_
 
 #include <psp2/types.h>
+#include <psp2/apputil.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 typedef enum SceAppMgrErrorCode {
-	//! Busy
-	SCE_APPMGR_ERROR_BUSY               = 0x80802000,
-	//! Invalid state
-	SCE_APPMGR_ERROR_STATE              = 0x80802013,
-	//! NULL pointer
-	SCE_APPMGR_ERROR_NULL_POINTER		= 0x80802016,
-	//!< Invalid param
-	SCE_APPMGR_ERROR_INVALID            = 0x8080201a,
-	//!< Invalid self path
-	SCE_APPMGR_ERROR_INVALID_SELF_PATH  = 0x8080201e,
-	//!< argv is too long
-	SCE_APPMGR_ERROR_TOO_LONG_ARGV      = 0x8080201d
+	SCE_APPMGR_ERROR_BUSY               = 0x80802000, //!< Busy
+	SCE_APPMGR_ERROR_STATE              = 0x80802013, //!< Invalid state
+	SCE_APPMGR_ERROR_NULL_POINTER       = 0x80802016, //!< NULL pointer
+	SCE_APPMGR_ERROR_INVALID            = 0x8080201A, //!< Invalid param
+	SCE_APPMGR_ERROR_INVALID_SELF_PATH  = 0x8080201E, //!< Invalid SELF path
+	SCE_APPMGR_ERROR_TOO_LONG_ARGV      = 0x8080201D  //!< argv is too long
 } SceAppMgrErrorCode;
 
 typedef enum SceAppMgrSystemEventType {
@@ -51,116 +46,412 @@ typedef enum SceAppMgrInfoBarTransparency {
 } SceAppMgrInfoBarTransparency;
 
 typedef struct SceAppMgrSystemEvent {
-	int systemEvent; //!< One of ::SceAppMgrSystemEventType
-	uint8_t reserved[60];
+	int     systemEvent;   //!< One of ::SceAppMgrSystemEventType
+	uint8_t reserved[60];  //!< Reserved data
 } SceAppMgrSystemEvent;
+
+typedef struct SceAppMgrSaveDataData {
+	int size;                                //!< Must be 0x4C
+	unsigned int slotId;                     //!< Save slot to use
+	SceAppUtilSaveDataSlotParam* slotParam;  //!< Save slot params
+	uint8_t reserved[32];                    //!< Reserved data
+	SceAppUtilSaveDataFile* files;           //!< Pointer to an array of files
+	int fileNum;                             //!< Number of files to save
+	SceAppUtilSaveDataMountPoint mountPoint; //!< Savedata mountpoint
+	unsigned int* requiredSizeKB;            //!< Required size in KBs
+} SceAppMgrSaveDataData;
+
+typedef struct SceAppMgrSaveDataDataDelete {
+	int size;                                //!< Must be 0x44
+	unsigned int slotId;                     //!< Save slot to use
+	SceAppUtilSaveDataSlotParam* slotParam;  //!< Save slot params
+	uint8_t reserved[32];                    //!< Reserved data
+	SceAppUtilSaveDataFile* files;           //!< Pointer to an array of files
+	int fileNum;                             //!< Number of files to delete
+	SceAppUtilSaveDataMountPoint mountPoint; //!< Savedata mountpoint
+} SceAppMgrSaveDataDataDelete;
+
+typedef struct SceAppMgrSaveDataSlot {
+	int size;                                //!< Must be 0x418
+	unsigned int slotId;                     //!< Save slot to use
+	SceAppUtilSaveDataSlotParam slotParam;   //!< Save slot params
+	uint8_t reserved[116];                   //!< Reserved data
+	SceAppUtilSaveDataMountPoint mountPoint; //!< Savedata mountpoint
+} SceAppMgrSaveDataSlot;
+
+typedef struct SceAppMgrSaveDataSlotDelete {
+	int size;                                 //!< Must be 0x18
+	unsigned int slotId;                      //!< Save slot to use
+	SceAppUtilSaveDataMountPoint mountPoint;  //!< Savedata mountpoint
+} SceAppMgrSaveDataSlotDelete;
 
 typedef struct SceAppMgrAppState SceAppMgrAppState; // Missing struct
 typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing struct
 
 typedef struct sceAppMgrLoadExecOptParam {
-	int reserved[64];
+	int reserved[64];    //!< Reserved data
 } sceAppMgrLoadExecOptParam;
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
-//! Get process ID by name (name of SceShell is NPXS19999)
+/**
+ * Save data on savedata0: partition
+ *
+ * @param[in] data - Data to save
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrSaveDataDataSave(SceAppMgrSaveDataData* data);
+
+/**
+ * Remove data on savedata0: partition
+ *
+ * @param[in] data - Data to remove
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrSaveDataDataRemove(SceAppMgrSaveDataDataDelete* data);
+
+/**
+ * Create a savedata slot
+ *
+ * @param[in] data - Slot data
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrSaveDataSlotCreate(SceAppMgrSaveDataSlot* data);
+
+/**
+ * Get current param of a savedata slot
+ *
+ * @param[out] data - Slot data
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrSaveDataSlotGetParam(SceAppMgrSaveDataSlot* data);
+
+/**
+ * Set current param of a savedata slot
+ *
+ * @param[in] data - Slot data
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrSaveDataSlotSetParam(SceAppMgrSaveDataSlot* data);
+
+/**
+ * Delete a savedata slot
+ *
+ * @param[in] data - Slot data
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrSaveDataSlotDelete(SceAppMgrSaveDataSlotDelete* data);
+
+/**
+ * Get Process ID by Title ID
+ *
+ * @param[out] pid - Process ID
+ * @param[in] name - Title ID
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAppMgrGetIdByName(SceUID *pid, const char *name);
 
-//! Get process name by ID
+/**
+ * Get Title ID by Process ID
+ *
+ * @param[in] pid - Process ID
+ * @param[out] name - Title ID
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAppMgrGetNameById(SceUID pid, char *name);
 
-//! Destroy all other apps
+/**
+ * Destroy other apps
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAppMgrDestroyOtherApp(void);
 
-//! name: The Title ID of the application
+/**
+ * Destroy an application by Title ID
+ *
+ * @param[in] name - Title ID of the application
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAppMgrDestroyAppByName(char *name);
 
-//! appId: The application id of the application
+/**
+ * Destroy an application by Application ID
+ *
+ * @param[in] appId - Application ID of the application
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAppMgrDestroyAppByAppId(SceUID appId);
 
-//! Get process id by app id for shell
+/**
+ * Get PID of an application for Shell
+ *
+ * @param[in] appId - Application ID of the application
+ *
+ * @return The PID on success, < 0 on error.
+ */
 SceUID sceAppMgrGetProcessIdByAppIdForShell(SceUID appId);
 
-//! Get list of running app ids (usually returns 1 app id)
+/**
+ * Get a list of running applications
+ *
+ * @param[out] appIds - Array of running application IDs
+ * @param[in] count - Max number of running applications to search
+ *
+ * @return Number of running applications.
+ */
 int sceAppMgrGetRunningAppIdListForShell(SceUID *appIds, int count);
 
+/**
+ * Get an application state
+ *
+ * @param[out] appState - State of the application
+ * @param[in] len - sizeof(SceAppMgrState)
+ * @param[in] version - Version (?)
+ 
+ * @return 0 on success, < 0 on error.
+ */
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
 
 /**
- * static __inline int sceAppMgrGetAppState(SceAppMgrAppState *appState) {
- *	 return _sceAppMgrGetAppState(appState, sizeof(SceAppMgrAppState), version);
- * };
+ * Receive system event
+ *
+ * @param[out] systemEvent - Received system event
+ 
+ * @return 0 on success, < 0 on error.
  */
-
 int sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *systemEvent);
 
-//! Copies app param to an array
-//! App param example: type=LAUNCH_APP_BY_URI&uri=psgm:play?titleid=NPXS10031
-//! param: pointer to a 1024 byte location to store the app param
-//! Returns 0 for success
+/**
+ * Copies app param to an array
+ *
+ * @param[in] param - pointer to a 1024 byte location to store the app param
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note App param example: type=LAUNCH_APP_BY_URI&uri=psgm:play?titleid=NPXS10031
+ */
 int sceAppMgrGetAppParam(char *param);
 
-//! Obtains the BGM port, even when it is not in front
+/**
+ * Obtains the BGM port, even when it is not in front
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
 int sceAppMgrAcquireBgmPort(void);
 
-//! Release acquired BGM port
+/**
+ * Release acquired BGM port
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
 int sceAppMgrReleaseBgmPort(void);
 
-//! Set infobar state
+/**
+ * Set infobar state
+ *
+ * @param[in] visibility - Infobar visibility
+ * @param[in] color - Infobar color
+ * @param[in] transparency - Infobar transparency
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
 int sceAppMgrSetInfobarState(SceAppMgrInfoBarVisibility visibility, SceAppMgrInfoBarColor color, SceAppMgrInfoBarTransparency transparency);
 
+/**
+ * Load and start a SELF executable
+ *
+ * @param[in] appPath - Path of the SELF file
+ * @param[in] argv - Args to pass to SELF module_start
+ * @param[in] optParam - Optional params
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note SELF file must be located in app0: partition.
+ */
 int sceAppMgrLoadExec(const char *appPath, char * const argv[],
 	const SceAppMgrExecOptParam *optParam);
 
-//! flags: 0x20000 to launch, otherwise it just goes to the livearea page
+/**
+ * Start an application by URI
+ *
+ * @param[in] flags - Must be 0x20000
+ * @param[in] uri - Uri to launch
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note If flags != 0x20000, Livearea is opened.
+ */
 int sceAppMgrLaunchAppByUri(int flags, char *uri);
 
-//! name: The Title ID of the application
-//! param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam
+/**
+ * Start an application by Title ID
+ *
+ * @param[in] name - Title ID of the application
+ * @param[in] param - The params passed to the application which can be retrieved with ::sceAppMgrGetAppParam
+ * @param[in] optParam - Optional params
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
-//! name: The Title ID of the application
-//! param: The parameter passed to the application which can be retrieved with sceAppMgrGetAppParam
-//! return AppId ?
+/**
+ * Start an application by Title ID for Shell
+ *
+ * @param[in] name - Title ID of the application
+ * @param[in] param - The params passed to the application which can be retrieved with ::sceAppMgrGetAppParam
+ * @param[in] optParam - Optional params
+ *
+ * @return Application ID (?)
+ */
 SceUID sceAppMgrLaunchAppByName2ForShell(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
-//! Mount pfs, set unk and unk2 to 0
-int sceAppMgrGameDataMount(const char *path, int unk, int unk2, char *mount_point);
-	
-//! id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
+/**
+ * Mount application data
+ *
+ * @param[in] id - App data ID
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
+ */
 int sceAppMgrAppDataMount(int id, char *mount_point);
 
-//! id: 106 (ad), 107 (ad)
+/**
+ * Mount application data by Title ID
+ *
+ * @param[in] id - App data ID
+ * @param[in] titleid - Application title ID
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note id: 106 (ad), 107 (ad)
+ */
 int sceAppMgrAppDataMountById(int id, char *titleid, char *mount_point);
 
-//! param: 8 (category), 9 (stitle/title?), 10 (title/stitle?), 12 (titleid)
+/**
+ * Get application params from SFO descriptor
+ *
+ * @param[in] pid - Process ID
+ * @param[in] param - Param ID in the SFO descriptor
+ * @param[out] string - Param data
+ * @param[in] length - Length of the param data
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note param: 8 (category), 9 (stitle/title?), 10 (title/stitle?), 12 (titleid)
+ */
 int sceAppMgrAppParamGetString(int pid, int param, char *string, int length);
 
-int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
-
-//! dev: ux0:
+/**
+ * Get device info
+ *
+ * @param[in] dev - Device to get info about
+ * @param[out] max_size - Capacity of the device
+ * @param[out] free_size - Free space of the device
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note dev: ux0:
+ */
 int sceAppMgrGetDevInfo(char *dev, uint64_t *max_size, uint64_t *free_size);
 
-int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
-
-//! id: 400 (ad), 401 (ad), 402 (ad)
+/**
+ * Mount application data (PSPEmu)
+ *
+ * @param[in] id - App data ID
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note id: 400 (ad), 401 (ad), 402 (ad)
+ */
 int sceAppMgrMmsMount(int id, char *mount_point);
 
-//! ms
+/**
+ * Mount PSPEmu virtual memory stick
+ *
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note mount_point: ms
+ */
 int sceAppMgrPspSaveDataRootMount(char *mount_point);
 
-//! id: 200 (td), 201 (td), 203 (td), 204 (td), 206 (td)
+/**
+ * Mount working directory
+ *
+ * @param[in] id - Working directory ID
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note id: 200 (td), 201 (td), 203 (td), 204 (td), 206 (td)
+ */
 int sceAppMgrWorkDirMount(int id, char *mount_point);
 
-//! id: 205 (cache0), 207 (td)
+/**
+ * Mount working directory by Title ID
+ *
+ * @param[in] id - Working directory ID
+ * @param[in] titleid - Application Title ID
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note id: 205 (cache0), 207 (td)
+ */
 int sceAppMgrWorkDirMountById(int id, char *titleid, char *mount_point);
 
-//! Unmount a mountpoint
-//! Unmount app0: for example to enable write access to ux0:app/TITLEID
-//! Returns 0 on success
+/**
+ * Unmount a mountpoint
+ *
+ * @param[in] mount_point - Mountpoint to unmount
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note Unmount app0: for example to enable write access to ux0:app/TITLEID
+ */
 int sceAppMgrUmount(const char *mount_point);
+
+/**
+ * Convert vs0 path string to a new one usable by applications
+ *
+ * @param[in] path - Path to convert
+ * @param[in] mount_point - Mountpoint to use
+ * @param[in] unk - Unknown
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
+
+/**
+ * Get raw path for a given path
+ *
+ * @param[in] path - Path to convert
+ * @param[in] mount_point - Mountpoint to use
+ * @param[in] unk - Unknown
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
 
 #ifdef __cplusplus
 }
