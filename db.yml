@@ -4,6 +4,34 @@ modules:
   SceAppMgr:
     nid: 0xDBB29DB7
     libraries:
+      SceAppMgrForDriver:
+        nid: 0xDCE180F8
+        kernel: true
+        functions:
+          ksceAppMgrAcInstGetAcdirParam: 0x474AABDF
+          ksceAppMgrBgdlSetQueueStatus: 0x5B1BE482
+          ksceAppMgrCheckContentInstallPeriod: 0x193784A9
+          ksceAppMgrCheckPfsMounted: 0xB1BEEE0
+          ksceAppMgrCloudDataClearMcId: 0xEC408FEF
+          ksceAppMgrCloudDataCreateHeader: 0xED87F191
+          ksceAppMgrCloudDataGetMcId: 0x1286AF64
+          ksceAppMgrCloudDataSetMcId: 0xB94BB90
+          ksceAppMgrCloudDataVerifyHeader: 0x55D48190
+          ksceAppMgrDebugSettingNotifyUpdate: 0x7554330F
+          ksceAppMgrGameDataMount: 0xCE356B2D
+          ksceAppMgrGetPfsProcessStatus: 0xE72D2A4A
+          ksceAppMgrGetSystemDataFile: 0xAEC49533
+          ksceAppMgrLaunchAppByPath: 0xB0A37065
+          ksceAppMgrLoadSafeMemory: 0xFAF3DAAA
+          ksceAppMgrLocalBackupGetOfflineId: 0x61B13981
+          ksceAppMgrRegisterPath: 0xB53FB98E
+          ksceAppMgrSaveDataLocalBackupTargetGetList: 0x9B3F7D66
+          ksceAppMgrSaveDataLocalBackupTargetRemoveItem: 0xC4EF95BB
+          ksceAppMgrSaveDataNotifyBackupFinished: 0x6989B258
+          ksceAppMgrSaveSafeMemory: 0xD366AA44
+          ksceAppMgrSystemParamDateTimeSetConf: 0xA9AA3A68
+          ksceAppMgrUmount: 0xA714BB35
+          ksceAppMgrUpdateRifInfo: 0x894BDCB8
       SceAppMgr:
         functions:
           __sceAppMgrGetAppState: 0x210C0046
@@ -33,13 +61,13 @@ modules:
           _sceAppMgrGameDataMount: 0x454EB183
           _sceAppMgrGetAppInfo: 0x6E65D746
           _sceAppMgrGetAppMgrState: 0x55C60D20
-          _sceAppMgrGetAppParam: 0x258C3E3C
           _sceAppMgrGetAppParam2: 0x26D43923
+          _sceAppMgrGetAppParam: 0x258C3E3C
           _sceAppMgrGetBootParam: 0xEEFBC756
           _sceAppMgrGetBudgetInfo: 0xEACF2237
           _sceAppMgrGetCoredumpStateForShell: 0x3DD7E65
-          _sceAppMgrGetCurrentBgmState: 0x81569A58
           _sceAppMgrGetCurrentBgmState2: 0x3F7B9BB5
+          _sceAppMgrGetCurrentBgmState: 0x81569A58
           _sceAppMgrGetDevInfo: 0x52766019
           _sceAppMgrGetFgAppInfo: 0xAC9968B7
           _sceAppMgrGetIdByName: 0xC311CC17
@@ -61,21 +89,23 @@ modules:
           _sceAppMgrGetStatusByName: 0x46998AFC
           _sceAppMgrGetSystemDataFilePlayReady: 0x7C44FE5D
           _sceAppMgrGetUserDirPath: 0x84B138BF
+          _sceAppMgrGetUserDirPathById: 0x617D78DA
           _sceAppMgrGetVs0UserDataDrive: 0xC361C084
           _sceAppMgrGetVs0UserModuleDrive: 0x85589E87
           _sceAppMgrInitSafeMemoryById: 0x3FA4036
           _sceAppMgrInstallDirMount: 0xED37D810
           _sceAppMgrIsCameraActive: 0x7F0C9410
-          _sceAppMgrLaunchAppByName: 0xDAC0AF12
           _sceAppMgrLaunchAppByName2: 0xAEF06983
           _sceAppMgrLaunchAppByName2ForShell: 0xC6BA9596
           _sceAppMgrLaunchAppByName2ndStage: 0xDEDD2AED
+          _sceAppMgrLaunchAppByName: 0xDAC0AF12
           _sceAppMgrLaunchAppByNameForShell: 0x4C3B5BB8
           _sceAppMgrLaunchAppByPath4: 0x8FE4F651
-          _sceAppMgrLaunchAppByUri: 0x37CE3984
           _sceAppMgrLaunchAppByUri2: 0x4B45EAC0
+          _sceAppMgrLaunchAppByUri: 0x37CE3984
           _sceAppMgrLaunchVideoStreamingApp: 0x29650EE6
           _sceAppMgrLoadExec: 0xDC2F23E0
+          _sceAppMgrLoadSaveDataSystemFile: 0xA630BC5D
           _sceAppMgrLoopBackFormat: 0xEA307D2C
           _sceAppMgrLoopBackMount: 0x3493CDFA
           _sceAppMgrMmsMount: 0xE56A2E1B
@@ -92,7 +122,9 @@ modules:
           _sceAppMgrReceiveShellEvent: 0xE0DADF51
           _sceAppMgrReceiveSystemEvent: 0x7240375B
           _sceAppMgrSaveDataAddMount: 0xD1391ACE
+          _sceAppMgrSaveDataDataRemove2: 0x435E0BCB
           _sceAppMgrSaveDataDataRemove: 0xA579A39E
+          _sceAppMgrSaveDataDataSave2: 0xFDACCA65
           _sceAppMgrSaveDataDataSave: 0xB81777B7
           _sceAppMgrSaveDataGetQuota: 0xF28A426B
           _sceAppMgrSaveDataMount: 0x95A6B1BF
@@ -109,8 +141,8 @@ modules:
           _sceAppMgrSaveDataUmount: 0x53623420
           _sceAppMgrSendNotificationRequest: 0xF42E27AD
           _sceAppMgrSendParam: 0xD29236AD
-          _sceAppMgrSendSystemEvent: 0xCEAF12B6
           _sceAppMgrSendSystemEvent2: 0xD70D5EEC
+          _sceAppMgrSendSystemEvent: 0xCEAF12B6
           _sceAppMgrSetBackRenderPortOwner: 0xE8357021
           _sceAppMgrSetBgmProxyApp: 0xF6B093BC
           _sceAppMgrSetNetworkDisconnectionWarningDialogState: 0xD4B0CDB4
@@ -122,6 +154,7 @@ modules:
           _sceAppMgrSystemParamDateTimeGetConf: 0xB7F95389
           _sceAppMgrSystemParamGetInt: 0x18EB1DAC
           _sceAppMgrSystemParamGetString: 0xAF5F9497
+          _sceAppMgrThemeDataMount: 0xD9B7A5AF
           _sceAppMgrTrophyMount: 0xF8B80AC2
           _sceAppMgrTrophyMountById: 0x3DFC9410
           _sceAppMgrUmount: 0xFFCA54E0
@@ -133,8 +166,8 @@ modules:
           sceAppMgrAcquireBgmPortForMusicPlayer: 0x44EC36FA
           sceAppMgrAcquireBgmPortWithPriority: 0xAAED7419
           sceAppMgrAcquireBtrm: 0xD752695D
-          sceAppMgrAcquireSoundOutExclusive: 0xACB48075
           sceAppMgrAcquireSoundOutExclusive2: 0xB9365442
+          sceAppMgrAcquireSoundOutExclusive: 0xACB48075
           sceAppMgrActivateApp: 0x43631508
           sceAppMgrDeactivateApp: 0xFFA093D9
           sceAppMgrDeclareSystemChatApp: 0x77EE891D
@@ -152,14 +185,15 @@ modules:
           sceAppMgrGetExtraAppParam: 0x94A722BC
           sceAppMgrGetProcessIdByAppIdForShell: 0x63FAC2A9
           sceAppMgrGetSystemDataFile: 0xAEC49533
-          sceAppMgrGrowMemory: 0x842FCE8C
           sceAppMgrGrowMemory3: 0x4401EDCD
+          sceAppMgrGrowMemory: 0x842FCE8C
           sceAppMgrIsDevelopmentMode: 0x7D4F8F83
           sceAppMgrIsGameBudgetAppPresent: 0xE134F5A0
           sceAppMgrIsGameProgram: 0xFFF8F7F0
           sceAppMgrIsNonGameProgram: 0x5F22E192
           sceAppMgrIsOtherAppPresent: 0x371F6F81
           sceAppMgrIsPidShellAndCrashed: 0xC648EA9B
+          sceAppMgrIsPsNowClient: 0x972EA7BA
           sceAppMgrLaunchAppCancel: 0x5369BC0A
           sceAppMgrLoadSafeMemory: 0xFAF3DAAA
           sceAppMgrNotifyLiveBoardModeForShell: 0x389F048D
@@ -168,9 +202,9 @@ modules:
           sceAppMgrReceiveShellEventNum: 0xFB67BABD
           sceAppMgrReleaseBgmPort: 0xF3717E37
           sceAppMgrReleaseBtrm: 0xACDCE4DB
-          sceAppMgrReleaseSoundOutExclusive: 0x3BA41199
           sceAppMgrReleaseSoundOutExclusive2: 0x2BB68701
           sceAppMgrReleaseSoundOutExclusive3: 0x626C339D
+          sceAppMgrReleaseSoundOutExclusive: 0x3BA41199
           sceAppMgrRestoreBgmSettingForShell: 0xD9BCC50C
           sceAppMgrRestoreDisplaySettingForShell: 0xE455922D
           sceAppMgrResumeBgAppByShell: 0x64DD4321
@@ -181,17 +215,34 @@ modules:
           sceAppMgrSetAppProtectionModeOnMemoryShortage: 0xAF8C7FFB
           sceAppMgrSetBgmSubPriority: 0x7333C2F1
           sceAppMgrSetBgmSubPriorityForSystemChat: 0x90E42B4D
+          sceAppMgrSetDisplayMergeConf: 0x789D501
           sceAppMgrSetFakeSettingBug51800: 0xF46C81F3
           sceAppMgrSetInfobarState: 0xAD9022A1
           sceAppMgrSetInfobarStateForCommonDialog: 0xD6758B4E
           sceAppMgrSetInfobarStateForShellByAppId: 0xF7DFE96E
           sceAppMgrSetRecommendedScreenOrientationActivated: 0x75876896
-          sceAppMgrSetSystemImposeState: 0xD16B91B5
           sceAppMgrSetSystemImposeState2: 0x2163759A
+          sceAppMgrSetSystemImposeState: 0xD16B91B5
           sceAppMgrSuspendBgAppByShell: 0x5BCF6927
           sceAppMgrSuspendUntilActivated: 0xECEC7F90
         kernel: false
         nid: 0x8AF17416
+      SceSharedFb:
+        nid: 0x32A0442E
+        kernel: false
+        functions:
+          _sceSharedFbOpen: 0xB358E1B6
+          sceSharedFbBegin: 0x72067C6B
+          sceSharedFbClose: 0x33DA3428
+          sceSharedFbCreate: 0xD6C643B5
+          sceSharedFbDelete: 0xBE5A1A81
+          sceSharedFbEnd: 0xFC5A62B6
+          sceSharedFbGetInfo: 0x819954FB
+          sceSharedFbGetRenderingInfo: 0x61FEEDFA
+          sceSharedFbGetShellRenderPort: 0xAC49FC1D
+          sceSharedFbUpdateProcess: 0x3889ACF8
+          sceSharedFbUpdateProcessBegin: 0xF9754AD9
+          sceSharedFbUpdateProcessEnd: 0x565A9AB6
       SceAppMgrUser:
         functions:
           _sceAppMgrGetAppState: 0x5E86319A
