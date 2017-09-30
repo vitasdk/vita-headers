@@ -90,6 +90,13 @@ int ksceDisplayGetFrameBufDimensions(int *width, int *height);
  */
 int ksceDisplayWaitVblankStart(void);
 
+/**
+ * Wait for vertical blank start after specified number of vertical periods
+ *
+ * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
+ */
+int ksceDisplayWaitVblankStartMulti(unsigned int vcount);
+
 #ifdef __cplusplus
 }
 #endif
