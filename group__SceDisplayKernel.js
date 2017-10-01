@@ -5,5 +5,6 @@ var group__SceDisplayKernel =
     [ "ksceDisplayGetFrameBuf", "group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89", null ],
     [ "ksceDisplayGetFrameBufDimensions", "group__SceDisplayKernel.html#ga0cb12ad2f870bd91623d2946683334e7", null ],
     [ "ksceDisplaySetFrameBuf", "group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
-    [ "ksceDisplayWaitVblankStart", "group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae", null ]
+    [ "ksceDisplayWaitVblankStart", "group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae", null ],
+    [ "ksceDisplayWaitVblankStartMulti", "group__SceDisplayKernel.html#ga80d28604f6fce0d218bd11ca039f19eb", null ]
 ];
