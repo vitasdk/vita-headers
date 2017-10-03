@@ -993,6 +993,8 @@ modules:
       SceDeci4pUserp:
         functions:
           sceKernelDeci4pClose: 0x63B0C50F
+          sceKernelDeci4pCreateHostProcess: 0x4719A799
+          sceKernelDeci4pCreateHostProcessAndWait: 0x6A09F63A
           sceKernelDeci4pDisableWatchpoint: 0x5A4CDF97
           sceKernelDeci4pEnableWatchpoint: 0x3BC66BD8
           sceKernelDeci4pIsProcessAttached: 0xC4E1D86D
@@ -1113,6 +1115,7 @@ modules:
           sceFiberOptParamInitialize: 0x801AB334
           sceFiberPopUserMarkerWithHud: 0x4EC01F9C
           sceFiberPushUserMarkerWithHud: 0x9C414B09
+          sceFiberRenameSelf: 0xDD50DF3D
           sceFiberReturnToThread: 0x3B42921F
           sceFiberRun: 0x7DF23243
           sceFiberStartContextSizeCheck: 0xCD543A71
