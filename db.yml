@@ -993,6 +993,8 @@ modules:
       SceDeci4pUserp:
         functions:
           sceKernelDeci4pClose: 0x63B0C50F
+          sceKernelDeci4pCreateHostProcess: 0x4719A799
+          sceKernelDeci4pCreateHostProcessAndWait: 0x6A09F63A
           sceKernelDeci4pDisableWatchpoint: 0x5A4CDF97
           sceKernelDeci4pEnableWatchpoint: 0x3BC66BD8
           sceKernelDeci4pIsProcessAttached: 0xC4E1D86D
