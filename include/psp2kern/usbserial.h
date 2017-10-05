@@ -54,7 +54,7 @@ unsigned int ksceUsbSerialGetRecvBufferSize(void);
  * Send data
  *
  * @param[in] *buffer data to send over usb
- * @param len int len of serial buffer data
+ * @param[in] len int len of serial buffer data
  * @param unk1 Unknown
  * @param unk2 Unknown
  * @note max send length is 0x10000
@@ -65,7 +65,7 @@ unsigned int ksceUsbSerialSend(const void *buffer, unsigned int len, int unk1, i
  * Receive Data
  *
  * @param[out] *buffer buffer for incoming data
- * @param max_len max data length to receive
+ * @param[in] max_len max data length to receive
  * @param unk1 Unknown
  * @param unk2 Unknown
  * @note max recv length is 0x10000

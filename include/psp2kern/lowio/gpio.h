@@ -12,21 +12,21 @@
 extern "C" {
 #endif
 
-enum {
+typedef enum SceGpioErrorCode {
 	SCE_GPIO_ERROR_INVALID_BUS	= 0x803F0100,
 	SCE_GPIO_ERROR_INVALID_PORT	= 0x803F0101,
 	SCE_GPIO_ERROR_INVALID_MODE	= 0x803F0102
-};
+} SceGpioErrorCode;
 
-enum SceGpioPortMasks {
+typedef enum SceGpioPortMasks {
 	SCE_GPIO_PORT_MASK_LED_GAMECARD		= 1 << 6,
 	SCE_GPIO_PORT_MASK_LED_PS_BUTTON	= 1 << 7
-};
+} SceGpioPortMasks;
 
-enum SceGpioPortMode {
+typedef enum SceGpioPortMode {
 	SCE_GPIO_PORT_MODE_OUTPUT	= 0,
 	SCE_GPIO_PORT_MODE_INPUT	= 1
-};
+} SceGpioPortMode;
 
 int ksceGpioPortRead(int bus, int port);
 int ksceGpioPortSet(int bus, int port);
