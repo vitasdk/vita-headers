@@ -48,13 +48,13 @@ typedef enum SceCtrlButtons {
 } SceCtrlButtons;
 
 /** Enumeration for the controller types. */
-enum  SceCtrlExternalInputMode {
+typedef enum SceCtrlExternalInputMode {
 	SCE_CTRL_TYPE_UNPAIRED  = 0, //!< Unpaired controller
 	SCE_CTRL_TYPE_PHY       = 1, //!< Physical controller for VITA
 	SCE_CTRL_TYPE_VIRT      = 2, //!< Virtual controller for PSTV
 	SCE_CTRL_TYPE_DS3       = 4, //!< DualShock 3
 	SCE_CTRL_TYPE_DS4       = 8  //!< DualShock 4
-};
+} SceCtrlExternalInputMode;
 
 /** Controller mode. */
 typedef enum SceCtrlPadInputMode {
