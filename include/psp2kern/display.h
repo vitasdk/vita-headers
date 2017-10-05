@@ -38,12 +38,12 @@ typedef enum SceDisplaySetBufSync {
 } SceDisplaySetBufSync;
 
 /**
- * Structure used with ::sceDisplaySetFrameBuf to set/update framebuffer.
+ * Structure used with ::ksceDisplaySetFrameBuf to set/update framebuffer.
  * Original screen resolution is 960x544, but the following resolutions
  * can also be supplied as width and height :
  * 480x272, 640x368, 720x408
  *
- * @note - This structure is returned by ::sceDisplayGetFrameBuf
+ * @note - This structure is returned by ::ksceDisplayGetFrameBuf
 */
 typedef struct SceDisplayFrameBuf {
 	SceSize size;               //!< sizeof(SceDisplayFrameBuf)
