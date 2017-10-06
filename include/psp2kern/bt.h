@@ -284,7 +284,7 @@ typedef void (*SceBtCallback)(int r0, int r1, int r2, int r3);
 typedef struct _SceBtHidRequest {
 	uint32_t unk00;
 	uint32_t unk04;
-	uint8_t  type;    // 0 = read?, 1 = write?, 2 = feature?, 3 = ?
+	uint8_t  type;    //!< 0 = read?, 1 = write?, 2 = feature?, 3 = ?
 	uint8_t  unk09;
 	uint8_t  unk0A;
 	uint8_t  unk0B;
