@@ -14,7 +14,7 @@ extern "C" {
 #endif
 
 typedef enum SceCtrlErrorCode {
-	SCE_CTRL_ERROR_INVALID_ARG	    = 0x80340001,
+	SCE_CTRL_ERROR_INVALID_ARG      = 0x80340001,
 	SCE_CTRL_ERROR_PRIV_REQUIRED    = 0x80340002,
 	SCE_CTRL_ERROR_FATAL            = 0x803400FF
 } SceCtrlErrorCode;
