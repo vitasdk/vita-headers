@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__SceCPU.html":[1,6,1],
 "group__SceCPUKernel.html":[1,6,1,0],
 "group__SceCPUKernel.html#ga014cc92b4af1e5255d72bf8b08e41877":[1,6,1,0,3],
 "group__SceCPUKernel.html#ga0857a33eafe9085ed6a9a26004da9662":[1,6,1,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceCompatUser.html#ga3514a14572690fb2700e171f071357d1":[1,12,6,0,0],
 "group__SceCompatUser.html#ga386ed6418703cc63e5dd39b1927844e7":[1,12,6,0,23],
 "group__SceCompatUser.html#ga392fd23494213036f1a3e8d3b70a1c7d":[1,12,6,0,10],
-"group__SceCompatUser.html#ga3bfc5a7cb6fea20a1e020e4ed7a4b1ba":[1,12,6,0,17],
-"group__SceCompatUser.html#ga55b1105ec26d1ada689c59a441c00659":[1,12,6,0,13]
+"group__SceCompatUser.html#ga3bfc5a7cb6fea20a1e020e4ed7a4b1ba":[1,12,6,0,17]
 };

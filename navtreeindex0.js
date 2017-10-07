@@ -49,8 +49,8 @@ var NAVTREEINDEX0 =
 "error_8h_source.html":[3,0,0,0,1,2],
 "fiber_8h_source.html":[3,0,0,0,16],
 "files.html":[3,0],
-"functions.html":[2,2,0,0],
 "functions.html":[2,2,0],
+"functions.html":[2,2,0,0],
 "functions_b.html":[2,2,0,1],
 "functions_c.html":[2,2,0,2],
 "functions_d.html":[2,2,0,3],
@@ -106,6 +106,7 @@ var NAVTREEINDEX0 =
 "group__Net.html":[1,7],
 "group__SceAVConfig.html":[1,8,2],
 "group__SceAVConfigUser.html":[1,8,2,0],
+"group__SceAVConfigUser.html#ga3abca237eb723553b908a71a2bc4a278":[1,8,2,0,0],
 "group__SceAppMgr.html":[1,8,0],
 "group__SceAppMgrUser.html":[1,8,0,0],
 "group__SceAppMgrUser.html#ga06de20d8e8f7c9b20c071b871e543657":[1,8,0,0,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceBt.html":[1,7,2],
 "group__SceBtKernel.html":[1,7,2,0],
 "group__SceCLib.html":[1,6,0],
-"group__SceCLibUser.html":[1,6,0,0],
-"group__SceCPU.html":[1,6,1]
+"group__SceCLibUser.html":[1,6,0,0]
 };

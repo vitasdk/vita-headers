@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"group__SceThreadMgrUser.html#ga3786870930297f68fe805758c0970153":[1,6,7,0,58],
 "group__SceThreadMgrUser.html#ga39f2a84f2c014b35ca17a2412dafbd4b":[1,6,7,0,83],
 "group__SceThreadMgrUser.html#ga3e4b74175f4aefa6bc6f410ac11a50c6":[1,6,7,0,38],
 "group__SceThreadMgrUser.html#ga401ae7da9aa0f8e021971be3bb98efb1":[1,6,7,0,69],
@@ -88,8 +89,8 @@ var NAVTREEINDEX7 =
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,2,0],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,2,1],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,5],
-"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,7],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,2,2],
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,7],
 "group__SceTypes.html":[1,11,0],
 "group__SceTypesKernel.html":[1,11,0,1],
 "group__SceTypesKernel.html#ga024ba7ccff867a062790a9d0d3d4effe":[1,11,0,1,3],
