@@ -31,6 +31,41 @@ int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
  */
 int sceAVConfigSetDisplayBrightness(int brightness);
 
+/***
+ * Get the shutter volume.
+ *
+ * @param[out] volume - shutter volume.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAVConfigGetShutterVol(int *volume);
+
+/***
+ * Get the system volume.
+ *
+ * @param[out] volume - System volume.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAVConfigGetSystemVol(int *volume);
+
+/***
+ * Set the system volume.
+ *
+ * @param volume - volume that the device will be set to (range 0-30).
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAVConfigSetSystemVol(int volume);
+
+/**
+ * Turns on mute.
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
+int sceAVConfigMuteOn(void);
+
 
 #ifdef __cplusplus
 }
