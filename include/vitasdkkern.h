@@ -9,6 +9,7 @@
 #include <psp2kern/display.h>
 #include <psp2kern/registrymgr.h>
 #include <psp2kern/sblacmgr.h>
+#include <psp2kern/sblaimgr.h>
 #include <psp2kern/sblauthmgr.h>
 #include <psp2kern/udcd.h>
 #include <psp2kern/usbd.h>
