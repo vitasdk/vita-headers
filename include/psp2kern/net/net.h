@@ -279,7 +279,7 @@ typedef enum SceNetProtocol {
 	SCE_NET_IPPROTO_IGMP    = 2,
 	SCE_NET_IPPROTO_TCP     = 6,
 	SCE_NET_IPPROTO_UDP     = 17,
-	SCE_NET_SOL_SOCKET      = 0xffff
+	SCE_NET_SOL_SOCKET      = 0xFFFF
 } SceNetProtocol;
 
 /** Socket Options */
@@ -385,16 +385,16 @@ typedef enum SceNetIcmpCode {
 #define SCE_NET_IP_RF       0x8000
 #define SCE_NET_IP_DF       0x4000
 #define SCE_NET_IP_MF       0x2000
-#define SCE_NET_IP_OFFMASK  0x1fff
+#define SCE_NET_IP_OFFMASK  0x1FFF
 
 #define SCE_NET_INADDR_ANY           0x00000000
-#define SCE_NET_INADDR_LOOPBACK      0x7f000001
-#define SCE_NET_INADDR_BROADCAST     0xffffffff
-#define SCE_NET_INADDR_UNSPEC_GROUP  0xe0000000
-#define SCE_NET_INADDR_AUTOIP        0xa9fe0000
+#define SCE_NET_INADDR_LOOPBACK      0x7F000001
+#define SCE_NET_INADDR_BROADCAST     0xFFFFFFFF
+#define SCE_NET_INADDR_UNSPEC_GROUP  0xE0000000
+#define SCE_NET_INADDR_AUTOIP        0xA9FE0000
 
-#define SCE_NET_IN_CLASSD_NET        0xf0000000
-#define SCE_NET_IN_AUTOIP_NET        0xffff0000
+#define SCE_NET_IN_CLASSD_NET        0xF0000000
+#define SCE_NET_IN_AUTOIP_NET        0xFFFF0000
 
 #define SCE_NET_ADHOC_PORT            3658
 
