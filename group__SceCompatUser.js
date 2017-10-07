@@ -6,7 +6,7 @@ var group__SceCompatUser =
     [ "sceCompatCheckPocketStation", "group__SceCompatUser.html#ga319da01f8eeef8375159bc297df1b564", null ],
     [ "sceCompatFrameBufferInit", "group__SceCompatUser.html#gacf08dfdaecf61cb1bf1bd2d26c21ca26", null ],
     [ "sceCompatGetCurrentSecureTick", "group__SceCompatUser.html#ga233fc42e19338dbb1166ac71b1b2e39d", null ],
-    [ "sceCompatGetDevInfo", "group__SceCompatUser.html#ga70109f16dd43d84692bf4597668a01cc", null ],
+    [ "sceCompatGetDevInf", "group__SceCompatUser.html#gaf8dd62a11db364ba0accf5f513b85435", null ],
     [ "sceCompatGetPeripheralState", "group__SceCompatUser.html#gab906f211cffd609af7b496b6c4723a47", null ],
     [ "sceCompatGetPrimaryHead", "group__SceCompatUser.html#ga8552f0b4b53c0496ca308b134ba6eb82", null ],
     [ "sceCompatGetPspSystemSoftwareVersion", "group__SceCompatUser.html#gac373c454d8ec6f3a4e3a4cd60cb49951", null ],
