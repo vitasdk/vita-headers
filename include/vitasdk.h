@@ -14,6 +14,7 @@
 #include <psp2/avconfig.h>
 #include <psp2/camera.h>
 #include <psp2/common_dialog.h>
+#include <psp2/compat.h>
 #include <psp2/ctrl.h>
 #include <psp2/display.h>
 #include <psp2/fiber.h>
@@ -28,7 +29,9 @@
 #include <psp2/motion.h>
 #include <psp2/mtpif.h>
 #include <psp2/musicexport.h>
+#include <psp2/npdrm.h>
 #include <psp2/npdrmpackage.h>
+#include <psp2/paf.h>
 #include <psp2/pgf.h>
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
@@ -48,6 +51,7 @@
 #include <psp2/usbserial.h>
 #include <psp2/usbstorvstor.h>
 #include <psp2/videodec.h>
+#include <psp2/videoexport.h>
 
 #include <psp2/io/devctl.h>
 #include <psp2/io/dirent.h>
