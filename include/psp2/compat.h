@@ -288,7 +288,7 @@ int sceCompatGetTitleList(void *buf, int length);
  *
  * @return 0 on success, < 0 on error.
 */
-int sceCompatGetDevInfo(SceIoDevInfo *info);
+int sceCompatGetDevInf(SceIoDevInfo *info);
 
 /**
  * Get current secure tick
