@@ -11,8 +11,8 @@ var group__SceNetUser_structSceNetEmulationData =
     [ "order_delay_time", "group__SceNetUser.html#gac9214c2620691e61df8f134cfb4f8a23", null ],
     [ "order_rate", "group__SceNetUser.html#gaa5c2b47da1ea885253fdd20aae689750", null ],
     [ "pass_duration", "group__SceNetUser.html#ga9696d151f6362f5a24f6faa8460164e7", null ],
-    [ "policy_flags", "group__SceNetUser.html#gabf6c5273f52b45d0c17c321b642af9b7", null ],
-    [ "reserved", "group__SceNetUser.html#ga8bde5771e64d7155dcd35ff4b4debd86", null ],
+    [ "policy_flags", "group__SceNetUser.html#gaea159ca85fb3c771c514f89ce05157df", null ],
+    [ "reserved", "group__SceNetUser.html#gab173f348138cb12dc52855dff8fc3e69", null ],
     [ "system_policy_pattern", "group__SceNetUser.html#ga50cf2014059fe0be69a699aebd62610f", null ],
     [ "upper_size_limit", "group__SceNetUser.html#ga2e20fff065b06dcc13383a324ee8c202", null ]
 ];

@@ -52,6 +52,7 @@ var group__SceCtrlUser =
       [ "SCE_CTRL_TYPE_VIRT", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a9c0a6632fed8f8af8fe9d593084b3378", null ],
       [ "SCE_CTRL_TYPE_DS3", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a5abb31d61fe71e58aacce5a5979404eb", null ],
       [ "SCE_CTRL_TYPE_DS4", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04aadbee1b6c5e1bfc76593cb5c0b092751", null ],
+      [ "SCE_CTRL_TYPE_UNPAIRED", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a967ebfcf1e78707101bf3b8d248ef20b", null ],
       [ "SCE_CTRL_TYPE_PHY", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a3270ad369e969b0f907370cf89900fbe", null ],
       [ "SCE_CTRL_TYPE_VIRT", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a9c0a6632fed8f8af8fe9d593084b3378", null ],
       [ "SCE_CTRL_TYPE_DS3", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a5abb31d61fe71e58aacce5a5979404eb", null ],

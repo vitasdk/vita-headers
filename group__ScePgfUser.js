@@ -1,8 +1,6 @@
 var group__ScePgfUser =
 [
     [ "SceFontPixelFormatCode", "group__ScePgfUser.html#ga2e161afc01d5e97ed8ca486c13ac95e3", [
-      [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayKernel.html#ggabed82baf7f470b522273a3e37c24c600aed1ba9da79d96bef5d2c401d271ed016", null ],
-      [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayKernel.html#ggabed82baf7f470b522273a3e37c24c600a942be0a40abb1c6466d4583f2cefa98c", null ],
       [ "SCE_FONT_PIXELFORMAT_4", "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a847fc827f672351447eb09eb2487f43e", null ],
       [ "SCE_FONT_PIXELFORMAT_4_REV", "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a42fb1c78a295e76bf42f7c7de5cc04d6", null ],
       [ "SCE_FONT_PIXELFORMAT_8", "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3ab594d479f3f44a20fa8f0483e56e542c", null ],

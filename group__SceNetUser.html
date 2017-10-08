@@ -164,7 +164,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetEtherNtostr</b> 
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetGetMacAddress</b> (<a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *addr, int flags)</td></tr>
 <tr class="separator:gadbe63642e6321db18f61f7b9d5c03fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf92392a12c2e9c68cb2f61a206dc84e7"><td class="memItemLeft" align="right" valign="top"><a id="gaf92392a12c2e9c68cb2f61a206dc84e7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSocket</b> (const char *name, int domain, int type, int protocol)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSocket</b> (const char *name, int domain, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int protocol)</td></tr>
 <tr class="separator:gaf92392a12c2e9c68cb2f61a206dc84e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8bf88a40d1bfd020e61023ebcf81137"><td class="memItemLeft" align="right" valign="top"><a id="gac8bf88a40d1bfd020e61023ebcf81137"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetAccept</b> (int s, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int *addrlen)</td></tr>
@@ -290,28 +290,28 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_MF</b>&#160;&#160;&#160;0x2000</td></tr>
 <tr class="separator:gaf386358fe3a989f341e75be11f8ef199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace459fdb888372df092340b48e4cc9a3"><td class="memItemLeft" align="right" valign="top"><a id="gace459fdb888372df092340b48e4cc9a3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_OFFMASK</b>&#160;&#160;&#160;0x1fff</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_OFFMASK</b>&#160;&#160;&#160;0x1FFF</td></tr>
 <tr class="separator:gace459fdb888372df092340b48e4cc9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0b42fa96dcb2e5caa88b96c46ed9a0e"><td class="memItemLeft" align="right" valign="top"><a id="gab0b42fa96dcb2e5caa88b96c46ed9a0e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_ANY</b>&#160;&#160;&#160;0x00000000</td></tr>
 <tr class="separator:gab0b42fa96dcb2e5caa88b96c46ed9a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga122f2afc434c02334e38bee69fff868f"><td class="memItemLeft" align="right" valign="top"><a id="ga122f2afc434c02334e38bee69fff868f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_LOOPBACK</b>&#160;&#160;&#160;0x7f000001</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_LOOPBACK</b>&#160;&#160;&#160;0x7F000001</td></tr>
 <tr class="separator:ga122f2afc434c02334e38bee69fff868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c5a6a074f3ac1a3a6242e2ea0ffc611"><td class="memItemLeft" align="right" valign="top"><a id="ga7c5a6a074f3ac1a3a6242e2ea0ffc611"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_BROADCAST</b>&#160;&#160;&#160;0xffffffff</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_BROADCAST</b>&#160;&#160;&#160;0xFFFFFFFF</td></tr>
 <tr class="separator:ga7c5a6a074f3ac1a3a6242e2ea0ffc611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c91e958572e019c0a09da0dcac613c8"><td class="memItemLeft" align="right" valign="top"><a id="ga5c91e958572e019c0a09da0dcac613c8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_UNSPEC_GROUP</b>&#160;&#160;&#160;0xe0000000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_UNSPEC_GROUP</b>&#160;&#160;&#160;0xE0000000</td></tr>
 <tr class="separator:ga5c91e958572e019c0a09da0dcac613c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad34f0f561972d7caa6675413c7d3c61"><td class="memItemLeft" align="right" valign="top"><a id="gaad34f0f561972d7caa6675413c7d3c61"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_AUTOIP</b>&#160;&#160;&#160;0xa9fe0000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_AUTOIP</b>&#160;&#160;&#160;0xA9FE0000</td></tr>
 <tr class="separator:gaad34f0f561972d7caa6675413c7d3c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga244d355d1a3ab492127345e682df8ef9"><td class="memItemLeft" align="right" valign="top"><a id="ga244d355d1a3ab492127345e682df8ef9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_CLASSD_NET</b>&#160;&#160;&#160;0xf0000000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_CLASSD_NET</b>&#160;&#160;&#160;0xF0000000</td></tr>
 <tr class="separator:ga244d355d1a3ab492127345e682df8ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga562b0dd213897560e76af148026908f5"><td class="memItemLeft" align="right" valign="top"><a id="ga562b0dd213897560e76af148026908f5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_AUTOIP_NET</b>&#160;&#160;&#160;0xffff0000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_AUTOIP_NET</b>&#160;&#160;&#160;0xFFFF0000</td></tr>
 <tr class="separator:ga562b0dd213897560e76af148026908f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedfdc3b695a87341e75104aaee1d4467"><td class="memItemLeft" align="right" valign="top"><a id="gaedfdc3b695a87341e75104aaee1d4467"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_ADHOC_PORT</b>&#160;&#160;&#160;3658</td></tr>
@@ -484,7 +484,7 @@ flags</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga333a3e62cd51144d3135a6d6d7c406c5"></a>void *</td>
+<a id="ga2802ccb9feb2b13f5d811cc944db9d43"></a>void *</td>
 <td class="fieldname">
 memory</td>
 <td class="fielddoc">
@@ -579,13 +579,13 @@ pass_duration</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gabf6c5273f52b45d0c17c321b642af9b7"></a>unsigned short int</td>
+<a id="gaea159ca85fb3c771c514f89ce05157df"></a>unsigned short int</td>
 <td class="fieldname">
 policy_flags[64]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga8bde5771e64d7155dcd35ff4b4debd86"></a>unsigned char</td>
+<a id="gab173f348138cb12dc52855dff8fc3e69"></a>unsigned char</td>
 <td class="fieldname">
 reserved[64]</td>
 <td class="fielddoc">
@@ -644,7 +644,7 @@ recv</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga5e588a8c1f750b04225a3bdea973e2de"></a>unsigned char</td>
+<a id="ga1193297c84ae1825cefc1dc6239e9ee4"></a>unsigned char</td>
 <td class="fieldname">
 reserved[44]</td>
 <td class="fielddoc">
@@ -784,7 +784,7 @@ fd</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga1cba57f49dbe71e7e24c6b6faedbc04b"></a>void *</td>
+<a id="ga36e3390d551699648d60857b623a29f9"></a>void *</td>
 <td class="fieldname">
 ptr</td>
 <td class="fielddoc">
@@ -819,7 +819,7 @@ u64</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga32a096e6a6e538698cc5c539a8727d63"></a>unsigned int</td>
+<a id="ga66ea04ab52d8a30b14271674ba824e7e"></a>unsigned int</td>
 <td class="fieldname">
 system[4]</td>
 <td class="fielddoc">
@@ -895,7 +895,7 @@ free</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa1bacb5829ae633785abcc87fb751298"></a>void *</td>
+<a id="ga38a0705f824ca805215356c2d61932f8"></a>void *</td>
 <td class="fieldname">
 user</td>
 <td class="fielddoc">

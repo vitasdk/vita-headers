@@ -2620,7 +2620,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ctrl.h</field>
     <field name="url">ern_2ctrl_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">SCE_CTRL_ERROR_INVALID_ARG SCE_CTRL_ERROR_PRIV_REQUIRED SCE_CTRL_ERROR_FATAL</field>
+    <field name="text">SceCtrlErrorCode SCE_CTRL_ERROR_INVALID_ARG SCE_CTRL_ERROR_PRIV_REQUIRED SCE_CTRL_ERROR_FATAL SceCtrlErrorCode</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -2788,7 +2788,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ctrl.h</field>
     <field name="url">ern_2ctrl_8h_source.html#l00051</field>
     <field name="keywords"></field>
-    <field name="text">SceCtrlExternalInputMode SCE_CTRL_TYPE_UNPAIRED</field>
+    <field name="text">SceCtrlExternalInputMode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">ctrl.h</field>
+    <field name="url">ern_2ctrl_8h_source.html#l00052</field>
+    <field name="keywords"></field>
+    <field name="text">SCE_CTRL_TYPE_UNPAIRED</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -2816,7 +2823,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ctrl.h</field>
     <field name="url">ern_2ctrl_8h_source.html#l00056</field>
     <field name="keywords"></field>
-    <field name="text">SCE_CTRL_TYPE_DS4</field>
+    <field name="text">SCE_CTRL_TYPE_DS4 SceCtrlExternalInputMode</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -2844,7 +2851,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ctrl.h</field>
     <field name="url">ern_2ctrl_8h_source.html#l00066</field>
     <field name="keywords"></field>
-    <field name="text">SCE_CTRL_MODE_ANALOG_WIDE SceCtrlData uint64_t timeStamp buttons lx ly rx ry uint8_t reserved0 lt rt uint8_t reserved1 SceCtrlData SceCtrlRapidFireRule Mask Trigger Target Delay Make Break SceCtrlRapidFireRule SceCtrlActuator small large uint8_t unk SceCtrlActuator SceCtrlPortInfo uint8_t port uint8_t unk SceCtrlPortInfo</field>
+    <field name="text">SCE_CTRL_MODE_ANALOG_WIDE SceCtrlPadInputMode SceCtrlData uint64_t timeStamp buttons lx ly rx ry uint8_t reserved0 lt rt uint8_t reserved1 SceCtrlData SceCtrlRapidFireRule Mask Trigger Target Delay Make Break SceCtrlRapidFireRule SceCtrlActuator small large uint8_t unk SceCtrlActuator SceCtrlPortInfo uint8_t port uint8_t unk SceCtrlPortInfo</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -2935,21 +2942,28 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_ERROR_OK SCE_DISPLAY_ERROR_INVALID_HEAD SCE_DISPLAY_ERROR_INVALID_VALUE SCE_DISPLAY_ERROR_INVALID_ADDR SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT SCE_DISPLAY_ERROR_INVALID_PITCH SCE_DISPLAY_ERROR_INVALID_RESOLUTION SCE_DISPLAY_ERROR_INVALID_UPDATETIMING SCE_DISPLAY_ERROR_NO_FRAME_BUFFER SCE_DISPLAY_ERROR_NO_PIXEL_DATA</field>
+    <field name="text">SceDisplayErrorCode SCE_DISPLAY_ERROR_OK SCE_DISPLAY_ERROR_INVALID_HEAD SCE_DISPLAY_ERROR_INVALID_VALUE SCE_DISPLAY_ERROR_INVALID_ADDR SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT SCE_DISPLAY_ERROR_INVALID_PITCH SCE_DISPLAY_ERROR_INVALID_RESOLUTION SCE_DISPLAY_ERROR_INVALID_UPDATETIMING SCE_DISPLAY_ERROR_NO_FRAME_BUFFER SCE_DISPLAY_ERROR_NO_PIXEL_DATA SceDisplayErrorCode SceDisplayPixelFormat SCE_DISPLAY_PIXELFORMAT_A8B8G8R8 U SceDisplayPixelFormat</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00033</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_SETBUF_IMMEDIATE</field>
+    <field name="text">SceDisplaySetBufSync</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00035</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartMulti vcount</field>
+    <field name="text">SCE_DISPLAY_SETBUF_IMMEDIATE</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00037</field>
+    <field name="keywords"></field>
+    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartMulti vcount</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -4671,7 +4685,35 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">processmgr.h</field>
     <field name="url">ern_2kernel_2processmgr_8h_source.html#l00016</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelProcessInfo SceSize size SceUID pid unk1 unk2 unk3 SceUID ppid unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetPidProcessLocalStorageAddr SceUID pid key out_addr create_if_doesnt_exist</field>
+    <field name="text">SceKernelProcessInfo</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">processmgr.h</field>
+    <field name="url">ern_2kernel_2processmgr_8h_source.html#l00017</field>
+    <field name="keywords"></field>
+    <field name="text">SceSize size</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">processmgr.h</field>
+    <field name="url">ern_2kernel_2processmgr_8h_source.html#l00018</field>
+    <field name="keywords"></field>
+    <field name="text">SceUID pid unk1 unk2 unk3</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">processmgr.h</field>
+    <field name="url">ern_2kernel_2processmgr_8h_source.html#l00022</field>
+    <field name="keywords"></field>
+    <field name="text">SceUID ppid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">processmgr.h</field>
+    <field name="url">ern_2kernel_2processmgr_8h_source.html#l00023</field>
+    <field name="keywords"></field>
+    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetPidProcessLocalStorageAddr SceUID pid key out_addr create_if_doesnt_exist</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -4713,40 +4755,40 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">sysmem.h</field>
     <field name="url">ern_2kernel_2sysmem_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelMemBlockType SCE_KERNEL_MEMBLOCK_TYPE_USER_RW SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX SCE_KERNEL_MEMBLOCK_TYPE_USER_RX SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0</field>
+    <field name="text">SceKernelMemBlockType SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE SCE_KERNEL_MEMBLOCK_TYPE_USER_RX SCE_KERNEL_MEMBLOCK_TYPE_USER_RW SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0 SceKernelMemBlockType</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">sysmem.h</field>
-    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00032</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00030</field>
     <field name="keywords"></field>
     <field name="text">SceKernelAllocMemBlockKernelOpt SceSize size SceUInt32 field_4 SceUInt32 attr SceUInt32 field_C SceUInt32 paddr SceSize alignment SceUInt32 field_18 SceUInt32 field_1C SceUInt32 mirror_blkid SceUID pid SceUInt32 field_28 SceUInt32 field_2C SceUInt32 field_30 SceUInt32 field_34 SceUInt32 field_38 SceUInt32 field_3C SceUInt32 field_40 SceUInt32 field_44 SceUInt32 field_48 SceUInt32 field_4C SceUInt32 field_50 SceUInt32 field_54 SceKernelAllocMemBlockKernelOpt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">sysmem.h</field>
-    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00057</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00055</field>
     <field name="keywords"></field>
     <field name="text">SceKernelHeapCreateOpt SceSize size SceUInt32 uselock SceUInt32 field_8 SceUInt32 field_C SceUInt32 field_10 SceUInt32 field_14 SceUInt32 field_18 SceKernelHeapCreateOpt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">sysmem.h</field>
-    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00067</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00065</field>
     <field name="keywords"></field>
-    <field name="text">SceCreateUidObjOpt SceUInt32 flags SceUInt32 field_4 SceUInt32 field_8 SceUInt32 pid SceUInt32 field_10 SceUInt32 field_14 SceUInt32 field_18 SceCreateUidObjOpt SCE_KERNEL_MODEL_VITA SCE_KERNEL_MODEL_VITATV SceUID ksceKernelAllocMemBlock name SceKernelMemBlockType type size SceKernelAllocMemBlockKernelOpt optp ksceKernelFreeMemBlock SceUID uid ksceKernelGetMemBlockBase SceUID uid basep SceUID ksceKernelFindMemBlockByAddr addr SceSize size ksceKernelRemapBlock SceUID uid SceKernelMemBlockType type SceUID ksceKernelCreateHeap name SceSize size SceKernelHeapCreateOpt opt ksceKernelDeleteHeap SceUID uid ksceKernelAllocHeapMemory SceUID uid SceSize size ksceKernelFreeHeapMemory SceUID uid ptr ksceKernelMemcpyUserToKernelForPid SceUID pid dst uintptr_t src len ksceKernelMemcpyUserToKernel dst uintptr_t src len ksceKernelMemcpyKernelToUser uintptr_t dst src len ksceKernelRxMemcpyKernelToUserForPid SceUID pid uintptr_t dst src len ksceKernelStrncpyUserToKernel dst uintptr_t src len ksceKernelStrncpyKernelToUser uintptr_t dst src len ksceKernelStrncpyUserForPid SceUID pid dst uintptr_t src len</field>
+    <field name="text">SceCreateUidObjOpt SceUInt32 flags SceUInt32 field_4 SceUInt32 field_8 SceUInt32 pid SceUInt32 field_10 SceUInt32 field_14 SceUInt32 field_18 SceCreateUidObjOpt SceKernelModel SCE_KERNEL_MODEL_VITA SCE_KERNEL_MODEL_VITATV SceKernelModel SceUID ksceKernelAllocMemBlock name SceKernelMemBlockType type size SceKernelAllocMemBlockKernelOpt optp ksceKernelFreeMemBlock SceUID uid ksceKernelGetMemBlockBase SceUID uid basep SceUID ksceKernelFindMemBlockByAddr addr SceSize size ksceKernelRemapBlock SceUID uid SceKernelMemBlockType type SceUID ksceKernelCreateHeap name SceSize size SceKernelHeapCreateOpt opt ksceKernelDeleteHeap SceUID uid ksceKernelAllocHeapMemory SceUID uid SceSize size ksceKernelFreeHeapMemory SceUID uid ptr ksceKernelMemcpyUserToKernelForPid SceUID pid dst uintptr_t src len ksceKernelMemcpyUserToKernel dst uintptr_t src len ksceKernelMemcpyKernelToUser uintptr_t dst src len ksceKernelRxMemcpyKernelToUserForPid SceUID pid uintptr_t dst src len ksceKernelStrncpyUserToKernel dst uintptr_t src len ksceKernelStrncpyKernelToUser uintptr_t dst src len ksceKernelStrncpyUserForPid SceUID pid dst uintptr_t src len</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">sysmem.h</field>
-    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00149</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00147</field>
     <field name="keywords"></field>
     <field name="text">data SceClass</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">sysmem.h</field>
-    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00153</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00151</field>
     <field name="keywords"></field>
     <field name="text">uint32_t sce_reserved SceObjectBase SceUID ksceKernelKernelUidForUserUid SceUID pid SceUID user_uid SceUID ksceKernelCreateUserUid SceUID pid SceUID kern_uid SceUID ksceKernelCreateUidObj SceClass cls name SceCreateUidObjOpt opt SceObjectBase obj ksceKernelGetObjForUid SceUID uid SceClass cls SceObjectBase obj ksceKernelUidRetain SceUID uid ksceKernelUidRelease SceUID uid SceClass ksceKernelGetUidClass int SceClassCallback item ksceKernelCreateClass SceClass cls name uidclass itemsize SceClassCallback create SceClassCallback destroy ksceKernelDeleteUserUid SceUID pid SceUID user_uid ksceKernelDeleteUid SceUID uid ksceKernelSwitchVmaForPid SceUID pid ksceKernelGetSysrootBuffer ksceKernelGetPidContext SceUID pid ctx ksceKernelGetProcessTitleId SceUID pid titleid len ksceKernelMapBlockUserVisible SceUID uid ksceKernelGetPaddr addr uintptr_t paddr ksceSysrootIsManufacturingMode ksceDebugPrintf fmt ksceDebugPrintf2 unk0 unk1 fmt ksceDebugSetHandlers func args c args ksceDebugRegisterPutcharHandler func args c args ksceDebugGetPutcharHandler ksceDebugPutchar character</field>
   </doc>
@@ -5397,70 +5439,70 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00601</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00600</field>
     <field name="keywords"></field>
     <field name="text">SceEventFlagAttributes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00603</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00602</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITMULTIPLE SceEventFlagAttributes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00607</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00606</field>
     <field name="keywords"></field>
     <field name="text">SceEventFlagWaitTypes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00609</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00608</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITAND</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00611</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00610</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITOR</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00613</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00612</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITCLEAR</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00615</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00614</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITCLEAR_PAT SceEventFlagWaitTypes SceUID ksceKernelCreateEventFlag name attr bits SceKernelEventFlagOptParam opt ksceKernelSetEventFlag SceUID evid bits ksceKernelClearEventFlag SceUID evid bits ksceKernelPollEventFlag evid bits wait outBits ksceKernelWaitEventFlag evid bits wait outBits SceUInt timeout ksceKernelWaitEventFlagCB evid bits wait outBits SceUInt timeout ksceKernelDeleteEventFlag evid ksceKernelGetEventFlagInfo SceUID event SceKernelEventFlagInfo info</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00713</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00712</field>
     <field name="keywords"></field>
     <field name="text">int SceKernelCallbackFunction notifyId notifyCount notifyArg common SceKernelCallbackInfo SceSize size SceUID callbackId name SceUID threadId SceKernelCallbackFunction callback common notifyCount notifyArg SceKernelCallbackInfo ksceKernelCreateCallback name attr SceKernelCallbackFunction func arg ksceKernelGetCallbackInfo SceUID cb SceKernelCallbackInfo infop ksceKernelDeleteCallback SceUID cb ksceKernelNotifyCallback SceUID cb arg2 ksceKernelCancelCallback SceUID cb ksceKernelGetCallbackCount SceUID cb ksceKernelCheckCallback SceUID ksceKernelCreateMsgPipe name type attr bufSize opt ksceKernelDeleteMsgPipe SceUID uid ksceKernelSendMsgPipe SceUID uid message size unk1 unk2 timeout ksceKernelSendMsgPipeCB SceUID uid message size unk1 unk2 timeout ksceKernelTrySendMsgPipe SceUID uid message size unk1 unk2 ksceKernelReceiveMsgPipe SceUID uid message size unk1 unk2 timeout ksceKernelReceiveMsgPipeCB SceUID uid message size unk1 unk2 timeout ksceKernelTryReceiveMsgPipe SceUID uid message size unk1 unk2 ksceKernelCancelMsgPipe SceUID uid psend precv SceKernelMppInfo SceSize size SceUID mppId name SceUInt attr bufSize freeSize numSendWaitThreads numReceiveWaitThreads SceKernelMppInfo ksceKernelGetMsgPipeInfo SceUID uid SceKernelMppInfo info SceKernelSystemInfo SceSize size SceUInt32 activeCpuMask</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00954</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00953</field>
     <field name="keywords"></field>
     <field name="text">SceKernelSysClock idleClock SceUInt32 comesOutOfIdleCount SceUInt32 threadSwitchCount cpuInfo SceKernelSystemInfo ksceKernelGetSystemInfo SceKernelSystemInfo info</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00973</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00972</field>
     <field name="keywords"></field>
     <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceKernelLwMutexWork SceInt64 data SceKernelLwMutexWork SceKernelLwMutexOptParam SceSize size SceKernelLwMutexOptParam ksceKernelCreateLwMutex SceKernelLwMutexWork pWork pName attr initCount SceKernelLwMutexOptParam pOptParam ksceKernelDeleteLwMutex SceKernelLwMutexWork pWork ksceKernelLockLwMutex SceKernelLwMutexWork pWork lockCount pTimeout ksceKernelUnlockLwMutex SceKernelLwMutexWork pWork unlockCount SceKernelLwCondWork SceInt64 data SceKernelLwCondWork SceKernelLwCondOptParam SceSize size SceKernelLwCondOptParam ksceKernelCreateLwCond SceKernelLwCondWork pWork pName attr SceKernelLwMutexWork pLwMutex SceKernelLwCondOptParam pOptParam ksceKernelDeleteLwCond SceKernelLwCondWork pWork ksceKernelSignalLwCond SceKernelLwCondWork pWork ksceKernelWaitLwCond SceKernelLwCondWork pWork pTimeout SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args</field>
   </doc>
@@ -6617,7 +6659,84 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">net.h</field>
     <field name="url">ern_2net_2net_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">SCE_NET_ERROR_EPERM SCE_NET_ERROR_ENOENT SCE_NET_ERROR_ESRCH SCE_NET_ERROR_EINTR SCE_NET_ERROR_EIO SCE_NET_ERROR_ENXIO SCE_NET_ERROR_E2BIG SCE_NET_ERROR_ENOEXEC SCE_NET_ERROR_EBADF SCE_NET_ERROR_ECHILD SCE_NET_ERROR_EDEADLK SCE_NET_ERROR_ENOMEM SCE_NET_ERROR_EACCES SCE_NET_ERROR_EFAULT SCE_NET_ERROR_ENOTBLK SCE_NET_ERROR_EBUSY SCE_NET_ERROR_EEXIST SCE_NET_ERROR_EXDEV SCE_NET_ERROR_ENODEV SCE_NET_ERROR_ENOTDIR SCE_NET_ERROR_EISDIR SCE_NET_ERROR_EINVAL SCE_NET_ERROR_ENFILE SCE_NET_ERROR_EMFILE SCE_NET_ERROR_ENOTTY SCE_NET_ERROR_ETXTBSY SCE_NET_ERROR_EFBIG SCE_NET_ERROR_ENOSPC SCE_NET_ERROR_ESPIPE SCE_NET_ERROR_EROFS SCE_NET_ERROR_EMLINK SCE_NET_ERROR_EPIPE SCE_NET_ERROR_EDOM SCE_NET_ERROR_ERANGE SCE_NET_ERROR_EAGAIN SCE_NET_ERROR_EWOULDBLOCK SCE_NET_ERROR_EINPROGRESS SCE_NET_ERROR_EALREADY SCE_NET_ERROR_ENOTSOCK SCE_NET_ERROR_EDESTADDRREQ SCE_NET_ERROR_EMSGSIZE SCE_NET_ERROR_EPROTOTYPE SCE_NET_ERROR_ENOPROTOOPT SCE_NET_ERROR_EPROTONOSUPPORT SCE_NET_ERROR_ESOCKTNOSUPPOR SCE_NET_ERROR_EOPNOTSUPP SCE_NET_ERROR_EPFNOSUPPORT SCE_NET_ERROR_EAFNOSUPPORT SCE_NET_ERROR_EADDRINUSE SCE_NET_ERROR_EADDRNOTAVAIL SCE_NET_ERROR_ENETDOWN SCE_NET_ERROR_ENETUNREACH SCE_NET_ERROR_ENETRESET SCE_NET_ERROR_ECONNABORTED SCE_NET_ERROR_ECONNRESET SCE_NET_ERROR_ENOBUFS SCE_NET_ERROR_EISCONN SCE_NET_ERROR_ENOTCONN SCE_NET_ERROR_ESHUTDOWN SCE_NET_ERROR_ETOOMANYREFS SCE_NET_ERROR_ETIMEDOUT SCE_NET_ERROR_ECONNREFUSED SCE_NET_ERROR_ELOOP SCE_NET_ERROR_ENAMETOOLONG SCE_NET_ERROR_EHOSTDOWN SCE_NET_ERROR_EHOSTUNREACH SCE_NET_ERROR_ENOTEMPTY SCE_NET_ERROR_EPROCLIM SCE_NET_ERROR_EUSERS SCE_NET_ERROR_EDQUOT SCE_NET_ERROR_ESTALE SCE_NET_ERROR_EREMOTE SCE_NET_ERROR_EBADRPC SCE_NET_ERROR_ERPCMISMATCH SCE_NET_ERROR_EPROGUNAVAIL SCE_NET_ERROR_EPROGMISMATCH SCE_NET_ERROR_EPROCUNAVAIL SCE_NET_ERROR_ENOLCK SCE_NET_ERROR_ENOSYS SCE_NET_ERROR_EFTYPE SCE_NET_ERROR_EAUTH SCE_NET_ERROR_ENEEDAUTH SCE_NET_ERROR_EIDRM SCE_NET_ERROR_ENOMS SCE_NET_ERROR_EOVERFLOW SCE_NET_ERROR_EILSEQ SCE_NET_ERROR_ENOTSUP SCE_NET_ERROR_ECANCELED SCE_NET_ERROR_EBADMSG SCE_NET_ERROR_ENODATA SCE_NET_ERROR_ENOSR SCE_NET_ERROR_ENOSTR SCE_NET_ERROR_ETIME SCE_NET_ERROR_EADHOC SCE_NET_ERROR_EDISABLEDIF SCE_NET_ERROR_ERESUME SCE_NET_ERROR_ENOTINIT SCE_NET_ERROR_ENOLIBMEM SCE_NET_ERROR_ERESERVED202 SCE_NET_ERROR_ECALLBACK SCE_NET_ERROR_EINTERNAL SCE_NET_ERROR_ERETURN SCE_NET_ERROR_RESOLVER_EINTERNAL SCE_NET_ERROR_RESOLVER_EBUSY SCE_NET_ERROR_RESOLVER_ENOSPACE SCE_NET_ERROR_RESOLVER_EPACKET SCE_NET_ERROR_RESOLVER_ERESERVED22 SCE_NET_ERROR_RESOLVER_ENODNS SCE_NET_ERROR_RESOLVER_ETIMEDOUT SCE_NET_ERROR_RESOLVER_ENOSUPPORT SCE_NET_ERROR_RESOLVER_EFORMAT SCE_NET_ERROR_RESOLVER_ESERVERFAILURE SCE_NET_ERROR_RESOLVER_ENOHOST SCE_NET_ERROR_RESOLVER_ENOTIMPLEMENTED SCE_NET_ERROR_RESOLVER_ESERVERREFUSED SCE_NET_ERROR_RESOLVER_ENORECORD SCE_NET_ERROR_RESOLVER_EALIGNMENT SCE_NET_EPERM SCE_NET_ENOENT SCE_NET_ESRCH SCE_NET_EINTR SCE_NET_EIO SCE_NET_ENXIO SCE_NET_E2BIG SCE_NET_ENOEXEC SCE_NET_EBADF SCE_NET_ECHILD SCE_NET_EDEADLK SCE_NET_ENOMEM SCE_NET_EACCES SCE_NET_EFAULT SCE_NET_ENOTBLK SCE_NET_EBUSY SCE_NET_EEXIST SCE_NET_EXDEV SCE_NET_ENODEV SCE_NET_ENOTDIR SCE_NET_EISDIR SCE_NET_EINVAL SCE_NET_ENFILE SCE_NET_EMFILE SCE_NET_ENOTTY SCE_NET_ETXTBSY SCE_NET_EFBIG SCE_NET_ENOSPC SCE_NET_ESPIPE SCE_NET_EROFS SCE_NET_EMLINK SCE_NET_EPIPE SCE_NET_EDOM SCE_NET_ERANGE SCE_NET_EAGAIN SCE_NET_EWOULDBLOCK SCE_NET_EINPROGRESS SCE_NET_EALREADY SCE_NET_ENOTSOCK SCE_NET_EDESTADDRREQ SCE_NET_EMSGSIZE SCE_NET_EPROTOTYPE SCE_NET_ENOPROTOOPT SCE_NET_EPROTONOSUPPORT SCE_NET_ESOCKTNOSUPPORT SCE_NET_EOPNOTSUPP SCE_NET_EPFNOSUPPORT SCE_NET_EAFNOSUPPORT SCE_NET_EADDRINUSE SCE_NET_EADDRNOTAVAIL SCE_NET_ENETDOWN SCE_NET_ENETUNREACH SCE_NET_ENETRESET SCE_NET_ECONNABORTED SCE_NET_ECONNRESET SCE_NET_ENOBUFS SCE_NET_EISCONN SCE_NET_ENOTCONN SCE_NET_ESHUTDOWN SCE_NET_ETOOMANYREFS SCE_NET_ETIMEDOUT SCE_NET_ECONNREFUSED SCE_NET_ELOOP SCE_NET_ENAMETOOLONG SCE_NET_EHOSTDOWN SCE_NET_EHOSTUNREACH SCE_NET_ENOTEMPTY SCE_NET_EPROCLIM SCE_NET_EUSERS SCE_NET_EDQUOT SCE_NET_ESTALE SCE_NET_EREMOTE SCE_NET_EBADRPC SCE_NET_ERPCMISMATCH SCE_NET_EPROGUNAVAIL SCE_NET_EPROGMISMATCH SCE_NET_EPROCUNAVAIL SCE_NET_ENOLCK SCE_NET_ENOSYS SCE_NET_EFTYPE SCE_NET_EAUTH SCE_NET_ENEEDAUTH SCE_NET_EIDRM SCE_NET_ENOMSG SCE_NET_EOVERFLOW SCE_NET_EILSEQ SCE_NET_ENOTSUP SCE_NET_ECANCELED SCE_NET_EBADMSG SCE_NET_ENODATA SCE_NET_ENOSR SCE_NET_ENOSTR SCE_NET_ETIME SCE_NET_EADHOC SCE_NET_EDISABLEDIF SCE_NET_ERESUME SCE_NET_ENOTINIT SCE_NET_ENOLIBMEM SCE_NET_ETLS SCE_NET_ECALLBACK SCE_NET_EINTERNAL SCE_NET_ERETURN SCE_NET_RESOLVER_EINTERNAL SCE_NET_RESOLVER_EBUSY SCE_NET_RESOLVER_ENOSPACE SCE_NET_RESOLVER_EPACKET SCE_NET_RESOLVER_ERESERVED224 SCE_NET_RESOLVER_ENODNS SCE_NET_RESOLVER_ETIMEDOUT SCE_NET_RESOLVER_ENOSUPPORT SCE_NET_RESOLVER_EFORMAT SCE_NET_RESOLVER_ESERVERFAILURE SCE_NET_RESOLVER_ENOHOST SCE_NET_RESOLVER_ENOTIMPLEMENTED SCE_NET_RESOLVER_ESERVERREFUSED SCE_NET_RESOLVER_ENORECORD SCE_NET_RESOLVER_EALIGNMENT SCE_NET_DUMP_PEEK SCE_NET_DUMP_DONTWAIT SCE_NET_DUMP_OVERFLOW SCE_NET_DUMP_ABORT_FLAG_PRESERVATION SCE_NET_EPOLLIN SCE_NET_EPOLLOUT SCE_NET_EPOLLERR SCE_NET_EPOLLHUP SCE_NET_EPOLLDESCID SCE_NET_EPOLL_CTL_ADD SCE_NET_EPOLL_CTL_MOD SCE_NET_EPOLL_CTL_DEL SCE_NET_SOCKINFO_STATE_UNKNOWN SCE_NET_SOCKINFO_STATE_CLOSED SCE_NET_SOCKINFO_STATE_OPENED SCE_NET_SOCKINFO_STATE_LISTEN SCE_NET_SOCKINFO_STATE_SYN_SENT SCE_NET_SOCKINFO_STATE_SYN_RECEIVED SCE_NET_SOCKINFO_STATE_ESTABLISHED SCE_NET_SOCKINFO_STATE_FIN_WAIT_1 SCE_NET_SOCKINFO_STATE_FIN_WAIT_2 SCE_NET_SOCKINFO_STATE_CLOSE_WAIT SCE_NET_SOCKINFO_STATE_CLOSING SCE_NET_SOCKINFO_STATE_LAST_ACK SCE_NET_SOCKINFO_STATE_TIME_WAIT SCE_NET_SOCKINFO_F_SELF SCE_NET_SOCKINFO_F_KERNEL SCE_NET_SOCKINFO_F_OTHERS SCE_NET_SOCKINFO_F_RECV_WAIT SCE_NET_SOCKINFO_F_SEND_WAIT SCE_NET_SOCKINFO_F_RECV_EWAIT SCE_NET_SOCKINFO_F_SEND_EWAIT SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL SCE_NET_SOCKINFO_F_ALL SCE_NET_EMULATION_FLAG_ETH0 SCE_NET_EMULATION_FLAG_WLAN0 SCE_NET_RESOLVER_ASYNC SCE_NET_RESOLVER_START_NTOA_DISABLE_IPADDRESS SCE_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION SCE_NET_RESOLVER_ABORT_FLAG_ATON_PRESERVATION SCE_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION SCE_NET_SOCKET_ABORT_FLAG_SND_PRESERVATION SCE_NET_IPPROTO_IP SCE_NET_IPPROTO_ICMP SCE_NET_IPPROTO_IGMP SCE_NET_IPPROTO_TCP SCE_NET_IPPROTO_UDP SCE_NET_SOL_SOCKET SCE_NET_IP_HDRINCL SCE_NET_IP_TOS SCE_NET_IP_TTL SCE_NET_IP_MULTICAST_IF SCE_NET_IP_MULTICAST_TTL SCE_NET_IP_MULTICAST_LOOP SCE_NET_IP_ADD_MEMBERSHIP SCE_NET_IP_DROP_MEMBERSHIP SCE_NET_IP_TTLCHK SCE_NET_IP_MAXTTL SCE_NET_TCP_NODELAY SCE_NET_TCP_MAXSEG SCE_NET_TCP_MSS_TO_ADVERTISE SCE_NET_SO_REUSEADDR SCE_NET_SO_KEEPALIVE SCE_NET_SO_BROADCAST SCE_NET_SO_LINGER SCE_NET_SO_OOBINLINE SCE_NET_SO_REUSEPORT SCE_NET_SO_ONESBCAST SCE_NET_SO_USECRYPTO SCE_NET_SO_USESIGNATURE SCE_NET_SO_SNDBUF SCE_NET_SO_RCVBUF SCE_NET_SO_SNDLOWAT SCE_NET_SO_RCVLOWAT SCE_NET_SO_SNDTIMEO SCE_NET_SO_RCVTIMEO SCE_NET_SO_ERROR SCE_NET_SO_TYPE SCE_NET_SO_NBIO SCE_NET_SO_TPPOLICY SCE_NET_SO_NAME SCE_NET_SOCK_STREAM SCE_NET_SOCK_DGRAM SCE_NET_SOCK_RAW SCE_NET_SOCK_DGRAM_P2P SCE_NET_SOCK_STREAM_P2P SCE_NET_MSG_PEEK SCE_NET_MSG_WAITALL SCE_NET_MSG_DONTWAIT SCE_NET_MSG_USECRYPTO SCE_NET_MSG_USESIGNATURE SCE_NET_SHUT_RD SCE_NET_SHUT_WR SCE_NET_SHUT_RDWR SCE_NET_ICMP_TYPE_ECHO_REPLY SCE_NET_ICMP_TYPE_DEST_UNREACH SCE_NET_ICMP_TYPE_SOURCE_QUENCH SCE_NET_ICMP_TYPE_REDIRECT SCE_NET_ICMP_TYPE_ECHO_REQUEST SCE_NET_ICMP_TYPE_TIME_EXCEEDED SCE_NET_ICMP_TYPE_PARAMETER_PROBLEM SCE_NET_ICMP_TYPE_TIMESTAMP_REQUEST SCE_NET_ICMP_TYPE_TIMESTAMP_REPLY SCE_NET_ICMP_TYPE_INFORMATION_REQUEST SCE_NET_ICMP_TYPE_INFORMATION_REPLY SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_PORT_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_FRAG_AND_DF SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_FAILED SCE_NET_ICMP_CODE_DEST_UNREACH_DST_NET_UNKNOWN SCE_NET_ICMP_CODE_DEST_UNREACH_DST_HOST_UNKNOWN SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_ISOLATED SCE_NET_ICMP_CODE_DEST_UNREACH_NET_ADMIN_PROHIBITED SCE_NET_ICMP_CODE_DEST_UNREACH_NET_HOST_PROHIBITED SCE_NET_ICMP_CODE_DEST_UNREACH_NET_TOS SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED size rid name user void SceNetResolverFunctionFree ptr rid name user SceNetFdSet bits SceNetFdSet SceNetInAddr s_addr SceNetInAddr SceNetSockaddrIn sin_len sin_family sin_port SceNetInAddr sin_addr sin_vport sin_zero SceNetSockaddrIn SceNetIpMreq SceNetInAddr imr_multiaddr SceNetInAddr imr_interface SceNetIpMreq SceNetInitParam memory size flags SceNetInitParam SceNetEmulationData drop_rate drop_duration pass_duration delay_time delay_jitter order_rate order_delay_time duplication_rate bps_limit lower_size_limit upper_size_limit system_policy_pattern game_policy_pattern policy_flags reserved SceNetEmulationData SceNetEmulationParam version option_number current_version result flags reserved1 SceNetEmulationData send SceNetEmulationData recv seed reserved SceNetEmulationParam SceNetEtherAddr data SceNetEtherAddr SceNetDnsInfo SceNetInAddr dns_addr SceNetDnsInfo SceNetEpollDataExt id u32 SceNetEpollDataExt SceNetEpollData ptr fd u32 u64 SceNetEpollDataExt ext SceNetEpollData SceNetEpollSystemData system SceNetEpollSystemData SceNetEpollEvent events reserved SceNetEpollSystemData system SceNetEpollData data SceNetEpollEvent SceNetResolverParam SceNetResolverFunctionAllocate allocate SceNetResolverFunctionFree free user SceNetResolverParam SceNetLinger l_onoff l_linger SceNetLinger SceNetSockaddr sa_len sa_family sa_data SceNetSockaddr SceNetIovec iov_base iov_len SceNetIovec SceNetMsghdr msg_name msg_namelen SceNetIovec msg_iov msg_iovlen msg_control msg_controllen msg_flags SceNetMsghdr SceNetSockInfo name SCE_NET_DEBUG_NAME_LEN_MAX pid s socket_type policy reserved16 recv_queue_length send_queue_length SceNetInAddr local_adr SceNetInAddr remote_adr local_port remote_port local_vport remote_vport state flags reserved SceNetSockInfo SceNetStatisticsInfo kernel_mem_free_size kernel_mem_free_min packet_count packet_qos_count libnet_mem_free_size libnet_mem_free_min SceNetStatisticsInfo SceNetIpHeaderIpVerHl hl ver SceNetIpHeaderIpVerHl SceNetIpHeaderUnion SceNetIpHeaderIpVerHl ip_ver_hl ver_hl SceNetIpHeaderUnion SceNetIpHeader SceNetIpHeaderUnion un ip_tos ip_len ip_id ip_off ip_ttl ip_p ip_sum SceNetInAddr ip_src SceNetInAddr ip_dst SceNetIpHeader SceNetIcmpHeaderEcho id sequence SceNetIcmpHeaderEcho SceNetIcmpHeaderFrag unused mtu SceNetIcmpHeaderFrag SceNetIcmpHeaderUnion SceNetIcmpHeaderEcho echo gateway SceNetIcmpHeaderFrag frag SceNetIcmpHeaderUnion SceNetIcmpHeader type code checksum SceNetIcmpHeaderUnion un SceNetIcmpHeader ksceNetSocket name domain type protocol ksceNetAccept s SceNetSockaddr addr addrlen ksceNetBind s SceNetSockaddr addr addrlen ksceNetListen s backlog ksceNetRecvfrom s buf len flags SceNetSockaddr from fromlen ksceNetSendto s msg len flags SceNetSockaddr to tolen ksceNetSetsockopt s level optname optval optlen ksceNetSocketClose s</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00015</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetErrorCode SCE_NET_ERROR_EPERM SCE_NET_ERROR_ENOENT SCE_NET_ERROR_ESRCH SCE_NET_ERROR_EINTR SCE_NET_ERROR_EIO SCE_NET_ERROR_ENXIO SCE_NET_ERROR_E2BIG SCE_NET_ERROR_ENOEXEC SCE_NET_ERROR_EBADF SCE_NET_ERROR_ECHILD SCE_NET_ERROR_EDEADLK SCE_NET_ERROR_ENOMEM SCE_NET_ERROR_EACCES SCE_NET_ERROR_EFAULT SCE_NET_ERROR_ENOTBLK SCE_NET_ERROR_EBUSY SCE_NET_ERROR_EEXIST SCE_NET_ERROR_EXDEV SCE_NET_ERROR_ENODEV SCE_NET_ERROR_ENOTDIR SCE_NET_ERROR_EISDIR SCE_NET_ERROR_EINVAL SCE_NET_ERROR_ENFILE SCE_NET_ERROR_EMFILE SCE_NET_ERROR_ENOTTY SCE_NET_ERROR_ETXTBSY SCE_NET_ERROR_EFBIG SCE_NET_ERROR_ENOSPC SCE_NET_ERROR_ESPIPE SCE_NET_ERROR_EROFS SCE_NET_ERROR_EMLINK SCE_NET_ERROR_EPIPE SCE_NET_ERROR_EDOM SCE_NET_ERROR_ERANGE SCE_NET_ERROR_EAGAIN SCE_NET_ERROR_EWOULDBLOCK SCE_NET_ERROR_EINPROGRESS SCE_NET_ERROR_EALREADY SCE_NET_ERROR_ENOTSOCK SCE_NET_ERROR_EDESTADDRREQ SCE_NET_ERROR_EMSGSIZE SCE_NET_ERROR_EPROTOTYPE SCE_NET_ERROR_ENOPROTOOPT SCE_NET_ERROR_EPROTONOSUPPORT SCE_NET_ERROR_ESOCKTNOSUPPORT SCE_NET_ERROR_EOPNOTSUPP SCE_NET_ERROR_EPFNOSUPPORT SCE_NET_ERROR_EAFNOSUPPORT SCE_NET_ERROR_EADDRINUSE SCE_NET_ERROR_EADDRNOTAVAIL SCE_NET_ERROR_ENETDOWN SCE_NET_ERROR_ENETUNREACH SCE_NET_ERROR_ENETRESET SCE_NET_ERROR_ECONNABORTED SCE_NET_ERROR_ECONNRESET SCE_NET_ERROR_ENOBUFS SCE_NET_ERROR_EISCONN SCE_NET_ERROR_ENOTCONN SCE_NET_ERROR_ESHUTDOWN SCE_NET_ERROR_ETOOMANYREFS SCE_NET_ERROR_ETIMEDOUT SCE_NET_ERROR_ECONNREFUSED SCE_NET_ERROR_ELOOP SCE_NET_ERROR_ENAMETOOLONG SCE_NET_ERROR_EHOSTDOWN SCE_NET_ERROR_EHOSTUNREACH SCE_NET_ERROR_ENOTEMPTY SCE_NET_ERROR_EPROCLIM SCE_NET_ERROR_EUSERS SCE_NET_ERROR_EDQUOT SCE_NET_ERROR_ESTALE SCE_NET_ERROR_EREMOTE SCE_NET_ERROR_EBADRPC SCE_NET_ERROR_ERPCMISMATCH SCE_NET_ERROR_EPROGUNAVAIL SCE_NET_ERROR_EPROGMISMATCH SCE_NET_ERROR_EPROCUNAVAIL SCE_NET_ERROR_ENOLCK SCE_NET_ERROR_ENOSYS SCE_NET_ERROR_EFTYPE SCE_NET_ERROR_EAUTH SCE_NET_ERROR_ENEEDAUTH SCE_NET_ERROR_EIDRM SCE_NET_ERROR_ENOMS SCE_NET_ERROR_EOVERFLOW SCE_NET_ERROR_EILSEQ SCE_NET_ERROR_ENOTSUP SCE_NET_ERROR_ECANCELED SCE_NET_ERROR_EBADMSG SCE_NET_ERROR_ENODATA SCE_NET_ERROR_ENOSR SCE_NET_ERROR_ENOSTR SCE_NET_ERROR_ETIME SCE_NET_ERROR_EADHOC SCE_NET_ERROR_EDISABLEDIF SCE_NET_ERROR_ERESUME SCE_NET_ERROR_ENOTINIT SCE_NET_ERROR_ENOLIBMEM SCE_NET_ERROR_ERESERVED202 SCE_NET_ERROR_ECALLBACK SCE_NET_ERROR_EINTERNAL SCE_NET_ERROR_ERETURN SCE_NET_ERROR_RESOLVER_EINTERNAL SCE_NET_ERROR_RESOLVER_EBUSY SCE_NET_ERROR_RESOLVER_ENOSPACE SCE_NET_ERROR_RESOLVER_EPACKET SCE_NET_ERROR_RESOLVER_ERESERVED22 SCE_NET_ERROR_RESOLVER_ENODNS SCE_NET_ERROR_RESOLVER_ETIMEDOUT SCE_NET_ERROR_RESOLVER_ENOSUPPORT SCE_NET_ERROR_RESOLVER_EFORMAT SCE_NET_ERROR_RESOLVER_ESERVERFAILURE SCE_NET_ERROR_RESOLVER_ENOHOST SCE_NET_ERROR_RESOLVER_ENOTIMPLEMENTED SCE_NET_ERROR_RESOLVER_ESERVERREFUSED SCE_NET_ERROR_RESOLVER_ENORECORD SCE_NET_ERROR_RESOLVER_EALIGNMENT SceNetErrorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00136</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetKernelErrorCode SCE_NET_EPERM SCE_NET_ENOENT SCE_NET_ESRCH SCE_NET_EINTR SCE_NET_EIO SCE_NET_ENXIO SCE_NET_E2BIG SCE_NET_ENOEXEC SCE_NET_EBADF SCE_NET_ECHILD SCE_NET_EDEADLK SCE_NET_ENOMEM SCE_NET_EACCES SCE_NET_EFAULT SCE_NET_ENOTBLK SCE_NET_EBUSY SCE_NET_EEXIST SCE_NET_EXDEV SCE_NET_ENODEV SCE_NET_ENOTDIR SCE_NET_EISDIR SCE_NET_EINVAL SCE_NET_ENFILE SCE_NET_EMFILE SCE_NET_ENOTTY SCE_NET_ETXTBSY SCE_NET_EFBIG SCE_NET_ENOSPC SCE_NET_ESPIPE SCE_NET_EROFS SCE_NET_EMLINK SCE_NET_EPIPE SCE_NET_EDOM SCE_NET_ERANGE SCE_NET_EAGAIN SCE_NET_EWOULDBLOCK SCE_NET_EINPROGRESS SCE_NET_EALREADY SCE_NET_ENOTSOCK SCE_NET_EDESTADDRREQ SCE_NET_EMSGSIZE SCE_NET_EPROTOTYPE SCE_NET_ENOPROTOOPT SCE_NET_EPROTONOSUPPORT SCE_NET_ESOCKTNOSUPPORT SCE_NET_EOPNOTSUPP SCE_NET_EPFNOSUPPORT SCE_NET_EAFNOSUPPORT SCE_NET_EADDRINUSE SCE_NET_EADDRNOTAVAIL SCE_NET_ENETDOWN SCE_NET_ENETUNREACH SCE_NET_ENETRESET SCE_NET_ECONNABORTED SCE_NET_ECONNRESET SCE_NET_ENOBUFS SCE_NET_EISCONN SCE_NET_ENOTCONN SCE_NET_ESHUTDOWN SCE_NET_ETOOMANYREFS SCE_NET_ETIMEDOUT SCE_NET_ECONNREFUSED SCE_NET_ELOOP SCE_NET_ENAMETOOLONG SCE_NET_EHOSTDOWN SCE_NET_EHOSTUNREACH SCE_NET_ENOTEMPTY SCE_NET_EPROCLIM SCE_NET_EUSERS SCE_NET_EDQUOT SCE_NET_ESTALE SCE_NET_EREMOTE SCE_NET_EBADRPC SCE_NET_ERPCMISMATCH SCE_NET_EPROGUNAVAIL SCE_NET_EPROGMISMATCH SCE_NET_EPROCUNAVAIL SCE_NET_ENOLCK SCE_NET_ENOSYS SCE_NET_EFTYPE SCE_NET_EAUTH SCE_NET_ENEEDAUTH SCE_NET_EIDRM SCE_NET_ENOMSG SCE_NET_EOVERFLOW SCE_NET_EILSEQ SCE_NET_ENOTSUP SCE_NET_ECANCELED SCE_NET_EBADMSG SCE_NET_ENODATA SCE_NET_ENOSR SCE_NET_ENOSTR SCE_NET_ETIME SCE_NET_EADHOC SCE_NET_EDISABLEDIF SCE_NET_ERESUME SceNetKernelErrorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00236</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetLibnetErrorCode SCE_NET_ENOTINIT SCE_NET_ENOLIBMEM SCE_NET_ETLS SCE_NET_ECALLBACK SCE_NET_EINTERNAL SCE_NET_ERETURN SceNetLibnetErrorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00246</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetSockInfoState SCE_NET_SOCKINFO_STATE_UNKNOWN SCE_NET_SOCKINFO_STATE_CLOSED SCE_NET_SOCKINFO_STATE_OPENED SCE_NET_SOCKINFO_STATE_LISTEN SCE_NET_SOCKINFO_STATE_SYN_SENT SCE_NET_SOCKINFO_STATE_SYN_RECEIVED SCE_NET_SOCKINFO_STATE_ESTABLISHED SCE_NET_SOCKINFO_STATE_FIN_WAIT_1 SCE_NET_SOCKINFO_STATE_FIN_WAIT_2 SCE_NET_SOCKINFO_STATE_CLOSE_WAIT SCE_NET_SOCKINFO_STATE_CLOSING SCE_NET_SOCKINFO_STATE_LAST_ACK SCE_NET_SOCKINFO_STATE_TIME_WAIT SceNetSockInfoState</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00263</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetSockInfoFlag SCE_NET_SOCKINFO_F_SELF SCE_NET_SOCKINFO_F_KERNEL SCE_NET_SOCKINFO_F_OTHERS SCE_NET_SOCKINFO_F_RECV_WAIT SCE_NET_SOCKINFO_F_SEND_WAIT SCE_NET_SOCKINFO_F_RECV_EWAIT SCE_NET_SOCKINFO_F_SEND_EWAIT SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL SCE_NET_SOCKINFO_F_ALL SceNetSockInfoFlag</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00276</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetProtocol SCE_NET_IPPROTO_IP SCE_NET_IPPROTO_ICMP SCE_NET_IPPROTO_IGMP SCE_NET_IPPROTO_TCP SCE_NET_IPPROTO_UDP SCE_NET_SOL_SOCKET SceNetProtocol</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00286</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetSocketOption SCE_NET_IP_HDRINCL SCE_NET_IP_TOS SCE_NET_IP_TTL SCE_NET_IP_MULTICAST_IF SCE_NET_IP_MULTICAST_TTL SCE_NET_IP_MULTICAST_LOOP SCE_NET_IP_ADD_MEMBERSHIP SCE_NET_IP_DROP_MEMBERSHIP SCE_NET_IP_TTLCHK SCE_NET_IP_MAXTTL SCE_NET_TCP_NODELAY SCE_NET_TCP_MAXSEG SCE_NET_TCP_MSS_TO_ADVERTISE SCE_NET_SO_REUSEADDR SCE_NET_SO_KEEPALIVE SCE_NET_SO_BROADCAST SCE_NET_SO_LINGER SCE_NET_SO_OOBINLINE SCE_NET_SO_REUSEPORT SCE_NET_SO_ONESBCAST SCE_NET_SO_USECRYPTO SCE_NET_SO_USESIGNATURE SCE_NET_SO_SNDBUF SCE_NET_SO_RCVBUF SCE_NET_SO_SNDLOWAT SCE_NET_SO_RCVLOWAT SCE_NET_SO_SNDTIMEO SCE_NET_SO_RCVTIMEO SCE_NET_SO_ERROR SCE_NET_SO_TYPE SCE_NET_SO_NBIO SCE_NET_SO_TPPOLICY SCE_NET_SO_NAME SceNetSocketOption</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00326</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetSocketType SCE_NET_SOCK_STREAM SCE_NET_SOCK_DGRAM SCE_NET_SOCK_RAW SCE_NET_SOCK_DGRAM_P2P SCE_NET_SOCK_STREAM_P2P SceNetSocketType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00335</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetMsgFlag SCE_NET_MSG_PEEK SCE_NET_MSG_WAITALL SCE_NET_MSG_DONTWAIT SCE_NET_MSG_USECRYPTO SCE_NET_MSG_USESIGNATURE SceNetMsgFlag</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00344</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetIcmpType SCE_NET_ICMP_TYPE_ECHO_REPLY SCE_NET_ICMP_TYPE_DEST_UNREACH SCE_NET_ICMP_TYPE_SOURCE_QUENCH SCE_NET_ICMP_TYPE_REDIRECT SCE_NET_ICMP_TYPE_ECHO_REQUEST SCE_NET_ICMP_TYPE_TIME_EXCEEDED SCE_NET_ICMP_TYPE_PARAMETER_PROBLEM SCE_NET_ICMP_TYPE_TIMESTAMP_REQUEST SCE_NET_ICMP_TYPE_TIMESTAMP_REPLY SCE_NET_ICMP_TYPE_INFORMATION_REQUEST SCE_NET_ICMP_TYPE_INFORMATION_REPLY SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY SceNetIcmpType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">net.h</field>
+    <field name="url">ern_2net_2net_8h_source.html#l00361</field>
+    <field name="keywords"></field>
+    <field name="text">SceNetIcmpCode SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_PORT_UNREACH SCE_NET_ICMP_CODE_DEST_UNREACH_FRAG_AND_DF SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_FAILED SCE_NET_ICMP_CODE_DEST_UNREACH_DST_NET_UNKNOWN SCE_NET_ICMP_CODE_DEST_UNREACH_DST_HOST_UNKNOWN SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_ISOLATED SCE_NET_ICMP_CODE_DEST_UNREACH_NET_ADMIN_PROHIBITED SCE_NET_ICMP_CODE_DEST_UNREACH_NET_HOST_PROHIBITED SCE_NET_ICMP_CODE_DEST_UNREACH_NET_TOS SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED SceNetIcmpCode SceNetFdSet bits SceNetFdSet SceNetInAddr s_addr SceNetInAddr SceNetSockaddrIn sin_len sin_family sin_port SceNetInAddr sin_addr sin_vport sin_zero SceNetSockaddrIn SceNetIpMreq SceNetInAddr imr_multiaddr SceNetInAddr imr_interface SceNetIpMreq SceNetEtherAddr data SceNetEtherAddr SceNetDnsInfo SceNetInAddr dns_addr SceNetDnsInfo SceNetLinger l_onoff l_linger SceNetLinger SceNetSockaddr sa_len sa_family sa_data SceNetSockaddr SceNetIovec iov_base iov_len SceNetIovec SceNetMsghdr msg_name msg_namelen SceNetIovec msg_iov msg_iovlen msg_control msg_controllen msg_flags SceNetMsghdr SceNetSockInfo name SCE_NET_DEBUG_NAME_LEN_MAX pid s socket_type policy reserved16 recv_queue_length send_queue_length SceNetInAddr local_adr SceNetInAddr remote_adr local_port remote_port local_vport remote_vport state flags reserved SceNetSockInfo SceNetStatisticsInfo kernel_mem_free_size kernel_mem_free_min packet_count packet_qos_count libnet_mem_free_size libnet_mem_free_min SceNetStatisticsInfo SceNetIpHeaderIpVerHl hl ver SceNetIpHeaderIpVerHl SceNetIpHeaderUnion SceNetIpHeaderIpVerHl ip_ver_hl ver_hl SceNetIpHeaderUnion SceNetIpHeader SceNetIpHeaderUnion un ip_tos ip_len ip_id ip_off ip_ttl ip_p ip_sum SceNetInAddr ip_src SceNetInAddr ip_dst SceNetIpHeader SceNetIcmpHeaderEcho id sequence SceNetIcmpHeaderEcho SceNetIcmpHeaderFrag unused mtu SceNetIcmpHeaderFrag SceNetIcmpHeaderUnion SceNetIcmpHeaderEcho echo gateway SceNetIcmpHeaderFrag frag SceNetIcmpHeaderUnion SceNetIcmpHeader type code checksum SceNetIcmpHeaderUnion un SceNetIcmpHeader ksceNetSocket name domain type protocol ksceNetAccept s SceNetSockaddr addr addrlen ksceNetBind s SceNetSockaddr addr addrlen ksceNetListen s backlog ksceNetRecvfrom s buf len flags SceNetSockaddr from fromlen ksceNetSendto s msg len flags SceNetSockaddr to tolen ksceNetSetsockopt s level optname optval optlen ksceNetSocketClose s</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -8008,98 +8127,560 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00200</field>
+    <field name="url">ern_2udcd_8h_source.html#l00018</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdUsbClass</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00019</field>
+    <field name="keywords"></field>
+    <field name="text">USB_CLASS_PER_INTERFACE USB_CLASS_AUDIO USB_CLASS_COMM USB_CLASS_HID USB_CLASS_PTP USB_CLASS_PRINTER USB_CLASS_MASS_STORAGE USB_CLASS_HUB USB_CLASS_DATA USB_CLASS_VENDOR_SPEC SceUdcdUsbClass</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00033</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdUsbDt USB_DT_DEVICE USB_DT_CONFIG USB_DT_STRING USB_DT_INTERFACE USB_DT_ENDPOINT SceUdcdUsbDt</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00043</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdUsbReq USB_REQ_GET_STATUS USB_REQ_CLEAR_FEATURE USB_REQ_SET_FEATURE USB_REQ_SET_ADDRESS USB_REQ_GET_DESCRIPTOR USB_REQ_SET_DESCRIPTOR USB_REQ_GET_CONFIG USB_REQ_SET_CONFIG USB_REQ_GET_INTERFACE USB_REQ_SET_INTERFACE USB_REQ_SYNC_FRAME SceUdcdUsbReq</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00060</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00064</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00069</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00085</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00103</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdHidRequest HID_REQUEST_GET_REPORT HID_REQUEST_GET_IDLE HID_REQUEST_GET_PROTOCOL HID_REQUEST_SET_REPORT HID_REQUEST_SET_IDLE HID_REQUEST_SET_PROTOCOL SceUdcdHidRequest</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00114</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdHidDescriptor HID_DESCRIPTOR_HID HID_DESCRIPTOR_REPORT HID_DESRIPTOR_PHY SceUdcdHidDescriptor</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00122</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdProtocol BOOT_PROTOCOL RPT_PROTOCOL SceUdcdProtocol</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00129</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00133</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00137</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdHidProtocol HID_PROTOCOL_NONE HID_PROTOCOL_KEYBOARD HID_PROTOCOL_MOUSE SceUdcdHidProtocol</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00145</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdStatus SCE_UDCD_STATUS_CONNECTION_NEW SCE_UDCD_STATUS_CONNECTION_ESTABLISHED SCE_UDCD_STATUS_CONNECTION_SUSPENDED SCE_UDCD_STATUS_CABLE_DISCONNECTED SCE_UDCD_STATUS_CABLE_CONNECTED SCE_UDCD_STATUS_DEACTIVATED SCE_UDCD_STATUS_ACTIVATED SCE_UDCD_STATUS_IS_CHARGING SCE_UDCD_STATUS_USE_USB_CHARGING SCE_UDCD_STATUS_UNKNOWN_1000 SCE_UDCD_STATUS_UNKNOWN_2000 SceUdcdStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00161</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdStatusDriver SCE_UDCD_STATUS_DRIVER_STARTED SCE_UDCD_STATUS_DRIVER_REGISTERED SceUdcdStatusDriver</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00168</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdRetcode SCE_UDCD_RETCODE_CANCEL SCE_UDCD_RETCODE_CANCEL_ALL SCE_UDCD_RETCODE_CANCEL_TRANSMISSION SCE_UDCD_RETCODE_SUCCESS SCE_UDCD_RETCODE_SEND SCE_UDCD_RETCODE_RECV SceUdcdRetcode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00183</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdErrorCode SCE_UDCD_ERROR_ILLEGAL_CONTEXT SCE_UDCD_ERROR_INVALID_POINTER SCE_UDCD_ERROR_INVALID_FLAG SCE_UDCD_ERROR_INVALID_VALUE SCE_UDCD_ERROR_ALREADY_DONE SCE_UDCD_ERROR_INVALID_ARGUMENT SCE_UDCD_ERROR_ARGUMENT_EXCEEDED_LIMIT SCE_UDCD_ERROR_MEMORY_EXHAUSTED SCE_UDCD_ERROR_DRIVER_NOT_FOUND SCE_UDCD_ERROR_DRIVER_IN_PROGRESS SCE_UDCD_ERROR_BUS_DRIVER_NOT_STARTED SCE_UDCD_ERROR_WAIT_TIMEOUT SCE_UDCD_ERROR_WAIT_CANCEL SCE_UDCD_ERROR_USBDRIVER_INVALID_DRIVER SCE_UDCD_ERROR_USBDRIVER_INVALID_NAME SCE_UDCD_ERROR_USBDRIVER_INVALID_FUNCS SceUdcdErrorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00204</field>
     <field name="keywords"></field>
     <field name="text">SceUdcdStringDescriptor bLength bDescriptorType bString SceUdcdStringDescriptor</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00209</field>
+    <field name="url">ern_2udcd_8h_source.html#l00212</field>
     <field name="keywords"></field>
     <field name="text">SceUdcdDeviceDescriptor bLength bDescriptorType bcdUSB bDeviceClass bDeviceSubClass bDeviceProtocol bMaxPacketSize0 idVendor idProduct bcdDevice iManufacturer iProduct iSerialNumber bNumConfigurations __attribute__ aligned SceUdcdDeviceDescriptor</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00229</field>
+    <field name="url">ern_2udcd_8h_source.html#l00231</field>
     <field name="keywords"></field>
     <field name="text">SceUdcdDeviceQualifierDescriptor bLength bDescriptorType bcdUSB bDeviceClass bDeviceSubClass bDeviceProtocol bMaxPacketSize0 bNumConfigurations bReserved __attribute__ aligned SceUdcdDeviceQualifierDescriptor</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00244</field>
+    <field name="url">ern_2udcd_8h_source.html#l00245</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdConfigDescriptor bLength bDescriptorType wTotalLength bNumInterfaces bConfigurationValue iConfiguration bmAttributes bMaxPower SceUdcdInterfaceSettings settings extra extraLength SceUdcdConfigDescriptor</field>
+    <field name="text">SceUdcdConfigDescriptor bLength bDescriptorType wTotalLength bNumInterfaces bConfigurationValue iConfiguration bmAttributes bMaxPower SceUdcdInterfaceSettings settings</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00263</field>
+    <field name="url">ern_2udcd_8h_source.html#l00255</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdInterfaceSettings SceUdcdInterfaceDescriptor descriptors alternateSetting numDescriptors SceUdcdInterfaceSettings</field>
+    <field name="text">extra extraLength SceUdcdConfigDescriptor</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00276</field>
+    <field name="url">ern_2udcd_8h_source.html#l00261</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdInterfaceDescriptor bLength bDescriptorType bInterfaceNumber bAlternateSetting bNumEndpoints bInterfaceClass bInterfaceSubClass bInterfaceProtocol iInterface SceUdcdEndpointDescriptor endpoints extra extraLength SceUdcdInterfaceDescriptor</field>
+    <field name="text">SceUdcdInterfaceSettings</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00296</field>
+    <field name="url">ern_2udcd_8h_source.html#l00262</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdEndpointDescriptor bLength bDescriptorType bEndpointAddress bmAttributes wMaxPacketSize bInterval extra extraLength SceUdcdEndpointDescriptor</field>
+    <field name="text">SceUdcdInterfaceDescriptor descriptors alternateSetting</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00264</field>
+    <field name="keywords"></field>
+    <field name="text">numDescriptors SceUdcdInterfaceSettings</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00269</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdInterfaceDescriptor bLength bDescriptorType bInterfaceNumber bAlternateSetting bNumEndpoints bInterfaceClass bInterfaceSubClass bInterfaceProtocol iInterface SceUdcdEndpointDescriptor endpoints</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00280</field>
+    <field name="keywords"></field>
+    <field name="text">extra extraLength SceUdcdInterfaceDescriptor</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00286</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdEndpointDescriptor bLength bDescriptorType bEndpointAddress bmAttributes wMaxPacketSize bInterval</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00293</field>
+    <field name="keywords"></field>
+    <field name="text">extra extraLength SceUdcdEndpointDescriptor</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00299</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdInterface</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00300</field>
+    <field name="keywords"></field>
+    <field name="text">expectNumber</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00301</field>
+    <field name="keywords"></field>
+    <field name="text">interfaceNumber</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00302</field>
+    <field name="keywords"></field>
+    <field name="text">numInterfaces SceUdcdInterface</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00307</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdEndpoint</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00308</field>
+    <field name="keywords"></field>
+    <field name="text">direction</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00309</field>
+    <field name="keywords"></field>
+    <field name="text">driverEndpointNumber</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00310</field>
+    <field name="keywords"></field>
+    <field name="text">endpointNumber</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00311</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdInterface expectNumber interfaceNumber numInterfaces SceUdcdInterface</field>
+    <field name="text">transmittedBytes SceUdcdEndpoint</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00323</field>
+    <field name="url">ern_2udcd_8h_source.html#l00316</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdEndpoint direction driverEndpointNumber endpointNumber transmittedBytes SceUdcdEndpoint</field>
+    <field name="text">SceUdcdConfiguration</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00337</field>
+    <field name="url">ern_2udcd_8h_source.html#l00317</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdConfiguration SceUdcdConfigDescriptor configDescriptors SceUdcdInterfaceSettings settings SceUdcdInterfaceDescriptor interfaceDescriptors SceUdcdEndpointDescriptor endpointDescriptors SceUdcdConfiguration</field>
+    <field name="text">SceUdcdConfigDescriptor configDescriptors</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00351</field>
+    <field name="url">ern_2udcd_8h_source.html#l00318</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdInterfaceSettings settings</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00319</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdInterfaceDescriptor interfaceDescriptors</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00320</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdEndpointDescriptor endpointDescriptors SceUdcdConfiguration</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00325</field>
     <field name="keywords"></field>
     <field name="text">SceUdcdEP0DeviceRequest bmRequestType bRequest wValue wIndex wLength SceUdcdEP0DeviceRequest</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00335</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdDriver</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00336</field>
+    <field name="keywords"></field>
+    <field name="text">driverName</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00337</field>
+    <field name="keywords"></field>
+    <field name="text">numEndpoints</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00338</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdEndpoint endpoints</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00339</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdInterface interface</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00340</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdDeviceDescriptor descriptor_hi</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00341</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdConfiguration configuration_hi</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00342</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdDeviceDescriptor descriptor</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00343</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdConfiguration configuration</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00344</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdStringDescriptor stringDescriptorsUnk0</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00345</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdStringDescriptor stringDescriptorsUnk1</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00346</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdStringDescriptor stringDescriptorsUnk2</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00347</field>
+    <field name="keywords"></field>
+    <field name="text">int processRequest recipient arg SceUdcdEP0DeviceRequest req</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00348</field>
+    <field name="keywords"></field>
+    <field name="text">int changeSetting interfaceNumber alternateSetting</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00349</field>
+    <field name="keywords"></field>
+    <field name="text">int attach usb_version</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00350</field>
+    <field name="keywords"></field>
+    <field name="text">void detach void</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00351</field>
+    <field name="keywords"></field>
+    <field name="text">void configure usb_version desc_count SceUdcdInterfaceSettings settings</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00352</field>
+    <field name="keywords"></field>
+    <field name="text">int start size args</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00353</field>
+    <field name="keywords"></field>
+    <field name="text">int stop size args</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00354</field>
+    <field name="keywords"></field>
+    <field name="text">unk1</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00355</field>
+    <field name="keywords"></field>
+    <field name="text">unk2</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00356</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdDriver link SceUdcdDriver</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00361</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdDeviceRequest</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00362</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdDriver driverName numEndpoints SceUdcdEndpoint endpoints SceUdcdInterface interface SceUdcdDeviceDescriptor descriptor_hi SceUdcdConfiguration configuration_hi SceUdcdDeviceDescriptor descriptor SceUdcdConfiguration configuration SceUdcdStringDescriptor stringDescriptorsUnk0 SceUdcdStringDescriptor stringDescriptorsUnk1 SceUdcdStringDescriptor stringDescriptorsUnk2 int processRequest recipient arg SceUdcdEP0DeviceRequest req int changeSetting interfaceNumber alternateSetting int attach usb_version void detach void void configure usb_version desc_count SceUdcdInterfaceSettings settings int start size args int stop size args unk1 unk2 SceUdcdDriver link SceUdcdDriver</field>
+    <field name="text">SceUdcdEndpoint endpoint</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00409</field>
+    <field name="url">ern_2udcd_8h_source.html#l00363</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdDeviceRequest SceUdcdEndpoint endpoint data unk size isControlRequest void onComplete SceUdcdDeviceRequest req transmitted returnCode SceUdcdDeviceRequest next unused physicalAddress SceUdcdDeviceRequest</field>
+    <field name="text">data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">ern_2udcd_8h_source.html#l00437</field>
+    <field name="url">ern_2udcd_8h_source.html#l00364</field>
+    <field name="keywords"></field>
+    <field name="text">unk</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00365</field>
+    <field name="keywords"></field>
+    <field name="text">size</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00366</field>
+    <field name="keywords"></field>
+    <field name="text">isControlRequest</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00367</field>
+    <field name="keywords"></field>
+    <field name="text">void onComplete SceUdcdDeviceRequest req</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00368</field>
+    <field name="keywords"></field>
+    <field name="text">transmitted</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00369</field>
+    <field name="keywords"></field>
+    <field name="text">returnCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00370</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdDeviceRequest next</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00371</field>
+    <field name="keywords"></field>
+    <field name="text">unused</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00372</field>
+    <field name="keywords"></field>
+    <field name="text">physicalAddress SceUdcdDeviceRequest</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">ern_2udcd_8h_source.html#l00377</field>
     <field name="keywords"></field>
     <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo ksceUdcdStart driverName size args ksceUdcdStop driverName size args ksceUdcdActivate productId ksceUdcdDeactivate ksceUdcdGetDeviceState ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDrvState driverName ksceUdcdGetDrvList flags SceUdcdDriverName list size ksceUdcdWaitState state waitMode SceUInt timeout ksceUdcdWaitCancel ksceUdcdRegister SceUdcdDriver drv ksceUdcdUnregister SceUdcdDriver drv ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqRecv SceUdcdDeviceRequest req</field>
   </doc>
@@ -8143,33 +8724,40 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">usbd.h</field>
     <field name="url">ern_2usbd_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">SceUsbdErrorCode SCE_USBD_ERROR_IO SCE_USBD_ERROR_INVALID_ARG SCE_USBD_ERROR_ACCESS SCE_USBD_ERROR_NO_DEVICE SCE_USBD_ERROR_NOT_FOUND SCE_USBD_ERROR_BUSY SCE_USBD_ERROR_TIMEOUT SCE_USBD_ERROR_OVERFLOW SCE_USBD_ERROR_PIPE SCE_USBD_ERROR_INTERRUPTED SCE_USBD_ERROR_NO_MEM SCE_USBD_ERROR_NOT_SUPPORTED SCE_USBD_ERROR_FATAL SceUsbdErrorCode</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">usbd.h</field>
-    <field name="url">ern_2usbd_8h_source.html#l00030</field>
+    <field name="url">ern_2usbd_8h_source.html#l00032</field>
     <field name="keywords"></field>
     <field name="text">SceUsbdDeviceDescriptor bLength bDescriptorType bcdUSB bDeviceClass bDeviceSubClass bDeviceProtocol bMaxPacketSize0 idVendor idProduct bcdDevice iManufacturer iProduct iSerialNumber bNumConfigurations SceUsbdDeviceDescriptor</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">usbd.h</field>
-    <field name="url">ern_2usbd_8h_source.html#l00047</field>
+    <field name="url">ern_2usbd_8h_source.html#l00049</field>
     <field name="keywords"></field>
-    <field name="text">SceUsbdEndpointDescriptor bLength bDescriptorType bEndpointAddress bmAttributes wMaxPacketSize bInterval extra extraLength SceUsbdEndpointDescriptor SceUsbdDeviceAddress unk0 unk1 SceUsbdDeviceAddress</field>
+    <field name="text">SceUsbdEndpointDescriptor bLength bDescriptorType bEndpointAddress bmAttributes wMaxPacketSize bInterval</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">usbd.h</field>
-    <field name="url">ern_2usbd_8h_source.html#l00064</field>
+    <field name="url">ern_2usbd_8h_source.html#l00056</field>
+    <field name="keywords"></field>
+    <field name="text">extra extraLength SceUsbdEndpointDescriptor SceUsbdDeviceAddress unk0 unk1 SceUsbdDeviceAddress</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">usbd.h</field>
+    <field name="url">ern_2usbd_8h_source.html#l00065</field>
     <field name="keywords"></field>
     <field name="text">SceUsbdDriver name int probe device_id int attach device_id int detach device_id SceUsbdDriver</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">usbd.h</field>
-    <field name="url">ern_2usbd_8h_source.html#l00071</field>
+    <field name="url">ern_2usbd_8h_source.html#l00072</field>
     <field name="keywords"></field>
     <field name="text">SceUsbdControlTransferRequest bmRequestType bRequest wValue wIndex wLength SceUsbdControlTransferRequest ksceUsbdRegisterDriver SceUsbdDriver driver ksceUsbdRegisterCompositeLdd SceUsbdDriver driver ksceUsbdUnregisterDriver SceUsbdDriver driver ksceUsbdGetDescriptor device_id prevDescriptor bDescriptorType ksceUsbdOpenEndpoint device_id SceUsbdEndpointDescriptor endpoint ksceUsbdCloseEndpoint endpoint_id ksceUsbdControlTransfer endpoint_id SceUsbdControlTransferRequest req buffer cb user_data ksceUsbdInterruptTransfer endpoint_id buffer length cb user_data</field>
   </doc>
@@ -8409,42 +8997,56 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">bt.h</field>
     <field name="url">bt_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">SceBtErrorCode SCE_BT_ERROR_REG_NOT_READY SCE_BT_ERROR_REG_DELETE_NO_ENTRY SCE_BT_ERROR_REG_UPDATE_CANNOT_SAVE SCE_BT_ERROR_REG_SET_HID_DESC_BAD_ARG SCE_BT_ERROR_REG_SET_HID_DESC_NO_REG SCE_BT_ERROR_REG_GET_HID_DESC_NO_REG SCE_BT_ERROR_REG_GET_HID_DESC_TOO_SHORT SCE_BT_ERROR_REG_DELETE_CONNECTING SCE_BT_ERROR_REG_CANNOT_LOAD SCE_BT_ERROR_REG_CANNOT_OPEN SCE_BT_ERROR_REG_CANNOT_READ SCE_BT_ERROR_REG_CANNOT_WRITE SCE_BT_ERROR_INQUIRY_START_BUSY SCE_BT_ERROR_CONNECT_START_NO_REG SCE_BT_ERROR_CONNECT_START_NOT_CONNECTABLE SCE_BT_ERROR_CONNECT_START_BUSY SCE_BT_ERROR_DISCONNECT_START_NOT_CONNECTED SCE_BT_ERROR_PIN_INVALID_LENGTH SCE_BT_ERROR_USER_CONFIRM_NOT_CONNECTED SCE_BT_ERROR_SDP_OPEN_NO_L2C SCE_BT_ERROR_CONNECT_START_REG_FULL SCE_BT_ERROR_CONNECT_START_CONNECTED SCE_BT_ERROR_CONNECT_START_TOO_MANY SCE_BT_ERROR_CONNECT_START_DELETING SCE_BT_ERROR_AVDTP_OPEN_NO_L2C SCE_BT_ERROR_AVDTP_CLOSE_BAD_SERV SCE_BT_ERROR_AVDTP_CLOSE_BAD_STATE SCE_BT_ERROR_AVDTP_START_BAD_SERV SCE_BT_ERROR_AVDTP_START_BAD_STATE SCE_BT_ERROR_AVDTP_STOP_BAD_SERV SCE_BT_ERROR_AVDTP_STOP_BAD_STATE SCE_BT_ERROR_AVDTP_SEND_BAD_STATE SCE_BT_ERROR_AVDTP_RECONF_BAD_SERV SCE_BT_ERROR_AVDTP_RECONF_BAD_STATE SCE_BT_ERROR_AVCTP_OPEN_NO_L2C SCE_BT_ERROR_AVCTP_SEND_NO_L2C SCE_BT_ERROR_AVCTP_NOT_CONNECTED SCE_BT_ERROR_AVCTP_SEND_BUSY SCE_BT_ERROR_AVCTP_SEND_NO_PRESS SCE_BT_ERROR_AVCTP_SEND_NO_RELEASE SCE_BT_ERROR_AVCTP_READ_NO_VOLUME SCE_BT_ERROR_AVCTP_SEND_NOT_RUBY SCE_BT_ERROR_HID_OPEN_NO_L2C SCE_BT_ERROR_HID_CLOSE_NO_L2C SCE_BT_ERROR_HID_SEND_NO_L2C SCE_BT_ERROR_HID_NOT_CONNECTED SCE_BT_ERROR_HID_NO_CAP SCE_BT_ERROR_HID_INVALID_REQUEST_TYPE SCE_BT_ERROR_HID_INVALID_BUFFER_ADDRESS SCE_BT_ERROR_HID_INVALID_PROTOCOL SCE_BT_ERROR_HID_INVALID_IDLE SCE_BT_ERROR_HID_NOT_YET SCE_BT_ERROR_HID_INVALID_LENGTH SCE_BT_ERROR_HID_INVALID_REPORT_ID SCE_BT_ERROR_HID_OVERWRITE_REQ SCE_BT_ERROR_JUMBO_UNLOCK_NOT_OWNER SCE_BT_ERROR_HCI_TX_OVERFLOW SCE_BT_ERROR_ACL_TX_BUF_OVERFLOW SCE_BT_ERROR_ACL_TX_CB_OVERFLOW SCE_BT_ERROR_TIMER_CANCEL_BAD_ID SCE_BT_ERROR_TIMER_CANCEL_NOT_INITIALIZED SCE_BT_ERROR_TIMER_SET_NOT_INITIALIZED SCE_BT_ERROR_TIMER_SET_NO_SPACE SCE_BT_ERROR_COPYIN_FAILED SCE_BT_ERROR_COPYOUT_FAILED SCE_BT_ERROR_GET_NAME_NO_DEVICE SCE_BT_ERROR_CB_TOO_MANY SCE_BT_ERROR_CB_NOT_REGISTERED SCE_BT_ERROR_CB_OVERFLOW SCE_BT_ERROR_AUDIO_START_NOT_CONNECTED SCE_BT_ERROR_AUDIO_START_NO_CAP SCE_BT_ERROR_AUDIO_STOP_NOT_CONNECTED SCE_BT_ERROR_AUDIO_STOP_NO_CAP SCE_BT_ERROR_AUDIO_SEND_NOT_CONNECTED SCE_BT_ERROR_AUDIO_SEND_NOT_STARTED SCE_BT_ERROR_AUDIO_SEND_INVALID_LENGTH SCE_BT_ERROR_AUDIO_RECV_NOT_CONNECTED SCE_BT_ERROR_AUDIO_RECV_NOT_STARTED SCE_BT_ERROR_AUDIO_RECV_INVALID_LENGTH SCE_BT_ERROR_AUDIO_START_INVALID_SERV SCE_BT_ERROR_AUDIO_STOP_INVALID_SERV SCE_BT_ERROR_AUDIO_START_SERV_FAILED SCE_BT_ERROR_AUDIO_STOP_SERV_FAILED SCE_BT_ERROR_AUDIO_FREQ_NOT_CONNECTED SCE_BT_ERROR_AUDIO_SEND_NO_CP SCE_BT_ERROR_AUDIO_SEND_BAD_TYPE SCE_BT_ERROR_AUDIO_RECV_BAD_TYPE SCE_BT_ERROR_AUDIO_COMBI_NOT_FOUND SCE_BT_ERROR_AUDIO_SEND_NO_L2C SCE_BT_ERROR_AUDIO_INTERNAL_1 SCE_BT_ERROR_AUDIO_SEND_BUSY SCE_BT_ERROR_AUDIO_RECV_BUSY SCE_BT_ERROR_AUDIO_SEND_NO_CAP SCE_BT_ERROR_AUDIO_SEND_SERV_FAILED SCE_BT_ERROR_AUDIO_RECV_NO_CAP SCE_BT_ERROR_AUDIO_RECV_SERV_FAILED SCE_BT_ERROR_HID_RECV_NOT_CONNECTED SCE_BT_ERROR_HID_RECV_INVALID_LENGTH SCE_BT_ERROR_AVRCP_TOO_LONG_TITLE SCE_BT_ERROR_AVRCP_INVALID_PLAY_STATUS SCE_BT_ERROR_CONF_NOT_READY SCE_BT_ERROR_CONF_INVALID_VALUE SCE_BT_ERROR_CONF_BT_INACTIVE SCE_BT_ERROR_CONF_TIMEOUT SCE_BT_ERROR_CONF_CARD_NOT_FOUND SCE_BT_ERROR_CONF_FUNCTION_NOT_FOUND SCE_BT_ERROR_CONF_CANT_ENABLE_FUNCTION SCE_BT_ERROR_CONF_CANT_DISABLE_FUNCTION SCE_BT_ERROR_CONF_REGISTER_SUBINTR_HANDLER SCE_BT_ERROR_CONF_RELEASE_SUBINTR_HANDLER SCE_BT_ERROR_CONF_ENABLE_SUBINTR SCE_BT_ERROR_CONF_DISABLE_SUBINTR SCE_BT_ERROR_CONF_ON_TIMEOUT SCE_BT_ERROR_CONF_OFF_TIMEOUT SCE_BT_ERROR_CONF_SUSPEND_TIMEOUT SCE_BT_ERROR_CONF_CANT_ENTER SCE_BT_ERROR_NOTIMP SCE_BT_ERROR_KPROC_CREATE SCE_BT_ERROR_SDIO_GET_FUNCTION SCE_BT_ERROR_SDIO_REGISTER_INTR_HANDLER SCE_BT_ERROR_SDIO_UNREGISTER_INTR_HANDLER SCE_BT_ERROR_SDIO_LOCK SCE_BT_ERROR_SDIO_UNLOCK SCE_BT_ERROR_SDIO_ENABLE_FUNCTION SCE_BT_ERROR_SDIO_DISABLE_FUNCTION SCE_BT_ERROR_SDIO_SET_BLOCK_LEN SCE_BT_ERROR_SDIO_SET_BUS_SPEED SCE_BT_ERROR_SDIO_READ_DIR SCE_BT_ERROR_SDIO_WRITE_DIR SCE_BT_ERROR_SDIO_READ_FIX SCE_BT_ERROR_SDIO_WRITE_FIX SCE_BT_ERROR_TSLEEP SCE_BT_ERROR_GET_DEBUG_INFO_INVALID_REQUEST SCE_BT_ERROR_SET_DEBUG_INFO_INVALID_REQUEST SCE_BT_ERROR_GET_DEBUG_INFO_INVALID_SIZE SCE_BT_ERROR_SET_DEBUG_INFO_INVALID_SIZE SCE_BT_ERROR_GET_DEBUG_INFO_INVALID_ARGUMENT SCE_BT_ERROR_SET_DEBUG_INFO_INVALID_ARGUMENT SCE_BT_ERROR_GET_DEBUG_INFO_INVALID_STATE SCE_BT_ERROR_SET_DEBUG_INFO_INVALID_STATE SCE_BT_ERROR_GET_DEBUG_INFO_NOT_CONNECTED SCE_BT_ERROR_SET_DEBUG_INFO_NOT_CONNECTED SCE_BT_ERROR_PIN_IS_LE SCE_BT_ERROR_CONNECT_START_IS_LE SCE_BT_ERROR_AVCTP_IS_LE SCE_BT_ERROR_HID_IS_LE SCE_BT_ERROR_AUDIO_START_IS_LE SCE_BT_ERROR_AUDIO_STOP_IS_LE SCE_BT_ERROR_AUDIO_SEND_IS_LE SCE_BT_ERROR_AUDIO_RECV_IS_LE SCE_BT_ERROR_AUDIO_FREQ_IS_LE SCE_BT_ERROR_ATT_BASE SCE_BT_ERROR_ATT_INVALID_HANDLE SCE_BT_ERROR_ATT_READ_NOT_PERMITTED SCE_BT_ERROR_ATT_WRITE_NOT_PERMITTED SCE_BT_ERROR_ATT_INVALID_PDU SCE_BT_ERROR_ATT_INSUFFICIENT_AUTHENTICATION SCE_BT_ERROR_ATT_REQUEST_NOT_SUPPORTED SCE_BT_ERROR_ATT_INVALID_OFFSET SCE_BT_ERROR_ATT_INSUFFICIENT_AUTHORIZATION SCE_BT_ERROR_ATT_PEPARE_QUEUE_FULL SCE_BT_ERROR_ATT_ATTRIBUTE_NOT_FOUND SCE_BT_ERROR_ATT_ATTRIBUTE_NOT_LONG SCE_BT_ERROR_ATT_INSUFFICIENT_ENCRYPTION_KEY_SIZE SCE_BT_ERROR_ATT_INVALID_ATTRIBUTE_VALUE_LENGTH SCE_BT_ERROR_ATT_UNLIKELY_ERROR SCE_BT_ERROR_ATT_INSUFFICIENT_ENCRYPTION SCE_BT_ERROR_ATT_UNSUPPORTED_GROUP_TYPE SCE_BT_ERROR_ATT_INSUFFICIENT_RESOURCES SCE_BT_ERROR_ATT_APPLICATION_ERROR_LO SCE_BT_ERROR_ATT_APPLICATION_ERROR_HI SCE_BT_ERROR_GATT_INVALID_NO SCE_BT_ERROR_GATT_NOT_CONNECTED SCE_BT_ERROR_GATT_BUSY SCE_BT_ERROR_GATT_INVALID_HANDLE SCE_BT_ERROR_GATT_INVALID_FLAGS SCE_BT_ERROR_GATT_INVALID_SIZE SCE_BT_ERROR_GATT_NOT_LE SCE_BT_ERROR_GATT_TOO_BIG_RECORD SCE_BT_ERROR_GATT_NOT_YET SCE_BT_ERROR_GATT_DISCONNECT SCE_BT_ERROR_GATT_TSLEEP SCE_BT_ERROR_GATT_ENTER SCE_BT_ERROR_GATT_TOO_BIG_BUFFER SCE_BT_ERROR_SM_INVALID_KEY_LENGTH SCE_BT_ERROR_SM_NOT_DIGIT SCE_BT_ERROR_SM_NO_REQ SCE_BT_ERROR_SM_NOT_NEEDED_PIN SCE_BT_ERROR_SM_INVALID_CONFIRM_REPLY SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_REQ SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_LENGTH SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_INTERVAL_MIN SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_INTERVAL_MAX SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_OWN_ADDRESS_TYPE SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_DIRECT_ADDRESS_TYPE SCE_BT_ERROR_LE_SET_ADVERTISING_INVALID_DIRECT_ADDRESS SCE_BT_ERROR_LE_SET_SCAN_INVALID_REQ SCE_BT_ERROR_LE_SET_SCAN_INVALID_LENGTH SCE_BT_ERROR_LE_SET_SCAN_INVALID_INTERVAL SCE_BT_ERROR_LE_SET_SCAN_INVALID_WINDOW SCE_BT_ERROR_LE_SET_SCAN_INVALID_OWN_ADDRESS_TYPE SCE_BT_ERROR_LE_GET_ADVERTISING_NOT_FOUND SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_SCAN_INTERVAL SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_SCAN_WINDOW SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_PEER_ADDRESS SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_OWN_ADDRESS_TYPE SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_INTERVAL_MIN SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_INTERVAL_MAX SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_LATENCY SCE_BT_ERROR_LE_CREATE_CONNECTION_INVALID_TIMEOUT SCE_BT_ERROR_LE_CREATE_CONNECTION_REG_FULL SCE_BT_ERROR_LE_CREATE_CONNECTION_REG_ERROR SCE_BT_ERROR_LE_CREATE_CONNECTION_CONNECTED SCE_BT_ERROR_LE_CREATE_CONNECTION_FULL SCE_BT_ERROR_LE_CREATE_CONNECTION_BUSY SCE_BT_ERROR_ATT_READ_INVALID_NO SCE_BT_ERROR_ATT_READ_INVALID_LENGTH SCE_BT_ERROR_ATT_READ_INVALID_INTERNAL SCE_BT_ERROR_ATT_WRITE_INVALID_NO SCE_BT_ERROR_ATT_WRITE_INVALID_LENGTH SCE_BT_ERROR_ATT_WRITE_INVALID_INTERNAL SCE_BT_ERROR_ATT_NOT_YET SCE_BT_ERROR_LE_NOT_SUPPORTED SCE_BT_ERROR_PAIRING_OOB_TIMEOUT SCE_BT_ERROR_PAIRING_OOB_FULL SCE_BT_ERROR_PAIRING_OOB_CAN_NOT_DISCONNECT SCE_BT_ERROR_PAIRING_OOB_INTERNAL_ERROR SCE_BT_ERROR_NOT_READY SCE_BT_ERROR_GET_JACK_STATUS_NOT_CONNECTED SCE_BT_ERROR_TOO_MANY_CONNECTION SCE_BT_ERROR_TOO_MANY_HID SCE_BT_ERROR_NOT_SUPPORTED_DEVICE SCE_BT_ERROR_JEDI_VOLUME_GAIN_NOT_CONNECTED SCE_BT_ERROR_JEDI_SNIFF_NOT_CONNECTED SCE_BT_ERROR_JEDI_SNIFF_NOT_JEDI SceBtErrorCode</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">bt.h</field>
-    <field name="url">bt_8h_source.html#l00253</field>
+    <field name="url">bt_8h_source.html#l00254</field>
     <field name="keywords"></field>
-    <field name="text">mac unk0 bt_class unk1 unk2 vid pid unk3 unk4 name unk5 SceBtRegisteredInfo</field>
+    <field name="text">SceBtRegisteredInfo mac unk0 bt_class unk1 unk2 vid pid unk3 unk4 name unk5 SceBtRegisteredInfo</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">bt.h</field>
-    <field name="url">bt_8h_source.html#l00267</field>
+    <field name="url">bt_8h_source.html#l00268</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">SceBtEvent</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">bt.h</field>
-    <field name="url">bt_8h_source.html#l00270</field>
+    <field name="url">bt_8h_source.html#l00269</field>
     <field name="keywords"></field>
     <field name="text">data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">bt.h</field>
-    <field name="url">bt_8h_source.html#l00272</field>
+    <field name="url">bt_8h_source.html#l00271</field>
     <field name="keywords"></field>
     <field name="text">id unk1 unk2 unk3 mac0 mac1 SceBtEvent void SceBtCallback r0 r1 r2 r3</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">bt.h</field>
+    <field name="url">bt_8h_source.html#l00284</field>
+    <field name="keywords"></field>
+    <field name="text">_SceBtHidRequest</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">bt.h</field>
     <field name="url">bt_8h_source.html#l00285</field>
     <field name="keywords"></field>
-    <field name="text">_SceBtHidRequest uint32_t unk00 uint32_t unk04 uint8_t type uint8_t unk09 uint8_t unk0A uint8_t unk0B buffer uint32_t length _SceBtHidRequest next __attribute__ packed SceBtHidRequest ksceBtAvrcpReadVolume r0 r1 r2 r3 ksceBtAvrcpSendButton r0 r1 r2 r3 ksceBtAvrcpSendVolume r0 r1 r2 r3 ksceBtAvrcpSetPlayStatus r0 r1 r2 r3 ksceBtAvrcpSetTitle r0 r1 r2 r3 ksceBtDeleteRegisteredInfo mac0 mac1 ksceBtFreqAudio r0 r1 r2 r3 ksceBtGetConfiguration ksceBtGetConnectingInfo mac0 mac1 ksceBtGetDeviceName mac0 mac1 name x79 ksceBtGetInfoForTest r0 r1 r2 r3 ksceBtGetLastError ksceBtGetRegisteredInfo device unk SceBtRegisteredInfo info info_size ksceBtGetStatusForTest r0 r1 r2 r3 ksceBtGetVidPid mac0 mac1 vid_pid ksceBtHfpGetCurrentPhoneNumber r0 r1 r2 r3 ksceBtHfpRequest r0 r1 r2 r3 ksceBtHidGetReportDescriptor mac0 mac1 buffer size ksceBtHidTransfer mac0 mac1 SceBtHidRequest request ksceBtPairingOOB r0 r1 r2 r3 ksceBtPushBip r0 r1 r2 r3 ksceBtPushOpp r0 r1 r2 r3 ksceBtReadEvent SceBtEvent events num_events ksceBtRecvAudio r0 r1 r2 r3 ksceBtRecvBip r0 r1 r2 r3 ksceBtRecvOpp r0 r1 r2 r3 ksceBtRecvSpp r0 r1 r2 r3 ksceBtRegisterCallback SceUID cb unused flags1 flags2 ksceBtReplyPinCode mac0 mac1 code length ksceBtReplyUserConfirmation mac0 mac1 unk ksceBtSendAudio r0 r1 r2 r3 ksceBtSendL2capEchoRequestForTest r0 r1 r2 r3 ksceBtSendSpp r0 r1 r2 r3 ksceBtSetConfiguration r0 ksceBtSetContentProtection r0 ksceBtSetInquiryResultForTest ksceBtSetInquiryScan r0 ksceBtSetL2capEchoResponseBufferForTest r0 r1 r2 r3 ksceBtSetStatusForTest r0 r1 r2 r3 ksceBtStartAudio r0 r1 r2 r3 ksceBtStartConnect mac0 mac1 ksceBtStartDisconnect mac0 mac1 ksceBtStartInquiry ksceBtStopAudio r0 r1 r2 r3 ksceBtStopInquiry ksceBtUnregisterCallback SceUID cb</field>
+    <field name="text">uint32_t unk00 uint32_t unk04</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">bt.h</field>
+    <field name="url">bt_8h_source.html#l00287</field>
+    <field name="keywords"></field>
+    <field name="text">uint8_t type uint8_t unk09 uint8_t unk0A uint8_t unk0B buffer uint32_t length _SceBtHidRequest next __attribute__ packed SceBtHidRequest ksceBtAvrcpReadVolume r0 r1 r2 r3 ksceBtAvrcpSendButton r0 r1 r2 r3 ksceBtAvrcpSendVolume r0 r1 r2 r3 ksceBtAvrcpSetPlayStatus r0 r1 r2 r3 ksceBtAvrcpSetTitle r0 r1 r2 r3 ksceBtDeleteRegisteredInfo mac0 mac1 ksceBtFreqAudio r0 r1 r2 r3 ksceBtGetConfiguration ksceBtGetConnectingInfo mac0 mac1 ksceBtGetDeviceName mac0 mac1 name x79 ksceBtGetInfoForTest r0 r1 r2 r3 ksceBtGetLastError ksceBtGetRegisteredInfo device unk SceBtRegisteredInfo info info_size ksceBtGetStatusForTest r0 r1 r2 r3 ksceBtGetVidPid mac0 mac1 vid_pid ksceBtHfpGetCurrentPhoneNumber r0 r1 r2 r3 ksceBtHfpRequest r0 r1 r2 r3 ksceBtHidGetReportDescriptor mac0 mac1 buffer size ksceBtHidTransfer mac0 mac1 SceBtHidRequest request ksceBtPairingOOB r0 r1 r2 r3 ksceBtPushBip r0 r1 r2 r3 ksceBtPushOpp r0 r1 r2 r3 ksceBtReadEvent SceBtEvent events num_events ksceBtRecvAudio r0 r1 r2 r3 ksceBtRecvBip r0 r1 r2 r3 ksceBtRecvOpp r0 r1 r2 r3 ksceBtRecvSpp r0 r1 r2 r3 ksceBtRegisterCallback SceUID cb unused flags1 flags2 ksceBtReplyPinCode mac0 mac1 code length ksceBtReplyUserConfirmation mac0 mac1 unk ksceBtSendAudio r0 r1 r2 r3 ksceBtSendL2capEchoRequestForTest r0 r1 r2 r3 ksceBtSendSpp r0 r1 r2 r3 ksceBtSetConfiguration r0 ksceBtSetContentProtection r0 ksceBtSetInquiryResultForTest ksceBtSetInquiryScan r0 ksceBtSetL2capEchoResponseBufferForTest r0 r1 r2 r3 ksceBtSetStatusForTest r0 r1 r2 r3 ksceBtStartAudio r0 r1 r2 r3 ksceBtStartConnect mac0 mac1 ksceBtStartDisconnect mac0 mac1 ksceBtStartInquiry ksceBtStopAudio r0 r1 r2 r3 ksceBtStopInquiry ksceBtUnregisterCallback SceUID cb</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -8535,7 +9137,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">gpio.h</field>
     <field name="url">gpio_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">SCE_GPIO_ERROR_INVALID_BUS SCE_GPIO_ERROR_INVALID_PORT SCE_GPIO_ERROR_INVALID_MODE SceGpioPortMasks SCE_GPIO_PORT_MASK_LED_GAMECARD SCE_GPIO_PORT_MASK_LED_PS_BUTTON SceGpioPortMode SCE_GPIO_PORT_MODE_OUTPUT SCE_GPIO_PORT_MODE_INPUT ksceGpioPortRead bus port ksceGpioPortSet bus port ksceGpioPortClear bus port ksceGpioPortReset bus port ksceGpioSetPortMode bus port mode ksceGpioGetPortMode bus port ksceGpioSetIntrMode bus port intr_mode ksceGpioGetIntrMode bus port ksceGpioAcquireIntr bus port ksceGpioQueryIntr bus port</field>
+    <field name="text">SceGpioErrorCode SCE_GPIO_ERROR_INVALID_BUS SCE_GPIO_ERROR_INVALID_PORT SCE_GPIO_ERROR_INVALID_MODE SceGpioErrorCode SceGpioPortMasks SCE_GPIO_PORT_MASK_LED_GAMECARD SCE_GPIO_PORT_MASK_LED_PS_BUTTON SceGpioPortMasks SceGpioPortMode SCE_GPIO_PORT_MODE_OUTPUT SCE_GPIO_PORT_MODE_INPUT SceGpioPortMode ksceGpioPortRead bus port ksceGpioPortSet bus port ksceGpioPortClear bus port ksceGpioPortReset bus port ksceGpioSetPortMode bus port mode ksceGpioGetPortMode bus port ksceGpioSetIntrMode bus port intr_mode ksceGpioGetIntrMode bus port ksceGpioAcquireIntr bus port ksceGpioQueryIntr bus port</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -11555,7 +12157,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">SCE_CTRL_TYPE_UNPAIRED</field>
     <field name="url">group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a967ebfcf1e78707101bf3b8d248ef20b</field>
     <field name="keywords"></field>
-    <field name="text">Unpaired controller Unpaired controller</field>
+    <field name="text">Unpaired controller Unpaired controller Unpaired controller Unpaired controller</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -11737,21 +12339,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">SceDisplayFrameBuf</field>
     <field name="url">group__SceDisplayUser.html#structSceDisplayFrameBuf</field>
     <field name="keywords"></field>
-    <field name="text">Structure used with sceDisplaySetFrameBuf to set/update framebuffer Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by sceDisplayGetFrameBuf Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by sceDisplayGetFrameBuf Structure used with sceDisplaySetFrameBuf to set/update framebuffer Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by sceDisplayGetFrameBuf Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by sceDisplayGetFrameBuf</field>
+    <field name="text">Structure used with ksceDisplaySetFrameBuf to set/update framebuffer Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by sceDisplayGetFrameBuf Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by ksceDisplayGetFrameBuf Structure used with ksceDisplaySetFrameBuf to set/update framebuffer Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by sceDisplayGetFrameBuf Original screen resolution is 960x544 but the following resolutions can also be supplied as width and height 480x272 640x368 720x408 This structure is returned by ksceDisplayGetFrameBuf</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">SCE_DISPLAY_SETBUF_IMMEDIATE</field>
-    <field name="url">group__SceDisplayUser.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016</field>
+    <field name="url">group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016</field>
     <field name="keywords"></field>
-    <field name="text">Buffer change effective immediately</field>
+    <field name="text">Buffer change effective immediately Buffer change effective immediately Buffer change effective immediately Buffer change effective immediately</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">SCE_DISPLAY_SETBUF_NEXTFRAME</field>
-    <field name="url">group__SceDisplayUser.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c</field>
+    <field name="url">group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c</field>
     <field name="keywords"></field>
-    <field name="text">Buffer change effective next frame</field>
+    <field name="text">Buffer change effective next frame Buffer change effective next frame Buffer change effective next frame Buffer change effective next frame</field>
   </doc>
   <doc>
     <field name="type">group</field>
@@ -15345,7 +15947,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(int mode)</field>
     <field name="url">group__SceCtrlKernel.html#gafe0a11b69712e9bd19c48cfc5a22c0c0</field>
     <field name="keywords">ksceCtrlSetSamplingMode</field>
-    <field name="text">Set the controller mode mode One of The previous mode 0 on error</field>
+    <field name="text">Set the controller mode mode One of SceCtrlPadInputMode The previous mode 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15353,7 +15955,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(int *pMode)</field>
     <field name="url">group__SceCtrlKernel.html#ga7c849b9a1de22670d67a476efcfba4f3</field>
     <field name="keywords">ksceCtrlGetSamplingMode</field>
-    <field name="text">Get the current controller mode pMode Return value see The current mode 0 on error</field>
+    <field name="text">Get the current controller mode pMode Return value see SceCtrlPadInputMode The current mode 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15518,20 +16120,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceDisplayKernel.html#ga80d28604f6fce0d218bd11ca039f19eb</field>
     <field name="keywords">ksceDisplayWaitVblankStartMulti</field>
     <field name="text">Wait for vertical blank start after specified number of vertical periods vcount Number of vertical periods before waiting for vertical blank start</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">SCE_DISPLAY_SETBUF_IMMEDIATE</field>
-    <field name="url">group__SceDisplayKernel.html#ggabed82baf7f470b522273a3e37c24c600aed1ba9da79d96bef5d2c401d271ed016</field>
-    <field name="keywords"></field>
-    <field name="text">Buffer change effective immediately</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">SCE_DISPLAY_SETBUF_NEXTFRAME</field>
-    <field name="url">group__SceDisplayKernel.html#ggabed82baf7f470b522273a3e37c24c600a942be0a40abb1c6466d4583f2cefa98c</field>
-    <field name="keywords"></field>
-    <field name="text">Buffer change effective next frame</field>
   </doc>
   <doc>
     <field name="type">group</field>
@@ -15809,6 +16397,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceFcntlKernel.html#gad4ba496c026bde1c5fc674ce0d77de5a</field>
     <field name="keywords">ksceIoUmount</field>
     <field name="text">Unmounts a device id Device to unmount a2 Unknown set to 0 a3 Unknown set to 0 a4 Unknown set to 0 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">SceIoMode</field>
+    <field name="url">group__SceFcntlKernel.html#ga89dbb113ece9b0f49d1a3a0e047da388</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">group</field>
@@ -16855,11 +17450,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">__attribute__</field>
+    <field name="args">((aligned(4))) SceUdcdDeviceDescriptor</field>
+    <field name="url">group__SceUdcdKernel.html#ga82e854acee1ed6e563718fe339aec7ed</field>
+    <field name="keywords">__attribute__</field>
+    <field name="text">USB device descriptor USB device qualifier descriptor</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">__attribute__</field>
+    <field name="args">((aligned(16))) SceUdcdDriverName</field>
+    <field name="url">group__SceUdcdKernel.html#gaecaf20cb4b5ebc2a129339b3a3e5a0c4</field>
+    <field name="keywords">__attribute__</field>
+    <field name="text">USB driver name</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceUdcdStart</field>
     <field name="args">(const char *driverName, int size, void *args)</field>
     <field name="url">group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c</field>
     <field name="keywords">ksceUdcdStart</field>
-    <field name="text">Start a USB driver driverName name of the USB driver to start size Size of arguments to pass to USB driver start args Arguments to pass to USB driver start 0 on success</field>
+    <field name="text">Start a USB driver driverName Name of the USB driver to start size Size of arguments to pass to USB driver start args Arguments to pass to USB driver start 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16867,7 +17478,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(const char *driverName, int size, void *args)</field>
     <field name="url">group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129</field>
     <field name="keywords">ksceUdcdStop</field>
-    <field name="text">Stop a USB driver driverName name of the USB driver to stop size Size of arguments to pass to USB driver start args Arguments to pass to USB driver start 0 on success</field>
+    <field name="text">Stop a USB driver driverName Name of the USB driver to stop size Size of arguments to pass to USB driver start args Arguments to pass to USB driver start 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16875,7 +17486,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(unsigned int productId)</field>
     <field name="url">group__SceUdcdKernel.html#gafbdc0991ab0f211224c3bf70598a33e5</field>
     <field name="keywords">ksceUdcdActivate</field>
-    <field name="text">Activate a USB driver pid Product ID for the default USB Driver 0 on success</field>
+    <field name="text">Activate a USB driver pid Product ID for the default USB Driver 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16883,7 +17494,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(void)</field>
     <field name="url">group__SceUdcdKernel.html#ga71a1ed3ffe8404b87be819b2080c60cb</field>
     <field name="keywords">ksceUdcdDeactivate</field>
-    <field name="text">Deactivate USB driver 0 on success</field>
+    <field name="text">Deactivate USB driver 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16891,7 +17502,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(void)</field>
     <field name="url">group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76</field>
     <field name="keywords">ksceUdcdGetDeviceState</field>
-    <field name="text">Get USB state OR d SCE_UDCD_STATUS_* constants</field>
+    <field name="text">Get USB state One or more SceUdcdStatus</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16915,7 +17526,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(unsigned int flags, SceUdcdDriverName *list, int size)</field>
     <field name="url">group__SceUdcdKernel.html#ga60e4cb4b464c7afeddf6426f371f7def</field>
     <field name="keywords">ksceUdcdGetDrvList</field>
-    <field name="text">Get the list of drivers flags combination of SCE_UDCD_STATUS_DRIVER_STARTED or SCE_UDCD_STATUS_DRIVER_REGISTERED list points to the output list size number of entries in the output list the number of drivers in the output or 0 in case of error</field>
+    <field name="text">Get the list of drivers flags One or more SceUdcdStatusDriver list points to the output list size number of entries in the output list the number of drivers in the output or 0 in case of error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16923,7 +17534,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(unsigned int state, unsigned int waitMode, SceUInt *timeout)</field>
     <field name="url">group__SceUdcdKernel.html#ga32fcbde8265107dc487376019b45adb9</field>
     <field name="keywords">ksceUdcdWaitState</field>
-    <field name="text">Wait for USB state state combination of states(returned by ksceUdcdGetState) waitMode one of the SceEventFlagWaitTypes timeout pointer to timeout the usb state or 0 in case of error</field>
+    <field name="text">Wait for USB state state combination of states returned by ksceUdcdGetDeviceState waitMode one of the SceEventFlagWaitTypes timeout pointer to timeout the usb state or 0 in case of error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16988,6 +17599,62 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceUdcdKernel.html#ga912d7d79a404bfc6939fbe2d866e981a</field>
     <field name="keywords">ksceUdcdReqRecv</field>
     <field name="text">Queue a receive request(OUT from host pov) req Pointer to a filled out SceUdcdDeviceRequest structure 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">USB_DT_DEVICE_SIZE</field>
+    <field name="url">group__SceUdcdKernel.html#gadf113fe0d44d34bd71d49e7baf39d9d3</field>
+    <field name="keywords">USB_DT_DEVICE_SIZE</field>
+    <field name="text">Descriptor sizes per descriptor type</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">USB_DT_ENDPOINT_AUDIO_SIZE</field>
+    <field name="url">group__SceUdcdKernel.html#ga05175986cd1b3b39b0c8c36447183391</field>
+    <field name="keywords">USB_DT_ENDPOINT_AUDIO_SIZE</field>
+    <field name="text">Audio extension</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">USB_CTRLTYPE_DIR_MASK</field>
+    <field name="url">group__SceUdcdKernel.html#ga93c4cf0429f7bd2be0ca9c7d8e27c6a2</field>
+    <field name="keywords">USB_CTRLTYPE_DIR_MASK</field>
+    <field name="text">Control message request type bitmask</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">USB_ENDPOINT_ADDRESS_MASK</field>
+    <field name="url">group__SceUdcdKernel.html#gaf69ecdd9367b248cd22627a3a1886dfe</field>
+    <field name="keywords">USB_ENDPOINT_ADDRESS_MASK</field>
+    <field name="text">Endpoint types and masks</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">HID_INTF</field>
+    <field name="url">group__SceUdcdKernel.html#gaf5c77c554d065e04ff5b343c05a53fe6</field>
+    <field name="keywords">HID_INTF</field>
+    <field name="text">HID Interface Class Code</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">BOOT_INTF_SUBCLASS</field>
+    <field name="url">group__SceUdcdKernel.html#ga32ee5330062b7d25ba9ed9be75276ef0</field>
+    <field name="keywords">BOOT_INTF_SUBCLASS</field>
+    <field name="text">HID Interface Class SubClass Codes</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">SCE_UDCD_MAX_INTERFACES</field>
+    <field name="url">group__SceUdcdKernel.html#gace9df03d7cada03b7ec5dc4efc9118ed</field>
+    <field name="keywords">SCE_UDCD_MAX_INTERFACES</field>
+    <field name="text">USB limits</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">x00</field>
+    <field name="url">group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0aa66bab3a0a5adbcad3ede80cdc925fae</field>
+    <field name="keywords"></field>
+    <field name="text">for DeviceClass</field>
   </doc>
   <doc>
     <field name="type">group</field>
@@ -17092,14 +17759,246 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">SceUdcdDeviceRequest</field>
     <field name="url">structSceUdcdDeviceRequest.html</field>
     <field name="keywords">SceUdcdDeviceRequest</field>
-    <field name="text"></field>
+    <field name="text">USB device request</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::endpoint</field>
+    <field name="url">group__SceUdcdKernel.html#ga5edb1ba86159a0555016ad5f7c3d1a4b</field>
+    <field name="keywords">endpoint SceUdcdDeviceRequest::endpoint SceUdcdDeviceRequest</field>
+    <field name="text">Pointer to the endpoint to queue request on</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::data</field>
+    <field name="url">group__SceUdcdKernel.html#gac54ebd1b5b864a72aeece506d22b3f62</field>
+    <field name="keywords">data SceUdcdDeviceRequest::data SceUdcdDeviceRequest</field>
+    <field name="text">Pointer to the data buffer to use in the request</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::unk</field>
+    <field name="url">group__SceUdcdKernel.html#gac838f4e33057d57d3552cbc4a70fcb64</field>
+    <field name="keywords">unk SceUdcdDeviceRequest::unk SceUdcdDeviceRequest</field>
+    <field name="text">Unknown data</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::size</field>
+    <field name="url">group__SceUdcdKernel.html#gafbb03350a5b807c3d215a1c87bf171c1</field>
+    <field name="keywords">size SceUdcdDeviceRequest::size SceUdcdDeviceRequest</field>
+    <field name="text">Size of the data buffer</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::isControlRequest</field>
+    <field name="url">group__SceUdcdKernel.html#ga028b21ac213b591d617bf1eae866d8f0</field>
+    <field name="keywords">isControlRequest SceUdcdDeviceRequest::isControlRequest SceUdcdDeviceRequest</field>
+    <field name="text">Is a control request</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::onComplete</field>
+    <field name="args">)(struct SceUdcdDeviceRequest *req)</field>
+    <field name="url">group__SceUdcdKernel.html#ga1c2e309e930ae7b8dc881316082fe5bb</field>
+    <field name="keywords">onComplete SceUdcdDeviceRequest::onComplete SceUdcdDeviceRequest</field>
+    <field name="text">Pointer to the function to call on completion</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::transmitted</field>
+    <field name="url">group__SceUdcdKernel.html#ga2316c68da17af1cb72346c185f2b599d</field>
+    <field name="keywords">transmitted SceUdcdDeviceRequest::transmitted SceUdcdDeviceRequest</field>
+    <field name="text">Number of transmitted bytes</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::returnCode</field>
+    <field name="url">group__SceUdcdKernel.html#ga0de65e6ff443cf05aa85451b8da64e05</field>
+    <field name="keywords">returnCode SceUdcdDeviceRequest::returnCode SceUdcdDeviceRequest</field>
+    <field name="text">Return code of the request See</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::next</field>
+    <field name="url">group__SceUdcdKernel.html#ga895468ea4a596c8009448587194e3c59</field>
+    <field name="keywords">next SceUdcdDeviceRequest::next SceUdcdDeviceRequest</field>
+    <field name="text">Link pointer to next request used by the driver set it to NULL</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::unused</field>
+    <field name="url">group__SceUdcdKernel.html#ga74b97e7bb37209afe215c9293494dee0</field>
+    <field name="keywords">unused SceUdcdDeviceRequest::unused SceUdcdDeviceRequest</field>
+    <field name="text">An unused value maybe an argument</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDeviceRequest::physicalAddress</field>
+    <field name="url">group__SceUdcdKernel.html#ga2e598a134cc9c098fd013231b62b69bd</field>
+    <field name="keywords">physicalAddress SceUdcdDeviceRequest::physicalAddress SceUdcdDeviceRequest</field>
+    <field name="text">Physical address</field>
   </doc>
   <doc>
     <field name="type">struct</field>
     <field name="name">SceUdcdDriver</field>
     <field name="url">structSceUdcdDriver.html</field>
     <field name="keywords">SceUdcdDriver</field>
-    <field name="text"></field>
+    <field name="text">USB driver structure</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::driverName</field>
+    <field name="url">group__SceUdcdKernel.html#ga92a7bfde623e857ceac16b583d4aa62f</field>
+    <field name="keywords">driverName SceUdcdDriver::driverName SceUdcdDriver</field>
+    <field name="text">Name of the USB driver</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::numEndpoints</field>
+    <field name="url">group__SceUdcdKernel.html#ga9a01a4cc3c5c9c3cccc5a23e28dc996c</field>
+    <field name="keywords">numEndpoints SceUdcdDriver::numEndpoints SceUdcdDriver</field>
+    <field name="text">Number of endpoints in this driver including default control</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::endpoints</field>
+    <field name="url">group__SceUdcdKernel.html#gaa8b539de8e92421bc91b613b65179077</field>
+    <field name="keywords">endpoints SceUdcdDriver::endpoints SceUdcdDriver</field>
+    <field name="text">List of endpoint structures used when calling other functions</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::interface</field>
+    <field name="url">group__SceUdcdKernel.html#gabf360510403078c46816e1c9b2c4f2e8</field>
+    <field name="keywords">interface SceUdcdDriver::interface SceUdcdDriver</field>
+    <field name="text">Interface list</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::descriptor_hi</field>
+    <field name="url">group__SceUdcdKernel.html#ga35d8b117e8014c669529f6994542b54a</field>
+    <field name="keywords">descriptor_hi SceUdcdDriver::descriptor_hi SceUdcdDriver</field>
+    <field name="text">Pointer to hi-speed device descriptor</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::configuration_hi</field>
+    <field name="url">group__SceUdcdKernel.html#ga3bb03a0f1444bc8c954ffa63734da573</field>
+    <field name="keywords">configuration_hi SceUdcdDriver::configuration_hi SceUdcdDriver</field>
+    <field name="text">Pointer to hi-speed device configuration</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::descriptor</field>
+    <field name="url">group__SceUdcdKernel.html#gaacbaf5a3eac228cec2a5c5e73532187c</field>
+    <field name="keywords">descriptor SceUdcdDriver::descriptor SceUdcdDriver</field>
+    <field name="text">Pointer to full-speed device descriptor</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::configuration</field>
+    <field name="url">group__SceUdcdKernel.html#gaed8c9905c38b528ae20274efbc591ad0</field>
+    <field name="keywords">configuration SceUdcdDriver::configuration SceUdcdDriver</field>
+    <field name="text">Pointer to full-speed device configuration</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::stringDescriptorsUnk0</field>
+    <field name="url">group__SceUdcdKernel.html#gab5c60b0cfbdd2cf1e432ab9e67f3c97d</field>
+    <field name="keywords">stringDescriptorsUnk0 SceUdcdDriver::stringDescriptorsUnk0 SceUdcdDriver</field>
+    <field name="text">Unknown string descriptors</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::stringDescriptorsUnk1</field>
+    <field name="url">group__SceUdcdKernel.html#ga409c2308f8a874c6b2b7603fc80dbeb1</field>
+    <field name="keywords">stringDescriptorsUnk1 SceUdcdDriver::stringDescriptorsUnk1 SceUdcdDriver</field>
+    <field name="text">Default String descriptor</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::stringDescriptorsUnk2</field>
+    <field name="url">group__SceUdcdKernel.html#ga1e9c64b0f99f1911ac96c95296bf61de</field>
+    <field name="keywords">stringDescriptorsUnk2 SceUdcdDriver::stringDescriptorsUnk2 SceUdcdDriver</field>
+    <field name="text">String descriptors unknown</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::processRequest</field>
+    <field name="args">)(int recipient, int arg, SceUdcdEP0DeviceRequest *req)</field>
+    <field name="url">group__SceUdcdKernel.html#ga48d81ce11f42c4d87b6bc37b6d2e126e</field>
+    <field name="keywords">processRequest SceUdcdDriver::processRequest SceUdcdDriver</field>
+    <field name="text">Received a control request</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::changeSetting</field>
+    <field name="args">)(int interfaceNumber, int alternateSetting)</field>
+    <field name="url">group__SceUdcdKernel.html#gad3450eba4be59538d3b7e101c6d9f1c9</field>
+    <field name="keywords">changeSetting SceUdcdDriver::changeSetting SceUdcdDriver</field>
+    <field name="text">Change alternate setting</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::attach</field>
+    <field name="args">)(int usb_version)</field>
+    <field name="url">group__SceUdcdKernel.html#gae9ceff5d0b221ba4036eb695d59f3e79</field>
+    <field name="keywords">attach SceUdcdDriver::attach SceUdcdDriver</field>
+    <field name="text">Configuration set attach function</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::detach</field>
+    <field name="args">)(void)</field>
+    <field name="url">group__SceUdcdKernel.html#ga90a6a32605c36e809189c9d8cbaa402c</field>
+    <field name="keywords">detach SceUdcdDriver::detach SceUdcdDriver</field>
+    <field name="text">Configuration unset detach function</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::configure</field>
+    <field name="args">)(int usb_version, int desc_count, SceUdcdInterfaceSettings *settings)</field>
+    <field name="url">group__SceUdcdKernel.html#gab24043fc5ede8493c745f0426fb35594</field>
+    <field name="keywords">configure SceUdcdDriver::configure SceUdcdDriver</field>
+    <field name="text">Configure the device</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::start</field>
+    <field name="args">)(int size, void *args)</field>
+    <field name="url">group__SceUdcdKernel.html#ga2ae78272f8ed21aa2720f7ac69fbb8ac</field>
+    <field name="keywords">start SceUdcdDriver::start SceUdcdDriver</field>
+    <field name="text">Function called when the driver is started</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::stop</field>
+    <field name="args">)(int size, void *args)</field>
+    <field name="url">group__SceUdcdKernel.html#ga6d199816220b2584a6ee9fc1334bdea5</field>
+    <field name="keywords">stop SceUdcdDriver::stop SceUdcdDriver</field>
+    <field name="text">Function called when the driver is stopped</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::unk1</field>
+    <field name="url">group__SceUdcdKernel.html#ga91b4953df89232409ac401cae411141f</field>
+    <field name="keywords">unk1 SceUdcdDriver::unk1 SceUdcdDriver</field>
+    <field name="text">Unknown data</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::unk2</field>
+    <field name="url">group__SceUdcdKernel.html#ga621a7dbbc7afeba610977472c0578d83</field>
+    <field name="keywords">unk2 SceUdcdDriver::unk2 SceUdcdDriver</field>
+    <field name="text">Unknown data</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceUdcdDriver::link</field>
+    <field name="url">group__SceUdcdKernel.html#ga250a8a0a5361ad504972d2e85318d222</field>
+    <field name="keywords">link SceUdcdDriver::link SceUdcdDriver</field>
+    <field name="text">Link to next USB driver in the chain set to NULL</field>
   </doc>
   <doc>
     <field name="type">struct</field>

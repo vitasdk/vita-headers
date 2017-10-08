@@ -75,44 +75,62 @@ $(document).ready(function(){initNavTree('structSceUdcdDeviceRequest.html','');}
 <div class="title">SceUdcdDeviceRequest Struct Reference<div class="ingroups"><a class="el" href="group__SerialCommunication.html">Serial Communication</a> &raquo; <a class="el" href="group__SceUdcd.html">USB Device Controller Driver Library</a> &raquo; <a class="el" href="group__SceUdcdKernel.html">Kernel</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>USB device request.  
+ <a href="structSceUdcdDeviceRequest.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ern_2udcd_8h_source.html">udcd.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ga5edb1ba86159a0555016ad5f7c3d1a4b"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>endpoint</b></td></tr>
+<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga5edb1ba86159a0555016ad5f7c3d1a4b">endpoint</a></td></tr>
+<tr class="memdesc:ga5edb1ba86159a0555016ad5f7c3d1a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the endpoint to queue request on. <br /></td></tr>
 <tr class="separator:ga5edb1ba86159a0555016ad5f7c3d1a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac54ebd1b5b864a72aeece506d22b3f62"><td class="memItemLeft" align="right" valign="top">
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac54ebd1b5b864a72aeece506d22b3f62">data</a></td></tr>
+<tr class="memdesc:gac54ebd1b5b864a72aeece506d22b3f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the data buffer to use in the request. <br /></td></tr>
 <tr class="separator:gac54ebd1b5b864a72aeece506d22b3f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac838f4e33057d57d3552cbc4a70fcb64"><td class="memItemLeft" align="right" valign="top">
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>unk</b></td></tr>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac838f4e33057d57d3552cbc4a70fcb64">unk</a></td></tr>
+<tr class="memdesc:gac838f4e33057d57d3552cbc4a70fcb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unknown data. <br /></td></tr>
 <tr class="separator:gac838f4e33057d57d3552cbc4a70fcb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbb03350a5b807c3d215a1c87bf171c1"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafbb03350a5b807c3d215a1c87bf171c1">size</a></td></tr>
+<tr class="memdesc:gafbb03350a5b807c3d215a1c87bf171c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the data buffer. <br /></td></tr>
 <tr class="separator:gafbb03350a5b807c3d215a1c87bf171c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga028b21ac213b591d617bf1eae866d8f0"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>isControlRequest</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga028b21ac213b591d617bf1eae866d8f0">isControlRequest</a></td></tr>
+<tr class="memdesc:ga028b21ac213b591d617bf1eae866d8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a control request? <br /></td></tr>
 <tr class="separator:ga028b21ac213b591d617bf1eae866d8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c2e309e930ae7b8dc881316082fe5bb"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>onComplete</b> )(struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga1c2e309e930ae7b8dc881316082fe5bb">onComplete</a> )(struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
+<tr class="memdesc:ga1c2e309e930ae7b8dc881316082fe5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the function to call on completion. <br /></td></tr>
 <tr class="separator:ga1c2e309e930ae7b8dc881316082fe5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2316c68da17af1cb72346c185f2b599d"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>transmitted</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga2316c68da17af1cb72346c185f2b599d">transmitted</a></td></tr>
+<tr class="memdesc:ga2316c68da17af1cb72346c185f2b599d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of transmitted bytes. <br /></td></tr>
 <tr class="separator:ga2316c68da17af1cb72346c185f2b599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0de65e6ff443cf05aa85451b8da64e05"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>returnCode</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga0de65e6ff443cf05aa85451b8da64e05">returnCode</a></td></tr>
+<tr class="memdesc:ga0de65e6ff443cf05aa85451b8da64e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return code of the request (See ::SceUdcdRetcode) <br /></td></tr>
 <tr class="separator:ga0de65e6ff443cf05aa85451b8da64e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga895468ea4a596c8009448587194e3c59"><td class="memItemLeft" align="right" valign="top">
-struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+struct <a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga895468ea4a596c8009448587194e3c59">next</a></td></tr>
+<tr class="memdesc:ga895468ea4a596c8009448587194e3c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link pointer to next request used by the driver, set it to NULL. <br /></td></tr>
 <tr class="separator:ga895468ea4a596c8009448587194e3c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga74b97e7bb37209afe215c9293494dee0"><td class="memItemLeft" align="right" valign="top">
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>unused</b></td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga74b97e7bb37209afe215c9293494dee0">unused</a></td></tr>
+<tr class="memdesc:ga74b97e7bb37209afe215c9293494dee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unused value (maybe an argument) <br /></td></tr>
 <tr class="separator:ga74b97e7bb37209afe215c9293494dee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e598a134cc9c098fd013231b62b69bd"><td class="memItemLeft" align="right" valign="top">
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>physicalAddress</b></td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga2e598a134cc9c098fd013231b62b69bd">physicalAddress</a></td></tr>
+<tr class="memdesc:ga2e598a134cc9c098fd013231b62b69bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical address. <br /></td></tr>
 <tr class="separator:ga2e598a134cc9c098fd013231b62b69bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>USB device request. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/psp2kern/<a class="el" href="ern_2udcd_8h_source.html">udcd.h</a></li>
 </ul>
 </div><!-- contents -->

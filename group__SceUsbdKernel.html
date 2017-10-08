@@ -70,8 +70,7 @@ $(document).ready(function(){initNavTree('group__SceUsbdKernel.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__SerialCommunication.html">Serial Communication</a> &raquo; <a class="el" href="group__SceUsbd.html">USB Driver Library</a></div></div>  </div>
 </div><!--header-->
@@ -108,48 +107,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdControlTransfe
 <tr class="memitem:ga7c99704db8909498914c04b778bdb7b7"><td class="memItemLeft" align="right" valign="top"><a id="ga7c99704db8909498914c04b778bdb7b7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdInterruptTransfer</b> (int endpoint_id, unsigned char *buffer, unsigned int length, int(*cb)(int, int, int), void *user_data)</td></tr>
 <tr class="separator:ga7c99704db8909498914c04b778bdb7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gab84a433d46249a92fa55bca9f5d22b05"><td class="memItemLeft" align="right" valign="top"><a id="gab84a433d46249a92fa55bca9f5d22b05"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_ACCESS</b>&#160;&#160;&#160;0x80240003</td></tr>
-<tr class="separator:gab84a433d46249a92fa55bca9f5d22b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f59ab49fc67b2c4a7a04ceda12fc23d"><td class="memItemLeft" align="right" valign="top"><a id="ga2f59ab49fc67b2c4a7a04ceda12fc23d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_BUSY</b>&#160;&#160;&#160;0x80240006</td></tr>
-<tr class="separator:ga2f59ab49fc67b2c4a7a04ceda12fc23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4361bb1ba4ba37f15dde9265bcc001cb"><td class="memItemLeft" align="right" valign="top"><a id="ga4361bb1ba4ba37f15dde9265bcc001cb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_FATAL</b>&#160;&#160;&#160;0x802400ff</td></tr>
-<tr class="separator:ga4361bb1ba4ba37f15dde9265bcc001cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ea1ae49ca2ff43ba65dc2ab1f9ce6b9"><td class="memItemLeft" align="right" valign="top"><a id="ga3ea1ae49ca2ff43ba65dc2ab1f9ce6b9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_INTERRUPTED</b>&#160;&#160;&#160;0x8024000a</td></tr>
-<tr class="separator:ga3ea1ae49ca2ff43ba65dc2ab1f9ce6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga367aef289495d1a77a2df00b32b17b0a"><td class="memItemLeft" align="right" valign="top"><a id="ga367aef289495d1a77a2df00b32b17b0a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_INVALID_ARG</b>&#160;&#160;&#160;0x80240002</td></tr>
-<tr class="separator:ga367aef289495d1a77a2df00b32b17b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64a4cd602fbc9c94010d686763f5e323"><td class="memItemLeft" align="right" valign="top"><a id="ga64a4cd602fbc9c94010d686763f5e323"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_IO</b>&#160;&#160;&#160;0x80240001</td></tr>
-<tr class="separator:ga64a4cd602fbc9c94010d686763f5e323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea5d96bd6ea1413cee023b08d66a0927"><td class="memItemLeft" align="right" valign="top"><a id="gaea5d96bd6ea1413cee023b08d66a0927"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_NO_DEVICE</b>&#160;&#160;&#160;0x80240004</td></tr>
-<tr class="separator:gaea5d96bd6ea1413cee023b08d66a0927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8dd3a80211568be27421bda9625081c3"><td class="memItemLeft" align="right" valign="top"><a id="ga8dd3a80211568be27421bda9625081c3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_NO_MEM</b>&#160;&#160;&#160;0x8024000b</td></tr>
-<tr class="separator:ga8dd3a80211568be27421bda9625081c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b1dba575d3bdac683b17fff9aa1f5ed"><td class="memItemLeft" align="right" valign="top"><a id="ga6b1dba575d3bdac683b17fff9aa1f5ed"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_NOT_FOUND</b>&#160;&#160;&#160;0x80240005</td></tr>
-<tr class="separator:ga6b1dba575d3bdac683b17fff9aa1f5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0129e54c77072fc52dc83eb9a7c41df"><td class="memItemLeft" align="right" valign="top"><a id="gad0129e54c77072fc52dc83eb9a7c41df"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_NOT_SUPPORTED</b>&#160;&#160;&#160;0x8024000c</td></tr>
-<tr class="separator:gad0129e54c77072fc52dc83eb9a7c41df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga776f5a7507e0a270dbe4cbad7ff6d965"><td class="memItemLeft" align="right" valign="top"><a id="ga776f5a7507e0a270dbe4cbad7ff6d965"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_OVERFLOW</b>&#160;&#160;&#160;0x80240008</td></tr>
-<tr class="separator:ga776f5a7507e0a270dbe4cbad7ff6d965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga047aac8b142e60e6f20267e0e67b7966"><td class="memItemLeft" align="right" valign="top"><a id="ga047aac8b142e60e6f20267e0e67b7966"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_PIPE</b>&#160;&#160;&#160;0x80240009</td></tr>
-<tr class="separator:ga047aac8b142e60e6f20267e0e67b7966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff1eeb02ac60b1fa7e07920fd36dbcde"><td class="memItemLeft" align="right" valign="top"><a id="gaff1eeb02ac60b1fa7e07920fd36dbcde"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_USBD_ERROR_TIMEOUT</b>&#160;&#160;&#160;0x80240007</td></tr>
-<tr class="separator:gaff1eeb02ac60b1fa7e07920fd36dbcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceUsbdDeviceDescriptor" id="structSceUsbdDeviceDescriptor"></a>
@@ -301,7 +258,7 @@ bmAttributes</td>
 <td class="fieldname">
 extra</td>
 <td class="fielddoc">
-</td></tr>
+Extra descriptors. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga9ebd62dcacd0be9278906365d763822e"></a>int</td>
 <td class="fieldname">

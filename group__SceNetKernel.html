@@ -71,7 +71,6 @@ $(document).ready(function(){initNavTree('group__SceNetKernel.html','');});
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__Net.html">Network</a> &raquo; <a class="el" href="group__SceNet.html">Socket Library</a></div></div>  </div>
@@ -86,7 +85,7 @@ $(document).ready(function(){initNavTree('group__SceNetKernel.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga93a90e964603816ec07e5257903b81bc"><td class="memItemLeft" align="right" valign="top"><a id="ga93a90e964603816ec07e5257903b81bc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocket</b> (const char *name, int domain, int type, int protocol)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocket</b> (const char *name, int domain, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int protocol)</td></tr>
 <tr class="separator:ga93a90e964603816ec07e5257903b81bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb08399e5f29bcc5be778cb934ff99d2"><td class="memItemLeft" align="right" valign="top"><a id="gaeb08399e5f29bcc5be778cb934ff99d2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetAccept</b> (int s, <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int *addrlen)</td></tr>
@@ -110,20 +109,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSetsockopt</b> 
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocketClose</b> (int s)</td></tr>
 <tr class="separator:ga5a3e341e56000623f9e12f2e97b3bd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga8d3b116dc09c949f38c2863cfef16c8e"><td class="memItemLeft" align="right" valign="top"><a id="ga8d3b116dc09c949f38c2863cfef16c8e"></a>
-typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceNetResolverFunctionAllocate</b>) (unsigned int size, int rid, const char *name, void *user)</td></tr>
-<tr class="separator:ga8d3b116dc09c949f38c2863cfef16c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff1dc586af8124462ebe48ab445c03b3"><td class="memItemLeft" align="right" valign="top"><a id="gaff1dc586af8124462ebe48ab445c03b3"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceNetResolverFunctionFree</b>) (void *ptr, int rid, const char *name, void *user)</td></tr>
-<tr class="separator:gaff1dc586af8124462ebe48ab445c03b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga1c1181dad159246cabc55c6b18ee5e65"><td class="memItemLeft" align="right" valign="top"><a id="ga1c1181dad159246cabc55c6b18ee5e65"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_EPOLL_ABORT_FLAG_PRESERVATION</b>&#160;&#160;&#160;0x00000001</td></tr>
-<tr class="separator:ga1c1181dad159246cabc55c6b18ee5e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc4678d01a7ddc98687f49f3d4a0138d"><td class="memItemLeft" align="right" valign="top"><a id="gacc4678d01a7ddc98687f49f3d4a0138d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_DEFAULT_MULTICAST_TTL</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:gacc4678d01a7ddc98687f49f3d4a0138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,28 +130,28 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_MF</b>&#160;&#160;&#160;0x2000</td></tr>
 <tr class="separator:gaf386358fe3a989f341e75be11f8ef199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace459fdb888372df092340b48e4cc9a3"><td class="memItemLeft" align="right" valign="top"><a id="gace459fdb888372df092340b48e4cc9a3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_OFFMASK</b>&#160;&#160;&#160;0x1fff</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IP_OFFMASK</b>&#160;&#160;&#160;0x1FFF</td></tr>
 <tr class="separator:gace459fdb888372df092340b48e4cc9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0b42fa96dcb2e5caa88b96c46ed9a0e"><td class="memItemLeft" align="right" valign="top"><a id="gab0b42fa96dcb2e5caa88b96c46ed9a0e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_ANY</b>&#160;&#160;&#160;0x00000000</td></tr>
 <tr class="separator:gab0b42fa96dcb2e5caa88b96c46ed9a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga122f2afc434c02334e38bee69fff868f"><td class="memItemLeft" align="right" valign="top"><a id="ga122f2afc434c02334e38bee69fff868f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_LOOPBACK</b>&#160;&#160;&#160;0x7f000001</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_LOOPBACK</b>&#160;&#160;&#160;0x7F000001</td></tr>
 <tr class="separator:ga122f2afc434c02334e38bee69fff868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c5a6a074f3ac1a3a6242e2ea0ffc611"><td class="memItemLeft" align="right" valign="top"><a id="ga7c5a6a074f3ac1a3a6242e2ea0ffc611"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_BROADCAST</b>&#160;&#160;&#160;0xffffffff</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_BROADCAST</b>&#160;&#160;&#160;0xFFFFFFFF</td></tr>
 <tr class="separator:ga7c5a6a074f3ac1a3a6242e2ea0ffc611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c91e958572e019c0a09da0dcac613c8"><td class="memItemLeft" align="right" valign="top"><a id="ga5c91e958572e019c0a09da0dcac613c8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_UNSPEC_GROUP</b>&#160;&#160;&#160;0xe0000000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_UNSPEC_GROUP</b>&#160;&#160;&#160;0xE0000000</td></tr>
 <tr class="separator:ga5c91e958572e019c0a09da0dcac613c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad34f0f561972d7caa6675413c7d3c61"><td class="memItemLeft" align="right" valign="top"><a id="gaad34f0f561972d7caa6675413c7d3c61"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_AUTOIP</b>&#160;&#160;&#160;0xa9fe0000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_INADDR_AUTOIP</b>&#160;&#160;&#160;0xA9FE0000</td></tr>
 <tr class="separator:gaad34f0f561972d7caa6675413c7d3c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga244d355d1a3ab492127345e682df8ef9"><td class="memItemLeft" align="right" valign="top"><a id="ga244d355d1a3ab492127345e682df8ef9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_CLASSD_NET</b>&#160;&#160;&#160;0xf0000000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_CLASSD_NET</b>&#160;&#160;&#160;0xF0000000</td></tr>
 <tr class="separator:ga244d355d1a3ab492127345e682df8ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga562b0dd213897560e76af148026908f5"><td class="memItemLeft" align="right" valign="top"><a id="ga562b0dd213897560e76af148026908f5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_AUTOIP_NET</b>&#160;&#160;&#160;0xffff0000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_IN_AUTOIP_NET</b>&#160;&#160;&#160;0xFFFF0000</td></tr>
 <tr class="separator:ga562b0dd213897560e76af148026908f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedfdc3b695a87341e75104aaee1d4467"><td class="memItemLeft" align="right" valign="top"><a id="gaedfdc3b695a87341e75104aaee1d4467"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_ADHOC_PORT</b>&#160;&#160;&#160;3658</td></tr>
@@ -175,12 +162,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga5676fe21a495a55df7ee92b79bef7ccf"><td class="memItemLeft" align="right" valign="top"><a id="ga5676fe21a495a55df7ee92b79bef7ccf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_DEBUG_NAME_LEN_MAX</b>&#160;&#160;&#160;31</td></tr>
 <tr class="separator:ga5676fe21a495a55df7ee92b79bef7ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab082cf5a54b7ab21e09b2912f601eba9"><td class="memItemLeft" align="right" valign="top"><a id="gab082cf5a54b7ab21e09b2912f601eba9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_RESOLVER_PORT</b>&#160;&#160;&#160;53</td></tr>
-<tr class="separator:gab082cf5a54b7ab21e09b2912f601eba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a0f227806acd8e3f0127363d04a3240"><td class="memItemLeft" align="right" valign="top"><a id="ga5a0f227806acd8e3f0127363d04a3240"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_RESOLVER_HOSTNAME_LEN_MAX</b>&#160;&#160;&#160;255</td></tr>
-<tr class="separator:ga5a0f227806acd8e3f0127363d04a3240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5bd1591024878b9392ffc1e1ed309953"><td class="memItemLeft" align="right" valign="top"><a id="ga5bd1591024878b9392ffc1e1ed309953"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_NET_ID_SOCKET_MIN</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga5bd1591024878b9392ffc1e1ed309953"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,225 +310,6 @@ imr_multiaddr</td>
 
 </div>
 </div>
-<a name="structSceNetInitParam" id="structSceNetInitParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetInitParam">&sect;&nbsp;</a></span>SceNetInitParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetInitParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gac8e8f3f3424a144b586ba124ee4bf21c"></a>int</td>
-<td class="fieldname">
-flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga333a3e62cd51144d3135a6d6d7c406c5"></a>void *</td>
-<td class="fieldname">
-memory</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga40b926cc6025a8b503fe027e5d9d2ce1"></a>int</td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceNetEmulationData" id="structSceNetEmulationData"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetEmulationData">&sect;&nbsp;</a></span>SceNetEmulationData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetEmulationData</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga457a4468702eae180aee84f969617443"></a>unsigned int</td>
-<td class="fieldname">
-bps_limit</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabef928521ac987d8572846180044f7f3"></a>unsigned short int</td>
-<td class="fieldname">
-delay_jitter</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaf69fe9906d6efb8358c7d60ca55629e4"></a>unsigned short int</td>
-<td class="fieldname">
-delay_time</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga4b5ed5598b0c2e14482c7f9ea55c6a8b"></a>unsigned short int</td>
-<td class="fieldname">
-drop_duration</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gac2632ca5ecfb0dd4e7bfec81dbea54b6"></a>unsigned short int</td>
-<td class="fieldname">
-drop_rate</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga7cab1626a9b32dd56e62e322d6be9a8f"></a>unsigned short int</td>
-<td class="fieldname">
-duplication_rate</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga72fa6dad316ea7606fd726e5f120a057"></a>unsigned int</td>
-<td class="fieldname">
-game_policy_pattern</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabba03d3f7cb68efc5c58581a72511ee3"></a>unsigned short int</td>
-<td class="fieldname">
-lower_size_limit</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gac9214c2620691e61df8f134cfb4f8a23"></a>unsigned short int</td>
-<td class="fieldname">
-order_delay_time</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa5c2b47da1ea885253fdd20aae689750"></a>unsigned short int</td>
-<td class="fieldname">
-order_rate</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9696d151f6362f5a24f6faa8460164e7"></a>unsigned short int</td>
-<td class="fieldname">
-pass_duration</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabf6c5273f52b45d0c17c321b642af9b7"></a>unsigned short int</td>
-<td class="fieldname">
-policy_flags[64]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga8bde5771e64d7155dcd35ff4b4debd86"></a>unsigned char</td>
-<td class="fieldname">
-reserved[64]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga50cf2014059fe0be69a699aebd62610f"></a>unsigned int</td>
-<td class="fieldname">
-system_policy_pattern</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2e20fff065b06dcc13383a324ee8c202"></a>unsigned short int</td>
-<td class="fieldname">
-upper_size_limit</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceNetEmulationParam" id="structSceNetEmulationParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetEmulationParam">&sect;&nbsp;</a></span>SceNetEmulationParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetEmulationParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gad0d8ac0b8949b5da79e583257861cc9a"></a>unsigned short int</td>
-<td class="fieldname">
-current_version</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gadecd01fe7637327d075dc704eb9350f3"></a>unsigned int</td>
-<td class="fieldname">
-flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabc5a8073bcca0b72dbe7be5da9889c86"></a>unsigned short int</td>
-<td class="fieldname">
-option_number</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gafbd7beab9a1755eb377e4e2487c8647f"></a><a class="el" href="group__SceNetUser.html#structSceNetEmulationData">SceNetEmulationData</a></td>
-<td class="fieldname">
-recv</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5e588a8c1f750b04225a3bdea973e2de"></a>unsigned char</td>
-<td class="fieldname">
-reserved[44]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga915740cb5414ce0e6383848e8f3707a3"></a>unsigned int</td>
-<td class="fieldname">
-reserved1</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga8c043b0390224449e5f32ac196088d4b"></a>unsigned short int</td>
-<td class="fieldname">
-result</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga48d74eb3c14face8d2f8fccc81f68b58"></a>unsigned int</td>
-<td class="fieldname">
-seed</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga141e1581c0e294378c8ec1afd52ac34e"></a><a class="el" href="group__SceNetUser.html#structSceNetEmulationData">SceNetEmulationData</a></td>
-<td class="fieldname">
-send</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga7ee06aef40cec32164228c16146b474b"></a>unsigned short int</td>
-<td class="fieldname">
-version</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
 <a name="structSceNetEtherAddr" id="structSceNetEtherAddr"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceNetEtherAddr">&sect;&nbsp;</a></span>SceNetEtherAddr</h2>
 
@@ -588,181 +350,6 @@ data[6]</td>
 <a id="ga9688b9be19af456560676b966ddaa619"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
 <td class="fieldname">
 dns_addr[2]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceNetEpollDataExt" id="structSceNetEpollDataExt"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetEpollDataExt">&sect;&nbsp;</a></span>SceNetEpollDataExt</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetEpollDataExt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gae07886ce4c23f20cfc14fae1570c2df1"></a>int</td>
-<td class="fieldname">
-id</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2fd8027131db8e53955d986b5c97ff04"></a>unsigned int</td>
-<td class="fieldname">
-u32</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="unionSceNetEpollData" id="unionSceNetEpollData"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#unionSceNetEpollData">&sect;&nbsp;</a></span>SceNetEpollData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">union SceNetEpollData</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gad396b284064714a85847adbfaa351655"></a><a class="el" href="group__SceNetUser.html#structSceNetEpollDataExt">SceNetEpollDataExt</a></td>
-<td class="fieldname">
-ext</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gad6814b8ee2aec1741987c3f20ac5a02c"></a>int</td>
-<td class="fieldname">
-fd</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga1cba57f49dbe71e7e24c6b6faedbc04b"></a>void *</td>
-<td class="fieldname">
-ptr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaed2f41ad3cbb44b127bfdb505a01e443"></a>unsigned int</td>
-<td class="fieldname">
-u32</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaffc603a50d29de0cd3d5ade589ca1fd2"></a>unsigned long long int</td>
-<td class="fieldname">
-u64</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceNetEpollSystemData" id="structSceNetEpollSystemData"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetEpollSystemData">&sect;&nbsp;</a></span>SceNetEpollSystemData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetEpollSystemData</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga32a096e6a6e538698cc5c539a8727d63"></a>unsigned int</td>
-<td class="fieldname">
-system[4]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceNetEpollEvent" id="structSceNetEpollEvent"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetEpollEvent">&sect;&nbsp;</a></span>SceNetEpollEvent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetEpollEvent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga90f61fb083bb09e7b89206b65f5640ba"></a><a class="el" href="group__SceNetUser.html#unionSceNetEpollData">SceNetEpollData</a></td>
-<td class="fieldname">
-data</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga704c7772d186ada575428fa7410dd75b"></a>unsigned int</td>
-<td class="fieldname">
-events</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga87bf467e9da39612ebc156ad4355f92a"></a>unsigned int</td>
-<td class="fieldname">
-reserved</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabcecf978293bb82f60dca96c0a5d8969"></a><a class="el" href="group__SceNetUser.html#structSceNetEpollSystemData">SceNetEpollSystemData</a></td>
-<td class="fieldname">
-system</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceNetResolverParam" id="structSceNetResolverParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNetResolverParam">&sect;&nbsp;</a></span>SceNetResolverParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNetResolverParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gaa37cc77a689bba5a45347d0982a2c928"></a>SceNetResolverFunctionAllocate</td>
-<td class="fieldname">
-allocate</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga199dfca804e61011fe32479aded28a2d"></a>SceNetResolverFunctionFree</td>
-<td class="fieldname">
-free</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa1bacb5829ae633785abcc87fb751298"></a>void *</td>
-<td class="fieldname">
-user</td>
 <td class="fielddoc">
 </td></tr>
 </table>
