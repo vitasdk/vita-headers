@@ -16,7 +16,7 @@ extern "C" {
 
 typedef enum SceMsgDialogErrorCode {
 	//! Illegal parameter
-	SCE_MSG_DIALOG_ERROR_PARAM	= 0x80100a01
+	SCE_MSG_DIALOG_ERROR_PARAM	= 0x80100A01
 } SceMsgDialogErrorCode;
 
 //! Max length of a user message

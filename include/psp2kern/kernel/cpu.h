@@ -46,7 +46,7 @@ static inline void ksceKernelCpuSaveContext(int context[3]) {
 /**
  * @brief      Restore process context
  *
- * @param      context  The context, can be from `ksceKernelGetPidContext`
+ * @param      context  The context, can be from ::ksceKernelGetPidContext
  */
 static inline void ksceKernelCpuRestoreContext(int context[3]) {
   int cpsr;
@@ -211,7 +211,7 @@ int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, size_t len);
  *
  * @param[in]  addr   Mutex associated to the suspend-resume pair
  *
- * @return     The current state of the interrupt controller, to be used with ksceKernelCpuResumeIntr.
+ * @return     The current state of the interrupt controller, to be used with ::ksceKernelCpuResumeIntr.
  */
 int ksceKernelCpuSuspendIntr(int *addr);
 
@@ -219,7 +219,7 @@ int ksceKernelCpuSuspendIntr(int *addr);
  * @brief      Resume all interrupts (enables IRQs)
  *
  * @param[in]  addr   Mutex associated to the suspend-resume pair
- * @param[in]  prev_state   State obtained from ksceKernelCpuSuspendIntr
+ * @param[in]  prev_state   State obtained from ::ksceKernelCpuSuspendIntr.
  *
  * @return     The previous state of the interrupt controller.
  */

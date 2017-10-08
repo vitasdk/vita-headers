@@ -95,8 +95,7 @@ typedef struct SceKernelThreadRunStatus {
 } SceKernelThreadRunStatus;
 
 /* Sure there must be more than this, but haven't seen them */
-typedef enum SceThreadStatus
-{
+typedef enum SceThreadStatus {
   SCE_THREAD_RUNNING = 1,
   SCE_THREAD_READY   = 2,
   SCE_THREAD_WAITING = 4,
@@ -140,7 +139,7 @@ int ksceKernelDeleteThread(SceUID thid);
 /**
  * Start a created thread
  *
- * @param thid - Thread id from ksceKernelCreateThread
+ * @param thid - Thread id from ::ksceKernelCreateThread
  * @param arglen - Length of the data pointed to by argp, in bytes
  * @param argp - Pointer to the arguments.
  */
@@ -219,7 +218,7 @@ int ksceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
 /**
   * Change the threads current priority.
   *
-  * @param thid - The ID of the thread (from ksceKernelCreateThread or ksceKernelGetThreadId)
+  * @param thid - The ID of the thread (from ::ksceKernelCreateThread or ::ksceKernelGetThreadId)
   * @param priority - The new priority (the lower the number the higher the priority)
   *
   * @par Example:
@@ -377,7 +376,7 @@ int ksceKernelDeleteSema(SceUID semaid);
  * ksceKernelSignalSema(semaid, 1);
  * @endcode
  *
- * @param semaid - The sema id returned from ksceKernelCreateSema
+ * @param semaid - The sema id returned from ::ksceKernelCreateSema
  * @param signal - The amount to signal the sema (i.e. if 2 then increment the sema by 2)
  *
  * @return < 0 On error.
@@ -392,7 +391,7 @@ int ksceKernelSignalSema(SceUID semaid, int signal);
  * ksceKernelWaitSema(semaid, 1, 0);
  * @endcode
  *
- * @param semaid - The sema id returned from ksceKernelCreateSema
+ * @param semaid - The sema id returned from ::ksceKernelCreateSema
  * @param signal - The value to wait for (i.e. if 1 then wait till reaches a signal state of 1)
  * @param timeout - Timeout in microseconds (assumed).
  *
@@ -408,7 +407,7 @@ int ksceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout);
  * ksceKernelWaitSemaCB(semaid, 1, 0);
  * @endcode
  *
- * @param semaid - The sema id returned from ksceKernelCreateSema
+ * @param semaid - The sema id returned from ::ksceKernelCreateSema
  * @param signal - The value to wait for (i.e. if 1 then wait till reaches a signal state of 1)
  * @param timeout - Timeout in microseconds (assumed).
  *
@@ -429,7 +428,7 @@ int ksceKernelPollSema(SceUID semaid, int signal);
 /**
  * Cancels a semaphore
  *
- * @param semaid - The sema id returned from ksceKernelCreateSema
+ * @param semaid - The sema id returned from ::ksceKernelCreateSema
  * @param setCount - The new lock count of the semaphore
  * @param numWaitThreads - Number of threads waiting for the semaphore
  * @return < 0 On error.
@@ -498,7 +497,7 @@ SceUID ksceKernelCreateMutex(const char *name, SceUInt attr, int initCount, SceK
 /**
  * Destroy a mutex
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @return Returns the value 0 if it's successful, otherwise -1
  */
 int ksceKernelDeleteMutex(SceUID mutexid);
@@ -514,7 +513,7 @@ int ksceKernelOpenMutex(const char *name);
 /**
  * Close a mutex
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @return Returns the value 0 if it's successful, otherwise -1
  */
 int ksceKernelCloseMutex(SceUID mutexid);
@@ -522,7 +521,7 @@ int ksceKernelCloseMutex(SceUID mutexid);
 /**
  * Lock a mutex
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @param lockCount - The value to increment to the lock count of the mutex
  * @param timeout - Timeout in microseconds (assumed)
  * @return < 0 On error.
@@ -532,7 +531,7 @@ int ksceKernelLockMutex(SceUID mutexid, int lockCount, unsigned int *timeout);
 /**
  * Lock a mutex and handle callbacks if necessary.
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @param lockCount - The value to increment to the lock count of the mutex
  * @param timeout - Timeout in microseconds (assumed)
  * @return < 0 On error.
@@ -542,7 +541,7 @@ int ksceKernelLockMutexCB(SceUID mutexid, int lockCount, unsigned int *timeout);
 /**
  * Try to lock a mutex (non-blocking)
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @param lockCount - The value to increment to the lock count of the mutex
  * @return < 0 On error.
  */
@@ -551,7 +550,7 @@ int ksceKernelTryLockMutex(SceUID mutexid, int lockCount);
 /**
  * Try to unlock a mutex (non-blocking)
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @param unlockCount - The value to decrement to the lock count of the mutex
  * @return < 0 On error.
  */
@@ -560,7 +559,7 @@ int ksceKernelUnlockMutex(SceUID mutexid, int unlockCount);
 /**
  * Cancels a mutex
  *
- * @param mutexid - The mutex id returned from ksceKernelCreateMutex
+ * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
  * @param newCount - The new lock count of the mutex
  * @param numWaitThreads - Number of threads waiting for the mutex
  * @return < 0 On error.
@@ -635,7 +634,7 @@ SceUID ksceKernelCreateEventFlag(const char *name, int attr, int bits, SceKernel
 /**
   * Set an event flag bit pattern.
   *
-  * @param evid - The event id returned by ksceKernelCreateEventFlag.
+  * @param evid - The event id returned by ::ksceKernelCreateEventFlag.
   * @param bits - The bit pattern to set.
   *
   * @return < 0 On error
@@ -655,7 +654,7 @@ int ksceKernelClearEventFlag(SceUID evid, unsigned int bits);
 /**
   * Poll an event flag for a given bit pattern.
   *
-  * @param evid - The event id returned by ksceKernelCreateEventFlag.
+  * @param evid - The event id returned by ::ksceKernelCreateEventFlag.
   * @param bits - The bit pattern to poll for.
   * @param wait - Wait type, one or more of ::SceEventFlagWaitTypes or'ed together
   * @param outBits - The bit pattern that was matched.
@@ -666,7 +665,7 @@ int ksceKernelPollEventFlag(int evid, unsigned int bits, unsigned int wait, unsi
 /**
   * Wait for an event flag for a given bit pattern.
   *
-  * @param evid - The event id returned by ksceKernelCreateEventFlag.
+  * @param evid - The event id returned by ::ksceKernelCreateEventFlag.
   * @param bits - The bit pattern to poll for.
   * @param wait - Wait type, one or more of ::SceEventFlagWaitTypes or'ed together
   * @param outBits - The bit pattern that was matched.
@@ -678,7 +677,7 @@ int ksceKernelWaitEventFlag(int evid, unsigned int bits, unsigned int wait, unsi
 /**
   * Wait for an event flag for a given bit pattern with callback.
   *
-  * @param evid - The event id returned by ksceKernelCreateEventFlag.
+  * @param evid - The event id returned by ::ksceKernelCreateEventFlag.
   * @param bits - The bit pattern to poll for.
   * @param wait - Wait type, one or more of ::SceEventFlagWaitTypes or'ed together
   * @param outBits - The bit pattern that was matched.
@@ -690,7 +689,7 @@ int ksceKernelWaitEventFlagCB(int evid, unsigned int bits, unsigned int wait, un
 /**
   * Delete an event flag
   *
-  * @param evid - The event id returned by ksceKernelCreateEventFlag.
+  * @param evid - The event id returned by ::ksceKernelCreateEventFlag.
   *
   * @return < 0 On error
   */

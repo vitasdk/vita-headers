@@ -13,19 +13,21 @@
 extern "C" {
 #endif
 
-#define SCE_USBD_ERROR_ACCESS 0x80240003
-#define SCE_USBD_ERROR_BUSY 0x80240006
-#define SCE_USBD_ERROR_FATAL 0x802400ff
-#define SCE_USBD_ERROR_INTERRUPTED 0x8024000a
-#define SCE_USBD_ERROR_INVALID_ARG 0x80240002
-#define SCE_USBD_ERROR_IO 0x80240001
-#define SCE_USBD_ERROR_NO_DEVICE 0x80240004
-#define SCE_USBD_ERROR_NO_MEM 0x8024000b
-#define SCE_USBD_ERROR_NOT_FOUND 0x80240005
-#define SCE_USBD_ERROR_NOT_SUPPORTED 0x8024000c
-#define SCE_USBD_ERROR_OVERFLOW 0x80240008
-#define SCE_USBD_ERROR_PIPE 0x80240009
-#define SCE_USBD_ERROR_TIMEOUT 0x80240007
+typedef enum SceUsbdErrorCode {
+	SCE_USBD_ERROR_IO             = 0x80240001
+	SCE_USBD_ERROR_INVALID_ARG    = 0x80240002
+	SCE_USBD_ERROR_ACCESS         = 0x80240003
+	SCE_USBD_ERROR_NO_DEVICE      = 0x80240004
+	SCE_USBD_ERROR_NOT_FOUND      = 0x80240005
+	SCE_USBD_ERROR_BUSY           = 0x80240006
+	SCE_USBD_ERROR_TIMEOUT        = 0x80240007
+	SCE_USBD_ERROR_OVERFLOW       = 0x80240008
+	SCE_USBD_ERROR_PIPE           = 0x80240009
+	SCE_USBD_ERROR_INTERRUPTED    = 0x8024000A
+	SCE_USBD_ERROR_NO_MEM         = 0x8024000B
+	SCE_USBD_ERROR_NOT_SUPPORTED  = 0x8024000C
+	SCE_USBD_ERROR_FATAL          = 0x802400FF
+} SceUsbdErrorCode;
 
 typedef struct SceUsbdDeviceDescriptor {
 	unsigned char  bLength;
@@ -42,7 +44,7 @@ typedef struct SceUsbdDeviceDescriptor {
 	unsigned char  iProduct;
 	unsigned char  iSerialNumber;
 	unsigned char  bNumConfigurations;
-} SceUsbdDeviceDescriptor; /* size = 20 */
+} SceUsbdDeviceDescriptor;
 
 typedef struct SceUsbdEndpointDescriptor {
 	unsigned char  bLength;
@@ -51,22 +53,21 @@ typedef struct SceUsbdEndpointDescriptor {
 	unsigned char  bmAttributes;
 	unsigned short wMaxPacketSize;
 	unsigned char  bInterval;
-
-	unsigned char *extra;   /* Extra descriptors */
+	unsigned char *extra;             //!< Extra descriptors
 	int extraLength;
-} SceUsbdEndpointDescriptor; /* size 16 */
+} SceUsbdEndpointDescriptor;
 
 typedef struct SceUsbdDeviceAddress {
-	unsigned int unk0;
+	unsigned int   unk0;
 	unsigned short unk1;
-} SceUsbdDeviceAddress; /* size = 0x6 */
+} SceUsbdDeviceAddress;
 
 typedef struct SceUsbdDriver {
 	const char *name;
 	int (*probe)(int device_id);
 	int (*attach)(int device_id);
 	int (*detach)(int device_id);
-} SceUsbdDriver; /* size = 0x10 */
+} SceUsbdDriver;
 
 typedef struct SceUsbdControlTransferRequest {
 	unsigned char bmRequestType;
@@ -74,7 +75,7 @@ typedef struct SceUsbdControlTransferRequest {
 	unsigned short wValue;
 	unsigned short wIndex;
 	unsigned short wLength;
-} SceUsbdControlTransferRequest; /* size = 0x08 */
+} SceUsbdControlTransferRequest;
 
 int ksceUsbdRegisterDriver(const SceUsbdDriver *driver);
 int ksceUsbdRegisterCompositeLdd(const SceUsbdDriver *driver);

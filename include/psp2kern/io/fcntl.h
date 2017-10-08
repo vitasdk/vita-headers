@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-/* Note: Not all of these ksceIoOpen() flags are not compatible with the
+/** Note: Not all of these ::ksceIoOpen flags are not compatible with the
    open() flags found in sys/unistd.h. */
 typedef enum SceIoMode {
 	SCE_O_RDONLY    = 0x0001,                         //!< Read-only
