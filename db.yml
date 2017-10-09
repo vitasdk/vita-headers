@@ -472,7 +472,7 @@ modules:
         kernel: false
         nid: 0x438BB957
   SceAudioIn:
-    nid: 0xA
+    nid: 0x3DFB6F18
     libraries:
       SceAudioIn:
         functions:
@@ -975,8 +975,8 @@ modules:
           sceDTraceRemoveHelperDof: 0xF2C9207A
         kernel: false
         nid: 0x69699F30
-  SceDbg:
-    nid: 0x25
+  SceLibDbg:
+    nid: 0x0E0ABB49
     libraries:
       SceDbg:
         functions:
@@ -1282,8 +1282,8 @@ modules:
           sceFiosVprintf: 0x5BA4BD6D
         kernel: false
         nid: 0x3AD4D630
-  SceGameUpdate:
-    nid: 0x36
+  SceLibGameUpdate:
+    nid: 0x0207A645
     libraries:
       SceGameUpdate:
         functions:
@@ -1634,8 +1634,8 @@ modules:
           sceHmacSha512Digest: 0x8FDFCE5B
         kernel: false
         nid: 0x65D4F896
-  SceHttp:
-    nid: 0x40
+  SceLibHttp:
+    nid: 0xB015B405
     libraries:
       SceHttp:
         functions:
@@ -3222,8 +3222,8 @@ modules:
           wscanf: 0xADC32204
         kernel: false
         nid: 0xBE43BB07
-  SceLiveArea:
-    nid: 0x57
+  SceLiveAreaUtil:
+    nid: 0x6D180EF6
     libraries:
       SceLiveAreaUtil:
         functions:
@@ -3237,8 +3237,8 @@ modules:
           sceLiveAreaUpdateFrameSync: 0xCFCEDE95
         kernel: false
         nid: 0x5303CB07
-  SceLocation:
-    nid: 0x59
+  SceLibLocation:
+    nid: 0x6015DE69
     libraries:
       SceLibLocation:
         functions:
@@ -3266,8 +3266,8 @@ modules:
           sceLocationTerm: 0x1E80199A
         kernel: false
         nid: 0x924D86D7
-  SceLocationExtension:
-    nid: 0x5B
+  SceLibLocationExtension:
+    nid: 0xB1CA6E7C
     libraries:
       SceLibLocationExtension:
         functions:
@@ -3505,8 +3505,8 @@ modules:
           sceNetAdhocMatchingTerm: 0x6E195CD1
         kernel: false
         nid: 0x00962A4A
-  SceNetCtl:
-    nid: 0x6D
+  SceLibNetCtl:
+    nid: 0xFA4A5948
     libraries:
       SceNetCtl:
         functions:
@@ -3865,8 +3865,8 @@ modules:
           sceNpMessageTerm: 0x380230A1
         kernel: false
         nid: 0x8134120B
-  SceNpParty:
-    nid: 0x7F
+  SceNpPartyGameUtil:
+    nid: 0x51D3A65A
     libraries:
       SceNpPartyGameUtil:
         functions:
@@ -4123,8 +4123,8 @@ modules:
           sceRazorCpuSync: 0x4F1385E3
         kernel: false
         nid: 0x447F047D
-  ScePgf:
-    nid: 0x8F
+  SceLibPgf:
+    nid: 0xB40B26E9
     libraries:
       ScePgf:
         functions:
@@ -4262,8 +4262,8 @@ modules:
         nid: 0x282C1323
         functions:
           ksceLedSetMode: 0xEA24BE03
-  ScePspnetAdhoc:
-    nid: 0x95
+  SceLibPspnetAdhoc:
+    nid: 0x321EF128
     libraries:
       ScePspnetAdhoc:
         functions:
@@ -4297,8 +4297,8 @@ modules:
           sceNetAdhocctlTerm: 0x97A80065
         kernel: false
         nid: 0x19C6AFDC
-  ScePvf:
-    nid: 0x97
+  SceLibPvf:
+    nid: 0x820F86E8
     libraries:
       ScePvf:
         functions:
@@ -4556,8 +4556,8 @@ modules:
           sceRtcTickAddYears: 0xDF6C3E1B
         kernel: false
         nid: 0x6704D3C6
-  SceRudp:
-    nid: 0xA4
+  SceLibRudp:
+    nid: 0x0B6F819A
     libraries:
       SceLibRudp:
         functions:
@@ -4593,8 +4593,8 @@ modules:
           sceRudpWrite: 0x69C9DE15
         kernel: false
         nid: 0x32910D11
-  SceSas:
-    nid: 0xA6
+  SceSasUser:
+    nid: 0xBDF706EB
     libraries:
       SceSas:
         functions:
@@ -5101,8 +5101,8 @@ modules:
           sqlite3_vmprintf: 0xC6372184
         kernel: false
         nid: 0x67F02E1D
-  SceSsl:
-    nid: 0xD2
+  SceLibSsl:
+    nid: 0x9CD6CA85
     libraries:
       SceSsl:
         functions:
