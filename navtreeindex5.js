@@ -213,8 +213,8 @@ var NAVTREEINDEX5 =
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,0,20],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,1,0,8],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,1,0,27],
-"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,1,19],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,0,1,27],
+"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,1,19],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f":[1,4,3,0,1,8],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a":[1,4,3,0,1,17],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a":[1,4,3,0,4],
@@ -244,10 +244,10 @@ var NAVTREEINDEX5 =
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[1,4,3,0,2,11],
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[1,4,3,0,22],
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[1,4,3,1,1,11],
-"group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[1,4,3,1,21],
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[1,4,3,1,1,4],
+"group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[1,4,3,1,21],
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d":[1,4,3,0,2,8],
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d":[1,4,3,0,27],
-"group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d":[1,4,3,1,1,8],
-"group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d":[1,4,3,1,1,1]
+"group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d":[1,4,3,1,1,1],
+"group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d":[1,4,3,1,1,8]
 };
