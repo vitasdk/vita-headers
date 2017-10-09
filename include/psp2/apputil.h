@@ -154,7 +154,7 @@ int sceAppUtilInit(SceAppUtilInitParam *initParam, SceAppUtilBootParam *bootPara
 int sceAppUtilShutdown();
 
 //! Receive app event
-int sceAppUtilRecieveAppEvent(SceAppUtilAppEventParam *eventParam);
+int sceAppUtilReceiveAppEvent(SceAppUtilAppEventParam *eventParam);
 
 //! Create savedata slot
 int sceAppUtilSaveDataSlotCreate(unsigned int slotId,
