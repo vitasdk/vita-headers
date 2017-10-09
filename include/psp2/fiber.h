@@ -49,7 +49,7 @@ typedef struct SceFiberInfo
 
 SceInt32 _sceFiberInitializeImpl(SceFiber* fiber, char* name, SceFiberEntry* entry, SceUInt32 argOnInitialize, void* addrContext, SceSize sizeContext, SceFiberOptParam* params);
 
-SceInt32 _sceFiberOptParamInitialize(SceFiberOptParam* optParam);
+SceInt32 sceFiberOptParamInitialize(SceFiberOptParam* optParam);
 
 SceInt32 sceFiberFinalize(SceFiber* fiber);
 
