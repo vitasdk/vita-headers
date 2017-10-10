@@ -40,9 +40,6 @@
  *     \defgroup SceLocation Location Library
  *      GPS Location
  *
- *     \defgroup SceMotion Motion Library
- *      Orientation, speed, magnetometer...
- *
  *     \defgroup SceHid Hid Library
  *      Read Hid device inputs
  * \}
@@ -266,6 +263,9 @@
  * \defgroup Miscellaneous Miscellaneous
  *  Various Libraries that don't fit in other categories
  * \{
+ *     \defgroup SceDriverUser DriverUser Library
+ *      Wrapper for AppMgr, Rtc, Error, Motion...
+ *
  *     \defgroup SceFiber Fiber Library
  *      Initialize and execute Fibers (individual execution units)
  *      Fibers are individual execution units that are like lightweight mini-threads. See [Fiber at Wikipedia](https://en.wikipedia.org/wiki/Fiber_(computer_science)).
