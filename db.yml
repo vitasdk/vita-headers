@@ -1139,10 +1139,43 @@ modules:
   SceDisplay:
     nid: 0x3F05296F
     libraries:
-      SceDisplay:
+      SceDisplayForDriver:
+        nid: 0x9FED47AC
+        kernel: true
         functions:
+          ksceDisplayGetActualViewportConf: 0x40ACFE51
+          ksceDisplayGetFrameBuf: 0xEEDA2E54
+          ksceDisplayGetFrameBufDimensions: 0x5AFE6CD3
+          ksceDisplayGetFrameBufInternal: 0x19F94C63
+          ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
+          ksceDisplayRegisterFrameBufCallback: 0x6E22990E
+          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
+          ksceDisplaySetBrightness: 0x9E3C6DC6
+          ksceDisplaySetDisplayColorSpaceMode: 0x8D79D187
+          ksceDisplaySetFrameBuf: 0x289D82FE
+          ksceDisplaySetFrameBufInternal: 0x16466675
+          ksceDisplaySetInvertColors: 0x19140ACD
+          ksceDisplaySetViewportConf: 0xEE5EB52D
+          ksceDisplayUnregisterVblankStartCallback: 0xB027433E
+          ksceDisplayWaitVblankStart: 0x984C27E7
+          ksceDisplayWaitVblankStartCB: 0x46F186C3
+          ksceDisplayWaitVblankStartMulti: 0x40F1469C
+          ksceDisplayWaitVblankStartMultiCB: 0x77ED8B3A
+      SceDisplay:
+        nid: 0x5ED8F994
+        kernel: false
+        functions:
+          _sceDisplayGetFrameBuf: 0xA753B0CA
+          _sceDisplayGetFrameBufInternal: 0x86A8E436
+          _sceDisplayGetMaximumFrameBufResolution: 0x2EBFC7CB
+          _sceDisplayGetResolutionInfoInternal: 0xFEFEB240
+          _sceDisplaySetFrameBuf: 0xF51523CB
+          _sceDisplaySetFrameBufForCompat: 0x45BCB941
+          _sceDisplaySetFrameBufInternal: 0x7A8CB78E
+          sceDisplayGetPrimaryHead: 0x7178FADA
           sceDisplayGetRefreshRate: 0xA08CA60D
           sceDisplayGetVcount: 0xB6FDE0BA
+          sceDisplayGetVcountInternal: 0x9686859E
           sceDisplayRegisterVblankStartCallback: 0x6BDF4C4D
           sceDisplayUnregisterVblankStartCallback: 0x98436A80
           sceDisplayWaitSetFrameBuf: 0x9423560C
@@ -1153,35 +1186,6 @@ modules:
           sceDisplayWaitVblankStartCB: 0x78B41B92
           sceDisplayWaitVblankStartMulti: 0xDD0A13B8
           sceDisplayWaitVblankStartMultiCB: 0x05F27764
-        kernel: false
-        nid: 0x5ED8F994
-      SceDisplayUser:
-        functions:
-          sceDisplayGetFrameBuf: 0x42AE6BBC
-          sceDisplaySetFrameBuf: 0x7A410B64
-        kernel: false
-        nid: 0x4FAACD11
-      SceDisplayForDriver:
-        functions:
-          ksceDisplayGetFrameBufDimensions: 0x5AFE6CD3
-          ksceDisplaySetFrameBuf: 0x289D82FE
-          ksceDisplayGetFrameBuf: 0xEEDA2E54
-          ksceDisplaySetFrameBufInternal: 0x16466675
-          ksceDisplayGetFrameBufInternal: 0x19F94C63
-          ksceDisplayRegisterFrameBufCallback: 0x6E22990E
-          ksceDisplayGetActualViewportConf: 0x40ACFE51
-          ksceDisplaySetViewportConf: 0xEE5EB52D
-          ksceDisplaySetInvertColors: 0x19140ACD
-          ksceDisplaySetBrightness: 0x9E3C6DC6
-          ksceDisplaySetDisplayColorSpaceMode: 0x8D79D187
-          ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
-          ksceDisplayUnregisterVblankStartCallback: 0xB027433E
-          ksceDisplayWaitVblankStartMulti: 0x40F1469C
-          ksceDisplayWaitVblankStartMultiCB: 0x46F186C3
-          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
-          ksceDisplayWaitVblankStart: 0x984C27E7
-        kernel: true
-        nid: 0x9FED47AC
   SceFace:
     nid: 0x2E
     libraries:
