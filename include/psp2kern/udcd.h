@@ -16,16 +16,16 @@ extern "C" {
 /** Enumeration for Device and/or Interface Class codes
  */
 typedef enum SceUdcdUsbClass {
-	USB_CLASS_PER_INTERFACE         0x00,  //!< for DeviceClass
-	USB_CLASS_AUDIO                 0x01,
-	USB_CLASS_COMM                  0x02,
-	USB_CLASS_HID                   0x03,
-	USB_CLASS_PTP                   0x06,
-	USB_CLASS_PRINTER               0x07,
-	USB_CLASS_MASS_STORAGE          0x08,
-	USB_CLASS_HUB                   0x09,
-	USB_CLASS_DATA                  0x0A,
-	USB_CLASS_VENDOR_SPEC           0xFF
+	USB_CLASS_PER_INTERFACE       = 0x00,  //!< for DeviceClass
+	USB_CLASS_AUDIO               = 0x01,
+	USB_CLASS_COMM                = 0x02,
+	USB_CLASS_HID                 = 0x03,
+	USB_CLASS_PTP                 = 0x06,
+	USB_CLASS_PRINTER             = 0x07,
+	USB_CLASS_MASS_STORAGE        = 0x08,
+	USB_CLASS_HUB                 = 0x09,
+	USB_CLASS_DATA                = 0x0A,
+	USB_CLASS_VENDOR_SPEC         = 0xFF
 } SceUdcdUsbClass;
 
 /** Enumeration for descriptor types
