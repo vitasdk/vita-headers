@@ -15,11 +15,11 @@ var group__SceUdcdKernel =
     [ "SceUdcdStatus", "group__SceUdcdKernel.html#gaffd43136d3fc38126bd4a36392c5f3b9", null ],
     [ "SceUdcdStatusDriver", "group__SceUdcdKernel.html#ga9a4e508891cafbcd50ec6e553d75f4d6", null ],
     [ "SceUdcdUsbClass", "group__SceUdcdKernel.html#gabed431682dbbdd502c439344809679b0", [
-      [ "x00", "group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0aa66bab3a0a5adbcad3ede80cdc925fae", null ]
+      [ "USB_CLASS_PER_INTERFACE", "group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0a851a23e0c3e6234c46d2190ad13abdda", null ]
     ] ],
     [ "SceUdcdUsbDt", "group__SceUdcdKernel.html#ga4c46982fd3c2db5f55140fdf272f3388", null ],
     [ "SceUdcdUsbReq", "group__SceUdcdKernel.html#ga89364761934556860312bed01ea9a968", null ],
-    [ "x00", "group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0aa66bab3a0a5adbcad3ede80cdc925fae", null ],
+    [ "USB_CLASS_PER_INTERFACE", "group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0a851a23e0c3e6234c46d2190ad13abdda", null ],
     [ "__attribute__", "group__SceUdcdKernel.html#ga82e854acee1ed6e563718fe339aec7ed", null ],
     [ "__attribute__", "group__SceUdcdKernel.html#gaecaf20cb4b5ebc2a129339b3a3e5a0c4", null ],
     [ "ksceUdcdActivate", "group__SceUdcdKernel.html#gafbdc0991ab0f211224c3bf70598a33e5", null ],
