@@ -1293,6 +1293,36 @@ modules:
           sceGameUpdateTerm: 0x48D879BA
         kernel: false
         nid: 0x2DD9A62D
+  SceGpuEs4:
+    nid: 0x4069F83B
+    libraries:
+      SceGpuEs4ForUser:
+        nid: 0x6EC1443D
+        kernel: false
+        functions:
+          PVRSRVOpen: 0x5E943288
+          PVRSRVRelease: 0x85C328DF
+          PVRSRV_BridgeDispatchKM: 0xCA19ABCD
+          sceGpuRegisterSalvage: 0x8E0D9D40
+          sceGpuSignalWait: 0x05BCE11C
+          sceGpuSignalWaitLockup: 0xE0DECA6E
+          sceGpuUnregisterSalvage: 0x807202B7
+      SceGpuEs4ForDriver:
+        nid: 0x54802381
+        kernel: true
+        functions:
+          OSGetCurrentProcessIDKM: 0x6C6F2BEA
+          OSMemCopy: 0x771EC61E
+          OSMemSet: 0x50494916
+          OSProcHasPrivSrvInit: 0x302C7C5F
+          PVRSRVAcquireDeviceDataKM: 0xE6B866FD
+          PVRSRVEnumerateDevicesKM: 0xEC5163B0
+          PVRSRVFinaliseSystem: 0x399BC738
+          PVRSRVGetInitServerState: 0x3AF6FE80
+          PVRSRVPerProcessData: 0x3DAB1F7F
+          PVRSRVPerProcessDataConnect: 0x1A53327D
+          PVRSRVPerProcessDataDisconnect: 0xB4A2B60F
+          PVRSRVSetInitServerState: 0xDCD78852
   SceGxm:
     nid: 0x0D0AA0CB
     libraries:
@@ -1874,6 +1904,7 @@ modules:
           strtol: 0xAB77C5AA
           tolower: 0x0021DAF9
           toupper: 0xA685DCB1
+          vsnprintf: 0x3DDBE2E1
       SceCpuForKernel:
         kernel: true
         nid: 0x54BF2BAB
@@ -4211,36 +4242,32 @@ modules:
         nid: 0x1082DA7F
       ScePowerForDriver:
         functions:
-          kscePowerGetResumeCount: 0x0074EF9B
-          kscePowerRegisterCallback: 0x04B7766E
-          kscePowerIsBatteryExist: 0x0AFD0D8B
-          kscePowerIsBatteryCharging: 0x1E490401
-          kscePowerGetBatteryLifePercent: 0x2085D15D
-          kscePowerWlanDeactivate: 0x23BB0A60
-          kscePowerSetGpuClockFrequency: 0x264C24FC
-          kscePowerBatteryUpdateInfo: 0x27F3292C
-          kscePowerGetBatteryTemp: 0x28E12023
-          kscePowerEncodeUBattery: 0x3951AF53
-          kscePowerGetBusClockFrequency: 0x478FE6F5
-          kscePowerGetBatteryVolt: 0x483CE86B
-          kscePowerGetCaseTemp: 0x525592E4
-          kscePowerWlanActivate: 0x6D2CA84B
-          kscePowerSetArmClockFrequency: 0x74DB5AE5
-          kscePowerSetGpuXbarClockFrequency: 0xA7739DBE
-          kscePowerGetGpuXbarClockFrequency: 0x0A750DEE
-          kscePowerIsRequest: 0x7FA406DD
           kcePowerGetBatteryElec: 0x862AE1A6
-          kscePowerIsPowerOnline: 0x87440F5E
+          kscePowerBatteryUpdateInfo: 0x27F3292C
+          kscePowerCancelRequest: 0xDB62C9CF
+          kscePowerEncodeUBattery: 0x3951AF53
+          kscePowerGetArmClockFrequency: 0xABC6F88F
+          kscePowerGetBatteryChargingStatus: 0xB4432BC8
+          kscePowerGetBatteryLifePercent: 0x2085D15D
           kscePowerGetBatteryLifeTime: 0x8EFB3FA2
           kscePowerGetBatteryRemainCapacity: 0x94F5A53F
-          kscePowerGetBatteryChargingStatus: 0xB4432BC8
-          kscePowerSetBusClockFrequency: 0xB8D7B3FB
-          kscePowerIsLowBattery: 0xD3075926
-          kscePowerCancelRequest: 0xDB62C9CF
-          kscePowerUnregisterCallback: 0xDFA8BAF8
+          kscePowerGetBatteryTemp: 0x28E12023
+          kscePowerGetBatteryVolt: 0x483CE86B
+          kscePowerGetBusClockFrequency: 0x478FE6F5
+          kscePowerGetCaseTemp: 0x525592E4
+          kscePowerGetDeviceCount: 0x475BCC82
+          kscePowerGetGpuClockFrequency: 0xC63DACD5
+          kscePowerGetGpuXbarClockFrequency: 0x0A750DEE
           kscePowerGetIdleTimer: 0xEDC13FE5
-          kscePowerTick: 0xEFD3C963
+          kscePowerGetPowerSwMode: 0x165CE085
+          kscePowerGetResumeCount: 0x0074EF9B
           kscePowerGetWakeupFactor: 0x9F26222A
+          kscePowerIsBatteryCharging: 0x1E490401
+          kscePowerIsBatteryExist: 0x0AFD0D8B
+          kscePowerIsLowBattery: 0xD3075926
+          kscePowerIsPowerOnline: 0x87440F5E
+          kscePowerIsRequest: 0x7FA406DD
+          kscePowerRegisterCallback: 0x04B7766E
           kscePowerRequestColdReset: 0x0442D852
           kscePowerRequestDisplayOff: 0x160EB506
           kscePowerRequestDisplayOn: 0x3EA75C88
@@ -4248,13 +4275,20 @@ modules:
           kscePowerRequestSoftReset: 0x2875994B
           kscePowerRequestStandby: 0x2B7C7CF4
           kscePowerRequestSuspend: 0xAC32C9CC
+          kscePowerSetArmClockFrequency: 0x74DB5AE5
           kscePowerSetBatteryFakeStatus: 0x0C6973B8
+          kscePowerSetBusClockFrequency: 0xB8D7B3FB
+          kscePowerSetGpuClockFrequency: 0x264C24FC
+          kscePowerSetGpuXbarClockFrequency: 0xA7739DBE
           kscePowerSetIdleCallback: 0x1BA2FCAE
           kscePowerSetMipsClockFrequency: 0xFFC84E69
           kscePowerSetPowerSwMode: 0xC1853BA7
-          kscePowerGetPowerSwMode: 0x165CE085
           kscePowerSetPsButtonPushTime: 0xCF8F0529
           kscePowerSetStandbyButtonPushTime: 0x675A84ED
+          kscePowerTick: 0xEFD3C963
+          kscePowerUnregisterCallback: 0xDFA8BAF8
+          kscePowerWlanActivate: 0x6D2CA84B
+          kscePowerWlanDeactivate: 0x23BB0A60
         kernel: true
         nid: 0x1590166F
       SceLedForDriver:
