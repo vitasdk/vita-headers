@@ -93,7 +93,7 @@ int ksceKernelCpuEnableInterrupts(int flags);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheWritebackRange(void *ptr, size_t len);
+int ksceKernelCpuDcacheWritebackRange(const void *ptr, size_t len);
 
 /**
  * @brief      Invalidate a range of L1 dcache (without L2)
@@ -103,7 +103,7 @@ int ksceKernelCpuDcacheWritebackRange(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheInvalidateRange(void *ptr, size_t len);
+int ksceKernelCpuDcacheInvalidateRange(const void *ptr, size_t len);
 
 /**
  * @brief      Writeback and invalidate a range of L1 dcache (without L2)
@@ -113,7 +113,7 @@ int ksceKernelCpuDcacheInvalidateRange(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheWritebackInvalidateRange(void *ptr, size_t len);
+int ksceKernelCpuDcacheWritebackInvalidateRange(const void *ptr, size_t len);
 
 /**
  * @brief      Invalidate all the L1 dcache (without L2)
@@ -144,7 +144,7 @@ int ksceKernelCpuDcacheWritebackInvalidateAll(void);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheAndL2WritebackRange(void *ptr, size_t len);
+int ksceKernelCpuDcacheAndL2WritebackRange(const void *ptr, size_t len);
 
 /**
  * @brief      Writeback and invalidate a range of L1 dcache and L2
@@ -154,7 +154,7 @@ int ksceKernelCpuDcacheAndL2WritebackRange(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheAndL2InvalidateRange(void *ptr, size_t len);
+int ksceKernelCpuDcacheAndL2InvalidateRange(const void *ptr, size_t len);
 
 /**
  * @brief      Writeback and invalidate a range of L1 dcache and L2
@@ -164,7 +164,7 @@ int ksceKernelCpuDcacheAndL2InvalidateRange(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheAndL2WritebackInvalidateRange(void *ptr, size_t len);
+int ksceKernelCpuDcacheAndL2WritebackInvalidateRange(const void *ptr, size_t len);
 
 /**
  * @brief      Invalidate a range of L1 icache (without L2)
@@ -174,7 +174,7 @@ int ksceKernelCpuDcacheAndL2WritebackInvalidateRange(void *ptr, size_t len);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuIcacheInvalidateRange(void *ptr, size_t len);
+int ksceKernelCpuIcacheInvalidateRange(const void *ptr, size_t len);
 
 /**
  * @brief      Invalidate all the L1 icache (without L2)
@@ -191,7 +191,7 @@ int ksceKernelCpuIcacheInvalidateAll(void);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuIcacheAndL2WritebackInvalidateRange(void *ptr, size_t len);
+int ksceKernelCpuIcacheAndL2WritebackInvalidateRange(const void *ptr, size_t len);
 
 /**
  * @brief      MMU permission bypassing memcpy
