@@ -1947,7 +1947,6 @@ modules:
           ksceSysrootIsUpdateMode: 0xB0E1FC67
           ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
           ksceSysrootUseInternalStorage: 0x50FE3B4D
-          ksceSysrootGetElfInfo: 0xF10AB792
       SceKernelSuspendForDriver:
         kernel: true
         nid: 0x7290B21C
@@ -2026,13 +2025,6 @@ modules:
           ksceZlibDecompress: 0x900148DB
           ksceZlibGetCompressedData: 0x01EB6C45
           ksceZlibGetInfo: 0x5B9BCD75
-          ksceAesInit1: 0xF12B6451
-          ksceAesInit2: 0xEDA97D6D
-          ksceAesInit3: 0x72408E29
-          ksceAesEncrypt1: 0xC2A61770
-          ksceAesEncrypt2: 0x302947B6
-          ksceAesDecrypt1: 0xD8678061
-          ksceAesDecrypt2: 0xE39CD272
         kernel: true
         nid: 0x496AD8B4
       SceDebugForDriver:
@@ -5652,9 +5644,6 @@ modules:
         nid: 0x61E9428D
         functions:
           ksceKernelGetRandomNumber: 0x4F9BFBE5
-          ksceSblSsMgrExecuteDmac5Command0x04Size: 0x4DD1B2E5
-          SceSblSsMgrForDriver_37DD5CBF_ecb_encrypt_unkflag: 0x37DD5CBF
-          ksceSblSsMgrDecryptAesKeyMsif: 0x934DB6B5
   SceSblACMgr:
     nid: 0x7474D6F9
     libraries:
@@ -5925,13 +5914,6 @@ modules:
           kscePervasiveMsifClockDisable: 0x2A9778CD
           kscePervasiveMsifSetClock: 0x64ABE589
           kscePervasiveRemovableMemoryGetCardInsertState: 0x551EEE82
-          ScePervasiveForDriver_5E20D7D5_sdif_unk: 0x5E20D7D5
-          ScePervasiveForDriver_E6728E30_sdif_unk: 0xE6728E30
-          ScePervasiveForDriver_E92E28FF_iftu2_reset_exit: 0xE92E28FF
-          ScePervasiveForDriver_07F2A738_iftu2_clock_enable: 0x07F2A738
-          ScePervasiveForDriver_5AFE0AF0_iftu2_clock_disable: 0x5AFE0AF0
-          ScePervasiveForDriver_243D0E78_get_dsi_clock_info: 0x243D0E78
-          ScePervasiveForDriver_91C80C41_set_dsi_bus_pixelclock: 0x91C80C41
       SceGpioForDriver:
         kernel: true
         nid: 0xF0EF5743
@@ -5956,31 +5938,6 @@ modules:
           ksceI2cSetDebugHandlers: 0xA2C7CE62
           ksceI2cTransferWrite: 0xCA94A759
           ksceI2cTransferRead: 0xD1D0A9A4
-      SceDsiForDriver:
-        kernel: true
-        nid: 0xEC897883
-        functions:
-          SceDsiForDriver_78E6E3CF_set_pixel_size: 0x78E6E3CF
-          SceDsiForDriver_B3A70C05_get_dimensions_for_vic: 0xB3A70C05
-          SceDsiForDriver_97BFEA76_set_VIC: 0x97BFEA76
-          SceDsiForDriver_4DF9E924_get_pixelclock: 0x4DF9E924
-          SceDsiForDriver_5BE5AA9B_enable_bus: 0x5BE5AA9B
-          SceDsiForDriver_114D1413_disable_bus: 0x114D1413
-          SceDsiForDriver_C2E85919_control_unk: 0xC2E85919
-          SceDsiForDriver_7640F607_disable_bus: 0x7640F607
-          SceDsiForDriver_3FB0DF1F_dcs_read: 0x3FB0DF1F
-      SceIftuForDriver:
-        kernel: true
-        nid: 0xCAFCFE50
-        functions:
-          SceIftuForDriver_0FCBF457_set_csc2: 0x0FCBF457
-          SceIftuForDriver_D64F4C6B_set_csc1: 0xD64F4C6B
-          SceIftuForDriver_E6EE2C6B_set_dst_conversion: 0xE6EE2C6B
-          SceIftuForDriver_7CE0C4DA_set_source_fb: 0x7CE0C4DA
-          SceIftuForDriver_357EAE24_set_alpha: 0x357EAE24
-          SceIftuForDriver_AF19FD85_set_alpha_control_value: 0xAF19FD85
-          SceIftuForDriver_0D7C02F7_init_plane: 0x0D7C02F7
-          SceIftuForDriver_C11F30B3_plane_disable: 0xC11F30B3
   SceSblAuthMgr:
     nid: 0x1773372D
     libraries:
@@ -6154,61 +6111,3 @@ modules:
           sceLsdbGetStitle: 0x3B064DF5
           sceLsdbGetTitle: 0x4141EBCD
           sceLsdbGetType: 0xDEC358E4
-  SceSdif:
-    nid: 0x2E7C52F7
-    libraries:
-      SceSdifForDriver:
-        kernel: true
-        nid: 0x96D306FA
-        functions:
-          ksceSdifGetSdContextGlobal: 0xdc8f52f8
-          ksceSdifGetSdContextPartMmc: 0x6a71987f
-          ksceSdifGetSdContextPartSd: 0xb9ea5b1e
-          ksceSdifGetSdContextPartSdio: 0x6a8235fc
-          ksceSdifGetCardInsertState1: 0x36a2b01b
-          ksceSdifGetCardInsertState2: 0xfd9e5cfa
-          ksceSdifInitializeSdContextPartMmc: 0x22c82e79
-          ksceSdifInitializeSdContextPartSd: 0xC1271539
-          ksceSdifReadSectorAsync: 0x6f8d529b
-          ksceSdifReadSector: 0xb9593652
-          ksceSdifWriteSectorAsync: 0x175543d2
-          ksceSdifWriteSector: 0xe0781171
-          ksceSdifCopyCtx: 0x23a4ef01
-  SceMsif:
-    nid: 0x3305A0FE
-    libraries:
-      SceMsifForDriver:
-        kernel: true
-        nid: 0xB706084A
-        functions:
-          ksceMsifReadSector: 0x58654AA3
-          ksceMsifWriteSector: 0x329035EF
-          ksceMsifEnableSlowMode: 0x4B751CE6
-          ksceMsifDisableSlowMode: 0x75848756
-          ksceMsifGetSlowModeState: 0x491E25B5
-          ksceMsifInit1: 0x4EA579EF
-          ksceMsifInit2: 0xD0307849
-          ksceMsifformat: 0x6EDE7DBA
-          ksceMsifSmshcTime: 0x855E1E38
-  SceSblSsSmComm:
-    nid: 0xBB4B5D92
-    libraries:
-      SceSblSmCommForKernel:
-        kernel: true
-        nid: 0xCD3C89B6
-        functions:
-          ksceSblSmCommStopSm: 0x0631F8ED
-          ksceSblSmCommStartSm1: 0x039C73B1
-          ksceSblSmCommStartSm2: 0x7863A0CC
-          ksceSblSmCommCallFunc: 0xDB9FC204
-  SceSblSmschedProxy:
-    nid: 0x254B02B3
-    libraries:
-      SceSblSmSchedProxyForKernel:
-        kernel: true
-        nid: 0x15F25C84
-        functions:
-          ksceSblSmSchedProxyInvoke: 0x1916509b
-          ksceSblSmSchedProxyGetStatus: 0x27eb92f1
-          ksceSblSmSchedCallFunc: 0x723B382F
-          ksceSblSmSchedProxyWait: 0xf35efc1a
