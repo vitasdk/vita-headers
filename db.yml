@@ -1844,6 +1844,7 @@ modules:
           ksceKernelGetPaddr: 0x8D160E65
           ksceKernelGetPaddrList: 0xE68BEEBD
           ksceKernelFindMemBlockByAddr: 0x8A1742F6
+          ksceKernelFindMemBlockByAddrForPid: 0x857F1D5A
           ksceKernelRemapBlock: 0xDFE2C8CB
           ksceKernelCreateHeap: 0x9328E0E8
           ksceKernelDeleteHeap: 0xD6437637
@@ -5757,6 +5758,7 @@ modules:
           ksceUdcdReqCancelAll: 0x38787672
           ksceUdcdRegister: 0x4E55244D
           ksceUdcdActivate: 0x4FDEA423
+          ksceUdcdRegisterToBus: 0x64675918
           ksceUdcdDeactivate: 0x8AE87657
           ksceUdcdClearFIFO: 0x9F53D64D
           ksceUdcdStart: 0x9FD733EA
