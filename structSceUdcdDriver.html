@@ -131,10 +131,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga820c3ffa41c59e7a39e758e466807471">processRequest</a> )(int recipient, int arg, <a class="el" href="group__SceUdcdKernel.html#structSceUdcdEP0DeviceRequest">SceUdcdEP0DeviceRequest</a> *req, void *<a class="el" href="group__SceUdcdKernel.html#ga50a78c0c47b439262266975b13bd6334">user_data</a>)</td></tr>
 <tr class="memdesc:ga820c3ffa41c59e7a39e758e466807471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Received a control request. <br /></td></tr>
 <tr class="separator:ga820c3ffa41c59e7a39e758e466807471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3450eba4be59538d3b7e101c6d9f1c9"><td class="memItemLeft" align="right" valign="top">
-int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad3450eba4be59538d3b7e101c6d9f1c9">changeSetting</a> )(int interfaceNumber, int alternateSetting)</td></tr>
-<tr class="memdesc:gad3450eba4be59538d3b7e101c6d9f1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change alternate setting. <br /></td></tr>
-<tr class="separator:gad3450eba4be59538d3b7e101c6d9f1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa41835762fa6b0b9f593e13b74bcf689"><td class="memItemLeft" align="right" valign="top">
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaa41835762fa6b0b9f593e13b74bcf689">changeSetting</a> )(int interfaceNumber, int alternateSetting, int <a class="el" href="group__SceUdcdKernel.html#ga9113ba9a66befdfaa0e4405f6efc3151">bus</a>)</td></tr>
+<tr class="memdesc:gaa41835762fa6b0b9f593e13b74bcf689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change alternate setting. <br /></td></tr>
+<tr class="separator:gaa41835762fa6b0b9f593e13b74bcf689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac95e48dcddddec835bfa6ff0025fccde"><td class="memItemLeft" align="right" valign="top">
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac95e48dcddddec835bfa6ff0025fccde">attach</a> )(int usb_version, void *<a class="el" href="group__SceUdcdKernel.html#ga50a78c0c47b439262266975b13bd6334">user_data</a>)</td></tr>
 <tr class="memdesc:gac95e48dcddddec835bfa6ff0025fccde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration set (attach) function. <br /></td></tr>
@@ -159,10 +159,10 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gro
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga50a78c0c47b439262266975b13bd6334">user_data</a></td></tr>
 <tr class="memdesc:ga50a78c0c47b439262266975b13bd6334"><td class="mdescLeft">&#160;</td><td class="mdescRight">User data. <br /></td></tr>
 <tr class="separator:ga50a78c0c47b439262266975b13bd6334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga621a7dbbc7afeba610977472c0578d83"><td class="memItemLeft" align="right" valign="top">
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga621a7dbbc7afeba610977472c0578d83">unk2</a></td></tr>
-<tr class="memdesc:ga621a7dbbc7afeba610977472c0578d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unknown data. <br /></td></tr>
-<tr class="separator:ga621a7dbbc7afeba610977472c0578d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9113ba9a66befdfaa0e4405f6efc3151"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga9113ba9a66befdfaa0e4405f6efc3151">bus</a></td></tr>
+<tr class="memdesc:ga9113ba9a66befdfaa0e4405f6efc3151"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB bus. <br /></td></tr>
+<tr class="separator:ga9113ba9a66befdfaa0e4405f6efc3151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga250a8a0a5361ad504972d2e85318d222"><td class="memItemLeft" align="right" valign="top">
 struct <a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga250a8a0a5361ad504972d2e85318d222">link</a></td></tr>
 <tr class="memdesc:ga250a8a0a5361ad504972d2e85318d222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link to next USB driver in the chain, set to NULL. <br /></td></tr>

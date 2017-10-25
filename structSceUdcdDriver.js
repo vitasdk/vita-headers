@@ -1,7 +1,8 @@
 var structSceUdcdDriver =
 [
     [ "attach", "group__SceUdcdKernel.html#gac95e48dcddddec835bfa6ff0025fccde", null ],
-    [ "changeSetting", "group__SceUdcdKernel.html#gad3450eba4be59538d3b7e101c6d9f1c9", null ],
+    [ "bus", "group__SceUdcdKernel.html#ga9113ba9a66befdfaa0e4405f6efc3151", null ],
+    [ "changeSetting", "group__SceUdcdKernel.html#gaa41835762fa6b0b9f593e13b74bcf689", null ],
     [ "configuration", "group__SceUdcdKernel.html#gaed8c9905c38b528ae20274efbc591ad0", null ],
     [ "configuration_hi", "group__SceUdcdKernel.html#ga3bb03a0f1444bc8c954ffa63734da573", null ],
     [ "configure", "group__SceUdcdKernel.html#ga7c489abfc4eec73ac3c3245d8949aafa", null ],
@@ -19,6 +20,5 @@ var structSceUdcdDriver =
     [ "stringDescriptorsUnk0", "group__SceUdcdKernel.html#gab5c60b0cfbdd2cf1e432ab9e67f3c97d", null ],
     [ "stringDescriptorsUnk1", "group__SceUdcdKernel.html#ga409c2308f8a874c6b2b7603fc80dbeb1", null ],
     [ "stringDescriptorsUnk2", "group__SceUdcdKernel.html#ga1e9c64b0f99f1911ac96c95296bf61de", null ],
-    [ "unk2", "group__SceUdcdKernel.html#ga621a7dbbc7afeba610977472c0578d83", null ],
     [ "user_data", "group__SceUdcdKernel.html#ga50a78c0c47b439262266975b13bd6334", null ]
 ];
