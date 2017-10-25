@@ -17,8 +17,8 @@ var structSceUdcdDriver =
     [ "processRequest", "group__SceUdcdKernel.html#ga820c3ffa41c59e7a39e758e466807471", null ],
     [ "start", "group__SceUdcdKernel.html#gab7f903fc7d857ebc45ae14a7effebde7", null ],
     [ "stop", "group__SceUdcdKernel.html#ga146410d9b5b6f12cec22c45b847ae519", null ],
-    [ "stringDescriptorsUnk0", "group__SceUdcdKernel.html#gab5c60b0cfbdd2cf1e432ab9e67f3c97d", null ],
-    [ "stringDescriptorsUnk1", "group__SceUdcdKernel.html#ga409c2308f8a874c6b2b7603fc80dbeb1", null ],
-    [ "stringDescriptorsUnk2", "group__SceUdcdKernel.html#ga1e9c64b0f99f1911ac96c95296bf61de", null ],
+    [ "stringDescriptorProduct", "group__SceUdcdKernel.html#ga0857ebfbf241f70083a2d4949dd70149", null ],
+    [ "stringDescriptors", "group__SceUdcdKernel.html#ga3059c670608494d048afe588e1e83f54", null ],
+    [ "stringDescriptorSerial", "group__SceUdcdKernel.html#gae23520e16469d154910767ae61d899de", null ],
     [ "user_data", "group__SceUdcdKernel.html#ga50a78c0c47b439262266975b13bd6334", null ]
 ];
