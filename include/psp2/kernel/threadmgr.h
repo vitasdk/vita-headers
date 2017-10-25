@@ -414,7 +414,7 @@ int sceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout);
 int sceKernelWaitSemaCB(SceUID semaid, int signal, SceUInt *timeout);
 
 /**
- * Poll a sempahore.
+ * Poll a semaphore.
  *
  * @param semaid - UID of the semaphore to poll.
  * @param signal - The value to test for.
