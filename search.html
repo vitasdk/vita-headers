@@ -8528,7 +8528,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00347</field>
     <field name="keywords"></field>
-    <field name="text">int processRequest recipient arg SceUdcdEP0DeviceRequest req</field>
+    <field name="text">int processRequest recipient arg SceUdcdEP0DeviceRequest req user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -8542,42 +8542,42 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00349</field>
     <field name="keywords"></field>
-    <field name="text">int attach usb_version</field>
+    <field name="text">int attach usb_version user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00350</field>
     <field name="keywords"></field>
-    <field name="text">void detach void</field>
+    <field name="text">void detach user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00351</field>
     <field name="keywords"></field>
-    <field name="text">void configure usb_version desc_count SceUdcdInterfaceSettings settings</field>
+    <field name="text">void configure usb_version desc_count SceUdcdInterfaceSettings settings user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00352</field>
     <field name="keywords"></field>
-    <field name="text">int start size args</field>
+    <field name="text">int start size args user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00353</field>
     <field name="keywords"></field>
-    <field name="text">int stop size args</field>
+    <field name="text">int stop size args user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00354</field>
     <field name="keywords"></field>
-    <field name="text">unk1</field>
+    <field name="text">user_data</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -8682,7 +8682,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00377</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo ksceUdcdStart driverName size args ksceUdcdStop driverName size args ksceUdcdActivate productId ksceUdcdDeactivate ksceUdcdGetDeviceState ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDrvState driverName ksceUdcdGetDrvList flags SceUdcdDriverName list size ksceUdcdWaitState state waitMode SceUInt timeout ksceUdcdWaitCancel ksceUdcdRegister SceUdcdDriver drv ksceUdcdUnregister SceUdcdDriver drv ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqRecv SceUdcdDeviceRequest req</field>
+    <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo ksceUdcdStart driverName size args ksceUdcdStop driverName size args ksceUdcdActivate productId ksceUdcdDeactivate ksceUdcdGetDeviceState ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDrvState driverName ksceUdcdGetDrvList flags SceUdcdDriverName list size ksceUdcdWaitState state waitMode SceUInt timeout ksceUdcdWaitCancel ksceUdcdRegister SceUdcdDriver drv ksceUdcdRegisterToBus SceUdcdDriver drv bus ksceUdcdUnregister SceUdcdDriver drv ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqRecv SceUdcdDeviceRequest req</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -17554,6 +17554,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceUdcdRegisterToBus</field>
+    <field name="args">(SceUdcdDriver *drv, int bus)</field>
+    <field name="url">group__SceUdcdKernel.html#ga040fd5c7d2c0211efb6925fb9e981b30</field>
+    <field name="keywords">ksceUdcdRegisterToBus</field>
+    <field name="text">Register a USB driver to a specific USB bus drv Pointer to a filled out USB driver bus The USB bus index usually 2 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceUdcdUnregister</field>
     <field name="args">(SceUdcdDriver *drv)</field>
     <field name="url">group__SceUdcdKernel.html#gac4b42b6e886000b962fa71ba289e5bb7</field>
@@ -17926,8 +17934,8 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">variable</field>
     <field name="name">SceUdcdDriver::processRequest</field>
-    <field name="args">)(int recipient, int arg, SceUdcdEP0DeviceRequest *req)</field>
-    <field name="url">group__SceUdcdKernel.html#ga48d81ce11f42c4d87b6bc37b6d2e126e</field>
+    <field name="args">)(int recipient, int arg, SceUdcdEP0DeviceRequest *req, void *user_data)</field>
+    <field name="url">group__SceUdcdKernel.html#ga820c3ffa41c59e7a39e758e466807471</field>
     <field name="keywords">processRequest SceUdcdDriver::processRequest SceUdcdDriver</field>
     <field name="text">Received a control request</field>
   </doc>
@@ -17942,49 +17950,49 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">variable</field>
     <field name="name">SceUdcdDriver::attach</field>
-    <field name="args">)(int usb_version)</field>
-    <field name="url">group__SceUdcdKernel.html#gae9ceff5d0b221ba4036eb695d59f3e79</field>
+    <field name="args">)(int usb_version, void *user_data)</field>
+    <field name="url">group__SceUdcdKernel.html#gac95e48dcddddec835bfa6ff0025fccde</field>
     <field name="keywords">attach SceUdcdDriver::attach SceUdcdDriver</field>
     <field name="text">Configuration set attach function</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">SceUdcdDriver::detach</field>
-    <field name="args">)(void)</field>
-    <field name="url">group__SceUdcdKernel.html#ga90a6a32605c36e809189c9d8cbaa402c</field>
+    <field name="args">)(void *user_data)</field>
+    <field name="url">group__SceUdcdKernel.html#ga2cc2f9ae62adfc9e29e3d6cac720b059</field>
     <field name="keywords">detach SceUdcdDriver::detach SceUdcdDriver</field>
     <field name="text">Configuration unset detach function</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">SceUdcdDriver::configure</field>
-    <field name="args">)(int usb_version, int desc_count, SceUdcdInterfaceSettings *settings)</field>
-    <field name="url">group__SceUdcdKernel.html#gab24043fc5ede8493c745f0426fb35594</field>
+    <field name="args">)(int usb_version, int desc_count, SceUdcdInterfaceSettings *settings, void *user_data)</field>
+    <field name="url">group__SceUdcdKernel.html#ga7c489abfc4eec73ac3c3245d8949aafa</field>
     <field name="keywords">configure SceUdcdDriver::configure SceUdcdDriver</field>
     <field name="text">Configure the device</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">SceUdcdDriver::start</field>
-    <field name="args">)(int size, void *args)</field>
-    <field name="url">group__SceUdcdKernel.html#ga2ae78272f8ed21aa2720f7ac69fbb8ac</field>
+    <field name="args">)(int size, void *args, void *user_data)</field>
+    <field name="url">group__SceUdcdKernel.html#gab7f903fc7d857ebc45ae14a7effebde7</field>
     <field name="keywords">start SceUdcdDriver::start SceUdcdDriver</field>
     <field name="text">Function called when the driver is started</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">SceUdcdDriver::stop</field>
-    <field name="args">)(int size, void *args)</field>
-    <field name="url">group__SceUdcdKernel.html#ga6d199816220b2584a6ee9fc1334bdea5</field>
+    <field name="args">)(int size, void *args, void *user_data)</field>
+    <field name="url">group__SceUdcdKernel.html#ga146410d9b5b6f12cec22c45b847ae519</field>
     <field name="keywords">stop SceUdcdDriver::stop SceUdcdDriver</field>
     <field name="text">Function called when the driver is stopped</field>
   </doc>
   <doc>
     <field name="type">variable</field>
-    <field name="name">SceUdcdDriver::unk1</field>
-    <field name="url">group__SceUdcdKernel.html#ga91b4953df89232409ac401cae411141f</field>
-    <field name="keywords">unk1 SceUdcdDriver::unk1 SceUdcdDriver</field>
-    <field name="text">Unknown data</field>
+    <field name="name">SceUdcdDriver::user_data</field>
+    <field name="url">group__SceUdcdKernel.html#ga50a78c0c47b439262266975b13bd6334</field>
+    <field name="keywords">user_data SceUdcdDriver::user_data SceUdcdDriver</field>
+    <field name="text">User data</field>
   </doc>
   <doc>
     <field name="type">variable</field>

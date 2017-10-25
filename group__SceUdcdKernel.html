@@ -124,6 +124,9 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f">ksceUdcdRegister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
 <tr class="memdesc:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver.  <a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">More...</a><br /></td></tr>
 <tr class="separator:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga040fd5c7d2c0211efb6925fb9e981b30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga040fd5c7d2c0211efb6925fb9e981b30">ksceUdcdRegisterToBus</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv, int bus)</td></tr>
+<tr class="memdesc:ga040fd5c7d2c0211efb6925fb9e981b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver to a specific USB bus.  <a href="#ga040fd5c7d2c0211efb6925fb9e981b30">More...</a><br /></td></tr>
+<tr class="separator:ga040fd5c7d2c0211efb6925fb9e981b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4b42b6e886000b962fa71ba289e5bb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac4b42b6e886000b962fa71ba289e5bb7">ksceUdcdUnregister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
 <tr class="memdesc:gac4b42b6e886000b962fa71ba289e5bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a USB driver.  <a href="#gac4b42b6e886000b962fa71ba289e5bb7">More...</a><br /></td></tr>
 <tr class="separator:gac4b42b6e886000b962fa71ba289e5bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1234,6 +1237,44 @@ info[64]</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drv</td><td>- Pointer to a filled out USB driver</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga040fd5c7d2c0211efb6925fb9e981b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga040fd5c7d2c0211efb6925fb9e981b30">&sect;&nbsp;</a></span>ksceUdcdRegisterToBus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdRegisterToBus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
+          <td class="paramname"><em>drv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a USB driver to a specific USB bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drv</td><td>- Pointer to a filled out USB driver </td></tr>
+    <tr><td class="paramname">bus</td><td>- The USB bus index (usually 2)</td></tr>
   </table>
   </dd>
 </dl>

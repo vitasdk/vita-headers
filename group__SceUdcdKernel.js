@@ -30,6 +30,7 @@ var group__SceUdcdKernel =
     [ "ksceUdcdGetDrvList", "group__SceUdcdKernel.html#ga60e4cb4b464c7afeddf6426f371f7def", null ],
     [ "ksceUdcdGetDrvState", "group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0", null ],
     [ "ksceUdcdRegister", "group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f", null ],
+    [ "ksceUdcdRegisterToBus", "group__SceUdcdKernel.html#ga040fd5c7d2c0211efb6925fb9e981b30", null ],
     [ "ksceUdcdReqCancelAll", "group__SceUdcdKernel.html#gae77811300ecf6782eb2bd68e603d3a81", null ],
     [ "ksceUdcdReqRecv", "group__SceUdcdKernel.html#ga912d7d79a404bfc6939fbe2d866e981a", null ],
     [ "ksceUdcdReqSend", "group__SceUdcdKernel.html#gafcf76b28b30c36a612e3eed344fa3aa4", null ],
