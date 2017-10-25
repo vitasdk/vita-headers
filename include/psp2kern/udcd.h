@@ -341,9 +341,9 @@ typedef struct SceUdcdDriver {
 	SceUdcdConfiguration *configuration_hi;         //!< Pointer to hi-speed device configuration
 	SceUdcdDeviceDescriptor *descriptor;            //!< Pointer to full-speed device descriptor
 	SceUdcdConfiguration *configuration;            //!< Pointer to full-speed device configuration
-	SceUdcdStringDescriptor *stringDescriptorsUnk0; //!< Unknown string descriptors
-	SceUdcdStringDescriptor *stringDescriptorsUnk1; //!< Default String descriptor
-	SceUdcdStringDescriptor *stringDescriptorsUnk2; //!< String descriptors (unknown)
+	SceUdcdStringDescriptor *stringDescriptors; //!< Default string descriptors
+	SceUdcdStringDescriptor *stringDescriptorProduct; //!< Product string descriptor (iProduct has to be 2)
+	SceUdcdStringDescriptor *stringDescriptorSerial; //!< Serial string descriptor (iSerial has to be 3)
 	int (*processRequest)(int recipient, int arg /* endpoint number or interface number */, SceUdcdEP0DeviceRequest *req, void *user_data); //!< Received a control request
 	int (*changeSetting)(int interfaceNumber, int alternateSetting, int bus); //!< Change alternate setting
 	int (*attach)(int usb_version, void *user_data);                                  //!< Configuration set (attach) function
