@@ -345,14 +345,14 @@ typedef struct SceUdcdDriver {
 	SceUdcdStringDescriptor *stringDescriptorsUnk1; //!< Default String descriptor
 	SceUdcdStringDescriptor *stringDescriptorsUnk2; //!< String descriptors (unknown)
 	int (*processRequest)(int recipient, int arg /* endpoint number or interface number */, SceUdcdEP0DeviceRequest *req, void *user_data); //!< Received a control request
-	int (*changeSetting)(int interfaceNumber, int alternateSetting); //!< Change alternate setting
+	int (*changeSetting)(int interfaceNumber, int alternateSetting, int bus); //!< Change alternate setting
 	int (*attach)(int usb_version, void *user_data);                                  //!< Configuration set (attach) function
 	void (*detach)(void *user_data);                                            //!< Configuration unset (detach) function
 	void (*configure)(int usb_version, int desc_count, SceUdcdInterfaceSettings *settings, void *user_data); //!< Configure the device
 	int (*start)(int size, void *args, void *user_data); //!< Function called when the driver is started
 	int (*stop)(int size, void *args, void *user_data);  //!< Function called when the driver is stopped
 	void *user_data;                   //!< User data
-	unsigned int unk2;                   //!< Unknown data
+	int bus;                   //!< USB bus
 	struct SceUdcdDriver *link;          //!< Link to next USB driver in the chain, set to NULL
 } SceUdcdDriver;
 
