@@ -88,6 +88,11 @@ int ksceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, int sync);
 int ksceDisplayGetFrameBufDimensions(int *width, int *height);
 
 /**
+ * Primary display index
+ */
+int ksceDisplayGetPrimaryHead(void);
+
+/**
  * Number of vertical blank pulses up to now for a display
  *
  * @param[in] display - Display index

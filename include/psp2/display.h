@@ -78,9 +78,9 @@ int sceDisplaySetFrameBuf(const SceDisplayFrameBuf *pParam, SceDisplaySetBufSync
 int sceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, SceDisplaySetBufSync sync);
 
 /**
- * Current display index
+ * Primary display index
  */
-int sceDisplayGetDisplay(void);
+int sceDisplayGetPrimaryHead(void);
 
 /**
  * Get current number of fps for the current screen mode.
