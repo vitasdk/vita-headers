@@ -2963,7 +2963,56 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00037</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable</field>
+    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00060</field>
+    <field name="keywords"></field>
+    <field name="text">SceDisplayFrameBufInfo</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00061</field>
+    <field name="keywords"></field>
+    <field name="text">SceSize size</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00062</field>
+    <field name="keywords"></field>
+    <field name="text">SceUID pid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00063</field>
+    <field name="keywords"></field>
+    <field name="text">vblankcount</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00064</field>
+    <field name="keywords"></field>
+    <field name="text">uintptr_t paddr</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00065</field>
+    <field name="keywords"></field>
+    <field name="text">SceDisplayFrameBuf framebuf</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">display.h</field>
+    <field name="url">ern_2display_8h_source.html#l00066</field>
+    <field name="keywords"></field>
+    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufInfoForPid SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -16120,6 +16169,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89</field>
     <field name="keywords">ksceDisplayGetFrameBuf</field>
     <field name="text">Get current framebuffer parameters pParam Pointer to a SceDisplayFrameBuf structure which will receive framebuffer parameters sync One of 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayGetFrameBufInfoForPid</field>
+    <field name="args">(SceUID pid, int head, int index, SceDisplayFrameBufInfo *info)</field>
+    <field name="url">group__SceDisplayKernel.html#ga051dc94ebff9b674f55ee827bc38c830</field>
+    <field name="keywords">ksceDisplayGetFrameBufInfoForPid</field>
+    <field name="text">Get the configured framebuffer information of a head and its framebuffer index for a PID pid PID of the process to get the framebuffer information from It can either be a vallid PID to use the current configured framebuffer for the head and index or 0 to use the PID of the caller head Use 0 for OLED/LCD and 1 for HDMI index Can be 0 or 1 info Pointer to a SceDisplayFrameBufInfo structure which will receive the framebuffer information 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>

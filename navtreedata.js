@@ -23,11 +23,11 @@ var NAVTREEINDEX =
 "group__SceCPU.html",
 "group__SceCompatUser.html#ga55b1105ec26d1ada689c59a441c00659",
 "group__SceDisplay.html",
-"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388afd9cff75ec3e7d1413f26f11c1cf66d6",
-"group__SceNpDrm.html",
-"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16adca232457511588b2e080b1a5f07db42",
-"group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3",
-"kernel_2sysmem_8h_source.html"
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aee20a6bacd31ddb17b1ffde2ab465461",
+"group__SceNetUser.html#gaff328099e5197f18c021c14793d0a476",
+"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ac6992e1aba580078eac0cdc3f833dbf2",
+"group__SceThreadMgrKernel.html#gafa17d33132fbdcce5fa3d260d51385c2",
+"kernel_2processmgr_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
