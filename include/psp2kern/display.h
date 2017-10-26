@@ -55,6 +55,18 @@ typedef struct SceDisplayFrameBuf {
 } SceDisplayFrameBuf;
 
 /**
+ * Extended framebuffer information
+*/
+typedef struct SceDisplayFrameBufInfo {
+	SceSize size;                //!< sizeof(SceDisplayFrameBufInfo)
+	SceUID pid;                  //!< PID of the process owning this framebuffer
+	unsigned int vblankcount;    //!< Amount of VBlanks this framebuffer has been displayed
+	uintptr_t paddr;             //!< Physical address
+	SceDisplayFrameBuf framebuf; //!< SceDisplayFrameBuf information
+	unsigned int resolution;     //!< Resolution
+} SceDisplayFrameBufInfo;
+
+/**
  * Set/Update framebuffer parameters
  *
  * @param[in] pParam - Pointer to a ::SceDisplayFrameBuf structure.
@@ -76,6 +88,21 @@ int ksceDisplaySetFrameBuf(const SceDisplayFrameBuf *pParam, int sync);
  * @return 0 on success, < 0 on error.
 */
 int ksceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, int sync);
+
+/**
+ * Get the configured framebuffer information of a head and its framebuffer index for a PID
+ *
+ * @param[in] pid - PID of the process to get the framebuffer information from.
+ *                  It can either be a vallid PID, -1 to use the current configured
+ *                  framebuffer for the head and index, or 0 to use the PID of the caller.
+ * @param[in] head - Use 0 for OLED/LCD and 1 for HDMI
+ * @param[in] index - Can be 0 or 1
+ * @param[out] info - Pointer to a ::SceDisplayFrameBufInfo structure
+ * which will receive the framebuffer information.
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceDisplayGetFrameBufInfoForPid(SceUID pid, int head, int index, SceDisplayFrameBufInfo *info);
 
 /**
  * Get maximum framebuffer resolution
