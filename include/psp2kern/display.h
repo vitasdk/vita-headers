@@ -88,7 +88,9 @@ int ksceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, int sync);
 int ksceDisplayGetFrameBufDimensions(int *width, int *height);
 
 /**
- * Number of vertical blank pulses up to now
+ * Number of vertical blank pulses up to now for display
+ *
+ * @param[in] display - Display index
  */
 int ksceDisplayGetVcountForDisplay(int display);
 
@@ -98,9 +100,23 @@ int ksceDisplayGetVcountForDisplay(int display);
 int ksceDisplayWaitVblankStart(void);
 
 /**
+ * Wait for vertical blank start for display
+ *
+ * @param[in] display - Display index
+ */
+int ksceDisplayWaitVblankStartForDisplay(int display);
+
+/**
  * Wait for vertical blank start with callback
  */
 int ksceDisplayWaitVblankStartCB(void);
+
+/**
+ * Wait for vertical blank start with callback for display
+ *
+ * @param[in] display - Display index
+ */
+int ksceDisplayWaitVblankStartCBForDisplay(int display);
 
 /**
  * Wait for vertical blank start after specified number of vertical periods
@@ -110,11 +126,27 @@ int ksceDisplayWaitVblankStartCB(void);
 int ksceDisplayWaitVblankStartMulti(unsigned int vcount);
 
 /**
+ * Wait for vertical blank start after specified number of vertical periods for display
+ *
+ * @param[in] display - Display index
+ * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
+ */
+int ksceDisplayWaitVblankStartMultiForDisplay(int display, unsigned int vcount);
+
+/**
  * Wait for vertical blank start with callback after specified number of vertical periods
  *
  * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
  */
 int ksceDisplayWaitVblankStartMultiCB(unsigned int vcount);
+
+/**
+ * Wait for vertical blank start with callback after specified number of vertical periods for display
+ *
+ * @param[in] display - Display index
+ * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
+ */
+int ksceDisplayWaitVblankStartMultiCBForDisplay(int display, unsigned int vcount);
 
 /**
  * Wait for vertical blank start since last update of framebuffer
