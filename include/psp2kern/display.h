@@ -88,9 +88,19 @@ int ksceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, int sync);
 int ksceDisplayGetFrameBufDimensions(int *width, int *height);
 
 /**
+ * Number of vertical blank pulses up to now
+ */
+int ksceDisplayGetVcountForDisplay(int display);
+
+/**
  * Wait for vertical blank start
  */
 int ksceDisplayWaitVblankStart(void);
+
+/**
+ * Wait for vertical blank start with callback
+ */
+int ksceDisplayWaitVblankStartCB(void);
 
 /**
  * Wait for vertical blank start after specified number of vertical periods
@@ -98,6 +108,77 @@ int ksceDisplayWaitVblankStart(void);
  * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
  */
 int ksceDisplayWaitVblankStartMulti(unsigned int vcount);
+
+/**
+ * Wait for vertical blank start with callback after specified number of vertical periods
+ *
+ * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
+ */
+int ksceDisplayWaitVblankStartMultiCB(unsigned int vcount);
+
+/**
+ * Wait for vertical blank start since last update of framebuffer
+ */
+int ksceDisplayWaitSetFrameBuf(void);
+
+/**
+ * Wait for vertical blank start with callback since last update of framebuffer
+ */
+int ksceDisplayWaitSetFrameBufCB(void);
+
+/**
+ * Wait for vertical blank start after specified number of vertical periods
+ * since last update of framebuffer.
+ *
+ * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
+ */
+int ksceDisplayWaitSetFrameBufMulti(unsigned int vcount);
+
+/**
+ * Wait for vertical blank start with callback after specified number of vertical periods
+ * since last update of framebuffer.
+ *
+ * @param[in] vcount - Number of vertical periods before waiting for vertical blank start
+ */
+int ksceDisplayWaitSetFrameBufMultiCB(unsigned int vcount);
+
+/**
+ * Register callback to be used at each vertical blank start
+ *
+ * @param[in] uid - Callback UID
+ */
+int ksceDisplayRegisterVblankStartCallback(SceUID uid);
+
+/**
+ * Register callback to be used at each vertical blank start for a display
+ *
+ * @param[in] display - Display index
+ * @param[in] uid - Callback UID
+ */
+int ksceDisplayRegisterVblankStartCallbackForDisplay(int display, SceUID uid);
+
+/**
+ * Unregister callback used at each vertical blank start
+ *
+ * @param[in] uid - Callback UID
+ */
+int ksceDisplayUnregisterVblankStartCallback(SceUID uid);
+
+/**
+ * Unregister callback used at each vertical blank start for a display
+ *
+ * @param[in] display - Display index
+ * @param[in] uid - Callback UID
+ */
+int ksceDisplayUnregisterVblankStartCallbackForDisplay(int display, SceUID uid);
+
+/**
+ * Enable/disable color inversion for a display.
+ *
+ * @param[in] display - Display index
+ * @param[in] enable - Enable/disable color inversion
+ */
+int ksceDisplaySetInvertColors(int display, int enable);
 
 #ifdef __cplusplus
 }

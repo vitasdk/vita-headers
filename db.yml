@@ -1053,23 +1053,31 @@ modules:
         nid: 0x4FAACD11
       SceDisplayForDriver:
         functions:
-          ksceDisplayGetFrameBufDimensions: 0x5AFE6CD3
-          ksceDisplaySetFrameBuf: 0x289D82FE
-          ksceDisplayGetFrameBuf: 0xEEDA2E54
-          ksceDisplaySetFrameBufInternal: 0x16466675
-          ksceDisplayGetFrameBufInternal: 0x19F94C63
-          ksceDisplayRegisterFrameBufCallback: 0x6E22990E
           ksceDisplayGetActualViewportConf: 0x40ACFE51
-          ksceDisplaySetViewportConf: 0xEE5EB52D
-          ksceDisplaySetInvertColors: 0x19140ACD
+          ksceDisplayGetFrameBuf: 0xEEDA2E54
+          ksceDisplayGetFrameBufDimensions: 0x5AFE6CD3
+          ksceDisplayGetFrameBufInternal: 0x19F94C63
+          ksceDisplayGetVcountForDisplay: 0x8B5DA27B
+          ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
+          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
+          ksceDisplayRegisterVblankStartCallbackForDisplay: 0x4AE2A2B1
+          ksceDisplayRegisterFrameBufCallback: 0x6E22990E
           ksceDisplaySetBrightness: 0x9E3C6DC6
           ksceDisplaySetDisplayColorSpaceMode: 0x8D79D187
-          ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
-          ksceDisplayUnregisterVblankStartCallback: 0xB027433E
-          ksceDisplayWaitVblankStartMulti: 0x40F1469C
-          ksceDisplayWaitVblankStartMultiCB: 0x46F186C3
-          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
+          ksceDisplaySetFrameBuf: 0x289D82FE
+          ksceDisplaySetFrameBufInternal: 0x16466675
+          ksceDisplaySetInvertColors: 0x19140ACD
+          ksceDisplaySetViewportConf: 0xEE5EB52D
+          ksceDisplayUnregisterVblankStartCallback: 0x4B27191F
+          ksceDisplayUnregisterVblankStartCallbackForDisplay: 0xB027433E
+          ksceDisplayWaitSetFrameBuf: 0x1C0C9C4A
+          ksceDisplayWaitSetFrameBufCB: 0x9D7F203C
+          ksceDisplayWaitSetFrameBufMulti: 0xE6D27E0A
+          ksceDisplayWaitSetFrameBufMultiCB: 0x863EACBE
           ksceDisplayWaitVblankStart: 0x984C27E7
+          ksceDisplayWaitVblankStartCB: 0x46F186C3
+          ksceDisplayWaitVblankStartMulti: 0x40F1469C
+          ksceDisplayWaitVblankStartMultiCB: 0x77ED8B3A
         kernel: true
         nid: 0x9FED47AC
   SceFace:
@@ -2067,6 +2075,7 @@ modules:
           ksceKernelCreateEventFlag: 0x4336BAA4
           ksceKernelCreateMutex: 0xFBAA026E
           ksceKernelCreateSema: 0x30E93C31
+          ksceKernelCreateSimpleEvent: 0x357A8177
           ksceKernelCreateThread: 0xC6674E7D
           ksceKernelDelayThread: 0x4B675D05
           ksceKernelDelayThreadCB: 0x9C0180E1
@@ -2095,6 +2104,7 @@ modules:
           ksceKernelPollEventFlag: 0x76C6555B
           ksceKernelPollSema: 0x4FDDFE24
           ksceKernelPulseEvent: 0x2427C81B
+          ksceKernelPulseEventWithNotifyCallback: 0x714A107A
           ksceKernelRegisterCallbackToEvent: 0x832A7E0C
           ksceKernelRunWithStack: 0xE54FD746
           ksceKernelSetEvent: 0x9EA3A45C
@@ -2115,6 +2125,8 @@ modules:
           ksceKernelUnregisterCallbackFromEvent: 0x2E48D81C
           ksceKernelUnregisterCallbackFromEventAll: 0x8DADBD16
           ksceKernelUnregisterThreadEventHandler: 0x2C8ED6F0
+          ksceKernelWaitEvent: 0xC529EA32
+          ksceKernelWaitEventCB: 0x360C655C
           ksceKernelWaitEventFlag: 0x0C1D3F20
           ksceKernelWaitEventFlagCB: 0x8A35F714
           ksceKernelWaitSema: 0x3C8B55A9
@@ -2370,7 +2382,7 @@ modules:
           ksceKernelIsCDialogAvailable: 0x2F6020B7
           ksceKernelCreateProcessLocalStorage: 0x3801D7D6
           ksceKernelGetProcessTimeWideCore: 0x82D94BE9
-          ksceKernelGetPidProcessLocalStorageAddr: 0xAF80F39C
+          ksceKernelGetProcessLocalStorageAddrForPid: 0xAF80F39C
           ksceKernelGetRemoteProcessTime: 0xC074EB31
           ksceKernelGetProcessTimeCore: 0xEC283166
           ksceKernelGetProcessLocalStorageAddr: 0xEE694840

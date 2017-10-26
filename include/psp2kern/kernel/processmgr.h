@@ -29,7 +29,7 @@ int ksceKernelGetProcessInfo(SceUID pid, SceKernelProcessInfo *info);
 
 int ksceKernelCreateProcessLocalStorage(const char *name, SceSize size);
 void *ksceKernelGetProcessLocalStorageAddr(int key);
-int ksceKernelGetPidProcessLocalStorageAddr(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
+int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
 
 #ifdef __cplusplus
 }
