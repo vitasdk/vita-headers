@@ -96,16 +96,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga08eff4b36dd9ecab705260100edcf919"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga08eff4b36dd9ecab705260100edcf919">sceDisplayGetRefreshRate</a> (float *pFps)</td></tr>
 <tr class="memdesc:ga08eff4b36dd9ecab705260100edcf919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current number of fps for the current screen mode.  <a href="#ga08eff4b36dd9ecab705260100edcf919">More...</a><br /></td></tr>
 <tr class="separator:ga08eff4b36dd9ecab705260100edcf919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3eff9d61a77ecbaa6e1c7d4ff68a5c09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga3eff9d61a77ecbaa6e1c7d4ff68a5c09">sceDisplayGetFrameBufDimensions</a> (int *width, int *height)</td></tr>
-<tr class="memdesc:ga3eff9d61a77ecbaa6e1c7d4ff68a5c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer dimensions.  <a href="#ga3eff9d61a77ecbaa6e1c7d4ff68a5c09">More...</a><br /></td></tr>
-<tr class="separator:ga3eff9d61a77ecbaa6e1c7d4ff68a5c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga635944f269373f8493fb7be896635aab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga635944f269373f8493fb7be896635aab">sceDisplayGetMaximumFrameBufResolution</a> (int *width, int *height)</td></tr>
+<tr class="memdesc:ga635944f269373f8493fb7be896635aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum framebuffer resolution.  <a href="#ga635944f269373f8493fb7be896635aab">More...</a><br /></td></tr>
+<tr class="separator:ga635944f269373f8493fb7be896635aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5890d97145fdad4c46cf94469e80ce2a"><td class="memItemLeft" align="right" valign="top"><a id="ga5890d97145fdad4c46cf94469e80ce2a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga5890d97145fdad4c46cf94469e80ce2a">sceDisplayGetVcount</a> (void)</td></tr>
 <tr class="memdesc:ga5890d97145fdad4c46cf94469e80ce2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertical blank pulses up to now. <br /></td></tr>
 <tr class="separator:ga5890d97145fdad4c46cf94469e80ce2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad66d0a9c6dc4e3adcfd4b718183efc14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gad66d0a9c6dc4e3adcfd4b718183efc14">sceDisplayGetVcountForDisplay</a> (int display)</td></tr>
-<tr class="memdesc:gad66d0a9c6dc4e3adcfd4b718183efc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertical blank pulses up to now for a display.  <a href="#gad66d0a9c6dc4e3adcfd4b718183efc14">More...</a><br /></td></tr>
-<tr class="separator:gad66d0a9c6dc4e3adcfd4b718183efc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd7f1bdc759dfe6a5a96fc178de26291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gadd7f1bdc759dfe6a5a96fc178de26291">sceDisplayGetVcountInternal</a> (int display)</td></tr>
+<tr class="memdesc:gadd7f1bdc759dfe6a5a96fc178de26291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertical blank pulses up to now for a display.  <a href="#gadd7f1bdc759dfe6a5a96fc178de26291">More...</a><br /></td></tr>
+<tr class="separator:gadd7f1bdc759dfe6a5a96fc178de26291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab921d38b61c45b0472ac0f45660747c9"><td class="memItemLeft" align="right" valign="top"><a id="gab921d38b61c45b0472ac0f45660747c9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gab921d38b61c45b0472ac0f45660747c9">sceDisplayWaitVblankStart</a> (void)</td></tr>
 <tr class="memdesc:gab921d38b61c45b0472ac0f45660747c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start. <br /></td></tr>
@@ -265,14 +265,14 @@ framebuffer width </td></tr>
 
 </div>
 </div>
-<a id="ga3eff9d61a77ecbaa6e1c7d4ff68a5c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3eff9d61a77ecbaa6e1c7d4ff68a5c09">&sect;&nbsp;</a></span>sceDisplayGetFrameBufDimensions()</h2>
+<a id="ga635944f269373f8493fb7be896635aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga635944f269373f8493fb7be896635aab">&sect;&nbsp;</a></span>sceDisplayGetMaximumFrameBufResolution()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceDisplayGetFrameBufDimensions </td>
+          <td class="memname">int sceDisplayGetMaximumFrameBufResolution </td>
           <td>(</td>
           <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>width</em>, </td>
@@ -291,11 +291,11 @@ framebuffer width </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get current framebuffer dimensions. </p>
+<p>Get maximum framebuffer resolution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Framebuffer width </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Framebuffer height</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Maximum width </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Maximum height</td></tr>
   </table>
   </dd>
 </dl>
@@ -331,14 +331,14 @@ framebuffer width </td></tr>
 
 </div>
 </div>
-<a id="gad66d0a9c6dc4e3adcfd4b718183efc14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad66d0a9c6dc4e3adcfd4b718183efc14">&sect;&nbsp;</a></span>sceDisplayGetVcountForDisplay()</h2>
+<a id="gadd7f1bdc759dfe6a5a96fc178de26291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd7f1bdc759dfe6a5a96fc178de26291">&sect;&nbsp;</a></span>sceDisplayGetVcountInternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceDisplayGetVcountForDisplay </td>
+          <td class="memname">int sceDisplayGetVcountInternal </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>display</em></td><td>)</td>
