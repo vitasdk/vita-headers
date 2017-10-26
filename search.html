@@ -2963,7 +2963,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00037</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayGetVcountForDisplay display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackForDisplay display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackForDisplay display SceUID uid ksceDisplaySetInvertColors display enable</field>
+    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayGetVcountForDisplay display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartForDisplay display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBForDisplay display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiForDisplay display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBForDisplay display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackForDisplay display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackForDisplay display SceUID uid ksceDisplaySetInvertColors display enable</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -16111,7 +16111,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(int display)</field>
     <field name="url">group__SceDisplayKernel.html#ga01466f128491091a8b0600d738ee4198</field>
     <field name="keywords">ksceDisplayGetVcountForDisplay</field>
-    <field name="text">Number of vertical blank pulses up to now</field>
+    <field name="text">Number of vertical blank pulses up to now for display display Display index</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16123,11 +16123,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceDisplayWaitVblankStartForDisplay</field>
+    <field name="args">(int display)</field>
+    <field name="url">group__SceDisplayKernel.html#ga38d9fdea44d188cdf3b9a42573276b75</field>
+    <field name="keywords">ksceDisplayWaitVblankStartForDisplay</field>
+    <field name="text">Wait for vertical blank start for display display Display index</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceDisplayWaitVblankStartCB</field>
     <field name="args">(void)</field>
     <field name="url">group__SceDisplayKernel.html#ga86fe1c873d8702622be881e2240d70f8</field>
     <field name="keywords">ksceDisplayWaitVblankStartCB</field>
     <field name="text">Wait for vertical blank start with callback</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitVblankStartCBForDisplay</field>
+    <field name="args">(int display)</field>
+    <field name="url">group__SceDisplayKernel.html#ga3f8aff2bc70be77ce65c5f375dafb8f5</field>
+    <field name="keywords">ksceDisplayWaitVblankStartCBForDisplay</field>
+    <field name="text">Wait for vertical blank start with callback for display display Display index</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16139,11 +16155,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceDisplayWaitVblankStartMultiForDisplay</field>
+    <field name="args">(int display, unsigned int vcount)</field>
+    <field name="url">group__SceDisplayKernel.html#ga19f15a291d870b7d898aa30d481b651b</field>
+    <field name="keywords">ksceDisplayWaitVblankStartMultiForDisplay</field>
+    <field name="text">Wait for vertical blank start after specified number of vertical periods for display display Display index vcount Number of vertical periods before waiting for vertical blank start</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceDisplayWaitVblankStartMultiCB</field>
     <field name="args">(unsigned int vcount)</field>
     <field name="url">group__SceDisplayKernel.html#gae24d6c56eb5c2e782ee77de4bac1ee40</field>
     <field name="keywords">ksceDisplayWaitVblankStartMultiCB</field>
     <field name="text">Wait for vertical blank start with callback after specified number of vertical periods vcount Number of vertical periods before waiting for vertical blank start</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitVblankStartMultiCBForDisplay</field>
+    <field name="args">(int display, unsigned int vcount)</field>
+    <field name="url">group__SceDisplayKernel.html#gabf25fdf670478ad71414185fae7a34ea</field>
+    <field name="keywords">ksceDisplayWaitVblankStartMultiCBForDisplay</field>
+    <field name="text">Wait for vertical blank start with callback after specified number of vertical periods for display display Display index vcount Number of vertical periods before waiting for vertical blank start</field>
   </doc>
   <doc>
     <field name="type">function</field>

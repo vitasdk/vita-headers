@@ -23,6 +23,10 @@ var group__SceDisplayKernel =
     [ "ksceDisplayWaitSetFrameBufMultiCB", "group__SceDisplayKernel.html#ga0aea508b1ae498f431d37732d961ef28", null ],
     [ "ksceDisplayWaitVblankStart", "group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae", null ],
     [ "ksceDisplayWaitVblankStartCB", "group__SceDisplayKernel.html#ga86fe1c873d8702622be881e2240d70f8", null ],
+    [ "ksceDisplayWaitVblankStartCBForDisplay", "group__SceDisplayKernel.html#ga3f8aff2bc70be77ce65c5f375dafb8f5", null ],
+    [ "ksceDisplayWaitVblankStartForDisplay", "group__SceDisplayKernel.html#ga38d9fdea44d188cdf3b9a42573276b75", null ],
     [ "ksceDisplayWaitVblankStartMulti", "group__SceDisplayKernel.html#ga80d28604f6fce0d218bd11ca039f19eb", null ],
-    [ "ksceDisplayWaitVblankStartMultiCB", "group__SceDisplayKernel.html#gae24d6c56eb5c2e782ee77de4bac1ee40", null ]
+    [ "ksceDisplayWaitVblankStartMultiCB", "group__SceDisplayKernel.html#gae24d6c56eb5c2e782ee77de4bac1ee40", null ],
+    [ "ksceDisplayWaitVblankStartMultiCBForDisplay", "group__SceDisplayKernel.html#gabf25fdf670478ad71414185fae7a34ea", null ],
+    [ "ksceDisplayWaitVblankStartMultiForDisplay", "group__SceDisplayKernel.html#ga19f15a291d870b7d898aa30d481b651b", null ]
 ];
