@@ -2935,7 +2935,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">display_8h_source.html#l00054</field>
     <field name="keywords"></field>
-    <field name="text">height SceDisplayFrameBuf sceDisplaySetFrameBuf SceDisplayFrameBuf pParam SceDisplaySetBufSync sync sceDisplayGetFrameBuf SceDisplayFrameBuf pParam SceDisplaySetBufSync sync sceDisplayGetRefreshRate pFps sceDisplayGetVcount sceDisplayWaitVblankStart sceDisplayWaitVblankStartCB sceDisplayWaitVblankStartMulti vcount sceDisplayWaitVblankStartMultiCB vcount sceDisplayWaitSetFrameBuf sceDisplayWaitSetFrameBufCB sceDisplayWaitSetFrameBufMulti vcount sceDisplayWaitSetFrameBufMultiCB vcount sceDisplayRegisterVblankStartCallback SceUID uid sceDisplayUnregisterVblankStartCallback SceUID uid</field>
+    <field name="text">height SceDisplayFrameBuf sceDisplaySetFrameBuf SceDisplayFrameBuf pParam SceDisplaySetBufSync sync sceDisplayGetFrameBuf SceDisplayFrameBuf pParam SceDisplaySetBufSync sync sceDisplayGetDisplay sceDisplayGetRefreshRate pFps sceDisplayGetFrameBufDimensions width height sceDisplayGetVcount sceDisplayGetVcountForDisplay display sceDisplayWaitVblankStart sceDisplayWaitVblankStartCB sceDisplayWaitVblankStartMulti vcount sceDisplayWaitVblankStartMultiCB vcount sceDisplayWaitSetFrameBuf sceDisplayWaitSetFrameBufCB sceDisplayWaitSetFrameBufMulti vcount sceDisplayWaitSetFrameBufMultiCB vcount sceDisplayRegisterVblankStartCallback SceUID uid sceDisplayUnregisterVblankStartCallback SceUID uid</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -12240,6 +12240,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">sceDisplayGetDisplay</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceDisplayUser.html#ga62c3289aca137a50cc6c414fe21163ab</field>
+    <field name="keywords">sceDisplayGetDisplay</field>
+    <field name="text">Current display index</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">sceDisplayGetRefreshRate</field>
     <field name="args">(float *pFps)</field>
     <field name="url">group__SceDisplayUser.html#ga08eff4b36dd9ecab705260100edcf919</field>
@@ -12248,11 +12256,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">sceDisplayGetFrameBufDimensions</field>
+    <field name="args">(int *width, int *height)</field>
+    <field name="url">group__SceDisplayUser.html#ga3eff9d61a77ecbaa6e1c7d4ff68a5c09</field>
+    <field name="keywords">sceDisplayGetFrameBufDimensions</field>
+    <field name="text">Get current framebuffer dimensions width Framebuffer width height Framebuffer height 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">sceDisplayGetVcount</field>
     <field name="args">(void)</field>
     <field name="url">group__SceDisplayUser.html#ga5890d97145fdad4c46cf94469e80ce2a</field>
     <field name="keywords">sceDisplayGetVcount</field>
     <field name="text">Number of vertical blank pulses up to now</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceDisplayGetVcountForDisplay</field>
+    <field name="args">(int display)</field>
+    <field name="url">group__SceDisplayUser.html#gad66d0a9c6dc4e3adcfd4b718183efc14</field>
+    <field name="keywords">sceDisplayGetVcountForDisplay</field>
+    <field name="text">Number of vertical blank pulses up to now for a display display Display index</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16111,7 +16135,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(int display)</field>
     <field name="url">group__SceDisplayKernel.html#ga01466f128491091a8b0600d738ee4198</field>
     <field name="keywords">ksceDisplayGetVcountForDisplay</field>
-    <field name="text">Number of vertical blank pulses up to now for display display Display index</field>
+    <field name="text">Number of vertical blank pulses up to now for a display display Display index</field>
   </doc>
   <doc>
     <field name="type">function</field>
