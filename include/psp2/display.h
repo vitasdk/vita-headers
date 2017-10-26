@@ -93,14 +93,14 @@ int sceDisplayGetPrimaryHead(void);
 int sceDisplayGetRefreshRate(float *pFps);
 
 /**
- * Get current framebuffer dimensions
+ * Get maximum framebuffer resolution
  *
- * @param[out] width - Framebuffer width
- * @param[out] height - Framebuffer height
+ * @param[out] width - Maximum width
+ * @param[out] height - Maximum height
  *
  * @return 0 on success, < 0 on error.
 */
-int sceDisplayGetFrameBufDimensions(int *width, int *height);
+int sceDisplayGetMaximumFrameBufResolution(int *width, int *height);
 
 /**
  * Number of vertical blank pulses up to now
@@ -112,7 +112,7 @@ int sceDisplayGetVcount(void);
  *
  * @param[in] display - Display index
  */
-int sceDisplayGetVcountForDisplay(int display);
+int sceDisplayGetVcountInternal(int display);
 
 /**
  * Wait for vertical blank start
