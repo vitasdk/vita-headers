@@ -10,6 +10,7 @@ var group__SceDisplayKernel =
     [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c", null ],
     [ "ksceDisplayGetFrameBuf", "group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89", null ],
     [ "ksceDisplayGetFrameBufDimensions", "group__SceDisplayKernel.html#ga0cb12ad2f870bd91623d2946683334e7", null ],
+    [ "ksceDisplayGetPrimaryHead", "group__SceDisplayKernel.html#ga29cfc677a7b1da3d9dd9189dfdeb9734", null ],
     [ "ksceDisplayGetVcountForDisplay", "group__SceDisplayKernel.html#ga01466f128491091a8b0600d738ee4198", null ],
     [ "ksceDisplayRegisterFrameBufCallback", "group__SceDisplayKernel.html#gaab3ff65454443a1588267a69656d357e", null ],
     [ "ksceDisplayRegisterFrameBufCallbackForDisplay", "group__SceDisplayKernel.html#ga265b95b9382e9416e71702fac941957f", null ],
