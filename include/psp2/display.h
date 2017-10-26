@@ -78,6 +78,11 @@ int sceDisplaySetFrameBuf(const SceDisplayFrameBuf *pParam, SceDisplaySetBufSync
 int sceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, SceDisplaySetBufSync sync);
 
 /**
+ * Current display index
+ */
+int sceDisplayGetDisplay(void);
+
+/**
  * Get current number of fps for the current screen mode.
  *
  * @param[out] pFps - Pointer to a float variable to store current number of fps.
@@ -88,9 +93,26 @@ int sceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, SceDisplaySetBufSync sync)
 int sceDisplayGetRefreshRate(float *pFps);
 
 /**
+ * Get current framebuffer dimensions
+ *
+ * @param[out] width - Framebuffer width
+ * @param[out] height - Framebuffer height
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int sceDisplayGetFrameBufDimensions(int *width, int *height);
+
+/**
  * Number of vertical blank pulses up to now
  */
 int sceDisplayGetVcount(void);
+
+/**
+ * Number of vertical blank pulses up to now for a display
+ *
+ * @param[in] display - Display index
+ */
+int sceDisplayGetVcountForDisplay(int display);
 
 /**
  * Wait for vertical blank start

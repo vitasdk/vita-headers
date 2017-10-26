@@ -1031,8 +1031,11 @@ modules:
     libraries:
       SceDisplay:
         functions:
+          sceDisplayGetDisplay: 0x7178FADA
+          sceDisplayGetFrameBufDimensions: 0x2EBFC7CB
           sceDisplayGetRefreshRate: 0xA08CA60D
           sceDisplayGetVcount: 0xB6FDE0BA
+          sceDisplayGetVcountForDisplay: 0x9686859E
           sceDisplayRegisterVblankStartCallback: 0x6BDF4C4D
           sceDisplayUnregisterVblankStartCallback: 0x98436A80
           sceDisplayWaitSetFrameBuf: 0x9423560C
