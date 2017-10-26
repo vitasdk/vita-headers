@@ -92,13 +92,53 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0cb12ad2f870bd91623d2946683334e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0cb12ad2f870bd91623d2946683334e7">ksceDisplayGetFrameBufDimensions</a> (int *width, int *height)</td></tr>
 <tr class="memdesc:ga0cb12ad2f870bd91623d2946683334e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer dimensions.  <a href="#ga0cb12ad2f870bd91623d2946683334e7">More...</a><br /></td></tr>
 <tr class="separator:ga0cb12ad2f870bd91623d2946683334e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01466f128491091a8b0600d738ee4198"><td class="memItemLeft" align="right" valign="top"><a id="ga01466f128491091a8b0600d738ee4198"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga01466f128491091a8b0600d738ee4198">ksceDisplayGetVcountForDisplay</a> (int display)</td></tr>
+<tr class="memdesc:ga01466f128491091a8b0600d738ee4198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertical blank pulses up to now. <br /></td></tr>
+<tr class="separator:ga01466f128491091a8b0600d738ee4198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf93d218ae44013d1d54b1f760de634ae"><td class="memItemLeft" align="right" valign="top"><a id="gaf93d218ae44013d1d54b1f760de634ae"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae">ksceDisplayWaitVblankStart</a> (void)</td></tr>
 <tr class="memdesc:gaf93d218ae44013d1d54b1f760de634ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start. <br /></td></tr>
 <tr class="separator:gaf93d218ae44013d1d54b1f760de634ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86fe1c873d8702622be881e2240d70f8"><td class="memItemLeft" align="right" valign="top"><a id="ga86fe1c873d8702622be881e2240d70f8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga86fe1c873d8702622be881e2240d70f8">ksceDisplayWaitVblankStartCB</a> (void)</td></tr>
+<tr class="memdesc:ga86fe1c873d8702622be881e2240d70f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback. <br /></td></tr>
+<tr class="separator:ga86fe1c873d8702622be881e2240d70f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80d28604f6fce0d218bd11ca039f19eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga80d28604f6fce0d218bd11ca039f19eb">ksceDisplayWaitVblankStartMulti</a> (unsigned int vcount)</td></tr>
 <tr class="memdesc:ga80d28604f6fce0d218bd11ca039f19eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start after specified number of vertical periods.  <a href="#ga80d28604f6fce0d218bd11ca039f19eb">More...</a><br /></td></tr>
 <tr class="separator:ga80d28604f6fce0d218bd11ca039f19eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae24d6c56eb5c2e782ee77de4bac1ee40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gae24d6c56eb5c2e782ee77de4bac1ee40">ksceDisplayWaitVblankStartMultiCB</a> (unsigned int vcount)</td></tr>
+<tr class="memdesc:gae24d6c56eb5c2e782ee77de4bac1ee40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback after specified number of vertical periods.  <a href="#gae24d6c56eb5c2e782ee77de4bac1ee40">More...</a><br /></td></tr>
+<tr class="separator:gae24d6c56eb5c2e782ee77de4bac1ee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="memItemLeft" align="right" valign="top"><a id="ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga7f3f1ca1fe7adbf2c0e74f13d6f95ece">ksceDisplayWaitSetFrameBuf</a> (void)</td></tr>
+<tr class="memdesc:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start since last update of framebuffer. <br /></td></tr>
+<tr class="separator:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf16290c57d0b00ec55c92d7022c07636"><td class="memItemLeft" align="right" valign="top"><a id="gaf16290c57d0b00ec55c92d7022c07636"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf16290c57d0b00ec55c92d7022c07636">ksceDisplayWaitSetFrameBufCB</a> (void)</td></tr>
+<tr class="memdesc:gaf16290c57d0b00ec55c92d7022c07636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback since last update of framebuffer. <br /></td></tr>
+<tr class="separator:gaf16290c57d0b00ec55c92d7022c07636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c861c0277cf34a59f0b365dada511fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga9c861c0277cf34a59f0b365dada511fd">ksceDisplayWaitSetFrameBufMulti</a> (unsigned int vcount)</td></tr>
+<tr class="memdesc:ga9c861c0277cf34a59f0b365dada511fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start after specified number of vertical periods since last update of framebuffer.  <a href="#ga9c861c0277cf34a59f0b365dada511fd">More...</a><br /></td></tr>
+<tr class="separator:ga9c861c0277cf34a59f0b365dada511fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0aea508b1ae498f431d37732d961ef28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0aea508b1ae498f431d37732d961ef28">ksceDisplayWaitSetFrameBufMultiCB</a> (unsigned int vcount)</td></tr>
+<tr class="memdesc:ga0aea508b1ae498f431d37732d961ef28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback after specified number of vertical periods since last update of framebuffer.  <a href="#ga0aea508b1ae498f431d37732d961ef28">More...</a><br /></td></tr>
+<tr class="separator:ga0aea508b1ae498f431d37732d961ef28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf04a60871706033bc8b34e6e898e297c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf04a60871706033bc8b34e6e898e297c">ksceDisplayRegisterVblankStartCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memdesc:gaf04a60871706033bc8b34e6e898e297c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback to be used at each vertical blank start.  <a href="#gaf04a60871706033bc8b34e6e898e297c">More...</a><br /></td></tr>
+<tr class="separator:gaf04a60871706033bc8b34e6e898e297c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d972a43f708a276f856a5a05917c17b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga5d972a43f708a276f856a5a05917c17b">ksceDisplayRegisterVblankStartCallbackForDisplay</a> (int display, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memdesc:ga5d972a43f708a276f856a5a05917c17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback to be used at each vertical blank start for a display.  <a href="#ga5d972a43f708a276f856a5a05917c17b">More...</a><br /></td></tr>
+<tr class="separator:ga5d972a43f708a276f856a5a05917c17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2388597c94753664a822c781f091d11f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga2388597c94753664a822c781f091d11f">ksceDisplayUnregisterVblankStartCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memdesc:ga2388597c94753664a822c781f091d11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback used at each vertical blank start.  <a href="#ga2388597c94753664a822c781f091d11f">More...</a><br /></td></tr>
+<tr class="separator:ga2388597c94753664a822c781f091d11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4acf9352c38b2a901ef4c4fdc63e44ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga4acf9352c38b2a901ef4c4fdc63e44ca">ksceDisplayUnregisterVblankStartCallbackForDisplay</a> (int display, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memdesc:ga4acf9352c38b2a901ef4c4fdc63e44ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback used at each vertical blank start for a display.  <a href="#ga4acf9352c38b2a901ef4c4fdc63e44ca">More...</a><br /></td></tr>
+<tr class="separator:ga4acf9352c38b2a901ef4c4fdc63e44ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba015ee6bd3e5d4b83efd0151dbb8552"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaba015ee6bd3e5d4b83efd0151dbb8552">ksceDisplaySetInvertColors</a> (int display, int enable)</td></tr>
+<tr class="memdesc:gaba015ee6bd3e5d4b83efd0151dbb8552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable color inversion for a display.  <a href="#gaba015ee6bd3e5d4b83efd0151dbb8552">More...</a><br /></td></tr>
+<tr class="separator:gaba015ee6bd3e5d4b83efd0151dbb8552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceDisplayFrameBuf" id="structSceDisplayFrameBuf"></a>
@@ -262,6 +302,69 @@ framebuffer width </td></tr>
 
 </div>
 </div>
+<a id="gaf04a60871706033bc8b34e6e898e297c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf04a60871706033bc8b34e6e898e297c">&sect;&nbsp;</a></span>ksceDisplayRegisterVblankStartCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayRegisterVblankStartCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback to be used at each vertical blank start. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5d972a43f708a276f856a5a05917c17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d972a43f708a276f856a5a05917c17b">&sect;&nbsp;</a></span>ksceDisplayRegisterVblankStartCallbackForDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayRegisterVblankStartCallbackForDisplay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback to be used at each vertical blank start for a display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">display</td><td>- Display index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gadcd65e70dc1ca74899fef49010f7c5a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadcd65e70dc1ca74899fef49010f7c5a8">&sect;&nbsp;</a></span>ksceDisplaySetFrameBuf()</h2>
 
@@ -301,6 +404,158 @@ framebuffer width </td></tr>
 
 </div>
 </div>
+<a id="gaba015ee6bd3e5d4b83efd0151dbb8552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba015ee6bd3e5d4b83efd0151dbb8552">&sect;&nbsp;</a></span>ksceDisplaySetInvertColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetInvertColors </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable color inversion for a display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">display</td><td>- Display index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>- Enable/disable color inversion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2388597c94753664a822c781f091d11f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2388597c94753664a822c781f091d11f">&sect;&nbsp;</a></span>ksceDisplayUnregisterVblankStartCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayUnregisterVblankStartCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister callback used at each vertical blank start. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4acf9352c38b2a901ef4c4fdc63e44ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4acf9352c38b2a901ef4c4fdc63e44ca">&sect;&nbsp;</a></span>ksceDisplayUnregisterVblankStartCallbackForDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayUnregisterVblankStartCallbackForDisplay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister callback used at each vertical blank start for a display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">display</td><td>- Display index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9c861c0277cf34a59f0b365dada511fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c861c0277cf34a59f0b365dada511fd">&sect;&nbsp;</a></span>ksceDisplayWaitSetFrameBufMulti()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitSetFrameBufMulti </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vcount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start after specified number of vertical periods since last update of framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0aea508b1ae498f431d37732d961ef28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0aea508b1ae498f431d37732d961ef28">&sect;&nbsp;</a></span>ksceDisplayWaitSetFrameBufMultiCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitSetFrameBufMultiCB </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vcount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start with callback after specified number of vertical periods since last update of framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga80d28604f6fce0d218bd11ca039f19eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga80d28604f6fce0d218bd11ca039f19eb">&sect;&nbsp;</a></span>ksceDisplayWaitVblankStartMulti()</h2>
 
@@ -318,6 +573,32 @@ framebuffer width </td></tr>
 </div><div class="memdoc">
 
 <p>Wait for vertical blank start after specified number of vertical periods. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae24d6c56eb5c2e782ee77de4bac1ee40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae24d6c56eb5c2e782ee77de4bac1ee40">&sect;&nbsp;</a></span>ksceDisplayWaitVblankStartMultiCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitVblankStartMultiCB </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vcount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start with callback after specified number of vertical periods. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>

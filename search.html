@@ -2963,7 +2963,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00037</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartMulti vcount</field>
+    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayGetVcountForDisplay display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackForDisplay display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackForDisplay display SceUID uid ksceDisplaySetInvertColors display enable</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -4713,7 +4713,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">processmgr.h</field>
     <field name="url">ern_2kernel_2processmgr_8h_source.html#l00023</field>
     <field name="keywords"></field>
-    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetPidProcessLocalStorageAddr SceUID pid key out_addr create_if_doesnt_exist</field>
+    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetProcessLocalStorageAddrForPid SceUID pid key out_addr create_if_doesnt_exist</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -16107,6 +16107,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceDisplayGetVcountForDisplay</field>
+    <field name="args">(int display)</field>
+    <field name="url">group__SceDisplayKernel.html#ga01466f128491091a8b0600d738ee4198</field>
+    <field name="keywords">ksceDisplayGetVcountForDisplay</field>
+    <field name="text">Number of vertical blank pulses up to now</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceDisplayWaitVblankStart</field>
     <field name="args">(void)</field>
     <field name="url">group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae</field>
@@ -16115,11 +16123,99 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceDisplayWaitVblankStartCB</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceDisplayKernel.html#ga86fe1c873d8702622be881e2240d70f8</field>
+    <field name="keywords">ksceDisplayWaitVblankStartCB</field>
+    <field name="text">Wait for vertical blank start with callback</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceDisplayWaitVblankStartMulti</field>
     <field name="args">(unsigned int vcount)</field>
     <field name="url">group__SceDisplayKernel.html#ga80d28604f6fce0d218bd11ca039f19eb</field>
     <field name="keywords">ksceDisplayWaitVblankStartMulti</field>
     <field name="text">Wait for vertical blank start after specified number of vertical periods vcount Number of vertical periods before waiting for vertical blank start</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitVblankStartMultiCB</field>
+    <field name="args">(unsigned int vcount)</field>
+    <field name="url">group__SceDisplayKernel.html#gae24d6c56eb5c2e782ee77de4bac1ee40</field>
+    <field name="keywords">ksceDisplayWaitVblankStartMultiCB</field>
+    <field name="text">Wait for vertical blank start with callback after specified number of vertical periods vcount Number of vertical periods before waiting for vertical blank start</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitSetFrameBuf</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceDisplayKernel.html#ga7f3f1ca1fe7adbf2c0e74f13d6f95ece</field>
+    <field name="keywords">ksceDisplayWaitSetFrameBuf</field>
+    <field name="text">Wait for vertical blank start since last update of framebuffer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitSetFrameBufCB</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceDisplayKernel.html#gaf16290c57d0b00ec55c92d7022c07636</field>
+    <field name="keywords">ksceDisplayWaitSetFrameBufCB</field>
+    <field name="text">Wait for vertical blank start with callback since last update of framebuffer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitSetFrameBufMulti</field>
+    <field name="args">(unsigned int vcount)</field>
+    <field name="url">group__SceDisplayKernel.html#ga9c861c0277cf34a59f0b365dada511fd</field>
+    <field name="keywords">ksceDisplayWaitSetFrameBufMulti</field>
+    <field name="text">Wait for vertical blank start after specified number of vertical periods since last update of framebuffer vcount Number of vertical periods before waiting for vertical blank start</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayWaitSetFrameBufMultiCB</field>
+    <field name="args">(unsigned int vcount)</field>
+    <field name="url">group__SceDisplayKernel.html#ga0aea508b1ae498f431d37732d961ef28</field>
+    <field name="keywords">ksceDisplayWaitSetFrameBufMultiCB</field>
+    <field name="text">Wait for vertical blank start with callback after specified number of vertical periods since last update of framebuffer vcount Number of vertical periods before waiting for vertical blank start</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayRegisterVblankStartCallback</field>
+    <field name="args">(SceUID uid)</field>
+    <field name="url">group__SceDisplayKernel.html#gaf04a60871706033bc8b34e6e898e297c</field>
+    <field name="keywords">ksceDisplayRegisterVblankStartCallback</field>
+    <field name="text">Register callback to be used at each vertical blank start uid Callback UID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayRegisterVblankStartCallbackForDisplay</field>
+    <field name="args">(int display, SceUID uid)</field>
+    <field name="url">group__SceDisplayKernel.html#ga5d972a43f708a276f856a5a05917c17b</field>
+    <field name="keywords">ksceDisplayRegisterVblankStartCallbackForDisplay</field>
+    <field name="text">Register callback to be used at each vertical blank start for a display display Display index uid Callback UID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayUnregisterVblankStartCallback</field>
+    <field name="args">(SceUID uid)</field>
+    <field name="url">group__SceDisplayKernel.html#ga2388597c94753664a822c781f091d11f</field>
+    <field name="keywords">ksceDisplayUnregisterVblankStartCallback</field>
+    <field name="text">Unregister callback used at each vertical blank start uid Callback UID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayUnregisterVblankStartCallbackForDisplay</field>
+    <field name="args">(int display, SceUID uid)</field>
+    <field name="url">group__SceDisplayKernel.html#ga4acf9352c38b2a901ef4c4fdc63e44ca</field>
+    <field name="keywords">ksceDisplayUnregisterVblankStartCallbackForDisplay</field>
+    <field name="text">Unregister callback used at each vertical blank start for a display display Display index uid Callback UID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplaySetInvertColors</field>
+    <field name="args">(int display, int enable)</field>
+    <field name="url">group__SceDisplayKernel.html#gaba015ee6bd3e5d4b83efd0151dbb8552</field>
+    <field name="keywords">ksceDisplaySetInvertColors</field>
+    <field name="text">Enable/disable color inversion for a display display Display index enable Enable/disable color inversion</field>
   </doc>
   <doc>
     <field name="type">group</field>
