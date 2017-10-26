@@ -2963,7 +2963,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00037</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayGetVcountForDisplay display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartForDisplay display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBForDisplay display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiForDisplay display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBForDisplay display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackForDisplay display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackForDisplay display SceUID uid ksceDisplaySetInvertColors display enable</field>
+    <field name="text">SCE_DISPLAY_SETBUF_NEXTFRAME SceDisplaySetBufSync SceDisplayFrameBuf SceSize size base pitch pixelformat width height SceDisplayFrameBuf ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufDimensions width height ksceDisplayGetVcountForDisplay display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartForDisplay display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBForDisplay display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiForDisplay display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBForDisplay display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackForDisplay display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackForDisplay display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackForDisplay display SceUID uid ksceDisplaySetInvertColors display enable</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -16240,6 +16240,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceDisplayKernel.html#ga4acf9352c38b2a901ef4c4fdc63e44ca</field>
     <field name="keywords">ksceDisplayUnregisterVblankStartCallbackForDisplay</field>
     <field name="text">Unregister callback used at each vertical blank start for a display display Display index uid Callback UID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayRegisterFrameBufCallback</field>
+    <field name="args">(SceUID uid)</field>
+    <field name="url">group__SceDisplayKernel.html#gaab3ff65454443a1588267a69656d357e</field>
+    <field name="keywords">ksceDisplayRegisterFrameBufCallback</field>
+    <field name="text">Register callback to be used when the framebuffer changes uid Callback UID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplayRegisterFrameBufCallbackForDisplay</field>
+    <field name="args">(int display, SceUID uid)</field>
+    <field name="url">group__SceDisplayKernel.html#ga265b95b9382e9416e71702fac941957f</field>
+    <field name="keywords">ksceDisplayRegisterFrameBufCallbackForDisplay</field>
+    <field name="text">Register callback to be used when the framebuffer changes for a display display Display index uid Callback UID</field>
   </doc>
   <doc>
     <field name="type">function</field>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"location_8h_source.html":[3,0,0,0,23],
+"message__dialog_8h_source.html":[3,0,0,0,24],
 "modules.html":[1],
 "motion_8h_source.html":[3,0,0,0,25],
 "mtpif_8h_source.html":[3,0,0,0,26],

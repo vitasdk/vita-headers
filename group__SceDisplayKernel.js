@@ -11,6 +11,8 @@ var group__SceDisplayKernel =
     [ "ksceDisplayGetFrameBuf", "group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89", null ],
     [ "ksceDisplayGetFrameBufDimensions", "group__SceDisplayKernel.html#ga0cb12ad2f870bd91623d2946683334e7", null ],
     [ "ksceDisplayGetVcountForDisplay", "group__SceDisplayKernel.html#ga01466f128491091a8b0600d738ee4198", null ],
+    [ "ksceDisplayRegisterFrameBufCallback", "group__SceDisplayKernel.html#gaab3ff65454443a1588267a69656d357e", null ],
+    [ "ksceDisplayRegisterFrameBufCallbackForDisplay", "group__SceDisplayKernel.html#ga265b95b9382e9416e71702fac941957f", null ],
     [ "ksceDisplayRegisterVblankStartCallback", "group__SceDisplayKernel.html#gaf04a60871706033bc8b34e6e898e297c", null ],
     [ "ksceDisplayRegisterVblankStartCallbackForDisplay", "group__SceDisplayKernel.html#ga5d972a43f708a276f856a5a05917c17b", null ],
     [ "ksceDisplaySetFrameBuf", "group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
