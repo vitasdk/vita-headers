@@ -1902,6 +1902,7 @@ modules:
         nid: 0x7EE45391
         functions:
           __stack_chk_fail: 0xB997493D
+          look_ctype_table: 0xCDF7F155
           memchr: 0x60DAEA30
           memcmp: 0xF939E83D
           memcpy: 0x40C88316
@@ -1919,6 +1920,8 @@ modules:
           strrchr: 0x7F0E0835
           strstr: 0x1304A69D
           strtol: 0xAB77C5AA
+          strtoll: 0x87AAAFA2
+          strtoul: 0x4E5042DA
           tolower: 0x0021DAF9
           toupper: 0xA685DCB1
           vsnprintf: 0x3DDBE2E1
