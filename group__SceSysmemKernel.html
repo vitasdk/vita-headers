@@ -181,12 +181,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetProcessTi
 <tr class="memitem:gac45b79af14718bc342b116b9149289c8"><td class="memItemLeft" align="right" valign="top"><a id="gac45b79af14718bc342b116b9149289c8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMapBlockUserVisible</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="separator:gac45b79af14718bc342b116b9149289c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84dcc2db5ab36bbc7e97becd8f32346e"><td class="memItemLeft" align="right" valign="top"><a id="ga84dcc2db5ab36bbc7e97becd8f32346e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetPaddr</b> (void *addr, uintptr_t *paddr)</td></tr>
+<tr class="memitem:ga84dcc2db5ab36bbc7e97becd8f32346e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga84dcc2db5ab36bbc7e97becd8f32346e">ksceKernelGetPaddr</a> (void *addr, uintptr_t *paddr)</td></tr>
+<tr class="memdesc:ga84dcc2db5ab36bbc7e97becd8f32346e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical address of a given virtual address.  <a href="#ga84dcc2db5ab36bbc7e97becd8f32346e">More...</a><br /></td></tr>
 <tr class="separator:ga84dcc2db5ab36bbc7e97becd8f32346e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga490fc1ebe3ab68b7a00f350110feace2"><td class="memItemLeft" align="right" valign="top"><a id="ga490fc1ebe3ab68b7a00f350110feace2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetPaddrList</b> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *input, <a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrListReq">SceKernelPaddrListReq</a> *req) int ksceSysrootIsManufacturingMode(void)</td></tr>
-<tr class="separator:ga490fc1ebe3ab68b7a00f350110feace2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga011edc8ffacf956f1cbfb1b542493f02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga011edc8ffacf956f1cbfb1b542493f02">ksceKernelGetPaddrList</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *input, <a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *list)</td></tr>
+<tr class="memdesc:ga011edc8ffacf956f1cbfb1b542493f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical address list of a given virtual address range.  <a href="#ga011edc8ffacf956f1cbfb1b542493f02">More...</a><br /></td></tr>
+<tr class="separator:ga011edc8ffacf956f1cbfb1b542493f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae72ad11d8cbfe8e0c26c6c3b3677a6c9"><td class="memItemLeft" align="right" valign="top"><a id="gae72ad11d8cbfe8e0c26c6c3b3677a6c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysrootIsManufacturingMode</b> (void)</td></tr>
+<tr class="separator:gae72ad11d8cbfe8e0c26c6c3b3677a6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45399d5f520fa2001dfc4becba3893c7"><td class="memItemLeft" align="right" valign="top"><a id="ga45399d5f520fa2001dfc4becba3893c7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintf</b> (const char *fmt,...)</td></tr>
 <tr class="separator:ga45399d5f520fa2001dfc4becba3893c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,49 +579,49 @@ Length. </td></tr>
 
 </div>
 </div>
-<a name="structSceKernelPaddrListReq" id="structSceKernelPaddrListReq"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelPaddrListReq">&sect;&nbsp;</a></span>SceKernelPaddrListReq</h2>
+<a name="structSceKernelPaddrList" id="structSceKernelPaddrList"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelPaddrList">&sect;&nbsp;</a></span>SceKernelPaddrList</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelPaddrListReq</td>
+          <td class="memname">struct SceKernelPaddrList</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae3050e3c1a8037604bc986fe8fa5e7b1"></a><a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *</td>
+<a id="ga83109394e596b0f827beb2c55bbf3c13"></a><a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *</td>
 <td class="fieldname">
 list</td>
 <td class="fielddoc">
 Array of physical addresses and their lengths pairs. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga2f2723167e77a67b7d42d392122531d1"></a>uint32_t</td>
+<a id="ga9d694ce77876c0d14781a1e24a21adb9"></a>uint32_t</td>
 <td class="fieldname">
 list_size</td>
 <td class="fielddoc">
 Size in elements of the list array. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga06c769467406ed9316fe4e9c3df384d0"></a>uint32_t</td>
+<a id="gaa46736aaf1eb570e50a66e7abcb096fb"></a>uint32_t</td>
 <td class="fieldname">
 ret_count</td>
 <td class="fielddoc">
 Number of elements of list filled by ksceKernelGetPaddrList. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga4b04b3526e7cf378597bd6423e26c25c"></a>uint32_t</td>
+<a id="gaffa43ea5866e1bcf2baa0faf36616e65"></a>uint32_t</td>
 <td class="fieldname">
 ret_length</td>
 <td class="fielddoc">
 Total physical size of the memory pairs. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga774bc3053014f95a3aebbb1bc3a9e9d1"></a>uint32_t</td>
+<a id="gacb1870381132adc44181b60cb64d20c8"></a>uint32_t</td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
-sizeof(SceKernelPaddrListReq) </td></tr>
+sizeof(SceKernelPaddrList) </td></tr>
 </table>
 
 </div>
@@ -698,6 +701,82 @@ TTBR1</td>
     <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cls</td><td>The class </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">obj</td><td>The object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga84dcc2db5ab36bbc7e97becd8f32346e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84dcc2db5ab36bbc7e97becd8f32346e">&sect;&nbsp;</a></span>ksceKernelGetPaddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetPaddr </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t *&#160;</td>
+          <td class="paramname"><em>paddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the physical address of a given virtual address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- The virtual address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">paddr</td><td>- The physical address</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga011edc8ffacf956f1cbfb1b542493f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga011edc8ffacf956f1cbfb1b542493f02">&sect;&nbsp;</a></span>ksceKernelGetPaddrList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetPaddrList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the physical address list of a given virtual address range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- The virtual address range </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">list</td><td>- The list of physical addresses</td></tr>
   </table>
   </dd>
 </dl>

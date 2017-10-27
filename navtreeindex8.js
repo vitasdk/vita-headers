@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"kernel_2dmac_8h_source.html":[3,0,0,0,1,1],
+"kernel_2modulemgr_8h_source.html":[3,0,0,0,1,4],
 "kernel_2processmgr_8h_source.html":[3,0,0,0,1,6],
 "kernel_2sysmem_8h_source.html":[3,0,0,0,1,8],
 "kernel_2threadmgr_8h_source.html":[3,0,0,0,1,9],
