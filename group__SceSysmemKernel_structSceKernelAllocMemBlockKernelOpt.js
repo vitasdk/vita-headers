@@ -4,7 +4,6 @@ var group__SceSysmemKernel_structSceKernelAllocMemBlockKernelOpt =
     [ "attr", "group__SceSysmemKernel.html#ga1ef4e39e72c276774a23c99f15eced26", null ],
     [ "field_18", "group__SceSysmemKernel.html#ga7e2413923c802d9a6598976f62f9c73c", null ],
     [ "field_1C", "group__SceSysmemKernel.html#ga8a947fb4361e15d576e2af72bb54c5de", null ],
-    [ "field_28", "group__SceSysmemKernel.html#gae07a8d7da1eec5f79f7cf2bf31d8f559", null ],
     [ "field_2C", "group__SceSysmemKernel.html#gacaac98883e0fbbb9b03e262cd43ccd88", null ],
     [ "field_30", "group__SceSysmemKernel.html#gace98a2c463563bf24645ff9757ec9c15", null ],
     [ "field_34", "group__SceSysmemKernel.html#ga26e895a370e506fc46ca02e07b3010ab", null ],
@@ -18,8 +17,9 @@ var group__SceSysmemKernel_structSceKernelAllocMemBlockKernelOpt =
     [ "field_50", "group__SceSysmemKernel.html#ga7eeb334f51a73ec704b0456d12183465", null ],
     [ "field_54", "group__SceSysmemKernel.html#ga5f4b133327e60d14ebfac00c55f80994", null ],
     [ "field_C", "group__SceSysmemKernel.html#gaecc87abfb92794a8fe0b31b1c75aa583", null ],
-    [ "mirror_blkid", "group__SceSysmemKernel.html#ga1ca8373e661f11fea2123ff475ea6b6d", null ],
+    [ "mirror_blockid", "group__SceSysmemKernel.html#ga6e3961f47ece9f2b1875e95575b83897", null ],
     [ "paddr", "group__SceSysmemKernel.html#ga2f4a4cf6c3c5f1b1d29655663c2dcc2d", null ],
+    [ "paddr_list", "group__SceSysmemKernel.html#ga4b0cb3977e11aa4c5268faed85b29106", null ],
     [ "pid", "group__SceSysmemKernel.html#ga28a0ac671d4486f1483ee661f79489f5", null ],
     [ "size", "group__SceSysmemKernel.html#ga469d920250c40775f2e764df6148186d", null ]
 ];
