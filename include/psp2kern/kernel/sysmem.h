@@ -25,24 +25,40 @@ typedef enum SceKernelMemBlockType {
 	SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0                  = 0x6020D006
 } SceKernelMemBlockType;
 
-#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR            0x00000002U
-#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT        0x00000004U
-#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID   0x00000040U
-#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID              0x00000080U
+typedef enum SceKernelAllocMemBlockAttr {
+	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR          = 0x00000002U,
+	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT      = 0x00000004U,
+	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID = 0x00000040U,
+	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID            = 0x00000080U,
+	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST     = 0x00001000U
+} SceKernelAllocMemBlockAttr;
+
+typedef struct SceKernelAddrPair {
+	uint32_t addr;                  //!< Address
+	uint32_t length;                //!< Length
+} SceKernelAddrPair;
+
+typedef struct SceKernelPaddrList {
+	uint32_t size;                  //!< sizeof(SceKernelPaddrList)
+	uint32_t list_size;             //!< Size in elements of the list array
+	uint32_t ret_length;            //!< Total physical size of the memory pairs
+	uint32_t ret_count;             //!< Number of elements of list filled by ksceKernelGetPaddrList
+	SceKernelAddrPair *list;        //!< Array of physical addresses and their lengths pairs
+} SceKernelPaddrList;
 
 // specific to 3.60
 typedef struct SceKernelAllocMemBlockKernelOpt {
-	SceSize size;
+	SceSize size;                   //!< sizeof(SceKernelAllocMemBlockKernelOpt)
 	SceUInt32 field_4;
-	SceUInt32 attr;
+	SceUInt32 attr;                 //!< OR of SceKernelAllocMemBlockAttr
 	SceUInt32 field_C;
 	SceUInt32 paddr;
 	SceSize alignment;
 	SceUInt32 field_18;
 	SceUInt32 field_1C;
-	SceUInt32 mirror_blkid;
+	SceUInt32 mirror_blockid;
 	SceUID pid;
-	SceUInt32 field_28;
+	SceKernelPaddrList *paddr_list;
 	SceUInt32 field_2C;
 	SceUInt32 field_30;
 	SceUInt32 field_34;
@@ -89,19 +105,6 @@ typedef struct SceObjectBase {
 	uint32_t sce_reserved[2];
 	uint32_t data[];
 } SceObjectBase;
-
-typedef struct SceKernelAddrPair {
-	uint32_t addr;                  //!< Address
-	uint32_t length;                //!< Length
-} SceKernelAddrPair;
-
-typedef struct SceKernelPaddrList {
-	uint32_t size;                  //!< sizeof(SceKernelPaddrList)
-	uint32_t list_size;             //!< Size in elements of the list array
-	uint32_t ret_length;            //!< Total physical size of the memory pairs
-	uint32_t ret_count;             //!< Number of elements of list filled by ksceKernelGetPaddrList
-	SceKernelAddrPair *list;        //!< Array of physical addresses and their lengths pairs
-} SceKernelPaddrList;
 
 typedef struct SceKernelProcessContext {
 	SceUInt32 TTBR1;
