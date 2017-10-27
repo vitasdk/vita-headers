@@ -26,50 +26,55 @@ typedef enum SceKernelMemBlockType {
 	SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0                  = 0x6020D006
 } SceKernelMemBlockType;
 
+#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR            0x00000002U
+#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT        0x00000004U
+#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID   0x00000040U
+#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID              0x00000080U
+
 // specific to 3.60
 typedef struct SceKernelAllocMemBlockKernelOpt {
-  SceSize size;
-  SceUInt32 field_4;
-  SceUInt32 attr;
-  SceUInt32 field_C;
-  SceUInt32 paddr;
-  SceSize alignment;
-  SceUInt32 field_18;
-  SceUInt32 field_1C;
-  SceUInt32 mirror_blkid;
-  SceUID pid;
-  SceUInt32 field_28;
-  SceUInt32 field_2C;
-  SceUInt32 field_30;
-  SceUInt32 field_34;
-  SceUInt32 field_38;
-  SceUInt32 field_3C;
-  SceUInt32 field_40;
-  SceUInt32 field_44;
-  SceUInt32 field_48;
-  SceUInt32 field_4C;
-  SceUInt32 field_50;
-  SceUInt32 field_54;
+	SceSize size;
+	SceUInt32 field_4;
+	SceUInt32 attr;
+	SceUInt32 field_C;
+	SceUInt32 paddr;
+	SceSize alignment;
+	SceUInt32 field_18;
+	SceUInt32 field_1C;
+	SceUInt32 mirror_blkid;
+	SceUID pid;
+	SceUInt32 field_28;
+	SceUInt32 field_2C;
+	SceUInt32 field_30;
+	SceUInt32 field_34;
+	SceUInt32 field_38;
+	SceUInt32 field_3C;
+	SceUInt32 field_40;
+	SceUInt32 field_44;
+	SceUInt32 field_48;
+	SceUInt32 field_4C;
+	SceUInt32 field_50;
+	SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
 
 typedef struct SceKernelHeapCreateOpt {
-  SceSize size;
-  SceUInt32 uselock;
-  SceUInt32 field_8;
-  SceUInt32 field_C;
-  SceUInt32 field_10;
-  SceUInt32 field_14;
-  SceUInt32 field_18;
+	SceSize size;
+	SceUInt32 uselock;
+	SceUInt32 field_8;
+	SceUInt32 field_C;
+	SceUInt32 field_10;
+	SceUInt32 field_14;
+	SceUInt32 field_18;
 } SceKernelHeapCreateOpt;
 
 typedef struct SceCreateUidObjOpt {
-  SceUInt32 flags;
-  SceUInt32 field_4;
-  SceUInt32 field_8;
-  SceUInt32 pid;
-  SceUInt32 field_10;
-  SceUInt32 field_14;
-  SceUInt32 field_18;
+	SceUInt32 flags;
+	SceUInt32 field_4;
+	SceUInt32 field_8;
+	SceUInt32 pid;
+	SceUInt32 field_10;
+	SceUInt32 field_14;
+	SceUInt32 field_18;
 } SceCreateUidObjOpt;
 
 typedef enum SceKernelModel {
@@ -77,7 +82,33 @@ typedef enum SceKernelModel {
 	SCE_KERNEL_MODEL_VITATV = 0x20000
 } SceKernelModel;
 
-#define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT    0x00000004U
+typedef struct SceClass {
+	char data[0x2C];
+} SceClass;
+
+typedef struct SceObjectBase {
+	uint32_t sce_reserved[2];
+	uint32_t data[];
+} SceObjectBase;
+
+typedef struct SceKernelAddrPair {
+	uint32_t addr;                  //!< Address
+	uint32_t length;                //!< Length
+} SceKernelAddrPair;
+
+typedef struct SceKernelPaddrListReq {
+	uint32_t size;                  //!< sizeof(SceKernelPaddrListReq)
+	uint32_t list_size;             //!< Size in elements of the list array
+	uint32_t ret_length;            //!< Total physical size of the memory pairs
+	uint32_t ret_count;             //!< Number of elements of list filled by ksceKernelGetPaddrList
+	SceKernelAddrPair *list;        //!< Array of physical addresses and their lengths pairs
+} SceKernelPaddrListReq;
+
+typedef struct SceKernelProcessContext {
+	SceUInt32 TTBR1;
+	SceUInt32 DACR;
+	SceUInt32 CONTEXTIDR;
+} SceKernelProcessContext;
 
 /***
  * Allocates a new memory block
@@ -120,6 +151,17 @@ int ksceKernelGetMemBlockBase(SceUID uid, void **basep);
 */
 SceUID ksceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 
+/***
+ * Find the SceUID of a memory block for a PID
+ *
+ * @param[in] pid - PID of the process
+ * @param[in] addr - Base address of the memory block
+ * @param[in] size - Size to search for (usally set to 0)
+ *
+ * @return SceUID of the memory block on success, < 0 on error.
+*/
+SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize size);
+
 /**
  * Changes the block type
  *
@@ -143,14 +185,6 @@ int ksceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *
 int ksceKernelStrncpyUserToKernel(void *dst, uintptr_t src, size_t len);
 int ksceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, size_t len);
 int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
-
-typedef struct {
-  char data[0x2C];
-} SceClass;
-
-typedef struct {
-  uint32_t sce_reserved[2];
-} SceObjectBase;
 
 SceUID ksceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
 SceUID ksceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
@@ -201,13 +235,14 @@ int ksceKernelDeleteUid(SceUID uid);
 int ksceKernelSwitchVmaForPid(SceUID pid);
 
 void *ksceKernelGetSysrootBuffer(void);
-int ksceKernelGetPidContext(SceUID pid, int **ctx);
+int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
 
 int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, size_t len);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
 
 int ksceKernelGetPaddr(void *addr, uintptr_t *paddr);
+int ksceKernelGetPaddrList(const SceKernelAddrPair *input, SceKernelPaddrListReq *req)
 
 int ksceSysrootIsManufacturingMode(void);
 
