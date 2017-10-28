@@ -3,11 +3,10 @@
  * \usage{psp2/jpegenc.h,SceJpegEnc_stub}
  */
 
-
 #ifndef _JPEGENC_H_
 #define _JPEGENC_H_
 
-#define SceJpegEncoderContext void*
+typedef void *SceJpegEncoderContext;
 
 typedef enum SceJpegEncErrorCode {
 	SCE_JPEGENC_ERROR_IMAGE_SIZE                = 0x80650200,
@@ -31,6 +30,16 @@ typedef enum SceJpegEncoderHeaderMode {
 	SCE_JPEGENC_HEADER_MODE_MJPEG = 1   //!< MJPEG header mode
 } SceJpegEncoderHeaderMode;
 
+typedef struct SceJpegEncoderInitParam {
+	SceSize	size;        //!< Size of this structure
+	int     inWidth;     //!< Input width in pixels
+	int     inHeight;    //!< Input height in pixels
+	int     pixelFormat; //!< A valid ::SceJpegEncoderPixelFormat set of values
+	void    *outBuffer;  //!< A physically continuous memory block 256 bytes aligned
+	SceSize outSize;     //!< Output size in bytes
+	int     option;      //!< Additional options
+} SceJpegEncoderInitParam;
+
 /**
  * Initialize a jpeg encoder
  *
@@ -43,7 +52,16 @@ typedef enum SceJpegEncoderHeaderMode {
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderInit(SceJpegEncoderContext context, int inWidth,int inHeight, SceJpegEncoderPixelFormat pixelformat, void* outBuffer, int outSize);
+int sceJpegEncoderInit(SceJpegEncoderContext context, int inWidth, int inHeight, SceJpegEncoderPixelFormat pixelformat, void *outBuffer, SceSize outSize);
+
+/**
+ * Initialize a jpeg encoder with param
+ *
+ * @param[in] initParam - A pointer to the initialization parameters
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceJpegEncoderInitWithParam(SceJpegEncoderContext context, const SceJpegEncoderInitParam *initParam);
 
 /**
  * Terminate a jpeg encoder
@@ -52,7 +70,7 @@ SceUID sceJpegEncoderInit(SceJpegEncoderContext context, int inWidth,int inHeigh
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderEnd(SceJpegEncoderContext context);
+int sceJpegEncoderEnd(SceJpegEncoderContext context);
 
 /**
  * Execute a jpeg encode
@@ -62,7 +80,7 @@ SceUID sceJpegEncoderEnd(SceJpegEncoderContext context);
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderEncode(SceJpegEncoderContext context, void* inBuffer);
+int sceJpegEncoderEncode(SceJpegEncoderContext context, const void *inBuffer);
 
 /**
  * Set encoder compression ratio
@@ -72,7 +90,7 @@ SceUID sceJpegEncoderEncode(SceJpegEncoderContext context, void* inBuffer);
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderSetCompressionRatio(SceJpegEncoderContext context,int ratio);
+int sceJpegEncoderSetCompressionRatio(SceJpegEncoderContext context, int ratio);
 
 
 /**
@@ -84,7 +102,7 @@ SceUID sceJpegEncoderSetCompressionRatio(SceJpegEncoderContext context,int ratio
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderSetOutputAddr(SceJpegEncoderContext context,void* outBuffer,int outSize);
+int sceJpegEncoderSetOutputAddr(SceJpegEncoderContext context, void *outBuffer, SceSize outSize);
 
 /**
  * Execute a color conversion from ARGB to YCbCr
@@ -97,14 +115,14 @@ SceUID sceJpegEncoderSetOutputAddr(SceJpegEncoderContext context,void* outBuffer
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderCsc(SceJpegEncoderContext context,void* outBuffer,void* inBuffer,int inPitch,SceJpegEncoderPixelFormat inPixelFormat);
+int sceJpegEncoderCsc(SceJpegEncoderContext context, void *outBuffer, const void *inBuffer, int inPitch, SceJpegEncoderPixelFormat inPixelFormat);
 
 /**
  * Return required free size to allocate a jpeg encoder
  *
  * @return Required free memory size in bytes, < 0 on error.
  */
-SceUID sceJpegEncoderGetContextSize(void);
+int sceJpegEncoderGetContextSize(void);
 
 /**
  * Set encoder valid region (?)
@@ -115,7 +133,7 @@ SceUID sceJpegEncoderGetContextSize(void);
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int inHeight);
+int sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int inHeight);
 
 /**
  * Set header used for output file
@@ -125,7 +143,7 @@ SceUID sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, 
  *
  * @return 0 on success, < 0 on error.
  */
-SceUID sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
+int sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
 #endif
 
