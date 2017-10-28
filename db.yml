@@ -6149,3 +6149,19 @@ modules:
           sceLsdbGetStitle: 0x3B064DF5
           sceLsdbGetTitle: 0x4141EBCD
           sceLsdbGetType: 0xDEC358E4
+  SceAvcodec:
+    nid: 0xDD0E433A
+    libraries:
+      SceAvcodecForDriver:
+        kernel: true
+        nid: 0x66845469
+        functions:
+          ksceJpegEncoderInit: 0x1BE9F5A4
+          ksceJpegEncoderSetOutputAddr: 0x2C8271BA
+          ksceJpegEncoderEncode: 0x468949D7
+          ksceJpegEncoderGetContextSize: 0x4DB66E3A
+          ksceJpegEncoderSetHeaderMode: 0x58835DCB
+          ksceJpegEncoderEnd: 0x86AD5A4F
+          ksceJpegEncoderSetCompressionRatio: 0x91B27CF3
+          ksceJpegEncoderCsc: 0xB77B5BFC
+          ksceJpegEncoderSetValidRegion: 0xD0647B74
