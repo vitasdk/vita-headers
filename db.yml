@@ -14,16 +14,22 @@ modules:
           ksceAppMgrCheckPfsMounted: 0x0B1BEEE0
           ksceAppMgrCloudDataClearMcId: 0xEC408FEF
           ksceAppMgrCloudDataCreateHeader: 0xED87F191
+          ksceAppMgrCloudDataDstCreateMount: 0xB3816B42
           ksceAppMgrCloudDataGetMcId: 0x1286AF64
           ksceAppMgrCloudDataSetMcId: 0x0B94BB90
+          ksceAppMgrCloudDataSetupKey: 0x2FAA6ABD
+          ksceAppMgrCloudDataSrcMount: 0x6D4D6FFE
           ksceAppMgrCloudDataVerifyHeader: 0x55D48190
           ksceAppMgrDebugSettingNotifyUpdate: 0x7554330F
+          ksceAppMgrFakeSaveDataCreateMount: 0x12FC3FA8
           ksceAppMgrGameDataMount: 0xCE356B2D
           ksceAppMgrGetPfsProcessStatus: 0xE72D2A4A
           ksceAppMgrGetSystemDataFile: 0xAEC49533
+          ksceAppMgrIsExclusiveProcessRunning: 0xA888C2DC
           ksceAppMgrLaunchAppByPath: 0xB0A37065
           ksceAppMgrLoadSafeMemory: 0xFAF3DAAA
           ksceAppMgrLocalBackupGetOfflineId: 0x61B13981
+          ksceAppMgrLocalBackupVerifyOfflineHeader: 0x62E98C42
           ksceAppMgrRegisterPath: 0xB53FB98E
           ksceAppMgrSaveDataLocalBackupTargetGetList: 0x9B3F7D66
           ksceAppMgrSaveDataLocalBackupTargetRemoveItem: 0xC4EF95BB
@@ -2025,6 +2031,19 @@ modules:
           ksceSblAimgrIsGenuineDolce: 0xC6E83F34
         kernel: true
         nid: 0xFD00C69A
+      SceQafMgrForDriver:
+        functions:
+          ksceSblQafMgrIsAllowControlIduAutoUpdate: 0xF8BFEE48
+          ksceSblQafMgrIsAllowDtcpIpReset: 0xE8B8F31F
+          ksceSblQafMgrIsAllowKeepCoreFile: 0xC1EA75C8
+          ksceSblQafMgrIsAllowLoadMagicGate: 0x36E5312E
+          ksceSblQafMgrIsAllowMarlinTest: 0x10283EB8
+          ksceSblQafMgrIsAllowNearTest: 0x9644171D
+          ksceSblQafMgrIsAllowPSPEmuShowQAInfo: 0xB7B195B2
+          ksceSblQafMgrIsAllowRemotePlayDebug: 0xBFD5E463
+          ksceSblQafMgrIsAllowSystemAppDebug: 0xCAD47130
+        kernel: true
+        nid: 0x4E29D3B6
       SceKernelUtilsForDriver:
         functions:
           ksceDeflateDecompress: 0x8AF1FAD4
@@ -3832,6 +3851,7 @@ modules:
           ksceNpDrmGetRifNameForInstall: 0x17573133
           ksceNpDrmGetRifPspKey: 0xDACB71F4
           ksceNpDrmGetRifVitaKey: 0x723322B5
+          ksceNpDrmIsLooseAccountBind: 0xFC84CA1A
           ksceNpDrmPresetRifProvisionalFlag: 0xC070FE89
           ksceNpDrmPspEbootSigGen: 0xEF387FC4
           ksceNpDrmPspEbootVerify: 0xB6CA3A2C
@@ -4247,6 +4267,8 @@ modules:
           scePowerGetBatteryLifePercent: 0x2085D15D
           scePowerGetBatteryLifeTime: 0x8EFB3FA2
           scePowerGetBatteryRemainCapacity: 0x94F5A53F
+          scePowerGetBatteryRemainLevel: 0xEA3E3715
+          scePowerGetBatteryRemainMaxLevel: 0x1DB00F10
           scePowerGetBatterySOH: 0xA88A2B65
           scePowerGetBatteryTemp: 0x28E12023
           scePowerGetBatteryVolt: 0x483CE86B
@@ -4258,6 +4280,8 @@ modules:
           scePowerIsBatteryCharging: 0x1E490401
           scePowerIsBatteryExist: 0x0AFD0D8B
           scePowerIsLowBattery: 0xD3075926
+          scePowerIsLowBatteryInhibitUpdateDownload: 0xE3E45636
+          scePowerIsLowBatteryInhibitUpdateReboot: 0x9AA05A48
           scePowerIsPowerOnline: 0x87440F5E
           scePowerIsRequest: 0x7FA406DD
           scePowerIsSuspendRequired: 0x78A1A796
@@ -4285,9 +4309,14 @@ modules:
           kscePowerEncodeUBattery: 0x3951AF53
           kscePowerGetArmClockFrequency: 0xABC6F88F
           kscePowerGetBatteryChargingStatus: 0xB4432BC8
+          kscePowerGetBatteryCycleCount: 0x008A54B9
+          kscePowerGetBatteryFullCapacity: 0xFD18A0FF
           kscePowerGetBatteryLifePercent: 0x2085D15D
           kscePowerGetBatteryLifeTime: 0x8EFB3FA2
           kscePowerGetBatteryRemainCapacity: 0x94F5A53F
+          kscePowerGetBatteryRemainLevel: 0xEA3E3715
+          kscePowerGetBatteryRemainMaxLevel: 0x1DB00F10
+          kscePowerGetBatterySOH: 0xA88A2B65
           kscePowerGetBatteryTemp: 0x28E12023
           kscePowerGetBatteryVolt: 0x483CE86B
           kscePowerGetBusClockFrequency: 0x478FE6F5
@@ -4304,6 +4333,7 @@ modules:
           kscePowerIsLowBattery: 0xD3075926
           kscePowerIsPowerOnline: 0x87440F5E
           kscePowerIsRequest: 0x7FA406DD
+          kscePowerIsSuspendRequired: 0x78A1A796
           kscePowerRegisterCallback: 0x04B7766E
           kscePowerRequestColdReset: 0x0442D852
           kscePowerRequestDisplayOff: 0x160EB506
@@ -5681,6 +5711,15 @@ modules:
         nid: 0x61E9428D
         functions:
           ksceKernelGetRandomNumber: 0x4F9BFBE5
+          ksceSblAimgrGetConsoleId: 0xFC6CDD68
+          ksceSblAimgrGetPscode2: 0x9A9676D0
+          ksceSblAimgrGetPscode: 0xE0DC2587
+          ksceSblAimgrGetVisibleId: 0x04843835
+          ksceSblSsCreatePassPhrase: 0xB8B298FD
+          ksceSblSsDecryptWithPortability: 0x934DB6B5
+          ksceSblSsEncryptWithPortability: 0x21EC51F6
+          ksceSblSsGetNvsData: 0xFDD6D5DE
+          ksceSblSsSetNvsData: 0x249ADB07
   SceSblACMgr:
     nid: 0x7474D6F9
     libraries:
@@ -5891,6 +5930,7 @@ modules:
           ksceSysconCtrlManualChargeMode: 0xC6A2C9EF
           ksceSysconEnableHibernateIO: 0x4946538A
           ksceSysconEndConfigstorageTransaction: 0xFCC3E8EE
+          ksceSysconGetBatteryCalibData: 0x9ADC9936
           ksceSysconGetHardwareInfo2: 0x965C68C3
           ksceSysconGetHardwareInfo: 0xCBD6D8BC
           ksceSysconGetLogInfo: 0x701535FC
@@ -6037,6 +6077,7 @@ modules:
           ksceMotionDevSetSamplingMode: 0xDBAF611A
           ksceMotionDevSamplingStop: 0xFD0B0785
           ksceMotionDevRegisterVirtualMotionDriver: 0x7FD06731
+          ksceMotionDevNoiseFilterIsAvailable: 0x11A17A96
   ScePaf:
     nid: 0xCD679177
     libraries:
