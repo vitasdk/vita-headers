@@ -27,8 +27,7 @@ extern "C" {
 #define SCE_KERNEL_STOP_CANCEL        SCE_KERNEL_STOP_FAIL
 /** @} */
 
-typedef struct SceKernelSegmentInfo
-{
+typedef struct SceKernelSegmentInfo {
 	SceUInt size;   //!< sizeof(SceKernelSegmentInfo)
 	SceUInt perms;  //!< probably rwx in low bits
 	void *vaddr;    //!< address in memory
@@ -37,10 +36,9 @@ typedef struct SceKernelSegmentInfo
 	SceUInt res;    //!< unused?
 } SceKernelSegmentInfo;
 
-typedef struct
-{
+typedef struct SceKernelModuleInfo {
 	SceUInt size;                       //!< 0x1B8 for Vita 1.x
-	SceUInt handle;	                    //!< kernel module handle?
+	SceUInt handle;                     //!< kernel module handle?
 	SceUInt flags;                      //!< some bits. could be priority or whatnot
 	char module_name[28];
 	SceUInt unk28;
@@ -56,14 +54,14 @@ typedef struct
 	SceSize tlsAreaSize;
 	char path[256];
 	SceKernelSegmentInfo segments[4];
-	SceUInt type;	                    //!< 6 = user-mode PRX?
+	SceUInt type;                       //!< 6 = user-mode PRX?
 } SceKernelModuleInfo;
 
-typedef struct {
+typedef struct SceKernelLMOption {
 	SceSize size;
 } SceKernelLMOption;
 
-typedef struct {
+typedef struct SceKernelULMOption {
 	SceSize size;
 } SceKernelULMOption;
 
@@ -79,8 +77,7 @@ int sceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, void 
 SceUID sceKernelLoadStartModule(char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
-typedef struct
-{
+typedef struct SceKernelFwInfo {
   SceSize size;
   char versionString[16];
   SceUInt unk_14;
