@@ -34,4 +34,6 @@
 
 #include <psp2kern/net/net.h>
 
+#include <psp2kern/avcodec/jpegenc.h>
+
 #endif
