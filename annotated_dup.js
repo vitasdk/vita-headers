@@ -132,6 +132,7 @@ var annotated_dup =
     [ "SceIVector2", "group__SceTypesUser.html#structSceIVector2", "group__SceTypesUser_structSceIVector2" ],
     [ "SceIVector3", "group__SceTypesUser.html#structSceIVector3", "group__SceTypesUser_structSceIVector3" ],
     [ "SceIVector4", "group__SceTypesUser.html#structSceIVector4", "group__SceTypesUser_structSceIVector4" ],
+    [ "SceJpegEncoderInitParam", "group__SceJpegEncUser.html#structSceJpegEncoderInitParam", "group__SceJpegEncUser_structSceJpegEncoderInitParam" ],
     [ "SceKernelAddrPair", "group__SceSysmemKernel.html#structSceKernelAddrPair", "group__SceSysmemKernel_structSceKernelAddrPair" ],
     [ "SceKernelAllocMemBlockKernelOpt", "group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt", "group__SceSysmemKernel_structSceKernelAllocMemBlockKernelOpt" ],
     [ "SceKernelAllocMemBlockOpt", "group__SceSysmemUser.html#structSceKernelAllocMemBlockOpt", "group__SceSysmemUser_structSceKernelAllocMemBlockOpt" ],
