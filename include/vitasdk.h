@@ -52,6 +52,7 @@
 #include <psp2/usbstorvstor.h>
 #include <psp2/videodec.h>
 #include <psp2/videoexport.h>
+#include <psp2/vshbridge.h>
 
 #include <psp2/io/devctl.h>
 #include <psp2/io/dirent.h>
