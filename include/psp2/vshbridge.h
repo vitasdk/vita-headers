@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceVshBridge}
- * \usage{psp2/kernel/modulemgr.h,SceVshBridge_stub}
+ * \usage{psp2/vshbridge.h,SceVshBridge_stub}
  */
 
 #ifndef _PSP2_VSHBRIDGE_H_
