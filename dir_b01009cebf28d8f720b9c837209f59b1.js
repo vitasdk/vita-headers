@@ -51,5 +51,6 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "usbserial.h", "usbserial_8h_source.html", null ],
     [ "usbstorvstor.h", "usbstorvstor_8h_source.html", null ],
     [ "videodec.h", "videodec_8h_source.html", null ],
-    [ "videoexport.h", "videoexport_8h_source.html", null ]
+    [ "videoexport.h", "videoexport_8h_source.html", null ],
+    [ "vshbridge.h", "vshbridge_8h_source.html", null ]
 ];

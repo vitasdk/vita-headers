@@ -20,6 +20,8 @@ var NAVTREEINDEX8 =
 "group__SceVideoExport.html":[1,10,3],
 "group__SceVideoExportUser.html":[1,10,3,0],
 "group__SceVideoExportUser.html#gae32e438dc817ea300cd368812143688f":[1,10,3,0,0],
+"group__SceVshBridge.html":[1,8,9],
+"group__SceVshBridgeUser.html":[1,8,9,0],
 "group__SerialCommunication.html":[1,9],
 "group__SystemParams.html":[1,10],
 "group__SystemStatus.html":[1,8],
@@ -87,5 +89,6 @@ var NAVTREEINDEX8 =
 "videodec_8h_source.html":[3,0,0,0,50],
 "videoexport_8h_source.html":[3,0,0,0,51],
 "vitasdk_8h_source.html":[3,0,0,3],
-"vitasdkkern_8h_source.html":[3,0,0,4]
+"vitasdkkern_8h_source.html":[3,0,0,4],
+"vshbridge_8h_source.html":[3,0,0,0,52]
 };

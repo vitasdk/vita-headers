@@ -8,5 +8,6 @@ var group__SystemStatus =
     [ "Sbl AC Manager", "group__SceSblACMgr.html", "group__SceSblACMgr" ],
     [ "Sbl AI Manager", "group__SceSblAIMgr.html", "group__SceSblAIMgr" ],
     [ "Sbl Auth Manager", "group__SceSblAuthMgr.html", "group__SceSblAuthMgr" ],
-    [ "Shell Utils Library", "group__SceShellSvc.html", "group__SceShellSvc" ]
+    [ "Shell Utils Library", "group__SceShellSvc.html", "group__SceShellSvc" ],
+    [ "VSH Bridge Library", "group__SceVshBridge.html", "group__SceVshBridge" ]
 ];
