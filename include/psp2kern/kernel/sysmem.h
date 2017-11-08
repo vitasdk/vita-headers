@@ -56,8 +56,8 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceUInt32 field_C;
 	SceUInt32 paddr;
 	SceSize alignment;
-	SceUInt32 field_18;
-	SceUInt32 field_1C;
+	SceUInt32 extraLow;
+	SceUInt32 extraHigh;
 	SceUInt32 mirror_blockid;
 	SceUID pid;
 	SceKernelPaddrList *paddr_list;
@@ -138,12 +138,22 @@ int ksceKernelFreeMemBlock(SceUID uid);
 /***
  * Gets the base address of a memory block
  *
- * @param[in] uid - SceUID of the memory block to free
- * @param[out] basep - Base address of the memory block identified by SceUID
+ * @param[in] uid - SceUID of the memory block
+ * @param[out] basep - Base address of the memory block identified by uid
  *
  * @return 0 on success, < 0 on error.
 */
 int ksceKernelGetMemBlockBase(SceUID uid, void **basep);
+
+/***
+ * Gets the memory block type of a memory block
+ *
+ * @param[in] uid - SceUID of the memory block
+ * @param[out] type - Type of the memory block identified by uid
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceKernelGetMemBlockType(SceUID uid, unsigned int *type);
 
 /***
  * Find the SceUID of a memory block
