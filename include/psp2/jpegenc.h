@@ -30,6 +30,11 @@ typedef enum SceJpegEncoderHeaderMode {
 	SCE_JPEGENC_HEADER_MODE_MJPEG = 1   //!< MJPEG header mode
 } SceJpegEncoderHeaderMode;
 
+typedef struct SceJpegEncoderInitParamOption {
+	SCE_JPEGENC_INIT_PARAM_OPTION_NONE          = 0,  //!< Default option
+	SCE_JPEGENC_INIT_PARAM_OPTION_LPDDR2_MEMORY = 1   //!< LPDDR2 memory will be used instead of CDRAM
+} SceJpegEncoderInitParamOption;
+
 typedef struct SceJpegEncoderInitParam {
 	SceSize	size;        //!< Size of this structure
 	int     inWidth;     //!< Input width in pixels
@@ -37,7 +42,7 @@ typedef struct SceJpegEncoderInitParam {
 	int     pixelFormat; //!< A valid ::SceJpegEncoderPixelFormat set of values
 	void    *outBuffer;  //!< A physically continuous memory block 256 bytes aligned
 	SceSize outSize;     //!< Output size in bytes
-	int     option;      //!< Additional options
+	int     option;      //!< Additional options, OR of ::SceJpegEncoderInitParamOption
 } SceJpegEncoderInitParam;
 
 /**
