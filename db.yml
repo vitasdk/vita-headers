@@ -497,14 +497,17 @@ modules:
           sceAudiodecClearContext: 0xF72F9B64
           sceAudiodecCreateDecoder: 0x4DFD3AAA
           sceAudiodecCreateDecoderExternal: 0x56085DFB
+          sceAudiodecCreateDecoderResident: 0x98B44E1B
           sceAudiodecDecode: 0xCCDABA04
           sceAudiodecDecodeNFrames: 0x8018AA9B
           sceAudiodecDecodeNStreams: 0x68F4A9CB
           sceAudiodecDeleteDecoder: 0xE7A24E16
           sceAudiodecDeleteDecoderExternal: 0xE4EA05BB
+          sceAudiodecDeleteDecoderResident: 0x164DAEDA
           sceAudiodecGetContextSize: 0xDB712ABC
           sceAudiodecGetInternalError: 0x883B0CF5
           sceAudiodecInitLibrary: 0x445C2CEF
+          sceAudiodecPartlyDecode: 0x2742E642
           sceAudiodecTermLibrary: 0x45719B9D
         kernel: false
         nid: 0x2AA62046
@@ -516,9 +519,12 @@ modules:
           sceAudioencClearContext: 0x9386F42D
           sceAudioencCreateEncoder: 0x64C04AE8
           sceAudioencCreateEncoderExternal: 0x9B1E8DE2
+          sceAudioencCreateEncoderResident: 0xDD13004C
           sceAudioencDeleteEncoder: 0xC6BA5EE6
           sceAudioencDeleteEncoderExternal: 0x552E8882
+          sceAudioencDeleteEncoderResident: 0x80765849
           sceAudioencEncode: 0xD85DB29C
+          sceAudioencEncodeNFrames: 0xAFCEDA50
           sceAudioencGetContextSize: 0xEAD4AF38
           sceAudioencGetInternalError: 0x452246D0
           sceAudioencGetOptInfo: 0xD01C63A3
@@ -5443,6 +5449,36 @@ modules:
           sceAvcdecDecodeStop: 0x9648D853
           sceAvcdecDeleteDecoder: 0x8A0E359E
           sceAvcdecQueryDecoderMemSize: 0x97E95EDB
+          sceAvcdecCreateDecoderInternal: 0x808FECBD
+          sceAvcdecCreateDecoderNongameapp: 0x3102196C
+          sceAvcdecDecodeAuInternal: 0x2385A82B
+          sceAvcdecDecodeAuNalAuInternal: 0x68628BC4
+          sceAvcdecDecodeAuNalAuNongameapp: 0x0E4A6EE3
+          sceAvcdecDecodeAuNongameapp: 0x867C75AD
+          sceAvcdecDecodeGetPictureInternal: 0x63237A8F
+          sceAvcdecDecodeGetPictureNongameapp: 0xCF3CFC70
+          sceAvcdecDecodeGetPictureWithWorkPictureInternal: 0x66F65155
+          sceAvcdecDecodeNalAu: 0x6C68A38F
+          sceAvcdecDecodeNalAuWithWorkPicture: 0xDDF41798
+          sceAvcdecDecodeSetTrickModeNongameapp: 0x7AEB56AB
+          sceAvcdecDecodeSetUserDataSei1FieldMemSizeNongameapp: 0xD037206A
+          sceAvcdecDecodeStopWithWorkPicture: 0x67AD42C3
+          sceAvcdecDecodeWithWorkPicture: 0xBA5A009B
+          sceAvcdecGetSeiPictureTimingInternal: 0x8EB07E2F
+          sceAvcdecGetSeiUserDataNongameapp: 0xD6B26396
+          sceAvcdecQueryDecoderMemSizeInternal: 0x7BC8DFEA
+          sceAvcdecQueryDecoderMemSizeNongameapp: 0xFA072F66
+          sceAvcdecRegisterCallbackInternal: 0x8FA94451
+          sceAvcdecRegisterCallbackNongameapp: 0x497F7EC7
+          sceAvcdecSetDecodeMode: 0x75803C83
+          sceAvcdecSetDecodeModeInternal: 0xF57CC2BC
+          sceAvcdecSetInterlacedStreamMode: 0x2DD70FC8
+          sceAvcdecSetLowDelayModeNongameapp: 0xD57F82C1
+          sceAvcdecSetRecoveryPointSEIMode: 0x58C620EC
+          sceAvcdecUnregisterCallbackInternal: 0x24E905BF
+          sceAvcdecUnregisterCallbackNongameapp: 0xE07A91B5
+          sceAvcdecUnregisterCallbackWithCbidInternal: 0x001069FB
+          sceAvcdecUnregisterCallbackWithCbidNongameapp: 0x7761522A
           sceM4vdecCreateDecoder: 0x17C6AC9E
           sceM4vdecCsc: 0xB4BC325B
           sceM4vdecDecode: 0x624664DB
@@ -5451,10 +5487,23 @@ modules:
           sceM4vdecDecodeStop: 0x87CFD23B
           sceM4vdecDeleteDecoder: 0x0EB2E4E7
           sceM4vdecQueryDecoderMemSize: 0xC67C1A80
+          sceM4vdecCreateDecoderInternal: 0x4D4CA34E
+          sceM4vdecDecodeStopWithWorkPicture: 0xC1CF351F
+          sceM4vdecDecodeWithWorkPicture: 0x8F36574D
+          sceM4vdecQueryDecoderMemSizeInternal: 0x84DC8101
           sceVideodecInitLibrary: 0xF1AF65A3
           sceVideodecInitLibraryWithUnmapMem: 0x230A78FF
           sceVideodecQueryMemSize: 0x6731BB2D
           sceVideodecTermLibrary: 0x3A5F4924
+          sceVideodecInitLibraryInternal: 0x0FD286E0
+          sceVideodecInitLibraryNongameapp: 0x26F3C35D
+          sceVideodecInitLibraryWithUnmapMemInternal: 0x36ADE1E5
+          sceVideodecInitLibraryWithUnmapMemNongameapp: 0x108C1FEC
+          sceVideodecQueryInstanceNongameapp: 0xEF03E31B
+          sceVideodecQueryMemSizeInternal: 0xEB48554F
+          sceVideodecQueryMemSizeNongameapp: 0x2D9AE981
+          sceVideodecSetConfig: 0x9B871779
+          sceVideodecSetConfigInternal: 0x4A9CB138
         kernel: false
         nid: 0x163C3727
   SceVoice:
@@ -6242,3 +6291,181 @@ modules:
           ksceJpegEncoderSetCompressionRatio: 0x91B27CF3
           ksceJpegEncoderCsc: 0xB77B5BFC
           ksceJpegEncoderSetValidRegion: 0xD0647B74
+      SceAvcodec:
+        kernel: false
+        nid: 0xA166C96E
+        functions:
+          _sceAudiodecClearContext: 0x914CC7A7
+          _sceAudiodecCreateDecoder: 0x38FE5C91
+          _sceAudiodecCreateDecoderExternal: 0x82710FAE
+          _sceAudiodecCreateDecoderResident: 0x56CE556D
+          _sceAudiodecDecode: 0x7F5DD597
+          _sceAudiodecDecodeNFrames: 0x215CFCC1
+          _sceAudiodecDecodeNStreams: 0x5168491A
+          _sceAudiodecDeleteDecoder: 0x5C548173
+          _sceAudiodecDeleteDecoderExternal: 0x7AA7D478
+          _sceAudiodecDeleteDecoderResident: 0xE147D80C
+          _sceAudiodecGetContextSize: 0x74A9FA86
+          _sceAudiodecGetInternalError: 0x0CD84136
+          _sceAudiodecInitLibrary: 0x780A3ED6
+          _sceAudiodecPartlyDecode: 0xCE1AB19A
+          _sceAudiodecTermLibrary: 0x4A9CDA20
+          _sceAudioencClearContext: 0xAC47088A
+          _sceAudioencCreateEncoder: 0x9E4796C4
+          _sceAudioencCreateEncoderExternal: 0x835F98F8
+          _sceAudioencCreateEncoderResident: 0x04ED53EC
+          _sceAudioencDeleteEncoder: 0x83873882
+          _sceAudioencDeleteEncoderExternal: 0x34E1BA94
+          _sceAudioencDeleteEncoderResident: 0xCFC633F6
+          _sceAudioencEncode: 0xBFCF8F3F
+          _sceAudioencEncodeNFrames: 0x9CCB2033
+          _sceAudioencGetContextSize: 0x14C85301
+          _sceAudioencGetInternalError: 0x8874B8A7
+          _sceAudioencGetOptInfo: 0x09E763CD
+          _sceAudioencInitLibrary: 0x373AB413
+          _sceAudioencTermLibrary: 0x263BA366
+          _sceAvcdecCreateDecoder: 0x95EF1A0C
+          _sceAvcdecCreateDecoderInternal: 0xED853085
+          _sceAvcdecCreateDecoderNongameapp: 0x4099935D
+          _sceAvcdecCsc: 0xD301B276
+          _sceAvcdecCscInternal: 0x4859779A
+          _sceAvcdecDecode: 0xCDB74E5D
+          _sceAvcdecDecodeAuInternal: 0x1FA806E5
+          _sceAvcdecDecodeAuNalAuInternal: 0xF757BE5E
+          _sceAvcdecDecodeAuNalAuNongameapp: 0x9DEBBA02
+          _sceAvcdecDecodeAuNongameapp: 0x5F1B6299
+          _sceAvcdecDecodeAvailableSize: 0x9D576E7E
+          _sceAvcdecDecodeFlush: 0x80C78430
+          _sceAvcdecDecodeGetPictureInternal: 0xFEE91426
+          _sceAvcdecDecodeGetPictureNongameapp: 0x4A061F8C
+          _sceAvcdecDecodeGetPictureWithWorkPictureInternal: 0xCF0F24FE
+          _sceAvcdecDecodeNalAu: 0x5D9FD6DB
+          _sceAvcdecDecodeNalAuWithWorkPicture: 0xB6AD7638
+          _sceAvcdecDecodeSetTrickModeNongameapp: 0x32057062
+          _sceAvcdecDecodeSetUserDataSei1FieldMemSizeNongameapp: 0x1DBA40CB
+          _sceAvcdecDecodeStop: 0xD390D6E9
+          _sceAvcdecDecodeStopWithWorkPicture: 0x7C44A3CE
+          _sceAvcdecDecodeWithWorkPicture: 0xB20EBBBF
+          _sceAvcdecDeleteDecoder: 0x1FAD5C13
+          _sceAvcdecGetSeiPictureTimingInternal: 0x1C0F4C2F
+          _sceAvcdecGetSeiUserDataNongameapp: 0xAC1A4B84
+          _sceAvcdecQueryDecoderMemSize: 0x0B47EBC1
+          _sceAvcdecQueryDecoderMemSizeInternal: 0x008CFFE6
+          _sceAvcdecQueryDecoderMemSizeNongameapp: 0x6C290F95
+          _sceAvcdecRegisterCallbackInternal: 0x6B216E40
+          _sceAvcdecRegisterCallbackNongameapp: 0x18144D32
+          _sceAvcdecSetDecodeMode: 0x6931F869
+          _sceAvcdecSetDecodeModeInternal: 0x7D2E4694
+          _sceAvcdecSetInterlacedStreamMode: 0x439B6468
+          _sceAvcdecSetLowDelayModeNongameapp: 0x6B5D2664
+          _sceAvcdecSetRecoveryPointSEIMode: 0xA8A0DBA6
+          _sceAvcdecUnregisterCallbackInternal: 0x6327330C
+          _sceAvcdecUnregisterCallbackNongameapp: 0x03040F4A
+          _sceAvcdecUnregisterCallbackWithCbidInternal: 0x2C86BF22
+          _sceAvcdecUnregisterCallbackWithCbidNongameapp: 0xC152BBF0
+          _sceAvcencCreateEncoder: 0x7DBE3302
+          _sceAvcencCreateEncoderBasic: 0x83DE207F
+          _sceAvcencCreateEncoderInternal: 0x81A63707
+          _sceAvcencCsc: 0xC23957F9
+          _sceAvcencDeleteEncoder: 0x3313DAC9
+          _sceAvcencEncode: 0xC03BA7BA
+          _sceAvcencEncodeFlush: 0x8F3EF1D5
+          _sceAvcencEncodeStop: 0x7360B1E6
+          _sceAvcencGetNalUnit: 0x58B0CC46
+          _sceAvcencQueryEncoderMemSize: 0xDEA87D04
+          _sceAvcencQueryEncoderMemSizeBasic: 0x5A604BA1
+          _sceAvcencQueryEncoderMemSizeInternal: 0x43D4E94B
+          _sceAvcencSetAvailablePreset: 0x34E914A7
+          _sceAvcencSetEncoderParameter: 0x9ED5188E
+          _sceJpegCreateSplitDecoder: 0x20E2D9D5
+          _sceJpegCsc: 0x72811C19
+          _sceJpegDecodeMJpeg: 0xCB7F8A69
+          _sceJpegDecodeMJpegYCbCr: 0x925F0A72
+          _sceJpegDeleteSplitDecoder: 0x45F71883
+          _sceJpegEncoderCsc: 0xE035FA28
+          _sceJpegEncoderEncode: 0x77F1F2A2
+          _sceJpegEncoderEnd: 0xACC6B9F1
+          _sceJpegEncoderGetContextSize: 0x2A9B196E
+          _sceJpegEncoderInit: 0xA12E3D80
+          _sceJpegEncoderInitWithParam: 0x22124B1B
+          _sceJpegEncoderSetCompressionRatio: 0x271734D5
+          _sceJpegEncoderSetHeaderMode: 0x3472D7E8
+          _sceJpegEncoderSetOutputAddr: 0x7970C81B
+          _sceJpegEncoderSetValidRegion: 0x24239139
+          _sceJpegFinishMJpeg: 0x64419DEA
+          _sceJpegGetOutputInfo: 0x6F6DAF2B
+          _sceJpegInitMJpeg: 0x12740EA3
+          _sceJpegInitMJpegWithParam: 0x7BA8FDDE
+          _sceJpegMJpegCsc: 0x7E2E515F
+          _sceJpegSplitDecodeMJpeg: 0xA0CB5CF8
+          _sceM4vdecCreateDecoder: 0xBBFF3491
+          _sceM4vdecCreateDecoderInternal: 0xBB1687CD
+          _sceM4vdecCsc: 0x7D227358
+          _sceM4vdecDecode: 0x36861BB9
+          _sceM4vdecDecodeAvailableSize: 0x58CC2B59
+          _sceM4vdecDecodeFlush: 0x1D88FBEC
+          _sceM4vdecDecodeStop: 0xCF1844E7
+          _sceM4vdecDecodeStopWithWorkPicture: 0x50AA1253
+          _sceM4vdecDecodeWithWorkPicture: 0x15F9533D
+          _sceM4vdecDeleteDecoder: 0x355B448E
+          _sceM4vdecQueryDecoderMemSize: 0x704A70E8
+          _sceM4vdecQueryDecoderMemSizeInternal: 0xD9F1331D
+          _sceVideodecInitLibrary: 0xAE511B32
+          _sceVideodecInitLibraryInternal: 0x2CFE9AF0
+          _sceVideodecInitLibraryNongameapp: 0x3070B3ED
+          _sceVideodecInitLibraryWithUnmapMem: 0x3A8F0E2B
+          _sceVideodecInitLibraryWithUnmapMemInternal: 0xE4003992
+          _sceVideodecInitLibraryWithUnmapMemNongameapp: 0xE816BAE7
+          _sceVideodecQueryInstanceNongameapp: 0x309BBB68
+          _sceVideodecQueryMemSize: 0xAF9BDDA7
+          _sceVideodecQueryMemSizeInternal: 0x654A5F92
+          _sceVideodecQueryMemSizeNongameapp: 0x8B52F56A
+          _sceVideodecSetConfig: 0x89324E23
+          _sceVideodecSetConfigInternal: 0xD43EEFD8
+          _sceVideodecTermLibrary: 0x07B26B00
+          _sceVideoencInitLibrary: 0xEEAC1039
+          _sceVideoencInitLibraryInternal: 0x1CF4523E
+          _sceVideoencInitLibraryWithUnmapMem: 0x67127921
+          _sceVideoencInitLibraryWithUnmapMemInternal: 0x19ACF593
+          _sceVideoencQueryMemSize: 0xC4EBFDF5
+          _sceVideoencQueryMemSizeInternal: 0xEE5B74B7
+          _sceVideoencTermLibrary: 0xFF652EAE
+  SceAvcodecUser:
+    nid: 0x5AA351E8
+    libraries:
+      SceVideoencUser:
+        kernel: false
+        nid: 0x0BAA6DEF
+        functions:
+          sceAvcencDeleteEncoder: 0xEC08A60C
+          sceAvcencSetAvailablePreset: 0x2238693E
+          sceAvcencQueryEncoderMemSizeInternal: 0x55F2FD3C
+          sceAvcencGetNalUnit: 0xC5609479
+          sceAvcencQueryEncoderMemSizeBasic: 0xC6616EA8
+          sceAvcencEncodeStop: 0x4BE87709
+          sceAvcencCreateEncoder: 0x7F5728CC
+          sceAvcencCreateEncoderInternal: 0x11CB9524
+          sceAvcencCreateEncoderBasic: 0xC70B7E2E
+          sceAvcencEncodeFlush: 0x03D1CFED
+          sceAvcencSetEncoderParameter: 0x5B4A70BD
+          sceAvcencEncode: 0x4B171BEA
+          sceAvcencCsc: 0xAC758FF7
+          sceAvcencQueryEncoderMemSize: 0xAF317203
+          sceVideoencInitLibraryWithUnmapMemInternal: 0x54D750B8
+          sceVideoencInitLibraryInternal: 0xAF0F17AD
+          sceVideoencInitLibraryWithUnmapMem: 0x8F970948
+          sceVideoencQueryMemSize: 0x7772157D
+          sceVideoencQueryMemSizeInternal: 0x3E459BA8
+          sceVideoencInitLibrary: 0xACA59885
+          sceVideoencTermLibrary: 0x7FE7EDA3
+  SceCodecEngineWrapper:
+    nid: 0x50CC4832
+    libraries:
+      SceCodecEngineWrapper:
+        kernel: false
+        nid: 0x5C9EE5B9
+        functions:
+          _sceCodecEngineAllocMemoryFromUnmapMemBlock: 0x03DCBDCA
+          _sceCodecEngineCloseUnmapMemBlock: 0xAD30912D
+          _sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x489FF965
+          _sceCodecEngineOpenUnmapMemBlock: 0xB0E654EE
