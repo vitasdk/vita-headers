@@ -122,29 +122,6 @@ typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>SceJpegEnco
 <tr class="separator:ga882d171ac9cb67d91643f8ff525adb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structSceJpegEncoderInitParamOption" id="structSceJpegEncoderInitParamOption"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceJpegEncoderInitParamOption">&sect;&nbsp;</a></span>SceJpegEncoderInitParamOption</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceJpegEncoderInitParamOption</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga8cfc4467dc9530cb2edfbce11aaab99b"></a></td>
-<td class="fieldname">
-SCE_JPEGENC_INIT_PARAM_OPTION_NONE</td>
-<td class="fielddoc">
-Default option. </td></tr>
-</table>
-
-</div>
-</div>
 <a name="structSceJpegEncoderInitParam" id="structSceJpegEncoderInitParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceJpegEncoderInitParam">&sect;&nbsp;</a></span>SceJpegEncoderInitParam</h2>
 
@@ -175,7 +152,7 @@ Input width in pixels. </td></tr>
 <td class="fieldname">
 option</td>
 <td class="fielddoc">
-Additional options, OR of <a class="el" href="group__SceJpegEncUser.html#structSceJpegEncoderInitParamOption">SceJpegEncoderInitParamOption</a>. </td></tr>
+Additional options, OR of <a class="el" href="group__SceJpegEncUser.html#ga6e7c1e7560d2eafb40da505711686f9b">SceJpegEncoderInitParamOption</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaf54adeaaca16bb8e8afed671749adacf"></a>void *</td>
 <td class="fieldname">
@@ -224,6 +201,26 @@ Size of this structure. </td></tr>
 <tr><td class="fieldname"><a id="gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985"></a>SCE_JPEGENC_HEADER_MODE_JPEG&#160;</td><td class="fielddoc"><p>JPEG header mode. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221"></a>SCE_JPEGENC_HEADER_MODE_MJPEG&#160;</td><td class="fielddoc"><p>MJPEG header mode. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga6e7c1e7560d2eafb40da505711686f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e7c1e7560d2eafb40da505711686f9b">&sect;&nbsp;</a></span>SceJpegEncoderInitParamOption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceJpegEncUser.html#ga6e7c1e7560d2eafb40da505711686f9b">SceJpegEncoderInitParamOption</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6e7c1e7560d2eafb40da505711686f9ba44b005da815f7976345d0a80533a3737"></a>SCE_JPEGENC_INIT_PARAM_OPTION_NONE&#160;</td><td class="fielddoc"><p>Default option. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6e7c1e7560d2eafb40da505711686f9ba8a22ec91c816b515086aea1a242d2de1"></a>SCE_JPEGENC_INIT_PARAM_OPTION_LPDDR2_MEMORY&#160;</td><td class="fielddoc"><p>LPDDR2 memory will be used instead of CDRAM. </p>
 </td></tr>
 </table>
 

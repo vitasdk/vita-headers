@@ -6,6 +6,10 @@ var group__SceJpegEncUser =
       [ "SCE_JPEGENC_HEADER_MODE_JPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985", null ],
       [ "SCE_JPEGENC_HEADER_MODE_MJPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221", null ]
     ] ],
+    [ "SceJpegEncoderInitParamOption", "group__SceJpegEncUser.html#ga6e7c1e7560d2eafb40da505711686f9b", [
+      [ "SCE_JPEGENC_INIT_PARAM_OPTION_NONE", "group__SceJpegEncUser.html#gga6e7c1e7560d2eafb40da505711686f9ba44b005da815f7976345d0a80533a3737", null ],
+      [ "SCE_JPEGENC_INIT_PARAM_OPTION_LPDDR2_MEMORY", "group__SceJpegEncUser.html#gga6e7c1e7560d2eafb40da505711686f9ba8a22ec91c816b515086aea1a242d2de1", null ]
+    ] ],
     [ "SceJpegEncoderPixelFormat", "group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e", [
       [ "SCE_JPEGENC_PIXELFORMAT_ARGB8888", "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951", null ],
       [ "SCE_JPEGENC_PIXELFORMAT_YCBCR420", "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4", null ],
@@ -18,6 +22,8 @@ var group__SceJpegEncUser =
     ] ],
     [ "SCE_JPEGENC_HEADER_MODE_JPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985", null ],
     [ "SCE_JPEGENC_HEADER_MODE_MJPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221", null ],
+    [ "SCE_JPEGENC_INIT_PARAM_OPTION_LPDDR2_MEMORY", "group__SceJpegEncUser.html#gga6e7c1e7560d2eafb40da505711686f9ba8a22ec91c816b515086aea1a242d2de1", null ],
+    [ "SCE_JPEGENC_INIT_PARAM_OPTION_NONE", "group__SceJpegEncUser.html#gga6e7c1e7560d2eafb40da505711686f9ba44b005da815f7976345d0a80533a3737", null ],
     [ "SCE_JPEGENC_PIXELFORMAT_ARGB8888", "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951", null ],
     [ "SCE_JPEGENC_PIXELFORMAT_CSC_ARGB_YCBCR", "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405", null ],
     [ "SCE_JPEGENC_PIXELFORMAT_YCBCR420", "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4", null ],
