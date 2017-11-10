@@ -30,7 +30,7 @@ typedef enum SceJpegEncoderHeaderMode {
 	SCE_JPEGENC_HEADER_MODE_MJPEG = 1   //!< MJPEG header mode
 } SceJpegEncoderHeaderMode;
 
-typedef struct SceJpegEncoderInitParamOption {
+typedef enum SceJpegEncoderInitParamOption {
 	SCE_JPEGENC_INIT_PARAM_OPTION_NONE          = 0,  //!< Default option
 	SCE_JPEGENC_INIT_PARAM_OPTION_LPDDR2_MEMORY = 1   //!< LPDDR2 memory will be used instead of CDRAM
 } SceJpegEncoderInitParamOption;
