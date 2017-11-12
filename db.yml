@@ -1449,6 +1449,7 @@ modules:
           sceGxmMidSceneFlush: 0x2B5C0444
           sceGxmNotificationWait: 0x9F448E79
           sceGxmPadHeartbeat: 0x3D25FCE9
+          sceGxmPadTriggerGpuPaTrace: 0x47E06984
           sceGxmPopUserMarker: 0x4FA073A6
           sceGxmPrecomputedDrawInit: 0xA197F096
           sceGxmPrecomputedDrawSetAllVertexStreams: 0xB6C6F571
@@ -1457,6 +1458,7 @@ modules:
           sceGxmPrecomputedDrawSetVertexStream: 0x6C936214
           sceGxmPrecomputedFragmentStateGetDefaultUniformBuffer: 0xCECB584A
           sceGxmPrecomputedFragmentStateInit: 0xE297D7AF
+          sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces: 0x9D93B63A
           sceGxmPrecomputedFragmentStateSetAllTextures: 0xC383DE39
           sceGxmPrecomputedFragmentStateSetAllUniformBuffers: 0x5A783DC3
           sceGxmPrecomputedFragmentStateSetDefaultUniformBuffer: 0x91236858
@@ -1501,8 +1503,10 @@ modules:
           sceGxmPushUserMarker: 0x3276C475
           sceGxmRemoveRazorGpuCaptureBuffer: 0x0468E3F2
           sceGxmRenderTargetGetDriverMemBlock: 0x49553737
+          sceGxmRenderTargetGetHostMem: 0xD0EDAB4C
           sceGxmReserveFragmentDefaultUniformBuffer: 0x7B1FABB6
           sceGxmReserveVertexDefaultUniformBuffer: 0x97118913
+          sceGxmSetAuxiliarySurface: 0x91B4F7F4
           sceGxmSetBackDepthBias: 0x17B3BF86
           sceGxmSetBackDepthFunc: 0xB042A4D2
           sceGxmSetBackDepthWriteEnable: 0xC18B706B
@@ -1542,6 +1546,7 @@ modules:
           sceGxmSetTwoSidedEnable: 0x0DE9AEB7
           sceGxmSetUniformDataF: 0x65DD0C84
           sceGxmSetUserMarker: 0xC7A8CB77
+          sceGxmSetValidationEnable: 0x8C6A24C9
           sceGxmSetVertexDefaultUniformBuffer: 0xC697CAE5
           sceGxmSetVertexProgram: 0x31FF8ABD
           sceGxmSetVertexStream: 0x895DF2E9
@@ -1574,11 +1579,13 @@ modules:
           sceGxmShaderPatcherRegisterProgram: 0x2B528462
           sceGxmShaderPatcherReleaseFragmentProgram: 0xBE2743D1
           sceGxmShaderPatcherReleaseVertexProgram: 0xAC1FF2DA
+          sceGxmShaderPatcherSetAuxiliarySurface: 0x8E5FCC2A
           sceGxmShaderPatcherSetUserData: 0xF9B8FCFD
           sceGxmShaderPatcherUnregisterProgram: 0xF103AF8A
           sceGxmSyncObjectCreate: 0x6A6013E1
           sceGxmSyncObjectDestroy: 0x889AE88C
           sceGxmTerminate: 0xB627DE66
+          sceGxmTextureGetAnisoMode: 0xDE9D5911
           sceGxmTextureGetData: 0x5341BD46
           sceGxmTextureGetFormat: 0xE868D2B3
           sceGxmTextureGetGammaMode: 0xF23FCE81
@@ -1603,6 +1610,7 @@ modules:
           sceGxmTextureInitSwizzled: 0xD572D547
           sceGxmTextureInitSwizzledArbitrary: 0x5DBFBA2C
           sceGxmTextureInitTiled: 0xE6F0DB27
+          sceGxmTextureSetAnisoMode: 0xE719CBD4
           sceGxmTextureSetData: 0x855814C4
           sceGxmTextureSetFormat: 0xFC943596
           sceGxmTextureSetGammaMode: 0xA6D9F4DA
@@ -2518,9 +2526,12 @@ modules:
           sceIoGetstat: 0xBCA5B623
           sceIoGetstatByFd: 0x57F8CD25
           sceIoIoctl: 0x54ABACFA
+          sceIoIoctlAsync: 0x099C54B9
           sceIoLseek: 0x99BA173E
+          sceIoLseekAsync: 0xCAC5D672
           sceIoMkdir: 0x9670D39F
           sceIoOpen: 0x6C60AC61
+          sceIoOpenAsync: 0x6A7EA9FD
           sceIoPread: 0x52315AD7
           sceIoPwrite: 0x8FFFF5A8
           sceIoRemove: 0xE20ED0F3
@@ -3523,6 +3534,8 @@ modules:
           sceNetDumpCreate: 0xAFF9FA4D
           sceNetDumpDestroy: 0x82DDCF63
           sceNetDumpRead: 0x04042925
+          sceNetEmulationGet: 0xAE3F4AC6
+          sceNetEmulationSet: 0x561DFD03
           sceNetEpollAbort: 0x93FCC4E8
           sceNetEpollControl: 0x4C8764AC
           sceNetEpollCreate: 0xF9D102AE
