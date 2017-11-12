@@ -19,7 +19,7 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
  
 int vshIdStorageIsDirty(void);
 int vshIdStorageIsFormatted(void);
-int sceIdStorageIsReadOnly(void);
+int vshIdStorageIsReadOnly(void);
  
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);
