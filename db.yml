@@ -1943,7 +1943,12 @@ modules:
         kernel: true
         nid: 0x7EE45391
         functions:
+          __memcpy_chk: 0x8A0B0815
+          __memmove_chk: 0x35DBB110
+          __memset_chk: 0x1A30BB28
           __stack_chk_fail: 0xB997493D
+          __strncat_chk: 0x33EE298B
+          __strncpy_chk: 0x96268C53
           look_ctype_table: 0xCDF7F155
           memchr: 0x60DAEA30
           memcmp: 0xF939E83D
@@ -1954,6 +1959,8 @@ modules:
           snprintf: 0xAE7A8981
           strchr: 0x38463759
           strcmp: 0xB33BC43
+          strlcat: 0x12504E09
+          strlcpy: 0x7FB4EBEC
           strlen: 0xCFC6A9AC
           strncat: 0xA1D1C32C
           strncmp: 0x12CEE649
