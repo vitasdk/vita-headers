@@ -24,84 +24,84 @@ typedef int (*SceKernelThreadEntry)(SceSize args, void *argp);
 
 /** Additional options used when creating threads. */
 typedef struct SceKernelThreadOptParam {
-  /** Size of the ::SceKernelThreadOptParam structure. */
-  SceSize   size;
-  /** Attributes */
-  SceUInt32       attr;
+	/** Size of the ::SceKernelThreadOptParam structure. */
+	SceSize   size;
+	/** Attributes */
+	SceUInt32       attr;
 } SceKernelThreadOptParam;
 
 /** Structure to hold the status information for a thread
   * @see ksceKernelGetThreadInfo
   */
 typedef struct SceKernelThreadInfo {
-  /** Size of the structure */
-  SceSize         size;
-  /** The UID of the process where the thread belongs */
-  SceUID          processId; //Needs confirmation
-  /** Nul terminated name of the thread */
-  char            name[32];
-  /** Thread attributes */
-  SceUInt         attr;
-  /** Thread status */
-  int             status;
-  /** Thread entry point */
-  SceKernelThreadEntry entry;
-  /** Thread stack pointer */
-  void            *stack;
-  /** Thread stack size */
-  int             stackSize;
-  /** Initial priority */
-  int             initPriority;
-  /** Current priority */
-  int             currentPriority;
-  /** Initial CPU affinity mask */
-  int             initCpuAffinityMask;
-  /** Current CPU affinity mask */
-  int             currentCpuAffinityMask;
-  /** Current CPU ID */
-  int             currentCpuId;
-  /** Last executed CPU ID */
-  int             lastExecutedCpuId;
-  /** Wait type */
-  int             waitType;
-  /** Wait id */
-  SceUID          waitId;
-  /** Exit status of the thread */
-  int             exitStatus;
-  /** Number of clock cycles run */
-  SceKernelSysClock runClocks;
-  /** Interrupt preemption count */
-  SceUInt     intrPreemptCount;
-  /** Thread preemption count */
-  SceUInt     threadPreemptCount;
-  /** Thread release count */
-  SceUInt     threadReleaseCount;
-  /** Function notify callback UID */
-  SceUID      fNotifyCallback;
-  /** Reserved */
-  int         reserved;
+	/** Size of the structure */
+	SceSize         size;
+	/** The UID of the process where the thread belongs */
+	SceUID          processId; //Needs confirmation
+	/** Nul terminated name of the thread */
+	char            name[32];
+	/** Thread attributes */
+	SceUInt         attr;
+	/** Thread status */
+	int             status;
+	/** Thread entry point */
+	SceKernelThreadEntry entry;
+	/** Thread stack pointer */
+	void            *stack;
+	/** Thread stack size */
+	int             stackSize;
+	/** Initial priority */
+	int             initPriority;
+	/** Current priority */
+	int             currentPriority;
+	/** Initial CPU affinity mask */
+	int             initCpuAffinityMask;
+	/** Current CPU affinity mask */
+	int             currentCpuAffinityMask;
+	/** Current CPU ID */
+	int             currentCpuId;
+	/** Last executed CPU ID */
+	int             lastExecutedCpuId;
+	/** Wait type */
+	int             waitType;
+	/** Wait id */
+	SceUID          waitId;
+	/** Exit status of the thread */
+	int             exitStatus;
+	/** Number of clock cycles run */
+	SceKernelSysClock runClocks;
+	/** Interrupt preemption count */
+	SceUInt     intrPreemptCount;
+	/** Thread preemption count */
+	SceUInt     threadPreemptCount;
+	/** Thread release count */
+	SceUInt     threadReleaseCount;
+	/** Function notify callback UID */
+	SceUID      fNotifyCallback;
+	/** Reserved */
+	int         reserved;
 } SceKernelThreadInfo;
 
 /** Statistics about a running thread.
  * @see ksceKernelGetThreadRunStatus.
  */
 typedef struct SceKernelThreadRunStatus {
-  SceSize        size;
-  struct {
-    SceUID processId;
-    SceUID threadId;
-    int    priority;
-  } cpuInfo[4];
+	SceSize        size;
+	struct {
+		SceUID processId;
+		SceUID threadId;
+		int    priority;
+	} cpuInfo[4];
 } SceKernelThreadRunStatus;
 
 /* Sure there must be more than this, but haven't seen them */
 typedef enum SceThreadStatus {
-  SCE_THREAD_RUNNING = 1,
-  SCE_THREAD_READY   = 2,
-  SCE_THREAD_WAITING = 4,
-  SCE_THREAD_SUSPEND = 8,
-  SCE_THREAD_STOPPED = 16,
-  SCE_THREAD_KILLED  = 32, /* Thread manager has killed the thread (stack overflow) */
+	SCE_THREAD_RUNNING = 1,
+	SCE_THREAD_READY   = 2,
+	SCE_THREAD_WAITING = 4,
+	SCE_THREAD_SUSPEND = 8,
+	SCE_THREAD_STOPPED = 16,
+	SCE_THREAD_KILLED  = 32, /* Thread manager has killed the thread (stack overflow) */
 } SceThreadStatus;
 
 /**
@@ -315,30 +315,30 @@ int ksceKernelGetThreadRunStatus(SceUID thid, SceKernelThreadRunStatus *status);
 
 /** Additional options used when creating semaphores. */
 typedef struct SceKernelSemaOptParam {
-  /** Size of the ::SceKernelSemaOptParam structure. */
-  SceSize   size;
+	/** Size of the ::SceKernelSemaOptParam structure. */
+	SceSize   size;
 } SceKernelSemaOptParam;
 
 /** Current state of a semaphore.
  * @see ksceKernelGetSemaInfo.
  */
 typedef struct SceKernelSemaInfo {
-  /** Size of the ::SceKernelSemaInfo structure. */
-  SceSize         size;
-  /** The UID of the semaphore */
-  SceUID          semaId;
-  /** NUL-terminated name of the semaphore. */
-  char            name[32];
-  /** Attributes. */
-  SceUInt         attr;
-  /** The initial count the semaphore was created with. */
-  int             initCount;
-  /** The current count. */
-  int             currentCount;
-  /** The maximum count. */
-  int             maxCount;
-  /** The number of threads waiting on the semaphore. */
-  int             numWaitThreads;
+	/** Size of the ::SceKernelSemaInfo structure. */
+	SceSize         size;
+	/** The UID of the semaphore */
+	SceUID          semaId;
+	/** NUL-terminated name of the semaphore. */
+	char            name[32];
+	/** Attributes. */
+	SceUInt         attr;
+	/** The initial count the semaphore was created with. */
+	int             initCount;
+	/** The current count. */
+	int             currentCount;
+	/** The maximum count. */
+	int             maxCount;
+	/** The number of threads waiting on the semaphore. */
+	int             numWaitThreads;
 } SceKernelSemaInfo;
 
 /**
@@ -347,7 +347,7 @@ typedef struct SceKernelSemaInfo {
  * @par Example:
  * @code
  * int semaid;
- * semaid = ksceKernelCreateSema("MyMutex", 0, 1, 1, 0);
+ * semaid = ksceKernelCreateSema("MySema", 0, 1, 1, 0);
  * @endcode
  *
  * @param name - Specifies the name of the sema
@@ -450,31 +450,31 @@ int ksceKernelGetSemaInfo(SceUID semaid, SceKernelSemaInfo *info);
 
 /** Additional options used when creating mutexes. */
 typedef struct SceKernelMutexOptParam {
-  /** Size of the ::SceKernelMutexOptParam structure. */
-  SceSize   size;
-  int             ceilingPriority;
+	/** Size of the ::SceKernelMutexOptParam structure. */
+	SceSize   size;
+	int             ceilingPriority;
 } SceKernelMutexOptParam;
 
 /** Current state of a mutex.
  * @see ksceKernelGetMutexInfo.
  */
 typedef struct SceKernelMutexInfo {
-  /** Size of the ::SceKernelMutexInfo structure. */
-  SceSize         size;
-  /** The UID of the mutex. */
-  SceUID          mutexId;
-  /** NUL-terminated name of the mutex. */
-  char            name[32];
-  /** Attributes. */
-  SceUInt         attr;
-  /** The initial count the mutex was created with. */
-  int             initCount;
-  /** The current count. */
-  int             currentCount;
-  /** The UID of the current owner of the mutex. */
-  SceUID          currentOwnerId;
-  /** The number of threads waiting on the mutex. */
-  int             numWaitThreads;
+	/** Size of the ::SceKernelMutexInfo structure. */
+	SceSize         size;
+	/** The UID of the mutex. */
+	SceUID          mutexId;
+	/** NUL-terminated name of the mutex. */
+	char            name[32];
+	/** Attributes. */
+	SceUInt         attr;
+	/** The initial count the mutex was created with. */
+	int             initCount;
+	/** The current count. */
+	int             currentCount;
+	/** The UID of the current owner of the mutex. */
+	SceUID          currentOwnerId;
+	/** The number of threads waiting on the mutex. */
+	int             numWaitThreads;
 } SceKernelMutexInfo;
 
 /**
@@ -576,42 +576,59 @@ int ksceKernelCancelMutex(SceUID mutexid, int newCount, int *numWaitThreads);
  */
 int ksceKernelGetMutexInfo(SceUID mutexid, SceKernelMutexInfo *info);
 
+typedef struct  SceKernelLwMutexWork {
+	SceInt64 data[4];
+} SceKernelLwMutexWork;
+
+typedef struct SceKernelLwMutexOptParam {
+	SceSize size;
+} SceKernelLwMutexOptParam;
+
+int ksceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
+int ksceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
+int ksceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
+int ksceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
+
+int ksceKernelInitializeFastMutex(void *mutex, const char *name, int unk0, int unk1);
+int ksceKernelLockFastMutex(void *mutex);
+int ksceKernelUnlockFastMutex(void *mutex);
+int ksceKernelDeleteFastMutex(void *mutex);
 
 /* Event flags. */
 
 /** Structure to hold the event flag information */
 typedef struct SceKernelEventFlagInfo {
-  SceSize   size;
-  SceUID          evfId; // Needs confirmation
-  char    name[32];
-  SceUInt   attr;
-  SceUInt   initPattern;
-  SceUInt   currentPattern;
-  int     numWaitThreads;
+	SceSize   size;
+	SceUID          evfId; // Needs confirmation
+	char    name[32];
+	SceUInt   attr;
+	SceUInt   initPattern;
+	SceUInt   currentPattern;
+	int     numWaitThreads;
 } SceKernelEventFlagInfo;
 
 typedef struct SceKernelEventFlagOptParam {
-  SceSize         size;
+	SceSize         size;
 } SceKernelEventFlagOptParam;
 
 typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
 
 /** Event flag creation attributes */
 typedef enum SceEventFlagAttributes {
-  /** Allow the event flag to be waited upon by multiple threads */
-  SCE_EVENT_WAITMULTIPLE = 0x1000
+	/** Allow the event flag to be waited upon by multiple threads */
+	SCE_EVENT_WAITMULTIPLE = 0x1000
 } SceEventFlagAttributes;
 
 /** Event flag wait types */
 typedef enum SceEventFlagWaitTypes {
-  /** Wait for all bits in the pattern to be set */
-  SCE_EVENT_WAITAND = 0,
-  /** Wait for one or more bits in the pattern to be set */
-  SCE_EVENT_WAITOR  = 1,
-  /** Clear all the bits when it matches */
-  SCE_EVENT_WAITCLEAR = 2,
-  /** Clear the wait pattern when it matches */
-  SCE_EVENT_WAITCLEAR_PAT = 4
+	/** Wait for all bits in the pattern to be set */
+	SCE_EVENT_WAITAND = 0,
+	/** Wait for one or more bits in the pattern to be set */
+	SCE_EVENT_WAITOR  = 1,
+	/** Clear all the bits when it matches */
+	SCE_EVENT_WAITCLEAR = 2,
+	/** Clear the wait pattern when it matches */
+	SCE_EVENT_WAITCLEAR_PAT = 4
 } SceEventFlagWaitTypes;
 
 /**
@@ -705,6 +722,20 @@ int ksceKernelDeleteEventFlag(int evid);
   */
 int ksceKernelGetEventFlagInfo(SceUID event, SceKernelEventFlagInfo *info);
 
+/* Condition variables */
+
+typedef struct  SceKernelLwCondWork {
+	SceInt64 data[4];
+} SceKernelLwCondWork;
+
+typedef struct SceKernelLwCondOptParam {
+	SceSize size;
+} SceKernelLwCondOptParam;
+
+int ksceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigned int attr, SceKernelLwMutexWork *pLwMutex, const SceKernelLwCondOptParam *pOptParam);
+int ksceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
+int ksceKernelSignalLwCond(SceKernelLwCondWork *pWork);
+int ksceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
 
 /* Callbacks. */
 
@@ -713,22 +744,22 @@ typedef int (*SceKernelCallbackFunction)(int notifyId, int notifyCount, int noti
 
 /** Structure to hold the status information for a callback */
 typedef struct SceKernelCallbackInfo {
-  /** Size of the structure (i.e. sizeof(SceKernelCallbackInfo)) */
-  SceSize size;
-  /** The UID of the callback. */
-  SceUID  callbackId; // Needs confirmation
-  /** The name given to the callback */
-  char    name[32];
-  /** The thread id associated with the callback */
-  SceUID  threadId;
-  /** Pointer to the callback function */
-  SceKernelCallbackFunction callback;
-  /** User supplied argument for the callback */
-  void    *common;
-  /** Unknown */
-  int     notifyCount;
-  /** Unknown */
-  int     notifyArg;
+	/** Size of the structure (i.e. sizeof(SceKernelCallbackInfo)) */
+	SceSize size;
+	/** The UID of the callback. */
+	SceUID  callbackId; // Needs confirmation
+	/** The name given to the callback */
+	char    name[32];
+	/** The thread id associated with the callback */
+	SceUID  threadId;
+	/** Pointer to the callback function */
+	SceKernelCallbackFunction callback;
+	/** User supplied argument for the callback */
+	void    *common;
+	/** Unknown */
+	int     notifyCount;
+	/** Unknown */
+	int     notifyArg;
 } SceKernelCallbackInfo;
 
 /**
@@ -923,14 +954,14 @@ int ksceKernelCancelMsgPipe(SceUID uid, int *psend, int *precv);
 
 /** Message Pipe status info */
 typedef struct SceKernelMppInfo {
-  SceSize size;
-  SceUID  mppId; // Needs confirmation
-  char    name[32];
-  SceUInt attr;
-  int     bufSize;
-  int     freeSize;
-  int     numSendWaitThreads;
-  int     numReceiveWaitThreads;
+	SceSize size;
+	SceUID  mppId; // Needs confirmation
+	char    name[32];
+	SceUInt attr;
+	int     bufSize;
+	int     freeSize;
+	int     numSendWaitThreads;
+	int     numReceiveWaitThreads;
 } SceKernelMppInfo;
 
 /**
@@ -947,14 +978,14 @@ int ksceKernelGetMsgPipeInfo(SceUID uid, SceKernelMppInfo *info);
 /* Misc. */
 
 typedef struct SceKernelSystemInfo {
-  SceSize   size;
-  SceUInt32 activeCpuMask;
+	SceSize   size;
+	SceUInt32 activeCpuMask;
 
-  struct {
-    SceKernelSysClock idleClock;
-    SceUInt32         comesOutOfIdleCount;
-    SceUInt32         threadSwitchCount;
-  } cpuInfo[4];
+	struct {
+		SceKernelSysClock idleClock;
+		SceUInt32         comesOutOfIdleCount;
+		SceUInt32         threadSwitchCount;
+	} cpuInfo[4];
 } SceKernelSystemInfo;
 
 /**
@@ -970,21 +1001,21 @@ int ksceKernelGetSystemInfo(SceKernelSystemInfo *info);
 
 /** Threadmgr types */
 typedef enum SceKernelIdListType {
-  SCE_KERNEL_TMID_Thread = 1,
-  SCE_KERNEL_TMID_Semaphore = 2,
-  SCE_KERNEL_TMID_EventFlag = 3,
-  SCE_KERNEL_TMID_Mbox = 4,
-  SCE_KERNEL_TMID_Vpl = 5,
-  SCE_KERNEL_TMID_Fpl = 6,
-  SCE_KERNEL_TMID_Mpipe = 7,
-  SCE_KERNEL_TMID_Callback = 8,
-  SCE_KERNEL_TMID_ThreadEventHandler = 9,
-  SCE_KERNEL_TMID_Alarm = 10,
-  SCE_KERNEL_TMID_VTimer = 11,
-  SCE_KERNEL_TMID_SleepThread = 64,
-  SCE_KERNEL_TMID_DelayThread = 65,
-  SCE_KERNEL_TMID_SuspendThread = 66,
-  SCE_KERNEL_TMID_DormantThread = 67,
+	SCE_KERNEL_TMID_Thread = 1,
+	SCE_KERNEL_TMID_Semaphore = 2,
+	SCE_KERNEL_TMID_EventFlag = 3,
+	SCE_KERNEL_TMID_Mbox = 4,
+	SCE_KERNEL_TMID_Vpl = 5,
+	SCE_KERNEL_TMID_Fpl = 6,
+	SCE_KERNEL_TMID_Mpipe = 7,
+	SCE_KERNEL_TMID_Callback = 8,
+	SCE_KERNEL_TMID_ThreadEventHandler = 9,
+	SCE_KERNEL_TMID_Alarm = 10,
+	SCE_KERNEL_TMID_VTimer = 11,
+	SCE_KERNEL_TMID_SleepThread = 64,
+	SCE_KERNEL_TMID_DelayThread = 65,
+	SCE_KERNEL_TMID_SuspendThread = 66,
+	SCE_KERNEL_TMID_DormantThread = 67,
 } SceKernelIdListType;
 
 /**
@@ -995,34 +1026,6 @@ typedef enum SceKernelIdListType {
  * @return The type, < 0 on error
  */
 SceKernelIdListType ksceKernelGetThreadmgrUIDClass(SceUID uid);
-
-
-typedef struct  SceKernelLwMutexWork {
-  SceInt64 data[4];
-} SceKernelLwMutexWork;
-
-typedef struct SceKernelLwMutexOptParam {
-  SceSize size;
-} SceKernelLwMutexOptParam;
-
-int ksceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
-int ksceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
-int ksceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
-int ksceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
-
-typedef struct  SceKernelLwCondWork {
-  SceInt64 data[4];
-} SceKernelLwCondWork;
-
-typedef struct SceKernelLwCondOptParam {
-  SceSize size;
-} SceKernelLwCondOptParam;
-
-int ksceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigned int attr, SceKernelLwMutexWork *pLwMutex, const SceKernelLwCondOptParam *pOptParam);
-int ksceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
-int ksceKernelSignalLwCond(SceKernelLwCondWork *pWork);
-int ksceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
-
 
 /**
  * Get the system time (wide version)

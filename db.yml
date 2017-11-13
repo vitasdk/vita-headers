@@ -2154,6 +2154,7 @@ modules:
           ksceKernelDelayThreadCB: 0x9C0180E1
           ksceKernelDeleteCallback: 0x3A7E17F6
           ksceKernelDeleteEventFlag: 0x71ECB352
+          ksceKernelDeleteFastMutex: 0x11FE84A1
           ksceKernelDeleteMutex: 0x0A912340
           ksceKernelDeleteSema: 0x16A35E58
           ksceKernelDeleteThread: 0xAC834F3F
@@ -2166,12 +2167,14 @@ modules:
           ksceKernelGetSystemTimeWide: 0xF4EE4FA9
           ksceKernelGetThreadCpuAffinityMask: 0x83DC703D
           ksceKernelGetThreadCurrentPriority: 0x01414F0B
+          ksceKernelGetThreadId: 0x59D06540
           ksceKernelGetThreadmgrUIDClass: 0x0A20775A
           ksceKernelGetThreadStackFreeSize: 0x7B278A0B
           ksceKernelGetThreadTLSAddr: 0x66EEA46A
           ksceKernelGetTimerBaseWide: 0xA6D11DD3
           ksceKernelGetTimerTimeWide: 0xC1286004
           ksceKernelInitializeFastMutex: 0xAF8E1266
+          ksceKernelLockFastMutex: 0x70627F3A
           ksceKernelLockMutex: 0x16AC80C5
           ksceKernelNotifyCallback: 0xC3E00919
           ksceKernelPollEventFlag: 0x76C6555B
@@ -2192,6 +2195,7 @@ modules:
           ksceKernelStopTimer: 0x474F214B
           ksceKernelTryLockReadRWLock: 0xFC2B5A50
           ksceKernelTryLockWriteRWLock: 0xA96F2E5A
+          ksceKernelUnlockFastMutex: 0xDB395782
           ksceKernelUnlockMutex: 0x1E82E5D0
           ksceKernelUnlockReadRWLock: 0xDE1B9EEE
           ksceKernelUnlockWriteRWLock: 0x94A73797
