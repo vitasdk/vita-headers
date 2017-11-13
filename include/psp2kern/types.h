@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_TYPES_H_
-#define _PSP2_TYPES_H_
+#ifndef _PSP2_KERNEL_TYPES_H_
+#define _PSP2_KERNEL_TYPES_H_
 
 #include <stddef.h>
 #include <stdint.h>

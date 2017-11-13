@@ -6,7 +6,7 @@
 #ifndef _PSP2_LOWIO_GPIO_H_
 #define _PSP2_LOWIO_GPIO_H_
 
-#include <psp2/types.h>
+#include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {

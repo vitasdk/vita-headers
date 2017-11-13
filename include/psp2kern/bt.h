@@ -7,7 +7,7 @@
 #ifndef _PSP2_KERNEL_BT_H_
 #define _PSP2_KERNEL_BT_H_
 
-#include <psp2/types.h>
+#include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -66,7 +66,7 @@ typedef enum SceBtErrorCode {
 	SCE_BT_ERROR_HID_INVALID_PROTOCOL                           	 = 0x802F0908,
 	SCE_BT_ERROR_HID_INVALID_IDLE                               	 = 0x802F0909,
 	SCE_BT_ERROR_HID_NOT_YET                                    	 = 0x802F090C,
-	SCE_BT_ERROR_HID_INVALID_LENGTH                             	 = 0x802F090D,	
+	SCE_BT_ERROR_HID_INVALID_LENGTH                             	 = 0x802F090D,
 	SCE_BT_ERROR_HID_INVALID_REPORT_ID                          	 = 0x802F090E,
 	SCE_BT_ERROR_HID_OVERWRITE_REQ                              	 = 0x802F090F,
 	SCE_BT_ERROR_JUMBO_UNLOCK_NOT_OWNER                         	 = 0x802F0B01,
