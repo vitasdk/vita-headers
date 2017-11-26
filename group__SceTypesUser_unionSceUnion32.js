@@ -1,11 +1,11 @@
 var group__SceTypesUser_unionSceUnion32 =
 [
-    [ "c", "group__SceTypesUser.html#ga7bf7a8ff6ef3aaafd80612b3e31868de", null ],
+    [ "c", "group__SceTypesUser.html#ga41b3680e416949571c545ba23e1ecc7f", null ],
     [ "f", "group__SceTypesUser.html#ga3345c3d450577d39fc61f497e7188a2b", null ],
     [ "i", "group__SceTypesUser.html#gadd8c500c5a9f2bb7b3c9f22299e40649", null ],
-    [ "p", "group__SceTypesUser.html#ga1901b2b9e5a54726b6c93054183efa4c", null ],
-    [ "s", "group__SceTypesUser.html#ga3c9b2645ae6b57dee9fe9a0e20418a74", null ],
-    [ "uc", "group__SceTypesUser.html#ga33aca634d1ed4e14e8b573d5869653d6", null ],
+    [ "p", "group__SceTypesUser.html#ga1ccad12d1c17e38e7eea8d3340fcc1bd", null ],
+    [ "s", "group__SceTypesUser.html#ga4d2271079c27bc0d2bcc1df735a4356c", null ],
+    [ "uc", "group__SceTypesUser.html#ga037537ad2517c80c597702e02ef2aac2", null ],
     [ "ui", "group__SceTypesUser.html#ga24d6dcdffca188c39f1c88ce99ed9333", null ],
-    [ "us", "group__SceTypesUser.html#ga2525ca81e1fc82a8f18283f47c22e9aa", null ]
+    [ "us", "group__SceTypesUser.html#gaa98b1421b7c96bd7913a83a21af558be", null ]
 ];

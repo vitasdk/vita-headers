@@ -1,12 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"group__SceUsbSerialKernel.html#gaa307036066531884177ea8048a8a8abb":[1,9,2,1,1],
-"group__SceUsbSerialKernel.html#gad72dfb8ec9107537832d1eea400078ab":[1,9,2,1,4],
-"group__SceUsbSerialKernel.html#gaf94b720523fd86f2ef04b52098eea559":[1,9,2,1,6],
-"group__SceUsbSerialUser.html":[1,9,2,0],
-"group__SceUsbSerialUser.html#ga49fa46699ac2abf69fa3238cb62e75a5":[1,9,2,0,5],
-"group__SceUsbSerialUser.html#ga58d0de74c4fbc75ed8744d92e39377ca":[1,9,2,0,1],
-"group__SceUsbSerialUser.html#ga987082a088e17fb4f8fee1989cc09be6":[1,9,2,0,4],
 "group__SceUsbSerialUser.html#gab844c467ba0dfe6201630408fe131a09":[1,9,2,0,3],
 "group__SceUsbSerialUser.html#gac8a3910e0b34e9d388a5dbe918fd14ac":[1,9,2,0,0],
 "group__SceUsbSerialUser.html#gadc31c0bdb29c2a196d61141bbe384601":[1,9,2,0,6],
@@ -38,8 +31,8 @@ var NAVTREEINDEX8 =
 "http_8h_source.html":[3,0,0,0,2,0],
 "i2c_8h_source.html":[3,0,0,1,3,1],
 "ime__dialog_8h_source.html":[3,0,0,0,20],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h_source.html":[3,0,0,1,2,2],
 "io_2devctl_8h_source.html":[3,0,0,0,0,0],
 "io_2dirent_8h_source.html":[3,0,0,0,0,1],
