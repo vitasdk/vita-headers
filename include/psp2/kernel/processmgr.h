@@ -43,7 +43,6 @@ typedef enum SceKernelPowerTickType {
  * @param[in] res - Exit code to return
  *
  * @return 0 on success, < 0 on error.
- * @note - If NULL is provided as FrameBuf pointer, output is blacked out.
 */
 int sceKernelExitProcess(int res);
 
