@@ -43,7 +43,7 @@ typedef enum SceKernelPowerTickType {
  * @param[in] res - Exit code to return
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceKernelExitProcess(int res);
 
 /***
@@ -52,7 +52,7 @@ int sceKernelExitProcess(int res);
  * @param[in] type - One of ::SceKernelPowerTickType
  *
  * @return 0
-*/
+ */
 int sceKernelPowerTick(SceKernelPowerTickType type);
 
 /***
@@ -61,7 +61,7 @@ int sceKernelPowerTick(SceKernelPowerTickType type);
  * @param[in] type - One of ::SceKernelPowerTickType
  *
  * @return 0
-*/
+  */
 int sceKernelPowerLock(SceKernelPowerTickType type);
 
 /***
@@ -70,7 +70,7 @@ int sceKernelPowerLock(SceKernelPowerTickType type);
  * @param[in] type - One of ::SceKernelPowerTickType
  *
  * @return 0
-*/
+ */
 int sceKernelPowerUnlock(SceKernelPowerTickType type);
 
 /***
@@ -79,28 +79,28 @@ int sceKernelPowerUnlock(SceKernelPowerTickType type);
  * @param[out] type - Pointer to a ::SceKernelSysClock structure which will receive the process time.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceKernelGetProcessTime(SceKernelSysClock *pSysClock);
 
 /***
  * Get the lower 32 bits part of process time of the current process.
  *
  * @return process time of the current process
-*/
+ */
 SceUInt32 sceKernelGetProcessTimeLow(void);
 
 /***
  * Get the process time of the current process.
  *
  * @return process time of the current process
-*/
+ */
 SceUInt64 sceKernelGetProcessTimeWide(void);
 
 /***
  * Get the process ID of the current process.
  *
  * @return process ID of the current process
-*/
+ */
 SceUID sceKernelGetProcessId(void);
 
 #ifdef __cplusplus
