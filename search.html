@@ -3012,7 +3012,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00066</field>
     <field name="keywords"></field>
-    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufInfoForPid SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable</field>
+    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplaySetFrameBufInternal head index SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufInfoForPid SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -16577,6 +16577,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8</field>
     <field name="keywords">ksceDisplaySetFrameBuf</field>
     <field name="text">Set/Update framebuffer parameters pParam Pointer to a SceDisplayFrameBuf structure sync One of 0 on success 0 on error If NULL is provided as pParam pointer output is blacked out</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplaySetFrameBufInternal</field>
+    <field name="args">(int head, int index, const SceDisplayFrameBuf *pParam, int sync)</field>
+    <field name="url">group__SceDisplayKernel.html#ga167b702166adcc723e120d443c61a200</field>
+    <field name="keywords">ksceDisplaySetFrameBufInternal</field>
+    <field name="text">Set/Update framebuffer parameters for display head Use 0 for OLED/LCD and 1 for HDMI index Can be 0 or 1 pParam Pointer to a SceDisplayFrameBuf structure sync One of 0 on success 0 on error If NULL is provided as pParam pointer output is blacked out</field>
   </doc>
   <doc>
     <field name="type">function</field>

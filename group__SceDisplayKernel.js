@@ -18,6 +18,7 @@ var group__SceDisplayKernel =
     [ "ksceDisplayRegisterVblankStartCallback", "group__SceDisplayKernel.html#gaf04a60871706033bc8b34e6e898e297c", null ],
     [ "ksceDisplayRegisterVblankStartCallbackInternal", "group__SceDisplayKernel.html#ga3a0b18b2bef1ab2f93eb223f3ac40f2c", null ],
     [ "ksceDisplaySetFrameBuf", "group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
+    [ "ksceDisplaySetFrameBufInternal", "group__SceDisplayKernel.html#ga167b702166adcc723e120d443c61a200", null ],
     [ "ksceDisplaySetInvertColors", "group__SceDisplayKernel.html#gaba015ee6bd3e5d4b83efd0151dbb8552", null ],
     [ "ksceDisplayUnregisterVblankStartCallback", "group__SceDisplayKernel.html#ga2388597c94753664a822c781f091d11f", null ],
     [ "ksceDisplayUnregisterVblankStartCallbackInternal", "group__SceDisplayKernel.html#ga4d17a4e9bb8164ea304d04cc5892d749", null ],
