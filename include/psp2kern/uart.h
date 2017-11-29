@@ -16,7 +16,6 @@ int ksceUartInit(int port);
 int ksceUartReadAvailable(int port);
 int ksceUartRead(int port);
 int ksceUartWrite(int port, char data);
-int kscePervasiveUartSetBaudrate(int port, unsigned int baudrate);
 
 #ifdef __cplusplus
 }
