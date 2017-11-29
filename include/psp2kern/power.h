@@ -1,5 +1,5 @@
 /**
- * \usergroup{ScePower}
+ * \kernelgroup{ScePower}
  * \usage{psp2kern/power.h,ScePowerForDriver_stub}
  */
 
