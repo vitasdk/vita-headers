@@ -1,5 +1,5 @@
 /**
- * \kernelgroup{SceUart}
+ * \kernelgroup{SceSyscon}
  * \usage{psp2kern/syscon.h,SceSysconForDriver_stub}
  */
 

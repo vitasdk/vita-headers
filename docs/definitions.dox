@@ -107,6 +107,9 @@
  *
  *     \defgroup SceI2c I2C Library
  *      Do read/write I2C transfers, etc.
+ *
+ *     \defgroup ScePervasive Pervasive Library
+ *      Controls the clocks of the system.
  * \}
  *
  *
@@ -154,6 +157,9 @@
  *
  *     \defgroup SceIntrMgr Interrupt Manager Library
  *      Mask interrupts, register interrupt handlers, etc
+ *
+ *     \defgroup SceUart UART Library
+ *      UART communication
  * \}
  *
  *
@@ -255,6 +261,14 @@
  *
  *     \defgroup SceScreenShot ScreenShot Library
  *      Set screenshot params, Enable/Disable them
+ * \}
+ *
+ *
+ * \defgroup Syscon Syscon
+ *  Syscon processor communication
+ * \{
+ *     \defgroup SceSyscon Syscon communication Library
+ *      Allows communication with the Syscon processor
  * \}
  *
  *
