@@ -3,8 +3,8 @@
  * \usage{psp2kern/lowio/gpio.h,SceGpioForDriver_stub}
  */
 
-#ifndef _PSP2_LOWIO_GPIO_H_
-#define _PSP2_LOWIO_GPIO_H_
+#ifndef _PSP2_KERN_LOWIO_GPIO_H_
+#define _PSP2_KERN_LOWIO_GPIO_H_
 
 #include <psp2kern/types.h>
 
@@ -43,5 +43,5 @@ int ksceGpioQueryIntr(int bus, int port);
 }
 #endif
 
-#endif /* _PSP2_LOWIO_GPIO_H_ */
+#endif /* _PSP2_KERN_LOWIO_GPIO_H_ */
 

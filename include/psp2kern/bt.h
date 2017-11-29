@@ -343,4 +343,5 @@ int ksceBtUnregisterCallback(SceUID cb);
 #ifdef __cplusplus
 }
 #endif
-#endif
+
+#endif /* _PSP2_KERNEL_BT_H_ */
