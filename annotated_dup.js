@@ -233,6 +233,8 @@ var annotated_dup =
     [ "SceScreenShotParam", "group__SceScreenShotUser.html#structSceScreenShotParam", "group__SceScreenShotUser_structSceScreenShotParam" ],
     [ "SceSqliteMallocMethods", "structSceSqliteMallocMethods.html", "structSceSqliteMallocMethods" ],
     [ "SceSslMemoryPoolStats", "group__SceLibSslUser.html#structSceSslMemoryPoolStats", "group__SceLibSslUser_structSceSslMemoryPoolStats" ],
+    [ "SceSysconDebugHandlers", "structSceSysconDebugHandlers.html", "structSceSysconDebugHandlers" ],
+    [ "SceSysconPacket", "structSceSysconPacket.html", "structSceSysconPacket" ],
     [ "SceTouchData", "group__SceTouchUser.html#structSceTouchData", "group__SceTouchUser_structSceTouchData" ],
     [ "SceTouchPanelInfo", "group__SceTouchUser.html#structSceTouchPanelInfo", "group__SceTouchUser_structSceTouchPanelInfo" ],
     [ "SceTouchReport", "group__SceTouchUser.html#structSceTouchReport", "group__SceTouchUser_structSceTouchReport" ],

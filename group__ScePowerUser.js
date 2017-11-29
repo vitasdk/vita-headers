@@ -2,13 +2,16 @@ var group__ScePowerUser =
 [
     [ "ScePowerCallback", "group__ScePowerUser.html#ga2905d0fcc48aa6fb36b6edf2bf78cb2c", null ],
     [ "ScePowerCallbackType", "group__ScePowerUser.html#ga87add7efd8177f03fecc6fdf9233c57a", [
-      [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerUser.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
-      [ "SCE_POWER_CB_RESUMING", "group__ScePowerUser.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
-      [ "SCE_POWER_CB_RESUME_COMPLETE", "group__ScePowerUser.html#gga87add7efd8177f03fecc6fdf9233c57aa43ac20c4e39bb0f163dfc2b93d7b4856", null ]
+      [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
+      [ "SCE_POWER_CB_RESUMING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
+      [ "SCE_POWER_CB_RESUME_COMPLETE", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa43ac20c4e39bb0f163dfc2b93d7b4856", null ],
+      [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
+      [ "SCE_POWER_CB_RESUMING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
+      [ "SCE_POWER_CB_RESUME_COMPLETE", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa43ac20c4e39bb0f163dfc2b93d7b4856", null ]
     ] ],
-    [ "SCE_POWER_CB_RESUME_COMPLETE", "group__ScePowerUser.html#gga87add7efd8177f03fecc6fdf9233c57aa43ac20c4e39bb0f163dfc2b93d7b4856", null ],
-    [ "SCE_POWER_CB_RESUMING", "group__ScePowerUser.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
-    [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerUser.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
+    [ "SCE_POWER_CB_RESUME_COMPLETE", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa43ac20c4e39bb0f163dfc2b93d7b4856", null ],
+    [ "SCE_POWER_CB_RESUMING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
+    [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
     [ "scePowerGetArmClockFrequency", "group__ScePowerUser.html#ga43c4f0084152cff03dc037525a5dd311", null ],
     [ "scePowerGetBatteryCycleCount", "group__ScePowerUser.html#gac46c2fbaf0a6216917a886277aa98649", null ],
     [ "scePowerGetBatteryFullCapacity", "group__ScePowerUser.html#gab183cfc3f4f67d1e6137983c18155337", null ],

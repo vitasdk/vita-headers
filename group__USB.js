@@ -1,4 +1,4 @@
-var group__SerialCommunication =
+var group__USB =
 [
     [ "USB Driver Library", "group__SceUsbd.html", "group__SceUsbd" ],
     [ "USB Device Controller Driver Library", "group__SceUdcd.html", "group__SceUdcd" ],

@@ -20,14 +20,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__SceCLib.html",
-"group__SceCompatUser.html#ga392fd23494213036f1a3e8d3b70a1c7d",
-"group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b",
+"group__SceBtKernel.html",
+"group__SceCompatUser.html#ga386ed6418703cc63e5dd39b1927844e7",
+"group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c",
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aee20a6bacd31ddb17b1ffde2ab465461",
-"group__SceModulemgrUser.html#gaa297434ef456cbbdf41df20a44238a85",
-"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a838e5f4a43532fda65f210c1779dfb94",
-"group__SceThreadMgrKernel.html#ga4f4bb0a6d006f19322ec6b7776f7ca0a",
-"group__SceUsbSerialUser.html#gab844c467ba0dfe6201630408fe131a09"
+"group__SceModulemgrUser.html",
+"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a4107466cdab96eede13184ade4cc22cb",
+"group__SceSystemParamUser.html#ggaae33ce498fb58ec8fb018e03635e33cdab66f9235b6d4dc778e683cec6fd4bd53",
+"group__SceUartKernel.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
