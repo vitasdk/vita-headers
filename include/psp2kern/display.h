@@ -78,6 +78,19 @@ typedef struct SceDisplayFrameBufInfo {
 int ksceDisplaySetFrameBuf(const SceDisplayFrameBuf *pParam, int sync);
 
 /**
+ * Set/Update framebuffer parameters for display
+ *
+ * @param[in] head - Use 0 for OLED/LCD and 1 for HDMI
+ * @param[in] index - Can be 0 or 1
+ * @param[in] pParam - Pointer to a ::SceDisplayFrameBuf structure.
+ * @param[in] sync - One of ::DisplaySetBufSync
+ *
+ * @return 0 on success, < 0 on error.
+ * @note - If NULL is provided as pParam pointer, output is blacked out.
+*/
+int ksceDisplaySetFrameBufInternal(int head, int index, const SceDisplayFrameBuf *pParam, int sync);
+
+/**
  * Get current framebuffer parameters
  *
  * @param[out] pParam - Pointer to a ::SceDisplayFrameBuf structure
