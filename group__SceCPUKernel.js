@@ -13,6 +13,7 @@ var group__SceCPUKernel =
     [ "ksceKernelCpuDcacheWritebackRange", "group__SceCPUKernel.html#ga020bb04df9d12e27a4ee951858a25879", null ],
     [ "ksceKernelCpuDisableInterrupts", "group__SceCPUKernel.html#ga5e4ae03a7a343e652e31eb16f815f543", null ],
     [ "ksceKernelCpuEnableInterrupts", "group__SceCPUKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c", null ],
+    [ "ksceKernelCpuGetCpuId", "group__SceCPUKernel.html#gab4651268bb4ef22633f5b6055061fd64", null ],
     [ "ksceKernelCpuIcacheAndL2WritebackInvalidateRange", "group__SceCPUKernel.html#ga77b453c4e9bc36f2fe61aefab84c2345", null ],
     [ "ksceKernelCpuIcacheInvalidateAll", "group__SceCPUKernel.html#ga82fbbeae621b85af21dd6986d16898e0", null ],
     [ "ksceKernelCpuIcacheInvalidateRange", "group__SceCPUKernel.html#ga51e7af054510365358595c76dd758b6e", null ],

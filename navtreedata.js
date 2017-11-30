@@ -21,13 +21,13 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__SceBtKernel.html",
-"group__SceCompatUser.html#ga386ed6418703cc63e5dd39b1927844e7",
-"group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c",
+"group__SceCompatUser.html#ga3514a14572690fb2700e171f071357d1",
+"group__SceDirEntUser.html",
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aee20a6bacd31ddb17b1ffde2ab465461",
-"group__SceModulemgrKernel.html#gaa297434ef456cbbdf41df20a44238a85",
-"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a4107466cdab96eede13184ade4cc22cb",
-"group__SceSystemParamUser.html#ggaae33ce498fb58ec8fb018e03635e33cdab66f9235b6d4dc778e683cec6fd4bd53",
-"group__SceUart.html"
+"group__SceModulemgrKernel.html",
+"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a31ba143a574fa88b01036ab30a40a98e",
+"group__SceSystemParamUser.html#ggaae33ce498fb58ec8fb018e03635e33cdab3d4e7cd60acef9b2f3526a11afb7a54",
+"group__SceTypesUser.html#gae50a711d10b726734d4b4d27295ff0e2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
