@@ -1115,6 +1115,7 @@ typedef struct SceKernelLwMutexOptParam {
 int sceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
 int sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
 int sceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
+int sceKernelTryLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount);
 int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 
 typedef struct	SceKernelLwCondWork {
