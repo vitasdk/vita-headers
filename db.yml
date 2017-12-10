@@ -1087,38 +1087,48 @@ modules:
         nid: 0x4FAACD11
       SceDisplayForDriver:
         functions:
+          ksceDisplayDisableHead: 0x43347565
+          ksceDisplayEnableHead: 0x496032D6
           ksceDisplayGetActualViewportConf: 0x40ACFE51
+          ksceDisplayGetDeviceType: 0x8D9A1CCE
           ksceDisplayGetFrameBuf: 0xEEDA2E54
           ksceDisplayGetFrameBufInfoForPid: 0x3BC165EF
           ksceDisplayGetFrameBufInternal: 0x19F94C63
           ksceDisplayGetMaximumFrameBufResolution: 0x5AFE6CD3
+          ksceDisplayGetOutputMode: 0xD2CED235
           ksceDisplayGetPrimaryHead: 0xC8E554C5
+          ksceDisplayGetRefreshRateInternal: 0x7911958E
           ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
           ksceDisplayGetVcountInternal: 0x8B5DA27B
-          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
-          ksceDisplayRegisterVblankStartCallbackInternal: 0x4AE2A2B1
           ksceDisplayRegisterFrameBufCallback: 0x6E22990E
           ksceDisplayRegisterFrameBufCallbackInternal: 0xFA7CE579
+          ksceDisplayRegisterVblankStartCallback: 0x7FB0BD28
+          ksceDisplayRegisterVblankStartCallbackInternal: 0x4AE2A2B1
           ksceDisplaySetBrightness: 0x9E3C6DC6
           ksceDisplaySetDisplayColorSpaceMode: 0x8D79D187
           ksceDisplaySetFrameBuf: 0x289D82FE
           ksceDisplaySetFrameBufInternal: 0x16466675
           ksceDisplaySetInvertColors: 0x19140ACD
+          ksceDisplaySetOutputMode: 0xAF5EE5BE
+          ksceDisplaySetScaleConf: 0xEB390A76
           ksceDisplaySetViewportConf: 0xEE5EB52D
           ksceDisplayUnregisterVblankStartCallback: 0x4B27191F
           ksceDisplayUnregisterVblankStartCallbackInternal: 0xB027433E
           ksceDisplayWaitSetFrameBuf: 0x1C0C9C4A
           ksceDisplayWaitSetFrameBufCB: 0x9D7F203C
+          ksceDisplayWaitSetFrameBufCBInternal: 0x35466D63
+          ksceDisplayWaitSetFrameBufInternal: 0x12A77662
           ksceDisplayWaitSetFrameBufMulti: 0xE6D27E0A
           ksceDisplayWaitSetFrameBufMultiCB: 0x863EACBE
+          ksceDisplayWaitSetFrameBufMultiInternal: 0xF83C95B1
           ksceDisplayWaitVblankStart: 0x984C27E7
-          ksceDisplayWaitVblankStartInternal: 0xB80CA224
           ksceDisplayWaitVblankStartCB: 0x46F186C3
           ksceDisplayWaitVblankStartCBInternal: 0x8F3C0E19
+          ksceDisplayWaitVblankStartInternal: 0xB80CA224
           ksceDisplayWaitVblankStartMulti: 0x40F1469C
-          ksceDisplayWaitVblankStartMultiInternal: 0x32287576
           ksceDisplayWaitVblankStartMultiCB: 0x77ED8B3A
           ksceDisplayWaitVblankStartMultiCBInternal: 0x61421AAF
+          ksceDisplayWaitVblankStartMultiInternal: 0x32287576
         kernel: true
         nid: 0x9FED47AC
   SceFace:
@@ -4353,7 +4363,13 @@ modules:
         nid: 0x1082DA7F
       ScePowerForDriver:
         functions:
-          kcePowerGetBatteryElec: 0x862AE1A6
+          kscePowerGetBatteryElec: 0x862AE1A6
+          kscePowerBatteryDisableUsbCharging: 0x90285886
+          kscePowerBatteryEnableUsbCharging: 0x733F973B
+          kscePowerBatteryForbidCharging: 0x166922EC
+          kscePowerBatteryPermitCharging: 0xDD3D4DAC
+          kscePowerBatterySetUsbStatus: 0xE4E3C316
+          kscePowerBatteryStopUsbCharging: 0xACC857A4
           kscePowerBatteryUpdateInfo: 0x27F3292C
           kscePowerCancelRequest: 0xDB62C9CF
           kscePowerEncodeUBattery: 0x3951AF53
@@ -4371,7 +4387,9 @@ modules:
           kscePowerGetBatteryVolt: 0x483CE86B
           kscePowerGetBusClockFrequency: 0x478FE6F5
           kscePowerGetCaseTemp: 0x525592E4
+          kscePowerGetCompatClockFrequency: 0xCBCC11CC
           kscePowerGetDeviceCount: 0x475BCC82
+          kscePowerGetDisplayMaxBrightness: 0xD8759B55
           kscePowerGetGpuClockFrequency: 0xC63DACD5
           kscePowerGetGpuXbarClockFrequency: 0x0A750DEE
           kscePowerGetIdleTimer: 0xEDC13FE5
@@ -4389,17 +4407,21 @@ modules:
           kscePowerRequestDisplayOff: 0x160EB506
           kscePowerRequestDisplayOn: 0x3EA75C88
           kscePowerRequestHibernate: 0x08951418
+          kscePowerRequestResume: 0x02DB1035
           kscePowerRequestSoftReset: 0x2875994B
           kscePowerRequestStandby: 0x2B7C7CF4
           kscePowerRequestSuspend: 0xAC32C9CC
           kscePowerSetArmClockFrequency: 0x74DB5AE5
           kscePowerSetBatteryFakeStatus: 0x0C6973B8
           kscePowerSetBusClockFrequency: 0xB8D7B3FB
+          kscePowerSetCompatClockFrequency: 0xFFC84E69
+          kscePowerSetDisplayMaxBrightness: 0x77027B6B
           kscePowerSetGpuClockFrequency: 0x264C24FC
           kscePowerSetGpuXbarClockFrequency: 0xA7739DBE
           kscePowerSetIdleCallback: 0x1BA2FCAE
-          kscePowerSetMipsClockFrequency: 0xFFC84E69
+          kscePowerSetIdleTimer: 0x6BC26FC7
           kscePowerSetPowerSwMode: 0xC1853BA7
+          kscePowerSetProcessIdleCallback: 0x0856FD0A
           kscePowerSetPsButtonPushTime: 0xCF8F0529
           kscePowerSetStandbyButtonPushTime: 0x675A84ED
           kscePowerTick: 0xEFD3C963
