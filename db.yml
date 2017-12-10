@@ -1097,6 +1097,7 @@ modules:
           ksceDisplayGetMaximumFrameBufResolution: 0x5AFE6CD3
           ksceDisplayGetOutputMode: 0xD2CED235
           ksceDisplayGetPrimaryHead: 0xC8E554C5
+          ksceDisplayGetRefreshRateInternal: 0x7911958E
           ksceDisplayGetResolutionInfoInternal: 0xB3C6D647
           ksceDisplayGetVcountInternal: 0x8B5DA27B
           ksceDisplayRegisterFrameBufCallback: 0x6E22990E
@@ -1115,8 +1116,11 @@ modules:
           ksceDisplayUnregisterVblankStartCallbackInternal: 0xB027433E
           ksceDisplayWaitSetFrameBuf: 0x1C0C9C4A
           ksceDisplayWaitSetFrameBufCB: 0x9D7F203C
+          ksceDisplayWaitSetFrameBufCBInternal: 0x35466D63
+          ksceDisplayWaitSetFrameBufInternal: 0x12A77662
           ksceDisplayWaitSetFrameBufMulti: 0xE6D27E0A
           ksceDisplayWaitSetFrameBufMultiCB: 0x863EACBE
+          ksceDisplayWaitSetFrameBufMultiInternal: 0xF83C95B1
           ksceDisplayWaitVblankStart: 0x984C27E7
           ksceDisplayWaitVblankStartCB: 0x46F186C3
           ksceDisplayWaitVblankStartCBInternal: 0x8F3C0E19
