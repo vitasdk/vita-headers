@@ -38,10 +38,10 @@ var NAVTREEINDEX0 =
 "ern_2io_2fcntl_8h_source.html":[3,0,0,1,1,2],
 "ern_2io_2stat_8h_source.html":[3,0,0,1,1,3],
 "ern_2kernel_2dmac_8h_source.html":[3,0,0,1,2,1],
-"ern_2kernel_2modulemgr_8h_source.html":[3,0,0,1,2,3],
-"ern_2kernel_2processmgr_8h_source.html":[3,0,0,1,2,4],
-"ern_2kernel_2sysmem_8h_source.html":[3,0,0,1,2,6],
-"ern_2kernel_2threadmgr_8h_source.html":[3,0,0,1,2,7],
+"ern_2kernel_2modulemgr_8h_source.html":[3,0,0,1,2,4],
+"ern_2kernel_2processmgr_8h_source.html":[3,0,0,1,2,5],
+"ern_2kernel_2sysmem_8h_source.html":[3,0,0,1,2,7],
+"ern_2kernel_2threadmgr_8h_source.html":[3,0,0,1,2,8],
 "ern_2net_2net_8h_source.html":[3,0,0,1,4,0],
 "ern_2power_8h_source.html":[3,0,0,1,8],
 "ern_2registrymgr_8h_source.html":[3,0,0,1,9],
@@ -50,6 +50,7 @@ var NAVTREEINDEX0 =
 "ern_2usbd_8h_source.html":[3,0,0,1,17],
 "ern_2usbserial_8h_source.html":[3,0,0,1,18],
 "error_8h_source.html":[3,0,0,0,1,2],
+"excpmgr_8h_source.html":[3,0,0,1,2,2],
 "fiber_8h_source.html":[3,0,0,0,16],
 "files.html":[3,0],
 "functions.html":[2,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5],
 "group__SceAudioencUser.html#gad4bb28b9aedbcb04d3b7d6eeb8af824d":[1,2,3,0,6],
 "group__SceAudioencUser.html#gae52560aa93159eebd8001535dd0e8baa":[1,2,3,0,2],
-"group__SceAudioencUser.html#gaeb6b1e0a2bc315c05ec9b67f54bc39c3":[1,2,3,0,3],
-"group__SceBt.html":[1,7,2]
+"group__SceAudioencUser.html#gaeb6b1e0a2bc315c05ec9b67f54bc39c3":[1,2,3,0,3]
 };

@@ -141,6 +141,7 @@ var annotated_dup =
     [ "SceKernelCondOptParam", "group__SceThreadMgrUser.html#structSceKernelCondOptParam", "group__SceThreadMgrUser_structSceKernelCondOptParam" ],
     [ "SceKernelEventFlagInfo", "group__SceThreadMgrUser.html#structSceKernelEventFlagInfo", "group__SceThreadMgrUser_structSceKernelEventFlagInfo" ],
     [ "SceKernelEventFlagOptParam", "group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam", "group__SceThreadMgrUser_structSceKernelEventFlagOptParam" ],
+    [ "SceKernelFaultingProcessInfo", "group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo", "group__SceThreadMgrKernel_structSceKernelFaultingProcessInfo" ],
     [ "SceKernelFwInfo", "group__SceModulemgrUser.html#structSceKernelFwInfo", "group__SceModulemgrUser_structSceKernelFwInfo" ],
     [ "SceKernelHeapCreateOpt", "group__SceSysmemKernel.html#structSceKernelHeapCreateOpt", "group__SceSysmemKernel_structSceKernelHeapCreateOpt" ],
     [ "SceKernelIntrOptParam", "group__SceIntrMgrKernel.html#structSceKernelIntrOptParam", "group__SceIntrMgrKernel_structSceKernelIntrOptParam" ],

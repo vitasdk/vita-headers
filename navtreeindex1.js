@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__SceBt.html":[1,7,2],
 "group__SceBtKernel.html":[1,7,2,0],
 "group__SceCLib.html":[1,6,0],
 "group__SceCLibUser.html":[1,6,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceCompatUser.html#ga212514269ab5f81d9ae55ab21eb40c56":[1,12,6,0,11],
 "group__SceCompatUser.html#ga233fc42e19338dbb1166ac71b1b2e39d":[1,12,6,0,5],
 "group__SceCompatUser.html#ga28fe9e97656c85b92e0f644618163118":[1,12,6,0,12],
-"group__SceCompatUser.html#ga2fe3cc2558a610a23906e4c51d50f661":[1,12,6,0,25],
-"group__SceCompatUser.html#ga319da01f8eeef8375159bc297df1b564":[1,12,6,0,3]
+"group__SceCompatUser.html#ga2fe3cc2558a610a23906e4c51d50f661":[1,12,6,0,25]
 };

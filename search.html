@@ -5707,77 +5707,84 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00090</field>
     <field name="keywords"></field>
-    <field name="text">SceUID processId SceUID threadId priority cpuInfo SceKernelThreadRunStatus SceThreadStatus SCE_THREAD_RUNNING SCE_THREAD_READY SCE_THREAD_WAITING SCE_THREAD_SUSPEND SCE_THREAD_STOPPED SCE_THREAD_KILLED SceThreadStatus SceUID ksceKernelCreateThread name SceKernelThreadEntry entry initPriority stackSize SceUInt attr cpuAffinityMask SceKernelThreadOptParam option ksceKernelDeleteThread SceUID thid ksceKernelStartThread SceUID thid SceSize arglen argp ksceKernelExitThread status ksceKernelExitDeleteThread status ksceKernelWaitThreadEnd SceUID thid stat SceUInt timeout ksceKernelWaitThreadEndCB SceUID thid stat SceUInt timeout ksceKernelDelayThread SceUInt delay ksceKernelDelayThreadCB SceUInt delay ksceKernelChangeCurrentThreadAttr unknown SceUInt attr ksceKernelChangeThreadPriority SceUID thid priority ksceKernelReleaseWaitThread SceUID thid ksceKernelGetThreadId ksceKernelGetThreadCurrentPriority ksceKernelGetThreadExitStatus SceUID thid ksceKernelCheckThreadStack ksceKernelGetThreadStackFreeSize SceUID thid ksceKernelGetThreadInfo SceUID thid SceKernelThreadInfo info ksceKernelGetThreadRunStatus SceUID thid SceKernelThreadRunStatus status SceKernelSemaOptParam SceSize size SceKernelSemaOptParam SceKernelSemaInfo SceSize size SceUID semaId name SceUInt attr initCount currentCount maxCount numWaitThreads SceKernelSemaInfo SceUID ksceKernelCreateSema name SceUInt attr initVal maxVal SceKernelSemaOptParam option ksceKernelDeleteSema SceUID semaid ksceKernelSignalSema SceUID semaid signal ksceKernelWaitSema SceUID semaid signal SceUInt timeout ksceKernelWaitSemaCB SceUID semaid signal SceUInt timeout ksceKernelPollSema SceUID semaid signal ksceKernelCancelSema SceUID semaid setCount numWaitThreads ksceKernelGetSemaInfo SceUID semaid SceKernelSemaInfo info SceKernelMutexOptParam SceSize size ceilingPriority SceKernelMutexOptParam SceKernelMutexInfo SceSize size SceUID mutexId name SceUInt attr initCount currentCount SceUID currentOwnerId numWaitThreads SceKernelMutexInfo SceUID ksceKernelCreateMutex name SceUInt attr initCount SceKernelMutexOptParam option ksceKernelDeleteMutex SceUID mutexid ksceKernelOpenMutex name ksceKernelCloseMutex SceUID mutexid ksceKernelLockMutex SceUID mutexid lockCount timeout ksceKernelLockMutexCB SceUID mutexid lockCount timeout ksceKernelTryLockMutex SceUID mutexid lockCount ksceKernelUnlockMutex SceUID mutexid unlockCount ksceKernelCancelMutex SceUID mutexid newCount numWaitThreads ksceKernelGetMutexInfo SceUID mutexid SceKernelMutexInfo info SceKernelLwMutexWork SceInt64 data SceKernelLwMutexWork SceKernelLwMutexOptParam SceSize size SceKernelLwMutexOptParam ksceKernelCreateLwMutex SceKernelLwMutexWork pWork pName attr initCount SceKernelLwMutexOptParam pOptParam ksceKernelDeleteLwMutex SceKernelLwMutexWork pWork ksceKernelLockLwMutex SceKernelLwMutexWork pWork lockCount pTimeout ksceKernelUnlockLwMutex SceKernelLwMutexWork pWork unlockCount ksceKernelInitializeFastMutex mutex name unk0 unk1 ksceKernelLockFastMutex mutex ksceKernelUnlockFastMutex mutex ksceKernelDeleteFastMutex mutex SceKernelEventFlagInfo SceSize size SceUID evfId name SceUInt attr SceUInt initPattern SceUInt currentPattern numWaitThreads SceKernelEventFlagInfo SceKernelEventFlagOptParam SceSize size SceKernelEventFlagOptParam SceKernelEventFlagOptParam SceKernelEventFlagOptParam</field>
+    <field name="text">SceUID processId SceUID threadId priority cpuInfo SceKernelThreadRunStatus SceThreadStatus SCE_THREAD_RUNNING SCE_THREAD_READY SCE_THREAD_WAITING SCE_THREAD_SUSPEND SCE_THREAD_STOPPED SCE_THREAD_KILLED SceThreadStatus</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00617</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00107</field>
+    <field name="keywords"></field>
+    <field name="text">SceKernelFaultingProcessInfo SceUID pid uint32_t unk SceKernelFaultingProcessInfo SceUID ksceKernelCreateThread name SceKernelThreadEntry entry initPriority stackSize SceUInt attr cpuAffinityMask SceKernelThreadOptParam option ksceKernelDeleteThread SceUID thid ksceKernelStartThread SceUID thid SceSize arglen argp ksceKernelExitThread status ksceKernelExitDeleteThread status ksceKernelWaitThreadEnd SceUID thid stat SceUInt timeout ksceKernelWaitThreadEndCB SceUID thid stat SceUInt timeout ksceKernelDelayThread SceUInt delay ksceKernelDelayThreadCB SceUInt delay ksceKernelChangeCurrentThreadAttr unknown SceUInt attr ksceKernelChangeThreadPriority SceUID thid priority ksceKernelReleaseWaitThread SceUID thid ksceKernelGetThreadId ksceKernelGetThreadCurrentPriority ksceKernelGetThreadExitStatus SceUID thid ksceKernelCheckThreadStack ksceKernelGetThreadStackFreeSize SceUID thid ksceKernelGetThreadInfo SceUID thid SceKernelThreadInfo info ksceKernelGetThreadRunStatus SceUID thid SceKernelThreadRunStatus status SceKernelSemaOptParam SceSize size SceKernelSemaOptParam SceKernelSemaInfo SceSize size SceUID semaId name SceUInt attr initCount currentCount maxCount numWaitThreads SceKernelSemaInfo SceUID ksceKernelCreateSema name SceUInt attr initVal maxVal SceKernelSemaOptParam option ksceKernelDeleteSema SceUID semaid ksceKernelSignalSema SceUID semaid signal ksceKernelWaitSema SceUID semaid signal SceUInt timeout ksceKernelWaitSemaCB SceUID semaid signal SceUInt timeout ksceKernelPollSema SceUID semaid signal ksceKernelCancelSema SceUID semaid setCount numWaitThreads ksceKernelGetSemaInfo SceUID semaid SceKernelSemaInfo info SceKernelMutexOptParam SceSize size ceilingPriority SceKernelMutexOptParam SceKernelMutexInfo SceSize size SceUID mutexId name SceUInt attr initCount currentCount SceUID currentOwnerId numWaitThreads SceKernelMutexInfo SceUID ksceKernelCreateMutex name SceUInt attr initCount SceKernelMutexOptParam option ksceKernelDeleteMutex SceUID mutexid ksceKernelOpenMutex name ksceKernelCloseMutex SceUID mutexid ksceKernelLockMutex SceUID mutexid lockCount timeout ksceKernelLockMutexCB SceUID mutexid lockCount timeout ksceKernelTryLockMutex SceUID mutexid lockCount ksceKernelUnlockMutex SceUID mutexid unlockCount ksceKernelCancelMutex SceUID mutexid newCount numWaitThreads ksceKernelGetMutexInfo SceUID mutexid SceKernelMutexInfo info SceKernelLwMutexWork SceInt64 data SceKernelLwMutexWork SceKernelLwMutexOptParam SceSize size SceKernelLwMutexOptParam ksceKernelCreateLwMutex SceKernelLwMutexWork pWork pName attr initCount SceKernelLwMutexOptParam pOptParam ksceKernelDeleteLwMutex SceKernelLwMutexWork pWork ksceKernelLockLwMutex SceKernelLwMutexWork pWork lockCount pTimeout ksceKernelUnlockLwMutex SceKernelLwMutexWork pWork unlockCount ksceKernelInitializeFastMutex mutex name unk0 unk1 ksceKernelLockFastMutex mutex ksceKernelUnlockFastMutex mutex ksceKernelDeleteFastMutex mutex SceKernelEventFlagInfo SceSize size SceUID evfId name SceUInt attr SceUInt initPattern SceUInt currentPattern numWaitThreads SceKernelEventFlagInfo SceKernelEventFlagOptParam SceSize size SceKernelEventFlagOptParam SceKernelEventFlagOptParam SceKernelEventFlagOptParam</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00622</field>
     <field name="keywords"></field>
     <field name="text">SceEventFlagAttributes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00619</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00624</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITMULTIPLE SceEventFlagAttributes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00623</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00628</field>
     <field name="keywords"></field>
     <field name="text">SceEventFlagWaitTypes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00625</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00630</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITAND</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00627</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00632</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITOR</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00629</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00634</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITCLEAR</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00631</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00636</field>
     <field name="keywords"></field>
     <field name="text">SCE_EVENT_WAITCLEAR_PAT SceEventFlagWaitTypes SceUID ksceKernelCreateEventFlag name attr bits SceKernelEventFlagOptParam opt ksceKernelSetEventFlag SceUID evid bits ksceKernelClearEventFlag SceUID evid bits ksceKernelPollEventFlag evid bits wait outBits ksceKernelWaitEventFlag evid bits wait outBits SceUInt timeout ksceKernelWaitEventFlagCB evid bits wait outBits SceUInt timeout ksceKernelDeleteEventFlag evid ksceKernelGetEventFlagInfo SceUID event SceKernelEventFlagInfo info SceKernelLwCondWork SceInt64 data SceKernelLwCondWork SceKernelLwCondOptParam SceSize size SceKernelLwCondOptParam ksceKernelCreateLwCond SceKernelLwCondWork pWork pName attr SceKernelLwMutexWork pLwMutex SceKernelLwCondOptParam pOptParam ksceKernelDeleteLwCond SceKernelLwCondWork pWork ksceKernelSignalLwCond SceKernelLwCondWork pWork ksceKernelWaitLwCond SceKernelLwCondWork pWork pTimeout</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00743</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00748</field>
     <field name="keywords"></field>
     <field name="text">int SceKernelCallbackFunction notifyId notifyCount notifyArg common SceKernelCallbackInfo SceSize size SceUID callbackId name SceUID threadId SceKernelCallbackFunction callback common notifyCount notifyArg SceKernelCallbackInfo ksceKernelCreateCallback name attr SceKernelCallbackFunction func arg ksceKernelGetCallbackInfo SceUID cb SceKernelCallbackInfo infop ksceKernelDeleteCallback SceUID cb ksceKernelNotifyCallback SceUID cb arg2 ksceKernelCancelCallback SceUID cb ksceKernelGetCallbackCount SceUID cb ksceKernelCheckCallback SceUID ksceKernelCreateMsgPipe name type attr bufSize opt ksceKernelDeleteMsgPipe SceUID uid ksceKernelSendMsgPipe SceUID uid message size unk1 unk2 timeout ksceKernelSendMsgPipeCB SceUID uid message size unk1 unk2 timeout ksceKernelTrySendMsgPipe SceUID uid message size unk1 unk2 ksceKernelReceiveMsgPipe SceUID uid message size unk1 unk2 timeout ksceKernelReceiveMsgPipeCB SceUID uid message size unk1 unk2 timeout ksceKernelTryReceiveMsgPipe SceUID uid message size unk1 unk2 ksceKernelCancelMsgPipe SceUID uid psend precv SceKernelMppInfo SceSize size SceUID mppId name SceUInt attr bufSize freeSize numSendWaitThreads numReceiveWaitThreads SceKernelMppInfo ksceKernelGetMsgPipeInfo SceUID uid SceKernelMppInfo info SceKernelSystemInfo SceSize size SceUInt32 activeCpuMask</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00984</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00989</field>
     <field name="keywords"></field>
     <field name="text">SceKernelSysClock idleClock SceUInt32 comesOutOfIdleCount SceUInt32 threadSwitchCount cpuInfo SceKernelSystemInfo ksceKernelGetSystemInfo SceKernelSystemInfo info</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l01003</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l01008</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args</field>
+    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -9344,6 +9351,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">source</field>
+    <field name="name">excpmgr.h</field>
+    <field name="url">excpmgr_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">SceExcpKind SCE_EXCP_RESET SCE_EXCP_UNDEF_INSTRUCTION SCE_EXCP_SVC SCE_EXCP_PABT SCE_EXCP_DABT SCE_EXCP_UNUSED SCE_EXCP_IRQ SCE_EXCP_FIQ SceExcpKind ksceExcpmgrGetData ksceExcpmgrRegisterHandler SceExcpKind kind priority handler</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
     <field name="name">intrmgr.h</field>
     <field name="url">intrmgr_8h_source.html#l00001</field>
     <field name="keywords"></field>
@@ -9886,6 +9900,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">SceIntrMgr</field>
     <field name="url">group__SceIntrMgr.html</field>
     <field name="keywords">Interrupt Manager Library</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">group</field>
+    <field name="name">SceExcpmgr</field>
+    <field name="url">group__SceExcpmgr.html</field>
+    <field name="keywords">Exception handling Library</field>
     <field name="text"></field>
   </doc>
   <doc>
@@ -17307,6 +17328,21 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">group</field>
+    <field name="name">SceExcpmgrKernel</field>
+    <field name="url">group__SceExcpmgrKernel.html</field>
+    <field name="keywords">Kernel</field>
+    <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceExcpmgrRegisterHandler</field>
+    <field name="args">(SceExcpKind kind, int priority, void *handler)</field>
+    <field name="url">group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5</field>
+    <field name="keywords">ksceExcpmgrRegisterHandler</field>
+    <field name="text">Register an exception handler handler must point to eight bytes of space followed by the handler code The space will be used in the internal linked list structure kind The kind of exception priority The priority must be 0 priority 8 0 highest handler The handler Error code or zero on success</field>
+  </doc>
+  <doc>
+    <field name="type">group</field>
     <field name="name">SceIntrMgrKernel</field>
     <field name="url">group__SceIntrMgrKernel.html</field>
     <field name="keywords">Kernel</field>
@@ -17953,6 +17989,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#gaba75fba95109d4d0346cd2f8ecc2df61</field>
     <field name="keywords">ksceKernelRunWithStack</field>
     <field name="text">Runs a function with larger stack size stack_size The stack size to_call To call args The arguments Zero on success</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelGetFaultingProcess</field>
+    <field name="args">(SceKernelFaultingProcessInfo *info)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d</field>
+    <field name="keywords">ksceKernelGetFaultingProcess</field>
+    <field name="text">Call from an abort handler to get info on faulting process info Output info Zero on success</field>
   </doc>
   <doc>
     <field name="type">typedef</field>

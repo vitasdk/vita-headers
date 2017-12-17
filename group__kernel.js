@@ -13,5 +13,6 @@ var group__kernel =
     [ "OpenPsid Library", "group__SceOpenPsid.html", "group__SceOpenPsid" ],
     [ "Random Number Library", "group__SceRng.html", "group__SceRng" ],
     [ "Suspend Library", "group__SceSuspend.html", "group__SceSuspend" ],
-    [ "Interrupt Manager Library", "group__SceIntrMgr.html", "group__SceIntrMgr" ]
+    [ "Interrupt Manager Library", "group__SceIntrMgr.html", "group__SceIntrMgr" ],
+    [ "Exception handling Library", "group__SceExcpmgr.html", "group__SceExcpmgr" ]
 ];
