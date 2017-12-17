@@ -2224,6 +2224,11 @@ modules:
           ksceKernelCheckWaitableStatus: 0xD9BD74EB
           ksceKernelCheckCallback: 0xE53E41F6
           ksceKernelTryLockMutex: 0x270993A6
+      SceThreadmgrForKernel:
+        kernel: true
+        nid: 0xA8CA0EFD
+        functions:
+          ksceKernelGetFaultingProcess: 0xD8B9AC8D
       SceThreadmgr:
         functions:
           sceKernelCancelCallback: 0x30741EF2
@@ -6519,3 +6524,12 @@ modules:
           _sceCodecEngineCloseUnmapMemBlock: 0xAD30912D
           _sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x489FF965
           _sceCodecEngineOpenUnmapMemBlock: 0xB0E654EE
+  SceExcpmgr:
+    nid: 0xF3D9E37C
+    libraries:
+      SceExcpmgrForKernel:
+        kernel: true
+        nid: 0x4CA0FDD5
+        functions:
+          ksceExcpmgrGetData: 0x08CB30E6
+          ksceExcpmgrRegisterHandler: 0x03499636
