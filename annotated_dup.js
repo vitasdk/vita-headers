@@ -178,6 +178,7 @@ var annotated_dup =
     [ "SceLocationPermissionInfo", "group__SceLocationUser.html#structSceLocationPermissionInfo", "group__SceLocationUser_structSceLocationPermissionInfo" ],
     [ "SceMotionSensorState", "group__SceMotionUser.html#structSceMotionSensorState", "group__SceMotionUser_structSceMotionSensorState" ],
     [ "SceMotionState", "group__SceMotionUser.html#structSceMotionState", "group__SceMotionUser_structSceMotionState" ],
+    [ "SceMsgDialogButtonsParam", "group__SceMessageDialogUser.html#structSceMsgDialogButtonsParam", "group__SceMessageDialogUser_structSceMsgDialogButtonsParam" ],
     [ "SceMsgDialogErrorCodeParam", "group__SceMessageDialogUser.html#structSceMsgDialogErrorCodeParam", "group__SceMessageDialogUser_structSceMsgDialogErrorCodeParam" ],
     [ "SceMsgDialogParam", "group__SceMessageDialogUser.html#structSceMsgDialogParam", "group__SceMessageDialogUser_structSceMsgDialogParam" ],
     [ "SceMsgDialogProgressBarParam", "group__SceMessageDialogUser.html#structSceMsgDialogProgressBarParam", "group__SceMessageDialogUser_structSceMsgDialogProgressBarParam" ],
