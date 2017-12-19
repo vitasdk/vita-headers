@@ -61,14 +61,16 @@ typedef enum SceMsgDialogButtonType {
 	SCE_MSG_DIALOG_BUTTON_TYPE_YESNO       = 1,
 	SCE_MSG_DIALOG_BUTTON_TYPE_NONE        = 2,
 	SCE_MSG_DIALOG_BUTTON_TYPE_OK_CANCEL   = 3,
-	SCE_MSG_DIALOG_BUTTON_TYPE_CANCEL      = 4
+	SCE_MSG_DIALOG_BUTTON_TYPE_CANCEL      = 4,
+	SCE_MSG_DIALOG_BUTTON_TYPE_3BUTTONS    = 5
 } SceMsgDialogButtonType;
 
 typedef enum SceMsgDialogButtonId {
 	SCE_MSG_DIALOG_BUTTON_ID_INVALID    = 0,
 	SCE_MSG_DIALOG_BUTTON_ID_OK         = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_YES        = 1,
-	SCE_MSG_DIALOG_BUTTON_ID_NO         = 2
+	SCE_MSG_DIALOG_BUTTON_ID_NO         = 2,
+	SCE_MSG_DIALOG_BUTTON_ID_RETRY      = 3
 } SceMsgDialogButtonId;
 
 typedef enum SceMsgDialogProgressBarType {
@@ -83,10 +85,26 @@ typedef enum SceMsgDialogEnvFlag {
 	SCE_MSG_DIALOG_ENV_FLAG_DEFAULT		= 0
 } SceMsgDialogEnvFlag;
 
+typedef enum SceMsgDialogFontSize {
+	SCE_MSG_DIALOG_FONT_SIZE_DEFAULT = 0,
+	SCE_MSG_DIALOG_FONT_SIZE_SMALL   = 1
+} SceMsgDialogFontSize;
+	
+typedef struct SceMsgDialogButtonsParam {
+	const char* msg1;          //!< Text of the first button
+	SceInt32 fontSize1;        //!< Font size of the first button (one of ::SceMsgDialogFontSize)
+	const char* msg2;          //!< Text of the first button
+	SceInt32 fontSize2;        //!< Font size of the second button (one of ::SceMsgDialogFontSize)
+	const char* msg3;          //!< Text of the second button
+	SceInt32 fontSize3;        //!< Font size of the second button (one of ::SceMsgDialogFontSize)
+	SceChar8 reserved[32];     //!< Reserved range
+} SceMsgDialogButtonsParam;
+
 typedef struct SceMsgDialogUserMessageParam {
 	SceInt32 buttonType;                    //!< Type of button set (one of ::SceMsgDialogButtonType)
 	const SceChar8 *msg;                    //!< Displayed message
-	SceChar8 reserved[32];                  //!< Reserved range
+	SceMsgDialogButtonsParam *buttonParam;  //!< Buttons parameters
+	SceChar8 reserved[28];                  //!< Reserved range
 } SceMsgDialogUserMessageParam;
 
 typedef struct SceMsgDialogSystemMessageParam {
