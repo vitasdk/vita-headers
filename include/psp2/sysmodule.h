@@ -68,6 +68,7 @@ typedef enum SceSysmoduleModuleId {
 	SCE_SYSMODULE_NEAR_UTIL             = 0x002B,
 	SCE_SYSMODULE_NP_TUS                = 0x002C,
 	SCE_SYSMODULE_MP4                   = 0x002D,
+	SCE_SYSMODULE_AACENC                = 0x002E,
 	SCE_SYSMODULE_HANDWRITING           = 0x002F,
 	SCE_SYSMODULE_ATRAC                 = 0x0030,
 	SCE_SYSMODULE_NP_SNS_FACEBOOK       = 0x0031,
