@@ -93,10 +93,10 @@ typedef enum SceMsgDialogFontSize {
 typedef struct SceMsgDialogButtonsParam {
 	const char* msg1;          //!< Text of the first button
 	SceInt32 fontSize1;        //!< Font size of the first button (one of ::SceMsgDialogFontSize)
-	const char* msg2;          //!< Text of the first button
+	const char* msg2;          //!< Text of the second button
 	SceInt32 fontSize2;        //!< Font size of the second button (one of ::SceMsgDialogFontSize)
-	const char* msg3;          //!< Text of the second button
-	SceInt32 fontSize3;        //!< Font size of the second button (one of ::SceMsgDialogFontSize)
+	const char* msg3;          //!< Text of the third button
+	SceInt32 fontSize3;        //!< Font size of the third button (one of ::SceMsgDialogFontSize)
 	SceChar8 reserved[32];     //!< Reserved range
 } SceMsgDialogButtonsParam;
 
