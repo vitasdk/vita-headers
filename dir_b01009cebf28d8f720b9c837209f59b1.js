@@ -41,6 +41,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "rtc.h", "rtc_8h_source.html", null ],
     [ "screenshot.h", "screenshot_8h_source.html", null ],
     [ "shellutil.h", "shellutil_8h_source.html", null ],
+    [ "shutter_sound.h", "shutter__sound_8h_source.html", null ],
     [ "sqlite.h", "sqlite_8h_source.html", null ],
     [ "sysmodule.h", "sysmodule_8h_source.html", null ],
     [ "system_param.h", "system__param_8h_source.html", null ],
