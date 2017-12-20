@@ -96,9 +96,9 @@ typedef struct SceCtrlData {
 	/** Left button */
 	uint8_t		left;
 	/** Left trigger (L2) */
-	uint8_t		l2;
+	uint8_t		lt;
 	/** Right trigger (R2) */
-	uint8_t		r2;
+	uint8_t		rt;
 	/** Left button (L1) */
 	uint8_t		l1;
 	/** Right button (R1) */
