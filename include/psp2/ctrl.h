@@ -37,9 +37,9 @@ typedef enum SceCtrlButtons {
 	SCE_CTRL_DOWN        = 0x00000040,            //!< Down D-Pad button.
 	SCE_CTRL_LEFT        = 0x00000080,            //!< Left D-Pad button.
 	SCE_CTRL_LTRIGGER    = 0x00000100,            //!< Left trigger.
-	SCE_CTRL_L2          = 0x00000100,            //!< L2 button.
+	SCE_CTRL_L2          = SCE_CTRL_LTRIGGER,     //!< L2 button.
 	SCE_CTRL_RTRIGGER    = 0x00000200,            //!< Right trigger.
-	SCE_CTRL_R2          = 0x00000200,            //!< R2 button.
+	SCE_CTRL_R2          = SCE_CTRL_RTRIGGER,     //!< R2 button.
 	SCE_CTRL_L1          = 0x00000400,            //!< L1 button.
 	SCE_CTRL_R1          = 0x00000800,            //!< R1 button.
 	SCE_CTRL_TRIANGLE    = 0x00001000,            //!< Triangle button.
