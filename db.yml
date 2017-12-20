@@ -3067,6 +3067,23 @@ modules:
           unlink: 0x7BBCA340
         kernel: false
         nid: 0x54
+  SceLibMp4Recorder:
+    nid: 0x4AF7A4D1
+    libraries:
+      SceLibMp4Recorder:
+        functions:
+          sceMp4RecCreateRecorder: 0x21053FDE
+          sceMp4RecAddAudioSample: 0x2C39D932
+          sceMp4RecRecorderInit: 0x4045786D
+          sceMp4RecDeleteRecorder: 0x5EBA2AE2
+          sceMp4RecCsc: 0x7B3184E4
+          sceMp4RecQueryPhysicalMemSize: 0x9A48028F
+          sceMp4RecTerm: 0xB13DAFF3
+          sceMp4RecAddVideoSample: 0xB263D8FB
+          sceMp4RecRecorderEnd: 0xB51FEBAF
+          sceMp4RecInit: 0xE9193B80
+        kernel: false
+        nid: 0x5EE05E0F
   SceLibc:
     nid: 0x43FBA801
     libraries:
