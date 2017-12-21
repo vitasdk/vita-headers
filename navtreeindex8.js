@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"group__SceTouchUser.html#ga9955c144eae8c285fd26f3e1e61ae969":[1,1,1,0,9],
+"group__SceTouchUser.html#gaa58c8770e9c43753822ff76837ea419b":[1,1,1,0,3],
+"group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be":[1,1,1,0,8],
+"group__SceTouchUser.html#gacb91e7a44b807be507daf8073f4712a6":[1,1,1,0,2],
+"group__SceTouchUser.html#gad25526d77de5c574b210193093a693db":[1,1,1,0,4],
+"group__SceTouchUser.html#gadb2690976483db65dc1dd6196f8941bd":[1,1,1,0,10],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,2,0],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,6],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,5],
@@ -110,8 +116,8 @@ var NAVTREEINDEX8 =
 "http_8h_source.html":[3,0,0,0,2,0],
 "i2c_8h_source.html":[3,0,0,1,3,1],
 "ime__dialog_8h_source.html":[3,0,0,0,20],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h_source.html":[3,0,0,1,2,3],
 "io_2devctl_8h_source.html":[3,0,0,0,0,0],
 "io_2dirent_8h_source.html":[3,0,0,0,0,1],

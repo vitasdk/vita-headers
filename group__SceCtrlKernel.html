@@ -149,7 +149,43 @@ buttons</td>
 Bit mask containing zero or more of <a class="el" href="group__SceCtrlKernel.html#ga7e5a5d40bbb69e9af702d5dedac70760" title="Enumeration for the digital controller buttons. ">SceCtrlButtons</a>. <p>Bit mask containing zero or more of ::CtrlButtons.</p>
 </td></tr>
 <tr><td class="fieldtype">
+<a id="ga206bfaeccfea6d81a4721871e911d82c"></a>uint8_t</td>
+<td class="fieldname">
+circle</td>
+<td class="fielddoc">
+Circle button. </td></tr>
+<tr><td class="fieldtype">
+<a id="gabed879db0a7c37fd85494dd96e245fc1"></a>uint8_t</td>
+<td class="fieldname">
+cross</td>
+<td class="fielddoc">
+Cross button. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaff84135d79802e61e8fd92e25f89fe0f"></a>uint8_t</td>
+<td class="fieldname">
+down</td>
+<td class="fielddoc">
+Down button. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1b45d46c5580bd63ff0cd3e7bf06b8fb"></a>uint8_t</td>
+<td class="fieldname">
+l1</td>
+<td class="fielddoc">
+Left button (L1) </td></tr>
+<tr><td class="fieldtype">
+<a id="gafffbd3365dbaba563d26c9f72a22c312"></a>uint8_t</td>
+<td class="fieldname">
+left</td>
+<td class="fielddoc">
+Left button. </td></tr>
+<tr><td class="fieldtype">
 <a id="gae43a39ba42c0866f063d72b545b733bb"></a>unsigned char</td>
+<td class="fieldname">
+lt</td>
+<td class="fielddoc">
+Left trigger (L2) </td></tr>
+<tr><td class="fieldtype">
+<a id="gab0bbb08c0a86162e10d0dc2d8f078522"></a>uint8_t</td>
 <td class="fieldname">
 lt</td>
 <td class="fielddoc">
@@ -167,19 +203,43 @@ ly</td>
 <td class="fielddoc">
 Left analogue stick, Y axis. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga50099ecf861a7075d32ed97a504d9bcc"></a>uint8_t</td>
+<a id="gafdf5f20eb0c45386ec3d522b17efe9cc"></a>uint8_t</td>
+<td class="fieldname">
+r1</td>
+<td class="fielddoc">
+Right button (R1) </td></tr>
+<tr><td class="fieldtype">
+<a id="ga293f561a121fbb4ae145a986cee01904"></a>uint8_t</td>
+<td class="fieldname">
+reserved[4]</td>
+<td class="fielddoc">
+Reserved. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga49526eb7bf0cb85fa8ec1881ca6ed774"></a>uint8_t</td>
 <td class="fieldname">
 reserved0[4]</td>
 <td class="fielddoc">
 Reserved. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga7abbc57c181e04d91f1fcace4576c268"></a>uint8_t</td>
+<a id="gac46b7a6fb2bb000b63a33d004f8961c9"></a>uint8_t</td>
 <td class="fieldname">
 reserved1[10]</td>
 <td class="fielddoc">
 Reserved. </td></tr>
 <tr><td class="fieldtype">
+<a id="gae5e8f3001d8f93def020d571ea476a58"></a>uint8_t</td>
+<td class="fieldname">
+right</td>
+<td class="fielddoc">
+Right button. </td></tr>
+<tr><td class="fieldtype">
 <a id="ga4e04962e85a8b352a225c40774dde8d0"></a>unsigned char</td>
+<td class="fieldname">
+rt</td>
+<td class="fielddoc">
+Right trigger (R2) </td></tr>
+<tr><td class="fieldtype">
+<a id="gaccdfcdd7ec52cdd760db30fe626f8c3e"></a>uint8_t</td>
 <td class="fieldname">
 rt</td>
 <td class="fielddoc">
@@ -197,11 +257,29 @@ ry</td>
 <td class="fielddoc">
 Right analogue stick, Y axis. </td></tr>
 <tr><td class="fieldtype">
+<a id="ga98572aac5eb2b1eabd181ce57b6e3b27"></a>uint8_t</td>
+<td class="fieldname">
+square</td>
+<td class="fielddoc">
+Square button. </td></tr>
+<tr><td class="fieldtype">
 <a id="ga985099b0cd12cdf65aa37e380b0cdbd9"></a>uint64_t</td>
 <td class="fieldname">
 timeStamp</td>
 <td class="fielddoc">
 The current read frame. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga93663810bd69fc6c6ad6ec16a400b590"></a>uint8_t</td>
+<td class="fieldname">
+triangle</td>
+<td class="fielddoc">
+Triangle button. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga0f9bde4602e6ae975f7e72b6ad5d896d"></a>uint8_t</td>
+<td class="fieldname">
+up</td>
+<td class="fielddoc">
+Up button. </td></tr>
 </table>
 
 </div>
@@ -361,7 +439,11 @@ Unknown. </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga7e5a5d40bbb69e9af702d5dedac70760a04799c8e184d2ae7f7df6633fff89f86"></a>SCE_CTRL_LTRIGGER&#160;</td><td class="fielddoc"><p>Left trigger. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga7e5a5d40bbb69e9af702d5dedac70760aab22c08feacd15832d5fadd9b29158dc"></a>SCE_CTRL_L2&#160;</td><td class="fielddoc"><p>L2 button. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="gga7e5a5d40bbb69e9af702d5dedac70760a8a8396d93981d7ac967a7ae405dbd990"></a>SCE_CTRL_RTRIGGER&#160;</td><td class="fielddoc"><p>Right trigger. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7e5a5d40bbb69e9af702d5dedac70760a64433f998657f502bd0f10101406fb41"></a>SCE_CTRL_R2&#160;</td><td class="fielddoc"><p>R2 button. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga7e5a5d40bbb69e9af702d5dedac70760a5e20bb0f019d500e4da1c92fdcfd3661"></a>SCE_CTRL_L1&#160;</td><td class="fielddoc"><p>L1 button. </p>
 </td></tr>
