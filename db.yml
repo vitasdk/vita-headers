@@ -386,13 +386,17 @@ modules:
           sceAppUtilAddCookieWebBrowser: 0xC97D5D9E
           sceAppUtilAddcontMount: 0x53B2C020
           sceAppUtilAddcontUmount: 0x1B36AF8C
+          sceAppUtilAppEventParseGameCustomData: 0x0B04C067
           sceAppUtilAppEventParseIncomingDialog: 0x22297D59
           sceAppUtilAppEventParseLiveArea: 0x0F4EE55F
           sceAppUtilAppEventParseNearGift: 0x77380601
+          sceAppUtilAppEventParseNpActivity: 0xF6B75651
           sceAppUtilAppEventParseNpAppDataMessage: 0x6BED9B58
           sceAppUtilAppEventParseNpBasicJoinablePresence: 0x28C7D4F6
           sceAppUtilAppEventParseNpInviteMessage: 0xA2496814
           sceAppUtilAppEventParseScreenShotNotification: 0x2AF42D6A
+          sceAppUtilAppEventParseSessionInvitation: 0xA58E6FCE
+          sceAppUtilAppEventParseTeleport: 0x665A8B7E
           sceAppUtilAppEventParseTriggerUtil: 0x8DEE696B
           sceAppUtilAppEventParseWebBrowser: 0x8ED716F5
           sceAppUtilAppParamGetInt: 0xCD7FD67A
@@ -809,6 +813,11 @@ modules:
           sceCommonDialogIsRunning: 0x043A353E
           sceCommonDialogSetConfigParam: 0xBECD35C8
           sceCommonDialogUpdate: 0x90530F2F
+          sceCompanionUtilDialogAbort: 0x686C27EB
+          sceCompanionUtilDialogGetResult: 0x4A101FA7
+          sceCompanionUtilDialogGetStatus: 0xB981474F
+          sceCompanionUtilDialogInit: 0x0F68448E
+          sceCompanionUtilDialogTerm: 0xC3E6B1EC
           sceCrossControllerDialogAbort: 0xDDC52A46
           sceCrossControllerDialogGetResult: 0x8E35EA7B
           sceCrossControllerDialogGetStatus: 0x44B9E931
@@ -839,6 +848,11 @@ modules:
           sceNpFriendListDialogGetStatus: 0x1FD5D373
           sceNpFriendListDialogInit: 0x93FCFEC6
           sceNpFriendListDialogTerm: 0x4A880C6A
+          sceNpFriendList2DialogAbort: 0xFC67B971
+          sceNpFriendList2DialogGetResult: 0xC0CF1ED4
+          sceNpFriendList2DialogGetStatus: 0xAC735AF9
+          sceNpFriendList2DialogInit: 0xBBCDF66D
+          sceNpFriendList2DialogTerm: 0x05B18EA3
           sceNpMessageDialogAbort: 0x47AB6D04
           sceNpMessageDialogGetResult: 0x7EC95C61
           sceNpMessageDialogGetStatus: 0x2A0D060F
@@ -874,6 +888,11 @@ modules:
           scePspSaveDataDialogGetResult: 0x61C45E12
           scePspSaveDataDialogInit: 0x4458B053
           scePspSaveDataDialogTerm: 0xB8E37F7C
+          sceRemoteOSKDialogAbort: 0x2314D273
+          sceRemoteOSKDialogGetResult: 0xF22D7884
+          sceRemoteOSKDialogGetStatus: 0x356F222A
+          sceRemoteOSKDialogInit: 0x24EB7636
+          sceRemoteOSKDialogTerm: 0xA15121F7
           sceSaveDataDialogAbort: 0x013E7F74
           sceSaveDataDialogContinue: 0x19192C8B
           sceSaveDataDialogFinish: 0x6C49924B
@@ -899,6 +918,11 @@ modules:
           sceTwLoginDialogGetResult: 0x5F7F4149
           sceTwLoginDialogGetStatus: 0x8ACC1F0B
           sceTwLoginDialogTerm: 0xD6387E24
+          sceVideoImportDialogAbort: 0xECA699FD
+          sceVideoImportDialogGetResult: 0x7759D5AD
+          sceVideoImportDialogGetStatus: 0xBE7C198A
+          sceVideoImportDialogInit: 0xF0CC86F9
+          sceVideoImportDialogTerm: 0x52E1CF8F
   SceCoredump:
     nid: 0x3E0F5EBD
     libraries:
@@ -1206,6 +1230,17 @@ modules:
           sceFiosArchiveSetDecompressorThreadCount: 0xCD0E86D0
           sceFiosArchiveUnmount: 0xFE1E1D28
           sceFiosArchiveUnmountSync: 0xB26DC24D
+          sceFiosCacheContainsFileRangeSync: 0x07368D62
+          sceFiosCacheContainsFileSync: 0xA74990E3
+          sceFiosCacheFlushFileRangeSync: 0x7EB1134C
+          sceFiosCacheFlushFileSync: 0x811A68D4
+          sceFiosCacheFlushSync: 0x50B173E1
+          sceFiosCachePrefetchFH: 0xE83B4B91
+          sceFiosCachePrefetchFHRange: 0x62BA823F
+          sceFiosCachePrefetchFHRangeSync: 0x55E28E75
+          sceFiosCachePrefetchFHSync: 0x722EA8ED
+          sceFiosCachePrefetchFile: 0xC58DF766
+          sceFiosCachePrefetchFileRange: 0x21619E35
           sceFiosCancelAllOps: 0x1E920B1D
           sceFiosChangeStat: 0xD2CD9AF2
           sceFiosChangeStatSync: 0xC781D7B4
@@ -1222,11 +1257,12 @@ modules:
           sceFiosDateGetCurrent: 0x5C593C1E
           sceFiosDateToComponents: 0x5CFF6EA0
           sceFiosDateToSceDateTime: 0x94FDFFEE
-          sceFiosDebugDumpDH: 0x44B9F8EB
           sceFiosDebugDumpDate: 0x159B1FA8
+          sceFiosDebugDumpDH: 0x44B9F8EB
           sceFiosDebugDumpError: 0x51E677DF
           sceFiosDebugDumpFH: 0x5506ACAB
           sceFiosDebugDumpOp: 0xE438D4F0
+          sceFiosDeallocatePassthruFH: 0xFF0876EA
           sceFiosDelete: 0x764DFA7A
           sceFiosDeleteSync: 0xAAC54B44
           sceFiosDevctl: 0x26D03E20
@@ -1270,6 +1306,7 @@ modules:
           sceFiosFHSync: 0xE485F35E
           sceFiosFHSyncSync: 0xA909CCE3
           sceFiosFHTell: 0xD7F33130
+          sceFiosFHToFileno: 0x0009910A
           sceFiosFHTruncate: 0x2B39453B
           sceFiosFHTruncateSync: 0xFEF940B7
           sceFiosFHWrite: 0xE663138E
@@ -1288,6 +1325,7 @@ modules:
           sceFiosFileTruncateSync: 0x6E1252B8
           sceFiosFileWrite: 0x42C278E5
           sceFiosFileWriteSync: 0x132B6DE6
+          sceFiosFilenoToFH: 0xEE3CEBB8
           sceFiosGetAllDHs: 0x681184A2
           sceFiosGetAllFHs: 0x90AB9195
           sceFiosGetAllOps: 0x8F62832C
@@ -1316,6 +1354,7 @@ modules:
           sceFiosOpIsCancelled: 0x0C81D80E
           sceFiosOpIsDone: 0x1B9A575E
           sceFiosOpReschedule: 0x968CADBD
+          sceFiosOpRescheduleWithPriority: 0x2B57C9A5
           sceFiosOpSyncWait: 0xE6A66C70
           sceFiosOpSyncWaitForIO: 0x202079F9
           sceFiosOpWait: 0x2AC79DFC
@@ -1339,6 +1378,9 @@ modules:
           sceFiosShutdownAndCancelOps: 0x5B8D48C4
           sceFiosStat: 0xFF04AF72
           sceFiosStatSync: 0xACBAF3E0
+          sceFiosStatisticsGet: 0xFE86B30D
+          sceFiosStatisticsPrint: 0x590DD306
+          sceFiosStatisticsReset: 0x5216E0DA
           sceFiosSuspend: 0x510953DC
           sceFiosSync: 0x0DF32816
           sceFiosSyncSync: 0x06D97629
@@ -1781,7 +1823,9 @@ modules:
           sceHttpCreateConnectionWithURL: 0xC616C200
           sceHttpCreateEpoll: 0x7C99AF67
           sceHttpCreateRequest: 0xB0284270
+          sceHttpCreateRequest2: 0x857D9242
           sceHttpCreateRequestWithURL: 0xBD5DA1D0
+          sceHttpCreateRequestWithURL2: 0x1B6B7983
           sceHttpCreateTemplate: 0x62241DAB
           sceHttpDeleteConnection: 0xF0F65C15
           sceHttpDeleteRequest: 0x3D3D29AD
@@ -1826,12 +1870,14 @@ modules:
           sceHttpSetEpoll: 0x0F1FD1B3
           sceHttpSetEpollId: 0x5CEB6554
           sceHttpSetIcmOption: 0x23978CBC
+          sceHttpSetInflateGZIPEnabled: 0x5104B13D
           sceHttpSetNonblock: 0x27A98BDA
           sceHttpSetRecvTimeOut: 0x94BF196E
           sceHttpSetRedirectCallback: 0x4E08167D
           sceHttpSetRequestContentLength: 0x37C30C90
           sceHttpSetResolveRetry: 0x9AB56EA7
           sceHttpSetResolveTimeOut: 0x8455B5B3
+          sceHttpSetResponseHeaderMaxSize: 0xFD76E1FB
           sceHttpSetSendTimeOut: 0x8AE3F008
           sceHttpSslIsCtxCreated: 0x2D3F1281
           sceHttpTerm: 0xC9076666
@@ -1845,8 +1891,10 @@ modules:
           sceHttpWaitRequest: 0x94F7256A
           sceHttpWaitRequestCB: 0x48650A83
           sceHttpsDisableOption: 0xC6D60403
+          sceHttpsDisableOption2: 0x2E77B201
           sceHttpsDisableOptionPrivate: 0x00659635
           sceHttpsEnableOption: 0x9FBE2869
+          sceHttpsEnableOption2: 0x1E93E8EF
           sceHttpsEnableOptionPrivate: 0x72CB0741
           sceHttpsFreeCaList: 0x56C95D94
           sceHttpsGetCaList: 0xF71AA58D
@@ -2266,6 +2314,7 @@ modules:
           sceKernelChangeActiveCpuMask: 0x001173F8
           sceKernelChangeThreadCpuAffinityMask: 0x15129174
           sceKernelChangeThreadPriority: 0xBD0139F2
+          sceKernelChangeThreadPriority2: 0xC5FFCA61
           sceKernelChangeThreadVfpException: 0xCC18FBAE
           sceKernelCheckCallback: 0xE53E41F6
           sceKernelCheckWaitableStatus: 0xD9BD74EB
@@ -2282,7 +2331,9 @@ modules:
           sceKernelCreateCallback: 0xB19CF7E9
           sceKernelCreateThreadForUser: 0xC0FAF6A3
           sceKernelDelayThread: 0x4B675D05
+          sceKernelDelayThread200: 0x97C4A7C4
           sceKernelDelayThreadCB: 0x9C0180E1
+          sceKernelDelayThreadCB200: 0x34938242
           sceKernelDeleteCallback: 0xD469676B
           sceKernelDeleteCond: 0x879E6EBD
           sceKernelDeleteEventFlag: 0x5840162C
@@ -3130,6 +3181,7 @@ modules:
           __cxa_guard_release: 0x4ED1056F
           __cxa_set_dso_handle_main: 0xBFE02B3A
           __set_exidx_main: 0x1EFFBAC2
+          __tls_get_addr: 0xBC529B7B
           _Assert: 0xE4531F85
           _Btowc: 0x1D1DA5AD
           _Ctype: 0x3CE6109D
@@ -3137,7 +3189,7 @@ modules:
           _Denorm: 0xF708906E
           _Exit: 0xB53B345B
           _FCbuild: 0xDEC462AB
-          _FDenorm: 0x1B05132
+          _FDenorm: 0x01B05132
           _Files: 0x855FC605
           _FInf: 0x8A0F308C
           _Flt: 0xE5620A03
@@ -3149,14 +3201,18 @@ modules:
           _Ldbl: 0x94CE931C
           _LDenorm: 0x2C8DBEB7
           _LInf: 0x5289BBC0
-          _LNan: 0x36D0F07
+          _LNan: 0x036D0F07
           _Lockfilelock: 0x5044FC32
           _Locksyslock: 0x7DBC0575
           _LSnan: 0x48AEEF2A
           _Mbtowc: 0x5E56EA4E
           _Nan: 0x116F3DA9
+          _PJP_C_Copyright: 0x2A72F684
+          _sceLdTlsRegisterModuleInfo: 0x54F87EAC
+          _sceLdTlsUnregisterModuleInfo: 0x240EA3AC
           _sceLibcErrnoLoc: 0x9E248B76
           _Snan: 0x677CDE35
+          _SCE_Assert: 0x31BAD49C
           _Stderr: 0xDDF9BB09
           _Stdin: 0x66B7406C
           _Stdout: 0x5D8C1282
@@ -3167,7 +3223,7 @@ modules:
           _Stold: 0x5AE9FFD8
           _Stoldx: 0x448A3CBE
           _Stoll: 0x6B9E23FE
-          _Stollx: 0xD9E3B1C
+          _Stollx: 0x0D9E3B1C
           _Stolx: 0x52DDCDAF
           _Stoul: 0xE71C5CDE
           _Stoull: 0x6794B3C6
@@ -3185,18 +3241,25 @@ modules:
           _WStold: 0x1EDA8F09
           _WStoul: 0x87C94271
           abort: 0x20FE0FFF
+          abort_handler_s: 0xE85DC452
           abs: 0x8E5A06C5
           asctime: 0xC94AE948
+          asctime_s: 0x79107429
           atof: 0xD500DE27
+          atoff: 0x8FC92882
           atoi: 0x21493BE7
           atol: 0xA1DBEE9F
           atoll: 0x875994F3
           bsearch: 0xD1BC28E7
+          bsearch_s: 0xE863F388
           btowc: 0xEFB3BC61
+          c16rtomb: 0x2C8ADE84
+          c32rtomb: 0xD283C166
           calloc: 0xE7EC3D0B
           clearerr: 0x72BA4468
           clock: 0xC082CA03
           ctime: 0x1EA1CA8D
+          ctime_s: 0x0FBFA054
           difftime: 0x33AD70A0
           div: 0xE9F823C0
           exit: 0x826BBBAF
@@ -3212,7 +3275,9 @@ modules:
           fgetws: 0x982AFA4D
           fileno: 0xFEC1502E
           fopen: 0xFFFBE239
+          fopen_s: 0x1483DF76
           fprintf: 0xE0C79764
+          fprintf_s: 0xE91E72D0
           fputc: 0x7E6A6108
           fputs: 0xC8FF13E5
           fputwc: 0xA597CDC8
@@ -3220,20 +3285,27 @@ modules:
           fread: 0xB31C73A9
           free: 0x5B9BB802
           freopen: 0x715C4395
+          freopen_s: 0x438765C6
           fscanf: 0x505601C6
+          fscanf_s: 0xB2B03159
           fseek: 0xC3A7CDE1
           fsetpos: 0xDC1BDBD7
           ftell: 0x41C2AF95
           fwide: 0xA77327D2
           fwprintf: 0xE52278E8
+          fwprintf_s: 0xD920CD41
           fwrite: 0x8BCDCC4E
           fwscanf: 0x7BFC75C6
+          fwscanf_s: 0x1E5C4E3D
           getc: 0x4BD5212E
           getchar: 0x4790BF1E
           gets: 0xF97B8CA3
+          gets_s: 0x9EB4D58E
           getwc: 0x23E0F442
           getwchar: 0x55DB4E32
           gmtime: 0xF283CFE3
+          gmtime_s: 0x4BE611B5
+          ignore_handler_s: 0x755505B5
           imaxabs: 0x1118B49F
           imaxdiv: 0x5766B4A8
           isalnum: 0x7CC1B964
@@ -3266,6 +3338,7 @@ modules:
           llabs: 0x9D2D17CD
           lldiv: 0x3F887699
           localtime: 0xF4A2E0BF
+          localtime_s: 0x2E41C336
           longjmp: 0x2D81C8C8
           malloc: 0x775A0CB2
           malloc_stats: 0x57A729DB
@@ -3273,20 +3346,27 @@ modules:
           malloc_usable_size: 0x54A54EB1
           mblen: 0x3E347849
           mbrlen: 0x1927CAE8
+          mbrtoc16: 0x90669696
+          mbrtoc32: 0x8B3B5A4C
           mbrtowc: 0x910664C3
           mbsinit: 0x961D12F8
           mbsrtowcs: 0x9C14D58E
+          mbsrtowcs_s: 0xFFDB6965
           mbstowcs: 0x2F75CF9B
+          mbstowcs_s: 0xFCAAA73C
           mbtowc: 0xD791A952
           memalign: 0xA9363E6B
           memchr: 0x2F3E5B16
           memcmp: 0x7747F6D7
           memcpy: 0x7205BFDB
+          memcpy_s: 0x64B34449
           memmove: 0xAF5C218D
+          memmove_s: 0xA5916CA9
           memset: 0x6DC1F0D8
           mktime: 0xD1A2DFC3
           mspace_calloc: 0x30470BBA
           mspace_create: 0xCEF7C575
+          mspace_create_with_flag: 0x055FCBC9
           mspace_destroy: 0x30CBBC66
           mspace_free: 0x3CDFD2A3
           mspace_is_heap_empty: 0xF355F381
@@ -3299,51 +3379,73 @@ modules:
           mspace_reallocalign: 0x915DA59E
           perror: 0x4696E7BE
           printf: 0x9A004680
+          printf_s: 0x73E15587
           putc: 0x995708A6
           putchar: 0x7CDAC89C
           puts: 0x59C3E171
           putwc: 0x247C71A6
           putwchar: 0x3E04AB1C
           qsort: 0xA7CBE4A6
+          qsort_s: 0x106927FE
+          quick_exit: 0xE4CA29E1
           rand: 0xC0883865
           rand_r: 0x962097AA
-          realloc: 0x6B54BA
+          realloc: 0x006B54BA
           reallocalign: 0x608AC135
           remove: 0x40293B75
           rename: 0x6FE983A3
           rewind: 0x6CA5BAB9
           scanf: 0x9CB9D899
+          scanf_s: 0xA94349C8
+          sceLibcFopenWithFD: 0xEECC055B
+          sceLibcFopenWithFH: 0x667AA471
+          sceLibcGetFD: 0x86BD86CD
+          sceLibcGetFH: 0x74E75EFE
+          sceLibcSetHeapInitError: 0x5CB3DC08
+          set_constraint_handler_s: 0xBA210739
           setbuf: 0x395490DA
           setjmp: 0x50B326CE
           setvbuf: 0x2CA980A0
           snprintf: 0xA1BFF606
+          snprintf_s: 0x4AB952F5
+          snwprintf_s: 0xD6448CAB
           sprintf: 0x7449B359
+          sprintf_s: 0xB92E45F7
           srand: 0x3AAD41B0
           sscanf: 0xEC585241
+          sscanf_s: 0xBDE472D5
           strcasecmp: 0x184C4B07
           strcat: 0x1434FA46
+          strcat_s: 0x234F3159
           strchr: 0xB9336E16
           strcmp: 0x1B58FA3B
           strcoll: 0x46AE2311
           strcpy: 0x85B924B7
-          strcspn: 0xE29D27A
+          strcpy_s: 0xC4A0D730
+          strcspn: 0x0E29D27A
           strdup: 0xFF6F77C7
           strerror: 0x1E9D6335
+          strerror_s: 0x301C4E06
+          strerrorlen_s: 0x5A1D86F2
           strftime: 0xEEB76FED
           strlen: 0x8AECC873
           strncasecmp: 0xAF1CA2F1
           strncat: 0xFBA69BC2
+          strncat_s: 0x158FD052
           strncmp: 0xE4299DCB
           strncpy: 0x9F87712D
+          strncpy_s: 0x1A1B1D71
+          strnlen_s: 0xB6DA8C56
           strpbrk: 0x68C307B6
           strrchr: 0xCEFDD143
           strspn: 0x4203B663
-          strstr: 0xD5200CB
+          strstr: 0x0D5200CB
           strtod: 0x6CA88B08
           strtof: 0x6CB8540E
           strtoimax: 0xB45FD61E
-          strtok: 0x289B8B3
+          strtok: 0x0289B8B3
           strtok_r: 0xEB31926D
+          strtok_s: 0x1CBC7E84
           strtol: 0x181827ED
           strtold: 0x48C684B2
           strtoll: 0x39B7E681
@@ -3352,70 +3454,100 @@ modules:
           strtoumax: 0xB318952F
           strxfrm: 0x4D023DE9
           swprintf: 0x1B581BEB
+          swprintf_s: 0x4951C60D
           swscanf: 0xE1D2AE42
+          swscanf_s: 0xD44DCDB3
           time: 0xDAE8D60F
           tolower: 0x83F73C88
           toupper: 0x1218642B
           towctrans: 0xCF77D465
-          towlower: 0x9C38DE4
+          towlower: 0x09C38DE4
           towupper: 0xCACE34B9
           ungetc: 0x2BCB3F01
           ungetwc: 0x39334D9C
           vfprintf: 0xF7915685
+          vfprintf_s: 0x90FCC53C
           vfscanf: 0xF137771A
+          vfscanf_s: 0xFA961FB5
           vfwprintf: 0x36BF1E06
+          vfwprintf_s: 0xD6DB0435
           vfwscanf: 0x37A563BE
+          vfwscanf_s: 0xC2F79A1D
           vprintf: 0xE7B5E23E
-          vscanf: 0xE9BD318
+          vprintf_s: 0xA47B6F8D
+          vscanf: 0x0E9BD318
+          vscanf_s: 0xD7163351
           vsnprintf: 0xFE83F2E4
+          vsnprintf_s: 0x1CFE2CA3
+          vsnwprintf_s: 0xD4612BAE
           vsprintf: 0x802FDDF9
+          vsprintf_s: 0x29FF349F
           vsscanf: 0xA9889307
+          vsscanf_s: 0xF6167B8A
           vswprintf: 0x572DAB57
+          vswprintf_s: 0x21F6AE17
           vswscanf: 0x9451EE20
-          vwprintf: 0xA451B11
+          vswscanf_s: 0xE86A728C
+          vwprintf: 0x0A451B11
+          vwprintf_s: 0x0DD22AC1
           vwscanf: 0xAD0C43DC
+          vwscanf_s: 0x22FDAF1C
           wcrtomb: 0xD9FF289D
+          wcrtomb_s: 0x96DD1FF1
           wcscat: 0x2F990FF9
+          wcscat_s: 0x2F02EC8B
           wcschr: 0xC1587971
           wcscmp: 0xF42128B9
           wcscoll: 0x8EC70609
           wcscpy: 0x8AAADD56
+          wcscpy_s: 0x0DE9509B
           wcscspn: 0x25F7E46A
           wcsftime: 0x74136BC1
           wcslen: 0xA778A14B
           wcsncat: 0x196AB9F2
+          wcsncat_s: 0xEC2888CC
           wcsncmp: 0xAAA6AAA2
           wcsncpy: 0x62E9B2D5
-          wcspbrk: 0x7F229DB
+          wcsncpy_s: 0xFDFEB000
+          wcsnlen_s: 0x9170E08C
+          wcspbrk: 0x07F229DB
           wcsrchr: 0xDF806521
           wcsrtombs: 0xD8889FC8
+          wcsrtombs_s: 0x8316C7E0
           wcsspn: 0x5F5AA692
           wcsstr: 0x5BE328EE
           wcstod: 0x35D7F1B1
           wcstof: 0x64123137
           wcstoimax: 0x3F2D104F
           wcstok: 0xA17C24A3
+          wcstok_s: 0xBC740847
           wcstol: 0xFBEB657E
           wcstold: 0x2D7C3A7A
           wcstoll: 0x6EEFB7D7
           wcstombs: 0x9A8F7FC0
+          wcstombs_s: 0xD6208FC4
           wcstoul: 0xACF13D54
           wcstoull: 0xCBFF8200
           wcstoumax: 0xB9E511B4
           wcsxfrm: 0xF6069AFD
           wctob: 0x704321CC
           wctomb: 0x6489B5E4
+          wctomb_s: 0x7E160FB3
           wctrans: 0xE8270951
           wctype: 0xA967B88D
           wmemchr: 0x7A08BE70
           wmemcmp: 0x9864C99F
           wmemcpy: 0xD9F9DDCD
+          wmemcpy_s: 0xA2474903
           wmemmove: 0x53F7EB4B
+          wmemmove_s: 0xB46A64F5
           wmemset: 0x4D04A480
           wprintf: 0xBF2F5FCE
+          wprintf_s: 0xC4CF52CE
           wscanf: 0xADC32204
+          wscanf_s: 0x4B84B885
   SceLiveArea:
-    nid: 0x57
+    nid: 0x6D180EF6
     libraries:
       SceLiveAreaUtil:
         kernel: false
@@ -3837,11 +3969,13 @@ modules:
           sceNpBasicJoinGameAckResponseSend: 0x8C90CC09
           sceNpBasicRecordPlaySessionLog: 0x3B0A7F47
           sceNpBasicRegisterHandler: 0x26E6E048
+          sceNpBasicRegisterInGameDataMessageHandler: 0x3ADE3628
           sceNpBasicRegisterJoinGameAckHandler: 0xE02A445C
           sceNpBasicSendInGameDataMessage: 0x7A5020A5
           sceNpBasicSetInGamePresence: 0x51D75562
           sceNpBasicTerm: 0x389BCB3B
           sceNpBasicUnregisterHandler: 0x050AE072
+          sceNpBasicUnregisterInGameDataMessageHandler: 0x363FF161
           sceNpBasicUnregisterJoinGameAckHandler: 0x2A764628
           sceNpBasicUnsetInGamePresence: 0xD20C2370
   SceNpCommerce2:
@@ -3985,6 +4119,10 @@ modules:
           sceNpGetServiceState: 0x54060DF6
           sceNpInit: 0x04D9F484
           sceNpManagerGetAccountRegion: 0xFE835967
+          sceNpAuthAbortOAuthRequest: 0xECBC7614
+          sceNpAuthCreateOAuthRequest: 0x555EB58C
+          sceNpAuthDeleteOAuthRequest: 0x8C94C7A5
+          sceNpAuthGetAuthorizationCode: 0x65DFB208
           sceNpManagerGetCachedParam: 0x43DC48A1
           sceNpManagerGetChatRestrictionFlag: 0x60C575B1
           sceNpManagerGetContentRatingFlag: 0xAF0073B2
@@ -4068,14 +4206,17 @@ modules:
           sceNpMessageSyncMessage: 0x35BE21C5
           sceNpMessageTerm: 0x380230A1
   SceNpParty:
-    nid: 0x7F
+    nid: 0x51D3A65A
     libraries:
       SceNpPartyGameUtil:
         kernel: false
         nid: 0xB3B34742
         functions:
           sceNpPartyCheckCallback: 0xB6132502
+          sceNpPartyGetGameSessionReadyState: 0xE9173FE6
+          sceNpPartyGetId: 0x27AFCE24
           sceNpPartyGetMemberInfo: 0x0560D9A1
+          sceNpPartyGetMemberSessionInfo: 0xF01585A3
           sceNpPartyGetMemberVoiceInfo: 0xFB200A6D
           sceNpPartyGetMembers: 0x420C30E9
           sceNpPartyGetState: 0x9F99ADF7
@@ -4099,6 +4240,8 @@ modules:
           sceNpScoreDeleteTitleCtx: 0xF52EA88A
           sceNpScoreGetBoardInfo: 0x00F90E7B
           sceNpScoreGetBoardInfoAsync: 0x3CD9974E
+          sceNpScoreGetFriendsRanking: 0x4F795659
+          sceNpScoreGetFriendsRankingAsync: 0x7090ED11
           sceNpScoreGetGameData: 0xDFAD64D3
           sceNpScoreGetGameDataAsync: 0xCE416993
           sceNpScoreGetRankingByNpId: 0xBAE55B34
@@ -4217,6 +4360,10 @@ modules:
           sceNpTusGetDataAsync: 0x883AC44A
           sceNpTusGetDataVUser: 0xCCB9E791
           sceNpTusGetDataVUserAsync: 0x9E8E1CF8
+          sceNpTusGetFriendsDataStatus: 0x27FB4EFD
+          sceNpTusGetFriendsDataStatusAsync: 0x32064D64
+          sceNpTusGetFriendsVariable: 0x47E1716A
+          sceNpTusGetFriendsVariableAsync: 0xDFC8F03D
           sceNpTusGetMultiSlotDataStatus: 0xD97E51EC
           sceNpTusGetMultiSlotDataStatusAsync: 0x520975C3
           sceNpTusGetMultiSlotDataStatusVUser: 0x50FC680F
@@ -4784,7 +4931,7 @@ modules:
           sceRtcTickAddWeeks: 0xE713C640
           sceRtcTickAddYears: 0xDF6C3E1B
   SceRudp:
-    nid: 0xA4
+    nid: 0x0B6F819A
     libraries:
       SceLibRudp:
         kernel: false
@@ -4793,7 +4940,7 @@ modules:
           sceRudpActivate: 0xF1151D91
           sceRudpBind: 0x8B766108
           sceRudpCreateContext: 0x772C07E8
-          sceRudpEnableInternalIOThread: 0x3A495E69
+          sceRudpEnableInternalIOThread: 0x87EC465E
           sceRudpEnd: 0x3EA0961E
           sceRudpFlush: 0x8D45BA52
           sceRudpGetContextStatus: 0xD620B557
@@ -5133,13 +5280,16 @@ modules:
           sceSmartSceneMappingRun: 0xC7EBD753
           sceSmartSceneMappingRunCore: 0xCB30BD4D
           sceSmartSceneMappingSaveMap: 0x4907021F
+          sceSmartSceneMappingSetCustomListener: 0x4A4F20EF
           sceSmartSceneMappingSetDenseMapMode: 0xE7867558
+          sceSmartSceneMappingSetDispatchMode: 0xA4EC7755
           sceSmartSceneMappingStart: 0xA3A82B99
           sceSmartSceneMappingStop: 0x52EB57E4
           sceSmartSceneMappingUnregisterTarget: 0x6807CA97
           sceSmartTargetTrackingDispatchAndQuery: 0x7FE71305
           sceSmartTargetTrackingGetResults: 0x648C7E15
           sceSmartTargetTrackingQuery: 0x2808C8CB
+          sceSmartTargetTrackingQuery2: 0xD17EF0B2
           sceSmartTargetTrackingRegisterTarget: 0x8ACADD54
           sceSmartTargetTrackingReset: 0xA4A155B5
           sceSmartTargetTrackingRun: 0xBFD87F61
@@ -5235,7 +5385,7 @@ modules:
           sqlite3_finalize: 0xB656B7E2
           sqlite3_free: 0xCBF0CA8A
           sqlite3_free_table: 0x1FEC6959
-          sqlite3_get_autocommit: 0x910C3CB
+          sqlite3_get_autocommit: 0x0910C3CB
           sqlite3_get_auxdata: 0x394FC1CB
           sqlite3_get_table: 0xF2AB9C89
           sqlite3_global_recover: 0xF48E021B
@@ -5263,7 +5413,7 @@ modules:
           sqlite3_os_end: 0x9CE7C4C3
           sqlite3_os_init: 0xBD304836
           sqlite3_overload_function: 0xAF680D40
-          sqlite3_prepare: 0xC1B5509
+          sqlite3_prepare: 0x0C1B5509
           sqlite3_prepare16: 0xC657CFB8
           sqlite3_prepare16_v2: 0x426D81D2
           sqlite3_prepare_v2: 0xBC4BDCF4
@@ -5288,7 +5438,7 @@ modules:
           sqlite3_result_text16: 0x3AF5D206
           sqlite3_result_text16be: 0xEE3E906A
           sqlite3_result_text16le: 0x845B4FC2
-          sqlite3_result_value: 0x9664492
+          sqlite3_result_value: 0x09664492
           sqlite3_result_zeroblob: 0x3D463CF7
           sqlite3_rollback_hook: 0x67F53D6B
           sqlite3_set_authorizer: 0x77FB3458
@@ -5298,7 +5448,7 @@ modules:
           sqlite3_snprintf: 0xCC189941
           sqlite3_soft_heap_limit: 0xD1458BA7
           sqlite3_sourceid: 0x4CCB58A2
-          sqlite3_sql: 0x82C36D4
+          sqlite3_sql: 0x082C36D4
           sqlite3_status: 0xD8C435AA
           sqlite3_step: 0xCA8755B7
           sqlite3_stmt_status: 0xF7ABF5FA
@@ -5307,7 +5457,7 @@ modules:
           sqlite3_test_control: 0x324D4EFD
           sqlite3_thread_cleanup: 0x173C9C0B
           sqlite3_threadsafe: 0xA3B818DA
-          sqlite3_total_changes: 0x2ADA92D
+          sqlite3_total_changes: 0x02ADA92D
           sqlite3_trace: 0xFC127A83
           sqlite3_transfer_bindings: 0x6EC012E5
           sqlite3_update_hook: 0xEB05FE87
