@@ -918,26 +918,45 @@ modules:
           sceTwLoginDialogGetResult: 0x5F7F4149
           sceTwLoginDialogGetStatus: 0x8ACC1F0B
           sceTwLoginDialogTerm: 0xD6387E24
+          sceVideoImportDialogAbort: 0xECA699FD
+          sceVideoImportDialogGetResult: 0x7759D5AD
+          sceVideoImportDialogGetStatus: 0xBE7C198A
+          sceVideoImportDialogInit: 0xF0CC86F9
+          sceVideoImportDialogTerm: 0x52E1CF8F
+      SceNpWebApiCommonDialog:
         kernel: false
-        nid: 0xE537816C
+        nid: 0x883CFD5C
+        functions:
+          sceGameCustomDataDialogInit: 0x23C9840E
+          sceGameCustomDataDialogGetStatus: 0x114F831A
+          sceGameCustomDataDialogAbort: 0xF5A1FA42
+          sceGameCustomDataDialogGetResult: 0xC2B39806
+          sceGameCustomDataDialogTerm: 0xE183B9F3
+          sceInvitationDialogInit: 0x8723A5F2
+          sceInvitationDialogGetStatus: 0x5B735F60
+          sceInvitationDialogAbort: 0x853E5D3B
+          sceInvitationDialogGetResult: 0xEA14FB1E
+          sceInvitationDialogTerm: 0x4136382C
   SceCoredump:
     nid: 0x3E0F5EBD
     libraries:
       SceCoredump:
+        kernel: false
+        nid: 0xA143A77F
         functions:
           sceCoredumpRegisterCoredumpHandler: 0x031DC61E
           sceCoredumpUnregisterCoredumpHandler: 0x6037A2C3
-        kernel: false
-        nid: 0xA143A77F
       SceCoredumpNounlink:
-        functions:
-          sceCoredumpWriteUserData: 0xDF335DCF
         kernel: false
         nid: 0x2646E9D8
+        functions:
+          sceCoredumpWriteUserData: 0xDF335DCF
   SceCtrl:
     nid: 0x3BAF0220
     libraries:
       SceCtrl:
+        kernel: false
+        nid: 0xD197E3C7
         functions:
           sceCtrlClearRapidFire: 0xD8294C9C
           sceCtrlGetSamplingMode: 0xEC752AAF
@@ -3184,7 +3203,7 @@ modules:
           _Denorm: 0xF708906E
           _Exit: 0xB53B345B
           _FCbuild: 0xDEC462AB
-          _FDenorm: 0x1B05132
+          _FDenorm: 0x01B05132
           _Files: 0x855FC605
           _FInf: 0x8A0F308C
           _Flt: 0xE5620A03
@@ -3218,7 +3237,7 @@ modules:
           _Stold: 0x5AE9FFD8
           _Stoldx: 0x448A3CBE
           _Stoll: 0x6B9E23FE
-          _Stollx: 0xD9E3B1C
+          _Stollx: 0x0D9E3B1C
           _Stolx: 0x52DDCDAF
           _Stoul: 0xE71C5CDE
           _Stoull: 0x6794B3C6
@@ -6695,17 +6714,17 @@ modules:
           sceRtcTickAddTicks: 0x4559E2DB
           sceRtcTickAddWeeks: 0xE713C640
           sceRtcTickAddYears: 0xDF6C3E1B
-        kernel: false
-        nid: 0x6704D3C6
   SceRudp:
-    nid: 0xA4
+    nid: 0x0B6F819A
     libraries:
       SceLibRudp:
+        kernel: false
+        nid: 0x32910D11
         functions:
           sceRudpActivate: 0xF1151D91
           sceRudpBind: 0x8B766108
           sceRudpCreateContext: 0x772C07E8
-          sceRudpEnableInternalIOThread: 0x3A495E69
+          sceRudpEnableInternalIOThread: 0x87EC465E
           sceRudpEnd: 0x3EA0961E
           sceRudpFlush: 0x8D45BA52
           sceRudpGetContextStatus: 0xD620B557
@@ -7150,7 +7169,7 @@ modules:
           sqlite3_finalize: 0xB656B7E2
           sqlite3_free: 0xCBF0CA8A
           sqlite3_free_table: 0x1FEC6959
-          sqlite3_get_autocommit: 0x910C3CB
+          sqlite3_get_autocommit: 0x0910C3CB
           sqlite3_get_auxdata: 0x394FC1CB
           sqlite3_get_table: 0xF2AB9C89
           sqlite3_global_recover: 0xF48E021B
@@ -7178,7 +7197,7 @@ modules:
           sqlite3_os_end: 0x9CE7C4C3
           sqlite3_os_init: 0xBD304836
           sqlite3_overload_function: 0xAF680D40
-          sqlite3_prepare: 0xC1B5509
+          sqlite3_prepare: 0x0C1B5509
           sqlite3_prepare16: 0xC657CFB8
           sqlite3_prepare16_v2: 0x426D81D2
           sqlite3_prepare_v2: 0xBC4BDCF4
@@ -7203,7 +7222,7 @@ modules:
           sqlite3_result_text16: 0x3AF5D206
           sqlite3_result_text16be: 0xEE3E906A
           sqlite3_result_text16le: 0x845B4FC2
-          sqlite3_result_value: 0x9664492
+          sqlite3_result_value: 0x09664492
           sqlite3_result_zeroblob: 0x3D463CF7
           sqlite3_rollback_hook: 0x67F53D6B
           sqlite3_set_authorizer: 0x77FB3458
@@ -7213,7 +7232,7 @@ modules:
           sqlite3_snprintf: 0xCC189941
           sqlite3_soft_heap_limit: 0xD1458BA7
           sqlite3_sourceid: 0x4CCB58A2
-          sqlite3_sql: 0x82C36D4
+          sqlite3_sql: 0x082C36D4
           sqlite3_status: 0xD8C435AA
           sqlite3_step: 0xCA8755B7
           sqlite3_stmt_status: 0xF7ABF5FA
@@ -7222,7 +7241,7 @@ modules:
           sqlite3_test_control: 0x324D4EFD
           sqlite3_thread_cleanup: 0x173C9C0B
           sqlite3_threadsafe: 0xA3B818DA
-          sqlite3_total_changes: 0x2ADA92D
+          sqlite3_total_changes: 0x02ADA92D
           sqlite3_trace: 0xFC127A83
           sqlite3_transfer_bindings: 0x6EC012E5
           sqlite3_update_hook: 0xEB05FE87
@@ -7867,13 +7886,13 @@ modules:
           ksceSblACMgrIsDevelopmentMode: 0xE87D1777
           ksceSblACMgrIsPspEmu: 0xFD00C72A
   SceSblUpdateMgr:
-     nid: 0x528F6BF5
-     libraries:
-       SceSblSsUpdateMgr:
-         kernel: false
-         nid: 0x31406C49
-         functions:
-           sceSblSsUpdateMgrSetBootMode: 0xC725E3F0
+    nid: 0x528F6BF5
+    libraries:
+      SceSblSsUpdateMgr:
+        kernel: false
+        nid: 0x31406C49
+        functions:
+          sceSblSsUpdateMgrSetBootMode: 0xC725E3F0
   SceUsbd:
     nid: 0x3525FE7A
     libraries:
