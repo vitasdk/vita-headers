@@ -5,8 +5,8 @@ modules:
     nid: 0xDBB29DB7
     libraries:
       SceAppMgrForDriver:
-        nid: 0xDCE180F8
         kernel: true
+        nid: 0xDCE180F8
         functions:
           ksceAppMgrAcInstGetAcdirParam: 0x474AABDF
           ksceAppMgrBgdlSetQueueStatus: 0x5B1BE482
@@ -39,6 +39,8 @@ modules:
           ksceAppMgrUmount: 0xA714BB35
           ksceAppMgrUpdateRifInfo: 0x894BDCB8
       SceAppMgr:
+        kernel: false
+        nid: 0x8AF17416
         functions:
           __sceAppMgrGetAppState: 0x210C0046
           _sceAppMgrAcidDirSet: 0x6CBCBE1A
@@ -231,11 +233,9 @@ modules:
           sceAppMgrSetSystemImposeState2: 0x2163759A
           sceAppMgrSuspendBgAppByShell: 0x5BCF6927
           sceAppMgrSuspendUntilActivated: 0xECEC7F90
-        kernel: false
-        nid: 0x8AF17416
       SceSharedFb:
-        nid: 0x32A0442E
         kernel: false
+        nid: 0x32A0442E
         functions:
           _sceSharedFbOpen: 0xB358E1B6
           sceSharedFbBegin: 0x72067C6B
@@ -250,6 +250,8 @@ modules:
           sceSharedFbUpdateProcessBegin: 0xF9754AD9
           sceSharedFbUpdateProcessEnd: 0x565A9AB6
       SceAppMgrUser:
+        kernel: false
+        nid: 0xA6605D6F
         functions:
           _sceAppMgrGetAppState: 0x5E86319A
           sceAppMgrAcidDirSet: 0x31EFA73A
@@ -374,23 +376,27 @@ modules:
           sceAppMgrUpdateSaveDataParam: 0x1B0BD20D
           sceAppMgrWorkDirMount: 0x9B3BB24D
           sceAppMgrWorkDirMountById: 0x80E86E42
-        kernel: false
-        nid: 0xA6605D6F
   SceAppUtil:
     nid: 0xCE3E25D4
     libraries:
       SceAppUtil:
+        kernel: false
+        nid: 0x48E01D74
         functions:
           sceAppUtilAddCookieWebBrowser: 0xC97D5D9E
           sceAppUtilAddcontMount: 0x53B2C020
           sceAppUtilAddcontUmount: 0x1B36AF8C
+          sceAppUtilAppEventParseGameCustomData: 0x0B04C067
           sceAppUtilAppEventParseIncomingDialog: 0x22297D59
           sceAppUtilAppEventParseLiveArea: 0x0F4EE55F
           sceAppUtilAppEventParseNearGift: 0x77380601
+          sceAppUtilAppEventParseNpActivity: 0xF6B75651
           sceAppUtilAppEventParseNpAppDataMessage: 0x6BED9B58
           sceAppUtilAppEventParseNpBasicJoinablePresence: 0x28C7D4F6
           sceAppUtilAppEventParseNpInviteMessage: 0xA2496814
           sceAppUtilAppEventParseScreenShotNotification: 0x2AF42D6A
+          sceAppUtilAppEventParseSessionInvitation: 0xA58E6FCE
+          sceAppUtilAppEventParseTeleport: 0x665A8B7E
           sceAppUtilAppEventParseTriggerUtil: 0x8DEE696B
           sceAppUtilAppEventParseWebBrowser: 0x8ED716F5
           sceAppUtilAppParamGetInt: 0xCD7FD67A
@@ -423,17 +429,23 @@ modules:
           sceAppUtilStoreBrowse: 0x85FA94EE
           sceAppUtilSystemParamGetInt: 0x5DFB9CA0
           sceAppUtilSystemParamGetString: 0x6E6AA267
-        kernel: false
-        nid: 0x48E01D74
       SceAppUtilCache:
-        functions:
-          sceAppUtilCacheMount: 0x0AA56143
         kernel: false
         nid: 0xE96B941B
+        functions:
+          sceAppUtilCacheMount: 0x0AA56143
+      SceAppUtilExt:
+        kernel: false
+        nid: 0x76D1A509
+        functions:
+          sceAppUtilExtVideoMount: 0xA0380CF7
+          sceAppUtilExtVideoUmount: 0x02E1E2C4
   SceAtrac:
     nid: 0x738129ED
     libraries:
       SceAtrac:
+        kernel: false
+        nid: 0x9AAEDAA0
         functions:
           sceAtracAddStreamData: 0x53656F1C
           sceAtracCreateDecoderGroup: 0x01BFB98C
@@ -459,12 +471,12 @@ modules:
           sceAtracSetLoopNum: 0x5C22E927
           sceAtracSetOutputSamples: 0x075B0C63
           sceAtracSetSubBuffer: 0x272B4CBA
-        kernel: false
-        nid: 0x9AAEDAA0
   SceAudio:
     nid: 0x0DA7714A
     libraries:
       SceAudio:
+        kernel: false
+        nid: 0x438BB957
         functions:
           sceAudioOutGetAdopt: 0x12FB1767
           sceAudioOutGetConfig: 0x9C8EDAEA
@@ -475,24 +487,24 @@ modules:
           sceAudioOutSetAlcMode: 0x940CE469
           sceAudioOutSetConfig: 0xB8BA0D07
           sceAudioOutSetVolume: 0x64167F11
-        kernel: false
-        nid: 0x438BB957
   SceAudioIn:
-    nid: 0xA
+    nid: 0x3DFB6F18
     libraries:
       SceAudioIn:
+        kernel: false
+        nid: 0xF8DC61A3
         functions:
           sceAudioInGetAdopt: 0x566AC433
           sceAudioInGetStatus: 0x2F940377
           sceAudioInInput: 0x638ADD2D
           sceAudioInOpenPort: 0x39B50DC1
           sceAudioInReleasePort: 0x3A61B8C4
-        kernel: false
-        nid: 0xF8DC61A3
   SceAudiodec:
     nid: 0xC
     libraries:
       SceAudiodecUser:
+        kernel: false
+        nid: 0x2AA62046
         functions:
           sceAudiodecClearContext: 0xF72F9B64
           sceAudiodecCreateDecoder: 0x4DFD3AAA
@@ -509,12 +521,12 @@ modules:
           sceAudiodecInitLibrary: 0x445C2CEF
           sceAudiodecPartlyDecode: 0x2742E642
           sceAudiodecTermLibrary: 0x45719B9D
-        kernel: false
-        nid: 0x2AA62046
   SceAudioenc:
     nid: 0xE
     libraries:
       SceAudioencUser:
+        kernel: false
+        nid: 0xA938B1A6
         functions:
           sceAudioencClearContext: 0x9386F42D
           sceAudioencCreateEncoder: 0x64C04AE8
@@ -530,12 +542,12 @@ modules:
           sceAudioencGetOptInfo: 0xD01C63A3
           sceAudioencInitLibrary: 0x76EE4DC6
           sceAudioencTermLibrary: 0xAB32D022
-        kernel: false
-        nid: 0xA938B1A6
   SceAVConfig:
     nid: 0x222DDEB1
     libraries:
       SceAVConfig:
+        kernel: false
+        nid: 0x79E0F03F
         functions:
           sceAVConfigChangeReg: 0xD0595CE4
           sceAVConfigClearAutoSuspend2: 0xBD9C52B1
@@ -571,12 +583,12 @@ modules:
           sceAVConfigUnRegisterCallback: 0xDD78C3BA
           sceAVConfigWriteMasterVol: 0x65F03D6A
           sceAVConfigWriteRegSystemVol: 0xC411D984
-        kernel: false
-        nid: 0x79E0F03F
   SceAvPlayer:
     nid: 0xD9653DF7
     libraries:
       SceAvPlayer:
+        kernel: false
+        nid: 0xFA10CE65
         functions:
           sceAvPlayerAddSource: 0xBC83C8FD
           sceAvPlayerClose: 0x7AA29B2D
@@ -598,12 +610,12 @@ modules:
           sceAvPlayerStart: 0x2ACB4217
           sceAvPlayerStop: 0xBD35E360
           sceAvPlayerStreamCount: 0x2CD86FD6
-        kernel: false
-        nid: 0xFA10CE65
   SceBt:
     nid: 0xF56868B7
     libraries:
       SceBt:
+        kernel: false
+        nid: 0x9785DB68
         functions:
           sceBtAvrcpReadVolume: 0x01000531
           sceBtAvrcpSendButton: 0x9F8724E7
@@ -659,9 +671,9 @@ modules:
           sceBtStopAudio: 0xE423D1CC
           sceBtStopInquiry: 0xF1C4D466
           sceBtUnregisterCallback: 0x605EF71F
-        kernel: false
-        nid: 0x9785DB68
       SceBtForDriver:
+        kernel: true
+        nid: 0xD48CA62D
         functions:
           ksceBtAvrcpReadVolume: 0xC9C70056
           ksceBtAvrcpSendButton: 0xEC5F8519
@@ -708,12 +720,12 @@ modules:
           ksceBtStopAudio: 0xCAE5A9F3
           ksceBtStopInquiry: 0x6A1D9598
           ksceBtUnregisterCallback: 0xBF72E1BE
-        kernel: true
-        nid: 0xD48CA62D
   SceCamera:
     nid: 0xEC26CAF9
     libraries:
       SceCamera:
+        kernel: false
+        nid: 0xDA91B3ED
         functions:
           sceCameraClose: 0xCD6E1CFC
           sceCameraGetAntiFlicker: 0x9FDACB99
@@ -754,43 +766,43 @@ modules:
           sceCameraSetZoom: 0xF7464216
           sceCameraStart: 0xA8FEAE35
           sceCameraStop: 0x1DD9C9CE
-        kernel: false
-        nid: 0xDA91B3ED
   SceClipboard:
     nid: 0xB4042D2E
     libraries:
       SceClipboard:
+        kernel: false
+        nid: 0x6B346AA8
         functions:
           sceClipboardGetText: 0x5BB10CC2
           sceClipboardSetText: 0x43A94D3E
-        kernel: false
-        nid: 0x6B346AA8
   SceCodecEngine:
     nid: 0x18
     libraries:
       SceCodecEngineUser:
+        kernel: false
+        nid: 0x469AB062
         functions:
           sceCodecEngineAllocMemoryFromUnmapMemBlock: 0x1A3A53E5
           sceCodecEngineCloseUnmapMemBlock: 0x95EA3B3E
           sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x6A31831D
           sceCodecEngineOpenUnmapMemBlock: 0xF0B4C892
-        kernel: false
-        nid: 0x469AB062
   SceCodecEnginePerf:
     nid: 0x1A
     libraries:
       SceCodecEnginePerf:
+        kernel: false
+        nid: 0x9BF4FFAD
         functions:
           sceCodecEnginePmonGetProcessorLoad: 0x2C9DA711
           sceCodecEnginePmonReset: 0x5D75DF62
           sceCodecEnginePmonStart: 0x0635EB77
           sceCodecEnginePmonStop: 0xD2EFAEA1
-        kernel: false
-        nid: 0x9BF4FFAD
   SceCommonDialog:
     nid: 0x124B6C74
     libraries:
       SceCommonDialog:
+        kernel: false
+        nid: 0xE537816C
         functions:
           sceCameraImportDialogAbort: 0x8852B9A4
           sceCameraImportDialogGetResult: 0x7B339AA2
@@ -801,6 +813,11 @@ modules:
           sceCommonDialogIsRunning: 0x043A353E
           sceCommonDialogSetConfigParam: 0xBECD35C8
           sceCommonDialogUpdate: 0x90530F2F
+          sceCompanionUtilDialogAbort: 0x686C27EB
+          sceCompanionUtilDialogGetResult: 0x4A101FA7
+          sceCompanionUtilDialogGetStatus: 0xB981474F
+          sceCompanionUtilDialogInit: 0x0F68448E
+          sceCompanionUtilDialogTerm: 0xC3E6B1EC
           sceCrossControllerDialogAbort: 0xDDC52A46
           sceCrossControllerDialogGetResult: 0x8E35EA7B
           sceCrossControllerDialogGetStatus: 0x44B9E931
@@ -831,6 +848,11 @@ modules:
           sceNpFriendListDialogGetStatus: 0x1FD5D373
           sceNpFriendListDialogInit: 0x93FCFEC6
           sceNpFriendListDialogTerm: 0x4A880C6A
+          sceNpFriendList2DialogAbort: 0xFC67B971
+          sceNpFriendList2DialogGetResult: 0xC0CF1ED4
+          sceNpFriendList2DialogGetStatus: 0xAC735AF9
+          sceNpFriendList2DialogInit: 0xBBCDF66D
+          sceNpFriendList2DialogTerm: 0x05B18EA3
           sceNpMessageDialogAbort: 0x47AB6D04
           sceNpMessageDialogGetResult: 0x7EC95C61
           sceNpMessageDialogGetStatus: 0x2A0D060F
@@ -866,6 +888,11 @@ modules:
           scePspSaveDataDialogGetResult: 0x61C45E12
           scePspSaveDataDialogInit: 0x4458B053
           scePspSaveDataDialogTerm: 0xB8E37F7C
+          sceRemoteOSKDialogAbort: 0x2314D273
+          sceRemoteOSKDialogGetResult: 0xF22D7884
+          sceRemoteOSKDialogGetStatus: 0x356F222A
+          sceRemoteOSKDialogInit: 0x24EB7636
+          sceRemoteOSKDialogTerm: 0xA15121F7
           sceSaveDataDialogAbort: 0x013E7F74
           sceSaveDataDialogContinue: 0x19192C8B
           sceSaveDataDialogFinish: 0x6C49924B
@@ -891,26 +918,45 @@ modules:
           sceTwLoginDialogGetResult: 0x5F7F4149
           sceTwLoginDialogGetStatus: 0x8ACC1F0B
           sceTwLoginDialogTerm: 0xD6387E24
+          sceVideoImportDialogAbort: 0xECA699FD
+          sceVideoImportDialogGetResult: 0x7759D5AD
+          sceVideoImportDialogGetStatus: 0xBE7C198A
+          sceVideoImportDialogInit: 0xF0CC86F9
+          sceVideoImportDialogTerm: 0x52E1CF8F
+      SceNpWebApiCommonDialog:
         kernel: false
-        nid: 0xE537816C
+        nid: 0x883CFD5C
+        functions:
+          sceGameCustomDataDialogInit: 0x23C9840E
+          sceGameCustomDataDialogGetStatus: 0x114F831A
+          sceGameCustomDataDialogAbort: 0xF5A1FA42
+          sceGameCustomDataDialogGetResult: 0xC2B39806
+          sceGameCustomDataDialogTerm: 0xE183B9F3
+          sceInvitationDialogInit: 0x8723A5F2
+          sceInvitationDialogGetStatus: 0x5B735F60
+          sceInvitationDialogAbort: 0x853E5D3B
+          sceInvitationDialogGetResult: 0xEA14FB1E
+          sceInvitationDialogTerm: 0x4136382C
   SceCoredump:
     nid: 0x3E0F5EBD
     libraries:
       SceCoredump:
+        kernel: false
+        nid: 0xA143A77F
         functions:
           sceCoredumpRegisterCoredumpHandler: 0x031DC61E
           sceCoredumpUnregisterCoredumpHandler: 0x6037A2C3
-        kernel: false
-        nid: 0xA143A77F
       SceCoredumpNounlink:
-        functions:
-          sceCoredumpWriteUserData: 0xDF335DCF
         kernel: false
         nid: 0x2646E9D8
+        functions:
+          sceCoredumpWriteUserData: 0xDF335DCF
   SceCtrl:
     nid: 0x3BAF0220
     libraries:
       SceCtrl:
+        kernel: false
+        nid: 0xD197E3C7
         functions:
           sceCtrlClearRapidFire: 0xD8294C9C
           sceCtrlGetSamplingMode: 0xEC752AAF
@@ -949,9 +995,9 @@ modules:
           sceCtrlGetWirelessControllerInfo: 0xB8844141
           sceCtrlGetAnalogStickCheckTarget: 0xD01DE63A
           sceCtrlSetAnalogStickCheckTarget: 0xFB12A0A7
-        kernel: false
-        nid: 0xD197E3C7
       SceCtrlForDriver:
+        kernel: true
+        nid: 0x7823A5D1
         functions:
           ksceCtrlSetAnalogEmulation: 0x06577FE8
           ksceCtrlSetIdleCancelKey: 0x0A679512
@@ -980,12 +1026,12 @@ modules:
           ksceCtrlSetTurnOffInterval: 0xED8F0129
           ksceCtrlGetControllerPortInfo: 0xF11D0D30
           ksceCtrlGetActiveControllerPort: 0xFA88D837
-        kernel: true
-        nid: 0x7823A5D1
   SceDTrace:
     nid: 0x23
     libraries:
       SceDTrace:
+        kernel: false
+        nid: 0x69699F30
         functions:
           sceDTraceAddHelperDof: 0xA47807D7
           sceDTraceClientClose: 0xB8232491
@@ -993,24 +1039,24 @@ modules:
           sceDTraceClientOpen: 0x761062E9
           sceDTraceHelperIoctl: 0x413C420E
           sceDTraceRemoveHelperDof: 0xF2C9207A
-        kernel: false
-        nid: 0x69699F30
   SceDbg:
-    nid: 0x25
+    nid: 0x0E0ABB49
     libraries:
       SceDbg:
+        kernel: false
+        nid: 0x623DF986
         functions:
           sceDbgAssertionHandler: 0x1AF3678B
           sceDbgLoggingHandler: 0x6605AB19
           sceDbgSetBreakOnErrorState: 0xED4A00BA
           sceDbgSetBreakOnWarningState: 0x3DEAECD3
           sceDbgSetMinimumLogLevel: 0x941622FA
-        kernel: false
-        nid: 0x623DF986
   SceDeci4p:
     nid: 0x27
     libraries:
       SceDeci4pUserp:
+        kernel: false
+        nid: 0x797E39C0
         functions:
           sceKernelDeci4pClose: 0x63B0C50F
           sceKernelDeci4pCreateHostProcess: 0x4719A799
@@ -1022,12 +1068,12 @@ modules:
           sceKernelDeci4pRead: 0x971E1C66
           sceKernelDeci4pRegisterCallback: 0x73371F35
           sceKernelDeci4pWrite: 0xCDA3AAAC
-        kernel: false
-        nid: 0x797E39C0
   SceDeflt:
     nid: 0x29
     libraries:
       SceDeflt:
+        kernel: false
+        nid: 0xF6A0A8B6
         functions:
           sceDeflateDecompress: 0x110D5050
           sceDeflateDecompressPartial: 0x25B8C7A2
@@ -1044,12 +1090,12 @@ modules:
           sceZlibGetCompressedData: 0xE680A65A
           sceZlibGetInfo: 0x4C0A685D
           sceZlibIsValid: 0x14A0698D
-        kernel: false
-        nid: 0xF6A0A8B6
   SceDisplay:
     nid: 0x3F05296F
     libraries:
       SceDisplay:
+        kernel: false
+        nid: 0x5ED8F994
         functions:
           _sceDisplayGetFrameBuf: 0xA753B0CA
           _sceDisplayGetFrameBufInternal: 0x86A8E436
@@ -1072,9 +1118,9 @@ modules:
           sceDisplayWaitVblankStartCB: 0x78B41B92
           sceDisplayWaitVblankStartMulti: 0xDD0A13B8
           sceDisplayWaitVblankStartMultiCB: 0x05F27764
-        kernel: false
-        nid: 0x5ED8F994
       SceDisplayUser:
+        kernel: false
+        nid: 0x4FAACD11
         functions:
           sceDisplayGetFrameBuf: 0x42AE6BBC
           sceDisplayGetFrameBufInternal: 0x5213F74B
@@ -1083,9 +1129,9 @@ modules:
           sceDisplaySetFrameBuf: 0x7A410B64
           sceDisplaySetFrameBufForCompat: 0x8C36B628
           sceDisplaySetFrameBufInternal: 0x89F86A1E
-        kernel: false
-        nid: 0x4FAACD11
       SceDisplayForDriver:
+        kernel: true
+        nid: 0x9FED47AC
         functions:
           ksceDisplayDisableHead: 0x43347565
           ksceDisplayEnableHead: 0x496032D6
@@ -1129,12 +1175,12 @@ modules:
           ksceDisplayWaitVblankStartMultiCB: 0x77ED8B3A
           ksceDisplayWaitVblankStartMultiCBInternal: 0x61421AAF
           ksceDisplayWaitVblankStartMultiInternal: 0x32287576
-        kernel: true
-        nid: 0x9FED47AC
   SceFace:
     nid: 0x2E
     libraries:
       SceFace:
+        kernel: false
+        nid: 0xF5683CF7
         functions:
           sceFaceAgeGetWorkingMemorySize: 0x73E9791D
           sceFaceAgeRangeEstimate: 0x17F3DC79
@@ -1159,12 +1205,12 @@ modules:
           sceFaceShapeFit: 0x64F45021
           sceFaceShapeGetWorkingMemorySize: 0xC0812127
           sceFaceShapeTrack: 0x37704DE9
-        kernel: false
-        nid: 0x2F
   SceFiber:
     nid: 0x5BA67C8A
     libraries:
       SceFiber:
+        kernel: false
+        nid: 0xF88DAA70
         functions:
           _sceFiberAttachContextAndRun: 0x7D0C7DDB
           _sceFiberAttachContextAndSwitch: 0xE00B9AFE
@@ -1182,12 +1228,12 @@ modules:
           sceFiberStartContextSizeCheck: 0xCD543A71
           sceFiberStopContextSizeCheck: 0x67F70867
           sceFiberSwitch: 0xE4283144
-        kernel: false
-        nid: 0xF88DAA70
   SceFios2:
     nid: 0x32
     libraries:
       SceFios2:
+        kernel: false
+        nid: 0x3AD4D630
         functions:
           sceFiosArchiveGetDecompressorThreadCount: 0x716BB121
           sceFiosArchiveGetMountBufferSize: 0x15857180
@@ -1197,6 +1243,17 @@ modules:
           sceFiosArchiveSetDecompressorThreadCount: 0xCD0E86D0
           sceFiosArchiveUnmount: 0xFE1E1D28
           sceFiosArchiveUnmountSync: 0xB26DC24D
+          sceFiosCacheContainsFileRangeSync: 0x07368D62
+          sceFiosCacheContainsFileSync: 0xA74990E3
+          sceFiosCacheFlushFileRangeSync: 0x7EB1134C
+          sceFiosCacheFlushFileSync: 0x811A68D4
+          sceFiosCacheFlushSync: 0x50B173E1
+          sceFiosCachePrefetchFH: 0xE83B4B91
+          sceFiosCachePrefetchFHRange: 0x62BA823F
+          sceFiosCachePrefetchFHRangeSync: 0x55E28E75
+          sceFiosCachePrefetchFHSync: 0x722EA8ED
+          sceFiosCachePrefetchFile: 0xC58DF766
+          sceFiosCachePrefetchFileRange: 0x21619E35
           sceFiosCancelAllOps: 0x1E920B1D
           sceFiosChangeStat: 0xD2CD9AF2
           sceFiosChangeStatSync: 0xC781D7B4
@@ -1213,11 +1270,12 @@ modules:
           sceFiosDateGetCurrent: 0x5C593C1E
           sceFiosDateToComponents: 0x5CFF6EA0
           sceFiosDateToSceDateTime: 0x94FDFFEE
-          sceFiosDebugDumpDH: 0x44B9F8EB
           sceFiosDebugDumpDate: 0x159B1FA8
+          sceFiosDebugDumpDH: 0x44B9F8EB
           sceFiosDebugDumpError: 0x51E677DF
           sceFiosDebugDumpFH: 0x5506ACAB
           sceFiosDebugDumpOp: 0xE438D4F0
+          sceFiosDeallocatePassthruFH: 0xFF0876EA
           sceFiosDelete: 0x764DFA7A
           sceFiosDeleteSync: 0xAAC54B44
           sceFiosDevctl: 0x26D03E20
@@ -1261,6 +1319,7 @@ modules:
           sceFiosFHSync: 0xE485F35E
           sceFiosFHSyncSync: 0xA909CCE3
           sceFiosFHTell: 0xD7F33130
+          sceFiosFHToFileno: 0x0009910A
           sceFiosFHTruncate: 0x2B39453B
           sceFiosFHTruncateSync: 0xFEF940B7
           sceFiosFHWrite: 0xE663138E
@@ -1279,6 +1338,7 @@ modules:
           sceFiosFileTruncateSync: 0x6E1252B8
           sceFiosFileWrite: 0x42C278E5
           sceFiosFileWriteSync: 0x132B6DE6
+          sceFiosFilenoToFH: 0xEE3CEBB8
           sceFiosGetAllDHs: 0x681184A2
           sceFiosGetAllFHs: 0x90AB9195
           sceFiosGetAllOps: 0x8F62832C
@@ -1307,6 +1367,7 @@ modules:
           sceFiosOpIsCancelled: 0x0C81D80E
           sceFiosOpIsDone: 0x1B9A575E
           sceFiosOpReschedule: 0x968CADBD
+          sceFiosOpRescheduleWithPriority: 0x2B57C9A5
           sceFiosOpSyncWait: 0xE6A66C70
           sceFiosOpSyncWaitForIO: 0x202079F9
           sceFiosOpWait: 0x2AC79DFC
@@ -1330,6 +1391,9 @@ modules:
           sceFiosShutdownAndCancelOps: 0x5B8D48C4
           sceFiosStat: 0xFF04AF72
           sceFiosStatSync: 0xACBAF3E0
+          sceFiosStatisticsGet: 0xFE86B30D
+          sceFiosStatisticsPrint: 0x590DD306
+          sceFiosStatisticsReset: 0x5216E0DA
           sceFiosSuspend: 0x510953DC
           sceFiosSync: 0x0DF32816
           sceFiosSyncSync: 0x06D97629
@@ -1339,25 +1403,44 @@ modules:
           sceFiosTimeIntervalToNanoseconds: 0x397BF626
           sceFiosUpdateParameters: 0x1915052A
           sceFiosVprintf: 0x5BA4BD6D
+  SceFpu:
+    nid: 0x34
+    libraries:
+      SceFpu:
         kernel: false
-        nid: 0x3AD4D630
+        nid: 0x14D06B70
+        functions:
+          sceFpuAcosf: 0x64A8F9FE
+          sceFpuAsinf: 0x4D1AE0F1
+          sceFpuAtanf: 0x53FF26AF
+          sceFpuAtan2f: 0xC8A4989B
+          sceFpuCosf: 0xDB66BA89
+          sceFpuExpf: 0xEFA16C6E
+          sceFpuExp2f: 0xA3A88AD0
+          sceFpuExp10f: 0x35652326
+          sceFpuLogf: 0x936F0D27
+          sceFpuLog2f: 0x19881EC8
+          sceFpuLog10f: 0xABBB6168
+          sceFpuPowf: 0xDF622E56
+          sceFpuSinf: 0x33E1AC14
+          sceFpuTanf: 0x6FBDA1C9
   SceGameUpdate:
-    nid: 0x36
+    nid: 0x0207A645
     libraries:
       SceGameUpdate:
+        kernel: false
+        nid: 0x2DD9A62D
         functions:
           sceGameUpdateAbort: 0x14116007
           sceGameUpdateInit: 0x2F401247
           sceGameUpdateRun: 0x3C616238
           sceGameUpdateTerm: 0x48D879BA
-        kernel: false
-        nid: 0x2DD9A62D
   SceGpuEs4:
     nid: 0x4069F83B
     libraries:
       SceGpuEs4ForUser:
-        nid: 0x6EC1443D
         kernel: false
+        nid: 0x6EC1443D
         functions:
           PVRSRVOpen: 0x5E943288
           PVRSRVRelease: 0x85C328DF
@@ -1367,8 +1450,8 @@ modules:
           sceGpuSignalWaitLockup: 0xE0DECA6E
           sceGpuUnregisterSalvage: 0x807202B7
       SceGpuEs4ForDriver:
-        nid: 0x54802381
         kernel: true
+        nid: 0x54802381
         functions:
           OSGetCurrentProcessIDKM: 0x6C6F2BEA
           OSMemCopy: 0x771EC61E
@@ -1386,6 +1469,8 @@ modules:
     nid: 0x0D0AA0CB
     libraries:
       SceGxm:
+        kernel: false
+        nid: 0xF76B66BD
         functions:
           sceGxmAddRazorGpuCaptureBuffer: 0xE9E81073
           sceGxmBeginCommandList: 0x944D3F83
@@ -1648,12 +1733,12 @@ modules:
           sceGxmVertexFence: 0xE05277D6
           sceGxmVertexProgramGetProgram: 0xBC52320E
           sceGxmWaitEvent: 0x8BD94593
-        kernel: false
-        nid: 0xF76B66BD
   SceHandwriting:
     nid: 0x18983E63
     libraries:
       SceHandwriting:
+        kernel: false
+        nid: 0x2AA55635
         functions:
           sceHandwritingGetBufferSize: 0x4C3A8D49
           sceHandwritingInit: 0x446F171E
@@ -1666,12 +1751,12 @@ modules:
           sceHandwritingRegisterTerm: 0x6ABBD675
           sceHandwritingSetMode: 0x09AF9BF8
           sceHandwritingTerm: 0x356B2931
-        kernel: false
-        nid: 0x2AA55635
   SceHeap:
     nid: 0x3C
     libraries:
       SceHeap:
+        kernel: false
+        nid: 0x4631A6F0
         functions:
           sceHeapAllocHeapMemory: 0xB6FC0BA1
           sceHeapAllocHeapMemoryWithOption: 0xD4C09869
@@ -1683,23 +1768,23 @@ modules:
           sceHeapIsAllocatedHeapMemory: 0xAA50462F
           sceHeapReallocHeapMemory: 0x9E6716BA
           sceHeapReallocHeapMemoryWithOption: 0x00BE8FC3
-        kernel: false
-        nid: 0x4631A6F0
   SceHid:
     nid: 0x76B8FA74
     libraries:
       SceHid:
+        kernel: false
+        nid: 0xE23FAD62
         functions:
             sceHidKeyboardEnumerate: 0x34BDFACE
             sceHidKeyboardRead: 0x224A8AD8
             sceHidMouseEnumerate: 0x2A0D2F54
             sceHidMouseRead: 0xBDECBDC0
-        kernel: false
-        nid: 0xE23FAD62
   SceHmac:
     nid: 0x3E
     libraries:
       SceHmac:
+        kernel: false
+        nid: 0x65D4F896
         functions:
           sceHmacMd5BlockInit: 0xD6E232CD
           sceHmacMd5BlockResult: 0x9BCCC484
@@ -1729,12 +1814,12 @@ modules:
           sceHmacSha512BlockResult: 0x64219FF5
           sceHmacSha512BlockUpdate: 0xECA83992
           sceHmacSha512Digest: 0x8FDFCE5B
-        kernel: false
-        nid: 0x65D4F896
   SceHttp:
-    nid: 0x40
+    nid: 0xB015B405
     libraries:
       SceHttp:
+        kernel: false
+        nid: 0xE8F15CDE
         functions:
           sceHttpAbortRequest: 0xEA61662F
           sceHttpAbortRequestForce: 0x3D44A6E5
@@ -1750,7 +1835,9 @@ modules:
           sceHttpCreateConnectionWithURL: 0xC616C200
           sceHttpCreateEpoll: 0x7C99AF67
           sceHttpCreateRequest: 0xB0284270
+          sceHttpCreateRequest2: 0x857D9242
           sceHttpCreateRequestWithURL: 0xBD5DA1D0
+          sceHttpCreateRequestWithURL2: 0x1B6B7983
           sceHttpCreateTemplate: 0x62241DAB
           sceHttpDeleteConnection: 0xF0F65C15
           sceHttpDeleteRequest: 0x3D3D29AD
@@ -1795,12 +1882,14 @@ modules:
           sceHttpSetEpoll: 0x0F1FD1B3
           sceHttpSetEpollId: 0x5CEB6554
           sceHttpSetIcmOption: 0x23978CBC
+          sceHttpSetInflateGZIPEnabled: 0x5104B13D
           sceHttpSetNonblock: 0x27A98BDA
           sceHttpSetRecvTimeOut: 0x94BF196E
           sceHttpSetRedirectCallback: 0x4E08167D
           sceHttpSetRequestContentLength: 0x37C30C90
           sceHttpSetResolveRetry: 0x9AB56EA7
           sceHttpSetResolveTimeOut: 0x8455B5B3
+          sceHttpSetResponseHeaderMaxSize: 0xFD76E1FB
           sceHttpSetSendTimeOut: 0x8AE3F008
           sceHttpSslIsCtxCreated: 0x2D3F1281
           sceHttpTerm: 0xC9076666
@@ -1814,8 +1903,10 @@ modules:
           sceHttpWaitRequest: 0x94F7256A
           sceHttpWaitRequestCB: 0x48650A83
           sceHttpsDisableOption: 0xC6D60403
+          sceHttpsDisableOption2: 0x2E77B201
           sceHttpsDisableOptionPrivate: 0x00659635
           sceHttpsEnableOption: 0x9FBE2869
+          sceHttpsEnableOption2: 0x1E93E8EF
           sceHttpsEnableOptionPrivate: 0x72CB0741
           sceHttpsFreeCaList: 0x56C95D94
           sceHttpsGetCaList: 0xF71AA58D
@@ -1823,12 +1914,12 @@ modules:
           sceHttpsLoadCert: 0xAE8D7C33
           sceHttpsSetSslCallback: 0xA0926037
           sceHttpsUnloadCert: 0x8577833F
-        kernel: false
-        nid: 0xE8F15CDE
   SceIdStorage:
     nid: 0x4BDAF254
     libraries:
       SceIdStorageForDriver:
+        kernel: true
+        nid: 0xE1AC6D7C
         functions:
           ksceIdStorageCreateAtomicLeaves: 0x99ACCB71
           ksceIdStorageCreateLeaf: 0x08A471A6
@@ -1846,12 +1937,12 @@ modules:
           ksceIdStorageUnformat: 0xF4BCB3EE
           ksceIdStorageUpdate: 0x683AAC10
           ksceIdStorageWriteLeaf: 0x1FA4D135
-        kernel: true
-        nid: 0xE1AC6D7C
   SceIme:
     nid: 0x80AE930F
     libraries:
       SceIme:
+        kernel: false
+        nid: 0xD2553017
         functions:
           sceImeClose: 0x889A8421
           sceImeOpen: 0x0E050613
@@ -1859,12 +1950,12 @@ modules:
           sceImeSetPreeditGeometry: 0x7B1EFAA5
           sceImeSetText: 0xF3BD9A76
           sceImeUpdate: 0x71D6898A
-        kernel: false
-        nid: 0xD2553017
   SceJpeg:
     nid: 0x44
     libraries:
       SceJpegUser:
+        kernel: false
+        nid: 0x880BF710
         functions:
           sceJpegCreateSplitDecoder: 0x123B4734
           sceJpegCsc: 0x6263AEC2
@@ -1877,12 +1968,12 @@ modules:
           sceJpegInitMJpegWithParam: 0x518163A7
           sceJpegMJpegCsc: 0xC2380E3A
           sceJpegSplitDecodeMJpeg: 0x4598EC9C
-        kernel: false
-        nid: 0x880BF710
   SceJpegEnc:
     nid: 0x46
     libraries:
       SceJpegEncUser:
+        kernel: false
+        nid: 0x3748BFD3
         functions:
           sceJpegEncoderCsc: 0x824A7D4F
           sceJpegEncoderEncode: 0xC60DE94C
@@ -1894,8 +1985,6 @@ modules:
           sceJpegEncoderSetHeaderMode: 0x2F58B12C
           sceJpegEncoderSetOutputAddr: 0x25D52D97
           sceJpegEncoderSetValidRegion: 0x9511F3BC
-        kernel: false
-        nid: 0x3748BFD3
   SceSysmem:
     nid: 0x3380B323
     libraries:
@@ -2037,6 +2126,8 @@ modules:
           ksceKernelSysEventDispatch: 0xD4622EA8
           ksceKernelPowerTick: 0xE0489831
       SceSysmem:
+        kernel: false
+        nid: 0x37FE725A
         functions:
           sceKernelAllocMemBlock: 0xB9D5EBDE
           sceKernelAllocMemBlockForVM: 0xE2D7E137
@@ -2058,9 +2149,9 @@ modules:
           sceKernelOpenMemBlock: 0x8EB8DFBB
           sceKernelOpenVMDomain: 0x9CA3EB2B
           sceKernelSyncVMDomain: 0x19D2A81A
-        kernel: false
-        nid: 0x37FE725A
       SceSblAIMgrForDriver:
+        kernel: true
+        nid: 0xFD00C69A
         functions:
           ksceSblAimgrGetSMI: 0x47D9CF13
           ksceSblAimgrIsTest: 0x3B638885
@@ -2071,9 +2162,9 @@ modules:
           ksceSblAimgrIsDolce: 0x71608CA3
           ksceSblAimgrIsGenuineVITA: 0x963CA644
           ksceSblAimgrIsGenuineDolce: 0xC6E83F34
-        kernel: true
-        nid: 0xFD00C69A
       SceQafMgrForDriver:
+        kernel: true
+        nid: 0x4E29D3B6
         functions:
           ksceSblQafMgrIsAllowControlIduAutoUpdate: 0xF8BFEE48
           ksceSblQafMgrIsAllowDtcpIpReset: 0xE8B8F31F
@@ -2084,9 +2175,9 @@ modules:
           ksceSblQafMgrIsAllowPSPEmuShowQAInfo: 0xB7B195B2
           ksceSblQafMgrIsAllowRemotePlayDebug: 0xBFD5E463
           ksceSblQafMgrIsAllowSystemAppDebug: 0xCAD47130
-        kernel: true
-        nid: 0x4E29D3B6
       SceKernelUtilsForDriver:
+        kernel: true
+        nid: 0x496AD8B4
         functions:
           ksceDeflateDecompress: 0x8AF1FAD4
           ksceDeflateDecompressPartial: 0x3D74CCDF
@@ -2119,8 +2210,6 @@ modules:
           ksceZlibDecompress: 0x900148DB
           ksceZlibGetCompressedData: 0x01EB6C45
           ksceZlibGetInfo: 0x5B9BCD75
-        kernel: true
-        nid: 0x496AD8B4
       SceDebugForDriver:
         kernel: true
         nid: 0x88758561
@@ -2230,11 +2319,14 @@ modules:
         functions:
           ksceKernelGetFaultingProcess: 0xD8B9AC8D
       SceThreadmgr:
+        kernel: false
+        nid: 0x859A24B1
         functions:
           sceKernelCancelCallback: 0x30741EF2
           sceKernelChangeActiveCpuMask: 0x001173F8
           sceKernelChangeThreadCpuAffinityMask: 0x15129174
           sceKernelChangeThreadPriority: 0xBD0139F2
+          sceKernelChangeThreadPriority2: 0xC5FFCA61
           sceKernelChangeThreadVfpException: 0xCC18FBAE
           sceKernelCheckCallback: 0xE53E41F6
           sceKernelCheckWaitableStatus: 0xD9BD74EB
@@ -2251,7 +2343,9 @@ modules:
           sceKernelCreateCallback: 0xB19CF7E9
           sceKernelCreateThreadForUser: 0xC0FAF6A3
           sceKernelDelayThread: 0x4B675D05
+          sceKernelDelayThread200: 0x97C4A7C4
           sceKernelDelayThreadCB: 0x9C0180E1
+          sceKernelDelayThreadCB200: 0x34938242
           sceKernelDeleteCallback: 0xD469676B
           sceKernelDeleteCond: 0x879E6EBD
           sceKernelDeleteEventFlag: 0x5840162C
@@ -2296,35 +2390,34 @@ modules:
           sceKernelTryLockMutex: 0x72FC1F54
           sceKernelTryLockReadRWLock: 0xEFDDA456
           sceKernelTryLockWriteRWLock: 0x206CBB66
+          sceKernelUnlockLwMutex: 0x91FA6614
           sceKernelUnlockMutex: 0x1A372EC8
           sceKernelUnlockReadRWLock: 0x3EF91145
           sceKernelUnlockWriteRWLock: 0xB4151397
           sceKernelUnregisterCallbackFromEvent: 0x18462B11
           sceKernelUnregisterCallbackFromEventAll: 0x888A7361
           sceKernelGetThreadTLSAddr: 0xBACA6891
-        kernel: false
-        nid: 0x859A24B1
       SceThreadmgrCoredumpTime:
-        functions:
-          sceKernelExitThread: 0x0C8A38E1
         kernel: false
         nid: 0x5E8D0E22
+        functions:
+          sceKernelExitThread: 0x0C8A38E1
       SceCpu:
         kernel: false
         nid: 0x45265161
       SceDebugLed:
+        kernel: false
+        nid: 0xAE004C0A
         functions:
           sceKernelGetGPI: 0x14F582CF
           sceKernelSetGPO: 0x78E702D3
-        kernel: false
-        nid: 0xAE004C0A
       SceDipsw:
+        kernel: false
+        nid: 0xB36D5922
         functions:
           sceKernelCheckDipsw: 0x1C783FB2
           sceKernelClearDipsw: 0x800EDCC1
           sceKernelSetDipsw: 0x817053D4
-        kernel: false
-        nid: 0xB36D5922
       SceDipswForDriver:
         nid: 0xC9E26388
         kernel: true
@@ -2364,6 +2457,8 @@ modules:
           ksceKernelStopUnloadModuleForPid: 0x49A3EDC7
           ksceKernelSearchModuleByName: 0xBBE1771C
       SceModulemgr:
+        kernel: false
+        nid: 0xEAED1616
         functions:
           sceKernelGetAllowedSdkVersionOnSystem: 0x4397FC4E
           sceKernelGetLibraryInfoByNID: 0xEAEB1312
@@ -2373,12 +2468,12 @@ modules:
           sceKernelGetSystemSwVersion: 0x5182E212
           sceKernelInhibitLoadingModule: 0x6CED1F63
           sceKernelIsCalledFromSysModule: 0x85E6D2BB
-        kernel: false
-        nid: 0xEAED1616
   SceIofilemgr:
     nid: 0x9642948C
     libraries:
       SceIofilemgrForDriver:
+        kernel: true
+        nid: 0x40FD29C7
         functions:
           ksceIoChstat: 0x7D42B8DC
           ksceIoChstatByFd: 0xDF57A75F
@@ -2412,9 +2507,9 @@ modules:
           ksceIoUmount: 0x20574100
           ksceIoWrite: 0x21EE91F0
           ksceIoWriteAsync: 0xA1BD13D0
-        kernel: true
-        nid: 0x40FD29C7
       SceIofilemgr:
+        kernel: false
+        nid: 0xF2FF276E
         functions:
           sceIoCancel: 0xCEF48835
           sceIoClose: 0xC70B8886
@@ -2437,12 +2532,12 @@ modules:
           sceIoSyncByFdAsync: 0x7E1367CB
           sceIoWrite: 0x34EFD876
           sceIoWriteAsync: 0xE0D63D2A
-        kernel: false
-        nid: 0xF2FF276E
   SceProcessmgr:
     nid: 0x8B8A6263
     libraries:
       SceProcessmgr:
+        kernel: false
+        nid: 0x2DD91812
         functions:
           sceKernelGetStderr: 0xFA5E3ADA
           sceKernelGetStdin: 0xC1727F59
@@ -2460,8 +2555,6 @@ modules:
           sceKernelPowerUnlock: 0x466C0CBD
           sceKernelRegisterProcessTerminationCallback: 0x5EC77870
           sceKernelUnregisterProcessTerminationCallback: 0x973A4527
-        kernel: false
-        nid: 0x2DD91812
       SceProcessmgrForKernel:
         kernel: true
         nid: 0x7A69DE86
@@ -2488,6 +2581,8 @@ modules:
     nid: 0xF9C9C52F
     libraries:
       SceLibKernel:
+        kernel: false
+        nid: 0xCAE9ACE6
         functions:
           SceKernelStackChkGuard: 0x4458BCF3
           __sce_aeabi_idiv0: 0x4373B548
@@ -2759,17 +2854,17 @@ modules:
           sceKernelWaitThreadEnd: 0xDDB395A9
           sceKernelWaitThreadEndCB: 0xC54941ED
           sceSblACMgrIsGameProgram: 0x963F4A99
-        kernel: false
-        nid: 0xCAE9ACE6
       SceLibRng:
-        functions:
-          sceKernelGetRandomNumber: 0xB2700165
         kernel: false
         nid: 0xF9AC7CF8
+        functions:
+          sceKernelGetRandomNumber: 0xB2700165
   SceLibMonoBridge:
     nid: 0x53
     libraries:
       SceLibMonoBridge:
+        kernel: false
+        nid: 0x54
         functions:
           __aeabi_unwind_cpp_pr0: 0xD172A1F6
           __aeabi_unwind_cpp_pr1: 0x6B008191
@@ -3065,12 +3160,12 @@ modules:
           pthread_vita_tls_set_np: 0x483C96B2
           sched_yield: 0x473829B5
           unlink: 0x7BBCA340
-        kernel: false
-        nid: 0x54
   SceLibMp4Recorder:
     nid: 0x4AF7A4D1
     libraries:
       SceLibMp4Recorder:
+        kernel: false
+        nid: 0x5EE05E0F
         functions:
           sceMp4RecCreateRecorder: 0x21053FDE
           sceMp4RecAddAudioSample: 0x2C39D932
@@ -3082,14 +3177,15 @@ modules:
           sceMp4RecAddVideoSample: 0xB263D8FB
           sceMp4RecRecorderEnd: 0xB51FEBAF
           sceMp4RecInit: 0xE9193B80
-        kernel: false
-        nid: 0x5EE05E0F
   SceLibc:
     nid: 0x43FBA801
     libraries:
       SceLibc:
+        kernel: false
+        nid: 0xBE43BB07
         functions:
           __aeabi_atexit: 0xEDC939E1
+          __at_quick_exit: 0xBA2EF93E
           __cxa_atexit: 0x33B83B70
           __cxa_finalize: 0xB538BF48
           __cxa_guard_abort: 0xD18E461D
@@ -3097,6 +3193,7 @@ modules:
           __cxa_guard_release: 0x4ED1056F
           __cxa_set_dso_handle_main: 0xBFE02B3A
           __set_exidx_main: 0x1EFFBAC2
+          __tls_get_addr: 0xBC529B7B
           _Assert: 0xE4531F85
           _Btowc: 0x1D1DA5AD
           _Ctype: 0x3CE6109D
@@ -3104,7 +3201,7 @@ modules:
           _Denorm: 0xF708906E
           _Exit: 0xB53B345B
           _FCbuild: 0xDEC462AB
-          _FDenorm: 0x1B05132
+          _FDenorm: 0x01B05132
           _Files: 0x855FC605
           _FInf: 0x8A0F308C
           _Flt: 0xE5620A03
@@ -3116,14 +3213,18 @@ modules:
           _Ldbl: 0x94CE931C
           _LDenorm: 0x2C8DBEB7
           _LInf: 0x5289BBC0
-          _LNan: 0x36D0F07
+          _LNan: 0x036D0F07
           _Lockfilelock: 0x5044FC32
           _Locksyslock: 0x7DBC0575
           _LSnan: 0x48AEEF2A
           _Mbtowc: 0x5E56EA4E
           _Nan: 0x116F3DA9
+          _PJP_C_Copyright: 0x2A72F684
+          _sceLdTlsRegisterModuleInfo: 0x54F87EAC
+          _sceLdTlsUnregisterModuleInfo: 0x240EA3AC
           _sceLibcErrnoLoc: 0x9E248B76
           _Snan: 0x677CDE35
+          _SCE_Assert: 0x31BAD49C
           _Stderr: 0xDDF9BB09
           _Stdin: 0x66B7406C
           _Stdout: 0x5D8C1282
@@ -3134,7 +3235,7 @@ modules:
           _Stold: 0x5AE9FFD8
           _Stoldx: 0x448A3CBE
           _Stoll: 0x6B9E23FE
-          _Stollx: 0xD9E3B1C
+          _Stollx: 0x0D9E3B1C
           _Stolx: 0x52DDCDAF
           _Stoul: 0xE71C5CDE
           _Stoull: 0x6794B3C6
@@ -3152,18 +3253,25 @@ modules:
           _WStold: 0x1EDA8F09
           _WStoul: 0x87C94271
           abort: 0x20FE0FFF
+          abort_handler_s: 0xE85DC452
           abs: 0x8E5A06C5
           asctime: 0xC94AE948
+          asctime_s: 0x79107429
           atof: 0xD500DE27
+          atoff: 0x8FC92882
           atoi: 0x21493BE7
           atol: 0xA1DBEE9F
           atoll: 0x875994F3
           bsearch: 0xD1BC28E7
+          bsearch_s: 0xE863F388
           btowc: 0xEFB3BC61
+          c16rtomb: 0x2C8ADE84
+          c32rtomb: 0xD283C166
           calloc: 0xE7EC3D0B
           clearerr: 0x72BA4468
           clock: 0xC082CA03
           ctime: 0x1EA1CA8D
+          ctime_s: 0x0FBFA054
           difftime: 0x33AD70A0
           div: 0xE9F823C0
           exit: 0x826BBBAF
@@ -3179,7 +3287,9 @@ modules:
           fgetws: 0x982AFA4D
           fileno: 0xFEC1502E
           fopen: 0xFFFBE239
+          fopen_s: 0x1483DF76
           fprintf: 0xE0C79764
+          fprintf_s: 0xE91E72D0
           fputc: 0x7E6A6108
           fputs: 0xC8FF13E5
           fputwc: 0xA597CDC8
@@ -3187,20 +3297,27 @@ modules:
           fread: 0xB31C73A9
           free: 0x5B9BB802
           freopen: 0x715C4395
+          freopen_s: 0x438765C6
           fscanf: 0x505601C6
+          fscanf_s: 0xB2B03159
           fseek: 0xC3A7CDE1
           fsetpos: 0xDC1BDBD7
           ftell: 0x41C2AF95
           fwide: 0xA77327D2
           fwprintf: 0xE52278E8
+          fwprintf_s: 0xD920CD41
           fwrite: 0x8BCDCC4E
           fwscanf: 0x7BFC75C6
+          fwscanf_s: 0x1E5C4E3D
           getc: 0x4BD5212E
           getchar: 0x4790BF1E
           gets: 0xF97B8CA3
+          gets_s: 0x9EB4D58E
           getwc: 0x23E0F442
           getwchar: 0x55DB4E32
           gmtime: 0xF283CFE3
+          gmtime_s: 0x4BE611B5
+          ignore_handler_s: 0x755505B5
           imaxabs: 0x1118B49F
           imaxdiv: 0x5766B4A8
           isalnum: 0x7CC1B964
@@ -3233,6 +3350,7 @@ modules:
           llabs: 0x9D2D17CD
           lldiv: 0x3F887699
           localtime: 0xF4A2E0BF
+          localtime_s: 0x2E41C336
           longjmp: 0x2D81C8C8
           malloc: 0x775A0CB2
           malloc_stats: 0x57A729DB
@@ -3240,20 +3358,27 @@ modules:
           malloc_usable_size: 0x54A54EB1
           mblen: 0x3E347849
           mbrlen: 0x1927CAE8
+          mbrtoc16: 0x90669696
+          mbrtoc32: 0x8B3B5A4C
           mbrtowc: 0x910664C3
           mbsinit: 0x961D12F8
           mbsrtowcs: 0x9C14D58E
+          mbsrtowcs_s: 0xFFDB6965
           mbstowcs: 0x2F75CF9B
+          mbstowcs_s: 0xFCAAA73C
           mbtowc: 0xD791A952
           memalign: 0xA9363E6B
           memchr: 0x2F3E5B16
           memcmp: 0x7747F6D7
           memcpy: 0x7205BFDB
+          memcpy_s: 0x64B34449
           memmove: 0xAF5C218D
+          memmove_s: 0xA5916CA9
           memset: 0x6DC1F0D8
           mktime: 0xD1A2DFC3
           mspace_calloc: 0x30470BBA
           mspace_create: 0xCEF7C575
+          mspace_create_with_flag: 0x055FCBC9
           mspace_destroy: 0x30CBBC66
           mspace_free: 0x3CDFD2A3
           mspace_is_heap_empty: 0xF355F381
@@ -3266,51 +3391,73 @@ modules:
           mspace_reallocalign: 0x915DA59E
           perror: 0x4696E7BE
           printf: 0x9A004680
+          printf_s: 0x73E15587
           putc: 0x995708A6
           putchar: 0x7CDAC89C
           puts: 0x59C3E171
           putwc: 0x247C71A6
           putwchar: 0x3E04AB1C
           qsort: 0xA7CBE4A6
+          qsort_s: 0x106927FE
+          quick_exit: 0xE4CA29E1
           rand: 0xC0883865
           rand_r: 0x962097AA
-          realloc: 0x6B54BA
+          realloc: 0x006B54BA
           reallocalign: 0x608AC135
           remove: 0x40293B75
           rename: 0x6FE983A3
           rewind: 0x6CA5BAB9
           scanf: 0x9CB9D899
+          scanf_s: 0xA94349C8
+          sceLibcFopenWithFD: 0xEECC055B
+          sceLibcFopenWithFH: 0x667AA471
+          sceLibcGetFD: 0x86BD86CD
+          sceLibcGetFH: 0x74E75EFE
+          sceLibcSetHeapInitError: 0x5CB3DC08
+          set_constraint_handler_s: 0xBA210739
           setbuf: 0x395490DA
           setjmp: 0x50B326CE
           setvbuf: 0x2CA980A0
           snprintf: 0xA1BFF606
+          snprintf_s: 0x4AB952F5
+          snwprintf_s: 0xD6448CAB
           sprintf: 0x7449B359
+          sprintf_s: 0xB92E45F7
           srand: 0x3AAD41B0
           sscanf: 0xEC585241
+          sscanf_s: 0xBDE472D5
           strcasecmp: 0x184C4B07
           strcat: 0x1434FA46
+          strcat_s: 0x234F3159
           strchr: 0xB9336E16
           strcmp: 0x1B58FA3B
           strcoll: 0x46AE2311
           strcpy: 0x85B924B7
-          strcspn: 0xE29D27A
+          strcpy_s: 0xC4A0D730
+          strcspn: 0x0E29D27A
           strdup: 0xFF6F77C7
           strerror: 0x1E9D6335
+          strerror_s: 0x301C4E06
+          strerrorlen_s: 0x5A1D86F2
           strftime: 0xEEB76FED
           strlen: 0x8AECC873
           strncasecmp: 0xAF1CA2F1
           strncat: 0xFBA69BC2
+          strncat_s: 0x158FD052
           strncmp: 0xE4299DCB
           strncpy: 0x9F87712D
+          strncpy_s: 0x1A1B1D71
+          strnlen_s: 0xB6DA8C56
           strpbrk: 0x68C307B6
           strrchr: 0xCEFDD143
           strspn: 0x4203B663
-          strstr: 0xD5200CB
+          strstr: 0x0D5200CB
           strtod: 0x6CA88B08
           strtof: 0x6CB8540E
           strtoimax: 0xB45FD61E
-          strtok: 0x289B8B3
+          strtok: 0x0289B8B3
           strtok_r: 0xEB31926D
+          strtok_s: 0x1CBC7E84
           strtol: 0x181827ED
           strtold: 0x48C684B2
           strtoll: 0x39B7E681
@@ -3319,74 +3466,1829 @@ modules:
           strtoumax: 0xB318952F
           strxfrm: 0x4D023DE9
           swprintf: 0x1B581BEB
+          swprintf_s: 0x4951C60D
           swscanf: 0xE1D2AE42
+          swscanf_s: 0xD44DCDB3
           time: 0xDAE8D60F
           tolower: 0x83F73C88
           toupper: 0x1218642B
           towctrans: 0xCF77D465
-          towlower: 0x9C38DE4
+          towlower: 0x09C38DE4
           towupper: 0xCACE34B9
           ungetc: 0x2BCB3F01
           ungetwc: 0x39334D9C
           vfprintf: 0xF7915685
+          vfprintf_s: 0x90FCC53C
           vfscanf: 0xF137771A
+          vfscanf_s: 0xFA961FB5
           vfwprintf: 0x36BF1E06
+          vfwprintf_s: 0xD6DB0435
           vfwscanf: 0x37A563BE
+          vfwscanf_s: 0xC2F79A1D
           vprintf: 0xE7B5E23E
-          vscanf: 0xE9BD318
+          vprintf_s: 0xA47B6F8D
+          vscanf: 0x0E9BD318
+          vscanf_s: 0xD7163351
           vsnprintf: 0xFE83F2E4
+          vsnprintf_s: 0x1CFE2CA3
+          vsnwprintf_s: 0xD4612BAE
           vsprintf: 0x802FDDF9
+          vsprintf_s: 0x29FF349F
           vsscanf: 0xA9889307
+          vsscanf_s: 0xF6167B8A
           vswprintf: 0x572DAB57
+          vswprintf_s: 0x21F6AE17
           vswscanf: 0x9451EE20
-          vwprintf: 0xA451B11
+          vswscanf_s: 0xE86A728C
+          vwprintf: 0x0A451B11
+          vwprintf_s: 0x0DD22AC1
           vwscanf: 0xAD0C43DC
+          vwscanf_s: 0x22FDAF1C
           wcrtomb: 0xD9FF289D
+          wcrtomb_s: 0x96DD1FF1
           wcscat: 0x2F990FF9
+          wcscat_s: 0x2F02EC8B
           wcschr: 0xC1587971
           wcscmp: 0xF42128B9
           wcscoll: 0x8EC70609
           wcscpy: 0x8AAADD56
+          wcscpy_s: 0x0DE9509B
           wcscspn: 0x25F7E46A
           wcsftime: 0x74136BC1
           wcslen: 0xA778A14B
           wcsncat: 0x196AB9F2
+          wcsncat_s: 0xEC2888CC
           wcsncmp: 0xAAA6AAA2
           wcsncpy: 0x62E9B2D5
-          wcspbrk: 0x7F229DB
+          wcsncpy_s: 0xFDFEB000
+          wcsnlen_s: 0x9170E08C
+          wcspbrk: 0x07F229DB
           wcsrchr: 0xDF806521
           wcsrtombs: 0xD8889FC8
+          wcsrtombs_s: 0x8316C7E0
           wcsspn: 0x5F5AA692
           wcsstr: 0x5BE328EE
           wcstod: 0x35D7F1B1
           wcstof: 0x64123137
           wcstoimax: 0x3F2D104F
           wcstok: 0xA17C24A3
+          wcstok_s: 0xBC740847
           wcstol: 0xFBEB657E
           wcstold: 0x2D7C3A7A
           wcstoll: 0x6EEFB7D7
           wcstombs: 0x9A8F7FC0
+          wcstombs_s: 0xD6208FC4
           wcstoul: 0xACF13D54
           wcstoull: 0xCBFF8200
           wcstoumax: 0xB9E511B4
           wcsxfrm: 0xF6069AFD
           wctob: 0x704321CC
           wctomb: 0x6489B5E4
+          wctomb_s: 0x7E160FB3
           wctrans: 0xE8270951
           wctype: 0xA967B88D
           wmemchr: 0x7A08BE70
           wmemcmp: 0x9864C99F
           wmemcpy: 0xD9F9DDCD
+          wmemcpy_s: 0xA2474903
           wmemmove: 0x53F7EB4B
+          wmemmove_s: 0xB46A64F5
           wmemset: 0x4D04A480
           wprintf: 0xBF2F5FCE
+          wprintf_s: 0xC4CF52CE
           wscanf: 0xADC32204
+          wscanf_s: 0x4B84B885
+      SceLibm:
         kernel: false
-        nid: 0xBE43BB07
+        nid: 0xCDAE3C7D
+        functions:
+          _Cosh: 0x4B84C012
+          _Dclass: 0x98BBDAE0
+          _Dsign: 0x5BD0F71C
+          _Dtest: 0x27A55170
+          _FDclass: 0xBD8EF217
+          _FDsign: 0xC4F7E42C
+          _FDtest: 0xC5B9C8D8
+          _Exp: 0xC73FE76D
+          _FCosh: 0xA278B20D
+          _FExp: 0xFF4EAE04
+          _FFpcomp: 0x9CD4CEFE
+          _FLog: 0xD5BD8D5C
+          _Fpcomp: 0x622CBFEE
+          _FSin: 0x4A496BC0
+          _FSinh: 0x7FBB4C55
+          _FSinx: 0x93FC85ED
+          _LCosh: 0x0197C9D5
+          _LDclass: 0x314CCE54
+          _LDsign: 0x1DF73D2B
+          _LDtest: 0x8DAE8767
+          _LExp: 0xB363D7D4
+          _LFpcomp: 0x18F43CD0
+          _Log: 0x67E99979
+          _LLog: 0x5B05329D
+          _LSin: 0xB397FE83
+          _LSinh: 0xF247EE99
+          _LSinx: 0x21866E99
+          _Sin: 0xD92A7F85
+          _Sinh: 0x40E42E8E
+          _Sinx: 0x603CAA93
+          acos: 0xD72B5ACB
+          acosf: 0x27EAB8C1
+          acosh: 0x1C053D0F
+          acoshf: 0x568ECFB0
+          acoshl: 0xD3D6D36E
+          acosl: 0x3210F395
+          asin: 0x4016B2E6
+          asinf: 0x3A3E5424
+          asinh: 0x7C93F1DD
+          asinhf: 0x285AEDEA
+          asinhl: 0x9496E15E
+          asinl: 0x1724A81D
+          atan: 0x516D9970
+          atan2: 0xC9BE3F05
+          atan2f: 0x4E09DD53
+          atan2l: 0xCE325597
+          atanf: 0xD78FC94E
+          atanh: 0x434BCE01
+          atanhf: 0xC7B0AFBA
+          atanhl: 0x6A6881A6
+          atanl: 0xD423A4AB
+          cbrt: 0xACC0DC5A
+          cbrtf: 0xD1699F4D
+          cbrtl: 0x342F9501
+          ceil: 0x63F05BD6
+          ceilf: 0x6BBFEC89
+          ceill: 0x48082D81
+          copysign: 0x0B918D13
+          copysignf: 0x16EB9E63
+          copysignl: 0x19DFC0AA
+          cos: 0x061D0244
+          cosf: 0x127F8302
+          cosl: 0x89B9BE1F
+          cosh: 0x110195E7
+          coshf: 0x61DE0770
+          coshl: 0x7EADDC5E
+          erf: 0x15993458
+          erfc: 0x524AEBFE
+          erfcf: 0x0301F113
+          erfcl: 0xD4C92471
+          erff: 0x41DD1AB8
+          erfl: 0xFD431619
+          exp: 0xEB027358
+          exp2: 0x9B18F38F
+          exp2f: 0x79415BD3
+          exp2l: 0x40053307
+          expf: 0x56473BC7
+          expl: 0xA71A81AA
+          expm1: 0x2A97A75F
+          expm1f: 0x64131D7B
+          expm1l: 0x8BF1866C
+          fabs: 0x3E672BE3
+          fabsf: 0x75348906
+          fabsl: 0x03ECA514
+          fdim: 0xD6FD5A2E
+          fdimf: 0x8B6CC137
+          fdiml: 0xE6988B7B
+          floor: 0x22BB8237
+          floorf: 0xCD7C05BD
+          floorl: 0xFDFA4558
+          fma: 0x1EACA585
+          fmaf: 0xB61672A7
+          fmal: 0xBCF6EA7C
+          fmax: 0xBE30CC1E
+          fmaxf: 0x7004FA75
+          fmaxl: 0xBF5AF69E
+          fmin: 0x2ABBDFF7
+          fminf: 0x7673CC1E
+          fminl: 0xE2F5A0F0
+          fmod: 0x798587E4
+          fmodf: 0x1CD8F88E
+          fmodl: 0x986011B4
+          frexp: 0x59197427
+          frexpf: 0x0A6879AC
+          frexpl: 0x6DC8D877
+          hypot: 0x2D2CD795
+          hypotf: 0xA397B929
+          hypotl: 0x05BFBEE8
+          ilogb: 0x667EE864
+          ilogbf: 0x80050A43
+          ilogbl: 0x91298DCA
+          ldexp: 0x0056061B
+          ldexpf: 0x0E61E016
+          ldexpl: 0x8280A7B1
+          lgamma: 0x2480AA54
+          lgammaf: 0x2D9556D5
+          lgammal: 0xADEBD201
+          llrint: 0x7B41AC38
+          llrintf: 0xC1F6135B
+          llrintl: 0x80558247
+          llround: 0xD1251A18
+          llroundf: 0x04595A04
+          llroundl: 0x9AB5C7AF
+          log: 0x6037C48F
+          log10: 0xCF65F098
+          log10f: 0xFD2A3464
+          log10l: 0x3D7E7201
+          log1p: 0x2CBE04D7
+          log1pf: 0xF1D7C851
+          log1pl: 0x3359152C
+          log2: 0x73AFEE5F
+          log2f: 0x4095DBDB
+          log2l: 0x720021A9
+          logb: 0x5EAE8AD4
+          logbf: 0x025F51CE
+          logbl: 0x86C4B75F
+          logf: 0x811ED68B
+          logl: 0xC6FFBCD6
+          lrint: 0x207307D0
+          lrintf: 0xDA903135
+          lrintl: 0xE8C1F6F8
+          lround: 0xD35AFD56
+          lroundf: 0xA24C6453
+          lroundl: 0x8B3ACA4E
+          modf: 0x1167B5D2
+          modff: 0x5D7A7EB2
+          modfl: 0xD41D68F2
+          nan: 0xC3FCA1FA
+          nanf: 0xB4761D24
+          nanl: 0xBFA96D93
+          nearbyint: 0x877187C4
+          nearbyintf: 0xD56E78F6
+          nearbyintl: 0x8DD794DC
+          nextafter: 0xE1A3D449
+          nextafterf: 0xC8A94A33
+          nextafterl: 0xEAAB2055
+          nexttoward: 0x39E605E6
+          nexttowardf: 0xDD652D4E
+          nexttowardl: 0x41E6AEA4
+          pow: 0x640DB443
+          powf: 0x6DEA815A
+          powl: 0x96328F3D
+          remainder: 0xE4D6117F
+          remainderf: 0xE6BB3DCF
+          remainderl: 0x354E568E
+          remquo: 0x52337926
+          remquof: 0xD8F6B5D3
+          remquol: 0xBB353F24
+          rint: 0x943F218F
+          rintf: 0xCACE5A19
+          rintl: 0xE3C097E0
+          round: 0x64D37996
+          roundf: 0xAAF31896
+          roundl: 0x9AB1B1B1
+          scalbln: 0x8F8CF628
+          scalblnf: 0xDEB0A2D0
+          scalblnl: 0x2113921E
+          scalbn: 0x569758D0
+          scalbnf: 0x78F70588
+          scalbnl: 0x777C7463
+          sin: 0xB5519FF0
+          sinf: 0x7F00B590
+          sinl: 0x3294447C
+          sinh: 0xF2C0AF49
+          sinhf: 0xB5838E7D
+          sinhl: 0x4B91F2E6
+          sqrt: 0xDA227FCC
+          sqrtf: 0xBA3F6937
+          sqrtl: 0xC1343477
+          tan: 0x5BAE40B0
+          tanf: 0xA98E941B
+          tanh: 0x26CD78CA
+          tanhf: 0xC4847578
+          tanhl: 0x14F2BEA1
+          tanl: 0xDC742A5E
+          tgamma: 0x3A7FE686
+          tgammaf: 0xE6067AC0
+          tgammal: 0x2949109F
+          trunc: 0x0212323E
+          truncf: 0x090B899F
+          truncl: 0xBC0F1B1A
+      SceLibstdcxx:
+        kernel: false
+        nid: 0xF7629240
+        functions:
+          _ZNKSt10bad_typeid4whatEv: 0x52B0C625
+          _ZNKSt10bad_typeid8_DoraiseEv: 0x64D7D074
+          _ZNKSt11logic_error4whatEv: 0x15FB88E2
+          _ZNKSt11logic_error8_DoraiseEv: 0x492D1209
+          _ZNKSt11range_error8_DoraiseEv: 0xDBDFF9D0
+          _ZNKSt12_String_base5_XlenEv: 0xE8D59AB5
+          _ZNKSt12_String_base5_XranEv: 0x473DC636
+          _ZNKSt12domain_error8_DoraiseEv: 0x481ECB76
+          _ZNKSt12length_error8_DoraiseEv: 0xB03E909C
+          _ZNKSt12out_of_range8_DoraiseEv: 0x38CF41AC
+          _ZNKSt13_codecvt_base11do_encodingEv: 0x55AE5502
+          _ZNKSt13_codecvt_base13do_max_lengthEv: 0x5522293F
+          _ZNKSt13_codecvt_base16do_always_noconvEv: 0xCF5643A9
+          _ZNKSt13bad_exception4whatEv: 0x51FCD56B
+          _ZNKSt13bad_exception8_DoraiseEv: 0x109E54C9
+          _ZNKSt13runtime_error4whatEv: 0xAE85C2EE
+          _ZNKSt13runtime_error8_DoraiseEv: 0x1D878503
+          _ZNKSt14overflow_error8_DoraiseEv: 0xEED101C6
+          _ZNKSt15underflow_error8_DoraiseEv: 0xB1AE6F9E
+          _ZNKSt16invalid_argument8_DoraiseEv: 0x16F56E8D
+          _ZNKSt6_ctypeIcE10do_tolowerEPcPKc: 0x6C568D20
+          _ZNKSt6_ctypeIcE10do_tolowerEc: 0xC334DE66
+          _ZNKSt6_ctypeIcE10do_toupperEPcPKc: 0x02DD808E
+          _ZNKSt6_ctypeIcE10do_toupperEc: 0xF6AF33EA
+          _ZNKSt6_ctypeIcE8do_widenEPKcS2_Pc: 0x1B81D726
+          _ZNKSt6_ctypeIcE8do_widenEc: 0x6471CC01
+          _ZNKSt6_ctypeIcE9do_narrowEPKcS2_cPc: 0x9CFA56E5
+          _ZNKSt6_ctypeIcE9do_narrowEcc: 0x718669AB
+          _ZNKSt6_ctypeIwE10do_scan_isEsPKwS2_: 0x759F105D
+          _ZNKSt6_ctypeIwE10do_tolowerEPwPKw: 0x0056443F
+          _ZNKSt6_ctypeIwE10do_tolowerEw: 0x33E9ECDD
+          _ZNKSt6_ctypeIwE10do_toupperEPwPKw: 0x1256E6A5
+          _ZNKSt6_ctypeIwE10do_toupperEw: 0x64072C2E
+          _ZNKSt6_ctypeIwE11do_scan_notEsPKwS2_: 0x339766BF
+          _ZNKSt6_ctypeIwE5do_isEPKwS2_Ps: 0xDA4E1651
+          _ZNKSt6_ctypeIwE5do_isEsw: 0x5A06C0E8
+          _ZNKSt6_ctypeIwE8do_widenEPKcS2_Pw: 0x609036C7
+          _ZNKSt6_ctypeIwE8do_widenEc: 0xA2896AA8
+          _ZNKSt6_ctypeIwE9do_narrowEPKwS2_cPc: 0x631687B9
+          _ZNKSt6_ctypeIwE9do_narrowEwc: 0xB4D8D2F0
+          _ZNKSt8_codecvtIccSt9_MbstatetE10do_unshiftERS0_PcS3_RS3_: 0xD9070137
+          _ZNKSt8_codecvtIccSt9_MbstatetE5do_inERS0_PKcS4_RS4_PcS6_RS6_: 0xABA0412F
+          _ZNKSt8_codecvtIccSt9_MbstatetE6do_outERS0_PKcS4_RS4_PcS6_RS6_: 0x51052F04
+          _ZNKSt8_codecvtIccSt9_MbstatetE9do_lengthERKS0_PKcS5_j: 0x39F062BE
+          _ZNKSt8_codecvtIwcSt9_MbstatetE10do_unshiftERS0_PcS3_RS3_: 0xF07CC89F
+          _ZNKSt8_codecvtIwcSt9_MbstatetE11do_encodingEv: 0xF3A2E837
+          _ZNKSt8_codecvtIwcSt9_MbstatetE13do_max_lengthEv: 0x1F133D1E
+          _ZNKSt8_codecvtIwcSt9_MbstatetE16do_always_noconvEv: 0x27716D17
+          _ZNKSt8_codecvtIwcSt9_MbstatetE5do_inERS0_PKcS4_RS4_PwS6_RS6_: 0x1C1AFE42
+          _ZNKSt8_codecvtIwcSt9_MbstatetE6do_outERS0_PKwS4_RS4_PcS6_RS6_: 0xCBDE5500
+          _ZNKSt8_codecvtIwcSt9_MbstatetE9do_lengthERKS0_PKcS5_j: 0xF4D38990
+          _ZNKSt8bad_cast4whatEv: 0x46A9143F
+          _ZNKSt8bad_cast8_DoraiseEv: 0x8D129D3F
+          _ZNKSt8ios_base7failure8_DoraiseEv: 0xF877F51E
+          _ZNKSt9bad_alloc4whatEv: 0x664750EE
+          _ZNKSt9bad_alloc8_DoraiseEv: 0xBA89FBE7
+          _ZNKSt9exception4whatEv: 0xC133E331
+          _ZNKSt9exception6_RaiseEv: 0x0656BE32
+          _ZNKSt9exception8_DoraiseEv: 0x47A5CDA2
+          _ZNKSt9type_info4nameEv: 0xBAE38DF9
+          _ZNKSt9type_info6beforeERKS_: 0x1F260F10
+          _ZNKSt9type_infoeqERKS_: 0xDB15F0FC
+          _ZNKSt9type_infoneERKS_: 0x9994F9FE
+          _ZNSdD0Ev: 0x2DA9FCEC
+          _ZNSdD1Ev: 0x6C2D3707
+          _ZNSiD0Ev: 0x9BA8786E
+          _ZNSiD1Ev: 0xD089A7C9
+          _ZNSoC1EPSt15basic_streambufIcSt11char_traitsIcEEb: 0x3EE0611A
+          _ZNSoD0Ev: 0x6489E51D
+          _ZNSoD1Ev: 0xEF21C386
+          _ZNSs5_GrowEjb: 0x10D794D4
+          _ZNSs6assignERKSsjj: 0x846D0286
+          _ZNSsC1EPKc: 0x2AF7786D
+          _ZNSsC1ERKSs: 0x92F661CF
+          _ZNSt10bad_typeidC1ERKS_: 0xECC3B9C2
+          _ZNSt10bad_typeidC1Ev: 0x9F4CD196
+          _ZNSt10bad_typeidC2ERKS_: 0x7AE1631B
+          _ZNSt10bad_typeidC2Ev: 0x33377802
+          _ZNSt10bad_typeidD0Ev: 0x2CE020C7
+          _ZNSt10bad_typeidD1Ev: 0x625460B9
+          _ZNSt10bad_typeidD2Ev: 0xB4F5C5A7
+          _ZNSt10bad_typeidaSERKS_: 0x55AAD6A6
+          _ZNSt10istrstreamD0Ev: 0x9CF31703
+          _ZNSt10istrstreamD1Ev: 0x71D13A36
+          _ZNSt10istrstreamD2Ev: 0xAF5DF8C3
+          _ZNSt10ostrstreamC1EPciNSt5_IosbIiE9_OpenmodeE: 0x0C1E7C7A
+          _ZNSt10ostrstreamC2EPciNSt5_IosbIiE9_OpenmodeE: 0x0C09B290
+          _ZNSt10ostrstreamD0Ev: 0x4B8BA644
+          _ZNSt10ostrstreamD1Ev: 0x0E463FB3
+          _ZNSt10ostrstreamD2Ev: 0xA0A34FEF
+          _ZNSt11logic_errorC1ERKS_: 0xC9F632FF
+          _ZNSt11logic_errorC2ERKSs: 0xE6356C5C
+          _ZNSt11logic_errorD0Ev: 0x6322FEB0
+          _ZNSt11logic_errorD1Ev: 0x35ED9C5A
+          _ZNSt11logic_errorD2Ev: 0x1FFC4420
+          _ZNSt11range_errorC1ERKS_: 0x6F6E3A52
+          _ZNSt11range_errorD0Ev: 0xFD97D28A
+          _ZNSt11range_errorD1Ev: 0x1C86405F
+          _ZNSt11range_errorD2Ev: 0xEF754EBD
+          _ZNSt12domain_errorC1ERKS_: 0x7D5412EF
+          _ZNSt12domain_errorD0Ev: 0x803A7D3E
+          _ZNSt12domain_errorD1Ev: 0xA6BCA2AD
+          _ZNSt12domain_errorD2Ev: 0x036F9D2A
+          _ZNSt12length_errorC1ERKS_: 0x5F3428AD
+          _ZNSt12length_errorC1ERKSs: 0xF6FB801D
+          _ZNSt12length_errorD0Ev: 0xF83AA7DA
+          _ZNSt12length_errorD1Ev: 0xA873D7F9
+          _ZNSt12length_errorD2Ev: 0x0BB12C75
+          _ZNSt12out_of_rangeC1ERKS_: 0x299AA587
+          _ZNSt12out_of_rangeC1ERKSs: 0xC8BA5522
+          _ZNSt12out_of_rangeD0Ev: 0xA8C470A4
+          _ZNSt12out_of_rangeD1Ev: 0x5FAE79BF
+          _ZNSt12out_of_rangeD2Ev: 0x7908CBAB
+          _ZNSt12strstreambuf5_InitEiPcS0_i: 0xDCCE6368
+          _ZNSt12strstreambuf5_TidyEv: 0xD85AE271
+          _ZNSt12strstreambuf6freezeEb: 0xD189E6CC
+          _ZNSt12strstreambuf7seekoffElNSt5_IosbIiE8_SeekdirENS1_9_OpenmodeE: 0xFA6BDF33
+          _ZNSt12strstreambuf7seekposESt4fposISt9_MbstatetENSt5_IosbIiE9_OpenmodeE: 0x97A9813A
+          _ZNSt12strstreambuf8overflowEi: 0xED2539E2
+          _ZNSt12strstreambuf9pbackfailEi: 0xC725F896
+          _ZNSt12strstreambuf9underflowEv: 0xA9F4FABF
+          _ZNSt12strstreambufD0Ev: 0x1C887DDE
+          _ZNSt12strstreambufD1Ev: 0x29E1E930
+          _ZNSt12strstreambufD2Ev: 0x0A140889
+          _ZNSt13_codecvt_baseD0Ev: 0xA8FE6FC4
+          _ZNSt13_codecvt_baseD1Ev: 0xB0E47AE4
+          _ZNSt13bad_exceptionC1ERKS_: 0xB7EE9CC2
+          _ZNSt13bad_exceptionC1Ev: 0xD719280E
+          _ZNSt13bad_exceptionC2ERKS_: 0x37D2017F
+          _ZNSt13bad_exceptionC2Ev: 0x3DE54D83
+          _ZNSt13bad_exceptionD0Ev: 0xC7880D1A
+          _ZNSt13bad_exceptionD1Ev: 0x486B59CE
+          _ZNSt13bad_exceptionD2Ev: 0xD04E0BAB
+          _ZNSt13bad_exceptionaSERKS_: 0x792097AA
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE4syncEv: 0xCC369863
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE5_LockEv: 0xC8BAB41E
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE5uflowEv: 0xD5F03A74
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE6setbufEPci: 0x413E813E
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE7_UnlockEv: 0x9D193B65
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE7seekoffElNSt5_IosbIiE8_SeekdirENS4_9_OpenmodeE: 0x52E47FB5
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE7seekposESt4fposISt9_MbstatetENSt5_IosbIiE9_OpenmodeE: 0x0E119B37
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE8overflowEi: 0x616754BC
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE9_EndwriteEv: 0xCD5BD2E1
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE9pbackfailEi: 0xFC1C7F3A
+          _ZNSt13basic_filebufIcSt11char_traitsIcEE9underflowEv: 0x31693B42
+          _ZNSt13basic_filebufIcSt11char_traitsIcEED0Ev: 0xC2F03DFD
+          _ZNSt13basic_filebufIcSt11char_traitsIcEED1Ev: 0x54A77A0D
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE4syncEv: 0x253888BD
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE5_LockEv: 0x4EC524DC
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE5uflowEv: 0xE777348C
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE6setbufEPwi: 0x1E1E8BBF
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE7_UnlockEv: 0x281D0191
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE7seekoffElNSt5_IosbIiE8_SeekdirENS4_9_OpenmodeE: 0x9C87B03F
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE7seekposESt4fposISt9_MbstatetENSt5_IosbIiE9_OpenmodeE: 0x8021D69B
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE8overflowEj: 0xD8127E0A
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE9_EndwriteEv: 0x99FDEB76
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE9pbackfailEj: 0x950786D7
+          _ZNSt13basic_filebufIwSt11char_traitsIwEE9underflowEv: 0x572A65D3
+          _ZNSt13basic_filebufIwSt11char_traitsIwEED0Ev: 0x96D09EA4
+          _ZNSt13basic_filebufIwSt11char_traitsIwEED1Ev: 0xD434F085
+          _ZNSt13basic_istreamIwSt11char_traitsIwEED0Ev: 0xFFFA683E
+          _ZNSt13basic_istreamIwSt11char_traitsIwEED1Ev: 0xB58839C5
+          _ZNSt13basic_ostreamIwSt11char_traitsIwEEC1EPSt15basic_streambufIwS1_Eb: 0x9BF8855B
+          _ZNSt13basic_ostreamIwSt11char_traitsIwEED0Ev: 0x0D74F56E
+          _ZNSt13basic_ostreamIwSt11char_traitsIwEED1Ev: 0x9B831B60
+          _ZNSt13runtime_errorC1ERKS_: 0x396337CE
+          _ZNSt13runtime_errorD0Ev: 0xDAD26367
+          _ZNSt13runtime_errorD1Ev: 0x7F1FDAEA
+          _ZNSt13runtime_errorD2Ev: 0xECC19AEB
+          _ZNSt14overflow_errorC1ERKS_: 0xE67F3768
+          _ZNSt14overflow_errorD0Ev: 0xF7C46A5D
+          _ZNSt14overflow_errorD1Ev: 0x5C666F7E
+          _ZNSt14overflow_errorD2Ev: 0x4E45F680
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE4syncEv: 0x626515E3
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE5_LockEv: 0x2E55F15A
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE5uflowEv: 0x0F8535AB
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE6setbufEPci: 0xD7933D06
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE6xsgetnEPci: 0xB8BCCC8D
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE6xsputnEPKci: 0x43E5D0F1
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE7_UnlockEv: 0x149B193A
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE7seekoffElNSt5_IosbIiE8_SeekdirENS4_9_OpenmodeE: 0x600998EC
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE7seekposESt4fposISt9_MbstatetENSt5_IosbIiE9_OpenmodeE: 0x01DEFFD6
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE8overflowEi: 0xF5F44352
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE9pbackfailEi: 0xCA79344F
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE9showmanycEv: 0x441788B1
+          _ZNSt15basic_streambufIcSt11char_traitsIcEE9underflowEv: 0x797DAE94
+          _ZNSt15basic_streambufIcSt11char_traitsIcEED0Ev: 0x074AD52E
+          _ZNSt15basic_streambufIcSt11char_traitsIcEED1Ev: 0xE449E2BF
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE4syncEv: 0x09FAA0AA
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE5_LockEv: 0xA596C88C
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE5uflowEv: 0x373C2CD8
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE6setbufEPwi: 0x3F363796
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE6xsgetnEPwi: 0xABE96E40
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE6xsputnEPKwi: 0x506D0DAE
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE7_UnlockEv: 0xBD378207
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE7seekoffElNSt5_IosbIiE8_SeekdirENS4_9_OpenmodeE: 0x924BD940
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE7seekposESt4fposISt9_MbstatetENSt5_IosbIiE9_OpenmodeE: 0x2CD1C1AF
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE8overflowEj: 0xB0DD9881
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE9pbackfailEj: 0xDD04652F
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE9showmanycEv: 0x9DCBD6A5
+          _ZNSt15basic_streambufIwSt11char_traitsIwEE9underflowEv: 0xC3892DE5
+          _ZNSt15basic_streambufIwSt11char_traitsIwEED0Ev: 0x8DFACE66
+          _ZNSt15basic_streambufIwSt11char_traitsIwEED1Ev: 0x868E865C
+          _ZNSt15underflow_errorC1ERKS_: 0x9A59BC50
+          _ZNSt15underflow_errorD0Ev: 0x47A589A4
+          _ZNSt15underflow_errorD1Ev: 0xCED74DE7
+          _ZNSt15underflow_errorD2Ev: 0xA76F038A
+          _ZNSt16invalid_argumentC1ERKS_: 0x6332FA62
+          _ZNSt16invalid_argumentD0Ev: 0x188D86CF
+          _ZNSt16invalid_argumentD1Ev: 0x9982A4FC
+          _ZNSt16invalid_argumentD2Ev: 0x1AB2B1AC
+          _ZNSt6_Mutex5_LockEv: 0xF9FAB558
+          _ZNSt6_Mutex7_UnlockEv: 0x0402C9F8
+          _ZNSt6_MutexC1ESt14_Uninitialized: 0x9DA92617
+          _ZNSt6_MutexC1Ev: 0xA4F99AE7
+          _ZNSt6_MutexC2ESt14_Uninitialized: 0x7B5A6B7F
+          _ZNSt6_MutexC2Ev: 0x5C5CD6B9
+          _ZNSt6_MutexD1Ev: 0x9B37CAD9
+          _ZNSt6_MutexD2Ev: 0x3E6A67FE
+          _ZNSt6_WinitC1Ev: 0xABB11CF9
+          _ZNSt6_WinitC2Ev: 0x90DD73C3
+          _ZNSt6_WinitD1Ev: 0x579C349B
+          _ZNSt6_WinitD2Ev: 0x3794ED15
+          _ZNSt6_ctypeIcED0Ev: 0x24DA6258
+          _ZNSt6_ctypeIcED1Ev: 0xF9C92C6A
+          _ZNSt6_ctypeIwED0Ev: 0x554E4742
+          _ZNSt6_ctypeIwED1Ev: 0xD4AEA4D3
+          _ZNSt8_codecvtIccSt9_MbstatetED0Ev: 0x5A7D89F0
+          _ZNSt8_codecvtIccSt9_MbstatetED1Ev: 0xB613F281
+          _ZNSt8_codecvtIwcSt9_MbstatetED0Ev: 0x1E11185A
+          _ZNSt8_codecvtIwcSt9_MbstatetED1Ev: 0x14125DF4
+          _ZNSt8bad_castC1ERKS_: 0xD2A4428D
+          _ZNSt8bad_castC1Ev: 0x7922CC7C
+          _ZNSt8bad_castC2ERKS_: 0x6DC64647
+          _ZNSt8bad_castC2Ev: 0x596BA786
+          _ZNSt8bad_castD0Ev: 0x5416699C
+          _ZNSt8bad_castD1Ev: 0x1D09710D
+          _ZNSt8bad_castD2Ev: 0x3C6B52E7
+          _ZNSt8bad_castaSERKS_: 0x95966020
+          _ZNSt8ios_base17register_callbackEPFvNS_5eventERS_iEi: 0xF81D3B86
+          _ZNSt8ios_base4InitC1Ev: 0x5E60B2B3
+          _ZNSt8ios_base4InitC2Ev: 0x5ED60DEE
+          _ZNSt8ios_base4InitD1Ev: 0x65D88619
+          _ZNSt8ios_base4InitD2Ev: 0x3483E01D
+          _ZNSt8ios_base5_InitEv: 0x78CB190E
+          _ZNSt8ios_base5_TidyEv: 0x023B8BEE
+          _ZNSt8ios_base5clearENSt5_IosbIiE8_IostateEb: 0xC9DE8208
+          _ZNSt8ios_base7_AddstdEv: 0xAA9171FB
+          _ZNSt8ios_base7copyfmtERKS_: 0x0FC58778
+          _ZNSt8ios_base7failureC1ERKS0_: 0x2DF76755
+          _ZNSt8ios_base7failureC1ERKSs: 0x094048F7
+          _ZNSt8ios_base7failureD0Ev: 0x20AAAB95
+          _ZNSt8ios_base7failureD1Ev: 0x31D0197A
+          _ZNSt8ios_base8_CallfnsENS_5eventE: 0x7736E940
+          _ZNSt8ios_base8_FindarrEi: 0xE8C4640A
+          _ZNSt8ios_baseD0Ev: 0xB8CFFB8D
+          _ZNSt8ios_baseD1Ev: 0x40EA90D5
+          _ZNSt8ios_baseD2Ev: 0xDCE89E71
+          _ZNSt9bad_allocC1ERKS_: 0xE15EEC2A
+          _ZNSt9bad_allocC1Ev: 0xEC3804D2
+          _ZNSt9bad_allocC2ERKS_: 0x6AF75467
+          _ZNSt9bad_allocC2Ev: 0x57096162
+          _ZNSt9bad_allocD0Ev: 0xB2DAA408
+          _ZNSt9bad_allocD1Ev: 0x07AEE736
+          _ZNSt9bad_allocD2Ev: 0xA9E9B7B7
+          _ZNSt9bad_allocaSERKS_: 0x7853E8E5
+          _ZNSt9basic_iosIcSt11char_traitsIcEED0Ev: 0xF78468EB
+          _ZNSt9basic_iosIcSt11char_traitsIcEED1Ev: 0x03150182
+          _ZNSt9basic_iosIwSt11char_traitsIwEED0Ev: 0x9654168A
+          _ZNSt9basic_iosIwSt11char_traitsIwEED1Ev: 0x8FFB8524
+          _ZNSt9exception18_Set_raise_handlerEPFvRKS_E: 0x7AF1BB16
+          _ZNSt9exceptionC1ERKS_: 0x8C5A4417
+          _ZNSt9exceptionC1Ev: 0xFC169D71
+          _ZNSt9exceptionC2ERKS_: 0x59758E74
+          _ZNSt9exceptionC2Ev: 0x00E08376
+          _ZNSt9exceptionD0Ev: 0x82EEA67E
+          _ZNSt9exceptionD1Ev: 0x30405D88
+          _ZNSt9exceptionD2Ev: 0xAF7A7081
+          _ZNSt9exceptionaSERKS_: 0x6CE63118
+          _ZNSt9strstreamC1EPciNSt5_IosbIiE9_OpenmodeE: 0x911F5A80
+          _ZNSt9strstreamC2EPciNSt5_IosbIiE9_OpenmodeE: 0x27166DDA
+          _ZNSt9strstreamD0Ev: 0xC4099868
+          _ZNSt9strstreamD1Ev: 0x98BD8AE1
+          _ZNSt9strstreamD2Ev: 0x7D8DFE43
+          _ZNSt9type_infoD0Ev: 0x8D4B1A13
+          _ZNSt9type_infoD1Ev: 0xBD786240
+          _ZNSt9type_infoD2Ev: 0x00C04303
+          _ZSt10unexpectedv: 0x9983D8B9
+          _ZSt11setiosflagsNSt5_IosbIiE9_FmtflagsE: 0x385D19B2
+          _ZSt12setprecisioni: 0xD8A78A61
+          _ZSt13resetiosflagsNSt5_IosbIiE9_FmtflagsE: 0x994DDF94
+          _ZSt13set_terminatePFvvE: 0x13BAEE11
+          _ZSt14_Debug_messagePKcS0_: 0x644CBAA2
+          _ZSt14set_unexpectedPFvvE: 0x9B2F0CA6
+          _ZSt15set_new_handlerPFvvE: 0xC107B555
+          _ZSt18uncaught_exceptionv: 0x011CEB00
+          _ZSt4setwi: 0x3622003F
+          _ZSt6_ThrowRKSt9exception: 0x6CAFA8EF
+          _ZSt7_FiopenPKcNSt5_IosbIiE9_OpenmodeEi: 0xFD276300
+          _ZSt7_FiopenPKwNSt5_IosbIiE9_OpenmodeEi: 0x1419E1DF
+          _ZSt7setbasei: 0x39587D21
+          _ZSt9terminatev: 0x978EC4DC
+          _ZThn8_NSdD0Ev: 0x4A804953
+          _ZThn8_NSdD1Ev: 0xABFBB0B4
+          _ZThn8_NSt9strstreamD0Ev: 0x6577F8FA
+          _ZThn8_NSt9strstreamD1Ev: 0x77812119
+          _ZTv0_n12_NSdD0Ev: 0xE4BD5E6A
+          _ZTv0_n12_NSdD1Ev: 0x1081224F
+          _ZTv0_n12_NSiD0Ev: 0x7CC8951D
+          _ZTv0_n12_NSiD1Ev: 0xC46CA5C9
+          _ZTv0_n12_NSoD0Ev: 0x699E7717
+          _ZTv0_n12_NSoD1Ev: 0x41DBA7E0
+          _ZTv0_n12_NSt10istrstreamD0Ev: 0x6FC84131
+          _ZTv0_n12_NSt10istrstreamD1Ev: 0x7B4D8616
+          _ZTv0_n12_NSt10ostrstreamD0Ev: 0xD82D58BA
+          _ZTv0_n12_NSt10ostrstreamD1Ev: 0x5D4F7F7B
+          _ZTv0_n12_NSt13basic_istreamIwSt11char_traitsIwEED0Ev: 0x10E7966F
+          _ZTv0_n12_NSt13basic_istreamIwSt11char_traitsIwEED1Ev: 0xC3718A8D
+          _ZTv0_n12_NSt13basic_ostreamIwSt11char_traitsIwEED0Ev: 0x159261D1
+          _ZTv0_n12_NSt13basic_ostreamIwSt11char_traitsIwEED1Ev: 0xB54EC1E5
+          _ZTv0_n12_NSt9strstreamD0Ev: 0x2FB87ED7
+          _ZTv0_n12_NSt9strstreamD1Ev: 0xECEDE119
+          _ZdaPv: 0x91B0DC47
+          _ZdaPvRKSt9nothrow_t: 0xA7241F09
+          _ZdaPvS_: 0x3688FFDA
+          _ZdlPv: 0x72293931
+          _ZdlPvRKSt9nothrow_t: 0x87EF85FF
+          _ZdlPvS_: 0x1EB89099
+          _Znaj: 0xE7FB2BF4
+          _ZnajRKSt9nothrow_t: 0x31C62481
+          _Znwj: 0xF99ED5AC
+          _ZnwjRKSt9nothrow_t: 0x0AE71DC3
+          _ZSt16_get_new_handlerv: 0x14CE0BD8
+          _Unwind_Resume: 0x13D5D5A1
+          __cxa_allocate_exception: 0x8C93EFDA
+          __cxa_begin_catch: 0x6165EE89
+          __cxa_begin_cleanup: 0x5D74285C
+          __cxa_call_terminate: 0x4E4CC399
+          __cxa_call_unexpected: 0x7C1A0217
+          __cxa_end_catch: 0x3438F773
+          __cxa_end_cleanup: 0xD7C1E113
+          __cxa_free_exception: 0x1FFD5FFF
+          __cxa_get_exception_ptr: 0xBFFC0ED7
+          __cxa_rethrow: 0x21D6C279
+          __cxa_throw: 0xF87E6098
+          __snc_personality_v0: 0xAE42C1D5
+          _ZN10__cxxabiv116__enum_type_infoD0Ev: 0xDD200A6F
+          _ZN10__cxxabiv116__enum_type_infoD1Ev: 0x436D61AD
+          _ZN10__cxxabiv116__enum_type_infoD2Ev: 0x34854DA4
+          _ZN10__cxxabiv117__array_type_infoD0Ev: 0x9D5EDD21
+          _ZN10__cxxabiv117__array_type_infoD1Ev: 0xD6375908
+          _ZN10__cxxabiv117__array_type_infoD2Ev: 0xFDC450D4
+          _ZN10__cxxabiv117__class_type_infoD0Ev: 0x5CCFD0C0
+          _ZN10__cxxabiv117__class_type_infoD1Ev: 0xFBBFFF15
+          _ZN10__cxxabiv117__class_type_infoD2Ev: 0xA92DD3D2
+          _ZN10__cxxabiv117__pbase_type_infoD0Ev: 0x6C14868D
+          _ZN10__cxxabiv117__pbase_type_infoD1Ev: 0xC1869E57
+          _ZN10__cxxabiv117__pbase_type_infoD2Ev: 0x2DF92DB7
+          _ZN10__cxxabiv119__pointer_type_infoD0Ev: 0xA9654DFD
+          _ZN10__cxxabiv119__pointer_type_infoD1Ev: 0x703A2C05
+          _ZN10__cxxabiv119__pointer_type_infoD2Ev: 0x509AAD21
+          _ZN10__cxxabiv120__function_type_infoD0Ev: 0xB7DFB274
+          _ZN10__cxxabiv120__function_type_infoD1Ev: 0x19EA26FF
+          _ZN10__cxxabiv120__function_type_infoD2Ev: 0xF882187E
+          _ZN10__cxxabiv120__si_class_type_infoD0Ev: 0xE67722C3
+          _ZN10__cxxabiv120__si_class_type_infoD1Ev: 0xA7E25E3E
+          _ZN10__cxxabiv120__si_class_type_infoD2Ev: 0xACD6D901
+          _ZN10__cxxabiv121__vmi_class_type_infoD0Ev: 0x986F12C7
+          _ZN10__cxxabiv121__vmi_class_type_infoD1Ev: 0x4B5BC979
+          _ZN10__cxxabiv121__vmi_class_type_infoD2Ev: 0xA7B9AB93
+          _ZN10__cxxabiv123__fundamental_type_infoD0Ev: 0x7436C981
+          _ZN10__cxxabiv123__fundamental_type_infoD1Ev: 0x4EFBF43A
+          _ZN10__cxxabiv123__fundamental_type_infoD2Ev: 0xF49AA0D3
+          _ZN10__cxxabiv129__pointer_to_member_type_infoD0Ev: 0x6199ACC9
+          _ZN10__cxxabiv129__pointer_to_member_type_infoD1Ev: 0xDD076510
+          _ZN10__cxxabiv129__pointer_to_member_type_infoD2Ev: 0xD4C11B17
+          _ZSt13_Syserror_mapi: 0x0466C022
+          _ZSt11_Xbad_allocv: 0x0FC144B2
+          _ZSt13_Xregex_errorNSt15regex_constants10error_typeE: 0x17C943A5
+          _ZSt14_Xlength_errorPKc: 0x2F6A7265
+          _ZSt14_Xout_of_rangePKc: 0x553E56BD
+          _ZSt15_Xruntime_errorPKc: 0x53AF8E35
+          _ZSt16_Xoverflow_errorPKc: 0x76869DBF
+          _ZSt18_Xinvalid_argumentPKc: 0x29CA6EA5
+          _ZSt19_Xbad_function_callv: 0xFBF8FAC3
+          _ZNSt8ios_base7_AddstdEPS_: 0x606671BA
+          _ZNSt9bad_allocC1EPKc: 0x5F446EE5
+          _ZNSt9bad_allocC2EPKc: 0x7164CC23
+          _ZSt15get_new_handlerv: 0xC489A1A8
+          _ZSt7_MP_AddPyy: 0x0A82F0DB
+          _ZSt7_MP_GetPy: 0x97285EC5
+          _ZSt7_MP_MulPyyy: 0x070138C6
+          _ZSt7_MP_RemPyy: 0x37E44683
+          _ZSt8_XLgammad: 0xE2E344ED
+          _ZSt8_XLgammae: 0x4513B4EB
+          _ZSt8_XLgammaf: 0xFA5E6BFF
+          _ZSt14_Random_devicev: 0xD72ED3E9
+          _ZSt22_Random_device_entropyv: 0x25DAC95A
+          _ZSt10_Rng_abortPKc: 0xC2311132
+          _Cnd_broadcast: 0x69E27281
+          _Cnd_destroy: 0x4D5A3769
+          _Cnd_init: 0x51D259C7
+          _Cnd_signal: 0x0693FABB
+          _Cnd_timedwait: 0x2C6BD793
+          _Cnd_wait: 0xD1882C32
+          _Thrd_abort: 0x9421F291
+          _Thrd_create: 0x54CF8B52
+          _Thrd_current: 0x6D93A759
+          _Thrd_detach: 0x86A11AA3
+          _Thrd_equal: 0x8F8B41CE
+          _Thrd_exit: 0x35A05FBA
+          _Thrd_join: 0x1556A35C
+          _Thrd_lt: 0xD82EBA72
+          _Thrd_sleep: 0x6065C6C2
+          _Thrd_start: 0x0A653F74
+          _Thrd_yield: 0x1C8E2605
+          _ZSt17_Future_error_mapi: 0x3B5D9007
+          _ZSt19_Throw_future_errorRKSt10error_code: 0x05D3C7CF
+          _ZSt22_Get_future_error_whati: 0x39C3CCA3
+          _ZSt25_Rethrow_future_exceptionSt13exception_ptr: 0x6C6FFDA7
+          _Xtime_get_ticks: 0x350B5466
+          xtime_get: 0x7A40AD3E
+          _Call_onceEx: 0xDCE9D6E4
+          _Mtx_current_owns: 0xC1806C8F
+          _Mtx_destroy: 0xEC07EEEA
+          _Mtx_init: 0x938F2E0E
+          _Mtx_lock: 0xB0705E73
+          _Mtx_timedlock: 0xCAB60DB2
+          _Mtx_trylock: 0xBD322C9A
+          _Mtx_unlock: 0x1C4A8E64
+          _Restore_state: 0x1CFE58D9
+          _Save_state: 0xC73C6905
+          _ZNSt4_Pad7_LaunchEPij: 0x323CB7F5
+          _ZNSt4_Pad8_ReleaseEv: 0x6B6C2A61
+          _ZNSt4_PadC1Ev: 0xF67E699D
+          _ZNSt4_PadC2Ev: 0xCB5CCCA4
+          _ZNSt4_PadD1Ev: 0x7DBD5D6F
+          _ZNSt4_PadD2Ev: 0x5648C25A
+          _ZN6Dinkum7threads17_Throw_lock_errorEv: 0xF580DF6C
+          _ZN6Dinkum7threads21_Throw_resource_errorEv: 0x1FCEC588
+          _ZSt14_Throw_C_errori: 0x177C6024
+          _ZSt16_Throw_Cpp_errori: 0x2235F45F
+          _Do_call: 0x27A533F3
+          _ZSt10adopt_lock: 0xEFFB20F0
+          _ZSt10defer_lock: 0x8EF0F4A8
+          _ZSt11try_to_lock: 0xF3F04352
+          _Cnd_do_broadcast_at_thread_exit: 0x735EDFF7
+          _Cnd_register_at_thread_exit: 0xE5A3BF8C
+          _Cnd_unregister_at_thread_exit: 0x44C6F9A0
+          _Lock_shared_ptr_spin_lock: 0xF5433FBD
+          _Unlock_shared_ptr_spin_lock: 0xA2956E9A
+          _ZSt14_Debug_messagePKcS0_j: 0xE259B9EE
+          _Atomic_flag_test_and_set: 0xE3CD321D
+          _Atomic_flag_clear: 0x697DA187
+          _Atomic_compare_exchange_strong: 0xCA52CBCD
+          _Atomic_compare_exchange_weak: 0x0774CBEF
+          _Atomic_copy: 0xA33CB720
+          _Atomic_exchange: 0x648B8E11
+          _Atomic_signal_fence: 0xF73DC376
+          _Atomic_thread_fence: 0x03FBA838
+          _Atomic_is_lock_free_1: 0x07ABC81C
+          _Atomic_is_lock_free_2: 0xBB363D46
+          _Atomic_is_lock_free_4: 0xD069ADD2
+          _Atomic_is_lock_free_8: 0xFB559BCD
+          _Atomic_compare_exchange_strong_1: 0x4E59849F
+          _Atomic_compare_exchange_strong_2: 0x1EB85702
+          _Atomic_compare_exchange_strong_4: 0xBC85F03C
+          _Atomic_compare_exchange_strong_8: 0xAF9537EF
+          _Atomic_compare_exchange_weak_1: 0x747E7602
+          _Atomic_compare_exchange_weak_2: 0xF359F346
+          _Atomic_compare_exchange_weak_4: 0x9F00A78B
+          _Atomic_compare_exchange_weak_8: 0xC1AE4CEE
+          _Atomic_exchange_1: 0xB8700F4B
+          _Atomic_exchange_2: 0x7CEEF1B8
+          _Atomic_exchange_4: 0xB431707F
+          _Atomic_exchange_8: 0x96EA1DC8
+          _Atomic_fetch_add_1: 0x193960DE
+          _Atomic_fetch_add_2: 0xB4AAE7D2
+          _Atomic_fetch_add_4: 0x67D5334B
+          _Atomic_fetch_add_8: 0x86E798B1
+          _Atomic_fetch_and_1: 0x7C33F085
+          _Atomic_fetch_and_2: 0x08BA4FF4
+          _Atomic_fetch_and_4: 0x5D3ECB6E
+          _Atomic_fetch_and_8: 0x9B290AAE
+          _Atomic_fetch_or_1: 0x685AA054
+          _Atomic_fetch_or_2: 0x4D50CE2A
+          _Atomic_fetch_or_4: 0xEC3DAD3C
+          _Atomic_fetch_or_8: 0x5347EA9C
+          _Atomic_fetch_sub_1: 0xC1E5C6A9
+          _Atomic_fetch_sub_2: 0x564DF1C3
+          _Atomic_fetch_sub_4: 0x2F7BA372
+          _Atomic_fetch_sub_8: 0xA5526A43
+          _Atomic_fetch_xor_1: 0xC736AB0C
+          _Atomic_fetch_xor_2: 0x2EC5CFAD
+          _Atomic_fetch_xor_4: 0x4A1A1B2C
+          _Atomic_fetch_xor_8: 0x69DB43DB
+          _Atomic_load_1: 0x8F08DAEB
+          _Atomic_load_2: 0xEFB78774
+          _Atomic_load_4: 0x13AB873A
+          _Atomic_load_8: 0xBA9D2B8B
+          _Atomic_store_1: 0xA21A6998
+          _Atomic_store_2: 0xA673CBCC
+          _Atomic_store_4: 0xA3903D27
+          _Atomic_store_8: 0x2C447C8B
+          _ZNSt12bad_weak_ptrD1Ev: 0x40BDBA34
+          _ZNSt17bad_function_callD1Ev: 0xDD227D3E
+          _ZNSt12future_errorD1Ev: 0x18D1A3B4
+          _ZNSt11regex_errorD1Ev: 0x1B491D6D
+          _ZNSt12system_errorD1Ev: 0x75CB9B10
+          _ZNSt12system_errorD2Ev: 0x659A3FA8
+          _ZNSt20bad_array_new_lengthD1Ev: 0xE4192AFB
+          __cxa_increment_exception_refcount: 0xF8BFA831
+          __cxa_decrement_exception_refcount: 0x4354A619
+          __cxa_current_primary_exception: 0x8E2C90F0
+          __cxa_rethrow_primary_exception: 0x5E3F28AD
+          _ZNSt16nested_exceptionD0Ev: 0xC9DA9C96
+          _ZNSt16nested_exceptionD1Ev: 0xC0058C3C
+          _ZNSt16nested_exceptionD2Ev: 0xE8C39B3B
+          _PJP_CPP_Copyright: 0xBF90A45A
+          _ZNSbIwSt11char_traitsIwESaIwEE4nposE: 0x3B6D9752
+          _ZNSs4nposE: 0xA3498140
+          _ZNSt13_Num_int_base10is_boundedE: 0x05273EA3
+          _ZNSt13_Num_int_base10is_integerE: 0x8A0994F8
+          _ZNSt13_Num_int_base14is_specializedE: 0x401F1224
+          _ZNSt13_Num_int_base5radixE: 0xA65FE916
+          _ZNSt13_Num_int_base8is_exactE: 0xF2AA872E
+          _ZNSt13_Num_int_base9is_moduloE: 0x08FE5A4F
+          _ZNSt14numeric_limitsIaE6digitsE: 0x7D4C55EC
+          _ZNSt14numeric_limitsIaE8digits10E: 0xA4E5BF5E
+          _ZNSt14numeric_limitsIaE9is_signedE: 0xD9938B84
+          _ZNSt14numeric_limitsIbE6digitsE: 0x56198D65
+          _ZNSt14numeric_limitsIbE8digits10E: 0xF52E5F76
+          _ZNSt14numeric_limitsIbE9is_moduloE: 0x81B82E0E
+          _ZNSt14numeric_limitsIbE9is_signedE: 0x9E6D2025
+          _ZNSt14numeric_limitsIcE6digitsE: 0x810ED593
+          _ZNSt14numeric_limitsIcE8digits10E: 0x0AC1A819
+          _ZNSt14numeric_limitsIcE9is_signedE: 0x660E14E1
+          _ZNSt14numeric_limitsIdE12max_exponentE: 0x3EEB3B23
+          _ZNSt14numeric_limitsIdE12min_exponentE: 0x13B634BE
+          _ZNSt14numeric_limitsIdE14max_exponent10E: 0xDB4218A0
+          _ZNSt14numeric_limitsIdE14min_exponent10E: 0x770B1CAC
+          _ZNSt14numeric_limitsIdE6digitsE: 0xD175A556
+          _ZNSt14numeric_limitsIdE8digits10E: 0xA5349445
+          _ZNSt14numeric_limitsIeE12max_exponentE: 0x2F59E7FF
+          _ZNSt14numeric_limitsIeE12min_exponentE: 0xC9C10644
+          _ZNSt14numeric_limitsIeE14max_exponent10E: 0xC80072AC
+          _ZNSt14numeric_limitsIeE14min_exponent10E: 0xCA8B1B9E
+          _ZNSt14numeric_limitsIeE6digitsE: 0x7E9AFD39
+          _ZNSt14numeric_limitsIeE8digits10E: 0x6122F9BF
+          _ZNSt14numeric_limitsIfE12max_exponentE: 0xA83B5FE2
+          _ZNSt14numeric_limitsIfE12min_exponentE: 0x9347B146
+          _ZNSt14numeric_limitsIfE14max_exponent10E: 0x371BCFA6
+          _ZNSt14numeric_limitsIfE14min_exponent10E: 0x6E6746EB
+          _ZNSt14numeric_limitsIfE6digitsE: 0xB102353D
+          _ZNSt14numeric_limitsIfE8digits10E: 0x781201BB
+          _ZNSt14numeric_limitsIhE6digitsE: 0x26D618B8
+          _ZNSt14numeric_limitsIhE8digits10E: 0x8D593267
+          _ZNSt14numeric_limitsIhE9is_signedE: 0x96B86E89
+          _ZNSt14numeric_limitsIiE6digitsE: 0x9CDAA1F0
+          _ZNSt14numeric_limitsIiE8digits10E: 0xE8EB3133
+          _ZNSt14numeric_limitsIiE9is_signedE: 0x3AB38CDA
+          _ZNSt14numeric_limitsIjE6digitsE: 0xEEB7B642
+          _ZNSt14numeric_limitsIjE8digits10E: 0xBCDE68B3
+          _ZNSt14numeric_limitsIjE9is_signedE: 0x0DA8EFB0
+          _ZNSt14numeric_limitsIlE6digitsE: 0x65DAD8D6
+          _ZNSt14numeric_limitsIlE8digits10E: 0xFB52BC0A
+          _ZNSt14numeric_limitsIlE9is_signedE: 0x063544FC
+          _ZNSt14numeric_limitsImE6digitsE: 0x441D097A
+          _ZNSt14numeric_limitsImE8digits10E: 0xB56F1B07
+          _ZNSt14numeric_limitsImE9is_signedE: 0xA9799886
+          _ZNSt14numeric_limitsIsE6digitsE: 0x45C6A036
+          _ZNSt14numeric_limitsIsE8digits10E: 0xCDE02D9C
+          _ZNSt14numeric_limitsIsE9is_signedE: 0xB13AEAC3
+          _ZNSt14numeric_limitsItE6digitsE: 0xBD813100
+          _ZNSt14numeric_limitsItE8digits10E: 0x242C5313
+          _ZNSt14numeric_limitsItE9is_signedE: 0x175A29B4
+          _ZNSt14numeric_limitsIwE6digitsE: 0x7E91BCD7
+          _ZNSt14numeric_limitsIwE8digits10E: 0x6B1CB79E
+          _ZNSt14numeric_limitsIwE9is_signedE: 0x9181475F
+          _ZNSt14numeric_limitsIxE6digitsE: 0x22F8FF46
+          _ZNSt14numeric_limitsIxE8digits10E: 0xF6E69A0D
+          _ZNSt14numeric_limitsIxE9is_signedE: 0xD01E5E34
+          _ZNSt14numeric_limitsIyE6digitsE: 0x4AB058B0
+          _ZNSt14numeric_limitsIyE8digits10E: 0x85F2F2D2
+          _ZNSt14numeric_limitsIyE9is_signedE: 0xDEDE9061
+          _ZNSt15_Num_float_base10has_denormE: 0x1CBE5DCB
+          _ZNSt15_Num_float_base10is_boundedE: 0x616E0E6F
+          _ZNSt15_Num_float_base10is_integerE: 0xDFDE8E2C
+          _ZNSt15_Num_float_base11round_styleE: 0x59668916
+          _ZNSt15_Num_float_base12has_infinityE: 0x2FA7A240
+          _ZNSt15_Num_float_base13has_quiet_NaNE: 0x4E98DCA0
+          _ZNSt15_Num_float_base14is_specializedE: 0x87EB5304
+          _ZNSt15_Num_float_base15has_denorm_lossE: 0x1B36956D
+          _ZNSt15_Num_float_base15tinyness_beforeE: 0xD3E2D87B
+          _ZNSt15_Num_float_base17has_signaling_NaNE: 0xBCEB9093
+          _ZNSt15_Num_float_base5radixE: 0x132F3288
+          _ZNSt15_Num_float_base5trapsE: 0xF8060433
+          _ZNSt15_Num_float_base8is_exactE: 0x3C4A2891
+          _ZNSt15_Num_float_base9is_iec559E: 0xA3F55094
+          _ZNSt15_Num_float_base9is_moduloE: 0xC8CB7207
+          _ZNSt15_Num_float_base9is_signedE: 0x1242E399
+          _ZNSt4fposISt9_MbstatetE4_StzE: 0x762C3159
+          _ZNSt5_IosbIiE10_NoreplaceE: 0xFED4A09B
+          _ZNSt5_IosbIiE2inE: 0xE615A657
+          _ZNSt5_IosbIiE3appE: 0x759FD02E
+          _ZNSt5_IosbIiE3ateE: 0x6F410A00
+          _ZNSt5_IosbIiE3begE: 0xD2A42D0C
+          _ZNSt5_IosbIiE3curE: 0x09B45C3B
+          _ZNSt5_IosbIiE3decE: 0x121A8952
+          _ZNSt5_IosbIiE3endE: 0x7CC027CD
+          _ZNSt5_IosbIiE3hexE: 0x6E2FF90B
+          _ZNSt5_IosbIiE3octE: 0xB4A55C29
+          _ZNSt5_IosbIiE3outE: 0x2CB2DC70
+          _ZNSt5_IosbIiE5truncE: 0x078E34A9
+          _ZNSt5_IosbIiE6badbitE: 0xB5EFA1B3
+          _ZNSt5_IosbIiE6binaryE: 0x5312A538
+          _ZNSt5_IosbIiE6skipwsE: 0xD9D32526
+          _ZNSt5_IosbIiE7failbitE: 0xAE6CA555
+          _ZNSt5_IosbIiE7goodbitE: 0x139E2D21
+          _ZNSt5_IosbIiE7unitbufE: 0x7021DFF0
+          _ZNSt5_IosbIiE9_NocreateE: 0x2AD61AAD
+          _ZNSt5_IosbIiE9basefieldE: 0x60B16E4E
+          _ZNSt6_Winit9_Init_cntE: 0x8137F8D7
+          _ZNSt8ios_base4Init9_Init_cntE: 0x554B7625
+          _ZNSt8ios_base5_SyncE: 0x57CF916C
+          _ZNSt8ios_base6_IndexE: 0xF2D3416A
+          _ZNSt9_Num_base10has_denormE: 0x3D219F98
+          _ZNSt9_Num_base10is_boundedE: 0xD93E4A6C
+          _ZNSt9_Num_base10is_integerE: 0xB65169EF
+          _ZNSt9_Num_base11round_styleE: 0x13B38354
+          _ZNSt9_Num_base12has_infinityE: 0xB11D20E2
+          _ZNSt9_Num_base12max_exponentE: 0x3E169F74
+          _ZNSt9_Num_base12min_exponentE: 0xD7C041E0
+          _ZNSt9_Num_base13has_quiet_NaNE: 0x02DA0D59
+          _ZNSt9_Num_base14is_specializedE: 0xBE06BD79
+          _ZNSt9_Num_base14max_exponent10E: 0xEBBC4DDD
+          _ZNSt9_Num_base14min_exponent10E: 0x0FFCF7FC
+          _ZNSt9_Num_base15has_denorm_lossE: 0xB317DDDF
+          _ZNSt9_Num_base15tinyness_beforeE: 0x245D399E
+          _ZNSt9_Num_base17has_signaling_NaNE: 0xBD5F0B8A
+          _ZNSt9_Num_base5radixE: 0xE23BAE9E
+          _ZNSt9_Num_base5trapsE: 0x9237A154
+          _ZNSt9_Num_base6digitsE: 0xE8421A12
+          _ZNSt9_Num_base8digits10E: 0x80698934
+          _ZNSt9_Num_base8is_exactE: 0xB338C222
+          _ZNSt9_Num_base9is_iec559E: 0x1F5A7860
+          _ZNSt9_Num_base9is_moduloE: 0x840107AA
+          _ZNSt9_Num_base9is_signedE: 0xABD7AE16
+          _ZSt14_Raise_handler: 0x4A1AB5B4
+          _ZSt3cin: 0x768F2944
+          _ZSt4_Fpz: 0xD9478DCF
+          _ZSt4cerr: 0x14B35A37
+          _ZSt4clog: 0xD361A52A
+          _ZSt4cout: 0xB3867BB4
+          _ZSt4wcin: 0x8054BC8E
+          _ZSt5wcerr: 0x8B2001F7
+          _ZSt5wclog: 0x8E04C18C
+          _ZSt5wcout: 0x4F726424
+          _ZSt7_BADOFF: 0x9C449444
+          _ZSt7nothrow: 0xBFEF56B5
+          _ZTI15__simd64_int8_t: 0xDC18EF42
+          _ZTI16__simd128_int8_t: 0x2207D305
+          _ZTI16__simd64_int16_t: 0x869FEDA9
+          _ZTI16__simd64_int32_t: 0x7CEF3DB5
+          _ZTI16__simd64_int64_t: 0x7EE5B0BE
+          _ZTI16__simd64_poly8_t: 0xFE09AD25
+          _ZTI16__simd64_uint8_t: 0x14A3598E
+          _ZTI17__simd128_int16_t: 0xF4B098DD
+          _ZTI17__simd128_int32_t: 0xAABF056C
+          _ZTI17__simd128_int64_t: 0x37DF07EB
+          _ZTI17__simd128_poly8_t: 0x305068B1
+          _ZTI17__simd128_uint8_t: 0x74813D4D
+          _ZTI17__simd64_poly16_t: 0xE118AB78
+          _ZTI17__simd64_uint16_t: 0x67E05799
+          _ZTI17__simd64_uint32_t: 0x1617E8CB
+          _ZTI17__simd64_uint64_t: 0xCA19AEA0
+          _ZTI18__simd128_poly16_t: 0x2FACB1EF
+          _ZTI18__simd128_uint16_t: 0xC089FED3
+          _ZTI18__simd128_uint32_t: 0xFC00EC48
+          _ZTI18__simd128_uint64_t: 0x72D13CF1
+          _ZTI18__simd64_float16_t: 0x237AF69B
+          _ZTI18__simd64_float32_t: 0xF7FDBBED
+          _ZTI19__simd128_float16_t: 0x525557F3
+          _ZTI19__simd128_float32_t: 0xA4018B84
+          _ZTIDh: 0xA1FE4058
+          _ZTINSt8ios_base7failureE: 0x5351829B
+          _ZTIP15__simd64_int8_t: 0x00AC6C8F
+          _ZTIP16__simd128_int8_t: 0xD5B056B8
+          _ZTIP16__simd64_int16_t: 0x13975DAE
+          _ZTIP16__simd64_int32_t: 0x963C04E3
+          _ZTIP16__simd64_int64_t: 0x3A9A1AE9
+          _ZTIP16__simd64_poly8_t: 0x9F43A559
+          _ZTIP16__simd64_uint8_t: 0xD8079FA9
+          _ZTIP17__simd128_int16_t: 0xEF53FE1F
+          _ZTIP17__simd128_int32_t: 0xA5094302
+          _ZTIP17__simd128_int64_t: 0x1083A5FA
+          _ZTIP17__simd128_poly8_t: 0x9CAF5E5A
+          _ZTIP17__simd128_uint8_t: 0x264B0978
+          _ZTIP17__simd64_poly16_t: 0x214A0488
+          _ZTIP17__simd64_uint16_t: 0xA96D02B1
+          _ZTIP17__simd64_uint32_t: 0xEE862280
+          _ZTIP17__simd64_uint64_t: 0x3B57AFEF
+          _ZTIP18__simd128_poly16_t: 0xB5CEC4FF
+          _ZTIP18__simd128_uint16_t: 0x46124E82
+          _ZTIP18__simd128_uint32_t: 0x07E6CC17
+          _ZTIP18__simd128_uint64_t: 0x52ACB7FD
+          _ZTIP18__simd64_float16_t: 0x588EBCAD
+          _ZTIP18__simd64_float32_t: 0xDFCB2417
+          _ZTIP19__simd128_float16_t: 0x9502D3C0
+          _ZTIP19__simd128_float32_t: 0xFB84796C
+          _ZTIPDh: 0xA43ABF14
+          _ZTIPK15__simd64_int8_t: 0x37A74E46
+          _ZTIPK16__simd128_int8_t: 0x60D7D920
+          _ZTIPK16__simd64_int16_t: 0x52A04C47
+          _ZTIPK16__simd64_int32_t: 0xBB64CCF1
+          _ZTIPK16__simd64_int64_t: 0x401E1B1D
+          _ZTIPK16__simd64_poly8_t: 0x7C9D0C33
+          _ZTIPK16__simd64_uint8_t: 0x021A57A1
+          _ZTIPK17__simd128_int16_t: 0x021E3DD1
+          _ZTIPK17__simd128_int32_t: 0xFF8DDBE7
+          _ZTIPK17__simd128_int64_t: 0xE9532FEB
+          _ZTIPK17__simd128_poly8_t: 0xB30AB3B5
+          _ZTIPK17__simd128_uint8_t: 0xC8721E86
+          _ZTIPK17__simd64_poly16_t: 0x610983B7
+          _ZTIPK17__simd64_uint16_t: 0x486A3970
+          _ZTIPK17__simd64_uint32_t: 0x9577D4FD
+          _ZTIPK17__simd64_uint64_t: 0x9369EB5B
+          _ZTIPK18__simd128_poly16_t: 0x192861D3
+          _ZTIPK18__simd128_uint16_t: 0x9C721F27
+          _ZTIPK18__simd128_uint32_t: 0xC0A37F8F
+          _ZTIPK18__simd128_uint64_t: 0x84999822
+          _ZTIPK18__simd64_float16_t: 0xF2FCDEFC
+          _ZTIPK18__simd64_float32_t: 0x2D2B93F7
+          _ZTIPK19__simd128_float16_t: 0x6B7DA1FD
+          _ZTIPK19__simd128_float32_t: 0x15CA84E1
+          _ZTIPKDh: 0x6195F016
+          _ZTIPKa: 0x63E0CE97
+          _ZTIPKb: 0x47A13017
+          _ZTIPKc: 0x8C375D81
+          _ZTIPKd: 0x841645BA
+          _ZTIPKe: 0x179015C1
+          _ZTIPKf: 0xF7F85635
+          _ZTIPKh: 0x54CF62A4
+          _ZTIPKi: 0x33DAF949
+          _ZTIPKj: 0x703C1962
+          _ZTIPKl: 0xF353DAF3
+          _ZTIPKm: 0x67092852
+          _ZTIPKs: 0xDAAEEAD0
+          _ZTIPKt: 0x39790E0A
+          _ZTIPKv: 0xEE47C447
+          _ZTIPKw: 0xECDB6B05
+          _ZTIPKx: 0xC20CF55C
+          _ZTIPKy: 0xA0F5E8F5
+          _ZTIPa: 0xA7CB4EAA
+          _ZTIPb: 0x087B0FB6
+          _ZTIPc: 0xE4D24E14
+          _ZTIPd: 0x6825FFE6
+          _ZTIPe: 0x926B9A3A
+          _ZTIPf: 0x24072F3E
+          _ZTIPh: 0x08B5247B
+          _ZTIPi: 0x15C21CC8
+          _ZTIPj: 0xD234CF18
+          _ZTIPl: 0x50E25810
+          _ZTIPm: 0x9D0DBB1A
+          _ZTIPs: 0xDCB7CD94
+          _ZTIPt: 0x7FC4B19D
+          _ZTIPv: 0x4722F2AE
+          _ZTIPw: 0x2208C899
+          _ZTIPx: 0xE64F5994
+          _ZTIPy: 0xC1C20AC0
+          _ZTISd: 0xD7A9284F
+          _ZTISi: 0xE302D51A
+          _ZTISo: 0xF9426257
+          _ZTISt10bad_typeid: 0x7242603B
+          _ZTISt10istrstream: 0x67B82DEF
+          _ZTISt10ostrstream: 0x9F17589B
+          _ZTISt11_ctype_base: 0xE0E3C75A
+          _ZTISt11logic_error: 0x87457513
+          _ZTISt11range_error: 0x2B71045A
+          _ZTISt12domain_error: 0x9A72EBFE
+          _ZTISt12length_error: 0x15E6C91C
+          _ZTISt12out_of_range: 0xBAC29E4D
+          _ZTISt12strstreambuf: 0x8257DFA2
+          _ZTISt13_codecvt_base: 0x34455CAF
+          _ZTISt13bad_exception: 0xF4A5A537
+          _ZTISt13basic_filebufIcSt11char_traitsIcEE: 0x33C19D3B
+          _ZTISt13basic_filebufIwSt11char_traitsIwEE: 0x83DB8917
+          _ZTISt13basic_istreamIwSt11char_traitsIwEE: 0x1582929A
+          _ZTISt13basic_ostreamIwSt11char_traitsIwEE: 0xF4062B77
+          _ZTISt13runtime_error: 0x2451AF0A
+          _ZTISt14overflow_error: 0x3EE22853
+          _ZTISt15basic_streambufIcSt11char_traitsIcEE: 0x758B452B
+          _ZTISt15basic_streambufIwSt11char_traitsIwEE: 0x52B5EC73
+          _ZTISt15underflow_error: 0xCD0A98ED
+          _ZTISt16invalid_argument: 0xA128D5A0
+          _ZTISt5_IosbIiE: 0xE2AB6BF9
+          _ZTISt6_ctypeIcE: 0x3FD78B17
+          _ZTISt6_ctypeIwE: 0xA8CD5D05
+          _ZTISt8_codecvtIccSt9_MbstatetE: 0xAFB2B7FB
+          _ZTISt8_codecvtIwcSt9_MbstatetE: 0xCA25D9BE
+          _ZTISt8bad_cast: 0xA7CA7C93
+          _ZTISt8ios_base: 0xB93721C7
+          _ZTISt9bad_alloc: 0x35E135A0
+          _ZTISt9basic_iosIcSt11char_traitsIcEE: 0x7BA61382
+          _ZTISt9basic_iosIwSt11char_traitsIwEE: 0x0905B8B0
+          _ZTISt9exception: 0x1E8C6100
+          _ZTISt9strstream: 0x1CC15F54
+          _ZTISt9type_info: 0x8A026EAD
+          _ZTIa: 0x4F416B30
+          _ZTIb: 0x3081D959
+          _ZTIc: 0x942D2342
+          _ZTId: 0x685BA1E8
+          _ZTIe: 0xFCE46A43
+          _ZTIf: 0x64AEB8AF
+          _ZTIh: 0x606676D4
+          _ZTIi: 0xA58E84A3
+          _ZTIj: 0x9B0CBEC0
+          _ZTIl: 0xD589E8AE
+          _ZTIm: 0xD39774A5
+          _ZTIs: 0xDC2C85B0
+          _ZTIt: 0xEA3FB57B
+          _ZTIv: 0x76C6BDCE
+          _ZTIw: 0x8BFC9260
+          _ZTIx: 0x90B0194C
+          _ZTIy: 0x16DACFBF
+          _ZTS15__simd64_int8_t: 0x720678AD
+          _ZTS16__simd128_int8_t: 0x5B9F1D83
+          _ZTS16__simd64_int16_t: 0x953ECE43
+          _ZTS16__simd64_int32_t: 0xCE27612E
+          _ZTS16__simd64_int64_t: 0x91BE71C9
+          _ZTS16__simd64_poly8_t: 0x72BC6CD9
+          _ZTS16__simd64_uint8_t: 0xCD2802B5
+          _ZTS17__simd128_int16_t: 0xC3FA8530
+          _ZTS17__simd128_int32_t: 0x67A63A08
+          _ZTS17__simd128_int64_t: 0x50D7EBAC
+          _ZTS17__simd128_poly8_t: 0x6B26EFF8
+          _ZTS17__simd128_uint8_t: 0x08C4C69F
+          _ZTS17__simd64_poly16_t: 0x40BC2E0E
+          _ZTS17__simd64_uint16_t: 0x8D1AE4A7
+          _ZTS17__simd64_uint32_t: 0xC4096952
+          _ZTS17__simd64_uint64_t: 0x9A9E706B
+          _ZTS18__simd128_poly16_t: 0x16D366F1
+          _ZTS18__simd128_uint16_t: 0x045552A1
+          _ZTS18__simd128_uint32_t: 0x7DBF4FFF
+          _ZTS18__simd128_uint64_t: 0xCDD0D86C
+          _ZTS18__simd64_float16_t: 0x0ED26DE1
+          _ZTS18__simd64_float32_t: 0xAB0D789A
+          _ZTS19__simd128_float16_t: 0x03200DDB
+          _ZTS19__simd128_float32_t: 0xD54CBD7C
+          _ZTSDh: 0xA8E6842E
+          _ZTSNSt8ios_base7failureE: 0x5246E71E
+          _ZTSP15__simd64_int8_t: 0xF98AAA03
+          _ZTSP16__simd128_int8_t: 0xAF5AA646
+          _ZTSP16__simd64_int16_t: 0x73874089
+          _ZTSP16__simd64_int32_t: 0xAD912141
+          _ZTSP16__simd64_int64_t: 0x54DF9AD0
+          _ZTSP16__simd64_poly8_t: 0x67D1351B
+          _ZTSP16__simd64_uint8_t: 0x9FDDB92F
+          _ZTSP17__simd128_int16_t: 0xA9B31841
+          _ZTSP17__simd128_int32_t: 0x244C742C
+          _ZTSP17__simd128_int64_t: 0x42BDC05A
+          _ZTSP17__simd128_poly8_t: 0x31AFE1A0
+          _ZTSP17__simd128_uint8_t: 0x5CF817B0
+          _ZTSP17__simd64_poly16_t: 0xB524B325
+          _ZTSP17__simd64_uint16_t: 0x51A1F225
+          _ZTSP17__simd64_uint32_t: 0x9C3431DD
+          _ZTSP17__simd64_uint64_t: 0xB1EC37EC
+          _ZTSP18__simd128_poly16_t: 0x937A4F2F
+          _ZTSP18__simd128_uint16_t: 0x33549DB5
+          _ZTSP18__simd128_uint32_t: 0xFC19AC06
+          _ZTSP18__simd128_uint64_t: 0xF4BCCEFA
+          _ZTSP18__simd64_float16_t: 0xD9A43D3A
+          _ZTSP18__simd64_float32_t: 0xFAB5D659
+          _ZTSP19__simd128_float16_t: 0x7E694471
+          _ZTSP19__simd128_float32_t: 0xA9AF9CE8
+          _ZTSPDh: 0xDAE584EC
+          _ZTSPK15__simd64_int8_t: 0x2B017F22
+          _ZTSPK16__simd128_int8_t: 0x4A7149C9
+          _ZTSPK16__simd64_int16_t: 0xAC116166
+          _ZTSPK16__simd64_int32_t: 0x6A472A63
+          _ZTSPK16__simd64_int64_t: 0x62E8B59F
+          _ZTSPK16__simd64_poly8_t: 0xC356ACF6
+          _ZTSPK16__simd64_uint8_t: 0x878C75F4
+          _ZTSPK17__simd128_int16_t: 0x68B777E3
+          _ZTSPK17__simd128_int32_t: 0x061188BD
+          _ZTSPK17__simd128_int64_t: 0x203B9BCA
+          _ZTSPK17__simd128_poly8_t: 0xC7733F13
+          _ZTSPK17__simd128_uint8_t: 0x3D8A69EC
+          _ZTSPK17__simd64_poly16_t: 0xCC081D58
+          _ZTSPK17__simd64_uint16_t: 0xEB50ABA7
+          _ZTSPK17__simd64_uint32_t: 0x25EC8CE5
+          _ZTSPK17__simd64_uint64_t: 0x0F2BD671
+          _ZTSPK18__simd128_poly16_t: 0x5C61F109
+          _ZTSPK18__simd128_uint16_t: 0x9B085E3F
+          _ZTSPK18__simd128_uint32_t: 0x721902EF
+          _ZTSPK18__simd128_uint64_t: 0xD5C8CE12
+          _ZTSPK18__simd64_float16_t: 0x1C618B7E
+          _ZTSPK18__simd64_float32_t: 0x89B6EDD3
+          _ZTSPK19__simd128_float16_t: 0x9BC380FF
+          _ZTSPK19__simd128_float32_t: 0xC951A9C5
+          _ZTSPKDh: 0x2796C952
+          _ZTSPKa: 0xBAD19257
+          _ZTSPKb: 0x6CB2F5A4
+          _ZTSPKc: 0xE242CC59
+          _ZTSPKd: 0xA0C8CCE9
+          _ZTSPKe: 0x5C69903D
+          _ZTSPKf: 0xDBF8E0D1
+          _ZTSPKh: 0x1BC277F5
+          _ZTSPKi: 0xF09F6E45
+          _ZTSPKj: 0x5C6D9EDD
+          _ZTSPKl: 0x12416EBE
+          _ZTSPKm: 0x199F6347
+          _ZTSPKs: 0xA1D68767
+          _ZTSPKt: 0xE6498BCD
+          _ZTSPKv: 0xF0FF237E
+          _ZTSPKw: 0xD255293A
+          _ZTSPKx: 0x2EADF5EC
+          _ZTSPKy: 0xEC3461AB
+          _ZTSPa: 0xC5AC688C
+          _ZTSPb: 0xE4EB3C43
+          _ZTSPc: 0xAEF69715
+          _ZTSPd: 0x6F81469F
+          _ZTSPe: 0xFD38BF3B
+          _ZTSPf: 0xFCB96733
+          _ZTSPh: 0x5BFE19AB
+          _ZTSPi: 0x187E3B47
+          _ZTSPj: 0x2F4A5390
+          _ZTSPl: 0x651D020E
+          _ZTSPm: 0x6E4D412D
+          _ZTSPs: 0x982D9703
+          _ZTSPt: 0xE2A0B0A8
+          _ZTSPv: 0xF7B6B02A
+          _ZTSPw: 0xF1C9A755
+          _ZTSPx: 0x0968B212
+          _ZTSPy: 0x09787CAD
+          _ZTSSd: 0xF86F5756
+          _ZTSSi: 0x999300E0
+          _ZTSSo: 0x591C25A3
+          _ZTSSt10bad_typeid: 0x0FC9D21B
+          _ZTSSt10istrstream: 0x867D109E
+          _ZTSSt10ostrstream: 0x88BFC745
+          _ZTSSt11_ctype_base: 0xB315CE7A
+          _ZTSSt11logic_error: 0xA65DACDF
+          _ZTSSt11range_error: 0x1B8E7108
+          _ZTSSt12domain_error: 0xBE23707A
+          _ZTSSt12length_error: 0x9E317CE1
+          _ZTSSt12out_of_range: 0xD8DAD98D
+          _ZTSSt12strstreambuf: 0x1C929309
+          _ZTSSt13_codecvt_base: 0x0E17E4D6
+          _ZTSSt13bad_exception: 0x918FE198
+          _ZTSSt13basic_filebufIcSt11char_traitsIcEE: 0x227B4568
+          _ZTSSt13basic_filebufIwSt11char_traitsIwEE: 0xD34BAF59
+          _ZTSSt13basic_istreamIwSt11char_traitsIwEE: 0x4381D6B0
+          _ZTSSt13basic_ostreamIwSt11char_traitsIwEE: 0x8D487027
+          _ZTSSt13runtime_error: 0xCAA9B21D
+          _ZTSSt14overflow_error: 0xA21B1185
+          _ZTSSt15basic_streambufIcSt11char_traitsIcEE: 0x4A1A1314
+          _ZTSSt15basic_streambufIwSt11char_traitsIwEE: 0x26C1C38F
+          _ZTSSt15underflow_error: 0x140AE4BB
+          _ZTSSt16invalid_argument: 0xC3CD5E06
+          _ZTSSt5_IosbIiE: 0xB07DF922
+          _ZTSSt6_ctypeIcE: 0xED549839
+          _ZTSSt6_ctypeIwE: 0x89304937
+          _ZTSSt8_codecvtIccSt9_MbstatetE: 0x17AAF611
+          _ZTSSt8_codecvtIwcSt9_MbstatetE: 0xB4C66A72
+          _ZTSSt8bad_cast: 0x4C50F26D
+          _ZTSSt8ios_base: 0xA263F3D5
+          _ZTSSt9_numpunctIcE: 0x8DA9C17C
+          _ZTSSt9_numpunctIwE: 0xC4F9C216
+          _ZTSSt9bad_alloc: 0xDF0FFCD2
+          _ZTSSt9basic_iosIcSt11char_traitsIcEE: 0xB37BE412
+          _ZTSSt9basic_iosIwSt11char_traitsIwEE: 0xCA50ACCA
+          _ZTSSt9exception: 0x45FD9715
+          _ZTSSt9strstream: 0xE5C789D4
+          _ZTSSt9type_info: 0x2856DCD6
+          _ZTSa: 0x08E6A51A
+          _ZTSb: 0x491DB7D3
+          _ZTSc: 0xD657B5A0
+          _ZTSd: 0x322C7CB5
+          _ZTSe: 0x596C02C7
+          _ZTSf: 0x2434A5DD
+          _ZTSh: 0x890DE9E8
+          _ZTSi: 0x4B9F21DF
+          _ZTSj: 0x4C2D1984
+          _ZTSl: 0x46E67574
+          _ZTSm: 0xEE238074
+          _ZTSs: 0x8C9CDB9C
+          _ZTSt: 0xED2E996A
+          _ZTSv: 0xD4744378
+          _ZTSw: 0x2C50C827
+          _ZTSx: 0x9574359B
+          _ZTSy: 0x402717E4
+          _ZTTSd: 0x51B29810
+          _ZTTSi: 0x52128B13
+          _ZTTSo: 0x3C508708
+          _ZTTSt10istrstream: 0x087753F6
+          _ZTTSt10ostrstream: 0xE3D7CB30
+          _ZTTSt13basic_istreamIwSt11char_traitsIwEE: 0xBC326B50
+          _ZTTSt13basic_ostreamIwSt11char_traitsIwEE: 0x16E32018
+          _ZTTSt9strstream: 0xC91F7671
+          _ZTVNSt8ios_base7failureE: 0x648213CC
+          _ZTVSd: 0x796EA5C0
+          _ZTVSd__St9strstream: 0xC5D326CB
+          _ZTVSi: 0xB02CB03C
+          _ZTVSiSd__St9strstream: 0xF4400A94
+          _ZTVSi__Sd: 0xF2A1132D
+          _ZTVSi__St10istrstream: 0xDFF04427
+          _ZTVSo: 0xD430E6D2
+          _ZTVSoSd__St9strstream: 0x3CAA5F50
+          _ZTVSo__Sd: 0x6D6BCA93
+          _ZTVSo__Sd__St9strstream: 0xBA833AE3
+          _ZTVSo__St10ostrstream: 0x65069CB5
+          _ZTVSt10bad_typeid: 0x76BDD7CC
+          _ZTVSt10istrstream: 0xFBACB296
+          _ZTVSt10ostrstream: 0xA81AD21D
+          _ZTVSt11logic_error: 0x82A84E5E
+          _ZTVSt11range_error: 0x1D583475
+          _ZTVSt12domain_error: 0x80C77E16
+          _ZTVSt12length_error: 0x064ADA35
+          _ZTVSt12out_of_range: 0xDDAE7CBE
+          _ZTVSt12strstreambuf: 0x11B2781A
+          _ZTVSt13_codecvt_base: 0x75D16BD0
+          _ZTVSt13bad_exception: 0x4AA9C954
+          _ZTVSt13basic_filebufIcSt11char_traitsIcEE: 0xC3233C50
+          _ZTVSt13basic_filebufIwSt11char_traitsIwEE: 0xF269A8EB
+          _ZTVSt13basic_istreamIwSt11char_traitsIwEE: 0xB952752B
+          _ZTVSt13basic_ostreamIwSt11char_traitsIwEE: 0x48F3405B
+          _ZTVSt13runtime_error: 0x53F02A18
+          _ZTVSt14overflow_error: 0x177FCCDC
+          _ZTVSt15basic_streambufIcSt11char_traitsIcEE: 0x05548FF7
+          _ZTVSt15basic_streambufIwSt11char_traitsIwEE: 0xE8A9F32E
+          _ZTVSt15underflow_error: 0x515AE097
+          _ZTVSt16invalid_argument: 0x23EEDAF0
+          _ZTVSt6_ctypeIcE: 0x214E1395
+          _ZTVSt6_ctypeIwE: 0x798E7C29
+          _ZTVSt8_codecvtIccSt9_MbstatetE: 0x9B3E5D29
+          _ZTVSt8_codecvtIwcSt9_MbstatetE: 0x95405266
+          _ZTVSt8bad_cast: 0xAA09FD32
+          _ZTVSt8ios_base: 0xD58C5F52
+          _ZTVSt9bad_alloc: 0xA27EFBA3
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE: 0x147996ED
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__Sd__St9strstream: 0x0DE4AFE9
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__SiSd__St9strstream: 0x87D18300
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__Si__Sd: 0x3D6A38D3
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__Si__St10istrstream: 0xA8E795AF
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__SoSd__St9strstream: 0xB7CD4C0E
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__So__Sd: 0x21FDA8D0
+          _ZTVSt9basic_iosIcSt11char_traitsIcEE__So__St10ostrstream: 0xA8AAEABA
+          _ZTVSt9basic_iosIwSt11char_traitsIwEE: 0xCC03F184
+          _ZTVSt9exception: 0xBC97F7D6
+          _ZTVSt9strstream: 0xFD21E1F1
+          _ZTVSt9type_info: 0x8E9879A7
+          _ZZNSt13basic_filebufIcSt11char_traitsIcEE5_InitEPSt10_Dnk_filetNS2_7_InitflEE7_Stinit: 0xE63750C1
+          _ZZNSt13basic_filebufIwSt11char_traitsIwEE5_InitEPSt10_Dnk_filetNS2_7_InitflEE7_Stinit: 0x1D4E29BC
+          _ZTIN10__cxxabiv116__enum_type_infoE: 0x08A37475
+          _ZTIN10__cxxabiv117__array_type_infoE: 0x66CC7DBB
+          _ZTIN10__cxxabiv117__class_type_infoE: 0x81C44513
+          _ZTIN10__cxxabiv117__pbase_type_infoE: 0xC35024DA
+          _ZTIN10__cxxabiv119__pointer_type_infoE: 0x835E9E78
+          _ZTIN10__cxxabiv120__function_type_infoE: 0x62941235
+          _ZTIN10__cxxabiv120__si_class_type_infoE: 0x461E17F0
+          _ZTIN10__cxxabiv121__vmi_class_type_infoE: 0xB80BFF06
+          _ZTIN10__cxxabiv123__fundamental_type_infoE: 0x7373F517
+          _ZTIN10__cxxabiv129__pointer_to_member_type_infoE: 0xDF23E7B5
+          _ZTSN10__cxxabiv116__enum_type_infoE: 0x74F19FF2
+          _ZTSN10__cxxabiv117__array_type_infoE: 0x9BF7C72D
+          _ZTSN10__cxxabiv117__class_type_infoE: 0xCB5063F1
+          _ZTSN10__cxxabiv117__pbase_type_infoE: 0x4F5C24A6
+          _ZTSN10__cxxabiv119__pointer_type_infoE: 0x832019EE
+          _ZTSN10__cxxabiv120__function_type_infoE: 0xFB8956D8
+          _ZTSN10__cxxabiv120__si_class_type_infoE: 0xEAC164EC
+          _ZTSN10__cxxabiv121__vmi_class_type_infoE: 0x4106109E
+          _ZTSN10__cxxabiv123__fundamental_type_infoE: 0x1FD93E3A
+          _ZTSN10__cxxabiv129__pointer_to_member_type_infoE: 0xB64B4F55
+          _ZTVN10__cxxabiv116__enum_type_infoE: 0x4937B673
+          _ZTVN10__cxxabiv117__array_type_infoE: 0x9383FBD6
+          _ZTVN10__cxxabiv117__class_type_infoE: 0xF79AE8E1
+          _ZTVN10__cxxabiv117__pbase_type_infoE: 0xFEAD4BDA
+          _ZTVN10__cxxabiv119__pointer_type_infoE: 0xAA57484D
+          _ZTVN10__cxxabiv120__function_type_infoE: 0x897B54E3
+          _ZTVN10__cxxabiv120__si_class_type_infoE: 0x6BC74629
+          _ZTVN10__cxxabiv121__vmi_class_type_infoE: 0x7321E731
+          _ZTVN10__cxxabiv123__fundamental_type_infoE: 0x33836375
+          _ZTVN10__cxxabiv129__pointer_to_member_type_infoE: 0x94664DEB
+          _ZNSt12placeholders2_1E: 0xCD4933D7
+          _ZNSt12placeholders2_2E: 0x1C7BAB93
+          _ZNSt12placeholders2_3E: 0x3EB20633
+          _ZNSt12placeholders2_4E: 0xC46E8116
+          _ZNSt12placeholders2_5E: 0x84D75483
+          _ZNSt12placeholders2_6E: 0x9E06C1BC
+          _ZNSt12placeholders2_7E: 0xC108BE10
+          _ZNSt12placeholders2_8E: 0xF232B209
+          _ZNSt12placeholders2_9E: 0x4FF7E17E
+          _ZNSt12placeholders3_10E: 0x73D63A20
+          _ZNSt12placeholders3_11E: 0xC7C2CE2E
+          _ZNSt12placeholders3_12E: 0xFB4CB18D
+          _ZNSt12placeholders3_13E: 0xD396FA35
+          _ZNSt12placeholders3_14E: 0xF692AA7D
+          _ZNSt12placeholders3_15E: 0x93D2B037
+          _ZNSt12placeholders3_16E: 0xDA030A11
+          _ZNSt12placeholders3_17E: 0xE5698D34
+          _ZNSt12placeholders3_18E: 0x91AAD547
+          _ZNSt12placeholders3_19E: 0xEA637731
+          _ZNSt12placeholders3_20E: 0xF1B1C3A2
+          _ZNSt13_Regex_traitsIcE6_NamesE: 0xBF77911F
+          _ZNSt13_Regex_traitsIwE6_NamesE: 0xA3DF9F3E
+          _ZTIDn: 0x64F462B0
+          _ZTIPDn: 0x80261886
+          _ZTIPKDn: 0x4D15688B
+          _ZTIDi: 0xA0CA95FC
+          _ZTIPDi: 0x35384D44
+          _ZTIPKDi: 0x07F0CEFA
+          _ZTSDi: 0x944E1DB2
+          _ZTSPDi: 0x83BE7060
+          _ZTSPKDi: 0x917FFD0B
+          _ZTIDs: 0xB432539C
+          _ZTIPDs: 0x03241952
+          _ZTIPKDs: 0x6D85F826
+          _ZTSDs: 0x7376ACB6
+          _ZTSPDs: 0xA94C2037
+          _ZTSPKDs: 0xEF3976BF
+          _ZTISt12bad_weak_ptr: 0x09868C1A
+          _ZTISt17bad_function_call: 0xDE6A4555
+          _ZTISt12future_error: 0xC2EE6AE7
+          _ZTISt11regex_error: 0xF4085A57
+          _ZTISt12system_error: 0x96DCC7A6
+          _ZTVSt12system_error: 0x5F5AEBC5
+          _ZTVSt12bad_weak_ptr: 0xD2EA5FFC
+          _ZTVSt17bad_function_call: 0xA696AC3E
+          _ZTVSt12future_error: 0x84AC8256
+          _ZTVSt11regex_error: 0x7ACD1239
+          _ZTISt20bad_array_new_length: 0xAFF3BC67
+          _ZTVSt20bad_array_new_length: 0x59160432
+          _ZTISt16nested_exception: 0xCE110428
+          _ZTSSt16nested_exception: 0x9D1CBC1D
+          _ZTVSt16nested_exception: 0xD7BE6282
+  SceLibJson:
+    nid: 0x7C9C6D58
+    libraries:
+      SceLibJson:
+        kernel: false
+        nid: 0x0854B69C
+        functions:
+          _ZN3sce4Json11Initializer10initializeEPKNS0_13InitParameterE: 0xA3EA44E9
+          _ZN3sce4Json11Initializer24setAllocatorInfoCallBackEPFviNS0_9ValueTypeEPvES3_: 0xABA14718
+          _ZN3sce4Json11Initializer9terminateEv: 0x30AD8C6A
+          _ZN3sce4Json11InitializerC1Ev: 0x5405EE04
+          _ZN3sce4Json11InitializerC2Ev: 0x7ECFC5DE
+          _ZN3sce4Json11InitializerD1Ev: 0xA19AA8B4
+          _ZN3sce4Json11InitializerD2Ev: 0xCBA596D3
+          _ZN3sce4Json12MemAllocator11notifyErrorEijPv: 0x38C51D0C
+          _ZN3sce4Json12MemAllocatorC1Ev: 0x2F9610D7
+          _ZN3sce4Json12MemAllocatorC2Ev: 0x5EC4F6CB
+          _ZN3sce4Json12MemAllocatorD0Ev: 0x71AA3947
+          _ZN3sce4Json12MemAllocatorD1Ev: 0x1666CAFA
+          _ZN3sce4Json12MemAllocatorD2Ev: 0x47A56DF5
+          _ZN3sce4Json5Array5clearEv: 0x102FE221
+          _ZN3sce4Json5Array5eraseERKNS1_8iteratorE: 0xF9BE5DF7
+          _ZN3sce4Json5Array6insertERKNS1_8iteratorERKNS0_5ValueE: 0xCA3426FF
+          _ZN3sce4Json5Array8iterator7advanceEj: 0x6E9F5468
+          _ZN3sce4Json5Array8iteratoraSERKS2_: 0x20E1D03F
+          _ZN3sce4Json5Array8iteratorC1Ev: 0x21974253
+          _ZN3sce4Json5Array8iteratorC1ERKS2_: 0xF471D774
+          _ZN3sce4Json5Array8iteratorC2Ev: 0x2BA3DFE6
+          _ZN3sce4Json5Array8iteratorC2ERKS2_: 0x8F200495
+          _ZN3sce4Json5Array8iteratorD1Ev: 0x866C0131
+          _ZN3sce4Json5Array8iteratorD2Ev: 0x25A5F935
+          _ZN3sce4Json5Array8iteratorppEi: 0x883F0120
+          _ZN3sce4Json5Array8iteratorppEv: 0x24413A1E
+          _ZN3sce4Json5Array8pop_backEv: 0x99422AB5
+          _ZN3sce4Json5Array9push_backERKNS0_5ValueE: 0x21AE1E00
+          _ZN3sce4Json5ArrayaSERKS1_: 0xBFE9F993
+          _ZN3sce4Json5ArrayC1ERKS1_: 0xA1131B26
+          _ZN3sce4Json5ArrayC1Ev: 0x8090B2D1
+          _ZN3sce4Json5ArrayC2ERKS1_: 0x4CAF859A
+          _ZN3sce4Json5ArrayC2Ev: 0x871FE141
+          _ZN3sce4Json5ArrayD1Ev: 0xAA0C1A25
+          _ZN3sce4Json5ArrayD2Ev: 0xF4C27A09
+          _ZN3sce4Json5Value10referArrayEv: 0xCC68D950
+          _ZN3sce4Json5Value10referValueEj: 0x8A817B50
+          _ZN3sce4Json5Value10referValueERKNS0_6StringE: 0x97ABD9CF
+          _ZN3sce4Json5Value11referObjectEv: 0xB1556E63
+          _ZN3sce4Json5Value11referStringEv: 0xE2B03959
+          _ZN3sce4Json5Value12referBooleanEv: 0xF7F9550C
+          _ZN3sce4Json5Value12referIntegerEv: 0x9F0BD96B
+          _ZN3sce4Json5Value13referUIntegerEv: 0xD1C592D6
+          _ZN3sce4Json5Value21setNullAccessCallBackEPFRKS1_NS0_9ValueTypeEPS2_PvES6_: 0x349F2D89
+          _ZN3sce4Json5Value3setEb: 0xAA76F905
+          _ZN3sce4Json5Value3setEd: 0x870C0A3D
+          _ZN3sce4Json5Value3setENS0_9ValueTypeE: 0x925E89F8
+          _ZN3sce4Json5Value3setERKNS0_5ArrayE: 0x49389A02
+          _ZN3sce4Json5Value3setERKNS0_6ObjectE: 0x8725FD85
+          _ZN3sce4Json5Value3setERKNS0_6StringE: 0x2923CA00
+          _ZN3sce4Json5Value3setERKS1_: 0xA25972A1
+          _ZN3sce4Json5Value3setEy: 0xCB972985
+          _ZN3sce4Json5Value3setEx: 0x5423BA15
+          _ZN3sce4Json5Value4swapERS1_: 0xAD14CD26
+          _ZN3sce4Json5Value5clearEv: 0xC9813AC7
+          _ZN3sce4Json5Value9serializeERNS0_6StringE: 0xCFC4D75F
+          _ZN3sce4Json5Value9serializeERNS0_6StringEPFiS3_PvES4_: 0xBB3A0C22
+          _ZN3sce4Json5Value9referRealEv: 0xB33FF9D6
+          _ZN3sce4Json5ValueaSERKS1_: 0x705ED2BB
+          _ZN3sce4Json5ValueC1Eb: 0x7A6FE666
+          _ZN3sce4Json5ValueC1Ed: 0xAD01DFC1
+          _ZN3sce4Json5ValueC1ENS0_9ValueTypeE: 0xB7D13E29
+          _ZN3sce4Json5ValueC1ERKNS0_5ArrayE: 0x0E917571
+          _ZN3sce4Json5ValueC1ERKNS0_6ObjectE: 0xE1DFAB01
+          _ZN3sce4Json5ValueC1ERKNS0_6StringE: 0xB7582884
+          _ZN3sce4Json5ValueC1ERKS1_: 0xCC201CD2
+          _ZN3sce4Json5ValueC1Ev: 0x7A9DECC0
+          _ZN3sce4Json5ValueC1Ey: 0xF785608C
+          _ZN3sce4Json5ValueC1Ex: 0x1B23D989
+          _ZN3sce4Json5ValueC2Eb: 0xB9AA1D08
+          _ZN3sce4Json5ValueC2Ed: 0x33A75C2B
+          _ZN3sce4Json5ValueC2ENS0_9ValueTypeE: 0x471A687D
+          _ZN3sce4Json5ValueC2ERKNS0_5ArrayE: 0xBCBE2CD9
+          _ZN3sce4Json5ValueC2ERKNS0_6ObjectE: 0x13FD685F
+          _ZN3sce4Json5ValueC2ERKNS0_6StringE: 0x58C4E096
+          _ZN3sce4Json5ValueC2ERKS1_: 0x2C83C840
+          _ZN3sce4Json5ValueC2Ev: 0x87A356B9
+          _ZN3sce4Json5ValueC2Ey: 0x22B3F3F1
+          _ZN3sce4Json5ValueC2Ex: 0x6304C0BE
+          _ZN3sce4Json5ValueD1Ev: 0xE07648EC
+          _ZN3sce4Json5ValueD2Ev: 0xAE2322F7
+          _ZN3sce4Json6Object4PairC1ERKNS0_6StringERKNS0_5ValueE: 0x5C6A0FAA
+          _ZN3sce4Json6Object4PairC1Ev: 0xA912F22B
+          _ZN3sce4Json6Object4PairC2ERKNS0_6StringERKNS0_5ValueE: 0x5001AC95
+          _ZN3sce4Json6Object4PairC2Ev: 0x51BE3283
+          _ZN3sce4Json6Object4PairD1Ev: 0xB91E619A
+          _ZN3sce4Json6Object4PairD2Ev: 0x50EF2E1C
+          _ZN3sce4Json6Object5clearEv: 0xE0C9D64E
+          _ZN3sce4Json6Object5eraseERKNS0_6StringE: 0xBDFAC9E3
+          _ZN3sce4Json6Object6insertERKNS1_4PairE: 0x5EBE53AB
+          _ZN3sce4Json6Object8iterator7advanceEj: 0xF4E33C1B
+          _ZN3sce4Json6Object8iteratoraSERKS2_: 0x52D081C4
+          _ZN3sce4Json6Object8iteratorC1ERKS2_: 0xE9B2D4AB
+          _ZN3sce4Json6Object8iteratorC1Ev: 0x2E89608C
+          _ZN3sce4Json6Object8iteratorC2ERKS2_: 0x0EC42227
+          _ZN3sce4Json6Object8iteratorC2Ev: 0x02A3CFE2
+          _ZN3sce4Json6Object8iteratorD1Ev: 0x2A47D045
+          _ZN3sce4Json6Object8iteratorD2Ev: 0x6708662C
+          _ZN3sce4Json6Object8iteratorppEi: 0xD48C8891
+          _ZN3sce4Json6Object8iteratorppEv: 0xAEC3AD59
+          _ZN3sce4Json6ObjectaSERKS1_: 0x63E9610C
+          _ZN3sce4Json6ObjectC1Ev: 0xB669382C
+          _ZN3sce4Json6ObjectC1ERKS1_: 0xD7070313
+          _ZN3sce4Json6ObjectC2Ev: 0x5F9DB320
+          _ZN3sce4Json6ObjectC2ERKS1_: 0x3AD421A0
+          _ZN3sce4Json6ObjectD1Ev: 0x3CF6AF04
+          _ZN3sce4Json6ObjectD2Ev: 0xDB941A5D
+          _ZN3sce4Json6ObjectixERKNS0_6StringE: 0x8F2E1720
+          _ZN3sce4Json6Parser5parseERNS0_5ValueEPFiRcPvES5_: 0xDD6F3526
+          _ZN3sce4Json6Parser5parseERNS0_5ValueEPKc: 0x0E4211FC
+          _ZN3sce4Json6Parser5parseERNS0_5ValueEPKcj: 0x59B1A5B8
+          _ZN3sce4Json6String4nposE: 0x9EE190ED
+          _ZN3sce4Json6String5clearEv: 0x617479FB
+          _ZN3sce4Json6String6appendEPKc: 0x4DBF6086
+          _ZN3sce4Json6String6appendEPKcj: 0xECE95143
+          _ZN3sce4Json6String6appendERKS1_: 0x0700528F
+          _ZN3sce4Json6String6resizeEj: 0x7055787A
+          _ZN3sce4Json6StringaSERKS1_: 0xC3D22030
+          _ZN3sce4Json6StringC1EPKc: 0x70703FC7
+          _ZN3sce4Json6StringC1ERKS1_: 0x40C6576A
+          _ZN3sce4Json6StringC1Ev: 0x692125B6
+          _ZN3sce4Json6StringC2EPKc: 0x1666DA2C
+          _ZN3sce4Json6StringC2ERKS1_: 0x0E0AA31C
+          _ZN3sce4Json6StringC2Ev: 0xFEAB587D
+          _ZN3sce4Json6StringD1Ev: 0xB70F12A8
+          _ZN3sce4Json6StringD2Ev: 0xB039FD7A
+          _ZN3sce4Json6StringpLEh: 0x895CAEBF
+          _ZN3sce4Json6StringpLEPKc: 0xED322AC3
+          _ZNK3sce4Json5Array3endEv: 0x0F533297
+          _ZNK3sce4Json5Array4backEv: 0xAF380743
+          _ZNK3sce4Json5Array4sizeEv: 0x9DC07B95
+          _ZNK3sce4Json5Array5beginEv: 0x82074D93
+          _ZNK3sce4Json5Array5emptyEv: 0x7E275CE0
+          _ZNK3sce4Json5Array8iteratorneES2_: 0x5467A38D
+          _ZNK3sce4Json5Array8iteratordeEv: 0x81EF83DC
+          _ZNK3sce4Json5Array8iteratorptEv: 0x33BE3C5D
+          _ZNK3sce4Json5Value10getBooleanEv: 0x7DDFCAE2
+          _ZNK3sce4Json5Value10getIntegerEv: 0x6861C3CC
+          _ZNK3sce4Json5Value11getUIntegerEv: 0x35EAAEDA
+          _ZNK3sce4Json5Value5countEv: 0xF14E07A2
+          _ZNK3sce4Json5Value7getRealEv: 0xFC0C699A
+          _ZNK3sce4Json5Value7getRootEv: 0x691BE883
+          _ZNK3sce4Json5Value7getTypeEv: 0xA95EF0EC
+          _ZNK3sce4Json5Value8getArrayEv: 0x000926DB
+          _ZNK3sce4Json5Value8toStringERNS0_6StringE: 0x39748AF8
+          _ZNK3sce4Json5Value8getValueEj: 0xC1FE4E8D
+          _ZNK3sce4Json5Value8getValueERKNS0_6StringE: 0xAA94ACDD
+          _ZNK3sce4Json5Value9getObjectEv: 0xF793E30D
+          _ZNK3sce4Json5Value9getStringEv: 0xBC3391BE
+          _ZNK3sce4Json5ValuecvbEv: 0xA5B36078
+          _ZNK3sce4Json5ValueixEj: 0x3CE5DEC7
+          _ZNK3sce4Json5ValueixEPKc: 0xD5B3E509
+          _ZNK3sce4Json5ValueixERKNS0_6StringE: 0x910E18C0
+          _ZNK3sce4Json6Object3endEv: 0xCB50C919
+          _ZNK3sce4Json6Object4findERKNS0_6StringE: 0x396D0910
+          _ZNK3sce4Json6Object4sizeEv: 0x5630DAD9
+          _ZNK3sce4Json6Object5beginEv: 0x192FE2BF
+          _ZNK3sce4Json6Object5emptyEv: 0x168162C2
+          _ZNK3sce4Json6Object8iteratordeEv: 0x0D832C40
+          _ZNK3sce4Json6Object8iteratoreqES2_: 0xAD643D14
+          _ZNK3sce4Json6Object8iteratorneES2_: 0x7B74D109
+          _ZNK3sce4Json6Object8iteratorptEv: 0x8FA78056
+          _ZNK3sce4Json6String2atEj: 0x5B667A69
+          _ZNK3sce4Json6String4findEcj: 0x28991492
+          _ZNK3sce4Json6String4findEPKcj: 0x469FDB89
+          _ZNK3sce4Json6String4findEPKcjj: 0x20C5C51E
+          _ZNK3sce4Json6String4findERKS1_j: 0xBC59E809
+          _ZNK3sce4Json6String4sizeEv: 0xA15F63C1
+          _ZNK3sce4Json6String5c_strEv: 0x327D74CE
+          _ZNK3sce4Json6String5emptyEv: 0xAE9ECB11
+          _ZNK3sce4Json6String5rfindEcj: 0x190B0BDA
+          _ZNK3sce4Json6String5rfindEPKcj: 0x01440503
+          _ZNK3sce4Json6String5rfindEPKcjj: 0x6A0DB914
+          _ZNK3sce4Json6String5rfindERKS1_j: 0x11F2CB3E
+          _ZNK3sce4Json6String6lengthEv: 0x35F974C1
+          _ZNK3sce4Json6String6substrEjj: 0xF2F81B2D
+          _ZNK3sce4Json6String7compareEPKc: 0x267A86A3
+          _ZNK3sce4Json6String7compareERKS1_: 0x55241DBB
+          _ZNK3sce4Json6StringeqEPKc: 0x5B665588
+          _ZNK3sce4Json6StringeqERKS1_: 0xCCCD4BA9
+  SceLibXml:
+    nid: 0x1ECD1248
+    libraries:
+      SceLibXml:
+        kernel: false
+        nid: 0xC2B22E99
+        functions:
+          _ZN3sce3Xml10SimpleDataC1EPKcj: 0x57400A1A
+          _ZN3sce3Xml10SimpleDataC1Ev: 0x7E582075
+          _ZN3sce3Xml10SimpleDataC2EPKcj: 0x4CF0656B
+          _ZN3sce3Xml10SimpleDataC2Ev: 0x95077028
+          _ZN3sce3Xml11Initializer10initializeEPKNS0_13InitParameterE: 0xECFA6A2A
+          _ZN3sce3Xml11Initializer9terminateEv: 0x29824CD5
+          _ZN3sce3Xml11InitializerC1Ev: 0xBF13FDE6
+          _ZN3sce3Xml11InitializerC2Ev: 0x94AAA71D
+          _ZN3sce3Xml11InitializerD1Ev: 0xB4547C88
+          _ZN3sce3Xml11InitializerD2Ev: 0xAAA08FA8
+          _ZN3sce3Xml12MemAllocatorC1Ev: 0x8D387E01
+          _ZN3sce3Xml12MemAllocatorC2Ev: 0xE982E681
+          _ZN3sce3Xml12MemAllocatorD0Ev: 0x90B82579
+          _ZN3sce3Xml12MemAllocatorD1Ev: 0x56002B9D
+          _ZN3sce3Xml12MemAllocatorD2Ev: 0x1BE022EA
+          _ZN3sce3Xml13AttributeList10initializeEPKNS0_11InitializerE: 0x89AA847E
+          _ZN3sce3Xml13AttributeList12addAttributeEPKNS0_6StringES4_: 0xD08EE434
+          _ZN3sce3Xml13AttributeList5clearEv: 0xCCEE4E7C
+          _ZN3sce3Xml13AttributeList9terminateEv: 0x11FE5A65
+          _ZN3sce3Xml13AttributeListC1ERKS1_: 0x9CBD82D4
+          _ZN3sce3Xml13AttributeListC1Ev: 0x542076D8
+          _ZN3sce3Xml13AttributeListC2ERKS1_: 0x87C89447
+          _ZN3sce3Xml13AttributeListC2Ev: 0x5D49542A
+          _ZN3sce3Xml13AttributeListD1Ev: 0x38861841
+          _ZN3sce3Xml13AttributeListD2Ev: 0x1B0B3976
+          _ZN3sce3Xml14VarAllocBuffer4copyEPKhjb: 0x30520B78
+          _ZN3sce3Xml14VarAllocBuffer5clearEv: 0x7D5A0041
+          _ZN3sce3Xml14VarAllocBuffer7copyStrEPKcj: 0xD95D3824
+          _ZN3sce3Xml14VarAllocBuffer7copyStrERKNS0_6StringE: 0xFE99676E
+          _ZN3sce3Xml14VarAllocBuffer7reserveEj: 0x82747F92
+          _ZN3sce3Xml14VarAllocBuffer9terminateEv: 0xE93EACFC
+          _ZN3sce3Xml14VarAllocBufferC1EPKNS0_11InitializerE: 0x8045D9C2
+          _ZN3sce3Xml14VarAllocBufferC2EPKNS0_11InitializerE: 0xEF4FA027
+          _ZN3sce3Xml14VarAllocBufferD0Ev: 0xD61CAAFC
+          _ZN3sce3Xml14VarAllocBufferD1Ev: 0xD9217FC8
+          _ZN3sce3Xml14VarAllocBufferD2Ev: 0x8A4B9379
+          _ZN3sce3Xml18SerializeParameterC1Ev: 0xB7770E5E
+          _ZN3sce3Xml18SerializeParameterC2Ev: 0xF65270FC
+          _ZN3sce3Xml20bXResultToResultTypeEi: 0x2CB61A7C
+          _ZN3sce3Xml23getMemManagerDebugLevelEv: 0x59C5E9B2
+          _ZN3sce3Xml23setMemManagerDebugLevelEi: 0xBA8B7374
+          _ZN3sce3Xml3Dom15DocumentBuilder10initializeEPKNS0_11InitializerE: 0xBBACFE87
+          _ZN3sce3Xml3Dom15DocumentBuilder11getDocumentEv: 0x1A29526B
+          _ZN3sce3Xml3Dom15DocumentBuilder16setResolveEntityEb: 0xA2431C2B
+          _ZN3sce3Xml3Dom15DocumentBuilder20setSkipIgnorableTextEb: 0xB8C4D13C
+          _ZN3sce3Xml3Dom15DocumentBuilder26setSkipIgnorableWhiteSpaceEb: 0xF351D753
+          _ZN3sce3Xml3Dom15DocumentBuilder5parseEPKNS0_6StringEb: 0x7744DD14
+          _ZN3sce3Xml3Dom15DocumentBuilder9terminateEv: 0x42D59053
+          _ZN3sce3Xml3Dom15DocumentBuilderC1Ev: 0x702492EA
+          _ZN3sce3Xml3Dom15DocumentBuilderC2Ev: 0x36F6BDF2
+          _ZN3sce3Xml3Dom15DocumentBuilderD1Ev: 0x19D0E024
+          _ZN3sce3Xml3Dom15DocumentBuilderD2Ev: 0x99C58389
+          _ZN3sce3Xml3Dom4Node11removeChildEy: 0x3CA958D3
+          _ZN3sce3Xml3Dom4Node12insertBeforeEyy: 0x1B98BDBE
+          _ZNK3sce3Xml3Dom4Node13hasAttributesEv: 0x26BA1E6E
+          _ZNK3sce3Xml3Dom4Node13hasChildNodesEv: 0x6C1913E9
+          _ZN3sce3Xml3Dom4NodeC1Ey: 0x088C100E
+          _ZN3sce3Xml3Dom4NodeC2Ey: 0x44CAF9E1
+          _ZN3sce3Xml3Dom4NodeD1Ev: 0x8F2EB967
+          _ZN3sce3Xml3Dom4NodeD2Ev: 0x241EFC0E
+          _ZN3sce3Xml3Dom8Document10importNodeEyyPKS2_y: 0x6A16C2FF
+          _ZN3sce3Xml3Dom8Document10initializeEPKNS0_11InitializerE: 0xB4A33B78
+          _ZN3sce3Xml3Dom8Document10insertNodeEyyy: 0x18686B94
+          _ZN3sce3Xml3Dom8Document11removeChildEyy: 0x49263CE5
+          _ZN3sce3Xml3Dom8Document11resetStatusEv: 0xD945184A
+          _ZN3sce3Xml3Dom8Document11setWritableEv: 0x7B0A8F6C
+          _ZN3sce3Xml3Dom8Document12importParentEPKS2_y: 0x0CBC1C3F
+          _ZN3sce3Xml3Dom8Document12setAttrValueEyPKNS0_6StringES5_: 0x016A9ADB
+          _ZN3sce3Xml3Dom8Document12setAttributeEyPKNS0_6StringES5_: 0xEA19C7CF
+          _ZN3sce3Xml3Dom8Document13createElementEPKNS0_6StringEPKNS0_13AttributeListES5_: 0x35C50B8B
+          _ZN3sce3Xml3Dom8Document13recurseDeleteEy: 0xBCA5E62A
+          _ZN3sce3Xml3Dom8Document14createTextNodeEPKNS0_6StringE: 0x8D19723F
+          _ZN3sce3Xml3Dom8Document15addElementChildEyPKNS0_6StringEPKNS0_13AttributeListES5_: 0x6220E98B
+          _ZN3sce3Xml3Dom8Document15removeAttributeEyPKNS0_6StringE: 0xF1DB18B1
+          _ZN3sce3Xml3Dom8Document16removeAttributesEy: 0x779036AB
+          _ZN3sce3Xml3Dom8Document16setAttributeListEyPKNS0_13AttributeListE: 0x0667B08D
+          _ZNK3sce3Xml3Dom8Document20getElementsByTagNameEyPKNS0_6StringEPNS1_8NodeListE: 0xD2BFBC47
+          _ZN3sce3Xml3Dom8Document7setTextEyPKNS0_6StringE: 0xDEFEAFD2
+          _ZN3sce3Xml3Dom8Document9serializeEPKNS0_18SerializeParameterEPNS0_6StringE: 0x87F8B4DA
+          _ZN3sce3Xml3Dom8Document9terminateEv: 0x4B7321FB
+          _ZN3sce3Xml3Dom8DocumentC1ERKS2_: 0x1DD41C7A
+          _ZN3sce3Xml3Dom8DocumentC1Ev: 0x7B7107AD
+          _ZN3sce3Xml3Dom8DocumentC2ERKS2_: 0xF399F763
+          _ZN3sce3Xml3Dom8DocumentC2Ev: 0xE6BA9C73
+          _ZN3sce3Xml3Dom8DocumentD1Ev: 0xFB207925
+          _ZN3sce3Xml3Dom8DocumentD2Ev: 0x11A5F0A3
+          _ZN3sce3Xml3Dom8DocumentaSERKS2_: 0xD622A7FE
+          _ZN3sce3Xml3Dom8NodeList10initializeEPKNS0_11InitializerE: 0x860CC706
+          _ZN3sce3Xml3Dom8NodeList10insertLastEy: 0x7A889374
+          _ZN3sce3Xml3Dom8NodeList10removeItemEy: 0xE9995F58
+          _ZN3sce3Xml3Dom8NodeList11insertFirstEy: 0xFA921C6E
+          _ZNK3sce3Xml3Dom8NodeList4itemEj: 0xCDD1D418
+          _ZN3sce3Xml3Dom8NodeList5clearEv: 0x508E9150
+          _ZNK3sce3Xml3Dom8NodeList8findItemEPKNS0_6StringE: 0xA41ED241
+          _ZNK3sce3Xml3Dom8NodeList8findItemEy: 0xE1AB441D
+          _ZNK3sce3Xml3Dom8NodeList9getLengthEv: 0xFB9EDBF9
+          _ZN3sce3Xml3Dom8NodeList9terminateEv: 0x32B396AD
+          _ZN3sce3Xml3Dom8NodeListC1ERKS2_: 0xB1CA0E34
+          _ZN3sce3Xml3Dom8NodeListC1Ev: 0x0580C02E
+          _ZN3sce3Xml3Dom8NodeListC2ERKS2_: 0xB97BF737
+          _ZN3sce3Xml3Dom8NodeListC2Ev: 0x684E57B9
+          _ZN3sce3Xml3Dom8NodeListD1Ev: 0x92EBC9F8
+          _ZN3sce3Xml3Dom8NodeListD2Ev: 0x2DF80037
+          _ZNK3sce3Xml3Dom8NodeListixEj: 0xBAD4AAFA
+          _ZN3sce3Xml3Sax6Parser10initializeEPKNS0_11InitializerE: 0x874C8331
+          _ZN3sce3Xml3Sax6Parser11setUserDataEPv: 0x4DB998E6
+          _ZN3sce3Xml3Sax6Parser16setResolveEntityEb: 0xB77BF8A0
+          _ZN3sce3Xml3Sax6Parser18setDocumentHandlerEPNS1_15DocumentHandlerE: 0x1B2442A0
+          _ZN3sce3Xml3Sax6Parser26setSkipIgnorableWhiteSpaceEb: 0xCE1DAE23
+          _ZN3sce3Xml3Sax6Parser5parseEPKNS0_6StringEb: 0x70D9FC8E
+          _ZN3sce3Xml3Sax6Parser5resetEv: 0xA2B40FA7
+          _ZN3sce3Xml3Sax6Parser9terminateEv: 0xF2C8950D
+          _ZN3sce3Xml3Sax6ParserC1Ev: 0x60BF9988
+          _ZN3sce3Xml3Sax6ParserC2Ev: 0x56390CA0
+          _ZN3sce3Xml3Sax6ParserD1Ev: 0xA11C2AED
+          _ZN3sce3Xml3Sax6ParserD2Ev: 0x02E8F7FA
+          _ZN3sce3Xml4Attr10initializeEPKNS0_11InitializerE: 0xE5314387
+          _ZN3sce3Xml4Attr7setNameEPKNS0_6StringE: 0x66D1B605
+          _ZN3sce3Xml4Attr8setValueEPKNS0_6StringE: 0x7DD3059D
+          _ZN3sce3Xml4Attr9terminateEv: 0x67E0DF2B
+          _ZN3sce3Xml4AttrC1ERKS1_: 0xC09ABF87
+          _ZN3sce3Xml4AttrC1Ev: 0xD016F1BC
+          _ZN3sce3Xml4AttrC2ERKS1_: 0xB4851BEC
+          _ZN3sce3Xml4AttrC2Ev: 0x0B3AE81B
+          _ZN3sce3Xml4AttrD1Ev: 0x58E349A5
+          _ZN3sce3Xml4AttrD2Ev: 0xB9E6F81A
+          _ZN3sce3Xml4AttraSERKS1_: 0xA5B902D4
+          _ZN3sce3Xml4Util9strResultEi: 0xA7E983E2
+          _ZN3sce3Xml6StringC1EPKc: 0x035F013B
+          _ZN3sce3Xml6StringC1EPKcj: 0x0B5461E0
+          _ZN3sce3Xml6StringC1ERKS1_: 0x67191CC6
+          _ZN3sce3Xml6StringC1Ev: 0xA17502C1
+          _ZN3sce3Xml6StringC2EPKc: 0xECC1F1A4
+          _ZN3sce3Xml6StringC2EPKcj: 0x457CCE55
+          _ZN3sce3Xml6StringC2ERKS1_: 0xD785BA85
+          _ZN3sce3Xml6StringC2Ev: 0x8816F7EF
+          _ZN3sce3Xml6StringaSERKS1_: 0x18758863
+          _ZNK3sce3Xml13AttributeList12getAttributeEPKNS0_6StringE: 0x4F30F0CC
+          _ZNK3sce3Xml13AttributeList12getAttributeEj: 0x5ED0B2F9
+          _ZNK3sce3Xml13AttributeList9getLengthEv: 0x38AEB52E
+          _ZNK3sce3Xml3Dom13DocumentDebug13getStructSizeEv: 0xEC96BFC6
+          _ZNK3sce3Xml3Dom13DocumentDebug16getAttrTableSizeEv: 0xE1100FC0
+          _ZNK3sce3Xml3Dom13DocumentDebug16getCharTableSizeEv: 0x6E1F1FFB
+          _ZNK3sce3Xml3Dom13DocumentDebug19getElementTableSizeEv: 0x8F9CEE10
+          _ZNK3sce3Xml3Dom4Node11getNodeNameEv: 0xE1269956
+          _ZNK3sce3Xml3Dom4Node11getNodeTypeEv: 0xCED5E0FF
+          _ZNK3sce3Xml3Dom4Node12getNodeValueEv: 0x4F2D5541
+          _ZNK3sce3Xml3Dom4Node13getAttributesEv: 0xB405A149
+          _ZNK3sce3Xml3Dom4Node13getChildNodesEv: 0x117BEA8A
+          _ZNK3sce3Xml3Dom4Node13getFirstChildEv: 0x639D219C
+          _ZNK3sce3Xml3Dom4Node12getLastChildEv: 0x3FD63FB8
+          _ZNK3sce3Xml3Dom4Node14getNextSiblingEv: 0x1A46C0E1
+          _ZNK3sce3Xml3Dom4Node13getParentNodeEv: 0x9BD3722B
+          _ZNK3sce3Xml3Dom4Node16getOwnerDocumentEv: 0x3E8122AB
+          _ZN3sce3Xml3Dom4Node11appendChildEy: 0x243E6731
+          _ZNK3sce3Xml3Dom8Document10getDocRootEv: 0x22DBB221
+          _ZNK3sce3Xml3Dom8Document10getSiblingEy: 0xE3D0A78A
+          _ZNK3sce3Xml3Dom8Document10getXmlMetaEv: 0x2D370226
+          _ZNK3sce3Xml3Dom8Document10isReadOnlyEv: 0xA4D99D40
+          _ZNK3sce3Xml3Dom8Document11getAttrNameEy: 0xCD65B91F
+          _ZNK3sce3Xml3Dom8Document11getNextAttrEy: 0x883E1BFC
+          _ZNK3sce3Xml3Dom8Document11getNodeNameEy: 0x471A22E8
+          _ZNK3sce3Xml3Dom8Document11getNodeTypeEy: 0x62D3CB44
+          _ZNK3sce3Xml3Dom8Document11isAvailableEv: 0x28FD79E3
+          _ZNK3sce3Xml3Dom8Document12getAttrValueEy: 0x7C6A03FD
+          _ZNK3sce3Xml3Dom8Document12getAttributeEyPKNS0_6StringE: 0x9531C3CD
+          _ZNK3sce3Xml3Dom8Document12getFirstAttrEy: 0xEC856072
+          _ZNK3sce3Xml3Dom8Document12getLastChildEy: 0xFBCF0D3E
+          _ZNK3sce3Xml3Dom8Document13getAttributesEyPNS1_8NodeListE: 0xCDEC3F43
+          _ZNK3sce3Xml3Dom8Document13getChildNodesEyPNS1_8NodeListE: 0xFC61FDF1
+          _ZNK3sce3Xml3Dom8Document13getEntityTypeEy: 0xDAC75E49
+          _ZNK3sce3Xml3Dom8Document13hasAttributesEy: 0xEA805296
+          _ZNK3sce3Xml3Dom8Document13hasChildNodesEy: 0xC5E7431A
+          _ZNK3sce3Xml3Dom8Document14getSkippedTextEy: 0x0C1DDEC5
+          _ZNK3sce3Xml3Dom8Document7getRootEv: 0xB34D9672
+          _ZNK3sce3Xml3Dom8Document7getTextEy: 0x36ACFF5E
+          _ZNK3sce3Xml3Dom8Document13getFirstChildEy: 0x3028E05D
+          _ZNK3sce3Xml3Dom8Document9getEntityEy: 0x161BA85E
+          _ZNK3sce3Xml3Dom8Document9getParentEy: 0xA98B5758
+          _ZNK3sce3Xml3Dom8Document9getStatusEv: 0xD428753A
+          _ZNK3sce3Xml3Dom8NodeList11isAvailableEv: 0x10530611
+          _ZNK3sce3Xml4Attr7getNameEv: 0x35134B85
+          _ZNK3sce3Xml4Attr8getValueEv: 0x7834A2F7
+          _ZNK3sce3Xml3Dom4Node11isAvailableEv: 0x0D119AB3
+          _ZNK3sce3Xml4Attr11isAvailableEv: 0x1633846D
+          _ZNK3sce3Xml13AttributeList11isAvailableEv: 0x58854322
   SceLiveArea:
-    nid: 0x57
+    nid: 0x6D180EF6
     libraries:
       SceLiveAreaUtil:
+        kernel: false
+        nid: 0x5303CB07
         functions:
           sceLiveAreaGetFrameRevision: 0xD6EE2214
           sceLiveAreaGetFrameUserData: 0xD6FD367F
@@ -3396,12 +5298,12 @@ modules:
           sceLiveAreaReplaceAllSync: 0x29C65C0B
           sceLiveAreaUpdateFrameAsync: 0xD330285D
           sceLiveAreaUpdateFrameSync: 0xCFCEDE95
-        kernel: false
-        nid: 0x5303CB07
   SceLocation:
     nid: 0x59
     libraries:
       SceLibLocation:
+        kernel: false
+        nid: 0x924D86D7
         functions:
           sceLocationCancelGetLocation: 0x71503251
           sceLocationClose: 0x14FE76E8
@@ -3425,33 +5327,33 @@ modules:
           sceLocationStopHeadingCallback: 0x92E53F94
           sceLocationStopLocationCallback: 0xED378700
           sceLocationTerm: 0x1E80199A
-        kernel: false
-        nid: 0x924D86D7
   SceLocationExtension:
     nid: 0x5B
     libraries:
       SceLibLocationExtension:
+        kernel: false
+        nid: 0x2ECC3C56
         functions:
           sceLocationCancelQueryLocationWifiHistory: 0x46D2F044
           sceLocationGetLocationWifiHistory: 0x82DE9BF8
           sceLocationQueryLocationWifiHistory: 0x277DA915
-        kernel: false
-        nid: 0x2ECC3C56
   SceMd5:
     nid: 0x5D
     libraries:
       SceMd5:
+        kernel: false
+        nid: 0xF781B887
         functions:
           sceMd5BlockInit: 0x4D6436F9
           sceMd5BlockResult: 0xB94ABF83
           sceMd5BlockUpdate: 0x094A4902
           sceMd5Digest: 0xB845BCCB
-        kernel: false
-        nid: 0xF781B887
   SceMotion:
     nid: 0x5F
     libraries:
       SceMotion:
+        kernel: false
+        nid: 0xDC571B3F
         functions:
           sceMotionGetAngleThreshold: 0x499B6C87
           sceMotionGetBasicOrientation: 0x4F28BFE0
@@ -3472,29 +5374,29 @@ modules:
           sceMotionSetTiltCorrection: 0xAF09FCDB
           sceMotionStartSampling: 0x28034AC9
           sceMotionStopSampling: 0xAF32CB1D
-        kernel: false
-        nid: 0xDC571B3F
   SceMt19937:
     nid: 0x61
     libraries:
       SceMt19937:
+        kernel: false
+        nid: 0x2F4FAB93
         functions:
           sceMt19937Init: 0xEE5BA27C
           sceMt19937UInt: 0x29E43BB5
-        kernel: false
-        nid: 0x2F4FAB93
   SceMusicExport:
     nid: 0x6A89E620
     libraries:
       SceMusicExport:
-        functions:
-          sceMusicExportFromFile: 0x08000579
         kernel: false
         nid: 0xF2E30EED
+        functions:
+          sceMusicExportFromFile: 0x08000579
   SceNearDialogUtil:
     nid: 0x102F200B
     libraries:
       SceNearDialogUtil:
+        kernel: false
+        nid: 0x65408075
         functions:
           sceNearDialogAbort: 0x7790BDB4
           sceNearDialogGetResult: 0xD46E5257
@@ -3529,12 +5431,12 @@ modules:
           sceNearUtilityRefresh: 0x74E55A3B
           sceNearUtilitySetGift: 0x294693CB
           sceNearUtilitySetGift2: 0xDBEFB12E
-        kernel: false
-        nid: 0x65408075
   SceNearUtil:
     nid: 0xFE577596
     libraries:
       SceNearUtil:
+        kernel: false
+        nid: 0x560D1608
         functions:
           sceNearCloseDiscoveredGiftImage: 0x88A68D20
           sceNearCloseReceivedGiftData: 0x2F35C196
@@ -3565,12 +5467,12 @@ modules:
           sceNearRefresh: 0x2ED36EE2
           sceNearSetGift: 0x146BE236
           sceNearSetGift2: 0x4CCE6A14
-        kernel: false
-        nid: 0x560D1608
   SceNet:
     nid: 0x30BFE75C
     libraries:
       SceNet:
+        kernel: false
+        nid: 0x6BF8B2A2
         functions:
           sceNetAccept: 0x1ADF9BB1
           sceNetBind: 0x1296A94B
@@ -3630,8 +5532,6 @@ modules:
           sceNetSocketAbort: 0x891C1B9B
           sceNetSocketClose: 0x29822B4D
           sceNetTerm: 0xEA3CC286
-        kernel: false
-        nid: 0x6BF8B2A2
   SceNetPs:
     nid: 0x5A7BCCDA
     libraries:
@@ -3651,6 +5551,8 @@ modules:
     nid: 0xF2F9C205
     libraries:
       SceNetAdhocMatching:
+        kernel: false
+        nid: 0x00962A4A
         functions:
           sceNetAdhocMatchingAbortSendData: 0xFE77831E
           sceNetAdhocMatchingCancelTarget: 0x04FF010C
@@ -3666,12 +5568,12 @@ modules:
           sceNetAdhocMatchingStart: 0xF13E17BE
           sceNetAdhocMatchingStop: 0x63ABB632
           sceNetAdhocMatchingTerm: 0x6E195CD1
-        kernel: false
-        nid: 0x00962A4A
   SceNetCtl:
-    nid: 0x6D
+    nid: 0xFA4A5948
     libraries:
       SceNetCtl:
+        kernel: false
+        nid: 0xC6083AE1
         functions:
           sceNetCtlAdhocDisconnect: 0xED43B79A
           sceNetCtlAdhocGetInAddr: 0x7118C99D
@@ -3691,12 +5593,12 @@ modules:
           sceNetCtlInetUnregisterCallback: 0xD0C3BF3F
           sceNetCtlInit: 0x495CA1DB
           sceNetCtlTerm: 0xCD188648
-        kernel: false
-        nid: 0xC6083AE1
   SceNgs:
     nid: 0x90671548
     libraries:
       SceNgs:
+        kernel: false
+        nid: 0xB01598D9
         functions:
           sceNgsAT9GetSectionDetails: 0x2A9FA501
           sceNgsModuleGetNumPresets: 0x5C71FE09
@@ -3766,22 +5668,23 @@ modules:
           sceSulphaNgsSetVoiceName: 0x508975BD
           sceSulphaNgsShutdown: 0xD124BFB1
           sceSulphaNgsTrace: 0xDC7C0F05
-        kernel: false
-        nid: 0xB01598D9
   SceNpActivity:
     nid: 0x096735F5
     libraries:
       SceNpActivity:
-        functions:
-          sceNpActivityInit: 0xE0FFEE97
-          sceNpActivityPostStatus: 0xBC7FDC77
-          sceNpActivityTerm: 0x9EA4901F
         kernel: false
         nid: 0xFEF492ED
+        functions:
+          sceNpActivityInit: 0xE0FFEE97
+          sceNpActivityPostAppStartupStatus: 0x6BE90416
+          sceNpActivityPostStatus: 0xBC7FDC77
+          sceNpActivityTerm: 0x9EA4901F
   SceNpBasic:
     nid: 0x52A291CE
     libraries:
       SceNpBasic:
+        kernel: false
+        nid: 0x605BA760
         functions:
           sceNpBasicCheckCallback: 0x20146AEC
           sceNpBasicCheckIfPlayerIsBlocked: 0xF51545D8
@@ -3803,19 +5706,21 @@ modules:
           sceNpBasicJoinGameAckResponseSend: 0x8C90CC09
           sceNpBasicRecordPlaySessionLog: 0x3B0A7F47
           sceNpBasicRegisterHandler: 0x26E6E048
+          sceNpBasicRegisterInGameDataMessageHandler: 0x3ADE3628
           sceNpBasicRegisterJoinGameAckHandler: 0xE02A445C
           sceNpBasicSendInGameDataMessage: 0x7A5020A5
           sceNpBasicSetInGamePresence: 0x51D75562
           sceNpBasicTerm: 0x389BCB3B
           sceNpBasicUnregisterHandler: 0x050AE072
+          sceNpBasicUnregisterInGameDataMessageHandler: 0x363FF161
           sceNpBasicUnregisterJoinGameAckHandler: 0x2A764628
           sceNpBasicUnsetInGamePresence: 0xD20C2370
-        kernel: false
-        nid: 0x605BA760
   SceNpCommerce2:
     nid: 0x52126DD9
     libraries:
       SceNpCommerce2:
+        kernel: false
+        nid: 0x40120DC3
         functions:
           sceNpCommerce2AbortReq: 0xE7486A60
           sceNpCommerce2CreateCtx: 0x123E55F4
@@ -3859,12 +5764,12 @@ modules:
           sceNpCommerce2StartEmptyStoreCheck: 0x7132EAA5
           sceNpCommerce2StopEmptyStoreCheck: 0x84C336C6
           sceNpCommerce2Term: 0xB99958AE
-        kernel: false
-        nid: 0x40120DC3
   SceNpCommon:
     nid: 0x2F703603
     libraries:
       SceNpCommon:
+        kernel: false
+        nid: 0xECB62224
         functions:
           sceNpAuthAbortRequest: 0xE2582575
           sceNpAuthCreateStartRequest: 0xED42079F
@@ -3881,12 +5786,12 @@ modules:
           sceNpCmpOnlineId: 0x8327C26F
           sceNpGetPlatformType: 0xE9A003DE
           sceNpSetPlatformType: 0xE807D0BC
-        kernel: false
-        nid: 0xECB62224
   SceNpDrm:
     nid: 0xE7E2CE05
     libraries:
       SceNpDrmPackage:
+        kernel: false
+        nid: 0x88514DB2
         functions:
           _sceNpDrmPackageCheck: 0xA1D885FA
           _sceNpDrmPackageDecrypt: 0xD6F05ACC
@@ -3904,9 +5809,9 @@ modules:
           sceNpDrmPackageUninstallOngoing: 0xF1FF6193
           sceNpDrmSaveDataFormatOngoing: 0x200D2DE4
           sceNpDrmSaveDataInstallOngoing: 0xA5E0F38C
-        kernel: false
-        nid: 0x88514DB2
       SceNpDrm:
+        kernel: false
+        nid: 0xF2799B1B
         functions:
           _sceNpDrmCheckActData: 0xFEEBCD62
           _sceNpDrmCheckDrmReset: 0x4458812B
@@ -3916,9 +5821,9 @@ modules:
           _sceNpDrmGetRifNameForInstall: 0xD312424D
           _sceNpDrmPresetRifProvisionalFlag: 0x2523F57F
           _sceNpDrmRemoveActData: 0x507D06A6
-        kernel: false
-        nid: 0xF2799B1B
       SceNpDrmForDriver:
+        kernel: true
+        nid: 0xD84DC44A
         functions:
           ksceNpDrmCheckActData: 0x9265B350
           ksceNpDrmEbootSigConvert: 0xA29B75F9
@@ -3940,17 +5845,21 @@ modules:
           ksceNpDrmRemoveActData: 0x8B85A509
           ksceNpDrmUpdateAccountId: 0x116FC0D6
           ksceNpDrmUpdateDebugSettings: 0xA91C7443
-        kernel: true
-        nid: 0xD84DC44A
   SceNpManager:
     nid: 0x2D4B5F41
     libraries:
       SceNpManager:
+        kernel: false
+        nid: 0xD8835093
         functions:
           sceNpCheckCallback: 0x3B0AE9A9
           sceNpGetServiceState: 0x54060DF6
           sceNpInit: 0x04D9F484
           sceNpManagerGetAccountRegion: 0xFE835967
+          sceNpAuthAbortOAuthRequest: 0xECBC7614
+          sceNpAuthCreateOAuthRequest: 0x555EB58C
+          sceNpAuthDeleteOAuthRequest: 0x8C94C7A5
+          sceNpAuthGetAuthorizationCode: 0x65DFB208
           sceNpManagerGetCachedParam: 0x43DC48A1
           sceNpManagerGetChatRestrictionFlag: 0x60C575B1
           sceNpManagerGetContentRatingFlag: 0xAF0073B2
@@ -3958,12 +5867,12 @@ modules:
           sceNpRegisterServiceStateCallback: 0x44239C35
           sceNpTerm: 0x19E40AE1
           sceNpUnregisterServiceStateCallback: 0xD9E6E56C
-        kernel: false
-        nid: 0xD8835093
   SceNpMatching2:
     nid: 0x4BEBBDF3
     libraries:
       SceNpMatching2:
+        kernel: false
+        nid: 0x7106F303
         functions:
           sceNpMatching2AbortContextStart: 0xF2847E3B
           sceNpMatching2AbortRequest: 0x74EB6CE9
@@ -4015,12 +5924,12 @@ modules:
           sceNpMatching2SignalingGetPeerNetInfoResult: 0xFDC7B2C9
           sceNpMatching2SignalingGetPingInfo: 0x881F7428
           sceNpMatching2Term: 0x0124641C
-        kernel: false
-        nid: 0x7106F303
   SceNpMessage:
     nid: 0x9FED9721
     libraries:
       SceNpMessage:
+        kernel: false
+        nid: 0x8134120B
         functions:
           sceNpMessageAbort: 0x707B26C2
           sceNpMessageGetAttachedData: 0x7E697F98
@@ -4033,27 +5942,30 @@ modules:
           sceNpMessageSetAttachedDataUsedFlag: 0xF533A73A
           sceNpMessageSyncMessage: 0x35BE21C5
           sceNpMessageTerm: 0x380230A1
-        kernel: false
-        nid: 0x8134120B
   SceNpParty:
-    nid: 0x7F
+    nid: 0x51D3A65A
     libraries:
       SceNpPartyGameUtil:
+        kernel: false
+        nid: 0xB3B34742
         functions:
           sceNpPartyCheckCallback: 0xB6132502
+          sceNpPartyGetGameSessionReadyState: 0xE9173FE6
+          sceNpPartyGetId: 0x27AFCE24
           sceNpPartyGetMemberInfo: 0x0560D9A1
+          sceNpPartyGetMemberSessionInfo: 0xF01585A3
           sceNpPartyGetMemberVoiceInfo: 0xFB200A6D
           sceNpPartyGetMembers: 0x420C30E9
           sceNpPartyGetState: 0x9F99ADF7
           sceNpPartyInit: 0xB304962C
           sceNpPartyRegisterHandler: 0x324C76F0
           sceNpPartyTerm: 0xF524AD2B
-        kernel: false
-        nid: 0xB3B34742
   SceNpScore:
     nid: 0x535502C2
     libraries:
       SceNpScore:
+        kernel: false
+        nid: 0x75F052DB
         functions:
           sceNpScoreAbortRequest: 0xA7E93CE1
           sceNpScoreCensorComment: 0xA0C94D46
@@ -4065,6 +5977,8 @@ modules:
           sceNpScoreDeleteTitleCtx: 0xF52EA88A
           sceNpScoreGetBoardInfo: 0x00F90E7B
           sceNpScoreGetBoardInfoAsync: 0x3CD9974E
+          sceNpScoreGetFriendsRanking: 0x4F795659
+          sceNpScoreGetFriendsRankingAsync: 0x7090ED11
           sceNpScoreGetGameData: 0xDFAD64D3
           sceNpScoreGetGameDataAsync: 0xCE416993
           sceNpScoreGetRankingByNpId: 0xBAE55B34
@@ -4085,12 +5999,12 @@ modules:
           sceNpScoreSetTimeout: 0x5EF44841
           sceNpScoreTerm: 0x2050F98F
           sceNpScoreWaitAsync: 0x31733BF3
-        kernel: false
-        nid: 0x75F052DB
   SceNpSignaling:
     nid: 0xEA76DE9E
     libraries:
       SceNpSignaling:
+        kernel: false
+        nid: 0xEE59FC02
         functions:
           sceNpSignalingActivateConnection: 0x92FFBDE3
           sceNpSignalingCancelPeerNetInfo: 0x5048E147
@@ -4110,12 +6024,12 @@ modules:
           sceNpSignalingSetCtxOpt: 0x0B48FADB
           sceNpSignalingTerm: 0xBC892D18
           sceNpSignalingTerminateConnection: 0xA413F8C2
-        kernel: false
-        nid: 0xEE59FC02
   SceNpSnsFacebook:
     nid: 0x723E758D
     libraries:
       SceNpSnsFacebook:
+        kernel: false
+        nid: 0x1EF501B8
         functions:
           sceNpSnsFacebookAbortRequest: 0x32FB2721
           sceNpSnsFacebookCreateRequest: 0x9CF1BC76
@@ -4124,12 +6038,12 @@ modules:
           sceNpSnsFacebookGetLongAccessToken: 0xA3C9041D
           sceNpSnsFacebookInit: 0x80557AA0
           sceNpSnsFacebookTerm: 0xA71E6847
-        kernel: false
-        nid: 0x1EF501B8
   SceNpTrophy:
     nid: 0xE4EBB3E3
     libraries:
       SceNpTrophy:
+        kernel: false
+        nid: 0x4332C10D
         functions:
           sceNpTrophyAbortHandle: 0xD55C6F4C
           sceNpTrophyCreateContext: 0xC49FD33F
@@ -4146,12 +6060,12 @@ modules:
           sceNpTrophyInit: 0x34516838
           sceNpTrophyTerm: 0xBFE0F28F
           sceNpTrophyUnlockTrophy: 0xB397AA24
-        kernel: false
-        nid: 0x4332C10D
   SceNpTus:
     nid: 0xCFC5C3E6
     libraries:
       SceNpTus:
+        kernel: false
+        nid: 0xAE84BDEA
         functions:
           sceNpTssGetData: 0xD8D5CABA
           sceNpTssGetDataAsync: 0x1C8D73A8
@@ -4183,6 +6097,10 @@ modules:
           sceNpTusGetDataAsync: 0x883AC44A
           sceNpTusGetDataVUser: 0xCCB9E791
           sceNpTusGetDataVUserAsync: 0x9E8E1CF8
+          sceNpTusGetFriendsDataStatus: 0x27FB4EFD
+          sceNpTusGetFriendsDataStatusAsync: 0x32064D64
+          sceNpTusGetFriendsVariable: 0x47E1716A
+          sceNpTusGetFriendsVariableAsync: 0xDFC8F03D
           sceNpTusGetMultiSlotDataStatus: 0xD97E51EC
           sceNpTusGetMultiSlotDataStatusAsync: 0x520975C3
           sceNpTusGetMultiSlotDataStatusVUser: 0x50FC680F
@@ -4216,12 +6134,12 @@ modules:
           sceNpTusTryAndSetVariableVUser: 0x6B2A54EB
           sceNpTusTryAndSetVariableVUserAsync: 0x518A64B9
           sceNpTusWaitAsync: 0x3907A8BC
-        kernel: false
-        nid: 0xAE84BDEA
   SceNpUtility:
     nid: 0x14246C21
     libraries:
       SceNpUtility:
+        kernel: false
+        nid: 0x7B47D9CF
         functions:
           sceNpBandwidthTestAbort: 0x32B068C4
           sceNpBandwidthTestGetStatus: 0xE0EBFBF6
@@ -4257,12 +6175,57 @@ modules:
           sceNpWordFilterSetTimeout: 0x9F44CE45
           sceNpWordFilterTerm: 0x7D140F70
           sceNpWordFilterWaitAsync: 0x31B308AA
+  SceNpWebApi:
+    nid: 0x0AC17EF4
+    libraries:
+      SceNpWebApi:
         kernel: false
-        nid: 0x7B47D9CF
+        nid: 0xE1AF627C
+        functions:
+          sceNpWebApiInitialize: 0x8519EB34
+          sceNpWebApiTerminate: 0x001254C2
+          sceNpWebApiCreateRequest: 0x6FC7357E
+          sceNpWebApiDeleteRequest: 0x57B2826E
+          sceNpWebApiAbortRequest: 0xEB3D14CE
+          sceNpWebApiSendRequest: 0x51EA899B
+          sceNpWebApiSendRequest2: 0x1E37862A
+          sceNpWebApiGetHttpStatusCode: 0x67A3BC79
+          sceNpWebApiReadData: 0xBA75BF6E
+          sceNpWebApiGetErrorCode: 0x00234C88
+          sceNpWebApiAddHttpRequestHeader: 0x8DCD6D19
+          sceNpWebApiGetHttpResponseHeaderValueLength: 0xD585FDEA
+          sceNpWebApiGetHttpResponseHeaderValue: 0xB0500FF4
+          sceNpWebApiUtilityParseNpId: 0x98CBE11F
+          sceNpWebApiGetMemoryPoolStats: 0x9DF7EE1E
+          sceNpWebApiSetNpTitleId: 0x9AE6BC46
+          sceNpWebApiGetNpTitleId: 0xB65DF857
+          sceNpWebApiCreatePushEventFilter: 0x18CB54B5
+          sceNpWebApiDeletePushEventFilter: 0x6099B918
+          sceNpWebApiRegisterPushEventCallback: 0xDB04ECD6
+          sceNpWebApiUnregisterPushEventCallback: 0xC9056736
+          sceNpWebApiCreateHandle: 0x40341759
+          sceNpWebApiDeleteHandle: 0xB575A09C
+          sceNpWebApiAbortHandle: 0xD462D519
+          sceNpWebApiCreateServicePushEventFilter: 0x2B61B0C7
+          sceNpWebApiDeleteServicePushEventFilter: 0x828F657B
+          sceNpWebApiRegisterServicePushEventCallback: 0xF6B6C994
+          sceNpWebApiUnregisterServicePushEventCallback: 0x06D28ADA
+          sceNpWebApiCheckCallback: 0xEDA9C359
+          sceNpWebApiCreateMultipartRequest: 0x55435037
+          sceNpWebApiSendMultipartRequest: 0xBDEC2650
+          sceNpWebApiSendMultipartRequest2: 0xC8E042B8
+          sceNpWebApiSetMultipartContentType: 0x8E870BE4
+          sceNpWebApiAddMultipartPart: 0xC4B24435
+          sceNpWebApiCreateExtdPushEventFilter: 0x6AB53577
+          sceNpWebApiDeleteExtdPushEventFilter: 0x4980D88D
+          sceNpWebApiRegisterExtdPushEventCallback: 0xE75796DD
+          sceNpWebApiUnregisterExtdPushEventCallback: 0x2D272ACA
   ScePerf:
     nid: 0xA2727E86
     libraries:
       ScePerf:
+        kernel: false
+        nid: 0x447F047D
         functions:
           _pLibPerfCaptureFlagPtr: 0x936A5F31
           _sceCpuRazorPopFiberUserMarker: 0x453AED06
@@ -4291,12 +6254,12 @@ modules:
           sceRazorCpuStopCapture: 0x9C2C05C2
           sceRazorCpuStopUserMarkerTrace: 0x4B47E144
           sceRazorCpuSync: 0x4F1385E3
-        kernel: false
-        nid: 0x447F047D
   ScePgf:
-    nid: 0x8F
+    nid: 0xB40B26E9
     libraries:
       ScePgf:
+        kernel: false
+        nid: 0x9F3504F2
         functions:
           sceFontClose: 0x4A7293E9
           sceFontDoneLib: 0x07EE1733
@@ -4321,23 +6284,23 @@ modules:
           sceFontPointToPixelV: 0x03F10EC8
           sceFontSetAltCharacterCode: 0x8D5B44DF
           sceFontSetResolution: 0xDE47674C
-        kernel: false
-        nid: 0x9F3504F2
   ScePhotoExport:
     nid: 0x97935D63
     libraries:
       ScePhotoExport:
+        kernel: false
+        nid: 0x79166BD9
         functions:
           scePhotoExportFromData: 0x70512321
           scePhotoExportFromFile: 0x84FD9FC5
           scePhotoExportIsAvailableFromData: 0xE6E6AFD5
           scePhotoExportIsAvailableFromFile: 0x5655F971
-        kernel: false
-        nid: 0x79166BD9
   ScePower:
     nid: 0x5EAE6AEC
     libraries:
       ScePower:
+        kernel: false
+        nid: 0x1082DA7F
         functions:
           scePowerBatteryUpdateInfo: 0x27F3292C
           scePowerCancelRequest: 0xDB62C9CF
@@ -4381,9 +6344,9 @@ modules:
           scePowerSetIdleTimerCount: 0xB11EF149
           scePowerSetUsingWireless: 0x4D695C1F
           scePowerUnregisterCallback: 0xDFA8BAF8
-        kernel: false
-        nid: 0x1082DA7F
       ScePowerForDriver:
+        kernel: true
+        nid: 0x1590166F
         functions:
           kscePowerGetBatteryElec: 0x862AE1A6
           kscePowerBatteryDisableUsbCharging: 0x90285886
@@ -4450,17 +6413,17 @@ modules:
           kscePowerUnregisterCallback: 0xDFA8BAF8
           kscePowerWlanActivate: 0x6D2CA84B
           kscePowerWlanDeactivate: 0x23BB0A60
-        kernel: true
-        nid: 0x1590166F
       SceLedForDriver:
         kernel: true
         nid: 0x282C1323
         functions:
           ksceLedSetMode: 0xEA24BE03
   ScePspnetAdhoc:
-    nid: 0x95
+    nid: 0x321EF128
     libraries:
       ScePspnetAdhoc:
+        kernel: false
+        nid: 0x19C6AFDC
         functions:
           sceNetAdhocGetPdpStat: 0x02098B69
           sceNetAdhocGetPtpStat: 0xE45F0801
@@ -4490,12 +6453,12 @@ modules:
           sceNetAdhocctlGetPeerList: 0x356AA25E
           sceNetAdhocctlInit: 0xE2FE9DD6
           sceNetAdhocctlTerm: 0x97A80065
-        kernel: false
-        nid: 0x19C6AFDC
   ScePvf:
-    nid: 0x97
+    nid: 0x820F86E8
     libraries:
       ScePvf:
+        kernel: false
+        nid: 0x68D59260
         functions:
           __scePvfSetFt2DoneLibCHook: 0x58142D71
           __scePvfSetFt2LibCHook: 0x997161C3
@@ -4540,12 +6503,12 @@ modules:
           scePvfSetEmboldenRate: 0x6E787722
           scePvfSetResolution: 0xC4444FB3
           scePvfSetSkewValue: 0x3DD09BC9
-        kernel: false
-        nid: 0x68D59260
   SceRazorCapture:
     nid: 0x99
     libraries:
       SceRazorCapture:
+        kernel: false
+        nid: 0x7B2A3F18
         functions:
           sceRazorCaptureIsInProgress: 0x911E0AA0
           sceRazorCaptureSetTrigger: 0xE916B538
@@ -4557,12 +6520,12 @@ modules:
           sceRazorGpuCaptureSetTrigger: 0x472492DA
           sceRazorGpuCaptureSetTriggerNextFrame: 0x9DAA7E9C
           sceRazorGpuCaptureStartSalvageMode: 0x3F0913CF
-        kernel: false
-        nid: 0x7B2A3F18
   SceRazorHud:
     nid: 0x9B
     libraries:
       SceRazorHud:
+        kernel: false
+        nid: 0x250371C2
         functions:
           sceRazorCpuHudSetUserMarkerTraceBuffer: 0xECE363EF
           sceRazorCpuHudUserMarkerEnableAllThreads: 0xFD290A17
@@ -4581,12 +6544,12 @@ modules:
           sceRazorHudReloadSettings: 0xDFD00BAE
           sceRazorHudSetDisplayEnabled: 0x77F2F606
           sceRazorHudSetDisplayFrameCount: 0xCC390860
-        kernel: false
-        nid: 0x250371C2
   SceRegistryMgr:
     nid: 0x761F343C
     libraries:
       SceRegMgr:
+        kernel: false
+        nid: 0xC436F916
         functions:
           sceRegMgrAddRegistryCallback: 0xA86F0A71
           sceRegMgrDbBackup: 0xB68B5422
@@ -4610,9 +6573,9 @@ modules:
           sceRegMgrStopCallback: 0x6A8E2FB4
           sceRegMgrUnregisterCallback: 0xD7BD3607
           sceRegMgrUnregisterDrvErrCallback: 0xD9E6B7BD
-        kernel: false
-        nid: 0xC436F916
       SceRegMgrForDriver:
+        kernel: true
+        nid: 0xB2223AEB
         functions:
           ksceRegMgrAddRegistryCallback: 0xA86F0A71
           ksceRegMgrDbBackup: 0xB68B5422
@@ -4639,9 +6602,9 @@ modules:
           ksceRegMgrSystemParamGetStr: 0x877ADB3F
           ksceRegMgrUnregisterCallback: 0xD7BD3607
           ksceRegMgrUnregisterDrvErrCallback: 0xD9E6B7BD
-        kernel: true
-        nid: 0xB2223AEB
       SceRegMgrForGame:
+        kernel: false
+        nid: 0x0B351269
         functions:
           sceRegMgrSystemParamGetBin: 0x7FFE2CDF
           sceRegMgrSystemParamGetInt: 0x347C1BDB
@@ -4649,9 +6612,9 @@ modules:
           sceRegMgrSystemParamSetBin: 0xD5A73557
           sceRegMgrSystemParamSetInt: 0xC8F73311
           sceRegMgrSystemParamSetStr: 0xCB3246E3
-        kernel: false
-        nid: 0x0B351269
       SceRegMgrForSDK:
+        kernel: false
+        nid: 0x67E45817
         functions:
           sceRegMgrUtilityGetBin: 0xEFCFA182
           sceRegMgrUtilityGetInt: 0x8154D696
@@ -4659,35 +6622,35 @@ modules:
           sceRegMgrUtilitySetBin: 0x7304DC12
           sceRegMgrUtilitySetInt: 0xB370A2CF
           sceRegMgrUtilitySetStr: 0x4898C1E2
-        kernel: false
-        nid: 0x67E45817
       SceRegMgrService:
+        kernel: false
+        nid: 0x23A10D9B
         functions:
           sceRegMgrSrvCnvRegionInt: 0x7683FC84
           sceRegMgrSrvCnvRegionPsCode: 0x94D008D2
           sceRegMgrSrvCnvRegionStr: 0x15B4A5C5
           sceRegMgrSrvGetRegion: 0xBEC3F77A
           sceRegMgrSrvGetRegionStr: 0xBC3FE639
-        kernel: false
-        nid: 0x23A10D9B
       SceRegMgrServiceForDriver:
+        kernel: true
+        nid: 0x12431F66
         functions:
           ksceRegMgrSrvCnvRegionInt: 0x7683FC84
           ksceRegMgrSrvCnvRegionPsCode: 0x94D008D2
           ksceRegMgrSrvCnvRegionStr: 0x15B4A5C5
           ksceRegMgrSrvGetRegion: 0xBEC3F77A
           ksceRegMgrSrvGetRegionStr: 0xBC3FE639
-        kernel: true
-        nid: 0x12431F66
   SceRtc:
     nid: 0x1E923AD1
     libraries:
       SceRtc:
-        functions:
-          sceRtcGetAccumulativeTime: 0x258BE8EC
         kernel: false
         nid: 0x3503487E
+        functions:
+          sceRtcGetAccumulativeTime: 0x258BE8EC
       SceRtcForDriver:
+        kernel: true
+        nid: 0x0351D827
         functions:
           ksceRtcGetAlarmTick: 0xC838275A
           ksceRtcGetCurrentSecureTick: 0x401C0954
@@ -4705,9 +6668,9 @@ modules:
           ksceRtcSetSecureAlarmTick: 0x8333790D
           ksceRtcUnregisterCallback: 0x9546C68B
           ksceRtcUnregisterSecureAlarmCallback: 0xEDDC2325
-        kernel: true
-        nid: 0x0351D827
       SceRtcUser:
+        kernel: false
+        nid: 0x6704D3C6
         functions:
           sceRtcCheckValid: 0xD7622935
           sceRtcCompareTick: 0xC7385158
@@ -4749,17 +6712,17 @@ modules:
           sceRtcTickAddTicks: 0x4559E2DB
           sceRtcTickAddWeeks: 0xE713C640
           sceRtcTickAddYears: 0xDF6C3E1B
-        kernel: false
-        nid: 0x6704D3C6
   SceRudp:
-    nid: 0xA4
+    nid: 0x0B6F819A
     libraries:
       SceLibRudp:
+        kernel: false
+        nid: 0x32910D11
         functions:
           sceRudpActivate: 0xF1151D91
           sceRudpBind: 0x8B766108
           sceRudpCreateContext: 0x772C07E8
-          sceRudpEnableInternalIOThread: 0x3A495E69
+          sceRudpEnableInternalIOThread: 0x87EC465E
           sceRudpEnd: 0x3EA0961E
           sceRudpFlush: 0x8D45BA52
           sceRudpGetContextStatus: 0xD620B557
@@ -4786,12 +6749,12 @@ modules:
           sceRudpSetOption: 0xBD87A5CA
           sceRudpTerminate: 0x552B2D3E
           sceRudpWrite: 0x69C9DE15
-        kernel: false
-        nid: 0x32910D11
   SceSas:
-    nid: 0xA6
+    nid: 0xBDF706EB
     libraries:
       SceSas:
+        kernel: false
+        nid: 0xEE47EC43
         functions:
           sceSasCore: 0x7A4672B2
           sceSasCoreWithMix: 0xBD496983
@@ -4826,12 +6789,12 @@ modules:
           sceSasSetVoice: 0x2B75F9BC
           sceSasSetVoicePCM: 0xB1756EFC
           sceSasSetVolume: 0x0BE8204D
-        kernel: false
-        nid: 0xEE47EC43
   SceScreenShot:
     nid: 0x56675E0A
     libraries:
       SceScreenShot:
+        kernel: false
+        nid: 0xF26FC97D
         functions:
           sceScreenShotCapture: 0xD509FB08
           sceScreenShotDisable: 0x50AE9FF9
@@ -4841,12 +6804,12 @@ modules:
           sceScreenShotGetParam: 0xBAE9E534
           sceScreenShotSetOverlayImage: 0x7061665B
           sceScreenShotSetParam: 0x05DB59C7
-        kernel: false
-        nid: 0xF26FC97D
   SceSfmt11213:
     nid: 0xAA
     libraries:
       SceSfmt11213:
+        kernel: false
+        nid: 0xC2B01E62
         functions:
           sceSfmt11213FillArray32: 0xFD696585
           sceSfmt11213FillArray64: 0x7A412A29
@@ -4854,12 +6817,12 @@ modules:
           sceSfmt11213GenRand64: 0xAFEDD6E1
           sceSfmt11213InitByArray: 0xBAF5F058
           sceSfmt11213InitGenRand: 0x8FF464C9
-        kernel: false
-        nid: 0xC2B01E62
   SceSfmt1279:
     nid: 0xAC
     libraries:
       SceSfmt1279:
+        kernel: false
+        nid: 0xBD6EDDF3
         functions:
           sceSfmt1279FillArray32: 0xE7F63838
           sceSfmt1279FillArray64: 0xDB3832EB
@@ -4867,12 +6830,12 @@ modules:
           sceSfmt1279GenRand64: 0xA2C5EE14
           sceSfmt1279InitByArray: 0xC25D9ACE
           sceSfmt1279InitGenRand: 0x02E8D906
-        kernel: false
-        nid: 0xBD6EDDF3
   SceSfmt132049:
     nid: 0xAE
     libraries:
       SceSfmt132049:
+        kernel: false
+        nid: 0xC004A715
         functions:
           sceSfmt132049FillArray32: 0xD891A99F
           sceSfmt132049FillArray64: 0x68AD7866
@@ -4880,12 +6843,12 @@ modules:
           sceSfmt132049GenRand64: 0xBBD80AC4
           sceSfmt132049InitByArray: 0xDC69294A
           sceSfmt132049InitGenRand: 0xDC6B23B0
-        kernel: false
-        nid: 0xC004A715
   SceSfmt19937:
     nid: 0xB0
     libraries:
       SceSfmt19937:
+        kernel: false
+        nid: 0xB3D328D5
         functions:
           sceSfmt19937FillArray32: 0xA1C654D8
           sceSfmt19937FillArray64: 0xE74BA81C
@@ -4893,12 +6856,12 @@ modules:
           sceSfmt19937GenRand64: 0xE66F2502
           sceSfmt19937InitByArray: 0xAC496C8C
           sceSfmt19937InitGenRand: 0x2AFACB0B
-        kernel: false
-        nid: 0xB3D328D5
   SceSfmt216091:
     nid: 0xB2
     libraries:
       SceSfmt216091:
+        kernel: false
+        nid: 0x7413DC02
         functions:
           sceSfmt216091FillArray32: 0xDD4256F0
           sceSfmt216091FillArray64: 0xA1CE5628
@@ -4906,12 +6869,12 @@ modules:
           sceSfmt216091GenRand64: 0x23369ABF
           sceSfmt216091InitByArray: 0xA9CF6616
           sceSfmt216091InitGenRand: 0x86DDE4A7
-        kernel: false
-        nid: 0x7413DC02
   SceSfmt2281:
     nid: 0xB4
     libraries:
       SceSfmt2281:
+        kernel: false
+        nid: 0x2935D1DD
         functions:
           sceSfmt2281FillArray32: 0xBB89D8F0
           sceSfmt2281FillArray64: 0x17C10E2D
@@ -4919,12 +6882,12 @@ modules:
           sceSfmt2281GenRand64: 0x3CC47146
           sceSfmt2281InitByArray: 0xAB3AD459
           sceSfmt2281InitGenRand: 0xB8E5A0BB
-        kernel: false
-        nid: 0x2935D1DD
   SceSfmt4253:
     nid: 0xB6
     libraries:
       SceSfmt4253:
+        kernel: false
+        nid: 0xC795A3B5
         functions:
           sceSfmt4253FillArray32: 0x59A1B9FC
           sceSfmt4253FillArray64: 0x01683CDD
@@ -4932,12 +6895,12 @@ modules:
           sceSfmt4253GenRand64: 0x6C0E5E3C
           sceSfmt4253InitByArray: 0xC4D7AA2D
           sceSfmt4253InitGenRand: 0xE9F8CB9A
-        kernel: false
-        nid: 0xC795A3B5
   SceSfmt44497:
     nid: 0xB8
     libraries:
       SceSfmt44497:
+        kernel: false
+        nid: 0xB6F12A2A
         functions:
           sceSfmt44497FillArray32: 0x1C38322A
           sceSfmt44497FillArray64: 0x908F1122
@@ -4945,12 +6908,12 @@ modules:
           sceSfmt44497GenRand64: 0xD411A9A6
           sceSfmt44497InitByArray: 0x16D8AA5E
           sceSfmt44497InitGenRand: 0xCF1C8C38
-        kernel: false
-        nid: 0xB6F12A2A
   SceSfmt607:
     nid: 0xBA
     libraries:
       SceSfmt607:
+        kernel: false
+        nid: 0x75DFF725
         functions:
           sceSfmt607FillArray32: 0xA288ADB9
           sceSfmt607FillArray64: 0x1520D408
@@ -4958,12 +6921,12 @@ modules:
           sceSfmt607GenRand64: 0x5E880862
           sceSfmt607InitByArray: 0xCC6DABA0
           sceSfmt607InitGenRand: 0x76A5D8CA
-        kernel: false
-        nid: 0x75DFF725
   SceSfmt86243:
     nid: 0xBC
     libraries:
       SceSfmt86243:
+        kernel: false
+        nid: 0x6FB578AD
         functions:
           sceSfmt86243FillArray32: 0xC297E6B1
           sceSfmt86243FillArray64: 0xF7FFE87C
@@ -4971,109 +6934,110 @@ modules:
           sceSfmt86243GenRand64: 0x8E25CBA8
           sceSfmt86243InitByArray: 0x81B67AB5
           sceSfmt86243InitGenRand: 0x2FF42588
-        kernel: false
-        nid: 0x6FB578AD
   SceSha0:
     nid: 0xBE
     libraries:
       SceSha0:
+        kernel: false
+        nid: 0x12497C8B
         functions:
           sceSha0BlockInit: 0xBCF6DB3A
           sceSha0BlockResult: 0xBF0158C4
           sceSha0BlockUpdate: 0x37EF2AFC
           sceSha0Digest: 0xD19A9AA8
-        kernel: false
-        nid: 0x12497C8B
   SceSha1:
     nid: 0xC0
     libraries:
       SceSha1:
+        kernel: false
+        nid: 0x4B8F065B
         functions:
           sceSha1BlockInit: 0xB13D65AA
           sceSha1BlockResult: 0x0195DADF
           sceSha1BlockUpdate: 0x9007205E
           sceSha1Digest: 0xE1215C9D
-        kernel: false
-        nid: 0x4B8F065B
   SceSha224:
     nid: 0xC2
     libraries:
       SceSha224:
+        kernel: false
+        nid: 0x8EC9E1B7
         functions:
           sceSha224BlockInit: 0x538F04CE
           sceSha224BlockResult: 0xA36ECF65
           sceSha224BlockUpdate: 0xB5FD0160
           sceSha224Digest: 0x1346D270
-        kernel: false
-        nid: 0x8EC9E1B7
   SceSha256:
     nid: 0xC4
     libraries:
       SceSha256:
+        kernel: false
+        nid: 0xE15E874A
         functions:
           sceSha256BlockInit: 0xE281374F
           sceSha256BlockResult: 0x9B5BB4BA
           sceSha256BlockUpdate: 0xDAECA1F8
           sceSha256Digest: 0xA337079C
-        kernel: false
-        nid: 0xE15E874A
   SceSha384:
     nid: 0xC6
     libraries:
       SceSha384:
+        kernel: false
+        nid: 0x8DF4D816
         functions:
           sceSha384BlockInit: 0x037AABE7
           sceSha384BlockResult: 0x30D5C919
           sceSha384BlockUpdate: 0x4B99DBB8
           sceSha384Digest: 0xA602C694
-        kernel: false
-        nid: 0x8DF4D816
   SceSha512:
     nid: 0xC8
     libraries:
       SceSha512:
+        kernel: false
+        nid: 0x1D327AD4
         functions:
           sceSha512BlockInit: 0xE017A9CD
           sceSha512BlockResult: 0x26146A16
           sceSha512BlockUpdate: 0x669281E8
           sceSha512Digest: 0x5DC0B916
-        kernel: false
-        nid: 0x1D327AD4
   SceSha512t:
     nid: 0xCA
     libraries:
       SceSha512t:
+        kernel: false
+        nid: 0xBB9022A7
         functions:
           sceSha512tBlockInit: 0x79065BB2
           sceSha512tBlockResult: 0x66425DB6
           sceSha512tBlockUpdate: 0xC5359DF8
           sceSha512tDigest: 0x00E52720
-        kernel: false
-        nid: 0xBB9022A7
   SceShellSvc:
     nid: 0x821DC423
     libraries:
       SceShellUtil:
+        kernel: false
+        nid: 0xD2B1C8AE
         functions:
           sceShellUtilRegisterEventHandler: 0x7B5EDFE7
           sceShellUtilInitEvents: 0xE8AD11EC
           sceShellUtilLock: 0xA9537233
           sceShellUtilUnlock: 0x21A6CF54
-        kernel: false
-        nid: 0xD2B1C8AE
   SceShutterSound:
     nid: 0x9B8396F9
     libraries:
       SceShutterSound:
-        functions:
-          sceShutterSoundPlay: 0x7FFB6D79
         kernel: false
         nid: 0x877181ED
+        functions:
+          sceShutterSoundPlay: 0x7FFB6D79
   SceSmart:
     nid: 0xCE
     libraries:
       SceSmart:
+        kernel: false
+        nid: 0xC2D4E61A
         functions:
+          sceSmartCreateInstantImageTarget: 0x57C17649
           sceSmartCreateLearnedImageTarget: 0x5A31446E
           sceSmartDestroyTarget: 0x0C6A1DA8
           sceSmartGetTargetInfo: 0x23EDFA9A
@@ -5098,13 +7062,16 @@ modules:
           sceSmartSceneMappingRun: 0xC7EBD753
           sceSmartSceneMappingRunCore: 0xCB30BD4D
           sceSmartSceneMappingSaveMap: 0x4907021F
+          sceSmartSceneMappingSetCustomListener: 0x4A4F20EF
           sceSmartSceneMappingSetDenseMapMode: 0xE7867558
+          sceSmartSceneMappingSetDispatchMode: 0xA4EC7755
           sceSmartSceneMappingStart: 0xA3A82B99
           sceSmartSceneMappingStop: 0x52EB57E4
           sceSmartSceneMappingUnregisterTarget: 0x6807CA97
           sceSmartTargetTrackingDispatchAndQuery: 0x7FE71305
           sceSmartTargetTrackingGetResults: 0x648C7E15
           sceSmartTargetTrackingQuery: 0x2808C8CB
+          sceSmartTargetTrackingQuery2: 0xD17EF0B2
           sceSmartTargetTrackingRegisterTarget: 0x8ACADD54
           sceSmartTargetTrackingReset: 0xA4A155B5
           sceSmartTargetTrackingRun: 0xBFD87F61
@@ -5114,12 +7081,12 @@ modules:
           sceSmartTargetTrackingStart: 0x5A121F6C
           sceSmartTargetTrackingStop: 0xC4C607C0
           sceSmartTargetTrackingUnregisterTarget: 0x6EE07829
-        kernel: false
-        nid: 0xCF
   SceSqlite:
     nid: 0x8D6CC544
     libraries:
       SceSqlite:
+        kernel: false
+        nid: 0x67F02E1D
         functions:
           sceSqliteConfigMallocMethods: 0x2034E5B7
           sqlite3_aggregate_context: 0xAA8BE477
@@ -5200,7 +7167,7 @@ modules:
           sqlite3_finalize: 0xB656B7E2
           sqlite3_free: 0xCBF0CA8A
           sqlite3_free_table: 0x1FEC6959
-          sqlite3_get_autocommit: 0x910C3CB
+          sqlite3_get_autocommit: 0x0910C3CB
           sqlite3_get_auxdata: 0x394FC1CB
           sqlite3_get_table: 0xF2AB9C89
           sqlite3_global_recover: 0xF48E021B
@@ -5228,7 +7195,7 @@ modules:
           sqlite3_os_end: 0x9CE7C4C3
           sqlite3_os_init: 0xBD304836
           sqlite3_overload_function: 0xAF680D40
-          sqlite3_prepare: 0xC1B5509
+          sqlite3_prepare: 0x0C1B5509
           sqlite3_prepare16: 0xC657CFB8
           sqlite3_prepare16_v2: 0x426D81D2
           sqlite3_prepare_v2: 0xBC4BDCF4
@@ -5253,7 +7220,7 @@ modules:
           sqlite3_result_text16: 0x3AF5D206
           sqlite3_result_text16be: 0xEE3E906A
           sqlite3_result_text16le: 0x845B4FC2
-          sqlite3_result_value: 0x9664492
+          sqlite3_result_value: 0x09664492
           sqlite3_result_zeroblob: 0x3D463CF7
           sqlite3_rollback_hook: 0x67F53D6B
           sqlite3_set_authorizer: 0x77FB3458
@@ -5263,7 +7230,7 @@ modules:
           sqlite3_snprintf: 0xCC189941
           sqlite3_soft_heap_limit: 0xD1458BA7
           sqlite3_sourceid: 0x4CCB58A2
-          sqlite3_sql: 0x82C36D4
+          sqlite3_sql: 0x082C36D4
           sqlite3_status: 0xD8C435AA
           sqlite3_step: 0xCA8755B7
           sqlite3_stmt_status: 0xF7ABF5FA
@@ -5272,7 +7239,7 @@ modules:
           sqlite3_test_control: 0x324D4EFD
           sqlite3_thread_cleanup: 0x173C9C0B
           sqlite3_threadsafe: 0xA3B818DA
-          sqlite3_total_changes: 0x2ADA92D
+          sqlite3_total_changes: 0x02ADA92D
           sqlite3_trace: 0xFC127A83
           sqlite3_transfer_bindings: 0x6EC012E5
           sqlite3_update_hook: 0xEB05FE87
@@ -5287,19 +7254,19 @@ modules:
           sqlite3_value_text: 0x7EB97356
           sqlite3_value_text16: 0x5BBE38C2
           sqlite3_value_text16be: 0x3B89AA8D
-          sqlite3_value_text16le: 0x14863A6
+          sqlite3_value_text16le: 0x014863A6
           sqlite3_value_type: 0xC5EEBB5D
           sqlite3_version: 0xB80D43C7
-          sqlite3_vfs_find: 0xC6DD8C3
+          sqlite3_vfs_find: 0x0C6DD8C3
           sqlite3_vfs_register: 0x65F53B9C
           sqlite3_vfs_unregister: 0x69CF4171
           sqlite3_vmprintf: 0xC6372184
-        kernel: false
-        nid: 0x67F02E1D
   SceSsl:
-    nid: 0xD2
+    nid: 0x9CD6CA85
     libraries:
       SceSsl:
+        kernel: false
+        nid: 0xCAF5F2E9
         functions:
           sceSslFreeSslCertName: 0xC73687E4
           sceSslGetIssuerName: 0x412711E5
@@ -5312,12 +7279,12 @@ modules:
           sceSslGetSubjectName: 0x9B2F1BC1
           sceSslInit: 0x3C733316
           sceSslTerm: 0x03CE6E3A
-        kernel: false
-        nid: 0xCAF5F2E9
   SceSulpha:
     nid: 0xD4
     libraries:
       SceSulpha:
+        kernel: false
+        nid: 0x533DEBDE
         functions:
           sceSulphaAgentsGetNeededMemory: 0xC5752B6B
           sceSulphaAgentsRegister: 0x7ADB454D
@@ -5342,12 +7309,12 @@ modules:
           sceSulphaSetBookmark: 0x5E15E164
           sceSulphaShutdown: 0x10770BA7
           sceSulphaUpdate: 0x920EC7BF
-        kernel: false
-        nid: 0x533DEBDE
   SceSysmodule:
     nid: 0x0958E8D1
     libraries:
       SceSysmodule:
+        kernel: false
+        nid: 0x03FCF19D
         functions:
           sceSysmoduleLoadModuleInternalWithArg: 0xC3C26339
           sceSysmoduleUnloadModuleInternalWithArg: 0xA2F40C4C
@@ -5357,12 +7324,12 @@ modules:
           sceSysmoduleUnloadModule: 0x31D87805
           sceSysmoduleLoadModuleInternal: 0x2399BF45
           sceSysmoduleUnloadModuleInternal: 0xFF206B19
-        kernel: false
-        nid: 0x03FCF19D
   SceSystemGesture:
     nid: 0xCC78BA95
     libraries:
       SceSystemGesture:
+        kernel: false
+        nid: 0xAF3FE2D3
         functions:
           sceSystemGestureCreateTouchRecognizer: 0xC3367370
           sceSystemGestureFinalizePrimitiveTouchRecognizer: 0xB3875104
@@ -5381,12 +7348,40 @@ modules:
           sceSystemGestureUpdatePrimitiveTouchRecognizer: 0xDF4C665A
           sceSystemGestureUpdateTouchRecognizer: 0x851FB144
           sceSystemGestureUpdateTouchRecognizerRectangle: 0xA9DB29F6
+  SceTeleportClient:
+    nid: 0x59E1282B
+    libraries:
+      SceTeleportClient:
         kernel: false
-        nid: 0xAF3FE2D3
+        nid: 0xE68FB26D
+        functions:
+          sceTeleportClientInitialize: 0x48DEB4C8
+          sceTeleportClientFinalize: 0x26779A35
+          sceTeleportClientRegisterGetDeviceInfoCallback: 0xBA0D42D9
+          sceTeleportClientStartSearchDevice: 0x1775E8ED
+          sceTeleportClientEndSearchDevice: 0x2EBCF588
+          sceTeleportClientGetDeviceDescription: 0xBB89052D
+          sceTeleportClientGetRemoteAppInfoNum: 0x931E4029
+          sceTeleportClientGetRemoteAppInfo: 0xEE9AEE60
+          sceTeleportClientWakeupLatestDevice: 0x9336895E
+          sceTeleportClientGetCacheInfo: 0x8534FF0F
+          sceTeleportClientClearCacheInfo: 0xE1491C21
+          sceTeleportClientLaunchRemoteApp: 0xE076A357
+          sceTeleportClientDeleteRemoteApp: 0xB0F81AF3
+  SceTeleportServer:
+    nid: 0x43921EF6
+    libraries:
+      SceTeleportServer:
+        kernel: false
+        nid: 0x5DF15228
+        functions:
+          sceTeleportServerSendInitialInfo: 0x2420A460
   SceTouch:
     nid: 0x7DAC4DEC
     libraries:
       SceTouch:
+        kernel: false
+        nid: 0x3E4F4A81
         functions:
           sceTouchEnableIdleTimerCancelSetting: 0x012EAE3A
           sceTouchPeekRegion: 0x04440622
@@ -5414,9 +7409,9 @@ modules:
           sceTouchDisableTouchForceExt: 0xED25DFDC
           sceTouchGetPixelDensity: 0xF0704CF3
           sceTouchPeek: 0xFF082DF0
-        kernel: false
-        nid: 0x3E4F4A81
       SceTouchForDriver:
+        kernel: true
+        nid: 0xA4A7DAFC
         functions:
           ksceTouchSetRegionAttr: 0x10A998DE
           ksceTouchSetSamplingState: 0x1247257A
@@ -5435,12 +7430,12 @@ modules:
           ksceTouchEnableIdleTimerCancelSetting: 0xEBF4C86A
           ksceTouchGetDeviceInfo: 0xFD2E0278
           ksceTouchRegisterVirtualTouchDriver: 0x03C3AC7C
-        kernel: true
-        nid: 0xA4A7DAFC
   SceUlt:
     nid: 0xDC2996DB
     libraries:
       SceUlt:
+        kernel: false
+        nid: 0x220668A5
         functions:
           _sceUltConditionVariableCreate: 0xD76A156C
           _sceUltConditionVariableOptParamInitialize: 0x0603FCC1
@@ -5504,12 +7499,12 @@ modules:
           sceUltUlthreadYield: 0xCAD57BAD
           sceUltWaitingQueueResourcePoolDestroy: 0xC9E96714
           sceUltWaitingQueueResourcePoolGetWorkAreaSize: 0x644DA029
-        kernel: false
-        nid: 0x220668A5
   SceVideodec:
     nid: 0xDE
     libraries:
       SceVideodecUser:
+        kernel: false
+        nid: 0x163C3727
         functions:
           sceAvcdecCreateDecoder: 0xE82BB69B
           sceAvcdecCsc: 0xB2A428DB
@@ -5575,12 +7570,12 @@ modules:
           sceVideodecQueryMemSizeNongameapp: 0x2D9AE981
           sceVideodecSetConfig: 0x9B871779
           sceVideodecSetConfigInternal: 0x4A9CB138
-        kernel: false
-        nid: 0x163C3727
   SceVoice:
     nid: 0xF5F3E7CA
     libraries:
       SceVoice:
+        kernel: false
+        nid: 0xCE56E214
         functions:
           sceVoiceCheckTopology: 0x874054CE
           sceVoiceConnectIPortToOPort: 0x698BDAAE
@@ -5610,12 +7605,12 @@ modules:
           sceVoiceStop: 0xC3868DF6
           sceVoiceUpdatePort: 0xCE855C50
           sceVoiceWriteToIPort: 0x0A22EC0E
-        kernel: false
-        nid: 0xCE56E214
   SceVoiceQoS:
     nid: 0x9A89A62B
     libraries:
       SceVoiceQoS:
+        kernel: false
+        nid: 0x650551BC
         functions:
           sceVoiceQoSConnect: 0xE0C5CEEE
           sceVoiceQoSCreateLocalEndpoint: 0xAAB54BE4
@@ -5634,12 +7629,12 @@ modules:
           sceVoiceQoSSetConnectionAttribute: 0xE757806F
           sceVoiceQoSSetLocalEndpointAttribute: 0x540CEBA5
           sceVoiceQoSWritePacket: 0x2FE1F28F
-        kernel: false
-        nid: 0x650551BC
   SceVshBridge:
     nid: 0xA2BE1892
     libraries:
       SceVshBridge:
+        kernel: false
+        nid: 0x35C5ACD4
         functions:
           _vshAppMgrAcInstGetAcdirParam: 0x1E91B5F5
           _vshAppMgrBgdlSetQueueStatus: 0xE842333E
@@ -5847,8 +7842,6 @@ modules:
           vshSysconShowModeClear: 0xD7E71C94
           vshSysconShowModeSet: 0x5E2A8BBD
           vshSysconVerifyConfigstorageScript: 0xE1E2BAD0
-        kernel: false
-        nid: 0x35C5ACD4
   SceStdio:
     nid: 0x771A73C0
     libraries:
@@ -5891,13 +7884,13 @@ modules:
           ksceSblACMgrIsDevelopmentMode: 0xE87D1777
           ksceSblACMgrIsPspEmu: 0xFD00C72A
   SceSblUpdateMgr:
-     nid: 0x528F6BF5
-     libraries:
-       SceSblSsUpdateMgr:
-         kernel: false
-         nid: 0x31406C49
-         functions:
-           sceSblSsUpdateMgrSetBootMode: 0xC725E3F0
+    nid: 0x528F6BF5
+    libraries:
+      SceSblSsUpdateMgr:
+        kernel: false
+        nid: 0x31406C49
+        functions:
+          sceSblSsUpdateMgrSetBootMode: 0xC725E3F0
   SceUsbd:
     nid: 0x3525FE7A
     libraries:
