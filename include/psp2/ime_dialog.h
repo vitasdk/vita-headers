@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceIme}
- * \usage{psp2/ime_dialog.h,SceIme_stub}
+ * \usage{psp2/ime_dialog.h,SceIme_stub,SCE_SYSMODULE_IME}
  */
 
 

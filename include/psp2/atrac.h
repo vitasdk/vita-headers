@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceAtrac}
- * \usage{psp2/atrac.h,SceAtrac_stub}
+ * \usage{psp2/atrac.h,SceAtrac_stub,SCE_SYSMODULE_ATRAC}
  */
 
 

@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceHttp}
- * \usage{psp2/net/http.h,SceHttp_stub}
+ * \usage{psp2/net/http.h,SceHttp_stub,SCE_SYSMODULE_HTTP}
  */
 
 
