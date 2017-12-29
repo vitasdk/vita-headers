@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceShutterSound}
- * \usage{psp2/shutter_sound.h,SceShutterSound_stub}
+ * \usage{psp2/shutter_sound.h,SceShutterSound_stub,SCE_SYSMODULE_SHUTTER_SOUND}
  */
 
 
