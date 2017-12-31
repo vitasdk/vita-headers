@@ -25,7 +25,7 @@ script:
     - cp -r include/* $VITASDK/arm-vita-eabi/include
     - vita-libs-gen db.yml output
     - cd output
-    - make
+    - make > /dev/null
     - cp *_stub.a $VITASDK/arm-vita-eabi/lib
     - cd $TRAVIS_BUILD_DIR
     - git clone https://github.com/vitasdk/samples
