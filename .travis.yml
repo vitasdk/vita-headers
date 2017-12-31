@@ -1,3 +1,4 @@
+language: c
 sudo: false
 
 cache:
@@ -30,7 +31,11 @@ script:
     - cd $TRAVIS_BUILD_DIR
     - git clone https://github.com/vitasdk/samples
     - cd samples
-    - for f in */Makefile; do make -C ${f%/*} all; done
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+
 before_deploy:
     - git config --global user.email "builds@travis-ci.com"
     - git config --global user.name "Travis CI"
