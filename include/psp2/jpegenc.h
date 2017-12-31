@@ -83,7 +83,7 @@ int sceJpegEncoderEnd(SceJpegEncoderContext context);
  * @param[in] context - A pointer to an already initialized ::SceJpegEncoderContext
  * @param[in] inBuffer - A physically continuous memory block 256 bytes aligned
  *
- * @return 0 on success, < 0 on error.
+ * @return encoded jpeg size on success, < 0 on error.
  */
 int sceJpegEncoderEncode(SceJpegEncoderContext context, const void *inBuffer);
 
