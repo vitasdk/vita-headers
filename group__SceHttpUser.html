@@ -81,7 +81,7 @@ $(document).ready(function(){initNavTree('group__SceHttpUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/net/http.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceHttp_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/net/http.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceHttp_stub </div></div><!-- fragment --><p> Load the required module: </p><div class="fragment"><div class="line"><a class="code" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41acd69d4b163786ef18606b607b6ac9f3b">SCE_SYSMODULE_HTTP</a>); </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -226,8 +226,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceHttpUriMerge</b> (c
 <tr class="memitem:gad3469466b43b690ecdb1bab460cd9e29"><td class="memItemLeft" align="right" valign="top"><a id="gad3469466b43b690ecdb1bab460cd9e29"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceHttpUriSweepPath</b> (char *dst, const char *src, unsigned int srcSize)</td></tr>
 <tr class="separator:gad3469466b43b690ecdb1bab460cd9e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b7cbe25130d4e547d78d210cbe87ffb"><td class="memItemLeft" align="right" valign="top"><a id="ga1b7cbe25130d4e547d78d210cbe87ffb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceHttpsLoadCert</b> (int caCertNum, const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> **caList, const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> *cert, const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> *privKey)</td></tr>
+<tr class="memitem:ga1b7cbe25130d4e547d78d210cbe87ffb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHttpUser.html#ga1b7cbe25130d4e547d78d210cbe87ffb">sceHttpsLoadCert</a> (int caCertNum, const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> **caList, const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> *cert, const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> *privKey)</td></tr>
+<tr class="memdesc:ga1b7cbe25130d4e547d78d210cbe87ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register RootCA certificate for HTTPS authentication.  <a href="#ga1b7cbe25130d4e547d78d210cbe87ffb">More...</a><br /></td></tr>
 <tr class="separator:ga1b7cbe25130d4e547d78d210cbe87ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa87b2e676d813646696660175beb696b"><td class="memItemLeft" align="right" valign="top"><a id="gaa87b2e676d813646696660175beb696b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceHttpsUnloadCert</b> (void)</td></tr>
@@ -506,6 +506,60 @@ caNum</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga1b7cbe25130d4e547d78d210cbe87ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b7cbe25130d4e547d78d210cbe87ffb">&sect;&nbsp;</a></span>sceHttpsLoadCert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceHttpsLoadCert </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>caCertNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> **&#160;</td>
+          <td class="paramname"><em>caList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceHttpUser.html#structSceHttpsData">SceHttpsData</a> *&#160;</td>
+          <td class="paramname"><em>privKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register RootCA certificate for HTTPS authentication. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">caCertNum</td><td>- Number of elements of the list referncing to RootCA certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">caList</td><td>- List referencing to RootCA certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert</td><td>- Client certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">privKey</td><td>- Private key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><b>SCE_SYSMODULE_HTTPS</b> module must be loaded with <a class="el" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29" title="Load a module. ">sceSysmoduleLoadModule</a> to use this function. </dd></dl>
 
 </div>
 </div>
