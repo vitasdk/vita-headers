@@ -979,6 +979,18 @@ typedef enum SceGxmTransferFlags {
 	SCE_GXM_TRANSFER_FRAGMENT_SYNC	= 0x00000001u,
 	SCE_GXM_TRANSFER_VERTEX_SYNC	= 0x00000002u
 } SceGxmTransferFlags;
+	
+typedef enum SceGxmTransferColorKeyMode {
+	SCE_GXM_TRANSFER_COLORKEY_NONE   = 0,
+	SCE_GXM_TRANSFER_COLORKEY_PASS   = 1,
+	SCE_GXM_TRANSFER_COLORKEY_REJECT = 2
+} SceGxmTransferColorKeyMode;
+	
+typedef enum SceGxmTransferType {
+	SCE_GXM_TRANSFER_LINEAR   = 0x00000000U,
+	SCE_GXM_TRANSFER_TILED    = 0x00400000U,
+	SCE_GXM_TRANSFER_SWIZZLED = 0x00800000U
+} SceGxmTransferType;
 
 typedef struct SceGxmBlendInfo {
 	SceGxmColorMask colorMask;
@@ -1468,7 +1480,9 @@ int sceGxmDestroyRenderTarget(SceGxmRenderTarget *renderTarget);
 
 int sceGxmSetUniformDataF(void *uniformBuffer, const SceGxmProgramParameter *parameter, unsigned int componentOffset, unsigned int componentCount, const float *sourceData);
 
+int sceGxmTransferCopy(uint32_t width, uint32_t height, uint32_t colorKeyValue, uint32_t colorKeyMask, SceGxmTransferColorKeyMode colorKeyMode, SceGxmTransferFormat srcFormat, SceGxmTransferType srcType, const void *srcAddress, uint32_t srcX, uint32_t srcY, int32_t srcStride, SceGxmTransferFormat destFormat, SceGxmTransferType destType, void *destAddress, uint32_t destX, uint32_t destY, int32_t destStride, SceGxmSyncObject *syncObject, uint32_t syncFlags, const SceGxmNotification *notification);
 int sceGxmTransferDownscale(SceGxmTransferFormat srcFormat, const void *srcAddress, unsigned int srcX, unsigned int srcY, unsigned int srcWidth, unsigned int srcHeight, int srcStride, SceGxmTransferFormat destFormat, void *destAddress, unsigned int destX, unsigned int destY, int destStride, SceGxmSyncObject *syncObject, unsigned int syncFlags, const SceGxmNotification* notification);
+int sceGxmTransferFinish(void);
 
 #ifdef __cplusplus
 }
