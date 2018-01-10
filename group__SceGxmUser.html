@@ -718,6 +718,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmDestroyRenderTar
 <tr class="memitem:ga056dfffe5cdbf51035becf28b8166421"><td class="memItemLeft" align="right" valign="top"><a id="ga056dfffe5cdbf51035becf28b8166421"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmSetUniformDataF</b> (void *uniformBuffer, const SceGxmProgramParameter *parameter, unsigned int componentOffset, unsigned int componentCount, const float *sourceData)</td></tr>
 <tr class="separator:ga056dfffe5cdbf51035becf28b8166421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf1f493cd3bfb63bf4aed4641a3075cc"><td class="memItemLeft" align="right" valign="top"><a id="gadf1f493cd3bfb63bf4aed4641a3075cc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmTransferCopy</b> (uint32_t width, uint32_t height, uint32_t colorKeyValue, uint32_t colorKeyMask, SceGxmTransferColorKeyMode colorKeyMode, SceGxmTransferFormat srcFormat, SceGxmTransferType srcType, const void *srcAddress, uint32_t srcX, uint32_t srcY, int32_t srcStride, SceGxmTransferFormat destFormat, SceGxmTransferType destType, void *destAddress, uint32_t destX, uint32_t destY, int32_t destStride, SceGxmSyncObject *syncObject, uint32_t syncFlags, const <a class="el" href="group__SceGxmUser.html#structSceGxmNotification">SceGxmNotification</a> *notification)</td></tr>
+<tr class="separator:gadf1f493cd3bfb63bf4aed4641a3075cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa23cde550c9213b294fed456c42856a8"><td class="memItemLeft" align="right" valign="top"><a id="gaa23cde550c9213b294fed456c42856a8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmTransferDownscale</b> (SceGxmTransferFormat srcFormat, const void *srcAddress, unsigned int srcX, unsigned int srcY, unsigned int srcWidth, unsigned int srcHeight, int srcStride, SceGxmTransferFormat destFormat, void *destAddress, unsigned int destX, unsigned int destY, int destStride, SceGxmSyncObject *syncObject, unsigned int syncFlags, const <a class="el" href="group__SceGxmUser.html#structSceGxmNotification">SceGxmNotification</a> *notification)</td></tr>
+<tr class="separator:gaa23cde550c9213b294fed456c42856a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90cd5c5b092fb7bbe0be8d41549256ba"><td class="memItemLeft" align="right" valign="top"><a id="ga90cd5c5b092fb7bbe0be8d41549256ba"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmTransferFinish</b> (void)</td></tr>
+<tr class="separator:ga90cd5c5b092fb7bbe0be8d41549256ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
