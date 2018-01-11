@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceHttp}
- * \usage{psp2/net/http.h,SceHttp_stub}
+ * \usage{psp2/net/http.h,SceHttp_stub,SCE_SYSMODULE_HTTP}
  */
 
 
@@ -335,6 +335,18 @@ int sceHttpUriMerge(char *mergedUrl, const char *url, const char *relativeUrl, u
 int sceHttpUriSweepPath(char *dst, const char *src , unsigned int srcSize);
 
 // https
+/**
+ * Register RootCA certificate for HTTPS authentication
+ *
+ * @param[in] caCertNum - Number of elements of the list referncing to RootCA certificate
+ * @param[in] caList - List referencing to RootCA certificate
+ * @param[in] cert - Client certificate
+ * @param[in] privKey - Private key
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note <b>SCE_SYSMODULE_HTTPS</b> module must be loaded with ::sceSysmoduleLoadModule to use this function.
+ */
 int sceHttpsLoadCert(int caCertNum, const SceHttpsData **caList, const SceHttpsData *cert, const SceHttpsData *privKey);
 int sceHttpsUnloadCert(void);
 int sceHttpsEnableOption(unsigned int sslFlags);

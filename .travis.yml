@@ -1,3 +1,4 @@
+language: c
 sudo: false
 
 cache:
@@ -17,6 +18,7 @@ script:
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
     - export VITASDK=$PWD/vitasdk
     - export PATH=$VITASDK/bin:$PATH
+    - bash $TRAVIS_BUILD_DIR/.travis.d/download_external_libs.sh
     - cd $VITASDK/arm-vita-eabi/include
     - rm -rf psp2 psp2kern vitasdk vitasdk.h
     - cd $VITASDK/arm-vita-eabi/lib
@@ -25,12 +27,16 @@ script:
     - cp -r include/* $VITASDK/arm-vita-eabi/include
     - vita-libs-gen db.yml output
     - cd output
-    - make
+    - make > /dev/null
     - cp *_stub.a $VITASDK/arm-vita-eabi/lib
     - cd $TRAVIS_BUILD_DIR
     - git clone https://github.com/vitasdk/samples
     - cd samples
-    - for f in */Makefile; do make -C ${f%/*} all; done
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+
 before_deploy:
     - git config --global user.email "builds@travis-ci.com"
     - git config --global user.name "Travis CI"

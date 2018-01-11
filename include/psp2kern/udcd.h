@@ -7,7 +7,7 @@
 #ifndef _PSP2_KERNEL_UDCD_H_
 #define _PSP2_KERNEL_UDCD_H_
 
-#include <psp2/types.h>
+#include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -16,16 +16,16 @@ extern "C" {
 /** Enumeration for Device and/or Interface Class codes
  */
 typedef enum SceUdcdUsbClass {
-	USB_CLASS_PER_INTERFACE         0x00,  //!< for DeviceClass
-	USB_CLASS_AUDIO                 0x01,
-	USB_CLASS_COMM                  0x02,
-	USB_CLASS_HID                   0x03,
-	USB_CLASS_PTP                   0x06,
-	USB_CLASS_PRINTER               0x07,
-	USB_CLASS_MASS_STORAGE          0x08,
-	USB_CLASS_HUB                   0x09,
-	USB_CLASS_DATA                  0x0A,
-	USB_CLASS_VENDOR_SPEC           0xFF
+	USB_CLASS_PER_INTERFACE       = 0x00,  //!< for DeviceClass
+	USB_CLASS_AUDIO               = 0x01,
+	USB_CLASS_COMM                = 0x02,
+	USB_CLASS_HID                 = 0x03,
+	USB_CLASS_PTP                 = 0x06,
+	USB_CLASS_PRINTER             = 0x07,
+	USB_CLASS_MASS_STORAGE        = 0x08,
+	USB_CLASS_HUB                 = 0x09,
+	USB_CLASS_DATA                = 0x0A,
+	USB_CLASS_VENDOR_SPEC         = 0xFF
 } SceUdcdUsbClass;
 
 /** Enumeration for descriptor types
@@ -341,18 +341,18 @@ typedef struct SceUdcdDriver {
 	SceUdcdConfiguration *configuration_hi;         //!< Pointer to hi-speed device configuration
 	SceUdcdDeviceDescriptor *descriptor;            //!< Pointer to full-speed device descriptor
 	SceUdcdConfiguration *configuration;            //!< Pointer to full-speed device configuration
-	SceUdcdStringDescriptor *stringDescriptorsUnk0; //!< Unknown string descriptors
-	SceUdcdStringDescriptor *stringDescriptorsUnk1; //!< Default String descriptor
-	SceUdcdStringDescriptor *stringDescriptorsUnk2; //!< String descriptors (unknown)
-	int (*processRequest) (int recipient, int arg /* endpoint number or interface number */, SceUdcdEP0DeviceRequest *req); //!< Received a control request
-	int (*changeSetting) (int interfaceNumber, int alternateSetting); //!< Change alternate setting
-	int (*attach) (int usb_version);                                  //!< Configuration set (attach) function
-	void (*detach) (void);                                            //!< Configuration unset (detach) function
-	void (*configure) (int usb_version, int desc_count, SceUdcdInterfaceSettings *settings); //!< Configure the device
-	int (*start) (int size, void *args); //!< Function called when the driver is started
-	int (*stop) (int size, void *args);  //!< Function called when the driver is stopped
-	unsigned int unk1;                   //!< Unknown data
-	unsigned int unk2;                   //!< Unknown data
+	SceUdcdStringDescriptor *stringDescriptors; //!< Default string descriptors
+	SceUdcdStringDescriptor *stringDescriptorProduct; //!< Product string descriptor (iProduct has to be 2)
+	SceUdcdStringDescriptor *stringDescriptorSerial; //!< Serial string descriptor (iSerial has to be 3)
+	int (*processRequest)(int recipient, int arg /* endpoint number or interface number */, SceUdcdEP0DeviceRequest *req, void *user_data); //!< Received a control request
+	int (*changeSetting)(int interfaceNumber, int alternateSetting, int bus); //!< Change alternate setting
+	int (*attach)(int usb_version, void *user_data);                                  //!< Configuration set (attach) function
+	void (*detach)(void *user_data);                                            //!< Configuration unset (detach) function
+	void (*configure)(int usb_version, int desc_count, SceUdcdInterfaceSettings *settings, void *user_data); //!< Configure the device
+	int (*start)(int size, void *args, void *user_data); //!< Function called when the driver is started
+	int (*stop)(int size, void *args, void *user_data);  //!< Function called when the driver is stopped
+	void *user_data;                   //!< User data
+	int bus;                   //!< USB bus
 	struct SceUdcdDriver *link;          //!< Link to next USB driver in the chain, set to NULL
 } SceUdcdDriver;
 
@@ -481,6 +481,16 @@ int ksceUdcdWaitCancel(void);
  * @return 0 on success, < 0 on error
  */
 int ksceUdcdRegister(SceUdcdDriver *drv);
+
+/**
+ * Register a USB driver to a specific USB bus.
+ *
+ * @param drv - Pointer to a filled out USB driver
+ * @param bus - The USB bus index (usually 2)
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdRegisterToBus(SceUdcdDriver *drv, int bus);
 
 /**
  * Unregister a USB driver

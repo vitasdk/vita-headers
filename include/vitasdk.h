@@ -42,6 +42,7 @@
 #include <psp2/rtc.h>
 #include <psp2/screenshot.h>
 #include <psp2/shellutil.h>
+#include <psp2/shutter_sound.h>
 #include <psp2/sqlite.h>
 #include <psp2/sysmodule.h>
 #include <psp2/system_param.h>
@@ -52,6 +53,7 @@
 #include <psp2/usbstorvstor.h>
 #include <psp2/videodec.h>
 #include <psp2/videoexport.h>
+#include <psp2/vshbridge.h>
 
 #include <psp2/io/devctl.h>
 #include <psp2/io/dirent.h>

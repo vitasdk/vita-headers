@@ -3,10 +3,10 @@
  * \usage{psp2kern/lowio/i2c.h,SceI2cForDriver_stub}
  */
 
-#ifndef _PSP2_LOWIO_I2C_H_
-#define _PSP2_LOWIO_I2C_H_
+#ifndef _PSP2_KERN_LOWIO_I2C_H_
+#define _PSP2_KERN_LOWIO_I2C_H_
 
-#include <psp2/types.h>
+#include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -43,5 +43,5 @@ int ksceI2cSetDebugHandlers(int bus, SceI2cDebugHandlers *debug_handlers);
 }
 #endif
 
-#endif /* _PSP2_LOWIO_I2C_H_ */
+#endif /* _PSP2_KERN_LOWIO_I2C_H_ */
 

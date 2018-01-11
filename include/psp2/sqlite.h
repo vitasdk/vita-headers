@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceSqlite}
- * \usage{psp2/sqlite.h,SceSqlite_stub}
+ * \usage{psp2/sqlite.h,SceSqlite_stub,SCE_SYSMODULE_SQLITE}
  */
 
 

@@ -17,6 +17,9 @@ extern "C" {
 typedef enum SceCtrlErrorCode {
 	SCE_CTRL_ERROR_INVALID_ARG   = 0x80340001,
 	SCE_CTRL_ERROR_PRIV_REQUIRED = 0x80340002,
+	SCE_CTRL_ERROR_NO_DEVICE     = 0x80340020,
+	SCE_CTRL_ERROR_NOT_SUPPORTED = 0x80340021,
+	SCE_CTRL_ERROR_INVALID_MODE  = 0x80340022,
 	SCE_CTRL_ERROR_FATAL         = 0x803400FF
 } SceCtrlErrorCode;
 
@@ -34,7 +37,9 @@ typedef enum SceCtrlButtons {
 	SCE_CTRL_DOWN        = 0x00000040,            //!< Down D-Pad button.
 	SCE_CTRL_LEFT        = 0x00000080,            //!< Left D-Pad button.
 	SCE_CTRL_LTRIGGER    = 0x00000100,            //!< Left trigger.
+	SCE_CTRL_L2          = SCE_CTRL_LTRIGGER,     //!< L2 button.
 	SCE_CTRL_RTRIGGER    = 0x00000200,            //!< Right trigger.
+	SCE_CTRL_R2          = SCE_CTRL_RTRIGGER,     //!< R2 button.
 	SCE_CTRL_L1          = 0x00000400,            //!< L1 button.
 	SCE_CTRL_R1          = 0x00000800,            //!< R1 button.
 	SCE_CTRL_TRIANGLE    = 0x00001000,            //!< Triangle button.
@@ -82,14 +87,32 @@ typedef struct SceCtrlData {
 	unsigned char 	rx;
 	/** Right analogue stick, Y axis. */
 	unsigned char 	ry;
-	/** Reserved. */
-	uint8_t		reserved0[4];
+	/** Up button */
+	uint8_t		up;
+	/** Right button */
+	uint8_t		right;
+	/** Down button */
+	uint8_t		down;
+	/** Left button */
+	uint8_t		left;
 	/** Left trigger (L2) */
-	unsigned char	lt;
+	uint8_t		lt;
 	/** Right trigger (R2) */
-	unsigned char	rt;
+	uint8_t		rt;
+	/** Left button (L1) */
+	uint8_t		l1;
+	/** Right button (R1) */
+	uint8_t		r1;
+	/** Triangle button */
+	uint8_t		triangle;
+	/** Circle button */
+	uint8_t		circle;
+	/** Cross button */
+	uint8_t		cross;
+	/** Square button */
+	uint8_t		square;
 	/** Reserved. */
-	uint8_t 	reserved1[10];
+	uint8_t 	reserved[4];
 } SceCtrlData;
 
 /** Structure to pass as argument to ::sceCtrlSetRapidFire */

@@ -23,7 +23,8 @@ typedef enum SceDisplayErrorCode {
 	SCE_DISPLAY_ERROR_INVALID_RESOLUTION    = 0x80290005,
 	SCE_DISPLAY_ERROR_INVALID_UPDATETIMING  = 0x80290006,
 	SCE_DISPLAY_ERROR_NO_FRAME_BUFFER       = 0x80290007,
-	SCE_DISPLAY_ERROR_NO_PIXEL_DATA         = 0x80290008
+	SCE_DISPLAY_ERROR_NO_PIXEL_DATA         = 0x80290008,
+	SCE_DISPLAY_ERROR_NO_OUTPUT_SIGNAL      = 0x80290009
 } SceDisplayErrorCode;
 
 typedef enum SceDisplayPixelFormat {
@@ -78,6 +79,11 @@ int sceDisplaySetFrameBuf(const SceDisplayFrameBuf *pParam, SceDisplaySetBufSync
 int sceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, SceDisplaySetBufSync sync);
 
 /**
+ * Primary display index
+ */
+int sceDisplayGetPrimaryHead(void);
+
+/**
  * Get current number of fps for the current screen mode.
  *
  * @param[out] pFps - Pointer to a float variable to store current number of fps.
@@ -88,9 +94,26 @@ int sceDisplayGetFrameBuf(SceDisplayFrameBuf *pParam, SceDisplaySetBufSync sync)
 int sceDisplayGetRefreshRate(float *pFps);
 
 /**
+ * Get maximum framebuffer resolution
+ *
+ * @param[out] width - Maximum width
+ * @param[out] height - Maximum height
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int sceDisplayGetMaximumFrameBufResolution(int *width, int *height);
+
+/**
  * Number of vertical blank pulses up to now
  */
 int sceDisplayGetVcount(void);
+
+/**
+ * Number of vertical blank pulses up to now for a display
+ *
+ * @param[in] display - Display index
+ */
+int sceDisplayGetVcountInternal(int display);
 
 /**
  * Wait for vertical blank start

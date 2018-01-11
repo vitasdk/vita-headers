@@ -82,6 +82,72 @@ int sceRegMgrSetKeyInt(const char* category, const char* name, int buf);
  */
 int sceRegMgrSetKeyStr(const char* category, const char* name, char* buf, const int size);
 
+/**
+ * Get all keys' initial information by category (from os0:kd/registry.db0)
+ *
+ * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
+ * @param buf[out] - Pointer to a char buffer to hold the values
+ * @param elements_number - The number of elements of the buffer
+ *
+ * @return 0 on success, < 0 on error
+ */
+int sceRegMgrGetInitVals(const char* category, char* buf, const int elements_number);
+
+/**
+ * Get all keys' information by category
+ *
+ * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
+ * @param buf[out] - Pointer to a char buffer to hold the values
+ * @param elements_number - The number of elements of the buffer
+ *
+ * @return 0 on success, < 0 on error
+ */
+int sceRegMgrGetKeys(const char* category, char* buf, const int elements_number);
+
+/**
+ * Set all keys' information by category
+ *
+ * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
+ * @param buf[out] - Pointer to a char buffer that holds the values
+ * @param elements_number - The number of elements of the buffer
+ *
+ * @return 0 on success, < 0 on error
+ */
+int sceRegMgrSetKeys(const char* category, char* buf, const int elements_number);
+
+/**
+ * Get a system param key's information by id
+ *
+ * @param id - The id of the key
+ * @param buf[out] - Pointer to an int to hold the value
+ *
+ * @return 0 on success, < 0 on error
+ */
+int sceRegMgrSystemParamGetInt(const int id, int* buf);
+
+/**
+ * Get a system param key's information by id
+ *
+ * @param id - The id of the key
+ * @param buf[out] - Pointer to a char buffer to hold the value
+ * @param size - The size of the buffer
+ *
+ * @return 0 on success, < 0 on error
+ */
+int sceRegMgrSystemParamGetStr(const int id, char* buf, const int size);
+
+
+/**
+ * Get the registry version
+ *
+ * @param id - The id of the key
+ * @param buf[out] - Pointer to a char buffer to hold the value
+ *
+ * @return 0 on success, < 0 on error
+ */
+int sceRegMgrGetRegVersion(int version, char* buf);
+
+
 #ifdef __cplusplus
 }
 #endif

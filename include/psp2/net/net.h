@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceNet}
- * \usage{psp2/net/net.h,SceNet_stub}
+ * \usage{psp2/net/net.h,SceNet_stub,SCE_SYSMODULE_NET}
  */
 
 

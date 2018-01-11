@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceAppUtil}
- * \usage{psp2/apputil.h,SceAppUtil_stub}
+ * \usage{psp2/apputil.h,SceAppUtil_stub,SCE_SYSMODULE_APPUTIL}
  */
 
 

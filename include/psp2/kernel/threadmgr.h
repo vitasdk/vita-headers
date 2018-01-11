@@ -414,7 +414,7 @@ int sceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout);
 int sceKernelWaitSemaCB(SceUID semaid, int signal, SceUInt *timeout);
 
 /**
- * Poll a sempahore.
+ * Poll a semaphore.
  *
  * @param semaid - UID of the semaphore to poll.
  * @param signal - The value to test for.
@@ -1115,6 +1115,7 @@ typedef struct SceKernelLwMutexOptParam {
 int sceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
 int sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
 int sceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
+int sceKernelTryLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount);
 int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 
 typedef struct	SceKernelLwCondWork {

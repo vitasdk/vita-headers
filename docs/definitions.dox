@@ -65,6 +65,9 @@
  *
  *     \defgroup SceAudioIn Audio In Library
  *      Open and close Audio In ports
+ *
+ *     \defgroup SceShutterSound Shutter Sounds Library
+ *      Play camera related shutter sounds
  * \}
  *
  *
@@ -99,14 +102,23 @@
  * \}
  *
  *
- * \defgroup Lowio Low-level I/O
- *  GPIO, I2C, PWM, DSI, CSI, Clocks...
+ * \defgroup Lowio Low-level I/O and communications
+ *  GPIO, I2C, SPI, UART, PWM, DSI, CSI, Syscon, Clocks...
  * \{
  *     \defgroup SceGpio GPIO Library
  *      Read/write GPIO ports, configure GPIO interrupts...
  *
  *     \defgroup SceI2c I2C Library
- *      Do read/write I2C transfers, etc.
+ *      I2C communication
+ *
+ *     \defgroup ScePervasive Pervasive Library
+ *      Controls the clocks of the system.
+ *
+ *     \defgroup SceSyscon Syscon communication Library
+ *      Syscon processor communication
+ *
+ *     \defgroup SceUart UART Library
+ *      UART communication
  * \}
  *
  *
@@ -154,6 +166,9 @@
  *
  *     \defgroup SceIntrMgr Interrupt Manager Library
  *      Mask interrupts, register interrupt handlers, etc
+ *     
+ *     \defgroup SceExcpmgr Exception handling Library
+ *      Registers exception handlers and related utilities
  * \}
  *
  *
@@ -206,11 +221,14 @@
  *
  *     \defgroup SceShellSvc Shell Utils Library
  *      Set handlers for opening various menus
+ *
+ *     \defgroup SceVshBridge VSH Bridge Library
+ *      Model info, System, Memory card state...
  * \}
  *
  *
- * \defgroup SerialCommunication Serial Communication
- *  USB, MTP, ...
+ * \defgroup USB Universal Serial Bus
+ *  USB driver, USB Device Controller Driver, MTP/Serial/Storage over USB, ...
  * \{
  *     \defgroup SceUsbd USB Driver Library
  *      Control USB driver interface
