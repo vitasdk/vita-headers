@@ -75,6 +75,16 @@ typedef enum SceIoDevType {
 SceUID ksceIoOpen(const char *file, int flags, SceMode mode);
 
 /**
+ * Open or create a file for reading or writing (asynchronous)
+ *
+ * @param file - Pointer to a string holding the name of the file to open
+ * @param flags - Libc styled flags that are or'ed together
+ * @param mode - File access mode (One or more ::SceIoMode).
+ * @return A non-negative integer is a valid fd, anything else an error
+ */
+SceUID ksceIoOpenAsync(const char *file, int flags, SceMode mode);
+
+/**
  * Delete a descriptor
  *
  * @code
@@ -85,6 +95,14 @@ SceUID ksceIoOpen(const char *file, int flags, SceMode mode);
  * @return < 0 on error
  */
 int ksceIoClose(SceUID fd);
+
+/**
+ * Delete a descriptor (asynchronous)
+ *
+ * @param fd - File descriptor to close
+ * @return < 0 on error
+ */
+int ksceIoCloseAsync(SceUID fd);
 
 /**
  * Read input
@@ -119,6 +137,23 @@ int ksceIoRead(SceUID fd, void *data, SceSize size);
 int ksceIoReadAsync(SceUID fd, void *data, SceSize size);
 
 /**
+ * Read input at offset
+ *
+ * @par Example:
+ * @code
+ * bytes_read = ksceIoPread(fd, data, 100, 0x1000);
+ * @endcode
+ *
+ * @param fd - Opened file descriptor to read from
+ * @param data - Pointer to the buffer where the read data will be placed
+ * @param size - Size of the read in bytes
+ * @param offset - Offset to read
+ *
+ * @return < 0 on error.
+ */
+int ksceIoPread(SceUID fd, void *data, SceSize size, SceOff offset);
+
+/**
  * Write output
  *
  * @par Example:
@@ -146,6 +181,23 @@ int ksceIoWrite(SceUID fd, const void *data, SceSize size);
 int ksceIoWriteAsync(SceUID fd, const void *data, SceSize size);
 
 /**
+ * Write output at offset
+ *
+ * @par Example:
+ * @code
+ * bytes_written = ksceIoPwrite(fd, data, 100, 0x1000);
+ * @endcode
+ *
+ * @param fd - Opened file descriptor to write to
+ * @param data - Pointer to the data to write
+ * @param size - Size of data to write
+ * @param offset - Offset to write
+ *
+ * @return The number of bytes written
+ */
+int ksceIoPwrite(SceUID fd, const void *data, SceSize size, SceOff offset);
+
+/**
  * Reposition read/write file descriptor offset
  *
  * @par Example:
@@ -160,6 +212,17 @@ int ksceIoWriteAsync(SceUID fd, const void *data, SceSize size);
  * @return The position in the file after the seek.
  */
 SceOff ksceIoLseek(SceUID fd, SceOff offset, int whence);
+
+/**
+ * Reposition read/write file descriptor offset (asynchronous)
+ *
+ * @param fd - Opened file descriptor with which to seek
+ * @param offset - Relative offset from the start position given by whence
+ * @param whence - One of ::SceIoSeekMode.
+ *
+ * @return < 0 on error. Actual value should be passed returned by the ::ksceIoWaitAsync call.
+ */
+int ksceIoLseekAsync(SceUID fd, SceOff offset, int whence);
 
 /**
  * Remove directory entry
@@ -194,6 +257,15 @@ int ksceIoSync(const char *device, unsigned int unk);
  * @return < 0 on error.
  */
 int ksceIoSyncByFd(SceUID fd);
+
+/**
+  * Cancel an asynchronous operation on a file descriptor.
+  *
+  * @param fd - The file descriptor to perform cancel on.
+  *
+  * @return < 0 on error.
+  */
+int ksceIoCancel(SceUID fd);
 
 /**
   * Mounts a device

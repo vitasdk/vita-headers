@@ -2476,10 +2476,12 @@ modules:
         kernel: true
         nid: 0x40FD29C7
         functions:
+          ksceIoCancel: 0x6D59658D
           ksceIoChstat: 0x7D42B8DC
           ksceIoChstatByFd: 0xDF57A75F
           ksceIoClearErrorEvent: 0x40B933C7
           ksceIoClose: 0xF99DD8A3
+          ksceIoCloseAsync: 0x11C57CC6
           ksceIoCreateErrorEvent: 0x3C0343DB
           ksceIoCreateMountEvent: 0x2DFA192F
           ksceIoDclose: 0x19C81DD6
@@ -2493,9 +2495,13 @@ modules:
           ksceIoGetstat: 0x75C96D25
           ksceIoGetstatByFd: 0x462F059B
           ksceIoLseek: 0x62090481
+          ksceIoLseekAsync: 0x541BAABD
           ksceIoMkdir: 0x7F710B25
           ksceIoMount: 0xD070BC48
           ksceIoOpen: 0x75192972
+          ksceIoOpenAsync: 0x451001DE
+          ksceIoPread: 0x2A17515D
+          ksceIoPwrite: 0x5F1512C8
           ksceIoRead: 0xE17EFC03
           ksceIoReadAsync: 0x69047C81
           ksceIoRemove: 0x0D7BB3E1
