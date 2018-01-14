@@ -112,15 +112,9 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0">ksceUdcdGetDrvState</a> (const char *driverName)</td></tr>
 <tr class="memdesc:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of a specific USB driver.  <a href="#ga990e7c4f2cc70b36239b4dfd2cb10fa0">More...</a><br /></td></tr>
 <tr class="separator:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60e4cb4b464c7afeddf6426f371f7def"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga60e4cb4b464c7afeddf6426f371f7def">ksceUdcdGetDrvList</a> (unsigned int flags, <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a> *list, int size)</td></tr>
-<tr class="memdesc:ga60e4cb4b464c7afeddf6426f371f7def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of drivers.  <a href="#ga60e4cb4b464c7afeddf6426f371f7def">More...</a><br /></td></tr>
-<tr class="separator:ga60e4cb4b464c7afeddf6426f371f7def"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga32fcbde8265107dc487376019b45adb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga32fcbde8265107dc487376019b45adb9">ksceUdcdWaitState</a> (unsigned int state, unsigned int waitMode, SceUInt *timeout)</td></tr>
 <tr class="memdesc:ga32fcbde8265107dc487376019b45adb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for USB state.  <a href="#ga32fcbde8265107dc487376019b45adb9">More...</a><br /></td></tr>
 <tr class="separator:ga32fcbde8265107dc487376019b45adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf3b835b0016db9d77d0b21412c2d2d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gacf3b835b0016db9d77d0b21412c2d2d3">ksceUdcdWaitCancel</a> (void)</td></tr>
-<tr class="memdesc:gacf3b835b0016db9d77d0b21412c2d2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a pending ksceUdcdWaitState.  <a href="#gacf3b835b0016db9d77d0b21412c2d2d3">More...</a><br /></td></tr>
-<tr class="separator:gacf3b835b0016db9d77d0b21412c2d2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f">ksceUdcdRegister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
 <tr class="memdesc:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver.  <a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">More...</a><br /></td></tr>
 <tr class="separator:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1145,51 +1139,6 @@ info[64]</td>
 
 </div>
 </div>
-<a id="ga60e4cb4b464c7afeddf6426f371f7def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60e4cb4b464c7afeddf6426f371f7def">&sect;&nbsp;</a></span>ksceUdcdGetDrvList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUdcdGetDrvList </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a> *&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the list of drivers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flags</td><td>- One or more <a class="el" href="group__SceUdcdKernel.html#ga9a4e508891cafbcd50ec6e553d75f4d6" title="USB Driver status. ">SceUdcdStatusDriver</a> </td></tr>
-    <tr><td class="paramname">list</td><td>- points to the output list </td></tr>
-    <tr><td class="paramname">size</td><td>- number of entries in the output list </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of drivers in the output or &lt; 0 in case of error </dd></dl>
-
-</div>
-</div>
 <a id="ga990e7c4f2cc70b36239b4dfd2cb10fa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga990e7c4f2cc70b36239b4dfd2cb10fa0">&sect;&nbsp;</a></span>ksceUdcdGetDrvState()</h2>
 
@@ -1504,27 +1453,6 @@ info[64]</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="gacf3b835b0016db9d77d0b21412c2d2d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf3b835b0016db9d77d0b21412c2d2d3">&sect;&nbsp;</a></span>ksceUdcdWaitCancel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUdcdWaitCancel </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cancel a pending ksceUdcdWaitState. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
 
 </div>
 </div>

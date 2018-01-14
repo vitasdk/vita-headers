@@ -107,6 +107,7 @@ var group__SceCtrlUser =
     [ "sceCtrlGetSamplingMode", "group__SceCtrlUser.html#gab99dafda34384cd2ad1ed49d8e9ef623", null ],
     [ "sceCtrlPeekBufferNegative", "group__SceCtrlUser.html#gafccfa461eceb1c73ab603b455e816f1c", null ],
     [ "sceCtrlPeekBufferPositive", "group__SceCtrlUser.html#ga4d59c5be008f666b39c2db0f06462557", null ],
+    [ "sceCtrlPeekBufferPositiveExt2", "group__SceCtrlUser.html#ga44e526dfb8f130d5926ab9465abbaeca", null ],
     [ "sceCtrlReadBufferNegative", "group__SceCtrlUser.html#gadd6084917a7f350e09bee867e6102067", null ],
     [ "sceCtrlReadBufferPositive", "group__SceCtrlUser.html#ga22f1325f30a91bdad20894033cec6363", null ],
     [ "sceCtrlReadBufferPositiveExt2", "group__SceCtrlUser.html#gae6596d683c5ea63f210e079df91620bc", null ],

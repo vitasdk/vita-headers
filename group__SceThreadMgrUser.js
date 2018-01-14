@@ -77,7 +77,6 @@ var group__SceThreadMgrUser =
     [ "sceKernelPollSema", "group__SceThreadMgrUser.html#ga57b23ac4e988e2f461812aa06cb7928a", null ],
     [ "sceKernelReceiveMsgPipe", "group__SceThreadMgrUser.html#gaecd0cce97640372fbc0905426f9e367e", null ],
     [ "sceKernelReceiveMsgPipeCB", "group__SceThreadMgrUser.html#gae0943b8da3da312380dffbbec9b0593d", null ],
-    [ "sceKernelReleaseWaitThread", "group__SceThreadMgrUser.html#ga864276ceccb242a7d3df092de89020ba", null ],
     [ "sceKernelSendMsgPipe", "group__SceThreadMgrUser.html#gad1b98f9743cae9a86d6414da646c61a0", null ],
     [ "sceKernelSendMsgPipeCB", "group__SceThreadMgrUser.html#ga9ee6e90080f74d9118f867024f2d6beb", null ],
     [ "sceKernelSetEventFlag", "group__SceThreadMgrUser.html#ga5afb3a756d7bf79e4bc7f2ad16b4dcfe", null ],

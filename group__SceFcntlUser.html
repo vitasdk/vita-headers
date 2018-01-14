@@ -122,9 +122,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaca489d7dcc95d9ee8f85248601c2102c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gaca489d7dcc95d9ee8f85248601c2102c">sceIoLseek32</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, int offset, int whence)</td></tr>
 <tr class="memdesc:gaca489d7dcc95d9ee8f85248601c2102c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reposition read/write file descriptor offset (32bit mode)  <a href="#gaca489d7dcc95d9ee8f85248601c2102c">More...</a><br /></td></tr>
 <tr class="separator:gaca489d7dcc95d9ee8f85248601c2102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bb7c1bb1c61591dabb6f8462be88fa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#ga5bb7c1bb1c61591dabb6f8462be88fa4">sceIoLseek32Async</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, int offset, int whence)</td></tr>
-<tr class="memdesc:ga5bb7c1bb1c61591dabb6f8462be88fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reposition read/write file descriptor offset (32bit mode, asynchronous)  <a href="#ga5bb7c1bb1c61591dabb6f8462be88fa4">More...</a><br /></td></tr>
-<tr class="separator:ga5bb7c1bb1c61591dabb6f8462be88fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0878533048cf65a30d96350d296b253"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gaf0878533048cf65a30d96350d296b253">sceIoRemove</a> (const char *file)</td></tr>
 <tr class="memdesc:gaf0878533048cf65a30d96350d296b253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove directory entry.  <a href="#gaf0878533048cf65a30d96350d296b253">More...</a><br /></td></tr>
 <tr class="separator:gaf0878533048cf65a30d96350d296b253"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,30 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa55663b552e8a30b1c64a59067c0662e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gaa55663b552e8a30b1c64a59067c0662e">sceIoSyncByFd</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd)</td></tr>
 <tr class="memdesc:gaa55663b552e8a30b1c64a59067c0662e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the file data for one file.  <a href="#gaa55663b552e8a30b1c64a59067c0662e">More...</a><br /></td></tr>
 <tr class="separator:gaa55663b552e8a30b1c64a59067c0662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec0343058b21c5c2ece5f25fda929efa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gaec0343058b21c5c2ece5f25fda929efa">sceIoWaitAsync</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, SceInt64 *res)</td></tr>
-<tr class="memdesc:gaec0343058b21c5c2ece5f25fda929efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for asynchronous completion.  <a href="#gaec0343058b21c5c2ece5f25fda929efa">More...</a><br /></td></tr>
-<tr class="separator:gaec0343058b21c5c2ece5f25fda929efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad66745a9a6b78309b6ddfc1be7475929"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gad66745a9a6b78309b6ddfc1be7475929">sceIoWaitAsyncCB</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, SceInt64 *res)</td></tr>
-<tr class="memdesc:gad66745a9a6b78309b6ddfc1be7475929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for asynchronous completion (with callbacks).  <a href="#gad66745a9a6b78309b6ddfc1be7475929">More...</a><br /></td></tr>
-<tr class="separator:gad66745a9a6b78309b6ddfc1be7475929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6065e5b5f6e1851fea13662e0f241901"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#ga6065e5b5f6e1851fea13662e0f241901">sceIoPollAsync</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, SceInt64 *res)</td></tr>
-<tr class="memdesc:ga6065e5b5f6e1851fea13662e0f241901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll for asynchronous completion.  <a href="#ga6065e5b5f6e1851fea13662e0f241901">More...</a><br /></td></tr>
-<tr class="separator:ga6065e5b5f6e1851fea13662e0f241901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ec46984e483737b1ad50edc61f6ad4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#ga5ec46984e483737b1ad50edc61f6ad4d">sceIoGetAsyncStat</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, int poll, SceInt64 *res)</td></tr>
-<tr class="memdesc:ga5ec46984e483737b1ad50edc61f6ad4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the asynchronous completion status.  <a href="#ga5ec46984e483737b1ad50edc61f6ad4d">More...</a><br /></td></tr>
-<tr class="separator:ga5ec46984e483737b1ad50edc61f6ad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad59b308f9923ebc9f7ea6ff18a8ede22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22">sceIoCancel</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd)</td></tr>
 <tr class="memdesc:gad59b308f9923ebc9f7ea6ff18a8ede22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel an asynchronous operation on a file descriptor.  <a href="#gad59b308f9923ebc9f7ea6ff18a8ede22">More...</a><br /></td></tr>
 <tr class="separator:gad59b308f9923ebc9f7ea6ff18a8ede22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacadaf47fc7a88a01a23262a49be60e15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#gacadaf47fc7a88a01a23262a49be60e15">sceIoGetDevType</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd)</td></tr>
-<tr class="memdesc:gacadaf47fc7a88a01a23262a49be60e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device type of the currently opened file descriptor.  <a href="#gacadaf47fc7a88a01a23262a49be60e15">More...</a><br /></td></tr>
-<tr class="separator:gacadaf47fc7a88a01a23262a49be60e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga099e9c6cb3e72104424cb391ad77b0a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#ga099e9c6cb3e72104424cb391ad77b0a0">sceIoChangeAsyncPriority</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, int pri)</td></tr>
-<tr class="memdesc:ga099e9c6cb3e72104424cb391ad77b0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the priority of the asynchronous thread.  <a href="#ga099e9c6cb3e72104424cb391ad77b0a0">More...</a><br /></td></tr>
-<tr class="separator:ga099e9c6cb3e72104424cb391ad77b0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga765de85ca20cd84bee1b69f6e0f27d0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlUser.html#ga765de85ca20cd84bee1b69f6e0f27d0c">sceIoSetAsyncCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> cb, void *argp)</td></tr>
-<tr class="memdesc:ga765de85ca20cd84bee1b69f6e0f27d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a callback for the asynchronous action.  <a href="#ga765de85ca20cd84bee1b69f6e0f27d0c">More...</a><br /></td></tr>
-<tr class="separator:ga765de85ca20cd84bee1b69f6e0f27d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga5effa92f8bfef1b789c40d88730b2da8"></a>
@@ -347,44 +323,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga099e9c6cb3e72104424cb391ad77b0a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga099e9c6cb3e72104424cb391ad77b0a0">&sect;&nbsp;</a></span>sceIoChangeAsyncPriority()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoChangeAsyncPriority </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pri</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Change the priority of the asynchronous thread. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The opened fd on which the priority should be changed. </td></tr>
-    <tr><td class="paramname">pri</td><td>- The priority of the thread.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga125921b287807c747491aed6ef16acd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga125921b287807c747491aed6ef16acd9">&sect;&nbsp;</a></span>sceIoClose()</h2>
 
@@ -436,78 +374,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga5ec46984e483737b1ad50edc61f6ad4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ec46984e483737b1ad50edc61f6ad4d">&sect;&nbsp;</a></span>sceIoGetAsyncStat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoGetAsyncStat </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>poll</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SceInt64 *&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the asynchronous completion status. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The file descriptor which is current performing an asynchronous action. </td></tr>
-    <tr><td class="paramname">poll</td><td>- If 0 then waits for the status, otherwise it polls the fd. </td></tr>
-    <tr><td class="paramname">res</td><td>- The result of the async action.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gacadaf47fc7a88a01a23262a49be60e15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacadaf47fc7a88a01a23262a49be60e15">&sect;&nbsp;</a></span>sceIoGetDevType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoGetDevType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the device type of the currently opened file descriptor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The opened file descriptor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error, otherwise one of <a class="el" href="group__SceFcntlUser.html#ga5effa92f8bfef1b789c40d88730b2da8">SceIoDevType</a>. </dd></dl>
 
 </div>
 </div>
@@ -603,51 +469,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5bb7c1bb1c61591dabb6f8462be88fa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5bb7c1bb1c61591dabb6f8462be88fa4">&sect;&nbsp;</a></span>sceIoLseek32Async()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoLseek32Async </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>whence</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reposition read/write file descriptor offset (32bit mode, asynchronous) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- Opened file descriptor with which to seek </td></tr>
-    <tr><td class="paramname">offset</td><td>- Relative offset from the start position given by whence </td></tr>
-    <tr><td class="paramname">whence</td><td>- One of <a class="el" href="group__SceFcntlUser.html#ga5733272a008ed1a31fc1d94e7c42324f">SceIoSeekMode</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga39a8423cdcb9a592df18ece834962461"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga39a8423cdcb9a592df18ece834962461">&sect;&nbsp;</a></span>sceIoLseekAsync()</h2>
 
@@ -689,7 +510,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. Actual value should be passed returned by the <a class="el" href="group__SceFcntlUser.html#gaec0343058b21c5c2ece5f25fda929efa" title="Wait for asynchronous completion. ">sceIoWaitAsync</a> call. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. Actual value should be passed returned by the ::sceIoWaitAsync call. </dd></dl>
 
 </div>
 </div>
@@ -782,44 +603,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A non-negative integer is a valid fd, anything else an error </dd></dl>
-
-</div>
-</div>
-<a id="ga6065e5b5f6e1851fea13662e0f241901"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6065e5b5f6e1851fea13662e0f241901">&sect;&nbsp;</a></span>sceIoPollAsync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoPollAsync </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SceInt64 *&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Poll for asynchronous completion. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The file descriptor which is current performing an asynchronous action. </td></tr>
-    <tr><td class="paramname">res</td><td>- The result of the async action.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -1086,51 +869,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga765de85ca20cd84bee1b69f6e0f27d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga765de85ca20cd84bee1b69f6e0f27d0c">&sect;&nbsp;</a></span>sceIoSetAsyncCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoSetAsyncCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>argp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets a callback for the asynchronous action. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The filedescriptor currently performing an asynchronous action. </td></tr>
-    <tr><td class="paramname">cb</td><td>- The UID of the callback created with <a class="el" href="group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f" title="Create callback. ">sceKernelCreateCallback</a> </td></tr>
-    <tr><td class="paramname">argp</td><td>- Pointer to an argument to pass to the callback.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga67be32ffdbd12b23149ebbc78b09c775"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga67be32ffdbd12b23149ebbc78b09c775">&sect;&nbsp;</a></span>sceIoSync()</h2>
 
@@ -1188,82 +926,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fd</td><td>- Opened file descriptor to sync</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaec0343058b21c5c2ece5f25fda929efa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec0343058b21c5c2ece5f25fda929efa">&sect;&nbsp;</a></span>sceIoWaitAsync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoWaitAsync </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SceInt64 *&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for asynchronous completion. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The file descriptor which is current performing an asynchronous action. </td></tr>
-    <tr><td class="paramname">res</td><td>- The result of the async action.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gad66745a9a6b78309b6ddfc1be7475929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad66745a9a6b78309b6ddfc1be7475929">&sect;&nbsp;</a></span>sceIoWaitAsyncCB()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceIoWaitAsyncCB </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SceInt64 *&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for asynchronous completion (with callbacks). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fd</td><td>- The file descriptor which is current performing an asynchronous action. </td></tr>
-    <tr><td class="paramname">res</td><td>- The result of the async action.</td></tr>
   </table>
   </dd>
 </dl>
