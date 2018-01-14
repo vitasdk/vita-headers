@@ -312,7 +312,6 @@ int ksceBtHfpGetCurrentPhoneNumber(int r0, int r1, int r2, int r3);
 int ksceBtHfpRequest(int r0, int r1, int r2, int r3);
 int ksceBtHidGetReportDescriptor(unsigned int mac0, unsigned int mac1, void *buffer, unsigned int size);
 int ksceBtHidTransfer(unsigned int mac0, unsigned int mac1, SceBtHidRequest *request);
-int ksceBtPairingOOB(int r0, int r1, int r2, int r3);
 int ksceBtPushBip(int r0, int r1, int r2, int r3);
 int ksceBtPushOpp(int r0, int r1, int r2, int r3);
 int ksceBtReadEvent(SceBtEvent *events, int num_events);

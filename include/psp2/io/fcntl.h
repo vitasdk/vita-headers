@@ -241,17 +241,6 @@ int sceIoLseekAsync(SceUID fd, SceOff offset, int whence);
 int sceIoLseek32(SceUID fd, int offset, int whence);
 
 /**
- * Reposition read/write file descriptor offset (32bit mode, asynchronous)
- *
- * @param fd - Opened file descriptor with which to seek
- * @param offset - Relative offset from the start position given by whence
- * @param whence - One of ::SceIoSeekMode.
- *
- * @return < 0 on error.
- */
-int sceIoLseek32Async(SceUID fd, int offset, int whence);
-
-/**
  * Remove directory entry
  *
  * @param file - Path to the file to remove
@@ -286,47 +275,6 @@ int sceIoSync(const char *device, unsigned int unk);
 int sceIoSyncByFd(SceUID fd);
 
 /**
-  * Wait for asynchronous completion.
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int sceIoWaitAsync(SceUID fd, SceInt64 *res);
-
-/**
-  * Wait for asynchronous completion (with callbacks).
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int sceIoWaitAsyncCB(SceUID fd, SceInt64 *res);
-
-/**
-  * Poll for asynchronous completion.
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int sceIoPollAsync(SceUID fd, SceInt64 *res);
-
-/**
-  * Get the asynchronous completion status.
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param poll - If 0 then waits for the status, otherwise it polls the fd.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int sceIoGetAsyncStat(SceUID fd, int poll, SceInt64 *res);
-
-/**
   * Cancel an asynchronous operation on a file descriptor.
   *
   * @param fd - The file descriptor to perform cancel on.
@@ -334,36 +282,6 @@ int sceIoGetAsyncStat(SceUID fd, int poll, SceInt64 *res);
   * @return < 0 on error.
   */
 int sceIoCancel(SceUID fd);
-
-/**
-  * Get the device type of the currently opened file descriptor.
-  *
-  * @param fd - The opened file descriptor.
-  *
-  * @return < 0 on error, otherwise one of ::SceIoDevType.
-  */
-int sceIoGetDevType(SceUID fd);
-
-/**
-  * Change the priority of the asynchronous thread.
-  *
-  * @param fd - The opened fd on which the priority should be changed.
-  * @param pri - The priority of the thread.
-  *
-  * @return < 0 on error.
-  */
-int sceIoChangeAsyncPriority(SceUID fd, int pri);
-
-/**
-  * Sets a callback for the asynchronous action.
-  *
-  * @param fd - The filedescriptor currently performing an asynchronous action.
-  * @param cb - The UID of the callback created with ::sceKernelCreateCallback
-  * @param argp - Pointer to an argument to pass to the callback.
-  *
-  * @return < 0 on error.
-  */
-int sceIoSetAsyncCallback(SceUID fd, SceUID cb, void *argp);
 
 #ifdef __cplusplus
 }
