@@ -24,7 +24,7 @@ typedef enum SceCtrlErrorCode {
 } SceCtrlErrorCode;
 
 /** Enumeration for the digital controller buttons.
- * @note - L1/R1/L3/R3 only can bind using ::sceCtrlReadBufferPositiveExt2 
+ * @note - L1/R1/L3/R3 only can bind using ::sceCtrlPeekBufferPositiveExt2 and ::sceCtrlReadBufferPositiveExt2
  * @note - Values bigger than 0x00010000 can be intercepted only with shell privileges
  */
 typedef enum SceCtrlButtons {
@@ -175,6 +175,19 @@ int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
 int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the controller state information (polling, positive logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ *
+ * @param[in] port - use 0.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlPeekBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (polling, negative logic).
