@@ -4062,7 +4062,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">fcntl.h</field>
     <field name="url">ern_2io_2fcntl_8h_source.html#l00051</field>
     <field name="keywords"></field>
-    <field name="text">SCE_DEV_TYPE_MOUNTPT SceIoDevType SceUID ksceIoOpen file flags SceMode mode ksceIoClose SceUID fd ksceIoRead SceUID fd data SceSize size ksceIoReadAsync SceUID fd data SceSize size ksceIoWrite SceUID fd data SceSize size ksceIoWriteAsync SceUID fd data SceSize size SceOff ksceIoLseek SceUID fd SceOff offset whence ksceIoRemove file ksceIoRename oldname newname ksceIoSync device unk ksceIoSyncByFd SceUID fd ksceIoMount path permission a4 a5 a6 ksceIoUmount a2 a3 a4</field>
+    <field name="text">SCE_DEV_TYPE_MOUNTPT SceIoDevType SceUID ksceIoOpen file flags SceMode mode SceUID ksceIoOpenAsync file flags SceMode mode ksceIoClose SceUID fd ksceIoCloseAsync SceUID fd ksceIoRead SceUID fd data SceSize size ksceIoReadAsync SceUID fd data SceSize size ksceIoPread SceUID fd data SceSize size SceOff offset ksceIoWrite SceUID fd data SceSize size ksceIoWriteAsync SceUID fd data SceSize size ksceIoPwrite SceUID fd data SceSize size SceOff offset SceOff ksceIoLseek SceUID fd SceOff offset whence ksceIoLseekAsync SceUID fd SceOff offset whence ksceIoRemove file ksceIoRename oldname newname ksceIoSync device unk ksceIoSyncByFd SceUID fd ksceIoCancel SceUID fd ksceIoMount path permission a4 a5 a6 ksceIoUmount a2 a3 a4</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -18852,11 +18852,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceIoOpenAsync</field>
+    <field name="args">(const char *file, int flags, SceMode mode)</field>
+    <field name="url">group__SceFcntlKernel.html#ga18d77ff63aba0b732c7a9e6a51b654fd</field>
+    <field name="keywords">ksceIoOpenAsync</field>
+    <field name="text">Open or create a file for reading or writing asynchronous file Pointer to a string holding the name of the file to open flags Libc styled flags that are or ed together mode File access mode One or more SceIoMode A non-negative integer is a valid fd anything else an error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceIoClose</field>
     <field name="args">(SceUID fd)</field>
     <field name="url">group__SceFcntlKernel.html#ga61d016967bca18f3640a97edf1594dfd</field>
     <field name="keywords">ksceIoClose</field>
     <field name="text">Delete a descriptor fd File descriptor to close 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceIoCloseAsync</field>
+    <field name="args">(SceUID fd)</field>
+    <field name="url">group__SceFcntlKernel.html#gac3892016654ebe56a1f73490e7840b89</field>
+    <field name="keywords">ksceIoCloseAsync</field>
+    <field name="text">Delete a descriptor asynchronous fd File descriptor to close 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -18876,6 +18892,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceIoPread</field>
+    <field name="args">(SceUID fd, void *data, SceSize size, SceOff offset)</field>
+    <field name="url">group__SceFcntlKernel.html#ga5a02c9bd89b3e79524cd18336d12c324</field>
+    <field name="keywords">ksceIoPread</field>
+    <field name="text">Read input at offset Example fd Opened file descriptor to read from data Pointer to the buffer where the read data will be placed size Size of the read in bytes offset Offset to read 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceIoWrite</field>
     <field name="args">(SceUID fd, const void *data, SceSize size)</field>
     <field name="url">group__SceFcntlKernel.html#gaaf5d8c9387b3c6c972261d9b459451fd</field>
@@ -18892,11 +18916,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceIoPwrite</field>
+    <field name="args">(SceUID fd, const void *data, SceSize size, SceOff offset)</field>
+    <field name="url">group__SceFcntlKernel.html#ga3ef81fe38532500ab3b2385595bd9c67</field>
+    <field name="keywords">ksceIoPwrite</field>
+    <field name="text">Write output at offset Example fd Opened file descriptor to write to data Pointer to the data to write size Size of data to write offset Offset to write The number of bytes written</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceIoLseek</field>
     <field name="args">(SceUID fd, SceOff offset, int whence)</field>
     <field name="url">group__SceFcntlKernel.html#gab6f0743dc6356206101cdf891b1f4143</field>
     <field name="keywords">ksceIoLseek</field>
     <field name="text">Reposition read/write file descriptor offset Example fd Opened file descriptor with which to seek offset Relative offset from the start position given by whence whence One of SceIoSeekMode The position in the file after the seek</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceIoLseekAsync</field>
+    <field name="args">(SceUID fd, SceOff offset, int whence)</field>
+    <field name="url">group__SceFcntlKernel.html#gaa60aa1621bf99021e1a0ace96e0099ac</field>
+    <field name="keywords">ksceIoLseekAsync</field>
+    <field name="text">Reposition read/write file descriptor offset asynchronous fd Opened file descriptor with which to seek offset Relative offset from the start position given by whence whence One of SceIoSeekMode 0 on error Actual value should be passed returned by the call</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -18929,6 +18969,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceFcntlKernel.html#gad27cbe1fdaf3cf2050f056da2eafd094</field>
     <field name="keywords">ksceIoSyncByFd</field>
     <field name="text">Synchronize the file data for one file fd Opened file descriptor to sync 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceIoCancel</field>
+    <field name="args">(SceUID fd)</field>
+    <field name="url">group__SceFcntlKernel.html#gaae7e727a2b51ecfe3f180826f0bf4387</field>
+    <field name="keywords">ksceIoCancel</field>
+    <field name="text">Cancel an asynchronous operation on a file descriptor fd The file descriptor to perform cancel on 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
