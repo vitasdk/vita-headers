@@ -43,64 +43,12 @@ typedef struct SceGxtTextureInfo {
 } SceGxtTextureInfo;
 
 /**
- * Checks if a pointer is a valid GXT file.
- *
- * @param	gxt	pointer to the GXT data
- *
- * @retval	SCE_OK
- * @retval	SCE_GXT_ERROR_INVALID_VALUE Magic or version invalid
- */
-SceGxtErrorCode sceGxtCheckData(const void *gxt);
-
-/**
  * Gets the start address of the texture data.
  *
  * @param	gxt	pointer to the GXT data
  * @return A pointer to the start of the texture data
  */
 const void *sceGxtGetDataAddress(const void *gxt);
-
-/**
- * Gets the size of the texture data.
- *
- * @param	gxt	pointer to the GXT data
- * @return The size of the texture data in bytes
- */
-uint32_t sceGxtGetDataSize(const void *gxt);
-
-/**
- * Gets the header size of a GXT file.
- *
- * @param	gxt	pointer to the GXT data
- * @return The size of the header in bytes
- */
-uint32_t sceGxtGetHeaderSize(const void *gxt);
-
-/**
- * Gets the texture count in a GXT file.
- *
- * @param	gxt	pointer to the GXT data
- * @return The number of textures.
- */
-uint32_t sceGxtGetTextureCount(const void *gxt);
-
-/**
- * Sets the palette of a given texture.
- *
- * @param	texture		pointer to the texture
- * @param	gxt 		pointer to the GXT data
- * @param	textureData 	pointer to the start of texture data
- * @param	paletteIndex 	palette index
- *
- * @retval	SCE_OK
- * @retval	SCE_GXT_ERROR_INVALID_ALIGNMENT
- * @retval	SCE_GXT_ERROR_INVALID_VALUE
- * @retval	SCE_GXT_ERROR_INVALID_POINTER
- */
-SceGxtErrorCode sceGxtSetPalette(SceGxmTexture *texture,
-				const void *gxt,
-				const void *textureData,
-				uint32_t paletteIndex);
 
 #ifdef __cplusplus
 }

@@ -231,15 +231,6 @@ int sceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
 int sceKernelChangeThreadPriority(SceUID thid, int priority);
 
 /**
- * Release a thread in the wait state.
- *
- * @param thid - The UID of the thread.
- *
- * @return 0 on success, < 0 on error
- */
-int sceKernelReleaseWaitThread(SceUID thid);
-
-/**
   * Get the current thread Id
   *
   * @return The thread id of the calling thread.

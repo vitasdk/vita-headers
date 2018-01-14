@@ -75,16 +75,6 @@ typedef enum SceIoDevType {
 SceUID ksceIoOpen(const char *file, int flags, SceMode mode);
 
 /**
- * Open or create a file for reading or writing (asynchronous)
- *
- * @param file - Pointer to a string holding the name of the file to open
- * @param flags - Libc styled flags that are or'ed together
- * @param mode - File access mode (One or more ::SceIoMode).
- * @return A non-negative integer is a valid fd, anything else an error
- */
-SceUID ksceIoOpenAsync(const char *file, int flags, SceMode mode);
-
-/**
  * Delete a descriptor
  *
  * @code
@@ -95,14 +85,6 @@ SceUID ksceIoOpenAsync(const char *file, int flags, SceMode mode);
  * @return < 0 on error
  */
 int ksceIoClose(SceUID fd);
-
-/**
- * Delete a descriptor (asynchronous)
- *
- * @param fd - File descriptor to close
- * @return < 0 on error
- */
-int ksceIoCloseAsync(SceUID fd);
 
 /**
  * Read input
@@ -137,23 +119,6 @@ int ksceIoRead(SceUID fd, void *data, SceSize size);
 int ksceIoReadAsync(SceUID fd, void *data, SceSize size);
 
 /**
- * Read input at offset
- *
- * @par Example:
- * @code
- * bytes_read = ksceIoPread(fd, data, 100, 0x1000);
- * @endcode
- *
- * @param fd - Opened file descriptor to read from
- * @param data - Pointer to the buffer where the read data will be placed
- * @param size - Size of the read in bytes
- * @param offset - Offset to read
- *
- * @return < 0 on error.
- */
-int ksceIoPread(SceUID fd, void *data, SceSize size, SceOff offset);
-
-/**
  * Write output
  *
  * @par Example:
@@ -181,23 +146,6 @@ int ksceIoWrite(SceUID fd, const void *data, SceSize size);
 int ksceIoWriteAsync(SceUID fd, const void *data, SceSize size);
 
 /**
- * Write output at offset
- *
- * @par Example:
- * @code
- * bytes_written = ksceIoPwrite(fd, data, 100, 0x1000);
- * @endcode
- *
- * @param fd - Opened file descriptor to write to
- * @param data - Pointer to the data to write
- * @param size - Size of data to write
- * @param offset - Offset to write
- *
- * @return The number of bytes written
- */
-int ksceIoPwrite(SceUID fd, const void *data, SceSize size, SceOff offset);
-
-/**
  * Reposition read/write file descriptor offset
  *
  * @par Example:
@@ -212,44 +160,6 @@ int ksceIoPwrite(SceUID fd, const void *data, SceSize size, SceOff offset);
  * @return The position in the file after the seek.
  */
 SceOff ksceIoLseek(SceUID fd, SceOff offset, int whence);
-
-/**
- * Reposition read/write file descriptor offset (asynchronous)
- *
- * @param fd - Opened file descriptor with which to seek
- * @param offset - Relative offset from the start position given by whence
- * @param whence - One of ::SceIoSeekMode.
- *
- * @return < 0 on error. Actual value should be passed returned by the ::ksceIoWaitAsync call.
- */
-int ksceIoLseekAsync(SceUID fd, SceOff offset, int whence);
-
-/**
- * Reposition read/write file descriptor offset (32bit mode)
- *
- * @par Example:
- * @code
- * pos = ksceIoLseek32(fd, -10, SCE_SEEK_END);
- * @endcode
- *
- * @param fd - Opened file descriptor with which to seek
- * @param offset - Relative offset from the start position given by whence
- * @param whence - One of ::SceIoSeekMode.
- *
- * @return The position in the file after the seek.
- */
-int ksceIoLseek32(SceUID fd, int offset, int whence);
-
-/**
- * Reposition read/write file descriptor offset (32bit mode, asynchronous)
- *
- * @param fd - Opened file descriptor with which to seek
- * @param offset - Relative offset from the start position given by whence
- * @param whence - One of ::SceIoSeekMode.
- *
- * @return < 0 on error.
- */
-int ksceIoLseek32Async(SceUID fd, int offset, int whence);
 
 /**
  * Remove directory entry
@@ -284,86 +194,6 @@ int ksceIoSync(const char *device, unsigned int unk);
  * @return < 0 on error.
  */
 int ksceIoSyncByFd(SceUID fd);
-
-/**
-  * Wait for asynchronous completion.
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoWaitAsync(SceUID fd, SceInt64 *res);
-
-/**
-  * Wait for asynchronous completion (with callbacks).
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoWaitAsyncCB(SceUID fd, SceInt64 *res);
-
-/**
-  * Poll for asynchronous completion.
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoPollAsync(SceUID fd, SceInt64 *res);
-
-/**
-  * Get the asynchronous completion status.
-  *
-  * @param fd - The file descriptor which is current performing an asynchronous action.
-  * @param poll - If 0 then waits for the status, otherwise it polls the fd.
-  * @param res - The result of the async action.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoGetAsyncStat(SceUID fd, int poll, SceInt64 *res);
-
-/**
-  * Cancel an asynchronous operation on a file descriptor.
-  *
-  * @param fd - The file descriptor to perform cancel on.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoCancel(SceUID fd);
-
-/**
-  * Get the device type of the currently opened file descriptor.
-  *
-  * @param fd - The opened file descriptor.
-  *
-  * @return < 0 on error, otherwise one of ::SceIoDevType.
-  */
-int ksceIoGetDevType(SceUID fd);
-
-/**
-  * Change the priority of the asynchronous thread.
-  *
-  * @param fd - The opened fd on which the priority should be changed.
-  * @param pri - The priority of the thread.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoChangeAsyncPriority(SceUID fd, int pri);
-
-/**
-  * Sets a callback for the asynchronous action.
-  *
-  * @param fd - The filedescriptor currently performing an asynchronous action.
-  * @param cb - The UID of the callback created with ::sceKernelCreateCallback
-  * @param argp - Pointer to an argument to pass to the callback.
-  *
-  * @return < 0 on error.
-  */
-int ksceIoSetAsyncCallback(SceUID fd, SceUID cb, void *argp);
 
 /**
   * Mounts a device

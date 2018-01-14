@@ -211,16 +211,6 @@ int ksceKernelDelayThread(SceUInt delay);
 int ksceKernelDelayThreadCB(SceUInt delay);
 
 /**
- * Modify the attributes of the current thread.
- *
- * @param unknown - Set to 0.
- * @param attr - The thread attributes to modify.  One of ::SceThreadAttributes.
- *
- * @return < 0 on error.
- */
-int ksceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
-
-/**
   * Change the threads current priority.
   *
   * @param thid - The ID of the thread (from ::ksceKernelCreateThread or ::ksceKernelGetThreadId)
@@ -238,15 +228,6 @@ int ksceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
 int ksceKernelChangeThreadPriority(SceUID thid, int priority);
 
 /**
- * Release a thread in the wait state.
- *
- * @param thid - The UID of the thread.
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelReleaseWaitThread(SceUID thid);
-
-/**
   * Get the current thread Id
   *
   * @return The thread id of the calling thread.
@@ -261,22 +242,6 @@ int ksceKernelGetThreadId(void);
 int ksceKernelGetThreadCurrentPriority(void);
 
 /**
- * Get the exit status of a thread.
- *
- * @param thid - The UID of the thread to check.
- *
- * @return The exit status
- */
-int ksceKernelGetThreadExitStatus(SceUID thid);
-
-/**
- * Check the thread stack?
- *
- * @return Unknown.
- */
-int ksceKernelCheckThreadStack(void);
-
-/**
  * Get the free stack size for a thread.
  *
  * @param thid - The thread ID. Seem to take current thread
@@ -285,35 +250,6 @@ int ksceKernelCheckThreadStack(void);
  * @return The free size.
  */
 int ksceKernelGetThreadStackFreeSize(SceUID thid);
-
-/**
-  * Get the status information for the specified thread.
-  *
-  * @param thid - Id of the thread to get status
-  * @param info - Pointer to the info structure to receive the data.
-  * Note: The structures size field should be set to
-  * sizeof(SceKernelThreadInfo) before calling this function.
-  *
-  * @par Example:
-  * @code
-  * SceKernelThreadInfo status;
-  * status.size = sizeof(SceKernelThreadInfo);
-  * if(ksceKernelGetThreadInfo(thid, &status) == 0)
-  * { Do something... }
-  * @endcode
-  * @return 0 if successful, otherwise the error code.
-  */
-int ksceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info);
-
-/**
- * Retrive the runtime status of a thread.
- *
- * @param thid - UID of the thread to retrieve status.
- * @param status - Pointer to a ::SceKernelThreadRunStatus struct to receive the runtime status.
- *
- * @return 0 if successful, otherwise the error code.
- */
-int ksceKernelGetThreadRunStatus(SceUID thid, SceKernelThreadRunStatus *status);
 
 
 /* Semaphores. */
@@ -405,22 +341,6 @@ int ksceKernelSignalSema(SceUID semaid, int signal);
 int ksceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout);
 
 /**
- * Lock a semaphore and handle callbacks if necessary.
- *
- * @par Example:
- * @code
- * ksceKernelWaitSemaCB(semaid, 1, 0);
- * @endcode
- *
- * @param semaid - The sema id returned from ::ksceKernelCreateSema
- * @param signal - The value to wait for (i.e. if 1 then wait till reaches a signal state of 1)
- * @param timeout - Timeout in microseconds (assumed).
- *
- * @return < 0 on error.
- */
-int ksceKernelWaitSemaCB(SceUID semaid, int signal, SceUInt *timeout);
-
-/**
  * Poll a semaphore.
  *
  * @param semaid - UID of the semaphore to poll.
@@ -429,26 +349,6 @@ int ksceKernelWaitSemaCB(SceUID semaid, int signal, SceUInt *timeout);
  * @return < 0 on error.
  */
 int ksceKernelPollSema(SceUID semaid, int signal);
-
-/**
- * Cancels a semaphore
- *
- * @param semaid - The sema id returned from ::ksceKernelCreateSema
- * @param setCount - The new lock count of the semaphore
- * @param numWaitThreads - Number of threads waiting for the semaphore
- * @return < 0 On error.
- */
-int ksceKernelCancelSema(SceUID semaid, int setCount, int *numWaitThreads);
-
-/**
- * Retrieve information about a semaphore.
- *
- * @param semaid - UID of the semaphore to retrieve info for.
- * @param info - Pointer to a ::SceKernelSemaInfo struct to receive the info.
- *
- * @return < 0 on error.
- */
-int ksceKernelGetSemaInfo(SceUID semaid, SceKernelSemaInfo *info);
 
 
 /* Mutexes. */
@@ -508,22 +408,6 @@ SceUID ksceKernelCreateMutex(const char *name, SceUInt attr, int initCount, SceK
 int ksceKernelDeleteMutex(SceUID mutexid);
 
 /**
- * Open a mutex
- *
- * @param name - The name of the mutex to open
- * @return Returns the value 0 if it's successful, otherwise -1
- */
-int ksceKernelOpenMutex(const char *name);
-
-/**
- * Close a mutex
- *
- * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
- * @return Returns the value 0 if it's successful, otherwise -1
- */
-int ksceKernelCloseMutex(SceUID mutexid);
-
-/**
  * Lock a mutex
  *
  * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
@@ -532,16 +416,6 @@ int ksceKernelCloseMutex(SceUID mutexid);
  * @return < 0 On error.
  */
 int ksceKernelLockMutex(SceUID mutexid, int lockCount, unsigned int *timeout);
-
-/**
- * Lock a mutex and handle callbacks if necessary.
- *
- * @param mutexid - The mutex id returned from ::ksceKernelCreateMutex
- * @param lockCount - The value to increment to the lock count of the mutex
- * @param timeout - Timeout in microseconds (assumed)
- * @return < 0 On error.
- */
-int ksceKernelLockMutexCB(SceUID mutexid, int lockCount, unsigned int *timeout);
 
 /**
  * Try to lock a mutex (non-blocking)
@@ -571,16 +445,6 @@ int ksceKernelUnlockMutex(SceUID mutexid, int unlockCount);
  */
 int ksceKernelCancelMutex(SceUID mutexid, int newCount, int *numWaitThreads);
 
-/**
- * Retrieve information about a mutex.
- *
- * @param mutexid - UID of the mutex to retrieve info for.
- * @param info - Pointer to a ::SceKernelMutexInfo struct to receive the info.
- *
- * @return < 0 on error.
- */
-int ksceKernelGetMutexInfo(SceUID mutexid, SceKernelMutexInfo *info);
-
 typedef struct  SceKernelLwMutexWork {
 	SceInt64 data[4];
 } SceKernelLwMutexWork;
@@ -588,11 +452,6 @@ typedef struct  SceKernelLwMutexWork {
 typedef struct SceKernelLwMutexOptParam {
 	SceSize size;
 } SceKernelLwMutexOptParam;
-
-int ksceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
-int ksceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
-int ksceKernelLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount, unsigned int *pTimeout);
-int ksceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 
 int ksceKernelInitializeFastMutex(void *mutex, const char *name, int unk0, int unk1);
 int ksceKernelLockFastMutex(void *mutex);
@@ -717,16 +576,6 @@ int ksceKernelWaitEventFlagCB(int evid, unsigned int bits, unsigned int wait, un
   */
 int ksceKernelDeleteEventFlag(int evid);
 
-/**
-  * Get the status of an event flag.
-  *
-  * @param event - The UID of the event.
-  * @param status - A pointer to a ::SceKernelEventFlagInfo structure.
-  *
-  * @return < 0 on error.
-  */
-int ksceKernelGetEventFlagInfo(SceUID event, SceKernelEventFlagInfo *info);
-
 /* Condition variables */
 
 typedef struct  SceKernelLwCondWork {
@@ -736,11 +585,6 @@ typedef struct  SceKernelLwCondWork {
 typedef struct SceKernelLwCondOptParam {
 	SceSize size;
 } SceKernelLwCondOptParam;
-
-int ksceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigned int attr, SceKernelLwMutexWork *pLwMutex, const SceKernelLwCondOptParam *pOptParam);
-int ksceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
-int ksceKernelSignalLwCond(SceKernelLwCondWork *pWork);
-int ksceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
 
 /* Callbacks. */
 
@@ -783,17 +627,6 @@ typedef struct SceKernelCallbackInfo {
  * @return >= 0 A callback id which can be used in subsequent functions, < 0 an error.
  */
 int ksceKernelCreateCallback(const char *name, unsigned int attr, SceKernelCallbackFunction func, void *arg);
-
-/**
-  * Gets the status of a specified callback.
-  *
-  * @param cb - The UID of the callback to retrieve info for.
-  * @param status - Pointer to a status structure. The size parameter should be
-  * initialized before calling.
-  *
-  * @return < 0 on error.
-  */
-int ksceKernelGetCallbackInfo(SceUID cb, SceKernelCallbackInfo *infop);
 
 /**
  * Delete a callback
@@ -839,168 +672,6 @@ int ksceKernelGetCallbackCount(SceUID cb);
  */
 int ksceKernelCheckCallback(void);
 
-
-/* Message pipes */
-
-/**
- * Create a message pipe
- *
- * @param name - Name of the pipe
- * @param type - The type of memory attribute to use internally (set to 0x40)
- * @param attr - Set to 12
- * @param bufSize - The size of the internal buffer in multiples of 0x1000 (4KB)
- * @param opt  - Message pipe options (set to NULL)
- *
- * @return The UID of the created pipe, < 0 on error
- */
-SceUID ksceKernelCreateMsgPipe(const char *name, int type, int attr, unsigned int bufSize, void *opt);
-
-/**
- * Delete a message pipe
- *
- * @param uid - The UID of the pipe
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelDeleteMsgPipe(SceUID uid);
-
-/**
- * Send a message to a pipe
- *
- * @param uid - The UID of the pipe
- * @param message - Pointer to the message
- * @param size - Size of the message
- * @param unk1 - Unknown - async vs sync? use 0 for sync
- * @param unk2 - Unknown - use NULL
- * @param timeout - Timeout for send in us. use NULL to wait indefinitely
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelSendMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2, unsigned int *timeout);
-
-/**
- * Send a message to a pipe (with callback)
- *
- * @param uid - The UID of the pipe
- * @param message - Pointer to the message
- * @param size - Size of the message
- * @param unk1 - Unknown - async vs sync? use 0 for sync
- * @param unk2 - Unknown - use NULL
- * @param timeout - Timeout for send in us. use NULL to wait indefinitely
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelSendMsgPipeCB(SceUID uid, void *message, unsigned int size, int unk1, void *unk2, unsigned int *timeout);
-
-/**
- * Try to send a message to a pipe
- *
- * @param uid - The UID of the pipe
- * @param message - Pointer to the message
- * @param size - Size of the message
- * @param unk1 - Unknown - use 0
- * @param unk2 - Unknown - use NULL
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelTrySendMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2);
-
-/**
- * Receive a message from a pipe
- *
- * @param uid - The UID of the pipe
- * @param message - Pointer to the message
- * @param size - Size of the message
- * @param unk1 - Unknown - async vs sync? use 0 for sync
- * @param unk2 - Unknown - use NULL
- * @param timeout - Timeout for receive in us. use NULL to wait indefinitely
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2, unsigned int *timeout);
-
-/**
- * Receive a message from a pipe (with callback)
- *
- * @param uid - The UID of the pipe
- * @param message - Pointer to the message
- * @param size - Size of the message
- * @param unk1 - Unknown - async vs sync? use 0 for sync
- * @param unk2 - Unknown - use NULL
- * @param timeout - Timeout for receive in us. use NULL to wait indefinitely
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelReceiveMsgPipeCB(SceUID uid, void *message, unsigned int size, int unk1, void *unk2, unsigned int *timeout);
-
-/**
- * Receive a message from a pipe
- *
- * @param uid - The UID of the pipe
- * @param message - Pointer to the message
- * @param size - Size of the message
- * @param unk1 - Unknown - use 0
- * @param unk2 - Unknown - use NULL
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelTryReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2);
-
-/**
- * Cancel a message pipe
- *
- * @param uid - UID of the pipe to cancel
- * @param psend - Receive number of sending threads, NULL is valid
- * @param precv - Receive number of receiving threads, NULL is valid
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelCancelMsgPipe(SceUID uid, int *psend, int *precv);
-
-/** Message Pipe status info */
-typedef struct SceKernelMppInfo {
-	SceSize size;
-	SceUID  mppId; // Needs confirmation
-	char    name[32];
-	SceUInt attr;
-	int     bufSize;
-	int     freeSize;
-	int     numSendWaitThreads;
-	int     numReceiveWaitThreads;
-} SceKernelMppInfo;
-
-/**
- * Get the status of a Message Pipe
- *
- * @param uid - The uid of the Message Pipe
- * @param info - Pointer to a ::SceKernelMppInfo structure
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelGetMsgPipeInfo(SceUID uid, SceKernelMppInfo *info);
-
-
-/* Misc. */
-
-typedef struct SceKernelSystemInfo {
-	SceSize   size;
-	SceUInt32 activeCpuMask;
-
-	struct {
-		SceKernelSysClock idleClock;
-		SceUInt32         comesOutOfIdleCount;
-		SceUInt32         threadSwitchCount;
-	} cpuInfo[4];
-} SceKernelSystemInfo;
-
-/**
- * Get the system information
- *
- * @param info - Pointer to a ::SceKernelSystemInfo structure
- *
- * @return 0 on success, < 0 on error
- */
-int ksceKernelGetSystemInfo(SceKernelSystemInfo *info);
 
 /* Misc. */
 

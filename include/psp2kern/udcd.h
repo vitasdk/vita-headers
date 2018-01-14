@@ -450,15 +450,6 @@ int ksceUdcdGetDeviceInfo(SceUdcdDeviceInfo *devInfo);
 int ksceUdcdGetDrvState(const char *driverName);
 
 /**
- *  Get the list of drivers
- *  @param flags - One or more ::SceUdcdStatusDriver
- *  @param list - points to the output list
- *  @param size - number of entries in the output list
- *  @return the number of drivers in the output or < 0 in case of error
- */
-int ksceUdcdGetDrvList(unsigned int flags, SceUdcdDriverName *list, int size);
-
-/**
  * Wait for USB state
  * @param state - combination of states (returned by ::ksceUdcdGetDeviceState)
  * @param waitMode - one of the ::SceEventFlagWaitTypes
@@ -466,12 +457,6 @@ int ksceUdcdGetDrvList(unsigned int flags, SceUdcdDriverName *list, int size);
  * @return the usb state or < 0 in case of error
  */
 int ksceUdcdWaitState(unsigned int state, unsigned int waitMode, SceUInt *timeout);
-
-/**
- * Cancel a pending ksceUdcdWaitState
- * @return 0 on success
- */
-int ksceUdcdWaitCancel(void);
 
 /**
  * Register a USB driver.

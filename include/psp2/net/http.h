@@ -304,13 +304,6 @@ int sceHttpReadData(int reqId, void *data, unsigned int size);
 int sceHttpAddRequestHeader(int id, const char *name, const char *value, unsigned int mode);
 int sceHttpRemoveRequestHeader(int id, const char *name);
 
-int sceHttpSetProxy(int id, int enableProxyFlag, int mode, const char *newProxyHost, unsigned short newProxyPort);
-int sceHttpGetProxy(int id, int *enabeProxyFlag, int *mode, char *proxy_host, unsigned int len, unsigned short *proxy_port);
-int sceHttpEnableKeepAlive(int id);
-int sceHttpDisableKeepAlive(int id);
-int sceHttpEnableHttp0_9(int id);
-int sceHttpDisableHttp0_9(int id);
-
 int sceHttpParseResponseHeader(const char *header, unsigned int headerLen, const char *fieldStr, const char **fieldValue, unsigned int *valueLen);
 int sceHttpParseStatusLine(const char *statusLine, unsigned int lineLen, int *httpMajorVer, int *httpMinorVer, int *responseCode, const char **reasonPhrase, unsigned int *phraseLen);
 
@@ -323,7 +316,6 @@ int sceHttpCreateRequest(int connId, int method, const char *path, unsigned long
 int sceHttpCreateRequestWithURL(int connId, int method, const char *url, unsigned long long int contentLength);
 int sceHttpDeleteRequest(int reqId);
 int sceHttpSetResponseHeaderMaxSize(int id, unsigned int headerSize);
-int sceHttpSetRecvBlockSize(int id, unsigned int blockSize);
 int sceHttpSetRequestContentLength(int id, unsigned long long int contentLength);
 
 // uri
