@@ -1,6 +1,6 @@
 var group__SceUdcdUser_structSceUdcdWaitParam =
 [
-    [ "driverName", "group__SceUdcdUser.html#gaf88181b3870106d791fb7311c737338b", null ],
+    [ "driverName", "group__SceUdcdUser.html#gae62865989fee6d1dd97295f15f50a8e9", null ],
     [ "unk_00", "group__SceUdcdUser.html#ga795c660a8157a5a5878d57040266534d", null ],
     [ "unk_04", "group__SceUdcdUser.html#gab52b61082afd5e9208ea6a10f0c96815", null ],
     [ "unk_08", "group__SceUdcdUser.html#ga38e2bd07252351e700b53a31fed39494", null ],
