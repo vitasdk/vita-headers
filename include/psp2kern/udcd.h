@@ -314,10 +314,10 @@ typedef struct SceUdcdEndpoint {
 /**  USB driver configuration
  */
 typedef struct SceUdcdConfiguration {
-	SceUdcdConfigDescriptor    *configDescriptors;     //!< Pointer to the configuration descriptors
-	SceUdcdInterfaceSettings   *settings;              //!< USB driver interface settings
+	SceUdcdConfigDescriptor   *configDescriptors;     //!< Pointer to the configuration descriptors
+	SceUdcdInterfaceSettings  *settings;              //!< USB driver interface settings
 	SceUdcdInterfaceDescriptor *interfaceDescriptors;  //!< Pointer to the first interface descriptor
-	SceUdcdEndpointDescriptor  *endpointDescriptors;   //!< Pointer to the first endpoint descriptor
+	SceUdcdEndpointDescriptor *endpointDescriptors;   //!< Pointer to the first endpoint descriptor
 } SceUdcdConfiguration;
 
 /**  USB EP0 Device Request
@@ -387,48 +387,58 @@ typedef struct SceUdcdDeviceInfo {
 } SceUdcdDeviceInfo;
 
 /**
-  * Start a USB driver.
-  *
-  * @param driverName - Name of the USB driver to start
-  * @param size - Size of arguments to pass to USB driver start
-  * @param args - Arguments to pass to USB driver start
-  *
-  * @return 0 on success, < 0 on error.
-  */
+ * Waits until an UDCD bus is initialized
+ *
+ * @param[in] timeout - Timeout
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdWaitBusInitialized(unsigned int timeout, int bus);
+
+/**
+ * Start a USB driver.
+ *
+ * @param driverName - Name of the USB driver to start
+ * @param size - Size of arguments to pass to USB driver start
+ * @param args - Arguments to pass to USB driver start
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceUdcdStart(const char *driverName, int size, void *args);
 
 /**
-  * Stop a USB driver.
-  *
-  * @param driverName - Name of the USB driver to stop
-  * @param size - Size of arguments to pass to USB driver start
-  * @param args - Arguments to pass to USB driver start
-  *
-  * @return 0 on success, < 0 on error.
-  */
+ * Stop a USB driver.
+ *
+ * @param driverName - Name of the USB driver to stop
+ * @param size - Size of arguments to pass to USB driver start
+ * @param args - Arguments to pass to USB driver start
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceUdcdStop(const char *driverName, int size, void *args);
 
 /**
-  * Activate a USB driver.
-  *
-  * @param pid - Product ID for the default USB Driver
-  *
-  * @return 0 on success, < 0 on error.
-  */
+ * Activate a USB driver.
+ *
+ * @param pid - Product ID for the default USB Driver
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceUdcdActivate(unsigned int productId);
 
 /**
-  * Deactivate USB driver.
-  *
-  * @return 0 on success, < 0 on error.
-  */
+ * Deactivate USB driver.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceUdcdDeactivate(void);
 
 /**
-  * Get USB state
-  *
-  * @return One or more ::SceUdcdStatus.
-  */
+ * Get USB state
+ *
+ * @return One or more ::SceUdcdStatus.
+ */
 int ksceUdcdGetDeviceState(void);
 
 /**
@@ -441,22 +451,44 @@ int ksceUdcdGetDeviceState(void);
 int ksceUdcdGetDeviceInfo(SceUdcdDeviceInfo *devInfo);
 
 /**
-  * Get state of a specific USB driver
-  *
-  * @param driverName - name of USB driver to get status from
-  *
-  * @return SCE_UDCD_STATUS_DRIVER_STARTED  if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped
-  */
+ * Get state of a specific USB driver
+ *
+ * @param driverName - name of USB driver to get status from
+ *
+ * @return SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped
+ */
 int ksceUdcdGetDrvState(const char *driverName);
 
 /**
- * Wait for USB state
- * @param state - combination of states (returned by ::ksceUdcdGetDeviceState)
- * @param waitMode - one of the ::SceEventFlagWaitTypes
- * @param timeout - pointer to timeout
- * @return the usb state or < 0 in case of error
+ * Get state of a specific USB driver for an UDCD bus
+ *
+ * @param driverName - name of USB driver to get status from
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped
  */
-int ksceUdcdWaitState(unsigned int state, unsigned int waitMode, SceUInt *timeout);
+int ksceUdcdGetDrvStateInternal(const char *driverName, int bus);
+
+/**
+ * Wait for state
+ *
+ * @param[in] waitParam - Wait parameter
+ * @param[in] timeout - Timeout
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceUdcdWaitState(SceUdcdWaitParam *waitParam, unsigned int timeout);
+
+/**
+ * Wait for state for an UDCD bus
+ *
+ * @param[in] waitParam - Wait parameter
+ * @param[in] timeout - Timeout
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceUdcdWaitStateInternal(SceUdcdWaitParam *waitParam, unsigned int timeout, int bus);
 
 /**
  * Register a USB driver.
