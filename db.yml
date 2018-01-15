@@ -7986,12 +7986,15 @@ modules:
         functions:
           ksceUdcdUnregister: 0x0DECE532
           ksceUdcdStop: 0x1494293B
+          ksceUdcdWaitBusInitialized: 0x1C684884
           ksceUdcdReqSend: 0x1ED0E89E
           ksceUdcdStall: 0x34079250
           ksceUdcdReqCancelAll: 0x38787672
           ksceUdcdRegister: 0x4E55244D
           ksceUdcdActivate: 0x4FDEA423
+          ksceUdcdGetDrvStateInternal: 0x512F77BC
           ksceUdcdRegisterToBus: 0x64675918
+          ksceUdcdWaitStateInternal: 0x7AD0C8D1
           ksceUdcdDeactivate: 0x8AE87657
           ksceUdcdClearFIFO: 0x9F53D64D
           ksceUdcdStart: 0x9FD733EA

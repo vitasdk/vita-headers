@@ -26,6 +26,13 @@ typedef enum SceUdcdStatus {
 	SCE_UDCD_STATUS_UNKNOWN_2000            = 0x2000
 } SceUdcdStatus;
 
+/** USB Driver status
+ */
+typedef enum SceUdcdStatusDriver {
+	SCE_UDCD_STATUS_DRIVER_STARTED         = 0x01,
+	SCE_UDCD_STATUS_DRIVER_REGISTERED      = 0x02
+} SceUdcdStatusDriver;
+
 typedef struct {
 	uint8_t info[64];
 } SceUdcdDeviceInfo;
@@ -67,6 +74,15 @@ int sceUdcdGetDeviceState(SceUdcdDeviceState *state);
 int sceUdcdGetDeviceInfo(SceUdcdDeviceInfo *devInfo);
 
 /**
+ * Get state of a specific USB driver
+ *
+ * @param driverName - name of USB driver to get status from
+ *
+ * @return SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped
+ */
+int sceUdcdGetDrvState(const char *driverName);
+
+/**
  * Register callback
  *
  * @param[in] cbid - Callback UID
@@ -89,11 +105,11 @@ int sceUdcdUnregisterCallback(SceUID cbid);
  * Wait for state
  *
  * @param[in] waitParam - Wait parameter
- * @param[in] state - State
+ * @param[in] timeout - Timeout
  *
  * @return 0 on success, < 0 on error.
 */
-int sceUdcdWaitState(SceUdcdWaitParam *waitParam, int state);
+int sceUdcdWaitState(SceUdcdWaitParam *waitParam, unsigned int timeout);
 
 #ifdef __cplusplus
 }
