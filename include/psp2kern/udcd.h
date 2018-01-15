@@ -386,6 +386,15 @@ typedef struct SceUdcdDeviceInfo {
 	unsigned char info[64];
 } SceUdcdDeviceInfo;
 
+typedef struct {
+	int unk_00;
+	int unk_04;
+	int unk_08;
+	int unk_0C;
+	int unk_10;
+	const char *driverName;
+} SceUdcdWaitParam;
+
 /**
  * Waits until an UDCD bus is initialized
  *
