@@ -28,6 +28,7 @@ var group__SceUdcdKernel =
     [ "ksceUdcdGetDeviceInfo", "group__SceUdcdKernel.html#ga0bac6115280db28c030b53f5ef597541", null ],
     [ "ksceUdcdGetDeviceState", "group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76", null ],
     [ "ksceUdcdGetDrvState", "group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0", null ],
+    [ "ksceUdcdGetDrvStateInternal", "group__SceUdcdKernel.html#ga1e9306b8984ec89c575b3d7b857dabe0", null ],
     [ "ksceUdcdRegister", "group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f", null ],
     [ "ksceUdcdRegisterToBus", "group__SceUdcdKernel.html#ga040fd5c7d2c0211efb6925fb9e981b30", null ],
     [ "ksceUdcdReqCancelAll", "group__SceUdcdKernel.html#gae77811300ecf6782eb2bd68e603d3a81", null ],
@@ -37,5 +38,7 @@ var group__SceUdcdKernel =
     [ "ksceUdcdStart", "group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c", null ],
     [ "ksceUdcdStop", "group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129", null ],
     [ "ksceUdcdUnregister", "group__SceUdcdKernel.html#gac4b42b6e886000b962fa71ba289e5bb7", null ],
-    [ "ksceUdcdWaitState", "group__SceUdcdKernel.html#ga32fcbde8265107dc487376019b45adb9", null ]
+    [ "ksceUdcdWaitBusInitialized", "group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f", null ],
+    [ "ksceUdcdWaitState", "group__SceUdcdKernel.html#gaf456ddb9a54532af1aab67a69453938c", null ],
+    [ "ksceUdcdWaitStateInternal", "group__SceUdcdKernel.html#gacea1c9363708c8c836574e2cd0042e94", null ]
 ];

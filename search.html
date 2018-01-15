@@ -9443,23 +9443,30 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">udcd_8h_source.html#l00029</field>
+    <field name="url">udcd_8h_source.html#l00031</field>
+    <field name="keywords"></field>
+    <field name="text">SceUdcdStatusDriver SCE_UDCD_STATUS_DRIVER_STARTED SCE_UDCD_STATUS_DRIVER_REGISTERED SceUdcdStatusDriver</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">udcd.h</field>
+    <field name="url">udcd_8h_source.html#l00036</field>
     <field name="keywords"></field>
     <field name="text">uint8_t info SceUdcdDeviceInfo</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">udcd_8h_source.html#l00033</field>
+    <field name="url">udcd_8h_source.html#l00040</field>
     <field name="keywords"></field>
     <field name="text">unk_00 unk_04 unk_08 unk_0C unk_10 driverName SceUdcdWaitParam</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">udcd.h</field>
-    <field name="url">udcd_8h_source.html#l00042</field>
+    <field name="url">udcd_8h_source.html#l00049</field>
     <field name="keywords"></field>
-    <field name="text">unk_00 state cable connection use_usb_charging unk_14 SceUdcdDeviceState sceUdcdGetDeviceState SceUdcdDeviceState state sceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo sceUdcdRegisterCallback SceUID cbid state sceUdcdUnregisterCallback SceUID cbid sceUdcdWaitState SceUdcdWaitParam waitParam state</field>
+    <field name="text">unk_00 state cable connection use_usb_charging unk_14 SceUdcdDeviceState sceUdcdGetDeviceState SceUdcdDeviceState state sceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo sceUdcdGetDrvState driverName sceUdcdRegisterCallback SceUID cbid state sceUdcdUnregisterCallback SceUID cbid sceUdcdWaitState SceUdcdWaitParam waitParam timeout</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -10026,7 +10033,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00377</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo ksceUdcdStart driverName size args ksceUdcdStop driverName size args ksceUdcdActivate productId ksceUdcdDeactivate ksceUdcdGetDeviceState ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDrvState driverName ksceUdcdWaitState state waitMode SceUInt timeout ksceUdcdRegister SceUdcdDriver drv ksceUdcdRegisterToBus SceUdcdDriver drv bus ksceUdcdUnregister SceUdcdDriver drv ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqRecv SceUdcdDeviceRequest req</field>
+    <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo ksceUdcdWaitBusInitialized timeout bus ksceUdcdStart driverName size args ksceUdcdStop driverName size args ksceUdcdActivate productId ksceUdcdDeactivate ksceUdcdGetDeviceState ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDrvState driverName ksceUdcdGetDrvStateInternal driverName bus ksceUdcdWaitState SceUdcdWaitParam waitParam timeout ksceUdcdWaitStateInternal SceUdcdWaitParam waitParam timeout bus ksceUdcdRegister SceUdcdDriver drv ksceUdcdRegisterToBus SceUdcdDriver drv bus ksceUdcdUnregister SceUdcdDriver drv ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqRecv SceUdcdDeviceRequest req</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -18188,6 +18195,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">sceUdcdGetDrvState</field>
+    <field name="args">(const char *driverName)</field>
+    <field name="url">group__SceUdcdUser.html#ga263f89d49acd202f4c7ec258737ab2d6</field>
+    <field name="keywords">sceUdcdGetDrvState</field>
+    <field name="text">Get state of a specific USB driver driverName name of USB driver to get status from SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">sceUdcdRegisterCallback</field>
     <field name="args">(SceUID cbid, int state)</field>
     <field name="url">group__SceUdcdUser.html#ga428e0411b84295c3a3c18ac81b5c07e2</field>
@@ -18205,10 +18220,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">sceUdcdWaitState</field>
-    <field name="args">(SceUdcdWaitParam *waitParam, int state)</field>
-    <field name="url">group__SceUdcdUser.html#gaee9bcd922916b4d6a77d6893194c923a</field>
+    <field name="args">(SceUdcdWaitParam *waitParam, unsigned int timeout)</field>
+    <field name="url">group__SceUdcdUser.html#ga7d2eba95f91c4e3817e8f2c4a969b130</field>
     <field name="keywords">sceUdcdWaitState</field>
-    <field name="text">Wait for state waitParam Wait parameter state State 0 on success 0 on error</field>
+    <field name="text">Wait for state waitParam Wait parameter timeout Timeout 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">group</field>
@@ -20208,6 +20223,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceUdcdWaitBusInitialized</field>
+    <field name="args">(unsigned int timeout, int bus)</field>
+    <field name="url">group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f</field>
+    <field name="keywords">ksceUdcdWaitBusInitialized</field>
+    <field name="text">Waits until an UDCD bus is initialized timeout Timeout bus UDCD bus default is 2 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceUdcdStart</field>
     <field name="args">(const char *driverName, int size, void *args)</field>
     <field name="url">group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c</field>
@@ -20264,11 +20287,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceUdcdGetDrvStateInternal</field>
+    <field name="args">(const char *driverName, int bus)</field>
+    <field name="url">group__SceUdcdKernel.html#ga1e9306b8984ec89c575b3d7b857dabe0</field>
+    <field name="keywords">ksceUdcdGetDrvStateInternal</field>
+    <field name="text">Get state of a specific USB driver for an UDCD bus driverName name of USB driver to get status from bus UDCD bus default is 2 SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceUdcdWaitState</field>
-    <field name="args">(unsigned int state, unsigned int waitMode, SceUInt *timeout)</field>
-    <field name="url">group__SceUdcdKernel.html#ga32fcbde8265107dc487376019b45adb9</field>
+    <field name="args">(SceUdcdWaitParam *waitParam, unsigned int timeout)</field>
+    <field name="url">group__SceUdcdKernel.html#gaf456ddb9a54532af1aab67a69453938c</field>
     <field name="keywords">ksceUdcdWaitState</field>
-    <field name="text">Wait for USB state state combination of states returned by ksceUdcdGetDeviceState waitMode one of the SceEventFlagWaitTypes timeout pointer to timeout the usb state or 0 in case of error</field>
+    <field name="text">Wait for state waitParam Wait parameter timeout Timeout 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceUdcdWaitStateInternal</field>
+    <field name="args">(SceUdcdWaitParam *waitParam, unsigned int timeout, int bus)</field>
+    <field name="url">group__SceUdcdKernel.html#gacea1c9363708c8c836574e2cd0042e94</field>
+    <field name="keywords">ksceUdcdWaitStateInternal</field>
+    <field name="text">Wait for state for an UDCD bus waitParam Wait parameter timeout Timeout bus UDCD bus default is 2 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>

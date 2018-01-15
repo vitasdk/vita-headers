@@ -91,6 +91,9 @@ Functions</h2></td></tr>
 struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaecaf20cb4b5ebc2a129339b3a3e5a0c4">__attribute__</a> ((aligned(16))) <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a></td></tr>
 <tr class="memdesc:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB driver name. <br /></td></tr>
 <tr class="separator:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab57c4cf22ac08fbfc4750bef6049435f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f">ksceUdcdWaitBusInitialized</a> (unsigned int timeout, int bus)</td></tr>
+<tr class="memdesc:gab57c4cf22ac08fbfc4750bef6049435f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until an UDCD bus is initialized.  <a href="#gab57c4cf22ac08fbfc4750bef6049435f">More...</a><br /></td></tr>
+<tr class="separator:gab57c4cf22ac08fbfc4750bef6049435f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff5e76ddee35a8a368621fe6e534740c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c">ksceUdcdStart</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gaff5e76ddee35a8a368621fe6e534740c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver.  <a href="#gaff5e76ddee35a8a368621fe6e534740c">More...</a><br /></td></tr>
 <tr class="separator:gaff5e76ddee35a8a368621fe6e534740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,9 +115,15 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0">ksceUdcdGetDrvState</a> (const char *driverName)</td></tr>
 <tr class="memdesc:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of a specific USB driver.  <a href="#ga990e7c4f2cc70b36239b4dfd2cb10fa0">More...</a><br /></td></tr>
 <tr class="separator:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32fcbde8265107dc487376019b45adb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga32fcbde8265107dc487376019b45adb9">ksceUdcdWaitState</a> (unsigned int state, unsigned int waitMode, SceUInt *timeout)</td></tr>
-<tr class="memdesc:ga32fcbde8265107dc487376019b45adb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for USB state.  <a href="#ga32fcbde8265107dc487376019b45adb9">More...</a><br /></td></tr>
-<tr class="separator:ga32fcbde8265107dc487376019b45adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e9306b8984ec89c575b3d7b857dabe0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga1e9306b8984ec89c575b3d7b857dabe0">ksceUdcdGetDrvStateInternal</a> (const char *driverName, int bus)</td></tr>
+<tr class="memdesc:ga1e9306b8984ec89c575b3d7b857dabe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of a specific USB driver for an UDCD bus.  <a href="#ga1e9306b8984ec89c575b3d7b857dabe0">More...</a><br /></td></tr>
+<tr class="separator:ga1e9306b8984ec89c575b3d7b857dabe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf456ddb9a54532af1aab67a69453938c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaf456ddb9a54532af1aab67a69453938c">ksceUdcdWaitState</a> (<a class="el" href="group__SceUdcdUser.html#structSceUdcdWaitParam">SceUdcdWaitParam</a> *waitParam, unsigned int timeout)</td></tr>
+<tr class="memdesc:gaf456ddb9a54532af1aab67a69453938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for state.  <a href="#gaf456ddb9a54532af1aab67a69453938c">More...</a><br /></td></tr>
+<tr class="separator:gaf456ddb9a54532af1aab67a69453938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacea1c9363708c8c836574e2cd0042e94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gacea1c9363708c8c836574e2cd0042e94">ksceUdcdWaitStateInternal</a> (<a class="el" href="group__SceUdcdUser.html#structSceUdcdWaitParam">SceUdcdWaitParam</a> *waitParam, unsigned int timeout, int bus)</td></tr>
+<tr class="memdesc:gacea1c9363708c8c836574e2cd0042e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for state for an UDCD bus.  <a href="#gacea1c9363708c8c836574e2cd0042e94">More...</a><br /></td></tr>
+<tr class="separator:gacea1c9363708c8c836574e2cd0042e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f">ksceUdcdRegister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
 <tr class="memdesc:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver.  <a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">More...</a><br /></td></tr>
 <tr class="separator:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1166,6 +1175,44 @@ info[64]</td>
 
 </div>
 </div>
+<a id="ga1e9306b8984ec89c575b3d7b857dabe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e9306b8984ec89c575b3d7b857dabe0">&sect;&nbsp;</a></span>ksceUdcdGetDrvStateInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdGetDrvStateInternal </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>driverName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get state of a specific USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">driverName</td><td>- name of USB driver to get status from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_UDCD_STATUS_DRIVER_STARTED if the driver has been started, SCE_UDCD_STATUS_DRIVER_REGISTERED if it is stopped </dd></dl>
+
+</div>
+</div>
 <a id="gadf2a3f2bddec0047b9447c1eba90cd8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">&sect;&nbsp;</a></span>ksceUdcdRegister()</h2>
 
@@ -1456,8 +1503,46 @@ info[64]</td>
 
 </div>
 </div>
-<a id="ga32fcbde8265107dc487376019b45adb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga32fcbde8265107dc487376019b45adb9">&sect;&nbsp;</a></span>ksceUdcdWaitState()</h2>
+<a id="gab57c4cf22ac08fbfc4750bef6049435f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab57c4cf22ac08fbfc4750bef6049435f">&sect;&nbsp;</a></span>ksceUdcdWaitBusInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdWaitBusInitialized </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits until an UDCD bus is initialized. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>- Timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf456ddb9a54532af1aab67a69453938c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf456ddb9a54532af1aab67a69453938c">&sect;&nbsp;</a></span>ksceUdcdWaitState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1465,19 +1550,13 @@ info[64]</td>
         <tr>
           <td class="memname">int ksceUdcdWaitState </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceUdcdUser.html#structSceUdcdWaitParam">SceUdcdWaitParam</a> *&#160;</td>
+          <td class="paramname"><em>waitParam</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>waitMode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SceUInt *&#160;</td>
           <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
@@ -1488,16 +1567,60 @@ info[64]</td>
       </table>
 </div><div class="memdoc">
 
-<p>Wait for USB state. </p>
+<p>Wait for state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>- combination of states (returned by <a class="el" href="group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76" title="Get USB state. ">ksceUdcdGetDeviceState</a>) </td></tr>
-    <tr><td class="paramname">waitMode</td><td>- one of the <a class="el" href="group__SceThreadMgrKernel.html#ga705f51eec6069fac8fdd74d430472843" title="Event flag wait types. ">SceEventFlagWaitTypes</a> </td></tr>
-    <tr><td class="paramname">timeout</td><td>- pointer to timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">waitParam</td><td>- Wait parameter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>- Timeout</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the usb state or &lt; 0 in case of error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gacea1c9363708c8c836574e2cd0042e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacea1c9363708c8c836574e2cd0042e94">&sect;&nbsp;</a></span>ksceUdcdWaitStateInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdWaitStateInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceUdcdUser.html#structSceUdcdWaitParam">SceUdcdWaitParam</a> *&#160;</td>
+          <td class="paramname"><em>waitParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for state for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">waitParam</td><td>- Wait parameter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>- Timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
