@@ -12,15 +12,6 @@ extern "C" {
 #endif
 
 /**
- * Return absolute value of a passed number
- *
- * @param[in] value - Number to use
- *
- * @return Absolute value of the number.
-*/
-float sceFpuAbsf(float value);
-
-/**
  * Perform sine calculation of a number
  *
  * @param[in] value - Number to use
