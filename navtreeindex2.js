@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__SceCompatUser.html#ga2fe3cc2558a610a23906e4c51d50f661":[1,12,6,0,25],
 "group__SceCompatUser.html#ga319da01f8eeef8375159bc297df1b564":[1,12,6,0,3],
 "group__SceCompatUser.html#ga3514a14572690fb2700e171f071357d1":[1,12,6,0,0],
 "group__SceCompatUser.html#ga386ed6418703cc63e5dd39b1927844e7":[1,12,6,0,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__SceCtrlUser.html#gafccfa461eceb1c73ab603b455e816f1c":[1,1,0,0,40],
 "group__SceDevCtl.html":[1,4,0],
 "group__SceDevCtlKernel.html":[1,4,0,1],
-"group__SceDevCtlKernel.html#gae4b7c68e3217223ad695ba67eb74a1db":[1,4,0,1,0],
-"group__SceDevCtlUser.html":[1,4,0,0]
+"group__SceDevCtlKernel.html#gae4b7c68e3217223ad695ba67eb74a1db":[1,4,0,1,0]
 };

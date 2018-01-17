@@ -17,6 +17,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "ctrl.h", "ctrl_8h_source.html", null ],
     [ "display.h", "display_8h_source.html", null ],
     [ "fiber.h", "fiber_8h_source.html", null ],
+    [ "fpu.h", "fpu_8h_source.html", null ],
     [ "gxm.h", "gxm_8h_source.html", null ],
     [ "gxt.h", "gxt_8h_source.html", null ],
     [ "hid.h", "hid_8h_source.html", null ],
