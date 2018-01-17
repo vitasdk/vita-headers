@@ -243,9 +243,13 @@ ALIASES               += projectinc{1}="Include the header file in your project:
 ALIASES               += projectlib{1}="Link the library to the executable:\n\code \1 \endcode \n"
 ALIASES               += projectmod{1}="Load the required module:\n\code sceSysmoduleLoadModule(\1); \endcode \n"
 ALIASES               += projectend="---------------------\n"
+ALIASES               += notestart="---------------------\n### Notes ###\n"
+ALIASES               += staticlib="This module is not available in homebrews cause the related library is a static one.\n"
+ALIASES               += noteend="---------------------\n"
 ALIASES               += usage{1}="\projectstart \projectinc{\1} \projectend"
 ALIASES               += usage{2}="\projectstart \projectinc{\1} \projectlib{\2} \projectend"
 ALIASES               += usage{3}="\projectstart \projectinc{\1} \projectlib{\2} \projectmod{\3} \projectend"
+ALIASES               += staticnote="\notestart \staticlib \noteend"
 ALIASES               += usergroup{1}="\defgroup \1User User\n \ingroup \1\n Exports for User\n\\{\n"
 ALIASES               += kernelgroup{1}="\defgroup \1Kernel Kernel\n \ingroup \1\n Exports for Kernel\n\\{\n"
 

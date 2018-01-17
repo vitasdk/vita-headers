@@ -1,6 +1,7 @@
 /**
  * \usergroup{SceFpu}
  * \usage{psp2/fpu.h,SceFpu_stub}
+ * \staticnote
  */
 
 
