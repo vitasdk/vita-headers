@@ -7942,6 +7942,25 @@ modules:
           ksceUsbdCloseEndpoint: 0xF304DC5C
           ksceUsbdControlTransfer: 0x2E05660F
           ksceUsbdInterruptTransfer: 0xA0BF85B8
+  SceUsbPspcm:
+    nid: 0xADB937B9
+    libraries:
+      SceUsbPspcm:
+        kernel: false
+        nid: 0xC06A361B
+        functions:
+          sceUsbPspcmClose: 0xEA4B99DC
+          sceUsbPspcmDevctl: 0xF7079111
+          sceUsbPspcmIoctlCancelWaitData: 0x2A3A4A4A
+          sceUsbPspcmIoctlPollData: 0xF9C17E1F
+          sceUsbPspcmIoctlReset: 0x075B0D23
+          sceUsbPspcmIoctlWaitData: 0x7C1410FB
+          sceUsbPspcmOpen: 0x29E0D985
+          sceUsbPspcmRead: 0xD70556DA
+          sceUsbPspcmSetTitle: 0x9F40F727
+          sceUsbPspcmStartDevice: 0xFD87B944
+          sceUsbPspcmStopDevice: 0x495D3A91
+          sceUsbPspcmWrite: 0xC09CD942
   SceUsbSerial:
     nid: 0xB3C543D4
     libraries:
