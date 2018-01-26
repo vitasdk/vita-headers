@@ -213,6 +213,18 @@ int sceSysmoduleIsLoadedInternal(SceSysmoduleInternalModuleId id);
  */
 int sceSysmoduleLoadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, void *unk);
 
+/**
+ * Unload an internal module with custom arguments.
+ *
+ * @param[in] id - Module ID to check.
+ * @param[in] args - Size of passed arguments.
+ * @param[in] argp - Pointer to arguments to pass.
+ * @param[in] unk - Unknown value.
+ *
+ * @return 0 on success, <0 otherwise.
+ */
+int sceSysmoduleUnloadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, void *unk);
+
 #ifdef __cplusplus
 }
 #endif

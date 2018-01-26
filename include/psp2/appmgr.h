@@ -321,6 +321,19 @@ int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaun
 SceUID sceAppMgrLaunchAppByName2ForShell(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
 /**
+ * Mount game data
+ *
+ * @param[in] path - ux0:app/TITLEID
+ * @param[in] unk1 - Unknown, set 0
+ * @param[in] unk2 - Unknown, set 0
+ * @param[in] mount_point - Mountpoint to use
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
+int sceAppMgrGameDataMount(const char *path, int unk1, int unk2, char *mount_point);
+
+/**
  * Mount application data
  *
  * @param[in] id - App data ID
