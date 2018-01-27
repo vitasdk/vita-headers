@@ -29,6 +29,7 @@ var group__SceAppMgrUser =
     [ "sceAppMgrDestroyAppByAppId", "group__SceAppMgrUser.html#ga5a04c57c6875a5e80fe43be0221fb248", null ],
     [ "sceAppMgrDestroyAppByName", "group__SceAppMgrUser.html#ga11a4b09749234b6aa99f1764c6bb4ff9", null ],
     [ "sceAppMgrDestroyOtherApp", "group__SceAppMgrUser.html#ga075c1e3c8dfcab225b2c778d5f33d517", null ],
+    [ "sceAppMgrGameDataMount", "group__SceAppMgrUser.html#ga516fb2c927f86a6cb85f9d0ce6e649a3", null ],
     [ "sceAppMgrGetAppParam", "group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6", null ],
     [ "sceAppMgrGetDevInfo", "group__SceAppMgrUser.html#ga4c58805a1324edf28fc3ffde4a9d45c8", null ],
     [ "sceAppMgrGetIdByName", "group__SceAppMgrUser.html#ga07bc80f01f9d74a9e694f8d972a2e9f8", null ],

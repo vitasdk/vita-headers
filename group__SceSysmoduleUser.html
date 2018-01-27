@@ -104,6 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga115c0277016868eae89ead2b2237b774"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#ga115c0277016868eae89ead2b2237b774">sceSysmoduleLoadModuleInternalWithArg</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id, SceSize args, void *argp, void *unk)</td></tr>
 <tr class="memdesc:ga115c0277016868eae89ead2b2237b774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an internal module with custom arguments.  <a href="#ga115c0277016868eae89ead2b2237b774">More...</a><br /></td></tr>
 <tr class="separator:ga115c0277016868eae89ead2b2237b774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2f73be5a9cea81bed01db6492f15fdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#gaf2f73be5a9cea81bed01db6492f15fdb">sceSysmoduleUnloadModuleInternalWithArg</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id, SceSize args, void *argp, void *unk)</td></tr>
+<tr class="memdesc:gaf2f73be5a9cea81bed01db6492f15fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload an internal module with custom arguments.  <a href="#gaf2f73be5a9cea81bed01db6492f15fdb">More...</a><br /></td></tr>
+<tr class="separator:gaf2f73be5a9cea81bed01db6492f15fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gaf745da7104a5f5de2ce268dd05d6622f"></a>
@@ -616,6 +619,58 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf2f73be5a9cea81bed01db6492f15fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2f73be5a9cea81bed01db6492f15fdb">&sect;&nbsp;</a></span>sceSysmoduleUnloadModuleInternalWithArg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSysmoduleUnloadModuleInternalWithArg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SceSize&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>argp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>unk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload an internal module with custom arguments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Module ID to check. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>- Size of passed arguments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">argp</td><td>- Pointer to arguments to pass. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 otherwise. </dd></dl>
 
 </div>
 </div>

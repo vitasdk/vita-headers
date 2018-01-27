@@ -20,15 +20,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__SceAudioencUser.html#gaeb6b1e0a2bc315c05ec9b67f54bc39c3",
-"group__SceCompatUser.html#ga2fe3cc2558a610a23906e4c51d50f661",
-"group__SceDevCtlUser.html",
+"group__SceAudioencUser.html#gae52560aa93159eebd8001535dd0e8baa",
+"group__SceCompatUser.html#ga28fe9e97656c85b92e0f644618163118",
+"group__SceDevCtlKernel.html#gae4b7c68e3217223ad695ba67eb74a1db",
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac5730bd17e5bf80af4ec878b41dd702f",
-"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556aa1cca54a94c4bce3886f3c89a8ee69b4",
-"group__SceSqliteUser.html",
-"group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa267bbc99d10b34f3f9836a73fa62f521",
-"group__SceSystemParamUser.html#ggaae33ce498fb58ec8fb018e03635e33cda1eaaaa31949e7670bed6498ba91ecfd6",
-"group__SceTypesUser.html#gad563fb9897e927ac60a231ba16859629"
+"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a8fac5bb23f38e6bb6b30e6fa3a0d84e8",
+"group__SceShutterSoundUser.html#ggaa5b72396d8e29e6aa6e15dd64be3f0dfa2e3fe45d7a184778768a9c31657d1c99",
+"group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa0172dc52553856b12194c55f50720522",
+"group__SceSystemParamUser.html#gab138af3ead059bc6b78e093f5f92dce0",
+"group__SceTypes.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
