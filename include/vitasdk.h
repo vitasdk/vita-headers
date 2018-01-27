@@ -30,6 +30,7 @@
 #include <psp2/motion.h>
 #include <psp2/mtpif.h>
 #include <psp2/musicexport.h>
+#include <psp2/netcheck_dialog.h>
 #include <psp2/npdrm.h>
 #include <psp2/npdrmpackage.h>
 #include <psp2/paf.h>
@@ -37,6 +38,8 @@
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
 #include <psp2/promoterutil.h>
+#include <psp2/pspnet_adhoc.h>
+#include <psp2/pspnet_adhocctl.h>
 #include <psp2/pss.h>
 #include <psp2/pvf.h>
 #include <psp2/registrymgr.h>
