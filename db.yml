@@ -1133,6 +1133,8 @@ modules:
         kernel: true
         nid: 0x9FED47AC
         functions:
+          ksceDisplayCaptureFrameBufDMAC: 0xF116D0B4
+          ksceDisplayCaptureFrameBufIFTU: 0xB0CED8BC
           ksceDisplayDisableHead: 0x43347565
           ksceDisplayEnableHead: 0x496032D6
           ksceDisplayGetActualViewportConf: 0x40ACFE51
