@@ -14,6 +14,15 @@
 extern "C" {
 #endif
 
+typedef enum ScePowerErrorCode {
+	SCE_POWER_ERROR_INVALID_VALUE           = 0x802B0000,
+	SCE_POWER_ERROR_ALREADY_REGISTERED      = 0x802B0001,
+	SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED = 0x802B0002,
+	SCE_POWER_ERROR_CANT_SUSPEND            = 0x802B0003,
+	SCE_POWER_ERROR_NO_BATTERY              = 0x802B0100,
+	SCE_POWER_ERROR_DETECTING               = 0x802B0101
+} ScePowerErrorCode;
+	
 typedef enum ScePowerCallbackType {
 	/** indicates the unit is suspending, seems to occur due to inactivity */
 	SCE_POWER_CB_SUSPENDING       = 0x00010000,
