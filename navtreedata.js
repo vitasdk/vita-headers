@@ -28,7 +28,7 @@ var NAVTREEINDEX =
 "group__SceShutterSoundUser.html#ggaa5b72396d8e29e6aa6e15dd64be3f0dfa2e3fe45d7a184778768a9c31657d1c99",
 "group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa0172dc52553856b12194c55f50720522",
 "group__SceSystemParamUser.html#gab138af3ead059bc6b78e093f5f92dce0",
-"group__SceTypes.html"
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

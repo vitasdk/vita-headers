@@ -5875,19 +5875,19 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00495</field>
     <field name="keywords"></field>
-    <field name="text">SCE_EVENT_WAITCLEAR_PAT SceEventFlagWaitTypes SceUID ksceKernelCreateEventFlag name attr bits SceKernelEventFlagOptParam opt ksceKernelSetEventFlag SceUID evid bits ksceKernelClearEventFlag SceUID evid bits ksceKernelPollEventFlag evid bits wait outBits ksceKernelWaitEventFlag evid bits wait outBits SceUInt timeout ksceKernelWaitEventFlagCB evid bits wait outBits SceUInt timeout ksceKernelDeleteEventFlag evid SceKernelLwCondWork SceInt64 data SceKernelLwCondWork SceKernelLwCondOptParam SceSize size SceKernelLwCondOptParam</field>
+    <field name="text">SCE_EVENT_WAITCLEAR_PAT SceEventFlagWaitTypes SceUID ksceKernelCreateEventFlag name attr bits SceKernelEventFlagOptParam opt ksceKernelSetEventFlag SceUID evid bits ksceKernelClearEventFlag SceUID evid bits ksceKernelPollEventFlag evid bits wait outBits ksceKernelWaitEventFlag evid bits wait outBits SceUInt timeout ksceKernelWaitEventFlagCB evid bits wait outBits SceUInt timeout ksceKernelDeleteEventFlag evid SceKernelLwCondWork SceInt64 data SceKernelLwCondWork SceKernelLwCondOptParam SceSize size SceKernelLwCondOptParam SceKernelCondOptParam SceSize size SceKernelCondOptParam SceKernelCondInfo SceSize size SceUID condId name SceUInt attr SceUID mutexId numWaitThreads SceKernelCondInfo SceUID ksceKernelCreateCond name SceUInt attr SceUID mutexId SceKernelCondOptParam option ksceKernelDeleteCond SceUID condId ksceKernelWaitCond SceUID condId timeout ksceKernelSignalCond SceUID condId ksceKernelSignalCondAll SceUID condId ksceKernelSignalCondTo SceUID condId SceUID threadId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00592</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00675</field>
     <field name="keywords"></field>
     <field name="text">int SceKernelCallbackFunction notifyId notifyCount notifyArg common SceKernelCallbackInfo SceSize size SceUID callbackId name SceUID threadId SceKernelCallbackFunction callback common notifyCount notifyArg SceKernelCallbackInfo ksceKernelCreateCallback name attr SceKernelCallbackFunction func arg ksceKernelDeleteCallback SceUID cb ksceKernelNotifyCallback SceUID cb arg2 ksceKernelCancelCallback SceUID cb ksceKernelGetCallbackCount SceUID cb ksceKernelCheckCallback</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">threadmgr.h</field>
-    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00679</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00762</field>
     <field name="keywords"></field>
     <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info</field>
   </doc>
@@ -15811,7 +15811,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">SceKernelCondInfo</field>
     <field name="url">group__SceThreadMgrUser.html#structSceKernelCondInfo</field>
     <field name="keywords"></field>
-    <field name="text">sceKernelGetCondInfo</field>
+    <field name="text">sceKernelGetCondInfo ksceKernelGetCondInfo sceKernelGetCondInfo ksceKernelGetCondInfo</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -19942,6 +19942,54 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#gab8567d309fe9786a35400df0afe0ad8c</field>
     <field name="keywords">ksceKernelDeleteEventFlag</field>
     <field name="text">Delete an event flag evid The event id returned by ksceKernelCreateEventFlag 0 On error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelCreateCond</field>
+    <field name="args">(const char *name, SceUInt attr, SceUID mutexId, const SceKernelCondOptParam *option)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga2c0d4754826423e6044787dd0dc3233e</field>
+    <field name="keywords">ksceKernelCreateCond</field>
+    <field name="text">Creates a new condition variable Example name Specifies the name of the condition variable attr Condition variable attribute flags normally set to 0 mutexId Mutex to be related to the condition variable option Condition variable options normally set to 0 A condition variable id</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelDeleteCond</field>
+    <field name="args">(SceUID condId)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga844cb252809d39019937caeb949f962e</field>
+    <field name="keywords">ksceKernelDeleteCond</field>
+    <field name="text">Destroy a condition variable condition variableid The condition variable id returned from ksceKernelCreateCond Returns the value 0 if it s successful otherwise</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelWaitCond</field>
+    <field name="args">(SceUID condId, unsigned int *timeout)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gab5572c7290092e9a693f44c6d7e710bd</field>
+    <field name="keywords">ksceKernelWaitCond</field>
+    <field name="text">Waits for a signal of a condition variable condId The condition variable id returned from ksceKernelCreateCond timeout Timeout in microseconds assumed 0 On error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelSignalCond</field>
+    <field name="args">(SceUID condId)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gac48c917c6e639c8934134ae3a53e2751</field>
+    <field name="keywords">ksceKernelSignalCond</field>
+    <field name="text">Signals a condition variable condId The condition variable id returned from ksceKernelCreateCond 0 On error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelSignalCondAll</field>
+    <field name="args">(SceUID condId)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga3d5d83d9c229de31a9d877bc6f32b164</field>
+    <field name="keywords">ksceKernelSignalCondAll</field>
+    <field name="text">Signals a condition variable to all threads waiting for it condId The condition variable id returned from ksceKernelCreateCond 0 On error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelSignalCondTo</field>
+    <field name="args">(SceUID condId, SceUID threadId)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga6b2e224643051e6f423e54e0a4ef4825</field>
+    <field name="keywords">ksceKernelSignalCondTo</field>
+    <field name="text">Signals a condition variable to a specific thread waiting for it condId The condition variable id returned from ksceKernelCreateCond threadId The thread id returned from ksceKernelCreateThread 0 On error</field>
   </doc>
   <doc>
     <field name="type">function</field>
