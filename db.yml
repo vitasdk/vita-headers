@@ -2258,6 +2258,7 @@ modules:
           ksceKernelClearEvent: 0x9C335818
           ksceKernelClearEventFlag: 0x4F1DA3BE
           ksceKernelCreateCallback: 0x1C41614C
+          ksceKernelCreateCond: 0xDB6CD34A
           ksceKernelCreateEventFlag: 0x4336BAA4
           ksceKernelCreateMutex: 0xFBAA026E
           ksceKernelCreateSema: 0x30E93C31
@@ -2266,6 +2267,7 @@ modules:
           ksceKernelDelayThread: 0x4B675D05
           ksceKernelDelayThreadCB: 0x9C0180E1
           ksceKernelDeleteCallback: 0x3A7E17F6
+          ksceKernelDeleteCond: 0xAEE0D27C
           ksceKernelDeleteEventFlag: 0x71ECB352
           ksceKernelDeleteFastMutex: 0x11FE84A1
           ksceKernelDeleteMutex: 0x0A912340
@@ -2315,6 +2317,7 @@ modules:
           ksceKernelUnregisterCallbackFromEvent: 0x2E48D81C
           ksceKernelUnregisterCallbackFromEventAll: 0x8DADBD16
           ksceKernelUnregisterThreadEventHandler: 0x2C8ED6F0
+          ksceKernelWaitCond: 0xCC7E027D
           ksceKernelWaitEvent: 0xC529EA32
           ksceKernelWaitEventCB: 0x360C655C
           ksceKernelWaitEventFlag: 0x0C1D3F20
