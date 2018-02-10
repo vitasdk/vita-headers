@@ -108,12 +108,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelIsIntrPendin
 <tr class="memitem:ga146f56bf7f406b88f6ec666d600de307"><td class="memItemLeft" align="right" valign="top"><a id="ga146f56bf7f406b88f6ec666d600de307"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelClearIntrPending</b> (int intr_code)</td></tr>
 <tr class="separator:ga146f56bf7f406b88f6ec666d600de307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga179d6c6c90f4a0b37087fa75d9e00d5b"><td class="memItemLeft" align="right" valign="top"><a id="ga179d6c6c90f4a0b37087fa75d9e00d5b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelSetIntrPriority</b> (int intr_code, unsigned char priority)</td></tr>
-<tr class="separator:ga179d6c6c90f4a0b37087fa75d9e00d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac159680d1c0c2e27050d1834f549632f"><td class="memItemLeft" align="right" valign="top"><a id="gac159680d1c0c2e27050d1834f549632f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelSetIntrPriority</b> (int intr_code, int priority)</td></tr>
+<tr class="separator:gac159680d1c0c2e27050d1834f549632f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63130b2fc16056046f524bd5d0e648b1"><td class="memItemLeft" align="right" valign="top"><a id="ga63130b2fc16056046f524bd5d0e648b1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetIntrPriority</b> (int intr_code, int *priority)</td></tr>
+<tr class="separator:ga63130b2fc16056046f524bd5d0e648b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70c54acb8f47a0d255f706e6d5395b79"><td class="memItemLeft" align="right" valign="top"><a id="ga70c54acb8f47a0d255f706e6d5395b79"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelSetIntrTarget</b> (int intr_code, int cpu_target_list)</td></tr>
 <tr class="separator:ga70c54acb8f47a0d255f706e6d5395b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace8653e5de54d98322b6720c2699d590"><td class="memItemLeft" align="right" valign="top"><a id="gace8653e5de54d98322b6720c2699d590"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetIntrTarget</b> (int intr_code, int *cpu_target_list)</td></tr>
+<tr class="separator:gace8653e5de54d98322b6720c2699d590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf74a5da2bbaae7c3fc2c1f2ad2dd26e"><td class="memItemLeft" align="right" valign="top"><a id="gadf74a5da2bbaae7c3fc2c1f2ad2dd26e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelTriggerSGI</b> (int intr_code, unsigned int target_list_filter, unsigned int cpu_target_list)</td></tr>
 <tr class="separator:gadf74a5da2bbaae7c3fc2c1f2ad2dd26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +129,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelIsIntrAllowe
 <tr class="memitem:ga8226a97d8ea108437f464413d577a5db"><td class="memItemLeft" align="right" valign="top"><a id="ga8226a97d8ea108437f464413d577a5db"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelRegisterSubIntrHandler</b> (int intr_code, int subintr_code, const char *name, SceKernelSubIntrHandler handler, void *register_arg)</td></tr>
 <tr class="separator:ga8226a97d8ea108437f464413d577a5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c64ba1137cb29b206b2600575f8e393"><td class="memItemLeft" align="right" valign="top"><a id="ga9c64ba1137cb29b206b2600575f8e393"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelReleaseSubIntrHandler</b> (int intr_code, int subintr_code)</td></tr>
+<tr class="separator:ga9c64ba1137cb29b206b2600575f8e393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e5d582562933d4201126b6b87fa2723"><td class="memItemLeft" align="right" valign="top"><a id="ga8e5d582562933d4201126b6b87fa2723"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelTriggerSubIntr</b> (int intr_code, int subintr_code, void *subintr_arg)</td></tr>
 <tr class="separator:ga8e5d582562933d4201126b6b87fa2723"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,15 +144,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelDisableSubIn
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gae1a0a157714f764dc444813734d1c05d"><td class="memItemLeft" align="right" valign="top"><a id="gae1a0a157714f764dc444813734d1c05d"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelIntrOptParam2Callback</b>) (int intr_code, int subintr_code)</td></tr>
-<tr class="separator:gae1a0a157714f764dc444813734d1c05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab955de2ad0a9bca928a895f57fb9782f"><td class="memItemLeft" align="right" valign="top"><a id="gab955de2ad0a9bca928a895f57fb9782f"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelIntrHandler</b>) (int unk, void *userCtx)</td></tr>
 <tr class="separator:gab955de2ad0a9bca928a895f57fb9782f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga224503e00965ab959f39b066abfe1f11"><td class="memItemLeft" align="right" valign="top"><a id="ga224503e00965ab959f39b066abfe1f11"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelSubIntrHandler</b>) (void *arg, int unk0, int unk1)</td></tr>
-<tr class="separator:ga224503e00965ab959f39b066abfe1f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memItemLeft" align="right" valign="top"><a id="ga8091ffcd1bd34918ac5517e79b5f0dff"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelSubIntrHandler</b>) (void *subintr_arg, void *register_arg, unsigned char intr_priority)</td></tr>
+<tr class="separator:ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memItemLeft" align="right" valign="top"><a id="gaae4ab184e3330d0a3d091e7d07a6c73e"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelIntrOptHandlersCb1</b>) (int intr_code, int subintr_code)</td></tr>
+<tr class="separator:gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95eea41a243da0f511481213b9260646"><td class="memItemLeft" align="right" valign="top"><a id="ga95eea41a243da0f511481213b9260646"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelIntrOptHandlersCb2</b>) (int intr_code, int subintr_code, void *arg)</td></tr>
+<tr class="separator:ga95eea41a243da0f511481213b9260646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memItemLeft" align="right" valign="top"><a id="ga7000acd192bdb3060d2b66dd0f5509d8"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelIntrOptHandlersCb3</b>) (int intr_code, int subintr_code, SceKernelSubIntrHandler handler, void *register_arg)</td></tr>
+<tr class="separator:ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelIntrOptParam2" id="structSceKernelIntrOptParam2"></a>
@@ -160,63 +175,63 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceKernelSub
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga1836fa949ffbf0bbd97302e6c256eed4"></a>SceKernelIntrOptParam2Callback *</td>
+<a id="ga2788b139f960ac53e104150fc123c641"></a>SceKernelIntrOptHandlersCb1 *</td>
 <td class="fieldname">
-enable_subinterrupt_cb</td>
+disable_subintr_cb</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gadf3961d80444ee056bdeb087cd960c95"></a>SceKernelIntrOptParam2Callback *</td>
+<a id="gacd549c19ca745606146f3ae02c586ab4"></a>SceKernelIntrOptHandlersCb1 *</td>
+<td class="fieldname">
+enable_subintr_cb</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8ca14193b106553fd0ab6d0f2b2dc318"></a>SceKernelIntrOptHandlersCb1 *</td>
 <td class="fieldname">
 fptr0</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gad37ff92838516d058ee6d2c16dc022bf"></a>SceKernelIntrOptParam2Callback *</td>
+<a id="gadef5a864ba6198014a3ec12a06871363"></a>SceKernelIntrOptHandlersCb2 *</td>
 <td class="fieldname">
-fptr2</td>
+fptr3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga14729a3a04facb22c0ef0c4208cf8855"></a>SceKernelIntrOptHandlersCb1 *</td>
+<td class="fieldname">
+fptr4</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga288b90e5f26b542e6b334213914e98f9"></a>SceKernelIntrOptHandlersCb1 *</td>
+<td class="fieldname">
+fptr5</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9e5305954c9da4703ad9e74777080a15"></a>SceKernelIntrOptHandlersCb3 *</td>
+<td class="fieldname">
+post_register_subintr_cb</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gac604d5f3499a83fe46b51e1dda9b2e2f"></a>SceKernelIntrOptHandlersCb3 *</td>
+<td class="fieldname">
+pre_register_subintr_cb</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad2dd388db8bd75ca80e2f6f1c2774e77"></a>SceKernelIntrOptHandlersCb1 *</td>
+<td class="fieldname">
+release_subintr_cb</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ga02e96988b7e412ebf6e14946689d6220"></a>uint32_t</td>
 <td class="fieldname">
 size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaed4f50db04c396be5e900ea5d0fc3c41"></a>uint32_t</td>
-<td class="fieldname">
-unk_1C</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga4abf0035d7e2db80b1cf34fa560846d1"></a>uint32_t</td>
-<td class="fieldname">
-unk_20</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga26c0ae295c781d4d73fae602a1364d87"></a>uint32_t</td>
-<td class="fieldname">
-unk_24</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga30c41e623fa4a0616b6d7b06521cf6c6"></a>uint32_t</td>
-<td class="fieldname">
-unk_4</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga20897c32152013fab614e0222396a53c"></a>uint32_t</td>
-<td class="fieldname">
-unk_8</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gad3278572c0c06a8158d6a8854c5717c0"></a>uint32_t</td>
-<td class="fieldname">
-unk_C</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -237,15 +252,15 @@ unk_C</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gadc6fde638d1c2eef7e334288b99197b3"></a>uint32_t</td>
+<a id="gab1664298a6191eb3fa2328b2cbb253f9"></a>SceKernelIntrOptHandlers *</td>
 <td class="fieldname">
-num</td>
+handlers</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga4049bb4c3600535b75bf6d3d3a8bca41"></a><a class="el" href="group__SceIntrMgrKernel.html#structSceKernelIntrOptParam2">SceKernelIntrOptParam2</a> *</td>
+<a id="gadc6fde638d1c2eef7e334288b99197b3"></a>uint32_t</td>
 <td class="fieldname">
-opt2</td>
+num</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
