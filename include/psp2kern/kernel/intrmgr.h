@@ -30,7 +30,7 @@ typedef struct SceKernelIntrOptHandlers {
 	SceKernelIntrOptHandlersCb2 *fptr3;
 	SceKernelIntrOptHandlersCb1 *fptr4;
 	SceKernelIntrOptHandlersCb1 *fptr5;
-} SceKernelIntrOptParam2;
+} SceKernelIntrOptHandlers;
 
 typedef struct SceKernelIntrOptParam {
 	uint32_t size; // 0x14
