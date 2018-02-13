@@ -2043,6 +2043,13 @@ modules:
           ksceKernelUnmapMemBlock: 0xFFCD9B60
           ksceKernelUidRetain: 0x0F5C84B7
           ksceKernelUidRelease: 0x149885C4
+          ksceKernelMemBlockRelease: 0x00575B00
+          ksceKernelMemRangeRetain: 0x59A4402F
+          ksceKernelMemRangeRetainForPid: 0x659586BF
+          ksceKernelMemRangeRetainWithPerm: 0xBC0A1D60
+          ksceKernelMemRangeRelease: 0x75C70DE0
+          ksceKernelMemRangeReleaseForPid: 0xA8525B06
+          ksceKernelMemRangeReleaseWithPerm: 0x22CBE925
       SceSysmemForKernel:
         kernel: true
         nid: 0x63A519E5
@@ -2114,6 +2121,8 @@ modules:
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
           ksceKernelCpuResumeIntr: 0x7BB9D5DF
           ksceKernelCpuSuspendIntr: 0xD32ACE9E
+          ksceKernelCpuSpinLockIrqSave: 0xEC53D007
+          ksceKernelCpuSpinLockIrqRestore: 0x740A0750
       SceSysrootForKernel:
         kernel: true
         nid: 0x3691DA45
