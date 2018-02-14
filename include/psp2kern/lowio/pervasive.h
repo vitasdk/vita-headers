@@ -32,6 +32,7 @@ int kscePervasiveDsiResetEnable(int port, unsigned int mask);
 int kscePervasiveDsiResetDisable(int port, unsigned int mask);
 int kscePervasiveDsiClockEnable(int port, unsigned int mask);
 int kscePervasiveDsiClockDisable(int port, unsigned int mask);
+int kscePervasiveDsiSetPixelclock(int port, int pixelclock);
 
 int kscePervasiveMsifResetEnable(void);
 int kscePervasiveMsifResetDisable(void);

@@ -8191,6 +8191,7 @@ modules:
           kscePervasiveDsiResetDisable: 0xFFB43AC2
           kscePervasiveDsiClockEnable: 0xBC42C72F
           kscePervasiveDsiClockDisable: 0x25AE181E
+          kscePervasiveDsiSetPixelclock: 0x91C80C41
           kscePervasiveMsifResetEnable: 0xA3569FF1
           kscePervasiveMsifResetDisable: 0xCB0F15CD
           kscePervasiveMsifClockEnable: 0x7704C013
@@ -8221,6 +8222,21 @@ modules:
           ksceI2cSetDebugHandlers: 0xA2C7CE62
           ksceI2cTransferWrite: 0xCA94A759
           ksceI2cTransferRead: 0xD1D0A9A4
+      SceDsiForDriver:
+        kernel: true
+        nid: 0xEC897883
+        functions:
+          ksceDsiEnableHead: 0x5BE5AA9B
+          ksceDsiDisableHead: 0x114D1413
+          ksceDsiSendBlankingPacket: 0x7640F607
+          ksceDsiSetLanesPixelsize: 0x78E6E3CF
+          ksceDsiSetVic: 0x97BFEA76
+          ksceDsiGetVicResolution: 0xB3A70C05
+          ksceDsiGetPixelclock: 0x4DF9E924
+          ksceDsiGenericShortWrite: 0x89C00D2F
+          ksceDsiGenericReadRequest: 0x98120684
+          ksceDsiDcsShortWrite: 0xBA6BC89F
+          ksceDsiDcsRead: 0x3FB0DF1F
   SceSblAuthMgr:
     nid: 0x1773372D
     libraries:
