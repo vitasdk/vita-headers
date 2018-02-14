@@ -21,14 +21,14 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__SceAudioencUser.html#gae52560aa93159eebd8001535dd0e8baa",
-"group__SceCompatUser.html#ga28fe9e97656c85b92e0f644618163118",
-"group__SceDevCtlKernel.html#gae4b7c68e3217223ad695ba67eb74a1db",
+"group__SceCompatUser.html#ga212514269ab5f81d9ae55ab21eb40c56",
+"group__SceDevCtl.html",
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac5730bd17e5bf80af4ec878b41dd702f",
-"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a8fac5bb23f38e6bb6b30e6fa3a0d84e8",
-"group__SceShutterSoundUser.html#ggaa5b72396d8e29e6aa6e15dd64be3f0dfa2e3fe45d7a184778768a9c31657d1c99",
-"group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa0172dc52553856b12194c55f50720522",
-"group__SceSystemParamUser.html#gab138af3ead059bc6b78e093f5f92dce0",
-"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7"
+"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a7f2dcfb9b274eae79042b47ba608bb34",
+"group__SceShutterSoundUser.html#ga584676808147a62bc9f7e890e58afd1b",
+"group__SceSysmoduleUser.html#ga115c0277016868eae89ead2b2237b774",
+"group__SceSysmoduleUser.html#ggaf745da7104a5f5de2ce268dd05d6622fab9b303650a3149ca4b974d3037dd284f",
+"group__SceTouchUser.html#ga63b1bd23da13370f532ef610d5d33148"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

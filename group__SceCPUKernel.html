@@ -138,6 +138,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gad9f7f38286e8d0b08837729bab4face8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8">ksceKernelCpuResumeIntr</a> (int *addr, int prev_state)</td></tr>
 <tr class="memdesc:gad9f7f38286e8d0b08837729bab4face8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume all interrupts (enables IRQs)  <a href="#gad9f7f38286e8d0b08837729bab4face8">More...</a><br /></td></tr>
 <tr class="separator:gad9f7f38286e8d0b08837729bab4face8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa30b72fe83595ec4dfcafc14bf04b145"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145">ksceKernelCpuSpinLockIrqSave</a> (int *addr)</td></tr>
+<tr class="memdesc:gaa30b72fe83595ec4dfcafc14bf04b145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable interrupts (IRQs) and spin-lock.  <a href="#gaa30b72fe83595ec4dfcafc14bf04b145">More...</a><br /></td></tr>
+<tr class="separator:gaa30b72fe83595ec4dfcafc14bf04b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf609c6394e271c010838dbd33550a35b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gaf609c6394e271c010838dbd33550a35b">ksceKernelCpuSpinLockIrqRestore</a> (int *addr, int flags)</td></tr>
+<tr class="memdesc:gaf609c6394e271c010838dbd33550a35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin-unlock and restore interrupt state.  <a href="#gaf609c6394e271c010838dbd33550a35b">More...</a><br /></td></tr>
+<tr class="separator:gaf609c6394e271c010838dbd33550a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -694,6 +700,71 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The previous state of the interrupt controller. </dd></dl>
+
+</div>
+</div>
+<a id="gaf609c6394e271c010838dbd33550a35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf609c6394e271c010838dbd33550a35b">&sect;&nbsp;</a></span>ksceKernelCpuSpinLockIrqRestore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelCpuSpinLockIrqRestore </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spin-unlock and restore interrupt state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the lock-unlock pair </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Previous interrupt state to be restored (returned by <a class="el" href="group__SceCPUKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145" title="Disable interrupts (IRQs) and spin-lock. ">ksceKernelCpuSpinLockIrqSave</a>)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a id="gaa30b72fe83595ec4dfcafc14bf04b145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa30b72fe83595ec4dfcafc14bf04b145">&sect;&nbsp;</a></span>ksceKernelCpuSpinLockIrqSave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelCpuSpinLockIrqSave </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable interrupts (IRQs) and spin-lock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the lock-unlock pair</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current state of the interrupt controller, to be passed to <a class="el" href="group__SceCPUKernel.html#gaf609c6394e271c010838dbd33550a35b" title="Spin-unlock and restore interrupt state. ">ksceKernelCpuSpinLockIrqRestore</a> </dd></dl>
 
 </div>
 </div>

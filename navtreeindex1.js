@@ -15,10 +15,11 @@ var NAVTREEINDEX1 =
 "group__SceCPUKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[1,6,1,0,1],
 "group__SceCPUKernel.html#ga51e7af054510365358595c76dd758b6e":[1,6,1,0,16],
 "group__SceCPUKernel.html#ga5e4ae03a7a343e652e31eb16f815f543":[1,6,1,0,11],
-"group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5":[1,6,1,0,19],
-"group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766":[1,6,1,0,18],
+"group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5":[1,6,1,0,21],
+"group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766":[1,6,1,0,20],
 "group__SceCPUKernel.html#ga77b453c4e9bc36f2fe61aefab84c2345":[1,6,1,0,14],
 "group__SceCPUKernel.html#ga82fbbeae621b85af21dd6986d16898e0":[1,6,1,0,15],
+"group__SceCPUKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145":[1,6,1,0,19],
 "group__SceCPUKernel.html#gaa5b75a3c600994738e933102d28329e3":[1,6,1,0,0],
 "group__SceCPUKernel.html#gab4651268bb4ef22633f5b6055061fd64":[1,6,1,0,13],
 "group__SceCPUKernel.html#gac04c280a056c1aaec3a7b92a0429a772":[1,6,1,0,9],
@@ -27,6 +28,7 @@ var NAVTREEINDEX1 =
 "group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8":[1,6,1,0,17],
 "group__SceCPUKernel.html#gadadedff104cdf1218b677e4df6ae575c":[1,6,1,0,4],
 "group__SceCPUKernel.html#gae7cf193ba1e76f6fc460b4713fa18be0":[1,6,1,0,2],
+"group__SceCPUKernel.html#gaf609c6394e271c010838dbd33550a35b":[1,6,1,0,18],
 "group__SceCPUKernel.html#gaffae5b0a1940847515f19686ede3b403":[1,6,1,0,3],
 "group__SceCamera.html":[1,1,2],
 "group__SceCameraUser.html":[1,1,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceCompatUser.html#ga094805755773409e28184c89af4b218d":[1,12,6,0,20],
 "group__SceCompatUser.html#ga1455120122d124fb2ed23c38d9cab1d5":[1,12,6,0,22],
 "group__SceCompatUser.html#ga1b661d174d544307b227a23522ca268b":[1,12,6,0,15],
-"group__SceCompatUser.html#ga1f2f0278ea534d303697a107fdad6a9b":[1,12,6,0,21],
-"group__SceCompatUser.html#ga212514269ab5f81d9ae55ab21eb40c56":[1,12,6,0,11],
-"group__SceCompatUser.html#ga233fc42e19338dbb1166ac71b1b2e39d":[1,12,6,0,5]
+"group__SceCompatUser.html#ga1f2f0278ea534d303697a107fdad6a9b":[1,12,6,0,21]
 };

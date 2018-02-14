@@ -192,6 +192,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelMapBlockUser
 <tr class="memitem:ga011edc8ffacf956f1cbfb1b542493f02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga011edc8ffacf956f1cbfb1b542493f02">ksceKernelGetPaddrList</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *input, <a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *list)</td></tr>
 <tr class="memdesc:ga011edc8ffacf956f1cbfb1b542493f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical address list of a given virtual address range.  <a href="#ga011edc8ffacf956f1cbfb1b542493f02">More...</a><br /></td></tr>
 <tr class="separator:ga011edc8ffacf956f1cbfb1b542493f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fc8a7535b8d13bcc6d9ef7a4e8e548d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d">ksceKernelMemBlockRelease</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memdesc:ga1fc8a7535b8d13bcc6d9ef7a4e8e548d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a memblock referenced by the UID.  <a href="#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d">More...</a><br /></td></tr>
+<tr class="separator:ga1fc8a7535b8d13bcc6d9ef7a4e8e548d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4306be94bd9aba02285381ed44ad686f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga4306be94bd9aba02285381ed44ad686f">ksceKernelMemRangeRetain</a> (void *addr, unsigned int size)</td></tr>
+<tr class="memdesc:ga4306be94bd9aba02285381ed44ad686f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains a memory range.  <a href="#ga4306be94bd9aba02285381ed44ad686f">More...</a><br /></td></tr>
+<tr class="separator:ga4306be94bd9aba02285381ed44ad686f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6e99307a5bb329a4de82dbbc712017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac6e99307a5bb329a4de82dbbc712017c">ksceKernelMemRangeRetainForPid</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, void *addr, unsigned int size)</td></tr>
+<tr class="memdesc:gac6e99307a5bb329a4de82dbbc712017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains a memory range for a process (pid)  <a href="#gac6e99307a5bb329a4de82dbbc712017c">More...</a><br /></td></tr>
+<tr class="separator:gac6e99307a5bb329a4de82dbbc712017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedc71f3660c8ed002b08e8648f911d13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaedc71f3660c8ed002b08e8648f911d13">ksceKernelMemRangeRetainWithPerm</a> (SceKernelMemoryRefPerm perm, void *addr, unsigned int size)</td></tr>
+<tr class="memdesc:gaedc71f3660c8ed002b08e8648f911d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains a memory range checking for a given permission.  <a href="#gaedc71f3660c8ed002b08e8648f911d13">More...</a><br /></td></tr>
+<tr class="separator:gaedc71f3660c8ed002b08e8648f911d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1ba6bc1eb7f29a9d83b159d9e11cdbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaa1ba6bc1eb7f29a9d83b159d9e11cdbb">ksceKernelMemRangeRelease</a> (void *addr, unsigned int size)</td></tr>
+<tr class="memdesc:gaa1ba6bc1eb7f29a9d83b159d9e11cdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a memory range.  <a href="#gaa1ba6bc1eb7f29a9d83b159d9e11cdbb">More...</a><br /></td></tr>
+<tr class="separator:gaa1ba6bc1eb7f29a9d83b159d9e11cdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa35b2c9839d2c09ed380344a1a3df26b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaa35b2c9839d2c09ed380344a1a3df26b">ksceKernelMemRangeReleaseForPid</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, void *addr, unsigned int size)</td></tr>
+<tr class="memdesc:gaa35b2c9839d2c09ed380344a1a3df26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a memory range for a process (pid)  <a href="#gaa35b2c9839d2c09ed380344a1a3df26b">More...</a><br /></td></tr>
+<tr class="separator:gaa35b2c9839d2c09ed380344a1a3df26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac50c5de76cbb5df9634072a28699c32d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac50c5de76cbb5df9634072a28699c32d">ksceKernelMemRangeReleaseWithPerm</a> (SceKernelMemoryRefPerm perm, void *addr, unsigned int size)</td></tr>
+<tr class="memdesc:gac50c5de76cbb5df9634072a28699c32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a memory range checking for a given permission.  <a href="#gac50c5de76cbb5df9634072a28699c32d">More...</a><br /></td></tr>
+<tr class="separator:gac50c5de76cbb5df9634072a28699c32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae72ad11d8cbfe8e0c26c6c3b3677a6c9"><td class="memItemLeft" align="right" valign="top"><a id="gae72ad11d8cbfe8e0c26c6c3b3677a6c9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysrootIsManufacturingMode</b> (void)</td></tr>
 <tr class="separator:gae72ad11d8cbfe8e0c26c6c3b3677a6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -833,6 +854,300 @@ TTBR1</td>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- The virtual address range </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">list</td><td>- The list of physical addresses</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1fc8a7535b8d13bcc6d9ef7a4e8e548d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d">&sect;&nbsp;</a></span>ksceKernelMemBlockRelease()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemBlockRelease </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases a memblock referenced by the UID. </p>
+<p>This decreases the internal reference count.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid of the memblock</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa1ba6bc1eb7f29a9d83b159d9e11cdbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1ba6bc1eb7f29a9d83b159d9e11cdbb">&sect;&nbsp;</a></span>ksceKernelMemRangeRelease()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemRangeRelease </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases a memory range. </p>
+<p>This decreases the internal reference count of the memblocks belonging to the range.</p>
+<p>Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa35b2c9839d2c09ed380344a1a3df26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa35b2c9839d2c09ed380344a1a3df26b">&sect;&nbsp;</a></span>ksceKernelMemRangeReleaseForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemRangeReleaseForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases a memory range for a process (pid) </p>
+<p>This decreases the internal reference count of the memblocks belonging to the range.</p>
+<p>Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The pid of the process </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac50c5de76cbb5df9634072a28699c32d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac50c5de76cbb5df9634072a28699c32d">&sect;&nbsp;</a></span>ksceKernelMemRangeReleaseWithPerm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemRangeReleaseWithPerm </td>
+          <td>(</td>
+          <td class="paramtype">SceKernelMemoryRefPerm&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases a memory range checking for a given permission. </p>
+<p>This decreases the internal reference count of the memblocks belonging to the range. If the memory blocks belonging to the range don't have the required memory access permission, it returns an error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">perm</td><td>The required permission of the memory blocks belonging to the range </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga4306be94bd9aba02285381ed44ad686f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4306be94bd9aba02285381ed44ad686f">&sect;&nbsp;</a></span>ksceKernelMemRangeRetain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemRangeRetain </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retains a memory range. </p>
+<p>This increases the internal reference count of the memblocks belonging to the range.</p>
+<p>Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac6e99307a5bb329a4de82dbbc712017c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6e99307a5bb329a4de82dbbc712017c">&sect;&nbsp;</a></span>ksceKernelMemRangeRetainForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemRangeRetainForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retains a memory range for a process (pid) </p>
+<p>This increases the internal reference count of the memblocks belonging to the range.</p>
+<p>Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The pid of the process </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaedc71f3660c8ed002b08e8648f911d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedc71f3660c8ed002b08e8648f911d13">&sect;&nbsp;</a></span>ksceKernelMemRangeRetainWithPerm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemRangeRetainWithPerm </td>
+          <td>(</td>
+          <td class="paramtype">SceKernelMemoryRefPerm&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retains a memory range checking for a given permission. </p>
+<p>This increases the internal reference count of the memblocks belonging to the range. If the memory blocks belonging to the range don't have the required memory access permission, it returns an error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">perm</td><td>The required permission of the memory blocks belonging to the range </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
   </table>
   </dd>
 </dl>
