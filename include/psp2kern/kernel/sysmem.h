@@ -35,6 +35,16 @@ typedef enum SceKernelAllocMemBlockAttr {
 	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP   = 0x04000000U
 } SceKernelAllocMemBlockAttr;
 
+typedef enum SceKernelMemoryRefPerm {
+	SCE_KERNEL_MEMORY_REF_PERM_ANY		= 0,
+	SCE_KERNEL_MEMORY_REF_PERM_USER_R	= 0x01,
+	SCE_KERNEL_MEMORY_REF_PERM_USER_W	= 0x02,
+	SCE_KERNEL_MEMORY_REF_PERM_USER_X	= 0x04,
+	SCE_KERNEL_MEMORY_REF_PERM_KERN_R	= 0x10,
+	SCE_KERNEL_MEMORY_REF_PERM_KERN_W	= 0x20,
+	SCE_KERNEL_MEMORY_REF_PERM_KERN_X	= 0x40,
+} SceKernelMemoryRefPerm;
+
 typedef struct SceKernelAddrPair {
 	uint32_t addr;                  //!< Address
 	uint32_t length;                //!< Length
@@ -100,7 +110,7 @@ typedef enum SceKernelModel {
 } SceKernelModel;
 
 typedef int (*SceClassCallback)(void *item);
-	
+
 typedef struct SceClass {
 	struct SceClass *next;
 	struct SceClass *root;
@@ -287,6 +297,105 @@ int ksceKernelGetPaddr(void *addr, uintptr_t *paddr);
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelGetPaddrList(const SceKernelAddrPair *input, SceKernelPaddrList *list);
+
+/**
+ * Releases a memblock referenced by the UID.
+ *
+ * This decreases the internal reference count.
+ *
+ * @param[in]  uid   The uid of the memblock
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemBlockRelease(SceUID uid);
+
+/**
+ * Retains a memory range
+ *
+ * This increases the internal reference count of the memblocks belonging to the range.
+ *
+ * Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.
+ *
+ * @param[in]  addr   The start address
+ * @param[in]  size   The memory range size
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemRangeRetain(void *addr, unsigned int size);
+
+/**
+ * Retains a memory range for a process (pid)
+ *
+ * This increases the internal reference count of the memblocks belonging to the range.
+ *
+ * Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.
+ *
+ * @param[in]  pid    The pid of the process
+ * @param[in]  addr   The start address
+ * @param[in]  size   The memory range size
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemRangeRetainForPid(SceUID pid, void *addr, unsigned int size);
+
+/**
+ * Retains a memory range checking for a given permission
+ *
+ * This increases the internal reference count of the memblocks belonging to the range.
+ * If the memory blocks belonging to the range don't have the required memory access permission,
+ * it returns an error.
+ *
+ * @param[in]  perm   The required permission of the memory blocks belonging to the range
+ * @param[in]  addr   The start address
+ * @param[in]  size   The memory range size
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemRangeRetainWithPerm(SceKernelMemoryRefPerm perm, void *addr, unsigned int size);
+
+/**
+ * Releases a memory range
+ *
+ * This decreases the internal reference count of the memblocks belonging to the range.
+ *
+ * Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.
+ *
+ * @param[in]  addr   The start address
+ * @param[in]  size   The memory range size
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemRangeRelease(void *addr, unsigned int size);
+
+/**
+ * Releases a memory range for a process (pid)
+ *
+ * This decreases the internal reference count of the memblocks belonging to the range.
+ *
+ * Note: It uses ::SCE_KERNEL_MEMORY_REF_PERM_ANY as the reference permission.
+ *
+ * @param[in]  pid    The pid of the process
+ * @param[in]  addr   The start address
+ * @param[in]  size   The memory range size
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, unsigned int size);
+
+/**
+ * Releases a memory range checking for a given permission
+ *
+ * This decreases the internal reference count of the memblocks belonging to the range.
+ * If the memory blocks belonging to the range don't have the required memory access permission,
+ * it returns an error.
+ *
+ * @param[in]  perm   The required permission of the memory blocks belonging to the range
+ * @param[in]  addr   The start address
+ * @param[in]  size   The memory range size
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, unsigned int size);
 
 int ksceSysrootIsManufacturingMode(void);
 
