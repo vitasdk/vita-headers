@@ -8418,6 +8418,20 @@ modules:
         kernel: true
         nid: 0x66845469
         functions:
+          ksceAvcencCreateEncoder: 0xB2A51EB0
+          ksceAvcencCreateEncoderBasic: 0xC5E720E2
+          ksceAvcencCreateEncoderInternal: 0x71C37694
+          ksceAvcencCsc: 0x4F11F915
+          ksceAvcencDeleteEncoder: 0x2895CB6D
+          ksceAvcencEncode: 0xA0E63278
+          ksceAvcencEncodeFlush: 0x229AB2CF
+          ksceAvcencEncodeStop: 0xDE515BFF
+          ksceAvcencGetNalUnit: 0x1A584DB7
+          ksceAvcencQueryEncoderMemSize: 0x5C3434FB
+          ksceAvcencQueryEncoderMemSizeBasic: 0x7385FB51
+          ksceAvcencQueryEncoderMemSizeInternal: 0xBF3835E2
+          ksceAvcencSetAvailablePreset: 0x7DC13C29
+          ksceAvcencSetEncoderParameter: 0xE0232BFE
           ksceJpegEncoderInit: 0x1BE9F5A4
           ksceJpegEncoderSetOutputAddr: 0x2C8271BA
           ksceJpegEncoderEncode: 0x468949D7
