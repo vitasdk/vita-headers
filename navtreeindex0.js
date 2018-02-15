@@ -30,6 +30,7 @@ var NAVTREEINDEX0 =
 "dir_d44c64559bbebec7f509842c48db8b23.html":[3,0,0],
 "dir_ec7ce0decaf119d3f3f03563c1567600.html":[3,0,0,1,2],
 "display_8h_source.html":[3,0,0,0,15],
+"dsi_8h_source.html":[3,0,0,1,3,0],
 "ern_2avcodec_2jpegenc_8h_source.html":[3,0,0,1,0,0],
 "ern_2ctrl_8h_source.html":[3,0,0,1,6],
 "ern_2display_8h_source.html":[3,0,0,1,7],
@@ -100,7 +101,7 @@ var NAVTREEINDEX0 =
 "functions_w.html":[2,2,0,19],
 "functions_x.html":[2,2,0,20],
 "functions_y.html":[2,2,0,21],
-"gpio_8h_source.html":[3,0,0,1,3,0],
+"gpio_8h_source.html":[3,0,0,1,3,1],
 "group__Audio.html":[1,2],
 "group__Dialog.html":[1,3],
 "group__Filesystem.html":[1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceAudioencUser.html#ga15b7d618d89f2fe7ef8a8a577a61794c":[1,2,3,0,4],
 "group__SceAudioencUser.html#ga3a2251b317f2f14049a477415bccf722":[1,2,3,0,1],
 "group__SceAudioencUser.html#ga8f43ee8a32e48bd728df53065e84edba":[1,2,3,0,0],
-"group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5],
-"group__SceAudioencUser.html#gad4bb28b9aedbcb04d3b7d6eeb8af824d":[1,2,3,0,6]
+"group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5]
 };
