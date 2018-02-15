@@ -1076,28 +1076,6 @@ modules:
           sceKernelDeci4pRead: 0x971E1C66
           sceKernelDeci4pRegisterCallback: 0x73371F35
           sceKernelDeci4pWrite: 0xCDA3AAAC
-  SceDeflt:
-    nid: 0x29
-    libraries:
-      SceDeflt:
-        kernel: false
-        nid: 0xF6A0A8B6
-        functions:
-          sceDeflateDecompress: 0x110D5050
-          sceDeflateDecompressPartial: 0x25B8C7A2
-          sceGzipCrc32: 0xF720A8F6
-          sceGzipDecompress: 0xE3CB51A3
-          sceGzipGetComment: 0xBABCF5CF
-          sceGzipGetCompressedData: 0xE1844802
-          sceGzipGetInfo: 0x1B8E5862
-          sceGzipGetName: 0xAEBAABE6
-          sceGzipIsValid: 0xDEDADC31
-          sceZipGetInfo: 0xDA404FE4
-          sceZlibAdler32: 0xCD83A464
-          sceZlibDecompress: 0xE38F754D
-          sceZlibGetCompressedData: 0xE680A65A
-          sceZlibGetInfo: 0x4C0A685D
-          sceZlibIsValid: 0x14A0698D
   SceDisplay:
     nid: 0x3F05296F
     libraries:
@@ -1415,27 +1393,6 @@ modules:
           sceFiosTimeIntervalToNanoseconds: 0x397BF626
           sceFiosUpdateParameters: 0x1915052A
           sceFiosVprintf: 0x5BA4BD6D
-  SceFpu:
-    nid: 0x34
-    libraries:
-      SceFpu:
-        kernel: false
-        nid: 0x14D06B70
-        functions:
-          sceFpuAcosf: 0x64A8F9FE
-          sceFpuAsinf: 0x4D1AE0F1
-          sceFpuAtanf: 0x53FF26AF
-          sceFpuAtan2f: 0xC8A4989B
-          sceFpuCosf: 0xDB66BA89
-          sceFpuExpf: 0xEFA16C6E
-          sceFpuExp2f: 0xA3A88AD0
-          sceFpuExp10f: 0x35652326
-          sceFpuLogf: 0x936F0D27
-          sceFpuLog2f: 0x19881EC8
-          sceFpuLog10f: 0xABBB6168
-          sceFpuPowf: 0xDF622E56
-          sceFpuSinf: 0x33E1AC14
-          sceFpuTanf: 0x6FBDA1C9
   SceGameUpdate:
     nid: 0x0207A645
     libraries:
@@ -1763,23 +1720,6 @@ modules:
           sceHandwritingRegisterTerm: 0x6ABBD675
           sceHandwritingSetMode: 0x09AF9BF8
           sceHandwritingTerm: 0x356B2931
-  SceHeap:
-    nid: 0x3C
-    libraries:
-      SceHeap:
-        kernel: false
-        nid: 0x4631A6F0
-        functions:
-          sceHeapAllocHeapMemory: 0xB6FC0BA1
-          sceHeapAllocHeapMemoryWithOption: 0xD4C09869
-          sceHeapCreateHeap: 0xA7571AD8
-          sceHeapDeleteHeap: 0xA130D00C
-          sceHeapFreeHeapMemory: 0xD09FFC11
-          sceHeapGetMallinfo: 0xAD2645B0
-          sceHeapGetTotalFreeSize: 0x76C5B003
-          sceHeapIsAllocatedHeapMemory: 0xAA50462F
-          sceHeapReallocHeapMemory: 0x9E6716BA
-          sceHeapReallocHeapMemoryWithOption: 0x00BE8FC3
   SceHid:
     nid: 0x76B8FA74
     libraries:
@@ -1791,41 +1731,6 @@ modules:
             sceHidKeyboardRead: 0x224A8AD8
             sceHidMouseEnumerate: 0x2A0D2F54
             sceHidMouseRead: 0xBDECBDC0
-  SceHmac:
-    nid: 0x3E
-    libraries:
-      SceHmac:
-        kernel: false
-        nid: 0x65D4F896
-        functions:
-          sceHmacMd5BlockInit: 0xD6E232CD
-          sceHmacMd5BlockResult: 0x9BCCC484
-          sceHmacMd5BlockUpdate: 0x9FD439E9
-          sceHmacMd5Digest: 0x6EEB05D3
-          sceHmacSha0BlockInit: 0xD44F6B32
-          sceHmacSha0BlockResult: 0x05AE1466
-          sceHmacSha0BlockUpdate: 0x9CB7F0EF
-          sceHmacSha0Digest: 0xCCB91784
-          sceHmacSha1BlockInit: 0xA2285A9A
-          sceHmacSha1BlockResult: 0xD0AF51C6
-          sceHmacSha1BlockUpdate: 0x6EF06490
-          sceHmacSha1Digest: 0x55871D87
-          sceHmacSha224BlockInit: 0x393FF6BC
-          sceHmacSha224BlockResult: 0x2AB46BB5
-          sceHmacSha224BlockUpdate: 0xB77629EB
-          sceHmacSha224Digest: 0x359ED31E
-          sceHmacSha256BlockInit: 0x96AD3A67
-          sceHmacSha256BlockResult: 0x5A52150F
-          sceHmacSha256BlockUpdate: 0x0C9FA657
-          sceHmacSha256Digest: 0xE254D9A1
-          sceHmacSha384BlockInit: 0xB786F59F
-          sceHmacSha384BlockResult: 0xBA308CDA
-          sceHmacSha384BlockUpdate: 0xC16D8AB6
-          sceHmacSha384Digest: 0x9C3B4844
-          sceHmacSha512BlockInit: 0x272FEFFE
-          sceHmacSha512BlockResult: 0x64219FF5
-          sceHmacSha512BlockUpdate: 0xECA83992
-          sceHmacSha512Digest: 0x8FDFCE5B
   SceHttp:
     nid: 0xB015B405
     libraries:
@@ -5366,17 +5271,6 @@ modules:
           sceLocationCancelQueryLocationWifiHistory: 0x46D2F044
           sceLocationGetLocationWifiHistory: 0x82DE9BF8
           sceLocationQueryLocationWifiHistory: 0x277DA915
-  SceMd5:
-    nid: 0x5D
-    libraries:
-      SceMd5:
-        kernel: false
-        nid: 0xF781B887
-        functions:
-          sceMd5BlockInit: 0x4D6436F9
-          sceMd5BlockResult: 0xB94ABF83
-          sceMd5BlockUpdate: 0x094A4902
-          sceMd5Digest: 0xB845BCCB
   SceMotion:
     nid: 0x5F
     libraries:
@@ -5403,15 +5297,6 @@ modules:
           sceMotionSetTiltCorrection: 0xAF09FCDB
           sceMotionStartSampling: 0x28034AC9
           sceMotionStopSampling: 0xAF32CB1D
-  SceMt19937:
-    nid: 0x61
-    libraries:
-      SceMt19937:
-        kernel: false
-        nid: 0x2F4FAB93
-        functions:
-          sceMt19937Init: 0xEE5BA27C
-          sceMt19937UInt: 0x29E43BB5
   SceMusicExport:
     nid: 0x6A89E620
     libraries:
@@ -6834,213 +6719,6 @@ modules:
           sceScreenShotGetParam: 0xBAE9E534
           sceScreenShotSetOverlayImage: 0x7061665B
           sceScreenShotSetParam: 0x05DB59C7
-  SceSfmt11213:
-    nid: 0xAA
-    libraries:
-      SceSfmt11213:
-        kernel: false
-        nid: 0xC2B01E62
-        functions:
-          sceSfmt11213FillArray32: 0xFD696585
-          sceSfmt11213FillArray64: 0x7A412A29
-          sceSfmt11213GenRand32: 0xFB281CD7
-          sceSfmt11213GenRand64: 0xAFEDD6E1
-          sceSfmt11213InitByArray: 0xBAF5F058
-          sceSfmt11213InitGenRand: 0x8FF464C9
-  SceSfmt1279:
-    nid: 0xAC
-    libraries:
-      SceSfmt1279:
-        kernel: false
-        nid: 0xBD6EDDF3
-        functions:
-          sceSfmt1279FillArray32: 0xE7F63838
-          sceSfmt1279FillArray64: 0xDB3832EB
-          sceSfmt1279GenRand32: 0x9B4A48DF
-          sceSfmt1279GenRand64: 0xA2C5EE14
-          sceSfmt1279InitByArray: 0xC25D9ACE
-          sceSfmt1279InitGenRand: 0x02E8D906
-  SceSfmt132049:
-    nid: 0xAE
-    libraries:
-      SceSfmt132049:
-        kernel: false
-        nid: 0xC004A715
-        functions:
-          sceSfmt132049FillArray32: 0xD891A99F
-          sceSfmt132049FillArray64: 0x68AD7866
-          sceSfmt132049GenRand32: 0x795F9644
-          sceSfmt132049GenRand64: 0xBBD80AC4
-          sceSfmt132049InitByArray: 0xDC69294A
-          sceSfmt132049InitGenRand: 0xDC6B23B0
-  SceSfmt19937:
-    nid: 0xB0
-    libraries:
-      SceSfmt19937:
-        kernel: false
-        nid: 0xB3D328D5
-        functions:
-          sceSfmt19937FillArray32: 0xA1C654D8
-          sceSfmt19937FillArray64: 0xE74BA81C
-          sceSfmt19937GenRand32: 0xF0557157
-          sceSfmt19937GenRand64: 0xE66F2502
-          sceSfmt19937InitByArray: 0xAC496C8C
-          sceSfmt19937InitGenRand: 0x2AFACB0B
-  SceSfmt216091:
-    nid: 0xB2
-    libraries:
-      SceSfmt216091:
-        kernel: false
-        nid: 0x7413DC02
-        functions:
-          sceSfmt216091FillArray32: 0xDD4256F0
-          sceSfmt216091FillArray64: 0xA1CE5628
-          sceSfmt216091GenRand32: 0x4A972DCD
-          sceSfmt216091GenRand64: 0x23369ABF
-          sceSfmt216091InitByArray: 0xA9CF6616
-          sceSfmt216091InitGenRand: 0x86DDE4A7
-  SceSfmt2281:
-    nid: 0xB4
-    libraries:
-      SceSfmt2281:
-        kernel: false
-        nid: 0x2935D1DD
-        functions:
-          sceSfmt2281FillArray32: 0xBB89D8F0
-          sceSfmt2281FillArray64: 0x17C10E2D
-          sceSfmt2281GenRand32: 0x84BB4ADB
-          sceSfmt2281GenRand64: 0x3CC47146
-          sceSfmt2281InitByArray: 0xAB3AD459
-          sceSfmt2281InitGenRand: 0xB8E5A0BB
-  SceSfmt4253:
-    nid: 0xB6
-    libraries:
-      SceSfmt4253:
-        kernel: false
-        nid: 0xC795A3B5
-        functions:
-          sceSfmt4253FillArray32: 0x59A1B9FC
-          sceSfmt4253FillArray64: 0x01683CDD
-          sceSfmt4253GenRand32: 0x8791E2EF
-          sceSfmt4253GenRand64: 0x6C0E5E3C
-          sceSfmt4253InitByArray: 0xC4D7AA2D
-          sceSfmt4253InitGenRand: 0xE9F8CB9A
-  SceSfmt44497:
-    nid: 0xB8
-    libraries:
-      SceSfmt44497:
-        kernel: false
-        nid: 0xB6F12A2A
-        functions:
-          sceSfmt44497FillArray32: 0x1C38322A
-          sceSfmt44497FillArray64: 0x908F1122
-          sceSfmt44497GenRand32: 0xF869DFDC
-          sceSfmt44497GenRand64: 0xD411A9A6
-          sceSfmt44497InitByArray: 0x16D8AA5E
-          sceSfmt44497InitGenRand: 0xCF1C8C38
-  SceSfmt607:
-    nid: 0xBA
-    libraries:
-      SceSfmt607:
-        kernel: false
-        nid: 0x75DFF725
-        functions:
-          sceSfmt607FillArray32: 0xA288ADB9
-          sceSfmt607FillArray64: 0x1520D408
-          sceSfmt607GenRand32: 0x8A0BF859
-          sceSfmt607GenRand64: 0x5E880862
-          sceSfmt607InitByArray: 0xCC6DABA0
-          sceSfmt607InitGenRand: 0x76A5D8CA
-  SceSfmt86243:
-    nid: 0xBC
-    libraries:
-      SceSfmt86243:
-        kernel: false
-        nid: 0x6FB578AD
-        functions:
-          sceSfmt86243FillArray32: 0xC297E6B1
-          sceSfmt86243FillArray64: 0xF7FFE87C
-          sceSfmt86243GenRand32: 0x569BF903
-          sceSfmt86243GenRand64: 0x8E25CBA8
-          sceSfmt86243InitByArray: 0x81B67AB5
-          sceSfmt86243InitGenRand: 0x2FF42588
-  SceSha0:
-    nid: 0xBE
-    libraries:
-      SceSha0:
-        kernel: false
-        nid: 0x12497C8B
-        functions:
-          sceSha0BlockInit: 0xBCF6DB3A
-          sceSha0BlockResult: 0xBF0158C4
-          sceSha0BlockUpdate: 0x37EF2AFC
-          sceSha0Digest: 0xD19A9AA8
-  SceSha1:
-    nid: 0xC0
-    libraries:
-      SceSha1:
-        kernel: false
-        nid: 0x4B8F065B
-        functions:
-          sceSha1BlockInit: 0xB13D65AA
-          sceSha1BlockResult: 0x0195DADF
-          sceSha1BlockUpdate: 0x9007205E
-          sceSha1Digest: 0xE1215C9D
-  SceSha224:
-    nid: 0xC2
-    libraries:
-      SceSha224:
-        kernel: false
-        nid: 0x8EC9E1B7
-        functions:
-          sceSha224BlockInit: 0x538F04CE
-          sceSha224BlockResult: 0xA36ECF65
-          sceSha224BlockUpdate: 0xB5FD0160
-          sceSha224Digest: 0x1346D270
-  SceSha256:
-    nid: 0xC4
-    libraries:
-      SceSha256:
-        kernel: false
-        nid: 0xE15E874A
-        functions:
-          sceSha256BlockInit: 0xE281374F
-          sceSha256BlockResult: 0x9B5BB4BA
-          sceSha256BlockUpdate: 0xDAECA1F8
-          sceSha256Digest: 0xA337079C
-  SceSha384:
-    nid: 0xC6
-    libraries:
-      SceSha384:
-        kernel: false
-        nid: 0x8DF4D816
-        functions:
-          sceSha384BlockInit: 0x037AABE7
-          sceSha384BlockResult: 0x30D5C919
-          sceSha384BlockUpdate: 0x4B99DBB8
-          sceSha384Digest: 0xA602C694
-  SceSha512:
-    nid: 0xC8
-    libraries:
-      SceSha512:
-        kernel: false
-        nid: 0x1D327AD4
-        functions:
-          sceSha512BlockInit: 0xE017A9CD
-          sceSha512BlockResult: 0x26146A16
-          sceSha512BlockUpdate: 0x669281E8
-          sceSha512Digest: 0x5DC0B916
-  SceSha512t:
-    nid: 0xCA
-    libraries:
-      SceSha512t:
-        kernel: false
-        nid: 0xBB9022A7
-        functions:
-          sceSha512tBlockInit: 0x79065BB2
-          sceSha512tBlockResult: 0x66425DB6
-          sceSha512tBlockUpdate: 0xC5359DF8
-          sceSha512tDigest: 0x00E52720
   SceShellSvc:
     nid: 0x821DC423
     libraries:
