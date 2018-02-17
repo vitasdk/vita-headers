@@ -2103,7 +2103,10 @@ modules:
           ksceKernelCpuIcacheInvalidateRange: 0xF4C7F578
           ksceKernelCpuIcacheInvalidateAll: 0x264DA250
           ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x19F17BD0
+          ksceKernelCpuSaveContext: 0x211B89DA
+          ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
           ksceKernelCpuDcacheWritebackInvalidateRange: 0x6BA2E51C
+          ksceKernelCpuRestoreContext: 0x0A4F0FB9
       SceCpuForDriver:
         kernel: true
         nid: 0x40ECDB0E
