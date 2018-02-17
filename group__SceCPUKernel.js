@@ -20,6 +20,5 @@ var group__SceCPUKernel =
     [ "ksceKernelCpuResumeIntr", "group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8", null ],
     [ "ksceKernelCpuSpinLockIrqRestore", "group__SceCPUKernel.html#gaf609c6394e271c010838dbd33550a35b", null ],
     [ "ksceKernelCpuSpinLockIrqSave", "group__SceCPUKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145", null ],
-    [ "ksceKernelCpuSuspendIntr", "group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766", null ],
-    [ "ksceKernelCpuUnrestrictedMemcpy", "group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5", null ]
+    [ "ksceKernelCpuSuspendIntr", "group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766", null ]
 ];

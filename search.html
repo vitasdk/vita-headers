@@ -10558,7 +10558,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">cpu.h</field>
     <field name="url">cpu_8h_source.html#l00032</field>
     <field name="keywords"></field>
-    <field name="text">ksceKernelCpuSaveContext context context context context ksceKernelCpuRestoreContext context cpsr tmp cpsr cpsr x80 tmp tmp tmp context context tmp context cpsr x80 ksceKernelCpuGetCpuId ksceKernelCpuDisableInterrupts ksceKernelCpuEnableInterrupts flags ksceKernelCpuDcacheWritebackRange ptr len ksceKernelCpuDcacheInvalidateRange ptr len ksceKernelCpuDcacheWritebackInvalidateRange ptr len ksceKernelCpuDcacheInvalidateAll ksceKernelCpuDcacheWritebackAll ksceKernelCpuDcacheWritebackInvalidateAll ksceKernelCpuDcacheAndL2WritebackRange ptr len ksceKernelCpuDcacheAndL2InvalidateRange ptr len ksceKernelCpuDcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuIcacheInvalidateRange ptr len ksceKernelCpuIcacheInvalidateAll ksceKernelCpuIcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuUnrestrictedMemcpy dst src len ksceKernelCpuSuspendIntr addr ksceKernelCpuResumeIntr addr prev_state ksceKernelCpuSpinLockIrqSave addr ksceKernelCpuSpinLockIrqRestore addr flags</field>
+    <field name="text">ksceKernelCpuSaveContext context context context context ksceKernelCpuRestoreContext context cpsr tmp cpsr cpsr x80 tmp tmp tmp context context tmp context cpsr x80 ksceKernelCpuUnrestrictedMemcpy dst src len prev_dacr prev_dacr memcpy dst src len prev_dacr ksceKernelCpuGetCpuId ksceKernelCpuDisableInterrupts ksceKernelCpuEnableInterrupts flags ksceKernelCpuDcacheWritebackRange ptr len ksceKernelCpuDcacheInvalidateRange ptr len ksceKernelCpuDcacheWritebackInvalidateRange ptr len ksceKernelCpuDcacheInvalidateAll ksceKernelCpuDcacheWritebackAll ksceKernelCpuDcacheWritebackInvalidateAll ksceKernelCpuDcacheAndL2WritebackRange ptr len ksceKernelCpuDcacheAndL2InvalidateRange ptr len ksceKernelCpuDcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuIcacheInvalidateRange ptr len ksceKernelCpuIcacheInvalidateAll ksceKernelCpuIcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuSuspendIntr addr ksceKernelCpuResumeIntr addr prev_state ksceKernelCpuSpinLockIrqSave addr ksceKernelCpuSpinLockIrqRestore addr flags</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -19549,14 +19549,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceCPUKernel.html#ga77b453c4e9bc36f2fe61aefab84c2345</field>
     <field name="keywords">ksceKernelCpuIcacheAndL2WritebackInvalidateRange</field>
     <field name="text">Writeback and invalidate a range of L1 icache and L2 ptr The pointer len The length Zero on success</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ksceKernelCpuUnrestrictedMemcpy</field>
-    <field name="args">(void *dst, const void *src, size_t len)</field>
-    <field name="url">group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5</field>
-    <field name="keywords">ksceKernelCpuUnrestrictedMemcpy</field>
-    <field name="text">MMU permission bypassing memcpy This works by writing to the DACR before and after the memcpy dst The destination src The source len The length Zero on success</field>
   </doc>
   <doc>
     <field name="type">function</field>

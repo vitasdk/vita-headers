@@ -129,9 +129,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga77b453c4e9bc36f2fe61aefab84c2345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga77b453c4e9bc36f2fe61aefab84c2345">ksceKernelCpuIcacheAndL2WritebackInvalidateRange</a> (const void *ptr, size_t len)</td></tr>
 <tr class="memdesc:ga77b453c4e9bc36f2fe61aefab84c2345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback and invalidate a range of L1 icache and L2.  <a href="#ga77b453c4e9bc36f2fe61aefab84c2345">More...</a><br /></td></tr>
 <tr class="separator:ga77b453c4e9bc36f2fe61aefab84c2345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6034673708645325ee6c952ddd6cbcb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga6034673708645325ee6c952ddd6cbcb5">ksceKernelCpuUnrestrictedMemcpy</a> (void *dst, const void *src, size_t len)</td></tr>
-<tr class="memdesc:ga6034673708645325ee6c952ddd6cbcb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MMU permission bypassing memcpy.  <a href="#ga6034673708645325ee6c952ddd6cbcb5">More...</a><br /></td></tr>
-<tr class="separator:ga6034673708645325ee6c952ddd6cbcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga74cc811b572caa5ef2a7616707f2f766"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga74cc811b572caa5ef2a7616707f2f766">ksceKernelCpuSuspendIntr</a> (int *addr)</td></tr>
 <tr class="memdesc:ga74cc811b572caa5ef2a7616707f2f766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend all interrupts (disables IRQs)  <a href="#ga74cc811b572caa5ef2a7616707f2f766">More...</a><br /></td></tr>
 <tr class="separator:ga74cc811b572caa5ef2a7616707f2f766"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -792,52 +789,6 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The current state of the interrupt controller, to be used with <a class="el" href="group__SceCPUKernel.html#gad9f7f38286e8d0b08837729bab4face8" title="Resume all interrupts (enables IRQs) ">ksceKernelCpuResumeIntr</a>. </dd></dl>
-
-</div>
-</div>
-<a id="ga6034673708645325ee6c952ddd6cbcb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6034673708645325ee6c952ddd6cbcb5">&sect;&nbsp;</a></span>ksceKernelCpuUnrestrictedMemcpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelCpuUnrestrictedMemcpy </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MMU permission bypassing memcpy. </p>
-<p>This works by writing to the DACR before and after the memcpy.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">dst</td><td>The destination </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>The source </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success. </dd></dl>
 
 </div>
 </div>
