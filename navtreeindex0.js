@@ -54,9 +54,8 @@ var NAVTREEINDEX0 =
 "excpmgr_8h_source.html":[3,0,0,1,2,2],
 "fiber_8h_source.html":[3,0,0,0,16],
 "files.html":[3,0],
-"fpu_8h_source.html":[3,0,0,0,17],
-"functions.html":[2,2,0,0],
 "functions.html":[2,2,0],
+"functions.html":[2,2,0,0],
 "functions_b.html":[2,2,0,1],
 "functions_c.html":[2,2,0,2],
 "functions_d.html":[2,2,0,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "group__SceAudioencUser.html#ga15b7d618d89f2fe7ef8a8a577a61794c":[1,2,3,0,4],
 "group__SceAudioencUser.html#ga3a2251b317f2f14049a477415bccf722":[1,2,3,0,1],
 "group__SceAudioencUser.html#ga8f43ee8a32e48bd728df53065e84edba":[1,2,3,0,0],
-"group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5]
+"group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5],
+"group__SceAudioencUser.html#gad4bb28b9aedbcb04d3b7d6eeb8af824d":[1,2,3,0,6]
 };

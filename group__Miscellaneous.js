@@ -6,6 +6,5 @@ var group__Miscellaneous =
     [ "NpDrmPackage utility", "group__SceNpDrmPackage.html", "group__SceNpDrmPackage" ],
     [ "NpDrm utility", "group__SceNpDrm.html", "group__SceNpDrm" ],
     [ "Playstation Application Framework", "group__ScePaf.html", "group__ScePaf" ],
-    [ "Compat Library", "group__SceCompat.html", "group__SceCompat" ],
-    [ "Floating Process Unit Library", "group__SceFpu.html", "group__SceFpu" ]
+    [ "Compat Library", "group__SceCompat.html", "group__SceCompat" ]
 ];
