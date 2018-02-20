@@ -2187,7 +2187,6 @@ modules:
           ksceKernelDeleteMutex: 0x0A912340
           ksceKernelDeleteSema: 0x16A35E58
           ksceKernelDeleteThread: 0xAC834F3F
-          ksceKernelEnterProcess: 0x0486F239
           ksceKernelExitDeleteThread: 0x1D17DECF
           ksceKernelExitThread: 0x0C8A38E1
           ksceKernelGetCallbackCount: 0x0892D8DF
@@ -2215,6 +2214,8 @@ modules:
           ksceKernelSetEvent: 0x9EA3A45C
           ksceKernelSetEventFlag: 0xD4780C3E
           ksceKernelSetTimerTimeWide: 0x85195A16
+          ksceKernelSetProcessId: 0x0486F239
+          ksceKernelSetPermission: 0x02EEDF17
           ksceKernelSignalCond: 0xAC616150
           ksceKernelSignalCondAll: 0x6EC78CD0
           ksceKernelSignalCondTo: 0x61533DA9
