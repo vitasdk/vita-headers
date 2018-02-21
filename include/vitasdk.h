@@ -18,7 +18,6 @@
 #include <psp2/ctrl.h>
 #include <psp2/display.h>
 #include <psp2/fiber.h>
-#include <psp2/fpu.h>
 #include <psp2/gxm.h>
 #include <psp2/gxt.h>
 #include <psp2/hid.h>
