@@ -56,14 +56,14 @@ typedef enum SceIoDevType {
  *
  * @par Example1: Open a file for reading
  * @code
- * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_RDONLY, 0777)) {
- *	// error
+ * if((fd = sceIoOpen("device:/path/to/file", SCE_O_RDONLY, 0777) < 0) {
+ * // error code in fd, for example no open filehandle left (0x80010018)
  * }
  * @endcode
  * @par Example2: Open a file for writing, creating it if it doesn't exist
  * @code
- * if(!(fd = sceIoOpen("device:/path/to/file", SCE_O_WRONLY|SCE_O_CREAT, 0777)) {
- *	// error
+ * if((fd = sceIoOpen("device:/path/to/file", SCE_O_WRONLY|SCE_O_CREAT, 0777) < 0) {
+ * // error code in fd, for example no open filehandle left (0x80010018)
  * }
  * @endcode
  *
