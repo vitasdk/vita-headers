@@ -199,6 +199,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconLoadConfigst
 <tr class="memitem:ga72de9eec7c732af934bebcbaab6086ad"><td class="memItemLeft" align="right" valign="top"><a id="ga72de9eec7c732af934bebcbaab6086ad"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconVerifyConfigstorageScript</b> (unsigned short, const void *buff, unsigned int size)</td></tr>
 <tr class="separator:ga72de9eec7c732af934bebcbaab6086ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga709e091a8a156e457907af9606c84d40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40">ksceSysconSetAlarmCallback</a> (SceSysconCallback callback, void *argp)</td></tr>
+<tr class="memdesc:ga709e091a8a156e457907af9606c84d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the alarm callback, that will be ran when the alarm timer is passed.  <a href="#ga709e091a8a156e457907af9606c84d40">More...</a><br /></td></tr>
+<tr class="separator:ga709e091a8a156e457907af9606c84d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga19209e2b0ee8adf1a05e983e45e6271a">ksceSysconSetLowBatteryCallback</a> (SceSysconCallback callback, void *argp)</td></tr>
 <tr class="memdesc:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the low battery callback, that will be ran when the battery is low.  <a href="#ga19209e2b0ee8adf1a05e983e45e6271a">More...</a><br /></td></tr>
 <tr class="separator:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -569,6 +572,44 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="ga709e091a8a156e457907af9606c84d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709e091a8a156e457907af9606c84d40">&sect;&nbsp;</a></span>ksceSysconSetAlarmCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconSetAlarmCallback </td>
+          <td>(</td>
+          <td class="paramtype">SceSysconCallback&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>argp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the alarm callback, that will be ran when the alarm timer is passed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The callback function. </td></tr>
+    <tr><td class="paramname">argp</td><td>The second argument that will be passed to the callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
 
 </div>
 </div>

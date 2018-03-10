@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,2,2],
 "group__SceTypes.html":[1,11,0],
 "group__SceTypesKernel.html":[1,11,0,1],
 "group__SceTypesUser.html":[1,11,0,0],

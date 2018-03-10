@@ -10,6 +10,7 @@ var group__SceSysconKernel =
     [ "ksceSysconGetBaryonTimestamp", "group__SceSysconKernel.html#ga74b11bfee0b45aefe0c8349016d6844d", null ],
     [ "ksceSysconGetBaryonVersion", "group__SceSysconKernel.html#ga6e252e6677e8635292642e30fdddac78", null ],
     [ "ksceSysconResetDevice", "group__SceSysconKernel.html#ga7aea3f11068c78ae7149d1fdf03c231f", null ],
+    [ "ksceSysconSetAlarmCallback", "group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40", null ],
     [ "ksceSysconSetDebugHandlers", "group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd", null ],
     [ "ksceSysconSetLowBatteryCallback", "group__SceSysconKernel.html#ga19209e2b0ee8adf1a05e983e45e6271a", null ],
     [ "ksceSysconSetThermalAlertCallback", "group__SceSysconKernel.html#gaec856771758bff4fceda58297c2b7f10", null ],
