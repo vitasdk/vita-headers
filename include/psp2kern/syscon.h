@@ -205,6 +205,16 @@ int ksceSysconLoadConfigstorageScript(unsigned short, const void *buff, unsigned
 int ksceSysconVerifyConfigstorageScript(unsigned short, const void *buff, unsigned int size);
 
 /**
+ * Set the alarm callback, that will be ran when the alarm timer is passed.
+ *
+ * @param callback The callback function.
+ * @param argp The second argument that will be passed to the callback.
+ *
+ * @return 0.
+ */
+int ksceSysconSetAlarmCallback(SceSysconCallback callback, void *argp);
+
+/**
  * Set the low battery callback, that will be ran when the battery is low.
  *
  * @param callback The callback function.
