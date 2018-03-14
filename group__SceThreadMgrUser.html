@@ -1752,10 +1752,11 @@ size</td>
 </div><div class="memdoc">
 
 <p>Create callback. </p>
-<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> cbid;</div><div class="line">cbid = <a class="code" href="group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f">sceKernelCreateCallback</a>(<span class="stringliteral">&quot;Exit Callback&quot;</span>, exit_cb, NULL);</div></div><!-- fragment --></dd></dl>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> cbid;</div><div class="line">cbid = <a class="code" href="group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f">sceKernelCreateCallback</a>(<span class="stringliteral">&quot;Exit Callback&quot;</span>, 0, exit_cb, NULL);</div></div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>- A textual name for the callback </td></tr>
+    <tr><td class="paramname">attr</td><td>- ? </td></tr>
     <tr><td class="paramname">func</td><td>- A pointer to a function that will be called as the callback </td></tr>
     <tr><td class="paramname">arg</td><td>- Argument for the callback ?</td></tr>
   </table>
