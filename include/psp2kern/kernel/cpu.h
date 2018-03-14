@@ -25,7 +25,7 @@ extern "C" {
 	} while(0)
 
 /**
- * @brief      Call this when existing a syscall
+ * @brief      Call this when exiting a syscall
  *
  * @param      state  The state
  */

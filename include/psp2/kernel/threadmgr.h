@@ -835,10 +835,11 @@ typedef struct SceKernelCallbackInfo {
  * @par Example:
  * @code
  * int cbid;
- * cbid = sceKernelCreateCallback("Exit Callback", exit_cb, NULL);
+ * cbid = sceKernelCreateCallback("Exit Callback", 0, exit_cb, NULL);
  * @endcode
  *
  * @param name - A textual name for the callback
+ * @param attr - ?
  * @param func - A pointer to a function that will be called as the callback
  * @param arg  - Argument for the callback ?
  *
