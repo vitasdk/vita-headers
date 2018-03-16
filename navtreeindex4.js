@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,1,1,22],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,1,11],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac5730bd17e5bf80af4ec878b41dd702f":[1,4,2,0,1,6],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac5730bd17e5bf80af4ec878b41dd702f":[1,4,2,0,1,24],
@@ -88,10 +89,10 @@ var NAVTREEINDEX4 =
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221":[1,0,5,0,4],
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,1,0,0],
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,1,0,2],
-"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,0,0,0],
-"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,0,0,2],
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,0,3],
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,1,2],
+"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,0,0,0],
+"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,5,0,0,2],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951":[1,0,5,1,1,0],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951":[1,0,5,1,1,4],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951":[1,0,5,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceModulemgrKernel.html":[1,6,5,1],
 "group__SceModulemgrKernel.html#gaa297434ef456cbbdf41df20a44238a85":[1,6,5,1,0],
 "group__SceModulemgrUser.html":[1,6,5,0],
-"group__SceModulemgrUser.html#gaa297434ef456cbbdf41df20a44238a85":[1,6,5,0,0],
-"group__SceMotion.html":[1,1,4]
+"group__SceModulemgrUser.html#gaa297434ef456cbbdf41df20a44238a85":[1,6,5,0,0]
 };

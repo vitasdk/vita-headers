@@ -46,6 +46,7 @@ var NAVTREEINDEX0 =
 "ern_2net_2net_8h_source.html":[3,0,0,1,4,0],
 "ern_2power_8h_source.html":[3,0,0,1,8],
 "ern_2registrymgr_8h_source.html":[3,0,0,1,9],
+"ern_2sblacmgr_8h_source.html":[3,0,0,1,10],
 "ern_2types_8h_source.html":[3,0,0,1,14],
 "ern_2udcd_8h_source.html":[3,0,0,1,16],
 "ern_2usbd_8h_source.html":[3,0,0,1,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceAudioencUser.html#ga15b7d618d89f2fe7ef8a8a577a61794c":[1,2,3,0,4],
 "group__SceAudioencUser.html#ga3a2251b317f2f14049a477415bccf722":[1,2,3,0,1],
 "group__SceAudioencUser.html#ga8f43ee8a32e48bd728df53065e84edba":[1,2,3,0,0],
-"group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5],
-"group__SceAudioencUser.html#gad4bb28b9aedbcb04d3b7d6eeb8af824d":[1,2,3,0,6]
+"group__SceAudioencUser.html#gac9c959f81cf8434c0501b9be7569b590":[1,2,3,0,5]
 };

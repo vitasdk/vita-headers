@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__SceAudioencUser.html#gad4bb28b9aedbcb04d3b7d6eeb8af824d":[1,2,3,0,6],
 "group__SceAudioencUser.html#gae52560aa93159eebd8001535dd0e8baa":[1,2,3,0,2],
 "group__SceAudioencUser.html#gaeb6b1e0a2bc315c05ec9b67f54bc39c3":[1,2,3,0,3],
 "group__SceBt.html":[1,7,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceCompatUser.html#ga094805755773409e28184c89af4b218d":[1,12,6,0,20],
 "group__SceCompatUser.html#ga1455120122d124fb2ed23c38d9cab1d5":[1,12,6,0,22],
 "group__SceCompatUser.html#ga1b661d174d544307b227a23522ca268b":[1,12,6,0,15],
-"group__SceCompatUser.html#ga1f2f0278ea534d303697a107fdad6a9b":[1,12,6,0,21],
-"group__SceCompatUser.html#ga212514269ab5f81d9ae55ab21eb40c56":[1,12,6,0,11]
+"group__SceCompatUser.html#ga1f2f0278ea534d303697a107fdad6a9b":[1,12,6,0,21]
 };

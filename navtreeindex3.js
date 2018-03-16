@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"group__SceDevCtl.html":[1,4,0],
 "group__SceDevCtlKernel.html":[1,4,0,1],
 "group__SceDevCtlKernel.html#gae4b7c68e3217223ad695ba67eb74a1db":[1,4,0,1,0],
 "group__SceDevCtlUser.html":[1,4,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,1,4],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,1,22],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,11],
-"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,1,1,4],
-"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,1,1,22]
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,1,1,4]
 };
