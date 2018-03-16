@@ -7592,6 +7592,11 @@ modules:
           ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
           ksceSblACMgrIsDevelopmentMode: 0xE87D1777
           ksceSblACMgrIsPspEmu: 0xFD00C72A
+      SceSblACMgr:
+        kernel: false
+        nid: 0xF069F219
+        functions:
+          _sceSblACMgrIsGameProgram: 0x3C17A7F7
   SceSblUpdateMgr:
     nid: 0x528F6BF5
     libraries:
