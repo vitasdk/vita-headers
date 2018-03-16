@@ -119,12 +119,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelOpenMemBlock<
 <tr class="memitem:ga2f8083b5da2530184f98f81dc43d172c"><td class="memItemLeft" align="right" valign="top"><a id="ga2f8083b5da2530184f98f81dc43d172c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelCloseMemBlock</b> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="separator:ga2f8083b5da2530184f98f81dc43d172c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae707f116579b7793b5448818f0314504"><td class="memItemLeft" align="right" valign="top"><a id="gae707f116579b7793b5448818f0314504"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModelForCDialog</b> ()</td></tr>
-<tr class="separator:gae707f116579b7793b5448818f0314504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccf84a0ff2650b931956c8defc2c9d7b"><td class="memItemLeft" align="right" valign="top"><a id="gaccf84a0ff2650b931956c8defc2c9d7b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModel</b> ()</td></tr>
-<tr class="separator:gaccf84a0ff2650b931956c8defc2c9d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga307fc7c634175ea2c12894fc961e6ebf"><td class="memItemLeft" align="right" valign="top"><a id="ga307fc7c634175ea2c12894fc961e6ebf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModelForCDialog</b> (void)</td></tr>
+<tr class="separator:ga307fc7c634175ea2c12894fc961e6ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f95c60fa3e6f77dfbe3032ef7a7b082"><td class="memItemLeft" align="right" valign="top"><a id="ga7f95c60fa3e6f77dfbe3032ef7a7b082"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetModel</b> (void)</td></tr>
+<tr class="separator:ga7f95c60fa3e6f77dfbe3032ef7a7b082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac626e6ef2fd3efdbfce568321dafd3e5"><td class="memItemLeft" align="right" valign="top"><a id="gac626e6ef2fd3efdbfce568321dafd3e5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetFreeMemorySize</b> (<a class="el" href="group__SceSysmemUser.html#structSceKernelFreeMemorySizeInfo">SceKernelFreeMemorySizeInfo</a> *info)</td></tr>
+<tr class="separator:gac626e6ef2fd3efdbfce568321dafd3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelAllocMemBlockOpt" id="structSceKernelAllocMemBlockOpt"></a>
@@ -182,6 +185,47 @@ strBaseBlockName</td>
 uidBaseBlock</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelFreeMemorySizeInfo" id="structSceKernelFreeMemorySizeInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelFreeMemorySizeInfo">&sect;&nbsp;</a></span>SceKernelFreeMemorySizeInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelFreeMemorySizeInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga781ec8546972c768d87edb7ca9810a8d"></a>int</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+sizeof(SceKernelFreeMemorySizeInfo) </td></tr>
+<tr><td class="fieldtype">
+<a id="gae6c2ac0ab216492165330e2fb1c7c591"></a>int</td>
+<td class="fieldname">
+size_cdram</td>
+<td class="fielddoc">
+Free memory size for USER_CDRAM_RW memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaf3877b8906f2937c220588ec3cb4cbbf"></a>int</td>
+<td class="fieldname">
+size_phycont</td>
+<td class="fielddoc">
+Free memory size for USER_MAIN_PHYCONT_*_RW memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7e0775190f57b6c4512bf646b6f030c3"></a>int</td>
+<td class="fieldname">
+size_user</td>
+<td class="fielddoc">
+Free memory size for *_USER_RW memory. </td></tr>
 </table>
 
 </div>
