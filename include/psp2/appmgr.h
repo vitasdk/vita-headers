@@ -368,7 +368,7 @@ int sceAppMgrAppDataMountById(int id, char *titleid, char *mount_point);
  *
  * @return 0 on success, < 0 on error.
  *
- * @note param: 8 (category), 9 (stitle/title?), 10 (title/stitle?), 12 (titleid)
+ * @note param: 6 (contentid) 8 (category), 9 (stitle/title?), 10 (title/stitle?), 12 (titleid)
  */
 int sceAppMgrAppParamGetString(int pid, int param, char *string, int length);
 
