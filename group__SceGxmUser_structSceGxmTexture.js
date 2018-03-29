@@ -1,4 +1,25 @@
 var group__SceGxmUser_structSceGxmTexture =
 [
-    [ "controlWords", "group__SceGxmUser.html#gadcc75b0435bef3b0485dca3466a9517d", null ]
+    [ "base_format", "group__SceGxmUser.html#gafe01ffea4047bcaf82e1ab9464842682", null ],
+    [ "data_addr", "group__SceGxmUser.html#gac224f87a85a3eee45d7b6261f6fb6433", null ],
+    [ "format0", "group__SceGxmUser.html#ga3dbbef2ad9cb2765dde18949e6989b82", null ],
+    [ "gamma_mode", "group__SceGxmUser.html#ga3d0917ba92d72ca026d408cfb49b7449", null ],
+    [ "height", "group__SceGxmUser.html#gabc3dca23e6eb316c83f1d0fc17825457", null ],
+    [ "lod_bias", "group__SceGxmUser.html#ga871245b8bbff5fb62fc8a7b073a5233a", null ],
+    [ "mag_filter", "group__SceGxmUser.html#gae5ca551ba83b159351aed4e974e5295a", null ],
+    [ "min_filter", "group__SceGxmUser.html#ga4eb9002bb7e451098d5ff3ac902ac3b3", null ],
+    [ "mip_count", "group__SceGxmUser.html#ga3ab084ae0bfd998a0b76e7ff43d95cb0", null ],
+    [ "mip_filter", "group__SceGxmUser.html#gae54b0c806611cb83fe7c51eec2f1bae1", null ],
+    [ "normalize_mode", "group__SceGxmUser.html#ga5a5a7c96fe3effef2301fca3551cd113", null ],
+    [ "palette_addr", "group__SceGxmUser.html#ga5ca43bf6c8cdc0f181673b91dc44e4cc", null ],
+    [ "swizzle_format", "group__SceGxmUser.html#gaf29a821ddec98641c447245157fd12db", null ],
+    [ "type", "group__SceGxmUser.html#gabd3cf68a366aee44a6c427cfda0ee4c2", null ],
+    [ "uaddr_mode", "group__SceGxmUser.html#gab3a985ebee78a00affd0e1e055067954", null ],
+    [ "unk0", "group__SceGxmUser.html#ga4f48f80d4a967ed5ad8002310fca715b", null ],
+    [ "unk1", "group__SceGxmUser.html#gae013920daee4e43b49c5dc2d64060c70", null ],
+    [ "unk2", "group__SceGxmUser.html#ga8b1f49f627b8ff534894c0d995a0003d", null ],
+    [ "unk3", "group__SceGxmUser.html#gac569c47ea49322ba714b6d175369d5fe", null ],
+    [ "unk4", "group__SceGxmUser.html#gaa96c12e10912653b2d7a1eaef71f6f21", null ],
+    [ "vaddr_mode", "group__SceGxmUser.html#ga6bea800815bfb20a9a633fdf6036fe95", null ],
+    [ "width", "group__SceGxmUser.html#ga663873c7560a28af3fcdcf218e95ffad", null ]
 ];
