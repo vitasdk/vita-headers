@@ -6,6 +6,8 @@ var group__SceGxmUser_structSceGxmTexture =
     [ "gamma_mode", "group__SceGxmUser.html#ga3d0917ba92d72ca026d408cfb49b7449", null ],
     [ "height", "group__SceGxmUser.html#gabc3dca23e6eb316c83f1d0fc17825457", null ],
     [ "lod_bias", "group__SceGxmUser.html#ga871245b8bbff5fb62fc8a7b073a5233a", null ],
+    [ "lod_min0", "group__SceGxmUser.html#gad3132301633fd72623175a2aceeed79d", null ],
+    [ "lod_min1", "group__SceGxmUser.html#gae72e128da359e5f08b97c0841767a298", null ],
     [ "mag_filter", "group__SceGxmUser.html#gae5ca551ba83b159351aed4e974e5295a", null ],
     [ "min_filter", "group__SceGxmUser.html#ga4eb9002bb7e451098d5ff3ac902ac3b3", null ],
     [ "mip_count", "group__SceGxmUser.html#ga3ab084ae0bfd998a0b76e7ff43d95cb0", null ],
@@ -18,8 +20,6 @@ var group__SceGxmUser_structSceGxmTexture =
     [ "unk0", "group__SceGxmUser.html#ga4f48f80d4a967ed5ad8002310fca715b", null ],
     [ "unk1", "group__SceGxmUser.html#gae013920daee4e43b49c5dc2d64060c70", null ],
     [ "unk2", "group__SceGxmUser.html#ga8b1f49f627b8ff534894c0d995a0003d", null ],
-    [ "unk3", "group__SceGxmUser.html#gac569c47ea49322ba714b6d175369d5fe", null ],
-    [ "unk4", "group__SceGxmUser.html#gaa96c12e10912653b2d7a1eaef71f6f21", null ],
     [ "vaddr_mode", "group__SceGxmUser.html#ga6bea800815bfb20a9a633fdf6036fe95", null ],
     [ "width", "group__SceGxmUser.html#ga663873c7560a28af3fcdcf218e95ffad", null ]
 ];
