@@ -1649,7 +1649,6 @@ modules:
           sceGxmSyncObjectCreate: 0x6A6013E1
           sceGxmSyncObjectDestroy: 0x889AE88C
           sceGxmTerminate: 0xB627DE66
-          sceGxmTextureGetAnisoMode: 0xDE9D5911
           sceGxmTextureGetData: 0x5341BD46
           sceGxmTextureGetFormat: 0xE868D2B3
           sceGxmTextureGetGammaMode: 0xF23FCE81
@@ -1660,12 +1659,15 @@ modules:
           sceGxmTextureGetMinFilter: 0x920666C6
           sceGxmTextureGetMipFilter: 0xCE94CA15
           sceGxmTextureGetMipmapCount: 0xF7B7B1E4
+          sceGxmTextureGetMipmapCountUnsafe: 0x4CC42929
           sceGxmTextureGetNormalizeMode: 0x512BB86C
           sceGxmTextureGetPalette: 0x0D189C30
           sceGxmTextureGetStride: 0xB0BD52F3
           sceGxmTextureGetType: 0xF65D4917
           sceGxmTextureGetUAddrMode: 0x2AE22788
+          sceGxmTextureGetUAddrModeSafe: 0xC037DA83
           sceGxmTextureGetVAddrMode: 0x46136CA9
+          sceGxmTextureGetVAddrModeSafe: 0xD2F0D9C1
           sceGxmTextureGetWidth: 0x126A3EB3
           sceGxmTextureInitCube: 0x11DC8DC9
           sceGxmTextureInitCubeArbitrary: 0xE3DF5E3B
@@ -1674,7 +1676,6 @@ modules:
           sceGxmTextureInitSwizzled: 0xD572D547
           sceGxmTextureInitSwizzledArbitrary: 0x5DBFBA2C
           sceGxmTextureInitTiled: 0xE6F0DB27
-          sceGxmTextureSetAnisoMode: 0xE719CBD4
           sceGxmTextureSetData: 0x855814C4
           sceGxmTextureSetFormat: 0xFC943596
           sceGxmTextureSetGammaMode: 0xA6D9F4DA
