@@ -67,7 +67,8 @@ typedef enum SceGxmAttributeFormat {
 	SCE_GXM_ATTRIBUTE_FORMAT_U16N,
 	SCE_GXM_ATTRIBUTE_FORMAT_S16N,
 	SCE_GXM_ATTRIBUTE_FORMAT_F16,
-	SCE_GXM_ATTRIBUTE_FORMAT_F32
+	SCE_GXM_ATTRIBUTE_FORMAT_F32,
+	SCE_GXM_ATTRIBUTE_FORMAT_UNTYPED
 } SceGxmAttributeFormat;
 
 typedef enum SceGxmDepthStencilFormat {
@@ -802,11 +803,13 @@ typedef enum SceGxmTextureAnisoMode {
 } SceGxmTextureAnisoMode;
 
 typedef enum SceGxmTextureType {
-	SCE_GXM_TEXTURE_SWIZZLED        = 0x00000000u,
-	SCE_GXM_TEXTURE_CUBE            = 0x40000000u,
-	SCE_GXM_TEXTURE_LINEAR          = 0x60000000u,
-	SCE_GXM_TEXTURE_TILED           = 0x80000000u,
-	SCE_GXM_TEXTURE_LINEAR_STRIDED  = 0xC0000000u
+	SCE_GXM_TEXTURE_SWIZZLED             = 0x00000000u,
+	SCE_GXM_TEXTURE_CUBE                 = 0x40000000u,
+	SCE_GXM_TEXTURE_LINEAR               = 0x60000000u,
+	SCE_GXM_TEXTURE_TILED                = 0x80000000u,
+	SCE_GXM_TEXTURE_SWIZZLED_ARBITRARY = 0xA0000000U,
+	SCE_GXM_TEXTURE_LINEAR_STRIDED      = 0xC0000000u,
+	SCE_GXM_TEXTURE_CUBE_ARBITRARY      = 0xE0000000U
 } SceGxmTextureType;
 
 typedef enum SceGxmTextureFilter {
@@ -898,7 +901,9 @@ typedef enum SceGxmDepthStencilForceStoreMode {
 
 typedef enum SceGxmSceneFlags {
 	SCE_GXM_SCENE_FRAGMENT_SET_DEPENDENCY     = 0x00000001u,
-	SCE_GXM_SCENE_VERTEX_WAIT_FOR_DEPENDENCY  = 0x00000002u
+	SCE_GXM_SCENE_VERTEX_WAIT_FOR_DEPENDENCY  = 0x00000002u,
+	SCE_GXM_SCENE_FRAGMENT_TRANSFER_SYNC       = 0x00000004U,
+	SCE_GXM_SCENE_VERTEX_TRANSFER_SYNC         = 0x00000008U
 } SceGxmSceneFlags;
 
 typedef enum SceGxmMidSceneFlags {
@@ -1041,11 +1046,11 @@ typedef struct SceGxmTexture {
 	uint32_t base_format : 5;
 	uint32_t type : 3;
 	// Control Word 2
-	uint32_t unk3 : 2;
+	uint32_t lod_min0 : 2;
 	uint32_t data_addr : 30;
 	// Control Word 3
 	uint32_t palette_addr : 26;
-	uint32_t unk4 : 2;
+	uint32_t lod_min1 : 2;
 	uint32_t swizzle_format : 3;
 	uint32_t normalize_mode : 1;
 } SceGxmTexture;
