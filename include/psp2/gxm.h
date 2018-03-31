@@ -797,11 +797,6 @@ typedef enum SceGxmTextureFormat {
 	SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP = SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP_ABGR
 } SceGxmTextureFormat;
 
-typedef enum SceGxmTextureAnisoMode {
-	SCE_GXM_TEXTURE_ANISO_DISABLED  = 0x00000000u,
-	SCE_GXM_TEXTURE_ANISO_ENABLED   = 0x00004000u
-} SceGxmTextureAnisoMode;
-
 typedef enum SceGxmTextureType {
 	SCE_GXM_TEXTURE_SWIZZLED             = 0x00000000u,
 	SCE_GXM_TEXTURE_CUBE                 = 0x40000000u,
@@ -814,9 +809,7 @@ typedef enum SceGxmTextureType {
 
 typedef enum SceGxmTextureFilter {
 	SCE_GXM_TEXTURE_FILTER_POINT        = 0x00000000u,
-	SCE_GXM_TEXTURE_FILTER_LINEAR       = 0x00000001u,
-	SCE_GXM_TEXTURE_FILTER_ANISO_LINEAR = 0x00000002u,
-	SCE_GXM_TEXTURE_FILTER_ANISO_POINT  = 0x00000003u
+	SCE_GXM_TEXTURE_FILTER_LINEAR       = 0x00000001u
 } SceGxmTextureFilter;
 
 typedef enum SceGxmTextureMipFilter {
@@ -1444,9 +1437,6 @@ SceGxmTextureFilter sceGxmTextureGetMagFilter(const SceGxmTexture *texture);
 
 int sceGxmTextureSetMipFilter(SceGxmTexture *texture, SceGxmTextureMipFilter mipFilter);
 SceGxmTextureMipFilter sceGxmTextureGetMipFilter(const SceGxmTexture *texture);
-
-int sceGxmTextureSetAnisoMode(SceGxmTexture *texture, SceGxmTextureAnisoMode anisoMode);
-SceGxmTextureAnisoMode sceGxmTextureGetAnisoMode(const SceGxmTexture *texture);
 
 int sceGxmTextureSetUAddrMode(SceGxmTexture *texture, SceGxmTextureAddrMode addrMode);
 SceGxmTextureAddrMode sceGxmTextureGetUAddrMode(const SceGxmTexture *texture);
