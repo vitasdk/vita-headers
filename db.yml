@@ -2581,25 +2581,36 @@ modules:
           sceClibVsnprintf: 0xFA6BE467
           sceClibVsnprintfChk: 0xB628786B
           sceIoChstat: 0x29482F7F
+          sceIoChstatAsync: 0x9739A5E2
           sceIoChstatByFd: 0x6E903AB2
+          sceIoCompleteMultiple: 0xA792C404
           sceIoDevctl: 0x04B30CB2
+          sceIoDevctlAsync: 0x950F78EB
           sceIoDopen: 0xA9283DD0
           sceIoDread: 0x9C8B6624
           sceIoGetstat: 0xBCA5B623
+          sceIoGetstatAsync: 0x82B20B41
           sceIoGetstatByFd: 0x57F8CD25
           sceIoIoctl: 0x54ABACFA
           sceIoIoctlAsync: 0x099C54B9
           sceIoLseek: 0x99BA173E
           sceIoLseekAsync: 0xCAC5D672
           sceIoMkdir: 0x9670D39F
+          sceIoMkdirAsync: 0x8E5FCBB1
           sceIoOpen: 0x6C60AC61
           sceIoOpenAsync: 0x6A7EA9FD
           sceIoPread: 0x52315AD7
+          sceIoPreadAsync: 0xA010141E
           sceIoPwrite: 0x8FFFF5A8
+          sceIoPwriteAsync: 0xED25BEEF
           sceIoRemove: 0xE20ED0F3
+          sceIoRemoveAsync: 0x446A60AC
           sceIoRename: 0xF737E369
+          sceIoRenameAsync: 0xEE9857CD
           sceIoRmdir: 0xE9F91EC8
+          sceIoRmdirAsync: 0x9694D00F
           sceIoSync: 0x98ACED6D
+          sceIoSyncAsync: 0xF7C7FBFE
           sceKernelAtomicAddAndGet16: 0x495C52EC
           sceKernelAtomicAddAndGet32: 0x2E84A93B
           sceKernelAtomicAddAndGet64: 0xB6CE9B9A
@@ -2692,9 +2703,11 @@ modules:
           sceKernelCreateLwCond: 0x48C7EAE6
           sceKernelCreateLwMutex: 0xDA6EC8EF
           sceKernelCreateMsgPipe: 0x0A10C1C8
+          sceKernelCreateMsgPipeWithLR: 0xD7E10BB1
           sceKernelCreateMutex: 0xED53334A
           sceKernelCreateRWLock: 0x8667951D
           sceKernelCreateSema: 0x1BD67366
+          sceKernelCreateSema_16XX: 0x297AA2AE
           sceKernelCreateSimpleEvent: 0xE6DB2494
           sceKernelCreateThread: 0xC5C11EE7
           sceKernelCreateTimer: 0x2255B2A5
@@ -2722,9 +2735,12 @@ modules:
           sceKernelGetRWLockInfo: 0x079A573B
           sceKernelGetSemaInfo: 0x595D3FA6
           sceKernelGetSystemInfo: 0xE0241FAA
+          sceKernelGetSystemTime: 0x8AF15B5F
           sceKernelGetTLSAddr: 0xB295EB61
+          sceKernelGetThreadContextForVM: 0x22C9595E
           sceKernelGetThreadCpuAffinityMask: 0x8C57AC2A
           sceKernelGetThreadCurrentPriority: 0xC53A9848
+          sceKernelGetThreadEventInfo: 0xE48476FE
           sceKernelGetThreadExitStatus: 0xD5DC26C4
           sceKernelGetThreadId: 0x0FB972F9
           sceKernelGetThreadInfo: 0x8D9C5461
@@ -2753,11 +2769,13 @@ modules:
           sceKernelReceiveMsgPipeCB: 0x33AF829B
           sceKernelReceiveMsgPipeVector: 0x9F899087
           sceKernelReceiveMsgPipeVectorCB: 0xBE5B3E27
+          sceKernelRegisterThreadEventHandler: 0x6D8C0F13
           sceKernelSendMsgPipe: 0x0CA71EA2
           sceKernelSendMsgPipeCB: 0xA5CA74AC
           sceKernelSendMsgPipeVector: 0x94D506F7
           sceKernelSendMsgPipeVectorCB: 0x9C6F7F79
           sceKernelSetEventWithNotifyCallback: 0x5FF3EE92
+          sceKernelSetThreadContextForVM: 0x27E6DEDE
           sceKernelSetTimerEvent: 0x621D293B
           sceKernelSetTimerTime: 0xFFAD717F
           sceKernelSignalLwCond: 0x3AC63B9A
@@ -2781,6 +2799,8 @@ modules:
           sceKernelWaitEventCB: 0xA0490795
           sceKernelWaitEventFlag: 0x83C0E2AF
           sceKernelWaitEventFlagCB: 0xE737B1DF
+          sceKernelWaitException: 0x11E263A5
+          sceKernelWaitExceptionCB: 0xAB4B5485
           sceKernelWaitLwCond: 0xE1878282
           sceKernelWaitLwCondCB: 0x8FA54B07
           sceKernelWaitMultipleEvents: 0x10586418
@@ -2792,6 +2812,11 @@ modules:
           sceKernelWaitThreadEnd: 0xDDB395A9
           sceKernelWaitThreadEndCB: 0xC54941ED
           sceSblACMgrIsGameProgram: 0x963F4A99
+          sceSblGcAuthMgrPcactActivation: 0x17C0CEF4
+          sceSblGcAuthMgrAdhocBB160Shutdown: 0x5F9F0D61
+          sceSblGcAuthMgrAdhocBB224Shutdown: 0xE633BAD1
+          sceSblGcAuthMgrMsSaveBBCipherFinal: 0xEB02F15D
+          sceSblGcAuthMgrMsSaveBBMacUpdate: 0xEE2D40F7
       SceLibRng:
         kernel: false
         nid: 0xF9AC7CF8
