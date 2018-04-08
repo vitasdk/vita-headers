@@ -8042,6 +8042,11 @@ modules:
           sce_paf_private_strncasecmp: 0xA6014289
           sce_paf_private_strncmp: 0x1E1EA818
           sce_paf_private_strrchr: 0xFA2C892F
+      ScePafMisc:
+        kernel: false
+        nid: 0x3d643ce8
+        functions:
+          sce_paf_misc_does_file_exist: 0x95F14046
   SceKernelDmacMgr:
     nid: 0xF926C804
     libraries:
