@@ -2328,6 +2328,7 @@ modules:
           sceKernelUnlockWriteRWLock: 0xB4151397
           sceKernelUnregisterCallbackFromEvent: 0x18462B11
           sceKernelUnregisterCallbackFromEventAll: 0x888A7361
+          sceKernelUnregisterThreadEventHandler: 0x2C8ED6F0
           sceKernelGetThreadTLSAddr: 0xBACA6891
       SceThreadmgrCoredumpTime:
         kernel: false
@@ -2477,9 +2478,11 @@ modules:
         kernel: false
         nid: 0x2DD91812
         functions:
+          sceKernelCallAbortHandler: 0xEB6E50BB
           sceKernelGetStderr: 0xFA5E3ADA
           sceKernelGetStdin: 0xC1727F59
           sceKernelGetStdout: 0xE5AA625C
+          sceKernelGetProcessParam: 0x2BE3E066
           sceKernelIsCDialogAvailable: 0x143BC4D6
           sceKernelIsGameBudget: 0xCE0F02F0
           sceKernelLibcClock: 0x9E45DA09
