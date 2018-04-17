@@ -17,8 +17,9 @@ extern "C" {
 #endif
 
 typedef enum SceCompatCacheMode {
-	SCE_COMPAT_CACHE_NONE           = 1,
-	SCE_COMPAT_CACHE_INVALIDATE     = 2
+	SCE_COMPAT_CACHE_NONE           = 0,
+	SCE_COMPAT_CACHE_INVALIDATE     = 1,
+	SCE_COMPAT_CACHE_WRITEBACK      = 2
 } SceCompatCacheMode;
 
 typedef enum SceCompatPeripheralMode {
@@ -111,7 +112,7 @@ int sceCompatSetSuspendSema(SceUID semaid1, SceUID semaid2);
 int sceCompatSuspendResume(int unk);
 
 /**
- * Cache invalidate
+ * Cache operation
  *
  * @param[in] mode - One of ::SceCompatCacheMode
  * @param[in] addr - Address
