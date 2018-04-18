@@ -104,7 +104,7 @@ typedef enum SceThreadStatus {
 
 typedef enum SceKernelMutexAttribute {
 	SCE_KERNEL_MUTEX_ATTR_RECURSIVE = 0x02
-} SceKernelMutexAttribute
+} SceKernelMutexAttribute;
 
 /**
  * Create a thread
