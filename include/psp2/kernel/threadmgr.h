@@ -102,6 +102,10 @@ typedef enum SceThreadStatus {
 	SCE_THREAD_KILLED  = 32, /* Thread manager has killed the thread (stack overflow) */
 } SceThreadStatus;
 
+typedef enum SceKernelMutexAttribute {
+	SCE_KERNEL_MUTEX_ATTR_RECURSIVE = 0x02
+} SceKernelMutexAttribute
+
 /**
  * Create a thread
  *
