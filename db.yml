@@ -2494,7 +2494,17 @@ modules:
         nid: 0x2DD91812
         functions:
           sceKernelCallAbortHandler: 0xEB6E50BB
+          sceKernelCDialogSessionClose: 0xDB4CC1D0
+          sceKernelCDialogSetLeaseLimit: 0xEC8DDAAD
+          sceKernelGetCurrentProcess: 0xCD248267
+          sceKernelGetExtraTty: 0x2D635A00
+          sceKernelGetProcessName: 0x10C52C95
           sceKernelGetProcessParam: 0x2BE3E066
+          sceKernelGetProcessTimeCore: 0xD37A8437
+          sceKernelGetProcessTimeLowCore: 0xF5D0D4C6
+          sceKernelGetProcessTimeWideCore: 0x89DA0967
+          sceKernelGetProcessTitleId: 0x03A48771
+          sceKernelGetRemoteProcessTime: 0xE6E9FCA3
           sceKernelGetStderr: 0xFA5E3ADA
           sceKernelGetStdin: 0xC1727F59
           sceKernelGetStdout: 0xE5AA625C
