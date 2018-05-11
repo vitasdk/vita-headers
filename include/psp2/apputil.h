@@ -15,11 +15,13 @@ extern "C" {
 #endif
 
 typedef enum SceAppUtilSaveDataRemoveMode {
-	SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_DEFAULT = 0
+	SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_DEFAULT = 0,
+	SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_NO_SLOT = 1
 } SceAppUtilSaveDataDataRemoveMode;
 
 typedef enum SceAppUtilSaveDataSaveMode {
-	SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_FILE = 0
+	SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_FILE = 0,
+	SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_DIRECTORY = 2
 } SceAppUtilSaveDataDataSaveMode;
 
 typedef enum SceAppUtilErrorCode {
