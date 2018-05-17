@@ -17,6 +17,31 @@ int _vshSblGetSystemSwVersion(SceKernelFwInfo * data);
  
 int _vshSblAimgrGetConsoleId(char CID[32]);
  
+ /**
+ *
+ * @param[in] id - mount id
+ * @param[in] unk1 - Unknown, set 0
+ * @param[in] unk2 - Unknown, set 0
+ * @param[in] unk3 - work buffer
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
+int _vshIoMount(int id, int unk1, int unk2, void* unk3);
+
+/**
+ *
+ * @param[in] id - mount id
+ * @param[in] unk1 - Unknown, set 0
+ * @param[in] unk2 - Unknown, set 0
+ * @param[in] unk3 - Unknown, set 0
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ */
+int vshIoUmount(int id, int unk1, int unk2, int unk3); 
+ 
+ 
 int vshIdStorageIsDirty(void);
 int vshIdStorageIsFormatted(void);
 int vshIdStorageIsReadOnly(void);
