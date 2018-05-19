@@ -10593,7 +10593,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">vshbridge.h</field>
     <field name="url">vshbridge_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">_vshSblGetSystemSwVersion SceKernelFwInfo data _vshSblAimgrGetConsoleId CID vshIdStorageIsDirty vshIdStorageIsFormatted vshIdStorageIsReadOnly vshSblAimgrIsCEX vshSblAimgrIsDEX vshSblAimgrIsGenuineVITA vshSblAimgrIsGenuineDolce vshSblAimgrIsTest vshSblAimgrIsTool vshSblSsIsDevelopmentMode sceKernelIsPSVitaTV vshSysconHasWWAN vshSysconIsDownLoaderMode vshSysconIsIduMode vshSysconIsMCEmuCapable vshSysconIsShowMode vshMemoryCardGetCardInsertState vshRemovableMemoryGetCardInsertState</field>
+    <field name="text">_vshSblGetSystemSwVersion SceKernelFwInfo data _vshSblAimgrGetConsoleId CID _vshIoMount unk1 permission buf vshIoUmount unk1 unk2 unk3 vshIdStorageIsDirty vshIdStorageIsFormatted vshIdStorageIsReadOnly vshSblAimgrIsCEX vshSblAimgrIsDEX vshSblAimgrIsGenuineVITA vshSblAimgrIsGenuineDolce vshSblAimgrIsTest vshSblAimgrIsTool vshSblSsIsDevelopmentMode sceKernelIsPSVitaTV vshSysconHasWWAN vshSysconIsDownLoaderMode vshSysconIsIduMode vshSysconIsMCEmuCapable vshSysconIsShowMode vshMemoryCardGetCardInsertState vshRemovableMemoryGetCardInsertState</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -18721,6 +18721,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceVshBridgeUser.html</field>
     <field name="keywords">User</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">_vshIoMount</field>
+    <field name="args">(int id, int unk1, int permission, void *buf)</field>
+    <field name="url">group__SceVshBridgeUser.html#ga98ffb523ac67991ffafbf987467450e7</field>
+    <field name="keywords">_vshIoMount</field>
+    <field name="text">id mount id unk1 Unknown set 0 permission 1/RO 2/RW buf work buffer 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">vshIoUmount</field>
+    <field name="args">(int id, int unk1, int unk2, int unk3)</field>
+    <field name="url">group__SceVshBridgeUser.html#ga94f847e309ad1c783bc9460bd98c99a7</field>
+    <field name="keywords">vshIoUmount</field>
+    <field name="text">id mount id unk1 Unknown set 0 unk2 Unknown set 0 unk3 Unknown set 0 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">group</field>
