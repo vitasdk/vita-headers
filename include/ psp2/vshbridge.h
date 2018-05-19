@@ -37,7 +37,6 @@ int _vshIoMount(int id, int unk1, int permission, void* buf);
  */
 int vshIoUmount(int id, int unk1, int unk2, int unk3); 
  
- 
 int vshIdStorageIsDirty(void);
 int vshIdStorageIsFormatted(void);
 int vshIdStorageIsReadOnly(void);
