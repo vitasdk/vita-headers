@@ -89,8 +89,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_vshSblGetSystemSwVers
 <tr class="memitem:ga7973656329d62086b3191ed3df872441"><td class="memItemLeft" align="right" valign="top"><a id="ga7973656329d62086b3191ed3df872441"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>_vshSblAimgrGetConsoleId</b> (char CID[32])</td></tr>
 <tr class="separator:ga7973656329d62086b3191ed3df872441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98ffb523ac67991ffafbf987467450e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga98ffb523ac67991ffafbf987467450e7">_vshIoMount</a> (int id, int unk1, int permission, void *buf)</td></tr>
-<tr class="separator:ga98ffb523ac67991ffafbf987467450e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab437d640375011bed4c7a1a332329ef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#gab437d640375011bed4c7a1a332329ef3">_vshIoMount</a> (int id, const char *path, int permission, void *buf)</td></tr>
+<tr class="separator:gab437d640375011bed4c7a1a332329ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94f847e309ad1c783bc9460bd98c99a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga94f847e309ad1c783bc9460bd98c99a7">vshIoUmount</a> (int id, int unk1, int unk2, int unk3)</td></tr>
 <tr class="separator:ga94f847e309ad1c783bc9460bd98c99a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae79046cedcbb3a3def18c7146c311902"><td class="memItemLeft" align="right" valign="top"><a id="gae79046cedcbb3a3def18c7146c311902"></a>
@@ -149,8 +149,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
 <tr class="separator:ga121a576126f3dff4688cdba0fbdfcc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga98ffb523ac67991ffafbf987467450e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga98ffb523ac67991ffafbf987467450e7">&sect;&nbsp;</a></span>_vshIoMount()</h2>
+<a id="gab437d640375011bed4c7a1a332329ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab437d640375011bed4c7a1a332329ef3">&sect;&nbsp;</a></span>_vshIoMount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,8 +164,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -189,7 +189,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- mount id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk1</td><td>- Unknown, set 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- mount path </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">permission</td><td>- 1/RO 2/RW </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- work buffer</td></tr>
   </table>

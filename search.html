@@ -10593,7 +10593,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">vshbridge.h</field>
     <field name="url">vshbridge_8h_source.html#l00001</field>
     <field name="keywords"></field>
-    <field name="text">_vshSblGetSystemSwVersion SceKernelFwInfo data _vshSblAimgrGetConsoleId CID _vshIoMount unk1 permission buf vshIoUmount unk1 unk2 unk3 vshIdStorageIsDirty vshIdStorageIsFormatted vshIdStorageIsReadOnly vshSblAimgrIsCEX vshSblAimgrIsDEX vshSblAimgrIsGenuineVITA vshSblAimgrIsGenuineDolce vshSblAimgrIsTest vshSblAimgrIsTool vshSblSsIsDevelopmentMode sceKernelIsPSVitaTV vshSysconHasWWAN vshSysconIsDownLoaderMode vshSysconIsIduMode vshSysconIsMCEmuCapable vshSysconIsShowMode vshMemoryCardGetCardInsertState vshRemovableMemoryGetCardInsertState</field>
+    <field name="text">_vshSblGetSystemSwVersion SceKernelFwInfo data _vshSblAimgrGetConsoleId CID _vshIoMount path permission buf vshIoUmount unk1 unk2 unk3 vshIdStorageIsDirty vshIdStorageIsFormatted vshIdStorageIsReadOnly vshSblAimgrIsCEX vshSblAimgrIsDEX vshSblAimgrIsGenuineVITA vshSblAimgrIsGenuineDolce vshSblAimgrIsTest vshSblAimgrIsTool vshSblSsIsDevelopmentMode sceKernelIsPSVitaTV vshSysconHasWWAN vshSysconIsDownLoaderMode vshSysconIsIduMode vshSysconIsMCEmuCapable vshSysconIsShowMode vshMemoryCardGetCardInsertState vshRemovableMemoryGetCardInsertState</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -18725,10 +18725,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">_vshIoMount</field>
-    <field name="args">(int id, int unk1, int permission, void *buf)</field>
-    <field name="url">group__SceVshBridgeUser.html#ga98ffb523ac67991ffafbf987467450e7</field>
+    <field name="args">(int id, const char *path, int permission, void *buf)</field>
+    <field name="url">group__SceVshBridgeUser.html#gab437d640375011bed4c7a1a332329ef3</field>
     <field name="keywords">_vshIoMount</field>
-    <field name="text">id mount id unk1 Unknown set 0 permission 1/RO 2/RW buf work buffer 0 on success 0 on error</field>
+    <field name="text">id mount id path mount path permission 1/RO 2/RW buf work buffer 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>

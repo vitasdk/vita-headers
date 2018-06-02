@@ -130,7 +130,7 @@ var NAVTREEINDEX9 =
 "group__SceVshBridge.html":[1,8,9],
 "group__SceVshBridgeUser.html":[1,8,9,0],
 "group__SceVshBridgeUser.html#ga94f847e309ad1c783bc9460bd98c99a7":[1,8,9,0,1],
-"group__SceVshBridgeUser.html#ga98ffb523ac67991ffafbf987467450e7":[1,8,9,0,0],
+"group__SceVshBridgeUser.html#gab437d640375011bed4c7a1a332329ef3":[1,8,9,0,0],
 "group__SystemParams.html":[1,10],
 "group__SystemStatus.html":[1,8],
 "group__USB.html":[1,9],
