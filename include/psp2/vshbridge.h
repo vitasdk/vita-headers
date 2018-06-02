@@ -19,13 +19,13 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
 
 /**
  * @param[in] id - mount id
- * @param[in] unk1 - Unknown, set 0
+ * @param[in] path - mount path
  * @param[in] permission - 1/RO 2/RW
  * @param[in] buf - work buffer
  *
  * @return 0 >= on success, < 0 on error.
  */
-int _vshIoMount(int id, int unk1, int permission, void* buf);
+int _vshIoMount(int id, const char *path, int permission, void* buf);
 
 /**
  * @param[in] id - mount id
