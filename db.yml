@@ -2543,6 +2543,71 @@ modules:
           ksceKernelGetProcessTimeCore: 0xEC283166
           ksceKernelGetProcessLocalStorageAddr: 0xEE694840
           ksceKernelIsGameBudget: 0xF7A8BB25
+  SceSblPostSsMgr:
+    nid: 0xB6C941F2
+    libraries:
+      SceSblPostSsMgrForDriver:
+        kernel: true
+        nid: 0x2254E1B2
+        functions:
+          ksceSblPostSsMgrInitializeSpfsoCtxForDriver: 0xBDF18922
+          ksceSblPostSsMgrVerifySpfsoCtxForDriver: 0x686B9461
+          ksceSblPostSsMgrReleaseSpfsoCtxForDriver: 0xAD3B0078
+          ksceSblPostSsMgrSetCpRtcForDriver: 0x3F9BDEDF
+          ksceSblPostSsMgrGetExpireDateForDriver: 0x4FF2682F
+          ksceSblPostSsMgrActivateForDriver: 0x0298382B
+          ksceSblPostSsMgrExecutePmSmF00dCommandForDriver: 0xADF92824
+          _ksceSblPostSsMgrExecutePmSmF00dCommandForDriver: 0xFE92A318
+          ksceSblPostSsMgrExecutePmSmF00dCommand8ForDriver: 0x4663C195
+          ksceSblPostSsMgrExecutePmSmSdF00dCommandForDriver: 0x19B63D65
+          ksceSblUtMgrExecuteUtokenSmCommand1ForDriver: 0xC2E58CE3
+          ksceSblUtMgrResetUtokenFileForDriver: 0x1FF699DD
+          ksceSblPostSsMgrDecryptSealedkeyForDriver: 0x33275F95
+          ksceSblPostSsMgrEncryptSealedkeyForDriver: 0x08525D8D
+          ksceSblPostSsMgrVerifyKeystoneForDriver: 0xDDA6FA6D
+          ksceSblPostSsMgrVerifyKeystoneWithPasscodeForDriver: 0xF86F1452
+          ksceSblPostSsMgrDebugEncryptKeystoneForDriver: 0x42474C8B
+          ksceSblPostSsMgrDebugDecryptKeystoneForDriver: 0xCC5AA5A5
+          ksceSblUtMgrHasComTestFlagForDriver: 0x7ACCAA50
+          ksceSblUtMgrHasStoreFlagForDriver: 0x9D2E2D39
+          ksceSblUtMgrHasNpTestFlagForDriver: 0x9FD835B0
+      SceSblPmMgr:
+        kernel: false
+        nid: 0xA9CE5795
+        functions:
+          sceSblPmMgrSetProductModeOffForUser: 0x41FE8A37
+          sceSblPmMgrGetProductModeForUser: 0x46EA9FDB
+          sceSblPmMgrGetProductModeFromNVS: 0x49CE0DDF
+          sceSblPmMgrAuthEtoI: 0xBD38B141
+          sceSblPmMgrGetCurrentMode: 0xDA4EDEBF
+      SceSblRtcMgr:
+        kernel: false
+        nid: 0x44C5F209
+        functions:
+          sceSblRtcMgrGetCpRtcPhysicalForUser: 0x1614302B
+          sceSblRtcMgrSetCpActivationKey: 0x298AE544
+          sceSblRtcMgrSetCpRtcPhysicalAndKey: 0x3C0EEC69
+          sceSblRtcMgrSetCpRtcLogical: 0x9DFB118B
+          sceSblRtcMgrSetCpRtcPhysicalForUser: 0xA990BC44
+          sceSblRtcMgrGetCpRtcLogical: 0xDD44D726
+          sceSblRtcMgrGetCpSerialId: 0xE162A827
+      SceSblLicMgr:
+        kernel: false
+        nid: 0x62083C72
+        functions:
+          sceSblLicMgrGetIssueNo: 0x0E0691A1
+          sceSblLicMgrGetLicenseStatus: 0x0EA6A30C
+          sceSblLicMgrGetActivationKey: 0x2A437187
+          sceSblLicMgrActivateFromFs: 0x6E56EA0A
+          sceSblLicMgrGetUsageTimeLimit: 	0x774EBBA2
+          sceSblLicMgrClearActivationData: 0x9B749D1D
+          sceSblLicMgrGetExpireDate: 0xE9FA0FE5
+          sceSblLicMgrActivateDevkit: 0xEB21DD39
+      SceSblUtMgr:
+        kernel: false
+        nid: 0x000DF81A
+        functions:
+          sceSblUtMgrResetUtokenFile: 0x1CD57182
   SceLibKernel:
     nid: 0xF9C9C52F
     libraries:
