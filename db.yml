@@ -2486,6 +2486,19 @@ modules:
           sceIoSyncByFdAsync: 0x7E1367CB
           sceIoWrite: 0x34EFD876
           sceIoWriteAsync: 0xE0D63D2A
+  SceOled:
+    nid: 0x5410837A
+    libraries:
+      SceOledForDriver:
+        kernel: true
+        nid: 0x60C7478A
+        functions:
+            ksceOledDisplayOff: 0xBC84602E
+            ksceOledDisplayOn: 0x4C7836C7
+            ksceOledGetBrightness: 0x43EF811A
+            ksceOledSetBrightness: 0xF9624C47
+            ksceOledSetDisplayColorSpaceMode: 0xDABBD9D3
+            ksceOledWaitReady: 0x0CC6BCB4
   SceProcessmgr:
     nid: 0x8B8A6263
     libraries:
