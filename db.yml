@@ -8156,6 +8156,11 @@ modules:
         nid: 0x3D643CE8
         functions:
           sce_paf_misc_does_file_exist: 0x95F14046
+      ScePafWidget
+        kernel: false
+        nid: 0x073F8C68
+        functions:
+          scePafWidgetSetFontSize: 0x39B15B98
   SceKernelDmacMgr:
     nid: 0xF926C804
     libraries:
