@@ -137,6 +137,18 @@ typedef struct SceKernelProcessContext {
 	SceUInt32 CONTEXTIDR;
 } SceKernelProcessContext;
 
+typedef enum SceKernelSysrootSelfIndex {
+	SCE_KERNEL_SYSROOT_SELF_INDEX_GCAUTHMGR_SM		= 0,
+	SCE_KERNEL_SYSROOT_SELF_INDEX_RMAUTH_SM			= 1,
+	SCE_KERNEL_SYSROOT_SELF_INDEX_ENCDEC_W_PORTABILITY_SM	= 2
+} SceKernelSysrootSelfIndex;
+
+typedef struct SceKernelSysrootSelfInfo {
+	uint32_t size;
+	void *self_data;
+	uint32_t self_size;
+} SceKernelSysrootSelfInfo;
+
 /***
  * Allocates a new memory block
  *
@@ -277,6 +289,8 @@ int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
 int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, size_t len);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
+
+int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *info);
 
 /**
  * Get the physical address of a given virtual address
