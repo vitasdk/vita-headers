@@ -2053,6 +2053,8 @@ modules:
           ksceKernelGetSysbase: 0x3E455842
           ksceKernelGetSysrootBuffer: 0x9DB56D1F
           ksceKernelGetProcessTitleId: 0xEC3124A3
+          ksceSysrootGetSelfInfo: 0xF10AB792
+          ksceSysrootGetSelfAuthInfo: 0x4F0A4066
           ksceSysrootIsAuCodecIcConexant: 0x46E72428
           ksceSysrootIsBsodReboot: 0x4373AC96
           ksceSysrootIsExternalBootMode: 0x89D19090
@@ -8464,3 +8466,25 @@ modules:
         functions:
           ksceExcpmgrGetData: 0x08CB30E6
           ksceExcpmgrRegisterHandler: 0x03499636
+  SceSblSmschedProxy:
+    nid: 0x254B02B3
+    libraries:
+      SceSblSmSchedProxyForKernel:
+        kernel: true
+        nid: 0x15F25C84
+        functions:
+          ksceSblSmSchedProxyInvoke: 0x1916509B
+          ksceSblSmSchedProxyGetStatus: 0x27EB92F1
+          ksceSblSmSchedCallFunc: 0x723B382F
+          ksceSblSmSchedProxyWait: 0xF35EFC1A
+  SceSblSsSmComm:
+    nid: 0xBB4B5D92
+    libraries:
+      SceSblSmCommForKernel:
+        kernel: true
+        nid: 0xCD3C89B6
+        functions:
+          ksceSblSmCommStartSmFromData: 0x039C73B1
+          ksceSblSmCommStopSm: 0x0631F8ED
+          ksceSblSmCommStartSmFromFile: 0x7863A0CC
+          ksceSblSmCommCallFunc: 0xDB9FC204
