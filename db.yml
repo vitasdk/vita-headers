@@ -8488,3 +8488,16 @@ modules:
           ksceSblSmCommStopSm: 0x0631F8ED
           ksceSblSmCommStartSmFromFile: 0x7863A0CC
           ksceSblSmCommCallFunc: 0xDB9FC204
+  SceMsif:
+    nid: 0x3305A0FE
+    libraries:
+      SceMsifForDriver:
+        kernel: true
+        nid: 0xB706084A
+        functions:
+          ksceMsifReadSector: 0x58654AA3
+          ksceMsifWriteSector: 0x329035EF
+          ksceMsifEnableSlowMode: 0x4B751CE6
+          ksceMsifDisableSlowMode: 0x75848756
+          ksceMsifGetSlowModeState: 0x491E25B5
+          ksceMsifGetMsInfo: 0xD0307849
