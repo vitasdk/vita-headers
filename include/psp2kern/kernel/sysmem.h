@@ -411,7 +411,9 @@ int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, unsigned int size);
  */
 int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, unsigned int size);
 
-int ksceSysrootIsManufacturingMode(void);
+int ksceSysrootUseExternalStorage(void);
+
+int ksceSysrootUseInternalStorage(void);
 
 int ksceDebugPrintf(const char *fmt, ...);
 
