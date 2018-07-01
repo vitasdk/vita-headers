@@ -413,6 +413,8 @@ int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, u
 
 int ksceSysrootUseExternalStorage(void);
 
+#define ksceSysrootIsManufacturingMode() ksceSysrootUseExternalStorage()
+
 int ksceSysrootUseInternalStorage(void);
 
 int ksceDebugPrintf(const char *fmt, ...);
