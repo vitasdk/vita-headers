@@ -7745,6 +7745,12 @@ modules:
         functions:
           sceSblSsUpdateMgrGetBootMode: 0x8E834565
           sceSblSsUpdateMgrSetBootMode: 0xC725E3F0
+          sceSblSsUpdateMgrSendCommand: 0x1825D954
+          sceSblSsUpdateMgrVerifyPup: 0x6F5EDBF4
+          sceSblSsUpdateMgrVerifyPupAdditionalSign: 0xB19366CB
+          sceSblSsUpdateMgrVerifyPupHeader: 0x9BE17A06
+          sceSblSsUpdateMgrVerifyPupSegment: 0xD47FD33E
+          sceSblSsUpdateMgrVerifyPupWatermark: 0xC6CDEB8D
   SceUsbd:
     nid: 0x3525FE7A
     libraries:
