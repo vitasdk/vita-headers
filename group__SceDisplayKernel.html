@@ -166,6 +166,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:gaba015ee6bd3e5d4b83efd0151dbb8552"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaba015ee6bd3e5d4b83efd0151dbb8552">ksceDisplaySetInvertColors</a> (int display, int enable)</td></tr>
 <tr class="memdesc:gaba015ee6bd3e5d4b83efd0151dbb8552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable color inversion for a display.  <a href="#gaba015ee6bd3e5d4b83efd0151dbb8552">More...</a><br /></td></tr>
 <tr class="separator:gaba015ee6bd3e5d4b83efd0151dbb8552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b2cb118d615ec679b40f8d7367790c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga8b2cb118d615ec679b40f8d7367790c1">ksceDisplaySetOwner</a> (int head, int index, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid)</td></tr>
+<tr class="memdesc:ga8b2cb118d615ec679b40f8d7367790c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display plane owner.  <a href="#ga8b2cb118d615ec679b40f8d7367790c1">More...</a><br /></td></tr>
+<tr class="separator:ga8b2cb118d615ec679b40f8d7367790c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceDisplayFrameBuf" id="structSceDisplayFrameBuf"></a>
@@ -713,6 +716,51 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga8b2cb118d615ec679b40f8d7367790c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b2cb118d615ec679b40f8d7367790c1">&sect;&nbsp;</a></span>ksceDisplaySetOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetOwner </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set display plane owner. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Use 0 for OLED/LCD and 1 for HDMI </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Can be 0 or 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- PID of the new owner</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

@@ -3117,7 +3117,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00066</field>
     <field name="keywords"></field>
-    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplaySetFrameBufInternal head index SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufInfoForPid SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable</field>
+    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplaySetFrameBufInternal head index SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufInfoForPid SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable ksceDisplaySetOwner head index SceUID pid</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -19185,6 +19185,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceDisplayKernel.html#gaba015ee6bd3e5d4b83efd0151dbb8552</field>
     <field name="keywords">ksceDisplaySetInvertColors</field>
     <field name="text">Enable/disable color inversion for a display display Display index enable Enable/disable color inversion</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDisplaySetOwner</field>
+    <field name="args">(int head, int index, SceUID pid)</field>
+    <field name="url">group__SceDisplayKernel.html#ga8b2cb118d615ec679b40f8d7367790c1</field>
+    <field name="keywords">ksceDisplaySetOwner</field>
+    <field name="text">Set display plane owner head Use 0 for OLED/LCD and 1 for HDMI index Can be 0 or 1 pid PID of the new owner 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">group</field>
