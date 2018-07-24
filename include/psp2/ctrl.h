@@ -304,7 +304,7 @@ int sceCtrlGetBatteryInfo(int port, SceUInt8 *batt);
  * having the input sent to the game thread.
  * @param[in]  intercept  Boolean value
  *
- * @return     0, < 0 on error
+ * @return 0, < 0 on error
  */
 int sceCtrlSetButtonIntercept(int intercept);
 
@@ -313,9 +313,17 @@ int sceCtrlSetButtonIntercept(int intercept);
  *
  * @param[out]  intercept  Boolean value
  *
- * @return     0, < 0 on error
+ * @return 0, < 0 on error
  */
 int sceCtrlGetButtonIntercept(int *intercept);
+
+/**
+ * Check if multi controller is supported
+ *
+ * @return 1 if yes, 0 if no
+ */
+int sceCtrlIsMultiControllerSupported(void);
+
 #ifdef __cplusplus
 }
 #endif
