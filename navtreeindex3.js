@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"group__SceCtrlUser.html#gafccfa461eceb1c73ab603b455e816f1c":[1,1,0,0,41],
 "group__SceDevCtl.html":[1,4,0],
 "group__SceDevCtlKernel.html":[1,4,0,1],
 "group__SceDevCtlKernel.html#gae4b7c68e3217223ad695ba67eb74a1db":[1,4,0,1,0],
@@ -175,8 +176,8 @@ var NAVTREEINDEX3 =
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a2e8bfea13df7f057fefe59c9d21fec50":[1,4,2,1,1,10],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a2e8bfea13df7f057fefe59c9d21fec50":[1,4,2,1,1,28],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a2e8bfea13df7f057fefe59c9d21fec50":[1,4,2,1,12],
-"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2":[1,4,2,0,1,1],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2":[1,4,2,0,1,19],
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2":[1,4,2,0,1,1],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2":[1,4,2,0,26],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2":[1,4,2,1,1,1],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2":[1,4,2,1,1,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aa84f9036169788830a18039697c60683":[1,4,2,1,1,32],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aa84f9036169788830a18039697c60683":[1,4,2,1,17],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,1,4],
-"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,1,22],
-"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,11]
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047":[1,4,2,0,1,22]
 };

@@ -105,6 +105,7 @@ var group__SceCtrlUser =
     [ "sceCtrlGetButtonIntercept", "group__SceCtrlUser.html#ga91999737bb971d0dd01720e72ac819e0", null ],
     [ "sceCtrlGetControllerPortInfo", "group__SceCtrlUser.html#gacb1f90cc566c0f81727e9824fd682722", null ],
     [ "sceCtrlGetSamplingMode", "group__SceCtrlUser.html#gab99dafda34384cd2ad1ed49d8e9ef623", null ],
+    [ "sceCtrlIsMultiControllerSupported", "group__SceCtrlUser.html#gab32b1862b92fa2537346eaaf7def1d1b", null ],
     [ "sceCtrlPeekBufferNegative", "group__SceCtrlUser.html#gafccfa461eceb1c73ab603b455e816f1c", null ],
     [ "sceCtrlPeekBufferPositive", "group__SceCtrlUser.html#ga4d59c5be008f666b39c2db0f06462557", null ],
     [ "sceCtrlPeekBufferPositiveExt2", "group__SceCtrlUser.html#ga44e526dfb8f130d5926ab9465abbaeca", null ],
