@@ -8073,6 +8073,11 @@ modules:
           ksceDsiGenericReadRequest: 0x98120684
           ksceDsiDcsShortWrite: 0xBA6BC89F
           ksceDsiDcsRead: 0x3FB0DF1F
+      SceIftuForDriver:
+        kernel: true
+        nid: 0xCAFCFE50
+        functions:
+          ksceIftuCsc: 0x67E37EFC
   SceSblAuthMgr:
     nid: 0x1773372D
     libraries:
