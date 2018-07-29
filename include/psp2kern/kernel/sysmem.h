@@ -300,7 +300,7 @@ int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelf
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetPaddr(void *addr, uintptr_t *paddr);
+int ksceKernelGetPaddr(const void *addr, uintptr_t *paddr);
 
 /**
  * Get the physical address list of a given virtual address range
