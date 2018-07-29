@@ -25,6 +25,7 @@ typedef enum SceUdcdUsbClass {
 	USB_CLASS_MASS_STORAGE        = 0x08,
 	USB_CLASS_HUB                 = 0x09,
 	USB_CLASS_DATA                = 0x0A,
+	USB_CLASS_VIDEO               = 0x0E,
 	USB_CLASS_VENDOR_SPEC         = 0xFF
 } SceUdcdUsbClass;
 
