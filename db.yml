@@ -1945,6 +1945,8 @@ modules:
           ksceKernelAllocHeapMemory: 0x7B4CB60A
           ksceKernelFreeHeapMemory: 0x3EBCE343
           ksceKernelMapUserBlock: 0x7D4F8B5F
+          ksceKernelMapUserBlockDefaultType: 0x278BC201
+          ksceKernelMapUserBlockDefaultTypeForPid: 0x0091D74D
           ksceKernelSwitchVmaForPid: 0x6F2ACDAE
           ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
           ksceKernelFirstDifferentIntUserForPid: 0x8334454F
@@ -1983,6 +1985,9 @@ modules:
           ksceKernelCreateUidObj: 0xDF0288D7
           ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
           ksceKernelGetMemBlockType: 0x289BE3EC
+          ksceKernelGetUidDLinkClass: 0xC105604E
+          ksceKernelGetUidHeapClass: 0x4CCA935D
+          ksceKernelGetUidMemBlockClass: 0xAF729575
           ksceKernelFindClassByName: 0x62989905
       SceSysclibForDriver:
         kernel: true
