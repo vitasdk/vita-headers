@@ -210,6 +210,13 @@ int scePowerRequestStandby(void);
 int scePowerRequestSuspend(void);
 
 /**
+ * Request display on
+ *
+ * @return always 0
+ */
+int scePowerRequestDisplayOn(void);
+	
+/**
  * Request display off
  *
  * @return always 0
