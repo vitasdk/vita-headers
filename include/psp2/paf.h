@@ -16,14 +16,14 @@ extern "C" {
 
 void sce_paf_private_free(void *ptr);
 void *sce_paf_private_malloc(size_t size);
-void *sce_paf_private_memclr(void *ptr, size_t num); //!< Set memory block to 0
+void *sce_paf_private_bzero(void *ptr, size_t num);
 void *sce_paf_private_memchr(const void *ptr, int value, size_t num);
 int sce_paf_private_memcmp(const void *ptr1, const void *ptr2, size_t num);
-int sce_paf_private_memcmp2(const void *ptr1, const void *ptr2, size_t num);
+int sce_paf_private_bcmp(const void *ptr1, const void *ptr2, size_t num);
 void *sce_paf_private_memcpy(void *destination, const void *source, size_t num);
 void *sce_paf_private_memcpy2(void *destination, const void *source, size_t num);
 void *sce_paf_private_memmove(void *destination, const void *source, size_t num);
-void *sce_paf_private_memmove2(void *destination, const void *source, size_t num);
+void *sce_paf_private_bcopy(void *destination, const void *source, size_t num);
 void *sce_paf_private_memset(void *ptr, int value, size_t num);
 int sce_paf_private_snprintf(char *s, size_t n, const char *format, ...);
 int sce_paf_private_strcasecmp(const char *str1, const char *str2);
