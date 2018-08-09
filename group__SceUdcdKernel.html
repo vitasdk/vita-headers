@@ -143,11 +143,17 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memdesc:ga65ccedf631899c526483cf2f08034e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stall an endpoint.  <a href="#ga65ccedf631899c526483cf2f08034e81">More...</a><br /></td></tr>
 <tr class="separator:ga65ccedf631899c526483cf2f08034e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafcf76b28b30c36a612e3eed344fa3aa4">ksceUdcdReqSend</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
-<tr class="memdesc:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a send request(IN from host pov)  <a href="#gafcf76b28b30c36a612e3eed344fa3aa4">More...</a><br /></td></tr>
+<tr class="memdesc:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a send request (IN from host pov)  <a href="#gafcf76b28b30c36a612e3eed344fa3aa4">More...</a><br /></td></tr>
 <tr class="separator:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedab139261320664a7171bc7bfe9e73a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaedab139261320664a7171bc7bfe9e73a">ksceUdcdReqSendInternal</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req, int bus)</td></tr>
+<tr class="memdesc:gaedab139261320664a7171bc7bfe9e73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a send request (IN from host pov) for an UDCD bus.  <a href="#gaedab139261320664a7171bc7bfe9e73a">More...</a><br /></td></tr>
+<tr class="separator:gaedab139261320664a7171bc7bfe9e73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga912d7d79a404bfc6939fbe2d866e981a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga912d7d79a404bfc6939fbe2d866e981a">ksceUdcdReqRecv</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
-<tr class="memdesc:ga912d7d79a404bfc6939fbe2d866e981a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a receive request(OUT from host pov)  <a href="#ga912d7d79a404bfc6939fbe2d866e981a">More...</a><br /></td></tr>
+<tr class="memdesc:ga912d7d79a404bfc6939fbe2d866e981a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a receive request (OUT from host pov)  <a href="#ga912d7d79a404bfc6939fbe2d866e981a">More...</a><br /></td></tr>
 <tr class="separator:ga912d7d79a404bfc6939fbe2d866e981a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc9858f0f2b3f31b1b8838c69e775e53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafc9858f0f2b3f31b1b8838c69e775e53">ksceUdcdReqRecvInternal</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req, int bus)</td></tr>
+<tr class="memdesc:gafc9858f0f2b3f31b1b8838c69e775e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a receive request (OUT from host pov) for an UDCD bus.  <a href="#gafc9858f0f2b3f31b1b8838c69e775e53">More...</a><br /></td></tr>
+<tr class="separator:gafc9858f0f2b3f31b1b8838c69e775e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -1374,10 +1380,48 @@ unk_10</td>
       </table>
 </div><div class="memdoc">
 
-<p>Queue a receive request(OUT from host pov) </p>
+<p>Queue a receive request (OUT from host pov) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">req</td><td>- Pointer to a filled out <a class="el" href="structSceUdcdDeviceRequest.html" title="USB device request. ">SceUdcdDeviceRequest</a> structure</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gafc9858f0f2b3f31b1b8838c69e775e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc9858f0f2b3f31b1b8838c69e775e53">&sect;&nbsp;</a></span>ksceUdcdReqRecvInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdReqRecvInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue a receive request (OUT from host pov) for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">req</td><td>- Pointer to a filled out <a class="el" href="structSceUdcdDeviceRequest.html" title="USB device request. ">SceUdcdDeviceRequest</a> structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1401,10 +1445,48 @@ unk_10</td>
       </table>
 </div><div class="memdoc">
 
-<p>Queue a send request(IN from host pov) </p>
+<p>Queue a send request (IN from host pov) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">req</td><td>- Pointer to a filled out <a class="el" href="structSceUdcdDeviceRequest.html" title="USB device request. ">SceUdcdDeviceRequest</a> structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gaedab139261320664a7171bc7bfe9e73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedab139261320664a7171bc7bfe9e73a">&sect;&nbsp;</a></span>ksceUdcdReqSendInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdReqSendInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue a send request (IN from host pov) for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">req</td><td>- Pointer to a filled out <a class="el" href="structSceUdcdDeviceRequest.html" title="USB device request. ">SceUdcdDeviceRequest</a> structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
   </table>
   </dd>
 </dl>
