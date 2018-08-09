@@ -295,7 +295,7 @@ int ksceKernelMapBlockUserVisible(SceUID uid);
 int ksceKernelMapUserBlock(const char *name, int permission, int type,
 			   const void *user_buf, unsigned int size, void **kernel_page,
 			   unsigned int *kernel_size, unsigned int *kernel_offset);
-int ksceKernelMapUserBlockDefaultType(const char *name, int permission, void *user_buf,
+int ksceKernelMapUserBlockDefaultType(const char *name, int permission, const void *user_buf,
 				      unsigned int size, void **kernel_page,
 				      unsigned int *kernel_size, unsigned int *kernel_offset);
 int ksceKernelMapUserBlockDefaultTypeForPid(int pid, const char *name, int permission,
