@@ -244,9 +244,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysrootUseInternal
 <tr class="memitem:ga45399d5f520fa2001dfc4becba3893c7"><td class="memItemLeft" align="right" valign="top"><a id="ga45399d5f520fa2001dfc4becba3893c7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintf</b> (const char *fmt,...)</td></tr>
 <tr class="separator:ga45399d5f520fa2001dfc4becba3893c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff23dae6e528ba8f2af2024352e4d9c7"><td class="memItemLeft" align="right" valign="top"><a id="gaff23dae6e528ba8f2af2024352e4d9c7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintf2</b> (int unk0, int unk1, const char *fmt,...)</td></tr>
-<tr class="separator:gaff23dae6e528ba8f2af2024352e4d9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadc9949dcf006278349f4cd55b6a9927"><td class="memItemLeft" align="right" valign="top"><a id="gaadc9949dcf006278349f4cd55b6a9927"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintf2</b> (int msg_type_flag, <a class="el" href="group__SceSysmemKernel.html#structkernel__message__ctx">kernel_message_ctx</a> *msg_ctx, const char *fmt,...)</td></tr>
+<tr class="separator:gaadc9949dcf006278349f4cd55b6a9927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6518c5a29ab7586b53d5658dfce2c9f"><td class="memItemLeft" align="right" valign="top"><a id="gad6518c5a29ab7586b53d5658dfce2c9f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintKernelPanic</b> (<a class="el" href="group__SceSysmemKernel.html#structkernel__message__ctx">kernel_message_ctx</a> *msg_ctx, void *some_address)</td></tr>
+<tr class="separator:gad6518c5a29ab7586b53d5658dfce2c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1656663fdba7b6c83c64b52322d6b45d"><td class="memItemLeft" align="right" valign="top"><a id="ga1656663fdba7b6c83c64b52322d6b45d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintfKernelPanic</b> (<a class="el" href="group__SceSysmemKernel.html#structkernel__message__ctx">kernel_message_ctx</a> *msg_ctx, void *some_address, char *format,...)</td></tr>
+<tr class="separator:ga1656663fdba7b6c83c64b52322d6b45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae64ddf9ef04d69e9bd85c7ae65afa5e1"><td class="memItemLeft" align="right" valign="top"><a id="gae64ddf9ef04d69e9bd85c7ae65afa5e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintKernelAssertion</b> (int condition, <a class="el" href="group__SceSysmemKernel.html#structkernel__message__ctx">kernel_message_ctx</a> *msg_ctx, void *some_address)</td></tr>
+<tr class="separator:gae64ddf9ef04d69e9bd85c7ae65afa5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95376e5d4a5bdd1fa887a4ec0092ecd7"><td class="memItemLeft" align="right" valign="top"><a id="ga95376e5d4a5bdd1fa887a4ec0092ecd7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPrintfKernelAssertion</b> (int unk, int condition, <a class="el" href="group__SceSysmemKernel.html#structkernel__message__ctx">kernel_message_ctx</a> *msg_ctx, int some_address, const char *fmt,...)</td></tr>
+<tr class="separator:ga95376e5d4a5bdd1fa887a4ec0092ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga309aadc66ffa9657280803629c1e6bd1"><td class="memItemLeft" align="right" valign="top"><a id="ga309aadc66ffa9657280803629c1e6bd1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugSetHandlers</b> (int(*func)(void *args, char c), void *args)</td></tr>
 <tr class="separator:ga309aadc66ffa9657280803629c1e6bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +271,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugGetPutchar
 <tr class="memitem:ga81255f2979cb222f8bc62996234f983d"><td class="memItemLeft" align="right" valign="top"><a id="ga81255f2979cb222f8bc62996234f983d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPutchar</b> (int character)</td></tr>
 <tr class="separator:ga81255f2979cb222f8bc62996234f983d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga494f482e4e9f7181952a756c947d1b29"><td class="memItemLeft" align="right" valign="top"><a id="ga494f482e4e9f7181952a756c947d1b29"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugDisableInfoDump</b> (int flag)</td></tr>
+<tr class="separator:ga494f482e4e9f7181952a756c947d1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -798,6 +813,59 @@ self_size</td>
 <a id="gaa4769582083b89d13e79672649ea7c79"></a>uint32_t</td>
 <td class="fieldname">
 size</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structkernel__message__ctx" id="structkernel__message__ctx"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structkernel__message__ctx">&sect;&nbsp;</a></span>kernel_message_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct kernel_message_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gadef76cc5851e9afefdd2a78359bdc509"></a>int</td>
+<td class="fieldname">
+hex_value0_hi</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga7144ab96023dba511a553244307b33ec"></a>int</td>
+<td class="fieldname">
+hex_value0_lo</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaa3a21aaedb22442e0b8903cadfa4eda3"></a>int</td>
+<td class="fieldname">
+hex_value1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2fdf6397984b4e855c2214b6da468b71"></a>char *</td>
+<td class="fieldname">
+msg0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab331cfd1d496537f3dc462a3a83c8707"></a>char *</td>
+<td class="fieldname">
+msg1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab918a9209baba7d3bc14050f5ac6ce0e"></a>int</td>
+<td class="fieldname">
+num</td>
 <td class="fielddoc">
 </td></tr>
 </table>

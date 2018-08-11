@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "_SceBtHidRequest", "group__SceBtKernel.html#struct__SceBtHidRequest", "group__SceBtKernel_struct__SceBtHidRequest" ],
     [ "_sceNpDrmPackageDecrypt_opt", "group__SceNpDrmPackageUser.html#struct__sceNpDrmPackageDecrypt__opt", "group__SceNpDrmPackageUser_struct__sceNpDrmPackageDecrypt__opt" ],
+    [ "kernel_message_ctx", "group__SceSysmemKernel.html#structkernel__message__ctx", "group__SceSysmemKernel_structkernel__message__ctx" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
     [ "sceAppMgrLoadExecOptParam", "group__SceAppMgrUser.html#structsceAppMgrLoadExecOptParam", "group__SceAppMgrUser_structsceAppMgrLoadExecOptParam" ],
