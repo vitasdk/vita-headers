@@ -50,6 +50,7 @@ var group__ScePowerKernel =
     [ "kscePowerRequestSuspend", "group__ScePowerKernel.html#gab809066ccb7973627c75fb26bb5b53e4", null ],
     [ "kscePowerSetArmClockFrequency", "group__ScePowerKernel.html#ga2c100e7ab40f65ea8a5833de369dffd6", null ],
     [ "kscePowerSetBusClockFrequency", "group__ScePowerKernel.html#ga3197bfe77e251b40a22aecf5abe09fa0", null ],
+    [ "kscePowerSetDisplayBrightness", "group__ScePowerKernel.html#ga7c723e89d4775a57afd85298ad82d96d", null ],
     [ "kscePowerSetGpuClockFrequency", "group__ScePowerKernel.html#ga81720c1edd85a4fd944c757d63efd1c8", null ],
     [ "kscePowerSetGpuXbarClockFrequency", "group__ScePowerKernel.html#ga5e1739796b60eca89b8771b70847b1c2", null ],
     [ "kscePowerUnregisterCallback", "group__ScePowerKernel.html#ga056bb04e0e62fd134156b746889adf41", null ]
