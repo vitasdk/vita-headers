@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-/***
+/**
  * Get the maximum brightness.
  *
  * @param[out] maxBrightness - Maximum brightness.
@@ -22,7 +22,7 @@ extern "C" {
  */
 int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
 
-/***
+/**
  * Set the screen brightness.
  *
  * @param brightness - Brightness that the screen will be set to (range 21-65536, 0 turns off the screen).
@@ -31,7 +31,7 @@ int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
  */
 int sceAVConfigSetDisplayBrightness(int brightness);
 
-/***
+/**
  * Get the shutter volume.
  *
  * @param[out] volume - shutter volume.
@@ -40,7 +40,7 @@ int sceAVConfigSetDisplayBrightness(int brightness);
  */
 int sceAVConfigGetShutterVol(int *volume);
 
-/***
+/**
  * Get the system volume.
  *
  * @param[out] volume - System volume.
@@ -49,7 +49,7 @@ int sceAVConfigGetShutterVol(int *volume);
  */
 int sceAVConfigGetSystemVol(int *volume);
 
-/***
+/**
  * Set the system volume.
  *
  * @param volume - volume that the device will be set to (range 0-30).

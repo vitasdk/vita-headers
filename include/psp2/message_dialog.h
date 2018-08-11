@@ -159,7 +159,7 @@ int sceMsgDialogGetResult(SceMsgDialogResult *result);
 int sceMsgDialogTerm(void);
 int sceMsgDialogClose(void);
 
-/***
+/**
  * Increases the rate of the progress bar in the message dialog
  *
  * @param target - Target progress bar
@@ -170,7 +170,7 @@ int sceMsgDialogClose(void);
 */
 int sceMsgDialogProgressBarInc( SceMsgDialogProgressBarTarget target, SceUInt32 delta );
 
-/***
+/**
  * Set the progress rate of the progress bar in the message dialog immediately
  *
  * @param target - Target progress bar
@@ -181,7 +181,7 @@ int sceMsgDialogProgressBarInc( SceMsgDialogProgressBarTarget target, SceUInt32 
 */
 int sceMsgDialogProgressBarSetValue( SceMsgDialogProgressBarTarget target, SceUInt32 rate );
 
-/***
+/**
  * Set the string displayed in the progress bar of the message dialog immediately
  *
  * @param target - Target progress bar

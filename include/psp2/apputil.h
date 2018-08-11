@@ -142,7 +142,7 @@ typedef struct SceAppUtilWebBrowserParam {
 	unsigned int reserved;      //!< Reserved area
 } SceAppUtilWebBrowserParam;
 
-/***
+/**
  * Initializes the AppUtil library. Call this before any of the other functions.
  *
  * @param[out] initParam - App init info. Must be initialized with zeros.

@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-/***
+/**
  * DMA memcpy
  *
  * @param[in] dst - Destination
@@ -22,7 +22,7 @@ extern "C" {
 */
 void *sceDmacMemcpy(void *dst, const void *src, size_t size);
 
-/***
+/**
  * DMA memset
  *
  * @param[in] dst - Destination

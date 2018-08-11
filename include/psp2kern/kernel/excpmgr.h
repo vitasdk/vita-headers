@@ -22,7 +22,7 @@ typedef enum SceExcpKind {
 	SCE_EXCP_FIQ                  = 7
 } SceExcpKind;
 
-/***
+/**
  * Get a pointer to SceExcpmgr's internal data
  * 
  * This is only used by exception handlers.

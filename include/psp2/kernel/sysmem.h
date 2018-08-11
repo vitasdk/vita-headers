@@ -63,7 +63,7 @@ typedef enum SceKernelMemoryType {
 	SCE_KERNEL_MEMORY_TYPE_NORMAL    = 0xD0
 } SceKernelMemoryType;
 
-/***
+/**
  * Allocates a new memory block
  *
  * @param[in] name - Name for the memory block
@@ -75,7 +75,7 @@ typedef enum SceKernelMemoryType {
 */
 SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockOpt *optp);
 
-/***
+/**
  * Frees new memory block
  *
  * @param[in] uid - SceUID of the memory block to free
@@ -84,7 +84,7 @@ SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int 
 */
 int sceKernelFreeMemBlock(SceUID uid);
 
-/***
+/**
  * Gets the base address of a memory block
  *
  * @param[in] uid - SceUID of the memory block to free
@@ -107,21 +107,21 @@ int sceKernelCloseVMDomain(void);
 int sceKernelOpenMemBlock(const char *name, int flags);
 int sceKernelCloseMemBlock(SceUID uid);
 
-/***
+/**
  * Get the model number of the device
  *
  * @return A value from SCE_KERNEL_MODEL
 */
 int sceKernelGetModelForCDialog(void);
 
-/***
+/**
  * Get the model number of the device
  *
  * @return A value from SCE_KERNEL_MODEL
 */
 int sceKernelGetModel(void);
 	
-/***
+/**
  * Get free memory size in bytes
  *
  * @param[out] info - Returned free memory size for different kind of memory block types

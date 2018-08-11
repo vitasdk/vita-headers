@@ -167,7 +167,7 @@ typedef struct SceAvcdecArrayPicture {
 	SceAvcdecPicture **pPicture;
 } SceAvcdecArrayPicture;
 
-/***
+/**
  * @param[in] codec - See ::SceVideodecType
  * @param[in] initInfo - See ::SceVideodecQueryInitInfoHwAvcdec
  *
@@ -175,14 +175,14 @@ typedef struct SceAvcdecArrayPicture {
  */
 int sceVideodecInitLibrary(SceVideodecType codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
 
-/***
+/**
  * @param[in] codec - See ::SceVideodecType
  *
  * @return 0 on success, < 0 on error.
  */
 int sceVideodecTermLibrary(SceVideodecType codec);
 
-/***
+/**
  * @param[in] codec - See ::SceVideodecType
  * @param[in] query - Should be copy from ::SceVideodecQueryInitInfoHwAvcdec.
  * @param[out] decoderInfo - Must be initialized with zeros.
@@ -191,7 +191,7 @@ int sceVideodecTermLibrary(SceVideodecType codec);
  */
 int sceAvcdecQueryDecoderMemSize(SceVideodecType codec, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo);
 
-/***
+/**
  * @param[in] codec - See ::SceVideodecType
  * @param[out] decoder - Must be initialized frameBuf.size and frameBuf.pBuf
  * @param[in] query - Should be copy from ::SceVideodecQueryInitInfoHwAvcdec.
@@ -200,14 +200,14 @@ int sceAvcdecQueryDecoderMemSize(SceVideodecType codec, const SceAvcdecQueryDeco
  */
 int sceAvcdecCreateDecoder(SceVideodecType codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
 
-/***
+/**
  * @param[in] decoder - A ::SceAvcdecCtrl decoder initialized with ::sceAvcdecCreateDecoder
  *
  * @return 0 on success, < 0 on error.
  */
 int sceAvcdecDeleteDecoder(SceAvcdecCtrl *decoder);
 
-/***
+/**
  * @param[in] decoder
  * @param[in] au - Must set buffer information(es) and be initialized timestamps with 0xFFFFFFFF
  * @param[out] array_picture - Must set numOfElm and pPicture. See ::SceAvcdecArrayPicture

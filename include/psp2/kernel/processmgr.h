@@ -37,7 +37,7 @@ typedef enum SceKernelPowerTickType {
 	SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING  = 6
 } SceKernelPowerTickType;
 
-/***
+/**
  * Exit current Process with specified return code
  *
  * @param[in] res - Exit code to return
@@ -46,7 +46,7 @@ typedef enum SceKernelPowerTickType {
  */
 int sceKernelExitProcess(int res);
 
-/***
+/**
  * Cancel specified idle timers to prevent entering in power save processing.
  *
  * @param[in] type - One of ::SceKernelPowerTickType
@@ -55,7 +55,7 @@ int sceKernelExitProcess(int res);
  */
 int sceKernelPowerTick(SceKernelPowerTickType type);
 
-/***
+/**
  * Locks certain timers from triggering.
  *
  * @param[in] type - One of ::SceKernelPowerTickType
@@ -64,7 +64,7 @@ int sceKernelPowerTick(SceKernelPowerTickType type);
   */
 int sceKernelPowerLock(SceKernelPowerTickType type);
 
-/***
+/**
  * Unlocks certain timers.
  *
  * @param[in] type - One of ::SceKernelPowerTickType
@@ -73,7 +73,7 @@ int sceKernelPowerLock(SceKernelPowerTickType type);
  */
 int sceKernelPowerUnlock(SceKernelPowerTickType type);
 
-/***
+/**
  * Get the process time of the current process.
  *
  * @param[out] type - Pointer to a ::SceKernelSysClock structure which will receive the process time.
@@ -82,21 +82,21 @@ int sceKernelPowerUnlock(SceKernelPowerTickType type);
  */
 int sceKernelGetProcessTime(SceKernelSysClock *pSysClock);
 
-/***
+/**
  * Get the lower 32 bits part of process time of the current process.
  *
  * @return process time of the current process
  */
 SceUInt32 sceKernelGetProcessTimeLow(void);
 
-/***
+/**
  * Get the process time of the current process.
  *
  * @return process time of the current process
  */
 SceUInt64 sceKernelGetProcessTimeWide(void);
 
-/***
+/**
  * Get the process ID of the current process.
  *
  * @return process ID of the current process
