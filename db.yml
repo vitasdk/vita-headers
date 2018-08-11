@@ -2170,6 +2170,10 @@ modules:
         functions:
           ksceDebugPrintf: 0x391B74B7
           ksceDebugPrintf2: 0x02B04343
+          ksceDebugPrintKernelPanic: 0x391B5B74
+          ksceDebugPrintfKernelPanic: 0x00CCE39C
+          ksceDebugPrintKernelAssertion: 0x35A35322
+          ksceDebugPrintfKernelAssertion: 0x821A2D59
       SceDebugForKernel:
         kernel: true
         nid: 0x88C17370
