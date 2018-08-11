@@ -102,14 +102,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogTerm</b> (
 <tr class="memitem:gadf14d822fa8fa59a95dd12bbead434d5"><td class="memItemLeft" align="right" valign="top"><a id="gadf14d822fa8fa59a95dd12bbead434d5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogClose</b> (void)</td></tr>
 <tr class="separator:gadf14d822fa8fa59a95dd12bbead434d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6d92c1239c9d88c716d0e20fa2273f0"><td class="memItemLeft" align="right" valign="top"><a id="gac6d92c1239c9d88c716d0e20fa2273f0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogProgressBarInc</b> (SceMsgDialogProgressBarTarget target, SceUInt32 delta)</td></tr>
+<tr class="memitem:gac6d92c1239c9d88c716d0e20fa2273f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMessageDialogUser.html#gac6d92c1239c9d88c716d0e20fa2273f0">sceMsgDialogProgressBarInc</a> (SceMsgDialogProgressBarTarget target, SceUInt32 delta)</td></tr>
+<tr class="memdesc:gac6d92c1239c9d88c716d0e20fa2273f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the rate of the progress bar in the message dialog.  <a href="#gac6d92c1239c9d88c716d0e20fa2273f0">More...</a><br /></td></tr>
 <tr class="separator:gac6d92c1239c9d88c716d0e20fa2273f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8abdbe85adc0ceacd99ad6c1961a7f65"><td class="memItemLeft" align="right" valign="top"><a id="ga8abdbe85adc0ceacd99ad6c1961a7f65"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogProgressBarSetValue</b> (SceMsgDialogProgressBarTarget target, SceUInt32 rate)</td></tr>
+<tr class="memitem:ga8abdbe85adc0ceacd99ad6c1961a7f65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMessageDialogUser.html#ga8abdbe85adc0ceacd99ad6c1961a7f65">sceMsgDialogProgressBarSetValue</a> (SceMsgDialogProgressBarTarget target, SceUInt32 rate)</td></tr>
+<tr class="memdesc:ga8abdbe85adc0ceacd99ad6c1961a7f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the progress rate of the progress bar in the message dialog immediately.  <a href="#ga8abdbe85adc0ceacd99ad6c1961a7f65">More...</a><br /></td></tr>
 <tr class="separator:ga8abdbe85adc0ceacd99ad6c1961a7f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8d55afceb7185ed6bc55ddfea3f3d54"><td class="memItemLeft" align="right" valign="top"><a id="gad8d55afceb7185ed6bc55ddfea3f3d54"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMsgDialogProgressBarSetMsg</b> (SceMsgDialogProgressBarTarget target, const SceChar8 *barMsg)</td></tr>
+<tr class="memitem:gad8d55afceb7185ed6bc55ddfea3f3d54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMessageDialogUser.html#gad8d55afceb7185ed6bc55ddfea3f3d54">sceMsgDialogProgressBarSetMsg</a> (SceMsgDialogProgressBarTarget target, const SceChar8 *barMsg)</td></tr>
+<tr class="memdesc:gad8d55afceb7185ed6bc55ddfea3f3d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the string displayed in the progress bar of the message dialog immediately.  <a href="#gad8d55afceb7185ed6bc55ddfea3f3d54">More...</a><br /></td></tr>
 <tr class="separator:gad8d55afceb7185ed6bc55ddfea3f3d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -491,6 +491,124 @@ Result of executing function. </td></tr>
 <tr><td class="fieldname"><a id="gga94102d21b8d9b9ceec5f24c9e9d96556a7e83586b2825827e2978c67f2b70705d"></a>SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_EMPTY_STORE&#160;</td><td class="fielddoc"><p>Displays "No content is available yet.". </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gac6d92c1239c9d88c716d0e20fa2273f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6d92c1239c9d88c716d0e20fa2273f0">&sect;&nbsp;</a></span>sceMsgDialogProgressBarInc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceMsgDialogProgressBarInc </td>
+          <td>(</td>
+          <td class="paramtype">SceMsgDialogProgressBarTarget&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increases the rate of the progress bar in the message dialog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>- Target progress bar </td></tr>
+    <tr><td class="paramname">delta</td><td>- Progress rate to increase (%)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- If NULL is provided as FrameBuf pointer, output is blacked out. </dd></dl>
+
+</div>
+</div>
+<a id="gad8d55afceb7185ed6bc55ddfea3f3d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8d55afceb7185ed6bc55ddfea3f3d54">&sect;&nbsp;</a></span>sceMsgDialogProgressBarSetMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceMsgDialogProgressBarSetMsg </td>
+          <td>(</td>
+          <td class="paramtype">SceMsgDialogProgressBarTarget&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SceChar8 *&#160;</td>
+          <td class="paramname"><em>barMsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the string displayed in the progress bar of the message dialog immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>- Target progress bar </td></tr>
+    <tr><td class="paramname">barMsg</td><td>- The string displayed in the progress bar</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- If NULL is provided as FrameBuf pointer, output is blacked out. </dd></dl>
+
+</div>
+</div>
+<a id="ga8abdbe85adc0ceacd99ad6c1961a7f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8abdbe85adc0ceacd99ad6c1961a7f65">&sect;&nbsp;</a></span>sceMsgDialogProgressBarSetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceMsgDialogProgressBarSetValue </td>
+          <td>(</td>
+          <td class="paramtype">SceMsgDialogProgressBarTarget&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramname"><em>rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the progress rate of the progress bar in the message dialog immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>- Target progress bar </td></tr>
+    <tr><td class="paramname">delta</td><td>- Progress rate to increase (%)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- If NULL is provided as FrameBuf pointer, output is blacked out. </dd></dl>
 
 </div>
 </div>

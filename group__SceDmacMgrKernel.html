@@ -83,13 +83,104 @@ $(document).ready(function(){initNavTree('group__SceDmacMgrKernel.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8da6896404f340e7ad537b97b7c98cb1"><td class="memItemLeft" align="right" valign="top"><a id="ga8da6896404f340e7ad537b97b7c98cb1"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDmacMemcpy</b> (void *dst, const void *src, size_t size)</td></tr>
+<tr class="memitem:ga8da6896404f340e7ad537b97b7c98cb1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga8da6896404f340e7ad537b97b7c98cb1">ksceDmacMemcpy</a> (void *dst, const void *src, size_t size)</td></tr>
+<tr class="memdesc:ga8da6896404f340e7ad537b97b7c98cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memcpy.  <a href="#ga8da6896404f340e7ad537b97b7c98cb1">More...</a><br /></td></tr>
 <tr class="separator:ga8da6896404f340e7ad537b97b7c98cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f4cac16f17274f44d49a91e857292ec"><td class="memItemLeft" align="right" valign="top"><a id="ga3f4cac16f17274f44d49a91e857292ec"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDmacMemset</b> (void *dst, int c, size_t size)</td></tr>
+<tr class="memitem:ga3f4cac16f17274f44d49a91e857292ec"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga3f4cac16f17274f44d49a91e857292ec">ksceDmacMemset</a> (void *dst, int c, size_t size)</td></tr>
+<tr class="memdesc:ga3f4cac16f17274f44d49a91e857292ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memset.  <a href="#ga3f4cac16f17274f44d49a91e857292ec">More...</a><br /></td></tr>
 <tr class="separator:ga3f4cac16f17274f44d49a91e857292ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga8da6896404f340e7ad537b97b7c98cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8da6896404f340e7ad537b97b7c98cb1">&sect;&nbsp;</a></span>ksceDmacMemcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceDmacMemcpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA memcpy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- Destination </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- Source </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>dst. </dd></dl>
+
+</div>
+</div>
+<a id="ga3f4cac16f17274f44d49a91e857292ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f4cac16f17274f44d49a91e857292ec">&sect;&nbsp;</a></span>ksceDmacMemset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceDmacMemset </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA memset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- Destination </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Constant </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>dst. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

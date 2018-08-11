@@ -11955,6 +11955,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">sceAppUtilInit</field>
+    <field name="args">(SceAppUtilInitParam *initParam, SceAppUtilBootParam *bootParam)</field>
+    <field name="url">group__SceAppUtilUser.html#ga321a1185ec5cb4c83f2860fae0d33b2f</field>
+    <field name="keywords">sceAppUtilInit</field>
+    <field name="text">Initializes the AppUtil library Call this before any of the other functions initParam App init info Must be initialized with zeros bootParam App boot info Must be initialized with zeros 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">sceAppUtilShutdown</field>
     <field name="args">()</field>
     <field name="url">group__SceAppUtilUser.html#ga6dba1ab9dfb7bdaca18f02efdd67f6b9</field>
@@ -12423,6 +12431,46 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceAVConfigUser.html</field>
     <field name="keywords">User</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAVConfigGetDisplayMaxBrightness</field>
+    <field name="args">(int *maxBrightness)</field>
+    <field name="url">group__SceAVConfigUser.html#ga9fb38a05ef1a49a1c1c5e8581d2de1bf</field>
+    <field name="keywords">sceAVConfigGetDisplayMaxBrightness</field>
+    <field name="text">Get the maximum brightness maxBrightness Maximum brightness 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAVConfigSetDisplayBrightness</field>
+    <field name="args">(int brightness)</field>
+    <field name="url">group__SceAVConfigUser.html#gae39175631bf077e026c483b6e0facbe8</field>
+    <field name="keywords">sceAVConfigSetDisplayBrightness</field>
+    <field name="text">Set the screen brightness brightness Brightness that the screen will be set to range 21-65536 0 turns off the screen 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAVConfigGetShutterVol</field>
+    <field name="args">(int *volume)</field>
+    <field name="url">group__SceAVConfigUser.html#ga724e3f64091b786d25b051030583e157</field>
+    <field name="keywords">sceAVConfigGetShutterVol</field>
+    <field name="text">Get the shutter volume volume shutter volume 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAVConfigGetSystemVol</field>
+    <field name="args">(int *volume)</field>
+    <field name="url">group__SceAVConfigUser.html#gaf56864e9563463360221f1e22ba7b14d</field>
+    <field name="keywords">sceAVConfigGetSystemVol</field>
+    <field name="text">Get the system volume volume System volume 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAVConfigSetSystemVol</field>
+    <field name="args">(int volume)</field>
+    <field name="url">group__SceAVConfigUser.html#ga3c4f7ed44d79225a800d26c5a1315129</field>
+    <field name="keywords">sceAVConfigSetSystemVol</field>
+    <field name="text">Set the system volume volume volume that the device will be set to range 0-30 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15109,6 +15157,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">sceDmacMemcpy</field>
+    <field name="args">(void *dst, const void *src, size_t size)</field>
+    <field name="url">group__SceDmacMgrUser.html#gaff25947b3a61e85fd9f38f32b586b9df</field>
+    <field name="keywords">sceDmacMemcpy</field>
+    <field name="text">DMA memcpy dst Destination src Source size Size dst</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceDmacMemset</field>
+    <field name="args">(void *dst, int c, size_t size)</field>
+    <field name="url">group__SceDmacMgrUser.html#ga6c98e1327199debb013ba1ef592fff25</field>
+    <field name="keywords">sceDmacMemset</field>
+    <field name="text">DMA memset dst Destination c Constant size Size dst</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceKernelErrorUser</field>
     <field name="url">group__SceKernelErrorUser.html</field>
@@ -15151,6 +15215,70 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Using this library in your project Include the header file in your project</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelExitProcess</field>
+    <field name="args">(int res)</field>
+    <field name="url">group__SceProcessmgrUser.html#gaf64b2cd0fc96095e3f77dee2dc9a68c3</field>
+    <field name="keywords">sceKernelExitProcess</field>
+    <field name="text">Exit current Process with specified return code res Exit code to return 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelPowerTick</field>
+    <field name="args">(SceKernelPowerTickType type)</field>
+    <field name="url">group__SceProcessmgrUser.html#ga2255f042fe267ddd8b38eee5fa578e33</field>
+    <field name="keywords">sceKernelPowerTick</field>
+    <field name="text">Cancel specified idle timers to prevent entering in power save processing type One of SceKernelPowerTickType 0</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelPowerLock</field>
+    <field name="args">(SceKernelPowerTickType type)</field>
+    <field name="url">group__SceProcessmgrUser.html#ga2cd2b3124993e2b420003f7d9d6dc5a8</field>
+    <field name="keywords">sceKernelPowerLock</field>
+    <field name="text">Locks certain timers from triggering type One of SceKernelPowerTickType 0</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelPowerUnlock</field>
+    <field name="args">(SceKernelPowerTickType type)</field>
+    <field name="url">group__SceProcessmgrUser.html#ga37afabdf671c166288c4b5f787d95734</field>
+    <field name="keywords">sceKernelPowerUnlock</field>
+    <field name="text">Unlocks certain timers type One of SceKernelPowerTickType 0</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetProcessTime</field>
+    <field name="args">(SceKernelSysClock *pSysClock)</field>
+    <field name="url">group__SceProcessmgrUser.html#gace1d546dfe4aaad8846f6deef9e078ea</field>
+    <field name="keywords">sceKernelGetProcessTime</field>
+    <field name="text">Get the process time of the current process type Pointer to a SceKernelSysClock structure which will receive the process time 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetProcessTimeLow</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceProcessmgrUser.html#ga8b6194df9ea98d70eafe870a92dcbb9b</field>
+    <field name="keywords">sceKernelGetProcessTimeLow</field>
+    <field name="text">Get the lower 32 bits part of process time of the current process process time of the current process</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetProcessTimeWide</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed</field>
+    <field name="keywords">sceKernelGetProcessTimeWide</field>
+    <field name="text">Get the process time of the current process process time of the current process</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetProcessId</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceProcessmgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b</field>
+    <field name="keywords">sceKernelGetProcessId</field>
+    <field name="text">Get the process ID of the current process process ID of the current process</field>
+  </doc>
+  <doc>
     <field name="type">enumvalue</field>
     <field name="name">SCE_KERNEL_POWER_TICK_DEFAULT</field>
     <field name="url">group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9</field>
@@ -15186,11 +15314,67 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Using this library in your project Include the header file in your project</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetRandomNumber</field>
+    <field name="args">(void *output, unsigned size)</field>
+    <field name="url">group__SceRngUser.html#ga1ef818068412db341ec21c71ef798196</field>
+    <field name="keywords">sceKernelGetRandomNumber</field>
+    <field name="text">Fills the output buffer with random data output Output buffer size Size of the output buffer 64 bytes maximum 0 on success 0 on error</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceSysmemUser</field>
     <field name="url">group__SceSysmemUser.html</field>
     <field name="keywords">User</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelAllocMemBlock</field>
+    <field name="args">(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockOpt *optp)</field>
+    <field name="url">group__SceSysmemUser.html#gaadd837254e970b8873f199562d8bf51d</field>
+    <field name="keywords">sceKernelAllocMemBlock</field>
+    <field name="text">Allocates a new memory block name Name for the memory block type Type of the memory to allocate size Size of the memory to allocate optp Memory block options SceUID of the memory block on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelFreeMemBlock</field>
+    <field name="args">(SceUID uid)</field>
+    <field name="url">group__SceSysmemUser.html#ga938f751bb400cc057976e3239cbe88e4</field>
+    <field name="keywords">sceKernelFreeMemBlock</field>
+    <field name="text">Frees new memory block uid SceUID of the memory block to free 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetMemBlockBase</field>
+    <field name="args">(SceUID uid, void **basep)</field>
+    <field name="url">group__SceSysmemUser.html#gac6e00c0382a016e86767445edc456d3e</field>
+    <field name="keywords">sceKernelGetMemBlockBase</field>
+    <field name="text">Gets the base address of a memory block uid SceUID of the memory block to free basep Base address of the memory block identified by SceUID 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetModelForCDialog</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceSysmemUser.html#ga307fc7c634175ea2c12894fc961e6ebf</field>
+    <field name="keywords">sceKernelGetModelForCDialog</field>
+    <field name="text">Get the model number of the device A value from SCE_KERNEL_MODEL</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetModel</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceSysmemUser.html#ga7f95c60fa3e6f77dfbe3032ef7a7b082</field>
+    <field name="keywords">sceKernelGetModel</field>
+    <field name="text">Get the model number of the device A value from SCE_KERNEL_MODEL</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceKernelGetFreeMemorySize</field>
+    <field name="args">(SceKernelFreeMemorySizeInfo *info)</field>
+    <field name="url">group__SceSysmemUser.html#gac626e6ef2fd3efdbfce568321dafd3e5</field>
+    <field name="keywords">sceKernelGetFreeMemorySize</field>
+    <field name="text">Get free memory size in bytes info Returned free memory size for different kind of memory block types 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">group</field>
@@ -16252,6 +16436,30 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceMessageDialogUser.html</field>
     <field name="keywords">User</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceMsgDialogProgressBarInc</field>
+    <field name="args">(SceMsgDialogProgressBarTarget target, SceUInt32 delta)</field>
+    <field name="url">group__SceMessageDialogUser.html#gac6d92c1239c9d88c716d0e20fa2273f0</field>
+    <field name="keywords">sceMsgDialogProgressBarInc</field>
+    <field name="text">Increases the rate of the progress bar in the message dialog target Target progress bar delta Progress rate to increase 0 on success 0 on error If NULL is provided as FrameBuf pointer output is blacked out</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceMsgDialogProgressBarSetValue</field>
+    <field name="args">(SceMsgDialogProgressBarTarget target, SceUInt32 rate)</field>
+    <field name="url">group__SceMessageDialogUser.html#ga8abdbe85adc0ceacd99ad6c1961a7f65</field>
+    <field name="keywords">sceMsgDialogProgressBarSetValue</field>
+    <field name="text">Set the progress rate of the progress bar in the message dialog immediately target Target progress bar delta Progress rate to increase 0 on success 0 on error If NULL is provided as FrameBuf pointer output is blacked out</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceMsgDialogProgressBarSetMsg</field>
+    <field name="args">(SceMsgDialogProgressBarTarget target, const SceChar8 *barMsg)</field>
+    <field name="url">group__SceMessageDialogUser.html#gad8d55afceb7185ed6bc55ddfea3f3d54</field>
+    <field name="keywords">sceMsgDialogProgressBarSetMsg</field>
+    <field name="text">Set the string displayed in the progress bar of the message dialog immediately target Target progress bar barMsg The string displayed in the progress bar 0 on success 0 on error If NULL is provided as FrameBuf pointer output is blacked out</field>
   </doc>
   <doc>
     <field name="type">define</field>
@@ -18772,6 +18980,54 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable Load the required module</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">sceVideodecInitLibrary</field>
+    <field name="args">(SceVideodecType codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo)</field>
+    <field name="url">group__SceVideoDecUser.html#ga50d392f054ee702b2ec8b7b7d334fd2d</field>
+    <field name="keywords">sceVideodecInitLibrary</field>
+    <field name="text">codec See initInfo See SceVideodecQueryInitInfoHwAvcdec 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceVideodecTermLibrary</field>
+    <field name="args">(SceVideodecType codec)</field>
+    <field name="url">group__SceVideoDecUser.html#gadd69056c5b1e8d33e02563138c53bc52</field>
+    <field name="keywords">sceVideodecTermLibrary</field>
+    <field name="text">codec See 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAvcdecQueryDecoderMemSize</field>
+    <field name="args">(SceVideodecType codec, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo)</field>
+    <field name="url">group__SceVideoDecUser.html#gafd62bbaf116461d1d4b993f8b818f4af</field>
+    <field name="keywords">sceAvcdecQueryDecoderMemSize</field>
+    <field name="text">codec See query Should be copy from SceVideodecQueryInitInfoHwAvcdec decoderInfo Must be initialized with zeros 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAvcdecCreateDecoder</field>
+    <field name="args">(SceVideodecType codec, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query)</field>
+    <field name="url">group__SceVideoDecUser.html#ga60e790eac99ad60ddd3dae1a2d4ef0ab</field>
+    <field name="keywords">sceAvcdecCreateDecoder</field>
+    <field name="text">codec See decoder Must be initialized frameBuf.size and frameBuf.pBuf query Should be copy from SceVideodecQueryInitInfoHwAvcdec 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAvcdecDeleteDecoder</field>
+    <field name="args">(SceAvcdecCtrl *decoder)</field>
+    <field name="url">group__SceVideoDecUser.html#ga7fd2527071b87b4c11c8c8b8b1d113f1</field>
+    <field name="keywords">sceAvcdecDeleteDecoder</field>
+    <field name="text">decoder A SceAvcdecCtrl decoder initialized with sceAvcdecCreateDecoder 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">sceAvcdecDecode</field>
+    <field name="args">(const SceAvcdecCtrl *decoder, const SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture)</field>
+    <field name="url">group__SceVideoDecUser.html#ga6230244733b5d420f7d8d3659542b2f0</field>
+    <field name="keywords">sceAvcdecDecode</field>
+    <field name="text">decoder au Must set buffer information(es) and be initialized timestamps with 0xFFFFFFFF array_picture Must set numOfElm and pPicture See SceAvcdecArrayPicture 0 on success 0 on error</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceVideoExportUser</field>
     <field name="url">group__SceVideoExportUser.html</field>
@@ -19722,11 +19978,35 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDmacMemcpy</field>
+    <field name="args">(void *dst, const void *src, size_t size)</field>
+    <field name="url">group__SceDmacMgrKernel.html#ga8da6896404f340e7ad537b97b7c98cb1</field>
+    <field name="keywords">ksceDmacMemcpy</field>
+    <field name="text">DMA memcpy dst Destination src Source size Size dst</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceDmacMemset</field>
+    <field name="args">(void *dst, int c, size_t size)</field>
+    <field name="url">group__SceDmacMgrKernel.html#ga3f4cac16f17274f44d49a91e857292ec</field>
+    <field name="keywords">ksceDmacMemset</field>
+    <field name="text">DMA memset dst Destination c Constant size Size dst</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceExcpmgrKernel</field>
     <field name="url">group__SceExcpmgrKernel.html</field>
     <field name="keywords">Kernel</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceExcpmgrGetData</field>
+    <field name="args">(void)</field>
+    <field name="url">group__SceExcpmgrKernel.html#gadf139bc07587266462a82f4bc870b09c</field>
+    <field name="keywords">ksceExcpmgrGetData</field>
+    <field name="text">Get a pointer to SceExcpmgr s internal data This is only used by exception handlers pointer to excpmgr data section</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -19772,11 +20052,67 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelPowerTick</field>
+    <field name="args">(int type)</field>
+    <field name="url">group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4</field>
+    <field name="keywords">ksceKernelPowerTick</field>
+    <field name="text">Cancel specified idle timers to prevent entering in power save processing type One of SceKernelPowerTickType 0</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceSysmemKernel</field>
     <field name="url">group__SceSysmemKernel.html</field>
     <field name="keywords">Kernel</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelAllocMemBlock</field>
+    <field name="args">(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockKernelOpt *optp)</field>
+    <field name="url">group__SceSysmemKernel.html#ga7356ebfe830c508936a751acbe83d71f</field>
+    <field name="keywords">ksceKernelAllocMemBlock</field>
+    <field name="text">Allocates a new memory block name Name for the memory block type Type of the memory to allocate size Size of the memory to allocate optp Memory block options SceUID of the memory block on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelFreeMemBlock</field>
+    <field name="args">(SceUID uid)</field>
+    <field name="url">group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1</field>
+    <field name="keywords">ksceKernelFreeMemBlock</field>
+    <field name="text">Frees new memory block uid SceUID of the memory block to free 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelGetMemBlockBase</field>
+    <field name="args">(SceUID uid, void **basep)</field>
+    <field name="url">group__SceSysmemKernel.html#gac104b3b9eaaddf1bd3e47a2ffc3e19a1</field>
+    <field name="keywords">ksceKernelGetMemBlockBase</field>
+    <field name="text">Gets the base address of a memory block uid SceUID of the memory block basep Base address of the memory block identified by uid 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelGetMemBlockType</field>
+    <field name="args">(SceUID uid, unsigned int *type)</field>
+    <field name="url">group__SceSysmemKernel.html#ga1f0ea472002e3ecf42faed6b24e0c4d7</field>
+    <field name="keywords">ksceKernelGetMemBlockType</field>
+    <field name="text">Gets the memory block type of a memory block uid SceUID of the memory block type Type of the memory block identified by uid 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelFindMemBlockByAddr</field>
+    <field name="args">(const void *addr, SceSize size)</field>
+    <field name="url">group__SceSysmemKernel.html#ga741ace4ab6ca7d836fbdec747dd052aa</field>
+    <field name="keywords">ksceKernelFindMemBlockByAddr</field>
+    <field name="text">Find the SceUID of a memory block addr Base address of the memory block size Size to search for usally set to 0 SceUID of the memory block on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelFindMemBlockByAddrForPid</field>
+    <field name="args">(SceUID pid, const void *addr, SceSize size)</field>
+    <field name="url">group__SceSysmemKernel.html#gaeef2a3961f1b1ea68057a05003113404</field>
+    <field name="keywords">ksceKernelFindMemBlockByAddrForPid</field>
+    <field name="text">Find the SceUID of a memory block for a PID pid PID of the process addr Base address of the memory block size Size to search for usally set to 0 SceUID of the memory block on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -20535,7 +20871,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(int brightness)</field>
     <field name="url">group__ScePowerKernel.html#ga7c723e89d4775a57afd85298ad82d96d</field>
     <field name="keywords">kscePowerSetDisplayBrightness</field>
-    <field name="text">Set the screen brightness for userland counterpart brightness Brightness that the screen will be set to range 21-65536 0 turns off the screen</field>
+    <field name="text">Set the screen brightness sceAVConfigSetDisplayBrightness for userland counterpart brightness Brightness that the screen will be set to range 21-65536 0 turns off the screen</field>
   </doc>
   <doc>
     <field name="type">function</field>

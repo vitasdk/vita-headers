@@ -2,6 +2,7 @@ var group__SceAppUtilUser =
 [
     [ "sceAppUtilAppParamGetInt", "group__SceAppUtilUser.html#ga11d6c9aed6fc3d55e38d35acfdc903b3", null ],
     [ "sceAppUtilBgdlGetStatus", "group__SceAppUtilUser.html#ga531e380a164de46fe0bf10e7c1b1c666", null ],
+    [ "sceAppUtilInit", "group__SceAppUtilUser.html#ga321a1185ec5cb4c83f2860fae0d33b2f", null ],
     [ "sceAppUtilLaunchWebBrowser", "group__SceAppUtilUser.html#ga331a523bd5dfc953cb94cc186e927ef5", null ],
     [ "sceAppUtilLoadSafeMemory", "group__SceAppUtilUser.html#ga0f87c48e4b23f9e578e44e305a38bd26", null ],
     [ "sceAppUtilMusicMount", "group__SceAppUtilUser.html#ga768225668e5530ecf408ff908b56c21d", null ],

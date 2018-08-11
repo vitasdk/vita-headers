@@ -83,14 +83,36 @@ $(document).ready(function(){initNavTree('group__SceExcpmgrKernel.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadf139bc07587266462a82f4bc870b09c"><td class="memItemLeft" align="right" valign="top"><a id="gadf139bc07587266462a82f4bc870b09c"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceExcpmgrGetData</b> (void)</td></tr>
+<tr class="memitem:gadf139bc07587266462a82f4bc870b09c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gadf139bc07587266462a82f4bc870b09c">ksceExcpmgrGetData</a> (void)</td></tr>
+<tr class="memdesc:gadf139bc07587266462a82f4bc870b09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to SceExcpmgr's internal data.  <a href="#gadf139bc07587266462a82f4bc870b09c">More...</a><br /></td></tr>
 <tr class="separator:gadf139bc07587266462a82f4bc870b09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad9bbe98307b693818d3d8db4a358b0b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5">ksceExcpmgrRegisterHandler</a> (SceExcpKind kind, int priority, void *handler)</td></tr>
 <tr class="memdesc:gad9bbe98307b693818d3d8db4a358b0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an exception handler.  <a href="#gad9bbe98307b693818d3d8db4a358b0b5">More...</a><br /></td></tr>
 <tr class="separator:gad9bbe98307b693818d3d8db4a358b0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gadf139bc07587266462a82f4bc870b09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf139bc07587266462a82f4bc870b09c">&sect;&nbsp;</a></span>ksceExcpmgrGetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceExcpmgrGetData </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to SceExcpmgr's internal data. </p>
+<p>This is only used by exception handlers.</p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to excpmgr data section. </dd></dl>
+
+</div>
+</div>
 <a id="gad9bbe98307b693818d3d8db4a358b0b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad9bbe98307b693818d3d8db4a358b0b5">&sect;&nbsp;</a></span>ksceExcpmgrRegisterHandler()</h2>
 

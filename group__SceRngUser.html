@@ -83,10 +83,49 @@ $(document).ready(function(){initNavTree('group__SceRngUser.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1ef818068412db341ec21c71ef798196"><td class="memItemLeft" align="right" valign="top"><a id="ga1ef818068412db341ec21c71ef798196"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetRandomNumber</b> (void *output, unsigned size)</td></tr>
+<tr class="memitem:ga1ef818068412db341ec21c71ef798196"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRngUser.html#ga1ef818068412db341ec21c71ef798196">sceKernelGetRandomNumber</a> (void *output, unsigned size)</td></tr>
+<tr class="memdesc:ga1ef818068412db341ec21c71ef798196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the output buffer with random data.  <a href="#ga1ef818068412db341ec21c71ef798196">More...</a><br /></td></tr>
 <tr class="separator:ga1ef818068412db341ec21c71ef798196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga1ef818068412db341ec21c71ef798196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ef818068412db341ec21c71ef798196">&sect;&nbsp;</a></span>sceKernelGetRandomNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelGetRandomNumber </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills the output buffer with random data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>- Output buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size of the output buffer, 64 bytes maximum</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -28,5 +28,8 @@ var group__SceMessageDialogUser =
     [ "SCE_MSG_DIALOG_SYSMSG_TYPE_TRC_WIFI_REQUIRED_OPERATION", "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556aa1cca54a94c4bce3886f3c89a8ee69b4", null ],
     [ "SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT", "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a4336794f22d4ce63bf92edb04d7efb98", null ],
     [ "SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_CANCEL", "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556aea95a145c9d088bfc3e3c8cabce54dc6", null ],
-    [ "SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_SMALL", "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a0a0baf717752aaffd728d38ada23672f", null ]
+    [ "SCE_MSG_DIALOG_SYSMSG_TYPE_WAIT_SMALL", "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a0a0baf717752aaffd728d38ada23672f", null ],
+    [ "sceMsgDialogProgressBarInc", "group__SceMessageDialogUser.html#gac6d92c1239c9d88c716d0e20fa2273f0", null ],
+    [ "sceMsgDialogProgressBarSetMsg", "group__SceMessageDialogUser.html#gad8d55afceb7185ed6bc55ddfea3f3d54", null ],
+    [ "sceMsgDialogProgressBarSetValue", "group__SceMessageDialogUser.html#ga8abdbe85adc0ceacd99ad6c1961a7f65", null ]
 ];

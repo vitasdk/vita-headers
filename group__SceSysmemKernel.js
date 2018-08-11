@@ -1,5 +1,11 @@
 var group__SceSysmemKernel =
 [
+    [ "ksceKernelAllocMemBlock", "group__SceSysmemKernel.html#ga7356ebfe830c508936a751acbe83d71f", null ],
+    [ "ksceKernelFindMemBlockByAddr", "group__SceSysmemKernel.html#ga741ace4ab6ca7d836fbdec747dd052aa", null ],
+    [ "ksceKernelFindMemBlockByAddrForPid", "group__SceSysmemKernel.html#gaeef2a3961f1b1ea68057a05003113404", null ],
+    [ "ksceKernelFreeMemBlock", "group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1", null ],
+    [ "ksceKernelGetMemBlockBase", "group__SceSysmemKernel.html#gac104b3b9eaaddf1bd3e47a2ffc3e19a1", null ],
+    [ "ksceKernelGetMemBlockType", "group__SceSysmemKernel.html#ga1f0ea472002e3ecf42faed6b24e0c4d7", null ],
     [ "ksceKernelGetObjForUid", "group__SceSysmemKernel.html#gad7f23e557509b77ef911cdc71c6d90ee", null ],
     [ "ksceKernelGetPaddr", "group__SceSysmemKernel.html#gad657fd1dd901bcd61969771210010d36", null ],
     [ "ksceKernelGetPaddrList", "group__SceSysmemKernel.html#ga011edc8ffacf956f1cbfb1b542493f02", null ],

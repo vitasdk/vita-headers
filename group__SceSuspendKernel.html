@@ -83,8 +83,8 @@ $(document).ready(function(){initNavTree('group__SceSuspendKernel.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memItemLeft" align="right" valign="top"><a id="ga6c15db71646bdff1e4fd4ff45c71bcc4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelPowerTick</b> (int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memitem:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">ksceKernelPowerTick</a> (int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memdesc:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <a href="#ga6c15db71646bdff1e4fd4ff45c71bcc4">More...</a><br /></td></tr>
 <tr class="separator:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -117,6 +117,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelPowerTick</b
 <tr><td class="fieldname"><a id="gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650"></a>SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING&#160;</td><td class="fielddoc"><p>Cancel OLED dimming timer. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga6c15db71646bdff1e4fd4ff45c71bcc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c15db71646bdff1e4fd4ff45c71bcc4">&sect;&nbsp;</a></span>ksceKernelPowerTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelPowerTick </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancel specified idle timers to prevent entering in power save processing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 </dd></dl>
 
 </div>
 </div>

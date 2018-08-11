@@ -84,8 +84,8 @@ $(document).ready(function(){initNavTree('group__SceAppUtilUser.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga321a1185ec5cb4c83f2860fae0d33b2f"><td class="memItemLeft" align="right" valign="top"><a id="ga321a1185ec5cb4c83f2860fae0d33b2f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAppUtilInit</b> (<a class="el" href="group__SceAppUtilUser.html#structSceAppUtilInitParam">SceAppUtilInitParam</a> *initParam, <a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBootParam">SceAppUtilBootParam</a> *bootParam)</td></tr>
+<tr class="memitem:ga321a1185ec5cb4c83f2860fae0d33b2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga321a1185ec5cb4c83f2860fae0d33b2f">sceAppUtilInit</a> (<a class="el" href="group__SceAppUtilUser.html#structSceAppUtilInitParam">SceAppUtilInitParam</a> *initParam, <a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBootParam">SceAppUtilBootParam</a> *bootParam)</td></tr>
+<tr class="memdesc:ga321a1185ec5cb4c83f2860fae0d33b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the AppUtil library.  <a href="#ga321a1185ec5cb4c83f2860fae0d33b2f">More...</a><br /></td></tr>
 <tr class="separator:ga321a1185ec5cb4c83f2860fae0d33b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6dba1ab9dfb7bdaca18f02efdd67f6b9"><td class="memItemLeft" align="right" valign="top"><a id="ga6dba1ab9dfb7bdaca18f02efdd67f6b9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga6dba1ab9dfb7bdaca18f02efdd67f6b9">sceAppUtilShutdown</a> ()</td></tr>
@@ -742,6 +742,45 @@ Length of str. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga321a1185ec5cb4c83f2860fae0d33b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga321a1185ec5cb4c83f2860fae0d33b2f">&sect;&nbsp;</a></span>sceAppUtilInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppUtilInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilInitParam">SceAppUtilInitParam</a> *&#160;</td>
+          <td class="paramname"><em>initParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBootParam">SceAppUtilBootParam</a> *&#160;</td>
+          <td class="paramname"><em>bootParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the AppUtil library. </p>
+<p>Call this before any of the other functions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">initParam</td><td>- App init info. Must be initialized with zeros. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bootParam</td><td>- App boot info. Must be initialized with zeros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga1e6c799a6e98de4b3fb72ccf085dce91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1e6c799a6e98de4b3fb72ccf085dce91">&sect;&nbsp;</a></span>sceAppUtilSaveDataSlotGetParam()</h2>
 
