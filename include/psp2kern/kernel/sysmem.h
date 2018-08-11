@@ -431,7 +431,27 @@ int ksceSysrootUseInternalStorage(void);
 
 int ksceDebugPrintf(const char *fmt, ...);
 
-int ksceDebugPrintf2(int unk0, int unk1, const char *fmt, ...);
+struct kernel_message_ctx
+{
+  int hex_value0_hi;
+  int hex_value0_lo;
+  int hex_value1;
+  char* msg0;
+  int num;
+  char* msg1;
+};
+
+// msg_type_flag : 0 or 0xB
+
+int ksceDebugPrintf2(int msg_type_flag, kernel_message_ctx *msg_ctx, const char *fmt, ...);
+	
+int ksceDebugPrintKernelPanic(kernel_message_ctx *msg_ctx, void *some_address);
+
+int ksceDebugPrintfKernelPanic(kernel_message_ctx *msg_ctx, void *some_address, char* format, ...);
+
+int ksceDebugPrintKernelAssertion(int condition, kernel_message_ctx *msg_ctx, void *some_address);
+
+int ksceDebugPrintfKernelAssertion(int unk, int condition, kernel_message_ctx *msg_ctx, int some_address, const char *fmt, ...);
 
 int ksceDebugSetHandlers(int (*func)(void *args, char c), void *args);
 
@@ -441,9 +461,10 @@ void *ksceDebugGetPutcharHandler(void);
 
 int ksceDebugPutchar(int character);
 
+int ksceDebugDisableInfoDump(int flag);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-
