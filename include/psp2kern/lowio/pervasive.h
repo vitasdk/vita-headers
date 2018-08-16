@@ -9,7 +9,7 @@
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
-"C" {
+extern "C" {
 #endif
 
 int kscePervasiveUartClockDisable(int port);
