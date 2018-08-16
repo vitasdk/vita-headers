@@ -431,7 +431,7 @@ int ksceSysrootUseInternalStorage(void);
 
 int ksceDebugPrintf(const char *fmt, ...);
 
-struct kernel_message_ctx
+typedef struct kernel_message_ctx
 {
   int hex_value0_hi;
   int hex_value0_lo;
@@ -439,7 +439,7 @@ struct kernel_message_ctx
   char* msg0;
   int num;
   char* msg1;
-};
+} kernel_message_ctx;
 
 // msg_type_flag : 0 or 0xB
 
