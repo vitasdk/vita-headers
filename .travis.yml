@@ -18,6 +18,9 @@ script:
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
     - export VITASDK=$PWD/vitasdk
     - export PATH=$VITASDK/bin:$PATH
+    - export INCLUDE_DIR=$TRAVIS_BUILD_DIR/include
+    - arm-vita-eabi-gcc -I$INCLUDE_DIR -c $INCLUDE_DIR/vitasdk{,kern}.h
+    - arm-vita-eabi-g++ -I$INCLUDE_DIR -c $INCLUDE_DIR/vitasdk{,kern}.h
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_external_libs.sh
     - cd $VITASDK/arm-vita-eabi/include
     - rm -rf psp2 psp2kern vitasdk vitasdk.h
