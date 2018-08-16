@@ -10691,7 +10691,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">cpu.h</field>
     <field name="url">cpu_8h_source.html#l00032</field>
     <field name="keywords"></field>
-    <field name="text">ksceKernelCpuSaveContext context context context context ksceKernelCpuRestoreContext context cpsr tmp cpsr cpsr x80 tmp tmp tmp context context tmp context cpsr x80 ksceKernelCpuUnrestrictedMemcpy dst src len prev_dacr prev_dacr memcpy dst src len ksceKernelCpuDcacheWritebackRange uintptr_t dst x1F len x1F x1F prev_dacr ksceKernelCpuGetCpuId ksceKernelCpuDisableInterrupts ksceKernelCpuEnableInterrupts flags ksceKernelCpuDcacheWritebackRange ptr len ksceKernelCpuDcacheInvalidateRange ptr len ksceKernelCpuDcacheWritebackInvalidateRange ptr len ksceKernelCpuDcacheInvalidateAll ksceKernelCpuDcacheWritebackAll ksceKernelCpuDcacheWritebackInvalidateAll ksceKernelCpuDcacheAndL2WritebackRange ptr len ksceKernelCpuDcacheAndL2InvalidateRange ptr len ksceKernelCpuDcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuIcacheInvalidateRange ptr len ksceKernelCpuIcacheInvalidateAll ksceKernelCpuIcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuSuspendIntr addr ksceKernelCpuResumeIntr addr prev_state ksceKernelCpuSpinLockIrqSave addr ksceKernelCpuSpinLockIrqRestore addr flags</field>
+    <field name="text">ksceKernelCpuDcacheWritebackRange ptr len ksceKernelCpuSaveContext context context context context ksceKernelCpuRestoreContext context cpsr tmp cpsr cpsr x80 tmp tmp tmp context context tmp context cpsr x80 ksceKernelCpuUnrestrictedMemcpy dst src len prev_dacr prev_dacr i i len i dst i src i ksceKernelCpuDcacheWritebackRange uintptr_t dst x1F len x1F x1F prev_dacr ksceKernelCpuGetCpuId ksceKernelCpuDisableInterrupts ksceKernelCpuEnableInterrupts flags ksceKernelCpuDcacheInvalidateRange ptr len ksceKernelCpuDcacheWritebackInvalidateRange ptr len ksceKernelCpuDcacheInvalidateAll ksceKernelCpuDcacheWritebackAll ksceKernelCpuDcacheWritebackInvalidateAll ksceKernelCpuDcacheAndL2WritebackRange ptr len ksceKernelCpuDcacheAndL2InvalidateRange ptr len ksceKernelCpuDcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuIcacheInvalidateRange ptr len ksceKernelCpuIcacheInvalidateAll ksceKernelCpuIcacheAndL2WritebackInvalidateRange ptr len ksceKernelCpuSuspendIntr addr ksceKernelCpuResumeIntr addr prev_state ksceKernelCpuSpinLockIrqSave addr ksceKernelCpuSpinLockIrqRestore addr flags</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -19804,6 +19804,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceKernelCpuDcacheWritebackRange</field>
+    <field name="args">(const void *ptr, size_t len)</field>
+    <field name="url">group__SceCPUKernel.html#ga020bb04df9d12e27a4ee951858a25879</field>
+    <field name="keywords">ksceKernelCpuDcacheWritebackRange</field>
+    <field name="text">Writeback a range of L1 dcache without L2 ptr The pointer len The length Zero on success</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceKernelCpuGetCpuId</field>
     <field name="args">(void)</field>
     <field name="url">group__SceCPUKernel.html#gab4651268bb4ef22633f5b6055061fd64</field>
@@ -19825,14 +19833,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceCPUKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c</field>
     <field name="keywords">ksceKernelCpuEnableInterrupts</field>
     <field name="text">Enable interrupts flags Interrupt masks Zero on success</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ksceKernelCpuDcacheWritebackRange</field>
-    <field name="args">(const void *ptr, size_t len)</field>
-    <field name="url">group__SceCPUKernel.html#ga020bb04df9d12e27a4ee951858a25879</field>
-    <field name="keywords">ksceKernelCpuDcacheWritebackRange</field>
-    <field name="text">Writeback a range of L1 dcache without L2 ptr The pointer len The length Zero on success</field>
   </doc>
   <doc>
     <field name="type">function</field>
