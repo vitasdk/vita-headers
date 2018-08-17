@@ -8162,8 +8162,14 @@ modules:
         kernel: false
         nid: 0xA7D28DAE
         functions:
+          sce_paf_private_abs: 0x0F297A5E
+          sce_paf_private_atof: 0x9C251354
+          sce_paf_private_atoi: 0x5930D99A
+          sce_paf_private_atol: 0x086AD1FA
+          sce_paf_private_atoll: 0x47B19A87
           sce_paf_private_bcmp: 0x1076722F
           sce_paf_private_bcopy: 0x44C0825D
+          sce_paf_private_bsearch: 0x78AE1C51
           sce_paf_private_bzero: 0xD21442B4
           sce_paf_private_fclose: 0xA005E879
           sce_paf_private_fflush: 0x26A0A5F6
@@ -8185,19 +8191,32 @@ modules:
           sce_paf_private_memmove: 0x01566828
           sce_paf_private_memset: 0xE148AF94
           sce_paf_private_memset2: 0x75ECC54E
+          sce_paf_private_qsort: 0xF7A11753
+          sce_paf_private_rand: 0xC9DACD41
           sce_paf_private_setjmp: 0x2105FFAD
           sce_paf_private_snprintf: 0x4E0D907E
+          sce_paf_private_srand: 0x772DF5A0
           sce_paf_private_strcasecmp: 0x70A459B2
           sce_paf_private_strcat: 0x2344E6F2
           sce_paf_private_strchr: 0x1A22784C
           sce_paf_private_strcmp: 0x5CD08A47
           sce_paf_private_strcpy: 0xA523672C
+          sce_paf_private_strlcat: 0x52A68C8D
+          sce_paf_private_strlcpy: 0x3D1AAC3A
           sce_paf_private_strlen: 0xF5A2AA0C
           sce_paf_private_strncasecmp: 0xA6014289
           sce_paf_private_strncat: 0xD259BEAF
-          sce_paf_private_strncpy: 0xE29DA0BF
           sce_paf_private_strncmp: 0x1E1EA818
+          sce_paf_private_strncpy: 0xE29DA0BF
+          sce_paf_private_strpbrk: 0xA14AB14F
           sce_paf_private_strrchr: 0xFA2C892F
+          sce_paf_private_strspn: 0xB429DD2A
+          sce_paf_private_strtok: 0x15C4B5A4
+          sce_paf_private_strtok_r: 0x0D305F0E
+          sce_paf_private_strtol: 0xDB814C12
+          sce_paf_private_strtoll: 0x2F6B94FF
+          sce_paf_private_strtoul: 0x04FDF238
+          sce_paf_private_strtoull: 0xC05A18CA
           sce_paf_private_swprintf: 0xF67F76D0
           sce_paf_private_tolower: 0xDAC2EE4D
           sce_paf_private_toupper: 0x761184A5
