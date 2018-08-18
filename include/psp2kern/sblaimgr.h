@@ -14,6 +14,7 @@ extern "C" {
 #endif
 
 int ksceSblAimgrGetSMI(void);
+int ksceSblAimgrGetTargetId(void);
 int ksceSblAimgrIsTest(void);
 int ksceSblAimgrIsTool(void);
 int ksceSblAimgrIsDEX(void);
