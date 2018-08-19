@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__SceAudiodecUser.html":[1,2,2,0],
 "group__SceAudioenc.html":[1,2,3],
 "group__SceAudioencUser.html":[1,2,3,0],
 "group__SceAudioencUser.html#ga15b7d618d89f2fe7ef8a8a577a61794c":[1,2,3,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72afbf72d8ffc769ce8e5e0ddd31c9aa113":[1,1,2,0,18],
 "group__SceCommonDialog.html":[1,3,0],
 "group__SceCommonDialogUser.html":[1,3,0,0],
-"group__SceCompat.html":[1,12,6],
-"group__SceCompatUser.html":[1,12,6,0]
+"group__SceCompat.html":[1,12,6]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a9cd113b1cdc656c012b72dc362b0a09c":[1,4,2,0,9],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a9cd113b1cdc656c012b72dc362b0a09c":[1,4,2,1,1,7],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a9cd113b1cdc656c012b72dc362b0a09c":[1,4,2,1,1,25],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a9cd113b1cdc656c012b72dc362b0a09c":[1,4,2,1,9],
@@ -121,8 +122,8 @@ var NAVTREEINDEX4 =
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4":[1,0,5,0,2,5],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4":[1,0,5,0,9],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,1,1,3],
-"group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,1,1,7],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,1,5],
+"group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,1,1,7],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,0,2,3],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,0,2,7],
 "group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405":[1,0,5,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a4336794f22d4ce63bf92edb04d7efb98":[1,3,1,0,2,0],
 "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a4336794f22d4ce63bf92edb04d7efb98":[1,3,1,0,12],
 "group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a6e9d06294309bcfce1c9a99686ea8a20":[1,3,1,0,2,2],
-"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a6e9d06294309bcfce1c9a99686ea8a20":[1,3,1,0,4],
-"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a7733f0e2eab0c3810d7228821d29808e":[1,3,1,0,2,5]
+"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a6e9d06294309bcfce1c9a99686ea8a20":[1,3,1,0,4]
 };

@@ -1,5 +1,6 @@
 var group__SceAppUtilUser =
 [
+    [ "sceAppUtilAppEventParseLiveArea", "group__SceAppUtilUser.html#gafb52626e235f34ba7bf8f485644c28f5", null ],
     [ "sceAppUtilAppParamGetInt", "group__SceAppUtilUser.html#ga11d6c9aed6fc3d55e38d35acfdc903b3", null ],
     [ "sceAppUtilBgdlGetStatus", "group__SceAppUtilUser.html#ga531e380a164de46fe0bf10e7c1b1c666", null ],
     [ "sceAppUtilInit", "group__SceAppUtilUser.html#ga321a1185ec5cb4c83f2860fae0d33b2f", null ],
