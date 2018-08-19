@@ -36,9 +36,11 @@ typedef enum ScePowerCallbackType {
 	SCE_POWER_CB_RESUMING         = 0x00020000,
 	/** indicates the unit is suspending, seems to occur due to inactivity */
 	SCE_POWER_CB_SUSPENDING       = 0x00010000,
-	/**indicates the unit is plugged into an AC outlet*/
+	/** indicates the unit is plugged into an AC outlet */
 	SCE_POWER_CB_AC_POWER         = 0x00001000,
-	/**indicates there is a battery present in the unit**/
+	/** indicates the battery is in low state **/
+	SCE_POWER_CB_LOWBATTERY         = 0x00000100,
+	/** indicates there is a battery present in the unit **/
 	SCE_POWER_CB_BATTERY_EXIST    = 0x00000080
 } ScePowerCallbackType;
 
@@ -81,6 +83,11 @@ SceBool scePowerIsBatteryCharging(void);
  */
 int scePowerGetBatteryLifePercent(void);
 
+/*GPU, WLAN/COM configuration setting */
+#define SCE_POWER_CONFIGURATION_MODE_A			0x00000080U /*GPU clock normal, can use WLAN/COM       */
+#define SCE_POWER_CONFIGURATION_MODE_B			0x00000800U /*GPU clock high,   can't use WLAN/COM     */
+#define SCE_POWER_CONFIGURATION_MODE_C			0x00010880U /*GPU clock high,   can use WLAN/COM,      but...   */
+
 /**
  * Set configuration mode ?
  *
@@ -88,7 +95,7 @@ int scePowerGetBatteryLifePercent(void);
  *
  * @return ?
  */
-int scePowerSetConfigurationMode(int mode);
+int scePowerSetConfigurationMode(int conf);
 
 /**
  * Check if a suspend is required
