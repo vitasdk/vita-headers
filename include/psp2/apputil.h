@@ -158,6 +158,9 @@ int sceAppUtilShutdown();
 //! Receive app event
 int sceAppUtilReceiveAppEvent(SceAppUtilAppEventParam *eventParam);
 
+//! Parse received app event from LiveArea
+int sceAppUtilAppEventParseLiveArea(const SceAppUtilAppEventParam *eventParam, char *buffer);
+
 //! Create savedata slot
 int sceAppUtilSaveDataSlotCreate(unsigned int slotId,
 	SceAppUtilSaveDataSlotParam *param,
