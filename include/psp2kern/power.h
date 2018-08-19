@@ -25,9 +25,11 @@ typedef enum ScePowerCallbackType {
 	SCE_POWER_CB_RESUMING         = 0x00020000,
 	/** indicates the unit is suspending, seems to occur due to inactivity */
 	SCE_POWER_CB_SUSPENDING       = 0x00010000,
-	/**indicates the unit is plugged into an AC outlet*/
+	/** indicates the unit is plugged into an AC outlet */
 	SCE_POWER_CB_AC_POWER         = 0x00001000,
-	/**indicates there is a battery present in the unit**/
+	/** indicates the battery is in low state **/
+	SCE_POWER_CB_LOWBATTERY         = 0x00000100,
+	/** indicates there is a battery present in the unit **/
 	SCE_POWER_CB_BATTERY_EXIST    = 0x00000080
 } ScePowerCallbackType;
 
