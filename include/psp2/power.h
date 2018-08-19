@@ -97,7 +97,7 @@ int scePowerGetBatteryLifePercent(void);
  * Mode B - This mode accelerates the GPU clock frequency. The clock frequency of the GPU core is the "high" clock frequency. The WLAN/COM cannot be used.
  * Mode C - This mode accelerates the GPU clock frequency, and also uses the WLAN/COM. The clock frequency of the GPU core is the "high" clock frequency, and use of the WLAN/COM is possible. The screen (touchscreen) brightness, however, is limited. Also, camera cannot be used.
  *
- * @param conf - The mode to set
+ * @param ::ScePowerConfigurationMode conf - The mode to set
  *
  * @return 0 on success
  */
