@@ -36,18 +36,23 @@ typedef enum ScePowerCallbackType {
 	SCE_POWER_CB_RESUMING         = 0x00020000,
 	/** indicates the unit is suspending, seems to occur due to inactivity */
 	SCE_POWER_CB_SUSPENDING       = 0x00010000,
-	/**indicates the unit is plugged into an AC outlet*/
+	/** indicates the unit is plugged into an AC outlet */
 	SCE_POWER_CB_AC_POWER         = 0x00001000,
-	/**indicates there is a battery present in the unit**/
+	/** indicates the battery is in low state */
+	SCE_POWER_CB_LOWBATTERY       = 0x00000100,
+	/** indicates there is a battery present in the unit */
 	SCE_POWER_CB_BATTERY_EXIST    = 0x00000080
 } ScePowerCallbackType;
 
-/* Callbacks */
+/* GPU, WLAN/COM configuration setting */
+typedef enum ScePowerConfigurationMode {
+	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, WLAN/COM enabled */
+	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high, WLAN/COM disabled */
+	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high, WLAN/COM enabled (drains battery faster) */
+} ScePowerConfigurationMode;
 
 /** Callback function prototype */
 typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo);
-
-/* Prototypes */
 
 /**
  * Registers a ScePower Callback
@@ -82,13 +87,17 @@ SceBool scePowerIsBatteryCharging(void);
 int scePowerGetBatteryLifePercent(void);
 
 /**
- * Set configuration mode ?
+ * Set power configuration mode between:
  *
- * @param mode - The mode to set
+ * Mode A - This is the normal mode at process start-up. The clock frequency of the GPU core is the "normal" clock frequency. The WLAN/COM can be used.
+ * Mode B - This mode accelerates the GPU clock frequency. The clock frequency of the GPU core is the "high" clock frequency. The WLAN/COM cannot be used.
+ * Mode C - This mode accelerates the GPU clock frequency, and also uses the WLAN/COM. The clock frequency of the GPU core is the "high" clock frequency, and use of the WLAN/COM is possible. The screen (touchscreen) brightness, however, is limited. Also, camera cannot be used.
  *
- * @return ?
+ * @param conf One of ::ScePowerConfigurationMode
+ *
+ * @return 0 on success
  */
-int scePowerSetConfigurationMode(int mode);
+int scePowerSetConfigurationMode(int conf);
 
 /**
  * Check if a suspend is required
