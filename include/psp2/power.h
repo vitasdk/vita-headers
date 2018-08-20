@@ -46,9 +46,9 @@ typedef enum ScePowerCallbackType {
 
 /*GPU, WLAN/COM configuration setting */
 typedef enum ScePowerConfigurationMode {
-	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /*GPU clock normal, can use WLAN/COM       */
-	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /*GPU clock high,   can't use WLAN/COM     */
-	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /*GPU clock high,   can use WLAN/COM,      but drains battery faster  */
+	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, can use WLAN/COM */
+	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high,   can't use WLAN/COM */
+	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high,   can use WLAN/COM,  but drains battery faster */
 } ScePowerConfigurationMode;
 
 /* Callbacks */
@@ -97,11 +97,11 @@ int scePowerGetBatteryLifePercent(void);
  * Mode B - This mode accelerates the GPU clock frequency. The clock frequency of the GPU core is the "high" clock frequency. The WLAN/COM cannot be used.
  * Mode C - This mode accelerates the GPU clock frequency, and also uses the WLAN/COM. The clock frequency of the GPU core is the "high" clock frequency, and use of the WLAN/COM is possible. The screen (touchscreen) brightness, however, is limited. Also, camera cannot be used.
  *
- * @param ::ScePowerConfigurationMode conf - The mode to set
+ * @param conf One of ::ScePowerConfigurationMode
  *
  * @return 0 on success
  */
-int scePowerSetConfigurationMode(ScePowerConfigurationMode conf);
+int scePowerSetConfigurationMode(int conf);
 
 /**
  * Check if a suspend is required
