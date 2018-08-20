@@ -38,25 +38,21 @@ typedef enum ScePowerCallbackType {
 	SCE_POWER_CB_SUSPENDING       = 0x00010000,
 	/** indicates the unit is plugged into an AC outlet */
 	SCE_POWER_CB_AC_POWER         = 0x00001000,
-	/** indicates the battery is in low state **/
+	/** indicates the battery is in low state */
 	SCE_POWER_CB_LOWBATTERY       = 0x00000100,
-	/** indicates there is a battery present in the unit **/
+	/** indicates there is a battery present in the unit */
 	SCE_POWER_CB_BATTERY_EXIST    = 0x00000080
 } ScePowerCallbackType;
 
-/*GPU, WLAN/COM configuration setting */
+/* GPU, WLAN/COM configuration setting */
 typedef enum ScePowerConfigurationMode {
 	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, WLAN/COM enabled */
 	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high, WLAN/COM disabled */
 	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high, WLAN/COM enabled (drains battery faster) */
 } ScePowerConfigurationMode;
 
-/* Callbacks */
-
 /** Callback function prototype */
 typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo);
-
-/* Prototypes */
 
 /**
  * Registers a ScePower Callback
