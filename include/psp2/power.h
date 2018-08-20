@@ -46,9 +46,9 @@ typedef enum ScePowerCallbackType {
 
 /*GPU, WLAN/COM configuration setting */
 typedef enum ScePowerConfigurationMode {
-	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, can use WLAN/COM */
-	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high,   can't use WLAN/COM */
-	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high,   can use WLAN/COM,  but drains battery faster */
+	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, WLAN/COM enabled */
+	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high, WLAN/COM disabled */
+	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high, WLAN/COM enabled (drains battery faster) */
 } ScePowerConfigurationMode;
 
 /* Callbacks */
