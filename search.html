@@ -7590,14 +7590,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">power.h</field>
     <field name="url">power_8h_source.html#l00042</field>
     <field name="keywords"></field>
-    <field name="text">SCE_POWER_CB_BATTERY_EXIST ScePowerCallbackType</field>
+    <field name="text">SCE_POWER_CB_LOWBATTERY</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">power.h</field>
-    <field name="url">power_8h_source.html#l00048</field>
+    <field name="url">power_8h_source.html#l00044</field>
     <field name="keywords"></field>
-    <field name="text">void ScePowerCallback notifyId notifyCount powerInfo scePowerRegisterCallback SceUID cbid scePowerUnregisterCallback SceUID cbid SceBool scePowerIsBatteryCharging scePowerGetBatteryLifePercent scePowerSetConfigurationMode mode SceBool scePowerIsSuspendRequired SceBool scePowerIsPowerOnline scePowerGetBatteryLifeTime scePowerGetBatteryRemainCapacity SceBool scePowerIsLowBattery scePowerGetBatteryFullCapacity scePowerGetBatteryTemp scePowerGetBatteryVolt scePowerGetBatterySOH scePowerGetBatteryCycleCount scePowerGetArmClockFrequency scePowerGetBusClockFrequency scePowerGetGpuClockFrequency scePowerGetGpuXbarClockFrequency scePowerRequestColdReset scePowerRequestStandby scePowerRequestSuspend scePowerRequestDisplayOn scePowerRequestDisplayOff scePowerSetArmClockFrequency freq scePowerSetBusClockFrequency freq scePowerSetGpuClockFrequency freq scePowerSetGpuXbarClockFrequency freq scePowerSetUsingWireless SceBool enabled scePowerGetUsingWireless</field>
+    <field name="text">SCE_POWER_CB_BATTERY_EXIST ScePowerCallbackType ScePowerConfigurationMode SCE_POWER_CONFIGURATION_MODE_A U SCE_POWER_CONFIGURATION_MODE_B U SCE_POWER_CONFIGURATION_MODE_C U ScePowerConfigurationMode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">power.h</field>
+    <field name="url">power_8h_source.html#l00055</field>
+    <field name="keywords"></field>
+    <field name="text">void ScePowerCallback notifyId notifyCount powerInfo scePowerRegisterCallback SceUID cbid scePowerUnregisterCallback SceUID cbid SceBool scePowerIsBatteryCharging scePowerGetBatteryLifePercent scePowerSetConfigurationMode conf SceBool scePowerIsSuspendRequired SceBool scePowerIsPowerOnline scePowerGetBatteryLifeTime scePowerGetBatteryRemainCapacity SceBool scePowerIsLowBattery scePowerGetBatteryFullCapacity scePowerGetBatteryTemp scePowerGetBatteryVolt scePowerGetBatterySOH scePowerGetBatteryCycleCount scePowerGetArmClockFrequency scePowerGetBusClockFrequency scePowerGetGpuClockFrequency scePowerGetGpuXbarClockFrequency scePowerRequestColdReset scePowerRequestStandby scePowerRequestSuspend scePowerRequestDisplayOn scePowerRequestDisplayOff scePowerSetArmClockFrequency freq scePowerSetBusClockFrequency freq scePowerSetGpuClockFrequency freq scePowerSetGpuXbarClockFrequency freq scePowerSetUsingWireless SceBool enabled scePowerGetUsingWireless</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -7667,12 +7674,19 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">power.h</field>
     <field name="url">ern_2power_8h_source.html#l00031</field>
     <field name="keywords"></field>
+    <field name="text">SCE_POWER_CB_LOWBATTERY</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">power.h</field>
+    <field name="url">ern_2power_8h_source.html#l00033</field>
+    <field name="keywords"></field>
     <field name="text">SCE_POWER_CB_BATTERY_EXIST ScePowerCallbackType</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">power.h</field>
-    <field name="url">ern_2power_8h_source.html#l00037</field>
+    <field name="url">ern_2power_8h_source.html#l00039</field>
     <field name="keywords"></field>
     <field name="text">void ScePowerCallback notifyId notifyCount powerInfo kscePowerRegisterCallback SceUID cbid kscePowerUnregisterCallback SceUID cbid SceBool kscePowerIsBatteryCharging kscePowerGetBatteryLifePercent SceBool kscePowerIsSuspendRequired SceBool kscePowerIsPowerOnline kscePowerGetBatteryLifeTime kscePowerGetBatteryRemainCapacity SceBool kscePowerIsLowBattery kscePowerGetBatteryFullCapacity kscePowerGetBatteryTemp kscePowerGetBatteryVolt kscePowerGetBatterySOH kscePowerGetBatteryCycleCount kscePowerGetArmClockFrequency kscePowerGetBusClockFrequency kscePowerGetGpuClockFrequency kscePowerGetGpuXbarClockFrequency kscePowerRequestColdReset kscePowerRequestStandby kscePowerRequestSuspend kscePowerRequestDisplayOff kscePowerSetDisplayBrightness brightness kscePowerSetArmClockFrequency freq kscePowerSetBusClockFrequency freq kscePowerSetGpuClockFrequency freq kscePowerSetGpuXbarClockFrequency freq</field>
   </doc>
@@ -16792,10 +16806,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">scePowerSetConfigurationMode</field>
-    <field name="args">(int mode)</field>
-    <field name="url">group__ScePowerUser.html#gaa0d74be80d0753a60a66ddc87ab19596</field>
+    <field name="args">(int conf)</field>
+    <field name="url">group__ScePowerUser.html#ga9c95226b6af51ff89c04b61ee1fe01da</field>
     <field name="keywords">scePowerSetConfigurationMode</field>
-    <field name="text">Set configuration mode mode The mode to set</field>
+    <field name="text">Set power configuration mode between Mode A This is the normal mode at process start-up The clock frequency of the GPU core is the clock frequency The WLAN/COM can be used Mode B This mode accelerates the GPU clock frequency The clock frequency of the GPU core is the clock frequency The WLAN/COM cannot be used Mode C This mode accelerates the GPU clock frequency and also uses the WLAN/COM The clock frequency of the GPU core is the clock frequency and use of the WLAN/COM is possible The screen touchscreen brightness however is limited Also camera cannot be used conf One of 0 on success</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -17053,6 +17067,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aace52bb76f3293e50c167d28c2214f43c</field>
     <field name="keywords"></field>
     <field name="text">indicates the unit is plugged into an AC outlet indicates the unit is plugged into an AC outlet indicates the unit is plugged into an AC outlet indicates the unit is plugged into an AC outlet</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">SCE_POWER_CB_LOWBATTERY</field>
+    <field name="url">group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa13b344e28f36642a9899a85601726967</field>
+    <field name="keywords"></field>
+    <field name="text">indicates the battery is in low state indicates the battery is in low state indicates the battery is in low state indicates the battery is in low state</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>

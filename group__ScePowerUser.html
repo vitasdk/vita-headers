@@ -96,9 +96,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2cab7e5112f52d930d2bd6d45872a8a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#ga2cab7e5112f52d930d2bd6d45872a8a4">scePowerGetBatteryLifePercent</a> (void)</td></tr>
 <tr class="memdesc:ga2cab7e5112f52d930d2bd6d45872a8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns battery life percentage.  <a href="#ga2cab7e5112f52d930d2bd6d45872a8a4">More...</a><br /></td></tr>
 <tr class="separator:ga2cab7e5112f52d930d2bd6d45872a8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0d74be80d0753a60a66ddc87ab19596"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#gaa0d74be80d0753a60a66ddc87ab19596">scePowerSetConfigurationMode</a> (int mode)</td></tr>
-<tr class="memdesc:gaa0d74be80d0753a60a66ddc87ab19596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set configuration mode ?  <a href="#gaa0d74be80d0753a60a66ddc87ab19596">More...</a><br /></td></tr>
-<tr class="separator:gaa0d74be80d0753a60a66ddc87ab19596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c95226b6af51ff89c04b61ee1fe01da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#ga9c95226b6af51ff89c04b61ee1fe01da">scePowerSetConfigurationMode</a> (int conf)</td></tr>
+<tr class="memdesc:ga9c95226b6af51ff89c04b61ee1fe01da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set power configuration mode between:  <a href="#ga9c95226b6af51ff89c04b61ee1fe01da">More...</a><br /></td></tr>
+<tr class="separator:ga9c95226b6af51ff89c04b61ee1fe01da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70b22089c1e4e0ae2c823b026109ad9f"><td class="memItemLeft" align="right" valign="top">SceBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerUser.html#ga70b22089c1e4e0ae2c823b026109ad9f">scePowerIsSuspendRequired</a> (void)</td></tr>
 <tr class="memdesc:ga70b22089c1e4e0ae2c823b026109ad9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a suspend is required.  <a href="#ga70b22089c1e4e0ae2c823b026109ad9f">More...</a><br /></td></tr>
 <tr class="separator:ga70b22089c1e4e0ae2c823b026109ad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +209,8 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </td></tr>
 <tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aace52bb76f3293e50c167d28c2214f43c"></a>SCE_POWER_CB_AC_POWER&#160;</td><td class="fielddoc"><p>indicates the unit is plugged into an AC outlet </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aa13b344e28f36642a9899a85601726967"></a>SCE_POWER_CB_LOWBATTERY&#160;</td><td class="fielddoc"><p>indicates the battery is in low state </p>
+</td></tr>
 <tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aa55d78a7982f8e38cf74e58b915fa9195"></a>SCE_POWER_CB_BATTERY_EXIST&#160;</td><td class="fielddoc"><p>indicates there is a battery present in the unit </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aaf6da1bdc2032d997495c94ed797f42df"></a>SCE_POWER_CB_POWER_SWITCH&#160;</td><td class="fielddoc"><p>indicates the power button was pushed, putting the unit into suspend mode </p>
@@ -224,6 +226,8 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796"></a>SCE_POWER_CB_SUSPENDING&#160;</td><td class="fielddoc"><p>indicates the unit is suspending, seems to occur due to inactivity </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aace52bb76f3293e50c167d28c2214f43c"></a>SCE_POWER_CB_AC_POWER&#160;</td><td class="fielddoc"><p>indicates the unit is plugged into an AC outlet </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aa13b344e28f36642a9899a85601726967"></a>SCE_POWER_CB_LOWBATTERY&#160;</td><td class="fielddoc"><p>indicates the battery is in low state </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga87add7efd8177f03fecc6fdf9233c57aa55d78a7982f8e38cf74e58b915fa9195"></a>SCE_POWER_CB_BATTERY_EXIST&#160;</td><td class="fielddoc"><p>indicates there is a battery present in the unit </p>
 </td></tr>
@@ -775,8 +779,8 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 </div>
 </div>
-<a id="gaa0d74be80d0753a60a66ddc87ab19596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa0d74be80d0753a60a66ddc87ab19596">&sect;&nbsp;</a></span>scePowerSetConfigurationMode()</h2>
+<a id="ga9c95226b6af51ff89c04b61ee1fe01da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c95226b6af51ff89c04b61ee1fe01da">&sect;&nbsp;</a></span>scePowerSetConfigurationMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -785,20 +789,21 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
           <td class="memname">int scePowerSetConfigurationMode </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td class="paramname"><em>conf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set configuration mode ? </p>
+<p>Set power configuration mode between: </p>
+<p>Mode A - This is the normal mode at process start-up. The clock frequency of the GPU core is the "normal" clock frequency. The WLAN/COM can be used. Mode B - This mode accelerates the GPU clock frequency. The clock frequency of the GPU core is the "high" clock frequency. The WLAN/COM cannot be used. Mode C - This mode accelerates the GPU clock frequency, and also uses the WLAN/COM. The clock frequency of the GPU core is the "high" clock frequency, and use of the WLAN/COM is possible. The screen (touchscreen) brightness, however, is limited. Also, camera cannot be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>- The mode to set</td></tr>
+    <tr><td class="paramname">conf</td><td>One of ::ScePowerConfigurationMode</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>? </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
 
 </div>
 </div>
