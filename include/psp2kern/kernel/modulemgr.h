@@ -102,6 +102,8 @@ int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, voi
 int ksceKernelMountBootfs(const char *bootImagePath);
 int ksceKernelUmountBootfs(void);
 
+int ksceKernelSearchModuleByName(const char* module_name, const char* path, int pid);
+
 #ifdef __cplusplus
 }
 #endif
