@@ -20,8 +20,8 @@ script:
     - export PATH=$VITASDK/bin:$PATH
     - export INCLUDE_DIR=$TRAVIS_BUILD_DIR/include
     # Make sure headers are valid
-    - find $INCLUDE_DIR -type f -name "*.h" -exec arm-vita-eabi-gcc -I$INCLUDE_DIR -c {} -o /dev/null \;
-    - find $INCLUDE_DIR -type f -name "*.h" -exec arm-vita-eabi-g++ -I$INCLUDE_DIR -c {} -o /dev/null \;
+    - find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 arm-vita-eabi-gcc -I$INCLUDE_DIR -c FN -o /dev/null
+    - find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 arm-vita-eabi-g++ -I$INCLUDE_DIR -c FN -o /dev/null
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_external_libs.sh
     - cd $VITASDK/arm-vita-eabi/include
     - rm -rf psp2 psp2kern vitasdk vitasdk.h
