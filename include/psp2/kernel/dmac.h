@@ -7,6 +7,8 @@
 #ifndef _PSP2_DMAC_H_
 #define _PSP2_DMAC_H_
 
+#include <stddef.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif

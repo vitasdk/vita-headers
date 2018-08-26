@@ -7,6 +7,8 @@
 #ifndef _PSP2_SHUTTERSOUND_H_
 #define _PSP2_SHUTTERSOUND_H_
 
+#include <stdint.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
