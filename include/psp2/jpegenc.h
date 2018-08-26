@@ -6,6 +6,9 @@
 #ifndef _JPEGENC_H_
 #define _JPEGENC_H_
 
+#include <stdint.h>
+#include <psp2/types.h>
+
 typedef void *SceJpegEncoderContext;
 
 typedef enum SceJpegEncErrorCode {
