@@ -100,12 +100,18 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga2f0aa3506621df6b2f662ab8afbf45da">ksceUdcdStartInternal</a> (const char *driverName, int size, void *args, int bus)</td></tr>
 <tr class="memdesc:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver for an UDCD bus.  <a href="#ga2f0aa3506621df6b2f662ab8afbf45da">More...</a><br /></td></tr>
 <tr class="separator:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a7e7971cddc1d2bdd49e5522d1227c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga7a7e7971cddc1d2bdd49e5522d1227c4">ksceUdcdStartCurrentInternal</a> (int unused, int bus)</td></tr>
+<tr class="memdesc:ga7a7e7971cddc1d2bdd49e5522d1227c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the current USB driver for an UDCD bus.  <a href="#ga7a7e7971cddc1d2bdd49e5522d1227c4">More...</a><br /></td></tr>
+<tr class="separator:ga7a7e7971cddc1d2bdd49e5522d1227c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad76c53134e296b0e3b447c61eee30129"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129">ksceUdcdStop</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gad76c53134e296b0e3b447c61eee30129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a USB driver.  <a href="#gad76c53134e296b0e3b447c61eee30129">More...</a><br /></td></tr>
 <tr class="separator:gad76c53134e296b0e3b447c61eee30129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d48eb630f529d60790a076ef8869a5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga4d48eb630f529d60790a076ef8869a5a">ksceUdcdStopInternal</a> (const char *driverName, int size, void *args, int bus)</td></tr>
 <tr class="memdesc:ga4d48eb630f529d60790a076ef8869a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a USB driver for an UDCD bus.  <a href="#ga4d48eb630f529d60790a076ef8869a5a">More...</a><br /></td></tr>
 <tr class="separator:ga4d48eb630f529d60790a076ef8869a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7de22b5925ad1ff451d4eed90f537d00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga7de22b5925ad1ff451d4eed90f537d00">ksceUdcdStopCurrentInternal</a> (int bus)</td></tr>
+<tr class="memdesc:ga7de22b5925ad1ff451d4eed90f537d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the current USB driver for an UDCD bus.  <a href="#ga7de22b5925ad1ff451d4eed90f537d00">More...</a><br /></td></tr>
+<tr class="separator:ga7de22b5925ad1ff451d4eed90f537d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbdc0991ab0f211224c3bf70598a33e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafbdc0991ab0f211224c3bf70598a33e5">ksceUdcdActivate</a> (unsigned int productId)</td></tr>
 <tr class="memdesc:gafbdc0991ab0f211224c3bf70598a33e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a USB driver.  <a href="#gafbdc0991ab0f211224c3bf70598a33e5">More...</a><br /></td></tr>
 <tr class="separator:gafbdc0991ab0f211224c3bf70598a33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1806,6 +1812,44 @@ unk_10</td>
 
 </div>
 </div>
+<a id="ga7a7e7971cddc1d2bdd49e5522d1227c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a7e7971cddc1d2bdd49e5522d1227c4">&sect;&nbsp;</a></span>ksceUdcdStartCurrentInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdStartCurrentInternal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unused</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts the current USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unused</td><td>- Unused </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga2f0aa3506621df6b2f662ab8afbf45da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2f0aa3506621df6b2f662ab8afbf45da">&sect;&nbsp;</a></span>ksceUdcdStartInternal()</h2>
 
@@ -1896,6 +1940,33 @@ unk_10</td>
     <tr><td class="paramname">driverName</td><td>- Name of the USB driver to stop </td></tr>
     <tr><td class="paramname">size</td><td>- Size of arguments to pass to USB driver start </td></tr>
     <tr><td class="paramname">args</td><td>- Arguments to pass to USB driver start</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga7de22b5925ad1ff451d4eed90f537d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7de22b5925ad1ff451d4eed90f537d00">&sect;&nbsp;</a></span>ksceUdcdStopCurrentInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdStopCurrentInternal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops the current USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
   </table>
   </dd>
 </dl>

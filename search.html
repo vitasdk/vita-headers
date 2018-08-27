@@ -10313,7 +10313,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">udcd.h</field>
     <field name="url">ern_2udcd_8h_source.html#l00384</field>
     <field name="keywords"></field>
-    <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo unk_00 unk_04 unk_08 unk_0C unk_10 driverName SceUdcdWaitParam ksceUdcdWaitBusInitialized timeout bus ksceUdcdStart driverName size args ksceUdcdStartInternal driverName size args bus ksceUdcdStop driverName size args ksceUdcdStopInternal driverName size args bus ksceUdcdActivate productId ksceUdcdActivateInternal productId bus_powered bus ksceUdcdDeactivate ksceUdcdDeactivateInternal bus ksceUdcdGetDeviceState ksceUdcdGetDeviceStateInternal bus ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDeviceInfoInternal SceUdcdDeviceInfo devInfo bus ksceUdcdGetDrvState driverName ksceUdcdGetDrvStateInternal driverName bus ksceUdcdWaitState SceUdcdWaitParam waitParam timeout ksceUdcdWaitStateInternal SceUdcdWaitParam waitParam timeout bus ksceUdcdRegister SceUdcdDriver drv ksceUdcdRegisterInternal SceUdcdDriver drv bus ksceUdcdUnregister SceUdcdDriver drv ksceUdcdUnregisterInternal SceUdcdDriver drv bus ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdClearFIFOInternal SceUdcdEndpoint endp bus ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdStallInternal SceUdcdEndpoint endp bus ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqSendInternal SceUdcdDeviceRequest req bus ksceUdcdReqRecv SceUdcdDeviceRequest req ksceUdcdReqRecvInternal SceUdcdDeviceRequest req bus</field>
+    <field name="text">SceUdcdDriverName size name flags __attribute__ aligned SceUdcdDriverName SceUdcdDeviceInfo info SceUdcdDeviceInfo unk_00 unk_04 unk_08 unk_0C unk_10 driverName SceUdcdWaitParam ksceUdcdWaitBusInitialized timeout bus ksceUdcdStart driverName size args ksceUdcdStartInternal driverName size args bus ksceUdcdStartCurrentInternal unused bus ksceUdcdStop driverName size args ksceUdcdStopInternal driverName size args bus ksceUdcdStopCurrentInternal bus ksceUdcdActivate productId ksceUdcdActivateInternal productId bus_powered bus ksceUdcdDeactivate ksceUdcdDeactivateInternal bus ksceUdcdGetDeviceState ksceUdcdGetDeviceStateInternal bus ksceUdcdGetDeviceInfo SceUdcdDeviceInfo devInfo ksceUdcdGetDeviceInfoInternal SceUdcdDeviceInfo devInfo bus ksceUdcdGetDrvState driverName ksceUdcdGetDrvStateInternal driverName bus ksceUdcdWaitState SceUdcdWaitParam waitParam timeout ksceUdcdWaitStateInternal SceUdcdWaitParam waitParam timeout bus ksceUdcdRegister SceUdcdDriver drv ksceUdcdRegisterInternal SceUdcdDriver drv bus ksceUdcdUnregister SceUdcdDriver drv ksceUdcdUnregisterInternal SceUdcdDriver drv bus ksceUdcdClearFIFO SceUdcdEndpoint endp ksceUdcdClearFIFOInternal SceUdcdEndpoint endp bus ksceUdcdReqCancelAll SceUdcdEndpoint endp ksceUdcdStall SceUdcdEndpoint endp ksceUdcdStallInternal SceUdcdEndpoint endp bus ksceUdcdReqSend SceUdcdDeviceRequest req ksceUdcdReqSendInternal SceUdcdDeviceRequest req bus ksceUdcdReqRecv SceUdcdDeviceRequest req ksceUdcdReqRecvInternal SceUdcdDeviceRequest req bus</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -21208,6 +21208,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceUdcdStartCurrentInternal</field>
+    <field name="args">(int unused, int bus)</field>
+    <field name="url">group__SceUdcdKernel.html#ga7a7e7971cddc1d2bdd49e5522d1227c4</field>
+    <field name="keywords">ksceUdcdStartCurrentInternal</field>
+    <field name="text">Starts the current USB driver for an UDCD bus unused Unused bus UDCD bus default is 2 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceUdcdStop</field>
     <field name="args">(const char *driverName, int size, void *args)</field>
     <field name="url">group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129</field>
@@ -21221,6 +21229,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceUdcdKernel.html#ga4d48eb630f529d60790a076ef8869a5a</field>
     <field name="keywords">ksceUdcdStopInternal</field>
     <field name="text">Stop a USB driver for an UDCD bus driverName Name of the USB driver to stop size Size of arguments to pass to USB driver start args Arguments to pass to USB driver start bus UDCD bus default is 2 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceUdcdStopCurrentInternal</field>
+    <field name="args">(int bus)</field>
+    <field name="url">group__SceUdcdKernel.html#ga7de22b5925ad1ff451d4eed90f537d00</field>
+    <field name="keywords">ksceUdcdStopCurrentInternal</field>
+    <field name="text">Stops the current USB driver for an UDCD bus bus UDCD bus default is 2 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
