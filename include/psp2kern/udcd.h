@@ -436,6 +436,16 @@ int ksceUdcdStart(const char *driverName, int size, void *args);
 int ksceUdcdStartInternal(const char *driverName, int size, void *args, int bus);
 
 /**
+ * Starts the current USB driver for an UDCD bus.
+ *
+ * @param[in] unused - Unused
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdStartCurrentInternal(int unused, int bus);
+
+/**
  * Stop a USB driver.
  *
  * @param driverName - Name of the USB driver to stop
@@ -457,6 +467,15 @@ int ksceUdcdStop(const char *driverName, int size, void *args);
  * @return 0 on success, < 0 on error.
  */
 int ksceUdcdStopInternal(const char *driverName, int size, void *args, int bus);
+
+/**
+ * Stops the current USB driver for an UDCD bus.
+ *
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdStopCurrentInternal(int bus);
 
 /**
  * Activate a USB driver.

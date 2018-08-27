@@ -7872,12 +7872,14 @@ modules:
         nid: 0xBC05A8FB
         functions:
           ksceUdcdUnregister: 0x0DECE532
+          ksceUdcdStopCurrentInternal: 0x0F3595AE
           ksceUdcdStop: 0x1494293B
           ksceUdcdStopInternal: 0x150FD3BB
           ksceUdcdWaitBusInitialized: 0x1C684884
           ksceUdcdReqSend: 0x1ED0E89E
           ksceUdcdReqSendInternal: 0x2E3E622A
           ksceUdcdStall: 0x34079250
+          ksceUdcdStartCurrentInternal: 0x360E95B9
           ksceUdcdReqCancelAll: 0x38787672
           ksceUdcdGetDeviceStateInternal: 0x409DD196
           ksceUdcdGetDeviceInfoInternal: 0x45EB0177
