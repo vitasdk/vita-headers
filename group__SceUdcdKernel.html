@@ -97,21 +97,39 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:gaff5e76ddee35a8a368621fe6e534740c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c">ksceUdcdStart</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gaff5e76ddee35a8a368621fe6e534740c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver.  <a href="#gaff5e76ddee35a8a368621fe6e534740c">More...</a><br /></td></tr>
 <tr class="separator:gaff5e76ddee35a8a368621fe6e534740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga2f0aa3506621df6b2f662ab8afbf45da">ksceUdcdStartInternal</a> (const char *driverName, int size, void *args, int bus)</td></tr>
+<tr class="memdesc:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver for an UDCD bus.  <a href="#ga2f0aa3506621df6b2f662ab8afbf45da">More...</a><br /></td></tr>
+<tr class="separator:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad76c53134e296b0e3b447c61eee30129"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129">ksceUdcdStop</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gad76c53134e296b0e3b447c61eee30129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a USB driver.  <a href="#gad76c53134e296b0e3b447c61eee30129">More...</a><br /></td></tr>
 <tr class="separator:gad76c53134e296b0e3b447c61eee30129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d48eb630f529d60790a076ef8869a5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga4d48eb630f529d60790a076ef8869a5a">ksceUdcdStopInternal</a> (const char *driverName, int size, void *args, int bus)</td></tr>
+<tr class="memdesc:ga4d48eb630f529d60790a076ef8869a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a USB driver for an UDCD bus.  <a href="#ga4d48eb630f529d60790a076ef8869a5a">More...</a><br /></td></tr>
+<tr class="separator:ga4d48eb630f529d60790a076ef8869a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbdc0991ab0f211224c3bf70598a33e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafbdc0991ab0f211224c3bf70598a33e5">ksceUdcdActivate</a> (unsigned int productId)</td></tr>
 <tr class="memdesc:gafbdc0991ab0f211224c3bf70598a33e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a USB driver.  <a href="#gafbdc0991ab0f211224c3bf70598a33e5">More...</a><br /></td></tr>
 <tr class="separator:gafbdc0991ab0f211224c3bf70598a33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3298e11c2a3013e120d505c93703ae44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga3298e11c2a3013e120d505c93703ae44">ksceUdcdActivateInternal</a> (unsigned int productId, unsigned int bus_powered, int bus)</td></tr>
+<tr class="memdesc:ga3298e11c2a3013e120d505c93703ae44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a USB driver for an UDCD bus.  <a href="#ga3298e11c2a3013e120d505c93703ae44">More...</a><br /></td></tr>
+<tr class="separator:ga3298e11c2a3013e120d505c93703ae44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71a1ed3ffe8404b87be819b2080c60cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga71a1ed3ffe8404b87be819b2080c60cb">ksceUdcdDeactivate</a> (void)</td></tr>
 <tr class="memdesc:ga71a1ed3ffe8404b87be819b2080c60cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate USB driver.  <a href="#ga71a1ed3ffe8404b87be819b2080c60cb">More...</a><br /></td></tr>
 <tr class="separator:ga71a1ed3ffe8404b87be819b2080c60cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06c5da24bfd1cab410667cb75d964d63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga06c5da24bfd1cab410667cb75d964d63">ksceUdcdDeactivateInternal</a> (int bus)</td></tr>
+<tr class="memdesc:ga06c5da24bfd1cab410667cb75d964d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate USB driver for an UDCD bus.  <a href="#ga06c5da24bfd1cab410667cb75d964d63">More...</a><br /></td></tr>
+<tr class="separator:ga06c5da24bfd1cab410667cb75d964d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga158c8122feafcc64f46565c0a354ba76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76">ksceUdcdGetDeviceState</a> (void)</td></tr>
 <tr class="memdesc:ga158c8122feafcc64f46565c0a354ba76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB state.  <a href="#ga158c8122feafcc64f46565c0a354ba76">More...</a><br /></td></tr>
 <tr class="separator:ga158c8122feafcc64f46565c0a354ba76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab05fc3ea314abfd4c55d00fa890e112a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gab05fc3ea314abfd4c55d00fa890e112a">ksceUdcdGetDeviceStateInternal</a> (int bus)</td></tr>
+<tr class="memdesc:gab05fc3ea314abfd4c55d00fa890e112a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get USB state for an UDCD bus.  <a href="#gab05fc3ea314abfd4c55d00fa890e112a">More...</a><br /></td></tr>
+<tr class="separator:gab05fc3ea314abfd4c55d00fa890e112a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0bac6115280db28c030b53f5ef597541"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga0bac6115280db28c030b53f5ef597541">ksceUdcdGetDeviceInfo</a> (<a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *devInfo)</td></tr>
 <tr class="memdesc:ga0bac6115280db28c030b53f5ef597541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device information.  <a href="#ga0bac6115280db28c030b53f5ef597541">More...</a><br /></td></tr>
 <tr class="separator:ga0bac6115280db28c030b53f5ef597541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga422191c1e090413f81ae2582ac510ea0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga422191c1e090413f81ae2582ac510ea0">ksceUdcdGetDeviceInfoInternal</a> (<a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *devInfo, int bus)</td></tr>
+<tr class="memdesc:ga422191c1e090413f81ae2582ac510ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device information for an UDCD bus.  <a href="#ga422191c1e090413f81ae2582ac510ea0">More...</a><br /></td></tr>
+<tr class="separator:ga422191c1e090413f81ae2582ac510ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga990e7c4f2cc70b36239b4dfd2cb10fa0">ksceUdcdGetDrvState</a> (const char *driverName)</td></tr>
 <tr class="memdesc:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of a specific USB driver.  <a href="#ga990e7c4f2cc70b36239b4dfd2cb10fa0">More...</a><br /></td></tr>
 <tr class="separator:ga990e7c4f2cc70b36239b4dfd2cb10fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,21 +145,30 @@ struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">Sc
 <tr class="memitem:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadf2a3f2bddec0047b9447c1eba90cd8f">ksceUdcdRegister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
 <tr class="memdesc:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver.  <a href="#gadf2a3f2bddec0047b9447c1eba90cd8f">More...</a><br /></td></tr>
 <tr class="separator:gadf2a3f2bddec0047b9447c1eba90cd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga040fd5c7d2c0211efb6925fb9e981b30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga040fd5c7d2c0211efb6925fb9e981b30">ksceUdcdRegisterToBus</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv, int bus)</td></tr>
-<tr class="memdesc:ga040fd5c7d2c0211efb6925fb9e981b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver to a specific USB bus.  <a href="#ga040fd5c7d2c0211efb6925fb9e981b30">More...</a><br /></td></tr>
-<tr class="separator:ga040fd5c7d2c0211efb6925fb9e981b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a71b1c1b91ad81c308254cea205d566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga3a71b1c1b91ad81c308254cea205d566">ksceUdcdRegisterInternal</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv, int bus)</td></tr>
+<tr class="memdesc:ga3a71b1c1b91ad81c308254cea205d566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a USB driver to a specific USB bus.  <a href="#ga3a71b1c1b91ad81c308254cea205d566">More...</a><br /></td></tr>
+<tr class="separator:ga3a71b1c1b91ad81c308254cea205d566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4b42b6e886000b962fa71ba289e5bb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac4b42b6e886000b962fa71ba289e5bb7">ksceUdcdUnregister</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv)</td></tr>
 <tr class="memdesc:gac4b42b6e886000b962fa71ba289e5bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a USB driver.  <a href="#gac4b42b6e886000b962fa71ba289e5bb7">More...</a><br /></td></tr>
 <tr class="separator:gac4b42b6e886000b962fa71ba289e5bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad57e9bb09b67c172e0044bf1346355df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad57e9bb09b67c172e0044bf1346355df">ksceUdcdUnregisterInternal</a> (<a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *drv, int bus)</td></tr>
+<tr class="memdesc:gad57e9bb09b67c172e0044bf1346355df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a USB driver for an UDCD bus.  <a href="#gad57e9bb09b67c172e0044bf1346355df">More...</a><br /></td></tr>
+<tr class="separator:gad57e9bb09b67c172e0044bf1346355df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8a34ffed9270892c5bf0e7825aa40b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gae8a34ffed9270892c5bf0e7825aa40b1">ksceUdcdClearFIFO</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
 <tr class="memdesc:gae8a34ffed9270892c5bf0e7825aa40b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the FIFO on an endpoint.  <a href="#gae8a34ffed9270892c5bf0e7825aa40b1">More...</a><br /></td></tr>
 <tr class="separator:gae8a34ffed9270892c5bf0e7825aa40b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf46e5bd97883099771da7c0aeea16c8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaf46e5bd97883099771da7c0aeea16c8d">ksceUdcdClearFIFOInternal</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp, int bus)</td></tr>
+<tr class="memdesc:gaf46e5bd97883099771da7c0aeea16c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the FIFO on an endpoint for an UDCD bus.  <a href="#gaf46e5bd97883099771da7c0aeea16c8d">More...</a><br /></td></tr>
+<tr class="separator:gaf46e5bd97883099771da7c0aeea16c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae77811300ecf6782eb2bd68e603d3a81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gae77811300ecf6782eb2bd68e603d3a81">ksceUdcdReqCancelAll</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
 <tr class="memdesc:gae77811300ecf6782eb2bd68e603d3a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel any pending requests on an endpoint.  <a href="#gae77811300ecf6782eb2bd68e603d3a81">More...</a><br /></td></tr>
 <tr class="separator:gae77811300ecf6782eb2bd68e603d3a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65ccedf631899c526483cf2f08034e81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga65ccedf631899c526483cf2f08034e81">ksceUdcdStall</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp)</td></tr>
 <tr class="memdesc:ga65ccedf631899c526483cf2f08034e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stall an endpoint.  <a href="#ga65ccedf631899c526483cf2f08034e81">More...</a><br /></td></tr>
 <tr class="separator:ga65ccedf631899c526483cf2f08034e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb1361f3a2320b11db3ca2d4170e425b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaeb1361f3a2320b11db3ca2d4170e425b">ksceUdcdStallInternal</a> (<a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *endp, int bus)</td></tr>
+<tr class="memdesc:gaeb1361f3a2320b11db3ca2d4170e425b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stall an endpoint for an UDCD bus.  <a href="#gaeb1361f3a2320b11db3ca2d4170e425b">More...</a><br /></td></tr>
+<tr class="separator:gaeb1361f3a2320b11db3ca2d4170e425b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gafcf76b28b30c36a612e3eed344fa3aa4">ksceUdcdReqSend</a> (<a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a> *req)</td></tr>
 <tr class="memdesc:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a send request (IN from host pov)  <a href="#gafcf76b28b30c36a612e3eed344fa3aa4">More...</a><br /></td></tr>
 <tr class="separator:gafcf76b28b30c36a612e3eed344fa3aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1111,6 +1138,51 @@ unk_10</td>
 
 </div>
 </div>
+<a id="ga3298e11c2a3013e120d505c93703ae44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3298e11c2a3013e120d505c93703ae44">&sect;&nbsp;</a></span>ksceUdcdActivateInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdActivateInternal </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>productId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bus_powered</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate a USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">pid</td><td>- Product ID for the default USB Driver </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus_powered</td><td>- Enable USB bus power </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="gae8a34ffed9270892c5bf0e7825aa40b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae8a34ffed9270892c5bf0e7825aa40b1">&sect;&nbsp;</a></span>ksceUdcdClearFIFO()</h2>
 
@@ -1138,6 +1210,44 @@ unk_10</td>
 
 </div>
 </div>
+<a id="gaf46e5bd97883099771da7c0aeea16c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf46e5bd97883099771da7c0aeea16c8d">&sect;&nbsp;</a></span>ksceUdcdClearFIFOInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdClearFIFOInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
+          <td class="paramname"><em>endp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the FIFO on an endpoint for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">endp</td><td>- The endpoint to clear </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
 <a id="ga71a1ed3ffe8404b87be819b2080c60cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga71a1ed3ffe8404b87be819b2080c60cb">&sect;&nbsp;</a></span>ksceUdcdDeactivate()</h2>
 
@@ -1155,6 +1265,33 @@ unk_10</td>
 </div><div class="memdoc">
 
 <p>Deactivate USB driver. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga06c5da24bfd1cab410667cb75d964d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06c5da24bfd1cab410667cb75d964d63">&sect;&nbsp;</a></span>ksceUdcdDeactivateInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdDeactivateInternal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deactivate USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
@@ -1186,6 +1323,44 @@ unk_10</td>
 
 </div>
 </div>
+<a id="ga422191c1e090413f81ae2582ac510ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga422191c1e090413f81ae2582ac510ea0">&sect;&nbsp;</a></span>ksceUdcdGetDeviceInfoInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdGetDeviceInfoInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *&#160;</td>
+          <td class="paramname"><em>devInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device information for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">devInfo</td><td>- Device information </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga158c8122feafcc64f46565c0a354ba76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga158c8122feafcc64f46565c0a354ba76">&sect;&nbsp;</a></span>ksceUdcdGetDeviceState()</h2>
 
@@ -1203,6 +1378,33 @@ unk_10</td>
 </div><div class="memdoc">
 
 <p>Get USB state. </p>
+<dl class="section return"><dt>Returns</dt><dd>One or more <a class="el" href="group__SceUdcdUser.html#gaffd43136d3fc38126bd4a36392c5f3b9" title="USB Status. ">SceUdcdStatus</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gab05fc3ea314abfd4c55d00fa890e112a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab05fc3ea314abfd4c55d00fa890e112a">&sect;&nbsp;</a></span>ksceUdcdGetDeviceStateInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdGetDeviceStateInternal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get USB state for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>One or more <a class="el" href="group__SceUdcdUser.html#gaffd43136d3fc38126bd4a36392c5f3b9" title="USB Status. ">SceUdcdStatus</a>. </dd></dl>
 
 </div>
@@ -1299,14 +1501,14 @@ unk_10</td>
 
 </div>
 </div>
-<a id="ga040fd5c7d2c0211efb6925fb9e981b30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga040fd5c7d2c0211efb6925fb9e981b30">&sect;&nbsp;</a></span>ksceUdcdRegisterToBus()</h2>
+<a id="ga3a71b1c1b91ad81c308254cea205d566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a71b1c1b91ad81c308254cea205d566">&sect;&nbsp;</a></span>ksceUdcdRegisterInternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceUdcdRegisterToBus </td>
+          <td class="memname">int ksceUdcdRegisterInternal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
           <td class="paramname"><em>drv</em>, </td>
@@ -1521,6 +1723,44 @@ unk_10</td>
 
 </div>
 </div>
+<a id="gaeb1361f3a2320b11db3ca2d4170e425b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb1361f3a2320b11db3ca2d4170e425b">&sect;&nbsp;</a></span>ksceUdcdStallInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdStallInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdEndpoint">SceUdcdEndpoint</a> *&#160;</td>
+          <td class="paramname"><em>endp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stall an endpoint for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">endp</td><td>- The endpoint to stall </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
 <a id="gaff5e76ddee35a8a368621fe6e534740c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaff5e76ddee35a8a368621fe6e534740c">&sect;&nbsp;</a></span>ksceUdcdStart()</h2>
 
@@ -1559,6 +1799,58 @@ unk_10</td>
     <tr><td class="paramname">driverName</td><td>- Name of the USB driver to start </td></tr>
     <tr><td class="paramname">size</td><td>- Size of arguments to pass to USB driver start </td></tr>
     <tr><td class="paramname">args</td><td>- Arguments to pass to USB driver start</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga2f0aa3506621df6b2f662ab8afbf45da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f0aa3506621df6b2f662ab8afbf45da">&sect;&nbsp;</a></span>ksceUdcdStartInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdStartInternal </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>driverName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start a USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">driverName</td><td>- Name of the USB driver to start </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size</td><td>- Size of arguments to pass to USB driver start </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">args</td><td>- Arguments to pass to USB driver start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1611,6 +1903,58 @@ unk_10</td>
 
 </div>
 </div>
+<a id="ga4d48eb630f529d60790a076ef8869a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d48eb630f529d60790a076ef8869a5a">&sect;&nbsp;</a></span>ksceUdcdStopInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdStopInternal </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>driverName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop a USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">driverName</td><td>- Name of the USB driver to stop </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size</td><td>- Size of arguments to pass to USB driver start </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">args</td><td>- Arguments to pass to USB driver start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="gac4b42b6e886000b962fa71ba289e5bb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac4b42b6e886000b962fa71ba289e5bb7">&sect;&nbsp;</a></span>ksceUdcdUnregister()</h2>
 
@@ -1631,6 +1975,44 @@ unk_10</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drv</td><td>- Pointer to a filled out USB driver</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gad57e9bb09b67c172e0044bf1346355df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad57e9bb09b67c172e0044bf1346355df">&sect;&nbsp;</a></span>ksceUdcdUnregisterInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUdcdUnregisterInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSceUdcdDriver.html">SceUdcdDriver</a> *&#160;</td>
+          <td class="paramname"><em>drv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a USB driver for an UDCD bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">drv</td><td>- Pointer to a filled out USB driver </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bus</td><td>- UDCD bus (default is 2)</td></tr>
   </table>
   </dd>
 </dl>
