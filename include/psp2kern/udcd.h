@@ -424,6 +424,18 @@ int ksceUdcdWaitBusInitialized(unsigned int timeout, int bus);
 int ksceUdcdStart(const char *driverName, int size, void *args);
 
 /**
+ * Start a USB driver for an UDCD bus.
+ *
+ * @param driverName - Name of the USB driver to start
+ * @param size - Size of arguments to pass to USB driver start
+ * @param args - Arguments to pass to USB driver start
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdStartInternal(const char *driverName, int size, void *args, int bus);
+
+/**
  * Stop a USB driver.
  *
  * @param driverName - Name of the USB driver to stop
@@ -435,6 +447,18 @@ int ksceUdcdStart(const char *driverName, int size, void *args);
 int ksceUdcdStop(const char *driverName, int size, void *args);
 
 /**
+ * Stop a USB driver for an UDCD bus.
+ *
+ * @param driverName - Name of the USB driver to stop
+ * @param size - Size of arguments to pass to USB driver start
+ * @param args - Arguments to pass to USB driver start
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdStopInternal(const char *driverName, int size, void *args, int bus);
+
+/**
  * Activate a USB driver.
  *
  * @param pid - Product ID for the default USB Driver
@@ -444,11 +468,31 @@ int ksceUdcdStop(const char *driverName, int size, void *args);
 int ksceUdcdActivate(unsigned int productId);
 
 /**
+ * Activate a USB driver for an UDCD bus.
+ *
+ * @param pid - Product ID for the default USB Driver
+ * @param[in] bus_powered - Enable USB bus power
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdActivateInternal(unsigned int productId, unsigned int bus_powered, int bus);
+
+/**
  * Deactivate USB driver.
  *
  * @return 0 on success, < 0 on error.
  */
 int ksceUdcdDeactivate(void);
+
+/**
+ * Deactivate USB driver for an UDCD bus.
+ *
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceUdcdDeactivateInternal(int bus);
 
 /**
  * Get USB state
@@ -458,6 +502,15 @@ int ksceUdcdDeactivate(void);
 int ksceUdcdGetDeviceState(void);
 
 /**
+ * Get USB state for an UDCD bus
+ *
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return One or more ::SceUdcdStatus.
+ */
+int ksceUdcdGetDeviceStateInternal(int bus);
+
+/**
  * Get device information
  *
  * @param[out] devInfo - Device information
@@ -465,6 +518,16 @@ int ksceUdcdGetDeviceState(void);
  * @return 0 on success, < 0 on error.
 */
 int ksceUdcdGetDeviceInfo(SceUdcdDeviceInfo *devInfo);
+
+/**
+ * Get device information for an UDCD bus
+ *
+ * @param[out] devInfo - Device information
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceUdcdGetDeviceInfoInternal(SceUdcdDeviceInfo *devInfo, int bus);
 
 /**
  * Get state of a specific USB driver
@@ -523,7 +586,7 @@ int ksceUdcdRegister(SceUdcdDriver *drv);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceUdcdRegisterToBus(SceUdcdDriver *drv, int bus);
+int ksceUdcdRegisterInternal(SceUdcdDriver *drv, int bus);
 
 /**
  * Unregister a USB driver
@@ -535,6 +598,16 @@ int ksceUdcdRegisterToBus(SceUdcdDriver *drv, int bus);
 int ksceUdcdUnregister(SceUdcdDriver *drv);
 
 /**
+ * Unregister a USB driver for an UDCD bus
+ *
+ * @param drv - Pointer to a filled out USB driver
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdUnregisterInternal(SceUdcdDriver *drv, int bus);
+
+/**
  * Clear the FIFO on an endpoint
  *
  * @param endp - The endpoint to clear
@@ -542,6 +615,16 @@ int ksceUdcdUnregister(SceUdcdDriver *drv);
  * @return 0 on success, < 0 on error
  */
 int ksceUdcdClearFIFO(SceUdcdEndpoint *endp);
+
+/**
+ * Clear the FIFO on an endpoint for an UDCD bus
+ *
+ * @param endp - The endpoint to clear
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdClearFIFOInternal(SceUdcdEndpoint *endp, int bus);
 
 /**
  * Cancel any pending requests on an endpoint.
@@ -560,6 +643,16 @@ int ksceUdcdReqCancelAll(SceUdcdEndpoint *endp);
  * @return 0 on success, < 0 on error
  */
 int ksceUdcdStall(SceUdcdEndpoint *endp);
+
+/**
+ * Stall an endpoint for an UDCD bus
+ *
+ * @param endp - The endpoint to stall
+ * @param[in] bus - UDCD bus (default is 2)
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceUdcdStallInternal(SceUdcdEndpoint *endp, int bus);
 
 /**
  * Queue a send request (IN from host pov)

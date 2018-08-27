@@ -7873,6 +7873,7 @@ modules:
         functions:
           ksceUdcdUnregister: 0x0DECE532
           ksceUdcdStop: 0x1494293B
+          ksceUdcdStopInternal: 0x150FD3BB
           ksceUdcdWaitBusInitialized: 0x1C684884
           ksceUdcdReqSend: 0x1ED0E89E
           ksceUdcdReqSendInternal: 0x2E3E622A
@@ -7883,17 +7884,23 @@ modules:
           ksceUdcdRegister: 0x4E55244D
           ksceUdcdActivate: 0x4FDEA423
           ksceUdcdGetDrvStateInternal: 0x512F77BC
-          ksceUdcdRegisterToBus: 0x64675918
+          ksceUdcdRegisterInternal: 0x64675918
+          ksceUdcdUnregisterInternal: 0x6CCD152E
           ksceUdcdWaitStateInternal: 0x7AD0C8D1
           ksceUdcdDeactivate: 0x8AE87657
+          ksceUdcdStartInternal: 0x90F8BCAE
+          ksceUdcdActivateInternal: 0x9119247B
+          ksceUdcdStallInternal: 0x9B44DF29
           ksceUdcdClearFIFO: 0x9F53D64D
           ksceUdcdStart: 0x9FD733EA
+          ksceUdcdClearFIFOInternal: 0xA35F3BAF
           ksceUdcdGetDrvState: 0xC0CA5DDB
           ksceUdcdReqRecv: 0xC60A74B2
           ksceUdcdReqRecvInternal: 0x175E6179
           ksceUdcdWaitState: 0xD03017C0
           ksceUdcdGetDeviceState: 0xE054B5E4
           ksceUdcdGetDeviceInfo: 0xFBEA3703
+          ksceUdcdDeactivateInternal: 0xFDC10F93
   SceUsbstorVStorDriver:
     nid: 0x1150E326
     libraries:
