@@ -463,42 +463,42 @@ int ksceDebugPutchar(int character);
 
 int ksceDebugDisableInfoDump(int flag);
 
-#define SCE_SHA1_BLOCK_SIZE		64
-#define SCE_SHA1_DIGEST_SIZE		20
-#define SCE_SHA224_BLOCK_SIZE		64
-#define SCE_SHA224_DIGEST_SIZE		28
-#define SCE_SHA256_BLOCK_SIZE		64
-#define SCE_SHA256_DIGEST_SIZE		32
+#define SCE_SHA1_BLOCK_SIZE             64
+#define SCE_SHA1_DIGEST_SIZE            20
+#define SCE_SHA224_BLOCK_SIZE           64
+#define SCE_SHA224_DIGEST_SIZE          28
+#define SCE_SHA256_BLOCK_SIZE           64
+#define SCE_SHA256_DIGEST_SIZE          32
 
 typedef struct SceSha1Context {
-	uint32_t	h[5];
-	uint16_t	usRemains;
-	uint16_t	usComputed;
-	uint64_t	ullTotalLen;
-	char		buf[SCE_SHA1_BLOCK_SIZE];
-	char		result[SCE_SHA1_DIGEST_SIZE];
-	uint32_t	pad;
+  uint32_t h[5];
+  uint16_t usRemains;
+  uint16_t usComputed;
+  uint64_t ullTotalLen;
+  char buf[SCE_SHA1_BLOCK_SIZE];
+  char result[SCE_SHA1_DIGEST_SIZE];
+  uint32_t pad;
 } SceSha1Context;
 
 typedef struct SceSha224Context {
-	uint32_t	h[8];
-	uint32_t	pad;
-	uint16_t	usRemains;
-	uint16_t	usComputed;
-	uint64_t	ullTotalLen;
-	char		buf[SCE_SHA224_BLOCK_SIZE];
-	char		result[SCE_SHA224_DIGEST_SIZE];
-	uint32_t	pad2;
+  uint32_t h[8];
+  uint32_t pad;
+  uint16_t usRemains;
+  uint16_t usComputed;
+  uint64_t ullTotalLen;
+  char buf[SCE_SHA224_BLOCK_SIZE];
+  char result[SCE_SHA224_DIGEST_SIZE];
+  uint32_t pad2;
 } SceSha224Context;
 
 typedef struct SceSha256Context {
-	uint32_t	h[8];
-	uint32_t	pad;
-	uint16_t	usRemains;
-	uint16_t	usComputed;
-	uint64_t	ullTotalLen;
-	char		buf[SCE_SHA256_BLOCK_SIZE];
-	char		result[SCE_SHA256_DIGEST_SIZE];
+  uint32_t h[8];
+  uint32_t pad;
+  uint16_t usRemains;
+  uint16_t usComputed;
+  uint64_t ullTotalLen;
+  char buf[SCE_SHA256_BLOCK_SIZE];
+  char result[SCE_SHA256_DIGEST_SIZE];
 } SceSha256Context;
 
 int ksceSha1BlockInit(SceSha1Context *pContext);
