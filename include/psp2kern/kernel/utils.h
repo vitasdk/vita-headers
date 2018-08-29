@@ -3,6 +3,7 @@
  * \usage{psp2kern/kernel/utils.h,SceKernelUtilsForDriver_stub}
  */
 
+
 #ifndef _PSP2_KERNEL_UTILS_H_
 #define _PSP2_KERNEL_UTILS_H_
 
