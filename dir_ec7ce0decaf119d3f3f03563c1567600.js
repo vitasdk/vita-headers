@@ -8,5 +8,6 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "processmgr.h", "ern_2kernel_2processmgr_8h_source.html", null ],
     [ "suspend.h", "suspend_8h_source.html", null ],
     [ "sysmem.h", "ern_2kernel_2sysmem_8h_source.html", null ],
-    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h_source.html", null ]
+    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h_source.html", null ],
+    [ "utils.h", "psp2kern_2kernel_2utils_8h_source.html", null ]
 ];

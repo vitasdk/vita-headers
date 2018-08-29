@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"pss_8h_source.html":[3,0,0,0,38],
+"pvf_8h_source.html":[3,0,0,0,39],
+"registrymgr_8h_source.html":[3,0,0,0,40],
 "rng_8h_source.html":[3,0,0,0,1,7],
 "rtc_8h_source.html":[3,0,0,0,41],
 "sblacmgr_8h_source.html":[3,0,0,0,42],
@@ -20,9 +23,9 @@ var NAVTREEINDEX10 =
 "usbd_8h_source.html":[3,0,0,0,52],
 "usbserial_8h_source.html":[3,0,0,0,53],
 "usbstorvstor_8h_source.html":[3,0,0,0,54],
-"utils_8h_source.html":[3,0,0,2,0],
 "videodec_8h_source.html":[3,0,0,0,55],
 "videoexport_8h_source.html":[3,0,0,0,56],
+"vitasdk_2utils_8h_source.html":[3,0,0,2,0],
 "vitasdk_8h_source.html":[3,0,0,3],
 "vitasdkkern_8h_source.html":[3,0,0,4],
 "vshbridge_8h_source.html":[3,0,0,0,57]
