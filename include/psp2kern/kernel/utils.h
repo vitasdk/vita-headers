@@ -66,6 +66,10 @@ int ksceSha256BlockUpdate(SceSha256Context *pContext, const void *plain, uint32_
 int ksceSha256BlockResult(SceSha256Context *pContext, char *digest);
 int ksceSha256Digest(const void *plain, uint32_t len, char *result);
 
+int ksceHmacSha1Digest(const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result);
+int ksceHmacSha224Digest(const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result);
+int ksceHmacSha256Digest(const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result);
+
 #ifdef __cplusplus
 }
 #endif
