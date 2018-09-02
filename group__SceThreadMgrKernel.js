@@ -41,6 +41,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelDeleteMutex", "group__SceThreadMgrKernel.html#ga864708a9f14755ed84efedb759ab03a6", null ],
     [ "ksceKernelDeleteSema", "group__SceThreadMgrKernel.html#gaa7e9ab55b646fd2afac24968feb6c690", null ],
     [ "ksceKernelDeleteThread", "group__SceThreadMgrKernel.html#ga4a6a0829e34df8f407e6615e5bcff43e", null ],
+    [ "ksceKernelEnqueueWorkQueue", "group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca", null ],
     [ "ksceKernelExitDeleteThread", "group__SceThreadMgrKernel.html#gaa746c64f423d2fcba6cc76ed132035fe", null ],
     [ "ksceKernelExitThread", "group__SceThreadMgrKernel.html#ga374f8554b36f0b172844ee3193021099", null ],
     [ "ksceKernelGetCallbackCount", "group__SceThreadMgrKernel.html#gadd611f34b3c5f8ae11a29ce67ef768f8", null ],

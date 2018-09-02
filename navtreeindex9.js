@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"group__SceThreadMgrUser.html#ga57b23ac4e988e2f461812aa06cb7928a":[1,6,7,0,62],
 "group__SceThreadMgrUser.html#ga58fa38bffbe03d73b6a33a9df6623757":[1,6,7,0,17],
 "group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7":[1,6,7,0,49],
 "group__SceThreadMgrUser.html#ga5afb3a756d7bf79e4bc7f2ad16b4dcfe":[1,6,7,0,67],
@@ -75,12 +76,12 @@ var NAVTREEINDEX9 =
 "group__SceTouchUser.html#gacb91e7a44b807be507daf8073f4712a6":[1,1,1,0,2],
 "group__SceTouchUser.html#gad25526d77de5c574b210193093a693db":[1,1,1,0,4],
 "group__SceTouchUser.html#gadb2690976483db65dc1dd6196f8941bd":[1,1,1,0,10],
-"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,6],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,2,0],
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,6],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,5],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,2,1],
-"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,7],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,2,2],
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,7],
 "group__SceTypes.html":[1,11,0],
 "group__SceTypesKernel.html":[1,11,0,1],
 "group__SceTypesUser.html":[1,11,0,0],
@@ -213,8 +214,8 @@ var NAVTREEINDEX9 =
 "i2c_8h_source.html":[3,0,0,1,3,2],
 "iftu_8h_source.html":[3,0,0,1,3,3],
 "ime__dialog_8h_source.html":[3,0,0,0,20],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h_source.html":[3,0,0,1,2,3],
 "io_2devctl_8h_source.html":[3,0,0,0,0,0],
 "io_2dirent_8h_source.html":[3,0,0,0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "power_8h_source.html":[3,0,0,0,34],
 "promoterutil_8h_source.html":[3,0,0,0,35],
 "psp2kern_2kernel_2utils_8h_source.html":[3,0,0,1,2,9],
-"pspnet__adhoc_8h_source.html":[3,0,0,0,36],
-"pspnet__adhocctl_8h_source.html":[3,0,0,0,37]
+"pspnet__adhoc_8h_source.html":[3,0,0,0,36]
 };

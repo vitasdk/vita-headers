@@ -5931,7 +5931,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00762</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info</field>
+    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info int SceKernelWorkQueueWorkFunction args ksceKernelEnqueueWorkQueue SceUID uid name SceKernelWorkQueueWorkFunction work args</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -20688,6 +20688,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d</field>
     <field name="keywords">ksceKernelGetFaultingProcess</field>
     <field name="text">Call from an abort handler to get info on faulting process info Output info Zero on success</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelEnqueueWorkQueue</field>
+    <field name="args">(SceUID uid, const char *name, SceKernelWorkQueueWorkFunction work, void *args)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca</field>
+    <field name="keywords">ksceKernelEnqueueWorkQueue</field>
+    <field name="text">Enqueue work to a workqueue uid UID of the workqueue 0x10023 for the SceKernelGlobalWorkQueue name Name of the work to enqueue work Work function to enqueue args Argument to pass to the work function Zero on success</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
