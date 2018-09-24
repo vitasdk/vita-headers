@@ -74,11 +74,11 @@ int ksceHmacSha256Digest(const unsigned char *key, uint32_t key_len, const void 
  * @param[out] dst - dst buf
  * @param[in] dst_size - Size when decompressed
  * @param[in] src - Gzip compressed data
- * @param[in] unk - set 0
+ * @param[out] crc32 - crc32 when decompressed
  *
  * @return dst_size on success, < 0 on error.
  */
-int ksceGzipDecompress(void *dst, int dst_size, const void *src, int unk);
+int ksceGzipDecompress(void *dst, int dst_size, const void *src, int *crc32);
 
 #ifdef __cplusplus
 }
