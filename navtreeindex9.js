@@ -78,10 +78,10 @@ var NAVTREEINDEX9 =
 "group__SceTouchUser.html#gadb2690976483db65dc1dd6196f8941bd":[1,1,1,0,10],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,2,0],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7":[1,1,1,0,6],
-"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,5],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,2,1],
-"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,2,2],
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758":[1,1,1,0,5],
 "group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,7],
+"group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a60ab295a1586005154cf1c5bb888336f":[1,1,1,0,2,2],
 "group__SceTypes.html":[1,11,0],
 "group__SceTypesKernel.html":[1,11,0,1],
 "group__SceTypesUser.html":[1,11,0,0],
@@ -187,6 +187,7 @@ var NAVTREEINDEX9 =
 "group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533":[1,9,3,0,0],
 "group__SceUtils.html":[1,6,15],
 "group__SceUtilsKernel.html":[1,6,15,0],
+"group__SceUtilsKernel.html#ga94fafc4c8bc8694c291a4e5ef02d3027":[1,6,15,0,0],
 "group__SceVideoDec.html":[1,0,6],
 "group__SceVideoDecUser.html":[1,0,6,0],
 "group__SceVideoDecUser.html#ga50d392f054ee702b2ec8b7b7d334fd2d":[1,0,6,0,4],
@@ -214,8 +215,8 @@ var NAVTREEINDEX9 =
 "i2c_8h_source.html":[3,0,0,1,3,2],
 "iftu_8h_source.html":[3,0,0,1,3,3],
 "ime__dialog_8h_source.html":[3,0,0,0,20],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intrmgr_8h_source.html":[3,0,0,1,2,3],
 "io_2devctl_8h_source.html":[3,0,0,0,0,0],
 "io_2dirent_8h_source.html":[3,0,0,0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "photoexport_8h_source.html":[3,0,0,0,33],
 "power_8h_source.html":[3,0,0,0,34],
 "promoterutil_8h_source.html":[3,0,0,0,35],
-"psp2kern_2kernel_2utils_8h_source.html":[3,0,0,1,2,9],
-"pspnet__adhoc_8h_source.html":[3,0,0,0,36]
+"psp2kern_2kernel_2utils_8h_source.html":[3,0,0,1,2,9]
 };

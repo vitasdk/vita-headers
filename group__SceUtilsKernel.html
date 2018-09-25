@@ -129,6 +129,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceHmacSha224Digest</
 <tr class="memitem:ga5ad54bf9e9e56bcbf7e5917dd0fd10dd"><td class="memItemLeft" align="right" valign="top"><a id="ga5ad54bf9e9e56bcbf7e5917dd0fd10dd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceHmacSha256Digest</b> (const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result)</td></tr>
 <tr class="separator:ga5ad54bf9e9e56bcbf7e5917dd0fd10dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94fafc4c8bc8694c291a4e5ef02d3027"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUtilsKernel.html#ga94fafc4c8bc8694c291a4e5ef02d3027">ksceGzipDecompress</a> (void *dst, int dst_size, const void *src, int *crc32)</td></tr>
+<tr class="separator:ga94fafc4c8bc8694c291a4e5ef02d3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -332,6 +334,57 @@ usRemains</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga94fafc4c8bc8694c291a4e5ef02d3027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94fafc4c8bc8694c291a4e5ef02d3027">&sect;&nbsp;</a></span>ksceGzipDecompress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceGzipDecompress </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dst_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>crc32</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>- dst buf </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst_size</td><td>- Size when decompressed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- Gzip compressed data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">crc32</td><td>- crc32 when decompressed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>dst_size on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
