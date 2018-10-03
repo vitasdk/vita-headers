@@ -187,7 +187,7 @@ var NAVTREEINDEX9 =
 "group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533":[1,9,3,0,0],
 "group__SceUtils.html":[1,6,15],
 "group__SceUtilsKernel.html":[1,6,15,0],
-"group__SceUtilsKernel.html#ga94fafc4c8bc8694c291a4e5ef02d3027":[1,6,15,0,0],
+"group__SceUtilsKernel.html#ga2f3b7c140d2fe8cf566ebfe10a18db3f":[1,6,15,0,0],
 "group__SceVideoDec.html":[1,0,6],
 "group__SceVideoDecUser.html":[1,0,6,0],
 "group__SceVideoDecUser.html#ga50d392f054ee702b2ec8b7b7d334fd2d":[1,0,6,0,4],
