@@ -2,11 +2,11 @@ version: 2
 firmware: 3.60
 modules:
   SceAppMgr:
-    nid: 0xDBB29DB7
+    nid: 0x4F1547C9
     libraries:
-      SceAppMgrForDriver:
+      SceLibMonoBridge:
         kernel: true
-        nid: 0xDCE180F8
+        nid: 0xD46680E4
         functions:
           ksceAppMgrAcInstGetAcdirParam: 0x474AABDF
           ksceAppMgrBgdlSetQueueStatus: 0x5B1BE482
