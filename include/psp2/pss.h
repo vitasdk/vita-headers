@@ -12,7 +12,17 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+  
+typedef struct PSM_handle {
+uint32_t unk0;
+uint32_t unk1;
+uint32_t filesz;
+uint32_t unk3;
 
+} PSM_handle;
+
+int pss_crypto_open_p(PSM_handle *handle, char *path);
+char *pss_crypto_read_p(PSM_handle *handle, int ctx)
 void *pss_code_mem_alloc(SceSize *);
 void pss_code_mem_flush_icache(const void *, SceSize);
 void pss_code_mem_lock(void);
