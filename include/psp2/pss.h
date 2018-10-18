@@ -13,13 +13,12 @@
 extern "C" {
 #endif
   
-typedef struct PSM_handle {
-uint32_t unk0;
-uint32_t unk1;
-uint32_t filesz;
-uint32_t unk3;
-
-} PSM_handle;
+typedef struct ScePssCryptoHandle {
+  uint32_t unk0;
+  uint32_t unk1;
+  uint32_t filesz;
+  uint32_t unk3;
+} ScePssCryptoHandle;
 
 int pss_crypto_open_p(PSM_handle *handle, char *path);
 char *pss_crypto_read_p(PSM_handle *handle, int ctx)
