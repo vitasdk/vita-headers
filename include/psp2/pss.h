@@ -21,7 +21,7 @@ typedef struct ScePssCryptoHandle {
 } ScePssCryptoHandle;
 
 int pss_crypto_open_p(ScePssCryptoHandle *handle, char *path);
-char *pss_crypto_read_p(ScePssCryptoHandle *handle, int unk)
+char *pss_crypto_read_p(ScePssCryptoHandle *handle, int unk);
 void *pss_code_mem_alloc(SceSize *);
 void pss_code_mem_flush_icache(const void *, SceSize);
 void pss_code_mem_lock(void);
