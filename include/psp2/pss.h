@@ -13,7 +13,7 @@
 extern "C" {
 #endif
   
-typedef struct ScePssCryptoHandle {
+typedef struct ScePssHandle {
   uint32_t unk0;
   uint32_t unk1;
   uint32_t filesz;
