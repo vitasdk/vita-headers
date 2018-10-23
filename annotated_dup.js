@@ -238,6 +238,7 @@ var annotated_dup =
     [ "SceNpCommunicationId", "group__SceNetCheckDialogUser.html#structSceNpCommunicationId", "group__SceNetCheckDialogUser_structSceNpCommunicationId" ],
     [ "SceObjectBase", "group__SceSysmemKernel.html#structSceObjectBase", "group__SceSysmemKernel_structSceObjectBase" ],
     [ "ScePromoterUtilityLAUpdate", "group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate", "group__ScePromoterUtilUser_structScePromoterUtilityLAUpdate" ],
+    [ "ScePssCryptoHandle", "group__ScePssUser.html#structScePssCryptoHandle", "group__ScePssUser_structScePssCryptoHandle" ],
     [ "ScePvfCacheKey", "group__ScePvfUser.html#structScePvfCacheKey", "group__ScePvfUser_structScePvfCacheKey" ],
     [ "ScePvfCacheSystemInterface", "group__ScePvfUser.html#structScePvfCacheSystemInterface", "group__ScePvfUser_structScePvfCacheSystemInterface" ],
     [ "ScePvfCharInfo", "group__ScePvfUser.html#structScePvfCharInfo", "group__ScePvfUser_structScePvfCharInfo" ],
