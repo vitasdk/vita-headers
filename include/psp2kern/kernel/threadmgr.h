@@ -852,7 +852,7 @@ typedef int (*SceKernelWorkQueueWorkFunction)(void *args);
 int ksceKernelEnqueueWorkQueue(SceUID uid, const char *name, SceKernelWorkQueueWorkFunction work, void *args);
 
 /**
- * @brief       Retreive a list of all threads belonging to a process.
+ * @brief       Retrieve a list of all threads belonging to a process.
  * @param[in]   pid         The process to query.
  * @param[out]  ids         The list of thread ids. Can be NULL if output is not required.
  * @param[in]   n           The max number of thread ids to copy out.
