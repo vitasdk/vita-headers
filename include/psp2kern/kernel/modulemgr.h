@@ -104,6 +104,13 @@ int ksceKernelUmountBootfs(void);
 
 int ksceKernelSearchModuleByName(const char* module_name, const char* path, int pid);
 
+/**
+ * @brief Get the main module for a given process.
+ * @param pid The process to query.
+ * @return the UID of the module else < 0 for an error.
+ */
+SceUID ksceKernelGetProcessMainModule(SceUID pid);
+
 #ifdef __cplusplus
 }
 #endif
