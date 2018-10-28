@@ -250,9 +250,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelDeleteFastMu
 <tr class="memitem:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca">ksceKernelEnqueueWorkQueue</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, const char *name, SceKernelWorkQueueWorkFunction work, void *args)</td></tr>
 <tr class="memdesc:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue work to a workqueue.  <a href="#ga8e723f29b9444f2c43a1f752208dd4ca">More...</a><br /></td></tr>
 <tr class="separator:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7922b417466daa37ba0514784cf7ef0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b">ksceKernelGetProcessMainThread</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid)</td></tr>
+<tr class="memdesc:ga7922b417466daa37ba0514784cf7ef0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the main thread for a given process.  <a href="#ga7922b417466daa37ba0514784cf7ef0b">More...</a><br /></td></tr>
+<tr class="separator:ga7922b417466daa37ba0514784cf7ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde">ksceKernelGetThreadIdList</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *ids, int n, int *copy_count)</td></tr>
 <tr class="memdesc:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of all threads belonging to a process.  <a href="#ga55cc6fa2f5de0aa59f4d293601f9cbde">More...</a><br /></td></tr>
 <tr class="separator:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9d9fe958fb029ef0d695029e1e8866b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gad9d9fe958fb029ef0d695029e1e8866b">ksceKernelGetThreadCpuRegisters</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrKernel.html#structThreadCpuRegisters">ThreadCpuRegisters</a> *registers)</td></tr>
+<tr class="memdesc:gad9d9fe958fb029ef0d695029e1e8866b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the state of the registers for a suspended thread.  <a href="#gad9d9fe958fb029ef0d695029e1e8866b">More...</a><br /></td></tr>
+<tr class="separator:gad9d9fe958fb029ef0d695029e1e8866b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -1080,6 +1086,162 @@ Size of the structure (i.e. <p>sizeof(SceKernelCallbackInfo)) </p>
 threadId</td>
 <td class="fielddoc">
 The thread id associated with the callback. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structArmCpuRegisters" id="structArmCpuRegisters"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structArmCpuRegisters">&sect;&nbsp;</a></span>ArmCpuRegisters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ArmCpuRegisters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Structure representing all ARM registers. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaffd7db75d103f9ba2c045e58f0bc4013"></a>uint32_t</td>
+<td class="fieldname">
+cpsr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3f8727c1502236ab1938fce23e83f720"></a>uint32_t</td>
+<td class="fieldname">
+lr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad20d7370acdf57b3956827439884f2cc"></a>uint32_t</td>
+<td class="fieldname">
+pc</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga798dec466e01795bde71f23a292aadb3"></a>uint32_t</td>
+<td class="fieldname">
+r0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga005cf420008223a655e6bbd42562c098"></a>uint32_t</td>
+<td class="fieldname">
+r1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga01db90281b3e6134397f65e24e07662e"></a>uint32_t</td>
+<td class="fieldname">
+r10</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab1ad01bf2fa08e522dffc37ef00d13e1"></a>uint32_t</td>
+<td class="fieldname">
+r11</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab92b15734800d72b04f04f7908bc57ee"></a>uint32_t</td>
+<td class="fieldname">
+r12</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga13c8bd9ec3fe35eb6ee9c96c97a710c3"></a>uint32_t</td>
+<td class="fieldname">
+r2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga22c03b47e17c314c36102412d2877ba8"></a>uint32_t</td>
+<td class="fieldname">
+r3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4b50d3c3732de567f27846c95a631d3d"></a>uint32_t</td>
+<td class="fieldname">
+r4</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9928436683c96833f45024d5b145cc99"></a>uint32_t</td>
+<td class="fieldname">
+r5</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4733039556bacb1204a030e1f314e2e3"></a>uint32_t</td>
+<td class="fieldname">
+r6</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga69e716b88806f135b60eb531fe46d981"></a>uint32_t</td>
+<td class="fieldname">
+r7</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab17cb83de9a0e666929ab4ccc3ec222b"></a>uint32_t</td>
+<td class="fieldname">
+r8</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9e865a444cde486debcc2fe0a04ad372"></a>uint32_t</td>
+<td class="fieldname">
+r9</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae1e703290188f63589292c809c698d19"></a>uint32_t</td>
+<td class="fieldname">
+sp</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga0709be21650de1a943bcb06cc5d20583"></a>uint32_t</td>
+<td class="fieldname">
+unk</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structThreadCpuRegisters" id="structThreadCpuRegisters"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structThreadCpuRegisters">&sect;&nbsp;</a></span>ThreadCpuRegisters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ThreadCpuRegisters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Structure containing a threads register states. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gab3a99efdc78d90fe283bbf65d926c938"></a><a class="el" href="group__SceThreadMgrKernel.html#structArmCpuRegisters">ArmCpuRegisters</a></td>
+<td class="fieldname">
+kernel</td>
+<td class="fielddoc">
+Set of registers used for kernel mode. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga0e9bce44698bdc663ab350d46fee75a3"></a><a class="el" href="group__SceThreadMgrKernel.html#structArmCpuRegisters">ArmCpuRegisters</a></td>
+<td class="fieldname">
+user</td>
+<td class="fielddoc">
+Set of registers used for user mode. </td></tr>
 </table>
 
 </div>
@@ -2069,6 +2231,33 @@ The thread id associated with the callback. </td></tr>
 
 </div>
 </div>
+<a id="ga7922b417466daa37ba0514784cf7ef0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7922b417466daa37ba0514784cf7ef0b">&sect;&nbsp;</a></span>ksceKernelGetProcessMainThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelGetProcessMainThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the main thread for a given process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The process id to query for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The thread UID on success, else &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga57c16d113cd78bd9f1bd5548c5ef0b28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga57c16d113cd78bd9f1bd5548c5ef0b28">&sect;&nbsp;</a></span>ksceKernelGetSystemTimeWide()</h2>
 
@@ -2087,6 +2276,45 @@ The thread id associated with the callback. </td></tr>
 
 <p>Get the system time (wide version) </p>
 <dl class="section return"><dt>Returns</dt><dd>The system time </dd></dl>
+
+</div>
+</div>
+<a id="gad9d9fe958fb029ef0d695029e1e8866b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9d9fe958fb029ef0d695029e1e8866b">&sect;&nbsp;</a></span>ksceKernelGetThreadCpuRegisters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetThreadCpuRegisters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structThreadCpuRegisters">ThreadCpuRegisters</a> *&#160;</td>
+          <td class="paramname"><em>registers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query the state of the registers for a suspended thread. </p>
+<p>The registers returned are the user/kernel set for the requested thread. It's not certain that user/kernel is correct representation, instead it could be current/exception. The thread provided must be suspended for this function to succeed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>The thread to query. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">registers</td><td>The set of registers belonging to the thread. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success, else &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

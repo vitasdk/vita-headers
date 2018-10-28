@@ -101,6 +101,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelGetProcessLo
 <tr class="memitem:ga4938582172aa2d1dc159e38783372640"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga4938582172aa2d1dc159e38783372640">ksceKernelProcessResume</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid)</td></tr>
 <tr class="memdesc:ga4938582172aa2d1dc159e38783372640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume a suspended process.  <a href="#ga4938582172aa2d1dc159e38783372640">More...</a><br /></td></tr>
 <tr class="separator:ga4938582172aa2d1dc159e38783372640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8302d3b5b5672b34cc71f5dc80ac37f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f">ksceKernelGetProcessStatus</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, int *status)</td></tr>
+<tr class="memdesc:gad8302d3b5b5672b34cc71f5dc80ac37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of a given process.  <a href="#gad8302d3b5b5672b34cc71f5dc80ac37f">More...</a><br /></td></tr>
+<tr class="separator:gad8302d3b5b5672b34cc71f5dc80ac37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelProcessInfo" id="structSceKernelProcessInfo"></a>
@@ -163,6 +166,44 @@ unk3</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gad8302d3b5b5672b34cc71f5dc80ac37f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8302d3b5b5672b34cc71f5dc80ac37f">&sect;&nbsp;</a></span>ksceKernelGetProcessStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetProcessStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the status of a given process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The process ID to query. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>The bit field status of the process. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga4938582172aa2d1dc159e38783372640"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4938582172aa2d1dc159e38783372640">&sect;&nbsp;</a></span>ksceKernelProcessResume()</h2>
 

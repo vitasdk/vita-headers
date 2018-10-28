@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "_SceBtHidRequest", "group__SceBtKernel.html#struct__SceBtHidRequest", "group__SceBtKernel_struct__SceBtHidRequest" ],
     [ "_sceNpDrmPackageDecrypt_opt", "group__SceNpDrmPackageUser.html#struct__sceNpDrmPackageDecrypt__opt", "group__SceNpDrmPackageUser_struct__sceNpDrmPackageDecrypt__opt" ],
+    [ "ArmCpuRegisters", "group__SceThreadMgrKernel.html#structArmCpuRegisters", "group__SceThreadMgrKernel_structArmCpuRegisters" ],
     [ "kernel_message_ctx", "group__SceSysmemKernel.html#structkernel__message__ctx", "group__SceSysmemKernel_structkernel__message__ctx" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
@@ -298,6 +299,7 @@ var annotated_dup =
     [ "SceVideodecQueryInitInfo", "group__SceVideoDecUser.html#unionSceVideodecQueryInitInfo", "group__SceVideoDecUser_unionSceVideodecQueryInitInfo" ],
     [ "SceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser.html#structSceVideodecQueryInitInfoHwAvcdec", "group__SceVideoDecUser_structSceVideodecQueryInitInfoHwAvcdec" ],
     [ "SceVideodecTimeStamp", "group__SceVideoDecUser.html#structSceVideodecTimeStamp", "group__SceVideoDecUser_structSceVideodecTimeStamp" ],
+    [ "ThreadCpuRegisters", "group__SceThreadMgrKernel.html#structThreadCpuRegisters", "group__SceThreadMgrKernel_structThreadCpuRegisters" ],
     [ "VideoExportInputParam", "group__SceVideoExportUser.html#structVideoExportInputParam", "group__SceVideoExportUser_structVideoExportInputParam" ],
     [ "VideoExportOutputParam", "group__SceVideoExportUser.html#structVideoExportOutputParam", "group__SceVideoExportUser_structVideoExportOutputParam" ]
 ];

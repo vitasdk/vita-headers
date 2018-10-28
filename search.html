@@ -5014,7 +5014,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">processmgr.h</field>
     <field name="url">ern_2kernel_2processmgr_8h_source.html#l00023</field>
     <field name="keywords"></field>
-    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetProcessLocalStorageAddrForPid SceUID pid key out_addr create_if_doesnt_exist ksceKernelProcessResume SceUID pid</field>
+    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetProcessLocalStorageAddrForPid SceUID pid key out_addr create_if_doesnt_exist ksceKernelProcessResume SceUID pid ksceKernelGetProcessStatus SceUID pid status</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -5938,7 +5938,35 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00762</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info int SceKernelWorkQueueWorkFunction args ksceKernelEnqueueWorkQueue SceUID uid name SceKernelWorkQueueWorkFunction work args ksceKernelGetThreadIdList SceUID pid SceUID ids n copy_count</field>
+    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info int SceKernelWorkQueueWorkFunction args ksceKernelEnqueueWorkQueue SceUID uid name SceKernelWorkQueueWorkFunction work args SceUID ksceKernelGetProcessMainThread SceUID pid ksceKernelGetThreadIdList SceUID pid SceUID ids n copy_count</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00872</field>
+    <field name="keywords"></field>
+    <field name="text">ArmCpuRegisters uint32_t r0 uint32_t r1 uint32_t r2 uint32_t r3 uint32_t r4 uint32_t r5 uint32_t r6 uint32_t r7 uint32_t r8 uint32_t r9 uint32_t r10 uint32_t r11 uint32_t r12 uint32_t sp uint32_t lr uint32_t pc uint32_t cpsr uint32_t unk ArmCpuRegisters</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00895</field>
+    <field name="keywords"></field>
+    <field name="text">ThreadCpuRegisters</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00898</field>
+    <field name="keywords"></field>
+    <field name="text">ArmCpuRegisters user</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00901</field>
+    <field name="keywords"></field>
+    <field name="text">ArmCpuRegisters kernel ThreadCpuRegisters ksceKernelGetThreadCpuRegisters SceUID thid ThreadCpuRegisters registers</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -20154,6 +20182,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Resume a suspended process pid The process to resume Zero on success 0 on error</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelGetProcessStatus</field>
+    <field name="args">(SceUID pid, int *status)</field>
+    <field name="url">group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f</field>
+    <field name="keywords">ksceKernelGetProcessStatus</field>
+    <field name="text">Get the status of a given process pid The process ID to query status The bit field status of the process Zero on success 0 on error</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceSuspendKernel</field>
     <field name="url">group__SceSuspendKernel.html</field>
@@ -20744,11 +20780,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ksceKernelGetProcessMainThread</field>
+    <field name="args">(SceUID pid)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b</field>
+    <field name="keywords">ksceKernelGetProcessMainThread</field>
+    <field name="text">Get the main thread for a given process pid The process id to query for The thread UID on success else 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ksceKernelGetThreadIdList</field>
     <field name="args">(SceUID pid, SceUID *ids, int n, int *copy_count)</field>
     <field name="url">group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde</field>
     <field name="keywords">ksceKernelGetThreadIdList</field>
     <field name="text">Retrieve a list of all threads belonging to a process pid The process to query ids The list of thread ids Can be NULL if output is not required n The max number of thread ids to copy out copy_count The number of thread ids copied The number of threads within the process else 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelGetThreadCpuRegisters</field>
+    <field name="args">(SceUID thid, ThreadCpuRegisters *registers)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gad9d9fe958fb029ef0d695029e1e8866b</field>
+    <field name="keywords">ksceKernelGetThreadCpuRegisters</field>
+    <field name="text">Query the state of the registers for a suspended thread The registers returned are the user/kernel set for the requested thread It s not certain that user/kernel is correct representation instead it could be current/exception The thread provided must be suspended for this function to succeed thid The thread to query registers The set of registers belonging to the thread Zero on success else 0 on error</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
@@ -20764,6 +20816,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714</field>
     <field name="keywords">SceKernelCallbackFunction</field>
     <field name="text">Callback function prototype</field>
+  </doc>
+  <doc>
+    <field name="type">struct</field>
+    <field name="name">ThreadCpuRegisters</field>
+    <field name="url">group__SceThreadMgrKernel.html#structThreadCpuRegisters</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">group</field>
