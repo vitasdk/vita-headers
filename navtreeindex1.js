@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"group__SceAudioUser.html#ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977":[1,2,1,0,5,0],
+"group__SceAudioUser.html#ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977":[1,2,1,0,11],
+"group__SceAudiodec.html":[1,2,2],
 "group__SceAudiodecUser.html":[1,2,2,0],
 "group__SceAudioenc.html":[1,2,3],
 "group__SceAudioencUser.html":[1,2,3,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72ab26b5386411275c252508b54daf66382":[1,1,2,0,19],
 "group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72ab26b5386411275c252508b54daf66382":[1,1,2,0,0,0],
 "group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72afbf72d8ffc769ce8e5e0ddd31c9aa113":[1,1,2,0,0,2],
-"group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72afbf72d8ffc769ce8e5e0ddd31c9aa113":[1,1,2,0,18],
-"group__SceCommonDialog.html":[1,3,0],
-"group__SceCommonDialogUser.html":[1,3,0,0],
-"group__SceCompat.html":[1,12,6]
+"group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72afbf72d8ffc769ce8e5e0ddd31c9aa113":[1,1,2,0,18]
 };

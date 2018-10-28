@@ -377,6 +377,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">source</field>
+    <field name="name">appmgr.h</field>
+    <field name="url">ern_2appmgr_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">ksceAppMgrKillProcess SceUID pid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
     <field name="name">apputil.h</field>
     <field name="url">apputil_8h_source.html#l00001</field>
     <field name="keywords"></field>
@@ -5931,7 +5938,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00762</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info int SceKernelWorkQueueWorkFunction args ksceKernelEnqueueWorkQueue SceUID uid name SceKernelWorkQueueWorkFunction work args</field>
+    <field name="text">SceKernelIdListType SCE_KERNEL_TMID_Thread SCE_KERNEL_TMID_Semaphore SCE_KERNEL_TMID_EventFlag SCE_KERNEL_TMID_Mbox SCE_KERNEL_TMID_Vpl SCE_KERNEL_TMID_Fpl SCE_KERNEL_TMID_Mpipe SCE_KERNEL_TMID_Callback SCE_KERNEL_TMID_ThreadEventHandler SCE_KERNEL_TMID_Alarm SCE_KERNEL_TMID_VTimer SCE_KERNEL_TMID_SleepThread SCE_KERNEL_TMID_DelayThread SCE_KERNEL_TMID_SuspendThread SCE_KERNEL_TMID_DormantThread SceKernelIdListType SceKernelIdListType ksceKernelGetThreadmgrUIDClass SceUID uid SceInt64 ksceKernelGetSystemTimeWide ksceKernelGetThreadTLSAddr SceUID thid key ksceKernelGetTLSAddr key SceUID ksceKernelGetProcessId ksceKernelRunWithStack stack_size to_call args ksceKernelGetFaultingProcess SceKernelFaultingProcessInfo info int SceKernelWorkQueueWorkFunction args ksceKernelEnqueueWorkQueue SceUID uid name SceKernelWorkQueueWorkFunction work args ksceKernelGetThreadIdList SceUID pid SceUID ids n copy_count</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -19138,6 +19145,21 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">group</field>
+    <field name="name">SceAppMgrKernel</field>
+    <field name="url">group__SceAppMgrKernel.html</field>
+    <field name="keywords">Kernel</field>
+    <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceAppMgrKillProcess</field>
+    <field name="args">(SceUID pid)</field>
+    <field name="url">group__SceAppMgrKernel.html#ga391e603061dc444eb22e848dc8a73692</field>
+    <field name="keywords">ksceAppMgrKillProcess</field>
+    <field name="text">Kill a process pid The process to kill Zero on success else 0</field>
+  </doc>
+  <doc>
+    <field name="type">group</field>
     <field name="name">SceJpegEncKernel</field>
     <field name="url">group__SceJpegEncKernel.html</field>
     <field name="keywords">Kernel</field>
@@ -20719,6 +20741,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca</field>
     <field name="keywords">ksceKernelEnqueueWorkQueue</field>
     <field name="text">Enqueue work to a workqueue uid UID of the workqueue 0x10023 for the SceKernelGlobalWorkQueue name Name of the work to enqueue work Work function to enqueue args Argument to pass to the work function Zero on success</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelGetThreadIdList</field>
+    <field name="args">(SceUID pid, SceUID *ids, int n, int *copy_count)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde</field>
+    <field name="keywords">ksceKernelGetThreadIdList</field>
+    <field name="text">Retrieve a list of all threads belonging to a process pid The process to query ids The list of thread ids Can be NULL if output is not required n The max number of thread ids to copy out copy_count The number of thread ids copied The number of threads within the process else 0 on error</field>
   </doc>
   <doc>
     <field name="type">typedef</field>

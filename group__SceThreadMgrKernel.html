@@ -250,6 +250,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceKernelDeleteFastMu
 <tr class="memitem:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca">ksceKernelEnqueueWorkQueue</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, const char *name, SceKernelWorkQueueWorkFunction work, void *args)</td></tr>
 <tr class="memdesc:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue work to a workqueue.  <a href="#ga8e723f29b9444f2c43a1f752208dd4ca">More...</a><br /></td></tr>
 <tr class="separator:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde">ksceKernelGetThreadIdList</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *ids, int n, int *copy_count)</td></tr>
+<tr class="memdesc:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of all threads belonging to a process.  <a href="#ga55cc6fa2f5de0aa59f4d293601f9cbde">More...</a><br /></td></tr>
+<tr class="separator:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -2126,6 +2129,58 @@ The thread id associated with the callback. </td></tr>
 
 <p>Get the current thread Id. </p>
 <dl class="section return"><dt>Returns</dt><dd>The thread id of the calling thread. </dd></dl>
+
+</div>
+</div>
+<a id="ga55cc6fa2f5de0aa59f4d293601f9cbde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55cc6fa2f5de0aa59f4d293601f9cbde">&sect;&nbsp;</a></span>ksceKernelGetThreadIdList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetThreadIdList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>copy_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve a list of all threads belonging to a process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The process to query. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ids</td><td>The list of thread ids. Can be NULL if output is not required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>The max number of thread ids to copy out. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">copy_count</td><td>The number of thread ids copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of threads within the process, else &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

@@ -50,6 +50,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelGetSystemTimeWide", "group__SceThreadMgrKernel.html#ga57c16d113cd78bd9f1bd5548c5ef0b28", null ],
     [ "ksceKernelGetThreadCurrentPriority", "group__SceThreadMgrKernel.html#ga34336a88354c03f36fdb8938b249b4e4", null ],
     [ "ksceKernelGetThreadId", "group__SceThreadMgrKernel.html#ga65330c74812c46e94404fcccf829775b", null ],
+    [ "ksceKernelGetThreadIdList", "group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde", null ],
     [ "ksceKernelGetThreadmgrUIDClass", "group__SceThreadMgrKernel.html#ga163c78f3bb573018e2e4c9b61071cc70", null ],
     [ "ksceKernelGetThreadStackFreeSize", "group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305", null ],
     [ "ksceKernelGetThreadTLSAddr", "group__SceThreadMgrKernel.html#ga19cf0a23a2074bbb1dff42cbbca49d66", null ],
