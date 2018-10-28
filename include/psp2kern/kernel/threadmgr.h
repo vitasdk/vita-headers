@@ -852,6 +852,13 @@ typedef int (*SceKernelWorkQueueWorkFunction)(void *args);
 int ksceKernelEnqueueWorkQueue(SceUID uid, const char *name, SceKernelWorkQueueWorkFunction work, void *args);
 
 /**
+ * @brief       Get the main thread for a given process.
+ * @param[in]   pid The process id to query for.
+ * @return      The thread UID on success, else < 0 on error.
+ */
+SceUID ksceKernelGetProcessMainThread(SceUID pid);
+
+/**
  * @brief       Retrieve a list of all threads belonging to a process.
  * @param[in]   pid         The process to query.
  * @param[out]  ids         The list of thread ids. Can be NULL if output is not required.
