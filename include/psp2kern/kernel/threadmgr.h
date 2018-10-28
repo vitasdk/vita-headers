@@ -868,6 +868,52 @@ SceUID ksceKernelGetProcessMainThread(SceUID pid);
  */
 int ksceKernelGetThreadIdList(SceUID pid, SceUID *ids, int n, int *copy_count);
 
+/** Structure representing all ARM registers */
+typedef struct ArmCpuRegisters
+{
+    uint32_t    r0;
+    uint32_t    r1;
+    uint32_t    r2;
+    uint32_t    r3;
+    uint32_t    r4;
+    uint32_t    r5;
+    uint32_t    r6;
+    uint32_t    r7;
+    uint32_t    r8;
+    uint32_t    r9;
+    uint32_t    r10;
+    uint32_t    r11;
+    uint32_t    r12;
+    uint32_t    sp;
+    uint32_t    lr;
+    uint32_t    pc;
+    uint32_t    cpsr;
+    uint32_t    unk;
+} ArmCpuRegisters;
+
+/** Structure containing a threads register states. */
+typedef struct ThreadCpuRegisters
+{
+    /** Set of registers used for user mode. */
+    ArmCpuRegisters user;
+
+    /** Set of registers used for kernel mode. */
+    ArmCpuRegisters kernel;
+} ThreadCpuRegisters;
+
+/**
+ * @brief       Query the state of the registers for a suspended thread.
+ *
+ * The registers returned are the user/kernel set for the requested thread.
+ * It's not certain that user/kernel is correct representation, instead it could be current/exception.
+ * The thread provided must be suspended for this function to succeed.
+ *
+ * @param[in]   thid        The thread to query.
+ * @param[out]  registers   The set of registers belonging to the thread.
+ * @return      Zero on success, else < 0 on error.
+ */
+int ksceKernelGetThreadCpuRegisters(SceUID thid, ThreadCpuRegisters *registers);
+
 #ifdef __cplusplus
 }
 #endif
