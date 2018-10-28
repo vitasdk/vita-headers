@@ -851,6 +851,16 @@ typedef int (*SceKernelWorkQueueWorkFunction)(void *args);
  */
 int ksceKernelEnqueueWorkQueue(SceUID uid, const char *name, SceKernelWorkQueueWorkFunction work, void *args);
 
+/**
+ * @brief       Retreive a list of all threads belonging to a process.
+ * @param[in]   pid         The process to query.
+ * @param[out]  ids         The list of thread ids. Can be NULL if output is not required.
+ * @param[in]   n           The max number of thread ids to copy out.
+ * @param[out]  copy_count  The number of thread ids copied.
+ * @return      The number of threads within the process, else < 0 on error.
+ */
+int ksceKernelGetThreadIdList(SceUID pid, SceUID *ids, int n, int *copy_count);
+
 #ifdef __cplusplus
 }
 #endif
