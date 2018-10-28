@@ -31,6 +31,13 @@ int ksceKernelCreateProcessLocalStorage(const char *name, SceSize size);
 void *ksceKernelGetProcessLocalStorageAddr(int key);
 int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
 
+/**
+ * @brief       Resume a suspended process.
+ * @param[in]   pid The process to resume.
+ * @return      Zero on success, < 0 on error.
+ */
+int ksceKernelProcessResume(SceUID pid);
+
 #ifdef __cplusplus
 }
 #endif
