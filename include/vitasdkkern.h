@@ -4,6 +4,7 @@
 #include <vitasdk/utils.h>
 
 #include <psp2kern/types.h>
+#include <psp2kern/appmgr.h>
 #include <psp2kern/bt.h>
 #include <psp2kern/ctrl.h>
 #include <psp2kern/display.h>
