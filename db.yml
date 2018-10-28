@@ -26,6 +26,7 @@ modules:
           ksceAppMgrGetPfsProcessStatus: 0xE72D2A4A
           ksceAppMgrGetSystemDataFile: 0xAEC49533
           ksceAppMgrIsExclusiveProcessRunning: 0xA888C2DC
+          ksceAppMgrKillProcess: 0xD80566DB
           ksceAppMgrLaunchAppByPath: 0xB0A37065
           ksceAppMgrLoadSafeMemory: 0xFAF3DAAA
           ksceAppMgrLocalBackupGetOfflineId: 0x61B13981
@@ -38,7 +39,6 @@ modules:
           ksceAppMgrSystemParamDateTimeSetConf: 0xA9AA3A68
           ksceAppMgrUmount: 0xA714BB35
           ksceAppMgrUpdateRifInfo: 0x894BDCB8
-          ksceAppMgrKillProcess: 0xD80566DB
       SceAppMgr:
         kernel: false
         nid: 0x8AF17416
@@ -2206,6 +2206,8 @@ modules:
           ksceKernelCancelCallback: 0xC040EC1C
           ksceKernelCancelMutex: 0x7204B846
           ksceKernelChangeThreadPriority: 0x63DAB420
+          ksceKernelCheckCallback: 0xE53E41F6
+          ksceKernelCheckWaitableStatus: 0xD9BD74EB
           ksceKernelClearEvent: 0x9C335818
           ksceKernelClearEventFlag: 0x4F1DA3BE
           ksceKernelCreateCallback: 0x1C41614C
@@ -2232,11 +2234,13 @@ modules:
           ksceKernelGetSystemTimeLow: 0x47F6DE49
           ksceKernelGetSystemTimeWide: 0xF4EE4FA9
           ksceKernelGetThreadCpuAffinityMask: 0x83DC703D
+          ksceKernelGetThreadCpuRegisters: 0x5022689D
           ksceKernelGetThreadCurrentPriority: 0x01414F0B
           ksceKernelGetThreadId: 0x59D06540
-          ksceKernelGetThreadmgrUIDClass: 0x0A20775A
+          ksceKernelGetThreadIdList: 0xEA7B8AEF
           ksceKernelGetThreadStackFreeSize: 0x7B278A0B
           ksceKernelGetThreadTLSAddr: 0x66EEA46A
+          ksceKernelGetThreadmgrUIDClass: 0x0A20775A
           ksceKernelGetTimerBaseWide: 0xA6D11DD3
           ksceKernelGetTimerTimeWide: 0xC1286004
           ksceKernelInitializeFastMutex: 0xAF8E1266
@@ -2251,9 +2255,9 @@ modules:
           ksceKernelRunWithStack: 0xE54FD746
           ksceKernelSetEvent: 0x9EA3A45C
           ksceKernelSetEventFlag: 0xD4780C3E
-          ksceKernelSetTimerTimeWide: 0x85195A16
-          ksceKernelSetProcessId: 0x0486F239
           ksceKernelSetPermission: 0x02EEDF17
+          ksceKernelSetProcessId: 0x0486F239
+          ksceKernelSetTimerTimeWide: 0x85195A16
           ksceKernelSignalCond: 0xAC616150
           ksceKernelSignalCondAll: 0x6EC78CD0
           ksceKernelSignalCondTo: 0x61533DA9
@@ -2261,6 +2265,7 @@ modules:
           ksceKernelStartThread: 0x21F5419B
           ksceKernelStartTimer: 0x84C4CE4D
           ksceKernelStopTimer: 0x474F214B
+          ksceKernelTryLockMutex: 0x270993A6
           ksceKernelTryLockReadRWLock: 0xFC2B5A50
           ksceKernelTryLockWriteRWLock: 0xA96F2E5A
           ksceKernelUnlockFastMutex: 0xDB395782
@@ -2278,11 +2283,6 @@ modules:
           ksceKernelWaitSema: 0x3C8B55A9
           ksceKernelWaitThreadEnd: 0x3E20216F
           ksceKernelWaitThreadEndCB: 0x9EF4F62C
-          ksceKernelCheckWaitableStatus: 0xD9BD74EB
-          ksceKernelCheckCallback: 0xE53E41F6
-          ksceKernelTryLockMutex: 0x270993A6
-          ksceKernelGetThreadIdList: 0xEA7B8AEF
-          ksceKernelGetThreadCpuRegisters: 0x5022689D
       SceThreadmgrForKernel:
         kernel: true
         nid: 0xA8CA0EFD
@@ -2402,16 +2402,16 @@ modules:
         kernel: true
         nid: 0xC445FA63
         functions:
-          ksceKernelGetModuleList: 0x97CF7B4E
-          ksceKernelGetModuleInternal: 0xFE303863
           ksceKernelGetModuleInfo: 0xD269F915
+          ksceKernelGetModuleInternal: 0xFE303863
+          ksceKernelGetModuleList: 0x97CF7B4E
+          ksceKernelGetProcessMainModule: 0x20A27FA9
           ksceKernelLoadModuleForPid: 0xFA21D8CB
           ksceKernelMountBootfs: 0x01360661
           ksceKernelStartModuleForPid: 0x6DF745D5
           ksceKernelStopModuleForPid: 0x7BB4CE54
           ksceKernelUmountBootfs: 0x9C838A6B
           ksceKernelUnloadModuleForPid: 0x5972E2CC
-          ksceKernelGetProcessMainModule: 0x20A27FA9
       SceModulemgrForDriver:
         kernel: true
         nid: 0xD4A60A52
@@ -2564,26 +2564,26 @@ modules:
         nid: 0x7A69DE86
         functions:
           ksceKernelExitProcess: 0x4CA7DC42
-          ksceKernelLaunchApp: 0x71CF71FD
           ksceKernelGetProcessAuthid: 0xE4C83B0D
           ksceKernelGetProcessKernelBuf: 0xB9E68092
           ksceKernelGetProcessMainThread: 0x95F9ED94
+          ksceKernelLaunchApp: 0x71CF71FD
           ksceKernelProcessResume: 0x080CDC59
       SceProcessmgrForDriver:
         kernel: true
         nid: 0x746EC971
         functions:
-          ksceKernelGetProcessTimeLowCore: 0x02179E12
-          ksceKernelGetProcessInfo: 0x0AFF3EAE
-          ksceKernelIsCDialogAvailable: 0x2F6020B7
           ksceKernelCreateProcessLocalStorage: 0x3801D7D6
-          ksceKernelGetProcessTimeWideCore: 0x82D94BE9
-          ksceKernelGetProcessLocalStorageAddrForPid: 0xAF80F39C
-          ksceKernelGetRemoteProcessTime: 0xC074EB31
-          ksceKernelGetProcessTimeCore: 0xEC283166
+          ksceKernelGetProcessInfo: 0x0AFF3EAE
           ksceKernelGetProcessLocalStorageAddr: 0xEE694840
-          ksceKernelIsGameBudget: 0xF7A8BB25
+          ksceKernelGetProcessLocalStorageAddrForPid: 0xAF80F39C
           ksceKernelGetProcessStatus: 0x65B120B8
+          ksceKernelGetProcessTimeCore: 0xEC283166
+          ksceKernelGetProcessTimeLowCore: 0x02179E12
+          ksceKernelGetProcessTimeWideCore: 0x82D94BE9
+          ksceKernelGetRemoteProcessTime: 0xC074EB31
+          ksceKernelIsCDialogAvailable: 0x2F6020B7
+          ksceKernelIsGameBudget: 0xF7A8BB25
   SceSblPostSsMgr:
     nid: 0xB6C941F2
     libraries:
