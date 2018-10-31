@@ -36,7 +36,7 @@ int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_a
  * @param[in]   pid The process to resume.
  * @return      Zero on success, < 0 on error.
  */
-int ksceKernelProcessResume(SceUID pid);
+int ksceKernelResumeProcess(SceUID pid);
 
 /**
  * @brief       Get the status of a given process.
