@@ -39,6 +39,13 @@ int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_a
 int ksceKernelResumeProcess(SceUID pid);
 
 /**
+ * @brief       Suspend a running process.
+ * @param[in]   pid The process to suspend.
+ * @return      Zero on success, < 0 on error.
+ */
+int ksceKernelSuspendProcess(SceUID pid);
+
+/**
  * @brief       Get the status of a given process.
  * @param[in]   pid The process ID to query.
  * @param[out]  status The bit field status of the process.
