@@ -28,8 +28,8 @@ var NAVTREEINDEX =
 "group__ScePspnetAdhocctl.html",
 "group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4",
 "group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a8f2eff61e6f083a4e04205af6417b55b",
-"group__SceThreadMgrUser.html#ga2c719ce688b6a8cf699b2829cae70098",
-"npdrm_8h_source.html"
+"group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f",
+"netctl_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

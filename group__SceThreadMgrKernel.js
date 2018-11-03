@@ -25,6 +25,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelCancelCallback", "group__SceThreadMgrKernel.html#gae5a0eb3d286fa177cadbdf4bccc93a80", null ],
     [ "ksceKernelCancelMutex", "group__SceThreadMgrKernel.html#ga453976b2be81506edd5632012eed3890", null ],
     [ "ksceKernelChangeThreadPriority", "group__SceThreadMgrKernel.html#ga527485f66d7aaae348c0cd99fc9f4518", null ],
+    [ "ksceKernelChangeThreadSuspendStatus", "group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d", null ],
     [ "ksceKernelCheckCallback", "group__SceThreadMgrKernel.html#ga72a3cf612a7377f04424dbf4fbe8bfcf", null ],
     [ "ksceKernelClearEventFlag", "group__SceThreadMgrKernel.html#ga74954125146fa1e89d97f69e32a5631d", null ],
     [ "ksceKernelCreateCallback", "group__SceThreadMgrKernel.html#ga1a18a5f6673003272934c42bd3353aae", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"netctl_8h_source.html":[3,0,0,0,2,2],
 "npdrm_8h_source.html":[3,0,0,0,29],
 "npdrmpackage_8h_source.html":[3,0,0,0,30],
 "openpsid_8h_source.html":[3,0,0,0,1,5],

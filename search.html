@@ -5966,7 +5966,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00901</field>
     <field name="keywords"></field>
-    <field name="text">ArmCpuRegisters kernel ThreadCpuRegisters ksceKernelGetThreadCpuRegisters SceUID thid ThreadCpuRegisters registers</field>
+    <field name="text">ArmCpuRegisters kernel ThreadCpuRegisters ksceKernelGetThreadCpuRegisters SceUID thid ThreadCpuRegisters registers ksceKernelChangeThreadSuspendStatus SceUID thid status</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -20801,6 +20801,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#gad9d9fe958fb029ef0d695029e1e8866b</field>
     <field name="keywords">ksceKernelGetThreadCpuRegisters</field>
     <field name="text">Query the state of the registers for a suspended thread The registers returned are the user/kernel set for the requested thread It s not certain that user/kernel is correct representation instead it could be current/exception The thread provided must be suspended for this function to succeed thid The thread to query registers The set of registers belonging to the thread Zero on success else 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelChangeThreadSuspendStatus</field>
+    <field name="args">(SceUID thid, int status)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d</field>
+    <field name="keywords">ksceKernelChangeThreadSuspendStatus</field>
+    <field name="text">Change the thread suspension status to another value More research needs to be done to find out exactly what each status actually means Some examples of useful scenarios When handling an exception changing the status to 0x1002 on a newly suspended thread will stop the kernel rethrowing the same exception When resuming a suspended thread changing the status to 2 will allow it to resume thid The thread to change status The new status for suspension Zero on success else 0 on error</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
