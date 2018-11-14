@@ -183,7 +183,7 @@ int sceAppMgrDestroyOtherApp(void);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAppMgrDestroyAppByName(char *name);
+int sceAppMgrDestroyAppByName(const char *name);
 
 /**
  * Destroy an application by Application ID
@@ -236,7 +236,7 @@ int sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *systemEvent);
 /**
  * Copies app param to an array
  *
- * @param[in] param - pointer to a 1024 byte location to store the app param
+ * @param[out] param - pointer to a 1024 byte location to store the app param
  *
  * @return 0 on success, < 0 on error.
  *
@@ -296,7 +296,7 @@ int sceAppMgrLoadExec(const char *appPath, char * const argv[],
  *
  * @note If flags != 0x20000, Livearea is opened.
  */
-int sceAppMgrLaunchAppByUri(int flags, char *uri);
+int sceAppMgrLaunchAppByUri(int flags, const char *uri);
 
 /**
  * Start an application by Title ID
@@ -331,7 +331,7 @@ SceUID sceAppMgrLaunchAppByName2ForShell(const char *name, const char *param, Sc
  * @return 0 on success, < 0 on error.
  *
  */
-int sceAppMgrGameDataMount(const char *path, int unk1, int unk2, char *mount_point);
+int sceAppMgrGameDataMount(const char *path, int unk1, int unk2, const char *mount_point);
 
 /**
  * Mount application data
@@ -343,7 +343,7 @@ int sceAppMgrGameDataMount(const char *path, int unk1, int unk2, char *mount_poi
  *
  * @note id: 100 (photo0), 101 (friends), 102 (messages), 103 (near), 105 (music), 108 (calendar)
  */
-int sceAppMgrAppDataMount(int id, char *mount_point);
+int sceAppMgrAppDataMount(int id, const char *mount_point);
 
 /**
  * Mount application data by Title ID
@@ -356,7 +356,7 @@ int sceAppMgrAppDataMount(int id, char *mount_point);
  *
  * @note id: 106 (ad), 107 (ad)
  */
-int sceAppMgrAppDataMountById(int id, char *titleid, char *mount_point);
+int sceAppMgrAppDataMountById(int id, const char *titleid, const char *mount_point);
 
 /**
  * Get application params from SFO descriptor
@@ -383,7 +383,7 @@ int sceAppMgrAppParamGetString(int pid, int param, char *string, int length);
  *
  * @note dev: ux0:
  */
-int sceAppMgrGetDevInfo(char *dev, uint64_t *max_size, uint64_t *free_size);
+int sceAppMgrGetDevInfo(const char *dev, uint64_t *max_size, uint64_t *free_size);
 
 /**
  * Mount application data (PSPEmu)
@@ -395,7 +395,7 @@ int sceAppMgrGetDevInfo(char *dev, uint64_t *max_size, uint64_t *free_size);
  *
  * @note id: 400 (ad), 401 (ad), 402 (ad)
  */
-int sceAppMgrMmsMount(int id, char *mount_point);
+int sceAppMgrMmsMount(int id, const char *mount_point);
 
 /**
  * Mount PSPEmu virtual memory stick
@@ -406,7 +406,7 @@ int sceAppMgrMmsMount(int id, char *mount_point);
  *
  * @note mount_point: ms
  */
-int sceAppMgrPspSaveDataRootMount(char *mount_point);
+int sceAppMgrPspSaveDataRootMount(const char *mount_point);
 
 /**
  * Mount working directory
@@ -418,7 +418,7 @@ int sceAppMgrPspSaveDataRootMount(char *mount_point);
  *
  * @note id: 200 (td), 201 (td), 203 (td), 204 (td), 206 (td)
  */
-int sceAppMgrWorkDirMount(int id, char *mount_point);
+int sceAppMgrWorkDirMount(int id, const char *mount_point);
 
 /**
  * Mount working directory by Title ID
@@ -431,7 +431,7 @@ int sceAppMgrWorkDirMount(int id, char *mount_point);
  *
  * @note id: 205 (cache0), 207 (td)
  */
-int sceAppMgrWorkDirMountById(int id, char *titleid, char *mount_point);
+int sceAppMgrWorkDirMountById(int id, const char *titleid, const char *mount_point);
 
 /**
  * Unmount a mountpoint
