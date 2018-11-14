@@ -11790,8 +11790,8 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrDestroyAppByName</field>
-    <field name="args">(char *name)</field>
-    <field name="url">group__SceAppMgrUser.html#ga11a4b09749234b6aa99f1764c6bb4ff9</field>
+    <field name="args">(const char *name)</field>
+    <field name="url">group__SceAppMgrUser.html#gae7d4e557d599ff47d5012cf5c2c0d155</field>
     <field name="keywords">sceAppMgrDestroyAppByName</field>
     <field name="text">Destroy an application by Title ID name Title ID of the application 0 on success 0 on error</field>
   </doc>
@@ -11878,8 +11878,8 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrLaunchAppByUri</field>
-    <field name="args">(int flags, char *uri)</field>
-    <field name="url">group__SceAppMgrUser.html#ga06de20d8e8f7c9b20c071b871e543657</field>
+    <field name="args">(int flags, const char *uri)</field>
+    <field name="url">group__SceAppMgrUser.html#ga3c8c9e88eae0832beb82c38022e52cbf</field>
     <field name="keywords">sceAppMgrLaunchAppByUri</field>
     <field name="text">Start an application by URI flags Must be 0x20000 uri Uri to launch 0 on success 0 on error If flags 0x20000 Livearea is opened</field>
   </doc>
@@ -11902,24 +11902,24 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrGameDataMount</field>
-    <field name="args">(const char *path, int unk1, int unk2, char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#ga516fb2c927f86a6cb85f9d0ce6e649a3</field>
+    <field name="args">(const char *path, int unk1, int unk2, const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#ga9f86fe3ca28ac18aef3aa12eeb3cc50a</field>
     <field name="keywords">sceAppMgrGameDataMount</field>
     <field name="text">Mount game data path ux0 app/TITLEID unk1 Unknown set 0 unk2 Unknown set 0 mount_point Mountpoint to use 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrAppDataMount</field>
-    <field name="args">(int id, char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#ga9db93ab9560007190a344444baca0bd0</field>
+    <field name="args">(int id, const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#ga8f57db4848090ff5bca28df9a0d17d56</field>
     <field name="keywords">sceAppMgrAppDataMount</field>
     <field name="text">Mount application data id App data ID mount_point Mountpoint to use 0 on success 0 on error id 100 photo0 101 friends 102 messages 103 near 105 music 108 calendar</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrAppDataMountById</field>
-    <field name="args">(int id, char *titleid, char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#gabec071a8f0ed2f1cc4def5c33454c92c</field>
+    <field name="args">(int id, const char *titleid, const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#gaaae990bce760d4f3c78985955ee547e5</field>
     <field name="keywords">sceAppMgrAppDataMountById</field>
     <field name="text">Mount application data by Title ID id App data ID titleid Application title ID mount_point Mountpoint to use 0 on success 0 on error id 106 ad 107 ad</field>
   </doc>
@@ -11934,40 +11934,40 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrGetDevInfo</field>
-    <field name="args">(char *dev, uint64_t *max_size, uint64_t *free_size)</field>
-    <field name="url">group__SceAppMgrUser.html#ga4c58805a1324edf28fc3ffde4a9d45c8</field>
+    <field name="args">(const char *dev, uint64_t *max_size, uint64_t *free_size)</field>
+    <field name="url">group__SceAppMgrUser.html#ga0eb85f9a6fbd6948d480e3af23b76eca</field>
     <field name="keywords">sceAppMgrGetDevInfo</field>
     <field name="text">Get device info dev Device to get info about max_size Capacity of the device free_size Free space of the device 0 on success 0 on error dev ux0</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrMmsMount</field>
-    <field name="args">(int id, char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#ga2bab912d6a9040291276bf95c88207c4</field>
+    <field name="args">(int id, const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#gae6adc4d24843527d12a5911990352c03</field>
     <field name="keywords">sceAppMgrMmsMount</field>
     <field name="text">Mount application data PSPEmu id App data ID mount_point Mountpoint to use 0 on success 0 on error id 400 ad 401 ad 402 ad</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrPspSaveDataRootMount</field>
-    <field name="args">(char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#gaa7fb2782fd6ae0fb436ccf904cbb40b0</field>
+    <field name="args">(const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#gabe1cd71d9779e1ac63f7d7284ceed70f</field>
     <field name="keywords">sceAppMgrPspSaveDataRootMount</field>
     <field name="text">Mount PSPEmu virtual memory stick mount_point Mountpoint to use 0 on success 0 on error mount_point ms</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrWorkDirMount</field>
-    <field name="args">(int id, char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#gac33520d95199dd67f692a74df95054d7</field>
+    <field name="args">(int id, const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#gab9a21c567282f6db5f16e3562bb5f4dc</field>
     <field name="keywords">sceAppMgrWorkDirMount</field>
     <field name="text">Mount working directory id Working directory ID mount_point Mountpoint to use 0 on success 0 on error id 200 td 201 td 203 td 204 td 206 td</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">sceAppMgrWorkDirMountById</field>
-    <field name="args">(int id, char *titleid, char *mount_point)</field>
-    <field name="url">group__SceAppMgrUser.html#ga13a59ab923a2dcfd7f7080f1754223f1</field>
+    <field name="args">(int id, const char *titleid, const char *mount_point)</field>
+    <field name="url">group__SceAppMgrUser.html#ga165d1eb47970cf405dc58d65f9b6c4fe</field>
     <field name="keywords">sceAppMgrWorkDirMountById</field>
     <field name="text">Mount working directory by Title ID id Working directory ID titleid Application Title ID mount_point Mountpoint to use 0 on success 0 on error id 205 cache0 207 td</field>
   </doc>
