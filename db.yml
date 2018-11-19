@@ -5624,12 +5624,18 @@ modules:
           ksceNetSocket: 0xEB95B024
           ksceNetAccept: 0x880A5423
           ksceNetBind: 0x84AB650F
+          ksceNetConnect: 0x13491DA1
           ksceNetListen: 0x080C7992
           ksceNetRecvfrom: 0x49B1669C
           ksceNetSendto: 0xAB746734
           ksceNetSetsockopt: 0x4BF5FAB4
           ksceNetSocketClose: 0x21F4428D
-  SceNetAdhocMatching:
+      SceNetPsForSyscalls:
+        kernel: false
+        nid: 0x2CBED2C6
+        functions:
+          sceNetConnectForSyscalls: 0x14A4DE52
+SceNetAdhocMatching:
     nid: 0xF2F9C205
     libraries:
       SceNetAdhocMatching:
