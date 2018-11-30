@@ -80,10 +80,16 @@ $(document).ready(function(){initNavTree('group__SceNetKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/net/net_syscalls.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceNetPsForSyscalls_stub </div></div><!-- fragment --><hr/>
+<hr/>
+ <h3>Using this library in your project</h3>
 <p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/net/net.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceNetPsForDriver_stub </div></div><!-- fragment --><hr/>
-<table class="memberdecls">
+ <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaedba6d62566a95f4e6b249cd70d1af75"><td class="memItemLeft" align="right" valign="top"><a id="gaedba6d62566a95f4e6b249cd70d1af75"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetConnectForSyscalls</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *name, unsigned int namelen)</td></tr>
+<tr class="separator:gaedba6d62566a95f4e6b249cd70d1af75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93a90e964603816ec07e5257903b81bc"><td class="memItemLeft" align="right" valign="top"><a id="ga93a90e964603816ec07e5257903b81bc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocket</b> (const char *name, int domain, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int protocol)</td></tr>
 <tr class="separator:ga93a90e964603816ec07e5257903b81bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,6 +99,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetAccept</b> (int
 <tr class="memitem:gadb0b8b6c209df33cf5227cd50dc4eea7"><td class="memItemLeft" align="right" valign="top"><a id="gadb0b8b6c209df33cf5227cd50dc4eea7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetBind</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *addr, unsigned int addrlen)</td></tr>
 <tr class="separator:gadb0b8b6c209df33cf5227cd50dc4eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga223049ebc776fbd34aa5a9c5d0973349"><td class="memItemLeft" align="right" valign="top"><a id="ga223049ebc776fbd34aa5a9c5d0973349"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetConnect</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *name, unsigned int namelen)</td></tr>
+<tr class="separator:ga223049ebc776fbd34aa5a9c5d0973349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ae12b0040019ba59bb0a009aad15798"><td class="memItemLeft" align="right" valign="top"><a id="ga1ae12b0040019ba59bb0a009aad15798"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetListen</b> (int s, int backlog)</td></tr>
 <tr class="separator:ga1ae12b0040019ba59bb0a009aad15798"><td class="memSeparator" colspan="2">&#160;</td></tr>
