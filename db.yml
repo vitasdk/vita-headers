@@ -2405,9 +2405,15 @@ modules:
         nid: 0xC445FA63
         functions:
           ksceKernelGetModuleInfo: 0xD269F915
+          ksceKernelGetModuleInfo2: 0x6A655255
           ksceKernelGetModuleInternal: 0xFE303863
+          ksceKernelGetModuleLibraryInfo: 0xD4BF409C
           ksceKernelGetModuleList: 0x97CF7B4E
+          ksceKernelGetModuleList2: 0x410E1D2E
+          ksceKernelGetModuleUid: 0x3B93CF88
+          ksceKernelGetModuleUidList: 0x1FDEAE16
           ksceKernelGetProcessMainModule: 0x20A27FA9
+          ksceKernelGetProcessMainModulePath: 0x779A1025
           ksceKernelLoadModuleForPid: 0xFA21D8CB
           ksceKernelMountBootfs: 0x01360661
           ksceKernelStartModuleForPid: 0x6DF745D5
