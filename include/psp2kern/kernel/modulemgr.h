@@ -78,6 +78,51 @@ typedef struct
   SceUInt unk_24;
 } SceKernelFwInfo;
 
+typedef struct
+{
+  SceSize size; //!< sizeof(SceKernelLoadedModuleInfo)
+  SceUID modid;
+  uint32_t version;
+  uint32_t unkC;
+  uint32_t unk10;
+  uint32_t unk14;
+  uint32_t unk18;
+  uint32_t unk1C;
+  uint32_t unk20;
+  char module_name[28];
+  uint32_t unk40;
+  uint32_t unk44;
+  uint32_t unk48;
+  uint32_t unk4C;
+  uint32_t unk50;
+  uint32_t unk54;
+  uint32_t unk58;
+  uint32_t unk5C;
+  uint32_t unk60;
+  uint32_t unk64;
+  uint32_t unk68;
+  uint32_t unk6C;
+  uint32_t unk70;
+  uint32_t unk74;
+  uint32_t unk78;
+  uint32_t unk7C;
+  uint32_t unk80;
+  uint32_t unk84;
+} SceKernelLoadedModuleInfo;
+
+typedef struct
+{
+  SceSize size; //!< sizeof(SceKernelModuleInfo2)
+  SceUID modid1;
+  uint32_t unk1;
+  uint32_t unk2;
+  uint32_t unk3;
+  uint32_t unk4;
+  char module_name[256];
+  uint32_t unk5;
+  SceUID modid2;
+} SceKernelModuleInfo2;
+
 int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, size_t *num);
 int ksceKernelGetModuleInfo(SceUID pid, SceUID modid, SceKernelModuleInfo *info);
 int ksceKernelGetModuleInternal(SceUID modid, void **module);
@@ -102,7 +147,7 @@ int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, voi
 int ksceKernelMountBootfs(const char *bootImagePath);
 int ksceKernelUmountBootfs(void);
 
-int ksceKernelSearchModuleByName(const char* module_name, const char* path, int pid);
+int ksceKernelSearchModuleByName(const char *module_name, const char *path, int pid);
 
 /**
  * @brief Get the main module for a given process.
@@ -111,9 +156,40 @@ int ksceKernelSearchModuleByName(const char* module_name, const char* path, int 
  */
 SceUID ksceKernelGetProcessMainModule(SceUID pid);
 
+/**
+ * @par Example1: Acquire max to 10 module info
+ * @code
+ * SceKernelLoadedModuleInfo infolists[10];
+ * size_t num = 10;// Get max
+ * ret = ksceKernelGetModuleList2(pid, infolists, &num);
+ * @endcode
+ *
+ * @param[in] pid - target pid
+ * @param[out] infolists - infolists output
+ * @param[in] num - Specify the maximum number of modinfolist to retrieve. If the function returns 0, it returns the number of modules loaded in the target pid in num
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleList2(SceUID pid, SceKernelLoadedModuleInfo *infolists, size_t *num);
+
+/**
+ * @param[in] pid - target pid
+ * @param[in] modid - target modid
+ * @param[out] info - info output
+ * @param[in] unk1 - set 0x120
+ * @param[in] unk2 - set 0x120
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleInfo2(SceUID pid, SceUID modid, SceKernelModuleInfo2 *info, int unk1, int unk2);
+
+int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID modid, void *unk1, const void *unk2, int unk3);
+int ksceKernelGetModuleUid(SceUID pid, SceUID modid, SceUID *modid_out, const void *unk1, int unk2);
+int ksceKernelGetModuleUidList(SceUID pid, SceUID *modids, size_t *num);
+int ksceKernelGetProcessMainModulePath(SceUID pid, char *path, int pathlen);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
-
