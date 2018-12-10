@@ -184,7 +184,7 @@ int ksceKernelGetModuleList2(SceUID pid, SceKernelLoadedModuleInfo *infolists, s
 int ksceKernelGetModuleInfo2(SceUID pid, SceUID modid, SceKernelModuleInfo2 *info, int unk1, int unk2);
 
 int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID modid, void *unk1, const void *unk2, int unk3);
-int ksceKernelGetModuleUid(SceUID pid, SceUID modid, int *modid_out, const void *unk1, int unk2);
+int ksceKernelGetModuleUid(SceUID pid, SceUID modid, SceUID *modid_out, const void *unk1, int unk2);
 int ksceKernelGetModuleUidList(SceUID pid, SceUID *modids, size_t *num);
 int ksceKernelGetProcessMainModulePath(SceUID pid, char *path, int pathlen);
 
@@ -193,4 +193,3 @@ int ksceKernelGetProcessMainModulePath(SceUID pid, char *path, int pathlen);
 #endif
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
-
