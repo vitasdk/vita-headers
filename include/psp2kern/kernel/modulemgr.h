@@ -80,7 +80,7 @@ typedef struct
 
 typedef struct
 {
-  uint32_t size; // sizeof(SceKernelLoadedModuleInfo)
+  SceSize size; //!< sizeof(SceKernelLoadedModuleInfo)
   SceUID modid;
   uint32_t version;
   uint32_t unkC;
@@ -112,14 +112,14 @@ typedef struct
 
 typedef struct
 {
-  uint32_t size; // sizeof(SceKernelModuleInfo2)
+  SceSize size; //!< sizeof(SceKernelModuleInfo2)
   SceUID modid1;
   uint32_t unk1;
   uint32_t unk2;
   uint32_t unk3;
   uint32_t unk4;
   char module_name[256];
-  uint32_t unk6;
+  uint32_t unk5;
   SceUID modid2;
 } SceKernelModuleInfo2;
 
