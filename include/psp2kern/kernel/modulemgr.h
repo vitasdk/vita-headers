@@ -155,6 +155,7 @@ typedef struct{
 } SceKernelModuleInfo2;
 
 /**
+ * @par Example1: Acquire max to 10 module info
  * @code
  * SceKernelLoadedModuleInfo infolists[10];
  * size_t num = 10;// Get max
