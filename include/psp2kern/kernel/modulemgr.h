@@ -118,7 +118,7 @@ typedef struct
   uint32_t unk2;
   uint32_t unk3;
   uint32_t unk4;
-  char module_name[0x100];
+  char module_name[256];
   uint32_t unk6;
   SceUID modid2;
 } SceKernelModuleInfo2;
