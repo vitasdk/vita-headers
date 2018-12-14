@@ -53,13 +53,11 @@ typedef struct SceSha256Context {
 
 struct SceDeflatePartialInputParam;
 
-typedef const void *(SceDeflateDecompressPartialInputCallback)(SceDeflatePartialInputParam* param, uint32_t outputsize);
-
 typedef struct SceDeflatePartialInputParam {
 	uint32_t size;
 	const void *pBufEnd;
 	void *cookie;
-	SceDeflateDecompressPartialInputCallback *callback;
+	const void *(* SceDeflateDecompressPartialInputCallback)(SceDeflatePartialInputParam* param, uint32_t outputsize);
 } SceDeflatePartialInputParam;
 
 typedef struct {
