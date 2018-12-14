@@ -57,7 +57,7 @@ typedef struct SceDeflatePartialInputParam {
 	uint32_t size;
 	const void *pBufEnd;
 	void *cookie;
-	const void *(* SceDeflateDecompressPartialInputCallback)(SceDeflatePartialInputParam* param, uint32_t outputsize);
+	const void *(* SceDeflateDecompressPartialInputCallback)(struct SceDeflatePartialInputParam* param, uint32_t outputsize);
 } SceDeflatePartialInputParam;
 
 typedef struct {
