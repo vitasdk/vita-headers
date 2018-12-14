@@ -146,15 +146,6 @@ const char *ksceGzipGetComment(const void *src);
 const void *ksceGzipGetCompressedData(const void *src);
 
 /**
- * @brief Check magic of Zlib header
- *
- * @param[in] src - Zlib compressed data
- *
- * @return 1 on success,  0 is not Zlib data.
- */
-int ksceZlibIsValid(const void *src);
-
-/**
  * @brief Get filename etc. in Zlib data
  *
  * @param[in] src - Zlib compressed data
