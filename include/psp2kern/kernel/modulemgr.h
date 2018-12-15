@@ -78,37 +78,89 @@ typedef struct
   SceUInt unk_24;
 } SceKernelFwInfo;
 
-typedef struct
-{
-  SceSize size; //!< sizeof(SceKernelLoadedModuleInfo)
+typedef struct{
+  SceSize size; //!< sizeof(SceKernelSegmentInfo2) (0x14)
+  int perm;
+  void *vaddr;
+  uint32_t memsz;
+  int unk_10;
+}SceKernelSegmentInfo2;
+
+typedef struct{
+  SceSize size; //!< sizeof(SceKernelModuleListInfoType1) (0x74)
   SceUID modid;
   uint32_t version;
-  uint32_t unkC;
+  uint32_t module_version;
   uint32_t unk10;
-  uint32_t unk14;
+  void *unk14;
   uint32_t unk18;
-  uint32_t unk1C;
-  uint32_t unk20;
+  void *unk1C;
+  void *unk20;
   char module_name[28];
   uint32_t unk40;
   uint32_t unk44;
-  uint32_t unk48;
-  uint32_t unk4C;
-  uint32_t unk50;
-  uint32_t unk54;
-  uint32_t unk58;
-  uint32_t unk5C;
-  uint32_t unk60;
-  uint32_t unk64;
-  uint32_t unk68;
-  uint32_t unk6C;
-  uint32_t unk70;
-  uint32_t unk74;
-  uint32_t unk78;
-  uint32_t unk7C;
-  uint32_t unk80;
-  uint32_t unk84;
-} SceKernelLoadedModuleInfo;
+  uint32_t nid;
+  int segments_num;
+  SceKernelSegmentInfo2 SegmentInfo[1];
+  uint32_t addr[4];
+} SceKernelModuleListInfoType1;
+
+typedef struct{
+  SceSize size; //!< sizeof(SceKernelModuleListInfoType2) (0x88)
+  SceUID modid;
+  uint32_t version;
+  uint32_t module_version;
+  uint32_t unk10;
+  void *unk14;
+  uint32_t unk18;
+  void *unk1C;
+  void *unk20;
+  char module_name[28];
+  uint32_t unk40;
+  uint32_t unk44;
+  uint32_t nid;
+  int segments_num;
+  SceKernelSegmentInfo2 SegmentInfo[2];
+  uint32_t addr[4];
+} SceKernelModuleListInfoType2;
+
+typedef struct{
+  SceSize size; //!< sizeof(SceKernelModuleListInfoType3) (0x9C)
+  SceUID modid;
+  uint32_t version;
+  uint32_t module_version;
+  uint32_t unk10;
+  void *unk14;
+  uint32_t unk18;
+  void *unk1C;
+  void *unk20;
+  char module_name[28];
+  uint32_t unk40;
+  uint32_t unk44;
+  uint32_t nid;
+  int segments_num;
+  SceKernelSegmentInfo2 SegmentInfo[3];
+  uint32_t addr[4];
+} SceKernelModuleListInfoType3;
+
+typedef struct{
+  SceSize size; //!< sizeof(SceKernelModuleListInfoType4) (0xB0)
+  SceUID modid;
+  uint32_t version;
+  uint32_t module_version;
+  uint32_t unk10;
+  void *unk14;
+  uint32_t unk18;
+  void *unk1C;
+  void *unk20;
+  char module_name[28];
+  uint32_t unk40;
+  uint32_t unk44;
+  uint32_t nid;
+  int segments_num;
+  SceKernelSegmentInfo2 SegmentInfo[4];
+  uint32_t addr[4];
+} SceKernelModuleListInfoType4;
 
 typedef struct
 {
@@ -157,11 +209,31 @@ int ksceKernelSearchModuleByName(const char *module_name, const char *path, int 
 SceUID ksceKernelGetProcessMainModule(SceUID pid);
 
 /**
- * @par Example1: Acquire max to 10 module info
+ * @par Example1: Get max to 10 kernel module info
  * @code
- * SceKernelLoadedModuleInfo infolists[10];
+ * char infolists[sizeof(SceKernelModuleListInfoType4) * 10];
  * size_t num = 10;// Get max
- * ret = ksceKernelGetModuleList2(pid, infolists, &num);
+ * uint32_t offset = 0;
+ * int infosize = 0;
+ * ret = ksceKernelGetModuleList2(0x10005, infolists, &num);
+ *
+ * for(int i=0;i<num;i++){
+ *   memcpy(&isize, (void*)(infolists+offset), 4);
+ *   if( infosize == sizeof(SceKernelModuleListInfoType1) ) {
+ *     SceKernelModuleListInfoType1 info;
+ *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType1) );
+ *   }else if( isize == sizeof(SceKernelModuleListInfoType2) ) {
+ *     SceKernelModuleListInfoType2 info;
+ *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType2) );
+ *   }else if( isize == sizeof(SceKernelModuleListInfoType3) ) {
+ *     SceKernelModuleListInfoType3 info;
+ *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType3) );
+ *   }else if( isize == sizeof(SceKernelModuleListInfoType4) ) {
+ *     SceKernelModuleListInfoType4 info;
+ *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType4) );
+ *   }
+ *   offset += isize;
+ * }
  * @endcode
  *
  * @param[in] pid - target pid
@@ -170,7 +242,7 @@ SceUID ksceKernelGetProcessMainModule(SceUID pid);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleList2(SceUID pid, SceKernelLoadedModuleInfo *infolists, size_t *num);
+int ksceKernelGetModuleList2(SceUID pid, void *infolists, size_t *num);
 
 /**
  * @param[in] pid - target pid
