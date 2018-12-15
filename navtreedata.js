@@ -24,12 +24,12 @@ var NAVTREEINDEX =
 "group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72afbf72d8ffc769ce8e5e0ddd31c9aa113",
 "group__SceCtrlUser.html#ga91999737bb971d0dd01720e72ac819e0",
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a996f7a67f394662d35d07239de81b31c",
-"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a30725878fd9510a0fbd2b4d2f0f43a47",
-"group__ScePromoterUtilUser.html#gabaf2f7034ae507707a7d8bd76d3992a8",
-"group__SceSuspend.html",
-"group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a8e17ca8b5647a70a7dc99829ce6b5225",
-"group__SceThreadMgrUser.html#ga1540f817f8d121a979fbbb9f8c01d15e",
-"musicexport_8h_source.html"
+"group__SceMessageDialogUser.html#gga94102d21b8d9b9ceec5f24c9e9d96556a0a0baf717752aaffd728d38ada23672f",
+"group__ScePromoterUtilUser.html#ga6879c67b9aa18d951f8be26748fb6796",
+"group__SceStatUser.html#gaa0a12c50241cb6fd705c8e569163fb33",
+"group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a849b6fb222d5bf2d4fd0f640ba92e949",
+"group__SceThreadMgrUser.html#ga01b86d2c4e22ae44ff7dc9607196cc17",
+"io_2fcntl_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

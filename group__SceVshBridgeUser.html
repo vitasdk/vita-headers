@@ -102,6 +102,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshIdStorageIsFormatte
 <tr class="memitem:ga324c4f0e940138dc8008f5b484793789"><td class="memItemLeft" align="right" valign="top"><a id="ga324c4f0e940138dc8008f5b484793789"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshIdStorageIsReadOnly</b> (void)</td></tr>
 <tr class="separator:ga324c4f0e940138dc8008f5b484793789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02bb84229bbefc1b1234659aa6477914"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga02bb84229bbefc1b1234659aa6477914">vshIdStorageReadLeaf</a> (int leafnum, void *buf, int buf_size)</td></tr>
+<tr class="separator:ga02bb84229bbefc1b1234659aa6477914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48e60b73e0db3bb5771e700ca12d7894"><td class="memItemLeft" align="right" valign="top"><a id="ga48e60b73e0db3bb5771e700ca12d7894"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>vshIdStorageWriteLeaf</b> (int leafnum, const void *buf, int buf_size)</td></tr>
+<tr class="separator:ga48e60b73e0db3bb5771e700ca12d7894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5344884b9e5f470b33570191a51cb917"><td class="memItemLeft" align="right" valign="top"><a id="ga5344884b9e5f470b33570191a51cb917"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSblAimgrIsCEX</b> (void)</td></tr>
 <tr class="separator:ga5344884b9e5f470b33570191a51cb917"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,9 +128,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSblAimgrIsTool</b> 
 <tr class="memitem:ga2f7a513c7389ad333cd6424f6f7d88a3"><td class="memItemLeft" align="right" valign="top"><a id="ga2f7a513c7389ad333cd6424f6f7d88a3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSblSsIsDevelopmentMode</b> (void)</td></tr>
 <tr class="separator:ga2f7a513c7389ad333cd6424f6f7d88a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a3a9b95a9ed91913a1465ced2e50dab"><td class="memItemLeft" align="right" valign="top"><a id="ga4a3a9b95a9ed91913a1465ced2e50dab"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelIsPSVitaTV</b> (void)</td></tr>
-<tr class="separator:ga4a3a9b95a9ed91913a1465ced2e50dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3fd0027c40bbbc8e575ac375c011cd04"><td class="memItemLeft" align="right" valign="top"><a id="ga3fd0027c40bbbc8e575ac375c011cd04"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconHasWWAN</b> (void)</td></tr>
 <tr class="separator:ga3fd0027c40bbbc8e575ac375c011cd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +143,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconIsMCEmuCapabl
 <tr class="memitem:ga4938f15515f633ac7f7d19d535f423c4"><td class="memItemLeft" align="right" valign="top"><a id="ga4938f15515f633ac7f7d19d535f423c4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconIsShowMode</b> (void)</td></tr>
 <tr class="separator:ga4938f15515f633ac7f7d19d535f423c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa436ca896272338cefaf09295a52f811"><td class="memItemLeft" align="right" valign="top"><a id="gaa436ca896272338cefaf09295a52f811"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconIduModeSet</b> (void)</td></tr>
+<tr class="separator:gaa436ca896272338cefaf09295a52f811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf41f69612f13114f85e5b24e64faad0b"><td class="memItemLeft" align="right" valign="top"><a id="gaf41f69612f13114f85e5b24e64faad0b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconIduModeClear</b> (void)</td></tr>
+<tr class="separator:gaf41f69612f13114f85e5b24e64faad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3bd6adbed0b1e57e623c67653a41ea2"><td class="memItemLeft" align="right" valign="top"><a id="gae3bd6adbed0b1e57e623c67653a41ea2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconShowModeSet</b> (void)</td></tr>
+<tr class="separator:gae3bd6adbed0b1e57e623c67653a41ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dcb9fb6b15e0b397a4315ffe3d67244"><td class="memItemLeft" align="right" valign="top"><a id="ga7dcb9fb6b15e0b397a4315ffe3d67244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSysconShowModeClear</b> (void)</td></tr>
+<tr class="separator:ga7dcb9fb6b15e0b397a4315ffe3d67244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf890d7df39a06ea7fc605843e2f249a"><td class="memItemLeft" align="right" valign="top"><a id="gacf890d7df39a06ea7fc605843e2f249a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshMemoryCardGetCardInsertState</b> (void)</td></tr>
 <tr class="separator:gacf890d7df39a06ea7fc605843e2f249a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +210,49 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 &gt;= on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga02bb84229bbefc1b1234659aa6477914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02bb84229bbefc1b1234659aa6477914">&sect;&nbsp;</a></span>vshIdStorageReadLeaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshIdStorageReadLeaf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leafnum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buf_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- 0x0 ~ 0x80 / leafnum &gt; 0x80 = error </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- Leaf data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_size</td><td>- set 0x200 / buf_size != 0x200 = 0x800F090D</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
