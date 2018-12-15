@@ -86,7 +86,7 @@ typedef struct{
   int unk_10;
 }SceKernelSegmentInfo2;
 
-typedef struct{
+struct SceKernelModuleListInfoType1{
   SceSize size; //!< sizeof(SceKernelModuleListInfoType1) (0x74)
   SceUID modid;
   uint32_t version;
@@ -103,9 +103,9 @@ typedef struct{
   int segments_num;
   SceKernelSegmentInfo2 SegmentInfo[1];
   uint32_t addr[4];
-} SceKernelModuleListInfoType1;
+};
 
-typedef struct{
+struct SceKernelModuleListInfoType2{
   SceSize size; //!< sizeof(SceKernelModuleListInfoType2) (0x88)
   SceUID modid;
   uint32_t version;
@@ -122,9 +122,9 @@ typedef struct{
   int segments_num;
   SceKernelSegmentInfo2 SegmentInfo[2];
   uint32_t addr[4];
-} SceKernelModuleListInfoType2;
+};
 
-typedef struct{
+struct SceKernelModuleListInfoType3{
   SceSize size; //!< sizeof(SceKernelModuleListInfoType3) (0x9C)
   SceUID modid;
   uint32_t version;
@@ -141,9 +141,9 @@ typedef struct{
   int segments_num;
   SceKernelSegmentInfo2 SegmentInfo[3];
   uint32_t addr[4];
-} SceKernelModuleListInfoType3;
+};
 
-typedef struct{
+struct SceKernelModuleListInfoType4{
   SceSize size; //!< sizeof(SceKernelModuleListInfoType4) (0xB0)
   SceUID modid;
   uint32_t version;
@@ -160,7 +160,15 @@ typedef struct{
   int segments_num;
   SceKernelSegmentInfo2 SegmentInfo[4];
   uint32_t addr[4];
-} SceKernelModuleListInfoType4;
+};
+
+typedef union{
+  SceSize size;
+  struct SceKernelModuleListInfoType1 type1;
+  struct SceKernelModuleListInfoType2 type2;
+  struct SceKernelModuleListInfoType3 type3;
+  struct SceKernelModuleListInfoType4 type4;
+} SceKernelModuleListInfo;
 
 typedef struct
 {
@@ -211,28 +219,28 @@ SceUID ksceKernelGetProcessMainModule(SceUID pid);
 /**
  * @par Example1: Get max to 10 kernel module info
  * @code
- * char infolists[sizeof(SceKernelModuleListInfoType4) * 10];
+ * char infolists[sizeof(SceKernelModuleListInfo) * 10];
  * size_t num = 10;// Get max
  * uint32_t offset = 0;
- * int infosize = 0;
+ * SceKernelModuleListInfo *info;
  * ret = ksceKernelGetModuleList2(0x10005, infolists, &num);
  *
  * for(int i=0;i<num;i++){
- *   memcpy(&isize, (void*)(infolists+offset), 4);
- *   if( infosize == sizeof(SceKernelModuleListInfoType1) ) {
- *     SceKernelModuleListInfoType1 info;
- *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType1) );
- *   }else if( isize == sizeof(SceKernelModuleListInfoType2) ) {
- *     SceKernelModuleListInfoType2 info;
- *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType2) );
- *   }else if( isize == sizeof(SceKernelModuleListInfoType3) ) {
- *     SceKernelModuleListInfoType3 info;
- *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType3) );
- *   }else if( isize == sizeof(SceKernelModuleListInfoType4) ) {
- *     SceKernelModuleListInfoType4 info;
- *     memcpy(&info, (void*)(infolists+offset), sizeof(SceKernelModuleListInfoType4) );
+ *   info = (SceKernelModuleListInfo*)(infolists+offset);
+ *   if( info->size == sizeof(struct SceKernelModuleListInfoType1) ) {
+ *     printf("name %s\n", info->type1.module_name);
+ *     printf("nid 0x%X\n", info->type1.nid);
+ *   }else if( info->size == sizeof(struct SceKernelModuleListInfoType2) ) {
+ *     printf("name %s\n", info->type2.module_name);
+ *     printf("nid 0x%X\n", info->type2.nid);
+ *   }else if( info->size == sizeof(struct SceKernelModuleListInfoType3) ) {
+ *     printf("name %s\n", info->type3.module_name);
+ *     printf("nid 0x%X\n", info->type3.nid);
+ *   }else if( info->size == sizeof(struct SceKernelModuleListInfoType4) ) {
+ *     printf("name %s\n", info->type4.module_name);
+ *     printf("nid 0x%X\n", info->type4.nid);
  *   }
- *   offset += isize;
+ *   offset += info->size;
  * }
  * @endcode
  *
