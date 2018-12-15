@@ -2136,6 +2136,13 @@ modules:
         kernel: true
         nid: 0x496AD8B4
         functions:
+          ksceAesInit1: 0xF12B6451
+          ksceAesInit2: 0xEDA97D6D
+          ksceAesInit3: 0x72408E29
+          ksceAesDecrypt1: 0xD8678061
+          ksceAesDecrypt2: 0xE39CD272
+          ksceAesEncrypt1: 0xC2A61770
+          ksceAesEncrypt2: 0x302947B6
           ksceDeflateDecompress: 0x8AF1FAD4
           ksceDeflateDecompressPartial: 0x3D74CCDF
           ksceGzipDecompress: 0x367EE3DF
