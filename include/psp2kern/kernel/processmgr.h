@@ -13,6 +13,8 @@
 extern "C" {
 #endif
 
+int ksceKernelLaunchApp(char* tid, uint32_t flags, char *path, int unk);
+
 typedef struct SceKernelProcessInfo {
 	SceSize size;           //!< size of this struct, make sure it's 0xE8
 	SceUID pid;             //!< our process ID
