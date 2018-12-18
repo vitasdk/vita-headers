@@ -13,8 +13,6 @@
 extern "C" {
 #endif
 
-int ksceKernelLaunchApp(char* tid, uint32_t flags, char *path, int unk);
-
 typedef struct SceKernelProcessInfo {
 	SceSize size;           //!< size of this struct, make sure it's 0xE8
 	SceUID pid;             //!< our process ID
@@ -32,6 +30,16 @@ int ksceKernelGetProcessInfo(SceUID pid, SceKernelProcessInfo *info);
 int ksceKernelCreateProcessLocalStorage(const char *name, SceSize size);
 void *ksceKernelGetProcessLocalStorageAddr(int key);
 int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
+
+/**
+ * @brief       Launch an application
+ * @param[in]   titleid The TitleId of the app to open.
+ * @param[in]   flags Some unknown flags.
+ * @param[in]   path Path of the eboot.bin to launch.
+  * @param[in]  unk Unknown.
+ * @return      PID of the launched app on success, < 0 on error.
+ */
+SceUID ksceKernelLaunchApp(char* tid, uint32_t flags, char *path, int unk);
 
 /**
  * @brief       Resume a suspended process.
