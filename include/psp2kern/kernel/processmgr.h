@@ -39,7 +39,7 @@ int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_a
  * @param[in]   unk Unknown.
  * @return      PID of the launched app on success, < 0 on error.
  */
-SceUID ksceKernelLaunchApp(char* tid, uint32_t flags, char *path, int unk);
+SceUID ksceKernelLaunchApp(char* titleid, uint32_t flags, char *path, uint32_t unk);
 
 /**
  * @brief       Resume a suspended process.
