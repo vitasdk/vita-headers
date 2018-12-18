@@ -36,7 +36,7 @@ int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_a
  * @param[in]   titleid The TitleId of the app to open.
  * @param[in]   flags Some unknown flags.
  * @param[in]   path Path of the eboot.bin to launch.
-  * @param[in]  unk Unknown.
+ * @param[in]   unk Unknown.
  * @return      PID of the launched app on success, < 0 on error.
  */
 SceUID ksceKernelLaunchApp(char* tid, uint32_t flags, char *path, int unk);
