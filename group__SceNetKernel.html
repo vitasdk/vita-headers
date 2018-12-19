@@ -87,9 +87,9 @@ $(document).ready(function(){initNavTree('group__SceNetKernel.html','');});
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaedba6d62566a95f4e6b249cd70d1af75"><td class="memItemLeft" align="right" valign="top"><a id="gaedba6d62566a95f4e6b249cd70d1af75"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetConnectForSyscalls</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *name, unsigned int namelen)</td></tr>
-<tr class="separator:gaedba6d62566a95f4e6b249cd70d1af75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43edc23fea2c49e44d2f26fab642b81f"><td class="memItemLeft" align="right" valign="top"><a id="ga43edc23fea2c49e44d2f26fab642b81f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetSyscallConnect</b> (int s, const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *name, unsigned int namelen)</td></tr>
+<tr class="separator:ga43edc23fea2c49e44d2f26fab642b81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93a90e964603816ec07e5257903b81bc"><td class="memItemLeft" align="right" valign="top"><a id="ga93a90e964603816ec07e5257903b81bc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocket</b> (const char *name, int domain, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int protocol)</td></tr>
 <tr class="separator:ga93a90e964603816ec07e5257903b81bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,9 +114,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSendto</b> (int
 <tr class="memitem:ga352f873a5a06c900f6c16317c3271d08"><td class="memItemLeft" align="right" valign="top"><a id="ga352f873a5a06c900f6c16317c3271d08"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSetsockopt</b> (int s, int level, int optname, const void *optval, unsigned int optlen)</td></tr>
 <tr class="separator:ga352f873a5a06c900f6c16317c3271d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a3e341e56000623f9e12f2e97b3bd18"><td class="memItemLeft" align="right" valign="top"><a id="ga5a3e341e56000623f9e12f2e97b3bd18"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocketClose</b> (int s)</td></tr>
-<tr class="separator:ga5a3e341e56000623f9e12f2e97b3bd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb8840d8f9271a16dff5cae66a44f204"><td class="memItemLeft" align="right" valign="top"><a id="gabb8840d8f9271a16dff5cae66a44f204"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetClose</b> (int s)</td></tr>
+<tr class="separator:gabb8840d8f9271a16dff5cae66a44f204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -183,6 +183,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga99fdf484ea24a657917ec8a8890d0dfb"><td class="memItemLeft" align="right" valign="top"><a id="ga99fdf484ea24a657917ec8a8890d0dfb"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSend</b>(s,  msg,  len,  flags)&#160;&#160;&#160;ksceNetSendto(s, msg, len, flags, NULL, 0)</td></tr>
 <tr class="separator:ga99fdf484ea24a657917ec8a8890d0dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a412650bc57b5999d65dd80eed75785"><td class="memItemLeft" align="right" valign="top"><a id="ga7a412650bc57b5999d65dd80eed75785"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetSocketClose</b>&#160;&#160;&#160;ksceNetClose</td></tr>
+<tr class="separator:ga7a412650bc57b5999d65dd80eed75785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10afe2fe24e087420dbc3b54345cd886"><td class="memItemLeft" align="right" valign="top"><a id="ga10afe2fe24e087420dbc3b54345cd886"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ksceNetHtons</b>&#160;&#160;&#160;__builtin_bswap16</td></tr>
 <tr class="separator:ga10afe2fe24e087420dbc3b54345cd886"><td class="memSeparator" colspan="2">&#160;</td></tr>
