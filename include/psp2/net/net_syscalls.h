@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-int sceNetConnectForSyscalls(int s, const SceNetSockaddr *name, unsigned int namelen);
+int sceNetSyscallConnect(int s, const SceNetSockaddr *name, unsigned int namelen);
 
 #ifdef __cplusplus
 }
