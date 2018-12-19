@@ -5042,7 +5042,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">processmgr.h</field>
     <field name="url">ern_2kernel_2processmgr_8h_source.html#l00023</field>
     <field name="keywords"></field>
-    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetProcessLocalStorageAddrForPid SceUID pid key out_addr create_if_doesnt_exist ksceKernelResumeProcess SceUID pid ksceKernelSuspendProcess SceUID pid ksceKernelGetProcessStatus SceUID pid status</field>
+    <field name="text">unk SceKernelProcessInfo ksceKernelGetProcessKernelBuf SceUID pid ksceKernelGetProcessInfo SceUID pid SceKernelProcessInfo info ksceKernelCreateProcessLocalStorage name SceSize size ksceKernelGetProcessLocalStorageAddr key ksceKernelGetProcessLocalStorageAddrForPid SceUID pid key out_addr create_if_doesnt_exist SceUID ksceKernelLaunchApp titleid uint32_t flags path uint32_t unk ksceKernelResumeProcess SceUID pid ksceKernelSuspendProcess SceUID pid ksceKernelGetProcessStatus SceUID pid status</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -20281,6 +20281,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceProcessmgrKernel.html</field>
     <field name="keywords">Kernel</field>
     <field name="text">Using this library in your project Include the header file in your project Link the library to the executable</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelLaunchApp</field>
+    <field name="args">(char *titleid, uint32_t flags, char *path, uint32_t unk)</field>
+    <field name="url">group__SceProcessmgrKernel.html#gaeb5a46182cc592a51b588efcfc56eace</field>
+    <field name="keywords">ksceKernelLaunchApp</field>
+    <field name="text">Launch an application titleid The TitleId of the app to open flags Some unknown flags path Path of the eboot.bin to launch unk Unknown PID of the launched app on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">function</field>
