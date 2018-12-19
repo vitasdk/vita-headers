@@ -550,11 +550,11 @@ int ksceNetListen(int s, int backlog);
 int ksceNetRecvfrom(int s, void *buf, unsigned int len, int flags, SceNetSockaddr *from, unsigned int *fromlen);
 int ksceNetSendto(int s, const void *msg, unsigned int len, int flags, const SceNetSockaddr *to, unsigned int tolen);
 int ksceNetSetsockopt(int s, int level, int optname, const void *optval, unsigned int optlen);
-int ksceNetSocketClose(int s);
+int ksceNetClose(int s);
 
 #define ksceNetRecv(s, buf, len, flags) ksceNetRecvfrom(s, buf, len, flags, NULL, 0)
 #define ksceNetSend(s, msg, len, flags) ksceNetSendto(s, msg, len, flags, NULL, 0)
-#define ksceNetSocketClose(int s) ksceNetClose(int s)
+#define ksceNetSocketClose ksceNetClose
 
 /* fixme ? */
 #define ksceNetHtons __builtin_bswap16
