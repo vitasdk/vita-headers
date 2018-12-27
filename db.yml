@@ -8819,15 +8819,21 @@ modules:
         nid: 0x96D306FA
         functions:
           ksceSdifCopyCtx: 0x23A4EF01
+          ksceSdifGetCID: 0x23A4EF01
           ksceSdifGetCardInsertState1: 0x36A2B01B
           ksceSdifGetCardInsertState2: 0xFD9E5CFA
           ksceSdifGetSdContextGlobal: 0xDC8F52F8
           ksceSdifGetSdContextPartMmc: 0x6A71987F
           ksceSdifGetSdContextPartSd: 0xB9EA5B1E
           ksceSdifGetSdContextPartSdio: 0x6A8235FC
+          ksceSdifGetSdContextPartValidateMmc: 0x6A71987F
+          ksceSdifGetSdContextPartValidateSd: 0xB9EA5B1E
+          ksceSdifGetSdContextPartValidateSdio: 0x6A8235FC
+          ksceSdifInitializeMmcDevice: 0x22C82E79
           ksceSdifInitializeSdContextPartMmc: 0x22C82E79
           ksceSdifInitializeSdContextPartSd: 0xC1271539
-          ksceSdifReadSector: 0xB9593652
-          ksceSdifReadSectorAsync: 0x6F8D529B
-          ksceSdifWriteSector: 0xE0781171
-          ksceSdifWriteSectorAsync: 0x175543D2
+          ksceSdifInitializeSdDevice: 0xC1271539
+          ksceSdifReadSectorMmc: 0x6F8D529B
+          ksceSdifReadSectorSd: 0xB9593652
+          ksceSdifWriteSectorMmc: 0x175543D2
+          ksceSdifWriteSectorSd: 0xE0781171
