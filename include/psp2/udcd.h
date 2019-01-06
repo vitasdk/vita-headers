@@ -39,16 +39,16 @@ typedef struct {
 	uint8_t info[64];
 } SceUdcdDeviceInfo;
 
-typedef struct {
+typedef struct SceUdcdWaitParam {
 	int unk_00;
-	int unk_04;
+	int status;
 	int unk_08;
 	int unk_0C;
 	int unk_10;
 	const char *driverName;
 } SceUdcdWaitParam;
 
-typedef struct {
+typedef struct SceUdcdDeviceState {
 	int unk_00;
 	int state;
 	int cable;
