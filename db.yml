@@ -8202,6 +8202,21 @@ modules:
           ksceSysconShowModeSet: 0x6D65B70F
           ksceSysconVerifyConfigstorageScript: 0xCC6F90A8
           ksceSysconWaitInitialized: 0x55DF1C9B
+  SceLcd:
+    nid: 0x32FDD1BB
+    libraries:
+      SceLcdForDriver:
+        kernel: true
+        nid: 0xFA916D71
+        functions:
+            ksceLcdDisplayOff: 0x1A0A7519
+            ksceLcdDisplayOn: 0x5F4124AB
+            ksceLcdGetBrightness: 0x3A6D6AC3
+            ksceLcdGetDDB: 0xE03E120B
+            ksceLcdGetDisplayColorSpaceMode: 0x17F66722
+            ksceLcdSetBrightness: 0x581D3A87
+            ksceLcdSetDisplayColorSpaceMode: 0xD40968FB
+            ksceLcdWaitReady: 0x0C7E03D8
   SceLowio:
     nid: 0x17E0D8DF
     libraries:
