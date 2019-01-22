@@ -33,7 +33,9 @@ typedef enum SceAudioInErrorCode {
 	//! Port is not opened
 	SCE_AUDIO_IN_ERROR_NOT_OPENED           = 0x80260109,
 	//! Tried to input while busy
-	SCE_AUDIO_IN_ERROR_BUSY                 = 0x8026010A
+	SCE_AUDIO_IN_ERROR_BUSY                 = 0x8026010A,
+	//! Invalid parameter
+	SCE_AUDIO_IN_ERROR_INVALID_PARAMETER    = 0x8026010B
 } SceAudioInErrorCode;
 
 typedef enum SceAudioInPortType {
