@@ -85,7 +85,13 @@ typedef struct SceAppMgrSaveDataSlotDelete {
 	SceAppUtilSaveDataMountPoint mountPoint;  //!< Savedata mountpoint
 } SceAppMgrSaveDataSlotDelete;
 
-typedef struct SceAppMgrAppState SceAppMgrAppState; // Missing struct
+typedef struct SceAppMgrAppState {
+	SceUInt32 systemEventNum;
+	SceUInt32 appEventNum;
+	SceBool isSystemUiOverlaid;
+	SceUInt8 reserved[116];
+} SceAppMgrAppState;
+
 typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing struct
 
