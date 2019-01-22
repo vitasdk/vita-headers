@@ -46,7 +46,13 @@ typedef unsigned int SceAppUtilSaveDataSlotStatus;
 typedef unsigned int SceAppUtilAppParamId;
 typedef unsigned int SceAppUtilBgdlStatusType;
 
-typedef struct SceAppUtilBgdlStatus SceAppUtilBgdlStatus; // Missing struct
+typedef struct SceAppUtilBgdlStatus {
+	SceAppUtilBgdlStatusType type;
+	SceUInt32 addcontNumReady;
+	SceUInt32 addcontNumNotReady;
+	SceUInt32 licenseReady;
+	SceChar8 reserved[28];
+} SceAppUtilBgdlStatus;
 
 typedef struct SceAppUtilInitParam {
 	SceSize workBufSize;  //!< Buffer size
