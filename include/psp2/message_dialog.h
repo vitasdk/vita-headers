@@ -70,7 +70,10 @@ typedef enum SceMsgDialogButtonId {
 	SCE_MSG_DIALOG_BUTTON_ID_OK         = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_YES        = 1,
 	SCE_MSG_DIALOG_BUTTON_ID_NO         = 2,
-	SCE_MSG_DIALOG_BUTTON_ID_RETRY      = 3
+	SCE_MSG_DIALOG_BUTTON_ID_RETRY      = 3,
+	SCE_MSG_DIALOG_BUTTON_ID_BUTTON1    = 1,
+	SCE_MSG_DIALOG_BUTTON_ID_BUTTON2    = 2,
+	SCE_MSG_DIALOG_BUTTON_ID_BUTTON3    = 3
 } SceMsgDialogButtonId;
 
 typedef enum SceMsgDialogProgressBarType {
