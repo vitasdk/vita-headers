@@ -136,9 +136,9 @@ typedef enum SceSysmoduleInternalModuleId {
 	SCE_SYSMODULE_INTERNAL_NP_COMMERCE2               = 0x8000001D, //!< NpCommerce2 module
 	SCE_SYSMODULE_INTERNAL_NP_KDC                     = 0x8000001E, //!< NpKdc module
 	SCE_SYSMODULE_INTERNAL_MUSIC_EXPORT               = 0x8000001F, //!< Music Export module
-	SCE_SYSMODULE_INTERNAL_NP_MESSAGE_DLG_IMPL        = 0x80000021, //!< NpMessageDlg module
+	SCE_SYSMODULE_INTERNAL_NP_MESSAGE_DIALOG_IMPL     = 0x80000021, //!< NpMessageDlg module
 	SCE_SYSMODULE_INTERNAL_NP_MESSAGE_CONTACTS        = 0x80000022, //!< NpMessageContacts module
-	SCE_SYSMODULE_INTERNAL_DBRECOVERY_UTILITY         = 0x80000023, //!< DBRecoveryUtil module
+	SCE_SYSMODULE_INTERNAL_DB_RECOVERY_UTILITY        = 0x80000023, //!< DBRecoveryUtil module
 	SCE_SYSMODULE_INTERNAL_PROMOTER_UTIL              = 0x80000024, //!< scePromoterUtil module
 	SCE_SYSMODULE_INTERNAL_PARTY_MEMBER_LIST          = 0x80000026, //!< Party Member List module
 	SCE_SYSMODULE_INTERNAL_ULT                        = 0x80000025, //!< Ult module
