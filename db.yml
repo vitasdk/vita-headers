@@ -1029,6 +1029,7 @@ modules:
           ksceCtrlSetBdRemoconConnected: 0xAA36F578
           ksceCtrlSetButtonEmulation: 0x1E750326
           ksceCtrlSetButtonIntercept: 0x06AA5E1A
+          ksceCtrlSetCtrlpCallback: 0x7AD9467E
           ksceCtrlSetIdleCancelKey: 0x0A679512
           ksceCtrlSetIdleCancelThreshold: 0x345E74FD
           ksceCtrlSetRapidFire: 0xA248CDAE
@@ -1985,13 +1986,18 @@ modules:
         kernel: true
         nid: 0x63A519E5
         functions:
+          ksceGUIDGetUIDVectorByClass: 0xEC7D36EF
           ksceKernelCreateUidObj: 0xDF0288D7
           ksceKernelFindClassByName: 0x62989905
+          ksceKernelGetFixedHeapInfoByPointer: 0x219E90FD
+          ksceKernelGetHeapInfoByPtr: 0x68451777
           ksceKernelGetMemBlockType: 0x289BE3EC
           ksceKernelGetUidDLinkClass: 0xC105604E
           ksceKernelGetUidHeapClass: 0x4CCA935D
           ksceKernelGetUidMemBlockClass: 0xAF729575
+          ksceKernelNameHeapGetInfo: 0xE443253B
           ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
+          ksceKernelUIDEntryHeapGetInfo: 0x686AA15C
       SceSysclibForDriver:
         kernel: true
         nid: 0x7EE45391
@@ -7464,6 +7470,7 @@ modules:
           ksceTouchRead: 0x70C8AACE
           ksceTouchReadRegion: 0x9A91F624
           ksceTouchRegisterVirtualTouchDriver: 0x03C3AC7C
+          ksceTouchSetCtrlpCallback: 0x628D9324
           ksceTouchSetRegion: 0x7985B164
           ksceTouchSetRegionAttr: 0x10A998DE
           ksceTouchSetSamplingState: 0x1247257A
@@ -8101,12 +8108,14 @@ modules:
           scePromoterUtilityDeletePkg: 0x7D46752F
           scePromoterUtilityExit: 0xC95D24A6
           scePromoterUtilityGetResult: 0x49B473F0
+          scePromoterUtilityGetSize: 0x1F5EA997
           scePromoterUtilityGetState: 0xABEC74D2
           scePromoterUtilityInit: 0x93451536
-          scePromoterUtilityPromoteBackup: 0x4B37808F
+          scePromoterUtilityPromoteImport: 0x4B37808F
           scePromoterUtilityPromotePkg: 0x716C81F4
           scePromoterUtilityPromotePkgWithRif: 0x86641BC6
           scePromoterUtilityUpdateLiveArea: 0x17D73ECA
+          scePromoterUtilityUpdateUpgradableStatus: 0x82E69783
   SceMtpIfDriver:
     nid: 0xEA885947
     libraries:
@@ -8507,6 +8516,9 @@ modules:
         functions:
           ksceDmacMemcpy: 0x00896B11
           ksceDmacMemset: 0x4BAC049B
+          ksceKernelDmaOpAlloc: 0x7CD5088A
+          ksceKernelDmaOpAssign: 0xFCE4171A
+          ksceKernelDmaOpFree: 0xADFF1186
   SceCompat:
     nid: 0x8F2D0378
     libraries:

@@ -53,13 +53,13 @@ int scePromoterUtilityDeletePkg(const char *titleid);
 int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
 
 /**
- * Install a backup from a directory, and add an icon on the LiveArea.
+ * Install a import from a directory, and add an icon on the LiveArea.
  *
- * @param[in] *path - the path of the directory where the extracted content of the backup is
+ * @param[in] *path - the path of the directory where the extracted content of the import is
  *
  * @return 0 on success.
  */
-int scePromoterUtilityPromoteBackup(const char *path);
+int scePromoterUtilityPromoteImport(const char *path);
 
 /**
  * Install a package from a directory, and add an icon on the LiveArea.
