@@ -245,9 +245,9 @@ var NAVTREEINDEX5 =
 "group__SceProcessmgrUser.html#gaf64b2cd0fc96095e3f77dee2dc9a68c3":[1,6,6,0,5],
 "group__ScePromoterUtil.html":[1,12,2],
 "group__ScePromoterUtilUser.html":[1,12,2,0],
-"group__ScePromoterUtilUser.html#ga0afd202451e3ba424136da630b5f3617":[1,12,2,0,6],
 "group__ScePromoterUtilUser.html#ga0bb20f69381f605e9fe5eff670b6ffd2":[1,12,2,0,4],
 "group__ScePromoterUtilUser.html#ga0dda33e468ce7227977204a10da6b28e":[1,12,2,0,9],
 "group__ScePromoterUtilUser.html#ga33fffeec15e5daff578d42102ad9572f":[1,12,2,0,3],
-"group__ScePromoterUtilUser.html#ga3eaa14534e74c63b28a9df6570cdbbce":[1,12,2,0,8]
+"group__ScePromoterUtilUser.html#ga3eaa14534e74c63b28a9df6570cdbbce":[1,12,2,0,8],
+"group__ScePromoterUtilUser.html#ga5ffdfd2b012b44bc8522fa87554da475":[1,12,2,0,0]
 };

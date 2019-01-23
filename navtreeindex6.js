@@ -1,8 +1,8 @@
 var NAVTREEINDEX6 =
 {
-"group__ScePromoterUtilUser.html#ga5ffdfd2b012b44bc8522fa87554da475":[1,12,2,0,0],
 "group__ScePromoterUtilUser.html#ga6879c67b9aa18d951f8be26748fb6796":[1,12,2,0,5],
 "group__ScePromoterUtilUser.html#ga712e022fa45b8ccd3c9102c0ac850959":[1,12,2,0,7],
+"group__ScePromoterUtilUser.html#ga944d691a6f8b071c4fddf6e49a8bdc0b":[1,12,2,0,6],
 "group__ScePromoterUtilUser.html#gab1ac7663e0832a68075c3f5ce5b0d03a":[1,12,2,0,1],
 "group__ScePromoterUtilUser.html#gabaf2f7034ae507707a7d8bd76d3992a8":[1,12,2,0,2],
 "group__ScePspnetAdhoc.html":[1,7,5],

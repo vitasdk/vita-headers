@@ -6,7 +6,7 @@ var group__ScePromoterUtilUser =
     [ "scePromoterUtilityGetResult", "group__ScePromoterUtilUser.html#ga33fffeec15e5daff578d42102ad9572f", null ],
     [ "scePromoterUtilityGetState", "group__ScePromoterUtilUser.html#ga0bb20f69381f605e9fe5eff670b6ffd2", null ],
     [ "scePromoterUtilityInit", "group__ScePromoterUtilUser.html#ga6879c67b9aa18d951f8be26748fb6796", null ],
-    [ "scePromoterUtilityPromoteBackup", "group__ScePromoterUtilUser.html#ga0afd202451e3ba424136da630b5f3617", null ],
+    [ "scePromoterUtilityPromoteImport", "group__ScePromoterUtilUser.html#ga944d691a6f8b071c4fddf6e49a8bdc0b", null ],
     [ "scePromoterUtilityPromotePkg", "group__ScePromoterUtilUser.html#ga712e022fa45b8ccd3c9102c0ac850959", null ],
     [ "scePromoterUtilityPromotePkgWithRif", "group__ScePromoterUtilUser.html#ga3eaa14534e74c63b28a9df6570cdbbce", null ],
     [ "scePromoterUtilityUpdateLiveArea", "group__ScePromoterUtilUser.html#ga0dda33e468ce7227977204a10da6b28e", null ]

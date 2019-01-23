@@ -95,9 +95,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0dda33e468ce7227977204a10da6b28e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#ga0dda33e468ce7227977204a10da6b28e">scePromoterUtilityUpdateLiveArea</a> (<a class="el" href="group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate">ScePromoterUtilityLAUpdate</a> *args)</td></tr>
 <tr class="memdesc:ga0dda33e468ce7227977204a10da6b28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the LiveArea resources of an app.  <a href="#ga0dda33e468ce7227977204a10da6b28e">More...</a><br /></td></tr>
 <tr class="separator:ga0dda33e468ce7227977204a10da6b28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0afd202451e3ba424136da630b5f3617"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#ga0afd202451e3ba424136da630b5f3617">scePromoterUtilityPromoteBackup</a> (const char *path)</td></tr>
-<tr class="memdesc:ga0afd202451e3ba424136da630b5f3617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a backup from a directory, and add an icon on the LiveArea.  <a href="#ga0afd202451e3ba424136da630b5f3617">More...</a><br /></td></tr>
-<tr class="separator:ga0afd202451e3ba424136da630b5f3617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga944d691a6f8b071c4fddf6e49a8bdc0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#ga944d691a6f8b071c4fddf6e49a8bdc0b">scePromoterUtilityPromoteImport</a> (const char *path)</td></tr>
+<tr class="memdesc:ga944d691a6f8b071c4fddf6e49a8bdc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a import from a directory, and add an icon on the LiveArea.  <a href="#ga944d691a6f8b071c4fddf6e49a8bdc0b">More...</a><br /></td></tr>
+<tr class="separator:ga944d691a6f8b071c4fddf6e49a8bdc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga712e022fa45b8ccd3c9102c0ac850959"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePromoterUtilUser.html#ga712e022fa45b8ccd3c9102c0ac850959">scePromoterUtilityPromotePkg</a> (const char *path, int sync)</td></tr>
 <tr class="memdesc:ga712e022fa45b8ccd3c9102c0ac850959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a package from a directory, and add an icon on the LiveArea.  <a href="#ga712e022fa45b8ccd3c9102c0ac850959">More...</a><br /></td></tr>
 <tr class="separator:ga712e022fa45b8ccd3c9102c0ac850959"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,14 +307,14 @@ Target app. </td></tr>
 
 </div>
 </div>
-<a id="ga0afd202451e3ba424136da630b5f3617"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0afd202451e3ba424136da630b5f3617">&sect;&nbsp;</a></span>scePromoterUtilityPromoteBackup()</h2>
+<a id="ga944d691a6f8b071c4fddf6e49a8bdc0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga944d691a6f8b071c4fddf6e49a8bdc0b">&sect;&nbsp;</a></span>scePromoterUtilityPromoteImport()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePromoterUtilityPromoteBackup </td>
+          <td class="memname">int scePromoterUtilityPromoteImport </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
@@ -323,10 +323,10 @@ Target app. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Install a backup from a directory, and add an icon on the LiveArea. </p>
+<p>Install a import from a directory, and add an icon on the LiveArea. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*path</td><td>- the path of the directory where the extracted content of the backup is</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*path</td><td>- the path of the directory where the extracted content of the import is</td></tr>
   </table>
   </dd>
 </dl>
