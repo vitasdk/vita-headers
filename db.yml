@@ -2063,6 +2063,11 @@ modules:
           ksceKernelCpuSpinLockIrqRestore: 0x740A0750
           ksceKernelCpuSpinLockIrqSave: 0xEC53D007
           ksceKernelCpuSuspendIntr: 0xD32ACE9E
+      SceSysrootForDriver:
+        kernel: true
+        nid: 0x2ED7F97A
+        functions:
+          ksceKernelSysrootGetSystemSwVersion: 0x67AAB627
       SceSysrootForKernel:
         kernel: true
         nid: 0x3691DA45
