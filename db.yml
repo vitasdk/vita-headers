@@ -8178,10 +8178,10 @@ modules:
         functions:
           ksceSysconBatteryExecBLCommand: 0x74B2AB55
           ksceSysconBatteryReadBLCommand: 0x448DAFF1
+          ksceSysconBatterySWReset: 0x87DA378D
           ksceSysconBatterySetBLCommand: 0xE4F29744
           ksceSysconBatteryStartBLMode: 0x2CEF078E
           ksceSysconBatteryStopBLMode: 0xE4AE7852
-          ksceSysconBatterySWReset: 0x87DA378D
           ksceSysconBeginConfigstorageTransaction: 0xA4968B8C
           ksceSysconClearTemperatureLog: 0x3843D657
           ksceSysconCmdExec: 0x9ADDCA4A
@@ -8204,8 +8204,8 @@ modules:
           ksceSysconGetBaryonVersion: 0xFF86F4C5
           ksceSysconGetBatteryCalibData: 0x9ADC9936
           ksceSysconGetBatteryVersion: 0x68E0031E
-          ksceSysconGetHardwareInfo: 0xCBD6D8BC
           ksceSysconGetHardwareInfo2: 0x965C68C3
+          ksceSysconGetHardwareInfo: 0xCBD6D8BC
           ksceSysconGetLogInfo: 0x701535FC
           ksceSysconGetManualChargeMode: 0x4FEC564C
           ksceSysconGetManufacturesStatus: 0x3E09A1F4
