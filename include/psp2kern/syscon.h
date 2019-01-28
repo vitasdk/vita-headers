@@ -109,7 +109,7 @@ int ksceSysconCmdSync(SceSysconPacket *packet, int noWait);
  *
  * @return 0 on success.
  */
-int ksceSysconResetDevice(int type, int mode);
+int ksceSysconSetPowerMode(int type, int mode);
 
 int ksceSysconReadCommand(unsigned short cmd, void *buffer, unsigned int size);
 int ksceSysconSendCommand(unsigned short cmd, const void *buffer, unsigned int size);
@@ -138,7 +138,7 @@ int ksceSysconCtrlLED(int led, int enable);
  *
  * @return 0 on success.
  */
-int ksceSysconCtrlMsPower(int power);
+int ksceSysconCtrlRMRPower(int power);
 
 /**
  * Set the SD power.
