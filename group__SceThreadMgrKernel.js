@@ -47,6 +47,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelExitThread", "group__SceThreadMgrKernel.html#ga374f8554b36f0b172844ee3193021099", null ],
     [ "ksceKernelGetCallbackCount", "group__SceThreadMgrKernel.html#gadd611f34b3c5f8ae11a29ce67ef768f8", null ],
     [ "ksceKernelGetFaultingProcess", "group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d", null ],
+    [ "ksceKernelGetMutexInfo", "group__SceThreadMgrKernel.html#ga05007c0e839fa8cf5e777e7732d5fbf3", null ],
     [ "ksceKernelGetProcessId", "group__SceThreadMgrKernel.html#gad96a0666be5b944b1d8595b952ef8041", null ],
     [ "ksceKernelGetProcessMainThread", "group__SceThreadMgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b", null ],
     [ "ksceKernelGetSystemTimeWide", "group__SceThreadMgrKernel.html#ga57c16d113cd78bd9f1bd5548c5ef0b28", null ],
