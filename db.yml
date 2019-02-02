@@ -2095,9 +2095,7 @@ modules:
           ksceKernelGetPhysicalMemoryType: 0x0AAA4FDD
           ksceKernelGetPidContext: 0x2ECF7944
           ksceKernelGetUidClass: 0x85336A1C
-          ksceKernelGetUnknownValidPhysAddressSpace: 0xC9928F5E
           ksceKernelIsPaddrWithinSameSectionForUid: 0xF4AD89D8
-          ksceKernelIsPaddrWithinUnknownValidPhysAddressSpace: 0xA7C0D1FC
           ksceKernelKernelUidForUserUid: 0x45D22597
           ksceKernelKernelUidForUserUidForClass: 0x184172B1
           ksceKernelMapBlockUserVisible: 0x58D21746
@@ -2113,7 +2111,6 @@ modules:
           ksceKernelMemBlockRelease: 0x00575B00
           ksceKernelMemBlockType2Memtype: 0x20C811FA
           ksceKernelMemBlockTypeGetPrivileges: 0x6A0792A3
-          ksceKernelMemBlockTypeGetUnknown: 0xCB0F3A33
           ksceKernelMemRangeRelease: 0x75C70DE0
           ksceKernelMemRangeReleaseForPid: 0xA8525B06
           ksceKernelMemRangeReleaseWithPerm: 0x22CBE925
@@ -2222,7 +2219,6 @@ modules:
           ksceKernelCpuDcacheWritebackAll: 0x73A30DB2
           ksceKernelCpuDcacheWritebackInvalidateAll: 0x76DAB4D0
           ksceKernelCpuDcacheWritebackInvalidateRange: 0x6BA2E51C
-          ksceKernelCpuForKernel_9B8173F4: 0x9B8173F4
           ksceKernelCpuGetCONTEXTIDR: 0x5B6B3274
           ksceKernelCpuGetPaddr: 0x2A46E800
           ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x19F17BD0
@@ -2384,17 +2380,11 @@ modules:
           ksceSysrootGetSelfAuthInfo: 0x4F0A4066
           ksceSysrootGetSelfInfo: 0xF10AB792
           ksceSysrootGetSessionId: 0x84783B71
-          ksceSysrootGetUnk10: 0x403B509E
-          ksceSysrootGetUnkC: 0xFFD6E24D
-          ksceSysrootGetUnkC0: 0xAB3CC7D0
           ksceSysrootGetWakeupFactor: 0x2F97041A
           ksceSysrootIsAuCodecIcConexant: 0x46E72428
           ksceSysrootIsBsodReboot: 0x4373AC96
           ksceSysrootIsExternalBootMode: 0x89D19090
           ksceSysrootIsSafeMode: 0x834439A7
-          ksceSysrootIsSomeBootMode2: 0x7918D44E
-          ksceSysrootIsSomeMode: 0xAE7A8F1D
-          ksceSysrootIsUnknownReboot: 0xE4EA1960
           ksceSysrootIsUpdateMode: 0xB0E1FC67
           ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
           ksceSysrootRegisterLicMgrGetLicenseStatus: 0x71DB83A2
@@ -2959,7 +2949,7 @@ modules:
           ksceIoChstatAsync: 0x7EC442BF
           ksceIoChstatByFd: 0xDF57A75F
           ksceIoChstatByFdAsync: 0xEC974400
-          ksceIoChstatForDriver_2: 0x1F98BD50
+          ksceIoChstat2: 0x1F98BD50
           ksceIoClearErrorEvent: 0x40B933C7
           ksceIoClose: 0xF99DD8A3
           ksceIoCloseAsync: 0x11C57CC6
@@ -2975,7 +2965,7 @@ modules:
           ksceIoDopenAsync: 0x72F06BDE
           ksceIoDread: 0x20CF5FC7
           ksceIoDreadAsync: 0x5982B0E3
-          ksceIoDreadForDriver_2: 0x03051B02
+          ksceIoDread2: 0x03051B02
           ksceIoFlock: 0x16336A0D
           ksceIoGetMediaType: 0x9C220246
           ksceIoGetProcessDefaultPriorityForSystem: 0xCE397158
@@ -2983,7 +2973,7 @@ modules:
           ksceIoGetstatAsync: 0x94A5304A
           ksceIoGetstatByFd: 0x462F059B
           ksceIoGetstatByFdAsync: 0x0FEE1238
-          ksceIoGetstatForDriver_2: 0xD6503624
+          ksceIoGetstat2: 0xD6503624
           ksceIoIoctl: 0x161CD33F
           ksceIoIoctlAsync: 0xB761E91B
           ksceIoLseek: 0x62090481
@@ -3028,7 +3018,7 @@ modules:
           ksceVfsOpDevctl: 0xB07B307D
           ksceVfsUnmount: 0x9C7E7B76
           ksceVopChstat: 0x1974FA92
-          ksceVopClsoe: 0x40944C2E
+          ksceVopClose: 0x40944C2E
           ksceVopCreate: 0x9E347C7D
           ksceVopDclose: 0x1350F5C7
           ksceVopDopen: 0x00C9C2DD
@@ -3197,32 +3187,32 @@ modules:
         kernel: true
         nid: 0x2254E1B2
         functions:
-          _ksceSblPostSsMgrExecutePmSmF00dCommandForDriver: 0xFE92A318
+          _ksceSblPostSsMgrExecutePmSmF00dCommand: 0xFE92A318
           ksceSblLicMgrGetActivationKey: 0xF7F1015B
           ksceSblLicMgrGetLicenseStatus: 0x15F37282
-          ksceSblPostSsMgrActivateForDriver: 0x0298382B
-          ksceSblPostSsMgrDebugDecryptKeystoneForDriver: 0xCC5AA5A5
-          ksceSblPostSsMgrDebugEncryptKeystoneForDriver: 0x42474C8B
-          ksceSblPostSsMgrDecryptSealedkeyForDriver: 0x33275F95
-          ksceSblPostSsMgrEncryptSealedkeyForDriver: 0x08525D8D
-          ksceSblPostSsMgrExecutePmSmF00dCommand8ForDriver: 0x4663C195
-          ksceSblPostSsMgrExecutePmSmF00dCommandForDriver: 0xADF92824
-          ksceSblPostSsMgrExecutePmSmSdF00dCommandForDriver: 0x19B63D65
-          ksceSblPostSsMgrGetExpireDateForDriver: 0x4FF2682F
-          ksceSblPostSsMgrInitializeSpfsoCtxForDriver: 0xBDF18922
-          ksceSblPostSsMgrReleaseSpfsoCtxForDriver: 0xAD3B0078
-          ksceSblPostSsMgrSetCpRtcForDriver: 0x3F9BDEDF
-          ksceSblPostSsMgrVerifyKeystoneForDriver: 0xDDA6FA6D
-          ksceSblPostSsMgrVerifyKeystoneWithPasscodeForDriver: 0xF86F1452
-          ksceSblPostSsMgrVerifySpfsoCtxForDriver: 0x686B9461
+          ksceSblPostSsMgrActivate: 0x0298382B
+          ksceSblPostSsMgrDebugDecryptKeystone: 0xCC5AA5A5
+          ksceSblPostSsMgrDebugEncryptKeystone: 0x42474C8B
+          ksceSblPostSsMgrDecryptSealedkey: 0x33275F95
+          ksceSblPostSsMgrEncryptSealedkey: 0x08525D8D
+          ksceSblPostSsMgrExecutePmSmF00dCommand8: 0x4663C195
+          ksceSblPostSsMgrExecutePmSmF00dCommand: 0xADF92824
+          ksceSblPostSsMgrExecutePmSmSdF00dCommand: 0x19B63D65
+          ksceSblPostSsMgrGetExpireDate: 0x4FF2682F
+          ksceSblPostSsMgrInitializeSpfsoCtx: 0xBDF18922
+          ksceSblPostSsMgrReleaseSpfsoCtx: 0xAD3B0078
+          ksceSblPostSsMgrSetCpRtc: 0x3F9BDEDF
+          ksceSblPostSsMgrVerifyKeystone: 0xDDA6FA6D
+          ksceSblPostSsMgrVerifyKeystoneWithPasscode: 0xF86F1452
+          ksceSblPostSsMgrVerifySpfsoCtx: 0x686B9461
           ksceSblRtcMgrGetCpRtcLogical: 0xDE5150FE
           ksceSblRtcMgrGetCpRtcPhysical: 0x942010A0
-          ksceSblUtMgrExecuteUtokenSmCommand1ForDriver: 0xC2E58CE3
+          ksceSblUtMgrExecuteUtokenSmCommand1: 0xC2E58CE3
           ksceSblUtMgrGetTrilithiumBuffer: 0xABDD68CD
-          ksceSblUtMgrHasComTestFlagForDriver: 0x7ACCAA50
-          ksceSblUtMgrHasNpTestFlagForDriver: 0x9FD835B0
-          ksceSblUtMgrHasStoreFlagForDriver: 0x9D2E2D39
-          ksceSblUtMgrResetUtokenFileForDriver: 0x1FF699DD
+          ksceSblUtMgrHasComTestFlag: 0x7ACCAA50
+          ksceSblUtMgrHasNpTestFlag: 0x9FD835B0
+          ksceSblUtMgrHasStoreFlag: 0x9D2E2D39
+          ksceSblUtMgrResetUtokenFile: 0x1FF699DD
       SceSblPmMgr:
         kernel: false
         nid: 0xA9CE5795
@@ -7207,8 +7197,6 @@ modules:
           kscePowerIsLowBattery: 0xD3075926
           kscePowerIsPowerOnline: 0x87440F5E
           kscePowerIsRequest: 0x7FA406DD
-          kscePowerIsSomethingBattery: 0x0D56C601
-          kscePowerIsSomethingBattery2: 0x627A89C6
           kscePowerIsSuspendRequired: 0x78A1A796
           kscePowerRegisterCallback: 0x04B7766E
           kscePowerRequestColdReset: 0x0442D852
@@ -9637,11 +9625,8 @@ modules:
           ksceSblSmSchedProxyExecuteF00DCommand: 0x7894B6F0
           ksceSblSmSchedProxyGetCommandF00DRegister: 0xF70C04EC
           ksceSblSmSchedProxyGetStatus: 0x27EB92F1
-          ksceSblSmSchedProxyGetUnknownF00DRegister: 0x3CE17233
           ksceSblSmSchedProxyInitialize: 0xA488D604
           ksceSblSmSchedProxyInvoke: 0x1916509B
-          ksceSblSmSchedProxyNotImplementedMaybeSMC0x131: 0x984EC9D1
-          ksceSblSmSchedProxyNotImplementedMaybeSMC0x132: 0x1DFC8624
           ksceSblSmSchedProxyReadCry2Arm: 0x973A4A7D
           ksceSblSmSchedProxyUninitialize: 0x33A3A1E2
           ksceSblSmSchedProxyWait: 0xF35EFC1A
