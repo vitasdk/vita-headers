@@ -1033,140 +1033,187 @@ stride</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
+<div class="textblock"><p>Texture struct. </p>
+</div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaa63b168b33f6c987142259179b884aca"></a>union <a class="el" href="group__SceGxmUser.html#unionSceGxmTexture_8____unnamed____">SceGxmTexture</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga0af67498c5250abe838bf26ab9a09331"></a>union <a class="el" href="group__SceGxmUser.html#unionSceGxmTexture_8____unnamed____">SceGxmTexture</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab325dcc80263d6cbb58f03bdc4efd7cb"></a>union <a class="el" href="group__SceGxmUser.html#unionSceGxmTexture_8____unnamed____">SceGxmTexture</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="gafe01ffea4047bcaf82e1ab9464842682"></a>uint32_t</td>
 <td class="fieldname">
 base_format: 5</td>
 <td class="fielddoc">
-</td></tr>
+Texture base format. </td></tr>
 <tr><td class="fieldtype">
 <a id="gac224f87a85a3eee45d7b6261f6fb6433"></a>uint32_t</td>
 <td class="fieldname">
 data_addr: 30</td>
 <td class="fielddoc">
-</td></tr>
+Texture data address. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga3dbbef2ad9cb2765dde18949e6989b82"></a>uint32_t</td>
 <td class="fieldname">
 format0: 1</td>
 <td class="fielddoc">
-</td></tr>
+Texture format extension. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga3d0917ba92d72ca026d408cfb49b7449"></a>uint32_t</td>
 <td class="fieldname">
 gamma_mode: 2</td>
 <td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabc3dca23e6eb316c83f1d0fc17825457"></a>uint32_t</td>
-<td class="fieldname">
-height: 12</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga871245b8bbff5fb62fc8a7b073a5233a"></a>uint32_t</td>
-<td class="fieldname">
-lod_bias: 6</td>
-<td class="fielddoc">
-</td></tr>
+Gamma mode. </td></tr>
 <tr><td class="fieldtype">
 <a id="gad3132301633fd72623175a2aceeed79d"></a>uint32_t</td>
 <td class="fieldname">
 lod_min0: 2</td>
 <td class="fielddoc">
-</td></tr>
+Level of Details higher bits. </td></tr>
 <tr><td class="fieldtype">
 <a id="gae72e128da359e5f08b97c0841767a298"></a>uint32_t</td>
 <td class="fieldname">
 lod_min1: 2</td>
 <td class="fielddoc">
-</td></tr>
+Level of Details lower bits. </td></tr>
 <tr><td class="fieldtype">
 <a id="gae5ca551ba83b159351aed4e974e5295a"></a>uint32_t</td>
 <td class="fieldname">
 mag_filter: 2</td>
 <td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga4eb9002bb7e451098d5ff3ac902ac3b3"></a>uint32_t</td>
-<td class="fieldname">
-min_filter: 2</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga3ab084ae0bfd998a0b76e7ff43d95cb0"></a>uint32_t</td>
-<td class="fieldname">
-mip_count: 4</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gae54b0c806611cb83fe7c51eec2f1bae1"></a>uint32_t</td>
-<td class="fieldname">
-mip_filter: 1</td>
-<td class="fielddoc">
-</td></tr>
+Mag Filter (and Min filter if LINEAR_STRIDED texture) </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5a5a7c96fe3effef2301fca3551cd113"></a>uint32_t</td>
 <td class="fieldname">
 normalize_mode: 1</td>
 <td class="fielddoc">
-</td></tr>
+Normalize mode. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5ca43bf6c8cdc0f181673b91dc44e4cc"></a>uint32_t</td>
 <td class="fieldname">
 palette_addr: 26</td>
 <td class="fielddoc">
-</td></tr>
+Texture palette address. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga6e6583b69fcf55b69fb8f290500058b3"></a>uint32_t</td>
+<td class="fieldname">
+stride_ext: 2</td>
+<td class="fielddoc">
+Stride extension for a LINEAR_STRIDED texture. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaf29a821ddec98641c447245157fd12db"></a>uint32_t</td>
 <td class="fieldname">
 swizzle_format: 3</td>
 <td class="fielddoc">
-</td></tr>
+Texture format swizzling. </td></tr>
 <tr><td class="fieldtype">
 <a id="gabd3cf68a366aee44a6c427cfda0ee4c2"></a>uint32_t</td>
 <td class="fieldname">
 type: 3</td>
 <td class="fielddoc">
-</td></tr>
+Texture format type. </td></tr>
 <tr><td class="fieldtype">
 <a id="gab3a985ebee78a00affd0e1e055067954"></a>uint32_t</td>
 <td class="fieldname">
 uaddr_mode: 3</td>
 <td class="fielddoc">
-</td></tr>
+U Address Mode. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga4f48f80d4a967ed5ad8002310fca715b"></a>uint32_t</td>
 <td class="fieldname">
-unk0: 3</td>
+unk0: 1</td>
 <td class="fielddoc">
-</td></tr>
+Unknown field. </td></tr>
 <tr><td class="fieldtype">
 <a id="gae013920daee4e43b49c5dc2d64060c70"></a>uint32_t</td>
 <td class="fieldname">
 unk1: 3</td>
 <td class="fielddoc">
-</td></tr>
+Unknown field. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga8b1f49f627b8ff534894c0d995a0003d"></a>uint32_t</td>
 <td class="fieldname">
 unk2: 2</td>
 <td class="fielddoc">
-</td></tr>
+Unknown field. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga6bea800815bfb20a9a633fdf6036fe95"></a>uint32_t</td>
 <td class="fieldname">
 vaddr_mode: 3</td>
 <td class="fielddoc">
-</td></tr>
+V Address Mode. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionSceGxmTexture_8____unnamed____" id="unionSceGxmTexture_8____unnamed____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionSceGxmTexture_8____unnamed____">&sect;&nbsp;</a></span>SceGxmTexture.__unnamed__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union SceGxmTexture.__unnamed__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga663873c7560a28af3fcdcf218e95ffad"></a>uint32_t</td>
+<a id="a60e3c12db6ddaae1f88a6e0e8d5118e0"></a><a class="el" href="group__SceGxmUser.html#structSceGxmTexture_8____unnamed_____8____unnamed____">__unnamed__</a></td>
 <td class="fieldname">
-width: 12</td>
+__unnamed__</td>
 <td class="fielddoc">
 </td></tr>
+<tr><td class="fieldtype">
+<a id="a77b357ae2887476d0345b73adbb14401"></a>uint32_t</td>
+<td class="fieldname">
+stride_low: 3</td>
+<td class="fielddoc">
+Internal stride lower bits for a non LINEAR_STRIDED texture. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceGxmTexture_8____unnamed_____8____unnamed____" id="structSceGxmTexture_8____unnamed_____8____unnamed____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceGxmTexture_8____unnamed_____8____unnamed____">&sect;&nbsp;</a></span>SceGxmTexture.__unnamed__.__unnamed__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceGxmTexture.__unnamed__.__unnamed__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a4d37edc105deb9b1f274a49a74967e20"></a>uint32_t</td>
+<td class="fieldname">
+min_filter: 2</td>
+<td class="fielddoc">
+Min filter for a non LINEAR_STRIDED texture) </td></tr>
+<tr><td class="fieldtype">
+<a id="aefc004b8bc9ada9e4e9631f40c1b6f64"></a>uint32_t</td>
+<td class="fieldname">
+mip_filter: 1</td>
+<td class="fielddoc">
+Mip filter for a non LINEAR_STRIDED texture. </td></tr>
 </table>
 
 </div>
