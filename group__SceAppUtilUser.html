@@ -162,7 +162,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memdesc:gabb7a1bda40321603c313ca220f60fddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch PSN Store. <br /></td></tr>
 <tr class="separator:gabb7a1bda40321603c313ca220f60fddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga531e380a164de46fe0bf10e7c1b1c666"><td class="memItemLeft" align="right" valign="top"><a id="ga531e380a164de46fe0bf10e7c1b1c666"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga531e380a164de46fe0bf10e7c1b1c666">sceAppUtilBgdlGetStatus</a> (SceAppUtilBgdlStatus *stat)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga531e380a164de46fe0bf10e7c1b1c666">sceAppUtilBgdlGetStatus</a> (<a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBgdlStatus">SceAppUtilBgdlStatus</a> *stat)</td></tr>
 <tr class="memdesc:ga531e380a164de46fe0bf10e7c1b1c666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get background download status. <br /></td></tr>
 <tr class="separator:ga531e380a164de46fe0bf10e7c1b1c666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga331a523bd5dfc953cb94cc186e927ef5"><td class="memItemLeft" align="right" valign="top"><a id="ga331a523bd5dfc953cb94cc186e927ef5"></a>
@@ -190,11 +190,55 @@ typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>SceAp
 <tr class="memitem:gafd636dd29d6a883f4716246dcc7b527a"><td class="memItemLeft" align="right" valign="top"><a id="gafd636dd29d6a883f4716246dcc7b527a"></a>
 typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>SceAppUtilBgdlStatusType</b></td></tr>
 <tr class="separator:gafd636dd29d6a883f4716246dcc7b527a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga54d41b1b2f800b9db8a5e49a0119abef"><td class="memItemLeft" align="right" valign="top"><a id="ga54d41b1b2f800b9db8a5e49a0119abef"></a>
-typedef struct SceAppUtilBgdlStatus&#160;</td><td class="memItemRight" valign="bottom"><b>SceAppUtilBgdlStatus</b></td></tr>
-<tr class="separator:ga54d41b1b2f800b9db8a5e49a0119abef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceAppUtilBgdlStatus" id="structSceAppUtilBgdlStatus"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceAppUtilBgdlStatus">&sect;&nbsp;</a></span>SceAppUtilBgdlStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceAppUtilBgdlStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gab3d508f1360229b62e5da721092450cb"></a>SceUInt32</td>
+<td class="fieldname">
+addcontNumNotReady</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga07b853343fc7a15398f90c691e943c55"></a>SceUInt32</td>
+<td class="fieldname">
+addcontNumReady</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9642e811b901f559fc4ef3bf375aa915"></a>SceUInt32</td>
+<td class="fieldname">
+licenseReady</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga52ff674d7bbe3b034e609f7750b144f3"></a>SceChar8</td>
+<td class="fieldname">
+reserved[28]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga43c2b6f67b107c2a86ed4f854caa7be8"></a>SceAppUtilBgdlStatusType</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceAppUtilInitParam" id="structSceAppUtilInitParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceAppUtilInitParam">&sect;&nbsp;</a></span>SceAppUtilInitParam</h2>
 

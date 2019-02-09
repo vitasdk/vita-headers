@@ -11,10 +11,12 @@ var group__SceAudioInUser =
       [ "SCE_AUDIO_IN_ERROR_PORT_FULL", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c", null ],
       [ "SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94", null ],
       [ "SCE_AUDIO_IN_ERROR_NOT_OPENED", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594", null ],
-      [ "SCE_AUDIO_IN_ERROR_BUSY", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885", null ]
+      [ "SCE_AUDIO_IN_ERROR_BUSY", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885", null ],
+      [ "SCE_AUDIO_IN_ERROR_INVALID_PARAMETER", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a", null ]
     ] ],
     [ "SCE_AUDIO_IN_ERROR_BUSY", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885", null ],
     [ "SCE_AUDIO_IN_ERROR_FATAL", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a", null ],
+    [ "SCE_AUDIO_IN_ERROR_INVALID_PARAMETER", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a", null ],
     [ "SCE_AUDIO_IN_ERROR_INVALID_POINTER", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9", null ],
     [ "SCE_AUDIO_IN_ERROR_INVALID_PORT", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f", null ],
     [ "SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910", null ],
