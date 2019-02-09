@@ -19,8 +19,9 @@ typedef enum SceAppMgrErrorCode {
 	SCE_APPMGR_ERROR_STATE              = 0x80802013, //!< Invalid state
 	SCE_APPMGR_ERROR_NULL_POINTER       = 0x80802016, //!< NULL pointer
 	SCE_APPMGR_ERROR_INVALID            = 0x8080201A, //!< Invalid param
+	SCE_APPMGR_ERROR_TOO_LONG_ARGV      = 0x8080201D, //!< argv is too long
 	SCE_APPMGR_ERROR_INVALID_SELF_PATH  = 0x8080201E, //!< Invalid SELF path
-	SCE_APPMGR_ERROR_TOO_LONG_ARGV      = 0x8080201D  //!< argv is too long
+	SCE_APPMGR_ERROR_BGM_PORT_BUSY      = 0x80803000  //!< BGM port was occupied and could not be secured
 } SceAppMgrErrorCode;
 
 typedef enum SceAppMgrSystemEventType {
@@ -85,7 +86,13 @@ typedef struct SceAppMgrSaveDataSlotDelete {
 	SceAppUtilSaveDataMountPoint mountPoint;  //!< Savedata mountpoint
 } SceAppMgrSaveDataSlotDelete;
 
-typedef struct SceAppMgrAppState SceAppMgrAppState; // Missing struct
+typedef struct SceAppMgrAppState {
+	SceUInt32 systemEventNum;
+	SceUInt32 appEventNum;
+	SceBool isSystemUiOverlaid;
+	SceUInt8 reserved[116];
+} SceAppMgrAppState;
+
 typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing struct
 

@@ -31,12 +31,17 @@ typedef enum SceAppUtilErrorCode {
 	SCE_APPUTIL_ERROR_BUSY                        = 0x80100603,
 	SCE_APPUTIL_ERROR_NOT_MOUNTED                 = 0x80100604,
 	SCE_APPUTIL_ERROR_NO_PERMISSION               = 0x80100605,
+	SCE_APPUTIL_ERROR_PASSCODE_MISMATCH           = 0x80100606,
 	SCE_APPUTIL_ERROR_APPEVENT_PARSE_INVALID_DATA = 0x80100620,
 	SCE_APPUTIL_ERROR_SAVEDATA_SLOT_EXISTS        = 0x80100640,
 	SCE_APPUTIL_ERROR_SAVEDATA_SLOT_NOT_FOUND     = 0x80100641,
 	SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_QUOTA     = 0x80100642,
 	SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_FS        = 0x80100643,
-	SCE_APPUTIL_ERROR_PHOTO_DEVICE_NOT_FOUND      = 0x80100680
+	SCE_APPUTIL_ERROR_DRM_NO_ENTITLEMENT          = 0x80100660,
+	SCE_APPUTIL_ERROR_PHOTO_DEVICE_NOT_FOUND      = 0x80100680,
+	SCE_APPUTIL_ERROR_MUSIC_DEVICE_NOT_FOUND      = 0x80100685,
+	SCE_APPUTIL_ERROR_MOUNT_LIMIT_OVER            = 0x80100686,
+	SCE_APPUTIL_ERROR_STACKSIZE_TOO_SHORT         = 0x801006A0
 } SceAppUtilErrorCode;
 
 typedef unsigned int SceAppUtilBootAttribute;
@@ -46,7 +51,13 @@ typedef unsigned int SceAppUtilSaveDataSlotStatus;
 typedef unsigned int SceAppUtilAppParamId;
 typedef unsigned int SceAppUtilBgdlStatusType;
 
-typedef struct SceAppUtilBgdlStatus SceAppUtilBgdlStatus; // Missing struct
+typedef struct SceAppUtilBgdlStatus {
+	SceAppUtilBgdlStatusType type;
+	SceUInt32 addcontNumReady;
+	SceUInt32 addcontNumNotReady;
+	SceUInt32 licenseReady;
+	SceChar8 reserved[28];
+} SceAppUtilBgdlStatus;
 
 typedef struct SceAppUtilInitParam {
 	SceSize workBufSize;  //!< Buffer size

@@ -38,8 +38,13 @@ typedef struct SceGxtTextureInfo {
 	uint32_t dataOffset;        //!< Offset to the texture data
 	uint32_t dataSize;          //!< Size of the texture data
 	uint32_t paletteIndex;      //!< Index of the palette
-	uint32_t flags;             //!< Flags
-	uint32_t controlWords[4];   //!< Texture control words
+	uint32_t flags;             //!< Texture flags
+	uint32_t type;              //!< Texture type
+	uint32_t format;            //!< Texture format
+	uint16_t width;             //!< Texture width
+	uint16_t height;            //!< Texture height
+	uint8_t mipCount;           //!< Number of mipmaps
+	uint8_t pad[3];             //!< Padding
 } SceGxtTextureInfo;
 
 /**
