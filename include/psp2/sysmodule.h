@@ -95,6 +95,7 @@ typedef enum SceSysmoduleModuleId {
 	SCE_SYSMODULE_NEAR_DIALOG_UTIL      = 0x004A, //!< NearDialogUtil module
 	SCE_SYSMODULE_LOCATION_EXTENSION    = 0x004B, //!< LocationExt module
 	SCE_SYSMODULE_AVPLAYER              = 0x004C, //!< AVPlayer module
+	SCE_SYSMODULE_GAME_UPDATE           = 0x004D, //!< Game Update module
 	SCE_SYSMODULE_MAIL_API              = 0x004E, //!< Mail Api module
 	SCE_SYSMODULE_TELEPORT_CLIENT       = 0x004F, //!< Teleport Client module
 	SCE_SYSMODULE_TELEPORT_SERVER       = 0x0050, //!< Teleport Server module
