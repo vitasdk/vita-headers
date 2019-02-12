@@ -2558,6 +2558,7 @@ modules:
         nid: 0xE2C40624
         functions:
           ksceKernelCancelCallback: 0xC040EC1C
+          ksceKernelCancelMsgPipe: 0x9D6A2311
           ksceKernelCancelMutex: 0x7204B846
           ksceKernelChangeCurrentThreadAttr: 0x751C9B7A
           ksceKernelChangeThreadCpuAffinityMask: 0x6D0733A8
@@ -2570,6 +2571,7 @@ modules:
           ksceKernelCreateCallback: 0x1C41614C
           ksceKernelCreateCond: 0xDB6CD34A
           ksceKernelCreateEventFlag: 0x4336BAA4
+          ksceKernelCreateMsgPipe: 0xBF631145
           ksceKernelCreateMutex: 0xFBAA026E
           ksceKernelCreateSema: 0x30E93C31
           ksceKernelCreateSimpleEvent: 0x357A8177
@@ -2580,6 +2582,7 @@ modules:
           ksceKernelDeleteCond: 0xAEE0D27C
           ksceKernelDeleteEventFlag: 0x71ECB352
           ksceKernelDeleteFastMutex: 0x11FE84A1
+          ksceKernelDeleteMsgPipe: 0xB3453F88
           ksceKernelDeleteMutex: 0x0A912340
           ksceKernelDeleteSema: 0x16A35E58
           ksceKernelDeleteThread: 0xAC834F3F
@@ -2617,6 +2620,7 @@ modules:
           ksceKernelRegisterCallbackToEvent: 0x832A7E0C
           ksceKernelRegisterTimer: 0xC58DF384
           ksceKernelRunWithStack: 0xE54FD746
+          ksceKernelSendMsgPipeVector: 0x67DD3BAD
           ksceKernelSetEvent: 0x9EA3A45C
           ksceKernelSetEventFlag: 0xD4780C3E
           ksceKernelSetPermission: 0x02EEDF17
@@ -2632,6 +2636,8 @@ modules:
           ksceKernelTryLockMutex: 0x270993A6
           ksceKernelTryLockReadRWLock: 0xFC2B5A50
           ksceKernelTryLockWriteRWLock: 0xA96F2E5A
+          ksceKernelTryReceiveMsgPipeVector: 0xCE09221A
+          ksceKernelTrySendMsgPipeVector: 0x4CF1BE58
           ksceKernelUnlockFastMutex: 0xDB395782
           ksceKernelUnlockMutex: 0x1E82E5D0
           ksceKernelUnlockReadRWLock: 0xDE1B9EEE
