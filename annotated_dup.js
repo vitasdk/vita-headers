@@ -4,6 +4,8 @@ var annotated_dup =
     [ "_sceNpDrmPackageDecrypt_opt", "group__SceNpDrmPackageUser.html#struct__sceNpDrmPackageDecrypt__opt", "group__SceNpDrmPackageUser_struct__sceNpDrmPackageDecrypt__opt" ],
     [ "ArmCpuRegisters", "group__SceThreadMgrKernel.html#structArmCpuRegisters", "group__SceThreadMgrKernel_structArmCpuRegisters" ],
     [ "kernel_message_ctx", "group__SceSysmemKernel.html#structkernel__message__ctx", "group__SceSysmemKernel_structkernel__message__ctx" ],
+    [ "MsgPipeRecvData", "group__SceThreadMgrKernel.html#structMsgPipeRecvData", "group__SceThreadMgrKernel_structMsgPipeRecvData" ],
+    [ "MsgPipeSendData", "group__SceThreadMgrKernel.html#structMsgPipeSendData", "group__SceThreadMgrKernel_structMsgPipeSendData" ],
     [ "MusicExportParam", "group__SceMusicExportUser.html#structMusicExportParam", "group__SceMusicExportUser_structMusicExportParam" ],
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
     [ "SceAesContext", "group__SceUtilsKernel.html#structSceAesContext", "group__SceUtilsKernel_structSceAesContext" ],

@@ -6309,7 +6309,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">threadmgr.h</field>
     <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00911</field>
     <field name="keywords"></field>
-    <field name="text">ArmCpuRegisters kernel ThreadCpuRegisters ksceKernelGetThreadCpuRegisters SceUID thid ThreadCpuRegisters registers ksceKernelChangeThreadSuspendStatus SceUID thid status</field>
+    <field name="text">ArmCpuRegisters kernel ThreadCpuRegisters ksceKernelGetThreadCpuRegisters SceUID thid ThreadCpuRegisters registers ksceKernelChangeThreadSuspendStatus SceUID thid status SceUID ksceKernelCreateMsgPipe name type attr bufSize opt ksceKernelDeleteMsgPipe SceUID uid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00965</field>
+    <field name="keywords"></field>
+    <field name="text">message size MsgPipeSendData ksceKernelSendMsgPipeVector SceUID uid MsgPipeSendData v n unk1 unk2 timeout ksceKernelTrySendMsgPipeVector SceUID uid MsgPipeSendData v size unk1 unk2</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">threadmgr.h</field>
+    <field name="url">ern_2kernel_2threadmgr_8h_source.html#l00998</field>
+    <field name="keywords"></field>
+    <field name="text">message size MsgPipeRecvData ksceKernelReceiveMsgPipeVector SceUID uid MsgPipeRecvData v n unk1 unk2 timeout ksceKernelTryReceiveMsgPipeVector SceUID uid MsgPipeRecvData v size unk1 unk2 ksceKernelCancelMsgPipe SceUID uid psend precv</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -21285,6 +21299,62 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d</field>
     <field name="keywords">ksceKernelChangeThreadSuspendStatus</field>
     <field name="text">Change the thread suspension status to another value More research needs to be done to find out exactly what each status actually means Some examples of useful scenarios When handling an exception changing the status to 0x1002 on a newly suspended thread will stop the kernel rethrowing the same exception When resuming a suspended thread changing the status to 2 will allow it to resume thid The thread to change status The new status for suspension Zero on success else 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelCreateMsgPipe</field>
+    <field name="args">(const char *name, int type, int attr, unsigned int bufSize, void *opt)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gaf51d4ebb31c35aa4366d3f26613211ba</field>
+    <field name="keywords">ksceKernelCreateMsgPipe</field>
+    <field name="text">Create a message pipe name Name of the pipe type The type of memory attribute to use internally set to 0x40 attr Set to 12 bufSize The size of the internal buffer in multiples of 0x1000 4KB opt Message pipe options set to NULL The UID of the created pipe 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelDeleteMsgPipe</field>
+    <field name="args">(SceUID uid)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gaab53d6d4dce857d0409263b698c8dbfa</field>
+    <field name="keywords">ksceKernelDeleteMsgPipe</field>
+    <field name="text">Delete a message pipe uid The UID of the pipe 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelSendMsgPipeVector</field>
+    <field name="args">(SceUID uid, const MsgPipeSendData *v, unsigned int n, int unk1, void *unk2, unsigned int *timeout)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga4b770dd64325292584c90eb146201ee8</field>
+    <field name="keywords">ksceKernelSendMsgPipeVector</field>
+    <field name="text">Send a message to a pipe uid The UID of the pipe message Pointer to the message size Size of the message unk1 Unknown async vs sync use 0 for sync unk2 Unknown use NULL timeout Timeout for send in us use NULL to wait indefinitely 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelTrySendMsgPipeVector</field>
+    <field name="args">(SceUID uid, const MsgPipeSendData *v, unsigned int size, int unk1, void *unk2)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga76a9ae1e9ba43b5bda02155805cbd547</field>
+    <field name="keywords">ksceKernelTrySendMsgPipeVector</field>
+    <field name="text">Try to send a message to a pipe uid The UID of the pipe message Pointer to the message size Size of the message unk1 Unknown use 0 unk2 Unknown use NULL 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelReceiveMsgPipeVector</field>
+    <field name="args">(SceUID uid, const MsgPipeRecvData *v, unsigned int n, int unk1, void *unk2, unsigned int *timeout)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga0e1a1fb6bd202305c3772ba573fd5eb7</field>
+    <field name="keywords">ksceKernelReceiveMsgPipeVector</field>
+    <field name="text">Receive a message from a pipe uid The UID of the pipe message Pointer to the message size Size of the message unk1 Unknown async vs sync use 0 for sync unk2 Unknown use NULL timeout Timeout for receive in us use NULL to wait indefinitely 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelTryReceiveMsgPipeVector</field>
+    <field name="args">(SceUID uid, const MsgPipeRecvData *v, unsigned int size, int unk1, void *unk2)</field>
+    <field name="url">group__SceThreadMgrKernel.html#ga9ae59fcdf5929c24253ad6d0d551f5b8</field>
+    <field name="keywords">ksceKernelTryReceiveMsgPipeVector</field>
+    <field name="text">Receive a message from a pipe uid The UID of the pipe message Pointer to the message size Size of the message unk1 Unknown use 0 unk2 Unknown use NULL 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelCancelMsgPipe</field>
+    <field name="args">(SceUID uid, int *psend, int *precv)</field>
+    <field name="url">group__SceThreadMgrKernel.html#gab075243ddc790c69a946ed02cddeda8a</field>
+    <field name="keywords">ksceKernelCancelMsgPipe</field>
+    <field name="text">Cancel a message pipe uid UID of the pipe to cancel psend Receive number of sending threads NULL is valid precv Receive number of receiving threads NULL is valid 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
