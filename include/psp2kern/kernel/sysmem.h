@@ -423,11 +423,28 @@ int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, unsigned int size);
  */
 int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, unsigned int size);
 
-int ksceSysrootUseExternalStorage(void);
+/**
+ * Check the manufacturing mode flag
+ *
+ * This function check the flag from sysroot's boot type indicator,
+ * When this function returns true that has other meaning device would use
+ * the external storage
+ *
+ * @return 1 is set the flag, 0 isn't set
+ */
+int ksceSysrootIsManufacturingMode(void);
 
-#define ksceSysrootIsManufacturingMode() ksceSysrootUseExternalStorage()
+/**
+ * Check the internal storage flag
+ *
+ * This function check the flag from internal storage flag of sysroot's boot flags
+ *
+ * @return 1 is internal storage enabled, 0 is external storage(memory card) enabled
+ */
+int ksceSysrootIsInternalStorageEnabled(void);
 
-int ksceSysrootUseInternalStorage(void);
+#define ksceSysrootUseExternalStorage() ksceSysrootIsManufacturingMode()
+#define ksceSysrootUseInternalStorage() ksceSysrootIsInternalStorageEnabled()
 
 int ksceDebugPrintf(const char *fmt, ...);
 
