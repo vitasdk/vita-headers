@@ -8528,7 +8528,7 @@ modules:
           ksceSblAimgrGetPscode: 0xE0DC2587
           ksceSblAimgrGetPscode2: 0x9A9676D0
           ksceSblAimgrGetVisibleId: 0x04843835
-          ksceSblDmac5AEsCbcDec: 0x121FA69F
+          ksceSblDmac5AesCbcDec: 0x121FA69F
           ksceSblDmac5AesCbcDecNP: 0x1901CB5E
           ksceSblDmac5AesCbcEnc: 0xE6E1AD15
           ksceSblDmac5AesCbcEncNP: 0x711C057A
@@ -8542,22 +8542,22 @@ modules:
           ksceSblSsDecryptWithPortability: 0x934DB6B5
           ksceSblSsEncryptWithPortability: 0x21EC51F6
           ksceSblSsGetNvsData: 0xFDD6D5DE
-          ksceSblSsMgrAESCMAC: 0xEA6ACB6D
-          ksceSblSsMgrAESCMACWithKeygen: 0x83B058F5
-          ksceSblSsMgrAESCTRDecrypt: 0x7D46768C
-          ksceSblSsMgrAESCTREncrypt: 0x82B5DCEF
-          ksceSblSsMgrAESECBDecrypt: 0x8B4700CB
-          ksceSblSsMgrAESECBEncrypt: 0x01BE0374
-          ksceSblSsMgrDES64CBCDecrypt: 0x926BCCF0
-          ksceSblSsMgrDES64CBCEncrypt: 0x05B38698
-          ksceSblSsMgrDES64ECBDecrypt: 0x8EAFB18A
-          ksceSblSsMgrDES64ECBEncrypt: 0x37DD5CBF
+          ksceSblSsMgrAesCmac: 0xEA6ACB6D
+          ksceSblSsMgrAesCmacWithKeygen: 0x83B058F5
+          ksceSblSsMgrAesCtrDecrypt: 0x7D46768C
+          ksceSblSsMgrAesCtrEncrypt: 0x82B5DCEF
+          ksceSblSsMgrAesEcbDecrypt: 0x8B4700CB
+          ksceSblSsMgrAesEcbEncrypt: 0x01BE0374
+          ksceSblSsMgrDes64CbcDecrypt: 0x926BCCF0
+          ksceSblSsMgrDes64CbcEncrypt: 0x05B38698
+          ksceSblSsMgrDes64EcbDecrypt: 0x8EAFB18A
+          ksceSblSsMgrDes64EcbEncrypt: 0x37DD5CBF
           ksceSblSsMgrExecuteDmac5HashCommand: 0x9641374E
           ksceSblSsMgrGetRandomData: 0xAC57F4F0
-          ksceSblSsMgrHMACSHA1WithKeygen: 0x92E37656
-          ksceSblSsMgrHMACSHA256: 0x79F38554
+          ksceSblSsMgrHmacSha1WithKeygen: 0x92E37656
+          ksceSblSsMgrHmacSha256: 0x79F38554
           ksceSblSsMgrMemset: 0xCD98CC92
-          ksceSblSsMgrSHA1: 0xEB3AF9B5
+          ksceSblSsMgrSha1: 0xEB3AF9B5
           ksceSblSsSetNvsData: 0x249ADB07
       SceSblDmac5Mgr:
         nid: 0x437366A2
