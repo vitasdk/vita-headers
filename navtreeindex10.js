@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"group__SystemStatus.html":[1,8],
 "group__USB.html":[1,9],
 "group__Vitasdk.html":[1,11],
 "group__kernel.html":[1,6],
