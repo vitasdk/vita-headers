@@ -463,6 +463,32 @@ int ksceDebugPutchar(int character);
 
 int ksceDebugDisableInfoDump(int flag);
 
+typedef struct
+{
+    size_t size; //!< sizeof(SceSysrootProcessHandler)
+    int (* unk_4)(void);
+    int (* unk_8)(void);
+    int (* unk_C)(void);
+    int (* unk_10)(void);
+    int (* unk_14)(void);
+    int (* unk_18)(void);
+    int (* on_process_created)(void); //!< called when process is created
+    int (* unk_20)(void);
+    int (* unk_24)(void);
+} SceSysrootProcessHandler;
+
+/**
+ * Set handlers for the process lifecycle.
+ *
+ * This internal function allows a developer to introspect and receive events based
+ * on the process lifecycle.
+ *
+ * @param[in]  handlers   Pointer to struct containing the handlers. This function does not copy the handlers, so this pointer must remain valid after a successful call.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelSysrootSetProcessHandler(const SceSysrootProcessHandler *handlers);
+
 #ifdef __cplusplus
 }
 #endif
