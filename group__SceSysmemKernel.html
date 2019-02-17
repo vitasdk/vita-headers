@@ -274,6 +274,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugPutchar</b> (
 <tr class="memitem:ga494f482e4e9f7181952a756c947d1b29"><td class="memItemLeft" align="right" valign="top"><a id="ga494f482e4e9f7181952a756c947d1b29"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceDebugDisableInfoDump</b> (int flag)</td></tr>
 <tr class="separator:ga494f482e4e9f7181952a756c947d1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadec162afc0c11b580fae0a36f333987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987">ksceKernelSysrootSetProcessHandler</a> (const <a class="el" href="structSceSysrootProcessHandler.html">SceSysrootProcessHandler</a> *handlers)</td></tr>
+<tr class="memdesc:gaadec162afc0c11b580fae0a36f333987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set handlers for the process lifecycle.  <a href="#gaadec162afc0c11b580fae0a36f333987">More...</a><br /></td></tr>
+<tr class="separator:gaadec162afc0c11b580fae0a36f333987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -1558,6 +1561,34 @@ num</td>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- SceUID of the memory block to change </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Type of the memory to change to</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaadec162afc0c11b580fae0a36f333987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadec162afc0c11b580fae0a36f333987">&sect;&nbsp;</a></span>ksceKernelSysrootSetProcessHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelSysrootSetProcessHandler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSceSysrootProcessHandler.html">SceSysrootProcessHandler</a> *&#160;</td>
+          <td class="paramname"><em>handlers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set handlers for the process lifecycle. </p>
+<p>This internal function allows a developer to introspect and receive events based on the process lifecycle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handlers</td><td>Pointer to struct containing the handlers. This function does not copy the handlers, so this pointer must remain valid after a successful call.</td></tr>
   </table>
   </dd>
 </dl>

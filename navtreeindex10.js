@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"group__USB.html":[1,9],
 "group__Vitasdk.html":[1,11],
 "group__kernel.html":[1,6],
 "gxm_8h_source.html":[3,0,0,0,17],
@@ -10,8 +11,8 @@ var NAVTREEINDEX10 =
 "idstorage_8h_source.html":[3,0,0,1,9],
 "iftu_8h_source.html":[3,0,0,1,3,3],
 "ime__dialog_8h_source.html":[3,0,0,0,20],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intrmgr_8h_source.html":[3,0,0,1,2,3],
 "io_2devctl_8h_source.html":[3,0,0,0,0,0],
 "io_2dirent_8h_source.html":[3,0,0,0,0,1],

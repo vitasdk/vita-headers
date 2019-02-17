@@ -5571,6 +5571,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">source</field>
+    <field name="name">sysmem.h</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00466</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">sysmem.h</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00468</field>
+    <field name="keywords"></field>
+    <field name="text">size int unk_4 void int unk_8 void int unk_C void int unk_10 void int unk_14 void int unk_18 void</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">sysmem.h</field>
+    <field name="url">ern_2kernel_2sysmem_8h_source.html#l00475</field>
+    <field name="keywords"></field>
+    <field name="text">int on_process_created void int unk_20 void int unk_24 void SceSysrootProcessHandler ksceKernelSysrootSetProcessHandler SceSysrootProcessHandler handlers</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
     <field name="name">threadmgr.h</field>
     <field name="url">kernel_2threadmgr_8h_source.html#l00001</field>
     <field name="keywords"></field>
@@ -20846,6 +20867,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Releases a memory range checking for a given permission This decreases the internal reference count of the memblocks belonging to the range If the memory blocks belonging to the range don t have the required memory access permission it returns an error perm The required permission of the memory blocks belonging to the range addr The start address size The memory range size 0 on success 0 on error</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelSysrootSetProcessHandler</field>
+    <field name="args">(const SceSysrootProcessHandler *handlers)</field>
+    <field name="url">group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987</field>
+    <field name="keywords">ksceKernelSysrootSetProcessHandler</field>
+    <field name="text">Set handlers for the process lifecycle This internal function allows a developer to introspect and receive events based on the process lifecycle handlers Pointer to struct containing the handlers This function does not copy the handlers so this pointer must remain valid after a successful call 0 on success 0 on error</field>
+  </doc>
+  <doc>
     <field name="type">group</field>
     <field name="name">SceThreadMgrKernel</field>
     <field name="url">group__SceThreadMgrKernel.html</field>
@@ -22432,6 +22461,28 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structSceSysconPacket.html</field>
     <field name="keywords">SceSysconPacket</field>
     <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">struct</field>
+    <field name="name">SceSysrootProcessHandler</field>
+    <field name="url">structSceSysrootProcessHandler.html</field>
+    <field name="keywords">SceSysrootProcessHandler</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceSysrootProcessHandler::size</field>
+    <field name="url">group__SceSysmemKernel.html#ga733ca7d4fb98d70496a6759d0f4aa4a5</field>
+    <field name="keywords">size SceSysrootProcessHandler::size SceSysrootProcessHandler</field>
+    <field name="text">sizeof(SceSysrootProcessHandler)</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">SceSysrootProcessHandler::on_process_created</field>
+    <field name="args">)(void)</field>
+    <field name="url">group__SceSysmemKernel.html#ga3c74e3e0063225cfb58e7fb9f7d7ded6</field>
+    <field name="keywords">on_process_created SceSysrootProcessHandler::on_process_created SceSysrootProcessHandler</field>
+    <field name="text">called when process is created</field>
   </doc>
   <doc>
     <field name="type">struct</field>

@@ -17,6 +17,7 @@ var group__SceSysmemKernel =
     [ "ksceKernelMemRangeRetainForPid", "group__SceSysmemKernel.html#gac6e99307a5bb329a4de82dbbc712017c", null ],
     [ "ksceKernelMemRangeRetainWithPerm", "group__SceSysmemKernel.html#gaedc71f3660c8ed002b08e8648f911d13", null ],
     [ "ksceKernelRemapBlock", "group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33", null ],
+    [ "ksceKernelSysrootSetProcessHandler", "group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987", null ],
     [ "ksceKernelUidRelease", "group__SceSysmemKernel.html#ga0a0bd8800794e39fe389f19b4edd40bc", null ],
     [ "ksceKernelUidRetain", "group__SceSysmemKernel.html#ga4d2e412b9310314c1f25b82c601c4aa5", null ]
 ];
