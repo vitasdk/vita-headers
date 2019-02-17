@@ -51,9 +51,10 @@ int ksceKernelResumeProcess(SceUID pid);
 /**
  * @brief       Suspend a running process.
  * @param[in]   pid The process to suspend.
+ * @param[in]	status The new status for the process.
  * @return      Zero on success, < 0 on error.
  */
-int ksceKernelSuspendProcess(SceUID pid);
+int ksceKernelSuspendProcess(SceUID pid, int status);
 
 /**
  * @brief       Get the status of a given process.
