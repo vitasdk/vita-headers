@@ -1051,7 +1051,7 @@ typedef struct SceGxmTexture {
 			uint32_t mip_filter : 1;  //!< Mip filter for a non LINEAR_STRIDED texture
 			uint32_t min_filter : 2;  //!< Min filter for a non LINEAR_STRIDED texture)
 		};
-		uint32_t stride_low : 3;      //!< Internal stride lower bits for a non LINEAR_STRIDED texture
+		uint32_t stride_low : 3;      //!< Internal stride lower bits for a LINEAR_STRIDED texture
 	};
 	uint32_t mag_filter : 2;          //!< Mag Filter (and Min filter if LINEAR_STRIDED texture)
 	uint32_t unk1 : 3;                //!< Unknown field
