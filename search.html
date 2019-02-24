@@ -3159,7 +3159,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">display.h</field>
     <field name="url">ern_2display_8h_source.html#l00066</field>
     <field name="keywords"></field>
-    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplaySetFrameBufInternal head index SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBufInfoForPid SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable ksceDisplaySetOwner head index SceUID pid</field>
+    <field name="text">resolution SceDisplayFrameBufInfo ksceDisplaySetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplaySetFrameBufInternal head index SceDisplayFrameBuf pParam sync ksceDisplayGetFrameBuf SceDisplayFrameBuf pParam sync ksceDisplayGetProcFrameBufInternal SceUID pid head index SceDisplayFrameBufInfo info ksceDisplayGetMaximumFrameBufResolution width height ksceDisplayGetPrimaryHead ksceDisplayGetVcountInternal display ksceDisplayWaitVblankStart ksceDisplayWaitVblankStartInternal display ksceDisplayWaitVblankStartCB ksceDisplayWaitVblankStartCBInternal display ksceDisplayWaitVblankStartMulti vcount ksceDisplayWaitVblankStartMultiInternal display vcount ksceDisplayWaitVblankStartMultiCB vcount ksceDisplayWaitVblankStartMultiCBInternal display vcount ksceDisplayWaitSetFrameBuf ksceDisplayWaitSetFrameBufCB ksceDisplayWaitSetFrameBufMulti vcount ksceDisplayWaitSetFrameBufMultiCB vcount ksceDisplayRegisterVblankStartCallback SceUID uid ksceDisplayRegisterVblankStartCallbackInternal display SceUID uid ksceDisplayUnregisterVblankStartCallback SceUID uid ksceDisplayUnregisterVblankStartCallbackInternal display SceUID uid ksceDisplayRegisterFrameBufCallback SceUID uid ksceDisplayRegisterFrameBufCallbackInternal display SceUID uid ksceDisplaySetInvertColors display enable ksceDisplaySetOwner head index SceUID pid</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -19916,10 +19916,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ksceDisplayGetFrameBufInfoForPid</field>
+    <field name="name">ksceDisplayGetProcFrameBufInternal</field>
     <field name="args">(SceUID pid, int head, int index, SceDisplayFrameBufInfo *info)</field>
-    <field name="url">group__SceDisplayKernel.html#ga051dc94ebff9b674f55ee827bc38c830</field>
-    <field name="keywords">ksceDisplayGetFrameBufInfoForPid</field>
+    <field name="url">group__SceDisplayKernel.html#ga078eb8c7c46e2ac24be486127f1c8d55</field>
+    <field name="keywords">ksceDisplayGetProcFrameBufInternal</field>
     <field name="text">Get the configured framebuffer information of a head and its framebuffer index for a PID pid PID of the process to get the framebuffer information from It can either be a vallid PID to use the current configured framebuffer for the head and index or 0 to use the PID of the caller head Use 0 for OLED/LCD and 1 for HDMI index Can be 0 or 1 info Pointer to a SceDisplayFrameBufInfo structure which will receive the framebuffer information 0 on success 0 on error</field>
   </doc>
   <doc>

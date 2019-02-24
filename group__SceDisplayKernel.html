@@ -92,9 +92,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5d16b8195b9c190d39fa83939443eb89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89">ksceDisplayGetFrameBuf</a> (<a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
 <tr class="memdesc:ga5d16b8195b9c190d39fa83939443eb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer parameters.  <a href="#ga5d16b8195b9c190d39fa83939443eb89">More...</a><br /></td></tr>
 <tr class="separator:ga5d16b8195b9c190d39fa83939443eb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga051dc94ebff9b674f55ee827bc38c830"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga051dc94ebff9b674f55ee827bc38c830">ksceDisplayGetFrameBufInfoForPid</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, int head, int index, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">SceDisplayFrameBufInfo</a> *info)</td></tr>
-<tr class="memdesc:ga051dc94ebff9b674f55ee827bc38c830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configured framebuffer information of a head and its framebuffer index for a PID.  <a href="#ga051dc94ebff9b674f55ee827bc38c830">More...</a><br /></td></tr>
-<tr class="separator:ga051dc94ebff9b674f55ee827bc38c830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga078eb8c7c46e2ac24be486127f1c8d55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga078eb8c7c46e2ac24be486127f1c8d55">ksceDisplayGetProcFrameBufInternal</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, int head, int index, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">SceDisplayFrameBufInfo</a> *info)</td></tr>
+<tr class="memdesc:ga078eb8c7c46e2ac24be486127f1c8d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configured framebuffer information of a head and its framebuffer index for a PID.  <a href="#ga078eb8c7c46e2ac24be486127f1c8d55">More...</a><br /></td></tr>
+<tr class="separator:ga078eb8c7c46e2ac24be486127f1c8d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04c577afbe7d0cbb35277db6b16bc097"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga04c577afbe7d0cbb35277db6b16bc097">ksceDisplayGetMaximumFrameBufResolution</a> (int *width, int *height)</td></tr>
 <tr class="memdesc:ga04c577afbe7d0cbb35277db6b16bc097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum framebuffer resolution.  <a href="#ga04c577afbe7d0cbb35277db6b16bc097">More...</a><br /></td></tr>
 <tr class="separator:ga04c577afbe7d0cbb35277db6b16bc097"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,14 +348,52 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
 
 </div>
 </div>
-<a id="ga051dc94ebff9b674f55ee827bc38c830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga051dc94ebff9b674f55ee827bc38c830">&sect;&nbsp;</a></span>ksceDisplayGetFrameBufInfoForPid()</h2>
+<a id="ga04c577afbe7d0cbb35277db6b16bc097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04c577afbe7d0cbb35277db6b16bc097">&sect;&nbsp;</a></span>ksceDisplayGetMaximumFrameBufResolution()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceDisplayGetFrameBufInfoForPid </td>
+          <td class="memname">int ksceDisplayGetMaximumFrameBufResolution </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get maximum framebuffer resolution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Maximum width </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Maximum height</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga078eb8c7c46e2ac24be486127f1c8d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga078eb8c7c46e2ac24be486127f1c8d55">&sect;&nbsp;</a></span>ksceDisplayGetProcFrameBufInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetProcFrameBufInternal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
@@ -393,44 +431,6 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Use 0 for OLED/LCD and 1 for HDMI </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Can be 0 or 1 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo" title="Extended framebuffer information. ">SceDisplayFrameBufInfo</a> structure which will receive the framebuffer information.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga04c577afbe7d0cbb35277db6b16bc097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga04c577afbe7d0cbb35277db6b16bc097">&sect;&nbsp;</a></span>ksceDisplayGetMaximumFrameBufResolution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDisplayGetMaximumFrameBufResolution </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get maximum framebuffer resolution. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Maximum width </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Maximum height</td></tr>
   </table>
   </dd>
 </dl>
