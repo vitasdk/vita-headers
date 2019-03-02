@@ -25,8 +25,8 @@ def find_sdk(page):
 req = urllib2.Request(TRAVIS_API, headers=HEADERS)
 build_info = json.load(urllib2.urlopen(req))
 number = build_info['repo']['last_build_number']
-# just check last 10 build
-for x in range(10):
+# just check last 25 builds
+for x in range(25):
     tag = (TAG_FORMAT % dict(branch='master', os='linux', build=int(number) - x))
     req = urllib2.Request(GITHUB_TAG + '/' + tag)
     try:
