@@ -3322,11 +3322,9 @@ modules:
         kernel: false
         nid: 0xCAE9ACE6
         functions:
-          SceKernelStackChkGuard: 0x4458BCF3
           __sce_aeabi_idiv0: 0x4373B548
           __sce_aeabi_ldiv0: 0xFB235848
           __stack_chk_fail: 0x37691BF8
-          __stack_chk_guard: 0x93B8AA67
           _sceKernelCreateLwMutex: 0xB84EF718
           sceClibAbort: 0x2F2C6046
           sceClibDprintf: 0x4340EF77
@@ -3621,6 +3619,9 @@ modules:
           sceSblGcAuthMgrMsSaveBBCipherFinal: 0xEB02F15D
           sceSblGcAuthMgrMsSaveBBMacUpdate: 0xEE2D40F7
           sceSblGcAuthMgrPcactActivation: 0x17C0CEF4
+        variables:
+          SceKernelStackChkGuard: 0x4458BCF3
+          __stack_chk_guard: 0x93B8AA67
       SceLibRng:
         kernel: false
         nid: 0xF9AC7CF8
