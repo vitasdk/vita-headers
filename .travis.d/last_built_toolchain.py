@@ -1,6 +1,10 @@
 import re
 import json
-import urllib2
+try:
+    import urllib2
+except ImportError:
+    # python3?
+    import urllib.request as urllib2
 
 TRAVIS_REPO_ID = 10768510
 GITHUB_REPO = 'vitasdk/autobuilds'
@@ -14,9 +18,9 @@ REGEX = re.compile('href="([^"]*)"')
 HEADERS = dict()
 HEADERS['Travis-API-Version'] = 3
 
-def find_sdk(page):
-    for line in page.split('\n'):
-        if 'linux' not in line or 'tar.bz2' not in line:
+def find_sdk(page, os='linux'):
+    for line in page.decode('utf-8').split('\n'):
+        if os not in line or 'tar.bz2' not in line:
             continue
         m = REGEX.search(line)
         if not m:
@@ -39,7 +43,6 @@ def fetch_succeeded_tags(branch='master', os='linux'):
             builds = json.load(urllib2.urlopen(req))
 
             for build in builds['builds']:
-                #print build
                 for job in build['jobs']:
                     if job['state'] != 'passed':
                         continue
@@ -60,14 +63,22 @@ def fetch_succeeded_tags(branch='master', os='linux'):
             # FIXME: need to check; json parse error
             continue
 
-for tag in fetch_succeeded_tags():
-    req = urllib2.Request(GITHUB_TAG + '/' + tag)
-    try:
-        path = find_sdk(urllib2.urlopen(req).read())
-        if not path:
+def last_built_toolchain(branch='master', os='linux'):
+    for tag in fetch_succeeded_tags(branch=branch, os=os):
+        req = urllib2.Request(GITHUB_TAG + '/' + tag)
+        try:
+            path = find_sdk(urllib2.urlopen(req).read(), os=os)
+            if not path:
+                continue
+        except urllib2.HTTPError:
             continue
-    except urllib2.HTTPError:
-        continue
-    print GITHUB + path
+        return GITHUB + path
+
+if __name__ == '__main__':
+    import sys
+
+    url = last_built_toolchain(*sys.argv[1:])
+    if not url:
+        raise SystemExit(1)
+    print(url)
     raise SystemExit(0)
-raise SystemExit(1)
