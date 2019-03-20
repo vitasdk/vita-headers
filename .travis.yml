@@ -15,7 +15,7 @@ script:
     - set -e
     - cd $TRAVIS_BUILD_DIR
     - python $TRAVIS_BUILD_DIR/.travis.d/definition_check.py
-    - bash $TRAVIS_BUILD_DIR/.travis.d/definition_ordering.sh
+    - python $TRAVIS_BUILD_DIR/.travis.d/definition_ordering.py
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
     - export VITASDK=$PWD/vitasdk
     - export PATH=$VITASDK/bin:$PATH
