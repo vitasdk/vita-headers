@@ -556,7 +556,7 @@ modules:
           sceAudioInSetMicGain: 0x0F34DD73
           sceAudioInSetMute: 0x1DFE7698
   SceAudiodec:
-    nid: 0xC
+    nid: 0x0000000C
     libraries:
       SceAudiodecUser:
         kernel: false
@@ -578,7 +578,7 @@ modules:
           sceAudiodecPartlyDecode: 0x2742E642
           sceAudiodecTermLibrary: 0x45719B9D
   SceAudioenc:
-    nid: 0xE
+    nid: 0x0000000E
     libraries:
       SceAudioencUser:
         kernel: false
@@ -851,7 +851,7 @@ modules:
           sceClipboardGetText: 0x5BB10CC2
           sceClipboardSetText: 0x43A94D3E
   SceCodecEngine:
-    nid: 0x18
+    nid: 0x00000018
     libraries:
       SceCodecEngineUser:
         kernel: false
@@ -862,7 +862,7 @@ modules:
           sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x6A31831D
           sceCodecEngineOpenUnmapMemBlock: 0xF0B4C892
   SceCodecEnginePerf:
-    nid: 0x1A
+    nid: 0x0000001A
     libraries:
       SceCodecEnginePerf:
         kernel: false
@@ -1120,7 +1120,7 @@ modules:
           ksceCtrlSetVibrationSetting: 0x4D8FE670
           ksceCtrlUnregisterNotifyCallBack: 0x9DAB51C4
   SceDTrace:
-    nid: 0x23
+    nid: 0x00000023
     libraries:
       SceDTrace:
         kernel: false
@@ -1145,7 +1145,7 @@ modules:
           sceDbgSetBreakOnWarningState: 0x3DEAECD3
           sceDbgSetMinimumLogLevel: 0x941622FA
   SceDeci4p:
-    nid: 0x27
+    nid: 0x00000027
     libraries:
       SceDeci4pUserp:
         kernel: false
@@ -1254,7 +1254,7 @@ modules:
           ksceDisplayWaitVblankStartMultiCBInternal: 0x61421AAF
           ksceDisplayWaitVblankStartMultiInternal: 0x32287576
   SceFace:
-    nid: 0x2E
+    nid: 0x0000002E
     libraries:
       SceFace:
         kernel: false
@@ -1307,7 +1307,7 @@ modules:
           sceFiberStopContextSizeCheck: 0x67F70867
           sceFiberSwitch: 0xE4283144
   SceFios2:
-    nid: 0x32
+    nid: 0x00000032
     libraries:
       SceFios2:
         kernel: false
@@ -1998,7 +1998,7 @@ modules:
           sceImeSetText: 0xF3BD9A76
           sceImeUpdate: 0x71D6898A
   SceJpeg:
-    nid: 0x44
+    nid: 0x00000044
     libraries:
       SceJpegUser:
         kernel: false
@@ -2016,7 +2016,7 @@ modules:
           sceJpegMJpegCsc: 0xC2380E3A
           sceJpegSplitDecodeMJpeg: 0x4598EC9C
   SceJpegEnc:
-    nid: 0x46
+    nid: 0x00000046
     libraries:
       SceJpegEncUser:
         kernel: false
@@ -2185,11 +2185,11 @@ modules:
           memcmp: 0xF939E83D
           memcpy: 0x40C88316
           memmove: 0x6CC9C1A1
-          memset: 0xAB9BF5C
+          memset: 0x0AB9BF5C
           rshift: 0x1D89F6C0
           snprintf: 0xAE7A8981
           strchr: 0x38463759
-          strcmp: 0xB33BC43
+          strcmp: 0x0B33BC43
           strlcat: 0x12504E09
           strlcpy: 0x7FB4EBEC
           strlen: 0xCFC6A9AC
@@ -3598,13 +3598,13 @@ modules:
           g_ascii_strcasecmp: 0xC653C249
           g_file_vita_get_current_dir: 0x545F9DA8
           g_file_vita_get_full_path: 0xC1F77924
-          g_file_vita_set_current_dir: 0x1EE0837
+          g_file_vita_set_current_dir: 0x01EE0837
           getenv: 0x2AEBA06E
           monoeg_assertion_message: 0xA0D78B57
           monoeg_g_array_append_vals: 0x38EC545B
-          monoeg_g_array_free: 0x75935E0
+          monoeg_g_array_free: 0x075935E0
           monoeg_g_array_insert_vals: 0xEDCCA472
-          monoeg_g_array_new: 0x5EDBCA5
+          monoeg_g_array_new: 0x05EDBCA5
           monoeg_g_ascii_strdown: 0x3B76B55A
           monoeg_g_ascii_strncasecmp: 0x7CDD24DB
           monoeg_g_ascii_tolower: 0xF5C20E95
@@ -3617,25 +3617,25 @@ modules:
           monoeg_g_direct_equal: 0x8148B339
           monoeg_g_direct_hash: 0xD8811B19
           monoeg_g_error_free: 0x47C11F1D
-          monoeg_g_file_get_contents: 0x5AE6764
+          monoeg_g_file_get_contents: 0x05AE6764
           monoeg_g_file_open_tmp: 0x6B74C816
           monoeg_g_file_test: 0xCF8DCED3
-          monoeg_g_filename_from_uri: 0x8AD58AF
+          monoeg_g_filename_from_uri: 0x08AD58AF
           monoeg_g_filename_from_utf8: 0xDB1AD82A
           monoeg_g_filename_to_uri: 0xB8A330FA
           monoeg_g_find_program_in_path: 0xAA9C90DE
-          monoeg_g_free: 0xFDB0CDD
+          monoeg_g_free: 0x0FDB0CDD
           monoeg_g_get_charset: 0xF6BEC9D3
           monoeg_g_get_current_dir: 0xB6243709
           monoeg_g_get_home_dir: 0x7DF9817E
           monoeg_g_get_tmp_dir: 0x60DDC771
           monoeg_g_get_user_name: 0x93FF7030
-          monoeg_g_getenv: 0xA4ADADF
+          monoeg_g_getenv: 0x0A4ADADF
           monoeg_g_hash_table_destroy: 0x931C06A1
           monoeg_g_hash_table_foreach: 0xC23C4881
           monoeg_g_hash_table_foreach_remove: 0x4977120A
           monoeg_g_hash_table_foreach_steal: 0x9324F0E1
-          monoeg_g_hash_table_insert_replace: 0xC466869
+          monoeg_g_hash_table_insert_replace: 0x0C466869
           monoeg_g_hash_table_iter_init: 0x8FF97526
           monoeg_g_hash_table_iter_next: 0xA1F2C7E0
           monoeg_g_hash_table_lookup: 0xA9AD9AEF
@@ -3679,7 +3679,7 @@ modules:
           monoeg_g_ptr_array_add: 0xDB4852CA
           monoeg_g_ptr_array_free: 0x66743D4C
           monoeg_g_ptr_array_new: 0x33A7FA42
-          monoeg_g_ptr_array_remove: 0x9D8A3F8
+          monoeg_g_ptr_array_remove: 0x09D8A3F8
           monoeg_g_ptr_array_remove_fast: 0xC551D9F7
           monoeg_g_ptr_array_remove_index: 0x2BD1603F
           monoeg_g_ptr_array_remove_index_fast: 0x9CB8D947
@@ -3709,7 +3709,7 @@ modules:
           monoeg_g_slist_remove: 0x2ACD677F
           monoeg_g_slist_reverse: 0xF1985656
           monoeg_g_snprintf: 0xC3BE1A9A
-          monoeg_g_spaced_primes_closest: 0xDC3FEE9
+          monoeg_g_spaced_primes_closest: 0x0DC3FEE9
           monoeg_g_spawn_async_with_pipes: 0xB9C960E3
           monoeg_g_str_equal: 0x343BBAEC
           monoeg_g_str_has_prefix: 0xA3BAF580
@@ -3733,10 +3733,10 @@ modules:
           monoeg_g_strndup: 0x11E3A3A4
           monoeg_g_strreverse: 0x5EA4F9C0
           monoeg_g_strsplit: 0x7EA1C500
-          monoeg_g_timer_destroy: 0xB133D2A
+          monoeg_g_timer_destroy: 0x0B133D2A
           monoeg_g_timer_elapsed: 0x9D0017DA
           monoeg_g_timer_new: 0xB3C99F9F
-          monoeg_g_timer_start: 0x6358F60
+          monoeg_g_timer_start: 0x06358F60
           monoeg_g_timer_stop: 0xD2C1FCA7
           monoeg_g_ucs4_to_utf16: 0x33FA7A53
           monoeg_g_unichar_tolower: 0x1B7586C3
@@ -3769,7 +3769,7 @@ modules:
           pss_crypto_fread: 0x184E21BC
           pss_crypto_open: 0x6B4125E4
           pss_crypto_read: 0x32BA8444
-          pss_delay_thread: 0x18524DD
+          pss_delay_thread: 0x018524DD
           pss_delete_semaphore: 0x6148DE4D
           pss_disable_ftz: 0x2E9C2A4B
           pss_errno_loc: 0x58ABAD62
@@ -3786,7 +3786,7 @@ modules:
           pss_getpagesize: 0xB5135219
           pss_getpid: 0xF90E4DD2
           pss_gettimeofday: 0xE65366F3
-          pss_io_chstat: 0x827A135
+          pss_io_chstat: 0x0827A135
           pss_io_close: 0xA201DB2A
           pss_io_dclose: 0x5528F7F1
           pss_io_dopen: 0x1D93AA23
@@ -3817,7 +3817,7 @@ modules:
           pss_net_listen: 0x86CE8C7D
           pss_net_ntohl: 0xF8DDBAF5
           pss_net_ntohs: 0xD48BC6B5
-          pss_net_recv: 0xB508B0F
+          pss_net_recv: 0x0B508B0F
           pss_net_recvfrom: 0x71FFC585
           pss_net_resolver_create: 0x8FFCD9A4
           pss_net_resolver_start_aton: 0x5E72FC36
@@ -3837,12 +3837,12 @@ modules:
           pss_suspend_thread: 0xC42D2F9E
           pss_threads_initialize: 0x406453D4
           pss_usb_transport_close1: 0xF7FB1E6F
-          pss_usb_transport_close2: 0x2FDCC52
+          pss_usb_transport_close2: 0x02FDCC52
           pss_usb_transport_connect: 0x971CB35B
           pss_usb_transport_recv: 0xBC46D569
           pss_usb_transport_send: 0xFBC177AA
           pss_wait_semaphore: 0x755D09D8
-          pthread_attr_init: 0x27417DD
+          pthread_attr_init: 0x027417DD
           pthread_attr_setstacksize: 0xF33D87CE
           pthread_cleanup_pop_: 0x57B0ED8C
           pthread_cleanup_push_: 0x8774E2F3
@@ -6015,7 +6015,7 @@ modules:
           sceLiveAreaUpdateFrameAsync: 0xD330285D
           sceLiveAreaUpdateFrameSync: 0xCFCEDE95
   SceLocation:
-    nid: 0x59
+    nid: 0x00000059
     libraries:
       SceLibLocation:
         kernel: false
@@ -6044,7 +6044,7 @@ modules:
           sceLocationStopLocationCallback: 0xED378700
           sceLocationTerm: 0x1E80199A
   SceLocationExtension:
-    nid: 0x5B
+    nid: 0x0000005B
     libraries:
       SceLibLocationExtension:
         kernel: false
@@ -6054,7 +6054,7 @@ modules:
           sceLocationGetLocationWifiHistory: 0x82DE9BF8
           sceLocationQueryLocationWifiHistory: 0x277DA915
   SceMotion:
-    nid: 0x5F
+    nid: 0x0000005F
     libraries:
       SceMotion:
         kernel: false
@@ -7328,7 +7328,7 @@ modules:
           scePvfSetResolution: 0xC4444FB3
           scePvfSetSkewValue: 0x3DD09BC9
   SceRazorCapture:
-    nid: 0x99
+    nid: 0x00000099
     libraries:
       SceRazorCapture:
         kernel: false
@@ -7345,7 +7345,7 @@ modules:
           sceRazorGpuCaptureSetTriggerNextFrame: 0x9DAA7E9C
           sceRazorGpuCaptureStartSalvageMode: 0x3F0913CF
   SceRazorHud:
-    nid: 0x9B
+    nid: 0x0000009B
     libraries:
       SceRazorHud:
         kernel: false
@@ -7687,7 +7687,7 @@ modules:
         functions:
           sceShutterSoundPlay: 0x7FFB6D79
   SceSmart:
-    nid: 0xCE
+    nid: 0x000000CE
     libraries:
       SceSmart:
         kernel: false
@@ -7864,13 +7864,13 @@ modules:
           sqlite3_reset_auto_extension: 0xC4296FFD
           sqlite3_result_blob: 0x90CDF8C1
           sqlite3_result_double: 0xC2A5C2F8
-          sqlite3_result_error: 0x63BFACA
+          sqlite3_result_error: 0x063BFACA
           sqlite3_result_error16: 0xAB2AEB4A
           sqlite3_result_error_code: 0x1165223C
           sqlite3_result_error_nomem: 0x944E747A
           sqlite3_result_error_toobig: 0xAB9EFF96
           sqlite3_result_int: 0x5C9CD9D4
-          sqlite3_result_int64: 0xEF1AA07
+          sqlite3_result_int64: 0x0EF1AA07
           sqlite3_result_null: 0x6DE09482
           sqlite3_result_text: 0x696B5E6A
           sqlite3_result_text16: 0x3AF5D206
@@ -7936,7 +7936,7 @@ modules:
           sceSslInit: 0x3C733316
           sceSslTerm: 0x03CE6E3A
   SceSulpha:
-    nid: 0xD4
+    nid: 0x000000D4
     libraries:
       SceSulpha:
         kernel: false
@@ -8158,7 +8158,7 @@ modules:
           sceUltWaitingQueueResourcePoolDestroy: 0xC9E96714
           sceUltWaitingQueueResourcePoolGetWorkAreaSize: 0x644DA029
   SceVideodec:
-    nid: 0xDE
+    nid: 0x000000DE
     libraries:
       SceVideodecUser:
         kernel: false
