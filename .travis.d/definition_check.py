@@ -49,19 +49,29 @@ def read_def_groups():
     return definitions
 
 def read_nids():
-    nids = dict()
+    errors = []
+    user_nids = dict()
+    kernel_nids = dict()
+    nids = None
     with open(DB_FILE_PATH, 'r') as d:
         SECTION = None
-        for line in d.xreadlines():
+        for line_no, line in enumerate(d.xreadlines()):
             line = line.strip()
-            k, v = line.split(':')[:2]
+            k, v = line.split(':')[:3]
             if not v.strip():
                 SECTION = k
                 continue
+            if k.strip() == 'kernel':
+                if v.strip() == 'true':
+                    nids = kernel_nids
+                else:
+                    nids = user_nids
             if SECTION != 'functions':
                 continue
+            if nids.get(k):
+                errors.append('%s: NID conflict %s' % (line_no + 1, k))
             nids[k] = 1
-    return nids
+    return dict(user_nids, **kernel_nids), errors
 
 def check_header_groups(definitions):
     errors = []
@@ -120,8 +130,9 @@ def check_function_nids(nids):
     return errors
 
 if __name__ == '__main__':
-    errors = check_header_groups(read_def_groups()) \
-        + check_function_nids(read_nids())
+    nids, errors = read_nids()
+    errors += check_header_groups(read_def_groups()) \
+        + check_function_nids(nids)
     if len(errors):
         for e in errors:
             print e
