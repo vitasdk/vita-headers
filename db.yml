@@ -2356,7 +2356,7 @@ modules:
         kernel: true
         nid: 0x3691DA45
         functions:
-          ksceKernelAllocHeapMemory: 0xD351EBC8
+          ksceKernelAllocHeapMemory2: 0xD351EBC8
           ksceKernelGetProcessTitleId: 0xEC3124A3
           ksceKernelGetSysbase: 0x3E455842
           ksceKernelGetSysrootBuffer: 0x9DB56D1F
@@ -3165,7 +3165,7 @@ modules:
         nid: 0x7A69DE86
         functions:
           ksceKernelExitProcess: 0x4CA7DC42
-          ksceKernelGetClassForUid: 0xC6820972
+          ksceKernelGetClassForUid2: 0xC6820972
           ksceKernelGetProcessAuthid: 0xE4C83B0D
           ksceKernelGetProcessKernelBuf: 0xB9E68092
           ksceKernelGetProcessMainThread: 0x95F9ED94
@@ -3331,7 +3331,7 @@ modules:
           sceIoChstat: 0x29482F7F
           sceIoChstatAsync: 0x9739A5E2
           sceIoChstatByFd: 0x6E903AB2
-          sceIoClose: 0xF5C6F098
+          sceIoClose2: 0xF5C6F098
           sceIoCompleteMultiple: 0xA792C404
           sceIoDevctl: 0x04B30CB2
           sceIoDevctlAsync: 0x950F78EB
@@ -3352,7 +3352,7 @@ modules:
           sceIoPreadAsync: 0xA010141E
           sceIoPwrite: 0x8FFFF5A8
           sceIoPwriteAsync: 0xED25BEEF
-          sceIoRead: 0x713523E1
+          sceIoRead2: 0x713523E1
           sceIoRemove: 0xE20ED0F3
           sceIoRemoveAsync: 0x446A60AC
           sceIoRename: 0xF737E369
@@ -3361,7 +3361,7 @@ modules:
           sceIoRmdirAsync: 0x9694D00F
           sceIoSync: 0x98ACED6D
           sceIoSyncAsync: 0xF7C7FBFE
-          sceIoWrite: 0x11FED231
+          sceIoWrite2: 0x11FED231
           sceKernelAtomicAddAndGet16: 0x495C52EC
           sceKernelAtomicAddAndGet32: 0x2E84A93B
           sceKernelAtomicAddAndGet64: 0xB6CE9B9A
@@ -3489,7 +3489,7 @@ modules:
           sceKernelGetSystemTime: 0x8AF15B5F
           sceKernelGetTLSAddr: 0xB295EB61
           sceKernelGetThreadContextForVM: 0x22C9595E
-          sceKernelGetThreadCpuAffinityMask: 0x8C57AC2A
+          sceKernelGetThreadCpuAffinityMask2: 0x8C57AC2A
           sceKernelGetThreadCurrentPriority: 0xC53A9848
           sceKernelGetThreadEventInfo: 0xE48476FE
           sceKernelGetThreadExitStatus: 0xD5DC26C4
@@ -3588,8 +3588,8 @@ modules:
           __lshrdi3: 0x69B23762
           __moddi3: 0x9A2906FE
           __modsi3: 0x3F8F26A3
-          __sce_aeabi_idiv0: 0x1EBF97CC
-          __sce_aeabi_ldiv0: 0x2AB3B87C
+          __sce_aeabi_idiv1: 0x1EBF97CC
+          __sce_aeabi_ldiv1: 0x2AB3B87C
           __udivdi3: 0xD7F019CF
           __udivsi3: 0xFF10AAE9
           __umoddi3: 0x66FCF225
@@ -8651,25 +8651,25 @@ modules:
           kscePfsACSetFSAttrByMode: 0x2AE6CF27
           ksceSblACIsSystemProgram: 0x930CD037
           ksceSblACMgrGetMediaType: 0xD442962E
-          ksceSblACMgrGetSelfAuthInfo: 0x7C2AF978
-          ksceSblACMgrHasCapability: 0x9EDAF856
-          ksceSblACMgrIsAllowedExtendedMemory: 0x384D20FD
-          ksceSblACMgrIsAllowedVirtualMachine: 0x96403142
-          ksceSblACMgrIsDevelopmentMode: 0xBBA13D9C
-          ksceSblACMgrIsFself: 0x5AC59172
-          ksceSblACMgrIsGameProgram: 0x05FDC646
-          ksceSblACMgrIsMiniSettingsForQA: 0xAF6F208E
-          ksceSblACMgrIsNonGameOrGameProgram: 0x570D6AD3
-          ksceSblACMgrIsNonGameProgram: 0x3F99279F
-          ksceSblACMgrIsNotSandboxed: 0xF5AD56E4
-          ksceSblACMgrIsPSMDevAssistant: 0xC90A9216
-          ksceSblACMgrIsPSMRuntime: 0x966B3738
-          ksceSblACMgrIsPspEmu: 0x47B67F72
-          ksceSblACMgrIsSIEApp: 0x3388F595
-          ksceSblACMgrIsSceShell: 0xF9FEF5F0
-          ksceSblACMgrIsSystem: 0x31C23B66
-          ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn: 0x98B28671
-          ksceSblACMgrIsWebCoreOrWebKitProcess: 0xA7C3001D
+          ksceSblACMgrGetSelfAuthInfo2: 0x7C2AF978
+          ksceSblACMgrHasCapability2: 0x9EDAF856
+          ksceSblACMgrIsAllowedExtendedMemory2: 0x384D20FD
+          ksceSblACMgrIsAllowedVirtualMachine2: 0x96403142
+          ksceSblACMgrIsDevelopmentMode2: 0xBBA13D9C
+          ksceSblACMgrIsFself2: 0x5AC59172
+          ksceSblACMgrIsGameProgram2: 0x05FDC646
+          ksceSblACMgrIsMiniSettingsForQA2: 0xAF6F208E
+          ksceSblACMgrIsNonGameOrGameProgram2: 0x570D6AD3
+          ksceSblACMgrIsNonGameProgram2: 0x3F99279F
+          ksceSblACMgrIsNotSandboxed2: 0xF5AD56E4
+          ksceSblACMgrIsPSMDevAssistant2: 0xC90A9216
+          ksceSblACMgrIsPSMRuntime2: 0x966B3738
+          ksceSblACMgrIsPspEmu2: 0x47B67F72
+          ksceSblACMgrIsSIEApp2: 0x3388F595
+          ksceSblACMgrIsSceShell2: 0xF9FEF5F0
+          ksceSblACMgrIsSystem2: 0x31C23B66
+          ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn2: 0x98B28671
+          ksceSblACMgrIsWebCoreOrWebKitProcess2: 0xA7C3001D
   SceSblUpdateMgr:
     nid: 0x528F6BF5
     libraries:
