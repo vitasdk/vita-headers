@@ -3573,6 +3573,14 @@ modules:
         nid: 0xF9AC7CF8
         functions:
           sceKernelGetRandomNumber: 0xB2700165
+  SceLibMono:
+    nid: 0x25CB8DCB
+    libraries:
+      SceLibMono:
+        nid: 0x7344135B
+        kernel: false
+        functions:
+          mono_security_enable_core_clr: 0x02A867BC
   SceLibMonoBridge:
     nid: 0x4F1547C9
     libraries:
