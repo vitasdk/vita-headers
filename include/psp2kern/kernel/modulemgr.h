@@ -86,88 +86,39 @@ typedef struct{
   int unk_10;
 }SceKernelSegmentInfo2;
 
-struct SceKernelModuleListInfoType1{
-  SceSize size; //!< sizeof(SceKernelModuleListInfoType1) (0x74)
-  SceUID modid;
-  uint32_t version;
-  uint32_t module_version;
-  uint32_t unk10;
-  void *unk14;
-  uint32_t unk18;
-  void *unk1C;
-  void *unk20;
-  char module_name[28];
-  uint32_t unk40;
-  uint32_t unk44;
-  uint32_t nid;
-  int segments_num;
-  SceKernelSegmentInfo2 SegmentInfo[1];
-  uint32_t addr[4];
-};
-
-struct SceKernelModuleListInfoType2{
-  SceSize size; //!< sizeof(SceKernelModuleListInfoType2) (0x88)
-  SceUID modid;
-  uint32_t version;
-  uint32_t module_version;
-  uint32_t unk10;
-  void *unk14;
-  uint32_t unk18;
-  void *unk1C;
-  void *unk20;
-  char module_name[28];
-  uint32_t unk40;
-  uint32_t unk44;
-  uint32_t nid;
-  int segments_num;
-  SceKernelSegmentInfo2 SegmentInfo[2];
-  uint32_t addr[4];
-};
-
-struct SceKernelModuleListInfoType3{
-  SceSize size; //!< sizeof(SceKernelModuleListInfoType3) (0x9C)
-  SceUID modid;
-  uint32_t version;
-  uint32_t module_version;
-  uint32_t unk10;
-  void *unk14;
-  uint32_t unk18;
-  void *unk1C;
-  void *unk20;
-  char module_name[28];
-  uint32_t unk40;
-  uint32_t unk44;
-  uint32_t nid;
-  int segments_num;
-  SceKernelSegmentInfo2 SegmentInfo[3];
-  uint32_t addr[4];
-};
-
-struct SceKernelModuleListInfoType4{
-  SceSize size; //!< sizeof(SceKernelModuleListInfoType4) (0xB0)
-  SceUID modid;
-  uint32_t version;
-  uint32_t module_version;
-  uint32_t unk10;
-  void *unk14;
-  uint32_t unk18;
-  void *unk1C;
-  void *unk20;
-  char module_name[28];
-  uint32_t unk40;
-  uint32_t unk44;
-  uint32_t nid;
-  int segments_num;
-  SceKernelSegmentInfo2 SegmentInfo[4];
-  uint32_t addr[4];
-};
-
-typedef union{
+typedef struct{
   SceSize size;
-  struct SceKernelModuleListInfoType1 type1;
-  struct SceKernelModuleListInfoType2 type2;
-  struct SceKernelModuleListInfoType3 type3;
-  struct SceKernelModuleListInfoType4 type4;
+  SceUID modid;
+  uint32_t version;
+  uint32_t module_version;
+  uint32_t unk10;
+  void *unk14;
+  uint32_t unk18;
+  void *unk1C;
+  void *unk20;
+  char module_name[28];
+  uint32_t unk40;
+  uint32_t unk44;
+  uint32_t nid;
+  int segments_num;
+  union{
+    struct {
+      SceKernelSegmentInfo2 SegmentInfo[1];
+      uint32_t addr[4];
+    } seg1;
+    struct {
+      SceKernelSegmentInfo2 SegmentInfo[2];
+      uint32_t addr[4];
+    } seg2;
+    struct {
+      SceKernelSegmentInfo2 SegmentInfo[3];
+      uint32_t addr[4];
+    } seg3;
+    struct {
+      SceKernelSegmentInfo2 SegmentInfo[4];
+      uint32_t addr[4];
+    } seg4;
+  };
 } SceKernelModuleListInfo;
 
 typedef struct
@@ -219,38 +170,32 @@ SceUID ksceKernelGetProcessMainModule(SceUID pid);
 /**
  * @par Example1: Get max to 10 kernel module info
  * @code
- * char infolists[sizeof(SceKernelModuleListInfo) * 10];
+ * SceKernelModuleListInfo infolists[10];
  * size_t num = 10;// Get max
  * uint32_t offset = 0;
- * SceKernelModuleListInfo *info;
- * ret = ksceKernelGetModuleList2(0x10005, infolists, &num);
+ * SceKernelModuleListInfo *info = &infolists[0];
+ *
+ * ksceKernelGetModuleList2(0x10005, infolists, &num);
  *
  * for(int i=0;i<num;i++){
- *   info = (SceKernelModuleListInfo*)(infolists+offset);
- *   if( info->size == sizeof(struct SceKernelModuleListInfoType1) ) {
- *     printf("name %s\n", info->type1.module_name);
- *     printf("nid 0x%X\n", info->type1.nid);
- *   }else if( info->size == sizeof(struct SceKernelModuleListInfoType2) ) {
- *     printf("name %s\n", info->type2.module_name);
- *     printf("nid 0x%X\n", info->type2.nid);
- *   }else if( info->size == sizeof(struct SceKernelModuleListInfoType3) ) {
- *     printf("name %s\n", info->type3.module_name);
- *     printf("nid 0x%X\n", info->type3.nid);
- *   }else if( info->size == sizeof(struct SceKernelModuleListInfoType4) ) {
- *     printf("name %s\n", info->type4.module_name);
- *     printf("nid 0x%X\n", info->type4.nid);
+ *   printf("name : %s\n", info->module_name);
+ *
+ *   if(info->segments_num == 1){
+ *     printf("vaddr:0x%08X\n", info->seg1.SegmentInfo[0].vaddr);
+ *   }else if(info->segments_num == 2){
+ *     printf("vaddr:0x%08X\n", info->seg2.SegmentInfo[0].vaddr);
  *   }
- *   offset += info->size;
+ *   info = ((char *)info) + info->size;
  * }
  * @endcode
  *
- * @param[in] pid - target pid
- * @param[out] infolists - infolists output
- * @param[in] num - Specify the maximum number of modinfolist to retrieve. If the function returns 0, it returns the number of modules loaded in the target pid in num
+ * @param[in]    pid       - target pid
+ * @param[out]   infolists - infolists output
+ * @param[inout] num       - Specify the maximum number of modinfolist to retrieve. If the function returns 0, it returns the number of modules loaded in the target pid in num
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleList2(SceUID pid, void *infolists, size_t *num);
+int ksceKernelGetModuleList2(SceUID pid, SceKernelModuleListInfo *infolists, size_t *num);
 
 /**
  * @param[in] pid - target pid
