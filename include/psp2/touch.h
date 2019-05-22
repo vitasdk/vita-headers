@@ -97,6 +97,8 @@ int sceTouchGetPanelInfo(SceUInt32 port, SceTouchPanelInfo *pPanelInfo);
  * @param[in]	port	Port Number.
  * @param[out]	pData	Buffer to receive touch data.
  * @param[in]	nBufs	Number of buffers to receive touch data.
+ *
+ * @return Buffers count, between 1 and 'nBufs'. <0 on error.
  */
 int sceTouchRead(SceUInt32 port, SceTouchData *pData, SceUInt32 nBufs);
 
@@ -106,6 +108,8 @@ int sceTouchRead(SceUInt32 port, SceTouchData *pData, SceUInt32 nBufs);
  * @param[in]	port	port number.
  * @param[out]	pData	Buffer to receive touch data.
  * @param[in]	nBufs	Number of buffers to receive touch data.
+ *
+ * @return Buffers count, between 1 and 'nBufs'. <0 on error.
  */
 int sceTouchPeek(SceUInt32 port, SceTouchData *pData, SceUInt32 nBufs);
 
