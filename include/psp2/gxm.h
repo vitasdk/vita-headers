@@ -1454,8 +1454,11 @@ const SceGxmProgram *sceGxmShaderPatcherGetProgramFromId(SceGxmShaderPatcherId p
 int sceGxmShaderPatcherSetAuxiliarySurface(SceGxmShaderPatcher *shaderPatcher, unsigned int auxSurfaceIndex, const SceGxmAuxiliarySurface *auxSurface);
 int sceGxmShaderPatcherCreateVertexProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId, const SceGxmVertexAttribute *attributes, unsigned int attributeCount, const SceGxmVertexStream *streams, unsigned int streamCount, SceGxmVertexProgram **vertexProgram);
 int sceGxmShaderPatcherCreateFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId, SceGxmOutputRegisterFormat outputFormat, SceGxmMultisampleMode multisampleMode, const SceGxmBlendInfo *blendInfo, const SceGxmProgram *vertexProgram, SceGxmFragmentProgram **fragmentProgram);
+int sceGxmShaderPatcherCreateMaskUpdateFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmFragmentProgram **fragmentProgram);
 int sceGxmShaderPatcherAddRefVertexProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmVertexProgram *vertexProgram);
 int sceGxmShaderPatcherAddRefFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmFragmentProgram *fragmentProgram);
+int sceGxmShaderPatcherGetVertexProgramRefCount(SceGxmShaderPatcher *shaderPatcher, SceGxmVertexProgram *fragmentProgram, unsigned int *count);
+int sceGxmShaderPatcherGetFragmentProgramRefCount(SceGxmShaderPatcher *shaderPatcher, SceGxmFragmentProgram *fragmentProgram, unsigned int *count);
 int sceGxmShaderPatcherReleaseVertexProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmVertexProgram *vertexProgram);
 int sceGxmShaderPatcherReleaseFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmFragmentProgram *fragmentProgram);
 unsigned int sceGxmShaderPatcherGetHostMemAllocated(const SceGxmShaderPatcher *shaderPatcher);
