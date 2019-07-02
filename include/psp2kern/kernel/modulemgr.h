@@ -78,7 +78,7 @@ typedef struct
   SceUInt unk_24;
 } SceKernelFwInfo;
 
-typedef struct{
+typedef struct {
   SceSize size; //!< sizeof(SceKernelSegmentInfo2) (0x14)
   int perm;
   void *vaddr;
@@ -86,7 +86,7 @@ typedef struct{
   int unk_10;
 }SceKernelSegmentInfo2;
 
-typedef struct{
+typedef struct {
   SceSize size;
   SceUID modid;
   uint32_t version;
@@ -101,7 +101,7 @@ typedef struct{
   uint32_t unk44;
   uint32_t nid;
   int segments_num;
-  union{
+  union {
     struct {
       SceKernelSegmentInfo2 SegmentInfo[1];
       uint32_t addr[4];
