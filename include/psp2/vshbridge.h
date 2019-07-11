@@ -53,7 +53,9 @@ int vshIdStorageWriteLeaf(int leafnum, const void *buf, int buf_size);
 
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);
+int vshSblAimgrIsVITA(void);
 int vshSblAimgrIsGenuineVITA(void);
+int vshSblAimgrIsDolce(void);
 int vshSblAimgrIsGenuineDolce(void);
 int vshSblAimgrIsTest(void);
 int vshSblAimgrIsTool(void);
