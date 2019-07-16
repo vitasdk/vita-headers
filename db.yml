@@ -1408,6 +1408,17 @@ modules:
           sceDisplayWaitVblankStartCB: 0x78B41B92
           sceDisplayWaitVblankStartMulti: 0xDD0A13B8
           sceDisplayWaitVblankStartMultiCB: 0x05F27764
+      SceDisplayUser:
+        kernel: false
+        nid: 0x4FAACD11
+        functions:
+          sceDisplayGetFrameBuf: 0x42AE6BBC
+          sceDisplayGetFrameBufInternal: 0x5213F74B
+          sceDisplayGetMaximumFrameBufResolution: 0x8848ADDD
+          sceDisplayGetResolutionInfoInternal: 0x0BFB78C6
+          sceDisplaySetFrameBuf: 0x7A410B64
+          sceDisplaySetFrameBufForCompat: 0x8C36B628
+          sceDisplaySetFrameBufInternal: 0x89F86A1E
       SceDisplayForDriver:
         kernel: true
         nid: 0x9FED47AC
@@ -1596,17 +1607,6 @@ modules:
           sceAppMgrUpdateSaveDataParam: 0x1B0BD20D
           sceAppMgrWorkDirMount: 0x9B3BB24D
           sceAppMgrWorkDirMountById: 0x80E86E42
-      SceDisplayUser:
-        kernel: false
-        nid: 0x4FAACD11
-        functions:
-          sceDisplayGetFrameBuf: 0x42AE6BBC
-          sceDisplayGetFrameBufInternal: 0x5213F74B
-          sceDisplayGetMaximumFrameBufResolution: 0x8848ADDD
-          sceDisplayGetResolutionInfoInternal: 0x0BFB78C6
-          sceDisplaySetFrameBuf: 0x7A410B64
-          sceDisplaySetFrameBufForCompat: 0x8C36B628
-          sceDisplaySetFrameBufInternal: 0x89F86A1E
       SceDrmBridgeUser:
         nid: 0x91AFEB43
         kernel: false
