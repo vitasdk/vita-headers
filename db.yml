@@ -1408,6 +1408,17 @@ modules:
           sceDisplayWaitVblankStartCB: 0x78B41B92
           sceDisplayWaitVblankStartMulti: 0xDD0A13B8
           sceDisplayWaitVblankStartMultiCB: 0x05F27764
+      SceDisplayUser:
+        kernel: false
+        nid: 0x4FAACD11
+        functions:
+          sceDisplayGetFrameBuf: 0x42AE6BBC
+          sceDisplayGetFrameBufInternal: 0x5213F74B
+          sceDisplayGetMaximumFrameBufResolution: 0x8848ADDD
+          sceDisplayGetResolutionInfoInternal: 0x0BFB78C6
+          sceDisplaySetFrameBuf: 0x7A410B64
+          sceDisplaySetFrameBufForCompat: 0x8C36B628
+          sceDisplaySetFrameBufInternal: 0x89F86A1E
       SceDisplayForDriver:
         kernel: true
         nid: 0x9FED47AC
@@ -1596,17 +1607,6 @@ modules:
           sceAppMgrUpdateSaveDataParam: 0x1B0BD20D
           sceAppMgrWorkDirMount: 0x9B3BB24D
           sceAppMgrWorkDirMountById: 0x80E86E42
-      SceDisplayUser:
-        kernel: false
-        nid: 0x4FAACD11
-        functions:
-          sceDisplayGetFrameBuf: 0x42AE6BBC
-          sceDisplayGetFrameBufInternal: 0x5213F74B
-          sceDisplayGetMaximumFrameBufResolution: 0x8848ADDD
-          sceDisplayGetResolutionInfoInternal: 0x0BFB78C6
-          sceDisplaySetFrameBuf: 0x7A410B64
-          sceDisplaySetFrameBufForCompat: 0x8C36B628
-          sceDisplaySetFrameBufInternal: 0x89F86A1E
       SceDrmBridgeUser:
         nid: 0x91AFEB43
         kernel: false
@@ -1639,77 +1639,6 @@ modules:
           sceFiosOverlayResolveWithRangeSync02: 0x61C4AAC4
           sceFiosOverlayThreadIsDisabled02: 0x23B8DB1D
           sceFiosOverlayThreadSetDisabled02: 0x70321220
-      SceMotion:
-        kernel: false
-        nid: 0xDC571B3F
-        functions:
-          sceMotionGetAngleThreshold: 0x499B6C87
-          sceMotionGetBasicOrientation: 0x4F28BFE0
-          sceMotionGetDeadband: 0x112E0EAE
-          sceMotionGetDeviceLocation: 0x047F060A
-          sceMotionGetGyroBiasCorrection: 0xE8A28DA5
-          sceMotionGetMagnetometerState: 0x3D4813AE
-          sceMotionGetSensorState: 0x47D679EA
-          sceMotionGetState: 0xBDB32767
-          sceMotionGetTiltCorrection: 0xC1652201
-          sceMotionMagnetometerOff: 0xC1A7395A
-          sceMotionMagnetometerOn: 0x122A79F8
-          sceMotionReset: 0x0FD2CDA2
-          sceMotionRotateYaw: 0x20F00078
-          sceMotionSetAngleThreshold: 0xDACB2A41
-          sceMotionSetDeadband: 0x917EA390
-          sceMotionSetGyroBiasCorrection: 0xA4A7E6E2
-          sceMotionSetTiltCorrection: 0xAF09FCDB
-          sceMotionStartSampling: 0x28034AC9
-          sceMotionStopSampling: 0xAF32CB1D
-      SceRtcUser:
-        kernel: false
-        nid: 0x6704D3C6
-        functions:
-          sceRtcCheckValid: 0xD7622935
-          sceRtcCompareTick: 0xC7385158
-          sceRtcConvertLocalTimeToUtc: 0x0A05E201
-          sceRtcConvertUtcToLocalTime: 0x1282C436
-          sceRtcFormatRFC2822: 0x147F2138
-          sceRtcFormatRFC2822LocalTime: 0x42CA8EB5
-          sceRtcFormatRFC3339: 0xCCEA2B54
-          sceRtcFormatRFC3339LocalTime: 0x742250A9
-          sceRtcGetCurrentAdNetworkTick: 0x5612AF12
-          sceRtcGetCurrentClock: 0x70FDE8F1
-          sceRtcGetCurrentClockLocalTime: 0x0572EDDC
-          sceRtcGetCurrentDebugNetworkTick: 0x4ED6BA6C
-          sceRtcGetCurrentGpsTick: 0xBB92534F
-          sceRtcGetCurrentNetworkTick: 0xCDDD25FE
-          sceRtcGetCurrentRetainedNetworkTick: 0xA086AE18
-          sceRtcGetCurrentTick: 0x23F79274
-          sceRtcGetDayOfWeek: 0x2F3531EB
-          sceRtcGetDayOfYear: 0xB5C4E95F
-          sceRtcGetDaysInMonth: 0x49EB4556
-          sceRtcGetDosTime: 0x92ABEBAF
-          sceRtcGetLastAdjustedTick: 0x8148E95C
-          sceRtcGetLastReincarnatedTick: 0xA8C16615
-          sceRtcGetTick: 0xF2B238E2
-          sceRtcGetTickResolution: 0x811313B3
-          sceRtcGetTime64_t: 0xC995DE02
-          sceRtcGetTime_t: 0x8DE6FEB7
-          sceRtcGetWin32FileTime: 0x8A95E119
-          sceRtcIsLeapYear: 0xF17FD8B5
-          sceRtcParseDateTime: 0x2347CE12
-          sceRtcParseRFC3339: 0x2D18AEEC
-          sceRtcSetDosTime: 0xF8B22B07
-          sceRtcSetTick: 0xCD89F464
-          sceRtcSetTime64_t: 0xA6C36B6A
-          sceRtcSetTime_t: 0x3A332F81
-          sceRtcSetWin32FileTime: 0xA79A8846
-          sceRtcTickAddDays: 0x58DE3C70
-          sceRtcTickAddHours: 0x6F193F55
-          sceRtcTickAddMicroseconds: 0xAE26D920
-          sceRtcTickAddMinutes: 0x4C358871
-          sceRtcTickAddMonths: 0x6321B4AA
-          sceRtcTickAddSeconds: 0x979AFD79
-          sceRtcTickAddTicks: 0x4559E2DB
-          sceRtcTickAddWeeks: 0xE713C640
-          sceRtcTickAddYears: 0xDF6C3E1B
   SceDTrace:
     nid: 0x00000023
     libraries:
@@ -6103,6 +6032,32 @@ modules:
         nid: 0xF2E30EED
         functions:
           sceMusicExportFromFile: 0x08000579
+  SceMotion:
+    nid: 0x0000005F
+    libraries:
+      SceMotion:
+        kernel: false
+        nid: 0xDC571B3F
+        functions:
+          sceMotionGetAngleThreshold: 0x499B6C87
+          sceMotionGetBasicOrientation: 0x4F28BFE0
+          sceMotionGetDeadband: 0x112E0EAE
+          sceMotionGetDeviceLocation: 0x047F060A
+          sceMotionGetGyroBiasCorrection: 0xE8A28DA5
+          sceMotionGetMagnetometerState: 0x3D4813AE
+          sceMotionGetSensorState: 0x47D679EA
+          sceMotionGetState: 0xBDB32767
+          sceMotionGetTiltCorrection: 0xC1652201
+          sceMotionMagnetometerOff: 0xC1A7395A
+          sceMotionMagnetometerOn: 0x122A79F8
+          sceMotionReset: 0x0FD2CDA2
+          sceMotionRotateYaw: 0x20F00078
+          sceMotionSetAngleThreshold: 0xDACB2A41
+          sceMotionSetDeadband: 0x917EA390
+          sceMotionSetGyroBiasCorrection: 0xA4A7E6E2
+          sceMotionSetTiltCorrection: 0xAF09FCDB
+          sceMotionStartSampling: 0x28034AC9
+          sceMotionStopSampling: 0xAF32CB1D
   SceMotionDev:
     nid: 0x466A97BD
     libraries:
@@ -7921,6 +7876,54 @@ modules:
           _sceRtcGetLastAdjustedTick: 0xEA157EC5
           _sceRtcGetLastReincarnatedTick: 0xE13D0FE5
           sceRtcGetAccumulativeTime: 0x258BE8EC
+      SceRtcUser:
+        kernel: false
+        nid: 0x6704D3C6
+        functions:
+          sceRtcCheckValid: 0xD7622935
+          sceRtcCompareTick: 0xC7385158
+          sceRtcConvertLocalTimeToUtc: 0x0A05E201
+          sceRtcConvertUtcToLocalTime: 0x1282C436
+          sceRtcFormatRFC2822: 0x147F2138
+          sceRtcFormatRFC2822LocalTime: 0x42CA8EB5
+          sceRtcFormatRFC3339: 0xCCEA2B54
+          sceRtcFormatRFC3339LocalTime: 0x742250A9
+          sceRtcGetCurrentAdNetworkTick: 0x5612AF12
+          sceRtcGetCurrentClock: 0x70FDE8F1
+          sceRtcGetCurrentClockLocalTime: 0x0572EDDC
+          sceRtcGetCurrentDebugNetworkTick: 0x4ED6BA6C
+          sceRtcGetCurrentGpsTick: 0xBB92534F
+          sceRtcGetCurrentNetworkTick: 0xCDDD25FE
+          sceRtcGetCurrentRetainedNetworkTick: 0xA086AE18
+          sceRtcGetCurrentTick: 0x23F79274
+          sceRtcGetDayOfWeek: 0x2F3531EB
+          sceRtcGetDayOfYear: 0xB5C4E95F
+          sceRtcGetDaysInMonth: 0x49EB4556
+          sceRtcGetDosTime: 0x92ABEBAF
+          sceRtcGetLastAdjustedTick: 0x8148E95C
+          sceRtcGetLastReincarnatedTick: 0xA8C16615
+          sceRtcGetTick: 0xF2B238E2
+          sceRtcGetTickResolution: 0x811313B3
+          sceRtcGetTime64_t: 0xC995DE02
+          sceRtcGetTime_t: 0x8DE6FEB7
+          sceRtcGetWin32FileTime: 0x8A95E119
+          sceRtcIsLeapYear: 0xF17FD8B5
+          sceRtcParseDateTime: 0x2347CE12
+          sceRtcParseRFC3339: 0x2D18AEEC
+          sceRtcSetDosTime: 0xF8B22B07
+          sceRtcSetTick: 0xCD89F464
+          sceRtcSetTime64_t: 0xA6C36B6A
+          sceRtcSetTime_t: 0x3A332F81
+          sceRtcSetWin32FileTime: 0xA79A8846
+          sceRtcTickAddDays: 0x58DE3C70
+          sceRtcTickAddHours: 0x6F193F55
+          sceRtcTickAddMicroseconds: 0xAE26D920
+          sceRtcTickAddMinutes: 0x4C358871
+          sceRtcTickAddMonths: 0x6321B4AA
+          sceRtcTickAddSeconds: 0x979AFD79
+          sceRtcTickAddTicks: 0x4559E2DB
+          sceRtcTickAddWeeks: 0xE713C640
+          sceRtcTickAddYears: 0xDF6C3E1B
   SceRudp:
     nid: 0x0B6F819A
     libraries:
