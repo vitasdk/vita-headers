@@ -1611,10 +1611,10 @@ modules:
         nid: 0x91AFEB43
         kernel: false
         functions:
-          sceDrmBridgeGetCurrentSecureTick: 0x7C994327
-          sceDrmBridgeIsAllowRemotePlayDebug: 0x1F82FF68
-          sceDrmBridgeMlnpsnlAuth1: 0x7D0DB83F
-          sceDrmBridgeMlnpsnlAuth2: 0x6471937D
+          _sceDrmBridgeGetCurrentSecureTick: 0x7C994327
+          _sceDrmBridgeIsAllowRemotePlayDebug: 0x1F82FF68
+          _sceDrmBridgeMlnpsnlAuth1: 0x7D0DB83F
+          _sceDrmBridgeMlnpsnlAuth2: 0x6471937D
       SceErrorUser:
         nid: 0xD401318D
         kernel: false
@@ -10028,10 +10028,10 @@ modules:
         nid: 0xFF4CD67F
         kernel: false
         functions:
-          _sceDrmBridgeGetCurrentSecureTick: 0xFFB164E2
-          _sceDrmBridgeIsAllowRemotePlayDebug: 0x1BBB62E9
-          _sceDrmBridgeMlnpsnlAuth1: 0xE04F767B
-          _sceDrmBridgeMlnpsnlAuth2: 0x6D483DFC
+          sceDrmBridgeGetCurrentSecureTick: 0xFFB164E2
+          sceDrmBridgeIsAllowRemotePlayDebug: 0x1BBB62E9
+          sceDrmBridgeMlnpsnlAuth1: 0xE04F767B
+          sceDrmBridgeMlnpsnlAuth2: 0x6D483DFC
   SceWlanBt:
     nid: 0x99052D93
     libraries:
