@@ -473,6 +473,27 @@ int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
  */
 int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
 
+/**
+ * Resolve a path to the corresponding true path (uses ::ksceFiosKernelOverlayResolveSync underneath). 
+ *
+ * @param[in] path - Path to convert (e.g. app0:)
+ * @param[out] resolved_path - True resolved path
+ * @param[in] unk - Unknown, provide an empty buffer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size, char unk[16]);
+	
+/**
+ * Get the real/resolved path of app0: (where it's actually mounted)
+ * 
+ * @param[in] appId - Use -2 for the current application
+ * @param[out] resolved_path - Buffer that will hold the resolved path. It should have enough room to hold 292 characters or it will buffer overflow (noname120).
+ * 
+ * @return 0 on success.
+ */
+int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]);
+	
 #ifdef __cplusplus
 }
 #endif
