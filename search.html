@@ -387,7 +387,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">appmgr.h</field>
     <field name="url">appmgr_8h_source.html#l00100</field>
     <field name="keywords"></field>
-    <field name="text">reserved sceAppMgrLoadExecOptParam _sceAppMgrSaveDataDataSave SceAppMgrSaveDataData data _sceAppMgrSaveDataDataRemove SceAppMgrSaveDataDataDelete data _sceAppMgrSaveDataSlotCreate SceAppMgrSaveDataSlot data _sceAppMgrSaveDataSlotGetParam SceAppMgrSaveDataSlot data _sceAppMgrSaveDataSlotSetParam SceAppMgrSaveDataSlot data _sceAppMgrSaveDataSlotDelete SceAppMgrSaveDataSlotDelete data sceAppMgrGetIdByName SceUID pid name sceAppMgrGetNameById SceUID pid name sceAppMgrDestroyOtherApp sceAppMgrDestroyAppByName name sceAppMgrDestroyAppByAppId SceUID appId SceUID sceAppMgrGetProcessIdByAppIdForShell SceUID appId sceAppMgrGetRunningAppIdListForShell SceUID appIds count _sceAppMgrGetAppState SceAppMgrAppState appState uint32_t len uint32_t version sceAppMgrReceiveSystemEvent SceAppMgrSystemEvent systemEvent sceAppMgrGetAppParam param sceAppMgrAcquireBgmPort sceAppMgrReleaseBgmPort sceAppMgrSetInfobarState SceAppMgrInfoBarVisibility visibility SceAppMgrInfoBarColor color SceAppMgrInfoBarTransparency transparency sceAppMgrLoadExec appPath argv SceAppMgrExecOptParam optParam sceAppMgrLaunchAppByUri flags uri sceAppMgrLaunchAppByName2 name param SceAppMgrLaunchAppOptParam optParam SceUID sceAppMgrLaunchAppByName2ForShell name param SceAppMgrLaunchAppOptParam optParam sceAppMgrGameDataMount path unk1 unk2 mount_point sceAppMgrAppDataMount mount_point sceAppMgrAppDataMountById titleid mount_point sceAppMgrAppParamGetString pid param length sceAppMgrGetDevInfo dev uint64_t max_size uint64_t free_size sceAppMgrMmsMount mount_point sceAppMgrPspSaveDataRootMount mount_point sceAppMgrWorkDirMount mount_point sceAppMgrWorkDirMountById titleid mount_point sceAppMgrUmount mount_point sceAppMgrConvertVs0UserDrivePath path mount_point unk sceAppMgrGetRawPath path mount_point unk</field>
+    <field name="text">reserved sceAppMgrLoadExecOptParam _sceAppMgrSaveDataDataSave SceAppMgrSaveDataData data _sceAppMgrSaveDataDataRemove SceAppMgrSaveDataDataDelete data _sceAppMgrSaveDataSlotCreate SceAppMgrSaveDataSlot data _sceAppMgrSaveDataSlotGetParam SceAppMgrSaveDataSlot data _sceAppMgrSaveDataSlotSetParam SceAppMgrSaveDataSlot data _sceAppMgrSaveDataSlotDelete SceAppMgrSaveDataSlotDelete data sceAppMgrGetIdByName SceUID pid name sceAppMgrGetNameById SceUID pid name sceAppMgrDestroyOtherApp sceAppMgrDestroyAppByName name sceAppMgrDestroyAppByAppId SceUID appId SceUID sceAppMgrGetProcessIdByAppIdForShell SceUID appId sceAppMgrGetRunningAppIdListForShell SceUID appIds count _sceAppMgrGetAppState SceAppMgrAppState appState uint32_t len uint32_t version sceAppMgrReceiveSystemEvent SceAppMgrSystemEvent systemEvent sceAppMgrGetAppParam param sceAppMgrAcquireBgmPort sceAppMgrReleaseBgmPort sceAppMgrSetInfobarState SceAppMgrInfoBarVisibility visibility SceAppMgrInfoBarColor color SceAppMgrInfoBarTransparency transparency sceAppMgrLoadExec appPath argv SceAppMgrExecOptParam optParam sceAppMgrLaunchAppByUri flags uri sceAppMgrLaunchAppByName2 name param SceAppMgrLaunchAppOptParam optParam SceUID sceAppMgrLaunchAppByName2ForShell name param SceAppMgrLaunchAppOptParam optParam sceAppMgrGameDataMount path unk1 unk2 mount_point sceAppMgrAppDataMount mount_point sceAppMgrAppDataMountById titleid mount_point sceAppMgrAppParamGetString pid param length sceAppMgrGetDevInfo dev uint64_t max_size uint64_t free_size sceAppMgrMmsMount mount_point sceAppMgrPspSaveDataRootMount mount_point sceAppMgrWorkDirMount mount_point sceAppMgrWorkDirMountById titleid mount_point sceAppMgrUmount mount_point sceAppMgrConvertVs0UserDrivePath path mount_point unk sceAppMgrGetRawPath path mount_point unk _sceAppMgrGetRawPath path resolved_path resolved_path_size unk _sceAppMgrGetRawPathOfApp0ByAppIdForShell appId resolved_path</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -12470,6 +12470,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceAppMgrUser.html#ga1b609b44980977a5f0c1b08f8cd5e0bf</field>
     <field name="keywords">sceAppMgrGetRawPath</field>
     <field name="text">Get raw path for a given path path Path to convert mount_point Mountpoint to use unk Unknown 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">_sceAppMgrGetRawPath</field>
+    <field name="args">(char *path, char *resolved_path, int resolved_path_size, char unk[16])</field>
+    <field name="url">group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1</field>
+    <field name="keywords">_sceAppMgrGetRawPath</field>
+    <field name="text">Resolve a path to the corresponding true path uses underneath path Path to convert e.g app0 resolved_path True resolved path unk Unknown provide an empty buffer 0 on success 0 on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">_sceAppMgrGetRawPathOfApp0ByAppIdForShell</field>
+    <field name="args">(int appId, char resolved_path[292])</field>
+    <field name="url">group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53</field>
+    <field name="keywords">_sceAppMgrGetRawPathOfApp0ByAppIdForShell</field>
+    <field name="text">Get the real/resolved path of app0 where it s actually mounted appId Use for the current application resolved_path Buffer that will hold the resolved path It should have enough room to hold 292 characters or it will buffer overflow noname120 0 on success</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>

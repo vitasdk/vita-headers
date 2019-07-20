@@ -17,6 +17,8 @@ var group__SceAppMgrUser =
     [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
     [ "SCE_APPMGR_ERROR_TOO_LONG_ARGV", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da07d5ef0473adea81fbdb3ba957b685f5", null ],
     [ "_sceAppMgrGetAppState", "group__SceAppMgrUser.html#ga7234b0f71099e86cc4dde971a7888bb7", null ],
+    [ "_sceAppMgrGetRawPath", "group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1", null ],
+    [ "_sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53", null ],
     [ "_sceAppMgrSaveDataDataRemove", "group__SceAppMgrUser.html#gad890c1b5e9735c9f6abbbd560b3173a1", null ],
     [ "_sceAppMgrSaveDataDataSave", "group__SceAppMgrUser.html#ga49e00b4b69c50af039e078fd0988302b", null ],
     [ "_sceAppMgrSaveDataSlotCreate", "group__SceAppMgrUser.html#ga658e614bdf7496b2cfedd39cd6cc87d8", null ],

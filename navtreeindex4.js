@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a7e178e5668551bc92f167f7a8a0d959d":[1,4,2,0,10],
+"group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a7e178e5668551bc92f167f7a8a0d959d":[1,4,2,1,1,8],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a7e178e5668551bc92f167f7a8a0d959d":[1,4,2,1,1,26],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a7e178e5668551bc92f167f7a8a0d959d":[1,4,2,1,10],
 "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a996f7a67f394662d35d07239de81b31c":[1,4,2,0,1,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6adc17a55585e9f79738fedc8cde762071":[1,1,3,0,18],
 "group__SceMessageDialog.html":[1,3,1],
 "group__SceMessageDialogUser.html":[1,3,1,0],
-"group__SceMessageDialogUser.html#ga4e98cd87a9a8ee1842a0bf760ab1ce84":[1,3,1,0,1],
-"group__SceMessageDialogUser.html#ga8abdbe85adc0ceacd99ad6c1961a7f65":[1,3,1,0,17],
-"group__SceMessageDialogUser.html#ga94102d21b8d9b9ceec5f24c9e9d96556":[1,3,1,0,2]
+"group__SceMessageDialogUser.html#ga4e98cd87a9a8ee1842a0bf760ab1ce84":[1,3,1,0,1]
 };
