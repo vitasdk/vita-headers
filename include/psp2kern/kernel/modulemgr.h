@@ -158,7 +158,7 @@ int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, voi
 int ksceKernelMountBootfs(const char *bootImagePath);
 int ksceKernelUmountBootfs(void);
 
-int ksceKernelSearchModuleByName(const char *module_name, const char *path, int pid);
+int ksceKernelSearchModuleByName(const char *module_name);
 
 /**
  * @brief Get the main module for a given process.
