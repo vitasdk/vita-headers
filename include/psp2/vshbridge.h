@@ -43,13 +43,19 @@ int vshIdStorageIsReadOnly(void);
 
 /**
  * @param[in] leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
- * @param[out] buf - Leaf data
- * @param[in] buf_size - set 0x200 / buf_size != 0x200 = 0x800F090D
+ * @param[out] buf    - Leaf data
  *
  * @return 0 on success, < 0 on error.
  */
-int vshIdStorageReadLeaf(int leafnum, void *buf, int buf_size);
-int vshIdStorageWriteLeaf(int leafnum, const void *buf, int buf_size);
+int vshIdStorageReadLeaf(int leafnum, void *buf);
+
+/**
+ * @param[in] leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
+ * @param[in] buf     - Leaf data
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int vshIdStorageWriteLeaf(int leafnum, const void *buf);
 
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);
