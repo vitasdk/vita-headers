@@ -79,7 +79,7 @@ $(document).ready(function(){initNavTree('group__SceCtrlUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/ctrl.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceCtrl_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ctrl_8h.html">psp2/ctrl.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceCtrl_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -119,13 +119,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ga15c8f8daf3f09aa0be3696836b52a20c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#ga15c8f8daf3f09aa0be3696836b52a20c">sceCtrlSetActuator</a> (int port, const <a class="el" href="group__SceCtrlUser.html#structSceCtrlActuator">SceCtrlActuator</a> *pState)</td></tr>
 <tr class="memdesc:ga15c8f8daf3f09aa0be3696836b52a20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the actuator (vibrate) on paired controllers.  <a href="#ga15c8f8daf3f09aa0be3696836b52a20c">More...</a><br /></td></tr>
 <tr class="separator:ga15c8f8daf3f09aa0be3696836b52a20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0afda761bf0ba8283c74e0931b80242"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#gaf0afda761bf0ba8283c74e0931b80242">sceCtrlSetLightBar</a> (int port, SceUInt8 r, SceUInt8 g, SceUInt8 b)</td></tr>
+<tr class="memitem:gaf0afda761bf0ba8283c74e0931b80242"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#gaf0afda761bf0ba8283c74e0931b80242">sceCtrlSetLightBar</a> (int port, <a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> r, <a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> g, <a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> b)</td></tr>
 <tr class="memdesc:gaf0afda761bf0ba8283c74e0931b80242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the light bar on paired controllers.  <a href="#gaf0afda761bf0ba8283c74e0931b80242">More...</a><br /></td></tr>
 <tr class="separator:gaf0afda761bf0ba8283c74e0931b80242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacb1f90cc566c0f81727e9824fd682722"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#gacb1f90cc566c0f81727e9824fd682722">sceCtrlGetControllerPortInfo</a> (<a class="el" href="group__SceCtrlUser.html#structSceCtrlPortInfo">SceCtrlPortInfo</a> *info)</td></tr>
 <tr class="memdesc:gacb1f90cc566c0f81727e9824fd682722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get controller port information.  <a href="#gacb1f90cc566c0f81727e9824fd682722">More...</a><br /></td></tr>
 <tr class="separator:gacb1f90cc566c0f81727e9824fd682722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25f0643e210083fb88e075cb897e7690"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#ga25f0643e210083fb88e075cb897e7690">sceCtrlGetBatteryInfo</a> (int port, SceUInt8 *batt)</td></tr>
+<tr class="memitem:ga25f0643e210083fb88e075cb897e7690"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#ga25f0643e210083fb88e075cb897e7690">sceCtrlGetBatteryInfo</a> (int port, <a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *batt)</td></tr>
 <tr class="memdesc:ga25f0643e210083fb88e075cb897e7690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get controller battery information.  <a href="#ga25f0643e210083fb88e075cb897e7690">More...</a><br /></td></tr>
 <tr class="separator:ga25f0643e210083fb88e075cb897e7690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf555d744224719585e0607cb8c8f668a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlUser.html#gaf555d744224719585e0607cb8c8f668a">sceCtrlSetButtonIntercept</a> (int intercept)</td></tr>
@@ -531,6 +531,31 @@ Unknown. </td></tr>
 
 </div>
 </div>
+<a id="ga594215e0488ae1f7a54c38eebec18adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga594215e0488ae1f7a54c38eebec18adb">&sect;&nbsp;</a></span>SceCtrlErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceCtrlUser.html#ga594215e0488ae1f7a54c38eebec18adb">SceCtrlErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adba9c7f7832117e5049f2e46fc6fc6e593b"></a>SCE_CTRL_ERROR_INVALID_ARG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adbaec312d9456dbdf71b353fea0af81c002"></a>SCE_CTRL_ERROR_PRIV_REQUIRED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adbaeb7a34dfe5bed356ca1a27ab7073e2e0"></a>SCE_CTRL_ERROR_NO_DEVICE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adbac1f4baf33f6c575ab50016e16a77b2d3"></a>SCE_CTRL_ERROR_NOT_SUPPORTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adba5cb3565defa78b4e3560a0a91e74b0f1"></a>SCE_CTRL_ERROR_INVALID_MODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adba8e0c5486f9e6f6ae651131abfb526715"></a>SCE_CTRL_ERROR_FATAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adba9c7f7832117e5049f2e46fc6fc6e593b"></a>SCE_CTRL_ERROR_INVALID_ARG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adbaec312d9456dbdf71b353fea0af81c002"></a>SCE_CTRL_ERROR_PRIV_REQUIRED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga594215e0488ae1f7a54c38eebec18adba8e0c5486f9e6f6ae651131abfb526715"></a>SCE_CTRL_ERROR_FATAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga4284796d5063074e02d4915af9d5ab04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4284796d5063074e02d4915af9d5ab04">&sect;&nbsp;</a></span>SceCtrlExternalInputMode</h2>
 
@@ -653,7 +678,7 @@ Unknown. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceUInt8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *&#160;</td>
           <td class="paramname"><em>batt</em>&#160;</td>
         </tr>
         <tr>
@@ -1130,19 +1155,19 @@ Unknown. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceUInt8&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
           <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceUInt8&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceUInt8&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>

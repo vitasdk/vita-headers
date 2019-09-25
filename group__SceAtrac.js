@@ -1,4 +1,4 @@
 var group__SceAtrac =
 [
-    [ "User", "group__SceAtracUser.html", null ]
+    [ "User", "group__SceAtracUser.html", "group__SceAtracUser" ]
 ];

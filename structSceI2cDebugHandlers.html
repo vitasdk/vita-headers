@@ -75,29 +75,24 @@ $(document).ready(function(){initNavTree('structSceI2cDebugHandlers.html','');})
 <div class="title">SceI2cDebugHandlers Struct Reference<div class="ingroups"><a class="el" href="group__Lowio.html">Low-level I/O and communications</a> &raquo; <a class="el" href="group__SceI2c.html">I2C Library</a> &raquo; <a class="el" href="group__SceI2cKernel.html">Kernel</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="i2c_8h_source.html">i2c.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:gae463ec16de70164b2086f5c0419d0f68"><td class="memItemLeft" align="right" valign="top">
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="memitem:gae463ec16de70164b2086f5c0419d0f68"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68">size</a></td></tr>
 <tr class="separator:gae463ec16de70164b2086f5c0419d0f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_start</b> )(int bus, int addr, unsigned char *buffer, int size)</td></tr>
+<tr class="memitem:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga53a420dd363a0779d7b2803cb3ce6e6b">write_start</a> )(int bus, int addr, unsigned char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, int <a class="el" href="group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68">size</a>)</td></tr>
 <tr class="separator:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_end</b> )(int bus, int error, int result)</td></tr>
+<tr class="memitem:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gac5ce99ad217cd98a5f8f7df2dfcc5fba">write_end</a> )(int bus, int error, int result)</td></tr>
 <tr class="separator:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga801448022c8a9eab02bc2fb023d62789"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_start</b> )(int bus, int addr, unsigned char *buffer, int size)</td></tr>
+<tr class="memitem:ga801448022c8a9eab02bc2fb023d62789"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga801448022c8a9eab02bc2fb023d62789">read_start</a> )(int bus, int addr, unsigned char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, int <a class="el" href="group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68">size</a>)</td></tr>
 <tr class="separator:ga801448022c8a9eab02bc2fb023d62789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc06133c688ab03589247571a5300646"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read_end</b> )(int bus, int error, int result)</td></tr>
+<tr class="memitem:gafc06133c688ab03589247571a5300646"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gafc06133c688ab03589247571a5300646">read_end</a> )(int bus, int error, int result)</td></tr>
 <tr class="separator:gafc06133c688ab03589247571a5300646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72850026d74300d5ee984083e945cf09"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_start</b> )(int bus, int write_addr, unsigned char *write_buffer, int write_size, unsigned int read_addr, unsigned char *read_buffer, int read_size)</td></tr>
+<tr class="memitem:ga72850026d74300d5ee984083e945cf09"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga72850026d74300d5ee984083e945cf09">write_read_start</a> )(int bus, int write_addr, unsigned char *write_buffer, int write_size, unsigned int read_addr, unsigned char *read_buffer, int read_size)</td></tr>
 <tr class="separator:ga72850026d74300d5ee984083e945cf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f1168916f5371c66638a47a635fb4e4"><td class="memItemLeft" align="right" valign="top">
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_read_end</b> )(int bus, int error, int result)</td></tr>
+<tr class="memitem:ga8f1168916f5371c66638a47a635fb4e4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga8f1168916f5371c66638a47a635fb4e4">write_read_end</a> )(int bus, int error, int result)</td></tr>
 <tr class="separator:ga8f1168916f5371c66638a47a635fb4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>

@@ -79,12 +79,11 @@ $(document).ready(function(){initNavTree('group__SceIftuKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/lowio/iftu.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceIftuForDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="iftu_8h.html">psp2kern/lowio/iftu.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceIftuForDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaec5fdf4ee5d2390bd4edba0c5cd1c877"><td class="memItemLeft" align="right" valign="top"><a id="gaec5fdf4ee5d2390bd4edba0c5cd1c877"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceIftuCsc</b> (<a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a> *dst, <a class="el" href="group__SceIftuKernel.html#structSceIftuPlaneState">SceIftuPlaneState</a> *src, <a class="el" href="group__SceIftuKernel.html#structSceIftuConvParams">SceIftuConvParams</a> *params)</td></tr>
+<tr class="memitem:gaec5fdf4ee5d2390bd4edba0c5cd1c877"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaec5fdf4ee5d2390bd4edba0c5cd1c877">ksceIftuCsc</a> (<a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a> *dst, <a class="el" href="group__SceIftuKernel.html#structSceIftuPlaneState">SceIftuPlaneState</a> *src, <a class="el" href="group__SceIftuKernel.html#structSceIftuConvParams">SceIftuConvParams</a> *params)</td></tr>
 <tr class="separator:gaec5fdf4ee5d2390bd4edba0c5cd1c877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -387,6 +386,94 @@ vtop_padding</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gab36264b4088d8482d1e599718b38856a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab36264b4088d8482d1e599718b38856a">&sect;&nbsp;</a></span>SceIftuErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceIftuKernel.html#gab36264b4088d8482d1e599718b38856a">SceIftuErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab36264b4088d8482d1e599718b38856aa9d3a059c445ad3091b59d8a04b134ae2"></a>SCE_IFTU_ERROR_INVALID_PLANE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggab36264b4088d8482d1e599718b38856aa049db5a7cf8102059a8840046ec7be18"></a>SCE_IFTU_ERROR_INVALID_PARAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggab36264b4088d8482d1e599718b38856aa49256d8ff4099c466c1dbcdbc77d3ab5"></a>SCE_IFTU_ERROR_INVALID_PIXELFORMAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggab36264b4088d8482d1e599718b38856aafabb2c440874b51fca3078496306a642"></a>SCE_IFTU_ERROR_PLANE_BUSY&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaaee54b0515f11151d0a5980148aba294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaee54b0515f11151d0a5980148aba294">&sect;&nbsp;</a></span>SceIftuPixelformat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceIftuKernel.html#gaaee54b0515f11151d0a5980148aba294">SceIftuPixelformat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294abcd0fc562d9aca1d097946b80350c5f5"></a>SCE_IFTU_PIXELFORMAT_BGR565&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a7eacf8f3a7dc81168d1b52331a9b0435"></a>SCE_IFTU_PIXELFORMAT_RGB565&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a3c6a2ddb5bbec10cf6601aa08d630233"></a>SCE_IFTU_PIXELFORMAT_BGRA5551&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a8cfd8563d25cf1ec0ee3d6675fd2f786"></a>SCE_IFTU_PIXELFORMAT_RGBA5551&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a863cf8089df8fec29a02babe59a26c22"></a>SCE_IFTU_PIXELFORMAT_BGRX8888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a5febb218eb86b196cdb16c8b4dac43c8"></a>SCE_IFTU_PIXELFORMAT_RGBX8888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294ae7020fe24692091c252d21b72b5ef8a0"></a>SCE_IFTU_PIXELFORMAT_BGRA1010102&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294ac2dd16a9fddefaa210261b853ce6d680"></a>SCE_IFTU_PIXELFORMAT_RGBA1010102&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294ad56319799f947bb18e0f32c8f729f0ac"></a>SCE_IFTU_PIXELFORMAT_BGRP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a22b41e001af531ef1890cb3ff7c8e3db"></a>SCE_IFTU_PIXELFORMAT_RGBX8888_MULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a066afb3cd6d76e5f56d1f50aac214420"></a>SCE_IFTU_PIXELFORMAT_BGRX8888_MULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a3387e78995ce3145e603fa858078f15f"></a>SCE_IFTU_PIXELFORMAT_RGBA1010102_MULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a297375f2a7ac8aa800f42a952f765bba"></a>SCE_IFTU_PIXELFORMAT_BGRA1010102_MULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a7d46a7af830b96531ca0a758aa461bef"></a>SCE_IFTU_PIXELFORMAT_NV12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294ae03986d6cd6ddba7260e110012ad3372"></a>SCE_IFTU_PIXELFORMAT_YUV420&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaaee54b0515f11151d0a5980148aba294a9b01254e384d1e53eabd3ed4e6b20226"></a>SCE_IFTU_PIXELFORMAT_YUV422&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gaec5fdf4ee5d2390bd4edba0c5cd1c877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec5fdf4ee5d2390bd4edba0c5cd1c877">&sect;&nbsp;</a></span>ksceIftuCsc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceIftuCsc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceIftuKernel.html#structSceIftuPlaneState">SceIftuPlaneState</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceIftuKernel.html#structSceIftuConvParams">SceIftuConvParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

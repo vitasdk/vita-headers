@@ -79,33 +79,25 @@ $(document).ready(function(){initNavTree('group__SceUsbdKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/usbd.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUsbdForDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2usbd_8h.html">psp2kern/usbd.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUsbdForDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad5e2b00121dd7f2d8b4f71b15beb572c"><td class="memItemLeft" align="right" valign="top"><a id="gad5e2b00121dd7f2d8b4f71b15beb572c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdRegisterDriver</b> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
+<tr class="memitem:gad5e2b00121dd7f2d8b4f71b15beb572c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#gad5e2b00121dd7f2d8b4f71b15beb572c">ksceUsbdRegisterDriver</a> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
 <tr class="separator:gad5e2b00121dd7f2d8b4f71b15beb572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa78b62e12e9a95aba9e9518e46a73062"><td class="memItemLeft" align="right" valign="top"><a id="gaa78b62e12e9a95aba9e9518e46a73062"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdRegisterCompositeLdd</b> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
+<tr class="memitem:gaa78b62e12e9a95aba9e9518e46a73062"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#gaa78b62e12e9a95aba9e9518e46a73062">ksceUsbdRegisterCompositeLdd</a> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
 <tr class="separator:gaa78b62e12e9a95aba9e9518e46a73062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe62b8ed21f2bc3b00495cac91f03bf3"><td class="memItemLeft" align="right" valign="top"><a id="gafe62b8ed21f2bc3b00495cac91f03bf3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdUnregisterDriver</b> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
+<tr class="memitem:gafe62b8ed21f2bc3b00495cac91f03bf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#gafe62b8ed21f2bc3b00495cac91f03bf3">ksceUsbdUnregisterDriver</a> (const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *driver)</td></tr>
 <tr class="separator:gafe62b8ed21f2bc3b00495cac91f03bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafcf34f4b1163d2e0ee9bca4d950e39cd"><td class="memItemLeft" align="right" valign="top"><a id="gafcf34f4b1163d2e0ee9bca4d950e39cd"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdGetDescriptor</b> (int device_id, void *prevDescriptor, unsigned char bDescriptorType)</td></tr>
+<tr class="memitem:gafcf34f4b1163d2e0ee9bca4d950e39cd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#gafcf34f4b1163d2e0ee9bca4d950e39cd">ksceUsbdGetDescriptor</a> (int device_id, void *prevDescriptor, unsigned char <a class="el" href="group__SceUdcdKernel.html#ga8db36b5ebcff1beb7ec24b0608a329b6">bDescriptorType</a>)</td></tr>
 <tr class="separator:gafcf34f4b1163d2e0ee9bca4d950e39cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga13b1880485678d5b9e9030f471160c4b"><td class="memItemLeft" align="right" valign="top"><a id="ga13b1880485678d5b9e9030f471160c4b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdOpenEndpoint</b> (int device_id, <a class="el" href="group__SceUsbdKernel.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *endpoint)</td></tr>
+<tr class="memitem:ga13b1880485678d5b9e9030f471160c4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#ga13b1880485678d5b9e9030f471160c4b">ksceUsbdOpenEndpoint</a> (int device_id, <a class="el" href="group__SceUsbdKernel.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *endpoint)</td></tr>
 <tr class="separator:ga13b1880485678d5b9e9030f471160c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga739dbd8c9a2046fdbefb564bc5d369b7"><td class="memItemLeft" align="right" valign="top"><a id="ga739dbd8c9a2046fdbefb564bc5d369b7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdCloseEndpoint</b> (int endpoint_id)</td></tr>
+<tr class="memitem:ga739dbd8c9a2046fdbefb564bc5d369b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#ga739dbd8c9a2046fdbefb564bc5d369b7">ksceUsbdCloseEndpoint</a> (int endpoint_id)</td></tr>
 <tr class="separator:ga739dbd8c9a2046fdbefb564bc5d369b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga952916d62ad4f8aab79f378f2e568365"><td class="memItemLeft" align="right" valign="top"><a id="ga952916d62ad4f8aab79f378f2e568365"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdControlTransfer</b> (int endpoint_id, const <a class="el" href="group__SceUsbdKernel.html#structSceUsbdControlTransferRequest">SceUsbdControlTransferRequest</a> *req, unsigned char *buffer, int(*cb)(int, int, int), void *user_data)</td></tr>
+<tr class="memitem:ga952916d62ad4f8aab79f378f2e568365"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#ga952916d62ad4f8aab79f378f2e568365">ksceUsbdControlTransfer</a> (int endpoint_id, const <a class="el" href="group__SceUsbdKernel.html#structSceUsbdControlTransferRequest">SceUsbdControlTransferRequest</a> *req, unsigned char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, int(*cb)(int, int, int), void *user_data)</td></tr>
 <tr class="separator:ga952916d62ad4f8aab79f378f2e568365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c99704db8909498914c04b778bdb7b7"><td class="memItemLeft" align="right" valign="top"><a id="ga7c99704db8909498914c04b778bdb7b7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUsbdInterruptTransfer</b> (int endpoint_id, unsigned char *buffer, unsigned int length, int(*cb)(int, int, int), void *user_data)</td></tr>
+<tr class="memitem:ga7c99704db8909498914c04b778bdb7b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbdKernel.html#ga7c99704db8909498914c04b778bdb7b7">ksceUsbdInterruptTransfer</a> (int endpoint_id, unsigned char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, unsigned int <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>, int(*cb)(int, int, int), void *user_data)</td></tr>
 <tr class="separator:ga7c99704db8909498914c04b778bdb7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -348,6 +340,276 @@ wValue</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gaea15c9e75b573d065050efee195a98fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea15c9e75b573d065050efee195a98fd">&sect;&nbsp;</a></span>SceUsbdErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceUsbdUser.html#gaea15c9e75b573d065050efee195a98fd">SceUsbdErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdad43873b62d731256baccc4456c804085"></a>SCE_USBD_ERROR_IO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda92551a65741eef45887879472726189e"></a>SCE_USBD_ERROR_INVALID_ARG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdac376e14b3bce148ea539f0429602537e"></a>SCE_USBD_ERROR_ACCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda1cf1d1d4beb21fe75505461d3386f723"></a>SCE_USBD_ERROR_NO_DEVICE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda857df92df91b9325e6396accbbc38a4a"></a>SCE_USBD_ERROR_NOT_FOUND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda0ad2de3ae3bd3890af9f5a2b06a07529"></a>SCE_USBD_ERROR_BUSY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda39aaf46cf5dd4cda25136923daf406a1"></a>SCE_USBD_ERROR_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda1ecdb57e4bb7c00c4c1071a3a963832d"></a>SCE_USBD_ERROR_OVERFLOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdaca6d77d395783bde2af5ef207c150925"></a>SCE_USBD_ERROR_PIPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdaacdfa93800b0718171713ae0e1653dca"></a>SCE_USBD_ERROR_INTERRUPTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdabcd4c02e5d8faf7f5e3c0c177837bc4d"></a>SCE_USBD_ERROR_NO_MEM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda3d260f0dbea7c07605df6a82ac5cde29"></a>SCE_USBD_ERROR_NOT_SUPPORTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdabe57e61786581548d32039135dbcf645"></a>SCE_USBD_ERROR_FATAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdad43873b62d731256baccc4456c804085"></a>SCE_USBD_ERROR_IO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda92551a65741eef45887879472726189e"></a>SCE_USBD_ERROR_INVALID_ARG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdac376e14b3bce148ea539f0429602537e"></a>SCE_USBD_ERROR_ACCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda1cf1d1d4beb21fe75505461d3386f723"></a>SCE_USBD_ERROR_NO_DEVICE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda857df92df91b9325e6396accbbc38a4a"></a>SCE_USBD_ERROR_NOT_FOUND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda0ad2de3ae3bd3890af9f5a2b06a07529"></a>SCE_USBD_ERROR_BUSY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda39aaf46cf5dd4cda25136923daf406a1"></a>SCE_USBD_ERROR_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda1ecdb57e4bb7c00c4c1071a3a963832d"></a>SCE_USBD_ERROR_OVERFLOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdaca6d77d395783bde2af5ef207c150925"></a>SCE_USBD_ERROR_PIPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdaacdfa93800b0718171713ae0e1653dca"></a>SCE_USBD_ERROR_INTERRUPTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdabcd4c02e5d8faf7f5e3c0c177837bc4d"></a>SCE_USBD_ERROR_NO_MEM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fda3d260f0dbea7c07605df6a82ac5cde29"></a>SCE_USBD_ERROR_NOT_SUPPORTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaea15c9e75b573d065050efee195a98fdabe57e61786581548d32039135dbcf645"></a>SCE_USBD_ERROR_FATAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga739dbd8c9a2046fdbefb564bc5d369b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga739dbd8c9a2046fdbefb564bc5d369b7">&sect;&nbsp;</a></span>ksceUsbdCloseEndpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdCloseEndpoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endpoint_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga952916d62ad4f8aab79f378f2e568365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga952916d62ad4f8aab79f378f2e568365">&sect;&nbsp;</a></span>ksceUsbdControlTransfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdControlTransfer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endpoint_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceUsbdKernel.html#structSceUsbdControlTransferRequest">SceUsbdControlTransferRequest</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(int, int, int)&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafcf34f4b1163d2e0ee9bca4d950e39cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcf34f4b1163d2e0ee9bca4d950e39cd">&sect;&nbsp;</a></span>ksceUsbdGetDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceUsbdGetDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>device_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>prevDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>bDescriptorType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7c99704db8909498914c04b778bdb7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c99704db8909498914c04b778bdb7b7">&sect;&nbsp;</a></span>ksceUsbdInterruptTransfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdInterruptTransfer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endpoint_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(int, int, int)&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga13b1880485678d5b9e9030f471160c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13b1880485678d5b9e9030f471160c4b">&sect;&nbsp;</a></span>ksceUsbdOpenEndpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdOpenEndpoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>device_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceUsbdKernel.html#structSceUsbdEndpointDescriptor">SceUsbdEndpointDescriptor</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa78b62e12e9a95aba9e9518e46a73062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa78b62e12e9a95aba9e9518e46a73062">&sect;&nbsp;</a></span>ksceUsbdRegisterCompositeLdd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdRegisterCompositeLdd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *&#160;</td>
+          <td class="paramname"><em>driver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad5e2b00121dd7f2d8b4f71b15beb572c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5e2b00121dd7f2d8b4f71b15beb572c">&sect;&nbsp;</a></span>ksceUsbdRegisterDriver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdRegisterDriver </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *&#160;</td>
+          <td class="paramname"><em>driver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafe62b8ed21f2bc3b00495cac91f03bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe62b8ed21f2bc3b00495cac91f03bf3">&sect;&nbsp;</a></span>ksceUsbdUnregisterDriver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbdUnregisterDriver </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSceUsbdDriver.html">SceUsbdDriver</a> *&#160;</td>
+          <td class="paramname"><em>driver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

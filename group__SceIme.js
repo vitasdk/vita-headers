@@ -1,4 +1,4 @@
 var group__SceIme =
 [
-    [ "User", "group__SceImeUser.html", null ]
+    [ "User", "group__SceImeUser.html", "group__SceImeUser" ]
 ];

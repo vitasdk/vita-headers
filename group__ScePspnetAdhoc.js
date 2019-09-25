@@ -1,4 +1,4 @@
 var group__ScePspnetAdhoc =
 [
-    [ "User", "group__ScePspnetAdhocUser.html", null ]
+    [ "User", "group__ScePspnetAdhocUser.html", "group__ScePspnetAdhocUser" ]
 ];

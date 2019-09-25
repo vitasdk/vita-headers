@@ -1,4 +1,4 @@
 var group__SceBt =
 [
-    [ "Kernel", "group__SceBtKernel.html", null ]
+    [ "Kernel", "group__SceBtKernel.html", "group__SceBtKernel" ]
 ];

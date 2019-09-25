@@ -81,17 +81,17 @@ $(document).ready(function(){initNavTree('group__SceSysconKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/syscon.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceSysconForDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="syscon_8h.html">psp2kern/syscon.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceSysconForDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3f3e840a1dfb319aa9018867ec1147fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd">ksceSysconWaitInitialized</a> (void)</td></tr>
 <tr class="memdesc:ga3f3e840a1dfb319aa9018867ec1147fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the syscon is initialized.  <a href="#ga3f3e840a1dfb319aa9018867ec1147fd">More...</a><br /></td></tr>
 <tr class="separator:ga3f3e840a1dfb319aa9018867ec1147fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2c9b314b57b1136810e129a3a046231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231">ksceSysconCmdExec</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, unsigned int flags)</td></tr>
+<tr class="memitem:gab2c9b314b57b1136810e129a3a046231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231">ksceSysconCmdExec</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, unsigned int <a class="el" href="group__SceUdcdKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
 <tr class="memdesc:gab2c9b314b57b1136810e129a3a046231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute synchronously a syscon packet.  <a href="#gab2c9b314b57b1136810e129a3a046231">More...</a><br /></td></tr>
 <tr class="separator:gab2c9b314b57b1136810e129a3a046231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7ed542ead682933745023d2005cc167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167">ksceSysconCmdExecAsync</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, unsigned int flags, SceSysconCmdExecAsyncCallback cb, void *argp)</td></tr>
+<tr class="memitem:gab7ed542ead682933745023d2005cc167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167">ksceSysconCmdExecAsync</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, unsigned int <a class="el" href="group__SceUdcdKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a> cb, void *argp)</td></tr>
 <tr class="memdesc:gab7ed542ead682933745023d2005cc167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute asynchronously a syscon packet.  <a href="#gab7ed542ead682933745023d2005cc167">More...</a><br /></td></tr>
 <tr class="separator:gab7ed542ead682933745023d2005cc167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45f5b6a1ff38625a49fa539e53d8c0db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db">ksceSysconCmdSync</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, int noWait)</td></tr>
@@ -100,11 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaef0ddcbf2f42313ac8b539d3e146d7d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaef0ddcbf2f42313ac8b539d3e146d7d6">ksceSysconSetPowerMode</a> (int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int mode)</td></tr>
 <tr class="memdesc:gaef0ddcbf2f42313ac8b539d3e146d7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the device.  <a href="#gaef0ddcbf2f42313ac8b539d3e146d7d6">More...</a><br /></td></tr>
 <tr class="separator:gaef0ddcbf2f42313ac8b539d3e146d7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4e42bcc4349912f7b007b23ab93e240"><td class="memItemLeft" align="right" valign="top"><a id="gae4e42bcc4349912f7b007b23ab93e240"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconReadCommand</b> (unsigned short cmd, void *buffer, unsigned int size)</td></tr>
+<tr class="memitem:gae4e42bcc4349912f7b007b23ab93e240"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gae4e42bcc4349912f7b007b23ab93e240">ksceSysconReadCommand</a> (unsigned short cmd, void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, unsigned int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>)</td></tr>
 <tr class="separator:gae4e42bcc4349912f7b007b23ab93e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9668ccc14e59e1b8f7804a0e191c5160"><td class="memItemLeft" align="right" valign="top"><a id="ga9668ccc14e59e1b8f7804a0e191c5160"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconSendCommand</b> (unsigned short cmd, const void *buffer, unsigned int size)</td></tr>
+<tr class="memitem:ga9668ccc14e59e1b8f7804a0e191c5160"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga9668ccc14e59e1b8f7804a0e191c5160">ksceSysconSendCommand</a> (unsigned short cmd, const void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, unsigned int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>)</td></tr>
 <tr class="separator:ga9668ccc14e59e1b8f7804a0e191c5160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c7b30cee806394963eea6190bc205fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd">ksceSysconSetDebugHandlers</a> (const <a class="el" href="structSceSysconDebugHandlers.html">SceSysconDebugHandlers</a> *handlers)</td></tr>
 <tr class="memdesc:ga0c7b30cee806394963eea6190bc205fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the debug handlers.  <a href="#ga0c7b30cee806394963eea6190bc205fd">More...</a><br /></td></tr>
@@ -121,35 +119,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconSendCommand<
 <tr class="memitem:gad9d6268ecf056da13880be8679d6a47f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gad9d6268ecf056da13880be8679d6a47f">ksceSysconCtrlHdmiCecPower</a> (int power)</td></tr>
 <tr class="memdesc:gad9d6268ecf056da13880be8679d6a47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ADV7533 HDMI CEC power.  <a href="#gad9d6268ecf056da13880be8679d6a47f">More...</a><br /></td></tr>
 <tr class="separator:gad9d6268ecf056da13880be8679d6a47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69b6c916e511baf05b6b434d59ddf562"><td class="memItemLeft" align="right" valign="top"><a id="ga69b6c916e511baf05b6b434d59ddf562"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconCtrlManualChargeMode</b> (int)</td></tr>
+<tr class="memitem:ga69b6c916e511baf05b6b434d59ddf562"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga69b6c916e511baf05b6b434d59ddf562">ksceSysconCtrlManualChargeMode</a> (int)</td></tr>
 <tr class="separator:ga69b6c916e511baf05b6b434d59ddf562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3166640df54192f8eb3578c6bb41482"><td class="memItemLeft" align="right" valign="top"><a id="gac3166640df54192f8eb3578c6bb41482"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconEnableHibernateIO</b> (int)</td></tr>
+<tr class="memitem:gac3166640df54192f8eb3578c6bb41482"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac3166640df54192f8eb3578c6bb41482">ksceSysconEnableHibernateIO</a> (int)</td></tr>
 <tr class="separator:gac3166640df54192f8eb3578c6bb41482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf51586e3692ca22a177c6dea0143935"><td class="memItemLeft" align="right" valign="top"><a id="gaaf51586e3692ca22a177c6dea0143935"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconIduModeClear</b> (void)</td></tr>
+<tr class="memitem:gaaf51586e3692ca22a177c6dea0143935"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaaf51586e3692ca22a177c6dea0143935">ksceSysconIduModeClear</a> (void)</td></tr>
 <tr class="separator:gaaf51586e3692ca22a177c6dea0143935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga773bb2bdf4ca319e993f9001ee189379"><td class="memItemLeft" align="right" valign="top"><a id="ga773bb2bdf4ca319e993f9001ee189379"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconIduModeSet</b> (void)</td></tr>
+<tr class="memitem:ga773bb2bdf4ca319e993f9001ee189379"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga773bb2bdf4ca319e993f9001ee189379">ksceSysconIduModeSet</a> (void)</td></tr>
 <tr class="separator:ga773bb2bdf4ca319e993f9001ee189379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga663ad6edb993b0a8d3fee9755ce55d34"><td class="memItemLeft" align="right" valign="top"><a id="ga663ad6edb993b0a8d3fee9755ce55d34"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconIsDownLoaderMode</b> (void)</td></tr>
+<tr class="memitem:ga663ad6edb993b0a8d3fee9755ce55d34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga663ad6edb993b0a8d3fee9755ce55d34">ksceSysconIsDownLoaderMode</a> (void)</td></tr>
 <tr class="separator:ga663ad6edb993b0a8d3fee9755ce55d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0098f11253d7c628902ce7169edfde46"><td class="memItemLeft" align="right" valign="top"><a id="ga0098f11253d7c628902ce7169edfde46"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconLogStart</b> (void)</td></tr>
+<tr class="memitem:ga0098f11253d7c628902ce7169edfde46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0098f11253d7c628902ce7169edfde46">ksceSysconLogStart</a> (void)</td></tr>
 <tr class="separator:ga0098f11253d7c628902ce7169edfde46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b0dc698faf7acde882734ec2cd4d2e7"><td class="memItemLeft" align="right" valign="top"><a id="ga8b0dc698faf7acde882734ec2cd4d2e7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconLogStartWaiting</b> (void)</td></tr>
+<tr class="memitem:ga8b0dc698faf7acde882734ec2cd4d2e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8b0dc698faf7acde882734ec2cd4d2e7">ksceSysconLogStartWaiting</a> (void)</td></tr>
 <tr class="separator:ga8b0dc698faf7acde882734ec2cd4d2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga792e9f948699fc99a7c2a064c525c1e8"><td class="memItemLeft" align="right" valign="top"><a id="ga792e9f948699fc99a7c2a064c525c1e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconLogReadData</b> (unsigned short, void *buff, unsigned int size)</td></tr>
+<tr class="memitem:ga792e9f948699fc99a7c2a064c525c1e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga792e9f948699fc99a7c2a064c525c1e8">ksceSysconLogReadData</a> (unsigned short, void *buff, unsigned int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>)</td></tr>
 <tr class="separator:ga792e9f948699fc99a7c2a064c525c1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f10608a4f9121ed207a65148149b4f9"><td class="memItemLeft" align="right" valign="top"><a id="ga7f10608a4f9121ed207a65148149b4f9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconShowModeClear</b> (void)</td></tr>
+<tr class="memitem:ga7f10608a4f9121ed207a65148149b4f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7f10608a4f9121ed207a65148149b4f9">ksceSysconShowModeClear</a> (void)</td></tr>
 <tr class="separator:ga7f10608a4f9121ed207a65148149b4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabba3e87538e273b9cccc454613a3498e"><td class="memItemLeft" align="right" valign="top"><a id="gabba3e87538e273b9cccc454613a3498e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconShowModeSet</b> (void)</td></tr>
+<tr class="memitem:gabba3e87538e273b9cccc454613a3498e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gabba3e87538e273b9cccc454613a3498e">ksceSysconShowModeSet</a> (void)</td></tr>
 <tr class="separator:gabba3e87538e273b9cccc454613a3498e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e252e6677e8635292642e30fdddac78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga6e252e6677e8635292642e30fdddac78">ksceSysconGetBaryonVersion</a> (void)</td></tr>
 <tr class="memdesc:ga6e252e6677e8635292642e30fdddac78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the baryon version.  <a href="#ga6e252e6677e8635292642e30fdddac78">More...</a><br /></td></tr>
@@ -157,98 +145,311 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconShowModeSet<
 <tr class="memitem:ga74b11bfee0b45aefe0c8349016d6844d"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga74b11bfee0b45aefe0c8349016d6844d">ksceSysconGetBaryonTimestamp</a> ()</td></tr>
 <tr class="memdesc:ga74b11bfee0b45aefe0c8349016d6844d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the baryon timestamp.  <a href="#ga74b11bfee0b45aefe0c8349016d6844d">More...</a><br /></td></tr>
 <tr class="separator:ga74b11bfee0b45aefe0c8349016d6844d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabdc5cf80cb74cb6d2715f1ad29b8d838"><td class="memItemLeft" align="right" valign="top"><a id="gabdc5cf80cb74cb6d2715f1ad29b8d838"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetBatteryCalibData</b> (int *, int *, int *, int *)</td></tr>
+<tr class="memitem:gabdc5cf80cb74cb6d2715f1ad29b8d838"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gabdc5cf80cb74cb6d2715f1ad29b8d838">ksceSysconGetBatteryCalibData</a> (int *, int *, int *, int *)</td></tr>
 <tr class="separator:gabdc5cf80cb74cb6d2715f1ad29b8d838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga035bcb26ac90788df0e5a4d00a42536b"><td class="memItemLeft" align="right" valign="top"><a id="ga035bcb26ac90788df0e5a4d00a42536b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetHardwareInfo</b> (void)</td></tr>
+<tr class="memitem:ga035bcb26ac90788df0e5a4d00a42536b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga035bcb26ac90788df0e5a4d00a42536b">ksceSysconGetHardwareInfo</a> (void)</td></tr>
 <tr class="separator:ga035bcb26ac90788df0e5a4d00a42536b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1948a96441ba023b93a4a567bc60234d"><td class="memItemLeft" align="right" valign="top"><a id="ga1948a96441ba023b93a4a567bc60234d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetHardwareInfo2</b> (int *, int *, int *)</td></tr>
+<tr class="memitem:ga1948a96441ba023b93a4a567bc60234d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga1948a96441ba023b93a4a567bc60234d">ksceSysconGetHardwareInfo2</a> (int *, int *, int *)</td></tr>
 <tr class="separator:ga1948a96441ba023b93a4a567bc60234d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaacaedf00ad9fb44fde5ef5c9ae126438"><td class="memItemLeft" align="right" valign="top"><a id="gaacaedf00ad9fb44fde5ef5c9ae126438"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetLogInfo</b> (int *)</td></tr>
+<tr class="memitem:gaacaedf00ad9fb44fde5ef5c9ae126438"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaacaedf00ad9fb44fde5ef5c9ae126438">ksceSysconGetLogInfo</a> (int *)</td></tr>
 <tr class="separator:gaacaedf00ad9fb44fde5ef5c9ae126438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa69c9a9eafa580395a8ef9ddba1ef158"><td class="memItemLeft" align="right" valign="top"><a id="gaa69c9a9eafa580395a8ef9ddba1ef158"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetManualChargeMode</b> (int *)</td></tr>
+<tr class="memitem:gaa69c9a9eafa580395a8ef9ddba1ef158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa69c9a9eafa580395a8ef9ddba1ef158">ksceSysconGetManualChargeMode</a> (int *)</td></tr>
 <tr class="separator:gaa69c9a9eafa580395a8ef9ddba1ef158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5b9ffddb85660e3eb05a2776d41262a"><td class="memItemLeft" align="right" valign="top"><a id="gab5b9ffddb85660e3eb05a2776d41262a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetManufacturesStatus</b> (int *)</td></tr>
+<tr class="memitem:gab5b9ffddb85660e3eb05a2776d41262a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab5b9ffddb85660e3eb05a2776d41262a">ksceSysconGetManufacturesStatus</a> (int *)</td></tr>
 <tr class="separator:gab5b9ffddb85660e3eb05a2776d41262a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5538b16e22deb0e2e07da6ee2c273cdc"><td class="memItemLeft" align="right" valign="top"><a id="ga5538b16e22deb0e2e07da6ee2c273cdc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetTemperatureLog</b> (int *)</td></tr>
+<tr class="memitem:ga5538b16e22deb0e2e07da6ee2c273cdc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga5538b16e22deb0e2e07da6ee2c273cdc">ksceSysconGetTemperatureLog</a> (int *)</td></tr>
 <tr class="separator:ga5538b16e22deb0e2e07da6ee2c273cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f3a63970a24f5f8e7a28755dcf64c73"><td class="memItemLeft" align="right" valign="top"><a id="ga4f3a63970a24f5f8e7a28755dcf64c73"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconGetUsbDetStatus</b> (int *)</td></tr>
+<tr class="memitem:ga4f3a63970a24f5f8e7a28755dcf64c73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga4f3a63970a24f5f8e7a28755dcf64c73">ksceSysconGetUsbDetStatus</a> (int *)</td></tr>
 <tr class="separator:ga4f3a63970a24f5f8e7a28755dcf64c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c3c0a306f9a293fa1bad67bf4980417"><td class="memItemLeft" align="right" valign="top"><a id="ga6c3c0a306f9a293fa1bad67bf4980417"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconClearTemperatureLog</b> (int)</td></tr>
+<tr class="memitem:ga6c3c0a306f9a293fa1bad67bf4980417"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga6c3c0a306f9a293fa1bad67bf4980417">ksceSysconClearTemperatureLog</a> (int)</td></tr>
 <tr class="separator:ga6c3c0a306f9a293fa1bad67bf4980417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28866ce50fd3e1634c3f292004cc5623"><td class="memItemLeft" align="right" valign="top"><a id="ga28866ce50fd3e1634c3f292004cc5623"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconBeginConfigstorageTransaction</b> (void)</td></tr>
+<tr class="memitem:ga28866ce50fd3e1634c3f292004cc5623"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga28866ce50fd3e1634c3f292004cc5623">ksceSysconBeginConfigstorageTransaction</a> (void)</td></tr>
 <tr class="separator:ga28866ce50fd3e1634c3f292004cc5623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80ee20f450ddc46c49897767164f74a8"><td class="memItemLeft" align="right" valign="top"><a id="ga80ee20f450ddc46c49897767164f74a8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconCommitConfigstorageTransaction</b> (void)</td></tr>
+<tr class="memitem:ga80ee20f450ddc46c49897767164f74a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga80ee20f450ddc46c49897767164f74a8">ksceSysconCommitConfigstorageTransaction</a> (void)</td></tr>
 <tr class="separator:ga80ee20f450ddc46c49897767164f74a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c21ea3606904413ae6f6120a23a4d7d"><td class="memItemLeft" align="right" valign="top"><a id="ga0c21ea3606904413ae6f6120a23a4d7d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconEndConfigstorageTransaction</b> (void)</td></tr>
+<tr class="memitem:ga0c21ea3606904413ae6f6120a23a4d7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0c21ea3606904413ae6f6120a23a4d7d">ksceSysconEndConfigstorageTransaction</a> (void)</td></tr>
 <tr class="separator:ga0c21ea3606904413ae6f6120a23a4d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae1325b8a150af728f99d120aeba2a0e"><td class="memItemLeft" align="right" valign="top"><a id="gaae1325b8a150af728f99d120aeba2a0e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconLoadConfigstorageScript</b> (unsigned short, const void *buff, unsigned int size)</td></tr>
+<tr class="memitem:gaae1325b8a150af728f99d120aeba2a0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaae1325b8a150af728f99d120aeba2a0e">ksceSysconLoadConfigstorageScript</a> (unsigned short, const void *buff, unsigned int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>)</td></tr>
 <tr class="separator:gaae1325b8a150af728f99d120aeba2a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72de9eec7c732af934bebcbaab6086ad"><td class="memItemLeft" align="right" valign="top"><a id="ga72de9eec7c732af934bebcbaab6086ad"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceSysconVerifyConfigstorageScript</b> (unsigned short, const void *buff, unsigned int size)</td></tr>
+<tr class="memitem:ga72de9eec7c732af934bebcbaab6086ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga72de9eec7c732af934bebcbaab6086ad">ksceSysconVerifyConfigstorageScript</a> (unsigned short, const void *buff, unsigned int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>)</td></tr>
 <tr class="separator:ga72de9eec7c732af934bebcbaab6086ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga709e091a8a156e457907af9606c84d40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40">ksceSysconSetAlarmCallback</a> (SceSysconCallback callback, void *argp)</td></tr>
+<tr class="memitem:ga709e091a8a156e457907af9606c84d40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40">ksceSysconSetAlarmCallback</a> (<a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a> callback, void *argp)</td></tr>
 <tr class="memdesc:ga709e091a8a156e457907af9606c84d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the alarm callback, that will be ran when the alarm timer is passed.  <a href="#ga709e091a8a156e457907af9606c84d40">More...</a><br /></td></tr>
 <tr class="separator:ga709e091a8a156e457907af9606c84d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga19209e2b0ee8adf1a05e983e45e6271a">ksceSysconSetLowBatteryCallback</a> (SceSysconCallback callback, void *argp)</td></tr>
+<tr class="memitem:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga19209e2b0ee8adf1a05e983e45e6271a">ksceSysconSetLowBatteryCallback</a> (<a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a> callback, void *argp)</td></tr>
 <tr class="memdesc:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the low battery callback, that will be ran when the battery is low.  <a href="#ga19209e2b0ee8adf1a05e983e45e6271a">More...</a><br /></td></tr>
 <tr class="separator:ga19209e2b0ee8adf1a05e983e45e6271a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec856771758bff4fceda58297c2b7f10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaec856771758bff4fceda58297c2b7f10">ksceSysconSetThermalAlertCallback</a> (SceSysconCallback callback, void *argp)</td></tr>
+<tr class="memitem:gaec856771758bff4fceda58297c2b7f10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaec856771758bff4fceda58297c2b7f10">ksceSysconSetThermalAlertCallback</a> (<a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a> callback, void *argp)</td></tr>
 <tr class="memdesc:gaec856771758bff4fceda58297c2b7f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the thermal alert callback, that will be ran when the temperature reaches a critical point.  <a href="#gaec856771758bff4fceda58297c2b7f10">More...</a><br /></td></tr>
 <tr class="separator:gaec856771758bff4fceda58297c2b7f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memItemLeft" align="right" valign="top"><a id="gaa94a59bed75c9ecaeb24899ff67ab8a9"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceSysconCmdExecAsyncCallback</b>) (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, void *argp)</td></tr>
+<tr class="memitem:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a>) (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, void *argp)</td></tr>
 <tr class="separator:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memItemLeft" align="right" valign="top"><a id="ga8925b6c9611c398bc74bf0469886bf3d"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>SceSysconCallback</b>) (int enable, void *argp)</td></tr>
+<tr class="memitem:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>) (int enable, void *argp)</td></tr>
 <tr class="separator:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memItemLeft" align="right" valign="top"><a id="gac819bc1a3c44d5f533b86d09f1d8100d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_TX_CMD_LO</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac819bc1a3c44d5f533b86d09f1d8100d">SCE_SYSCON_PACKET_TX_CMD_LO</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab9f8bd2486bd583c8a803102828db74"><td class="memItemLeft" align="right" valign="top"><a id="gaab9f8bd2486bd583c8a803102828db74"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_TX_CMD_HI</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:gaab9f8bd2486bd583c8a803102828db74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaab9f8bd2486bd583c8a803102828db74">SCE_SYSCON_PACKET_TX_CMD_HI</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:gaab9f8bd2486bd583c8a803102828db74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memItemLeft" align="right" valign="top"><a id="ga7d8dc68bb03c9028b7f29547bf537bd6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_TX_LENGTH</b>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7d8dc68bb03c9028b7f29547bf537bd6">SCE_SYSCON_PACKET_TX_LENGTH</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memItemLeft" align="right" valign="top"><a id="ga8dd0121b06dcb62d26e6e2b8c53c303f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_TX_DATA</b>(i)&#160;&#160;&#160;(3 + (i))</td></tr>
+<tr class="memitem:ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8dd0121b06dcb62d26e6e2b8c53c303f">SCE_SYSCON_PACKET_TX_DATA</a>(i)&#160;&#160;&#160;(3 + (i))</td></tr>
 <tr class="separator:ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memItemLeft" align="right" valign="top"><a id="ga032dedbd9a54a7dc973acf8e5b6ad9d3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_RX_STATUS_LO</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga032dedbd9a54a7dc973acf8e5b6ad9d3">SCE_SYSCON_PACKET_RX_STATUS_LO</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97be4882dd163e46c311a5900c58ed89"><td class="memItemLeft" align="right" valign="top"><a id="ga97be4882dd163e46c311a5900c58ed89"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_RX_STATUS_HI</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:ga97be4882dd163e46c311a5900c58ed89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga97be4882dd163e46c311a5900c58ed89">SCE_SYSCON_PACKET_RX_STATUS_HI</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga97be4882dd163e46c311a5900c58ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memItemLeft" align="right" valign="top"><a id="gaa7e9a6544921dab664fda0e5ce9a8d61"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_RX_LENGTH</b>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa7e9a6544921dab664fda0e5ce9a8d61">SCE_SYSCON_PACKET_RX_LENGTH</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19a614cc2994ea67ff640ea915e2e517"><td class="memItemLeft" align="right" valign="top"><a id="ga19a614cc2994ea67ff640ea915e2e517"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_RX_RESULT</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:ga19a614cc2994ea67ff640ea915e2e517"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga19a614cc2994ea67ff640ea915e2e517">SCE_SYSCON_PACKET_RX_RESULT</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:ga19a614cc2994ea67ff640ea915e2e517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memItemLeft" align="right" valign="top"><a id="ga8eba05a0bf125e062bb495d0a3d26a35"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SYSCON_PACKET_RX_DATA</b>(i)&#160;&#160;&#160;(4 + (i))</td></tr>
+<tr class="memitem:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8eba05a0bf125e062bb495d0a3d26a35">SCE_SYSCON_PACKET_RX_DATA</a>(i)&#160;&#160;&#160;(4 + (i))</td></tr>
 <tr class="separator:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga8eba05a0bf125e062bb495d0a3d26a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8eba05a0bf125e062bb495d0a3d26a35">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_DATA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i</td><td>)</td>
+          <td>&#160;&#160;&#160;(4 + (i))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa7e9a6544921dab664fda0e5ce9a8d61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7e9a6544921dab664fda0e5ce9a8d61">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_LENGTH&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga19a614cc2994ea67ff640ea915e2e517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19a614cc2994ea67ff640ea915e2e517">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_RESULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_RESULT&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97be4882dd163e46c311a5900c58ed89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97be4882dd163e46c311a5900c58ed89">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_STATUS_HI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_STATUS_HI&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga032dedbd9a54a7dc973acf8e5b6ad9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga032dedbd9a54a7dc973acf8e5b6ad9d3">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_STATUS_LO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_STATUS_LO&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab9f8bd2486bd583c8a803102828db74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab9f8bd2486bd583c8a803102828db74">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_CMD_HI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_CMD_HI&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac819bc1a3c44d5f533b86d09f1d8100d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac819bc1a3c44d5f533b86d09f1d8100d">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_CMD_LO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_CMD_LO&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8dd0121b06dcb62d26e6e2b8c53c303f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8dd0121b06dcb62d26e6e2b8c53c303f">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_DATA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i</td><td>)</td>
+          <td>&#160;&#160;&#160;(3 + (i))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7d8dc68bb03c9028b7f29547bf537bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d8dc68bb03c9028b7f29547bf537bd6">&sect;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_LENGTH&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga8925b6c9611c398bc74bf0469886bf3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8925b6c9611c398bc74bf0469886bf3d">&sect;&nbsp;</a></span>SceSysconCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SceSysconCallback) (int enable, void *argp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa94a59bed75c9ecaeb24899ff67ab8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa94a59bed75c9ecaeb24899ff67ab8a9">&sect;&nbsp;</a></span>SceSysconCmdExecAsyncCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* SceSysconCmdExecAsyncCallback) (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, void *argp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga90caee69178d57cd0678da8d14419e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90caee69178d57cd0678da8d14419e26">&sect;&nbsp;</a></span>SceSysconCmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceSysconKernel.html#ga90caee69178d57cd0678da8d14419e26">SceSysconCmd</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga90caee69178d57cd0678da8d14419e26a743a14dc2b9b7f1cbe28787157506886"></a>SCE_SYSCON_CMD_RESET_DEVICE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaeedd5b2730a3b09c39b91ed100cb4175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeedd5b2730a3b09c39b91ed100cb4175">&sect;&nbsp;</a></span>SceSysconResetType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceSysconKernel.html#gaeedd5b2730a3b09c39b91ed100cb4175">SceSysconResetType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaeedd5b2730a3b09c39b91ed100cb4175a58b294b616d783f2fbc383d445cfc668"></a>SCE_SYSCON_RESET_TYPE_POWEROFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaeedd5b2730a3b09c39b91ed100cb4175a77db21261d7fd64123981b2cfafd02d0"></a>SCE_SYSCON_RESET_TYPE_SUSPEND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaeedd5b2730a3b09c39b91ed100cb4175a55de01fe1cdd5780da28c0abf1a6c22d"></a>SCE_SYSCON_RESET_TYPE_COLD_RESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaeedd5b2730a3b09c39b91ed100cb4175aa6ec35f5e89dabefbabd6515fc942cd7"></a>SCE_SYSCON_RESET_TYPE_SOFT_RESET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga28866ce50fd3e1634c3f292004cc5623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28866ce50fd3e1634c3f292004cc5623">&sect;&nbsp;</a></span>ksceSysconBeginConfigstorageTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconBeginConfigstorageTransaction </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6c3c0a306f9a293fa1bad67bf4980417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c3c0a306f9a293fa1bad67bf4980417">&sect;&nbsp;</a></span>ksceSysconClearTemperatureLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconClearTemperatureLog </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gab2c9b314b57b1136810e129a3a046231"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab2c9b314b57b1136810e129a3a046231">&sect;&nbsp;</a></span>ksceSysconCmdExec()</h2>
 
@@ -308,7 +509,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceSysconCmdExecAsyncCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -377,6 +578,24 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga80ee20f450ddc46c49897767164f74a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80ee20f450ddc46c49897767164f74a8">&sect;&nbsp;</a></span>ksceSysconCommitConfigstorageTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconCommitConfigstorageTransaction </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gad9d6268ecf056da13880be8679d6a47f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad9d6268ecf056da13880be8679d6a47f">&sect;&nbsp;</a></span>ksceSysconCtrlHdmiCecPower()</h2>
 
@@ -442,6 +661,24 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga69b6c916e511baf05b6b434d59ddf562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69b6c916e511baf05b6b434d59ddf562">&sect;&nbsp;</a></span>ksceSysconCtrlManualChargeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconCtrlManualChargeMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga5a73cfa36fb2601d2a91e122ff0420a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5a73cfa36fb2601d2a91e122ff0420a3">&sect;&nbsp;</a></span>ksceSysconCtrlRMRPower()</h2>
 
@@ -496,6 +733,42 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gac3166640df54192f8eb3578c6bb41482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3166640df54192f8eb3578c6bb41482">&sect;&nbsp;</a></span>ksceSysconEnableHibernateIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconEnableHibernateIO </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0c21ea3606904413ae6f6120a23a4d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c21ea3606904413ae6f6120a23a4d7d">&sect;&nbsp;</a></span>ksceSysconEndConfigstorageTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconEndConfigstorageTransaction </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga74b11bfee0b45aefe0c8349016d6844d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga74b11bfee0b45aefe0c8349016d6844d">&sect;&nbsp;</a></span>ksceSysconGetBaryonTimestamp()</h2>
 
@@ -537,6 +810,414 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gabdc5cf80cb74cb6d2715f1ad29b8d838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdc5cf80cb74cb6d2715f1ad29b8d838">&sect;&nbsp;</a></span>ksceSysconGetBatteryCalibData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetBatteryCalibData </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga035bcb26ac90788df0e5a4d00a42536b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga035bcb26ac90788df0e5a4d00a42536b">&sect;&nbsp;</a></span>ksceSysconGetHardwareInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetHardwareInfo </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1948a96441ba023b93a4a567bc60234d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1948a96441ba023b93a4a567bc60234d">&sect;&nbsp;</a></span>ksceSysconGetHardwareInfo2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetHardwareInfo2 </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaacaedf00ad9fb44fde5ef5c9ae126438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacaedf00ad9fb44fde5ef5c9ae126438">&sect;&nbsp;</a></span>ksceSysconGetLogInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetLogInfo </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa69c9a9eafa580395a8ef9ddba1ef158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa69c9a9eafa580395a8ef9ddba1ef158">&sect;&nbsp;</a></span>ksceSysconGetManualChargeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetManualChargeMode </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab5b9ffddb85660e3eb05a2776d41262a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b9ffddb85660e3eb05a2776d41262a">&sect;&nbsp;</a></span>ksceSysconGetManufacturesStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetManufacturesStatus </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5538b16e22deb0e2e07da6ee2c273cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5538b16e22deb0e2e07da6ee2c273cdc">&sect;&nbsp;</a></span>ksceSysconGetTemperatureLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetTemperatureLog </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4f3a63970a24f5f8e7a28755dcf64c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f3a63970a24f5f8e7a28755dcf64c73">&sect;&nbsp;</a></span>ksceSysconGetUsbDetStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconGetUsbDetStatus </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaf51586e3692ca22a177c6dea0143935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf51586e3692ca22a177c6dea0143935">&sect;&nbsp;</a></span>ksceSysconIduModeClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconIduModeClear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga773bb2bdf4ca319e993f9001ee189379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga773bb2bdf4ca319e993f9001ee189379">&sect;&nbsp;</a></span>ksceSysconIduModeSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconIduModeSet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga663ad6edb993b0a8d3fee9755ce55d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga663ad6edb993b0a8d3fee9755ce55d34">&sect;&nbsp;</a></span>ksceSysconIsDownLoaderMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconIsDownLoaderMode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaae1325b8a150af728f99d120aeba2a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae1325b8a150af728f99d120aeba2a0e">&sect;&nbsp;</a></span>ksceSysconLoadConfigstorageScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLoadConfigstorageScript </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>short</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga792e9f948699fc99a7c2a064c525c1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga792e9f948699fc99a7c2a064c525c1e8">&sect;&nbsp;</a></span>ksceSysconLogReadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLogReadData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>short</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0098f11253d7c628902ce7169edfde46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0098f11253d7c628902ce7169edfde46">&sect;&nbsp;</a></span>ksceSysconLogStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLogStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8b0dc698faf7acde882734ec2cd4d2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b0dc698faf7acde882734ec2cd4d2e7">&sect;&nbsp;</a></span>ksceSysconLogStartWaiting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLogStartWaiting </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae4e42bcc4349912f7b007b23ab93e240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4e42bcc4349912f7b007b23ab93e240">&sect;&nbsp;</a></span>ksceSysconReadCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconReadCommand </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9668ccc14e59e1b8f7804a0e191c5160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9668ccc14e59e1b8f7804a0e191c5160">&sect;&nbsp;</a></span>ksceSysconSendCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconSendCommand </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga709e091a8a156e457907af9606c84d40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga709e091a8a156e457907af9606c84d40">&sect;&nbsp;</a></span>ksceSysconSetAlarmCallback()</h2>
 
@@ -546,7 +1227,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">int ksceSysconSetAlarmCallback </td>
           <td>(</td>
-          <td class="paramtype">SceSysconCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -605,7 +1286,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">int ksceSysconSetLowBatteryCallback </td>
           <td>(</td>
-          <td class="paramtype">SceSysconCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -681,7 +1362,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">int ksceSysconSetThermalAlertCallback </td>
           <td>(</td>
-          <td class="paramtype">SceSysconCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -707,6 +1388,76 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
+
+</div>
+</div>
+<a id="ga7f10608a4f9121ed207a65148149b4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f10608a4f9121ed207a65148149b4f9">&sect;&nbsp;</a></span>ksceSysconShowModeClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconShowModeClear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabba3e87538e273b9cccc454613a3498e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabba3e87538e273b9cccc454613a3498e">&sect;&nbsp;</a></span>ksceSysconShowModeSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconShowModeSet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga72de9eec7c732af934bebcbaab6086ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72de9eec7c732af934bebcbaab6086ad">&sect;&nbsp;</a></span>ksceSysconVerifyConfigstorageScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconVerifyConfigstorageScript </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>short</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

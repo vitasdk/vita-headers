@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('group__SceStatKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/io/stat.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceIofilemgrForDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2stat_8h.html">psp2kern/io/stat.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceIofilemgrForDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -105,23 +105,17 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga2561715990b2e05ef0b56237b18e5d21"><td class="memItemLeft" align="right" valign="top"><a id="ga2561715990b2e05ef0b56237b18e5d21"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_S_ISLNK</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a">SCE_S_IFLNK</a>)</td></tr>
+<tr class="memitem:ga2561715990b2e05ef0b56237b18e5d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatKernel.html#ga2561715990b2e05ef0b56237b18e5d21">SCE_S_ISLNK</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a">SCE_S_IFLNK</a>)</td></tr>
 <tr class="separator:ga2561715990b2e05ef0b56237b18e5d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67719e79d77b8d45c94e97d02548dee6"><td class="memItemLeft" align="right" valign="top"><a id="ga67719e79d77b8d45c94e97d02548dee6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_S_ISREG</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a63554c0828aa2d899245475c75453151">SCE_S_IFREG</a>)</td></tr>
+<tr class="memitem:ga67719e79d77b8d45c94e97d02548dee6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatKernel.html#ga67719e79d77b8d45c94e97d02548dee6">SCE_S_ISREG</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a63554c0828aa2d899245475c75453151">SCE_S_IFREG</a>)</td></tr>
 <tr class="separator:ga67719e79d77b8d45c94e97d02548dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd2d8a2c5c3095032e1999771132e115"><td class="memItemLeft" align="right" valign="top"><a id="gadd2d8a2c5c3095032e1999771132e115"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_S_ISDIR</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a519fcfb201c967cf0a13644e5181285f">SCE_S_IFDIR</a>)</td></tr>
+<tr class="memitem:gadd2d8a2c5c3095032e1999771132e115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatKernel.html#gadd2d8a2c5c3095032e1999771132e115">SCE_S_ISDIR</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a519fcfb201c967cf0a13644e5181285f">SCE_S_IFDIR</a>)</td></tr>
 <tr class="separator:gadd2d8a2c5c3095032e1999771132e115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memItemLeft" align="right" valign="top"><a id="ga79903d28d909b3d5b79491d9b0ac39ed"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SO_ISLNK</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaf12a32979732f52ce573ad8540b575b">SCE_SO_IFLNK</a>)</td></tr>
+<tr class="memitem:ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatKernel.html#ga79903d28d909b3d5b79491d9b0ac39ed">SCE_SO_ISLNK</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaf12a32979732f52ce573ad8540b575b">SCE_SO_IFLNK</a>)</td></tr>
 <tr class="separator:ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memItemLeft" align="right" valign="top"><a id="ga0ed64f564b5a8bff3a5a05e2afc7204c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SO_ISREG</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c">SCE_SO_IFREG</a>)</td></tr>
+<tr class="memitem:ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatKernel.html#ga0ed64f564b5a8bff3a5a05e2afc7204c">SCE_SO_ISREG</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c">SCE_SO_IFREG</a>)</td></tr>
 <tr class="separator:ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memItemLeft" align="right" valign="top"><a id="gaad6e5e897cea0e2efda29316e139f7c9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_SO_ISDIR</b>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a>)</td></tr>
+<tr class="memitem:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatKernel.html#gaad6e5e897cea0e2efda29316e139f7c9">SCE_SO_ISDIR</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a>)</td></tr>
 <tr class="separator:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -182,6 +176,115 @@ st_size</td>
 <td class="fielddoc">
 Size of the file in bytes. </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gadd2d8a2c5c3095032e1999771132e115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd2d8a2c5c3095032e1999771132e115">&sect;&nbsp;</a></span>SCE_S_ISDIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_S_ISDIR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td>&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a519fcfb201c967cf0a13644e5181285f">SCE_S_IFDIR</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2561715990b2e05ef0b56237b18e5d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2561715990b2e05ef0b56237b18e5d21">&sect;&nbsp;</a></span>SCE_S_ISLNK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_S_ISLNK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td>&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a">SCE_S_IFLNK</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga67719e79d77b8d45c94e97d02548dee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67719e79d77b8d45c94e97d02548dee6">&sect;&nbsp;</a></span>SCE_S_ISREG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_S_ISREG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td>&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a63554c0828aa2d899245475c75453151">SCE_S_IFREG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaad6e5e897cea0e2efda29316e139f7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad6e5e897cea0e2efda29316e139f7c9">&sect;&nbsp;</a></span>SCE_SO_ISDIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SO_ISDIR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td>&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga79903d28d909b3d5b79491d9b0ac39ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79903d28d909b3d5b79491d9b0ac39ed">&sect;&nbsp;</a></span>SCE_SO_ISLNK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SO_ISLNK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td>&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaf12a32979732f52ce573ad8540b575b">SCE_SO_IFLNK</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0ed64f564b5a8bff3a5a05e2afc7204c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ed64f564b5a8bff3a5a05e2afc7204c">&sect;&nbsp;</a></span>SCE_SO_ISREG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SO_ISREG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td>&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c">SCE_SO_IFREG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

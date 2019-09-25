@@ -79,17 +79,42 @@ $(document).ready(function(){initNavTree('group__SceExcpmgrKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/kernel/excpmgr.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceExcpmgrForKernel_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="excpmgr_8h.html">psp2kern/kernel/excpmgr.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceExcpmgrForKernel_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gadf139bc07587266462a82f4bc870b09c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gadf139bc07587266462a82f4bc870b09c">ksceExcpmgrGetData</a> (void)</td></tr>
 <tr class="memdesc:gadf139bc07587266462a82f4bc870b09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to SceExcpmgr's internal data.  <a href="#gadf139bc07587266462a82f4bc870b09c">More...</a><br /></td></tr>
 <tr class="separator:gadf139bc07587266462a82f4bc870b09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad9bbe98307b693818d3d8db4a358b0b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5">ksceExcpmgrRegisterHandler</a> (SceExcpKind kind, int priority, void *handler)</td></tr>
+<tr class="memitem:gad9bbe98307b693818d3d8db4a358b0b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5">ksceExcpmgrRegisterHandler</a> (<a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a> kind, int priority, void *handler)</td></tr>
 <tr class="memdesc:gad9bbe98307b693818d3d8db4a358b0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an exception handler.  <a href="#gad9bbe98307b693818d3d8db4a358b0b5">More...</a><br /></td></tr>
 <tr class="separator:gad9bbe98307b693818d3d8db4a358b0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga9b3daa6d42c404744d8f43ea28173972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b3daa6d42c404744d8f43ea28173972">&sect;&nbsp;</a></span>SceExcpKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493"></a>SCE_EXCP_RESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972a729a765aed49ca5ad4aa1e499901fca1"></a>SCE_EXCP_UNDEF_INSTRUCTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db"></a>SCE_EXCP_SVC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972a91908f9f7f9fcf4b13a956e1107c861d"></a>SCE_EXCP_PABT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972a82d0f8c199378afab4153cbbbde888c1"></a>SCE_EXCP_DABT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972abaf0ecd9d2da1e694561816779a617dd"></a>SCE_EXCP_UNUSED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972a3f2f2dd092c6dd722a034f4cfd87821d"></a>SCE_EXCP_IRQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9b3daa6d42c404744d8f43ea28173972a0652163c89612e72d709c4fcaa07d62b"></a>SCE_EXCP_FIQ&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gadf139bc07587266462a82f4bc870b09c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadf139bc07587266462a82f4bc870b09c">&sect;&nbsp;</a></span>ksceExcpmgrGetData()</h2>
@@ -122,7 +147,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int ksceExcpmgrRegisterHandler </td>
           <td>(</td>
-          <td class="paramtype">SceExcpKind&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a>&#160;</td>
           <td class="paramname"><em>kind</em>, </td>
         </tr>
         <tr>

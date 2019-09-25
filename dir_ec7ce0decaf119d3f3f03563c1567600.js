@@ -1,13 +1,13 @@
 var dir_ec7ce0decaf119d3f3f03563c1567600 =
 [
-    [ "cpu.h", "cpu_8h_source.html", null ],
-    [ "dmac.h", "ern_2kernel_2dmac_8h_source.html", null ],
-    [ "excpmgr.h", "excpmgr_8h_source.html", null ],
-    [ "intrmgr.h", "intrmgr_8h_source.html", null ],
-    [ "modulemgr.h", "ern_2kernel_2modulemgr_8h_source.html", null ],
-    [ "processmgr.h", "ern_2kernel_2processmgr_8h_source.html", null ],
-    [ "suspend.h", "suspend_8h_source.html", null ],
-    [ "sysmem.h", "ern_2kernel_2sysmem_8h_source.html", null ],
-    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h_source.html", null ],
-    [ "utils.h", "psp2kern_2kernel_2utils_8h_source.html", null ]
+    [ "cpu.h", "cpu_8h.html", "cpu_8h" ],
+    [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
+    [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
+    [ "intrmgr.h", "intrmgr_8h.html", "intrmgr_8h" ],
+    [ "modulemgr.h", "ern_2kernel_2modulemgr_8h.html", "ern_2kernel_2modulemgr_8h" ],
+    [ "processmgr.h", "ern_2kernel_2processmgr_8h.html", "ern_2kernel_2processmgr_8h" ],
+    [ "suspend.h", "suspend_8h.html", "suspend_8h" ],
+    [ "sysmem.h", "ern_2kernel_2sysmem_8h.html", "ern_2kernel_2sysmem_8h" ],
+    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", "ern_2kernel_2threadmgr_8h" ],
+    [ "utils.h", "psp2kern_2kernel_2utils_8h.html", "psp2kern_2kernel_2utils_8h" ]
 ];

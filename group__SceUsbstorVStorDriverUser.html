@@ -79,23 +79,42 @@ $(document).ready(function(){initNavTree('group__SceUsbstorVStorDriverUser.html'
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/usbstorvstor.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUsbstorVStorDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="usbstorvstor_8h.html">psp2/usbstorvstor.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUsbstorVStorDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3e1ae93f0049e1ef455141314dd763b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbstorVStorDriverUser.html#ga3e1ae93f0049e1ef455141314dd763b3">sceUsbstorVStorSetImgFilePath</a> (const char *path)</td></tr>
 <tr class="memdesc:ga3e1ae93f0049e1ef455141314dd763b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set image file path.  <a href="#ga3e1ae93f0049e1ef455141314dd763b3">More...</a><br /></td></tr>
 <tr class="separator:ga3e1ae93f0049e1ef455141314dd763b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabec7bf86144a4ed92ed3917b09b3a533"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533">sceUsbstorVStorSetDeviceInfo</a> (const char *name, const char *version)</td></tr>
+<tr class="memitem:gabec7bf86144a4ed92ed3917b09b3a533"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533">sceUsbstorVStorSetDeviceInfo</a> (const char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>, const char *version)</td></tr>
 <tr class="memdesc:gabec7bf86144a4ed92ed3917b09b3a533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set USB descriptor device information.  <a href="#gabec7bf86144a4ed92ed3917b09b3a533">More...</a><br /></td></tr>
 <tr class="separator:gabec7bf86144a4ed92ed3917b09b3a533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91ac980e580d85503ba23b8eb191d9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbstorVStorDriverUser.html#ga91ac980e580d85503ba23b8eb191d9bb">sceUsbstorVStorStart</a> (SceUsbstorVstorType <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memitem:ga91ac980e580d85503ba23b8eb191d9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbstorVStorDriverUser.html#ga91ac980e580d85503ba23b8eb191d9bb">sceUsbstorVStorStart</a> (<a class="el" href="group__SceUsbstorVStorDriverUser.html#gac1f0fe2517fda63d85571377794ebe98">SceUsbstorVstorType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="memdesc:ga91ac980e580d85503ba23b8eb191d9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start USB virtual storage.  <a href="#ga91ac980e580d85503ba23b8eb191d9bb">More...</a><br /></td></tr>
 <tr class="separator:ga91ac980e580d85503ba23b8eb191d9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga342bce6f1463f98310c428884d508a63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbstorVStorDriverUser.html#ga342bce6f1463f98310c428884d508a63">sceUsbstorVStorStop</a> (void)</td></tr>
 <tr class="memdesc:ga342bce6f1463f98310c428884d508a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop USB virtual storage.  <a href="#ga342bce6f1463f98310c428884d508a63">More...</a><br /></td></tr>
 <tr class="separator:ga342bce6f1463f98310c428884d508a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gac1f0fe2517fda63d85571377794ebe98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1f0fe2517fda63d85571377794ebe98">&sect;&nbsp;</a></span>SceUsbstorVstorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceUsbstorVStorDriverUser.html#gac1f0fe2517fda63d85571377794ebe98">SceUsbstorVstorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac1f0fe2517fda63d85571377794ebe98ae357bf123ecc6c5a53b6545a3171bfed"></a>SCE_USBSTOR_VSTOR_TYPE_FAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggac1f0fe2517fda63d85571377794ebe98a5b54c2af0c941faa93a4493cf774b40a"></a>SCE_USBSTOR_VSTOR_TYPE_CDROM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gabec7bf86144a4ed92ed3917b09b3a533"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabec7bf86144a4ed92ed3917b09b3a533">&sect;&nbsp;</a></span>sceUsbstorVStorSetDeviceInfo()</h2>
@@ -171,7 +190,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int sceUsbstorVStorStart </td>
           <td>(</td>
-          <td class="paramtype">SceUsbstorVstorType&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceUsbstorVStorDriverUser.html#gac1f0fe2517fda63d85571377794ebe98">SceUsbstorVstorType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -181,7 +200,7 @@ Functions</h2></td></tr>
 <p>Start USB virtual storage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of ::SceUsbstorVstorType</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceUsbstorVStorDriverUser.html#gac1f0fe2517fda63d85571377794ebe98">SceUsbstorVstorType</a></td></tr>
   </table>
   </dd>
 </dl>

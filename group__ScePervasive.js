@@ -1,4 +1,4 @@
 var group__ScePervasive =
 [
-    [ "Kernel", "group__ScePervasiveKernel.html", null ]
+    [ "Kernel", "group__ScePervasiveKernel.html", "group__ScePervasiveKernel" ]
 ];

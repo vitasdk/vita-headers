@@ -1,5 +1,8 @@
 var group__SceAppMgrUser =
 [
+    [ "SCE_APPMGR_MAX_APP_NAME_LENGTH", "group__SceAppMgrUser.html#gafc66fcb411ff80b645d319e641aab567", null ],
+    [ "SceAppMgrExecOptParam", "group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d", null ],
+    [ "SceAppMgrLaunchAppOptParam", "group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28", null ],
     [ "SceAppMgrErrorCode", "group__SceAppMgrUser.html#ga771df8407677ccb8145733c989f0903d", [
       [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983", null ],
       [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
@@ -9,6 +12,24 @@ var group__SceAppMgrUser =
       [ "SCE_APPMGR_ERROR_INVALID_SELF_PATH", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903daf867515f2ab516d22bed1df741e1a290", null ],
       [ "SCE_APPMGR_ERROR_BGM_PORT_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da7a8b7960fecd1c9f60ea16320a359827", null ]
     ] ],
+    [ "SceAppMgrInfoBarColor", "group__SceAppMgrUser.html#ga930cb336cd38f294cecd1d99144f6f6d", [
+      [ "SCE_APPMGR_INFOBAR_COLOR_BLACK", "group__SceAppMgrUser.html#gga930cb336cd38f294cecd1d99144f6f6da23b18e9d54dcda68e802f0e872479fd8", null ],
+      [ "SCE_APPMGR_INFOBAR_COLOR_WHITE", "group__SceAppMgrUser.html#gga930cb336cd38f294cecd1d99144f6f6da1280fdecf81c8450839217f0dad2a357", null ]
+    ] ],
+    [ "SceAppMgrInfoBarTransparency", "group__SceAppMgrUser.html#ga1ac9f6691786f20e782ae37cf1c9c2e3", [
+      [ "SCE_APPMGR_INFOBAR_TRANSPARENCY_OPAQUE", "group__SceAppMgrUser.html#gga1ac9f6691786f20e782ae37cf1c9c2e3a3e58e4b5bccfea4e14ae01c57376f540", null ],
+      [ "SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT", "group__SceAppMgrUser.html#gga1ac9f6691786f20e782ae37cf1c9c2e3ad4b92315c5730ab10ac37273941210f7", null ]
+    ] ],
+    [ "SceAppMgrInfoBarVisibility", "group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375", [
+      [ "SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE", "group__SceAppMgrUser.html#ggaebe44866148489f26fa2db17140be375accb2ba153c48fb978a52749f26b93cc1", null ],
+      [ "SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE", "group__SceAppMgrUser.html#ggaebe44866148489f26fa2db17140be375a1269b421f140d8fbb34479e64fa5454f", null ]
+    ] ],
+    [ "SceAppMgrSystemEventType", "group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd", [
+      [ "SCE_APPMGR_SYSTEMEVENT_ON_RESUME", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bda4332b4114d922a89b9f6ed3b505eac05", null ],
+      [ "SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bda5b6ba301bf13d33a0a6a26c164fa79ac", null ],
+      [ "SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bdaabb9cd4ae81d46186dbdda5c782666e7", null ],
+      [ "SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bdad2bae3c3d576591d1997c1f85d98be5a", null ]
+    ] ],
     [ "SCE_APPMGR_ERROR_BGM_PORT_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da7a8b7960fecd1c9f60ea16320a359827", null ],
     [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983", null ],
     [ "SCE_APPMGR_ERROR_INVALID", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dac704cf756ac0c7fc05aa0d20bf5d7082", null ],
@@ -16,6 +37,16 @@ var group__SceAppMgrUser =
     [ "SCE_APPMGR_ERROR_NULL_POINTER", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da3e88f785f699bd45efd239ed2b4f4e38", null ],
     [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
     [ "SCE_APPMGR_ERROR_TOO_LONG_ARGV", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da07d5ef0473adea81fbdb3ba957b685f5", null ],
+    [ "SCE_APPMGR_INFOBAR_COLOR_BLACK", "group__SceAppMgrUser.html#gga930cb336cd38f294cecd1d99144f6f6da23b18e9d54dcda68e802f0e872479fd8", null ],
+    [ "SCE_APPMGR_INFOBAR_COLOR_WHITE", "group__SceAppMgrUser.html#gga930cb336cd38f294cecd1d99144f6f6da1280fdecf81c8450839217f0dad2a357", null ],
+    [ "SCE_APPMGR_INFOBAR_TRANSPARENCY_OPAQUE", "group__SceAppMgrUser.html#gga1ac9f6691786f20e782ae37cf1c9c2e3a3e58e4b5bccfea4e14ae01c57376f540", null ],
+    [ "SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT", "group__SceAppMgrUser.html#gga1ac9f6691786f20e782ae37cf1c9c2e3ad4b92315c5730ab10ac37273941210f7", null ],
+    [ "SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE", "group__SceAppMgrUser.html#ggaebe44866148489f26fa2db17140be375accb2ba153c48fb978a52749f26b93cc1", null ],
+    [ "SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE", "group__SceAppMgrUser.html#ggaebe44866148489f26fa2db17140be375a1269b421f140d8fbb34479e64fa5454f", null ],
+    [ "SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bdaabb9cd4ae81d46186dbdda5c782666e7", null ],
+    [ "SCE_APPMGR_SYSTEMEVENT_ON_RESUME", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bda4332b4114d922a89b9f6ed3b505eac05", null ],
+    [ "SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bda5b6ba301bf13d33a0a6a26c164fa79ac", null ],
+    [ "SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bdad2bae3c3d576591d1997c1f85d98be5a", null ],
     [ "_sceAppMgrGetAppState", "group__SceAppMgrUser.html#ga7234b0f71099e86cc4dde971a7888bb7", null ],
     [ "_sceAppMgrGetRawPath", "group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1", null ],
     [ "_sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53", null ],

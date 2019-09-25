@@ -81,7 +81,7 @@ $(document).ready(function(){initNavTree('group__SceAppMgrUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/appmgr.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceAppMgr_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="appmgr_8h.html">psp2/appmgr.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceAppMgr_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -103,16 +103,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1b7dac1c7c4add38e7d468a0e262db25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga1b7dac1c7c4add38e7d468a0e262db25">_sceAppMgrSaveDataSlotDelete</a> (<a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSaveDataSlotDelete">SceAppMgrSaveDataSlotDelete</a> *data)</td></tr>
 <tr class="memdesc:ga1b7dac1c7c4add38e7d468a0e262db25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a savedata slot.  <a href="#ga1b7dac1c7c4add38e7d468a0e262db25">More...</a><br /></td></tr>
 <tr class="separator:ga1b7dac1c7c4add38e7d468a0e262db25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07bc80f01f9d74a9e694f8d972a2e9f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga07bc80f01f9d74a9e694f8d972a2e9f8">sceAppMgrGetIdByName</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *pid, const char *name)</td></tr>
+<tr class="memitem:ga07bc80f01f9d74a9e694f8d972a2e9f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga07bc80f01f9d74a9e694f8d972a2e9f8">sceAppMgrGetIdByName</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *pid, const char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>)</td></tr>
 <tr class="memdesc:ga07bc80f01f9d74a9e694f8d972a2e9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Process ID by Title ID.  <a href="#ga07bc80f01f9d74a9e694f8d972a2e9f8">More...</a><br /></td></tr>
 <tr class="separator:ga07bc80f01f9d74a9e694f8d972a2e9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb7f7f8ff5ab2ef9827e76e51c55d6cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc">sceAppMgrGetNameById</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, char *name)</td></tr>
+<tr class="memitem:gaeb7f7f8ff5ab2ef9827e76e51c55d6cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc">sceAppMgrGetNameById</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>)</td></tr>
 <tr class="memdesc:gaeb7f7f8ff5ab2ef9827e76e51c55d6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Title ID by Process ID.  <a href="#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc">More...</a><br /></td></tr>
 <tr class="separator:gaeb7f7f8ff5ab2ef9827e76e51c55d6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga075c1e3c8dfcab225b2c778d5f33d517"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga075c1e3c8dfcab225b2c778d5f33d517">sceAppMgrDestroyOtherApp</a> (void)</td></tr>
 <tr class="memdesc:ga075c1e3c8dfcab225b2c778d5f33d517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy other apps.  <a href="#ga075c1e3c8dfcab225b2c778d5f33d517">More...</a><br /></td></tr>
 <tr class="separator:ga075c1e3c8dfcab225b2c778d5f33d517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7d4e557d599ff47d5012cf5c2c0d155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gae7d4e557d599ff47d5012cf5c2c0d155">sceAppMgrDestroyAppByName</a> (const char *name)</td></tr>
+<tr class="memitem:gae7d4e557d599ff47d5012cf5c2c0d155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gae7d4e557d599ff47d5012cf5c2c0d155">sceAppMgrDestroyAppByName</a> (const char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>)</td></tr>
 <tr class="memdesc:gae7d4e557d599ff47d5012cf5c2c0d155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an application by Title ID.  <a href="#gae7d4e557d599ff47d5012cf5c2c0d155">More...</a><br /></td></tr>
 <tr class="separator:gae7d4e557d599ff47d5012cf5c2c0d155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a04c57c6875a5e80fe43be0221fb248"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga5a04c57c6875a5e80fe43be0221fb248">sceAppMgrDestroyAppByAppId</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> appId)</td></tr>
@@ -139,19 +139,19 @@ Functions</h2></td></tr>
 <tr class="memitem:ga57e55396a9cc33ab9dc5f2a5bf566315"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga57e55396a9cc33ab9dc5f2a5bf566315">sceAppMgrReleaseBgmPort</a> (void)</td></tr>
 <tr class="memdesc:ga57e55396a9cc33ab9dc5f2a5bf566315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release acquired BGM port.  <a href="#ga57e55396a9cc33ab9dc5f2a5bf566315">More...</a><br /></td></tr>
 <tr class="separator:ga57e55396a9cc33ab9dc5f2a5bf566315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga780c093d4d4cb329f6a669018243955b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga780c093d4d4cb329f6a669018243955b">sceAppMgrSetInfobarState</a> (SceAppMgrInfoBarVisibility visibility, SceAppMgrInfoBarColor color, SceAppMgrInfoBarTransparency transparency)</td></tr>
+<tr class="memitem:ga780c093d4d4cb329f6a669018243955b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga780c093d4d4cb329f6a669018243955b">sceAppMgrSetInfobarState</a> (<a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a> visibility, <a class="el" href="group__SceAppMgrUser.html#ga930cb336cd38f294cecd1d99144f6f6d">SceAppMgrInfoBarColor</a> color, <a class="el" href="group__SceAppMgrUser.html#ga1ac9f6691786f20e782ae37cf1c9c2e3">SceAppMgrInfoBarTransparency</a> transparency)</td></tr>
 <tr class="memdesc:ga780c093d4d4cb329f6a669018243955b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set infobar state.  <a href="#ga780c093d4d4cb329f6a669018243955b">More...</a><br /></td></tr>
 <tr class="separator:ga780c093d4d4cb329f6a669018243955b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d1f55f68294a3d243c61d418d14c587"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga6d1f55f68294a3d243c61d418d14c587">sceAppMgrLoadExec</a> (const char *appPath, char *const argv[], const SceAppMgrExecOptParam *optParam)</td></tr>
+<tr class="memitem:ga6d1f55f68294a3d243c61d418d14c587"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga6d1f55f68294a3d243c61d418d14c587">sceAppMgrLoadExec</a> (const char *appPath, char *const argv[], const <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a> *optParam)</td></tr>
 <tr class="memdesc:ga6d1f55f68294a3d243c61d418d14c587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load and start a SELF executable.  <a href="#ga6d1f55f68294a3d243c61d418d14c587">More...</a><br /></td></tr>
 <tr class="separator:ga6d1f55f68294a3d243c61d418d14c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c8c9e88eae0832beb82c38022e52cbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga3c8c9e88eae0832beb82c38022e52cbf">sceAppMgrLaunchAppByUri</a> (int flags, const char *uri)</td></tr>
+<tr class="memitem:ga3c8c9e88eae0832beb82c38022e52cbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga3c8c9e88eae0832beb82c38022e52cbf">sceAppMgrLaunchAppByUri</a> (int <a class="el" href="group__SceUdcdKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const char *uri)</td></tr>
 <tr class="memdesc:ga3c8c9e88eae0832beb82c38022e52cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an application by URI.  <a href="#ga3c8c9e88eae0832beb82c38022e52cbf">More...</a><br /></td></tr>
 <tr class="separator:ga3c8c9e88eae0832beb82c38022e52cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga372b7edb499d710ac40016b9012511cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga372b7edb499d710ac40016b9012511cc">sceAppMgrLaunchAppByName2</a> (const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam)</td></tr>
+<tr class="memitem:ga372b7edb499d710ac40016b9012511cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga372b7edb499d710ac40016b9012511cc">sceAppMgrLaunchAppByName2</a> (const char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>, const char *param, <a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *optParam)</td></tr>
 <tr class="memdesc:ga372b7edb499d710ac40016b9012511cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an application by Title ID.  <a href="#ga372b7edb499d710ac40016b9012511cc">More...</a><br /></td></tr>
 <tr class="separator:ga372b7edb499d710ac40016b9012511cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab865fbedcc3772e21b221cf1d5862966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gab865fbedcc3772e21b221cf1d5862966">sceAppMgrLaunchAppByName2ForShell</a> (const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam)</td></tr>
+<tr class="memitem:gab865fbedcc3772e21b221cf1d5862966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gab865fbedcc3772e21b221cf1d5862966">sceAppMgrLaunchAppByName2ForShell</a> (const char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>, const char *param, <a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *optParam)</td></tr>
 <tr class="memdesc:gab865fbedcc3772e21b221cf1d5862966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an application by Title ID for Shell.  <a href="#gab865fbedcc3772e21b221cf1d5862966">More...</a><br /></td></tr>
 <tr class="separator:gab865fbedcc3772e21b221cf1d5862966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f86fe3ca28ac18aef3aa12eeb3cc50a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga9f86fe3ca28ac18aef3aa12eeb3cc50a">sceAppMgrGameDataMount</a> (const char *path, int unk1, int unk2, const char *mount_point)</td></tr>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaae990bce760d4f3c78985955ee547e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gaaae990bce760d4f3c78985955ee547e5">sceAppMgrAppDataMountById</a> (int id, const char *titleid, const char *mount_point)</td></tr>
 <tr class="memdesc:gaaae990bce760d4f3c78985955ee547e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount application data by Title ID.  <a href="#gaaae990bce760d4f3c78985955ee547e5">More...</a><br /></td></tr>
 <tr class="separator:gaaae990bce760d4f3c78985955ee547e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac405fb989da489896c044f36f7980a7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gac405fb989da489896c044f36f7980a7d">sceAppMgrAppParamGetString</a> (int pid, int param, char *string, int length)</td></tr>
+<tr class="memitem:gac405fb989da489896c044f36f7980a7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gac405fb989da489896c044f36f7980a7d">sceAppMgrAppParamGetString</a> (int pid, int param, char *string, int <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>)</td></tr>
 <tr class="memdesc:gac405fb989da489896c044f36f7980a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get application params from SFO descriptor.  <a href="#gac405fb989da489896c044f36f7980a7d">More...</a><br /></td></tr>
 <tr class="separator:gac405fb989da489896c044f36f7980a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0eb85f9a6fbd6948d480e3af23b76eca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga0eb85f9a6fbd6948d480e3af23b76eca">sceAppMgrGetDevInfo</a> (const char *dev, uint64_t *max_size, uint64_t *free_size)</td></tr>
@@ -199,17 +199,14 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga41f90974b5666c0fa0d8a1293272d20d"><td class="memItemLeft" align="right" valign="top"><a id="ga41f90974b5666c0fa0d8a1293272d20d"></a>
-typedef struct SceAppMgrExecOptParam&#160;</td><td class="memItemRight" valign="bottom"><b>SceAppMgrExecOptParam</b></td></tr>
+<tr class="memitem:ga41f90974b5666c0fa0d8a1293272d20d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a></td></tr>
 <tr class="separator:ga41f90974b5666c0fa0d8a1293272d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c8cdc41fad97b5377f58df1ff9b7f28"><td class="memItemLeft" align="right" valign="top"><a id="ga1c8cdc41fad97b5377f58df1ff9b7f28"></a>
-typedef struct SceAppMgrLaunchAppOptParam&#160;</td><td class="memItemRight" valign="bottom"><b>SceAppMgrLaunchAppOptParam</b></td></tr>
+<tr class="memitem:ga1c8cdc41fad97b5377f58df1ff9b7f28"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a></td></tr>
 <tr class="separator:ga1c8cdc41fad97b5377f58df1ff9b7f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gafc66fcb411ff80b645d319e641aab567"><td class="memItemLeft" align="right" valign="top"><a id="gafc66fcb411ff80b645d319e641aab567"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCE_APPMGR_MAX_APP_NAME_LENGTH</b>&#160;&#160;&#160;(31)</td></tr>
+<tr class="memitem:gafc66fcb411ff80b645d319e641aab567"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gafc66fcb411ff80b645d319e641aab567">SCE_APPMGR_MAX_APP_NAME_LENGTH</a>&#160;&#160;&#160;(31)</td></tr>
 <tr class="separator:gafc66fcb411ff80b645d319e641aab567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -237,7 +234,7 @@ Reserved data. </td></tr>
 <td class="fieldname">
 systemEvent</td>
 <td class="fielddoc">
-One of ::SceAppMgrSystemEventType. </td></tr>
+One of <a class="el" href="group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd">SceAppMgrSystemEventType</a>. </td></tr>
 </table>
 
 </div>
@@ -462,25 +459,25 @@ Save slot to use. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gac59b7587cff4f084371a1ab458f61e8f"></a>SceUInt32</td>
+<a id="gac59b7587cff4f084371a1ab458f61e8f"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 appEventNum</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga17b75325fb9257fe41750f96d8885f3e"></a>SceBool</td>
+<a id="ga17b75325fb9257fe41750f96d8885f3e"></a><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a></td>
 <td class="fieldname">
 isSystemUiOverlaid</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga49fc1ebe0736580a6ae9c27e14e4d348"></a>SceUInt8</td>
+<a id="ga49fc1ebe0736580a6ae9c27e14e4d348"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 reserved[116]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga491fc8411d0df924a4444f8e50313e73"></a>SceUInt32</td>
+<a id="ga491fc8411d0df924a4444f8e50313e73"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 systemEventNum</td>
 <td class="fielddoc">
@@ -512,6 +509,50 @@ Reserved data. </td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gafc66fcb411ff80b645d319e641aab567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc66fcb411ff80b645d319e641aab567">&sect;&nbsp;</a></span>SCE_APPMGR_MAX_APP_NAME_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_APPMGR_MAX_APP_NAME_LENGTH&#160;&#160;&#160;(31)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga41f90974b5666c0fa0d8a1293272d20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41f90974b5666c0fa0d8a1293272d20d">&sect;&nbsp;</a></span>SceAppMgrExecOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a> <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1c8cdc41fad97b5377f58df1ff9b7f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c8cdc41fad97b5377f58df1ff9b7f28">&sect;&nbsp;</a></span>SceAppMgrLaunchAppOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> <a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga771df8407677ccb8145733c989f0903d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga771df8407677ccb8145733c989f0903d">&sect;&nbsp;</a></span>SceAppMgrErrorCode</h2>
@@ -539,6 +580,80 @@ Reserved data. </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903da7a8b7960fecd1c9f60ea16320a359827"></a>SCE_APPMGR_ERROR_BGM_PORT_BUSY&#160;</td><td class="fielddoc"><p>BGM port was occupied and could not be secured. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga930cb336cd38f294cecd1d99144f6f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga930cb336cd38f294cecd1d99144f6f6d">&sect;&nbsp;</a></span>SceAppMgrInfoBarColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#ga930cb336cd38f294cecd1d99144f6f6d">SceAppMgrInfoBarColor</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga930cb336cd38f294cecd1d99144f6f6da23b18e9d54dcda68e802f0e872479fd8"></a>SCE_APPMGR_INFOBAR_COLOR_BLACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga930cb336cd38f294cecd1d99144f6f6da1280fdecf81c8450839217f0dad2a357"></a>SCE_APPMGR_INFOBAR_COLOR_WHITE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga1ac9f6691786f20e782ae37cf1c9c2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ac9f6691786f20e782ae37cf1c9c2e3">&sect;&nbsp;</a></span>SceAppMgrInfoBarTransparency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#ga1ac9f6691786f20e782ae37cf1c9c2e3">SceAppMgrInfoBarTransparency</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1ac9f6691786f20e782ae37cf1c9c2e3a3e58e4b5bccfea4e14ae01c57376f540"></a>SCE_APPMGR_INFOBAR_TRANSPARENCY_OPAQUE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ac9f6691786f20e782ae37cf1c9c2e3ad4b92315c5730ab10ac37273941210f7"></a>SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaebe44866148489f26fa2db17140be375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebe44866148489f26fa2db17140be375">&sect;&nbsp;</a></span>SceAppMgrInfoBarVisibility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaebe44866148489f26fa2db17140be375accb2ba153c48fb978a52749f26b93cc1"></a>SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaebe44866148489f26fa2db17140be375a1269b421f140d8fbb34479e64fa5454f"></a>SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gad863aa5e7fcb541a0aada48e8c86f9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad863aa5e7fcb541a0aada48e8c86f9bd">&sect;&nbsp;</a></span>SceAppMgrSystemEventType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd">SceAppMgrSystemEventType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bda4332b4114d922a89b9f6ed3b505eac05"></a>SCE_APPMGR_SYSTEMEVENT_ON_RESUME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bda5b6ba301bf13d33a0a6a26c164fa79ac"></a>SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bdaabb9cd4ae81d46186dbdda5c782666e7"></a>SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bdad2bae3c3d576591d1997c1f85d98be5a"></a>SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1452,7 +1567,7 @@ Reserved data. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceAppMgrLaunchAppOptParam *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *&#160;</td>
           <td class="paramname"><em>optParam</em>&#160;</td>
         </tr>
         <tr>
@@ -1497,7 +1612,7 @@ Reserved data. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceAppMgrLaunchAppOptParam *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *&#160;</td>
           <td class="paramname"><em>optParam</em>&#160;</td>
         </tr>
         <tr>
@@ -1581,7 +1696,7 @@ Reserved data. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SceAppMgrExecOptParam *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a> *&#160;</td>
           <td class="paramname"><em>optParam</em>&#160;</td>
         </tr>
         <tr>
@@ -1730,19 +1845,19 @@ Reserved data. </td></tr>
         <tr>
           <td class="memname">int sceAppMgrSetInfobarState </td>
           <td>(</td>
-          <td class="paramtype">SceAppMgrInfoBarVisibility&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a>&#160;</td>
           <td class="paramname"><em>visibility</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceAppMgrInfoBarColor&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga930cb336cd38f294cecd1d99144f6f6d">SceAppMgrInfoBarColor</a>&#160;</td>
           <td class="paramname"><em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceAppMgrInfoBarTransparency&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1ac9f6691786f20e782ae37cf1c9c2e3">SceAppMgrInfoBarTransparency</a>&#160;</td>
           <td class="paramname"><em>transparency</em>&#160;</td>
         </tr>
         <tr>

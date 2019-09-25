@@ -79,7 +79,7 @@ $(document).ready(function(){initNavTree('group__SceDisplayKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/display.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceDisplayForDriver_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2display_8h.html">psp2kern/display.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceDisplayForDriver_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -98,23 +98,20 @@ Functions</h2></td></tr>
 <tr class="memitem:ga04c577afbe7d0cbb35277db6b16bc097"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga04c577afbe7d0cbb35277db6b16bc097">ksceDisplayGetMaximumFrameBufResolution</a> (int *width, int *height)</td></tr>
 <tr class="memdesc:ga04c577afbe7d0cbb35277db6b16bc097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum framebuffer resolution.  <a href="#ga04c577afbe7d0cbb35277db6b16bc097">More...</a><br /></td></tr>
 <tr class="separator:ga04c577afbe7d0cbb35277db6b16bc097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29cfc677a7b1da3d9dd9189dfdeb9734"><td class="memItemLeft" align="right" valign="top"><a id="ga29cfc677a7b1da3d9dd9189dfdeb9734"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga29cfc677a7b1da3d9dd9189dfdeb9734">ksceDisplayGetPrimaryHead</a> (void)</td></tr>
-<tr class="memdesc:ga29cfc677a7b1da3d9dd9189dfdeb9734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primary display index. <br /></td></tr>
+<tr class="memitem:ga29cfc677a7b1da3d9dd9189dfdeb9734"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga29cfc677a7b1da3d9dd9189dfdeb9734">ksceDisplayGetPrimaryHead</a> (void)</td></tr>
+<tr class="memdesc:ga29cfc677a7b1da3d9dd9189dfdeb9734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primary display index.  <a href="#ga29cfc677a7b1da3d9dd9189dfdeb9734">More...</a><br /></td></tr>
 <tr class="separator:ga29cfc677a7b1da3d9dd9189dfdeb9734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf7f957bac8483ae8ae518962d8236bc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf7f957bac8483ae8ae518962d8236bc7">ksceDisplayGetVcountInternal</a> (int display)</td></tr>
 <tr class="memdesc:gaf7f957bac8483ae8ae518962d8236bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertical blank pulses up to now for a display.  <a href="#gaf7f957bac8483ae8ae518962d8236bc7">More...</a><br /></td></tr>
 <tr class="separator:gaf7f957bac8483ae8ae518962d8236bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf93d218ae44013d1d54b1f760de634ae"><td class="memItemLeft" align="right" valign="top"><a id="gaf93d218ae44013d1d54b1f760de634ae"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae">ksceDisplayWaitVblankStart</a> (void)</td></tr>
-<tr class="memdesc:gaf93d218ae44013d1d54b1f760de634ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start. <br /></td></tr>
+<tr class="memitem:gaf93d218ae44013d1d54b1f760de634ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf93d218ae44013d1d54b1f760de634ae">ksceDisplayWaitVblankStart</a> (void)</td></tr>
+<tr class="memdesc:gaf93d218ae44013d1d54b1f760de634ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start.  <a href="#gaf93d218ae44013d1d54b1f760de634ae">More...</a><br /></td></tr>
 <tr class="separator:gaf93d218ae44013d1d54b1f760de634ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga910ea6b38848cc92c5e481fb1473081d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga910ea6b38848cc92c5e481fb1473081d">ksceDisplayWaitVblankStartInternal</a> (int display)</td></tr>
 <tr class="memdesc:ga910ea6b38848cc92c5e481fb1473081d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start for display.  <a href="#ga910ea6b38848cc92c5e481fb1473081d">More...</a><br /></td></tr>
 <tr class="separator:ga910ea6b38848cc92c5e481fb1473081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86fe1c873d8702622be881e2240d70f8"><td class="memItemLeft" align="right" valign="top"><a id="ga86fe1c873d8702622be881e2240d70f8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga86fe1c873d8702622be881e2240d70f8">ksceDisplayWaitVblankStartCB</a> (void)</td></tr>
-<tr class="memdesc:ga86fe1c873d8702622be881e2240d70f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback. <br /></td></tr>
+<tr class="memitem:ga86fe1c873d8702622be881e2240d70f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga86fe1c873d8702622be881e2240d70f8">ksceDisplayWaitVblankStartCB</a> (void)</td></tr>
+<tr class="memdesc:ga86fe1c873d8702622be881e2240d70f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback.  <a href="#ga86fe1c873d8702622be881e2240d70f8">More...</a><br /></td></tr>
 <tr class="separator:ga86fe1c873d8702622be881e2240d70f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa5a7363a6fa7e21cd1d7c57936195c06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaa5a7363a6fa7e21cd1d7c57936195c06">ksceDisplayWaitVblankStartCBInternal</a> (int display)</td></tr>
 <tr class="memdesc:gaa5a7363a6fa7e21cd1d7c57936195c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback for display.  <a href="#gaa5a7363a6fa7e21cd1d7c57936195c06">More...</a><br /></td></tr>
@@ -131,13 +128,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 <tr class="memitem:ga5696f5c5fb3086deece40e2db33589d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga5696f5c5fb3086deece40e2db33589d1">ksceDisplayWaitVblankStartMultiCBInternal</a> (int display, unsigned int vcount)</td></tr>
 <tr class="memdesc:ga5696f5c5fb3086deece40e2db33589d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback after specified number of vertical periods for display.  <a href="#ga5696f5c5fb3086deece40e2db33589d1">More...</a><br /></td></tr>
 <tr class="separator:ga5696f5c5fb3086deece40e2db33589d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="memItemLeft" align="right" valign="top"><a id="ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga7f3f1ca1fe7adbf2c0e74f13d6f95ece">ksceDisplayWaitSetFrameBuf</a> (void)</td></tr>
-<tr class="memdesc:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start since last update of framebuffer. <br /></td></tr>
+<tr class="memitem:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga7f3f1ca1fe7adbf2c0e74f13d6f95ece">ksceDisplayWaitSetFrameBuf</a> (void)</td></tr>
+<tr class="memdesc:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start since last update of framebuffer.  <a href="#ga7f3f1ca1fe7adbf2c0e74f13d6f95ece">More...</a><br /></td></tr>
 <tr class="separator:ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf16290c57d0b00ec55c92d7022c07636"><td class="memItemLeft" align="right" valign="top"><a id="gaf16290c57d0b00ec55c92d7022c07636"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf16290c57d0b00ec55c92d7022c07636">ksceDisplayWaitSetFrameBufCB</a> (void)</td></tr>
-<tr class="memdesc:gaf16290c57d0b00ec55c92d7022c07636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback since last update of framebuffer. <br /></td></tr>
+<tr class="memitem:gaf16290c57d0b00ec55c92d7022c07636"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf16290c57d0b00ec55c92d7022c07636">ksceDisplayWaitSetFrameBufCB</a> (void)</td></tr>
+<tr class="memdesc:gaf16290c57d0b00ec55c92d7022c07636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback since last update of framebuffer.  <a href="#gaf16290c57d0b00ec55c92d7022c07636">More...</a><br /></td></tr>
 <tr class="separator:gaf16290c57d0b00ec55c92d7022c07636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c861c0277cf34a59f0b365dada511fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga9c861c0277cf34a59f0b365dada511fd">ksceDisplayWaitSetFrameBufMulti</a> (unsigned int vcount)</td></tr>
 <tr class="memdesc:ga9c861c0277cf34a59f0b365dada511fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start after specified number of vertical periods since last update of framebuffer.  <a href="#ga9c861c0277cf34a59f0b365dada511fd">More...</a><br /></td></tr>
@@ -213,9 +208,9 @@ pitch pixels </td></tr>
 <td class="fieldname">
 pixelformat</td>
 <td class="fielddoc">
-pixel format (one of ::SceDisplayPixelFormat) </td></tr>
+pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>) </td></tr>
 <tr><td class="fieldtype">
-<a id="ga4818747e9c93ab650824cd4c484506df"></a>SceSize</td>
+<a id="ga4818747e9c93ab650824cd4c484506df"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
@@ -269,7 +264,7 @@ resolution</td>
 <td class="fielddoc">
 Resolution. </td></tr>
 <tr><td class="fieldtype">
-<a id="gae73edbc4a45330dcf1c1e8505380d2a0"></a>SceSize</td>
+<a id="gae73edbc4a45330dcf1c1e8505380d2a0"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
@@ -285,6 +280,61 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gaa1abc2fc8664f894ce78aaf58160b728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1abc2fc8664f894ce78aaf58160b728">&sect;&nbsp;</a></span>SceDisplayErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayUser.html#gaa1abc2fc8664f894ce78aaf58160b728">SceDisplayErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728ab68af62b91ef823420da383066b8bc2d"></a>SCE_DISPLAY_ERROR_OK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a11a0efb6ab214c0f991a3e60dc097cf1"></a>SCE_DISPLAY_ERROR_INVALID_HEAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a400f4d5d343f7cf9e3cdfb576890cd41"></a>SCE_DISPLAY_ERROR_INVALID_VALUE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aa34efa912fda5453b7b204095f593b10"></a>SCE_DISPLAY_ERROR_INVALID_ADDR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a2e99f537459ef376f35de1495db25007"></a>SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728abac39a22cb13101dafb4250bb67b4cd9"></a>SCE_DISPLAY_ERROR_INVALID_PITCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3f447fa5ff4752eb5833fbe5d4576a05"></a>SCE_DISPLAY_ERROR_INVALID_RESOLUTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3c4d4a583fa57a99bf0b8167d6edc8af"></a>SCE_DISPLAY_ERROR_INVALID_UPDATETIMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aab7831ed72313e8699ad44badd177588"></a>SCE_DISPLAY_ERROR_NO_FRAME_BUFFER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a940965b34707d6a5eea1f4712dc3e0b7"></a>SCE_DISPLAY_ERROR_NO_PIXEL_DATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728ad54a3a72d19528b7ea711db60ede071f"></a>SCE_DISPLAY_ERROR_NO_OUTPUT_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728ab68af62b91ef823420da383066b8bc2d"></a>SCE_DISPLAY_ERROR_OK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a11a0efb6ab214c0f991a3e60dc097cf1"></a>SCE_DISPLAY_ERROR_INVALID_HEAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a400f4d5d343f7cf9e3cdfb576890cd41"></a>SCE_DISPLAY_ERROR_INVALID_VALUE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aa34efa912fda5453b7b204095f593b10"></a>SCE_DISPLAY_ERROR_INVALID_ADDR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a2e99f537459ef376f35de1495db25007"></a>SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728abac39a22cb13101dafb4250bb67b4cd9"></a>SCE_DISPLAY_ERROR_INVALID_PITCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3f447fa5ff4752eb5833fbe5d4576a05"></a>SCE_DISPLAY_ERROR_INVALID_RESOLUTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3c4d4a583fa57a99bf0b8167d6edc8af"></a>SCE_DISPLAY_ERROR_INVALID_UPDATETIMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aab7831ed72313e8699ad44badd177588"></a>SCE_DISPLAY_ERROR_NO_FRAME_BUFFER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a940965b34707d6a5eea1f4712dc3e0b7"></a>SCE_DISPLAY_ERROR_NO_PIXEL_DATA&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gac6176811ed0355e537d44c825ab1931c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6176811ed0355e537d44c825ab1931c">&sect;&nbsp;</a></span>SceDisplayPixelFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayUser.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c"></a>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c"></a>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga1cccbd19bead1c902688ec8409ff0c55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1cccbd19bead1c902688ec8409ff0c55">&sect;&nbsp;</a></span>SceDisplaySetBufSync</h2>
 
@@ -383,6 +433,26 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga29cfc677a7b1da3d9dd9189dfdeb9734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29cfc677a7b1da3d9dd9189dfdeb9734">&sect;&nbsp;</a></span>ksceDisplayGetPrimaryHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetPrimaryHead </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Primary display index. </p>
 
 </div>
 </div>
@@ -827,6 +897,46 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
 
 </div>
 </div>
+<a id="ga7f3f1ca1fe7adbf2c0e74f13d6f95ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f3f1ca1fe7adbf2c0e74f13d6f95ece">&sect;&nbsp;</a></span>ksceDisplayWaitSetFrameBuf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitSetFrameBuf </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start since last update of framebuffer. </p>
+
+</div>
+</div>
+<a id="gaf16290c57d0b00ec55c92d7022c07636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf16290c57d0b00ec55c92d7022c07636">&sect;&nbsp;</a></span>ksceDisplayWaitSetFrameBufCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitSetFrameBufCB </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start with callback since last update of framebuffer. </p>
+
+</div>
+</div>
 <a id="ga9c861c0277cf34a59f0b365dada511fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9c861c0277cf34a59f0b365dada511fd">&sect;&nbsp;</a></span>ksceDisplayWaitSetFrameBufMulti()</h2>
 
@@ -876,6 +986,46 @@ Amount of VBlanks this framebuffer has been displayed. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gaf93d218ae44013d1d54b1f760de634ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf93d218ae44013d1d54b1f760de634ae">&sect;&nbsp;</a></span>ksceDisplayWaitVblankStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitVblankStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start. </p>
+
+</div>
+</div>
+<a id="ga86fe1c873d8702622be881e2240d70f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86fe1c873d8702622be881e2240d70f8">&sect;&nbsp;</a></span>ksceDisplayWaitVblankStartCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayWaitVblankStartCB </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start with callback. </p>
 
 </div>
 </div>

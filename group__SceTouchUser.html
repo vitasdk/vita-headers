@@ -80,37 +80,36 @@ $(document).ready(function(){initNavTree('group__SceTouchUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/touch.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceTouch_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="touch_8h.html">psp2/touch.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceTouch_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadb2690976483db65dc1dd6196f8941bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#gadb2690976483db65dc1dd6196f8941bd">sceTouchGetPanelInfo</a> (SceUInt32 port, <a class="el" href="group__SceTouchUser.html#structSceTouchPanelInfo">SceTouchPanelInfo</a> *pPanelInfo)</td></tr>
+<tr class="memitem:gadb2690976483db65dc1dd6196f8941bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#gadb2690976483db65dc1dd6196f8941bd">sceTouchGetPanelInfo</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="el" href="group__SceTouchUser.html#structSceTouchPanelInfo">SceTouchPanelInfo</a> *pPanelInfo)</td></tr>
 <tr class="memdesc:gadb2690976483db65dc1dd6196f8941bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Touch Panel information.  <a href="#gadb2690976483db65dc1dd6196f8941bd">More...</a><br /></td></tr>
 <tr class="separator:gadb2690976483db65dc1dd6196f8941bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1be514c50dff91429a192c78f227f4b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga1be514c50dff91429a192c78f227f4b0">sceTouchRead</a> (SceUInt32 port, <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a> *pData, SceUInt32 nBufs)</td></tr>
+<tr class="memitem:ga1be514c50dff91429a192c78f227f4b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga1be514c50dff91429a192c78f227f4b0">sceTouchRead</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a> *pData, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> nBufs)</td></tr>
 <tr class="memdesc:ga1be514c50dff91429a192c78f227f4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get touch data (Blocking)  <a href="#ga1be514c50dff91429a192c78f227f4b0">More...</a><br /></td></tr>
 <tr class="separator:ga1be514c50dff91429a192c78f227f4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3abee1c2d7d15f632f80b3c3f3a5a680"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga3abee1c2d7d15f632f80b3c3f3a5a680">sceTouchPeek</a> (SceUInt32 port, <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a> *pData, SceUInt32 nBufs)</td></tr>
+<tr class="memitem:ga3abee1c2d7d15f632f80b3c3f3a5a680"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga3abee1c2d7d15f632f80b3c3f3a5a680">sceTouchPeek</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a> *pData, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> nBufs)</td></tr>
 <tr class="memdesc:ga3abee1c2d7d15f632f80b3c3f3a5a680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get touch data (Polling)  <a href="#ga3abee1c2d7d15f632f80b3c3f3a5a680">More...</a><br /></td></tr>
 <tr class="separator:ga3abee1c2d7d15f632f80b3c3f3a5a680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b9cf4356d96e9b3f7468306f4a0d178"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga7b9cf4356d96e9b3f7468306f4a0d178">sceTouchSetSamplingState</a> (SceUInt32 port, <a class="el" href="group__SceTouchUser.html#gad25526d77de5c574b210193093a693db">SceTouchSamplingState</a> state)</td></tr>
+<tr class="memitem:ga7b9cf4356d96e9b3f7468306f4a0d178"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga7b9cf4356d96e9b3f7468306f4a0d178">sceTouchSetSamplingState</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="el" href="group__SceTouchUser.html#gad25526d77de5c574b210193093a693db">SceTouchSamplingState</a> state)</td></tr>
 <tr class="memdesc:ga7b9cf4356d96e9b3f7468306f4a0d178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sampling state of touch panel.  <a href="#ga7b9cf4356d96e9b3f7468306f4a0d178">More...</a><br /></td></tr>
 <tr class="separator:ga7b9cf4356d96e9b3f7468306f4a0d178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63b1bd23da13370f532ef610d5d33148"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga63b1bd23da13370f532ef610d5d33148">sceTouchGetSamplingState</a> (SceUInt32 port, <a class="el" href="group__SceTouchUser.html#gad25526d77de5c574b210193093a693db">SceTouchSamplingState</a> *pState)</td></tr>
+<tr class="memitem:ga63b1bd23da13370f532ef610d5d33148"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga63b1bd23da13370f532ef610d5d33148">sceTouchGetSamplingState</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="el" href="group__SceTouchUser.html#gad25526d77de5c574b210193093a693db">SceTouchSamplingState</a> *pState)</td></tr>
 <tr class="memdesc:ga63b1bd23da13370f532ef610d5d33148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling state of touch panel.  <a href="#ga63b1bd23da13370f532ef610d5d33148">More...</a><br /></td></tr>
 <tr class="separator:ga63b1bd23da13370f532ef610d5d33148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9955c144eae8c285fd26f3e1e61ae969"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga9955c144eae8c285fd26f3e1e61ae969">sceTouchEnableTouchForce</a> (SceUInt32 port)</td></tr>
+<tr class="memitem:ga9955c144eae8c285fd26f3e1e61ae969"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga9955c144eae8c285fd26f3e1e61ae969">sceTouchEnableTouchForce</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port)</td></tr>
 <tr class="memdesc:ga9955c144eae8c285fd26f3e1e61ae969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable touch force output.  <a href="#ga9955c144eae8c285fd26f3e1e61ae969">More...</a><br /></td></tr>
 <tr class="separator:ga9955c144eae8c285fd26f3e1e61ae969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0a9020a917d9090b1abb8ae962544be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be">sceTouchDisableTouchForce</a> (SceUInt32 port)</td></tr>
+<tr class="memitem:gac0a9020a917d9090b1abb8ae962544be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be">sceTouchDisableTouchForce</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port)</td></tr>
 <tr class="memdesc:gac0a9020a917d9090b1abb8ae962544be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable touch force output.  <a href="#gac0a9020a917d9090b1abb8ae962544be">More...</a><br /></td></tr>
 <tr class="separator:gac0a9020a917d9090b1abb8ae962544be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga64b493b5faa6c7a6e4cf6a4732df33f8"><td class="memItemLeft" align="right" valign="top"><a id="ga64b493b5faa6c7a6e4cf6a4732df33f8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga64b493b5faa6c7a6e4cf6a4732df33f8">SCE_TOUCH_MAX_REPORT</a>&#160;&#160;&#160;8</td></tr>
-<tr class="memdesc:ga64b493b5faa6c7a6e4cf6a4732df33f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIXME 6 on front | 4 on back. <br /></td></tr>
+<tr class="memitem:ga64b493b5faa6c7a6e4cf6a4732df33f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#ga64b493b5faa6c7a6e4cf6a4732df33f8">SCE_TOUCH_MAX_REPORT</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:ga64b493b5faa6c7a6e4cf6a4732df33f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIXME 6 on front | 4 on back.  <a href="#ga64b493b5faa6c7a6e4cf6a4732df33f8">More...</a><br /></td></tr>
 <tr class="separator:ga64b493b5faa6c7a6e4cf6a4732df33f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -128,67 +127,67 @@ Macros</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga29ce7c241d0e5626d93b69af7862be0c"></a>SceInt16</td>
+<a id="ga29ce7c241d0e5626d93b69af7862be0c"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 maxAaX</td>
 <td class="fielddoc">
 Max active area X position. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga19086a47239e3be5e16b58c32831468f"></a>SceInt16</td>
+<a id="ga19086a47239e3be5e16b58c32831468f"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 maxAaY</td>
 <td class="fielddoc">
 Max active area Y position. </td></tr>
 <tr><td class="fieldtype">
-<a id="gad8221bac431a84a29774fecc0dd09c06"></a>SceInt16</td>
+<a id="gad8221bac431a84a29774fecc0dd09c06"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 maxDispX</td>
 <td class="fielddoc">
 Max display X origin (bottom right) </td></tr>
 <tr><td class="fieldtype">
-<a id="ga364a8adc61522a6aa66f8ef6447e8383"></a>SceInt16</td>
+<a id="ga364a8adc61522a6aa66f8ef6447e8383"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 maxDispY</td>
 <td class="fielddoc">
 Max display Y origin (bottom right) </td></tr>
 <tr><td class="fieldtype">
-<a id="ga9f5addb2ba71fa8ab9ec8bef4964d899"></a>SceUInt8</td>
+<a id="ga9f5addb2ba71fa8ab9ec8bef4964d899"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 maxForce</td>
 <td class="fielddoc">
 Max touch force value. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa94501349a0a6f1cad76648bbed320ac"></a>SceInt16</td>
+<a id="gaa94501349a0a6f1cad76648bbed320ac"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 minAaX</td>
 <td class="fielddoc">
 Min active area X position. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga35a3b2fd7aa0658dcf83ccfa3c6ed59e"></a>SceInt16</td>
+<a id="ga35a3b2fd7aa0658dcf83ccfa3c6ed59e"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 minAaY</td>
 <td class="fielddoc">
 Min active area Y position. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf841201a997758ffdf7d4bd811be39f4"></a>SceInt16</td>
+<a id="gaf841201a997758ffdf7d4bd811be39f4"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 minDispX</td>
 <td class="fielddoc">
 Min display X origin (top left) </td></tr>
 <tr><td class="fieldtype">
-<a id="ga1647f68cc2f4b013b4776179b7e32f91"></a>SceInt16</td>
+<a id="ga1647f68cc2f4b013b4776179b7e32f91"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 minDispY</td>
 <td class="fielddoc">
 Min display Y origin (top left) </td></tr>
 <tr><td class="fieldtype">
-<a id="ga99fd586d02940a72218b199cc76c8cba"></a>SceUInt8</td>
+<a id="ga99fd586d02940a72218b199cc76c8cba"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 minForce</td>
 <td class="fielddoc">
 Min touch force value. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga0fd75fa508f96498840ac64c6d1393d6"></a>SceUInt8</td>
+<a id="ga0fd75fa508f96498840ac64c6d1393d6"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 reserved[30]</td>
 <td class="fielddoc">
@@ -211,37 +210,37 @@ Reserved. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae072da63b0a4253b6d05777911dd16a5"></a>SceUInt8</td>
+<a id="gae072da63b0a4253b6d05777911dd16a5"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 force</td>
 <td class="fielddoc">
 Touch force. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga7edfed3212f24f385c4dc15063cdc7dd"></a>SceUInt8</td>
+<a id="ga7edfed3212f24f385c4dc15063cdc7dd"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 id</td>
 <td class="fielddoc">
 Touch ID. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa5ed4e02f010dba620b6789034aaffef"></a>SceUInt16</td>
+<a id="gaa5ed4e02f010dba620b6789034aaffef"></a><a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
 <td class="fieldname">
 info</td>
 <td class="fielddoc">
 Information of this touch. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga63321bf7e84381aa50ca6f114825bb1d"></a>SceUInt8</td>
+<a id="ga63321bf7e84381aa50ca6f114825bb1d"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 reserved[8]</td>
 <td class="fielddoc">
 Reserved. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf1fbe3cf397ddcfc29567300c59f8da7"></a>SceInt16</td>
+<a id="gaf1fbe3cf397ddcfc29567300c59f8da7"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 x</td>
 <td class="fielddoc">
 X position. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga72e9b8c423a88e7916611fdc5adbf8e8"></a>SceInt16</td>
+<a id="ga72e9b8c423a88e7916611fdc5adbf8e8"></a><a class="el" href="group__SceTypesUser.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
 <td class="fieldname">
 y</td>
 <td class="fielddoc">
@@ -270,19 +269,19 @@ report[<a class="el" href="group__SceTouchUser.html#ga64b493b5faa6c7a6e4cf6a4732
 <td class="fielddoc">
 Touch reports. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga93c8a08f69a6ec5fa038c12c7d0576f8"></a>SceUInt32</td>
+<a id="ga93c8a08f69a6ec5fa038c12c7d0576f8"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 reportNum</td>
 <td class="fielddoc">
 Number of touch reports. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa5ffae449c6717bc73801129764e249e"></a>SceUInt32</td>
+<a id="gaa5ffae449c6717bc73801129764e249e"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 status</td>
 <td class="fielddoc">
 Unused. </td></tr>
 <tr><td class="fieldtype">
-<a id="gab17674d92887d9761474010e425ee347"></a>SceUInt64</td>
+<a id="gab17674d92887d9761474010e425ee347"></a><a class="el" href="group__SceTypesUser.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
 <td class="fieldname">
 timeStamp</td>
 <td class="fielddoc">
@@ -291,7 +290,45 @@ Data timestamp. </td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga64b493b5faa6c7a6e4cf6a4732df33f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64b493b5faa6c7a6e4cf6a4732df33f8">&sect;&nbsp;</a></span>SCE_TOUCH_MAX_REPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_TOUCH_MAX_REPORT&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FIXME 6 on front | 4 on back. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga3772c556df8f755f345d8f2c09807ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3772c556df8f755f345d8f2c09807ae0">&sect;&nbsp;</a></span>SceTouchErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceTouchUser.html#ga3772c556df8f755f345d8f2c09807ae0">SceTouchErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Touch error codes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3772c556df8f755f345d8f2c09807ae0a794c9c4aae4007e3405876854b994608"></a>SCE_TOUCH_ERROR_INVALID_ARG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3772c556df8f755f345d8f2c09807ae0aa31045e06c4d985966993d5b81fe55f6"></a>SCE_TOUCH_ERROR_PRIV_REQUIRED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3772c556df8f755f345d8f2c09807ae0acb656f5b2523f3186eb3dbaa9e6af108"></a>SCE_TOUCH_ERROR_FATAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="gacb91e7a44b807be507daf8073f4712a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacb91e7a44b807be507daf8073f4712a6">&sect;&nbsp;</a></span>SceTouchPortType</h2>
 
@@ -333,6 +370,9 @@ Data timestamp. </td></tr>
 
 <p>Info field of <a class="el" href="group__SceTouchUser.html#structSceTouchReport">SceTouchReport</a> structure. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceTouchUser.html#structSceTouchReport">SceTouchReport</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa58c8770e9c43753822ff76837ea419ba16bcec75ea413db6acb60b970bb3f238"></a>SCE_TOUCH_REPORT_INFO_HIDE_UPPER_LAYER&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -350,6 +390,10 @@ Data timestamp. </td></tr>
 
 <p>Sampling port setting of the touch panel. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceTouchUser.html#ga7b9cf4356d96e9b3f7468306f4a0d178" title="Set sampling state of touch panel. ">sceTouchSetSamplingState</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad25526d77de5c574b210193093a693dba9414d0ab4997aa18f766229eca9c9865"></a>SCE_TOUCH_SAMPLING_STATE_STOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad25526d77de5c574b210193093a693dbafaf7919908d85138a5baab06f19760ca"></a>SCE_TOUCH_SAMPLING_STATE_START&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -363,7 +407,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchDisableTouchForce </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>
@@ -389,7 +433,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchEnableTouchForce </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>
@@ -415,7 +459,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchGetPanelInfo </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -452,7 +496,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchGetSamplingState </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -489,7 +533,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchPeek </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -501,7 +545,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>nBufs</em>&#160;</td>
         </tr>
         <tr>
@@ -534,7 +578,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchRead </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -546,7 +590,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>nBufs</em>&#160;</td>
         </tr>
         <tr>
@@ -579,7 +623,7 @@ Data timestamp. </td></tr>
         <tr>
           <td class="memname">int sceTouchSetSamplingState </td>
           <td>(</td>
-          <td class="paramtype">SceUInt32&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>

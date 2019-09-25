@@ -21,6 +21,19 @@ var group__ScePowerUser =
       [ "SCE_POWER_CB_LOWBATTERY", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa13b344e28f36642a9899a85601726967", null ],
       [ "SCE_POWER_CB_BATTERY_EXIST", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa55d78a7982f8e38cf74e58b915fa9195", null ]
     ] ],
+    [ "ScePowerConfigurationMode", "group__ScePowerUser.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce", [
+      [ "SCE_POWER_CONFIGURATION_MODE_A", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed", null ],
+      [ "SCE_POWER_CONFIGURATION_MODE_B", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c", null ],
+      [ "SCE_POWER_CONFIGURATION_MODE_C", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489", null ]
+    ] ],
+    [ "ScePowerErrorCode", "group__ScePowerUser.html#ga1c8753ba9797fab72c09a1f22e33dc80", [
+      [ "SCE_POWER_ERROR_INVALID_VALUE", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e", null ],
+      [ "SCE_POWER_ERROR_ALREADY_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c", null ],
+      [ "SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770", null ],
+      [ "SCE_POWER_ERROR_CANT_SUSPEND", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80aeb38212c797975a5a5fe8dba439c65a1", null ],
+      [ "SCE_POWER_ERROR_NO_BATTERY", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80aa5714542a995707aac4a9902a78d2d7a", null ],
+      [ "SCE_POWER_ERROR_DETECTING", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80ab0e1e5d2a0f7335017712d3029a97603", null ]
+    ] ],
     [ "SCE_POWER_CB_AC_POWER", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aace52bb76f3293e50c167d28c2214f43c", null ],
     [ "SCE_POWER_CB_BATTERY_EXIST", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa55d78a7982f8e38cf74e58b915fa9195", null ],
     [ "SCE_POWER_CB_LOWBATTERY", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa13b344e28f36642a9899a85601726967", null ],
@@ -30,6 +43,15 @@ var group__ScePowerUser =
     [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
     [ "SCE_POWER_CB_UNK_1", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa977e32cc201d8028a0d7368a31e887fb", null ],
     [ "SCE_POWER_CB_UNK_2", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaf19cb24d56d7c71d996ac775be288b40", null ],
+    [ "SCE_POWER_CONFIGURATION_MODE_A", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed", null ],
+    [ "SCE_POWER_CONFIGURATION_MODE_B", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c", null ],
+    [ "SCE_POWER_CONFIGURATION_MODE_C", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489", null ],
+    [ "SCE_POWER_ERROR_ALREADY_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c", null ],
+    [ "SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770", null ],
+    [ "SCE_POWER_ERROR_CANT_SUSPEND", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80aeb38212c797975a5a5fe8dba439c65a1", null ],
+    [ "SCE_POWER_ERROR_DETECTING", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80ab0e1e5d2a0f7335017712d3029a97603", null ],
+    [ "SCE_POWER_ERROR_INVALID_VALUE", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e", null ],
+    [ "SCE_POWER_ERROR_NO_BATTERY", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80aa5714542a995707aac4a9902a78d2d7a", null ],
     [ "scePowerGetArmClockFrequency", "group__ScePowerUser.html#ga43c4f0084152cff03dc037525a5dd311", null ],
     [ "scePowerGetBatteryCycleCount", "group__ScePowerUser.html#gac46c2fbaf0a6216917a886277aa98649", null ],
     [ "scePowerGetBatteryFullCapacity", "group__ScePowerUser.html#gab183cfc3f4f67d1e6137983c18155337", null ],

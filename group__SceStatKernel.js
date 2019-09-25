@@ -1,5 +1,11 @@
 var group__SceStatKernel =
 [
+    [ "SCE_S_ISDIR", "group__SceStatKernel.html#gadd2d8a2c5c3095032e1999771132e115", null ],
+    [ "SCE_S_ISLNK", "group__SceStatKernel.html#ga2561715990b2e05ef0b56237b18e5d21", null ],
+    [ "SCE_S_ISREG", "group__SceStatKernel.html#ga67719e79d77b8d45c94e97d02548dee6", null ],
+    [ "SCE_SO_ISDIR", "group__SceStatKernel.html#gaad6e5e897cea0e2efda29316e139f7c9", null ],
+    [ "SCE_SO_ISLNK", "group__SceStatKernel.html#ga79903d28d909b3d5b79491d9b0ac39ed", null ],
+    [ "SCE_SO_ISREG", "group__SceStatKernel.html#ga0ed64f564b5a8bff3a5a05e2afc7204c", null ],
     [ "SceIoAccessMode", "group__SceStatKernel.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16", [
       [ "SCE_S_IXUSR", "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a51bb8db57c5ddb8d0403e214e36d9672", null ],
       [ "SCE_S_IWUSR", "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a2961bfcb4526e512eef589bbc43d2879", null ],

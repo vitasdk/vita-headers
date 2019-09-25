@@ -80,42 +80,32 @@ $(document).ready(function(){initNavTree('group__SceFiberUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/fiber.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceFiber_stub </div></div><!-- fragment --><p> Load the required module: </p><div class="fragment"><div class="line"><a class="code" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a769cb9b4f9fb8f2341dffef3ecb98e93">SCE_SYSMODULE_FIBER</a>); </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fiber_8h.html">psp2/fiber.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceFiber_stub </div></div><!-- fragment --><p> Load the required module: </p><div class="fragment"><div class="line"><a class="code" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a769cb9b4f9fb8f2341dffef3ecb98e93">SCE_SYSMODULE_FIBER</a>); </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae8823715362ece112a546152c3e5d6c8"><td class="memItemLeft" align="right" valign="top"><a id="gae8823715362ece112a546152c3e5d6c8"></a>
-struct <a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a>&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((aligned(8)))</td></tr>
+<tr class="memitem:gae8823715362ece112a546152c3e5d6c8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#gae8823715362ece112a546152c3e5d6c8">__attribute__</a> ((aligned(8)))</td></tr>
 <tr class="separator:gae8823715362ece112a546152c3e5d6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae12c67388b27798156f3f93ad4123a07"><td class="memItemLeft" align="right" valign="top"><a id="gae12c67388b27798156f3f93ad4123a07"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>_sceFiberInitializeImpl</b> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, char *name, SceFiberEntry *entry, SceUInt32 argOnInitialize, void *addrContext, SceSize sizeContext, <a class="el" href="group__SceFiberUser.html#structSceFiberOptParam">SceFiberOptParam</a> *params)</td></tr>
+<tr class="memitem:gae12c67388b27798156f3f93ad4123a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#gae12c67388b27798156f3f93ad4123a07">_sceFiberInitializeImpl</a> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, char *<a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a>, <a class="el" href="group__SceFiberUser.html#ga9f158ae2369b09da1437c69784ed4061">SceFiberEntry</a> *<a class="el" href="group__SceFiberUser.html#ga1df29c2034e57d084d6078988f19c97a">entry</a>, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceFiberUser.html#gac362837a94da9689c635afd85a6e05e2">argOnInitialize</a>, void *<a class="el" href="group__SceFiberUser.html#gae57533b88a903b504155bdb35428248b">addrContext</a>, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceFiberUser.html#ga1983c8d387f6d5e06537646784bf48e6">sizeContext</a>, <a class="el" href="group__SceFiberUser.html#structSceFiberOptParam">SceFiberOptParam</a> *params)</td></tr>
 <tr class="separator:gae12c67388b27798156f3f93ad4123a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16ed3639853f266fe40ecf892680d1a6"><td class="memItemLeft" align="right" valign="top"><a id="ga16ed3639853f266fe40ecf892680d1a6"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberOptParamInitialize</b> (<a class="el" href="group__SceFiberUser.html#structSceFiberOptParam">SceFiberOptParam</a> *optParam)</td></tr>
+<tr class="memitem:ga16ed3639853f266fe40ecf892680d1a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#ga16ed3639853f266fe40ecf892680d1a6">sceFiberOptParamInitialize</a> (<a class="el" href="group__SceFiberUser.html#structSceFiberOptParam">SceFiberOptParam</a> *optParam)</td></tr>
 <tr class="separator:ga16ed3639853f266fe40ecf892680d1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad43432f5851c9d9a740cc8b26fc729af"><td class="memItemLeft" align="right" valign="top"><a id="gad43432f5851c9d9a740cc8b26fc729af"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberFinalize</b> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber)</td></tr>
+<tr class="memitem:gad43432f5851c9d9a740cc8b26fc729af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#gad43432f5851c9d9a740cc8b26fc729af">sceFiberFinalize</a> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber)</td></tr>
 <tr class="separator:gad43432f5851c9d9a740cc8b26fc729af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46cad8144b324d8b5ae9ca839b871fef"><td class="memItemLeft" align="right" valign="top"><a id="ga46cad8144b324d8b5ae9ca839b871fef"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberRun</b> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, SceUInt32 argOnRunTo, SceUInt32 *argOnRun)</td></tr>
+<tr class="memitem:ga46cad8144b324d8b5ae9ca839b871fef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#ga46cad8144b324d8b5ae9ca839b871fef">sceFiberRun</a> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> argOnRunTo, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *argOnRun)</td></tr>
 <tr class="separator:ga46cad8144b324d8b5ae9ca839b871fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e77ae9659ea0247cc0203c92c7c629c"><td class="memItemLeft" align="right" valign="top"><a id="ga1e77ae9659ea0247cc0203c92c7c629c"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberSwitch</b> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, SceUInt32 argOnRunTo, SceUInt32 *argOnRun)</td></tr>
+<tr class="memitem:ga1e77ae9659ea0247cc0203c92c7c629c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#ga1e77ae9659ea0247cc0203c92c7c629c">sceFiberSwitch</a> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> argOnRunTo, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *argOnRun)</td></tr>
 <tr class="separator:ga1e77ae9659ea0247cc0203c92c7c629c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d2c220078141149abeed053e2c78e6f"><td class="memItemLeft" align="right" valign="top"><a id="ga3d2c220078141149abeed053e2c78e6f"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberGetSelf</b> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber)</td></tr>
+<tr class="memitem:ga3d2c220078141149abeed053e2c78e6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#ga3d2c220078141149abeed053e2c78e6f">sceFiberGetSelf</a> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber)</td></tr>
 <tr class="separator:ga3d2c220078141149abeed053e2c78e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf42f877b01d334673d71de5be40a82b2"><td class="memItemLeft" align="right" valign="top"><a id="gaf42f877b01d334673d71de5be40a82b2"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberReturnToThread</b> (SceUInt32 argOnReturn, SceUInt32 *argOnRun)</td></tr>
+<tr class="memitem:gaf42f877b01d334673d71de5be40a82b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#gaf42f877b01d334673d71de5be40a82b2">sceFiberReturnToThread</a> (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> argOnReturn, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *argOnRun)</td></tr>
 <tr class="separator:gaf42f877b01d334673d71de5be40a82b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad01caf7d9d565e2210183e04b5c5a527"><td class="memItemLeft" align="right" valign="top"><a id="gad01caf7d9d565e2210183e04b5c5a527"></a>
-SceInt32&#160;</td><td class="memItemRight" valign="bottom"><b>sceFiberGetInfo</b> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, <a class="el" href="group__SceFiberUser.html#structSceFiberInfo">SceFiberInfo</a> *fiberInfo)</td></tr>
+<tr class="memitem:gad01caf7d9d565e2210183e04b5c5a527"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#gad01caf7d9d565e2210183e04b5c5a527">sceFiberGetInfo</a> (<a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *fiber, <a class="el" href="group__SceFiberUser.html#structSceFiberInfo">SceFiberInfo</a> *fiberInfo)</td></tr>
 <tr class="separator:gad01caf7d9d565e2210183e04b5c5a527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga9f158ae2369b09da1437c69784ed4061"><td class="memItemLeft" align="right" valign="top"><a id="ga9f158ae2369b09da1437c69784ed4061"></a>
-typedef void(&#160;</td><td class="memItemRight" valign="bottom"><b>SceFiberEntry</b>) (SceUInt32 argOnInitialize, SceUInt32 argOnRun)</td></tr>
+<tr class="memitem:ga9f158ae2369b09da1437c69784ed4061"><td class="memItemLeft" align="right" valign="top">typedef void(&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFiberUser.html#ga9f158ae2369b09da1437c69784ed4061">SceFiberEntry</a>) (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceFiberUser.html#gac362837a94da9689c635afd85a6e05e2">argOnInitialize</a>, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> argOnRun)</td></tr>
 <tr class="separator:ga9f158ae2369b09da1437c69784ed4061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -185,13 +175,13 @@ addrContext</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga41f65f576aac31df2f9d5ec3ac1485c9"></a>SceUInt32</td>
+<a id="ga41f65f576aac31df2f9d5ec3ac1485c9"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 argOnInitialize</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga76bdf2bc57e385d23080caf2e7c7549c"></a>SceFiberEntry *</td>
+<a id="ga76bdf2bc57e385d23080caf2e7c7549c"></a><a class="el" href="group__SceFiberUser.html#ga9f158ae2369b09da1437c69784ed4061">SceFiberEntry</a> *</td>
 <td class="fieldname">
 entry</td>
 <td class="fielddoc">
@@ -209,12 +199,308 @@ padding[80]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga50f427376f374623529935ed248eb9e2"></a>SceSize</td>
+<a id="ga50f427376f374623529935ed248eb9e2"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 sizeContext</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga9f158ae2369b09da1437c69784ed4061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f158ae2369b09da1437c69784ed4061">&sect;&nbsp;</a></span>SceFiberEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( SceFiberEntry) (<a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceFiberUser.html#gac362837a94da9689c635afd85a6e05e2">argOnInitialize</a>, <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> argOnRun)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga84a7d9b255d7ce79d87a043eb5ae33d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84a7d9b255d7ce79d87a043eb5ae33d9">&sect;&nbsp;</a></span>SceFiberErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceFiberUser.html#ga84a7d9b255d7ce79d87a043eb5ae33d9">SceFiberErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9a878d8e8846014d693b6eec6081c65064"></a>SCE_FIBER_ERROR_NULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9a7a7d738f3e2c2c12b2c8fb4c82b170a2"></a>SCE_FIBER_ERROR_ALIGNMENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9a76504f0ce0e2b50b8b733ad7e9d9aa1f"></a>SCE_FIBER_ERROR_RANGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9a7809fc668d8800abc1b4c4acc00c6824"></a>SCE_FIBER_ERROR_INVALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9a7655febb15d5710c27220fce0657c382"></a>SCE_FIBER_ERROR_PERMISSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9ad974de75f4d8af156800a9eeff7f2c57"></a>SCE_FIBER_ERROR_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9aaeb14b74dc0e6621a903692e22976f55"></a>SCE_FIBER_ERROR_BUSY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9ad24d8386ea789f14b39d1aecdde38935"></a>SCE_FIBER_ERROR_AGAIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga84a7d9b255d7ce79d87a043eb5ae33d9ac0646ab67f3561ba7f44ded68e32fb1b"></a>SCE_FIBER_ERROR_FATAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gae8823715362ece112a546152c3e5d6c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8823715362ece112a546152c3e5d6c8">&sect;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceFiberUser.html#structSceFiberInfo">SceFiberInfo</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(8))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae12c67388b27798156f3f93ad4123a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae12c67388b27798156f3f93ad4123a07">&sect;&nbsp;</a></span>_sceFiberInitializeImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> _sceFiberInitializeImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *&#160;</td>
+          <td class="paramname"><em>fiber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#ga9f158ae2369b09da1437c69784ed4061">SceFiberEntry</a> *&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>argOnInitialize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addrContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>sizeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiberOptParam">SceFiberOptParam</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad43432f5851c9d9a740cc8b26fc729af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43432f5851c9d9a740cc8b26fc729af">&sect;&nbsp;</a></span>sceFiberFinalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberFinalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *&#160;</td>
+          <td class="paramname"><em>fiber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad01caf7d9d565e2210183e04b5c5a527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad01caf7d9d565e2210183e04b5c5a527">&sect;&nbsp;</a></span>sceFiberGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberGetInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *&#160;</td>
+          <td class="paramname"><em>fiber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiberInfo">SceFiberInfo</a> *&#160;</td>
+          <td class="paramname"><em>fiberInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3d2c220078141149abeed053e2c78e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d2c220078141149abeed053e2c78e6f">&sect;&nbsp;</a></span>sceFiberGetSelf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberGetSelf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *&#160;</td>
+          <td class="paramname"><em>fiber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga16ed3639853f266fe40ecf892680d1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16ed3639853f266fe40ecf892680d1a6">&sect;&nbsp;</a></span>sceFiberOptParamInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberOptParamInitialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiberOptParam">SceFiberOptParam</a> *&#160;</td>
+          <td class="paramname"><em>optParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf42f877b01d334673d71de5be40a82b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf42f877b01d334673d71de5be40a82b2">&sect;&nbsp;</a></span>sceFiberReturnToThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberReturnToThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>argOnReturn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>argOnRun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga46cad8144b324d8b5ae9ca839b871fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46cad8144b324d8b5ae9ca839b871fef">&sect;&nbsp;</a></span>sceFiberRun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberRun </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *&#160;</td>
+          <td class="paramname"><em>fiber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>argOnRunTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>argOnRun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1e77ae9659ea0247cc0203c92c7c629c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e77ae9659ea0247cc0203c92c7c629c">&sect;&nbsp;</a></span>sceFiberSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> sceFiberSwitch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFiberUser.html#structSceFiber">SceFiber</a> *&#160;</td>
+          <td class="paramname"><em>fiber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>argOnRunTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>argOnRun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

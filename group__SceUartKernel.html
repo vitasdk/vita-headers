@@ -79,23 +79,102 @@ $(document).ready(function(){initNavTree('group__SceUartKernel.html','');});
 <p>Exports for Kernel. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2kern/uart.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUartForKernel_stub </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uart_8h.html">psp2kern/uart.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">SceUartForKernel_stub </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga901ebf459a1a67af6756b78d1786568d"><td class="memItemLeft" align="right" valign="top"><a id="ga901ebf459a1a67af6756b78d1786568d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUartInit</b> (int port)</td></tr>
+<tr class="memitem:ga901ebf459a1a67af6756b78d1786568d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUartKernel.html#ga901ebf459a1a67af6756b78d1786568d">ksceUartInit</a> (int port)</td></tr>
 <tr class="separator:ga901ebf459a1a67af6756b78d1786568d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga44835dd0d6f0768448c97c0231bf6581"><td class="memItemLeft" align="right" valign="top"><a id="ga44835dd0d6f0768448c97c0231bf6581"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUartReadAvailable</b> (int port)</td></tr>
+<tr class="memitem:ga44835dd0d6f0768448c97c0231bf6581"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUartKernel.html#ga44835dd0d6f0768448c97c0231bf6581">ksceUartReadAvailable</a> (int port)</td></tr>
 <tr class="separator:ga44835dd0d6f0768448c97c0231bf6581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22c1efd7f8a5aa1d159c1495f10887d1"><td class="memItemLeft" align="right" valign="top"><a id="ga22c1efd7f8a5aa1d159c1495f10887d1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUartRead</b> (int port)</td></tr>
+<tr class="memitem:ga22c1efd7f8a5aa1d159c1495f10887d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUartKernel.html#ga22c1efd7f8a5aa1d159c1495f10887d1">ksceUartRead</a> (int port)</td></tr>
 <tr class="separator:ga22c1efd7f8a5aa1d159c1495f10887d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07c97ad6aae10749ddc406239b831a6b"><td class="memItemLeft" align="right" valign="top"><a id="ga07c97ad6aae10749ddc406239b831a6b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ksceUartWrite</b> (int port, char data)</td></tr>
+<tr class="memitem:ga07c97ad6aae10749ddc406239b831a6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUartKernel.html#ga07c97ad6aae10749ddc406239b831a6b">ksceUartWrite</a> (int port, char data)</td></tr>
 <tr class="separator:ga07c97ad6aae10749ddc406239b831a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga901ebf459a1a67af6756b78d1786568d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga901ebf459a1a67af6756b78d1786568d">&sect;&nbsp;</a></span>ksceUartInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUartInit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga22c1efd7f8a5aa1d159c1495f10887d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22c1efd7f8a5aa1d159c1495f10887d1">&sect;&nbsp;</a></span>ksceUartRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUartRead </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga44835dd0d6f0768448c97c0231bf6581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44835dd0d6f0768448c97c0231bf6581">&sect;&nbsp;</a></span>ksceUartReadAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUartReadAvailable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga07c97ad6aae10749ddc406239b831a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07c97ad6aae10749ddc406239b831a6b">&sect;&nbsp;</a></span>ksceUartWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUartWrite </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -6,7 +6,11 @@ var group__SceSystemParamUser =
       [ "SCE_SYSTEM_PARAM_DATE_FORMAT_DDMMYYYY", "group__SceSystemParamUser.html#gga60caf27f6d446ccd1dfe165e1b6bee5eaf7ab2d73ba07983d7a60cc64a14807f5", null ],
       [ "SCE_SYSTEM_PARAM_DATE_FORMAT_MMDDYYYY", "group__SceSystemParamUser.html#gga60caf27f6d446ccd1dfe165e1b6bee5ea4ba9e05e96e5bb192c3cec13df4cbbd4", null ]
     ] ],
-    [ "SceSystemParamEnterButtonAssign", "group__SceSystemParamUser.html#ga493dbfa2425f8adc558f4ec482f161af", null ],
+    [ "SceSystemParamEnterButtonAssign", "group__SceSystemParamUser.html#ga493dbfa2425f8adc558f4ec482f161af", [
+      [ "SCE_SYSTEM_PARAM_ENTER_BUTTON_CIRCLE", "group__SceSystemParamUser.html#gga493dbfa2425f8adc558f4ec482f161afab0d514e11d6a63d363242c32260162ea", null ],
+      [ "SCE_SYSTEM_PARAM_ENTER_BUTTON_CROSS", "group__SceSystemParamUser.html#gga493dbfa2425f8adc558f4ec482f161afa15c7924e66ea3654811bbda3c7c48ef5", null ],
+      [ "SCE_SYSTEM_PARAM_ENTER_BUTTON_MAX_VALUE", "group__SceSystemParamUser.html#gga493dbfa2425f8adc558f4ec482f161afa6f234ecdb3af5d62db7415936c3aca4c", null ]
+    ] ],
     [ "SceSystemParamId", "group__SceSystemParamUser.html#gab138af3ead059bc6b78e093f5f92dce0", [
       [ "SCE_SYSTEM_PARAM_ID_LANG", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0ae324f1a04aa994ae0ee5d365acf4f8d0", null ],
       [ "SCE_SYSTEM_PARAM_ID_ENTER_BUTTON", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a5047b42dc0be2d067b0776df3a0720ff", null ],
@@ -14,7 +18,8 @@ var group__SceSystemParamUser =
       [ "SCE_SYSTEM_PARAM_ID_DATE_FORMAT", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a6d8e82bbd62daa47d8bc6e0f7783bc90", null ],
       [ "SCE_SYSTEM_PARAM_ID_TIME_FORMAT", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a55437289c9462a08cddda9e9e0db480c", null ],
       [ "SCE_SYSTEM_PARAM_ID_TIME_ZONE", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a80c4a1bcce663be500af1499e721a5c1", null ],
-      [ "SCE_SYSTEM_PARAM_ID_DAYLIGHT_SAVINGS", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0afbc6bdd3e34f981d6304306f569c5bbb", null ]
+      [ "SCE_SYSTEM_PARAM_ID_DAYLIGHT_SAVINGS", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0afbc6bdd3e34f981d6304306f569c5bbb", null ],
+      [ "SCE_SYSTEM_PARAM_ID_MAX_VALUE", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a930717d5ea98f6f50f18f453a9ae1762", null ]
     ] ],
     [ "SceSystemParamLang", "group__SceSystemParamUser.html#gaae33ce498fb58ec8fb018e03635e33cd", [
       [ "SCE_SYSTEM_PARAM_LANG_JAPANESE", "group__SceSystemParamUser.html#ggaae33ce498fb58ec8fb018e03635e33cda56cffa79b5f7004e9a1cd0485d3e3c47", null ],
@@ -46,10 +51,14 @@ var group__SceSystemParamUser =
     [ "SCE_SYSTEM_PARAM_DATE_FORMAT_DDMMYYYY", "group__SceSystemParamUser.html#gga60caf27f6d446ccd1dfe165e1b6bee5eaf7ab2d73ba07983d7a60cc64a14807f5", null ],
     [ "SCE_SYSTEM_PARAM_DATE_FORMAT_MMDDYYYY", "group__SceSystemParamUser.html#gga60caf27f6d446ccd1dfe165e1b6bee5ea4ba9e05e96e5bb192c3cec13df4cbbd4", null ],
     [ "SCE_SYSTEM_PARAM_DATE_FORMAT_YYYYMMDD", "group__SceSystemParamUser.html#gga60caf27f6d446ccd1dfe165e1b6bee5ea8fffe26842775a390e3bb8e8540922a3", null ],
+    [ "SCE_SYSTEM_PARAM_ENTER_BUTTON_CIRCLE", "group__SceSystemParamUser.html#gga493dbfa2425f8adc558f4ec482f161afab0d514e11d6a63d363242c32260162ea", null ],
+    [ "SCE_SYSTEM_PARAM_ENTER_BUTTON_CROSS", "group__SceSystemParamUser.html#gga493dbfa2425f8adc558f4ec482f161afa15c7924e66ea3654811bbda3c7c48ef5", null ],
+    [ "SCE_SYSTEM_PARAM_ENTER_BUTTON_MAX_VALUE", "group__SceSystemParamUser.html#gga493dbfa2425f8adc558f4ec482f161afa6f234ecdb3af5d62db7415936c3aca4c", null ],
     [ "SCE_SYSTEM_PARAM_ID_DATE_FORMAT", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a6d8e82bbd62daa47d8bc6e0f7783bc90", null ],
     [ "SCE_SYSTEM_PARAM_ID_DAYLIGHT_SAVINGS", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0afbc6bdd3e34f981d6304306f569c5bbb", null ],
     [ "SCE_SYSTEM_PARAM_ID_ENTER_BUTTON", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a5047b42dc0be2d067b0776df3a0720ff", null ],
     [ "SCE_SYSTEM_PARAM_ID_LANG", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0ae324f1a04aa994ae0ee5d365acf4f8d0", null ],
+    [ "SCE_SYSTEM_PARAM_ID_MAX_VALUE", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a930717d5ea98f6f50f18f453a9ae1762", null ],
     [ "SCE_SYSTEM_PARAM_ID_TIME_FORMAT", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a55437289c9462a08cddda9e9e0db480c", null ],
     [ "SCE_SYSTEM_PARAM_ID_TIME_ZONE", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a80c4a1bcce663be500af1499e721a5c1", null ],
     [ "SCE_SYSTEM_PARAM_ID_USERNAME", "group__SceSystemParamUser.html#ggab138af3ead059bc6b78e093f5f92dce0a60fd28ac53ae32ef8b766a73752cb995", null ],

@@ -80,87 +80,62 @@ $(document).ready(function(){initNavTree('group__ScePgfUser.html','');});
 <p>Exports for User. </p>
 <hr/>
  <h3>Using this library in your project</h3>
-<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;psp2/pgf.h&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">ScePgf_stub </div></div><!-- fragment --><p> Load the required module: </p><div class="fragment"><div class="line"><a class="code" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a2ea6922d379a125bfcc2e900625c3a75">SCE_SYSMODULE_PGF</a>); </div></div><!-- fragment --><hr/>
+<p>Include the header file in your project: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="pgf_8h.html">psp2/pgf.h</a>&gt;</span> </div></div><!-- fragment --><p> Link the library to the executable: </p><div class="fragment"><div class="line">ScePgf_stub </div></div><!-- fragment --><p> Load the required module: </p><div class="fragment"><div class="line"><a class="code" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a2ea6922d379a125bfcc2e900625c3a75">SCE_SYSMODULE_PGF</a>); </div></div><!-- fragment --><hr/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga37763cd2c48140f6181cd1cf68742aa1"><td class="memItemLeft" align="right" valign="top"><a id="ga37763cd2c48140f6181cd1cf68742aa1"></a>
-SceFontLibHandle&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontNewLib</b> (<a class="el" href="structSceFontNewLibParams.html">SceFontNewLibParams</a> *params, unsigned int *errorCode)</td></tr>
+<tr class="memitem:ga37763cd2c48140f6181cd1cf68742aa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga37763cd2c48140f6181cd1cf68742aa1">sceFontNewLib</a> (<a class="el" href="structSceFontNewLibParams.html">SceFontNewLibParams</a> *params, unsigned int *errorCode)</td></tr>
 <tr class="separator:ga37763cd2c48140f6181cd1cf68742aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga713de408f32c7311dc5f17d995a3a5e8"><td class="memItemLeft" align="right" valign="top"><a id="ga713de408f32c7311dc5f17d995a3a5e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontDoneLib</b> (SceFontLibHandle libHandle)</td></tr>
+<tr class="memitem:ga713de408f32c7311dc5f17d995a3a5e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga713de408f32c7311dc5f17d995a3a5e8">sceFontDoneLib</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle)</td></tr>
 <tr class="separator:ga713de408f32c7311dc5f17d995a3a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2794ecdc3ca589422b029126957d9c0"><td class="memItemLeft" align="right" valign="top"><a id="gaf2794ecdc3ca589422b029126957d9c0"></a>
-SceFontHandle&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontOpen</b> (SceFontLibHandle libHandle, int index, int mode, unsigned int *errorCode)</td></tr>
+<tr class="memitem:gaf2794ecdc3ca589422b029126957d9c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gaf2794ecdc3ca589422b029126957d9c0">sceFontOpen</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, int index, int mode, unsigned int *errorCode)</td></tr>
 <tr class="separator:gaf2794ecdc3ca589422b029126957d9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f1ee43c02324b210de897a20b9c5234"><td class="memItemLeft" align="right" valign="top"><a id="ga0f1ee43c02324b210de897a20b9c5234"></a>
-SceFontHandle&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontOpenUserMemory</b> (SceFontLibHandle libHandle, void *pMemoryFont, SceSize pMemoryFontSize, unsigned int *errorCode)</td></tr>
+<tr class="memitem:ga0f1ee43c02324b210de897a20b9c5234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga0f1ee43c02324b210de897a20b9c5234">sceFontOpenUserMemory</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, void *pMemoryFont, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> pMemoryFontSize, unsigned int *errorCode)</td></tr>
 <tr class="separator:ga0f1ee43c02324b210de897a20b9c5234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdaf7b90a02fec6b960e24f9b651d8bb"><td class="memItemLeft" align="right" valign="top"><a id="gacdaf7b90a02fec6b960e24f9b651d8bb"></a>
-SceFontHandle&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontOpenUserFile</b> (SceFontLibHandle libHandle, char *file, int mode, unsigned int *errorCode)</td></tr>
+<tr class="memitem:gacdaf7b90a02fec6b960e24f9b651d8bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gacdaf7b90a02fec6b960e24f9b651d8bb">sceFontOpenUserFile</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, char *file, int mode, unsigned int *errorCode)</td></tr>
 <tr class="separator:gacdaf7b90a02fec6b960e24f9b651d8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf099f4f8027b5b86466b60816d877d23"><td class="memItemLeft" align="right" valign="top"><a id="gaf099f4f8027b5b86466b60816d877d23"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontClose</b> (SceFontHandle fontHandle)</td></tr>
+<tr class="memitem:gaf099f4f8027b5b86466b60816d877d23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gaf099f4f8027b5b86466b60816d877d23">sceFontClose</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle)</td></tr>
 <tr class="separator:gaf099f4f8027b5b86466b60816d877d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf5a4662d0a051b47486fd248c6b7c5c"><td class="memItemLeft" align="right" valign="top"><a id="gadf5a4662d0a051b47486fd248c6b7c5c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetNumFontList</b> (SceFontLibHandle libHandle, unsigned int *errorCode)</td></tr>
+<tr class="memitem:gadf5a4662d0a051b47486fd248c6b7c5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gadf5a4662d0a051b47486fd248c6b7c5c">sceFontGetNumFontList</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, unsigned int *errorCode)</td></tr>
 <tr class="separator:gadf5a4662d0a051b47486fd248c6b7c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa93c5be26add370037bd019cb301283c"><td class="memItemLeft" align="right" valign="top"><a id="gaa93c5be26add370037bd019cb301283c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontFindOptimumFont</b> (SceFontLibHandle libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, unsigned int *errorCode)</td></tr>
+<tr class="memitem:gaa93c5be26add370037bd019cb301283c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gaa93c5be26add370037bd019cb301283c">sceFontFindOptimumFont</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, unsigned int *errorCode)</td></tr>
 <tr class="separator:gaa93c5be26add370037bd019cb301283c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa58c26aa6a0dcc1a195d391a2e5fb73b"><td class="memItemLeft" align="right" valign="top"><a id="gaa58c26aa6a0dcc1a195d391a2e5fb73b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontFindFont</b> (SceFontLibHandle libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, unsigned int *errorCode)</td></tr>
+<tr class="memitem:gaa58c26aa6a0dcc1a195d391a2e5fb73b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gaa58c26aa6a0dcc1a195d391a2e5fb73b">sceFontFindFont</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, unsigned int *errorCode)</td></tr>
 <tr class="separator:gaa58c26aa6a0dcc1a195d391a2e5fb73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga022bcd56c0c6db693221ae35aadcdecf"><td class="memItemLeft" align="right" valign="top"><a id="ga022bcd56c0c6db693221ae35aadcdecf"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetFontInfo</b> (SceFontHandle fontHandle, <a class="el" href="group__ScePgfUser.html#structSceFontInfo">SceFontInfo</a> *fontInfo)</td></tr>
+<tr class="memitem:ga022bcd56c0c6db693221ae35aadcdecf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga022bcd56c0c6db693221ae35aadcdecf">sceFontGetFontInfo</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle, <a class="el" href="group__ScePgfUser.html#structSceFontInfo">SceFontInfo</a> *fontInfo)</td></tr>
 <tr class="separator:ga022bcd56c0c6db693221ae35aadcdecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b01efb582e0a26f795c9d7ec473a76d"><td class="memItemLeft" align="right" valign="top"><a id="ga5b01efb582e0a26f795c9d7ec473a76d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetFontInfoByIndexNumber</b> (SceFontLibHandle libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, int unknown, int fontIndex)</td></tr>
+<tr class="memitem:ga5b01efb582e0a26f795c9d7ec473a76d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga5b01efb582e0a26f795c9d7ec473a76d">sceFontGetFontInfoByIndexNumber</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, int unknown, int fontIndex)</td></tr>
 <tr class="separator:ga5b01efb582e0a26f795c9d7ec473a76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78be0a6c5abf69c2f2a429fc12242071"><td class="memItemLeft" align="right" valign="top"><a id="ga78be0a6c5abf69c2f2a429fc12242071"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontSetResolution</b> (SceFontLibHandle libHandle, float hRes, float vRes)</td></tr>
+<tr class="memitem:ga78be0a6c5abf69c2f2a429fc12242071"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga78be0a6c5abf69c2f2a429fc12242071">sceFontSetResolution</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, float hRes, float vRes)</td></tr>
 <tr class="separator:ga78be0a6c5abf69c2f2a429fc12242071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9590fe8626fb3a4d37253e7dfd872ee2"><td class="memItemLeft" align="right" valign="top"><a id="ga9590fe8626fb3a4d37253e7dfd872ee2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetFontList</b> (SceFontLibHandle libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, int numFonts)</td></tr>
+<tr class="memitem:ga9590fe8626fb3a4d37253e7dfd872ee2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga9590fe8626fb3a4d37253e7dfd872ee2">sceFontGetFontList</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, <a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *fontStyle, int numFonts)</td></tr>
 <tr class="separator:ga9590fe8626fb3a4d37253e7dfd872ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad81720dc5d3a6e462add01a4bbc99513"><td class="memItemLeft" align="right" valign="top"><a id="gad81720dc5d3a6e462add01a4bbc99513"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetCharInfo</b> (SceFontHandle fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontCharInfo">SceFontCharInfo</a> *charInfo)</td></tr>
+<tr class="memitem:gad81720dc5d3a6e462add01a4bbc99513"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gad81720dc5d3a6e462add01a4bbc99513">sceFontGetCharInfo</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontCharInfo">SceFontCharInfo</a> *charInfo)</td></tr>
 <tr class="separator:gad81720dc5d3a6e462add01a4bbc99513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga950e8947da9416a7fcf924e1989593ee"><td class="memItemLeft" align="right" valign="top"><a id="ga950e8947da9416a7fcf924e1989593ee"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetCharImageRect</b> (SceFontHandle fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontImageRect">SceFontImageRect</a> *charRect)</td></tr>
+<tr class="memitem:ga950e8947da9416a7fcf924e1989593ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga950e8947da9416a7fcf924e1989593ee">sceFontGetCharImageRect</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontImageRect">SceFontImageRect</a> *charRect)</td></tr>
 <tr class="separator:ga950e8947da9416a7fcf924e1989593ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d67e1cce73df65e7b0782d1ff6393bf"><td class="memItemLeft" align="right" valign="top"><a id="ga4d67e1cce73df65e7b0782d1ff6393bf"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetCharGlyphImage</b> (SceFontHandle fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontGlyphImage">SceFontGlyphImage</a> *glyphImage)</td></tr>
+<tr class="memitem:ga4d67e1cce73df65e7b0782d1ff6393bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga4d67e1cce73df65e7b0782d1ff6393bf">sceFontGetCharGlyphImage</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontGlyphImage">SceFontGlyphImage</a> *glyphImage)</td></tr>
 <tr class="separator:ga4d67e1cce73df65e7b0782d1ff6393bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2cf62c4643b2eb6157cdea63a96e8c7"><td class="memItemLeft" align="right" valign="top"><a id="gaa2cf62c4643b2eb6157cdea63a96e8c7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontGetCharGlyphImage_Clip</b> (SceFontHandle fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontGlyphImage">SceFontGlyphImage</a> *glyphImage, int clipXPos, int clipYPos, int clipWidth, int clipHeight)</td></tr>
+<tr class="memitem:gaa2cf62c4643b2eb6157cdea63a96e8c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gaa2cf62c4643b2eb6157cdea63a96e8c7">sceFontGetCharGlyphImage_Clip</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle, unsigned int charCode, <a class="el" href="group__ScePgfUser.html#structSceFontGlyphImage">SceFontGlyphImage</a> *glyphImage, int clipXPos, int clipYPos, int clipWidth, int clipHeight)</td></tr>
 <tr class="separator:gaa2cf62c4643b2eb6157cdea63a96e8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31144df76aa99c95e5785337ec212145"><td class="memItemLeft" align="right" valign="top"><a id="ga31144df76aa99c95e5785337ec212145"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontPixelToPointH</b> (SceFontLibHandle libHandle, float fontPixelsH, unsigned int *errorCode)</td></tr>
+<tr class="memitem:ga31144df76aa99c95e5785337ec212145"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga31144df76aa99c95e5785337ec212145">sceFontPixelToPointH</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, float fontPixelsH, unsigned int *errorCode)</td></tr>
 <tr class="separator:ga31144df76aa99c95e5785337ec212145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d9c10922d574fdb8c9e68d14284d568"><td class="memItemLeft" align="right" valign="top"><a id="ga5d9c10922d574fdb8c9e68d14284d568"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontPixelToPointV</b> (SceFontLibHandle libHandle, float fontPixelsV, unsigned int *errorCode)</td></tr>
+<tr class="memitem:ga5d9c10922d574fdb8c9e68d14284d568"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga5d9c10922d574fdb8c9e68d14284d568">sceFontPixelToPointV</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, float fontPixelsV, unsigned int *errorCode)</td></tr>
 <tr class="separator:ga5d9c10922d574fdb8c9e68d14284d568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92aa00f60de76e58c32a70525b2e106c"><td class="memItemLeft" align="right" valign="top"><a id="ga92aa00f60de76e58c32a70525b2e106c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontPointToPixelH</b> (SceFontLibHandle libHandle, float fontPointsH, unsigned int *errorCode)</td></tr>
+<tr class="memitem:ga92aa00f60de76e58c32a70525b2e106c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga92aa00f60de76e58c32a70525b2e106c">sceFontPointToPixelH</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, float fontPointsH, unsigned int *errorCode)</td></tr>
 <tr class="separator:ga92aa00f60de76e58c32a70525b2e106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76bb45c259ef2e872592eb386df68495"><td class="memItemLeft" align="right" valign="top"><a id="ga76bb45c259ef2e872592eb386df68495"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontPointToPixelV</b> (SceFontLibHandle libHandle, float fontPointsV, unsigned int *errorCode)</td></tr>
+<tr class="memitem:ga76bb45c259ef2e872592eb386df68495"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga76bb45c259ef2e872592eb386df68495">sceFontPointToPixelV</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, float fontPointsV, unsigned int *errorCode)</td></tr>
 <tr class="separator:ga76bb45c259ef2e872592eb386df68495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga626ee16130495cf482c5edfaee0caf22"><td class="memItemLeft" align="right" valign="top"><a id="ga626ee16130495cf482c5edfaee0caf22"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontSetAltCharacterCode</b> (SceFontLibHandle libHandle, unsigned int charCode)</td></tr>
+<tr class="memitem:ga626ee16130495cf482c5edfaee0caf22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga626ee16130495cf482c5edfaee0caf22">sceFontSetAltCharacterCode</a> (<a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> libHandle, unsigned int charCode)</td></tr>
 <tr class="separator:ga626ee16130495cf482c5edfaee0caf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e52193f1710fa089bcd49f8fc2f3bab"><td class="memItemLeft" align="right" valign="top"><a id="ga9e52193f1710fa089bcd49f8fc2f3bab"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceFontFlush</b> (SceFontHandle fontHandle)</td></tr>
+<tr class="memitem:ga9e52193f1710fa089bcd49f8fc2f3bab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga9e52193f1710fa089bcd49f8fc2f3bab">sceFontFlush</a> (<a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> fontHandle)</td></tr>
 <tr class="separator:ga9e52193f1710fa089bcd49f8fc2f3bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gac27c1c54b1a9693512d324f2d2243454"><td class="memItemLeft" align="right" valign="top"><a id="gac27c1c54b1a9693512d324f2d2243454"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>SceFontLibHandle</b></td></tr>
+<tr class="memitem:gac27c1c54b1a9693512d324f2d2243454"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a></td></tr>
 <tr class="separator:gac27c1c54b1a9693512d324f2d2243454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60bf611fb065df6fb96337aef54b29ea"><td class="memItemLeft" align="right" valign="top"><a id="ga60bf611fb065df6fb96337aef54b29ea"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>SceFontHandle</b></td></tr>
+<tr class="memitem:ga60bf611fb065df6fb96337aef54b29ea"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a></td></tr>
 <tr class="separator:ga60bf611fb065df6fb96337aef54b29ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -657,7 +632,100 @@ Number of elements in the font's shadow charmap. </td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga60bf611fb065df6fb96337aef54b29ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60bf611fb065df6fb96337aef54b29ea">&sect;&nbsp;</a></span>SceFontHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac27c1c54b1a9693512d324f2d2243454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac27c1c54b1a9693512d324f2d2243454">&sect;&nbsp;</a></span>SceFontLibHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga98b0bd7b811de6711cb8c26299be20a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98b0bd7b811de6711cb8c26299be20a9">&sect;&nbsp;</a></span>SceFontErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ScePgfUser.html#ga98b0bd7b811de6711cb8c26299be20a9">SceFontErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga98b0bd7b811de6711cb8c26299be20a9a13ef4ce7513694c50d3fefe6ad822732"></a>SCE_FONT_ERROR_OUT_OF_MEMORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga98b0bd7b811de6711cb8c26299be20a9a1e3f805ac7261ba18dd1817c7128f3a2"></a>SCE_FONT_ERROR_INVALID_LIBID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga98b0bd7b811de6711cb8c26299be20a9aa3018271fd8eb0bb95f5acd91453f20a"></a>SCE_FONT_ERROR_INVALID_PARAMETER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga98b0bd7b811de6711cb8c26299be20a9a1d72041ee5043f10221a1b21634c0d92"></a>SCE_FONT_ERROR_HANDLER_OPEN_FAILED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga98b0bd7b811de6711cb8c26299be20a9a02003a080dfb1d0561a87a3936ce0861"></a>SCE_FONT_ERROR_TOO_MANY_OPEN_FONTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga98b0bd7b811de6711cb8c26299be20a9a5a3318f536ea810ad7a5d2a1175af1c9"></a>SCE_FONT_ERROR_INVALID_FONT_DATA&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga132b2b5c6a8ce994bc16ee5bef11f2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga132b2b5c6a8ce994bc16ee5bef11f2ef">&sect;&nbsp;</a></span>SceFontFamilyCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ScePgfUser.html#ga132b2b5c6a8ce994bc16ee5bef11f2ef">SceFontFamilyCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga132b2b5c6a8ce994bc16ee5bef11f2efa20f4deaa4a410d8442fbf30efd0a67db"></a>SCE_FONT_FAMILY_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga132b2b5c6a8ce994bc16ee5bef11f2efad5b16f0110ed599fbfb6c155d6ed2399"></a>SCE_FONT_FAMILY_SANS_SERIF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga132b2b5c6a8ce994bc16ee5bef11f2efab15f8ebacd695e850fa6844fc4319c51"></a>SCE_FONT_FAMILY_SERIF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga132b2b5c6a8ce994bc16ee5bef11f2efa73480722ff1f8b528f3c68c469795a00"></a>SCE_FONT_FAMILY_ROUNDED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga08a751e3f9cc54fc6645496a342df6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08a751e3f9cc54fc6645496a342df6a4">&sect;&nbsp;</a></span>SceFontLanguageCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ScePgfUser.html#ga08a751e3f9cc54fc6645496a342df6a4">SceFontLanguageCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga08a751e3f9cc54fc6645496a342df6a4a6df145fd62c78fcc4dc8a489fc941311"></a>SCE_FONT_LANGUAGE_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga08a751e3f9cc54fc6645496a342df6a4a310110c190da956efe58846f70c10204"></a>SCE_FONT_LANGUAGE_JAPANESE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga08a751e3f9cc54fc6645496a342df6a4a08d68c2935edc02c0c0b5294ac8ec18c"></a>SCE_FONT_LANGUAGE_LATIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga08a751e3f9cc54fc6645496a342df6a4aaa15bc5fbb8fb4b77f4c7614c573cbb1"></a>SCE_FONT_LANGUAGE_KOREAN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga08a751e3f9cc54fc6645496a342df6a4adb1843d54332a0a6a1afad99fc7c5799"></a>SCE_FONT_LANGUAGE_CHINESE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga08a751e3f9cc54fc6645496a342df6a4ad65ac25b6afde51dc3f91124701f24fe"></a>SCE_FONT_LANGUAGE_CJK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga2e161afc01d5e97ed8ca486c13ac95e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2e161afc01d5e97ed8ca486c13ac95e3">&sect;&nbsp;</a></span>SceFontPixelFormatCode</h2>
 
@@ -696,9 +764,782 @@ Number of elements in the font's shadow charmap. </td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da61da539a9508409fd8214b72e091f073"></a>SCE_FONT_STYLE_DB&#160;</td><td class="fielddoc"><p>Demi-Bold / semi-bold. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da50a1155b41efda8a6e48c959ca5d4f62"></a>SCE_FONT_STYLE_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da964b3cf0a36a7b3f410edf1485c48814"></a>SCE_FONT_STYLE_REGULAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171dacd1a6a71830f7b50be6f35f2072f372b"></a>SCE_FONT_STYLE_ITALIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171daef69a7a074dd65eb73c8fc901aab2672"></a>SCE_FONT_STYLE_NARROW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da461772130930fe781b061a03db538e25"></a>SCE_FONT_STYLE_NARROW_ITALIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171daa8156fc8912b488017fd13b469a0a6e2"></a>SCE_FONT_STYLE_BOLD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da4c92c972b7eb7ac8a9f14ceb9960ac88"></a>SCE_FONT_STYLE_BOLD_ITALIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da66fcc74afdd76731452b113ce9e001ba"></a>SCE_FONT_STYLE_BLACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da1e35ca42ff11c91ecee77b3810654083"></a>SCE_FONT_STYLE_BLACK_ITALIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da6b20ac8841b7fcdece293da3aac89e8a"></a>SCE_FONT_STYLE_L&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da0320b032a9d8b3e482662a9dd578f19d"></a>SCE_FONT_STYLE_M&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da61da539a9508409fd8214b72e091f073"></a>SCE_FONT_STYLE_DB&#160;</td><td class="fielddoc"><p>Demi-Bold / semi-bold. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171da73ef696d4a156d8ea85a08d37d78536b"></a>SCE_FONT_STYLE_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171dad873945b475305c83f61df40aa6f19aa"></a>SCE_FONT_STYLE_EB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6ac7a656bfe63e8227ad8e8b6414171daf1b4ef1f49603caeb4388cf8454635aa"></a>SCE_FONT_STYLE_UB&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gaf099f4f8027b5b86466b60816d877d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf099f4f8027b5b86466b60816d877d23">&sect;&nbsp;</a></span>sceFontClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontClose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga713de408f32c7311dc5f17d995a3a5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga713de408f32c7311dc5f17d995a3a5e8">&sect;&nbsp;</a></span>sceFontDoneLib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontDoneLib </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa58c26aa6a0dcc1a195d391a2e5fb73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa58c26aa6a0dcc1a195d391a2e5fb73b">&sect;&nbsp;</a></span>sceFontFindFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontFindFont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *&#160;</td>
+          <td class="paramname"><em>fontStyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa93c5be26add370037bd019cb301283c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa93c5be26add370037bd019cb301283c">&sect;&nbsp;</a></span>sceFontFindOptimumFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontFindOptimumFont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *&#160;</td>
+          <td class="paramname"><em>fontStyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9e52193f1710fa089bcd49f8fc2f3bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e52193f1710fa089bcd49f8fc2f3bab">&sect;&nbsp;</a></span>sceFontFlush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontFlush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4d67e1cce73df65e7b0782d1ff6393bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d67e1cce73df65e7b0782d1ff6393bf">&sect;&nbsp;</a></span>sceFontGetCharGlyphImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetCharGlyphImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>charCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontGlyphImage">SceFontGlyphImage</a> *&#160;</td>
+          <td class="paramname"><em>glyphImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa2cf62c4643b2eb6157cdea63a96e8c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2cf62c4643b2eb6157cdea63a96e8c7">&sect;&nbsp;</a></span>sceFontGetCharGlyphImage_Clip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetCharGlyphImage_Clip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>charCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontGlyphImage">SceFontGlyphImage</a> *&#160;</td>
+          <td class="paramname"><em>glyphImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clipXPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clipYPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clipWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clipHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga950e8947da9416a7fcf924e1989593ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga950e8947da9416a7fcf924e1989593ee">&sect;&nbsp;</a></span>sceFontGetCharImageRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetCharImageRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>charCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontImageRect">SceFontImageRect</a> *&#160;</td>
+          <td class="paramname"><em>charRect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad81720dc5d3a6e462add01a4bbc99513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad81720dc5d3a6e462add01a4bbc99513">&sect;&nbsp;</a></span>sceFontGetCharInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetCharInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>charCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontCharInfo">SceFontCharInfo</a> *&#160;</td>
+          <td class="paramname"><em>charInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga022bcd56c0c6db693221ae35aadcdecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga022bcd56c0c6db693221ae35aadcdecf">&sect;&nbsp;</a></span>sceFontGetFontInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetFontInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a>&#160;</td>
+          <td class="paramname"><em>fontHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontInfo">SceFontInfo</a> *&#160;</td>
+          <td class="paramname"><em>fontInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5b01efb582e0a26f795c9d7ec473a76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b01efb582e0a26f795c9d7ec473a76d">&sect;&nbsp;</a></span>sceFontGetFontInfoByIndexNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetFontInfoByIndexNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *&#160;</td>
+          <td class="paramname"><em>fontStyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unknown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fontIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9590fe8626fb3a4d37253e7dfd872ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9590fe8626fb3a4d37253e7dfd872ee2">&sect;&nbsp;</a></span>sceFontGetFontList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetFontList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#structSceFontStyle">SceFontStyle</a> *&#160;</td>
+          <td class="paramname"><em>fontStyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numFonts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadf5a4662d0a051b47486fd248c6b7c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf5a4662d0a051b47486fd248c6b7c5c">&sect;&nbsp;</a></span>sceFontGetNumFontList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontGetNumFontList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga37763cd2c48140f6181cd1cf68742aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37763cd2c48140f6181cd1cf68742aa1">&sect;&nbsp;</a></span>sceFontNewLib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a> sceFontNewLib </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSceFontNewLibParams.html">SceFontNewLibParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf2794ecdc3ca589422b029126957d9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2794ecdc3ca589422b029126957d9c0">&sect;&nbsp;</a></span>sceFontOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> sceFontOpen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacdaf7b90a02fec6b960e24f9b651d8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdaf7b90a02fec6b960e24f9b651d8bb">&sect;&nbsp;</a></span>sceFontOpenUserFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> sceFontOpenUserFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f1ee43c02324b210de897a20b9c5234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f1ee43c02324b210de897a20b9c5234">&sect;&nbsp;</a></span>sceFontOpenUserMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ScePgfUser.html#ga60bf611fb065df6fb96337aef54b29ea">SceFontHandle</a> sceFontOpenUserMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pMemoryFont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>pMemoryFontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31144df76aa99c95e5785337ec212145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31144df76aa99c95e5785337ec212145">&sect;&nbsp;</a></span>sceFontPixelToPointH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sceFontPixelToPointH </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontPixelsH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5d9c10922d574fdb8c9e68d14284d568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d9c10922d574fdb8c9e68d14284d568">&sect;&nbsp;</a></span>sceFontPixelToPointV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sceFontPixelToPointV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontPixelsV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga92aa00f60de76e58c32a70525b2e106c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92aa00f60de76e58c32a70525b2e106c">&sect;&nbsp;</a></span>sceFontPointToPixelH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sceFontPointToPixelH </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontPointsH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga76bb45c259ef2e872592eb386df68495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76bb45c259ef2e872592eb386df68495">&sect;&nbsp;</a></span>sceFontPointToPixelV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sceFontPointToPixelV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontPointsV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga626ee16130495cf482c5edfaee0caf22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga626ee16130495cf482c5edfaee0caf22">&sect;&nbsp;</a></span>sceFontSetAltCharacterCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontSetAltCharacterCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>charCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga78be0a6c5abf69c2f2a429fc12242071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78be0a6c5abf69c2f2a429fc12242071">&sect;&nbsp;</a></span>sceFontSetResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFontSetResolution </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePgfUser.html#gac27c1c54b1a9693512d324f2d2243454">SceFontLibHandle</a>&#160;</td>
+          <td class="paramname"><em>libHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>hRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vRes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

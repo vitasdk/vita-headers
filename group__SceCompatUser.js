@@ -1,5 +1,23 @@
 var group__SceCompatUser =
 [
+    [ "SceCompatCacheMode", "group__SceCompatUser.html#ga7e3c16b4e18ae5f4b264775a3fd5d58a", [
+      [ "SCE_COMPAT_CACHE_NONE", "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aa447e459d57ed8ad2095fb0c44506ab3a", null ],
+      [ "SCE_COMPAT_CACHE_INVALIDATE", "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aaa9fb791ba2e33b77a7fda26d567de9ad", null ],
+      [ "SCE_COMPAT_CACHE_WRITEBACK", "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aafe0dcfd17f3eb46869cc353b8bf433dd", null ]
+    ] ],
+    [ "SceCompatPeripheralMode", "group__SceCompatUser.html#ga72d999bd2e01ac92563a562fa9edf851", [
+      [ "SCE_COMPAT_PERIPHERAL_POWER_IS_SUSPEND_REQUIRED", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a78d73742b3937a0725ce62fe2a7ef581", null ],
+      [ "SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_LIFETIME", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851ac389b1634a501c4688aceca9fbfd16c7", null ],
+      [ "SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_PERCENT", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a7244ec40009be3e9f5c2d5664fd14055", null ],
+      [ "SCE_COMPAT_PERIPHERAL_HPREMOTE_IS_HEADPHONE_EXIST", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851adb50e4333979790c7d136a4ff4fcfc79", null ]
+    ] ],
+    [ "SCE_COMPAT_CACHE_INVALIDATE", "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aaa9fb791ba2e33b77a7fda26d567de9ad", null ],
+    [ "SCE_COMPAT_CACHE_NONE", "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aa447e459d57ed8ad2095fb0c44506ab3a", null ],
+    [ "SCE_COMPAT_CACHE_WRITEBACK", "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aafe0dcfd17f3eb46869cc353b8bf433dd", null ],
+    [ "SCE_COMPAT_PERIPHERAL_HPREMOTE_IS_HEADPHONE_EXIST", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851adb50e4333979790c7d136a4ff4fcfc79", null ],
+    [ "SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_LIFETIME", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851ac389b1634a501c4688aceca9fbfd16c7", null ],
+    [ "SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_PERCENT", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a7244ec40009be3e9f5c2d5664fd14055", null ],
+    [ "SCE_COMPAT_PERIPHERAL_POWER_IS_SUSPEND_REQUIRED", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a78d73742b3937a0725ce62fe2a7ef581", null ],
     [ "sceCompatAllocCdramWithHole", "group__SceCompatUser.html#ga3514a14572690fb2700e171f071357d1", null ],
     [ "sceCompatAvailableColorSpaceSetting", "group__SceCompatUser.html#ga8dc5ad5db9a08eb99f1899aa4f8a29fd", null ],
     [ "sceCompatCache", "group__SceCompatUser.html#ga5df4e16454016745e4ef3f92bba2c814", null ],
