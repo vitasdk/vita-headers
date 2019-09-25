@@ -92,7 +92,8 @@ var NAVTREEINDEX4 =
 "group__SceI2cKernel.html":[1,5,1,0],
 "group__SceIdStorage.html":[1,6,16],
 "group__SceIdStorageKernel.html":[1,6,16,0],
-"group__SceIdStorageKernel.html#ga6322e2ecff4ea9790dc12d3661ea7cb0":[1,6,16,0,0],
+"group__SceIdStorageKernel.html#ga6a1392e254691fcf1cd5ad07f89b41b3":[1,6,16,0,0],
+"group__SceIdStorageKernel.html#gabfe771561c80ad2aef079f3466cc3bdf":[1,6,16,0,1],
 "group__SceIftu.html":[1,5,6],
 "group__SceIftuKernel.html":[1,5,6,0],
 "group__SceIme.html":[1,3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6adc17a55585e9f79738fedc8cde762071":[1,1,3,0,6,3],
 "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6adc17a55585e9f79738fedc8cde762071":[1,1,3,0,18],
 "group__SceMessageDialog.html":[1,3,1],
-"group__SceMessageDialogUser.html":[1,3,1,0],
-"group__SceMessageDialogUser.html#ga4e98cd87a9a8ee1842a0bf760ab1ce84":[1,3,1,0,1]
+"group__SceMessageDialogUser.html":[1,3,1,0]
 };

@@ -1,4 +1,5 @@
 var group__SceIdStorageKernel =
 [
-    [ "ksceIdStorageReadLeaf", "group__SceIdStorageKernel.html#ga6322e2ecff4ea9790dc12d3661ea7cb0", null ]
+    [ "ksceIdStorageReadLeaf", "group__SceIdStorageKernel.html#ga6a1392e254691fcf1cd5ad07f89b41b3", null ],
+    [ "ksceIdStorageWriteLeaf", "group__SceIdStorageKernel.html#gabfe771561c80ad2aef079f3466cc3bdf", null ]
 ];

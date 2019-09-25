@@ -102,11 +102,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshIdStorageIsFormatte
 <tr class="memitem:ga324c4f0e940138dc8008f5b484793789"><td class="memItemLeft" align="right" valign="top"><a id="ga324c4f0e940138dc8008f5b484793789"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshIdStorageIsReadOnly</b> (void)</td></tr>
 <tr class="separator:ga324c4f0e940138dc8008f5b484793789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02bb84229bbefc1b1234659aa6477914"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga02bb84229bbefc1b1234659aa6477914">vshIdStorageReadLeaf</a> (int leafnum, void *buf, int buf_size)</td></tr>
-<tr class="separator:ga02bb84229bbefc1b1234659aa6477914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48e60b73e0db3bb5771e700ca12d7894"><td class="memItemLeft" align="right" valign="top"><a id="ga48e60b73e0db3bb5771e700ca12d7894"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>vshIdStorageWriteLeaf</b> (int leafnum, const void *buf, int buf_size)</td></tr>
-<tr class="separator:ga48e60b73e0db3bb5771e700ca12d7894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cebc68b47fe61cfa3075b731fcc984e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga4cebc68b47fe61cfa3075b731fcc984e">vshIdStorageReadLeaf</a> (int leafnum, void *buf)</td></tr>
+<tr class="separator:ga4cebc68b47fe61cfa3075b731fcc984e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b7fe3619a3174828fdbb52d02d80ae8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga0b7fe3619a3174828fdbb52d02d80ae8">vshIdStorageWriteLeaf</a> (int leafnum, const void *buf)</td></tr>
+<tr class="separator:ga0b7fe3619a3174828fdbb52d02d80ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5344884b9e5f470b33570191a51cb917"><td class="memItemLeft" align="right" valign="top"><a id="ga5344884b9e5f470b33570191a51cb917"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>vshSblAimgrIsCEX</b> (void)</td></tr>
 <tr class="separator:ga5344884b9e5f470b33570191a51cb917"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +218,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
 
 </div>
 </div>
-<a id="ga02bb84229bbefc1b1234659aa6477914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02bb84229bbefc1b1234659aa6477914">&sect;&nbsp;</a></span>vshIdStorageReadLeaf()</h2>
+<a id="ga4cebc68b47fe61cfa3075b731fcc984e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cebc68b47fe61cfa3075b731fcc984e">&sect;&nbsp;</a></span>vshIdStorageReadLeaf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,13 +234,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>buf_size</em>&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,8 +246,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vshRemovableMemoryGetC
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- 0x0 ~ 0x80 / leafnum &gt; 0x80 = error </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- Leaf data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf_size</td><td>- set 0x200 / buf_size != 0x200 = 0x800F090D</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- Leaf data, size is 512 byte</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga0b7fe3619a3174828fdbb52d02d80ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b7fe3619a3174828fdbb52d02d80ae8">&sect;&nbsp;</a></span>vshIdStorageWriteLeaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshIdStorageWriteLeaf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leafnum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- 0x0 ~ 0x80 / leafnum &gt; 0x80 = error </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- Leaf data, size is 512 byte</td></tr>
   </table>
   </dd>
 </dl>
