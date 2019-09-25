@@ -14,21 +14,42 @@
 extern "C" {
 #endif
 
-int sceClibStrcmp(const char *, const char *);
-void *sceClibStrncmp(const char *, const char *, SceSize);
-int sceClibStrncasecmp(const char *, const char *, SceSize);
-char *sceClibStrncpy(char *, const char *, SceSize);
-char *sceClibStrncat(char *, const char *, SceSize);
-SceSize sceClibStrnlen(const char *, SceSize);
-char *sceClibStrrchr(const char *, int);
+/**
+ * Run bkpt #0x88 and end the process in state -1
+ *
+ * @return none
+ */
+void sceClibAbort(void);
 
-int sceClibPrintf(const char *, ...);
-int sceClibSnprintf(char *, SceSize, const char *, ...);
-int sceClibVsnprintf(char *, SceSize, const char *, va_list);
+char sceClibLookCtypeTable(char ch);
 
-void *sceClibMemset(void *, int, SceSize);
-void *sceClibMemcpy(void *, const void *, SceSize);
-void *sceClibMemmove(void *, const void *, SceSize);
+int sceClibTolower(char ch);
+int sceClibToupper(char ch);
+
+int sceClibPrintf(const char *fmt, ...);
+int sceClibSnprintf(char *dst, SceSize dst_max_size, const char *fmt, ...);
+int sceClibVsnprintf(char *dst, SceSize dst_max_size, const char *fmt, va_list args);
+
+char *sceClibStrncpy(char *dst, const char *src, SceSize len);
+char *sceClibStrncat(char *dst, const char *src, SceSize len);
+
+char *sceClibStrrchr(const char *src, int ch);
+char *sceClibStrstr(const char *s1, const char *s2);
+
+int sceClibStrcmp(const char *s1, const char *s2);
+int sceClibStrncmp(const char *s1, const char *s2, SceSize len);
+int sceClibStrncasecmp(const char *s1, const char *s2, SceSize len);
+
+SceSize sceClibStrnlen(const char *s1, SceSize max_len);
+
+void *sceClibMemset(void *dst, int ch, SceSize len);
+void *sceClibMemcpy(void *dst, const void *src, SceSize len);
+void *sceClibMemcpy_safe(void *dst, const void *src, SceSize len);
+void *sceClibMemmove(void *dst, const void *src, SceSize len);
+
+int sceClibMemcmp(const void *s1, const void *s2, SceSize len);
+
+void *sceClibMemchr(const void *src, int ch, SceSize len);
 
 #ifdef __cplusplus
 }
