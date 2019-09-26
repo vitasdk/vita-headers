@@ -3,13 +3,10 @@ sudo: false
 
 cache:
     directories:
-        - $HOME/doxygen
+        - $HOME/downloads
 
 before_script:
-    # download doxygen 1.8.12
-    - mkdir -p $HOME/doxygen
-    - cd $HOME/doxygen
-    - ls doxygen* >/dev/null 2>&1 || curl -L https://github.com/vitasdk/artifacts/releases/download/doxygen-1.8.12/doxygen-1.8.12.linux.bin.tar.gz | tar xz
+    - bash $TRAVIS_BUILD_DIR/.travis.d/download_external_apps.sh
 
 script:
     - set -e
