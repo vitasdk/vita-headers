@@ -1,6 +1,6 @@
 var group__SceShellSvcUser =
 [
-    [ "SceShellUtilEventHandler", "group__SceShellSvcUser.html#ga7f462a5d46a0fe27f578aad04e333892", null ],
+    [ "SceShellUtilEventHandler", "group__SceShellSvcUser.html#ga07896b82d1034d756ebbc7d5046bb7d4", null ],
     [ "SceShellUtilLockMode", "group__SceShellSvcUser.html#gad115cbefed0fee3c7baf40223c408032", [
       [ "SCE_SHELL_UTIL_LOCK_MODE_LOCK", "group__SceShellSvcUser.html#ggad115cbefed0fee3c7baf40223c408032ac026f6a3d0c4e23d5f2976623479bcdb", null ],
       [ "SCE_SHELL_UTIL_LOCK_MODE_UNLOCK", "group__SceShellSvcUser.html#ggad115cbefed0fee3c7baf40223c408032ab561547490b7ee41a34bfc48e46aa3e5", null ]
