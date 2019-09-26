@@ -250,8 +250,8 @@ ALIASES               += usage{1}="\projectstart \projectinc{\1} \projectend"
 ALIASES               += usage{2}="\projectstart \projectinc{\1} \projectlib{\2} \projectend"
 ALIASES               += usage{3}="\projectstart \projectinc{\1} \projectlib{\2} \projectmod{\3} \projectend"
 ALIASES               += staticnote="\notestart \staticlib \noteend"
-ALIASES               += usergroup{1}="^^ \addtogroup \1_User User ^^ \ingroup \1 ^^ Exports for User ^^ @{ ^^"
-ALIASES               += kernelgroup{1}="^^ \addtogroup \1_Kernel Kernel ^^ \ingroup \1 ^^ Exports for Kernel ^^ @{ ^^"
+ALIASES               += usergroup{1}="^^ \addtogroup \1User User ^^ \ingroup \1 ^^ Exports for User ^^ @{ ^^"
+ALIASES               += kernelgroup{1}="^^ \addtogroup \1Kernel Kernel ^^ \ingroup \1 ^^ Exports for Kernel ^^ @{ ^^"
 
 # This tag can be used to specify a number of word-keyword mappings (TCL only).
 # A mapping has the form "name=value". For example adding "class=itcl::class"
