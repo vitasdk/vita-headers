@@ -70,10 +70,7 @@ typedef struct {
 typedef struct
 {
   SceSize size;
-  char versionString[16];
-  SceUInt unk_14;
-  SceUInt unk_18;
-  SceUInt unk_1C;
+  char versionString[0x1C];
   SceUInt version;
   SceUInt unk_24;
 } SceKernelFwInfo;
@@ -84,7 +81,7 @@ typedef struct {
   void *vaddr;
   uint32_t memsz;
   int unk_10;
-}SceKernelSegmentInfo2;
+} SceKernelSegmentInfo2;
 
 typedef struct {
   SceSize size;
@@ -140,25 +137,29 @@ int ksceKernelGetModuleInternal(SceUID modid, void **module);
 
 int ksceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 
-int ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 SceUID ksceKernelLoadModule(const char *path, int flags, SceKernelLMOption *option);
 int ksceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+
 int ksceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
 int ksceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 int ksceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
-SceUID ksceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
-SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
-int ksceKernelStartModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 SceUID ksceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKernelLMOption *option);
-SceUID ksceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelULMOption *option);
+int ksceKernelStartModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+
+int ksceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelULMOption *option);
 int ksceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+
+SceUID ksceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+int ksceKernelStopUnloadSharedModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 int ksceKernelMountBootfs(const char *bootImagePath);
 int ksceKernelUmountBootfs(void);
 
-int ksceKernelSearchModuleByName(const char *module_name);
+SceUID ksceKernelSearchModuleByName(const char *module_name);
 
 /**
  * @brief Get the main module for a given process.
