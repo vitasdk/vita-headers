@@ -2777,6 +2777,7 @@ modules:
         kernel: true
         nid: 0xD4A60A52
         functions:
+          ksceKernelGetModuleInfoByAddr: 0x1D9E0F7E
           ksceKernelGetSystemSwVersion: 0x5182E212
           ksceKernelLoadModule: 0x86D8D634
           ksceKernelLoadStartModule: 0x189BFBBB
@@ -2796,8 +2797,10 @@ modules:
         nid: 0xC445FA63
         functions:
           ksceKernelFinalizeKbl: 0xFDD7F646
+          ksceKernelGetModuleIdByAddr: 0x0053BA4A
           ksceKernelGetModuleInfo: 0xD269F915
           ksceKernelGetModuleInfo2: 0x6A655255
+          ksceKernelGetModuleInfoMinByAddr: 0x8309E043
           ksceKernelGetModuleInternal: 0xFE303863
           ksceKernelGetModuleLibraryInfo: 0xD4BF409C
           ksceKernelGetModuleList: 0x97CF7B4E
@@ -2810,10 +2813,14 @@ modules:
           ksceKernelLoadPreloadingModules: 0x3AD26B43
           ksceKernelLoadProcessImage: 0xAC4EABDB
           ksceKernelLoadPtLoadSegForFwloader: 0x448810D5
+          ksceKernelModuleUnloadMySelf: 0x2A69385E
           ksceKernelMountBootfs: 0x01360661
           ksceKernelRegisterSyscall: 0xB427025E
+          ksceKernelSetupForModulemgr: 0x3382952B
           ksceKernelStartModuleForPid: 0x6DF745D5
+          ksceKernelStartPreloadingModules: 0x432DCC7A
           ksceKernelStopModuleForPid: 0x7BB4CE54
+          ksceKernelStopUnloadPreloadingModules: 0x0E33258E
           ksceKernelUmountBootfs: 0x9C838A6B
           ksceKernelUnloadModuleForPid: 0x5972E2CC
           ksceKernelUnloadProcessModules: 0x0E33258E
