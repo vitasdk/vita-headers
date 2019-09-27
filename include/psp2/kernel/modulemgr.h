@@ -68,21 +68,18 @@ typedef struct SceKernelULMOption {
 int sceKernelGetModuleList(int flags, SceUID *modids, int *num);
 int sceKernelGetModuleInfo(SceUID modid, SceKernelModuleInfo *info);
 
-SceUID sceKernelLoadModule(char *path, int flags, SceKernelLMOption *option);
+SceUID sceKernelLoadModule(const char *path, int flags, SceKernelLMOption *option);
 int sceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
 
 int sceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, void *option, int *status);
 int sceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, void *option, int *status);
 
-SceUID sceKernelLoadStartModule(char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID sceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 typedef struct SceKernelFwInfo {
   SceSize size;
-  char versionString[16];
-  SceUInt unk_14;
-  SceUInt unk_18;
-  SceUInt unk_1C;
+  char versionString[0x1C];
   SceUInt version;
   SceUInt unk_24;
 } SceKernelFwInfo;
