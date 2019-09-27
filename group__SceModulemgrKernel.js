@@ -20,18 +20,19 @@ var group__SceModulemgrKernel =
     [ "ksceKernelGetSystemSwVersion", "group__SceModulemgrKernel.html#gaf8e98274a12bb8b9822b24164ac5e3dc", null ],
     [ "ksceKernelLoadModule", "group__SceModulemgrKernel.html#ga1a38255cc912a55eae4db7a3009a1709", null ],
     [ "ksceKernelLoadModuleForPid", "group__SceModulemgrKernel.html#gae6996022ffe32745aa390e674a3be23d", null ],
-    [ "ksceKernelLoadStartModule", "group__SceModulemgrKernel.html#ga49a2511e42a0a05710b7d312476555dc", null ],
+    [ "ksceKernelLoadStartModule", "group__SceModulemgrKernel.html#ga1f8dd6c9fca93ebf6d800939bc6bc85a", null ],
     [ "ksceKernelLoadStartModuleForPid", "group__SceModulemgrKernel.html#gae9d7309b038ef7642f53dc8cc3b531dc", null ],
     [ "ksceKernelLoadStartSharedModuleForPid", "group__SceModulemgrKernel.html#gaf2c8a7074f4aec0fd8dc7d47adbd5390", null ],
     [ "ksceKernelMountBootfs", "group__SceModulemgrKernel.html#ga572e4002ddc14186de161f64bec8b0b8", null ],
-    [ "ksceKernelSearchModuleByName", "group__SceModulemgrKernel.html#ga4119f91f692a66d43397772592145f53", null ],
+    [ "ksceKernelSearchModuleByName", "group__SceModulemgrKernel.html#ga57a0cbedf74ca1199eaa3c28da2ff0aa", null ],
     [ "ksceKernelStartModule", "group__SceModulemgrKernel.html#ga9bf46bc5edd2edd2851025400b1ebcfb", null ],
     [ "ksceKernelStartModuleForPid", "group__SceModulemgrKernel.html#gac1129ba1bde21e0ea0ad86ee0913ac90", null ],
     [ "ksceKernelStopModule", "group__SceModulemgrKernel.html#ga357387ab23ca53955199e2dd314a3964", null ],
     [ "ksceKernelStopModuleForPid", "group__SceModulemgrKernel.html#ga6b1b8dbca558e89129d728c3bfb99cc5", null ],
     [ "ksceKernelStopUnloadModule", "group__SceModulemgrKernel.html#gaae71c53cea57549c43d14264d6b96aff", null ],
     [ "ksceKernelStopUnloadModuleForPid", "group__SceModulemgrKernel.html#gad48e3014ec0cb8b0509fdb4b46e86a49", null ],
+    [ "ksceKernelStopUnloadSharedModuleForPid", "group__SceModulemgrKernel.html#ga8952fd9ee53b55a90c9ea18eb67d0d5d", null ],
     [ "ksceKernelUmountBootfs", "group__SceModulemgrKernel.html#gabf6e33f8ddb4e65999805415d838cf20", null ],
     [ "ksceKernelUnloadModule", "group__SceModulemgrKernel.html#ga3da21d8df445ea902fe5413ef24a43e3", null ],
-    [ "ksceKernelUnloadModuleForPid", "group__SceModulemgrKernel.html#gad12b4043c7b084a411142eb294ef8d52", null ]
+    [ "ksceKernelUnloadModuleForPid", "group__SceModulemgrKernel.html#ga665eae1dcd5ebffc5a8fb5842630e486", null ]
 ];
