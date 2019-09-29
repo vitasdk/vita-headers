@@ -8,7 +8,7 @@ var group__SceModulemgrKernel =
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrKernel.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrKernel.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
     [ "ksceKernelGetModuleInfo", "group__SceModulemgrKernel.html#gacecebf1d4bb156b73646f76c4c16cee6", null ],
-    [ "ksceKernelGetModuleInfo2", "group__SceModulemgrKernel.html#gaa1fa2d1b174f4f1fe4b7118bc2dec858", null ],
+    [ "ksceKernelGetModuleInfo2", "group__SceModulemgrKernel.html#ga2e1e19b8c4c38f6ac5ecdaedb84c815e", null ],
     [ "ksceKernelGetModuleInternal", "group__SceModulemgrKernel.html#ga59b7c4718267422ee29746bae7e34c92", null ],
     [ "ksceKernelGetModuleLibraryInfo", "group__SceModulemgrKernel.html#gaa0a7b031a56c44338d862c456f1990e1", null ],
     [ "ksceKernelGetModuleList", "group__SceModulemgrKernel.html#ga5ddc9e96b3db2392a7d13147a6962caf", null ],
