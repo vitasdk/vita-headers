@@ -225,7 +225,7 @@ int ksceKernelGetModuleInfo2(SceUID pid, SceUID modid, SceKernelModuleInfo2 *inf
  * @brief Get module info mini by module address
  *
  * @param[in]  pid               - target pid
- * @param[in]  module_addr       - target module address
+ * @param[in]  module_addr       - target module address, Also possible with data segment address
  * @param[out] module_nid        - can also set NULL, module nid output
  * @param[out] program_text_addr - can also set NULL, program text addr output
  * @param[out] module_name       - can also set NULL, module name output
