@@ -224,15 +224,15 @@ int ksceKernelGetModuleInfo2(SceUID pid, SceUID modid, SceKernelModuleInfo2 *inf
 /**
  * @brief Get module info mini by module address
  *
- * @param[in]  pid         - target pid
- * @param[in]  module_addr - target module address
- * @param[out] a3          - unknown output
- * @param[out] a4          - unknown output
- * @param[out] module_name - module name
+ * @param[in]  pid               - target pid
+ * @param[in]  module_addr       - target module address
+ * @param[out] module_nid        - can also set NULL, module nid output
+ * @param[out] program_text_addr - can also set NULL, program text addr output
+ * @param[out] module_name       - can also set NULL, module name output
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleInfoMinByAddr(SceUID pid, const void *module_addr, int *a3, int *a4, SceKernelModuleName *module_name);
+int ksceKernelGetModuleInfoMinByAddr(SceUID pid, const void *module_addr, uint32_t *module_nid, const void **program_text_addr, SceKernelModuleName *module_name);
 
 /**
  * @brief Get module info (internal)
