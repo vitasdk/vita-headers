@@ -27,9 +27,7 @@ extern "C" {
 #define SCE_KERNEL_STOP_CANCEL        SCE_KERNEL_STOP_FAIL
 /** @} */
 
-typedef struct {
-  char module_name[0x1C];
-} SceKernelModuleName;
+typedef char SceKernelModuleName[0x1C];
 
 typedef struct
 {
