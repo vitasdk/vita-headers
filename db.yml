@@ -3937,7 +3937,24 @@ modules:
           pthread_vita_tls_set_np: 0x483C96B2
           sched_yield: 0x473829B5
           unlink: 0x7BBCA34          
-SceLibMtp:
+  SceLibMp4Recorder:
+    nid: 0x4AF7A4D1
+    libraries:
+      SceLibMp4Recorder:
+        kernel: false
+        nid: 0x5EE05E0F
+        functions:
+          sceMp4RecAddAudioSample: 0x2C39D932
+          sceMp4RecAddVideoSample: 0xB263D8FB
+          sceMp4RecCreateRecorder: 0x21053FDE
+          sceMp4RecCsc: 0x7B3184E4
+          sceMp4RecDeleteRecorder: 0x5EBA2AE2
+          sceMp4RecInit: 0xE9193B80
+          sceMp4RecQueryPhysicalMemSize: 0x9A48028F
+          sceMp4RecRecorderEnd: 0xB51FEBAF
+          sceMp4RecRecorderInit: 0x4045786D
+          sceMp4RecTerm: 0xB13DAFF3
+  SceLibMtp:
     nid: 0xB18148CA
     libraries:
       SceLibMtp:
@@ -3984,23 +4001,6 @@ SceLibMtp:
           sceMtpReset: 0x97C128BD
           sceMtpStart: 0x128D0D05
           sceMtpStop: 0xC7AC05E8
-SceLibMp4Recorder:
-    nid: 0x4AF7A4D1
-    libraries:
-      SceLibMp4Recorder:
-        kernel: false
-        nid: 0x5EE05E0F
-        functions:
-          sceMp4RecAddAudioSample: 0x2C39D932
-          sceMp4RecAddVideoSample: 0xB263D8FB
-          sceMp4RecCreateRecorder: 0x21053FDE
-          sceMp4RecCsc: 0x7B3184E4
-          sceMp4RecDeleteRecorder: 0x5EBA2AE2
-          sceMp4RecInit: 0xE9193B80
-          sceMp4RecQueryPhysicalMemSize: 0x9A48028F
-          sceMp4RecRecorderEnd: 0xB51FEBAF
-          sceMp4RecRecorderInit: 0x4045786D
-          sceMp4RecTerm: 0xB13DAFF3
   SceLibXml:
     nid: 0x1ECD1248
     libraries:
@@ -9218,6 +9218,895 @@ SceLibMp4Recorder:
           ksceKernelGetPaddr: 0x8D160E65
           ksceKernelGetPaddrList: 0xE68BEEBD
           ksceKernelGetPaddrListForLargePage: 0x08A8A7E8
+          ksceKernelGetPaddrListForSmallPage: 0x16844CE6
+          ksceKernelGetPaddrPair: 0xAE36C775
+          ksceKernelGetPaddrPairForLargePage: 0x32257A24
+          ksceKernelGetPaddrPairForSmallPage: 0xB3575090
+          ksceKernelGetPhysicalMemoryType: 0x0AAA4FDD
+          ksceKernelGetPidContext: 0x2ECF7944
+          ksceKernelGetUidClass: 0x85336A1C
+          ksceKernelIsPaddrWithinSameSectionForUid: 0xF4AD89D8
+          ksceKernelKernelUidForUserUid: 0x45D22597
+          ksceKernelKernelUidForUserUidForClass: 0x184172B1
+          ksceKernelMapBlockUserVisible: 0x58D21746
+          ksceKernelMapBlockUserVisibleWithFlag: 0x04059C4B
+          ksceKernelMapUserBlock: 0x7D4F8B5F
+          ksceKernelMapUserBlockDefaultType: 0x278BC201
+          ksceKernelMapUserBlockDefaultTypeForPid: 0x0091D74D
+          ksceKernelMemBlockDecRefCounterAndReleaseUid: 0xF50BDC0C
+          ksceKernelMemBlockGetInfoEx: 0x24A99FFF
+          ksceKernelMemBlockGetInfoExForVisibilityLevel: 0xA73CFFEF
+          ksceKernelMemBlockGetSomeSize: 0x78337B62
+          ksceKernelMemBlockIncRefCounterAndReleaseUid: 0xEAF3849B
+          ksceKernelMemBlockRelease: 0x00575B00
+          ksceKernelMemBlockType2Memtype: 0x20C811FA
+          ksceKernelMemBlockTypeGetPrivileges: 0x6A0792A3
+          ksceKernelMemRangeRelease: 0x75C70DE0
+          ksceKernelMemRangeReleaseForPid: 0xA8525B06
+          ksceKernelMemRangeReleaseWithPerm: 0x22CBE925
+          ksceKernelMemRangeRetain: 0x59A4402F
+          ksceKernelMemRangeRetainForPid: 0x659586BF
+          ksceKernelMemRangeRetainWithPerm: 0xBC0A1D60
+          ksceKernelMemcpyKernelToUser: 0x6D88EF8A
+          ksceKernelMemcpyKernelToUserForPid: 0x6B825479
+          ksceKernelMemcpyKernelToUserForPidUnchecked: 0xFED82F2D
+          ksceKernelMemcpyUserToKernel: 0xBC996A7A
+          ksceKernelMemcpyUserToKernelForPid: 0x605275F8
+          ksceKernelMemcpyUserToUser: 0x1BD44DD5
+          ksceKernelMemcpyUserToUserForPid: 0x8E086C33
+          ksceKernelOpenUidForName: 0xD76E7452
+          ksceKernelProcModeVAtoPA: 0x61A67D32
+          ksceKernelRemapBlock: 0xDFE2C8CB
+          ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
+          ksceKernelSetNameForPidForUid: 0x12624884
+          ksceKernelSetObjectForUid: 0x4CFA4100
+          ksceKernelStrncpyKernelToUser: 0x80BD6FEB
+          ksceKernelStrncpyUserForPid: 0x75AAF178
+          ksceKernelStrncpyUserToKernel: 0xDB3EC244
+          ksceKernelStrnlenUser: 0xB429D419
+          ksceKernelStrnlenUserForPid: 0x9929EB07
+          ksceKernelSwitchPidContext: 0x2D711589
+          ksceKernelSwitchVmaForPid: 0x6F2ACDAE
+          ksceKernelUidRelease: 0x149885C4
+          ksceKernelUidRetain: 0x0F5C84B7
+          ksceKernelUnmapMemBlock: 0xFFCD9B60
+      SceSysmemForKernel:
+        kernel: true
+        nid: 0x63A519E5
+        functions:
+          ksceGUIDGetObjectWithClass: 0x7ABFA9A7
+          ksceGUIDGetUIDVectorByClass: 0xEC7D36EF
+          ksceGUIDKernelCreateWithAttr: 0x53E1FFDE
+          ksceGUIDOpenByGUID: 0xCF53EEE4
+          ksceKernelAddressSpaceFreeAllMemBlock: 0x89CE1F31
+          ksceKernelAddressSpaceSetPhyMemPart: 0x67955EE9
+          ksceKernelAddressSpaceUnmap: 0xCE72839E
+          ksceKernelAddressSpaceVAtoPA: 0xF2179820
+          ksceKernelAllocSystemCallTable: 0x5FFE4B79
+          ksceKernelCreateAddressSpace: 0x4A3737F0
+          ksceKernelCreateUidObj: 0xDF0288D7
+          ksceKernelDeleteAddressSpace: 0xF2D7FE3A
+          ksceKernelFindClassByName: 0x62989905
+          ksceKernelFreeSimpleMemBlock: 0xA1FFA2C9
+          ksceKernelGetFixedHeapInfoByPointer: 0x219E90FD
+          ksceKernelGetHeapInfo: 0x91733EF4
+          ksceKernelGetHeapInfoByPtr: 0x68451777
+          ksceKernelGetMemBlockType: 0x289BE3EC
+          ksceKernelGetUidDLinkClass: 0xC105604E
+          ksceKernelGetUidHeapClass: 0x4CCA935D
+          ksceKernelGetUidMemBlockClass: 0xAF729575
+          ksceKernelNameHeapGetInfo: 0xE443253B
+          ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
+          ksceKernelSysrootAlloc: 0xC0A4D2F3
+          ksceKernelUIDEntryHeapGetInfo: 0x686AA15C
+      SceSysrootForDriver:
+        kernel: true
+        nid: 0x2ED7F97A
+        functions:
+          ksceKernelInvokeInitCallback: 0x93CD44CD
+          ksceKernelSysrootCheckModelCapability: 0x8AA268D6
+          ksceKernelSysrootCoredumpTrigger: 0xCD8CD242
+          ksceKernelSysrootGetShellPid: 0x05093E7B
+          ksceKernelSysrootGetSystemSwVersion: 0x67AAB627
+          ksceKernelSysrootSetProcessHandler: 0x0F07C3FC
+          ksceKernelSysrootSetSystemSwVersion: 0x3276086B
+          ksceSysrootGetHardwareInfo: 0x930B1342
+          ksceSysrootUtMgrHasNpTestFlag: 0xA43599E9
+          ksceSysrootUtMgrSetNpTestFlag: 0xEE5D6CE9
+      SceSysrootForKernel:
+        kernel: true
+        nid: 0x3691DA45
+        functions:
+          ksceKernelAllocHeapMemory2: 0xD351EBC8
+          ksceKernelGetProcessTitleId: 0xEC3124A3
+          ksceKernelGetSysbase: 0x3E455842
+          ksceKernelGetSysrootBuffer: 0x9DB56D1F
+          ksceKernelIsColdBoot: 0xD7198963
+          ksceKernelIsSomeBootMode: 0x7B7F8171
+          ksceKernelSysrootAppMgrSpawnProcess: 0x3ACACD22
+          ksceKernelSysrootCheckRemapCodeForUser: 0xF8769E86
+          ksceKernelSysrootDbgpSuspendProcessAndWaitResume: 0x256B2394
+          ksceKernelSysrootGetCurrentAddressSpaceCB: 0x63EBB05B
+          ksceKernelSysrootGetCurrentUIDEntryHeapCB: 0xB4C24588
+          ksceKernelSysrootGetModulePrivate: 0x37EC12BB
+          ksceKernelSysrootGetPUIDEntryHeap: 0x88DE85EF
+          ksceKernelSysrootGetSharedMemory: 0xC8C8C321
+          ksceKernelSysrootGetStatus: 0x5C426B19
+          ksceKernelSysrootGetThreadAccessLevel: 0x20009397
+          ksceKernelSysrootGetVbaseResetVector: 0xCC85905B
+          ksceKernelSysrootIofilemgrStart: 0xF6A6D205
+          ksceKernelSysrootIsUserModeThread: 0x7FC7A163
+          ksceKernelSysrootProcessmgrStart2: 0x62E8F511
+          ksceKernelSysrootSetSysroot: 0x36916C30
+          ksceSysrootGetFactorySystemSwVersion: 0xD3872270
+          ksceSysrootGetModuleInfoForPid: 0xFF9F80FF
+          ksceSysrootGetNidName: 0x0B79E220
+          ksceSysrootGetSelfAuthInfo: 0x4F0A4066
+          ksceSysrootGetSelfInfo: 0xF10AB792
+          ksceSysrootGetSessionId: 0x84783B71
+          ksceSysrootGetWakeupFactor: 0x2F97041A
+          ksceSysrootIsAuCodecIcConexant: 0x46E72428
+          ksceSysrootIsBsodReboot: 0x4373AC96
+          ksceSysrootIsExternalBootMode: 0x89D19090
+          ksceSysrootIsSafeMode: 0x834439A7
+          ksceSysrootIsUpdateMode: 0xB0E1FC67
+          ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
+          ksceSysrootRegisterLicMgrGetLicenseStatus: 0x71DB83A2
+          ksceSysrootUseExternalStorage: 0x55392965
+          ksceSysrootUseInternalStorage: 0x50FE3B4D
+      SceUartForKernel:
+        kernel: true
+        nid: 0xC03DBE40
+        functions:
+          ksceUartInit: 0xA9C74212
+          ksceUartRead: 0x9BBF1255
+          ksceUartReadAvailable: 0x38DB7629
+          ksceUartWrite: 0x41973874
+  SceSysmodule:
+    nid: 0x0958E8D1
+    libraries:
+      SceSysmodule:
+        kernel: false
+        nid: 0x03FCF19D
+        functions:
+          sceSysmoduleIsLoaded: 0x53099B7A
+          sceSysmoduleIsLoadedInternal: 0x09A4AF1D
+          sceSysmoduleLoadModule: 0x79A0160A
+          sceSysmoduleLoadModuleInternal: 0x2399BF45
+          sceSysmoduleLoadModuleInternalWithArg: 0xC3C26339
+          sceSysmoduleUnloadModule: 0x31D87805
+          sceSysmoduleUnloadModuleInternal: 0xFF206B19
+          sceSysmoduleUnloadModuleInternalWithArg: 0xA2F40C4C
+  SceSystemGesture:
+    nid: 0xCC78BA95
+    libraries:
+      SceSystemGesture:
+        kernel: false
+        nid: 0xAF3FE2D3
+        functions:
+          sceSystemGestureCreateTouchRecognizer: 0xC3367370
+          sceSystemGestureFinalizePrimitiveTouchRecognizer: 0xB3875104
+          sceSystemGestureGetPrimitiveTouchEventByIndex: 0xE0577765
+          sceSystemGestureGetPrimitiveTouchEventByPrimitiveID: 0x480564C9
+          sceSystemGestureGetPrimitiveTouchEvents: 0xC750D3DA
+          sceSystemGestureGetPrimitiveTouchEventsCount: 0xBAB8ECCB
+          sceSystemGestureGetTouchEventByEventID: 0x5570B83E
+          sceSystemGestureGetTouchEventByIndex: 0x74724147
+          sceSystemGestureGetTouchEvents: 0x789D867C
+          sceSystemGestureGetTouchEventsCount: 0x13AD2218
+          sceSystemGestureGetTouchRecognizerInformation: 0xF0DB1AE5
+          sceSystemGestureInitializePrimitiveTouchRecognizer: 0x6078A08B
+          sceSystemGestureResetPrimitiveTouchRecognizer: 0xFD5A6504
+          sceSystemGestureResetTouchRecognizer: 0x0D941B90
+          sceSystemGestureUpdatePrimitiveTouchRecognizer: 0xDF4C665A
+          sceSystemGestureUpdateTouchRecognizer: 0x851FB144
+          sceSystemGestureUpdateTouchRecognizerRectangle: 0xA9DB29F6
+  SceSystimer:
+    nid: 0x9A1E946B
+    libraries:
+      SceSystimerForDriver:
+        kernel: true
+        nid: 0xA47EB09A
+        functions:
+          ksceKernelSysTimerAlloc: 0xE2B9D8E9
+  SceTeleportClient:
+    nid: 0x59E1282B
+    libraries:
+      SceTeleportClient:
+        kernel: false
+        nid: 0xE68FB26D
+        functions:
+          sceTeleportClientClearCacheInfo: 0xE1491C21
+          sceTeleportClientDeleteRemoteApp: 0xB0F81AF3
+          sceTeleportClientEndSearchDevice: 0x2EBCF588
+          sceTeleportClientFinalize: 0x26779A35
+          sceTeleportClientGetCacheInfo: 0x8534FF0F
+          sceTeleportClientGetDeviceDescription: 0xBB89052D
+          sceTeleportClientGetRemoteAppInfo: 0xEE9AEE60
+          sceTeleportClientGetRemoteAppInfoNum: 0x931E4029
+          sceTeleportClientInitialize: 0x48DEB4C8
+          sceTeleportClientLaunchRemoteApp: 0xE076A357
+          sceTeleportClientRegisterGetDeviceInfoCallback: 0xBA0D42D9
+          sceTeleportClientStartSearchDevice: 0x1775E8ED
+          sceTeleportClientWakeupLatestDevice: 0x9336895E
+  SceTeleportServer:
+    nid: 0x43921EF6
+    libraries:
+      SceTeleportServer:
+        kernel: false
+        nid: 0x5DF15228
+        functions:
+          sceTeleportServerSendInitialInfo: 0x2420A460
+  SceTouch:
+    nid: 0x7DAC4DEC
+    libraries:
+      SceTouch:
+        kernel: false
+        nid: 0x3E4F4A81
+        functions:
+          sceTouchActivateRegion: 0xBD59D652
+          sceTouchClearRegion: 0x2D94EAEA
+          sceTouchDisableTouchForce: 0x41194411
+          sceTouchDisableTouchForceExt: 0xED25DFDC
+          sceTouchEnableIdleTimerCancelSetting: 0x012EAE3A
+          sceTouchEnableTouchForce: 0xB18370C2
+          sceTouchEnableTouchForceExt: 0xA3FE877B
+          sceTouchGetDeviceInfo: 0xD7889B91
+          sceTouchGetPanelInfo: 0x10A2CA25
+          sceTouchGetPixelDensity: 0xF0704CF3
+          sceTouchGetPixelDensity2: 0xE0C1DB92
+          sceTouchGetProcessInfo: 0xAB364C23
+          sceTouchGetSamplingState: 0x26531526
+          sceTouchGetSamplingStateExt: 0xDC8671EA
+          sceTouchPeek: 0xFF082DF0
+          sceTouchPeek2: 0x3AD3D0A1
+          sceTouchPeekRegion: 0x04440622
+          sceTouchPeekRegionExt: 0x2CF6D7E2
+          sceTouchRead: 0x169A1D58
+          sceTouchRead2: 0x39401BEA
+          sceTouchReadRegion: 0x93B5635B
+          sceTouchReadRegionExt: 0x9F0ACAF9
+          sceTouchSetProcessPrivilege: 0x609EA489
+          sceTouchSetRegion: 0x6134DFBE
+          sceTouchSetRegionAttr: 0x08DD4C7C
+          sceTouchSetSamplingState: 0x1B9C5D14
+          sceTouchSetSamplingStateExt: 0x13CDFC43
+      SceTouchForDriver:
+        kernel: true
+        nid: 0xA4A7DAFC
+        functions:
+          ksceTouchActivateRegion: 0xC7F0DAA0
+          ksceTouchDisableTouchForce: 0xCDE79889
+          ksceTouchEnableIdleTimerCancelSetting: 0xEBF4C86A
+          ksceTouchEnableTouchForce: 0xE41B4BF8
+          ksceTouchGetDeviceInfo: 0xFD2E0278
+          ksceTouchGetPanelInfo: 0x937DB4C0
+          ksceTouchGetProcessInfo: 0x4DF3A37C
+          ksceTouchGetSamplingState: 0x174D0333
+          ksceTouchPeek: 0xBAD1960B
+          ksceTouchPeekRegion: 0x9B3F7207
+          ksceTouchRead: 0x70C8AACE
+          ksceTouchReadRegion: 0x9A91F624
+          ksceTouchRegisterVirtualTouchDriver: 0x03C3AC7C
+          ksceTouchSetCtrlpCallback: 0x628D9324
+          ksceTouchSetRegion: 0x7985B164
+          ksceTouchSetRegionAttr: 0x10A998DE
+          ksceTouchSetSamplingState: 0x1247257A
+          ksceTouchSetTouchEmulationData: 0xA32529B8
+  SceUdcd:
+    nid: 0x8E26B2A3
+    libraries:
+      SceUdcd:
+        kernel: false
+        nid: 0xA84BDE8A
+        functions:
+          sceUdcdGetDeviceInfo: 0x701C87CF
+          sceUdcdGetDeviceState: 0xFCD31220
+          sceUdcdGetDrvState: 0x99B3DA5D
+          sceUdcdRegisterCallback: 0xA7070093
+          sceUdcdUnregisterCallback: 0xC3FBA889
+          sceUdcdWaitState: 0x59EFFAF1
+      SceUdcdForDriver:
+        kernel: true
+        nid: 0xBC05A8FB
+        functions:
+          ksceUdcdActivate: 0x4FDEA423
+          ksceUdcdActivateInternal: 0x9119247B
+          ksceUdcdClearFIFO: 0x9F53D64D
+          ksceUdcdClearFIFOInternal: 0xA35F3BAF
+          ksceUdcdDeactivate: 0x8AE87657
+          ksceUdcdDeactivateInternal: 0xFDC10F93
+          ksceUdcdGetDeviceInfo: 0xFBEA3703
+          ksceUdcdGetDeviceInfoInternal: 0x45EB0177
+          ksceUdcdGetDeviceState: 0xE054B5E4
+          ksceUdcdGetDeviceStateInternal: 0x409DD196
+          ksceUdcdGetDrvState: 0xC0CA5DDB
+          ksceUdcdGetDrvStateInternal: 0x512F77BC
+          ksceUdcdRegister: 0x4E55244D
+          ksceUdcdRegisterInternal: 0x64675918
+          ksceUdcdReqCancelAll: 0x38787672
+          ksceUdcdReqRecv: 0xC60A74B2
+          ksceUdcdReqRecvInternal: 0x175E6179
+          ksceUdcdReqSend: 0x1ED0E89E
+          ksceUdcdReqSendInternal: 0x2E3E622A
+          ksceUdcdStall: 0x34079250
+          ksceUdcdStallInternal: 0x9B44DF29
+          ksceUdcdStart: 0x9FD733EA
+          ksceUdcdStartCurrentInternal: 0x360E95B9
+          ksceUdcdStartInternal: 0x90F8BCAE
+          ksceUdcdStop: 0x1494293B
+          ksceUdcdStopCurrentInternal: 0x0F3595AE
+          ksceUdcdStopInternal: 0x150FD3BB
+          ksceUdcdUnregister: 0x0DECE532
+          ksceUdcdUnregisterInternal: 0x6CCD152E
+          ksceUdcdWaitBusInitialized: 0x1C684884
+          ksceUdcdWaitState: 0xD03017C0
+          ksceUdcdWaitStateInternal: 0x7AD0C8D1
+  SceUlobjMgr:
+    nid: 0xAC99A848
+    libraries:
+      SceUlobjMgr:
+        kernel: false
+        nid: 0xDB18BB68
+        functions:
+          _sceUlobjMgrRegisterLibultProtocolRevision: 0x50F2F2AA
+          _sceUlobjMgrStartSupportingUserlevelObject: 0x08769991
+          _sceUlobjMgrStopSupportingUserlevelObject: 0xEF09284B
+  SceUlt:
+    nid: 0xDC2996DB
+    libraries:
+      SceUlt:
+        kernel: false
+        nid: 0x220668A5
+        functions:
+          _sceUltConditionVariableCreate: 0xD76A156C
+          _sceUltConditionVariableOptParamInitialize: 0x0603FCC1
+          _sceUltMutexCreate: 0x5AFEC7A1
+          _sceUltMutexOptParamInitialize: 0x24D87E05
+          _sceUltQueueCreate: 0x14DA1BB4
+          _sceUltQueueDataResourcePoolCreate: 0x40856827
+          _sceUltQueueDataResourcePoolOptParamInitialize: 0x8A4F88A2
+          _sceUltQueueOptParamInitialize: 0xF7A83023
+          _sceUltReaderWriterLockCreate: 0x2FB0EB32
+          _sceUltReaderWriterLockOptParamInitialize: 0xD8334A1F
+          _sceUltSemaphoreCreate: 0xDD59562C
+          _sceUltSemaphoreOptParamInitialize: 0x8E31B9FE
+          _sceUltUlthreadCreate: 0xB1290375
+          _sceUltUlthreadOptParamInitialize: 0x7F373376
+          _sceUltUlthreadRuntimeCreate: 0x86DDA3AE
+          _sceUltUlthreadRuntimeOptParamInitialize: 0x8486DDE6
+          _sceUltWaitingQueueResourcePoolCreate: 0x62F9493E
+          _sceUltWaitingQueueResourcePoolOptParamInitialize: 0xEF094E35
+          sceUltConditionVariableDestroy: 0x53420ED2
+          sceUltConditionVariableSignal: 0x9FE7CB9F
+          sceUltConditionVariableSignalAll: 0xEBB6FC1E
+          sceUltConditionVariableWait: 0x2CD0F57C
+          sceUltGetConditionVariableInfo: 0xC7AA4779
+          sceUltGetMutexInfo: 0x58D8DDE6
+          sceUltGetQueueDataResourcePoolInfo: 0x750E7962
+          sceUltGetQueueInfo: 0x1470318D
+          sceUltGetReaderWriterLockInfo: 0x10B3FB76
+          sceUltGetSemaphoreInfo: 0x25FE84F3
+          sceUltGetUlthreadInfo: 0xB5895640
+          sceUltGetUlthreadRuntimeInfo: 0x4F6A7DA6
+          sceUltGetWaitingQueueResourcePoolInfo: 0x04DC59F2
+          sceUltMutexDestroy: 0xEEBD9052
+          sceUltMutexLock: 0x001EAC8A
+          sceUltMutexTryLock: 0xE5936A69
+          sceUltMutexUnlock: 0x897C9097
+          sceUltQueueDataResourcePoolDestroy: 0x2B8D33F1
+          sceUltQueueDataResourcePoolGetWorkAreaSize: 0xECDA7FEE
+          sceUltQueueDestroy: 0xF37862DE
+          sceUltQueuePop: 0x1AD58A53
+          sceUltQueuePush: 0xA7E78FF9
+          sceUltQueueTryPop: 0x2A1A8EA6
+          sceUltQueueTryPush: 0x6D356B29
+          sceUltReaderWriterLockDestroy: 0xB1FEB79B
+          sceUltReaderWriterLockLockRead: 0x9AD07630
+          sceUltReaderWriterLockLockWrite: 0xF5F63E2C
+          sceUltReaderWriterLockTryLockRead: 0x2629C055
+          sceUltReaderWriterLockTryLockWrite: 0x944FB222
+          sceUltReaderWriterLockUnlockRead: 0x218D4743
+          sceUltReaderWriterLockUnlockWrite: 0x2A5741F5
+          sceUltSemaphoreAcquire: 0xF220D3AE
+          sceUltSemaphoreDestroy: 0x8EC57420
+          sceUltSemaphoreRelease: 0x65376E2D
+          sceUltSemaphoreTryAcquire: 0xAF15606D
+          sceUltUlthreadExit: 0x1E401DF8
+          sceUltUlthreadGetSelf: 0xA798C5D7
+          sceUltUlthreadJoin: 0x63483381
+          sceUltUlthreadRuntimeDestroy: 0x4E9A745C
+          sceUltUlthreadRuntimeGetWorkAreaSize: 0x5435C586
+          sceUltUlthreadTryJoin: 0xB4CF88AC
+          sceUltUlthreadYield: 0xCAD57BAD
+          sceUltWaitingQueueResourcePoolDestroy: 0xC9E96714
+          sceUltWaitingQueueResourcePoolGetWorkAreaSize: 0x644DA029
+  SceUsbPspcm:
+    nid: 0xADB937B9
+    libraries:
+      SceUsbPspcm:
+        kernel: false
+        nid: 0xC06A361B
+        functions:
+          sceUsbPspcmClose: 0xEA4B99DC
+          sceUsbPspcmDevctl: 0xF7079111
+          sceUsbPspcmIoctlCancelWaitData: 0x2A3A4A4A
+          sceUsbPspcmIoctlPollData: 0xF9C17E1F
+          sceUsbPspcmIoctlReset: 0x075B0D23
+          sceUsbPspcmIoctlWaitData: 0x7C1410FB
+          sceUsbPspcmOpen: 0x29E0D985
+          sceUsbPspcmRead: 0xD70556DA
+          sceUsbPspcmSetTitle: 0x9F40F727
+          sceUsbPspcmStartDevice: 0xFD87B944
+          sceUsbPspcmStopDevice: 0x495D3A91
+          sceUsbPspcmWrite: 0xC09CD942
+  SceUsbSerial:
+    nid: 0xB3C543D4
+    libraries:
+      SceUsbSerial:
+        kernel: false
+        nid: 0x2820117D
+        functions:
+          sceUsbSerialClose: 0xF2415853
+          sceUsbSerialGetRecvBufferSize: 0xE8567A87
+          sceUsbSerialRecv: 0xF26DC8D8
+          sceUsbSerialSend: 0x89E71202
+          sceUsbSerialSetup: 0x290E08B4
+          sceUsbSerialStart: 0xE3BEC18C
+          sceUsbSerialStatus: 0xA6A2F5DE
+      SceUsbSerialForDriver:
+        kernel: true
+        nid: 0x8829C2F3
+        functions:
+          ksceUsbSerialClose: 0xE6B1E64F
+          ksceUsbSerialGetRecvBufferSize: 0xF531B5AE
+          ksceUsbSerialRecv: 0x6B5E296F
+          ksceUsbSerialSend: 0x0C2E73C0
+          ksceUsbSerialSetup: 0x590B8F97
+          ksceUsbSerialStart: 0xFEE7F4BA
+          ksceUsbSerialStatus: 0x8C426906
+  SceUsbServ:
+    nid: 0xAE54F579
+    libraries:
+      SceUsbServ:
+        kernel: false
+        nid: 0xDA3C0EF0
+        functions:
+          sceUsbServAccessoryActivate: 0xB33AA2EB
+          sceUsbServAccessoryDeactivate: 0x154246A9
+  SceUsbd:
+    nid: 0x3525FE7A
+    libraries:
+      SceUsbdForDriver:
+        kernel: true
+        nid: 0xA0EBCA41
+        functions:
+          ksceUsbdCloseEndpoint: 0xF304DC5C
+          ksceUsbdControlTransfer: 0x2E05660F
+          ksceUsbdGetDescriptor: 0xBC3EF82B
+          ksceUsbdInterruptTransfer: 0xA0BF85B8
+          ksceUsbdOpenEndpoint: 0x1CDBFF9F
+          ksceUsbdRegisterCompositeLdd: 0x6E53D7F4
+          ksceUsbdRegisterDriver: 0x1EC94F18
+          ksceUsbdSuspendPhase2: 0xD7AA730D
+          ksceUsbdUnregisterDriver: 0x216F108D
+      SceUsbdForUser:
+        kernel: false
+        nid: 0xC3AEAB67
+        functions:
+          sceUsbdAttach: 0xEACEAE86
+          sceUsbdAttachCompositeLdd: 0xCA8F2F59
+          sceUsbdClosePipe: 0xAA3AF5D5
+          sceUsbdEnd: 0x5736A150
+          sceUsbdGetDescriptor: 0xAE671F22
+          sceUsbdGetDescriptorSize: 0xB357AC81
+          sceUsbdGetDeviceAddress: 0xC54F9D11
+          sceUsbdGetDeviceList: 0x2DE0239E
+          sceUsbdGetDeviceSpeed: 0x6C5AACD0
+          sceUsbdGetIsochTransferStatus: 0xA0A2C826
+          sceUsbdGetTransferStatus: 0xCDF5B6E0
+          sceUsbdInit: 0x77D58B31
+          sceUsbdIsochTransferData: 0x594D82FD
+          sceUsbdOpenDefaultPipe: 0x4A26DDCC
+          sceUsbdOpenPipe: 0xF94521A6
+          sceUsbdReceiveEvent: 0x16FEE05D
+          sceUsbdRegisterCallback: 0x9A820167
+          sceUsbdRegisterCompositeLdd: 0x2A7C0263
+          sceUsbdRegisterLdd: 0x6AD28166
+          sceUsbdResetDevice: 0xDEB3BE59
+          sceUsbdTransferData: 0x716048C1
+          sceUsbdUnregisterCallback: 0x0585EA80
+          sceUsbdUnregisterLdd: 0x473692CC
+  SceUsbstorVStorDriver:
+    nid: 0x1150E326
+    libraries:
+      SceUsbstorVStor:
+        kernel: false
+        nid: 0x17F294B9
+        functions:
+          sceUsbstorVStorSetDeviceInfo: 0x14455C20
+          sceUsbstorVStorSetImgFilePath: 0x8C9F93AB
+          sceUsbstorVStorStart: 0xB606F1AF
+          sceUsbstorVStorStop: 0x0FD67059
+  SceVideoExport:
+    nid: 0x86B46C2D
+    libraries:
+      SceVideoExport:
+        kernel: false
+        nid: 0xF0812A7C
+        functions:
+          sceVideoExportFromFile: 0x4F60A3C8
+  SceVideodec:
+    nid: 0x000000DE
+    libraries:
+      SceVideodecUser:
+        kernel: false
+        nid: 0x163C3727
+        functions:
+          sceAvcdecCreateDecoder: 0xE82BB69B
+          sceAvcdecCreateDecoderInternal: 0x808FECBD
+          sceAvcdecCreateDecoderNongameapp: 0x3102196C
+          sceAvcdecCsc: 0xB2A428DB
+          sceAvcdecCscInternal: 0xC300BF46
+          sceAvcdecDecode: 0xD6190A06
+          sceAvcdecDecodeAuInternal: 0x2385A82B
+          sceAvcdecDecodeAuNalAuInternal: 0x68628BC4
+          sceAvcdecDecodeAuNalAuNongameapp: 0x0E4A6EE3
+          sceAvcdecDecodeAuNongameapp: 0x867C75AD
+          sceAvcdecDecodeAvailableSize: 0x441673E3
+          sceAvcdecDecodeFlush: 0x25F31020
+          sceAvcdecDecodeGetPictureInternal: 0x63237A8F
+          sceAvcdecDecodeGetPictureNongameapp: 0xCF3CFC70
+          sceAvcdecDecodeGetPictureWithWorkPictureInternal: 0x66F65155
+          sceAvcdecDecodeNalAu: 0x6C68A38F
+          sceAvcdecDecodeNalAuWithWorkPicture: 0xDDF41798
+          sceAvcdecDecodeSetTrickModeNongameapp: 0x7AEB56AB
+          sceAvcdecDecodeSetUserDataSei1FieldMemSizeNongameapp: 0xD037206A
+          sceAvcdecDecodeStop: 0x9648D853
+          sceAvcdecDecodeStopWithWorkPicture: 0x67AD42C3
+          sceAvcdecDecodeWithWorkPicture: 0xBA5A009B
+          sceAvcdecDeleteDecoder: 0x8A0E359E
+          sceAvcdecGetSeiPictureTimingInternal: 0x8EB07E2F
+          sceAvcdecGetSeiUserDataNongameapp: 0xD6B26396
+          sceAvcdecQueryDecoderMemSize: 0x97E95EDB
+          sceAvcdecQueryDecoderMemSizeInternal: 0x7BC8DFEA
+          sceAvcdecQueryDecoderMemSizeNongameapp: 0xFA072F66
+          sceAvcdecRegisterCallbackInternal: 0x8FA94451
+          sceAvcdecRegisterCallbackNongameapp: 0x497F7EC7
+          sceAvcdecSetDecodeMode: 0x75803C83
+          sceAvcdecSetDecodeModeInternal: 0xF57CC2BC
+          sceAvcdecSetInterlacedStreamMode: 0x2DD70FC8
+          sceAvcdecSetLowDelayModeNongameapp: 0xD57F82C1
+          sceAvcdecSetRecoveryPointSEIMode: 0x58C620EC
+          sceAvcdecUnregisterCallbackInternal: 0x24E905BF
+          sceAvcdecUnregisterCallbackNongameapp: 0xE07A91B5
+          sceAvcdecUnregisterCallbackWithCbidInternal: 0x001069FB
+          sceAvcdecUnregisterCallbackWithCbidNongameapp: 0x7761522A
+          sceM4vdecCreateDecoder: 0x17C6AC9E
+          sceM4vdecCreateDecoderInternal: 0x4D4CA34E
+          sceM4vdecCsc: 0xB4BC325B
+          sceM4vdecDecode: 0x624664DB
+          sceM4vdecDecodeAvailableSize: 0xA8CF1942
+          sceM4vdecDecodeFlush: 0x7C460D75
+          sceM4vdecDecodeStop: 0x87CFD23B
+          sceM4vdecDecodeStopWithWorkPicture: 0xC1CF351F
+          sceM4vdecDecodeWithWorkPicture: 0x8F36574D
+          sceM4vdecDeleteDecoder: 0x0EB2E4E7
+          sceM4vdecQueryDecoderMemSize: 0xC67C1A80
+          sceM4vdecQueryDecoderMemSizeInternal: 0x84DC8101
+          sceVideodecInitLibrary: 0xF1AF65A3
+          sceVideodecInitLibraryInternal: 0x0FD286E0
+          sceVideodecInitLibraryNongameapp: 0x26F3C35D
+          sceVideodecInitLibraryWithUnmapMem: 0x230A78FF
+          sceVideodecInitLibraryWithUnmapMemInternal: 0x36ADE1E5
+          sceVideodecInitLibraryWithUnmapMemNongameapp: 0x108C1FEC
+          sceVideodecQueryInstanceNongameapp: 0xEF03E31B
+          sceVideodecQueryMemSize: 0x6731BB2D
+          sceVideodecQueryMemSizeInternal: 0xEB48554F
+          sceVideodecQueryMemSizeNongameapp: 0x2D9AE981
+          sceVideodecSetConfig: 0x9B871779
+          sceVideodecSetConfigInternal: 0x4A9CB138
+          sceVideodecTermLibrary: 0x3A5F4924
+  SceVoice:
+    nid: 0xF5F3E7CA
+    libraries:
+      SceVoice:
+        kernel: false
+        nid: 0xCE56E214
+        functions:
+          sceVoiceCheckTopology: 0x874054CE
+          sceVoiceConnectIPortToOPort: 0x698BDAAE
+          sceVoiceCreatePort: 0xFA4E57B1
+          sceVoiceDeletePort: 0xAE46564D
+          sceVoiceDisconnectIPortFromOPort: 0x5F0260F4
+          sceVoiceEnd: 0xAC98853E
+          sceVoiceGetBitRate: 0xD02C00B4
+          sceVoiceGetMuteFlag: 0xC913F7E9
+          sceVoiceGetPortAttr: 0x73F72940
+          sceVoiceGetPortInfo: 0x5933CCFB
+          sceVoiceGetResourceInfo: 0x6E46950E
+          sceVoiceGetVolume: 0x875CC80D
+          sceVoiceInit: 0x805CC20F
+          sceVoicePausePort: 0x23C6B16B
+          sceVoicePausePortAll: 0x39AA3884
+          sceVoiceReadFromOPort: 0x09E4D18C
+          sceVoiceResetPort: 0x5E1CE910
+          sceVoiceResumePort: 0x2DE35411
+          sceVoiceResumePortAll: 0x1F93FC0C
+          sceVoiceSetBitRate: 0x02F58D6F
+          sceVoiceSetMuteFlag: 0x0B9E4AE2
+          sceVoiceSetMuteFlagAll: 0xDB90EAC4
+          sceVoiceSetPortAttr: 0x9B0D3490
+          sceVoiceSetVolume: 0xD93769E6
+          sceVoiceStart: 0xB2ED725B
+          sceVoiceStop: 0xC3868DF6
+          sceVoiceUpdatePort: 0xCE855C50
+          sceVoiceWriteToIPort: 0x0A22EC0E
+  SceVoiceQoS:
+    nid: 0x9A89A62B
+    libraries:
+      SceVoiceQoS:
+        kernel: false
+        nid: 0x650551BC
+        functions:
+          sceVoiceQoSConnect: 0xE0C5CEEE
+          sceVoiceQoSCreateLocalEndpoint: 0xAAB54BE4
+          sceVoiceQoSCreateRemoteEndpoint: 0xBAB98727
+          sceVoiceQoSDeleteLocalEndpoint: 0x68FABF6F
+          sceVoiceQoSDeleteRemoteEndpoint: 0xC2F2C771
+          sceVoiceQoSDisconnect: 0x3C7A08B0
+          sceVoiceQoSEnd: 0xFB0B747B
+          sceVoiceQoSGetConnectionAttribute: 0xE81B8D44
+          sceVoiceQoSGetLocalEndpoint: 0xE5B4527D
+          sceVoiceQoSGetLocalEndpointAttribute: 0xC981AB3B
+          sceVoiceQoSGetRemoteEndpoint: 0x876A9B9C
+          sceVoiceQoSGetStatus: 0xC9DC1425
+          sceVoiceQoSInit: 0x4B5FFF1C
+          sceVoiceQoSReadPacket: 0x2D613549
+          sceVoiceQoSSetConnectionAttribute: 0xE757806F
+          sceVoiceQoSSetLocalEndpointAttribute: 0x540CEBA5
+          sceVoiceQoSWritePacket: 0x2FE1F28F
+  SceVshBridge:
+    nid: 0xA2BE1892
+    libraries:
+      SceDrmBridge:
+        kernel: false
+        nid: 0xFF4CD67F
+        functions:
+          sceDrmBridgeGetCurrentSecureTick: 0xFFB164E2
+          sceDrmBridgeIsAllowRemotePlayDebug: 0x1BBB62E9
+          sceDrmBridgeMlnpsnlAuth1: 0xE04F767B
+          sceDrmBridgeMlnpsnlAuth2: 0x6D483DFC
+      SceVshBridge:
+        kernel: false
+        nid: 0x35C5ACD4
+        functions:
+          _vshAppMgrAcInstGetAcdirParam: 0x1E91B5F5
+          _vshAppMgrBgdlSetQueueStatus: 0xE842333E
+          _vshAppMgrCheckPfsMounted: 0x771E2612
+          _vshAppMgrCloudDataCreateHeader: 0x29E83224
+          _vshAppMgrCloudDataDstCreateMount: 0x8C4B556F
+          _vshAppMgrCloudDataGetMcId: 0xEFCBC92C
+          _vshAppMgrCloudDataSetMcId: 0xF34E028A
+          _vshAppMgrCloudDataSetupKey: 0x4DD6CA46
+          _vshAppMgrCloudDataSrcMount: 0x9C480D61
+          _vshAppMgrCloudDataVerifyHeader: 0x2715097A
+          _vshAppMgrFakeSaveDataCreateMount: 0x7C2975D7
+          _vshAppMgrIsExclusiveProcessRunning: 0x853F63CA
+          _vshAppMgrLocalBackupGetOfflineId: 0xD433C0A9
+          _vshAppMgrLocalBackupVerifyOfflineHeader: 0x96BDC2BF
+          _vshAppMgrRegisterPath: 0x179965E7
+          _vshAppMgrSaveDataLocalBackupTargetGetList: 0x1A35977D
+          _vshAppMgrSaveDataLocalBackupTargetRemoveItem: 0xBE084F03
+          _vshAppMgrSaveDataNotifyBackupFinished: 0xCE34242F
+          _vshAppMgrSystemParamDateTimeSetConf: 0xBA0385A2
+          _vshAppMgrUpdateRifInfo: 0xC9C5AB28
+          _vshCoredumpCafCreateIv: 0x2D989282
+          _vshCoredumpCafHeaderFinal: 0xC101F8BF
+          _vshCoredumpCafHeaderTransform: 0x9B4015E6
+          _vshCoredumpCafSegmentFinal: 0x396BBBEF
+          _vshCoredumpCafSegmentInit: 0x88444AB8
+          _vshCoredumpCafSegmentTransform: 0x435AC680
+          _vshCoredumpCreateDump: 0x02ABCAF7
+          _vshDisplayGetActualViewportConf: 0x9039BF0B
+          _vshDisplaySetViewportConf: 0xEDC6652A
+          _vshEventLogPut: 0x87E21AFF
+          _vshIdStorageCreateAtomicLeaves: 0xDD50C65F
+          _vshIoChstat: 0xE2A2B139
+          _vshIoDread: 0x7EC1F98E
+          _vshIoGetstat: 0x756A48A7
+          _vshIoMount: 0x3C522C35
+          _vshKernelGetCompiledSdkVersionByPid: 0x74311638
+          _vshKernelSearchModuleByName: 0x232F0EEE
+          _vshKernelShutdownSystem: 0x933425F1
+          _vshLedSetMode: 0x04F5FC78
+          _vshNpDrmEbootSigConvert: 0x201871C6
+          _vshNpDrmEbootSigGenMultiDisc: 0xAC6C6FCA
+          _vshNpDrmEbootSigGenPs1: 0xF2CE6E93
+          _vshNpDrmEbootSigGenPsp: 0xCE9835A7
+          _vshNpDrmEbootSigVerify: 0xAC48443B
+          _vshNpDrmGetLegacyDocKey: 0xE6D625B8
+          _vshNpDrmPspEbootSigGen: 0xC74F7D57
+          _vshNpDrmPspEbootVerify: 0x3CD0DBD6
+          _vshPowerSetBatteryFakeStatus: 0xD0BEC0CC
+          _vshRtcGetAlarmTick: 0x998DAF02
+          _vshRtcGetCurrentSecureTick: 0xAF6A2745
+          _vshRtcGetSecureAlarmTick: 0xFA280B0B
+          _vshRtcSetAlarmTick: 0x8BFEBC76
+          _vshRtcSetCurrentDebugNetworkTick: 0x9412BA2C
+          _vshRtcSetCurrentNetworkTick: 0x2B27AE6E
+          _vshRtcSetCurrentSecureTick: 0xC350E6CF
+          _vshRtcSetCurrentTick: 0xC4DDAC72
+          _vshRtcSetSecureAlarmTick: 0xC49D8699
+          _vshSDfCtlSetBootParameter: 0xD4DE24E2
+          _vshSblAimgrGetConsoleId: 0xF183726E
+          _vshSblAimgrGetPscode: 0x1AF2CFC9
+          _vshSblAimgrGetPscode2: 0x71B2ADE6
+          _vshSblAimgrGetSMI: 0x28C4D6D6
+          _vshSblAimgrGetVisibleId: 0xB693DA6E
+          _vshSblAuthMgrVerifySpsfo: 0xBA7BDD18
+          _vshSblGcAuthMgrMlnpsnlAuth1: 0xD643667D
+          _vshSblGcAuthMgrMlnpsnlAuth2: 0x96E89920
+          _vshSblGetSystemSwVersion: 0x0F529915
+          _vshSblSsCreatePassPhrase: 0x4079CD88
+          _vshSblSsDecryptWithPortability: 0x99506729
+          _vshSblSsEncryptWithPortability: 0x3F6DF5F3
+          _vshSblSsGenerateAppKey: 0x82F2FBA8
+          _vshSblSsGetNvsData: 0x9DFA6D33
+          _vshSblSsSetNvsData: 0xC176D19F
+          _vshSysconCtrlManualChargeMode: 0x07B43EFB
+          _vshSysconGetHardwareInfo: 0x21000193
+          _vshSysconGetHardwareInfo2: 0xD7A3D69C
+          _vshSysconGetManualChargeMode: 0x3CCFAEF4
+          _vshSysconGetManufacturesStatus: 0x484DE68A
+          _vshSysconGetTemperatureLog: 0x1D80FCB8
+          _vshSysconGetUsbDetStatus: 0x863AD3C2
+          _vshSysconLogReadData: 0x33A4F9DA
+          _vshTouchSetTouchEmulationData: 0x77AA1E8B
+          vshAppMgrCheckContentInstallPeriod: 0x8657814C
+          vshAppMgrCloudDataClearMcId: 0xE42605BB
+          vshAppMgrDebugSettingNotifyUpdate: 0xA82E2E98
+          vshAppMgrGetPfsProcessStatus: 0xB311FDE1
+          vshCoredumpCafContextCreate: 0x1FC9739A
+          vshCoredumpCafContextDestroy: 0xE638A942
+          vshCoredumpCafFinal: 0x54012367
+          vshCoredumpCafHeaderInit: 0x5A4ECC6F
+          vshCoredumpCafInit: 0x3A0D9473
+          vshCoredumpDeleteCrashReportCaf: 0x552CF1D6
+          vshCtrlChangePortAssign: 0x205B765C
+          vshCtrlGetActiveControllerPort: 0xB0132625
+          vshCtrlIsBdRemoconConnected: 0xB1D615A6
+          vshCtrlRegisterNotifyCallBack: 0x25B77E4F
+          vshCtrlSetIdleCancelKey: 0x8E7F67F1
+          vshCtrlSetIdleCancelThreshold: 0xABA88997
+          vshCtrlSetTurnOffInterval: 0x27CC1CF5
+          vshCtrlSetVibrationSetting: 0x59F24C78
+          vshCtrlUnregisterNotifyCallBack: 0x64DB80C8
+          vshDisplayRegisterFrameBufCallback: 0x9038C55C
+          vshDisplaySetInvertColors: 0x27DFAD31
+          vshHdmiCecCmdForcedPollingMsg: 0xD53E02C5
+          vshHdmiDisableCec: 0xBDCF9D86
+          vshHdmiEnableCec: 0x0FD12633
+          vshIdStorageCreateLeaf: 0x8E0E0C7D
+          vshIdStorageDeleteLeaf: 0x51855867
+          vshIdStorageFlush: 0x32691EA3
+          vshIdStorageFormat: 0x1AB26527
+          vshIdStorageGetFreeLeaves: 0x1A64C088
+          vshIdStorageGetLeafSize: 0x05A07BFD
+          vshIdStorageIsDirty: 0x5EBE2E01
+          vshIdStorageIsFormatted: 0x26115B5A
+          vshIdStorageIsReadOnly: 0xCD926259
+          vshIdStorageLookup: 0x58BA5A8D
+          vshIdStorageReadLeaf: 0xDBD1D01C
+          vshIdStorageRestart: 0x7D767ECF
+          vshIdStorageUnformat: 0x540BD151
+          vshIdStorageUpdate: 0x9693D645
+          vshIdStorageWriteLeaf: 0xE5083DB6
+          vshIoClearErrorEvent: 0xD950A054
+          vshIoCreateErrorEvent: 0x0D2A63DD
+          vshIoCreateMountEvent: 0x025AD398
+          vshIoDeleteErrorEvent: 0x86EBB9FD
+          vshIoDeleteMountEvent: 0x57F63369
+          vshIoFlock: 0xDAB83424
+          vshIoGetProcessDefaultPriorityForSystem: 0xBD2BAF2B
+          vshIoSetProcessDefaultPriorityForSystem: 0xF581621D
+          vshIoUmount: 0x35BC26AC
+          vshKernelCheckModelCapability: 0x9B38EAEC
+          vshKernelDisableAutoClockDown: 0x0A18C46C
+          vshKernelEnableAutoClockDown: 0x29459DD2
+          vshKernelSendSysEvent: 0x71D9DB5C
+          vshMemoryCardEnableSlowMode: 0xECE08D1D
+          vshMemoryCardGetCardInsertState: 0x1ED13AD6
+          vshMotionNoiseFilterIsAvailable: 0x334E9FD3
+          vshMsifGetMsInfo: 0x349AA70B
+          vshNpDrmIsLooseAccountBind: 0x333875AB
+          vshNpDrmUpdateAccountId: 0xCB46FAB0
+          vshNpDrmUpdateDebugSettings: 0x89D89CAC
+          vshPowerGetWakeupFactor: 0x718B98BB
+          vshPowerRequestColdReset: 0x4123D4C1
+          vshPowerRequestHibernate: 0xAFDAA0D2
+          vshPowerSetPowerSwMode: 0xDA3E4AE6
+          vshPowerSetPsButtonPushTime: 0xC114F160
+          vshPowerSetStandbyButtonPushTime: 0x85745035
+          vshRemovableMemoryGetCardInsertState: 0xC63787B6
+          vshRtcIsAlarmed: 0x26120975
+          vshRtcIsSecureAlarmed: 0x8BF60888
+          vshRtcRegisterCallback: 0xC9970EDA
+          vshRtcRegisterSecureAlarmCallback: 0x70F1BD81
+          vshRtcSetConf: 0xE35889FF
+          vshRtcUnregisterCallback: 0xF057C477
+          vshRtcUnregisterSecureAlarmCallback: 0xAB49F6E3
+          vshSblACMgrHasCapability: 0xD8E5F14A
+          vshSblAimgrIsCEX: 0x27216A82
+          vshSblAimgrIsDEX: 0xBAFAC501
+          vshSblAimgrIsDolce: 0x2C28B1B0
+          vshSblAimgrIsGenuineDolce: 0xDDFC4EEE
+          vshSblAimgrIsGenuineVITA: 0xB6F795A6
+          vshSblAimgrIsTest: 0xA357D6CC
+          vshSblAimgrIsTool: 0x3BBD5935
+          vshSblAimgrIsVITA: 0xE9168697
+          vshSblPmMgrSetSdModeOff: 0x2E7A3AF7
+          vshSblQafMgrIsAllowControlIduAutoUpdate: 0x51CE4C9A
+          vshSblQafMgrIsAllowDtcpIpReset: 0xD0C8D4EC
+          vshSblQafMgrIsAllowFakeACInstall: 0x565E0504
+          vshSblQafMgrIsAllowKeepCoreFile: 0xA458FACE
+          vshSblQafMgrIsAllowLiblocationChangeModel: 0x58E1DE33
+          vshSblQafMgrIsAllowLoadMagicGate: 0x12831F05
+          vshSblQafMgrIsAllowLoadPSPEmuWhiteList: 0x3F3B2DEF
+          vshSblQafMgrIsAllowMarlinTest: 0x1484AF06
+          vshSblQafMgrIsAllowNearTest: 0xD0D4EB67
+          vshSblQafMgrIsAllowPSPEmuDeleteParameter: 0x3FB89A16
+          vshSblQafMgrIsAllowPSPEmuScreenShot: 0xF1178BE6
+          vshSblQafMgrIsAllowPSPEmuSelectNPEnv: 0x2B5DEE0F
+          vshSblQafMgrIsAllowPSPEmuShowQAInfo: 0xB19EAB45
+          vshSblQafMgrIsAllowRemotePlayDebug: 0xBAF52A4A
+          vshSblQafMgrIsAllowShowTitleUpgradeInfo: 0x314BFD78
+          vshSblQafMgrIsAllowSystemAppDebug: 0x31AACDD2
+          vshSblSsIsDevelopmentMode: 0x641890D8
+          vshSblUtMgrHasComTestFlag: 0x06AD7CBB
+          vshSblUtMgrHasNpTestFlag: 0xAD95CBE8
+          vshSblUtMgrHasStoreFlag: 0x4A004B05
+          vshSdGetCardInfo: 0xE99DBAB2
+          vshSysconBeginConfigstorageTransaction: 0x972B68A2
+          vshSysconClearTemperatureLog: 0x83DDCF27
+          vshSysconCommitConfigstorageTransaction: 0x2931A602
+          vshSysconEnableHibernateIO: 0xF2CF8BD3
+          vshSysconEndConfigstorageTransaction: 0x05DFCAEE
+          vshSysconGetBatteryCalibData: 0xF4F2F841
+          vshSysconGetLogInfo: 0x723FDFD9
+          vshSysconHasWWAN: 0xCEC8B917
+          vshSysconIduModeClear: 0x3C8BE31F
+          vshSysconIduModeSet: 0x4A2F495A
+          vshSysconIsDownLoaderMode: 0x00A4ADA2
+          vshSysconIsIduMode: 0xE493EFF4
+          vshSysconIsMCEmuCapable: 0x32D0951D
+          vshSysconIsShowMode: 0xFF244636
+          vshSysconLoadConfigstorageScript: 0x7623662F
+          vshSysconLogStart: 0x4404595B
+          vshSysconLogStartWaiting: 0xCB53B13C
+          vshSysconShowModeClear: 0xD7E71C94
+          vshSysconShowModeSet: 0x5E2A8BBD
+          vshSysconVerifyConfigstorageScript: 0xE1E2BAD0
+  SceWlanBt:
+    nid: 0x99052D93
+    libraries:
+      SceWlan:
+        kernel: false
+        nid: 0x22821EA3
+        functions:
+          sceWlanGetConfiguration: 0x70AF9BD6
+          sceWlanGetWakeOnTargetProcess: 0x18E6AFB2
+          sceWlanRegisterCallback: 0xAA2E46F6
+          sceWlanSetConfiguration: 0xDBE8AEF2
+          sceWlanUnregisterCallback: 0x826DC04F
+      SceWlanBtForDriver:
+        kernel: true
+        nid: 0xFD94FCE9
+        functions:
+          ksceWlanBtAttachMonitor: 0xC5AA6F43
+          ksceWlanBtDetachMonitor: 0xA7FDE9DC
+          ksceWlanBtGetConfiguration: 0x0FC89113
+          ksceWlanBtSetConfiguration: 0x4C96C3B70x08A8A7E8
           ksceKernelGetPaddrListForSmallPage: 0x16844CE6
           ksceKernelGetPaddrPair: 0xAE36C775
           ksceKernelGetPaddrPairForLargePage: 0x32257A24
