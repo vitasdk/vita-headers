@@ -3993,14 +3993,21 @@ modules:
           sceMtpBeginSetSystemSetting: 0x231FB847
           sceMtpBeginSpecifiedObjectMetadata: 0xB26C8078
           sceMtpBeginWriteObjectWithOffset: 0xFFCB2181
+          sceMtpCheckContextValid: 0x24130489
           sceMtpEnd: 0xF134A48F
           sceMtpEndImportObject: 0xCF92F4CC
+          sceMtpGetBgTaskInfo: 0x7C5DDDD6
           sceMtpGetCurrentInterface: 0xD4E9D95E
+          sceMtpGetHostInfo: 0xB6B6C7C0
           sceMtpInit: 0xF481FE11
           sceMtpPauseExportObject: 0xF4CAB5A5
           sceMtpReset: 0x97C128BD
+          sceMtpResume: 0x7430E5A5
+          sceMtpSetFinishCallback: 0xEBB48255
           sceMtpStart: 0x128D0D05
           sceMtpStop: 0xC7AC05E8
+          sceMtpSuspend: 0x8B9F4CC5
+          sceMtpTerminateExecution: 0x392B8D5E
   SceLibXml:
     nid: 0x1ECD1248
     libraries:
