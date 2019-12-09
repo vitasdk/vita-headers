@@ -43,8 +43,8 @@ typedef struct SceKernelModuleInfo {
 	char module_name[28];
 	SceUInt unk28;
 	void *module_start;
-	SceUInt unk30;
 	void *module_stop;
+	void *module_exit;
 	void *exidxTop;
 	void *exidxBtm;
 	SceUInt unk40;
