@@ -27,7 +27,9 @@ extern "C" {
 #define SCE_KERNEL_STOP_CANCEL        SCE_KERNEL_STOP_FAIL
 /** @} */
 
-typedef char SceKernelModuleName[0x1C];
+typedef struct SceKernelModuleName {
+  char s[0x1C];
+} SceKernelModuleName;
 
 typedef struct SceKernelSegmentInfo {
   SceSize size;   //!< this structure size (0x18)
