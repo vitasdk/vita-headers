@@ -29,36 +29,35 @@ extern "C" {
 
 typedef char SceKernelModuleName[0x1C];
 
-typedef struct
-{
-  SceUInt size;   //!< this structure size (0x18)
+typedef struct SceKernelSegmentInfo {
+  SceSize size;   //!< this structure size (0x18)
   SceUInt perms;  //!< probably rwx in low bits
   void *vaddr;    //!< address in memory
-  SceUInt memsz;  //!< size in memory
-  SceUInt flags;  //!< meaning unknown
-  SceUInt res;    //!< unused?
+  SceSize memsz;  //!< size in memory
+  SceSize filesz; //!< original size of memsz
+  SceUInt res;    //!< unused
 } SceKernelSegmentInfo;
 
-typedef struct
-{
-  SceUInt size;   //!< 0x1B8 for Vita 1.x
-  SceUInt handle; //!< kernel module handle?
-  SceUInt flags;  //!< some bits. could be priority or whatnot
-  char module_name[28];
-  SceUInt unk28;
-  void *module_start;
-  void *module_stop;
-  void *module_exit;
-  void *exidxTop;
-  void *exidxBtm;
-  SceUInt unk40;
-  SceUInt unk44;
-  void *tlsInit;
-  SceSize tlsInitSize;
-  SceSize tlsAreaSize;
-  char path[256];
-  SceKernelSegmentInfo segments[4];
-  SceUInt type;   //!< 6 = user-mode PRX?
+typedef struct SceKernelModuleInfo {
+	SceSize size;                       //!< 0x1B8 for Vita 1.x
+	SceUID modid;
+	uint16_t modattr;
+	uint8_t  modver[2];
+	char module_name[28];
+	SceUInt unk28;
+	void *start_entry;
+	void *stop_entry;
+	void *exit_entry;
+	void *exidxTop;
+	void *exidxBtm;
+	void *extabTop;
+	void *extabBtm;
+	void *tlsInit;
+	SceSize tlsInitSize;
+	SceSize tlsAreaSize;
+	char path[256];
+	SceKernelSegmentInfo segments[4];
+	SceUInt type;                       //!< 6 = user-mode PRX?
 } SceKernelModuleInfo;
 
 typedef struct {
