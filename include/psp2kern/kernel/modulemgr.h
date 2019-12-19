@@ -121,20 +121,19 @@ typedef struct {
   };
 } SceKernelModuleListInfo;
 
-typedef struct {
-  SceSize size; //!< sizeof(SceKernelModuleInfo2) : 0x120
-  SceUID modid1;
-  uint32_t unk_0x08;
-  uint16_t unk_0x0C;
-  uint16_t unk_0x0E;
-  uint16_t unk_0x10;
-  uint16_t unk_0x12;
+typedef struct SceKernelModuleLibraryInfo {
+  SceSize size; //!< sizeof(SceKernelModuleLibraryInfo) : 0x120
+  SceUID libid;
+  uint32_t libnid;
+  uint16_t libver[2];
+  uint16_t entry_num_function;
+  uint16_t entry_num_variable;
   uint16_t unk_0x14;
   uint16_t unk_0x16;
-  char module_name[0x100]; // offset : 0x18
+  char library_name[0x100]; // offset : 0x18
   uint32_t unk_0x118;
   SceUID modid2;
-} SceKernelModuleInfo2;
+} SceKernelModuleLibraryInfo;
 
 /**
  * @brief Register syscall function
@@ -208,17 +207,6 @@ int ksceKernelGetModuleList2(SceUID pid, SceKernelModuleListInfo *infolists, siz
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelGetModuleInfo(SceUID pid, SceUID modid, SceKernelModuleInfo *info);
-
-/**
- * @brief Get module info2
- *
- * @param[in]  pid   - target pid
- * @param[in]  modid - target module id
- * @param[out] info  - info output
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetModuleInfo2(SceUID pid, SceUID modid, SceKernelModuleInfo2 *info);
 
 /**
  * @brief Get module info mini by module address
@@ -487,7 +475,7 @@ int ksceKernelUmountBootfs(void);
 SceUID ksceKernelGetProcessMainModule(SceUID pid);
 
 /**
- * @brief Get the main module path for a given process.
+ * @brief Get the module path
  *
  * @param[in]  pid     - target pid
  * @param[out] path    - module path output
@@ -495,9 +483,37 @@ SceUID ksceKernelGetProcessMainModule(SceUID pid);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetProcessMainModulePath(SceUID pid, char *path, int pathlen);
+int ksceKernelGetModulePath(SceUID modid, char *path, int pathlen);
 
-int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID modid, void *unk1, const void *unk2, int unk3);
+/**
+ * @brief Get library info
+ *
+ * @param[in]  pid   - target pid
+ * @param[in]  modid - target library id
+ * @param[out] info  - info output
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID libid, SceKernelModuleLibraryInfo *info);
+
+typedef struct SceKernelModuleExportEntry {
+	uint32_t libnid;
+	const void *entry; // function ptr. or vars?
+} SceKernelModuleExportEntry;
+
+/**
+ * @brief Get module export entry
+ *
+ * @param[in]    pid          - target pid
+ * @param[in]    libid        - target library uid
+ * @param[out]   list         - data output
+ * @param[inout] num          - in:list max num, out:get entry num
+ * @param[in]    cpy_skip_num - The index at which to start copying
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleLibExportList(SceUID pid, SceUID libid, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
+
 int ksceKernelGetModuleUid(SceUID pid, SceUID modid, SceUID *modid_out, const void *unk1, int unk2);
 int ksceKernelGetModuleUidList(SceUID pid, SceUID *modids, size_t *num);
 
