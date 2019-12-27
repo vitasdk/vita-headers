@@ -14,7 +14,7 @@ extern "C" {
 #endif
   
 typedef struct ScePssCryptoHandle {
-  uint32_t unk0;
+  SceUID fd;
   uint32_t unk1;
   SceSize size;
   uint32_t unk3;
