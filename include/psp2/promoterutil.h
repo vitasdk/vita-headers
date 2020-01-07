@@ -19,6 +19,15 @@ typedef struct ScePromoterUtilityLAUpdate {
 	char path[128];    //!< Directory of extracted LA update data.
 } ScePromoterUtilityLAUpdate;
 
+/** Parameters for scePromoterUtilityPromoteImport() */
+typedef struct ScePromoterUtilImportParams{
+	char path[0x80]; //!< Install path usually (ux0:/temp/game) 
+	char titleid[0xC]; //!< Game titleid
+	uint32_t type; //!< Package Type (0x3 on PSM, 0x1 on VITA)
+	uint32_t unk0; //!< Unknown value (seems to be 0x1 on PSM content but 0x00 on Vita contents?)
+	char reserved[0x1C];
+} ScePromoterUtilImportParams;
+	
 /**
  * Init the promoter utility.
  * \note Needs to be called before using the other functions.
@@ -59,7 +68,7 @@ int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
  *
  * @return 0 on success.
  */
-int scePromoterUtilityPromoteImport(const char *path);
+int scePromoterUtilityPromoteImport(ScePromoterUtilImportParams *params);
 
 /**
  * Install a package from a directory, and add an icon on the LiveArea.
