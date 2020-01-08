@@ -8,6 +8,7 @@
 #define _PSP2_FIBER_H
 
 #include <psp2/types.h>
+#include <vitasdk/align.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -27,25 +28,24 @@ typedef enum SceFiberErrorCode {
 	SCE_FIBER_ERROR_FATAL      = 0x80590009
 } SceFiberErrorCode;
 
-typedef struct SceFiber {
+typedef struct SCE_ALIGN(8) SceFiber {
 	char reserved[128];
-} SceFiber __attribute__((aligned(8)));
+} SceFiber;
 
-typedef struct SceFiberOptParam {
+typedef struct SCE_ALIGN(8) SceFiberOptParam {
 	char reserved[128];
-} SceFiberOptParam __attribute__((aligned(8)));
+} SceFiberOptParam;
 
 typedef void (SceFiberEntry)(SceUInt32 argOnInitialize, SceUInt32 argOnRun);
 
-typedef struct SceFiberInfo
-{
+typedef struct SCE_ALIGN(8) SceFiberInfo {
 	SceFiberEntry* entry;
 	SceUInt32 argOnInitialize;
 	void* addrContext;
 	SceSize sizeContext;
 	char name[32];
 	unsigned padding[80];
-} SceFiberInfo __attribute__((aligned(8)));
+} SceFiberInfo;
 
 SceInt32 _sceFiberInitializeImpl(SceFiber* fiber, char* name, SceFiberEntry* entry, SceUInt32 argOnInitialize, void* addrContext, SceSize sizeContext, SceFiberOptParam* params);
 
