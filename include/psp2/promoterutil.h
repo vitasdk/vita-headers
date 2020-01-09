@@ -62,7 +62,7 @@ int scePromoterUtilityDeletePkg(const char *titleid);
 int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
 
 /**
- * Install Content Mannager import content. and create bubbles without checking license files.
+ * Install Content Manager import content. and create bubbles without checking license files.
  *
  * @param[in] *params - see ScePromoterUtilImportParams
  *
