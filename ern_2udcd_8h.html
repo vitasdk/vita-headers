@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('ern_2udcd_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="ern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="align_8h_source.html">vitasdk/align.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2udcd_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -95,12 +96,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structSceUdcdStringDescriptor"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdStringDescriptor">SceUdcdStringDescriptor</a></td></tr>
 <tr class="memdesc:structSceUdcdStringDescriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB string descriptor.  <a href="group__SceUdcdKernel.html#structSceUdcdStringDescriptor">More...</a><br /></td></tr>
 <tr class="separator:structSceUdcdStringDescriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceUdcdDeviceDescriptor"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">SceUdcdDeviceDescriptor</a></td></tr>
-<tr class="memdesc:structSceUdcdDeviceDescriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB device descriptor.  <a href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">More...</a><br /></td></tr>
-<tr class="separator:structSceUdcdDeviceDescriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceUdcdDeviceQualifierDescriptor"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceQualifierDescriptor">SceUdcdDeviceQualifierDescriptor</a></td></tr>
-<tr class="memdesc:structSceUdcdDeviceQualifierDescriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB device qualifier descriptor.  <a href="group__SceUdcdKernel.html#structSceUdcdDeviceQualifierDescriptor">More...</a><br /></td></tr>
-<tr class="separator:structSceUdcdDeviceQualifierDescriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceUdcdConfigDescriptor"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdConfigDescriptor">SceUdcdConfigDescriptor</a></td></tr>
 <tr class="memdesc:structSceUdcdConfigDescriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB configuration descriptor.  <a href="group__SceUdcdKernel.html#structSceUdcdConfigDescriptor">More...</a><br /></td></tr>
 <tr class="separator:structSceUdcdConfigDescriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,9 +126,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceUdcdDeviceRequest.html">SceUdcdDeviceRequest</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB device request.  <a href="structSceUdcdDeviceRequest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceUdcdDriverName"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a></td></tr>
-<tr class="memdesc:structSceUdcdDriverName"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB driver name.  <a href="group__SceUdcdKernel.html#structSceUdcdDriverName">More...</a><br /></td></tr>
-<tr class="separator:structSceUdcdDriverName"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceUdcdDeviceInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a></td></tr>
 <tr class="memdesc:structSceUdcdDeviceInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB device information.  <a href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">More...</a><br /></td></tr>
 <tr class="separator:structSceUdcdDeviceInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,28 +369,28 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga82e854acee1ed6e563718fe339aec7ed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">SceUdcdDeviceDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga82e854acee1ed6e563718fe339aec7ed">__attribute__</a> ((aligned(4))) <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDeviceDescriptor">SceUdcdDeviceDescriptor</a></td></tr>
-<tr class="memdesc:ga82e854acee1ed6e563718fe339aec7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB device descriptor.  <a href="group__SceUdcdKernel.html#ga82e854acee1ed6e563718fe339aec7ed">More...</a><br /></td></tr>
-<tr class="separator:ga82e854acee1ed6e563718fe339aec7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaecaf20cb4b5ebc2a129339b3a3e5a0c4">__attribute__</a> ((aligned(16))) <a class="el" href="group__SceUdcdKernel.html#structSceUdcdDriverName">SceUdcdDriverName</a></td></tr>
-<tr class="memdesc:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB driver name.  <a href="group__SceUdcdKernel.html#gaecaf20cb4b5ebc2a129339b3a3e5a0c4">More...</a><br /></td></tr>
-<tr class="separator:gaecaf20cb4b5ebc2a129339b3a3e5a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1f4ac9a9a7ea61dc22d1472f9b8a16e"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gae1f4ac9a9a7ea61dc22d1472f9b8a16e">SCE_ALIGN</a> (4) <a class="el" href="group__SceUdcdKernel.html#gaf77223e91a04d4b5e68465e14beaf796">SceUdcdDeviceDescriptor</a></td></tr>
+<tr class="memdesc:gae1f4ac9a9a7ea61dc22d1472f9b8a16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB device descriptor.  <a href="group__SceUdcdKernel.html#gae1f4ac9a9a7ea61dc22d1472f9b8a16e">More...</a><br /></td></tr>
+<tr class="separator:gae1f4ac9a9a7ea61dc22d1472f9b8a16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6cdadb1c88be4ead670ea2012a42a4b"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gab6cdadb1c88be4ead670ea2012a42a4b">SCE_ALIGN</a> (16) <a class="el" href="group__SceUdcdKernel.html#ga9c1619975d3b0e5d4b0b24f7cfe09489">SceUdcdDriverName</a></td></tr>
+<tr class="memdesc:gab6cdadb1c88be4ead670ea2012a42a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB driver name.  <a href="group__SceUdcdKernel.html#gab6cdadb1c88be4ead670ea2012a42a4b">More...</a><br /></td></tr>
+<tr class="separator:gab6cdadb1c88be4ead670ea2012a42a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab57c4cf22ac08fbfc4750bef6049435f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f">ksceUdcdWaitBusInitialized</a> (unsigned int timeout, int bus)</td></tr>
 <tr class="memdesc:gab57c4cf22ac08fbfc4750bef6049435f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until an UDCD bus is initialized.  <a href="group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f">More...</a><br /></td></tr>
 <tr class="separator:gab57c4cf22ac08fbfc4750bef6049435f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff5e76ddee35a8a368621fe6e534740c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c">ksceUdcdStart</a> (const char *driverName, int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>, void *args)</td></tr>
+<tr class="memitem:gaff5e76ddee35a8a368621fe6e534740c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c">ksceUdcdStart</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gaff5e76ddee35a8a368621fe6e534740c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver.  <a href="group__SceUdcdKernel.html#gaff5e76ddee35a8a368621fe6e534740c">More...</a><br /></td></tr>
 <tr class="separator:gaff5e76ddee35a8a368621fe6e534740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga2f0aa3506621df6b2f662ab8afbf45da">ksceUdcdStartInternal</a> (const char *driverName, int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>, void *args, int bus)</td></tr>
+<tr class="memitem:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga2f0aa3506621df6b2f662ab8afbf45da">ksceUdcdStartInternal</a> (const char *driverName, int size, void *args, int bus)</td></tr>
 <tr class="memdesc:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a USB driver for an UDCD bus.  <a href="group__SceUdcdKernel.html#ga2f0aa3506621df6b2f662ab8afbf45da">More...</a><br /></td></tr>
 <tr class="separator:ga2f0aa3506621df6b2f662ab8afbf45da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a7e7971cddc1d2bdd49e5522d1227c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga7a7e7971cddc1d2bdd49e5522d1227c4">ksceUdcdStartCurrentInternal</a> (int unused, int bus)</td></tr>
 <tr class="memdesc:ga7a7e7971cddc1d2bdd49e5522d1227c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the current USB driver for an UDCD bus.  <a href="group__SceUdcdKernel.html#ga7a7e7971cddc1d2bdd49e5522d1227c4">More...</a><br /></td></tr>
 <tr class="separator:ga7a7e7971cddc1d2bdd49e5522d1227c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad76c53134e296b0e3b447c61eee30129"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129">ksceUdcdStop</a> (const char *driverName, int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>, void *args)</td></tr>
+<tr class="memitem:gad76c53134e296b0e3b447c61eee30129"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129">ksceUdcdStop</a> (const char *driverName, int size, void *args)</td></tr>
 <tr class="memdesc:gad76c53134e296b0e3b447c61eee30129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a USB driver.  <a href="group__SceUdcdKernel.html#gad76c53134e296b0e3b447c61eee30129">More...</a><br /></td></tr>
 <tr class="separator:gad76c53134e296b0e3b447c61eee30129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d48eb630f529d60790a076ef8869a5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga4d48eb630f529d60790a076ef8869a5a">ksceUdcdStopInternal</a> (const char *driverName, int <a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>, void *args, int bus)</td></tr>
+<tr class="memitem:ga4d48eb630f529d60790a076ef8869a5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga4d48eb630f529d60790a076ef8869a5a">ksceUdcdStopInternal</a> (const char *driverName, int size, void *args, int bus)</td></tr>
 <tr class="memdesc:ga4d48eb630f529d60790a076ef8869a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a USB driver for an UDCD bus.  <a href="group__SceUdcdKernel.html#ga4d48eb630f529d60790a076ef8869a5a">More...</a><br /></td></tr>
 <tr class="separator:ga4d48eb630f529d60790a076ef8869a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7de22b5925ad1ff451d4eed90f537d00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga7de22b5925ad1ff451d4eed90f537d00">ksceUdcdStopCurrentInternal</a> (int bus)</td></tr>
@@ -482,42 +474,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga001756ab00cc656bd6bd70aaa6876737"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga001756ab00cc656bd6bd70aaa6876737">bLength</a></td></tr>
-<tr class="separator:ga001756ab00cc656bd6bd70aaa6876737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8db36b5ebcff1beb7ec24b0608a329b6"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga8db36b5ebcff1beb7ec24b0608a329b6">bDescriptorType</a></td></tr>
-<tr class="separator:ga8db36b5ebcff1beb7ec24b0608a329b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef7feacd1e3f451a53f2e69e20a1212a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaef7feacd1e3f451a53f2e69e20a1212a">bcdUSB</a></td></tr>
-<tr class="separator:gaef7feacd1e3f451a53f2e69e20a1212a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9bf70975f1ecc3b7ffa3ae74999cc313"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga9bf70975f1ecc3b7ffa3ae74999cc313">bDeviceClass</a></td></tr>
-<tr class="separator:ga9bf70975f1ecc3b7ffa3ae74999cc313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb0afa23615c74f532aa889c5e8663d1"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gadb0afa23615c74f532aa889c5e8663d1">bDeviceSubClass</a></td></tr>
-<tr class="separator:gadb0afa23615c74f532aa889c5e8663d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23cec3d91d59a6fbf2eae7e4cc146489"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga23cec3d91d59a6fbf2eae7e4cc146489">bDeviceProtocol</a></td></tr>
-<tr class="separator:ga23cec3d91d59a6fbf2eae7e4cc146489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67eb94b9f3e7512d94f4052a1cce2c1b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga67eb94b9f3e7512d94f4052a1cce2c1b">bMaxPacketSize0</a></td></tr>
-<tr class="separator:ga67eb94b9f3e7512d94f4052a1cce2c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80ce888aa87b8e6e7fd14c2d40900919"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga80ce888aa87b8e6e7fd14c2d40900919">idVendor</a></td></tr>
-<tr class="separator:ga80ce888aa87b8e6e7fd14c2d40900919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga338e2cab0b74501173fa4900ddbb3517"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga338e2cab0b74501173fa4900ddbb3517">idProduct</a></td></tr>
-<tr class="separator:ga338e2cab0b74501173fa4900ddbb3517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d0cf0c5bef659f0b7526279d5bda836"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga8d0cf0c5bef659f0b7526279d5bda836">bcdDevice</a></td></tr>
-<tr class="separator:ga8d0cf0c5bef659f0b7526279d5bda836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d6c745742ed07344155af4f5fecf1ad"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga5d6c745742ed07344155af4f5fecf1ad">iManufacturer</a></td></tr>
-<tr class="separator:ga5d6c745742ed07344155af4f5fecf1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga765bd68d9eee65101fb48a70689741b3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga765bd68d9eee65101fb48a70689741b3">iProduct</a></td></tr>
-<tr class="separator:ga765bd68d9eee65101fb48a70689741b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga036e1f64c0930db1ad13b270512c3f45"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga036e1f64c0930db1ad13b270512c3f45">iSerialNumber</a></td></tr>
-<tr class="separator:ga036e1f64c0930db1ad13b270512c3f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6eb3b63662a88700ffce4cc8a38b1fd0"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga6eb3b63662a88700ffce4cc8a38b1fd0">bNumConfigurations</a></td></tr>
-<tr class="separator:ga6eb3b63662a88700ffce4cc8a38b1fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab58a2ed13cf59542a909b72ce2f055a8"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gab58a2ed13cf59542a909b72ce2f055a8">bReserved</a></td></tr>
-<tr class="separator:gab58a2ed13cf59542a909b72ce2f055a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga439227feff9d7f55384e8780cfc2eb82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a></td></tr>
-<tr class="separator:ga439227feff9d7f55384e8780cfc2eb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc1e86d7c344fe34ff09e72d4595ab7e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a> [32]</td></tr>
-<tr class="separator:gabc1e86d7c344fe34ff09e72d4595ab7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8bf36fe0577cba66bccda3a6f7e80a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a></td></tr>
-<tr class="separator:gac8bf36fe0577cba66bccda3a6f7e80a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf77223e91a04d4b5e68465e14beaf796"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaf77223e91a04d4b5e68465e14beaf796">SceUdcdDeviceDescriptor</a></td></tr>
+<tr class="separator:gaf77223e91a04d4b5e68465e14beaf796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4b7ed802040bbe73325450af2efb23f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#gaf4b7ed802040bbe73325450af2efb23f">SceUdcdDeviceQualifierDescriptor</a></td></tr>
+<tr class="separator:gaf4b7ed802040bbe73325450af2efb23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c1619975d3b0e5d4b0b24f7cfe09489"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUdcdKernel.html#ga9c1619975d3b0e5d4b0b24f7cfe09489">SceUdcdDriverName</a></td></tr>
+<tr class="separator:ga9c1619975d3b0e5d4b0b24f7cfe09489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

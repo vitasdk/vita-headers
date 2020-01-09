@@ -225,8 +225,6 @@ var group__SceUdcdKernel =
     [ "USB_REQ_SET_FEATURE", "group__SceUdcdKernel.html#gga89364761934556860312bed01ea9a968ac6f6f92b41b3626f3bee5585bc8ad259", null ],
     [ "USB_REQ_SET_INTERFACE", "group__SceUdcdKernel.html#gga89364761934556860312bed01ea9a968a1af0d8916fca29961f41fb7433126527", null ],
     [ "USB_REQ_SYNC_FRAME", "group__SceUdcdKernel.html#gga89364761934556860312bed01ea9a968aa28486fd33e4dca66c10b630f47f680d", null ],
-    [ "__attribute__", "group__SceUdcdKernel.html#gaecaf20cb4b5ebc2a129339b3a3e5a0c4", null ],
-    [ "__attribute__", "group__SceUdcdKernel.html#ga82e854acee1ed6e563718fe339aec7ed", null ],
     [ "ksceUdcdActivate", "group__SceUdcdKernel.html#gafbdc0991ab0f211224c3bf70598a33e5", null ],
     [ "ksceUdcdActivateInternal", "group__SceUdcdKernel.html#ga3298e11c2a3013e120d505c93703ae44", null ],
     [ "ksceUdcdClearFIFO", "group__SceUdcdKernel.html#gae8a34ffed9270892c5bf0e7825aa40b1", null ],
@@ -258,5 +256,7 @@ var group__SceUdcdKernel =
     [ "ksceUdcdUnregisterInternal", "group__SceUdcdKernel.html#gad57e9bb09b67c172e0044bf1346355df", null ],
     [ "ksceUdcdWaitBusInitialized", "group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f", null ],
     [ "ksceUdcdWaitState", "group__SceUdcdKernel.html#gaf456ddb9a54532af1aab67a69453938c", null ],
-    [ "ksceUdcdWaitStateInternal", "group__SceUdcdKernel.html#gacea1c9363708c8c836574e2cd0042e94", null ]
+    [ "ksceUdcdWaitStateInternal", "group__SceUdcdKernel.html#gacea1c9363708c8c836574e2cd0042e94", null ],
+    [ "SCE_ALIGN", "group__SceUdcdKernel.html#gab6cdadb1c88be4ead670ea2012a42a4b", null ],
+    [ "SCE_ALIGN", "group__SceUdcdKernel.html#gae1f4ac9a9a7ea61dc22d1472f9b8a16e", null ]
 ];

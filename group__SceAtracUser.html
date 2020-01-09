@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ga3da14a4d7d145b5bba0b9b2a5f033be1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gab22dbab8114f56bd23aae1676e011490">SCE_AUDIODEC_ALIGNMENT_SIZE</a>)</td></tr>
 <tr class="separator:ga3da14a4d7d145b5bba0b9b2a5f033be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga693981f78a408342811906435b353726"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga693981f78a408342811906435b353726">SCE_ATRAC_ROUND_UP</a>(<a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a>)&#160;&#160;&#160;((<a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a> + <a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1) &amp; ~(<a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1))</td></tr>
+<tr class="memitem:ga693981f78a408342811906435b353726"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga693981f78a408342811906435b353726">SCE_ATRAC_ROUND_UP</a>(size)&#160;&#160;&#160;((size + <a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1) &amp; ~(<a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1))</td></tr>
 <tr class="separator:ga693981f78a408342811906435b353726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e277764979d547a211f248dd9d6f080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga0e277764979d547a211f248dd9d6f080">SCE_ATRAC_TYPE_AT9</a>&#160;&#160;&#160;(0x2003U)</td></tr>
 <tr class="separator:ga0e277764979d547a211f248dd9d6f080"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -485,8 +485,8 @@ writableSize</td>
           <td class="memname">#define SCE_ATRAC_ROUND_UP</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="group__SceUdcdKernel.html#ga439227feff9d7f55384e8780cfc2eb82">size</a> + <a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1) &amp; ~(<a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1))</td>
+          <td class="paramname">size</td><td>)</td>
+          <td>&#160;&#160;&#160;((size + <a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1) &amp; ~(<a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1))</td>
         </tr>
       </table>
 </div><div class="memdoc">
