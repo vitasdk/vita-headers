@@ -24,7 +24,7 @@ typedef struct ScePromoterUtilImportParams{
 	char path[0x80]; //!< Install path usually (ux0:/temp/game) 
 	char titleid[0xC]; //!< Game titleid
 	uint32_t type; //!< Package Type (0x3 on PSM, 0x1 on VITA)
-	uint32_t unk0; //!< Unknown value (seems to be 0x1 on PSM content but 0x00 on Vita contents?)
+	uint32_t attribute; //!< Appears to be 0x1 on PSM content but 0x00 on Vita.
 	char reserved[0x1C];
 } ScePromoterUtilImportParams;
 	
@@ -62,9 +62,9 @@ int scePromoterUtilityDeletePkg(const char *titleid);
 int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
 
 /**
- * Install a import from a directory, and add an icon on the LiveArea.
+ * Install Content Mannager import content. and create bubbles without checking license files.
  *
- * @param[in] *path - the path of the directory where the extracted content of the import is
+ * @param[in] *params - see ScePromoterUtilImportParams
  *
  * @return 0 on success.
  */
