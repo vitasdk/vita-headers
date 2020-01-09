@@ -8,6 +8,7 @@
 #define _PSP2_KERNEL_UDCD_H_
 
 #include <psp2kern/types.h>
+#include <vitasdk/align.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -216,7 +217,7 @@ typedef struct SceUdcdStringDescriptor {
 
 /**  USB device descriptor
  */
-typedef struct SceUdcdDeviceDescriptor {
+typedef struct SCE_ALIGN(4) SceUdcdDeviceDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned short bcdUSB;
@@ -231,11 +232,11 @@ typedef struct SceUdcdDeviceDescriptor {
 	unsigned char  iProduct;
 	unsigned char  iSerialNumber;
 	unsigned char  bNumConfigurations;
-} __attribute__ ((aligned(4))) SceUdcdDeviceDescriptor;
+} SceUdcdDeviceDescriptor;
 
 /**  USB device qualifier descriptor
  */
-typedef struct SceUdcdDeviceQualifierDescriptor {
+typedef struct SCE_ALIGN(4) SceUdcdDeviceQualifierDescriptor {
 	unsigned char  bLength;
 	unsigned char  bDescriptorType;
 	unsigned short bcdUSB;
@@ -245,7 +246,7 @@ typedef struct SceUdcdDeviceQualifierDescriptor {
 	unsigned char  bMaxPacketSize0;
 	unsigned char  bNumConfigurations;
 	unsigned char  bReserved;
-} __attribute__ ((aligned(4))) SceUdcdDeviceQualifierDescriptor;
+} SceUdcdDeviceQualifierDescriptor;
 
 /**  USB configuration descriptor
  */
@@ -381,11 +382,11 @@ typedef struct SceUdcdDeviceRequest {
 
 /**  USB driver name
  */
-typedef struct SceUdcdDriverName {
+typedef struct SCE_ALIGN(16) SceUdcdDriverName {
 	int  size;
 	char name[32];
 	int  flags;
-} __attribute__ ((aligned(16))) SceUdcdDriverName;
+} SceUdcdDriverName;
 
 /**  USB device information
  */
