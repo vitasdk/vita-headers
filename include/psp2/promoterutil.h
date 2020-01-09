@@ -70,7 +70,7 @@ int scePromoterUtilityUpdateLiveArea(ScePromoterUtilityLAUpdate *args);
 /**
  * Install Content Manager import contents and create bubbles without checking license files.
  *
- * @param[in] *params - see ScePromoterUtilImportParams
+ * @param[in] *params - see ::ScePromoterUtilImportParams
  *
  * @return 0 on success.
  */
