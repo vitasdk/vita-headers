@@ -8,7 +8,7 @@ var group__SceVshBridgeUser =
     [ "vshIdStorageIsReadOnly", "group__SceVshBridgeUser.html#ga324c4f0e940138dc8008f5b484793789", null ],
     [ "vshIdStorageReadLeaf", "group__SceVshBridgeUser.html#ga4cebc68b47fe61cfa3075b731fcc984e", null ],
     [ "vshIdStorageWriteLeaf", "group__SceVshBridgeUser.html#ga0b7fe3619a3174828fdbb52d02d80ae8", null ],
-    [ "vshIoUmount", "group__SceVshBridgeUser.html#ga94f847e309ad1c783bc9460bd98c99a7", null ],
+    [ "vshIoUmount", "group__SceVshBridgeUser.html#gaa754c13fd1fa6d1181cc449d2925bfef", null ],
     [ "vshMemoryCardGetCardInsertState", "group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a", null ],
     [ "vshRemovableMemoryGetCardInsertState", "group__SceVshBridgeUser.html#ga121a576126f3dff4688cdba0fbdfcc69", null ],
     [ "vshSblAimgrIsCEX", "group__SceVshBridgeUser.html#ga5344884b9e5f470b33570191a51cb917", null ],
