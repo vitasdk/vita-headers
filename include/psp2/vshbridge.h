@@ -29,13 +29,13 @@ int _vshIoMount(int id, const char *path, int permission, void* buf);
 
 /**
  * @param[in] id - mount id
- * @param[in] unk1 - Unknown, set 0
+ * @param[in] force - Set to 1 to force umount
  * @param[in] unk2 - Unknown, set 0
  * @param[in] unk3 - Unknown, set 0
  *
  * @return 0 >= on success, < 0 on error.
  */
-int vshIoUmount(int id, int unk1, int unk2, int unk3); 
+int vshIoUmount(int id, int force, int unk2, int unk3); 
 
 int vshIdStorageIsDirty(void);
 int vshIdStorageIsFormatted(void);
