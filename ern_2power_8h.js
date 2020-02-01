@@ -40,6 +40,7 @@ var ern_2power_8h =
     [ "kscePowerRegisterCallback", "group__ScePowerKernel.html#ga4bc1a0655e5983f2e5dec68b5bae3f8b", null ],
     [ "kscePowerRequestColdReset", "group__ScePowerKernel.html#ga2f264a33561ff0618be7c296c2f0f4fa", null ],
     [ "kscePowerRequestDisplayOff", "group__ScePowerKernel.html#gac283d673735d750012aae9a4ff1e540d", null ],
+    [ "kscePowerRequestSoftReset", "group__ScePowerKernel.html#ga876533c0e41f8d9f1287ef25f9d01a0e", null ],
     [ "kscePowerRequestStandby", "group__ScePowerKernel.html#gab5b90f2e31ccab55868c9ee983026df6", null ],
     [ "kscePowerRequestSuspend", "group__ScePowerKernel.html#gab809066ccb7973627c75fb26bb5b53e4", null ],
     [ "kscePowerSetArmClockFrequency", "group__ScePowerKernel.html#ga2c100e7ab40f65ea8a5833de369dffd6", null ],
