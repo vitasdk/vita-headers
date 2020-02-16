@@ -2617,7 +2617,9 @@ modules:
           kscePfsMgrVfsUmount: 0xD220539D
           ksceVfsAddVfs: 0x673D2FCD
           ksceVfsDeleteVfs: 0x9CBFA725
+          ksceVfsFreeVnode: 0x21D57633
           ksceVfsGetNewNode: 0xD60B5C63
+          ksceVopInactive: 0x8FB94521
           ksceVfsMount: 0xB62DE9A6
           ksceVfsNodeSetEventFlag: 0x6048F245
           ksceVfsNodeWaitEventFlag: 0xAA45010B
@@ -2642,6 +2644,8 @@ modules:
           ksceVopRmdir: 0x1D551105
           ksceVopSync: 0x9CD96406
           ksceVopWrite: 0x9A68378D
+          kvfsLockMnt: 0x6B3CA9F7
+          kvfsUnlockMnt: 0xDC2D8BCE
   SceJpeg:
     nid: 0x00000044
     libraries:
