@@ -77,7 +77,8 @@ $(document).ready(function(){initNavTree('group__SceSuspendKernel.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceSuspend.html">Suspend Library</a></div></div>  </div>
 </div><!--header-->
@@ -99,7 +100,30 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">ksceKernelPowerTick</a> (int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="memdesc:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <a href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">More...</a><br /></td></tr>
 <tr class="separator:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">ksceKernelRegisterSysEventHandler</a> (const char *name, <a class="el" href="group__SceSuspendKernel.html#ga7d6547b2c52292c1f1b9bd0e001ac782">SceSysEventHandler</a> handler, void *args)</td></tr>
+<tr class="memdesc:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register system event handler.  <a href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">More...</a><br /></td></tr>
+<tr class="separator:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga7d6547b2c52292c1f1b9bd0e001ac782"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga7d6547b2c52292c1f1b9bd0e001ac782">SceSysEventHandler</a>) (int resume, int eventid, void *args, void *opt)</td></tr>
+<tr class="separator:ga7d6547b2c52292c1f1b9bd0e001ac782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga7d6547b2c52292c1f1b9bd0e001ac782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d6547b2c52292c1f1b9bd0e001ac782">&#9670;&nbsp;</a></span>SceSysEventHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(*  SceSysEventHandler) (int resume, int eventid, void *args, void *opt)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga1b448620c7525b730a2b94164e34d77f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1b448620c7525b730a2b94164e34d77f">&#9670;&nbsp;</a></span>SceKernelPowerTickType</h2>
@@ -158,6 +182,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 </dd></dl>
+
+</div>
+</div>
+<a id="gaa7f1736fd9b7b9d3473d81573a3e875f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7f1736fd9b7b9d3473d81573a3e875f">&#9670;&nbsp;</a></span>ksceKernelRegisterSysEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelRegisterSysEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSuspendKernel.html#ga7d6547b2c52292c1f1b9bd0e001ac782">SceSysEventHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register system event handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Name of handler </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>- The handler </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>- Handler arguments</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

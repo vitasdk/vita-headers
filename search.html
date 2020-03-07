@@ -44228,35 +44228,42 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">suspend.h</field>
     <field name="url">suspend_8h_source.html#l00016</field>
     <field name="keywords"></field>
-    <field name="text">SceKernelPowerTickType</field>
+    <field name="text">int SceSysEventHandler resume eventid args opt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">suspend.h</field>
     <field name="url">suspend_8h_source.html#l00018</field>
     <field name="keywords"></field>
-    <field name="text">SCE_KERNEL_POWER_TICK_DEFAULT</field>
+    <field name="text">SceKernelPowerTickType</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">suspend.h</field>
     <field name="url">suspend_8h_source.html#l00020</field>
     <field name="keywords"></field>
-    <field name="text">SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND</field>
+    <field name="text">SCE_KERNEL_POWER_TICK_DEFAULT</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">suspend.h</field>
     <field name="url">suspend_8h_source.html#l00022</field>
     <field name="keywords"></field>
-    <field name="text">SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF</field>
+    <field name="text">SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">suspend.h</field>
     <field name="url">suspend_8h_source.html#l00024</field>
     <field name="keywords"></field>
-    <field name="text">SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING SceKernelPowerTickType ksceKernelPowerTick type</field>
+    <field name="text">SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">suspend.h</field>
+    <field name="url">suspend_8h_source.html#l00026</field>
+    <field name="keywords"></field>
+    <field name="text">SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING SceKernelPowerTickType ksceKernelPowerTick type ksceKernelRegisterSysEventHandler name SceSysEventHandler handler args</field>
   </doc>
   <doc>
     <field name="type">source</field>
@@ -85246,6 +85253,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text"></field>
   </doc>
   <doc>
+    <field name="type">typedef</field>
+    <field name="name">SceSysEventHandler</field>
+    <field name="args">)(int resume, int eventid, void *args, void *opt)</field>
+    <field name="url">group__SceSuspendKernel.html#ga7d6547b2c52292c1f1b9bd0e001ac782</field>
+    <field name="keywords">SceSysEventHandler SceSysEventHandler</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
     <field name="type">enum</field>
     <field name="name">SceKernelPowerTickType</field>
     <field name="url">group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f</field>
@@ -85259,6 +85274,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4</field>
     <field name="keywords">ksceKernelPowerTick ksceKernelPowerTick</field>
     <field name="text">Cancel specified idle timers to prevent entering in power save processing Cancel specified idle timers to prevent entering in power save processing type One of SceKernelPowerTickType 0</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ksceKernelRegisterSysEventHandler</field>
+    <field name="args">(const char *name, SceSysEventHandler handler, void *args)</field>
+    <field name="url">group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f</field>
+    <field name="keywords">ksceKernelRegisterSysEventHandler ksceKernelRegisterSysEventHandler</field>
+    <field name="text">Register system event handler Register system event handler name Name of handler handler The handler args Handler arguments 0 on success 0 on error</field>
   </doc>
   <doc>
     <field name="type">file</field>
