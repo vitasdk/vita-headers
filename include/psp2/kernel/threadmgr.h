@@ -591,8 +591,16 @@ typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
 
 /** Event flag creation attributes */
 typedef enum SceEventFlagAttributes {
-	/** Allow the event flag to be waited upon by multiple threads */
-	SCE_EVENT_WAITMULTIPLE = 0x200
+	/* Waiting threads queued on a FIFO basis */
+	SCE_EVENT_THREAD_FIFO = 0,
+	/* Waiting threads queued on priority basis */
+        SCE_EVENT_THREAD_PRIO = 0x00002000,
+	/* Event flag can only be waited upon by one thread */
+	SCE_EVENT_WAITSINGLE = 0,
+	/* Event flag can be waited upon by multiple threads */
+	SCE_EVENT_WAITMULTIPLE = 0x00001000,
+	/* Event flag can be accessed by sceKernelOpenEventFlag / sceKernelCloseEventFlag */
+	SCE_EVENT_OPENABLE = 0x00000080
 } SceEventFlagAttributes;
 
 /** Event flag wait types */
