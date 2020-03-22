@@ -594,7 +594,7 @@ typedef enum SceEventFlagAttributes {
 	/* Waiting threads queued on a FIFO basis */
 	SCE_EVENT_THREAD_FIFO = 0,
 	/* Waiting threads queued on priority basis */
-        SCE_EVENT_THREAD_PRIO = 0x00002000,
+	SCE_EVENT_THREAD_PRIO = 0x00002000,
 	/* Event flag can only be waited upon by one thread */
 	SCE_EVENT_WAITSINGLE = 0,
 	/* Event flag can be waited upon by multiple threads */
