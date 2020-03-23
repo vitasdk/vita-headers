@@ -41,25 +41,25 @@ typedef struct SceKernelSegmentInfo {
 } SceKernelSegmentInfo;
 
 typedef struct SceKernelModuleInfo {
-	SceSize size;                       //!< 0x1B8 for Vita 1.x
-	SceUID modid;
-	uint16_t modattr;
-	uint8_t  modver[2];
-	char module_name[28];
-	SceUInt unk28;
-	void *start_entry;
-	void *stop_entry;
-	void *exit_entry;
-	void *exidxTop;
-	void *exidxBtm;
-	void *extabTop;
-	void *extabBtm;
-	void *tlsInit;
-	SceSize tlsInitSize;
-	SceSize tlsAreaSize;
-	char path[256];
-	SceKernelSegmentInfo segments[4];
-	SceUInt type;                       //!< 6 = user-mode PRX?
+  SceSize size;                       //!< 0x1B8 for Vita 1.x
+  SceUID modid;
+  uint16_t modattr;
+  uint8_t  modver[2];
+  char module_name[28];
+  SceUInt unk28;
+  void *start_entry;
+  void *stop_entry;
+  void *exit_entry;
+  void *exidx_top;
+  void *exidx_btm;
+  void *extab_top;
+  void *extab_btm;
+  void *tlsInit;
+  SceSize tlsInitSize;
+  SceSize tlsAreaSize;
+  char path[256];
+  SceKernelSegmentInfo segments[4];
+  SceUInt type;                       //!< 6 = user-mode PRX?
 } SceKernelModuleInfo;
 
 typedef struct {
