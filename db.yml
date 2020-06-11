@@ -2291,6 +2291,11 @@ modules:
           sceGxmVertexFence: 0xE05277D6
           sceGxmVertexProgramGetProgram: 0xBC52320E
           sceGxmWaitEvent: 0x8BD94593
+      SceGxmInternalForVsh:
+        kernel: false
+        nid: 0xC98AEB79
+        functions:
+          sceGxmVshInitialize: 0xA04F5FAC
   SceHandwriting:
     nid: 0x18983E63
     libraries:

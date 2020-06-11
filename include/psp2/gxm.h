@@ -1286,6 +1286,7 @@ typedef struct SceGxmRenderTargetParams {
 /* prototypes */
 
 int sceGxmInitialize(const SceGxmInitializeParams *params);
+int sceGxmVshInitialize(const SceGxmInitializeParams *params);
 int sceGxmTerminate();
 
 volatile unsigned int *sceGxmGetNotificationRegion();
