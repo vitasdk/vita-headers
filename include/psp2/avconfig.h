@@ -65,6 +65,16 @@ int sceAVConfigSetSystemVol(int volume);
  *
  */
 int sceAVConfigMuteOn(void);
+  
+/**
+ * Sets the color space mode on runtime.
+ *
+ * @param colorSpaceMode - Color Space Mode that the screen will be set to (0 defualt, 1 high contrast mode).
+ *
+ * @return 0 on success, < 0 on error.
+ * @note - This does not change color_space_mode in the registery.
+ */
+int sceAVConfigSetDisplayColorSpaceMode(int colorSpaceMode);
 
 
 #ifdef __cplusplus
