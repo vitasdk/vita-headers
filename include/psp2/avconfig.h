@@ -13,6 +13,12 @@
 extern "C" {
 #endif
 
+/** Color Space Mode values to specify to ::sceAVConfigSetDisplayColorSpaceMode */
+typedef enum SceAVConfigColorSpaceMode {
+	SCE_AVCONFIG_COLOR_SPACE_MODE_DEFAULT           = 0, //!< Default
+	SCE_AVCONFIG_COLOR_SPACE_MODE_HIGH_CONTRAST     = 1  //!< High Contrast Mode
+} SceAVConfigColorSpaceMode; 
+
 /**
  * Get the maximum brightness.
  *
@@ -65,6 +71,16 @@ int sceAVConfigSetSystemVol(int volume);
  *
  */
 int sceAVConfigMuteOn(void);
+  
+/**
+ * Sets the color space mode on runtime.
+ *
+ * @param[in] csm - see ::SceAVConfigColorSpaceMode()
+ *
+ * @return 0 on success, < 0 on error.
+ * @note - This does not change color_space_mode in the registry.
+ */
+int sceAVConfigSetDisplayColorSpaceMode(int csm);
 
 
 #ifdef __cplusplus
