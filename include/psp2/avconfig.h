@@ -13,6 +13,7 @@
 extern "C" {
 #endif
 
+/** Color Space Mode values to specify to ::sceAvConfigColorSpaceMode */
 typedef enum SceColorSpaceMode {
 	SCE_COLOR_SPACE_MODE_DEFAULT           = 0, //!< Default
 	SCE_COLOR_SPACE_MODE_HIGH_CONTRAST     = 1  //!< High Contrast Mode
