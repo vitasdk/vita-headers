@@ -77,7 +77,7 @@ int sceAVConfigMuteOn(void);
  * @param[in] csm - see ::SceColorSpaceMode()
  *
  * @return 0 on success, < 0 on error.
- * @note - This does not change color_space_mode in the registery.
+ * @note - This does not change color_space_mode in the registry.
  */
 int sceAVConfigSetDisplayColorSpaceMode(SceColorSpaceMode csm);
 
