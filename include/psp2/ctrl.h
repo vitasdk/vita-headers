@@ -26,6 +26,7 @@ typedef enum SceCtrlErrorCode {
 /** Enumeration for the digital controller buttons.
  * @note - L1/R1/L3/R3 only can bind using ::sceCtrlPeekBufferPositiveExt2 and ::sceCtrlReadBufferPositiveExt2
  * @note - Values bigger than 0x00010000 can be intercepted only with shell privileges
+ * @note - Vita's L Trigger and R Trigger are mapped to L1 and R1 when using ::sceCtrlPeekBufferPositiveExt2 and ::sceCtrlReadBufferPositiveExt2
  */
 typedef enum SceCtrlButtons {
 	SCE_CTRL_SELECT      = 0x00000001,            //!< Select button.
