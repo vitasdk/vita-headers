@@ -5,9 +5,9 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 ARCHIVE_DIR="${HOME}/downloads"
 
-DOXYGEN_VERSION="1.8.16"
+DOXYGEN_VERSION="1.8.18"
 DOXYGEN_BIN="doxygen-${DOXYGEN_VERSION}.linux.bin.tar.gz"
-DOXYGEN_BIN_SHA256SUM="610697eba6104110389d371e6908ed35b4b00f9e650c969a213dc0020b067a55"
+DOXYGEN_BIN_SHA256SUM="d589d17c1a5eec7586904a6df4bcdba585ed8e2a0c6afc825bb77e5cb17c275f"
 
 # in this time, only support tgz
 function download_and_unpack {
