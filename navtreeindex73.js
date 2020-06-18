@@ -1,7 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"screenshot_8h.html":[3,0,1,0,43],
-"screenshot_8h_source.html":[3,0,1,0,43],
 "sharedfb_8h.html":[3,0,1,0,44],
 "sharedfb_8h_source.html":[3,0,1,0,44],
 "shellutil_8h.html":[3,0,1,0,45],
