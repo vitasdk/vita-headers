@@ -6,7 +6,11 @@ var group__SceThreadMgrKernel =
     [ "SceKernelThreadEntry", "group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelWorkQueueWorkFunction", "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1", null ],
     [ "SceEventFlagAttributes", "group__SceThreadMgrKernel.html#ga32240cfc9096477a62cfad5ee4768791", [
+      [ "SCE_EVENT_THREAD_FIFO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8", null ],
+      [ "SCE_EVENT_THREAD_PRIO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c", null ],
+      [ "SCE_EVENT_WAITSINGLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841", null ],
       [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ],
+      [ "SCE_EVENT_OPENABLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849", null ],
       [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ]
     ] ],
     [ "SceEventFlagWaitTypes", "group__SceThreadMgrKernel.html#ga705f51eec6069fac8fdd74d430472843", [

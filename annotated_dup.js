@@ -279,6 +279,7 @@ var annotated_dup =
     [ "SceSha1Context", "group__SceUtilsKernel.html#structSceSha1Context", "group__SceUtilsKernel_structSceSha1Context" ],
     [ "SceSha224Context", "group__SceUtilsKernel.html#structSceSha224Context", "group__SceUtilsKernel_structSceSha224Context" ],
     [ "SceSha256Context", "group__SceUtilsKernel.html#structSceSha256Context", "group__SceUtilsKernel_structSceSha256Context" ],
+    [ "SceSharedFbInfo", "group__SceSharedFbUser.html#structSceSharedFbInfo", "group__SceSharedFbUser_structSceSharedFbInfo" ],
     [ "SceSqliteMallocMethods", "structSceSqliteMallocMethods.html", "structSceSqliteMallocMethods" ],
     [ "SceSslMemoryPoolStats", "group__SceLibSslUser.html#structSceSslMemoryPoolStats", "group__SceLibSslUser_structSceSslMemoryPoolStats" ],
     [ "SceSysconDebugHandlers", "structSceSysconDebugHandlers.html", "structSceSysconDebugHandlers" ],

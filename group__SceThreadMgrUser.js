@@ -4,7 +4,11 @@ var group__SceThreadMgrUser =
     [ "SceKernelSysClock", "group__SceThreadMgrUser.html#gaf51ef41af830ba6422cc9c5106fb68b8", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceEventFlagAttributes", "group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791", [
+      [ "SCE_EVENT_THREAD_FIFO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8", null ],
+      [ "SCE_EVENT_THREAD_PRIO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c", null ],
+      [ "SCE_EVENT_WAITSINGLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841", null ],
       [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ],
+      [ "SCE_EVENT_OPENABLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849", null ],
       [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ]
     ] ],
     [ "SceEventFlagWaitTypes", "group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843", [
@@ -66,11 +70,15 @@ var group__SceThreadMgrUser =
       [ "SCE_THREAD_STOPPED", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a56f4a808a0901deffe6249baedd764b8", null ],
       [ "SCE_THREAD_KILLED", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a88e74bc6b07d25dffd2519ed837a358d", null ]
     ] ],
+    [ "SCE_EVENT_OPENABLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849", null ],
+    [ "SCE_EVENT_THREAD_FIFO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8", null ],
+    [ "SCE_EVENT_THREAD_PRIO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c", null ],
     [ "SCE_EVENT_WAITAND", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b", null ],
     [ "SCE_EVENT_WAITCLEAR", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10", null ],
     [ "SCE_EVENT_WAITCLEAR_PAT", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23", null ],
     [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ],
     [ "SCE_EVENT_WAITOR", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04", null ],
+    [ "SCE_EVENT_WAITSINGLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841", null ],
     [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
     [ "SCE_KERNEL_TMID_Alarm", "group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca673bce289cfe11dfa9daac5dc5405167", null ],
     [ "SCE_KERNEL_TMID_Callback", "group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca14cad08b131ef9371a6a0a7322d7af5d", null ],

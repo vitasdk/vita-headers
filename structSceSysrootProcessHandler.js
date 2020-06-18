@@ -1,13 +1,13 @@
 var structSceSysrootProcessHandler =
 [
-    [ "on_process_created", "group__SceSysmemKernel.html#ga3c74e3e0063225cfb58e7fb9f7d7ded6", null ],
+    [ "on_process_created", "group__SceSysmemKernel.html#gaa7f1da44a7c87a81b4c3680200fde5b6", null ],
     [ "size", "group__SceSysmemKernel.html#ga733ca7d4fb98d70496a6759d0f4aa4a5", null ],
-    [ "unk_10", "group__SceSysmemKernel.html#ga603a74848f5625f007ea3096627e9384", null ],
-    [ "unk_14", "group__SceSysmemKernel.html#ga9cde07502791dd406ea1797d14af90ac", null ],
-    [ "unk_18", "group__SceSysmemKernel.html#ga02cb3e3bd63c078d73819ee91c2a1589", null ],
-    [ "unk_20", "group__SceSysmemKernel.html#ga3225da7f8f4a62841d7b00853f5d6bfa", null ],
-    [ "unk_24", "group__SceSysmemKernel.html#ga8203eb9354f293516faf144ed24167cc", null ],
-    [ "unk_4", "group__SceSysmemKernel.html#gad99efcda4c5778dccdb7b3a9fd388022", null ],
-    [ "unk_8", "group__SceSysmemKernel.html#ga8b72543f559706f9a911dfe1da36224f", null ],
-    [ "unk_C", "group__SceSysmemKernel.html#ga6ac198e2131a60cf24d33cf13695ed1f", null ]
+    [ "unk_10", "group__SceSysmemKernel.html#ga4263a81872d2244deb4ad7445ecdcfb4", null ],
+    [ "unk_14", "group__SceSysmemKernel.html#ga0bcec78d17528dc21c6b457d3f8e28be", null ],
+    [ "unk_18", "group__SceSysmemKernel.html#ga08406fdea41763996ac49a4f5f31d605", null ],
+    [ "unk_20", "group__SceSysmemKernel.html#ga90ef6d3e33669edb330319bd6d8e97cf", null ],
+    [ "unk_24", "group__SceSysmemKernel.html#ga7fec49e7ba90a565add6dedd428e243d", null ],
+    [ "unk_4", "group__SceSysmemKernel.html#gadf3546ed2adc644ffeb758a9d35b80e4", null ],
+    [ "unk_8", "group__SceSysmemKernel.html#gac283a42a1b9cfbd9cad65049d188ca7b", null ],
+    [ "unk_C", "group__SceSysmemKernel.html#ga341c68ac0d305be157c7aa17ea815f9c", null ]
 ];

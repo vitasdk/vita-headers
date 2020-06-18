@@ -1721,7 +1721,7 @@ var group__SceGxmUser =
     [ "sceGxmGetPrecomputedDrawSize", "group__SceGxmUser.html#ga90d04cffc06557fa3f03765d377a97ef", null ],
     [ "sceGxmGetPrecomputedFragmentStateSize", "group__SceGxmUser.html#ga1c46e364bea525936c7888cd81f52566", null ],
     [ "sceGxmGetPrecomputedVertexStateSize", "group__SceGxmUser.html#gaffa538ff4d8f8bdd3cd096e7ab062e5e", null ],
-    [ "sceGxmGetRenderTargetMemSizes", "group__SceGxmUser.html#ga5ddbbc1588bfad92c647c6132c798677", null ],
+    [ "sceGxmGetRenderTargetMemSize", "group__SceGxmUser.html#ga0663655e1ab7f071617d872f49b36047", null ],
     [ "sceGxmInitialize", "group__SceGxmUser.html#gaeacf3071aedd204d45adc666312acc68", null ],
     [ "sceGxmMapFragmentUsseMemory", "group__SceGxmUser.html#ga0eb40ae81fea763a8768f66f6fc919aa", null ],
     [ "sceGxmMapMemory", "group__SceGxmUser.html#gafed534eed12e5b220976d364e824607e", null ],
@@ -1889,5 +1889,6 @@ var group__SceGxmUser =
     [ "sceGxmUnmapFragmentUsseMemory", "group__SceGxmUser.html#gaa0430cd12457a6b5eff16d3e0bd1b425", null ],
     [ "sceGxmUnmapMemory", "group__SceGxmUser.html#gad4a57723e7adcf155cfe5b3a348a413b", null ],
     [ "sceGxmUnmapVertexUsseMemory", "group__SceGxmUser.html#gab51f3e125420cb1da0f9bc10cc6d1b56", null ],
-    [ "sceGxmVertexProgramGetProgram", "group__SceGxmUser.html#ga646cf6e5132ec515195d7038460d3d3e", null ]
+    [ "sceGxmVertexProgramGetProgram", "group__SceGxmUser.html#ga646cf6e5132ec515195d7038460d3d3e", null ],
+    [ "sceGxmVshInitialize", "group__SceGxmUser.html#gab5134f5d458a35a97adedc8092b2d349", null ]
 ];
