@@ -46,6 +46,12 @@ typedef enum SceAppMgrInfoBarTransparency {
 	SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT = 1
 } SceAppMgrInfoBarTransparency;
 
+typedef enum SceAppMgrApplicationMode {
+	SCE_APPMGR_APPLICATION_MODE_A = 2, //!< Application without physically contiguous memory access
+	SCE_APPMGR_APPLICATION_MODE_B = 3, //!< Application with physically contiguous memory access
+	SCE_APPMGR_APPLICATION_MODE_C = 4  //!< Application with physically contiguous memory and extra memory access
+} SceAppMgrApplicationMode;
+
 typedef struct SceAppMgrSystemEvent {
 	int     systemEvent;   //!< One of ::SceAppMgrSystemEventType
 	uint8_t reserved[60];  //!< Reserved data
@@ -92,6 +98,25 @@ typedef struct SceAppMgrAppState {
 	SceBool isSystemUiOverlaid;
 	SceUInt8 reserved[116];
 } SceAppMgrAppState;
+
+typedef struct SceAppMgrBudgetInfo {
+	int size;                           //!< Must be 0x88
+	int app_mode;                       //!< One of ::SceAppMgrApplicationMode
+	int unk0;                           //!< Unknown Data
+	unsigned int total_user_rw_mem;     //!< Total amount of accessible USER_RW memory
+	unsigned int free_user_rw;          //!< Free amount of accessible USER_RW memory
+	SceBool extra_mem_allowed;          //!< Flag for extra memory accessibility
+	int unk1;                           //!< Unknown Data
+	unsigned int total_extra_mem;       //!< Total amount of accessible extra memory
+	unsigned int free_extra_mem;        //!< Free amount of accessible extra memory
+	int unk2[2];                        //!< Unknown Data
+	unsigned int total_phycont_mem;     //!< Total amount of accessible physically contiguous memory
+	unsigned int free_phycont_mem;      //!< Free amount of accessible physically contiguous memory
+	int unk3[10];                       //!< Unknown Data
+	unsigned int total_cdram_mem;       //!< Total amount of accessible CDRAM memory
+	unsigned int free_cdram_mem;        //!< Free amount of accessible CDRAM memory
+	int reserved[9];                    //!< Reserved data
+} SceAppMgrBudgetInfo;
 
 typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing struct
@@ -493,7 +518,18 @@ int _sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size
  * @return 0 on success.
  */
 int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]);
-	
+
+/**
+ * Get memory budget info for a running system application
+ *
+ * @param[out] info - Info related to the memory budget of the running application.
+ * 
+ * @return 0 on success, < 0 on error.
+ *
+ * @note This function will always return an error if used in a normal application.
+ */
+int sceAppMgrGetBudgetInfo(SceAppMgrBudgetInfo *info);
+
 #ifdef __cplusplus
 }
 #endif
