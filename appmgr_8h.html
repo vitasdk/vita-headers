@@ -101,6 +101,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:structSceAppMgrSaveDataSlotDelete"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceAppMgrAppState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrAppState">SceAppMgrAppState</a></td></tr>
 <tr class="separator:structSceAppMgrAppState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppMgrBudgetInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrBudgetInfo">SceAppMgrBudgetInfo</a></td></tr>
+<tr class="separator:structSceAppMgrBudgetInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structsceAppMgrLoadExecOptParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#structsceAppMgrLoadExecOptParam">sceAppMgrLoadExecOptParam</a></td></tr>
 <tr class="separator:structsceAppMgrLoadExecOptParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -148,6 +150,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__SceAppMgrUser.html#gga1ac9f6691786f20e782ae37cf1c9c2e3ad4b92315c5730ab10ac37273941210f7">SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT</a> = 1
  }</td></tr>
 <tr class="separator:ga1ac9f6691786f20e782ae37cf1c9c2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18739681c0ec91f312f17120af3a155a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a> { <a class="el" href="group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aaad4f0b2ad0f14505acf8944c04551388">SCE_APPMGR_APPLICATION_MODE_A</a> = 2, 
+<a class="el" href="group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8">SCE_APPMGR_APPLICATION_MODE_B</a> = 3, 
+<a class="el" href="group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921">SCE_APPMGR_APPLICATION_MODE_C</a> = 4
+ }</td></tr>
+<tr class="separator:ga18739681c0ec91f312f17120af3a155a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -262,6 +269,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaa1cb4ce2b82b943ccb118a32864ce53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53">_sceAppMgrGetRawPathOfApp0ByAppIdForShell</a> (int appId, char resolved_path[292])</td></tr>
 <tr class="memdesc:gaaa1cb4ce2b82b943ccb118a32864ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the real/resolved path of app0: (where it's actually mounted)  <a href="group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53">More...</a><br /></td></tr>
 <tr class="separator:gaaa1cb4ce2b82b943ccb118a32864ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4b9cd5f4c4881a79570a353b87143ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea">sceAppMgrGetBudgetInfo</a> (<a class="el" href="group__SceAppMgrUser.html#structSceAppMgrBudgetInfo">SceAppMgrBudgetInfo</a> *info)</td></tr>
+<tr class="memdesc:gac4b9cd5f4c4881a79570a353b87143ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get memory budget info for a running system application.  <a href="group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea">More...</a><br /></td></tr>
+<tr class="separator:gac4b9cd5f4c4881a79570a353b87143ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

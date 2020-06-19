@@ -10,6 +10,7 @@ var annotated_dup =
     [ "PhotoExportParam", "group__ScePhotoExportUser.html#structPhotoExportParam", "group__ScePhotoExportUser_structPhotoExportParam" ],
     [ "SceAesContext", "group__SceUtilsKernel.html#structSceAesContext", "group__SceUtilsKernel_structSceAesContext" ],
     [ "SceAppMgrAppState", "group__SceAppMgrUser.html#structSceAppMgrAppState", "group__SceAppMgrUser_structSceAppMgrAppState" ],
+    [ "SceAppMgrBudgetInfo", "group__SceAppMgrUser.html#structSceAppMgrBudgetInfo", "group__SceAppMgrUser_structSceAppMgrBudgetInfo" ],
     [ "SceAppMgrLaunchParam", "group__SceAppMgrKernel.html#structSceAppMgrLaunchParam", "group__SceAppMgrKernel_structSceAppMgrLaunchParam" ],
     [ "sceAppMgrLoadExecOptParam", "group__SceAppMgrUser.html#structsceAppMgrLoadExecOptParam", "group__SceAppMgrUser_structsceAppMgrLoadExecOptParam" ],
     [ "SceAppMgrSaveDataData", "group__SceAppMgrUser.html#structSceAppMgrSaveDataData", "group__SceAppMgrUser_structSceAppMgrSaveDataData" ],

@@ -205,6 +205,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaa1cb4ce2b82b943ccb118a32864ce53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53">_sceAppMgrGetRawPathOfApp0ByAppIdForShell</a> (int appId, char resolved_path[292])</td></tr>
 <tr class="memdesc:gaaa1cb4ce2b82b943ccb118a32864ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the real/resolved path of app0: (where it's actually mounted)  <a href="group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53">More...</a><br /></td></tr>
 <tr class="separator:gaaa1cb4ce2b82b943ccb118a32864ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4b9cd5f4c4881a79570a353b87143ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea">sceAppMgrGetBudgetInfo</a> (<a class="el" href="group__SceAppMgrUser.html#structSceAppMgrBudgetInfo">SceAppMgrBudgetInfo</a> *info)</td></tr>
+<tr class="memdesc:gac4b9cd5f4c4881a79570a353b87143ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get memory budget info for a running system application.  <a href="group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea">More...</a><br /></td></tr>
+<tr class="separator:gac4b9cd5f4c4881a79570a353b87143ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -495,6 +498,119 @@ systemEventNum</td>
 
 </div>
 </div>
+<a name="structSceAppMgrBudgetInfo" id="structSceAppMgrBudgetInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceAppMgrBudgetInfo">&#9670;&nbsp;</a></span>SceAppMgrBudgetInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceAppMgrBudgetInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gad4ad526cb59dee9a73aefa4264f966e8"></a>int</td>
+<td class="fieldname">
+app_mode</td>
+<td class="fielddoc">
+One of <a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga02afc48a4b5ea8007e47eeba976f7460"></a><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a></td>
+<td class="fieldname">
+extra_mem_allowed</td>
+<td class="fielddoc">
+Flag for extra memory accessibility. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga579ca3a4feb5ef1a264f50f2b26c7619"></a>unsigned int</td>
+<td class="fieldname">
+free_cdram_mem</td>
+<td class="fielddoc">
+Free amount of accessible CDRAM memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga3fcc94c1082bac877b0de6f269e92f35"></a>unsigned int</td>
+<td class="fieldname">
+free_extra_mem</td>
+<td class="fielddoc">
+Free amount of accessible extra memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9c5d01841d544ca02fa22ae694e0b31f"></a>unsigned int</td>
+<td class="fieldname">
+free_phycont_mem</td>
+<td class="fielddoc">
+Free amount of accessible physically contiguous memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadbcd61aa327bdf771d9f57c73290f023"></a>unsigned int</td>
+<td class="fieldname">
+free_user_rw</td>
+<td class="fielddoc">
+Free amount of accessible USER_RW memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad2e68d1b60154ba9cfb6d845d718c6d7"></a>int</td>
+<td class="fieldname">
+reserved[9]</td>
+<td class="fielddoc">
+Reserved data. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga3863dd861db44c3fff263d3aa2e42cfe"></a>int</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Must be 0x88. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga15f95921533b871f8706518470f56295"></a>unsigned int</td>
+<td class="fieldname">
+total_cdram_mem</td>
+<td class="fielddoc">
+Total amount of accessible CDRAM memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaef66593f8afe3b8edbf6f1045a462f40"></a>unsigned int</td>
+<td class="fieldname">
+total_extra_mem</td>
+<td class="fielddoc">
+Total amount of accessible extra memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga358a1c7e11a205600c712e2420174587"></a>unsigned int</td>
+<td class="fieldname">
+total_phycont_mem</td>
+<td class="fielddoc">
+Total amount of accessible physically contiguous memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga5ad6964a2c6fc4f691b4bdf6e5dce8aa"></a>unsigned int</td>
+<td class="fieldname">
+total_user_rw_mem</td>
+<td class="fielddoc">
+Total amount of accessible USER_RW memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga5cf3ae5149b814ebc5673dea2833b78b"></a>int</td>
+<td class="fieldname">
+unk0</td>
+<td class="fielddoc">
+Unknown Data. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga06b35f32c0bd7a3d56e50f697f1c4ba3"></a>int</td>
+<td class="fieldname">
+unk1</td>
+<td class="fielddoc">
+Unknown Data. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga2bf768bfd7d15e131be4704a75f97ffa"></a>int</td>
+<td class="fieldname">
+unk2[2]</td>
+<td class="fielddoc">
+Unknown Data. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad9460159221b4385cf2262be29b52b8f"></a>int</td>
+<td class="fieldname">
+unk3[10]</td>
+<td class="fielddoc">
+Unknown Data. </td></tr>
+</table>
+
+</div>
+</div>
 <a name="structsceAppMgrLoadExecOptParam" id="structsceAppMgrLoadExecOptParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structsceAppMgrLoadExecOptParam">&#9670;&nbsp;</a></span>sceAppMgrLoadExecOptParam</h2>
 
@@ -563,6 +679,28 @@ Reserved data. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga18739681c0ec91f312f17120af3a155a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18739681c0ec91f312f17120af3a155a">&#9670;&nbsp;</a></span>SceAppMgrApplicationMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aaad4f0b2ad0f14505acf8944c04551388"></a>SCE_APPMGR_APPLICATION_MODE_A&#160;</td><td class="fielddoc"><p>Application without physically contiguous memory access. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8"></a>SCE_APPMGR_APPLICATION_MODE_B&#160;</td><td class="fielddoc"><p>Application with physically contiguous memory access. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921"></a>SCE_APPMGR_APPLICATION_MODE_C&#160;</td><td class="fielddoc"><p>Application with physically contiguous memory and extra memory access. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga771df8407677ccb8145733c989f0903d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga771df8407677ccb8145733c989f0903d">&#9670;&nbsp;</a></span>SceAppMgrErrorCode</h2>
 
@@ -1320,6 +1458,34 @@ Reserved data. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>App param example: type=LAUNCH_APP_BY_URI&amp;uri=psgm:play?titleid=NPXS10031 </dd></dl>
+
+</div>
+</div>
+<a id="gac4b9cd5f4c4881a79570a353b87143ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4b9cd5f4c4881a79570a353b87143ea">&#9670;&nbsp;</a></span>sceAppMgrGetBudgetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetBudgetInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrBudgetInfo">SceAppMgrBudgetInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get memory budget info for a running system application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Info related to the memory budget of the running application.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function will always return an error if used in a normal application. </dd></dl>
 
 </div>
 </div>

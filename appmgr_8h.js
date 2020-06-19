@@ -3,6 +3,11 @@ var appmgr_8h =
     [ "SCE_APPMGR_MAX_APP_NAME_LENGTH", "group__SceAppMgrUser.html#gafc66fcb411ff80b645d319e641aab567", null ],
     [ "SceAppMgrExecOptParam", "group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d", null ],
     [ "SceAppMgrLaunchAppOptParam", "group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28", null ],
+    [ "SceAppMgrApplicationMode", "group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a", [
+      [ "SCE_APPMGR_APPLICATION_MODE_A", "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aaad4f0b2ad0f14505acf8944c04551388", null ],
+      [ "SCE_APPMGR_APPLICATION_MODE_B", "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8", null ],
+      [ "SCE_APPMGR_APPLICATION_MODE_C", "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921", null ]
+    ] ],
     [ "SceAppMgrErrorCode", "group__SceAppMgrUser.html#ga771df8407677ccb8145733c989f0903d", [
       [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983", null ],
       [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
@@ -49,6 +54,7 @@ var appmgr_8h =
     [ "sceAppMgrDestroyOtherApp", "group__SceAppMgrUser.html#ga075c1e3c8dfcab225b2c778d5f33d517", null ],
     [ "sceAppMgrGameDataMount", "group__SceAppMgrUser.html#ga9f86fe3ca28ac18aef3aa12eeb3cc50a", null ],
     [ "sceAppMgrGetAppParam", "group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6", null ],
+    [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ],
     [ "sceAppMgrGetDevInfo", "group__SceAppMgrUser.html#ga0eb85f9a6fbd6948d480e3af23b76eca", null ],
     [ "sceAppMgrGetIdByName", "group__SceAppMgrUser.html#ga07bc80f01f9d74a9e694f8d972a2e9f8", null ],
     [ "sceAppMgrGetNameById", "group__SceAppMgrUser.html#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc", null ],
