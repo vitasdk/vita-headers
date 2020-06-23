@@ -514,8 +514,29 @@ typedef struct SceKernelModuleExportEntry {
  */
 int ksceKernelGetModuleLibExportList(SceUID pid, SceUID libid, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
 
-int ksceKernelGetModuleUid(SceUID pid, SceUID modid, SceUID *modid_out, const void *unk1, int unk2);
-int ksceKernelGetModuleUidList(SceUID pid, SceUID *modids, size_t *num);
+/**
+ * @brief Get module id list by import
+ *
+ * @param[in]    pid          - target pid
+ * @param[in]    libid        - target library uid
+ * @param[out]   modids       - module id output list
+ * @param[inout] num          - in:list max num, out:get entry num
+ * @param[in]    cpy_skip_num - The index at which to start copying
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleListByImport(SceUID pid, SceUID libid, SceUID *modids, SceSize *num, SceSize cpy_skip_num);
+
+/**
+ * @brief Get module export list
+ *
+ * @param[in]    pid    - target pid
+ * @param[out]   libids - library id output list
+ * @param[inout] num    - in:list max num, out:get entry num
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleExportLibraryList(SceUID pid, SceUID *libids, SceSize *num);
 
 #ifdef __cplusplus
 }
