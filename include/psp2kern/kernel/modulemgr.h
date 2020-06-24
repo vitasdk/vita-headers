@@ -536,7 +536,7 @@ int ksceKernelGetModuleListByImport(SceUID pid, SceUID libid, SceUID *modids, Sc
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleExportLibraryList(SceUID pid, SceUID *libids, SceSize *num);
+int ksceKernelGetProcessLibraryIdList(SceUID pid, SceUID *library_ids, SceSize *num);
 
 #ifdef __cplusplus
 }
