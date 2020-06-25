@@ -518,21 +518,21 @@ int ksceKernelGetModuleLibExportList(SceUID pid, SceUID libid, SceKernelModuleEx
  * @brief Get module id list by import
  *
  * @param[in]    pid          - target pid
- * @param[in]    libid        - target library uid
+ * @param[in]    library_id   - target library uid
  * @param[out]   modids       - module id output list
  * @param[inout] num          - in:list max num, out:get entry num
  * @param[in]    cpy_skip_num - The index at which to start copying
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleListByImport(SceUID pid, SceUID libid, SceUID *modids, SceSize *num, SceSize cpy_skip_num);
+int ksceKernelGetModuleListByImport(SceUID pid, SceUID library_id, SceUID *modids, SceSize *num, SceSize cpy_skip_num);
 
 /**
  * @brief Get module export list
  *
- * @param[in]    pid    - target pid
- * @param[out]   libids - library id output list
- * @param[inout] num    - in:list max num, out:get entry num
+ * @param[in]    pid         - target pid
+ * @param[out]   library_ids - library id output list
+ * @param[inout] num         - in:list max num, out:get entry num
  *
  * @return 0 on success, < 0 on error.
  */
