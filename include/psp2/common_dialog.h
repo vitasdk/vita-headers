@@ -117,7 +117,7 @@ void sceCommonDialogConfigParamInit(SceCommonDialogConfigParam *param)
 	memset(param, 0x0, sizeof(SceCommonDialogConfigParam));
 	param->language = SCE_SYSTEM_PARAM_LANG_MAX_VALUE;
 	param->enterButtonAssign = SCE_SYSTEM_PARAM_ENTER_BUTTON_MAX_VALUE;
-	param->sdkVersion = 0x03150021;
+	param->sdkVersion = 0x03570011;
 };
 
 int sceCommonDialogSetConfigParam(const SceCommonDialogConfigParam *configParam);

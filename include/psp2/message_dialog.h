@@ -152,7 +152,7 @@ void sceMsgDialogParamInit(SceMsgDialogParam *param)
 {
 	memset( param, 0x0, sizeof(SceMsgDialogParam) );
 	_sceCommonDialogSetMagicNumber( &param->commonParam );
-	param->sdkVersion = 0x03150021;
+	param->sdkVersion = 0x03570011;
 }
 
 int sceMsgDialogInit(const SceMsgDialogParam *param);
