@@ -129,7 +129,7 @@ int sceAudioOutSetVolume(int port, SceAudioOutChannelFlag ch, int *vol);
  * @return 0 on success, < 0 on error.
  * @note - If (-1) is specified for any argument (excepted for port), current configuration is used instead.
  */
-int sceAudioOutSetConfig(int port, int len, int freq, SceAudioOutMode mode);
+int sceAudioOutSetConfig(int port, SceSize len, int freq, SceAudioOutMode mode);
 
 /**
  * Get a parameter value of specified output port
