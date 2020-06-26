@@ -156,11 +156,11 @@ typedef struct SceKernelSysrootSelfInfo {
  * @param[in] name - Name for the memory block
  * @param[in] type - Type of the memory to allocate
  * @param[in] size - Size of the memory to allocate
- * @param[in] optp - Memory block options?
+ * @param[in] opt  - Memory block options?
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *pOpt);
+SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
 
 /**
  * Frees new memory block
@@ -174,12 +174,12 @@ int ksceKernelFreeMemBlock(SceUID uid);
 /**
  * Gets the base address of a memory block
  *
- * @param[in] uid - SceUID of the memory block
- * @param[out] basep - Base address of the memory block identified by uid
+ * @param[in]  uid  - SceUID of the memory block
+ * @param[out] base - Base address of the memory block identified by uid
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceKernelGetMemBlockBase(SceUID uid, void **pBase);
+int ksceKernelGetMemBlockBase(SceUID uid, void **base);
 
 /**
  * Gets the memory block type of a memory block
@@ -222,7 +222,7 @@ SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize 
  */
 int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
 
-SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *pOpt);
+SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *opt);
 int ksceKernelDeleteHeap(SceUID uid);
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
 void ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
@@ -238,7 +238,7 @@ int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, SceSize le
 
 SceUID ksceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
 SceUID ksceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
-SceUID ksceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *pOpt, SceObjectBase **ppObj);
+SceUID ksceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
 
 /**
  * Gets an object from a UID.
@@ -252,7 +252,7 @@ SceUID ksceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOp
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetObjForUid(SceUID uid, SceClass *pClass, SceObjectBase **ppObj);
+int ksceKernelGetObjForUid(SceUID uid, SceClass *cls, SceObjectBase **obj);
 
 /**
  * Retains an object referenced by the UID.
@@ -289,7 +289,7 @@ int ksceKernelFindClassByName(const char *name, SceClass **cls);
 int ksceKernelSwitchVmaForPid(SceUID pid);
 
 void *ksceKernelGetSysrootBuffer(void);
-int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ppCtx);
+int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
 
 int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, SceSize len);
 
@@ -304,7 +304,7 @@ int ksceKernelMapUserBlockDefaultTypeForPid(int pid, const char *name, int permi
 					    const void *user_buf, SceSize size, void **kernel_page,
 					    SceSize *kernel_size, unsigned int *kernel_offset);
 
-int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *pInfo);
+int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *info);
 
 /**
  * Get the physical address of a given virtual address
@@ -444,13 +444,13 @@ typedef struct SceKernelDebugMessageContext {
 
 // msg_type_flag : 0 or 0xB
 
-int ksceDebugPrintf2(int msg_type_flag, const SceKernelDebugMessageContext *pCtx, const char *fmt, ...);
+int ksceDebugPrintf2(int msg_type_flag, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
 	
-int ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *pCtx, void *some_address);
-int ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *pCtx, void *some_address, const char *fmt, ...);
+int ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address);
+int ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address, const char *fmt, ...);
 
-int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *pCtx, void *some_address);
-int ksceDebugPrintfKernelAssertion(int unk, int condition, const SceKernelDebugMessageContext *pCtx, int some_address, const char *fmt, ...);
+int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, void *some_address);
+int ksceDebugPrintfKernelAssertion(int unk, int condition, const SceKernelDebugMessageContext *ctx, int some_address, const char *fmt, ...);
 
 int ksceDebugSetHandlers(int (*func)(int unk, const char *format, const va_list args), void *args);
 
