@@ -1,5 +1,5 @@
 var group__SceDmacMgrKernel =
 [
-    [ "ksceDmacMemcpy", "group__SceDmacMgrKernel.html#ga8da6896404f340e7ad537b97b7c98cb1", null ],
-    [ "ksceDmacMemset", "group__SceDmacMgrKernel.html#ga3f4cac16f17274f44d49a91e857292ec", null ]
+    [ "ksceDmacMemcpy", "group__SceDmacMgrKernel.html#ga571324520ce249e662e7a0967dde9e12", null ],
+    [ "ksceDmacMemset", "group__SceDmacMgrKernel.html#ga5715f386ae09d55c88fb6d55c448cbe0", null ]
 ];

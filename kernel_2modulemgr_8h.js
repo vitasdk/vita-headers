@@ -8,7 +8,7 @@ var kernel_2modulemgr_8h =
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrUser.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrUser.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
     [ "sceKernelGetModuleInfo", "group__SceModulemgrUser.html#gada83819dbe99a2262a3ac06f005d5409", null ],
-    [ "sceKernelGetModuleList", "group__SceModulemgrUser.html#gabd91b92f5f831f651769d42eaae2c8a4", null ],
+    [ "sceKernelGetModuleList", "group__SceModulemgrUser.html#gaadcde67f9524b57b3f139f7330512bc7", null ],
     [ "sceKernelGetSystemSwVersion", "group__SceModulemgrUser.html#ga31a1b23ed8dbee2a197bcaaea296c327", null ],
     [ "sceKernelLoadModule", "group__SceModulemgrUser.html#ga7777a48e07030061c3b5da63697d27b2", null ],
     [ "sceKernelLoadStartModule", "group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327", null ],

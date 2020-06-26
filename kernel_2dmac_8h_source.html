@@ -80,15 +80,15 @@ $(document).ready(function(){initNavTree('kernel_2dmac_8h_source.html',''); init
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _PSP2_DMAC_H_</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _PSP2_DMAC_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">psp2/types.h</a>&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group__SceDmacMgrUser.html#gaff25947b3a61e85fd9f38f32b586b9df">   25</a></span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__SceDmacMgrUser.html#gaff25947b3a61e85fd9f38f32b586b9df">sceDmacMemcpy</a>(<span class="keywordtype">void</span> *dst, <span class="keyword">const</span> <span class="keywordtype">void</span> *src, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group__SceDmacMgrUser.html#gaa44ad7930ee98e99e50b0429b0033bc4">   25</a></span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__SceDmacMgrUser.html#gaa44ad7930ee98e99e50b0429b0033bc4">sceDmacMemcpy</a>(<span class="keywordtype">void</span> *dst, <span class="keyword">const</span> <span class="keywordtype">void</span> *src, <a class="code" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__SceDmacMgrUser.html#ga6c98e1327199debb013ba1ef592fff25">   36</a></span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__SceDmacMgrUser.html#ga6c98e1327199debb013ba1ef592fff25">sceDmacMemset</a>(<span class="keywordtype">void</span> *dst, <span class="keywordtype">int</span> c, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__SceDmacMgrUser.html#gab1400fa1da5fa2f5ee6056c0f22064c8">   36</a></span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__SceDmacMgrUser.html#gab1400fa1da5fa2f5ee6056c0f22064c8">sceDmacMemset</a>(<span class="keywordtype">void</span> *dst, <span class="keywordtype">int</span> c, <a class="code" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
@@ -97,8 +97,10 @@ $(document).ready(function(){initNavTree('kernel_2dmac_8h_source.html',''); init
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_DMAC_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup__SceDmacMgrUser_html_ga6c98e1327199debb013ba1ef592fff25"><div class="ttname"><a href="group__SceDmacMgrUser.html#ga6c98e1327199debb013ba1ef592fff25">sceDmacMemset</a></div><div class="ttdeci">void * sceDmacMemset(void *dst, int c, size_t size)</div><div class="ttdoc">DMA memset.</div></div>
-<div class="ttc" id="agroup__SceDmacMgrUser_html_gaff25947b3a61e85fd9f38f32b586b9df"><div class="ttname"><a href="group__SceDmacMgrUser.html#gaff25947b3a61e85fd9f38f32b586b9df">sceDmacMemcpy</a></div><div class="ttdeci">void * sceDmacMemcpy(void *dst, const void *src, size_t size)</div><div class="ttdoc">DMA memcpy.</div></div>
+<div class="ttc" id="agroup__SceDmacMgrUser_html_gaa44ad7930ee98e99e50b0429b0033bc4"><div class="ttname"><a href="group__SceDmacMgrUser.html#gaa44ad7930ee98e99e50b0429b0033bc4">sceDmacMemcpy</a></div><div class="ttdeci">void * sceDmacMemcpy(void *dst, const void *src, SceSize size)</div><div class="ttdoc">DMA memcpy.</div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
+<div class="ttc" id="agroup__SceDmacMgrUser_html_gab1400fa1da5fa2f5ee6056c0f22064c8"><div class="ttname"><a href="group__SceDmacMgrUser.html#gab1400fa1da5fa2f5ee6056c0f22064c8">sceDmacMemset</a></div><div class="ttdeci">void * sceDmacMemset(void *dst, int c, SceSize size)</div><div class="ttdoc">DMA memset.</div></div>
+<div class="ttc" id="agroup__SceTypesUser_html_ga6f2706740670a84a49050f5327a2bf35"><div class="ttname"><a href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></div><div class="ttdeci">unsigned int SceSize</div><div class="ttdef"><b>Definition:</b> types.h:38</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

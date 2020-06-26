@@ -1,6 +1,6 @@
 var group__SceAppMgrKernel_structSceAppMgrLaunchParam =
 [
-    [ "size", "group__SceAppMgrKernel.html#gacec085c42b2e51857bfa16c082be1a52", null ],
+    [ "size", "group__SceAppMgrKernel.html#ga929854cecfe1826aa7bea04e313f2789", null ],
     [ "unk_10", "group__SceAppMgrKernel.html#gac43f7d2b1f74522f4c286ef455b304cc", null ],
     [ "unk_14", "group__SceAppMgrKernel.html#ga8402142a9bf9c9cac6c2932d3b1d75e1", null ],
     [ "unk_18", "group__SceAppMgrKernel.html#ga5a89503f13876048f09c3f43d8489498", null ],

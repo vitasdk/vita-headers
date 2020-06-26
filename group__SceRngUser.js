@@ -1,4 +1,4 @@
 var group__SceRngUser =
 [
-    [ "sceKernelGetRandomNumber", "group__SceRngUser.html#ga1ef818068412db341ec21c71ef798196", null ]
+    [ "sceKernelGetRandomNumber", "group__SceRngUser.html#ga106a8aafd256326f94ad0ade7c88077d", null ]
 ];

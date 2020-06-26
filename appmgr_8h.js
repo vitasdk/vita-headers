@@ -35,7 +35,7 @@ var appmgr_8h =
       [ "SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bdaabb9cd4ae81d46186dbdda5c782666e7", null ],
       [ "SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION", "group__SceAppMgrUser.html#ggad863aa5e7fcb541a0aada48e8c86f9bdad2bae3c3d576591d1997c1f85d98be5a", null ]
     ] ],
-    [ "_sceAppMgrGetAppState", "group__SceAppMgrUser.html#ga7234b0f71099e86cc4dde971a7888bb7", null ],
+    [ "_sceAppMgrGetAppState", "group__SceAppMgrUser.html#ga5e41257e06c78133601faab26ca91708", null ],
     [ "_sceAppMgrGetRawPath", "group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1", null ],
     [ "_sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53", null ],
     [ "_sceAppMgrSaveDataDataRemove", "group__SceAppMgrUser.html#gad890c1b5e9735c9f6abbbd560b3173a1", null ],
@@ -47,7 +47,7 @@ var appmgr_8h =
     [ "sceAppMgrAcquireBgmPort", "group__SceAppMgrUser.html#ga4128e9d22cadd7263e8bd9364e01f846", null ],
     [ "sceAppMgrAppDataMount", "group__SceAppMgrUser.html#ga8f57db4848090ff5bca28df9a0d17d56", null ],
     [ "sceAppMgrAppDataMountById", "group__SceAppMgrUser.html#gaaae990bce760d4f3c78985955ee547e5", null ],
-    [ "sceAppMgrAppParamGetString", "group__SceAppMgrUser.html#gac405fb989da489896c044f36f7980a7d", null ],
+    [ "sceAppMgrAppParamGetString", "group__SceAppMgrUser.html#ga8b99e3239585b530b0f4aa295d143601", null ],
     [ "sceAppMgrConvertVs0UserDrivePath", "group__SceAppMgrUser.html#gaa775aad9904b15f2ffec40c8a3025ce4", null ],
     [ "sceAppMgrDestroyAppByAppId", "group__SceAppMgrUser.html#ga5a04c57c6875a5e80fe43be0221fb248", null ],
     [ "sceAppMgrDestroyAppByName", "group__SceAppMgrUser.html#gae7d4e557d599ff47d5012cf5c2c0d155", null ],

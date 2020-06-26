@@ -53,6 +53,6 @@ var audioout_8h =
     [ "sceAudioOutOutput", "group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114", null ],
     [ "sceAudioOutReleasePort", "group__SceAudioUser.html#ga174204e79d6fa8cfbf34def88bfe2183", null ],
     [ "sceAudioOutSetAlcMode", "group__SceAudioUser.html#ga0cb07afb5f34ff623a25e13f91a0b1f1", null ],
-    [ "sceAudioOutSetConfig", "group__SceAudioUser.html#ga5bba0cf0c150fdb8a6e5dbebb60c5e3e", null ],
+    [ "sceAudioOutSetConfig", "group__SceAudioUser.html#ga11a4df4d66bfaaf4a50f15d1d4d74a2a", null ],
     [ "sceAudioOutSetVolume", "group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00", null ]
 ];

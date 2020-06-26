@@ -22,7 +22,7 @@ var compat_8h =
     [ "sceCompatGetPrimaryHead", "group__SceCompatUser.html#ga8552f0b4b53c0496ca308b134ba6eb82", null ],
     [ "sceCompatGetPspSystemSoftwareVersion", "group__SceCompatUser.html#gac373c454d8ec6f3a4e3a4cd60cb49951", null ],
     [ "sceCompatGetStatus", "group__SceCompatUser.html#ga392fd23494213036f1a3e8d3b70a1c7d", null ],
-    [ "sceCompatGetTitleList", "group__SceCompatUser.html#ga212514269ab5f81d9ae55ab21eb40c56", null ],
+    [ "sceCompatGetTitleList", "group__SceCompatUser.html#gacea36d5ee9b1ec184bb19c9876b86953", null ],
     [ "sceCompatGetUpdateState", "group__SceCompatUser.html#ga28fe9e97656c85b92e0f644618163118", null ],
     [ "sceCompatInitEx", "group__SceCompatUser.html#ga55b1105ec26d1ada689c59a441c00659", null ],
     [ "sceCompatInterrupt", "group__SceCompatUser.html#ga98a06018ed6891ca21126b040d700a9f", null ],

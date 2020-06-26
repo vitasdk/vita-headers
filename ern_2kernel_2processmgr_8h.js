@@ -6,7 +6,7 @@ var ern_2kernel_2processmgr_8h =
     [ "ksceKernelGetProcessLocalStorageAddr", "group__SceProcessmgrKernel.html#ga06498ae67bc5e0b2fbe26112d9bc6050", null ],
     [ "ksceKernelGetProcessLocalStorageAddrForPid", "group__SceProcessmgrKernel.html#gabb60dbc5ecd5c2b590d048930a1b6922", null ],
     [ "ksceKernelGetProcessStatus", "group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f", null ],
-    [ "ksceKernelLaunchApp", "group__SceProcessmgrKernel.html#gaeb5a46182cc592a51b588efcfc56eace", null ],
+    [ "ksceKernelLaunchApp", "group__SceProcessmgrKernel.html#ga12b068020bcffdbb059129051dd6f0dd", null ],
     [ "ksceKernelResumeProcess", "group__SceProcessmgrKernel.html#ga3d6212e760ed87b8dff0560329c1ddc6", null ],
     [ "ksceKernelSuspendProcess", "group__SceProcessmgrKernel.html#gad71f056f14de2b141a5af710d62fe83d", null ]
 ];

@@ -247,7 +247,7 @@ var NAVTREEINDEX13 =
 "group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be":[3,0,1,0,15,3],
 "group__SceDmacMgr.html":[1,6,9],
 "group__SceDmacMgrKernel.html":[1,6,9,1],
-"group__SceDmacMgrKernel.html#ga3f4cac16f17274f44d49a91e857292ec":[1,6,9,1,1],
-"group__SceDmacMgrKernel.html#ga3f4cac16f17274f44d49a91e857292ec":[3,0,1,1,2,1,1],
-"group__SceDmacMgrKernel.html#ga8da6896404f340e7ad537b97b7c98cb1":[1,6,9,1,0]
+"group__SceDmacMgrKernel.html#ga571324520ce249e662e7a0967dde9e12":[1,6,9,1,0],
+"group__SceDmacMgrKernel.html#ga571324520ce249e662e7a0967dde9e12":[3,0,1,1,2,1,0],
+"group__SceDmacMgrKernel.html#ga5715f386ae09d55c88fb6d55c448cbe0":[1,6,9,1,1]
 };

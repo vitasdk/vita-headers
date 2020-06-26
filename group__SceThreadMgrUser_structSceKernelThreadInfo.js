@@ -18,6 +18,7 @@ var group__SceThreadMgrUser_structSceKernelThreadInfo =
     [ "size", "group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be", null ],
     [ "stack", "group__SceThreadMgrUser.html#gaf45401f5a22dfcde99d76b8341837b80", null ],
     [ "stackSize", "group__SceThreadMgrUser.html#ga3ea54db9fd9d81dc69a94ee56f3a6c9b", null ],
+    [ "stackSize", "group__SceThreadMgrKernel.html#gaa89bb2afd0a00182f319104ee46c64d1", null ],
     [ "status", "group__SceThreadMgrUser.html#ga5714d029d7cf7bea143a47e9cdca1c6b", null ],
     [ "threadPreemptCount", "group__SceThreadMgrUser.html#ga1e3ab6232be9f798357ccdf1c01e3b7c", null ],
     [ "threadReleaseCount", "group__SceThreadMgrUser.html#ga1454001f02a7466066ad143ba7941308", null ],
