@@ -255,7 +255,7 @@ int sceKernelGetThreadCurrentPriority(void);
  * @param[out] pStatus - Status out pointer
  * @return The exit status
  */
-int sceKernelGetThreadExitStatus(SceUID thid, int *pStatus);
+int sceKernelGetThreadExitStatus(SceUID thid, int *status);
 
 /**
  * Check the thread stack?
