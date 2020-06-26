@@ -22,7 +22,7 @@ extern "C" {
  *
  * @return 0 on success, < 0 on error
  */
-int ksceRegMgrGetKeyBin(const char *category, const char *name, void *buf, int size);
+int ksceRegMgrGetKeyBin(const char *category, const char *name, void *buf, SceSize size);
 
 /**
  * Get a key's information by category and name
@@ -33,7 +33,7 @@ int ksceRegMgrGetKeyBin(const char *category, const char *name, void *buf, int s
  *
  * @return 0 on success, < 0 on error
  */
-int ksceRegMgrGetKeyInt(const char* category, const char* name, int* buf);
+int ksceRegMgrGetKeyInt(const char *category, const char *name, int *buf);
 
 /**
  * Get a key's information by category and name
@@ -45,7 +45,7 @@ int ksceRegMgrGetKeyInt(const char* category, const char* name, int* buf);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceRegMgrGetKeyStr(const char* category, const char* name, char* buf, const int size);
+int ksceRegMgrGetKeyStr(const char *category, const char *name, char *buf, SceSize size);
 
 /**
  * Set a key's information by category and name
@@ -57,7 +57,7 @@ int ksceRegMgrGetKeyStr(const char* category, const char* name, char* buf, const
  *
  * @return 0 on success, < 0 on error
  */
-int ksceRegMgrSetKeyBin(const char *category, const char *name, void *buf, int size);
+int ksceRegMgrSetKeyBin(const char *category, const char *name, void *buf, SceSize size);
 
 /**
  * Set a key's information by category and name
@@ -68,7 +68,7 @@ int ksceRegMgrSetKeyBin(const char *category, const char *name, void *buf, int s
  *
  * @return 0 on success, < 0 on error
  */
-int ksceRegMgrSetKeyInt(const char* category, const char* name, int buf);
+int ksceRegMgrSetKeyInt(const char *category, const char *name, int buf);
 
 /**
  * Set a key's information by category and name
@@ -80,7 +80,7 @@ int ksceRegMgrSetKeyInt(const char* category, const char* name, int buf);
  *
  * @return 0 on success, < 0 on error
  */
-int ksceRegMgrSetKeyStr(const char* category, const char* name, char* buf, const int size);
+int ksceRegMgrSetKeyStr(const char *category, const char *name, char *buf, SceSize size);
 
 #ifdef __cplusplus
 }
