@@ -111,8 +111,8 @@ int ksceSysconCmdSync(SceSysconPacket *packet, int noWait);
  */
 int ksceSysconSetPowerMode(int type, int mode);
 
-int ksceSysconReadCommand(unsigned short cmd, void *buffer, unsigned int size);
-int ksceSysconSendCommand(unsigned short cmd, const void *buffer, unsigned int size);
+int ksceSysconReadCommand(unsigned short cmd, void *buffer, SceSize size);
+int ksceSysconSendCommand(unsigned short cmd, const void *buffer, SceSize size);
 
 /**
  * Set the debug handlers.
@@ -168,7 +168,7 @@ int ksceSysconIsDownLoaderMode(void);
 
 int ksceSysconLogStart(void);
 int ksceSysconLogStartWaiting(void);
-int ksceSysconLogReadData(unsigned short, void *buff, unsigned int size);
+int ksceSysconLogReadData(unsigned short, void *buff, SceSize size);
 
 int ksceSysconShowModeClear(void);
 int ksceSysconShowModeSet(void);
@@ -201,8 +201,8 @@ int ksceSysconClearTemperatureLog(int);
 int ksceSysconBeginConfigstorageTransaction(void);
 int ksceSysconCommitConfigstorageTransaction(void);
 int ksceSysconEndConfigstorageTransaction(void);
-int ksceSysconLoadConfigstorageScript(unsigned short, const void *buff, unsigned int size);
-int ksceSysconVerifyConfigstorageScript(unsigned short, const void *buff, unsigned int size);
+int ksceSysconLoadConfigstorageScript(unsigned short, const void *buff, SceSize size);
+int ksceSysconVerifyConfigstorageScript(unsigned short, const void *buff, SceSize size);
 
 /**
  * Set the alarm callback, that will be ran when the alarm timer is passed.
