@@ -280,7 +280,7 @@ int sceCompatWriteSharedCtrl(SceCtrlDataPsp *pad_data);
  *
  * @return 0 on success, < 0 on error.
 */
-int sceCompatGetTitleList(void *buf, int length);
+int sceCompatGetTitleList(void *buf, SceSize length);
 
 /**
  * Get Memory Card device information

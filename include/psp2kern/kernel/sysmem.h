@@ -7,6 +7,7 @@
 #define _PSP2_KERNEL_SYSMEM_H_
 
 #include <psp2kern/types.h>
+#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -109,7 +110,7 @@ typedef enum SceKernelModel {
 	SCE_KERNEL_MODEL_VITATV = 0x20000
 } SceKernelModel;
 
-typedef int (*SceClassCallback)(void *item);
+typedef int (* SceClassCallback)(void *item);
 
 typedef struct SceClass {
 	struct SceClass *next;
@@ -155,11 +156,11 @@ typedef struct SceKernelSysrootSelfInfo {
  * @param[in] name - Name for the memory block
  * @param[in] type - Type of the memory to allocate
  * @param[in] size - Size of the memory to allocate
- * @param[in] optp - Memory block options?
+ * @param[in] opt  - Memory block options?
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockKernelOpt *optp);
+SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
 
 /**
  * Frees new memory block
@@ -173,12 +174,12 @@ int ksceKernelFreeMemBlock(SceUID uid);
 /**
  * Gets the base address of a memory block
  *
- * @param[in] uid - SceUID of the memory block
- * @param[out] basep - Base address of the memory block identified by uid
+ * @param[in]  uid  - SceUID of the memory block
+ * @param[out] base - Base address of the memory block identified by uid
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceKernelGetMemBlockBase(SceUID uid, void **basep);
+int ksceKernelGetMemBlockBase(SceUID uid, void **base);
 
 /**
  * Gets the memory block type of a memory block
@@ -226,14 +227,14 @@ int ksceKernelDeleteHeap(SceUID uid);
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
 void ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
 
-int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
-int ksceKernelMemcpyUserToKernel(void *dst, uintptr_t src, size_t len);
-int ksceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, size_t len);
-int ksceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, size_t len);
+int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
+int ksceKernelMemcpyUserToKernel(void *dst, uintptr_t src, SceSize len);
+int ksceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, SceSize len);
+int ksceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, SceSize len);
 
-int ksceKernelStrncpyUserToKernel(void *dst, uintptr_t src, size_t len);
-int ksceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, size_t len);
-int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, size_t len);
+int ksceKernelStrncpyUserToKernel(void *dst, uintptr_t src, SceSize len);
+int ksceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, SceSize len);
+int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
 
 SceUID ksceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
 SceUID ksceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
@@ -279,7 +280,8 @@ SceClass *ksceKernelGetUidClass(void);
 SceClass *ksceKernelGetUidDLinkClass(void);
 SceClass *ksceKernelGetUidHeapClass(void);
 SceClass *ksceKernelGetUidMemBlockClass(void);
-int ksceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, size_t itemsize, SceClassCallback create, SceClassCallback destroy);
+
+int ksceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, SceSize itemsize, SceClassCallback create, SceClassCallback destroy);
 int ksceKernelDeleteUserUid(SceUID pid, SceUID user_uid);
 int ksceKernelDeleteUid(SceUID uid);
 int ksceKernelFindClassByName(const char *name, SceClass **cls);
@@ -289,18 +291,18 @@ int ksceKernelSwitchVmaForPid(SceUID pid);
 void *ksceKernelGetSysrootBuffer(void);
 int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
 
-int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, size_t len);
+int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, SceSize len);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
 int ksceKernelMapUserBlock(const char *name, int permission, int type,
-			   const void *user_buf, unsigned int size, void **kernel_page,
-			   unsigned int *kernel_size, unsigned int *kernel_offset);
+			   const void *user_buf, SceSize size, void **kernel_page,
+			   SceSize *kernel_size, unsigned int *kernel_offset);
 int ksceKernelMapUserBlockDefaultType(const char *name, int permission, const void *user_buf,
-				      unsigned int size, void **kernel_page,
-				      unsigned int *kernel_size, unsigned int *kernel_offset);
+				      SceSize size, void **kernel_page,
+				      SceSize *kernel_size, unsigned int *kernel_offset);
 int ksceKernelMapUserBlockDefaultTypeForPid(int pid, const char *name, int permission,
-					    const void *user_buf, unsigned int size, void **kernel_page,
-					    unsigned int *kernel_size, unsigned int *kernel_offset);
+					    const void *user_buf, SceSize size, void **kernel_page,
+					    SceSize *kernel_size, unsigned int *kernel_offset);
 
 int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *info);
 
@@ -347,7 +349,7 @@ int ksceKernelMemBlockRelease(SceUID uid);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelMemRangeRetain(void *addr, unsigned int size);
+int ksceKernelMemRangeRetain(void *addr, SceSize size);
 
 /**
  * Retains a memory range for a process (pid)
@@ -362,7 +364,7 @@ int ksceKernelMemRangeRetain(void *addr, unsigned int size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelMemRangeRetainForPid(SceUID pid, void *addr, unsigned int size);
+int ksceKernelMemRangeRetainForPid(SceUID pid, void *addr, SceSize size);
 
 /**
  * Retains a memory range checking for a given permission
@@ -377,7 +379,7 @@ int ksceKernelMemRangeRetainForPid(SceUID pid, void *addr, unsigned int size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelMemRangeRetainWithPerm(SceKernelMemoryRefPerm perm, void *addr, unsigned int size);
+int ksceKernelMemRangeRetainWithPerm(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
 
 /**
  * Releases a memory range
@@ -391,7 +393,7 @@ int ksceKernelMemRangeRetainWithPerm(SceKernelMemoryRefPerm perm, void *addr, un
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelMemRangeRelease(void *addr, unsigned int size);
+int ksceKernelMemRangeRelease(void *addr, SceSize size);
 
 /**
  * Releases a memory range for a process (pid)
@@ -406,7 +408,7 @@ int ksceKernelMemRangeRelease(void *addr, unsigned int size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, unsigned int size);
+int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, SceSize size);
 
 /**
  * Releases a memory range checking for a given permission
@@ -421,7 +423,7 @@ int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, unsigned int size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, unsigned int size);
+int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
 
 int ksceSysrootUseExternalStorage(void);
 
@@ -431,29 +433,26 @@ int ksceSysrootUseInternalStorage(void);
 
 int ksceDebugPrintf(const char *fmt, ...);
 
-typedef struct kernel_message_ctx
-{
+typedef struct SceKernelDebugMessageContext {
   int hex_value0_hi;
   int hex_value0_lo;
   int hex_value1;
-  char* msg0;
-  int num;
-  char* msg1;
-} kernel_message_ctx;
+  char *msg0;
+  SceSize num;
+  char *msg1;
+} SceKernelDebugMessageContext;
 
 // msg_type_flag : 0 or 0xB
 
-int ksceDebugPrintf2(int msg_type_flag, kernel_message_ctx *msg_ctx, const char *fmt, ...);
+int ksceDebugPrintf2(int msg_type_flag, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
 	
-int ksceDebugPrintKernelPanic(kernel_message_ctx *msg_ctx, void *some_address);
+int ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address);
+int ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address, const char *fmt, ...);
 
-int ksceDebugPrintfKernelPanic(kernel_message_ctx *msg_ctx, void *some_address, char* format, ...);
+int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, void *some_address);
+int ksceDebugPrintfKernelAssertion(int unk, int condition, const SceKernelDebugMessageContext *ctx, int some_address, const char *fmt, ...);
 
-int ksceDebugPrintKernelAssertion(int condition, kernel_message_ctx *msg_ctx, void *some_address);
-
-int ksceDebugPrintfKernelAssertion(int unk, int condition, kernel_message_ctx *msg_ctx, int some_address, const char *fmt, ...);
-
-int ksceDebugSetHandlers(int (*func)(void *args, char c), void *args);
+int ksceDebugSetHandlers(int (*func)(int unk, const char *format, const va_list args), void *args);
 
 int ksceDebugRegisterPutcharHandler(int (*func)(void *args, char c), void *args);
 

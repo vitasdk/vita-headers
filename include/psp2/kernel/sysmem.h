@@ -70,11 +70,11 @@ typedef enum SceKernelMemoryType {
  * @param[in] name - Name for the memory block
  * @param[in] type - Type of the memory to allocate
  * @param[in] size - Size of the memory to allocate
- * @param[in] optp - Memory block options?
+ * @param[in] opt  - Memory block options?
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockOpt *optp);
+SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockOpt *opt);
 
 /**
  * Frees new memory block
@@ -88,12 +88,12 @@ int sceKernelFreeMemBlock(SceUID uid);
 /**
  * Gets the base address of a memory block
  *
- * @param[in] uid - SceUID of the memory block to free
- * @param[out] basep - Base address of the memory block identified by SceUID
+ * @param[in]  uid  - SceUID of the memory block to free
+ * @param[out] base - Base address of the memory block identified by SceUID
  *
  * @return 0 on success, < 0 on error.
 */
-int sceKernelGetMemBlockBase(SceUID uid, void **basep);
+int sceKernelGetMemBlockBase(SceUID uid, void **base);
 
 SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 

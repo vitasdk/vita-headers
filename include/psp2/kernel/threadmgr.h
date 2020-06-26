@@ -126,7 +126,7 @@ typedef enum SceKernelMutexAttribute {
  * @return UID of the created thread, or an error code.
  */
 SceUID sceKernelCreateThread(const char *name, SceKernelThreadEntry entry, int initPriority,
-                             int stackSize, SceUInt attr, int cpuAffinityMask,
+                             SceSize stackSize, SceUInt attr, int cpuAffinityMask,
                              const SceKernelThreadOptParam *option);
 
 /**
@@ -251,11 +251,11 @@ int sceKernelGetThreadCurrentPriority(void);
 /**
  * Get the exit status of a thread.
  *
- * @param thid - The UID of the thread to check.
- *
+ * @param[in]  thid   - The UID of the thread to check.
+ * @param[out] status - Status out pointer
  * @return The exit status
  */
-int sceKernelGetThreadExitStatus(SceUID thid);
+int sceKernelGetThreadExitStatus(SceUID thid, int *status);
 
 /**
  * Check the thread stack?
@@ -340,7 +340,7 @@ typedef struct SceKernelSemaInfo {
  * @par Example:
  * @code
  * int semaid;
- * semaid = sceKernelCreateSema("MyMutex", 0, 1, 1, 0);
+ * semaid = sceKernelCreateSema("MySema", 0, 1, 1, NULL);
  * @endcode
  *
  * @param name - Specifies the name of the sema
@@ -476,7 +476,7 @@ typedef struct SceKernelMutexInfo {
  * @par Example:
  * @code
  * int mutexid;
- * mutexid = sceKernelCreateMutex("MyMutex", 0, 1, 1, 0);
+ * mutexid = sceKernelCreateMutex("MyMutex", 0, 1, NULL);
  * @endcode
  *
  * @param name - Specifies the name of the mutex
@@ -627,7 +627,7 @@ typedef enum SceEventFlagWaitTypes {
   * @par Example:
   * @code
   * int evid;
-  * evid = sceKernelCreateEventFlag("wait_event", 0, 0, 0);
+  * evid = sceKernelCreateEventFlag("wait_event", 0, 0, NULL);
   * @endcode
   */
 SceUID sceKernelCreateEventFlag(const char *name, int attr, int bits, SceKernelEventFlagOptParam *opt);
@@ -978,7 +978,7 @@ int sceKernelSendMsgPipeCB(SceUID uid, void *message, unsigned int size, int unk
  *
  * @return 0 on success, < 0 on error
  */
-int sceKernelTrySendMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2);
+int sceKernelTrySendMsgPipe(SceUID uid, void *message, SceSize size, int unk1, void *unk2);
 
 /**
  * Receive a message from a pipe
@@ -992,7 +992,7 @@ int sceKernelTrySendMsgPipe(SceUID uid, void *message, unsigned int size, int un
  *
  * @return 0 on success, < 0 on error
  */
-int sceKernelReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2, unsigned int *timeout);
+int sceKernelReceiveMsgPipe(SceUID uid, void *message, SceSize size, int unk1, void *unk2, unsigned int *timeout);
 
 /**
  * Receive a message from a pipe (with callback)
@@ -1006,7 +1006,7 @@ int sceKernelReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int un
  *
  * @return 0 on success, < 0 on error
  */
-int sceKernelReceiveMsgPipeCB(SceUID uid, void *message, unsigned int size, int unk1, void *unk2, unsigned int *timeout);
+int sceKernelReceiveMsgPipeCB(SceUID uid, void *message, SceSize size, int unk1, void *unk2, unsigned int *timeout);
 
 /**
  * Receive a message from a pipe
@@ -1019,7 +1019,7 @@ int sceKernelReceiveMsgPipeCB(SceUID uid, void *message, unsigned int size, int 
  *
  * @return 0 on success, < 0 on error
  */
-int sceKernelTryReceiveMsgPipe(SceUID uid, void *message, unsigned int size, int unk1, void *unk2);
+int sceKernelTryReceiveMsgPipe(SceUID uid, void *message, SceSize size, int unk1, void *unk2);
 
 /**
  * Cancel a message pipe

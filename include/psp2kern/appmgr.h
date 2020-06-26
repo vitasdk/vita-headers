@@ -22,7 +22,7 @@ int ksceAppMgrKillProcess(SceUID pid);
 
 typedef struct
 {
-    size_t size;
+    SceSize size;
     unsigned int unk_4; //<! set to 0x80000000 to break on launch
     unsigned int unk_8;
     unsigned int unk_C;
@@ -49,7 +49,7 @@ typedef struct
  * 
  * @return   pid on success, else < 0.
  */
-int ksceAppMgrLaunchAppByPath(const char *path, const char *args, unsigned arg_size, unsigned int type, const SceAppMgrLaunchParam *param, void *unk);
+int ksceAppMgrLaunchAppByPath(const char *path, const char *args, SceSize arg_size, unsigned int type, const SceAppMgrLaunchParam *param, void *unk);
 
 #ifdef __cplusplus
 }

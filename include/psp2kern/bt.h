@@ -305,12 +305,12 @@ int ksceBtGetConnectingInfo(unsigned int mac0, unsigned int mac1); // 1 = discon
 int ksceBtGetDeviceName(unsigned int mac0, unsigned int mac1, char name[0x79]);
 int ksceBtGetInfoForTest(int r0, int r1, int r2, int r3);
 int ksceBtGetLastError(void);
-int ksceBtGetRegisteredInfo(int device, int unk, SceBtRegisteredInfo *info, unsigned int info_size);
+int ksceBtGetRegisteredInfo(int device, int unk, SceBtRegisteredInfo *info, SceSize info_size);
 int ksceBtGetStatusForTest(int r0, int r1, int r2, int r3);
 int ksceBtGetVidPid(unsigned int mac0, unsigned int mac1, unsigned short vid_pid[2]);
 int ksceBtHfpGetCurrentPhoneNumber(int r0, int r1, int r2, int r3);
 int ksceBtHfpRequest(int r0, int r1, int r2, int r3);
-int ksceBtHidGetReportDescriptor(unsigned int mac0, unsigned int mac1, void *buffer, unsigned int size);
+int ksceBtHidGetReportDescriptor(unsigned int mac0, unsigned int mac1, void *buffer, SceSize size);
 int ksceBtHidTransfer(unsigned int mac0, unsigned int mac1, SceBtHidRequest *request);
 int ksceBtPushBip(int r0, int r1, int r2, int r3);
 int ksceBtPushOpp(int r0, int r1, int r2, int r3);
@@ -320,7 +320,7 @@ int ksceBtRecvBip(int r0, int r1, int r2, int r3);
 int ksceBtRecvOpp(int r0, int r1, int r2, int r3);
 int ksceBtRecvSpp(int r0, int r1, int r2, int r3);
 int ksceBtRegisterCallback(SceUID cb, int unused, int flags1, int flags2); // looks like flags1 is a mask for permitted MACs
-int ksceBtReplyPinCode(unsigned int mac0, unsigned int mac1, unsigned char *code, unsigned int length);
+int ksceBtReplyPinCode(unsigned int mac0, unsigned int mac1, unsigned char *code, SceSize length);
 int ksceBtReplyUserConfirmation(unsigned int mac0, unsigned int mac1, int unk);
 int ksceBtSendAudio(int r0, int r1, int r2, int r3);
 int ksceBtSendL2capEchoRequestForTest(int r0, int r1, int r2, int r3);

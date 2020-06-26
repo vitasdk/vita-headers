@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-int _vshSblGetSystemSwVersion(SceKernelFwInfo * data);
+int _vshSblGetSystemSwVersion(SceKernelFwInfo *data);
 
 int _vshSblAimgrGetConsoleId(char CID[32]);
 
@@ -25,7 +25,7 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
  *
  * @return 0 >= on success, < 0 on error.
  */
-int _vshIoMount(int id, const char *path, int permission, void* buf);
+int _vshIoMount(int id, const char *path, int permission, void *buf);
 
 /**
  * @param[in] id - mount id
@@ -47,7 +47,7 @@ int vshIdStorageIsReadOnly(void);
  *
  * @return 0 on success, < 0 on error.
  */
-int vshIdStorageReadLeaf(int leafnum, void *buf);
+int vshIdStorageReadLeaf(SceSize leafnum, void *buf);
 
 /**
  * @param[in] leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
@@ -55,7 +55,7 @@ int vshIdStorageReadLeaf(int leafnum, void *buf);
  *
  * @return 0 on success, < 0 on error.
  */
-int vshIdStorageWriteLeaf(int leafnum, const void *buf);
+int vshIdStorageWriteLeaf(SceSize leafnum, const void *buf);
 
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);

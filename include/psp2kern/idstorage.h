@@ -18,7 +18,7 @@ extern "C" {
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceIdStorageReadLeaf(int leafnum, void *buf);
+int ksceIdStorageReadLeaf(SceSize leafnum, void *buf);
   
 /**
  * @param[in] leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
@@ -26,7 +26,7 @@ int ksceIdStorageReadLeaf(int leafnum, void *buf);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceIdStorageWriteLeaf(int leafnum, const void *buf);
+int ksceIdStorageWriteLeaf(SceSize leafnum, const void *buf);
 
 #ifdef __cplusplus
 }
