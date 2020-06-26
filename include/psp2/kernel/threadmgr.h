@@ -251,8 +251,8 @@ int sceKernelGetThreadCurrentPriority(void);
 /**
  * Get the exit status of a thread.
  *
- * @param[in]  thid    - The UID of the thread to check.
- * @param[out] pStatus - Status out pointer
+ * @param[in]  thid   - The UID of the thread to check.
+ * @param[out] status - Status out pointer
  * @return The exit status
  */
 int sceKernelGetThreadExitStatus(SceUID thid, int *status);
