@@ -74,7 +74,7 @@ typedef enum SceKernelMemoryType {
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, int size, SceKernelAllocMemBlockOpt *optp);
+SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockOpt *pOpt);
 
 /**
  * Frees new memory block
@@ -93,7 +93,7 @@ int sceKernelFreeMemBlock(SceUID uid);
  *
  * @return 0 on success, < 0 on error.
 */
-int sceKernelGetMemBlockBase(SceUID uid, void **basep);
+int sceKernelGetMemBlockBase(SceUID uid, void **pBase);
 
 SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 
