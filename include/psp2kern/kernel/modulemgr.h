@@ -229,7 +229,7 @@ int ksceKernelGetModuleInfoMinByAddr(SceUID pid, const void *module_addr, uint32
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleInternal(SceUID modid, void **ppInfo);
+int ksceKernelGetModuleInternal(SceUID modid, void **info);
 
 /**
  * @brief Get module id by module address
