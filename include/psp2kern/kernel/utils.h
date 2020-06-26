@@ -64,24 +64,24 @@ typedef struct {
 	uint8_t data[976];
 } SceAesContext;
 
-int ksceSha1BlockInit(SceSha1Context *pContext);
-int ksceSha1BlockUpdate(SceSha1Context *pContext, const void *plain, uint32_t len);
-int ksceSha1BlockResult(SceSha1Context *pContext, char *digest);
-int ksceSha1Digest(const void *plain, uint32_t len, char *result);
+int ksceSha1BlockInit(SceSha1Context *pCtx);
+int ksceSha1BlockUpdate(SceSha1Context *pCtx, const void *plain, SceSize len);
+int ksceSha1BlockResult(SceSha1Context *pCtx, void *result);
+int ksceSha1Digest(const void *plain, SceSize len, void *digest);
 
-int ksceSha224BlockInit(SceSha224Context *pContext);
-int ksceSha224BlockUpdate(SceSha224Context *pContext, const void *plain, uint32_t len);
-int ksceSha224BlockResult(SceSha224Context *pContext, char *digest);
-int ksceSha224Digest(const void *plain, uint32_t len, char *result);
+int ksceSha224BlockInit(SceSha224Context *pCtx);
+int ksceSha224BlockUpdate(SceSha224Context *pCtx, const void *plain, SceSize len);
+int ksceSha224BlockResult(SceSha224Context *pCtx, void *result);
+int ksceSha224Digest(const void *plain, SceSize len, void *digest);
 
-int ksceSha256BlockInit(SceSha256Context *pContext);
-int ksceSha256BlockUpdate(SceSha256Context *pContext, const void *plain, uint32_t len);
-int ksceSha256BlockResult(SceSha256Context *pContext, char *digest);
-int ksceSha256Digest(const void *plain, uint32_t len, char *result);
+int ksceSha256BlockInit(SceSha256Context *pCtx);
+int ksceSha256BlockUpdate(SceSha256Context *pCtx, const void *plain, SceSize len);
+int ksceSha256BlockResult(SceSha256Context *pCtx, void *result);
+int ksceSha256Digest(const void *plain, SceSize len, void *digest);
 
-int ksceHmacSha1Digest(const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result);
-int ksceHmacSha224Digest(const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result);
-int ksceHmacSha256Digest(const unsigned char *key, uint32_t key_len, const void *plain, uint32_t len, char *result);
+int ksceHmacSha1Digest(const void *key, SceSize key_len, const void *plain, SceSize len, void *digest);
+int ksceHmacSha224Digest(const void *key, SceSize key_len, const void *plain, SceSize len, void *digest);
+int ksceHmacSha256Digest(const void *key, SceSize key_len, const void *plain, SceSize len, void *digest);
 
 /**
  * @param[out] dst - dst buf
@@ -91,7 +91,7 @@ int ksceHmacSha256Digest(const unsigned char *key, uint32_t key_len, const void 
  *
  * @return decompressed size on success, < 0 on error.
  */
-int ksceGzipDecompress(void *dst, uint32_t dst_size, const void *src, uint32_t *crc32);
+int ksceGzipDecompress(void *dst, SceSize dst_size, const void *src, uint32_t *crc32);
 
 /**
  * @brief Check magic of Gzip header
@@ -173,7 +173,7 @@ const void *ksceZlibGetCompressedData(const void *src);
  *
  * @return decompressed size on success, < 0 on error.
  */
-int ksceZlibDecompress(void *dst, uint32_t dst_size, const void *src, uint32_t *adler32);
+int ksceZlibDecompress(void *dst, SceSize dst_size, const void *src, uint32_t *adler32);
 
 /**
  * @param[out] dst - dst buf
@@ -183,8 +183,8 @@ int ksceZlibDecompress(void *dst, uint32_t dst_size, const void *src, uint32_t *
  *
  * @return decompressed size on success, < 0 on error.
  */
-int ksceDeflateDecompress(void *dst, uint32_t dst_size, const void *src, const void **next);
-int ksceDeflateDecompressPartial(void *dst, unsigned int dst_size, const void *src, const void **next, SceDeflatePartialInputParam *cbInfo);
+int ksceDeflateDecompress(void *dst, SceSize dst_size, const void *src, const void **next);
+int ksceDeflateDecompressPartial(void *dst, SceSize dst_size, const void *src, const void **next, SceDeflatePartialInputParam *cbInfo);
 
 /**
  * @param[out] ctx - out key data, etc...
@@ -194,15 +194,15 @@ int ksceDeflateDecompressPartial(void *dst, unsigned int dst_size, const void *s
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceAesInit1(SceAesContext *ctx, int blocksize, int keysize, const void *key);
-int ksceAesInit2(SceAesContext *ctx, int blocksize, int keysize, const void *key);
-int ksceAesInit3(SceAesContext *ctx, int blocksize, int keysize, const void *key);
+int ksceAesInit1(SceAesContext *pCtx, SceSize blocksize, SceSize keysize, const void *key);
+int ksceAesInit2(SceAesContext *pCtx, SceSize blocksize, SceSize keysize, const void *key);
+int ksceAesInit3(SceAesContext *pCtx, SceSize blocksize, SceSize keysize, const void *key);
 
-int ksceAesDecrypt1(SceAesContext *ctx, const void *src, void *dst);
-int ksceAesDecrypt2(SceAesContext *ctx, const void *src, void *dst);
+int ksceAesDecrypt1(SceAesContext *pCtx, const void *src, void *dst);
+int ksceAesDecrypt2(SceAesContext *pCtx, const void *src, void *dst);
 
-int ksceAesEncrypt1(SceAesContext *ctx, const void *src, void *dst);
-int ksceAesEncrypt2(SceAesContext *ctx, const void *src, void *dst);
+int ksceAesEncrypt1(SceAesContext *pCtx, const void *src, void *dst);
+int ksceAesEncrypt2(SceAesContext *pCtx, const void *src, void *dst);
 
 #ifdef __cplusplus
 }
