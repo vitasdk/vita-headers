@@ -254,7 +254,7 @@ int sceAppMgrGetRunningAppIdListForShell(SceUID *appIds, int count);
  
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
+int _sceAppMgrGetAppState(SceAppMgrAppState *appState, SceSize len, uint32_t version);
 
 /**
  * Receive system event
@@ -402,7 +402,7 @@ int sceAppMgrAppDataMountById(int id, const char *titleid, const char *mount_poi
  *
  * @note param: 6 (contentid) 8 (category), 9 (stitle/title?), 10 (title/stitle?), 12 (titleid)
  */
-int sceAppMgrAppParamGetString(int pid, int param, char *string, int length);
+int sceAppMgrAppParamGetString(int pid, int param, char *string, SceSize length);
 
 /**
  * Get device info

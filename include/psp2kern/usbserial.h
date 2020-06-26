@@ -59,7 +59,7 @@ unsigned int ksceUsbSerialGetRecvBufferSize(void);
  * @param unk2 Unknown
  * @note max send length is 0x10000
  */
-unsigned int ksceUsbSerialSend(const void *buffer, unsigned int len, int unk1, int unk2);
+SceSize ksceUsbSerialSend(const void *buffer, SceSize len, int unk1, int unk2);
 
 /**
  * Receive Data
@@ -70,7 +70,7 @@ unsigned int ksceUsbSerialSend(const void *buffer, unsigned int len, int unk1, i
  * @param unk2 Unknown
  * @note max recv length is 0x10000
  */
-unsigned int ksceUsbSerialRecv(void *buffer, unsigned int max_len, int unk1, int unk2);
+SceSize ksceUsbSerialRecv(void *buffer, SceSize max_len, int unk1, int unk2);
 
 #ifdef __cplusplus
 }
