@@ -66,7 +66,7 @@ typedef struct SceKernelULMOption {
 	SceSize size;
 } SceKernelULMOption;
 
-int sceKernelGetModuleList(int flags, SceUID *modids, int *num);
+int sceKernelGetModuleList(int flags, SceUID *modids, SceSize *num);
 int sceKernelGetModuleInfo(SceUID modid, SceKernelModuleInfo *info);
 
 SceUID sceKernelLoadModule(const char *path, int flags, SceKernelLMOption *option);
