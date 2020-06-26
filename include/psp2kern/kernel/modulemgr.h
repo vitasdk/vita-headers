@@ -143,7 +143,7 @@ typedef struct SceKernelModuleLibraryInfo {
  *
  * @return none
  */
-void ksceKernelRegisterSyscall(int syscall_id, const void *func);
+void ksceKernelRegisterSyscall(SceSize syscall_id, const void *func);
 
 /**
  * @brief Setup kernel for modulemgr
@@ -165,7 +165,7 @@ void ksceKernelSetupForModulemgr(void);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, size_t *num);
+int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, SceSize *num);
 
 /**
  * @par Example1: Get max to 10 kernel module info
@@ -195,7 +195,7 @@ int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, 
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleList2(SceUID pid, SceKernelModuleListInfo *infolists, size_t *num);
+int ksceKernelGetModuleList2(SceUID pid, SceKernelModuleListInfo *infolists, SceSize *num);
 
 /**
  * @brief Get module info
@@ -229,7 +229,7 @@ int ksceKernelGetModuleInfoMinByAddr(SceUID pid, const void *module_addr, uint32
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleInternal(SceUID modid, void **module_info);
+int ksceKernelGetModuleInternal(SceUID modid, void **ppInfo);
 
 /**
  * @brief Get module id by module address
@@ -483,7 +483,7 @@ SceUID ksceKernelGetProcessMainModule(SceUID pid);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModulePath(SceUID modid, char *path, int pathlen);
+int ksceKernelGetModulePath(SceUID modid, char *path, SceSize pathlen);
 
 /**
  * @brief Get library info
@@ -494,7 +494,7 @@ int ksceKernelGetModulePath(SceUID modid, char *path, int pathlen);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID libid, SceKernelModuleLibraryInfo *info);
+int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID library_id, SceKernelModuleLibraryInfo *info);
 
 typedef struct SceKernelModuleExportEntry {
 	uint32_t libnid;
@@ -512,7 +512,7 @@ typedef struct SceKernelModuleExportEntry {
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleLibExportList(SceUID pid, SceUID libid, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
+int ksceKernelGetModuleLibExportList(SceUID pid, SceUID library_id, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
 
 /**
  * @brief Get module id list by import
