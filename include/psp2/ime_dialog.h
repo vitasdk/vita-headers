@@ -113,7 +113,7 @@ void sceImeDialogParamInit( SceImeDialogParam *param )
 {
 	memset( param, 0x0, sizeof(SceImeDialogParam) );
 	_sceCommonDialogSetMagicNumber(&param->commonParam);
-	param->sdkVersion = 0x03150021;
+	param->sdkVersion = PSP2_SDK_VERSION;
 }
 
 SceInt32 sceImeDialogInit( const SceImeDialogParam *param );

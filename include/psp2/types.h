@@ -7,6 +7,8 @@
 #ifndef _PSP2_TYPES_H_
 #define _PSP2_TYPES_H_
 
+#define PSP2_SDK_VERSION 0x03570011
+
 #include <stddef.h>
 #include <stdint.h>
 

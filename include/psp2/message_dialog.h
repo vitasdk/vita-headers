@@ -7,7 +7,7 @@
 #ifndef _PSP2_MSG_DIALOG_H_
 #define _PSP2_MSG_DIALOG_H_
 
-#include "common_dialog.h"
+#include <psp2/common_dialog.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -152,7 +152,7 @@ void sceMsgDialogParamInit(SceMsgDialogParam *param)
 {
 	memset( param, 0x0, sizeof(SceMsgDialogParam) );
 	_sceCommonDialogSetMagicNumber( &param->commonParam );
-	param->sdkVersion = 0x03570011;
+	param->sdkVersion = PSP2_SDK_VERSION;
 }
 
 int sceMsgDialogInit(const SceMsgDialogParam *param);

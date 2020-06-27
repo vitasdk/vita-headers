@@ -37,7 +37,7 @@ int sceSharedFbGetInfo(SceUID fb_id, SceSharedFbInfo *info);
 static inline
 SceUID sceSharedFbOpen(int index)
 {
-	return _sceSharedFbOpen(index, 0x03570011);
+	return _sceSharedFbOpen(index, PSP2_SDK_VERSION);
 };
 
 #ifdef __cplusplus
