@@ -55,7 +55,7 @@ typedef struct SceKernelModuleInfo {
   SceSize tlsAreaSize;
   char path[256];
   SceKernelSegmentInfo segments[4];
-  SceUInt type;                       //!< 6 = user-mode PRX?
+  SceUInt state;                       //!< 2:load ready, start ready, 6:start done, 9:other than that
 } SceKernelModuleInfo;
 
 typedef struct SceKernelLMOption {
