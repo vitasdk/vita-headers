@@ -8,6 +8,7 @@
 #define _PSP2_SHAREDFB_H_
 
 #include <psp2/types.h>
+#include <psp2/defs.h>
 
 #ifdef __cplusplus
 extern "C" {

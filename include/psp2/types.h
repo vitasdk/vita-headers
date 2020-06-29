@@ -7,8 +7,6 @@
 #ifndef _PSP2_TYPES_H_
 #define _PSP2_TYPES_H_
 
-#define PSP2_SDK_VERSION 0x03570011
-
 #include <stddef.h>
 #include <stdint.h>
 
@@ -240,4 +238,3 @@ typedef char* SceName;     //!< Names are used to describe object names
 #define SCE_UID_NAMELEN 31 //!< Maximum length for kernel object names
 
 #endif
-
