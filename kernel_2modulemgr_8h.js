@@ -7,6 +7,14 @@ var kernel_2modulemgr_8h =
     [ "SCE_KERNEL_STOP_CANCEL", "group__SceModulemgrUser.html#gae09ae07a8901f7f75ed837e3bca6e968", null ],
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrUser.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrUser.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
+    [ "SceKernelModuleState", "group__SceModulemgrUser.html#gaa5e9568f90e268bfc335c3dbfb46edd0", [
+      [ "SCE_KERNEL_MODULE_STATE_READY", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a7a5d0ae7190799f7f847c2b5e0c33cad", null ],
+      [ "SCE_KERNEL_MODULE_STATE_STARTED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a9c8e9bfacd82627ae1015cbf004e5926", null ],
+      [ "SCE_KERNEL_MODULE_STATE_ENDED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0af167ea41eb07f347d658eab72949f4a2", null ],
+      [ "SCE_KERNEL_MODULE_STATE_READY", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a7a5d0ae7190799f7f847c2b5e0c33cad", null ],
+      [ "SCE_KERNEL_MODULE_STATE_STARTED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a9c8e9bfacd82627ae1015cbf004e5926", null ],
+      [ "SCE_KERNEL_MODULE_STATE_ENDED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0af167ea41eb07f347d658eab72949f4a2", null ]
+    ] ],
     [ "sceKernelGetModuleInfo", "group__SceModulemgrUser.html#gada83819dbe99a2262a3ac06f005d5409", null ],
     [ "sceKernelGetModuleList", "group__SceModulemgrUser.html#gaadcde67f9524b57b3f139f7330512bc7", null ],
     [ "sceKernelGetSystemSwVersion", "group__SceModulemgrUser.html#ga31a1b23ed8dbee2a197bcaaea296c327", null ],
