@@ -27,6 +27,12 @@ extern "C" {
 #define SCE_KERNEL_STOP_CANCEL        SCE_KERNEL_STOP_FAIL
 /** @} */
 
+typedef enum SceKernelModuleState {
+    SCE_KERNEL_MODULE_STATE_READY   = 0x00000002,
+    SCE_KERNEL_MODULE_STATE_STARTED = 0x00000006,
+    SCE_KERNEL_MODULE_STATE_ENDED   = 0x00000009
+} SceKernelModuleState;
+
 typedef struct SceKernelModuleName {
   char s[0x1C];
 } SceKernelModuleName;
@@ -59,7 +65,7 @@ typedef struct SceKernelModuleInfo {
   SceSize tlsAreaSize;
   char path[256];
   SceKernelSegmentInfo segments[4];
-  SceUInt type;                       //!< 6 = user-mode PRX?
+  SceUInt state;                       //!< see:SceKernelModuleState
 } SceKernelModuleInfo;
 
 typedef struct {
@@ -70,8 +76,7 @@ typedef struct {
   SceSize size;
 } SceKernelULMOption;
 
-typedef struct
-{
+typedef struct {
   SceSize size;
   char versionString[0x1C];
   SceUInt version;
@@ -100,7 +105,7 @@ typedef struct {
   uint32_t unk40;
   uint32_t unk44;
   uint32_t nid;
-  int segments_num;
+  SceSize segments_num;
   union {
     struct {
       SceKernelSegmentInfo2 SegmentInfo[1];
@@ -123,15 +128,15 @@ typedef struct {
 
 typedef struct SceKernelModuleLibraryInfo {
   SceSize size; //!< sizeof(SceKernelModuleLibraryInfo) : 0x120
-  SceUID libid;
+  SceUID library_id;
   uint32_t libnid;
   uint16_t libver[2];
   uint16_t entry_num_function;
   uint16_t entry_num_variable;
   uint16_t unk_0x14;
   uint16_t unk_0x16;
-  char library_name[0x100]; // offset : 0x18
-  uint32_t unk_0x118;
+  char library_name[0x100];
+  SceSize number_of_imported;
   SceUID modid2;
 } SceKernelModuleLibraryInfo;
 
