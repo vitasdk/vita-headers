@@ -103,7 +103,7 @@ void sceNetCheckDialogParamInit(SceNetCheckDialogParam *param)
 {
 	memset(param, 0x0, sizeof(SceNetCheckDialogParam));
 	_sceCommonDialogSetMagicNumber(&param->commonParam);
-	param->sdkVersion = 0x03150021;
+	param->sdkVersion = PSP2_SDK_VERSION;
 	param->defaultAgeRestriction = SCE_NETCHECK_DIALOG_INITIAL_AGE_RESTRICTION;
 }
 
