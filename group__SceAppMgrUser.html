@@ -236,17 +236,17 @@ Macros</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gabf6fc1399fd256466b90b5003ed35371"></a>uint8_t</td>
-<td class="fieldname">
-reserved[60]</td>
-<td class="fielddoc">
-Reserved data. </td></tr>
-<tr><td class="fieldtype">
 <a id="ga6276dd7491147b755f8592f575408d1a"></a>int</td>
 <td class="fieldname">
 systemEvent</td>
 <td class="fielddoc">
 One of <a class="el" href="group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd">SceAppMgrSystemEventType</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="gabf6fc1399fd256466b90b5003ed35371"></a>uint8_t</td>
+<td class="fieldname">
+reserved[60]</td>
+<td class="fielddoc">
+Reserved data. </td></tr>
 </table>
 
 </div>
@@ -265,36 +265,6 @@ One of <a class="el" href="group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gaa90090dbd993aa00a88dbd3ed8c83184"></a>int</td>
-<td class="fieldname">
-fileNum</td>
-<td class="fielddoc">
-Number of files to save. </td></tr>
-<tr><td class="fieldtype">
-<a id="gacdc67c01ae8752a444489d8c42a20605"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataFile">SceAppUtilSaveDataFile</a> *</td>
-<td class="fieldname">
-files</td>
-<td class="fielddoc">
-Pointer to an array of files. </td></tr>
-<tr><td class="fieldtype">
-<a id="gad202d248cdf2bce5a360e0c512f31b8e"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
-<td class="fieldname">
-mountPoint</td>
-<td class="fielddoc">
-Savedata mountpoint. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga41766ec906048bebeba7a74fbae9db42"></a>unsigned int *</td>
-<td class="fieldname">
-requiredSizeKB</td>
-<td class="fielddoc">
-Required size in KBs. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga42be02c7a3d71ad7f0f71a92090eed8d"></a>uint8_t</td>
-<td class="fieldname">
-reserved[32]</td>
-<td class="fielddoc">
-Reserved data. </td></tr>
-<tr><td class="fieldtype">
 <a id="gab2a779a83339f79949e806c3b985aacd"></a>int</td>
 <td class="fieldname">
 size</td>
@@ -312,6 +282,36 @@ Save slot to use. </td></tr>
 slotParam</td>
 <td class="fielddoc">
 Save slot params. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga42be02c7a3d71ad7f0f71a92090eed8d"></a>uint8_t</td>
+<td class="fieldname">
+reserved[32]</td>
+<td class="fielddoc">
+Reserved data. </td></tr>
+<tr><td class="fieldtype">
+<a id="gacdc67c01ae8752a444489d8c42a20605"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataFile">SceAppUtilSaveDataFile</a> *</td>
+<td class="fieldname">
+files</td>
+<td class="fielddoc">
+Pointer to an array of files. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa90090dbd993aa00a88dbd3ed8c83184"></a>int</td>
+<td class="fieldname">
+fileNum</td>
+<td class="fielddoc">
+Number of files to save. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad202d248cdf2bce5a360e0c512f31b8e"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
+<td class="fieldname">
+mountPoint</td>
+<td class="fielddoc">
+Savedata mountpoint. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga41766ec906048bebeba7a74fbae9db42"></a>unsigned int *</td>
+<td class="fieldname">
+requiredSizeKB</td>
+<td class="fielddoc">
+Required size in KBs. </td></tr>
 </table>
 
 </div>
@@ -330,30 +330,6 @@ Save slot params. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga1be6c052c18ef42d0d5d35902d567a08"></a>int</td>
-<td class="fieldname">
-fileNum</td>
-<td class="fielddoc">
-Number of files to delete. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga26cfc82cbc17926fb6ddcf69255b69e0"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataFile">SceAppUtilSaveDataFile</a> *</td>
-<td class="fieldname">
-files</td>
-<td class="fielddoc">
-Pointer to an array of files. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaa11b3515746977f0fac187eec7609596"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
-<td class="fieldname">
-mountPoint</td>
-<td class="fielddoc">
-Savedata mountpoint. </td></tr>
-<tr><td class="fieldtype">
-<a id="gac4545973f946233361ca8ed382ba91b3"></a>uint8_t</td>
-<td class="fieldname">
-reserved[32]</td>
-<td class="fielddoc">
-Reserved data. </td></tr>
-<tr><td class="fieldtype">
 <a id="ga64cd388d8bcac19a32a3adafb41d0dcb"></a>int</td>
 <td class="fieldname">
 size</td>
@@ -371,6 +347,30 @@ Save slot to use. </td></tr>
 slotParam</td>
 <td class="fielddoc">
 Save slot params. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac4545973f946233361ca8ed382ba91b3"></a>uint8_t</td>
+<td class="fieldname">
+reserved[32]</td>
+<td class="fielddoc">
+Reserved data. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga26cfc82cbc17926fb6ddcf69255b69e0"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataFile">SceAppUtilSaveDataFile</a> *</td>
+<td class="fieldname">
+files</td>
+<td class="fielddoc">
+Pointer to an array of files. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1be6c052c18ef42d0d5d35902d567a08"></a>int</td>
+<td class="fieldname">
+fileNum</td>
+<td class="fielddoc">
+Number of files to delete. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa11b3515746977f0fac187eec7609596"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
+<td class="fieldname">
+mountPoint</td>
+<td class="fielddoc">
+Savedata mountpoint. </td></tr>
 </table>
 
 </div>
@@ -389,18 +389,6 @@ Save slot params. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gac3b02d0c986da4f8a5145a3603b16104"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
-<td class="fieldname">
-mountPoint</td>
-<td class="fielddoc">
-Savedata mountpoint. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga89a781700dc12326f67b046a988e5725"></a>uint8_t</td>
-<td class="fieldname">
-reserved[116]</td>
-<td class="fielddoc">
-Reserved data. </td></tr>
-<tr><td class="fieldtype">
 <a id="gaa8e961e567019c7afc451768df991974"></a>int</td>
 <td class="fieldname">
 size</td>
@@ -418,6 +406,18 @@ Save slot to use. </td></tr>
 slotParam</td>
 <td class="fielddoc">
 Save slot params. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga89a781700dc12326f67b046a988e5725"></a>uint8_t</td>
+<td class="fieldname">
+reserved[116]</td>
+<td class="fielddoc">
+Reserved data. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac3b02d0c986da4f8a5145a3603b16104"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
+<td class="fieldname">
+mountPoint</td>
+<td class="fielddoc">
+Savedata mountpoint. </td></tr>
 </table>
 
 </div>
@@ -436,12 +436,6 @@ Save slot params. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga3b74ba321725c038e628590a820d4862"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
-<td class="fieldname">
-mountPoint</td>
-<td class="fielddoc">
-Savedata mountpoint. </td></tr>
-<tr><td class="fieldtype">
 <a id="ga4d5eb4f19ff57a83c2794bba1f781746"></a>int</td>
 <td class="fieldname">
 size</td>
@@ -453,6 +447,12 @@ Must be 0x18. </td></tr>
 slotId</td>
 <td class="fielddoc">
 Save slot to use. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga3b74ba321725c038e628590a820d4862"></a><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td>
+<td class="fieldname">
+mountPoint</td>
+<td class="fielddoc">
+Savedata mountpoint. </td></tr>
 </table>
 
 </div>
@@ -471,6 +471,12 @@ Save slot to use. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="ga491fc8411d0df924a4444f8e50313e73"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+systemEventNum</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="gac59b7587cff4f084371a1ab458f61e8f"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 appEventNum</td>
@@ -486,12 +492,6 @@ isSystemUiOverlaid</td>
 <a id="ga49fc1ebe0736580a6ae9c27e14e4d348"></a><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
 reserved[116]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga491fc8411d0df924a4444f8e50313e73"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-systemEventNum</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -512,77 +512,17 @@ systemEventNum</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gad4ad526cb59dee9a73aefa4264f966e8"></a>int</td>
-<td class="fieldname">
-app_mode</td>
-<td class="fielddoc">
-One of <a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a>. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga02afc48a4b5ea8007e47eeba976f7460"></a><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a></td>
-<td class="fieldname">
-extra_mem_allowed</td>
-<td class="fielddoc">
-Flag for extra memory accessibility. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga579ca3a4feb5ef1a264f50f2b26c7619"></a>unsigned int</td>
-<td class="fieldname">
-free_cdram_mem</td>
-<td class="fielddoc">
-Free amount of accessible CDRAM memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga3fcc94c1082bac877b0de6f269e92f35"></a>unsigned int</td>
-<td class="fieldname">
-free_extra_mem</td>
-<td class="fielddoc">
-Free amount of accessible extra memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga9c5d01841d544ca02fa22ae694e0b31f"></a>unsigned int</td>
-<td class="fieldname">
-free_phycont_mem</td>
-<td class="fielddoc">
-Free amount of accessible physically contiguous memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="gadbcd61aa327bdf771d9f57c73290f023"></a>unsigned int</td>
-<td class="fieldname">
-free_user_rw</td>
-<td class="fielddoc">
-Free amount of accessible USER_RW memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="gad2e68d1b60154ba9cfb6d845d718c6d7"></a>int</td>
-<td class="fieldname">
-reserved[9]</td>
-<td class="fielddoc">
-Reserved data. </td></tr>
-<tr><td class="fieldtype">
 <a id="ga3863dd861db44c3fff263d3aa2e42cfe"></a>int</td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
 Must be 0x88. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga15f95921533b871f8706518470f56295"></a>unsigned int</td>
+<a id="gad4ad526cb59dee9a73aefa4264f966e8"></a>int</td>
 <td class="fieldname">
-total_cdram_mem</td>
+app_mode</td>
 <td class="fielddoc">
-Total amount of accessible CDRAM memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaef66593f8afe3b8edbf6f1045a462f40"></a>unsigned int</td>
-<td class="fieldname">
-total_extra_mem</td>
-<td class="fielddoc">
-Total amount of accessible extra memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga358a1c7e11a205600c712e2420174587"></a>unsigned int</td>
-<td class="fieldname">
-total_phycont_mem</td>
-<td class="fielddoc">
-Total amount of accessible physically contiguous memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga5ad6964a2c6fc4f691b4bdf6e5dce8aa"></a>unsigned int</td>
-<td class="fieldname">
-total_user_rw_mem</td>
-<td class="fielddoc">
-Total amount of accessible USER_RW memory. </td></tr>
+One of <a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5cf3ae5149b814ebc5673dea2833b78b"></a>int</td>
 <td class="fieldname">
@@ -590,11 +530,41 @@ unk0</td>
 <td class="fielddoc">
 Unknown Data. </td></tr>
 <tr><td class="fieldtype">
+<a id="ga5ad6964a2c6fc4f691b4bdf6e5dce8aa"></a>unsigned int</td>
+<td class="fieldname">
+total_user_rw_mem</td>
+<td class="fielddoc">
+Total amount of accessible USER_RW memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadbcd61aa327bdf771d9f57c73290f023"></a>unsigned int</td>
+<td class="fieldname">
+free_user_rw</td>
+<td class="fielddoc">
+Free amount of accessible USER_RW memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga02afc48a4b5ea8007e47eeba976f7460"></a><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a></td>
+<td class="fieldname">
+extra_mem_allowed</td>
+<td class="fielddoc">
+Flag for extra memory accessibility. </td></tr>
+<tr><td class="fieldtype">
 <a id="ga06b35f32c0bd7a3d56e50f697f1c4ba3"></a>int</td>
 <td class="fieldname">
 unk1</td>
 <td class="fielddoc">
 Unknown Data. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaef66593f8afe3b8edbf6f1045a462f40"></a>unsigned int</td>
+<td class="fieldname">
+total_extra_mem</td>
+<td class="fielddoc">
+Total amount of accessible extra memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga3fcc94c1082bac877b0de6f269e92f35"></a>unsigned int</td>
+<td class="fieldname">
+free_extra_mem</td>
+<td class="fielddoc">
+Free amount of accessible extra memory. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga2bf768bfd7d15e131be4704a75f97ffa"></a>int</td>
 <td class="fieldname">
@@ -602,11 +572,41 @@ unk2[2]</td>
 <td class="fielddoc">
 Unknown Data. </td></tr>
 <tr><td class="fieldtype">
+<a id="ga358a1c7e11a205600c712e2420174587"></a>unsigned int</td>
+<td class="fieldname">
+total_phycont_mem</td>
+<td class="fielddoc">
+Total amount of accessible physically contiguous memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9c5d01841d544ca02fa22ae694e0b31f"></a>unsigned int</td>
+<td class="fieldname">
+free_phycont_mem</td>
+<td class="fielddoc">
+Free amount of accessible physically contiguous memory. </td></tr>
+<tr><td class="fieldtype">
 <a id="gad9460159221b4385cf2262be29b52b8f"></a>int</td>
 <td class="fieldname">
 unk3[10]</td>
 <td class="fielddoc">
 Unknown Data. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga15f95921533b871f8706518470f56295"></a>unsigned int</td>
+<td class="fieldname">
+total_cdram_mem</td>
+<td class="fielddoc">
+Total amount of accessible CDRAM memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga579ca3a4feb5ef1a264f50f2b26c7619"></a>unsigned int</td>
+<td class="fieldname">
+free_cdram_mem</td>
+<td class="fielddoc">
+Free amount of accessible CDRAM memory. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad2e68d1b60154ba9cfb6d845d718c6d7"></a>int</td>
+<td class="fieldname">
+reserved[9]</td>
+<td class="fielddoc">
+Reserved data. </td></tr>
 </table>
 
 </div>
@@ -679,28 +679,6 @@ Reserved data. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga18739681c0ec91f312f17120af3a155a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga18739681c0ec91f312f17120af3a155a">&#9670;&nbsp;</a></span>SceAppMgrApplicationMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aaad4f0b2ad0f14505acf8944c04551388"></a>SCE_APPMGR_APPLICATION_MODE_A&#160;</td><td class="fielddoc"><p>Application without physically contiguous memory access. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8"></a>SCE_APPMGR_APPLICATION_MODE_B&#160;</td><td class="fielddoc"><p>Application with physically contiguous memory access. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921"></a>SCE_APPMGR_APPLICATION_MODE_C&#160;</td><td class="fielddoc"><p>Application with physically contiguous memory and extra memory access. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="ga771df8407677ccb8145733c989f0903d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga771df8407677ccb8145733c989f0903d">&#9670;&nbsp;</a></span>SceAppMgrErrorCode</h2>
 
@@ -727,6 +705,44 @@ Reserved data. </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga771df8407677ccb8145733c989f0903da7a8b7960fecd1c9f60ea16320a359827"></a>SCE_APPMGR_ERROR_BGM_PORT_BUSY&#160;</td><td class="fielddoc"><p>BGM port was occupied and could not be secured. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="gad863aa5e7fcb541a0aada48e8c86f9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad863aa5e7fcb541a0aada48e8c86f9bd">&#9670;&nbsp;</a></span>SceAppMgrSystemEventType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd">SceAppMgrSystemEventType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bda4332b4114d922a89b9f6ed3b505eac05"></a>SCE_APPMGR_SYSTEMEVENT_ON_RESUME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bda5b6ba301bf13d33a0a6a26c164fa79ac"></a>SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bdaabb9cd4ae81d46186dbdda5c782666e7"></a>SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bdad2bae3c3d576591d1997c1f85d98be5a"></a>SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaebe44866148489f26fa2db17140be375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebe44866148489f26fa2db17140be375">&#9670;&nbsp;</a></span>SceAppMgrInfoBarVisibility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaebe44866148489f26fa2db17140be375accb2ba153c48fb978a52749f26b93cc1"></a>SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaebe44866148489f26fa2db17140be375a1269b421f140d8fbb34479e64fa5454f"></a>SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -767,176 +783,53 @@ Reserved data. </td></tr>
 
 </div>
 </div>
-<a id="gaebe44866148489f26fa2db17140be375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaebe44866148489f26fa2db17140be375">&#9670;&nbsp;</a></span>SceAppMgrInfoBarVisibility</h2>
+<a id="ga18739681c0ec91f312f17120af3a155a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18739681c0ec91f312f17120af3a155a">&#9670;&nbsp;</a></span>SceAppMgrApplicationMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a></td>
+          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#ga18739681c0ec91f312f17120af3a155a">SceAppMgrApplicationMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaebe44866148489f26fa2db17140be375accb2ba153c48fb978a52749f26b93cc1"></a>SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaebe44866148489f26fa2db17140be375a1269b421f140d8fbb34479e64fa5454f"></a>SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="gad863aa5e7fcb541a0aada48e8c86f9bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad863aa5e7fcb541a0aada48e8c86f9bd">&#9670;&nbsp;</a></span>SceAppMgrSystemEventType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd">SceAppMgrSystemEventType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bda4332b4114d922a89b9f6ed3b505eac05"></a>SCE_APPMGR_SYSTEMEVENT_ON_RESUME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bda5b6ba301bf13d33a0a6a26c164fa79ac"></a>SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bdaabb9cd4ae81d46186dbdda5c782666e7"></a>SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggad863aa5e7fcb541a0aada48e8c86f9bdad2bae3c3d576591d1997c1f85d98be5a"></a>SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aaad4f0b2ad0f14505acf8944c04551388"></a>SCE_APPMGR_APPLICATION_MODE_A&#160;</td><td class="fielddoc"><p>Application without physically contiguous memory access. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8"></a>SCE_APPMGR_APPLICATION_MODE_B&#160;</td><td class="fielddoc"><p>Application with physically contiguous memory access. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921"></a>SCE_APPMGR_APPLICATION_MODE_C&#160;</td><td class="fielddoc"><p>Application with physically contiguous memory and extra memory access. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5e41257e06c78133601faab26ca91708"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e41257e06c78133601faab26ca91708">&#9670;&nbsp;</a></span>_sceAppMgrGetAppState()</h2>
+<a id="ga49e00b4b69c50af039e078fd0988302b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49e00b4b69c50af039e078fd0988302b">&#9670;&nbsp;</a></span>_sceAppMgrSaveDataDataSave()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _sceAppMgrGetAppState </td>
+          <td class="memname">int _sceAppMgrSaveDataDataSave </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrAppState">SceAppMgrAppState</a> *&#160;</td>
-          <td class="paramname"><em>appState</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSaveDataData">SceAppMgrSaveDataData</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>version</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get an application state. </p>
+<p>Save data on savedata0: partition. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">appState</td><td>- State of the application </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- sizeof(SceAppMgrState) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Version (?)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Data to save</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gabebda48556d7943e1ce1ec6e7ab101b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabebda48556d7943e1ce1ec6e7ab101b1">&#9670;&nbsp;</a></span>_sceAppMgrGetRawPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceAppMgrGetRawPath </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>resolved_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resolved_path_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>unk</em>[16]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Resolve a path to the corresponding true path (uses ::ksceFiosKernelOverlayResolveSync underneath). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path to convert (e.g. app0:) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">resolved_path</td><td>- True resolved path </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown, provide an empty buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaaa1cb4ce2b82b943ccb118a32864ce53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa1cb4ce2b82b943ccb118a32864ce53">&#9670;&nbsp;</a></span>_sceAppMgrGetRawPathOfApp0ByAppIdForShell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceAppMgrGetRawPathOfApp0ByAppIdForShell </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>appId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>resolved_path</em>[292]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the real/resolved path of app0: (where it's actually mounted) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">appId</td><td>- Use -2 for the current application </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">resolved_path</td><td>- Buffer that will hold the resolved path. It should have enough room to hold 292 characters or it will buffer overflow (noname120).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
@@ -967,33 +860,6 @@ Reserved data. </td></tr>
 
 </div>
 </div>
-<a id="ga49e00b4b69c50af039e078fd0988302b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49e00b4b69c50af039e078fd0988302b">&#9670;&nbsp;</a></span>_sceAppMgrSaveDataDataSave()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceAppMgrSaveDataDataSave </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSaveDataData">SceAppMgrSaveDataData</a> *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Save data on savedata0: partition. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Data to save</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga658e614bdf7496b2cfedd39cd6cc87d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga658e614bdf7496b2cfedd39cd6cc87d8">&#9670;&nbsp;</a></span>_sceAppMgrSaveDataSlotCreate()</h2>
 
@@ -1011,33 +877,6 @@ Reserved data. </td></tr>
 </div><div class="memdoc">
 
 <p>Create a savedata slot. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Slot data</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga1b7dac1c7c4add38e7d468a0e262db25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b7dac1c7c4add38e7d468a0e262db25">&#9670;&nbsp;</a></span>_sceAppMgrSaveDataSlotDelete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceAppMgrSaveDataSlotDelete </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSaveDataSlotDelete">SceAppMgrSaveDataSlotDelete</a> *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delete a savedata slot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Slot data</td></tr>
@@ -1102,6 +941,349 @@ Reserved data. </td></tr>
 
 </div>
 </div>
+<a id="ga1b7dac1c7c4add38e7d468a0e262db25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b7dac1c7c4add38e7d468a0e262db25">&#9670;&nbsp;</a></span>_sceAppMgrSaveDataSlotDelete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceAppMgrSaveDataSlotDelete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSaveDataSlotDelete">SceAppMgrSaveDataSlotDelete</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete a savedata slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Slot data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga07bc80f01f9d74a9e694f8d972a2e9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07bc80f01f9d74a9e694f8d972a2e9f8">&#9670;&nbsp;</a></span>sceAppMgrGetIdByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetIdByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get Process ID by Title ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pid</td><td>- Process ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaeb7f7f8ff5ab2ef9827e76e51c55d6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc">&#9670;&nbsp;</a></span>sceAppMgrGetNameById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetNameById </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get Title ID by Process ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process ID </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>- Title ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga075c1e3c8dfcab225b2c778d5f33d517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga075c1e3c8dfcab225b2c778d5f33d517">&#9670;&nbsp;</a></span>sceAppMgrDestroyOtherApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrDestroyOtherApp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy other apps. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gae7d4e557d599ff47d5012cf5c2c0d155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7d4e557d599ff47d5012cf5c2c0d155">&#9670;&nbsp;</a></span>sceAppMgrDestroyAppByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrDestroyAppByName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an application by Title ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID of the application</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga5a04c57c6875a5e80fe43be0221fb248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a04c57c6875a5e80fe43be0221fb248">&#9670;&nbsp;</a></span>sceAppMgrDestroyAppByAppId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrDestroyAppByAppId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>appId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an application by Application ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">appId</td><td>- Application ID of the application</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga3edf7ba35c47903d5a4cd9916ded48e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3edf7ba35c47903d5a4cd9916ded48e4">&#9670;&nbsp;</a></span>sceAppMgrGetProcessIdByAppIdForShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceAppMgrGetProcessIdByAppIdForShell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>appId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get PID of an application for Shell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">appId</td><td>- Application ID of the application</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The PID on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac6f8ae1dc9b47e8dcba25eb599a59dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6f8ae1dc9b47e8dcba25eb599a59dce">&#9670;&nbsp;</a></span>sceAppMgrGetRunningAppIdListForShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetRunningAppIdListForShell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
+          <td class="paramname"><em>appIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of running applications. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">appIds</td><td>- Array of running application IDs </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>- Max number of running applications to search</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of running applications. </dd></dl>
+
+</div>
+</div>
+<a id="ga5e41257e06c78133601faab26ca91708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e41257e06c78133601faab26ca91708">&#9670;&nbsp;</a></span>_sceAppMgrGetAppState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceAppMgrGetAppState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrAppState">SceAppMgrAppState</a> *&#160;</td>
+          <td class="paramname"><em>appState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an application state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">appState</td><td>- State of the application </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- sizeof(SceAppMgrState) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Version (?)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaeaa4505d7d38aa901fd7786c34467fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeaa4505d7d38aa901fd7786c34467fb7">&#9670;&nbsp;</a></span>sceAppMgrReceiveSystemEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrReceiveSystemEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSystemEvent">SceAppMgrSystemEvent</a> *&#160;</td>
+          <td class="paramname"><em>systemEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive system event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">systemEvent</td><td>- Received system event</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf01d5d2104529c560c05b248ed1f7dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf01d5d2104529c560c05b248ed1f7dd6">&#9670;&nbsp;</a></span>sceAppMgrGetAppParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetAppParam </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies app param to an array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">param</td><td>- pointer to a 1024 byte location to store the app param</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>App param example: type=LAUNCH_APP_BY_URI&amp;uri=psgm:play?titleid=NPXS10031 </dd></dl>
+
+</div>
+</div>
 <a id="ga4128e9d22cadd7263e8bd9364e01f846"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4128e9d22cadd7263e8bd9364e01f846">&#9670;&nbsp;</a></span>sceAppMgrAcquireBgmPort()</h2>
 
@@ -1119,6 +1301,299 @@ Reserved data. </td></tr>
 </div><div class="memdoc">
 
 <p>Obtains the BGM port, even when it is not in front. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga57e55396a9cc33ab9dc5f2a5bf566315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57e55396a9cc33ab9dc5f2a5bf566315">&#9670;&nbsp;</a></span>sceAppMgrReleaseBgmPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrReleaseBgmPort </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release acquired BGM port. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga780c093d4d4cb329f6a669018243955b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga780c093d4d4cb329f6a669018243955b">&#9670;&nbsp;</a></span>sceAppMgrSetInfobarState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrSetInfobarState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a>&#160;</td>
+          <td class="paramname"><em>visibility</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga930cb336cd38f294cecd1d99144f6f6d">SceAppMgrInfoBarColor</a>&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1ac9f6691786f20e782ae37cf1c9c2e3">SceAppMgrInfoBarTransparency</a>&#160;</td>
+          <td class="paramname"><em>transparency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set infobar state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">visibility</td><td>- Infobar visibility </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>- Infobar color </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transparency</td><td>- Infobar transparency</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga6d1f55f68294a3d243c61d418d14c587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d1f55f68294a3d243c61d418d14c587">&#9670;&nbsp;</a></span>sceAppMgrLoadExec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrLoadExec </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>appPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *const&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a> *&#160;</td>
+          <td class="paramname"><em>optParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load and start a SELF executable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">appPath</td><td>- Path of the SELF file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">argv</td><td>- Args to pass to SELF module_start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optParam</td><td>- Optional params</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>SELF file must be located in app0: partition. </dd></dl>
+
+</div>
+</div>
+<a id="ga3c8c9e88eae0832beb82c38022e52cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c8c9e88eae0832beb82c38022e52cbf">&#9670;&nbsp;</a></span>sceAppMgrLaunchAppByUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrLaunchAppByUri </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start an application by URI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- Must be 0x20000 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>- Uri to launch</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If flags != 0x20000, Livearea is opened. </dd></dl>
+
+</div>
+</div>
+<a id="ga372b7edb499d710ac40016b9012511cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga372b7edb499d710ac40016b9012511cc">&#9670;&nbsp;</a></span>sceAppMgrLaunchAppByName2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrLaunchAppByName2 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *&#160;</td>
+          <td class="paramname"><em>optParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start an application by Title ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID of the application </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>- The params passed to the application which can be retrieved with <a class="el" href="group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6" title="Copies app param to an array.">sceAppMgrGetAppParam</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optParam</td><td>- Optional params</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gab865fbedcc3772e21b221cf1d5862966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab865fbedcc3772e21b221cf1d5862966">&#9670;&nbsp;</a></span>sceAppMgrLaunchAppByName2ForShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceAppMgrLaunchAppByName2ForShell </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *&#160;</td>
+          <td class="paramname"><em>optParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start an application by Title ID for Shell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID of the application </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>- The params passed to the application which can be retrieved with <a class="el" href="group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6" title="Copies app param to an array.">sceAppMgrGetAppParam</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optParam</td><td>- Optional params</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Application ID (?) </dd></dl>
+
+</div>
+</div>
+<a id="ga9f86fe3ca28ac18aef3aa12eeb3cc50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f86fe3ca28ac18aef3aa12eeb3cc50a">&#9670;&nbsp;</a></span>sceAppMgrGameDataMount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGameDataMount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mount_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount game data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- ux0:app/TITLEID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk1</td><td>- Unknown, set 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk2</td><td>- Unknown, set 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to use</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
@@ -1261,234 +1736,6 @@ Reserved data. </td></tr>
 
 </div>
 </div>
-<a id="gaa775aad9904b15f2ffec40c8a3025ce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa775aad9904b15f2ffec40c8a3025ce4">&#9670;&nbsp;</a></span>sceAppMgrConvertVs0UserDrivePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrConvertVs0UserDrivePath </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>mount_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert vs0 path string to a new one usable by applications. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path to convert </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to use </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga5a04c57c6875a5e80fe43be0221fb248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a04c57c6875a5e80fe43be0221fb248">&#9670;&nbsp;</a></span>sceAppMgrDestroyAppByAppId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrDestroyAppByAppId </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>appId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy an application by Application ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">appId</td><td>- Application ID of the application</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gae7d4e557d599ff47d5012cf5c2c0d155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae7d4e557d599ff47d5012cf5c2c0d155">&#9670;&nbsp;</a></span>sceAppMgrDestroyAppByName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrDestroyAppByName </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy an application by Title ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID of the application</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga075c1e3c8dfcab225b2c778d5f33d517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga075c1e3c8dfcab225b2c778d5f33d517">&#9670;&nbsp;</a></span>sceAppMgrDestroyOtherApp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrDestroyOtherApp </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy other apps. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga9f86fe3ca28ac18aef3aa12eeb3cc50a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9f86fe3ca28ac18aef3aa12eeb3cc50a">&#9670;&nbsp;</a></span>sceAppMgrGameDataMount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGameDataMount </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>mount_point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Mount game data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- ux0:app/TITLEID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk1</td><td>- Unknown, set 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk2</td><td>- Unknown, set 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to use</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaf01d5d2104529c560c05b248ed1f7dd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf01d5d2104529c560c05b248ed1f7dd6">&#9670;&nbsp;</a></span>sceAppMgrGetAppParam()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGetAppParam </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Copies app param to an array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">param</td><td>- pointer to a 1024 byte location to store the app param</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>App param example: type=LAUNCH_APP_BY_URI&amp;uri=psgm:play?titleid=NPXS10031 </dd></dl>
-
-</div>
-</div>
-<a id="gac4b9cd5f4c4881a79570a353b87143ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4b9cd5f4c4881a79570a353b87143ea">&#9670;&nbsp;</a></span>sceAppMgrGetBudgetInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGetBudgetInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrBudgetInfo">SceAppMgrBudgetInfo</a> *&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get memory budget info for a running system application. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Info related to the memory budget of the running application.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function will always return an error if used in a normal application. </dd></dl>
-
-</div>
-</div>
 <a id="ga0eb85f9a6fbd6948d480e3af23b76eca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0eb85f9a6fbd6948d480e3af23b76eca">&#9670;&nbsp;</a></span>sceAppMgrGetDevInfo()</h2>
 
@@ -1532,367 +1779,6 @@ Reserved data. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>dev: ux0: </dd></dl>
-
-</div>
-</div>
-<a id="ga07bc80f01f9d74a9e694f8d972a2e9f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07bc80f01f9d74a9e694f8d972a2e9f8">&#9670;&nbsp;</a></span>sceAppMgrGetIdByName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGetIdByName </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get Process ID by Title ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pid</td><td>- Process ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaeb7f7f8ff5ab2ef9827e76e51c55d6cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc">&#9670;&nbsp;</a></span>sceAppMgrGetNameById()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGetNameById </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get Title ID by Process ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process ID </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>- Title ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga3edf7ba35c47903d5a4cd9916ded48e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3edf7ba35c47903d5a4cd9916ded48e4">&#9670;&nbsp;</a></span>sceAppMgrGetProcessIdByAppIdForShell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceAppMgrGetProcessIdByAppIdForShell </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>appId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get PID of an application for Shell. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">appId</td><td>- Application ID of the application</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The PID on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga1b609b44980977a5f0c1b08f8cd5e0bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b609b44980977a5f0c1b08f8cd5e0bf">&#9670;&nbsp;</a></span>sceAppMgrGetRawPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGetRawPath </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>mount_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>unk</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get raw path for a given path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path to convert </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to use </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gac6f8ae1dc9b47e8dcba25eb599a59dce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6f8ae1dc9b47e8dcba25eb599a59dce">&#9670;&nbsp;</a></span>sceAppMgrGetRunningAppIdListForShell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrGetRunningAppIdListForShell </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
-          <td class="paramname"><em>appIds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a list of running applications. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">appIds</td><td>- Array of running application IDs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>- Max number of running applications to search</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of running applications. </dd></dl>
-
-</div>
-</div>
-<a id="ga372b7edb499d710ac40016b9012511cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga372b7edb499d710ac40016b9012511cc">&#9670;&nbsp;</a></span>sceAppMgrLaunchAppByName2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrLaunchAppByName2 </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *&#160;</td>
-          <td class="paramname"><em>optParam</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start an application by Title ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID of the application </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>- The params passed to the application which can be retrieved with <a class="el" href="group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6" title="Copies app param to an array.">sceAppMgrGetAppParam</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">optParam</td><td>- Optional params</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gab865fbedcc3772e21b221cf1d5862966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab865fbedcc3772e21b221cf1d5862966">&#9670;&nbsp;</a></span>sceAppMgrLaunchAppByName2ForShell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceAppMgrLaunchAppByName2ForShell </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28">SceAppMgrLaunchAppOptParam</a> *&#160;</td>
-          <td class="paramname"><em>optParam</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start an application by Title ID for Shell. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Title ID of the application </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>- The params passed to the application which can be retrieved with <a class="el" href="group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6" title="Copies app param to an array.">sceAppMgrGetAppParam</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">optParam</td><td>- Optional params</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Application ID (?) </dd></dl>
-
-</div>
-</div>
-<a id="ga3c8c9e88eae0832beb82c38022e52cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c8c9e88eae0832beb82c38022e52cbf">&#9670;&nbsp;</a></span>sceAppMgrLaunchAppByUri()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrLaunchAppByUri </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>uri</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start an application by URI. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- Must be 0x20000 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>- Uri to launch</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If flags != 0x20000, Livearea is opened. </dd></dl>
-
-</div>
-</div>
-<a id="ga6d1f55f68294a3d243c61d418d14c587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6d1f55f68294a3d243c61d418d14c587">&#9670;&nbsp;</a></span>sceAppMgrLoadExec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrLoadExec </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>appPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *const&#160;</td>
-          <td class="paramname"><em>argv</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d">SceAppMgrExecOptParam</a> *&#160;</td>
-          <td class="paramname"><em>optParam</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load and start a SELF executable. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">appPath</td><td>- Path of the SELF file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">argv</td><td>- Args to pass to SELF module_start </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">optParam</td><td>- Optional params</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>SELF file must be located in app0: partition. </dd></dl>
 
 </div>
 </div>
@@ -1960,127 +1846,6 @@ Reserved data. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>mount_point: ms </dd></dl>
-
-</div>
-</div>
-<a id="gaeaa4505d7d38aa901fd7786c34467fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeaa4505d7d38aa901fd7786c34467fb7">&#9670;&nbsp;</a></span>sceAppMgrReceiveSystemEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrReceiveSystemEvent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrSystemEvent">SceAppMgrSystemEvent</a> *&#160;</td>
-          <td class="paramname"><em>systemEvent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receive system event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">systemEvent</td><td>- Received system event</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga57e55396a9cc33ab9dc5f2a5bf566315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga57e55396a9cc33ab9dc5f2a5bf566315">&#9670;&nbsp;</a></span>sceAppMgrReleaseBgmPort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrReleaseBgmPort </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Release acquired BGM port. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga780c093d4d4cb329f6a669018243955b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga780c093d4d4cb329f6a669018243955b">&#9670;&nbsp;</a></span>sceAppMgrSetInfobarState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrSetInfobarState </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375">SceAppMgrInfoBarVisibility</a>&#160;</td>
-          <td class="paramname"><em>visibility</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga930cb336cd38f294cecd1d99144f6f6d">SceAppMgrInfoBarColor</a>&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#ga1ac9f6691786f20e782ae37cf1c9c2e3">SceAppMgrInfoBarTransparency</a>&#160;</td>
-          <td class="paramname"><em>transparency</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set infobar state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">visibility</td><td>- Infobar visibility </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>- Infobar color </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">transparency</td><td>- Infobar transparency</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gae0445d2b1486eae77b3195a7141f7313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae0445d2b1486eae77b3195a7141f7313">&#9670;&nbsp;</a></span>sceAppMgrUmount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceAppMgrUmount </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>mount_point</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unmount a mountpoint. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to unmount</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Unmount app0: for example to enable write access to ux0:app/TITLEID </dd></dl>
 
 </div>
 </div>
@@ -2166,6 +1931,241 @@ Reserved data. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>id: 205 (cache0), 207 (td) </dd></dl>
+
+</div>
+</div>
+<a id="gae0445d2b1486eae77b3195a7141f7313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0445d2b1486eae77b3195a7141f7313">&#9670;&nbsp;</a></span>sceAppMgrUmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrUmount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mount_point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmount a mountpoint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to unmount</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Unmount app0: for example to enable write access to ux0:app/TITLEID </dd></dl>
+
+</div>
+</div>
+<a id="gaa775aad9904b15f2ffec40c8a3025ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa775aad9904b15f2ffec40c8a3025ce4">&#9670;&nbsp;</a></span>sceAppMgrConvertVs0UserDrivePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrConvertVs0UserDrivePath </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mount_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert vs0 path string to a new one usable by applications. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path to convert </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to use </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1b609b44980977a5f0c1b08f8cd5e0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b609b44980977a5f0c1b08f8cd5e0bf">&#9670;&nbsp;</a></span>sceAppMgrGetRawPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetRawPath </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mount_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>unk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get raw path for a given path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path to convert </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point</td><td>- Mountpoint to use </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gabebda48556d7943e1ce1ec6e7ab101b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabebda48556d7943e1ce1ec6e7ab101b1">&#9670;&nbsp;</a></span>_sceAppMgrGetRawPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceAppMgrGetRawPath </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>resolved_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>resolved_path_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>unk</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolve a path to the corresponding true path (uses ::ksceFiosKernelOverlayResolveSync underneath). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path to convert (e.g. app0:) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resolved_path</td><td>- True resolved path </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown, provide an empty buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaaa1cb4ce2b82b943ccb118a32864ce53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa1cb4ce2b82b943ccb118a32864ce53">&#9670;&nbsp;</a></span>_sceAppMgrGetRawPathOfApp0ByAppIdForShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceAppMgrGetRawPathOfApp0ByAppIdForShell </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>appId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>resolved_path</em>[292]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the real/resolved path of app0: (where it's actually mounted) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">appId</td><td>- Use -2 for the current application </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resolved_path</td><td>- Buffer that will hold the resolved path. It should have enough room to hold 292 characters or it will buffer overflow (noname120).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="gac4b9cd5f4c4881a79570a353b87143ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4b9cd5f4c4881a79570a353b87143ea">&#9670;&nbsp;</a></span>sceAppMgrGetBudgetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAppMgrGetBudgetInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAppMgrUser.html#structSceAppMgrBudgetInfo">SceAppMgrBudgetInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get memory budget info for a running system application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Info related to the memory budget of the running application.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function will always return an error if used in a normal application. </dd></dl>
 
 </div>
 </div>

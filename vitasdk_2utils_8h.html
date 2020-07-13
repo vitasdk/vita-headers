@@ -95,14 +95,14 @@ Functions</h2></td></tr>
 <tr class="separator:a94fe23a44a1a8afae2b8285db5fb707b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a94fe23a44a1a8afae2b8285db5fb707b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94fe23a44a1a8afae2b8285db5fb707b">&#9670;&nbsp;</a></span>vitasdk_delete_thread_reent()</h2>
+<a id="ae0d8ee6250228dab0b4c0e9686b962ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d8ee6250228dab0b4c0e9686b962ba">&#9670;&nbsp;</a></span>vitasdk_get_tls_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int vitasdk_delete_thread_reent </td>
+          <td class="memname">void* vitasdk_get_tls_data </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>thid</em></td><td>)</td>
@@ -111,14 +111,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>vitasdk_delete_thread_reent delete the internal reent data for the specified thread </p>
+<p>vitasdk_get_tls_data - Get pointer to memory location to store TLS data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thid</td><td>- The UID for the thread to delete reent data </td></tr>
+    <tr><td class="paramname">thid</td><td>- The thread UID to access TLS </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>non-zero if reent data is deleted </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a memory location containing the pointer to TLS data </dd></dl>
 
 </div>
 </div>
@@ -149,14 +149,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0d8ee6250228dab0b4c0e9686b962ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d8ee6250228dab0b4c0e9686b962ba">&#9670;&nbsp;</a></span>vitasdk_get_tls_data()</h2>
+<a id="a94fe23a44a1a8afae2b8285db5fb707b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94fe23a44a1a8afae2b8285db5fb707b">&#9670;&nbsp;</a></span>vitasdk_delete_thread_reent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* vitasdk_get_tls_data </td>
+          <td class="memname">int vitasdk_delete_thread_reent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>thid</em></td><td>)</td>
@@ -165,14 +165,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>vitasdk_get_tls_data - Get pointer to memory location to store TLS data </p>
+<p>vitasdk_delete_thread_reent delete the internal reent data for the specified thread </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thid</td><td>- The thread UID to access TLS </td></tr>
+    <tr><td class="paramname">thid</td><td>- The UID for the thread to delete reent data </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a memory location containing the pointer to TLS data </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>non-zero if reent data is deleted </dd></dl>
 
 </div>
 </div>

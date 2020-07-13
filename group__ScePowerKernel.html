@@ -255,14 +255,68 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga1b899e101b0eb397c8d9929fd82137ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b899e101b0eb397c8d9929fd82137ad">&#9670;&nbsp;</a></span>kscePowerGetArmClockFrequency()</h2>
+<a id="ga4bc1a0655e5983f2e5dec68b5bae3f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bc1a0655e5983f2e5dec68b5bae3f8b">&#9670;&nbsp;</a></span>kscePowerRegisterCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int kscePowerGetArmClockFrequency </td>
+          <td class="memname">int kscePowerRegisterCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>cbid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a ScePower Callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga056bb04e0e62fd134156b746889adf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga056bb04e0e62fd134156b746889adf41">&#9670;&nbsp;</a></span>kscePowerUnregisterCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerUnregisterCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>cbid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga9ef0d9952ff9bc4d771d5b20e3bdecb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ef0d9952ff9bc4d771d5b20e3bdecb0">&#9670;&nbsp;</a></span>kscePowerIsBatteryCharging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsBatteryCharging </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -271,50 +325,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns CPU clock frequency. </p>
-<dl class="section return"><dt>Returns</dt><dd>CPU clock frequency in Mhz </dd></dl>
-
-</div>
-</div>
-<a id="ga3342c17caacf71d905677a448a01408e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3342c17caacf71d905677a448a01408e">&#9670;&nbsp;</a></span>kscePowerGetBatteryCycleCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerGetBatteryCycleCount </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery cycle count. </p>
-<dl class="section return"><dt>Returns</dt><dd>battery cycle count </dd></dl>
-
-</div>
-</div>
-<a id="ga6ab20ea63145b7e6547131b94c85c4b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ab20ea63145b7e6547131b94c85c4b4">&#9670;&nbsp;</a></span>kscePowerGetBatteryFullCapacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerGetBatteryFullCapacity </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery full capacity. </p>
-<dl class="section return"><dt>Returns</dt><dd>battery full capacity in mAh (milliampere hour) </dd></dl>
+<p>Returns battery charging status. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if under charge, SCE_FALSE otherwise </dd></dl>
 
 </div>
 </div>
@@ -336,6 +348,48 @@ Typedefs</h2></td></tr>
 
 <p>Returns battery life percentage. </p>
 <dl class="section return"><dt>Returns</dt><dd>Battery life percentage </dd></dl>
+
+</div>
+</div>
+<a id="gab6787d2941064aab8e3246a22b55a2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6787d2941064aab8e3246a22b55a2b8">&#9670;&nbsp;</a></span>kscePowerIsSuspendRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsSuspendRequired </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a suspend is required. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if suspend is required, SCE_FALSE otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ga86b279738c576f8f6fc0e17079facc6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86b279738c576f8f6fc0e17079facc6b">&#9670;&nbsp;</a></span>kscePowerIsPowerOnline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsPowerOnline </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if AC is plugged in. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if plugged in, SCE_FALSE otherwise </dd></dl>
 
 </div>
 </div>
@@ -381,14 +435,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga17ddad3eaaedb8f1c8213b90cbc180c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17ddad3eaaedb8f1c8213b90cbc180c4">&#9670;&nbsp;</a></span>kscePowerGetBatterySOH()</h2>
+<a id="ga3bdf0ebb7dea76e94b47cfafeb8b8356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bdf0ebb7dea76e94b47cfafeb8b8356">&#9670;&nbsp;</a></span>kscePowerIsLowBattery()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int kscePowerGetBatterySOH </td>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsLowBattery </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -397,8 +451,29 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns battery state of health. </p>
-<dl class="section return"><dt>Returns</dt><dd>battery state of health percent </dd></dl>
+<p>Returns battery state. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if battery is low, SCE_FALSE otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ga6ab20ea63145b7e6547131b94c85c4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ab20ea63145b7e6547131b94c85c4b4">&#9670;&nbsp;</a></span>kscePowerGetBatteryFullCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerGetBatteryFullCapacity </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns battery full capacity. </p>
+<dl class="section return"><dt>Returns</dt><dd>battery full capacity in mAh (milliampere hour) </dd></dl>
 
 </div>
 </div>
@@ -441,6 +516,69 @@ Typedefs</h2></td></tr>
 
 <p>Returns battery voltage. </p>
 <dl class="section return"><dt>Returns</dt><dd>battery voltage in mV (millivolts) </dd></dl>
+
+</div>
+</div>
+<a id="ga17ddad3eaaedb8f1c8213b90cbc180c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17ddad3eaaedb8f1c8213b90cbc180c4">&#9670;&nbsp;</a></span>kscePowerGetBatterySOH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerGetBatterySOH </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns battery state of health. </p>
+<dl class="section return"><dt>Returns</dt><dd>battery state of health percent </dd></dl>
+
+</div>
+</div>
+<a id="ga3342c17caacf71d905677a448a01408e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3342c17caacf71d905677a448a01408e">&#9670;&nbsp;</a></span>kscePowerGetBatteryCycleCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerGetBatteryCycleCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns battery cycle count. </p>
+<dl class="section return"><dt>Returns</dt><dd>battery cycle count </dd></dl>
+
+</div>
+</div>
+<a id="ga1b899e101b0eb397c8d9929fd82137ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b899e101b0eb397c8d9929fd82137ad">&#9670;&nbsp;</a></span>kscePowerGetArmClockFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerGetArmClockFrequency </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns CPU clock frequency. </p>
+<dl class="section return"><dt>Returns</dt><dd>CPU clock frequency in Mhz </dd></dl>
 
 </div>
 </div>
@@ -507,14 +645,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9ef0d9952ff9bc4d771d5b20e3bdecb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ef0d9952ff9bc4d771d5b20e3bdecb0">&#9670;&nbsp;</a></span>kscePowerIsBatteryCharging()</h2>
+<a id="ga876533c0e41f8d9f1287ef25f9d01a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga876533c0e41f8d9f1287ef25f9d01a0e">&#9670;&nbsp;</a></span>kscePowerRequestSoftReset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsBatteryCharging </td>
+          <td class="memname">int kscePowerRequestSoftReset </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -523,98 +661,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns battery charging status. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if under charge, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ga3bdf0ebb7dea76e94b47cfafeb8b8356"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3bdf0ebb7dea76e94b47cfafeb8b8356">&#9670;&nbsp;</a></span>kscePowerIsLowBattery()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsLowBattery </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery state. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if battery is low, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ga86b279738c576f8f6fc0e17079facc6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86b279738c576f8f6fc0e17079facc6b">&#9670;&nbsp;</a></span>kscePowerIsPowerOnline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsPowerOnline </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if AC is plugged in. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if plugged in, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="gab6787d2941064aab8e3246a22b55a2b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6787d2941064aab8e3246a22b55a2b8">&#9670;&nbsp;</a></span>kscePowerIsSuspendRequired()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> kscePowerIsSuspendRequired </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if a suspend is required. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if suspend is required, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ga4bc1a0655e5983f2e5dec68b5bae3f8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4bc1a0655e5983f2e5dec68b5bae3f8b">&#9670;&nbsp;</a></span>kscePowerRegisterCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerRegisterCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>cbid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Registers a ScePower Callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+<p>Requests PS Vita to do a soft reset. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
 
 </div>
 </div>
@@ -635,48 +683,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Requests PS Vita to do a cold reset. </p>
-<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
-
-</div>
-</div>
-<a id="gac283d673735d750012aae9a4ff1e540d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac283d673735d750012aae9a4ff1e540d">&#9670;&nbsp;</a></span>kscePowerRequestDisplayOff()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerRequestDisplayOff </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Request display off. </p>
-<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
-
-</div>
-</div>
-<a id="ga876533c0e41f8d9f1287ef25f9d01a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga876533c0e41f8d9f1287ef25f9d01a0e">&#9670;&nbsp;</a></span>kscePowerRequestSoftReset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerRequestSoftReset </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Requests PS Vita to do a soft reset. </p>
 <dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
 
 </div>
@@ -720,6 +726,55 @@ Typedefs</h2></td></tr>
 
 <p>Requests PS Vita to suspend. </p>
 <dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
+<a id="gac283d673735d750012aae9a4ff1e540d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac283d673735d750012aae9a4ff1e540d">&#9670;&nbsp;</a></span>kscePowerRequestDisplayOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerRequestDisplayOff </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Request display off. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga7c723e89d4775a57afd85298ad82d96d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c723e89d4775a57afd85298ad82d96d">&#9670;&nbsp;</a></span>kscePowerSetDisplayBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePowerSetDisplayBrightness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brightness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the screen brightness. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceAVConfigUser.html#gae39175631bf077e026c483b6e0facbe8" title="Set the screen brightness.">sceAVConfigSetDisplayBrightness</a> for userland counterpart.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brightness</td><td>Brightness that the screen will be set to (range 21-65536, 0 turns off the screen).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>? </dd></dl>
 
 </div>
 </div>
@@ -777,34 +832,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7c723e89d4775a57afd85298ad82d96d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7c723e89d4775a57afd85298ad82d96d">&#9670;&nbsp;</a></span>kscePowerSetDisplayBrightness()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerSetDisplayBrightness </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>brightness</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the screen brightness. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceAVConfigUser.html#gae39175631bf077e026c483b6e0facbe8" title="Set the screen brightness.">sceAVConfigSetDisplayBrightness</a> for userland counterpart.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">brightness</td><td>Brightness that the screen will be set to (range 21-65536, 0 turns off the screen).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>? </dd></dl>
-
-</div>
-</div>
 <a id="ga81720c1edd85a4fd944c757d63efd1c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga81720c1edd85a4fd944c757d63efd1c8">&#9670;&nbsp;</a></span>kscePowerSetGpuClockFrequency()</h2>
 
@@ -852,33 +879,6 @@ Typedefs</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>- Frequency to set in Mhz</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga056bb04e0e62fd134156b746889adf41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga056bb04e0e62fd134156b746889adf41">&#9670;&nbsp;</a></span>kscePowerUnregisterCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kscePowerUnregisterCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>cbid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unregister a callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
   </table>
   </dd>
 </dl>

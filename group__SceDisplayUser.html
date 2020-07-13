@@ -165,17 +165,17 @@ Functions</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="ga4818747e9c93ab650824cd4c484506df"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+sizeof(SceDisplayFrameBuf) </td></tr>
+<tr><td class="fieldtype">
 <a id="ga946b22be25bfe9974a36ef9838c44be2"></a>void *</td>
 <td class="fieldname">
 base</td>
 <td class="fielddoc">
 Pointer to framebuffer. </td></tr>
-<tr><td class="fieldtype">
-<a id="gacf6c5759f48d231bd31415cbe552ca3d"></a>unsigned int</td>
-<td class="fieldname">
-height</td>
-<td class="fielddoc">
-framebuffer height </td></tr>
 <tr><td class="fieldtype">
 <a id="ga44160853361a441b8e43578d0a2941b9"></a>unsigned int</td>
 <td class="fieldname">
@@ -189,17 +189,17 @@ pixelformat</td>
 <td class="fielddoc">
 pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>) </td></tr>
 <tr><td class="fieldtype">
-<a id="ga4818747e9c93ab650824cd4c484506df"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-sizeof(SceDisplayFrameBuf) </td></tr>
-<tr><td class="fieldtype">
 <a id="ga4443600a76935ec481ca282d48e9268c"></a>unsigned int</td>
 <td class="fieldname">
 width</td>
 <td class="fielddoc">
 framebuffer width </td></tr>
+<tr><td class="fieldtype">
+<a id="gacf6c5759f48d231bd31415cbe552ca3d"></a>unsigned int</td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+framebuffer height </td></tr>
 </table>
 
 </div>
@@ -285,6 +285,45 @@ framebuffer width </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gad5b985953c60c63c1981bf4ea5ce717f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5b985953c60c63c1981bf4ea5ce717f">&#9670;&nbsp;</a></span>sceDisplaySetFrameBuf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceDisplaySetFrameBuf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
+          <td class="paramname"><em>pParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
+          <td class="paramname"><em>sync</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set/Update framebuffer parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- If NULL is provided as pParam pointer, output is blacked out. </dd></dl>
+
+</div>
+</div>
 <a id="gaf833a23b956140624e23129be886b8be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf833a23b956140624e23129be886b8be">&#9670;&nbsp;</a></span>sceDisplayGetFrameBuf()</h2>
 
@@ -316,44 +355,6 @@ framebuffer width </td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga635944f269373f8493fb7be896635aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga635944f269373f8493fb7be896635aab">&#9670;&nbsp;</a></span>sceDisplayGetMaximumFrameBufResolution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceDisplayGetMaximumFrameBufResolution </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get maximum framebuffer resolution. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Maximum width </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Maximum height</td></tr>
   </table>
   </dd>
 </dl>
@@ -409,6 +410,44 @@ framebuffer width </td></tr>
 
 </div>
 </div>
+<a id="ga635944f269373f8493fb7be896635aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga635944f269373f8493fb7be896635aab">&#9670;&nbsp;</a></span>sceDisplayGetMaximumFrameBufResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceDisplayGetMaximumFrameBufResolution </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get maximum framebuffer resolution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>- Maximum width </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>- Maximum height</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga5890d97145fdad4c46cf94469e80ce2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5890d97145fdad4c46cf94469e80ce2a">&#9670;&nbsp;</a></span>sceDisplayGetVcount()</h2>
 
@@ -455,91 +494,92 @@ framebuffer width </td></tr>
 
 </div>
 </div>
-<a id="gadc0e756f9b27e8e14ce748e9fbec14d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadc0e756f9b27e8e14ce748e9fbec14d6">&#9670;&nbsp;</a></span>sceDisplayRegisterVblankStartCallback()</h2>
+<a id="gab921d38b61c45b0472ac0f45660747c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab921d38b61c45b0472ac0f45660747c9">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStart()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceDisplayRegisterVblankStartCallback </td>
+          <td class="memname">int sceDisplayWaitVblankStart </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register callback to be used at each vertical blank start. </p>
+<p>Wait for vertical blank start. </p>
+
+</div>
+</div>
+<a id="ga5ad5f1293ec8b6af9ec3a4096ce85af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ad5f1293ec8b6af9ec3a4096ce85af6">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStartCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceDisplayWaitVblankStartCB </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start with callback. </p>
+
+</div>
+</div>
+<a id="gab0dbd41679e2aab2325ceac6a41cc052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0dbd41679e2aab2325ceac6a41cc052">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStartMulti()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceDisplayWaitVblankStartMulti </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vcount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start after specified number of vertical periods. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="gad5b985953c60c63c1981bf4ea5ce717f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad5b985953c60c63c1981bf4ea5ce717f">&#9670;&nbsp;</a></span>sceDisplaySetFrameBuf()</h2>
+<a id="gac2d3e00c3473b0cbd10f33e02100d77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2d3e00c3473b0cbd10f33e02100d77d">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStartMultiCB()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceDisplaySetFrameBuf </td>
+          <td class="memname">int sceDisplayWaitVblankStartMultiCB </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
-          <td class="paramname"><em>pParam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
-          <td class="paramname"><em>sync</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set/Update framebuffer parameters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>- If NULL is provided as pParam pointer, output is blacked out. </dd></dl>
-
-</div>
-</div>
-<a id="ga86f33274ad8c58dabe53ec4ec5e7f20a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86f33274ad8c58dabe53ec4ec5e7f20a">&#9670;&nbsp;</a></span>sceDisplayUnregisterVblankStartCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceDisplayUnregisterVblankStartCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vcount</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unregister callback used at each vertical blank start. </p>
+<p>Wait for vertical blank start with callback after specified number of vertical periods. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
   </table>
   </dd>
 </dl>
@@ -638,92 +678,52 @@ framebuffer width </td></tr>
 
 </div>
 </div>
-<a id="gab921d38b61c45b0472ac0f45660747c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab921d38b61c45b0472ac0f45660747c9">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStart()</h2>
+<a id="gadc0e756f9b27e8e14ce748e9fbec14d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0e756f9b27e8e14ce748e9fbec14d6">&#9670;&nbsp;</a></span>sceDisplayRegisterVblankStartCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceDisplayWaitVblankStart </td>
+          <td class="memname">int sceDisplayRegisterVblankStartCallback </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Wait for vertical blank start. </p>
-
-</div>
-</div>
-<a id="ga5ad5f1293ec8b6af9ec3a4096ce85af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ad5f1293ec8b6af9ec3a4096ce85af6">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStartCB()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceDisplayWaitVblankStartCB </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for vertical blank start with callback. </p>
-
-</div>
-</div>
-<a id="gab0dbd41679e2aab2325ceac6a41cc052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0dbd41679e2aab2325ceac6a41cc052">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStartMulti()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceDisplayWaitVblankStartMulti </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>vcount</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for vertical blank start after specified number of vertical periods. </p>
+<p>Register callback to be used at each vertical blank start. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="gac2d3e00c3473b0cbd10f33e02100d77d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2d3e00c3473b0cbd10f33e02100d77d">&#9670;&nbsp;</a></span>sceDisplayWaitVblankStartMultiCB()</h2>
+<a id="ga86f33274ad8c58dabe53ec4ec5e7f20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86f33274ad8c58dabe53ec4ec5e7f20a">&#9670;&nbsp;</a></span>sceDisplayUnregisterVblankStartCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceDisplayWaitVblankStartMultiCB </td>
+          <td class="memname">int sceDisplayUnregisterVblankStartCallback </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>vcount</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Wait for vertical blank start with callback after specified number of vertical periods. </p>
+<p>Unregister callback used at each vertical blank start. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods before waiting for vertical blank start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- Callback UID </td></tr>
   </table>
   </dd>
 </dl>

@@ -7,8 +7,8 @@ var i2c_8h =
     ] ],
     [ "ksceI2cInit", "group__SceI2cKernel.html#ga697cf987ecf0cd2e1cf544bdd4e1a6de", null ],
     [ "ksceI2cReset", "group__SceI2cKernel.html#ga8e58b4095df01838b0a26cb44b92193b", null ],
-    [ "ksceI2cSetDebugHandlers", "group__SceI2cKernel.html#ga6e042297db7f0bbdcf22bbab4956063b", null ],
     [ "ksceI2cTransferRead", "group__SceI2cKernel.html#gabdfd9cabb3cea3d91d9681c0839c0aca", null ],
     [ "ksceI2cTransferWrite", "group__SceI2cKernel.html#gae4ecfde30b63f6a3e3080c6d3845b463", null ],
-    [ "ksceI2cTransferWriteRead", "group__SceI2cKernel.html#gae6b568a62be22225e3646c1604663f68", null ]
+    [ "ksceI2cTransferWriteRead", "group__SceI2cKernel.html#gae6b568a62be22225e3646c1604663f68", null ],
+    [ "ksceI2cSetDebugHandlers", "group__SceI2cKernel.html#ga6e042297db7f0bbdcf22bbab4956063b", null ]
 ];

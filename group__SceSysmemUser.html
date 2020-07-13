@@ -146,15 +146,33 @@ Functions</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae7f59743b494fd46aa2a33bf488c3f15"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="ga1874a27401d232414249bd003825276a"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-alignment</td>
+size</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
 <a id="gabeb4037a485504073aba05fa55e60009"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 attr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae7f59743b494fd46aa2a33bf488c3f15"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+alignment</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaaa695b24fffb4c2eb09f9084d6a115d9"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+uidBaseBlock</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2f2ee38ffbb469605a503c5cb8b4eebb"></a>const char *</td>
+<td class="fieldname">
+strBaseBlockName</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -169,24 +187,6 @@ flags</td>
 reserved[10]</td>
 <td class="fielddoc">
 Unknown flags 0x10 or 0x30 for <a class="el" href="group__SceSysmemUser.html#ga39883d3114ef992518afab337793d5af">sceKernelOpenMemBlock</a>. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga1874a27401d232414249bd003825276a"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2f2ee38ffbb469605a503c5cb8b4eebb"></a>const char *</td>
-<td class="fieldname">
-strBaseBlockName</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaaa695b24fffb4c2eb09f9084d6a115d9"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-uidBaseBlock</td>
-<td class="fielddoc">
-</td></tr>
 </table>
 
 </div>
@@ -211,6 +211,12 @@ size</td>
 <td class="fielddoc">
 sizeof(SceKernelFreeMemorySizeInfo) </td></tr>
 <tr><td class="fieldtype">
+<a id="ga7e0775190f57b6c4512bf646b6f030c3"></a>int</td>
+<td class="fieldname">
+size_user</td>
+<td class="fielddoc">
+Free memory size for *_USER_RW memory. </td></tr>
+<tr><td class="fieldtype">
 <a id="gae6c2ac0ab216492165330e2fb1c7c591"></a>int</td>
 <td class="fieldname">
 size_cdram</td>
@@ -222,12 +228,6 @@ Free memory size for USER_CDRAM_RW memory. </td></tr>
 size_phycont</td>
 <td class="fielddoc">
 Free memory size for USER_MAIN_PHYCONT_*_RW memory. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga7e0775190f57b6c4512bf646b6f030c3"></a>int</td>
-<td class="fieldname">
-size_user</td>
-<td class="fielddoc">
-Free memory size for *_USER_RW memory. </td></tr>
 </table>
 
 </div>
@@ -246,9 +246,9 @@ Free memory size for *_USER_RW memory. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gafe7b2916b155e4af34626d0c98d004ed"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="gaf9806da5fc88c4bb486f2c4d7deeeb54"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-access</td>
+size</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -270,9 +270,9 @@ memoryType</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf9806da5fc88c4bb486f2c4d7deeeb54"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="gafe7b2916b155e4af34626d0c98d004ed"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-size</td>
+access</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -318,6 +318,26 @@ type</td>
 
 </div>
 </div>
+<a id="ga64cb269fa7d3cb6fdbd3cc5b1252217c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64cb269fa7d3cb6fdbd3cc5b1252217c">&#9670;&nbsp;</a></span>SceKernelModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceSysmemUser.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c">SceKernelModel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4"></a>SCE_KERNEL_MODEL_VITA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667"></a>SCE_KERNEL_MODEL_VITATV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4"></a>SCE_KERNEL_MODEL_VITA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667"></a>SCE_KERNEL_MODEL_VITATV&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga0e0f46cbc69724f7676a3f90e67fca07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0e0f46cbc69724f7676a3f90e67fca07">&#9670;&nbsp;</a></span>SceKernelMemoryAccessType</h2>
 
@@ -351,26 +371,6 @@ type</td>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad5653766a0ced763eb2301a5d698697da467a3b95bff3406789e5c5a01b0a2e48"></a>SCE_KERNEL_MEMORY_TYPE_NORMAL_NC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggad5653766a0ced763eb2301a5d698697da298498bb570db5602f7d4217807adade"></a>SCE_KERNEL_MEMORY_TYPE_NORMAL&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="ga64cb269fa7d3cb6fdbd3cc5b1252217c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64cb269fa7d3cb6fdbd3cc5b1252217c">&#9670;&nbsp;</a></span>SceKernelModel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceSysmemUser.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c">SceKernelModel</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4"></a>SCE_KERNEL_MODEL_VITA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667"></a>SCE_KERNEL_MODEL_VITATV&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4"></a>SCE_KERNEL_MODEL_VITA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667"></a>SCE_KERNEL_MODEL_VITATV&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -428,98 +428,6 @@ type</td>
 
 </div>
 </div>
-<a id="gaf2064dfe06b1e4faf71009be1b7c5a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2064dfe06b1e4faf71009be1b7c5a4c">&#9670;&nbsp;</a></span>sceKernelAllocMemBlockForVM()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelAllocMemBlockForVM </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2f8083b5da2530184f98f81dc43d172c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f8083b5da2530184f98f81dc43d172c">&#9670;&nbsp;</a></span>sceKernelCloseMemBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceKernelCloseMemBlock </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaca32512a748a4bafd5eb31bd6494038b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca32512a748a4bafd5eb31bd6494038b">&#9670;&nbsp;</a></span>sceKernelCloseVMDomain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceKernelCloseVMDomain </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa6160548f7e6df4e4b92734da3a29573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6160548f7e6df4e4b92734da3a29573">&#9670;&nbsp;</a></span>sceKernelFindMemBlockByAddr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelFindMemBlockByAddr </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga938f751bb400cc057976e3239cbe88e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga938f751bb400cc057976e3239cbe88e4">&#9670;&nbsp;</a></span>sceKernelFreeMemBlock()</h2>
 
@@ -540,33 +448,6 @@ type</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- SceUID of the memory block to free</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gac626e6ef2fd3efdbfce568321dafd3e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac626e6ef2fd3efdbfce568321dafd3e5">&#9670;&nbsp;</a></span>sceKernelGetFreeMemorySize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceKernelGetFreeMemorySize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemUser.html#structSceKernelFreeMemorySizeInfo">SceKernelFreeMemorySizeInfo</a> *&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get free memory size in bytes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Returned free memory size for different kind of memory block types </td></tr>
   </table>
   </dd>
 </dl>
@@ -609,6 +490,34 @@ type</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa6160548f7e6df4e4b92734da3a29573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6160548f7e6df4e4b92734da3a29573">&#9670;&nbsp;</a></span>sceKernelFindMemBlockByAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelFindMemBlockByAddr </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -674,14 +583,76 @@ type</td>
 
 </div>
 </div>
-<a id="ga7f95c60fa3e6f77dfbe3032ef7a7b082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f95c60fa3e6f77dfbe3032ef7a7b082">&#9670;&nbsp;</a></span>sceKernelGetModel()</h2>
+<a id="gaf2064dfe06b1e4faf71009be1b7c5a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2064dfe06b1e4faf71009be1b7c5a4c">&#9670;&nbsp;</a></span>sceKernelAllocMemBlockForVM()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceKernelGetModel </td>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelAllocMemBlockForVM </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0ff0656bc51684d82c257613511bf05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ff0656bc51684d82c257613511bf05a">&#9670;&nbsp;</a></span>sceKernelSyncVMDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelSyncVMDomain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga13221b1a98ec7876d4d7807b33269f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13221b1a98ec7876d4d7807b33269f26">&#9670;&nbsp;</a></span>sceKernelOpenVMDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelOpenVMDomain </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -690,40 +661,16 @@ type</td>
       </table>
 </div><div class="memdoc">
 
-<p>Get the model number of the device. </p>
-<dl class="section return"><dt>Returns</dt><dd>A value from SCE_KERNEL_MODEL </dd></dl>
-
 </div>
 </div>
-<a id="ga307fc7c634175ea2c12894fc961e6ebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga307fc7c634175ea2c12894fc961e6ebf">&#9670;&nbsp;</a></span>sceKernelGetModelForCDialog()</h2>
+<a id="gaca32512a748a4bafd5eb31bd6494038b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca32512a748a4bafd5eb31bd6494038b">&#9670;&nbsp;</a></span>sceKernelCloseVMDomain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceKernelGetModelForCDialog </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the model number of the device. </p>
-<dl class="section return"><dt>Returns</dt><dd>A value from SCE_KERNEL_MODEL </dd></dl>
-
-</div>
-</div>
-<a id="ga4a3a9b95a9ed91913a1465ced2e50dab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a3a9b95a9ed91913a1465ced2e50dab">&#9670;&nbsp;</a></span>sceKernelIsPSVitaTV()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceKernelIsPSVitaTV </td>
+          <td class="memname">int sceKernelCloseVMDomain </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -762,14 +709,32 @@ type</td>
 
 </div>
 </div>
-<a id="ga13221b1a98ec7876d4d7807b33269f26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga13221b1a98ec7876d4d7807b33269f26">&#9670;&nbsp;</a></span>sceKernelOpenVMDomain()</h2>
+<a id="ga2f8083b5da2530184f98f81dc43d172c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f8083b5da2530184f98f81dc43d172c">&#9670;&nbsp;</a></span>sceKernelCloseMemBlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceKernelOpenVMDomain </td>
+          <td class="memname">int sceKernelCloseMemBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga307fc7c634175ea2c12894fc961e6ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga307fc7c634175ea2c12894fc961e6ebf">&#9670;&nbsp;</a></span>sceKernelGetModelForCDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelGetModelForCDialog </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -778,36 +743,71 @@ type</td>
       </table>
 </div><div class="memdoc">
 
+<p>Get the model number of the device. </p>
+<dl class="section return"><dt>Returns</dt><dd>A value from SCE_KERNEL_MODEL </dd></dl>
+
 </div>
 </div>
-<a id="ga0ff0656bc51684d82c257613511bf05a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ff0656bc51684d82c257613511bf05a">&#9670;&nbsp;</a></span>sceKernelSyncVMDomain()</h2>
+<a id="ga7f95c60fa3e6f77dfbe3032ef7a7b082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f95c60fa3e6f77dfbe3032ef7a7b082">&#9670;&nbsp;</a></span>sceKernelGetModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceKernelSyncVMDomain </td>
+          <td class="memname">int sceKernelGetModel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the model number of the device. </p>
+<dl class="section return"><dt>Returns</dt><dd>A value from SCE_KERNEL_MODEL </dd></dl>
+
+</div>
+</div>
+<a id="gac626e6ef2fd3efdbfce568321dafd3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac626e6ef2fd3efdbfce568321dafd3e5">&#9670;&nbsp;</a></span>sceKernelGetFreeMemorySize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">int sceKernelGetFreeMemorySize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemUser.html#structSceKernelFreeMemorySizeInfo">SceKernelFreeMemorySizeInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get free memory size in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Returned free memory size for different kind of memory block types </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga4a3a9b95a9ed91913a1465ced2e50dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a3a9b95a9ed91913a1465ced2e50dab">&#9670;&nbsp;</a></span>sceKernelIsPSVitaTV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname">int sceKernelIsPSVitaTV </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

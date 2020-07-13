@@ -1,5 +1,16 @@
 var ern_2ctrl_8h =
 [
+    [ "SceCtrlErrorCode", "group__SceCtrlKernel.html#ga594215e0488ae1f7a54c38eebec18adb", [
+      [ "SCE_CTRL_ERROR_INVALID_ARG", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba9c7f7832117e5049f2e46fc6fc6e593b", null ],
+      [ "SCE_CTRL_ERROR_PRIV_REQUIRED", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbaec312d9456dbdf71b353fea0af81c002", null ],
+      [ "SCE_CTRL_ERROR_NO_DEVICE", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbaeb7a34dfe5bed356ca1a27ab7073e2e0", null ],
+      [ "SCE_CTRL_ERROR_NOT_SUPPORTED", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbac1f4baf33f6c575ab50016e16a77b2d3", null ],
+      [ "SCE_CTRL_ERROR_INVALID_MODE", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba5cb3565defa78b4e3560a0a91e74b0f1", null ],
+      [ "SCE_CTRL_ERROR_FATAL", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba8e0c5486f9e6f6ae651131abfb526715", null ],
+      [ "SCE_CTRL_ERROR_INVALID_ARG", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba9c7f7832117e5049f2e46fc6fc6e593b", null ],
+      [ "SCE_CTRL_ERROR_PRIV_REQUIRED", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbaec312d9456dbdf71b353fea0af81c002", null ],
+      [ "SCE_CTRL_ERROR_FATAL", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba8e0c5486f9e6f6ae651131abfb526715", null ]
+    ] ],
     [ "SceCtrlButtons", "group__SceCtrlKernel.html#ga7e5a5d40bbb69e9af702d5dedac70760", [
       [ "SCE_CTRL_SELECT", "group__SceCtrlKernel.html#gga7e5a5d40bbb69e9af702d5dedac70760ad8cd1e340f5e13979b4cdefcf0487691", null ],
       [ "SCE_CTRL_L3", "group__SceCtrlKernel.html#gga7e5a5d40bbb69e9af702d5dedac70760a1fb3c7b2e36870fca7507014d124e19b", null ],
@@ -48,17 +59,6 @@ var ern_2ctrl_8h =
       [ "SCE_CTRL_VOLDOWN", "group__SceCtrlKernel.html#gga7e5a5d40bbb69e9af702d5dedac70760aeab7d0c864db59474af654aad4427963", null ],
       [ "SCE_CTRL_POWER", "group__SceCtrlKernel.html#gga7e5a5d40bbb69e9af702d5dedac70760a3eaa931d99a6cf318f44bf035648c961", null ]
     ] ],
-    [ "SceCtrlErrorCode", "group__SceCtrlKernel.html#ga594215e0488ae1f7a54c38eebec18adb", [
-      [ "SCE_CTRL_ERROR_INVALID_ARG", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba9c7f7832117e5049f2e46fc6fc6e593b", null ],
-      [ "SCE_CTRL_ERROR_PRIV_REQUIRED", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbaec312d9456dbdf71b353fea0af81c002", null ],
-      [ "SCE_CTRL_ERROR_NO_DEVICE", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbaeb7a34dfe5bed356ca1a27ab7073e2e0", null ],
-      [ "SCE_CTRL_ERROR_NOT_SUPPORTED", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbac1f4baf33f6c575ab50016e16a77b2d3", null ],
-      [ "SCE_CTRL_ERROR_INVALID_MODE", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba5cb3565defa78b4e3560a0a91e74b0f1", null ],
-      [ "SCE_CTRL_ERROR_FATAL", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba8e0c5486f9e6f6ae651131abfb526715", null ],
-      [ "SCE_CTRL_ERROR_INVALID_ARG", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba9c7f7832117e5049f2e46fc6fc6e593b", null ],
-      [ "SCE_CTRL_ERROR_PRIV_REQUIRED", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adbaec312d9456dbdf71b353fea0af81c002", null ],
-      [ "SCE_CTRL_ERROR_FATAL", "group__SceCtrlKernel.html#gga594215e0488ae1f7a54c38eebec18adba8e0c5486f9e6f6ae651131abfb526715", null ]
-    ] ],
     [ "SceCtrlExternalInputMode", "group__SceCtrlKernel.html#ga4284796d5063074e02d4915af9d5ab04", [
       [ "SCE_CTRL_TYPE_UNPAIRED", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a967ebfcf1e78707101bf3b8d248ef20b", null ],
       [ "SCE_CTRL_TYPE_PHY", "group__SceCtrlKernel.html#gga4284796d5063074e02d4915af9d5ab04a3270ad369e969b0f907370cf89900fbe", null ],
@@ -79,18 +79,18 @@ var ern_2ctrl_8h =
       [ "SCE_CTRL_MODE_ANALOG", "group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6a780c329128179cd6389cd123b724bfdb", null ],
       [ "SCE_CTRL_MODE_ANALOG_WIDE", "group__SceCtrlKernel.html#gga62ab7ac206d0514d11e60309f9621fb6aadf52d1d57abe790115e1e5cc2352151", null ]
     ] ],
-    [ "ksceCtrlClearRapidFire", "group__SceCtrlKernel.html#gae5b415cb36093f289f2c671f93a0e896", null ],
-    [ "ksceCtrlGetButtonIntercept", "group__SceCtrlKernel.html#ga49042bafaea8c7bad86279fd81fcca53", null ],
-    [ "ksceCtrlGetControllerPortInfo", "group__SceCtrlKernel.html#gadc29ad47983954affa70d3c745220681", null ],
+    [ "ksceCtrlSetSamplingMode", "group__SceCtrlKernel.html#gafe0a11b69712e9bd19c48cfc5a22c0c0", null ],
     [ "ksceCtrlGetSamplingMode", "group__SceCtrlKernel.html#ga7c849b9a1de22670d67a476efcfba4f3", null ],
-    [ "ksceCtrlPeekBufferNegative", "group__SceCtrlKernel.html#ga05e10a27723de7224d69b0d90db042fa", null ],
     [ "ksceCtrlPeekBufferPositive", "group__SceCtrlKernel.html#ga9bb2e72e0c38faa90c52e2a5f8dd261b", null ],
-    [ "ksceCtrlReadBufferNegative", "group__SceCtrlKernel.html#ga4eca66f80aa7f143b94aa89c6c086922", null ],
+    [ "ksceCtrlPeekBufferNegative", "group__SceCtrlKernel.html#ga05e10a27723de7224d69b0d90db042fa", null ],
     [ "ksceCtrlReadBufferPositive", "group__SceCtrlKernel.html#gadf5478055d11791f3b8e0605fae888bc", null ],
-    [ "ksceCtrlRegisterVirtualControllerDriver", "group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef", null ],
-    [ "ksceCtrlSetAnalogEmulation", "group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22", null ],
-    [ "ksceCtrlSetButtonEmulation", "group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d", null ],
-    [ "ksceCtrlSetButtonIntercept", "group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab", null ],
+    [ "ksceCtrlReadBufferNegative", "group__SceCtrlKernel.html#ga4eca66f80aa7f143b94aa89c6c086922", null ],
     [ "ksceCtrlSetRapidFire", "group__SceCtrlKernel.html#ga05db34aca37ced3e16ea9a0ecf6275dd", null ],
-    [ "ksceCtrlSetSamplingMode", "group__SceCtrlKernel.html#gafe0a11b69712e9bd19c48cfc5a22c0c0", null ]
+    [ "ksceCtrlClearRapidFire", "group__SceCtrlKernel.html#gae5b415cb36093f289f2c671f93a0e896", null ],
+    [ "ksceCtrlGetControllerPortInfo", "group__SceCtrlKernel.html#gadc29ad47983954affa70d3c745220681", null ],
+    [ "ksceCtrlSetButtonIntercept", "group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab", null ],
+    [ "ksceCtrlGetButtonIntercept", "group__SceCtrlKernel.html#ga49042bafaea8c7bad86279fd81fcca53", null ],
+    [ "ksceCtrlSetButtonEmulation", "group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d", null ],
+    [ "ksceCtrlSetAnalogEmulation", "group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22", null ],
+    [ "ksceCtrlRegisterVirtualControllerDriver", "group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef", null ]
 ];

@@ -152,6 +152,42 @@ Functions</h2></td></tr>
 <tr class="separator:ga121a576126f3dff4688cdba0fbdfcc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga252fa5f8c9e461bd50d634937608f762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga252fa5f8c9e461bd50d634937608f762">&#9670;&nbsp;</a></span>_vshSblGetSystemSwVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _vshSblGetSystemSwVersion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceModulemgrUser.html#structSceKernelFwInfo">SceKernelFwInfo</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7973656329d62086b3191ed3df872441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7973656329d62086b3191ed3df872441">&#9670;&nbsp;</a></span>_vshSblAimgrGetConsoleId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _vshSblAimgrGetConsoleId </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>CID</em>[32]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gab437d640375011bed4c7a1a332329ef3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab437d640375011bed4c7a1a332329ef3">&#9670;&nbsp;</a></span>_vshIoMount()</h2>
 
@@ -202,39 +238,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7973656329d62086b3191ed3df872441"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7973656329d62086b3191ed3df872441">&#9670;&nbsp;</a></span>_vshSblAimgrGetConsoleId()</h2>
+<a id="gaa754c13fd1fa6d1181cc449d2925bfef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa754c13fd1fa6d1181cc449d2925bfef">&#9670;&nbsp;</a></span>vshIoUmount()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _vshSblAimgrGetConsoleId </td>
+          <td class="memname">int vshIoUmount </td>
           <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>CID</em>[32]</td><td>)</td>
-          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga252fa5f8c9e461bd50d634937608f762"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga252fa5f8c9e461bd50d634937608f762">&#9670;&nbsp;</a></span>_vshSblGetSystemSwVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">int _vshSblGetSystemSwVersion </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceModulemgrUser.html#structSceKernelFwInfo">SceKernelFwInfo</a> *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>force</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- mount id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>- Set to 1 to force umount </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk2</td><td>- Unknown, set 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk3</td><td>- Unknown, set 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 &gt;= on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -364,92 +414,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa754c13fd1fa6d1181cc449d2925bfef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa754c13fd1fa6d1181cc449d2925bfef">&#9670;&nbsp;</a></span>vshIoUmount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshIoUmount </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>force</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- mount id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>- Set to 1 to force umount </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk2</td><td>- Unknown, set 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk3</td><td>- Unknown, set 0</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 &gt;= on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gacf890d7df39a06ea7fc605843e2f249a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf890d7df39a06ea7fc605843e2f249a">&#9670;&nbsp;</a></span>vshMemoryCardGetCardInsertState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshMemoryCardGetCardInsertState </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga121a576126f3dff4688cdba0fbdfcc69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga121a576126f3dff4688cdba0fbdfcc69">&#9670;&nbsp;</a></span>vshRemovableMemoryGetCardInsertState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshRemovableMemoryGetCardInsertState </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga5344884b9e5f470b33570191a51cb917"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5344884b9e5f470b33570191a51cb917">&#9670;&nbsp;</a></span>vshSblAimgrIsCEX()</h2>
 
@@ -476,6 +440,42 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int vshSblAimgrIsDEX </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga55c746e32c4deee70165a080291f3a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55c746e32c4deee70165a080291f3a35">&#9670;&nbsp;</a></span>vshSblAimgrIsVITA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshSblAimgrIsVITA </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7358b433034de43c5b9520f875fbad3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7358b433034de43c5b9520f875fbad3c">&#9670;&nbsp;</a></span>vshSblAimgrIsGenuineVITA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshSblAimgrIsGenuineVITA </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -522,24 +522,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7358b433034de43c5b9520f875fbad3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7358b433034de43c5b9520f875fbad3c">&#9670;&nbsp;</a></span>vshSblAimgrIsGenuineVITA()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshSblAimgrIsGenuineVITA </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gacf92a8b41214dcc2516ea9630b3ffaa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacf92a8b41214dcc2516ea9630b3ffaa3">&#9670;&nbsp;</a></span>vshSblAimgrIsTest()</h2>
 
@@ -576,24 +558,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga55c746e32c4deee70165a080291f3a35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55c746e32c4deee70165a080291f3a35">&#9670;&nbsp;</a></span>vshSblAimgrIsVITA()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshSblAimgrIsVITA </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga2f7a513c7389ad333cd6424f6f7d88a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2f7a513c7389ad333cd6424f6f7d88a3">&#9670;&nbsp;</a></span>vshSblSsIsDevelopmentMode()</h2>
 
@@ -620,42 +584,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int vshSysconHasWWAN </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf41f69612f13114f85e5b24e64faad0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf41f69612f13114f85e5b24e64faad0b">&#9670;&nbsp;</a></span>vshSysconIduModeClear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshSysconIduModeClear </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa436ca896272338cefaf09295a52f811"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa436ca896272338cefaf09295a52f811">&#9670;&nbsp;</a></span>vshSysconIduModeSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vshSysconIduModeSet </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -738,14 +666,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7dcb9fb6b15e0b397a4315ffe3d67244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7dcb9fb6b15e0b397a4315ffe3d67244">&#9670;&nbsp;</a></span>vshSysconShowModeClear()</h2>
+<a id="gaa436ca896272338cefaf09295a52f811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa436ca896272338cefaf09295a52f811">&#9670;&nbsp;</a></span>vshSysconIduModeSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int vshSysconShowModeClear </td>
+          <td class="memname">int vshSysconIduModeSet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf41f69612f13114f85e5b24e64faad0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf41f69612f13114f85e5b24e64faad0b">&#9670;&nbsp;</a></span>vshSysconIduModeClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshSysconIduModeClear </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -764,6 +710,60 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int vshSysconShowModeSet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7dcb9fb6b15e0b397a4315ffe3d67244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7dcb9fb6b15e0b397a4315ffe3d67244">&#9670;&nbsp;</a></span>vshSysconShowModeClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshSysconShowModeClear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacf890d7df39a06ea7fc605843e2f249a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf890d7df39a06ea7fc605843e2f249a">&#9670;&nbsp;</a></span>vshMemoryCardGetCardInsertState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshMemoryCardGetCardInsertState </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga121a576126f3dff4688cdba0fbdfcc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga121a576126f3dff4688cdba0fbdfcc69">&#9670;&nbsp;</a></span>vshRemovableMemoryGetCardInsertState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vshRemovableMemoryGetCardInsertState </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>

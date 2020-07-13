@@ -115,6 +115,58 @@ Functions</h2></td></tr>
 <tr class="separator:gadcec07fbae05cb758157598ed6d4b5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga49fa46699ac2abf69fa3238cb62e75a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49fa46699ac2abf69fa3238cb62e75a5">&#9670;&nbsp;</a></span>sceUsbSerialStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceUsbSerialStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate USB serial device. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device.</dd>
+<dd>
+Wrapper for kernel function sceUsbSerialStartForDriver() </dd></dl>
+
+</div>
+</div>
+<a id="ga987082a088e17fb4f8fee1989cc09be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga987082a088e17fb4f8fee1989cc09be6">&#9670;&nbsp;</a></span>sceUsbSerialSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceUsbSerialSetup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setup USB serial device. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unk</td><td>Unknown</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Wrapper for kernel function sceUsbSerialSetupForDriver() </dd></dl>
+
+</div>
+</div>
 <a id="gac8a3910e0b34e9d388a5dbe918fd14ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac8a3910e0b34e9d388a5dbe918fd14ac">&#9670;&nbsp;</a></span>sceUsbSerialClose()</h2>
 
@@ -133,6 +185,28 @@ Functions</h2></td></tr>
 
 <p>Close USB serial device. </p>
 <dl class="section note"><dt>Note</dt><dd>Wrapper for kernel function sceUsbSerialCloseForDriver() </dd></dl>
+
+</div>
+</div>
+<a id="gadc31c0bdb29c2a196d61141bbe384601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc31c0bdb29c2a196d61141bbe384601">&#9670;&nbsp;</a></span>sceUsbSerialStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceUsbSerialStatus </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close USB serial device. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns 1 when serial port is open</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Wrapper for kernel function sceUsbSerialStatusForDriver() </dd></dl>
 
 </div>
 </div>
@@ -155,60 +229,6 @@ Functions</h2></td></tr>
 <p>Get receive buffer length. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns length of USB rx buffer</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Wrapper for kernel function sceUsbSerialGetLenForDriver() </dd></dl>
-
-</div>
-</div>
-<a id="gadcec07fbae05cb758157598ed6d4b5d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadcec07fbae05cb758157598ed6d4b5d6">&#9670;&nbsp;</a></span>sceUsbSerialRecv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int sceUsbSerialRecv </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>max_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receive Data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buffer</td><td>buffer for incoming data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">max_len</td><td>max data length to receive </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk1</td><td>Unknown </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk2</td><td>Unknown </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>max recv length is 0x10000 </dd>
-<dd>
-Wrapper for kernel function sceUsbSerialRecvForDriver() </dd></dl>
 
 </div>
 </div>
@@ -266,77 +286,57 @@ Wrapper for kernel function sceUsbSerialSendForDriver() </dd></dl>
 
 </div>
 </div>
-<a id="ga987082a088e17fb4f8fee1989cc09be6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga987082a088e17fb4f8fee1989cc09be6">&#9670;&nbsp;</a></span>sceUsbSerialSetup()</h2>
+<a id="gadcec07fbae05cb758157598ed6d4b5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadcec07fbae05cb758157598ed6d4b5d6">&#9670;&nbsp;</a></span>sceUsbSerialRecv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceUsbSerialSetup </td>
+          <td class="memname">unsigned int sceUsbSerialRecv </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Setup USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
+<p>Receive Data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">unk</td><td>Unknown</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buffer</td><td>buffer for incoming data </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">max_len</td><td>max data length to receive </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unk1</td><td>Unknown </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unk2</td><td>Unknown </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Wrapper for kernel function sceUsbSerialSetupForDriver() </dd></dl>
-
-</div>
-</div>
-<a id="ga49fa46699ac2abf69fa3238cb62e75a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49fa46699ac2abf69fa3238cb62e75a5">&#9670;&nbsp;</a></span>sceUsbSerialStart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceUsbSerialStart </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Activate USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device.</dd>
+<dl class="section note"><dt>Note</dt><dd>max recv length is 0x10000 </dd>
 <dd>
-Wrapper for kernel function sceUsbSerialStartForDriver() </dd></dl>
-
-</div>
-</div>
-<a id="gadc31c0bdb29c2a196d61141bbe384601"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadc31c0bdb29c2a196d61141bbe384601">&#9670;&nbsp;</a></span>sceUsbSerialStatus()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceUsbSerialStatus </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Close USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns 1 when serial port is open</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Wrapper for kernel function sceUsbSerialStatusForDriver() </dd></dl>
+Wrapper for kernel function sceUsbSerialRecvForDriver() </dd></dl>
 
 </div>
 </div>

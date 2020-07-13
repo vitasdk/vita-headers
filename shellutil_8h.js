@@ -1,10 +1,6 @@
 var shellutil_8h =
 [
     [ "SceShellUtilEventHandler", "group__SceShellSvcUser.html#ga07896b82d1034d756ebbc7d5046bb7d4", null ],
-    [ "SceShellUtilLockMode", "group__SceShellSvcUser.html#gad115cbefed0fee3c7baf40223c408032", [
-      [ "SCE_SHELL_UTIL_LOCK_MODE_LOCK", "group__SceShellSvcUser.html#ggad115cbefed0fee3c7baf40223c408032ac026f6a3d0c4e23d5f2976623479bcdb", null ],
-      [ "SCE_SHELL_UTIL_LOCK_MODE_UNLOCK", "group__SceShellSvcUser.html#ggad115cbefed0fee3c7baf40223c408032ab561547490b7ee41a34bfc48e46aa3e5", null ]
-    ] ],
     [ "SceShellUtilLockType", "group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d", [
       [ "SCE_SHELL_UTIL_LOCK_TYPE_PS_BTN", "group__SceShellSvcUser.html#gga785a75673cf82d991dd9df9b245ff88daed2da002d490e65d9c490df72a89db0a", null ],
       [ "SCE_SHELL_UTIL_LOCK_TYPE_QUICK_MENU", "group__SceShellSvcUser.html#gga785a75673cf82d991dd9df9b245ff88daa7285cebab1651086c9a9c9559d3139b", null ],
@@ -19,8 +15,12 @@ var shellutil_8h =
       [ "SCE_SHELL_UTIL_LOCK_TYPE_MUSIC_PLAYER", "group__SceShellSvcUser.html#gga785a75673cf82d991dd9df9b245ff88da8378618e754ec1513bfea7f734b67ded", null ],
       [ "SCE_SHELL_UTIL_LOCK_TYPE_PS_BTN_2", "group__SceShellSvcUser.html#gga785a75673cf82d991dd9df9b245ff88dada128e6fe488f21a5f04ac759836d3ec", null ]
     ] ],
+    [ "SceShellUtilLockMode", "group__SceShellSvcUser.html#gad115cbefed0fee3c7baf40223c408032", [
+      [ "SCE_SHELL_UTIL_LOCK_MODE_LOCK", "group__SceShellSvcUser.html#ggad115cbefed0fee3c7baf40223c408032ac026f6a3d0c4e23d5f2976623479bcdb", null ],
+      [ "SCE_SHELL_UTIL_LOCK_MODE_UNLOCK", "group__SceShellSvcUser.html#ggad115cbefed0fee3c7baf40223c408032ab561547490b7ee41a34bfc48e46aa3e5", null ]
+    ] ],
     [ "sceShellUtilInitEvents", "group__SceShellSvcUser.html#ga32143337fcc63e9c76ef0717e95763d8", null ],
-    [ "sceShellUtilLock", "group__SceShellSvcUser.html#gaed63c312c55dc285ae4f6f60517f2786", null ],
     [ "sceShellUtilRegisterEventHandler", "group__SceShellSvcUser.html#ga5f9b9fbf5cf33d8d99c7de6fe5ea2307", null ],
+    [ "sceShellUtilLock", "group__SceShellSvcUser.html#gaed63c312c55dc285ae4f6f60517f2786", null ],
     [ "sceShellUtilUnlock", "group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896", null ]
 ];

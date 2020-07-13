@@ -239,7 +239,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga81255f2979cb222f8bc62996234f983d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga494f482e4e9f7181952a756c947d1b29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga494f482e4e9f7181952a756c947d1b29">ksceDebugDisableInfoDump</a> (int flag)</td></tr>
 <tr class="separator:ga494f482e4e9f7181952a756c947d1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaadec162afc0c11b580fae0a36f333987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987">ksceKernelSysrootSetProcessHandler</a> (const <a class="el" href="structSceSysrootProcessHandler.html">SceSysrootProcessHandler</a> *handlers)</td></tr>
+<tr class="memitem:gaadec162afc0c11b580fae0a36f333987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987">ksceKernelSysrootSetProcessHandler</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceSysrootProcessHandler">SceSysrootProcessHandler</a> *handlers)</td></tr>
 <tr class="memdesc:gaadec162afc0c11b580fae0a36f333987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set handlers for the process lifecycle.  <a href="group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987">More...</a><br /></td></tr>
 <tr class="separator:gaadec162afc0c11b580fae0a36f333987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -297,11 +297,11 @@ Length. </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga83109394e596b0f827beb2c55bbf3c13"></a><a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *</td>
+<a id="gacb1870381132adc44181b60cb64d20c8"></a>uint32_t</td>
 <td class="fieldname">
-list</td>
+size</td>
 <td class="fielddoc">
-Array of physical addresses and their lengths pairs. </td></tr>
+sizeof(SceKernelPaddrList) </td></tr>
 <tr><td class="fieldtype">
 <a id="ga9d694ce77876c0d14781a1e24a21adb9"></a>uint32_t</td>
 <td class="fieldname">
@@ -309,23 +309,23 @@ list_size</td>
 <td class="fielddoc">
 Size in elements of the list array. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa46736aaf1eb570e50a66e7abcb096fb"></a>uint32_t</td>
-<td class="fieldname">
-ret_count</td>
-<td class="fielddoc">
-Number of elements of list filled by ksceKernelGetPaddrList. </td></tr>
-<tr><td class="fieldtype">
 <a id="gaffa43ea5866e1bcf2baa0faf36616e65"></a>uint32_t</td>
 <td class="fieldname">
 ret_length</td>
 <td class="fielddoc">
 Total physical size of the memory pairs. </td></tr>
 <tr><td class="fieldtype">
-<a id="gacb1870381132adc44181b60cb64d20c8"></a>uint32_t</td>
+<a id="gaa46736aaf1eb570e50a66e7abcb096fb"></a>uint32_t</td>
 <td class="fieldname">
-size</td>
+ret_count</td>
 <td class="fielddoc">
-sizeof(SceKernelPaddrList) </td></tr>
+Number of elements of list filled by ksceKernelGetPaddrList. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga83109394e596b0f827beb2c55bbf3c13"></a><a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *</td>
+<td class="fieldname">
+list</td>
+<td class="fielddoc">
+Array of physical addresses and their lengths pairs. </td></tr>
 </table>
 
 </div>
@@ -344,9 +344,15 @@ sizeof(SceKernelPaddrList) </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga3303399f5da1f12cac5f75330300526f"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="ga469d920250c40775f2e764df6148186d"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-alignment</td>
+size</td>
+<td class="fielddoc">
+sizeof(SceKernelAllocMemBlockKernelOpt) </td></tr>
+<tr><td class="fieldtype">
+<a id="ga3ced3dbe7fd78f2f0fb03e1f89e74c21"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+field_4</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -356,15 +362,51 @@ attr</td>
 <td class="fielddoc">
 OR of SceKernelAllocMemBlockAttr. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga23584e0c07f2663e0f938f5356620b53"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="gaecc87abfb92794a8fe0b31b1c75aa583"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-extraHigh</td>
+field_C</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2f4a4cf6c3c5f1b1d29655663c2dcc2d"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+paddr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3303399f5da1f12cac5f75330300526f"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+alignment</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ga941a9c989685770aacc1ea27ebde3a92"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 extraLow</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga23584e0c07f2663e0f938f5356620b53"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+extraHigh</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga6e3961f47ece9f2b1875e95575b83897"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+mirror_blockid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga28a0ac671d4486f1483ee661f79489f5"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+pid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4b0cb3977e11aa4c5268faed85b29106"></a><a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *</td>
+<td class="fieldname">
+paddr_list</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -395,12 +437,6 @@ field_38</td>
 <a id="ga622a74d850a64d785ba5718901b37f81"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 field_3C</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga3ced3dbe7fd78f2f0fb03e1f89e74c21"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-field_4</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -439,42 +475,6 @@ field_50</td>
 field_54</td>
 <td class="fielddoc">
 </td></tr>
-<tr><td class="fieldtype">
-<a id="gaecc87abfb92794a8fe0b31b1c75aa583"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-field_C</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga6e3961f47ece9f2b1875e95575b83897"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-mirror_blockid</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2f4a4cf6c3c5f1b1d29655663c2dcc2d"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-paddr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga4b0cb3977e11aa4c5268faed85b29106"></a><a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *</td>
-<td class="fieldname">
-paddr_list</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga28a0ac671d4486f1483ee661f79489f5"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-pid</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga469d920250c40775f2e764df6148186d"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-sizeof(SceKernelAllocMemBlockKernelOpt) </td></tr>
 </table>
 
 </div>
@@ -493,21 +493,15 @@ sizeof(SceKernelAllocMemBlockKernelOpt) </td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga12f0ad88f188e6128be333a124f59c55"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="gaab384e9f3825bf13922da049bdd4fe41"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-field_10</td>
+size</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga4a61233c0c52fb72b5504a31b419376f"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="ga24b6507241dfa6f337cad5abb303c63d"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-field_14</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gae5f95bb604fd2dd4d7895e8ab453d086"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-field_18</td>
+uselock</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -523,15 +517,21 @@ field_C</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaab384e9f3825bf13922da049bdd4fe41"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="ga12f0ad88f188e6128be333a124f59c55"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-size</td>
+field_10</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga24b6507241dfa6f337cad5abb303c63d"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="ga4a61233c0c52fb72b5504a31b419376f"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-uselock</td>
+field_14</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae5f95bb604fd2dd4d7895e8ab453d086"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+field_18</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -552,21 +552,9 @@ uselock</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga64fa0b60a54fd6405c93d062a00e864b"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="ga36a39c801cdc88e46906315575e38152"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-field_10</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5a55adc297f50cd80da2c69ddc70902a"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-field_14</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga4239a73fd08c5195a932cceb9302a38e"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-field_18</td>
+flags</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -582,15 +570,27 @@ field_8</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga36a39c801cdc88e46906315575e38152"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gaaae8dbc38a99e9e06641db4a816e56c4"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 pid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga64fa0b60a54fd6405c93d062a00e864b"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+field_10</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5a55adc297f50cd80da2c69ddc70902a"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+field_14</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4239a73fd08c5195a932cceb9302a38e"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+field_18</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -611,9 +611,57 @@ pid</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="ga667e18a6ff1ceb788920640a5c70a778"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
+<td class="fieldname">
+next</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gabe09abdfd71a57b2a06696060a9da081"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
+<td class="fieldname">
+root</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8a38be01e9ab69627381f812a458cb8b"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
+<td class="fieldname">
+prev</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9a5c496f8fba5897fa1361fb64af3c7b"></a>const char *</td>
+<td class="fieldname">
+name</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2d6fb317ae4cf9501853b5ec6417753d"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
+<td class="fieldname">
+uidclass</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga7226916d5ac287faea2d1aa35df40772"></a>unsigned int</td>
 <td class="fieldname">
 attributes</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad34a586cff7440345df2d0e3a20f6bec"></a>unsigned short</td>
+<td class="fieldname">
+itemsize</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9e86f5f965cf473d7d1e25abe9a98772"></a>unsigned short</td>
+<td class="fieldname">
+unk1A</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga7795c5f361367b68e516bbe051147148"></a>unsigned int</td>
+<td class="fieldname">
+unk1C</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -629,57 +677,9 @@ destroy_cb</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gad34a586cff7440345df2d0e3a20f6bec"></a>unsigned short</td>
-<td class="fieldname">
-itemsize</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gadd2ecabbdab8fb70163cb898e4bc7d58"></a>unsigned int</td>
 <td class="fieldname">
 magic</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9a5c496f8fba5897fa1361fb64af3c7b"></a>const char *</td>
-<td class="fieldname">
-name</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga667e18a6ff1ceb788920640a5c70a778"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
-<td class="fieldname">
-next</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga8a38be01e9ab69627381f812a458cb8b"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
-<td class="fieldname">
-prev</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabe09abdfd71a57b2a06696060a9da081"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
-<td class="fieldname">
-root</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2d6fb317ae4cf9501853b5ec6417753d"></a>struct <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *</td>
-<td class="fieldname">
-uidclass</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9e86f5f965cf473d7d1e25abe9a98772"></a>unsigned short</td>
-<td class="fieldname">
-unk1A</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga7795c5f361367b68e516bbe051147148"></a>unsigned int</td>
-<td class="fieldname">
-unk1C</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -700,15 +700,15 @@ unk1C</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga088c0524231333a142c6f800ebadb537"></a>uint32_t</td>
-<td class="fieldname">
-data[]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga194b74736629efb75abb894ca3d33dc3"></a>uint32_t</td>
 <td class="fieldname">
 sce_reserved[2]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga088c0524231333a142c6f800ebadb537"></a>uint32_t</td>
+<td class="fieldname">
+data[]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -729,9 +729,9 @@ sce_reserved[2]</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gab060266067f3ff4fe795b1b6b6a8bde7"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="ga9574e411f583659c0b31e34355d9bdbc"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-CONTEXTIDR</td>
+TTBR1</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -741,9 +741,9 @@ DACR</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga9574e411f583659c0b31e34355d9bdbc"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="gab060266067f3ff4fe795b1b6b6a8bde7"></a><a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
-TTBR1</td>
+CONTEXTIDR</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -764,6 +764,12 @@ TTBR1</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="gaa4769582083b89d13e79672649ea7c79"></a>uint32_t</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="gad9284c484df89906899123bb5d178c36"></a>void *</td>
 <td class="fieldname">
 self_data</td>
@@ -773,12 +779,6 @@ self_data</td>
 <a id="gab31d27739af2a243b5a5f8fff5459779"></a>uint32_t</td>
 <td class="fieldname">
 self_size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa4769582083b89d13e79672649ea7c79"></a>uint32_t</td>
-<td class="fieldname">
-size</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -823,17 +823,56 @@ msg0</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gad0d279aa2ce32df8a449bdc16e1bebce"></a>char *</td>
-<td class="fieldname">
-msg1</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga257ad724b85e3c49da3e02468a2d10c6"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 num</td>
 <td class="fielddoc">
 </td></tr>
+<tr><td class="fieldtype">
+<a id="gad0d279aa2ce32df8a449bdc16e1bebce"></a>char *</td>
+<td class="fieldname">
+msg1</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceSysrootProcessHandler" id="structSceSysrootProcessHandler"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSysrootProcessHandler">&#9670;&nbsp;</a></span>SceSysrootProcessHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSysrootProcessHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="memberdecls">
+<tr><td colspan="2"><h3>Data Fields</h3></td></tr>
+<tr class="memitem:ga733ca7d4fb98d70496a6759d0f4aa4a5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga733ca7d4fb98d70496a6759d0f4aa4a5">size</a></td></tr>
+<tr class="memdesc:ga733ca7d4fb98d70496a6759d0f4aa4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(SceSysrootProcessHandler)  <a href="group__SceSysmemKernel.html#ga733ca7d4fb98d70496a6759d0f4aa4a5">More...</a><br /></td></tr>
+<tr class="separator:ga733ca7d4fb98d70496a6759d0f4aa4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf3546ed2adc644ffeb758a9d35b80e4"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gadf3546ed2adc644ffeb758a9d35b80e4">unk_4</a> )(void)</td></tr>
+<tr class="separator:gadf3546ed2adc644ffeb758a9d35b80e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac283a42a1b9cfbd9cad65049d188ca7b"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac283a42a1b9cfbd9cad65049d188ca7b">unk_8</a> )(void)</td></tr>
+<tr class="separator:gac283a42a1b9cfbd9cad65049d188ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga341c68ac0d305be157c7aa17ea815f9c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga341c68ac0d305be157c7aa17ea815f9c">unk_C</a> )(void)</td></tr>
+<tr class="separator:ga341c68ac0d305be157c7aa17ea815f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4263a81872d2244deb4ad7445ecdcfb4"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga4263a81872d2244deb4ad7445ecdcfb4">unk_10</a> )(void)</td></tr>
+<tr class="separator:ga4263a81872d2244deb4ad7445ecdcfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bcec78d17528dc21c6b457d3f8e28be"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga0bcec78d17528dc21c6b457d3f8e28be">unk_14</a> )(void)</td></tr>
+<tr class="separator:ga0bcec78d17528dc21c6b457d3f8e28be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08406fdea41763996ac49a4f5f31d605"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga08406fdea41763996ac49a4f5f31d605">unk_18</a> )(void)</td></tr>
+<tr class="separator:ga08406fdea41763996ac49a4f5f31d605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7f1da44a7c87a81b4c3680200fde5b6"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaa7f1da44a7c87a81b4c3680200fde5b6">on_process_created</a> )(void)</td></tr>
+<tr class="memdesc:gaa7f1da44a7c87a81b4c3680200fde5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">called when process is created  <a href="group__SceSysmemKernel.html#gaa7f1da44a7c87a81b4c3680200fde5b6">More...</a><br /></td></tr>
+<tr class="separator:gaa7f1da44a7c87a81b4c3680200fde5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90ef6d3e33669edb330319bd6d8e97cf"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga90ef6d3e33669edb330319bd6d8e97cf">unk_20</a> )(void)</td></tr>
+<tr class="separator:ga90ef6d3e33669edb330319bd6d8e97cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fec49e7ba90a565add6dedd428e243d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga7fec49e7ba90a565add6dedd428e243d">unk_24</a> )(void)</td></tr>
+<tr class="separator:ga7fec49e7ba90a565add6dedd428e243d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -872,29 +911,6 @@ num</td>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga3e4b4287824bdc72a51b05c7ef583076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3e4b4287824bdc72a51b05c7ef583076">&#9670;&nbsp;</a></span>SceKernelAllocMemBlockAttr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076">SceKernelAllocMemBlockAttr</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a3cdf51026d8268f0d3ba4cb21aae1208"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="gaaa2a5b0a0ae74026d992a82e4f80b6be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaa2a5b0a0ae74026d992a82e4f80b6be">&#9670;&nbsp;</a></span>SceKernelMemBlockType</h2>
 
@@ -923,6 +939,29 @@ num</td>
 <tr><td class="fieldname"><a id="ggaaa2a5b0a0ae74026d992a82e4f80b6bea06b94c70d909e644b0e814d4c8673264"></a>SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggaaa2a5b0a0ae74026d992a82e4f80b6bea7b7cd86a2f950a06a1b6f22e55b16acf"></a>SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggaaa2a5b0a0ae74026d992a82e4f80b6beaa5bad95a632fd506903225fdb0ce621e"></a>SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga3e4b4287824bdc72a51b05c7ef583076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e4b4287824bdc72a51b05c7ef583076">&#9670;&nbsp;</a></span>SceKernelAllocMemBlockAttr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076">SceKernelAllocMemBlockAttr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a3cdf51026d8268f0d3ba4cb21aae1208"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0"></a>SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -990,366 +1029,6 @@ num</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga494f482e4e9f7181952a756c947d1b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga494f482e4e9f7181952a756c947d1b29">&#9670;&nbsp;</a></span>ksceDebugDisableInfoDump()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugDisableInfoDump </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flag</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae2c15d5ab86dcfdab90b39bcde0e8ca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae2c15d5ab86dcfdab90b39bcde0e8ca8">&#9670;&nbsp;</a></span>ksceDebugGetPutcharHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* ksceDebugGetPutcharHandler </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga45399d5f520fa2001dfc4becba3893c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45399d5f520fa2001dfc4becba3893c7">&#9670;&nbsp;</a></span>ksceDebugPrintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPrintf </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadd3d27db915e91e899bc8d8512da3068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd3d27db915e91e899bc8d8512da3068">&#9670;&nbsp;</a></span>ksceDebugPrintf2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPrintf2 </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>msg_type_flag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga112644b58e24e4ca5a6e47e27e31e0e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga112644b58e24e4ca5a6e47e27e31e0e1">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelAssertion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPrintfKernelAssertion </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>condition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>some_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6e1a95f97b04d5a9dd34af250a09f354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e1a95f97b04d5a9dd34af250a09f354">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelPanic()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPrintfKernelPanic </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>some_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9973b044cbe727956617668d635657c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9973b044cbe727956617668d635657c9">&#9670;&nbsp;</a></span>ksceDebugPrintKernelAssertion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPrintKernelAssertion </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>condition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>some_address</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae774b96aabe47110787b233d48792724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae774b96aabe47110787b233d48792724">&#9670;&nbsp;</a></span>ksceDebugPrintKernelPanic()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPrintKernelPanic </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>some_address</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga81255f2979cb222f8bc62996234f983d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga81255f2979cb222f8bc62996234f983d">&#9670;&nbsp;</a></span>ksceDebugPutchar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugPutchar </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>character</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga06d35c45431424e832d5a2d1b7cb26a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06d35c45431424e832d5a2d1b7cb26a5">&#9670;&nbsp;</a></span>ksceDebugRegisterPutcharHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugRegisterPutcharHandler </td>
-          <td>(</td>
-          <td class="paramtype">int(*)(void *args, char c)&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga47abb7cc0f9bd50cba7268f857043472"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47abb7cc0f9bd50cba7268f857043472">&#9670;&nbsp;</a></span>ksceDebugSetHandlers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceDebugSetHandlers </td>
-          <td>(</td>
-          <td class="paramtype">int(*)(int unk, const char *format, const va_list args)&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga970cf22744d7678723a41c23d75d4bc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga970cf22744d7678723a41c23d75d4bc6">&#9670;&nbsp;</a></span>ksceKernelAllocHeapMemory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* ksceKernelAllocHeapMemory </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga4ee63e9e66f9a196d0d613bc9327df31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4ee63e9e66f9a196d0d613bc9327df31">&#9670;&nbsp;</a></span>ksceKernelAllocMemBlock()</h2>
 
@@ -1399,363 +1078,6 @@ num</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SceUID of the memory block on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga85ff61a056f3376c377bc640539348ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85ff61a056f3376c377bc640539348ea">&#9670;&nbsp;</a></span>ksceKernelCreateClass()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelCreateClass </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>uidclass</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>itemsize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5">SceClassCallback</a>&#160;</td>
-          <td class="paramname"><em>create</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5">SceClassCallback</a>&#160;</td>
-          <td class="paramname"><em>destroy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafba2b363434bce815c1627756f6ea8e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafba2b363434bce815c1627756f6ea8e8">&#9670;&nbsp;</a></span>ksceKernelCreateHeap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateHeap </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelHeapCreateOpt">SceKernelHeapCreateOpt</a> *&#160;</td>
-          <td class="paramname"><em>opt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga08da53ea7fecf11e72f8207ce76e95d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga08da53ea7fecf11e72f8207ce76e95d0">&#9670;&nbsp;</a></span>ksceKernelCreateUidObj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateUidObj </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceCreateUidObjOpt">SceCreateUidObjOpt</a> *&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **&#160;</td>
-          <td class="paramname"><em>obj</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaaee573c89d3286c556f323b700b0156c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaee573c89d3286c556f323b700b0156c">&#9670;&nbsp;</a></span>ksceKernelCreateUserUid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateUserUid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>kern_uid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadf594ff037a5035136c9ae2c396e61c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf594ff037a5035136c9ae2c396e61c2">&#9670;&nbsp;</a></span>ksceKernelDeleteHeap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelDeleteHeap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga562dce0ee81f60061742948148e932f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga562dce0ee81f60061742948148e932f0">&#9670;&nbsp;</a></span>ksceKernelDeleteUid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelDeleteUid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad6abbd0e70fc8ba45aaac89904440bd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad6abbd0e70fc8ba45aaac89904440bd2">&#9670;&nbsp;</a></span>ksceKernelDeleteUserUid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelDeleteUserUid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>user_uid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0b6b5ddadfa9a82287945b5bc04cd0de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0b6b5ddadfa9a82287945b5bc04cd0de">&#9670;&nbsp;</a></span>ksceKernelFindClassByName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelFindClassByName </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> **&#160;</td>
-          <td class="paramname"><em>cls</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga741ace4ab6ca7d836fbdec747dd052aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga741ace4ab6ca7d836fbdec747dd052aa">&#9670;&nbsp;</a></span>ksceKernelFindMemBlockByAddr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelFindMemBlockByAddr </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Find the SceUID of a memory block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- Base address of the memory block </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size to search for (usally set to 0)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>SceUID of the memory block on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaeef2a3961f1b1ea68057a05003113404"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeef2a3961f1b1ea68057a05003113404">&#9670;&nbsp;</a></span>ksceKernelFindMemBlockByAddrForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelFindMemBlockByAddrForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Find the SceUID of a memory block for a PID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- PID of the process </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- Base address of the memory block </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size to search for (usally set to 0)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>SceUID of the memory block on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga6e013f57c291dd2da318c998225516bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e013f57c291dd2da318c998225516bc">&#9670;&nbsp;</a></span>ksceKernelFreeHeapMemory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ksceKernelFreeHeapMemory </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1862,6 +1184,587 @@ num</td>
 
 </div>
 </div>
+<a id="ga741ace4ab6ca7d836fbdec747dd052aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga741ace4ab6ca7d836fbdec747dd052aa">&#9670;&nbsp;</a></span>ksceKernelFindMemBlockByAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelFindMemBlockByAddr </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find the SceUID of a memory block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- Base address of the memory block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size to search for (usally set to 0)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SceUID of the memory block on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaeef2a3961f1b1ea68057a05003113404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeef2a3961f1b1ea68057a05003113404">&#9670;&nbsp;</a></span>ksceKernelFindMemBlockByAddrForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelFindMemBlockByAddrForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find the SceUID of a memory block for a PID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- PID of the process </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- Base address of the memory block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size to search for (usally set to 0)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SceUID of the memory block on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gad43b8bc5f01d6bf319108edababd2e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43b8bc5f01d6bf319108edababd2e33">&#9670;&nbsp;</a></span>ksceKernelRemapBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelRemapBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemUser.html#gaaa2a5b0a0ae74026d992a82e4f80b6be">SceKernelMemBlockType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the block type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- SceUID of the memory block to change </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Type of the memory to change to</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gafba2b363434bce815c1627756f6ea8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafba2b363434bce815c1627756f6ea8e8">&#9670;&nbsp;</a></span>ksceKernelCreateHeap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateHeap </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelHeapCreateOpt">SceKernelHeapCreateOpt</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadf594ff037a5035136c9ae2c396e61c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf594ff037a5035136c9ae2c396e61c2">&#9670;&nbsp;</a></span>ksceKernelDeleteHeap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelDeleteHeap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga970cf22744d7678723a41c23d75d4bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga970cf22744d7678723a41c23d75d4bc6">&#9670;&nbsp;</a></span>ksceKernelAllocHeapMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceKernelAllocHeapMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e013f57c291dd2da318c998225516bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e013f57c291dd2da318c998225516bc">&#9670;&nbsp;</a></span>ksceKernelFreeHeapMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelFreeHeapMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacbd07a7c2448c9701367daebd28a24c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacbd07a7c2448c9701367daebd28a24c8">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernelForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemcpyUserToKernelForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac8ac1f0e6149e9817e3dc609c328fc32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8ac1f0e6149e9817e3dc609c328fc32">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemcpyUserToKernel </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa4b992cd4c328af2b28bc4ca839a42db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4b992cd4c328af2b28bc4ca839a42db">&#9670;&nbsp;</a></span>ksceKernelMemcpyKernelToUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemcpyKernelToUser </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafe4211cf9557a097a1223213ebfca9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe4211cf9557a097a1223213ebfca9f9">&#9670;&nbsp;</a></span>ksceKernelRxMemcpyKernelToUserForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelRxMemcpyKernelToUserForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadfc365275d1b9406bcc15c1f28b8f347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadfc365275d1b9406bcc15c1f28b8f347">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserToKernel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelStrncpyUserToKernel </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga22b8be05c0ffea7560d04bc8c7c6365f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22b8be05c0ffea7560d04bc8c7c6365f">&#9670;&nbsp;</a></span>ksceKernelStrncpyKernelToUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelStrncpyKernelToUser </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeafc18da6a856d3e359733512c8a5207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeafc18da6a856d3e359733512c8a5207">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelStrncpyUserForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5073159ddcb1a5e100351f5ac52dd610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5073159ddcb1a5e100351f5ac52dd610">&#9670;&nbsp;</a></span>ksceKernelKernelUidForUserUid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelKernelUidForUserUid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>user_uid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaee573c89d3286c556f323b700b0156c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaee573c89d3286c556f323b700b0156c">&#9670;&nbsp;</a></span>ksceKernelCreateUserUid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateUserUid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>kern_uid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga08da53ea7fecf11e72f8207ce76e95d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08da53ea7fecf11e72f8207ce76e95d0">&#9670;&nbsp;</a></span>ksceKernelCreateUidObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateUidObj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceCreateUidObjOpt">SceCreateUidObjOpt</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gad7f23e557509b77ef911cdc71c6d90ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad7f23e557509b77ef911cdc71c6d90ee">&#9670;&nbsp;</a></span>ksceKernelGetObjForUid()</h2>
 
@@ -1908,37 +1811,27 @@ num</td>
 
 </div>
 </div>
-<a id="gad657fd1dd901bcd61969771210010d36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad657fd1dd901bcd61969771210010d36">&#9670;&nbsp;</a></span>ksceKernelGetPaddr()</h2>
+<a id="ga4d2e412b9310314c1f25b82c601c4aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d2e412b9310314c1f25b82c601c4aa5">&#9670;&nbsp;</a></span>ksceKernelUidRetain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelGetPaddr </td>
+          <td class="memname">int ksceKernelUidRetain </td>
           <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uintptr_t *&#160;</td>
-          <td class="paramname"><em>paddr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the physical address of a given virtual address. </p>
+<p>Retains an object referenced by the UID. </p>
+<p>This increases the internal reference count.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- The virtual address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">paddr</td><td>- The physical address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid</td></tr>
   </table>
   </dd>
 </dl>
@@ -1946,121 +1839,31 @@ num</td>
 
 </div>
 </div>
-<a id="ga011edc8ffacf956f1cbfb1b542493f02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga011edc8ffacf956f1cbfb1b542493f02">&#9670;&nbsp;</a></span>ksceKernelGetPaddrList()</h2>
+<a id="ga0a0bd8800794e39fe389f19b4edd40bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a0bd8800794e39fe389f19b4edd40bc">&#9670;&nbsp;</a></span>ksceKernelUidRelease()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelGetPaddrList </td>
+          <td class="memname">int ksceKernelUidRelease </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *&#160;</td>
-          <td class="paramname"><em>list</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the physical address list of a given virtual address range. </p>
+<p>Releases an object referenced by the UID. </p>
+<p>This decreases the internal reference count.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- The virtual address range </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">list</td><td>- The list of physical addresses</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga4f729c86c562de2f4e171db24ee7ba74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4f729c86c562de2f4e171db24ee7ba74">&#9670;&nbsp;</a></span>ksceKernelGetPidContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelGetPidContext </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> **&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf4eb5e925b54d46bf5406f45cf04c5d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf4eb5e925b54d46bf5406f45cf04c5d0">&#9670;&nbsp;</a></span>ksceKernelGetProcessTitleId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelGetProcessTitleId </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>titleid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabde736066ee1c4e30f349be900d74257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabde736066ee1c4e30f349be900d74257">&#9670;&nbsp;</a></span>ksceKernelGetSysrootBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* ksceKernelGetSysrootBuffer </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -2136,14 +1939,66 @@ num</td>
 
 </div>
 </div>
-<a id="ga5073159ddcb1a5e100351f5ac52dd610"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5073159ddcb1a5e100351f5ac52dd610">&#9670;&nbsp;</a></span>ksceKernelKernelUidForUserUid()</h2>
+<a id="ga85ff61a056f3376c377bc640539348ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85ff61a056f3376c377bc640539348ea">&#9670;&nbsp;</a></span>ksceKernelCreateClass()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelKernelUidForUserUid </td>
+          <td class="memname">int ksceKernelCreateClass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>uidclass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>itemsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5">SceClassCallback</a>&#160;</td>
+          <td class="paramname"><em>create</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5">SceClassCallback</a>&#160;</td>
+          <td class="paramname"><em>destroy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad6abbd0e70fc8ba45aaac89904440bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6abbd0e70fc8ba45aaac89904440bd2">&#9670;&nbsp;</a></span>ksceKernelDeleteUserUid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelDeleteUserUid </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
@@ -2153,6 +2008,150 @@ num</td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>user_uid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga562dce0ee81f60061742948148e932f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga562dce0ee81f60061742948148e932f0">&#9670;&nbsp;</a></span>ksceKernelDeleteUid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelDeleteUid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0b6b5ddadfa9a82287945b5bc04cd0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b6b5ddadfa9a82287945b5bc04cd0de">&#9670;&nbsp;</a></span>ksceKernelFindClassByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelFindClassByName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> **&#160;</td>
+          <td class="paramname"><em>cls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga84ce525e598a9194ae0d479da2404e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84ce525e598a9194ae0d479da2404e4d">&#9670;&nbsp;</a></span>ksceKernelSwitchVmaForPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelSwitchVmaForPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabde736066ee1c4e30f349be900d74257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabde736066ee1c4e30f349be900d74257">&#9670;&nbsp;</a></span>ksceKernelGetSysrootBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceKernelGetSysrootBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4f729c86c562de2f4e171db24ee7ba74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f729c86c562de2f4e171db24ee7ba74">&#9670;&nbsp;</a></span>ksceKernelGetPidContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetPidContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> **&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf4eb5e925b54d46bf5406f45cf04c5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4eb5e925b54d46bf5406f45cf04c5d0">&#9670;&nbsp;</a></span>ksceKernelGetProcessTitleId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetProcessTitleId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>titleid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2368,6 +2367,110 @@ num</td>
 
 </div>
 </div>
+<a id="ga888ca62deb0c08c14af41b51a22a232e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888ca62deb0c08c14af41b51a22a232e">&#9670;&nbsp;</a></span>ksceSysrootGetSelfInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysrootGetSelfInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gaae18ca6d933be8561673eb190fde924c">SceKernelSysrootSelfIndex</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelSysrootSelfInfo">SceKernelSysrootSelfInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad657fd1dd901bcd61969771210010d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad657fd1dd901bcd61969771210010d36">&#9670;&nbsp;</a></span>ksceKernelGetPaddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetPaddr </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t *&#160;</td>
+          <td class="paramname"><em>paddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the physical address of a given virtual address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- The virtual address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">paddr</td><td>- The physical address</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga011edc8ffacf956f1cbfb1b542493f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga011edc8ffacf956f1cbfb1b542493f02">&#9670;&nbsp;</a></span>ksceKernelGetPaddrList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetPaddrList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelAddrPair">SceKernelAddrPair</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelPaddrList">SceKernelPaddrList</a> *&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the physical address list of a given virtual address range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- The virtual address range </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">list</td><td>- The list of physical addresses</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga1fc8a7535b8d13bcc6d9ef7a4e8e548d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d">&#9670;&nbsp;</a></span>ksceKernelMemBlockRelease()</h2>
 
@@ -2389,247 +2492,6 @@ num</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid of the memblock</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaa4b992cd4c328af2b28bc4ca839a42db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa4b992cd4c328af2b28bc4ca839a42db">&#9670;&nbsp;</a></span>ksceKernelMemcpyKernelToUser()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemcpyKernelToUser </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac8ac1f0e6149e9817e3dc609c328fc32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8ac1f0e6149e9817e3dc609c328fc32">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemcpyUserToKernel </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacbd07a7c2448c9701367daebd28a24c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacbd07a7c2448c9701367daebd28a24c8">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernelForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemcpyUserToKernelForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga220a655e812b83b1dca9326a5f423c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga220a655e812b83b1dca9326a5f423c2a">&#9670;&nbsp;</a></span>ksceKernelMemRangeRelease()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemRangeRelease </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Releases a memory range. </p>
-<p>This decreases the internal reference count of the memblocks belonging to the range.</p>
-<p>Note: It uses <a class="el" href="group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a">SCE_KERNEL_MEMORY_REF_PERM_ANY</a> as the reference permission.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga5f86558cd1afbf72f88ac04151536ae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5f86558cd1afbf72f88ac04151536ae9">&#9670;&nbsp;</a></span>ksceKernelMemRangeReleaseForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemRangeReleaseForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Releases a memory range for a process (pid) </p>
-<p>This decreases the internal reference count of the memblocks belonging to the range.</p>
-<p>Note: It uses <a class="el" href="group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a">SCE_KERNEL_MEMORY_REF_PERM_ANY</a> as the reference permission.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The pid of the process </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga200819a825a57a906d399a086fc249ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga200819a825a57a906d399a086fc249ad">&#9670;&nbsp;</a></span>ksceKernelMemRangeReleaseWithPerm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemRangeReleaseWithPerm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gab8b3d8a0785853cb784efcfa26a641b9">SceKernelMemoryRefPerm</a>&#160;</td>
-          <td class="paramname"><em>perm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Releases a memory range checking for a given permission. </p>
-<p>This decreases the internal reference count of the memblocks belonging to the range. If the memory blocks belonging to the range don't have the required memory access permission, it returns an error.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">perm</td><td>The required permission of the memory blocks belonging to the range </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
   </table>
   </dd>
 </dl>
@@ -2770,23 +2632,23 @@ num</td>
 
 </div>
 </div>
-<a id="gad43b8bc5f01d6bf319108edababd2e33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad43b8bc5f01d6bf319108edababd2e33">&#9670;&nbsp;</a></span>ksceKernelRemapBlock()</h2>
+<a id="ga220a655e812b83b1dca9326a5f423c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga220a655e812b83b1dca9326a5f423c2a">&#9670;&nbsp;</a></span>ksceKernelMemRangeRelease()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelRemapBlock </td>
+          <td class="memname">int ksceKernelMemRangeRelease </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em>, </td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemUser.html#gaaa2a5b0a0ae74026d992a82e4f80b6be">SceKernelMemBlockType</a>&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2796,11 +2658,13 @@ num</td>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the block type. </p>
+<p>Releases a memory range. </p>
+<p>This decreases the internal reference count of the memblocks belonging to the range.</p>
+<p>Note: It uses <a class="el" href="group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a">SCE_KERNEL_MEMORY_REF_PERM_ANY</a> as the reference permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- SceUID of the memory block to change </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Type of the memory to change to</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
   </table>
   </dd>
 </dl>
@@ -2808,88 +2672,14 @@ num</td>
 
 </div>
 </div>
-<a id="gafe4211cf9557a097a1223213ebfca9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe4211cf9557a097a1223213ebfca9f9">&#9670;&nbsp;</a></span>ksceKernelRxMemcpyKernelToUserForPid()</h2>
+<a id="ga5f86558cd1afbf72f88ac04151536ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f86558cd1afbf72f88ac04151536ae9">&#9670;&nbsp;</a></span>ksceKernelMemRangeReleaseForPid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelRxMemcpyKernelToUserForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga22b8be05c0ffea7560d04bc8c7c6365f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga22b8be05c0ffea7560d04bc8c7c6365f">&#9670;&nbsp;</a></span>ksceKernelStrncpyKernelToUser()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelStrncpyKernelToUser </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaeafc18da6a856d3e359733512c8a5207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeafc18da6a856d3e359733512c8a5207">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelStrncpyUserForPid </td>
+          <td class="memname">int ksceKernelMemRangeReleaseForPid </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
@@ -2898,19 +2688,13 @@ num</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2920,31 +2704,44 @@ num</td>
       </table>
 </div><div class="memdoc">
 
+<p>Releases a memory range for a process (pid) </p>
+<p>This decreases the internal reference count of the memblocks belonging to the range.</p>
+<p>Note: It uses <a class="el" href="group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a">SCE_KERNEL_MEMORY_REF_PERM_ANY</a> as the reference permission.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The pid of the process </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
 </div>
 </div>
-<a id="gadfc365275d1b9406bcc15c1f28b8f347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadfc365275d1b9406bcc15c1f28b8f347">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserToKernel()</h2>
+<a id="ga200819a825a57a906d399a086fc249ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga200819a825a57a906d399a086fc249ad">&#9670;&nbsp;</a></span>ksceKernelMemRangeReleaseWithPerm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelStrncpyUserToKernel </td>
+          <td class="memname">int ksceKernelMemRangeReleaseWithPerm </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gab8b3d8a0785853cb784efcfa26a641b9">SceKernelMemoryRefPerm</a>&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2954,135 +2751,17 @@ num</td>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ga84ce525e598a9194ae0d479da2404e4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga84ce525e598a9194ae0d479da2404e4d">&#9670;&nbsp;</a></span>ksceKernelSwitchVmaForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelSwitchVmaForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaadec162afc0c11b580fae0a36f333987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaadec162afc0c11b580fae0a36f333987">&#9670;&nbsp;</a></span>ksceKernelSysrootSetProcessHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelSysrootSetProcessHandler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structSceSysrootProcessHandler.html">SceSysrootProcessHandler</a> *&#160;</td>
-          <td class="paramname"><em>handlers</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set handlers for the process lifecycle. </p>
-<p>This internal function allows a developer to introspect and receive events based on the process lifecycle.</p>
+<p>Releases a memory range checking for a given permission. </p>
+<p>This decreases the internal reference count of the memblocks belonging to the range. If the memory blocks belonging to the range don't have the required memory access permission, it returns an error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handlers</td><td>Pointer to struct containing the handlers. This function does not copy the handlers, so this pointer must remain valid after a successful call.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">perm</td><td>The required permission of the memory blocks belonging to the range </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The memory range size</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga0a0bd8800794e39fe389f19b4edd40bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a0bd8800794e39fe389f19b4edd40bc">&#9670;&nbsp;</a></span>ksceKernelUidRelease()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelUidRelease </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Releases an object referenced by the UID. </p>
-<p>This decreases the internal reference count.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga4d2e412b9310314c1f25b82c601c4aa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4d2e412b9310314c1f25b82c601c4aa5">&#9670;&nbsp;</a></span>ksceKernelUidRetain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelUidRetain </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>uid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retains an object referenced by the UID. </p>
-<p>This increases the internal reference count.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>The uid</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga888ca62deb0c08c14af41b51a22a232e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga888ca62deb0c08c14af41b51a22a232e">&#9670;&nbsp;</a></span>ksceSysrootGetSelfInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysrootGetSelfInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#gaae18ca6d933be8561673eb190fde924c">SceKernelSysrootSelfIndex</a>&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelSysrootSelfInfo">SceKernelSysrootSelfInfo</a> *&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -3119,6 +2798,366 @@ num</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45399d5f520fa2001dfc4becba3893c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45399d5f520fa2001dfc4becba3893c7">&#9670;&nbsp;</a></span>ksceDebugPrintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPrintf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadd3d27db915e91e899bc8d8512da3068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd3d27db915e91e899bc8d8512da3068">&#9670;&nbsp;</a></span>ksceDebugPrintf2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPrintf2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msg_type_flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae774b96aabe47110787b233d48792724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae774b96aabe47110787b233d48792724">&#9670;&nbsp;</a></span>ksceDebugPrintKernelPanic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPrintKernelPanic </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>some_address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e1a95f97b04d5a9dd34af250a09f354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e1a95f97b04d5a9dd34af250a09f354">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelPanic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPrintfKernelPanic </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>some_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9973b044cbe727956617668d635657c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9973b044cbe727956617668d635657c9">&#9670;&nbsp;</a></span>ksceDebugPrintKernelAssertion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPrintKernelAssertion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>condition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>some_address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga112644b58e24e4ca5a6e47e27e31e0e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga112644b58e24e4ca5a6e47e27e31e0e1">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelAssertion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPrintfKernelAssertion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>condition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>some_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga47abb7cc0f9bd50cba7268f857043472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47abb7cc0f9bd50cba7268f857043472">&#9670;&nbsp;</a></span>ksceDebugSetHandlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugSetHandlers </td>
+          <td>(</td>
+          <td class="paramtype">int(*)(int unk, const char *format, const va_list args)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga06d35c45431424e832d5a2d1b7cb26a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06d35c45431424e832d5a2d1b7cb26a5">&#9670;&nbsp;</a></span>ksceDebugRegisterPutcharHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugRegisterPutcharHandler </td>
+          <td>(</td>
+          <td class="paramtype">int(*)(void *args, char c)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae2c15d5ab86dcfdab90b39bcde0e8ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2c15d5ab86dcfdab90b39bcde0e8ca8">&#9670;&nbsp;</a></span>ksceDebugGetPutcharHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ksceDebugGetPutcharHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga81255f2979cb222f8bc62996234f983d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81255f2979cb222f8bc62996234f983d">&#9670;&nbsp;</a></span>ksceDebugPutchar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugPutchar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>character</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga494f482e4e9f7181952a756c947d1b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga494f482e4e9f7181952a756c947d1b29">&#9670;&nbsp;</a></span>ksceDebugDisableInfoDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDebugDisableInfoDump </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaadec162afc0c11b580fae0a36f333987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadec162afc0c11b580fae0a36f333987">&#9670;&nbsp;</a></span>ksceKernelSysrootSetProcessHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelSysrootSetProcessHandler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceSysrootProcessHandler">SceSysrootProcessHandler</a> *&#160;</td>
+          <td class="paramname"><em>handlers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set handlers for the process lifecycle. </p>
+<p>This internal function allows a developer to introspect and receive events based on the process lifecycle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handlers</td><td>Pointer to struct containing the handlers. This function does not copy the handlers, so this pointer must remain valid after a successful call.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

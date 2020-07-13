@@ -25,6 +25,12 @@
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
 {text:"Modules",url:"modules.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"},
+{text:"Namespace Members",url:"namespacemembers.html",children:[
+{text:"All",url:"namespacemembers.html"},
+{text:"Enumerations",url:"namespacemembers_enum.html"},
+{text:"Enumerator",url:"namespacemembers_eval.html"}]}]},
 {text:"Data Structures",url:"annotated.html",children:[
 {text:"Data Structures",url:"annotated.html"},
 {text:"Data Structure Index",url:"classes.html"},
@@ -55,7 +61,26 @@ var menudata={children:[
 {text:"w",url:"functions_w.html#index_w"},
 {text:"x",url:"functions_x.html#index_x"},
 {text:"y",url:"functions_y.html#index_y"},
-{text:"z",url:"functions_z.html#index_z"}]},
+{text:"z",url:"functions_z.html#index_z"},
+{text:"~",url:"functions_~.html#index__7E"}]},
+{text:"Functions",url:"functions_func.html",children:[
+{text:"a",url:"functions_func.html#index_a"},
+{text:"b",url:"functions_func.html#index_b"},
+{text:"c",url:"functions_func.html#index_c"},
+{text:"e",url:"functions_func.html#index_e"},
+{text:"f",url:"functions_func.html#index_f"},
+{text:"g",url:"functions_func.html#index_g"},
+{text:"i",url:"functions_func.html#index_i"},
+{text:"l",url:"functions_func.html#index_l"},
+{text:"m",url:"functions_func.html#index_m"},
+{text:"n",url:"functions_func.html#index_n"},
+{text:"o",url:"functions_func.html#index_o"},
+{text:"p",url:"functions_func.html#index_p"},
+{text:"r",url:"functions_func.html#index_r"},
+{text:"s",url:"functions_func.html#index_s"},
+{text:"t",url:"functions_func.html#index_t"},
+{text:"v",url:"functions_func.html#index_v"},
+{text:"~",url:"functions_func.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"_",url:"functions_vars.html#index__5F"},
 {text:"a",url:"functions_vars_a.html#index_a"},
@@ -82,7 +107,8 @@ var menudata={children:[
 {text:"w",url:"functions_vars_w.html#index_w"},
 {text:"x",url:"functions_vars_x.html#index_x"},
 {text:"y",url:"functions_vars_y.html#index_y"},
-{text:"z",url:"functions_vars_z.html#index_z"}]}]}]},
+{text:"z",url:"functions_vars_z.html#index_z"}]},
+{text:"Typedefs",url:"functions_type.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[

@@ -1,41 +1,71 @@
 var gxm_8h =
 [
-    [ "SCE_GXM_COLOR_SURFACE_ALIGNMENT", "group__SceGxmUser.html#ga3a1376d9d0e088695a0ec3109f899dd9", null ],
-    [ "SCE_GXM_DEFAULT_FRAGMENT_RING_BUFFER_SIZE", "group__SceGxmUser.html#ga5258c50eb1b4478bfe8011d6030c5fdc", null ],
-    [ "SCE_GXM_DEFAULT_FRAGMENT_USSE_RING_BUFFER_SIZE", "group__SceGxmUser.html#ga1349947d1cba28c4bd23c1133b2598c8", null ],
+    [ "SCE_GXM_MINIMUM_CONTEXT_HOST_MEM_SIZE", "group__SceGxmUser.html#ga43da350f68dc480b9111a1265ac0e102", null ],
     [ "SCE_GXM_DEFAULT_PARAMETER_BUFFER_SIZE", "group__SceGxmUser.html#gae240038779d359a51b7f5f47b63f8b3f", null ],
     [ "SCE_GXM_DEFAULT_VDM_RING_BUFFER_SIZE", "group__SceGxmUser.html#ga656ee35f47c90ae9fad2368e78a3b2a7", null ],
     [ "SCE_GXM_DEFAULT_VERTEX_RING_BUFFER_SIZE", "group__SceGxmUser.html#gae6481041dc5082d641946e6b41000111", null ],
-    [ "SCE_GXM_DEPTHSTENCIL_SURFACE_ALIGNMENT", "group__SceGxmUser.html#gaacdca6d670adb7d863927656aea91ff0", null ],
-    [ "SCE_GXM_MAX_AUXILIARY_SURFACES", "group__SceGxmUser.html#ga779136ff27a7753151298f2335a03fb1", null ],
-    [ "SCE_GXM_MAX_TEXTURE_UNITS", "group__SceGxmUser.html#gab46ca1254a5ba4b105b2018b09b5a7cc", null ],
-    [ "SCE_GXM_MAX_UNIFORM_BUFFERS", "group__SceGxmUser.html#gac6c01c40eb9cc1d9ca13b9ea747e6996", null ],
+    [ "SCE_GXM_DEFAULT_FRAGMENT_RING_BUFFER_SIZE", "group__SceGxmUser.html#ga5258c50eb1b4478bfe8011d6030c5fdc", null ],
+    [ "SCE_GXM_DEFAULT_FRAGMENT_USSE_RING_BUFFER_SIZE", "group__SceGxmUser.html#ga1349947d1cba28c4bd23c1133b2598c8", null ],
     [ "SCE_GXM_MAX_VERTEX_ATTRIBUTES", "group__SceGxmUser.html#ga2a77bcff7ecdf324a832ddfac8fd0ba6", null ],
     [ "SCE_GXM_MAX_VERTEX_STREAMS", "group__SceGxmUser.html#gad95035ecaff8324514e9e1dcbd541783", null ],
-    [ "SCE_GXM_MINIMUM_CONTEXT_HOST_MEM_SIZE", "group__SceGxmUser.html#ga43da350f68dc480b9111a1265ac0e102", null ],
-    [ "SCE_GXM_PALETTE_ALIGNMENT", "group__SceGxmUser.html#ga6a0896d4e4e8fca31256c5a0f162d4cf", null ],
-    [ "SCE_GXM_TEXTURE_ALIGNMENT", "group__SceGxmUser.html#ga3acba5462774e58394ebd814d665aafc", null ],
+    [ "SCE_GXM_MAX_TEXTURE_UNITS", "group__SceGxmUser.html#gab46ca1254a5ba4b105b2018b09b5a7cc", null ],
+    [ "SCE_GXM_MAX_UNIFORM_BUFFERS", "group__SceGxmUser.html#gac6c01c40eb9cc1d9ca13b9ea747e6996", null ],
+    [ "SCE_GXM_MAX_AUXILIARY_SURFACES", "group__SceGxmUser.html#ga779136ff27a7753151298f2335a03fb1", null ],
     [ "SCE_GXM_TILE_SHIFTX", "group__SceGxmUser.html#gaac83332b79af909ad2b2e57c705bb18e", null ],
     [ "SCE_GXM_TILE_SHIFTY", "group__SceGxmUser.html#gae6b0c28870b2b6dd2e585e82bb103d47", null ],
     [ "SCE_GXM_TILE_SIZEX", "group__SceGxmUser.html#gac037f7056a1cb3e040d279c85709443b", null ],
     [ "SCE_GXM_TILE_SIZEY", "group__SceGxmUser.html#ga98a5fcea8977bf71c14987ea02ad36d6", null ],
-    [ "SceGxmContext", "group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b", null ],
+    [ "SCE_GXM_COLOR_SURFACE_ALIGNMENT", "group__SceGxmUser.html#ga3a1376d9d0e088695a0ec3109f899dd9", null ],
+    [ "SCE_GXM_TEXTURE_ALIGNMENT", "group__SceGxmUser.html#ga3acba5462774e58394ebd814d665aafc", null ],
+    [ "SCE_GXM_DEPTHSTENCIL_SURFACE_ALIGNMENT", "group__SceGxmUser.html#gaacdca6d670adb7d863927656aea91ff0", null ],
+    [ "SCE_GXM_PALETTE_ALIGNMENT", "group__SceGxmUser.html#ga6a0896d4e4e8fca31256c5a0f162d4cf", null ],
     [ "SceGxmDisplayQueueCallback", "group__SceGxmUser.html#gae3284c61eb90f25ade30d206233670ca", null ],
+    [ "SceGxmRenderTarget", "group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0", null ],
+    [ "SceGxmSyncObject", "group__SceGxmUser.html#gaf364fed7cd6e00d6db2437ad20f5d922", null ],
+    [ "SceGxmContext", "group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b", null ],
+    [ "SceGxmVertexProgram", "group__SceGxmUser.html#ga9615920a106fd664aac450eb5df2226e", null ],
     [ "SceGxmFragmentProgram", "group__SceGxmUser.html#ga3b99e1aa1e7405bdfb4e74b231ab9945", null ],
     [ "SceGxmProgram", "group__SceGxmUser.html#ga77ff3089c329da8717f071ac193c364e", null ],
     [ "SceGxmProgramParameter", "group__SceGxmUser.html#gad75e76914bb0b50fa3ff44126947d1f7", null ],
-    [ "SceGxmRegisteredProgram", "group__SceGxmUser.html#ga5fe1bbd56484755e10a1d2c1eecfc614", null ],
-    [ "SceGxmRenderTarget", "group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0", null ],
     [ "SceGxmShaderPatcher", "group__SceGxmUser.html#ga9c443f5556a9eb50f08b4462ba050d6a", null ],
-    [ "SceGxmShaderPatcherBufferAllocCallback", "group__SceGxmUser.html#ga479756751958c67d854cbeaaba0e635e", null ],
-    [ "SceGxmShaderPatcherBufferFreeCallback", "group__SceGxmUser.html#gae3bf0bd9b0efa6341f6daccd4a314ce7", null ],
+    [ "SceGxmRegisteredProgram", "group__SceGxmUser.html#ga5fe1bbd56484755e10a1d2c1eecfc614", null ],
+    [ "SceGxmShaderPatcherId", "group__SceGxmUser.html#gada9559a890f93c7c8558a874e39e101b", null ],
     [ "SceGxmShaderPatcherHostAllocCallback", "group__SceGxmUser.html#gab02a1b74baebd2dec5944d25cdd81bdd", null ],
     [ "SceGxmShaderPatcherHostFreeCallback", "group__SceGxmUser.html#gadefc232d6f8e1d30d2144255eab7fbe2", null ],
-    [ "SceGxmShaderPatcherId", "group__SceGxmUser.html#gada9559a890f93c7c8558a874e39e101b", null ],
+    [ "SceGxmShaderPatcherBufferAllocCallback", "group__SceGxmUser.html#ga479756751958c67d854cbeaaba0e635e", null ],
+    [ "SceGxmShaderPatcherBufferFreeCallback", "group__SceGxmUser.html#gae3bf0bd9b0efa6341f6daccd4a314ce7", null ],
     [ "SceGxmShaderPatcherUsseAllocCallback", "group__SceGxmUser.html#ga105ef4928235aace0b5da02c3ebe236c", null ],
     [ "SceGxmShaderPatcherUsseFreeCallback", "group__SceGxmUser.html#ga0aa34880183dcee2d000bc962b2597cd", null ],
-    [ "SceGxmSyncObject", "group__SceGxmUser.html#gaf364fed7cd6e00d6db2437ad20f5d922", null ],
-    [ "SceGxmVertexProgram", "group__SceGxmUser.html#ga9615920a106fd664aac450eb5df2226e", null ],
+    [ "SceGxmErrorCode", "group__SceGxmUser.html#gad7a6e8555a60ee86ac7eeeb2495c027f", [
+      [ "SCE_GXM_ERROR_UNINITIALIZED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa4aa4951b54fe4df7fccfb478532fc29f", null ],
+      [ "SCE_GXM_ERROR_ALREADY_INITIALIZED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa7e560fdd7244d239f2297edac93b2332", null ],
+      [ "SCE_GXM_ERROR_OUT_OF_MEMORY", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa52bb32e7e8edce664cfcdbc8b5f6c80d", null ],
+      [ "SCE_GXM_ERROR_INVALID_VALUE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa8fc46dd3768783f27618e71ca2a17749", null ],
+      [ "SCE_GXM_ERROR_INVALID_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa743aec3e3dc7220fc78d9634f1d9ac91", null ],
+      [ "SCE_GXM_ERROR_INVALID_ALIGNMENT", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa7720da391e0f48093d8197365522157", null ],
+      [ "SCE_GXM_ERROR_NOT_WITHIN_SCENE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa30f2883a2bff10ef578dd0247c067fdf", null ],
+      [ "SCE_GXM_ERROR_WITHIN_SCENE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faf36efb7232b0534ff626c01c7dd6e281", null ],
+      [ "SCE_GXM_ERROR_NULL_PROGRAM", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa2613180dbe954c04d7c8a4e171d6fbf8", null ],
+      [ "SCE_GXM_ERROR_UNSUPPORTED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fab7c8c03ed5d81304f477489472ec1f1b", null ],
+      [ "SCE_GXM_ERROR_PATCHER_INTERNAL", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fafaa1fdd35ac339963af51d4c9c3fd9db", null ],
+      [ "SCE_GXM_ERROR_RESERVE_FAILED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faf4b6e5bcd8e111031fbc94630a1f8787", null ],
+      [ "SCE_GXM_ERROR_PROGRAM_IN_USE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa473523b95cdec71748ec63c6e37a1d9d", null ],
+      [ "SCE_GXM_ERROR_INVALID_INDEX_COUNT", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa34c72815dc270a2f429b0b1d70e4a17f", null ],
+      [ "SCE_GXM_ERROR_INVALID_POLYGON_MODE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa1e86b9f63cdf3976c5dcde1155745687", null ],
+      [ "SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_PRECISION", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa010100d14780bacf29f083e7cade393c", null ],
+      [ "SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_COMPONENT_COUNT", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faada13ef22a427202272bc4c75bdad103", null ],
+      [ "SCE_GXM_ERROR_UNIFORM_BUFFER_NOT_RESERVED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa8cfc026ef4cbe8ab841efa5a2301893", null ],
+      [ "SCE_GXM_ERROR_INVALID_AUXILIARY_SURFACE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa5e321def30069dbcfec6b204dbc6c544", null ],
+      [ "SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac1a8fb1badbfe04a2cad6d46c4bb3f48", null ],
+      [ "SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fadd0be539272b8b10a836ed0c562a5224", null ],
+      [ "SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fad3a1e0410a5b25878b15380ad5dbe114", null ],
+      [ "SCE_GXM_ERROR_DRIVER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa61bfa923792e007d099ff5669408d0d5", null ]
+    ] ],
+    [ "SceGxmMemoryAttribFlags", "group__SceGxmUser.html#ga74fdeacb4d6d9a1b75870f06ed83655f", [
+      [ "SCE_GXM_MEMORY_ATTRIB_READ", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fa226d286b5ee13fd203d7daa1c6872fc8", null ],
+      [ "SCE_GXM_MEMORY_ATTRIB_WRITE", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fad2b630608f87ce6147e0aedaa7592208", null ],
+      [ "SCE_GXM_MEMORY_ATTRIB_RW", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fac3fd3f3cf711d5ac83255a550e4a821a", null ]
+    ] ],
     [ "SceGxmAttributeFormat", "group__SceGxmUser.html#ga7e3e7a353fe9abc7d079a012b2dab793", [
       [ "SCE_GXM_ATTRIBUTE_FORMAT_U8", "group__SceGxmUser.html#gga7e3e7a353fe9abc7d079a012b2dab793a7ee81e137f38b9d12050c2624398ddf5", null ],
       [ "SCE_GXM_ATTRIBUTE_FORMAT_S8", "group__SceGxmUser.html#gga7e3e7a353fe9abc7d079a012b2dab793a4dfa469ce1447f5bea035fb786019d55", null ],
@@ -49,27 +79,105 @@ var gxm_8h =
       [ "SCE_GXM_ATTRIBUTE_FORMAT_F32", "group__SceGxmUser.html#gga7e3e7a353fe9abc7d079a012b2dab793aba5eaa3086a87f45f1a53e1cb5e28ba1", null ],
       [ "SCE_GXM_ATTRIBUTE_FORMAT_UNTYPED", "group__SceGxmUser.html#gga7e3e7a353fe9abc7d079a012b2dab793ace52b7093dffd223495b035a7b062361", null ]
     ] ],
-    [ "SceGxmBlendFactor", "group__SceGxmUser.html#ga313f1a9f04905961e3fa5bd9f80ab9a6", [
-      [ "SCE_GXM_BLEND_FACTOR_ZERO", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a5f50bdbe00e65de48fa29432104f0941", null ],
-      [ "SCE_GXM_BLEND_FACTOR_ONE", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6aea8bfd5a7d7a02ce4dc9a8b3c0a7c331", null ],
-      [ "SCE_GXM_BLEND_FACTOR_SRC_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a0fe81340dd4e805bb71b79cf33934ea2", null ],
-      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_SRC_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a1e9977733adcee6fea08c8a0393bd853", null ],
-      [ "SCE_GXM_BLEND_FACTOR_SRC_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6aa9f7711727d170d46bc31ab498274680", null ],
-      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6af81c3d182538069e91f9c4e8b2b2e403", null ],
-      [ "SCE_GXM_BLEND_FACTOR_DST_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a7d5f22804bec05c1e26d0da0f7d27e57", null ],
-      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_DST_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a52bc1c96c0b3907ca01725b42404e613", null ],
-      [ "SCE_GXM_BLEND_FACTOR_DST_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6aae9d39a771936deb2b68842d5013949d", null ],
-      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_DST_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6ab8761990e49f477abf6060001ae3ca9d", null ],
-      [ "SCE_GXM_BLEND_FACTOR_SRC_ALPHA_SATURATE", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6afe1e2c076c77d695560cdb8bb05593b6", null ],
-      [ "SCE_GXM_BLEND_FACTOR_DST_ALPHA_SATURATE", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a27bf2d7795a303efb8d91a7c0cbfc11c", null ]
+    [ "SceGxmDepthStencilFormat", "group__SceGxmUser.html#ga8948452f57bc9e9c73f8a60391b88d54", [
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54ab478299506d799fc7bf5a3ebf65c6614", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_S8", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54ac2ea332c185336bda0884844ebcde0b8", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32_S8", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54a9d8d4857dfb3485c31ec429a51896a95", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32M", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54aebce59e2cb6817ee6c094b4ed2ff9b47", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32M_S8", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54af4d2dab66f742b41dbb71e8462aa4e20", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_S8D24", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54a07c49c5268fae79a4222b34beb852f01", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_D16", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54a973f9ffd01682ede94b6e8213b3f0725", null ]
     ] ],
-    [ "SceGxmBlendFunc", "group__SceGxmUser.html#ga2df47889c265eea6d9998099f4e9259a", [
-      [ "SCE_GXM_BLEND_FUNC_NONE", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa2a8605fd916f1207a27537ee7ae6a934", null ],
-      [ "SCE_GXM_BLEND_FUNC_ADD", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aad0356e54742eac00194647720dae99b1", null ],
-      [ "SCE_GXM_BLEND_FUNC_SUBTRACT", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aad33f92af4b8038bed04976100fe71432", null ],
-      [ "SCE_GXM_BLEND_FUNC_REVERSE_SUBTRACT", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa1ab32c6425798cc9bc73a08d2181e9a5", null ],
-      [ "SCE_GXM_BLEND_FUNC_MIN", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa44c25b3eef87e5321c7c6bfeb6b0c17a", null ],
-      [ "SCE_GXM_BLEND_FUNC_MAX", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa01d65e7cf44357b2e9e2db461a53d134", null ]
+    [ "SceGxmPrimitiveType", "group__SceGxmUser.html#ga45eed5031ead5a9fced53fc29f39fe0a", [
+      [ "SCE_GXM_PRIMITIVE_TRIANGLES", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa621df3d6074f089357e469ed3dc8a50c", null ],
+      [ "SCE_GXM_PRIMITIVE_LINES", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa9a3b1dca492064b78b394a3f77016643", null ],
+      [ "SCE_GXM_PRIMITIVE_POINTS", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aaff536623315dcdf35e9c431bbb2a0cc4", null ],
+      [ "SCE_GXM_PRIMITIVE_TRIANGLE_STRIP", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa032d56f73a94127cf6aef1ad85680309", null ],
+      [ "SCE_GXM_PRIMITIVE_TRIANGLE_FAN", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa49d3b84f6ad64b931116692956538673", null ],
+      [ "SCE_GXM_PRIMITIVE_TRIANGLE_EDGES", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa5c2b3b15478580b5aac5758ae02ae30b", null ]
+    ] ],
+    [ "SceGxmEdgeEnableFlags", "group__SceGxmUser.html#ga9ba2462f43c9b03400bd7d7280b04b34", [
+      [ "SCE_GXM_EDGE_ENABLE_01", "group__SceGxmUser.html#gga9ba2462f43c9b03400bd7d7280b04b34a3e2f678266bcc60eeba5c8dd72e5f435", null ],
+      [ "SCE_GXM_EDGE_ENABLE_12", "group__SceGxmUser.html#gga9ba2462f43c9b03400bd7d7280b04b34ae54914bb3023c3aae004a4d44c03d6f4", null ],
+      [ "SCE_GXM_EDGE_ENABLE_20", "group__SceGxmUser.html#gga9ba2462f43c9b03400bd7d7280b04b34ae7f20688e4dae8e2eafd7db85c277243", null ]
+    ] ],
+    [ "SceGxmRegionClipMode", "group__SceGxmUser.html#ga041adff8c4bcdf3570cf74a43ee3b766", [
+      [ "SCE_GXM_REGION_CLIP_NONE", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766ae32590219bb0bb6ab006bde5b389dba6", null ],
+      [ "SCE_GXM_REGION_CLIP_ALL", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766a4bf28f0c44f1fd8df48110c764f2461b", null ],
+      [ "SCE_GXM_REGION_CLIP_OUTSIDE", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766aafe0a3e44513b820939f3a58ea099511", null ],
+      [ "SCE_GXM_REGION_CLIP_INSIDE", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766aad19ca4a0ad0cd75168c22381ed7a541", null ]
+    ] ],
+    [ "SceGxmDepthFunc", "group__SceGxmUser.html#gad6bded279286d41df0eabbf308c464d9", [
+      [ "SCE_GXM_DEPTH_FUNC_NEVER", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a278ec4cb6d0974199361ae24bf2d2b19", null ],
+      [ "SCE_GXM_DEPTH_FUNC_LESS", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9ac114c44f459a945e1b7999a1f4e9f7be", null ],
+      [ "SCE_GXM_DEPTH_FUNC_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9ab875ead4286a6f6bec8923d47785390b", null ],
+      [ "SCE_GXM_DEPTH_FUNC_LESS_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a310b49d932b5a7d065ad058da6d8e02c", null ],
+      [ "SCE_GXM_DEPTH_FUNC_GREATER", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9ac328f6a3be0d375629dcd59e2d91730b", null ],
+      [ "SCE_GXM_DEPTH_FUNC_NOT_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a1f8cf9b6e3e3de24b80e8e0add8244cc", null ],
+      [ "SCE_GXM_DEPTH_FUNC_GREATER_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9af8900981225ce70a6a19405aac1bce21", null ],
+      [ "SCE_GXM_DEPTH_FUNC_ALWAYS", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a726f426d9c66d7bf2e7ed6c34295775f", null ]
+    ] ],
+    [ "SceGxmStencilFunc", "group__SceGxmUser.html#ga95a11f56dd9f6bcb9d6e2d1e6cc70118", [
+      [ "SCE_GXM_STENCIL_FUNC_NEVER", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a9f59a47dbabd550b7b34b34fb94cf6db", null ],
+      [ "SCE_GXM_STENCIL_FUNC_LESS", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a2a66ad956f8edcaa2a6ed9499e85a33b", null ],
+      [ "SCE_GXM_STENCIL_FUNC_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118aed3e6cd27fb6552d8983f13ea1acc795", null ],
+      [ "SCE_GXM_STENCIL_FUNC_LESS_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a7756cf1bb969caad1695a946a51ab575", null ],
+      [ "SCE_GXM_STENCIL_FUNC_GREATER", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a1e0cc8237898a278998ba3e768697182", null ],
+      [ "SCE_GXM_STENCIL_FUNC_NOT_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a094175d0f1d264d40110e6b1af847a1f", null ],
+      [ "SCE_GXM_STENCIL_FUNC_GREATER_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118aaa4250248f49ccd1e3f43a00403a3ffa", null ],
+      [ "SCE_GXM_STENCIL_FUNC_ALWAYS", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a3f74f493a81dae50699b4bc261273a5a", null ]
+    ] ],
+    [ "SceGxmStencilOp", "group__SceGxmUser.html#ga7186a1fede20da82a8f0e6c42802bacb", [
+      [ "SCE_GXM_STENCIL_OP_KEEP", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba7ed48308b6989a0dc0ee3cc81ba55928", null ],
+      [ "SCE_GXM_STENCIL_OP_ZERO", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba508069ced1ed9dee4a40237c39c59cd5", null ],
+      [ "SCE_GXM_STENCIL_OP_REPLACE", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba9d5af6366a7a4d04a8a46891d367fdc6", null ],
+      [ "SCE_GXM_STENCIL_OP_INCR", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbac0346c00c17cc3646bed60520bc50039", null ],
+      [ "SCE_GXM_STENCIL_OP_DECR", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba0bc55a39c495108d6e10b817aab467dc", null ],
+      [ "SCE_GXM_STENCIL_OP_INVERT", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbaeae40605384f3971729bf2ae85911e2b", null ],
+      [ "SCE_GXM_STENCIL_OP_INCR_WRAP", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbaabea935d8886439f7441770ec368c416", null ],
+      [ "SCE_GXM_STENCIL_OP_DECR_WRAP", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbacbba0861b399e4302eacc46f6a241ca8", null ]
+    ] ],
+    [ "SceGxmCullMode", "group__SceGxmUser.html#ga83f853ed70368333282d87d2eda06562", [
+      [ "SCE_GXM_CULL_NONE", "group__SceGxmUser.html#gga83f853ed70368333282d87d2eda06562a12d9ddb8d494c469954d0b631e81f673", null ],
+      [ "SCE_GXM_CULL_CW", "group__SceGxmUser.html#gga83f853ed70368333282d87d2eda06562a4f21bacf43018482c14231ca1617bb96", null ],
+      [ "SCE_GXM_CULL_CCW", "group__SceGxmUser.html#gga83f853ed70368333282d87d2eda06562a5dfee329b510a1a15f92a91905dd0c86", null ]
+    ] ],
+    [ "SceGxmPassType", "group__SceGxmUser.html#gaa6f38278b2c0e8c87b2205f0fb6f1214", [
+      [ "SCE_GXM_PASS_TYPE_OPAQUE", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214aa2b7f5a84c4ec6a7d25e4f16d8912e73", null ],
+      [ "SCE_GXM_PASS_TYPE_TRANSLUCENT", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a7567f2d98ab768b101f21cc548812e2d", null ],
+      [ "SCE_GXM_PASS_TYPE_DISCARD", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a19c1c4ec12de6a4d024da1443a689e4d", null ],
+      [ "SCE_GXM_PASS_TYPE_MASK_UPDATE", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a19186ae169fa2aadb383421d315ad23c", null ],
+      [ "SCE_GXM_PASS_TYPE_DEPTH_REPLACE", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a2c02e4aabb94ac86b4887d7741107a43", null ]
+    ] ],
+    [ "SceGxmPolygonMode", "group__SceGxmUser.html#gad1ceb01f565ba9724e9dd46ffa7d188b", [
+      [ "SCE_GXM_POLYGON_MODE_TRIANGLE_FILL", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188bafae88e8e91f3bed66a563c33cb209888", null ],
+      [ "SCE_GXM_POLYGON_MODE_LINE", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188baaa598d52ea17c2f3ea766548d4c70f03", null ],
+      [ "SCE_GXM_POLYGON_MODE_POINT_10UV", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188bae260072ac3f6027212656e617918dfbf", null ],
+      [ "SCE_GXM_POLYGON_MODE_POINT", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188baac560bb943217990b3d9e076d5aae28a", null ],
+      [ "SCE_GXM_POLYGON_MODE_POINT_01UV", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188baa1a00d97d4c0056a6cfd5a0611ca8cb4", null ],
+      [ "SCE_GXM_POLYGON_MODE_TRIANGLE_LINE", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188bad3045b6773fd3b6c421622c13a8e77d0", null ],
+      [ "SCE_GXM_POLYGON_MODE_TRIANGLE_POINT", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188ba9de9644a155522b48017ecec3ed871be", null ]
+    ] ],
+    [ "SceGxmColorSwizzle4Mode", "group__SceGxmUser.html#ga9a2d1e9ac26c948f3f127a172a2a4b17", [
+      [ "SCE_GXM_COLOR_SWIZZLE4_ABGR", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17ad365be5f23eb418b2cd93c519109193a", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE4_ARGB", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17ac90342b2a765f2cf998426bfbeed0197", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE4_RGBA", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17ae62e29b82d342f781dde5225802edca4", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE4_BGRA", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17a27651fee8cda0d58d402f2255ac49f88", null ]
+    ] ],
+    [ "SceGxmColorSwizzle3Mode", "group__SceGxmUser.html#ga3ab2b41104ebab77a7a28518e37bd3ee", [
+      [ "SCE_GXM_COLOR_SWIZZLE3_BGR", "group__SceGxmUser.html#gga3ab2b41104ebab77a7a28518e37bd3eea68a7a0ef15d5acf1700989ecb2eb668b", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE3_RGB", "group__SceGxmUser.html#gga3ab2b41104ebab77a7a28518e37bd3eea7a6b39ef0224886ba5b3554f95c1d39a", null ]
+    ] ],
+    [ "SceGxmColorSwizzle2Mode", "group__SceGxmUser.html#gaf0771caf29c63d5ae9c5ece68e01f6a8", [
+      [ "SCE_GXM_COLOR_SWIZZLE2_GR", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8a211adc13ef0ecde7d0cce0731bdb8fed", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE2_RG", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8a90f83648a053e3f6825c9aa6ae978d76", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE2_RA", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8adab0d6d0e8a3de701e904c357ef619e4", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE2_AR", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8adb56b5168d401210733916528f316c5e", null ]
+    ] ],
+    [ "SceGxmColorSwizzle1Mode", "group__SceGxmUser.html#ga859594abf83b32c30b44c3a73adc7979", [
+      [ "SCE_GXM_COLOR_SWIZZLE1_R", "group__SceGxmUser.html#gga859594abf83b32c30b44c3a73adc7979afe2d4899fdddd903ee4982a7f663763a", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE1_G", "group__SceGxmUser.html#gga859594abf83b32c30b44c3a73adc7979aad5087f7c27e1db4f07b4041fe8eba6a", null ],
+      [ "SCE_GXM_COLOR_SWIZZLE1_A", "group__SceGxmUser.html#gga859594abf83b32c30b44c3a73adc7979a061f5fe167d83022747a96a6badd8c26", null ]
     ] ],
     [ "SceGxmColorBaseFormat", "group__SceGxmUser.html#ga2b8ae64f9a6d6000d113abd01245162c", [
       [ "SCE_GXM_COLOR_BASE_FORMAT_U8U8U8U8", "group__SceGxmUser.html#gga2b8ae64f9a6d6000d113abd01245162cab2fdc32de535ae7a60ff0454e6885262", null ],
@@ -177,17 +285,10 @@ var gxm_8h =
       [ "SCE_GXM_COLOR_FORMAT_A4R4G4B4", "group__SceGxmUser.html#gga86183627eb1a24e059748cb95d618cc3a205746df3d57b5b87664cbdedafafdf8", null ],
       [ "SCE_GXM_COLOR_FORMAT_A8", "group__SceGxmUser.html#gga86183627eb1a24e059748cb95d618cc3a9010996e82c8343b761bcb024ed43253", null ]
     ] ],
-    [ "SceGxmColorMask", "group__SceGxmUser.html#ga4179bc48a85ea0dc5cb860a117d9737c", [
-      [ "SCE_GXM_COLOR_MASK_NONE", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca570dc288236d31f03db9d1a0dbc40701", null ],
-      [ "SCE_GXM_COLOR_MASK_A", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca559660ae53e30a613a4e893212013097", null ],
-      [ "SCE_GXM_COLOR_MASK_R", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737caa7e5b7f83d89713fbb2d8c27e799cd67", null ],
-      [ "SCE_GXM_COLOR_MASK_G", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca05622af95dec7102173c8ffe8c14236c", null ],
-      [ "SCE_GXM_COLOR_MASK_B", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737cadd074714da75ebf95290349475c8523e", null ],
-      [ "SCE_GXM_COLOR_MASK_ALL", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca24c290a7b46ed3b0a1b08fa34ea6b874", null ]
-    ] ],
-    [ "SceGxmColorSurfaceDitherMode", "group__SceGxmUser.html#gad2d729aafb241ffc6af24fd5956ecaf8", [
-      [ "SCE_GXM_COLOR_SURFACE_DITHER_DISABLED", "group__SceGxmUser.html#ggad2d729aafb241ffc6af24fd5956ecaf8a6e565c6352e3f43698d4f4e5ad21f398", null ],
-      [ "SCE_GXM_COLOR_SURFACE_DITHER_ENABLED", "group__SceGxmUser.html#ggad2d729aafb241ffc6af24fd5956ecaf8a8d980831a24926248b8f7d42f7132948", null ]
+    [ "SceGxmColorSurfaceType", "group__SceGxmUser.html#gaea97147b753766cc4a91ebc9e45330d7", [
+      [ "SCE_GXM_COLOR_SURFACE_LINEAR", "group__SceGxmUser.html#ggaea97147b753766cc4a91ebc9e45330d7a44303cfcb9c2e24b4c9aea399d97b4b2", null ],
+      [ "SCE_GXM_COLOR_SURFACE_TILED", "group__SceGxmUser.html#ggaea97147b753766cc4a91ebc9e45330d7ae8ceb2ef650c62c4b4f659ba210dbd1b", null ],
+      [ "SCE_GXM_COLOR_SURFACE_SWIZZLED", "group__SceGxmUser.html#ggaea97147b753766cc4a91ebc9e45330d7a8bef3e7e4df2195929488e2942dbe8b8", null ]
     ] ],
     [ "SceGxmColorSurfaceGammaMode", "group__SceGxmUser.html#gab385fd3dbdc7fe78937a4a2805daf575", [
       [ "SCE_GXM_COLOR_SURFACE_GAMMA_NONE", "group__SceGxmUser.html#ggab385fd3dbdc7fe78937a4a2805daf575a674feab9a35a54367c6c26cdb34e0695", null ],
@@ -195,136 +296,13 @@ var gxm_8h =
       [ "SCE_GXM_COLOR_SURFACE_GAMMA_GR", "group__SceGxmUser.html#ggab385fd3dbdc7fe78937a4a2805daf575a16da97c9faf57697a797a8b713849adc", null ],
       [ "SCE_GXM_COLOR_SURFACE_GAMMA_BGR", "group__SceGxmUser.html#ggab385fd3dbdc7fe78937a4a2805daf575a72c4039669ccc826c1662b230e3c6fee", null ]
     ] ],
-    [ "SceGxmColorSurfaceScaleMode", "group__SceGxmUser.html#ga346a9d22aa74a129e7e3786764f62d9c", [
-      [ "SCE_GXM_COLOR_SURFACE_SCALE_NONE", "group__SceGxmUser.html#gga346a9d22aa74a129e7e3786764f62d9ca4c85c570fc2cf6fdefe03d51f37e9601", null ],
-      [ "SCE_GXM_COLOR_SURFACE_SCALE_MSAA_DOWNSCALE", "group__SceGxmUser.html#gga346a9d22aa74a129e7e3786764f62d9ca7be5514570cb4c9049fe952f92977191", null ]
-    ] ],
-    [ "SceGxmColorSurfaceType", "group__SceGxmUser.html#gaea97147b753766cc4a91ebc9e45330d7", [
-      [ "SCE_GXM_COLOR_SURFACE_LINEAR", "group__SceGxmUser.html#ggaea97147b753766cc4a91ebc9e45330d7a44303cfcb9c2e24b4c9aea399d97b4b2", null ],
-      [ "SCE_GXM_COLOR_SURFACE_TILED", "group__SceGxmUser.html#ggaea97147b753766cc4a91ebc9e45330d7ae8ceb2ef650c62c4b4f659ba210dbd1b", null ],
-      [ "SCE_GXM_COLOR_SURFACE_SWIZZLED", "group__SceGxmUser.html#ggaea97147b753766cc4a91ebc9e45330d7a8bef3e7e4df2195929488e2942dbe8b8", null ]
-    ] ],
-    [ "SceGxmColorSwizzle1Mode", "group__SceGxmUser.html#ga859594abf83b32c30b44c3a73adc7979", [
-      [ "SCE_GXM_COLOR_SWIZZLE1_R", "group__SceGxmUser.html#gga859594abf83b32c30b44c3a73adc7979afe2d4899fdddd903ee4982a7f663763a", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE1_G", "group__SceGxmUser.html#gga859594abf83b32c30b44c3a73adc7979aad5087f7c27e1db4f07b4041fe8eba6a", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE1_A", "group__SceGxmUser.html#gga859594abf83b32c30b44c3a73adc7979a061f5fe167d83022747a96a6badd8c26", null ]
-    ] ],
-    [ "SceGxmColorSwizzle2Mode", "group__SceGxmUser.html#gaf0771caf29c63d5ae9c5ece68e01f6a8", [
-      [ "SCE_GXM_COLOR_SWIZZLE2_GR", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8a211adc13ef0ecde7d0cce0731bdb8fed", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE2_RG", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8a90f83648a053e3f6825c9aa6ae978d76", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE2_RA", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8adab0d6d0e8a3de701e904c357ef619e4", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE2_AR", "group__SceGxmUser.html#ggaf0771caf29c63d5ae9c5ece68e01f6a8adb56b5168d401210733916528f316c5e", null ]
-    ] ],
-    [ "SceGxmColorSwizzle3Mode", "group__SceGxmUser.html#ga3ab2b41104ebab77a7a28518e37bd3ee", [
-      [ "SCE_GXM_COLOR_SWIZZLE3_BGR", "group__SceGxmUser.html#gga3ab2b41104ebab77a7a28518e37bd3eea68a7a0ef15d5acf1700989ecb2eb668b", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE3_RGB", "group__SceGxmUser.html#gga3ab2b41104ebab77a7a28518e37bd3eea7a6b39ef0224886ba5b3554f95c1d39a", null ]
-    ] ],
-    [ "SceGxmColorSwizzle4Mode", "group__SceGxmUser.html#ga9a2d1e9ac26c948f3f127a172a2a4b17", [
-      [ "SCE_GXM_COLOR_SWIZZLE4_ABGR", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17ad365be5f23eb418b2cd93c519109193a", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE4_ARGB", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17ac90342b2a765f2cf998426bfbeed0197", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE4_RGBA", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17ae62e29b82d342f781dde5225802edca4", null ],
-      [ "SCE_GXM_COLOR_SWIZZLE4_BGRA", "group__SceGxmUser.html#gga9a2d1e9ac26c948f3f127a172a2a4b17a27651fee8cda0d58d402f2255ac49f88", null ]
-    ] ],
-    [ "SceGxmCullMode", "group__SceGxmUser.html#ga83f853ed70368333282d87d2eda06562", [
-      [ "SCE_GXM_CULL_NONE", "group__SceGxmUser.html#gga83f853ed70368333282d87d2eda06562a12d9ddb8d494c469954d0b631e81f673", null ],
-      [ "SCE_GXM_CULL_CW", "group__SceGxmUser.html#gga83f853ed70368333282d87d2eda06562a4f21bacf43018482c14231ca1617bb96", null ],
-      [ "SCE_GXM_CULL_CCW", "group__SceGxmUser.html#gga83f853ed70368333282d87d2eda06562a5dfee329b510a1a15f92a91905dd0c86", null ]
-    ] ],
-    [ "SceGxmDepthFunc", "group__SceGxmUser.html#gad6bded279286d41df0eabbf308c464d9", [
-      [ "SCE_GXM_DEPTH_FUNC_NEVER", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a278ec4cb6d0974199361ae24bf2d2b19", null ],
-      [ "SCE_GXM_DEPTH_FUNC_LESS", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9ac114c44f459a945e1b7999a1f4e9f7be", null ],
-      [ "SCE_GXM_DEPTH_FUNC_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9ab875ead4286a6f6bec8923d47785390b", null ],
-      [ "SCE_GXM_DEPTH_FUNC_LESS_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a310b49d932b5a7d065ad058da6d8e02c", null ],
-      [ "SCE_GXM_DEPTH_FUNC_GREATER", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9ac328f6a3be0d375629dcd59e2d91730b", null ],
-      [ "SCE_GXM_DEPTH_FUNC_NOT_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a1f8cf9b6e3e3de24b80e8e0add8244cc", null ],
-      [ "SCE_GXM_DEPTH_FUNC_GREATER_EQUAL", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9af8900981225ce70a6a19405aac1bce21", null ],
-      [ "SCE_GXM_DEPTH_FUNC_ALWAYS", "group__SceGxmUser.html#ggad6bded279286d41df0eabbf308c464d9a726f426d9c66d7bf2e7ed6c34295775f", null ]
-    ] ],
-    [ "SceGxmDepthStencilForceLoadMode", "group__SceGxmUser.html#ga9a701930a07aec5b5d771772865c3ecf", [
-      [ "SCE_GXM_DEPTH_STENCIL_FORCE_LOAD_DISABLED", "group__SceGxmUser.html#gga9a701930a07aec5b5d771772865c3ecfa88ccacec3e10905e7710cc5c3059971b", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORCE_LOAD_ENABLED", "group__SceGxmUser.html#gga9a701930a07aec5b5d771772865c3ecfaaaf3e2fa5998254fdfafbb811f431be2", null ]
-    ] ],
-    [ "SceGxmDepthStencilForceStoreMode", "group__SceGxmUser.html#ga93473a4ea04de8cfe322e1752a732c57", [
-      [ "SCE_GXM_DEPTH_STENCIL_FORCE_STORE_DISABLED", "group__SceGxmUser.html#gga93473a4ea04de8cfe322e1752a732c57a955916114a4990a3585d17056322b312", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORCE_STORE_ENABLED", "group__SceGxmUser.html#gga93473a4ea04de8cfe322e1752a732c57aea99080d298481bf1e79a104c6005101", null ]
-    ] ],
-    [ "SceGxmDepthStencilFormat", "group__SceGxmUser.html#ga8948452f57bc9e9c73f8a60391b88d54", [
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54ab478299506d799fc7bf5a3ebf65c6614", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_S8", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54ac2ea332c185336bda0884844ebcde0b8", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32_S8", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54a9d8d4857dfb3485c31ec429a51896a95", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32M", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54aebce59e2cb6817ee6c094b4ed2ff9b47", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_DF32M_S8", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54af4d2dab66f742b41dbb71e8462aa4e20", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_S8D24", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54a07c49c5268fae79a4222b34beb852f01", null ],
-      [ "SCE_GXM_DEPTH_STENCIL_FORMAT_D16", "group__SceGxmUser.html#gga8948452f57bc9e9c73f8a60391b88d54a973f9ffd01682ede94b6e8213b3f0725", null ]
+    [ "SceGxmColorSurfaceDitherMode", "group__SceGxmUser.html#gad2d729aafb241ffc6af24fd5956ecaf8", [
+      [ "SCE_GXM_COLOR_SURFACE_DITHER_DISABLED", "group__SceGxmUser.html#ggad2d729aafb241ffc6af24fd5956ecaf8a6e565c6352e3f43698d4f4e5ad21f398", null ],
+      [ "SCE_GXM_COLOR_SURFACE_DITHER_ENABLED", "group__SceGxmUser.html#ggad2d729aafb241ffc6af24fd5956ecaf8a8d980831a24926248b8f7d42f7132948", null ]
     ] ],
     [ "SceGxmDepthStencilSurfaceType", "group__SceGxmUser.html#gaf1840c89821e83877ea8d07ca7506fd8", [
       [ "SCE_GXM_DEPTH_STENCIL_SURFACE_LINEAR", "group__SceGxmUser.html#ggaf1840c89821e83877ea8d07ca7506fd8abd61d87402d4199c21cd31397910a12f", null ],
       [ "SCE_GXM_DEPTH_STENCIL_SURFACE_TILED", "group__SceGxmUser.html#ggaf1840c89821e83877ea8d07ca7506fd8a3a7a317cda2748c28cf7914011a2c4c7", null ]
-    ] ],
-    [ "SceGxmDepthWriteMode", "group__SceGxmUser.html#ga08200cdcfcdb67b50bb4a8a17f7cb6b2", [
-      [ "SCE_GXM_DEPTH_WRITE_DISABLED", "group__SceGxmUser.html#gga08200cdcfcdb67b50bb4a8a17f7cb6b2aa8ee01937cc46208a534630033ec74c1", null ],
-      [ "SCE_GXM_DEPTH_WRITE_ENABLED", "group__SceGxmUser.html#gga08200cdcfcdb67b50bb4a8a17f7cb6b2abea977abecd19acde502587524060906", null ]
-    ] ],
-    [ "SceGxmEdgeEnableFlags", "group__SceGxmUser.html#ga9ba2462f43c9b03400bd7d7280b04b34", [
-      [ "SCE_GXM_EDGE_ENABLE_01", "group__SceGxmUser.html#gga9ba2462f43c9b03400bd7d7280b04b34a3e2f678266bcc60eeba5c8dd72e5f435", null ],
-      [ "SCE_GXM_EDGE_ENABLE_12", "group__SceGxmUser.html#gga9ba2462f43c9b03400bd7d7280b04b34ae54914bb3023c3aae004a4d44c03d6f4", null ],
-      [ "SCE_GXM_EDGE_ENABLE_20", "group__SceGxmUser.html#gga9ba2462f43c9b03400bd7d7280b04b34ae7f20688e4dae8e2eafd7db85c277243", null ]
-    ] ],
-    [ "SceGxmErrorCode", "group__SceGxmUser.html#gad7a6e8555a60ee86ac7eeeb2495c027f", [
-      [ "SCE_GXM_ERROR_UNINITIALIZED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa4aa4951b54fe4df7fccfb478532fc29f", null ],
-      [ "SCE_GXM_ERROR_ALREADY_INITIALIZED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa7e560fdd7244d239f2297edac93b2332", null ],
-      [ "SCE_GXM_ERROR_OUT_OF_MEMORY", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa52bb32e7e8edce664cfcdbc8b5f6c80d", null ],
-      [ "SCE_GXM_ERROR_INVALID_VALUE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa8fc46dd3768783f27618e71ca2a17749", null ],
-      [ "SCE_GXM_ERROR_INVALID_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa743aec3e3dc7220fc78d9634f1d9ac91", null ],
-      [ "SCE_GXM_ERROR_INVALID_ALIGNMENT", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa7720da391e0f48093d8197365522157", null ],
-      [ "SCE_GXM_ERROR_NOT_WITHIN_SCENE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa30f2883a2bff10ef578dd0247c067fdf", null ],
-      [ "SCE_GXM_ERROR_WITHIN_SCENE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faf36efb7232b0534ff626c01c7dd6e281", null ],
-      [ "SCE_GXM_ERROR_NULL_PROGRAM", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa2613180dbe954c04d7c8a4e171d6fbf8", null ],
-      [ "SCE_GXM_ERROR_UNSUPPORTED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fab7c8c03ed5d81304f477489472ec1f1b", null ],
-      [ "SCE_GXM_ERROR_PATCHER_INTERNAL", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fafaa1fdd35ac339963af51d4c9c3fd9db", null ],
-      [ "SCE_GXM_ERROR_RESERVE_FAILED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faf4b6e5bcd8e111031fbc94630a1f8787", null ],
-      [ "SCE_GXM_ERROR_PROGRAM_IN_USE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa473523b95cdec71748ec63c6e37a1d9d", null ],
-      [ "SCE_GXM_ERROR_INVALID_INDEX_COUNT", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa34c72815dc270a2f429b0b1d70e4a17f", null ],
-      [ "SCE_GXM_ERROR_INVALID_POLYGON_MODE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa1e86b9f63cdf3976c5dcde1155745687", null ],
-      [ "SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_PRECISION", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa010100d14780bacf29f083e7cade393c", null ],
-      [ "SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_COMPONENT_COUNT", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faada13ef22a427202272bc4c75bdad103", null ],
-      [ "SCE_GXM_ERROR_UNIFORM_BUFFER_NOT_RESERVED", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa8cfc026ef4cbe8ab841efa5a2301893", null ],
-      [ "SCE_GXM_ERROR_INVALID_AUXILIARY_SURFACE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa5e321def30069dbcfec6b204dbc6c544", null ],
-      [ "SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac1a8fb1badbfe04a2cad6d46c4bb3f48", null ],
-      [ "SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fadd0be539272b8b10a836ed0c562a5224", null ],
-      [ "SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fad3a1e0410a5b25878b15380ad5dbe114", null ],
-      [ "SCE_GXM_ERROR_DRIVER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa61bfa923792e007d099ff5669408d0d5", null ]
-    ] ],
-    [ "SceGxmFragmentProgramMode", "group__SceGxmUser.html#ga9ea3d868bc7f262712ceb000d9b5f2e3", [
-      [ "SCE_GXM_FRAGMENT_PROGRAM_DISABLED", "group__SceGxmUser.html#gga9ea3d868bc7f262712ceb000d9b5f2e3a9705d1cf1cf5042bf50936d0a1f5ffe2", null ],
-      [ "SCE_GXM_FRAGMENT_PROGRAM_ENABLED", "group__SceGxmUser.html#gga9ea3d868bc7f262712ceb000d9b5f2e3ac453539b3a127aadfa297599e8392091", null ]
-    ] ],
-    [ "SceGxmIndexFormat", "group__SceGxmUser.html#ga0a45a9c1d10ec4dc9eca49238f204865", [
-      [ "SCE_GXM_INDEX_FORMAT_U16", "group__SceGxmUser.html#gga0a45a9c1d10ec4dc9eca49238f204865aa1401060b292336aec1d42db85dc2a46", null ],
-      [ "SCE_GXM_INDEX_FORMAT_U32", "group__SceGxmUser.html#gga0a45a9c1d10ec4dc9eca49238f204865addaa2cd9fdb8385e93441068fce79386", null ]
-    ] ],
-    [ "SceGxmIndexSource", "group__SceGxmUser.html#ga75360ff6e16bb5f7cbab46825b9991f6", [
-      [ "SCE_GXM_INDEX_SOURCE_INDEX_16BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6a62ba27a6e96da23cc971c6734ae6c4ba", null ],
-      [ "SCE_GXM_INDEX_SOURCE_INDEX_32BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6a2b8302afdd1feb68efa6d7858cc9fb6b", null ],
-      [ "SCE_GXM_INDEX_SOURCE_INSTANCE_16BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6aa69c62124cecb88e68ca7b6d87e18e37", null ],
-      [ "SCE_GXM_INDEX_SOURCE_INSTANCE_32BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6a3f61b36a6c2880dee054b0895a10a785", null ]
-    ] ],
-    [ "SceGxmLineFillLastPixelMode", "group__SceGxmUser.html#ga699c0fb2e3a8c5af42b8d532e3d92e48", [
-      [ "SCE_GXM_LINE_FILL_LAST_PIXEL_DISABLED", "group__SceGxmUser.html#gga699c0fb2e3a8c5af42b8d532e3d92e48a53e43cb1a2fde321b0f7520cb775c09b", null ],
-      [ "SCE_GXM_LINE_FILL_LAST_PIXEL_ENABLED", "group__SceGxmUser.html#gga699c0fb2e3a8c5af42b8d532e3d92e48a495dc49df99726bfbd27a21d009c122f", null ]
-    ] ],
-    [ "SceGxmMemoryAttribFlags", "group__SceGxmUser.html#ga74fdeacb4d6d9a1b75870f06ed83655f", [
-      [ "SCE_GXM_MEMORY_ATTRIB_READ", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fa226d286b5ee13fd203d7daa1c6872fc8", null ],
-      [ "SCE_GXM_MEMORY_ATTRIB_WRITE", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fad2b630608f87ce6147e0aedaa7592208", null ],
-      [ "SCE_GXM_MEMORY_ATTRIB_RW", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fac3fd3f3cf711d5ac83255a550e4a821a", null ]
-    ] ],
-    [ "SceGxmMidSceneFlags", "group__SceGxmUser.html#gaee5a987447229376ca1fbc0201c6edf1", [
-      [ "SCE_GXM_MIDSCENE_PRESERVE_DEFAULT_UNIFORM_BUFFERS", "group__SceGxmUser.html#ggaee5a987447229376ca1fbc0201c6edf1a84691a2603480bc81f0040560196b538", null ]
-    ] ],
-    [ "SceGxmMultisampleMode", "group__SceGxmUser.html#ga79a56d8caeda63dcfc989f61195728cf", [
-      [ "SCE_GXM_MULTISAMPLE_NONE", "group__SceGxmUser.html#gga79a56d8caeda63dcfc989f61195728cfa781ea9fa14942bdbb75e3b73dfdd3afb", null ],
-      [ "SCE_GXM_MULTISAMPLE_2X", "group__SceGxmUser.html#gga79a56d8caeda63dcfc989f61195728cfa1faffc5df16c3718eb19edeea93612b0", null ],
-      [ "SCE_GXM_MULTISAMPLE_4X", "group__SceGxmUser.html#gga79a56d8caeda63dcfc989f61195728cfa62318dcdd46d4db1185f911346fc6418", null ]
     ] ],
     [ "SceGxmOutputRegisterFormat", "group__SceGxmUser.html#gac0a2e79a2c9decc6b7d8f86af17449b6", [
       [ "SCE_GXM_OUTPUT_REGISTER_FORMAT_DECLARED", "group__SceGxmUser.html#ggac0a2e79a2c9decc6b7d8f86af17449b6ac90ba9ea51533d41fdbb66baaf45272c", null ],
@@ -337,123 +315,62 @@ var gxm_8h =
       [ "SCE_GXM_OUTPUT_REGISTER_FORMAT_FLOAT2", "group__SceGxmUser.html#ggac0a2e79a2c9decc6b7d8f86af17449b6a2a84ed208dc79dc5e8cbba459995c0d7", null ],
       [ "SCE_GXM_OUTPUT_REGISTER_FORMAT_FLOAT", "group__SceGxmUser.html#ggac0a2e79a2c9decc6b7d8f86af17449b6af824c07c019e131c6761fee30810af93", null ]
     ] ],
-    [ "SceGxmOutputRegisterSize", "group__SceGxmUser.html#ga462d27029ba1469c495d5848f943d8bc", [
-      [ "SCE_GXM_OUTPUT_REGISTER_SIZE_32BIT", "group__SceGxmUser.html#gga462d27029ba1469c495d5848f943d8bcac87cc50f31a7d9f04e40ebeceaf104d7", null ],
-      [ "SCE_GXM_OUTPUT_REGISTER_SIZE_64BIT", "group__SceGxmUser.html#gga462d27029ba1469c495d5848f943d8bca952b0935c773ebd050c54c9809103604", null ]
+    [ "SceGxmMultisampleMode", "group__SceGxmUser.html#ga79a56d8caeda63dcfc989f61195728cf", [
+      [ "SCE_GXM_MULTISAMPLE_NONE", "group__SceGxmUser.html#gga79a56d8caeda63dcfc989f61195728cfa781ea9fa14942bdbb75e3b73dfdd3afb", null ],
+      [ "SCE_GXM_MULTISAMPLE_2X", "group__SceGxmUser.html#gga79a56d8caeda63dcfc989f61195728cfa1faffc5df16c3718eb19edeea93612b0", null ],
+      [ "SCE_GXM_MULTISAMPLE_4X", "group__SceGxmUser.html#gga79a56d8caeda63dcfc989f61195728cfa62318dcdd46d4db1185f911346fc6418", null ]
     ] ],
-    [ "SceGxmParameterCategory", "group__SceGxmUser.html#gaabee1741cd74c3f67271560f08e21e89", [
-      [ "SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a6153facbf6b99c2ed0078bc6eb4e1ac4", null ],
-      [ "SCE_GXM_PARAMETER_CATEGORY_UNIFORM", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a88b3531ee29dae122b13099bfcca4aa5", null ],
-      [ "SCE_GXM_PARAMETER_CATEGORY_SAMPLER", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a5c0ce645fee8f396e36459314428fe75", null ],
-      [ "SCE_GXM_PARAMETER_CATEGORY_AUXILIARY_SURFACE", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a7b96c6d7105a7c7b0fcef29dded942f9", null ],
-      [ "SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89ab4fa28962dd7ff0b3f0f3519944928e5", null ]
+    [ "SceGxmTextureSwizzle4Mode", "group__SceGxmUser.html#gaf939fc011a6ea94573487b950b24b443", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_ABGR", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a486b513ff38bbae5b24ea7c5a7067434", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_ARGB", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a471610276f219df095814ef8f7a39fa4", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_RGBA", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a84d0ed78e91045ca3819252a333cdf25", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_BGRA", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443af926a1c8b7337cb8268e83064a0a772c", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_1BGR", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a20001ac96971ec9502606f19aa56f0bc", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_1RGB", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443aa02867eef1679d83cb21e17d7dd6a4b4", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_RGB1", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a6859823ae66929f263bb6b0dd60f5699", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE4_BGR1", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a953d1b749f568017091a1378a852d2a8", null ]
     ] ],
-    [ "SceGxmParameterSemantic", "group__SceGxmUser.html#ga6e5c2acc9cc318d8328890ae3da1ca51", [
-      [ "SCE_GXM_PARAMETER_SEMANTIC_NONE", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a13bfff04f45a8c555ed057267bd16321", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_ATTR", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a69f43fba6a0d1ff3598694c9020db3e0", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_BCOL", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a336b9e6d31e678d63ba011af23fa8b33", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_BINORMAL", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a43b3776d44d9fdc83fb69b042f5ae266", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_BLENDINDICES", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a001e4c98637d149076eb3c7cee39d86e", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_BLENDWEIGHT", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a73981b2097101aa43e2e99b1c3b170a0", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_COLOR", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51acb53415e7f2e16a47d1e2ae9d7732d18", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_DIFFUSE", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a0282180c49dee4a0d3ff00b59f9503b0", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_FOGCOORD", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a292eb28c3e9af7ec2f67eb08b34332ab", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_NORMAL", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a2802d1dc55be151a249012d38200e7e3", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_POINTSIZE", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51af2783b8c943cca8ea07a9ad838553c16", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_POSITION", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a121f3cef41954013d210162faaf28bb2", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_SPECULAR", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a9661793926ecf967e7d4a014dd7e1310", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_TANGENT", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a807d00259a1a72559a06a9d60065640a", null ],
-      [ "SCE_GXM_PARAMETER_SEMANTIC_TEXCOORD", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a12156fc2ca7b1d997afad41cda058283", null ]
+    [ "SceGxmTextureSwizzle3Mode", "group__SceGxmUser.html#ga02c6b0277677fa4b74b27015d94c8e4a", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE3_BGR", "group__SceGxmUser.html#gga02c6b0277677fa4b74b27015d94c8e4aa59212fefc95caebb0a3d7c21b9a015be", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE3_RGB", "group__SceGxmUser.html#gga02c6b0277677fa4b74b27015d94c8e4aa3bad0ca3f8c1304ebb02b8b9732c5d7a", null ]
     ] ],
-    [ "SceGxmParameterType", "group__SceGxmUser.html#ga8b82ebb229b9a482d50aa79b2a3bf43b", [
-      [ "SCE_GXM_PARAMETER_TYPE_F32", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba1fdd8d992e95ce229a09004408af7ae3", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_F16", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba45dc12dbba3e7397618e3eef1c5bbd69", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_C10", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bad5bf8c84b455dda816b3ff6cf4b4c388", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_U32", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bac5d9e782e84bd4715ca642e44478edf8", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_S32", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba22278837459827f56c46dfc8dd1e4352", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_U16", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bab9c9ba1de15b9616a84143f5a4c101b9", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_S16", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bacc3e88e565449967baa758f41b033ddb", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_U8", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba3ac1c4bbea756100be7aa65a7ad1a76c", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_S8", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba9aee385e2599da6c3c57850307c12793", null ],
-      [ "SCE_GXM_PARAMETER_TYPE_AGGREGATE", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba5a631cce3d7d454b22a011a339b69b4e", null ]
+    [ "SceGxmTextureSwizzle2Mode", "group__SceGxmUser.html#ga8eae0f112d38b72c9dca413582e8858f", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_GR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa9bde226837ce8ead52152d00d32944e5", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_00GR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa9e24d4d5d2d843cd7787b9a467dce567", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_GRRR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858faa5bb041cfa46ba227d6365d532b565e1", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_RGGG", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa2bdb31cbf26aa0324433ba63c9b529d4", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_GRGR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa6a320e3221d1291b869f142e77129932", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_00RG", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa3741c5a477b33708e1859300de0cbc37", null ]
     ] ],
-    [ "SceGxmPassType", "group__SceGxmUser.html#gaa6f38278b2c0e8c87b2205f0fb6f1214", [
-      [ "SCE_GXM_PASS_TYPE_OPAQUE", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214aa2b7f5a84c4ec6a7d25e4f16d8912e73", null ],
-      [ "SCE_GXM_PASS_TYPE_TRANSLUCENT", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a7567f2d98ab768b101f21cc548812e2d", null ],
-      [ "SCE_GXM_PASS_TYPE_DISCARD", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a19c1c4ec12de6a4d024da1443a689e4d", null ],
-      [ "SCE_GXM_PASS_TYPE_MASK_UPDATE", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a19186ae169fa2aadb383421d315ad23c", null ],
-      [ "SCE_GXM_PASS_TYPE_DEPTH_REPLACE", "group__SceGxmUser.html#ggaa6f38278b2c0e8c87b2205f0fb6f1214a2c02e4aabb94ac86b4887d7741107a43", null ]
+    [ "SceGxmTextureSwizzle2ModeAlt", "group__SceGxmUser.html#ga6a4dd63ef15ec1af98b9f524d4b54586", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_SD", "group__SceGxmUser.html#gga6a4dd63ef15ec1af98b9f524d4b54586ab933c280cbada2b41eaef90c3c118493", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE2_DS", "group__SceGxmUser.html#gga6a4dd63ef15ec1af98b9f524d4b54586a01af6fbbc7b44d093b74acf63ffbd9e5", null ]
     ] ],
-    [ "SceGxmPolygonMode", "group__SceGxmUser.html#gad1ceb01f565ba9724e9dd46ffa7d188b", [
-      [ "SCE_GXM_POLYGON_MODE_TRIANGLE_FILL", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188bafae88e8e91f3bed66a563c33cb209888", null ],
-      [ "SCE_GXM_POLYGON_MODE_LINE", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188baaa598d52ea17c2f3ea766548d4c70f03", null ],
-      [ "SCE_GXM_POLYGON_MODE_POINT_10UV", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188bae260072ac3f6027212656e617918dfbf", null ],
-      [ "SCE_GXM_POLYGON_MODE_POINT", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188baac560bb943217990b3d9e076d5aae28a", null ],
-      [ "SCE_GXM_POLYGON_MODE_POINT_01UV", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188baa1a00d97d4c0056a6cfd5a0611ca8cb4", null ],
-      [ "SCE_GXM_POLYGON_MODE_TRIANGLE_LINE", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188bad3045b6773fd3b6c421622c13a8e77d0", null ],
-      [ "SCE_GXM_POLYGON_MODE_TRIANGLE_POINT", "group__SceGxmUser.html#ggad1ceb01f565ba9724e9dd46ffa7d188ba9de9644a155522b48017ecec3ed871be", null ]
+    [ "SceGxmTextureSwizzle1Mode", "group__SceGxmUser.html#gaa8632b8a721e5966a0fd560f383d34b2", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_R", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a42414b758019838e9af4c2b72d638500", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_000R", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2ac6dccdeac7294d8cc47f42f24a599567", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_111R", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2ad8e249a8a373d7c95867649955a4fb27", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_RRRR", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a681ebd941168999f9a509940f3f2d85c", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_0RRR", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a3355bb4aa6aa5a38ff81890aa2b908e8", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_1RRR", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a15444901cb62504246d529f5208c642e", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_R000", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2ad4bed4b42a2533cc2c6fa5c6b2d666d7", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE1_R111", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a6949c33eaa81055a56692c70e94b5a10", null ]
     ] ],
-    [ "SceGxmPrecomputedWordCount", "group__SceGxmUser.html#ga48f8d9ed9ea42160f1ebb6ebf22f9f93", [
-      [ "SCE_GXM_PRECOMPUTED_VERTEX_STATE_WORD_COUNT", "group__SceGxmUser.html#gga48f8d9ed9ea42160f1ebb6ebf22f9f93a08202ff6224e54524c80d7519d5795fd", null ],
-      [ "SCE_GXM_PRECOMPUTED_FRAGMENT_STATE_WORD_COUNT", "group__SceGxmUser.html#gga48f8d9ed9ea42160f1ebb6ebf22f9f93a0d8b27fea239479e990d10d4e954f0b4", null ],
-      [ "SCE_GXM_PRECOMPUTED_DRAW_WORD_COUNT", "group__SceGxmUser.html#gga48f8d9ed9ea42160f1ebb6ebf22f9f93a3ae3dd69c6c082d0da1fc362c988d761", null ]
+    [ "SceGxmTextureSwizzleYUV422Mode", "group__SceGxmUser.html#ga4428bc676d7cae45a340b18c25effb03", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YUYV_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a2591b7432747ba8f3f2b879ca38785a9", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YVYU_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03af494257fec6fe20c8f75f129771f63e2", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_UYVY_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03ad61d08046772eb4f21c7aee128072795", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_VYUY_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a9c2bb91665b5a7c5e9a5549b8368bbc6", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YUYV_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a465b43a28adbc38d72fded9de82fd599", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YVYU_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a8236067e7d119003279fd84dadda283a", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_UYVY_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a9fc0b34e7230bb5e74b2df6d36561b4d", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_VYUY_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03acde8e5388337973bdb628895f0ab7fd1", null ]
     ] ],
-    [ "SceGxmPrimitiveType", "group__SceGxmUser.html#ga45eed5031ead5a9fced53fc29f39fe0a", [
-      [ "SCE_GXM_PRIMITIVE_TRIANGLES", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa621df3d6074f089357e469ed3dc8a50c", null ],
-      [ "SCE_GXM_PRIMITIVE_LINES", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa9a3b1dca492064b78b394a3f77016643", null ],
-      [ "SCE_GXM_PRIMITIVE_POINTS", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aaff536623315dcdf35e9c431bbb2a0cc4", null ],
-      [ "SCE_GXM_PRIMITIVE_TRIANGLE_STRIP", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa032d56f73a94127cf6aef1ad85680309", null ],
-      [ "SCE_GXM_PRIMITIVE_TRIANGLE_FAN", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa49d3b84f6ad64b931116692956538673", null ],
-      [ "SCE_GXM_PRIMITIVE_TRIANGLE_EDGES", "group__SceGxmUser.html#gga45eed5031ead5a9fced53fc29f39fe0aa5c2b3b15478580b5aac5758ae02ae30b", null ]
-    ] ],
-    [ "SceGxmProgramType", "group__SceGxmUser.html#ga24f55b5eff0cc8357d4c94c430422d61", [
-      [ "SCE_GXM_VERTEX_PROGRAM", "group__SceGxmUser.html#gga24f55b5eff0cc8357d4c94c430422d61a71c4e5aee62433c5c0c2f664b1b22583", null ],
-      [ "SCE_GXM_FRAGMENT_PROGRAM", "group__SceGxmUser.html#gga24f55b5eff0cc8357d4c94c430422d61af9a99c09f8c75b6726892c8fce2e74af", null ]
-    ] ],
-    [ "SceGxmRegionClipMode", "group__SceGxmUser.html#ga041adff8c4bcdf3570cf74a43ee3b766", [
-      [ "SCE_GXM_REGION_CLIP_NONE", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766ae32590219bb0bb6ab006bde5b389dba6", null ],
-      [ "SCE_GXM_REGION_CLIP_ALL", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766a4bf28f0c44f1fd8df48110c764f2461b", null ],
-      [ "SCE_GXM_REGION_CLIP_OUTSIDE", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766aafe0a3e44513b820939f3a58ea099511", null ],
-      [ "SCE_GXM_REGION_CLIP_INSIDE", "group__SceGxmUser.html#gga041adff8c4bcdf3570cf74a43ee3b766aad19ca4a0ad0cd75168c22381ed7a541", null ]
-    ] ],
-    [ "SceGxmRenderTargetFlags", "group__SceGxmUser.html#gaf061101863a88f8d4606afb141b59959", [
-      [ "SCE_GXM_RENDER_TARGET_CUSTOM_MULTISAMPLE_LOCATIONS", "group__SceGxmUser.html#ggaf061101863a88f8d4606afb141b59959aa55f3e6a59393fc2b3ef56b20878ca45", null ]
-    ] ],
-    [ "SceGxmSceneFlags", "group__SceGxmUser.html#ga0387c01044201a6663d59a4ea071061b", [
-      [ "SCE_GXM_SCENE_FRAGMENT_SET_DEPENDENCY", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061ba7eb7a9281f86be970db32426557643fc", null ],
-      [ "SCE_GXM_SCENE_VERTEX_WAIT_FOR_DEPENDENCY", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061ba3da3ee545d4f0d821d7ee2195587a59a", null ],
-      [ "SCE_GXM_SCENE_FRAGMENT_TRANSFER_SYNC", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061baed8543000878f05e05c556c9e3c944b3", null ],
-      [ "SCE_GXM_SCENE_VERTEX_TRANSFER_SYNC", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061ba98171d5f647f7111a21d9c036f6b5e56", null ]
-    ] ],
-    [ "SceGxmStencilFunc", "group__SceGxmUser.html#ga95a11f56dd9f6bcb9d6e2d1e6cc70118", [
-      [ "SCE_GXM_STENCIL_FUNC_NEVER", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a9f59a47dbabd550b7b34b34fb94cf6db", null ],
-      [ "SCE_GXM_STENCIL_FUNC_LESS", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a2a66ad956f8edcaa2a6ed9499e85a33b", null ],
-      [ "SCE_GXM_STENCIL_FUNC_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118aed3e6cd27fb6552d8983f13ea1acc795", null ],
-      [ "SCE_GXM_STENCIL_FUNC_LESS_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a7756cf1bb969caad1695a946a51ab575", null ],
-      [ "SCE_GXM_STENCIL_FUNC_GREATER", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a1e0cc8237898a278998ba3e768697182", null ],
-      [ "SCE_GXM_STENCIL_FUNC_NOT_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a094175d0f1d264d40110e6b1af847a1f", null ],
-      [ "SCE_GXM_STENCIL_FUNC_GREATER_EQUAL", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118aaa4250248f49ccd1e3f43a00403a3ffa", null ],
-      [ "SCE_GXM_STENCIL_FUNC_ALWAYS", "group__SceGxmUser.html#gga95a11f56dd9f6bcb9d6e2d1e6cc70118a3f74f493a81dae50699b4bc261273a5a", null ]
-    ] ],
-    [ "SceGxmStencilOp", "group__SceGxmUser.html#ga7186a1fede20da82a8f0e6c42802bacb", [
-      [ "SCE_GXM_STENCIL_OP_KEEP", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba7ed48308b6989a0dc0ee3cc81ba55928", null ],
-      [ "SCE_GXM_STENCIL_OP_ZERO", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba508069ced1ed9dee4a40237c39c59cd5", null ],
-      [ "SCE_GXM_STENCIL_OP_REPLACE", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba9d5af6366a7a4d04a8a46891d367fdc6", null ],
-      [ "SCE_GXM_STENCIL_OP_INCR", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbac0346c00c17cc3646bed60520bc50039", null ],
-      [ "SCE_GXM_STENCIL_OP_DECR", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacba0bc55a39c495108d6e10b817aab467dc", null ],
-      [ "SCE_GXM_STENCIL_OP_INVERT", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbaeae40605384f3971729bf2ae85911e2b", null ],
-      [ "SCE_GXM_STENCIL_OP_INCR_WRAP", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbaabea935d8886439f7441770ec368c416", null ],
-      [ "SCE_GXM_STENCIL_OP_DECR_WRAP", "group__SceGxmUser.html#gga7186a1fede20da82a8f0e6c42802bacbacbba0861b399e4302eacc46f6a241ca8", null ]
-    ] ],
-    [ "SceGxmTextureAddrMode", "group__SceGxmUser.html#gab91cde323e8541591d28c3ae9e1c1a1e", [
-      [ "SCE_GXM_TEXTURE_ADDR_REPEAT", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eac298177fca9a1ba36dbe0986da273980", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_MIRROR", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ea17b3e34db2e789980a314291f006cf0a", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_CLAMP", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eae8358bf15ae8726d735012e9088dc7f6", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_MIRROR_CLAMP", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eaa9091ddc52b2b53b18e1472beb934e4e", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_REPEAT_IGNORE_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ea786d22082de3bf0d519a6f1b1875e983", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_CLAMP_FULL_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ead6b28c9b6cb85ea426d3acb2216251a9", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_CLAMP_IGNORE_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ea7596277c37466c57737f7b8909720bd2", null ],
-      [ "SCE_GXM_TEXTURE_ADDR_CLAMP_HALF_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eadc8081fe5636a193ea3509f61e17b829", null ]
+    [ "SceGxmTextureSwizzleYUV420Mode", "group__SceGxmUser.html#ga0db77bf3d6d7e40bbdd79b9cc7ad77d4", [
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YUV_CSC0", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4a4600d742ff39be68ea59fb50c71fb61e", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YVU_CSC0", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4ac690e52a430a4e5aa070c3655f71cbd4", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YUV_CSC1", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4a050ec3887bc983a803ccc809847858b2", null ],
+      [ "SCE_GXM_TEXTURE_SWIZZLE_YVU_CSC1", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4a5c249143714f32ab1904e838aa35020b", null ]
     ] ],
     [ "SceGxmTextureBaseFormat", "group__SceGxmUser.html#ga504a443c7bee91a2765e7554067d53ab", [
       [ "SCE_GXM_TEXTURE_BASE_FORMAT_U8", "group__SceGxmUser.html#gga504a443c7bee91a2765e7554067d53aba2c3e76e641362b470f58f2255c339f2a", null ],
@@ -502,10 +419,6 @@ var gxm_8h =
       [ "SCE_GXM_TEXTURE_BASE_FORMAT_U8U8U8", "group__SceGxmUser.html#gga504a443c7bee91a2765e7554067d53abac5e6c885c900311a69f0f427c9eaf669", null ],
       [ "SCE_GXM_TEXTURE_BASE_FORMAT_S8S8S8", "group__SceGxmUser.html#gga504a443c7bee91a2765e7554067d53aba232be18653c46641cab885bb255c0db9", null ],
       [ "SCE_GXM_TEXTURE_BASE_FORMAT_U2F10F10F10", "group__SceGxmUser.html#gga504a443c7bee91a2765e7554067d53aba3ff8fff803ea5804931e59708c6e063e", null ]
-    ] ],
-    [ "SceGxmTextureFilter", "group__SceGxmUser.html#ga7380bee0231b7907fc1f4b98be060f38", [
-      [ "SCE_GXM_TEXTURE_FILTER_POINT", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a08433cddde0342dbb782840b011fd93e", null ],
-      [ "SCE_GXM_TEXTURE_FILTER_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a5bf2c3469bef2e1bbe44fbfbc3465bf4", null ]
     ] ],
     [ "SceGxmTextureFormat", "group__SceGxmUser.html#ga29791baa70d7bf199afdb50b8e510d42", [
       [ "SCE_GXM_TEXTURE_FORMAT_U8_000R", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42ab9f15fb9844473216cca3cbde3478ca6", null ],
@@ -789,72 +702,6 @@ var gxm_8h =
       [ "SCE_GXM_TEXTURE_FORMAT_PVRTII2BPP", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42aa1a9d363cb7080ed5fcaf386cae3fb3a", null ],
       [ "SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42a533ae3353a211276684b6abc78bc5c83", null ]
     ] ],
-    [ "SceGxmTextureGammaMode", "group__SceGxmUser.html#gaaefc1cfcd24873e4197443fe6a2ccb1b", [
-      [ "SCE_GXM_TEXTURE_GAMMA_NONE", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1baf13013747457eb13dcb3161da852a38e", null ],
-      [ "SCE_GXM_TEXTURE_GAMMA_R", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1ba5da0d9cd6c38a5c539516696a190edc7", null ],
-      [ "SCE_GXM_TEXTURE_GAMMA_GR", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1baf99e951ded50a62c228f03c9fbeea3aa", null ],
-      [ "SCE_GXM_TEXTURE_GAMMA_BGR", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1ba928405730671fe8a6f2e1415022edfe6", null ]
-    ] ],
-    [ "SceGxmTextureMipFilter", "group__SceGxmUser.html#ga6cca700129fdb2780f453baced4f7a35", [
-      [ "SCE_GXM_TEXTURE_MIP_FILTER_DISABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a98011829dfa88a020f43b1eaf5aecca6", null ],
-      [ "SCE_GXM_TEXTURE_MIP_FILTER_ENABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a7b580d2be44fca095b8e86af16586023", null ]
-    ] ],
-    [ "SceGxmTextureNormalizeMode", "group__SceGxmUser.html#gac1b04c3c4759f33789b4ebe6af59f295", [
-      [ "SCE_GXM_TEXTURE_NORMALIZE_DISABLED", "group__SceGxmUser.html#ggac1b04c3c4759f33789b4ebe6af59f295a902128ea1bcb347ca46a3697f8b63748", null ],
-      [ "SCE_GXM_TEXTURE_NORMALIZE_ENABLED", "group__SceGxmUser.html#ggac1b04c3c4759f33789b4ebe6af59f295aee4e02d980951e4e51a56dcc5831a35b", null ]
-    ] ],
-    [ "SceGxmTextureSwizzle1Mode", "group__SceGxmUser.html#gaa8632b8a721e5966a0fd560f383d34b2", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_R", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a42414b758019838e9af4c2b72d638500", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_000R", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2ac6dccdeac7294d8cc47f42f24a599567", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_111R", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2ad8e249a8a373d7c95867649955a4fb27", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_RRRR", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a681ebd941168999f9a509940f3f2d85c", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_0RRR", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a3355bb4aa6aa5a38ff81890aa2b908e8", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_1RRR", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a15444901cb62504246d529f5208c642e", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_R000", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2ad4bed4b42a2533cc2c6fa5c6b2d666d7", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE1_R111", "group__SceGxmUser.html#ggaa8632b8a721e5966a0fd560f383d34b2a6949c33eaa81055a56692c70e94b5a10", null ]
-    ] ],
-    [ "SceGxmTextureSwizzle2Mode", "group__SceGxmUser.html#ga8eae0f112d38b72c9dca413582e8858f", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_GR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa9bde226837ce8ead52152d00d32944e5", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_00GR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa9e24d4d5d2d843cd7787b9a467dce567", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_GRRR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858faa5bb041cfa46ba227d6365d532b565e1", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_RGGG", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa2bdb31cbf26aa0324433ba63c9b529d4", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_GRGR", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa6a320e3221d1291b869f142e77129932", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_00RG", "group__SceGxmUser.html#gga8eae0f112d38b72c9dca413582e8858fa3741c5a477b33708e1859300de0cbc37", null ]
-    ] ],
-    [ "SceGxmTextureSwizzle2ModeAlt", "group__SceGxmUser.html#ga6a4dd63ef15ec1af98b9f524d4b54586", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_SD", "group__SceGxmUser.html#gga6a4dd63ef15ec1af98b9f524d4b54586ab933c280cbada2b41eaef90c3c118493", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE2_DS", "group__SceGxmUser.html#gga6a4dd63ef15ec1af98b9f524d4b54586a01af6fbbc7b44d093b74acf63ffbd9e5", null ]
-    ] ],
-    [ "SceGxmTextureSwizzle3Mode", "group__SceGxmUser.html#ga02c6b0277677fa4b74b27015d94c8e4a", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE3_BGR", "group__SceGxmUser.html#gga02c6b0277677fa4b74b27015d94c8e4aa59212fefc95caebb0a3d7c21b9a015be", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE3_RGB", "group__SceGxmUser.html#gga02c6b0277677fa4b74b27015d94c8e4aa3bad0ca3f8c1304ebb02b8b9732c5d7a", null ]
-    ] ],
-    [ "SceGxmTextureSwizzle4Mode", "group__SceGxmUser.html#gaf939fc011a6ea94573487b950b24b443", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_ABGR", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a486b513ff38bbae5b24ea7c5a7067434", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_ARGB", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a471610276f219df095814ef8f7a39fa4", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_RGBA", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a84d0ed78e91045ca3819252a333cdf25", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_BGRA", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443af926a1c8b7337cb8268e83064a0a772c", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_1BGR", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a20001ac96971ec9502606f19aa56f0bc", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_1RGB", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443aa02867eef1679d83cb21e17d7dd6a4b4", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_RGB1", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a6859823ae66929f263bb6b0dd60f5699", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE4_BGR1", "group__SceGxmUser.html#ggaf939fc011a6ea94573487b950b24b443a953d1b749f568017091a1378a852d2a8", null ]
-    ] ],
-    [ "SceGxmTextureSwizzleYUV420Mode", "group__SceGxmUser.html#ga0db77bf3d6d7e40bbdd79b9cc7ad77d4", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YUV_CSC0", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4a4600d742ff39be68ea59fb50c71fb61e", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YVU_CSC0", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4ac690e52a430a4e5aa070c3655f71cbd4", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YUV_CSC1", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4a050ec3887bc983a803ccc809847858b2", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YVU_CSC1", "group__SceGxmUser.html#gga0db77bf3d6d7e40bbdd79b9cc7ad77d4a5c249143714f32ab1904e838aa35020b", null ]
-    ] ],
-    [ "SceGxmTextureSwizzleYUV422Mode", "group__SceGxmUser.html#ga4428bc676d7cae45a340b18c25effb03", [
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YUYV_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a2591b7432747ba8f3f2b879ca38785a9", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YVYU_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03af494257fec6fe20c8f75f129771f63e2", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_UYVY_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03ad61d08046772eb4f21c7aee128072795", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_VYUY_CSC0", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a9c2bb91665b5a7c5e9a5549b8368bbc6", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YUYV_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a465b43a28adbc38d72fded9de82fd599", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_YVYU_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a8236067e7d119003279fd84dadda283a", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_UYVY_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03a9fc0b34e7230bb5e74b2df6d36561b4d", null ],
-      [ "SCE_GXM_TEXTURE_SWIZZLE_VYUY_CSC1", "group__SceGxmUser.html#gga4428bc676d7cae45a340b18c25effb03acde8e5388337973bdb628895f0ab7fd1", null ]
-    ] ],
     [ "SceGxmTextureType", "group__SceGxmUser.html#ga55e034a873635b04fb1c284c86502d58", [
       [ "SCE_GXM_TEXTURE_SWIZZLED", "group__SceGxmUser.html#gga55e034a873635b04fb1c284c86502d58ac70d46350347ea599d85d4754c66d007", null ],
       [ "SCE_GXM_TEXTURE_CUBE", "group__SceGxmUser.html#gga55e034a873635b04fb1c284c86502d58ac089257e38cb23b7e620f0defc5906d8", null ],
@@ -864,14 +711,140 @@ var gxm_8h =
       [ "SCE_GXM_TEXTURE_LINEAR_STRIDED", "group__SceGxmUser.html#gga55e034a873635b04fb1c284c86502d58ad8067cc077bc12b587bc6b6913344b55", null ],
       [ "SCE_GXM_TEXTURE_CUBE_ARBITRARY", "group__SceGxmUser.html#gga55e034a873635b04fb1c284c86502d58a8b39a88823664bc4d2afaa1816c8e537", null ]
     ] ],
-    [ "SceGxmTransferColorKeyMode", "group__SceGxmUser.html#ga06071930f1d80245000be2dbb30020c1", [
-      [ "SCE_GXM_TRANSFER_COLORKEY_NONE", "group__SceGxmUser.html#gga06071930f1d80245000be2dbb30020c1ae30b0430ae2ccffc41f3967e1b8d10bd", null ],
-      [ "SCE_GXM_TRANSFER_COLORKEY_PASS", "group__SceGxmUser.html#gga06071930f1d80245000be2dbb30020c1a071305e8e29278e9a615f85be1d9814b", null ],
-      [ "SCE_GXM_TRANSFER_COLORKEY_REJECT", "group__SceGxmUser.html#gga06071930f1d80245000be2dbb30020c1afd033bfa4173ecae5ece1856d491e6af", null ]
+    [ "SceGxmTextureFilter", "group__SceGxmUser.html#ga7380bee0231b7907fc1f4b98be060f38", [
+      [ "SCE_GXM_TEXTURE_FILTER_POINT", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a08433cddde0342dbb782840b011fd93e", null ],
+      [ "SCE_GXM_TEXTURE_FILTER_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a5bf2c3469bef2e1bbe44fbfbc3465bf4", null ]
     ] ],
-    [ "SceGxmTransferFlags", "group__SceGxmUser.html#ga01239264c79530b30b8d6696be6b0ee8", [
-      [ "SCE_GXM_TRANSFER_FRAGMENT_SYNC", "group__SceGxmUser.html#gga01239264c79530b30b8d6696be6b0ee8aa941cc09fd9f8c956b4cc7a2d668e81d", null ],
-      [ "SCE_GXM_TRANSFER_VERTEX_SYNC", "group__SceGxmUser.html#gga01239264c79530b30b8d6696be6b0ee8a45dafe2b56f5ee25751d668e07591bf1", null ]
+    [ "SceGxmTextureMipFilter", "group__SceGxmUser.html#ga6cca700129fdb2780f453baced4f7a35", [
+      [ "SCE_GXM_TEXTURE_MIP_FILTER_DISABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a98011829dfa88a020f43b1eaf5aecca6", null ],
+      [ "SCE_GXM_TEXTURE_MIP_FILTER_ENABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a7b580d2be44fca095b8e86af16586023", null ]
+    ] ],
+    [ "SceGxmTextureAddrMode", "group__SceGxmUser.html#gab91cde323e8541591d28c3ae9e1c1a1e", [
+      [ "SCE_GXM_TEXTURE_ADDR_REPEAT", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eac298177fca9a1ba36dbe0986da273980", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_MIRROR", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ea17b3e34db2e789980a314291f006cf0a", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_CLAMP", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eae8358bf15ae8726d735012e9088dc7f6", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_MIRROR_CLAMP", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eaa9091ddc52b2b53b18e1472beb934e4e", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_REPEAT_IGNORE_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ea786d22082de3bf0d519a6f1b1875e983", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_CLAMP_FULL_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ead6b28c9b6cb85ea426d3acb2216251a9", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_CLAMP_IGNORE_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1ea7596277c37466c57737f7b8909720bd2", null ],
+      [ "SCE_GXM_TEXTURE_ADDR_CLAMP_HALF_BORDER", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eadc8081fe5636a193ea3509f61e17b829", null ]
+    ] ],
+    [ "SceGxmTextureGammaMode", "group__SceGxmUser.html#gaaefc1cfcd24873e4197443fe6a2ccb1b", [
+      [ "SCE_GXM_TEXTURE_GAMMA_NONE", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1baf13013747457eb13dcb3161da852a38e", null ],
+      [ "SCE_GXM_TEXTURE_GAMMA_R", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1ba5da0d9cd6c38a5c539516696a190edc7", null ],
+      [ "SCE_GXM_TEXTURE_GAMMA_GR", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1baf99e951ded50a62c228f03c9fbeea3aa", null ],
+      [ "SCE_GXM_TEXTURE_GAMMA_BGR", "group__SceGxmUser.html#ggaaefc1cfcd24873e4197443fe6a2ccb1ba928405730671fe8a6f2e1415022edfe6", null ]
+    ] ],
+    [ "SceGxmTextureNormalizeMode", "group__SceGxmUser.html#gac1b04c3c4759f33789b4ebe6af59f295", [
+      [ "SCE_GXM_TEXTURE_NORMALIZE_DISABLED", "group__SceGxmUser.html#ggac1b04c3c4759f33789b4ebe6af59f295a902128ea1bcb347ca46a3697f8b63748", null ],
+      [ "SCE_GXM_TEXTURE_NORMALIZE_ENABLED", "group__SceGxmUser.html#ggac1b04c3c4759f33789b4ebe6af59f295aee4e02d980951e4e51a56dcc5831a35b", null ]
+    ] ],
+    [ "SceGxmIndexFormat", "group__SceGxmUser.html#ga0a45a9c1d10ec4dc9eca49238f204865", [
+      [ "SCE_GXM_INDEX_FORMAT_U16", "group__SceGxmUser.html#gga0a45a9c1d10ec4dc9eca49238f204865aa1401060b292336aec1d42db85dc2a46", null ],
+      [ "SCE_GXM_INDEX_FORMAT_U32", "group__SceGxmUser.html#gga0a45a9c1d10ec4dc9eca49238f204865addaa2cd9fdb8385e93441068fce79386", null ]
+    ] ],
+    [ "SceGxmIndexSource", "group__SceGxmUser.html#ga75360ff6e16bb5f7cbab46825b9991f6", [
+      [ "SCE_GXM_INDEX_SOURCE_INDEX_16BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6a62ba27a6e96da23cc971c6734ae6c4ba", null ],
+      [ "SCE_GXM_INDEX_SOURCE_INDEX_32BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6a2b8302afdd1feb68efa6d7858cc9fb6b", null ],
+      [ "SCE_GXM_INDEX_SOURCE_INSTANCE_16BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6aa69c62124cecb88e68ca7b6d87e18e37", null ],
+      [ "SCE_GXM_INDEX_SOURCE_INSTANCE_32BIT", "group__SceGxmUser.html#gga75360ff6e16bb5f7cbab46825b9991f6a3f61b36a6c2880dee054b0895a10a785", null ]
+    ] ],
+    [ "SceGxmFragmentProgramMode", "group__SceGxmUser.html#ga9ea3d868bc7f262712ceb000d9b5f2e3", [
+      [ "SCE_GXM_FRAGMENT_PROGRAM_DISABLED", "group__SceGxmUser.html#gga9ea3d868bc7f262712ceb000d9b5f2e3a9705d1cf1cf5042bf50936d0a1f5ffe2", null ],
+      [ "SCE_GXM_FRAGMENT_PROGRAM_ENABLED", "group__SceGxmUser.html#gga9ea3d868bc7f262712ceb000d9b5f2e3ac453539b3a127aadfa297599e8392091", null ]
+    ] ],
+    [ "SceGxmDepthWriteMode", "group__SceGxmUser.html#ga08200cdcfcdb67b50bb4a8a17f7cb6b2", [
+      [ "SCE_GXM_DEPTH_WRITE_DISABLED", "group__SceGxmUser.html#gga08200cdcfcdb67b50bb4a8a17f7cb6b2aa8ee01937cc46208a534630033ec74c1", null ],
+      [ "SCE_GXM_DEPTH_WRITE_ENABLED", "group__SceGxmUser.html#gga08200cdcfcdb67b50bb4a8a17f7cb6b2abea977abecd19acde502587524060906", null ]
+    ] ],
+    [ "SceGxmLineFillLastPixelMode", "group__SceGxmUser.html#ga699c0fb2e3a8c5af42b8d532e3d92e48", [
+      [ "SCE_GXM_LINE_FILL_LAST_PIXEL_DISABLED", "group__SceGxmUser.html#gga699c0fb2e3a8c5af42b8d532e3d92e48a53e43cb1a2fde321b0f7520cb775c09b", null ],
+      [ "SCE_GXM_LINE_FILL_LAST_PIXEL_ENABLED", "group__SceGxmUser.html#gga699c0fb2e3a8c5af42b8d532e3d92e48a495dc49df99726bfbd27a21d009c122f", null ]
+    ] ],
+    [ "SceGxmTwoSidedMode", "group__SceGxmUser.html#ga893946a076b0606aeef8415f7994cc1e", [
+      [ "SCE_GXM_TWO_SIDED_DISABLED", "group__SceGxmUser.html#gga893946a076b0606aeef8415f7994cc1eac45240f5b935437b3219c8d70014b302", null ],
+      [ "SCE_GXM_TWO_SIDED_ENABLED", "group__SceGxmUser.html#gga893946a076b0606aeef8415f7994cc1ea096972e31f9d24a4731556005a37ffd4", null ]
+    ] ],
+    [ "SceGxmWClampMode", "group__SceGxmUser.html#ga64fe0674c2ffe79d29716b48d4d18c7e", [
+      [ "SCE_GXM_WCLAMP_MODE_DISABLED", "group__SceGxmUser.html#gga64fe0674c2ffe79d29716b48d4d18c7ea8edccf01730a4eb2ac60b6760d0cb919", null ],
+      [ "SCE_GXM_WCLAMP_MODE_ENABLED", "group__SceGxmUser.html#gga64fe0674c2ffe79d29716b48d4d18c7ea80b5063ff8edb76897ee2e78db597a29", null ]
+    ] ],
+    [ "SceGxmViewportMode", "group__SceGxmUser.html#gaaa0c7d569e32e7e4a27a0c2f06508e94", [
+      [ "SCE_GXM_VIEWPORT_DISABLED", "group__SceGxmUser.html#ggaaa0c7d569e32e7e4a27a0c2f06508e94a90a316902bcc93ee3164a2c8f56768b1", null ],
+      [ "SCE_GXM_VIEWPORT_ENABLED", "group__SceGxmUser.html#ggaaa0c7d569e32e7e4a27a0c2f06508e94afdeabb991fa9d518c46312dac6caba9f", null ]
+    ] ],
+    [ "SceGxmWBufferMode", "group__SceGxmUser.html#ga73123c0fb478c6027e95c4ec1c204572", [
+      [ "SCE_GXM_WBUFFER_DISABLED", "group__SceGxmUser.html#gga73123c0fb478c6027e95c4ec1c204572a5c4f50947515470f828a4661484a339a", null ],
+      [ "SCE_GXM_WBUFFER_ENABLED", "group__SceGxmUser.html#gga73123c0fb478c6027e95c4ec1c204572a4875b8c9cc7c8d1c1171260508b6d1db", null ]
+    ] ],
+    [ "SceGxmDepthStencilForceLoadMode", "group__SceGxmUser.html#ga9a701930a07aec5b5d771772865c3ecf", [
+      [ "SCE_GXM_DEPTH_STENCIL_FORCE_LOAD_DISABLED", "group__SceGxmUser.html#gga9a701930a07aec5b5d771772865c3ecfa88ccacec3e10905e7710cc5c3059971b", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORCE_LOAD_ENABLED", "group__SceGxmUser.html#gga9a701930a07aec5b5d771772865c3ecfaaaf3e2fa5998254fdfafbb811f431be2", null ]
+    ] ],
+    [ "SceGxmDepthStencilForceStoreMode", "group__SceGxmUser.html#ga93473a4ea04de8cfe322e1752a732c57", [
+      [ "SCE_GXM_DEPTH_STENCIL_FORCE_STORE_DISABLED", "group__SceGxmUser.html#gga93473a4ea04de8cfe322e1752a732c57a955916114a4990a3585d17056322b312", null ],
+      [ "SCE_GXM_DEPTH_STENCIL_FORCE_STORE_ENABLED", "group__SceGxmUser.html#gga93473a4ea04de8cfe322e1752a732c57aea99080d298481bf1e79a104c6005101", null ]
+    ] ],
+    [ "SceGxmSceneFlags", "group__SceGxmUser.html#ga0387c01044201a6663d59a4ea071061b", [
+      [ "SCE_GXM_SCENE_FRAGMENT_SET_DEPENDENCY", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061ba7eb7a9281f86be970db32426557643fc", null ],
+      [ "SCE_GXM_SCENE_VERTEX_WAIT_FOR_DEPENDENCY", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061ba3da3ee545d4f0d821d7ee2195587a59a", null ],
+      [ "SCE_GXM_SCENE_FRAGMENT_TRANSFER_SYNC", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061baed8543000878f05e05c556c9e3c944b3", null ],
+      [ "SCE_GXM_SCENE_VERTEX_TRANSFER_SYNC", "group__SceGxmUser.html#gga0387c01044201a6663d59a4ea071061ba98171d5f647f7111a21d9c036f6b5e56", null ]
+    ] ],
+    [ "SceGxmMidSceneFlags", "group__SceGxmUser.html#gaee5a987447229376ca1fbc0201c6edf1", [
+      [ "SCE_GXM_MIDSCENE_PRESERVE_DEFAULT_UNIFORM_BUFFERS", "group__SceGxmUser.html#ggaee5a987447229376ca1fbc0201c6edf1a84691a2603480bc81f0040560196b538", null ]
+    ] ],
+    [ "SceGxmColorSurfaceScaleMode", "group__SceGxmUser.html#ga346a9d22aa74a129e7e3786764f62d9c", [
+      [ "SCE_GXM_COLOR_SURFACE_SCALE_NONE", "group__SceGxmUser.html#gga346a9d22aa74a129e7e3786764f62d9ca4c85c570fc2cf6fdefe03d51f37e9601", null ],
+      [ "SCE_GXM_COLOR_SURFACE_SCALE_MSAA_DOWNSCALE", "group__SceGxmUser.html#gga346a9d22aa74a129e7e3786764f62d9ca7be5514570cb4c9049fe952f92977191", null ]
+    ] ],
+    [ "SceGxmOutputRegisterSize", "group__SceGxmUser.html#ga462d27029ba1469c495d5848f943d8bc", [
+      [ "SCE_GXM_OUTPUT_REGISTER_SIZE_32BIT", "group__SceGxmUser.html#gga462d27029ba1469c495d5848f943d8bcac87cc50f31a7d9f04e40ebeceaf104d7", null ],
+      [ "SCE_GXM_OUTPUT_REGISTER_SIZE_64BIT", "group__SceGxmUser.html#gga462d27029ba1469c495d5848f943d8bca952b0935c773ebd050c54c9809103604", null ]
+    ] ],
+    [ "SceGxmVisibilityTestMode", "group__SceGxmUser.html#ga67221e744f92d3f00148c2a7ffc4f055", [
+      [ "SCE_GXM_VISIBILITY_TEST_DISABLED", "group__SceGxmUser.html#gga67221e744f92d3f00148c2a7ffc4f055a86ef6d1c138d2c257c83239a6d7360d5", null ],
+      [ "SCE_GXM_VISIBILITY_TEST_ENABLED", "group__SceGxmUser.html#gga67221e744f92d3f00148c2a7ffc4f055aabecc2933906f67dcf20e7bb0a1f177c", null ]
+    ] ],
+    [ "SceGxmVisibilityTestOp", "group__SceGxmUser.html#ga9709f42bd4e011add6ecd5345895bd56", [
+      [ "SCE_GXM_VISIBILITY_TEST_OP_INCREMENT", "group__SceGxmUser.html#gga9709f42bd4e011add6ecd5345895bd56a43aa882bd1f98b860e7d56b61716e6d8", null ],
+      [ "SCE_GXM_VISIBILITY_TEST_OP_SET", "group__SceGxmUser.html#gga9709f42bd4e011add6ecd5345895bd56a69145b458cfbfd588b73c351f725fc53", null ]
+    ] ],
+    [ "SceGxmYuvProfile", "group__SceGxmUser.html#ga117aa5399834766a96f2fa6613ba14aa", [
+      [ "SCE_GXM_YUV_PROFILE_BT601_STANDARD", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaa9338ff01b4a73ed33b4c35a405215aab", null ],
+      [ "SCE_GXM_YUV_PROFILE_BT709_STANDARD", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaa75f4e8198d2d9fd457bef5294ef70dfe", null ],
+      [ "SCE_GXM_YUV_PROFILE_BT601_FULL_RANGE", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaac21980f66c2d720659fdbb96282614d8", null ],
+      [ "SCE_GXM_YUV_PROFILE_BT709_FULL_RANGE", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaa311b5ab7081a0d5e452d0834f8d473c2", null ]
+    ] ],
+    [ "SceGxmBlendFunc", "group__SceGxmUser.html#ga2df47889c265eea6d9998099f4e9259a", [
+      [ "SCE_GXM_BLEND_FUNC_NONE", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa2a8605fd916f1207a27537ee7ae6a934", null ],
+      [ "SCE_GXM_BLEND_FUNC_ADD", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aad0356e54742eac00194647720dae99b1", null ],
+      [ "SCE_GXM_BLEND_FUNC_SUBTRACT", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aad33f92af4b8038bed04976100fe71432", null ],
+      [ "SCE_GXM_BLEND_FUNC_REVERSE_SUBTRACT", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa1ab32c6425798cc9bc73a08d2181e9a5", null ],
+      [ "SCE_GXM_BLEND_FUNC_MIN", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa44c25b3eef87e5321c7c6bfeb6b0c17a", null ],
+      [ "SCE_GXM_BLEND_FUNC_MAX", "group__SceGxmUser.html#gga2df47889c265eea6d9998099f4e9259aa01d65e7cf44357b2e9e2db461a53d134", null ]
+    ] ],
+    [ "SceGxmBlendFactor", "group__SceGxmUser.html#ga313f1a9f04905961e3fa5bd9f80ab9a6", [
+      [ "SCE_GXM_BLEND_FACTOR_ZERO", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a5f50bdbe00e65de48fa29432104f0941", null ],
+      [ "SCE_GXM_BLEND_FACTOR_ONE", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6aea8bfd5a7d7a02ce4dc9a8b3c0a7c331", null ],
+      [ "SCE_GXM_BLEND_FACTOR_SRC_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a0fe81340dd4e805bb71b79cf33934ea2", null ],
+      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_SRC_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a1e9977733adcee6fea08c8a0393bd853", null ],
+      [ "SCE_GXM_BLEND_FACTOR_SRC_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6aa9f7711727d170d46bc31ab498274680", null ],
+      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6af81c3d182538069e91f9c4e8b2b2e403", null ],
+      [ "SCE_GXM_BLEND_FACTOR_DST_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a7d5f22804bec05c1e26d0da0f7d27e57", null ],
+      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_DST_COLOR", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a52bc1c96c0b3907ca01725b42404e613", null ],
+      [ "SCE_GXM_BLEND_FACTOR_DST_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6aae9d39a771936deb2b68842d5013949d", null ],
+      [ "SCE_GXM_BLEND_FACTOR_ONE_MINUS_DST_ALPHA", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6ab8761990e49f477abf6060001ae3ca9d", null ],
+      [ "SCE_GXM_BLEND_FACTOR_SRC_ALPHA_SATURATE", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6afe1e2c076c77d695560cdb8bb05593b6", null ],
+      [ "SCE_GXM_BLEND_FACTOR_DST_ALPHA_SATURATE", "group__SceGxmUser.html#gga313f1a9f04905961e3fa5bd9f80ab9a6a27bf2d7795a303efb8d91a7c0cbfc11c", null ]
+    ] ],
+    [ "SceGxmColorMask", "group__SceGxmUser.html#ga4179bc48a85ea0dc5cb860a117d9737c", [
+      [ "SCE_GXM_COLOR_MASK_NONE", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca570dc288236d31f03db9d1a0dbc40701", null ],
+      [ "SCE_GXM_COLOR_MASK_A", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca559660ae53e30a613a4e893212013097", null ],
+      [ "SCE_GXM_COLOR_MASK_R", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737caa7e5b7f83d89713fbb2d8c27e799cd67", null ],
+      [ "SCE_GXM_COLOR_MASK_G", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca05622af95dec7102173c8ffe8c14236c", null ],
+      [ "SCE_GXM_COLOR_MASK_B", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737cadd074714da75ebf95290349475c8523e", null ],
+      [ "SCE_GXM_COLOR_MASK_ALL", "group__SceGxmUser.html#gga4179bc48a85ea0dc5cb860a117d9737ca24c290a7b46ed3b0a1b08fa34ea6b874", null ]
     ] ],
     [ "SceGxmTransferFormat", "group__SceGxmUser.html#ga3a7ded9fc62e889b1b86d26f97a0188d", [
       [ "SCE_GXM_TRANSFER_FORMAT_U8_R", "group__SceGxmUser.html#gga3a7ded9fc62e889b1b86d26f97a0188dae096f4287c1967335d07a8b3e134bbf7", null ],
@@ -891,256 +864,283 @@ var gxm_8h =
       [ "SCE_GXM_TRANSFER_FORMAT_RAW64", "group__SceGxmUser.html#gga3a7ded9fc62e889b1b86d26f97a0188da59ac631eeaa1dbd9ca3c84b8873c8f27", null ],
       [ "SCE_GXM_TRANSFER_FORMAT_RAW128", "group__SceGxmUser.html#gga3a7ded9fc62e889b1b86d26f97a0188da8bd6be5e5bc5512180bde0f91c3f186d", null ]
     ] ],
+    [ "SceGxmTransferFlags", "group__SceGxmUser.html#ga01239264c79530b30b8d6696be6b0ee8", [
+      [ "SCE_GXM_TRANSFER_FRAGMENT_SYNC", "group__SceGxmUser.html#gga01239264c79530b30b8d6696be6b0ee8aa941cc09fd9f8c956b4cc7a2d668e81d", null ],
+      [ "SCE_GXM_TRANSFER_VERTEX_SYNC", "group__SceGxmUser.html#gga01239264c79530b30b8d6696be6b0ee8a45dafe2b56f5ee25751d668e07591bf1", null ]
+    ] ],
+    [ "SceGxmTransferColorKeyMode", "group__SceGxmUser.html#ga06071930f1d80245000be2dbb30020c1", [
+      [ "SCE_GXM_TRANSFER_COLORKEY_NONE", "group__SceGxmUser.html#gga06071930f1d80245000be2dbb30020c1ae30b0430ae2ccffc41f3967e1b8d10bd", null ],
+      [ "SCE_GXM_TRANSFER_COLORKEY_PASS", "group__SceGxmUser.html#gga06071930f1d80245000be2dbb30020c1a071305e8e29278e9a615f85be1d9814b", null ],
+      [ "SCE_GXM_TRANSFER_COLORKEY_REJECT", "group__SceGxmUser.html#gga06071930f1d80245000be2dbb30020c1afd033bfa4173ecae5ece1856d491e6af", null ]
+    ] ],
     [ "SceGxmTransferType", "group__SceGxmUser.html#ga07ad89c3a909b74f5094d8cfc898eb3f", [
       [ "SCE_GXM_TRANSFER_LINEAR", "group__SceGxmUser.html#gga07ad89c3a909b74f5094d8cfc898eb3fa0f64ca641e7dbbc919f449e6cd4ad6c7", null ],
       [ "SCE_GXM_TRANSFER_TILED", "group__SceGxmUser.html#gga07ad89c3a909b74f5094d8cfc898eb3fa1f055a06f6cf991a3e70e69922323f7e", null ],
       [ "SCE_GXM_TRANSFER_SWIZZLED", "group__SceGxmUser.html#gga07ad89c3a909b74f5094d8cfc898eb3fa8f0c38a5255c3dec03b03020ff2d20a0", null ]
     ] ],
-    [ "SceGxmTwoSidedMode", "group__SceGxmUser.html#ga893946a076b0606aeef8415f7994cc1e", [
-      [ "SCE_GXM_TWO_SIDED_DISABLED", "group__SceGxmUser.html#gga893946a076b0606aeef8415f7994cc1eac45240f5b935437b3219c8d70014b302", null ],
-      [ "SCE_GXM_TWO_SIDED_ENABLED", "group__SceGxmUser.html#gga893946a076b0606aeef8415f7994cc1ea096972e31f9d24a4731556005a37ffd4", null ]
+    [ "SceGxmPrecomputedWordCount", "group__SceGxmUser.html#ga48f8d9ed9ea42160f1ebb6ebf22f9f93", [
+      [ "SCE_GXM_PRECOMPUTED_VERTEX_STATE_WORD_COUNT", "group__SceGxmUser.html#gga48f8d9ed9ea42160f1ebb6ebf22f9f93a08202ff6224e54524c80d7519d5795fd", null ],
+      [ "SCE_GXM_PRECOMPUTED_FRAGMENT_STATE_WORD_COUNT", "group__SceGxmUser.html#gga48f8d9ed9ea42160f1ebb6ebf22f9f93a0d8b27fea239479e990d10d4e954f0b4", null ],
+      [ "SCE_GXM_PRECOMPUTED_DRAW_WORD_COUNT", "group__SceGxmUser.html#gga48f8d9ed9ea42160f1ebb6ebf22f9f93a3ae3dd69c6c082d0da1fc362c988d761", null ]
     ] ],
-    [ "SceGxmViewportMode", "group__SceGxmUser.html#gaaa0c7d569e32e7e4a27a0c2f06508e94", [
-      [ "SCE_GXM_VIEWPORT_DISABLED", "group__SceGxmUser.html#ggaaa0c7d569e32e7e4a27a0c2f06508e94a90a316902bcc93ee3164a2c8f56768b1", null ],
-      [ "SCE_GXM_VIEWPORT_ENABLED", "group__SceGxmUser.html#ggaaa0c7d569e32e7e4a27a0c2f06508e94afdeabb991fa9d518c46312dac6caba9f", null ]
+    [ "SceGxmProgramType", "group__SceGxmUser.html#ga24f55b5eff0cc8357d4c94c430422d61", [
+      [ "SCE_GXM_VERTEX_PROGRAM", "group__SceGxmUser.html#gga24f55b5eff0cc8357d4c94c430422d61a71c4e5aee62433c5c0c2f664b1b22583", null ],
+      [ "SCE_GXM_FRAGMENT_PROGRAM", "group__SceGxmUser.html#gga24f55b5eff0cc8357d4c94c430422d61af9a99c09f8c75b6726892c8fce2e74af", null ]
     ] ],
-    [ "SceGxmVisibilityTestMode", "group__SceGxmUser.html#ga67221e744f92d3f00148c2a7ffc4f055", [
-      [ "SCE_GXM_VISIBILITY_TEST_DISABLED", "group__SceGxmUser.html#gga67221e744f92d3f00148c2a7ffc4f055a86ef6d1c138d2c257c83239a6d7360d5", null ],
-      [ "SCE_GXM_VISIBILITY_TEST_ENABLED", "group__SceGxmUser.html#gga67221e744f92d3f00148c2a7ffc4f055aabecc2933906f67dcf20e7bb0a1f177c", null ]
+    [ "SceGxmParameterCategory", "group__SceGxmUser.html#gaabee1741cd74c3f67271560f08e21e89", [
+      [ "SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a6153facbf6b99c2ed0078bc6eb4e1ac4", null ],
+      [ "SCE_GXM_PARAMETER_CATEGORY_UNIFORM", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a88b3531ee29dae122b13099bfcca4aa5", null ],
+      [ "SCE_GXM_PARAMETER_CATEGORY_SAMPLER", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a5c0ce645fee8f396e36459314428fe75", null ],
+      [ "SCE_GXM_PARAMETER_CATEGORY_AUXILIARY_SURFACE", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a7b96c6d7105a7c7b0fcef29dded942f9", null ],
+      [ "SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER", "group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89ab4fa28962dd7ff0b3f0f3519944928e5", null ]
     ] ],
-    [ "SceGxmVisibilityTestOp", "group__SceGxmUser.html#ga9709f42bd4e011add6ecd5345895bd56", [
-      [ "SCE_GXM_VISIBILITY_TEST_OP_INCREMENT", "group__SceGxmUser.html#gga9709f42bd4e011add6ecd5345895bd56a43aa882bd1f98b860e7d56b61716e6d8", null ],
-      [ "SCE_GXM_VISIBILITY_TEST_OP_SET", "group__SceGxmUser.html#gga9709f42bd4e011add6ecd5345895bd56a69145b458cfbfd588b73c351f725fc53", null ]
+    [ "SceGxmParameterType", "group__SceGxmUser.html#ga8b82ebb229b9a482d50aa79b2a3bf43b", [
+      [ "SCE_GXM_PARAMETER_TYPE_F32", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba1fdd8d992e95ce229a09004408af7ae3", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_F16", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba45dc12dbba3e7397618e3eef1c5bbd69", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_C10", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bad5bf8c84b455dda816b3ff6cf4b4c388", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_U32", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bac5d9e782e84bd4715ca642e44478edf8", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_S32", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba22278837459827f56c46dfc8dd1e4352", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_U16", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bab9c9ba1de15b9616a84143f5a4c101b9", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_S16", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43bacc3e88e565449967baa758f41b033ddb", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_U8", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba3ac1c4bbea756100be7aa65a7ad1a76c", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_S8", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba9aee385e2599da6c3c57850307c12793", null ],
+      [ "SCE_GXM_PARAMETER_TYPE_AGGREGATE", "group__SceGxmUser.html#gga8b82ebb229b9a482d50aa79b2a3bf43ba5a631cce3d7d454b22a011a339b69b4e", null ]
     ] ],
-    [ "SceGxmWBufferMode", "group__SceGxmUser.html#ga73123c0fb478c6027e95c4ec1c204572", [
-      [ "SCE_GXM_WBUFFER_DISABLED", "group__SceGxmUser.html#gga73123c0fb478c6027e95c4ec1c204572a5c4f50947515470f828a4661484a339a", null ],
-      [ "SCE_GXM_WBUFFER_ENABLED", "group__SceGxmUser.html#gga73123c0fb478c6027e95c4ec1c204572a4875b8c9cc7c8d1c1171260508b6d1db", null ]
+    [ "SceGxmParameterSemantic", "group__SceGxmUser.html#ga6e5c2acc9cc318d8328890ae3da1ca51", [
+      [ "SCE_GXM_PARAMETER_SEMANTIC_NONE", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a13bfff04f45a8c555ed057267bd16321", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_ATTR", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a69f43fba6a0d1ff3598694c9020db3e0", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_BCOL", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a336b9e6d31e678d63ba011af23fa8b33", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_BINORMAL", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a43b3776d44d9fdc83fb69b042f5ae266", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_BLENDINDICES", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a001e4c98637d149076eb3c7cee39d86e", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_BLENDWEIGHT", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a73981b2097101aa43e2e99b1c3b170a0", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_COLOR", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51acb53415e7f2e16a47d1e2ae9d7732d18", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_DIFFUSE", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a0282180c49dee4a0d3ff00b59f9503b0", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_FOGCOORD", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a292eb28c3e9af7ec2f67eb08b34332ab", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_NORMAL", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a2802d1dc55be151a249012d38200e7e3", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_POINTSIZE", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51af2783b8c943cca8ea07a9ad838553c16", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_POSITION", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a121f3cef41954013d210162faaf28bb2", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_SPECULAR", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a9661793926ecf967e7d4a014dd7e1310", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_TANGENT", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a807d00259a1a72559a06a9d60065640a", null ],
+      [ "SCE_GXM_PARAMETER_SEMANTIC_TEXCOORD", "group__SceGxmUser.html#gga6e5c2acc9cc318d8328890ae3da1ca51a12156fc2ca7b1d997afad41cda058283", null ]
     ] ],
-    [ "SceGxmWClampMode", "group__SceGxmUser.html#ga64fe0674c2ffe79d29716b48d4d18c7e", [
-      [ "SCE_GXM_WCLAMP_MODE_DISABLED", "group__SceGxmUser.html#gga64fe0674c2ffe79d29716b48d4d18c7ea8edccf01730a4eb2ac60b6760d0cb919", null ],
-      [ "SCE_GXM_WCLAMP_MODE_ENABLED", "group__SceGxmUser.html#gga64fe0674c2ffe79d29716b48d4d18c7ea80b5063ff8edb76897ee2e78db597a29", null ]
+    [ "SceGxmRenderTargetFlags", "group__SceGxmUser.html#gaf061101863a88f8d4606afb141b59959", [
+      [ "SCE_GXM_RENDER_TARGET_CUSTOM_MULTISAMPLE_LOCATIONS", "group__SceGxmUser.html#ggaf061101863a88f8d4606afb141b59959aa55f3e6a59393fc2b3ef56b20878ca45", null ]
     ] ],
-    [ "SceGxmYuvProfile", "group__SceGxmUser.html#ga117aa5399834766a96f2fa6613ba14aa", [
-      [ "SCE_GXM_YUV_PROFILE_BT601_STANDARD", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaa9338ff01b4a73ed33b4c35a405215aab", null ],
-      [ "SCE_GXM_YUV_PROFILE_BT709_STANDARD", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaa75f4e8198d2d9fd457bef5294ef70dfe", null ],
-      [ "SCE_GXM_YUV_PROFILE_BT601_FULL_RANGE", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaac21980f66c2d720659fdbb96282614d8", null ],
-      [ "SCE_GXM_YUV_PROFILE_BT709_FULL_RANGE", "group__SceGxmUser.html#gga117aa5399834766a96f2fa6613ba14aaa311b5ab7081a0d5e452d0834f8d473c2", null ]
-    ] ],
+    [ "sceGxmInitialize", "group__SceGxmUser.html#gaeacf3071aedd204d45adc666312acc68", null ],
+    [ "sceGxmVshInitialize", "group__SceGxmUser.html#gab5134f5d458a35a97adedc8092b2d349", null ],
+    [ "sceGxmTerminate", "group__SceGxmUser.html#ga30a8e8fd2937cef86b1003cd0e6c093a", null ],
+    [ "sceGxmGetNotificationRegion", "group__SceGxmUser.html#ga5028c8d6af196fd944d134143906bea8", null ],
+    [ "sceGxmNotificationWait", "group__SceGxmUser.html#gafe86c0337a4ed6cbcee6dce905c7dd6f", null ],
+    [ "sceGxmMapMemory", "group__SceGxmUser.html#gafed534eed12e5b220976d364e824607e", null ],
+    [ "sceGxmUnmapMemory", "group__SceGxmUser.html#gad4a57723e7adcf155cfe5b3a348a413b", null ],
+    [ "sceGxmMapVertexUsseMemory", "group__SceGxmUser.html#gaf1fc4448f8b3bc9c20a19a4b6fe2aac1", null ],
+    [ "sceGxmUnmapVertexUsseMemory", "group__SceGxmUser.html#gab51f3e125420cb1da0f9bc10cc6d1b56", null ],
+    [ "sceGxmMapFragmentUsseMemory", "group__SceGxmUser.html#ga0eb40ae81fea763a8768f66f6fc919aa", null ],
+    [ "sceGxmUnmapFragmentUsseMemory", "group__SceGxmUser.html#gaa0430cd12457a6b5eff16d3e0bd1b425", null ],
+    [ "sceGxmDisplayQueueAddEntry", "group__SceGxmUser.html#ga3830da75c4491938c4d0b4e106373369", null ],
+    [ "sceGxmDisplayQueueFinish", "group__SceGxmUser.html#ga63d6a7461f0ba0a38de56973f5dd8932", null ],
+    [ "sceGxmSyncObjectCreate", "group__SceGxmUser.html#gaca62eaf755090e4a747591745ee9ced8", null ],
+    [ "sceGxmSyncObjectDestroy", "group__SceGxmUser.html#gabd9d75299067dbca19cc9c6071161d10", null ],
+    [ "sceGxmCreateContext", "group__SceGxmUser.html#ga7e4a337e1c774bd6443ca3a76256a5f6", null ],
+    [ "sceGxmDestroyContext", "group__SceGxmUser.html#gaf598f63c999b338b1332cf82435f966a", null ],
+    [ "sceGxmSetValidationEnable", "group__SceGxmUser.html#gafa4c86d55e4d2933d29a3a145b5a3991", null ],
+    [ "sceGxmSetVertexProgram", "group__SceGxmUser.html#gae9bdd3d27df275aea31873d29f013d18", null ],
+    [ "sceGxmSetFragmentProgram", "group__SceGxmUser.html#ga89af83cb3ba92c119d551f64c9e8c4fd", null ],
+    [ "sceGxmReserveVertexDefaultUniformBuffer", "group__SceGxmUser.html#gaa1ed549d6fe95b70c08a2ee4d9607534", null ],
+    [ "sceGxmReserveFragmentDefaultUniformBuffer", "group__SceGxmUser.html#gadf7af855f6b525fa5ad3c306f5efe0f0", null ],
+    [ "sceGxmSetVertexStream", "group__SceGxmUser.html#ga1ff8fe66106a8a0b24fac727c116d539", null ],
+    [ "sceGxmSetVertexTexture", "group__SceGxmUser.html#ga12d646576ae932160113746a5d57d4d0", null ],
+    [ "sceGxmSetFragmentTexture", "group__SceGxmUser.html#ga3cdc32317b080518e958aef701622be6", null ],
+    [ "sceGxmSetVertexUniformBuffer", "group__SceGxmUser.html#ga2cc4a6ceb41fae78c83f25114af72197", null ],
+    [ "sceGxmSetFragmentUniformBuffer", "group__SceGxmUser.html#ga04bd81287fca5c5d5c5a72d92814500c", null ],
+    [ "sceGxmSetAuxiliarySurface", "group__SceGxmUser.html#ga9028298ccadb00d5d0971acdc64ed70d", null ],
+    [ "sceGxmSetPrecomputedFragmentState", "group__SceGxmUser.html#ga290092739bcc1973b8c7ab7d1d6468f7", null ],
+    [ "sceGxmSetPrecomputedVertexState", "group__SceGxmUser.html#ga2a39ae4acf50fc4957a58d535d82d806", null ],
+    [ "sceGxmDrawPrecomputed", "group__SceGxmUser.html#ga05e2217a1a472cbc6f512ebed70ba887", null ],
+    [ "sceGxmDraw", "group__SceGxmUser.html#ga3ee281730c9eb361e73009cd182e7b70", null ],
+    [ "sceGxmDrawInstanced", "group__SceGxmUser.html#ga7a8052bde0031b9a06ab82d1a3e7ddee", null ],
+    [ "sceGxmSetVisibilityBuffer", "group__SceGxmUser.html#ga65de92a3080ddbd5a39e8912184b430b", null ],
     [ "sceGxmBeginScene", "group__SceGxmUser.html#ga7fe719294bcc85c7f408753c853009a9", null ],
-    [ "sceGxmColorSurfaceGetClip", "group__SceGxmUser.html#ga6e42c01a272c831f3aa7df2c770924b1", null ],
-    [ "sceGxmColorSurfaceGetData", "group__SceGxmUser.html#gaaa55bc4b773d1c02ef6cab5947a2fc4d", null ],
-    [ "sceGxmColorSurfaceGetDitherMode", "group__SceGxmUser.html#gaa2f645a11ffd116bba95c0ec5b38caf3", null ],
-    [ "sceGxmColorSurfaceGetFormat", "group__SceGxmUser.html#gaa6e910bcd475bac0bdbffa5aa52b821c", null ],
-    [ "sceGxmColorSurfaceGetGammaMode", "group__SceGxmUser.html#gaaa0df4cdd4498a3800eb91fc6f46cb78", null ],
-    [ "sceGxmColorSurfaceGetScaleMode", "group__SceGxmUser.html#gae179c86e27a40b8d493762cf38b66ab2", null ],
-    [ "sceGxmColorSurfaceGetStrideInPixels", "group__SceGxmUser.html#gaa5d7677368c7b7fb707cc98ba5425f11", null ],
-    [ "sceGxmColorSurfaceGetType", "group__SceGxmUser.html#ga796ca133e397729f6543aa33cd80bf73", null ],
+    [ "sceGxmMidSceneFlush", "group__SceGxmUser.html#ga80e2c1ff3f25c0760a05eb37e7737c59", null ],
+    [ "sceGxmEndScene", "group__SceGxmUser.html#gacbb98c8712e03470cd2437b2c20159ec", null ],
+    [ "sceGxmSetFrontDepthFunc", "group__SceGxmUser.html#ga929b1bba59b15037a0273638432ce42c", null ],
+    [ "sceGxmSetBackDepthFunc", "group__SceGxmUser.html#ga1d8614e7bb96487c5a8d8bc5eee27da1", null ],
+    [ "sceGxmSetFrontFragmentProgramEnable", "group__SceGxmUser.html#ga044d4f3f7c1c3d87bcd787246f9a5570", null ],
+    [ "sceGxmSetBackFragmentProgramEnable", "group__SceGxmUser.html#ga05ce1be1d8ccc1637699e9ee9f99b312", null ],
+    [ "sceGxmSetFrontDepthWriteEnable", "group__SceGxmUser.html#gac750516cb502389d09fe0979fa12e576", null ],
+    [ "sceGxmSetBackDepthWriteEnable", "group__SceGxmUser.html#gacb6909245f60e84f9c0518a37e26a447", null ],
+    [ "sceGxmSetFrontLineFillLastPixelEnable", "group__SceGxmUser.html#ga02dd580e3ccd0b16e9bf460a7bd8bfee", null ],
+    [ "sceGxmSetBackLineFillLastPixelEnable", "group__SceGxmUser.html#gaf655d4eebb9e3bbffa3292fd7d4b29f7", null ],
+    [ "sceGxmSetFrontStencilRef", "group__SceGxmUser.html#gae95853472be6a7c909d9ba864f62d467", null ],
+    [ "sceGxmSetBackStencilRef", "group__SceGxmUser.html#gaa8038550f930713282b907fc4baaa6e8", null ],
+    [ "sceGxmSetFrontPointLineWidth", "group__SceGxmUser.html#ga4dba222b8b0d567ac54fd56a7d6c4094", null ],
+    [ "sceGxmSetBackPointLineWidth", "group__SceGxmUser.html#ga94cc0de6b8942795afb1c3f582ca4690", null ],
+    [ "sceGxmSetFrontPolygonMode", "group__SceGxmUser.html#ga4c7aeeb370f50a79307fd5c169792d1f", null ],
+    [ "sceGxmSetBackPolygonMode", "group__SceGxmUser.html#gae72e50da69c5a1a0590d3f9e2b0d1a49", null ],
+    [ "sceGxmSetFrontStencilFunc", "group__SceGxmUser.html#ga1fb3933ad5d2ef4ebb1be6fc9420dc6b", null ],
+    [ "sceGxmSetBackStencilFunc", "group__SceGxmUser.html#gab71b8141ded01734bc61d9ff60dfd56c", null ],
+    [ "sceGxmSetFrontDepthBias", "group__SceGxmUser.html#gabd436d0c197f72a75081d7c84fe2c418", null ],
+    [ "sceGxmSetBackDepthBias", "group__SceGxmUser.html#gacf37af0f266af92caed91d31ad007334", null ],
+    [ "sceGxmSetTwoSidedEnable", "group__SceGxmUser.html#ga5323712ca77d1fbcd7aaf345841df24f", null ],
+    [ "sceGxmSetViewport", "group__SceGxmUser.html#ga65cb145091c8790d0ceaa16bcc7bfcc0", null ],
+    [ "sceGxmSetWClampValue", "group__SceGxmUser.html#ga8a093a6ab76a39bdfbc6db3a0628d3a5", null ],
+    [ "sceGxmSetWClampEnable", "group__SceGxmUser.html#ga7788d5ab86524f4e53b3dbb6547f9f59", null ],
+    [ "sceGxmSetRegionClip", "group__SceGxmUser.html#gafb04b8e3285643ad3f3477772ba99372", null ],
+    [ "sceGxmSetCullMode", "group__SceGxmUser.html#gab1d2369f7863df182d10b645ffcc4f2d", null ],
+    [ "sceGxmSetViewportEnable", "group__SceGxmUser.html#ga2d7becd1e77fe01200775bc963b6a4f4", null ],
+    [ "sceGxmSetWBufferEnable", "group__SceGxmUser.html#ga20db303a5cfaf24d94c5e23f3afeaf04", null ],
+    [ "sceGxmSetFrontVisibilityTestIndex", "group__SceGxmUser.html#ga84271dde4b0c89d949ad72613c0018c7", null ],
+    [ "sceGxmSetBackVisibilityTestIndex", "group__SceGxmUser.html#ga5250603e99710af07b6687d49d1c35a2", null ],
+    [ "sceGxmSetFrontVisibilityTestOp", "group__SceGxmUser.html#ga6d81ec2b05077ebc3eee45ecc74b62a1", null ],
+    [ "sceGxmSetBackVisibilityTestOp", "group__SceGxmUser.html#ga9cb0bd0adc9ef4a7807cadfa0b4bd1c4", null ],
+    [ "sceGxmSetFrontVisibilityTestEnable", "group__SceGxmUser.html#gab1ff61ef023553fc5d16d1b19b5bdef6", null ],
+    [ "sceGxmSetBackVisibilityTestEnable", "group__SceGxmUser.html#gace6fb8549094b397c4620a5230cddb72", null ],
+    [ "sceGxmFinish", "group__SceGxmUser.html#ga71ca45f4da92231417ed116e143a0746", null ],
+    [ "sceGxmPushUserMarker", "group__SceGxmUser.html#ga756bcded1fa8119b6e10717041534f96", null ],
+    [ "sceGxmPopUserMarker", "group__SceGxmUser.html#ga372be24a237c0d5d7762a332a117602f", null ],
+    [ "sceGxmSetUserMarker", "group__SceGxmUser.html#gaa83316fd06becbfc5f41f6d47b1b942d", null ],
+    [ "sceGxmPadHeartbeat", "group__SceGxmUser.html#ga044c99bc24aad8c40b4a2ec679b9652c", null ],
+    [ "sceGxmPadTriggerGpuPaTrace", "group__SceGxmUser.html#ga013e71dc0370023b351716cae431753a", null ],
     [ "sceGxmColorSurfaceInit", "group__SceGxmUser.html#gae2a6171a70d67a68649e12ddbd81124c", null ],
     [ "sceGxmColorSurfaceInitDisabled", "group__SceGxmUser.html#gaad273bb77a2026f24867df268c98cd97", null ],
     [ "sceGxmColorSurfaceIsEnabled", "group__SceGxmUser.html#gac611c4da3a45b248c984dd28a00fbcb6", null ],
+    [ "sceGxmColorSurfaceGetClip", "group__SceGxmUser.html#ga6e42c01a272c831f3aa7df2c770924b1", null ],
     [ "sceGxmColorSurfaceSetClip", "group__SceGxmUser.html#ga128651eed098d1fb20bf1733498799c7", null ],
-    [ "sceGxmColorSurfaceSetData", "group__SceGxmUser.html#ga3f28eac40c16ea73ed238a75201e9b2e", null ],
-    [ "sceGxmColorSurfaceSetDitherMode", "group__SceGxmUser.html#gab4ba1ea010f002ca4969c054b0b8ac62", null ],
-    [ "sceGxmColorSurfaceSetFormat", "group__SceGxmUser.html#gab1802ba7a1f549db5a2729eefd092ae8", null ],
-    [ "sceGxmColorSurfaceSetGammaMode", "group__SceGxmUser.html#gaafd5547b1c8e7c46516b666d8e296dc7", null ],
+    [ "sceGxmColorSurfaceGetScaleMode", "group__SceGxmUser.html#gae179c86e27a40b8d493762cf38b66ab2", null ],
     [ "sceGxmColorSurfaceSetScaleMode", "group__SceGxmUser.html#ga8440ee079ea60400821228f3e38bcf93", null ],
-    [ "sceGxmCreateContext", "group__SceGxmUser.html#ga7e4a337e1c774bd6443ca3a76256a5f6", null ],
-    [ "sceGxmCreateRenderTarget", "group__SceGxmUser.html#ga76071cc5386926a5543d0dbf562ce88c", null ],
-    [ "sceGxmDepthStencilSurfaceGetBackgroundDepth", "group__SceGxmUser.html#ga3463e950e9f0c823ca8e374f22a40810", null ],
-    [ "sceGxmDepthStencilSurfaceGetBackgroundStencil", "group__SceGxmUser.html#gad6a4edeeed5fd22ae412a759a9a3507b", null ],
-    [ "sceGxmDepthStencilSurfaceGetForceLoadMode", "group__SceGxmUser.html#ga4f8d8f0b50d6236944e7ccd865b9cc18", null ],
-    [ "sceGxmDepthStencilSurfaceGetForceStoreMode", "group__SceGxmUser.html#gaa1f0f92eb654ec9958c6d5cd02191cf4", null ],
-    [ "sceGxmDepthStencilSurfaceGetFormat", "group__SceGxmUser.html#gaf0a221f15f695c61f5f24e9b162adc97", null ],
-    [ "sceGxmDepthStencilSurfaceGetStrideInSamples", "group__SceGxmUser.html#ga9f039713426c12c614231ee34ab04953", null ],
+    [ "sceGxmColorSurfaceGetData", "group__SceGxmUser.html#gaaa55bc4b773d1c02ef6cab5947a2fc4d", null ],
+    [ "sceGxmColorSurfaceSetData", "group__SceGxmUser.html#ga3f28eac40c16ea73ed238a75201e9b2e", null ],
+    [ "sceGxmColorSurfaceGetFormat", "group__SceGxmUser.html#gaa6e910bcd475bac0bdbffa5aa52b821c", null ],
+    [ "sceGxmColorSurfaceSetFormat", "group__SceGxmUser.html#gab1802ba7a1f549db5a2729eefd092ae8", null ],
+    [ "sceGxmColorSurfaceGetType", "group__SceGxmUser.html#ga796ca133e397729f6543aa33cd80bf73", null ],
+    [ "sceGxmColorSurfaceGetStrideInPixels", "group__SceGxmUser.html#gaa5d7677368c7b7fb707cc98ba5425f11", null ],
     [ "sceGxmDepthStencilSurfaceInit", "group__SceGxmUser.html#ga34edc09251514a1f3f2b966b5e55ea34", null ],
     [ "sceGxmDepthStencilSurfaceInitDisabled", "group__SceGxmUser.html#ga5b3fa8f3b7c545c59933e5622983a6c1", null ],
-    [ "sceGxmDepthStencilSurfaceIsEnabled", "group__SceGxmUser.html#ga843c310691d79cff26f22796f0983bec", null ],
+    [ "sceGxmDepthStencilSurfaceGetBackgroundDepth", "group__SceGxmUser.html#ga3463e950e9f0c823ca8e374f22a40810", null ],
     [ "sceGxmDepthStencilSurfaceSetBackgroundDepth", "group__SceGxmUser.html#ga4b1059d31a132b1b1d244daeb0499abb", null ],
+    [ "sceGxmDepthStencilSurfaceGetBackgroundStencil", "group__SceGxmUser.html#gad6a4edeeed5fd22ae412a759a9a3507b", null ],
     [ "sceGxmDepthStencilSurfaceSetBackgroundStencil", "group__SceGxmUser.html#ga2ee961ee961c45751f4b0c7eebd90ed2", null ],
+    [ "sceGxmDepthStencilSurfaceIsEnabled", "group__SceGxmUser.html#ga843c310691d79cff26f22796f0983bec", null ],
     [ "sceGxmDepthStencilSurfaceSetForceLoadMode", "group__SceGxmUser.html#gaa6140043dfb4c68d57e517547a000ac5", null ],
+    [ "sceGxmDepthStencilSurfaceGetForceLoadMode", "group__SceGxmUser.html#ga4f8d8f0b50d6236944e7ccd865b9cc18", null ],
     [ "sceGxmDepthStencilSurfaceSetForceStoreMode", "group__SceGxmUser.html#ga3dc47fce8c11dde10ac9061f374e1e1a", null ],
-    [ "sceGxmDestroyContext", "group__SceGxmUser.html#gaf598f63c999b338b1332cf82435f966a", null ],
-    [ "sceGxmDestroyRenderTarget", "group__SceGxmUser.html#ga725302f5052ab2968dd3d6777f324897", null ],
-    [ "sceGxmDisplayQueueAddEntry", "group__SceGxmUser.html#ga3830da75c4491938c4d0b4e106373369", null ],
-    [ "sceGxmDisplayQueueFinish", "group__SceGxmUser.html#ga63d6a7461f0ba0a38de56973f5dd8932", null ],
-    [ "sceGxmDraw", "group__SceGxmUser.html#ga3ee281730c9eb361e73009cd182e7b70", null ],
-    [ "sceGxmDrawInstanced", "group__SceGxmUser.html#ga7a8052bde0031b9a06ab82d1a3e7ddee", null ],
-    [ "sceGxmDrawPrecomputed", "group__SceGxmUser.html#ga05e2217a1a472cbc6f512ebed70ba887", null ],
-    [ "sceGxmEndScene", "group__SceGxmUser.html#gacbb98c8712e03470cd2437b2c20159ec", null ],
-    [ "sceGxmFinish", "group__SceGxmUser.html#ga71ca45f4da92231417ed116e143a0746", null ],
-    [ "sceGxmFragmentProgramGetProgram", "group__SceGxmUser.html#ga6543bf5cb2fdb42e3f9265084abf9523", null ],
-    [ "sceGxmGetNotificationRegion", "group__SceGxmUser.html#ga5028c8d6af196fd944d134143906bea8", null ],
-    [ "sceGxmGetPrecomputedDrawSize", "group__SceGxmUser.html#ga90d04cffc06557fa3f03765d377a97ef", null ],
-    [ "sceGxmGetPrecomputedFragmentStateSize", "group__SceGxmUser.html#ga1c46e364bea525936c7888cd81f52566", null ],
-    [ "sceGxmGetPrecomputedVertexStateSize", "group__SceGxmUser.html#gaffa538ff4d8f8bdd3cd096e7ab062e5e", null ],
-    [ "sceGxmGetRenderTargetMemSize", "group__SceGxmUser.html#ga0663655e1ab7f071617d872f49b36047", null ],
-    [ "sceGxmInitialize", "group__SceGxmUser.html#gaeacf3071aedd204d45adc666312acc68", null ],
-    [ "sceGxmMapFragmentUsseMemory", "group__SceGxmUser.html#ga0eb40ae81fea763a8768f66f6fc919aa", null ],
-    [ "sceGxmMapMemory", "group__SceGxmUser.html#gafed534eed12e5b220976d364e824607e", null ],
-    [ "sceGxmMapVertexUsseMemory", "group__SceGxmUser.html#gaf1fc4448f8b3bc9c20a19a4b6fe2aac1", null ],
-    [ "sceGxmMidSceneFlush", "group__SceGxmUser.html#ga80e2c1ff3f25c0760a05eb37e7737c59", null ],
-    [ "sceGxmNotificationWait", "group__SceGxmUser.html#gafe86c0337a4ed6cbcee6dce905c7dd6f", null ],
-    [ "sceGxmPadHeartbeat", "group__SceGxmUser.html#ga044c99bc24aad8c40b4a2ec679b9652c", null ],
-    [ "sceGxmPadTriggerGpuPaTrace", "group__SceGxmUser.html#ga013e71dc0370023b351716cae431753a", null ],
-    [ "sceGxmPopUserMarker", "group__SceGxmUser.html#ga372be24a237c0d5d7762a332a117602f", null ],
-    [ "sceGxmPrecomputedDrawInit", "group__SceGxmUser.html#ga01c65a68ae720aa1ffa269b468054ed7", null ],
-    [ "sceGxmPrecomputedDrawSetAllVertexStreams", "group__SceGxmUser.html#gacc5028161246ae66e1a12e3dfa591bf8", null ],
-    [ "sceGxmPrecomputedDrawSetParams", "group__SceGxmUser.html#ga05036f4a7f5ab03164228cbed93909e6", null ],
-    [ "sceGxmPrecomputedDrawSetParamsInstanced", "group__SceGxmUser.html#ga3b2a94bb7af1ced3ec8ca1de96fe199e", null ],
-    [ "sceGxmPrecomputedDrawSetVertexStream", "group__SceGxmUser.html#ga598e576454399c8daac5f8b39d614ea3", null ],
-    [ "sceGxmPrecomputedFragmentStateGetDefaultUniformBuffer", "group__SceGxmUser.html#ga19cc14346e7c821e8115268beed9524b", null ],
-    [ "sceGxmPrecomputedFragmentStateInit", "group__SceGxmUser.html#ga2a0e51f0ec3d1543e008aea4fef0b065", null ],
-    [ "sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces", "group__SceGxmUser.html#ga52408110ffcdae3e8dd05e8a31016fe4", null ],
-    [ "sceGxmPrecomputedFragmentStateSetAllTextures", "group__SceGxmUser.html#gae413cd3e05f77ccb259c644723eae8fe", null ],
-    [ "sceGxmPrecomputedFragmentStateSetAllUniformBuffers", "group__SceGxmUser.html#ga3b8e52667280a2229f39d74e5a160856", null ],
-    [ "sceGxmPrecomputedFragmentStateSetDefaultUniformBuffer", "group__SceGxmUser.html#ga1b9b87ac9012d3ec6fd0db12c4ae2013", null ],
-    [ "sceGxmPrecomputedFragmentStateSetTexture", "group__SceGxmUser.html#gabb46f11deaa9da3b38759d4df15113cf", null ],
-    [ "sceGxmPrecomputedFragmentStateSetUniformBuffer", "group__SceGxmUser.html#ga5d6faf45a01adeef7d0ac045ca023086", null ],
-    [ "sceGxmPrecomputedVertexStateGetDefaultUniformBuffer", "group__SceGxmUser.html#ga1a167374492ccce8175d29cc92da6365", null ],
-    [ "sceGxmPrecomputedVertexStateInit", "group__SceGxmUser.html#gaa9a029eaa919d3189334ab4e0ad7f60c", null ],
-    [ "sceGxmPrecomputedVertexStateSetAllTextures", "group__SceGxmUser.html#ga5153034c2e5407fcb6e5c54f87f7d915", null ],
-    [ "sceGxmPrecomputedVertexStateSetAllUniformBuffers", "group__SceGxmUser.html#ga506d2a8d1dfdaa18004eee7b6199df40", null ],
-    [ "sceGxmPrecomputedVertexStateSetDefaultUniformBuffer", "group__SceGxmUser.html#gadaeb99a70e5392c61b6e972cea127678", null ],
-    [ "sceGxmPrecomputedVertexStateSetTexture", "group__SceGxmUser.html#gaf7f7e6a5dea328df7ab277cafc1e732e", null ],
-    [ "sceGxmPrecomputedVertexStateSetUniformBuffer", "group__SceGxmUser.html#gad2e6f2dc01cdc1e04b2af67cac190907", null ],
+    [ "sceGxmDepthStencilSurfaceGetForceStoreMode", "group__SceGxmUser.html#gaa1f0f92eb654ec9958c6d5cd02191cf4", null ],
+    [ "sceGxmColorSurfaceGetGammaMode", "group__SceGxmUser.html#gaaa0df4cdd4498a3800eb91fc6f46cb78", null ],
+    [ "sceGxmColorSurfaceSetGammaMode", "group__SceGxmUser.html#gaafd5547b1c8e7c46516b666d8e296dc7", null ],
+    [ "sceGxmColorSurfaceGetDitherMode", "group__SceGxmUser.html#gaa2f645a11ffd116bba95c0ec5b38caf3", null ],
+    [ "sceGxmColorSurfaceSetDitherMode", "group__SceGxmUser.html#gab4ba1ea010f002ca4969c054b0b8ac62", null ],
+    [ "sceGxmDepthStencilSurfaceGetFormat", "group__SceGxmUser.html#gaf0a221f15f695c61f5f24e9b162adc97", null ],
+    [ "sceGxmDepthStencilSurfaceGetStrideInSamples", "group__SceGxmUser.html#ga9f039713426c12c614231ee34ab04953", null ],
     [ "sceGxmProgramCheck", "group__SceGxmUser.html#gaa2507250ea1f81cbc07e414146000728", null ],
-    [ "sceGxmProgramFindParameterByName", "group__SceGxmUser.html#ga083334dac551adf92b4592f6b7fc87c3", null ],
-    [ "sceGxmProgramFindParameterBySemantic", "group__SceGxmUser.html#gaf3e2d67e992ab71a2541d97225ef58f9", null ],
-    [ "sceGxmProgramGetDefaultUniformBufferSize", "group__SceGxmUser.html#ga48a5e7b15d299a8abb4337c9a3bcd211", null ],
-    [ "sceGxmProgramGetParameter", "group__SceGxmUser.html#ga712fdca9f77724a83c68f9c4d730b6cb", null ],
-    [ "sceGxmProgramGetParameterCount", "group__SceGxmUser.html#ga46f4123af49b842e2f16db1a2d0b179e", null ],
     [ "sceGxmProgramGetSize", "group__SceGxmUser.html#ga48bd85a6ec02d8a05cfbc20f4a5f3cf9", null ],
     [ "sceGxmProgramGetType", "group__SceGxmUser.html#ga43f387909547089485e53d1b002180f5", null ],
-    [ "sceGxmProgramIsDepthReplaceUsed", "group__SceGxmUser.html#ga909272f98b08fea0e43eb0a40c4392d0", null ],
     [ "sceGxmProgramIsDiscardUsed", "group__SceGxmUser.html#ga74627140e4fc5908dbb7ea35c6426c2e", null ],
+    [ "sceGxmProgramIsDepthReplaceUsed", "group__SceGxmUser.html#ga909272f98b08fea0e43eb0a40c4392d0", null ],
     [ "sceGxmProgramIsSpriteCoordUsed", "group__SceGxmUser.html#ga04392c9bed9ed7451a8ee66f8d7813f8", null ],
-    [ "sceGxmProgramParameterGetArraySize", "group__SceGxmUser.html#gafc911e504a7fcc7ebc59f085f727bf90", null ],
-    [ "sceGxmProgramParameterGetCategory", "group__SceGxmUser.html#ga7a1b00860d3adefedd393e18975789d2", null ],
-    [ "sceGxmProgramParameterGetComponentCount", "group__SceGxmUser.html#ga98847f6753cc6a20749e022196875d26", null ],
-    [ "sceGxmProgramParameterGetContainerIndex", "group__SceGxmUser.html#ga1028cdf58e58a205de0d52f5329fe538", null ],
+    [ "sceGxmProgramGetDefaultUniformBufferSize", "group__SceGxmUser.html#ga48a5e7b15d299a8abb4337c9a3bcd211", null ],
+    [ "sceGxmProgramGetParameterCount", "group__SceGxmUser.html#ga46f4123af49b842e2f16db1a2d0b179e", null ],
+    [ "sceGxmProgramGetParameter", "group__SceGxmUser.html#ga712fdca9f77724a83c68f9c4d730b6cb", null ],
+    [ "sceGxmProgramFindParameterByName", "group__SceGxmUser.html#ga083334dac551adf92b4592f6b7fc87c3", null ],
+    [ "sceGxmProgramFindParameterBySemantic", "group__SceGxmUser.html#gaf3e2d67e992ab71a2541d97225ef58f9", null ],
     [ "sceGxmProgramParameterGetIndex", "group__SceGxmUser.html#gaeea96e0cbad4387ea0296f770c6cc3af", null ],
+    [ "sceGxmProgramParameterGetCategory", "group__SceGxmUser.html#ga7a1b00860d3adefedd393e18975789d2", null ],
     [ "sceGxmProgramParameterGetName", "group__SceGxmUser.html#ga6840d3985f05d5489e668b5f1190b340", null ],
-    [ "sceGxmProgramParameterGetResourceIndex", "group__SceGxmUser.html#ga8432a1188eb7637567cecdbc8ab36312", null ],
     [ "sceGxmProgramParameterGetSemantic", "group__SceGxmUser.html#gab20ff3b459a6e9e825eeacd1671ced35", null ],
     [ "sceGxmProgramParameterGetSemanticIndex", "group__SceGxmUser.html#ga06f3a99533cf994c5a657d9bc809a5d9", null ],
     [ "sceGxmProgramParameterGetType", "group__SceGxmUser.html#gaa0685259373f9b58154eaa85920ae0be", null ],
+    [ "sceGxmProgramParameterGetComponentCount", "group__SceGxmUser.html#ga98847f6753cc6a20749e022196875d26", null ],
+    [ "sceGxmProgramParameterGetArraySize", "group__SceGxmUser.html#gafc911e504a7fcc7ebc59f085f727bf90", null ],
+    [ "sceGxmProgramParameterGetResourceIndex", "group__SceGxmUser.html#ga8432a1188eb7637567cecdbc8ab36312", null ],
+    [ "sceGxmProgramParameterGetContainerIndex", "group__SceGxmUser.html#ga1028cdf58e58a205de0d52f5329fe538", null ],
     [ "sceGxmProgramParameterIsSamplerCube", "group__SceGxmUser.html#ga6efb4072e08e31672c18bd4ae933d741", null ],
-    [ "sceGxmPushUserMarker", "group__SceGxmUser.html#ga756bcded1fa8119b6e10717041534f96", null ],
-    [ "sceGxmRenderTargetGetDriverMemBlock", "group__SceGxmUser.html#gaf2a8ff437a862a01417d9762cd19d865", null ],
-    [ "sceGxmRenderTargetGetHostMem", "group__SceGxmUser.html#gafd79dc31cd3d4e1eb040c73458f42592", null ],
-    [ "sceGxmReserveFragmentDefaultUniformBuffer", "group__SceGxmUser.html#gadf7af855f6b525fa5ad3c306f5efe0f0", null ],
-    [ "sceGxmReserveVertexDefaultUniformBuffer", "group__SceGxmUser.html#gaa1ed549d6fe95b70c08a2ee4d9607534", null ],
-    [ "sceGxmSetAuxiliarySurface", "group__SceGxmUser.html#ga9028298ccadb00d5d0971acdc64ed70d", null ],
-    [ "sceGxmSetBackDepthBias", "group__SceGxmUser.html#gacf37af0f266af92caed91d31ad007334", null ],
-    [ "sceGxmSetBackDepthFunc", "group__SceGxmUser.html#ga1d8614e7bb96487c5a8d8bc5eee27da1", null ],
-    [ "sceGxmSetBackDepthWriteEnable", "group__SceGxmUser.html#gacb6909245f60e84f9c0518a37e26a447", null ],
-    [ "sceGxmSetBackFragmentProgramEnable", "group__SceGxmUser.html#ga05ce1be1d8ccc1637699e9ee9f99b312", null ],
-    [ "sceGxmSetBackLineFillLastPixelEnable", "group__SceGxmUser.html#gaf655d4eebb9e3bbffa3292fd7d4b29f7", null ],
-    [ "sceGxmSetBackPointLineWidth", "group__SceGxmUser.html#ga94cc0de6b8942795afb1c3f582ca4690", null ],
-    [ "sceGxmSetBackPolygonMode", "group__SceGxmUser.html#gae72e50da69c5a1a0590d3f9e2b0d1a49", null ],
-    [ "sceGxmSetBackStencilFunc", "group__SceGxmUser.html#gab71b8141ded01734bc61d9ff60dfd56c", null ],
-    [ "sceGxmSetBackStencilRef", "group__SceGxmUser.html#gaa8038550f930713282b907fc4baaa6e8", null ],
-    [ "sceGxmSetBackVisibilityTestEnable", "group__SceGxmUser.html#gace6fb8549094b397c4620a5230cddb72", null ],
-    [ "sceGxmSetBackVisibilityTestIndex", "group__SceGxmUser.html#ga5250603e99710af07b6687d49d1c35a2", null ],
-    [ "sceGxmSetBackVisibilityTestOp", "group__SceGxmUser.html#ga9cb0bd0adc9ef4a7807cadfa0b4bd1c4", null ],
-    [ "sceGxmSetCullMode", "group__SceGxmUser.html#gab1d2369f7863df182d10b645ffcc4f2d", null ],
-    [ "sceGxmSetFragmentProgram", "group__SceGxmUser.html#ga89af83cb3ba92c119d551f64c9e8c4fd", null ],
-    [ "sceGxmSetFragmentTexture", "group__SceGxmUser.html#ga3cdc32317b080518e958aef701622be6", null ],
-    [ "sceGxmSetFragmentUniformBuffer", "group__SceGxmUser.html#ga04bd81287fca5c5d5c5a72d92814500c", null ],
-    [ "sceGxmSetFrontDepthBias", "group__SceGxmUser.html#gabd436d0c197f72a75081d7c84fe2c418", null ],
-    [ "sceGxmSetFrontDepthFunc", "group__SceGxmUser.html#ga929b1bba59b15037a0273638432ce42c", null ],
-    [ "sceGxmSetFrontDepthWriteEnable", "group__SceGxmUser.html#gac750516cb502389d09fe0979fa12e576", null ],
-    [ "sceGxmSetFrontFragmentProgramEnable", "group__SceGxmUser.html#ga044d4f3f7c1c3d87bcd787246f9a5570", null ],
-    [ "sceGxmSetFrontLineFillLastPixelEnable", "group__SceGxmUser.html#ga02dd580e3ccd0b16e9bf460a7bd8bfee", null ],
-    [ "sceGxmSetFrontPointLineWidth", "group__SceGxmUser.html#ga4dba222b8b0d567ac54fd56a7d6c4094", null ],
-    [ "sceGxmSetFrontPolygonMode", "group__SceGxmUser.html#ga4c7aeeb370f50a79307fd5c169792d1f", null ],
-    [ "sceGxmSetFrontStencilFunc", "group__SceGxmUser.html#ga1fb3933ad5d2ef4ebb1be6fc9420dc6b", null ],
-    [ "sceGxmSetFrontStencilRef", "group__SceGxmUser.html#gae95853472be6a7c909d9ba864f62d467", null ],
-    [ "sceGxmSetFrontVisibilityTestEnable", "group__SceGxmUser.html#gab1ff61ef023553fc5d16d1b19b5bdef6", null ],
-    [ "sceGxmSetFrontVisibilityTestIndex", "group__SceGxmUser.html#ga84271dde4b0c89d949ad72613c0018c7", null ],
-    [ "sceGxmSetFrontVisibilityTestOp", "group__SceGxmUser.html#ga6d81ec2b05077ebc3eee45ecc74b62a1", null ],
-    [ "sceGxmSetPrecomputedFragmentState", "group__SceGxmUser.html#ga290092739bcc1973b8c7ab7d1d6468f7", null ],
-    [ "sceGxmSetPrecomputedVertexState", "group__SceGxmUser.html#ga2a39ae4acf50fc4957a58d535d82d806", null ],
-    [ "sceGxmSetRegionClip", "group__SceGxmUser.html#gafb04b8e3285643ad3f3477772ba99372", null ],
-    [ "sceGxmSetTwoSidedEnable", "group__SceGxmUser.html#ga5323712ca77d1fbcd7aaf345841df24f", null ],
-    [ "sceGxmSetUniformDataF", "group__SceGxmUser.html#ga056dfffe5cdbf51035becf28b8166421", null ],
-    [ "sceGxmSetUserMarker", "group__SceGxmUser.html#gaa83316fd06becbfc5f41f6d47b1b942d", null ],
-    [ "sceGxmSetValidationEnable", "group__SceGxmUser.html#gafa4c86d55e4d2933d29a3a145b5a3991", null ],
-    [ "sceGxmSetVertexProgram", "group__SceGxmUser.html#gae9bdd3d27df275aea31873d29f013d18", null ],
-    [ "sceGxmSetVertexStream", "group__SceGxmUser.html#ga1ff8fe66106a8a0b24fac727c116d539", null ],
-    [ "sceGxmSetVertexTexture", "group__SceGxmUser.html#ga12d646576ae932160113746a5d57d4d0", null ],
-    [ "sceGxmSetVertexUniformBuffer", "group__SceGxmUser.html#ga2cc4a6ceb41fae78c83f25114af72197", null ],
-    [ "sceGxmSetViewport", "group__SceGxmUser.html#ga65cb145091c8790d0ceaa16bcc7bfcc0", null ],
-    [ "sceGxmSetViewportEnable", "group__SceGxmUser.html#ga2d7becd1e77fe01200775bc963b6a4f4", null ],
-    [ "sceGxmSetVisibilityBuffer", "group__SceGxmUser.html#ga65de92a3080ddbd5a39e8912184b430b", null ],
-    [ "sceGxmSetWBufferEnable", "group__SceGxmUser.html#ga20db303a5cfaf24d94c5e23f3afeaf04", null ],
-    [ "sceGxmSetWClampEnable", "group__SceGxmUser.html#ga7788d5ab86524f4e53b3dbb6547f9f59", null ],
-    [ "sceGxmSetWClampValue", "group__SceGxmUser.html#ga8a093a6ab76a39bdfbc6db3a0628d3a5", null ],
-    [ "sceGxmShaderPatcherAddRefFragmentProgram", "group__SceGxmUser.html#ga388f50a0ae39c027390d4e1f668afbb8", null ],
-    [ "sceGxmShaderPatcherAddRefVertexProgram", "group__SceGxmUser.html#ga87b91ae87d5e976adee0ea3ac6312795", null ],
+    [ "sceGxmFragmentProgramGetProgram", "group__SceGxmUser.html#ga6543bf5cb2fdb42e3f9265084abf9523", null ],
+    [ "sceGxmVertexProgramGetProgram", "group__SceGxmUser.html#ga646cf6e5132ec515195d7038460d3d3e", null ],
     [ "sceGxmShaderPatcherCreate", "group__SceGxmUser.html#ga77250689874f059f62af6a3c1180d2dd", null ],
+    [ "sceGxmShaderPatcherSetUserData", "group__SceGxmUser.html#ga79f2acb1d34c99592eb88b4f648deed3", null ],
+    [ "sceGxmShaderPatcherGetUserData", "group__SceGxmUser.html#ga6c85f6df5cacc9181330f66bfa51300b", null ],
+    [ "sceGxmShaderPatcherDestroy", "group__SceGxmUser.html#ga3a79ca18976799700fbbcf593eab85ef", null ],
+    [ "sceGxmShaderPatcherRegisterProgram", "group__SceGxmUser.html#ga511a3d947f2199b369dc5ae9f65e03c3", null ],
+    [ "sceGxmShaderPatcherUnregisterProgram", "group__SceGxmUser.html#ga59faf46d2397af4d8cf24cd28f9254ad", null ],
+    [ "sceGxmShaderPatcherForceUnregisterProgram", "group__SceGxmUser.html#ga777c4defcd1aa5f6b2b03c2d575705b2", null ],
+    [ "sceGxmShaderPatcherGetProgramFromId", "group__SceGxmUser.html#ga040dc1f629e779e6ac002d4c8d688f7b", null ],
+    [ "sceGxmShaderPatcherSetAuxiliarySurface", "group__SceGxmUser.html#gaf5bf6cf2f011fb2e1d80f1d156aa53fb", null ],
+    [ "sceGxmShaderPatcherCreateVertexProgram", "group__SceGxmUser.html#gaee8805b04bb68a9c024c0caeec25eb3c", null ],
     [ "sceGxmShaderPatcherCreateFragmentProgram", "group__SceGxmUser.html#gade9520f1131e541eb4df166dba933d2b", null ],
     [ "sceGxmShaderPatcherCreateMaskUpdateFragmentProgram", "group__SceGxmUser.html#ga04fcd8bd3b3fcce124d7593edc0fd009", null ],
-    [ "sceGxmShaderPatcherCreateVertexProgram", "group__SceGxmUser.html#gaee8805b04bb68a9c024c0caeec25eb3c", null ],
-    [ "sceGxmShaderPatcherDestroy", "group__SceGxmUser.html#ga3a79ca18976799700fbbcf593eab85ef", null ],
-    [ "sceGxmShaderPatcherForceUnregisterProgram", "group__SceGxmUser.html#ga777c4defcd1aa5f6b2b03c2d575705b2", null ],
-    [ "sceGxmShaderPatcherGetBufferMemAllocated", "group__SceGxmUser.html#ga1ccf595737401630c39e21c310fdae38", null ],
-    [ "sceGxmShaderPatcherGetFragmentProgramRefCount", "group__SceGxmUser.html#ga42a72f3779a1a0ad5bdd544b02eccbb9", null ],
-    [ "sceGxmShaderPatcherGetFragmentUsseMemAllocated", "group__SceGxmUser.html#ga0549b1d7b0d846c3f6a930a8e6a81505", null ],
-    [ "sceGxmShaderPatcherGetHostMemAllocated", "group__SceGxmUser.html#gafd743fd27860193dcb62c95a9fa95464", null ],
-    [ "sceGxmShaderPatcherGetProgramFromId", "group__SceGxmUser.html#ga040dc1f629e779e6ac002d4c8d688f7b", null ],
-    [ "sceGxmShaderPatcherGetUserData", "group__SceGxmUser.html#ga6c85f6df5cacc9181330f66bfa51300b", null ],
+    [ "sceGxmShaderPatcherAddRefVertexProgram", "group__SceGxmUser.html#ga87b91ae87d5e976adee0ea3ac6312795", null ],
+    [ "sceGxmShaderPatcherAddRefFragmentProgram", "group__SceGxmUser.html#ga388f50a0ae39c027390d4e1f668afbb8", null ],
     [ "sceGxmShaderPatcherGetVertexProgramRefCount", "group__SceGxmUser.html#gae428463e8de459feee9cfe118bcefa82", null ],
-    [ "sceGxmShaderPatcherGetVertexUsseMemAllocated", "group__SceGxmUser.html#ga541a5a92c805a70140bb32711933066a", null ],
-    [ "sceGxmShaderPatcherRegisterProgram", "group__SceGxmUser.html#ga511a3d947f2199b369dc5ae9f65e03c3", null ],
-    [ "sceGxmShaderPatcherReleaseFragmentProgram", "group__SceGxmUser.html#gae2e53516ff1974c3f70ffb6e0377c04a", null ],
+    [ "sceGxmShaderPatcherGetFragmentProgramRefCount", "group__SceGxmUser.html#ga42a72f3779a1a0ad5bdd544b02eccbb9", null ],
     [ "sceGxmShaderPatcherReleaseVertexProgram", "group__SceGxmUser.html#ga6715fa6ecccf99dd3b7228d7b1d218e5", null ],
-    [ "sceGxmShaderPatcherSetAuxiliarySurface", "group__SceGxmUser.html#gaf5bf6cf2f011fb2e1d80f1d156aa53fb", null ],
-    [ "sceGxmShaderPatcherSetUserData", "group__SceGxmUser.html#ga79f2acb1d34c99592eb88b4f648deed3", null ],
-    [ "sceGxmShaderPatcherUnregisterProgram", "group__SceGxmUser.html#ga59faf46d2397af4d8cf24cd28f9254ad", null ],
-    [ "sceGxmSyncObjectCreate", "group__SceGxmUser.html#gaca62eaf755090e4a747591745ee9ced8", null ],
-    [ "sceGxmSyncObjectDestroy", "group__SceGxmUser.html#gabd9d75299067dbca19cc9c6071161d10", null ],
-    [ "sceGxmTerminate", "group__SceGxmUser.html#ga30a8e8fd2937cef86b1003cd0e6c093a", null ],
-    [ "sceGxmTextureGetData", "group__SceGxmUser.html#gae5ff048a2ca1a4887aa59355988b76c1", null ],
-    [ "sceGxmTextureGetFormat", "group__SceGxmUser.html#ga7121c9c0ef40bec6606f4b493b3eef5a", null ],
-    [ "sceGxmTextureGetGammaMode", "group__SceGxmUser.html#ga4d97a76f79bb485067b48b4e25c595bb", null ],
-    [ "sceGxmTextureGetHeight", "group__SceGxmUser.html#ga5fb1bfc397a2788028b3804ae2ea55e5", null ],
-    [ "sceGxmTextureGetLodBias", "group__SceGxmUser.html#ga7b5bf82b43d8867945f32069436a55aa", null ],
-    [ "sceGxmTextureGetMagFilter", "group__SceGxmUser.html#gabab3f54eb50f695ea48f20837ce0bcfc", null ],
-    [ "sceGxmTextureGetMinFilter", "group__SceGxmUser.html#ga8d484f4a717bb6ccbf0998930fe7e2cc", null ],
-    [ "sceGxmTextureGetMipFilter", "group__SceGxmUser.html#ga4ba7bfc4b45efa94a4681e976866e6b6", null ],
-    [ "sceGxmTextureGetMipmapCount", "group__SceGxmUser.html#gaed2116ef359bcfa8a7bfa77af251d20d", null ],
-    [ "sceGxmTextureGetPalette", "group__SceGxmUser.html#ga823067c4fd293c363f4f3917ac405d39", null ],
-    [ "sceGxmTextureGetStride", "group__SceGxmUser.html#gab5f04e3bd6f9420279b827b8f80f77b5", null ],
-    [ "sceGxmTextureGetType", "group__SceGxmUser.html#ga49b8453913bdbc02f96815601cb39037", null ],
-    [ "sceGxmTextureGetUAddrMode", "group__SceGxmUser.html#gae264b91fc1b30dde1023c60b83d6c2dd", null ],
-    [ "sceGxmTextureGetVAddrMode", "group__SceGxmUser.html#ga8d807013601b32ebc77c3a2cfd62e24d", null ],
-    [ "sceGxmTextureGetWidth", "group__SceGxmUser.html#ga24ffd7f1b2522415a4f5a4abae5c9797", null ],
-    [ "sceGxmTextureInitCube", "group__SceGxmUser.html#gab287055258374f19006cb3eb15a8c4fe", null ],
+    [ "sceGxmShaderPatcherReleaseFragmentProgram", "group__SceGxmUser.html#gae2e53516ff1974c3f70ffb6e0377c04a", null ],
+    [ "sceGxmShaderPatcherGetHostMemAllocated", "group__SceGxmUser.html#gafd743fd27860193dcb62c95a9fa95464", null ],
+    [ "sceGxmShaderPatcherGetBufferMemAllocated", "group__SceGxmUser.html#ga1ccf595737401630c39e21c310fdae38", null ],
+    [ "sceGxmShaderPatcherGetVertexUsseMemAllocated", "group__SceGxmUser.html#ga541a5a92c805a70140bb32711933066a", null ],
+    [ "sceGxmShaderPatcherGetFragmentUsseMemAllocated", "group__SceGxmUser.html#ga0549b1d7b0d846c3f6a930a8e6a81505", null ],
+    [ "sceGxmTextureInitSwizzled", "group__SceGxmUser.html#gacb56fb4a3fc0fdf529779444371c58ff", null ],
     [ "sceGxmTextureInitLinear", "group__SceGxmUser.html#gad8348a6dcf8d22abc508842a1d45f121", null ],
     [ "sceGxmTextureInitLinearStrided", "group__SceGxmUser.html#ga01cf2db91e3d5747af2e9fdcb2edeb9c", null ],
-    [ "sceGxmTextureInitSwizzled", "group__SceGxmUser.html#gacb56fb4a3fc0fdf529779444371c58ff", null ],
     [ "sceGxmTextureInitTiled", "group__SceGxmUser.html#ga27642848f184a273b4b9747bdb72ffff", null ],
-    [ "sceGxmTextureSetData", "group__SceGxmUser.html#ga80466aec87d45cb253c5f155e850083d", null ],
-    [ "sceGxmTextureSetFormat", "group__SceGxmUser.html#gad6ffb3f1dda848088d9380251b9a3087", null ],
-    [ "sceGxmTextureSetGammaMode", "group__SceGxmUser.html#gac574f640cc11018d614cedeb13db5a4c", null ],
-    [ "sceGxmTextureSetHeight", "group__SceGxmUser.html#ga764047ad6f6437dd60b09b685930fcc2", null ],
-    [ "sceGxmTextureSetLodBias", "group__SceGxmUser.html#gac780feeea34a2f638aa0d8d3f174fce3", null ],
-    [ "sceGxmTextureSetMagFilter", "group__SceGxmUser.html#gae3ce0c3066754bdd2843d8825630bc20", null ],
+    [ "sceGxmTextureInitCube", "group__SceGxmUser.html#gab287055258374f19006cb3eb15a8c4fe", null ],
+    [ "sceGxmTextureGetType", "group__SceGxmUser.html#ga49b8453913bdbc02f96815601cb39037", null ],
     [ "sceGxmTextureSetMinFilter", "group__SceGxmUser.html#ga62d73ee7c00355001dedef0225d8e8bd", null ],
+    [ "sceGxmTextureGetMinFilter", "group__SceGxmUser.html#ga8d484f4a717bb6ccbf0998930fe7e2cc", null ],
+    [ "sceGxmTextureSetMagFilter", "group__SceGxmUser.html#gae3ce0c3066754bdd2843d8825630bc20", null ],
+    [ "sceGxmTextureGetMagFilter", "group__SceGxmUser.html#gabab3f54eb50f695ea48f20837ce0bcfc", null ],
     [ "sceGxmTextureSetMipFilter", "group__SceGxmUser.html#gaa302eca2c4c9f381573a0c7819d66425", null ],
-    [ "sceGxmTextureSetMipmapCount", "group__SceGxmUser.html#ga9902be0546c5d60cfdd1fdb8eeb84eff", null ],
-    [ "sceGxmTextureSetPalette", "group__SceGxmUser.html#ga927b6c76bb94dd41041eb5d85cb9aa8c", null ],
-    [ "sceGxmTextureSetStride", "group__SceGxmUser.html#ga375e1c41972bb518d9f8c2ce134c55a8", null ],
+    [ "sceGxmTextureGetMipFilter", "group__SceGxmUser.html#ga4ba7bfc4b45efa94a4681e976866e6b6", null ],
     [ "sceGxmTextureSetUAddrMode", "group__SceGxmUser.html#ga3153ce715bb2a8420d93a4d816631515", null ],
+    [ "sceGxmTextureGetUAddrMode", "group__SceGxmUser.html#gae264b91fc1b30dde1023c60b83d6c2dd", null ],
     [ "sceGxmTextureSetVAddrMode", "group__SceGxmUser.html#gace928f1cbfb5b602fc53c1d736daed4c", null ],
+    [ "sceGxmTextureGetVAddrMode", "group__SceGxmUser.html#ga8d807013601b32ebc77c3a2cfd62e24d", null ],
+    [ "sceGxmTextureSetFormat", "group__SceGxmUser.html#gad6ffb3f1dda848088d9380251b9a3087", null ],
+    [ "sceGxmTextureGetFormat", "group__SceGxmUser.html#ga7121c9c0ef40bec6606f4b493b3eef5a", null ],
+    [ "sceGxmTextureSetLodBias", "group__SceGxmUser.html#gac780feeea34a2f638aa0d8d3f174fce3", null ],
+    [ "sceGxmTextureGetLodBias", "group__SceGxmUser.html#ga7b5bf82b43d8867945f32069436a55aa", null ],
+    [ "sceGxmTextureSetStride", "group__SceGxmUser.html#ga375e1c41972bb518d9f8c2ce134c55a8", null ],
+    [ "sceGxmTextureGetStride", "group__SceGxmUser.html#gab5f04e3bd6f9420279b827b8f80f77b5", null ],
     [ "sceGxmTextureSetWidth", "group__SceGxmUser.html#ga291d530107f045e1e6644ca9698e7b4b", null ],
+    [ "sceGxmTextureGetWidth", "group__SceGxmUser.html#ga24ffd7f1b2522415a4f5a4abae5c9797", null ],
+    [ "sceGxmTextureSetHeight", "group__SceGxmUser.html#ga764047ad6f6437dd60b09b685930fcc2", null ],
+    [ "sceGxmTextureGetHeight", "group__SceGxmUser.html#ga5fb1bfc397a2788028b3804ae2ea55e5", null ],
+    [ "sceGxmTextureSetData", "group__SceGxmUser.html#ga80466aec87d45cb253c5f155e850083d", null ],
+    [ "sceGxmTextureGetData", "group__SceGxmUser.html#gae5ff048a2ca1a4887aa59355988b76c1", null ],
+    [ "sceGxmTextureSetMipmapCount", "group__SceGxmUser.html#ga9902be0546c5d60cfdd1fdb8eeb84eff", null ],
+    [ "sceGxmTextureGetMipmapCount", "group__SceGxmUser.html#gaed2116ef359bcfa8a7bfa77af251d20d", null ],
+    [ "sceGxmTextureSetPalette", "group__SceGxmUser.html#ga927b6c76bb94dd41041eb5d85cb9aa8c", null ],
+    [ "sceGxmTextureGetPalette", "group__SceGxmUser.html#ga823067c4fd293c363f4f3917ac405d39", null ],
+    [ "sceGxmTextureGetGammaMode", "group__SceGxmUser.html#ga4d97a76f79bb485067b48b4e25c595bb", null ],
+    [ "sceGxmTextureSetGammaMode", "group__SceGxmUser.html#gac574f640cc11018d614cedeb13db5a4c", null ],
+    [ "sceGxmGetPrecomputedVertexStateSize", "group__SceGxmUser.html#gaffa538ff4d8f8bdd3cd096e7ab062e5e", null ],
+    [ "sceGxmPrecomputedVertexStateInit", "group__SceGxmUser.html#gaa9a029eaa919d3189334ab4e0ad7f60c", null ],
+    [ "sceGxmPrecomputedVertexStateSetDefaultUniformBuffer", "group__SceGxmUser.html#gadaeb99a70e5392c61b6e972cea127678", null ],
+    [ "sceGxmPrecomputedVertexStateGetDefaultUniformBuffer", "group__SceGxmUser.html#ga1a167374492ccce8175d29cc92da6365", null ],
+    [ "sceGxmPrecomputedVertexStateSetAllTextures", "group__SceGxmUser.html#ga5153034c2e5407fcb6e5c54f87f7d915", null ],
+    [ "sceGxmPrecomputedVertexStateSetTexture", "group__SceGxmUser.html#gaf7f7e6a5dea328df7ab277cafc1e732e", null ],
+    [ "sceGxmPrecomputedVertexStateSetAllUniformBuffers", "group__SceGxmUser.html#ga506d2a8d1dfdaa18004eee7b6199df40", null ],
+    [ "sceGxmPrecomputedVertexStateSetUniformBuffer", "group__SceGxmUser.html#gad2e6f2dc01cdc1e04b2af67cac190907", null ],
+    [ "sceGxmGetPrecomputedFragmentStateSize", "group__SceGxmUser.html#ga1c46e364bea525936c7888cd81f52566", null ],
+    [ "sceGxmPrecomputedFragmentStateInit", "group__SceGxmUser.html#ga2a0e51f0ec3d1543e008aea4fef0b065", null ],
+    [ "sceGxmPrecomputedFragmentStateSetDefaultUniformBuffer", "group__SceGxmUser.html#ga1b9b87ac9012d3ec6fd0db12c4ae2013", null ],
+    [ "sceGxmPrecomputedFragmentStateGetDefaultUniformBuffer", "group__SceGxmUser.html#ga19cc14346e7c821e8115268beed9524b", null ],
+    [ "sceGxmPrecomputedFragmentStateSetAllTextures", "group__SceGxmUser.html#gae413cd3e05f77ccb259c644723eae8fe", null ],
+    [ "sceGxmPrecomputedFragmentStateSetTexture", "group__SceGxmUser.html#gabb46f11deaa9da3b38759d4df15113cf", null ],
+    [ "sceGxmPrecomputedFragmentStateSetAllUniformBuffers", "group__SceGxmUser.html#ga3b8e52667280a2229f39d74e5a160856", null ],
+    [ "sceGxmPrecomputedFragmentStateSetUniformBuffer", "group__SceGxmUser.html#ga5d6faf45a01adeef7d0ac045ca023086", null ],
+    [ "sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces", "group__SceGxmUser.html#ga52408110ffcdae3e8dd05e8a31016fe4", null ],
+    [ "sceGxmGetPrecomputedDrawSize", "group__SceGxmUser.html#ga90d04cffc06557fa3f03765d377a97ef", null ],
+    [ "sceGxmPrecomputedDrawInit", "group__SceGxmUser.html#ga01c65a68ae720aa1ffa269b468054ed7", null ],
+    [ "sceGxmPrecomputedDrawSetAllVertexStreams", "group__SceGxmUser.html#gacc5028161246ae66e1a12e3dfa591bf8", null ],
+    [ "sceGxmPrecomputedDrawSetVertexStream", "group__SceGxmUser.html#ga598e576454399c8daac5f8b39d614ea3", null ],
+    [ "sceGxmPrecomputedDrawSetParams", "group__SceGxmUser.html#ga05036f4a7f5ab03164228cbed93909e6", null ],
+    [ "sceGxmPrecomputedDrawSetParamsInstanced", "group__SceGxmUser.html#ga3b2a94bb7af1ced3ec8ca1de96fe199e", null ],
+    [ "sceGxmGetRenderTargetMemSize", "group__SceGxmUser.html#ga0663655e1ab7f071617d872f49b36047", null ],
+    [ "sceGxmCreateRenderTarget", "group__SceGxmUser.html#ga76071cc5386926a5543d0dbf562ce88c", null ],
+    [ "sceGxmRenderTargetGetHostMem", "group__SceGxmUser.html#gafd79dc31cd3d4e1eb040c73458f42592", null ],
+    [ "sceGxmRenderTargetGetDriverMemBlock", "group__SceGxmUser.html#gaf2a8ff437a862a01417d9762cd19d865", null ],
+    [ "sceGxmDestroyRenderTarget", "group__SceGxmUser.html#ga725302f5052ab2968dd3d6777f324897", null ],
+    [ "sceGxmSetUniformDataF", "group__SceGxmUser.html#ga056dfffe5cdbf51035becf28b8166421", null ],
     [ "sceGxmTransferCopy", "group__SceGxmUser.html#gadf1f493cd3bfb63bf4aed4641a3075cc", null ],
     [ "sceGxmTransferDownscale", "group__SceGxmUser.html#gaa23cde550c9213b294fed456c42856a8", null ],
-    [ "sceGxmTransferFinish", "group__SceGxmUser.html#ga90cd5c5b092fb7bbe0be8d41549256ba", null ],
-    [ "sceGxmUnmapFragmentUsseMemory", "group__SceGxmUser.html#gaa0430cd12457a6b5eff16d3e0bd1b425", null ],
-    [ "sceGxmUnmapMemory", "group__SceGxmUser.html#gad4a57723e7adcf155cfe5b3a348a413b", null ],
-    [ "sceGxmUnmapVertexUsseMemory", "group__SceGxmUser.html#gab51f3e125420cb1da0f9bc10cc6d1b56", null ],
-    [ "sceGxmVertexProgramGetProgram", "group__SceGxmUser.html#ga646cf6e5132ec515195d7038460d3d3e", null ],
-    [ "sceGxmVshInitialize", "group__SceGxmUser.html#gab5134f5d458a35a97adedc8092b2d349", null ]
+    [ "sceGxmTransferFinish", "group__SceGxmUser.html#ga90cd5c5b092fb7bbe0be8d41549256ba", null ]
 ];

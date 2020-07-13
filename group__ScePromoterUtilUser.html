@@ -139,17 +139,17 @@ Functions</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga9502adfd940ed44d8d41cf232a51d6ed"></a>char</td>
-<td class="fieldname">
-path[128]</td>
-<td class="fielddoc">
-Directory of extracted LA update data. </td></tr>
-<tr><td class="fieldtype">
 <a id="ga87eebad8f8b76626a97083155ea7e133"></a>char</td>
 <td class="fieldname">
 titleid[12]</td>
 <td class="fielddoc">
 Target app. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9502adfd940ed44d8d41cf232a51d6ed"></a>char</td>
+<td class="fieldname">
+path[128]</td>
+<td class="fielddoc">
+Directory of extracted LA update data. </td></tr>
 </table>
 
 </div>
@@ -169,23 +169,11 @@ Target app. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gaef32f7e391fedfc671064fe4effe4410"></a>uint32_t</td>
-<td class="fieldname">
-attribute</td>
-<td class="fielddoc">
-Additional Attributes (Appears to be 0x1 on PSM content but 0x00 on Vita contents) </td></tr>
-<tr><td class="fieldtype">
 <a id="gad891f8d2e16a6844479592bedaeab659"></a>char</td>
 <td class="fieldname">
 path[0x80]</td>
 <td class="fielddoc">
 Install path usually (ux0:/temp/game) </td></tr>
-<tr><td class="fieldtype">
-<a id="gaaab620595d8a0196914d8b3ce18c11ec"></a>char</td>
-<td class="fieldname">
-reserved[0x1C]</td>
-<td class="fielddoc">
-</td></tr>
 <tr><td class="fieldtype">
 <a id="ga148934ca2fd22348faf56e76eea3a167"></a>char</td>
 <td class="fieldname">
@@ -198,6 +186,18 @@ Game titleid. </td></tr>
 type</td>
 <td class="fielddoc">
 Package type. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaef32f7e391fedfc671064fe4effe4410"></a>uint32_t</td>
+<td class="fieldname">
+attribute</td>
+<td class="fielddoc">
+Additional Attributes (Appears to be 0x1 on PSM content but 0x00 on Vita contents) </td></tr>
+<tr><td class="fieldtype">
+<a id="gaaab620595d8a0196914d8b3ce18c11ec"></a>char</td>
+<td class="fieldname">
+reserved[0x1C]</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -226,40 +226,46 @@ Package type. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5ffdfd2b012b44bc8522fa87554da475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ffdfd2b012b44bc8522fa87554da475">&#9670;&nbsp;</a></span>scePromoterUtilityCheckExist()</h2>
+<a id="ga6879c67b9aa18d951f8be26748fb6796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6879c67b9aa18d951f8be26748fb6796">&#9670;&nbsp;</a></span>scePromoterUtilityInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePromoterUtilityCheckExist </td>
+          <td class="memname">int scePromoterUtilityInit </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>titleid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if titleid exists. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*res</td><td>- the result, unknown meaning</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if exists, &lt; 0 otherwise. </dd></dl>
+<p>Init the promoter utility. </p>
+<dl class="section note"><dt>Note</dt><dd>Needs to be called before using the other functions.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="gabaf2f7034ae507707a7d8bd76d3992a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabaf2f7034ae507707a7d8bd76d3992a8">&#9670;&nbsp;</a></span>scePromoterUtilityExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePromoterUtilityExit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinit the promoter utility. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
@@ -290,99 +296,29 @@ Package type. </td></tr>
 
 </div>
 </div>
-<a id="gabaf2f7034ae507707a7d8bd76d3992a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabaf2f7034ae507707a7d8bd76d3992a8">&#9670;&nbsp;</a></span>scePromoterUtilityExit()</h2>
+<a id="ga0dda33e468ce7227977204a10da6b28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0dda33e468ce7227977204a10da6b28e">&#9670;&nbsp;</a></span>scePromoterUtilityUpdateLiveArea()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePromoterUtilityExit </td>
+          <td class="memname">int scePromoterUtilityUpdateLiveArea </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate">ScePromoterUtilityLAUpdate</a> *&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deinit the promoter utility. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
-
-</div>
-</div>
-<a id="ga33fffeec15e5daff578d42102ad9572f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga33fffeec15e5daff578d42102ad9572f">&#9670;&nbsp;</a></span>scePromoterUtilityGetResult()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePromoterUtilityGetResult </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>res</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the result of a finished operation. </p>
+<p>Update the LiveArea resources of an app. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*res</td><td>- the result, 0 on success</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*args</td><td>- see <a class="el" href="group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate" title="Parameters for scePromoterUtilityUpdateLiveArea()">ScePromoterUtilityLAUpdate</a></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 if failed. </dd></dl>
-
-</div>
-</div>
-<a id="ga0bb20f69381f605e9fe5eff670b6ffd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0bb20f69381f605e9fe5eff670b6ffd2">&#9670;&nbsp;</a></span>scePromoterUtilityGetState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePromoterUtilityGetState </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the state of an operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*state</td><td>- the current status, 0 when finished</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 if failed. </dd></dl>
-
-</div>
-</div>
-<a id="ga6879c67b9aa18d951f8be26748fb6796"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6879c67b9aa18d951f8be26748fb6796">&#9670;&nbsp;</a></span>scePromoterUtilityInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePromoterUtilityInit </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Init the promoter utility. </p>
-<dl class="section note"><dt>Note</dt><dd>Needs to be called before using the other functions.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
@@ -490,30 +426,94 @@ Package type. </td></tr>
 
 </div>
 </div>
-<a id="ga0dda33e468ce7227977204a10da6b28e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0dda33e468ce7227977204a10da6b28e">&#9670;&nbsp;</a></span>scePromoterUtilityUpdateLiveArea()</h2>
+<a id="ga0bb20f69381f605e9fe5eff670b6ffd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bb20f69381f605e9fe5eff670b6ffd2">&#9670;&nbsp;</a></span>scePromoterUtilityGetState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePromoterUtilityUpdateLiveArea </td>
+          <td class="memname">int scePromoterUtilityGetState </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate">ScePromoterUtilityLAUpdate</a> *&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update the LiveArea resources of an app. </p>
+<p>Returns the state of an operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*args</td><td>- see <a class="el" href="group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate" title="Parameters for scePromoterUtilityUpdateLiveArea()">ScePromoterUtilityLAUpdate</a></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*state</td><td>- the current status, 0 when finished</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 if failed. </dd></dl>
+
+</div>
+</div>
+<a id="ga33fffeec15e5daff578d42102ad9572f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga33fffeec15e5daff578d42102ad9572f">&#9670;&nbsp;</a></span>scePromoterUtilityGetResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePromoterUtilityGetResult </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the result of a finished operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">*res</td><td>- the result, 0 on success</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 if failed. </dd></dl>
+
+</div>
+</div>
+<a id="ga5ffdfd2b012b44bc8522fa87554da475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ffdfd2b012b44bc8522fa87554da475">&#9670;&nbsp;</a></span>scePromoterUtilityCheckExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePromoterUtilityCheckExist </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>titleid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if titleid exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">*res</td><td>- the result, unknown meaning</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if exists, &lt; 0 otherwise. </dd></dl>
 
 </div>
 </div>

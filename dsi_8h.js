@@ -10,15 +10,15 @@ var dsi_8h =
       [ "SCE_DSI_HEAD_OLED_LCD", "group__SceDsiKernel.html#ggad209bc384800f1dd50bcdac847a5e84cacdb6fa25aef98497dba7c9ca496232b5", null ],
       [ "SCE_DSI_HEAD_HDMI", "group__SceDsiKernel.html#ggad209bc384800f1dd50bcdac847a5e84cad69d76275f630911ec3e13b02a27aa51", null ]
     ] ],
-    [ "ksceDsiDcsRead", "group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535", null ],
-    [ "ksceDsiDcsShortWrite", "group__SceDsiKernel.html#ga60d2da12a2b6c0be8466bb085107090d", null ],
-    [ "ksceDsiDisableHead", "group__SceDsiKernel.html#ga696dd4909857b945d58bb67ccda13ab6", null ],
     [ "ksceDsiEnableHead", "group__SceDsiKernel.html#gac8e0556346b688585758b2f123da9005", null ],
-    [ "ksceDsiGenericReadRequest", "group__SceDsiKernel.html#gad9eb8a4c69851163c9df138a711ce4bd", null ],
-    [ "ksceDsiGenericShortWrite", "group__SceDsiKernel.html#gaca40aa28cbcee8b0db7d25f43b947944", null ],
-    [ "ksceDsiGetPixelClock", "group__SceDsiKernel.html#gae1ce464269ce9cf89147f78b655e98d8", null ],
-    [ "ksceDsiGetVicResolution", "group__SceDsiKernel.html#ga3eca8dfb47b4bd841a636917ed93e7c1", null ],
+    [ "ksceDsiDisableHead", "group__SceDsiKernel.html#ga696dd4909857b945d58bb67ccda13ab6", null ],
     [ "ksceDsiSendBlankingPacket", "group__SceDsiKernel.html#ga0eceefaabb910990e3cef4196742b93b", null ],
     [ "ksceDsiSetLanesAndPixelSize", "group__SceDsiKernel.html#ga5ffa8869e3a90cddc0eda60615269f27", null ],
-    [ "ksceDsiSetVic", "group__SceDsiKernel.html#ga7111bc92e031acfd4c6b7b0f7ceaff9b", null ]
+    [ "ksceDsiSetVic", "group__SceDsiKernel.html#ga7111bc92e031acfd4c6b7b0f7ceaff9b", null ],
+    [ "ksceDsiGetVicResolution", "group__SceDsiKernel.html#ga3eca8dfb47b4bd841a636917ed93e7c1", null ],
+    [ "ksceDsiGetPixelClock", "group__SceDsiKernel.html#gae1ce464269ce9cf89147f78b655e98d8", null ],
+    [ "ksceDsiGenericShortWrite", "group__SceDsiKernel.html#gaca40aa28cbcee8b0db7d25f43b947944", null ],
+    [ "ksceDsiGenericReadRequest", "group__SceDsiKernel.html#gad9eb8a4c69851163c9df138a711ce4bd", null ],
+    [ "ksceDsiDcsShortWrite", "group__SceDsiKernel.html#ga60d2da12a2b6c0be8466bb085107090d", null ],
+    [ "ksceDsiDcsRead", "group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535", null ]
 ];

@@ -112,6 +112,24 @@ Functions</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="gafaef87aca3c8134ecaf9e9da85c342a9"></a>uint32_t</td>
+<td class="fieldname">
+tag</td>
+<td class="fielddoc">
+GXT Identifier. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga4d0127936bc145adbced661664aa7dcb"></a>uint32_t</td>
+<td class="fieldname">
+version</td>
+<td class="fielddoc">
+Version number. </td></tr>
+<tr><td class="fieldtype">
+<a id="gae860d9be2c1f3a221509c39273d9089d"></a>uint32_t</td>
+<td class="fieldname">
+numTextures</td>
+<td class="fielddoc">
+Number of textures. </td></tr>
+<tr><td class="fieldtype">
 <a id="ga30691c0f07093414fc3574ffd634c86d"></a>uint32_t</td>
 <td class="fieldname">
 dataOffset</td>
@@ -136,29 +154,11 @@ numP8Palettes</td>
 <td class="fielddoc">
 Number of 256 entry palettes. </td></tr>
 <tr><td class="fieldtype">
-<a id="gae860d9be2c1f3a221509c39273d9089d"></a>uint32_t</td>
-<td class="fieldname">
-numTextures</td>
-<td class="fielddoc">
-Number of textures. </td></tr>
-<tr><td class="fieldtype">
 <a id="ga14e12fc1cc8117775be90486d564dc94"></a>uint32_t</td>
 <td class="fieldname">
 pad</td>
 <td class="fielddoc">
 Padding. </td></tr>
-<tr><td class="fieldtype">
-<a id="gafaef87aca3c8134ecaf9e9da85c342a9"></a>uint32_t</td>
-<td class="fieldname">
-tag</td>
-<td class="fielddoc">
-GXT Identifier. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga4d0127936bc145adbced661664aa7dcb"></a>uint32_t</td>
-<td class="fieldname">
-version</td>
-<td class="fielddoc">
-Version number. </td></tr>
 </table>
 
 </div>
@@ -190,17 +190,35 @@ dataSize</td>
 <td class="fielddoc">
 Size of the texture data. </td></tr>
 <tr><td class="fieldtype">
+<a id="ga47e0ff16339e41f1fd99e4bf61d7c2df"></a>uint32_t</td>
+<td class="fieldname">
+paletteIndex</td>
+<td class="fielddoc">
+Index of the palette. </td></tr>
+<tr><td class="fieldtype">
 <a id="ga87008c3b5a69ba63130135491d4556de"></a>uint32_t</td>
 <td class="fieldname">
 flags</td>
 <td class="fielddoc">
 Texture flags. </td></tr>
 <tr><td class="fieldtype">
+<a id="gaff7bfd3d8ad283c915078527ada31b4f"></a>uint32_t</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+Texture type. </td></tr>
+<tr><td class="fieldtype">
 <a id="ga0d08995736d102c3bad30d8c0db55d04"></a>uint32_t</td>
 <td class="fieldname">
 format</td>
 <td class="fielddoc">
 Texture format. </td></tr>
+<tr><td class="fieldtype">
+<a id="gabdbd27dc82fa26737a9f2a0503aa2226"></a>uint16_t</td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+Texture width. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga6f68a6f383571d882cd8ebb68617dece"></a>uint16_t</td>
 <td class="fieldname">
@@ -219,24 +237,6 @@ Number of mipmaps. </td></tr>
 pad[3]</td>
 <td class="fielddoc">
 Padding. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga47e0ff16339e41f1fd99e4bf61d7c2df"></a>uint32_t</td>
-<td class="fieldname">
-paletteIndex</td>
-<td class="fielddoc">
-Index of the palette. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaff7bfd3d8ad283c915078527ada31b4f"></a>uint32_t</td>
-<td class="fieldname">
-type</td>
-<td class="fielddoc">
-Texture type. </td></tr>
-<tr><td class="fieldtype">
-<a id="gabdbd27dc82fa26737a9f2a0503aa2226"></a>uint16_t</td>
-<td class="fieldname">
-width</td>
-<td class="fielddoc">
-Texture width. </td></tr>
 </table>
 
 </div>

@@ -102,9 +102,41 @@ Functions</h2></td></tr>
 <tr class="separator:gae4ecfde30b63f6a3e3080c6d3845b463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6b568a62be22225e3646c1604663f68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gae6b568a62be22225e3646c1604663f68">ksceI2cTransferWriteRead</a> (int bus, unsigned int write_addr, unsigned char *write_buffer, int write_size, unsigned int read_addr, unsigned char *read_buffer, int read_size)</td></tr>
 <tr class="separator:gae6b568a62be22225e3646c1604663f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e042297db7f0bbdcf22bbab4956063b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga6e042297db7f0bbdcf22bbab4956063b">ksceI2cSetDebugHandlers</a> (int bus, <a class="el" href="structSceI2cDebugHandlers.html">SceI2cDebugHandlers</a> *debug_handlers)</td></tr>
+<tr class="memitem:ga6e042297db7f0bbdcf22bbab4956063b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga6e042297db7f0bbdcf22bbab4956063b">ksceI2cSetDebugHandlers</a> (int bus, <a class="el" href="group__SceI2cKernel.html#structSceI2cDebugHandlers">SceI2cDebugHandlers</a> *debug_handlers)</td></tr>
 <tr class="separator:ga6e042297db7f0bbdcf22bbab4956063b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceI2cDebugHandlers" id="structSceI2cDebugHandlers"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceI2cDebugHandlers">&#9670;&nbsp;</a></span>SceI2cDebugHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceI2cDebugHandlers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="memberdecls">
+<tr><td colspan="2"><h3>Data Fields</h3></td></tr>
+<tr class="memitem:gae463ec16de70164b2086f5c0419d0f68"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68">size</a></td></tr>
+<tr class="separator:gae463ec16de70164b2086f5c0419d0f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga53a420dd363a0779d7b2803cb3ce6e6b">write_start</a> )(int bus, int addr, unsigned char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, int <a class="el" href="group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68">size</a>)</td></tr>
+<tr class="separator:ga53a420dd363a0779d7b2803cb3ce6e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gac5ce99ad217cd98a5f8f7df2dfcc5fba">write_end</a> )(int bus, int error, int result)</td></tr>
+<tr class="separator:gac5ce99ad217cd98a5f8f7df2dfcc5fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga801448022c8a9eab02bc2fb023d62789"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga801448022c8a9eab02bc2fb023d62789">read_start</a> )(int bus, int addr, unsigned char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, int <a class="el" href="group__SceI2cKernel.html#gae463ec16de70164b2086f5c0419d0f68">size</a>)</td></tr>
+<tr class="separator:ga801448022c8a9eab02bc2fb023d62789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc06133c688ab03589247571a5300646"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#gafc06133c688ab03589247571a5300646">read_end</a> )(int bus, int error, int result)</td></tr>
+<tr class="separator:gafc06133c688ab03589247571a5300646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72850026d74300d5ee984083e945cf09"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga72850026d74300d5ee984083e945cf09">write_read_start</a> )(int bus, int write_addr, unsigned char *write_buffer, int write_size, unsigned int read_addr, unsigned char *read_buffer, int read_size)</td></tr>
+<tr class="separator:ga72850026d74300d5ee984083e945cf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f1168916f5371c66638a47a635fb4e4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceI2cKernel.html#ga8f1168916f5371c66638a47a635fb4e4">write_read_end</a> )(int bus, int error, int result)</td></tr>
+<tr class="separator:ga8f1168916f5371c66638a47a635fb4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga959ed6ea6bbc53ac3c5a4def0d3842b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga959ed6ea6bbc53ac3c5a4def0d3842b1">&#9670;&nbsp;</a></span>SceI2cErrorCode</h2>
@@ -156,34 +188,6 @@ Functions</h2></td></tr>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>bus</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6e042297db7f0bbdcf22bbab4956063b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e042297db7f0bbdcf22bbab4956063b">&#9670;&nbsp;</a></span>ksceI2cSetDebugHandlers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceI2cSetDebugHandlers </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bus</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structSceI2cDebugHandlers.html">SceI2cDebugHandlers</a> *&#160;</td>
-          <td class="paramname"><em>debug_handlers</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -317,6 +321,34 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>read_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e042297db7f0bbdcf22bbab4956063b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e042297db7f0bbdcf22bbab4956063b">&#9670;&nbsp;</a></span>ksceI2cSetDebugHandlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceI2cSetDebugHandlers </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceI2cKernel.html#structSceI2cDebugHandlers">SceI2cDebugHandlers</a> *&#160;</td>
+          <td class="paramname"><em>debug_handlers</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

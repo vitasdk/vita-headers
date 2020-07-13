@@ -236,9 +236,9 @@ s_addr</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gacd0fdb267854850b6210ab28dc268ae1"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<a id="gac479353a4404f51ba0c9d3f426445da8"></a>unsigned char</td>
 <td class="fieldname">
-sin_addr</td>
+sin_len</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -248,15 +248,15 @@ sin_family</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gac479353a4404f51ba0c9d3f426445da8"></a>unsigned char</td>
-<td class="fieldname">
-sin_len</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gaa6b56a9484c92aee0df370af67b9a2ce"></a>unsigned short int</td>
 <td class="fieldname">
 sin_port</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gacd0fdb267854850b6210ab28dc268ae1"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+sin_addr</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -289,15 +289,15 @@ sin_zero[6]</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga248cdd4f6beb090ce1539b655ab89dd0"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
-<td class="fieldname">
-imr_interface</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga4babe31cb78ba1f49cd19f19babecd65"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
 <td class="fieldname">
 imr_multiaddr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga248cdd4f6beb090ce1539b655ab89dd0"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+imr_interface</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -364,15 +364,15 @@ dns_addr[2]</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga92ce1f8218014318817fedd363068b35"></a>int</td>
-<td class="fieldname">
-l_linger</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga55f1f4237bc331d9fc119480fead09d0"></a>int</td>
 <td class="fieldname">
 l_onoff</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga92ce1f8218014318817fedd363068b35"></a>int</td>
+<td class="fieldname">
+l_linger</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -393,9 +393,9 @@ l_onoff</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gacc022f9bfd287a37cda7e01b5a815411"></a>char</td>
+<a id="gaa2d185da1ee96e36057e2e961c151105"></a>unsigned char</td>
 <td class="fieldname">
-sa_data[14]</td>
+sa_len</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -405,9 +405,9 @@ sa_family</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa2d185da1ee96e36057e2e961c151105"></a>unsigned char</td>
+<a id="gacc022f9bfd287a37cda7e01b5a815411"></a>char</td>
 <td class="fieldname">
-sa_len</td>
+sa_data[14]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -457,21 +457,15 @@ iov_len</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gac192ce0745a4e64d729bbf9ff7df1822"></a>void *</td>
+<a id="gac9a78c79413b3aac89e06fc954472591"></a>void *</td>
 <td class="fieldname">
-msg_control</td>
+msg_name</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga41fd38f7a96491b01dc7edfe393fccc6"></a>unsigned int</td>
+<a id="ga1138af680a3460989f95a9d6081e4e3e"></a>unsigned int</td>
 <td class="fieldname">
-msg_controllen</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2cf95e4fef19ea1e3ad45a0767dcfe7c"></a>int</td>
-<td class="fieldname">
-msg_flags</td>
+msg_namelen</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -487,15 +481,21 @@ msg_iovlen</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gac9a78c79413b3aac89e06fc954472591"></a>void *</td>
+<a id="gac192ce0745a4e64d729bbf9ff7df1822"></a>void *</td>
 <td class="fieldname">
-msg_name</td>
+msg_control</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga1138af680a3460989f95a9d6081e4e3e"></a>unsigned int</td>
+<a id="ga41fd38f7a96491b01dc7edfe393fccc6"></a>unsigned int</td>
 <td class="fieldname">
-msg_namelen</td>
+msg_controllen</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2cf95e4fef19ea1e3ad45a0767dcfe7c"></a>int</td>
+<td class="fieldname">
+msg_flags</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -516,30 +516,6 @@ msg_namelen</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga30931886611d80b8dce35a3a38b29a43"></a>int</td>
-<td class="fieldname">
-flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga16bb936ccb88c7054a0c8daf82e46eb4"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
-<td class="fieldname">
-local_adr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaf436e2857a796ebeeb3f3c45995478f5"></a>unsigned short int</td>
-<td class="fieldname">
-local_port</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga3fc488eee753d16dea570eaa6846acd9"></a>unsigned short int</td>
-<td class="fieldname">
-local_vport</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga69363e469b9b261c85ce8c7255f04a39"></a>char</td>
 <td class="fieldname">
 name[<a class="el" href="group__SceNetKernel.html#ga5676fe21a495a55df7ee92b79bef7ccf">SCE_NET_DEBUG_NAME_LEN_MAX</a>+1]</td>
@@ -552,57 +528,9 @@ pid</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga3577dc0a9b8cea9859adfc829381691d"></a>char</td>
-<td class="fieldname">
-policy</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga34b5ad826cf02557f4533b217bdd40f0"></a>int</td>
-<td class="fieldname">
-recv_queue_length</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5f1c627268819e97d20854b62c933d11"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
-<td class="fieldname">
-remote_adr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga716a7692462c4871220f727bcc8f2016"></a>unsigned short int</td>
-<td class="fieldname">
-remote_port</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gad2d5052837518f0fbc451822865c7c55"></a>unsigned short int</td>
-<td class="fieldname">
-remote_vport</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9242d9ae96b4ded37f207fd3d1c540d1"></a>int</td>
-<td class="fieldname">
-reserved[8]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gab8cdc3146858eb11e4328e4bfaeeea09"></a>short int</td>
-<td class="fieldname">
-reserved16</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gaf234709f9de8cedfed64b1363518c37a"></a>int</td>
 <td class="fieldname">
 s</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5b122d63efbbe5dd6866c2a65578a674"></a>int</td>
-<td class="fieldname">
-send_queue_length</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -612,9 +540,81 @@ socket_type</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="ga3577dc0a9b8cea9859adfc829381691d"></a>char</td>
+<td class="fieldname">
+policy</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab8cdc3146858eb11e4328e4bfaeeea09"></a>short int</td>
+<td class="fieldname">
+reserved16</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga34b5ad826cf02557f4533b217bdd40f0"></a>int</td>
+<td class="fieldname">
+recv_queue_length</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5b122d63efbbe5dd6866c2a65578a674"></a>int</td>
+<td class="fieldname">
+send_queue_length</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga16bb936ccb88c7054a0c8daf82e46eb4"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+local_adr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5f1c627268819e97d20854b62c933d11"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+remote_adr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf436e2857a796ebeeb3f3c45995478f5"></a>unsigned short int</td>
+<td class="fieldname">
+local_port</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga716a7692462c4871220f727bcc8f2016"></a>unsigned short int</td>
+<td class="fieldname">
+remote_port</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3fc488eee753d16dea570eaa6846acd9"></a>unsigned short int</td>
+<td class="fieldname">
+local_vport</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad2d5052837518f0fbc451822865c7c55"></a>unsigned short int</td>
+<td class="fieldname">
+remote_vport</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="gad3b748906c58e74c4d929adb66669451"></a>int</td>
 <td class="fieldname">
 state</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga30931886611d80b8dce35a3a38b29a43"></a>int</td>
+<td class="fieldname">
+flags</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9242d9ae96b4ded37f207fd3d1c540d1"></a>int</td>
+<td class="fieldname">
+reserved[8]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -635,27 +635,15 @@ state</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga80809fbc7e8e9ff9b95f7a7943773a6d"></a>int</td>
-<td class="fieldname">
-kernel_mem_free_min</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gadf0782e00d4fc5b694f4c826e500eb80"></a>int</td>
 <td class="fieldname">
 kernel_mem_free_size</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga2f9ef89a955f4b5c60d5e8dd4263305f"></a>int</td>
+<a id="ga80809fbc7e8e9ff9b95f7a7943773a6d"></a>int</td>
 <td class="fieldname">
-libnet_mem_free_min</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gac81f691593f9bafc86743c30ffce32f1"></a>int</td>
-<td class="fieldname">
-libnet_mem_free_size</td>
+kernel_mem_free_min</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -668,6 +656,18 @@ packet_count</td>
 <a id="gaaa1f251a6ca5181bc392c1f74f9624af"></a>int</td>
 <td class="fieldname">
 packet_qos_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gac81f691593f9bafc86743c30ffce32f1"></a>int</td>
+<td class="fieldname">
+libnet_mem_free_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2f9ef89a955f4b5c60d5e8dd4263305f"></a>int</td>
+<td class="fieldname">
+libnet_mem_free_min</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -746,45 +746,9 @@ ver_hl</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gacdcf84481067b1da1429fb7e6a604a7d"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<a id="ga086d0f0c5e30528c7a5557f578824237"></a><a class="el" href="group__SceNetUser.html#unionSceNetIpHeaderUnion">SceNetIpHeaderUnion</a></td>
 <td class="fieldname">
-ip_dst</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga0e986cc60bd84578b5b7b308e90c2cec"></a>unsigned short</td>
-<td class="fieldname">
-ip_id</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa7599e847e251f6f6357aa448d24dcc2"></a>unsigned short</td>
-<td class="fieldname">
-ip_len</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gabdff0a08c4d5847fd1a255c9a8efb5af"></a>unsigned short</td>
-<td class="fieldname">
-ip_off</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga63d5a16e5ddd53113ed740d6ec9effa0"></a>unsigned char</td>
-<td class="fieldname">
-ip_p</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga79b7c259303a6719471aecc6533f1610"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
-<td class="fieldname">
-ip_src</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaf4c011aad7a123ff110bab429f44da26"></a>unsigned short</td>
-<td class="fieldname">
-ip_sum</td>
+un</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -794,15 +758,51 @@ ip_tos</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="gaa7599e847e251f6f6357aa448d24dcc2"></a>unsigned short</td>
+<td class="fieldname">
+ip_len</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga0e986cc60bd84578b5b7b308e90c2cec"></a>unsigned short</td>
+<td class="fieldname">
+ip_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gabdff0a08c4d5847fd1a255c9a8efb5af"></a>unsigned short</td>
+<td class="fieldname">
+ip_off</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga49b4d62492114506318be9d6b9d0504b"></a>unsigned char</td>
 <td class="fieldname">
 ip_ttl</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga086d0f0c5e30528c7a5557f578824237"></a><a class="el" href="group__SceNetUser.html#unionSceNetIpHeaderUnion">SceNetIpHeaderUnion</a></td>
+<a id="ga63d5a16e5ddd53113ed740d6ec9effa0"></a>unsigned char</td>
 <td class="fieldname">
-un</td>
+ip_p</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf4c011aad7a123ff110bab429f44da26"></a>unsigned short</td>
+<td class="fieldname">
+ip_sum</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga79b7c259303a6719471aecc6533f1610"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+ip_src</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gacdcf84481067b1da1429fb7e6a604a7d"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+ip_dst</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -852,15 +852,15 @@ sequence</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gad9c61add131d763d706bc78ebe2cf42f"></a>unsigned short</td>
-<td class="fieldname">
-mtu</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gad95a4dcdf2ffa21492d95064f206cf36"></a>unsigned short</td>
 <td class="fieldname">
 unused</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad9c61add131d763d706bc78ebe2cf42f"></a>unsigned short</td>
+<td class="fieldname">
+mtu</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -887,15 +887,15 @@ echo</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga6bb9fe898b65e0b8b095366f63023417"></a><a class="el" href="group__SceNetUser.html#structSceNetIcmpHeaderFrag">SceNetIcmpHeaderFrag</a></td>
-<td class="fieldname">
-frag</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga93cb4c88cb9d39c1318fe47a6d5df8a4"></a>unsigned int</td>
 <td class="fieldname">
 gateway</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga6bb9fe898b65e0b8b095366f63023417"></a><a class="el" href="group__SceNetUser.html#structSceNetIcmpHeaderFrag">SceNetIcmpHeaderFrag</a></td>
+<td class="fieldname">
+frag</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -916,9 +916,9 @@ gateway</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga6d0bfae5b174add22285771c82577858"></a>unsigned short</td>
+<a id="gaa0226dd0b3c1f602a1b1fbf76c168d16"></a>unsigned char</td>
 <td class="fieldname">
-checksum</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -928,9 +928,9 @@ code</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa0226dd0b3c1f602a1b1fbf76c168d16"></a>unsigned char</td>
+<a id="ga6d0bfae5b174add22285771c82577858"></a>unsigned short</td>
 <td class="fieldname">
-type</td>
+checksum</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -944,28 +944,266 @@ un</td>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gabca3383275b64caf7192a28e759ed952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabca3383275b64caf7192a28e759ed952">&#9670;&nbsp;</a></span>ksceNetHtonl</h2>
+<a id="gacc4678d01a7ddc98687f49f3d4a0138d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc4678d01a7ddc98687f49f3d4a0138d">&#9670;&nbsp;</a></span>SCE_NET_IP_DEFAULT_MULTICAST_TTL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ksceNetHtonl&#160;&#160;&#160;__builtin_bswap32</td>
+          <td class="memname">#define SCE_NET_IP_DEFAULT_MULTICAST_TTL&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga10afe2fe24e087420dbc3b54345cd886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga10afe2fe24e087420dbc3b54345cd886">&#9670;&nbsp;</a></span>ksceNetHtons</h2>
+<a id="gabda4c61d948f51c2a8025e422e4d76eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabda4c61d948f51c2a8025e422e4d76eb">&#9670;&nbsp;</a></span>SCE_NET_IP_DEFAULT_MULTICAST_LOOP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ksceNetHtons&#160;&#160;&#160;__builtin_bswap16</td>
+          <td class="memname">#define SCE_NET_IP_DEFAULT_MULTICAST_LOOP&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae5c37b15d155123cb078e36b4f9f6b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5c37b15d155123cb078e36b4f9f6b48">&#9670;&nbsp;</a></span>SCE_NET_IPVERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IPVERSION&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0c3b022ca2f55b6202662cb98ee20013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c3b022ca2f55b6202662cb98ee20013">&#9670;&nbsp;</a></span>SCE_NET_IP_RF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IP_RF&#160;&#160;&#160;0x8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga09e405ae9d6632a0e97b1514a6936a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09e405ae9d6632a0e97b1514a6936a1e">&#9670;&nbsp;</a></span>SCE_NET_IP_DF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IP_DF&#160;&#160;&#160;0x4000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf386358fe3a989f341e75be11f8ef199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf386358fe3a989f341e75be11f8ef199">&#9670;&nbsp;</a></span>SCE_NET_IP_MF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IP_MF&#160;&#160;&#160;0x2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gace459fdb888372df092340b48e4cc9a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace459fdb888372df092340b48e4cc9a3">&#9670;&nbsp;</a></span>SCE_NET_IP_OFFMASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IP_OFFMASK&#160;&#160;&#160;0x1FFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab0b42fa96dcb2e5caa88b96c46ed9a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0b42fa96dcb2e5caa88b96c46ed9a0e">&#9670;&nbsp;</a></span>SCE_NET_INADDR_ANY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_INADDR_ANY&#160;&#160;&#160;0x00000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga122f2afc434c02334e38bee69fff868f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga122f2afc434c02334e38bee69fff868f">&#9670;&nbsp;</a></span>SCE_NET_INADDR_LOOPBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_INADDR_LOOPBACK&#160;&#160;&#160;0x7F000001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7c5a6a074f3ac1a3a6242e2ea0ffc611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c5a6a074f3ac1a3a6242e2ea0ffc611">&#9670;&nbsp;</a></span>SCE_NET_INADDR_BROADCAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_INADDR_BROADCAST&#160;&#160;&#160;0xFFFFFFFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5c91e958572e019c0a09da0dcac613c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c91e958572e019c0a09da0dcac613c8">&#9670;&nbsp;</a></span>SCE_NET_INADDR_UNSPEC_GROUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_INADDR_UNSPEC_GROUP&#160;&#160;&#160;0xE0000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaad34f0f561972d7caa6675413c7d3c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad34f0f561972d7caa6675413c7d3c61">&#9670;&nbsp;</a></span>SCE_NET_INADDR_AUTOIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_INADDR_AUTOIP&#160;&#160;&#160;0xA9FE0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga244d355d1a3ab492127345e682df8ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga244d355d1a3ab492127345e682df8ef9">&#9670;&nbsp;</a></span>SCE_NET_IN_CLASSD_NET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IN_CLASSD_NET&#160;&#160;&#160;0xF0000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga562b0dd213897560e76af148026908f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga562b0dd213897560e76af148026908f5">&#9670;&nbsp;</a></span>SCE_NET_IN_AUTOIP_NET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_IN_AUTOIP_NET&#160;&#160;&#160;0xFFFF0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaedfdc3b695a87341e75104aaee1d4467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedfdc3b695a87341e75104aaee1d4467">&#9670;&nbsp;</a></span>SCE_NET_ADHOC_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_ADHOC_PORT&#160;&#160;&#160;3658</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga63f759f69187fbdc1e4266fca9b9891c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63f759f69187fbdc1e4266fca9b9891c">&#9670;&nbsp;</a></span>SCE_NET_AF_INET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_AF_INET&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5676fe21a495a55df7ee92b79bef7ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5676fe21a495a55df7ee92b79bef7ccf">&#9670;&nbsp;</a></span>SCE_NET_DEBUG_NAME_LEN_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_DEBUG_NAME_LEN_MAX&#160;&#160;&#160;31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5bd1591024878b9392ffc1e1ed309953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5bd1591024878b9392ffc1e1ed309953">&#9670;&nbsp;</a></span>SCE_NET_ID_SOCKET_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_ID_SOCKET_MIN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4e3ea0bd604a1874b44ad9a56819e40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e3ea0bd604a1874b44ad9a56819e40c">&#9670;&nbsp;</a></span>SCE_NET_ID_SOCKET_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_NET_ID_SOCKET_MAX&#160;&#160;&#160;1023</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1066,266 +1304,28 @@ un</td>
 
 </div>
 </div>
-<a id="gaedfdc3b695a87341e75104aaee1d4467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaedfdc3b695a87341e75104aaee1d4467">&#9670;&nbsp;</a></span>SCE_NET_ADHOC_PORT</h2>
+<a id="ga10afe2fe24e087420dbc3b54345cd886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10afe2fe24e087420dbc3b54345cd886">&#9670;&nbsp;</a></span>ksceNetHtons</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SCE_NET_ADHOC_PORT&#160;&#160;&#160;3658</td>
+          <td class="memname">#define ksceNetHtons&#160;&#160;&#160;__builtin_bswap16</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga63f759f69187fbdc1e4266fca9b9891c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga63f759f69187fbdc1e4266fca9b9891c">&#9670;&nbsp;</a></span>SCE_NET_AF_INET</h2>
+<a id="gabca3383275b64caf7192a28e759ed952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabca3383275b64caf7192a28e759ed952">&#9670;&nbsp;</a></span>ksceNetHtonl</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SCE_NET_AF_INET&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5676fe21a495a55df7ee92b79bef7ccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5676fe21a495a55df7ee92b79bef7ccf">&#9670;&nbsp;</a></span>SCE_NET_DEBUG_NAME_LEN_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_DEBUG_NAME_LEN_MAX&#160;&#160;&#160;31</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4e3ea0bd604a1874b44ad9a56819e40c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e3ea0bd604a1874b44ad9a56819e40c">&#9670;&nbsp;</a></span>SCE_NET_ID_SOCKET_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_ID_SOCKET_MAX&#160;&#160;&#160;1023</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5bd1591024878b9392ffc1e1ed309953"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5bd1591024878b9392ffc1e1ed309953">&#9670;&nbsp;</a></span>SCE_NET_ID_SOCKET_MIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_ID_SOCKET_MIN&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga562b0dd213897560e76af148026908f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga562b0dd213897560e76af148026908f5">&#9670;&nbsp;</a></span>SCE_NET_IN_AUTOIP_NET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IN_AUTOIP_NET&#160;&#160;&#160;0xFFFF0000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga244d355d1a3ab492127345e682df8ef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga244d355d1a3ab492127345e682df8ef9">&#9670;&nbsp;</a></span>SCE_NET_IN_CLASSD_NET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IN_CLASSD_NET&#160;&#160;&#160;0xF0000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab0b42fa96dcb2e5caa88b96c46ed9a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0b42fa96dcb2e5caa88b96c46ed9a0e">&#9670;&nbsp;</a></span>SCE_NET_INADDR_ANY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_INADDR_ANY&#160;&#160;&#160;0x00000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaad34f0f561972d7caa6675413c7d3c61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad34f0f561972d7caa6675413c7d3c61">&#9670;&nbsp;</a></span>SCE_NET_INADDR_AUTOIP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_INADDR_AUTOIP&#160;&#160;&#160;0xA9FE0000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7c5a6a074f3ac1a3a6242e2ea0ffc611"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7c5a6a074f3ac1a3a6242e2ea0ffc611">&#9670;&nbsp;</a></span>SCE_NET_INADDR_BROADCAST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_INADDR_BROADCAST&#160;&#160;&#160;0xFFFFFFFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga122f2afc434c02334e38bee69fff868f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga122f2afc434c02334e38bee69fff868f">&#9670;&nbsp;</a></span>SCE_NET_INADDR_LOOPBACK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_INADDR_LOOPBACK&#160;&#160;&#160;0x7F000001</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5c91e958572e019c0a09da0dcac613c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c91e958572e019c0a09da0dcac613c8">&#9670;&nbsp;</a></span>SCE_NET_INADDR_UNSPEC_GROUP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_INADDR_UNSPEC_GROUP&#160;&#160;&#160;0xE0000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabda4c61d948f51c2a8025e422e4d76eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabda4c61d948f51c2a8025e422e4d76eb">&#9670;&nbsp;</a></span>SCE_NET_IP_DEFAULT_MULTICAST_LOOP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IP_DEFAULT_MULTICAST_LOOP&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacc4678d01a7ddc98687f49f3d4a0138d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc4678d01a7ddc98687f49f3d4a0138d">&#9670;&nbsp;</a></span>SCE_NET_IP_DEFAULT_MULTICAST_TTL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IP_DEFAULT_MULTICAST_TTL&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga09e405ae9d6632a0e97b1514a6936a1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga09e405ae9d6632a0e97b1514a6936a1e">&#9670;&nbsp;</a></span>SCE_NET_IP_DF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IP_DF&#160;&#160;&#160;0x4000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf386358fe3a989f341e75be11f8ef199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf386358fe3a989f341e75be11f8ef199">&#9670;&nbsp;</a></span>SCE_NET_IP_MF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IP_MF&#160;&#160;&#160;0x2000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gace459fdb888372df092340b48e4cc9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace459fdb888372df092340b48e4cc9a3">&#9670;&nbsp;</a></span>SCE_NET_IP_OFFMASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IP_OFFMASK&#160;&#160;&#160;0x1FFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0c3b022ca2f55b6202662cb98ee20013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c3b022ca2f55b6202662cb98ee20013">&#9670;&nbsp;</a></span>SCE_NET_IP_RF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IP_RF&#160;&#160;&#160;0x8000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae5c37b15d155123cb078e36b4f9f6b48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae5c37b15d155123cb078e36b4f9f6b48">&#9670;&nbsp;</a></span>SCE_NET_IPVERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_NET_IPVERSION&#160;&#160;&#160;4</td>
+          <td class="memname">#define ksceNetHtonl&#160;&#160;&#160;__builtin_bswap32</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1585,98 +1585,6 @@ un</td>
 
 </div>
 </div>
-<a id="ga65e7ad6abb68170d26980853b7d024b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65e7ad6abb68170d26980853b7d024b1">&#9670;&nbsp;</a></span>SceNetIcmpCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceNetUser.html#ga65e7ad6abb68170d26980853b7d024b1">SceNetIcmpCode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Codes to specify to <a class="el" href="group__SceNetUser.html#structSceNetIcmpHeader">SceNetIcmpHeader</a> structure. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a2304c5ef600836337d2286b91f6ad2e6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a4a17f9a522afc9a1068a93882c0d8db2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a5c7676950804a6836953cf1cf190b8d6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a8b9b2143bfc5d3baa185033c8b8dae6d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PORT_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a66028230204c1bfa10eb765ca77f05d2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_FRAG_AND_DF&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a7c44c92a07d26e5fa5ac82c4180791f7"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_FAILED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a68ba3bffb566465d38bf9c84240b963d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_NET_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a30ee59127312ea7b7fcd75b4849f587e"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_HOST_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1aec257495553a4503237efe3620784ba9"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_ISOLATED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a3b1aca2fb64d9788b992710c707677f4"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_ADMIN_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a816024f75709a4e518e01e4ae781afd5"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_HOST_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a19ebbe494a3ffbe99b3b338da617f41b"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_TOS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a9c64982114f6a1bec91549499d44c498"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1abb2f7333af22d92323602aabb885ebe0"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a1c69466cb5449e986f9601948e7b494e"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a2304c5ef600836337d2286b91f6ad2e6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a4a17f9a522afc9a1068a93882c0d8db2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a5c7676950804a6836953cf1cf190b8d6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a8b9b2143bfc5d3baa185033c8b8dae6d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PORT_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a66028230204c1bfa10eb765ca77f05d2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_FRAG_AND_DF&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a7c44c92a07d26e5fa5ac82c4180791f7"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_FAILED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a68ba3bffb566465d38bf9c84240b963d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_NET_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a30ee59127312ea7b7fcd75b4849f587e"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_HOST_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1aec257495553a4503237efe3620784ba9"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_ISOLATED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a3b1aca2fb64d9788b992710c707677f4"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_ADMIN_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a816024f75709a4e518e01e4ae781afd5"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_HOST_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a19ebbe494a3ffbe99b3b338da617f41b"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_TOS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a9c64982114f6a1bec91549499d44c498"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1abb2f7333af22d92323602aabb885ebe0"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a1c69466cb5449e986f9601948e7b494e"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="gaa9f84090d647762faf37438e980b70ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9f84090d647762faf37438e980b70ba">&#9670;&nbsp;</a></span>SceNetIcmpType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceNetUser.html#gaa9f84090d647762faf37438e980b70ba">SceNetIcmpType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Types to specify to <a class="el" href="group__SceNetUser.html#structSceNetIcmpHeader">SceNetIcmpHeader</a> structure. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa3e0ae2dfddf885b7db2731adc87fe98e"></a>SCE_NET_ICMP_TYPE_ECHO_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaf01afdddbc671a287ae2fac239682658"></a>SCE_NET_ICMP_TYPE_DEST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baae224a91de67c1c99e10a137fd37e6b52"></a>SCE_NET_ICMP_TYPE_SOURCE_QUENCH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa341cea8dc7c756b90dbc19ded7d88e02"></a>SCE_NET_ICMP_TYPE_REDIRECT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacf393b08022ae5a38f170aa725966d5c"></a>SCE_NET_ICMP_TYPE_ECHO_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa5cff623a12f64f908b81e0e17cf3a5f6"></a>SCE_NET_ICMP_TYPE_TIME_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaffd5ae6a9cbf8bf35a1d294b827e78ee"></a>SCE_NET_ICMP_TYPE_PARAMETER_PROBLEM&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa4ac43c8a7c0f6d6a4889ffeb28937970"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa80a8541c089c15c5ea04f012fb86956f"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa62a18c6cf2911577ffb76e229f2d5996"></a>SCE_NET_ICMP_TYPE_INFORMATION_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa902eb0a261821e7f2416173c29d88a13"></a>SCE_NET_ICMP_TYPE_INFORMATION_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa8b5dc92e0a75f660d2d04fc153fe055e"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacef9f969d668a9175d22dc200ee1b475"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa3e0ae2dfddf885b7db2731adc87fe98e"></a>SCE_NET_ICMP_TYPE_ECHO_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaf01afdddbc671a287ae2fac239682658"></a>SCE_NET_ICMP_TYPE_DEST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baae224a91de67c1c99e10a137fd37e6b52"></a>SCE_NET_ICMP_TYPE_SOURCE_QUENCH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa341cea8dc7c756b90dbc19ded7d88e02"></a>SCE_NET_ICMP_TYPE_REDIRECT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacf393b08022ae5a38f170aa725966d5c"></a>SCE_NET_ICMP_TYPE_ECHO_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa5cff623a12f64f908b81e0e17cf3a5f6"></a>SCE_NET_ICMP_TYPE_TIME_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaffd5ae6a9cbf8bf35a1d294b827e78ee"></a>SCE_NET_ICMP_TYPE_PARAMETER_PROBLEM&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa4ac43c8a7c0f6d6a4889ffeb28937970"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa80a8541c089c15c5ea04f012fb86956f"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa62a18c6cf2911577ffb76e229f2d5996"></a>SCE_NET_ICMP_TYPE_INFORMATION_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa902eb0a261821e7f2416173c29d88a13"></a>SCE_NET_ICMP_TYPE_INFORMATION_REPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa8b5dc92e0a75f660d2d04fc153fe055e"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacef9f969d668a9175d22dc200ee1b475"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="ga80cc519fa0e058a19a67b756f8837ef0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga80cc519fa0e058a19a67b756f8837ef0">&#9670;&nbsp;</a></span>SceNetKernelErrorCode</h2>
 
@@ -1917,30 +1825,82 @@ un</td>
 
 </div>
 </div>
-<a id="ga059631a28b7785f0898f141e1e13b89d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga059631a28b7785f0898f141e1e13b89d">&#9670;&nbsp;</a></span>SceNetMsgFlag</h2>
+<a id="gaccdd18c5062ffdc4d6c0b736025bf97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccdd18c5062ffdc4d6c0b736025bf97f">&#9670;&nbsp;</a></span>SceNetSockInfoState</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceNetUser.html#ga059631a28b7785f0898f141e1e13b89d">SceNetMsgFlag</a></td>
+          <td class="memname">enum <a class="el" href="group__SceNetUser.html#gaccdd18c5062ffdc4d6c0b736025bf97f">SceNetSockInfoState</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>MSG Flags. </p>
+<p>state for <a class="el" href="group__SceNetUser.html#structSceNetSockInfo">SceNetSockInfo</a> structure </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da7451aa73ea22f076c8910adcadda6d17"></a>SCE_NET_MSG_PEEK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da5205f45f971c74679d6d59fc0c7f21cf"></a>SCE_NET_MSG_WAITALL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2374b08aacd48f900e108db065319155"></a>SCE_NET_MSG_DONTWAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2f35daa05242cdd487bde392f1eb755f"></a>SCE_NET_MSG_USECRYPTO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da0d0f9c12850d0d89c9c796289830c2c0"></a>SCE_NET_MSG_USESIGNATURE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da7451aa73ea22f076c8910adcadda6d17"></a>SCE_NET_MSG_PEEK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da5205f45f971c74679d6d59fc0c7f21cf"></a>SCE_NET_MSG_WAITALL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2374b08aacd48f900e108db065319155"></a>SCE_NET_MSG_DONTWAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2f35daa05242cdd487bde392f1eb755f"></a>SCE_NET_MSG_USECRYPTO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da0d0f9c12850d0d89c9c796289830c2c0"></a>SCE_NET_MSG_USESIGNATURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fade3012502e80cf176ee03bc7a989785f"></a>SCE_NET_SOCKINFO_STATE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa2562a389d468176b37f122039a14beb7"></a>SCE_NET_SOCKINFO_STATE_CLOSED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa419c326c9faa6c718217a3ace07aeb45"></a>SCE_NET_SOCKINFO_STATE_OPENED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa09df8d932d9841568784c1d5e501a4e4"></a>SCE_NET_SOCKINFO_STATE_LISTEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa645f545b7055a63b2d1ca466b5e911ed"></a>SCE_NET_SOCKINFO_STATE_SYN_SENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa800ec66b18fe55e9a481b19171bb770f"></a>SCE_NET_SOCKINFO_STATE_SYN_RECEIVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa43f07c674fd70c149850457627e392b4"></a>SCE_NET_SOCKINFO_STATE_ESTABLISHED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabf390833078aeae28fbfb8a902f6e4fc"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97faf28fd93804db8a2a31c1ace4e563c94f"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabe1086686ed5d57627dd292bbfe4c1cb"></a>SCE_NET_SOCKINFO_STATE_CLOSE_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fac4d325d32c823c01e4db6923b44f2954"></a>SCE_NET_SOCKINFO_STATE_CLOSING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa1016ebbf9c46a9c827976b56cf78158f"></a>SCE_NET_SOCKINFO_STATE_LAST_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa7a327571b36587b987706202b3ccb836"></a>SCE_NET_SOCKINFO_STATE_TIME_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fade3012502e80cf176ee03bc7a989785f"></a>SCE_NET_SOCKINFO_STATE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa2562a389d468176b37f122039a14beb7"></a>SCE_NET_SOCKINFO_STATE_CLOSED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa419c326c9faa6c718217a3ace07aeb45"></a>SCE_NET_SOCKINFO_STATE_OPENED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa09df8d932d9841568784c1d5e501a4e4"></a>SCE_NET_SOCKINFO_STATE_LISTEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa645f545b7055a63b2d1ca466b5e911ed"></a>SCE_NET_SOCKINFO_STATE_SYN_SENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa800ec66b18fe55e9a481b19171bb770f"></a>SCE_NET_SOCKINFO_STATE_SYN_RECEIVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa43f07c674fd70c149850457627e392b4"></a>SCE_NET_SOCKINFO_STATE_ESTABLISHED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabf390833078aeae28fbfb8a902f6e4fc"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97faf28fd93804db8a2a31c1ace4e563c94f"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabe1086686ed5d57627dd292bbfe4c1cb"></a>SCE_NET_SOCKINFO_STATE_CLOSE_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fac4d325d32c823c01e4db6923b44f2954"></a>SCE_NET_SOCKINFO_STATE_CLOSING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa1016ebbf9c46a9c827976b56cf78158f"></a>SCE_NET_SOCKINFO_STATE_LAST_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa7a327571b36587b987706202b3ccb836"></a>SCE_NET_SOCKINFO_STATE_TIME_WAIT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga1ed6a8357fa6fac7b39ade81816648f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ed6a8357fa6fac7b39ade81816648f0">&#9670;&nbsp;</a></span>SceNetSockInfoFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceNetUser.html#ga1ed6a8357fa6fac7b39ade81816648f0">SceNetSockInfoFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>flags for <a class="el" href="group__SceNetUser.html#structSceNetSockInfo">SceNetSockInfo</a> structure </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aaa8cdfbf33cbf3ea69120a273c03e07c"></a>SCE_NET_SOCKINFO_F_SELF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a9025b13d9c68d2c0036f4577ee4459df"></a>SCE_NET_SOCKINFO_F_KERNEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ad7a9f46df91d4bf4cd2d61f5d23e848d"></a>SCE_NET_SOCKINFO_F_OTHERS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a69b1a4ed1d624ea175197298fb5fc861"></a>SCE_NET_SOCKINFO_F_RECV_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a10a8df0f9ff438382f77d5269c7cbdd4"></a>SCE_NET_SOCKINFO_F_SEND_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a7e59ee3bf1dd2529cb8c97e2893bde03"></a>SCE_NET_SOCKINFO_F_RECV_EWAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aa45ad7d6b617d18d92c4b3e943cb15b7"></a>SCE_NET_SOCKINFO_F_SEND_EWAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae56dd99b554ab6e752086f1960eb120e"></a>SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae643856788a2f8ed67f59c93a54c6eac"></a>SCE_NET_SOCKINFO_F_ALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aaa8cdfbf33cbf3ea69120a273c03e07c"></a>SCE_NET_SOCKINFO_F_SELF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a9025b13d9c68d2c0036f4577ee4459df"></a>SCE_NET_SOCKINFO_F_KERNEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ad7a9f46df91d4bf4cd2d61f5d23e848d"></a>SCE_NET_SOCKINFO_F_OTHERS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a69b1a4ed1d624ea175197298fb5fc861"></a>SCE_NET_SOCKINFO_F_RECV_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a10a8df0f9ff438382f77d5269c7cbdd4"></a>SCE_NET_SOCKINFO_F_SEND_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a7e59ee3bf1dd2529cb8c97e2893bde03"></a>SCE_NET_SOCKINFO_F_RECV_EWAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aa45ad7d6b617d18d92c4b3e943cb15b7"></a>SCE_NET_SOCKINFO_F_SEND_EWAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae56dd99b554ab6e752086f1960eb120e"></a>SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae643856788a2f8ed67f59c93a54c6eac"></a>SCE_NET_SOCKINFO_F_ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2087,87 +2047,201 @@ un</td>
 
 </div>
 </div>
-<a id="ga1ed6a8357fa6fac7b39ade81816648f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ed6a8357fa6fac7b39ade81816648f0">&#9670;&nbsp;</a></span>SceNetSockInfoFlag</h2>
+<a id="ga059631a28b7785f0898f141e1e13b89d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga059631a28b7785f0898f141e1e13b89d">&#9670;&nbsp;</a></span>SceNetMsgFlag</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceNetUser.html#ga1ed6a8357fa6fac7b39ade81816648f0">SceNetSockInfoFlag</a></td>
+          <td class="memname">enum <a class="el" href="group__SceNetUser.html#ga059631a28b7785f0898f141e1e13b89d">SceNetMsgFlag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>flags for <a class="el" href="group__SceNetUser.html#structSceNetSockInfo">SceNetSockInfo</a> structure </p>
+<p>MSG Flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aaa8cdfbf33cbf3ea69120a273c03e07c"></a>SCE_NET_SOCKINFO_F_SELF&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a9025b13d9c68d2c0036f4577ee4459df"></a>SCE_NET_SOCKINFO_F_KERNEL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ad7a9f46df91d4bf4cd2d61f5d23e848d"></a>SCE_NET_SOCKINFO_F_OTHERS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a69b1a4ed1d624ea175197298fb5fc861"></a>SCE_NET_SOCKINFO_F_RECV_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a10a8df0f9ff438382f77d5269c7cbdd4"></a>SCE_NET_SOCKINFO_F_SEND_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a7e59ee3bf1dd2529cb8c97e2893bde03"></a>SCE_NET_SOCKINFO_F_RECV_EWAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aa45ad7d6b617d18d92c4b3e943cb15b7"></a>SCE_NET_SOCKINFO_F_SEND_EWAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae56dd99b554ab6e752086f1960eb120e"></a>SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae643856788a2f8ed67f59c93a54c6eac"></a>SCE_NET_SOCKINFO_F_ALL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aaa8cdfbf33cbf3ea69120a273c03e07c"></a>SCE_NET_SOCKINFO_F_SELF&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a9025b13d9c68d2c0036f4577ee4459df"></a>SCE_NET_SOCKINFO_F_KERNEL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ad7a9f46df91d4bf4cd2d61f5d23e848d"></a>SCE_NET_SOCKINFO_F_OTHERS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a69b1a4ed1d624ea175197298fb5fc861"></a>SCE_NET_SOCKINFO_F_RECV_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a10a8df0f9ff438382f77d5269c7cbdd4"></a>SCE_NET_SOCKINFO_F_SEND_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0a7e59ee3bf1dd2529cb8c97e2893bde03"></a>SCE_NET_SOCKINFO_F_RECV_EWAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0aa45ad7d6b617d18d92c4b3e943cb15b7"></a>SCE_NET_SOCKINFO_F_SEND_EWAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae56dd99b554ab6e752086f1960eb120e"></a>SCE_NET_SOCKINFO_F_WAKEUP_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1ed6a8357fa6fac7b39ade81816648f0ae643856788a2f8ed67f59c93a54c6eac"></a>SCE_NET_SOCKINFO_F_ALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da7451aa73ea22f076c8910adcadda6d17"></a>SCE_NET_MSG_PEEK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da5205f45f971c74679d6d59fc0c7f21cf"></a>SCE_NET_MSG_WAITALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2374b08aacd48f900e108db065319155"></a>SCE_NET_MSG_DONTWAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2f35daa05242cdd487bde392f1eb755f"></a>SCE_NET_MSG_USECRYPTO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da0d0f9c12850d0d89c9c796289830c2c0"></a>SCE_NET_MSG_USESIGNATURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da7451aa73ea22f076c8910adcadda6d17"></a>SCE_NET_MSG_PEEK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da5205f45f971c74679d6d59fc0c7f21cf"></a>SCE_NET_MSG_WAITALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2374b08aacd48f900e108db065319155"></a>SCE_NET_MSG_DONTWAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da2f35daa05242cdd487bde392f1eb755f"></a>SCE_NET_MSG_USECRYPTO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga059631a28b7785f0898f141e1e13b89da0d0f9c12850d0d89c9c796289830c2c0"></a>SCE_NET_MSG_USESIGNATURE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="gaccdd18c5062ffdc4d6c0b736025bf97f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaccdd18c5062ffdc4d6c0b736025bf97f">&#9670;&nbsp;</a></span>SceNetSockInfoState</h2>
+<a id="gaa9f84090d647762faf37438e980b70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9f84090d647762faf37438e980b70ba">&#9670;&nbsp;</a></span>SceNetIcmpType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceNetUser.html#gaccdd18c5062ffdc4d6c0b736025bf97f">SceNetSockInfoState</a></td>
+          <td class="memname">enum <a class="el" href="group__SceNetUser.html#gaa9f84090d647762faf37438e980b70ba">SceNetIcmpType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>state for <a class="el" href="group__SceNetUser.html#structSceNetSockInfo">SceNetSockInfo</a> structure </p>
+<p>Types to specify to <a class="el" href="group__SceNetUser.html#structSceNetIcmpHeader">SceNetIcmpHeader</a> structure. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fade3012502e80cf176ee03bc7a989785f"></a>SCE_NET_SOCKINFO_STATE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa2562a389d468176b37f122039a14beb7"></a>SCE_NET_SOCKINFO_STATE_CLOSED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa419c326c9faa6c718217a3ace07aeb45"></a>SCE_NET_SOCKINFO_STATE_OPENED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa09df8d932d9841568784c1d5e501a4e4"></a>SCE_NET_SOCKINFO_STATE_LISTEN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa645f545b7055a63b2d1ca466b5e911ed"></a>SCE_NET_SOCKINFO_STATE_SYN_SENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa800ec66b18fe55e9a481b19171bb770f"></a>SCE_NET_SOCKINFO_STATE_SYN_RECEIVED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa43f07c674fd70c149850457627e392b4"></a>SCE_NET_SOCKINFO_STATE_ESTABLISHED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabf390833078aeae28fbfb8a902f6e4fc"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97faf28fd93804db8a2a31c1ace4e563c94f"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabe1086686ed5d57627dd292bbfe4c1cb"></a>SCE_NET_SOCKINFO_STATE_CLOSE_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fac4d325d32c823c01e4db6923b44f2954"></a>SCE_NET_SOCKINFO_STATE_CLOSING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa1016ebbf9c46a9c827976b56cf78158f"></a>SCE_NET_SOCKINFO_STATE_LAST_ACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa7a327571b36587b987706202b3ccb836"></a>SCE_NET_SOCKINFO_STATE_TIME_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fade3012502e80cf176ee03bc7a989785f"></a>SCE_NET_SOCKINFO_STATE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa2562a389d468176b37f122039a14beb7"></a>SCE_NET_SOCKINFO_STATE_CLOSED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa419c326c9faa6c718217a3ace07aeb45"></a>SCE_NET_SOCKINFO_STATE_OPENED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa09df8d932d9841568784c1d5e501a4e4"></a>SCE_NET_SOCKINFO_STATE_LISTEN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa645f545b7055a63b2d1ca466b5e911ed"></a>SCE_NET_SOCKINFO_STATE_SYN_SENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa800ec66b18fe55e9a481b19171bb770f"></a>SCE_NET_SOCKINFO_STATE_SYN_RECEIVED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa43f07c674fd70c149850457627e392b4"></a>SCE_NET_SOCKINFO_STATE_ESTABLISHED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabf390833078aeae28fbfb8a902f6e4fc"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97faf28fd93804db8a2a31c1ace4e563c94f"></a>SCE_NET_SOCKINFO_STATE_FIN_WAIT_2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fabe1086686ed5d57627dd292bbfe4c1cb"></a>SCE_NET_SOCKINFO_STATE_CLOSE_WAIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fac4d325d32c823c01e4db6923b44f2954"></a>SCE_NET_SOCKINFO_STATE_CLOSING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa1016ebbf9c46a9c827976b56cf78158f"></a>SCE_NET_SOCKINFO_STATE_LAST_ACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaccdd18c5062ffdc4d6c0b736025bf97fa7a327571b36587b987706202b3ccb836"></a>SCE_NET_SOCKINFO_STATE_TIME_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa3e0ae2dfddf885b7db2731adc87fe98e"></a>SCE_NET_ICMP_TYPE_ECHO_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaf01afdddbc671a287ae2fac239682658"></a>SCE_NET_ICMP_TYPE_DEST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baae224a91de67c1c99e10a137fd37e6b52"></a>SCE_NET_ICMP_TYPE_SOURCE_QUENCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa341cea8dc7c756b90dbc19ded7d88e02"></a>SCE_NET_ICMP_TYPE_REDIRECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacf393b08022ae5a38f170aa725966d5c"></a>SCE_NET_ICMP_TYPE_ECHO_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa5cff623a12f64f908b81e0e17cf3a5f6"></a>SCE_NET_ICMP_TYPE_TIME_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaffd5ae6a9cbf8bf35a1d294b827e78ee"></a>SCE_NET_ICMP_TYPE_PARAMETER_PROBLEM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa4ac43c8a7c0f6d6a4889ffeb28937970"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa80a8541c089c15c5ea04f012fb86956f"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa62a18c6cf2911577ffb76e229f2d5996"></a>SCE_NET_ICMP_TYPE_INFORMATION_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa902eb0a261821e7f2416173c29d88a13"></a>SCE_NET_ICMP_TYPE_INFORMATION_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa8b5dc92e0a75f660d2d04fc153fe055e"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacef9f969d668a9175d22dc200ee1b475"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa3e0ae2dfddf885b7db2731adc87fe98e"></a>SCE_NET_ICMP_TYPE_ECHO_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaf01afdddbc671a287ae2fac239682658"></a>SCE_NET_ICMP_TYPE_DEST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baae224a91de67c1c99e10a137fd37e6b52"></a>SCE_NET_ICMP_TYPE_SOURCE_QUENCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa341cea8dc7c756b90dbc19ded7d88e02"></a>SCE_NET_ICMP_TYPE_REDIRECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacf393b08022ae5a38f170aa725966d5c"></a>SCE_NET_ICMP_TYPE_ECHO_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa5cff623a12f64f908b81e0e17cf3a5f6"></a>SCE_NET_ICMP_TYPE_TIME_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baaffd5ae6a9cbf8bf35a1d294b827e78ee"></a>SCE_NET_ICMP_TYPE_PARAMETER_PROBLEM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa4ac43c8a7c0f6d6a4889ffeb28937970"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa80a8541c089c15c5ea04f012fb86956f"></a>SCE_NET_ICMP_TYPE_TIMESTAMP_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa62a18c6cf2911577ffb76e229f2d5996"></a>SCE_NET_ICMP_TYPE_INFORMATION_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa902eb0a261821e7f2416173c29d88a13"></a>SCE_NET_ICMP_TYPE_INFORMATION_REPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baa8b5dc92e0a75f660d2d04fc153fe055e"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REQUEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa9f84090d647762faf37438e980b70baacef9f969d668a9175d22dc200ee1b475"></a>SCE_NET_ICMP_TYPE_ADDRESS_MASK_REPLY&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga65e7ad6abb68170d26980853b7d024b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65e7ad6abb68170d26980853b7d024b1">&#9670;&nbsp;</a></span>SceNetIcmpCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceNetUser.html#ga65e7ad6abb68170d26980853b7d024b1">SceNetIcmpCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Codes to specify to <a class="el" href="group__SceNetUser.html#structSceNetIcmpHeader">SceNetIcmpHeader</a> structure. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a2304c5ef600836337d2286b91f6ad2e6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a4a17f9a522afc9a1068a93882c0d8db2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a5c7676950804a6836953cf1cf190b8d6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a8b9b2143bfc5d3baa185033c8b8dae6d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PORT_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a66028230204c1bfa10eb765ca77f05d2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_FRAG_AND_DF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a7c44c92a07d26e5fa5ac82c4180791f7"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_FAILED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a68ba3bffb566465d38bf9c84240b963d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_NET_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a30ee59127312ea7b7fcd75b4849f587e"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_HOST_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1aec257495553a4503237efe3620784ba9"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_ISOLATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a3b1aca2fb64d9788b992710c707677f4"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_ADMIN_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a816024f75709a4e518e01e4ae781afd5"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_HOST_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a19ebbe494a3ffbe99b3b338da617f41b"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_TOS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a9c64982114f6a1bec91549499d44c498"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1abb2f7333af22d92323602aabb885ebe0"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a1c69466cb5449e986f9601948e7b494e"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a2304c5ef600836337d2286b91f6ad2e6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a4a17f9a522afc9a1068a93882c0d8db2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a5c7676950804a6836953cf1cf190b8d6"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a8b9b2143bfc5d3baa185033c8b8dae6d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_PORT_UNREACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a66028230204c1bfa10eb765ca77f05d2"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_FRAG_AND_DF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a7c44c92a07d26e5fa5ac82c4180791f7"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_FAILED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a68ba3bffb566465d38bf9c84240b963d"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_NET_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a30ee59127312ea7b7fcd75b4849f587e"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_DST_HOST_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1aec257495553a4503237efe3620784ba9"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_SRC_HOST_ISOLATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a3b1aca2fb64d9788b992710c707677f4"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_ADMIN_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a816024f75709a4e518e01e4ae781afd5"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_HOST_PROHIBITED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a19ebbe494a3ffbe99b3b338da617f41b"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_NET_TOS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a9c64982114f6a1bec91549499d44c498"></a>SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1abb2f7333af22d92323602aabb885ebe0"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga65e7ad6abb68170d26980853b7d024b1a1c69466cb5449e986f9601948e7b494e"></a>SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga43edc23fea2c49e44d2f26fab642b81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43edc23fea2c49e44d2f26fab642b81f">&#9670;&nbsp;</a></span>sceNetSyscallConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetSyscallConnect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>namelen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga93a90e964603816ec07e5257903b81bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93a90e964603816ec07e5257903b81bc">&#9670;&nbsp;</a></span>ksceNetSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNetSocket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaeb08399e5f29bcc5be778cb934ff99d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaeb08399e5f29bcc5be778cb934ff99d2">&#9670;&nbsp;</a></span>ksceNetAccept()</h2>
 
@@ -2230,24 +2304,6 @@ un</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabb8840d8f9271a16dff5cae66a44f204"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb8840d8f9271a16dff5cae66a44f204">&#9670;&nbsp;</a></span>ksceNetClose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceNetClose </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2466,74 +2522,18 @@ un</td>
 
 </div>
 </div>
-<a id="ga93a90e964603816ec07e5257903b81bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga93a90e964603816ec07e5257903b81bc">&#9670;&nbsp;</a></span>ksceNetSocket()</h2>
+<a id="gabb8840d8f9271a16dff5cae66a44f204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb8840d8f9271a16dff5cae66a44f204">&#9670;&nbsp;</a></span>ksceNetClose()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNetSocket </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>domain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>protocol</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga43edc23fea2c49e44d2f26fab642b81f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43edc23fea2c49e44d2f26fab642b81f">&#9670;&nbsp;</a></span>sceNetSyscallConnect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetSyscallConnect </td>
+          <td class="memname">int ksceNetClose </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceNetUser.html#structSceNetSockaddr">SceNetSockaddr</a> *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>namelen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

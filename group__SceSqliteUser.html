@@ -95,10 +95,34 @@ $(document).ready(function(){initNavTree('group__SceSqliteUser.html',''); initRe
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaefc8637d5d25f07fd09dfaaf8d0ad304"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSqliteUser.html#gaefc8637d5d25f07fd09dfaaf8d0ad304">sceSqliteConfigMallocMethods</a> (<a class="el" href="structSceSqliteMallocMethods.html">SceSqliteMallocMethods</a> *methods)</td></tr>
+<tr class="memitem:gaefc8637d5d25f07fd09dfaaf8d0ad304"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSqliteUser.html#gaefc8637d5d25f07fd09dfaaf8d0ad304">sceSqliteConfigMallocMethods</a> (<a class="el" href="group__SceSqliteUser.html#structSceSqliteMallocMethods">SceSqliteMallocMethods</a> *methods)</td></tr>
 <tr class="memdesc:gaefc8637d5d25f07fd09dfaaf8d0ad304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for sqlite3_config(SQLITE_CONFIG_MALLOC)  <a href="group__SceSqliteUser.html#gaefc8637d5d25f07fd09dfaaf8d0ad304">More...</a><br /></td></tr>
 <tr class="separator:gaefc8637d5d25f07fd09dfaaf8d0ad304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceSqliteMallocMethods" id="structSceSqliteMallocMethods"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSqliteMallocMethods">&#9670;&nbsp;</a></span>SceSqliteMallocMethods</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSqliteMallocMethods</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="memberdecls">
+<tr><td colspan="2"><h3>Data Fields</h3></td></tr>
+<tr class="memitem:ga10f0494f8a0c7355a8ef139b4d4c8514"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSqliteUser.html#ga10f0494f8a0c7355a8ef139b4d4c8514">xMalloc</a> )(int)</td></tr>
+<tr class="separator:ga10f0494f8a0c7355a8ef139b4d4c8514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2f48fd1c31a61ff5204c77768da46b2"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSqliteUser.html#gac2f48fd1c31a61ff5204c77768da46b2">xRealloc</a> )(void *, int)</td></tr>
+<tr class="separator:gac2f48fd1c31a61ff5204c77768da46b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cbaf123fbe1a011a13f648fcd4a0588"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSqliteUser.html#ga9cbaf123fbe1a011a13f648fcd4a0588">xFree</a> )(void *)</td></tr>
+<tr class="separator:ga9cbaf123fbe1a011a13f648fcd4a0588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaefc8637d5d25f07fd09dfaaf8d0ad304"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaefc8637d5d25f07fd09dfaaf8d0ad304">&#9670;&nbsp;</a></span>sceSqliteConfigMallocMethods()</h2>
@@ -109,7 +133,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int sceSqliteConfigMallocMethods </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceSqliteMallocMethods.html">SceSqliteMallocMethods</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSqliteUser.html#structSceSqliteMallocMethods">SceSqliteMallocMethods</a> *&#160;</td>
           <td class="paramname"><em>methods</em></td><td>)</td>
           <td></td>
         </tr>

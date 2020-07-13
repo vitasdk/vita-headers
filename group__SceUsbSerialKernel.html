@@ -115,6 +115,76 @@ Functions</h2></td></tr>
 <tr class="separator:ga86fb899a563dad855d6dbe16ffd7766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga37d0ac547255559a0b8691a887d6c1de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37d0ac547255559a0b8691a887d6c1de">&#9670;&nbsp;</a></span>ksceUsbSerialStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbSerialStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate USB serial device. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device. </dd></dl>
+
+</div>
+</div>
+<a id="gad72dfb8ec9107537832d1eea400078ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad72dfb8ec9107537832d1eea400078ab">&#9670;&nbsp;</a></span>ksceUsbSerialSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbSerialSetup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setup USB serial device. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unk</td><td>Unknown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaf94b720523fd86f2ef04b52098eea559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf94b720523fd86f2ef04b52098eea559">&#9670;&nbsp;</a></span>ksceUsbSerialStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceUsbSerialStatus </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get USB device status. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns 1 when serial port is open </dd></dl>
+
+</div>
+</div>
 <a id="ga14d591ede8f9ea6a7e3847533efa8f0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga14d591ede8f9ea6a7e3847533efa8f0b">&#9670;&nbsp;</a></span>ksceUsbSerialClose()</h2>
 
@@ -153,58 +223,6 @@ Functions</h2></td></tr>
 
 <p>Get receive buffer length. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns length of USB rx buffer </dd></dl>
-
-</div>
-</div>
-<a id="ga86fb899a563dad855d6dbe16ffd7766b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86fb899a563dad855d6dbe16ffd7766b">&#9670;&nbsp;</a></span>ksceUsbSerialRecv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> ksceUsbSerialRecv </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>max_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receive Data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buffer</td><td>buffer for incoming data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max_len</td><td>max data length to receive </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk1</td><td>Unknown </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">unk2</td><td>Unknown </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>max recv length is 0x10000 </dd></dl>
 
 </div>
 </div>
@@ -260,73 +278,55 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad72dfb8ec9107537832d1eea400078ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad72dfb8ec9107537832d1eea400078ab">&#9670;&nbsp;</a></span>ksceUsbSerialSetup()</h2>
+<a id="ga86fb899a563dad855d6dbe16ffd7766b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86fb899a563dad855d6dbe16ffd7766b">&#9670;&nbsp;</a></span>ksceUsbSerialRecv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceUsbSerialSetup </td>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> ksceUsbSerialRecv </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>max_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Setup USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
+<p>Receive Data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">unk</td><td>Unknown </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buffer</td><td>buffer for incoming data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_len</td><td>max data length to receive </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unk1</td><td>Unknown </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unk2</td><td>Unknown </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga37d0ac547255559a0b8691a887d6c1de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga37d0ac547255559a0b8691a887d6c1de">&#9670;&nbsp;</a></span>ksceUsbSerialStart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUsbSerialStart </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Activate USB serial device. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The user is responsible for making sure no other UDC driver is active. This activates UDC as a "PS Vita" Type D device. </dd></dl>
-
-</div>
-</div>
-<a id="gaf94b720523fd86f2ef04b52098eea559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf94b720523fd86f2ef04b52098eea559">&#9670;&nbsp;</a></span>ksceUsbSerialStatus()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceUsbSerialStatus </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get USB device status. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns 1 when serial port is open </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>max recv length is 0x10000 </dd></dl>
 
 </div>
 </div>

@@ -97,13 +97,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3f3e840a1dfb319aa9018867ec1147fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd">ksceSysconWaitInitialized</a> (void)</td></tr>
 <tr class="memdesc:ga3f3e840a1dfb319aa9018867ec1147fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the syscon is initialized.  <a href="group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd">More...</a><br /></td></tr>
 <tr class="separator:ga3f3e840a1dfb319aa9018867ec1147fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2c9b314b57b1136810e129a3a046231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231">ksceSysconCmdExec</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, unsigned int flags)</td></tr>
+<tr class="memitem:gab2c9b314b57b1136810e129a3a046231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231">ksceSysconCmdExec</a> (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, unsigned int flags)</td></tr>
 <tr class="memdesc:gab2c9b314b57b1136810e129a3a046231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute synchronously a syscon packet.  <a href="group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231">More...</a><br /></td></tr>
 <tr class="separator:gab2c9b314b57b1136810e129a3a046231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7ed542ead682933745023d2005cc167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167">ksceSysconCmdExecAsync</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, unsigned int flags, <a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a> cb, void *argp)</td></tr>
+<tr class="memitem:gab7ed542ead682933745023d2005cc167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167">ksceSysconCmdExecAsync</a> (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, unsigned int flags, <a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a> cb, void *argp)</td></tr>
 <tr class="memdesc:gab7ed542ead682933745023d2005cc167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute asynchronously a syscon packet.  <a href="group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167">More...</a><br /></td></tr>
 <tr class="separator:gab7ed542ead682933745023d2005cc167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45f5b6a1ff38625a49fa539e53d8c0db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db">ksceSysconCmdSync</a> (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, int noWait)</td></tr>
+<tr class="memitem:ga45f5b6a1ff38625a49fa539e53d8c0db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db">ksceSysconCmdSync</a> (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, int noWait)</td></tr>
 <tr class="memdesc:ga45f5b6a1ff38625a49fa539e53d8c0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the currently queued syscon packets to be executed, or check if any are in the queue.  <a href="group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db">More...</a><br /></td></tr>
 <tr class="separator:ga45f5b6a1ff38625a49fa539e53d8c0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef0ddcbf2f42313ac8b539d3e146d7d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaef0ddcbf2f42313ac8b539d3e146d7d6">ksceSysconSetPowerMode</a> (int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int mode)</td></tr>
@@ -113,7 +113,7 @@ Functions</h2></td></tr>
 <tr class="separator:gab7cd54c372feffa63474e3f30c4d5ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ad52306debc5801daeac2089393cdf5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga4ad52306debc5801daeac2089393cdf5">ksceSysconSendCommand</a> (unsigned short cmd, const void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
 <tr class="separator:ga4ad52306debc5801daeac2089393cdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c7b30cee806394963eea6190bc205fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd">ksceSysconSetDebugHandlers</a> (const <a class="el" href="structSceSysconDebugHandlers.html">SceSysconDebugHandlers</a> *handlers)</td></tr>
+<tr class="memitem:ga0c7b30cee806394963eea6190bc205fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd">ksceSysconSetDebugHandlers</a> (const <a class="el" href="group__SceSysconKernel.html#structSceSysconDebugHandlers">SceSysconDebugHandlers</a> *handlers)</td></tr>
 <tr class="memdesc:ga0c7b30cee806394963eea6190bc205fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the debug handlers.  <a href="group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd">More...</a><br /></td></tr>
 <tr class="separator:ga0c7b30cee806394963eea6190bc205fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e4c75735921c15791258dffa9503d89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga1e4c75735921c15791258dffa9503d89">ksceSysconCtrlLED</a> (int led, int enable)</td></tr>
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a>) (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, void *argp)</td></tr>
+<tr class="memitem:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a>) (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *argp)</td></tr>
 <tr class="separator:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>) (int enable, void *argp)</td></tr>
 <tr class="separator:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,19 +220,156 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8eba05a0bf125e062bb495d0a3d26a35">SCE_SYSCON_PACKET_RX_DATA</a>(i)&#160;&#160;&#160;(4 + (i))</td></tr>
 <tr class="separator:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga8eba05a0bf125e062bb495d0a3d26a35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8eba05a0bf125e062bb495d0a3d26a35">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_DATA</h2>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceSysconPacket" id="structSceSysconPacket"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSysconPacket">&#9670;&nbsp;</a></span>SceSysconPacket</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_RX_DATA</td>
+          <td class="memname">struct SceSysconPacket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="memberdecls">
+<tr><td colspan="2"><h3>Data Fields</h3></td></tr>
+<tr class="memitem:gafd9c0972258645e6995287e8c1bd11ec"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gafd9c0972258645e6995287e8c1bd11ec">next</a></td></tr>
+<tr class="separator:gafd9c0972258645e6995287e8c1bd11ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c56f70ac3b7f1cb74a8ff4dc5f11f87"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga2c56f70ac3b7f1cb74a8ff4dc5f11f87">status</a></td></tr>
+<tr class="separator:ga2c56f70ac3b7f1cb74a8ff4dc5f11f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9315b4db99bca39dd1b6fbb0cef26935"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga9315b4db99bca39dd1b6fbb0cef26935">semaId</a></td></tr>
+<tr class="separator:ga9315b4db99bca39dd1b6fbb0cef26935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29d55fa04d7aae3a6b11fb506123dfe5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga29d55fa04d7aae3a6b11fb506123dfe5">unk</a></td></tr>
+<tr class="separator:ga29d55fa04d7aae3a6b11fb506123dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa87440170576e52004a47d85ae236a13"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa87440170576e52004a47d85ae236a13">tx</a> [32]</td></tr>
+<tr class="separator:gaa87440170576e52004a47d85ae236a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38a60268c453481de6a0b240a40109c6"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga38a60268c453481de6a0b240a40109c6">rx</a> [32]</td></tr>
+<tr class="separator:ga38a60268c453481de6a0b240a40109c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8a25c4bd2772ca16d4bb340de6967ec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac8a25c4bd2772ca16d4bb340de6967ec">unk1</a> [4]</td></tr>
+<tr class="separator:gac8a25c4bd2772ca16d4bb340de6967ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a04ac886ba32813e645dd1edc29eec1"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7a04ac886ba32813e645dd1edc29eec1">callback</a> )(struct <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *<a class="el" href="group__SceSysconKernel.html#ga0b59714adc2340967bf5300c09bdb179">argp</a>)</td></tr>
+<tr class="separator:ga7a04ac886ba32813e645dd1edc29eec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b59714adc2340967bf5300c09bdb179"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0b59714adc2340967bf5300c09bdb179">argp</a></td></tr>
+<tr class="separator:ga0b59714adc2340967bf5300c09bdb179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f7e0f8cf85b2fa64a1c3a1846e69b32"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7f7e0f8cf85b2fa64a1c3a1846e69b32">time</a></td></tr>
+<tr class="separator:ga7f7e0f8cf85b2fa64a1c3a1846e69b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95cad90cbf1bad947f641bdb76c1f79f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga95cad90cbf1bad947f641bdb76c1f79f">unk2</a> [5]</td></tr>
+<tr class="separator:ga95cad90cbf1bad947f641bdb76c1f79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceSysconDebugHandlers" id="structSceSysconDebugHandlers"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSysconDebugHandlers">&#9670;&nbsp;</a></span>SceSysconDebugHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSysconDebugHandlers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>A set of debug handlers for syscon, that you can set in <a class="el" href="group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd" title="Set the debug handlers.">ksceSysconSetDebugHandlers()</a>. </p>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h3>Data Fields</h3></td></tr>
+<tr class="memitem:gac362ab71ec3d266fe02bcf750bd21fbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac362ab71ec3d266fe02bcf750bd21fbd">size</a></td></tr>
+<tr class="memdesc:gac362ab71ec3d266fe02bcf750bd21fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure size (probably, unused).  <a href="group__SceSysconKernel.html#gac362ab71ec3d266fe02bcf750bd21fbd">More...</a><br /></td></tr>
+<tr class="separator:gac362ab71ec3d266fe02bcf750bd21fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga369571b579013b714ba7686aba1fcab5"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga369571b579013b714ba7686aba1fcab5">start</a> )(<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet)</td></tr>
+<tr class="memdesc:ga369571b579013b714ba7686aba1fcab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback ran right before running a packet, with a pointer to it passed as the first argument.  <a href="group__SceSysconKernel.html#ga369571b579013b714ba7686aba1fcab5">More...</a><br /></td></tr>
+<tr class="separator:ga369571b579013b714ba7686aba1fcab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fffde9cae3be628b0128a5f7bf72c65"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga2fffde9cae3be628b0128a5f7bf72c65">end</a> )(<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet)</td></tr>
+<tr class="memdesc:ga2fffde9cae3be628b0128a5f7bf72c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback ran right after finishing running a packet, with a pointer to it passed as the first argument.  <a href="group__SceSysconKernel.html#ga2fffde9cae3be628b0128a5f7bf72c65">More...</a><br /></td></tr>
+<tr class="separator:ga2fffde9cae3be628b0128a5f7bf72c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gac819bc1a3c44d5f533b86d09f1d8100d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac819bc1a3c44d5f533b86d09f1d8100d">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_CMD_LO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_CMD_LO&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab9f8bd2486bd583c8a803102828db74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab9f8bd2486bd583c8a803102828db74">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_CMD_HI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_CMD_HI&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7d8dc68bb03c9028b7f29547bf537bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d8dc68bb03c9028b7f29547bf537bd6">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_LENGTH&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8dd0121b06dcb62d26e6e2b8c53c303f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8dd0121b06dcb62d26e6e2b8c53c303f">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_TX_DATA</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;(4 + (i))</td>
+          <td>&#160;&#160;&#160;(3 + (i))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga032dedbd9a54a7dc973acf8e5b6ad9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga032dedbd9a54a7dc973acf8e5b6ad9d3">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_STATUS_LO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_STATUS_LO&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97be4882dd163e46c311a5900c58ed89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97be4882dd163e46c311a5900c58ed89">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_STATUS_HI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_STATUS_HI&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -267,88 +404,18 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga97be4882dd163e46c311a5900c58ed89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97be4882dd163e46c311a5900c58ed89">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_STATUS_HI</h2>
+<a id="ga8eba05a0bf125e062bb495d0a3d26a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8eba05a0bf125e062bb495d0a3d26a35">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_DATA</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_RX_STATUS_HI&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga032dedbd9a54a7dc973acf8e5b6ad9d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga032dedbd9a54a7dc973acf8e5b6ad9d3">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_RX_STATUS_LO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_RX_STATUS_LO&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaab9f8bd2486bd583c8a803102828db74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab9f8bd2486bd583c8a803102828db74">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_CMD_HI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_TX_CMD_HI&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac819bc1a3c44d5f533b86d09f1d8100d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac819bc1a3c44d5f533b86d09f1d8100d">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_CMD_LO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_TX_CMD_LO&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga8dd0121b06dcb62d26e6e2b8c53c303f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8dd0121b06dcb62d26e6e2b8c53c303f">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_DATA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_TX_DATA</td>
+          <td class="memname">#define SCE_SYSCON_PACKET_RX_DATA</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;(3 + (i))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7d8dc68bb03c9028b7f29547bf537bd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7d8dc68bb03c9028b7f29547bf537bd6">&#9670;&nbsp;</a></span>SCE_SYSCON_PACKET_TX_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_SYSCON_PACKET_TX_LENGTH&#160;&#160;&#160;2</td>
+          <td>&#160;&#160;&#160;(4 + (i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -356,6 +423,20 @@ Macros</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="gaa94a59bed75c9ecaeb24899ff67ab8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa94a59bed75c9ecaeb24899ff67ab8a9">&#9670;&nbsp;</a></span>SceSysconCmdExecAsyncCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* SceSysconCmdExecAsyncCallback) (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *argp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga8925b6c9611c398bc74bf0469886bf3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8925b6c9611c398bc74bf0469886bf3d">&#9670;&nbsp;</a></span>SceSysconCallback</h2>
 
@@ -364,20 +445,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef void(* SceSysconCallback) (int enable, void *argp)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa94a59bed75c9ecaeb24899ff67ab8a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa94a59bed75c9ecaeb24899ff67ab8a9">&#9670;&nbsp;</a></span>SceSysconCmdExecAsyncCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int(* SceSysconCmdExecAsyncCallback) (<a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *packet, void *argp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -423,14 +490,14 @@ Macros</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga28866ce50fd3e1634c3f292004cc5623"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28866ce50fd3e1634c3f292004cc5623">&#9670;&nbsp;</a></span>ksceSysconBeginConfigstorageTransaction()</h2>
+<a id="ga3f3e840a1dfb319aa9018867ec1147fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f3e840a1dfb319aa9018867ec1147fd">&#9670;&nbsp;</a></span>ksceSysconWaitInitialized()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconBeginConfigstorageTransaction </td>
+          <td class="memname">int ksceSysconWaitInitialized </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -439,23 +506,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ga6c3c0a306f9a293fa1bad67bf4980417"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c3c0a306f9a293fa1bad67bf4980417">&#9670;&nbsp;</a></span>ksceSysconClearTemperatureLog()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconClearTemperatureLog </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Waits until the syscon is initialized. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
@@ -468,7 +520,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">int ksceSysconCmdExec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -506,7 +558,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">int ksceSysconCmdExecAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -540,7 +592,7 @@ Macros</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">packet</td><td>The packet to execute. Its tx member needs to be initialized. </td></tr>
     <tr><td class="paramname">flags</td><td>The packet flags. Check SceSysconPacketFlags. </td></tr>
-    <tr><td class="paramname">callback</td><td>The packet callback. Check the callback member of <a class="el" href="structSceSysconPacket.html">SceSysconPacket</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>The packet callback. Check the callback member of <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a>. </td></tr>
     <tr><td class="paramname">argp</td><td>The second argument that will be passed to the callback when executed.</td></tr>
   </table>
   </dd>
@@ -558,7 +610,7 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">int ksceSysconCmdSync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSceSysconPacket.html">SceSysconPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -587,48 +639,130 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga80ee20f450ddc46c49897767164f74a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80ee20f450ddc46c49897767164f74a8">&#9670;&nbsp;</a></span>ksceSysconCommitConfigstorageTransaction()</h2>
+<a id="gaef0ddcbf2f42313ac8b539d3e146d7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef0ddcbf2f42313ac8b539d3e146d7d6">&#9670;&nbsp;</a></span>ksceSysconSetPowerMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconCommitConfigstorageTransaction </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad9d6268ecf056da13880be8679d6a47f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad9d6268ecf056da13880be8679d6a47f">&#9670;&nbsp;</a></span>ksceSysconCtrlHdmiCecPower()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconCtrlHdmiCecPower </td>
+          <td class="memname">int ksceSysconSetPowerMode </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>power</em></td><td>)</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the ADV7533 HDMI CEC power. </p>
+<p>Reset the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">power</td><td>The new power value.</td></tr>
+    <tr><td class="paramname">type</td><td>The reset type value, one of SceSysconResetType. </td></tr>
+    <tr><td class="paramname">mode</td><td>The resetting mode (?).</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="gab7cd54c372feffa63474e3f30c4d5ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7cd54c372feffa63474e3f30c4d5ae2">&#9670;&nbsp;</a></span>ksceSysconReadCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconReadCommand </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4ad52306debc5801daeac2089393cdf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ad52306debc5801daeac2089393cdf5">&#9670;&nbsp;</a></span>ksceSysconSendCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconSendCommand </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0c7b30cee806394963eea6190bc205fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c7b30cee806394963eea6190bc205fd">&#9670;&nbsp;</a></span>ksceSysconSetDebugHandlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconSetDebugHandlers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysconKernel.html#structSceSysconDebugHandlers">SceSysconDebugHandlers</a> *&#160;</td>
+          <td class="paramname"><em>handlers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the debug handlers. </p>
+<dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
 
 </div>
 </div>
@@ -667,24 +801,6 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
-
-</div>
-</div>
-<a id="ga69b6c916e511baf05b6b434d59ddf562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga69b6c916e511baf05b6b434d59ddf562">&#9670;&nbsp;</a></span>ksceSysconCtrlManualChargeMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconCtrlManualChargeMode </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -742,6 +858,51 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gad9d6268ecf056da13880be8679d6a47f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9d6268ecf056da13880be8679d6a47f">&#9670;&nbsp;</a></span>ksceSysconCtrlHdmiCecPower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconCtrlHdmiCecPower </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the ADV7533 HDMI CEC power. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">power</td><td>The new power value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="ga69b6c916e511baf05b6b434d59ddf562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69b6c916e511baf05b6b434d59ddf562">&#9670;&nbsp;</a></span>ksceSysconCtrlManualChargeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconCtrlManualChargeMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gac3166640df54192f8eb3578c6bb41482"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac3166640df54192f8eb3578c6bb41482">&#9670;&nbsp;</a></span>ksceSysconEnableHibernateIO()</h2>
 
@@ -760,14 +921,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0c21ea3606904413ae6f6120a23a4d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c21ea3606904413ae6f6120a23a4d7d">&#9670;&nbsp;</a></span>ksceSysconEndConfigstorageTransaction()</h2>
+<a id="gaaf51586e3692ca22a177c6dea0143935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf51586e3692ca22a177c6dea0143935">&#9670;&nbsp;</a></span>ksceSysconIduModeClear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconEndConfigstorageTransaction </td>
+          <td class="memname">int ksceSysconIduModeClear </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -778,23 +939,145 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga74b11bfee0b45aefe0c8349016d6844d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74b11bfee0b45aefe0c8349016d6844d">&#9670;&nbsp;</a></span>ksceSysconGetBaryonTimestamp()</h2>
+<a id="ga773bb2bdf4ca319e993f9001ee189379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga773bb2bdf4ca319e993f9001ee189379">&#9670;&nbsp;</a></span>ksceSysconIduModeSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long long ksceSysconGetBaryonTimestamp </td>
+          <td class="memname">int ksceSysconIduModeSet </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the baryon timestamp. </p>
-<dl class="section return"><dt>Returns</dt><dd>The baryon timestamp. </dd></dl>
+</div>
+</div>
+<a id="ga663ad6edb993b0a8d3fee9755ce55d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga663ad6edb993b0a8d3fee9755ce55d34">&#9670;&nbsp;</a></span>ksceSysconIsDownLoaderMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconIsDownLoaderMode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0098f11253d7c628902ce7169edfde46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0098f11253d7c628902ce7169edfde46">&#9670;&nbsp;</a></span>ksceSysconLogStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLogStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8b0dc698faf7acde882734ec2cd4d2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b0dc698faf7acde882734ec2cd4d2e7">&#9670;&nbsp;</a></span>ksceSysconLogStartWaiting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLogStartWaiting </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf351268a07d18e97f4adf47117b95904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf351268a07d18e97f4adf47117b95904">&#9670;&nbsp;</a></span>ksceSysconLogReadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconLogReadData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f10608a4f9121ed207a65148149b4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f10608a4f9121ed207a65148149b4f9">&#9670;&nbsp;</a></span>ksceSysconShowModeClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconShowModeClear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabba3e87538e273b9cccc454613a3498e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabba3e87538e273b9cccc454613a3498e">&#9670;&nbsp;</a></span>ksceSysconShowModeSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconShowModeSet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -816,6 +1099,26 @@ Macros</h2></td></tr>
 
 <p>Get the baryon version. </p>
 <dl class="section return"><dt>Returns</dt><dd>The baryon version. </dd></dl>
+
+</div>
+</div>
+<a id="ga74b11bfee0b45aefe0c8349016d6844d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74b11bfee0b45aefe0c8349016d6844d">&#9670;&nbsp;</a></span>ksceSysconGetBaryonTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long ksceSysconGetBaryonTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the baryon timestamp. </p>
+<dl class="section return"><dt>Returns</dt><dd>The baryon timestamp. </dd></dl>
 
 </div>
 </div>
@@ -1001,14 +1304,32 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaf51586e3692ca22a177c6dea0143935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf51586e3692ca22a177c6dea0143935">&#9670;&nbsp;</a></span>ksceSysconIduModeClear()</h2>
+<a id="ga6c3c0a306f9a293fa1bad67bf4980417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c3c0a306f9a293fa1bad67bf4980417">&#9670;&nbsp;</a></span>ksceSysconClearTemperatureLog()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconIduModeClear </td>
+          <td class="memname">int ksceSysconClearTemperatureLog </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga28866ce50fd3e1634c3f292004cc5623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28866ce50fd3e1634c3f292004cc5623">&#9670;&nbsp;</a></span>ksceSysconBeginConfigstorageTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSysconBeginConfigstorageTransaction </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1019,14 +1340,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga773bb2bdf4ca319e993f9001ee189379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga773bb2bdf4ca319e993f9001ee189379">&#9670;&nbsp;</a></span>ksceSysconIduModeSet()</h2>
+<a id="ga80ee20f450ddc46c49897767164f74a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80ee20f450ddc46c49897767164f74a8">&#9670;&nbsp;</a></span>ksceSysconCommitConfigstorageTransaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconIduModeSet </td>
+          <td class="memname">int ksceSysconCommitConfigstorageTransaction </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1037,14 +1358,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga663ad6edb993b0a8d3fee9755ce55d34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga663ad6edb993b0a8d3fee9755ce55d34">&#9670;&nbsp;</a></span>ksceSysconIsDownLoaderMode()</h2>
+<a id="ga0c21ea3606904413ae6f6120a23a4d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c21ea3606904413ae6f6120a23a4d7d">&#9670;&nbsp;</a></span>ksceSysconEndConfigstorageTransaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconIsDownLoaderMode </td>
+          <td class="memname">int ksceSysconEndConfigstorageTransaction </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1089,14 +1410,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf351268a07d18e97f4adf47117b95904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf351268a07d18e97f4adf47117b95904">&#9670;&nbsp;</a></span>ksceSysconLogReadData()</h2>
+<a id="gaa26d77a29fbf1d2b24ea3cf095a9d9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa26d77a29fbf1d2b24ea3cf095a9d9f4">&#9670;&nbsp;</a></span>ksceSysconVerifyConfigstorageScript()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysconLogReadData </td>
+          <td class="memname">int ksceSysconVerifyConfigstorageScript </td>
           <td>(</td>
           <td class="paramtype">unsigned short&#160;</td>
           <td class="paramname">, </td>
@@ -1104,112 +1425,8 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0098f11253d7c628902ce7169edfde46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0098f11253d7c628902ce7169edfde46">&#9670;&nbsp;</a></span>ksceSysconLogStart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconLogStart </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga8b0dc698faf7acde882734ec2cd4d2e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b0dc698faf7acde882734ec2cd4d2e7">&#9670;&nbsp;</a></span>ksceSysconLogStartWaiting()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconLogStartWaiting </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab7cd54c372feffa63474e3f30c4d5ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab7cd54c372feffa63474e3f30c4d5ae2">&#9670;&nbsp;</a></span>ksceSysconReadCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconReadCommand </td>
-          <td>(</td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4ad52306debc5801daeac2089393cdf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ad52306debc5801daeac2089393cdf5">&#9670;&nbsp;</a></span>ksceSysconSendCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconSendCommand </td>
-          <td>(</td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
+          <td class="paramname"><em>buff</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1265,27 +1482,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0c7b30cee806394963eea6190bc205fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c7b30cee806394963eea6190bc205fd">&#9670;&nbsp;</a></span>ksceSysconSetDebugHandlers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconSetDebugHandlers </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structSceSysconDebugHandlers.html">SceSysconDebugHandlers</a> *&#160;</td>
-          <td class="paramname"><em>handlers</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the debug handlers. </p>
-<dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
-
-</div>
-</div>
 <a id="ga19209e2b0ee8adf1a05e983e45e6271a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga19209e2b0ee8adf1a05e983e45e6271a">&#9670;&nbsp;</a></span>ksceSysconSetLowBatteryCallback()</h2>
 
@@ -1324,44 +1520,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="gaef0ddcbf2f42313ac8b539d3e146d7d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaef0ddcbf2f42313ac8b539d3e146d7d6">&#9670;&nbsp;</a></span>ksceSysconSetPowerMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconSetPowerMode </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset the device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>The reset type value, one of SceSysconResetType. </td></tr>
-    <tr><td class="paramname">mode</td><td>The resetting mode (?).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
-
-</div>
-</div>
 <a id="gaec856771758bff4fceda58297c2b7f10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaec856771758bff4fceda58297c2b7f10">&#9670;&nbsp;</a></span>ksceSysconSetThermalAlertCallback()</h2>
 
@@ -1397,97 +1555,6 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
-
-</div>
-</div>
-<a id="ga7f10608a4f9121ed207a65148149b4f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f10608a4f9121ed207a65148149b4f9">&#9670;&nbsp;</a></span>ksceSysconShowModeClear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconShowModeClear </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabba3e87538e273b9cccc454613a3498e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabba3e87538e273b9cccc454613a3498e">&#9670;&nbsp;</a></span>ksceSysconShowModeSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconShowModeSet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa26d77a29fbf1d2b24ea3cf095a9d9f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa26d77a29fbf1d2b24ea3cf095a9d9f4">&#9670;&nbsp;</a></span>ksceSysconVerifyConfigstorageScript()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconVerifyConfigstorageScript </td>
-          <td>(</td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3f3e840a1dfb319aa9018867ec1147fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f3e840a1dfb319aa9018867ec1147fd">&#9670;&nbsp;</a></span>ksceSysconWaitInitialized()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceSysconWaitInitialized </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Waits until the syscon is initialized. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>

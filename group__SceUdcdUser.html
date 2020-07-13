@@ -156,21 +156,15 @@ info[64]</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae62865989fee6d1dd97295f15f50a8e9"></a>const char *</td>
+<a id="ga795c660a8157a5a5878d57040266534d"></a>int</td>
 <td class="fieldname">
-driverName</td>
+unk_00</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
 <a id="gab836b57fbdc18eccf2adbffcf0f667fc"></a>int</td>
 <td class="fieldname">
 status</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga795c660a8157a5a5878d57040266534d"></a>int</td>
-<td class="fieldname">
-unk_00</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -191,6 +185,12 @@ unk_0C</td>
 unk_10</td>
 <td class="fielddoc">
 </td></tr>
+<tr><td class="fieldtype">
+<a id="gae62865989fee6d1dd97295f15f50a8e9"></a>const char *</td>
+<td class="fieldname">
+driverName</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -209,6 +209,18 @@ unk_10</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="ga19a269d6d98ba2cf30f25fac16e0289e"></a>int</td>
+<td class="fieldname">
+unk_00</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga108e42cee6db32ea079d0a5fb9f3ef4f"></a>int</td>
+<td class="fieldname">
+state</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga1eb7a3806ca5c5a4c490bf761667486d"></a>int</td>
 <td class="fieldname">
 cable</td>
@@ -221,27 +233,15 @@ connection</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga108e42cee6db32ea079d0a5fb9f3ef4f"></a>int</td>
+<a id="gaa36ae739f6eb14b61786ff972fbca7ca"></a>int</td>
 <td class="fieldname">
-state</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga19a269d6d98ba2cf30f25fac16e0289e"></a>int</td>
-<td class="fieldname">
-unk_00</td>
+use_usb_charging</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ga1270d3e6ee3b1045e5da6fd3531fa6d0"></a>int</td>
 <td class="fieldname">
 unk_14</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa36ae739f6eb14b61786ff972fbca7ca"></a>int</td>
-<td class="fieldname">
-use_usb_charging</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -312,33 +312,6 @@ use_usb_charging</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9aec751feaa755bb263aee2dd275cdab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9aec751feaa755bb263aee2dd275cdab">&#9670;&nbsp;</a></span>sceUdcdGetDeviceInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceUdcdGetDeviceInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *&#160;</td>
-          <td class="paramname"><em>devInfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get device information. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">devInfo</td><td>- Device information</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga750f2e74d89448d7a7bda7d046b39963"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga750f2e74d89448d7a7bda7d046b39963">&#9670;&nbsp;</a></span>sceUdcdGetDeviceState()</h2>
 
@@ -359,6 +332,33 @@ use_usb_charging</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">state</td><td>- Device state</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga9aec751feaa755bb263aee2dd275cdab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9aec751feaa755bb263aee2dd275cdab">&#9670;&nbsp;</a></span>sceUdcdGetDeviceInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceUdcdGetDeviceInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceUdcdUser.html#structSceUdcdDeviceInfo">SceUdcdDeviceInfo</a> *&#160;</td>
+          <td class="paramname"><em>devInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">devInfo</td><td>- Device information</td></tr>
   </table>
   </dd>
 </dl>

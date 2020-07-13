@@ -208,6 +208,28 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga1c8753ba9797fab72c09a1f22e33dc80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c8753ba9797fab72c09a1f22e33dc80">&#9670;&nbsp;</a></span>ScePowerErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ScePowerUser.html#ga1c8753ba9797fab72c09a1f22e33dc80">ScePowerErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e"></a>SCE_POWER_ERROR_INVALID_VALUE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c"></a>SCE_POWER_ERROR_ALREADY_REGISTERED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770"></a>SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80aeb38212c797975a5a5fe8dba439c65a1"></a>SCE_POWER_ERROR_CANT_SUSPEND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80aa5714542a995707aac4a9902a78d2d7a"></a>SCE_POWER_ERROR_NO_BATTERY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80ab0e1e5d2a0f7335017712d3029a97603"></a>SCE_POWER_ERROR_DETECTING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga87add7efd8177f03fecc6fdf9233c57a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga87add7efd8177f03fecc6fdf9233c57a">&#9670;&nbsp;</a></span>ScePowerCallbackType</h2>
 
@@ -279,37 +301,69 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1c8753ba9797fab72c09a1f22e33dc80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c8753ba9797fab72c09a1f22e33dc80">&#9670;&nbsp;</a></span>ScePowerErrorCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__ScePowerUser.html#ga1c8753ba9797fab72c09a1f22e33dc80">ScePowerErrorCode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e"></a>SCE_POWER_ERROR_INVALID_VALUE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c"></a>SCE_POWER_ERROR_ALREADY_REGISTERED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770"></a>SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80aeb38212c797975a5a5fe8dba439c65a1"></a>SCE_POWER_ERROR_CANT_SUSPEND&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80aa5714542a995707aac4a9902a78d2d7a"></a>SCE_POWER_ERROR_NO_BATTERY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga1c8753ba9797fab72c09a1f22e33dc80ab0e1e5d2a0f7335017712d3029a97603"></a>SCE_POWER_ERROR_DETECTING&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga43c4f0084152cff03dc037525a5dd311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43c4f0084152cff03dc037525a5dd311">&#9670;&nbsp;</a></span>scePowerGetArmClockFrequency()</h2>
+<a id="gab0c85add301950702a57859121a60b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0c85add301950702a57859121a60b26">&#9670;&nbsp;</a></span>scePowerRegisterCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePowerGetArmClockFrequency </td>
+          <td class="memname">int scePowerRegisterCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>cbid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a ScePower Callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga5a9c0154c265e0f011ad09f679176714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a9c0154c265e0f011ad09f679176714">&#9670;&nbsp;</a></span>scePowerUnregisterCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerUnregisterCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>cbid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gafaa0e75b6d63ef96afa0121695361e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafaa0e75b6d63ef96afa0121695361e08">&#9670;&nbsp;</a></span>scePowerIsBatteryCharging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsBatteryCharging </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -318,50 +372,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns CPU clock frequency. </p>
-<dl class="section return"><dt>Returns</dt><dd>CPU clock frequency in Mhz </dd></dl>
-
-</div>
-</div>
-<a id="gac46c2fbaf0a6216917a886277aa98649"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac46c2fbaf0a6216917a886277aa98649">&#9670;&nbsp;</a></span>scePowerGetBatteryCycleCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerGetBatteryCycleCount </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery cycle count. </p>
-<dl class="section return"><dt>Returns</dt><dd>battery cycle count </dd></dl>
-
-</div>
-</div>
-<a id="gab183cfc3f4f67d1e6137983c18155337"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab183cfc3f4f67d1e6137983c18155337">&#9670;&nbsp;</a></span>scePowerGetBatteryFullCapacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerGetBatteryFullCapacity </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery full capacity. </p>
-<dl class="section return"><dt>Returns</dt><dd>battery full capacity in mAh (milliampere hour) </dd></dl>
+<p>Returns battery charging status. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if under charge, SCE_FALSE otherwise </dd></dl>
 
 </div>
 </div>
@@ -383,6 +395,76 @@ Typedefs</h2></td></tr>
 
 <p>Returns battery life percentage. </p>
 <dl class="section return"><dt>Returns</dt><dd>Battery life percentage </dd></dl>
+
+</div>
+</div>
+<a id="ga9c95226b6af51ff89c04b61ee1fe01da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c95226b6af51ff89c04b61ee1fe01da">&#9670;&nbsp;</a></span>scePowerSetConfigurationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerSetConfigurationMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>conf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set power configuration mode between: </p>
+<p>Mode A - This is the normal mode at process start-up. The clock frequency of the GPU core is the "normal" clock frequency. The WLAN/COM can be used. Mode B - This mode accelerates the GPU clock frequency. The clock frequency of the GPU core is the "high" clock frequency. The WLAN/COM cannot be used. Mode C - This mode accelerates the GPU clock frequency, and also uses the WLAN/COM. The clock frequency of the GPU core is the "high" clock frequency, and use of the WLAN/COM is possible. The screen (touchscreen) brightness, however, is limited. Also, camera cannot be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conf</td><td>One of <a class="el" href="group__ScePowerUser.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce">ScePowerConfigurationMode</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga70b22089c1e4e0ae2c823b026109ad9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70b22089c1e4e0ae2c823b026109ad9f">&#9670;&nbsp;</a></span>scePowerIsSuspendRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsSuspendRequired </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a suspend is required. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if suspend is required, SCE_FALSE otherwise </dd></dl>
+
+</div>
+</div>
+<a id="gae26d2c35668cf682c0d69e3b4ce35087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae26d2c35668cf682c0d69e3b4ce35087">&#9670;&nbsp;</a></span>scePowerIsPowerOnline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsPowerOnline </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if AC is plugged in. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if plugged in, SCE_FALSE otherwise </dd></dl>
 
 </div>
 </div>
@@ -428,14 +510,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6f75854e9be64b5246657d51f4cddf85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6f75854e9be64b5246657d51f4cddf85">&#9670;&nbsp;</a></span>scePowerGetBatterySOH()</h2>
+<a id="ga2db32656437169ce25ea50c2c190b930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2db32656437169ce25ea50c2c190b930">&#9670;&nbsp;</a></span>scePowerIsLowBattery()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePowerGetBatterySOH </td>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsLowBattery </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -444,8 +526,29 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns battery state of health. </p>
-<dl class="section return"><dt>Returns</dt><dd>battery state of health percent </dd></dl>
+<p>Returns battery state. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if battery is low, SCE_FALSE otherwise </dd></dl>
+
+</div>
+</div>
+<a id="gab183cfc3f4f67d1e6137983c18155337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab183cfc3f4f67d1e6137983c18155337">&#9670;&nbsp;</a></span>scePowerGetBatteryFullCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerGetBatteryFullCapacity </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns battery full capacity. </p>
+<dl class="section return"><dt>Returns</dt><dd>battery full capacity in mAh (milliampere hour) </dd></dl>
 
 </div>
 </div>
@@ -488,6 +591,69 @@ Typedefs</h2></td></tr>
 
 <p>Returns battery voltage. </p>
 <dl class="section return"><dt>Returns</dt><dd>battery voltage in mV (millivolts) </dd></dl>
+
+</div>
+</div>
+<a id="ga6f75854e9be64b5246657d51f4cddf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f75854e9be64b5246657d51f4cddf85">&#9670;&nbsp;</a></span>scePowerGetBatterySOH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerGetBatterySOH </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns battery state of health. </p>
+<dl class="section return"><dt>Returns</dt><dd>battery state of health percent </dd></dl>
+
+</div>
+</div>
+<a id="gac46c2fbaf0a6216917a886277aa98649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac46c2fbaf0a6216917a886277aa98649">&#9670;&nbsp;</a></span>scePowerGetBatteryCycleCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerGetBatteryCycleCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns battery cycle count. </p>
+<dl class="section return"><dt>Returns</dt><dd>battery cycle count </dd></dl>
+
+</div>
+</div>
+<a id="ga43c4f0084152cff03dc037525a5dd311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43c4f0084152cff03dc037525a5dd311">&#9670;&nbsp;</a></span>scePowerGetArmClockFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerGetArmClockFrequency </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns CPU clock frequency. </p>
+<dl class="section return"><dt>Returns</dt><dd>CPU clock frequency in Mhz </dd></dl>
 
 </div>
 </div>
@@ -554,138 +720,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9cd6e67e13f31cd310d8d88dd5793fa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9cd6e67e13f31cd310d8d88dd5793fa1">&#9670;&nbsp;</a></span>scePowerGetUsingWireless()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerGetUsingWireless </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets wireless features usage. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if enabled, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="gafaa0e75b6d63ef96afa0121695361e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafaa0e75b6d63ef96afa0121695361e08">&#9670;&nbsp;</a></span>scePowerIsBatteryCharging()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsBatteryCharging </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery charging status. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if under charge, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ga2db32656437169ce25ea50c2c190b930"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2db32656437169ce25ea50c2c190b930">&#9670;&nbsp;</a></span>scePowerIsLowBattery()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsLowBattery </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns battery state. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if battery is low, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="gae26d2c35668cf682c0d69e3b4ce35087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae26d2c35668cf682c0d69e3b4ce35087">&#9670;&nbsp;</a></span>scePowerIsPowerOnline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsPowerOnline </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if AC is plugged in. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if plugged in, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ga70b22089c1e4e0ae2c823b026109ad9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga70b22089c1e4e0ae2c823b026109ad9f">&#9670;&nbsp;</a></span>scePowerIsSuspendRequired()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> scePowerIsSuspendRequired </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if a suspend is required. </p>
-<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if suspend is required, SCE_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="gab0c85add301950702a57859121a60b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0c85add301950702a57859121a60b26">&#9670;&nbsp;</a></span>scePowerRegisterCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerRegisterCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>cbid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Registers a ScePower Callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
 <a id="gac5f6d7e8f98580a9fcc0ccdcb3104d90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac5f6d7e8f98580a9fcc0ccdcb3104d90">&#9670;&nbsp;</a></span>scePowerRequestColdReset()</h2>
 
@@ -703,48 +737,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Requests PS Vita to do a cold reset. </p>
-<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
-
-</div>
-</div>
-<a id="gaec524a23603f344b0a24fd038da311f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec524a23603f344b0a24fd038da311f7">&#9670;&nbsp;</a></span>scePowerRequestDisplayOff()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerRequestDisplayOff </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Request display off. </p>
-<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
-
-</div>
-</div>
-<a id="gabd68bb8db0a9c674095a6f5844a7f072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd68bb8db0a9c674095a6f5844a7f072">&#9670;&nbsp;</a></span>scePowerRequestDisplayOn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerRequestDisplayOn </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Request display on. </p>
 <dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
 
 </div>
@@ -787,6 +779,48 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Requests PS Vita to suspend. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
+<a id="gabd68bb8db0a9c674095a6f5844a7f072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd68bb8db0a9c674095a6f5844a7f072">&#9670;&nbsp;</a></span>scePowerRequestDisplayOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerRequestDisplayOn </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Request display on. </p>
+<dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaec524a23603f344b0a24fd038da311f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec524a23603f344b0a24fd038da311f7">&#9670;&nbsp;</a></span>scePowerRequestDisplayOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePowerRequestDisplayOff </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Request display off. </p>
 <dl class="section return"><dt>Returns</dt><dd>always 0 </dd></dl>
 
 </div>
@@ -842,34 +876,6 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga9c95226b6af51ff89c04b61ee1fe01da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9c95226b6af51ff89c04b61ee1fe01da">&#9670;&nbsp;</a></span>scePowerSetConfigurationMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int scePowerSetConfigurationMode </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>conf</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set power configuration mode between: </p>
-<p>Mode A - This is the normal mode at process start-up. The clock frequency of the GPU core is the "normal" clock frequency. The WLAN/COM can be used. Mode B - This mode accelerates the GPU clock frequency. The clock frequency of the GPU core is the "high" clock frequency. The WLAN/COM cannot be used. Mode C - This mode accelerates the GPU clock frequency, and also uses the WLAN/COM. The clock frequency of the GPU core is the "high" clock frequency, and use of the WLAN/COM is possible. The screen (touchscreen) brightness, however, is limited. Also, camera cannot be used.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">conf</td><td>One of <a class="el" href="group__ScePowerUser.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce">ScePowerConfigurationMode</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
 
 </div>
 </div>
@@ -954,30 +960,24 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5a9c0154c265e0f011ad09f679176714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a9c0154c265e0f011ad09f679176714">&#9670;&nbsp;</a></span>scePowerUnregisterCallback()</h2>
+<a id="ga9cd6e67e13f31cd310d8d88dd5793fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cd6e67e13f31cd310d8d88dd5793fa1">&#9670;&nbsp;</a></span>scePowerGetUsingWireless()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePowerUnregisterCallback </td>
+          <td class="memname">int scePowerGetUsingWireless </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>cbid</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unregister a callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cbid</td><td>- The UID of the specified callback</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+<p>Gets wireless features usage. </p>
+<dl class="section return"><dt>Returns</dt><dd>SCE_TRUE if enabled, SCE_FALSE otherwise </dd></dl>
 
 </div>
 </div>

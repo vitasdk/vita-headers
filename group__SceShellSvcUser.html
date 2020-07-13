@@ -127,24 +127,6 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gad115cbefed0fee3c7baf40223c408032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad115cbefed0fee3c7baf40223c408032">&#9670;&nbsp;</a></span>SceShellUtilLockMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceShellSvcUser.html#gad115cbefed0fee3c7baf40223c408032">SceShellUtilLockMode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad115cbefed0fee3c7baf40223c408032ac026f6a3d0c4e23d5f2976623479bcdb"></a>SCE_SHELL_UTIL_LOCK_MODE_LOCK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggad115cbefed0fee3c7baf40223c408032ab561547490b7ee41a34bfc48e46aa3e5"></a>SCE_SHELL_UTIL_LOCK_MODE_UNLOCK&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="ga785a75673cf82d991dd9df9b245ff88d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga785a75673cf82d991dd9df9b245ff88d">&#9670;&nbsp;</a></span>SceShellUtilLockType</h2>
 
@@ -173,6 +155,24 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="gad115cbefed0fee3c7baf40223c408032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad115cbefed0fee3c7baf40223c408032">&#9670;&nbsp;</a></span>SceShellUtilLockMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceShellSvcUser.html#gad115cbefed0fee3c7baf40223c408032">SceShellUtilLockMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad115cbefed0fee3c7baf40223c408032ac026f6a3d0c4e23d5f2976623479bcdb"></a>SCE_SHELL_UTIL_LOCK_MODE_LOCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad115cbefed0fee3c7baf40223c408032ab561547490b7ee41a34bfc48e46aa3e5"></a>SCE_SHELL_UTIL_LOCK_MODE_UNLOCK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga32143337fcc63e9c76ef0717e95763d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga32143337fcc63e9c76ef0717e95763d8">&#9670;&nbsp;</a></span>sceShellUtilInitEvents()</h2>
@@ -194,33 +194,6 @@ Typedefs</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown, use 0</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaed63c312c55dc285ae4f6f60517f2786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed63c312c55dc285ae4f6f60517f2786">&#9670;&nbsp;</a></span>sceShellUtilLock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceShellUtilLock </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d">SceShellUtilLockType</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Lock event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d">SceShellUtilLockType</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -259,6 +232,33 @@ Typedefs</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>- Event handler</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>- The user data passed to the handler</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaed63c312c55dc285ae4f6f60517f2786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed63c312c55dc285ae4f6f60517f2786">&#9670;&nbsp;</a></span>sceShellUtilLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceShellUtilLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d">SceShellUtilLockType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d">SceShellUtilLockType</a></td></tr>
   </table>
   </dd>
 </dl>

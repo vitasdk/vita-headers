@@ -140,6 +140,12 @@ Functions</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="gaa12bef5bd6433afb47d88a32b99322c5"></a>unsigned int</td>
+<td class="fieldname">
+timestamp</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga435859c3c6817c515980f9c063ab66b4"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 acceleration</td>
@@ -152,9 +158,9 @@ angularVelocity</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga355ea78d453e822f662fb15f03edcb0a"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="ga8dbf4cc7562984a44a44f975aa28df3a"></a>uint8_t</td>
 <td class="fieldname">
-basicOrientation</td>
+reserved1[12]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -164,9 +170,9 @@ deviceQuat</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga64c98b53f70c7e9d99e08574bd98b53a"></a><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
+<a id="gae0d3f18c8df2a7cd9452f47a9efc652d"></a><a class="el" href="group__SceTypesUser.html#structSceUMatrix4">SceUMatrix4</a></td>
 <td class="fieldname">
-hostTimestamp</td>
+rotationMatrix</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -176,33 +182,27 @@ nedMatrix</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gacdd227c6d8ce9a19b0ef9d1e3cada983"></a>uint8_t</td>
-<td class="fieldname">
-reserved[40]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga8dbf4cc7562984a44a44f975aa28df3a"></a>uint8_t</td>
-<td class="fieldname">
-reserved1[12]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga9ed0dc6ad92bad43fa802ed99167decc"></a>uint32_t</td>
 <td class="fieldname">
 reserved2</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gae0d3f18c8df2a7cd9452f47a9efc652d"></a><a class="el" href="group__SceTypesUser.html#structSceUMatrix4">SceUMatrix4</a></td>
+<a id="ga355ea78d453e822f662fb15f03edcb0a"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
-rotationMatrix</td>
+basicOrientation</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaa12bef5bd6433afb47d88a32b99322c5"></a>unsigned int</td>
+<a id="ga64c98b53f70c7e9d99e08574bd98b53a"></a><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
 <td class="fieldname">
-timestamp</td>
+hostTimestamp</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gacdd227c6d8ce9a19b0ef9d1e3cada983"></a>uint8_t</td>
+<td class="fieldname">
+reserved[40]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -229,21 +229,9 @@ accelerometer</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga18379d8bdae6bc65d4436e63422fba75"></a>unsigned int</td>
-<td class="fieldname">
-counter</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga12f64b34c0537622d5f5a06c91860dc0"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 gyro</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaf291022bab2fd26deaa83ba16a315ca3"></a><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
-<td class="fieldname">
-hostTimestamp</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -253,9 +241,27 @@ reserved1[12]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="ga66ec4f2befe18b2990dc570e5e580ab5"></a>unsigned int</td>
+<td class="fieldname">
+timestamp</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga18379d8bdae6bc65d4436e63422fba75"></a>unsigned int</td>
+<td class="fieldname">
+counter</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga395720079fb4630909f0ee14de28be3c"></a>uint32_t</td>
 <td class="fieldname">
 reserved2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf291022bab2fd26deaa83ba16a315ca3"></a><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
+<td class="fieldname">
+hostTimestamp</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -264,82 +270,22 @@ reserved2</td>
 reserved3[8]</td>
 <td class="fielddoc">
 </td></tr>
-<tr><td class="fieldtype">
-<a id="ga66ec4f2befe18b2990dc570e5e580ab5"></a>unsigned int</td>
-<td class="fieldname">
-timestamp</td>
-<td class="fielddoc">
-</td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaffd8fbf514cade06daf4323d0b1b852c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffd8fbf514cade06daf4323d0b1b852c">&#9670;&nbsp;</a></span>sceMotionGetAngleThreshold()</h2>
+<a id="ga7006e842f607f08484ef015455f0c589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7006e842f607f08484ef015455f0c589">&#9670;&nbsp;</a></span>sceMotionGetState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float sceMotionGetAngleThreshold </td>
+          <td class="memname">int sceMotionGetState </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacb7835fed503836f84cb11726a6b9df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb7835fed503836f84cb11726a6b9df6">&#9670;&nbsp;</a></span>sceMotionGetBasicOrientation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceMotionGetBasicOrientation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a> *&#160;</td>
-          <td class="paramname"><em>basicOrientation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad8c396d3273762c12f15af81e15e00af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8c396d3273762c12f15af81e15e00af">&#9670;&nbsp;</a></span>sceMotionGetDeadband()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceMotionGetDeadband </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3387646a1bacba7f8603ccd567aee949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3387646a1bacba7f8603ccd567aee949">&#9670;&nbsp;</a></span>sceMotionGetMagnetometerState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceMotionGetMagnetometerState </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceMotionUser.html#structSceMotionState">SceMotionState</a> *&#160;</td>
+          <td class="paramname"><em>motionState</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -375,17 +321,35 @@ timestamp</td>
 
 </div>
 </div>
-<a id="ga7006e842f607f08484ef015455f0c589"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7006e842f607f08484ef015455f0c589">&#9670;&nbsp;</a></span>sceMotionGetState()</h2>
+<a id="gacb7835fed503836f84cb11726a6b9df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb7835fed503836f84cb11726a6b9df6">&#9670;&nbsp;</a></span>sceMotionGetBasicOrientation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceMotionGetState </td>
+          <td class="memname">int sceMotionGetBasicOrientation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceMotionUser.html#structSceMotionState">SceMotionState</a> *&#160;</td>
-          <td class="paramname"><em>motionState</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a> *&#160;</td>
+          <td class="paramname"><em>basicOrientation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2c1d6101fded892991ea92d000c5d44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c1d6101fded892991ea92d000c5d44f">&#9670;&nbsp;</a></span>sceMotionRotateYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceMotionRotateYaw </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radians</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -411,14 +375,32 @@ timestamp</td>
 
 </div>
 </div>
-<a id="gad51ffc9432116e069a748aeaf7c03193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad51ffc9432116e069a748aeaf7c03193">&#9670;&nbsp;</a></span>sceMotionMagnetometerOff()</h2>
+<a id="gadea31e55ccfc5cf7231631cf45db7d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadea31e55ccfc5cf7231631cf45db7d3a">&#9670;&nbsp;</a></span>sceMotionSetTiltCorrection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceMotionMagnetometerOff </td>
+          <td class="memname">int sceMotionSetTiltCorrection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>setValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad8c396d3273762c12f15af81e15e00af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8c396d3273762c12f15af81e15e00af">&#9670;&nbsp;</a></span>sceMotionGetDeadband()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceMotionGetDeadband </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -429,14 +411,50 @@ timestamp</td>
 
 </div>
 </div>
-<a id="ga2015af9fe1d43b1de450ba6a7f9b7ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2015af9fe1d43b1de450ba6a7f9b7ac8">&#9670;&nbsp;</a></span>sceMotionMagnetometerOn()</h2>
+<a id="gae250729dbff628479cf1efcf5303467e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae250729dbff628479cf1efcf5303467e">&#9670;&nbsp;</a></span>sceMotionSetDeadband()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceMotionMagnetometerOn </td>
+          <td class="memname">int sceMotionSetDeadband </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>setValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga72f7c6b564bea499b31ba5f5471f381f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72f7c6b564bea499b31ba5f5471f381f">&#9670;&nbsp;</a></span>sceMotionSetAngleThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceMotionSetAngleThreshold </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaffd8fbf514cade06daf4323d0b1b852c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffd8fbf514cade06daf4323d0b1b852c">&#9670;&nbsp;</a></span>sceMotionGetAngleThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sceMotionGetAngleThreshold </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -465,17 +483,17 @@ timestamp</td>
 
 </div>
 </div>
-<a id="ga2c1d6101fded892991ea92d000c5d44f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2c1d6101fded892991ea92d000c5d44f">&#9670;&nbsp;</a></span>sceMotionRotateYaw()</h2>
+<a id="ga2015af9fe1d43b1de450ba6a7f9b7ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2015af9fe1d43b1de450ba6a7f9b7ac8">&#9670;&nbsp;</a></span>sceMotionMagnetometerOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceMotionRotateYaw </td>
+          <td class="memname">int sceMotionMagnetometerOn </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>radians</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -483,17 +501,17 @@ timestamp</td>
 
 </div>
 </div>
-<a id="ga72f7c6b564bea499b31ba5f5471f381f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga72f7c6b564bea499b31ba5f5471f381f">&#9670;&nbsp;</a></span>sceMotionSetAngleThreshold()</h2>
+<a id="gad51ffc9432116e069a748aeaf7c03193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad51ffc9432116e069a748aeaf7c03193">&#9670;&nbsp;</a></span>sceMotionMagnetometerOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceMotionSetAngleThreshold </td>
+          <td class="memname">int sceMotionMagnetometerOff </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -501,35 +519,17 @@ timestamp</td>
 
 </div>
 </div>
-<a id="gae250729dbff628479cf1efcf5303467e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae250729dbff628479cf1efcf5303467e">&#9670;&nbsp;</a></span>sceMotionSetDeadband()</h2>
+<a id="ga3387646a1bacba7f8603ccd567aee949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3387646a1bacba7f8603ccd567aee949">&#9670;&nbsp;</a></span>sceMotionGetMagnetometerState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceMotionSetDeadband </td>
+          <td class="memname">int sceMotionGetMagnetometerState </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>setValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadea31e55ccfc5cf7231631cf45db7d3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadea31e55ccfc5cf7231631cf45db7d3a">&#9670;&nbsp;</a></span>sceMotionSetTiltCorrection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceMotionSetTiltCorrection </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>setValue</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

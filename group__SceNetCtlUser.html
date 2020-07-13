@@ -154,27 +154,9 @@ Macros</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga9fc3da747b2be88657a00e0c7478b395"></a><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a></td>
-<td class="fieldname">
-bssid</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga677ab7b4d215e623f4c78f6a345acc2b"></a>unsigned int</td>
-<td class="fieldname">
-channel</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gae78ea0a6e355c843804d7abd458c79ea"></a>char</td>
 <td class="fieldname">
 cnf_name[<a class="el" href="group__SceNetCtlUser.html#ga7656af6427a1eeaa42933887fc57844e">SCE_NETCTL_INFO_CONFIG_NAME_LEN_MAX</a>+1]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga4873a13df1b8caa7977d4bfcdcad9c2f"></a>char</td>
-<td class="fieldname">
-default_route[16]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -184,51 +166,9 @@ device</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga53c7ef96f6795c02c4790689905632e5"></a>char</td>
-<td class="fieldname">
-dhcp_hostname[256]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga8851f22c7a32d1a58d54c2d41f05727b"></a><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a></td>
 <td class="fieldname">
 ether_addr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5dc06d668d0e31fe8aee61b8cd6293eb"></a>unsigned int</td>
-<td class="fieldname">
-http_proxy_config</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gab472afc3c6820cb860379c3954da5ce9"></a>unsigned int</td>
-<td class="fieldname">
-http_proxy_port</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gad6bbeb0d48be5071a5983af5e875a62b"></a>char</td>
-<td class="fieldname">
-http_proxy_server[256]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga7ad790c55efacc8372468d41a0cee157"></a>char</td>
-<td class="fieldname">
-ip_address[16]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5c76c70dc7236733c6bc20f6eea0238b"></a>unsigned int</td>
-<td class="fieldname">
-ip_config</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaeac5a70d606b094ddd930711ec8d1af0"></a>unsigned int</td>
-<td class="fieldname">
-link</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -238,21 +178,27 @@ mtu</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gae6ac4b986b2ada8d2c5ff116967e925f"></a>char</td>
+<a id="gaeac5a70d606b094ddd930711ec8d1af0"></a>unsigned int</td>
 <td class="fieldname">
-netmask[16]</td>
+link</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga98a9d2acb9e053ad167921bedd14fe78"></a>char</td>
+<a id="ga9fc3da747b2be88657a00e0c7478b395"></a><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a></td>
 <td class="fieldname">
-pppoe_auth_name[128]</td>
+bssid</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga37e424a44021106e8641ddcab9e4d4d3"></a>char</td>
+<a id="ga0f45a42c32b302b107cb50268cb91f9d"></a>char</td>
 <td class="fieldname">
-primary_dns[16]</td>
+ssid[<a class="el" href="group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776">SCE_NETCTL_INFO_SSID_LEN_MAX</a>+1]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga1450116bb4c10213efa620a1e489e7be"></a>unsigned int</td>
+<td class="fieldname">
+wifi_security</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -268,21 +214,75 @@ rssi_percentage</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="ga677ab7b4d215e623f4c78f6a345acc2b"></a>unsigned int</td>
+<td class="fieldname">
+channel</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5c76c70dc7236733c6bc20f6eea0238b"></a>unsigned int</td>
+<td class="fieldname">
+ip_config</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga53c7ef96f6795c02c4790689905632e5"></a>char</td>
+<td class="fieldname">
+dhcp_hostname[256]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga98a9d2acb9e053ad167921bedd14fe78"></a>char</td>
+<td class="fieldname">
+pppoe_auth_name[128]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga7ad790c55efacc8372468d41a0cee157"></a>char</td>
+<td class="fieldname">
+ip_address[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae6ac4b986b2ada8d2c5ff116967e925f"></a>char</td>
+<td class="fieldname">
+netmask[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4873a13df1b8caa7977d4bfcdcad9c2f"></a>char</td>
+<td class="fieldname">
+default_route[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga37e424a44021106e8641ddcab9e4d4d3"></a>char</td>
+<td class="fieldname">
+primary_dns[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="gac5866b608ee87a7affc23b1c9960e8e7"></a>char</td>
 <td class="fieldname">
 secondary_dns[16]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga0f45a42c32b302b107cb50268cb91f9d"></a>char</td>
+<a id="ga5dc06d668d0e31fe8aee61b8cd6293eb"></a>unsigned int</td>
 <td class="fieldname">
-ssid[<a class="el" href="group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776">SCE_NETCTL_INFO_SSID_LEN_MAX</a>+1]</td>
+http_proxy_config</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga1450116bb4c10213efa620a1e489e7be"></a>unsigned int</td>
+<a id="gad6bbeb0d48be5071a5983af5e875a62b"></a>char</td>
 <td class="fieldname">
-wifi_security</td>
+http_proxy_server[256]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab472afc3c6820cb860379c3954da5ce9"></a>unsigned int</td>
+<td class="fieldname">
+http_proxy_port</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -303,18 +303,6 @@ wifi_security</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga3a2aee0ca9b4b263601bb75095ba2874"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
-<td class="fieldname">
-mapped_addr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5e6eef05fa17e10c680be939d2587d5a"></a>int</td>
-<td class="fieldname">
-nat_type</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="ga538c438311da3034a80ee1fe5b27ce97"></a>unsigned int</td>
 <td class="fieldname">
 size</td>
@@ -324,6 +312,18 @@ size</td>
 <a id="ga2ffe7318166b145e47edef6fb5260816"></a>int</td>
 <td class="fieldname">
 stun_status</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5e6eef05fa17e10c680be939d2587d5a"></a>int</td>
+<td class="fieldname">
+nat_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3a2aee0ca9b4b263601bb75095ba2874"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+mapped_addr</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -344,15 +344,15 @@ stun_status</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gaf47af063637391123f459c66bbfb9629"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
-<td class="fieldname">
-inet_addr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gadd9c0f27b41c4c63dc51df01a03aca04"></a>struct <a class="el" href="group__SceNetCtlUser.html#structSceNetCtlAdhocPeerInfo">SceNetCtlAdhocPeerInfo</a> *</td>
 <td class="fieldname">
 next</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf47af063637391123f459c66bbfb9629"></a><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a></td>
+<td class="fieldname">
+inet_addr</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -463,14 +463,14 @@ next</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga31f0064b6ed9cfb5aa6397df331b1132"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga31f0064b6ed9cfb5aa6397df331b1132">&#9670;&nbsp;</a></span>sceNetCtlAdhocDisconnect()</h2>
+<a id="ga2b9ce92dae6b7f2fab82ebb712811490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b9ce92dae6b7f2fab82ebb712811490">&#9670;&nbsp;</a></span>sceNetCtlInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetCtlAdhocDisconnect </td>
+          <td class="memname">int sceNetCtlInit </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -480,17 +480,16 @@ next</td>
 
 </div>
 </div>
-<a id="ga2faaa0a1ac8d49af7feb0e40134ea5e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2faaa0a1ac8d49af7feb0e40134ea5e3">&#9670;&nbsp;</a></span>sceNetCtlAdhocGetInAddr()</h2>
+<a id="ga78f957fe2d0b4abda522a67151096ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78f957fe2d0b4abda522a67151096ea3">&#9670;&nbsp;</a></span>sceNetCtlTerm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetCtlAdhocGetInAddr </td>
+          <td class="memname">void sceNetCtlTerm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *&#160;</td>
-          <td class="paramname"><em>inaddr</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -498,23 +497,40 @@ next</td>
 
 </div>
 </div>
-<a id="ga1008907f0e4dcff314f12722b2ac9aec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1008907f0e4dcff314f12722b2ac9aec">&#9670;&nbsp;</a></span>sceNetCtlAdhocGetPeerList()</h2>
+<a id="ga35e9deefc24e5d2acd4645e44279ac49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35e9deefc24e5d2acd4645e44279ac49">&#9670;&nbsp;</a></span>sceNetCtlCheckCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetCtlAdhocGetPeerList </td>
+          <td class="memname">int sceNetCtlCheckCallback </td>
           <td>(</td>
-          <td class="paramtype">unsigned int *&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae544daf10107da093bc5ce3571aa8a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae544daf10107da093bc5ce3571aa8a72">&#9670;&nbsp;</a></span>sceNetCtlInetGetResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetCtlInetGetResult </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>errorCode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -554,111 +570,6 @@ next</td>
 
 </div>
 </div>
-<a id="ga2523752cdd23f72ea1f8a90a1f66b0d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2523752cdd23f72ea1f8a90a1f66b0d2">&#9670;&nbsp;</a></span>sceNetCtlAdhocGetState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetCtlAdhocGetState </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga95e28584112cc61ab1cd9fb81a9f4321"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga95e28584112cc61ab1cd9fb81a9f4321">&#9670;&nbsp;</a></span>sceNetCtlAdhocRegisterCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetCtlAdhocRegisterCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceNetCtlUser.html#ga47d1d3aa0e8737823dff3bcb251ba331">SceNetCtlCallback</a>&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>cid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0b414e44ac4bd82d6a84484f5cf2b2ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0b414e44ac4bd82d6a84484f5cf2b2ca">&#9670;&nbsp;</a></span>sceNetCtlAdhocUnregisterCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetCtlAdhocUnregisterCallback </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga35e9deefc24e5d2acd4645e44279ac49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga35e9deefc24e5d2acd4645e44279ac49">&#9670;&nbsp;</a></span>sceNetCtlCheckCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetCtlCheckCallback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaafe282248e2a95c450b54c6e0180f063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaafe282248e2a95c450b54c6e0180f063">&#9670;&nbsp;</a></span>sceNetCtlGetNatInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetCtlGetNatInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceNetCtlUser.html#structSceNetCtlNatInfo">SceNetCtlNatInfo</a> *&#160;</td>
-          <td class="paramname"><em>natinfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga290c37e22cfcf84694933c748c6d90d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga290c37e22cfcf84694933c748c6d90d3">&#9670;&nbsp;</a></span>sceNetCtlInetGetInfo()</h2>
 
@@ -687,34 +598,6 @@ next</td>
 
 </div>
 </div>
-<a id="gae544daf10107da093bc5ce3571aa8a72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae544daf10107da093bc5ce3571aa8a72">&#9670;&nbsp;</a></span>sceNetCtlInetGetResult()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetCtlInetGetResult </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>errorCode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga6b80c99db2e8f8eba51676ae8be558d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6b80c99db2e8f8eba51676ae8be558d8">&#9670;&nbsp;</a></span>sceNetCtlInetGetState()</h2>
 
@@ -726,6 +609,24 @@ next</td>
           <td>(</td>
           <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaafe282248e2a95c450b54c6e0180f063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaafe282248e2a95c450b54c6e0180f063">&#9670;&nbsp;</a></span>sceNetCtlGetNatInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetCtlGetNatInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNetCtlUser.html#structSceNetCtlNatInfo">SceNetCtlNatInfo</a> *&#160;</td>
+          <td class="paramname"><em>natinfo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -785,14 +686,84 @@ next</td>
 
 </div>
 </div>
-<a id="ga2b9ce92dae6b7f2fab82ebb712811490"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b9ce92dae6b7f2fab82ebb712811490">&#9670;&nbsp;</a></span>sceNetCtlInit()</h2>
+<a id="ga95e28584112cc61ab1cd9fb81a9f4321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95e28584112cc61ab1cd9fb81a9f4321">&#9670;&nbsp;</a></span>sceNetCtlAdhocRegisterCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetCtlInit </td>
+          <td class="memname">int sceNetCtlAdhocRegisterCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNetCtlUser.html#ga47d1d3aa0e8737823dff3bcb251ba331">SceNetCtlCallback</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>cid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0b414e44ac4bd82d6a84484f5cf2b2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b414e44ac4bd82d6a84484f5cf2b2ca">&#9670;&nbsp;</a></span>sceNetCtlAdhocUnregisterCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetCtlAdhocUnregisterCallback </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2523752cdd23f72ea1f8a90a1f66b0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2523752cdd23f72ea1f8a90a1f66b0d2">&#9670;&nbsp;</a></span>sceNetCtlAdhocGetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetCtlAdhocGetState </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31f0064b6ed9cfb5aa6397df331b1132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31f0064b6ed9cfb5aa6397df331b1132">&#9670;&nbsp;</a></span>sceNetCtlAdhocDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetCtlAdhocDisconnect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -802,16 +773,45 @@ next</td>
 
 </div>
 </div>
-<a id="ga78f957fe2d0b4abda522a67151096ea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga78f957fe2d0b4abda522a67151096ea3">&#9670;&nbsp;</a></span>sceNetCtlTerm()</h2>
+<a id="ga1008907f0e4dcff314f12722b2ac9aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1008907f0e4dcff314f12722b2ac9aec">&#9670;&nbsp;</a></span>sceNetCtlAdhocGetPeerList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sceNetCtlTerm </td>
+          <td class="memname">int sceNetCtlAdhocGetPeerList </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2faaa0a1ac8d49af7feb0e40134ea5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2faaa0a1ac8d49af7feb0e40134ea5e3">&#9670;&nbsp;</a></span>sceNetCtlAdhocGetInAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetCtlAdhocGetInAddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *&#160;</td>
+          <td class="paramname"><em>inaddr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

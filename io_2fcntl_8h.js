@@ -1,19 +1,5 @@
 var io_2fcntl_8h =
 [
-    [ "SceIoDevType", "group__SceFcntlUser.html#ga5effa92f8bfef1b789c40d88730b2da8", [
-      [ "SCE_DEV_TYPE_NULL", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a01c02bff477ebe8c61e23e30e30cdceb", null ],
-      [ "SCE_DEV_TYPE_CHAR", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8aad9827ed08650871fa93c92fd8587be9", null ],
-      [ "SCE_DEV_TYPE_BLOCK", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a27b63f889bd52bbb26911c8df8d60420", null ],
-      [ "SCE_DEV_TYPE_FS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a1fd28b67b6df4ba702c5969a8a0f94e2", null ],
-      [ "SCE_DEV_TYPE_ALIAS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ad5899a6dd55acc1cbe7daab64701a633", null ],
-      [ "SCE_DEV_TYPE_MOUNTPT", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ac94739615b5f6b183154ac895c162cdb", null ],
-      [ "SCE_DEV_TYPE_NULL", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a01c02bff477ebe8c61e23e30e30cdceb", null ],
-      [ "SCE_DEV_TYPE_CHAR", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8aad9827ed08650871fa93c92fd8587be9", null ],
-      [ "SCE_DEV_TYPE_BLOCK", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a27b63f889bd52bbb26911c8df8d60420", null ],
-      [ "SCE_DEV_TYPE_FS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a1fd28b67b6df4ba702c5969a8a0f94e2", null ],
-      [ "SCE_DEV_TYPE_ALIAS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ad5899a6dd55acc1cbe7daab64701a633", null ],
-      [ "SCE_DEV_TYPE_MOUNTPT", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ac94739615b5f6b183154ac895c162cdb", null ]
-    ] ],
     [ "SceIoMode", "group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388", [
       [ "SCE_O_RDONLY", "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a6cadd0f04c521c58f5edf07e4b28e2bf", null ],
       [ "SCE_O_WRONLY", "group__SceFcntlKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2", null ],
@@ -60,22 +46,36 @@ var io_2fcntl_8h =
       [ "SCE_SEEK_CUR", "group__SceFcntlKernel.html#gga5733272a008ed1a31fc1d94e7c42324fa30207bcde2a4a48be05f1dd2365492ec", null ],
       [ "SCE_SEEK_END", "group__SceFcntlKernel.html#gga5733272a008ed1a31fc1d94e7c42324fabbdb8bcddabf0188e8ed9997fe979b38", null ]
     ] ],
-    [ "sceIoCancel", "group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22", null ],
-    [ "sceIoClose", "group__SceFcntlUser.html#ga125921b287807c747491aed6ef16acd9", null ],
-    [ "sceIoCloseAsync", "group__SceFcntlUser.html#ga2e37fd75f4a07b76bb0a9e4a4deda70e", null ],
-    [ "sceIoLseek", "group__SceFcntlUser.html#ga7a57926cba9d70d9632396eaf69e0e96", null ],
-    [ "sceIoLseek32", "group__SceFcntlUser.html#gaca489d7dcc95d9ee8f85248601c2102c", null ],
-    [ "sceIoLseekAsync", "group__SceFcntlUser.html#ga39a8423cdcb9a592df18ece834962461", null ],
+    [ "SceIoDevType", "group__SceFcntlUser.html#ga5effa92f8bfef1b789c40d88730b2da8", [
+      [ "SCE_DEV_TYPE_NULL", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a01c02bff477ebe8c61e23e30e30cdceb", null ],
+      [ "SCE_DEV_TYPE_CHAR", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8aad9827ed08650871fa93c92fd8587be9", null ],
+      [ "SCE_DEV_TYPE_BLOCK", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a27b63f889bd52bbb26911c8df8d60420", null ],
+      [ "SCE_DEV_TYPE_FS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a1fd28b67b6df4ba702c5969a8a0f94e2", null ],
+      [ "SCE_DEV_TYPE_ALIAS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ad5899a6dd55acc1cbe7daab64701a633", null ],
+      [ "SCE_DEV_TYPE_MOUNTPT", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ac94739615b5f6b183154ac895c162cdb", null ],
+      [ "SCE_DEV_TYPE_NULL", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a01c02bff477ebe8c61e23e30e30cdceb", null ],
+      [ "SCE_DEV_TYPE_CHAR", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8aad9827ed08650871fa93c92fd8587be9", null ],
+      [ "SCE_DEV_TYPE_BLOCK", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a27b63f889bd52bbb26911c8df8d60420", null ],
+      [ "SCE_DEV_TYPE_FS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a1fd28b67b6df4ba702c5969a8a0f94e2", null ],
+      [ "SCE_DEV_TYPE_ALIAS", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ad5899a6dd55acc1cbe7daab64701a633", null ],
+      [ "SCE_DEV_TYPE_MOUNTPT", "group__SceFcntlKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ac94739615b5f6b183154ac895c162cdb", null ]
+    ] ],
     [ "sceIoOpen", "group__SceFcntlUser.html#ga88dc53eaa661c18698ff606859f69ec8", null ],
     [ "sceIoOpenAsync", "group__SceFcntlUser.html#gaa40c35536dfada200f9963b51ebc0b0b", null ],
-    [ "sceIoPread", "group__SceFcntlUser.html#ga2efe04d9b1400860ce35aef8129efd05", null ],
-    [ "sceIoPwrite", "group__SceFcntlUser.html#ga23326161aae209fdecf47256d4560d22", null ],
+    [ "sceIoClose", "group__SceFcntlUser.html#ga125921b287807c747491aed6ef16acd9", null ],
+    [ "sceIoCloseAsync", "group__SceFcntlUser.html#ga2e37fd75f4a07b76bb0a9e4a4deda70e", null ],
     [ "sceIoRead", "group__SceFcntlUser.html#ga5dc250bdac642a1c7365ea18a21d3635", null ],
     [ "sceIoReadAsync", "group__SceFcntlUser.html#gac39b5495f04c81e5efefc7b7fbabdf7b", null ],
+    [ "sceIoPread", "group__SceFcntlUser.html#ga2efe04d9b1400860ce35aef8129efd05", null ],
+    [ "sceIoWrite", "group__SceFcntlUser.html#gabead74a0aac2fded08b72a5a43902170", null ],
+    [ "sceIoWriteAsync", "group__SceFcntlUser.html#ga8ebeef57f41f8fe8aa435cfe889589bf", null ],
+    [ "sceIoPwrite", "group__SceFcntlUser.html#ga23326161aae209fdecf47256d4560d22", null ],
+    [ "sceIoLseek", "group__SceFcntlUser.html#ga7a57926cba9d70d9632396eaf69e0e96", null ],
+    [ "sceIoLseekAsync", "group__SceFcntlUser.html#ga39a8423cdcb9a592df18ece834962461", null ],
+    [ "sceIoLseek32", "group__SceFcntlUser.html#gaca489d7dcc95d9ee8f85248601c2102c", null ],
     [ "sceIoRemove", "group__SceFcntlUser.html#gaf0878533048cf65a30d96350d296b253", null ],
     [ "sceIoRename", "group__SceFcntlUser.html#gaa574a64450b9f7a8aa062f48872e47e6", null ],
     [ "sceIoSync", "group__SceFcntlUser.html#ga67be32ffdbd12b23149ebbc78b09c775", null ],
     [ "sceIoSyncByFd", "group__SceFcntlUser.html#gaa55663b552e8a30b1c64a59067c0662e", null ],
-    [ "sceIoWrite", "group__SceFcntlUser.html#gabead74a0aac2fded08b72a5a43902170", null ],
-    [ "sceIoWriteAsync", "group__SceFcntlUser.html#ga8ebeef57f41f8fe8aa435cfe889589bf", null ]
+    [ "sceIoCancel", "group__SceFcntlUser.html#gad59b308f9923ebc9f7ea6ff18a8ede22", null ]
 ];

@@ -284,13 +284,13 @@ var bt_8h =
     [ "ksceBtStopAudio", "group__SceBtKernel.html#ga0c11546f5627e8ded29cc1cd8d8c5f45", null ],
     [ "ksceBtStopInquiry", "group__SceBtKernel.html#ga016c2bea4aaa61705e911e2b122fbfcd", null ],
     [ "ksceBtUnregisterCallback", "group__SceBtKernel.html#gaf15cd703ce278607b56ce91eb473b4fe", null ],
-    [ "buffer", "group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4", null ],
-    [ "length", "group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b", null ],
-    [ "next", "group__SceBtKernel.html#ga07289ec40cce9cf47349f9aed1cfd006", null ],
-    [ "type", "group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e", null ],
     [ "unk00", "group__SceBtKernel.html#gabdb3d91a54b6e8ff07f1ef514e8aaf20", null ],
     [ "unk04", "group__SceBtKernel.html#gad8b53f68573789dc013efb35a4978030", null ],
+    [ "type", "group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e", null ],
     [ "unk09", "group__SceBtKernel.html#gae4e671f7050cb9be61882b6984e6a5f8", null ],
     [ "unk0A", "group__SceBtKernel.html#ga0496547cca6d4a64fc19a5f3ef5475a5", null ],
-    [ "unk0B", "group__SceBtKernel.html#ga3c5637b575466c7f74a2c48485078bab", null ]
+    [ "unk0B", "group__SceBtKernel.html#ga3c5637b575466c7f74a2c48485078bab", null ],
+    [ "buffer", "group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4", null ],
+    [ "length", "group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b", null ],
+    [ "next", "group__SceBtKernel.html#ga07289ec40cce9cf47349f9aed1cfd006", null ]
 ];

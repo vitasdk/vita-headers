@@ -103,51 +103,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga8dc8b1cc4d8c972d5d80d9515790305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac9a9e13395dc75fbd87fd19832d59db8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9a9e13395dc75fbd87fd19832d59db8">&#9670;&nbsp;</a></span>_sceNpDrmGetFixedRifName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceNpDrmGetFixedRifName </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>rif_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>aid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get fixed rif name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- RIF name buffer (48 bytes)</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown, use 0</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- Account ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga301f1be44dc61e81633ad5fb5c9a319f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga301f1be44dc61e81633ad5fb5c9a319f">&#9670;&nbsp;</a></span>_sceNpDrmGetRifName()</h2>
 
@@ -181,6 +136,51 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get rif name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- RIF name buffer (48 bytes)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown, use 0</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- Account ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac9a9e13395dc75fbd87fd19832d59db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9a9e13395dc75fbd87fd19832d59db8">&#9670;&nbsp;</a></span>_sceNpDrmGetFixedRifName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceNpDrmGetFixedRifName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>rif_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>aid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get fixed rif name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- RIF name buffer (48 bytes)</td></tr>

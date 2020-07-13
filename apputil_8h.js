@@ -1,11 +1,19 @@
 var apputil_8h =
 [
-    [ "SceAppUtilAppEventType", "group__SceAppUtilUser.html#gabe25bd5ff10f50587b70e53516efcef0", null ],
-    [ "SceAppUtilAppParamId", "group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e", null ],
-    [ "SceAppUtilBgdlStatusType", "group__SceAppUtilUser.html#gafd636dd29d6a883f4716246dcc7b527a", null ],
     [ "SceAppUtilBootAttribute", "group__SceAppUtilUser.html#ga0b442a0d7c1d9f19ffc5ed4796b9ac1d", null ],
+    [ "SceAppUtilAppEventType", "group__SceAppUtilUser.html#gabe25bd5ff10f50587b70e53516efcef0", null ],
     [ "SceAppUtilSaveDataSlotId", "group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a", null ],
     [ "SceAppUtilSaveDataSlotStatus", "group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318", null ],
+    [ "SceAppUtilAppParamId", "group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e", null ],
+    [ "SceAppUtilBgdlStatusType", "group__SceAppUtilUser.html#gafd636dd29d6a883f4716246dcc7b527a", null ],
+    [ "SceAppUtilSaveDataDataRemoveMode", "group__SceAppUtilUser.html#gac739509232689dceb90ea1e3d7eb1009", [
+      [ "SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_DEFAULT", "group__SceAppUtilUser.html#ggac739509232689dceb90ea1e3d7eb1009a09798fb8ce170e3ff216da528c27b77f", null ],
+      [ "SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_NO_SLOT", "group__SceAppUtilUser.html#ggac739509232689dceb90ea1e3d7eb1009a3238b995dc9f045514588cd0f7c04601", null ]
+    ] ],
+    [ "SceAppUtilSaveDataDataSaveMode", "group__SceAppUtilUser.html#gaf7c38c9a43bc7510520f90dc90a4a5c2", [
+      [ "SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_FILE", "group__SceAppUtilUser.html#ggaf7c38c9a43bc7510520f90dc90a4a5c2a131779e6db42f538dea756fbe87da083", null ],
+      [ "SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_DIRECTORY", "group__SceAppUtilUser.html#ggaf7c38c9a43bc7510520f90dc90a4a5c2aab0361b32a32578d2c70c5be94770df1", null ]
+    ] ],
     [ "SceAppUtilErrorCode", "group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d", [
       [ "SCE_APPUTIL_ERROR_PARAMETER", "group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da2bc63464a9646aff22a956ce718d3009", null ],
       [ "SCE_APPUTIL_ERROR_NOT_INITIALIZED", "group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da7abe4278f2d054a7f0252cf70d03d8fd", null ],
@@ -25,34 +33,26 @@ var apputil_8h =
       [ "SCE_APPUTIL_ERROR_MOUNT_LIMIT_OVER", "group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da5610fac9b086153455d091214e201370", null ],
       [ "SCE_APPUTIL_ERROR_STACKSIZE_TOO_SHORT", "group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da90680b9625e5641d5ac25665afb83378", null ]
     ] ],
-    [ "SceAppUtilSaveDataDataRemoveMode", "group__SceAppUtilUser.html#gac739509232689dceb90ea1e3d7eb1009", [
-      [ "SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_DEFAULT", "group__SceAppUtilUser.html#ggac739509232689dceb90ea1e3d7eb1009a09798fb8ce170e3ff216da528c27b77f", null ],
-      [ "SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_NO_SLOT", "group__SceAppUtilUser.html#ggac739509232689dceb90ea1e3d7eb1009a3238b995dc9f045514588cd0f7c04601", null ]
-    ] ],
-    [ "SceAppUtilSaveDataDataSaveMode", "group__SceAppUtilUser.html#gaf7c38c9a43bc7510520f90dc90a4a5c2", [
-      [ "SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_FILE", "group__SceAppUtilUser.html#ggaf7c38c9a43bc7510520f90dc90a4a5c2a131779e6db42f538dea756fbe87da083", null ],
-      [ "SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_DIRECTORY", "group__SceAppUtilUser.html#ggaf7c38c9a43bc7510520f90dc90a4a5c2aab0361b32a32578d2c70c5be94770df1", null ]
-    ] ],
-    [ "sceAppUtilAppEventParseLiveArea", "group__SceAppUtilUser.html#gafb52626e235f34ba7bf8f485644c28f5", null ],
-    [ "sceAppUtilAppParamGetInt", "group__SceAppUtilUser.html#ga11d6c9aed6fc3d55e38d35acfdc903b3", null ],
-    [ "sceAppUtilBgdlGetStatus", "group__SceAppUtilUser.html#ga531e380a164de46fe0bf10e7c1b1c666", null ],
     [ "sceAppUtilInit", "group__SceAppUtilUser.html#ga321a1185ec5cb4c83f2860fae0d33b2f", null ],
-    [ "sceAppUtilLaunchWebBrowser", "group__SceAppUtilUser.html#ga331a523bd5dfc953cb94cc186e927ef5", null ],
-    [ "sceAppUtilLoadSafeMemory", "group__SceAppUtilUser.html#ga0f87c48e4b23f9e578e44e305a38bd26", null ],
+    [ "sceAppUtilShutdown", "group__SceAppUtilUser.html#ga6dba1ab9dfb7bdaca18f02efdd67f6b9", null ],
+    [ "sceAppUtilReceiveAppEvent", "group__SceAppUtilUser.html#ga493d17ae2860c866f1a91a1bb3e3aa49", null ],
+    [ "sceAppUtilAppEventParseLiveArea", "group__SceAppUtilUser.html#gafb52626e235f34ba7bf8f485644c28f5", null ],
+    [ "sceAppUtilSaveDataSlotCreate", "group__SceAppUtilUser.html#gab6ba629d8487be59a84dc347d7263f03", null ],
+    [ "sceAppUtilSaveDataSlotDelete", "group__SceAppUtilUser.html#ga640719f2d3372bea25d1c6ef2bdfd74c", null ],
+    [ "sceAppUtilSaveDataSlotSetParam", "group__SceAppUtilUser.html#gaa2d0436cc5c45c401b1ccf7581207c86", null ],
+    [ "sceAppUtilSaveDataSlotGetParam", "group__SceAppUtilUser.html#ga1e6c799a6e98de4b3fb72ccf085dce91", null ],
+    [ "sceAppUtilSaveDataDataSave", "group__SceAppUtilUser.html#ga2b01f9efd14494011e1e520f1a067197", null ],
+    [ "sceAppUtilSaveDataDataRemove", "group__SceAppUtilUser.html#gae4b5c20f6ecc307fa9149f3979385e83", null ],
     [ "sceAppUtilMusicMount", "group__SceAppUtilUser.html#ga768225668e5530ecf408ff908b56c21d", null ],
     [ "sceAppUtilMusicUmount", "group__SceAppUtilUser.html#gaea4d86491081ce432ff6450a734a0dc3", null ],
     [ "sceAppUtilPhotoMount", "group__SceAppUtilUser.html#ga572884685f0fdf9210f16e5196b09055", null ],
     [ "sceAppUtilPhotoUmount", "group__SceAppUtilUser.html#ga36b0006801074e289d92fdc763fa97c0", null ],
-    [ "sceAppUtilReceiveAppEvent", "group__SceAppUtilUser.html#ga493d17ae2860c866f1a91a1bb3e3aa49", null ],
-    [ "sceAppUtilSaveDataDataRemove", "group__SceAppUtilUser.html#gae4b5c20f6ecc307fa9149f3979385e83", null ],
-    [ "sceAppUtilSaveDataDataSave", "group__SceAppUtilUser.html#ga2b01f9efd14494011e1e520f1a067197", null ],
-    [ "sceAppUtilSaveDataSlotCreate", "group__SceAppUtilUser.html#gab6ba629d8487be59a84dc347d7263f03", null ],
-    [ "sceAppUtilSaveDataSlotDelete", "group__SceAppUtilUser.html#ga640719f2d3372bea25d1c6ef2bdfd74c", null ],
-    [ "sceAppUtilSaveDataSlotGetParam", "group__SceAppUtilUser.html#ga1e6c799a6e98de4b3fb72ccf085dce91", null ],
-    [ "sceAppUtilSaveDataSlotSetParam", "group__SceAppUtilUser.html#gaa2d0436cc5c45c401b1ccf7581207c86", null ],
-    [ "sceAppUtilSaveSafeMemory", "group__SceAppUtilUser.html#gaaf0fb3623067ff42e900679229288bb6", null ],
-    [ "sceAppUtilShutdown", "group__SceAppUtilUser.html#ga6dba1ab9dfb7bdaca18f02efdd67f6b9", null ],
-    [ "sceAppUtilStoreBrowse", "group__SceAppUtilUser.html#gabb7a1bda40321603c313ca220f60fddc", null ],
     [ "sceAppUtilSystemParamGetInt", "group__SceAppUtilUser.html#gad771013108eeb704f77e1441c38142f3", null ],
-    [ "sceAppUtilSystemParamGetString", "group__SceAppUtilUser.html#gaf05b420df9d1607f70477c55a4bd70e9", null ]
+    [ "sceAppUtilSystemParamGetString", "group__SceAppUtilUser.html#gaf05b420df9d1607f70477c55a4bd70e9", null ],
+    [ "sceAppUtilAppParamGetInt", "group__SceAppUtilUser.html#ga11d6c9aed6fc3d55e38d35acfdc903b3", null ],
+    [ "sceAppUtilSaveSafeMemory", "group__SceAppUtilUser.html#gaaf0fb3623067ff42e900679229288bb6", null ],
+    [ "sceAppUtilLoadSafeMemory", "group__SceAppUtilUser.html#ga0f87c48e4b23f9e578e44e305a38bd26", null ],
+    [ "sceAppUtilStoreBrowse", "group__SceAppUtilUser.html#gabb7a1bda40321603c313ca220f60fddc", null ],
+    [ "sceAppUtilBgdlGetStatus", "group__SceAppUtilUser.html#ga531e380a164de46fe0bf10e7c1b1c666", null ],
+    [ "sceAppUtilLaunchWebBrowser", "group__SceAppUtilUser.html#ga331a523bd5dfc953cb94cc186e927ef5", null ]
 ];

@@ -27,15 +27,15 @@ var common__dialog_8h =
       [ "SCE_COMMON_DIALOG_ERROR_GXM_IS_UNINITIALIZED", "group__SceCommonDialogUser.html#gga1f883eb600e02da2af5c449cf479e4daaa03b809a903428683851219df78fde3c", null ],
       [ "SCE_COMMON_DIALOG_ERROR_UNEXPECTED_FATAL", "group__SceCommonDialogUser.html#gga1f883eb600e02da2af5c449cf479e4daa82030230c1e9faebce12b99ef4f31bd4", null ]
     ] ],
-    [ "SceCommonDialogResult", "group__SceCommonDialogUser.html#ga8135bab22247446782c58e47220666d2", [
-      [ "SCE_COMMON_DIALOG_RESULT_OK", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2a97848c3220176329fdef6ceddef97e6b", null ],
-      [ "SCE_COMMON_DIALOG_RESULT_USER_CANCELED", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2a09458fd7ffbd41d65c8f1609b170c282", null ],
-      [ "SCE_COMMON_DIALOG_RESULT_ABORTED", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2ad88bf1bf734ff87bc792f3792f952d43", null ]
-    ] ],
     [ "SceCommonDialogStatus", "group__SceCommonDialogUser.html#ga660149ef34e5d379e512219bf21ffd49", [
       [ "SCE_COMMON_DIALOG_STATUS_NONE", "group__SceCommonDialogUser.html#gga660149ef34e5d379e512219bf21ffd49af1db8c32e9a1478b2bfffca8120b4b47", null ],
       [ "SCE_COMMON_DIALOG_STATUS_RUNNING", "group__SceCommonDialogUser.html#gga660149ef34e5d379e512219bf21ffd49a2bd1bc1de30414dcf6570076ac59a383", null ],
       [ "SCE_COMMON_DIALOG_STATUS_FINISHED", "group__SceCommonDialogUser.html#gga660149ef34e5d379e512219bf21ffd49ac8f35d5eea4da807bce0462c055928bf", null ]
+    ] ],
+    [ "SceCommonDialogResult", "group__SceCommonDialogUser.html#ga8135bab22247446782c58e47220666d2", [
+      [ "SCE_COMMON_DIALOG_RESULT_OK", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2a97848c3220176329fdef6ceddef97e6b", null ],
+      [ "SCE_COMMON_DIALOG_RESULT_USER_CANCELED", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2a09458fd7ffbd41d65c8f1609b170c282", null ],
+      [ "SCE_COMMON_DIALOG_RESULT_ABORTED", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2ad88bf1bf734ff87bc792f3792f952d43", null ]
     ] ],
     [ "sceCommonDialogSetConfigParam", "group__SceCommonDialogUser.html#gabd988f7619d3142141d20430ffcdc9f5", null ],
     [ "sceCommonDialogUpdate", "group__SceCommonDialogUser.html#gaee0f5feb36b2342d41aa9907e1a7a245", null ]

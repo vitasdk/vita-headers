@@ -1,11 +1,11 @@
 var ern_2io_2stat_8h =
 [
-    [ "SCE_S_ISDIR", "group__SceStatKernel.html#gadd2d8a2c5c3095032e1999771132e115", null ],
     [ "SCE_S_ISLNK", "group__SceStatKernel.html#ga2561715990b2e05ef0b56237b18e5d21", null ],
     [ "SCE_S_ISREG", "group__SceStatKernel.html#ga67719e79d77b8d45c94e97d02548dee6", null ],
-    [ "SCE_SO_ISDIR", "group__SceStatKernel.html#gaad6e5e897cea0e2efda29316e139f7c9", null ],
+    [ "SCE_S_ISDIR", "group__SceStatKernel.html#gadd2d8a2c5c3095032e1999771132e115", null ],
     [ "SCE_SO_ISLNK", "group__SceStatKernel.html#ga79903d28d909b3d5b79491d9b0ac39ed", null ],
     [ "SCE_SO_ISREG", "group__SceStatKernel.html#ga0ed64f564b5a8bff3a5a05e2afc7204c", null ],
+    [ "SCE_SO_ISDIR", "group__SceStatKernel.html#gaad6e5e897cea0e2efda29316e139f7c9", null ],
     [ "SceIoAccessMode", "group__SceStatKernel.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16", [
       [ "SCE_S_IXUSR", "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a51bb8db57c5ddb8d0403e214e36d9672", null ],
       [ "SCE_S_IWUSR", "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a2961bfcb4526e512eef589bbc43d2879", null ],
@@ -62,10 +62,10 @@ var ern_2io_2stat_8h =
       [ "SCE_SO_IFREG", "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c", null ],
       [ "SCE_SO_IFMT", "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31", null ]
     ] ],
-    [ "ksceIoChstat", "group__SceStatKernel.html#ga769af7dfbe607f7f3352ec904be7e199", null ],
-    [ "ksceIoChstatByFd", "group__SceStatKernel.html#gabdf9785890ecaa84aeea2f1f2eafd2aa", null ],
+    [ "ksceIoMkdir", "group__SceStatKernel.html#ga73a2f2cc28d12959b0c90d910b736daa", null ],
+    [ "ksceIoRmdir", "group__SceStatKernel.html#gadc3b799a80e4fe1b4a752090c759277e", null ],
     [ "ksceIoGetstat", "group__SceStatKernel.html#ga259b5baaa2b6abfd815969729fd4e4b6", null ],
     [ "ksceIoGetstatByFd", "group__SceStatKernel.html#ga111cff519132adbe231968e04db35a0d", null ],
-    [ "ksceIoMkdir", "group__SceStatKernel.html#ga73a2f2cc28d12959b0c90d910b736daa", null ],
-    [ "ksceIoRmdir", "group__SceStatKernel.html#gadc3b799a80e4fe1b4a752090c759277e", null ]
+    [ "ksceIoChstat", "group__SceStatKernel.html#ga769af7dfbe607f7f3352ec904be7e199", null ],
+    [ "ksceIoChstatByFd", "group__SceStatKernel.html#gabdf9785890ecaa84aeea2f1f2eafd2aa", null ]
 ];

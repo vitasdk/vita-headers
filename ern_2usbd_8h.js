@@ -28,12 +28,12 @@ var ern_2usbd_8h =
       [ "SCE_USBD_ERROR_NOT_SUPPORTED", "group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda3d260f0dbea7c07605df6a82ac5cde29", null ],
       [ "SCE_USBD_ERROR_FATAL", "group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fdabe57e61786581548d32039135dbcf645", null ]
     ] ],
+    [ "ksceUsbdRegisterDriver", "group__SceUsbdKernel.html#gad5e2b00121dd7f2d8b4f71b15beb572c", null ],
+    [ "ksceUsbdRegisterCompositeLdd", "group__SceUsbdKernel.html#gaa78b62e12e9a95aba9e9518e46a73062", null ],
+    [ "ksceUsbdUnregisterDriver", "group__SceUsbdKernel.html#gafe62b8ed21f2bc3b00495cac91f03bf3", null ],
+    [ "ksceUsbdGetDescriptor", "group__SceUsbdKernel.html#gafcf34f4b1163d2e0ee9bca4d950e39cd", null ],
+    [ "ksceUsbdOpenEndpoint", "group__SceUsbdKernel.html#ga13b1880485678d5b9e9030f471160c4b", null ],
     [ "ksceUsbdCloseEndpoint", "group__SceUsbdKernel.html#ga739dbd8c9a2046fdbefb564bc5d369b7", null ],
     [ "ksceUsbdControlTransfer", "group__SceUsbdKernel.html#ga952916d62ad4f8aab79f378f2e568365", null ],
-    [ "ksceUsbdGetDescriptor", "group__SceUsbdKernel.html#gafcf34f4b1163d2e0ee9bca4d950e39cd", null ],
-    [ "ksceUsbdInterruptTransfer", "group__SceUsbdKernel.html#ga7c99704db8909498914c04b778bdb7b7", null ],
-    [ "ksceUsbdOpenEndpoint", "group__SceUsbdKernel.html#ga13b1880485678d5b9e9030f471160c4b", null ],
-    [ "ksceUsbdRegisterCompositeLdd", "group__SceUsbdKernel.html#gaa78b62e12e9a95aba9e9518e46a73062", null ],
-    [ "ksceUsbdRegisterDriver", "group__SceUsbdKernel.html#gad5e2b00121dd7f2d8b4f71b15beb572c", null ],
-    [ "ksceUsbdUnregisterDriver", "group__SceUsbdKernel.html#gafe62b8ed21f2bc3b00495cac91f03bf3", null ]
+    [ "ksceUsbdInterruptTransfer", "group__SceUsbdKernel.html#ga7c99704db8909498914c04b778bdb7b7", null ]
 ];

@@ -144,9 +144,9 @@ Macros</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga90bcf5f1aa745fef9e38d1f208d0334e"></a>unsigned</td>
+<a id="gad99c700cf0c35d1be72105e96a78c0fc"></a>unsigned</td>
 <td class="fieldname">
-currentInuseSize</td>
+poolSize</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -156,9 +156,9 @@ maxInuseSize</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gad99c700cf0c35d1be72105e96a78c0fc"></a>unsigned</td>
+<a id="ga90bcf5f1aa745fef9e38d1f208d0334e"></a>unsigned</td>
 <td class="fieldname">
-poolSize</td>
+currentInuseSize</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -243,17 +243,17 @@ reserved</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga52861a9bb6eee66901b8393dc50b152b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52861a9bb6eee66901b8393dc50b152b">&#9670;&nbsp;</a></span>sceSslFreeSslCertName()</h2>
+<a id="ga13926687f23c60d45340f013b1382f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13926687f23c60d45340f013b1382f75">&#9670;&nbsp;</a></span>sceSslInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceSslFreeSslCertName </td>
+          <td class="memname">int sceSslInit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#gae981fc6a227fee69c4492d1dd76f9a97">SceSslCertName</a> *&#160;</td>
-          <td class="paramname"><em>certName</em></td><td>)</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>poolSize</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -261,17 +261,17 @@ reserved</td>
 
 </div>
 </div>
-<a id="ga1e75cf79605b30062c33b03b622438da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e75cf79605b30062c33b03b622438da">&#9670;&nbsp;</a></span>sceSslGetIssuerName()</h2>
+<a id="ga4bc1a9248ba253229a7b3a44727f2ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bc1a9248ba253229a7b3a44727f2ad3">&#9670;&nbsp;</a></span>sceSslTerm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__SceLibSslUser.html#gae981fc6a227fee69c4492d1dd76f9a97">SceSslCertName</a>* sceSslGetIssuerName </td>
+          <td class="memname">int sceSslTerm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
-          <td class="paramname"><em>sslCert</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -291,6 +291,96 @@ reserved</td>
           <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#structSceSslMemoryPoolStats">SceSslMemoryPoolStats</a> *&#160;</td>
           <td class="paramname"><em>currentStat</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f2c79ccf705223402799d51d670eedd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f2c79ccf705223402799d51d670eedd">&#9670;&nbsp;</a></span>sceSslGetSerialNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSslGetSerialNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
+          <td class="paramname"><em>sslCert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>sboData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>sboLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa2ccc871f6af26adfecddc614535f377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2ccc871f6af26adfecddc614535f377">&#9670;&nbsp;</a></span>sceSslGetNotBefore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSslGetNotBefore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
+          <td class="paramname"><em>sslCert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>begin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafa209c71c2205c2ce7e4cf78aa21e0dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa209c71c2205c2ce7e4cf78aa21e0dc">&#9670;&nbsp;</a></span>sceSslGetNotAfter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSslGetNotAfter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
+          <td class="paramname"><em>sslCert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -373,96 +463,6 @@ reserved</td>
 
 </div>
 </div>
-<a id="gafa209c71c2205c2ce7e4cf78aa21e0dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafa209c71c2205c2ce7e4cf78aa21e0dc">&#9670;&nbsp;</a></span>sceSslGetNotAfter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceSslGetNotAfter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
-          <td class="paramname"><em>sslCert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
-          <td class="paramname"><em>limit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa2ccc871f6af26adfecddc614535f377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2ccc871f6af26adfecddc614535f377">&#9670;&nbsp;</a></span>sceSslGetNotBefore()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceSslGetNotBefore </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
-          <td class="paramname"><em>sslCert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
-          <td class="paramname"><em>begin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7f2c79ccf705223402799d51d670eedd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f2c79ccf705223402799d51d670eedd">&#9670;&nbsp;</a></span>sceSslGetSerialNumber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceSslGetSerialNumber </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
-          <td class="paramname"><em>sslCert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char **&#160;</td>
-          <td class="paramname"><em>sboData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned *&#160;</td>
-          <td class="paramname"><em>sboLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gae1ba256263383abca54f686720ecc873"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae1ba256263383abca54f686720ecc873">&#9670;&nbsp;</a></span>sceSslGetSubjectName()</h2>
 
@@ -481,17 +481,17 @@ reserved</td>
 
 </div>
 </div>
-<a id="ga13926687f23c60d45340f013b1382f75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga13926687f23c60d45340f013b1382f75">&#9670;&nbsp;</a></span>sceSslInit()</h2>
+<a id="ga1e75cf79605b30062c33b03b622438da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e75cf79605b30062c33b03b622438da">&#9670;&nbsp;</a></span>sceSslGetIssuerName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceSslInit </td>
+          <td class="memname"><a class="el" href="group__SceLibSslUser.html#gae981fc6a227fee69c4492d1dd76f9a97">SceSslCertName</a>* sceSslGetIssuerName </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>poolSize</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga55dcf3cb200b414fbb1dfce2a9a4ac61">SceSslCert</a> *&#160;</td>
+          <td class="paramname"><em>sslCert</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -499,17 +499,17 @@ reserved</td>
 
 </div>
 </div>
-<a id="ga4bc1a9248ba253229a7b3a44727f2ad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4bc1a9248ba253229a7b3a44727f2ad3">&#9670;&nbsp;</a></span>sceSslTerm()</h2>
+<a id="ga52861a9bb6eee66901b8393dc50b152b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52861a9bb6eee66901b8393dc50b152b">&#9670;&nbsp;</a></span>sceSslFreeSslCertName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceSslTerm </td>
+          <td class="memname">int sceSslFreeSslCertName </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#gae981fc6a227fee69c4492d1dd76f9a97">SceSslCertName</a> *&#160;</td>
+          <td class="paramname"><em>certName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

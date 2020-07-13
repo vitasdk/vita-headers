@@ -158,15 +158,15 @@ Macros</h2></td></tr>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gad8ecf41895dce440887f26bb57dd3d06"></a>int</td>
-<td class="fieldname">
-events</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gaf2e9d33268592774114e534fdff39f61"></a>int</td>
 <td class="fieldname">
 id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad8ecf41895dce440887f26bb57dd3d06"></a>int</td>
+<td class="fieldname">
+events</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -193,6 +193,12 @@ revents</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="ga2930b8042c82c29fda7f2d3a14dd63ed"></a>struct <a class="el" href="group__ScePspnetAdhocUser.html#structSceNetAdhocPdpStat">SceNetAdhocPdpStat</a> *</td>
+<td class="fieldname">
+next</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga969f26146abf0bda055dadca67682dfb"></a>int</td>
 <td class="fieldname">
 id</td>
@@ -208,12 +214,6 @@ laddr</td>
 <a id="gacb35cd79c2a9852f5dbcdcbb151f1252"></a><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a></td>
 <td class="fieldname">
 lport</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2930b8042c82c29fda7f2d3a14dd63ed"></a>struct <a class="el" href="group__ScePspnetAdhocUser.html#structSceNetAdhocPdpStat">SceNetAdhocPdpStat</a> *</td>
-<td class="fieldname">
-next</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -240,6 +240,12 @@ rcv_sb_cc</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a id="gae34b4b879c3cda084aa221bd441983e9"></a>struct <a class="el" href="group__ScePspnetAdhocUser.html#structSceNetAdhocPtpStat">SceNetAdhocPtpStat</a> *</td>
+<td class="fieldname">
+next</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ga0923f495b6207804ddcecc18c197c90b"></a>int</td>
 <td class="fieldname">
 id</td>
@@ -252,21 +258,15 @@ laddr</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga379c57c17807da2d494f736e70785177"></a><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a></td>
-<td class="fieldname">
-lport</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gae34b4b879c3cda084aa221bd441983e9"></a>struct <a class="el" href="group__ScePspnetAdhocUser.html#structSceNetAdhocPtpStat">SceNetAdhocPtpStat</a> *</td>
-<td class="fieldname">
-next</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gaf0348d90a32a19564fa817084bbb04c2"></a>struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a></td>
 <td class="fieldname">
 paddr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga379c57c17807da2d494f736e70785177"></a><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a></td>
+<td class="fieldname">
+lport</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -276,15 +276,15 @@ pport</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga89e3c58eed4d0a46921455aa76c3952a"></a>unsigned int</td>
-<td class="fieldname">
-rcv_sb_cc</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
 <a id="gaae713d54b2e85eafb63b529b0ba19155"></a>unsigned int</td>
 <td class="fieldname">
 snd_sb_cc</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga89e3c58eed4d0a46921455aa76c3952a"></a>unsigned int</td>
+<td class="fieldname">
+rcv_sb_cc</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -432,6 +432,27 @@ state</td>
 
 </div>
 </div>
+<a id="gafad490611c9802ff70e531b80586c824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafad490611c9802ff70e531b80586c824">&#9670;&nbsp;</a></span>ScePspnetAdhocPtpState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ScePspnetAdhocUser.html#gafad490611c9802ff70e531b80586c824">ScePspnetAdhocPtpState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a2232d53381f3ce9235685f1e174eadca"></a>SCE_NET_ADHOC_PTP_STATE_CLOSED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a42919c42769c439541a231effa555bd9"></a>SCE_NET_ADHOC_PTP_STATE_LISTEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a33fc905d154948bdbd8cec8864379d07"></a>SCE_NET_ADHOC_PTP_STATE_SYN_SENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824aca819f13fd4e3e7fa33678a0c405a224"></a>SCE_NET_ADHOC_PTP_STATE_SYN_RCVD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a204f5075aa1df92add822a3b383346ee"></a>SCE_NET_ADHOC_PTP_STATE_ESTABLISHED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga4777fcc17a0f337e48deea8a7caa78b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4777fcc17a0f337e48deea8a7caa78b1">&#9670;&nbsp;</a></span>ScePspnetAdhocFlags</h2>
 
@@ -455,45 +476,72 @@ state</td>
 
 </div>
 </div>
-<a id="gafad490611c9802ff70e531b80586c824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafad490611c9802ff70e531b80586c824">&#9670;&nbsp;</a></span>ScePspnetAdhocPtpState</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga53da19c02bb5599871147a96025cfb53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53da19c02bb5599871147a96025cfb53">&#9670;&nbsp;</a></span>sceNetAdhocInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__ScePspnetAdhocUser.html#gafad490611c9802ff70e531b80586c824">ScePspnetAdhocPtpState</a></td>
+          <td class="memname">int sceNetAdhocInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a2232d53381f3ce9235685f1e174eadca"></a>SCE_NET_ADHOC_PTP_STATE_CLOSED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a42919c42769c439541a231effa555bd9"></a>SCE_NET_ADHOC_PTP_STATE_LISTEN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a33fc905d154948bdbd8cec8864379d07"></a>SCE_NET_ADHOC_PTP_STATE_SYN_SENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824aca819f13fd4e3e7fa33678a0c405a224"></a>SCE_NET_ADHOC_PTP_STATE_SYN_RCVD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggafad490611c9802ff70e531b80586c824a204f5075aa1df92add822a3b383346ee"></a>SCE_NET_ADHOC_PTP_STATE_ESTABLISHED&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga8c76489a8df8aafc4793b843f25aacfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8c76489a8df8aafc4793b843f25aacfc">&#9670;&nbsp;</a></span>sceNetAdhocGetPdpStat()</h2>
+<a id="ga31caf67274885110ff7edef664fd8347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31caf67274885110ff7edef664fd8347">&#9670;&nbsp;</a></span>sceNetAdhocTerm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocGetPdpStat </td>
+          <td class="memname">int sceNetAdhocTerm </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga782ea302527255d621940bab1876887c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga782ea302527255d621940bab1876887c">&#9670;&nbsp;</a></span>sceNetAdhocPollSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetAdhocPollSocket </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__ScePspnetAdhocUser.html#structSceNetAdhocPollSd">SceNetAdhocPollSd</a> *&#160;</td>
+          <td class="paramname"><em>sds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nsds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -505,23 +553,23 @@ state</td>
 
 </div>
 </div>
-<a id="ga97f24eb90d4a68a8f81371a1983e25d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97f24eb90d4a68a8f81371a1983e25d0">&#9670;&nbsp;</a></span>sceNetAdhocGetPtpStat()</h2>
+<a id="gaf4bfe6629f5045fdc268e3d5f3ff6fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4bfe6629f5045fdc268e3d5f3ff6fa6">&#9670;&nbsp;</a></span>sceNetAdhocSetSocketAlert()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocGetPtpStat </td>
+          <td class="memname">int sceNetAdhocSetSocketAlert </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -561,24 +609,6 @@ state</td>
 
 </div>
 </div>
-<a id="ga53da19c02bb5599871147a96025cfb53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga53da19c02bb5599871147a96025cfb53">&#9670;&nbsp;</a></span>sceNetAdhocInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetAdhocInit </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaf2cabfd029be2a878c370e98253cf70d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf2cabfd029be2a878c370e98253cf70d">&#9670;&nbsp;</a></span>sceNetAdhocPdpCreate()</h2>
 
@@ -602,92 +632,6 @@ state</td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>bufsize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf23f4e09937b5accce9245e4d55a9f4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf23f4e09937b5accce9245e4d55a9f4e">&#9670;&nbsp;</a></span>sceNetAdhocPdpDelete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetAdhocPdpDelete </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab3aa65b064232962fbcc0cd574d1d616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab3aa65b064232962fbcc0cd574d1d616">&#9670;&nbsp;</a></span>sceNetAdhocPdpRecv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetAdhocPdpRecv </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
-          <td class="paramname"><em>saddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a> *&#160;</td>
-          <td class="paramname"><em>sport</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -763,54 +707,14 @@ state</td>
 
 </div>
 </div>
-<a id="ga782ea302527255d621940bab1876887c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga782ea302527255d621940bab1876887c">&#9670;&nbsp;</a></span>sceNetAdhocPollSocket()</h2>
+<a id="gab3aa65b064232962fbcc0cd574d1d616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3aa65b064232962fbcc0cd574d1d616">&#9670;&nbsp;</a></span>sceNetAdhocPdpRecv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocPollSocket </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__ScePspnetAdhocUser.html#structSceNetAdhocPollSd">SceNetAdhocPollSd</a> *&#160;</td>
-          <td class="paramname"><em>sds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nsds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2d698c228743450424aae351ed2144f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2d698c228743450424aae351ed2144f0">&#9670;&nbsp;</a></span>sceNetAdhocPtpAccept()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetAdhocPtpAccept </td>
+          <td class="memname">int sceNetAdhocPdpRecv </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -819,13 +723,25 @@ state</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
+          <td class="paramname"><em>saddr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a> *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>sport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -849,17 +765,109 @@ state</td>
 
 </div>
 </div>
-<a id="ga2fac492f1c28f2e855297ee8702928b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2fac492f1c28f2e855297ee8702928b3">&#9670;&nbsp;</a></span>sceNetAdhocPtpClose()</h2>
+<a id="gaf23f4e09937b5accce9245e4d55a9f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf23f4e09937b5accce9245e4d55a9f4e">&#9670;&nbsp;</a></span>sceNetAdhocPdpDelete()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocPtpClose </td>
+          <td class="memname">int sceNetAdhocPdpDelete </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8c76489a8df8aafc4793b843f25aacfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c76489a8df8aafc4793b843f25aacfc">&#9670;&nbsp;</a></span>sceNetAdhocGetPdpStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetAdhocGetPdpStat </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1367b112d729de14fe0f78c5dd78a6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1367b112d729de14fe0f78c5dd78a6d7">&#9670;&nbsp;</a></span>sceNetAdhocPtpOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetAdhocPtpOpen </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
+          <td class="paramname"><em>saddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a>&#160;</td>
+          <td class="paramname"><em>sport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
+          <td class="paramname"><em>daddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a>&#160;</td>
+          <td class="paramname"><em>dport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bufsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>rexmt_int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rexmt_cnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -885,40 +893,6 @@ state</td>
       <table class="memname">
         <tr>
           <td class="memname">int sceNetAdhocPtpConnect </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga99c37d2ecbb76e8365ed701be8f9b6d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga99c37d2ecbb76e8365ed701be8f9b6d4">&#9670;&nbsp;</a></span>sceNetAdhocPtpFlush()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetAdhocPtpFlush </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -1003,78 +977,14 @@ state</td>
 
 </div>
 </div>
-<a id="ga1367b112d729de14fe0f78c5dd78a6d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1367b112d729de14fe0f78c5dd78a6d7">&#9670;&nbsp;</a></span>sceNetAdhocPtpOpen()</h2>
+<a id="ga2d698c228743450424aae351ed2144f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d698c228743450424aae351ed2144f0">&#9670;&nbsp;</a></span>sceNetAdhocPtpAccept()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocPtpOpen </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
-          <td class="paramname"><em>saddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a>&#160;</td>
-          <td class="paramname"><em>sport</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
-          <td class="paramname"><em>daddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a>&#160;</td>
-          <td class="paramname"><em>dport</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bufsize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>rexmt_int</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rexmt_cnt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafe76aa6c7fd6f6bb76a02ca91e419aff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe76aa6c7fd6f6bb76a02ca91e419aff">&#9670;&nbsp;</a></span>sceNetAdhocPtpRecv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceNetAdhocPtpRecv </td>
+          <td class="memname">int sceNetAdhocPtpAccept </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -1082,14 +992,14 @@ state</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
+          <td class="paramtype">struct <a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga825c46506a2edbe5e714cf330e1d54bf">SceUShort16</a> *&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1159,14 +1069,94 @@ state</td>
 
 </div>
 </div>
-<a id="gaf4bfe6629f5045fdc268e3d5f3ff6fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf4bfe6629f5045fdc268e3d5f3ff6fa6">&#9670;&nbsp;</a></span>sceNetAdhocSetSocketAlert()</h2>
+<a id="gafe76aa6c7fd6f6bb76a02ca91e419aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe76aa6c7fd6f6bb76a02ca91e419aff">&#9670;&nbsp;</a></span>sceNetAdhocPtpRecv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocSetSocketAlert </td>
+          <td class="memname">int sceNetAdhocPtpRecv </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga99c37d2ecbb76e8365ed701be8f9b6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99c37d2ecbb76e8365ed701be8f9b6d4">&#9670;&nbsp;</a></span>sceNetAdhocPtpFlush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetAdhocPtpFlush </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2fac492f1c28f2e855297ee8702928b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fac492f1c28f2e855297ee8702928b3">&#9670;&nbsp;</a></span>sceNetAdhocPtpClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceNetAdhocPtpClose </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -1187,18 +1177,28 @@ state</td>
 
 </div>
 </div>
-<a id="ga31caf67274885110ff7edef664fd8347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga31caf67274885110ff7edef664fd8347">&#9670;&nbsp;</a></span>sceNetAdhocTerm()</h2>
+<a id="ga97f24eb90d4a68a8f81371a1983e25d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97f24eb90d4a68a8f81371a1983e25d0">&#9670;&nbsp;</a></span>sceNetAdhocGetPtpStat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sceNetAdhocTerm </td>
+          <td class="memname">int sceNetAdhocGetPtpStat </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

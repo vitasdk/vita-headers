@@ -130,51 +130,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga16258078b78b5ae7736df23bb59be14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaafca9bd001e2aee3d5e044e1ec4d58aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaafca9bd001e2aee3d5e044e1ec4d58aa">&#9670;&nbsp;</a></span>sceRegMgrGetInitVals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceRegMgrGetInitVals </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>category</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>elements_number</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get all keys' initial information by category (from os0:kd/registry.db0) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">category</td><td>- The path to the directory to be opened (e.g. /CONFIG/SYSTEM) </td></tr>
-    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the values </td></tr>
-    <tr><td class="paramname">elements_number</td><td>- The number of elements of the buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
 <a id="ga663d57d46278aed68e72bb18a3de0d82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga663d57d46278aed68e72bb18a3de0d82">&#9670;&nbsp;</a></span>sceRegMgrGetKeyBin()</h2>
 
@@ -272,51 +227,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3d56993879f9c9d243b2e8b851729f37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3d56993879f9c9d243b2e8b851729f37">&#9670;&nbsp;</a></span>sceRegMgrGetKeys()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceRegMgrGetKeys </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>category</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>elements_number</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get all keys' information by category. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">category</td><td>- The path to the directory to be opened (e.g. /CONFIG/SYSTEM) </td></tr>
-    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the values </td></tr>
-    <tr><td class="paramname">elements_number</td><td>- The number of elements of the buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
 <a id="gab5a9f62e664d72052c1ea32ebfa9bbcd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab5a9f62e664d72052c1ea32ebfa9bbcd">&#9670;&nbsp;</a></span>sceRegMgrGetKeyStr()</h2>
 
@@ -362,44 +272,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">name</td><td>- Name of the key </td></tr>
     <tr><td class="paramname">buf</td><td>- Pointer to a char buffer to hold the value </td></tr>
     <tr><td class="paramname">size</td><td>- The size of the buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga16258078b78b5ae7736df23bb59be14c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16258078b78b5ae7736df23bb59be14c">&#9670;&nbsp;</a></span>sceRegMgrGetRegVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceRegMgrGetRegVersion </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the registry version. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>- The id of the key </td></tr>
-    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the value</td></tr>
   </table>
   </dd>
 </dl>
@@ -504,51 +376,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2163c8dfe1c334c7086e9f1952fad0da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2163c8dfe1c334c7086e9f1952fad0da">&#9670;&nbsp;</a></span>sceRegMgrSetKeys()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceRegMgrSetKeys </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>category</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>elements_number</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set all keys' information by category. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">category</td><td>- The path to the directory to be opened (e.g. /CONFIG/SYSTEM) </td></tr>
-    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer that holds the values </td></tr>
-    <tr><td class="paramname">elements_number</td><td>- The number of elements of the buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
 <a id="gaf54ea2b44345c1b15a8be946c32442b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf54ea2b44345c1b15a8be946c32442b6">&#9670;&nbsp;</a></span>sceRegMgrSetKeyStr()</h2>
 
@@ -594,6 +421,141 @@ Functions</h2></td></tr>
     <tr><td class="paramname">name</td><td>- Name of the key </td></tr>
     <tr><td class="paramname">buf</td><td>- Pointer to a char buffer to hold the value </td></tr>
     <tr><td class="paramname">size</td><td>- The size of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gaafca9bd001e2aee3d5e044e1ec4d58aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaafca9bd001e2aee3d5e044e1ec4d58aa">&#9670;&nbsp;</a></span>sceRegMgrGetInitVals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceRegMgrGetInitVals </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>elements_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all keys' initial information by category (from os0:kd/registry.db0) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>- The path to the directory to be opened (e.g. /CONFIG/SYSTEM) </td></tr>
+    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the values </td></tr>
+    <tr><td class="paramname">elements_number</td><td>- The number of elements of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga3d56993879f9c9d243b2e8b851729f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d56993879f9c9d243b2e8b851729f37">&#9670;&nbsp;</a></span>sceRegMgrGetKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceRegMgrGetKeys </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>elements_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all keys' information by category. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>- The path to the directory to be opened (e.g. /CONFIG/SYSTEM) </td></tr>
+    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the values </td></tr>
+    <tr><td class="paramname">elements_number</td><td>- The number of elements of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga2163c8dfe1c334c7086e9f1952fad0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2163c8dfe1c334c7086e9f1952fad0da">&#9670;&nbsp;</a></span>sceRegMgrSetKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceRegMgrSetKeys </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>elements_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set all keys' information by category. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>- The path to the directory to be opened (e.g. /CONFIG/SYSTEM) </td></tr>
+    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer that holds the values </td></tr>
+    <tr><td class="paramname">elements_number</td><td>- The number of elements of the buffer</td></tr>
   </table>
   </dd>
 </dl>
@@ -677,6 +639,44 @@ Functions</h2></td></tr>
     <tr><td class="paramname">id</td><td>- The id of the key </td></tr>
     <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the value </td></tr>
     <tr><td class="paramname">size</td><td>- The size of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga16258078b78b5ae7736df23bb59be14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16258078b78b5ae7736df23bb59be14c">&#9670;&nbsp;</a></span>sceRegMgrGetRegVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceRegMgrGetRegVersion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the registry version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>- The id of the key </td></tr>
+    <tr><td class="paramname">buf[out]</td><td>- Pointer to a char buffer to hold the value</td></tr>
   </table>
   </dd>
 </dl>
