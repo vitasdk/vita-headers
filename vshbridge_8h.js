@@ -1,6 +1,7 @@
 var vshbridge_8h =
 [
     [ "_vshSblGetSystemSwVersion", "group__SceVshBridgeUser.html#ga252fa5f8c9e461bd50d634937608f762", null ],
+    [ "_vshSblAimgrGetSMI", "group__SceVshBridgeUser.html#ga2621957f971de7ddcf034bd93083b7fd", null ],
     [ "_vshSblAimgrGetConsoleId", "group__SceVshBridgeUser.html#ga7973656329d62086b3191ed3df872441", null ],
     [ "_vshIoMount", "group__SceVshBridgeUser.html#gab437d640375011bed4c7a1a332329ef3", null ],
     [ "vshIoUmount", "group__SceVshBridgeUser.html#gaa754c13fd1fa6d1181cc449d2925bfef", null ],

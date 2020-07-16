@@ -93,7 +93,11 @@ $(document).ready(function(){initNavTree('group__SceVshBridgeUser.html',''); ini
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga252fa5f8c9e461bd50d634937608f762"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga252fa5f8c9e461bd50d634937608f762">_vshSblGetSystemSwVersion</a> (<a class="el" href="group__SceModulemgrUser.html#structSceKernelFwInfo">SceKernelFwInfo</a> *data)</td></tr>
+<tr class="memdesc:ga252fa5f8c9e461bd50d634937608f762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets real system firmware information.  <a href="group__SceVshBridgeUser.html#ga252fa5f8c9e461bd50d634937608f762">More...</a><br /></td></tr>
 <tr class="separator:ga252fa5f8c9e461bd50d634937608f762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2621957f971de7ddcf034bd93083b7fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga2621957f971de7ddcf034bd93083b7fd">_vshSblAimgrGetSMI</a> (int *minver)</td></tr>
+<tr class="memdesc:ga2621957f971de7ddcf034bd93083b7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets factory (minimum) firmware version.  <a href="group__SceVshBridgeUser.html#ga2621957f971de7ddcf034bd93083b7fd">More...</a><br /></td></tr>
+<tr class="separator:ga2621957f971de7ddcf034bd93083b7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7973656329d62086b3191ed3df872441"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga7973656329d62086b3191ed3df872441">_vshSblAimgrGetConsoleId</a> (char CID[32])</td></tr>
 <tr class="separator:ga7973656329d62086b3191ed3df872441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab437d640375011bed4c7a1a332329ef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#gab437d640375011bed4c7a1a332329ef3">_vshIoMount</a> (int id, const char *path, int permission, void *buf)</td></tr>
@@ -167,6 +171,40 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets real system firmware information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>- firmware information. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2621957f971de7ddcf034bd93083b7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2621957f971de7ddcf034bd93083b7fd">&#9670;&nbsp;</a></span>_vshSblAimgrGetSMI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _vshSblAimgrGetSMI </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>minver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets factory (minimum) firmware version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">minver</td><td>- factory firmware version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

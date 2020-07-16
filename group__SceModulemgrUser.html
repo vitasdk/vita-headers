@@ -107,6 +107,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gab5207a83a1b1a9a1cb0ffda46cd088f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#gab5207a83a1b1a9a1cb0ffda46cd088f6">sceKernelStopUnloadModule</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp, int flags, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
 <tr class="separator:gab5207a83a1b1a9a1cb0ffda46cd088f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31a1b23ed8dbee2a197bcaaea296c327"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga31a1b23ed8dbee2a197bcaaea296c327">sceKernelGetSystemSwVersion</a> (<a class="el" href="group__SceModulemgrUser.html#structSceKernelFwInfo">SceKernelFwInfo</a> *data)</td></tr>
+<tr class="memdesc:ga31a1b23ed8dbee2a197bcaaea296c327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets system firmware information.  <a href="group__SceModulemgrUser.html#ga31a1b23ed8dbee2a197bcaaea296c327">More...</a><br /></td></tr>
 <tr class="separator:ga31a1b23ed8dbee2a197bcaaea296c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -877,6 +878,15 @@ unk_24</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets system firmware information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>- firmware information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>- If you spoofed the firmware version it will return the spoofed firmware. </dd></dl>
 
 </div>
 </div>
