@@ -91,6 +91,13 @@ typedef struct SceKernelFwInfo {
   SceUInt unk_24;
 } SceKernelFwInfo;
 
+/**
+ * Gets system firmware information.
+ *
+ * @param[out] data - firmware information.
+ *
+ * @note - If you spoofed the firmware version it will return the spoofed firmware.
+ */
 int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
 
 #ifdef __cplusplus
