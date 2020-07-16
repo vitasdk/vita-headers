@@ -25,7 +25,7 @@ int _vshSblGetSystemSwVersion(SceKernelFwInfo *data);
  *
  * @param[out] minver - factory firmware version.
  */
-int _vshSblAimgrGetSMI(int *minver)
+int _vshSblAimgrGetSMI(int *minver);
 
 int _vshSblAimgrGetConsoleId(char CID[32]);
 
