@@ -13,7 +13,19 @@
 extern "C" {
 #endif
 
+/**
+ * Gets real system firmware information.
+ *
+ * @param[out] data - firmware information.
+ */
 int _vshSblGetSystemSwVersion(SceKernelFwInfo *data);
+
+/**
+ * Gets factory (minimum) firmware version.
+ *
+ * @param[out] minver - factory firmware version.
+ */
+int _vshSblAimgrGetSMI(int *minver);
 
 int _vshSblAimgrGetConsoleId(char CID[32]);
 
