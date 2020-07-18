@@ -22,8 +22,8 @@ typedef struct SceMotionState {
 	SceFVector3 angularVelocity;
 	uint8_t reserved1[12];
 	SceFQuaternion deviceQuat;
-	SceUMatrix4 rotationMatrix;
-	SceUMatrix4 nedMatrix;
+	SceFMatrix4 rotationMatrix;
+	SceFMatrix4 nedMatrix;
 	uint32_t reserved2;
 	SceFVector3 basicOrientation;
 	SceULong64 hostTimestamp;
