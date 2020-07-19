@@ -98,7 +98,7 @@ public:
 	virtual void notifyError(int errorCode, SceSize size, void* data);
 };
 
-struct InitParameter
+class InitParameter
 {
 	/**
 	 * Pointer to a MemAllocator object for internal memory allocations. 
@@ -490,7 +490,12 @@ public:
 	 */
 	void toString(String& s) const;
 
-	void swap(Value& value);
+	/**
+	 * Swaps the value with another Value.
+	 * 
+	 * @param[in] val - The Value to swap with.
+	 */
+	void swap(Value& val);
 	/**
 	 * Clears the value by setting to null.
 	 */
@@ -866,15 +871,31 @@ public:
 	/**
 	 * Returns an iterator to the first child element
 	 * 
-	 * @return  The iterator
+	 * @return  The iterator.
 	 */
 	iterator begin() const;
 	/**
-	 * Returns an iterator to after the last child element
+	 * Returns an iterator to after the last child element.
 	 * 
-	 * @return  The iterator
+	 * @return  The iterator.
 	 */
 	iterator end() const;
+	/**
+	 * Inserts a pair into the Object.
+	 * 
+	 * @param[in] p - The Pair to insert.
+	 * 
+	 * @return  An iterator pointing to the inserted Pair.
+	 */
+	iterator insert(const Pair& p);
+	/**
+	 * Finds a Pair with a matching key
+	 * 
+	 * @param[in] key - The key to search for.
+	 * 
+	 * @return  An iterator pointing to the Pair with the matching key.
+	 */
+	iterator find(const String& key);
 	/**
 	 * Empty the object.
 	 */
