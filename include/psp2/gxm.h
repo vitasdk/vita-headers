@@ -1092,6 +1092,10 @@ typedef struct SceGxmTexture {
 	uint32_t normalize_mode : 1;      //!< Normalize mode
 } SceGxmTexture;
 
+typedef struct SceGxmCommandList {
+    uint32_t words[8];
+} SceGxmCommandList;
+
 typedef struct SceGxmColorSurface {
 	unsigned int pbeSidebandWord;
 	unsigned int pbeEmitWords[6];
@@ -1151,6 +1155,21 @@ typedef struct SceGxmContextParams {
 	SceSize fragmentUsseRingBufferMemSize;
 	unsigned int fragmentUsseRingBufferOffset;
 } SceGxmContextParams;
+
+typedef struct SceGxmDeferredContextParams {
+	void *hostMem;
+	SceSize hostMemSize;
+	void *(*vdmCallback)(void *args, SceSize requestedSize, SceSize *size);
+	void *(*vertexCallback)(void *args, SceSize requestedSize, SceSize *size);
+	void *(*fragmentCallback)(void *args, SceSize requestedSize, SceSize *size);
+	void *callbackData;
+	void *vdmRingBufferMem;
+	SceSize vdmRingBufferMemSize;
+	void *vertexRingBufferMem;
+	SceSize vertexRingBufferMemSize;
+	void *fragmentRingBufferMem;
+	SceSize fragmentRingBufferMemSize;
+} SceGxmDeferredContextParams;
 
 typedef struct SceGxmVertexProgram SceGxmVertexProgram;
 
@@ -1312,6 +1331,9 @@ int sceGxmSyncObjectDestroy(SceGxmSyncObject *syncObject);
 int sceGxmCreateContext(const SceGxmContextParams *params, SceGxmContext **context);
 int sceGxmDestroyContext(SceGxmContext *context);
 
+int sceGxmCreateDeferredContext(const SceGxmDeferredContextParams *params, SceGxmContext **context);
+int sceGxmDestroyDeferredContext(SceGxmContext *context);
+
 void sceGxmSetValidationEnable(SceGxmContext *context, SceBool enable);
 
 void sceGxmSetVertexProgram(SceGxmContext *context, const SceGxmVertexProgram *vertexProgram);
@@ -1338,6 +1360,10 @@ int sceGxmSetVisibilityBuffer(SceGxmContext *context, void *bufferBase, unsigned
 int sceGxmBeginScene(SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget *renderTarget, const SceGxmValidRegion *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const SceGxmColorSurface *colorSurface, const SceGxmDepthStencilSurface *depthStencil);
 int sceGxmMidSceneFlush(SceGxmContext *context, unsigned int flags, SceGxmSyncObject *vertexSyncObject, const SceGxmNotification *vertexNotification);
 int sceGxmEndScene(SceGxmContext *context, const SceGxmNotification *vertexNotification, const SceGxmNotification *fragmentNotification);
+
+int sceGxmBeginCommandList(SceGxmContext *context);
+int sceGxmExecuteCommandList(SceGxmContext *context, SceGxmCommandList *list);
+int sceGxmEndCommandList(SceGxmContext *context, SceGxmCommandList *list);
 
 void sceGxmSetFrontDepthFunc(SceGxmContext *context, SceGxmDepthFunc depthFunc);
 void sceGxmSetBackDepthFunc(SceGxmContext *context, SceGxmDepthFunc depthFunc);
