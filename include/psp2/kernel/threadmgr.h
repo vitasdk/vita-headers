@@ -1135,6 +1135,34 @@ int sceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
 int sceKernelSignalLwCond(SceKernelLwCondWork *pWork);
 int sceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
 
+typedef struct SceKernelWaitSignalResult {
+    SceUID thid;
+    SceUInt32 dret;
+}SceKernelWaitSignalResult;
+
+typedef struct SceKernelWaitSignalOptParam {
+    SceUInt32 unk[2];
+    SceKernelWaitSignalResult* result;
+}SceKernelWaitSignalOptParam;
+
+/**
+ * Sleep current thread and wait for a signal. After it receives a signal, the thread wakes up.
+ *
+ * If it was sucessful and params is not null, params.result->dret will be 0.
+ * 
+ * @param params - extra parameters
+ * @return 0 on success
+ */
+int sceKernelWaitSignal(SceUInt32 unk0, SceUInt32 unk1, SceUInt32 unk2, SceKernelWaitSignalOptParam *params);
+
+/**
+ * Send a signal to another thread specified by thid.
+ *
+ * 
+ * @param thid - the id of the thread to send a signal to
+ * @return 0 on success
+ */
+int sceKernelSendSignal(SceUID thid);
 
 /**
  * Get the system time (wide version)
