@@ -713,7 +713,9 @@ var group__SceGxmUser =
     ] ],
     [ "SceGxmTextureFilter", "group__SceGxmUser.html#ga7380bee0231b7907fc1f4b98be060f38", [
       [ "SCE_GXM_TEXTURE_FILTER_POINT", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a08433cddde0342dbb782840b011fd93e", null ],
-      [ "SCE_GXM_TEXTURE_FILTER_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a5bf2c3469bef2e1bbe44fbfbc3465bf4", null ]
+      [ "SCE_GXM_TEXTURE_FILTER_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a5bf2c3469bef2e1bbe44fbfbc3465bf4", null ],
+      [ "SCE_GXM_TEXTURE_FILTER_MIPMAP_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a7b08618113cc32e5cd6a35d10f0c84b6", null ],
+      [ "SCE_GXM_TEXTURE_FILTER_MIPMAP_POINT", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a971a4368eaadabb95bdc713cb8929835", null ]
     ] ],
     [ "SceGxmTextureMipFilter", "group__SceGxmUser.html#ga6cca700129fdb2780f453baced4f7a35", [
       [ "SCE_GXM_TEXTURE_MIP_FILTER_DISABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a98011829dfa88a020f43b1eaf5aecca6", null ],
@@ -1533,6 +1535,8 @@ var group__SceGxmUser =
     [ "SCE_GXM_TEXTURE_CUBE_ARBITRARY", "group__SceGxmUser.html#gga55e034a873635b04fb1c284c86502d58a8b39a88823664bc4d2afaa1816c8e537", null ],
     [ "SCE_GXM_TEXTURE_FILTER_POINT", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a08433cddde0342dbb782840b011fd93e", null ],
     [ "SCE_GXM_TEXTURE_FILTER_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a5bf2c3469bef2e1bbe44fbfbc3465bf4", null ],
+    [ "SCE_GXM_TEXTURE_FILTER_MIPMAP_LINEAR", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a7b08618113cc32e5cd6a35d10f0c84b6", null ],
+    [ "SCE_GXM_TEXTURE_FILTER_MIPMAP_POINT", "group__SceGxmUser.html#gga7380bee0231b7907fc1f4b98be060f38a971a4368eaadabb95bdc713cb8929835", null ],
     [ "SCE_GXM_TEXTURE_MIP_FILTER_DISABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a98011829dfa88a020f43b1eaf5aecca6", null ],
     [ "SCE_GXM_TEXTURE_MIP_FILTER_ENABLED", "group__SceGxmUser.html#gga6cca700129fdb2780f453baced4f7a35a7b580d2be44fca095b8e86af16586023", null ],
     [ "SCE_GXM_TEXTURE_ADDR_REPEAT", "group__SceGxmUser.html#ggab91cde323e8541591d28c3ae9e1c1a1eac298177fca9a1ba36dbe0986da273980", null ],
@@ -1691,6 +1695,8 @@ var group__SceGxmUser =
     [ "sceGxmSyncObjectDestroy", "group__SceGxmUser.html#gabd9d75299067dbca19cc9c6071161d10", null ],
     [ "sceGxmCreateContext", "group__SceGxmUser.html#ga7e4a337e1c774bd6443ca3a76256a5f6", null ],
     [ "sceGxmDestroyContext", "group__SceGxmUser.html#gaf598f63c999b338b1332cf82435f966a", null ],
+    [ "sceGxmCreateDeferredContext", "group__SceGxmUser.html#gaeeba575a0b7ee851ab12feacd6420128", null ],
+    [ "sceGxmDestroyDeferredContext", "group__SceGxmUser.html#gaa4283273edca6177c310cc3cebc598f4", null ],
     [ "sceGxmSetValidationEnable", "group__SceGxmUser.html#gafa4c86d55e4d2933d29a3a145b5a3991", null ],
     [ "sceGxmSetVertexProgram", "group__SceGxmUser.html#gae9bdd3d27df275aea31873d29f013d18", null ],
     [ "sceGxmSetFragmentProgram", "group__SceGxmUser.html#ga89af83cb3ba92c119d551f64c9e8c4fd", null ],
@@ -1711,6 +1717,9 @@ var group__SceGxmUser =
     [ "sceGxmBeginScene", "group__SceGxmUser.html#ga7fe719294bcc85c7f408753c853009a9", null ],
     [ "sceGxmMidSceneFlush", "group__SceGxmUser.html#ga80e2c1ff3f25c0760a05eb37e7737c59", null ],
     [ "sceGxmEndScene", "group__SceGxmUser.html#gacbb98c8712e03470cd2437b2c20159ec", null ],
+    [ "sceGxmBeginCommandList", "group__SceGxmUser.html#ga56355017a9336ad4b58efb12f2b82dd5", null ],
+    [ "sceGxmExecuteCommandList", "group__SceGxmUser.html#ga3e280d13a17f4507c0395ffa2b770c7a", null ],
+    [ "sceGxmEndCommandList", "group__SceGxmUser.html#ga37ef31306caa56d1b71159673d4921d2", null ],
     [ "sceGxmSetFrontDepthFunc", "group__SceGxmUser.html#ga929b1bba59b15037a0273638432ce42c", null ],
     [ "sceGxmSetBackDepthFunc", "group__SceGxmUser.html#ga1d8614e7bb96487c5a8d8bc5eee27da1", null ],
     [ "sceGxmSetFrontFragmentProgramEnable", "group__SceGxmUser.html#ga044d4f3f7c1c3d87bcd787246f9a5570", null ],
