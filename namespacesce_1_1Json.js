@@ -2,7 +2,7 @@ var namespacesce_1_1Json =
 [
     [ "Array", "group__SceLibJsonUser.html#classsce_1_1Json_1_1Array", "group__SceLibJsonUser_classsce_1_1Json_1_1Array" ],
     [ "Initializer", "group__SceLibJsonUser.html#classsce_1_1Json_1_1Initializer", "group__SceLibJsonUser_classsce_1_1Json_1_1Initializer" ],
-    [ "InitParameter", "group__SceLibJsonUser.html#classsce_1_1Json_1_1InitParameter", null ],
+    [ "InitParameter", "group__SceLibJsonUser.html#classsce_1_1Json_1_1InitParameter", "group__SceLibJsonUser_classsce_1_1Json_1_1InitParameter" ],
     [ "MemAllocator", "group__SceLibJsonUser.html#classsce_1_1Json_1_1MemAllocator", "group__SceLibJsonUser_classsce_1_1Json_1_1MemAllocator" ],
     [ "Object", "group__SceLibJsonUser.html#classsce_1_1Json_1_1Object", "group__SceLibJsonUser_classsce_1_1Json_1_1Object" ],
     [ "Parser", "group__SceLibJsonUser.html#classsce_1_1Json_1_1Parser", "group__SceLibJsonUser_classsce_1_1Json_1_1Parser" ],

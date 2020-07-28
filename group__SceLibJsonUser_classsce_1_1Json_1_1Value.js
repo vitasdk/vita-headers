@@ -27,7 +27,7 @@ var group__SceLibJsonUser_classsce_1_1Json_1_1Value =
     [ "set", "group__SceLibJsonUser.html#gaf8dac390a411c82d394e66202cecb913", null ],
     [ "set", "group__SceLibJsonUser.html#ga9b7cbb70473dc8f275cbb9ce7f782900", null ],
     [ "set", "group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39", null ],
-    [ "setNullAccessCallback", "group__SceLibJsonUser.html#ga0a712dbfb456164fc084ca61b417e6c9", null ],
+    [ "setNullAccessCallback", "group__SceLibJsonUser.html#ga8db2742ee16682b2303ff6903ef1f37e", null ],
     [ "getRoot", "group__SceLibJsonUser.html#gaf81ce58f84503544b0d5a481e5de99dc", null ],
     [ "getBoolean", "group__SceLibJsonUser.html#ga82527fe2d3841b1b31ffe9828054019e", null ],
     [ "getInteger", "group__SceLibJsonUser.html#gadd1c949e0a42061c36b4817d9ef9203e", null ],
