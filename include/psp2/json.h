@@ -20,18 +20,18 @@ namespace Json
 {
 
 /**
- * Enumerator of different types of Values
+ * Strongly typed Enumerator of different types of Values.
  */
-typedef enum ValueType 
+typedef enum class ValueType 
 {
-	SCE_JSON_VALUE_NULL     = 0, //!< Empty value
-	SCE_JSON_VALUE_BOOL     = 1, //!< SceBoolean value
-	SCE_JSON_VALUE_INT64    = 2, //!< Long integer value 
-	SCE_JSON_VALUE_UINT64   = 3, //!< Unsigned long integer value
-	SCE_JSON_VALUE_REAL     = 4, //!< Double precision float value
-	SCE_JSON_VALUE_STRING   = 5, //!< String value
-	SCE_JSON_VALUE_ARRAY    = 6, //!< Array value
-	SCE_JSON_VALUE_OBJECT   = 7  //!< Object value
+	NullValue            = 0, //!< Null value
+	BoolValue            = 1, //!< Boolean value
+	IntValue             = 2, //!< Long integer value 
+	UIntValue            = 3, //!< Unsigned long integer value
+	RealValue            = 4, //!< Double precision float value
+	StringValue          = 5, //!< String value
+	ArrayValue           = 6, //!< Array value
+	ObjectValue          = 7  //!< Object value
 } ValueType;
 
 /**
@@ -66,7 +66,7 @@ typedef enum SceJsonError
 } SceJsonError;
 
 /**
- * Base class for reimplementation of memory allocation.
+ * Base class for reimplementation of memory allocation.\n
  * This class must be derived from.
  */
 class MemAllocator
@@ -81,7 +81,7 @@ public:
 	 * @param[in] size - Size of the allocated memory
 	 * @param[in] data - User defined data for the function.
 	 * 
-	 * @return  Pointer the allocated memory
+	 * @return  Pointer to the allocated memory
 	 */
 	virtual void* allocateMemory(SceSize size, void* data) = 0;
 	/**
@@ -98,15 +98,19 @@ public:
 	virtual void notifyError(int errorCode, SceSize size, void* data);
 };
 
+/**
+ * Utility Data Structure to pass on initialisation parameters.
+ */
 class InitParameter
 {
+public:
 	/**
 	 * Pointer to a MemAllocator object for internal memory allocations. 
 	 * Required field.
 	 */
 	MemAllocator* allocator;
 	/**
-	 * User defined data sent to overriden functions.
+	 * User defined data sent to overriden MemAllocator functions.
 	 */
 	void* data;      
 	/**
@@ -117,13 +121,11 @@ class InitParameter
 };
 
 /**
- * Utility class for initialising and terminating the library
+ * Utility class for initialising and terminating the library.
  */
 class Initializer
 {
 public:
-	typedef void (*AllocatorInfoCallback)(int, sce::Json::ValueType, void*);
-
 	Initializer();
 	~Initializer();
 
@@ -141,14 +143,18 @@ public:
 	 * @return  0 on success, <0 on error.
 	 */
 	int terminate();
-
-	void setAllocatorInfoCallBack(AllocatorInfoCallback cb, void* unk0);
 };
 
 class Value;
+/**
+ * Class for JSON arrays.
+ */
 class Array
 {
 public:
+	/**
+	 * Class for iterating over Array members.
+	 */
 	class iterator
 	{
 	public:
@@ -156,6 +162,9 @@ public:
 		iterator(const iterator& iter);
 		~iterator();
 
+		/**
+		 * Advance the iterator by adv
+		 */
 		void advance(SceSize adv);
 
 		/**
@@ -170,8 +179,23 @@ public:
 		 * Increment the iterator
 		 */
 		void operator++();
+		/**
+		 * Dereference the iterator.
+		 * 
+		 * @return  The Value the iterator is pointing to.
+		 */
 		Value& operator*() const;
+		/**
+		 * Compare to another iterator.
+		 * 
+		 * @param[in] iter - The iterator to compare to.
+		 * 
+		 * @return  True if they are not equivalent.
+		 */
 		bool operator!=(iterator iter) const;
+		/**
+		 * Access the Value being pointed to.
+		 */
 		Value* operator->() const;
 	private:
 		Value* ptr;
@@ -243,12 +267,18 @@ public:
 	 */
 	bool empty() const;
 
+	/**
+	 * Assignment Operator
+	 */
 	Array& operator=(const Array& arr);
 
 private:
 	void* impl_data; //!< Pointer to internal implementation data
 };
 
+/**
+ * Class for JSON strings.
+ */
 class String
 {
 public:
@@ -257,7 +287,7 @@ public:
 	String(const String& str);
 	~String();
 
-	static int npos;
+	const static SceSize npos = -1;
 
 	/**
 	 * Append string s to the end
@@ -458,6 +488,9 @@ public:
 	 */
 	bool operator==(const String& str) const;
 
+	/**
+	 * Assignment Operator
+	 */
 	String& operator=(const String& str);
 
 private:
@@ -465,10 +498,31 @@ private:
 };
 
 class Object;
+/**
+ * Class for value of JSON property.
+ */
 class Value
 {
 public:
+	/**
+	 * Callback for serialization.
+	 * It is called at certain points in the serialization process.
+	 * 
+	 * @param[in,out] String& - The current state of the parser output.
+	 * @param[in]     void*   - User defined data for the function.
+	 */
 	typedef int (*SerializeCallback)(String&, void*);
+	/**
+	 * Callback for NullValue access. 
+	 * It is called when the type of the Value is 
+	 * ValueType::NullValue and the Value is accessed.
+	 * 
+	 * @param[in] ValueType - The type.
+	 * @param[in] Value*    - A pointer to the parent of the Value accessed.
+	 * @param[in] void*     - User defined data for the function.
+	 *
+	 * @return  A valid Value of the type given. 
+	 */
 	typedef Value const&(*NullAccessCallback)(ValueType, const Value*, void*);
 
 	Value();
@@ -522,7 +576,7 @@ public:
 	 */
 	void set(ValueType type);
 	/**
-	 * Set the value to a SceBoolean
+	 * Set the value to a boolean
 	 * 
 	 * @param[in] value - New value
 	 */
@@ -570,7 +624,15 @@ public:
 	 */
 	void set(const Value& value);
 
-	int setNullAccessCallback(NullAccessCallback cb, void* param2);
+	/**
+	 * Set the Value's NullAccessCallback
+	 *
+	 * @param[in] cb   - The callback.
+	 * @param[in] data - Data to pass to the callback function.
+	 * 
+	 * @return  0 on success, <0 on error
+	 */
+	int setNullAccessCallback(NullAccessCallback cb, void* data);
 
 	/**
 	 * Returns a reference to the root Value
@@ -583,28 +645,28 @@ public:
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return false if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_BOOL.
+	 * 			ValueType::BoolValue.
 	 */
 	const SceBool& getBoolean() const;
 	/**
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_INT64 or ::SCE_JSON_VALUE_UINT64.
+	 * 			ValueType::IntValue or ValueType::UIntValue.
 	 */
 	const SceInt64& getInteger() const;
 	/**
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_INT64 or ::SCE_JSON_VALUE_UINT64.
+	 * 			ValueType::IntValue or ValueType::UIntValue.
 	 */
 	const SceUInt64& getUInteger() const;
 	/**
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_REAL.
+	 * 			ValueType::RealValue.
 	 */
 	const SceDouble& getReal() const;
 	/**
@@ -613,7 +675,7 @@ public:
 	 * referString() is the alternative function for altering the string.
 	 * 
 	 * @return  The string. Will return a garbage string if the Value is 
-	 * 			not of type ::SCE_JSON_VALUE_STRING.
+	 * 			not of type ValueType::StringValue.
 	 */
 	const String& getString() const;
 	/**
@@ -622,7 +684,7 @@ public:
 	 * referArray() is the alternative function for altering the array.
 	 * 
 	 * @return  The array. Will return an empty array if the Value is 
-	 * 			not of type ::SCE_JSON_VALUE_ARRAY.
+	 * 			not of type ValueType::ArrayValue.
 	 */
 	const Array& getArray() const;
 	/**
@@ -631,7 +693,7 @@ public:
 	 * referObject() is the alternative function for altering the array.
 	 * 
 	 * @return  The object. Will return an empty object if the Value is 
-	 * 			not of type ::SCE_JSON_VALUE_OBJECT.
+	 * 			not of type ValueType::ObjectValue.
 	 */
 	const Object& getObject() const;
 
@@ -661,28 +723,28 @@ public:
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return nullptr if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_SceBool.
+	 * 			ValueType::BoolValue.
 	 */
 	SceBool* referBoolean();
 	/**
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return nullptr if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_INT64 or ::SCE_JSON_VALUE_UINT64.
+	 * 			ValueType::IntValue or ValueType::UIntValue.
 	 */
 	SceInt64* referInteger();
 	/**
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return nullptr if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_INT64 or ::SCE_JSON_VALUE_UINT64.
+	 * 			ValueType::IntValue or ValueType::UIntValue.
 	 */
 	SceUInt64* referUInteger();
 	/**
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			::SCE_JSON_VALUE_REAL.
+	 * 			ValueType::RealValue.
 	 */
 	SceDouble* referReal();
 	/**
@@ -690,7 +752,7 @@ public:
 	 * getString() is the alternative function for only reading the string.
 	 * 
 	 * @return  The string. Will return a garbage string if the Value is 
-	 * 			not of type ::SCE_JSON_VALUE_STRING.
+	 * 			not of type ValueType::StringValue.
 	 */ 
 	String* referString();
 	/**
@@ -698,7 +760,7 @@ public:
 	 * getArray() is the alternative function for only reading the array.
 	 * 
 	 * @return  The array. Will return an empty array if the Value is 
-	 * 			not of type ::SCE_JSON_VALUE_ARRAY.
+	 * 			not of type ValueType::ArrayValue.
 	 */
 	Array* referArray();
 	/**
@@ -706,7 +768,7 @@ public:
 	 * getObject() is the alternative function for only reading the object.
 	 * 
 	 * @return  The object. Will return an empty object if the Value is 
-	 * 			not of type ::SCE_JSON_VALUE_OBJECT.
+	 * 			not of type ValueType::ObjectValue.
 	 */
 	Object* referObject();
 
@@ -769,14 +831,17 @@ public:
 	 */
 	const Value& operator[](SceSize pos) const;
 	
+	/**
+	 * Assignment Operator
+	 */
 	Value& operator=(const Value& value);
 	
 	operator bool() const;
 
 private:
 	Value* parent;         //!< Pointer to the value's parent.
-	void* unk_0x4;        //!< Unkown, some sort of function pointer.
-	union                       
+	NullAccessCallback cb; //!< The value's NullAccessCallback
+	union
 	{
 	SceBool boolean;
 	SceInt64 integer;
@@ -786,8 +851,8 @@ private:
 	Array* array;
 	Object* object;
 	};
-	char unk_0x10[0x4];  //!< Unknown.
-	ValueType type;           //!< The type of the value.
+	char unk_0x10[0x4];   //!< Unknown.
+	ValueType type;       //!< The type of the value.
 };
 
 /**
@@ -797,7 +862,7 @@ class Object
 {
 public:
 	/**
-	 * Key-Value Pair of json element
+	 * Key-Value Pair of JSON Object property.
 	 */
 	class Pair
 	{
@@ -810,6 +875,9 @@ public:
 		char unk[4];  //!< Unknown
 		Value value;  //!< Value assigned to the property
 	};
+	/**
+	 * Class for iterating over Object members.
+	 */
 	class iterator
 	{
 	public:
@@ -858,10 +926,13 @@ public:
 		 */
 		Pair* operator->() const;
 
+		/**
+		 * Assignment Operator
+		 */
 		iterator& operator=(const iterator& iter);
 
 	private:
-		Pair* impl_data; //!< Pointer to internal implementation data
+		Pair* ptr;
 	};
 
 	Object();
@@ -925,6 +996,9 @@ public:
 	 */
 	Value& operator[](const String& str);
 
+	/**
+	 * Assignment Operator
+	 */
 	Object& operator=(const Object& obj);
 
 private:
@@ -961,6 +1035,9 @@ public:
 	 *      return ret;
 	 *  }
 	 *  @endcode
+	 * 
+	 * @param[out] char& - The character to be sent back to the parser.
+	 * @param[in]  void* - User defined data for the function.
 	 */
 	typedef int (*ParseCallback)(char&, void*);
 
