@@ -1140,8 +1140,10 @@ typedef struct SceKernelWaitSignalOptParam {
 } SceKernelWaitSignalOptParam;
 
 /**
- * Sleep current thread and wait for a signal. After it receives a signal, the thread wakes up.
- * This is like a semphore with limit 1. If signal was sent 
+ * @brief Sleep current thread and wait for a signal. After it receives a signal, the thread wakes up.
+ *
+ * This is like a semphore with limit 1. 
+ * If signal was sent before and not consumed before, the function will immediately return.
  * 
  * @param params - extra parameters
  * @return 0 on success
@@ -1149,9 +1151,8 @@ typedef struct SceKernelWaitSignalOptParam {
 int sceKernelWaitSignal(SceUInt32 unk0, SceUInt32 unk1, SceKernelWaitSignalOptParam *params);
 
 /**
- * Send a signal to another thread specified by thid.
+ * @brief Send a signal to another thread specified by thid.
  *
- * 
  * @param thid - the id of the thread to send a signal to
  * @return 0 on success
  * @return SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWaitSignal
