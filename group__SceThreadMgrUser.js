@@ -182,6 +182,8 @@ var group__SceThreadMgrUser =
     [ "sceKernelDeleteLwCond", "group__SceThreadMgrUser.html#gadeae7e417052b8f6009dc1f6193c1930", null ],
     [ "sceKernelSignalLwCond", "group__SceThreadMgrUser.html#ga8649a23c271251a985f0005f4199784e", null ],
     [ "sceKernelWaitLwCond", "group__SceThreadMgrUser.html#ga74fc1c0a89c8216ceb71767292d81006", null ],
+    [ "sceKernelWaitSignal", "group__SceThreadMgrUser.html#gada47307e324ffbd9dcedb97e2f006546", null ],
+    [ "sceKernelSendSignal", "group__SceThreadMgrUser.html#ga752c12c9395e4d3e05de3e181ab6cbfc", null ],
     [ "sceKernelGetSystemTimeWide", "group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3", null ],
     [ "sceKernelGetThreadTLSAddr", "group__SceThreadMgrUser.html#ga5c88ce8f3b9a96ce584ec3822744fe97", null ],
     [ "sceKernelGetTLSAddr", "group__SceThreadMgrUser.html#gae74b3a3318e9781fe140bd49f56f43b6", null ]

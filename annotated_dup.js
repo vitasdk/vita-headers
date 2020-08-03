@@ -204,6 +204,7 @@ var annotated_dup =
     [ "SceKernelThreadRunStatus.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo", "group__SceThreadMgrUser_structSceKernelThreadRunStatus_8cpuInfo" ],
     [ "SceKernelThreadRunStatus.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo", "group__SceThreadMgrUser_structSceKernelThreadRunStatus_8cpuInfo" ],
     [ "SceKernelULMOption", "group__SceModulemgrUser.html#structSceKernelULMOption", "group__SceModulemgrUser_structSceKernelULMOption" ],
+    [ "SceKernelWaitSignalOptParam", "group__SceThreadMgrUser.html#structSceKernelWaitSignalOptParam", "group__SceThreadMgrUser_structSceKernelWaitSignalOptParam" ],
     [ "SceLibraryEntryTable", "group__SceLoadcoreUser.html#structSceLibraryEntryTable", "group__SceLoadcoreUser_structSceLibraryEntryTable" ],
     [ "SceLocationHeadingInfo", "group__SceLocationUser.html#structSceLocationHeadingInfo", "group__SceLocationUser_structSceLocationHeadingInfo" ],
     [ "SceLocationLocationInfo", "group__SceLocationUser.html#structSceLocationLocationInfo", "group__SceLocationUser_structSceLocationLocationInfo" ],
