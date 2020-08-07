@@ -24,22 +24,28 @@ typedef enum ScePowerErrorCode {
 } ScePowerErrorCode;
 	
 typedef enum ScePowerCallbackType {
-	/** indicates the power button was pushed, putting the unit into suspend mode */
-	SCE_POWER_CB_POWER_SWITCH     = 0x80000000,
-	/** ? screen on after off ? **/
-	SCE_POWER_CB_UNK_1            = 0x00600000,
-	/** ? screen off ? **/
-	SCE_POWER_CB_UNK_2            = 0x00400000,
-	/** indicates the unit has finish resuming from suspend mode */
-	SCE_POWER_CB_RESUME_COMPLETE  = 0x00040000,
-	/** indicates the unit is resuming from suspend mode */
-	SCE_POWER_CB_RESUMING         = 0x00020000,
-	/** indicates the unit is suspending, seems to occur due to inactivity */
-	SCE_POWER_CB_SUSPENDING       = 0x00010000,
-	/**indicates the unit is plugged into an AC outlet*/
-	SCE_POWER_CB_AC_POWER         = 0x00001000,
-	/**indicates there is a battery present in the unit**/
-	SCE_POWER_CB_BATTERY_EXIST    = 0x00000080
+	/** indicates the unit is using battery as power source */
+	SCE_POWER_CB_BATTERY_MODE          = 0x00000000,
+	/** indicates the unit is using an AC outlet as power source */
+	SCE_POWER_CB_AC_POWER_MODE         = 0x00001000,
+	/** indicates the unit has been shutdown **/
+	SCE_POWER_CB_SHUTDOWN              = 0x00010000,
+	/** indicates the application resumed after being put in suspend from a LiveArea event **/
+	SCE_POWER_CB_RESUME_LIVEAREA       = 0x00200000,
+	/** indicates the unit entered suspend mode **/
+	SCE_POWER_CB_SUSPENDING            = 0x00400000,
+	/** indicates the unit resumed from suspend mode **/
+	SCE_POWER_CB_RESUMING              = 0x00800000,
+	/** indicates the system is taking a screenshot **/
+	SCE_POWER_CB_SCREENSHOT_TRIGGER    = 0x04000000,
+	/** indicates the system shown the Quick Menu screen **/
+	SCE_POWER_CB_QUICK_MENU_TRIGGER    = 0x10000000,
+	/** indicates the PS button was pushed **/
+	SCE_POWER_CB_PS_BUTTON_PRESS       = 0x20000000,
+	/** indicates the system shown the shutdown screen **/
+	SCE_POWER_CB_SHUTDOWN_MENU_TRIGGER = 0x40000000,
+	/** indicates the system shown the unlock screen **/
+	SCE_POWER_CB_UNLOCK_MENU_TRIGGER   = 0x80000000,
 } ScePowerCallbackType;
 
 /* Callbacks */
