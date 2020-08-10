@@ -40,10 +40,8 @@ extern "C" {
  *
  * @param      ptr   The pointer
  * @param[in]  len   The length
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheWritebackRange(const void *ptr, SceSize len);
+void ksceKernelCpuDcacheWritebackRange(const void *ptr, SceSize len);
 
 
 /**
@@ -137,51 +135,47 @@ int ksceKernelCpuEnableInterrupts(int flags);
  *
  * @param      ptr   The pointer
  * @param[in]  len   The length
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheInvalidateRange(const void *ptr, SceSize len);
+void ksceKernelCpuDcacheInvalidateRange(const void *ptr, SceSize len);
 
 /**
  * @brief      Writeback and invalidate a range of L1 dcache (without L2)
  *
  * @param      ptr   The pointer
  * @param[in]  len   The length
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheWritebackInvalidateRange(const void *ptr, SceSize len);
+void ksceKernelCpuDcacheWritebackInvalidateRange(const void *ptr, SceSize len);
 
 /**
  * @brief      Invalidate all the L1 dcache (without L2)
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheInvalidateAll(void);
+void ksceKernelCpuDcacheInvalidateAll(void);
 
 /**
  * @brief      Writeback all the L1 dcache (without L2)
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheWritebackAll(void);
+void ksceKernelCpuDcacheWritebackAll(void);
 
 /**
  * @brief      Writeback and invalidate all the L1 dcache (without L2)
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheWritebackInvalidateAll(void);
+void ksceKernelCpuDcacheWritebackInvalidateAll(void);
 
 /**
  * @brief      Writeback a range of L1 dcache and L2
  *
  * @param      ptr   The pointer
  * @param[in]  len   The length
- *
- * @return     Zero on success
  */
-int ksceKernelCpuDcacheAndL2WritebackRange(const void *ptr, SceSize len);
+void ksceKernelCpuDcacheAndL2WritebackRange(const void *ptr, SceSize len);
+
+/**
+ * @brief      Writeback and invalidate a range of L1 dcache and L2
+ *
+ * @param      ptr   The pointer
+ * @param[in]  len   The length
+ */
+void ksceKernelCpuDcacheAndL2InvalidateRange(const void *ptr, SceSize len);
 
 /**
  * @brief      Writeback and invalidate a range of L1 dcache and L2
@@ -191,27 +185,15 @@ int ksceKernelCpuDcacheAndL2WritebackRange(const void *ptr, SceSize len);
  *
  * @return     Zero on success
  */
-int ksceKernelCpuDcacheAndL2InvalidateRange(const void *ptr, SceSize len);
-
-/**
- * @brief      Writeback and invalidate a range of L1 dcache and L2
- *
- * @param      ptr   The pointer
- * @param[in]  len   The length
- *
- * @return     Zero on success
- */
-int ksceKernelCpuDcacheAndL2WritebackInvalidateRange(const void *ptr, SceSize len);
+void ksceKernelCpuDcacheAndL2WritebackInvalidateRange(const void *ptr, SceSize len);
 
 /**
  * @brief      Invalidate a range of L1 icache (without L2)
  *
  * @param      ptr   The pointer
  * @param[in]  len   The length
- *
- * @return     Zero on success
  */
-int ksceKernelCpuIcacheInvalidateRange(const void *ptr, SceSize len);
+void ksceKernelCpuIcacheInvalidateRange(const void *ptr, SceSize len);
 
 /**
  * @brief      Invalidate all the L1 icache (without L2)
@@ -225,10 +207,8 @@ int ksceKernelCpuIcacheInvalidateAll(void);
  *
  * @param      ptr   The pointer
  * @param[in]  len   The length
- *
- * @return     Zero on success
  */
-int ksceKernelCpuIcacheAndL2WritebackInvalidateRange(const void *ptr, SceSize len);
+void ksceKernelCpuIcacheAndL2WritebackInvalidateRange(const void *ptr, SceSize len);
 
 /**
  * @brief      Suspend all interrupts (disables IRQs)
