@@ -8,6 +8,7 @@
 #define _PSP2_KERNEL_CPU_H_
 
 #include <psp2kern/types.h>
+#include <string.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -95,15 +96,13 @@ static inline int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, Sc
 {
 	int prev_dacr;
 
-	asm ("mrc p15, 0, %0, c3, c0, 0" : "=r" (prev_dacr));
-	asm ("mcr p15, 0, %0, c3, c0, 0" :: "r" (0xFFFF0000));
+	asm volatile("mrc p15, 0, %0, c3, c0, 0" : "=r" (prev_dacr));
+	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (0xFFFF0000));
 
-	for (size_t i=0; i < len; i++) {
-		((char *) dst)[i] = ((char *) src)[i];
-	}
+	memcpy(dst, src, len);
 	ksceKernelCpuDcacheWritebackRange((void *)((uintptr_t)dst & ~0x1F), (len + 0x1F) & ~0x1F);
 
-	asm ("mcr p15, 0, %0, c3, c0, 0" :: "r" (prev_dacr));
+	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (prev_dacr));
 	return 0;
 }
 
