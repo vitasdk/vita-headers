@@ -8,6 +8,7 @@
 #define _PSP2_KERNEL_CPU_H_
 
 #include <psp2kern/types.h>
+#include <string.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -91,7 +92,19 @@ static inline void ksceKernelCpuRestoreContext(int context[3])
  *
  * @return     Zero on success.
  */
-int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, SceSize len);
+static inline int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, SceSize len)
+{
+	int prev_dacr;
+
+	asm volatile("mrc p15, 0, %0, c3, c0, 0" : "=r" (prev_dacr));
+	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (0xFFFF0000));
+
+	memcpy(dst, src, len);
+	ksceKernelCpuDcacheWritebackRange((void *)((uintptr_t)dst & ~0x1F), (len + 0x1F) & ~0x1F);
+
+	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (prev_dacr));
+	return 0;
+}
 
 /**
  * @brief      Returns the CPU ID of the calling processor
