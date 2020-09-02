@@ -2,6 +2,12 @@ language: c
 dist: focal
 sudo: false
 
+addons:
+    apt:
+      packages:
+        - libclang1-9
+        - libclang-cpp9
+
 cache:
     directories:
         - $HOME/downloads
