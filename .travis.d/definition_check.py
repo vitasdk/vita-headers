@@ -39,10 +39,20 @@ def findfile(directory, filepattern):
             matches.append(os.path.join(root, filename))
     return matches
 
+def readlines(f):
+    if sys.version_info.major < 3:
+        return f.xreadlines()
+    return f
+
+def dict_items(dic):
+    if sys.version_info.major < 3:
+        return dic.iteritems()
+    return dic.items()
+
 def read_def_groups():
     definitions = dict()
     with open(DEF_FILE_PATH, 'r') as d:
-        for line in d.xreadlines():
+        for line in readlines(d):
             m = DEFINE_RULE.match(line)
             if not m:
                 continue
@@ -56,7 +66,7 @@ def read_nids():
     nids = None
     with open(DB_FILE_PATH, 'r') as d:
         SECTION = None
-        for line_no, line in enumerate(d.xreadlines()):
+        for line_no, line in enumerate(readlines(d)):
             line = line.strip()
             k, v = line.split(':')[:3]
             if not v.strip():
@@ -83,7 +93,7 @@ def check_header_groups(definitions):
             continue
         with open(header_path, 'r') as h:
             have_group_define = False
-            for line in h.xreadlines():
+            for line in readlines(h):
                 m = USER_GROUP_RULE.match(line)
                 if not m:
                     continue
@@ -100,7 +110,7 @@ def check_header_groups(definitions):
             if not have_group_define:
                 errors.append('%s: Could not find definition' % header_file)
     # reverse check if exist header
-    for k, v in definitions.iteritems():
+    for k, v in dict_items(definitions):
         if v == 0:
             errors.append('%s: Could not find using header: %s' %
                           (DEF_FILE, k))
@@ -115,7 +125,7 @@ def check_function_nids(nids):
             continue
         with open(header_path, 'r') as h:
             have_group_define = False
-            for line in h.xreadlines():
+            for line in readlines(h):
                 m = FUNCTION_RULE.match(line)
                 if not m:
                     continue
@@ -136,5 +146,5 @@ if __name__ == '__main__':
         + check_function_nids(nids)
     if len(errors):
         for e in errors:
-            print e
+            print(e)
         sys.exit(1)
