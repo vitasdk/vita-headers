@@ -16,5 +16,6 @@ var group__kernel =
     [ "Interrupt Manager Library", "group__SceIntrMgr.html", "group__SceIntrMgr" ],
     [ "Exception handling Library", "group__SceExcpmgr.html", "group__SceExcpmgr" ],
     [ "utils Library", "group__SceUtils.html", "group__SceUtils" ],
-    [ "IdStorage Library", "group__SceIdStorage.html", "group__SceIdStorage" ]
+    [ "IdStorage Library", "group__SceIdStorage.html", "group__SceIdStorage" ],
+    [ "Process event Library", "group__SceProcEvent.html", "group__SceProcEvent" ]
 ];
