@@ -40,13 +40,13 @@ typedef struct SceProcEventHandler {
 /**
  * Register process event handler
  *
- * @param[in] name     - Name of handler
- * @param[in] pHandler - The pointer of handler
- * @param[in] a3       - unknown, set to 0
+ * @param[in] name    - Name of handler
+ * @param[in] handler - The pointer of handler
+ * @param[in] a3      - unknown, set to 0
  *
  * @return uid on success, < 0 on error.
  */
-SceUID ksceKernelRegisterProcEventHandler(const char *name, const SceProcEventHandler *pHandler, int a3);
+SceUID ksceKernelRegisterProcEventHandler(const char *name, const SceProcEventHandler *handler, int a3);
 
 /**
  * Unregister process event handler
@@ -63,13 +63,13 @@ int ksceKernelUnregisterProcEventHandler(SceUID uid);
  * @param[in] pid        - The ProccessId
  * @param[in] event_id   - event_id, [1, 2, 3, 4, 5, 0x10, 0x11]
  * @param[in] event_type - Various event types
- * @param[in] pParam     - The pointer of invoke parameter
+ * @param[in] param      - The pointer of invoke parameter
  * @param[in] a5         - Unknown
  * @param[in] a6         - Unknown
  *
  * @return uid on success, < 0 on error.
  */
-int ksceKernelInvokeProcEventHandler(SceUID pid, int event_id, int event_type, void *pParam, void *a5, int a6);
+int ksceKernelInvokeProcEventHandler(SceUID pid, int event_id, int event_type, void *param, void *a5, int a6);
 
 #ifdef __cplusplus
 }
