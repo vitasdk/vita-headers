@@ -100,7 +100,13 @@ static inline int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, Sc
 	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (0xFFFF0000));
 
 	memcpy(dst, src, len);
-	ksceKernelCpuDcacheWritebackRange((void *)((uintptr_t)dst & ~0x1F), (len + 0x1F) & ~0x1F);
+
+	len += (SceSize)(((uintptr_t)dst) & 0x1F);
+
+	dst = (void *)(((uintptr_t)dst) & ~0x1F);
+	len = (len + 0x1F) & ~0x1F;
+
+	ksceKernelCpuDcacheWritebackRange(dst, len);
 
 	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (prev_dacr));
 	return 0;
