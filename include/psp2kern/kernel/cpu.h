@@ -101,9 +101,7 @@ static inline int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, Sc
 
 	memcpy(dst, src, len);
 
-	unsigned int non_align = (unsigned int)(((uintptr_t)dst) & 0x1F);
-	if(non_align != 0)
-		len += non_align;
+	len += (SceSize)(((uintptr_t)dst) & 0x1F);
 
 	dst = (void *)(((uintptr_t)dst) & ~0x1F);
 	len = (len + 0x1F) & ~0x1F;
