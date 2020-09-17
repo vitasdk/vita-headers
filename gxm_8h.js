@@ -1085,7 +1085,6 @@ var gxm_8h =
     [ "sceGxmShaderPatcherGetVertexUsseMemAllocated", "group__SceGxmUser.html#ga541a5a92c805a70140bb32711933066a", null ],
     [ "sceGxmShaderPatcherGetFragmentUsseMemAllocated", "group__SceGxmUser.html#ga0549b1d7b0d846c3f6a930a8e6a81505", null ],
     [ "sceGxmTextureInitSwizzled", "group__SceGxmUser.html#gacb56fb4a3fc0fdf529779444371c58ff", null ],
-    [ "sceGxmTextureInitSwizzledArbitrary", "group__SceGxmUser.html#ga3c2b3b8c80bbfb82e7ebe4b768dc1feb", null ],
     [ "sceGxmTextureInitLinear", "group__SceGxmUser.html#gad8348a6dcf8d22abc508842a1d45f121", null ],
     [ "sceGxmTextureInitLinearStrided", "group__SceGxmUser.html#ga01cf2db91e3d5747af2e9fdcb2edeb9c", null ],
     [ "sceGxmTextureInitTiled", "group__SceGxmUser.html#ga27642848f184a273b4b9747bdb72ffff", null ],
