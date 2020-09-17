@@ -1496,6 +1496,7 @@ unsigned int sceGxmShaderPatcherGetVertexUsseMemAllocated(const SceGxmShaderPatc
 unsigned int sceGxmShaderPatcherGetFragmentUsseMemAllocated(const SceGxmShaderPatcher *shaderPatcher);
 
 int sceGxmTextureInitSwizzled(SceGxmTexture *texture, const void *data, SceGxmTextureFormat texFormat, unsigned int width, unsigned int height, unsigned int mipCount);
+int sceGxmTextureInitSwizzledArbitrary(SceGxmTexture *texture, const void *data, SceGxmTextureFormat texFormat, unsigned int width, unsigned int height, unsigned int mipCount);
 int sceGxmTextureInitLinear(SceGxmTexture *texture, const void *data, SceGxmTextureFormat texFormat, unsigned int width, unsigned int height, unsigned int mipCount);
 int sceGxmTextureInitLinearStrided(SceGxmTexture *texture, const void *data, SceGxmTextureFormat texFormat, unsigned int width, unsigned int height, unsigned int byteStride);
 int sceGxmTextureInitTiled(SceGxmTexture *texture, const void *data, SceGxmTextureFormat texFormat, unsigned int width, unsigned int height, unsigned int mipCount);
