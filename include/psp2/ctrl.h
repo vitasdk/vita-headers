@@ -171,7 +171,7 @@ int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
@@ -184,7 +184,7 @@ int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
@@ -195,7 +195,7 @@ int sceCtrlPeekBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
@@ -206,7 +206,7 @@ int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
@@ -219,7 +219,7 @@ int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
@@ -230,7 +230,7 @@ int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  *
  * @param[in] port - use 0.
  * @param[out] *pad_data - see ::SceCtrlData.
- * @param[in] count - Buffers count.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
