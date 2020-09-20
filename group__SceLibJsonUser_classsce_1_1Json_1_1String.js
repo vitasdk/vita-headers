@@ -29,5 +29,6 @@ var group__SceLibJsonUser_classsce_1_1Json_1_1String =
     [ "operator+=", "group__SceLibJsonUser.html#gac2f8ef6a464a08b53e3ead45f2efdcf4", null ],
     [ "operator==", "group__SceLibJsonUser.html#ga043e56069609be2708c6b90ab297d2b7", null ],
     [ "operator==", "group__SceLibJsonUser.html#ga787aa9a47e7ea9eb1298202738db94f1", null ],
-    [ "operator=", "group__SceLibJsonUser.html#gaa6b8fdf975f0160b6bc91e99b2222ad8", null ]
+    [ "operator=", "group__SceLibJsonUser.html#gaa6b8fdf975f0160b6bc91e99b2222ad8", null ],
+    [ "impl_data", "group__SceLibJsonUser.html#ga35634a87567ec5ec439dd14b68296f5a", null ]
 ];

@@ -13,5 +13,6 @@ var group__SceLibJsonUser_classsce_1_1Json_1_1Array =
     [ "pop_back", "group__SceLibJsonUser.html#ga2bdc56e81e10c426e47df10083029d6a", null ],
     [ "size", "group__SceLibJsonUser.html#ga5249247817a3463f1cbd96be1c4011b8", null ],
     [ "empty", "group__SceLibJsonUser.html#gaad0c1fe72cf3346f67155158c4216446", null ],
-    [ "operator=", "group__SceLibJsonUser.html#ga83f34ffe50fe1b3ea9f9978cf067ee6c", null ]
+    [ "operator=", "group__SceLibJsonUser.html#ga83f34ffe50fe1b3ea9f9978cf067ee6c", null ],
+    [ "impl_data", "group__SceLibJsonUser.html#ga62efe144401e9f3405a384ec99525bc9", null ]
 ];
