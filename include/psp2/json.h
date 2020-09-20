@@ -13,6 +13,37 @@
 
 #include <psp2/types.h>
 
+/**
+ * Enumerator of different errors in this library.
+ */
+typedef enum SceJsonError
+{
+	/**
+	 * The module has not been initialised.
+	 */
+	SCE_JSON_ERROR_UNLOADED              = 0x80920110,
+	/**
+	 * The module has already been initialised.
+	 */
+	SCE_JSON_ERROR_LOADED                = 0x80920111,
+	/**
+	 * Internal Memory Allocation failure(returned nullptr).
+	 */ 
+	SCE_JSON_ERROR_MEM_ALLOC             = 0x80920102,
+	/**
+	 * InitParameter.bufSize is 0.
+	 */
+	SCE_JSON_PARSER_ERROR_EMPTY_BUF      = 0x80920105, 
+	/**
+	 * Parser failed to load file.
+	 */
+	SCE_JSON_PARSER_ERROR_FILE_LOAD      = 0x80920103,
+	/**
+	 * Invalid character in the parsed data.
+	 */
+	SCE_JSON_PARSER_ERROR_INVALID_TOKEN  = 0x80920101,
+} SceJsonError;
+
 namespace sce
 {
 
@@ -35,38 +66,7 @@ typedef enum class ValueType
 } ValueType;
 
 /**
- * Enumerator of different errors in this library.
- */
-typedef enum SceJsonError
-{
-	/**
-	 * The module has not been initialised.
-	 */
-	SCE_JSON_ERROR_UNLOADED              = 0x80920110,
-	/**
-	 * The module has already been initialised.
-	 */
-	SCE_JSON_ERROR_LOADED                = 0x80920111,
-	/**
-	 * Internal Memory Allocation failure(returned nullptr).
-	 */ 
-	SCE_JSON_ERROR_MEM_ALLOC             = 0x80920102,
-	/**
-	 * InitParameter.unk_0x8 is 0.
-	 */
-	SCE_JSON_PARSER_ERROR_EMPTY_BUF      = 0x80920105, 
-	/**
-	 * Parser failed to load file.
-	 */
-	SCE_JSON_PARSER_ERROR_FILE_LOAD      = 0x80920103,
-	/**
-	 * Invalid character in the parsed data.
-	 */
-	SCE_JSON_PARSER_ERROR_INVALID_TOKEN  = 0x80920101,
-} SceJsonError;
-
-/**
- * Base class for reimplementation of memory allocation.\n
+ * Base class for reimplementation of memory allocation.
  * This class must be derived from.
  */
 class MemAllocator
@@ -114,10 +114,13 @@ public:
 	 */
 	void* data;      
 	/**
-	 * Unknown, but must be set to more than 0 when 
-	 * using Parser::parse(Value&, const char*).
+	 * Size of the buffer used for reading JSON file data in
+	 * Parser::parse(Value&, const char*). 
+	 * 
+	 * Does not have to be the size of the file, but a smaller 
+	 * buffer size will result in more IO calls.
 	 */
-	SceSize unk_0x8;   
+	SceSize bufSize;   
 };
 
 /**
@@ -190,7 +193,7 @@ public:
 		 * 
 		 * @param[in] iter - The iterator to compare to.
 		 * 
-		 * @return  True if they are not equivalent.
+		 * @return  true if they are not equivalent.
 		 */
 		bool operator!=(iterator iter) const;
 		/**
@@ -494,7 +497,7 @@ public:
 	String& operator=(const String& str);
 
 private:
-	void* impl_data; //!< Pointer to internal implementation data
+	void* impl_data; //!< Pointer to internal implementation data.
 };
 
 class Object;
@@ -792,7 +795,7 @@ public:
 	Value* referValue(const String& key);
 
 	/**
-	 * Serializes the data into a string in json format
+	 * Serializes the data into a string in JSON format
 	 * 
 	 * @param[out] s - The resulting string, can be written to a file or parsed.
 	 * 
@@ -800,7 +803,7 @@ public:
 	 */
 	int serialize(String& s);
 	/**
-	 * Serializes the values into a string in json format. 
+	 * Serializes the values into a string in JSON format. 
 	 * Allows for a callback for the different stages in the serialization.
 	 * 
 	 * @param[out] s    - The resulting string, can be written to a file or parsed.
@@ -840,7 +843,7 @@ public:
 
 private:
 	Value* parent;         //!< Pointer to the value's parent.
-	NullAccessCallback cb; //!< The value's NullAccessCallback
+	NullAccessCallback cb; //!< The value's NullAccessCallback.
 	union
 	{
 	SceBool boolean;
@@ -850,8 +853,8 @@ private:
 	String* string;
 	Array* array;
 	Object* object;
-	};
-	char unk_0x10[0x4];   //!< Unknown.
+	} value;              //!< Union of different value types.
+	char unused[4];       //!< Unused.
 	ValueType type;       //!< The type of the value.
 };
 
@@ -871,9 +874,9 @@ public:
 		Pair(const String& name, const Value& value);
 		~Pair();
 
-		String key;   //!< Name assigned to the property
-		char unk[4];  //!< Unknown
-		Value value;  //!< Value assigned to the property
+		String key;     //!< Name assigned to the property.
+		char unused[4]; //!< Unused.
+		Value value;    //!< Value assigned to the property.
 	};
 	/**
 	 * Class for iterating over Object members.
@@ -886,24 +889,24 @@ public:
 		~iterator();
 
 		/**
-		 * Advance the iterator
+		 * Advance the iterator.
 		 * 
 		 * @param[in] adv - Number by which to advance.
 		 */
 		void advance(SceSize adv);
 
 		/**
-		 * Increment the iterator
+		 * Increment the iterator.
 		 * 
 		 * @param[in] adv - The amount to increment it by.
 		 */
 		iterator& operator++(int adv);
 		/**
-		 * Increment the iterator
+		 * Increment the iterator.
 		 */
 		iterator& operator++();
 		/**
-		 * Dereference the iterator
+		 * Dereference the iterator.
 		 * 
 		 * @return  A reference to the pair the iterator is 
 		 * 			currently pointing to.
@@ -932,7 +935,7 @@ public:
 		iterator& operator=(const iterator& iter);
 
 	private:
-		Pair* ptr;
+		void* impl_data; //!< Pointer to internal implementation data.
 	};
 
 	Object();
@@ -940,7 +943,7 @@ public:
 	~Object();
 
 	/**
-	 * Returns an iterator to the first child element
+	 * Returns an iterator to the first child element.
 	 * 
 	 * @return  The iterator.
 	 */
@@ -960,7 +963,7 @@ public:
 	 */
 	iterator insert(const Pair& p);
 	/**
-	 * Finds a Pair with a matching key
+	 * Finds a Pair with a matching key.
 	 * 
 	 * @param[in] key - The key to search for.
 	 * 
@@ -985,7 +988,7 @@ public:
 	/**
 	 * Is the object empty?
 	 * 
-	 * @return  True if there are no child Pairs.
+	 * @return  true if there are no child Pairs.
 	 */
 	bool empty() const;
 
@@ -1002,7 +1005,7 @@ public:
 	Object& operator=(const Object& obj);
 
 private:
-	void* impl_data; //!< Pointer to internal implementation data
+	void* impl_data; //!< Pointer to internal implementation data.
 };
 
 /**
@@ -1017,7 +1020,7 @@ public:
 	 * @code
 	 *  struct Data
 	 *  {
-	 *      char *buf; // Character buffer storing the json data.
+	 *      char *buf; // Character buffer storing the JSON data.
 	 *  };
 	 * 
 	 *  int Parse_Callback(char& ch, void* data)
@@ -1053,7 +1056,7 @@ public:
 	static int parse(Value& val, ParseCallback cb, void* data);
  
 	/**
-	 * Parses a string buffer
+	 * Parses a string buffer.
 	 * 
 	 * @param[out] val  - Reference to the Value the data is written to.
 	 * @param[in]  buf  - String buffer to parse
@@ -1064,10 +1067,10 @@ public:
 	static int parse(Value& val, const char* buf, SceSize size);
 
 	/**
-	 * Parse a json file
+	 * Parse a JSON file. Will parse until EOF.
 	 * 
 	 * @param[out] val  - Reference to the Value the data is written to.
-	 * @param[in]  path  - Path to the json file.
+	 * @param[in]  path  - Path to the JSON file.
 	 * 
 	 * @return  0 on success, <0 on error.
 	 */
