@@ -79,6 +79,9 @@
  * \{
  *     \defgroup SceCommonDialog Common Dialog Library
  *      Set the parameters of a Dialog, and display it
+ *     
+ *     \defgroup SceIncomingDialog Incoming Dialog Library
+ *      Show custom dialogs via SceShell
  *
  *     \defgroup SceMessageDialog Message Dialog Library
  *      Init a Message Dialog and display it
@@ -230,6 +233,12 @@
  *
  *     \defgroup SceAVConfig Audio-Video Configuration Library
  *      Brightness, Volume, HDMI settings...
+ *     
+ *     \defgroup SceBgAppUtil Background Application Utilities Library
+ *      Manage a background application
+ *
+ *     \defgroup SceNotificationUtil Notification Utilities library
+ *      Send notiifications, simple and progress type
  *
  *     \defgroup ScePower Power Library
  *      Battery status, CPU speed...
@@ -248,6 +257,9 @@
  *
  *     \defgroup SceShellSvc Shell Utils Library
  *      Set handlers for opening various menus
+ *     
+ *     \defgroup SceTriggerUtil Events Library
+ *      Schedule a one time or daily application events
  *
  *     \defgroup SceVshBridge VSH Bridge Library
  *      Model info, System, Memory card state...

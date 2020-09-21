@@ -947,6 +947,14 @@ modules:
           sceBbmcUsbExtIfStop: 0xF82F293A
           sceBbmcUsbExtIfWrite: 0x4034E750
           sceBbmcVerifyPin: 0x057B2157
+  SceBgAppUtil:
+    nid: 0x795E683F
+    libraries:
+      SceBgAppUtil:
+        kernel: false
+        nid: 0xF9516A07
+        functions:
+          sceBgAppUtilStartBgApp: 0x7C3525B5
   SceBt:
     nid: 0xF56868B7
     libraries:
@@ -2486,6 +2494,19 @@ modules:
           sceImeSetPreeditGeometry: 0x7B1EFAA5
           sceImeSetText: 0xF3BD9A76
           sceImeUpdate: 0x71D6898A
+  SceIncomingDialog:
+    nid: 0xC3E0DAF2
+    libraries:
+      SceIncomingDialog:
+        kernel: false
+        nid: 0x5058F4AB
+        functions:
+          sceIncomingDialogClose: 0x126BD15E
+          sceIncomingDialogFinish: 0x860B1885
+          sceIncomingDialogGetStatus: 0x839DE14C
+          sceIncomingDialogInitialize: 0x18AF99EB
+          sceIncomingDialogOpen: 0x2BEDC1A0
+          sceIncomingDialogSwitchToDialog: 0x0123B83A
   SceIofilemgr:
     nid: 0x9642948C
     libraries:
@@ -2669,6 +2690,19 @@ modules:
           sceJpegInitMJpegWithParam: 0x518163A7
           sceJpegMJpegCsc: 0xC2380E3A
           sceJpegSplitDecodeMJpeg: 0x4598EC9C
+  SceJpegArm:
+    nid: 0xC3ACF942
+    libraries:
+      SceJpegArm:
+        kernel: false
+        nid: 0x19F04693
+        functions:
+          sceJpegArmCreateSplitDecoder: 0x9DA48DB6
+          sceJpegArmDecodeMJpeg: 0xA4ABFCE3
+          sceJpegArmDecodeMJpegYCbCr: 0xE9B1B86F
+          sceJpegArmDeleteSplitDecoder: 0xE9CB3DFD
+          sceJpegArmGetOutputInfo: 0x23AE3BEA
+          sceJpegArmSplitDecodeMJpeg: 0x5D83C606
   SceJpegEnc:
     nid: 0x00000046
     libraries:
@@ -6607,6 +6641,27 @@ modules:
           sceSulphaNgsSetVoiceName: 0x508975BD
           sceSulphaNgsShutdown: 0xD124BFB1
           sceSulphaNgsTrace: 0xDC7C0F05
+  SceNotificationUtil:
+    nid: 0x355BAF61
+    libraries:
+      SceNotificationUtil:
+        kernel: false
+        nid: 0xE19097C3
+        functions:
+          sceNotificationUtilCleanHistory: 0xB0FFFB7B
+          sceNotificationUtilSendNotification: 0xDE6F33F4
+      SceNotificationUtilBgApp:
+        kernel: false
+        nid: 0xA8AEF7DB
+        functions:
+          sceNotificationUtilBgAppInitialize: 0xCBE814C1
+      SceNotificationUtilProgress:
+        kernel: false
+        nid: 0x75602769
+        functions:
+          sceNotificationUtilProgressBegin: 0xFD0769B0
+          sceNotificationUtilProgressFinish: 0x8CD688A1
+          sceNotificationUtilProgressUpdate: 0xD9890A65
   SceNpActivity:
     nid: 0x096735F5
     libraries:
@@ -9510,6 +9565,24 @@ modules:
           ksceTouchSetRegionAttr: 0x10A998DE
           ksceTouchSetSamplingState: 0x1247257A
           ksceTouchSetTouchEmulationData: 0xA32529B8
+  SceTriggerUtil:
+    nid: 0xDC8CE156
+    libraries:
+      SceTriggerUtil:
+        kernel: false
+        nid: 0x1B0302AD
+        functions:
+          sceTriggerUtilGetAutoStartStatus: 0xDD2CA8BB
+          sceTriggerUtilGetDailyEventInfo: 0xDF3ED08E
+          sceTriggerUtilGetOneTimeEventInfo: 0x912434E0
+          sceTriggerUtilGetRegisteredSystemTitleIdList: 0x2A67EF8C
+          sceTriggerUtilGetRegisteredUserTitleIdList: 0xE2B2D2D0
+          sceTriggerUtilGetSystemAppInfo: 0xD659CCB0
+          sceTriggerUtilGetUserAppInfo: 0x0ACE6552
+          sceTriggerUtilRegisterDailyEvent: 0xA69102DE
+          sceTriggerUtilRegisterOneTimeEvent: 0x04218D35
+          sceTriggerUtilUnregisterDailyEvent: 0x58BF700F
+          sceTriggerUtilUnregisterOneTimeEvent: 0xAF73E0A8
   SceUdcd:
     nid: 0x8E26B2A3
     libraries:
