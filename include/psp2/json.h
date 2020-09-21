@@ -16,7 +16,7 @@
 /**
  * Enumerator of different errors in this library.
  */
-typedef enum SceJsonError
+typedef enum SceJsonErrorCode
 {
 	/**
 	 * The module has not been initialised.
@@ -42,7 +42,7 @@ typedef enum SceJsonError
 	 * Invalid character in the parsed data.
 	 */
 	SCE_JSON_PARSER_ERROR_INVALID_TOKEN  = 0x80920101,
-} SceJsonError;
+} SceJsonErrorCode;
 
 namespace sce
 {
