@@ -9,6 +9,7 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "bt.h", "bt_8h.html", "bt_8h" ],
     [ "ctrl.h", "ern_2ctrl_8h.html", "ern_2ctrl_8h" ],
     [ "display.h", "ern_2display_8h.html", "ern_2display_8h" ],
+    [ "fios2.h", "fios2_8h.html", "fios2_8h" ],
     [ "idstorage.h", "idstorage_8h.html", "idstorage_8h" ],
     [ "power.h", "ern_2power_8h.html", "ern_2power_8h" ],
     [ "registrymgr.h", "ern_2registrymgr_8h.html", "ern_2registrymgr_8h" ],

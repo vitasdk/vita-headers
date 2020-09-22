@@ -89,6 +89,7 @@ var annotated_dup =
     [ "SceDisplayFrameBuf", "group__SceDisplayUser.html#structSceDisplayFrameBuf", "group__SceDisplayUser_structSceDisplayFrameBuf" ],
     [ "SceDisplayFrameBufInfo", "group__SceDisplayKernel.html#structSceDisplayFrameBufInfo", "group__SceDisplayKernel_structSceDisplayFrameBufInfo" ],
     [ "SceFColor", "group__SceTypesUser.html#structSceFColor", "group__SceTypesUser_structSceFColor" ],
+    [ "SceFiosOverlay", "group__SceFios2KernelKernel.html#structSceFiosOverlay", "group__SceFios2KernelKernel_structSceFiosOverlay" ],
     [ "SceFMatrix2", "group__SceTypesUser.html#structSceFMatrix2", "group__SceTypesUser_structSceFMatrix2" ],
     [ "SceFMatrix3", "group__SceTypesUser.html#structSceFMatrix3", "group__SceTypesUser_structSceFMatrix3" ],
     [ "SceFMatrix4", "group__SceTypesUser.html#structSceFMatrix4", "group__SceTypesUser_structSceFMatrix4" ],
