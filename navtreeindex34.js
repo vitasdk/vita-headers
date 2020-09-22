@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a6643d608f177dd8c7104f20093d51256":[1,6,3,0,292],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a6643d608f177dd8c7104f20093d51256":[4,0,1,0,1,2,0,291],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a683f1e3e1b7f23bc041e31b02c264c4d":[1,6,3,0,0,111],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a683f1e3e1b7f23bc041e31b02c264c4d":[1,6,3,0,112],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a683f1e3e1b7f23bc041e31b02c264c4d":[4,0,1,0,1,2,0,111],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a69f4944f0ef4cb9ad862dd6dbe1fd411":[1,6,3,0,0,189],
@@ -194,9 +197,9 @@ var NAVTREEINDEX34 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9496e144dd2c8f28fe411420e2783339":[1,6,3,0,0,134],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9496e144dd2c8f28fe411420e2783339":[1,6,3,0,135],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9496e144dd2c8f28fe411420e2783339":[4,0,1,0,1,2,0,134],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a951176ef8b046eb272fd78f5d90042af":[4,0,1,0,1,2,0,293],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a951176ef8b046eb272fd78f5d90042af":[1,6,3,0,0,293],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a951176ef8b046eb272fd78f5d90042af":[1,6,3,0,294],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a951176ef8b046eb272fd78f5d90042af":[4,0,1,0,1,2,0,293],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9550feaca79c39688f3f8095f9bd8842":[1,6,3,0,0,159],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9550feaca79c39688f3f8095f9bd8842":[1,6,3,0,160],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9550feaca79c39688f3f8095f9bd8842":[4,0,1,0,1,2,0,159],
@@ -246,8 +249,5 @@ var NAVTREEINDEX34 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa8770aa271e4e3fb5614741e5d0cc869":[1,6,3,0,159],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa8770aa271e4e3fb5614741e5d0cc869":[4,0,1,0,1,2,0,158],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa9d738a93a9db25ff3a7249e151124ad":[1,6,3,0,0,234],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa9d738a93a9db25ff3a7249e151124ad":[1,6,3,0,235],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa9d738a93a9db25ff3a7249e151124ad":[4,0,1,0,1,2,0,234],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aaaf293e4fab919cdaf2b40e74977dc41":[1,6,3,0,0,21],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aaaf293e4fab919cdaf2b40e74977dc41":[1,6,3,0,22]
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa9d738a93a9db25ff3a7249e151124ad":[1,6,3,0,235]
 };
