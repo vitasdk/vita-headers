@@ -21,6 +21,7 @@ typedef enum SceAppMgrErrorCode {
 	SCE_APPMGR_ERROR_INVALID            = 0x8080201A, //!< Invalid param
 	SCE_APPMGR_ERROR_TOO_LONG_ARGV      = 0x8080201D, //!< argv is too long
 	SCE_APPMGR_ERROR_INVALID_SELF_PATH  = 0x8080201E, //!< Invalid SELF path
+	SCE_APPMGR_ERROR_NOEXEC             = 0x8080201F, //!< The process is not authorized to run this function
 	SCE_APPMGR_ERROR_BGM_PORT_BUSY      = 0x80803000  //!< BGM port was occupied and could not be secured
 } SceAppMgrErrorCode;
 
