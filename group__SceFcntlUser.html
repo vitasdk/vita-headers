@@ -348,13 +348,13 @@ Functions</h2></td></tr>
 </div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file</td><td>- Pointer to a string holding the name of the file to open </td></tr>
-    <tr><td class="paramname">flags</td><td>- Libc styled flags that are or'ed together </td></tr>
-    <tr><td class="paramname">mode</td><td>- File access mode (One or more <a class="el" href="group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a>). </td></tr>
+    <tr><td class="paramname">file</td><td>- Pointer to a string holding the name of the file to open. </td></tr>
+    <tr><td class="paramname">flags</td><td>- Libc styled flags that are or'ed together (One or more <a class="el" href="group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a>). </td></tr>
+    <tr><td class="paramname">mode</td><td>- One or more::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A non-negative integer is a valid fd, anything else an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>&gt; 0 is valid file handle, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -393,13 +393,13 @@ Functions</h2></td></tr>
 <p>Open or create a file for reading or writing (asynchronous) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file</td><td>- Pointer to a string holding the name of the file to open </td></tr>
-    <tr><td class="paramname">flags</td><td>- Libc styled flags that are or'ed together </td></tr>
-    <tr><td class="paramname">mode</td><td>- File access mode (One or more <a class="el" href="group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a>). </td></tr>
+    <tr><td class="paramname">file</td><td>- Pointer to a string holding the name of the file to open. </td></tr>
+    <tr><td class="paramname">flags</td><td>- Libc styled flags that are or'ed together (One or more <a class="el" href="group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a>). </td></tr>
+    <tr><td class="paramname">mode</td><td>- One or more::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A non-negative integer is a valid fd, anything else an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>&gt; 0 is a valid file handle, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
