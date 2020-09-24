@@ -6,10 +6,13 @@
 #ifndef _JPEGENC_H_
 #define _JPEGENC_H_
 
-#include <stdint.h>
 #include <psp2/types.h>
 
-typedef void *SceJpegEncoderContext;
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef void* SceJpegEncoderContext;
 
 typedef enum SceJpegEncErrorCode {
 	SCE_JPEGENC_ERROR_IMAGE_SIZE                = 0x80650200,
@@ -153,5 +156,9 @@ int sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int
  */
 int sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
-#endif
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
+#endif /* _PSP2_JPEGENC_H_ */
 

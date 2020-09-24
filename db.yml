@@ -2720,6 +2720,21 @@ modules:
           sceJpegEncoderSetHeaderMode: 0x2F58B12C
           sceJpegEncoderSetOutputAddr: 0x25D52D97
           sceJpegEncoderSetValidRegion: 0x9511F3BC
+  SceJpegEncArm:
+    nid: 0x7274D863
+    libraries:
+      SceJpegEncArm:
+        kernel: false
+        nid: 0xCF9C23A2
+        functions:
+          sceJpegArmEncoderEncode: 0xC60DE94C
+          sceJpegArmEncoderEnd: 0xC87AA849
+          sceJpegArmEncoderGetContextSize: 0x2B55844D
+          sceJpegArmEncoderInit: 0x88DA92B4
+          sceJpegArmEncoderSetCompressionRatio: 0xB2B828EC
+          sceJpegArmEncoderSetHeaderMode: 0x2F58B12C
+          sceJpegArmEncoderSetOutputAddr: 0x25D52D97
+          sceJpegArmEncoderSetValidRegion: 0x9511F3BC
   SceKernelDmacMgr:
     nid: 0xF926C804
     libraries:
