@@ -3,7 +3,7 @@
  * \usage{psp2/json.h,SceLibJson_stub,SCE_SYSMODULE_JSON}
  * 
  * \note Compiling and linking with this library requires you 
- * 		 to compile your code with the compiler flag -fno-rtti.
+ *       to compile your code with the compiler flag -fno-rtti.
  */
 
 #ifndef _PSP2_JSON_H_
@@ -83,19 +83,19 @@ public:
 	 * 
 	 * @return  Pointer to the allocated memory
 	 */
-	virtual void* allocateMemory(SceSize size, void* data) = 0;
+	virtual void* allocateMemory(SceSize size, void* userData) = 0;
 	/**
 	 * Virtual Function for memory deallocation.
 	 * 
 	 * @param[in] ptr  - Pointer to memory.
 	 * @param[in] data - User defined data for the function.
 	 */
-	virtual void freeMemory(void* ptr, void* data) = 0;
+	virtual void freeMemory(void* ptr, void* userData) = 0;
 
 	/**
 	 * The base class definition prints an error to sceClibPrintf.
 	 */
-	virtual void notifyError(int errorCode, SceSize size, void* data);
+	virtual void notifyError(int errorCode, SceSize size, void* userData);
 };
 
 /**
@@ -112,7 +112,7 @@ public:
 	/**
 	 * User defined data sent to overriden MemAllocator functions.
 	 */
-	void* data;      
+	void* userData;      
 	/**
 	 * Size of the buffer used for reading JSON file data in
 	 * Parser::parse(Value&, const char*). 
@@ -201,7 +201,7 @@ public:
 		 */
 		Value* operator->() const;
 	private:
-		Value* ptr;
+		void* implData; //!< Pointer to internal implementation data.
 	};
 
 	Array();
@@ -276,7 +276,7 @@ public:
 	Array& operator=(const Array& arr);
 
 private:
-	void* impl_data; //!< Pointer to internal implementation data
+	void* implData; //!< Pointer to internal implementation data.
 };
 
 /**
@@ -344,7 +344,7 @@ public:
 	 * @param[in] pos - Position to start searching from.
 	 * 
 	 * @return  The position of the first instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize find(const char* s, SceSize pos) const;
 	/**
@@ -355,7 +355,7 @@ public:
 	 * @param[in] n   - Length of the sequence.
 	 * 
 	 * @return  The position of the first instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize find(const char* s, SceSize pos, SceSize n) const;
 	/**
@@ -365,7 +365,7 @@ public:
 	 * @param[in] pos - Position to start searching from.
 	 * 
 	 * @return  The position of the first instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize find(const String& str, SceSize pos) const;
 	/**
@@ -375,7 +375,7 @@ public:
 	 * @param[in] pos - Position to start searching from.
 	 * 
 	 * @return  The position of the first instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize find(char c, SceSize pos) const;
 
@@ -386,7 +386,7 @@ public:
 	 * @param[in] pos - Position to start searching from.
 	 * 
 	 * @return  The position of the last instance of the sequence.
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize rfind(const char* s, SceSize pos) const;
 	/**
@@ -397,7 +397,7 @@ public:
 	 * @param[in] n   - Length of the sequence.
 	 * 
 	 * @return  The position of the last instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize rfind(const char* s, SceSize pos, SceSize n) const;
 	/**
@@ -407,7 +407,7 @@ public:
 	 * @param[in] pos - Position to start searching from.
 	 * 
 	 * @return  The position of the last instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize rfind(const String& str, SceSize pos) const;/**
 	 * Searches the string for the last instance of a sequence
@@ -416,7 +416,7 @@ public:
 	 * @param[in] pos - Position to start searching from.
 	 * 
 	 * @return  The position of the last instance of the sequence. 
-	 * 			Will return String::npos if not found
+	 *          Will return String::npos if not found
 	 */
 	SceSize rfind(char c, SceSize pos) const;
 
@@ -497,7 +497,7 @@ public:
 	String& operator=(const String& str);
 
 private:
-	void* impl_data; //!< Pointer to internal implementation data.
+	void* implData; //!< Pointer to internal implementation data.
 };
 
 class Object;
@@ -511,22 +511,22 @@ public:
 	 * Callback for serialization.
 	 * It is called at certain points in the serialization process.
 	 * 
-	 * @param[in,out] String& - The current state of the parser output.
-	 * @param[in]     void*   - User defined data for the function.
+	 * @param[in,out] str      - The current state of the parser output.
+	 * @param[in]     userData - User defined data for the function.
 	 */
-	typedef int (*SerializeCallback)(String&, void*);
+	typedef int (*SerializeCallback)(String& str, void* userData);
 	/**
 	 * Callback for NullValue access. 
 	 * It is called when the type of the Value is 
 	 * ValueType::NullValue and the Value is accessed.
 	 * 
-	 * @param[in] ValueType - The type.
-	 * @param[in] Value*    - A pointer to the parent of the Value accessed.
-	 * @param[in] void*     - User defined data for the function.
+	 * @param[in] type      - The type of value requested.
+	 * @param[in] parent    - A pointer to the parent of the Value accessed.
+	 * @param[in] userData  - User defined data for the function.
 	 *
 	 * @return  A valid Value of the type given. 
 	 */
-	typedef Value const&(*NullAccessCallback)(ValueType, const Value*, void*);
+	typedef Value const&(*NullAccessCallback)(ValueType type, const Value* parent, void* userData);
 
 	Value();
 	Value(ValueType type);
@@ -635,7 +635,7 @@ public:
 	 * 
 	 * @return  0 on success, <0 on error
 	 */
-	int setNullAccessCallback(NullAccessCallback cb, void* data);
+	int setNullAccessCallback(NullAccessCallback cb, void* userData);
 
 	/**
 	 * Returns a reference to the root Value
@@ -648,28 +648,28 @@ public:
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return false if the Value is not of type 
-	 * 			ValueType::BoolValue.
+	 *          ValueType::BoolValue.
 	 */
 	const SceBool& getBoolean() const;
 	/**
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			ValueType::IntValue or ValueType::UIntValue.
+	 *          ValueType::IntValue or ValueType::UIntValue.
 	 */
 	const SceInt64& getInteger() const;
 	/**
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			ValueType::IntValue or ValueType::UIntValue.
+	 *          ValueType::IntValue or ValueType::UIntValue.
 	 */
 	const SceUInt64& getUInteger() const;
 	/**
 	 * Returns a constant reference to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			ValueType::RealValue.
+	 *          ValueType::RealValue.
 	 */
 	const SceDouble& getReal() const;
 	/**
@@ -678,7 +678,7 @@ public:
 	 * referString() is the alternative function for altering the string.
 	 * 
 	 * @return  The string. Will return a garbage string if the Value is 
-	 * 			not of type ValueType::StringValue.
+	 *          not of type ValueType::StringValue.
 	 */
 	const String& getString() const;
 	/**
@@ -687,7 +687,7 @@ public:
 	 * referArray() is the alternative function for altering the array.
 	 * 
 	 * @return  The array. Will return an empty array if the Value is 
-	 * 			not of type ValueType::ArrayValue.
+	 *          not of type ValueType::ArrayValue.
 	 */
 	const Array& getArray() const;
 	/**
@@ -696,7 +696,7 @@ public:
 	 * referObject() is the alternative function for altering the array.
 	 * 
 	 * @return  The object. Will return an empty object if the Value is 
-	 * 			not of type ValueType::ObjectValue.
+	 *          not of type ValueType::ObjectValue.
 	 */
 	const Object& getObject() const;
 
@@ -726,28 +726,28 @@ public:
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return nullptr if the Value is not of type 
-	 * 			ValueType::BoolValue.
+	 *          ValueType::BoolValue.
 	 */
 	SceBool* referBoolean();
 	/**
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return nullptr if the Value is not of type 
-	 * 			ValueType::IntValue or ValueType::UIntValue.
+	 *          ValueType::IntValue or ValueType::UIntValue.
 	 */
 	SceInt64* referInteger();
 	/**
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return nullptr if the Value is not of type 
-	 * 			ValueType::IntValue or ValueType::UIntValue.
+	 *          ValueType::IntValue or ValueType::UIntValue.
 	 */
 	SceUInt64* referUInteger();
 	/**
 	 * Returns a pointer to the value.
 	 * 
 	 * @return  The value. Will return 0 if the Value is not of type 
-	 * 			ValueType::RealValue.
+	 *          ValueType::RealValue.
 	 */
 	SceDouble* referReal();
 	/**
@@ -755,7 +755,7 @@ public:
 	 * getString() is the alternative function for only reading the string.
 	 * 
 	 * @return  The string. Will return a garbage string if the Value is 
-	 * 			not of type ValueType::StringValue.
+	 *          not of type ValueType::StringValue.
 	 */ 
 	String* referString();
 	/**
@@ -763,7 +763,7 @@ public:
 	 * getArray() is the alternative function for only reading the array.
 	 * 
 	 * @return  The array. Will return an empty array if the Value is 
-	 * 			not of type ValueType::ArrayValue.
+	 *          not of type ValueType::ArrayValue.
 	 */
 	Array* referArray();
 	/**
@@ -771,7 +771,7 @@ public:
 	 * getObject() is the alternative function for only reading the object.
 	 * 
 	 * @return  The object. Will return an empty object if the Value is 
-	 * 			not of type ValueType::ObjectValue.
+	 *          not of type ValueType::ObjectValue.
 	 */
 	Object* referObject();
 
@@ -806,14 +806,14 @@ public:
 	 * Serializes the values into a string in JSON format. 
 	 * Allows for a callback for the different stages in the serialization.
 	 * 
-	 * @param[out] s    - The resulting string, can be written to a file or parsed.
-	 * @param[in]  cb   - Callback for the internal serialization. Can be used to format
-	 * 					  the output string, as the string is not formatted internally.
-	 * @param[in]  data - User defined data passed to the SerializeCallback
+	 * @param[in,out] s       - The resulting string, can be written to a file or parsed again.
+	 * @param[in]    cb       - Callback for the internal serialization. Can be used to format
+	 *                          the output string, as the string is not formatted internally.
+	 * @param[in]    userData - User defined data passed to the SerializeCallback
 	 * 
 	 * @return  0 on success, <0 on error.
 	 */
-	int serialize(String& param1, SerializeCallback cb, void* data);
+	int serialize(String& str, SerializeCallback cb, void* userData);
 
 	/**
 	 * Returns constant reference of the Value of key.
@@ -935,7 +935,7 @@ public:
 		iterator& operator=(const iterator& iter);
 
 	private:
-		void* impl_data; //!< Pointer to internal implementation data.
+		void* implData; //!< Pointer to internal implementation data.
 	};
 
 	Object();
@@ -1005,7 +1005,7 @@ public:
 	Object& operator=(const Object& obj);
 
 private:
-	void* impl_data; //!< Pointer to internal implementation data.
+	void* implData; //!< Pointer to internal implementation data.
 };
 
 /**
@@ -1023,13 +1023,13 @@ public:
 	 *      char *buf; // Character buffer storing the JSON data.
 	 *  };
 	 * 
-	 *  int Parse_Callback(char& ch, void* data)
+	 *  int Parse_Callback(char& ch, void* userData)
 	 *  {
 	 *      Data *dat = (Data *)data;
 	 *      int uVar1;
 	 *  
 	 *      ch = *dat->buf;
-	 *      ret = sce::Json::SCE_JSON_ERROR_PARSE_INVALID_CHAR;
+	 *      ret = SCE_JSON_ERROR_PARSE_INVALID_CHAR;
 	 *      if (ch != '\0')
 	 *      {
 	 *          dat->buf = dat->buf + 1;
@@ -1039,10 +1039,10 @@ public:
 	 *  }
 	 *  @endcode
 	 * 
-	 * @param[out] char& - The character to be sent back to the parser.
-	 * @param[in]  void* - User defined data for the function.
+	 * @param[out] ch       - The character to be sent back to the parser.
+	 * @param[in]  userData - User defined data for the function.
 	 */
-	typedef int (*ParseCallback)(char&, void*);
+	typedef int (*ParseCallback)(char& ch, void* userData);
 
 	/**
 	 * Parses user defined data using characters from a 
@@ -1050,10 +1050,10 @@ public:
 	 * 
 	 * @param[out] val  - Reference to the value the data is written to.
 	 * @param[in]  cb   - The callback function which gives the 
-	 * 					  current character.
+	 *                    current character.
 	 * @param[in]  data - Data to pass to the callback function
 	 */
-	static int parse(Value& val, ParseCallback cb, void* data);
+	static int parse(Value& val, ParseCallback cb, void* userData);
  
 	/**
 	 * Parses a string buffer.

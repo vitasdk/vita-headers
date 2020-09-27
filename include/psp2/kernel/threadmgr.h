@@ -819,7 +819,7 @@ int sceKernelSignalCondTo(SceUID condId, SceUID threadId);
 /* Callbacks. */
 
 /** Callback function prototype */
-typedef int (*SceKernelCallbackFunction)(int notifyId, int notifyCount, int notifyArg, void *common);
+typedef int (*SceKernelCallbackFunction)(int notifyId, int notifyCount, int notifyArg, void *userData);
 
 /** Structure to hold the status information for a callback */
 typedef struct SceKernelCallbackInfo {
@@ -850,14 +850,14 @@ typedef struct SceKernelCallbackInfo {
  * cbid = sceKernelCreateCallback("Exit Callback", 0, exit_cb, NULL);
  * @endcode
  *
- * @param name - A textual name for the callback
- * @param attr - ?
- * @param func - A pointer to a function that will be called as the callback
- * @param arg  - Argument for the callback ?
+ * @param name      - A textual name for the callback
+ * @param attr      - ?
+ * @param func      - A pointer to a function that will be called as the callback
+ * @param userData  - User defined data to be passed to the callback.
  *
  * @return >= 0 A callback id which can be used in subsequent functions, < 0 an error.
  */
-int sceKernelCreateCallback(const char *name, unsigned int attr, SceKernelCallbackFunction func, void *arg);
+int sceKernelCreateCallback(const char *name, unsigned int attr, SceKernelCallbackFunction func, void *userData);
 
 /**
   * Gets the status of a specified callback.

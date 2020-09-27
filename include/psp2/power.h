@@ -51,7 +51,7 @@ typedef enum ScePowerCallbackType {
 /* Callbacks */
 
 /** Callback function prototype */
-typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo);
+typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo, void* userData);
 
 /* Prototypes */
 

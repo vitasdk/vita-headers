@@ -69,8 +69,8 @@ typedef enum SceIoDevType {
  *
  * @param file - Pointer to a string holding the name of the file to open.
  * @param flags - Libc styled flags that are or'ed together (One or more ::SceIoMode).
- * @param mode - One or more::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions.
- * @return > 0 is valid file handle, < 0 on error.
+ * @param mode - One or more ::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions.
+ * @return > 0 is a valid file handle, < 0 on error.
  */
 SceUID sceIoOpen(const char *file, int flags, SceMode mode);
 
@@ -79,7 +79,7 @@ SceUID sceIoOpen(const char *file, int flags, SceMode mode);
  *
  * @param file - Pointer to a string holding the name of the file to open.
  * @param flags - Libc styled flags that are or'ed together (One or more ::SceIoMode).
- * @param mode - One or more::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions.
+ * @param mode - One or more ::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions.
  * @return > 0 is a valid file handle, < 0 on error.
  */
 SceUID sceIoOpenAsync(const char *file, int flags, SceMode mode);
