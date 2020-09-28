@@ -109,15 +109,15 @@ Functions</h2></td></tr>
 <tr class="separator:gab4a14bf401a1b2ed88f3009171dd27a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6aa0ab09eca88e7f217c480ecc8461b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gac6aa0ab09eca88e7f217c480ecc8461b">sce::Json::MemAllocator::~MemAllocator</a> ()</td></tr>
 <tr class="separator:gac6aa0ab09eca88e7f217c480ecc8461b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0246b84040ff8936c75ea0f23490970"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gae0246b84040ff8936c75ea0f23490970">sce::Json::MemAllocator::allocateMemory</a> (<a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *data)=0</td></tr>
-<tr class="memdesc:gae0246b84040ff8936c75ea0f23490970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory allocation.  <a href="group__SceLibJsonUser.html#gae0246b84040ff8936c75ea0f23490970">More...</a><br /></td></tr>
-<tr class="separator:gae0246b84040ff8936c75ea0f23490970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09c6a148079ee85e48b5fdbade803a55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga09c6a148079ee85e48b5fdbade803a55">sce::Json::MemAllocator::freeMemory</a> (void *ptr, void *data)=0</td></tr>
-<tr class="memdesc:ga09c6a148079ee85e48b5fdbade803a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory deallocation.  <a href="group__SceLibJsonUser.html#ga09c6a148079ee85e48b5fdbade803a55">More...</a><br /></td></tr>
-<tr class="separator:ga09c6a148079ee85e48b5fdbade803a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga989228183d09deb0c871eed42b9a03aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga989228183d09deb0c871eed42b9a03aa">sce::Json::MemAllocator::notifyError</a> (int errorCode, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *data)</td></tr>
-<tr class="memdesc:ga989228183d09deb0c871eed42b9a03aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class definition prints an error to sceClibPrintf.  <a href="group__SceLibJsonUser.html#ga989228183d09deb0c871eed42b9a03aa">More...</a><br /></td></tr>
-<tr class="separator:ga989228183d09deb0c871eed42b9a03aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4786585fd9f95869d58f19d96666826"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaa4786585fd9f95869d58f19d96666826">sce::Json::MemAllocator::allocateMemory</a> (<a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *userData)=0</td></tr>
+<tr class="memdesc:gaa4786585fd9f95869d58f19d96666826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory allocation.  <a href="group__SceLibJsonUser.html#gaa4786585fd9f95869d58f19d96666826">More...</a><br /></td></tr>
+<tr class="separator:gaa4786585fd9f95869d58f19d96666826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa77a5d2a0be89a1d207052033e875c81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaa77a5d2a0be89a1d207052033e875c81">sce::Json::MemAllocator::freeMemory</a> (void *ptr, void *userData)=0</td></tr>
+<tr class="memdesc:gaa77a5d2a0be89a1d207052033e875c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory deallocation.  <a href="group__SceLibJsonUser.html#gaa77a5d2a0be89a1d207052033e875c81">More...</a><br /></td></tr>
+<tr class="separator:gaa77a5d2a0be89a1d207052033e875c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf2e2d61b5d44707fa8e4aa30b3c55d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gacf2e2d61b5d44707fa8e4aa30b3c55d0">sce::Json::MemAllocator::notifyError</a> (int errorCode, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *userData)</td></tr>
+<tr class="memdesc:gacf2e2d61b5d44707fa8e4aa30b3c55d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class definition prints an error to sceClibPrintf.  <a href="group__SceLibJsonUser.html#gacf2e2d61b5d44707fa8e4aa30b3c55d0">More...</a><br /></td></tr>
+<tr class="separator:gacf2e2d61b5d44707fa8e4aa30b3c55d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf3535cc23068dadb9c9e23f325e7b22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gadf3535cc23068dadb9c9e23f325e7b22">sce::Json::Initializer::Initializer</a> ()</td></tr>
 <tr class="separator:gadf3535cc23068dadb9c9e23f325e7b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b10546025d939dc52d5ec4530d26cbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga2b10546025d939dc52d5ec4530d26cbf">sce::Json::Initializer::~Initializer</a> ()</td></tr>
@@ -344,9 +344,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf7aa096bb7e920df528129a321ea5c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39">sce::Json::Value::set</a> (const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;<a class="el" href="group__SceLibJsonUser.html#ga5bac75811d5ec897c5568ddeb97561a3">value</a>)</td></tr>
 <tr class="memdesc:gaf7aa096bb7e920df528129a321ea5c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value.  <a href="group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39">More...</a><br /></td></tr>
 <tr class="separator:gaf7aa096bb7e920df528129a321ea5c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8db2742ee16682b2303ff6903ef1f37e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga8db2742ee16682b2303ff6903ef1f37e">sce::Json::Value::setNullAccessCallback</a> (<a class="el" href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">NullAccessCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *data)</td></tr>
-<tr class="memdesc:ga8db2742ee16682b2303ff6903ef1f37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a>'s NullAccessCallback.  <a href="group__SceLibJsonUser.html#ga8db2742ee16682b2303ff6903ef1f37e">More...</a><br /></td></tr>
-<tr class="separator:ga8db2742ee16682b2303ff6903ef1f37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83ee7c856292a6e496004dbd4fcae42f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga83ee7c856292a6e496004dbd4fcae42f">sce::Json::Value::setNullAccessCallback</a> (<a class="el" href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">NullAccessCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *userData)</td></tr>
+<tr class="memdesc:ga83ee7c856292a6e496004dbd4fcae42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a>'s NullAccessCallback.  <a href="group__SceLibJsonUser.html#ga83ee7c856292a6e496004dbd4fcae42f">More...</a><br /></td></tr>
+<tr class="separator:ga83ee7c856292a6e496004dbd4fcae42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf81ce58f84503544b0d5a481e5de99dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaf81ce58f84503544b0d5a481e5de99dc">sce::Json::Value::getRoot</a> () const</td></tr>
 <tr class="memdesc:gaf81ce58f84503544b0d5a481e5de99dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the root <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a>.  <a href="group__SceLibJsonUser.html#gaf81ce58f84503544b0d5a481e5de99dc">More...</a><br /></td></tr>
 <tr class="separator:gaf81ce58f84503544b0d5a481e5de99dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,9 +407,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gadfc26a24027e0ab45bca11e2d4363343"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gadfc26a24027e0ab45bca11e2d4363343">sce::Json::Value::serialize</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;s)</td></tr>
 <tr class="memdesc:gadfc26a24027e0ab45bca11e2d4363343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the data into a string in JSON format.  <a href="group__SceLibJsonUser.html#gadfc26a24027e0ab45bca11e2d4363343">More...</a><br /></td></tr>
 <tr class="separator:gadfc26a24027e0ab45bca11e2d4363343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedb4fa392a982ee0f2dce9cbc383188d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaedb4fa392a982ee0f2dce9cbc383188d">sce::Json::Value::serialize</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;param1, <a class="el" href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">SerializeCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *data)</td></tr>
-<tr class="memdesc:gaedb4fa392a982ee0f2dce9cbc383188d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the values into a string in JSON format.  <a href="group__SceLibJsonUser.html#gaedb4fa392a982ee0f2dce9cbc383188d">More...</a><br /></td></tr>
-<tr class="separator:gaedb4fa392a982ee0f2dce9cbc383188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f51310f930290e795d4b82ed15e6fae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga9f51310f930290e795d4b82ed15e6fae">sce::Json::Value::serialize</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;str, <a class="el" href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">SerializeCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *userData)</td></tr>
+<tr class="memdesc:ga9f51310f930290e795d4b82ed15e6fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the values into a string in JSON format.  <a href="group__SceLibJsonUser.html#ga9f51310f930290e795d4b82ed15e6fae">More...</a><br /></td></tr>
+<tr class="separator:ga9f51310f930290e795d4b82ed15e6fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab370e86301c00b38b4cea2ad3c2c81dc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gab370e86301c00b38b4cea2ad3c2c81dc">sce::Json::Value::operator[]</a> (const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;key) const</td></tr>
 <tr class="memdesc:gab370e86301c00b38b4cea2ad3c2c81dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns constant reference of the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> of key.  <a href="group__SceLibJsonUser.html#gab370e86301c00b38b4cea2ad3c2c81dc">More...</a><br /></td></tr>
 <tr class="separator:gab370e86301c00b38b4cea2ad3c2c81dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,9 +496,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa7f25eda460acf31349035d8144d8a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Object">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaa7f25eda460acf31349035d8144d8a83">sce::Json::Object::operator=</a> (const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Object">Object</a> &amp;obj)</td></tr>
 <tr class="memdesc:gaa7f25eda460acf31349035d8144d8a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment Operator.  <a href="group__SceLibJsonUser.html#gaa7f25eda460acf31349035d8144d8a83">More...</a><br /></td></tr>
 <tr class="separator:gaa7f25eda460acf31349035d8144d8a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d972aa12417c11659e2f579062e2d16"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga5d972aa12417c11659e2f579062e2d16">sce::Json::Parser::parse</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;val, <a class="el" href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">ParseCallback</a> cb, void *data)</td></tr>
-<tr class="memdesc:ga5d972aa12417c11659e2f579062e2d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses user defined data using characters from a user defined callback function.  <a href="group__SceLibJsonUser.html#ga5d972aa12417c11659e2f579062e2d16">More...</a><br /></td></tr>
-<tr class="separator:ga5d972aa12417c11659e2f579062e2d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae113a414f870df1ab584155f9ad23e2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaae113a414f870df1ab584155f9ad23e2">sce::Json::Parser::parse</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;val, <a class="el" href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">ParseCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gaae113a414f870df1ab584155f9ad23e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses user defined data using characters from a user defined callback function.  <a href="group__SceLibJsonUser.html#gaae113a414f870df1ab584155f9ad23e2">More...</a><br /></td></tr>
+<tr class="separator:gaae113a414f870df1ab584155f9ad23e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f6cd447c72a825ce0c0cd98896f6179"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga0f6cd447c72a825ce0c0cd98896f6179">sce::Json::Parser::parse</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;val, const char *buf, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
 <tr class="memdesc:ga0f6cd447c72a825ce0c0cd98896f6179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string buffer.  <a href="group__SceLibJsonUser.html#ga0f6cd447c72a825ce0c0cd98896f6179">More...</a><br /></td></tr>
 <tr class="separator:ga0f6cd447c72a825ce0c0cd98896f6179"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,15 +508,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga3188288279e30fa04aebf89052cd403f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">sce::Json::Value::SerializeCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;, void *)</td></tr>
-<tr class="memdesc:ga3188288279e30fa04aebf89052cd403f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for serialization.  <a href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">More...</a><br /></td></tr>
-<tr class="separator:ga3188288279e30fa04aebf89052cd403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e40f2b900412d2ef8bc27d30030a6d5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> const  &amp;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">sce::Json::Value::NullAccessCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b">ValueType</a>, const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *, void *)</td></tr>
-<tr class="memdesc:ga7e40f2b900412d2ef8bc27d30030a6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for NullValue access.  <a href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">More...</a><br /></td></tr>
-<tr class="separator:ga7e40f2b900412d2ef8bc27d30030a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4a42fa4ca65ce97eee70339ee00893b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">sce::Json::Parser::ParseCallback</a>) (char &amp;, void *)</td></tr>
-<tr class="memdesc:gab4a42fa4ca65ce97eee70339ee00893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for outputing a character to parse.  <a href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">More...</a><br /></td></tr>
-<tr class="separator:gab4a42fa4ca65ce97eee70339ee00893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c33eab4440d4d88a53a7ccf1bd9fb53"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">sce::Json::Value::SerializeCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;str, void *userData)</td></tr>
+<tr class="memdesc:ga2c33eab4440d4d88a53a7ccf1bd9fb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for serialization.  <a href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">More...</a><br /></td></tr>
+<tr class="separator:ga2c33eab4440d4d88a53a7ccf1bd9fb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18c425c1bc70544294b78884bec756d6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> const  &amp;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">sce::Json::Value::NullAccessCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b">ValueType</a> <a class="el" href="group__SceLibJsonUser.html#ga10ef71ac650b29bbb0500c5cde4630e2">type</a>, const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *<a class="el" href="group__SceLibJsonUser.html#ga5ec56a924f6b8b6224dea5b618089f6b">parent</a>, void *userData)</td></tr>
+<tr class="memdesc:ga18c425c1bc70544294b78884bec756d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for NullValue access.  <a href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">More...</a><br /></td></tr>
+<tr class="separator:ga18c425c1bc70544294b78884bec756d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c7b018872d5f4a16283500890c134b9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">sce::Json::Parser::ParseCallback</a>) (char &amp;ch, void *userData)</td></tr>
+<tr class="memdesc:ga4c7b018872d5f4a16283500890c134b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for outputing a character to parse.  <a href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">More...</a><br /></td></tr>
+<tr class="separator:ga4c7b018872d5f4a16283500890c134b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="classsce_1_1Json_1_1MemAllocator" id="classsce_1_1Json_1_1MemAllocator"></a>
@@ -538,15 +538,15 @@ Typedefs</h2></td></tr>
 <tr class="separator:gab4a14bf401a1b2ed88f3009171dd27a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6aa0ab09eca88e7f217c480ecc8461b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gac6aa0ab09eca88e7f217c480ecc8461b">~MemAllocator</a> ()</td></tr>
 <tr class="separator:gac6aa0ab09eca88e7f217c480ecc8461b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0246b84040ff8936c75ea0f23490970"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gae0246b84040ff8936c75ea0f23490970">allocateMemory</a> (<a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *data)=0</td></tr>
-<tr class="memdesc:gae0246b84040ff8936c75ea0f23490970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory allocation.  <a href="group__SceLibJsonUser.html#gae0246b84040ff8936c75ea0f23490970">More...</a><br /></td></tr>
-<tr class="separator:gae0246b84040ff8936c75ea0f23490970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09c6a148079ee85e48b5fdbade803a55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga09c6a148079ee85e48b5fdbade803a55">freeMemory</a> (void *ptr, void *data)=0</td></tr>
-<tr class="memdesc:ga09c6a148079ee85e48b5fdbade803a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory deallocation.  <a href="group__SceLibJsonUser.html#ga09c6a148079ee85e48b5fdbade803a55">More...</a><br /></td></tr>
-<tr class="separator:ga09c6a148079ee85e48b5fdbade803a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga989228183d09deb0c871eed42b9a03aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga989228183d09deb0c871eed42b9a03aa">notifyError</a> (int errorCode, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *data)</td></tr>
-<tr class="memdesc:ga989228183d09deb0c871eed42b9a03aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class definition prints an error to sceClibPrintf.  <a href="group__SceLibJsonUser.html#ga989228183d09deb0c871eed42b9a03aa">More...</a><br /></td></tr>
-<tr class="separator:ga989228183d09deb0c871eed42b9a03aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4786585fd9f95869d58f19d96666826"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaa4786585fd9f95869d58f19d96666826">allocateMemory</a> (<a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *userData)=0</td></tr>
+<tr class="memdesc:gaa4786585fd9f95869d58f19d96666826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory allocation.  <a href="group__SceLibJsonUser.html#gaa4786585fd9f95869d58f19d96666826">More...</a><br /></td></tr>
+<tr class="separator:gaa4786585fd9f95869d58f19d96666826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa77a5d2a0be89a1d207052033e875c81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaa77a5d2a0be89a1d207052033e875c81">freeMemory</a> (void *ptr, void *userData)=0</td></tr>
+<tr class="memdesc:gaa77a5d2a0be89a1d207052033e875c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Function for memory deallocation.  <a href="group__SceLibJsonUser.html#gaa77a5d2a0be89a1d207052033e875c81">More...</a><br /></td></tr>
+<tr class="separator:gaa77a5d2a0be89a1d207052033e875c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf2e2d61b5d44707fa8e4aa30b3c55d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gacf2e2d61b5d44707fa8e4aa30b3c55d0">notifyError</a> (int errorCode, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, void *userData)</td></tr>
+<tr class="memdesc:gacf2e2d61b5d44707fa8e4aa30b3c55d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class definition prints an error to sceClibPrintf.  <a href="group__SceLibJsonUser.html#gacf2e2d61b5d44707fa8e4aa30b3c55d0">More...</a><br /></td></tr>
+<tr class="separator:gacf2e2d61b5d44707fa8e4aa30b3c55d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -573,9 +573,9 @@ allocator</td>
 Pointer to a <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1MemAllocator" title="Base class for reimplementation of memory allocation.">MemAllocator</a> object for internal memory allocations. <p>Required field. </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gacbbe22a43c05818e6bfb01ac2bcd78b2"></a>void *</td>
+<a id="ga4f04c4924533983525c4b8111d8bf575"></a>void *</td>
 <td class="fieldname">
-data</td>
+userData</td>
 <td class="fielddoc">
 User defined data sent to overriden <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1MemAllocator" title="Base class for reimplementation of memory allocation.">MemAllocator</a> functions. </td></tr>
 <tr><td class="fieldtype">
@@ -659,8 +659,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memdesc:ga958fa6b024c25b699bdc581bd3231896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> being pointed to.  <a href="group__SceLibJsonUser.html#ga958fa6b024c25b699bdc581bd3231896">More...</a><br /></td></tr>
 <tr class="separator:ga958fa6b024c25b699bdc581bd3231896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
-<tr class="memitem:ga3570ff10a7a514dc1265c0f14f2acf72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga3570ff10a7a514dc1265c0f14f2acf72">ptr</a></td></tr>
-<tr class="separator:ga3570ff10a7a514dc1265c0f14f2acf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a75200d40729df14779271c9345eed8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga3a75200d40729df14779271c9345eed8">implData</a></td></tr>
+<tr class="memdesc:ga3a75200d40729df14779271c9345eed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga3a75200d40729df14779271c9345eed8">More...</a><br /></td></tr>
+<tr class="separator:ga3a75200d40729df14779271c9345eed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -719,9 +720,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memdesc:ga83f34ffe50fe1b3ea9f9978cf067ee6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment Operator.  <a href="group__SceLibJsonUser.html#ga83f34ffe50fe1b3ea9f9978cf067ee6c">More...</a><br /></td></tr>
 <tr class="separator:ga83f34ffe50fe1b3ea9f9978cf067ee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
-<tr class="memitem:ga62efe144401e9f3405a384ec99525bc9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga62efe144401e9f3405a384ec99525bc9">impl_data</a></td></tr>
-<tr class="memdesc:ga62efe144401e9f3405a384ec99525bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga62efe144401e9f3405a384ec99525bc9">More...</a><br /></td></tr>
-<tr class="separator:ga62efe144401e9f3405a384ec99525bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga225d1d43e92d86189912a21791b1adee"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga225d1d43e92d86189912a21791b1adee">implData</a></td></tr>
+<tr class="memdesc:ga225d1d43e92d86189912a21791b1adee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga225d1d43e92d86189912a21791b1adee">More...</a><br /></td></tr>
+<tr class="separator:ga225d1d43e92d86189912a21791b1adee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -830,9 +831,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memitem:ga8ab8cb53c0b51f0f688b1734afd9d03a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga8ab8cb53c0b51f0f688b1734afd9d03a">npos</a> = -1</td></tr>
 <tr class="separator:ga8ab8cb53c0b51f0f688b1734afd9d03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
-<tr class="memitem:ga35634a87567ec5ec439dd14b68296f5a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga35634a87567ec5ec439dd14b68296f5a">impl_data</a></td></tr>
-<tr class="memdesc:ga35634a87567ec5ec439dd14b68296f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga35634a87567ec5ec439dd14b68296f5a">More...</a><br /></td></tr>
-<tr class="separator:ga35634a87567ec5ec439dd14b68296f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18d1195fb4465e21d1387e74c5a71454"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga18d1195fb4465e21d1387e74c5a71454">implData</a></td></tr>
+<tr class="memdesc:ga18d1195fb4465e21d1387e74c5a71454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga18d1195fb4465e21d1387e74c5a71454">More...</a><br /></td></tr>
+<tr class="separator:ga18d1195fb4465e21d1387e74c5a71454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -851,12 +852,12 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <div class="textblock"><p>Class for value of JSON property. </p>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
-<tr class="memitem:ga3188288279e30fa04aebf89052cd403f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">SerializeCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;, void *)</td></tr>
-<tr class="memdesc:ga3188288279e30fa04aebf89052cd403f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for serialization.  <a href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">More...</a><br /></td></tr>
-<tr class="separator:ga3188288279e30fa04aebf89052cd403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e40f2b900412d2ef8bc27d30030a6d5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> const  &amp;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">NullAccessCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b">ValueType</a>, const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *, void *)</td></tr>
-<tr class="memdesc:ga7e40f2b900412d2ef8bc27d30030a6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for NullValue access.  <a href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">More...</a><br /></td></tr>
-<tr class="separator:ga7e40f2b900412d2ef8bc27d30030a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c33eab4440d4d88a53a7ccf1bd9fb53"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">SerializeCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;str, void *userData)</td></tr>
+<tr class="memdesc:ga2c33eab4440d4d88a53a7ccf1bd9fb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for serialization.  <a href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">More...</a><br /></td></tr>
+<tr class="separator:ga2c33eab4440d4d88a53a7ccf1bd9fb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18c425c1bc70544294b78884bec756d6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> const  &amp;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">NullAccessCallback</a>) (<a class="el" href="group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b">ValueType</a> <a class="el" href="group__SceLibJsonUser.html#ga10ef71ac650b29bbb0500c5cde4630e2">type</a>, const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *<a class="el" href="group__SceLibJsonUser.html#ga5ec56a924f6b8b6224dea5b618089f6b">parent</a>, void *userData)</td></tr>
+<tr class="memdesc:ga18c425c1bc70544294b78884bec756d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for NullValue access.  <a href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">More...</a><br /></td></tr>
+<tr class="separator:ga18c425c1bc70544294b78884bec756d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
 <tr class="memitem:gabe4272382d8f88b1ea37344fc4968914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gabe4272382d8f88b1ea37344fc4968914">Value</a> ()</td></tr>
 <tr class="separator:gabe4272382d8f88b1ea37344fc4968914"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -922,9 +923,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memitem:gaf7aa096bb7e920df528129a321ea5c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39">set</a> (const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;<a class="el" href="group__SceLibJsonUser.html#ga5bac75811d5ec897c5568ddeb97561a3">value</a>)</td></tr>
 <tr class="memdesc:gaf7aa096bb7e920df528129a321ea5c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value.  <a href="group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39">More...</a><br /></td></tr>
 <tr class="separator:gaf7aa096bb7e920df528129a321ea5c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8db2742ee16682b2303ff6903ef1f37e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga8db2742ee16682b2303ff6903ef1f37e">setNullAccessCallback</a> (<a class="el" href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">NullAccessCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *data)</td></tr>
-<tr class="memdesc:ga8db2742ee16682b2303ff6903ef1f37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a>'s NullAccessCallback.  <a href="group__SceLibJsonUser.html#ga8db2742ee16682b2303ff6903ef1f37e">More...</a><br /></td></tr>
-<tr class="separator:ga8db2742ee16682b2303ff6903ef1f37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83ee7c856292a6e496004dbd4fcae42f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga83ee7c856292a6e496004dbd4fcae42f">setNullAccessCallback</a> (<a class="el" href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">NullAccessCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *userData)</td></tr>
+<tr class="memdesc:ga83ee7c856292a6e496004dbd4fcae42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a>'s NullAccessCallback.  <a href="group__SceLibJsonUser.html#ga83ee7c856292a6e496004dbd4fcae42f">More...</a><br /></td></tr>
+<tr class="separator:ga83ee7c856292a6e496004dbd4fcae42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf81ce58f84503544b0d5a481e5de99dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaf81ce58f84503544b0d5a481e5de99dc">getRoot</a> () const</td></tr>
 <tr class="memdesc:gaf81ce58f84503544b0d5a481e5de99dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the root <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a>.  <a href="group__SceLibJsonUser.html#gaf81ce58f84503544b0d5a481e5de99dc">More...</a><br /></td></tr>
 <tr class="separator:gaf81ce58f84503544b0d5a481e5de99dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -985,9 +986,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memitem:gadfc26a24027e0ab45bca11e2d4363343"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gadfc26a24027e0ab45bca11e2d4363343">serialize</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;s)</td></tr>
 <tr class="memdesc:gadfc26a24027e0ab45bca11e2d4363343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the data into a string in JSON format.  <a href="group__SceLibJsonUser.html#gadfc26a24027e0ab45bca11e2d4363343">More...</a><br /></td></tr>
 <tr class="separator:gadfc26a24027e0ab45bca11e2d4363343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedb4fa392a982ee0f2dce9cbc383188d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaedb4fa392a982ee0f2dce9cbc383188d">serialize</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;param1, <a class="el" href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">SerializeCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *data)</td></tr>
-<tr class="memdesc:gaedb4fa392a982ee0f2dce9cbc383188d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the values into a string in JSON format.  <a href="group__SceLibJsonUser.html#gaedb4fa392a982ee0f2dce9cbc383188d">More...</a><br /></td></tr>
-<tr class="separator:gaedb4fa392a982ee0f2dce9cbc383188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f51310f930290e795d4b82ed15e6fae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga9f51310f930290e795d4b82ed15e6fae">serialize</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;str, <a class="el" href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">SerializeCallback</a> <a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a>, void *userData)</td></tr>
+<tr class="memdesc:ga9f51310f930290e795d4b82ed15e6fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the values into a string in JSON format.  <a href="group__SceLibJsonUser.html#ga9f51310f930290e795d4b82ed15e6fae">More...</a><br /></td></tr>
+<tr class="separator:ga9f51310f930290e795d4b82ed15e6fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab370e86301c00b38b4cea2ad3c2c81dc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gab370e86301c00b38b4cea2ad3c2c81dc">operator[]</a> (const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;key) const</td></tr>
 <tr class="memdesc:gab370e86301c00b38b4cea2ad3c2c81dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns constant reference of the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> of key.  <a href="group__SceLibJsonUser.html#gab370e86301c00b38b4cea2ad3c2c81dc">More...</a><br /></td></tr>
 <tr class="separator:gab370e86301c00b38b4cea2ad3c2c81dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1006,7 +1007,7 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memitem:ga5ec56a924f6b8b6224dea5b618089f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga5ec56a924f6b8b6224dea5b618089f6b">parent</a></td></tr>
 <tr class="memdesc:ga5ec56a924f6b8b6224dea5b618089f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the value's parent.  <a href="group__SceLibJsonUser.html#ga5ec56a924f6b8b6224dea5b618089f6b">More...</a><br /></td></tr>
 <tr class="separator:ga5ec56a924f6b8b6224dea5b618089f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga911fb3a3c2d5836371122cb1b215b26f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">NullAccessCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a></td></tr>
+<tr class="memitem:ga911fb3a3c2d5836371122cb1b215b26f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">NullAccessCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">cb</a></td></tr>
 <tr class="memdesc:ga911fb3a3c2d5836371122cb1b215b26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value's NullAccessCallback.  <a href="group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f">More...</a><br /></td></tr>
 <tr class="separator:ga911fb3a3c2d5836371122cb1b215b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5bac75811d5ec897c5568ddeb97561a3"><td class="memItemLeft" >union {</td></tr>
@@ -1116,9 +1117,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memdesc:gaf47095c9f30301c8cd0d504fabe3a8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment Operator.  <a href="group__SceLibJsonUser.html#gaf47095c9f30301c8cd0d504fabe3a8e0">More...</a><br /></td></tr>
 <tr class="separator:gaf47095c9f30301c8cd0d504fabe3a8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
-<tr class="memitem:gabe442051c7cfc3279b42c1ac65202e94"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gabe442051c7cfc3279b42c1ac65202e94">impl_data</a></td></tr>
-<tr class="memdesc:gabe442051c7cfc3279b42c1ac65202e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#gabe442051c7cfc3279b42c1ac65202e94">More...</a><br /></td></tr>
-<tr class="separator:gabe442051c7cfc3279b42c1ac65202e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a6f893649f489576af891b2059d2117"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga1a6f893649f489576af891b2059d2117">implData</a></td></tr>
+<tr class="memdesc:ga1a6f893649f489576af891b2059d2117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga1a6f893649f489576af891b2059d2117">More...</a><br /></td></tr>
+<tr class="separator:ga1a6f893649f489576af891b2059d2117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -1174,9 +1175,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <tr class="memdesc:gaa7f25eda460acf31349035d8144d8a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment Operator.  <a href="group__SceLibJsonUser.html#gaa7f25eda460acf31349035d8144d8a83">More...</a><br /></td></tr>
 <tr class="separator:gaa7f25eda460acf31349035d8144d8a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
-<tr class="memitem:ga617b41febca84e82eb77442482740c36"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga617b41febca84e82eb77442482740c36">impl_data</a></td></tr>
-<tr class="memdesc:ga617b41febca84e82eb77442482740c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga617b41febca84e82eb77442482740c36">More...</a><br /></td></tr>
-<tr class="separator:ga617b41febca84e82eb77442482740c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f3c01041f56134be914cf04b350568b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga9f3c01041f56134be914cf04b350568b">implData</a></td></tr>
+<tr class="memdesc:ga9f3c01041f56134be914cf04b350568b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to internal implementation data.  <a href="group__SceLibJsonUser.html#ga9f3c01041f56134be914cf04b350568b">More...</a><br /></td></tr>
+<tr class="separator:ga9f3c01041f56134be914cf04b350568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
 </div>
@@ -1195,13 +1196,13 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <div class="textblock"><p>Static Class for parsing. </p>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
-<tr class="memitem:gab4a42fa4ca65ce97eee70339ee00893b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">ParseCallback</a>) (char &amp;, void *)</td></tr>
-<tr class="memdesc:gab4a42fa4ca65ce97eee70339ee00893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for outputing a character to parse.  <a href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">More...</a><br /></td></tr>
-<tr class="separator:gab4a42fa4ca65ce97eee70339ee00893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c7b018872d5f4a16283500890c134b9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">ParseCallback</a>) (char &amp;ch, void *userData)</td></tr>
+<tr class="memdesc:ga4c7b018872d5f4a16283500890c134b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for outputing a character to parse.  <a href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">More...</a><br /></td></tr>
+<tr class="separator:ga4c7b018872d5f4a16283500890c134b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:ga5d972aa12417c11659e2f579062e2d16"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga5d972aa12417c11659e2f579062e2d16">parse</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;val, <a class="el" href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">ParseCallback</a> cb, void *data)</td></tr>
-<tr class="memdesc:ga5d972aa12417c11659e2f579062e2d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses user defined data using characters from a user defined callback function.  <a href="group__SceLibJsonUser.html#ga5d972aa12417c11659e2f579062e2d16">More...</a><br /></td></tr>
-<tr class="separator:ga5d972aa12417c11659e2f579062e2d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae113a414f870df1ab584155f9ad23e2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#gaae113a414f870df1ab584155f9ad23e2">parse</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;val, <a class="el" href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">ParseCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gaae113a414f870df1ab584155f9ad23e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses user defined data using characters from a user defined callback function.  <a href="group__SceLibJsonUser.html#gaae113a414f870df1ab584155f9ad23e2">More...</a><br /></td></tr>
+<tr class="separator:gaae113a414f870df1ab584155f9ad23e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f6cd447c72a825ce0c0cd98896f6179"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibJsonUser.html#ga0f6cd447c72a825ce0c0cd98896f6179">parse</a> (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> &amp;val, const char *buf, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
 <tr class="memdesc:ga0f6cd447c72a825ce0c0cd98896f6179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string buffer.  <a href="group__SceLibJsonUser.html#ga0f6cd447c72a825ce0c0cd98896f6179">More...</a><br /></td></tr>
 <tr class="separator:ga0f6cd447c72a825ce0c0cd98896f6179"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1213,14 +1214,14 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga3188288279e30fa04aebf89052cd403f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3188288279e30fa04aebf89052cd403f">&#9670;&nbsp;</a></span>SerializeCallback</h2>
+<a id="ga2c33eab4440d4d88a53a7ccf1bd9fb53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c33eab4440d4d88a53a7ccf1bd9fb53">&#9670;&nbsp;</a></span>SerializeCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* sce::Json::Value::SerializeCallback) (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;, void *)</td>
+          <td class="memname">typedef int(* sce::Json::Value::SerializeCallback) (<a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;str, void *userData)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1229,22 +1230,22 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <p>It is called at certain points in the serialization process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">String&amp;</td><td>- The current state of the parser output. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">void*</td><td>- User defined data for the function. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>- The current state of the parser output. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>- User defined data for the function. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ga7e40f2b900412d2ef8bc27d30030a6d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7e40f2b900412d2ef8bc27d30030a6d5">&#9670;&nbsp;</a></span>NullAccessCallback</h2>
+<a id="ga18c425c1bc70544294b78884bec756d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18c425c1bc70544294b78884bec756d6">&#9670;&nbsp;</a></span>NullAccessCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> const&amp;(* sce::Json::Value::NullAccessCallback) (<a class="el" href="group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b">ValueType</a>, const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *, void *)</td>
+          <td class="memname">typedef <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> const&amp;(* sce::Json::Value::NullAccessCallback) (<a class="el" href="group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b">ValueType</a> <a class="el" href="group__SceLibJsonUser.html#ga10ef71ac650b29bbb0500c5cde4630e2">type</a>, const <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value">Value</a> *<a class="el" href="group__SceLibJsonUser.html#ga5ec56a924f6b8b6224dea5b618089f6b">parent</a>, void *userData)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1253,9 +1254,9 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <p>It is called when the type of the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> is ValueType::NullValue and the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> is accessed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ValueType</td><td>- The type. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Value*</td><td>- A pointer to the parent of the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> accessed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">void*</td><td>- User defined data for the function.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- The type of value requested. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- A pointer to the parent of the <a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1Value" title="Class for value of JSON property.">Value</a> accessed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>- User defined data for the function.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1263,14 +1264,14 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 
 </div>
 </div>
-<a id="gab4a42fa4ca65ce97eee70339ee00893b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab4a42fa4ca65ce97eee70339ee00893b">&#9670;&nbsp;</a></span>ParseCallback</h2>
+<a id="ga4c7b018872d5f4a16283500890c134b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c7b018872d5f4a16283500890c134b9">&#9670;&nbsp;</a></span>ParseCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* sce::Json::Parser::ParseCallback) (char &amp;, void *)</td>
+          <td class="memname">typedef int(* sce::Json::Parser::ParseCallback) (char &amp;ch, void *userData)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1281,13 +1282,13 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 <div class="line">    <span class="keywordtype">char</span> *buf; <span class="comment">// Character buffer storing the JSON data.</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> Parse_Callback(<span class="keywordtype">char</span>&amp; ch, <span class="keywordtype">void</span>* data)</div>
+<div class="line"><span class="keywordtype">int</span> Parse_Callback(<span class="keywordtype">char</span>&amp; ch, <span class="keywordtype">void</span>* userData)</div>
 <div class="line">{</div>
 <div class="line">    Data *dat = (Data *)data;</div>
 <div class="line">    <span class="keywordtype">int</span> uVar1;</div>
 <div class="line"> </div>
 <div class="line">    ch = *dat-&gt;buf;</div>
-<div class="line">    ret = sce::Json::SCE_JSON_ERROR_PARSE_INVALID_CHAR;</div>
+<div class="line">    ret = SCE_JSON_ERROR_PARSE_INVALID_CHAR;</div>
 <div class="line">    <span class="keywordflow">if</span> (ch != <span class="charliteral">&#39;\0&#39;</span>)</div>
 <div class="line">    {</div>
 <div class="line">        dat-&gt;buf = dat-&gt;buf + 1;</div>
@@ -1298,8 +1299,8 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 </div><!-- fragment --></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">char&amp;</td><td>- The character to be sent back to the parser. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">void*</td><td>- User defined data for the function. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ch</td><td>- The character to be sent back to the parser. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>- User defined data for the function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1404,8 +1405,8 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 
 </div>
 </div>
-<a id="gae0246b84040ff8936c75ea0f23490970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae0246b84040ff8936c75ea0f23490970">&#9670;&nbsp;</a></span>allocateMemory()</h2>
+<a id="gaa4786585fd9f95869d58f19d96666826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4786585fd9f95869d58f19d96666826">&#9670;&nbsp;</a></span>allocateMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1423,7 +1424,7 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1450,8 +1451,8 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 
 </div>
 </div>
-<a id="ga09c6a148079ee85e48b5fdbade803a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga09c6a148079ee85e48b5fdbade803a55">&#9670;&nbsp;</a></span>freeMemory()</h2>
+<a id="gaa77a5d2a0be89a1d207052033e875c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa77a5d2a0be89a1d207052033e875c81">&#9670;&nbsp;</a></span>freeMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1469,7 +1470,7 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1495,8 +1496,8 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 
 </div>
 </div>
-<a id="ga989228183d09deb0c871eed42b9a03aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga989228183d09deb0c871eed42b9a03aa">&#9670;&nbsp;</a></span>notifyError()</h2>
+<a id="gacf2e2d61b5d44707fa8e4aa30b3c55d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf2e2d61b5d44707fa8e4aa30b3c55d0">&#9670;&nbsp;</a></span>notifyError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1520,7 +1521,7 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3463,8 +3464,8 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
 
 </div>
 </div>
-<a id="ga8db2742ee16682b2303ff6903ef1f37e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8db2742ee16682b2303ff6903ef1f37e">&#9670;&nbsp;</a></span>setNullAccessCallback()</h2>
+<a id="ga83ee7c856292a6e496004dbd4fcae42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83ee7c856292a6e496004dbd4fcae42f">&#9670;&nbsp;</a></span>setNullAccessCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3472,14 +3473,14 @@ Size of the buffer used for reading JSON file data in <a class="el" href="group_
         <tr>
           <td class="memname">int sce::Json::Value::setNullAccessCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#ga7e40f2b900412d2ef8bc27d30030a6d5">NullAccessCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6">NullAccessCallback</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3956,8 +3957,8 @@ getValue(String&amp;) is the alternative function for only reading the <a class=
 
 </div>
 </div>
-<a id="gaedb4fa392a982ee0f2dce9cbc383188d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaedb4fa392a982ee0f2dce9cbc383188d">&#9670;&nbsp;</a></span>serialize() <span class="overload">[2/2]</span></h2>
+<a id="ga9f51310f930290e795d4b82ed15e6fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f51310f930290e795d4b82ed15e6fae">&#9670;&nbsp;</a></span>serialize() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3966,19 +3967,19 @@ getValue(String&amp;) is the alternative function for only reading the <a class=
           <td class="memname">int sce::Json::Value::serialize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#classsce_1_1Json_1_1String">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>param1</em>, </td>
+          <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#ga3188288279e30fa04aebf89052cd403f">SerializeCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53">SerializeCallback</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3992,9 +3993,9 @@ getValue(String&amp;) is the alternative function for only reading the <a class=
 <p>Allows for a callback for the different stages in the serialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>- The resulting string, can be written to a file or parsed. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">s</td><td>- The resulting string, can be written to a file or parsed again. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>- Callback for the internal serialization. Can be used to format the output string, as the string is not formatted internally. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- User defined data passed to the SerializeCallback</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userData</td><td>- User defined data passed to the SerializeCallback</td></tr>
   </table>
   </dd>
 </dl>
@@ -4659,8 +4660,8 @@ getValue(String&amp;) is the alternative function for only reading the <a class=
 
 </div>
 </div>
-<a id="ga5d972aa12417c11659e2f579062e2d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d972aa12417c11659e2f579062e2d16">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/3]</span></h2>
+<a id="gaae113a414f870df1ab584155f9ad23e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae113a414f870df1ab584155f9ad23e2">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4677,14 +4678,14 @@ getValue(String&amp;) is the alternative function for only reading the <a class=
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#gab4a42fa4ca65ce97eee70339ee00893b">ParseCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9">ParseCallback</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

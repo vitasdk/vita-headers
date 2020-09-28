@@ -1,6 +1,6 @@
 var power_8h =
 [
-    [ "ScePowerCallback", "group__ScePowerUser.html#ga2905d0fcc48aa6fb36b6edf2bf78cb2c", null ],
+    [ "ScePowerCallback", "group__ScePowerUser.html#gadecfb9ec1a301e138ff57db53c0e5c7a", null ],
     [ "ScePowerErrorCode", "group__ScePowerUser.html#ga1c8753ba9797fab72c09a1f22e33dc80", [
       [ "SCE_POWER_ERROR_INVALID_VALUE", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e", null ],
       [ "SCE_POWER_ERROR_ALREADY_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c", null ],

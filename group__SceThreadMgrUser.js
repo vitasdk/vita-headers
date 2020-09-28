@@ -2,7 +2,7 @@ var group__SceThreadMgrUser =
 [
     [ "SceKernelSysClock", "group__SceThreadMgrUser.html#gaf51ef41af830ba6422cc9c5106fb68b8", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
-    [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga42edb965a03ae988ec2e88af677e8714", null ],
+    [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e", null ],
     [ "SceThreadStatus", "group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40", [
       [ "SCE_THREAD_RUNNING", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958", null ],
       [ "SCE_THREAD_READY", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c", null ],
@@ -154,7 +154,7 @@ var group__SceThreadMgrUser =
     [ "sceKernelSignalCond", "group__SceThreadMgrUser.html#ga401ae7da9aa0f8e021971be3bb98efb1", null ],
     [ "sceKernelSignalCondAll", "group__SceThreadMgrUser.html#gaf322509d51c79142d26a9ce379eacad4", null ],
     [ "sceKernelSignalCondTo", "group__SceThreadMgrUser.html#gae56028c8da4be211466b0a8ebba4d0a3", null ],
-    [ "sceKernelCreateCallback", "group__SceThreadMgrUser.html#ga5c134afe50ead67789cc86ea1172548f", null ],
+    [ "sceKernelCreateCallback", "group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b", null ],
     [ "sceKernelGetCallbackInfo", "group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f", null ],
     [ "sceKernelDeleteCallback", "group__SceThreadMgrUser.html#ga08fcc15c1357518a5b910066c9cb1666", null ],
     [ "sceKernelNotifyCallback", "group__SceThreadMgrUser.html#ga3786870930297f68fe805758c0970153", null ],
