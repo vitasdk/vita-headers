@@ -74,7 +74,8 @@ $(document).ready(function(){initNavTree('group__SceJpegEncArmUser.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">User<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceJpegEncArm.html">JPEG ARM Encoding Library</a></div></div>  </div>
 </div><!--header-->
@@ -93,39 +94,104 @@ $(document).ready(function(){initNavTree('group__SceJpegEncArmUser.html',''); in
 </p><div class="fragment"><div class="line"><a class="code" href="group__SceSysmoduleUser.html#ga91b1d39f3e92ab1ac6b8754cb2d7fd81">sceSysmoduleLoadModuleInternal</a>(<a class="code" href="group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88">SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</a>); </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
+<dl class="section note"><dt>Note</dt><dd>The maximum supported image width and height is 65520 for YCbCr420, and 65528 for YCbCr422.<br  />
+<br  />
+ The width and height of YCbCr422 images must be a multiple of 8. The width and height of YCbCr420 images must be a multiple of 16. </dd></dl>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab21f60b6088756cedde1db24f0652504"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gab21f60b6088756cedde1db24f0652504">sceJpegArmEncoderInit</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, int inWidth, int inHeight, <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> pixelformat, void *outBuffer, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> outSize)</td></tr>
-<tr class="memdesc:gab21f60b6088756cedde1db24f0652504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a jpeg encoder.  <a href="group__SceJpegEncArmUser.html#gab21f60b6088756cedde1db24f0652504">More...</a><br /></td></tr>
-<tr class="separator:gab21f60b6088756cedde1db24f0652504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b1ca86792cfa0282b2253411a828d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga6b1ca86792cfa0282b2253411a828d8d">sceJpegArmEncoderGetContextSize</a> (void)</td></tr>
+<tr class="memdesc:ga6b1ca86792cfa0282b2253411a828d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get required size of context memory.  <a href="group__SceJpegEncArmUser.html#ga6b1ca86792cfa0282b2253411a828d8d">More...</a><br /></td></tr>
+<tr class="separator:ga6b1ca86792cfa0282b2253411a828d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a62910e81bafff48bbb45aa4a5b4522"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga8a62910e81bafff48bbb45aa4a5b4522">sceJpegArmEncoderInit</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, <a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> inWidth, <a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> inHeight, <a class="el" href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136">SceJpegArmEncoderPixelFormat</a> pixelformat, void *outBuffer, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> outSize)</td></tr>
+<tr class="memdesc:ga8a62910e81bafff48bbb45aa4a5b4522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a JPEG encoder.  <a href="group__SceJpegEncArmUser.html#ga8a62910e81bafff48bbb45aa4a5b4522">More...</a><br /></td></tr>
+<tr class="separator:ga8a62910e81bafff48bbb45aa4a5b4522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba6057fa818900db26dad860a8743552"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gaba6057fa818900db26dad860a8743552">sceJpegArmEncoderEnd</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context)</td></tr>
-<tr class="memdesc:gaba6057fa818900db26dad860a8743552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a jpeg encoder.  <a href="group__SceJpegEncArmUser.html#gaba6057fa818900db26dad860a8743552">More...</a><br /></td></tr>
+<tr class="memdesc:gaba6057fa818900db26dad860a8743552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a JPEG encoder.  <a href="group__SceJpegEncArmUser.html#gaba6057fa818900db26dad860a8743552">More...</a><br /></td></tr>
 <tr class="separator:gaba6057fa818900db26dad860a8743552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4e4ed1b8be8a9fba678708fda7f1f1fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga4e4ed1b8be8a9fba678708fda7f1f1fc">sceJpegArmEncoderEncode</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, const void *inBuffer)</td></tr>
-<tr class="memdesc:ga4e4ed1b8be8a9fba678708fda7f1f1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a jpeg encode.  <a href="group__SceJpegEncArmUser.html#ga4e4ed1b8be8a9fba678708fda7f1f1fc">More...</a><br /></td></tr>
+<tr class="memdesc:ga4e4ed1b8be8a9fba678708fda7f1f1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a JPEG encode.  <a href="group__SceJpegEncArmUser.html#ga4e4ed1b8be8a9fba678708fda7f1f1fc">More...</a><br /></td></tr>
 <tr class="separator:ga4e4ed1b8be8a9fba678708fda7f1f1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49f566f1460c5899069492d8b4d8164f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga49f566f1460c5899069492d8b4d8164f">sceJpegArmEncoderSetCompressionRatio</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, int ratio)</td></tr>
-<tr class="memdesc:ga49f566f1460c5899069492d8b4d8164f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set encoder compression ratio.  <a href="group__SceJpegEncArmUser.html#ga49f566f1460c5899069492d8b4d8164f">More...</a><br /></td></tr>
-<tr class="separator:ga49f566f1460c5899069492d8b4d8164f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace9a40bcac3dfe798f2bf3f82252fc4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gace9a40bcac3dfe798f2bf3f82252fc4c">sceJpegArmEncoderSetCompressionRatio</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, <a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> ratio)</td></tr>
+<tr class="memdesc:gace9a40bcac3dfe798f2bf3f82252fc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the encoder compression ratio.  <a href="group__SceJpegEncArmUser.html#gace9a40bcac3dfe798f2bf3f82252fc4c">More...</a><br /></td></tr>
+<tr class="separator:gace9a40bcac3dfe798f2bf3f82252fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga885ac2396c219685482932fd2a144fed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga885ac2396c219685482932fd2a144fed">sceJpegArmEncoderSetOutputAddr</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, void *outBuffer, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> outSize)</td></tr>
 <tr class="memdesc:ga885ac2396c219685482932fd2a144fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set encoder output address.  <a href="group__SceJpegEncArmUser.html#ga885ac2396c219685482932fd2a144fed">More...</a><br /></td></tr>
 <tr class="separator:ga885ac2396c219685482932fd2a144fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93e6bd9f38e54329303f31b1b6fba474"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga93e6bd9f38e54329303f31b1b6fba474">sceJpegArmEncoderGetContextSize</a> (void)</td></tr>
-<tr class="memdesc:ga93e6bd9f38e54329303f31b1b6fba474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return required free size to allocate a jpeg encoder.  <a href="group__SceJpegEncArmUser.html#ga93e6bd9f38e54329303f31b1b6fba474">More...</a><br /></td></tr>
-<tr class="separator:ga93e6bd9f38e54329303f31b1b6fba474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6e3ec9ca2012dbb44cdb8226c872f0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gab6e3ec9ca2012dbb44cdb8226c872f0c">sceJpegArmEncoderSetValidRegion</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, int inWidth, int inHeight)</td></tr>
-<tr class="memdesc:gab6e3ec9ca2012dbb44cdb8226c872f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set encoder valid region (?)  <a href="group__SceJpegEncArmUser.html#gab6e3ec9ca2012dbb44cdb8226c872f0c">More...</a><br /></td></tr>
-<tr class="separator:gab6e3ec9ca2012dbb44cdb8226c872f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabcd2c2215622392d11c1568860e8cec6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gabcd2c2215622392d11c1568860e8cec6">sceJpegArmEncoderSetHeaderMode</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, int mode)</td></tr>
-<tr class="memdesc:gabcd2c2215622392d11c1568860e8cec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set header used for output file.  <a href="group__SceJpegEncArmUser.html#gabcd2c2215622392d11c1568860e8cec6">More...</a><br /></td></tr>
-<tr class="separator:gabcd2c2215622392d11c1568860e8cec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8babb7b392456cfac33b73f4b494b5ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga8babb7b392456cfac33b73f4b494b5ee">sceJpegArmEncoderSetValidRegion</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, <a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> regionWidth, <a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> regionHeight)</td></tr>
+<tr class="memdesc:ga8babb7b392456cfac33b73f4b494b5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the region of the image to be encoded as JPEG.  <a href="group__SceJpegEncArmUser.html#ga8babb7b392456cfac33b73f4b494b5ee">More...</a><br /></td></tr>
+<tr class="separator:ga8babb7b392456cfac33b73f4b494b5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad07978927400307c24ffca66e48a5ce7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gad07978927400307c24ffca66e48a5ce7">sceJpegArmEncoderSetHeaderMode</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, <a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f">SceJpegArmEncoderHeaderMode</a> mode)</td></tr>
+<tr class="memdesc:gad07978927400307c24ffca66e48a5ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set header used for output file.  <a href="group__SceJpegEncArmUser.html#gad07978927400307c24ffca66e48a5ce7">More...</a><br /></td></tr>
+<tr class="separator:gad07978927400307c24ffca66e48a5ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a></td></tr>
+<tr class="memdesc:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically allocated encoder context.  <a href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">More...</a><br /></td></tr>
 <tr class="separator:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gac986f9d07184ff7f489b3af5f6cd5d7c">SCE_JPEGENCARM_MIN_COMP_RATIO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest compression ratio, best quality.  <a href="group__SceJpegEncArmUser.html#gac986f9d07184ff7f489b3af5f6cd5d7c">More...</a><br /></td></tr>
+<tr class="separator:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f369001468f3a1e93ab71b591bf7d42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga7f369001468f3a1e93ab71b591bf7d42">SCE_JPEGENCARM_DEFAULT_COMP_RATIO</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:ga7f369001468f3a1e93ab71b591bf7d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default compression ratio.  <a href="group__SceJpegEncArmUser.html#ga7f369001468f3a1e93ab71b591bf7d42">More...</a><br /></td></tr>
+<tr class="separator:ga7f369001468f3a1e93ab71b591bf7d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a99e716ab385a0af4037e4932e497e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga2a99e716ab385a0af4037e4932e497e7">SCE_JPEGENCARM_MAX_COMP_RATIO</a>&#160;&#160;&#160;255</td></tr>
+<tr class="memdesc:ga2a99e716ab385a0af4037e4932e497e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest compression ratio, lowest quality.  <a href="group__SceJpegEncArmUser.html#ga2a99e716ab385a0af4037e4932e497e7">More...</a><br /></td></tr>
+<tr class="separator:ga2a99e716ab385a0af4037e4932e497e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gac986f9d07184ff7f489b3af5f6cd5d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac986f9d07184ff7f489b3af5f6cd5d7c">&#9670;&nbsp;</a></span>SCE_JPEGENCARM_MIN_COMP_RATIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_JPEGENCARM_MIN_COMP_RATIO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lowest compression ratio, best quality. </p>
+
+</div>
+</div>
+<a id="ga7f369001468f3a1e93ab71b591bf7d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f369001468f3a1e93ab71b591bf7d42">&#9670;&nbsp;</a></span>SCE_JPEGENCARM_DEFAULT_COMP_RATIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_JPEGENCARM_DEFAULT_COMP_RATIO&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default compression ratio. </p>
+
+</div>
+</div>
+<a id="ga2a99e716ab385a0af4037e4932e497e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a99e716ab385a0af4037e4932e497e7">&#9670;&nbsp;</a></span>SCE_JPEGENCARM_MAX_COMP_RATIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_JPEGENCARM_MAX_COMP_RATIO&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Highest compression ratio, lowest quality. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga8cbfde2bf4eb36e0bbb012757b5b9884"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8cbfde2bf4eb36e0bbb012757b5b9884">&#9670;&nbsp;</a></span>SceJpegArmEncoderContext</h2>
@@ -139,11 +205,110 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Dynamically allocated encoder context. </p>
+<p>See <a class="el" href="group__SceJpegEncArmUser.html#ga6b1ca86792cfa0282b2253411a828d8d">sceJpegArmEncoderGetContextSize()</a> for required allocation size. The address must be 4 byte aligned. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga102bf499e11484ce5881e62495f26e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga102bf499e11484ce5881e62495f26e66">&#9670;&nbsp;</a></span>SceJpegEncArmErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceJpegEncArmUser.html#ga102bf499e11484ce5881e62495f26e66">SceJpegEncArmErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Error Codes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga102bf499e11484ce5881e62495f26e66a20b25a4a35c9c5aac370cb1cb2029d99"></a>SCE_JPEGENCARM_ERROR_IMAGE_SIZE&#160;</td><td class="fielddoc"><p>The image dimensions given are not supported, or are larger than those set at initialization. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga102bf499e11484ce5881e62495f26e66a8e2f7c942686d217965f4d8bb2db6d0a"></a>SCE_JPEGENCARM_ERROR_INSUFFICIENT_BUFFER&#160;</td><td class="fielddoc"><p>The output buffer provided is not of sufficient size. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga102bf499e11484ce5881e62495f26e66a8c5f217d885b4ceec06d4b16a92ba68a"></a>SCE_JPEGENCARM_ERROR_INVALID_COMP_RATIO&#160;</td><td class="fielddoc"><p>The compression ratio given is not within the valid range. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga102bf499e11484ce5881e62495f26e66a97ac01f526fe5e535d52c079d3c7be34"></a>SCE_JPEGENCARM_ERROR_INVALID_PIXELFORMAT&#160;</td><td class="fielddoc"><p>The pixelformat given is not one of <a class="el" href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136" title="Pixel Formats.">SceJpegArmEncoderPixelFormat</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga102bf499e11484ce5881e62495f26e66a1d008375d5bf95a61a86e0ed1301193c"></a>SCE_JPEGENCARM_ERROR_INVALID_HEADER_MODE&#160;</td><td class="fielddoc"><p>The headerMode given is not one of <a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f" title="JPEG Header Modes.">SceJpegArmEncoderHeaderMode</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga102bf499e11484ce5881e62495f26e66a18068344c00db1ec8068b21a7300525a"></a>SCE_JPEGENCARM_ERROR_INVALID_POINTER&#160;</td><td class="fielddoc"><p>A null or badly aligned pointer was given. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga85c6405c81eb5f43dd34f1902c447136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85c6405c81eb5f43dd34f1902c447136">&#9670;&nbsp;</a></span>SceJpegArmEncoderPixelFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136">SceJpegArmEncoderPixelFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pixel Formats. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga85c6405c81eb5f43dd34f1902c447136ac9928e6f53a6dd93c5fa87d38a298bb8"></a>SCE_JPEGENCARM_PIXELFORMAT_YCBCR420&#160;</td><td class="fielddoc"><p>YCbCr420 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga85c6405c81eb5f43dd34f1902c447136aaabfcec20ea1ee0a0735fd9d7576dd9c"></a>SCE_JPEGENCARM_PIXELFORMAT_YCBCR422&#160;</td><td class="fielddoc"><p>YCbCr422 format. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga7a77d5108f13bb5d4dffbc42ef923c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a77d5108f13bb5d4dffbc42ef923c1f">&#9670;&nbsp;</a></span>SceJpegArmEncoderHeaderMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f">SceJpegArmEncoderHeaderMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JPEG Header Modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7a77d5108f13bb5d4dffbc42ef923c1fa702430fb88713bcb399ef81daff0fc01"></a>SCE_JPEGENCARM_HEADER_MODE_JPEG&#160;</td><td class="fielddoc"><p>JPEG header mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7a77d5108f13bb5d4dffbc42ef923c1faf9124eda0703a75b773e1f597b7e1e1c"></a>SCE_JPEGENCARM_HEADER_MODE_MJPEG&#160;</td><td class="fielddoc"><p>MJPEG header mode. </p>
+</td></tr>
+</table>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab21f60b6088756cedde1db24f0652504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab21f60b6088756cedde1db24f0652504">&#9670;&nbsp;</a></span>sceJpegArmEncoderInit()</h2>
+<a id="ga6b1ca86792cfa0282b2253411a828d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b1ca86792cfa0282b2253411a828d8d">&#9670;&nbsp;</a></span>sceJpegArmEncoderGetContextSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> sceJpegArmEncoderGetContextSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get required size of context memory. </p>
+<dl class="section return"><dt>Returns</dt><dd>Required size of allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="ga8a62910e81bafff48bbb45aa4a5b4522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a62910e81bafff48bbb45aa4a5b4522">&#9670;&nbsp;</a></span>sceJpegArmEncoderInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,19 +322,19 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td>
           <td class="paramname"><em>inWidth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td>
           <td class="paramname"><em>inHeight</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136">SceJpegArmEncoderPixelFormat</a>&#160;</td>
           <td class="paramname"><em>pixelformat</em>, </td>
         </tr>
         <tr>
@@ -192,15 +357,15 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a jpeg encoder. </p>
+<p>Initialize a JPEG encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to a big enough allocated memory block </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inWidth</td><td>- Input width in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inHeight</td><td>- Input height in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pixelformat</td><td>- A valid <a class="el" href="group__SceJpegEncKernel.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> set of values </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physically continuous memory block 256 bytes aligned </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output size in bytes</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An allocated encoder context of appropriate size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inWidth</td><td>- Input width in pixels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inHeight</td><td>- Input height in pixels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixelformat</td><td>- One of <a class="el" href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136" title="Pixel Formats.">SceJpegArmEncoderPixelFormat</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A sufficiently sized 8 byte aligned output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output buffer size in bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -224,10 +389,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Terminate a jpeg encoder. </p>
+<p>Terminate a JPEG encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884" title="Dynamically allocated encoder context.">SceJpegArmEncoderContext</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -261,20 +426,20 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Execute a jpeg encode. </p>
+<p>Execute a JPEG encode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>- A physically continuous memory block 256 bytes aligned</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884" title="Dynamically allocated encoder context.">SceJpegArmEncoderContext</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inBuffer</td><td>- An 8 byte aligned memory block of color data.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>encoded jpeg size on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Encoded JPEG size on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
-<a id="ga49f566f1460c5899069492d8b4d8164f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49f566f1460c5899069492d8b4d8164f">&#9670;&nbsp;</a></span>sceJpegArmEncoderSetCompressionRatio()</h2>
+<a id="gace9a40bcac3dfe798f2bf3f82252fc4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace9a40bcac3dfe798f2bf3f82252fc4c">&#9670;&nbsp;</a></span>sceJpegArmEncoderSetCompressionRatio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +453,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
           <td class="paramname"><em>ratio</em>&#160;</td>
         </tr>
         <tr>
@@ -299,14 +464,15 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set encoder compression ratio. </p>
+<p>Set the encoder compression ratio. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>- A value between 0 and 255 (higher = better compression, lower = better speed)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884" title="Dynamically allocated encoder context.">SceJpegArmEncoderContext</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>- A value between 1 and 255 (higher = better compression, lower = better speed).</td></tr>
   </table>
   </dd>
 </dl>
+<p>See <a class="el" href="group__SceJpegEncArmUser.html#ga7f369001468f3a1e93ab71b591bf7d42">SCE_JPEGENCARM_DEFAULT_COMP_RATIO</a> for the default compression ratio.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
@@ -346,9 +512,9 @@ Typedefs</h2></td></tr>
 <p>Set encoder output address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A physically continuous memory block 256 bytes aligned </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output buffer size in bytes</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884" title="Dynamically allocated encoder context.">SceJpegArmEncoderContext</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outBuffer</td><td>- A sufficiently sized 8 byte aligned output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outSize</td><td>- Output buffer size in bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -356,29 +522,8 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga93e6bd9f38e54329303f31b1b6fba474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga93e6bd9f38e54329303f31b1b6fba474">&#9670;&nbsp;</a></span>sceJpegArmEncoderGetContextSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceJpegArmEncoderGetContextSize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return required free size to allocate a jpeg encoder. </p>
-<dl class="section return"><dt>Returns</dt><dd>Required free memory size in bytes, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gab6e3ec9ca2012dbb44cdb8226c872f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6e3ec9ca2012dbb44cdb8226c872f0c">&#9670;&nbsp;</a></span>sceJpegArmEncoderSetValidRegion()</h2>
+<a id="ga8babb7b392456cfac33b73f4b494b5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8babb7b392456cfac33b73f4b494b5ee">&#9670;&nbsp;</a></span>sceJpegArmEncoderSetValidRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,14 +537,14 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>inWidth</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td>
+          <td class="paramname"><em>regionWidth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>inHeight</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td>
+          <td class="paramname"><em>regionHeight</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -409,12 +554,13 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set encoder valid region (?) </p>
+<p>Set the region of the image to be encoded as JPEG. </p>
+<p>The encoded region starts from (0,0), which is the top left of the image, and expands outward by regionWidth and regionHeight.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inWidth</td><td>- Input width in pixels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inHeight</td><td>- Input height in pixels</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884" title="Dynamically allocated encoder context.">SceJpegArmEncoderContext</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionWidth</td><td>- Width of the region in pixels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionHeight</td><td>- Height of the region in pixels.</td></tr>
   </table>
   </dd>
 </dl>
@@ -422,8 +568,8 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gabcd2c2215622392d11c1568860e8cec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabcd2c2215622392d11c1568860e8cec6">&#9670;&nbsp;</a></span>sceJpegArmEncoderSetHeaderMode()</h2>
+<a id="gad07978927400307c24ffca66e48a5ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad07978927400307c24ffca66e48a5ce7">&#9670;&nbsp;</a></span>sceJpegArmEncoderSetHeaderMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,7 +583,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f">SceJpegArmEncoderHeaderMode</a>&#160;</td>
           <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
@@ -451,8 +597,8 @@ Typedefs</h2></td></tr>
 <p>Set header used for output file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- A pointer to an already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- One of <a class="el" href="group__SceJpegEncKernel.html#ga4f1c1a954eccddb0e002f24da4d13d1c">SceJpegEncoderHeaderMode</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>- An already initialized <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884" title="Dynamically allocated encoder context.">SceJpegArmEncoderContext</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- One of <a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f" title="JPEG Header Modes.">SceJpegArmEncoderHeaderMode</a>.</td></tr>
   </table>
   </dd>
 </dl>
