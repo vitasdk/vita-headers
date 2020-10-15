@@ -8517,6 +8517,18 @@ modules:
           ksceSdifReadSectorSd: 0xB9593652
           ksceSdifWriteSectorMmc: 0x175543D2
           ksceSdifWriteSectorSd: 0xE0781171
+  SceShaccCg:
+    nid: 0xB3B90A35
+    libraries:
+      SceShaccCg:
+        kernel: false
+        nid: 0xA05BBEBB
+        functions:
+          sceShaccCgCompileProgram: 0x66814F35
+          sceShaccCgDestroyCompileOutput: 0xAA82EF0C
+          sceShaccCgInitializeCallbackList: 0xA8C2C1C8
+          sceShaccCgInitializeCompileOptions: 0x3B58AFA0
+          sceShaccCgSetDefaultAllocator: 0x6F01D573
   SceShellSvc:
     nid: 0x821DC423
     libraries:
