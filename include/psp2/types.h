@@ -170,6 +170,28 @@ typedef struct SceDateTime {
     unsigned int microsecond;
 } SceDateTime;
 
+/**
+ * SceLibc Parameter Structure.
+ * 
+ * Heap size fields are needed for using SceLibc heap.
+ */
+typedef struct SceLibcParam {
+    SceUInt32  size;
+    SceUInt32  unk_0x4;
+    SceUInt32* heapSize;
+    SceUInt32* heapSizeDefault; //!< Default size is 0x40000.
+    SceUInt32  unk_0x10;
+    SceUInt32  unk_0x14;
+    SceUInt32  sdkVersion;
+    SceUInt32  unk_0x1C;        //!< Set to 9.
+    void*      mallocReplace;
+    void*      newReplace;
+    SceUInt32  unk_0x28;
+    SceUInt32  unk_0x2C;
+    SceUInt32  unk_0x30;
+    void*      mallocForTlsReplace;
+} SceLibcParam;
+
 typedef int SceMode;     //!< Mode for I/O functions
 typedef SceInt64 SceOff; //!< Offset type
 
