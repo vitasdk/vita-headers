@@ -52,6 +52,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "rtc.h", "rtc_8h.html", "rtc_8h" ],
     [ "sblacmgr.h", "sblacmgr_8h.html", "sblacmgr_8h" ],
     [ "screenshot.h", "screenshot_8h.html", "screenshot_8h" ],
+    [ "shacccg.h", "shacccg_8h.html", "shacccg_8h" ],
     [ "sharedfb.h", "sharedfb_8h.html", "sharedfb_8h" ],
     [ "shellutil.h", "shellutil_8h.html", "shellutil_8h" ],
     [ "shutter_sound.h", "shutter__sound_8h.html", "shutter__sound_8h" ],

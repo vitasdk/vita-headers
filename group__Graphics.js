@@ -4,6 +4,7 @@ var group__Graphics =
     [ "PGF Font Library", "group__ScePgf.html", "group__ScePgf" ],
     [ "PVF Font Library", "group__ScePvf.html", "group__ScePvf" ],
     [ "GPU Graphics Library", "group__SceGxm.html", "group__SceGxm" ],
+    [ "Runtime Shader Compiler Library", "group__SceShaccCg.html", "group__SceShaccCg" ],
     [ "GXT Files Manipulation Library", "group__SceGxt.html", "group__SceGxt" ],
     [ "JPEG Decoding Library", "group__SceJpeg.html", "group__SceJpeg" ],
     [ "JPEG ARM Decoding Library", "group__SceJpegArm.html", "group__SceJpegArm" ],
