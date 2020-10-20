@@ -1,5 +1,9 @@
 var NAVTREEINDEX75 =
 {
+"group__SystemStatus.html":[1,9],
+"group__USB.html":[1,10],
+"group__Vitasdk.html":[1,12],
+"group__debug.html":[1,7],
 "group__kernel.html":[1,6],
 "gxm_8h.html":[4,0,1,0,19],
 "gxm_8h_source.html":[4,0,1,0,19],

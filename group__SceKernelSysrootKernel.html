@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('group__SceKernelSysrootKernel.html',''
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabde736066ee1c4e30f349be900d74257"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#gabde736066ee1c4e30f349be900d74257">ksceKernelGetSysrootBuffer</a> (void)</td></tr>
-<tr class="separator:gabde736066ee1c4e30f349be900d74257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4eb5e925b54d46bf5406f45cf04c5d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#gaf4eb5e925b54d46bf5406f45cf04c5d0">ksceKernelGetProcessTitleId</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, char *titleid, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="separator:gaf4eb5e925b54d46bf5406f45cf04c5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga667430e4c173b766cc31ba19ede85078"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga667430e4c173b766cc31ba19ede85078">ksceKernelSysrootGetKblParam</a> (void)</td></tr>
+<tr class="separator:ga667430e4c173b766cc31ba19ede85078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga571e101d51a20ed6a0af26952172773d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga571e101d51a20ed6a0af26952172773d">ksceKernelSysrootGetProcessTitleId</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> pid, char *titleid, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga571e101d51a20ed6a0af26952172773d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga888ca62deb0c08c14af41b51a22a232e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga888ca62deb0c08c14af41b51a22a232e">ksceSysrootGetSelfInfo</a> (<a class="el" href="group__SceKernelSysrootKernel.html#gaae18ca6d933be8561673eb190fde924c">SceKernelSysrootSelfIndex</a> index, <a class="el" href="group__SceKernelSysrootKernel.html#structSceKernelSysrootSelfInfo">SceKernelSysrootSelfInfo</a> *info)</td></tr>
 <tr class="separator:ga888ca62deb0c08c14af41b51a22a232e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga87d3f35098a20dde0665dc87d7b17408"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga87d3f35098a20dde0665dc87d7b17408">ksceSysrootUseExternalStorage</a> (void)</td></tr>
@@ -109,6 +109,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga192d7ce764117e51b25a1879f5bc06a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga192d7ce764117e51b25a1879f5bc06a0">ksceKernelGetSysrootBuffer</a>()&#160;&#160;&#160;<a class="el" href="group__SceKernelSysrootKernel.html#ga667430e4c173b766cc31ba19ede85078">ksceKernelSysrootGetKblParam</a>()</td></tr>
+<tr class="separator:ga192d7ce764117e51b25a1879f5bc06a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga666ce33aa0fa454d5fcff558840ed258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga666ce33aa0fa454d5fcff558840ed258">ksceKernelGetProcessTitleId</a>(pid,  titleid,  len)&#160;&#160;&#160;<a class="el" href="group__SceKernelSysrootKernel.html#ga571e101d51a20ed6a0af26952172773d">ksceKernelSysrootGetProcessTitleId</a>(pid, titleid, len)</td></tr>
+<tr class="separator:ga666ce33aa0fa454d5fcff558840ed258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab9ca3c6eb50dc2e34f52f2cccb9c99f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#gab9ca3c6eb50dc2e34f52f2cccb9c99f6">ksceSysrootIsManufacturingMode</a>()&#160;&#160;&#160;<a class="el" href="group__SceKernelSysrootKernel.html#ga87d3f35098a20dde0665dc87d7b17408">ksceSysrootUseExternalStorage</a>()</td></tr>
 <tr class="separator:gab9ca3c6eb50dc2e34f52f2cccb9c99f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -188,6 +192,57 @@ self_size</td>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga192d7ce764117e51b25a1879f5bc06a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga192d7ce764117e51b25a1879f5bc06a0">&#9670;&nbsp;</a></span>ksceKernelGetSysrootBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelGetSysrootBuffer</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__SceKernelSysrootKernel.html#ga667430e4c173b766cc31ba19ede85078">ksceKernelSysrootGetKblParam</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga666ce33aa0fa454d5fcff558840ed258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga666ce33aa0fa454d5fcff558840ed258">&#9670;&nbsp;</a></span>ksceKernelGetProcessTitleId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelGetProcessTitleId</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pid, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">titleid, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceKernelSysrootKernel.html#ga571e101d51a20ed6a0af26952172773d">ksceKernelSysrootGetProcessTitleId</a>(pid, titleid, len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gab9ca3c6eb50dc2e34f52f2cccb9c99f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab9ca3c6eb50dc2e34f52f2cccb9c99f6">&#9670;&nbsp;</a></span>ksceSysrootIsManufacturingMode</h2>
 
@@ -226,14 +281,14 @@ self_size</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabde736066ee1c4e30f349be900d74257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabde736066ee1c4e30f349be900d74257">&#9670;&nbsp;</a></span>ksceKernelGetSysrootBuffer()</h2>
+<a id="ga667430e4c173b766cc31ba19ede85078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga667430e4c173b766cc31ba19ede85078">&#9670;&nbsp;</a></span>ksceKernelSysrootGetKblParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* ksceKernelGetSysrootBuffer </td>
+          <td class="memname">void* ksceKernelSysrootGetKblParam </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -244,14 +299,14 @@ self_size</td>
 
 </div>
 </div>
-<a id="gaf4eb5e925b54d46bf5406f45cf04c5d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf4eb5e925b54d46bf5406f45cf04c5d0">&#9670;&nbsp;</a></span>ksceKernelGetProcessTitleId()</h2>
+<a id="ga571e101d51a20ed6a0af26952172773d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga571e101d51a20ed6a0af26952172773d">&#9670;&nbsp;</a></span>ksceKernelSysrootGetProcessTitleId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelGetProcessTitleId </td>
+          <td class="memname">int ksceKernelSysrootGetProcessTitleId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
