@@ -9418,9 +9418,6 @@ modules:
         nid: 0x3691DA45
         functions:
           ksceKernelAllocHeapMemory2: 0xD351EBC8
-          ksceKernelGetProcessTitleId: 0xEC3124A3
-          ksceKernelGetSysbase: 0x3E455842
-          ksceKernelGetSysrootBuffer: 0x9DB56D1F
           ksceKernelIsColdBoot: 0xD7198963
           ksceKernelIsSomeBootMode: 0x7B7F8171
           ksceKernelSysrootAppMgrSpawnProcess: 0x3ACACD22
@@ -9428,8 +9425,10 @@ modules:
           ksceKernelSysrootDbgpSuspendProcessAndWaitResume: 0x256B2394
           ksceKernelSysrootGetCurrentAddressSpaceCB: 0x63EBB05B
           ksceKernelSysrootGetCurrentUIDEntryHeapCB: 0xB4C24588
+          ksceKernelSysrootGetKblParam: 0x9DB56D1F
           ksceKernelSysrootGetModulePrivate: 0x37EC12BB
           ksceKernelSysrootGetPUIDEntryHeap: 0x88DE85EF
+          ksceKernelSysrootGetProcessTitleId: 0xEC3124A3
           ksceKernelSysrootGetSharedMemory: 0xC8C8C321
           ksceKernelSysrootGetStatus: 0x5C426B19
           ksceKernelSysrootGetThreadAccessLevel: 0x20009397
@@ -9444,6 +9443,7 @@ modules:
           ksceSysrootGetSelfAuthInfo: 0x4F0A4066
           ksceSysrootGetSelfInfo: 0xF10AB792
           ksceSysrootGetSessionId: 0x84783B71
+          ksceSysrootGetSysbase: 0x3E455842
           ksceSysrootGetWakeupFactor: 0x2F97041A
           ksceSysrootIsAuCodecIcConexant: 0x46E72428
           ksceSysrootIsBsodReboot: 0x4373AC96
