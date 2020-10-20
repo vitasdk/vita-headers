@@ -7,6 +7,7 @@
 #define _PSP2_KERNEL_SYSMEM_H_
 
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/debug.h>
 #include <stdarg.h>
 
 #ifdef __cplusplus
@@ -430,37 +431,6 @@ int ksceSysrootUseExternalStorage(void);
 #define ksceSysrootIsManufacturingMode() ksceSysrootUseExternalStorage()
 
 int ksceSysrootUseInternalStorage(void);
-
-int ksceDebugPrintf(const char *fmt, ...);
-
-typedef struct SceKernelDebugMessageContext {
-  int hex_value0_hi;
-  int hex_value0_lo;
-  int hex_value1;
-  char *msg0;
-  SceSize num;
-  char *msg1;
-} SceKernelDebugMessageContext;
-
-// msg_type_flag : 0 or 0xB
-
-int ksceDebugPrintf2(int msg_type_flag, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
-	
-int ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address);
-int ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address, const char *fmt, ...);
-
-int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, void *some_address);
-int ksceDebugPrintfKernelAssertion(int unk, int condition, const SceKernelDebugMessageContext *ctx, int some_address, const char *fmt, ...);
-
-int ksceDebugSetHandlers(int (*func)(int unk, const char *format, const va_list args), void *args);
-
-int ksceDebugRegisterPutcharHandler(int (*func)(void *args, char c), void *args);
-
-void *ksceDebugGetPutcharHandler(void);
-
-int ksceDebugPutchar(int character);
-
-int ksceDebugDisableInfoDump(int flag);
 
 typedef struct
 {
