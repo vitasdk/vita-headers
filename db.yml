@@ -4270,35 +4270,14 @@ modules:
         functions:
           _Assert: 0xE4531F85
           _Btowc: 0x1D1DA5AD
-          _Ctype: 0x3CE6109D
-          _Dbl: 0x338FE545
-          _Denorm: 0xF708906E
           _Exit: 0xB53B345B
           _FCbuild: 0xDEC462AB
-          _FDenorm: 0x01B05132
-          _FInf: 0x8A0F308C
-          _FNan: 0x415162DD
-          _FSnan: 0x7D35108B
-          _Files: 0x855FC605
-          _Flt: 0xE5620A03
           _Fltrounds: 0xA2F50E9E
-          _Inf: 0x710B5F33
           _Iswctype: 0xE980110A
-          _LDenorm: 0x2C8DBEB7
-          _LInf: 0x5289BBC0
-          _LNan: 0x036D0F07
-          _LSnan: 0x48AEEF2A
-          _Ldbl: 0x94CE931C
           _Lockfilelock: 0x5044FC32
           _Locksyslock: 0x7DBC0575
           _Mbtowc: 0x5E56EA4E
-          _Nan: 0x116F3DA9
-          _PJP_C_Copyright: 0x2A72F684
           _SCE_Assert: 0x31BAD49C
-          _Snan: 0x677CDE35
-          _Stderr: 0xDDF9BB09
-          _Stdin: 0x66B7406C
-          _Stdout: 0x5D8C1282
           _Stod: 0xBF94193B
           _Stodx: 0x6798AA28
           _Stof: 0x784D8D95
@@ -4312,8 +4291,6 @@ modules:
           _Stoull: 0x6794B3C6
           _Stoullx: 0xD00F68FD
           _Stoulx: 0x7A5CA6A3
-          _Tolotab: 0xD662E07C
-          _Touptab: 0x36878958
           _Towctrans: 0x9D885076
           _Unlockfilelock: 0xFD5DD98C
           _Unlocksyslock: 0x64DA2C47
@@ -4642,6 +4619,29 @@ modules:
           wprintf_s: 0xC4CF52CE
           wscanf: 0xADC32204
           wscanf_s: 0x4B84B885
+        variables:
+          _Ctype: 0x3CE6109D
+          _Dbl: 0x338FE545
+          _Denorm: 0xF708906E
+          _FDenorm: 0x01B05132
+          _FInf: 0x8A0F308C
+          _FNan: 0x415162DD
+          _FSnan: 0x7D35108B
+          _Flt: 0xE5620A03
+          _Inf: 0x710B5F33
+          _LDenorm: 0x2C8DBEB7
+          _LInf: 0x5289BBC0
+          _LNan: 0x036D0F07
+          _LSnan: 0x48AEEF2A
+          _Ldbl: 0x94CE931C
+          _Nan: 0x116F3DA9
+          _PJP_C_Copyright: 0x2A72F684
+          _Snan: 0x677CDE35
+          _Stderr: 0xDDF9BB09
+          _Stdin: 0x66B7406C
+          _Stdout: 0x5D8C1282
+          _Tolotab: 0xD662E07C
+          _Touptab: 0x36878958
       SceLibm:
         kernel: false
         nid: 0xCDAE3C7D
@@ -4922,7 +4922,6 @@ modules:
           _Mtx_timedlock: 0xCAB60DB2
           _Mtx_trylock: 0xBD322C9A
           _Mtx_unlock: 0x1C4A8E64
-          _PJP_CPP_Copyright: 0xBF90A45A
           _Restore_state: 0x1CFE58D9
           _Save_state: 0xC73C6905
           _Thrd_abort: 0x9421F291
@@ -5987,6 +5986,8 @@ modules:
           __cxa_throw: 0xF87E6098
           __snc_personality_v0: 0xAE42C1D5
           xtime_get: 0x7A40AD3E
+        variables:
+          _PJP_CPP_Copyright: 0xBF90A45A
   SceLiveArea:
     nid: 0x6D180EF6
     libraries:
