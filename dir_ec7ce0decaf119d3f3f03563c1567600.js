@@ -1,6 +1,7 @@
 var dir_ec7ce0decaf119d3f3f03563c1567600 =
 [
     [ "cpu.h", "cpu_8h.html", "cpu_8h" ],
+    [ "debug.h", "debug_8h.html", "debug_8h" ],
     [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
     [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
     [ "intrmgr.h", "intrmgr_8h.html", "intrmgr_8h" ],

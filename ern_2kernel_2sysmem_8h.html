@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="ern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="debug_8h_source.html">psp2kern/kernel/debug.h</a>&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
 </div>
 <p><a href="ern_2kernel_2sysmem_8h_source.html">Go to the source code of this file.</a></p>
@@ -107,8 +108,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:structSceKernelProcessContext"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceKernelSysrootSelfInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#structSceKernelSysrootSelfInfo">SceKernelSysrootSelfInfo</a></td></tr>
 <tr class="separator:structSceKernelSysrootSelfInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelDebugMessageContext"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a></td></tr>
-<tr class="separator:structSceKernelDebugMessageContext"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceSysrootProcessHandler"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#structSceSysrootProcessHandler">SceSysrootProcessHandler</a></td></tr>
 <tr class="separator:structSceSysrootProcessHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -308,28 +307,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga87d3f35098a20dde0665dc87d7b17408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c0f7c5aaa0cbd9072956d4cbdcb6137"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga5c0f7c5aaa0cbd9072956d4cbdcb6137">ksceSysrootUseInternalStorage</a> (void)</td></tr>
 <tr class="separator:ga5c0f7c5aaa0cbd9072956d4cbdcb6137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45399d5f520fa2001dfc4becba3893c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga45399d5f520fa2001dfc4becba3893c7">ksceDebugPrintf</a> (const char *fmt,...)</td></tr>
-<tr class="separator:ga45399d5f520fa2001dfc4becba3893c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd3d27db915e91e899bc8d8512da3068"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gadd3d27db915e91e899bc8d8512da3068">ksceDebugPrintf2</a> (int msg_type_flag, const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, const char *fmt,...)</td></tr>
-<tr class="separator:gadd3d27db915e91e899bc8d8512da3068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae774b96aabe47110787b233d48792724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gae774b96aabe47110787b233d48792724">ksceDebugPrintKernelPanic</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, void *some_address)</td></tr>
-<tr class="separator:gae774b96aabe47110787b233d48792724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e1a95f97b04d5a9dd34af250a09f354"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga6e1a95f97b04d5a9dd34af250a09f354">ksceDebugPrintfKernelPanic</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, void *some_address, const char *fmt,...)</td></tr>
-<tr class="separator:ga6e1a95f97b04d5a9dd34af250a09f354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9973b044cbe727956617668d635657c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga9973b044cbe727956617668d635657c9">ksceDebugPrintKernelAssertion</a> (int condition, const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, void *some_address)</td></tr>
-<tr class="separator:ga9973b044cbe727956617668d635657c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga112644b58e24e4ca5a6e47e27e31e0e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga112644b58e24e4ca5a6e47e27e31e0e1">ksceDebugPrintfKernelAssertion</a> (int unk, int condition, const <a class="el" href="group__SceSysmemKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, int some_address, const char *fmt,...)</td></tr>
-<tr class="separator:ga112644b58e24e4ca5a6e47e27e31e0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47abb7cc0f9bd50cba7268f857043472"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga47abb7cc0f9bd50cba7268f857043472">ksceDebugSetHandlers</a> (int(*func)(int unk, const char *format, const va_list args), void *args)</td></tr>
-<tr class="separator:ga47abb7cc0f9bd50cba7268f857043472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga06d35c45431424e832d5a2d1b7cb26a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga06d35c45431424e832d5a2d1b7cb26a5">ksceDebugRegisterPutcharHandler</a> (int(*func)(void *args, char c), void *args)</td></tr>
-<tr class="separator:ga06d35c45431424e832d5a2d1b7cb26a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2c15d5ab86dcfdab90b39bcde0e8ca8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gae2c15d5ab86dcfdab90b39bcde0e8ca8">ksceDebugGetPutcharHandler</a> (void)</td></tr>
-<tr class="separator:gae2c15d5ab86dcfdab90b39bcde0e8ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81255f2979cb222f8bc62996234f983d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga81255f2979cb222f8bc62996234f983d">ksceDebugPutchar</a> (int character)</td></tr>
-<tr class="separator:ga81255f2979cb222f8bc62996234f983d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga494f482e4e9f7181952a756c947d1b29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga494f482e4e9f7181952a756c947d1b29">ksceDebugDisableInfoDump</a> (int flag)</td></tr>
-<tr class="separator:ga494f482e4e9f7181952a756c947d1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadec162afc0c11b580fae0a36f333987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987">ksceKernelSysrootSetProcessHandler</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceSysrootProcessHandler">SceSysrootProcessHandler</a> *handlers)</td></tr>
 <tr class="memdesc:gaadec162afc0c11b580fae0a36f333987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set handlers for the process lifecycle.  <a href="group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987">More...</a><br /></td></tr>
 <tr class="separator:gaadec162afc0c11b580fae0a36f333987"><td class="memSeparator" colspan="2">&#160;</td></tr>

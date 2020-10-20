@@ -130,16 +130,5 @@ var group__SceSysmemKernel =
     [ "ksceKernelMemRangeReleaseWithPerm", "group__SceSysmemKernel.html#ga200819a825a57a906d399a086fc249ad", null ],
     [ "ksceSysrootUseExternalStorage", "group__SceSysmemKernel.html#ga87d3f35098a20dde0665dc87d7b17408", null ],
     [ "ksceSysrootUseInternalStorage", "group__SceSysmemKernel.html#ga5c0f7c5aaa0cbd9072956d4cbdcb6137", null ],
-    [ "ksceDebugPrintf", "group__SceSysmemKernel.html#ga45399d5f520fa2001dfc4becba3893c7", null ],
-    [ "ksceDebugPrintf2", "group__SceSysmemKernel.html#gadd3d27db915e91e899bc8d8512da3068", null ],
-    [ "ksceDebugPrintKernelPanic", "group__SceSysmemKernel.html#gae774b96aabe47110787b233d48792724", null ],
-    [ "ksceDebugPrintfKernelPanic", "group__SceSysmemKernel.html#ga6e1a95f97b04d5a9dd34af250a09f354", null ],
-    [ "ksceDebugPrintKernelAssertion", "group__SceSysmemKernel.html#ga9973b044cbe727956617668d635657c9", null ],
-    [ "ksceDebugPrintfKernelAssertion", "group__SceSysmemKernel.html#ga112644b58e24e4ca5a6e47e27e31e0e1", null ],
-    [ "ksceDebugSetHandlers", "group__SceSysmemKernel.html#ga47abb7cc0f9bd50cba7268f857043472", null ],
-    [ "ksceDebugRegisterPutcharHandler", "group__SceSysmemKernel.html#ga06d35c45431424e832d5a2d1b7cb26a5", null ],
-    [ "ksceDebugGetPutcharHandler", "group__SceSysmemKernel.html#gae2c15d5ab86dcfdab90b39bcde0e8ca8", null ],
-    [ "ksceDebugPutchar", "group__SceSysmemKernel.html#ga81255f2979cb222f8bc62996234f983d", null ],
-    [ "ksceDebugDisableInfoDump", "group__SceSysmemKernel.html#ga494f482e4e9f7181952a756c947d1b29", null ],
     [ "ksceKernelSysrootSetProcessHandler", "group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987", null ]
 ];

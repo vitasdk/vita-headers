@@ -164,7 +164,7 @@ var annotated_dup =
     [ "SceKernelCallbackInfo", "group__SceThreadMgrUser.html#structSceKernelCallbackInfo", "group__SceThreadMgrUser_structSceKernelCallbackInfo" ],
     [ "SceKernelCondInfo", "group__SceThreadMgrUser.html#structSceKernelCondInfo", "group__SceThreadMgrUser_structSceKernelCondInfo" ],
     [ "SceKernelCondOptParam", "group__SceThreadMgrUser.html#structSceKernelCondOptParam", "group__SceThreadMgrUser_structSceKernelCondOptParam" ],
-    [ "SceKernelDebugMessageContext", "group__SceSysmemKernel.html#structSceKernelDebugMessageContext", "group__SceSysmemKernel_structSceKernelDebugMessageContext" ],
+    [ "SceKernelDebugMessageContext", "group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext", "group__SceKernelDebugKernel_structSceKernelDebugMessageContext" ],
     [ "SceKernelEventFlagInfo", "group__SceThreadMgrUser.html#structSceKernelEventFlagInfo", "group__SceThreadMgrUser_structSceKernelEventFlagInfo" ],
     [ "SceKernelEventFlagOptParam", "group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam", "group__SceThreadMgrUser_structSceKernelEventFlagOptParam" ],
     [ "SceKernelFaultingProcessInfo", "group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo", "group__SceThreadMgrKernel_structSceKernelFaultingProcessInfo" ],
