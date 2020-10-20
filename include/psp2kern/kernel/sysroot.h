@@ -26,9 +26,15 @@ typedef struct SceKernelSysrootSelfInfo {
 	SceSize self_size;
 } SceKernelSysrootSelfInfo;
 
-void *ksceKernelGetSysrootBuffer(void);
+void *ksceKernelSysrootGetKblParam(void);
 
-int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, SceSize len);
+/* Macro for backward compatibility */
+#define ksceKernelGetSysrootBuffer() ksceKernelSysrootGetKblParam()
+
+int ksceKernelSysrootGetProcessTitleId(SceUID pid, char *titleid, SceSize len);
+
+/* Macro for backward compatibility */
+#define ksceKernelGetProcessTitleId(pid, titleid, len) ksceKernelSysrootGetProcessTitleId(pid, titleid, len)
 
 int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *info);
 
