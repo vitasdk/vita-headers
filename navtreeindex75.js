@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"group__kernel.html":[1,6],
+"gxm_8h.html":[4,0,1,0,19],
 "gxm_8h_source.html":[4,0,1,0,19],
 "gxt_8h.html":[4,0,1,0,20],
 "gxt_8h_source.html":[4,0,1,0,20],
@@ -103,8 +105,8 @@ var NAVTREEINDEX75 =
 "proc__event_8h_source.html":[4,0,1,1,2,6],
 "promoterutil_8h.html":[4,0,1,0,43],
 "promoterutil_8h_source.html":[4,0,1,0,43],
-"psp2kern_2kernel_2utils_8h.html":[4,0,1,1,2,11],
-"psp2kern_2kernel_2utils_8h_source.html":[4,0,1,1,2,11],
+"psp2kern_2kernel_2utils_8h.html":[4,0,1,1,2,12],
+"psp2kern_2kernel_2utils_8h_source.html":[4,0,1,1,2,12],
 "pspnet__adhoc_8h.html":[4,0,1,0,44],
 "pspnet__adhoc_8h_source.html":[4,0,1,0,44],
 "pspnet__adhocctl_8h.html":[4,0,1,0,45],
@@ -143,6 +145,8 @@ var NAVTREEINDEX75 =
 "syscon_8h_source.html":[4,0,1,1,16],
 "sysmodule_8h.html":[4,0,1,0,57],
 "sysmodule_8h_source.html":[4,0,1,0,57],
+"sysroot_8h.html":[4,0,1,1,2,10],
+"sysroot_8h_source.html":[4,0,1,1,2,10],
 "system__param_8h.html":[4,0,1,0,58],
 "system__param_8h_source.html":[4,0,1,0,58],
 "touch_8h.html":[4,0,1,0,59],

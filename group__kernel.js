@@ -17,5 +17,6 @@ var group__kernel =
     [ "Exception handling Library", "group__SceExcpmgr.html", "group__SceExcpmgr" ],
     [ "utils Library", "group__SceUtils.html", "group__SceUtils" ],
     [ "IdStorage Library", "group__SceIdStorage.html", "group__SceIdStorage" ],
-    [ "Process event Library", "group__SceProcEvent.html", "group__SceProcEvent" ]
+    [ "Process event Library", "group__SceProcEvent.html", "group__SceProcEvent" ],
+    [ "Kernel system root Library", "group__SceKernelSysroot.html", "group__SceKernelSysroot" ]
 ];

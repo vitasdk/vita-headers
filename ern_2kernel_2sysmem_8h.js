@@ -1,6 +1,5 @@
 var ern_2kernel_2sysmem_8h =
 [
-    [ "ksceSysrootIsManufacturingMode", "group__SceSysmemKernel.html#gab9ca3c6eb50dc2e34f52f2cccb9c99f6", null ],
     [ "SceClassCallback", "group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5", null ],
     [ "SceKernelMemBlockType", "group__SceSysmemKernel.html#gaaa2a5b0a0ae74026d992a82e4f80b6be", [
       [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE", "group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaeca8b415e3bad84099b6d12522dab59c", null ],
@@ -44,11 +43,6 @@ var ern_2kernel_2sysmem_8h =
       [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
       [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ]
     ] ],
-    [ "SceKernelSysrootSelfIndex", "group__SceSysmemKernel.html#gaae18ca6d933be8561673eb190fde924c", [
-      [ "SCE_KERNEL_SYSROOT_SELF_INDEX_GCAUTHMGR_SM", "group__SceSysmemKernel.html#ggaae18ca6d933be8561673eb190fde924ca3f9c8d2a5e5cfea7754248383a48673b", null ],
-      [ "SCE_KERNEL_SYSROOT_SELF_INDEX_RMAUTH_SM", "group__SceSysmemKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60", null ],
-      [ "SCE_KERNEL_SYSROOT_SELF_INDEX_ENCDEC_W_PORTABILITY_SM", "group__SceSysmemKernel.html#ggaae18ca6d933be8561673eb190fde924caabea726cf1f5054ef0dcffd8e82a9ab3", null ]
-    ] ],
     [ "ksceKernelAllocMemBlock", "group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31", null ],
     [ "ksceKernelFreeMemBlock", "group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1", null ],
     [ "ksceKernelGetMemBlockBase", "group__SceSysmemKernel.html#gabbc259154e4239912bec06e30baf19fc", null ],
@@ -82,14 +76,11 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelDeleteUid", "group__SceSysmemKernel.html#ga562dce0ee81f60061742948148e932f0", null ],
     [ "ksceKernelFindClassByName", "group__SceSysmemKernel.html#ga0b6b5ddadfa9a82287945b5bc04cd0de", null ],
     [ "ksceKernelSwitchVmaForPid", "group__SceSysmemKernel.html#ga84ce525e598a9194ae0d479da2404e4d", null ],
-    [ "ksceKernelGetSysrootBuffer", "group__SceSysmemKernel.html#gabde736066ee1c4e30f349be900d74257", null ],
     [ "ksceKernelGetPidContext", "group__SceSysmemKernel.html#ga4f729c86c562de2f4e171db24ee7ba74", null ],
-    [ "ksceKernelGetProcessTitleId", "group__SceSysmemKernel.html#gaf4eb5e925b54d46bf5406f45cf04c5d0", null ],
     [ "ksceKernelMapBlockUserVisible", "group__SceSysmemKernel.html#gac45b79af14718bc342b116b9149289c8", null ],
     [ "ksceKernelMapUserBlock", "group__SceSysmemKernel.html#ga960a67e8877a5b5d4addca381e55f63c", null ],
     [ "ksceKernelMapUserBlockDefaultType", "group__SceSysmemKernel.html#ga81731618d92ada12e231d9d4f841bf88", null ],
     [ "ksceKernelMapUserBlockDefaultTypeForPid", "group__SceSysmemKernel.html#ga1a63dd619ca0874e9f158f19d7369dbf", null ],
-    [ "ksceSysrootGetSelfInfo", "group__SceSysmemKernel.html#ga888ca62deb0c08c14af41b51a22a232e", null ],
     [ "ksceKernelGetPaddr", "group__SceSysmemKernel.html#gad657fd1dd901bcd61969771210010d36", null ],
     [ "ksceKernelGetPaddrList", "group__SceSysmemKernel.html#ga011edc8ffacf956f1cbfb1b542493f02", null ],
     [ "ksceKernelMemBlockRelease", "group__SceSysmemKernel.html#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d", null ],
@@ -98,8 +89,5 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelMemRangeRetainWithPerm", "group__SceSysmemKernel.html#gaf1abeee4acaead7ee3ceb9838f303411", null ],
     [ "ksceKernelMemRangeRelease", "group__SceSysmemKernel.html#ga220a655e812b83b1dca9326a5f423c2a", null ],
     [ "ksceKernelMemRangeReleaseForPid", "group__SceSysmemKernel.html#ga5f86558cd1afbf72f88ac04151536ae9", null ],
-    [ "ksceKernelMemRangeReleaseWithPerm", "group__SceSysmemKernel.html#ga200819a825a57a906d399a086fc249ad", null ],
-    [ "ksceSysrootUseExternalStorage", "group__SceSysmemKernel.html#ga87d3f35098a20dde0665dc87d7b17408", null ],
-    [ "ksceSysrootUseInternalStorage", "group__SceSysmemKernel.html#ga5c0f7c5aaa0cbd9072956d4cbdcb6137", null ],
-    [ "ksceKernelSysrootSetProcessHandler", "group__SceSysmemKernel.html#gaadec162afc0c11b580fae0a36f333987", null ]
+    [ "ksceKernelMemRangeReleaseWithPerm", "group__SceSysmemKernel.html#ga200819a825a57a906d399a086fc249ad", null ]
 ];
