@@ -8,6 +8,7 @@
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/debug.h>
+#include <psp2kern/kernel/sysroot.h>
 #include <stdarg.h>
 
 #ifdef __cplusplus
