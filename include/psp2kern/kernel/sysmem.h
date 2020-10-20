@@ -139,18 +139,6 @@ typedef struct SceKernelProcessContext {
 	SceUInt32 CONTEXTIDR;
 } SceKernelProcessContext;
 
-typedef enum SceKernelSysrootSelfIndex {
-	SCE_KERNEL_SYSROOT_SELF_INDEX_GCAUTHMGR_SM		= 0,
-	SCE_KERNEL_SYSROOT_SELF_INDEX_RMAUTH_SM			= 1,
-	SCE_KERNEL_SYSROOT_SELF_INDEX_ENCDEC_W_PORTABILITY_SM	= 2
-} SceKernelSysrootSelfIndex;
-
-typedef struct SceKernelSysrootSelfInfo {
-	uint32_t size;
-	void *self_data;
-	uint32_t self_size;
-} SceKernelSysrootSelfInfo;
-
 /**
  * Allocates a new memory block
  *
@@ -289,10 +277,7 @@ int ksceKernelFindClassByName(const char *name, SceClass **cls);
 
 int ksceKernelSwitchVmaForPid(SceUID pid);
 
-void *ksceKernelGetSysrootBuffer(void);
 int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
-
-int ksceKernelGetProcessTitleId(SceUID pid, char *titleid, SceSize len);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
 int ksceKernelMapUserBlock(const char *name, int permission, int type,
@@ -304,8 +289,6 @@ int ksceKernelMapUserBlockDefaultType(const char *name, int permission, const vo
 int ksceKernelMapUserBlockDefaultTypeForPid(int pid, const char *name, int permission,
 					    const void *user_buf, SceSize size, void **kernel_page,
 					    SceSize *kernel_size, unsigned int *kernel_offset);
-
-int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *info);
 
 /**
  * Get the physical address of a given virtual address
@@ -425,38 +408,6 @@ int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, SceSize size);
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
-
-int ksceSysrootUseExternalStorage(void);
-
-#define ksceSysrootIsManufacturingMode() ksceSysrootUseExternalStorage()
-
-int ksceSysrootUseInternalStorage(void);
-
-typedef struct
-{
-    size_t size; //!< sizeof(SceSysrootProcessHandler)
-    int (* unk_4)(void);
-    int (* unk_8)(void);
-    int (* unk_C)(void);
-    int (* unk_10)(void);
-    int (* unk_14)(void);
-    int (* unk_18)(void);
-    int (* on_process_created)(void); //!< called when process is created
-    int (* unk_20)(void);
-    int (* unk_24)(void);
-} SceSysrootProcessHandler;
-
-/**
- * Set handlers for the process lifecycle.
- *
- * This internal function allows a developer to introspect and receive events based
- * on the process lifecycle.
- *
- * @param[in]  handlers   Pointer to struct containing the handlers. This function does not copy the handlers, so this pointer must remain valid after a successful call.
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelSysrootSetProcessHandler(const SceSysrootProcessHandler *handlers);
 
 #ifdef __cplusplus
 }
