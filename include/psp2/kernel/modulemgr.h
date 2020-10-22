@@ -27,9 +27,9 @@ extern "C" {
 /** @} */
 
 typedef enum SceKernelModuleState {
-    SCE_KERNEL_MODULE_STATE_READY   = 0x00000002,
-    SCE_KERNEL_MODULE_STATE_STARTED = 0x00000006,
-    SCE_KERNEL_MODULE_STATE_ENDED   = 0x00000009
+	SCE_KERNEL_MODULE_STATE_READY   = 0x00000002,
+	SCE_KERNEL_MODULE_STATE_STARTED = 0x00000006,
+	SCE_KERNEL_MODULE_STATE_ENDED   = 0x00000009
 } SceKernelModuleState;
 
 /*
@@ -44,47 +44,47 @@ typedef enum SceKernelModuleState {
  * And these are only valid for modules in the process image, preload is not inhibited even if specified for modules to be loaded later.
  */
 typedef enum SceKernelPreloadInhibit {
-    SCE_KERNEL_PRELOAD_INHIBIT_NONE        = 0x00000000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBC        = 0x10000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBDBG      = 0x20000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBSHELLSVC = 0x80000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBCDLG     = 0x100000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBFIOS2    = 0x200000,
-    SCE_KERNEL_PRELOAD_INHIBIT_APPUTIL     = 0x400000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBSCEFT2   = 0x800000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF      = 0x1000000,
-    SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF     = 0x2000000
+	SCE_KERNEL_PRELOAD_INHIBIT_NONE        = 0x00000000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBC        = 0x10000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBDBG      = 0x20000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBSHELLSVC = 0x80000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBCDLG     = 0x100000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBFIOS2    = 0x200000,
+	SCE_KERNEL_PRELOAD_INHIBIT_APPUTIL     = 0x400000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBSCEFT2   = 0x800000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF      = 0x1000000,
+	SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF     = 0x2000000
 } SceKernelPreloadInhibit;
 
 typedef struct SceKernelSegmentInfo {
-  SceSize size;   //!< this structure size (0x18)
-  SceUInt perms;  //!< probably rwx in low bits
-  void *vaddr;    //!< address in memory
-  SceSize memsz;  //!< size in memory
-  SceSize filesz; //!< original size of memsz
-  SceUInt res;    //!< unused
+	SceSize size;   //!< this structure size (0x18)
+	SceUInt perms;  //!< probably rwx in low bits
+	void *vaddr;    //!< address in memory
+	SceSize memsz;  //!< size in memory
+	SceSize filesz; //!< original size of memsz
+	SceUInt res;    //!< unused
 } SceKernelSegmentInfo;
 
 typedef struct SceKernelModuleInfo {
-  SceSize size;                       //!< 0x1B8 for Vita 1.x
-  SceUID modid;
-  uint16_t modattr;
-  uint8_t  modver[2];
-  char module_name[28];
-  SceUInt unk28;
-  void *start_entry;
-  void *stop_entry;
-  void *exit_entry;
-  void *exidx_top;
-  void *exidx_btm;
-  void *extab_top;
-  void *extab_btm;
-  void *tlsInit;
-  SceSize tlsInitSize;
-  SceSize tlsAreaSize;
-  char path[256];
-  SceKernelSegmentInfo segments[4];
-  SceUInt state;                       //!< see:SceKernelModuleState
+	SceSize size;                       //!< 0x1B8 for Vita 1.x
+	SceUID modid;
+	uint16_t modattr;
+	uint8_t  modver[2];
+	char module_name[28];
+	SceUInt unk28;
+	void *start_entry;
+	void *stop_entry;
+	void *exit_entry;
+	void *exidx_top;
+	void *exidx_btm;
+	void *extab_top;
+	void *extab_btm;
+	void *tlsInit;
+	SceSize tlsInitSize;
+	SceSize tlsAreaSize;
+	char path[256];
+	SceKernelSegmentInfo segments[4];
+	SceUInt state;                       //!< see:SceKernelModuleState
 } SceKernelModuleInfo;
 
 typedef struct SceKernelLMOption {
@@ -108,10 +108,10 @@ SceUID sceKernelLoadStartModule(const char *path, SceSize args, void *argp, int 
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
 typedef struct SceKernelFwInfo {
-  SceSize size;
-  char versionString[0x1C];
-  SceUInt version;
-  SceUInt unk_24;
+	SceSize size;
+	char versionString[0x1C];
+	SceUInt version;
+	SceUInt unk_24;
 } SceKernelFwInfo;
 
 /**
