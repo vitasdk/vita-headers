@@ -3,7 +3,6 @@
  * \usage{psp2/kernel/modulemgr.h}
  */
 
-
 #ifndef _PSP2_KERNEL_MODULEMGR_H_
 #define _PSP2_KERNEL_MODULEMGR_H_
 
@@ -32,6 +31,30 @@ typedef enum SceKernelModuleState {
     SCE_KERNEL_MODULE_STATE_STARTED = 0x00000006,
     SCE_KERNEL_MODULE_STATE_ENDED   = 0x00000009
 } SceKernelModuleState;
+
+/*
+ * Assigning the following macro to the variable sceKernelPreloadModuleInhibit with the OR operator inhibit preloading that module.
+ *
+ * Example
+ * <code>
+ * // Inhibit preload SceLibc and SceShellSvc.
+ * int sceKernelPreloadModuleInhibit = SCE_KERNEL_PRELOAD_INHIBIT_LIBC | SCE_KERNEL_PRELOAD_INHIBIT_LIBSHELLSVC;
+ * </code>
+ *
+ * And these are only valid for modules in the process image, preload is not inhibited even if specified for modules to be loaded later.
+ */
+typedef enum SceKernelPreloadInhibit {
+    SCE_KERNEL_PRELOAD_INHIBIT_NONE        = 0x00000000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBC        = 0x10000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBDBG      = 0x20000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBSHELLSVC = 0x80000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBCDLG     = 0x100000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBFIOS2    = 0x200000,
+    SCE_KERNEL_PRELOAD_INHIBIT_APPUTIL     = 0x400000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBSCEFT2   = 0x800000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF      = 0x1000000,
+    SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF     = 0x2000000
+} SceKernelPreloadInhibit;
 
 typedef struct SceKernelSegmentInfo {
   SceSize size;   //!< this structure size (0x18)
