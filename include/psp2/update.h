@@ -14,7 +14,7 @@ typedef char SceUpdateMode;
 #define SCE_UPDATE_MODE_SWU_CUI 0x30
 
 /**
- * Getting system boot mode
+ * Getting system update mode on boot
  *
  * @param[in] mode - The pointer of SceUpdateMode variable
  *
@@ -23,7 +23,7 @@ typedef char SceUpdateMode;
 int sceSblUsGetUpdateModeForUser(SceUpdateMode *mode);
 
 /**
- * Setting system boot mode
+ * Setting system update mode on boot
  *
  * @param[in] mode - The update mode
  *
