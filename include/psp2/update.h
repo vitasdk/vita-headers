@@ -16,7 +16,7 @@ typedef char SceUpdateMode;
 /**
  * Getting system update mode on boot
  *
- * @param[in] mode - The pointer of SceUpdateMode variable
+ * @param[out] mode - The pointer of SceUpdateMode variable
  *
  * @return 0 on success, < 0 on error.
  */
