@@ -307,6 +307,7 @@ var annotated_dup =
     [ "SceSslMemoryPoolStats", "group__SceLibSslUser.html#structSceSslMemoryPoolStats", "group__SceLibSslUser_structSceSslMemoryPoolStats" ],
     [ "SceSysconDebugHandlers", "group__SceSysconKernel.html#structSceSysconDebugHandlers", "group__SceSysconKernel_structSceSysconDebugHandlers" ],
     [ "SceSysconPacket", "group__SceSysconKernel.html#structSceSysconPacket", "group__SceSysconKernel_structSceSysconPacket" ],
+    [ "SceSysrootDbgpHandler", "group__SceKernelSysrootKernel.html#structSceSysrootDbgpHandler", "group__SceKernelSysrootKernel_structSceSysrootDbgpHandler" ],
     [ "SceSysrootProcessHandler", "group__SceKernelSysrootKernel.html#structSceSysrootProcessHandler", "group__SceKernelSysrootKernel_structSceSysrootProcessHandler" ],
     [ "SceTouchData", "group__SceTouchUser.html#structSceTouchData", "group__SceTouchUser_structSceTouchData" ],
     [ "SceTouchPanelInfo", "group__SceTouchUser.html#structSceTouchPanelInfo", "group__SceTouchUser_structSceTouchPanelInfo" ],

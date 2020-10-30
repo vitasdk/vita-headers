@@ -1150,5 +1150,6 @@ var gxm_8h =
     [ "sceGxmSetUniformDataF", "group__SceGxmUser.html#ga056dfffe5cdbf51035becf28b8166421", null ],
     [ "sceGxmTransferCopy", "group__SceGxmUser.html#gadf1f493cd3bfb63bf4aed4641a3075cc", null ],
     [ "sceGxmTransferDownscale", "group__SceGxmUser.html#gaa23cde550c9213b294fed456c42856a8", null ],
+    [ "sceGxmTransferFill", "group__SceGxmUser.html#ga652a31831a68f0b01c142e81baab4276", null ],
     [ "sceGxmTransferFinish", "group__SceGxmUser.html#ga90cd5c5b092fb7bbe0be8d41549256ba", null ]
 ];

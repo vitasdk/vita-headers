@@ -1,0 +1,26 @@
+var group__SceKernelSysrootKernel_structSceSysrootDbgpHandler =
+[
+    [ "size", "group__SceKernelSysrootKernel.html#gae8c3330b7d24b0ab7ba76fe1a53b1cba", null ],
+    [ "unk_0x04", "group__SceKernelSysrootKernel.html#ga00744a37d196ca01e8e4a428dda1d3b8", null ],
+    [ "unk_0x08", "group__SceKernelSysrootKernel.html#ga7ae26fe4a2cc20315467762854cca353", null ],
+    [ "unk_0x0C", "group__SceKernelSysrootKernel.html#ga5d30b19dbaaa02047e57bac825e39aca", null ],
+    [ "unk_0x10", "group__SceKernelSysrootKernel.html#gae8c94d8ef0f8a3b90cb36770ad3f55f0", null ],
+    [ "unk_0x14", "group__SceKernelSysrootKernel.html#ga033e21905a8dc74025e8c57dd22008f3", null ],
+    [ "unk_0x18", "group__SceKernelSysrootKernel.html#ga183663ae730a04e7f135bbef540f6bad", null ],
+    [ "unk_0x1C", "group__SceKernelSysrootKernel.html#ga85f9cf3131f641bc858da70a689bf225", null ],
+    [ "unk_0x20", "group__SceKernelSysrootKernel.html#ga12e75ce604da7129a3adfc957a46a7cc", null ],
+    [ "unk_0x24", "group__SceKernelSysrootKernel.html#ga06092505e0ab7055c58d4832ab9fbd46", null ],
+    [ "unk_0x28", "group__SceKernelSysrootKernel.html#ga84c7489cdf4a52d0e7eaa925cf1a447c", null ],
+    [ "unk_0x2C", "group__SceKernelSysrootKernel.html#gaaacb54f64bdeb92e36226fec20771e28", null ],
+    [ "unk_0x30", "group__SceKernelSysrootKernel.html#ga1e1ded8a9babdaccc6ca746f12809a1f", null ],
+    [ "unk_0x34", "group__SceKernelSysrootKernel.html#ga4f59451a56f21f2178c02946868a6eb3", null ],
+    [ "unk_0x38", "group__SceKernelSysrootKernel.html#ga1723bb821b47fbfdd24cf54da4ee3923", null ],
+    [ "unk_0x3C", "group__SceKernelSysrootKernel.html#gad649100d2549b9ccae046227ea66befa", null ],
+    [ "unk_0x40", "group__SceKernelSysrootKernel.html#gae3465f54f12ed619cbf1bd6672718f48", null ],
+    [ "unk_0x44", "group__SceKernelSysrootKernel.html#ga87493b46ba04e5cfd1bdd0292f29ff37", null ],
+    [ "unk_0x48", "group__SceKernelSysrootKernel.html#gafba0471a94adb1b428363b11016846e9", null ],
+    [ "unk_0x4C", "group__SceKernelSysrootKernel.html#ga01a32b8be83a3b234dbadd2971ee755a", null ],
+    [ "unk_0x50", "group__SceKernelSysrootKernel.html#gab61a392dec9b86b2395823c08ef70182", null ],
+    [ "unk_0x54", "group__SceKernelSysrootKernel.html#gab85af231ca2a53849ff2e7e4de0fca39", null ],
+    [ "unk_0x58", "group__SceKernelSysrootKernel.html#gaaabfa8ac698c7a6e6bf90ec81c082d8b", null ]
+];
