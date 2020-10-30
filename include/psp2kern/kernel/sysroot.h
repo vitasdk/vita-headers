@@ -44,17 +44,17 @@ int ksceSysrootUseExternalStorage(void);
 
 int ksceSysrootUseInternalStorage(void);
 
-typedef struct {
-    SceSize size; //!< sizeof(SceSysrootProcessHandler)
-    int (* unk_4)(void);
-    int (* unk_8)(void);
-    int (* unk_C)(void);
-    int (* unk_10)(void);
-    int (* unk_14)(void);
-    int (* unk_18)(void);
-    int (* on_process_created)(void); //!< called when process is created
-    int (* unk_20)(void);
-    int (* unk_24)(void);
+typedef struct SceSysrootProcessHandler {
+    SceSize size;                                                       //!< sizeof(SceSysrootProcessHandler)
+    void (* unk_4)(SceUID pid, SceUID modid, int flags, uint64_t time); //!< process start shared modules
+    void (* exit)(SceUID pid, int flags, uint64_t time);
+    void (* kill)(SceUID pid);                                          //!< by SceShell
+    void (* unk_10)(SceUID pid, SceUID modid, uint64_t time);
+    void (* unk_14)(SceUID pid, SceUID modid, uint64_t time);
+    void (* unk_18)(SceUID pid, SceUID modid, uint64_t time);
+    int (* on_process_created)(int a1, int a2, int a3);                 //!< called when process is created
+    void (* unk_20)(SceUID pid, SceUID modid, uint64_t time);
+    void (* unk_24)(SceUID pid, SceUID modid, int flags, uint64_t time);
 } SceSysrootProcessHandler;
 
 /**
