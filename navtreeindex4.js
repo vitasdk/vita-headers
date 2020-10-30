@@ -245,9 +245,9 @@ var NAVTREEINDEX4 =
 "group__SceAudioencUser.html#ggaf7cf2b85d40c07455fc4b1aa5c559238a9af7ba7a941a1e319e7faa43f572898c":[4,0,1,0,7,8,0],
 "group__SceAudioencUser.html#ggaf7cf2b85d40c07455fc4b1aa5c559238a9af7ba7a941a1e319e7faa43f572898c":[1,2,3,0,8,0],
 "group__SceAudioencUser.html#ggaf7cf2b85d40c07455fc4b1aa5c559238a9af7ba7a941a1e319e7faa43f572898c":[1,2,3,0,26],
-"group__SceBgAppUtil.html":[1,9,3],
-"group__SceBgAppUtilUser.html":[1,9,3,0],
-"group__SceBgAppUtilUser.html#ga58ddc1cc26361f4da36db9dbcbddd13f":[1,9,3,0,2],
+"group__SceBgAppUtil.html":[1,10,3],
+"group__SceBgAppUtilUser.html":[1,10,3,0],
+"group__SceBgAppUtilUser.html#ga58ddc1cc26361f4da36db9dbcbddd13f":[1,10,3,0,2],
 "group__SceBgAppUtilUser.html#ga58ddc1cc26361f4da36db9dbcbddd13f":[4,0,1,0,11,1],
-"group__SceBgAppUtilUser.html#ga670dfd5d08df905333592d61efb3fd21":[1,9,3,0,0]
+"group__SceBgAppUtilUser.html#ga670dfd5d08df905333592d61efb3fd21":[1,10,3,0,0]
 };

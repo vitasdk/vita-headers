@@ -63,6 +63,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "triggerutil.h", "triggerutil_8h.html", "triggerutil_8h" ],
     [ "types.h", "types_8h.html", "types_8h" ],
     [ "udcd.h", "udcd_8h.html", "udcd_8h" ],
+    [ "update.h", "update_8h.html", "update_8h" ],
     [ "usbd.h", "usbd_8h.html", "usbd_8h" ],
     [ "usbserial.h", "usbserial_8h.html", "usbserial_8h" ],
     [ "usbstorvstor.h", "usbstorvstor_8h.html", "usbstorvstor_8h" ],
