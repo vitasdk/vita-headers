@@ -69,6 +69,48 @@ typedef struct SceSysrootProcessHandler {
  */
 int ksceKernelSysrootSetProcessHandler(const SceSysrootProcessHandler *handlers);
 
+typedef struct SceSysrootDbgpHandler {
+    SceSize size; //!< sizeof(SceSysrootDbgpHandler):0x5C
+    void (* unk_0x04)(int a1, int a2, int a3, int a4);
+    void (* unk_0x08)(int a1, int a2, int a3, int a4);
+    void (* unk_0x0C)(int a1);
+    void (* unk_0x10)(int a1, int a2, int a3, int a4);
+    void (* unk_0x14)(int a1, int a2, int a3, int a4);
+    void (* unk_0x18)(SceUID pid, SceUID modid, int flags, uint64_t time);
+    void (* unk_0x1C)(int a1, int a2, int a3);
+    void (* unk_0x20)(int a1, int a2, int a3);
+    void (* unk_0x24)(int a1, int a2, int a3);
+    void (* unk_0x28)(SceUID pid, SceUID modid, uint64_t time);
+    void (* unk_0x2C)(SceUID pid, SceUID modid, uint64_t time);
+    int  (* unk_0x30)(SceUID pid);
+    int  (* unk_0x34)(int a1, int a2, int a3);
+    int  (* unk_0x38)(int a1, int a2, void *a3);
+    int  (* unk_0x3C)(int a1, int a2, int a3);
+    int  (* unk_0x40)(SceUID pid, int *some_flag);
+    int  (* unk_0x44)(SceUID pid, SceUID modid, int flags, uint64_t time);
+    int  (* unk_0x48)(int a1, int a2, int a3);
+    void (* unk_0x4C)(void);
+    void (* unk_0x50)(void);
+    int  (* unk_0x54)(int a1, int a2, int a3, int a4, int a5);
+    int  (* unk_0x58)(int a1, int a2, int a3);
+} SceSysrootDbgpHandler;
+
+/**
+ * Register Dbgp handlers.
+ *
+ * @param[in]  handlers   pointer of handlers
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelSysrootRegisterDbgpHandler(const SceSysrootDbgpHandler *handlers);
+
+/**
+ * Unregister Dbgp handlers.
+ *
+ * @return none.
+ */
+void ksceKernelSysrootUnregisterDbgpHandler(void);
+
 #ifdef __cplusplus
 }
 #endif
