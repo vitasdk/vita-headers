@@ -111,6 +111,13 @@ int ksceKernelSysrootRegisterDbgpHandler(const SceSysrootDbgpHandler *handlers);
  */
 void ksceKernelSysrootUnregisterDbgpHandler(void);
 
+int ksceSysrootIsAuCodecIcConexant(void);
+int ksceSysrootIsBsodReboot(void);
+int ksceSysrootIsSafeMode(void);
+int ksceSysrootIsUpdateMode(void);
+int ksceSysrootIsUsbEnumWakeup(void);
+int ksceSysrootIsExternalBootMode(void);
+
 #ifdef __cplusplus
 }
 #endif
