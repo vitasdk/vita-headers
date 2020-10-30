@@ -1580,6 +1580,7 @@ int sceGxmSetUniformDataF(void *uniformBuffer, const SceGxmProgramParameter *par
 
 int sceGxmTransferCopy(uint32_t width, uint32_t height, uint32_t colorKeyValue, uint32_t colorKeyMask, SceGxmTransferColorKeyMode colorKeyMode, SceGxmTransferFormat srcFormat, SceGxmTransferType srcType, const void *srcAddress, uint32_t srcX, uint32_t srcY, int32_t srcStride, SceGxmTransferFormat destFormat, SceGxmTransferType destType, void *destAddress, uint32_t destX, uint32_t destY, int32_t destStride, SceGxmSyncObject *syncObject, uint32_t syncFlags, const SceGxmNotification *notification);
 int sceGxmTransferDownscale(SceGxmTransferFormat srcFormat, const void *srcAddress, unsigned int srcX, unsigned int srcY, unsigned int srcWidth, unsigned int srcHeight, int srcStride, SceGxmTransferFormat destFormat, void *destAddress, unsigned int destX, unsigned int destY, int destStride, SceGxmSyncObject *syncObject, unsigned int syncFlags, const SceGxmNotification* notification);
+int sceGxmTransferFill(uint32_t color, SceGxmTransferFormat dstFormat, uint32_t dstX, uint32_t dstY, uint32_t dstWidth, uint32_t dstHeight, int32_t dstStride, SceGxmSyncObject *syncObject, uint32_t syncFlags, const SceGxmNotification *notification);
 int sceGxmTransferFinish(void);
 
 #ifdef __cplusplus
