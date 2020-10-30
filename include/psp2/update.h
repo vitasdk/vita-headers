@@ -20,7 +20,7 @@ typedef char SceUpdateMode;
  *
  * @return 0 on success, < 0 on error.
  */
-int sceSblUsGetUpdateModeForUser(SceUpdateMode *mode);
+int sceSblUsGetUpdateMode(SceUpdateMode *mode);
 
 /**
  * Setting system update mode on boot
@@ -29,7 +29,7 @@ int sceSblUsGetUpdateModeForUser(SceUpdateMode *mode);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceSblUsSetUpdateModeForUser(SceUpdateMode mode);
+int sceSblUsSetUpdateMode(SceUpdateMode mode);
 
 /**
  * Verify PUP
@@ -40,6 +40,6 @@ int sceSblUsSetUpdateModeForUser(SceUpdateMode mode);
  *
  * note - If verify CEX PUP on Devkit system, got error.
  */
-int sceSblUsVerifyPupForUser(const char *path);
+int sceSblUsVerifyPup(const char *path);
 
 #endif /* _PSP2_UPDATE_MGR_H_ */
