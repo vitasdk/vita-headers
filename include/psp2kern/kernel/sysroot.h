@@ -66,7 +66,7 @@ int ksceSysrootUseInternalStorage(void);
 int ksceSysrootIsManufacturingMode(void);
 
 /**
- * Get UseInternalStorage status.
+ * Get NonRemovableCardMode status.
  *
  * Returns 1 if using an non removable card(pre-memcard).
  *
