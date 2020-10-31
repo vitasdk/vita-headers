@@ -15,10 +15,6 @@
 extern "C" {
 #endif
 
-int ksceDebugPutchar(int character);
-
-int ksceDebugPrintf(const char *fmt, ...);
-
 typedef struct SceKernelDebugMessageContext {
   SceUInt32 hex_value0_hi;
   SceUInt32 hex_value0_lo;
@@ -36,6 +32,31 @@ typedef enum SceKernelDebugPrintFlags {
   SCE_DBG_PRINT_FLAG_FILE = 8
 } SceKernelDebugPrintFlags;
 
+int ksceDebugPutchar(int character);
+
+/**
+ * @brief Print log
+ *
+ * @param[in]    fmt   - print fmt
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * note - log is pass to ksceDebugRegisterPutcharHandler's handler.
+ */
+int ksceDebugPrintf(const char *fmt, ...);
+
+/**
+ * @brief Print log with ctx
+ *
+ * @param[in]    flags - ctx print flags, see:SceKernelDebugPrintFlags
+ * @param[in]    ctx   - debug msg ctx
+ * @param[in]    fmt   - print fmt
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * note - main log is pass to ksceDebugRegisterPutcharHandler's handler.
+ *        ctx  log is pass to ksceDebugSetHandlers's handler.
+ */
 int ksceDebugPrintf2(int flags, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
 
 __attribute__((__noreturn__))
