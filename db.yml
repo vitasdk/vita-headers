@@ -9080,6 +9080,7 @@ modules:
           ksceDebugPrintf2: 0x02B04343
           ksceDebugPrintfKernelAssertion: 0x821A2D59
           ksceDebugPrintfKernelPanic: 0x00CCE39C
+          ksceKernelGetMinimumAssertionLevel: 0x374B7868
       SceDebugForKernel:
         kernel: true
         nid: 0x88C17370
@@ -9089,6 +9090,7 @@ modules:
           ksceDebugPutchar: 0x82D2EDCE
           ksceDebugRegisterPutcharHandler: 0xE6115A72
           ksceDebugSetHandlers: 0x10067B7B
+          ksceKernelSetMinimumAssertionLevel: 0xCE9060F1
       SceDebugLed:
         kernel: false
         nid: 0xAE004C0A
