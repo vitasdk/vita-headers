@@ -74,7 +74,28 @@ void ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, const vo
 __attribute__((__noreturn__))
 void ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, const void *lr, const char *fmt, ...);
 
+/**
+ * @brief Assertion with ctx
+ *
+ * @param[in] condition - condition
+ * @param[in] ctx       - debug msg ctx
+ * @param[in] lr        - The link register
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, const void *lr);
+
+/**
+ * @brief Assertion with ctx and Print
+ *
+ * @param[in] level     - print level, see:SceDbgLogLevel
+ * @param[in] condition - condition
+ * @param[in] ctx       - debug msg ctx
+ * @param[in] lr        - The link register
+ * @param[in] fmt       - print fmt
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceDebugPrintfKernelAssertion(int level, int condition, const SceKernelDebugMessageContext *ctx, const void *lr, const char *fmt, ...);
 
 int ksceDebugSetHandlers(int (* func)(int unk, const char *format, const va_list args), void *args);
