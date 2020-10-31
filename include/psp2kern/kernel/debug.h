@@ -19,9 +19,9 @@ typedef struct SceKernelDebugMessageContext {
   SceUInt32 hex_value0_hi;
   SceUInt32 hex_value0_lo;
   SceUInt32 hex_value1;
-  const char *msg0;
-  SceSize num;
-  const char *msg1;
+  const char *func;
+  SceSize line;
+  const char *file;
 } SceKernelDebugMessageContext;
 
 typedef enum SceKernelDebugPrintFlags {
