@@ -106,6 +106,22 @@ void *ksceDebugGetPutcharHandler(void);
 
 int ksceDebugDisableInfoDump(int flag);
 
+/**
+ * @brief Get current minimum assertion level
+ *
+ * @return current minimum assertion level.
+ */
+int ksceKernelGetMinimumAssertionLevel(void);
+
+/**
+ * @brief Get current minimum assertion level
+ *
+ * @param[in] level - new minimum assertion level
+ *
+ * @return previous minimum assertion level.
+ */
+int ksceKernelSetMinimumAssertionLevel(int level);
+
 #ifdef __cplusplus
 }
 #endif
