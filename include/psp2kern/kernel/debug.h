@@ -69,13 +69,13 @@ int ksceDebugPrintf(const char *fmt, ...);
 int ksceDebugPrintf2(int flags, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
 
 __attribute__((__noreturn__))
-void ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address);
+void ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, const void *lr);
 
 __attribute__((__noreturn__))
-void ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address, const char *fmt, ...);
+void ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, const void *lr, const char *fmt, ...);
 
-int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, void *some_address);
-int ksceDebugPrintfKernelAssertion(int unk, int condition, const SceKernelDebugMessageContext *ctx, int some_address, const char *fmt, ...);
+int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, const void *lr);
+int ksceDebugPrintfKernelAssertion(int level, int condition, const SceKernelDebugMessageContext *ctx, const void *lr, const char *fmt, ...);
 
 int ksceDebugSetHandlers(int (* func)(int unk, const char *format, const va_list args), void *args);
 
