@@ -46,25 +46,25 @@ int ksceDebugPutchar(int character);
 /**
  * @brief Print log
  *
- * @param[in]    fmt   - print fmt
+ * @param[in] fmt - print fmt
  *
  * @return 0 on success, < 0 on error.
  *
- * note - log is pass to ksceDebugRegisterPutcharHandler's handler.
+ * @note - log is pass to ksceDebugRegisterPutcharHandler's handler.
  */
 int ksceDebugPrintf(const char *fmt, ...);
 
 /**
  * @brief Print log with ctx
  *
- * @param[in]    flags - ctx print flags, see:SceKernelDebugPrintFlags
- * @param[in]    ctx   - debug msg ctx
- * @param[in]    fmt   - print fmt
+ * @param[in] flags - ctx print flags, see:SceKernelDebugPrintFlags
+ * @param[in] ctx   - debug msg ctx
+ * @param[in] fmt   - print fmt
  *
  * @return 0 on success, < 0 on error.
  *
- * note - main log is pass to ksceDebugRegisterPutcharHandler's handler.
- *        ctx  log is pass to ksceDebugSetHandlers's handler.
+ * @note - main log is pass to ksceDebugRegisterPutcharHandler's handler.
+ *         ctx  log is pass to ksceDebugSetHandlers's handler.
  */
 int ksceDebugPrintf2(int flags, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
 
