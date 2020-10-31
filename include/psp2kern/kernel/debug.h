@@ -28,9 +28,15 @@ typedef struct SceKernelDebugMessageContext {
   const char *msg1;
 } SceKernelDebugMessageContext;
 
-// msg_type_flag : 0 or 0xB
+typedef enum SceKernelDebugPrintFlags {
+  SCE_DBG_PRINT_FLAG_NONE = 0,
+  SCE_DBG_PRINT_FLAG_CORE = 1,
+  SCE_DBG_PRINT_FLAG_FUNC = 2,
+  SCE_DBG_PRINT_FLAG_LINE = 4,
+  SCE_DBG_PRINT_FLAG_FILE = 8
+} SceKernelDebugPrintFlags;
 
-int ksceDebugPrintf2(int msg_type_flag, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
+int ksceDebugPrintf2(int flags, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
 
 __attribute__((__noreturn__))
 void ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, void *some_address);
