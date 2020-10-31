@@ -38,11 +38,41 @@ int ksceKernelSysrootGetProcessTitleId(SceUID pid, char *titleid, SceSize len);
 
 int ksceSysrootGetSelfInfo(SceKernelSysrootSelfIndex index, SceKernelSysrootSelfInfo *info);
 
+/**
+ * Get UseExternalStorage status.
+ *
+ * Returns 1 if an external device(sdcard) is available.
+ *
+ * @return 0 or 1.
+ */
 int ksceSysrootUseExternalStorage(void);
 
-#define ksceSysrootIsManufacturingMode() ksceSysrootUseExternalStorage()
-
+/**
+ * Get UseInternalStorage status.
+ *
+ * Returns 1 if using an internal device(pre-memcard).
+ *
+ * @return 0 or 1.
+ */
 int ksceSysrootUseInternalStorage(void);
+
+/**
+ * Get ManufacturingMode status.
+ *
+ * Returns 1 if the device is in manufacturing mode.
+ *
+ * @return 0 or 1.
+ */
+int ksceSysrootIsManufacturingMode(void);
+
+/**
+ * Get UseInternalStorage status.
+ *
+ * Returns 1 if using an non removable card(pre-memcard).
+ *
+ * @return 0 or 1.
+ */
+int ksceSysrootIsNonRemovableCardMode(void);
 
 typedef struct SceSysrootProcessHandler {
     SceSize size;                                                       //!< sizeof(SceSysrootProcessHandler)
