@@ -18,5 +18,6 @@ var group__kernel =
     [ "utils Library", "group__SceUtils.html", "group__SceUtils" ],
     [ "IdStorage Library", "group__SceIdStorage.html", "group__SceIdStorage" ],
     [ "Process event Library", "group__SceProcEvent.html", "group__SceProcEvent" ],
-    [ "Kernel system root Library", "group__SceKernelSysroot.html", "group__SceKernelSysroot" ]
+    [ "Kernel system root Library", "group__SceKernelSysroot.html", "group__SceKernelSysroot" ],
+    [ "Kernel C Library", "group__SceSysclib.html", "group__SceSysclib" ]
 ];
