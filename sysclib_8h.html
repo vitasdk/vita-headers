@@ -78,14 +78,60 @@ $(document).ready(function(){initNavTree('sysclib_8h.html',''); initResizable();
 <div class="title">sysclib.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdarg.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
 </div>
 <p><a href="sysclib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga9cd53cf55b51a961d112d65dc206163d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga9cd53cf55b51a961d112d65dc206163d">memset</a> (void *dst, int ch, unsigned int len)</td></tr>
+<tr class="memdesc:ga9cd53cf55b51a961d112d65dc206163d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set character to memory.  <a href="group__SceSysclibKernel.html#ga9cd53cf55b51a961d112d65dc206163d">More...</a><br /></td></tr>
+<tr class="separator:ga9cd53cf55b51a961d112d65dc206163d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa9a3c56c10233a05c3e455d9235a5b5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gaaa9a3c56c10233a05c3e455d9235a5b5">memcpy</a> (void *dst, const void *src, unsigned int len)</td></tr>
+<tr class="memdesc:gaaa9a3c56c10233a05c3e455d9235a5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory1 to memory2.  <a href="group__SceSysclibKernel.html#gaaa9a3c56c10233a05c3e455d9235a5b5">More...</a><br /></td></tr>
+<tr class="separator:gaaa9a3c56c10233a05c3e455d9235a5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a102752d8338ea4ec44a968c85d0557"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga6a102752d8338ea4ec44a968c85d0557">memmove</a> (void *dst, const void *src, unsigned int len)</td></tr>
+<tr class="memdesc:ga6a102752d8338ea4ec44a968c85d0557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move memory to memory.  <a href="group__SceSysclibKernel.html#ga6a102752d8338ea4ec44a968c85d0557">More...</a><br /></td></tr>
+<tr class="separator:ga6a102752d8338ea4ec44a968c85d0557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71dbf16c513dd90cf0981dd5d99b296d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga71dbf16c513dd90cf0981dd5d99b296d">memcmp</a> (const void *s1, const void *s2, unsigned int len)</td></tr>
+<tr class="memdesc:ga71dbf16c513dd90cf0981dd5d99b296d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory comparison.  <a href="group__SceSysclibKernel.html#ga71dbf16c513dd90cf0981dd5d99b296d">More...</a><br /></td></tr>
+<tr class="separator:ga71dbf16c513dd90cf0981dd5d99b296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb74f0ef6f4ded17c537e242cbde78ac"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gadb74f0ef6f4ded17c537e242cbde78ac">memchr</a> (const void *src, int ch, unsigned int n)</td></tr>
+<tr class="memdesc:gadb74f0ef6f4ded17c537e242cbde78ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search character from memory.  <a href="group__SceSysclibKernel.html#gadb74f0ef6f4ded17c537e242cbde78ac">More...</a><br /></td></tr>
+<tr class="separator:gadb74f0ef6f4ded17c537e242cbde78ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11bd144d7d44914099a3aeddf1c8567d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga11bd144d7d44914099a3aeddf1c8567d">strcmp</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:ga11bd144d7d44914099a3aeddf1c8567d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strings comparison.  <a href="group__SceSysclibKernel.html#ga11bd144d7d44914099a3aeddf1c8567d">More...</a><br /></td></tr>
+<tr class="separator:ga11bd144d7d44914099a3aeddf1c8567d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga129fdf4b3852797906d6893db7c22b20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga129fdf4b3852797906d6893db7c22b20">strncmp</a> (const char *s1, const char *s2, unsigned int n)</td></tr>
+<tr class="memdesc:ga129fdf4b3852797906d6893db7c22b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strings comparison with length limit.  <a href="group__SceSysclibKernel.html#ga129fdf4b3852797906d6893db7c22b20">More...</a><br /></td></tr>
+<tr class="separator:ga129fdf4b3852797906d6893db7c22b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8c47e653bf9fbfaf87b9f4c0fc74116"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gab8c47e653bf9fbfaf87b9f4c0fc74116">strchr</a> (const char *src, int ch)</td></tr>
+<tr class="memdesc:gab8c47e653bf9fbfaf87b9f4c0fc74116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search character from string.  <a href="group__SceSysclibKernel.html#gab8c47e653bf9fbfaf87b9f4c0fc74116">More...</a><br /></td></tr>
+<tr class="separator:gab8c47e653bf9fbfaf87b9f4c0fc74116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb923ee2a7a01f82eb1e2f8ae188c6d4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gaeb923ee2a7a01f82eb1e2f8ae188c6d4">strstr</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:gaeb923ee2a7a01f82eb1e2f8ae188c6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search string from string.  <a href="group__SceSysclibKernel.html#gaeb923ee2a7a01f82eb1e2f8ae188c6d4">More...</a><br /></td></tr>
+<tr class="separator:gaeb923ee2a7a01f82eb1e2f8ae188c6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0a5fc154e624c9df744161f312e33c8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gae0a5fc154e624c9df744161f312e33c8">strlen</a> (const char *s)</td></tr>
+<tr class="memdesc:gae0a5fc154e624c9df744161f312e33c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string length.  <a href="group__SceSysclibKernel.html#gae0a5fc154e624c9df744161f312e33c8">More...</a><br /></td></tr>
+<tr class="separator:gae0a5fc154e624c9df744161f312e33c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabba74741b1db52c076fe5ea52ae8d3fb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gabba74741b1db52c076fe5ea52ae8d3fb">strnlen</a> (const char *s, unsigned int n)</td></tr>
+<tr class="memdesc:gabba74741b1db52c076fe5ea52ae8d3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string length with length limit.  <a href="group__SceSysclibKernel.html#gabba74741b1db52c076fe5ea52ae8d3fb">More...</a><br /></td></tr>
+<tr class="separator:gabba74741b1db52c076fe5ea52ae8d3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcf5444a8769d2e78fe515237c3c64b3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gadcf5444a8769d2e78fe515237c3c64b3">strncpy</a> (char *dst, const char *src, unsigned int n)</td></tr>
+<tr class="memdesc:gadcf5444a8769d2e78fe515237c3c64b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy string with length limit.  <a href="group__SceSysclibKernel.html#gadcf5444a8769d2e78fe515237c3c64b3">More...</a><br /></td></tr>
+<tr class="separator:gadcf5444a8769d2e78fe515237c3c64b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70c3a77badf767c803f3e21dd8b6e76d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga70c3a77badf767c803f3e21dd8b6e76d">snprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="separator:ga70c3a77badf767c803f3e21dd8b6e76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f4a06a03cfc388e615508ed1541d4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga2f4a06a03cfc388e615508ed1541d4e0">vsnprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
+<tr class="separator:ga2f4a06a03cfc388e615508ed1541d4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09258ebf752178ed64a321111a07742e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga09258ebf752178ed64a321111a07742e">__memcpy_chk</a> (void *dst, const void *src, unsigned int len, unsigned int dst_len)</td></tr>
+<tr class="separator:ga09258ebf752178ed64a321111a07742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e8edb477cb804d6a1ddd606f30d1283"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga3e8edb477cb804d6a1ddd606f30d1283">__memset_chk</a> (void *dst, int ch, unsigned int len, unsigned int dst_len)</td></tr>
+<tr class="separator:ga3e8edb477cb804d6a1ddd606f30d1283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2eb8e55c7f506ba7a711978380ac4642"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga2eb8e55c7f506ba7a711978380ac4642">__memmove_chk</a> (void *dst, const void *src, unsigned int len, unsigned int dst_len)</td></tr>
+<tr class="separator:ga2eb8e55c7f506ba7a711978380ac4642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8f77c972f57d2bde8b00116fd1c8346"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gac8f77c972f57d2bde8b00116fd1c8346">__strncpy_chk</a> (char *dst, const char *src, unsigned int n, unsigned int dst_len)</td></tr>
+<tr class="separator:gac8f77c972f57d2bde8b00116fd1c8346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9531929ae9e77d46d7083973175ce72b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga9531929ae9e77d46d7083973175ce72b">__attribute__</a> ((__noreturn__)) void __stack_chk_fail(void)</td></tr>
 <tr class="separator:ga9531929ae9e77d46d7083973175ce72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

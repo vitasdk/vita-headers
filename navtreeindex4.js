@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea05a8e87a3eba2b1088bdcfab2ed6758c":[1,2,2,0,33,1],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea05a8e87a3eba2b1088bdcfab2ed6758c":[1,2,2,0,38],
 "group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea1ed7d1ad6fcc8cdfb8e5147b59b97367":[4,0,1,0,6,33,18],
 "group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea1ed7d1ad6fcc8cdfb8e5147b59b97367":[1,2,2,0,33,18],
 "group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea1ed7d1ad6fcc8cdfb8e5147b59b97367":[1,2,2,0,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceAudioencUser.html#ggaf7cf2b85d40c07455fc4b1aa5c559238a9af7ba7a941a1e319e7faa43f572898c":[1,2,3,0,26],
 "group__SceBgAppUtil.html":[1,10,3],
 "group__SceBgAppUtilUser.html":[1,10,3,0],
-"group__SceBgAppUtilUser.html#ga58ddc1cc26361f4da36db9dbcbddd13f":[1,10,3,0,2],
-"group__SceBgAppUtilUser.html#ga58ddc1cc26361f4da36db9dbcbddd13f":[4,0,1,0,11,1],
-"group__SceBgAppUtilUser.html#ga670dfd5d08df905333592d61efb3fd21":[1,10,3,0,0]
+"group__SceBgAppUtilUser.html#ga58ddc1cc26361f4da36db9dbcbddd13f":[1,10,3,0,2]
 };
