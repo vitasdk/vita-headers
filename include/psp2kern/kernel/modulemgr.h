@@ -3,7 +3,6 @@
  * \usage{psp2kern/kernel/modulemgr.h,SceModulemgrForKernel_stub}
  */
 
-
 #ifndef _PSP2_KERNEL_MODULEMGR_H_
 #define _PSP2_KERNEL_MODULEMGR_H_
 
@@ -130,7 +129,8 @@ typedef struct SceKernelModuleLibraryInfo {
   SceSize size; //!< sizeof(SceKernelModuleLibraryInfo) : 0x120
   SceUID library_id;
   uint32_t libnid;
-  uint16_t libver[2];
+  uint16_t version;
+  uint16_t flags;
   uint16_t entry_num_function;
   uint16_t entry_num_variable;
   uint16_t unk_0x14;
