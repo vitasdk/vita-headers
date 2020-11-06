@@ -12,27 +12,27 @@
 extern "C" {
 #endif
 
-typedef enum SceDeviceTargetId {
-  SCE_TARGET_ID_NONE     = 0x00000000,
-  SCE_TARGET_ID_TEST     = 0x100, // Internal Test Unit
-  SCE_TARGET_ID_TOOL     = 0x101, // Development kit
-  SCE_TARGET_ID_DEX      = 0x102, // Testing kit
-  SCE_TARGET_ID_CEX_J1   = 0x103, // Japan
-  SCE_TARGET_ID_CEX_UC2  = 0x104, // united ctates
-  SCE_TARGET_ID_CEX_CEL  = 0x105,
-  SCE_TARGET_ID_CEX_KR2  = 0x106,
-  SCE_TARGET_ID_CEX_CEK  = 0x107,
-  SCE_TARGET_ID_CEX_MX2  = 0x108,
-  SCE_TARGET_ID_CEX_AU3  = 0x109,
-  SCE_TARGET_ID_CEX_E12  = 0x10A,
-  SCE_TARGET_ID_CEX_TW1  = 0x10B, // taiwan
-  SCE_TARGET_ID_CEX_RU3  = 0x10C,
-  SCE_TARGET_ID_CEX_CN9  = 0x10D,
-  SCE_TARGET_ID_CEX_HK5  = 0x10E,
-  SCE_TARGET_ID_CEX_RSV1 = 0x10F,
-  SCE_TARGET_ID_CEX_RSV2 = 0x110,
-  SCE_TARGET_ID_CEX_RSV3 = 0x111
-} SceDeviceTargetId;
+typedef enum SceProductCode {
+  SCE_PRODUCT_CODE_NONE     = 0x00000000,
+  SCE_PRODUCT_CODE_TEST     = 0x100, // Internal Test Unit
+  SCE_PRODUCT_CODE_TOOL     = 0x101, // Development kit
+  SCE_PRODUCT_CODE_DEX      = 0x102, // Testing kit
+  SCE_PRODUCT_CODE_CEX_J1   = 0x103, // Japan
+  SCE_PRODUCT_CODE_CEX_UC2  = 0x104, // united ctates
+  SCE_PRODUCT_CODE_CEX_CEL  = 0x105,
+  SCE_PRODUCT_CODE_CEX_KR2  = 0x106,
+  SCE_PRODUCT_CODE_CEX_CEK  = 0x107,
+  SCE_PRODUCT_CODE_CEX_MX2  = 0x108,
+  SCE_PRODUCT_CODE_CEX_AU3  = 0x109,
+  SCE_PRODUCT_CODE_CEX_E12  = 0x10A,
+  SCE_PRODUCT_CODE_CEX_TW1  = 0x10B, // taiwan
+  SCE_PRODUCT_CODE_CEX_RU3  = 0x10C,
+  SCE_PRODUCT_CODE_CEX_CN9  = 0x10D,
+  SCE_PRODUCT_CODE_CEX_HK5  = 0x10E,
+  SCE_PRODUCT_CODE_CEX_RSV1 = 0x10F,
+  SCE_PRODUCT_CODE_CEX_RSV2 = 0x110,
+  SCE_PRODUCT_CODE_CEX_RSV3 = 0x111
+} SceProductCode;
 
 /**
  * @brief Get service/manufacturing information(factory fw).
@@ -44,37 +44,40 @@ typedef enum SceDeviceTargetId {
 int ksceSblAimgrGetSMI(SceUInt32 *info);
 
 /**
- * @brief Get target id.
+ * @brief Get product code.
  *
- * @return SceDeviceTargetId
+ * @return see:SceProductCode.
  */
-int ksceSblAimgrGetTargetId(void);
+int ksceSblAimgrGetProductCode(void);
+
+/* Macro for backward compatibility */
+#define ksceSblAimgrGetTargetId() ksceSblAimgrGetProductCode()
 
 /**
  * @brief Get system type state.
  *
- * @return If target id is TEST, 1. else 0.
+ * @return If product code is TEST, 1. else 0.
  */
 int ksceSblAimgrIsTest(void);
 
 /**
  * @brief Get system type state.
  *
- * @return If target id is TOOL, 1. else 0.
+ * @return If product code is TOOL, 1. else 0.
  */
 int ksceSblAimgrIsTool(void);
 
 /**
  * @brief Get system type state.
  *
- * @return If target id is DEX, 1. else 0.
+ * @return If product code is DEX, 1. else 0.
  */
 int ksceSblAimgrIsDEX(void);
 
 /**
  * @brief Get system type state.
  *
- * @return If target id is CEX, 1. else 0.
+ * @return If product code is CEX, 1. else 0.
  */
 int ksceSblAimgrIsCEX(void);
 
@@ -111,4 +114,3 @@ int ksceSblAimgrIsGenuineDolce(void);
 #endif
 
 #endif /* _PSP2_KERNEL_SBLAIMGR_H_ */
-
