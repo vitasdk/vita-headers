@@ -15,6 +15,8 @@ extern "C" {
 /**
  * @brief Get process type state
  *
+ * @param[in]  pid - The target process id
+ *
  * @return If root mode process, 1. else 0.
  */
 int ksceSblACMgrIsSystem(SceUID pid);
@@ -23,6 +25,8 @@ int ksceSblACMgrIsSystem(SceUID pid);
 
 /**
  * @brief Get process type state
+ *
+ * @param[in]  pid - The target process id
  *
  * @return If system mode process, 1. else 0.
  */
@@ -33,12 +37,16 @@ int ksceSblACMgrIsShell(SceUID pid);
 /**
  * @brief Get process type state
  *
+ * @param[in]  pid - The target process id
+ *
  * @return If game mode process, 1. else 0.
  */
 int ksceSblACMgrIsGameProgram(SceUID pid);
 
 /**
  * @brief Get process type state
+ *
+ * @param[in]  pid - The target process id
  *
  * @return If non game mode process, 1. else 0.
  */
@@ -47,6 +55,8 @@ int ksceSblACMgrIsNonGameProgram(SceUID pid);
 /**
  * @brief Get process type state
  *
+ * @param[in]  pid - The target process id
+ *
  * @return If pspemu process, 1. else 0.
  */
 int ksceSblACMgrIsPspEmu(SceUID pid);
@@ -54,12 +64,16 @@ int ksceSblACMgrIsPspEmu(SceUID pid);
 /**
  * @brief Get process type state
  *
+ * @param[in]  pid - The target process id
+ *
  * @return If SceShell process(authid:0x2800000000000001), 1. else 0.
  */
 int ksceSblACMgrIsSceShell(SceUID pid);
 
 /**
  * @brief Get process type state
+ *
+ * @param[in]  pid - The target process id
  *
  * @return If fake self process, 1. else 0.
  */
