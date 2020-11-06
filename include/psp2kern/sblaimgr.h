@@ -50,6 +50,9 @@ int ksceSblAimgrGetSMI(SceUInt32 *info);
  */
 int ksceSblAimgrGetProductCode(void);
 
+/* Macro for backward compatibility */
+#define ksceSblAimgrGetTargetId() ksceSblAimgrGetProductCode()
+
 /**
  * @brief Get system type state.
  *
