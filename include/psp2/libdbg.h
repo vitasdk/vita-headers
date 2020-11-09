@@ -51,6 +51,7 @@ typedef enum SceDbgLogLevel {
 #define SCE_DBG_BREAK_ACTION asm volatile ("bkpt 0x0")
 #endif /* SCE_DBG_BREAK_ACTION */
 
+#ifndef NDEBUG
 /**
  * Assertion macro.
  * 
@@ -95,6 +96,17 @@ sceDbgLoggingHandler(__FILE__, __LINE__, logLevel, SCE_DBG_COMPONENT, msg, ##__V
 #define SCE_DBG_LOG_DEBUG(msg, ...) SCE_DBG_LOG(SCE_DBG_LOG_LEVEL_DEBUG, msg, ##__VA_ARGS__)
 #define SCE_DBG_LOG_WARNING(msg, ...) SCE_DBG_LOG(SCE_DBG_LOG_LEVEL_WARNING, msg, ##__VA_ARGS__)
 #define SCE_DBG_LOG_ERROR(msg, ...) SCE_DBG_LOG(SCE_DBG_LOG_LEVEL_ERROR, msg, ##__VA_ARGS__)
+#else // Disable macros if NDEBUG is defined.
+#define SCE_DBG_ASSERT(expression) 
+#define SCE_DBG_ASSERT_MSG(expression, msg, ...) 
+#define SCE_DBG_LOG(msg, ...)
+
+#define SCE_DBG_LOG_TRACE(msg, ...) 
+#define SCE_DBG_LOG_INFO(msg, ...) 
+#define SCE_DBG_LOG_DEBUG(msg, ...) 
+#define SCE_DBG_LOG_WARNING(msg, ...) 
+#define SCE_DBG_LOG_ERROR(msg, ...) 
+#endif /* NDEBUG */
 
 /**
  * Handler for assertion logging in this library. The complete formatted
