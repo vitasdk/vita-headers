@@ -60,7 +60,7 @@ typedef enum SceDbgLogLevel {
 #define SCE_DBG_ASSERT(expression) \
 do { \
 	if (!expression) { \
-		sceDbgAssertionHandler(__FILE__, __LINE__, SCE_DBG_BREAK_ON_ASSERT, SCE_DBG_COMPONENT, "Assertion ("#expression") failed.\n"); \
+		sceDbgAssertionHandler(__FILE__, __LINE__, 0, SCE_DBG_COMPONENT, "Assertion ("#expression") failed.\n"); \
 		if (SCE_DBG_BREAK_ON_ASSERT) \
 			SCE_DBG_BREAK_ACTION; \
 	} \
@@ -74,7 +74,7 @@ do { \
 #define SCE_DBG_ASSERT_MSG(expression, msg, ...) \
 do { \
 	if (!expression) { \
-		sceDbgAssertionHandler(__FILE__, __LINE__, SCE_DBG_BREAK_ON_ASSERT, SCE_DBG_COMPONENT, msg, ##__VA_ARGS__); \
+		sceDbgAssertionHandler(__FILE__, __LINE__, 0, SCE_DBG_COMPONENT, msg, ##__VA_ARGS__); \
 		if (SCE_DBG_BREAK_ON_ASSERT) \
 			SCE_DBG_BREAK_ACTION; \
 	} \
@@ -122,7 +122,7 @@ sceDbgLoggingHandler(__FILE__, __LINE__, logLevel, SCE_DBG_COMPONENT, msg, ##__V
  * 
  * @return Will return the unk parameter.
  */
-SceBool sceDbgAssertionHandler(const char* file, int line, SceBool unk, const char* component, const char* msg, ...);
+int sceDbgAssertionHandler(const char* file, int line, int unk, const char* component, const char* msg, ...);
 /**
  * Handler for logging in this library. The complete formatted 
  * output must not exceed 511 characters, so it is advised 
@@ -136,7 +136,7 @@ SceBool sceDbgAssertionHandler(const char* file, int line, SceBool unk, const ch
  * @param[in] component - Name of the component where the call was made. Optional field.
  * @param[in] msg       - printf formatted message.
  * 
- * @return 0 on success, <0 on error.
+ * @return 0 on success, <0 on truncation of message.
  */
 int sceDbgLoggingHandler(const char* file, int line, SceDbgLogLevel logLevel, const char* component, const char* msg, ...);
 
