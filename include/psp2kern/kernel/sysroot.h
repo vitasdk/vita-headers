@@ -141,7 +141,15 @@ int ksceKernelSysrootRegisterDbgpHandler(const SceSysrootDbgpHandler *handlers);
  */
 void ksceKernelSysrootUnregisterDbgpHandler(void);
 
-int ksceSysrootIsAuCodecIcConexant(void);
+/**
+ * Get hardware flags.
+ *
+ * @param[out] flags - The flags output buffer. size is 0x10 byte
+ *
+ * @return always 0.
+ */
+int ksceSysrootGetHardwareFlags(void *flags);
+
 int ksceSysrootIsBsodReboot(void);
 int ksceSysrootIsSafeMode(void);
 int ksceSysrootIsUpdateMode(void);
