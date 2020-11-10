@@ -1493,18 +1493,6 @@ modules:
           sceDTraceClientOpen: 0x761062E9
           sceDTraceHelperIoctl: 0x413C420E
           sceDTraceRemoveHelperDof: 0xF2C9207A
-  SceDbg:
-    nid: 0x0E0ABB49
-    libraries:
-      SceDbg:
-        kernel: false
-        nid: 0x623DF986
-        functions:
-          sceDbgAssertionHandler: 0x1AF3678B
-          sceDbgLoggingHandler: 0x6605AB19
-          sceDbgSetBreakOnErrorState: 0xED4A00BA
-          sceDbgSetBreakOnWarningState: 0x3DEAECD3
-          sceDbgSetMinimumLogLevel: 0x941622FA
   SceDeci4p:
     nid: 0x00000027
     libraries:
@@ -3186,6 +3174,18 @@ modules:
           ksceLcdSetBrightness: 0x581D3A87
           ksceLcdSetDisplayColorSpaceMode: 0xD40968FB
           ksceLcdWaitReady: 0x0C7E03D8
+  SceLibDbg:
+    nid: 0x0E0ABB49
+    libraries:
+      SceDbg:
+        kernel: false
+        nid: 0x623DF986
+        functions:
+          sceDbgAssertionHandler: 0x1AF3678B
+          sceDbgLoggingHandler: 0x6605AB19
+          sceDbgSetBreakOnErrorState: 0xED4A00BA
+          sceDbgSetBreakOnWarningState: 0x3DEAECD3
+          sceDbgSetMinimumLogLevel: 0x941622FA
   SceLibJson:
     nid: 0x7C9C6D58
     libraries:
