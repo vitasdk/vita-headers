@@ -4439,6 +4439,7 @@ modules:
           mktime: 0xD1A2DFC3
           mspace_calloc: 0x30470BBA
           mspace_create: 0xCEF7C575
+          mspace_create_internal: 0x0B0341EB
           mspace_create_with_flag: 0x055FCBC9
           mspace_destroy: 0x30CBBC66
           mspace_free: 0x3CDFD2A3
@@ -4642,6 +4643,7 @@ modules:
           _Stdout: 0x5D8C1282
           _Tolotab: 0xD662E07C
           _Touptab: 0x36878958
+          libc_heap_mspace: 0xC906BBD5
       SceLibm:
         kernel: false
         nid: 0xCDAE3C7D
