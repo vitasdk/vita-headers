@@ -17,7 +17,7 @@ var sysroot_8h =
     [ "ksceKernelSysrootSetProcessHandler", "group__SceKernelSysrootKernel.html#gaadec162afc0c11b580fae0a36f333987", null ],
     [ "ksceKernelSysrootRegisterDbgpHandler", "group__SceKernelSysrootKernel.html#ga58da727d4237506a42518109fb4942c6", null ],
     [ "ksceKernelSysrootUnregisterDbgpHandler", "group__SceKernelSysrootKernel.html#ga32e3a78c46dc693dbe913d420a3c2129", null ],
-    [ "ksceSysrootIsAuCodecIcConexant", "group__SceKernelSysrootKernel.html#gacaa3234b5249ebf589029c3aef47bcbc", null ],
+    [ "ksceSysrootGetHardwareFlags", "group__SceKernelSysrootKernel.html#ga24a5ef6014bede9f275c55bb54ac05e2", null ],
     [ "ksceSysrootIsBsodReboot", "group__SceKernelSysrootKernel.html#ga1eb8db1fbbb378ddf3a257c6514d8af4", null ],
     [ "ksceSysrootIsSafeMode", "group__SceKernelSysrootKernel.html#ga9e1ee712b0fb578cbb50311b0173e10a", null ],
     [ "ksceSysrootIsUpdateMode", "group__SceKernelSysrootKernel.html#ga4520b53a0aee5c469c31adf5bdd46262", null ],

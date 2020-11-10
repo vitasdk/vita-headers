@@ -120,8 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga32e3a78c46dc693dbe913d420a3c2129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga32e3a78c46dc693dbe913d420a3c2129">ksceKernelSysrootUnregisterDbgpHandler</a> (void)</td></tr>
 <tr class="memdesc:ga32e3a78c46dc693dbe913d420a3c2129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister Dbgp handlers.  <a href="group__SceKernelSysrootKernel.html#ga32e3a78c46dc693dbe913d420a3c2129">More...</a><br /></td></tr>
 <tr class="separator:ga32e3a78c46dc693dbe913d420a3c2129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacaa3234b5249ebf589029c3aef47bcbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#gacaa3234b5249ebf589029c3aef47bcbc">ksceSysrootIsAuCodecIcConexant</a> (void)</td></tr>
-<tr class="separator:gacaa3234b5249ebf589029c3aef47bcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24a5ef6014bede9f275c55bb54ac05e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga24a5ef6014bede9f275c55bb54ac05e2">ksceSysrootGetHardwareFlags</a> (void *flags)</td></tr>
+<tr class="memdesc:ga24a5ef6014bede9f275c55bb54ac05e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get hardware flags.  <a href="group__SceKernelSysrootKernel.html#ga24a5ef6014bede9f275c55bb54ac05e2">More...</a><br /></td></tr>
+<tr class="separator:ga24a5ef6014bede9f275c55bb54ac05e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1eb8db1fbbb378ddf3a257c6514d8af4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga1eb8db1fbbb378ddf3a257c6514d8af4">ksceSysrootIsBsodReboot</a> (void)</td></tr>
 <tr class="separator:ga1eb8db1fbbb378ddf3a257c6514d8af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e1ee712b0fb578cbb50311b0173e10a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga9e1ee712b0fb578cbb50311b0173e10a">ksceSysrootIsSafeMode</a> (void)</td></tr>
@@ -598,21 +599,30 @@ self_size</td>
 
 </div>
 </div>
-<a id="gacaa3234b5249ebf589029c3aef47bcbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacaa3234b5249ebf589029c3aef47bcbc">&#9670;&nbsp;</a></span>ksceSysrootIsAuCodecIcConexant()</h2>
+<a id="ga24a5ef6014bede9f275c55bb54ac05e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24a5ef6014bede9f275c55bb54ac05e2">&#9670;&nbsp;</a></span>ksceSysrootGetHardwareFlags()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceSysrootIsAuCodecIcConexant </td>
+          <td class="memname">int ksceSysrootGetHardwareFlags </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get hardware flags. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The flags output buffer. size is 0x10 byte</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>always 0. </dd></dl>
 
 </div>
 </div>
