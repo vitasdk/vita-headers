@@ -2345,6 +2345,38 @@ modules:
           sceHidMouseRegisterReadHintCallback: 0x90C5CB0A
           sceHidMouseUnregisterEnumHintCallback: 0x3E005E5B
           sceHidMouseUnregisterReadHintCallback: 0xAC591B15
+      SceHidForDriver:
+        kernel: true
+        nid: 0xB6000991
+        functions:
+          ksceHidConsumerControlEnumerate: 0xA60E34F7
+          ksceHidConsumerControlRead: 0x88F3ECF1
+          ksceHidConsumerControlRegisterEnumHintCallback: 0x7F444D9C
+          ksceHidConsumerControlRegisterReadHintCallback: 0x710B353C
+          ksceHidConsumerControlUnregisterEnumHintCallback: 0x6FFC9302
+          ksceHidConsumerControlUnregisterReadHintCallback: 0x3EC4E469
+          ksceHidControllerEnumerate: 0x480D225F
+          ksceHidControllerRead: 0xF7470359
+          ksceHidControllerRegisterEnumHintCallback: 0x8DE66028
+          ksceHidControllerRegisterReadHintCallback: 0xD658B068
+          ksceHidControllerUnregisterEnumHintCallback: 0xFC1C743A
+          ksceHidControllerUnregisterReadHintCallback: 0x42B43C21
+          ksceHidKeyboardClear: 0x8CB405AE
+          ksceHidKeyboardEnumerate: 0x270FAB21
+          ksceHidKeyboardGetIntercept: 0x18DE9BB0
+          ksceHidKeyboardPeek: 0x1BE424FE
+          ksceHidKeyboardRead: 0x4BC07107
+          ksceHidKeyboardRegisterEnumHintCallback: 0x21A23FCD
+          ksceHidKeyboardRegisterReadHintCallback: 0xB0B22694
+          ksceHidKeyboardSetIntercept: 0x754E48DF
+          ksceHidKeyboardUnregisterEnumHintCallback: 0x69DEE02F
+          ksceHidKeyboardUnregisterReadHintCallback: 0x050351F2
+          ksceHidMouseEnumerate: 0xA26B1E1C
+          ksceHidMouseRead: 0xF655462B
+          ksceHidMouseRegisterEnumHintCallback: 0x141CA100
+          ksceHidMouseRegisterReadHintCallback: 0x41690428
+          ksceHidMouseUnregisterEnumHintCallback: 0x9AFBB275
+          ksceHidMouseUnregisterReadHintCallback: 0x63776265
   SceHttp:
     nid: 0xB015B405
     libraries:
