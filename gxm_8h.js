@@ -621,6 +621,7 @@ var gxm_8h =
       [ "SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP_ABGR", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42aed8f68ed086c5806b61c3b0c330ff6a2", null ],
       [ "SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP_1BGR", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42ad6d3de9169f03dcd3a07a5566c39dbd4", null ],
       [ "SCE_GXM_TEXTURE_FORMAT_UBC1_ABGR", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42a795589f2c696e5dd53642a7c20ab617d", null ],
+      [ "SCE_GXM_TEXTURE_FORMAT_UBC1_1BGR", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42aed986a89f0863948bf73a6615fe728f7", null ],
       [ "SCE_GXM_TEXTURE_FORMAT_UBC2_ABGR", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42a8bc4d4400a601f60b3fa0bfb6e1714e1", null ],
       [ "SCE_GXM_TEXTURE_FORMAT_UBC3_ABGR", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42aa21f917deaa09cc67859c5cb60268936", null ],
       [ "SCE_GXM_TEXTURE_FORMAT_YUV420P2_CSC0", "group__SceGxmUser.html#gga29791baa70d7bf199afdb50b8e510d42adfef066f194dcb863e165dd77478205e", null ],
