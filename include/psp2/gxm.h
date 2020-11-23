@@ -1016,13 +1016,13 @@ typedef enum SceGxmTransferType {
 } SceGxmTransferType;
 
 typedef struct SceGxmBlendInfo {
-	SceGxmColorMask colorMask;
-	SceGxmBlendFunc colorFunc : 4;
-	SceGxmBlendFunc alphaFunc : 4;
-	SceGxmBlendFactor colorSrc : 4;
-	SceGxmBlendFactor colorDst : 4;
-	SceGxmBlendFactor alphaSrc : 4;
-	SceGxmBlendFactor alphaDst : 4;
+	uint8_t colorMask;     //!< Color Mask (One of ::SceGxmColorMask)
+	uint8_t colorFunc : 4; //!< Color blend function (One of ::SceGxmBlendFunc)
+	uint8_t alphaFunc : 4; //!< Alpha blend function (One of ::SceGxmBlendFunc)
+	uint8_t colorSrc : 4;  //!< Color source blend factor (One of ::SceGxmBlendFactor)
+	uint8_t colorDst : 4;  //!< Color destination blend factor (One of ::SceGxmBlendFactor)
+	uint8_t alphaSrc : 4;  //!< Alpha source blend factor (One of ::SceGxmBlendFactor)
+	uint8_t alphaDst : 4;  //!< Alpha destination blend factor (One of ::SceGxmBlendFactor)
 } SceGxmBlendInfo;
 
 typedef struct SceGxmRenderTarget SceGxmRenderTarget;
@@ -1030,59 +1030,68 @@ typedef struct SceGxmRenderTarget SceGxmRenderTarget;
 typedef struct SceGxmSyncObject SceGxmSyncObject;
 
 typedef struct SceGxmVertexAttribute {
-	unsigned short streamIndex;
-	unsigned short offset;
-	SceGxmAttributeFormat format;
-	unsigned char componentCount;
-	unsigned short regIndex;
+	uint16_t streamIndex;   //!< Vertex stream index
+	uint16_t offset;        //!< Offset for the stream data in bytes
+	uint8_t format;         //!< Stream data type (One of ::SceGxmAttributeFormat)
+	uint8_t componentCount; //!< Number of components for the stream data
+	uint16_t regIndex;      //!< The register index in the vertex shader to link stream to.
 } SceGxmVertexAttribute;
 
 typedef struct SceGxmVertexStream {
-	unsigned short stride;
-	unsigned short indexSource;
+	uint16_t stride;
+	uint16_t indexSource;
 } SceGxmVertexStream;
 
 //! Texture struct
 typedef struct SceGxmTexture {
 	// Control Word 0
-	uint32_t unk0 : 1;                //!< Unknown field
-	uint32_t stride_ext : 2;          //!< Stride extension for a LINEAR_STRIDED texture
-	uint32_t vaddr_mode : 3;          //!< V Address Mode
-	uint32_t uaddr_mode : 3;          //!< U Address Mode
 	union {
-		struct {
+		struct { // Non LINEAR_STRIDED textures
+			uint32_t unk0 : 1;        //!< Unknown field
+			uint32_t stride_ext : 2;  //!< Stride extension for a LINEAR_STRIDED texture
+			uint32_t vaddr_mode : 3;  //!< V Address Mode
+			uint32_t uaddr_mode : 3;  //!< U Address Mode
 			uint32_t mip_filter : 1;  //!< Mip filter for a non LINEAR_STRIDED texture
 			uint32_t min_filter : 2;  //!< Min filter for a non LINEAR_STRIDED texture)
-		};
-		uint32_t stride_low : 3;      //!< Internal stride lower bits for a LINEAR_STRIDED texture
-	};
-	uint32_t mag_filter : 2;          //!< Mag Filter (and Min filter if LINEAR_STRIDED texture)
-	uint32_t unk1 : 3;                //!< Unknown field
-	union {
-		struct {
+			uint32_t mag_filter : 2;  //!< Mag Filter (and Min filter if LINEAR_STRIDED texture)
+			uint32_t unk1 : 3;        //!< Unknown field
 			uint32_t mip_count : 4;   //!< Mip count for a non LINEAR_STRIDED texture
 			uint32_t lod_bias : 6;    //!< Level of Details value for a non LINEAR_STRIDED texture
-		};
-		uint32_t stride : 10;         //!< Stride for a LINEAR_STRIDED texture
+			uint32_t gamma_mode : 2;  //!< Gamma mode
+			uint32_t unk2 : 2;        //!< Unknown field
+			uint32_t format0 : 1;     //!< Texture format extension
+		} generic;
+		struct { // LINEAR_STRIDED textures
+			uint32_t unk0 : 1;        //!< Unknown field
+			uint32_t stride_ext : 2;  //!< Stride extension for a LINEAR_STRIDED texture
+			uint32_t vaddr_mode : 3;  //!< V Address Mode
+			uint32_t uaddr_mode : 3;  //!< U Address Mode
+			uint32_t stride_low : 3;  //!< Internal stride lower bits for a LINEAR_STRIDED texture
+			uint32_t mag_filter : 2;  //!< Mag Filter (and Min filter if LINEAR_STRIDED texture)
+			uint32_t unk1 : 3;        //!< Unknown field
+			uint32_t stride : 10;     //!< Stride for a LINEAR_STRIDED texture
+			uint32_t gamma_mode : 2;  //!< Gamma mode
+			uint32_t unk2 : 2;        //!< Unknown field
+			uint32_t format0 : 1;     //!< Texture format extension
+		} linear_strided;
 	};
-	uint32_t gamma_mode : 2;          //!< Gamma mode
-	uint32_t unk2 : 2;                //!< Unknown field
-	uint32_t format0 : 1;             //!< Texture format extension
 	// Control Word 1
 	union {
-		struct {
+		struct { // Non SWIZZLED and non CUBE textures
 			uint32_t height : 12;     //!< Texture height for non SWIZZLED and non CUBE textures
 			uint32_t width : 12;      //!< Texture width for non SWIZZLED and non CUBE textures
-		};
-		struct {
+			uint32_t base_format : 5; //!< Texture base format
+			uint32_t type : 3;        //!< Texture format type
+		} generic2;
+		struct { // SWIZZLED and CUBE textures
 			uint32_t height_pot : 4;  //!< Power of 2 height value for SWIZZLED and CUBE textures
 			uint32_t reserved0 : 12;  //!< Reserved field
 			uint32_t width_pot : 4;   //!< Power of 2 width value for SWIZZLED and CUBE textures
 			uint32_t reserved1 : 4;   //!< Reserved field
-		};
+			uint32_t base_format : 5; //!< Texture base format
+			uint32_t type : 3;        //!< Texture format type
+		} swizzled_cube;
 	};
-	uint32_t base_format : 5;         //!< Texture base format
-	uint32_t type : 3;                //!< Texture format type
 	// Control Word 2
 	uint32_t lod_min0 : 2;            //!< Level of Details higher bits
 	uint32_t data_addr : 30;          //!< Texture data address
