@@ -42,6 +42,9 @@ typedef enum SceKernelModuleState {
  * </code>
  *
  * And these are only valid for modules in the process image, preload is not inhibited even if specified for modules to be loaded later.
+ *
+ * WARNING
+ * If SceLibNet etc. is loaded without SceShellSvc etc. loaded, an unintended system crash will occur.
  */
 typedef enum SceKernelPreloadInhibit {
 	SCE_KERNEL_PRELOAD_INHIBIT_NONE        = 0x00000000,
