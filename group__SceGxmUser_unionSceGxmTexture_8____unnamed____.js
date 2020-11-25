@@ -1,4 +1,5 @@
 var group__SceGxmUser_unionSceGxmTexture_8____unnamed____ =
 [
-    [ "stride", "group__SceGxmUser.html#a47101375aa96fa02cfb1d55fd00af989", null ]
+    [ "generic2", "group__SceGxmUser.html#a0a454dce1e3512aace652c12ba85ae83", null ],
+    [ "swizzled_cube", "group__SceGxmUser.html#aa4be2f48ecf29fcc735ec8b4f15ad6ec", null ]
 ];
