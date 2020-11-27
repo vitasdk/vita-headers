@@ -269,6 +269,7 @@ var annotated_dup =
     [ "SceNotificationUtilProgressInitParam", "group__SceNotificationUtilUser.html#structSceNotificationUtilProgressInitParam", "group__SceNotificationUtilUser_structSceNotificationUtilProgressInitParam" ],
     [ "SceNotificationUtilProgressUpdateParam", "group__SceNotificationUtilUser.html#structSceNotificationUtilProgressUpdateParam", "group__SceNotificationUtilUser_structSceNotificationUtilProgressUpdateParam" ],
     [ "SceNpCommunicationId", "group__SceNetCheckDialogUser.html#structSceNpCommunicationId", "group__SceNetCheckDialogUser_structSceNpCommunicationId" ],
+    [ "SceNpDrmLicense", "group__SceNpDrmUser.html#structSceNpDrmLicense", "group__SceNpDrmUser_structSceNpDrmLicense" ],
     [ "SceObjectBase", "group__SceSysmemKernel.html#structSceObjectBase", "group__SceSysmemKernel_structSceObjectBase" ],
     [ "SceProcEventHandler", "group__SceProcEventKernel.html#structSceProcEventHandler", "group__SceProcEventKernel_structSceProcEventHandler" ],
     [ "SceProcEventInvokeParam1", "group__SceProcEventKernel.html#structSceProcEventInvokeParam1", "group__SceProcEventKernel_structSceProcEventInvokeParam1" ],
