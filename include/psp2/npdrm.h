@@ -42,26 +42,22 @@ typedef struct SceNpDrmLicense { // size is 0x200
  *
  * @param[out] rif_name - RIF name buffer (48 bytes)
  *
- * @param[in] unk - Unknown, use 0
- *
  * @param[in] aid - Account ID
  *
  * @return 0 on success, < 0 on error.
 */
-int _sceNpDrmGetRifName(char *rif_name, int unk, uint64_t aid);
+int _sceNpDrmGetRifName(char *rif_name, uint64_t aid);
 
 /**
  * Get fixed rif name
  *
  * @param[out] rif_name - RIF name buffer (48 bytes)
  *
- * @param[in] unk - Unknown, use 0
- *
  * @param[in] aid - Account ID
  *
  * @return 0 on success, < 0 on error.
 */
-int _sceNpDrmGetFixedRifName(char *rif_name, int unk, uint64_t aid);
+int _sceNpDrmGetFixedRifName(char *rif_name, uint64_t aid);
 
 /**
  * Get rif name for install
@@ -81,4 +77,3 @@ int _sceNpDrmGetRifNameForInstall(char *rif_name, const void *rif_data, int unk)
 #endif
 
 #endif /* _PSP2_NPDRM_H_ */
-
