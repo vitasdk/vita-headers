@@ -2287,11 +2287,43 @@ modules:
           sceGxmVertexFence: 0xE05277D6
           sceGxmVertexProgramGetProgram: 0xBC52320E
           sceGxmWaitEvent: 0x8BD94593
+      SceGxmInternal:
+        kernel: false
+        nid: 0x3FE654E6
+        functions:
+          sceGxmCheckMemoryInternal: 0x88B424FB
+          sceGxmCreateRenderTargetInternal: 0xC8A0F04E
+          sceGxmGetDisplayQueueThreadIdInternal: 0xAB1D9466
+          sceGxmGetRenderTargetMemSizeInternal: 0x4DD98588
+          sceGxmGetTopContextInternal: 0x90EE6A28
+          sceGxmInitializedInternal: 0xC8E9F108
+          sceGxmIsInitializationInternal: 0xEC82DB20
+          sceGxmMapFragmentUsseMemoryInternal: 0xB9391D22
+          sceGxmMapVertexUsseMemoryInternal: 0x5694B569
+          sceGxmRenderingContextIsWithinSceneInternal: 0xB56413BB
+          sceGxmSetCallbackInternal: 0x56CDD9AD
+          sceGxmSetInitializeParamInternal: 0x3FC5E110
+          sceGxmUnmapFragmentUsseMemoryInternal: 0xC29B9B82
+          sceGxmUnmapVertexUsseMemoryInternal: 0xD7506735
+      SceGxmInternalForGles:
+        kernel: false
+        nid: 0x83149CAD
+        functions:
+          sceGxmShaderPatcherCreateFragmentProgramForGles: 0x83149CAD
+      SceGxmInternalForReplay:
+        kernel: false
+        nid: 0xA64BEF47
+        functions:
+          sceGxmGetReplayRenderTargetMemSize: 0xEFA222AF
       SceGxmInternalForVsh:
         kernel: false
         nid: 0xC98AEB79
         functions:
           sceGxmVshInitialize: 0xA04F5FAC
+          sceGxmVshSyncObjectClose: 0xBEB4F93D
+          sceGxmVshSyncObjectCreate: 0x2A956594
+          sceGxmVshSyncObjectDestroy: 0x9B8FC52F
+          sceGxmVshSyncObjectOpen: 0xAD3FE572
   SceHandwriting:
     nid: 0x18983E63
     libraries:
