@@ -59,7 +59,7 @@ typedef enum SceDbgLogLevel {
  */
 #define SCE_DBG_ASSERT(expression) \
 do { \
-	if (!expression) { \
+	if (!(expression)) { \
 		sceDbgAssertionHandler(__FILE__, __LINE__, 0, SCE_DBG_COMPONENT, "Assertion ("#expression") failed.\n"); \
 		if (SCE_DBG_BREAK_ON_ASSERT) \
 			SCE_DBG_BREAK_ACTION; \
@@ -73,7 +73,7 @@ do { \
  */
 #define SCE_DBG_ASSERT_MSG(expression, msg, ...) \
 do { \
-	if (!expression) { \
+	if (!(expression)) { \
 		sceDbgAssertionHandler(__FILE__, __LINE__, 0, SCE_DBG_COMPONENT, msg, ##__VA_ARGS__); \
 		if (SCE_DBG_BREAK_ON_ASSERT) \
 			SCE_DBG_BREAK_ACTION; \
