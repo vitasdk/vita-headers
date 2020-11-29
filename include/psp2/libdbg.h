@@ -16,11 +16,12 @@ extern "C" {
  * Logging level for sceDbgLoggingHandler.
  */
 typedef enum SceDbgLogLevel {
-	SCE_DBG_LOG_LEVEL_TRACE   = 0,
-	SCE_DBG_LOG_LEVEL_DEBUG   = 1,
-	SCE_DBG_LOG_LEVEL_INFO    = 2,
-	SCE_DBG_LOG_LEVEL_WARNING = 3,
-	SCE_DBG_LOG_LEVEL_ERROR   = 4
+	SCE_DBG_LOG_LEVEL_TRACE = 0, /* An extremely verbose logging level, mostly useful for internal developers. */
+	SCE_DBG_LOG_LEVEL_DEBUG,     /* A diagnostic logging level. */
+	SCE_DBG_LOG_LEVEL_INFO,      /* An informational logging level. */
+	SCE_DBG_LOG_LEVEL_WARNING,   /* A logging level that gives warnings of situations detrimental to proper execution. */
+	SCE_DBG_LOG_LEVEL_ERROR,     /* A logging level that will report erroneous conditions in execution. */
+	SCE_DBG_NUM_LOG_LEVELS       /* The number of logging levels available. */
 } SceDbgLogLevel;
 
 /**
