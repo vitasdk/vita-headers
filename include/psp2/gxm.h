@@ -1204,7 +1204,7 @@ typedef struct SceGxmPrecomputedDraw {
 } SceGxmPrecomputedDraw;
 
 #define SCE_GXM_MAX_VERTEX_ATTRIBUTES   16
-#define SCE_GXM_MAX_VERTEX_STREAMS      4
+#define SCE_GXM_MAX_VERTEX_STREAMS      16
 #define SCE_GXM_MAX_TEXTURE_UNITS       16
 #define SCE_GXM_MAX_UNIFORM_BUFFERS     8
 #define SCE_GXM_MAX_AUXILIARY_SURFACES  3
