@@ -212,7 +212,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
-<div class="line">    if (!expression) { \</div>
+<div class="line">    if (!(expression)) { \</div>
 <div class="line">        sceDbgAssertionHandler(__FILE__, __LINE__, 0, <a class="code" href="group__SceLibDbgUser.html#ga188ced672d016720e56bf6d8620bad4f">SCE_DBG_COMPONENT</a>, <span class="stringliteral">&quot;Assertion (&quot;</span>#expression<span class="stringliteral">&quot;) failed.\n&quot;</span>); \</div>
 <div class="line">        if (<a class="code" href="group__SceLibDbgUser.html#gabb590d1619b701c4062558efdf2ec77b">SCE_DBG_BREAK_ON_ASSERT</a>) \</div>
 <div class="line">            SCE_DBG_BREAK_ACTION; \</div>
@@ -261,7 +261,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
-<div class="line">    if (!expression) { \</div>
+<div class="line">    if (!(expression)) { \</div>
 <div class="line">        sceDbgAssertionHandler(__FILE__, __LINE__, 0, <a class="code" href="group__SceLibDbgUser.html#ga188ced672d016720e56bf6d8620bad4f">SCE_DBG_COMPONENT</a>, msg, ##__VA_ARGS__); \</div>
 <div class="line">        if (<a class="code" href="group__SceLibDbgUser.html#gabb590d1619b701c4062558efdf2ec77b">SCE_DBG_BREAK_ON_ASSERT</a>) \</div>
 <div class="line">            SCE_DBG_BREAK_ACTION; \</div>

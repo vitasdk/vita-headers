@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('libdbg_8h_source.html',''); initResiza
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group__SceLibDbgUser.html#gaf65327e9d6a9d151d74fed8cbdea4edf">   60</a></span>&#160;<span class="preprocessor">#define SCE_DBG_ASSERT(expression) \</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">do { \</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    if (!expression) { \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    if (!(expression)) { \</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">        sceDbgAssertionHandler(__FILE__, __LINE__, 0, SCE_DBG_COMPONENT, &quot;Assertion (&quot;#expression&quot;) failed.\n&quot;); \</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">        if (SCE_DBG_BREAK_ON_ASSERT) \</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">            SCE_DBG_BREAK_ACTION; \</span></div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('libdbg_8h_source.html',''); initResiza
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group__SceLibDbgUser.html#ga5f3c1b359c35d858eeed92509683ab62">   74</a></span>&#160;<span class="preprocessor">#define SCE_DBG_ASSERT_MSG(expression, msg, ...) \</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">do { \</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    if (!expression) { \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    if (!(expression)) { \</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">        sceDbgAssertionHandler(__FILE__, __LINE__, 0, SCE_DBG_COMPONENT, msg, ##__VA_ARGS__); \</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">        if (SCE_DBG_BREAK_ON_ASSERT) \</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">            SCE_DBG_BREAK_ACTION; \</span></div>
