@@ -2023,6 +2023,13 @@ modules:
         kernel: false
         nid: 0xF76B66BD
         functions:
+          _sceGxmBeginScene: 0xDBA33160
+          _sceGxmMidSceneFlush: 0x51FE0899
+          _sceGxmProgramFindParameterBySemantic: 0x7FFFDD7A
+          _sceGxmProgramParameterGetSemantic: 0xAAFD61D5
+          _sceGxmSetVertexTexture: 0x16C9D339
+          _sceGxmTextureSetHeight: 0x1B20D5DF
+          _sceGxmTextureSetWidth: 0x5A690B60
           sceGxmAddRazorGpuCaptureBuffer: 0xE9E81073
           sceGxmBeginCommandList: 0x944D3F83
           sceGxmBeginScene: 0x8734FF4E
