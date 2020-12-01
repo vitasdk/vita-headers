@@ -13,6 +13,7 @@ var debug_8h =
       [ "SCE_DBG_LOG_LEVEL_INFO", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19babed517df5a922d44f96d36fb6d157a11", null ],
       [ "SCE_DBG_LOG_LEVEL_WARNING", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19ba482bfd30808cf8f169626d5c30fb4b9a", null ],
       [ "SCE_DBG_LOG_LEVEL_ERROR", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19ba4ec7c30a86f6150c8883c88035a024d0", null ],
+      [ "SCE_DBG_NUM_LOG_LEVELS", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19ba45ce3d26fe32eee77d4e4a4445b97f31", null ],
       [ "SCE_DBG_LOG_LEVEL_TRACE", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19ba428c03a4760781ca5b581d99970bc06d", null ],
       [ "SCE_DBG_LOG_LEVEL_DEBUG", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19ba0edb13b198303462bc9e93149184e405", null ],
       [ "SCE_DBG_LOG_LEVEL_INFO", "group__SceKernelDebugKernel.html#ggaee1e714d35e2e5aedf86b89b7327d19babed517df5a922d44f96d36fb6d157a11", null ],

@@ -1,6 +1,5 @@
 var group__Miscellaneous =
 [
-    [ "Debug Library", "group__SceLibDbg.html", "group__SceLibDbg" ],
     [ "Fiber Library", "group__SceFiber.html", "group__SceFiber" ],
     [ "Sqlite Library", "group__SceSqlite.html", "group__SceSqlite" ],
     [ "Json Library", "group__SceLibJson.html", "group__SceLibJson" ],
