@@ -15,6 +15,21 @@ extern "C" {
 #endif
 
 /**
+ * A handle for a managed memory space.
+ */
+typedef void* SceClibMspace;
+
+/**
+ * Structure for stats of SceClibMspace
+ */
+typedef struct SceClibMspaceStats {
+    SceSize capacity;       //!< Capacity of the Mspace
+    SceSize unk;            //!< Unknown, value is equal to capacity
+    SceSize peak_in_use;    //!< Peak memory allocated
+    SceSize current_in_use; //!< Current memory allocated
+} SceClibMspaceStats;
+
+/**
  * Run bkpt #0x88 and end the process in state -1
  *
  * @return none
@@ -50,6 +65,22 @@ void *sceClibMemmove(void *dst, const void *src, SceSize len);
 int sceClibMemcmp(const void *s1, const void *s2, SceSize len);
 
 void *sceClibMemchr(const void *src, int ch, SceSize len);
+
+SceClibMspace sceClibMspaceCreate(void* memblock, SceSize size);
+void sceClibMspaceDestroy(SceClibMspace mspace);
+
+SceSize sceClibMspaceMallocUsableSize(void *ptr);
+SceBool sceClibMspaceIsHeapEmpty(SceClibMspace mspace);
+
+void sceClibMspaceMallocStats(SceClibMspace mspace, SceClibMspaceStats *stats);
+void sceClibMspaceMallocStatsFast(SceClibMspace mspace, SceClibMspaceStats *stats);
+
+void *sceClibMspaceMalloc(SceClibMspace mspace, SceSize size);
+void *sceClibMspaceCalloc(SceClibMspace mspace, SceSize num, SceSize size);
+void *sceClibMspaceRealloc(SceClibMspace mspace, void *ptr, SceSize size);
+void *sceClibMspaceReallocalign(SceClibMspace mspace, void *ptr, SceSize size, SceSize alignment);
+void *sceClibMspaceMemalign(SceClibMspace mspace, SceSize alignment, SceSize size);
+void sceClibMspaceFree(SceClibMspace mspace, void *ptr);
 
 #ifdef __cplusplus
 }
