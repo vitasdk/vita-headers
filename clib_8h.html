@@ -73,6 +73,8 @@ $(document).ready(function(){initNavTree('clib_8h.html',''); initResizable(); })
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">clib.h File Reference</div>  </div>
@@ -83,6 +85,18 @@ $(document).ready(function(){initNavTree('clib_8h.html',''); initResizable(); })
 </div>
 <p><a href="clib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceClibMspaceStats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a></td></tr>
+<tr class="memdesc:structSceClibMspaceStats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for stats of SceClibMspace.  <a href="group__SceCLibUser.html#structSceClibMspaceStats">More...</a><br /></td></tr>
+<tr class="separator:structSceClibMspaceStats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a></td></tr>
+<tr class="memdesc:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle for a managed memory space.  <a href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">More...</a><br /></td></tr>
+<tr class="separator:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gac7e43931cbb0c6fad394caa44c21de0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gac7e43931cbb0c6fad394caa44c21de0f">sceClibAbort</a> (void)</td></tr>
@@ -128,6 +142,30 @@ Functions</h2></td></tr>
 <tr class="separator:ga5924173d05f406fcb5ddc1e5f53f7ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga392f6668971778b1bcac9ff49fc8e05f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga392f6668971778b1bcac9ff49fc8e05f">sceClibMemchr</a> (const void *src, int ch, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
 <tr class="separator:ga392f6668971778b1bcac9ff49fc8e05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86613170739cd5b2df195dbd981c8a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga86613170739cd5b2df195dbd981c8a6c">sceClibMspaceCreate</a> (void *memblock, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga86613170739cd5b2df195dbd981c8a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae88053cf19740e64653dd706fb25b216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gae88053cf19740e64653dd706fb25b216">sceClibMspaceDestroy</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace)</td></tr>
+<tr class="separator:gae88053cf19740e64653dd706fb25b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0dc926dbe136816c7a5424e3f071d89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gad0dc926dbe136816c7a5424e3f071d89">sceClibMspaceMallocUsableSize</a> (void *ptr)</td></tr>
+<tr class="separator:gad0dc926dbe136816c7a5424e3f071d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30e81b2578da554423223bf46d285ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga30e81b2578da554423223bf46d285ab5">sceClibMspaceIsHeapEmpty</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace)</td></tr>
+<tr class="separator:ga30e81b2578da554423223bf46d285ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0756ac6265937a190333d46b6b50458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gad0756ac6265937a190333d46b6b50458">sceClibMspaceMallocStats</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a> *stats)</td></tr>
+<tr class="separator:gad0756ac6265937a190333d46b6b50458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad18a06bf4d27776d01b8a9ea2c0f14d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gad18a06bf4d27776d01b8a9ea2c0f14d5">sceClibMspaceMallocStatsFast</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a> *stats)</td></tr>
+<tr class="separator:gad18a06bf4d27776d01b8a9ea2c0f14d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89fd24be2159a25dcda44fdb350cdca1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga89fd24be2159a25dcda44fdb350cdca1">sceClibMspaceMalloc</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga89fd24be2159a25dcda44fdb350cdca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e4b8932ee48f1b87db94e4fd5107131"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga2e4b8932ee48f1b87db94e4fd5107131">sceClibMspaceCalloc</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga2e4b8932ee48f1b87db94e4fd5107131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bae11351a3e8d1cd248301ac9e817ca"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga1bae11351a3e8d1cd248301ac9e817ca">sceClibMspaceRealloc</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga1bae11351a3e8d1cd248301ac9e817ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fd063ce8567a4d02a733d44ceb2c084"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084">sceClibMspaceReallocalign</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> alignment)</td></tr>
+<tr class="separator:ga7fd063ce8567a4d02a733d44ceb2c084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4830ee2ab25aca98bab80c7955b061c5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga4830ee2ab25aca98bab80c7955b061c5">sceClibMspaceMemalign</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> alignment, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga4830ee2ab25aca98bab80c7955b061c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a8047787a952d4153624247bfd1c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga16a8047787a952d4153624247bfd1c5e">sceClibMspaceFree</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr)</td></tr>
+<tr class="separator:ga16a8047787a952d4153624247bfd1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

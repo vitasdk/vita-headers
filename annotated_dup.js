@@ -70,6 +70,7 @@ var annotated_dup =
     [ "SceCameraInfo", "group__SceCameraUser.html#structSceCameraInfo", "group__SceCameraUser_structSceCameraInfo" ],
     [ "SceCameraRead", "group__SceCameraUser.html#structSceCameraRead", "group__SceCameraUser_structSceCameraRead" ],
     [ "SceClass", "group__SceSysmemKernel.html#structSceClass", "group__SceSysmemKernel_structSceClass" ],
+    [ "SceClibMspaceStats", "group__SceCLibUser.html#structSceClibMspaceStats", "group__SceCLibUser_structSceClibMspaceStats" ],
     [ "SceCommonDialogColor", "group__SceCommonDialogUser.html#structSceCommonDialogColor", "group__SceCommonDialogUser_structSceCommonDialogColor" ],
     [ "SceCommonDialogConfigParam", "group__SceCommonDialogUser.html#structSceCommonDialogConfigParam", "group__SceCommonDialogUser_structSceCommonDialogConfigParam" ],
     [ "SceCommonDialogInfobarParam", "group__SceCommonDialogUser.html#structSceCommonDialogInfobarParam", "group__SceCommonDialogUser_structSceCommonDialogInfobarParam" ],

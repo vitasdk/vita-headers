@@ -73,7 +73,8 @@ $(document).ready(function(){initNavTree('group__SceCLibUser.html',''); initResi
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">User<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceCLib.html">C Standard Library</a></div></div>  </div>
 </div><!--header-->
@@ -132,7 +133,97 @@ Functions</h2></td></tr>
 <tr class="separator:ga5924173d05f406fcb5ddc1e5f53f7ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga392f6668971778b1bcac9ff49fc8e05f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga392f6668971778b1bcac9ff49fc8e05f">sceClibMemchr</a> (const void *src, int ch, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
 <tr class="separator:ga392f6668971778b1bcac9ff49fc8e05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86613170739cd5b2df195dbd981c8a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga86613170739cd5b2df195dbd981c8a6c">sceClibMspaceCreate</a> (void *memblock, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga86613170739cd5b2df195dbd981c8a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae88053cf19740e64653dd706fb25b216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gae88053cf19740e64653dd706fb25b216">sceClibMspaceDestroy</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace)</td></tr>
+<tr class="separator:gae88053cf19740e64653dd706fb25b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0dc926dbe136816c7a5424e3f071d89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gad0dc926dbe136816c7a5424e3f071d89">sceClibMspaceMallocUsableSize</a> (void *ptr)</td></tr>
+<tr class="separator:gad0dc926dbe136816c7a5424e3f071d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30e81b2578da554423223bf46d285ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga30e81b2578da554423223bf46d285ab5">sceClibMspaceIsHeapEmpty</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace)</td></tr>
+<tr class="separator:ga30e81b2578da554423223bf46d285ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0756ac6265937a190333d46b6b50458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gad0756ac6265937a190333d46b6b50458">sceClibMspaceMallocStats</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a> *stats)</td></tr>
+<tr class="separator:gad0756ac6265937a190333d46b6b50458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad18a06bf4d27776d01b8a9ea2c0f14d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gad18a06bf4d27776d01b8a9ea2c0f14d5">sceClibMspaceMallocStatsFast</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a> *stats)</td></tr>
+<tr class="separator:gad18a06bf4d27776d01b8a9ea2c0f14d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89fd24be2159a25dcda44fdb350cdca1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga89fd24be2159a25dcda44fdb350cdca1">sceClibMspaceMalloc</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga89fd24be2159a25dcda44fdb350cdca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e4b8932ee48f1b87db94e4fd5107131"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga2e4b8932ee48f1b87db94e4fd5107131">sceClibMspaceCalloc</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga2e4b8932ee48f1b87db94e4fd5107131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bae11351a3e8d1cd248301ac9e817ca"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga1bae11351a3e8d1cd248301ac9e817ca">sceClibMspaceRealloc</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga1bae11351a3e8d1cd248301ac9e817ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fd063ce8567a4d02a733d44ceb2c084"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084">sceClibMspaceReallocalign</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> alignment)</td></tr>
+<tr class="separator:ga7fd063ce8567a4d02a733d44ceb2c084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4830ee2ab25aca98bab80c7955b061c5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga4830ee2ab25aca98bab80c7955b061c5">sceClibMspaceMemalign</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> alignment, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> size)</td></tr>
+<tr class="separator:ga4830ee2ab25aca98bab80c7955b061c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a8047787a952d4153624247bfd1c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga16a8047787a952d4153624247bfd1c5e">sceClibMspaceFree</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr)</td></tr>
+<tr class="separator:ga16a8047787a952d4153624247bfd1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a></td></tr>
+<tr class="memdesc:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle for a managed memory space.  <a href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">More...</a><br /></td></tr>
+<tr class="separator:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceClibMspaceStats" id="structSceClibMspaceStats"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceClibMspaceStats">&#9670;&nbsp;</a></span>SceClibMspaceStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceClibMspaceStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Structure for stats of SceClibMspace. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gac40ae0390293e68a56b9e5a268b0f5ac"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+capacity</td>
+<td class="fielddoc">
+Capacity of the Mspace. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7b76dff8b391cb7d41fc3acd6380011d"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+unk</td>
+<td class="fielddoc">
+Unknown, value is equal to capacity. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadd93b668dd9fcc37706abe8ee85f79b1"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+peak_in_use</td>
+<td class="fielddoc">
+Peak memory allocated. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga718dfadcf803cc004056e92337e5aeb4"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+current_in_use</td>
+<td class="fielddoc">
+Current memory allocated. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gacc0bbbf773f4ea1f0dd0494a22d7d5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">&#9670;&nbsp;</a></span>SceClibMspace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A handle for a managed memory space. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gac7e43931cbb0c6fad394caa44c21de0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac7e43931cbb0c6fad394caa44c21de0f">&#9670;&nbsp;</a></span>sceClibAbort()</h2>
@@ -758,6 +849,342 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga86613170739cd5b2df195dbd981c8a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86613170739cd5b2df195dbd981c8a6c">&#9670;&nbsp;</a></span>sceClibMspaceCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> sceClibMspaceCreate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>memblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae88053cf19740e64653dd706fb25b216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae88053cf19740e64653dd706fb25b216">&#9670;&nbsp;</a></span>sceClibMspaceDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sceClibMspaceDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad0dc926dbe136816c7a5424e3f071d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0dc926dbe136816c7a5424e3f071d89">&#9670;&nbsp;</a></span>sceClibMspaceMallocUsableSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> sceClibMspaceMallocUsableSize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga30e81b2578da554423223bf46d285ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30e81b2578da554423223bf46d285ab5">&#9670;&nbsp;</a></span>sceClibMspaceIsHeapEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> sceClibMspaceIsHeapEmpty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad0756ac6265937a190333d46b6b50458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0756ac6265937a190333d46b6b50458">&#9670;&nbsp;</a></span>sceClibMspaceMallocStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sceClibMspaceMallocStats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a> *&#160;</td>
+          <td class="paramname"><em>stats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad18a06bf4d27776d01b8a9ea2c0f14d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad18a06bf4d27776d01b8a9ea2c0f14d5">&#9670;&nbsp;</a></span>sceClibMspaceMallocStatsFast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sceClibMspaceMallocStatsFast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a> *&#160;</td>
+          <td class="paramname"><em>stats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga89fd24be2159a25dcda44fdb350cdca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89fd24be2159a25dcda44fdb350cdca1">&#9670;&nbsp;</a></span>sceClibMspaceMalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sceClibMspaceMalloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2e4b8932ee48f1b87db94e4fd5107131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e4b8932ee48f1b87db94e4fd5107131">&#9670;&nbsp;</a></span>sceClibMspaceCalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sceClibMspaceCalloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1bae11351a3e8d1cd248301ac9e817ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bae11351a3e8d1cd248301ac9e817ca">&#9670;&nbsp;</a></span>sceClibMspaceRealloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sceClibMspaceRealloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7fd063ce8567a4d02a733d44ceb2c084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7fd063ce8567a4d02a733d44ceb2c084">&#9670;&nbsp;</a></span>sceClibMspaceReallocalign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sceClibMspaceReallocalign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4830ee2ab25aca98bab80c7955b061c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4830ee2ab25aca98bab80c7955b061c5">&#9670;&nbsp;</a></span>sceClibMspaceMemalign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sceClibMspaceMemalign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga16a8047787a952d4153624247bfd1c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16a8047787a952d4153624247bfd1c5e">&#9670;&nbsp;</a></span>sceClibMspaceFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sceClibMspaceFree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>&#160;</td>
+          <td class="paramname"><em>mspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

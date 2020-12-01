@@ -1,5 +1,6 @@
 var clib_8h =
 [
+    [ "SceClibMspace", "group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1", null ],
     [ "sceClibAbort", "group__SceCLibUser.html#gac7e43931cbb0c6fad394caa44c21de0f", null ],
     [ "sceClibLookCtypeTable", "group__SceCLibUser.html#ga467dcef630914e8bd052b19a66612c12", null ],
     [ "sceClibTolower", "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46", null ],
@@ -20,5 +21,17 @@ var clib_8h =
     [ "sceClibMemcpy_safe", "group__SceCLibUser.html#gaf25c29270f5d86827d772fe98b35ff38", null ],
     [ "sceClibMemmove", "group__SceCLibUser.html#gadf3cd781f0ca917b27ee576502ffc427", null ],
     [ "sceClibMemcmp", "group__SceCLibUser.html#ga5924173d05f406fcb5ddc1e5f53f7ba0", null ],
-    [ "sceClibMemchr", "group__SceCLibUser.html#ga392f6668971778b1bcac9ff49fc8e05f", null ]
+    [ "sceClibMemchr", "group__SceCLibUser.html#ga392f6668971778b1bcac9ff49fc8e05f", null ],
+    [ "sceClibMspaceCreate", "group__SceCLibUser.html#ga86613170739cd5b2df195dbd981c8a6c", null ],
+    [ "sceClibMspaceDestroy", "group__SceCLibUser.html#gae88053cf19740e64653dd706fb25b216", null ],
+    [ "sceClibMspaceMallocUsableSize", "group__SceCLibUser.html#gad0dc926dbe136816c7a5424e3f071d89", null ],
+    [ "sceClibMspaceIsHeapEmpty", "group__SceCLibUser.html#ga30e81b2578da554423223bf46d285ab5", null ],
+    [ "sceClibMspaceMallocStats", "group__SceCLibUser.html#gad0756ac6265937a190333d46b6b50458", null ],
+    [ "sceClibMspaceMallocStatsFast", "group__SceCLibUser.html#gad18a06bf4d27776d01b8a9ea2c0f14d5", null ],
+    [ "sceClibMspaceMalloc", "group__SceCLibUser.html#ga89fd24be2159a25dcda44fdb350cdca1", null ],
+    [ "sceClibMspaceCalloc", "group__SceCLibUser.html#ga2e4b8932ee48f1b87db94e4fd5107131", null ],
+    [ "sceClibMspaceRealloc", "group__SceCLibUser.html#ga1bae11351a3e8d1cd248301ac9e817ca", null ],
+    [ "sceClibMspaceReallocalign", "group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084", null ],
+    [ "sceClibMspaceMemalign", "group__SceCLibUser.html#ga4830ee2ab25aca98bab80c7955b061c5", null ],
+    [ "sceClibMspaceFree", "group__SceCLibUser.html#ga16a8047787a952d4153624247bfd1c5e", null ]
 ];
