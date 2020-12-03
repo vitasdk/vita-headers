@@ -8,6 +8,7 @@
 #define _PSP2_IO_FCNTL_H_
 
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/iofilemgr.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -266,32 +267,6 @@ int ksceIoSyncByFd(SceUID fd);
   * @return < 0 on error.
   */
 int ksceIoCancel(SceUID fd);
-
-/**
-  * Mounts a device
-  *
-  * @param[in]  id          Device to mount
-  * @param[in]  path        Where to mount to
-  * @param[in]  permission  Permission flags
-  * @param      a4          Unknown, set to 0
-  * @param      a5          Unknown, set to 0
-  * @param      a6          Unknown, set to 0
-  *
-  * @return < 0 on error.
-  */
-int ksceIoMount(int id, const char *path, int permission, int a4, int a5, int a6);
-
-/**
-  * Unmounts a device
-  *
-  * @param[in]  id    Device to unmount
-  * @param[in]  a2    Unknown, set to 0
-  * @param[in]  a3    Unknown, set to 0
-  * @param[in]  a4    Unknown, set to 0
-  *
-  * @return < 0 on error.
-  */
-int ksceIoUmount(int id, int a2, int a3, int a4);
 
 #ifdef __cplusplus
 }
