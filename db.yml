@@ -1993,6 +1993,8 @@ modules:
         kernel: true
         nid: 0x54802381
         functions:
+          OSAllocMem: 0x68815236
+          OSFreeMem: 0x0BB49287
           OSGetCurrentProcessIDKM: 0x6C6F2BEA
           OSMemCopy: 0x771EC61E
           OSMemSet: 0x50494916
