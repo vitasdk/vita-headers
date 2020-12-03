@@ -531,6 +531,29 @@ int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]
  */
 int sceAppMgrGetBudgetInfo(SceAppMgrBudgetInfo *info);
 
+typedef struct SceAppMgrCoredumpState {
+	SceUID pid;
+	int process_state;
+	int progress; // 0-100
+	int is_coredump_completed;
+	int data_0x10;
+	SceSize path_len;
+	char path[0x400];
+	int data_0x418;
+	int data_0x41C;
+	int data_0x420;
+	int data_0x424;
+} SceAppMgrCoredumpState;
+
+/**
+ * Get current coredump state for shell
+ *
+ * @param[out] state - state info output.
+ * 
+ * @return 0 on success, < 0 on error.
+ */
+int _sceAppMgrGetCoredumpStateForShell(SceAppMgrCoredumpState *state);
+
 #ifdef __cplusplus
 }
 #endif
