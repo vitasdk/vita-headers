@@ -8,6 +8,7 @@
 #define _PSP2_IO_FCNTL_H_
 
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/iofilemgr.h>
 
 #ifdef __cplusplus
 extern "C" {
