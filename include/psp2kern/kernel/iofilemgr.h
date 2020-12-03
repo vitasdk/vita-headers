@@ -65,7 +65,7 @@ typedef struct SceIofileInfo { // size is 0x828
 } SceIofileInfo;
 
 /**
-  * Get file descriptor info
+  * Get file info
   *
   * @param[in]  fd   - file descriptor
   * @param[in]  pid  - process id
@@ -73,7 +73,7 @@ typedef struct SceIofileInfo { // size is 0x828
   *
   * @return < 0 on error.
   */
-int ksceIoGetFdInfo(SceUID fd, SceUID pid, SceIofileInfo *info);
+int ksceIoGetFileInfo(SceUID fd, SceUID pid, SceIofileInfo *info);
 
 /**
   * Mounts a device
