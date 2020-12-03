@@ -30,9 +30,9 @@ typedef struct SceIoFdInfo {
   *
   * @return < 0 on error.
   */
-int sceIoGetGUIDFdListForDebugger(int vis_level, SceIoFdInfo *dst, SceSize max_size, SceSize *res_size);
+int ksceIoGetGUIDFdListForDebugger(int vis_level, SceIoFdInfo *dst, SceSize max_size, SceSize *res_size);
 
-#define sceIoGetGUIDFdList sceIoGetGUIDFdListForDebugger
+#define ksceIoGetGUIDFdList ksceIoGetGUIDFdListForDebugger
 
 /**
   * Get process file descriptor
@@ -44,9 +44,9 @@ int sceIoGetGUIDFdListForDebugger(int vis_level, SceIoFdInfo *dst, SceSize max_s
   *
   * @return < 0 on error.
   */
-int sceIoGetPUIDFdListForDebugger(int vis_level, SceIoFdInfo *dst, SceSize max_size, SceSize *res_size);
+int ksceIoGetPUIDFdListForDebugger(int vis_level, SceIoFdInfo *dst, SceSize max_size, SceSize *res_size);
 
-#define sceIoGetPUIDFdList sceIoGetPUIDFdListForDebugger
+#define ksceIoGetPUIDFdList ksceIoGetPUIDFdListForDebugger
 
 typedef struct SceIofileInfo { // size is 0x828
 	char path[0x400];
