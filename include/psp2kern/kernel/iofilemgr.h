@@ -10,7 +10,6 @@
 #include <psp2kern/io/devctl.h>
 #include <psp2kern/io/stat.h>
 #include <psp2kern/io/dirent.h>
-#include <psp2kern/io/fcntl.h>
 
 #ifdef __cplusplus
 extern "C" {
