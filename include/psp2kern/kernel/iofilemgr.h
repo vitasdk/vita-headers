@@ -49,6 +49,32 @@ int sceIoGetPUIDFdListForDebugger(int vis_level, SceIoFdInfo *dst, SceSize max_s
 
 #define sceIoGetPUIDFdList sceIoGetPUIDFdListForDebugger
 
+typedef struct SceIofileInfo { // size is 0x828
+	char path[0x400];
+	char path2[0x400];
+	SceUID pid;
+	int data_0x804;
+	int data_0x808;
+	int data_0x80C;
+	int data_0x810;
+	int data_0x814;
+	int data_0x818;
+	int data_0x81C;
+	int data_0x820; // maybe media type
+	int data_0x824;
+} SceIofileInfo;
+
+/**
+  * Get file descriptor info
+  *
+  * @param[in]  fd   - file descriptor
+  * @param[in]  pid  - process id
+  * @param[out] info - fd info output
+  *
+  * @return < 0 on error.
+  */
+int ksceIoGetFdInfo(SceUID fd, SceUID pid, SceIofileInfo *info);
+
 /**
   * Mounts a device
   *
