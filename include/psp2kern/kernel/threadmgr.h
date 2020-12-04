@@ -879,7 +879,7 @@ SceUID ksceKernelGetProcessMainThread(SceUID pid);
 int ksceKernelGetThreadIdList(SceUID pid, SceUID *ids, int n, int *copy_count);
 
 /** Structure representing all ARM registers */
-typedef struct ArmCpuRegisters
+typedef struct SceArmCpuRegisters
 {
     uint32_t    r0;
     uint32_t    r1;
@@ -898,18 +898,29 @@ typedef struct ArmCpuRegisters
     uint32_t    lr;
     uint32_t    pc;
     uint32_t    cpsr;
-    uint32_t    unk;
-} ArmCpuRegisters;
+    uint32_t    fpscr;
+} SceArmCpuRegisters;
+
+/* Typedef for compatibility */
+typedef SceArmCpuRegisters ArmCpuRegisters;
 
 /** Structure containing a threads register states. */
-typedef struct ThreadCpuRegisters
+typedef struct SceThreadCpuRegisters
 {
-    /** Set of registers used for user mode. */
-    ArmCpuRegisters user;
+    union {
+        struct { // These are wrong. Please use "entry[2]"
+            /** Set of registers used for user mode. */
+            SceArmCpuRegisters user;
 
-    /** Set of registers used for kernel mode. */
-    ArmCpuRegisters kernel;
-} ThreadCpuRegisters;
+            /** Set of registers used for kernel mode. */
+            SceArmCpuRegisters kernel;
+        };
+        SceArmCpuRegisters entry[2];
+    };
+} SceThreadCpuRegisters;
+
+/* Typedef for compatibility */
+typedef SceThreadCpuRegisters ThreadCpuRegisters;
 
 /**
  * @brief       Query the state of the registers for a suspended thread.
@@ -922,7 +933,7 @@ typedef struct ThreadCpuRegisters
  * @param[out]  registers   The set of registers belonging to the thread.
  * @return      Zero on success, else < 0 on error.
  */
-int ksceKernelGetThreadCpuRegisters(SceUID thid, ThreadCpuRegisters *registers);
+int ksceKernelGetThreadCpuRegisters(SceUID thid, SceThreadCpuRegisters *registers);
 
 
 /**
