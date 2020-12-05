@@ -12,7 +12,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-  
+
 typedef struct ScePssCryptoHandle {
   SceUID fd;
   uint32_t unk1;

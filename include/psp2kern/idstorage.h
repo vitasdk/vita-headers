@@ -19,7 +19,7 @@ extern "C" {
  * @return 0 on success, < 0 on error.
  */
 int ksceIdStorageReadLeaf(SceSize leafnum, void *buf);
-  
+
 /**
  * @param[in] leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
  * @param[in] buf     - Leaf data, size is 512 byte

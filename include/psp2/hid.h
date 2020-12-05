@@ -18,7 +18,6 @@ typedef struct SceHidKeyboardReport {
 	SceUInt8 modifiers[2]; //modifiers[0] Standard modifiers Ctrl Shift Alt, modifiers[1] Caps Lock, ..?
 	SceUInt8 keycodes[6];
 	SceUInt8 unk1[15];
-	
 } SceHidKeyboardReport;
 
 typedef struct SceHidMouseReport {
@@ -27,7 +26,6 @@ typedef struct SceHidMouseReport {
 	SceInt16 rel_x;
 	SceInt16 rel_y;
 	SceInt8 unk[10];
-	
 } SceHidMouseReport;
 
 #define SCE_HID_MAX_REPORT 16

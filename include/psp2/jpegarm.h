@@ -13,7 +13,7 @@
  * Error Codes
  */
 typedef enum SceJpegArmErrorCode {
-    SCE_JPEG_ARM_OK = 0 
+    SCE_JPEG_ARM_OK = 0
 } SceJpegArmErrorCode;
 
 int sceJpegArmDecodeMJpeg(const SceUInt8* pJpeg,

@@ -184,7 +184,7 @@ typedef enum SceCameraGain {
 typedef enum SceCameraWhiteBalance {
 	SCE_CAMERA_WB_AUTO = 0,  //!< Automatic mode
 	SCE_CAMERA_WB_DAY  = 1,  //!< Daylight mode
-	SCE_CAMERA_WB_CWF  = 2,  //!< Cool White Fluorescent mode 
+	SCE_CAMERA_WB_CWF  = 2,  //!< Cool White Fluorescent mode
 	SCE_CAMERA_WB_SLSA = 4   //!< Standard Light Source A mode
 } SceCameraWhiteBalance;
 

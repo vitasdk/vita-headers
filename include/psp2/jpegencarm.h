@@ -23,7 +23,7 @@ extern "C" {
 
 /**
  * Dynamically allocated encoder context.
- * 
+ *
  * See @ref sceJpegArmEncoderGetContextSize() for required allocation size.
  * The address must be 4 byte aligned.
  */
@@ -34,7 +34,7 @@ typedef void* SceJpegArmEncoderContext;
  */
 typedef enum SceJpegEncArmErrorCode {
 	/**
-	 * The image dimensions given are not supported, or are larger 
+	 * The image dimensions given are not supported, or are larger
 	 * than those set at initialization.
 	 */
 	SCE_JPEGENCARM_ERROR_IMAGE_SIZE                = 0x80650300,
@@ -44,7 +44,7 @@ typedef enum SceJpegEncArmErrorCode {
 	SCE_JPEGENCARM_ERROR_INSUFFICIENT_BUFFER       = 0x80650301,
 	/**
 	 * The compression ratio given is not within the valid range.
-	 */ 
+	 */
 	SCE_JPEGENCARM_ERROR_INVALID_COMP_RATIO        = 0x80650302,
 	/**
 	 * The pixelformat given is not one of ::SceJpegArmEncoderPixelFormat.
@@ -121,7 +121,7 @@ int sceJpegArmEncoderEncode(SceJpegArmEncoderContext context, const void *inBuff
  *
  * @param[in] context - An already initialized ::SceJpegArmEncoderContext.
  * @param[in] ratio   - A value between 1 and 255 (higher = better compression, lower = better speed).
- * 
+ *
  * See @ref SCE_JPEGENCARM_DEFAULT_COMP_RATIO for the default compression ratio.
  *
  * @return 0 on success, < 0 on error.

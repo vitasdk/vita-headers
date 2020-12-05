@@ -1002,13 +1002,13 @@ typedef enum SceGxmTransferFlags {
 	SCE_GXM_TRANSFER_FRAGMENT_SYNC	= 0x00000001u,
 	SCE_GXM_TRANSFER_VERTEX_SYNC	= 0x00000002u
 } SceGxmTransferFlags;
-	
+
 typedef enum SceGxmTransferColorKeyMode {
 	SCE_GXM_TRANSFER_COLORKEY_NONE   = 0,
 	SCE_GXM_TRANSFER_COLORKEY_PASS   = 1,
 	SCE_GXM_TRANSFER_COLORKEY_REJECT = 2
 } SceGxmTransferColorKeyMode;
-	
+
 typedef enum SceGxmTransferType {
 	SCE_GXM_TRANSFER_LINEAR   = 0x00000000U,
 	SCE_GXM_TRANSFER_TILED    = 0x00400000U,

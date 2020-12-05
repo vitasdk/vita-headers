@@ -252,7 +252,7 @@ int sceAppMgrGetRunningAppIdListForShell(SceUID *appIds, int count);
  * @param[out] appState - State of the application
  * @param[in] len - sizeof(SceAppMgrState)
  * @param[in] version - Version (?)
- 
+
  * @return 0 on success, < 0 on error.
  */
 int _sceAppMgrGetAppState(SceAppMgrAppState *appState, SceSize len, uint32_t version);
@@ -261,7 +261,7 @@ int _sceAppMgrGetAppState(SceAppMgrAppState *appState, SceSize len, uint32_t ver
  * Receive system event
  *
  * @param[out] systemEvent - Received system event
- 
+
  * @return 0 on success, < 0 on error.
  */
 int sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *systemEvent);
@@ -500,7 +500,7 @@ int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
 int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
 
 /**
- * Resolve a path to the corresponding true path (uses ::ksceFiosKernelOverlayResolveSync underneath). 
+ * Resolve a path to the corresponding true path (uses ::ksceFiosKernelOverlayResolveSync underneath).
  *
  * @param[in] path - Path to convert (e.g. app0:)
  * @param[out] resolved_path - True resolved path
@@ -509,13 +509,13 @@ int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
  * @return 0 on success, < 0 on error.
  */
 int _sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size, char unk[16]);
-	
+
 /**
  * Get the real/resolved path of app0: (where it's actually mounted)
- * 
+ *
  * @param[in] appId - Use -2 for the current application
  * @param[out] resolved_path - Buffer that will hold the resolved path. It should have enough room to hold 292 characters or it will buffer overflow (noname120).
- * 
+ *
  * @return 0 on success.
  */
 int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]);
@@ -524,7 +524,7 @@ int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]
  * Get memory budget info for a running system application
  *
  * @param[out] info - Info related to the memory budget of the running application.
- * 
+ *
  * @return 0 on success, < 0 on error.
  *
  * @note This function will always return an error if used in a normal application.
@@ -549,7 +549,7 @@ typedef struct SceAppMgrCoredumpState {
  * Get current coredump state for shell
  *
  * @param[out] state - state info output.
- * 
+ *
  * @return 0 on success, < 0 on error.
  */
 int _sceAppMgrGetCoredumpStateForShell(SceAppMgrCoredumpState *state);

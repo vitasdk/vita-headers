@@ -17,7 +17,7 @@ extern "C" {
 typedef enum SceAVConfigColorSpaceMode {
 	SCE_AVCONFIG_COLOR_SPACE_MODE_DEFAULT           = 0, //!< Default
 	SCE_AVCONFIG_COLOR_SPACE_MODE_HIGH_CONTRAST     = 1  //!< High Contrast Mode
-} SceAVConfigColorSpaceMode; 
+} SceAVConfigColorSpaceMode;
 
 /**
  * Get the maximum brightness.
@@ -71,7 +71,7 @@ int sceAVConfigSetSystemVol(int volume);
  *
  */
 int sceAVConfigMuteOn(void);
-  
+
 /**
  * Sets the color space mode on runtime.
  *

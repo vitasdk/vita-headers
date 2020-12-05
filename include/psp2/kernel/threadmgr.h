@@ -1142,9 +1142,9 @@ typedef struct SceKernelWaitSignalOptParam {
 /**
  * @brief Sleep current thread and wait for a signal. After it receives a signal, the thread wakes up.
  *
- * This is like a semphore with limit 1. 
+ * This is like a semphore with limit 1.
  * If signal was sent before and not consumed before, the function will immediately return.
- * 
+ *
  * @param params - extra parameters
  * @return 0 on success
  */
