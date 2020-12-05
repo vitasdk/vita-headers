@@ -18,22 +18,22 @@ typedef enum ScePromoterUtilityPackageType {
 	SCE_PKG_TYPE_VITA               = 0x0001,          //!< PSVita Apps
 	SCE_PKG_TYPE_PSM                = 0x0003,          //!< PlayStation Mobile
 } ScePromoterUtilityPackageType;
-	
+
 /** Parameters for scePromoterUtilityUpdateLiveArea() */
 typedef struct ScePromoterUtilityLAUpdate {
 	char titleid[12];  //!< Target app.
 	char path[128];    //!< Directory of extracted LA update data.
 } ScePromoterUtilityLAUpdate;
-	
+
 /** Parameters for scePromoterUtilityPromoteImport() */
 typedef struct ScePromoterUtilityImportParams {
-	char path[0x80]; //!< Install path usually (ux0:/temp/game) 
+	char path[0x80]; //!< Install path usually (ux0:/temp/game)
 	char titleid[0xC]; //!< Game titleid
 	ScePromoterUtilityPackageType type; //!< Package type
 	uint32_t attribute; //!< Additional Attributes (Appears to be 0x1 on PSM content but 0x00 on Vita contents)
 	char reserved[0x1C];
 } ScePromoterUtilityImportParams;
-	
+
 /**
  * Init the promoter utility.
  * \note Needs to be called before using the other functions.

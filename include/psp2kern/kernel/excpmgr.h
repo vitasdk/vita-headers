@@ -24,7 +24,7 @@ typedef enum SceExcpKind {
 
 /**
  * Get a pointer to SceExcpmgr's internal data
- * 
+ *
  * This is only used by exception handlers.
  *
  * @return pointer to excpmgr data section.

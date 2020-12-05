@@ -37,8 +37,8 @@ typedef struct SceKernelFreeMemorySizeInfo {
 	int size_user;    //!< Free memory size for *_USER_RW memory
 	int size_cdram;   //!< Free memory size for USER_CDRAM_RW memory
 	int size_phycont; //!< Free memory size for USER_MAIN_PHYCONT_*_RW memory
-} SceKernelFreeMemorySizeInfo;	
-	
+} SceKernelFreeMemorySizeInfo;
+
 typedef enum SceKernelModel {
 	SCE_KERNEL_MODEL_VITA   = 0x10000,
 	SCE_KERNEL_MODEL_VITATV = 0x20000
@@ -121,7 +121,7 @@ int sceKernelGetModelForCDialog(void);
  * @return A value from SCE_KERNEL_MODEL
 */
 int sceKernelGetModel(void);
-	
+
 /**
  * Get free memory size in bytes
  *

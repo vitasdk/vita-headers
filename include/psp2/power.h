@@ -22,7 +22,7 @@ typedef enum ScePowerErrorCode {
 	SCE_POWER_ERROR_NO_BATTERY              = 0x802B0100,
 	SCE_POWER_ERROR_DETECTING               = 0x802B0101
 } ScePowerErrorCode;
-	
+
 typedef enum ScePowerCallbackType {
 	/** indicates the unit is using battery as power source */
 	SCE_POWER_CB_BATTERY_MODE          = 0x00000000,
@@ -221,7 +221,7 @@ int scePowerRequestSuspend(void);
  * @return always 0
  */
 int scePowerRequestDisplayOn(void);
-	
+
 /**
  * Request display off
  *

@@ -210,9 +210,9 @@ int kscePowerRequestDisplayOff(void);
  * @param brightness Brightness that the screen will be set to (range 21-65536, 0 turns off the screen).
  *
  * @return ?
- */	
+ */
 int kscePowerSetDisplayBrightness(int brightness);
-	
+
 /**
  * Sets CPU clock frequency
  *

@@ -42,7 +42,7 @@ int sceJpegFinishMJpeg();
 int sceJpegGetOutputInfo(const SceUInt8* jpegData,
                         SceSize jpegSize,
                         SceInt32 format,
-                        SceInt32 mode, 
+                        SceInt32 mode,
                         SceJpegOutputInfo *output);
 
 int sceJpegDecodeMJpegYCbCr(const SceUInt8 *jpegData,
@@ -53,11 +53,11 @@ int sceJpegDecodeMJpegYCbCr(const SceUInt8 *jpegData,
                             void *buffer,
                             SceSize bufferSize);
 
-int sceJpegMJpegCsc(SceUInt8* rgba, 
+int sceJpegMJpegCsc(SceUInt8* rgba,
                     const SceUInt8* yuv,
-                    SceSize yuvSize, 
-                    SceInt32 imageWidth, 
-                    SceInt32 format, 
+                    SceSize yuvSize,
+                    SceInt32 imageWidth,
+                    SceInt32 format,
                     SceInt32 sampling);
 
 #ifdef __cplusplus

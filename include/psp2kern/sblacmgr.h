@@ -88,7 +88,7 @@ int ksceSblACMgrIsFself(SceUID pid);
  * @return 0 on success, < 0 on error.
  */
 int ksceSblACMgrGetProcessProgramAuthId(SceUID pid, SceUInt64 *authid);
-  
+
 /**
  * @brief Get development mode state
  *

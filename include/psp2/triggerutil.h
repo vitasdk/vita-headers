@@ -16,7 +16,7 @@ extern "C" {
 #endif
 
 /**
- * @note Last two params in all of the functions are never used, 
+ * @note Last two params in all of the functions are never used,
  * 		 probably callbacks since all sceTriggerUtil functions are non-blocking
  */
 
@@ -115,7 +115,7 @@ int sceTriggerUtilRegisterOneTimeEvent(const char* titleid, const SceTriggerUtil
  *
  * @return 0 on success, <0 otherwise.
  */
-int sceTriggerUtilUnregisterDailyEvent(int eventId, int a2, int a3); 
+int sceTriggerUtilUnregisterDailyEvent(int eventId, int a2, int a3);
 
 /**
  * Unregister one time event for caller application
@@ -126,7 +126,7 @@ int sceTriggerUtilUnregisterDailyEvent(int eventId, int a2, int a3);
  *
  * @return 0 on success, <0 otherwise.
  */
-int sceTriggerUtilUnregisterOneTimeEvent(int eventId, int a2, int a3); 
+int sceTriggerUtilUnregisterOneTimeEvent(int eventId, int a2, int a3);
 
 /**
  * Get value from "Settings->System->Auto-Start Settings" for caller application. Required to be 1 to use sceTriggerUtil
@@ -149,7 +149,7 @@ int sceTriggerUtilGetAutoStartStatus(int* status, int a2, int a3);
  *
  * @return 0 on success, <0 otherwise.
  */
-int sceTriggerUtilGetOneTimeEventInfo(int eventId, SceRtcTick* triggerTime, int a4, int a5); 
+int sceTriggerUtilGetOneTimeEventInfo(int eventId, SceRtcTick* triggerTime, int a4, int a5);
 
 /**
  * Get daily event info for caller application

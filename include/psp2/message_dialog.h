@@ -92,7 +92,7 @@ typedef enum SceMsgDialogFontSize {
 	SCE_MSG_DIALOG_FONT_SIZE_DEFAULT = 0,
 	SCE_MSG_DIALOG_FONT_SIZE_SMALL   = 1
 } SceMsgDialogFontSize;
-	
+
 typedef struct SceMsgDialogButtonsParam {
 	const char* msg1;          //!< Text of the first button
 	SceInt32 fontSize1;        //!< Font size of the first button (one of ::SceMsgDialogFontSize)

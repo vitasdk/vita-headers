@@ -79,13 +79,13 @@ function searchFor(query,page,count) {
     for (i=0;i<doc.length;i++)
     {
 	cdoc = doc[i];
-	type=cdoc.querySelector("field[name=type]").innerHTML; 
-        
-	// Ignore 'source' results    
+	type=cdoc.querySelector("field[name=type]").innerHTML;
+
+	// Ignore 'source' results
 	if(type == 'source') {
 	    continue;
 	}
-	    
+
 	name=cdoc.querySelector("field[name=name]").innerHTML;
 	url=cdoc.querySelector("field[name=url]").innerHTML;
 	text=cdoc.querySelector("field[name=text]").innerHTML;

@@ -39,14 +39,14 @@ typedef struct
 
 /**
  * @brief       Launch an application for debugging
- * 
+ *
  * @param[in] path  Path to the executable to load
  * @param[in] args  Arguments to pass to the executable and to configure appmgr
  * @param[in] arg_size  The size of the args passed in
  * @param[in] type  Set to 0x80000000 for debugging launch
  * @param[in] param pointer to launch params
  * @param unk unknown, set to nullptr
- * 
+ *
  * @return   pid on success, else < 0.
  */
 int ksceAppMgrLaunchAppByPath(const char *path, const char *args, SceSize arg_size, unsigned int type, const SceAppMgrLaunchParam *param, void *unk);
