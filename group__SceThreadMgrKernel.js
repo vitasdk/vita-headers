@@ -5,6 +5,8 @@ var group__SceThreadMgrKernel =
     [ "SceKernelThreadEntry", "group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714", null ],
     [ "SceKernelWorkQueueWorkFunction", "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1", null ],
+    [ "ArmCpuRegisters", "group__SceThreadMgrKernel.html#ga075dfeb7c0e77ac6e15c051ca52bbc53", null ],
+    [ "ThreadCpuRegisters", "group__SceThreadMgrKernel.html#gad5b161408ba064c20157367b7be98e6e", null ],
     [ "SceThreadStatus", "group__SceThreadMgrKernel.html#ga552cbf506e81e208e4bf3e75badc1c40", [
       [ "SCE_THREAD_RUNNING", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958", null ],
       [ "SCE_THREAD_READY", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c", null ],
@@ -153,7 +155,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelEnqueueWorkQueue", "group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca", null ],
     [ "ksceKernelGetProcessMainThread", "group__SceThreadMgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b", null ],
     [ "ksceKernelGetThreadIdList", "group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde", null ],
-    [ "ksceKernelGetThreadCpuRegisters", "group__SceThreadMgrKernel.html#gad9d9fe958fb029ef0d695029e1e8866b", null ],
+    [ "ksceKernelGetThreadCpuRegisters", "group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b", null ],
     [ "ksceKernelChangeThreadSuspendStatus", "group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d", null ],
     [ "ksceKernelCreateMsgPipe", "group__SceThreadMgrKernel.html#ga30584c9e6398a7113ae735bdc637d46b", null ],
     [ "ksceKernelDeleteMsgPipe", "group__SceThreadMgrKernel.html#gaab53d6d4dce857d0409263b698c8dbfa", null ],

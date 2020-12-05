@@ -5,6 +5,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
     [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
     [ "intrmgr.h", "intrmgr_8h.html", "intrmgr_8h" ],
+    [ "iofilemgr.h", "iofilemgr_8h.html", "iofilemgr_8h" ],
     [ "modulemgr.h", "ern_2kernel_2modulemgr_8h.html", "ern_2kernel_2modulemgr_8h" ],
     [ "proc_event.h", "proc__event_8h.html", "proc__event_8h" ],
     [ "processmgr.h", "ern_2kernel_2processmgr_8h.html", "ern_2kernel_2processmgr_8h" ],

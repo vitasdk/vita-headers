@@ -76,7 +76,5 @@ var ern_2io_2fcntl_8h =
     [ "ksceIoRename", "group__SceFcntlKernel.html#ga9d9904db9514aceb4a8f84cf79570105", null ],
     [ "ksceIoSync", "group__SceFcntlKernel.html#gabda80bd474bdd34dc7f8b00cec168e71", null ],
     [ "ksceIoSyncByFd", "group__SceFcntlKernel.html#gad27cbe1fdaf3cf2050f056da2eafd094", null ],
-    [ "ksceIoCancel", "group__SceFcntlKernel.html#gaae7e727a2b51ecfe3f180826f0bf4387", null ],
-    [ "ksceIoMount", "group__SceFcntlKernel.html#ga75d8f502a4cb2c3e28bdb0d75d020b89", null ],
-    [ "ksceIoUmount", "group__SceFcntlKernel.html#gad4ba496c026bde1c5fc674ce0d77de5a", null ]
+    [ "ksceIoCancel", "group__SceFcntlKernel.html#gaae7e727a2b51ecfe3f180826f0bf4387", null ]
 ];

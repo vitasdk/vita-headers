@@ -136,15 +136,15 @@ $(document).ready(function(){initNavTree('libdbg_8h_source.html',''); initResiza
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group__SceLibDbgUser.html#ga177f9555c167079977a1489c4703ece9">   98</a></span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_WARNING(msg, ...) SCE_DBG_LOG(SCE_DBG_LOG_LEVEL_WARNING, msg, ##__VA_ARGS__)</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__SceLibDbgUser.html#ga0d4f8d81c8132963658ffe6c7be44eaa">   99</a></span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_ERROR(msg, ...) SCE_DBG_LOG(SCE_DBG_LOG_LEVEL_ERROR, msg, ##__VA_ARGS__)</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#else // Disable macros if NDEBUG is defined.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define SCE_DBG_ASSERT(expression) </span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#define SCE_DBG_ASSERT_MSG(expression, msg, ...) </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define SCE_DBG_ASSERT(expression)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#define SCE_DBG_ASSERT_MSG(expression, msg, ...)</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG(msg, ...)</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_TRACE(msg, ...) </span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_INFO(msg, ...) </span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_DEBUG(msg, ...) </span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_WARNING(msg, ...) </span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_ERROR(msg, ...) </span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_TRACE(msg, ...)</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_INFO(msg, ...)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_DEBUG(msg, ...)</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_WARNING(msg, ...)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define SCE_DBG_LOG_ERROR(msg, ...)</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NDEBUG */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group__SceLibDbgUser.html#ga80c75d8826cd0bbb0e2fd80834301bcd">  126</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceLibDbgUser.html#ga80c75d8826cd0bbb0e2fd80834301bcd">sceDbgAssertionHandler</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line, <span class="keywordtype">int</span> unk, <span class="keyword">const</span> <span class="keywordtype">char</span>* component, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, ...);</div>

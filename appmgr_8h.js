@@ -73,5 +73,6 @@ var appmgr_8h =
     [ "sceAppMgrGetRawPath", "group__SceAppMgrUser.html#ga1b609b44980977a5f0c1b08f8cd5e0bf", null ],
     [ "_sceAppMgrGetRawPath", "group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1", null ],
     [ "_sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53", null ],
-    [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ]
+    [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ],
+    [ "_sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#ga6f604761a40085666f9b396b33c09b0f", null ]
 ];
