@@ -14,6 +14,8 @@ extern "C" {
 
 int PVRSRVGetMiscInfoKM(void *info);
 
+int ksceGpuGetRegisterDump(void *dst, SceSize size);
+
 #ifdef __cplusplus
 }
 #endif
