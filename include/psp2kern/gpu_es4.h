@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-int PVRSRVGetMiscInfoKM(void *dst, SceSize size);
+int PVRSRVGetMiscInfoKM(void *info);
 
 #ifdef __cplusplus
 }
