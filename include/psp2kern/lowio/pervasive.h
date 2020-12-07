@@ -42,6 +42,8 @@ int kscePervasiveMsifSetClock(unsigned int clock);
 
 int kscePervasiveRemovableMemoryGetCardInsertState(void);
 
+SceUInt32 kscePervasiveGetSoCRevision(void);
+
 #ifdef __cplusplus
 }
 #endif
