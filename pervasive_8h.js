@@ -23,5 +23,6 @@ var pervasive_8h =
     [ "kscePervasiveMsifClockEnable", "group__ScePervasiveKernel.html#ga02f98a128580bcb160e41e370b5258b4", null ],
     [ "kscePervasiveMsifClockDisable", "group__ScePervasiveKernel.html#ga60552c13135a0a88cdfdad04c2b98038", null ],
     [ "kscePervasiveMsifSetClock", "group__ScePervasiveKernel.html#ga6491208e9a836478c2f65191e0a020ed", null ],
-    [ "kscePervasiveRemovableMemoryGetCardInsertState", "group__ScePervasiveKernel.html#ga51772cd63b76ecb884d10462e528f7ba", null ]
+    [ "kscePervasiveRemovableMemoryGetCardInsertState", "group__ScePervasiveKernel.html#ga51772cd63b76ecb884d10462e528f7ba", null ],
+    [ "kscePervasiveGetSoCRevision", "group__ScePervasiveKernel.html#gad8991b629f500cde412ce6ce21563ed5", null ]
 ];
