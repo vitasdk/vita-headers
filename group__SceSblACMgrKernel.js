@@ -1,9 +1,9 @@
 var group__SceSblACMgrKernel =
 [
-    [ "ksceSblACMgrIsRootProgram", "group__SceSblACMgrKernel.html#gad62e5289d1303bfdb808e60fbb323142", null ],
-    [ "ksceSblACMgrIsSystemProgram", "group__SceSblACMgrKernel.html#ga54a0e36f6417238c971e0be9048ac322", null ],
-    [ "ksceSblACMgrIsSystem", "group__SceSblACMgrKernel.html#gace43491d154618381fcb8ec2a4e20293", null ],
-    [ "ksceSblACMgrIsShell", "group__SceSblACMgrKernel.html#ga9fd3271227fb64c6394b8b1303c3b2b9", null ],
+    [ "ksceSblACMgrIsSystem", "group__SceSblACMgrKernel.html#gabd9122a6bfed828d831a211d2b47a9a0", null ],
+    [ "ksceSblACMgrIsShell", "group__SceSblACMgrKernel.html#ga9fceb129afd49763d7bb74137d44bc80", null ],
+    [ "ksceSblACMgrIsRootProgram", "group__SceSblACMgrKernel.html#ga677becdc3e8c565cb32e79f3ff1baf42", null ],
+    [ "ksceSblACMgrIsSystemProgram", "group__SceSblACMgrKernel.html#ga9d19efac3211c36666ea9060aa57c35f", null ],
     [ "ksceSblACMgrIsGameProgram", "group__SceSblACMgrKernel.html#gac04816b1e6acb09d10169a7cb5647212", null ],
     [ "ksceSblACMgrIsNonGameProgram", "group__SceSblACMgrKernel.html#ga74ec11cb22de63bfc7fa12f6a08a26cd", null ],
     [ "ksceSblACMgrIsPspEmu", "group__SceSblACMgrKernel.html#ga6eee8750351af5b927950362d45dd08f", null ],
