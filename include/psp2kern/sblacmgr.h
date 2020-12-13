@@ -19,9 +19,9 @@ extern "C" {
  *
  * @return If root mode process, 1. else 0.
  */
-int ksceSblACMgrIsSystem(SceUID pid);
+int ksceSblACMgrIsRootProgram(SceUID pid);
 
-#define ksceSblACMgrIsRootProgram(pid) ksceSblACMgrIsSystem(pid)
+#define ksceSblACMgrIsSystem(pid) ksceSblACMgrIsRootProgram(pid)
 
 /**
  * @brief Get process type state
@@ -30,9 +30,9 @@ int ksceSblACMgrIsSystem(SceUID pid);
  *
  * @return If system mode process, 1. else 0.
  */
-int ksceSblACMgrIsShell(SceUID pid);
+int ksceSblACMgrIsSystemProgram(SceUID pid);
 
-#define ksceSblACMgrIsSystemProgram(pid) ksceSblACMgrIsShell(pid)
+#define ksceSblACMgrIsShell(pid) ksceSblACMgrIsSystemProgram(pid)
 
 /**
  * @brief Get process type state
