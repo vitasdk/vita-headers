@@ -34,9 +34,16 @@ int sce_paf_private_strncmp(const char *str1, const char *str2, SceSize num);
 char *sce_paf_private_strncpy(char *destination, const char *source, SceSize num);
 char *sce_paf_private_strrchr(const char *str, int character);
 
+typedef struct ScePafDateTime {
+  SceDateTime data;
+  int data_0x10;
+  int data_0x14;
+} ScePafDateTime;
+
+int scePafGetCurrentClockLocalTime(ScePafDateTime *data);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_PAF_H_ */
-
