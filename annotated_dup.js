@@ -275,6 +275,7 @@ var annotated_dup =
     [ "SceNpCommunicationId", "group__SceNetCheckDialogUser.html#structSceNpCommunicationId", "group__SceNetCheckDialogUser_structSceNpCommunicationId" ],
     [ "SceNpDrmLicense", "group__SceNpDrmUser.html#structSceNpDrmLicense", "group__SceNpDrmUser_structSceNpDrmLicense" ],
     [ "SceObjectBase", "group__SceSysmemKernel.html#structSceObjectBase", "group__SceSysmemKernel_structSceObjectBase" ],
+    [ "ScePafDateTime", "group__ScePafUser.html#structScePafDateTime", "group__ScePafUser_structScePafDateTime" ],
     [ "SceProcEventHandler", "group__SceProcEventKernel.html#structSceProcEventHandler", "group__SceProcEventKernel_structSceProcEventHandler" ],
     [ "SceProcEventInvokeParam1", "group__SceProcEventKernel.html#structSceProcEventInvokeParam1", "group__SceProcEventKernel_structSceProcEventInvokeParam1" ],
     [ "SceProcEventInvokeParam2", "group__SceProcEventKernel.html#structSceProcEventInvokeParam2", "group__SceProcEventKernel_structSceProcEventInvokeParam2" ],

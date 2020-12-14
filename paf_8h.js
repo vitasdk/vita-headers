@@ -19,5 +19,6 @@ var paf_8h =
     [ "sce_paf_private_strncasecmp", "group__ScePafUser.html#ga8dcfb9689c368629987849ab84731d0c", null ],
     [ "sce_paf_private_strncmp", "group__ScePafUser.html#ga5846e5431d925f0ffa4799f6f982ce65", null ],
     [ "sce_paf_private_strncpy", "group__ScePafUser.html#ga190249e55f2be14fff672ba76353da77", null ],
-    [ "sce_paf_private_strrchr", "group__ScePafUser.html#ga8176dd33e4858679e86fa42a919f7cb4", null ]
+    [ "sce_paf_private_strrchr", "group__ScePafUser.html#ga8176dd33e4858679e86fa42a919f7cb4", null ],
+    [ "scePafGetCurrentClockLocalTime", "group__ScePafUser.html#ga5352793106ba81601d289126bc9fd6ad", null ]
 ];
