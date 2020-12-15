@@ -17,7 +17,7 @@ typedef struct SceConsoleId {
 	uint16_t company_code;
 	uint16_t product_code;
 	uint16_t product_sub_code;
-	uint8_t chassis_check;
+	uint8_t chassis_check; // factory_code = chassis_check >> 2;
 	uint8_t unknown[7];
 } SceConsoleId;
 
