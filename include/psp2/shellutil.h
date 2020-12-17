@@ -71,6 +71,13 @@ int sceShellUtilLock(SceShellUtilLockType type);
 */
 int sceShellUtilUnlock(SceShellUtilLockType type);
 
+typedef struct SceShellUtilLaunchAppParam {
+	const char *cmd;
+} SceShellUtilLaunchAppParam;
+
+int sceShellUtilRequestLaunchApp(SceShellUtilLaunchAppParam *param);
+int sceShellUtilLaunchAppRequestLaunchApp(SceShellUtilLaunchAppParam *param);
+
 #ifdef __cplusplus
 }
 #endif
