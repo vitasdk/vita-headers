@@ -1137,10 +1137,8 @@ typedef struct SceGxmNotification {
 } SceGxmNotification;
 
 typedef struct SceGxmValidRegion {
-	unsigned int xMin;
-	unsigned int yMin;
-	unsigned int xMax;
-	unsigned int yMax;
+	uint32_t xMax;
+	uint32_t yMax;
 } SceGxmValidRegion;
 
 typedef struct SceGxmContext SceGxmContext;
