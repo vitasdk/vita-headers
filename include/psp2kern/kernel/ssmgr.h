@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-typedef struct SceConsoleId {
+typedef struct SceConsoleId { // size is 0x10
 	uint16_t unk;
 	uint16_t company_code;
 	uint16_t product_code;
@@ -27,11 +27,11 @@ typedef struct SceConsoleId {
 	uint8_t unk3[7];
 } SceConsoleId;
 
-typedef struct SceOpenPsId {
+typedef struct SceOpenPsId { // size is 0x10
 	uint8_t open_psid[0x10];
 } SceOpenPsId;
 
-typedef struct ScePsCode {
+typedef struct ScePsCode { // size is 0x10
 	uint16_t company_code;
 	uint16_t product_code;
 	uint16_t product_sub_code;
