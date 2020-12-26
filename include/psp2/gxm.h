@@ -1398,6 +1398,7 @@ void sceGxmSetViewport(SceGxmContext *context, float xOffset, float xScale, floa
 void sceGxmSetWClampValue(SceGxmContext *context, float clampValue);
 void sceGxmSetWClampEnable(SceGxmContext *context, SceGxmWClampMode enable);
 void sceGxmSetRegionClip(SceGxmContext *context, SceGxmRegionClipMode mode, unsigned int xMin, unsigned int yMin, unsigned int xMax, unsigned int yMax);
+void sceGxmSetDefaultRegionClipAndViewport(SceGxmContext *context, unsigned int xMax, unsigned int yMax);
 void sceGxmSetCullMode(SceGxmContext *context, SceGxmCullMode mode);
 void sceGxmSetViewportEnable(SceGxmContext *context, SceGxmViewportMode enable);
 void sceGxmSetWBufferEnable(SceGxmContext *context, SceGxmWBufferMode enable);
