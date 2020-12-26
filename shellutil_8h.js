@@ -22,5 +22,7 @@ var shellutil_8h =
     [ "sceShellUtilInitEvents", "group__SceShellSvcUser.html#ga32143337fcc63e9c76ef0717e95763d8", null ],
     [ "sceShellUtilRegisterEventHandler", "group__SceShellSvcUser.html#ga5f9b9fbf5cf33d8d99c7de6fe5ea2307", null ],
     [ "sceShellUtilLock", "group__SceShellSvcUser.html#gaed63c312c55dc285ae4f6f60517f2786", null ],
-    [ "sceShellUtilUnlock", "group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896", null ]
+    [ "sceShellUtilUnlock", "group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896", null ],
+    [ "sceShellUtilRequestLaunchApp", "group__SceShellSvcUser.html#gaabebcc1d43c0fb99be2984c7f66a34e4", null ],
+    [ "sceShellUtilLaunchAppRequestLaunchApp", "group__SceShellSvcUser.html#ga65ccc9f3672d314501c982b4c791c268", null ]
 ];

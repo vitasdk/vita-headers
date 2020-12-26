@@ -105,12 +105,40 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf7817cd6e37c91b1756b06b143663896"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896">sceShellUtilUnlock</a> (<a class="el" href="group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d">SceShellUtilLockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="memdesc:gaf7817cd6e37c91b1756b06b143663896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock event.  <a href="group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896">More...</a><br /></td></tr>
 <tr class="separator:gaf7817cd6e37c91b1756b06b143663896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabebcc1d43c0fb99be2984c7f66a34e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#gaabebcc1d43c0fb99be2984c7f66a34e4">sceShellUtilRequestLaunchApp</a> (<a class="el" href="group__SceShellSvcUser.html#structSceShellUtilLaunchAppParam">SceShellUtilLaunchAppParam</a> *param)</td></tr>
+<tr class="separator:gaabebcc1d43c0fb99be2984c7f66a34e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65ccc9f3672d314501c982b4c791c268"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#ga65ccc9f3672d314501c982b4c791c268">sceShellUtilLaunchAppRequestLaunchApp</a> (<a class="el" href="group__SceShellSvcUser.html#structSceShellUtilLaunchAppParam">SceShellUtilLaunchAppParam</a> *param)</td></tr>
+<tr class="separator:ga65ccc9f3672d314501c982b4c791c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga07896b82d1034d756ebbc7d5046bb7d4"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShellSvcUser.html#ga07896b82d1034d756ebbc7d5046bb7d4">SceShellUtilEventHandler</a>(int result, <a class="el" href="group__SceShellSvcUser.html#gad115cbefed0fee3c7baf40223c408032">SceShellUtilLockMode</a> mode, <a class="el" href="group__SceShellSvcUser.html#ga785a75673cf82d991dd9df9b245ff88d">SceShellUtilLockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, void *userData)</td></tr>
 <tr class="separator:ga07896b82d1034d756ebbc7d5046bb7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceShellUtilLaunchAppParam" id="structSceShellUtilLaunchAppParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceShellUtilLaunchAppParam">&#9670;&nbsp;</a></span>SceShellUtilLaunchAppParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceShellUtilLaunchAppParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gafc49bfdd603b28b91d2baff515ad8694"></a>const char *</td>
+<td class="fieldname">
+cmd</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga07896b82d1034d756ebbc7d5046bb7d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga07896b82d1034d756ebbc7d5046bb7d4">&#9670;&nbsp;</a></span>SceShellUtilEventHandler</h2>
@@ -290,6 +318,42 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaabebcc1d43c0fb99be2984c7f66a34e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabebcc1d43c0fb99be2984c7f66a34e4">&#9670;&nbsp;</a></span>sceShellUtilRequestLaunchApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceShellUtilRequestLaunchApp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceShellSvcUser.html#structSceShellUtilLaunchAppParam">SceShellUtilLaunchAppParam</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga65ccc9f3672d314501c982b4c791c268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65ccc9f3672d314501c982b4c791c268">&#9670;&nbsp;</a></span>sceShellUtilLaunchAppRequestLaunchApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceShellUtilLaunchAppRequestLaunchApp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceShellSvcUser.html#structSceShellUtilLaunchAppParam">SceShellUtilLaunchAppParam</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

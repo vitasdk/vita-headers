@@ -224,6 +224,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga7788d5ab86524f4e53b3dbb6547f9f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb04b8e3285643ad3f3477772ba99372"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gafb04b8e3285643ad3f3477772ba99372">sceGxmSetRegionClip</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, <a class="el" href="group__SceGxmUser.html#ga041adff8c4bcdf3570cf74a43ee3b766">SceGxmRegionClipMode</a> mode, unsigned int xMin, unsigned int yMin, unsigned int xMax, unsigned int yMax)</td></tr>
 <tr class="separator:gafb04b8e3285643ad3f3477772ba99372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb1ba1654085968b3c346e55a362e1c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gabb1ba1654085968b3c346e55a362e1c5">sceGxmSetDefaultRegionClipAndViewport</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, unsigned int xMax, unsigned int yMax)</td></tr>
+<tr class="separator:gabb1ba1654085968b3c346e55a362e1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1d2369f7863df182d10b645ffcc4f2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gab1d2369f7863df182d10b645ffcc4f2d">sceGxmSetCullMode</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, <a class="el" href="group__SceGxmUser.html#ga83f853ed70368333282d87d2eda06562">SceGxmCullMode</a> mode)</td></tr>
 <tr class="separator:gab1d2369f7863df182d10b645ffcc4f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d7becd1e77fe01200775bc963b6a4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga2d7becd1e77fe01200775bc963b6a4f4">sceGxmSetViewportEnable</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, <a class="el" href="group__SceGxmUser.html#gaaa0c7d569e32e7e4a27a0c2f06508e94">SceGxmViewportMode</a> enable)</td></tr>
@@ -1379,25 +1381,13 @@ value</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga15001b192c16ad01f74257f62649d466"></a>unsigned int</td>
-<td class="fieldname">
-xMin</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2fedc1dba75c31665535d7de8490e10c"></a>unsigned int</td>
-<td class="fieldname">
-yMin</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga09140d42c2e41092538745976740b398"></a>unsigned int</td>
+<a id="gab9d4ab0db78e4d7d02ab468d7b6c1957"></a>uint32_t</td>
 <td class="fieldname">
 xMax</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga75613c782d23ba1cb4b40bfaf510be0b"></a>unsigned int</td>
+<a id="ga543217b9f45a54b0df61e6a017899538"></a>uint32_t</td>
 <td class="fieldname">
 yMax</td>
 <td class="fielddoc">
@@ -3120,6 +3110,10 @@ The uncached LPDDR memblock for the render target GPU data structures or SCE_UID
 <tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53abae7e1a88c799b383527d517d4124525ea"></a>SCE_GXM_TEXTURE_BASE_FORMAT_UBC1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba7eb359fe759b665d6071859f90f08246"></a>SCE_GXM_TEXTURE_BASE_FORMAT_UBC2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53abafa15f1cac5636410b8b570b9b2a5e245"></a>SCE_GXM_TEXTURE_BASE_FORMAT_UBC3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba099314751057e7f420c2aab77a3bca86"></a>SCE_GXM_TEXTURE_BASE_FORMAT_UBC4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba473d7ba63c3a5f528cbef34bb709584d"></a>SCE_GXM_TEXTURE_BASE_FORMAT_SBC4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53abaf834201a8d23e52316c88cd2a9373930"></a>SCE_GXM_TEXTURE_BASE_FORMAT_UBC5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba58308f6ddf2be46a08205f26fa3b7cca"></a>SCE_GXM_TEXTURE_BASE_FORMAT_SBC5&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba82fbda76784fa9c124ab925991c0afa9"></a>SCE_GXM_TEXTURE_BASE_FORMAT_YUV420P2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba3cfb6468c2d1b4cdd074a3e68dafe43d"></a>SCE_GXM_TEXTURE_BASE_FORMAT_YUV420P3&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga504a443c7bee91a2765e7554067d53aba83d7a2a00acbba2f3bc0b04d7a6960bc"></a>SCE_GXM_TEXTURE_BASE_FORMAT_YUV422&#160;</td><td class="fielddoc"></td></tr>
@@ -3346,7 +3340,37 @@ The uncached LPDDR memblock for the render target GPU data structures or SCE_UID
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a795589f2c696e5dd53642a7c20ab617d"></a>SCE_GXM_TEXTURE_FORMAT_UBC1_ABGR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42aed986a89f0863948bf73a6615fe728f7"></a>SCE_GXM_TEXTURE_FORMAT_UBC1_1BGR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a8bc4d4400a601f60b3fa0bfb6e1714e1"></a>SCE_GXM_TEXTURE_FORMAT_UBC2_ABGR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a4e1200065af79f7ce11fe816b80953f9"></a>SCE_GXM_TEXTURE_FORMAT_UBC2_1BGR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42aa21f917deaa09cc67859c5cb60268936"></a>SCE_GXM_TEXTURE_FORMAT_UBC3_ABGR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a20f06adb025dae64e3f4ebc1a739ebb8"></a>SCE_GXM_TEXTURE_FORMAT_UBC3_1BGR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a49b1622342c1f59f87134469a7febc96"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_000R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a9e0c2e79ac97db8ee82b013f948b8474"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_111R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42ae5e23a3c30f016879e5b38ff2656e7ba"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_RRRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a90e39eb6ba39df007c5b222fd991c6f3"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_0RRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a0647adfbb413a26c5b361ff17defe29b"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_1RRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a4f356f179fb2803dda6ad4e2da1406cf"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_R000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a72cfe640b54ad4c19f246d093fd4090f"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_R111&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42af479bfc6fb6477972e5463b691f10f19"></a>SCE_GXM_TEXTURE_FORMAT_UBC4_R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a930a65c0d188c0bd3031193eb898fc4b"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_000R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42ab225ce8075dd917d2042a197420d9140"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_111R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a1b27ecd882fb83e18a5491e8b86174d1"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_RRRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a1fea658efdec49809a65fa88dc8bb035"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_0RRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a958c1d75f03e9f0151733dfc97ecda00"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_1RRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42aa0ee2090446256932a487de6573e0c55"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_R000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a789227d3148d40e45b8adb1d141b33cc"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_R111&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a785f5e9eeef961029c73b66d1b7be1f8"></a>SCE_GXM_TEXTURE_FORMAT_SBC4_R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a6709472d0e684b8b6dfc2223e8085b1b"></a>SCE_GXM_TEXTURE_FORMAT_UBC5_00GR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a764e26c5b0f44fc2802c13be9292ac88"></a>SCE_GXM_TEXTURE_FORMAT_UBC5_GRRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a19730c22ae5483b237e67bcd3e7ac03e"></a>SCE_GXM_TEXTURE_FORMAT_UBC5_RGGG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a9eb27b45318396827ca2e5ff18c5bccf"></a>SCE_GXM_TEXTURE_FORMAT_UBC5_GRGR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a24123ef29ded9c3583b94bc6e77632e8"></a>SCE_GXM_TEXTURE_FORMAT_UBC5_00RG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42ae8486cadd86ccbe83c250d2ac8ee632d"></a>SCE_GXM_TEXTURE_FORMAT_UBC5_GR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a0d46004e01d3901ec191422b42ff5712"></a>SCE_GXM_TEXTURE_FORMAT_SBC5_00GR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42ae57769c4be8819eb81db8d07ae6d9389"></a>SCE_GXM_TEXTURE_FORMAT_SBC5_GRRR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a961c456631ab5e671a94c50a0df568a7"></a>SCE_GXM_TEXTURE_FORMAT_SBC5_RGGG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a0a4cbe7995b3e8dddbc3772b258aac4a"></a>SCE_GXM_TEXTURE_FORMAT_SBC5_GRGR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a85728539fb091dce72dc3c66294d42a1"></a>SCE_GXM_TEXTURE_FORMAT_SBC5_00RG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a9eb70a0f2bb2ebcd515560dcae4b10c5"></a>SCE_GXM_TEXTURE_FORMAT_SBC5_GR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42adfef066f194dcb863e165dd77478205e"></a>SCE_GXM_TEXTURE_FORMAT_YUV420P2_CSC0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a10ae2289cdfa81098baa103b25c463ba"></a>SCE_GXM_TEXTURE_FORMAT_YVU420P2_CSC0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga29791baa70d7bf199afdb50b8e510d42a08b1871de2a67eefded80dbd1e872845"></a>SCE_GXM_TEXTURE_FORMAT_YUV420P2_CSC1&#160;</td><td class="fielddoc"></td></tr>
@@ -6116,6 +6140,40 @@ The uncached LPDDR memblock for the render target GPU data structures or SCE_UID
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>yMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>yMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabb1ba1654085968b3c346e55a362e1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb1ba1654085968b3c346e55a362e1c5">&#9670;&nbsp;</a></span>sceGxmSetDefaultRegionClipAndViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sceGxmSetDefaultRegionClipAndViewport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

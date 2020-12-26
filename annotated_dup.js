@@ -308,6 +308,7 @@ var annotated_dup =
     [ "SceShaccCgSourceFile", "group__SceShaccCgUser.html#structSceShaccCgSourceFile", "group__SceShaccCgUser_structSceShaccCgSourceFile" ],
     [ "SceShaccCgSourceLocation", "group__SceShaccCgUser.html#structSceShaccCgSourceLocation", "group__SceShaccCgUser_structSceShaccCgSourceLocation" ],
     [ "SceSharedFbInfo", "group__SceSharedFbUser.html#structSceSharedFbInfo", "group__SceSharedFbUser_structSceSharedFbInfo" ],
+    [ "SceShellUtilLaunchAppParam", "group__SceShellSvcUser.html#structSceShellUtilLaunchAppParam", "group__SceShellSvcUser_structSceShellUtilLaunchAppParam" ],
     [ "SceSqliteMallocMethods", "group__SceSqliteUser.html#structSceSqliteMallocMethods", "group__SceSqliteUser_structSceSqliteMallocMethods" ],
     [ "SceSslMemoryPoolStats", "group__SceLibSslUser.html#structSceSslMemoryPoolStats", "group__SceLibSslUser_structSceSslMemoryPoolStats" ],
     [ "SceSysconDebugHandlers", "group__SceSysconKernel.html#structSceSysconDebugHandlers", "group__SceSysconKernel_structSceSysconDebugHandlers" ],
