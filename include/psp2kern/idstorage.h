@@ -13,18 +13,20 @@ extern "C" {
 #endif
 
 /**
- * @param[in]  leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
- * @param[out] buf     - Leaf data, size is 512 byte
+ * @param[in]  leafnum - The read target leaf number
+ * @param[out] buf     - The leaf data buffer pointer, size is 512 byte
  *
  * @return 0 on success, < 0 on error.
  */
 int ksceIdStorageReadLeaf(SceSize leafnum, void *buf);
 
 /**
- * @param[in] leafnum - 0x0 ~ 0x80 / leafnum > 0x80 = error
- * @param[in] buf     - Leaf data, size is 512 byte
+ * @param[in] leafnum - The write target leaf number
+ * @param[in] buf     - The leaf data buffer pointer, size is 512 byte
  *
  * @return 0 on success, < 0 on error.
+ *
+ * note - Writing to leaf requires manufacturing mode.
  */
 int ksceIdStorageWriteLeaf(SceSize leafnum, const void *buf);
 
