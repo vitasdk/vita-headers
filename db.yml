@@ -7683,6 +7683,7 @@ modules:
           kscePowerCancelRequest: 0xDB62C9CF
           kscePowerEncodeUBattery: 0x3951AF53
           kscePowerGetArmClockFrequency: 0xABC6F88F
+          kscePowerGetArmClockFrequencyProc: 0x2E9000F7
           kscePowerGetBatteryChargingStatus: 0xB4432BC8
           kscePowerGetBatteryCycleCount: 0x008A54B9
           kscePowerGetBatteryElec: 0x862AE1A6
@@ -7696,16 +7697,22 @@ modules:
           kscePowerGetBatteryTemp: 0x28E12023
           kscePowerGetBatteryVolt: 0x483CE86B
           kscePowerGetBusClockFrequency: 0x478FE6F5
+          kscePowerGetBusClockFrequencyProc: 0x2777A517
+          kscePowerGetCameraBusClockFrequency: 0x668F01D4
           kscePowerGetCaseTemp: 0x525592E4
           kscePowerGetCompatClockFrequency: 0xCBCC11CC
-          kscePowerGetDeviceCount: 0x475BCC82
           kscePowerGetDisplayMaxBrightness: 0xD8759B55
-          kscePowerGetGpuClockFrequency: 0xC63DACD5
+          kscePowerGetDmac5ClockFrequency: 0xF1E14EA9
+          kscePowerGetGpuClockFrequencyInternal: 0x475BCC82
+          kscePowerGetGpuClockFrequencyProc: 0x642E0AF2
           kscePowerGetGpuXbarClockFrequency: 0x0A750DEE
+          kscePowerGetGpuXbarClockFrequencyProc: 0x62C5406C
           kscePowerGetIdleTimer: 0xEDC13FE5
           kscePowerGetPowerSwMode: 0x165CE085
           kscePowerGetResumeCount: 0x0074EF9B
-          kscePowerGetVenezia: 0x0E58FCDF
+          kscePowerGetSysClockFrequency: 0xC63DACD5
+          kscePowerGetVeneziaClockFrequency: 0x64641E6A
+          kscePowerGetVipClockFrequency: 0x0E58FCDF
           kscePowerGetWakeupFactor: 0x9F26222A
           kscePowerIsBatteryCharging: 0x1E490401
           kscePowerIsBatteryExist: 0x0AFD0D8B
@@ -7724,15 +7731,21 @@ modules:
           kscePowerRequestStandby: 0x2B7C7CF4
           kscePowerRequestSuspend: 0xAC32C9CC
           kscePowerSetArmClockFrequency: 0x74DB5AE5
+          kscePowerSetArmClockFrequencyProc: 0x86CB5218
           kscePowerSetBatteryFakeStatus: 0x0C6973B8
           kscePowerSetBusClockFrequency: 0xB8D7B3FB
+          kscePowerSetBusClockFrequencyProc: 0x20A33D58
           kscePowerSetCallbackState: 0xA6FF5997
+          kscePowerSetCameraBusClockFrequency: 0xC743E392
           kscePowerSetCompatClockFrequency: 0xFFC84E69
           kscePowerSetDisplayBrightness: 0x43D5CE1D
           kscePowerSetDisplayMaxBrightness: 0x77027B6B
-          kscePowerSetGpuClockFrequency: 0x621BD8FD
-          kscePowerSetGpuEs4ClockFrequency: 0x264C24FC
+          kscePowerSetDmac5ClockFrequency: 0xA902CDDF
+          kscePowerSetGpuClockFrequency: 0x717DB06C
+          kscePowerSetGpuClockFrequencyInternal: 0x264C24FC
+          kscePowerSetGpuClockFrequencyProc: 0xB104EFE2
           kscePowerSetGpuXbarClockFrequency: 0xA7739DBE
+          kscePowerSetGpuXbarClockFrequencyProc: 0x8D18F728
           kscePowerSetIdleCallback: 0x1BA2FCAE
           kscePowerSetIdleTimer: 0x6BC26FC7
           kscePowerSetPowerSwMode: 0xC1853BA7
@@ -7740,7 +7753,9 @@ modules:
           kscePowerSetProcessIdleCallback: 0x0856FD0A
           kscePowerSetPsButtonPushTime: 0xCF8F0529
           kscePowerSetStandbyButtonPushTime: 0x675A84ED
-          kscePowerSetVenezia: 0xE5573571
+          kscePowerSetSysClockFrequency: 0x0E333BEC
+          kscePowerSetVeneziaClockFrequency: 0x621BD8FD
+          kscePowerSetVipClockFrequency: 0xE5573571
           kscePowerTick: 0xEFD3C963
           kscePowerUnregisterCallback: 0xDFA8BAF8
           kscePowerWlanActivate: 0x6D2CA84B
