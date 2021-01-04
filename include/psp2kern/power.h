@@ -157,11 +157,11 @@ int kscePowerGetArmClockFrequency(void);
 int kscePowerGetBusClockFrequency(void);
 
 /**
- * Returns GPU clock frequency
+ * Returns Sys clock frequency
  *
- * @return GPU clock frequency in Mhz
+ * @return Sys clock frequency in Mhz
  */
-int kscePowerGetGpuClockFrequency(void);
+int kscePowerGetSysClockFrequency(void);
 
 /**
  * Returns GPU crossbar clock frequency
