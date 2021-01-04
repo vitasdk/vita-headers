@@ -40,7 +40,7 @@ var ern_2power_8h =
     [ "kscePowerGetBatteryCycleCount", "group__ScePowerKernel.html#ga3342c17caacf71d905677a448a01408e", null ],
     [ "kscePowerGetArmClockFrequency", "group__ScePowerKernel.html#ga1b899e101b0eb397c8d9929fd82137ad", null ],
     [ "kscePowerGetBusClockFrequency", "group__ScePowerKernel.html#gae69b60ad8c8240cb354417506a0e7246", null ],
-    [ "kscePowerGetGpuClockFrequency", "group__ScePowerKernel.html#gafbd7a694149bd49ae11d0f5bb8056508", null ],
+    [ "kscePowerGetSysClockFrequency", "group__ScePowerKernel.html#ga2bcedd1a1544a414bae5b0a9f09ee2bb", null ],
     [ "kscePowerGetGpuXbarClockFrequency", "group__ScePowerKernel.html#ga8ee6ddda2ca14202b0e5261900118239", null ],
     [ "kscePowerRequestSoftReset", "group__ScePowerKernel.html#ga876533c0e41f8d9f1287ef25f9d01a0e", null ],
     [ "kscePowerRequestColdReset", "group__ScePowerKernel.html#ga2f264a33561ff0618be7c296c2f0f4fa", null ],
