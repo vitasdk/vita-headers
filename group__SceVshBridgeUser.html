@@ -407,8 +407,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- 0x0 ~ 0x80 / leafnum &gt; 0x80 = error </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- Leaf data, size is 512 byte</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- The read target leaf number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- The leaf data buffer pointer, size is 512 byte</td></tr>
   </table>
   </dd>
 </dl>
@@ -443,12 +443,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- 0x0 ~ 0x80 / leafnum &gt; 0x80 = error </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- Leaf data, size is 512 byte</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leafnum</td><td>- The write target leaf number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- The leaf data buffer pointer, size is 512 byte</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<p>note - Writing to leaf requires manufacturing mode. </p>
 
 </div>
 </div>

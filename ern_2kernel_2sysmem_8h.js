@@ -53,7 +53,7 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelCreateHeap", "group__SceSysmemKernel.html#gafba2b363434bce815c1627756f6ea8e8", null ],
     [ "ksceKernelDeleteHeap", "group__SceSysmemKernel.html#gadf594ff037a5035136c9ae2c396e61c2", null ],
     [ "ksceKernelAllocHeapMemory", "group__SceSysmemKernel.html#ga970cf22744d7678723a41c23d75d4bc6", null ],
-    [ "ksceKernelFreeHeapMemory", "group__SceSysmemKernel.html#ga6e013f57c291dd2da318c998225516bc", null ],
+    [ "ksceKernelFreeHeapMemory", "group__SceSysmemKernel.html#ga7bf486913efbcd018bf52e29c71735db", null ],
     [ "ksceKernelMemcpyUserToKernelForPid", "group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8", null ],
     [ "ksceKernelMemcpyUserToKernel", "group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32", null ],
     [ "ksceKernelMemcpyKernelToUser", "group__SceSysmemKernel.html#gaa4b992cd4c328af2b28bc4ca839a42db", null ],
