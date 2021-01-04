@@ -215,7 +215,7 @@ int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
 SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *opt);
 int ksceKernelDeleteHeap(SceUID uid);
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
-void ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
+int ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
 
 int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
 int ksceKernelMemcpyUserToKernel(void *dst, uintptr_t src, SceSize len);
