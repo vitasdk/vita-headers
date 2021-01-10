@@ -35,51 +35,53 @@ typedef struct SceKernelThreadOptParam {
   */
 typedef struct SceKernelThreadInfo {
 	/** Size of the structure */
-	SceSize         size;
+	SceSize              size;
 	/** The UID of the process where the thread belongs */
-	SceUID          processId; //Needs confirmation
+	SceUID               processId;
 	/** Nul terminated name of the thread */
-	char            name[32];
+	char                 name[32];
 	/** Thread attributes */
-	SceUInt         attr;
+	SceUInt32            attr;
 	/** Thread status */
-	int             status;
+	SceUInt32            status;
 	/** Thread entry point */
 	SceKernelThreadEntry entry;
 	/** Thread stack pointer */
-	void            *stack;
+	void                 *pStack;
 	/** Thread stack size */
-	SceSize         stackSize;
+	SceInt32             stackSize;
 	/** Initial priority */
-	int             initPriority;
+	SceInt32             initPriority;
 	/** Current priority */
-	int             currentPriority;
+	SceInt32             currentPriority;
 	/** Initial CPU affinity mask */
-	int             initCpuAffinityMask;
+	SceInt32             initCpuAffinityMask;
 	/** Current CPU affinity mask */
-	int             currentCpuAffinityMask;
+	SceInt32             currentCpuAffinityMask;
 	/** Current CPU ID */
-	int             currentCpuId;
+	SceInt32             currentCpuId;
 	/** Last executed CPU ID */
-	int             lastExecutedCpuId;
+	SceInt32             lastExecutedCpuId;
 	/** Wait type */
-	int             waitType;
+	SceUInt32            waitType;
 	/** Wait id */
-	SceUID          waitId;
+	SceUID               waitId;
 	/** Exit status of the thread */
-	int             exitStatus;
+	SceInt32             exitStatus;
 	/** Number of clock cycles run */
-	SceKernelSysClock runClocks;
+	SceKernelSysClock    runClocks;
 	/** Interrupt preemption count */
-	SceUInt     intrPreemptCount;
+	SceUInt32            intrPreemptCount;
 	/** Thread preemption count */
-	SceUInt     threadPreemptCount;
+	SceUInt32            threadPreemptCount;
 	/** Thread release count */
-	SceUInt     threadReleaseCount;
+	SceUInt32            threadReleaseCount;
+	/** Number of CPUs to which the thread is moved */
+	SceInt32             changeCpuCount;
 	/** Function notify callback UID */
-	SceUID      fNotifyCallback;
+	SceInt32             fNotifyCallback;
 	/** Reserved */
-	int         reserved;
+	SceInt32             reserved;
 } SceKernelThreadInfo;
 
 /** Statistics about a running thread.
@@ -94,14 +96,16 @@ typedef struct SceKernelThreadRunStatus {
 	} cpuInfo[4];
 } SceKernelThreadRunStatus;
 
-/* Sure there must be more than this, but haven't seen them */
 typedef enum SceThreadStatus {
-	SCE_THREAD_RUNNING = 1,
-	SCE_THREAD_READY   = 2,
-	SCE_THREAD_WAITING = 4,
-	SCE_THREAD_SUSPEND = 8,
-	SCE_THREAD_STOPPED = 16,
-	SCE_THREAD_KILLED  = 32, /* Thread manager has killed the thread (stack overflow) */
+	SCE_THREAD_RUNNING   = 1,
+	SCE_THREAD_READY     = 2,
+	SCE_THREAD_STANDBY   = 4,
+	SCE_THREAD_WAITING   = 8,
+	SCE_THREAD_DORMANT   = 16,
+	SCE_THREAD_DELETED   = 32, /* Thread manager has killed the thread (stack overflow) */
+	SCE_THREAD_DEAD      = 64,
+	SCE_THREAD_STAGNANT  = 128,
+	SCE_THREAD_SUSPENDED = 256
 } SceThreadStatus;
 
 typedef struct SceKernelFaultingProcessInfo {
