@@ -500,16 +500,16 @@ modules:
           sceAppUtilSystemParamGetInt: 0x5DFB9CA0
           sceAppUtilSystemParamGetString: 0x6E6AA267
       SceAppUtilAddcontForce:
-        kernel: true
+        kernel: false
         nid: 0x9D061921
         functions:
-          ksceAppUtilAddcontForceAddcontMount: 0x6087E5F7
+          sceAppUtilAddcontForceAddcontMount: 0x6087E5F7
       SceAppUtilBook:
-        kernel: true
+        kernel: false
         nid: 0xDA27A9D3
         functions:
-          ksceAppUtilBookMount: 0xFDAAF091
-          ksceAppUtilBookUmount: 0x9C1794C2
+          sceAppUtilBookMount: 0xFDAAF091
+          sceAppUtilBookUmount: 0x9C1794C2
       SceAppUtilCache:
         kernel: false
         nid: 0xE96B941B
