@@ -253,10 +253,12 @@ int ksceKernelCpuSpinLockIrqSave(int *addr);
  */
 int ksceKernelCpuSpinLockIrqRestore(int *addr, int flags);
 
-#define SCE_CPU_WAIT_CORE_0 1
-#define SCE_CPU_WAIT_CORE_1 2
-#define SCE_CPU_WAIT_CORE_2 3
-#define SCE_CPU_WAIT_CORE_3 0
+typedef enum SceCpuWaitSyncCore {
+	SCE_CPU_WAIT_CORE_0 = 1,
+	SCE_CPU_WAIT_CORE_1 = 2,
+	SCE_CPU_WAIT_CORE_2 = 3,
+	SCE_CPU_WAIT_CORE_3 = 0
+} SceCpuSyncWaitCore;
 
 typedef struct SceCpuCoreSyncCtx {
 	int lock;
