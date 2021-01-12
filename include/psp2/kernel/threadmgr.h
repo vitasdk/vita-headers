@@ -45,7 +45,7 @@ typedef struct SceKernelThreadInfo {
 	/** Thread entry point */
 	SceKernelThreadEntry entry;
 	/** Thread stack pointer */
-	void                 *pStack;
+	void                 *stack;
 	/** Thread stack size */
 	SceInt32             stackSize;
 	/** Initial priority */
