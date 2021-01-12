@@ -20,5 +20,6 @@ var group__kernel =
     [ "Process event Library", "group__SceProcEvent.html", "group__SceProcEvent" ],
     [ "Kernel system root Library", "group__SceKernelSysroot.html", "group__SceKernelSysroot" ],
     [ "Kernel C Library", "group__SceSysclib.html", "group__SceSysclib" ],
-    [ "Kernel Ss Library", "group__SceSblSsMgr.html", "group__SceSblSsMgr" ]
+    [ "Kernel Ss Library", "group__SceSblSsMgr.html", "group__SceSblSsMgr" ],
+    [ "dip switch Library", "group__SceDipsw.html", "group__SceDipsw" ]
 ];

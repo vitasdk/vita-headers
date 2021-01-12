@@ -91,6 +91,7 @@ var annotated_dup =
     [ "SceCtrlVirtualControllerDriver", "group__SceCtrlKernel.html#structSceCtrlVirtualControllerDriver", "group__SceCtrlKernel_structSceCtrlVirtualControllerDriver" ],
     [ "SceDateTime", "group__SceTypesUser.html#structSceDateTime", "group__SceTypesUser_structSceDateTime" ],
     [ "SceDeflatePartialInputParam", "group__SceUtilsKernel.html#structSceDeflatePartialInputParam", "group__SceUtilsKernel_structSceDeflatePartialInputParam" ],
+    [ "SceDipsw", "group__SceDipswKernel.html#structSceDipsw", "group__SceDipswKernel_structSceDipsw" ],
     [ "SceDisplayFrameBuf", "group__SceDisplayUser.html#structSceDisplayFrameBuf", "group__SceDisplayUser_structSceDisplayFrameBuf" ],
     [ "SceDisplayFrameBufInfo", "group__SceDisplayKernel.html#structSceDisplayFrameBufInfo", "group__SceDisplayKernel_structSceDisplayFrameBufInfo" ],
     [ "SceFColor", "group__SceTypesUser.html#structSceFColor", "group__SceTypesUser_structSceFColor" ],
