@@ -6,7 +6,7 @@ var group__SceThreadMgrUser_structSceKernelThreadInfo =
     [ "attr", "group__SceThreadMgrUser.html#ga30339ccbd6ca7acc27bbddb0753c8491", null ],
     [ "status", "group__SceThreadMgrUser.html#ga2ebabdf7dc2da4ee310ea1befc8c1d99", null ],
     [ "entry", "group__SceThreadMgrUser.html#ga3ca76db6f243d1b628b21b1421a05582", null ],
-    [ "pStack", "group__SceThreadMgrUser.html#gae5f0f5336232a52e459920031ce9cb40", null ],
+    [ "stack", "group__SceThreadMgrUser.html#gaf45401f5a22dfcde99d76b8341837b80", null ],
     [ "stackSize", "group__SceThreadMgrUser.html#gaee96dd5e893c7798736b85fbdf95f44b", null ],
     [ "initPriority", "group__SceThreadMgrUser.html#ga54d32fa74cf85a6e32e59c933b0b0a3d", null ],
     [ "currentPriority", "group__SceThreadMgrUser.html#gace2dd3b21d7db7b88784313d5d191a1a", null ],
