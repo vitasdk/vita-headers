@@ -9,6 +9,7 @@
 #define _PSP2_KERNEL_SYSROOT_H_
 
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/kbl/kbl.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -26,6 +27,11 @@ typedef struct SceKernelSysrootSelfInfo {
 	SceSize self_size;
 } SceKernelSysrootSelfInfo;
 
+/**
+ * Get SceKblParam.
+ *
+ * @return The pointer of SceKblParam data or NULL.
+ */
 void *ksceKernelSysrootGetKblParam(void);
 
 /* Macro for backward compatibility */
