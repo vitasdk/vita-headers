@@ -22,6 +22,8 @@ typedef char SceUpdateMode;
  */
 int sceSblUsGetUpdateMode(SceUpdateMode *mode);
 
+#define sceSblSsUpdateMgrGetBootMode sceSblUsGetUpdateMode
+
 /**
  * Setting system update mode on boot
  *
@@ -30,6 +32,8 @@ int sceSblUsGetUpdateMode(SceUpdateMode *mode);
  * @return 0 on success, < 0 on error.
  */
 int sceSblUsSetUpdateMode(SceUpdateMode mode);
+
+#define sceSblSsUpdateMgrSetBootMode sceSblUsSetUpdateMode
 
 /**
  * Verify PUP
