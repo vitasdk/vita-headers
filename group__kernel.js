@@ -1,5 +1,6 @@
 var group__kernel =
 [
+    [ "kernel bootloader", "group__SceKbl.html", "group__SceKbl" ],
     [ "C Standard Library", "group__SceCLib.html", "group__SceCLib" ],
     [ "CPU Library", "group__SceCPU.html", "group__SceCPU" ],
     [ "System Module Library", "group__SceSysmodule.html", "group__SceSysmodule" ],

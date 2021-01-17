@@ -77,10 +77,32 @@ $(document).ready(function(){initNavTree('ern_2types_8h_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <a href="ern_2types_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">psp2/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef _PSP2_KERNEL_TYPES_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define _PSP2_KERNEL_TYPES_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">psp2/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="group__SceTypesKernel.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__SceTypesKernel.html#structSceSblMemoryBase">SceSblMemoryBase</a> { <span class="comment">// size is 0x8</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="group__SceTypesKernel.html#ga42b92edeba5e9409f0a791686510813b">   16</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="group__SceTypesKernel.html#ga42b92edeba5e9409f0a791686510813b">base</a>; <span class="comment">// paddr</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__SceTypesKernel.html#ga1f9c5272480debde968183f1681f6189">   17</a></span>&#160;    <a class="code" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="code" href="group__SceTypesKernel.html#ga1f9c5272480debde968183f1681f6189">size</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <a class="code" href="group__SceTypesKernel.html#structSceSblMemoryBase">SceSblMemoryBase</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_TYPES_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
+<div class="ttc" id="agroup__SceTypesKernel_html_ga42b92edeba5e9409f0a791686510813b"><div class="ttname"><a href="group__SceTypesKernel.html#ga42b92edeba5e9409f0a791686510813b">SceSblMemoryBase::base</a></div><div class="ttdeci">void * base</div><div class="ttdef"><b>Definition:</b> types.h:16</div></div>
+<div class="ttc" id="agroup__SceTypesKernel_html_structSceSblMemoryBase"><div class="ttname"><a href="group__SceTypesKernel.html#structSceSblMemoryBase">SceSblMemoryBase</a></div><div class="ttdef"><b>Definition:</b> types.h:15</div></div>
+<div class="ttc" id="agroup__SceTypesUser_html_ga6f2706740670a84a49050f5327a2bf35"><div class="ttname"><a href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></div><div class="ttdeci">unsigned int SceSize</div><div class="ttdef"><b>Definition:</b> types.h:38</div></div>
+<div class="ttc" id="agroup__SceTypesKernel_html_ga1f9c5272480debde968183f1681f6189"><div class="ttname"><a href="group__SceTypesKernel.html#ga1f9c5272480debde968183f1681f6189">SceSblMemoryBase::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdef"><b>Definition:</b> types.h:17</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

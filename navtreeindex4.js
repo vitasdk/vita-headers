@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"group__SceAudiodecUser.html#gada455d377503c92abb138ec09a44d9fb":[4,0,1,0,6,40],
+"group__SceAudiodecUser.html#gada455d377503c92abb138ec09a44d9fb":[1,2,2,0,83],
+"group__SceAudiodecUser.html#gadd90a59f3ef4a41222cdcb0f61a67493":[4,0,1,0,6,36],
+"group__SceAudiodecUser.html#gadd90a59f3ef4a41222cdcb0f61a67493":[1,2,2,0,36],
+"group__SceAudiodecUser.html#gaefd0b7b2050b03ece58d6213cf856880":[4,0,1,0,6,27],
+"group__SceAudiodecUser.html#gaefd0b7b2050b03ece58d6213cf856880":[1,2,2,0,27],
 "group__SceAudiodecUser.html#gaf2c82b74ed29ab4a41d933d7f03bde23":[4,0,1,0,6,34],
 "group__SceAudiodecUser.html#gaf2c82b74ed29ab4a41d933d7f03bde23":[1,2,2,0,34],
 "group__SceAudiodecUser.html#gaf736ac26f0edbd6b111b7c2dbc449446":[4,0,1,0,6,23],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab4f2319f3bb23f6dc9fbd12bc2b7699b":[1,2,3,0,9,9],
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab4f2319f3bb23f6dc9fbd12bc2b7699b":[1,2,3,0,36],
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[4,0,1,0,7,9,3],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[1,2,3,0,9,3],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[1,2,3,0,30],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fad5937049715f9558083be51835c50116":[4,0,1,0,7,9,0],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fad5937049715f9558083be51835c50116":[1,2,3,0,9,0],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fad5937049715f9558083be51835c50116":[1,2,3,0,27],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fae645ac1f01ccbc924df25568f30a5a28":[4,0,1,0,7,9,2],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fae645ac1f01ccbc924df25568f30a5a28":[1,2,3,0,9,2]
+"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[1,2,3,0,9,3]
 };
