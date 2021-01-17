@@ -12,10 +12,10 @@
 extern "C" {
 #endif
 
-typedef struct SceSblMemoryBase { // size is 0x8
-	void *base; // paddr
-	SceSize size;
-} SceSblMemoryBase;
+typedef struct SceKernelPARange { // size is 0x8
+	uint32_t paddr;
+	uint32_t length;
+} SceKernelPARange;
 
 #ifdef __cplusplus
 }
