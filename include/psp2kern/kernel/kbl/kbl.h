@@ -43,7 +43,7 @@ typedef struct SceKblParam { // size is 0x100 or 0x200. must 0x200 on 3.60.
 	 * 0x00000001:bsod reboot(or other serious factors)
 	 * 0x00000010:bsod poweroff
 	 * 0x00000400:always?
-	 * 0x00020000:unknown
+	 * 0x00020000:maybe low battery
 	 */
 	uint32_t unk_C0;
 	uint32_t wakeup_factor;
