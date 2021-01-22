@@ -140,6 +140,14 @@ typedef struct SceKernelProcessContext {
 	SceUInt32 CONTEXTIDR;
 } SceKernelProcessContext;
 
+typedef struct SceAllocOpt {
+	SceSize size;   // 0x14
+	SceSize data04; // maybe len align?
+	SceSize align;
+	int data0C;
+	int data10; 
+} SceAllocOpt;
+
 /**
  * Allocates a new memory block
  *
@@ -215,6 +223,7 @@ int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
 SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *opt);
 int ksceKernelDeleteHeap(SceUID uid);
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
+void *ksceKernelAllocHeapMemoryWithOption(SceUID heapid, SceSize len, SceAllocOpt *pOpt);
 int ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
 
 int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
