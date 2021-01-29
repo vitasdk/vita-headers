@@ -42,6 +42,19 @@ int ksceSblAimgrGetConsoleId(SceConsoleId *cid);
 int ksceSblAimgrGetOpenPsId(SceOpenPsId *open_psid);
 int ksceSblAimgrGetPscode(ScePsCode *pscode);
 
+int ksceSblDmac5AesCbcDec(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
+int ksceSblDmac5AesCbcEnc(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
+int ksceSblSsMgrAesCtrDecrypt(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
+
+#define ksceSblDmac5AesCtrDec ksceSblSsMgrAesCtrDecrypt
+
+typedef struct ScePortabilityData { // size is 0x24
+	SceSize msg_size;           // max size is 0x20
+	uint8_t msg[0x20];
+} ScePortabilityData;
+
+int ksceSblSsDecryptWithPortability(SceUInt32 key_type, void *iv, ScePortabilityData *src, ScePortabilityData *dst);
+
 #ifdef __cplusplus
 }
 #endif
