@@ -99,8 +99,11 @@ typedef enum SceThreadStatus {
 	SCE_THREAD_READY     = 2,
 	SCE_THREAD_STANDBY   = 4,
 	SCE_THREAD_WAITING   = 8,
+	SCE_THREAD_SUSPEND   = 8, /* Compatibility */
 	SCE_THREAD_DORMANT   = 16,
+	SCE_THREAD_STOPPED   = 16, /* Compatibility */
 	SCE_THREAD_DELETED   = 32, /* Thread manager has killed the thread (stack overflow) */
+	SCE_THREAD_KILLED    = 32, /* Compatibility */
 	SCE_THREAD_DEAD      = 64,
 	SCE_THREAD_STAGNANT  = 128,
 	SCE_THREAD_SUSPENDED = 256
