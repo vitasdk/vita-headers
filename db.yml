@@ -1459,6 +1459,8 @@ modules:
           ksceCtrlGetControllerPortInfo: 0xF11D0D30
           ksceCtrlGetIdleCancelKey: 0x30801AE9
           ksceCtrlGetIdleCancelThreshold: 0xB9402CEF
+          ksceCtrlGetMaskForAll: 0x46ABDDE8
+          ksceCtrlGetMaskForNonShell: 0xB25BD8FD
           ksceCtrlGetSamplingMode: 0x145B13BC
           ksceCtrlIsBdRemoconConnected: 0x5B849B22
           ksceCtrlNotifyCallBacks: 0x6E183B9B
@@ -1480,6 +1482,8 @@ modules:
           ksceCtrlSetTurnOffInterval: 0xED8F0129
           ksceCtrlSetVibrationSetting: 0x4D8FE670
           ksceCtrlUnregisterNotifyCallBack: 0x9DAB51C4
+          ksceCtrlUpdateMaskForAll: 0x12C13A72
+          ksceCtrlUpdateMaskForNonShell: 0x03777131
   SceDTrace:
     nid: 0x00000023
     libraries:

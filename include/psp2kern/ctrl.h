@@ -297,6 +297,48 @@ int ksceCtrlSetAnalogEmulation(unsigned int port, unsigned char slot,
  */
 int ksceCtrlRegisterVirtualControllerDriver(SceCtrlVirtualControllerDriver *driver);
 
+/**
+ * Update ctrl mask for non shell process
+ *
+ * @param[in] clear_mask - The SceCtrlButtons type value
+ * @param[in] set_mask   - The SceCtrlButtons type value
+ *
+ * @return always 0.
+ *
+ * note - Some values cannot be clear/set.
+ */
+int ksceCtrlUpdateMaskForNonShell(int clear_mask, int set_mask);
+
+/**
+ * Update ctrl mask for all process
+ *
+ * @param[in] clear_mask - The SceCtrlButtons type value
+ * @param[in] set_mask   - The SceCtrlButtons type value
+ *
+ * @return always 0.
+ *
+ * note - Some values cannot be clear/set.
+ */
+int ksceCtrlUpdateMaskForAll(int clear_mask, int set_mask);
+
+/**
+ * Get ctrl mask for non shell process
+ *
+ * @param[out] mask - The pointer of SceCtrlButtons type value output
+ *
+ * @return 0 on success. < 0 on error.
+ */
+int ksceCtrlGetMaskForNonShell(uint32_t *mask);
+
+/**
+ * Get ctrl mask for all process
+ *
+ * @param[out] mask - The pointer of SceCtrlButtons type value output
+ *
+ * @return 0 on success. < 0 on error.
+ */
+int ksceCtrlGetMaskForAll(uint32_t *mask);
+
 #ifdef __cplusplus
 }
 #endif
