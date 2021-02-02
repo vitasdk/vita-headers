@@ -140,6 +140,14 @@ typedef struct SceKernelProcessContext {
 	SceUInt32 CONTEXTIDR;
 } SceKernelProcessContext;
 
+typedef struct SceAllocOpt {
+	SceSize size;   // 0x14
+	SceSize data04; // maybe len align?
+	SceSize align;
+	int data0C;
+	int data10; 
+} SceAllocOpt;
+
 /**
  * Allocates a new memory block
  *
@@ -212,9 +220,58 @@ SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize 
  */
 int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
 
+/**
+ * Create heap area
+ *
+ * @param[in] name - The heap name
+ * @param[in] size - The heap size
+ * @param[in] opt  - The pointer of SceKernelHeapCreateOpt option data
+ *
+ * @return heapid on success, < 0 on error.
+ */
 SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *opt);
+
+/**
+ * Delete heap area
+ *
+ * @param[in] uid - The heapid
+ *
+ * @return always 0.
+ *
+ * note - Trigger an infinite loop if something fails internally.
+ *        For example, passing an invalid heapid.
+ */
 int ksceKernelDeleteHeap(SceUID uid);
+
+/**
+ * Allocation the specified length of memory from heap
+ *
+ * @param[in] uid  - The heapid
+ * @param[in] size - The alloc size
+ *
+ * @return The pointer of allocated memory on success, NULL on error.
+ */
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
+
+/**
+ * Allocation the specified length of memory from heap with option
+ *
+ * @param[in] uid  - The heapid
+ * @param[in] size - The alloc size
+ * @param[in] opt  - The pointer of option
+ *
+ * @return The pointer of allocated memory on success, NULL on error.
+ */
+void *ksceKernelAllocHeapMemoryWithOption(SceUID heapid, SceSize len, SceAllocOpt *opt);
+
+/**
+ * Free allocated memory
+ *
+ * @param[in] uid - The heapid
+ * @param[in] ptr - The pointer of allocated memory
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
 
 int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
