@@ -13,8 +13,8 @@ extern "C" {
 #endif
 
 typedef struct SceKernelPARange { // size is 0x8
-	uint32_t paddr;
-	uint32_t length;
+	uint32_t addr;
+	SceSize size;
 } SceKernelPARange;
 
 #ifdef __cplusplus
