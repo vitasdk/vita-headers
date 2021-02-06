@@ -234,6 +234,35 @@ int ksceSysconSetLowBatteryCallback(SceSysconCallback callback, void *argp);
  */
 int ksceSysconSetThermalAlertCallback(SceSysconCallback callback, void *argp);
 
+typedef enum SceSysconControl {
+	SCE_SYSCON_CTRL_UP        = 0x1,
+	SCE_SYSCON_CTRL_RIGHT     = 0x2,
+	SCE_SYSCON_CTRL_DOWN      = 0x4,
+	SCE_SYSCON_CTRL_LEFT      = 0x8,
+	SCE_SYSCON_CTRL_TRIANGLE  = 0x10,
+	SCE_SYSCON_CTRL_CIRCLE    = 0x20,
+	SCE_SYSCON_CTRL_CROSS     = 0x40,
+	SCE_SYSCON_CTRL_SQUARE    = 0x80,
+	SCE_SYSCON_CTRL_SELECT    = 0x100,
+	SCE_SYSCON_CTRL_LTRIGGER  = 0x200,
+	SCE_SYSCON_CTRL_RTRIGGER  = 0x400,
+	SCE_SYSCON_CTRL_START     = 0x800,
+	SCE_SYSCON_CTRL_PSBUTTON  = 0x1000,
+	SCE_SYSCON_CTRL_POWER     = 0x4000,
+	SCE_SYSCON_CTRL_VOLUP     = 0x10000,
+	SCE_SYSCON_CTRL_VOLDOWN   = 0x20000,
+	SCE_SYSCON_CTRL_HEADPHONE = 0x8000000
+} SceSysconControl;
+
+/**
+ * Get physics button control info
+ *
+ * @param[out] ctrl - The pointer of physics button control info output
+ *
+ * @return 0 on success.
+ */
+int ksceSysconGetControlsInfo(SceUInt32 *ctrl);
+
 #ifdef __cplusplus
 }
 #endif
