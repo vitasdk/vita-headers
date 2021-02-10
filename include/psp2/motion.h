@@ -17,21 +17,21 @@ extern "C" {
 /* enum */
 
 typedef enum SceMotionMagFieldStability {
-	SCE_MOTION_MAGFIELD_UNSTABLE = 0,
-	SCE_MOTION_MAGFIELD_UNUSED   = 1,
-	SCE_MOTION_MAGFIELD_STABLE   = 2
+	SCE_MOTION_MAGFIELD_UNSTABLE    =   0,
+	SCE_MOTION_MAGFIELD_UNUSED      =   1,
+	SCE_MOTION_MAGFIELD_STABLE      =   2
 } SceMotionMagFieldStability;
 
 typedef enum SceMotionErrorCode {
-	SCE_MOTION_ERROR_DATA_INVALID     =	0x80360200,
-	SCE_MOTION_ERROR_READING	      = 0x80360201,
-	SCE_MOTION_ERROR_NON_INIT_ERR	  = 0x80360202,
-	SCE_MOTION_ERROR_STATE_INVALID	  = 0x80360203,
-	SCE_MOTION_ERROR_CALIB_READ_FAIL  = 0x80360204,
-	SCE_MOTION_ERROR_OUT_OF_BOUNDS	  = 0x80360205,
-	SCE_MOTION_ERROR_NOT_SAMPLING	  = 0x80360206,
-	SCE_MOTION_ERROR_ALREADY_SAMPLING = 0x80360207,
-	SCE_MOTION_ERROR_MEM_IN_USE	      = 0x80360208
+	SCE_MOTION_ERROR_DATA_INVALID       =   0x80360200,
+	SCE_MOTION_ERROR_READING            =   0x80360201,
+	SCE_MOTION_ERROR_NON_INIT_ERR       =   0x80360202,
+	SCE_MOTION_ERROR_STATE_INVALID      =   0x80360203,
+	SCE_MOTION_ERROR_CALIB_READ_FAIL    =   0x80360204,
+	SCE_MOTION_ERROR_OUT_OF_BOUNDS      =   0x80360205,
+	SCE_MOTION_ERROR_NOT_SAMPLING       =   0x80360206,
+	SCE_MOTION_ERROR_ALREADY_SAMPLING   =   0x80360207,
+	SCE_MOTION_ERROR_MEM_IN_USE	        =   0x80360208
 } SceMotionErrorCode;
 
 
@@ -39,20 +39,20 @@ typedef enum SceMotionErrorCode {
 
 /** Returned motion state */
 typedef struct SceMotionState {
-	unsigned int timestamp;			//!< Local timestamp of the device
-	SceFVector3 acceleration;		//!< Accelerometer data
-	SceFVector3 angularVelocity;	//!< Angular velocity data
-	uint8_t reserved1[12];			//!< Reserved data
-	SceFQuaternion deviceQuat;		//!< Orientation data as a Quaternion
-	SceFMatrix4 rotationMatrix;		//!< Orientation data as a rotation matrix
-	SceFMatrix4 nedMatrix;			//!< Magnetometer orientation matrix
-	uint8_t reserved2[4];			//!< Reserved data
-	SceFVector3 basicOrientation;	//!< Orientation of the device in reference to gravity
-	SceULong64 hostTimestamp;		//!< Timestamp of the data in microseconds
-	uint8_t reserved3[36];			//!< Reserved data
-	uint8_t magFieldStability;		//!< Either 0 or 2 depending on surrounding metal objects
-	uint8_t unknown;				//!< Unknown
-	uint8_t reserved4[2];			//!< Reserved data
+	unsigned int timestamp;         //!< Local timestamp of the device
+	SceFVector3 acceleration;       //!< Accelerometer data
+	SceFVector3 angularVelocity;    //!< Angular velocity data
+	uint8_t reserved1[12];          //!< Reserved data
+	SceFQuaternion deviceQuat;      //!< Orientation data as a Quaternion
+	SceFMatrix4 rotationMatrix;     //!< Orientation data as a rotation matrix
+	SceFMatrix4 nedMatrix;          //!< Magnetometer orientation matrix
+	uint8_t reserved2[4];           //!< Reserved data
+	SceFVector3 basicOrientation;   //!< Orientation of the device in reference to gravity
+	SceULong64 hostTimestamp;       //!< Timestamp of the data in microseconds
+	uint8_t reserved3[36];          //!< Reserved data
+	uint8_t magFieldStability;      //!< One of ::SceMotionMagFieldStability
+	uint8_t unknown;                //!< Unknown
+	uint8_t reserved4[2];           //!< Reserved data
 } SceMotionState;
 
 /** Returned motion sensor state 
