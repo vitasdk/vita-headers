@@ -254,10 +254,10 @@ int ksceKernelCpuSpinLockIrqSave(int *addr);
 int ksceKernelCpuSpinLockIrqRestore(int *addr, int flags);
 
 typedef enum SceCorelockCore {
-	SCE_CPU_WAIT_CORE_0 = 1,
-	SCE_CPU_WAIT_CORE_1 = 2,
-	SCE_CPU_WAIT_CORE_2 = 3,
-	SCE_CPU_WAIT_CORE_3 = 0
+	SCE_CORELOCK_CORE0 = 1,
+	SCE_CORELOCK_CORE1 = 2,
+	SCE_CORELOCK_CORE2 = 3,
+	SCE_CORELOCK_CORE3 = 0
 } SceCorelockCore;
 
 typedef struct SceCorelockContext {
