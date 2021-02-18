@@ -9165,8 +9165,9 @@ modules:
         kernel: true
         nid: 0x54BF2BAB
         functions:
-          ksceKernelCoreSyncAll: 0xA5C9DBBA
-          ksceKernelCoreSyncWait: 0x9D72DD1B
+          ksceKernelCorelockContextInitialize: 0x4CD4D921
+          ksceKernelCorelockLock: 0x9D72DD1B
+          ksceKernelCorelockUnlock: 0xA5C9DBBA
           ksceKernelCpuBranchPredictorInvalidateAll: 0x4C4C7D6B
           ksceKernelCpuBranchPredictorInvalidateAllIS: 0x1BB2BB8D
           ksceKernelCpuDcacheCleanInvalidateMVAC: 0xC8E8C9E9
@@ -9187,7 +9188,6 @@ modules:
           ksceKernelCpuPreloadEngineKill: 0xD0D85FF8
           ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
           ksceKernelCpuUpdateSCTLR: 0x04008CF7
-          ksceKernelInitCpuCoreSyncCtx: 0x4CD4D921
           ksceKernelMMUVAtoPAWithMode: 0x67343A07
       SceDebugForDriver:
         kernel: true
