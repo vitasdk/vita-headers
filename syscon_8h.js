@@ -20,6 +20,25 @@ var syscon_8h =
       [ "SCE_SYSCON_RESET_TYPE_COLD_RESET", "group__SceSysconKernel.html#ggaeedd5b2730a3b09c39b91ed100cb4175a55de01fe1cdd5780da28c0abf1a6c22d", null ],
       [ "SCE_SYSCON_RESET_TYPE_SOFT_RESET", "group__SceSysconKernel.html#ggaeedd5b2730a3b09c39b91ed100cb4175aa6ec35f5e89dabefbabd6515fc942cd7", null ]
     ] ],
+    [ "SceSysconControl", "group__SceSysconKernel.html#ga7c6b1fb438122526270f29b1eac44fee", [
+      [ "SCE_SYSCON_CTRL_UP", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea685551e640d1e18b72ad25f0bfbaa22a", null ],
+      [ "SCE_SYSCON_CTRL_RIGHT", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea3534acb8a49ed7be6e81ad380d81921c", null ],
+      [ "SCE_SYSCON_CTRL_DOWN", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeaa3326298ca1d71050fc6ccd62c119323", null ],
+      [ "SCE_SYSCON_CTRL_LEFT", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea33ef9d13f32e399078aba3cac154f819", null ],
+      [ "SCE_SYSCON_CTRL_TRIANGLE", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeaad578ec8c6bdbaa238797573c45036f2", null ],
+      [ "SCE_SYSCON_CTRL_CIRCLE", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea413746269537db92a3574e9f63943411", null ],
+      [ "SCE_SYSCON_CTRL_CROSS", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea3ea5d91fd0a3e10a1cc61d498dacf468", null ],
+      [ "SCE_SYSCON_CTRL_SQUARE", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea6f48fb54ac5edf43a5ece731220b50bf", null ],
+      [ "SCE_SYSCON_CTRL_SELECT", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feead1d91b2de8c3135d3e2179632fb45d3d", null ],
+      [ "SCE_SYSCON_CTRL_LTRIGGER", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeafa61345b498848b30c8fc78c0dd18548", null ],
+      [ "SCE_SYSCON_CTRL_RTRIGGER", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeafa18da7b1790fe280ad8233263a5caf1", null ],
+      [ "SCE_SYSCON_CTRL_START", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea59083967ec9f898d63b2f51a0ec71529", null ],
+      [ "SCE_SYSCON_CTRL_PSBUTTON", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea5d28cf9914b28f6960d7507d2e1d5ac9", null ],
+      [ "SCE_SYSCON_CTRL_POWER", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea2aeb11428cbd0ce4366f7f5318f0635a", null ],
+      [ "SCE_SYSCON_CTRL_VOLUP", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea82b07fb5d86522453f1a831b8ddb427c", null ],
+      [ "SCE_SYSCON_CTRL_VOLDOWN", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea1ea724f49978a243449a5e5268cc7457", null ],
+      [ "SCE_SYSCON_CTRL_HEADPHONE", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeae212368ffc9a57afb650efc1a28a85a1", null ]
+    ] ],
     [ "ksceSysconWaitInitialized", "group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd", null ],
     [ "ksceSysconCmdExec", "group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231", null ],
     [ "ksceSysconCmdExecAsync", "group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167", null ],
@@ -60,5 +79,6 @@ var syscon_8h =
     [ "ksceSysconVerifyConfigstorageScript", "group__SceSysconKernel.html#gaa26d77a29fbf1d2b24ea3cf095a9d9f4", null ],
     [ "ksceSysconSetAlarmCallback", "group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40", null ],
     [ "ksceSysconSetLowBatteryCallback", "group__SceSysconKernel.html#ga19209e2b0ee8adf1a05e983e45e6271a", null ],
-    [ "ksceSysconSetThermalAlertCallback", "group__SceSysconKernel.html#gaec856771758bff4fceda58297c2b7f10", null ]
+    [ "ksceSysconSetThermalAlertCallback", "group__SceSysconKernel.html#gaec856771758bff4fceda58297c2b7f10", null ],
+    [ "ksceSysconGetControlsInfo", "group__SceSysconKernel.html#ga1e5958bfa3875d475e217942d5d16663", null ]
 ];

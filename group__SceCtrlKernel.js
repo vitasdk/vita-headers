@@ -125,5 +125,9 @@ var group__SceCtrlKernel =
     [ "ksceCtrlGetButtonIntercept", "group__SceCtrlKernel.html#ga49042bafaea8c7bad86279fd81fcca53", null ],
     [ "ksceCtrlSetButtonEmulation", "group__SceCtrlKernel.html#ga228c34880869b12d0f256fb49782471d", null ],
     [ "ksceCtrlSetAnalogEmulation", "group__SceCtrlKernel.html#gad4564b9daaee3dac2fd7a2928a793a22", null ],
-    [ "ksceCtrlRegisterVirtualControllerDriver", "group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef", null ]
+    [ "ksceCtrlRegisterVirtualControllerDriver", "group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef", null ],
+    [ "ksceCtrlUpdateMaskForNonShell", "group__SceCtrlKernel.html#ga24bbbe53e4067585be511f057a363788", null ],
+    [ "ksceCtrlUpdateMaskForAll", "group__SceCtrlKernel.html#gaae732ffaa6187c6619d27e8695ff899c", null ],
+    [ "ksceCtrlGetMaskForNonShell", "group__SceCtrlKernel.html#gaa1b96b2a928f72527a71936d3d8f8596", null ],
+    [ "ksceCtrlGetMaskForAll", "group__SceCtrlKernel.html#ga6522aead380c3b306fa903a977e526ab", null ]
 ];

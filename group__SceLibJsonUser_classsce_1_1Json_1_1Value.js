@@ -56,7 +56,7 @@ var group__SceLibJsonUser_classsce_1_1Json_1_1Value =
     [ "operator bool", "group__SceLibJsonUser.html#ga29d7647e75315da8da07f4bd887a809d", null ],
     [ "parent", "group__SceLibJsonUser.html#ga5ec56a924f6b8b6224dea5b618089f6b", null ],
     [ "cb", "group__SceLibJsonUser.html#ga911fb3a3c2d5836371122cb1b215b26f", null ],
-    [ "value", "group__SceLibJsonUser.html#ga5bac75811d5ec897c5568ddeb97561a3", null ],
+    [ "value", "group__SceLibJsonUser.html#gaef37f2db97b12d8b263e120986a15dc3", null ],
     [ "unused", "group__SceLibJsonUser.html#ga31020e45b66de8528ca360a5297d98bc", null ],
     [ "type", "group__SceLibJsonUser.html#ga10ef71ac650b29bbb0500c5cde4630e2", null ]
 ];

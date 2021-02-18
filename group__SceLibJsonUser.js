@@ -1,7 +1,5 @@
 var group__SceLibJsonUser =
 [
-    [ "sce", "namespacesce.html", null ],
-    [ "Json", "namespacesce_1_1Json.html", null ],
     [ "SerializeCallback", "group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53", null ],
     [ "NullAccessCallback", "group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6", null ],
     [ "ParseCallback", "group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9", null ],
