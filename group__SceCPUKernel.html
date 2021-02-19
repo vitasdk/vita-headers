@@ -151,12 +151,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf609c6394e271c010838dbd33550a35b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gaf609c6394e271c010838dbd33550a35b">ksceKernelCpuSpinLockIrqRestore</a> (int *addr, int flags)</td></tr>
 <tr class="memdesc:gaf609c6394e271c010838dbd33550a35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin-unlock and restore interrupt state.  <a href="group__SceCPUKernel.html#gaf609c6394e271c010838dbd33550a35b">More...</a><br /></td></tr>
 <tr class="separator:gaf609c6394e271c010838dbd33550a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga827469d1ff44241e5c1adbaf16759dd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga827469d1ff44241e5c1adbaf16759dd6">ksceKernelInitCpuCoreSyncCtx</a> (<a class="el" href="group__SceCPUKernel.html#structSceCpuCoreSyncCtx">SceCpuCoreSyncCtx</a> *ctx)</td></tr>
-<tr class="separator:ga827469d1ff44241e5c1adbaf16759dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f96ec9dafff5695b8e75ac7116873bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga1f96ec9dafff5695b8e75ac7116873bc">ksceKernelCoreSyncAll</a> (<a class="el" href="group__SceCPUKernel.html#structSceCpuCoreSyncCtx">SceCpuCoreSyncCtx</a> *ctx)</td></tr>
-<tr class="separator:ga1f96ec9dafff5695b8e75ac7116873bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9eb83dfdb7635dd12e8361357408661d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga9eb83dfdb7635dd12e8361357408661d">ksceKernelCoreSyncWait</a> (<a class="el" href="group__SceCPUKernel.html#structSceCpuCoreSyncCtx">SceCpuCoreSyncCtx</a> *ctx, int core)</td></tr>
-<tr class="separator:ga9eb83dfdb7635dd12e8361357408661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66a0b185626e3a33792410e0e3b703b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga66a0b185626e3a33792410e0e3b703b5">ksceKernelCorelockContextInitialize</a> (<a class="el" href="group__SceCPUKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
+<tr class="separator:ga66a0b185626e3a33792410e0e3b703b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf598bcb06ab29d54f67984f72edd9ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#gadf598bcb06ab29d54f67984f72edd9ac">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCPUKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, int core)</td></tr>
+<tr class="separator:gadf598bcb06ab29d54f67984f72edd9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59efe9a7590000a8317bf777c7e9b770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCPUKernel.html#ga59efe9a7590000a8317bf777c7e9b770">ksceKernelCorelockUnlock</a> (<a class="el" href="group__SceCPUKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
+<tr class="separator:ga59efe9a7590000a8317bf777c7e9b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -168,33 +168,33 @@ Macros</h2></td></tr>
 <tr class="separator:ga47b24d3d1d69aeea9dc02cf55ccd55c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structSceCpuCoreSyncCtx" id="structSceCpuCoreSyncCtx"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceCpuCoreSyncCtx">&#9670;&nbsp;</a></span>SceCpuCoreSyncCtx</h2>
+<a name="structSceCorelockContext" id="structSceCorelockContext"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceCorelockContext">&#9670;&nbsp;</a></span>SceCorelockContext</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceCpuCoreSyncCtx</td>
+          <td class="memname">struct SceCorelockContext</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga14a6c1b131d3b2dfabc2f9b4c8431241"></a>int</td>
+<a id="ga06ea41abcba52223c6c529ca50f33962"></a>int</td>
 <td class="fieldname">
 lock</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga81b2c1f49631ddc01f53929b53c82b89"></a>int16_t</td>
+<a id="gac40f8da443b22e7e268a51afffcf5200"></a>int16_t</td>
 <td class="fieldname">
 core_count</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga25ef2b2fbeb89b883c0c71c93cb64132"></a>int16_t</td>
+<a id="ga88d7e243058c17086579c2f4537f0aaf"></a>int16_t</td>
 <td class="fieldname">
 last_wait_core</td>
 <td class="fielddoc">
@@ -264,22 +264,22 @@ last_wait_core</td>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gaaaeffb457f6b704eeba4d0731172c44e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaaeffb457f6b704eeba4d0731172c44e">&#9670;&nbsp;</a></span>SceCpuSyncWaitCore</h2>
+<a id="ga7972593dbd2f5676f9da51b48f863f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7972593dbd2f5676f9da51b48f863f44">&#9670;&nbsp;</a></span>SceCorelockCore</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceCPUKernel.html#gaaaeffb457f6b704eeba4d0731172c44e">SceCpuSyncWaitCore</a></td>
+          <td class="memname">enum <a class="el" href="group__SceCPUKernel.html#ga7972593dbd2f5676f9da51b48f863f44">SceCorelockCore</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaaeffb457f6b704eeba4d0731172c44eadcb152bb7c2c232533f721bd0d142696"></a>SCE_CPU_WAIT_CORE_0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaaaeffb457f6b704eeba4d0731172c44ea1108fa21dc4e81b330a54c4f7e8f1c67"></a>SCE_CPU_WAIT_CORE_1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaaaeffb457f6b704eeba4d0731172c44ea5c6e2b9a424ad186cb518bdeba4055d3"></a>SCE_CPU_WAIT_CORE_2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaaaeffb457f6b704eeba4d0731172c44ea518834776f9a6273c0f391334a361d2d"></a>SCE_CPU_WAIT_CORE_3&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44aa1215885fec5761d71fed9f3d082abfe"></a>SCE_CORELOCK_CORE0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44a882cf4374b64a48b11e7424aa2f1dd53"></a>SCE_CORELOCK_CORE1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44a4a9431766f04c389bfa63075108ab5d7"></a>SCE_CORELOCK_CORE2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44a7ff2e9bf2db31045129716fb502214f9"></a>SCE_CORELOCK_CORE3&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -862,16 +862,16 @@ last_wait_core</td>
 
 </div>
 </div>
-<a id="ga827469d1ff44241e5c1adbaf16759dd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga827469d1ff44241e5c1adbaf16759dd6">&#9670;&nbsp;</a></span>ksceKernelInitCpuCoreSyncCtx()</h2>
+<a id="ga66a0b185626e3a33792410e0e3b703b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66a0b185626e3a33792410e0e3b703b5">&#9670;&nbsp;</a></span>ksceKernelCorelockContextInitialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ksceKernelInitCpuCoreSyncCtx </td>
+          <td class="memname">void ksceKernelCorelockContextInitialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceCPUKernel.html#structSceCpuCoreSyncCtx">SceCpuCoreSyncCtx</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceCPUKernel.html#structSceCorelockContext">SceCorelockContext</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -880,34 +880,16 @@ last_wait_core</td>
 
 </div>
 </div>
-<a id="ga1f96ec9dafff5695b8e75ac7116873bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f96ec9dafff5695b8e75ac7116873bc">&#9670;&nbsp;</a></span>ksceKernelCoreSyncAll()</h2>
+<a id="gadf598bcb06ab29d54f67984f72edd9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf598bcb06ab29d54f67984f72edd9ac">&#9670;&nbsp;</a></span>ksceKernelCorelockLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ksceKernelCoreSyncAll </td>
+          <td class="memname">void ksceKernelCorelockLock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceCPUKernel.html#structSceCpuCoreSyncCtx">SceCpuCoreSyncCtx</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9eb83dfdb7635dd12e8361357408661d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9eb83dfdb7635dd12e8361357408661d">&#9670;&nbsp;</a></span>ksceKernelCoreSyncWait()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ksceKernelCoreSyncWait </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceCPUKernel.html#structSceCpuCoreSyncCtx">SceCpuCoreSyncCtx</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceCPUKernel.html#structSceCorelockContext">SceCorelockContext</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
         </tr>
         <tr>
@@ -920,6 +902,24 @@ last_wait_core</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga59efe9a7590000a8317bf777c7e9b770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59efe9a7590000a8317bf777c7e9b770">&#9670;&nbsp;</a></span>ksceKernelCorelockUnlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelCorelockUnlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceCPUKernel.html#structSceCorelockContext">SceCorelockContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

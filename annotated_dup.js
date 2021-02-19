@@ -94,7 +94,7 @@ var annotated_dup =
     [ "SceConsoleId", "group__SceSblSsMgrKernel.html#structSceConsoleId", "group__SceSblSsMgrKernel_structSceConsoleId" ],
     [ "SceConsoleId.__unnamed22__", "group__SceSblSsMgrKernel.html#unionSceConsoleId_8____unnamed22____", "group__SceSblSsMgrKernel_unionSceConsoleId_8____unnamed22____" ],
     [ "SceConsoleId.__unnamed22__.__unnamed24__", "group__SceSblSsMgrKernel.html#structSceConsoleId_8____unnamed22_____8____unnamed24____", "group__SceSblSsMgrKernel_structSceConsoleId_8____unnamed22_____8____unnamed24____" ],
-    [ "SceCpuCoreSyncCtx", "group__SceCPUKernel.html#structSceCpuCoreSyncCtx", "group__SceCPUKernel_structSceCpuCoreSyncCtx" ],
+    [ "SceCorelockContext", "group__SceCPUKernel.html#structSceCorelockContext", "group__SceCPUKernel_structSceCorelockContext" ],
     [ "SceCreateUidObjOpt", "group__SceSysmemKernel.html#structSceCreateUidObjOpt", "group__SceSysmemKernel_structSceCreateUidObjOpt" ],
     [ "SceCtrlActuator", "group__SceCtrlUser.html#structSceCtrlActuator", "group__SceCtrlUser_structSceCtrlActuator" ],
     [ "SceCtrlData", "group__SceCtrlUser.html#structSceCtrlData", "group__SceCtrlUser_structSceCtrlData" ],
