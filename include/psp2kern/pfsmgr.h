@@ -20,7 +20,7 @@ typedef struct ScePfsRndDriveId {
  * Mount pfs directory
  *
  * @param[in] path         - The pfs encrypted directory path
- * @param[in] rnd_drive_id - The pfs mount output drive strings
+ * @param[in] rnd_drive_id - The pfs mount target Pseudo Drive strings
  * @param[in] authid       - The authid
  * @param[in] klicensee    - The klicensee
  * @param[in] mode_index   - The mode_index
@@ -33,7 +33,7 @@ int kscePfsMount(const char *path, ScePfsRndDriveId *rnd_drive_id, SceUInt64 aut
  * Mount pfs directory without authid
  *
  * @param[in] path         - The pfs encrypted directory path
- * @param[in] rnd_drive_id - The pfs mount output drive strings
+ * @param[in] rnd_drive_id - The pfs mount target Pseudo Drive strings
  * @param[in] klicensee    - The klicensee
  * @param[in] mode_index   - The mode_index
  *
