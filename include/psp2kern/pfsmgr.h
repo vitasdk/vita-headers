@@ -13,7 +13,7 @@ extern "C" {
 #endif
 
 typedef struct ScePfsRndDriveId {
-	char s[0x10];
+	char drive_id[0x10];
 } ScePfsRndDriveId;
 
 /**
