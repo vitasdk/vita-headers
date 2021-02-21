@@ -41,7 +41,7 @@ typedef struct SceKernelIntrOptParam {
 } SceKernelIntrOptParam;
 
 int ksceKernelRegisterIntrHandler(int intr_code, const char *name, int interrupt_type,
-	SceKernelIntrHandler *handler, void *userCtx, int priority, int targetcpu, SceKernelIntrOptParam *opt);
+	SceKernelIntrHandler handler, void *user_ctx, int priority, int target_cpu, SceKernelIntrOptParam *opt);
 int ksceKernelReleaseIntrHandler(int intr_code);
 int ksceKernelMaskIntr(int intr_code);
 int ksceKernelUnmaskIntr(int intr_code);
