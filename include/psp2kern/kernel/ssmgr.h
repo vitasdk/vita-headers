@@ -42,6 +42,8 @@ int ksceSblAimgrGetConsoleId(SceConsoleId *cid);
 int ksceSblAimgrGetOpenPsId(SceOpenPsId *open_psid);
 int ksceSblAimgrGetPscode(ScePsCode *pscode);
 
+int ksceSblRngPseudoRandomNumber(void *result, SceSize size);
+
 int ksceSblDmac5AesCbcDec(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
 int ksceSblDmac5AesCbcEnc(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
 int ksceSblDmac5AesCtrDec(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
