@@ -104,6 +104,13 @@ int ksceDebugRegisterPutcharHandler(int (* func)(void *args, char c), void *args
 
 void *ksceDebugGetPutcharHandler(void);
 
+/**
+ * @brief Set kpanic flag
+ *
+ * @param[in] flag - If pass not zero to flag, kpanic is not stopped and do smc 0x122.
+ *
+ * @return previous flag.
+ */
 int ksceDebugDisableInfoDump(int flag);
 
 /**
