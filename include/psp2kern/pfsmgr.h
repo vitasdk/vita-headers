@@ -27,7 +27,7 @@ typedef struct ScePfsRndDriveId {
  *
  * @return 0 on success, < 0 on error.
  */
-int kscePfsMount(const char *path, ScePfsRndDriveId *rnd_drive_id, SceUInt64 authid, void *klicensee, uint16_t mode_index);
+int kscePfsMount(const char *path, const ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_authority_id, const void *klicensee, uint16_t mode_index);
 
 /**
  * Mount pfs directory without authid
@@ -39,7 +39,7 @@ int kscePfsMount(const char *path, ScePfsRndDriveId *rnd_drive_id, SceUInt64 aut
  *
  * @return 0 on success, < 0 on error.
  */
-int kscePfsMount2(const char *path, ScePfsRndDriveId *rnd_drive_id, void *klicensee, uint16_t mode_index);
+int kscePfsMount2(const char *path, const ScePfsRndDriveId *rnd_drive_id, const void *klicensee, uint16_t mode_index);
 
 /**
  * Unmount pfs directory
@@ -48,10 +48,10 @@ int kscePfsMount2(const char *path, ScePfsRndDriveId *rnd_drive_id, void *klicen
  *
  * @return 0 on success, < 0 on error.
  */
-int kscePfsUnmount(ScePfsRndDriveId *rnd_drive_id);
+int kscePfsUnmount(const ScePfsRndDriveId *rnd_drive_id);
 
-int kscePfsApprove(ScePfsRndDriveId *rnd_drive_id, SceUInt64 authid);
-int kscePfsDisapprove(ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_authority_id);
+int kscePfsApprove(const ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_authority_id);
+int kscePfsDisapprove(const ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_authority_id);
 
 #ifdef __cplusplus
 }
