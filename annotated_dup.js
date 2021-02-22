@@ -296,6 +296,7 @@ var annotated_dup =
     [ "SceObjectBase", "group__SceSysmemKernel.html#structSceObjectBase", "group__SceSysmemKernel_structSceObjectBase" ],
     [ "SceOpenPsId", "group__SceSblSsMgrKernel.html#structSceOpenPsId", "group__SceSblSsMgrKernel_structSceOpenPsId" ],
     [ "ScePafDateTime", "group__ScePafUser.html#structScePafDateTime", "group__ScePafUser_structScePafDateTime" ],
+    [ "ScePfsRndDriveId", "group__ScePfsMgrKernel.html#structScePfsRndDriveId", "group__ScePfsMgrKernel_structScePfsRndDriveId" ],
     [ "ScePortabilityData", "group__SceSblSsMgrKernel.html#structScePortabilityData", "group__SceSblSsMgrKernel_structScePortabilityData" ],
     [ "SceProcEventHandler", "group__SceProcEventKernel.html#structSceProcEventHandler", "group__SceProcEventKernel_structSceProcEventHandler" ],
     [ "SceProcEventInvokeParam1", "group__SceProcEventKernel.html#structSceProcEventInvokeParam1", "group__SceProcEventKernel_structSceProcEventInvokeParam1" ],

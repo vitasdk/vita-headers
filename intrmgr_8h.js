@@ -5,7 +5,7 @@ var intrmgr_8h =
     [ "SceKernelIntrOptHandlersCb1", "group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e", null ],
     [ "SceKernelIntrOptHandlersCb2", "group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646", null ],
     [ "SceKernelIntrOptHandlersCb3", "group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8", null ],
-    [ "ksceKernelRegisterIntrHandler", "group__SceIntrMgrKernel.html#gab5ee2809ca39d6d518a504b68fbcf919", null ],
+    [ "ksceKernelRegisterIntrHandler", "group__SceIntrMgrKernel.html#ga6164deaf45e605aa8e34ce32784f35fb", null ],
     [ "ksceKernelReleaseIntrHandler", "group__SceIntrMgrKernel.html#gae1108c740d871b0874a48bcd9d7f3998", null ],
     [ "ksceKernelMaskIntr", "group__SceIntrMgrKernel.html#ga5df4056c52da2398a6b862cd95f35293", null ],
     [ "ksceKernelUnmaskIntr", "group__SceIntrMgrKernel.html#gae858d31132c24d55440fac3cf7eef2a5", null ],
