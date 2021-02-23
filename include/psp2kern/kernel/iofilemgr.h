@@ -100,6 +100,16 @@ int ksceIoMount(int id, const char *path, int permission, int a4, int a5, int a6
   */
 int ksceIoUmount(int id, int a2, int a3, int a4);
 
+/**
+  * Get Remote Kernel Process Local Storage Data
+  *
+  * @param[in]  pid - The target process id
+  * @param[out] dst - The pointer of RemoteKPLS output buffer. size is 0x1C.
+  *
+  * @return < 0 on error.
+  */
+int ksceIoGetRemoteKPLSData(SceUID pid, void *dst);
+
 #ifdef __cplusplus
 }
 #endif
