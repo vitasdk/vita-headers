@@ -42,11 +42,13 @@ int ksceSblAimgrGetConsoleId(SceConsoleId *cid);
 int ksceSblAimgrGetOpenPsId(SceOpenPsId *open_psid);
 int ksceSblAimgrGetPscode(ScePsCode *pscode);
 
+int ksceSblRngPseudoRandomNumber(void *result, SceSize size);
+
 int ksceSblDmac5AesCbcDec(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
 int ksceSblDmac5AesCbcEnc(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
-int ksceSblSsMgrAesCtrDecrypt(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
+int ksceSblDmac5AesCtrDec(const void *src, void *dst, int size, const void *key, int key_size, void *iv, int mask_enable);
 
-#define ksceSblDmac5AesCtrDec ksceSblSsMgrAesCtrDecrypt
+#define ksceSblSsMgrAesCtrDecrypt ksceSblDmac5AesCtrDec
 
 typedef struct ScePortabilityData { // size is 0x24
 	SceSize msg_size;           // max size is 0x20
