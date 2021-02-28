@@ -174,7 +174,7 @@ typedef SceUID (* SceKernelGetSystemSwVersionFunc)(void);
 void ksceKernelSysrootSetGetSystemSwVersionFunc(SceKernelGetSystemSwVersionFunc func);
 
 /**
- * Get System Sw Version
+ * Get System software version from ksceKernelSysrootSetGetSystemSwVersionFunc setting function
  *
  * @return SystemSwVersion on success, < 0 on error.
  */
