@@ -2672,6 +2672,8 @@ modules:
           ksceIoGetMediaType: 0x9C220246
           ksceIoGetPUIDFdListForDebugger: 0x0D493274
           ksceIoGetProcessDefaultPriorityForSystem: 0xCE397158
+          ksceIoGetRemoteKPLSData: 0x44EDCE57
+          ksceIoGetThreadDefaultPriorityForSystem: 0x6D0FEDB6
           ksceIoGetstat: 0x75C96D25
           ksceIoGetstat2: 0xD6503624
           ksceIoGetstatAsync: 0x94A5304A
@@ -2701,6 +2703,7 @@ modules:
           ksceIoRmdirAsync: 0xF5B0B36C
           ksceIoSetPathMappingFunction: 0xCFAECF18
           ksceIoSetProcessDefaultPriorityForSystem: 0xABE65071
+          ksceIoSetThreadDefaultPriorityForSystem: 0x3F0FF9D5
           ksceIoSync: 0xDDF78594
           ksceIoSyncAsync: 0x4F9EA8B0
           ksceIoSyncByFd: 0x338DCD68
@@ -2715,11 +2718,13 @@ modules:
           ksceVfsDeleteVfs: 0x9CBFA725
           ksceVfsFreeVnode: 0x21D57633
           ksceVfsGetNewNode: 0xD60B5C63
+          ksceVfsLockMnt: 0x6B3CA9F7
           ksceVfsMount: 0xB62DE9A6
           ksceVfsNodeSetEventFlag: 0x6048F245
           ksceVfsNodeWaitEventFlag: 0xAA45010B
           ksceVfsOpDecodePathElem: 0xF7DAC0F5
           ksceVfsOpDevctl: 0xB07B307D
+          ksceVfsUnlockMnt: 0xDC2D8BCE
           ksceVfsUnmount: 0x9C7E7B76
           ksceVopChstat: 0x1974FA92
           ksceVopClose: 0x40944C2E
@@ -2740,8 +2745,6 @@ modules:
           ksceVopRmdir: 0x1D551105
           ksceVopSync: 0x9CD96406
           ksceVopWrite: 0x9A68378D
-          kvfsLockMnt: 0x6B3CA9F7
-          kvfsUnlockMnt: 0xDC2D8BCE
   SceJpeg:
     nid: 0x00000044
     libraries:
