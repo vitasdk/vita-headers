@@ -162,6 +162,31 @@ int ksceSysrootIsUpdateMode(void);
 int ksceSysrootIsUsbEnumWakeup(void);
 int ksceSysrootIsExternalBootMode(void);
 
+typedef int (* SceKernelGetSystemSwVersionFunc)(void);
+
+/**
+ * Set GetSystemSwVersion function.
+ *
+ * @param[in] func - The GetSystemSwVersion function pointer.
+ *
+ * @return none.
+ */
+void ksceKernelSysrootSetGetSystemSwVersionFunc(SceKernelGetSystemSwVersionFunc func);
+
+/**
+ * Get System software version from ksceKernelSysrootSetGetSystemSwVersionFunc setting function
+ *
+ * @return SystemSwVersion on success, < 0 on error.
+ */
+int ksceKernelSysrootGetSystemSwVersion(void);
+
+/**
+ * Get SceShell process id
+ *
+ * @return pid on success, < 0 on error.
+ */
+SceUID ksceKernelSysrootGetShellPid(void);
+
 #ifdef __cplusplus
 }
 #endif
