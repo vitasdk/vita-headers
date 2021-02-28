@@ -162,7 +162,7 @@ int ksceSysrootIsUpdateMode(void);
 int ksceSysrootIsUsbEnumWakeup(void);
 int ksceSysrootIsExternalBootMode(void);
 
-typedef SceUID (* SceKernelGetSystemSwVersionFunc)(void);
+typedef int (* SceKernelGetSystemSwVersionFunc)(void);
 
 /**
  * Set GetSystemSwVersion function.
