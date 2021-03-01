@@ -1,5 +1,7 @@
 var ern_2kernel_2sysmem_8h =
 [
+    [ "ksceKernelMapUserBlockDefaultType", "group__SceSysmemKernel.html#ga7ce8eae6e544fb24d4db0d2dfe781347", null ],
+    [ "ksceKernelMapUserBlockDefaultTypeForPid", "group__SceSysmemKernel.html#gafc5e8f154583d4dc794f091a44019bc1", null ],
     [ "SceClassCallback", "group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5", null ],
     [ "SceKernelMemBlockType", "group__SceSysmemKernel.html#gaaa2a5b0a0ae74026d992a82e4f80b6be", [
       [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE", "group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaeca8b415e3bad84099b6d12522dab59c", null ],
@@ -79,9 +81,9 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelSwitchVmaForPid", "group__SceSysmemKernel.html#ga84ce525e598a9194ae0d479da2404e4d", null ],
     [ "ksceKernelGetPidContext", "group__SceSysmemKernel.html#ga4f729c86c562de2f4e171db24ee7ba74", null ],
     [ "ksceKernelMapBlockUserVisible", "group__SceSysmemKernel.html#gac45b79af14718bc342b116b9149289c8", null ],
-    [ "ksceKernelMapUserBlock", "group__SceSysmemKernel.html#ga960a67e8877a5b5d4addca381e55f63c", null ],
-    [ "ksceKernelMapUserBlockDefaultType", "group__SceSysmemKernel.html#ga81731618d92ada12e231d9d4f841bf88", null ],
-    [ "ksceKernelMapUserBlockDefaultTypeForPid", "group__SceSysmemKernel.html#ga1a63dd619ca0874e9f158f19d7369dbf", null ],
+    [ "ksceKernelMapUserBlock", "group__SceSysmemKernel.html#ga3c662718634d19870883187b0cd331dc", null ],
+    [ "ksceKernelUserMap", "group__SceSysmemKernel.html#gaac4117cb1ddc84d8b41e803dc805699d", null ],
+    [ "ksceKernelProcUserMap", "group__SceSysmemKernel.html#ga284c39f31d257b38912fa299979f2424", null ],
     [ "ksceKernelGetPaddr", "group__SceSysmemKernel.html#gad657fd1dd901bcd61969771210010d36", null ],
     [ "ksceKernelGetPaddrList", "group__SceSysmemKernel.html#ga011edc8ffacf956f1cbfb1b542493f02", null ],
     [ "ksceKernelMemBlockRelease", "group__SceSysmemKernel.html#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d", null ],

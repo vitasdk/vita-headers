@@ -1,8 +1,8 @@
 var group__ScePfsMgrKernel =
 [
-    [ "kscePfsMount", "group__ScePfsMgrKernel.html#ga60c0b75d1858753058d4d1a54b134030", null ],
-    [ "kscePfsMount2", "group__ScePfsMgrKernel.html#ga2eeaf4dd576f362d287aec5e799aab99", null ],
-    [ "kscePfsUnmount", "group__ScePfsMgrKernel.html#gab8765b6072ea469001e7cea01593d921", null ],
-    [ "kscePfsApprove", "group__ScePfsMgrKernel.html#gab3eeecbcf64aea4a0023577d75aff404", null ],
-    [ "kscePfsDisapprove", "group__ScePfsMgrKernel.html#gacd04cfe53dad8688a30413f6ca33e61d", null ]
+    [ "kscePfsMount", "group__ScePfsMgrKernel.html#gac15e888109abbbd1cb2cb6f054b9e662", null ],
+    [ "kscePfsMount2", "group__ScePfsMgrKernel.html#gab7ca22c685c313553c1603cab9b0ed30", null ],
+    [ "kscePfsUnmount", "group__ScePfsMgrKernel.html#ga14c9dff778aeda66ce3d0487da6b59ae", null ],
+    [ "kscePfsApprove", "group__ScePfsMgrKernel.html#ga4b5162b18e450bf7784dd07431f1cd75", null ],
+    [ "kscePfsDisapprove", "group__ScePfsMgrKernel.html#ga5279c0b31a7bb0f7ab74a3e546269bef", null ]
 ];

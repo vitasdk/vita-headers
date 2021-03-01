@@ -50,7 +50,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "pss.h", "pss_8h.html", "pss_8h" ],
     [ "pvf.h", "pvf_8h.html", "pvf_8h" ],
     [ "registrymgr.h", "psp2_2registrymgr_8h.html", "psp2_2registrymgr_8h" ],
-    [ "rtc.h", "rtc_8h.html", "rtc_8h" ],
+    [ "rtc.h", "psp2_2rtc_8h.html", "psp2_2rtc_8h" ],
     [ "sblacmgr.h", "psp2_2sblacmgr_8h.html", "psp2_2sblacmgr_8h" ],
     [ "screenshot.h", "screenshot_8h.html", "screenshot_8h" ],
     [ "shacccg.h", "shacccg_8h.html", "shacccg_8h" ],

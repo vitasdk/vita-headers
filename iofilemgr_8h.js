@@ -6,5 +6,6 @@ var iofilemgr_8h =
     [ "ksceIoGetPUIDFdListForDebugger", "group__SceIofilemgrKernel.html#ga0e5a390707a3a3e95b80236ecb53e1c9", null ],
     [ "ksceIoGetFileInfo", "group__SceIofilemgrKernel.html#ga6662c00770b242df9b67ff70ba7e394d", null ],
     [ "ksceIoMount", "group__SceIofilemgrKernel.html#ga75d8f502a4cb2c3e28bdb0d75d020b89", null ],
-    [ "ksceIoUmount", "group__SceIofilemgrKernel.html#gad4ba496c026bde1c5fc674ce0d77de5a", null ]
+    [ "ksceIoUmount", "group__SceIofilemgrKernel.html#gad4ba496c026bde1c5fc674ce0d77de5a", null ],
+    [ "ksceIoGetRemoteKPLSData", "group__SceIofilemgrKernel.html#gafd20ef3906fc99765a6b4c28a1a4ada2", null ]
 ];

@@ -2,6 +2,7 @@ var group__SceKernelSysrootKernel =
 [
     [ "ksceKernelGetSysrootBuffer", "group__SceKernelSysrootKernel.html#ga192d7ce764117e51b25a1879f5bc06a0", null ],
     [ "ksceKernelGetProcessTitleId", "group__SceKernelSysrootKernel.html#ga666ce33aa0fa454d5fcff558840ed258", null ],
+    [ "SceKernelGetSystemSwVersionFunc", "group__SceKernelSysrootKernel.html#ga333bacf35fa6ddf45edeb574840aeb60", null ],
     [ "SceKernelSysrootSelfIndex", "group__SceKernelSysrootKernel.html#gaae18ca6d933be8561673eb190fde924c", [
       [ "SCE_KERNEL_SYSROOT_SELF_INDEX_GCAUTHMGR_SM", "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca3f9c8d2a5e5cfea7754248383a48673b", null ],
       [ "SCE_KERNEL_SYSROOT_SELF_INDEX_RMAUTH_SM", "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60", null ],
@@ -25,5 +26,8 @@ var group__SceKernelSysrootKernel =
     [ "ksceSysrootIsSafeMode", "group__SceKernelSysrootKernel.html#ga9e1ee712b0fb578cbb50311b0173e10a", null ],
     [ "ksceSysrootIsUpdateMode", "group__SceKernelSysrootKernel.html#ga4520b53a0aee5c469c31adf5bdd46262", null ],
     [ "ksceSysrootIsUsbEnumWakeup", "group__SceKernelSysrootKernel.html#gacb9971ac02a2900bbd76e61fe9c823d4", null ],
-    [ "ksceSysrootIsExternalBootMode", "group__SceKernelSysrootKernel.html#gaf124c4181ac6b0b64d8ce39b3b574bdb", null ]
+    [ "ksceSysrootIsExternalBootMode", "group__SceKernelSysrootKernel.html#gaf124c4181ac6b0b64d8ce39b3b574bdb", null ],
+    [ "ksceKernelSysrootSetGetSystemSwVersionFunc", "group__SceKernelSysrootKernel.html#ga5e162175510b3327fd3d678471ff65f8", null ],
+    [ "ksceKernelSysrootGetSystemSwVersion", "group__SceKernelSysrootKernel.html#ga63d0a07b5dcdb55e2d2488c6bf2dfd34", null ],
+    [ "ksceKernelSysrootGetShellPid", "group__SceKernelSysrootKernel.html#ga12f553dd194eebe7c3efcae84852b39b", null ]
 ];

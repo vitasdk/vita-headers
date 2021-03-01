@@ -74,6 +74,7 @@ $(document).ready(function(){initNavTree('group__SceKernelSysrootKernel.html',''
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceKernelSysroot.html">Kernel system root Library</a></div></div>  </div>
@@ -135,6 +136,20 @@ Functions</h2></td></tr>
 <tr class="separator:gacb9971ac02a2900bbd76e61fe9c823d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf124c4181ac6b0b64d8ce39b3b574bdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#gaf124c4181ac6b0b64d8ce39b3b574bdb">ksceSysrootIsExternalBootMode</a> (void)</td></tr>
 <tr class="separator:gaf124c4181ac6b0b64d8ce39b3b574bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e162175510b3327fd3d678471ff65f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga5e162175510b3327fd3d678471ff65f8">ksceKernelSysrootSetGetSystemSwVersionFunc</a> (<a class="el" href="group__SceKernelSysrootKernel.html#ga333bacf35fa6ddf45edeb574840aeb60">SceKernelGetSystemSwVersionFunc</a> func)</td></tr>
+<tr class="memdesc:ga5e162175510b3327fd3d678471ff65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set GetSystemSwVersion function.  <a href="group__SceKernelSysrootKernel.html#ga5e162175510b3327fd3d678471ff65f8">More...</a><br /></td></tr>
+<tr class="separator:ga5e162175510b3327fd3d678471ff65f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63d0a07b5dcdb55e2d2488c6bf2dfd34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga63d0a07b5dcdb55e2d2488c6bf2dfd34">ksceKernelSysrootGetSystemSwVersion</a> (void)</td></tr>
+<tr class="memdesc:ga63d0a07b5dcdb55e2d2488c6bf2dfd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get System software version from ksceKernelSysrootSetGetSystemSwVersionFunc setting function.  <a href="group__SceKernelSysrootKernel.html#ga63d0a07b5dcdb55e2d2488c6bf2dfd34">More...</a><br /></td></tr>
+<tr class="separator:ga63d0a07b5dcdb55e2d2488c6bf2dfd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12f553dd194eebe7c3efcae84852b39b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga12f553dd194eebe7c3efcae84852b39b">ksceKernelSysrootGetShellPid</a> (void)</td></tr>
+<tr class="memdesc:ga12f553dd194eebe7c3efcae84852b39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SceShell process id.  <a href="group__SceKernelSysrootKernel.html#ga12f553dd194eebe7c3efcae84852b39b">More...</a><br /></td></tr>
+<tr class="separator:ga12f553dd194eebe7c3efcae84852b39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga333bacf35fa6ddf45edeb574840aeb60"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelSysrootKernel.html#ga333bacf35fa6ddf45edeb574840aeb60">SceKernelGetSystemSwVersionFunc</a>) (void)</td></tr>
+<tr class="separator:ga333bacf35fa6ddf45edeb574840aeb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -330,6 +345,21 @@ self_size</td>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceKernelSysrootKernel.html#ga571e101d51a20ed6a0af26952172773d">ksceKernelSysrootGetProcessTitleId</a>(pid, titleid, len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga333bacf35fa6ddf45edeb574840aeb60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga333bacf35fa6ddf45edeb574840aeb60">&#9670;&nbsp;</a></span>SceKernelGetSystemSwVersionFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* SceKernelGetSystemSwVersionFunc) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -718,6 +748,75 @@ self_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5e162175510b3327fd3d678471ff65f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e162175510b3327fd3d678471ff65f8">&#9670;&nbsp;</a></span>ksceKernelSysrootSetGetSystemSwVersionFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelSysrootSetGetSystemSwVersionFunc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceKernelSysrootKernel.html#ga333bacf35fa6ddf45edeb574840aeb60">SceKernelGetSystemSwVersionFunc</a>&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set GetSystemSwVersion function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>- The GetSystemSwVersion function pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
+
+</div>
+</div>
+<a id="ga63d0a07b5dcdb55e2d2488c6bf2dfd34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63d0a07b5dcdb55e2d2488c6bf2dfd34">&#9670;&nbsp;</a></span>ksceKernelSysrootGetSystemSwVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelSysrootGetSystemSwVersion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get System software version from ksceKernelSysrootSetGetSystemSwVersionFunc setting function. </p>
+<dl class="section return"><dt>Returns</dt><dd>SystemSwVersion on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga12f553dd194eebe7c3efcae84852b39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12f553dd194eebe7c3efcae84852b39b">&#9670;&nbsp;</a></span>ksceKernelSysrootGetShellPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelSysrootGetShellPid </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get SceShell process id. </p>
+<dl class="section return"><dt>Returns</dt><dd>pid on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
