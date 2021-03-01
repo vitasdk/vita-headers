@@ -338,15 +338,50 @@ int ksceKernelSwitchVmaForPid(SceUID pid);
 int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
-int ksceKernelMapUserBlock(const char *name, int permission, int type,
+SceUID ksceKernelMapUserBlock(const char *name, int permission, int type,
 			   const void *user_buf, SceSize size, void **kernel_page,
 			   SceSize *kernel_size, unsigned int *kernel_offset);
-int ksceKernelMapUserBlockDefaultType(const char *name, int permission, const void *user_buf,
-				      SceSize size, void **kernel_page,
-				      SceSize *kernel_size, unsigned int *kernel_offset);
-int ksceKernelMapUserBlockDefaultTypeForPid(int pid, const char *name, int permission,
-					    const void *user_buf, SceSize size, void **kernel_page,
-					    SceSize *kernel_size, unsigned int *kernel_offset);
+
+/**
+ * The mapping user address space to kernel
+ *
+ * @param[in]  name          - The mapping name.
+ * @param[in]  permission    - The access permission. 1 for Read.
+ * @param[in]  user_buf      - The target address of user space.
+ * @param[in]  size          - The mapping size.
+ * @param[out] kernel_page   - The mapped kernel address space.
+ * @param[out] kernel_size   - The mapped size.
+ * @param[out] kernel_offset - The output of address align value.
+ *                             For example, if user_buf is 0x81000123, kernel_offset to 0x123.
+ *
+ * @return uid on success, < 0 on error.
+ *
+ * note - If no longer use the mapped address, need to release it with ksceKernelMemBlockRelease
+ */
+SceUID ksceKernelUserMap(const char *name, int permission, const void *user_buf, SceSize size, void **kernel_page, SceSize *kernel_size, SceUInt32 *kernel_offset);
+
+#define ksceKernelMapUserBlockDefaultType(name, permission, user_buf, size, kernel_page, kernel_size, kernel_offset) ksceKernelUserMap(name, permission, user_buf, size, kernel_page, kernel_size, kernel_offset)
+
+/**
+ * The mapping user address space to kernel with process
+ *
+ * @param[in]  pid           - The target process id.
+ * @param[in]  name          - The mapping name.
+ * @param[in]  permission    - The access permission. 1 for Read.
+ * @param[in]  user_buf      - The target address of user space.
+ * @param[in]  size          - The mapping size.
+ * @param[out] kernel_page   - The mapped kernel address space.
+ * @param[out] kernel_size   - The mapped size.
+ * @param[out] kernel_offset - The output of address align value.
+ *                             For example, if user_buf is 0x81000123, kernel_offset to 0x123.
+ *
+ * @return uid on success, < 0 on error.
+ *
+ * note - If no longer use the mapped address, need to release it with ksceKernelMemBlockRelease
+ */
+SceUID ksceKernelProcUserMap(SceUID pid, const char *name, int permission, const void *user_buf, SceSize size, void **kernel_page, SceSize *kernel_size, SceUInt32 *kernel_offset);
+
+#define ksceKernelMapUserBlockDefaultTypeForPid(pid, name, permission, user_buf, size, kernel_page, kernel_size, kernel_offset) ksceKernelProcUserMap(pid, name, permission, user_buf, size, kernel_page, kernel_size, kernel_offset)
 
 /**
  * Get the physical address of a given virtual address
