@@ -9483,8 +9483,6 @@ modules:
           ksceKernelMapBlockUserVisible: 0x58D21746
           ksceKernelMapBlockUserVisibleWithFlag: 0x04059C4B
           ksceKernelMapUserBlock: 0x7D4F8B5F
-          ksceKernelMapUserBlockDefaultType: 0x278BC201
-          ksceKernelMapUserBlockDefaultTypeForPid: 0x0091D74D
           ksceKernelMemBlockDecRefCounterAndReleaseUid: 0xF50BDC0C
           ksceKernelMemBlockGetInfoEx: 0x24A99FFF
           ksceKernelMemBlockGetInfoExForVisibilityLevel: 0xA73CFFEF
@@ -9508,6 +9506,7 @@ modules:
           ksceKernelMemcpyUserToUserForPid: 0x8E086C33
           ksceKernelOpenUidForName: 0xD76E7452
           ksceKernelProcModeVAtoPA: 0x61A67D32
+          ksceKernelProcUserMap: 0x0091D74D
           ksceKernelRemapBlock: 0xDFE2C8CB
           ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
           ksceKernelSetNameForPidForUid: 0x12624884
@@ -9522,6 +9521,7 @@ modules:
           ksceKernelUidRelease: 0x149885C4
           ksceKernelUidRetain: 0x0F5C84B7
           ksceKernelUnmapMemBlock: 0xFFCD9B60
+          ksceKernelUserMap: 0x278BC201
       SceSysmemForKernel:
         kernel: true
         nid: 0x63A519E5
