@@ -180,7 +180,7 @@ int sceMotionSetDeadband(int setValue);
  * @note - Enabled by default
  * @return 1 if enabled, 0 if disabled
  */
-int	sceMotionGetGyroBiasCorrection(void);
+int sceMotionGetGyroBiasCorrection(void);
 
 /**
  * Activate/deactivate gyroscope bias correction
@@ -254,4 +254,3 @@ int sceMotionStopSampling(void);
 #endif
 
 #endif /* _PSP2_MOTION_H_ */
-
