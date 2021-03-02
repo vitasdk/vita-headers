@@ -3,8 +3,8 @@
  * \usage{psp2kern/sblaimgr.h,SceSblAIMgrForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SBLACMGR_H_
-#define _PSP2_KERNEL_SBLACMGR_H_
+#ifndef _PSP2_KERNEL_SBLAIMGR_H_
+#define _PSP2_KERNEL_SBLAIMGR_H_
 
 #include <psp2kern/types.h>
 
