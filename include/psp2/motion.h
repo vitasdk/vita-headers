@@ -59,15 +59,15 @@ typedef struct SceMotionState {
 * @note - ::SceMotionSensorState holds actual sensor data as opposed to ::SceMotionState which uses a calculated state
 */
 typedef struct SceMotionSensorState {
-	SceFVector3 accelerometer;		//!< Accelerometer data
-	SceFVector3 gyro;				//!< Angular velocity data
-	uint8_t reserved1[12];			//!< Reserved data
-	unsigned int timestamp;			//!< Timestamp of the data in microseconds
-	unsigned int counter;			//!< Number of requested state
-	uint8_t reserved2[4];			//!< Reserved data
-	SceULong64 hostTimestamp;		//!< Timestamp of the data in microseconds
-	uint8_t unknown;				//!< Unknown
-	uint8_t reserved3[7];			//!< Reserved data
+	SceFVector3 accelerometer;      //!< Accelerometer data
+	SceFVector3 gyro;               //!< Angular velocity data
+	uint8_t reserved1[12];          //!< Reserved data
+	unsigned int timestamp;         //!< Timestamp of the data in microseconds
+	unsigned int counter;           //!< Number of requested state
+	uint8_t reserved2[4];           //!< Reserved data
+	SceULong64 hostTimestamp;       //!< Timestamp of the data in microseconds
+	uint8_t unknown;                //!< Unknown
+	uint8_t reserved3[7];           //!< Reserved data
 } SceMotionSensorState;
 
 /** Returned location of both the accelerometer and gyroscope in mm
@@ -81,9 +81,9 @@ typedef struct SceMotionSensorState {
 * @note - Gyroscope: x == 13; y == 19; z == -8
 */
 typedef struct SceMotionDeviceLocation {
-	SceFVector3 accelerometer;		//!< Location of te accelerometer in relation to the center of the device (in mm)
-	SceFVector3	gyro;				//!< Location of te gyroscope in relation to the center of the device (in mm)
-	uint8_t reserved[24];			//!< Reserved data
+	SceFVector3 accelerometer;      //!< Location of te accelerometer in relation to the center of the device (in mm)
+	SceFVector3 gyro;               //!< Location of te gyroscope in relation to the center of the device (in mm)
+	uint8_t reserved[24];           //!< Reserved data
 } SceMotionDeviceLocation;
 
 /* prototypes */
