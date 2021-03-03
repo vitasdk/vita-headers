@@ -5,7 +5,8 @@ var group__SceMotionUser_structSceMotionSensorState =
     [ "reserved1", "group__SceMotionUser.html#gad11e5a3f93d50113ae8f8f2dbb186831", null ],
     [ "timestamp", "group__SceMotionUser.html#ga66ec4f2befe18b2990dc570e5e580ab5", null ],
     [ "counter", "group__SceMotionUser.html#ga18379d8bdae6bc65d4436e63422fba75", null ],
-    [ "reserved2", "group__SceMotionUser.html#ga395720079fb4630909f0ee14de28be3c", null ],
+    [ "reserved2", "group__SceMotionUser.html#ga98d17b4e988cd31f3f193c0b801c9c83", null ],
     [ "hostTimestamp", "group__SceMotionUser.html#gaf291022bab2fd26deaa83ba16a315ca3", null ],
-    [ "reserved3", "group__SceMotionUser.html#ga3f64ceb090eadf78a0e4f1f9db9bf07c", null ]
+    [ "unknown", "group__SceMotionUser.html#gabb97c6a5839c3f815c3c4d72d5dad49c", null ],
+    [ "reserved3", "group__SceMotionUser.html#ga733f4b148e5b37ffabdf8a2a39ee8069", null ]
 ];

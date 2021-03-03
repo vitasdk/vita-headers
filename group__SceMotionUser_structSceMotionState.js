@@ -7,8 +7,11 @@ var group__SceMotionUser_structSceMotionState =
     [ "deviceQuat", "group__SceMotionUser.html#ga2aecca6955f4273ac70fecce7e4bd79f", null ],
     [ "rotationMatrix", "group__SceMotionUser.html#gafa04868acee83ef01a2667ec88925c3e", null ],
     [ "nedMatrix", "group__SceMotionUser.html#ga44881ddf752e191b35221e3480805e2d", null ],
-    [ "reserved2", "group__SceMotionUser.html#ga9ed0dc6ad92bad43fa802ed99167decc", null ],
+    [ "reserved2", "group__SceMotionUser.html#gaed1378199cc3e5391233ac37e3a837ee", null ],
     [ "basicOrientation", "group__SceMotionUser.html#ga355ea78d453e822f662fb15f03edcb0a", null ],
     [ "hostTimestamp", "group__SceMotionUser.html#ga64c98b53f70c7e9d99e08574bd98b53a", null ],
-    [ "reserved", "group__SceMotionUser.html#gacdd227c6d8ce9a19b0ef9d1e3cada983", null ]
+    [ "reserved3", "group__SceMotionUser.html#ga7e5163676a2a2109345ec2792f2aa1e5", null ],
+    [ "magFieldStability", "group__SceMotionUser.html#gae00cc1e0f75d52c3fe1dc4ca2af202fa", null ],
+    [ "unknown", "group__SceMotionUser.html#gafcf1a1828e5049e5e1b2a45c2e1d5330", null ],
+    [ "reserved4", "group__SceMotionUser.html#ga498feeb8e59bab592e86da5d2b588d6c", null ]
 ];
