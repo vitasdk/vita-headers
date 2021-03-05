@@ -279,6 +279,28 @@ int ksceKernelMemcpyUserToKernel(void *dst, uintptr_t src, SceSize len);
 int ksceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, SceSize len);
 int ksceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, SceSize len);
 
+/**
+ * Memory copy to user Read only memory
+ *
+ * @param[in] dst - The pointer of user memory
+ * @param[in] src - The pointer of kern memory
+ * @param[in] len - The copy length
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemcpyToUserRo(uintptr_t dst, const void *src, SceSize len);
+
+/**
+ * Memory copy to user Read execute memory
+ *
+ * @param[in] dst - The pointer of user memory
+ * @param[in] src - The pointer of kern memory
+ * @param[in] len - The copy length
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelMemcpyToUserRx(uintptr_t dst, const void *src, SceSize len);
+
 int ksceKernelStrncpyUserToKernel(void *dst, uintptr_t src, SceSize len);
 int ksceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, SceSize len);
 int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
