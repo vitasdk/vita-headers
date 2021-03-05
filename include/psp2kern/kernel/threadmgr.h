@@ -801,6 +801,13 @@ typedef enum SceKernelIdListType {
 SceKernelIdListType ksceKernelGetThreadmgrUIDClass(SceUID uid);
 
 /**
+ * Get the system time
+ *
+ * @return The system time
+ */
+SceUInt32 ksceKernelGetSystemTimeLow(void);
+
+/**
  * Get the system time (wide version)
  *
  * @return The system time
