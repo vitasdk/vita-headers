@@ -830,6 +830,15 @@ void *ksceKernelGetThreadTLSAddr(SceUID thid, int key);
 void *ksceKernelGetTLSAddr(int key);
 
 /**
+ * @brief Set Permission
+ *
+ * @param[in] value - The new permission
+ *
+ * @return previous permission value
+ */
+int ksceKernelSetPermission(int value);
+
+/**
  * @brief      Gets the current process PID
  *
  * @return     Current PID
