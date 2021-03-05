@@ -846,6 +846,15 @@ int ksceKernelSetPermission(int value);
 SceUID ksceKernelGetProcessId(void);
 
 /**
+ * @brief Set Process id
+ *
+ * @param[in] value - The new process id
+ *
+ * @return previous process id
+ */
+SceUID ksceKernelSetProcessId(SceUID pid);
+
+/**
  * @brief      Runs a function with larger stack size
  *
  * @param[in]  stack_size  The stack size
