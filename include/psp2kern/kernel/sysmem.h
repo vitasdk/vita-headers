@@ -584,6 +584,24 @@ int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, SceSize size);
  */
 int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
 
+/**
+ * Alloc kernel memory
+ *
+ * @param[in] size - The alloction memory size
+ *
+ * @return memory pointer on success, NULL on error.
+ */
+void *ksceKernelAlloc(unsigned int size);
+
+/**
+ * Free kernel memory
+ *
+ * @param[in] ptr - The free memory pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelFree(void *ptr);
+
 #ifdef __cplusplus
 }
 #endif
