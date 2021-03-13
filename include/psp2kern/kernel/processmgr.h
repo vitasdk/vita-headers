@@ -31,15 +31,17 @@ int ksceKernelCreateProcessLocalStorage(const char *name, SceSize size);
 void *ksceKernelGetProcessLocalStorageAddr(int key);
 int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
 
+typedef SceUInt32 SceKernelProcessType;
+
 /**
- * @brief       Launch an application
- * @param[in]   titleid The TitleId of the app to open.
- * @param[in]   flags Some unknown flags.
- * @param[in]   path Path of the eboot.bin to launch.
- * @param[in]   unk Unknown.
- * @return      PID of the launched app on success, < 0 on error.
+ * @brief       Create process
+ * @param[in]   titleid - The TitleId of the app to open.
+ * @param[in]   type    - The process type.
+ * @param[in]   path    - Path of the process image.
+ * @param[in]   opt     - The create process option.
+ * @return      PID of the created process on success, < 0 on error.
  */
-SceUID ksceKernelLaunchApp(const char *titleid, uint32_t flags, const char *path, uint32_t unk);
+SceUID ksceKernelCreateProcess(const char *titleid, SceKernelProcessType type, const char *path, void *opt);
 
 /**
  * @brief       Resume a suspended process.
