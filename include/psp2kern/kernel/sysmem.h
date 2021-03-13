@@ -300,7 +300,6 @@ int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, Sce
 /**
  * Memory copy to user
  *
- * @param[in] pid - The target process id
  * @param[in] dst - The pointer of user memory
  * @param[in] src - The pointer of kern memory
  * @param[in] len - The copy length
