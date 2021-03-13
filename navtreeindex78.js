@@ -1,5 +1,11 @@
 var NAVTREEINDEX78 =
 {
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,10,12,0,26],
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[4,0,1,0,70,26],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,70,5],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[1,10,12,0,5],
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,10,12,0,25],
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,70,25],
 "group__SystemParams.html":[1,12],
 "group__SystemStatus.html":[1,10],
 "group__USB.html":[1,11],
