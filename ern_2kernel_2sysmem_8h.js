@@ -57,9 +57,11 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelAllocHeapMemory", "group__SceSysmemKernel.html#ga970cf22744d7678723a41c23d75d4bc6", null ],
     [ "ksceKernelAllocHeapMemoryWithOption", "group__SceSysmemKernel.html#gabd46dfc50fdb3778ff8e74bba2a2d3f9", null ],
     [ "ksceKernelFreeHeapMemory", "group__SceSysmemKernel.html#ga7bf486913efbcd018bf52e29c71735db", null ],
-    [ "ksceKernelMemcpyUserToKernelForPid", "group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8", null ],
     [ "ksceKernelMemcpyUserToKernel", "group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32", null ],
+    [ "ksceKernelMemcpyUserToKernelForPid", "group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8", null ],
     [ "ksceKernelMemcpyKernelToUser", "group__SceSysmemKernel.html#gaa4b992cd4c328af2b28bc4ca839a42db", null ],
+    [ "ksceKernelMemcpyToUserRo", "group__SceSysmemKernel.html#gace95e111c9c26363386af1d8f077f8d4", null ],
+    [ "ksceKernelMemcpyToUserRx", "group__SceSysmemKernel.html#ga06d3bd2140ebc7b95420e8991836ac4a", null ],
     [ "ksceKernelRxMemcpyKernelToUserForPid", "group__SceSysmemKernel.html#gafe4211cf9557a097a1223213ebfca9f9", null ],
     [ "ksceKernelStrncpyUserToKernel", "group__SceSysmemKernel.html#gadfc365275d1b9406bcc15c1f28b8f347", null ],
     [ "ksceKernelStrncpyKernelToUser", "group__SceSysmemKernel.html#ga22b8be05c0ffea7560d04bc8c7c6365f", null ],
@@ -92,5 +94,7 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelMemRangeRetainWithPerm", "group__SceSysmemKernel.html#gaf1abeee4acaead7ee3ceb9838f303411", null ],
     [ "ksceKernelMemRangeRelease", "group__SceSysmemKernel.html#ga220a655e812b83b1dca9326a5f423c2a", null ],
     [ "ksceKernelMemRangeReleaseForPid", "group__SceSysmemKernel.html#ga5f86558cd1afbf72f88ac04151536ae9", null ],
-    [ "ksceKernelMemRangeReleaseWithPerm", "group__SceSysmemKernel.html#ga200819a825a57a906d399a086fc249ad", null ]
+    [ "ksceKernelMemRangeReleaseWithPerm", "group__SceSysmemKernel.html#ga200819a825a57a906d399a086fc249ad", null ],
+    [ "ksceKernelAlloc", "group__SceSysmemKernel.html#ga54ff4ee788be86b55efc47a51ed870c5", null ],
+    [ "ksceKernelFree", "group__SceSysmemKernel.html#ga93724c6e5730bbe92fc729b2392df9a7", null ]
 ];
