@@ -9534,11 +9534,13 @@ modules:
           ksceKernelAddressSpaceSetPhyMemPart: 0x67955EE9
           ksceKernelAddressSpaceUnmap: 0xCE72839E
           ksceKernelAddressSpaceVAtoPA: 0xF2179820
+          ksceKernelAlloc: 0xC0A4D2F3
           ksceKernelAllocSystemCallTable: 0x5FFE4B79
           ksceKernelCreateAddressSpace: 0x4A3737F0
           ksceKernelCreateUidObj: 0xDF0288D7
           ksceKernelDeleteAddressSpace: 0xF2D7FE3A
           ksceKernelFindClassByName: 0x62989905
+          ksceKernelFree: 0xABAB0FAB
           ksceKernelFreeSimpleMemBlock: 0xA1FFA2C9
           ksceKernelGetFixedHeapInfoByPointer: 0x219E90FD
           ksceKernelGetHeapInfo: 0x91733EF4
@@ -9547,9 +9549,10 @@ modules:
           ksceKernelGetUidDLinkClass: 0xC105604E
           ksceKernelGetUidHeapClass: 0x4CCA935D
           ksceKernelGetUidMemBlockClass: 0xAF729575
+          ksceKernelMemcpyToUserRo: 0xA6F95838
+          ksceKernelMemcpyToUserRx: 0x67BAD5B4
           ksceKernelNameHeapGetInfo: 0xE443253B
           ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
-          ksceKernelSysrootAlloc: 0xC0A4D2F3
           ksceKernelUIDEntryHeapGetInfo: 0x686AA15C
       SceSysrootForDriver:
         kernel: true
