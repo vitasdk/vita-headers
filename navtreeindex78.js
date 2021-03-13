@@ -1,9 +1,11 @@
 var NAVTREEINDEX78 =
 {
-"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,10,12,0,26],
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[1,10,12,0,16],
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[4,0,1,0,70,16],
 "group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[4,0,1,0,70,26],
-"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,70,5],
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,10,12,0,26],
 "group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[1,10,12,0,5],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,70,5],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,10,12,0,25],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,70,25],
 "group__SystemParams.html":[1,12],
@@ -31,8 +33,8 @@ var NAVTREEINDEX78 =
 "ime__dialog_8h_source.html":[4,0,1,0,22],
 "incoming__dialog_8h.html":[4,0,1,0,23],
 "incoming__dialog_8h_source.html":[4,0,1,0,23],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h.html":[4,0,1,1,2,6],
 "intrmgr_8h_source.html":[4,0,1,1,2,6],
 "io_2devctl_8h.html":[4,0,1,0,0,0],
