@@ -154,16 +154,16 @@ typedef struct SceKernelDebugEventLog3 { // size is 0x54
 } __attribute__((packed)) SceKernelDebugEventLog3;
 
 typedef struct SceKernelDebugEventLog {
-	SceSize size;
-	int data_0x04;    // 0xA, titleid size?
-	char titleid[0xC];
-	int flags;
-	SceUID ppid;
-	SceUID data_0x1C; // thid?
+	SceSize size;      // This struct size(variable size)
+	int data_0x04;     // 0xA, maybe titleid size
+	char titleid[0xC]; // Title id of the process where the event occurred
+	int flags;         // Event flags
+	SceUID ppid;       // Parent process id
+	SceUID data_0x1C;  // Thread id?
 	int rsvd[4];
-	SceUInt64 time;
+	SceUInt64 time;    // Time of the event occurred
 	int data_0x38;
-	SceSize item_size;
+	SceSize item_size; // Event data size
 	union {
 		SceKernelDebugEventLog1 type1;
 		SceKernelDebugEventLog2 type2;
