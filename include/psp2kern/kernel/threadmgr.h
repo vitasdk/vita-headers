@@ -801,6 +801,13 @@ typedef enum SceKernelIdListType {
 SceKernelIdListType ksceKernelGetThreadmgrUIDClass(SceUID uid);
 
 /**
+ * Get the system time
+ *
+ * @return The system time
+ */
+SceUInt32 ksceKernelGetSystemTimeLow(void);
+
+/**
  * Get the system time (wide version)
  *
  * @return The system time
@@ -823,11 +830,29 @@ void *ksceKernelGetThreadTLSAddr(SceUID thid, int key);
 void *ksceKernelGetTLSAddr(int key);
 
 /**
+ * @brief Set Permission
+ *
+ * @param[in] value - The new permission
+ *
+ * @return previous permission value
+ */
+int ksceKernelSetPermission(int value);
+
+/**
  * @brief      Gets the current process PID
  *
  * @return     Current PID
  */
 SceUID ksceKernelGetProcessId(void);
+
+/**
+ * @brief Set Process id
+ *
+ * @param[in] value - The new process id
+ *
+ * @return previous process id
+ */
+SceUID ksceKernelSetProcessId(SceUID pid);
 
 /**
  * @brief      Runs a function with larger stack size
