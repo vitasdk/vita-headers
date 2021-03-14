@@ -1000,6 +1000,7 @@ var group__SceNetKernel =
     [ "SCE_NET_ICMP_CODE_DEST_UNREACH_HOST_TOS", "group__SceNetKernel.html#gga65e7ad6abb68170d26980853b7d024b1a9c64982114f6a1bec91549499d44c498", null ],
     [ "SCE_NET_ICMP_CODE_TIME_EXCEEDED_TTL_EXCEEDED", "group__SceNetKernel.html#gga65e7ad6abb68170d26980853b7d024b1abb2f7333af22d92323602aabb885ebe0", null ],
     [ "SCE_NET_ICMP_CODE_TIME_EXCEEDED_FRT_EXCEEDED", "group__SceNetKernel.html#gga65e7ad6abb68170d26980853b7d024b1a1c69466cb5449e986f9601948e7b494e", null ],
+    [ "sceNetSyscallGetIfList", "group__SceNetKernel.html#ga2ed351c7ad18bc6ae19d05ad5c17ccf6", null ],
     [ "sceNetSyscallConnect", "group__SceNetKernel.html#ga43edc23fea2c49e44d2f26fab642b81f", null ],
     [ "ksceNetSocket", "group__SceNetKernel.html#ga93a90e964603816ec07e5257903b81bc", null ],
     [ "ksceNetAccept", "group__SceNetKernel.html#gaeb08399e5f29bcc5be778cb934ff99d2", null ],
