@@ -13,6 +13,16 @@
 extern "C" {
 #endif
 
+/**
+ * @brief Get net if list
+ *
+ * @param[out] dst  - The output buffer list. size is (0x140 * size)
+ * @param[in]  size - The output size number.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceNetSyscallGetIfList(void *dst, SceUInt32 size);
+
 int sceNetSyscallConnect(int s, const SceNetSockaddr *name, unsigned int namelen);
 
 #ifdef __cplusplus
