@@ -1127,6 +1127,7 @@ var gxm_8h =
     [ "sceGxmTextureInitTiled", "group__SceGxmUser.html#ga27642848f184a273b4b9747bdb72ffff", null ],
     [ "sceGxmTextureInitCube", "group__SceGxmUser.html#gab287055258374f19006cb3eb15a8c4fe", null ],
     [ "sceGxmTextureGetType", "group__SceGxmUser.html#ga49b8453913bdbc02f96815601cb39037", null ],
+    [ "sceGxmTextureValidate", "group__SceGxmUser.html#ga23d9d12ead8d3ff8af12a45c4ab2d46b", null ],
     [ "sceGxmTextureSetMinFilter", "group__SceGxmUser.html#ga62d73ee7c00355001dedef0225d8e8bd", null ],
     [ "sceGxmTextureGetMinFilter", "group__SceGxmUser.html#ga8d484f4a717bb6ccbf0998930fe7e2cc", null ],
     [ "sceGxmTextureSetMagFilter", "group__SceGxmUser.html#gae3ce0c3066754bdd2843d8825630bc20", null ],
