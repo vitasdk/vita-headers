@@ -134,18 +134,18 @@ typedef struct SceKernelDebugEventLog1 { // size is 0x1C
 	int data_0x40;
 	SceUID pid;
 	int budget_type;
-	int data_0x4C;    // 0xA
+	int data_0x4C;    //!< 0xA
 	char titleid[0xC];
 } __attribute__((packed)) SceKernelDebugEventLog1;
 
 // Related to network
 typedef struct SceKernelDebugEventLog2 { // size is 0x4
-	int data_0x40;    // 0 or 0x80412118?
+	int data_0x40;    //!< 0 or 0x80412118?
 } __attribute__((packed)) SceKernelDebugEventLog2;
 
 // Related to network
 typedef struct SceKernelDebugEventLog3 { // size is 0x54
-	int data_0x40;    // 0?
+	int data_0x40;    //!< 0?
 	char ip1[0x10];
 	char ip2[0x10];
 	char ip3[0x10];
@@ -154,16 +154,16 @@ typedef struct SceKernelDebugEventLog3 { // size is 0x54
 } __attribute__((packed)) SceKernelDebugEventLog3;
 
 typedef struct SceKernelDebugEventLog {
-	SceSize size;      // This struct size(variable size)
-	int data_0x04;     // 0xA, maybe titleid size
-	char titleid[0xC]; // Title id of the process where the event occurred
-	int flags;         // Event flags
-	SceUID ppid;       // Parent process id
-	SceUID data_0x1C;  // Thread id?
+	SceSize size;      //!< struct size(variable size)
+	int data_0x04;     //!< 0xA, maybe titleid size
+	char titleid[0xC]; //!< Title id of the process where the event occurred
+	int flags;         //!< Event flags
+	SceUID ppid;       //!< Parent process id
+	SceUID data_0x1C;  //!< Thread id?
 	int rsvd[4];
-	SceUInt64 time;    // Time of the event occurred
+	SceUInt64 time;    //!< Time of the event occurred
 	int data_0x38;
-	SceSize item_size; // Event data size
+	SceSize item_size; //!< Event data size
 	union {
 		SceKernelDebugEventLog1 type1;
 		SceKernelDebugEventLog2 type2;
