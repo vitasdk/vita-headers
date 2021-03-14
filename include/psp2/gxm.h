@@ -1550,6 +1550,7 @@ int sceGxmTextureInitTiled(SceGxmTexture *texture, const void *data, SceGxmTextu
 int sceGxmTextureInitCube(SceGxmTexture *texture, const void *data, SceGxmTextureFormat texFormat, unsigned int width, unsigned int height, unsigned int mipCount);
 
 SceGxmTextureType sceGxmTextureGetType(const SceGxmTexture *texture);
+int sceGxmTextureValidate(const SceGxmTexture *texture);
 
 int sceGxmTextureSetMinFilter(SceGxmTexture *texture, SceGxmTextureFilter minFilter);
 SceGxmTextureFilter sceGxmTextureGetMinFilter(const SceGxmTexture *texture);
