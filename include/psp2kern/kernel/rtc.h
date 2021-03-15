@@ -12,17 +12,21 @@
 extern "C" {
 #endif
 
-int ksceRtcSetCurrentTick(SceUInt64 *tick);
-int ksceRtcGetCurrentTick(SceUInt64 *tick);
+typedef struct SceRtcTick {
+	SceUInt64 tick;
+} SceRtcTick;
 
-int ksceRtcSetCurrentNetworkTick(SceUInt64 *tick);
-int ksceRtcGetCurrentNetworkTick(SceUInt64 *tick);
+int ksceRtcSetCurrentTick(SceRtcTick *tick);
+int ksceRtcGetCurrentTick(SceRtcTick *tick);
 
-int ksceRtcSetCurrentSecureTick(SceUInt64 *tick);
-int ksceRtcGetCurrentSecureTick(SceUInt64 *tick);
+int ksceRtcSetCurrentNetworkTick(SceRtcTick *tick);
+int ksceRtcGetCurrentNetworkTick(SceRtcTick *tick);
 
-int ksceRtcSetCurrentDebugNetworkTick(SceUInt64 *tick);
-int ksceRtcGetCurrentDebugNetworkTick(SceUInt64 *tick);
+int ksceRtcSetCurrentSecureTick(SceRtcTick *tick);
+int ksceRtcGetCurrentSecureTick(SceRtcTick *tick);
+
+int ksceRtcSetCurrentDebugNetworkTick(SceRtcTick *tick);
+int ksceRtcGetCurrentDebugNetworkTick(SceRtcTick *tick);
 
 #ifdef __cplusplus
 }
