@@ -38,7 +38,10 @@ typedef enum SceGxmErrorCode {
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW                      = 0x805B0014,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE              = 0x805B0015,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE            = 0x805B0016,
-	SCE_GXM_ERROR_DRIVER                                        = 0x805B0017
+	SCE_GXM_ERROR_DRIVER                                        = 0x805B0017,
+	SCE_GXM_ERROR_INVALID_TEXTURE                               = 0x805B0018,
+	SCE_GXM_ERROR_INVALID_TEXTURE_DATA_POINTER                  = 0x805B0019,
+	SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER               = 0x805B001A
 } SceGxmErrorCode;
 
 typedef void (SceGxmDisplayQueueCallback)(const void *callbackData);
