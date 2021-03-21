@@ -1,11 +1,11 @@
 var psp2kern_2kernel_2rtc_8h =
 [
-    [ "ksceRtcSetCurrentTick", "group__SceRtcKernel.html#ga39b29c073854c038df3f1a597049e08a", null ],
-    [ "ksceRtcGetCurrentTick", "group__SceRtcKernel.html#ga20729744201108521ed642ccafc40a5f", null ],
-    [ "ksceRtcSetCurrentNetworkTick", "group__SceRtcKernel.html#ga2d85f88ab7889e1e81dc395f1211d7c9", null ],
-    [ "ksceRtcGetCurrentNetworkTick", "group__SceRtcKernel.html#ga3cb8161d91701dbe32ee0a618930d1bb", null ],
-    [ "ksceRtcSetCurrentSecureTick", "group__SceRtcKernel.html#ga3055a4c1d1393f83c6d12d0b7d51aea9", null ],
-    [ "ksceRtcGetCurrentSecureTick", "group__SceRtcKernel.html#gaed96c9ab0f34ab9332b64827b9c5f498", null ],
-    [ "ksceRtcSetCurrentDebugNetworkTick", "group__SceRtcKernel.html#ga923505b39c502595e742bdb9d682f149", null ],
-    [ "ksceRtcGetCurrentDebugNetworkTick", "group__SceRtcKernel.html#ga00c316afb7a89dbf5f4fdbea58ac52ec", null ]
+    [ "ksceRtcSetCurrentTick", "group__SceRtcKernel.html#gae2ac49a1b82bde6e3ce9596b12382611", null ],
+    [ "ksceRtcGetCurrentTick", "group__SceRtcKernel.html#gad6a686c6f4fc52815c22fed766a57865", null ],
+    [ "ksceRtcSetCurrentNetworkTick", "group__SceRtcKernel.html#ga9d92699d64bcbd3edcbbe0d2e8a64ab0", null ],
+    [ "ksceRtcGetCurrentNetworkTick", "group__SceRtcKernel.html#gab961bf2e612a3fce9a74093a4516f363", null ],
+    [ "ksceRtcSetCurrentSecureTick", "group__SceRtcKernel.html#ga247f0fa918a9b287938908a8fe9f0e6d", null ],
+    [ "ksceRtcGetCurrentSecureTick", "group__SceRtcKernel.html#gac5e4d3b6a382a695bec6f0aa1dc32237", null ],
+    [ "ksceRtcSetCurrentDebugNetworkTick", "group__SceRtcKernel.html#gaeffdd673eac631e5ec9cccefc1dbf6be", null ],
+    [ "ksceRtcGetCurrentDebugNetworkTick", "group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285", null ]
 ];
