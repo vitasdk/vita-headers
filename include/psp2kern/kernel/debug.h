@@ -129,6 +129,69 @@ int ksceKernelGetMinimumAssertionLevel(void);
  */
 int ksceKernelSetMinimumAssertionLevel(int level);
 
+// process
+typedef struct SceKernelDebugEventLog1 { // size is 0x1C
+	int data_0x40;
+	SceUID pid;
+	int budget_type;
+	int data_0x4C;    //!< 0xA
+	char titleid[0xC];
+} __attribute__((packed)) SceKernelDebugEventLog1;
+
+// Related to network
+typedef struct SceKernelDebugEventLog2 { // size is 0x4
+	int data_0x40;    //!< 0 or 0x80412118?
+} __attribute__((packed)) SceKernelDebugEventLog2;
+
+// Related to network
+typedef struct SceKernelDebugEventLog3 { // size is 0x54
+	int data_0x40;    //!< 0?
+	char ip1[0x10];
+	char ip2[0x10];
+	char ip3[0x10];
+	char ip4[0x10];
+	char ip5[0x10];
+} __attribute__((packed)) SceKernelDebugEventLog3;
+
+typedef struct SceKernelDebugEventLog {
+	SceSize size;      //!< struct size(variable size)
+	int data_0x04;     //!< 0xA, maybe titleid size
+	char titleid[0xC]; //!< Title id of the process where the event occurred
+	int flags;         //!< Event flags
+	SceUID ppid;       //!< Parent process id
+	SceUID data_0x1C;  //!< Thread id?
+	int rsvd[4];
+	SceUInt64 time;    //!< Time of the event occurred
+	int data_0x38;
+	SceSize item_size; //!< Event data size
+	union {
+		SceKernelDebugEventLog1 type1;
+		SceKernelDebugEventLog2 type2;
+		SceKernelDebugEventLog3 type3;
+	};
+} __attribute__((packed)) SceKernelDebugEventLog;
+
+/**
+ * @brief Get event log info
+ *
+ * @param[out] buf         - The SceKernelDebugEventLog buffer list
+ * @param[in]  buf_size    - The buf size
+ * @param[out] read_blocks - The read event log number
+ *
+ * @return < 0 on error.
+ */
+int ksceEventLogGetInfo(void *buf, SceSize buf_size, SceSize *read_blocks);
+
+/**
+ * @brief Get tty log info
+ *
+ * @param[out] buf         - The tty log buffer
+ * @param[in]  buf_size    - The buf size
+ *
+ * @return log length on success, < 0 on error.
+ */
+int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
+
 #ifdef __cplusplus
 }
 #endif
