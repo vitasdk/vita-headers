@@ -98,7 +98,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga45399d5f520fa2001dfc4becba3893c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga45399d5f520fa2001dfc4becba3893c7">ksceDebugPrintf</a> (const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
 <tr class="memdesc:ga45399d5f520fa2001dfc4becba3893c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print log.  <a href="group__SceKernelDebugKernel.html#ga45399d5f520fa2001dfc4becba3893c7">More...</a><br /></td></tr>
 <tr class="separator:ga45399d5f520fa2001dfc4becba3893c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga49531b072a01eaf080b6fb8cf542cb0a">ksceDebugPrintf2</a> (int flags, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="memitem:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga49531b072a01eaf080b6fb8cf542cb0a">ksceDebugPrintf2</a> (int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
 <tr class="memdesc:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print log with ctx.  <a href="group__SceKernelDebugKernel.html#ga49531b072a01eaf080b6fb8cf542cb0a">More...</a><br /></td></tr>
 <tr class="separator:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab148f7a4ae21e8a8f767f90d6f1ab100"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gab148f7a4ae21e8a8f767f90d6f1ab100">__attribute__</a> ((__noreturn__)) void ksceDebugPrintKernelPanic(const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx</td></tr>
@@ -124,6 +124,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga59c83ca5fd9f4d5f9b1f4852375003f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8">ksceKernelSetMinimumAssertionLevel</a> (int level)</td></tr>
 <tr class="memdesc:ga59c83ca5fd9f4d5f9b1f4852375003f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current minimum assertion level.  <a href="group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8">More...</a><br /></td></tr>
 <tr class="separator:ga59c83ca5fd9f4d5f9b1f4852375003f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66b13dfa3e7bc9d00cf644f015886652"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog1">SceKernelDebugEventLog1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga66b13dfa3e7bc9d00cf644f015886652">__attribute__</a> ((packed)) <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog1">SceKernelDebugEventLog1</a></td></tr>
+<tr class="separator:ga66b13dfa3e7bc9d00cf644f015886652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7d4ebcc204313d68da4eb0836d397ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gae7d4ebcc204313d68da4eb0836d397ec">ksceEventLogGetInfo</a> (void *buf, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> buf_size, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *read_blocks)</td></tr>
+<tr class="memdesc:gae7d4ebcc204313d68da4eb0836d397ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get event log info.  <a href="group__SceKernelDebugKernel.html#gae7d4ebcc204313d68da4eb0836d397ec">More...</a><br /></td></tr>
+<tr class="separator:gae7d4ebcc204313d68da4eb0836d397ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fc86f5be6249a986b161e710bfc69aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa">ksceKernelGetTtyInfo</a> (char *buf, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> buf_size)</td></tr>
+<tr class="memdesc:ga6fc86f5be6249a986b161e710bfc69aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tty log info.  <a href="group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa">More...</a><br /></td></tr>
+<tr class="separator:ga6fc86f5be6249a986b161e710bfc69aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelDebugMessageContext" id="structSceKernelDebugMessageContext"></a>
@@ -173,6 +181,247 @@ line</td>
 <a id="ga9e983c11d0617c7914962df82cb47136"></a>const char *</td>
 <td class="fieldname">
 file</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelDebugEventLog1" id="structSceKernelDebugEventLog1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugEventLog1">&#9670;&nbsp;</a></span>SceKernelDebugEventLog1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelDebugEventLog1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga0b0cf31806e42e43aa2b79dfa27ee3aa"></a>int</td>
+<td class="fieldname">
+data_0x40</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4e5f133e88c724a0577c90ba96d0b71e"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+pid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab4f688a7d10aa294caefb48b36265326"></a>int</td>
+<td class="fieldname">
+budget_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8fe739e65f93b42e65c0903809bfe85b"></a>int</td>
+<td class="fieldname">
+data_0x4C</td>
+<td class="fielddoc">
+0xA </td></tr>
+<tr><td class="fieldtype">
+<a id="gabcb520f6a0c64d87d1155723a5819e8b"></a>char</td>
+<td class="fieldname">
+titleid[0xC]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelDebugEventLog2" id="structSceKernelDebugEventLog2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugEventLog2">&#9670;&nbsp;</a></span>SceKernelDebugEventLog2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelDebugEventLog2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga58f6904e59a7234b2afb974f70671a76"></a>int</td>
+<td class="fieldname">
+data_0x40</td>
+<td class="fielddoc">
+0 or 0x80412118? </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelDebugEventLog3" id="structSceKernelDebugEventLog3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugEventLog3">&#9670;&nbsp;</a></span>SceKernelDebugEventLog3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelDebugEventLog3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga328b0f9c6c71e22283b43b8a91ad157a"></a>int</td>
+<td class="fieldname">
+data_0x40</td>
+<td class="fielddoc">
+0? </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1fd43ab5cfe6be2ec53673cf53986e72"></a>char</td>
+<td class="fieldname">
+ip1[0x10]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga768296a48ad56b52c185c695b86b67b1"></a>char</td>
+<td class="fieldname">
+ip2[0x10]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga782b9c8781203541d0d5638b839914c5"></a>char</td>
+<td class="fieldname">
+ip3[0x10]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga752191369313bdc6f69ec50c914fd855"></a>char</td>
+<td class="fieldname">
+ip4[0x10]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga46c2f2f446aeacbd2eb6ac6bc1a90062"></a>char</td>
+<td class="fieldname">
+ip5[0x10]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelDebugEventLog" id="structSceKernelDebugEventLog"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugEventLog">&#9670;&nbsp;</a></span>SceKernelDebugEventLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelDebugEventLog</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga93eca2487489c17b290c9246c80ee99e"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+struct size(variable size) </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7da86d02609cfcb9d3d9f4a75782a9c6"></a>int</td>
+<td class="fieldname">
+data_0x04</td>
+<td class="fielddoc">
+0xA, maybe titleid size </td></tr>
+<tr><td class="fieldtype">
+<a id="gad8442f31643155be228972853f484f7a"></a>char</td>
+<td class="fieldname">
+titleid[0xC]</td>
+<td class="fielddoc">
+Title id of the process where the event occurred. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad4d6843b059a3f45a711e169a7f16b6b"></a>int</td>
+<td class="fieldname">
+flags</td>
+<td class="fielddoc">
+Event flags. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga350d99d35be86f99b23e4502043910de"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+ppid</td>
+<td class="fielddoc">
+Parent process id. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadf0e25c17bc4739a7a8b4d97e3520b32"></a><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+data_0x1C</td>
+<td class="fielddoc">
+Thread id? </td></tr>
+<tr><td class="fieldtype">
+<a id="ga671a79011e46e174544350a919cc9a2f"></a>int</td>
+<td class="fieldname">
+rsvd[4]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3b0a5f5f858991b77fcea8b14f6af89f"></a><a class="el" href="group__SceTypesUser.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
+<td class="fieldname">
+time</td>
+<td class="fielddoc">
+Time of the event occurred. </td></tr>
+<tr><td class="fieldtype">
+<a id="gabc42df82f31b2f8575a0186e768b7b64"></a>int</td>
+<td class="fieldname">
+data_0x38</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga28626dbd1177c2cad1c23815e44efa65"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+item_size</td>
+<td class="fielddoc">
+Event data size. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9054460bd2e604b5d58e41fa45123b06"></a>union <a class="el" href="group__SceKernelDebugKernel.html#unionSceKernelDebugEventLog_8____attribute____">SceKernelDebugEventLog</a></td>
+<td class="fieldname">
+__attribute__</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionSceKernelDebugEventLog_8____attribute____" id="unionSceKernelDebugEventLog_8____attribute____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionSceKernelDebugEventLog_8____attribute____">&#9670;&nbsp;</a></span>SceKernelDebugEventLog.__attribute__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union SceKernelDebugEventLog.__attribute__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a3156e42ab24604b8de92a93ed761532d"></a><a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog1">SceKernelDebugEventLog1</a></td>
+<td class="fieldname">
+type1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8fe8b170aa076a4233d8eda7d28804d4"></a><a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog2">SceKernelDebugEventLog2</a></td>
+<td class="fieldname">
+type2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa9e513b87ac56ff5c69100f536b06805"></a><a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog3">SceKernelDebugEventLog3</a></td>
+<td class="fieldname">
+type3</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -339,7 +588,7 @@ file</td>
 </div>
 </div>
 <a id="gab148f7a4ae21e8a8f767f90d6f1ab100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab148f7a4ae21e8a8f767f90d6f1ab100">&#9670;&nbsp;</a></span>__attribute__()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab148f7a4ae21e8a8f767f90d6f1ab100">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,6 +861,107 @@ file</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>previous minimum assertion level. </dd></dl>
+
+</div>
+</div>
+<a id="ga66b13dfa3e7bc9d00cf644f015886652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66b13dfa3e7bc9d00cf644f015886652">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog1">SceKernelDebugEventLog1</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(packed)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae7d4ebcc204313d68da4eb0836d397ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7d4ebcc204313d68da4eb0836d397ec">&#9670;&nbsp;</a></span>ksceEventLogGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceEventLogGetInfo </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
+          <td class="paramname"><em>read_blocks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get event log info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- The <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugEventLog">SceKernelDebugEventLog</a> buffer list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_size</td><td>- The buf size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">read_blocks</td><td>- The read event log number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga6fc86f5be6249a986b161e710bfc69aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fc86f5be6249a986b161e710bfc69aa">&#9670;&nbsp;</a></span>ksceKernelGetTtyInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetTtyInfo </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>buf_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get tty log info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- The tty log buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_size</td><td>- The buf size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>log length on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

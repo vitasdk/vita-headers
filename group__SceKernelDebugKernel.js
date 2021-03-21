@@ -43,5 +43,8 @@ var group__SceKernelDebugKernel =
     [ "ksceDebugGetPutcharHandler", "group__SceKernelDebugKernel.html#gae2c15d5ab86dcfdab90b39bcde0e8ca8", null ],
     [ "ksceDebugDisableInfoDump", "group__SceKernelDebugKernel.html#ga494f482e4e9f7181952a756c947d1b29", null ],
     [ "ksceKernelGetMinimumAssertionLevel", "group__SceKernelDebugKernel.html#ga8288506beeb713361e225dc70df1ace3", null ],
-    [ "ksceKernelSetMinimumAssertionLevel", "group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8", null ]
+    [ "ksceKernelSetMinimumAssertionLevel", "group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8", null ],
+    [ "__attribute__", "group__SceKernelDebugKernel.html#ga66b13dfa3e7bc9d00cf644f015886652", null ],
+    [ "ksceEventLogGetInfo", "group__SceKernelDebugKernel.html#gae7d4ebcc204313d68da4eb0836d397ec", null ],
+    [ "ksceKernelGetTtyInfo", "group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa", null ]
 ];
