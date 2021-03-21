@@ -110,7 +110,7 @@ typedef enum SceThreadStatus {
 
 typedef struct SceKernelFaultingProcessInfo {
     SceUID pid;
-    uint32_t unk;
+    SceUID faultingThreadId; //Kernel UID of the faulting thread
 } SceKernelFaultingProcessInfo;
 
 /**
