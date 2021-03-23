@@ -42,6 +42,15 @@ typedef struct ScePafDateTime {
 
 int scePafGetCurrentClockLocalTime(ScePafDateTime *data);
 
+typedef struct ScePafSha1Context { // size is 0x68
+	uint32_t h[5];
+	char unk[0x54];
+} ScePafSha1Context;
+
+int scePafSha1Init(ScePafSha1Context *context);
+int scePafSha1Update(ScePafSha1Context *context, const void *data, SceSize length);
+int scePafSha1Result(ScePafSha1Context *context, void *dst);
+
 #ifdef __cplusplus
 }
 #endif
