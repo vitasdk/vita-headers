@@ -110,7 +110,7 @@ typedef enum SceThreadStatus {
 
 typedef struct SceKernelFaultingProcessInfo {
     SceUID pid;
-    uint32_t unk;
+    SceUID faultingThreadId; //!< Kernel UID of the faulting thread
 } SceKernelFaultingProcessInfo;
 
 /**
@@ -1084,4 +1084,3 @@ int ksceKernelCancelMsgPipe(SceUID uid, int *psend, int *precv);
 #endif
 
 #endif /* _PSP2_KERNEL_THREADMGR_H_ */
-
