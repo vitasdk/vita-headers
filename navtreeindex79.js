@@ -1,5 +1,11 @@
 var NAVTREEINDEX79 =
 {
+"sqlite_8h.html":[4,0,1,0,57],
+"sqlite_8h_source.html":[4,0,1,0,57],
+"ssmgr_8h.html":[4,0,1,1,2,12],
+"ssmgr_8h_source.html":[4,0,1,1,2,12],
+"suspend_8h.html":[4,0,1,1,2,13],
+"suspend_8h_source.html":[4,0,1,1,2,13],
 "sysclib_8h.html":[4,0,1,1,2,14],
 "sysclib_8h_source.html":[4,0,1,1,2,14],
 "syscon_8h.html":[4,0,1,1,19],
