@@ -87,12 +87,20 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
 
+typedef enum SceKernelHeapAttr {
+	SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND = 0x00000001,
+	SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE = 0x00000400
+} SceKernelHeapAttr;
+
 typedef struct SceKernelHeapCreateOpt {
 	SceSize size;
-	SceUInt32 uselock;
+	union { //<! Union for compatibility
+		SceUInt32 attr;
+		SceUInt32 uselock; //<! Do not use uselock as it will be deprecated.
+	};
 	SceUInt32 field_8;
 	SceUInt32 field_C;
-	SceUInt32 field_10;
+	SceUInt32 memtype;
 	SceUInt32 field_14;
 	SceUInt32 field_18;
 } SceKernelHeapCreateOpt;
