@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceModulemgr}
- * \usage{psp2/kernel/modulemgr.h}
+ * \usage{psp2/kernel/modulemgr.h,SceKernelModulemgr_stub}
  */
 
 #ifndef _PSP2_KERNEL_MODULEMGR_H_

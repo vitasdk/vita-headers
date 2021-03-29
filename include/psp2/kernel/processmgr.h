@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceProcessmgr}
- * \usage{psp2/kernel/processmgr.h}
+ * \usage{psp2/kernel/processmgr.h,SceProcessmgr_stub}
  */
 
 
