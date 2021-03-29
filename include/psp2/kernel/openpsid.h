@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceOpenPsid}
- * \usage{psp2/kernel/openpsid.h}
+ * \usage{psp2/kernel/openpsid.h,SceLibKernel_stub}
  */
 
 
