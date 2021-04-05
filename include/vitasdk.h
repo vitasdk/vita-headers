@@ -13,6 +13,7 @@
 #include <psp2/audioin.h>
 #include <psp2/audioout.h>
 #include <psp2/avconfig.h>
+#include <psp2/avplayer.h>
 #include <psp2/camera.h>
 #include <psp2/common_dialog.h>
 #include <psp2/compat.h>
