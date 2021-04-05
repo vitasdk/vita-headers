@@ -20,6 +20,18 @@ typedef enum SceAvPlayerErrorCode {
 	SCE_AVPLAYER_ERROR_OUT_OF_MEMORY = 0x806A0003
 } SceAvPlayerErrorCode;
 
+typedef enum SceAvPlayerTrickSpeeds {
+	SCE_AVPLAYER_TRICK_SPEED_REWIND_32X       = -3200, //!< Rewind 32x
+	SCE_AVPLAYER_TRICK_SPEED_REWIND_16X       = -1600, //!< Rewind 16x
+	SCE_AVPLAYER_TRICK_SPEED_REWIND_8X        = -800,  //!< Rewind 8x
+	SCE_AVPLAYER_TRICK_SPEED_NORMAL           =  100,  //!< Normal Speed
+	SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_2X  =  200,  //!< Fast Forward 2x
+	SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_4X  =  400,  //!< Fast Forward 4x
+	SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_8X  =  800,  //!< Fast Forward 8x
+	SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_16X = 1600,  //!< Fast Forward 16x
+	SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_32X = 3200   //!< Fast Forward 32x
+} SceAvPlayerTrickSpeeds;
+
 typedef void* (*SceAvPlayerAlloc)(void *arg, uint32_t alignment, uint32_t size);
 typedef void (*SceAvPlayerFree)(void *arg, void *ptr);
 typedef void* (*SceAvPlayerAllocFrame)(void *arg, uint32_t alignment, uint32_t size);
@@ -168,6 +180,13 @@ int sceAvPlayerAddSource(SceAvPlayerHandle handle, const char *filename);
 
 /**
  * @param[in] handle - A player handle created with ::sceAvPlayerInit
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvPlayerClose(SceAvPlayerHandle handle);
+
+/**
+ * @param[in] handle - A player handle created with ::sceAvPlayerInit
  * @param[out] info - Descriptor for the received data
  *
  * @return SCE_TRUE if new data is available, SCE_FALSE otherwise.
@@ -181,6 +200,29 @@ SceBool sceAvPlayerGetAudioData(SceAvPlayerHandle handle, SceAvPlayerFrameInfo *
  * @return SCE_TRUE if new data is available, SCE_FALSE otherwise.
  */
 SceBool sceAvPlayerGetVideoData(SceAvPlayerHandle handle, SceAvPlayerFrameInfo *info);
+
+/**
+ * @param[in] handle - A player handle created with ::sceAvPlayerInit
+ *
+ * @return Current time on the video playback in milliseconds.
+ */
+uint64_t sceAvPlayerCurrentTime(SceAvPlayerHandle handle);
+
+/**
+ * @param[in] handle - A player handle created with ::sceAvPlayerInit
+ * @param[in] offset - Offset to jump to on the video playback in milliseconds.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvPlayerJumpToTime(SceAvPlayerHandle handle, uint64_t offset);
+
+/**
+ * @param[in] handle - A player handle created with ::sceAvPlayerInit
+ * @param[in] offset - One of ::SceAvPlayerTrickSpeeds.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvPlayerSetTrickSpeed(SceAvPlayerHandle handle, int speed);
 
 #ifdef __cplusplus
 }
