@@ -22,6 +22,10 @@ typedef enum SceKernelMemBlockType {
 	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW            = 0x09408060
 } SceKernelMemBlockType;
 
+typedef enum SceKernelAllocMemBlockAttr {
+	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT      = 0x00000004U
+} SceKernelAllocMemBlockAttr;
+
 typedef struct SceKernelAllocMemBlockOpt {
 	SceSize size;
 	SceUInt32 attr;
