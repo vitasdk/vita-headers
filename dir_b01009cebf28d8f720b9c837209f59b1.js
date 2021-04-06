@@ -11,6 +11,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "audioin.h", "audioin_8h.html", "audioin_8h" ],
     [ "audioout.h", "audioout_8h.html", "audioout_8h" ],
     [ "avconfig.h", "avconfig_8h.html", "avconfig_8h" ],
+    [ "avplayer.h", "avplayer_8h.html", "avplayer_8h" ],
     [ "bgapputil.h", "bgapputil_8h.html", "bgapputil_8h" ],
     [ "camera.h", "camera_8h.html", "camera_8h" ],
     [ "common_dialog.h", "common__dialog_8h.html", "common__dialog_8h" ],
