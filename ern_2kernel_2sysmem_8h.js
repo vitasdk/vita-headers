@@ -22,6 +22,7 @@ var ern_2kernel_2sysmem_8h =
       [ "SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0", "group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaa5bad95a632fd506903225fdb0ce621e", null ]
     ] ],
     [ "SceKernelAllocMemBlockAttr", "group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076", [
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8", null ],

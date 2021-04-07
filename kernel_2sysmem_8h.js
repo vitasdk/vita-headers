@@ -18,6 +18,16 @@ var kernel_2sysmem_8h =
       [ "SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW", "group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea7b7cd86a2f950a06a1b6f22e55b16acf", null ],
       [ "SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0", "group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaa5bad95a632fd506903225fdb0ce621e", null ]
     ] ],
+    [ "SceKernelAllocMemBlockAttr", "group__SceSysmemUser.html#ga3e4b4287824bdc72a51b05c7ef583076", [
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a3cdf51026d8268f0d3ba4cb21aae1208", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0", null ]
+    ] ],
     [ "SceKernelModel", "group__SceSysmemUser.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c", [
       [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
       [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ],
