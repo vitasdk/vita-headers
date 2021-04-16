@@ -15,7 +15,7 @@ extern "C" {
 
 void sce_paf_private_free(void *ptr);
 void *sce_paf_private_malloc(SceSize size);
-void *sce_paf_malloc_align(SceUInt32 align, SceSize length);
+void *sce_paf_memalign(SceUInt32 align, SceSize length);
 
 void *sce_paf_private_bzero(void *ptr, SceSize num);
 void *sce_paf_private_memchr(const void *ptr, int value, SceSize num);
