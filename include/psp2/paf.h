@@ -15,6 +15,15 @@ extern "C" {
 
 void sce_paf_private_free(void *ptr);
 void *sce_paf_private_malloc(SceSize size);
+
+/**
+ * @brief Alloc memory with align
+ *
+ * @param[in] align  - The align size
+ * @param[in] length - The alloc length
+ *
+ * @return memory pointer or NULL
+ */
 void *sce_paf_memalign(SceSize align, SceSize length);
 
 void *sce_paf_private_bzero(void *ptr, SceSize num);
