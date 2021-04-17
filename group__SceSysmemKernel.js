@@ -40,6 +40,10 @@ var group__SceSysmemKernel =
       [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_W", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a7b09d0555d14bceff20796770151d3ec", null ],
       [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_X", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a68546636b48a2378cfea27b0c4a10fad", null ]
     ] ],
+    [ "SceKernelHeapAttr", "group__SceSysmemKernel.html#gaee8ef626957de1b3b3b26f3c1d81f86d", [
+      [ "SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da4e77f76531b014ab9138a081d4e167e4", null ],
+      [ "SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da7aa3bfcb72636330a81e750526f4c75c", null ]
+    ] ],
     [ "SceKernelModel", "group__SceSysmemKernel.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c", [
       [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
       [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ],
@@ -70,6 +74,8 @@ var group__SceSysmemKernel =
     [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_R", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a4959d22201a0b9e8c9dd2e3d1bae5421", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_W", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a7b09d0555d14bceff20796770151d3ec", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_X", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a68546636b48a2378cfea27b0c4a10fad", null ],
+    [ "SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da4e77f76531b014ab9138a081d4e167e4", null ],
+    [ "SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da7aa3bfcb72636330a81e750526f4c75c", null ],
     [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
     [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ],
     [ "ksceKernelAllocMemBlock", "group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31", null ],
