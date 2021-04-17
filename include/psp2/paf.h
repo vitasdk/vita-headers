@@ -8,6 +8,7 @@
 #define _PSP2_PAF_H_
 
 #include <psp2/types.h>
+#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -36,6 +37,11 @@ void *sce_paf_private_memmove(void *destination, const void *source, SceSize num
 void *sce_paf_private_bcopy(void *destination, const void *source, SceSize num);
 void *sce_paf_private_memset(void *ptr, int value, SceSize num);
 int sce_paf_private_snprintf(char *s, SceSize n, const char *format, ...);
+
+int sce_paf_private_vsnprintf(char *dst, unsigned int max, const char *fmt, va_list arg);
+
+#define sce_paf_vsnprintf sce_paf_private_vsnprintf
+
 int sce_paf_private_strcasecmp(const char *str1, const char *str2);
 char *sce_paf_private_strchr(const char *str, int character);
 int sce_paf_private_strcmp(const char *str1, const char *str2);
