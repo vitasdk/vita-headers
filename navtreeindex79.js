@@ -1,5 +1,11 @@
 var NAVTREEINDEX79 =
 {
+"loadcore_8h_source.html":[4,0,1,0,1,3],
+"location_8h.html":[4,0,1,0,32],
+"location_8h_source.html":[4,0,1,0,32],
+"message__dialog_8h.html":[4,0,1,0,33],
+"message__dialog_8h_source.html":[4,0,1,0,33],
+"modules.html":[1],
 "motion_8h.html":[4,0,1,0,34],
 "motion_8h_source.html":[4,0,1,0,34],
 "mtpif_8h.html":[4,0,1,0,35],

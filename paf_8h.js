@@ -1,7 +1,9 @@
 var paf_8h =
 [
+    [ "sce_paf_vsnprintf", "group__ScePafUser.html#gad4bb2ca96925b9413d806fe8102252e3", null ],
     [ "sce_paf_private_free", "group__ScePafUser.html#ga724f89ceda36d1cd4c6756725d7a3a90", null ],
     [ "sce_paf_private_malloc", "group__ScePafUser.html#ga556121bfa3ff35da66bf6824a06c1d6e", null ],
+    [ "sce_paf_memalign", "group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441", null ],
     [ "sce_paf_private_bzero", "group__ScePafUser.html#gaba82d640f1abf4bf8277ecc367b94b5c", null ],
     [ "sce_paf_private_memchr", "group__ScePafUser.html#ga610b2a40c54544921bf4cc2d822722c2", null ],
     [ "sce_paf_private_memcmp", "group__ScePafUser.html#ga632c520cecb3527901ecfcc4aec29ed6", null ],
@@ -12,6 +14,7 @@ var paf_8h =
     [ "sce_paf_private_bcopy", "group__ScePafUser.html#gab47af1f1c4a34c50a5d9d751a5505ca9", null ],
     [ "sce_paf_private_memset", "group__ScePafUser.html#gae4fe5e75081687ea9b1016c5d23c4a05", null ],
     [ "sce_paf_private_snprintf", "group__ScePafUser.html#ga60610d5b831546d322ae68389ec8db1d", null ],
+    [ "sce_paf_private_vsnprintf", "group__ScePafUser.html#ga07284da71d116b6baa11a1f005e5cd92", null ],
     [ "sce_paf_private_strcasecmp", "group__ScePafUser.html#ga60bcb5f76b7bf806fa0cd1c1d1031943", null ],
     [ "sce_paf_private_strchr", "group__ScePafUser.html#gaee87a1b835d325d6e4efbae975e635a6", null ],
     [ "sce_paf_private_strcmp", "group__ScePafUser.html#ga0ff47347d916798a0ec7ef644dbc8551", null ],
