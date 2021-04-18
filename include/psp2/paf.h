@@ -8,6 +8,7 @@
 #define _PSP2_PAF_H_
 
 #include <psp2/types.h>
+#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -15,6 +16,17 @@ extern "C" {
 
 void sce_paf_private_free(void *ptr);
 void *sce_paf_private_malloc(SceSize size);
+
+/**
+ * @brief Alloc memory with align
+ *
+ * @param[in] align  - The align size
+ * @param[in] length - The alloc length
+ *
+ * @return memory pointer or NULL
+ */
+void *sce_paf_memalign(SceSize align, SceSize length);
+
 void *sce_paf_private_bzero(void *ptr, SceSize num);
 void *sce_paf_private_memchr(const void *ptr, int value, SceSize num);
 int sce_paf_private_memcmp(const void *ptr1, const void *ptr2, SceSize num);
@@ -25,6 +37,11 @@ void *sce_paf_private_memmove(void *destination, const void *source, SceSize num
 void *sce_paf_private_bcopy(void *destination, const void *source, SceSize num);
 void *sce_paf_private_memset(void *ptr, int value, SceSize num);
 int sce_paf_private_snprintf(char *s, SceSize n, const char *format, ...);
+
+int sce_paf_private_vsnprintf(char *dst, unsigned int max, const char *fmt, va_list arg);
+
+#define sce_paf_vsnprintf sce_paf_private_vsnprintf
+
 int sce_paf_private_strcasecmp(const char *str1, const char *str2);
 char *sce_paf_private_strchr(const char *str, int character);
 int sce_paf_private_strcmp(const char *str1, const char *str2);
