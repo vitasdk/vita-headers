@@ -149,6 +149,12 @@ typedef enum SceSysmoduleInternalModuleId {
 	SCE_SYSMODULE_INTERNAL_LOCATION_FACTORY           = 0x80000029  //!< Location Factory module
 } SceSysmoduleInternalModuleId;
 
+typedef struct SceSysmoduleOpt {
+	int flags;
+	int *result;
+	int unused[2];
+} SceSysmoduleOpt;
+
 /**
  * Load a module.
  *
@@ -213,7 +219,7 @@ int sceSysmoduleIsLoadedInternal(SceSysmoduleInternalModuleId id);
  *
  * @return 0 on success, <0 otherwise.
  */
-int sceSysmoduleLoadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, void *unk);
+int sceSysmoduleLoadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, const SceSysmoduleOpt *option);
 
 /**
  * Unload an internal module with custom arguments.
@@ -225,7 +231,7 @@ int sceSysmoduleLoadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSi
  *
  * @return 0 on success, <0 otherwise.
  */
-int sceSysmoduleUnloadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, void *unk);
+int sceSysmoduleUnloadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSize args, void *argp, const SceSysmoduleOpt *option);
 
 #ifdef __cplusplus
 }
