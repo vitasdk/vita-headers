@@ -60,7 +60,7 @@ typedef struct SceDeflatePartialInputParam {
 	const void *(* SceDeflateDecompressPartialInputCallback)(struct SceDeflatePartialInputParam* param, uint32_t outputsize);
 } SceDeflatePartialInputParam;
 
-typedef struct {
+typedef struct SceAesContext { // size is 0x3D0(0x10 + 0x1E0 * 2)
 	uint8_t data[976];
 } SceAesContext;
 
