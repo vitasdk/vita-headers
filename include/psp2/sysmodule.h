@@ -212,10 +212,10 @@ int sceSysmoduleIsLoadedInternal(SceSysmoduleInternalModuleId id);
 /**
  * Load an internal module with custom arguments.
  *
- * @param[in] id - Module ID to check.
- * @param[in] args - Size of passed arguments.
- * @param[in] argp - Pointer to arguments to pass.
- * @param[in] unk - Unknown value.
+ * @param[in] id     - Module ID to check.
+ * @param[in] args   - Size of passed arguments.
+ * @param[in] argp   - Pointer to arguments to pass.
+ * @param[in] option - Module load option.
  *
  * @return 0 on success, <0 otherwise.
  */
@@ -224,10 +224,10 @@ int sceSysmoduleLoadModuleInternalWithArg(SceSysmoduleInternalModuleId id, SceSi
 /**
  * Unload an internal module with custom arguments.
  *
- * @param[in] id - Module ID to check.
- * @param[in] args - Size of passed arguments.
- * @param[in] argp - Pointer to arguments to pass.
- * @param[in] unk - Unknown value.
+ * @param[in] id     - Module ID to check.
+ * @param[in] args   - Size of passed arguments.
+ * @param[in] argp   - Pointer to arguments to pass.
+ * @param[in] option - Module load option.
  *
  * @return 0 on success, <0 otherwise.
  */
