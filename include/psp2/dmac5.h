@@ -104,7 +104,7 @@ typedef struct SceDmac5EncdecParam {
 } SceDmac5EncdecParam;
 
 /**
- * @brief Execute Dmac5 command
+ * @brief Execute DMAC5 command
  *
  * @param[inout] param   - The encdec param.
  * @param[in]    command - The dmac5 command. See:SCE_SBL_DMAC5_COMMAND_*
