@@ -94,24 +94,24 @@ extern "C" {
 #define SCE_SBL_DMAC5_COMMAND_AES_192_CMAC         (SCE_SBL_DMAC5_COMMAND_AES_CMAC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
 #define SCE_SBL_DMAC5_COMMAND_AES_256_CMAC         (SCE_SBL_DMAC5_COMMAND_AES_CMAC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
 
-typedef struct SceDmac5EncdecParam {
+typedef struct SceDmac5EncDecParam {
 	const void *src;
 	void       *dst;
 	SceSize     size;
 	const void *key;
 	SceSize     key_bit_size;
 	void       *iv;
-} SceDmac5EncdecParam;
+} SceDmac5EncDecParam;
 
 /**
  * @brief Execute DMAC5 command
  *
  * @param[inout] param   - The encdec param.
- * @param[in]    command - The dmac5 command. See:SCE_SBL_DMAC5_COMMAND_*
+ * @param[in]    command - The DMAC5 command. See:SCE_SBL_DMAC5_COMMAND_*
  *
  * @return 0 on success, else < 0.
  */
-int sceSblDmac5EncDec(SceDmac5EncdecParam *param, int command);
+int sceSblDmac5EncDec(SceDmac5EncDecParam *param, int command);
 
 #ifdef __cplusplus
 }
