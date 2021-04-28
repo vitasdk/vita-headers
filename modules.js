@@ -5,6 +5,7 @@ var modules =
     [ "Audio", "group__Audio.html", "group__Audio" ],
     [ "Dialog", "group__Dialog.html", "group__Dialog" ],
     [ "Filesystem", "group__Filesystem.html", "group__Filesystem" ],
+    [ "SystemFunction", "group__SystemFunction.html", "group__SystemFunction" ],
     [ "Low-level I/O and communications", "group__Lowio.html", "group__Lowio" ],
     [ "Kernel", "group__kernel.html", "group__kernel" ],
     [ "Update", "group__update.html", "group__update" ],

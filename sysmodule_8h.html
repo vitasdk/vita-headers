@@ -73,6 +73,7 @@ $(document).ready(function(){initNavTree('sysmodule_8h.html',''); initResizable(
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -83,6 +84,11 @@ $(document).ready(function(){initNavTree('sysmodule_8h.html',''); initResizable(
 </div>
 <p><a href="sysmodule_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceSysmoduleOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#structSceSysmoduleOpt">SceSysmoduleOpt</a></td></tr>
+<tr class="separator:structSceSysmoduleOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gaf745da7104a5f5de2ce268dd05d6622f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#gaf745da7104a5f5de2ce268dd05d6622f">SceSysmoduleErrorCode</a> { <a class="el" href="group__SceSysmoduleUser.html#ggaf745da7104a5f5de2ce268dd05d6622fa6bce01f74c74e7a3bff9ed96db975734">SCE_SYSMODULE_LOADED</a> = 0
@@ -272,12 +278,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4e9f895ef35ecf418edbfad969b87116"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#ga4e9f895ef35ecf418edbfad969b87116">sceSysmoduleIsLoadedInternal</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id)</td></tr>
 <tr class="memdesc:ga4e9f895ef35ecf418edbfad969b87116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an internal module is loaded.  <a href="group__SceSysmoduleUser.html#ga4e9f895ef35ecf418edbfad969b87116">More...</a><br /></td></tr>
 <tr class="separator:ga4e9f895ef35ecf418edbfad969b87116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga115c0277016868eae89ead2b2237b774"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#ga115c0277016868eae89ead2b2237b774">sceSysmoduleLoadModuleInternalWithArg</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp, void *unk)</td></tr>
-<tr class="memdesc:ga115c0277016868eae89ead2b2237b774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an internal module with custom arguments.  <a href="group__SceSysmoduleUser.html#ga115c0277016868eae89ead2b2237b774">More...</a><br /></td></tr>
-<tr class="separator:ga115c0277016868eae89ead2b2237b774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2f73be5a9cea81bed01db6492f15fdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#gaf2f73be5a9cea81bed01db6492f15fdb">sceSysmoduleUnloadModuleInternalWithArg</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp, void *unk)</td></tr>
-<tr class="memdesc:gaf2f73be5a9cea81bed01db6492f15fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload an internal module with custom arguments.  <a href="group__SceSysmoduleUser.html#gaf2f73be5a9cea81bed01db6492f15fdb">More...</a><br /></td></tr>
-<tr class="separator:gaf2f73be5a9cea81bed01db6492f15fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93b1e31b43f67367d1942c8a8d00a707"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#ga93b1e31b43f67367d1942c8a8d00a707">sceSysmoduleLoadModuleInternalWithArg</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp, const <a class="el" href="group__SceSysmoduleUser.html#structSceSysmoduleOpt">SceSysmoduleOpt</a> *option)</td></tr>
+<tr class="memdesc:ga93b1e31b43f67367d1942c8a8d00a707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an internal module with custom arguments.  <a href="group__SceSysmoduleUser.html#ga93b1e31b43f67367d1942c8a8d00a707">More...</a><br /></td></tr>
+<tr class="separator:ga93b1e31b43f67367d1942c8a8d00a707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c029a6a4cffd85af964c8c2e2a015cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmoduleUser.html#ga8c029a6a4cffd85af964c8c2e2a015cb">sceSysmoduleUnloadModuleInternalWithArg</a> (<a class="el" href="group__SceSysmoduleUser.html#ga083efdadfb15fe959ad144180c49cc7a">SceSysmoduleInternalModuleId</a> id, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp, const <a class="el" href="group__SceSysmoduleUser.html#structSceSysmoduleOpt">SceSysmoduleOpt</a> *option)</td></tr>
+<tr class="memdesc:ga8c029a6a4cffd85af964c8c2e2a015cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload an internal module with custom arguments.  <a href="group__SceSysmoduleUser.html#ga8c029a6a4cffd85af964c8c2e2a015cb">More...</a><br /></td></tr>
+<tr class="separator:ga8c029a6a4cffd85af964c8c2e2a015cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

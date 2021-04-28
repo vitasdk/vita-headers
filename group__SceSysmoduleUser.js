@@ -260,6 +260,6 @@ var group__SceSysmoduleUser =
     [ "sceSysmoduleLoadModuleInternal", "group__SceSysmoduleUser.html#ga91b1d39f3e92ab1ac6b8754cb2d7fd81", null ],
     [ "sceSysmoduleUnloadModuleInternal", "group__SceSysmoduleUser.html#ga050f298fc16c20814383ccf4931b9ad5", null ],
     [ "sceSysmoduleIsLoadedInternal", "group__SceSysmoduleUser.html#ga4e9f895ef35ecf418edbfad969b87116", null ],
-    [ "sceSysmoduleLoadModuleInternalWithArg", "group__SceSysmoduleUser.html#ga115c0277016868eae89ead2b2237b774", null ],
-    [ "sceSysmoduleUnloadModuleInternalWithArg", "group__SceSysmoduleUser.html#gaf2f73be5a9cea81bed01db6492f15fdb", null ]
+    [ "sceSysmoduleLoadModuleInternalWithArg", "group__SceSysmoduleUser.html#ga93b1e31b43f67367d1942c8a8d00a707", null ],
+    [ "sceSysmoduleUnloadModuleInternalWithArg", "group__SceSysmoduleUser.html#ga8c029a6a4cffd85af964c8c2e2a015cb", null ]
 ];

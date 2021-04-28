@@ -19,6 +19,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "ctrl.h", "psp2_2ctrl_8h.html", "psp2_2ctrl_8h" ],
     [ "defs.h", "defs_8h.html", "defs_8h" ],
     [ "display.h", "psp2_2display_8h.html", "psp2_2display_8h" ],
+    [ "dmac5.h", "dmac5_8h.html", "dmac5_8h" ],
     [ "fiber.h", "fiber_8h.html", "fiber_8h" ],
     [ "gxm.h", "gxm_8h.html", "gxm_8h" ],
     [ "gxt.h", "gxt_8h.html", "gxt_8h" ],
