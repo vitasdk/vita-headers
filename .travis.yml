@@ -35,8 +35,11 @@ script:
     - cd $TRAVIS_BUILD_DIR
     - cp -r include/* $VITASDK/arm-vita-eabi/include
     - vita-libs-gen db.yml output
-    - vita-libs-gen db_devkit.yml output
     - cd output
+    - make > /dev/null
+    - cp *_stub.a $VITASDK/arm-vita-eabi/lib
+    - vita-libs-gen db_devkit.yml output_devkit
+    - cd ../output_devkit
     - make > /dev/null
     - cp *_stub.a $VITASDK/arm-vita-eabi/lib
     - cd $TRAVIS_BUILD_DIR
