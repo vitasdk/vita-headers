@@ -5,7 +5,7 @@ function db_build {
 
     cd $TRAVIS_BUILD_DIR
     cp -r include/* $VITASDK/arm-vita-eabi/include
-    vita-libs-gen ${db_file} output
+    vita-libs-gen db/${db_file} output
     cd output
     make > /dev/null
     cp *_stub.a $VITASDK/arm-vita-eabi/lib
