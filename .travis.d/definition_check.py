@@ -146,7 +146,7 @@ if __name__ == '__main__':
 
     files = os.listdir("./db/")
 
-    for i in int(len(files)):
+    for i in range (0, len(files)):
         nids, errors = read_nids(files[i])
         errors += check_header_groups(read_def_groups()) \
             + check_function_nids(nids)
