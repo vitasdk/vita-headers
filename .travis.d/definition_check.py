@@ -134,9 +134,6 @@ def check_function_nids(nids):
                     errors.append('%s: Already defined %s' %
                                   (header_file, fn))
                     continue
-                if not nids.get(fn):
-                    errors.append('%s: Could not find NID %s' %
-                                  (header_file, fn))
                 functions[fn] = 1
     return errors
 
