@@ -59,12 +59,12 @@ def read_def_groups():
             definitions[m.group(1)] = 0
     return definitions
 
-def read_nids():
+def read_nids(db_path):
     errors = []
     user_nids = dict()
     kernel_nids = dict()
     nids = None
-    with open(DB_FILE_PATH, 'r') as d:
+    with open(db_path, 'r') as d:
         SECTION = None
         for line_no, line in enumerate(readlines(d)):
             line = line.strip()
@@ -141,10 +141,15 @@ def check_function_nids(nids):
     return errors
 
 if __name__ == '__main__':
-    nids, errors = read_nids()
-    errors += check_header_groups(read_def_groups()) \
-        + check_function_nids(nids)
-    if len(errors):
-        for e in errors:
-            print(e)
-        sys.exit(1)
+
+    path = "../db/"
+    files = os.listdir(path)
+
+    for i in len(files):
+        nids, errors = read_nids(files[i])
+        errors += check_header_groups(read_def_groups()) \
+            + check_function_nids(nids)
+        if len(errors):
+            for e in errors:
+                print(e)
+            sys.exit(1)
