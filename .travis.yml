@@ -32,16 +32,7 @@ script:
     - rm -rf psp2 psp2kern vitasdk vitasdk.h
     - cd $VITASDK/arm-vita-eabi/lib
     - rm -rf *_stub.a
-    - cd $TRAVIS_BUILD_DIR
-    - cp -r include/* $VITASDK/arm-vita-eabi/include
-    - vita-libs-gen db.yml output
-    - cd output
-    - make > /dev/null
-    - cp *_stub.a $VITASDK/arm-vita-eabi/lib
-    - vita-libs-gen db_devkit.yml output_devkit
-    - cd ../output_devkit
-    - make > /dev/null
-    - cp *_stub.a $VITASDK/arm-vita-eabi/lib
+    - bash $TRAVIS_BUILD_DIR/.travis.d/db_build.sh
     - cd $TRAVIS_BUILD_DIR
     - git clone https://github.com/vitasdk/samples
     - cd samples
