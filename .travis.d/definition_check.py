@@ -142,9 +142,9 @@ def check_function_nids(nids):
 
 if __name__ == '__main__':
 
-    print(os.getcwd())
+    print("cwd:" + os.getcwd())
 
-    files = os.listdir("../db/")
+    files = os.listdir("./db/")
 
     for i in len(files):
         nids, errors = read_nids(files[i])
