@@ -3,7 +3,7 @@ set -e
 DB_FILE_PATH='./db.yml'
 LIBSEP="        \(functions\|variables\):" # name of the yaml block we want to check
 IFS=@
-dir='./db/'
+dir='./db/*'
 for file in $dir; do
   echo $file
 
