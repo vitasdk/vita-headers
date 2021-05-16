@@ -1,0 +1,20 @@
+version: 2
+firmware: 3.60
+modules:
+  SceDeci4pUserp:
+    nid: 0xE24F5181
+    libraries:
+      SceDeci4pUserp:
+        kernel: false
+        nid: 0x797E39C0
+        functions:
+          sceKernelDeci4pClose: 0x63B0C50F
+          sceKernelDeci4pCreateHostProcess: 0x4719A799
+          sceKernelDeci4pCreateHostProcessAndWait: 0x6A09F63A
+          sceKernelDeci4pDisableWatchpoint: 0x5A4CDF97
+          sceKernelDeci4pEnableWatchpoint: 0x3BC66BD8
+          sceKernelDeci4pIsProcessAttached: 0xC4E1D86D
+          sceKernelDeci4pOpen: 0x28578FE8
+          sceKernelDeci4pRead: 0x971E1C66
+          sceKernelDeci4pRegisterCallback: 0x73371F35
+          sceKernelDeci4pWrite: 0xCDA3AAAC
