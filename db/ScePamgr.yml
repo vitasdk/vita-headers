@@ -1,0 +1,41 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePamgr:
+    nid: 0xA6771119
+    libraries:
+      ScePamgr:
+        kernel: false
+        nid: 0xAB606F3F
+        functions:
+          _sceKernelPaAddArmTraceByKey: 0x2CB10FD0
+          _sceKernelPaAddBusTraceByKey: 0x0F05045B
+          _sceKernelPaAddCounterTraceByKey: 0x5F050AAF
+          _sceKernelPaAddGpuTraceByKey: 0x174F2500
+          _sceKernelPaGetGpuSampledData: 0x39096D8F
+          _sceKernelPaSetupTraceBufferByKey: 0x7BD1B4A3
+          sceKernelPaGetIoBaseAddress: 0xA4EE9025
+          sceKernelPaGetSharedKey: 0x30043A1F
+          sceKernelPaGetTimebaseFrequency: 0xCAEE6AF2
+          sceKernelPaGetTimebaseValue: 0x3FD2C5F5
+          sceKernelPaGetTraceBufferSize: 0x0DD84F31
+          sceKernelPaGetTraceBufferStatus: 0x78B19CDE
+          sceKernelPaGetWritePointer: 0xCA0D64C8
+          sceKernelPaInsertBookmark: 0x53B16517
+          sceKernelPaRegister: 0x822E0719
+          sceKernelPaRegisterShared: 0x556105AA
+          sceKernelPaRemoveArmTraceByKey: 0xDD4D0A27
+          sceKernelPaRemoveBusTraceByKey: 0xBFE73BEB
+          sceKernelPaRemoveCounterTraceByKey: 0x1FDDEBF0
+          sceKernelPaRemoveGpuTraceByKey: 0x300258EE
+          sceKernelPaSetBookmarkChannelEnableByKey: 0xF8D02FF4
+          sceKernelPaStartByKey: 0x28D43BE5
+          sceKernelPaStopByKey: 0x8252E671
+          sceKernelPaUnregister: 0x2DE1E55C
+          sceKernelPerfArmPmonClose: 0xC9F72613
+          sceKernelPerfArmPmonOpen: 0x7F5A960E
+          sceKernelPerfArmPmonReset: 0x7B9CF258
+          sceKernelPerfArmPmonSelectEvent: 0x9E55649C
+          sceKernelPerfArmPmonSetCounterValue: 0xFC954C07
+          sceKernelPerfArmPmonStart: 0xAAE516BC
+          sceKernelPerfArmPmonStop: 0xA42BDD17

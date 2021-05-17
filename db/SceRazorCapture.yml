@@ -1,0 +1,20 @@
+version: 2
+firmware: 3.60
+modules:
+  SceRazorCapture:
+    nid: 0x00000099
+    libraries:
+      SceRazorCapture:
+        kernel: false
+        nid: 0x7B2A3F18
+        functions:
+          sceRazorCaptureIsInProgress: 0x911E0AA0
+          sceRazorCaptureSetTrigger: 0xE916B538
+          sceRazorCaptureSetTriggerNextFrame: 0x3D4B7E68
+          sceRazorGpuCaptureEnableSalvage: 0xDFBDCC4C
+          sceRazorGpuCaptureIsInProgress: 0xD2358BFB
+          sceRazorGpuCaptureSetCaptureAllMemory: 0x6A09822D
+          sceRazorGpuCaptureSetCaptureBeforeKick: 0x8EE74EB7
+          sceRazorGpuCaptureSetTrigger: 0x472492DA
+          sceRazorGpuCaptureSetTriggerNextFrame: 0x9DAA7E9C
+          sceRazorGpuCaptureStartSalvageMode: 0x3F0913CF

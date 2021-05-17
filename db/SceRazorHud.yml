@@ -1,0 +1,27 @@
+version: 2
+firmware: 3.60
+modules:
+  SceRazorHud:
+    nid: 0x0000009B
+    libraries:
+      SceRazorHud:
+        kernel: false
+        nid: 0x250371C2
+        functions:
+          sceRazorCpuHudSetUserMarkerTraceBuffer: 0xECE363EF
+          sceRazorCpuHudUserMarkerEnableAllThreads: 0xFD290A17
+          sceRazorCpuHudUserMarkerEnableThreadId: 0x6DFBAC39
+          sceRazorGpuLiveSetBuffer: 0x29CEFDAA
+          sceRazorGpuLiveSetMetricsGroup: 0x6FD64DE6
+          sceRazorGpuLiveStart: 0xB46382FC
+          sceRazorGpuLiveStop: 0xBD360A69
+          sceRazorGpuLiveTriggerDebugDump: 0xBCB790E9
+          sceRazorGpuPerfGetMode: 0xE3709B44
+          sceRazorGpuTraceRingBufferSize: 0x73F83357
+          sceRazorGpuTraceRingBufferUsed: 0x7A51F1A0
+          sceRazorGpuTraceSetFilename: 0xF867EFE1
+          sceRazorGpuTraceSetMetricsGroup: 0xBFEADB77
+          sceRazorGpuTraceTrigger: 0x528AA4C7
+          sceRazorHudReloadSettings: 0xDFD00BAE
+          sceRazorHudSetDisplayEnabled: 0x77F2F606
+          sceRazorHudSetDisplayFrameCount: 0xCC390860

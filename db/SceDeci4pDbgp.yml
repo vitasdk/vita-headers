@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceDeci4pDbgp:
+    nid: 0xC242A649
+    libraries:
+      SceDeci4pDbgpForDriver:
+        kernel: true
+        nid: 0xFBD04C34
+        functions:
+          ksceDbgpGetDTraceBreakpointHandler: 0x01D7C7BF
+          ksceDbgpGetDTraceUsdtHandler: 0x9CD5EE8C
+          ksceDbgpSetDTraceBreakpointHandler: 0x0509AC51
+          ksceDbgpSetDTraceUsdtHandler: 0x7251789E
