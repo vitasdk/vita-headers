@@ -43,6 +43,8 @@
 #include <psp2/pspnet_adhocctl.h>
 #include <psp2/pss.h>
 #include <psp2/pvf.h>
+#include <psp2/razor_capture.h>
+#include <psp2/razor_hud.h>
 #include <psp2/registrymgr.h>
 #include <psp2/rtc.h>
 #include <psp2/screenshot.h>
