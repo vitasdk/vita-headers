@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"group__SceImeUser.html#ga405b0cd7ee0573b564ebf792feeae06f":[1,3,3,0,7],
+"group__SceImeUser.html#ga405b0cd7ee0573b564ebf792feeae06f":[4,0,1,0,24,7],
 "group__SceImeUser.html#ga4919ad1b97e617a7309029933914969b":[1,3,3,0,0],
 "group__SceImeUser.html#ga4919ad1b97e617a7309029933914969b":[4,0,1,0,24,0],
 "group__SceImeUser.html#ga60ccbbc0e1af9f6261f8384f08f31aaa":[1,3,3,0,6],
@@ -141,8 +143,8 @@ var NAVTREEINDEX32 =
 "group__SceIncomingDialogUser.html#ga0fc01095861515e8992b0361e64103b4":[1,3,1,0,11],
 "group__SceIncomingDialogUser.html#ga29eae5b6c535a4c81063cc168f41508e":[4,0,1,0,25,2],
 "group__SceIncomingDialogUser.html#ga29eae5b6c535a4c81063cc168f41508e":[1,3,1,0,10],
-"group__SceIncomingDialogUser.html#ga4677c17ec75afbd97c3843cd78d1d53b":[4,0,1,0,25,0],
 "group__SceIncomingDialogUser.html#ga4677c17ec75afbd97c3843cd78d1d53b":[1,3,1,0,0],
+"group__SceIncomingDialogUser.html#ga4677c17ec75afbd97c3843cd78d1d53b":[4,0,1,0,25,0],
 "group__SceIncomingDialogUser.html#ga9017328db2ccfaf684594a13449260b4":[4,0,1,0,25,1],
 "group__SceIncomingDialogUser.html#ga9017328db2ccfaf684594a13449260b4":[1,3,1,0,1],
 "group__SceIncomingDialogUser.html#gaa75057ecbd43f5aaa7c4bae893356d11":[4,0,1,0,25,7],
@@ -165,8 +167,8 @@ var NAVTREEINDEX32 =
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba99183fc089d73ca9f4dabc83e69cd485":[4,0,1,0,25,0,1],
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba99183fc089d73ca9f4dabc83e69cd485":[1,3,1,0,0,1],
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba99183fc089d73ca9f4dabc83e69cd485":[1,3,1,0,3],
-"group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53baa6d455317bba481bfc341c611ba7be5f":[4,0,1,0,25,0,3],
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53baa6d455317bba481bfc341c611ba7be5f":[1,3,1,0,0,3],
+"group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53baa6d455317bba481bfc341c611ba7be5f":[4,0,1,0,25,0,3],
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53baa6d455317bba481bfc341c611ba7be5f":[1,3,1,0,5],
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53bab8ec80c86f9239a04e008e1d809e378b":[4,0,1,0,25,0,5],
 "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53bab8ec80c86f9239a04e008e1d809e378b":[1,3,1,0,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "group__SceIofilemgrKernel.html#gafd20ef3906fc99765a6b4c28a1a4ada2":[4,0,1,1,2,7,7],
 "group__SceJpeg.html":[1,0,7],
 "group__SceJpegArm.html":[1,0,8],
-"group__SceJpegArmUser.html":[1,0,8,0],
-"group__SceJpegArmUser.html#ga6cc9d79ed755c89a6e8bbb083801cbd6":[1,0,8,0,2],
-"group__SceJpegArmUser.html#ga6cc9d79ed755c89a6e8bbb083801cbd6":[4,0,1,0,27,1]
+"group__SceJpegArmUser.html":[1,0,8,0]
 };

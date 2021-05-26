@@ -51,6 +51,8 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "pspnet_adhocctl.h", "pspnet__adhocctl_8h.html", "pspnet__adhocctl_8h" ],
     [ "pss.h", "pss_8h.html", "pss_8h" ],
     [ "pvf.h", "pvf_8h.html", "pvf_8h" ],
+    [ "razor_capture.h", "razor__capture_8h.html", "razor__capture_8h" ],
+    [ "razor_hud.h", "razor__hud_8h.html", "razor__hud_8h" ],
     [ "registrymgr.h", "psp2_2registrymgr_8h.html", "psp2_2registrymgr_8h" ],
     [ "rtc.h", "psp2_2rtc_8h.html", "psp2_2rtc_8h" ],
     [ "sblacmgr.h", "psp2_2sblacmgr_8h.html", "psp2_2sblacmgr_8h" ],
