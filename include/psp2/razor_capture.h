@@ -19,6 +19,13 @@ extern "C" {
 */
 void sceRazorGpuCaptureSetTriggerNextFrame(const char *filename);
 
+/**
+ * Enables collecting of GPU captures when a gpucrash happens
+ *
+ * @param[in] filename - Filename of the file where to save capture results
+*/
+void sceRazorGpuCaptureEnableSalvage(const char *filename);
+
 #ifdef __cplusplus
 }
 #endif
