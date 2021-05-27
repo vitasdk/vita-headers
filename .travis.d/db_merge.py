@@ -1,7 +1,13 @@
+
+import pathlib
+import glob
 import os
 
 if __name__ == '__main__':
-    files = os.listdir(os.path.join(os.getcwd(), "db"))
+
+    curr_path = pathlib.Path(os.getcwd())
+
+    files = glob.glob(str(curr_path.joinpath('db', '*.yml')))
 
     db  = ""
     db += "version: 2\n"
@@ -19,7 +25,7 @@ if __name__ == '__main__':
 
         cache_char = ""
 
-        f = open(os.path.join(os.getcwd(), "db", file_list[i]), 'r')
+        f = open(file_list[i], 'r')
         for line in f:
             if line[:2] == "  ":
                 db += line
@@ -29,6 +35,6 @@ if __name__ == '__main__':
             db += "\n"
         f.close()
 
-    f = open(os.path.join(os.getcwd(), "db.yml"), 'w')
+    f = open(curr_path.joinpath('db.yml'), 'w')
     f.write(db)
     f.close()
