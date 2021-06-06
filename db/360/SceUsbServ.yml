@@ -1,0 +1,12 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUsbServ:
+    nid: 0xAE54F579
+    libraries:
+      SceUsbServ:
+        kernel: false
+        nid: 0xDA3C0EF0
+        functions:
+          sceUsbServAccessoryActivate: 0xB33AA2EB
+          sceUsbServAccessoryDeactivate: 0x154246A9

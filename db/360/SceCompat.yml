@@ -1,0 +1,44 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCompat:
+    nid: 0x8F2D0378
+    libraries:
+      SceCompat:
+        kernel: false
+        nid: 0x0F35909D
+        functions:
+          sceCompatAllocCdramWithHole: 0xA5039FFA
+          sceCompatAvailableColorSpaceSetting: 0x456226DD
+          sceCompatCache: 0x6777390E
+          sceCompatCheckPocketStation: 0x96FC2A87
+          sceCompatDatRead: 0xCBE73EBE
+          sceCompatFrameBufferInit: 0xBC0E2B4C
+          sceCompatGetCurrentSecureTick: 0xA073EBEE
+          sceCompatGetDevInf: 0x138006A8
+          sceCompatGetPeripheralState: 0x176B2906
+          sceCompatGetPrimaryHead: 0xDC9EE33A
+          sceCompatGetPspSystemSoftwareVersion: 0xB113DCC0
+          sceCompatGetStatus: 0xD2E3370E
+          sceCompatGetTitleList: 0x99F13E04
+          sceCompatGetUpdateState: 0x0CDE9EC5
+          sceCompatIdStorageLookup: 0x94AAA245
+          sceCompatInitEx: 0xE97C1B5F
+          sceCompatInterrupt: 0xD6AA36DD
+          sceCompatIsPocketStationTitle: 0x7DCFBCCE
+          sceCompatLCDCSync: 0xBD177787
+          sceCompatReadShared32: 0x73AA4871
+          sceCompatReturnValueEx: 0xCC02A9FF
+          sceCompatSetDisplayConfig: 0x32BA3DCF
+          sceCompatSetRif: 0xD8B69F23
+          sceCompatSetSuspendSema: 0xDD30239E
+          sceCompatSetUpdateState: 0x8A44206F
+          sceCompatStart: 0x8CA1632D
+          sceCompatStop: 0xFCE2422F
+          sceCompatSuspendResume: 0x324112CA
+          sceCompatUninit: 0xEF929397
+          sceCompatWaitAndGetRequest: 0x8176C238
+          sceCompatWaitIntr: 0xC1E14CF5
+          sceCompatWaitSpecialRequest: 0x714F7ED6
+          sceCompatWriteShared32: 0x1CD51530
+          sceCompatWriteSharedCtrl: 0x2306FFED

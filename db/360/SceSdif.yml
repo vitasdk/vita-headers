@@ -1,0 +1,23 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSdif:
+    nid: 0x2E7C52F7
+    libraries:
+      SceSdifForDriver:
+        kernel: true
+        nid: 0x96D306FA
+        functions:
+          ksceSdifGetCID: 0x23A4EF01
+          ksceSdifGetCardInsertState1: 0x36A2B01B
+          ksceSdifGetCardInsertState2: 0xFD9E5CFA
+          ksceSdifGetSdContextGlobal: 0xDC8F52F8
+          ksceSdifGetSdContextPartValidateMmc: 0x6A71987F
+          ksceSdifGetSdContextPartValidateSd: 0xB9EA5B1E
+          ksceSdifGetSdContextPartValidateSdio: 0x6A8235FC
+          ksceSdifInitializeMmcDevice: 0x22C82E79
+          ksceSdifInitializeSdDevice: 0xC1271539
+          ksceSdifReadSectorMmc: 0x6F8D529B
+          ksceSdifReadSectorSd: 0xB9593652
+          ksceSdifWriteSectorMmc: 0x175543D2
+          ksceSdifWriteSectorSd: 0xE0781171

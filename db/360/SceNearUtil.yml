@@ -1,0 +1,39 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNearUtil:
+    nid: 0xFE577596
+    libraries:
+      SceNearUtil:
+        kernel: false
+        nid: 0x560D1608
+        functions:
+          sceNearCloseDiscoveredGiftImage: 0x88A68D20
+          sceNearCloseReceivedGiftData: 0x2F35C196
+          sceNearConvertDiscoveredGiftParam: 0x80D6C552
+          sceNearDeleteDiscoveredGift: 0x8CBEB2DA
+          sceNearDeleteGift: 0x52021026
+          sceNearFinalize: 0xFF3BC581
+          sceNearFinalizeAndLaunchNearApp: 0x3F3F6D92
+          sceNearGetDiscoveredGiftInfo: 0x773ABEA9
+          sceNearGetDiscoveredGiftSender: 0xEFE6F060
+          sceNearGetDiscoveredGiftStatus: 0xA64D9D38
+          sceNearGetDiscoveredGifts: 0xDE6F0859
+          sceNearGetGift: 0xDB8BAC35
+          sceNearGetGiftStatus: 0x8F3CC01C
+          sceNearGetLastNeighborFoundDateTime: 0xD393578E
+          sceNearGetMyStatus: 0xAEF3022A
+          sceNearGetNeighbors: 0xAD264F5F
+          sceNearGetNewNeighbors: 0x6C2E610F
+          sceNearGetRecentNeighbors: 0xE75A5A9B
+          sceNearIgnoreDiscoveredGift: 0x360D4A19
+          sceNearInitialize: 0xBBCA5813
+          sceNearLaunchNearAppForDownload: 0xB22CB01D
+          sceNearLaunchNearAppForUpdate: 0xF3398774
+          sceNearOpenDiscoveredGiftImage: 0xF8C15008
+          sceNearOpenReceivedGiftData: 0x06807CA3
+          sceNearReadDiscoveredGiftImage: 0x2364D6BD
+          sceNearReadReceivedGiftData: 0xB14145DD
+          sceNearRefresh: 0x2ED36EE2
+          sceNearSetGift: 0x146BE236
+          sceNearSetGift2: 0x4CCE6A14

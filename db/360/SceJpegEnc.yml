@@ -1,0 +1,20 @@
+version: 2
+firmware: 3.60
+modules:
+  SceJpegEnc:
+    nid: 0x00000046
+    libraries:
+      SceJpegEncUser:
+        kernel: false
+        nid: 0x3748BFD3
+        functions:
+          sceJpegEncoderCsc: 0x824A7D4F
+          sceJpegEncoderEncode: 0xC60DE94C
+          sceJpegEncoderEnd: 0xC87AA849
+          sceJpegEncoderGetContextSize: 0x2B55844D
+          sceJpegEncoderInit: 0x88DA92B4
+          sceJpegEncoderInitWithParam: 0x2E8FE45D
+          sceJpegEncoderSetCompressionRatio: 0xB2B828EC
+          sceJpegEncoderSetHeaderMode: 0x2F58B12C
+          sceJpegEncoderSetOutputAddr: 0x25D52D97
+          sceJpegEncoderSetValidRegion: 0x9511F3BC

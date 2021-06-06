@@ -1,0 +1,72 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUlt:
+    nid: 0xDC2996DB
+    libraries:
+      SceUlt:
+        kernel: false
+        nid: 0x220668A5
+        functions:
+          _sceUltConditionVariableCreate: 0xD76A156C
+          _sceUltConditionVariableOptParamInitialize: 0x0603FCC1
+          _sceUltMutexCreate: 0x5AFEC7A1
+          _sceUltMutexOptParamInitialize: 0x24D87E05
+          _sceUltQueueCreate: 0x14DA1BB4
+          _sceUltQueueDataResourcePoolCreate: 0x40856827
+          _sceUltQueueDataResourcePoolOptParamInitialize: 0x8A4F88A2
+          _sceUltQueueOptParamInitialize: 0xF7A83023
+          _sceUltReaderWriterLockCreate: 0x2FB0EB32
+          _sceUltReaderWriterLockOptParamInitialize: 0xD8334A1F
+          _sceUltSemaphoreCreate: 0xDD59562C
+          _sceUltSemaphoreOptParamInitialize: 0x8E31B9FE
+          _sceUltUlthreadCreate: 0xB1290375
+          _sceUltUlthreadOptParamInitialize: 0x7F373376
+          _sceUltUlthreadRuntimeCreate: 0x86DDA3AE
+          _sceUltUlthreadRuntimeOptParamInitialize: 0x8486DDE6
+          _sceUltWaitingQueueResourcePoolCreate: 0x62F9493E
+          _sceUltWaitingQueueResourcePoolOptParamInitialize: 0xEF094E35
+          sceUltConditionVariableDestroy: 0x53420ED2
+          sceUltConditionVariableSignal: 0x9FE7CB9F
+          sceUltConditionVariableSignalAll: 0xEBB6FC1E
+          sceUltConditionVariableWait: 0x2CD0F57C
+          sceUltGetConditionVariableInfo: 0xC7AA4779
+          sceUltGetMutexInfo: 0x58D8DDE6
+          sceUltGetQueueDataResourcePoolInfo: 0x750E7962
+          sceUltGetQueueInfo: 0x1470318D
+          sceUltGetReaderWriterLockInfo: 0x10B3FB76
+          sceUltGetSemaphoreInfo: 0x25FE84F3
+          sceUltGetUlthreadInfo: 0xB5895640
+          sceUltGetUlthreadRuntimeInfo: 0x4F6A7DA6
+          sceUltGetWaitingQueueResourcePoolInfo: 0x04DC59F2
+          sceUltMutexDestroy: 0xEEBD9052
+          sceUltMutexLock: 0x001EAC8A
+          sceUltMutexTryLock: 0xE5936A69
+          sceUltMutexUnlock: 0x897C9097
+          sceUltQueueDataResourcePoolDestroy: 0x2B8D33F1
+          sceUltQueueDataResourcePoolGetWorkAreaSize: 0xECDA7FEE
+          sceUltQueueDestroy: 0xF37862DE
+          sceUltQueuePop: 0x1AD58A53
+          sceUltQueuePush: 0xA7E78FF9
+          sceUltQueueTryPop: 0x2A1A8EA6
+          sceUltQueueTryPush: 0x6D356B29
+          sceUltReaderWriterLockDestroy: 0xB1FEB79B
+          sceUltReaderWriterLockLockRead: 0x9AD07630
+          sceUltReaderWriterLockLockWrite: 0xF5F63E2C
+          sceUltReaderWriterLockTryLockRead: 0x2629C055
+          sceUltReaderWriterLockTryLockWrite: 0x944FB222
+          sceUltReaderWriterLockUnlockRead: 0x218D4743
+          sceUltReaderWriterLockUnlockWrite: 0x2A5741F5
+          sceUltSemaphoreAcquire: 0xF220D3AE
+          sceUltSemaphoreDestroy: 0x8EC57420
+          sceUltSemaphoreRelease: 0x65376E2D
+          sceUltSemaphoreTryAcquire: 0xAF15606D
+          sceUltUlthreadExit: 0x1E401DF8
+          sceUltUlthreadGetSelf: 0xA798C5D7
+          sceUltUlthreadJoin: 0x63483381
+          sceUltUlthreadRuntimeDestroy: 0x4E9A745C
+          sceUltUlthreadRuntimeGetWorkAreaSize: 0x5435C586
+          sceUltUlthreadTryJoin: 0xB4CF88AC
+          sceUltUlthreadYield: 0xCAD57BAD
+          sceUltWaitingQueueResourcePoolDestroy: 0xC9E96714
+          sceUltWaitingQueueResourcePoolGetWorkAreaSize: 0x644DA029

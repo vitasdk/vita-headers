@@ -1,0 +1,13 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLocationExtension:
+    nid: 0x0000005B
+    libraries:
+      SceLibLocationExtension:
+        kernel: false
+        nid: 0x2ECC3C56
+        functions:
+          sceLocationCancelQueryLocationWifiHistory: 0x46D2F044
+          sceLocationGetLocationWifiHistory: 0x82DE9BF8
+          sceLocationQueryLocationWifiHistory: 0x277DA915

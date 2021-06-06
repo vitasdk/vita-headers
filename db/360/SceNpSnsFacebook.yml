@@ -1,0 +1,17 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpSnsFacebook:
+    nid: 0x723E758D
+    libraries:
+      SceNpSnsFacebook:
+        kernel: false
+        nid: 0x1EF501B8
+        functions:
+          sceNpSnsFacebookAbortRequest: 0x32FB2721
+          sceNpSnsFacebookCreateRequest: 0x9CF1BC76
+          sceNpSnsFacebookDeleteRequest: 0xA537FF90
+          sceNpSnsFacebookGetAccessToken: 0x9A87EEE9
+          sceNpSnsFacebookGetLongAccessToken: 0xA3C9041D
+          sceNpSnsFacebookInit: 0x80557AA0
+          sceNpSnsFacebookTerm: 0xA71E6847

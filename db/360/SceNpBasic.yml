@@ -1,0 +1,39 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpBasic:
+    nid: 0x52A291CE
+    libraries:
+      SceNpBasic:
+        kernel: false
+        nid: 0x605BA760
+        functions:
+          sceNpBasicCheckCallback: 0x20146AEC
+          sceNpBasicCheckIfPlayerIsBlocked: 0xF51545D8
+          sceNpBasicGetBlockListEntries: 0x1211AE8E
+          sceNpBasicGetBlockListEntryCount: 0x407E1E6F
+          sceNpBasicGetFriendContextState: 0x9A9E2021
+          sceNpBasicGetFriendListEntries: 0xFF07E787
+          sceNpBasicGetFriendListEntryCount: 0xDF41F308
+          sceNpBasicGetFriendOnlineStatus: 0x5183A4B5
+          sceNpBasicGetFriendRequestEntries: 0x91BF63CB
+          sceNpBasicGetFriendRequestEntryCount: 0xFE98E45A
+          sceNpBasicGetGameJoiningPresence: 0x863249CB
+          sceNpBasicGetGamePresenceOfFriend: 0xEF8A91BC
+          sceNpBasicGetPlaySessionLog: 0x364531A8
+          sceNpBasicGetPlaySessionLogSize: 0xFB0F7FDF
+          sceNpBasicGetRequestedFriendRequestEntries: 0x3700E00C
+          sceNpBasicGetRequestedFriendRequestEntryCount: 0xB9041420
+          sceNpBasicInit: 0xEFB91A99
+          sceNpBasicJoinGameAckResponseSend: 0x8C90CC09
+          sceNpBasicRecordPlaySessionLog: 0x3B0A7F47
+          sceNpBasicRegisterHandler: 0x26E6E048
+          sceNpBasicRegisterInGameDataMessageHandler: 0x3ADE3628
+          sceNpBasicRegisterJoinGameAckHandler: 0xE02A445C
+          sceNpBasicSendInGameDataMessage: 0x7A5020A5
+          sceNpBasicSetInGamePresence: 0x51D75562
+          sceNpBasicTerm: 0x389BCB3B
+          sceNpBasicUnregisterHandler: 0x050AE072
+          sceNpBasicUnregisterInGameDataMessageHandler: 0x363FF161
+          sceNpBasicUnregisterJoinGameAckHandler: 0x2A764628
+          sceNpBasicUnsetInGamePresence: 0xD20C2370

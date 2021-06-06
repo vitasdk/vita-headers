@@ -1,0 +1,70 @@
+version: 2
+firmware: 3.60
+modules:
+  SceHid:
+    nid: 0x76B8FA74
+    libraries:
+      SceHid:
+        kernel: false
+        nid: 0xE23FAD62
+        functions:
+          sceHidConsumerControlEnumerate: 0x160B334A
+          sceHidConsumerControlRead: 0x55F64676
+          sceHidConsumerControlRegisterEnumHintCallback: 0xC54BDDB1
+          sceHidConsumerControlRegisterReadHintCallback: 0x0D964502
+          sceHidConsumerControlUnregisterEnumHintCallback: 0x5D836BC5
+          sceHidConsumerControlUnregisterReadHintCallback: 0xB9E89914
+          sceHidControllerEnumerate: 0x983AF9E8
+          sceHidControllerRead: 0x792C1505
+          sceHidControllerRegisterEnumHintCallback: 0x1E9B25E0
+          sceHidControllerRegisterReadHintCallback: 0xBE5992CA
+          sceHidControllerUnregisterEnumHintCallback: 0x7E52ACF1
+          sceHidControllerUnregisterReadHintCallback: 0x83B7B1D5
+          sceHidKeyboardClear: 0x67C01C34
+          sceHidKeyboardEnumerate: 0x34BDFACE
+          sceHidKeyboardGetIntercept: 0xCDA9D24C
+          sceHidKeyboardPeek: 0x91F5D4BE
+          sceHidKeyboardRead: 0x224A8AD8
+          sceHidKeyboardRegisterEnumHintCallback: 0x743A066F
+          sceHidKeyboardRegisterReadHintCallback: 0x1C740A7A
+          sceHidKeyboardSetIntercept: 0x5D727742
+          sceHidKeyboardUnregisterEnumHintCallback: 0x8068D61E
+          sceHidKeyboardUnregisterReadHintCallback: 0xF73C5FBA
+          sceHidMouseEnumerate: 0x2A0D2F54
+          sceHidMouseRead: 0xBDECBDC0
+          sceHidMouseRegisterEnumHintCallback: 0xC9E35B47
+          sceHidMouseRegisterReadHintCallback: 0x90C5CB0A
+          sceHidMouseUnregisterEnumHintCallback: 0x3E005E5B
+          sceHidMouseUnregisterReadHintCallback: 0xAC591B15
+      SceHidForDriver:
+        kernel: true
+        nid: 0xB6000991
+        functions:
+          ksceHidConsumerControlEnumerate: 0xA60E34F7
+          ksceHidConsumerControlRead: 0x88F3ECF1
+          ksceHidConsumerControlRegisterEnumHintCallback: 0x7F444D9C
+          ksceHidConsumerControlRegisterReadHintCallback: 0x710B353C
+          ksceHidConsumerControlUnregisterEnumHintCallback: 0x6FFC9302
+          ksceHidConsumerControlUnregisterReadHintCallback: 0x3EC4E469
+          ksceHidControllerEnumerate: 0x480D225F
+          ksceHidControllerRead: 0xF7470359
+          ksceHidControllerRegisterEnumHintCallback: 0x8DE66028
+          ksceHidControllerRegisterReadHintCallback: 0xD658B068
+          ksceHidControllerUnregisterEnumHintCallback: 0xFC1C743A
+          ksceHidControllerUnregisterReadHintCallback: 0x42B43C21
+          ksceHidKeyboardClear: 0x8CB405AE
+          ksceHidKeyboardEnumerate: 0x270FAB21
+          ksceHidKeyboardGetIntercept: 0x18DE9BB0
+          ksceHidKeyboardPeek: 0x1BE424FE
+          ksceHidKeyboardRead: 0x4BC07107
+          ksceHidKeyboardRegisterEnumHintCallback: 0x21A23FCD
+          ksceHidKeyboardRegisterReadHintCallback: 0xB0B22694
+          ksceHidKeyboardSetIntercept: 0x754E48DF
+          ksceHidKeyboardUnregisterEnumHintCallback: 0x69DEE02F
+          ksceHidKeyboardUnregisterReadHintCallback: 0x050351F2
+          ksceHidMouseEnumerate: 0xA26B1E1C
+          ksceHidMouseRead: 0xF655462B
+          ksceHidMouseRegisterEnumHintCallback: 0x141CA100
+          ksceHidMouseRegisterReadHintCallback: 0x41690428
+          ksceHidMouseUnregisterEnumHintCallback: 0x9AFBB275
+          ksceHidMouseUnregisterReadHintCallback: 0x63776265

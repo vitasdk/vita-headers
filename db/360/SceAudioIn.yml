@@ -1,0 +1,22 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAudioIn:
+    nid: 0x3DFB6F18
+    libraries:
+      SceAudioIn:
+        kernel: false
+        nid: 0xF8DC61A3
+        functions:
+          sceAudioInGetAdopt: 0x566AC433
+          sceAudioInGetInput: 0x08105392
+          sceAudioInGetMicGain: 0x86118097
+          sceAudioInGetStatus: 0x2F940377
+          sceAudioInInput: 0x638ADD2D
+          sceAudioInInputWithInputDeviceState: 0x343E8251
+          sceAudioInOpenPort: 0x39B50DC1
+          sceAudioInOpenPortForDiag: 0xC6962E84
+          sceAudioInReleasePort: 0x3A61B8C4
+          sceAudioInSelectInput: 0xA0EB852F
+          sceAudioInSetMicGain: 0x0F34DD73
+          sceAudioInSetMute: 0x1DFE7698

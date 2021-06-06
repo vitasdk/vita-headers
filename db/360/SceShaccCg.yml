@@ -1,0 +1,15 @@
+version: 2
+firmware: 3.60
+modules:
+  SceShaccCg:
+    nid: 0xB3B90A35
+    libraries:
+      SceShaccCg:
+        kernel: false
+        nid: 0xA05BBEBB
+        functions:
+          sceShaccCgCompileProgram: 0x66814F35
+          sceShaccCgDestroyCompileOutput: 0xAA82EF0C
+          sceShaccCgInitializeCallbackList: 0xA8C2C1C8
+          sceShaccCgInitializeCompileOptions: 0x3B58AFA0
+          sceShaccCgSetDefaultAllocator: 0x6F01D573

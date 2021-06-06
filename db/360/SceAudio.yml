@@ -1,0 +1,26 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAudio:
+    nid: 0x0DA7714A
+    libraries:
+      SceAudio:
+        kernel: false
+        nid: 0x438BB957
+        functions:
+          sceAudioOutGetAdopt: 0x12FB1767
+          sceAudioOutGetConfig: 0x9C8EDAEA
+          sceAudioOutGetPortVolume_forUser: 0xFF635DA5
+          sceAudioOutGetRestSample: 0x9A5370C4
+          sceAudioOutOpenExtPort: 0x6184B939
+          sceAudioOutOpenPort: 0x5BC341E4
+          sceAudioOutOutput: 0x02DB3F5F
+          sceAudioOutReleasePort: 0x69E2E6B5
+          sceAudioOutSetAdoptMode: 0xDCC90EDB
+          sceAudioOutSetAdopt_forUser: 0x26C82AF2
+          sceAudioOutSetAlcMode: 0x940CE469
+          sceAudioOutSetCompress: 0x3601D375
+          sceAudioOutSetConfig: 0xB8BA0D07
+          sceAudioOutSetEffectType: 0xB41FACCE
+          sceAudioOutSetPortVolume_forUser: 0x65840F3D
+          sceAudioOutSetVolume: 0x64167F11

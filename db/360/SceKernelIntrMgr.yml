@@ -1,0 +1,40 @@
+version: 2
+firmware: 3.60
+modules:
+  SceKernelIntrMgr:
+    nid: 0x73B1F972
+    libraries:
+      SceIntrmgrForDriver:
+        kernel: true
+        nid: 0x9DF04041
+        functions:
+          ksceKernelClearIntrPending: 0x4DC48A01
+          ksceKernelDisableSubIntr: 0x259C6D9E
+          ksceKernelEnableSubIntr: 0x901E41D8
+          ksceKernelGetIntrMasked: 0x6EC07C56
+          ksceKernelGetIntrPriority: 0xE427D050
+          ksceKernelGetIntrTarget: 0x353CFAAE
+          ksceKernelIsIntrAllowedInCurrentContext: 0x182EE3E3
+          ksceKernelIsIntrPending: 0xA269003D
+          ksceKernelIsSubInterruptOccurred: 0x950B864B
+          ksceKernelMaskIntr: 0x180435EC
+          ksceKernelRegisterIntrHandler: 0x5C1FEB29
+          ksceKernelRegisterIntrHookHandler: 0x99048AEC
+          ksceKernelRegisterSubIntrHandler: 0x96576C18
+          ksceKernelReleaseIntrHandler: 0xD6009B98
+          ksceKernelReleaseIntrHookHandler: 0xA0B7F44E
+          ksceKernelReleaseSubIntrHandler: 0x7B9657B3
+          ksceKernelResumeIntr: 0xA4C772AF
+          ksceKernelResumeSubIntr: 0x957023D0
+          ksceKernelSetIntrMasked: 0x7117E827
+          ksceKernelSetIntrPriority: 0x71020E29
+          ksceKernelSetIntrTarget: 0x973BACCC
+          ksceKernelSuspendSubIntr: 0x3A9EA7D1
+          ksceKernelTriggerSGI: 0x29F62500
+          ksceKernelTriggerSubIntr: 0xCC94B294
+          ksceKernelUnmaskIntr: 0x7117E827
+      SceIntrmgrForKernel:
+        kernel: true
+        nid: 0x07AC5E3A
+        functions:
+          ksceKernelQueryIntrHandlerInfo: 0xB5AFAE49

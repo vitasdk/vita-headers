@@ -1,0 +1,41 @@
+version: 2
+firmware: 3.60
+modules:
+  SceRudp:
+    nid: 0x0B6F819A
+    libraries:
+      SceLibRudp:
+        kernel: false
+        nid: 0x32910D11
+        functions:
+          sceRudpActivate: 0xF1151D91
+          sceRudpBind: 0x8B766108
+          sceRudpCreateContext: 0x772C07E8
+          sceRudpEnableInternalIOThread: 0x3A495E69
+          sceRudpEnableInternalIOThread2: 0x87EC465E
+          sceRudpEnd: 0x3EA0961E
+          sceRudpFlush: 0x8D45BA52
+          sceRudpGetContextStatus: 0xD620B557
+          sceRudpGetLocalInfo: 0x4DC43692
+          sceRudpGetMaxSegmentSize: 0x68A52861
+          sceRudpGetNumberOfPacketsToRead: 0x5D0460CD
+          sceRudpGetOption: 0xE68005E3
+          sceRudpGetRemoteInfo: 0x104E4D3B
+          sceRudpGetSizeReadable: 0x6B74CA22
+          sceRudpGetSizeWritable: 0xADE196DC
+          sceRudpGetStatus: 0xD77928C5
+          sceRudpInit: 0x22C9AA29
+          sceRudpInitiate: 0x46B635BD
+          sceRudpNetReceived: 0x2C1E736E
+          sceRudpPollCancel: 0xA9B92EFE
+          sceRudpPollControl: 0x18668BD8
+          sceRudpPollCreate: 0x943D96EC
+          sceRudpPollDestroy: 0xC9ACBDF0
+          sceRudpPollWait: 0x55918C7C
+          sceRudpProcessEvents: 0x24E36E39
+          sceRudpRead: 0x30A9438E
+          sceRudpSetEventHandler: 0x396A24D6
+          sceRudpSetMaxSegmentSize: 0xE1DD9645
+          sceRudpSetOption: 0xBD87A5CA
+          sceRudpTerminate: 0x552B2D3E
+          sceRudpWrite: 0x69C9DE15

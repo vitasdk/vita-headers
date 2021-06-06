@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpMessage:
+    nid: 0x9FED9721
+    libraries:
+      SceNpMessage:
+        kernel: false
+        nid: 0x8134120B
+        functions:
+          sceNpMessageAbort: 0x707B26C2
+          sceNpMessageGetAttachedData: 0x7E697F98
+          sceNpMessageGetMessage: 0x514A4320
+          sceNpMessageGetMessageEntries: 0xC86B6DA7
+          sceNpMessageGetMessageEntry: 0x70116381
+          sceNpMessageGetMessageEntryCount: 0x1DBD26D2
+          sceNpMessageInit: 0x258DA4AC
+          sceNpMessageInitWithParam: 0x26AF5306
+          sceNpMessageSetAttachedDataUsedFlag: 0xF533A73A
+          sceNpMessageSyncMessage: 0x35BE21C5
+          sceNpMessageTerm: 0x380230A1

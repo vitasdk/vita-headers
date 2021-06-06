@@ -1,0 +1,12 @@
+version: 2
+firmware: 3.60
+modules:
+  SceClipboard:
+    nid: 0xB4042D2E
+    libraries:
+      SceClipboard:
+        kernel: false
+        nid: 0x6B346AA8
+        functions:
+          sceClipboardGetText: 0x5BB10CC2
+          sceClipboardSetText: 0x43A94D3E

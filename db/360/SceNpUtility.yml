@@ -1,0 +1,44 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpUtility:
+    nid: 0x14246C21
+    libraries:
+      SceNpUtility:
+        kernel: false
+        nid: 0x7B47D9CF
+        functions:
+          sceNpBandwidthTestAbort: 0x32B068C4
+          sceNpBandwidthTestGetStatus: 0xE0EBFBF6
+          sceNpBandwidthTestInitStart: 0x081FA13C
+          sceNpBandwidthTestShutdown: 0x58D92EFD
+          sceNpLookupAbortRequest: 0x027587C4
+          sceNpLookupAvatarImage: 0xFDB0AE47
+          sceNpLookupAvatarImageAsync: 0x282BD43C
+          sceNpLookupCreateRequest: 0x9E42E922
+          sceNpLookupCreateTitleCtx: 0x5110E17E
+          sceNpLookupDeleteRequest: 0x8B608BF6
+          sceNpLookupDeleteTitleCtx: 0x33B64699
+          sceNpLookupInit: 0x9246A673
+          sceNpLookupNpId: 0xB1A14879
+          sceNpLookupNpIdAsync: 0x5387BABB
+          sceNpLookupPollAsync: 0xFCDBA234
+          sceNpLookupSetTimeout: 0xB0C9DC45
+          sceNpLookupTerm: 0x0158B61B
+          sceNpLookupUserProfile: 0x6A1BF429
+          sceNpLookupUserProfileAsync: 0xE5285E0F
+          sceNpLookupWaitAsync: 0xCF956F23
+          sceNpWordFilterAbortRequest: 0x36DA662E
+          sceNpWordFilterCensorComment: 0xA30E4E17
+          sceNpWordFilterCensorCommentAsync: 0xE956080F
+          sceNpWordFilterCreateRequest: 0x7183047C
+          sceNpWordFilterCreateTitleCtx: 0x1075589C
+          sceNpWordFilterDeleteRequest: 0x6690D8E2
+          sceNpWordFilterDeleteTitleCtx: 0xB4E5A189
+          sceNpWordFilterInit: 0x01284C6E
+          sceNpWordFilterPollAsync: 0xBAE4CD1F
+          sceNpWordFilterSanitizeComment: 0x30606C85
+          sceNpWordFilterSanitizeCommentAsync: 0x40EC7271
+          sceNpWordFilterSetTimeout: 0x9F44CE45
+          sceNpWordFilterTerm: 0x7D140F70
+          sceNpWordFilterWaitAsync: 0x31B308AA

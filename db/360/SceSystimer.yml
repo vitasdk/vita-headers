@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSystimer:
+    nid: 0x9A1E946B
+    libraries:
+      SceSystimerForDriver:
+        kernel: true
+        nid: 0xA47EB09A
+        functions:
+          ksceKernelSysTimerAlloc: 0xE2B9D8E9

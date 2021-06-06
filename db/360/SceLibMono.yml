@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLibMono:
+    nid: 0x25CB8DCB
+    libraries:
+      SceLibMono:
+        kernel: false
+        nid: 0x7344135B
+        functions:
+          mono_security_enable_core_clr: 0x02A867BC

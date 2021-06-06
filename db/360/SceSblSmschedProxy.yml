@@ -1,0 +1,23 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblSmschedProxy:
+    nid: 0x254B02B3
+    libraries:
+      SceSblSmSchedProxyForKernel:
+        kernel: true
+        nid: 0x15F25C84
+        functions:
+          ksceSblSmSchedCallFunc: 0x723B382F
+          ksceSblSmSchedProxyChangeF00DStatus: 0xDE4EAC3C
+          ksceSblSmSchedProxyDisableCry2ArmInterrupt: 0x85EDA5FC
+          ksceSblSmSchedProxyEnableCry2ArmInterrupt: 0x8B84AC2A
+          ksceSblSmSchedProxyExecuteF00DCommand: 0x7894B6F0
+          ksceSblSmSchedProxyGetCommandF00DRegister: 0xF70C04EC
+          ksceSblSmSchedProxyGetStatus: 0x27EB92F1
+          ksceSblSmSchedProxyInitialize: 0xA488D604
+          ksceSblSmSchedProxyInvoke: 0x1916509B
+          ksceSblSmSchedProxyReadCry2Arm: 0x973A4A7D
+          ksceSblSmSchedProxyUninitialize: 0x33A3A1E2
+          ksceSblSmSchedProxyWait: 0xF35EFC1A
+          ksceSblSmSchedProxyWriteCry2Arm: 0x15B0E4DF

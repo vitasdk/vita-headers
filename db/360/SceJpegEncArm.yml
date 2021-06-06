@@ -1,0 +1,18 @@
+version: 2
+firmware: 3.60
+modules:
+  SceJpegEncArm:
+    nid: 0x7274D863
+    libraries:
+      SceJpegEncArm:
+        kernel: false
+        nid: 0xCF9C23A2
+        functions:
+          sceJpegArmEncoderEncode: 0x648FFAA3
+          sceJpegArmEncoderEnd: 0x8A42D6EC
+          sceJpegArmEncoderGetContextSize: 0x8D15B36D
+          sceJpegArmEncoderInit: 0x8C23875A
+          sceJpegArmEncoderSetCompressionRatio: 0x32B8E159
+          sceJpegArmEncoderSetHeaderMode: 0x6D24A669
+          sceJpegArmEncoderSetOutputAddr: 0xDA0D0868
+          sceJpegArmEncoderSetValidRegion: 0xD561E2E5

@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceBgAppUtil:
+    nid: 0x795E683F
+    libraries:
+      SceBgAppUtil:
+        kernel: false
+        nid: 0xF9516A07
+        functions:
+          sceBgAppUtilStartBgApp: 0x7C3525B5

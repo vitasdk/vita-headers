@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceClockgen:
+    nid: 0x1247DEBB
+    libraries:
+      SceClockgenForDriver:
+        kernel: true
+        nid: 0xFF160234
+        functions:
+          ksceClockgenWlanBtClkDisable: 0xB6F0A532

@@ -1,0 +1,16 @@
+version: 2
+firmware: 3.60
+modules:
+  SceJpegArm:
+    nid: 0xC3ACF942
+    libraries:
+      SceJpegArm:
+        kernel: false
+        nid: 0x19F04693
+        functions:
+          sceJpegArmCreateSplitDecoder: 0x9DA48DB6
+          sceJpegArmDecodeMJpeg: 0xA4ABFCE3
+          sceJpegArmDecodeMJpegYCbCr: 0xE9B1B86F
+          sceJpegArmDeleteSplitDecoder: 0xE9CB3DFD
+          sceJpegArmGetOutputInfo: 0x23AE3BEA
+          sceJpegArmSplitDecodeMJpeg: 0x5D83C606

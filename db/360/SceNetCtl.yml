@@ -1,0 +1,28 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNetCtl:
+    nid: 0xFA4A5948
+    libraries:
+      SceNetCtl:
+        kernel: false
+        nid: 0xC6083AE1
+        functions:
+          sceNetCtlAdhocDisconnect: 0xED43B79A
+          sceNetCtlAdhocGetInAddr: 0x7118C99D
+          sceNetCtlAdhocGetPeerList: 0x77586C59
+          sceNetCtlAdhocGetResult: 0x7AE0ED19
+          sceNetCtlAdhocGetState: 0x0961A561
+          sceNetCtlAdhocRegisterCallback: 0xFFA9D594
+          sceNetCtlAdhocUnregisterCallback: 0xA4471E10
+          sceNetCtlCheckCallback: 0xDFFC3ED4
+          sceNetCtlGetIfStat: 0xDA130450
+          sceNetCtlGetNatInfo: 0x4DDD6149
+          sceNetCtlGetPhoneMaxDownloadableSize: 0x4FB4BEA1
+          sceNetCtlInetGetInfo: 0xB26D07F3
+          sceNetCtlInetGetResult: 0x6B20EC02
+          sceNetCtlInetGetState: 0x6D26AC68
+          sceNetCtlInetRegisterCallback: 0xEAEE6185
+          sceNetCtlInetUnregisterCallback: 0xD0C3BF3F
+          sceNetCtlInit: 0x495CA1DB
+          sceNetCtlTerm: 0xCD188648

@@ -1,0 +1,35 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblUpdateMgr:
+    nid: 0x528F6BF5
+    libraries:
+      SceSblSsUpdateMgr:
+        kernel: false
+        nid: 0x31406C49
+        functions:
+          sceSblUsAllocateBuffer: 0x4C06F41C
+          sceSblUsCheckSystemIntegrity: 0xBED8DFC7
+          sceSblUsExtractSpackage: 0xC1792A1C
+          sceSblUsGetApplicableVersion: 0x3ADD4B7A
+          sceSblUsGetExtractSpackage: 0x4897AD56
+          sceSblUsGetSpkgInfo: 0x8E3EC2E1
+          sceSblUsGetStatus: 0xF403143E
+          sceSblUsGetUpdateMode: 0x8E834565
+          sceSblUsInformUpdateFinished: 0x2A02DCFB
+          sceSblUsInformUpdateOngoing: 0xD0CB50AC
+          sceSblUsInformUpdateStarted: 0x9FC8E905
+          sceSblUsInspectSpackage: 0x1A39F6EE
+          sceSblUsPowerControl: 0x1825D954
+          sceSblUsReleaseBuffer: 0xBD677F5A
+          sceSblUsSetSwInfoBin: 0x92A8002B
+          sceSblUsSetSwInfoInt: 0x157AD4AD
+          sceSblUsSetSwInfoStr: 0xFE930747
+          sceSblUsSetUpdateMode: 0xC725E3F0
+          sceSblUsUpdateSpackage: 0x6E8DDAC4
+          sceSblUsVerifyPup: 0x6F5EDBF4
+          sceSblUsVerifyPupAdditionalSign: 0xB19366CB
+          sceSblUsVerifyPupHeader: 0x9BE17A06
+          sceSblUsVerifyPupSegment: 0xD47FD33E
+          sceSblUsVerifyPupSegmentById: 0x95FC1A0A
+          sceSblUsVerifyPupWatermark: 0xC6CDEB8D

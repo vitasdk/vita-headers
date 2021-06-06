@@ -1,0 +1,57 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLibMtp:
+    nid: 0xB18148CA
+    libraries:
+      SceLibMtp:
+        kernel: false
+        nid: 0xA51D3D18
+        functions:
+          sceMtpBeginCheckSameObjectExist: 0x331DDF07
+          sceMtpBeginCreateHostDir: 0x7A16D2CF
+          sceMtpBeginCreateHostFile: 0x9D5EC9F2
+          sceMtpBeginDeleteHostDir: 0x849AF30D
+          sceMtpBeginDeleteObject: 0xAC538B75
+          sceMtpBeginExportObjectWithCheck: 0xCF7D70A6
+          sceMtpBeginGetHostStorageSize: 0xF038BA83
+          sceMtpBeginGetNpAccountInfo: 0xE1B267DC
+          sceMtpBeginGetNumOfObject: 0xC92F9BD3
+          sceMtpBeginGetObjectMetadata: 0xBD82BC51
+          sceMtpBeginGetObjectStatus2: 0x2747749A
+          sceMtpBeginGetObjectThumbnail: 0xEA291CFC
+          sceMtpBeginGetSystemSetting: 0xE3727775
+          sceMtpBeginGetTotalObjectSize: 0x46CCEAEC
+          sceMtpBeginHandover: 0xCFCED21A
+          sceMtpBeginHttpGetDataWithUrl: 0x6B7800B7
+          sceMtpBeginHttpGetPropertyWithUrl: 0xE3727775
+          sceMtpBeginImportObject: 0xA19ECC66
+          sceMtpBeginMoveHostDir: 0x77D6FB78
+          sceMtpBeginNpDrmActivate: 0x2DDD1CAB
+          sceMtpBeginNpDrmDeactivate: 0x13FD6153
+          sceMtpBeginNpDrmGetLicense: 0x439C5B59
+          sceMtpBeginNpDrmGetRtc: 0xCEAED3C0
+          sceMtpBeginReadObjectWithOffset: 0x94B68669
+          sceMtpBeginResumeExportObject: 0x85954990
+          sceMtpBeginResumeImportObject: 0xD52DCC7C
+          sceMtpBeginRpcNetOperationRecv: 0x32985803
+          sceMtpBeginRpcNetOperationSend: 0x8E7F11CB
+          sceMtpBeginSearchObject: 0x7E078352
+          sceMtpBeginSetSystemSetting: 0x231FB847
+          sceMtpBeginSpecifiedObjectMetadata: 0xB26C8078
+          sceMtpBeginWriteObjectWithOffset: 0xFFCB2181
+          sceMtpCheckContextValid: 0x24130489
+          sceMtpEnd: 0xF134A48F
+          sceMtpEndImportObject: 0xCF92F4CC
+          sceMtpGetBgTaskInfo: 0x7C5DDDD6
+          sceMtpGetCurrentInterface: 0xD4E9D95E
+          sceMtpGetHostInfo: 0xB6B6C7C0
+          sceMtpInit: 0xF481FE11
+          sceMtpPauseExportObject: 0xF4CAB5A5
+          sceMtpReset: 0x97C128BD
+          sceMtpResume: 0x7430E5A5
+          sceMtpSetFinishCallback: 0xEBB48255
+          sceMtpStart: 0x128D0D05
+          sceMtpStop: 0xC7AC05E8
+          sceMtpSuspend: 0x8B9F4CC5
+          sceMtpTerminateExecution: 0x392B8D5E

@@ -1,0 +1,38 @@
+version: 2
+firmware: 3.60
+modules:
+  SceVoice:
+    nid: 0xF5F3E7CA
+    libraries:
+      SceVoice:
+        kernel: false
+        nid: 0xCE56E214
+        functions:
+          sceVoiceCheckTopology: 0x874054CE
+          sceVoiceConnectIPortToOPort: 0x698BDAAE
+          sceVoiceCreatePort: 0xFA4E57B1
+          sceVoiceDeletePort: 0xAE46564D
+          sceVoiceDisconnectIPortFromOPort: 0x5F0260F4
+          sceVoiceEnd: 0xAC98853E
+          sceVoiceGetBitRate: 0xD02C00B4
+          sceVoiceGetMuteFlag: 0xC913F7E9
+          sceVoiceGetPortAttr: 0x73F72940
+          sceVoiceGetPortInfo: 0x5933CCFB
+          sceVoiceGetResourceInfo: 0x6E46950E
+          sceVoiceGetVolume: 0x875CC80D
+          sceVoiceInit: 0x805CC20F
+          sceVoicePausePort: 0x23C6B16B
+          sceVoicePausePortAll: 0x39AA3884
+          sceVoiceReadFromOPort: 0x09E4D18C
+          sceVoiceResetPort: 0x5E1CE910
+          sceVoiceResumePort: 0x2DE35411
+          sceVoiceResumePortAll: 0x1F93FC0C
+          sceVoiceSetBitRate: 0x02F58D6F
+          sceVoiceSetMuteFlag: 0x0B9E4AE2
+          sceVoiceSetMuteFlagAll: 0xDB90EAC4
+          sceVoiceSetPortAttr: 0x9B0D3490
+          sceVoiceSetVolume: 0xD93769E6
+          sceVoiceStart: 0xB2ED725B
+          sceVoiceStop: 0xC3868DF6
+          sceVoiceUpdatePort: 0xCE855C50
+          sceVoiceWriteToIPort: 0x0A22EC0E

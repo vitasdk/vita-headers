@@ -1,0 +1,34 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCoredump:
+    nid: 0x3E0F5EBD
+    libraries:
+      SceCoredump:
+        kernel: false
+        nid: 0xA143A77F
+        functions:
+          sceCoredumpRegisterCoredumpHandler: 0x031DC61E
+          sceCoredumpUnregisterCoredumpHandler: 0x6037A2C3
+      SceCoredumpForDriver:
+        kernel: true
+        nid: 0xA351714A
+        functions:
+          ksceCoredumpCafContextCreate: 0x2964AD0A
+          ksceCoredumpCafContextDestroy: 0x95402BF3
+          ksceCoredumpCafCreateIv: 0xE1BCBE8F
+          ksceCoredumpCafFinal: 0xC90F61AF
+          ksceCoredumpCafHeaderFinal: 0x65AA4991
+          ksceCoredumpCafHeaderInit: 0x7C8120C5
+          ksceCoredumpCafHeaderTransform: 0xAE2C2793
+          ksceCoredumpCafInit: 0x9336009B
+          ksceCoredumpCafSegmentFinal: 0xDF17420A
+          ksceCoredumpCafSegmentInit: 0x07185515
+          ksceCoredumpCafSegmentTransform: 0xFB7AEBFE
+          ksceCoredumpCreateDump: 0x0C10313F
+          ksceCoredumpDeleteCrashReportCaf: 0xAD070837
+      SceCoredumpNounlink:
+        kernel: false
+        nid: 0x2646E9D8
+        functions:
+          sceCoredumpWriteUserData: 0xDF335DCF

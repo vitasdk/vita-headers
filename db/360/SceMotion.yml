@@ -1,0 +1,29 @@
+version: 2
+firmware: 3.60
+modules:
+  SceMotion:
+    nid: 0x0000005F
+    libraries:
+      SceMotion:
+        kernel: false
+        nid: 0xDC571B3F
+        functions:
+          sceMotionGetAngleThreshold: 0x499B6C87
+          sceMotionGetBasicOrientation: 0x4F28BFE0
+          sceMotionGetDeadband: 0x112E0EAE
+          sceMotionGetDeviceLocation: 0x047F060A
+          sceMotionGetGyroBiasCorrection: 0xE8A28DA5
+          sceMotionGetMagnetometerState: 0x3D4813AE
+          sceMotionGetSensorState: 0x47D679EA
+          sceMotionGetState: 0xBDB32767
+          sceMotionGetTiltCorrection: 0xC1652201
+          sceMotionMagnetometerOff: 0xC1A7395A
+          sceMotionMagnetometerOn: 0x122A79F8
+          sceMotionReset: 0x0FD2CDA2
+          sceMotionRotateYaw: 0x20F00078
+          sceMotionSetAngleThreshold: 0xDACB2A41
+          sceMotionSetDeadband: 0x917EA390
+          sceMotionSetGyroBiasCorrection: 0xA4A7E6E2
+          sceMotionSetTiltCorrection: 0xAF09FCDB
+          sceMotionStartSampling: 0x28034AC9
+          sceMotionStopSampling: 0xAF32CB1D

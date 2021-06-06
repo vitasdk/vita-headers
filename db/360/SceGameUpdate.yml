@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceGameUpdate:
+    nid: 0x0207A645
+    libraries:
+      SceGameUpdate:
+        kernel: false
+        nid: 0x2DD9A62D
+        functions:
+          sceGameUpdateAbort: 0x14116007
+          sceGameUpdateInit: 0x2F401247
+          sceGameUpdateRun: 0x3C616238
+          sceGameUpdateTerm: 0x48D879BA

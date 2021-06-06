@@ -1,0 +1,86 @@
+version: 2
+firmware: 3.60
+modules:
+  SceKernelModulemgr:
+    nid: 0x726C6635
+    libraries:
+      SceBacktrace:
+        kernel: false
+        nid: 0xB07B6A3F
+        functions:
+          _sceKernelBacktrace: 0xBF371A98
+      SceBacktraceForDriver:
+        kernel: true
+        nid: 0x77CB3DD6
+        functions:
+          ksceKernelBacktrace: 0x166B9C8C
+      SceModulemgr:
+        kernel: false
+        nid: 0xEAED1616
+        functions:
+          _sceKernelCloseModule: 0x849E78BE
+          _sceKernelLoadModule: 0xB4C5EF9E
+          _sceKernelLoadStartModule: 0x60647592
+          _sceKernelOpenModule: 0x9D674F45
+          _sceKernelStartModule: 0x72CD301F
+          _sceKernelStopModule: 0x086867A8
+          _sceKernelStopUnloadModule: 0x86EAEA0A
+          _sceKernelUnloadModule: 0x8E4A7716
+          sceKernelGetAllowedSdkVersionOnSystem: 0x4397FC4E
+          sceKernelGetLibraryInfoByNID: 0xEAEB1312
+          sceKernelGetModuleIdByAddr: 0xF5798C7C
+          sceKernelGetModuleInfo: 0x36585DAF
+          sceKernelGetModuleList: 0x2EF2581F
+          sceKernelGetSystemSwVersion: 0x5182E212
+          sceKernelInhibitLoadingModule: 0x6CED1F63
+          sceKernelIsCalledFromSysModule: 0x85E6D2BB
+      SceModulemgrForDriver:
+        kernel: true
+        nid: 0xD4A60A52
+        functions:
+          ksceKernelGetModuleInfoByAddr: 0x1D9E0F7E
+          ksceKernelGetSystemSwVersion: 0x5182E212
+          ksceKernelLoadModule: 0x86D8D634
+          ksceKernelLoadStartModule: 0x189BFBBB
+          ksceKernelLoadStartModuleForPid: 0x9D953C22
+          ksceKernelLoadStartSharedModuleForPid: 0xE2ADEF8D
+          ksceKernelRegisterLibary: 0x861638AD
+          ksceKernelReleaseLibary: 0x0975B104
+          ksceKernelSearchModuleByName: 0xBBE1771C
+          ksceKernelStartModule: 0x0675B682
+          ksceKernelStopModule: 0x100DAEB9
+          ksceKernelStopUnloadModule: 0x03B30B7E
+          ksceKernelStopUnloadModuleForPid: 0x49A3EDC7
+          ksceKernelStopUnloadSharedModuleForPid: 0x02D3D0C1
+          ksceKernelUnloadModule: 0x728E72A6
+      SceModulemgrForKernel:
+        kernel: true
+        nid: 0xC445FA63
+        functions:
+          ksceKernelFinalizeKbl: 0xFDD7F646
+          ksceKernelGetModuleIdByAddr: 0x0053BA4A
+          ksceKernelGetModuleInfo: 0xD269F915
+          ksceKernelGetModuleInfoMinByAddr: 0x8309E043
+          ksceKernelGetModuleInternal: 0xFE303863
+          ksceKernelGetModuleLibExportList: 0xD4BF409C
+          ksceKernelGetModuleLibraryInfo: 0x6A655255
+          ksceKernelGetModuleList: 0x97CF7B4E
+          ksceKernelGetModuleList2: 0x410E1D2E
+          ksceKernelGetModuleListByImport: 0x3B93CF88
+          ksceKernelGetModulePath: 0x779A1025
+          ksceKernelGetProcessLibraryIdList: 0x1FDEAE16
+          ksceKernelGetProcessMainModule: 0x20A27FA9
+          ksceKernelLoadModuleForPid: 0xFA21D8CB
+          ksceKernelLoadPreloadingModules: 0x3AD26B43
+          ksceKernelLoadProcessImage: 0xAC4EABDB
+          ksceKernelLoadPtLoadSegForFwloader: 0x448810D5
+          ksceKernelModuleUnloadMySelf: 0x2A69385E
+          ksceKernelMountBootfs: 0x01360661
+          ksceKernelRegisterSyscall: 0xB427025E
+          ksceKernelSetupForModulemgr: 0x3382952B
+          ksceKernelStartModuleForPid: 0x6DF745D5
+          ksceKernelStartPreloadingModules: 0x432DCC7A
+          ksceKernelStopModuleForPid: 0x7BB4CE54
+          ksceKernelUmountBootfs: 0x9C838A6B
+          ksceKernelUnloadModuleForPid: 0x5972E2CC
+          ksceKernelUnloadProcessModules: 0x0E33258E

@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpActivity:
+    nid: 0x096735F5
+    libraries:
+      SceNpActivity:
+        kernel: false
+        nid: 0xFEF492ED
+        functions:
+          sceNpActivityInit: 0xE0FFEE97
+          sceNpActivityPostAppStartupStatus: 0x6BE90416
+          sceNpActivityPostStatus: 0xBC7FDC77
+          sceNpActivityTerm: 0x9EA4901F

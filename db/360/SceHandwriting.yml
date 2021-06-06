@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceHandwriting:
+    nid: 0x18983E63
+    libraries:
+      SceHandwriting:
+        kernel: false
+        nid: 0x2AA55635
+        functions:
+          sceHandwritingGetBufferSize: 0x4C3A8D49
+          sceHandwritingInit: 0x446F171E
+          sceHandwritingRecognize: 0x12E4F99A
+          sceHandwritingRegisterDelete: 0x6BA4A521
+          sceHandwritingRegisterGetResult: 0xB886450E
+          sceHandwritingRegisterInfo: 0x69324689
+          sceHandwritingRegisterInit: 0x76395D93
+          sceHandwritingRegisterSet: 0x79CA5D3F
+          sceHandwritingRegisterTerm: 0x6ABBD675
+          sceHandwritingSetMode: 0x09AF9BF8
+          sceHandwritingTerm: 0x356B2931
