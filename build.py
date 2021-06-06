@@ -12,13 +12,17 @@ def execute(cmd, force_print=False):
         return r.close()
 
 def vita_libs_gen(yml, out):
-    if execute('vita-libs-gen {} {}'.format(yml, out)):
+    cmd = os.environ.get('VITA_LIBS_GEN', 'vita-libs-gen')
+    if execute('{} {} {}'.format(cmd, yml, out)):
         raise SystemExit(10)
 
 def make(target):
     curr = os.getcwd()
     os.chdir(target)
-    if execute('make -j'):
+    arch = os.environ.get('ARCH', '')
+    if arch:
+        arch = 'ARCH={}'.format(arch)
+    if execute('make -j {}'.format(arch)):
         raise SystemExit(11)
     os.chdir(curr)
 
@@ -61,4 +65,5 @@ if __name__ == '__main__':
         os.makedirs(build_target)
         vita_libs_gen(yml, build_target)
         make(build_target)
-        make_install(build_target)
+        if not os.environ.get('BYPASS_INSTALL'):
+            make_install(build_target)
