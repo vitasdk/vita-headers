@@ -1,0 +1,79 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpDrm:
+    nid: 0xE7E2CE05
+    libraries:
+      SceNpDrm:
+        kernel: false
+        nid: 0xF2799B1B
+        functions:
+          _sceNpDrmCheckActData: 0xFEEBCD62
+          _sceNpDrmCheckDrmReset: 0x4458812B
+          _sceNpDrmGetFixedRifName: 0xE935B0FC
+          _sceNpDrmGetRifInfo: 0xE8343660
+          _sceNpDrmGetRifName: 0xB8C5DA7C
+          _sceNpDrmGetRifNameForInstall: 0xD312424D
+          _sceNpDrmPresetRifProvisionalFlag: 0x2523F57F
+          _sceNpDrmRemoveActData: 0x507D06A6
+      SceNpDrmForDriver:
+        kernel: true
+        nid: 0xD84DC44A
+        functions:
+          ksceNpDrmCheckActData: 0x9265B350
+          ksceNpDrmEbootSigConvert: 0xA29B75F9
+          ksceNpDrmEbootSigGenMultiDisc: 0x39A7A666
+          ksceNpDrmEbootSigGenPs1: 0x6D9223E1
+          ksceNpDrmEbootSigGenPsp: 0x90B1A6D3
+          ksceNpDrmEbootSigVerify: 0x7A319692
+          ksceNpDrmGetFixedRifName: 0x5D73448C
+          ksceNpDrmGetLegacyDocKey: 0x4E321BDE
+          ksceNpDrmGetRifInfo: 0xDB406EAE
+          ksceNpDrmGetRifName: 0xDF62F3B8
+          ksceNpDrmGetRifNameForInstall: 0x17573133
+          ksceNpDrmGetRifPspKey: 0xDACB71F4
+          ksceNpDrmGetRifVitaKey: 0x723322B5
+          ksceNpDrmIsLooseAccountBind: 0xFC84CA1A
+          ksceNpDrmPackageSetGameExist: 0x3BFD2850
+          ksceNpDrmPresetRifProvisionalFlag: 0xC070FE89
+          ksceNpDrmPspEbootSigGen: 0xEF387FC4
+          ksceNpDrmPspEbootVerify: 0xB6CA3A2C
+          ksceNpDrmReadActData: 0xD91C3BCE
+          ksceNpDrmRemoveActData: 0x8B85A509
+          ksceNpDrmUpdateAccountId: 0x116FC0D6
+          ksceNpDrmUpdateActData: 0x077926F5
+          ksceNpDrmUpdateDebugSettings: 0xA91C7443
+          ksceNpDrmVerifyRif: 0xFE7B17B6
+          ksceNpDrmVerifyRifFull: 0xFF63672D
+          ksceNpDrmWriteActData: 0x742EBAF4
+      SceNpDrmPackage:
+        kernel: false
+        nid: 0x88514DB2
+        functions:
+          _sceNpDrmPackageCheck: 0xA1D885FA
+          _sceNpDrmPackageDecrypt: 0xD6F05ACC
+          _sceNpDrmPackageInstallFinished: 0x6896EAF2
+          _sceNpDrmPackageInstallStarted: 0xCEC18DA4
+          _sceNpDrmPackageTransform: 0x0567DCA1
+          _sceNpDrmPackageUninstallFinished: 0x23A28861
+          _sceNpDrmPackageUninstallStarted: 0x4901C3E6
+          _sceNpDrmSaveDataFormatFinished: 0xC75A775B
+          _sceNpDrmSaveDataFormatStarted: 0x97BB85BD
+          _sceNpDrmSaveDataInstallFinished: 0x640C1724
+          _sceNpDrmSaveDataInstallStarted: 0x4665E75A
+          sceNpDrmPackageInstallOngoing: 0xED0471FE
+          sceNpDrmPackageIsGameExist: 0xB9337914
+          sceNpDrmPackageUninstallOngoing: 0xF1FF6193
+          sceNpDrmSaveDataFormatOngoing: 0x200D2DE4
+          sceNpDrmSaveDataInstallOngoing: 0xA5E0F38C
+      ScePsmDrm:
+        kernel: false
+        nid: 0x3F2B0888
+        functions:
+          scePsmDrmGetRifInfo: 0xE31A6220
+          scePsmDrmGetRifKey: 0x207A2C53
+      ScePsmDrmForDriver:
+        kernel: true
+        nid: 0x9F4924F2
+        functions:
+          kscePsmDrmGetRifInfo: 0x984F9017

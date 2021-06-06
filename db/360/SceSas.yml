@@ -1,0 +1,43 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSas:
+    nid: 0xBDF706EB
+    libraries:
+      SceSas:
+        kernel: false
+        nid: 0xEE47EC43
+        functions:
+          sceSasCore: 0x7A4672B2
+          sceSasCoreWithMix: 0xBD496983
+          sceSasExit: 0xBB7D6790
+          sceSasGetDryPeak: 0xB6642276
+          sceSasGetEndState: 0x007E63E6
+          sceSasGetEnvelope: 0x296A9910
+          sceSasGetGrain: 0x2BEA45BC
+          sceSasGetNeededMemorySize: 0x180C6824
+          sceSasGetOutputmode: 0x2C36E150
+          sceSasGetPauseState: 0xFD1A0CBF
+          sceSasGetPreMasterPeak: 0x1568017A
+          sceSasGetWetPeak: 0x4314F0E9
+          sceSasInit: 0x449B5974
+          sceSasInitWithGrain: 0x820D5F82
+          sceSasSetADSR: 0x18A5EFA2
+          sceSasSetADSRmode: 0x5207F9D2
+          sceSasSetDistortion: 0x011788BE
+          sceSasSetEffect: 0xB0444E69
+          sceSasSetEffectParam: 0xBAD546A0
+          sceSasSetEffectType: 0xCDF2DDD5
+          sceSasSetEffectVolume: 0x55EDDBFA
+          sceSasSetGrain: 0x2B4A207C
+          sceSasSetKeyOff: 0x5E42ADAB
+          sceSasSetKeyOn: 0xC838DB6F
+          sceSasSetNoise: 0xF1C63CB9
+          sceSasSetOutputmode: 0x44DDB3C4
+          sceSasSetPause: 0x59C7A9DF
+          sceSasSetPitch: 0x2C48A08C
+          sceSasSetSL: 0xDE6227B8
+          sceSasSetSimpleADSR: 0xECCE0DB8
+          sceSasSetVoice: 0x2B75F9BC
+          sceSasSetVoicePCM: 0xB1756EFC
+          sceSasSetVolume: 0x0BE8204D

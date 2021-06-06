@@ -1,0 +1,26 @@
+version: 2
+firmware: 3.60
+modules:
+  SceFiber:
+    nid: 0x5BA67C8A
+    libraries:
+      SceFiber:
+        kernel: false
+        nid: 0xF88DAA70
+        functions:
+          _sceFiberAttachContextAndRun: 0x7D0C7DDB
+          _sceFiberAttachContextAndSwitch: 0xE00B9AFE
+          _sceFiberInitializeImpl: 0xF24A298C
+          _sceFiberInitializeWithInternalOptionImpl: 0xC6A3F9BB
+          sceFiberFinalize: 0xE160F844
+          sceFiberGetInfo: 0x189599B4
+          sceFiberGetSelf: 0x414D8CA5
+          sceFiberOptParamInitialize: 0x801AB334
+          sceFiberPopUserMarkerWithHud: 0x4EC01F9C
+          sceFiberPushUserMarkerWithHud: 0x9C414B09
+          sceFiberRenameSelf: 0xDD50DF3D
+          sceFiberReturnToThread: 0x3B42921F
+          sceFiberRun: 0x7DF23243
+          sceFiberStartContextSizeCheck: 0xCD543A71
+          sceFiberStopContextSizeCheck: 0x67F70867
+          sceFiberSwitch: 0xE4283144

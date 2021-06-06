@@ -1,0 +1,60 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCamera:
+    nid: 0xEC26CAF9
+    libraries:
+      SceCamera:
+        kernel: false
+        nid: 0xDA91B3ED
+        functions:
+          sceCameraClose: 0xCD6E1CFC
+          sceCameraGetAntiFlicker: 0x9FDACB99
+          sceCameraGetAutoControlHold: 0x06A21BBB
+          sceCameraGetBacklight: 0x8DD1292B
+          sceCameraGetBrightness: 0x85D5951D
+          sceCameraGetContrast: 0x8FBE84BE
+          sceCameraGetDeviceLocation: 0x274EF751
+          sceCameraGetEV: 0x8B5E6147
+          sceCameraGetEffect: 0x7E8EF3B2
+          sceCameraGetExposureCeiling: 0x5FA5B1BB
+          sceCameraGetGain: 0x2C36D6F3
+          sceCameraGetISO: 0x4EBD5C68
+          sceCameraGetImageQuality: 0xE2AC7BCE
+          sceCameraGetNightmode: 0x12B6FF26
+          sceCameraGetNoiseReduction: 0xFEB99ACC
+          sceCameraGetReverse: 0x44F6043F
+          sceCameraGetSaturation: 0x624F7653
+          sceCameraGetSharpness: 0xAA72C3DC
+          sceCameraGetSharpnessOff: 0x34CCAF85
+          sceCameraGetWhiteBalance: 0xDBFFA1DA
+          sceCameraGetZoom: 0x06D3816C
+          sceCameraIsActive: 0x103A75B8
+          sceCameraOpen: 0xA462F801
+          sceCameraRead: 0x79B5C2DE
+          sceCameraSetAntiFlicker: 0xE312958A
+          sceCameraSetAutoControlHold: 0x3A0DABBD
+          sceCameraSetBacklight: 0xAE071044
+          sceCameraSetBrightness: 0x98D71588
+          sceCameraSetContrast: 0x06FB2900
+          sceCameraSetEV: 0x62AFF0B8
+          sceCameraSetEffect: 0xE9D2CFB1
+          sceCameraSetExposureCeiling: 0x04F34BEE
+          sceCameraSetGain: 0xE65CFE86
+          sceCameraSetISO: 0x3CF630A1
+          sceCameraSetImageQuality: 0x75C4300B
+          sceCameraSetNightmode: 0x3F26233E
+          sceCameraSetNoiseReduction: 0xF9B79556
+          sceCameraSetReverse: 0x1175F477
+          sceCameraSetSaturation: 0xF9F7CA3D
+          sceCameraSetSharpness: 0xD1A5BB0B
+          sceCameraSetSharpnessOff: 0x4B5405C8
+          sceCameraSetWhiteBalance: 0x4D4514AC
+          sceCameraSetZoom: 0xF7464216
+          sceCameraStart: 0xA8FEAE35
+          sceCameraStop: 0x1DD9C9CE
+      SceCameraForDriver:
+        kernel: true
+        nid: 0xBCBC1F4A
+        functions:
+          ksceCameraIsActive: 0xEB1CC2CA

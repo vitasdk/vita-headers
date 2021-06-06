@@ -1,0 +1,78 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNgsUser:
+    nid: 0x640BDA36
+    libraries:
+      SceNgs:
+        kernel: false
+        nid: 0xB01598D9
+        functions:
+          sceNgsAT9GetSectionDetails: 0x2A9FA501
+          sceNgsModuleGetNumPresets: 0x5C71FE09
+          sceNgsModuleGetPreset: 0xC58298A7
+          sceNgsPatchCreateRouting: 0xD668B49C
+          sceNgsPatchGetInfo: 0x98703DBC
+          sceNgsPatchRemoveRouting: 0xD0C9AE5A
+          sceNgsRackGetRequiredMemorySize: 0x477318C0
+          sceNgsRackGetVoiceHandle: 0xFE1A98E9
+          sceNgsRackInit: 0x0A92E4EC
+          sceNgsRackRelease: 0xDD5CA10B
+          sceNgsRackSetParamErrorCallback: 0x534B6E3F
+          sceNgsSystemGetRequiredMemorySize: 0x6CE8B36F
+          sceNgsSystemInit: 0xED14CF4A
+          sceNgsSystemLock: 0xB9D971F2
+          sceNgsSystemRelease: 0x4A25BEBC
+          sceNgsSystemSetFlags: 0x64D80013
+          sceNgsSystemSetParamErrorCallback: 0x5ADD22DC
+          sceNgsSystemUnlock: 0x0A93EA96
+          sceNgsSystemUpdate: 0x684F080C
+          sceNgsVoiceBypassModule: 0x9AB87E71
+          sceNgsVoiceDefGetAtrac9Voice: 0x14EF65A0
+          sceNgsVoiceDefGetCompressorBuss: 0x0E0ACB68
+          sceNgsVoiceDefGetCompressorSideChainBuss: 0x1AF83512
+          sceNgsVoiceDefGetDelayBuss: 0x4D705E3E
+          sceNgsVoiceDefGetDistortionBuss: 0xAAD90DEB
+          sceNgsVoiceDefGetEnvelopeBuss: 0xF6B68C31
+          sceNgsVoiceDefGetEqBuss: 0xF964120E
+          sceNgsVoiceDefGetMasterBuss: 0x79A121D1
+          sceNgsVoiceDefGetMixerBuss: 0xE0AC8776
+          sceNgsVoiceDefGetPauserBuss: 0x214485D6
+          sceNgsVoiceDefGetPitchShiftBuss: 0xFBE515D4
+          sceNgsVoiceDefGetReverbBuss: 0x9DCF50F5
+          sceNgsVoiceDefGetSasEmuVoice: 0x1F51C2BA
+          sceNgsVoiceDefGetScreamAtrac9Voice: 0xCD63A2BF
+          sceNgsVoiceDefGetScreamVoice: 0xCE53BC33
+          sceNgsVoiceDefGetSimpleAtrac9Voice: 0x45CF2A73
+          sceNgsVoiceDefGetSimpleVoice: 0x0D5399CF
+          sceNgsVoiceDefGetTemplate1: 0xE9B572B7
+          sceNgsVoiceGetInfo: 0x5551410D
+          sceNgsVoiceGetModuleBypass: 0x431BF3AB
+          sceNgsVoiceGetModuleType: 0xB307185E
+          sceNgsVoiceGetOutputPatch: 0x01A52E3A
+          sceNgsVoiceGetParamsOutOfRange: 0x4CBE08F3
+          sceNgsVoiceGetStateData: 0xC9B8C0B4
+          sceNgsVoiceInit: 0x1DDBEBEB
+          sceNgsVoiceKeyOff: 0xBB13373D
+          sceNgsVoiceKill: 0x0E291AAD
+          sceNgsVoiceLockParams: 0xAB6BEF8F
+          sceNgsVoicePatchSetVolume: 0xA3C807BC
+          sceNgsVoicePatchSetVolumes: 0xBD6F57F0
+          sceNgsVoicePatchSetVolumesMatrix: 0xA0F5402D
+          sceNgsVoicePause: 0xD7786E99
+          sceNgsVoicePlay: 0xFA0A0F34
+          sceNgsVoiceResume: 0x54CFB981
+          sceNgsVoiceSetFinishedCallback: 0x17A6F564
+          sceNgsVoiceSetModuleCallback: 0x24E909A8
+          sceNgsVoiceSetParamsBlock: 0xFB8174B1
+          sceNgsVoiceSetPreset: 0x8A88E665
+          sceNgsVoiceUnlockParams: 0x3D46D8A7
+          sceSulphaNgsGetDefaultConfig: 0x5FD8AEDB
+          sceSulphaNgsGetNeededMemory: 0x793E3E8C
+          sceSulphaNgsInit: 0xAFCD824F
+          sceSulphaNgsSetRackName: 0x251AF6A9
+          sceSulphaNgsSetSampleName: 0x54EC5B8D
+          sceSulphaNgsSetSynthName: 0x2F3F7515
+          sceSulphaNgsSetVoiceName: 0x508975BD
+          sceSulphaNgsShutdown: 0xD124BFB1
+          sceSulphaNgsTrace: 0xDC7C0F05

@@ -1,0 +1,68 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNet:
+    nid: 0x30BFE75C
+    libraries:
+      SceNet:
+        kernel: false
+        nid: 0x6BF8B2A2
+        functions:
+          sceNetAccept: 0x1ADF9BB1
+          sceNetBind: 0x1296A94B
+          sceNetClearDnsCache: 0xFEC1166D
+          sceNetConnect: 0x11E5B6F6
+          sceNetDumpAbort: 0x3B24E75F
+          sceNetDumpCreate: 0xAFF9FA4D
+          sceNetDumpDestroy: 0x82DDCF63
+          sceNetDumpRead: 0x04042925
+          sceNetEmulationGet: 0xAE3F4AC6
+          sceNetEmulationSet: 0x561DFD03
+          sceNetEpollAbort: 0x93FCC4E8
+          sceNetEpollControl: 0x4C8764AC
+          sceNetEpollCreate: 0xF9D102AE
+          sceNetEpollDestroy: 0x7915CAF3
+          sceNetEpollWait: 0x45CE337D
+          sceNetEpollWaitCB: 0x92D3E767
+          sceNetErrnoLoc: 0xE37F34AA
+          sceNetEtherNtostr: 0x84334EB2
+          sceNetEtherStrton: 0xEEC6D75F
+          sceNetGetMacAddress: 0x06C05518
+          sceNetGetSockIdInfo: 0x138CF1D6
+          sceNetGetSockInfo: 0xB1AF6840
+          sceNetGetStatisticsInfo: 0xA86F8FE5
+          sceNetGetpeername: 0x2348D353
+          sceNetGetsockname: 0x1C66A6DB
+          sceNetGetsockopt: 0xBA652062
+          sceNetHtonl: 0x4C30B03C
+          sceNetHtonll: 0x12C19209
+          sceNetHtons: 0x9FA3207B
+          sceNetInetNtop: 0x98839B74
+          sceNetInetPton: 0xD5EEB048
+          sceNetInit: 0xEB03E265
+          sceNetListen: 0x7A8DA094
+          sceNetNtohl: 0xD2EAA645
+          sceNetNtohll: 0xFB3336A6
+          sceNetNtohs: 0x07845128
+          sceNetRecv: 0x023643B7
+          sceNetRecvfrom: 0xB226138B
+          sceNetRecvmsg: 0xDE94C6FE
+          sceNetResolverAbort: 0x38EBBD57
+          sceNetResolverCreate: 0x6DA29319
+          sceNetResolverDestroy: 0x3559F098
+          sceNetResolverGetError: 0x874EF500
+          sceNetResolverStartAton: 0x0424AE26
+          sceNetResolverStartNtoa: 0x1EB11857
+          sceNetSend: 0xE3DD8CD9
+          sceNetSendmsg: 0x99C579AE
+          sceNetSendto: 0x52DB31D5
+          sceNetSetDnsInfo: 0xD62EF218
+          sceNetSetsockopt: 0x065505CA
+          sceNetShowIfconfig: 0x658B903B
+          sceNetShowNetstat: 0x338EDC2E
+          sceNetShowRoute: 0x6AB3B74B
+          sceNetShutdown: 0x69E50BB5
+          sceNetSocket: 0xF084FCE3
+          sceNetSocketAbort: 0x891C1B9B
+          sceNetSocketClose: 0x29822B4D
+          sceNetTerm: 0xEA3CC286

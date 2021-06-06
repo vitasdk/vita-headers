@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceGps:
+    nid: 0x7ECD5642
+    libraries:
+      SceGps:
+        kernel: false
+        nid: 0x0B6F33FE
+        functions:
+          _sceGpsClose: 0x73EE0ED1
+          _sceGpsGetData: 0x9BAF9579
+          _sceGpsGetDeviceInfo: 0x7F1DFADB
+          _sceGpsGetState: 0xB8001499
+          _sceGpsIoctl: 0xB11E674D
+          _sceGpsIsDevice: 0x0EE1BC7B
+          _sceGpsOpen: 0x6EAC2C6D
+          _sceGpsResumeCallback: 0x0A4882B3
+          _sceGpsSelectDevice: 0x2D4D8788
+          _sceGpsStart: 0x2914F243
+          _sceGpsStop: 0xE1ABB52D

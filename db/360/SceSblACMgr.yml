@@ -1,0 +1,63 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblACMgr:
+    nid: 0x7474D6F9
+    libraries:
+      SceSblACMgr:
+        kernel: false
+        nid: 0xF069F219
+        functions:
+          _sceSblACMgrIsGameProgram: 0x3C17A7F7
+      SceSblACMgrForDriver:
+        kernel: true
+        nid: 0x9AD8E213
+        functions:
+          ksceSblACMgrGetPathId: 0x4322F188
+          ksceSblACMgrGetProcessProgramAuthId: 0x96AF69BD
+          ksceSblACMgrHasCapability: 0xC2D1F2FC
+          ksceSblACMgrIsAllowedExtendedMemory: 0x4DB7F512
+          ksceSblACMgrIsAllowedUsbSerial: 0x062CAEB2
+          ksceSblACMgrIsAllowedVirtualMachine: 0x2A29453C
+          ksceSblACMgrIsDevelopmentMode: 0xE87D1777
+          ksceSblACMgrIsFself: 0x426A4E8C
+          ksceSblACMgrIsGameProgram: 0x1298C647
+          ksceSblACMgrIsMiniSettingsForQA: 0xD0E11C89
+          ksceSblACMgrIsNonGameOrGameProgram: 0x8A54DF3A
+          ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
+          ksceSblACMgrIsNotSandboxed: 0x0B6E6CD7
+          ksceSblACMgrIsPSMDevAssistant: 0xC98D82EE
+          ksceSblACMgrIsPSMRuntime: 0x091F7247
+          ksceSblACMgrIsPspEmu: 0xFD00C72A
+          ksceSblACMgrIsRootProgram: 0x0948F41C
+          ksceSblACMgrIsSIEApp: 0xA67E8E5B
+          ksceSblACMgrIsSceShell: 0x991FDC15
+          ksceSblACMgrIsSystemProgram: 0x8612B243
+          ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn: 0x962CD237
+          ksceSblACMgrIsWebCoreOrWebKitProcess: 0x0139FC20
+      SceSblACMgrForKernel:
+        kernel: true
+        nid: 0x11F9B314
+        functions:
+          kscePfsACSetFSAttrByMode: 0x2AE6CF27
+          ksceSblACIsSystemProgram: 0x930CD037
+          ksceSblACMgrGetMediaType: 0xD442962E
+          ksceSblACMgrGetProcessProgramAuthId2: 0x7C2AF978
+          ksceSblACMgrHasCapability2: 0x9EDAF856
+          ksceSblACMgrIsAllowedExtendedMemory2: 0x384D20FD
+          ksceSblACMgrIsAllowedVirtualMachine2: 0x96403142
+          ksceSblACMgrIsDevelopmentMode2: 0xBBA13D9C
+          ksceSblACMgrIsFself2: 0x5AC59172
+          ksceSblACMgrIsGameProgram2: 0x05FDC646
+          ksceSblACMgrIsMiniSettingsForQA2: 0xAF6F208E
+          ksceSblACMgrIsNonGameOrGameProgram2: 0x570D6AD3
+          ksceSblACMgrIsNonGameProgram2: 0x3F99279F
+          ksceSblACMgrIsNotSandboxed2: 0xF5AD56E4
+          ksceSblACMgrIsPSMDevAssistant2: 0xC90A9216
+          ksceSblACMgrIsPSMRuntime2: 0x966B3738
+          ksceSblACMgrIsPspEmu2: 0x47B67F72
+          ksceSblACMgrIsRootProgram2: 0x31C23B66
+          ksceSblACMgrIsSIEApp2: 0x3388F595
+          ksceSblACMgrIsSceShell2: 0xF9FEF5F0
+          ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn2: 0x98B28671
+          ksceSblACMgrIsWebCoreOrWebKitProcess2: 0xA7C3001D

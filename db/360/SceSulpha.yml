@@ -1,0 +1,33 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSulpha:
+    nid: 0x000000D4
+    libraries:
+      SceSulpha:
+        kernel: false
+        nid: 0x533DEBDE
+        functions:
+          sceSulphaAgentsGetNeededMemory: 0xC5752B6B
+          sceSulphaAgentsRegister: 0x7ADB454D
+          sceSulphaAgentsUnregister: 0x2A8B74D7
+          sceSulphaEventAdd: 0xB0C2B9CE
+          sceSulphaEventDelete: 0xD5D995A9
+          sceSulphaEventNew: 0xBF61F3B8
+          sceSulphaEventReport: 0xBC6A2833
+          sceSulphaFileConnect: 0x7968A138
+          sceSulphaFileDisconnect: 0xB16E7B88
+          sceSulphaGetAgent: 0xDE7E2911
+          sceSulphaGetDefaultConfig: 0xA6A05C50
+          sceSulphaGetNeededMemory: 0xD52E5A5A
+          sceSulphaGetTimestamp: 0x29F0DA12
+          sceSulphaInit: 0x324F158F
+          sceSulphaLogHandler: 0x5C6815C6
+          sceSulphaLogSetLevel: 0x951D159D
+          sceSulphaNetworkInit: 0xB4668AEA
+          sceSulphaNetworkShutdown: 0x0FC71B72
+          sceSulphaNodeDelete: 0xD44C9F86
+          sceSulphaNodeNew: 0xA41B7402
+          sceSulphaSetBookmark: 0x5E15E164
+          sceSulphaShutdown: 0x10770BA7
+          sceSulphaUpdate: 0x920EC7BF

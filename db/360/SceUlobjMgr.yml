@@ -1,0 +1,13 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUlobjMgr:
+    nid: 0xAC99A848
+    libraries:
+      SceUlobjMgr:
+        kernel: false
+        nid: 0xDB18BB68
+        functions:
+          _sceUlobjMgrRegisterLibultProtocolRevision: 0x50F2F2AA
+          _sceUlobjMgrStartSupportingUserlevelObject: 0x08769991
+          _sceUlobjMgrStopSupportingUserlevelObject: 0xEF09284B

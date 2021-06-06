@@ -1,0 +1,15 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLibDbg:
+    nid: 0x0E0ABB49
+    libraries:
+      SceDbg:
+        kernel: false
+        nid: 0x623DF986
+        functions:
+          sceDbgAssertionHandler: 0x1AF3678B
+          sceDbgLoggingHandler: 0x6605AB19
+          sceDbgSetBreakOnErrorState: 0xED4A00BA
+          sceDbgSetBreakOnWarningState: 0x3DEAECD3
+          sceDbgSetMinimumLogLevel: 0x941622FA

@@ -1,0 +1,26 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCodecEngineWrapper:
+    nid: 0x50CC4832
+    libraries:
+      SceCodecEngineWrapper:
+        kernel: false
+        nid: 0x5C9EE5B9
+        functions:
+          _sceCodecEngineAllocMemoryFromUnmapMemBlock: 0x03DCBDCA
+          _sceCodecEngineChangeNumWorkerCores: 0x7E5E1F38
+          _sceCodecEngineChangeNumWorkerCoresDefault: 0x362E9415
+          _sceCodecEngineChangeNumWorkerCoresMax: 0x04BA9415
+          _sceCodecEngineCloseUnmapMemBlock: 0xAD30912D
+          _sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x489FF965
+          _sceCodecEngineGetMemoryState: 0x1E9E5A79
+          _sceCodecEngineGetNumRpcCalled: 0x9B157692
+          _sceCodecEngineGetProcessorLoad: 0x241B194B
+          _sceCodecEngineOpenUnmapMemBlock: 0xB0E654EE
+          _sceCodecEnginePmonGetProcessorLoad: 0x3EBA4982
+          _sceCodecEnginePmonReset: 0xCA79BFC4
+          _sceCodecEnginePmonStart: 0x6AF71F08
+          _sceCodecEnginePmonStop: 0x04D5F36B
+          _sceCodecEngineResetNumRpcCalled: 0x8EFF2DAA
+          _sceCodecEngineSetClockFrequency: 0xDE5EF6CC

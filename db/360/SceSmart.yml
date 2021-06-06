@@ -1,0 +1,54 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSmart:
+    nid: 0x000000CE
+    libraries:
+      SceSmart:
+        kernel: false
+        nid: 0xC2D4E61A
+        functions:
+          sceSmartCreateInstantImageTarget: 0x57C17649
+          sceSmartCreateLearnedImageTarget: 0x5A31446E
+          sceSmartDestroyTarget: 0x0C6A1DA8
+          sceSmartGetTargetInfo: 0x23EDFA9A
+          sceSmartInit: 0x58979C84
+          sceSmartRelease: 0x43DF6D9C
+          sceSmartSceneMappingDispatchAndQuery: 0xF10FDDD1
+          sceSmartSceneMappingDispatchAndQueryWithMask: 0x4D9EA817
+          sceSmartSceneMappingEnableMask: 0x7C4731E2
+          sceSmartSceneMappingFixMap: 0xA96B997B
+          sceSmartSceneMappingForceLocalize: 0x6D4081D3
+          sceSmartSceneMappingGetInitializationPointInfo: 0x9A578A29
+          sceSmartSceneMappingGetLandmarkInfo: 0xB17057EA
+          sceSmartSceneMappingGetNodePointInfo: 0x607AACB5
+          sceSmartSceneMappingGetNumInitializationPoints: 0xDF900B29
+          sceSmartSceneMappingGetNumLandmarks: 0x2260E8BB
+          sceSmartSceneMappingGetNumNodePoints: 0x3159D38C
+          sceSmartSceneMappingLoadMap: 0x961367D3
+          sceSmartSceneMappingPropagateResult: 0x5A9EC64D
+          sceSmartSceneMappingRegisterTarget: 0x55C37F31
+          sceSmartSceneMappingRemoveLandmark: 0x9F30C12A
+          sceSmartSceneMappingReset: 0xC1AD43BC
+          sceSmartSceneMappingRun: 0xC7EBD753
+          sceSmartSceneMappingRunCore: 0xCB30BD4D
+          sceSmartSceneMappingSaveMap: 0x4907021F
+          sceSmartSceneMappingSetCustomListener: 0x4A4F20EF
+          sceSmartSceneMappingSetDenseMapMode: 0xE7867558
+          sceSmartSceneMappingSetDispatchMode: 0xA4EC7755
+          sceSmartSceneMappingStart: 0xA3A82B99
+          sceSmartSceneMappingStop: 0x52EB57E4
+          sceSmartSceneMappingUnregisterTarget: 0x6807CA97
+          sceSmartTargetTrackingDispatchAndQuery: 0x7FE71305
+          sceSmartTargetTrackingGetResults: 0x648C7E15
+          sceSmartTargetTrackingQuery: 0x2808C8CB
+          sceSmartTargetTrackingQuery2: 0xD17EF0B2
+          sceSmartTargetTrackingRegisterTarget: 0x8ACADD54
+          sceSmartTargetTrackingReset: 0xA4A155B5
+          sceSmartTargetTrackingRun: 0xBFD87F61
+          sceSmartTargetTrackingRun2: 0x245EC28A
+          sceSmartTargetTrackingRunWorker: 0x8AE7354A
+          sceSmartTargetTrackingSetSearchPolicy: 0x35344A8E
+          sceSmartTargetTrackingStart: 0x5A121F6C
+          sceSmartTargetTrackingStop: 0xC4C607C0
+          sceSmartTargetTrackingUnregisterTarget: 0x6EE07829

@@ -1,0 +1,24 @@
+version: 2
+firmware: 3.60
+modules:
+  SceDriverUser:
+    nid: 0xAD0AEA9A
+    libraries:
+      SceDrmBridgeUser:
+        kernel: false
+        nid: 0x91AFEB43
+        functions:
+          _sceDrmBridgeGetCurrentSecureTick: 0x7C994327
+          _sceDrmBridgeIsAllowRemotePlayDebug: 0x1F82FF68
+          _sceDrmBridgeMlnpsnlAuth1: 0x7D0DB83F
+          _sceDrmBridgeMlnpsnlAuth2: 0x6471937D
+      SceErrorUser:
+        kernel: false
+        nid: 0xD401318D
+        functions:
+          sceErrorGetExternalString: 0xA4DE5B69
+          sceErrorHistoryClearError: 0x7DF547D1
+          sceErrorHistoryGetError: 0xB908B17F
+          sceErrorHistoryPostError: 0xBC416CFA
+          sceErrorHistorySetDefaultFormat: 0x395240A1
+          sceErrorHistoryUpdateSequenceInfo: 0x1AA2E39E

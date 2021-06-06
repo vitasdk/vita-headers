@@ -1,0 +1,23 @@
+version: 2
+firmware: 3.60
+modules:
+  SceWlanBt:
+    nid: 0x99052D93
+    libraries:
+      SceWlan:
+        kernel: false
+        nid: 0x22821EA3
+        functions:
+          sceWlanGetConfiguration: 0x70AF9BD6
+          sceWlanGetWakeOnTargetProcess: 0x18E6AFB2
+          sceWlanRegisterCallback: 0xAA2E46F6
+          sceWlanSetConfiguration: 0xDBE8AEF2
+          sceWlanUnregisterCallback: 0x826DC04F
+      SceWlanBtForDriver:
+        kernel: true
+        nid: 0xFD94FCE9
+        functions:
+          ksceWlanBtAttachMonitor: 0xC5AA6F43
+          ksceWlanBtDetachMonitor: 0xA7FDE9DC
+          ksceWlanBtGetConfiguration: 0x0FC89113
+          ksceWlanBtSetConfiguration: 0x4C96C3B7

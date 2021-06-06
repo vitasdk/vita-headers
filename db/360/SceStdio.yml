@@ -1,0 +1,13 @@
+version: 2
+firmware: 3.60
+modules:
+  SceStdio:
+    nid: 0x771A73C0
+    libraries:
+      SceStdio:
+        kernel: false
+        nid: 0x8997609C
+        functions:
+          sceKernelStderr: 0x35EE7CF5
+          sceKernelStdin: 0x54237407
+          sceKernelStdout: 0x9033E9BD

@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCodecEnginePerf:
+    nid: 0x0000001A
+    libraries:
+      SceCodecEnginePerf:
+        kernel: false
+        nid: 0x9BF4FFAD
+        functions:
+          sceCodecEnginePmonGetProcessorLoad: 0x2C9DA711
+          sceCodecEnginePmonReset: 0x5D75DF62
+          sceCodecEnginePmonStart: 0x0635EB77
+          sceCodecEnginePmonStop: 0xD2EFAEA1

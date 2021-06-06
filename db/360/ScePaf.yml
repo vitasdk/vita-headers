@@ -1,0 +1,142 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePaf:
+    nid: 0xCD679177
+    libraries:
+      ScePafMisc:
+        kernel: false
+        nid: 0x3D643CE8
+        functions:
+          scePafGetCurrentClockLocalTime: 0x96345146
+          scePafSha1Init: 0xB38C53C0
+          scePafSha1Result: 0xB3BF59FC
+          scePafSha1Update: 0xE6BB459E
+          sce_paf_misc_does_file_exist: 0x95F14046
+      ScePafResource:
+        kernel: false
+        nid: 0x2836DC9B
+        functions:
+          scePafResourceGetAttribute: 0xAD8678FB
+          scePafResourceGetAttributeChar: 0x1546336D
+          scePafResourceGetAttributeData: 0x37720983
+          scePafResourceGetAttributeFloat: 0xBE772869
+          scePafResourceGetAttributeFloatArray: 0x7B360965
+          scePafResourceGetAttributeIdInt: 0xABFA169F
+          scePafResourceGetAttributeIdIntLpb: 0xABFA169F
+          scePafResourceGetAttributeIdStr: 0xBD3A6015
+          scePafResourceGetAttributeIdStrLpb: 0x445BCAAB
+          scePafResourceGetAttributeInteger: 0xE59C9265
+          scePafResourceGetAttributeIntegerArray: 0xD09CE709
+          scePafResourceGetAttributeString: 0xD2438FA7
+          scePafResourceGetAttributeStyleId: 0x15ADAAB4
+          scePafResourceGetChar: 0x0AD6B520
+          scePafResourceGetData: 0x86C66229
+          scePafResourceGetFloat: 0xDE684F4B
+          scePafResourceGetFloatArray: 0x3EBC0341
+          scePafResourceGetIdInt: 0xB43C8D9F
+          scePafResourceGetIdIntLpb: 0xB744416E
+          scePafResourceGetIdStr: 0x5DE85A41
+          scePafResourceGetIdStrLpb: 0x346E532C
+          scePafResourceGetInteger: 0x8A684E61
+          scePafResourceGetIntegerArray: 0xFDF977B9
+          scePafResourceGetString: 0xE2801CFE
+          scePafResourceGetStyleId: 0xBCD70379
+      ScePafStdc:
+        kernel: false
+        nid: 0xA7D28DAE
+        functions:
+          sce_paf_memalign: 0xAA9952E0
+          sce_paf_private_abs: 0x0F297A5E
+          sce_paf_private_atexit: 0x9A1D1ED1
+          sce_paf_private_atof: 0x9C251354
+          sce_paf_private_atoi: 0x5930D99A
+          sce_paf_private_atol: 0x086AD1FA
+          sce_paf_private_atoll: 0x47B19A87
+          sce_paf_private_bcmp: 0x1076722F
+          sce_paf_private_bcopy: 0x44C0825D
+          sce_paf_private_bsearch: 0x78AE1C51
+          sce_paf_private_bzero: 0xD21442B4
+          sce_paf_private_exit: 0x92BF63C9
+          sce_paf_private_fclose: 0xA005E879
+          sce_paf_private_fflush: 0x26A0A5F6
+          sce_paf_private_fgetc: 0xDEB581B4
+          sce_paf_private_fopen: 0x1BCCD0B9
+          sce_paf_private_fputc: 0xAF1831DC
+          sce_paf_private_fread: 0x43A53623
+          sce_paf_private_free: 0x1B77082E
+          sce_paf_private_free2: 0x5C468294
+          sce_paf_private_fseek: 0xFC10F9E9
+          sce_paf_private_ftell: 0x77CB5E21
+          sce_paf_private_fwrite: 0x4D5BB0F8
+          sce_paf_private_longjmp: 0x001BFAC2
+          sce_paf_private_look_ctype_table: 0x247C19A8
+          sce_paf_private_malloc: 0xFC5CD359
+          sce_paf_private_malloc2: 0xD8CC1AFE
+          sce_paf_private_memchr: 0x1D286681
+          sce_paf_private_memcmp: 0x79DFA2A2
+          sce_paf_private_memcpy: 0x2C5B6F9C
+          sce_paf_private_memcpy2: 0x5883A6E3
+          sce_paf_private_memmove: 0x01566828
+          sce_paf_private_memset: 0xE148AF94
+          sce_paf_private_memset2: 0x75ECC54E
+          sce_paf_private_qsort: 0xF7A11753
+          sce_paf_private_rand: 0xC9DACD41
+          sce_paf_private_setjmp: 0x2105FFAD
+          sce_paf_private_snprintf: 0x4E0D907E
+          sce_paf_private_sprintf: 0x19182BDA
+          sce_paf_private_srand: 0x772DF5A0
+          sce_paf_private_strcasecmp: 0x70A459B2
+          sce_paf_private_strcat: 0x2344E6F2
+          sce_paf_private_strchr: 0x1A22784C
+          sce_paf_private_strcmp: 0x5CD08A47
+          sce_paf_private_strcpy: 0xA523672C
+          sce_paf_private_strcspn: 0xB429DD2A
+          sce_paf_private_strlcat: 0x52A68C8D
+          sce_paf_private_strlcpy: 0x3D1AAC3A
+          sce_paf_private_strlen: 0xF5A2AA0C
+          sce_paf_private_strncasecmp: 0xA6014289
+          sce_paf_private_strncat: 0xD259BEAF
+          sce_paf_private_strncmp: 0x1E1EA818
+          sce_paf_private_strncpy: 0xE29DA0BF
+          sce_paf_private_strpbrk: 0xA14AB14F
+          sce_paf_private_strrchr: 0xFA2C892F
+          sce_paf_private_strspn: 0xE3F8F3D6
+          sce_paf_private_strtof: 0x945EA5EA
+          sce_paf_private_strtok: 0x15C4B5A4
+          sce_paf_private_strtok_r: 0x0D305F0E
+          sce_paf_private_strtol: 0xDB814C12
+          sce_paf_private_strtoll: 0x2F6B94FF
+          sce_paf_private_strtoul: 0x04FDF238
+          sce_paf_private_strtoull: 0xC05A18CA
+          sce_paf_private_swprintf: 0xF67F76D0
+          sce_paf_private_tolower: 0xDAC2EE4D
+          sce_paf_private_toupper: 0x761184A5
+          sce_paf_private_towlower: 0xC8C2CDAC
+          sce_paf_private_vsnprintf: 0x51C66C6E
+          sce_paf_private_vsprintf: 0x3079B56B
+          sce_paf_private_wcscasecmp: 0x92A125F6
+          sce_paf_private_wcscat: 0xDDDDD6E0
+          sce_paf_private_wcschr: 0x13833CAE
+          sce_paf_private_wcscmp: 0x822897E3
+          sce_paf_private_wcscpy: 0xE9B40477
+          sce_paf_private_wcscspn: 0xDE8B2091
+          sce_paf_private_wcslen: 0xBED4F3D0
+          sce_paf_private_wcsncasecmp: 0x8D65035E
+          sce_paf_private_wcsncat: 0x49023581
+          sce_paf_private_wcsncmp: 0xA41CD38D
+          sce_paf_private_wcsncpy: 0x21B784DD
+          sce_paf_private_wcsnlen: 0xDCE80ABB
+          sce_paf_private_wcspbrk: 0xD7A2DF29
+          sce_paf_private_wcsrchr: 0x439EB9D4
+          sce_paf_private_wcsspn: 0x85DB686E
+          sce_paf_private_wmemchr: 0x8236A020
+          sce_paf_private_wmemcmp: 0x381B6216
+          sce_paf_private_wmemcpy: 0x19B5B91D
+          sce_paf_private_wmemmove: 0x468A09B1
+          sce_paf_private_wmemset: 0x36890967
+      ScePafWidget:
+        kernel: false
+        nid: 0x073F8C68
+        functions:
+          scePafWidgetSetFontSize: 0x39B15B98

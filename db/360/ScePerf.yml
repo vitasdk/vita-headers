@@ -1,0 +1,37 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePerf:
+    nid: 0xA2727E86
+    libraries:
+      ScePerf:
+        kernel: false
+        nid: 0x447F047D
+        functions:
+          _pLibPerfCaptureFlagPtr: 0x936A5F31
+          _sceCpuRazorPopFiberUserMarker: 0x453AED06
+          _sceCpuRazorPushFiberUserMarker: 0x8F7B522C
+          _sceRazorCpuInit: 0x7AD6AC30
+          _sceRazorCpuWriteFiberUltPkt: 0x409D966A
+          scePerfArmPmonGetCounterValue: 0x6132A497
+          scePerfArmPmonReset: 0x35151735
+          scePerfArmPmonSelectEvent: 0x63CBEA8B
+          scePerfArmPmonSetCounterValue: 0x12F6C708
+          scePerfArmPmonSoftwareIncrement: 0x4264B4E7
+          scePerfArmPmonStart: 0xC9D969D5
+          scePerfArmPmonStop: 0xD1A40F54
+          scePerfGetTimebaseFrequency: 0x78EA4FFB
+          scePerfGetTimebaseValue: 0xBD9615E5
+          sceRazorCpuGetActivityMonitorTraceBuffer: 0xF7F8ADCE
+          sceRazorCpuGetUserMarkerTraceBuffer: 0x0DE231D4
+          sceRazorCpuIsCapturing: 0x8DA87B35
+          sceRazorCpuPopMarker: 0xDC3224C3
+          sceRazorCpuPushMarker: 0xC3DE4C0A
+          sceRazorCpuPushMarkerWithHud: 0x5CDC09EA
+          sceRazorCpuStartActivityMonitor: 0x3F29E937
+          sceRazorCpuStartCapture: 0xDAB63FC3
+          sceRazorCpuStartUserMarkerTrace: 0xAED36A40
+          sceRazorCpuStopActivityMonitor: 0x9D5B9621
+          sceRazorCpuStopCapture: 0x9C2C05C2
+          sceRazorCpuStopUserMarkerTrace: 0x4B47E144
+          sceRazorCpuSync: 0x4F1385E3

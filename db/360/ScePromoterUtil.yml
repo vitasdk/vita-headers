@@ -1,0 +1,23 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePromoterUtil:
+    nid: 0x770E22E0
+    libraries:
+      ScePromoterUtil:
+        kernel: false
+        nid: 0x31F237B6
+        functions:
+          scePromoterUtilityCheckExist: 0xBA9871E5
+          scePromoterUtilityDeletePkg: 0x7D46752F
+          scePromoterUtilityExit: 0xC95D24A6
+          scePromoterUtilityGetResult: 0x49B473F0
+          scePromoterUtilityGetSize: 0x1F5EA997
+          scePromoterUtilityGetState: 0xABEC74D2
+          scePromoterUtilityInit: 0x93451536
+          scePromoterUtilityPromoteImport: 0x4B37808F
+          scePromoterUtilityPromotePkg: 0x716C81F4
+          scePromoterUtilityPromotePkgWithRif: 0x86641BC6
+          scePromoterUtilityRemoveSavedata: 0xCB0A59B0
+          scePromoterUtilityUpdateLiveArea: 0x17D73ECA
+          scePromoterUtilityUpdateUpgradableStatus: 0x82E69783

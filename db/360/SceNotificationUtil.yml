@@ -1,0 +1,24 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNotificationUtil:
+    nid: 0x355BAF61
+    libraries:
+      SceNotificationUtil:
+        kernel: false
+        nid: 0xE19097C3
+        functions:
+          sceNotificationUtilCleanHistory: 0xB0FFFB7B
+          sceNotificationUtilSendNotification: 0xDE6F33F4
+      SceNotificationUtilBgApp:
+        kernel: false
+        nid: 0xA8AEF7DB
+        functions:
+          sceNotificationUtilBgAppInitialize: 0xCBE814C1
+      SceNotificationUtilProgress:
+        kernel: false
+        nid: 0x75602769
+        functions:
+          sceNotificationUtilProgressBegin: 0xFD0769B0
+          sceNotificationUtilProgressFinish: 0x8CD688A1
+          sceNotificationUtilProgressUpdate: 0xD9890A65

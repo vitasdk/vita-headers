@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUsbstorVStorDriver:
+    nid: 0x1150E326
+    libraries:
+      SceUsbstorVStor:
+        kernel: false
+        nid: 0x17F294B9
+        functions:
+          sceUsbstorVStorSetDeviceInfo: 0x14455C20
+          sceUsbstorVStorSetImgFilePath: 0x8C9F93AB
+          sceUsbstorVStorStart: 0xB606F1AF
+          sceUsbstorVStorStop: 0x0FD67059

@@ -1,0 +1,19 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePfsMgr:
+    nid: 0x538BA86B
+    libraries:
+      ScePfsMgrForKernel:
+        kernel: true
+        nid: 0xA067B56F
+        functions:
+          kscePfsAcidDirApprove: 0x8CDA249A
+          kscePfsAcidDirMount: 0x4A4A8243
+          kscePfsAcidDirSet: 0xB0CC0A1A
+          kscePfsAcidDirUnmount: 0x00C8AF80
+          kscePfsApprove: 0xD8D0FEE5
+          kscePfsDisapprove: 0x2D67D8CA
+          kscePfsMount: 0xA772209C
+          kscePfsMount2: 0x2D48AEA2
+          kscePfsUnmount: 0x680BC384

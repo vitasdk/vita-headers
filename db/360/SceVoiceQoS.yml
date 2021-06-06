@@ -1,0 +1,27 @@
+version: 2
+firmware: 3.60
+modules:
+  SceVoiceQoS:
+    nid: 0x9A89A62B
+    libraries:
+      SceVoiceQoS:
+        kernel: false
+        nid: 0x650551BC
+        functions:
+          sceVoiceQoSConnect: 0xE0C5CEEE
+          sceVoiceQoSCreateLocalEndpoint: 0xAAB54BE4
+          sceVoiceQoSCreateRemoteEndpoint: 0xBAB98727
+          sceVoiceQoSDeleteLocalEndpoint: 0x68FABF6F
+          sceVoiceQoSDeleteRemoteEndpoint: 0xC2F2C771
+          sceVoiceQoSDisconnect: 0x3C7A08B0
+          sceVoiceQoSEnd: 0xFB0B747B
+          sceVoiceQoSGetConnectionAttribute: 0xE81B8D44
+          sceVoiceQoSGetLocalEndpoint: 0xE5B4527D
+          sceVoiceQoSGetLocalEndpointAttribute: 0xC981AB3B
+          sceVoiceQoSGetRemoteEndpoint: 0x876A9B9C
+          sceVoiceQoSGetStatus: 0xC9DC1425
+          sceVoiceQoSInit: 0x4B5FFF1C
+          sceVoiceQoSReadPacket: 0x2D613549
+          sceVoiceQoSSetConnectionAttribute: 0xE757806F
+          sceVoiceQoSSetLocalEndpointAttribute: 0x540CEBA5
+          sceVoiceQoSWritePacket: 0x2FE1F28F

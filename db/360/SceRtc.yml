@@ -1,0 +1,112 @@
+version: 2
+firmware: 3.60
+modules:
+  SceRtc:
+    nid: 0x1E923AD1
+    libraries:
+      SceRtc:
+        kernel: false
+        nid: 0x3503487E
+        functions:
+          _sceRtcConvertLocalTimeToUtc: 0x0FC8AC41
+          _sceRtcConvertUtcToLocalTime: 0x1E61DDA4
+          _sceRtcFormatRFC2822: 0x2CD6AC86
+          _sceRtcFormatRFC2822LocalTime: 0x4C7ED349
+          _sceRtcFormatRFC3339: 0x7EE2CBEF
+          _sceRtcFormatRFC3339LocalTime: 0x4836474D
+          _sceRtcGetCurrentAdNetworkTick: 0x76EFA8FE
+          _sceRtcGetCurrentClock: 0x24947354
+          _sceRtcGetCurrentClockLocalTime: 0x41A6C861
+          _sceRtcGetCurrentDebugNetworkTick: 0xBF639B21
+          _sceRtcGetCurrentGpsTick: 0x3BA820E5
+          _sceRtcGetCurrentNetworkTick: 0x06F734FE
+          _sceRtcGetCurrentRetainedNetworkTick: 0xC17EA809
+          _sceRtcGetCurrentTick: 0x247EE33B
+          _sceRtcGetLastAdjustedTick: 0xEA157EC5
+          _sceRtcGetLastReincarnatedTick: 0xE13D0FE5
+          sceRtcGetAccumulativeTime: 0x258BE8EC
+      SceRtcForDriver:
+        kernel: true
+        nid: 0x0351D827
+        functions:
+          ksceRtcConvertLocalTimeToUtc: 0xAD2F3544
+          ksceRtcConvertUtcToLocal: 0xC6E03DD4
+          ksceRtcFormatRFC2822: 0xBA3415F8
+          ksceRtcFormatRFC2822LocalTime: 0x1F7FC209
+          ksceRtcFormatRFC3339: 0xD32AC698
+          ksceRtcFormatRFC3339LocalTime: 0x35925318
+          ksceRtcGetAccumulativeTime: 0x0A86FB04
+          ksceRtcGetAlarmTick: 0xC838275A
+          ksceRtcGetCurrentAdNetworkTick: 0x3E3C09A0
+          ksceRtcGetCurrentClock: 0xA930CD1A
+          ksceRtcGetCurrentClockLocalTime: 0x7DC0DF93
+          ksceRtcGetCurrentDebugNetworkTick: 0xC141632A
+          ksceRtcGetCurrentGpsTick: 0xF69B610F
+          ksceRtcGetCurrentNetworkTick: 0xF1517B38
+          ksceRtcGetCurrentRetainedNetworkTick: 0x40B4BCFF
+          ksceRtcGetCurrentSecureTick: 0x401C0954
+          ksceRtcGetCurrentTick: 0xDEC408D4
+          ksceRtcGetLastAdjustedTick: 0x8A987573
+          ksceRtcGetLastReincarnatedTick: 0x3D614A9A
+          ksceRtcGetSecureAlarmTick: 0xBD53731C
+          ksceRtcIsAlarmed: 0xCD295F0C
+          ksceRtcIsSecureAlarmed: 0xE39F2ABE
+          ksceRtcRegisterCallback: 0x5220870D
+          ksceRtcRegisterSecureAlarmCallback: 0xCF84DFC0
+          ksceRtcSetAlarmTick: 0xD610C646
+          ksceRtcSetConf: 0xACFE5A9F
+          ksceRtcSetCurrentDebugNetworkTick: 0xAAB6053F
+          ksceRtcSetCurrentNetworkTick: 0x162E486E
+          ksceRtcSetCurrentSecureTick: 0x7D431C87
+          ksceRtcSetCurrentTick: 0x70A78CD2
+          ksceRtcSetSecureAlarmTick: 0x8333790D
+          ksceRtcUnregisterCallback: 0x9546C68B
+          ksceRtcUnregisterSecureAlarmCallback: 0xEDDC2325
+      SceRtcUser:
+        kernel: false
+        nid: 0x6704D3C6
+        functions:
+          sceRtcCheckValid: 0xD7622935
+          sceRtcCompareTick: 0xC7385158
+          sceRtcConvertLocalTimeToUtc: 0x0A05E201
+          sceRtcConvertUtcToLocalTime: 0x1282C436
+          sceRtcFormatRFC2822: 0x147F2138
+          sceRtcFormatRFC2822LocalTime: 0x42CA8EB5
+          sceRtcFormatRFC3339: 0xCCEA2B54
+          sceRtcFormatRFC3339LocalTime: 0x742250A9
+          sceRtcGetCurrentAdNetworkTick: 0x5612AF12
+          sceRtcGetCurrentClock: 0x70FDE8F1
+          sceRtcGetCurrentClockLocalTime: 0x0572EDDC
+          sceRtcGetCurrentDebugNetworkTick: 0x4ED6BA6C
+          sceRtcGetCurrentGpsTick: 0xBB92534F
+          sceRtcGetCurrentNetworkTick: 0xCDDD25FE
+          sceRtcGetCurrentRetainedNetworkTick: 0xA086AE18
+          sceRtcGetCurrentTick: 0x23F79274
+          sceRtcGetDayOfWeek: 0x2F3531EB
+          sceRtcGetDayOfYear: 0xB5C4E95F
+          sceRtcGetDaysInMonth: 0x49EB4556
+          sceRtcGetDosTime: 0x92ABEBAF
+          sceRtcGetLastAdjustedTick: 0x8148E95C
+          sceRtcGetLastReincarnatedTick: 0xA8C16615
+          sceRtcGetTick: 0xF2B238E2
+          sceRtcGetTickResolution: 0x811313B3
+          sceRtcGetTime64_t: 0xC995DE02
+          sceRtcGetTime_t: 0x8DE6FEB7
+          sceRtcGetWin32FileTime: 0x8A95E119
+          sceRtcIsLeapYear: 0xF17FD8B5
+          sceRtcParseDateTime: 0x2347CE12
+          sceRtcParseRFC3339: 0x2D18AEEC
+          sceRtcSetDosTime: 0xF8B22B07
+          sceRtcSetTick: 0xCD89F464
+          sceRtcSetTime64_t: 0xA6C36B6A
+          sceRtcSetTime_t: 0x3A332F81
+          sceRtcSetWin32FileTime: 0xA79A8846
+          sceRtcTickAddDays: 0x58DE3C70
+          sceRtcTickAddHours: 0x6F193F55
+          sceRtcTickAddMicroseconds: 0xAE26D920
+          sceRtcTickAddMinutes: 0x4C358871
+          sceRtcTickAddMonths: 0x6321B4AA
+          sceRtcTickAddSeconds: 0x979AFD79
+          sceRtcTickAddTicks: 0x4559E2DB
+          sceRtcTickAddWeeks: 0xE713C640
+          sceRtcTickAddYears: 0xDF6C3E1B
