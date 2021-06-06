@@ -3,6 +3,7 @@ import glob
 
 
 DEFAULT_BUILD_OUTDIR = 'build'
+CURR_DIR = os.path.dirname(os.path.realpath(__file__))
 
 def execute(cmd, force_print=False):
     with os.popen(cmd) as r:
@@ -52,11 +53,11 @@ if __name__ == '__main__':
         if definition_check():
             raise SystemExit(1)
 
-        for yml in glob.glob(os.path.join('db', '**', '*.yml')):
+        for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
             if definition_ordering(yml):
                 raise SystemExit(2)
 
-    for yml in glob.glob(os.path.join('db', '**', '*.yml')):
+    for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
         dirs, fn = (os.path.split(yml))
         _, ver = os.path.split(dirs)
         build_target = os.path.join(outdir, ver, fn)
