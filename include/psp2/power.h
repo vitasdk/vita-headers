@@ -113,7 +113,7 @@ SceBool scePowerIsPowerOnline(void);
 /**
  * Returns battery life time
  *
- * @return Battery life time in seconds
+ * @return Battery life time in minutes
  */
 int scePowerGetBatteryLifeTime(void);
 
