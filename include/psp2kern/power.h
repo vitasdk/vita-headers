@@ -89,7 +89,7 @@ SceBool kscePowerIsPowerOnline(void);
 /**
  * Returns battery life time
  *
- * @return Battery life time in seconds
+ * @return Battery life time in minutes
  */
 int kscePowerGetBatteryLifeTime(void);
 
