@@ -1,0 +1,18 @@
+version: 2
+firmware: 3.60
+modules:
+  SceScreenShot:
+    nid: 0x56675E0A
+    libraries:
+      SceScreenShot:
+        kernel: false
+        nid: 0xF26FC97D
+        functions:
+          sceScreenShotCapture: 0xD509FB08
+          sceScreenShotDisable: 0x50AE9FF9
+          sceScreenShotDisableNotification: 0xDA80A228
+          sceScreenShotEnable: 0x76E674D1
+          sceScreenShotEnableNotification: 0x816633FE
+          sceScreenShotGetParam: 0xBAE9E534
+          sceScreenShotSetOverlayImage: 0x7061665B
+          sceScreenShotSetParam: 0x05DB59C7

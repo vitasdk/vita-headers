@@ -1,0 +1,28 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpSignaling:
+    nid: 0xEA76DE9E
+    libraries:
+      SceNpSignaling:
+        kernel: false
+        nid: 0xEE59FC02
+        functions:
+          sceNpSignalingActivateConnection: 0x92FFBDE3
+          sceNpSignalingCancelPeerNetInfo: 0x5048E147
+          sceNpSignalingCreateCtx: 0xF77EF683
+          sceNpSignalingDeactivateConnection: 0x3B56E6C2
+          sceNpSignalingDestroyCtx: 0xEAA4B1F3
+          sceNpSignalingGetConnectionFromNpId: 0x3EC1F4AA
+          sceNpSignalingGetConnectionFromPeerAddress: 0x6B9E6E3F
+          sceNpSignalingGetConnectionInfo: 0x51883EAE
+          sceNpSignalingGetConnectionStatus: 0x83B3DA0A
+          sceNpSignalingGetCtxOpt: 0x9D1C5303
+          sceNpSignalingGetLocalNetInfo: 0x5861E7BA
+          sceNpSignalingGetMemoryInfo: 0x995A5A74
+          sceNpSignalingGetPeerNetInfo: 0x5D660C45
+          sceNpSignalingGetPeerNetInfoResult: 0xDE8536F0
+          sceNpSignalingInit: 0x4B6ACF47
+          sceNpSignalingSetCtxOpt: 0x0B48FADB
+          sceNpSignalingTerm: 0xBC892D18
+          sceNpSignalingTerminateConnection: 0xA413F8C2

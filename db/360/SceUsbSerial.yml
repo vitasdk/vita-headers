@@ -1,0 +1,28 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUsbSerial:
+    nid: 0xB3C543D4
+    libraries:
+      SceUsbSerial:
+        kernel: false
+        nid: 0x2820117D
+        functions:
+          sceUsbSerialClose: 0xF2415853
+          sceUsbSerialGetRecvBufferSize: 0xE8567A87
+          sceUsbSerialRecv: 0xF26DC8D8
+          sceUsbSerialSend: 0x89E71202
+          sceUsbSerialSetup: 0x290E08B4
+          sceUsbSerialStart: 0xE3BEC18C
+          sceUsbSerialStatus: 0xA6A2F5DE
+      SceUsbSerialForDriver:
+        kernel: true
+        nid: 0x8829C2F3
+        functions:
+          ksceUsbSerialClose: 0xE6B1E64F
+          ksceUsbSerialGetRecvBufferSize: 0xF531B5AE
+          ksceUsbSerialRecv: 0x6B5E296F
+          ksceUsbSerialSend: 0x0C2E73C0
+          ksceUsbSerialSetup: 0x590B8F97
+          ksceUsbSerialStart: 0xFEE7F4BA
+          ksceUsbSerialStatus: 0x8C426906

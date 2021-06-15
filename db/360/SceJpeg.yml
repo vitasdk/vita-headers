@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceJpeg:
+    nid: 0x00000044
+    libraries:
+      SceJpegUser:
+        kernel: false
+        nid: 0x880BF710
+        functions:
+          sceJpegCreateSplitDecoder: 0x123B4734
+          sceJpegCsc: 0x6263AEC2
+          sceJpegDecodeMJpeg: 0x6215B095
+          sceJpegDecodeMJpegYCbCr: 0x2A769BD8
+          sceJpegDeleteSplitDecoder: 0xDE8D5FA1
+          sceJpegFinishMJpeg: 0x62842598
+          sceJpegGetOutputInfo: 0x353BA9B0
+          sceJpegInitMJpeg: 0xB030773B
+          sceJpegInitMJpegWithParam: 0x518163A7
+          sceJpegMJpegCsc: 0xC2380E3A
+          sceJpegSplitDecodeMJpeg: 0x4598EC9C

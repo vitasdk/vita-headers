@@ -1,0 +1,16 @@
+version: 2
+firmware: 3.60
+modules:
+  SceMsif:
+    nid: 0x3305A0FE
+    libraries:
+      SceMsifForDriver:
+        kernel: true
+        nid: 0xB706084A
+        functions:
+          ksceMsifDisableSlowMode: 0x75848756
+          ksceMsifEnableSlowMode: 0x4B751CE6
+          ksceMsifGetMsInfo: 0xD0307849
+          ksceMsifGetSlowModeState: 0x491E25B5
+          ksceMsifReadSector: 0x58654AA3
+          ksceMsifWriteSector: 0x329035EF

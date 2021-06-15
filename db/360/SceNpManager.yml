@@ -1,0 +1,25 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpManager:
+    nid: 0x2D4B5F41
+    libraries:
+      SceNpManager:
+        kernel: false
+        nid: 0xD8835093
+        functions:
+          sceNpAuthAbortOAuthRequest: 0xECBC7614
+          sceNpAuthCreateOAuthRequest: 0x555EB58C
+          sceNpAuthDeleteOAuthRequest: 0x8C94C7A5
+          sceNpAuthGetAuthorizationCode: 0x65DFB208
+          sceNpCheckCallback: 0x3B0AE9A9
+          sceNpGetServiceState: 0x54060DF6
+          sceNpInit: 0x04D9F484
+          sceNpManagerGetAccountRegion: 0xFE835967
+          sceNpManagerGetCachedParam: 0x43DC48A1
+          sceNpManagerGetChatRestrictionFlag: 0x60C575B1
+          sceNpManagerGetContentRatingFlag: 0xAF0073B2
+          sceNpManagerGetNpId: 0x3C94B4B4
+          sceNpRegisterServiceStateCallback: 0x44239C35
+          sceNpTerm: 0x19E40AE1
+          sceNpUnregisterServiceStateCallback: 0xD9E6E56C

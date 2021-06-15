@@ -1,0 +1,23 @@
+version: 2
+firmware: 3.60
+modules:
+  SceTeleportClient:
+    nid: 0x59E1282B
+    libraries:
+      SceTeleportClient:
+        kernel: false
+        nid: 0xE68FB26D
+        functions:
+          sceTeleportClientClearCacheInfo: 0xE1491C21
+          sceTeleportClientDeleteRemoteApp: 0xB0F81AF3
+          sceTeleportClientEndSearchDevice: 0x2EBCF588
+          sceTeleportClientFinalize: 0x26779A35
+          sceTeleportClientGetCacheInfo: 0x8534FF0F
+          sceTeleportClientGetDeviceDescription: 0xBB89052D
+          sceTeleportClientGetRemoteAppInfo: 0xEE9AEE60
+          sceTeleportClientGetRemoteAppInfoNum: 0x931E4029
+          sceTeleportClientInitialize: 0x48DEB4C8
+          sceTeleportClientLaunchRemoteApp: 0xE076A357
+          sceTeleportClientRegisterGetDeviceInfoCallback: 0xBA0D42D9
+          sceTeleportClientStartSearchDevice: 0x1775E8ED
+          sceTeleportClientWakeupLatestDevice: 0x9336895E

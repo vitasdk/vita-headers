@@ -1,0 +1,74 @@
+version: 2
+firmware: 3.60
+modules:
+  SceVideodec:
+    nid: 0x000000DE
+    libraries:
+      SceVideodecUser:
+        kernel: false
+        nid: 0x163C3727
+        functions:
+          sceAvcdecCreateDecoder: 0xE82BB69B
+          sceAvcdecCreateDecoderInternal: 0x808FECBD
+          sceAvcdecCreateDecoderNongameapp: 0x3102196C
+          sceAvcdecCsc: 0xB2A428DB
+          sceAvcdecCscInternal: 0xC300BF46
+          sceAvcdecDecode: 0xD6190A06
+          sceAvcdecDecodeAuInternal: 0x2385A82B
+          sceAvcdecDecodeAuNalAuInternal: 0x68628BC4
+          sceAvcdecDecodeAuNalAuNongameapp: 0x0E4A6EE3
+          sceAvcdecDecodeAuNongameapp: 0x867C75AD
+          sceAvcdecDecodeAvailableSize: 0x441673E3
+          sceAvcdecDecodeFlush: 0x25F31020
+          sceAvcdecDecodeGetPictureInternal: 0x63237A8F
+          sceAvcdecDecodeGetPictureNongameapp: 0xCF3CFC70
+          sceAvcdecDecodeGetPictureWithWorkPictureInternal: 0x66F65155
+          sceAvcdecDecodeNalAu: 0x6C68A38F
+          sceAvcdecDecodeNalAuWithWorkPicture: 0xDDF41798
+          sceAvcdecDecodeSetTrickModeNongameapp: 0x7AEB56AB
+          sceAvcdecDecodeSetUserDataSei1FieldMemSizeNongameapp: 0xD037206A
+          sceAvcdecDecodeStop: 0x9648D853
+          sceAvcdecDecodeStopWithWorkPicture: 0x67AD42C3
+          sceAvcdecDecodeWithWorkPicture: 0xBA5A009B
+          sceAvcdecDeleteDecoder: 0x8A0E359E
+          sceAvcdecGetSeiPictureTimingInternal: 0x8EB07E2F
+          sceAvcdecGetSeiUserDataNongameapp: 0xD6B26396
+          sceAvcdecQueryDecoderMemSize: 0x97E95EDB
+          sceAvcdecQueryDecoderMemSizeInternal: 0x7BC8DFEA
+          sceAvcdecQueryDecoderMemSizeNongameapp: 0xFA072F66
+          sceAvcdecRegisterCallbackInternal: 0x8FA94451
+          sceAvcdecRegisterCallbackNongameapp: 0x497F7EC7
+          sceAvcdecSetDecodeMode: 0x75803C83
+          sceAvcdecSetDecodeModeInternal: 0xF57CC2BC
+          sceAvcdecSetInterlacedStreamMode: 0x2DD70FC8
+          sceAvcdecSetLowDelayModeNongameapp: 0xD57F82C1
+          sceAvcdecSetRecoveryPointSEIMode: 0x58C620EC
+          sceAvcdecUnregisterCallbackInternal: 0x24E905BF
+          sceAvcdecUnregisterCallbackNongameapp: 0xE07A91B5
+          sceAvcdecUnregisterCallbackWithCbidInternal: 0x001069FB
+          sceAvcdecUnregisterCallbackWithCbidNongameapp: 0x7761522A
+          sceM4vdecCreateDecoder: 0x17C6AC9E
+          sceM4vdecCreateDecoderInternal: 0x4D4CA34E
+          sceM4vdecCsc: 0xB4BC325B
+          sceM4vdecDecode: 0x624664DB
+          sceM4vdecDecodeAvailableSize: 0xA8CF1942
+          sceM4vdecDecodeFlush: 0x7C460D75
+          sceM4vdecDecodeStop: 0x87CFD23B
+          sceM4vdecDecodeStopWithWorkPicture: 0xC1CF351F
+          sceM4vdecDecodeWithWorkPicture: 0x8F36574D
+          sceM4vdecDeleteDecoder: 0x0EB2E4E7
+          sceM4vdecQueryDecoderMemSize: 0xC67C1A80
+          sceM4vdecQueryDecoderMemSizeInternal: 0x84DC8101
+          sceVideodecInitLibrary: 0xF1AF65A3
+          sceVideodecInitLibraryInternal: 0x0FD286E0
+          sceVideodecInitLibraryNongameapp: 0x26F3C35D
+          sceVideodecInitLibraryWithUnmapMem: 0x230A78FF
+          sceVideodecInitLibraryWithUnmapMemInternal: 0x36ADE1E5
+          sceVideodecInitLibraryWithUnmapMemNongameapp: 0x108C1FEC
+          sceVideodecQueryInstanceNongameapp: 0xEF03E31B
+          sceVideodecQueryMemSize: 0x6731BB2D
+          sceVideodecQueryMemSizeInternal: 0xEB48554F
+          sceVideodecQueryMemSizeNongameapp: 0x2D9AE981
+          sceVideodecSetConfig: 0x9B871779
+          sceVideodecSetConfigInternal: 0x4A9CB138
+          sceVideodecTermLibrary: 0x3A5F4924

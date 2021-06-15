@@ -18,8 +18,6 @@ before_script:
 script:
     - set -e
     - cd $TRAVIS_BUILD_DIR
-    - python $TRAVIS_BUILD_DIR/.travis.d/definition_check.py
-    - bash $TRAVIS_BUILD_DIR/.travis.d/definition_ordering.sh
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
     - export VITASDK=$PWD/vitasdk
     - export PATH=$VITASDK/bin:$PATH
@@ -34,10 +32,7 @@ script:
     - rm -rf *_stub.a
     - cd $TRAVIS_BUILD_DIR
     - cp -r include/* $VITASDK/arm-vita-eabi/include
-    - vita-libs-gen db.yml output
-    - cd output
-    - make > /dev/null
-    - cp *_stub.a $VITASDK/arm-vita-eabi/lib
+    - USE_LINT=1 python build.py output
     - cd $TRAVIS_BUILD_DIR
     - git clone https://github.com/vitasdk/samples
     - cd samples

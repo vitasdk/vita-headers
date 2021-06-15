@@ -1,0 +1,25 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAudiodec:
+    nid: 0x0000000C
+    libraries:
+      SceAudiodecUser:
+        kernel: false
+        nid: 0x2AA62046
+        functions:
+          sceAudiodecClearContext: 0xF72F9B64
+          sceAudiodecCreateDecoder: 0x4DFD3AAA
+          sceAudiodecCreateDecoderExternal: 0x56085DFB
+          sceAudiodecCreateDecoderResident: 0x98B44E1B
+          sceAudiodecDecode: 0xCCDABA04
+          sceAudiodecDecodeNFrames: 0x8018AA9B
+          sceAudiodecDecodeNStreams: 0x68F4A9CB
+          sceAudiodecDeleteDecoder: 0xE7A24E16
+          sceAudiodecDeleteDecoderExternal: 0xE4EA05BB
+          sceAudiodecDeleteDecoderResident: 0x164DAEDA
+          sceAudiodecGetContextSize: 0xDB712ABC
+          sceAudiodecGetInternalError: 0x883B0CF5
+          sceAudiodecInitLibrary: 0x445C2CEF
+          sceAudiodecPartlyDecode: 0x2742E642
+          sceAudiodecTermLibrary: 0x45719B9D

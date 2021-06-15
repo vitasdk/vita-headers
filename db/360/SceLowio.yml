@@ -1,0 +1,85 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLowio:
+    nid: 0x17E0D8DF
+    libraries:
+      SceDsiForDriver:
+        kernel: true
+        nid: 0xEC897883
+        functions:
+          ksceDsiDcsRead: 0x3FB0DF1F
+          ksceDsiDcsShortWrite: 0xBA6BC89F
+          ksceDsiDisableHead: 0x114D1413
+          ksceDsiEnableHead: 0x5BE5AA9B
+          ksceDsiGenericReadRequest: 0x98120684
+          ksceDsiGenericShortWrite: 0x89C00D2F
+          ksceDsiGetPixelClock: 0x4DF9E924
+          ksceDsiGetVicResolution: 0xB3A70C05
+          ksceDsiSendBlankingPacket: 0x7640F607
+          ksceDsiSetLanesAndPixelSize: 0x78E6E3CF
+          ksceDsiSetVic: 0x97BFEA76
+          ksceDsiStartDisplay: 0xC2E85919
+      SceGpioForDriver:
+        kernel: true
+        nid: 0xF0EF5743
+        functions:
+          ksceGpioAcquireIntr: 0x35AAD77A
+          ksceGpioGetIntrMode: 0xE97A3B31
+          ksceGpioGetPortMode: 0xC4CB78E2
+          ksceGpioPortClear: 0xF6310435
+          ksceGpioPortRead: 0x129DF5AC
+          ksceGpioPortReset: 0xA1B5A462
+          ksceGpioPortSet: 0xD454A584
+          ksceGpioQueryIntr: 0x010DC295
+          ksceGpioSetIntrMode: 0xBBEA1DDC
+          ksceGpioSetPortMode: 0x372022A4
+      SceI2cForDriver:
+        kernel: true
+        nid: 0xE14BEF6E
+        functions:
+          ksceI2cInit: 0x9CF8F3D6
+          ksceI2cReset: 0x76D277AB
+          ksceI2cSetDebugHandlers: 0xA2C7CE62
+          ksceI2cTransferRead: 0xD1D0A9A4
+          ksceI2cTransferWrite: 0xCA94A759
+          ksceI2cTransferWriteRead: 0x0A40B7BF
+      SceIftuForDriver:
+        kernel: true
+        nid: 0xCAFCFE50
+        functions:
+          ksceIftuCsc: 0x67E37EFC
+          ksceIftuDisable: 0xC11F30B3
+          ksceIftuEnable: 0x0D7C02F7
+          ksceIftuSetInputFrameBuffer: 0x7CE0C4DA
+          ksceIftuSetMergeSetting: 0xAF19FD85
+          ksceIftuSetOutputFormat: 0xE6EE2C6B
+      ScePervasiveForDriver:
+        kernel: true
+        nid: 0xE692C727
+        functions:
+          kscePervasiveDsiClockDisable: 0x25AE181E
+          kscePervasiveDsiClockEnable: 0xBC42C72F
+          kscePervasiveDsiResetDisable: 0xFFB43AC2
+          kscePervasiveDsiResetEnable: 0xE3FC1C8D
+          kscePervasiveDsiSetPixelClock: 0x91C80C41
+          kscePervasiveGetSoCRevision: 0x714EEFB7
+          kscePervasiveGpioClockDisable: 0xEB176898
+          kscePervasiveGpioClockEnable: 0x2F195C97
+          kscePervasiveGpioResetDisable: 0x78C34032
+          kscePervasiveGpioResetEnable: 0x731A097D
+          kscePervasiveMsifClockDisable: 0x2A9778CD
+          kscePervasiveMsifClockEnable: 0x7704C013
+          kscePervasiveMsifResetDisable: 0xCB0F15CD
+          kscePervasiveMsifResetEnable: 0xA3569FF1
+          kscePervasiveMsifSetClock: 0x64ABE589
+          kscePervasiveRemovableMemoryGetCardInsertState: 0x551EEE82
+          kscePervasiveSpiClockDisable: 0xA85BF98A
+          kscePervasiveSpiClockEnable: 0xDFD96BFC
+          kscePervasiveSpiResetDisable: 0xE4B145AE
+          kscePervasiveSpiResetEnable: 0x7B16F900
+          kscePervasiveUartClockDisable: 0x18DD8043
+          kscePervasiveUartClockEnable: 0xEFD084D8
+          kscePervasiveUartResetDisable: 0xA7CE7DCC
+          kscePervasiveUartResetEnable: 0x788B6C61
+          kscePervasiveUartSetBaudrate: 0x8BAB45F8

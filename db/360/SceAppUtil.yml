@@ -1,0 +1,80 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAppUtil:
+    nid: 0xCE3E25D4
+    libraries:
+      SceAppUtil:
+        kernel: false
+        nid: 0x48E01D74
+        functions:
+          sceAppUtilAddCookieWebBrowser: 0xC97D5D9E
+          sceAppUtilAddcontMount: 0x53B2C020
+          sceAppUtilAddcontUmount: 0x1B36AF8C
+          sceAppUtilAppEventParseGameCustomData: 0x0B04C067
+          sceAppUtilAppEventParseIncomingDialog: 0x22297D59
+          sceAppUtilAppEventParseLiveArea: 0x0F4EE55F
+          sceAppUtilAppEventParseNearGift: 0x77380601
+          sceAppUtilAppEventParseNpActivity: 0xF6B75651
+          sceAppUtilAppEventParseNpAppDataMessage: 0x6BED9B58
+          sceAppUtilAppEventParseNpBasicJoinablePresence: 0x28C7D4F6
+          sceAppUtilAppEventParseNpInviteMessage: 0xA2496814
+          sceAppUtilAppEventParseScreenShotNotification: 0x2AF42D6A
+          sceAppUtilAppEventParseSessionInvitation: 0xA58E6FCE
+          sceAppUtilAppEventParseTeleport: 0x665A8B7E
+          sceAppUtilAppEventParseTriggerUtil: 0x8DEE696B
+          sceAppUtilAppEventParseWebBrowser: 0x8ED716F5
+          sceAppUtilAppParamGetInt: 0xCD7FD67A
+          sceAppUtilBgdlGetStatus: 0x96F478D6
+          sceAppUtilDrmClose: 0x6A140498
+          sceAppUtilDrmOpen: 0x2DB7BE3B
+          sceAppUtilInit: 0xDAFFE671
+          sceAppUtilLaunchWebBrowser: 0xF19D0423
+          sceAppUtilLoadSafeMemory: 0x3424D772
+          sceAppUtilMusicMount: 0xB5EDCBFF
+          sceAppUtilMusicUmount: 0xA7FE1BF7
+          sceAppUtilPhotoMount: 0xEE85804D
+          sceAppUtilPhotoUmount: 0x9651B941
+          sceAppUtilPspSaveDataGetDirNameList: 0x9942071D
+          sceAppUtilPspSaveDataLoad: 0x7402C6EA
+          sceAppUtilReceiveAppEvent: 0xEE0DBED9
+          sceAppUtilResetCookieWebBrowser: 0x4FAAD133
+          sceAppUtilSaveDataDataRemove: 0xD1C6AB8E
+          sceAppUtilSaveDataDataSave: 0x607647BA
+          sceAppUtilSaveDataGetQuota: 0xC560E716
+          sceAppUtilSaveDataMount: 0xE61453B0
+          sceAppUtilSaveDataSlotCreate: 0x7E8FE96A
+          sceAppUtilSaveDataSlotDelete: 0x266A7646
+          sceAppUtilSaveDataSlotGetParam: 0x93F0D89F
+          sceAppUtilSaveDataSlotSearch: 0xE6057A85
+          sceAppUtilSaveDataSlotSetParam: 0x98630136
+          sceAppUtilSaveDataUmount: 0xEB720402
+          sceAppUtilSaveSafeMemory: 0x9D8AC677
+          sceAppUtilShutdown: 0xB220B00B
+          sceAppUtilStoreBrowse: 0x85FA94EE
+          sceAppUtilSystemParamGetInt: 0x5DFB9CA0
+          sceAppUtilSystemParamGetString: 0x6E6AA267
+      SceAppUtilAddcontForce:
+        kernel: false
+        nid: 0x9D061921
+        functions:
+          sceAppUtilAddcontForceAddcontMount: 0x6087E5F7
+      SceAppUtilBook:
+        kernel: false
+        nid: 0xDA27A9D3
+        functions:
+          sceAppUtilBookMount: 0xFDAAF091
+          sceAppUtilBookUmount: 0x9C1794C2
+      SceAppUtilCache:
+        kernel: false
+        nid: 0xE96B941B
+        functions:
+          sceAppUtilCacheGetDevInfo: 0x1171B736
+          sceAppUtilCacheMount: 0x0AA56143
+          sceAppUtilCacheUmount: 0x72D26BF4
+      SceAppUtilExt:
+        kernel: false
+        nid: 0x76D1A509
+        functions:
+          sceAppUtilExtVideoMount: 0xA0380CF7
+          sceAppUtilExtVideoUmount: 0x02E1E2C4

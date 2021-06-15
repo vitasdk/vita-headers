@@ -1,0 +1,80 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSyscon:
+    nid: 0x5358BA05
+    libraries:
+      SceSysconForDriver:
+        kernel: true
+        nid: 0x60A35F64
+        functions:
+          ksceSysconBatteryExecBLCommand: 0x74B2AB55
+          ksceSysconBatteryReadBLCommand: 0x448DAFF1
+          ksceSysconBatterySWReset: 0x87DA378D
+          ksceSysconBatterySetBLCommand: 0xE4F29744
+          ksceSysconBatteryStartBLMode: 0x2CEF078E
+          ksceSysconBatteryStopBLMode: 0xE4AE7852
+          ksceSysconBeginConfigstorageTransaction: 0xA4968B8C
+          ksceSysconClearTemperatureLog: 0x3843D657
+          ksceSysconCmdExec: 0x9ADDCA4A
+          ksceSysconCmdExecAsync: 0xC2224E82
+          ksceSysconCmdSync: 0x6E517D22
+          ksceSysconCommitConfigstorageTransaction: 0x7B9B3617
+          ksceSysconCtrlAccPower: 0x8D1D97E8
+          ksceSysconCtrlDeviceReset: 0x40FF3898
+          ksceSysconCtrlHdmiCecPower: 0x62155962
+          ksceSysconCtrlHostOutputViaDongle: 0xDECCB2B4
+          ksceSysconCtrlLED: 0x04EC7579
+          ksceSysconCtrlManualChargeMode: 0xC6A2C9EF
+          ksceSysconCtrlRMRPower: 0x710A7CF0
+          ksceSysconCtrlSdPower: 0xBE1ADE4F
+          ksceSysconCtrlWirelessPower: 0x4FBDA504
+          ksceSysconCtrlWirelessPowerDown: 0xDF8C6D2D
+          ksceSysconEnableHibernateIO: 0x4946538A
+          ksceSysconEndConfigstorageTransaction: 0xFCC3E8EE
+          ksceSysconGetBaryonTimestamp: 0x4D588A0A
+          ksceSysconGetBaryonVersion: 0xFF86F4C5
+          ksceSysconGetBatteryCalibData: 0x9ADC9936
+          ksceSysconGetBatteryVersion: 0x68E0031E
+          ksceSysconGetControlsInfo: 0x145F59A4
+          ksceSysconGetHardwareInfo: 0xCBD6D8BC
+          ksceSysconGetHardwareInfo2: 0x965C68C3
+          ksceSysconGetLogInfo: 0x701535FC
+          ksceSysconGetManualChargeMode: 0x4FEC564C
+          ksceSysconGetManufacturesStatus: 0x3E09A1F4
+          ksceSysconGetMultiCnInfo: 0x1503D6A0
+          ksceSysconGetTemperatureLog: 0x3B354824
+          ksceSysconGetTouchpanelDeviceInfo: 0xF492E69E
+          ksceSysconGetUsbDetStatus: 0xEF810687
+          ksceSysconIduModeClear: 0x34574496
+          ksceSysconIduModeSet: 0x956D07CB
+          ksceSysconIsDownLoaderMode: 0x9ADD60D2
+          ksceSysconIsLowBatteryInhibitUpdateDownload: 0x1E3130EE
+          ksceSysconIsLowBatteryInhibitUpdateReboot: 0x1A0C140F
+          ksceSysconJigClosePort: 0x483FAE05
+          ksceSysconJigOpenPort: 0x44A173F5
+          ksceSysconJigSetConfig: 0xD24BF916
+          ksceSysconLoadConfigstorageScript: 0x89C5CFD6
+          ksceSysconLogReadData: 0x487D97F3
+          ksceSysconLogStart: 0x4E55CF5E
+          ksceSysconLogStartWaiting: 0x9C0B1E61
+          ksceSysconNvsReadData: 0xACAFA2B8
+          ksceSysconNvsSetRunMode: 0x81A6060D
+          ksceSysconNvsWriteData: 0x10C9657A
+          ksceSysconReadCommand: 0x299B1CE7
+          ksceSysconSendCommand: 0xE26488B9
+          ksceSysconSetAlarmCallback: 0x32418370
+          ksceSysconSetDebugHandlers: 0xF245CD6F
+          ksceSysconSetLowBatteryCallback: 0x3F0DB7C0
+          ksceSysconSetMultiCnPort: 0x8AAB6308
+          ksceSysconSetPowerMode: 0x8A95D35C
+          ksceSysconSetThermalAlertCallback: 0x773B8126
+          ksceSysconShowModeClear: 0x8D7724C0
+          ksceSysconShowModeSet: 0x6D65B70F
+          ksceSysconUpdaterCalcChecksum: 0xD27C3D80
+          ksceSysconUpdaterExecFinalize: 0xC7747A63
+          ksceSysconUpdaterExecProgramming: 0x69AD76E4
+          ksceSysconUpdaterSetRunMode: 0xB487C2FB
+          ksceSysconUpdaterSetSegment: 0x9B00BC7F
+          ksceSysconVerifyConfigstorageScript: 0xCC6F90A8
+          ksceSysconWaitInitialized: 0x55DF1C9B

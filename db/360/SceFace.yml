@@ -1,0 +1,33 @@
+version: 2
+firmware: 3.60
+modules:
+  SceFace:
+    nid: 0x0000002E
+    libraries:
+      SceFace:
+        kernel: false
+        nid: 0xF5683CF7
+        functions:
+          sceFaceAgeGetWorkingMemorySize: 0x73E9791D
+          sceFaceAgeRangeEstimate: 0x17F3DC79
+          sceFaceAgeRangeIntegrate: 0xB794C6CB
+          sceFaceAllParts: 0xE521EB6F
+          sceFaceAllPartsGetWorkingMemorySize: 0xCF07E1C4
+          sceFaceAttribute: 0x67F0585A
+          sceFaceAttributeGetWorkingMemorySize: 0xA905A467
+          sceFaceDetection: 0xF3045394
+          sceFaceDetectionEx: 0xD9603C69
+          sceFaceDetectionGetDefaultParam: 0xE5689BD1
+          sceFaceDetectionGetWorkingMemorySize: 0xF24B851D
+          sceFaceDetectionLocal: 0x7D71725D
+          sceFaceEstimatePoseRegion: 0xF7E4EC1F
+          sceFaceIdentifyGetFeature: 0xF852E35D
+          sceFaceIdentifyGetWorkingMemorySize: 0x4468B054
+          sceFaceIdentifySimilarity: 0x8F8E9FB1
+          sceFaceParts: 0x87550392
+          sceFacePartsEx: 0x70C9CF95
+          sceFacePartsGetWorkingMemorySize: 0x707B9A1D
+          sceFacePartsResultCheck: 0xCC98B939
+          sceFaceShapeFit: 0x64F45021
+          sceFaceShapeGetWorkingMemorySize: 0xC0812127
+          sceFaceShapeTrack: 0x37704DE9

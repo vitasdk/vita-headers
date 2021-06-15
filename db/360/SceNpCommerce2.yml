@@ -1,0 +1,52 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpCommerce2:
+    nid: 0x52126DD9
+    libraries:
+      SceNpCommerce2:
+        kernel: false
+        nid: 0x40120DC3
+        functions:
+          sceNpCommerce2AbortReq: 0xE7486A60
+          sceNpCommerce2CreateCtx: 0x123E55F4
+          sceNpCommerce2CreateSessionCreateReq: 0xFDB39774
+          sceNpCommerce2CreateSessionGetResult: 0xAEE8D3DF
+          sceNpCommerce2CreateSessionStart: 0xBBDDF866
+          sceNpCommerce2DestroyCtx: 0x6CD27BD0
+          sceNpCommerce2DestroyGetCategoryContentsResult: 0x9CD463F8
+          sceNpCommerce2DestroyGetProductInfoListResult: 0x24D3FE34
+          sceNpCommerce2DestroyGetProductInfoResult: 0xADF3BD5B
+          sceNpCommerce2DestroyReq: 0xA4464754
+          sceNpCommerce2GetCategoryContentsCreateReq: 0x5CF665E0
+          sceNpCommerce2GetCategoryContentsGetResult: 0xC47CDB59
+          sceNpCommerce2GetCategoryContentsStart: 0x774F88D0
+          sceNpCommerce2GetCategoryInfo: 0xB88DB7C2
+          sceNpCommerce2GetCategoryInfoFromContentInfo: 0x56B80FAF
+          sceNpCommerce2GetContentInfo: 0xDE45F84F
+          sceNpCommerce2GetContentRatingDescriptor: 0x315B9BD0
+          sceNpCommerce2GetContentRatingInfoFromCategoryInfo: 0xD6A5B200
+          sceNpCommerce2GetContentRatingInfoFromGameProductInfo: 0x7894DCDF
+          sceNpCommerce2GetGameProductInfo: 0xA308B496
+          sceNpCommerce2GetGameProductInfoFromContentInfo: 0x021DC797
+          sceNpCommerce2GetGameProductInfoFromGetProductInfoListResult: 0x0550C016
+          sceNpCommerce2GetGameSkuInfoFromGameProductInfo: 0x3B7C81A5
+          sceNpCommerce2GetPrice: 0x88D236DF
+          sceNpCommerce2GetProductInfoCreateReq: 0xB0AFF6C9
+          sceNpCommerce2GetProductInfoGetResult: 0x363922BA
+          sceNpCommerce2GetProductInfoListCreateReq: 0xE81B8BAD
+          sceNpCommerce2GetProductInfoListGetResult: 0x4DFBCDD6
+          sceNpCommerce2GetProductInfoListStart: 0x18BDC4BD
+          sceNpCommerce2GetProductInfoStart: 0xC594ADC2
+          sceNpCommerce2GetSessionInfo: 0xF6F23623
+          sceNpCommerce2GetShortfallOfLibhttpPool: 0x586B0599
+          sceNpCommerce2GetShortfallOfLibsslPool: 0xBA5A5784
+          sceNpCommerce2HidePsStoreIcon: 0xFFC8B18B
+          sceNpCommerce2Init: 0xC73F209A
+          sceNpCommerce2InitGetCategoryContentsResult: 0x5135EA31
+          sceNpCommerce2InitGetProductInfoListResult: 0x29186E27
+          sceNpCommerce2InitGetProductInfoResult: 0x118E1C5E
+          sceNpCommerce2ShowPsStoreIcon: 0x84E56A6D
+          sceNpCommerce2StartEmptyStoreCheck: 0x7132EAA5
+          sceNpCommerce2StopEmptyStoreCheck: 0x84C336C6
+          sceNpCommerce2Term: 0xB99958AE

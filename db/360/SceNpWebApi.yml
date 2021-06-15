@@ -1,0 +1,48 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpWebApi:
+    nid: 0x0AC17EF4
+    libraries:
+      SceNpWebApi:
+        kernel: false
+        nid: 0xE1AF627C
+        functions:
+          sceNpWebApiAbortHandle: 0xD462D519
+          sceNpWebApiAbortRequest: 0xEB3D14CE
+          sceNpWebApiAddHttpRequestHeader: 0x8DCD6D19
+          sceNpWebApiAddMultipartPart: 0xC4B24435
+          sceNpWebApiCheckCallback: 0xEDA9C359
+          sceNpWebApiCreateExtdPushEventFilter: 0x6AB53577
+          sceNpWebApiCreateHandle: 0x40341759
+          sceNpWebApiCreateMultipartRequest: 0x55435037
+          sceNpWebApiCreatePushEventFilter: 0x18CB54B5
+          sceNpWebApiCreateRequest: 0x6FC7357E
+          sceNpWebApiCreateServicePushEventFilter: 0x2B61B0C7
+          sceNpWebApiDeleteExtdPushEventFilter: 0x4980D88D
+          sceNpWebApiDeleteHandle: 0xB575A09C
+          sceNpWebApiDeletePushEventFilter: 0x6099B918
+          sceNpWebApiDeleteRequest: 0x57B2826E
+          sceNpWebApiDeleteServicePushEventFilter: 0x828F657B
+          sceNpWebApiGetErrorCode: 0x00234C88
+          sceNpWebApiGetHttpResponseHeaderValue: 0xB0500FF4
+          sceNpWebApiGetHttpResponseHeaderValueLength: 0xD585FDEA
+          sceNpWebApiGetHttpStatusCode: 0x67A3BC79
+          sceNpWebApiGetMemoryPoolStats: 0x9DF7EE1E
+          sceNpWebApiGetNpTitleId: 0xB65DF857
+          sceNpWebApiInitialize: 0x8519EB34
+          sceNpWebApiReadData: 0xBA75BF6E
+          sceNpWebApiRegisterExtdPushEventCallback: 0xE75796DD
+          sceNpWebApiRegisterPushEventCallback: 0xDB04ECD6
+          sceNpWebApiRegisterServicePushEventCallback: 0xF6B6C994
+          sceNpWebApiSendMultipartRequest: 0xBDEC2650
+          sceNpWebApiSendMultipartRequest2: 0xC8E042B8
+          sceNpWebApiSendRequest: 0x51EA899B
+          sceNpWebApiSendRequest2: 0x1E37862A
+          sceNpWebApiSetMultipartContentType: 0x8E870BE4
+          sceNpWebApiSetNpTitleId: 0x9AE6BC46
+          sceNpWebApiTerminate: 0x001254C2
+          sceNpWebApiUnregisterExtdPushEventCallback: 0x2D272ACA
+          sceNpWebApiUnregisterPushEventCallback: 0xC9056736
+          sceNpWebApiUnregisterServicePushEventCallback: 0x06D28ADA
+          sceNpWebApiUtilityParseNpId: 0x98CBE11F

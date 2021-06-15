@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceTeleportServer:
+    nid: 0x43921EF6
+    libraries:
+      SceTeleportServer:
+        kernel: false
+        nid: 0x5DF15228
+        functions:
+          sceTeleportServerSendInitialInfo: 0x2420A460

@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblSsSmComm:
+    nid: 0xBB4B5D92
+    libraries:
+      SceSblSmCommForKernel:
+        kernel: true
+        nid: 0xCD3C89B6
+        functions:
+          ksceSblSmCommCallFunc: 0xDB9FC204
+          ksceSblSmCommStartSmFromData: 0x039C73B1
+          ksceSblSmCommStartSmFromFile: 0x7863A0CC
+          ksceSblSmCommStopSm: 0x0631F8ED

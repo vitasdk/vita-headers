@@ -1,0 +1,30 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAvPlayer:
+    nid: 0xD9653DF7
+    libraries:
+      SceAvPlayer:
+        kernel: false
+        nid: 0xFA10CE65
+        functions:
+          sceAvPlayerAddSource: 0xBC83C8FD
+          sceAvPlayerClose: 0x7AA29B2D
+          sceAvPlayerCurrentTime: 0x804DCECD
+          sceAvPlayerDisableStream: 0x15365ECE
+          sceAvPlayerEnableStream: 0x70127AB8
+          sceAvPlayerGetAudioData: 0xA10FC252
+          sceAvPlayerGetStreamInfo: 0x34E2D370
+          sceAvPlayerGetVideoData: 0x8BC3221B
+          sceAvPlayerGetVideoDataEx: 0x22986CD1
+          sceAvPlayerInit: 0x4C847ADF
+          sceAvPlayerIsActive: 0x2E4FF35F
+          sceAvPlayerJumpToTime: 0x5B7DB4BC
+          sceAvPlayerPause: 0x34FD744B
+          sceAvPlayerPostInit: 0x3F51D38A
+          sceAvPlayerResume: 0x11FF162D
+          sceAvPlayerSetLooping: 0xEC103ADF
+          sceAvPlayerSetTrickSpeed: 0x86E0CF55
+          sceAvPlayerStart: 0x2ACB4217
+          sceAvPlayerStop: 0xBD35E360
+          sceAvPlayerStreamCount: 0x2CD86FD6

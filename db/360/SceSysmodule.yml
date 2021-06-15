@@ -1,0 +1,18 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSysmodule:
+    nid: 0x0958E8D1
+    libraries:
+      SceSysmodule:
+        kernel: false
+        nid: 0x03FCF19D
+        functions:
+          sceSysmoduleIsLoaded: 0x53099B7A
+          sceSysmoduleIsLoadedInternal: 0x09A4AF1D
+          sceSysmoduleLoadModule: 0x79A0160A
+          sceSysmoduleLoadModuleInternal: 0x2399BF45
+          sceSysmoduleLoadModuleInternalWithArg: 0xC3C26339
+          sceSysmoduleUnloadModule: 0x31D87805
+          sceSysmoduleUnloadModuleInternal: 0xFF206B19
+          sceSysmoduleUnloadModuleInternalWithArg: 0xA2F40C4C

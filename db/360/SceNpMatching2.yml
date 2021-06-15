@@ -1,0 +1,60 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpMatching2:
+    nid: 0x4BEBBDF3
+    libraries:
+      SceNpMatching2:
+        kernel: false
+        nid: 0x7106F303
+        functions:
+          sceNpMatching2AbortContextStart: 0xF2847E3B
+          sceNpMatching2AbortRequest: 0x74EB6CE9
+          sceNpMatching2ContextStart: 0xBB2E7559
+          sceNpMatching2ContextStop: 0x506454DE
+          sceNpMatching2CreateContext: 0xADF578E1
+          sceNpMatching2CreateJoinRoom: 0x818A9499
+          sceNpMatching2DestroyContext: 0x368AA759
+          sceNpMatching2GetLobbyInfoList: 0x86E7C97D
+          sceNpMatching2GetMemoryInfo: 0x7BD39E50
+          sceNpMatching2GetRoomDataExternalList: 0x5BE8B86F
+          sceNpMatching2GetRoomDataInternal: 0xC61C79EE
+          sceNpMatching2GetRoomMemberDataExternalList: 0x11BEFFA8
+          sceNpMatching2GetRoomMemberDataInternal: 0x28C643B7
+          sceNpMatching2GetRoomMemberIdListLocal: 0xB6E8C059
+          sceNpMatching2GetRoomPasswordLocal: 0xD22C4989
+          sceNpMatching2GetServerLocal: 0x65C0FEED
+          sceNpMatching2GetSignalingOptParamLocal: 0x495D2B46
+          sceNpMatching2GetUserInfoList: 0x78521326
+          sceNpMatching2GetWorldInfoList: 0xC086B560
+          sceNpMatching2GrantRoomOwner: 0x86458025
+          sceNpMatching2Init: 0xEBB1FE74
+          sceNpMatching2JoinLobby: 0x86CED8AF
+          sceNpMatching2JoinRoom: 0x33F7D5AE
+          sceNpMatching2KickoutRoomMember: 0xA8021394
+          sceNpMatching2LeaveLobby: 0x1E70D5B5
+          sceNpMatching2LeaveRoom: 0xC8B0C9EE
+          sceNpMatching2RegisterContextCallback: 0xF9E35566
+          sceNpMatching2RegisterLobbyEventCallback: 0x3C507D4A
+          sceNpMatching2RegisterLobbyMessageCallback: 0x4E3193D2
+          sceNpMatching2RegisterRoomEventCallback: 0xF486991B
+          sceNpMatching2RegisterRoomMessageCallback: 0xFA51949B
+          sceNpMatching2RegisterSignalingCallback: 0x1C60BC5B
+          sceNpMatching2SearchRoom: 0xD48BAF13
+          sceNpMatching2SendLobbyChatMessage: 0x9388A007
+          sceNpMatching2SendRoomChatMessage: 0xE0BE0510
+          sceNpMatching2SendRoomMessage: 0x7B908D99
+          sceNpMatching2SetDefaultRequestOptParam: 0xF3A43C50
+          sceNpMatching2SetRoomDataExternal: 0x8F88AC7E
+          sceNpMatching2SetRoomDataInternal: 0x94784A8C
+          sceNpMatching2SetRoomMemberDataInternal: 0xD3096C55
+          sceNpMatching2SetSignalingOptParam: 0x6E48307F
+          sceNpMatching2SetUserInfo: 0xF049BEC1
+          sceNpMatching2SignalingCancelPeerNetInfo: 0xADCD102C
+          sceNpMatching2SignalingGetConnectionInfo: 0x20598618
+          sceNpMatching2SignalingGetConnectionStatus: 0x4E4C55BD
+          sceNpMatching2SignalingGetLocalNetInfo: 0x79310806
+          sceNpMatching2SignalingGetPeerNetInfo: 0xF0CB1DD3
+          sceNpMatching2SignalingGetPeerNetInfoResult: 0xFDC7B2C9
+          sceNpMatching2SignalingGetPingInfo: 0x881F7428
+          sceNpMatching2Term: 0x0124641C

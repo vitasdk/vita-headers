@@ -1,0 +1,16 @@
+version: 2
+firmware: 3.60
+modules:
+  SceDTrace:
+    nid: 0x00000023
+    libraries:
+      SceDTrace:
+        kernel: false
+        nid: 0x69699F30
+        functions:
+          sceDTraceAddHelperDof: 0xA47807D7
+          sceDTraceClientClose: 0xB8232491
+          sceDTraceClientIoctl: 0x63F0C4F5
+          sceDTraceClientOpen: 0x761062E9
+          sceDTraceHelperIoctl: 0x413C420E
+          sceDTraceRemoveHelperDof: 0xF2C9207A

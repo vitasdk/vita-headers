@@ -1,0 +1,32 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLocation:
+    nid: 0x00000059
+    libraries:
+      SceLibLocation:
+        kernel: false
+        nid: 0x924D86D7
+        functions:
+          sceLocationCancelGetLocation: 0x71503251
+          sceLocationClose: 0x14FE76E8
+          sceLocationConfirm: 0xC895E567
+          sceLocationConfirmAbort: 0xE3CBF875
+          sceLocationConfirmGetResult: 0xFF016C13
+          sceLocationConfirmGetStatus: 0x730FF842
+          sceLocationDenyApplication: 0x8AAF3FBD
+          sceLocationGetHeading: 0x4E9E5ED9
+          sceLocationGetLocation: 0x15BC27C8
+          sceLocationGetLocationWithTimeout: 0x16F41ED0
+          sceLocationGetMethod: 0x188CE004
+          sceLocationGetPermission: 0x482622C6
+          sceLocationInit: 0x09C4F674
+          sceLocationOpen: 0xDD271661
+          sceLocationReopen: 0xB1F55065
+          sceLocationSetGpsEmulationFile: 0xDE0A9EA4
+          sceLocationSetThreadParameter: 0xAA026B53
+          sceLocationStartHeadingCallback: 0x07D4DFE0
+          sceLocationStartLocationCallback: 0x12D1F0EA
+          sceLocationStopHeadingCallback: 0x92E53F94
+          sceLocationStopLocationCallback: 0xED378700
+          sceLocationTerm: 0x1E80199A

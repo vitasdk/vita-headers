@@ -1,0 +1,33 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePgf:
+    nid: 0xB40B26E9
+    libraries:
+      ScePgf:
+        kernel: false
+        nid: 0x9F3504F2
+        functions:
+          sceFontClose: 0x4A7293E9
+          sceFontDoneLib: 0x07EE1733
+          sceFontFindFont: 0x51061D87
+          sceFontFindOptimumFont: 0x8DFBAE1B
+          sceFontFlush: 0x7D8CB13B
+          sceFontGetCharGlyphImage: 0xAB45AAD3
+          sceFontGetCharGlyphImage_Clip: 0xEB589530
+          sceFontGetCharImageRect: 0x70C86B3E
+          sceFontGetCharInfo: 0x6FD1BA65
+          sceFontGetFontInfo: 0xF9414FA2
+          sceFontGetFontInfoByIndexNumber: 0xAB034738
+          sceFontGetFontList: 0xD56DCCEA
+          sceFontGetNumFontList: 0x9F842307
+          sceFontNewLib: 0x1055ABA3
+          sceFontOpen: 0xBD2DFCFF
+          sceFontOpenUserFile: 0xE260E740
+          sceFontOpenUserMemory: 0xB23ED47C
+          sceFontPixelToPointH: 0x9E38F4D6
+          sceFontPixelToPointV: 0x7B45E2D1
+          sceFontPointToPixelH: 0x39B9AEFF
+          sceFontPointToPixelV: 0x03F10EC8
+          sceFontSetAltCharacterCode: 0x8D5B44DF
+          sceFontSetResolution: 0xDE47674C

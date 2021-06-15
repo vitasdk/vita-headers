@@ -1,0 +1,24 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNetAdhocMatching:
+    nid: 0xF2F9C205
+    libraries:
+      SceNetAdhocMatching:
+        kernel: false
+        nid: 0x00962A4A
+        functions:
+          sceNetAdhocMatchingAbortSendData: 0xFE77831E
+          sceNetAdhocMatchingCancelTarget: 0x04FF010C
+          sceNetAdhocMatchingCancelTargetWithOpt: 0x54F6534D
+          sceNetAdhocMatchingCreate: 0x7BAD7EA2
+          sceNetAdhocMatchingDelete: 0x7BCDD889
+          sceNetAdhocMatchingGetHelloOpt: 0x90AFFEDD
+          sceNetAdhocMatchingGetMembers: 0x85B23CEB
+          sceNetAdhocMatchingInit: 0x8E0E0EAE
+          sceNetAdhocMatchingSelectTarget: 0x9A6B1D0F
+          sceNetAdhocMatchingSendData: 0x83C0E435
+          sceNetAdhocMatchingSetHelloOpt: 0x659D4B04
+          sceNetAdhocMatchingStart: 0xF13E17BE
+          sceNetAdhocMatchingStop: 0x63ABB632
+          sceNetAdhocMatchingTerm: 0x6E195CD1

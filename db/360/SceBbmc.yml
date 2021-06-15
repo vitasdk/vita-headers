@@ -1,0 +1,87 @@
+version: 2
+firmware: 3.60
+modules:
+  SceBbmc:
+    nid: 0x858FDE3E
+    libraries:
+      SceBbmc:
+        kernel: false
+        nid: 0xEB0B15B7
+        functions:
+          sceBbmcClearEvent: 0x8A586895
+          sceBbmcDLGetSwdlError: 0xCF5593A1
+          sceBbmcDLQAbort: 0xFD1B5B45
+          sceBbmcDLQBackupEFSNV: 0x73E76F56
+          sceBbmcDLQConfirmChangePartition: 0x1D381E0E
+          sceBbmcDLQDownloadSafeImage: 0x8E1E5AAF
+          sceBbmcDLQDownloadSlotImage: 0xB323A5C4
+          sceBbmcDLQGetCurrentFwDone: 0x118CDC1C
+          sceBbmcDLQGetCurrentFwStart: 0x3BB8A8DE
+          sceBbmcDLQGetFwListDone: 0xBD2A2EA8
+          sceBbmcDLQGetFwListStart: 0x55DE9889
+          sceBbmcDLQRestoreEFSNV: 0x5A3CBF5D
+          sceBbmcDLUpdaterCheckComVersion: 0x5711AE28
+          sceBbmcDLUpdaterContinue: 0xC10A5913
+          sceBbmcDLUpdaterFin: 0x7CC2E683
+          sceBbmcDLUpdaterGetArchiveVersion: 0xEE284EBE
+          sceBbmcDLUpdaterGetLatestArchiveVersion: 0x4564777A
+          sceBbmcDLUpdaterGetPkgId: 0xDCD146FD
+          sceBbmcDLUpdaterGetSequence: 0xBDD26F9D
+          sceBbmcDLUpdaterStart: 0xAF066666
+          sceBbmcDebugOutString: 0x80E029FE
+          sceBbmcDebugSelectOutMedia: 0x72FADFFD
+          sceBbmcDepersonalizeCK: 0x63318445
+          sceBbmcEnvelopeCmd: 0x768A8471
+          sceBbmcFileRefreshResponse: 0x9537AAAE
+          sceBbmcGetCKStatus: 0xFFB454D9
+          sceBbmcGetComFirmVersion: 0x4F76ACC2
+          sceBbmcGetDriverInfo: 0xB888B51C
+          sceBbmcGetFailureInfo: 0x9831C17B
+          sceBbmcGetFileRefreshDetail: 0x8DE4A529
+          sceBbmcGetIdStorageFrom3GModule: 0x924FD942
+          sceBbmcGetNetworkInfo: 0x4BF09F40
+          sceBbmcGetPinStatus: 0xE8CB543C
+          sceBbmcGetProactiveCmd: 0xC3910F00
+          sceBbmcGpsCellGetLocationInfoDone: 0x98718027
+          sceBbmcGpsCellGetLocationInfoStart: 0x5D5096F2
+          sceBbmcIsAbleToRunUnderCurrentTemp: 0x1BC93FE5
+          sceBbmcIsAbleToRunUnderCurrentVoltage: 0x197B5917
+          sceBbmcIsPowerConfigForbiddenMode: 0xD31680C9
+          sceBbmcNetGetRejectCause: 0xE794FCE6
+          sceBbmcNetworkAttach: 0x7AC350C7
+          sceBbmcNetworkScanAbort: 0xE9548598
+          sceBbmcNetworkScanDone: 0xC4639A16
+          sceBbmcNetworkScanStart: 0x061AFC8C
+          sceBbmcPacketGetCurrentBearerTech: 0xEAAEC538
+          sceBbmcPacketGetLastCallEndReason: 0x794F5690
+          sceBbmcPacketIfClearControlFlag: 0xBE889D60
+          sceBbmcPacketIfGetControlFlag: 0xBF18905C
+          sceBbmcPacketIfSetControlFlag: 0xB9C53628
+          sceBbmcPacketReleasePDPContext: 0xB63E07B2
+          sceBbmcReadSimContentDone: 0xE8471E88
+          sceBbmcReadSimContentStart: 0x4734B7EB
+          sceBbmcReserveOperationMode: 0x8DEDBFE9
+          sceBbmcResumeSubscriberCallback: 0x53D836E6
+          sceBbmcSMSGetListDone: 0x0A67866B
+          sceBbmcSMSGetListStart: 0x6669D937
+          sceBbmcSMSReadAck: 0x3D366DF3
+          sceBbmcSMSReadDone: 0x86A4ADE4
+          sceBbmcSMSReadStart: 0x74172AD5
+          sceBbmcSMSSend: 0xB2B9BE63
+          sceBbmcSetLPMMode: 0xBCA35FC0
+          sceBbmcSetupGetValueDone: 0x3776D173
+          sceBbmcSetupGetValueStart: 0xC946287D
+          sceBbmcSetupSetValue: 0x265332ED
+          sceBbmcSimGetPLMNModeBit: 0x1F2BECDC
+          sceBbmcSubscribeFeatureId: 0xE13ACE9A
+          sceBbmcTerminalResponseCmd: 0xD878F761
+          sceBbmcTurnOff: 0xEE731598
+          sceBbmcTurnOn: 0xF1B7B34C
+          sceBbmcUnblockCK: 0xC70DF0B8
+          sceBbmcUnblockPin: 0x1B1015D0
+          sceBbmcUnsubscribeFeature: 0xD4C16C0A
+          sceBbmcUsbExtIfRead: 0x91EE6FAB
+          sceBbmcUsbExtIfStart: 0x4ACC9A83
+          sceBbmcUsbExtIfStop: 0xF82F293A
+          sceBbmcUsbExtIfWrite: 0x4034E750
+          sceBbmcVerifyPin: 0x057B2157

@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceMusicExport:
+    nid: 0x6A89E620
+    libraries:
+      SceMusicExport:
+        kernel: false
+        nid: 0xF2E30EED
+        functions:
+          sceMusicExportFromFile: 0x08000579

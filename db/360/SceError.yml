@@ -1,0 +1,16 @@
+version: 2
+firmware: 3.60
+modules:
+  SceError:
+    nid: 0x8713337B
+    libraries:
+      SceError:
+        kernel: false
+        nid: 0x5CD2CAD1
+        functions:
+          _sceErrorGetExternalString: 0x85747003
+          _sceErrorHistoryClearError: 0xC88F479E
+          _sceErrorHistoryGetError: 0xF16DF981
+          _sceErrorHistoryPostError: 0x70F9D872
+          _sceErrorHistorySetDefaultFormat: 0xB94DAA2F
+          _sceErrorHistoryUpdateSequenceInfo: 0x6FBE4BDC

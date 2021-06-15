@@ -1,0 +1,42 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpScore:
+    nid: 0x535502C2
+    libraries:
+      SceNpScore:
+        kernel: false
+        nid: 0x75F052DB
+        functions:
+          sceNpScoreAbortRequest: 0xA7E93CE1
+          sceNpScoreCensorComment: 0xA0C94D46
+          sceNpScoreCensorCommentAsync: 0xAA0BBF8E
+          sceNpScoreChangeModeForOtherSaveDataOwners: 0x7C68D91B
+          sceNpScoreCreateRequest: 0xD30D1993
+          sceNpScoreCreateTitleCtx: 0x5685F225
+          sceNpScoreDeleteRequest: 0xFFF24BB1
+          sceNpScoreDeleteTitleCtx: 0xF52EA88A
+          sceNpScoreGetBoardInfo: 0x00F90E7B
+          sceNpScoreGetBoardInfoAsync: 0x3CD9974E
+          sceNpScoreGetFriendsRanking: 0x4F795659
+          sceNpScoreGetFriendsRankingAsync: 0x7090ED11
+          sceNpScoreGetGameData: 0xDFAD64D3
+          sceNpScoreGetGameDataAsync: 0xCE416993
+          sceNpScoreGetRankingByNpId: 0xBAE55B34
+          sceNpScoreGetRankingByNpIdAsync: 0x45CD1D00
+          sceNpScoreGetRankingByNpIdPcId: 0x871F28AA
+          sceNpScoreGetRankingByNpIdPcIdAsync: 0xCE3A9544
+          sceNpScoreGetRankingByRange: 0x427D3412
+          sceNpScoreGetRankingByRangeAsync: 0xC45E3FCD
+          sceNpScoreInit: 0x0433069F
+          sceNpScorePollAsync: 0x9F2A7AC9
+          sceNpScoreRecordGameData: 0xC2862B67
+          sceNpScoreRecordGameDataAsync: 0x40573917
+          sceNpScoreRecordScore: 0x320C0277
+          sceNpScoreRecordScoreAsync: 0x24B09634
+          sceNpScoreSanitizeComment: 0x6FD2041A
+          sceNpScoreSanitizeCommentAsync: 0x15981858
+          sceNpScoreSetPlayerCharacterId: 0x53D77883
+          sceNpScoreSetTimeout: 0x5EF44841
+          sceNpScoreTerm: 0x2050F98F
+          sceNpScoreWaitAsync: 0x31733BF3

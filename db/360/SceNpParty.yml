@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpParty:
+    nid: 0x51D3A65A
+    libraries:
+      SceNpPartyGameUtil:
+        kernel: false
+        nid: 0xB3B34742
+        functions:
+          sceNpPartyCheckCallback: 0xB6132502
+          sceNpPartyGetGameSessionReadyState: 0xE9173FE6
+          sceNpPartyGetId: 0x27AFCE24
+          sceNpPartyGetMemberInfo: 0x0560D9A1
+          sceNpPartyGetMemberSessionInfo: 0xF01585A3
+          sceNpPartyGetMemberVoiceInfo: 0xFB200A6D
+          sceNpPartyGetMembers: 0x420C30E9
+          sceNpPartyGetState: 0x9F99ADF7
+          sceNpPartyInit: 0xB304962C
+          sceNpPartyRegisterHandler: 0x324C76F0
+          sceNpPartyTerm: 0xF524AD2B

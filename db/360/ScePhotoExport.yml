@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePhotoExport:
+    nid: 0x97935D63
+    libraries:
+      ScePhotoExport:
+        kernel: false
+        nid: 0x79166BD9
+        functions:
+          scePhotoExportFromData: 0x70512321
+          scePhotoExportFromFile: 0x84FD9FC5
+          scePhotoExportIsAvailableFromData: 0xE6E6AFD5
+          scePhotoExportIsAvailableFromFile: 0x5655F971

@@ -1,0 +1,18 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLiveArea:
+    nid: 0x6D180EF6
+    libraries:
+      SceLiveAreaUtil:
+        kernel: false
+        nid: 0x5303CB07
+        functions:
+          sceLiveAreaGetFrameRevision: 0xD6EE2214
+          sceLiveAreaGetFrameUserData: 0xD6FD367F
+          sceLiveAreaGetRevision: 0x833F5D0A
+          sceLiveAreaGetStatus: 0x7FE5B83F
+          sceLiveAreaReplaceAllAsync: 0x18066BA9
+          sceLiveAreaReplaceAllSync: 0x29C65C0B
+          sceLiveAreaUpdateFrameAsync: 0xD330285D
+          sceLiveAreaUpdateFrameSync: 0xCFCEDE95

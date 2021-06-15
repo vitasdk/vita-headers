@@ -1,0 +1,25 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpTrophy:
+    nid: 0xE4EBB3E3
+    libraries:
+      SceNpTrophy:
+        kernel: false
+        nid: 0x4332C10D
+        functions:
+          sceNpTrophyAbortHandle: 0xD55C6F4C
+          sceNpTrophyCreateContext: 0xC49FD33F
+          sceNpTrophyCreateHandle: 0x4EBC6977
+          sceNpTrophyDestroyContext: 0x56F5CBA5
+          sceNpTrophyDestroyHandle: 0xFF142071
+          sceNpTrophyGetGameIcon: 0xFE382529
+          sceNpTrophyGetGameInfo: 0xBA2B7F2A
+          sceNpTrophyGetGroupIcon: 0x1B8C3192
+          sceNpTrophyGetGroupInfo: 0x087B0535
+          sceNpTrophyGetTrophyIcon: 0x94BAB8D0
+          sceNpTrophyGetTrophyInfo: 0xA4ADDD91
+          sceNpTrophyGetTrophyUnlockState: 0xC8D2A4DE
+          sceNpTrophyInit: 0x34516838
+          sceNpTrophyTerm: 0xBFE0F28F
+          sceNpTrophyUnlockTrophy: 0xB397AA24

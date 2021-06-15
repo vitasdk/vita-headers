@@ -1,0 +1,31 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAvcodecUser:
+    nid: 0x5AA351E8
+    libraries:
+      SceVideoencUser:
+        kernel: false
+        nid: 0x0BAA6DEF
+        functions:
+          sceAvcencCreateEncoder: 0x7F5728CC
+          sceAvcencCreateEncoderBasic: 0xC70B7E2E
+          sceAvcencCreateEncoderInternal: 0x11CB9524
+          sceAvcencCsc: 0xAC758FF7
+          sceAvcencDeleteEncoder: 0xEC08A60C
+          sceAvcencEncode: 0x4B171BEA
+          sceAvcencEncodeFlush: 0x03D1CFED
+          sceAvcencEncodeStop: 0x4BE87709
+          sceAvcencGetNalUnit: 0xC5609479
+          sceAvcencQueryEncoderMemSize: 0xAF317203
+          sceAvcencQueryEncoderMemSizeBasic: 0xC6616EA8
+          sceAvcencQueryEncoderMemSizeInternal: 0x55F2FD3C
+          sceAvcencSetAvailablePreset: 0x2238693E
+          sceAvcencSetEncoderParameter: 0x5B4A70BD
+          sceVideoencInitLibrary: 0xACA59885
+          sceVideoencInitLibraryInternal: 0xAF0F17AD
+          sceVideoencInitLibraryWithUnmapMem: 0x8F970948
+          sceVideoencInitLibraryWithUnmapMemInternal: 0x54D750B8
+          sceVideoencQueryMemSize: 0x7772157D
+          sceVideoencQueryMemSizeInternal: 0x3E459BA8
+          sceVideoencTermLibrary: 0x7FE7EDA3

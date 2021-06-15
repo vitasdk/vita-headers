@@ -1,0 +1,29 @@
+version: 2
+firmware: 3.60
+modules:
+  SceKernelDmacMgr:
+    nid: 0xF926C804
+    libraries:
+      SceDmacmgr:
+        kernel: false
+        nid: 0xA9E5B2F0
+        functions:
+          sceDmacMemcpy: 0x9B2FF739
+          sceDmacMemset: 0xA4C33F11
+      SceDmacmgrForDriver:
+        kernel: true
+        nid: 0xEB4E3738
+        functions:
+          ksceDmacMemcpy: 0x00896B11
+          ksceDmacMemset: 0x4BAC049B
+          ksceKernelDmaOpAlloc: 0x7CD5088A
+          ksceKernelDmaOpAssign: 0xFCE4171A
+          ksceKernelDmaOpConcatenate: 0xA4454DEA
+          ksceKernelDmaOpDeQueue: 0x7433F70F
+          ksceKernelDmaOpEnQueue: 0x543F54CF
+          ksceKernelDmaOpFree: 0xADFF1186
+          ksceKernelDmaOpQuit: 0x03052D0D
+          ksceKernelDmaOpSetCallback: 0xCF627CFD
+          ksceKernelDmaOpSetupChain: 0x167079FC
+          ksceKernelDmaOpSetupDirect: 0x01A599E0
+          ksceKernelDmaOpSync: 0x397A917C

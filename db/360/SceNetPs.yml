@@ -1,0 +1,61 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNetPs:
+    nid: 0x5A7BCCDA
+    libraries:
+      SceNetPsForDriver:
+        kernel: true
+        nid: 0xB2A5C920
+        functions:
+          ksceNetAccept: 0x880A5423
+          ksceNetBind: 0x84AB650F
+          ksceNetClose: 0x21F4428D
+          ksceNetConnect: 0x13491DA1
+          ksceNetGetpeername: 0xB949AFD5
+          ksceNetGetsockname: 0x8F1BB0E7
+          ksceNetGetsockopt: 0x92EE24A6
+          ksceNetListen: 0x080C7992
+          ksceNetRecvfrom: 0x49B1669C
+          ksceNetSendto: 0xAB746734
+          ksceNetSetsockopt: 0x4BF5FAB4
+          ksceNetShutdown: 0xEEB19FB6
+          ksceNetSocket: 0xEB95B024
+      SceNetPsForSyscalls:
+        kernel: false
+        nid: 0x2CBED2C6
+        functions:
+          sceNetSyscallAccept: 0x45EAAD89
+          sceNetSyscallBind: 0x267F1EF9
+          sceNetSyscallClose: 0x1EBC2E28
+          sceNetSyscallConnect: 0x14A4DE52
+          sceNetSyscallControl: 0xEA0C1B71
+          sceNetSyscallDescriptorClose: 0x854AFB6F
+          sceNetSyscallDescriptorCreate: 0xB518A2DE
+          sceNetSyscallDescriptorCtl: 0xA7064C2C
+          sceNetSyscallDumpAbort: 0x5CD20B54
+          sceNetSyscallDumpClose: 0x263E52FD
+          sceNetSyscallDumpCreate: 0x3FC34171
+          sceNetSyscallDumpRead: 0x3CBE7071
+          sceNetSyscallEpollAbort: 0x94C3AE47
+          sceNetSyscallEpollClose: 0x75E82300
+          sceNetSyscallEpollCreate: 0xA98AEF04
+          sceNetSyscallEpollCtl: 0xDF30BE68
+          sceNetSyscallEpollWait: 0xF933D6FC
+          sceNetSyscallGetIfList: 0x878274CE
+          sceNetSyscallGetSockinfo: 0xF7748E56
+          sceNetSyscallGetpeername: 0xBD7B0213
+          sceNetSyscallGetsockname: 0x6AA945D9
+          sceNetSyscallGetsockopt: 0xBC472DC5
+          sceNetSyscallIcmConnect: 0x8C3FBC87
+          sceNetSyscallIoctl: 0x310F0725
+          sceNetSyscallListen: 0xAEEB7CA0
+          sceNetSyscallRecvfrom: 0x144C9758
+          sceNetSyscallRecvmsg: 0x32C1AE45
+          sceNetSyscallSendmsg: 0xAEC6BE5D
+          sceNetSyscallSendto: 0x39796C01
+          sceNetSyscallSetsockopt: 0x10DE34EA
+          sceNetSyscallShutdown: 0xA4014519
+          sceNetSyscallSocket: 0x81A120BE
+          sceNetSyscallSocketAbort: 0xF9203B48
+          sceNetSyscallSysctl: 0x3D7495B0

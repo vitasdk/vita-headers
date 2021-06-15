@@ -1,0 +1,53 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePvf:
+    nid: 0x820F86E8
+    libraries:
+      ScePvf:
+        kernel: false
+        nid: 0x68D59260
+        functions:
+          __scePvfSetFt2DoneLibCHook: 0x58142D71
+          __scePvfSetFt2LibCHook: 0x997161C3
+          scePvfClose: 0xD282C23C
+          scePvfDoneLib: 0xE17717EC
+          scePvfFindFont: 0x984E5BFE
+          scePvfFindOptimumFont: 0x2761FEAC
+          scePvfFlush: 0x687FF765
+          scePvfGetCharGlyphImage: 0x37DA496A
+          scePvfGetCharGlyphImage_Clip: 0xA55F973F
+          scePvfGetCharGlyphOutline: 0x17A7873B
+          scePvfGetCharImageRect: 0x6C1B9CAF
+          scePvfGetCharInfo: 0xA88EEDB0
+          scePvfGetFontInfo: 0xAB0C7CF2
+          scePvfGetFontInfoByIndexNumber: 0xF3E1E8BD
+          scePvfGetFontList: 0x66F2D767
+          scePvfGetKerningInfo: 0xBC90F661
+          scePvfGetNumFontList: 0xF6C4A855
+          scePvfGetVertCharGlyphImage: 0x8AE8433A
+          scePvfGetVertCharGlyphImage_Clip: 0xEEDAB884
+          scePvfGetVertCharGlyphOutline: 0xECCB0CEE
+          scePvfGetVertCharImageRect: 0x64E0EA8B
+          scePvfGetVertCharInfo: 0xB8D01915
+          scePvfIsElement: 0x9F018F25
+          scePvfIsVertElement: 0xE676A888
+          scePvfNewLib: 0x72E58672
+          scePvfOpen: 0xE35434BB
+          scePvfOpenDefaultJapaneseFontOnSharedMemory: 0xFEEE373A
+          scePvfOpenDefaultLatinFontOnSharedMemory: 0x9CBC1A46
+          scePvfOpenUserFile: 0xD535520F
+          scePvfOpenUserFileWithSubfontIndex: 0x10452B86
+          scePvfOpenUserMemory: 0x9E65E4ED
+          scePvfOpenUserMemoryWithSubfontIndex: 0xA81570EB
+          scePvfPixelToPointH: 0xF56B5B9B
+          scePvfPixelToPointV: 0xCDA282D2
+          scePvfPointToPixelH: 0x91F02F9A
+          scePvfPointToPixelV: 0x35465BD7
+          scePvfReleaseCharGlyphOutline: 0xB6CE89E1
+          scePvfSetAltCharacterCode: 0x830625C2
+          scePvfSetCharSize: 0xF17ADE4D
+          scePvfSetEM: 0xDFB677C5
+          scePvfSetEmboldenRate: 0x6E787722
+          scePvfSetResolution: 0xC4444FB3
+          scePvfSetSkewValue: 0x3DD09BC9

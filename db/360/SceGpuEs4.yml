@@ -1,0 +1,37 @@
+version: 2
+firmware: 3.60
+modules:
+  SceGpuEs4:
+    nid: 0x4069F83B
+    libraries:
+      SceGpuEs4ForDriver:
+        kernel: true
+        nid: 0x54802381
+        functions:
+          OSAllocMem: 0x68815236
+          OSFreeMem: 0x0BB49287
+          OSGetCurrentProcessIDKM: 0x6C6F2BEA
+          OSMemCopy: 0x771EC61E
+          OSMemSet: 0x50494916
+          OSProcHasPrivSrvInit: 0x302C7C5F
+          PVRSRVAcquireDeviceDataKM: 0xE6B866FD
+          PVRSRVEnumerateDevicesKM: 0xEC5163B0
+          PVRSRVFinaliseSystem: 0x399BC738
+          PVRSRVGetInitServerState: 0x3AF6FE80
+          PVRSRVGetMiscInfoKM: 0x8FB57186
+          PVRSRVPerProcessData: 0x3DAB1F7F
+          PVRSRVPerProcessDataConnect: 0x1A53327D
+          PVRSRVPerProcessDataDisconnect: 0xB4A2B60F
+          PVRSRVSetInitServerState: 0xDCD78852
+          ksceGpuGetRegisterDump: 0x14ECCFCD
+      SceGpuEs4ForUser:
+        kernel: false
+        nid: 0x6EC1443D
+        functions:
+          PVRSRVOpen: 0x5E943288
+          PVRSRVRelease: 0x85C328DF
+          PVRSRV_BridgeDispatchKM: 0xCA19ABCD
+          sceGpuRegisterSalvage: 0x8E0D9D40
+          sceGpuSignalWait: 0x05BCE11C
+          sceGpuSignalWaitLockup: 0xE0DECA6E
+          sceGpuUnregisterSalvage: 0x807202B7
