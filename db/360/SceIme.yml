@@ -1,0 +1,16 @@
+version: 2
+firmware: 3.60
+modules:
+  SceIme:
+    nid: 0x80AE930F
+    libraries:
+      SceIme:
+        kernel: false
+        nid: 0xD2553017
+        functions:
+          sceImeClose: 0x889A8421
+          sceImeOpen: 0x0E050613
+          sceImeSetCaret: 0xD8342D2A
+          sceImeSetPreeditGeometry: 0x7B1EFAA5
+          sceImeSetText: 0xF3BD9A76
+          sceImeUpdate: 0x71D6898A

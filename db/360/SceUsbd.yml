@@ -1,0 +1,46 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUsbd:
+    nid: 0x3525FE7A
+    libraries:
+      SceUsbdForDriver:
+        kernel: true
+        nid: 0xA0EBCA41
+        functions:
+          ksceUsbdCloseEndpoint: 0xF304DC5C
+          ksceUsbdControlTransfer: 0x2E05660F
+          ksceUsbdGetDescriptor: 0xBC3EF82B
+          ksceUsbdInterruptTransfer: 0xA0BF85B8
+          ksceUsbdOpenEndpoint: 0x1CDBFF9F
+          ksceUsbdRegisterCompositeLdd: 0x6E53D7F4
+          ksceUsbdRegisterDriver: 0x1EC94F18
+          ksceUsbdSuspendPhase2: 0xD7AA730D
+          ksceUsbdUnregisterDriver: 0x216F108D
+      SceUsbdForUser:
+        kernel: false
+        nid: 0xC3AEAB67
+        functions:
+          sceUsbdAttach: 0xEACEAE86
+          sceUsbdAttachCompositeLdd: 0xCA8F2F59
+          sceUsbdClosePipe: 0xAA3AF5D5
+          sceUsbdEnd: 0x5736A150
+          sceUsbdGetDescriptor: 0xAE671F22
+          sceUsbdGetDescriptorSize: 0xB357AC81
+          sceUsbdGetDeviceAddress: 0xC54F9D11
+          sceUsbdGetDeviceList: 0x2DE0239E
+          sceUsbdGetDeviceSpeed: 0x6C5AACD0
+          sceUsbdGetIsochTransferStatus: 0xA0A2C826
+          sceUsbdGetTransferStatus: 0xCDF5B6E0
+          sceUsbdInit: 0x77D58B31
+          sceUsbdIsochTransferData: 0x594D82FD
+          sceUsbdOpenDefaultPipe: 0x4A26DDCC
+          sceUsbdOpenPipe: 0xF94521A6
+          sceUsbdReceiveEvent: 0x16FEE05D
+          sceUsbdRegisterCallback: 0x9A820167
+          sceUsbdRegisterCompositeLdd: 0x2A7C0263
+          sceUsbdRegisterLdd: 0x6AD28166
+          sceUsbdResetDevice: 0xDEB3BE59
+          sceUsbdTransferData: 0x716048C1
+          sceUsbdUnregisterCallback: 0x0585EA80
+          sceUsbdUnregisterLdd: 0x473692CC

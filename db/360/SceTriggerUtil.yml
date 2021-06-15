@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceTriggerUtil:
+    nid: 0xDC8CE156
+    libraries:
+      SceTriggerUtil:
+        kernel: false
+        nid: 0x1B0302AD
+        functions:
+          sceTriggerUtilGetAutoStartStatus: 0xDD2CA8BB
+          sceTriggerUtilGetDailyEventInfo: 0xDF3ED08E
+          sceTriggerUtilGetOneTimeEventInfo: 0x912434E0
+          sceTriggerUtilGetRegisteredSystemTitleIdList: 0x2A67EF8C
+          sceTriggerUtilGetRegisteredUserTitleIdList: 0xE2B2D2D0
+          sceTriggerUtilGetSystemAppInfo: 0xD659CCB0
+          sceTriggerUtilGetUserAppInfo: 0x0ACE6552
+          sceTriggerUtilRegisterDailyEvent: 0xA69102DE
+          sceTriggerUtilRegisterOneTimeEvent: 0x04218D35
+          sceTriggerUtilUnregisterDailyEvent: 0x58BF700F
+          sceTriggerUtilUnregisterOneTimeEvent: 0xAF73E0A8

@@ -1,0 +1,62 @@
+version: 2
+firmware: 3.60
+modules:
+  SceFios2Kernel:
+    nid: 0x10ECF2D0
+    libraries:
+      SceFios2Kernel:
+        kernel: false
+        nid: 0x8757B742
+        functions:
+          _sceFiosKernelOverlayAdd: 0x6DBCF0B2
+          _sceFiosKernelOverlayAddForProcess: 0x2A381357
+          _sceFiosKernelOverlayDHChstatSync: 0xF6A3E335
+          _sceFiosKernelOverlayDHCloseSync: 0x021B4AF7
+          _sceFiosKernelOverlayDHOpenSync: 0x5D6A1CCE
+          _sceFiosKernelOverlayDHReadSync: 0x2F06ADC6
+          _sceFiosKernelOverlayDHStatSync: 0x759EBEE6
+          _sceFiosKernelOverlayDHSyncSync: 0x2A9724C9
+          _sceFiosKernelOverlayGetInfo: 0xF44F3505
+          _sceFiosKernelOverlayGetInfoForProcess: 0xBC6B3CC5
+          _sceFiosKernelOverlayGetList: 0x9379E2D5
+          _sceFiosKernelOverlayGetRecommendedScheduler: 0xB02E0B26
+          _sceFiosKernelOverlayModify: 0x6D6CDE05
+          _sceFiosKernelOverlayModifyForProcess: 0x6DF2FC05
+          _sceFiosKernelOverlayRemove: 0xB4927173
+          _sceFiosKernelOverlayRemoveForProcess: 0xF8277E07
+          _sceFiosKernelOverlayResolveSync: 0xE9AE60FB
+          _sceFiosKernelOverlayResolveWithRangeSync: 0x8CCA471A
+          _sceFiosKernelOverlayThreadIsDisabled: 0x629F4FE4
+          _sceFiosKernelOverlayThreadSetDisabled: 0x3E9172EA
+      SceFios2Kernel02:
+        kernel: false
+        nid: 0xE83E40A6
+        functions:
+          sceFiosKernelOverlayAddForProcess02: 0xB77C366D
+          sceFiosKernelOverlayGetInfoForProcess02: 0x111DCCFA
+          sceFiosKernelOverlayGetList02: 0xD90FC293
+          sceFiosKernelOverlayGetRecommendedScheduler02: 0x26B9D08A
+          sceFiosKernelOverlayModifyForProcess02: 0x6A976528
+          sceFiosKernelOverlayRemoveForProcess02: 0x50A7167C
+          sceFiosKernelOverlayResolveSync02: 0xD76F046A
+          sceFiosKernelOverlayResolveWithRangeSync02: 0x8DAD1FED
+          sceFiosKernelOverlayThreadIsDisabled02: 0xD6A4FDD6
+          sceFiosKernelOverlayThreadSetDisabled02: 0x7F26D4DD
+      SceFios2KernelForDriver:
+        kernel: true
+        nid: 0x54D6B9EB
+        functions:
+          ksceFiosKernelOverlayAdd: 0x2607EE4C
+          ksceFiosKernelOverlayAddForProcess: 0x17E65A1C
+          ksceFiosKernelOverlayGetInfo: 0x725E6817
+          ksceFiosKernelOverlayGetInfoForProcess: 0xF1762BC2
+          ksceFiosKernelOverlayGetList: 0xFF42AAF0
+          ksceFiosKernelOverlayGetRecommendedScheduler: 0x241BF0D6
+          ksceFiosKernelOverlayModify: 0x7F8B960C
+          ksceFiosKernelOverlayModifyForProcess: 0x853EA82A
+          ksceFiosKernelOverlayRemove: 0x2368FEB5
+          ksceFiosKernelOverlayRemoveForProcess: 0x23247EFB
+          ksceFiosKernelOverlayResolveSync: 0x0F456345
+          ksceFiosKernelOverlayResolveWithRangeSync: 0xD3D968FC
+          ksceFiosKernelOverlayThreadIsDisabled: 0xE71192C5
+          ksceFiosKernelOverlayThreadSetDisabled: 0x03727E5E

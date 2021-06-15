@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceVideoExport:
+    nid: 0x86B46C2D
+    libraries:
+      SceVideoExport:
+        kernel: false
+        nid: 0xF0812A7C
+        functions:
+          sceVideoExportFromFile: 0x4F60A3C8

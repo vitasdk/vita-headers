@@ -1,0 +1,44 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblGcAuthMgr:
+    nid: 0xDB1A9016
+    libraries:
+      SceSblGcAuthMgr:
+        kernel: false
+        nid: 0x7B13BCF7
+        functions:
+          _sceSblGcAuthMgrAdhocBB160Auth1: 0x5E56F845
+          _sceSblGcAuthMgrAdhocBB160Auth2: 0xD2218A6E
+          _sceSblGcAuthMgrAdhocBB160Auth3: 0xD1777A14
+          _sceSblGcAuthMgrAdhocBB160Auth4: 0x7F33DE86
+          _sceSblGcAuthMgrAdhocBB160Auth5: 0xD84C2E0C
+          _sceSblGcAuthMgrAdhocBB160BroadCastDecrypt: 0x2193A7CB
+          _sceSblGcAuthMgrAdhocBB160BroadCastEncrypt: 0x6125C3D9
+          _sceSblGcAuthMgrAdhocBB160GetKeys: 0x09E1E270
+          _sceSblGcAuthMgrAdhocBB160Init: 0xE4AA1BB2
+          _sceSblGcAuthMgrAdhocBB160Shutdown: 0x076ADAB3
+          _sceSblGcAuthMgrAdhocBB160UniCastDecrypt: 0xD79A1B31
+          _sceSblGcAuthMgrAdhocBB160UniCastEncrypt: 0x08C4EE5F
+          _sceSblGcAuthMgrAdhocBB224Auth1: 0x307FD67C
+          _sceSblGcAuthMgrAdhocBB224Auth2: 0x788C0517
+          _sceSblGcAuthMgrAdhocBB224Auth3: 0xD3F95259
+          _sceSblGcAuthMgrAdhocBB224Auth4: 0x5CCC216C
+          _sceSblGcAuthMgrAdhocBB224Auth5: 0x459F5503
+          _sceSblGcAuthMgrAdhocBB224GetKeys: 0xC236FB28
+          _sceSblGcAuthMgrAdhocBB224Init: 0x5AB126A7
+          _sceSblGcAuthMgrAdhocBB224Shutdown: 0x8ECEACF9
+          _sceSblGcAuthMgrGetMediaIdType01: 0x0AC64154
+          _sceSblGcAuthMgrMsSaveBBCipherFinal: 0x18EAAD73
+          _sceSblGcAuthMgrMsSaveBBCipherInit: 0x064BA38A
+          _sceSblGcAuthMgrMsSaveBBCipherUpdate: 0xF6FECCE0
+          _sceSblGcAuthMgrMsSaveBBMacFinal: 0xFDDDD1D4
+          _sceSblGcAuthMgrMsSaveBBMacInit: 0x3A92780D
+          _sceSblGcAuthMgrMsSaveBBMacUpdate: 0x716C0C3B
+          _sceSblGcAuthMgrPcactActivation: 0x032E7CEA
+          _sceSblGcAuthMgrPcactGetChallenge: 0x98153286
+          _sceSblGcAuthMgrPkgVry: 0x3E168BC4
+          _sceSblGcAuthMgrPsmactCreateC1: 0x3BD8B007
+          _sceSblGcAuthMgrPsmactVerifyR1: 0x2B604356
+          _sceSblGcAuthMgrSclkGetData1: 0x8A3AF1E8
+          _sceSblGcAuthMgrSclkSetData2: 0x837D0FB6

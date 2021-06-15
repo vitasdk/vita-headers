@@ -1,0 +1,27 @@
+version: 2
+firmware: 3.60
+modules:
+  SceIdStorage:
+    nid: 0x4BDAF254
+    libraries:
+      SceIdStorageForDriver:
+        kernel: true
+        nid: 0xE1AC6D7C
+        functions:
+          ksceIdStorageCreateAtomicLeaves: 0x99ACCB71
+          ksceIdStorageCreateLeaf: 0x08A471A6
+          ksceIdStorageDeleteLeaf: 0x2C97AB36
+          ksceIdStorageEnumId: 0x31E08AFB
+          ksceIdStorageFlush: 0x3AD32523
+          ksceIdStorageFormat: 0x958089DB
+          ksceIdStorageGetFreeLeaves: 0x37833CB8
+          ksceIdStorageGetLeafSize: 0xEB830733
+          ksceIdStorageIsDirty: 0xB9069BAD
+          ksceIdStorageIsFormatted: 0xFEFA40C2
+          ksceIdStorageIsReadOnly: 0x2D633688
+          ksceIdStorageLookup: 0x6FE062D1
+          ksceIdStorageReadLeaf: 0xEB00C509
+          ksceIdStorageRestart: 0x60B647A5
+          ksceIdStorageUnformat: 0xF4BCB3EE
+          ksceIdStorageUpdate: 0x683AAC10
+          ksceIdStorageWriteLeaf: 0x1FA4D135

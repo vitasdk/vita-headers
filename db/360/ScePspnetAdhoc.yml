@@ -1,0 +1,38 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePspnetAdhoc:
+    nid: 0x321EF128
+    libraries:
+      ScePspnetAdhoc:
+        kernel: false
+        nid: 0x19C6AFDC
+        functions:
+          sceNetAdhocGetPdpStat: 0x02098B69
+          sceNetAdhocGetPtpStat: 0xE45F0801
+          sceNetAdhocGetSocketAlert: 0xCA249F53
+          sceNetAdhocInit: 0x87805E13
+          sceNetAdhocPdpCreate: 0xF2EC12CD
+          sceNetAdhocPdpDelete: 0xB7B6A662
+          sceNetAdhocPdpRecv: 0x1172398C
+          sceNetAdhocPdpSend: 0xB56238BA
+          sceNetAdhocPollSocket: 0x54ED636D
+          sceNetAdhocPtpAccept: 0x0A0423DD
+          sceNetAdhocPtpClose: 0xA083BF7C
+          sceNetAdhocPtpConnect: 0x632EDB11
+          sceNetAdhocPtpFlush: 0xAD5F570D
+          sceNetAdhocPtpListen: 0x8F683810
+          sceNetAdhocPtpOpen: 0x81498625
+          sceNetAdhocPtpRecv: 0x0291EF5B
+          sceNetAdhocPtpSend: 0x0A4E32EF
+          sceNetAdhocSetSocketAlert: 0x31F45B51
+          sceNetAdhocTerm: 0x6C0B4971
+          sceNetAdhocctlGetAddrByName: 0xD3230114
+          sceNetAdhocctlGetAdhocId: 0x49AF74AE
+          sceNetAdhocctlGetEtherAddr: 0xA40F17E0
+          sceNetAdhocctlGetNameByAddr: 0xFCA965F6
+          sceNetAdhocctlGetParameter: 0x051D8368
+          sceNetAdhocctlGetPeerInfo: 0x14552BB1
+          sceNetAdhocctlGetPeerList: 0x356AA25E
+          sceNetAdhocctlInit: 0xE2FE9DD6
+          sceNetAdhocctlTerm: 0x97A80065

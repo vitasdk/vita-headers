@@ -1,0 +1,52 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUdcd:
+    nid: 0x8E26B2A3
+    libraries:
+      SceUdcd:
+        kernel: false
+        nid: 0xA84BDE8A
+        functions:
+          sceUdcdGetDeviceInfo: 0x701C87CF
+          sceUdcdGetDeviceState: 0xFCD31220
+          sceUdcdGetDrvState: 0x99B3DA5D
+          sceUdcdRegisterCallback: 0xA7070093
+          sceUdcdUnregisterCallback: 0xC3FBA889
+          sceUdcdWaitState: 0x59EFFAF1
+      SceUdcdForDriver:
+        kernel: true
+        nid: 0xBC05A8FB
+        functions:
+          ksceUdcdActivate: 0x4FDEA423
+          ksceUdcdActivateInternal: 0x9119247B
+          ksceUdcdClearFIFO: 0x9F53D64D
+          ksceUdcdClearFIFOInternal: 0xA35F3BAF
+          ksceUdcdDeactivate: 0x8AE87657
+          ksceUdcdDeactivateInternal: 0xFDC10F93
+          ksceUdcdGetDeviceInfo: 0xFBEA3703
+          ksceUdcdGetDeviceInfoInternal: 0x45EB0177
+          ksceUdcdGetDeviceState: 0xE054B5E4
+          ksceUdcdGetDeviceStateInternal: 0x409DD196
+          ksceUdcdGetDrvState: 0xC0CA5DDB
+          ksceUdcdGetDrvStateInternal: 0x512F77BC
+          ksceUdcdRegister: 0x4E55244D
+          ksceUdcdRegisterInternal: 0x64675918
+          ksceUdcdReqCancelAll: 0x38787672
+          ksceUdcdReqRecv: 0xC60A74B2
+          ksceUdcdReqRecvInternal: 0x175E6179
+          ksceUdcdReqSend: 0x1ED0E89E
+          ksceUdcdReqSendInternal: 0x2E3E622A
+          ksceUdcdStall: 0x34079250
+          ksceUdcdStallInternal: 0x9B44DF29
+          ksceUdcdStart: 0x9FD733EA
+          ksceUdcdStartCurrentInternal: 0x360E95B9
+          ksceUdcdStartInternal: 0x90F8BCAE
+          ksceUdcdStop: 0x1494293B
+          ksceUdcdStopCurrentInternal: 0x0F3595AE
+          ksceUdcdStopInternal: 0x150FD3BB
+          ksceUdcdUnregister: 0x0DECE532
+          ksceUdcdUnregisterInternal: 0x6CCD152E
+          ksceUdcdWaitBusInitialized: 0x1C684884
+          ksceUdcdWaitState: 0xD03017C0
+          ksceUdcdWaitStateInternal: 0x7AD0C8D1

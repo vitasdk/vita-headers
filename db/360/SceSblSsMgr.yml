@@ -1,0 +1,95 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblSsMgr:
+    nid: 0x4E913538
+    libraries:
+      SceSblAimgr:
+        kernel: false
+        nid: 0xD473F968
+        functions:
+          _sceKernelGetOpenPsId: 0x6E283E2E
+      SceSblDmac5Mgr:
+        kernel: false
+        nid: 0x437366A2
+        functions:
+          sceSblDmac5EncDec: 0xD0B1F759
+          sceSblDmac5EncDecKeyGen: 0x5BF4F924
+          sceSblDmac5HashTransform: 0x09EBC6EF
+          sceSblDmac5HmacKeyGen: 0xCCE57D33
+      SceSblQafMgr:
+        kernel: false
+        nid: 0x756B7E89
+        functions:
+          sceSblQafManagerDeleteQafTokenForUser: 0xD542583F
+          sceSblQafManagerGetQafNameForUser: 0x0F7EA8C2
+          sceSblQafManagerIsAllowKernelDebugForUser: 0x11D30766
+          sceSblQafManagerSetQafTokenForUser: 0x56A16392
+          sceSblQafMgrDeleteQafToken2: 0x62E30BF4
+          sceSblQafMgrGetQafName: 0xF0CA8766
+          sceSblQafMgrGetQafToken: 0xB6BAE81D
+          sceSblQafMgrGetQafToken2: 0xDFBA8569
+          sceSblQafMgrIsAllowAllDebugMenuDisplay: 0x66843305
+          sceSblQafMgrIsAllowForceUpdate: 0x63F29BA0
+          sceSblQafMgrIsAllowLimitedDebugMenuDisplay: 0xC456212D
+          sceSblQafMgrIsAllowMinimumDebugMenuDisplay: 0xA156BBD2
+          sceSblQafMgrIsAllowNonQAPup: 0xB5621615
+          sceSblQafMgrIsAllowNpFullTest: 0x72168C6E
+          sceSblQafMgrIsAllowNpTest: 0xA9EBCBAC
+          sceSblQafMgrIsAllowRemoteSysmoduleLoad: 0xF45AA706
+          sceSblQafMgrIsAllowScreenShotAlways: 0xD22A8731
+          sceSblQafMgrSetQafToken2: 0xF4B5C8A5
+      SceSblRng:
+        kernel: false
+        nid: 0x1843F124
+        functions:
+          _sceKernelGetRandomNumber: 0xC37E818C
+      SceSblSsMgrForDriver:
+        kernel: true
+        nid: 0x61E9428D
+        functions:
+          ksceSblAimgrGetConsoleId: 0xFC6CDD68
+          ksceSblAimgrGetOpenPsId: 0xA5B5D269
+          ksceSblAimgrGetPscode: 0xE0DC2587
+          ksceSblAimgrGetPscode2: 0x9A9676D0
+          ksceSblAimgrGetVisibleId: 0x04843835
+          ksceSblDmac5AesCbcDec: 0x121FA69F
+          ksceSblDmac5AesCbcDecNP: 0x1901CB5E
+          ksceSblDmac5AesCbcEnc: 0xE6E1AD15
+          ksceSblDmac5AesCbcEncNP: 0x711C057A
+          ksceSblDmac5AesCmacNP: 0x83B058F5
+          ksceSblDmac5AesCmacWithKeyslot: 0xEA6ACB6D
+          ksceSblDmac5AesCtrDec: 0x7D46768C
+          ksceSblDmac5AesCtrEnc: 0x82B5DCEF
+          ksceSblDmac5AesEcbDec: 0x7C978BE7
+          ksceSblDmac5AesEcbDecNP: 0x197ACF6F
+          ksceSblDmac5AesEcbDecWithKeyslot: 0x8B4700CB
+          ksceSblDmac5AesEcbEnc: 0xC517770D
+          ksceSblDmac5AesEcbEncNP: 0x0F7D28AF
+          ksceSblDmac5AesEcbEncWithKeyslot: 0x01BE0374
+          ksceSblDmac5DesCbcDecWithKeyslot: 0x926BCCF0
+          ksceSblDmac5DesCbcEncWithKeyslot: 0x05B38698
+          ksceSblDmac5DesEcbDecWithKeyslot: 0x8EAFB18A
+          ksceSblDmac5DesEcbEncWithKeyslot: 0x37DD5CBF
+          ksceSblDmac5Rnd: 0x4DD1B2E5
+          ksceSblDmac5Sha1: 0xEB3AF9B5
+          ksceSblDmac5Sha1HmacNP: 0x92E37656
+          ksceSblDmac5Sha1HmacTransform: 0x6704D985
+          ksceSblDmac5Sha256Hmac: 0x79F38554
+          ksceSblRngGenuineRandomNumber: 0xAC57F4F0
+          ksceSblRngPseudoRandomNumber: 0x4F9BFBE5
+          ksceSblSsCreatePassPhrase: 0xB8B298FD
+          ksceSblSsDecryptWithPortability: 0x934DB6B5
+          ksceSblSsEncryptWithPortability: 0x21EC51F6
+          ksceSblSsGetNvsData: 0xFDD6D5DE
+          ksceSblSsMemset: 0xCD98CC92
+          ksceSblSsMgrExecuteDmac5HashCommand: 0x9641374E
+          ksceSblSsSetNvsData: 0x249ADB07
+      SceSblSsMgrForKernel:
+        kernel: true
+        nid: 0x74580D9F
+        functions:
+          ksceSblNvsReadData: 0xC2EC8F5A
+          ksceSblNvsWriteData: 0xE29E161C
+          ksceSblQafManagerGetQAFlags: 0x83D254FF
+          ksceSblQafManagerGetQafName: 0xE2DD0378

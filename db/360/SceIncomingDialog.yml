@@ -1,0 +1,16 @@
+version: 2
+firmware: 3.60
+modules:
+  SceIncomingDialog:
+    nid: 0xC3E0DAF2
+    libraries:
+      SceIncomingDialog:
+        kernel: false
+        nid: 0x5058F4AB
+        functions:
+          sceIncomingDialogClose: 0x126BD15E
+          sceIncomingDialogFinish: 0x860B1885
+          sceIncomingDialogGetStatus: 0x839DE14C
+          sceIncomingDialogInitialize: 0x18AF99EB
+          sceIncomingDialogOpen: 0x2BEDC1A0
+          sceIncomingDialogSwitchToDialog: 0x0123B83A

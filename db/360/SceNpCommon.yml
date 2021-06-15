@@ -1,0 +1,30 @@
+version: 2
+firmware: 3.60
+modules:
+  SceNpCommon:
+    nid: 0x2F703603
+    libraries:
+      SceNpCommon:
+        kernel: false
+        nid: 0xECB62224
+        functions:
+          sceNpAuthAbortRequest: 0xE2582575
+          sceNpAuthCreateStartRequest: 0xED42079F
+          sceNpAuthDestroyRequest: 0x14FC18AF
+          sceNpAuthGetEntitlementById: 0xF93842F0
+          sceNpAuthGetEntitlementByIdPrefix: 0xC8E51CCA
+          sceNpAuthGetEntitlementIdList: 0x3377CD37
+          sceNpAuthGetTicket: 0x59608D1C
+          sceNpAuthGetTicketParam: 0xC1E23E01
+          sceNpAuthInit: 0x441D8B4E
+          sceNpAuthTerm: 0x6093B689
+          sceNpCmpNpId: 0xFB8D82E5
+          sceNpCmpNpIdInOrder: 0x6BC8150A
+          sceNpCmpOnlineId: 0x8327C26F
+          sceNpCommonBase64Encode: 0x5601E9A2
+          sceNpCommonFreeNpServerName: 0x1D81E445
+          sceNpCommonGetNpEnviroment: 0xAD6403E0
+          sceNpCommonGetSystemSwVersion: 0x775D0177
+          sceNpCommonMallocNpServerName: 0x95EFA15C
+          sceNpGetPlatformType: 0xE9A003DE
+          sceNpSetPlatformType: 0xE807D0BC

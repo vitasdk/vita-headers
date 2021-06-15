@@ -1,0 +1,27 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSystemGesture:
+    nid: 0xCC78BA95
+    libraries:
+      SceSystemGesture:
+        kernel: false
+        nid: 0xAF3FE2D3
+        functions:
+          sceSystemGestureCreateTouchRecognizer: 0xC3367370
+          sceSystemGestureFinalizePrimitiveTouchRecognizer: 0xB3875104
+          sceSystemGestureGetPrimitiveTouchEventByIndex: 0xE0577765
+          sceSystemGestureGetPrimitiveTouchEventByPrimitiveID: 0x480564C9
+          sceSystemGestureGetPrimitiveTouchEvents: 0xC750D3DA
+          sceSystemGestureGetPrimitiveTouchEventsCount: 0xBAB8ECCB
+          sceSystemGestureGetTouchEventByEventID: 0x5570B83E
+          sceSystemGestureGetTouchEventByIndex: 0x74724147
+          sceSystemGestureGetTouchEvents: 0x789D867C
+          sceSystemGestureGetTouchEventsCount: 0x13AD2218
+          sceSystemGestureGetTouchRecognizerInformation: 0xF0DB1AE5
+          sceSystemGestureInitializePrimitiveTouchRecognizer: 0x6078A08B
+          sceSystemGestureResetPrimitiveTouchRecognizer: 0xFD5A6504
+          sceSystemGestureResetTouchRecognizer: 0x0D941B90
+          sceSystemGestureUpdatePrimitiveTouchRecognizer: 0xDF4C665A
+          sceSystemGestureUpdateTouchRecognizer: 0x851FB144
+          sceSystemGestureUpdateTouchRecognizerRectangle: 0xA9DB29F6

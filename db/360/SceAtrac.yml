@@ -1,0 +1,34 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAtrac:
+    nid: 0x738129ED
+    libraries:
+      SceAtrac:
+        kernel: false
+        nid: 0x9AAEDAA0
+        functions:
+          sceAtracAddStreamData: 0x53656F1C
+          sceAtracCreateDecoderGroup: 0x01BFB98C
+          sceAtracDecode: 0x29C74EE3
+          sceAtracDeleteDecoderGroup: 0x6CA2F08A
+          sceAtracGetContentInfo: 0x68DFC199
+          sceAtracGetDecoderGroupInfo: 0xBF34605D
+          sceAtracGetDecoderStatus: 0x90B512AC
+          sceAtracGetInternalError: 0x67981334
+          sceAtracGetLoopInfo: 0xDC768033
+          sceAtracGetNextOutputPosition: 0xACA5F9CC
+          sceAtracGetOutputSamples: 0x37B3F335
+          sceAtracGetOutputableSamples: 0x5B36CDB5
+          sceAtracGetRemainSamples: 0xDC27E7C2
+          sceAtracGetStreamInfo: 0xD9409E57
+          sceAtracGetSubBufferInfo: 0xE7D9DC4F
+          sceAtracGetVacantSize: 0x9BDB14F7
+          sceAtracIsSubBufferNeeded: 0x722F5004
+          sceAtracQueryDecoderGroupMemSize: 0x1A34B331
+          sceAtracReleaseHandle: 0x008EF251
+          sceAtracResetNextOutputPosition: 0xD81D7280
+          sceAtracSetDataAndAcquireHandle: 0xD1997678
+          sceAtracSetLoopNum: 0x5C22E927
+          sceAtracSetOutputSamples: 0x075B0C63
+          sceAtracSetSubBuffer: 0x272B4CBA

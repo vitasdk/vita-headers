@@ -1,0 +1,25 @@
+version: 2
+firmware: 3.60
+modules:
+  SceSblAuthMgr:
+    nid: 0x1773372D
+    libraries:
+      SceSblAuthMgrForDriver:
+        kernel: true
+        nid: 0x4EB2B1BB
+        functions:
+          ksceSblAuthMgrDecBindData: 0x41DAEA12
+          ksceSblAuthMgrGetEKc: 0x868B9E9A
+          ksceSblAuthMgrVerifySpfsoCtx: 0x24C4CE64
+      SceSblAuthMgrForKernel:
+        kernel: true
+        nid: 0x7ABF5135
+        functions:
+          ksceSblAuthMgrAuthHeader: 0xF3411881
+          ksceSblAuthMgrClearDmac5Key: 0xF2BB723E
+          ksceSblAuthMgrClose: 0x026ACBAD
+          ksceSblAuthMgrCompareSwVersion: 0xABAB8466
+          ksceSblAuthMgrLoadBlock: 0xBC422443
+          ksceSblAuthMgrOpen: 0xA9CD2A09
+          ksceSblAuthMgrSetDmac5Key: 0x122ACDEA
+          ksceSblAuthMgrSetupAuthSegment: 0x89CCDA2C

@@ -1,0 +1,14 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCodecEngine:
+    nid: 0x00000018
+    libraries:
+      SceCodecEngineUser:
+        kernel: false
+        nid: 0x469AB062
+        functions:
+          sceCodecEngineAllocMemoryFromUnmapMemBlock: 0x1A3A53E5
+          sceCodecEngineCloseUnmapMemBlock: 0x95EA3B3E
+          sceCodecEngineFreeMemoryFromUnmapMemBlock: 0x6A31831D
+          sceCodecEngineOpenUnmapMemBlock: 0xF0B4C892

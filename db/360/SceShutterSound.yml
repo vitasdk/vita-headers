@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceShutterSound:
+    nid: 0x9B8396F9
+    libraries:
+      SceShutterSound:
+        kernel: false
+        nid: 0x877181ED
+        functions:
+          sceShutterSoundPlay: 0x7FFB6D79

@@ -1,0 +1,100 @@
+version: 2
+firmware: 3.60
+modules:
+  SceRegistryMgr:
+    nid: 0x761F343C
+    libraries:
+      SceRegMgr:
+        kernel: false
+        nid: 0xC436F916
+        functions:
+          sceRegMgrAddRegistryCallback: 0xA86F0A71
+          sceRegMgrDbBackup: 0xB68B5422
+          sceRegMgrDbRestore: 0xA87D2562
+          sceRegMgrGetInitVals: 0x3A9DE7C5
+          sceRegMgrGetKeyBin: 0x0B98D646
+          sceRegMgrGetKeyInt: 0x16DDF3DC
+          sceRegMgrGetKeyStr: 0xE188382F
+          sceRegMgrGetKeys: 0x5B161504
+          sceRegMgrGetKeysInfo: 0x58421DD1
+          sceRegMgrGetRegVersion: 0x74A0FB10
+          sceRegMgrIsBlueScreen: 0x282027B7
+          sceRegMgrRegisterCallback: 0x82A4464D
+          sceRegMgrRegisterDrvErrCallback: 0xDDB02D7F
+          sceRegMgrResetRegistryLv: 0x2B5F3E20
+          sceRegMgrSetKeyBin: 0x566A1793
+          sceRegMgrSetKeyInt: 0xD72EA399
+          sceRegMgrSetKeyStr: 0x41D320C5
+          sceRegMgrSetKeys: 0x34E550DA
+          sceRegMgrStartCallback: 0xCE84FE2F
+          sceRegMgrStopCallback: 0x6A8E2FB4
+          sceRegMgrUnregisterCallback: 0xD7BD3607
+          sceRegMgrUnregisterDrvErrCallback: 0xD9E6B7BD
+      SceRegMgrForDriver:
+        kernel: true
+        nid: 0xB2223AEB
+        functions:
+          ksceRegMgrAddRegistryCallback: 0xA86F0A71
+          ksceRegMgrDbBackup: 0xB68B5422
+          ksceRegMgrDbRestore: 0xA87D2562
+          ksceRegMgrGetInitVals: 0x3A9DE7C5
+          ksceRegMgrGetKeyBin: 0x0B98D646
+          ksceRegMgrGetKeyInt: 0x16DDF3DC
+          ksceRegMgrGetKeyStr: 0xE188382F
+          ksceRegMgrGetKeys: 0x5B161504
+          ksceRegMgrGetKeysInfo: 0x58421DD1
+          ksceRegMgrGetRegVersion: 0x74A0FB10
+          ksceRegMgrIsBlueScreen: 0x282027B7
+          ksceRegMgrRegisterCallback: 0x82A4464D
+          ksceRegMgrRegisterDrvErrCallback: 0xDDB02D7F
+          ksceRegMgrResetRegistryLv: 0x2B5F3E20
+          ksceRegMgrSetKeyBin: 0x566A1793
+          ksceRegMgrSetKeyInt: 0xD72EA399
+          ksceRegMgrSetKeyStr: 0x41D320C5
+          ksceRegMgrSetKeys: 0x34E550DA
+          ksceRegMgrStartCallback: 0xCE84FE2F
+          ksceRegMgrStopCallback: 0x6A8E2FB4
+          ksceRegMgrSystemParamGetBin: 0x7FFE2CDF
+          ksceRegMgrSystemParamGetInt: 0x347C1BDB
+          ksceRegMgrSystemParamGetStr: 0x877ADB3F
+          ksceRegMgrUnregisterCallback: 0xD7BD3607
+          ksceRegMgrUnregisterDrvErrCallback: 0xD9E6B7BD
+      SceRegMgrForGame:
+        kernel: false
+        nid: 0x0B351269
+        functions:
+          sceRegMgrSystemIsBlueScreen: 0x169A0D1D
+          sceRegMgrSystemParamGetBin: 0x7FFE2CDF
+          sceRegMgrSystemParamGetInt: 0x347C1BDB
+          sceRegMgrSystemParamGetStr: 0x877ADB3F
+          sceRegMgrSystemParamSetBin: 0xD5A73557
+          sceRegMgrSystemParamSetInt: 0xC8F73311
+          sceRegMgrSystemParamSetStr: 0xCB3246E3
+      SceRegMgrForSDK:
+        kernel: false
+        nid: 0x67E45817
+        functions:
+          sceRegMgrUtilityGetBin: 0xEFCFA182
+          sceRegMgrUtilityGetInt: 0x8154D696
+          sceRegMgrUtilityGetStr: 0x1FE8949E
+          sceRegMgrUtilitySetBin: 0x7304DC12
+          sceRegMgrUtilitySetInt: 0xB370A2CF
+          sceRegMgrUtilitySetStr: 0x4898C1E2
+      SceRegMgrService:
+        kernel: false
+        nid: 0x23A10D9B
+        functions:
+          sceRegMgrSrvCnvRegionInt: 0x7683FC84
+          sceRegMgrSrvCnvRegionPsCode: 0x94D008D2
+          sceRegMgrSrvCnvRegionStr: 0x15B4A5C5
+          sceRegMgrSrvGetRegion: 0xBEC3F77A
+          sceRegMgrSrvGetRegionStr: 0xBC3FE639
+      SceRegMgrServiceForDriver:
+        kernel: true
+        nid: 0x12431F66
+        functions:
+          ksceRegMgrSrvCnvRegionInt: 0x7683FC84
+          ksceRegMgrSrvCnvRegionPsCode: 0x94D008D2
+          ksceRegMgrSrvCnvRegionStr: 0x15B4A5C5
+          ksceRegMgrSrvGetRegion: 0xBEC3F77A
+          ksceRegMgrSrvGetRegionStr: 0xBC3FE639

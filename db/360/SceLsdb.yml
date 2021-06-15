@@ -1,0 +1,25 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLsdb:
+    nid: 0x19F82753
+    libraries:
+      SceLsdb:
+        kernel: false
+        nid: 0x6BC25E17
+        functions:
+          sceLsdbGetAppVer: 0x63AB6A8F
+          sceLsdbGetAttribute: 0xD494B2C3
+          sceLsdbGetBootable: 0x46BF2766
+          sceLsdbGetCategory: 0x6469796F
+          sceLsdbGetDiscId: 0x1F569CFC
+          sceLsdbGetGameDataId: 0x2FFE0E3F
+          sceLsdbGetMetaContentsPath: 0x9117289F
+          sceLsdbGetName: 0xD02A8B85
+          sceLsdbGetOriginalPath: 0x92D14842
+          sceLsdbGetParentalLevel: 0x226B12F7
+          sceLsdbGetSelfPath: 0xD6B57313
+          sceLsdbGetStitle: 0x3B064DF5
+          sceLsdbGetSystemVersion: 0x9AE94B9F
+          sceLsdbGetTitle: 0x4141EBCD
+          sceLsdbGetType: 0xDEC358E4

@@ -1,0 +1,25 @@
+version: 2
+firmware: 3.60
+modules:
+  SceMtpIfDriver:
+    nid: 0xEA885947
+    libraries:
+      SceMtpIf:
+        kernel: false
+        nid: 0x5EFA4138
+        functions:
+          sceMtpIfCancelTransfer: 0x80D1CA60
+          sceMtpIfChangePhase: 0x695B0DE4
+          sceMtpIfGetPort: 0x352F61B9
+          sceMtpIfIsConnected: 0xA9C97661
+          sceMtpIfRecvCommand: 0x468B6E3E
+          sceMtpIfRecvDataWithParam: 0x6EDB6FB4
+          sceMtpIfReset: 0x315FDE8E
+          sceMtpIfSendDataWithParam: 0x87CC6686
+          sceMtpIfSendEvent: 0xE3C33379
+          sceMtpIfSendResponse: 0xDD08CA01
+          sceMtpIfStartDriver: 0xC5327CAC
+          sceMtpIfStartPort: 0x1624280E
+          sceMtpIfStopDriver: 0xC0CFA3BC
+          sceMtpIfStopPort: 0xD3C974D9
+          sceMtpIfWaitConnect: 0x1E0156BE

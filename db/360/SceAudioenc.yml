@@ -1,0 +1,24 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAudioenc:
+    nid: 0x0000000E
+    libraries:
+      SceAudioencUser:
+        kernel: false
+        nid: 0xA938B1A6
+        functions:
+          sceAudioencClearContext: 0x9386F42D
+          sceAudioencCreateEncoder: 0x64C04AE8
+          sceAudioencCreateEncoderExternal: 0x9B1E8DE2
+          sceAudioencCreateEncoderResident: 0xDD13004C
+          sceAudioencDeleteEncoder: 0xC6BA5EE6
+          sceAudioencDeleteEncoderExternal: 0x552E8882
+          sceAudioencDeleteEncoderResident: 0x80765849
+          sceAudioencEncode: 0xD85DB29C
+          sceAudioencEncodeNFrames: 0xAFCEDA50
+          sceAudioencGetContextSize: 0xEAD4AF38
+          sceAudioencGetInternalError: 0x452246D0
+          sceAudioencGetOptInfo: 0xD01C63A3
+          sceAudioencInitLibrary: 0x76EE4DC6
+          sceAudioencTermLibrary: 0xAB32D022

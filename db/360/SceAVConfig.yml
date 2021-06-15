@@ -1,0 +1,44 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAVConfig:
+    nid: 0x222DDEB1
+    libraries:
+      SceAVConfig:
+        kernel: false
+        nid: 0x79E0F03F
+        functions:
+          sceAVConfigChangeReg: 0xD0595CE4
+          sceAVConfigClearAutoSuspend2: 0xBD9C52B1
+          sceAVConfigDisplayOn: 0x28AAF909
+          sceAVConfigGetAcStatus: 0x8B6E1E99
+          sceAVConfigGetBtVol: 0x174C1E53
+          sceAVConfigGetConnectedAudioDevice: 0x32A0CECF
+          sceAVConfigGetDisplayMaxBrightness: 0x6ABA67F4
+          sceAVConfigGetMasterVol: 0xC609B4D9
+          sceAVConfigGetShutterVol: 0xAD76BD2D
+          sceAVConfigGetSystemVol: 0xFC227CC8
+          sceAVConfigGetVolCtrlEnable: 0x830B950B
+          sceAVConfigHdmiCecCmdOneTouchPlay: 0x0235CA9E
+          sceAVConfigHdmiCecDisable: 0x23DF089D
+          sceAVConfigHdmiCecEnable: 0xFA836E80
+          sceAVConfigHdmiClearCecInfo: 0x2BC5A4E8
+          sceAVConfigHdmiGetCecInfo: 0x4D0AB59F
+          sceAVConfigHdmiGetMonitorInfo: 0x1DD86805
+          sceAVConfigHdmiGetOutScalingRatio: 0x5910A9CB
+          sceAVConfigHdmiSetOutScalingRatio: 0x0DE7CEAB
+          sceAVConfigHdmiSetResolution: 0x4D37F036
+          sceAVConfigHdmiSetRgbRangeMode: 0x67E1A494
+          sceAVConfigMuteOn: 0xA16F1898
+          sceAVConfigRegisterCallback: 0xFB5E3E74
+          sceAVConfigSendVolKey: 0x439A3051
+          sceAVConfigSetAutoDisplayDimming: 0x07AAAA16
+          sceAVConfigSetAutoSuspend: 0x5023700F
+          sceAVConfigSetAutoSuspend2: 0x764CA1B3
+          sceAVConfigSetDisplayBrightness: 0xE0C1B743
+          sceAVConfigSetDisplayColorSpaceMode: 0x3414347F
+          sceAVConfigSetMasterVol: 0xD67544D0
+          sceAVConfigSetSystemVol: 0xDC2EA264
+          sceAVConfigUnRegisterCallback: 0xDD78C3BA
+          sceAVConfigWriteMasterVol: 0x65F03D6A
+          sceAVConfigWriteRegSystemVol: 0xC411D984

@@ -1,13 +1,13 @@
 import os
 import sys
 import re
+import glob
 import fnmatch
 
 CURR_DIR = os.path.dirname(os.path.realpath(__file__))
 DEF_FILE = 'definitions.dox'
 DEF_FILE_PATH = os.path.join(CURR_DIR, '..', 'docs', DEF_FILE)
-DB_FILE = 'db.yml'
-DB_FILE_PATH = os.path.join(CURR_DIR, '..', 'db.yml')
+DB_FILE_PATH = os.path.join(CURR_DIR, '..', 'db', '360', '*.yml')
 INCLUDE_DIR = os.path.join(CURR_DIR, '..', 'include')
 
 DEFINE_RULE = re.compile(r' \*     \\defgroup (Sce\w+) \w+')
@@ -64,24 +64,25 @@ def read_nids():
     user_nids = dict()
     kernel_nids = dict()
     nids = None
-    with open(DB_FILE_PATH, 'r') as d:
-        SECTION = None
-        for line_no, line in enumerate(readlines(d)):
-            line = line.strip()
-            k, v = line.split(':')[:3]
-            if not v.strip():
-                SECTION = k
-                continue
-            if k.strip() == 'kernel':
-                if v.strip() == 'true':
-                    nids = kernel_nids
-                else:
-                    nids = user_nids
-            if SECTION != 'functions':
-                continue
-            if nids.get(k):
-                errors.append('%s: NID conflict %s' % (line_no + 1, k))
-            nids[k] = 1
+    for fn in glob.glob(DB_FILE_PATH):
+        with open(fn, 'r') as d:
+            SECTION = None
+            for line_no, line in enumerate(readlines(d)):
+                line = line.strip()
+                k, v = line.split(':')[:3]
+                if not v.strip():
+                    SECTION = k
+                    continue
+                if k.strip() == 'kernel':
+                    if v.strip() == 'true':
+                        nids = kernel_nids
+                    else:
+                        nids = user_nids
+                if SECTION != 'functions':
+                    continue
+                if nids.get(k):
+                    errors.append('%s: NID conflict %s' % (line_no + 1, k))
+                nids[k] = 1
     return dict(user_nids, **kernel_nids), errors
 
 def check_header_groups(definitions):

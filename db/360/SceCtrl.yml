@@ -1,0 +1,83 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCtrl:
+    nid: 0x3BAF0220
+    libraries:
+      SceCtrl:
+        kernel: false
+        nid: 0xD197E3C7
+        functions:
+          sceCtrlClearRapidFire: 0xD8294C9C
+          sceCtrlDisconnect: 0x16D26DC7
+          sceCtrlGetAnalogStickCheckMode: 0x35BCD3BB
+          sceCtrlGetAnalogStickCheckTarget: 0xD01DE63A
+          sceCtrlGetBatteryInfo: 0x8F9B1CE5
+          sceCtrlGetButtonIntercept: 0x6FAFAD05
+          sceCtrlGetControllerPortInfo: 0x324F1B66
+          sceCtrlGetProcessStatus: 0xA2A56685
+          sceCtrlGetSamplingMode: 0xEC752AAF
+          sceCtrlGetSamplingModeExt: 0xBD27F830
+          sceCtrlGetWirelessControllerInfo: 0xB8844141
+          sceCtrlIsMultiControllerSupported: 0x1FFFD965
+          sceCtrlPeekBufferNegative: 0x104ED1A7
+          sceCtrlPeekBufferNegative2: 0x81A89660
+          sceCtrlPeekBufferPositive: 0xA9C3CED6
+          sceCtrlPeekBufferPositive2: 0x15F81E8C
+          sceCtrlPeekBufferPositiveExt: 0xA59454D3
+          sceCtrlPeekBufferPositiveExt2: 0x860BF292
+          sceCtrlReadBufferNegative: 0x15F96FB0
+          sceCtrlReadBufferNegative2: 0x27A0C5FB
+          sceCtrlReadBufferPositive: 0x67E7AB83
+          sceCtrlReadBufferPositive2: 0xC4226A3E
+          sceCtrlReadBufferPositiveExt: 0xE2D99296
+          sceCtrlReadBufferPositiveExt2: 0xA7178860
+          sceCtrlRegisterBdRMCCallback: 0x0A06B7E4
+          sceCtrlResetLightBar: 0x7E110E90
+          sceCtrlSetActuator: 0xDBCAA0C9
+          sceCtrlSetAnalogStickCheckMode: 0xB2C98244
+          sceCtrlSetAnalogStickCheckTarget: 0xFB12A0A7
+          sceCtrlSetButtonIntercept: 0x433D71F4
+          sceCtrlSetButtonRemappingInfo: 0x8A187F98
+          sceCtrlSetLightBar: 0xDA11D433
+          sceCtrlSetRapidFire: 0xE9CB69C8
+          sceCtrlSetSamplingMode: 0xA497B150
+          sceCtrlSetSamplingModeExt: 0xB1DC4378
+          sceCtrlSingleControllerMode: 0x031BE396
+          sceCtrlUnregisterBdRMCCallback: 0x103EB2B0
+      SceCtrlForDriver:
+        kernel: true
+        nid: 0x7823A5D1
+        functions:
+          ksceCtrlChangePortAssign: 0x53381364
+          ksceCtrlClearRapidFire: 0xED138A26
+          ksceCtrlGetActiveControllerPort: 0xFA88D837
+          ksceCtrlGetButtonIntercept: 0x6BEB1CD7
+          ksceCtrlGetControllerPortInfo: 0xF11D0D30
+          ksceCtrlGetIdleCancelKey: 0x30801AE9
+          ksceCtrlGetIdleCancelThreshold: 0xB9402CEF
+          ksceCtrlGetMaskForAll: 0x46ABDDE8
+          ksceCtrlGetMaskForNonShell: 0xB25BD8FD
+          ksceCtrlGetSamplingMode: 0x145B13BC
+          ksceCtrlIsBdRemoconConnected: 0x5B849B22
+          ksceCtrlNotifyCallBacks: 0x6E183B9B
+          ksceCtrlPeekBufferNegative: 0x19895843
+          ksceCtrlPeekBufferPositive: 0xEA1D3A34
+          ksceCtrlReadBufferNegative: 0x8D4E0DD1
+          ksceCtrlReadBufferPositive: 0x9B96A1AA
+          ksceCtrlRegisterNotifyCallBack: 0xE170883E
+          ksceCtrlRegisterVirtualControllerDriver: 0x18823EEA
+          ksceCtrlSetAnalogEmulation: 0x06577FE8
+          ksceCtrlSetBdRemoconConnected: 0xAA36F578
+          ksceCtrlSetButtonEmulation: 0x1E750326
+          ksceCtrlSetButtonIntercept: 0x06AA5E1A
+          ksceCtrlSetCtrlpCallback: 0x7AD9467E
+          ksceCtrlSetIdleCancelKey: 0x0A679512
+          ksceCtrlSetIdleCancelThreshold: 0x345E74FD
+          ksceCtrlSetRapidFire: 0xA248CDAE
+          ksceCtrlSetSamplingMode: 0x80F5E418
+          ksceCtrlSetTurnOffInterval: 0xED8F0129
+          ksceCtrlSetVibrationSetting: 0x4D8FE670
+          ksceCtrlUnregisterNotifyCallBack: 0x9DAB51C4
+          ksceCtrlUpdateMaskForAll: 0x12C13A72
+          ksceCtrlUpdateMaskForNonShell: 0x03777131
