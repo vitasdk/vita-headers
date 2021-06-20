@@ -1,0 +1,42 @@
+version: 2
+firmware: 3.67
+modules:
+  SceSysmem:
+    nid: 0x3380B323
+    libraries:
+      SceSysmemForKernel:
+        kernel: true
+        nid: 0x02451F0F
+        functions:
+          ksceKernelCreateUidObj: 0xFB6390CE
+          ksceKernelRxMemcpyKernelToUserForPid: 0x2995558D
+          ksceKernelGetMemBlockType: 0xD44FE44B
+          ksceKernelFindClassByName: 0x7D87F706
+      SceCpuForKernel:
+        kernel: true
+        nid: 0xA5195D20
+        functions:
+          ksceKernelCpuDcacheInvalidateAll: 0xF9B0B171
+          ksceKernelCpuDcacheWritebackAll: 0x49180814
+          ksceKernelCpuDcacheWritebackInvalidateAll: 0x4BBA5C82
+          ksceKernelCpuIcacheInvalidateRange: 0x2E637B1D
+          ksceKernelCpuIcacheInvalidateAll: 0x803C84BF
+          ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x73E895EA
+          ksceKernelCpuDcacheWritebackInvalidateRange: 0x4F442396
+      SceDebugForKernel:
+        kernel: true
+        nid: 0x13D793B7
+        functions:
+          ksceDebugSetHandlers: 0x88AD6D0C
+          ksceDebugRegisterPutcharHandler: 0x22546577
+          ksceDebugGetPutcharHandler: 0x8D474850
+          ksceDebugPutchar: 0x2AABAEDA
+          ksceDebugDisableInfoDump: 0xA465A31A
+      SceUartForKernel:
+        kernel: true
+        nid: 0x1CCD9BA3
+        functions:
+          ksceUartReadAvailable: 0x16780BC3
+          ksceUartWrite: 0x430C48F1
+          ksceUartRead: 0x4E97D3AD
+          ksceUartInit: 0x4C02AA05

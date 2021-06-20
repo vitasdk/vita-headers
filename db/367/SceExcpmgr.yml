@@ -1,0 +1,12 @@
+version: 2
+firmware: 3.67
+modules:
+  SceExcpmgr:
+    nid: 0xF3D9E37C
+    libraries:
+      SceExcpmgrForKernel:
+        kernel: true
+        nid: 0x1496A5B5
+        functions:
+          ksceExcpmgrGetData: 0x96C2869C
+          ksceExcpmgrRegisterHandler: 0x00063675
