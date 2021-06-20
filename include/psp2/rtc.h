@@ -46,9 +46,29 @@ typedef struct SceRtcTick {
 } SceRtcTick;
 
 unsigned int sceRtcGetTickResolution(void);
+
+
 int sceRtcGetCurrentTick(SceRtcTick *tick);
+
+/**
+ * Get current real time clock time.
+ *
+ * @param[out] time - see ::SceDateTime.
+ * @param[in] time_zone - The time zone the return value will be.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceRtcGetCurrentClock(SceDateTime *time, int time_zone);
+
+/**
+ * Get current real time clock time with system time zone.
+ *
+ * @param[out] time - see ::SceDateTime.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceRtcGetCurrentClockLocalTime(SceDateTime *time);
+
 int sceRtcGetCurrentNetworkTick(SceRtcTick *tick);
 int sceRtcConvertUtcToLocalTime(const SceRtcTick *utc, SceRtcTick *local_time);
 int sceRtcConvertLocalTimeToUtc(const SceRtcTick *local_time, SceRtcTick *utc);
@@ -90,12 +110,68 @@ int sceRtcParseDateTime(SceRtcTick *utc, const char *pszDateTime);
 int sceRtcParseRFC3339(SceRtcTick *utc, const char *pszDateTime);
 
 /* Inline SceDateTime Getters */
+
+/**
+ * Get current year.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current year.
+ */
 static inline int sceRtcGetYear(const SceDateTime *time){return time->year;}
+
+/**
+ * Get current month.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current month.
+ */
 static inline int sceRtcGetMonth(const SceDateTime *time){return time->month;}
+
+/**
+ * Get current day.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current day.
+ */
 static inline int sceRtcGetDay(const SceDateTime *time){return time->day;}
+
+/**
+ * Get current hour.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current hour.
+ */
 static inline int sceRtcGetHour(const SceDateTime *time){return time->hour;}
+
+/**
+ * Get current minute.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current minute.
+ */
 static inline int sceRtcGetMinute(const SceDateTime *time){return time->minute;}
+
+/**
+ * Get current second.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current second.
+ */
 static inline int sceRtcGetSecond(const SceDateTime *time){return time->second;}
+
+/**
+ * Get current microsecond.
+ *
+ * @param[in] time - see ::SceDateTime.
+ *
+ * @return Current microsecond.
+ */
 static inline int sceRtcGetMicrosecond(const SceDateTime *time){return (int)time->microsecond;}
 
 /* Inline SceDateTime Setters */
