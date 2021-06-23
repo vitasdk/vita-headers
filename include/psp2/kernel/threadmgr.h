@@ -1130,7 +1130,7 @@ int sceKernelTryLockLwMutex(SceKernelLwMutexWork *pWork, int lockCount);
 int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 
 typedef struct	SceKernelLwCondWork {
-	SceInt64 data[4];
+	SceInt32 data[4];
 } SceKernelLwCondWork;
 
 typedef struct SceKernelLwCondOptParam {
