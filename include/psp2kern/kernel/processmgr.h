@@ -66,6 +66,13 @@ int ksceKernelSuspendProcess(SceUID pid, int status);
  */
 int ksceKernelGetProcessStatus(SceUID pid, int *status);
 
+/**
+ * @brief       Get the main thread for a given process.
+ * @param[in]   pid The process id to query for.
+ * @return      The thread UID on success, else < 0 on error.
+ */
+SceUID ksceKernelGetProcessMainThread(SceUID pid);
+
 #ifdef __cplusplus
 }
 #endif
