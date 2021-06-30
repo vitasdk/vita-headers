@@ -1,0 +1,17 @@
+version: 2
+firmware: 3.65
+modules:
+  SceSysmem:
+    nid: 0x3380B323
+    libraries:
+      SceCpuForKernel:
+        kernel: true
+        nid: 0xA5195D20
+        functions:
+          ksceKernelCpuDcacheInvalidateAll: 0xF9B0B171
+          ksceKernelCpuDcacheWritebackAll: 0x49180814
+          ksceKernelCpuDcacheWritebackInvalidateAll: 0x4BBA5C82
+          ksceKernelCpuIcacheInvalidateRange: 0x2E637B1D
+          ksceKernelCpuIcacheInvalidateAll: 0x803C84BF
+          ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x73E895EA
+          ksceKernelCpuDcacheWritebackInvalidateRange: 0x4F442396

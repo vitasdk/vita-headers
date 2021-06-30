@@ -1,0 +1,19 @@
+version: 2
+firmware: 3.63
+modules:
+  SceKernelModulemgr:
+    nid: 0x726C6635
+    libraries:
+      SceModulemgrForKernel:
+        kernel: true
+        nid: 0x92C9FFC2
+        functions:
+          ksceKernelGetModuleInfo: 0xDAA90093
+          ksceKernelGetModuleInternal: 0x37512E29
+          ksceKernelGetModuleList: 0xB72C75A4
+          ksceKernelLoadModuleForPid: 0x4E85022D
+          ksceKernelMountBootfs: 0x185FF1BC
+          ksceKernelStartModuleForPid: 0x3FE47DDF
+          ksceKernelStopModuleForPid: 0xBDBD391D
+          ksceKernelUmountBootfs: 0xBD61AD4D
+          ksceKernelUnloadModuleForPid: 0xFCA9FDB1

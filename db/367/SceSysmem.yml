@@ -1,0 +1,23 @@
+version: 2
+firmware: 3.67
+modules:
+  SceSysmem:
+    nid: 0x3380B323
+    libraries:
+      SceDebugForKernel:
+        kernel: true
+        nid: 0x13D793B7
+        functions:
+          ksceDebugSetHandlers: 0x88AD6D0C
+          ksceDebugRegisterPutcharHandler: 0x22546577
+          ksceDebugGetPutcharHandler: 0x8D474850
+          ksceDebugPutchar: 0x2AABAEDA
+          ksceDebugDisableInfoDump: 0xA465A31A
+      SceUartForKernel:
+        kernel: true
+        nid: 0x1CCD9BA3
+        functions:
+          ksceUartReadAvailable: 0x16780BC3
+          ksceUartWrite: 0x430C48F1
+          ksceUartRead: 0x4E97D3AD
+          ksceUartInit: 0x4C02AA05

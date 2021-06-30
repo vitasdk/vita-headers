@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.63
+modules:
+  SceKernelThreadMgr:
+    nid: 0x23A1B482
+    libraries:
+      SceThreadmgrForKernel:
+        kernel: true
+        nid: 0x7F8593BA
+        functions:
+          ksceKernelGetFaultingProcess: 0x6C1F092F
