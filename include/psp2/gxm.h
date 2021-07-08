@@ -1391,6 +1391,9 @@ void sceGxmSetFragmentProgram(SceGxmContext *context, const SceGxmFragmentProgra
 int sceGxmReserveVertexDefaultUniformBuffer(SceGxmContext *context, void **uniformBuffer);
 int sceGxmReserveFragmentDefaultUniformBuffer(SceGxmContext *context, void **uniformBuffer);
 
+int sceGxmSetVertexDefaultUniformBuffer(SceGxmContext *context, const void *uniformBuffer);
+int sceGxmSetFragmentDefaultUniformBuffer(SceGxmContext *context, const void *uniformBuffer);
+
 int sceGxmSetVertexStream(SceGxmContext *context, unsigned int streamIndex, const void *streamData);
 int sceGxmSetVertexTexture(SceGxmContext *context, unsigned int textureIndex, const SceGxmTexture *texture);
 int sceGxmSetFragmentTexture(SceGxmContext *context, unsigned int textureIndex, const SceGxmTexture *texture);
