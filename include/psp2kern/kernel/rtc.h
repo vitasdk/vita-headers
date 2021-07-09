@@ -19,6 +19,25 @@ typedef struct SceRtcTick {
 int ksceRtcSetCurrentTick(SceRtcTick *tick);
 int ksceRtcGetCurrentTick(SceRtcTick *tick);
 
+/**
+ * Get current real time clock time.
+ *
+ * @param[out] time - see ::SceDateTime.
+ * @param[in] time_zone - The time zone the return value will be.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceRtcGetCurrentClock(SceDateTime *time, int time_zone);
+
+/**
+ * Get current real time clock time with system time zone.
+ *
+ * @param[out] time - see ::SceDateTime.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceRtcGetCurrentClockLocalTime(SceDateTime *time);
+
 int ksceRtcSetCurrentNetworkTick(SceRtcTick *tick);
 int ksceRtcGetCurrentNetworkTick(SceRtcTick *tick);
 
