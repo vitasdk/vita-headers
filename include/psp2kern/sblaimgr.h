@@ -35,7 +35,7 @@ typedef enum SceProductCode {
 } SceProductCode;
 
 /**
- * @brief Get service/manufacturing information(factory fw).
+ * @brief Get service/manufacturing information (factory/minimum fw).
  *
  * @param[out] info - The info output pointer
  *
