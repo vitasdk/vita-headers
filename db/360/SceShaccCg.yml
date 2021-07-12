@@ -10,6 +10,32 @@ modules:
         functions:
           sceShaccCgCompileProgram: 0x66814F35
           sceShaccCgDestroyCompileOutput: 0xAA82EF0C
+          sceShaccCgGetArrayParameter: 0xBB703EE1
+          sceShaccCgGetArraySize: 0xB4AC9943
+          sceShaccCgGetFirstParameter: 0x17223BEB
+          sceShaccCgGetFirstStructParameter: 0x648739F3
+          sceShaccCgGetFirstUniformBlockParameter: 0x56BFA825
+          sceShaccCgGetNextParameter: 0x46FA0303
+          sceShaccCgGetParameterBaseType: 0x7B2CF324
+          sceShaccCgGetParameterBufferIndex: 0xD4378DB1
+          sceShaccCgGetParameterByName: 0x6FB40CA9
+          sceShaccCgGetParameterClass: 0xDF3DDCFD
+          sceShaccCgGetParameterColumns: 0x7BC25091
+          sceShaccCgGetParameterDirection: 0xDAD4AAE4
+          sceShaccCgGetParameterMemoryLayout: 0xEF8D59D6
+          sceShaccCgGetParameterName: 0x4595A388
+          sceShaccCgGetParameterResourceIndex: 0x6BB58825
+          sceShaccCgGetParameterRows: 0x2654E73A
+          sceShaccCgGetParameterSemantic: 0xA7930FF6
+          sceShaccCgGetParameterUserType: 0x152971B1
+          sceShaccCgGetParameterVariability: 0xF4BAB902
+          sceShaccCgGetParameterVectorWidth: 0x0205DE96
+          sceShaccCgGetRowParameter: 0x07DDFC78
+          sceShaccCgGetSamplerQueryFormatPrecision: 0xA067C481
+          sceShaccCgGetSamplerQueryFormatPrecisionCount: 0x268FAEE9
+          sceShaccCgGetSamplerQueryFormatWidth: 0xA56B1A5B
           sceShaccCgInitializeCallbackList: 0xA8C2C1C8
           sceShaccCgInitializeCompileOptions: 0x3B58AFA0
+          sceShaccCgIsParameterReferenced: 0x0E1285A6
+          sceShaccCgIsParameterRegFormat: 0xA13A8A1E
           sceShaccCgSetDefaultAllocator: 0x6F01D573
