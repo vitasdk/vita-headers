@@ -21,11 +21,13 @@ extern "C" {
 int _vshSblGetSystemSwVersion(SceKernelFwInfo *data);
 
 /**
- * Gets factory (minimum) firmware version.
+ * @brief Get service/manufacturing information (factory/minimum firmware).
  *
- * @param[out] minver - factory firmware version.
+ * @param[out] info - The info output pointer
+ *
+ * @return 0 on success, < 0 on error.
  */
-int _vshSblAimgrGetSMI(int *minver);
+int _vshSblAimgrGetSMI(SceUInt32 *info);
 
 int _vshSblAimgrGetConsoleId(char CID[32]);
 
