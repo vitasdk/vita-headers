@@ -174,14 +174,14 @@ typedef union SceAudiodecInfo {
 typedef struct SceAudiodecCtrl {
 	SceUInt32       size;
 	SceInt32        handle;
-	SceUInt8        *pEs;			//! pointer to elementary stream
-	SceUInt32       inputEsSize;	//! size of elementary stream used actually (in byte)
-	SceUInt32       maxEsSize;		//! maximum size of elementary stream used (in byte)
-	void            *pPcm;			//! pointer to PCM
-	SceUInt32       outputPcmSize;	//! size of PCM output actually (in byte)
-	SceUInt32       maxPcmSize;		//! maximum size of PCM output (in byte)
-	SceUInt32       wordLength;		//! PCM bit depth
-	SceAudiodecInfo *pInfo;			//! pointer to SceAudiodecInfo
+	SceUInt8        *pEs;			//!< pointer to elementary stream
+	SceUInt32       inputEsSize;	//!< size of elementary stream used actually (in byte)
+	SceUInt32       maxEsSize;		//!< maximum size of elementary stream used (in byte)
+	void            *pPcm;			//!< pointer to PCM
+	SceUInt32       outputPcmSize;	//!< size of PCM output actually (in byte)
+	SceUInt32       maxPcmSize;		//!< maximum size of PCM output (in byte)
+	SceUInt32       wordLength;		//!< PCM bit depth
+	SceAudiodecInfo *pInfo;			//!< pointer to SceAudiodecInfo
 } SceAudiodecCtrl;
 
 extern SceInt32 sceAudiodecInitLibrary(SceUInt32 codecType, SceAudiodecInitParam *pInitParam);
