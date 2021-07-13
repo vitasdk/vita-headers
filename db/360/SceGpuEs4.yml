@@ -8,15 +8,18 @@ modules:
         kernel: true
         nid: 0x54802381
         functions:
+          DevInitSGXPart2KM: 0x49AD869F
           OSAllocMem: 0x68815236
           OSFreeMem: 0x0BB49287
           OSGetCurrentProcessIDKM: 0x6C6F2BEA
           OSMemCopy: 0x771EC61E
           OSMemSet: 0x50494916
           OSProcHasPrivSrvInit: 0x302C7C5F
+          PVRSRVAllocDeviceMemKM: 0x623E50D0
           PVRSRVAcquireDeviceDataKM: 0xE6B866FD
           PVRSRVEnumerateDevicesKM: 0xEC5163B0
           PVRSRVFinaliseSystem: 0x399BC738
+          PVRSRVFreeDeviceMemKM: 0xD9CE787A
           PVRSRVGetInitServerState: 0x3AF6FE80
           PVRSRVGetMiscInfoKM: 0x8FB57186
           PVRSRVPerProcessData: 0x3DAB1F7F
@@ -24,6 +27,8 @@ modules:
           PVRSRVPerProcessDataDisconnect: 0xB4A2B60F
           PVRSRVSetInitServerState: 0xDCD78852
           ksceGpuGetRegisterDump: 0x14ECCFCD
+          ksceGpuMmuMapMemory: 0xEF4B16D3
+          ksceGpuMmuUnmapMemory: 0x9AAAD91C
       SceGpuEs4ForUser:
         kernel: false
         nid: 0x6EC1443D
