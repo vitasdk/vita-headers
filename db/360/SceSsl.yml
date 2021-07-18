@@ -19,3 +19,10 @@ modules:
           sceSslGetSubjectName: 0x9B2F1BC1
           sceSslInit: 0x3C733316
           sceSslTerm: 0x03CE6E3A
+      SceSslInternal:
+        kernel: false
+        nid: 0x68D6C3FF
+        functions:
+          sceSslInternalGetCertificateAuthority: 0x064DFC99
+          sceSslInternalIsInitalized: 0x4B4A2307
+          sceSslInternalSend: 0xF39A49C6
