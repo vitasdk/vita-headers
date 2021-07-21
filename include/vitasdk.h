@@ -94,6 +94,6 @@
 #include <psp2/net/net_syscalls.h>
 #include <psp2/net/netctl.h>
 
-#include <psp2/deci4p/user.h.h>
+#include <psp2/deci4p/user.h>
 
 #endif
