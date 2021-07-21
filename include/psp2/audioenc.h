@@ -121,6 +121,21 @@ int sceAudioencClearContext(SceAudioencCtrl *pCtrl);
 int sceAudioencGetOptInfo(SceAudioencCtrl *pCtrl);
 int sceAudioencGetInternalError(SceAudioencCtrl *pCtrl, int *pInternalError);
 
+SceInt32 _sceAudioencClearContext(SceAudioencCtrl *pCtrl);
+SceInt32 _sceAudioencCreateEncoder(SceAudioencCtrl *pCtrl, SceUInt32 codecType);
+SceInt32 _sceAudioencCreateEncoderExternal(SceAudioencCtrl *pCtrl, SceUInt32 codecType, SceUIntVAddr vaContext, SceUInt32 contextSize);
+SceInt32 _sceAudioencCreateEncoderResident(SceAudioencCtrl *pCtrl, SceUInt32 codecType);
+SceInt32 _sceAudioencDeleteEncoder(SceAudioencCtrl *pCtrl);
+SceInt32 _sceAudioencDeleteEncoderExternal(SceAudioencCtrl *pCtrl, SceUIntVAddr *pvaContext);
+SceInt32 _sceAudioencDeleteEncoderResident(SceAudioencCtrl *pCtrl);
+SceInt32 _sceAudioencEncode(SceAudioencCtrl *pCtrl);
+SceInt32 _sceAudioencEncodeNFrames(SceAudioencCtrl *pCtrl, SceUInt32 nFrames);
+SceInt32 _sceAudioencGetContextSize(SceAudioencCtrl *pCtrl, SceUInt32 codecType);
+SceInt32 _sceAudioencGetInternalError(SceAudioencCtrl *pCtrl, SceInt32 *pInternalError);
+SceInt32 _sceAudioencGetOptInfo(SceAudioencCtrl *pCtrl);
+SceInt32 _sceAudioencInitLibrary(SceUInt32 codecType, SceAudioencInitParam *pInitParam);
+SceInt32 _sceAudioencTermLibrary(SceUInt32 codecType);
+
 #ifdef __cplusplus
 }
 #endif
