@@ -286,7 +286,7 @@ int sceKernelCheckThreadStack(void);
  *
  * @return The free size.
  */
-int sceKernelGetThreadStackFreeSize(SceUID thid);
+SceSSize sceKernelGetThreadStackFreeSize(SceUID threadId);
 
 /**
   * Get the status information for the specified thread.
