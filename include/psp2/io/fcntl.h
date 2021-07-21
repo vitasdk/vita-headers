@@ -297,6 +297,8 @@ SceSSize sceIoRead(SceUID fd, void *buf, SceSize nbyte);
 SceSSize sceIoWrite(SceUID fd, const void *buf, SceSize nbyte);
 SceUID _sceIoOpen(const char *filename, int flag, SceIoMode mode);
 int _sceIoSync(const char *devname, int flag);
+int _sceIoRemove(const char *filename);
+int _sceIoRename(const char *oldname, const char *newname);
 
 #ifdef __cplusplus
 }
