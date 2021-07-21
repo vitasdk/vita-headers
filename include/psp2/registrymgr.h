@@ -12,6 +12,11 @@
 extern "C" {
 #endif
 
+typedef int SceRegMgrSystemParam;
+
+// missing struct
+typedef struct SceRegMgrValue SceRegMgrValue;
+
 /**
  * Get a key's information by category and name
  *
@@ -22,7 +27,7 @@ extern "C" {
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrGetKeyBin(const char *category, const char *name, void *buf, int size);
+SceInt32 sceRegMgrGetKeyBin(const SceChar8 *category, const SceChar8 *key, void *binVal, SceSize binLen);
 
 /**
  * Get a key's information by category and name
@@ -33,7 +38,7 @@ int sceRegMgrGetKeyBin(const char *category, const char *name, void *buf, int si
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrGetKeyInt(const char* category, const char* name, int* buf);
+SceInt32 sceRegMgrGetKeyInt(const SceChar8 *category, const SceChar8 *key, SceInt32 *intVal);
 
 /**
  * Get a key's information by category and name
@@ -45,7 +50,7 @@ int sceRegMgrGetKeyInt(const char* category, const char* name, int* buf);
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrGetKeyStr(const char* category, const char* name, char* buf, const int size);
+SceInt32 sceRegMgrGetKeyStr(const SceChar8 *category, const SceChar8 *key, SceChar8 *strVal, SceSize strLen);
 
 /**
  * Set a key's information by category and name
@@ -57,7 +62,7 @@ int sceRegMgrGetKeyStr(const char* category, const char* name, char* buf, const 
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrSetKeyBin(const char *category, const char *name, void *buf, int size);
+SceInt32 sceRegMgrSetKeyBin(const SceChar8 *category, const SceChar8 *key, const void *binVal, SceSize binLen);
 
 /**
  * Set a key's information by category and name
@@ -68,7 +73,7 @@ int sceRegMgrSetKeyBin(const char *category, const char *name, void *buf, int si
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrSetKeyInt(const char* category, const char* name, int buf);
+SceInt32 sceRegMgrSetKeyInt(const SceChar8 *category, const SceChar8 *key, SceInt32 intVal);
 
 /**
  * Set a key's information by category and name
@@ -80,7 +85,7 @@ int sceRegMgrSetKeyInt(const char* category, const char* name, int buf);
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrSetKeyStr(const char* category, const char* name, char* buf, const int size);
+SceInt32 sceRegMgrSetKeyStr(const SceChar8 *category, const SceChar8 *key, const SceChar8 *strVal, SceSize strLen);
 
 /**
  * Get all keys' initial information by category (from os0:kd/registry.db0)
@@ -91,7 +96,7 @@ int sceRegMgrSetKeyStr(const char* category, const char* name, char* buf, const 
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrGetInitVals(const char* category, char* buf, const int elements_number);
+SceInt32 sceRegMgrGetInitVals(const SceChar8 *category, SceRegMgrValue *keys, SceInt32 keycnt);
 
 /**
  * Get all keys' information by category
@@ -102,7 +107,7 @@ int sceRegMgrGetInitVals(const char* category, char* buf, const int elements_num
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrGetKeys(const char* category, char* buf, const int elements_number);
+SceInt32 sceRegMgrGetKeys(const SceChar8 *category, SceRegMgrValue *keys, SceInt32 keycnt);
 
 /**
  * Set all keys' information by category
@@ -113,7 +118,7 @@ int sceRegMgrGetKeys(const char* category, char* buf, const int elements_number)
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrSetKeys(const char* category, char* buf, const int elements_number);
+SceInt32 sceRegMgrSetKeys(const SceChar8 *category, const SceRegMgrValue *keys, SceInt32 keycnt);
 
 /**
  * Get a system param key's information by id
@@ -123,7 +128,7 @@ int sceRegMgrSetKeys(const char* category, char* buf, const int elements_number)
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrSystemParamGetInt(const int id, int* buf);
+SceInt32 sceRegMgrSystemParamGetInt(SceRegMgrSystemParam param, SceInt32 *intVal);
 
 /**
  * Get a system param key's information by id
@@ -134,8 +139,7 @@ int sceRegMgrSystemParamGetInt(const int id, int* buf);
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrSystemParamGetStr(const int id, char* buf, const int size);
-
+SceInt32 sceRegMgrSystemParamGetStr(SceRegMgrSystemParam param, SceChar8 *strVal, SceSize strLen);
 
 /**
  * Get the registry version
@@ -145,8 +149,38 @@ int sceRegMgrSystemParamGetStr(const int id, char* buf, const int size);
  *
  * @return 0 on success, < 0 on error
  */
-int sceRegMgrGetRegVersion(int version, char* buf);
+SceInt32 sceRegMgrGetRegVersion(void);
 
+SceInt32 sceRegMgrAddRegistryCallback(SceUID cbid, const SceChar8 *path);
+SceInt32 sceRegMgrDbBackup(const SceChar8 *path, SceInt32 level);
+SceInt32 sceRegMgrDbRestore(const SceChar8 *path);
+SceInt32 sceRegMgrGetKeysInfo(const SceChar8 *category, SceRegMgrValue *keys, SceInt32 keycnt);
+SceInt32 sceRegMgrInitRegistry(SceInt32 level);
+SceInt32 sceRegMgrInitRegistryRegion(SceInt32 region, SceInt32 machine, SceInt32 qaflag);
+SceInt32 sceRegMgrIsBlueScreen(SceInt32 regmgrError);
+SceInt32 sceRegMgrRegisterCallback(SceUID cbid);
+SceInt32 sceRegMgrRegisterDrvErrCallback(SceUID cbid);
+SceInt32 sceRegMgrResetRegistryLv(const SceChar8 *resetPath, SceInt32 level);
+SceInt32 sceRegMgrSrvCnvRegionInt(const SceChar8 *regstr);
+SceInt32 sceRegMgrSrvCnvRegionPsCode(SceInt32 rgmgReg);
+SceInt32 sceRegMgrSrvCnvRegionStr(SceInt32 regnum, SceChar8 *regstr, SceSize regstrsz);
+SceInt32 sceRegMgrSrvGetRegion(void);
+SceInt32 sceRegMgrSrvGetRegionStr(SceChar8 *regstr, SceSize regstrsz);
+SceInt32 sceRegMgrStartCallback(SceUID cbid);
+SceInt32 sceRegMgrStopCallback(SceUID cbid);
+SceInt32 sceRegMgrSystemIsBlueScreen(SceInt32 regmgrError);
+SceInt32 sceRegMgrSystemParamGetBin(SceRegMgrSystemParam param, SceChar8 *binVal, SceSize binSize);
+SceInt32 sceRegMgrSystemParamSetBin(SceRegMgrSystemParam param, const SceChar8 *binVal, SceSize binSize);
+SceInt32 sceRegMgrSystemParamSetInt(SceRegMgrSystemParam param, SceInt32 intVal);
+SceInt32 sceRegMgrSystemParamSetStr(SceRegMgrSystemParam param, const SceChar8 *strVal, SceSize strLen);
+SceInt32 sceRegMgrUnregisterCallback(SceUID cbid);
+SceInt32 sceRegMgrUnregisterDrvErrCallback(SceUID cbid);
+SceInt32 sceRegMgrUtilityGetBin(SceInt32 param, SceChar8 *binVal, SceSize binSize);
+SceInt32 sceRegMgrUtilityGetInt(SceInt32 param, SceInt32 *intVal);
+SceInt32 sceRegMgrUtilityGetStr(SceInt32 param, SceChar8 *strVal, SceSize strLen);
+SceInt32 sceRegMgrUtilitySetBin(SceInt32 param, const SceChar8 *binVal, SceSize binSize);
+SceInt32 sceRegMgrUtilitySetInt(SceInt32 param, SceInt32 intVal);
+SceInt32 sceRegMgrUtilitySetStr(SceInt32 param, const SceChar8 *strVal, SceSize strLen);
 
 #ifdef __cplusplus
 }
