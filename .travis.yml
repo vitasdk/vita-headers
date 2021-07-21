@@ -17,6 +17,7 @@ before_script:
 
 script:
     - set -e
+    - mkdir ~/.git
     - cd $TRAVIS_BUILD_DIR
     - bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
     - export VITASDK=$PWD/vitasdk
