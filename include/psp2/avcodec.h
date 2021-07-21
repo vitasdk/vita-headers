@@ -74,8 +74,8 @@ SceInt32 _sceAvcencSetEncoderParameter(const SceAvcencCtrl *pCtrl, const SceAvce
 
 // Maybe not present in 3.60
 /*
-SceInt32 _sceVideoencInitLibraryWithMemInternal(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
-*/
+ * SceInt32 _sceVideoencInitLibraryWithMemInternal(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
+ */
 
 #ifdef __cplusplus
 }
