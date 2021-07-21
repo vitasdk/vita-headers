@@ -8,6 +8,7 @@
 #define _PSP2_GPS_H_
 
 #include <psp2/types.h>
+#include <psp2/rtc.h>
 
 #ifdef __cplusplus
 extern "C" {
