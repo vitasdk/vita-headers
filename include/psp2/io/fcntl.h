@@ -112,13 +112,13 @@ int sceIoCloseAsync(SceUID fd);
  * bytes_read = sceIoRead(fd, data, 100);
  * @endcode
  *
- * @param fd - Opened file descriptor to read from
- * @param data - Pointer to the buffer where the read data will be placed
- * @param size - Size of the read in bytes
+ * @param fd    - Opened file descriptor to read from
+ * @param buf   - Pointer to the buffer where the read data will be placed
+ * @param nbyte - Size of the read in bytes
  *
  * @return The number of bytes read
  */
-int sceIoRead(SceUID fd, void *data, SceSize size);
+SceSSize sceIoRead(SceUID fd, void *buf, SceSize nbyte);
 
 /**
  * Read input (asynchronous)
@@ -161,13 +161,13 @@ int sceIoPread(SceUID fd, void *data, SceSize size, SceOff offset);
  * bytes_written = sceIoWrite(fd, data, 100);
  * @endcode
  *
- * @param fd - Opened file descriptor to write to
- * @param data - Pointer to the data to write
- * @param size - Size of data to write
+ * @param fd    - Opened file descriptor to write to
+ * @param buf   - Pointer to the data to write
+ * @param nbyte - Size of data to write
  *
  * @return The number of bytes written
  */
-int sceIoWrite(SceUID fd, const void *data, SceSize size);
+SceSSize sceIoWrite(SceUID fd, const void *buf, SceSize nbyte);
 
 /**
  * Write output (asynchronous)
@@ -294,8 +294,6 @@ int sceIoSetThreadDefaultPriority(int priority);
 SceOff _sceIoLseek(SceUID fd, SceOff offset, int whence);
 SceSSize _sceIoPread(SceUID fd, void *buf, SceSize nbyte, SceOff offset);
 SceSSize _sceIoPwrite(SceUID fd, const void *buf, SceSize nbyte, SceOff offset);
-SceSSize sceIoRead(SceUID fd, void *buf, SceSize nbyte);
-SceSSize sceIoWrite(SceUID fd, const void *buf, SceSize nbyte);
 SceUID _sceIoOpen(const char *filename, int flag, SceIoMode mode);
 int _sceIoSync(const char *devname, int flag);
 int _sceIoRemove(const char *filename);
