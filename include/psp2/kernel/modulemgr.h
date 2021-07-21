@@ -129,8 +129,6 @@ typedef SceKernelSystemSwVersion SceKernelFwInfo;
  */
 int sceKernelGetSystemSwVersion(SceKernelSystemSwVersion *version);
 
-int sceKernelSetSystemSwVersion(const SceKernelSystemSwVersion *version);
-
 // missing structs
 typedef struct SceKernelLoadModuleOpt SceKernelLoadModuleOpt;
 typedef struct SceKernelUnloadModuleOpt SceKernelUnloadModuleOpt;
@@ -157,6 +155,11 @@ int sceKernelGetLibraryInfoByNID(SceUID modid, SceNID libnid, SceKernelLibraryIn
 int sceKernelIsCalledFromSysModule(void *lr);
 SceUID sceKernelGetModuleIdByAddr(void *addr);
 SceUInt32 sceKernelGetAllowedSdkVersionOnSystem(void);
+
+// Maybe not present in 3.60
+/*
+ * int sceKernelSetSystemSwVersion(const SceKernelSystemSwVersion *version);
+ */
 
 #ifdef __cplusplus
 }
