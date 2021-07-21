@@ -122,6 +122,9 @@ typedef struct SceKernelTimezone {
 
 int sceKernelLibcGettimeofday(SceKernelTimeval *p, SceKernelTimezone *z);
 
+// 1.69, Does not exist in 3.60
+int _sceKernelRegisterExitAddress(SceUIntUAddr psceKernelExitThread, SceUIntUAddr psceKernelExitDeleteThread, SceUIntUAddr psceKernelExitCallback);
+
 #ifdef __cplusplus
 }
 #endif
