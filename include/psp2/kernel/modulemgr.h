@@ -134,13 +134,6 @@ typedef struct SceKernelLoadModuleOpt SceKernelLoadModuleOpt;
 typedef struct SceKernelUnloadModuleOpt SceKernelUnloadModuleOpt;
 typedef struct SceKernelLibraryInfo SceKernelLibraryInfo;
 
-SceUID __sceKernelCloseModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
-SceUID __sceKernelLoadModuleWithoutStart(const char *moduleFileName, SceUInt32 flags, const SceKernelLoadModuleOpt *pOpt);
-SceUID __sceKernelOpenModule(const char *moduleFileName, SceSize args, const void *argp, SceUInt32 flags);
-SceUID __sceKernelStartModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
-SceUID __sceKernelStopModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
-SceUID __sceKernelUnloadModuleWithoutStop(SceUID uid, SceUInt32 flags, const SceKernelUnloadModuleOpt *pOpt);
-
 SceUID _sceKernelLoadModule(const char *moduleFileName, SceUInt32 flags, const SceKernelLoadModuleOpt *pOpt);
 SceUID _sceKernelLoadStartModule(const char *moduleFileName, SceSize args, const void *argp, SceUInt32 flags);
 int _sceKernelUnloadModule(SceUID uid, SceUInt32 flags, const SceKernelUnloadModuleOpt *pOpt);
@@ -159,6 +152,12 @@ SceUInt32 sceKernelGetAllowedSdkVersionOnSystem(void);
 // Maybe not present in 3.60
 /*
  * int sceKernelSetSystemSwVersion(const SceKernelSystemSwVersion *version);
+ * SceUID __sceKernelCloseModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
+ * SceUID __sceKernelLoadModuleWithoutStart(const char *moduleFileName, SceUInt32 flags, const SceKernelLoadModuleOpt *pOpt);
+ * SceUID __sceKernelOpenModule(const char *moduleFileName, SceSize args, const void *argp, SceUInt32 flags);
+ * SceUID __sceKernelStartModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
+ * SceUID __sceKernelStopModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
+ * SceUID __sceKernelUnloadModuleWithoutStop(SceUID uid, SceUInt32 flags, const SceKernelUnloadModuleOpt *pOpt);
  */
 
 #ifdef __cplusplus
