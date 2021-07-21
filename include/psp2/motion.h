@@ -278,15 +278,11 @@ int sceMotionDevGetGyroCalibData(SceMotionDevGyroCalibData *pData);
 int sceMotionDevGetGyroCalibData2(int port, SceMotionDevGyroCalibData *pData);
 int sceMotionDevGetMeasMode(SceMotionDevModeInfo *pModeInfo);
 int sceMotionDevIsReady(void);
-int sceMotionDevIsWriteMagnCalibDone(SceBool *pbDone);
-int sceMotionDevMagnCalibNotificationServiceDisable(void);
-int sceMotionDevMagnCalibNotificationServiceEnable(void);
 int sceMotionDevMagnSamplingStart(void);
 int sceMotionDevMagnSamplingStop(void);
 int sceMotionDevRead(SceMotionDevData* pData, int dataNum, SceUInt32 *pInfo);
 int sceMotionDevRead2(int port, SceMotionDevData *pData, int dataNum, SceUInt32 *pInfo);
 int sceMotionDevReadForMagnCalib(SceMotionDevData* pData, int dataNum);
-int sceMotionDevRevertMagnCalibToFactorySetting(void);
 int sceMotionDevSamplingStart(void);
 int sceMotionDevSamplingStart2(int port);
 int sceMotionDevSamplingStop(void);
@@ -294,7 +290,15 @@ int sceMotionDevSamplingStop2(int port);
 int sceMotionDevSetSamplingMode(SceUInt32 mode);
 int sceMotionDevUpdateMagnCalibData(const SceMotionDevMagnCalibData *pData, SceUInt32* pTag);
 int sceMotionDevUpdateMagnStabilityLevel(SceUInt32 level);
-int sceMotionDevWriteCurrentMagnCalibData(void);
+
+// Maybe not present in 3.60
+/*
+ * int sceMotionDevIsWriteMagnCalibDone(SceBool *pbDone);
+ * int sceMotionDevMagnCalibNotificationServiceDisable(void);
+ * int sceMotionDevMagnCalibNotificationServiceEnable(void);
+ * int sceMotionDevRevertMagnCalibToFactorySetting(void);
+ * int sceMotionDevWriteCurrentMagnCalibData(void);
+ */
 
 #ifdef __cplusplus
 }
