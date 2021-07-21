@@ -1,0 +1,34 @@
+name: Deploy docs
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  repository_dispatch:
+    types: [run_build]
+
+jobs:
+  check-headers:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen 
+    - name: Build Docs
+      run: |
+        cd docs
+        doxygen
+        cp search.js html/search/search.js
+        echo "<script id=\"searchdata\" type=\"text/xmldata\">" >> html/search.html
+        cat searchdata.xml >> html/search.html
+        echo "</script>" >> html/search.html
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      if: contains(github.ref,'refs/heads/master')
+      with:
+        branch: gh-pages
+        folder: docs
+        clean: false
