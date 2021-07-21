@@ -33,6 +33,21 @@ SceInt32 _sceM4vdecDeleteDecoder(SceM4vdecCtrl *pCtrl);
 SceInt32 _sceM4vdecQueryDecoderMemSize(SceUInt32 codecType, const SceM4vdecQueryDecoderInfo *pDecoderInfo, SceM4vdecDecoderInfo *pMemInfo);
 SceInt32 _sceM4vdecQueryDecoderMemSizeInternal(SceUInt32 codecType, const SceM4vdecQueryDecoderInfo *pDecoderInfo, SceM4vdecDecoderInfo *pMemInfo);
 
+SceInt32 _sceAvcencCreateEncoder(SceUInt32 codecType, SceAvcencCtrl *pCtrl, const SceAvcencQueryEncoderInfo *pEncoderInfo);
+SceInt32 _sceAvcencCreateEncoderBasic(SceUInt32 codecType, SceAvcencCtrl *pCtrl, const SceAvcencQueryEncoderInfoBasic *pEncoderInfoBasic);
+SceInt32 _sceAvcencCreateEncoderInternal(SceUInt32 codecType, SceAvcencCtrl *pCtrl, const SceAvcencQueryEncoderInfoInternal *pEncoderInfo);
+SceInt32 _sceAvcencCsc(SceAvcencPicture *pDst, const SceAvcencPicture *pSrc);
+SceInt32 _sceAvcencDeleteEncoder(SceAvcencCtrl *pCtrl);
+SceInt32 _sceAvcencEncode(SceAvcencCtrl *pCtrl, const SceAvcencPicture *pPicture, SceAvcencArrayAu *pArrayAu);
+SceInt32 _sceAvcencEncodeFlush(const SceAvcencCtrl *pCtrl);
+SceInt32 _sceAvcencEncodeStop(SceAvcencCtrl *pCtrl, SceAvcencArrayAu *pArrayAu);
+SceInt32 _sceAvcencGetNalUnit(const SceAvcencCtrl *pCtrl, SceUInt32 nalNum, SceAvcencNal *pNalUnit);
+SceInt32 _sceAvcencQueryEncoderMemSize(SceUInt32 codecType, const SceAvcencQueryEncoderInfo *pEncoderInfo, SceAvcencEncoderInfo *pMemInfo);
+SceInt32 _sceAvcencQueryEncoderMemSizeBasic(SceUInt32 codecType, const SceAvcencQueryEncoderInfoBasic *pEncoderInfoBasic, SceAvcencEncoderInfo *pMemInfo);
+SceInt32 _sceAvcencQueryEncoderMemSizeInternal(SceUInt32 codecType, const SceAvcencQueryEncoderInfoInternal *pEncoderInfo, SceAvcencEncoderInfo *pMemInfo);
+SceInt32 _sceAvcencSetAvailablePreset(SceUInt32 codecType, SceUChar8 presetMode);
+SceInt32 _sceAvcencSetEncoderParameter(const SceAvcencCtrl *pCtrl, const SceAvcencEncoderParameter *pParam);
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
