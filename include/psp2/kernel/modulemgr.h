@@ -156,6 +156,7 @@ int sceKernelGetLibraryInfoByNID(SceUID modid, SceNID libnid, SceKernelLibraryIn
 
 int sceKernelIsCalledFromSysModule(void *lr);
 SceUID sceKernelGetModuleIdByAddr(void *addr);
+SceUInt32 sceKernelGetAllowedSdkVersionOnSystem(void);
 
 #ifdef __cplusplus
 }
