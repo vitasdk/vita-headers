@@ -38,7 +38,6 @@ typedef struct SceVideoencCtrl SceVideoencCtrl;
 
 SceInt32 _sceVideoencInitLibrary(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitDecInfo, const SceVideoencQueryInitInfo *pInitEncInfo);
 SceInt32 _sceVideoencInitLibraryInternal(SceUInt32 codecType, const SceVideodecQueryInitInfoInternal *pInitDecInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
-SceInt32 _sceVideoencInitLibraryWithMemInternal(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
 SceInt32 _sceVideoencInitLibraryWithUnmapMem(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfo *pInitDecInfo, const SceVideoencQueryInitInfo *pInitEncInfo);
 SceInt32 _sceVideoencInitLibraryWithUnmapMemInternal(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitDecInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
 SceInt32 _sceVideoencQueryMemSize(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitDecInfo, const SceVideoencQueryInitInfo *pInitEncInfo, SceVideoencMemInfo *pMemInfo);
@@ -72,6 +71,11 @@ SceInt32 _sceAvcencQueryEncoderMemSizeBasic(SceUInt32 codecType, const SceAvcenc
 SceInt32 _sceAvcencQueryEncoderMemSizeInternal(SceUInt32 codecType, const SceAvcencQueryEncoderInfoInternal *pEncoderInfo, SceAvcencEncoderInfo *pMemInfo);
 SceInt32 _sceAvcencSetAvailablePreset(SceUInt32 codecType, SceUChar8 presetMode);
 SceInt32 _sceAvcencSetEncoderParameter(const SceAvcencCtrl *pCtrl, const SceAvcencEncoderParameter *pParam);
+
+// Maybe not present in 3.60
+/*
+SceInt32 _sceVideoencInitLibraryWithMemInternal(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
+*/
 
 #ifdef __cplusplus
 }
