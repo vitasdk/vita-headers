@@ -1317,7 +1317,6 @@ SceInt32 sceKernelCloseSema(SceUID semaId);
 SceInt32 sceKernelCloseSimpleEvent(SceUID simpleEventId);
 SceInt32 sceKernelDeleteRWLock(SceUID rwLockId);
 SceInt32 sceKernelDeleteSimpleEvent(SceUID simpleEventId);
-SceInt32 sceKernelGetActiveCpuMask(void);
 SceInt32 sceKernelPulseEvent(SceUID eventId, SceUInt32 pulsePattern, SceUInt64 userData);
 SceInt32 sceKernelRegisterCallbackToEvent(SceUID eventId, SceUID callbackId);
 SceInt32 sceKernelSetEvent(SceUID eventId, SceUInt32 setPattern, SceUInt64 userData);
@@ -1334,6 +1333,11 @@ SceUID sceKernelOpenMsgPipe(const char *pName);
 SceUID sceKernelOpenRWLock(const char *pName);
 SceUID sceKernelOpenSema(const char *pName);
 SceUID sceKernelOpenSimpleEvent(const char *pName);
+
+// Maybe not present in 3.60
+/*
+ * SceInt32 sceKernelGetActiveCpuMask(void);
+ */
 
 #ifdef __cplusplus
 }
