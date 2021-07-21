@@ -1117,9 +1117,9 @@ typedef enum SceKernelIdListType {
  *
  * @param uid - The uid to get the type from
  *
- * @return The type, < 0 on error
+ * @return The type (one of SceKernelIdListType), < 0 on error
  */
-SceKernelIdListType sceKernelGetThreadmgrUIDClass(SceUID uid);
+SceInt32 sceKernelGetThreadmgrUIDClass(SceUID uid);
 
 
 typedef struct	SceKernelLwMutexWork {
