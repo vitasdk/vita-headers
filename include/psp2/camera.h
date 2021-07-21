@@ -640,6 +640,7 @@ int sceCameraSetSharpnessOff(int devnum, int level);
 int sceCameraSetSharpnessOffForDebug(int devnum, int level);
 int sceCameraLedBlink(int devnum, int iOnCount, int iOffCount, int iBlinkCount);
 int sceCameraLedSwitch(int devnum, int iSwitch);
+void sceCameraUseCacheMemoryForTrial(SceBool isCache);
 
 #ifdef __cplusplus
 }
