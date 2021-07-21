@@ -216,6 +216,20 @@ int sceAvcdecDeleteDecoder(SceAvcdecCtrl *decoder);
  */
 int sceAvcdecDecode(const SceAvcdecCtrl *decoder, const SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
 
+SceInt32 _sceVideodecInitLibrary(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitInfo);
+SceInt32 _sceVideodecInitLibraryInternal(SceUInt32 codecType, const SceVideodecQueryInitInfoInternal *pInitInfo);
+SceInt32 _sceVideodecInitLibraryNongameapp(SceUInt32 codecType, const SceVideodecQueryInitInfo * pInitInfo);
+SceInt32 _sceVideodecInitLibraryWithMemInternal(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo);
+SceInt32 _sceVideodecInitLibraryWithUnmapMem(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfo *pInitInfo);
+SceInt32 _sceVideodecInitLibraryWithUnmapMemInternal(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo);
+SceInt32 _sceVideodecInitLibraryWithUnmapMemNongameapp(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfo *pInitInfo);
+SceInt32 _sceVideodecQueryMemSize(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitInfo, SceVideodecMemInfo *pMemInfo);
+SceInt32 _sceVideodecQueryMemSizeInternal(SceUInt32 codecType, const SceVideodecQueryInitInfoInternal *pInitInfo, SceVideodecMemInfo *pMemInfo);
+SceInt32 _sceVideodecQueryMemSizeNongameapp(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitInfo, SceVideodecMemInfo *pMemInfo);
+SceInt32 _sceVideodecSetConfig(SceUInt32 codecType, SceUInt32 configParam);
+SceInt32 _sceVideodecSetConfigInternal(SceUInt32 codecType, SceUInt32 configParam);
+SceInt32 _sceVideodecTermLibrary(SceUInt32 codecType);
+
 // missing structs
 typedef struct SceAvcdecPictureInternal SceAvcdecPictureInternal;
 
