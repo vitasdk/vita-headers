@@ -190,7 +190,10 @@ SceInt32 scePowerGetArmClockFrequency(void);
 SceInt32 scePowerGetBusClockFrequency(void);
 
 /**
- * Returns GPU clock frequency
+ * Get GPU clock frequency
+ *
+ * @param corefreq - The pointer to frequency output
+ * @param mpfreq   - The pointer to frequency output
  *
  * @return GPU clock frequency in Mhz
  */
@@ -259,7 +262,8 @@ SceInt32 scePowerSetBusClockFrequency(SceInt32 freq);
 /**
  * Sets GPU clock frequency
  *
- * @param freq - Frequency to set in Mhz
+ * @param corefreq - Frequency to set in Mhz
+ * @param mpfreq   - Frequency to set in Mhz
  *
  * @return 0 on success, < 0 on error
  */
@@ -277,7 +281,7 @@ SceInt32 scePowerSetGpuXbarClockFrequency(SceInt32 freq);
 /**
  * Sets wireless features usage
  *
- * @param enabled - SCE_TRUE to enable, SCE_FALSE to disable
+ * @param usewireless - SCE_TRUE to enable, SCE_FALSE to disable
  *
  * @return 0 on success, < 0 on error
  */
