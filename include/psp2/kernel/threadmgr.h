@@ -1170,6 +1170,27 @@ int sceKernelWaitSignal(SceUInt32 unk0, SceUInt32 delay, SceUInt32 *timeout);
  */
 int sceKernelSendSignal(SceUID thid);
 
+/* timer */
+SceUID _sceKernelCreateTimer(const char *pName, SceUInt32 attr, const SceKernelTimerOptParam *pOptParam);
+SceInt32 sceKernelDeleteTimer(SceUID timerId);
+
+SceInt32 sceKernelStartTimer(SceUID timerId);
+SceInt32 sceKernelStopTimer(SceUID timerId);
+
+SceUID sceKernelOpenTimer(const char *pName);
+SceInt32 sceKernelCloseTimer(SceUID timerId);
+
+SceInt32 _sceKernelCancelTimer(SceUID timerId, SceInt32 *pNumWaitThreads);
+SceInt32 _sceKernelGetTimerEventRemainingTime(SceUID timerId, SceKernelSysClock *pClock);
+SceInt32 _sceKernelGetTimerInfo(SceUID timerId, SceKernelTimerInfo *pInfo);
+SceInt32 _sceKernelGetTimerTime(SceUID timerId, SceKernelSysClock *pClock);
+SceInt32 _sceKernelSetTimerEvent(SceUID timerId, SceInt32 type, SceKernelSysClock *pInterval, SceInt32 fRepeat);
+SceInt32 _sceKernelSetTimerTime(SceUID timerId, SceKernelSysClock *pClock);
+SceInt32 _sceKernelGetTimerBase(SceUID timerId, SceKernelSysClock *pBase);
+SceUInt64 sceKernelGetTimerBaseWide(SceUID timerId);
+SceUInt64 sceKernelGetTimerTimeWide(SceUID timerId);
+SceUInt64 sceKernelSetTimerTimeWide(SceUID timerId, SceUInt64 clock);
+
 /**
  * Get the system time (wide version)
  *
