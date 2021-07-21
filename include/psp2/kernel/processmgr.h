@@ -112,6 +112,16 @@ const void * sceKernelGetProcessParam(void);
 SceKernelClock sceKernelLibcClock(void);
 SceKernelTime sceKernelLibcTime(SceKernelTime *pTime);
 
+typedef struct SceKernelTimeval {
+	SceUInt64 value;
+} SceKernelTimeval;
+
+typedef struct SceKernelTimezone {
+	SceUInt64 value;
+} SceKernelTimezone;
+
+int sceKernelLibcGettimeofday(SceKernelTimeval *p, SceKernelTimezone *z);
+
 #ifdef __cplusplus
 }
 #endif
