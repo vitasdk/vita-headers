@@ -268,7 +268,8 @@ int sceIoSync(const char *device, unsigned int unk);
 /**
  * Synchronize the file data for one file
  *
- * @param fd - Opened file descriptor to sync
+ * @param fd   - Opened file descriptor to sync
+ * @param flag - unknown
  *
  * @return < 0 on error.
  */
