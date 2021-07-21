@@ -6,17 +6,13 @@ except ImportError:
     # python3?
     import urllib.request as urllib2
 
-TRAVIS_REPO_ID = 10768510
 GITHUB_REPO = 'vitasdk/autobuilds'
-TRAVIS_API = 'https://api.travis-ci.org'
-TRAVIS_BUILDS = TRAVIS_API + '/repo/%d/builds' % TRAVIS_REPO_ID
 GITHUB = 'https://github.com'
+GITHUB_API = 'https://api.github.com'
 GITHUB_REL = GITHUB + '/' + GITHUB_REPO + '/releases'
 GITHUB_TAG = GITHUB_REL + '/tag'
-TAG_FORMAT = '%(branch)s-%(os)s-v%(build)s'
+TAG_FORMAT = '%(branch)s-%(os)s-v2.%(build)s'
 REGEX = re.compile('href="([^"]*)"')
-HEADERS = dict()
-HEADERS['Travis-API-Version'] = 3
 
 def find_sdk(page, os='linux'):
     for line in page.decode('utf-8').split('\n'):
@@ -34,28 +30,22 @@ def fetch_succeeded_tags(branch='master', os='linux'):
     for page in range(5):
         try:
             build_url = ''.join((
-                TRAVIS_BUILDS, '?',
-                pager(page),
-                '&branch=' + branch,
-                '&include=job.config,job.state',
+                GITHUB_API, '/repos/',
+                GITHUB_REPO,
+                '/actions/runs',
             ))
-            req = urllib2.Request(build_url, headers=HEADERS)
+            req = urllib2.Request(build_url)
             builds = json.load(urllib2.urlopen(req))
 
-            for build in builds['builds']:
-                for job in build['jobs']:
-                    if job['state'] != 'passed':
-                        continue
-                    # windows build
-                    if 'TOXENV=WIN' in job['config'].get('env', ''):
-                        if os != 'win':
-                            continue
-                    elif job['config']['os'] != os:
-                        continue
-
-                    yield (TAG_FORMAT % dict(branch=branch,
-                                             os=os,
-                                             build=build['number']))
+            for build in builds['workflow_runs']:
+                if build['conclusion'] != 'success':
+                    continue
+                if build['head_branch'] != branch:
+                    continue
+               
+                yield (TAG_FORMAT % dict(branch=branch,
+                                            os=os,
+                                            build=build['run_number']))
         except urllib2.HTTPError:
             # FIXME: need to check; network error
             continue
