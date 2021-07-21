@@ -249,6 +249,13 @@ int sceKernelChangeThreadPriority(SceUID thid, int priority);
 int sceKernelGetThreadId(void);
 
 /**
+ * Get the process ID of in the running thread.
+ *
+ * @return process ID of in the running thread
+ */
+SceUID sceKernelGetProcessId(void);
+
+/**
  * Get the current priority of the thread you are in.
  *
  * @return The current thread priority
