@@ -33,9 +33,7 @@ int _sceGpsStart(unsigned int mode);
 int _sceGpsStop(void);
 
 // Maybe not present in 3.60
-/*
-SceInt32 _sceGpsSetCurrentTick(const SceRtcTick *pTick);
-*/
+//SceInt32 _sceGpsSetCurrentTick(const SceRtcTick *pTick);
 
 #ifdef __cplusplus
 }
