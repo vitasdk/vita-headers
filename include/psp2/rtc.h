@@ -239,6 +239,24 @@ static inline int sceRtcSetMicrosecond(SceDateTime *time, int microsecond){
 #define sceRtcConvertTickToDateTime(_ptick, _pdatetime)         sceRtcSetTick(_pdatetime, _ptick)
 #define sceRtcConvertDateTimeToTick(_pdatetime, _ptick)         sceRtcGetTick(_pdatetime, _ptick)
 
+int _sceRtcConvertLocalTimeToUtc(const SceRtcTick *pLocalTime, SceRtcTick *pUtc);
+int _sceRtcConvertUtcToLocalTime(const SceRtcTick *pUtc, SceRtcTick *pLocalTime);
+int _sceRtcFormatRFC2822(char *pszDateTime, const SceRtcTick *pUtc, int iTimeZoneMinutes);
+int _sceRtcFormatRFC2822LocalTime(char *pszDateTime, const SceRtcTick *pUtc);
+int _sceRtcFormatRFC3339(char *pszDateTime, const SceRtcTick *pUtc, int iTimeZoneMinutes);
+int _sceRtcFormatRFC3339LocalTime(char *pszDateTime, const SceRtcTick *pUtc);
+int _sceRtcGetCurrentAdNetworkTick(SceRtcTick *pTick);
+int _sceRtcGetCurrentClock(SceDateTime *pTime, int iTimeZone);
+int _sceRtcGetCurrentClockLocalTime(SceDateTime *pTime);
+int _sceRtcGetCurrentDebugNetworkTick(SceRtcTick *pTick);
+int _sceRtcGetCurrentGpsTick(SceRtcTick *pTick);
+int _sceRtcGetCurrentNetworkTick(SceRtcTick *pTick);
+int _sceRtcGetCurrentRetainedNetworkTick(SceRtcTick *pTick);
+int _sceRtcGetCurrentTick(SceRtcTick *pTick);
+int _sceRtcGetLastAdjustedTick(SceRtcTick *pTick);
+int _sceRtcGetLastReincarnatedTick(SceRtcTick *pTick);
+SceULong64 sceRtcGetAccumulativeTime(void);
+
 #ifdef __cplusplus
 }
 #endif
