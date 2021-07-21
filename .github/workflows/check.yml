@@ -1,0 +1,53 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  repository_dispatch:
+    types: [run_build]
+
+jobs:
+  check-headers:
+    runs-on: ubuntu-latest
+    container: ubuntu:14.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y software-properties-common
+        sudo add-apt-repository ppa:george-edison55/cmake-3.x
+        sudo apt-get update
+        sudo apt-get install -y cmake cmake-data git python curl
+        bash ./.travis.d/download_external_apps.sh
+    - name: Build
+      run: |
+        git config --global user.email "builds@travis-ci.com"
+        git config --global user.name "Travis CI"
+        set -e
+        export TRAVIS_BUILD_DIR=$PWD
+        cd $TRAVIS_BUILD_DIR
+        bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
+        export VITASDK=$PWD/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        export INCLUDE_DIR=$TRAVIS_BUILD_DIR/include
+        # Make sure headers are valid
+        find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-gcc -I$INCLUDE_DIR -c FN -o /dev/null
+        find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-g++ -I$INCLUDE_DIR -c FN -o /dev/null
+        bash $TRAVIS_BUILD_DIR/.travis.d/download_external_libs.sh
+        cd $VITASDK/arm-vita-eabi/include
+        rm -rf psp2 psp2kern vitasdk vitasdk.h
+        cd $VITASDK/arm-vita-eabi/lib
+        rm -rf *_stub.a
+        cd $TRAVIS_BUILD_DIR
+        cp -r include/* $VITASDK/arm-vita-eabi/include
+        USE_LINT=1 python build.py output
+        cd $TRAVIS_BUILD_DIR
+        git clone https://github.com/vitasdk/samples
+        cd samples
+        mkdir build
+        cd build
+        cmake ..
+        make -j$(nproc)
