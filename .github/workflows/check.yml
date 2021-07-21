@@ -48,14 +48,3 @@ jobs:
         cd build
         cmake ..
         make -j$(nproc)
-    - name: Build DOCS
-      run: |
-        export TRAVIS_BUILD_DIR=$PWD
-        bash $TRAVIS_BUILD_DIR/.travis.d/deploy_docs.sh
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      if: contains(github.ref,'refs/heads/master')
-      with:
-        branch: gh-pages
-        folder: docs
-        clean: false
