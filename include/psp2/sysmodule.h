@@ -158,29 +158,29 @@ typedef struct SceSysmoduleOpt {
 /**
  * Load a module.
  *
- * @param[in] id - Module ID to load.
+ * @param[in] id - Module ID to load. one of SceSysmoduleModuleId.
  *
  * @return 0 on success, <0 on error.
  */
-int sceSysmoduleLoadModule(SceSysmoduleModuleId id);
+SceInt32 sceSysmoduleLoadModule(SceUInt16 id);
 
 /**
  * Unload a module.
  *
- * @param[in] id - Module ID to unload.
+ * @param[in] id - Module ID to unload. one of SceSysmoduleModuleId.
  *
  * @return 0 on success, <0 on error.
  */
-int sceSysmoduleUnloadModule(SceSysmoduleModuleId id);
+SceInt32 sceSysmoduleUnloadModule(SceUInt16 id);
 
 /**
  * Check if a module is loaded.
  *
- * @param[in] id - Module ID to check.
+ * @param[in] id - Module ID to check. one of SceSysmoduleModuleId.
  *
  * @return 0 if loaded, <0 otherwise.
  */
-int sceSysmoduleIsLoaded(SceSysmoduleModuleId id);
+SceInt32 sceSysmoduleIsLoaded(SceUInt16 id);
 
 /**
  * Load an internal module.
