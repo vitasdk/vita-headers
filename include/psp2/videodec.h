@@ -226,7 +226,6 @@ typedef struct SceVideodecQueryInitInfoInternal SceVideodecQueryInitInfoInternal
 SceInt32 _sceVideodecInitLibrary(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitInfo);
 SceInt32 _sceVideodecInitLibraryInternal(SceUInt32 codecType, const SceVideodecQueryInitInfoInternal *pInitInfo);
 SceInt32 _sceVideodecInitLibraryNongameapp(SceUInt32 codecType, const SceVideodecQueryInitInfo * pInitInfo);
-SceInt32 _sceVideodecInitLibraryWithMemInternal(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo);
 SceInt32 _sceVideodecInitLibraryWithUnmapMem(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfo *pInitInfo);
 SceInt32 _sceVideodecInitLibraryWithUnmapMemInternal(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo);
 SceInt32 _sceVideodecInitLibraryWithUnmapMemNongameapp(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfo *pInitInfo);
@@ -275,6 +274,11 @@ SceInt32 _sceAvcdecUnregisterCallbackInternal(SceAvcdecCtrl *pCtrl);
 SceInt32 _sceAvcdecUnregisterCallbackNongameapp(SceAvcdecCtrl *pCtrl);
 SceInt32 _sceAvcdecUnregisterCallbackWithCbidInternal(SceAvcdecCtrl *pCtrl, SceUID cbid);
 SceInt32 _sceAvcdecUnregisterCallbackWithCbidNongameapp(SceAvcdecCtrl *pCtrl, SceUID cbid);
+
+// Maybe not present in 3.60
+/*
+ * SceInt32 _sceVideodecInitLibraryWithMemInternal(SceUInt32 codecType, SceVideodecCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo);
+ */
 
 #ifdef __cplusplus
 }
