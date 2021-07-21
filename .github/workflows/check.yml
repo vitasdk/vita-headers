@@ -23,8 +23,6 @@ jobs:
         sudo apt-get install -y cmake cmake-data git doxygen python curl rsync 
     - name: Check
       run: |
-        git config --global user.email "builds@travis-ci.com"
-        git config --global user.name "Travis CI"
         set -e
         export TRAVIS_BUILD_DIR=$PWD
         cd $TRAVIS_BUILD_DIR
@@ -60,3 +58,4 @@ jobs:
       with:
         branch: gh-pages
         folder: docs
+        clean: false
