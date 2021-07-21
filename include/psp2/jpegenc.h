@@ -156,6 +156,28 @@ int sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int
  */
 int sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
+int _sceJpegCreateSplitDecoder(SceJpegSplitDecodeCtrl *pCtrl);
+int _sceJpegCsc(void *pRGBA, const unsigned char *pYCbCr, int xysize, int iFrameWidth);
+int _sceJpegDecodeMJpeg(const unsigned char *pJpeg, SceSize isize, void *pRGBA, SceSize osize);
+int _sceJpegDecodeMJpegYCbCr(const unsigned char *pJpeg, SceSize isize, unsigned char *pYCbCr, SceSize osize);
+int _sceJpegDeleteSplitDecoder(SceJpegSplitDecodeCtrl *pCtrl);
+int _sceJpegEncoderCsc(SceJpegEncoderContext context, void *pYCbCr, const void *pRGBA, int iFrameWidth);
+int _sceJpegEncoderEncode(SceJpegEncoderContext context, const void *pYCbCr);
+int _sceJpegEncoderEnd(SceJpegEncoderContext context);
+int _sceJpegEncoderGetContextSize(void);
+int _sceJpegEncoderInit(SceJpegEncoderContext context, int iFrameWidth, int iFrameHeight, int pixelFormat);
+int _sceJpegEncoderInitWithParam(SceJpegEncoderContext context, const SceJpegEncoderInitParam *pInitParam);
+int _sceJpegEncoderSetCompressionRatio(SceJpegEncoderContext context, int compratio);
+int _sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int headerMode);
+int _sceJpegEncoderSetOutputAddr(SceJpegEncoderContext context, void *pJpeg, SceSize oJpegbufSize);
+int _sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int iFrameWidth, int iFrameHeight);
+int _sceJpegFinishMJpeg(void);
+int _sceJpegGetOutputInfo(const unsigned char *pJpeg, SceSize isize, int outputFormat, int decodeMode);
+int _sceJpegInitMJpeg(int maxSplitDecoder);
+int _sceJpegInitMJpegWithParam(const SceJpegMJpegInitParam *pInitParam);
+int _sceJpegMJpegCsc(void *pRGBA, const unsigned char *pYCbCr, int xysize, int iFrameWidth);
+int _sceJpegSplitDecodeMJpeg(SceJpegSplitDecodeCtrl *pCtrl);
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
