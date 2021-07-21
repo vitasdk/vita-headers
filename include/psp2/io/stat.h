@@ -138,6 +138,8 @@ int sceIoChstat(const char *file, SceIoStat *stat, int bits);
   */
 int sceIoChstatByFd(SceUID fd, const SceIoStat *buf, unsigned int cbit);
 
+int _sceIoMkdir(const char *dirname, SceIoMode mode);
+int _sceIoRmdir(const char *dirname);
 int _sceIoChstat(const char *name, const SceIoStat *buf, unsigned int cbit);
 int _sceIoChstatByFd(SceUID fd, const SceIoStat *buf, unsigned int cbit);
 int _sceIoGetstat(const char *name, SceIoStat *buf);
