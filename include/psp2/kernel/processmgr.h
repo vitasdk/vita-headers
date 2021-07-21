@@ -104,6 +104,8 @@ SceUID sceKernelGetStderr(void);
 SceUID sceKernelGetStdin(void);
 SceUID sceKernelGetStdout(void);
 
+const void * sceKernelGetProcessParam(void);
+
 #ifdef __cplusplus
 }
 #endif
