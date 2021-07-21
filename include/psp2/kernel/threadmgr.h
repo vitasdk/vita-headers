@@ -864,14 +864,14 @@ typedef struct SceKernelCallbackInfo {
  * cbid = sceKernelCreateCallback("Exit Callback", 0, exit_cb, NULL);
  * @endcode
  *
- * @param name      - A textual name for the callback
- * @param attr      - ?
- * @param func      - A pointer to a function that will be called as the callback
- * @param userData  - User defined data to be passed to the callback.
+ * @param pName        - A textual name for the callback
+ * @param attr         - ?
+ * @param callbackFunc - A pointer to a function that will be called as the callback
+ * @param userData     - User defined data to be passed to the callback.
  *
  * @return >= 0 A callback id which can be used in subsequent functions, < 0 an error.
  */
-int sceKernelCreateCallback(const char *name, unsigned int attr, SceKernelCallbackFunction func, void *userData);
+SceUID sceKernelCreateCallback(const char *pName, SceUInt32 attr, SceKernelCallbackFunction callbackFunc, void *userData);
 
 /**
   * Gets the status of a specified callback.
