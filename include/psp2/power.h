@@ -67,7 +67,7 @@ typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo, v
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerRegisterCallback(SceUID cbid);
+SceInt32 scePowerRegisterCallback(SceUID cbid);
 
 /**
  * Unregister a callback
@@ -76,21 +76,21 @@ int scePowerRegisterCallback(SceUID cbid);
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerUnregisterCallback(SceUID cbid);
+SceInt32 scePowerUnregisterCallback(SceUID cbid);
 
 /**
  * Returns battery charging status
  *
  * @return SCE_TRUE if under charge, SCE_FALSE otherwise
  */
-SceBool scePowerIsBatteryCharging(void);
+SceInt32 scePowerIsBatteryCharging(void);
 
 /**
  * Returns battery life percentage
  *
  * @return Battery life percentage
  */
-int scePowerGetBatteryLifePercent(void);
+SceInt32 scePowerGetBatteryLifePercent(void);
 
 /**
  * Set power configuration mode between:
@@ -103,140 +103,140 @@ int scePowerGetBatteryLifePercent(void);
  *
  * @return 0 on success
  */
-int scePowerSetConfigurationMode(int conf);
+SceInt32 scePowerSetConfigurationMode(SceUInt32 conf);
 
 /**
  * Check if a suspend is required
  *
  * @return SCE_TRUE if suspend is required, SCE_FALSE otherwise
  */
-SceBool scePowerIsSuspendRequired(void);
+SceInt32 scePowerIsSuspendRequired(void);
 
 /**
  * Check if AC is plugged in
  *
  * @return SCE_TRUE if plugged in, SCE_FALSE otherwise
  */
-SceBool scePowerIsPowerOnline(void);
+SceInt32 scePowerIsPowerOnline(void);
 
 /**
  * Returns battery life time
  *
  * @return Battery life time in minutes
  */
-int scePowerGetBatteryLifeTime(void);
+SceInt32 scePowerGetBatteryLifeTime(void);
 
 /**
  * Returns battery remaining capacity
  *
  * @return battery remaining capacity in mAh (milliampere hour)
  */
-int scePowerGetBatteryRemainCapacity(void);
+SceInt32 scePowerGetBatteryRemainCapacity(void);
 
 /**
  * Returns battery state
  *
  * @return SCE_TRUE if battery is low, SCE_FALSE otherwise
  */
-SceBool scePowerIsLowBattery(void);
+SceInt32 scePowerIsLowBattery(void);
 
 /**
  * Returns battery full capacity
  *
  * @return battery full capacity in mAh (milliampere hour)
  */
-int scePowerGetBatteryFullCapacity(void);
+SceInt32 scePowerGetBatteryFullCapacity(void);
 
 /**
  * Returns battery temperature
  *
  * @return temperature in degrees celcius * 100
  */
-int scePowerGetBatteryTemp(void);
+SceInt32 scePowerGetBatteryTemp(void);
 
 /**
  * Returns battery voltage
  *
  * @return battery voltage in mV (millivolts)
  */
-int scePowerGetBatteryVolt(void);
+SceInt32 scePowerGetBatteryVolt(void);
 
 /**
  * Returns battery state of health
  *
  * @return battery state of health percent
  */
-int scePowerGetBatterySOH(void);
+SceInt32 scePowerGetBatterySOH(void);
 
 /**
  * Returns battery cycle count
  *
  * @return battery cycle count
  */
-int scePowerGetBatteryCycleCount(void);
+SceInt32 scePowerGetBatteryCycleCount(void);
 
 /**
  * Returns CPU clock frequency
  *
  * @return CPU clock frequency in Mhz
  */
-int scePowerGetArmClockFrequency(void);
+SceInt32 scePowerGetArmClockFrequency(void);
 
 /**
  * Returns BUS clock frequency
  *
  * @return BUS clock frequency in Mhz
  */
-int scePowerGetBusClockFrequency(void);
+SceInt32 scePowerGetBusClockFrequency(void);
 
 /**
  * Returns GPU clock frequency
  *
  * @return GPU clock frequency in Mhz
  */
-int scePowerGetGpuClockFrequency(void);
+SceInt32 scePowerGetGpuClockFrequency(SceInt32 *corefreq, SceInt32 *mpfreq);
 
 /**
  * Returns GPU crossbar clock frequency
  *
  * @return GPU crossbar clock frequency in Mhz
  */
-int scePowerGetGpuXbarClockFrequency(void);
+SceInt32 scePowerGetGpuXbarClockFrequency(void);
 
 /**
  * Requests PS Vita to do a cold reset
  *
  * @return always 0
  */
-int scePowerRequestColdReset(void);
+SceInt32 scePowerRequestColdReset(void);
 
 /**
  * Requests PS Vita to go into standby
  *
  * @return always 0
  */
-int scePowerRequestStandby(void);
+SceInt32 scePowerRequestStandby(void);
 
 /**
  * Requests PS Vita to suspend
  *
  * @return always 0
  */
-int scePowerRequestSuspend(void);
+SceInt32 scePowerRequestSuspend(void);
 
 /**
  * Request display on
  *
  * @return always 0
  */
-int scePowerRequestDisplayOn(void);
+SceInt32 scePowerRequestDisplayOn(void);
 
 /**
  * Request display off
  *
  * @return always 0
  */
-int scePowerRequestDisplayOff(void);
+SceInt32 scePowerRequestDisplayOff(void);
 
 /**
  * Sets CPU clock frequency
@@ -245,7 +245,7 @@ int scePowerRequestDisplayOff(void);
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerSetArmClockFrequency(int freq);
+SceInt32 scePowerSetArmClockFrequency(SceInt32 freq);
 
 /**
  * Sets BUS clock frequency
@@ -254,7 +254,7 @@ int scePowerSetArmClockFrequency(int freq);
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerSetBusClockFrequency(int freq);
+SceInt32 scePowerSetBusClockFrequency(SceInt32 freq);
 
 /**
  * Sets GPU clock frequency
@@ -263,7 +263,7 @@ int scePowerSetBusClockFrequency(int freq);
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerSetGpuClockFrequency(int freq);
+SceInt32 scePowerSetGpuClockFrequency(SceInt32 corefreq, SceInt32 mpfreq);
 
 /**
  * Sets GPU crossbar clock frequency
@@ -272,7 +272,7 @@ int scePowerSetGpuClockFrequency(int freq);
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerSetGpuXbarClockFrequency(int freq);
+SceInt32 scePowerSetGpuXbarClockFrequency(SceInt32 freq);
 
 /**
  * Sets wireless features usage
@@ -281,14 +281,23 @@ int scePowerSetGpuXbarClockFrequency(int freq);
  *
  * @return 0 on success, < 0 on error
  */
-int scePowerSetUsingWireless(SceBool enabled);
+SceInt32 scePowerSetUsingWireless(SceInt32 usewireless);
 
 /**
  * Gets wireless features usage
  *
  * @return SCE_TRUE if enabled, SCE_FALSE otherwise
  */
-int scePowerGetUsingWireless(void);
+SceInt32 scePowerGetUsingWireless(void);
+
+SceInt32 scePowerBatteryUpdateInfo(void);
+SceInt32 scePowerCancelRequest(void);
+SceInt32 scePowerGetBatteryChargingStatus(void);
+SceInt32 scePowerGetBatteryElec(SceInt32 *pElec);
+SceInt32 scePowerGetCaseTemp(void);
+SceInt32 scePowerIsBatteryExist(void);
+SceInt32 scePowerIsRequest(void);
+SceInt32 scePowerSetIdleTimerCount(SceUInt64 ullCount);
 
 #ifdef __cplusplus
 }
