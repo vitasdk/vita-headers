@@ -21,9 +21,9 @@ typedef struct SceRegMgrValue SceRegMgrValue;
  * Get a key's information by category and name
  *
  * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param name - Name of the key
- * @param buf - Pointer to a buffer to hold the value
- * @param size - The size of the buffer
+ * @param key      - Name of the key
+ * @param binVal   - Pointer to a buffer to hold the value
+ * @param binLen   - The size of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -33,8 +33,8 @@ SceInt32 sceRegMgrGetKeyBin(const SceChar8 *category, const SceChar8 *key, void 
  * Get a key's information by category and name
  *
  * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param name - Name of the key
- * @param buf - Pointer to a int buffer to hold the value
+ * @param key      - Name of the key
+ * @param intVal   - Pointer to a int buffer to hold the value
  *
  * @return 0 on success, < 0 on error
  */
@@ -44,9 +44,9 @@ SceInt32 sceRegMgrGetKeyInt(const SceChar8 *category, const SceChar8 *key, SceIn
  * Get a key's information by category and name
  *
  * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param name - Name of the key
- * @param buf - Pointer to a char buffer to hold the value
- * @param size - The size of the buffer
+ * @param key      - Name of the key
+ * @param strVal   - Pointer to a char buffer to hold the value
+ * @param strLen   - The size of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -56,9 +56,9 @@ SceInt32 sceRegMgrGetKeyStr(const SceChar8 *category, const SceChar8 *key, SceCh
  * Set a key's information by category and name
  *
  * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param name - Name of the key
- * @param buf - Pointer to a buffer to hold the value
- * @param size - The size of the buffer
+ * @param key      - Name of the key
+ * @param binVal   - Pointer to a buffer to hold the value
+ * @param binLen   - The size of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -68,8 +68,8 @@ SceInt32 sceRegMgrSetKeyBin(const SceChar8 *category, const SceChar8 *key, const
  * Set a key's information by category and name
  *
  * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param name - Name of the key
- * @param buf - Pointer to an int buffer to hold the value
+ * @param key      - Name of the key
+ * @param intVal   - Pointer to an int buffer to hold the value
  *
  * @return 0 on success, < 0 on error
  */
@@ -79,9 +79,9 @@ SceInt32 sceRegMgrSetKeyInt(const SceChar8 *category, const SceChar8 *key, SceIn
  * Set a key's information by category and name
  *
  * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param name - Name of the key
- * @param buf - Pointer to a char buffer to hold the value
- * @param size - The size of the buffer
+ * @param key      - Name of the key
+ * @param strVal   - Pointer to a char buffer to hold the value
+ * @param strLen   - The size of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -90,9 +90,9 @@ SceInt32 sceRegMgrSetKeyStr(const SceChar8 *category, const SceChar8 *key, const
 /**
  * Get all keys' initial information by category (from os0:kd/registry.db0)
  *
- * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param buf[out] - Pointer to a char buffer to hold the values
- * @param elements_number - The number of elements of the buffer
+ * @param category  - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
+ * @param keys[out] - Pointer to a char buffer to hold the values
+ * @param keycnt    - The number of elements of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -101,9 +101,9 @@ SceInt32 sceRegMgrGetInitVals(const SceChar8 *category, SceRegMgrValue *keys, Sc
 /**
  * Get all keys' information by category
  *
- * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param buf[out] - Pointer to a char buffer to hold the values
- * @param elements_number - The number of elements of the buffer
+ * @param category  - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
+ * @param keys[out] - Pointer to a char buffer to hold the values
+ * @param keycnt    - The number of elements of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -112,9 +112,9 @@ SceInt32 sceRegMgrGetKeys(const SceChar8 *category, SceRegMgrValue *keys, SceInt
 /**
  * Set all keys' information by category
  *
- * @param category - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
- * @param buf[out] - Pointer to a char buffer that holds the values
- * @param elements_number - The number of elements of the buffer
+ * @param categor y - The path to the directory to be opened (e.g. /CONFIG/SYSTEM)
+ * @param keys[out] - Pointer to a char buffer that holds the values
+ * @param keycnt    - The number of elements of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -123,8 +123,8 @@ SceInt32 sceRegMgrSetKeys(const SceChar8 *category, const SceRegMgrValue *keys, 
 /**
  * Get a system param key's information by id
  *
- * @param id - The id of the key
- * @param buf[out] - Pointer to an int to hold the value
+ * @param param       - The id of the key
+ * @param intVal[out] - Pointer to an int to hold the value
  *
  * @return 0 on success, < 0 on error
  */
@@ -133,9 +133,9 @@ SceInt32 sceRegMgrSystemParamGetInt(SceRegMgrSystemParam param, SceInt32 *intVal
 /**
  * Get a system param key's information by id
  *
- * @param id - The id of the key
- * @param buf[out] - Pointer to a char buffer to hold the value
- * @param size - The size of the buffer
+ * @param param       - The id of the key
+ * @param strVal[out] - Pointer to a char buffer to hold the value
+ * @param strLen      - The size of the buffer
  *
  * @return 0 on success, < 0 on error
  */
@@ -144,10 +144,7 @@ SceInt32 sceRegMgrSystemParamGetStr(SceRegMgrSystemParam param, SceChar8 *strVal
 /**
  * Get the registry version
  *
- * @param id - The id of the key
- * @param buf[out] - Pointer to a char buffer to hold the value
- *
- * @return 0 on success, < 0 on error
+ * @return < 0 on error
  */
 SceInt32 sceRegMgrGetRegVersion(void);
 
