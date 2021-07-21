@@ -628,6 +628,19 @@ int sceCameraSetAutoControlHold(int devnum, int mode);
 
 int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 
+int sceCameraGetImageQuality(int devnum, int* pLevel);
+int sceCameraSetImageQuality(int devnum, int level);
+int sceCameraGetNoiseReduction(int devnum, int* pLevel);
+int sceCameraGetNoiseReductionForDebug(int devnum, int* pLevel);
+int sceCameraSetNoiseReduction(int devnum, int level);
+int sceCameraSetNoiseReductionForDebug(int devnum, int level);
+int sceCameraGetSharpnessOff(int devnum, int* pLevel);
+int sceCameraGetSharpnessOffForDebug(int devnum, int* pLevel);
+int sceCameraSetSharpnessOff(int devnum, int level);
+int sceCameraSetSharpnessOffForDebug(int devnum, int level);
+int sceCameraLedBlink(int devnum, int iOnCount, int iOffCount, int iBlinkCount);
+int sceCameraLedSwitch(int devnum, int iSwitch);
+
 #ifdef __cplusplus
 }
 #endif
