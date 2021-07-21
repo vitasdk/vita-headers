@@ -103,7 +103,6 @@ SceInt32 sceAVConfigHdmiGetOutScalingRatio(SceAVConfigRatioOpt *opt);
 SceInt32 sceAVConfigHdmiSetOutScalingRatio(const SceAVConfigRatioOpt *opt);
 SceInt32 sceAVConfigHdmiSetResolution(SceInt32 resolution, SceInt32 forcedFlag);
 SceInt32 sceAVConfigHdmiSetRgbRangeMode(SceInt32 rgbRangeMode);
-SceInt32 sceAVConfigOledOn(void);
 SceInt32 sceAVConfigRegisterCallback(SceUID cuid, SceUInt32 type);
 SceInt32 sceAVConfigSendVolKey(SceUInt32 volKey);
 SceInt32 sceAVConfigSetAutoDisplayDimming(SceUInt32 dimmingInterval);
@@ -111,6 +110,11 @@ SceInt32 sceAVConfigSetAutoSuspend(SceUInt32 suspendInterval);
 SceInt32 sceAVConfigSetAutoSuspend2(SceUInt32 suspendInterval);
 SceInt32 sceAVConfigUnRegisterCallback(void);
 SceInt32 sceAVConfigWriteRegSystemVol(SceUInt32 step);
+
+// Maybe not present in 3.60
+/*
+ * SceInt32 sceAVConfigOledOn(void);
+ */
 
 #ifdef __cplusplus
 }
