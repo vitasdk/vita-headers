@@ -152,8 +152,6 @@ SceInt32 sceRegMgrAddRegistryCallback(SceUID cbid, const SceChar8 *path);
 SceInt32 sceRegMgrDbBackup(const SceChar8 *path, SceInt32 level);
 SceInt32 sceRegMgrDbRestore(const SceChar8 *path);
 SceInt32 sceRegMgrGetKeysInfo(const SceChar8 *category, SceRegMgrValue *keys, SceInt32 keycnt);
-SceInt32 sceRegMgrInitRegistry(SceInt32 level);
-SceInt32 sceRegMgrInitRegistryRegion(SceInt32 region, SceInt32 machine, SceInt32 qaflag);
 SceInt32 sceRegMgrIsBlueScreen(SceInt32 regmgrError);
 SceInt32 sceRegMgrRegisterCallback(SceUID cbid);
 SceInt32 sceRegMgrRegisterDrvErrCallback(SceUID cbid);
@@ -178,6 +176,12 @@ SceInt32 sceRegMgrUtilityGetStr(SceInt32 param, SceChar8 *strVal, SceSize strLen
 SceInt32 sceRegMgrUtilitySetBin(SceInt32 param, const SceChar8 *binVal, SceSize binSize);
 SceInt32 sceRegMgrUtilitySetInt(SceInt32 param, SceInt32 intVal);
 SceInt32 sceRegMgrUtilitySetStr(SceInt32 param, const SceChar8 *strVal, SceSize strLen);
+
+// Maybe not present in 3.60
+/*
+ * SceInt32 sceRegMgrInitRegistry(SceInt32 level);
+ * SceInt32 sceRegMgrInitRegistryRegion(SceInt32 region, SceInt32 machine, SceInt32 qaflag);
+*/
 
 #ifdef __cplusplus
 }
