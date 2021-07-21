@@ -221,6 +221,7 @@ typedef struct SceAvcdecSeiPictureTiming SceAvcdecSeiPictureTiming;
 typedef struct SceAvcdecNalAu SceAvcdecNalAu;
 typedef struct SceVideodecMemInfo SceVideodecMemInfo;
 typedef struct SceVideodecCtrl SceVideodecCtrl;
+typedef struct SceVideodecQueryInitInfo SceVideodecQueryInitInfo;
 
 SceInt32 _sceVideodecInitLibrary(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitInfo);
 SceInt32 _sceVideodecInitLibraryInternal(SceUInt32 codecType, const SceVideodecQueryInitInfoInternal *pInitInfo);
