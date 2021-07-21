@@ -26,7 +26,7 @@ typedef enum SceAVConfigColorSpaceMode {
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
+SceInt32 sceAVConfigGetDisplayMaxBrightness(SceInt32 *maxBrightness);
 
 /**
  * Set the screen brightness.
@@ -35,34 +35,32 @@ int sceAVConfigGetDisplayMaxBrightness(int *maxBrightness);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAVConfigSetDisplayBrightness(int brightness);
+SceInt32 sceAVConfigSetDisplayBrightness(SceUInt32 brightness);
 
 /**
  * Get the shutter volume.
  *
- * @param[out] volume - shutter volume.
- *
- * @return 0 on success, < 0 on error.
+ * @return Shutter vol
  */
-int sceAVConfigGetShutterVol(int *volume);
+SceInt32 sceAVConfigGetShutterVol(void);
 
 /**
  * Get the system volume.
  *
- * @param[out] volume - System volume.
+ * @param[out] step - System volume.
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAVConfigGetSystemVol(int *volume);
+SceInt32 sceAVConfigGetSystemVol(SceUInt32 *step);
 
 /**
  * Set the system volume.
  *
- * @param volume - volume that the device will be set to (range 0-30).
+ * @param step - volume that the device will be set to (range 0-30).
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAVConfigSetSystemVol(int volume);
+SceInt32 sceAVConfigSetSystemVol(SceUInt32 step);
 
 /**
  * Turns on mute.
@@ -70,18 +68,43 @@ int sceAVConfigSetSystemVol(int volume);
  * @return 0 on success, < 0 on error.
  *
  */
-int sceAVConfigMuteOn(void);
+SceInt32 sceAVConfigMuteOn(void);
 
 /**
  * Sets the color space mode on runtime.
  *
- * @param[in] csm - see ::SceAVConfigColorSpaceMode()
+ * @param[in] colorSpaceMode - see ::SceAVConfigColorSpaceMode()
  *
  * @return 0 on success, < 0 on error.
  * @note - This does not change color_space_mode in the registry.
  */
-int sceAVConfigSetDisplayColorSpaceMode(int csm);
+SceInt32 sceAVConfigSetDisplayColorSpaceMode(SceUInt32 colorSpaceMode);
 
+SceInt32 sceAVConfigChangeReg(SceUInt32 reg_key, SceUInt32 value);
+SceInt32 sceAVConfigClearAutoSuspend2(void);
+SceInt32 sceAVConfigDisplayOn(void);
+SceInt32 sceAVConfigGetAcStatus(SceUInt32 *status);
+SceInt32 sceAVConfigGetBtVol(SceUInt32 *isChanged, SceUInt32 *step);
+SceInt32 sceAVConfigGetConnectedAudioDevice(SceUInt32 *connectState);
+SceInt32 sceAVConfigGetVolCtrlEnable(SceUInt32 *enable, SceUInt32 *isMute, SceUInt32 *isAvls);
+SceInt32 sceAVConfigHdmiCecCmdOneTouchPlay(SceUInt32 mode);
+SceInt32 sceAVConfigHdmiCecDisable(void);
+SceInt32 sceAVConfigHdmiCecEnable(void);
+SceInt32 sceAVConfigHdmiClearCecInfo(void);
+SceInt32 sceAVConfigHdmiGetCecInfo(SceAVConfigCecInfo *info);
+SceInt32 sceAVConfigHdmiGetMonitorInfo(SceAVConfigMonitorInfo *info);
+SceInt32 sceAVConfigHdmiGetOutScalingRatio(SceAVConfigRatioOpt *opt);
+SceInt32 sceAVConfigHdmiSetOutScalingRatio(const SceAVConfigRatioOpt *opt);
+SceInt32 sceAVConfigHdmiSetResolution(SceInt32 resolution, SceInt32 forcedFlag);
+SceInt32 sceAVConfigHdmiSetRgbRangeMode(SceInt32 rgbRangeMode);
+SceInt32 sceAVConfigOledOn(void);
+SceInt32 sceAVConfigRegisterCallback(SceUID cuid, SceUInt32 type);
+SceInt32 sceAVConfigSendVolKey(SceUInt32 volKey);
+SceInt32 sceAVConfigSetAutoDisplayDimming(SceUInt32 dimmingInterval);
+SceInt32 sceAVConfigSetAutoSuspend(SceUInt32 suspendInterval);
+SceInt32 sceAVConfigSetAutoSuspend2(SceUInt32 suspendInterval);
+SceInt32 sceAVConfigUnRegisterCallback(void);
+SceInt32 sceAVConfigWriteRegSystemVol(SceUInt32 step);
 
 #ifdef __cplusplus
 }
