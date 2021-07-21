@@ -249,6 +249,53 @@ int sceMotionStartSampling(void);
  */
 int sceMotionStopSampling(void);
 
+// Should move to motion_dev.h?
+
+// missing structs
+typedef struct SceMotionDevAccCalibData SceMotionDevAccCalibData;
+typedef struct SceMotionDevCalibrationData SceMotionDevCalibrationData;
+typedef struct SceMotionDevCalibrationHeader SceMotionDevCalibrationHeader;
+typedef struct SceMotionDevMagnCalibData SceMotionDevMagnCalibData;
+typedef struct SceMotionDevDeviceInfo SceMotionDevDeviceInfo;
+typedef struct SceMotionDevDeviceLocation SceMotionDevDeviceLocation;
+typedef struct SceMotionDevGyroBiasData SceMotionDevGyroBiasData;
+typedef struct SceMotionDevGyroCalibData SceMotionDevGyroCalibData;
+typedef struct SceMotionDevModeInfo SceMotionDevModeInfo;
+typedef struct SceMotionDevData SceMotionDevData;
+
+int sceMotionDevGetAccCalibData(SceMotionDevAccCalibData *pData);
+int sceMotionDevGetAccCalibData2(int port, SceMotionDevAccCalibData *pData);
+int sceMotionDevGetCalibrationData(SceUInt32 blockID, SceMotionDevCalibrationData* pData, SceUInt32 dataNum);
+int sceMotionDevGetCalibrationHeader(SceUInt32 blockID, SceMotionDevCalibrationHeader* pCalibHeader);
+int sceMotionDevGetCurrentMagnCalibData(SceMotionDevMagnCalibData *pData);
+int sceMotionDevGetCurrentMagnStabilityLevel(SceUInt32* pLevel);
+int sceMotionDevGetDeviceInfo(SceMotionDevDeviceInfo *pDeviceInfo);
+int sceMotionDevGetDeviceLocation(SceMotionDevDeviceLocation *pLocation);
+int sceMotionDevGetFactoryMagnCalibData(SceMotionDevMagnCalibData *pData);
+int sceMotionDevGetGyroBias(SceMotionDevGyroBiasData *pBias);
+int sceMotionDevGetGyroBias2(int port, SceMotionDevGyroBiasData *pBias);
+int sceMotionDevGetGyroCalibData(SceMotionDevGyroCalibData *pData);
+int sceMotionDevGetGyroCalibData2(int port, SceMotionDevGyroCalibData *pData);
+int sceMotionDevGetMeasMode(SceMotionDevModeInfo *pModeInfo);
+int sceMotionDevIsReady(void);
+int sceMotionDevIsWriteMagnCalibDone(SceBool *pbDone);
+int sceMotionDevMagnCalibNotificationServiceDisable(void);
+int sceMotionDevMagnCalibNotificationServiceEnable(void);
+int sceMotionDevMagnSamplingStart(void);
+int sceMotionDevMagnSamplingStop(void);
+int sceMotionDevRead(SceMotionDevData* pData, int dataNum, SceUInt32 *pInfo);
+int sceMotionDevRead2(int port, SceMotionDevData *pData, int dataNum, SceUInt32 *pInfo);
+int sceMotionDevReadForMagnCalib(SceMotionDevData* pData, int dataNum);
+int sceMotionDevRevertMagnCalibToFactorySetting(void);
+int sceMotionDevSamplingStart(void);
+int sceMotionDevSamplingStart2(int port);
+int sceMotionDevSamplingStop(void);
+int sceMotionDevSamplingStop2(int port);
+int sceMotionDevSetSamplingMode(SceUInt32 mode);
+int sceMotionDevUpdateMagnCalibData(const SceMotionDevMagnCalibData *pData, SceUInt32* pTag);
+int sceMotionDevUpdateMagnStabilityLevel(SceUInt32 level);
+int sceMotionDevWriteCurrentMagnCalibData(void);
+
 #ifdef __cplusplus
 }
 #endif
