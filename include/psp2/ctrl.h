@@ -146,7 +146,7 @@ typedef struct SceCtrlPortInfo {
  *
  * @return The previous mode, <0 on error.
  */
-int sceCtrlSetSamplingMode(SceCtrlPadInputMode mode);
+int sceCtrlSetSamplingMode(SceUInt32 uiMode);
 
 /**
  * Set the controller extend mode.
@@ -164,7 +164,7 @@ int sceCtrlSetSamplingModeExt(SceCtrlPadInputMode mode);
  *
  * @return The current mode, <0 on error.
  */
-int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
+int sceCtrlGetSamplingMode(SceUInt32 *puiMode);
 
 /**
  * Get the controller state information (polling, positive logic).
@@ -175,7 +175,7 @@ int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
+int sceCtrlPeekBufferPositive(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
 
 /**
  * Get the controller state information (polling, positive logic).
@@ -199,7 +199,7 @@ int sceCtrlPeekBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
+int sceCtrlPeekBufferNegative(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
 
 /**
  * Get the controller state information (blocking, positive logic).
@@ -210,7 +210,7 @@ int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
+int sceCtrlReadBufferPositive(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
 
 /**
  * Get the controller extended state information (blocking, positive logic).
@@ -234,7 +234,7 @@ int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
+int sceCtrlReadBufferNegative(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
 
 /**
  * Set rules for button rapid fire
@@ -245,7 +245,7 @@ int sceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
  *
  * @return 0, <0 on error.
  */
-int sceCtrlSetRapidFire(int port, int idx, const SceCtrlRapidFireRule* pRule);
+int sceCtrlSetRapidFire(SceInt32 port, SceInt32 idx, const SceCtrlRapidFireRule* pRule);
 
 /**
  * Clear rules for button rapid fire
@@ -255,7 +255,7 @@ int sceCtrlSetRapidFire(int port, int idx, const SceCtrlRapidFireRule* pRule);
  *
  * @return 0, <0 on error.
  */
-int sceCtrlClearRapidFire(int port, int idx);
+int sceCtrlClearRapidFire(SceInt32 port, SceInt32 idx);
 
 /**
  * Control the actuator (vibrate) on paired controllers.
