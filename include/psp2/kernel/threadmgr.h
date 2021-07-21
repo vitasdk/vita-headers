@@ -1315,7 +1315,6 @@ SceInt32 sceKernelCloseMsgPipe(SceUID msgPipeId);
 SceInt32 sceKernelCloseRWLock(SceUID rwLockId);
 SceInt32 sceKernelCloseSema(SceUID semaId);
 SceInt32 sceKernelCloseSimpleEvent(SceUID simpleEventId);
-SceInt32 sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
 SceInt32 sceKernelDeleteRWLock(SceUID rwLockId);
 SceInt32 sceKernelDeleteSimpleEvent(SceUID simpleEventId);
 SceInt32 sceKernelGetActiveCpuMask(void);
