@@ -178,6 +178,10 @@ int sceAudioOutSetAdopt_forUser(int portType, int set);
 int sceAudioOutSetCompress(int port, int comp);
 int sceAudioOutSetEffectType(int type);
 
+// 1.69, Does not exist in 3.60
+int _sceAudioOutGetPortVolume_forUser(int portType);
+int _sceAudioOutSetPortVolume_forUser(int portTypeBit, int volume, int slant);
+
 #ifdef __cplusplus
 }
 #endif
