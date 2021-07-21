@@ -216,6 +216,45 @@ int sceAvcdecDeleteDecoder(SceAvcdecCtrl *decoder);
  */
 int sceAvcdecDecode(const SceAvcdecCtrl *decoder, const SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
 
+// missing structs
+typedef struct SceAvcdecPictureInternal SceAvcdecPictureInternal;
+
+SceInt32 _sceAvcdecCreateDecoder(SceUInt32 codecType, SceAvcdecCtrl *pCtrl, const SceAvcdecQueryDecoderInfo *pDecoderInfo);
+SceInt32 _sceAvcdecCreateDecoderInternal(SceUInt32 codecType, SceAvcdecCtrl *pCtrl, const SceAvcdecQueryDecoderInfo *pDecoderInfo);
+SceInt32 _sceAvcdecCreateDecoderNongameapp(SceUInt32 codecType, SceAvcdecCtrl *pCtrl, const SceAvcdecQueryDecoderInfo *pDecoderInfo);
+SceInt32 _sceAvcdecCsc(SceAvcdecPicture *pDst, const SceAvcdecPicture *pSrc);
+SceInt32 _sceAvcdecCscInternal(SceAvcdecPictureInternal *pDst, const SceAvcdecPictureInternal *pSrc);
+SceInt32 _sceAvcdecDecode(SceAvcdecCtrl *pCtrl, const SceAvcdecAu *pAu, SceAvcdecArrayPicture *pArrayPicture);
+SceInt32 _sceAvcdecDecodeAuInternal(SceAvcdecCtrl *pCtrl, const SceAvcdecAu *pAu, SceUInt32 *pTimeout);
+SceInt32 _sceAvcdecDecodeAuNalAuInternal(SceAvcdecCtrl *pCtrl, const SceAvcdecNalAu *pNalAu, SceUInt32 *pTimeout);
+SceInt32 _sceAvcdecDecodeAuNalAuNongameapp(SceAvcdecCtrl *pCtrl, const SceAvcdecNalAu *pNalAu, const SceUInt32 *pTimeout);
+SceInt32 _sceAvcdecDecodeAuNongameapp(SceAvcdecCtrl *pCtrl, const SceAvcdecAu *pAu, const SceUInt32 *pTimeout);
+SceInt32 _sceAvcdecDecodeAvailableSize(SceAvcdecCtrl *pCtrl);
+SceInt32 _sceAvcdecDecodeFlush(SceAvcdecCtrl *pCtrl);
+SceInt32 _sceAvcdecDecodeGetPictureInternal(SceAvcdecCtrl *pCtrl, SceAvcdecArrayPicture *pArrayPicture, SceUInt32 *pTimeout);
+SceInt32 _sceAvcdecDecodeGetPictureWithWorkPictureInternal(SceAvcdecCtrl *pCtrl, SceAvcdecArrayPicture *pArrayPicture, SceAvcdecArrayPicture *pWorkArrayPicture, SceUInt32 *pTimeout);
+SceInt32 _sceAvcdecDecodeNalAu(const SceAvcdecCtrl *pCtrl, const SceAvcdecNalAu *pNalAu, SceAvcdecArrayPicture *pArrayPicture);
+SceInt32 _sceAvcdecDecodeNalAuWithWorkPicture(const SceAvcdecCtrl *pCtrl, const SceAvcdecNalAu *pNalAu, SceAvcdecArrayPicture *pArrayPicture, SceAvcdecArrayPicture *pWorkArrayPicture);
+SceInt32 _sceAvcdecDecodeSetTrickModeNongameapp(SceAvcdecCtrl *pCtrl, SceUInt32 trickMode);
+SceInt32 _sceAvcdecDecodeStop(SceAvcdecCtrl *pCtrl, SceAvcdecArrayPicture *pArrayPicture);
+SceInt32 _sceAvcdecDecodeStopWithWorkPicture(SceAvcdecCtrl *pCtrl, SceAvcdecArrayPicture *pArrayPicture, SceAvcdecArrayPicture *pWorkArrayPicture);
+SceInt32 _sceAvcdecDecodeWithWorkPicture(const SceAvcdecCtrl *pCtrl, const SceAvcdecAu *pAu, SceAvcdecArrayPicture *pArrayPicture, SceAvcdecArrayPicture *pWorkArrayPicture);
+SceInt32 _sceAvcdecDeleteDecoder(SceAvcdecCtrl *pCtrl);
+SceInt32 _sceAvcdecGetSeiPictureTimingInternal(SceAvcdecCtrl *pCtrl, SceUInt32 index, SceAvcdecSeiPictureTiming *pPTSei);
+SceInt32 _sceAvcdecQueryDecoderMemSize(SceUInt32 codecType, const SceAvcdecQueryDecoderInfo *pDecoderInfo, SceAvcdecDecoderInfo *pMemInfo);
+SceInt32 _sceAvcdecQueryDecoderMemSizeInternal(SceUInt32 codecType, const SceAvcdecQueryDecoderInfo *pDecoderInfo, SceAvcdecDecoderInfo *pMemInfo);
+SceInt32 _sceAvcdecQueryDecoderMemSizeNongameapp(SceUInt32 codecType, const SceAvcdecQueryDecoderInfo *pDecoderInfo, SceAvcdecDecoderInfo *pMemInfo);
+SceInt32 _sceAvcdecRegisterCallbackInternal(SceAvcdecCtrl *pCtrl, SceUID cbid, SceUInt32 callbackFactor);
+SceInt32 _sceAvcdecRegisterCallbackNongameapp(SceAvcdecCtrl *pCtrl, SceUID cbid, SceUInt32 callbackFactor);
+SceInt32 _sceAvcdecSetDecodeMode(SceUInt32 codecType, SceUChar8 decodeMode);
+SceInt32 _sceAvcdecSetDecodeModeInternal(SceUInt32 codecType, SceUChar8 decodeMode);
+SceInt32 _sceAvcdecSetInterlacedStreamMode(SceUInt32 codecType, SceUInt32 flag);
+SceInt32 _sceAvcdecSetRecoveryPointSEIMode(SceUInt32 codecType, SceUInt32 flag);
+SceInt32 _sceAvcdecUnregisterCallbackInternal(SceAvcdecCtrl *pCtrl);
+SceInt32 _sceAvcdecUnregisterCallbackNongameapp(SceAvcdecCtrl *pCtrl);
+SceInt32 _sceAvcdecUnregisterCallbackWithCbidInternal(SceAvcdecCtrl *pCtrl, SceUID cbid);
+SceInt32 _sceAvcdecUnregisterCallbackWithCbidNongameapp(SceAvcdecCtrl *pCtrl, SceUID cbid);
+
 #ifdef __cplusplus
 }
 #endif
