@@ -198,6 +198,22 @@ extern SceInt32 sceAudiodecGetContextSize(SceAudiodecCtrl *pCtrl, SceUInt32 code
 extern SceInt32 sceAudiodecCreateDecoderExternal(SceAudiodecCtrl *pCtrl, SceUInt32 codecType, SceUIntVAddr vaContext, SceUInt32 contextSize);
 extern SceInt32 sceAudiodecDeleteDecoderExternal(SceAudiodecCtrl *pCtrl, SceUIntVAddr *pvaContext);
 
+SceInt32 _sceAudiodecClearContext(SceAudiodecCtrl *pCtrl);
+SceInt32 _sceAudiodecCreateDecoder(SceAudiodecCtrl *pCtrl, SceUInt32 codecType);
+SceInt32 _sceAudiodecCreateDecoderExternal(SceAudiodecCtrl *pCtrl, SceUInt32 codecType, SceUIntVAddr vaContext, SceUInt32 contextSize);
+SceInt32 _sceAudiodecCreateDecoderResident(SceAudiodecCtrl *pCtrl, SceUInt32 codecType);
+SceInt32 _sceAudiodecDecode(SceAudiodecCtrl *pCtrl);
+SceInt32 _sceAudiodecDecodeNFrames(SceAudiodecCtrl *pCtrl, SceUInt32 nFrames);
+SceInt32 _sceAudiodecDecodeNStreams(SceAudiodecCtrl *pCtrls[], SceUInt32 nStreams);
+SceInt32 _sceAudiodecDeleteDecoder(SceAudiodecCtrl *pCtrl);
+SceInt32 _sceAudiodecDeleteDecoderExternal(SceAudiodecCtrl *pCtrl, SceUIntVAddr *pvaContext);
+SceInt32 _sceAudiodecDeleteDecoderResident(SceAudiodecCtrl *pCtrl);
+SceInt32 _sceAudiodecGetContextSize(SceAudiodecCtrl *pCtrl, SceUInt32 codecType);
+SceInt32 _sceAudiodecGetInternalError(SceAudiodecCtrl *pCtrl, SceInt32 *pInternalError);
+SceInt32 _sceAudiodecInitLibrary(SceUInt32 codecType, SceAudiodecInitParam *pInitParam);
+SceInt32 _sceAudiodecPartlyDecode(SceAudiodecCtrl *pCtrl, SceUInt32 skipSamples, SceUInt32 outputSamples);
+SceInt32 _sceAudiodecTermLibrary(SceUInt32 codecType);
+
 #ifdef __cplusplus
 }
 #endif
