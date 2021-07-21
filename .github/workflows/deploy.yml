@@ -9,7 +9,7 @@ on:
     types: [run_build]
 
 jobs:
-  check-headers:
+  deploy-docs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
