@@ -20,7 +20,6 @@ typedef struct SceGpsSatelliteData SceGpsSatelliteData;
 typedef struct SceGpsPositionData SceGpsPositionData;
 typedef struct SceGpsStatus SceGpsStatus;
 
-SceInt32 _sceGpsSetCurrentTick(const SceRtcTick *pTick);
 int _sceGpsClose(void);
 int _sceGpsGetData(SceGpsPositionData *pPos, SceGpsSatelliteData *pSat);
 int _sceGpsGetDeviceInfo(SceGpsDeviceInfo *pDevInfo);
@@ -32,6 +31,11 @@ int _sceGpsResumeCallback(void);
 int _sceGpsSelectDevice(SceUInt32 deviceType);
 int _sceGpsStart(unsigned int mode);
 int _sceGpsStop(void);
+
+// Maybe not present in 3.60
+/*
+SceInt32 _sceGpsSetCurrentTick(const SceRtcTick *pTick);
+*/
 
 #ifdef __cplusplus
 }
