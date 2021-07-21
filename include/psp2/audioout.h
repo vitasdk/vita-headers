@@ -86,7 +86,7 @@ typedef enum SceAudioOutAlcMode {
  * @return port number, < 0 on error.
  * @note - The volume is initially set to its max value (::SCE_AUDIO_OUT_MAX_VOL)
 */
-int sceAudioOutOpenPort(SceAudioOutPortType type, int len, int freq, SceAudioOutMode mode);
+int sceAudioOutOpenPort(int portType, int len, int freq, int param);
 
 /**
  * Release an audio port
@@ -107,7 +107,7 @@ int sceAudioOutReleasePort(int port);
  * @note - if NULL is specified for *buf, the function will not return until the last
  * output audio data has been output.
  */
-int sceAudioOutOutput(int port, const void *buf);
+int sceAudioOutOutput(int port, const void *ptr);
 
 /**
  * Set volume of specified output audio port
@@ -118,7 +118,7 @@ int sceAudioOutOutput(int port, const void *buf);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutSetVolume(int port, SceAudioOutChannelFlag ch, int *vol);
+int sceAudioOutSetVolume(int port, int flag, int *vol);
 
 /**
  * Change configuration of specified output port
@@ -131,7 +131,7 @@ int sceAudioOutSetVolume(int port, SceAudioOutChannelFlag ch, int *vol);
  * @return 0 on success, < 0 on error.
  * @note - If (-1) is specified for any argument (excepted for port), current configuration is used instead.
  */
-int sceAudioOutSetConfig(int port, SceSize len, int freq, SceAudioOutMode mode);
+int sceAudioOutSetConfig(int port, int len, int freq, int param);
 
 /**
  * Get a parameter value of specified output port
@@ -141,7 +141,7 @@ int sceAudioOutSetConfig(int port, SceSize len, int freq, SceAudioOutMode mode);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutGetConfig(int port, SceAudioOutConfigType type);
+int sceAudioOutGetConfig(int port, int configType);
 
 /**
  * Set 'Automatic Level Control' mode on the BGM port
@@ -151,7 +151,7 @@ int sceAudioOutGetConfig(int port, SceAudioOutConfigType type);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutSetAlcMode(SceAudioOutAlcMode mode);
+int sceAudioOutSetAlcMode(int mode);
 
 /**
  * Get the number of remaining samples to be output on the specified port
@@ -170,7 +170,13 @@ int sceAudioOutGetRestSample(int port);
  *
  * @return (1) if port is in use, (0) otherwise. < 0 on error.
  */
-int sceAudioOutGetAdopt(SceAudioOutPortType type);
+int sceAudioOutGetAdopt(int portType);
+
+int sceAudioOutOpenExtPort(int len, SceInt32 param);
+int sceAudioOutSetAdoptMode(int mode);
+int sceAudioOutSetAdopt_forUser(int portType, int set);
+int sceAudioOutSetCompress(int port, int comp);
+int sceAudioOutSetEffectType(int type);
 
 #ifdef __cplusplus
 }
