@@ -192,7 +192,7 @@ SceInt32 scePowerGetBusClockFrequency(void);
 /**
  * Get GPU clock frequency
  *
- * @return GPU clock frequency in Mhz
+ * @return GPU clock frequency in Mhz in the process
  */
 SceInt32 scePowerGetGpuClockFrequency(void);
 
