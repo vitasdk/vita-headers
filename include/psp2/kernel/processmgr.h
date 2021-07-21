@@ -14,6 +14,9 @@
 extern "C" {
 #endif
 
+typedef SceUInt64 SceKernelClock;
+typedef SceUInt32 SceKernelTime;
+
 typedef enum SceKernelProcessPrioritySystem {
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_HIGH     = 32,
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_DEFAULT  = 96,
@@ -105,6 +108,9 @@ SceUID sceKernelGetStdin(void);
 SceUID sceKernelGetStdout(void);
 
 const void * sceKernelGetProcessParam(void);
+
+SceKernelClock sceKernelLibcClock(void);
+SceKernelTime sceKernelLibcTime(SceKernelTime *pTime);
 
 #ifdef __cplusplus
 }
