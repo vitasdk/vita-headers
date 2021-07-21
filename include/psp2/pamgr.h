@@ -13,6 +13,8 @@
 extern "C" {
 #endif
 
+SceSize sceKernelPaGetTraceBufferSize(SceUInt32 type);
+
 SceUInt32 sceKernelPaGetIoBaseAddress(void);
 SceUInt32 sceKernelPaGetTimebaseFrequency(void);
 SceUInt32 sceKernelPaGetTraceBufferStatus(void);
