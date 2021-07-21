@@ -13,13 +13,17 @@
 #include <psp2/audioin.h>
 #include <psp2/audioout.h>
 #include <psp2/avconfig.h>
+#include <psp2/avcodec.h>
 #include <psp2/avplayer.h>
 #include <psp2/camera.h>
 #include <psp2/common_dialog.h>
 #include <psp2/compat.h>
 #include <psp2/ctrl.h>
 #include <psp2/display.h>
+#include <psp2/dmac5.h>
 #include <psp2/fiber.h>
+#include <psp2/fios2kernel.h>
+#include <psp2/gps.h>
 #include <psp2/gxm.h>
 #include <psp2/gxt.h>
 #include <psp2/hid.h>
@@ -32,9 +36,11 @@
 #include <psp2/mtpif.h>
 #include <psp2/musicexport.h>
 #include <psp2/netcheck_dialog.h>
+#include <psp2/ngs.h>
 #include <psp2/npdrm.h>
 #include <psp2/npdrmpackage.h>
 #include <psp2/paf.h>
+#include <psp2/pamgr.h>
 #include <psp2/pgf.h>
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
@@ -55,7 +61,9 @@
 #include <psp2/sysmodule.h>
 #include <psp2/system_param.h>
 #include <psp2/touch.h>
+#include <psp2/triggerutil.h>
 #include <psp2/udcd.h>
+#include <psp2/update.h>
 #include <psp2/usbd.h>
 #include <psp2/usbserial.h>
 #include <psp2/usbstorvstor.h>
@@ -68,7 +76,9 @@
 #include <psp2/io/fcntl.h>
 #include <psp2/io/stat.h>
 
+#include <psp2/kernel/backtrace.h>
 #include <psp2/kernel/clib.h>
+#include <psp2/kernel/cpu.h>
 #include <psp2/kernel/dmac.h>
 #include <psp2/kernel/error.h>
 #include <psp2/kernel/loadcore.h>
@@ -81,6 +91,9 @@
 
 #include <psp2/net/http.h>
 #include <psp2/net/net.h>
+#include <psp2/net/net_syscalls.h>
 #include <psp2/net/netctl.h>
+
+#include <psp2/deci4p/user.h.h>
 
 #endif
