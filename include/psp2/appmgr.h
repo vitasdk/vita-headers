@@ -559,16 +559,20 @@ typedef struct SceAppMgrDrmOpenParam SceAppMgrDrmOpenParam;
 typedef struct SceAppMgrAppInfo SceAppMgrAppInfo;
 
 SceInt32 __sceAppMgrGetAppState(SceAppMgrAppState *appState, SceUInt32 sizeofSceAppMgrAppState, SceUInt32 buildVersion);
-SceInt32 _sceAppMgrDeleteDBCallback(void);
 SceInt32 _sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *pParam);
 SceInt32 _sceAppMgrGetAppInfo(SceAppMgrAppInfo *appInfo, SceUInt32 sizeofSceAppMgrAppInfo, SceUInt32 buildVersion);
-SceInt32 _sceAppMgrGetAppList(SceUID processId[], SceInt32 *number);
-SceInt32 _sceAppMgrGetRunStatus(void);
-SceInt32 _sceAppMgrLaunchAppByPath(const char *appPath, SceUID *processId, const char *param, SceInt32 budgetSize);
-SceInt32 _sceAppMgrLaunchAppByPath2(const char *appPath, SceUID processId, SceInt32 budgetSize, const char *appName);
-SceInt32 _sceAppMgrLaunchAppByPath3(const char *appPath, SceUID processId, SceInt32 budgetSize, const char *appName);
 SceInt32 _sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *systemEvent);
-SceInt32 _sceAppMgrRegisterDBCallback(SceUID cbid);
+
+// Maybe not present in 3.60
+/*
+ * SceInt32 _sceAppMgrRegisterDBCallback(SceUID cbid);
+ * SceInt32 _sceAppMgrDeleteDBCallback(void);
+ * SceInt32 _sceAppMgrGetAppList(SceUID processId[], SceInt32 *number);
+ * SceInt32 _sceAppMgrGetRunStatus(void);
+ * SceInt32 _sceAppMgrLaunchAppByPath(const char *appPath, SceUID *processId, const char *param, SceInt32 budgetSize);
+ * SceInt32 _sceAppMgrLaunchAppByPath2(const char *appPath, SceUID processId, SceInt32 budgetSize, const char *appName);
+ * SceInt32 _sceAppMgrLaunchAppByPath3(const char *appPath, SceUID processId, SceInt32 budgetSize, const char *appName);
+ */
 
 #ifdef __cplusplus
 }
