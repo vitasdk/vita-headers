@@ -192,12 +192,9 @@ SceInt32 scePowerGetBusClockFrequency(void);
 /**
  * Get GPU clock frequency
  *
- * @param corefreq - The pointer to frequency output
- * @param mpfreq   - The pointer to frequency output
- *
  * @return GPU clock frequency in Mhz
  */
-SceInt32 scePowerGetGpuClockFrequency(SceInt32 *corefreq, SceInt32 *mpfreq);
+SceInt32 scePowerGetGpuClockFrequency(void);
 
 /**
  * Returns GPU crossbar clock frequency
