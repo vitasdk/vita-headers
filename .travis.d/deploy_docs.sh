@@ -2,7 +2,7 @@
 set -e
 
 cd $TRAVIS_BUILD_DIR/docs
-$HOME/doxygen/doxygen*/bin/doxygen
+doxygen
 cp search.js html/search/search.js
 echo "<script id=\"searchdata\" type=\"text/xmldata\">" >> html/search.html
 cat searchdata.xml >> html/search.html
