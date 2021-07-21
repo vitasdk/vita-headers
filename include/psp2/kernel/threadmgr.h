@@ -1170,27 +1170,6 @@ int sceKernelWaitSignal(SceUInt32 unk0, SceUInt32 delay, SceUInt32 *timeout);
  */
 SceInt32 sceKernelSendSignal(SceUID threadId);
 
-/* timer */
-SceUID _sceKernelCreateTimer(const char *pName, SceUInt32 attr, const SceKernelTimerOptParam *pOptParam);
-SceInt32 sceKernelDeleteTimer(SceUID timerId);
-
-SceInt32 sceKernelStartTimer(SceUID timerId);
-SceInt32 sceKernelStopTimer(SceUID timerId);
-
-SceUID sceKernelOpenTimer(const char *pName);
-SceInt32 sceKernelCloseTimer(SceUID timerId);
-
-SceInt32 _sceKernelCancelTimer(SceUID timerId, SceInt32 *pNumWaitThreads);
-SceInt32 _sceKernelGetTimerEventRemainingTime(SceUID timerId, SceKernelSysClock *pClock);
-SceInt32 _sceKernelGetTimerInfo(SceUID timerId, SceKernelTimerInfo *pInfo);
-SceInt32 _sceKernelGetTimerTime(SceUID timerId, SceKernelSysClock *pClock);
-SceInt32 _sceKernelSetTimerEvent(SceUID timerId, SceInt32 type, SceKernelSysClock *pInterval, SceInt32 fRepeat);
-SceInt32 _sceKernelSetTimerTime(SceUID timerId, SceKernelSysClock *pClock);
-SceInt32 _sceKernelGetTimerBase(SceUID timerId, SceKernelSysClock *pBase);
-SceUInt64 sceKernelGetTimerBaseWide(SceUID timerId);
-SceUInt64 sceKernelGetTimerTimeWide(SceUID timerId);
-SceUInt64 sceKernelSetTimerTimeWide(SceUID timerId, SceUInt64 clock);
-
 /**
  * Get the system time (low version)
  *
@@ -1219,6 +1198,42 @@ void *sceKernelGetThreadTLSAddr(SceUID thid, int key);
  * @return pointer to TLS key value
  */
 void *sceKernelGetTLSAddr(int key);
+
+// missing struct
+typedef struct SceKernelTimerOptParam SceKernelTimerOptParam;
+typedef struct SceKernelTimerInfo SceKernelTimerInfo;
+typedef struct SceKernelLwCondInfo SceKernelLwCondInfo;
+typedef struct SceKernelLwMutexInfo SceKernelLwMutexInfo;
+typedef struct SceKernelMsgPipeInfo SceKernelMsgPipeInfo;
+typedef struct SceKernelMsgPipeInfo SceKernelMsgPipeInfo;
+typedef struct SceKernelRWLockInfo SceKernelRWLockInfo;
+typedef struct SceKernelMsgPipeVector SceKernelMsgPipeVector;
+typedef struct SceKernelWaitEvent SceKernelWaitEvent;
+typedef struct SceKernelResultEvent SceKernelResultEvent;
+typedef struct SceKernelRWLockOptParam SceKernelRWLockOptParam;
+typedef struct SceKernelSimpleEventOptParam SceKernelSimpleEventOptParam;
+typedef struct CreateThread_ext_args CreateThread_ext_args;
+
+/* timer */
+SceUID _sceKernelCreateTimer(const char *pName, SceUInt32 attr, const SceKernelTimerOptParam *pOptParam);
+SceInt32 sceKernelDeleteTimer(SceUID timerId);
+
+SceInt32 sceKernelStartTimer(SceUID timerId);
+SceInt32 sceKernelStopTimer(SceUID timerId);
+
+SceUID sceKernelOpenTimer(const char *pName);
+SceInt32 sceKernelCloseTimer(SceUID timerId);
+
+SceInt32 _sceKernelCancelTimer(SceUID timerId, SceInt32 *pNumWaitThreads);
+SceInt32 _sceKernelGetTimerEventRemainingTime(SceUID timerId, SceKernelSysClock *pClock);
+SceInt32 _sceKernelGetTimerInfo(SceUID timerId, SceKernelTimerInfo *pInfo);
+SceInt32 _sceKernelGetTimerTime(SceUID timerId, SceKernelSysClock *pClock);
+SceInt32 _sceKernelSetTimerEvent(SceUID timerId, SceInt32 type, SceKernelSysClock *pInterval, SceInt32 fRepeat);
+SceInt32 _sceKernelSetTimerTime(SceUID timerId, SceKernelSysClock *pClock);
+SceInt32 _sceKernelGetTimerBase(SceUID timerId, SceKernelSysClock *pBase);
+SceUInt64 sceKernelGetTimerBaseWide(SceUID timerId);
+SceUInt64 sceKernelGetTimerTimeWide(SceUID timerId);
+SceUInt64 sceKernelSetTimerTimeWide(SceUID timerId, SceUInt64 clock);
 
 SceInt32 __sceKernelCreateLwMutex(SceKernelLwMutexWork *pWork, const char *pName, SceUInt32 attr, SceInt32 initCount);
 SceInt32 _sceKernelCancelEvent(SceUID eventId, SceUInt32 *pNumWaitThreads);
@@ -1313,7 +1328,7 @@ SceInt32 sceKernelUnlockReadRWLock(SceUID rwLockId);
 SceInt32 sceKernelUnlockWriteRWLock(SceUID rwLockId);
 SceInt32 sceKernelUnregisterCallbackFromEvent(SceUID eventId, SceUID callbackId);
 SceInt32 sceKernelUnregisterCallbackFromEventAll(SceUID eventId);
-SceUID sceKernelCreateThreadForUser(const char *pName, SceKernelThreadEntry entry, SceInt32 initPriority, struct CreateThread_ext_args *pExtargs);
+SceUID sceKernelCreateThreadForUser(const char *pName, SceKernelThreadEntry entry, SceInt32 initPriority, CreateThread_ext_args *pExtargs);
 SceUID sceKernelGetMsgPipeCreatorId(const char *pName);
 SceUID sceKernelOpenEventFlag(const char *pName);
 SceUID sceKernelOpenMsgPipe(const char *pName);

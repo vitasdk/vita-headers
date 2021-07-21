@@ -11,6 +11,29 @@
 extern "C" {
 #endif
 
+// missing structs
+typedef struct SceAvcencCtrl SceAvcencCtrl;
+typedef struct SceAvcencEncoderParameter SceAvcencEncoderParameter;
+typedef struct SceAvcencEncoderInfo SceAvcencEncoderInfo;
+typedef struct SceAvcencQueryEncoderInfoInternal SceAvcencQueryEncoderInfoInternal;
+typedef struct SceAvcencQueryEncoderInfoBasic SceAvcencQueryEncoderInfoBasic;
+typedef struct SceAvcencQueryEncoderInfo SceAvcencQueryEncoderInfo;
+typedef struct SceAvcencNal SceAvcencNal;
+typedef struct SceAvcencArrayAu SceAvcencArrayAu;
+typedef struct SceAvcencPicture SceAvcencPicture;
+typedef struct SceM4vdecDecoderInfo SceM4vdecDecoderInfo;
+typedef struct SceM4vdecQueryDecoderInfo SceM4vdecQueryDecoderInfo;
+typedef struct SceM4vdecCtrl SceM4vdecCtrl;
+typedef struct SceM4vdecArrayPicture SceM4vdecArrayPicture;
+typedef struct SceM4vdecAu SceM4vdecAu;
+typedef struct SceM4vdecPicture SceM4vdecPicture;
+typedef struct SceVideoencMemInfo SceVideoencMemInfo;
+typedef struct SceVideoencQueryInitInfoInternal SceVideoencQueryInitInfoInternal;
+typedef struct SceVideoencQueryInitInfo SceVideoencQueryInitInfo;
+typedef struct SceVideodecQueryInitInfoInternal SceVideodecQueryInitInfoInternal;
+typedef union SceVideodecQueryInitInfo SceVideodecQueryInitInfo; // TODO fix with videoenc.h
+typedef struct SceVideoencCtrl SceVideoencCtrl;
+
 SceInt32 _sceVideoencInitLibrary(SceUInt32 codecType, const SceVideodecQueryInitInfo *pInitDecInfo, const SceVideoencQueryInitInfo *pInitEncInfo);
 SceInt32 _sceVideoencInitLibraryInternal(SceUInt32 codecType, const SceVideodecQueryInitInfoInternal *pInitDecInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);
 SceInt32 _sceVideoencInitLibraryWithMemInternal(SceUInt32 codecType, SceVideoencCtrl *pCtrl, const SceVideodecQueryInitInfoInternal *pInitInfo, const SceVideoencQueryInitInfoInternal *pInitEncInfo);

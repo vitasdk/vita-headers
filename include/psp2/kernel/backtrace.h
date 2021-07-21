@@ -13,6 +13,11 @@
 extern "C" {
 #endif
 
+typedef struct	_SceKernelCallFrame {
+	SceUIntVAddr	sp;		/**< stack pointer */
+	SceUIntVAddr	pc;		/**< program counter */
+} SceKernelCallFrame;
+
 SceInt32 _sceKernelBacktrace(SceUID threadId, SceKernelCallFrame *pCallFrameBuffer, SceSize numBytesBuffer, SceUInt32 *pNumReturn);
 
 #ifdef __cplusplus

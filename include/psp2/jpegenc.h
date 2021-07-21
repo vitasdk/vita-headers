@@ -156,6 +156,9 @@ int sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int
  */
 int sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
+// missing structs
+typedef struct SceJpegSplitDecodeCtrl SceJpegSplitDecodeCtrl;
+
 int _sceJpegCreateSplitDecoder(SceJpegSplitDecodeCtrl *pCtrl);
 int _sceJpegCsc(void *pRGBA, const unsigned char *pYCbCr, int xysize, int iFrameWidth);
 int _sceJpegDecodeMJpeg(const unsigned char *pJpeg, SceSize isize, void *pRGBA, SceSize osize);

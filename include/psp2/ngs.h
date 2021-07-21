@@ -11,6 +11,36 @@
 extern "C" {
 #endif
 
+typedef SceUInt32 SceNgsHRack;
+typedef SceUInt32 SceNgsHPatch;
+typedef SceUInt32 SceNgsHSynSystem;
+typedef SceUInt32 SceNgsHVoice;
+typedef SceUInt32 SulphaNgsModuleQueryType;
+typedef SceUInt32 SceNgsModuleID;
+typedef void * SceNgsSulphaUpdateCallback;
+
+typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
+
+typedef void (* SceNgsCallbackFunc)(const SceNgsCallbackInfo* pCallbackInfo);
+
+typedef SceNgsCallbackFunc SceNgsRackReleaseCallbackFunc;
+typedef SceNgsCallbackFunc SceNgsModuleCallbackFunc;
+typedef SceNgsCallbackFunc SceNgsParamsErrorCallbackFunc;
+
+// missing structs
+typedef struct SceNgsVoicePreset SceNgsVoicePreset;
+typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
+typedef struct SceNgsBufferInfo SceNgsBufferInfo;
+typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
+typedef struct SceNgsCallbackListInfo SceNgsCallbackListInfo;
+typedef struct SulphaNgsModuleQuery SulphaNgsModuleQuery;
+typedef struct SulphaNgsRegistration SulphaNgsRegistration;
+typedef struct SceNgsRackDescription SceNgsRackDescription;
+typedef struct SceNgsPatchSetupInfo SceNgsPatchSetupInfo;
+typedef struct SceNgsParamsDescriptor SceNgsParamsDescriptor;
+typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
+typedef struct SceNgsVoiceDefinition SceNgsVoiceDefinition;
+
 SceInt32 sceNgsModuleCheckParamsInRangeInternal(SceNgsHVoice VoiceHandle, const SceNgsModuleID moduleId, const SceNgsParamsDescriptor* pParams, const SceUInt32 uSize);
 SceInt32 sceNgsModuleGetNumPresetsInternal(SceNgsHSynSystem SystemHandle, const SceNgsModuleID ModuleID, SceUInt32* puNumPresets);
 SceInt32 sceNgsModuleGetPresetInternal(SceNgsHSynSystem SystemHandle, const SceNgsModuleID ModuleID, const SceUInt32 uPresetIndex, SceNgsBufferInfo* pBufferInfo);
@@ -39,7 +69,7 @@ SceInt32 sceNgsSystemUnlockInternal(SceNgsHSynSystem SystemHandle);
 SceInt32 sceNgsSystemUpdateInternal(SceNgsHSynSystem SystemHandle);
 SceInt32 sceNgsVoiceBypassModuleInternal(SceNgsHVoice VoiceHandle, const SceUInt32 uModule, const SceUInt32 uBypassFlag);
 SceInt32 sceNgsVoiceClearDirtyFlagInternal(SceNgsHVoice VoiceHandle, const SceUInt32 uParamBitFlag);
-SceInt32 sceNgsVoiceDefinitionGetPresetInternal(const struct SceNgsVoiceDefinition* pVoiceDefn, const SceUInt32 uIndex, const SceNgsVoicePreset** ppPreset);
+SceInt32 sceNgsVoiceDefinitionGetPresetInternal(const SceNgsVoiceDefinition* pVoiceDefn, const SceUInt32 uIndex, const SceNgsVoicePreset** ppPreset);
 SceInt32 sceNgsVoiceGetModuleBypassInternal(SceNgsHVoice VoiceHandle, const SceUInt32 uModule, SceUInt32* puBypassFlag);
 SceInt32 sceNgsVoiceGetOutputPatchInternal(SceNgsHVoice VoiceHandle, const SceInt32 nOutputIndex, const SceInt32 nSubIndex, SceNgsHPatch* pPatchHandle);
 SceInt32 sceNgsVoiceGetParamsOutOfRangeBufferedInternal(SceNgsHVoice VoiceHandle, const SceUInt32 uModule, char* messageBuffer);
@@ -53,24 +83,24 @@ SceInt32 sceNgsVoiceSetAllBypassesInternal(SceNgsHVoice VoiceHandle, const SceUI
 SceInt32 sceNgsVoiceSetFinishedCallbackInternal(SceNgsHVoice VoiceHandle, const SceNgsCallbackFunc Callback, void* pUserData);
 SceInt32 sceNgsVoiceSetModuleCallbackInternal(SceNgsHVoice VoiceHandle, const SceUInt32 uModule, const SceNgsModuleCallbackFunc Callback, void* pCallbackUsrData);
 SceInt32 sceNgsVoiceSetPresetInternal(SceNgsHVoice VoiceHandle, const SceNgsVoicePreset* pVoicePresetInput);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetAtrac9VoiceInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetCompressorBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetCompressorSideChainBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetDelayBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetDistortionBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetEnvelopeBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetEqBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetMasterBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetMixerBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetPauserBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetPitchshiftBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetReverbBussInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetSasEmuVoiceInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetScreamVoiceAT9Internal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetScreamVoiceInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetSimpleAtrac9VoiceInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetSimpleVoiceInternal(void);
-const struct SceNgsVoiceDefinition* sceNgsVoiceDefGetTemplate1Internal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetAtrac9VoiceInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetCompressorBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetCompressorSideChainBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetDelayBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetDistortionBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetEnvelopeBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetEqBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetMasterBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetMixerBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetPauserBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetPitchshiftBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetReverbBussInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetSasEmuVoiceInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetScreamVoiceAT9Internal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetScreamVoiceInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetSimpleAtrac9VoiceInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetSimpleVoiceInternal(void);
+const SceNgsVoiceDefinition* sceNgsVoiceDefGetTemplate1Internal(void);
 
 #ifdef __cplusplus
 }

@@ -80,6 +80,12 @@ SceInt32 sceAVConfigMuteOn(void);
  */
 SceInt32 sceAVConfigSetDisplayColorSpaceMode(SceUInt32 colorSpaceMode);
 
+// missing structs
+typedef struct SceAVConfigMonitorInfo SceAVConfigMonitorInfo;
+typedef struct SceAVConfigRatioOpt SceAVConfigRatioOpt;
+typedef struct SceAVConfigCecInfo SceAVConfigCecInfo;
+typedef struct SceAvcencEncoderParameter SceAvcencEncoderParameter;
+
 SceInt32 sceAVConfigChangeReg(SceUInt32 reg_key, SceUInt32 value);
 SceInt32 sceAVConfigClearAutoSuspend2(void);
 SceInt32 sceAVConfigDisplayOn(void);

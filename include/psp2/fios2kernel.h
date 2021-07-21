@@ -13,6 +13,14 @@
 extern "C" {
 #endif
 
+typedef int32_t SceFiosKernelOverlayDH;
+typedef int32_t SceFiosKernelOverlayID;
+
+// missing structs
+typedef struct SceFiosKernelOverlay SceFiosKernelOverlay;
+typedef struct SceFiosNativeStat SceFiosNativeStat;
+typedef struct SceFiosNativeDirEntry SceFiosNativeDirEntry;
+
 int _sceFiosKernelOverlayAdd(const SceFiosKernelOverlay *pOverlay, SceFiosKernelOverlayID *pOutID);
 int _sceFiosKernelOverlayAddForProcess(SceUID targetProcess, const SceFiosKernelOverlay *pOverlay, SceFiosKernelOverlayID *pOutID);
 int _sceFiosKernelOverlayDHChstatSync(SceFiosKernelOverlayDH dh, const SceFiosNativeStat *pNewStat, unsigned int cbit);

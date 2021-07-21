@@ -8,6 +8,7 @@
 #define _PSP2_IO_STAT_H_
 
 #include <psp2/types.h>
+#include <psp2/io/fcntl.h>
 
 #ifdef __cplusplus
 extern "C" {

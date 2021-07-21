@@ -13,6 +13,12 @@
 extern "C" {
 #endif
 
+// missing structs
+typedef struct SceGpsDeviceInfo SceGpsDeviceInfo;
+typedef struct SceGpsSatelliteData SceGpsSatelliteData;
+typedef struct SceGpsPositionData SceGpsPositionData;
+typedef struct SceGpsStatus SceGpsStatus;
+
 SceInt32 _sceGpsSetCurrentTick(const SceRtcTick *pTick);
 int _sceGpsClose(void);
 int _sceGpsGetData(SceGpsPositionData *pPos, SceGpsSatelliteData *pSat);

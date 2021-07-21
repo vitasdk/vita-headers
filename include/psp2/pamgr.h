@@ -13,6 +13,13 @@
 extern "C" {
 #endif
 
+// missing structs
+typedef struct SceKernelPaTraceBufferParam SceKernelPaTraceBufferParam;
+typedef struct SceKernelPaGpuSampledData SceKernelPaGpuSampledData;
+typedef struct SceKernelPaGpuTraceParam SceKernelPaGpuTraceParam;
+typedef struct SceKernelPaCounterTraceParam SceKernelPaCounterTraceParam;
+typedef struct SceKernelPaArmTraceParam SceKernelPaArmTraceParam;
+
 SceSize sceKernelPaGetTraceBufferSize(SceUInt32 type);
 
 SceUInt32 sceKernelPaGetIoBaseAddress(void);
