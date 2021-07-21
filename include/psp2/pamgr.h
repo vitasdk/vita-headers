@@ -21,13 +21,11 @@ typedef struct SceKernelPaCounterTraceParam SceKernelPaCounterTraceParam;
 typedef struct SceKernelPaArmTraceParam SceKernelPaArmTraceParam;
 
 SceSize sceKernelPaGetTraceBufferSize(SceUInt32 type);
-
 SceUInt32 sceKernelPaGetIoBaseAddress(void);
 SceUInt32 sceKernelPaGetTimebaseFrequency(void);
 SceUInt32 sceKernelPaGetTraceBufferStatus(void);
 SceUInt32 sceKernelPaGetWritePointer(void);
 SceUInt64 sceKernelPaGetTimebaseValue(void);
-
 int _sceKernelPaAddArmTrace(const SceKernelPaArmTraceParam *param);
 int _sceKernelPaAddArmTraceByKey(const int key, const SceKernelPaArmTraceParam *param);
 int _sceKernelPaAddCounterTrace(const SceKernelPaCounterTraceParam *param);
@@ -37,7 +35,6 @@ int _sceKernelPaAddGpuTraceByKey(const int key, const SceKernelPaGpuTraceParam *
 int _sceKernelPaGetGpuSampledData(SceKernelPaGpuSampledData *data);
 int _sceKernelPaSetupTraceBuffer(const SceKernelPaTraceBufferParam *param);
 int _sceKernelPaSetupTraceBufferByKey(const int key, const SceKernelPaTraceBufferParam *param);
-
 int sceKernelPaFlushTraceBuffer(const void *buffer, SceUInt32 type);
 int sceKernelPaFlushTraceBufferByKey(const int key, const void *buffer, SceUInt32 type);
 int sceKernelPaInsertBookmark(SceUInt32 fifo, SceUInt32 channel, SceUInt32 data);
@@ -55,7 +52,6 @@ int sceKernelPaStartByKey(const int key);
 int sceKernelPaStop(void);
 int sceKernelPaStopByKey(const int key);
 int sceKernelPaUnregister(const int key);
-
 int sceKernelPerfArmPmonClose(void);
 int sceKernelPerfArmPmonOpen(void);
 int sceKernelPerfArmPmonReset(SceUID threadId);
