@@ -1192,11 +1192,18 @@ SceUInt64 sceKernelGetTimerTimeWide(SceUID timerId);
 SceUInt64 sceKernelSetTimerTimeWide(SceUID timerId, SceUInt64 clock);
 
 /**
+ * Get the system time (low version)
+ *
+ * @return The system time
+ */
+SceUInt32 sceKernelGetSystemTimeLow(void);
+
+/**
  * Get the system time (wide version)
  *
  * @return The system time
  */
-SceInt64 sceKernelGetSystemTimeWide(void);
+SceUInt64 sceKernelGetSystemTimeWide(void);
 
 /**
  * @brief sceKernelGetThreadTLSAddr gets an address to a 4 bytes area of TLS memory for the specified thread
