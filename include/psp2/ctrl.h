@@ -142,11 +142,11 @@ typedef struct SceCtrlPortInfo {
 /**
  * Set the controller mode.
  *
- * @param[in] uiMode - One of ::SceCtrlPadInputMode.
+ * @param[in] mode - One of ::SceCtrlPadInputMode.
  *
  * @return The previous mode, <0 on error.
  */
-int sceCtrlSetSamplingMode(SceUInt32 uiMode);
+int sceCtrlSetSamplingMode(SceCtrlPadInputMode mode);
 
 /**
  * Set the controller extend mode.
@@ -160,22 +160,22 @@ int sceCtrlSetSamplingModeExt(SceCtrlPadInputMode mode);
 /**
  * Get the current controller mode.
  *
- * @param[out] puiMode - Return value, see ::SceCtrlPadInputMode.
+ * @param[out] pMode - Return value, see ::SceCtrlPadInputMode.
  *
  * @return The current mode, <0 on error.
  */
-int sceCtrlGetSamplingMode(SceUInt32 *puiMode);
+int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
 
 /**
  * Get the controller state information (polling, positive logic).
  *
  * @param[in]  port - use 0.
- * @param[out] pData - see ::SceCtrlData.
- * @param[in]  nBufs - Buffers count. Up to 64 buffers can be requested.
+ * @param[out] pad_data - see ::SceCtrlData.
+ * @param[in]  count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlPeekBufferPositive(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
+int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (polling, positive logic).
@@ -194,23 +194,23 @@ int sceCtrlPeekBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  * Get the controller state information (polling, negative logic).
  *
  * @param[in]  port - use 0.
- * @param[out] pData - see ::SceCtrlData.
- * @param[in]  nBufs - Buffers count. Up to 64 buffers can be requested.
+ * @param[out] pad_data - see ::SceCtrlData.
+ * @param[in]  count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlPeekBufferNegative(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
+int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller state information (blocking, positive logic).
  *
  * @param[in]  port - use 0.
- * @param[out] pData - see ::SceCtrlData.
- * @param[in]  nBufs - Buffers count. Up to 64 buffers can be requested.
+ * @param[out] pad_data - see ::SceCtrlData.
+ * @param[in]  count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlReadBufferPositive(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
+int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Get the controller extended state information (blocking, positive logic).
@@ -229,12 +229,12 @@ int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  * Get the controller state information (blocking, negative logic).
  *
  * @param[in]  port - use 0.
- * @param[out] pData - see ::SceCtrlData.
- * @param[in]  nBufs - Buffers count. Up to 64 buffers can be requested.
+ * @param[out] pad_data - see ::SceCtrlData.
+ * @param[in]  count - Buffers count. Up to 64 buffers can be requested.
  *
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
-int sceCtrlReadBufferNegative(SceInt32 port, SceCtrlData *pData, SceInt32 nBufs);
+int sceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Set rules for button rapid fire

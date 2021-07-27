@@ -77,16 +77,16 @@ typedef enum SceAudioOutAlcMode {
 /**
  * Initialize audio port
  *
- * @param[in] portType - One of ::SceAudioOutPortType
- * @param[in] len - Number of samples, between ::SCE_AUDIO_MIN_LEN and ::SCE_AUDIO_MAX_LEN (multiple of 64)
+ * @param[in] type - One of ::SceAudioOutPortType
+ * @param[in] len  - Number of samples, between ::SCE_AUDIO_MIN_LEN and ::SCE_AUDIO_MAX_LEN (multiple of 64)
  * @param[in] freq - Sampling frequency (in Hz), one of the followings :
  * 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
- * @param[in] param - One of ::SceAudioOutMode
+ * @param[in] mode - One of ::SceAudioOutMode
  *
  * @return port number, < 0 on error.
  * @note - The volume is initially set to its max value (::SCE_AUDIO_OUT_MAX_VOL)
 */
-int sceAudioOutOpenPort(int portType, int len, int freq, int param);
+int sceAudioOutOpenPort(SceAudioOutPortType type, int len, int freq, SceAudioOutMode mode);
 
 /**
  * Release an audio port
@@ -124,24 +124,24 @@ int sceAudioOutSetVolume(int port, int flag, int *vol);
  * Change configuration of specified output port
  *
  * @param[in] port - Port number returned by ::sceAudioOutOpenPort
- * @param[in] len - see ::sceAudioOutOpenPort()
+ * @param[in] len  - see ::sceAudioOutOpenPort()
  * @param[in] freq - see ::sceAudioOutOpenPort()
- * @param[in] param - see ::sceAudioOutOpenPort()
+ * @param[in] mode - see ::sceAudioOutOpenPort()
  *
  * @return 0 on success, < 0 on error.
  * @note - If (-1) is specified for any argument (excepted for port), current configuration is used instead.
  */
-int sceAudioOutSetConfig(int port, int len, int freq, int param);
+int sceAudioOutSetConfig(int port, SceSize len, int freq, SceAudioOutMode mode);
 
 /**
  * Get a parameter value of specified output port
  *
  * @param[in] port - Port number returned by ::sceAudioOutOpenPort
- * @param[in] configType - One of ::SceAudioOutConfigType
+ * @param[in] type - One of ::SceAudioOutConfigType
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutGetConfig(int port, int configType);
+int sceAudioOutGetConfig(int port, SceAudioOutConfigType type);
 
 /**
  * Set 'Automatic Level Control' mode on the BGM port
@@ -151,7 +151,7 @@ int sceAudioOutGetConfig(int port, int configType);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAudioOutSetAlcMode(int mode);
+int sceAudioOutSetAlcMode(SceAudioOutAlcMode mode);
 
 /**
  * Get the number of remaining samples to be output on the specified port
@@ -166,11 +166,11 @@ int sceAudioOutGetRestSample(int port);
  * Get status of port type
  * Return different value on whether the port type is used for sound generation or not.
  *
- * @param[in] portType - One of ::SceAudioOutPortType
+ * @param[in] type - One of ::SceAudioOutPortType
  *
  * @return (1) if port is in use, (0) otherwise. < 0 on error.
  */
-int sceAudioOutGetAdopt(int portType);
+int sceAudioOutGetAdopt(SceAudioOutPortType type);
 
 int sceAudioOutOpenExtPort(int len, SceInt32 param);
 int sceAudioOutSetAdoptMode(int mode);
