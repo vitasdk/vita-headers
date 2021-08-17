@@ -1,5 +1,5 @@
 /**
- * \kernelgroup{SceCPU}
+ * \kernelgroup{SceCpu}
  * \usage{psp2kern/kernel/cpu.h,SceCpuForDriver_stub}
  */
 
