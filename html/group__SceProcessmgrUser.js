@@ -36,6 +36,5 @@ var group__SceProcessmgrUser =
     [ "sceKernelPowerUnlock", "group__SceProcessmgrUser.html#ga37afabdf671c166288c4b5f787d95734", null ],
     [ "sceKernelGetProcessTime", "group__SceProcessmgrUser.html#gace1d546dfe4aaad8846f6deef9e078ea", null ],
     [ "sceKernelGetProcessTimeLow", "group__SceProcessmgrUser.html#ga8b6194df9ea98d70eafe870a92dcbb9b", null ],
-    [ "sceKernelGetProcessTimeWide", "group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed", null ],
-    [ "sceKernelGetProcessId", "group__SceProcessmgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b", null ]
+    [ "sceKernelGetProcessTimeWide", "group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed", null ]
 ];

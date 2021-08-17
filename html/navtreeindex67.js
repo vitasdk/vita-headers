@@ -1,7 +1,5 @@
 var NAVTREEINDEX67 =
 {
-"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ae12a3dec52925566a16b1e0c2c09f89e":[4,0,1,0,0,3,11,5],
-"group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ae12a3dec52925566a16b1e0c2c09f89e":[4,0,1,0,0,3,11,24],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ae12a3dec52925566a16b1e0c2c09f89e":[1,4,5,0,11,5],
 "group__SceStatKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ae12a3dec52925566a16b1e0c2c09f89e":[4,0,1,1,1,3,6,5],
 "group__SceStatKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828":[4,0,1,0,0,3,12,11],
@@ -231,16 +229,16 @@ var NAVTREEINDEX67 =
 "group__SceSysconKernel.html#ga3c93408fa2ce44f21ccda85f76db0d4b":[4,0,1,1,19,24],
 "group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd":[4,0,1,1,19,14],
 "group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd":[1,6,3,0,36],
-"group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db":[1,6,3,0,39],
 "group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db":[4,0,1,1,19,17],
+"group__SceSysconKernel.html#ga45f5b6a1ff38625a49fa539e53d8c0db":[1,6,3,0,39],
 "group__SceSysconKernel.html#ga4ad52306debc5801daeac2089393cdf5":[4,0,1,1,19,20],
 "group__SceSysconKernel.html#ga4ad52306debc5801daeac2089393cdf5":[1,6,3,0,42],
 "group__SceSysconKernel.html#ga4f3a63970a24f5f8e7a28755dcf64c73":[1,6,3,0,67],
 "group__SceSysconKernel.html#ga4f3a63970a24f5f8e7a28755dcf64c73":[4,0,1,1,19,45],
 "group__SceSysconKernel.html#ga5538b16e22deb0e2e07da6ee2c273cdc":[4,0,1,1,19,44],
 "group__SceSysconKernel.html#ga5538b16e22deb0e2e07da6ee2c273cdc":[1,6,3,0,66],
-"group__SceSysconKernel.html#ga5a73cfa36fb2601d2a91e122ff0420a3":[1,6,3,0,45],
 "group__SceSysconKernel.html#ga5a73cfa36fb2601d2a91e122ff0420a3":[4,0,1,1,19,23],
+"group__SceSysconKernel.html#ga5a73cfa36fb2601d2a91e122ff0420a3":[1,6,3,0,45],
 "group__SceSysconKernel.html#ga663ad6edb993b0a8d3fee9755ce55d34":[1,6,3,0,52],
 "group__SceSysconKernel.html#ga663ad6edb993b0a8d3fee9755ce55d34":[4,0,1,1,19,30],
 "group__SceSysconKernel.html#ga69b6c916e511baf05b6b434d59ddf562":[1,6,3,0,48],
@@ -249,5 +247,7 @@ var NAVTREEINDEX67 =
 "group__SceSysconKernel.html#ga6c3c0a306f9a293fa1bad67bf4980417":[1,6,3,0,68],
 "group__SceSysconKernel.html#ga6e252e6677e8635292642e30fdddac78":[4,0,1,1,19,36],
 "group__SceSysconKernel.html#ga6e252e6677e8635292642e30fdddac78":[1,6,3,0,58],
-"group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40":[1,6,3,0,74]
+"group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40":[1,6,3,0,74],
+"group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40":[4,0,1,1,19,52],
+"group__SceSysconKernel.html#ga74b11bfee0b45aefe0c8349016d6844d":[1,6,3,0,59]
 };

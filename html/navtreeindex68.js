@@ -1,7 +1,5 @@
 var NAVTREEINDEX68 =
 {
-"group__SceSysconKernel.html#ga709e091a8a156e457907af9606c84d40":[4,0,1,1,19,52],
-"group__SceSysconKernel.html#ga74b11bfee0b45aefe0c8349016d6844d":[1,6,3,0,59],
 "group__SceSysconKernel.html#ga74b11bfee0b45aefe0c8349016d6844d":[4,0,1,1,19,37],
 "group__SceSysconKernel.html#ga773bb2bdf4ca319e993f9001ee189379":[1,6,3,0,51],
 "group__SceSysconKernel.html#ga773bb2bdf4ca319e993f9001ee189379":[4,0,1,1,19,29],
@@ -65,8 +63,8 @@ var NAVTREEINDEX68 =
 "group__SceSysconKernel.html#gaef0ddcbf2f42313ac8b539d3e146d7d6":[4,0,1,1,19,18],
 "group__SceSysconKernel.html#gaf351268a07d18e97f4adf47117b95904":[4,0,1,1,19,33],
 "group__SceSysconKernel.html#gaf351268a07d18e97f4adf47117b95904":[1,6,3,0,55],
-"group__SceSysconKernel.html#gafdb54697a7a3ce55822991fdf559affa":[1,6,3,0,72],
 "group__SceSysconKernel.html#gafdb54697a7a3ce55822991fdf559affa":[4,0,1,1,19,50],
+"group__SceSysconKernel.html#gafdb54697a7a3ce55822991fdf559affa":[1,6,3,0,72],
 "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea1ea724f49978a243449a5e5268cc7457":[1,6,3,0,13,15],
 "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea1ea724f49978a243449a5e5268cc7457":[4,0,1,1,19,13,15],
 "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea1ea724f49978a243449a5e5268cc7457":[1,6,3,0,34],
@@ -157,8 +155,8 @@ var NAVTREEINDEX68 =
 "group__SceSysmemKernel.html#ga220a655e812b83b1dca9326a5f423c2a":[1,7,9,1,83],
 "group__SceSysmemKernel.html#ga22b8be05c0ffea7560d04bc8c7c6365f":[4,0,1,1,2,15,27],
 "group__SceSysmemKernel.html#ga22b8be05c0ffea7560d04bc8c7c6365f":[1,7,9,1,55],
-"group__SceSysmemKernel.html#ga284c39f31d257b38912fa299979f2424":[4,0,1,1,2,15,48],
 "group__SceSysmemKernel.html#ga284c39f31d257b38912fa299979f2424":[1,7,9,1,76],
+"group__SceSysmemKernel.html#ga284c39f31d257b38912fa299979f2424":[4,0,1,1,2,15,48],
 "group__SceSysmemKernel.html#ga2b673592a631dcca87499f2e1cf450e4":[1,7,9,1,66],
 "group__SceSysmemKernel.html#ga2b673592a631dcca87499f2e1cf450e4":[4,0,1,1,2,15,38],
 "group__SceSysmemKernel.html#ga31ac66ef8604284f9fd7c2dd717e6360":[1,7,9,1,63],
@@ -219,8 +217,8 @@ var NAVTREEINDEX68 =
 "group__SceSysmemKernel.html#gabd46dfc50fdb3778ff8e74bba2a2d3f9":[1,7,9,1,46],
 "group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5":[1,7,9,1,2],
 "group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5":[4,0,1,1,2,15,2],
-"group__SceSysmemKernel.html#gac45b79af14718bc342b116b9149289c8":[1,7,9,1,73],
 "group__SceSysmemKernel.html#gac45b79af14718bc342b116b9149289c8":[4,0,1,1,2,15,45],
+"group__SceSysmemKernel.html#gac45b79af14718bc342b116b9149289c8":[1,7,9,1,73],
 "group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32":[1,7,9,1,48],
 "group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32":[4,0,1,1,2,15,20],
 "group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8":[4,0,1,1,2,15,21],
@@ -249,5 +247,7 @@ var NAVTREEINDEX68 =
 "group__SceSysmemKernel.html#gaf1abeee4acaead7ee3ceb9838f303411":[4,0,1,1,2,15,54],
 "group__SceSysmemKernel.html#gafa6166dafb22e592a629a6ffc7e451ee":[4,0,1,1,2,15,52],
 "group__SceSysmemKernel.html#gafa6166dafb22e592a629a6ffc7e451ee":[1,7,9,1,80],
-"group__SceSysmemKernel.html#gafba2b363434bce815c1627756f6ea8e8":[1,7,9,1,43]
+"group__SceSysmemKernel.html#gafba2b363434bce815c1627756f6ea8e8":[1,7,9,1,43],
+"group__SceSysmemKernel.html#gafba2b363434bce815c1627756f6ea8e8":[4,0,1,1,2,15,15],
+"group__SceSysmemKernel.html#gafc5e8f154583d4dc794f091a44019bc1":[4,0,1,1,2,15,1]
 };

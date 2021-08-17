@@ -96,14 +96,12 @@ var NAVTREEINDEX60 =
 "group__SceProcessmgrKernel.html#gaf13c87d065bae35665bc4a5906871adc":[4,0,1,1,2,10,6],
 "group__SceProcessmgrKernel.html#gaf13c87d065bae35665bc4a5906871adc":[1,7,7,1,6],
 "group__SceProcessmgrUser.html":[1,7,7,0],
-"group__SceProcessmgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b":[4,0,1,0,1,6,10],
-"group__SceProcessmgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b":[1,7,7,0,20],
 "group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f":[1,7,7,0,2],
 "group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f":[4,0,1,0,1,6,2],
 "group__SceProcessmgrUser.html#ga2255f042fe267ddd8b38eee5fa578e33":[4,0,1,0,1,6,4],
 "group__SceProcessmgrUser.html#ga2255f042fe267ddd8b38eee5fa578e33":[1,7,7,0,14],
-"group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed":[1,7,7,0,19],
 "group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed":[4,0,1,0,1,6,9],
+"group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed":[1,7,7,0,19],
 "group__SceProcessmgrUser.html#ga2cd2b3124993e2b420003f7d9d6dc5a8":[4,0,1,0,1,6,5],
 "group__SceProcessmgrUser.html#ga2cd2b3124993e2b420003f7d9d6dc5a8":[1,7,7,0,15],
 "group__SceProcessmgrUser.html#ga30e79a41f091de99f1c307269f8d4f8a":[4,0,1,0,1,6,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX60 =
 "group__ScePspnetAdhocUser.html#gga3859b1638e29292f04188efe36619e46ab580cc019f9edcec1efd9566bc70bd7f":[4,0,1,0,47,5,7],
 "group__ScePspnetAdhocUser.html#gga3859b1638e29292f04188efe36619e46ab580cc019f9edcec1efd9566bc70bd7f":[1,10,5,0,5,7],
 "group__ScePspnetAdhocUser.html#gga3859b1638e29292f04188efe36619e46ab580cc019f9edcec1efd9566bc70bd7f":[1,10,5,0,44],
-"group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1a13faec3c9908c27bdf492ad9a64d5f99":[1,10,5,0,7,4]
+"group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1a13faec3c9908c27bdf492ad9a64d5f99":[1,10,5,0,7,4],
+"group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1a13faec3c9908c27bdf492ad9a64d5f99":[1,10,5,0,55],
+"group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1a13faec3c9908c27bdf492ad9a64d5f99":[4,0,1,0,47,7,4]
 };

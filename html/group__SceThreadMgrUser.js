@@ -128,6 +128,7 @@ var group__SceThreadMgrUser =
     [ "sceKernelChangeCurrentThreadAttr", "group__SceThreadMgrUser.html#gaf951d0cf8f791972e4b467e16042364c", null ],
     [ "sceKernelChangeThreadPriority", "group__SceThreadMgrUser.html#ga9495237d122769ed5ea5c6f2c6285e43", null ],
     [ "sceKernelGetThreadId", "group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7", null ],
+    [ "sceKernelGetProcessId", "group__SceThreadMgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b", null ],
     [ "sceKernelGetThreadCurrentPriority", "group__SceThreadMgrUser.html#ga5e010f92f8ea412645ee00124dab3d89", null ],
     [ "sceKernelGetThreadExitStatus", "group__SceThreadMgrUser.html#gaec2fd886c38bcabd121bf37b52a88a11", null ],
     [ "sceKernelCheckThreadStack", "group__SceThreadMgrUser.html#ga58fa38bffbe03d73b6a33a9df6623757", null ],
