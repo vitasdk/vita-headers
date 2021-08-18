@@ -554,9 +554,17 @@ typedef struct SceAppMgrCoredumpState {
  */
 int _sceAppMgrGetCoredumpStateForShell(SceAppMgrCoredumpState *state);
 
+// missing structs
+typedef struct SceAppMgrDrmOpenParam SceAppMgrDrmOpenParam;
+typedef struct SceAppMgrAppInfo SceAppMgrAppInfo;
+
+SceInt32 __sceAppMgrGetAppState(SceAppMgrAppState *state, SceSize state_size, SceUInt32 build_version);
+SceInt32 _sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *param);
+SceInt32 _sceAppMgrGetAppInfo(SceAppMgrAppInfo *info, SceSize info_size, SceUInt32 build_version);
+SceInt32 _sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *system_event);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_APPMGR_H_ */
-
