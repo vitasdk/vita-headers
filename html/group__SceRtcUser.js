@@ -93,5 +93,22 @@ var group__SceRtcUser =
     [ "sceRtcFormatRFC3339", "group__SceRtcUser.html#ga5e2ca980f623457e528df79347a397de", null ],
     [ "sceRtcFormatRFC3339LocalTime", "group__SceRtcUser.html#ga68539e004ae223db0679e1ce8259b724", null ],
     [ "sceRtcParseDateTime", "group__SceRtcUser.html#ga850861a03ad9c181ede534fa97523b80", null ],
-    [ "sceRtcParseRFC3339", "group__SceRtcUser.html#ga6588d010c53e978a7aa75a3fb891a684", null ]
+    [ "sceRtcParseRFC3339", "group__SceRtcUser.html#ga6588d010c53e978a7aa75a3fb891a684", null ],
+    [ "_sceRtcConvertLocalTimeToUtc", "group__SceRtcUser.html#gac45b5ade940749d5ce44694a43c576cc", null ],
+    [ "_sceRtcConvertUtcToLocalTime", "group__SceRtcUser.html#ga0b561b3a449b6c87c7bed75638920d51", null ],
+    [ "_sceRtcFormatRFC2822", "group__SceRtcUser.html#ga463f7479f7fa11f948cc3045055eeba8", null ],
+    [ "_sceRtcFormatRFC2822LocalTime", "group__SceRtcUser.html#gaff34e7aa8b6d7b35eca2d83d041fc631", null ],
+    [ "_sceRtcFormatRFC3339", "group__SceRtcUser.html#ga088be11951ca9b41632e05c0632a0cba", null ],
+    [ "_sceRtcFormatRFC3339LocalTime", "group__SceRtcUser.html#ga7848f16dadf8eca571c352a2be7bc58b", null ],
+    [ "_sceRtcGetCurrentAdNetworkTick", "group__SceRtcUser.html#ga583705403266fb395f89c7fdad6a7253", null ],
+    [ "_sceRtcGetCurrentClock", "group__SceRtcUser.html#ga534d239a8784ef9cfd42c4532856ce8e", null ],
+    [ "_sceRtcGetCurrentClockLocalTime", "group__SceRtcUser.html#gab47235ebdf7682b090bc729928a60652", null ],
+    [ "_sceRtcGetCurrentDebugNetworkTick", "group__SceRtcUser.html#gad08de479f206af90402c5cd1e123f028", null ],
+    [ "_sceRtcGetCurrentGpsTick", "group__SceRtcUser.html#ga7d2054fd2b8649029c6ef2651cbb56b3", null ],
+    [ "_sceRtcGetCurrentNetworkTick", "group__SceRtcUser.html#gaa5524d522227d341c5b586e17e63259a", null ],
+    [ "_sceRtcGetCurrentRetainedNetworkTick", "group__SceRtcUser.html#ga4cda7b3245b94c6a49e95958dbb4ad38", null ],
+    [ "_sceRtcGetCurrentTick", "group__SceRtcUser.html#ga77852e804582a4938d1b51938cc7b184", null ],
+    [ "_sceRtcGetLastAdjustedTick", "group__SceRtcUser.html#gab3459427e78a60233c2190f3298d014d", null ],
+    [ "_sceRtcGetLastReincarnatedTick", "group__SceRtcUser.html#ga97a1a504ef4312c1cd42c53021dec7cb", null ],
+    [ "sceRtcGetAccumulativeTime", "group__SceRtcUser.html#gabeaa931f5ca66305892a92d0f2f30d85", null ]
 ];

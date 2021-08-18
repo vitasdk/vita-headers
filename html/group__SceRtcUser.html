@@ -169,6 +169,46 @@ Functions</h2></td></tr>
 <tr class="separator:ga850861a03ad9c181ede534fa97523b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6588d010c53e978a7aa75a3fb891a684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga6588d010c53e978a7aa75a3fb891a684">sceRtcParseRFC3339</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc, const char *pszDateTime)</td></tr>
 <tr class="separator:ga6588d010c53e978a7aa75a3fb891a684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac45b5ade940749d5ce44694a43c576cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gac45b5ade940749d5ce44694a43c576cc">_sceRtcConvertLocalTimeToUtc</a> (const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *localtime, <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc)</td></tr>
+<tr class="memdesc:gac45b5ade940749d5ce44694a43c576cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert localtime to UTC.  <a href="group__SceRtcUser.html#gac45b5ade940749d5ce44694a43c576cc">More...</a><br /></td></tr>
+<tr class="separator:gac45b5ade940749d5ce44694a43c576cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b561b3a449b6c87c7bed75638920d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga0b561b3a449b6c87c7bed75638920d51">_sceRtcConvertUtcToLocalTime</a> (const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc, <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *localtime)</td></tr>
+<tr class="memdesc:ga0b561b3a449b6c87c7bed75638920d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert UTC to localtime.  <a href="group__SceRtcUser.html#ga0b561b3a449b6c87c7bed75638920d51">More...</a><br /></td></tr>
+<tr class="separator:ga0b561b3a449b6c87c7bed75638920d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga463f7479f7fa11f948cc3045055eeba8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga463f7479f7fa11f948cc3045055eeba8">_sceRtcFormatRFC2822</a> (char *datetime, const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc, int offset)</td></tr>
+<tr class="memdesc:ga463f7479f7fa11f948cc3045055eeba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert RFC2822 time string from UTC.  <a href="group__SceRtcUser.html#ga463f7479f7fa11f948cc3045055eeba8">More...</a><br /></td></tr>
+<tr class="separator:ga463f7479f7fa11f948cc3045055eeba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff34e7aa8b6d7b35eca2d83d041fc631"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gaff34e7aa8b6d7b35eca2d83d041fc631">_sceRtcFormatRFC2822LocalTime</a> (char *datetime, const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc)</td></tr>
+<tr class="memdesc:gaff34e7aa8b6d7b35eca2d83d041fc631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert RFC2822 time string from UTC with localtime.  <a href="group__SceRtcUser.html#gaff34e7aa8b6d7b35eca2d83d041fc631">More...</a><br /></td></tr>
+<tr class="separator:gaff34e7aa8b6d7b35eca2d83d041fc631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga088be11951ca9b41632e05c0632a0cba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga088be11951ca9b41632e05c0632a0cba">_sceRtcFormatRFC3339</a> (char *datetime, const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc, int offset)</td></tr>
+<tr class="memdesc:ga088be11951ca9b41632e05c0632a0cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert RFC3339 time string from UTC.  <a href="group__SceRtcUser.html#ga088be11951ca9b41632e05c0632a0cba">More...</a><br /></td></tr>
+<tr class="separator:ga088be11951ca9b41632e05c0632a0cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7848f16dadf8eca571c352a2be7bc58b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga7848f16dadf8eca571c352a2be7bc58b">_sceRtcFormatRFC3339LocalTime</a> (char *datetime, const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc)</td></tr>
+<tr class="memdesc:ga7848f16dadf8eca571c352a2be7bc58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert RFC3339 time string from UTC with localtime.  <a href="group__SceRtcUser.html#ga7848f16dadf8eca571c352a2be7bc58b">More...</a><br /></td></tr>
+<tr class="separator:ga7848f16dadf8eca571c352a2be7bc58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga583705403266fb395f89c7fdad6a7253"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga583705403266fb395f89c7fdad6a7253">_sceRtcGetCurrentAdNetworkTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:ga583705403266fb395f89c7fdad6a7253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga534d239a8784ef9cfd42c4532856ce8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga534d239a8784ef9cfd42c4532856ce8e">_sceRtcGetCurrentClock</a> (<a class="el" href="group__SceTypesUser.html#structSceDateTime">SceDateTime</a> *<a class="el" href="group__SceKernelDebugKernel.html#gae9c48e1047c871aefb9faa2f6d89fd3a">time</a>, int time_zone)</td></tr>
+<tr class="separator:ga534d239a8784ef9cfd42c4532856ce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab47235ebdf7682b090bc729928a60652"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gab47235ebdf7682b090bc729928a60652">_sceRtcGetCurrentClockLocalTime</a> (<a class="el" href="group__SceTypesUser.html#structSceDateTime">SceDateTime</a> *<a class="el" href="group__SceKernelDebugKernel.html#gae9c48e1047c871aefb9faa2f6d89fd3a">time</a>)</td></tr>
+<tr class="separator:gab47235ebdf7682b090bc729928a60652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad08de479f206af90402c5cd1e123f028"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gad08de479f206af90402c5cd1e123f028">_sceRtcGetCurrentDebugNetworkTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:gad08de479f206af90402c5cd1e123f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d2054fd2b8649029c6ef2651cbb56b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga7d2054fd2b8649029c6ef2651cbb56b3">_sceRtcGetCurrentGpsTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:ga7d2054fd2b8649029c6ef2651cbb56b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5524d522227d341c5b586e17e63259a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gaa5524d522227d341c5b586e17e63259a">_sceRtcGetCurrentNetworkTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:gaa5524d522227d341c5b586e17e63259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cda7b3245b94c6a49e95958dbb4ad38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga4cda7b3245b94c6a49e95958dbb4ad38">_sceRtcGetCurrentRetainedNetworkTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:ga4cda7b3245b94c6a49e95958dbb4ad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77852e804582a4938d1b51938cc7b184"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga77852e804582a4938d1b51938cc7b184">_sceRtcGetCurrentTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:ga77852e804582a4938d1b51938cc7b184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3459427e78a60233c2190f3298d014d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gab3459427e78a60233c2190f3298d014d">_sceRtcGetLastAdjustedTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:gab3459427e78a60233c2190f3298d014d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97a1a504ef4312c1cd42c53021dec7cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga97a1a504ef4312c1cd42c53021dec7cb">_sceRtcGetLastReincarnatedTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
+<tr class="separator:ga97a1a504ef4312c1cd42c53021dec7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabeaa931f5ca66305892a92d0f2f30d85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gabeaa931f5ca66305892a92d0f2f30d85">sceRtcGetAccumulativeTime</a> (void)</td></tr>
+<tr class="separator:gabeaa931f5ca66305892a92d0f2f30d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -1673,6 +1713,456 @@ tick</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac45b5ade940749d5ce44694a43c576cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac45b5ade940749d5ce44694a43c576cc">&#9670;&nbsp;</a></span>_sceRtcConvertLocalTimeToUtc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcConvertLocalTimeToUtc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>localtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert localtime to UTC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">localtime</td><td>- The localtime buffer pointer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">utc</td><td>- The UTC buffer pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga0b561b3a449b6c87c7bed75638920d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b561b3a449b6c87c7bed75638920d51">&#9670;&nbsp;</a></span>_sceRtcConvertUtcToLocalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcConvertUtcToLocalTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>localtime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert UTC to localtime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">utc</td><td>- The UTC buffer pointer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">localtime</td><td>- The localtime buffer pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga463f7479f7fa11f948cc3045055eeba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga463f7479f7fa11f948cc3045055eeba8">&#9670;&nbsp;</a></span>_sceRtcFormatRFC2822()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcFormatRFC2822 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>datetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert RFC2822 time string from UTC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">datetime</td><td>- The datetime string buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">utc</td><td>- The UTC time tick pointer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>- A timezone offset. this value have to minute value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaff34e7aa8b6d7b35eca2d83d041fc631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff34e7aa8b6d7b35eca2d83d041fc631">&#9670;&nbsp;</a></span>_sceRtcFormatRFC2822LocalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcFormatRFC2822LocalTime </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>datetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert RFC2822 time string from UTC with localtime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">datetime</td><td>- The datetime string buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">utc</td><td>- The UTC time tick pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga088be11951ca9b41632e05c0632a0cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga088be11951ca9b41632e05c0632a0cba">&#9670;&nbsp;</a></span>_sceRtcFormatRFC3339()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcFormatRFC3339 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>datetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert RFC3339 time string from UTC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">datetime</td><td>- The datetime string buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">utc</td><td>- The UTC time tick pointer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>- A timezone offset. this value have to minute value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga7848f16dadf8eca571c352a2be7bc58b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7848f16dadf8eca571c352a2be7bc58b">&#9670;&nbsp;</a></span>_sceRtcFormatRFC3339LocalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcFormatRFC3339LocalTime </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>datetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert RFC3339 time string from UTC with localtime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">datetime</td><td>- The datetime string buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">utc</td><td>- The UTC time tick pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga583705403266fb395f89c7fdad6a7253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga583705403266fb395f89c7fdad6a7253">&#9670;&nbsp;</a></span>_sceRtcGetCurrentAdNetworkTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentAdNetworkTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga534d239a8784ef9cfd42c4532856ce8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga534d239a8784ef9cfd42c4532856ce8e">&#9670;&nbsp;</a></span>_sceRtcGetCurrentClock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentClock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#structSceDateTime">SceDateTime</a> *&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time_zone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab47235ebdf7682b090bc729928a60652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab47235ebdf7682b090bc729928a60652">&#9670;&nbsp;</a></span>_sceRtcGetCurrentClockLocalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentClockLocalTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#structSceDateTime">SceDateTime</a> *&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad08de479f206af90402c5cd1e123f028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad08de479f206af90402c5cd1e123f028">&#9670;&nbsp;</a></span>_sceRtcGetCurrentDebugNetworkTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentDebugNetworkTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7d2054fd2b8649029c6ef2651cbb56b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d2054fd2b8649029c6ef2651cbb56b3">&#9670;&nbsp;</a></span>_sceRtcGetCurrentGpsTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentGpsTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa5524d522227d341c5b586e17e63259a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5524d522227d341c5b586e17e63259a">&#9670;&nbsp;</a></span>_sceRtcGetCurrentNetworkTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentNetworkTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4cda7b3245b94c6a49e95958dbb4ad38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cda7b3245b94c6a49e95958dbb4ad38">&#9670;&nbsp;</a></span>_sceRtcGetCurrentRetainedNetworkTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentRetainedNetworkTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga77852e804582a4938d1b51938cc7b184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77852e804582a4938d1b51938cc7b184">&#9670;&nbsp;</a></span>_sceRtcGetCurrentTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetCurrentTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab3459427e78a60233c2190f3298d014d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3459427e78a60233c2190f3298d014d">&#9670;&nbsp;</a></span>_sceRtcGetLastAdjustedTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetLastAdjustedTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97a1a504ef4312c1cd42c53021dec7cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97a1a504ef4312c1cd42c53021dec7cb">&#9670;&nbsp;</a></span>_sceRtcGetLastReincarnatedTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceRtcGetLastReincarnatedTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabeaa931f5ca66305892a92d0f2f30d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabeaa931f5ca66305892a92d0f2f30d85">&#9670;&nbsp;</a></span>sceRtcGetAccumulativeTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a> sceRtcGetAccumulativeTime </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
