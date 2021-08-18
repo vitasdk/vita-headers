@@ -40,6 +40,7 @@ var types_8h =
     [ "SceOff", "group__SceTypesUser.html#gac20a0c334ac3c41e9a7b295e31f6b111", null ],
     [ "SceUID", "group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663", null ],
     [ "ScePID", "group__SceTypesUser.html#ga198945239e12673127404eae56f28a91", null ],
+    [ "SceNID", "group__SceTypesUser.html#gab4e62685e441b2443bd40f3dd9acd454", null ],
     [ "SceName", "group__SceTypesUser.html#ga024ba7ccff867a062790a9d0d3d4effe", null ],
     [ "SCE_FALSE", "group__SceTypesUser.html#ggabc5c98fcc1211af2b80116dd6e0a035da905def7c2528ee21e546716ec3ea247b", null ],
     [ "SCE_TRUE", "group__SceTypesUser.html#ggabc5c98fcc1211af2b80116dd6e0a035da8b45ff35248ec8024afcb466484107c0", null ]

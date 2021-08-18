@@ -7,6 +7,10 @@ var kernel_2modulemgr_8h =
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrUser.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrUser.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_CANCEL", "group__SceModulemgrUser.html#gae09ae07a8901f7f75ed837e3bca6e968", null ],
+    [ "SceKernelFwInfo", "group__SceModulemgrUser.html#ga10d23e88723f3b2776f3e928dd4f348d", null ],
+    [ "SceKernelLoadModuleOption", "group__SceModulemgrUser.html#ga97a18d16512f8913758e8aef9b03b3bc", null ],
+    [ "SceKernelUnloadModuleOption", "group__SceModulemgrUser.html#gab843a891d5b2a006460df77c14ee0106", null ],
+    [ "SceKernelLibraryInfo", "group__SceModulemgrUser.html#ga93d8258487e3ef56274b53d220a35edc", null ],
     [ "SceKernelModuleState", "group__SceModulemgrUser.html#gaa5e9568f90e268bfc335c3dbfb46edd0", [
       [ "SCE_KERNEL_MODULE_STATE_READY", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a7a5d0ae7190799f7f847c2b5e0c33cad", null ],
       [ "SCE_KERNEL_MODULE_STATE_STARTED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a9c8e9bfacd82627ae1015cbf004e5926", null ],
@@ -27,13 +31,24 @@ var kernel_2modulemgr_8h =
       [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF", "group__SceModulemgrUser.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3dabfb1160f83af68e46c1b9b7268cd0890", null ],
       [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF", "group__SceModulemgrUser.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da16133dc47733579d2bb86f1a115f4744", null ]
     ] ],
-    [ "sceKernelGetModuleList", "group__SceModulemgrUser.html#gaadcde67f9524b57b3f139f7330512bc7", null ],
-    [ "sceKernelGetModuleInfo", "group__SceModulemgrUser.html#gada83819dbe99a2262a3ac06f005d5409", null ],
+    [ "sceKernelGetModuleInfo", "group__SceModulemgrUser.html#ga4075668baf86b13bb20defae4c6bdcb4", null ],
+    [ "sceKernelGetModuleList", "group__SceModulemgrUser.html#ga91ed9f5c71e57ad0ab9f797cb5024dc4", null ],
     [ "sceKernelLoadModule", "group__SceModulemgrUser.html#ga7777a48e07030061c3b5da63697d27b2", null ],
     [ "sceKernelUnloadModule", "group__SceModulemgrUser.html#ga96ceeccd16211371944eb4daa9295645", null ],
     [ "sceKernelStartModule", "group__SceModulemgrUser.html#ga5f357531104e9e8ab3653634d10ef996", null ],
     [ "sceKernelStopModule", "group__SceModulemgrUser.html#ga84e0bd32e41c8072c50697fe2da67afe", null ],
     [ "sceKernelLoadStartModule", "group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327", null ],
     [ "sceKernelStopUnloadModule", "group__SceModulemgrUser.html#gab5207a83a1b1a9a1cb0ffda46cd088f6", null ],
-    [ "sceKernelGetSystemSwVersion", "group__SceModulemgrUser.html#ga31a1b23ed8dbee2a197bcaaea296c327", null ]
+    [ "sceKernelGetSystemSwVersion", "group__SceModulemgrUser.html#ga7d9b7b96a111c3f62a3878468f417c19", null ],
+    [ "_sceKernelLoadModule", "group__SceModulemgrUser.html#ga6cf51a9e3ea0542659d2cd9b30ec7c02", null ],
+    [ "_sceKernelLoadStartModule", "group__SceModulemgrUser.html#gaf84c5e69e9c7faf8b09f40a0d72c7374", null ],
+    [ "_sceKernelUnloadModule", "group__SceModulemgrUser.html#ga828ed0efe0e14127cef1c4f224025d66", null ],
+    [ "_sceKernelStopModule", "group__SceModulemgrUser.html#ga77c983e6bc8c3e5aade19cb35b8e2ef0", null ],
+    [ "_sceKernelStopUnloadModule", "group__SceModulemgrUser.html#ga5e17d70e6a9d69178904f965d2563c35", null ],
+    [ "_sceKernelOpenModule", "group__SceModulemgrUser.html#ga7e077a6fec149f69ada69ab4b2b3df82", null ],
+    [ "_sceKernelCloseModule", "group__SceModulemgrUser.html#ga1f00dd919e4fffa9886ed56246728b44", null ],
+    [ "sceKernelGetLibraryInfoByNID", "group__SceModulemgrUser.html#ga6d577c676901faf794ed58ff30f8653f", null ],
+    [ "sceKernelIsCalledFromSysModule", "group__SceModulemgrUser.html#gaa4024c08068b04c9532df0e05e926d54", null ],
+    [ "sceKernelGetModuleIdByAddr", "group__SceModulemgrUser.html#ga5644c788f510843d370e26aff8e4ac37", null ],
+    [ "sceKernelGetAllowedSdkVersionOnSystem", "group__SceModulemgrUser.html#ga4ee7eb221c7acd4805f77c7d6ec28682", null ]
 ];
