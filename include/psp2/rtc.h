@@ -239,6 +239,80 @@ static inline int sceRtcSetMicrosecond(SceDateTime *time, int microsecond){
 #define sceRtcConvertTickToDateTime(_ptick, _pdatetime)         sceRtcSetTick(_pdatetime, _ptick)
 #define sceRtcConvertDateTimeToTick(_pdatetime, _ptick)         sceRtcGetTick(_pdatetime, _ptick)
 
+/**
+ * Convert localtime to UTC
+ *
+ * @param[in]  localtime - The localtime buffer pointer
+ * @param[out] utc       - The UTC buffer pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceRtcConvertLocalTimeToUtc(const SceRtcTick *localtime, SceRtcTick *utc);
+
+/**
+ * Convert UTC to localtime
+ *
+ * @param[in]  utc       - The UTC buffer pointer
+ * @param[out] localtime - The localtime buffer pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceRtcConvertUtcToLocalTime(const SceRtcTick *utc, SceRtcTick *localtime);
+
+/**
+ * Convert RFC2822 time string from UTC
+ *
+ * @param[out] datetime - The datetime string buffer
+ * @param[in]  utc      - The UTC time tick pointer
+ * @param[in]  offset   - A timezone offset. this value have to minute value
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceRtcFormatRFC2822(char *datetime, const SceRtcTick *utc, int offset);
+
+/**
+ * Convert RFC2822 time string from UTC with localtime
+ *
+ * @param[out] datetime - The datetime string buffer
+ * @param[in]  utc      - The UTC time tick pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceRtcFormatRFC2822LocalTime(char *datetime, const SceRtcTick *utc);
+
+/**
+ * Convert RFC3339 time string from UTC
+ *
+ * @param[out] datetime - The datetime string buffer
+ * @param[in]  utc      - The UTC time tick pointer
+ * @param[in]  offset   - A timezone offset. this value have to minute value
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceRtcFormatRFC3339(char *datetime, const SceRtcTick *utc, int offset);
+
+/**
+ * Convert RFC3339 time string from UTC with localtime
+ *
+ * @param[out] datetime - The datetime string buffer
+ * @param[in]  utc      - The UTC time tick pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceRtcFormatRFC3339LocalTime(char *datetime, const SceRtcTick *utc);
+
+int _sceRtcGetCurrentAdNetworkTick(SceRtcTick *tick);
+int _sceRtcGetCurrentClock(SceDateTime *time, int time_zone);
+int _sceRtcGetCurrentClockLocalTime(SceDateTime *time);
+int _sceRtcGetCurrentDebugNetworkTick(SceRtcTick *tick);
+int _sceRtcGetCurrentGpsTick(SceRtcTick *tick);
+int _sceRtcGetCurrentNetworkTick(SceRtcTick *tick);
+int _sceRtcGetCurrentRetainedNetworkTick(SceRtcTick *tick);
+int _sceRtcGetCurrentTick(SceRtcTick *tick);
+int _sceRtcGetLastAdjustedTick(SceRtcTick *tick);
+int _sceRtcGetLastReincarnatedTick(SceRtcTick *tick);
+SceULong64 sceRtcGetAccumulativeTime(void);
+
 #ifdef __cplusplus
 }
 #endif
