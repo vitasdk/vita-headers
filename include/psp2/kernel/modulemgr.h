@@ -98,8 +98,8 @@ typedef struct SceKernelULMOption {
 	SceSize size;
 } SceKernelULMOption;
 
-int sceKernelGetModuleList(int flags, SceUID *modids, SceSize *num);
-int sceKernelGetModuleInfo(SceUID modid, SceKernelModuleInfo *info);
+int sceKernelGetModuleInfo(SceUID uid, SceKernelModuleInfo *info);
+int sceKernelGetModuleList(SceUInt8 type, SceUID *uids, SceSize *num);
 
 SceUID sceKernelLoadModule(const char *path, int flags, SceKernelLMOption *option);
 int sceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
@@ -110,21 +110,44 @@ int sceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, void 
 SceUID sceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
 int sceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
 
-typedef struct SceKernelFwInfo {
+typedef struct SceKernelSystemSwVersion {
 	SceSize size;
 	char versionString[0x1C];
 	SceUInt version;
 	SceUInt unk_24;
-} SceKernelFwInfo;
+} SceKernelSystemSwVersion;
+
+/* For backward compatibility */
+typedef SceKernelSystemSwVersion SceKernelFwInfo;
 
 /**
  * Gets system firmware information.
  *
- * @param[out] data - firmware information.
+ * @param[out] version - System sw version.
  *
  * @note - If you spoofed the firmware version it will return the spoofed firmware.
  */
-int sceKernelGetSystemSwVersion(SceKernelFwInfo *data);
+int sceKernelGetSystemSwVersion(SceKernelSystemSwVersion *version);
+
+// missing structs
+typedef struct SceKernelLoadModuleOption SceKernelLoadModuleOption;
+typedef struct SceKernelUnloadModuleOption SceKernelUnloadModuleOption;
+typedef struct SceKernelLibraryInfo SceKernelLibraryInfo;
+
+SceUID _sceKernelLoadModule(const char *module_filename, SceUInt32 flags, const SceKernelLoadModuleOption *option);
+SceUID _sceKernelLoadStartModule(const char *module_filename, SceSize args, const void *argp, SceUInt32 flags);
+int _sceKernelUnloadModule(SceUID uid, SceUInt32 flags, const SceKernelUnloadModuleOption *option);
+int _sceKernelStopModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
+int _sceKernelStopUnloadModule(SceUID uid, SceSize args, const void *argp, SceUInt32 flags);
+
+SceUID _sceKernelOpenModule(const char *module_filename, SceSize args, const void *argp, SceUInt32 flags);
+SceUID _sceKernelCloseModule(SceUID modid, SceSize args, const void *argp, SceUInt32 flags);
+
+int sceKernelGetLibraryInfoByNID(SceUID modid, SceNID libnid, SceKernelLibraryInfo *info);
+
+int sceKernelIsCalledFromSysModule(void *lr);
+SceUID sceKernelGetModuleIdByAddr(void *addr);
+SceUInt32 sceKernelGetAllowedSdkVersionOnSystem(void);
 
 #ifdef __cplusplus
 }

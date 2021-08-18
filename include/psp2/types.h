@@ -178,6 +178,8 @@ typedef int SceUID; //!< UIDs are used to describe many different kernel objects
 typedef int ScePID;                  //!< Process ID
 #define SCE_KERNEL_PROCESS_ID_SELF 0 //!< Current running process ID is always 0
 
+typedef unsigned int SceNID;
+
 typedef char* SceName;     //!< Names are used to describe object names
 #define SCE_UID_NAMELEN 31 //!< Maximum length for kernel object names
 
