@@ -628,6 +628,13 @@ int sceCameraSetAutoControlHold(int devnum, int mode);
 
 int sceCameraGetDeviceLocation(int devnum, SceFVector3 *pLocation);
 
+int sceCameraGetImageQuality(int devnum, int* pLevel);
+int sceCameraSetImageQuality(int devnum, int level);
+int sceCameraGetNoiseReduction(int devnum, int* pLevel);
+int sceCameraSetNoiseReduction(int devnum, int level);
+int sceCameraGetSharpnessOff(int devnum, int* pLevel);
+int sceCameraSetSharpnessOff(int devnum, int level);
+
 #ifdef __cplusplus
 }
 #endif
