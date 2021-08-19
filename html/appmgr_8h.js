@@ -3,6 +3,8 @@ var appmgr_8h =
     [ "SCE_APPMGR_MAX_APP_NAME_LENGTH", "group__SceAppMgrUser.html#gafc66fcb411ff80b645d319e641aab567", null ],
     [ "SceAppMgrExecOptParam", "group__SceAppMgrUser.html#ga41f90974b5666c0fa0d8a1293272d20d", null ],
     [ "SceAppMgrLaunchAppOptParam", "group__SceAppMgrUser.html#ga1c8cdc41fad97b5377f58df1ff9b7f28", null ],
+    [ "SceAppMgrDrmOpenParam", "group__SceAppMgrUser.html#ga69b9a8909a8f7f805efa91fdc4bfd69c", null ],
+    [ "SceAppMgrAppInfo", "group__SceAppMgrUser.html#ga1e8074eb71e4ea2a06fdbe73191407c2", null ],
     [ "SceAppMgrErrorCode", "group__SceAppMgrUser.html#ga771df8407677ccb8145733c989f0903d", [
       [ "SCE_APPMGR_ERROR_BUSY", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903da806b6249641eed6e3b99fe9a9036c983", null ],
       [ "SCE_APPMGR_ERROR_STATE", "group__SceAppMgrUser.html#gga771df8407677ccb8145733c989f0903dafc6444441584cd3bb221c6dbd58b353d", null ],
@@ -74,5 +76,9 @@ var appmgr_8h =
     [ "_sceAppMgrGetRawPath", "group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1", null ],
     [ "_sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53", null ],
     [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ],
-    [ "_sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#ga6f604761a40085666f9b396b33c09b0f", null ]
+    [ "_sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#ga6f604761a40085666f9b396b33c09b0f", null ],
+    [ "__sceAppMgrGetAppState", "group__SceAppMgrUser.html#gaecb239cc221ef43a9e771baf38245f50", null ],
+    [ "_sceAppMgrDrmOpen", "group__SceAppMgrUser.html#gaef8b581ca168c189d64fb7eba941cc01", null ],
+    [ "_sceAppMgrGetAppInfo", "group__SceAppMgrUser.html#gadb27bd0b60791ffab66662e215135251", null ],
+    [ "_sceAppMgrReceiveSystemEvent", "group__SceAppMgrUser.html#gaa75ab0309c48fbde7a0ce50ef24c22d2", null ]
 ];
