@@ -238,6 +238,8 @@ var annotated_dup =
     [ "SceKernelThreadRunStatus", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus", "group__SceThreadMgrUser_structSceKernelThreadRunStatus" ],
     [ "SceKernelThreadRunStatus.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo", "group__SceThreadMgrUser_structSceKernelThreadRunStatus_8cpuInfo" ],
     [ "SceKernelThreadRunStatus.cpuInfo", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo", "group__SceThreadMgrUser_structSceKernelThreadRunStatus_8cpuInfo" ],
+    [ "SceKernelTimeval", "group__SceProcessmgrUser.html#structSceKernelTimeval", "group__SceProcessmgrUser_structSceKernelTimeval" ],
+    [ "SceKernelTimezone", "group__SceProcessmgrUser.html#structSceKernelTimezone", "group__SceProcessmgrUser_structSceKernelTimezone" ],
     [ "SceKernelULMOption", "group__SceModulemgrUser.html#structSceKernelULMOption", "group__SceModulemgrUser_structSceKernelULMOption" ],
     [ "SceLibraryEntryTable", "group__SceLoadcoreUser.html#structSceLibraryEntryTable", "group__SceLoadcoreUser_structSceLibraryEntryTable" ],
     [ "SceLocationHeadingInfo", "group__SceLocationUser.html#structSceLocationHeadingInfo", "group__SceLocationUser_structSceLocationHeadingInfo" ],
