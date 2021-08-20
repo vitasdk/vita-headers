@@ -312,5 +312,11 @@ var group__SceCameraUser =
     [ "sceCameraSetExposureCeiling", "group__SceCameraUser.html#ga93e59b6f8466480658afbd1058c8c155", null ],
     [ "sceCameraGetAutoControlHold", "group__SceCameraUser.html#ga3eb27f29e6ea41ac4ca77f1f3ecc415b", null ],
     [ "sceCameraSetAutoControlHold", "group__SceCameraUser.html#gafb123a6b5adef3c6d7d3206f0919c112", null ],
-    [ "sceCameraGetDeviceLocation", "group__SceCameraUser.html#ga3491a774a22ca3c11cef3f41ceb0c435", null ]
+    [ "sceCameraGetDeviceLocation", "group__SceCameraUser.html#ga3491a774a22ca3c11cef3f41ceb0c435", null ],
+    [ "sceCameraGetImageQuality", "group__SceCameraUser.html#gad3bde5e00163e38e9dd1898c7f9fccb0", null ],
+    [ "sceCameraSetImageQuality", "group__SceCameraUser.html#gac99cf5c501e6f31248afc1961d0a266d", null ],
+    [ "sceCameraGetNoiseReduction", "group__SceCameraUser.html#gaa07e66ad8f042b9d7ac2404cb20d9b75", null ],
+    [ "sceCameraSetNoiseReduction", "group__SceCameraUser.html#gaedf77440586af8bbaef83ef736bfe371", null ],
+    [ "sceCameraGetSharpnessOff", "group__SceCameraUser.html#ga82ac11b05b01d18d76d5496132449fd4", null ],
+    [ "sceCameraSetSharpnessOff", "group__SceCameraUser.html#ga7bfc0fd9b1c57ac0b9b39618948faa58", null ]
 ];
