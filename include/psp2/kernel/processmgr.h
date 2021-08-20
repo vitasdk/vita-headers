@@ -14,6 +14,9 @@
 extern "C" {
 #endif
 
+typedef SceUInt64 SceKernelClock;
+typedef SceUInt32 SceKernelTime;
+
 typedef enum SceKernelProcessPrioritySystem {
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_HIGH     = 32,
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_DEFAULT  = 96,
@@ -95,6 +98,29 @@ SceUInt32 sceKernelGetProcessTimeLow(void);
  * @return process time of the current process
  */
 SceUInt64 sceKernelGetProcessTimeWide(void);
+
+SceUID sceKernelGetCurrentProcess(void);
+SceInt32 sceKernelGetRemoteProcessTime(SceUID processId, SceKernelSysClock *pClock);
+int _sceKernelExitProcessForUser(SceInt32 stat);
+
+SceUID sceKernelGetStderr(void);
+SceUID sceKernelGetStdin(void);
+SceUID sceKernelGetStdout(void);
+
+const void * sceKernelGetProcessParam(void);
+
+SceKernelClock sceKernelLibcClock(void);
+SceKernelTime sceKernelLibcTime(SceKernelTime *tloc);
+
+typedef struct SceKernelTimeval {
+	SceUInt64 value;
+} SceKernelTimeval;
+
+typedef struct SceKernelTimezone {
+	SceUInt64 value;
+} SceKernelTimezone;
+
+int sceKernelLibcGettimeofday(SceKernelTimeval *tv, SceKernelTimezone *tz);
 
 #ifdef __cplusplus
 }
