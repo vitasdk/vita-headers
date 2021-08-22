@@ -4,5 +4,6 @@ var group__debug =
     [ "Kernel Debug Util", "group__SceKernelDebug.html", "group__SceKernelDebug" ],
     [ "GPU and CPU Capture", "group__SceRazorCapture.html", "group__SceRazorCapture" ],
     [ "GPU and CPU Live Debugging", "group__SceRazorHud.html", "group__SceRazorHud" ],
+    [ "Performance mgr", "group__ScePamgr.html", "group__ScePamgr" ],
     [ "SceDeci4p debugger for userp", "group__SceDeci4pUserp.html", "group__SceDeci4pUserp" ]
 ];
