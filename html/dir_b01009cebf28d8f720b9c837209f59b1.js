@@ -39,6 +39,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "location.h", "location_8h.html", "location_8h" ],
     [ "message_dialog.h", "message__dialog_8h.html", "message__dialog_8h" ],
     [ "motion.h", "motion_8h.html", "motion_8h" ],
+    [ "motion_dev.h", "motion__dev_8h.html", "motion__dev_8h" ],
     [ "mtpif.h", "mtpif_8h.html", "mtpif_8h" ],
     [ "musicexport.h", "musicexport_8h.html", "musicexport_8h" ],
     [ "netcheck_dialog.h", "netcheck__dialog_8h.html", "netcheck__dialog_8h" ],

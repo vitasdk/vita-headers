@@ -164,8 +164,8 @@ var menudata={children:[
 {text:"w",url:"globals_vars.html#index_w"}]},
 {text:"Typedefs",url:"globals_type.html",children:[
 {text:"a",url:"globals_type.html#index_a"},
-{text:"s",url:"globals_type.html#index_s"},
-{text:"t",url:"globals_type.html#index_t"}]},
+{text:"s",url:"globals_type_s.html#index_s"},
+{text:"t",url:"globals_type_t.html#index_t"}]},
 {text:"Enumerations",url:"globals_enum.html",children:[
 {text:"s",url:"globals_enum.html#index_s"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[
