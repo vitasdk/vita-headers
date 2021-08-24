@@ -156,6 +156,32 @@ int sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, int
  */
 int sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
+// missing structs
+typedef struct SceJpegSplitDecodeCtrl SceJpegSplitDecodeCtrl;
+typedef struct SceJpegMJpegInitParam SceJpegMJpegInitParam;
+
+int _sceJpegCreateSplitDecoder(SceJpegSplitDecodeCtrl *ctrl);
+int _sceJpegCsc(void *rgba, const unsigned char *ycbcr, int xysize, int frame_width);
+int _sceJpegDecodeMJpeg(const unsigned char *jpeg, SceSize jpeg_size, void *rgba, SceSize rgba_size);
+int _sceJpegDecodeMJpegYCbCr(const unsigned char *jpeg, SceSize jpeg_size, unsigned char *ycbcr, SceSize ycbcr_size);
+int _sceJpegDeleteSplitDecoder(SceJpegSplitDecodeCtrl *ctrl);
+int _sceJpegEncoderCsc(SceJpegEncoderContext context, void *ycbcr, const void *rgba, int frame_width);
+int _sceJpegEncoderEncode(SceJpegEncoderContext context, const void *ycbcr);
+int _sceJpegEncoderEnd(SceJpegEncoderContext context);
+int _sceJpegEncoderGetContextSize(void);
+int _sceJpegEncoderInit(SceJpegEncoderContext context, int frame_width, int frame_height, int pixel_format);
+int _sceJpegEncoderInitWithParam(SceJpegEncoderContext context, const SceJpegEncoderInitParam *param);
+int _sceJpegEncoderSetCompressionRatio(SceJpegEncoderContext context, int compratio);
+int _sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
+int _sceJpegEncoderSetOutputAddr(SceJpegEncoderContext context, void *jpeg, SceSize jpeg_size);
+int _sceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int frame_width, int frame_height);
+int _sceJpegFinishMJpeg(void);
+int _sceJpegGetOutputInfo(const unsigned char *jpeg, SceSize jpeg_size, int output_format, int decode_mode);
+int _sceJpegInitMJpeg(int max_split_decoder);
+int _sceJpegInitMJpegWithParam(const SceJpegMJpegInitParam *param);
+int _sceJpegMJpegCsc(void *rgba, const unsigned char *ycbcr, int xysize, int frame_width);
+int _sceJpegSplitDecodeMJpeg(SceJpegSplitDecodeCtrl *ctrl);
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
