@@ -41,6 +41,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "mtpif.h", "mtpif_8h.html", "mtpif_8h" ],
     [ "musicexport.h", "musicexport_8h.html", "musicexport_8h" ],
     [ "netcheck_dialog.h", "netcheck__dialog_8h.html", "netcheck__dialog_8h" ],
+    [ "ngs_internal.h", "ngs__internal_8h.html", "ngs__internal_8h" ],
     [ "notificationutil.h", "notificationutil_8h.html", "notificationutil_8h" ],
     [ "npdrm.h", "npdrm_8h.html", "npdrm_8h" ],
     [ "npdrmpackage.h", "npdrmpackage_8h.html", "npdrmpackage_8h" ],

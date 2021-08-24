@@ -5,5 +5,6 @@ var group__Audio =
     [ "Audio Decoding Library", "group__SceAudiodec.html", "group__SceAudiodec" ],
     [ "Audio Encoding Library", "group__SceAudioenc.html", "group__SceAudioenc" ],
     [ "Audio In Library", "group__SceAudioIn.html", "group__SceAudioIn" ],
+    [ "Audio sound effect", "group__SceNgs.html", "group__SceNgs" ],
     [ "Shutter Sounds Library", "group__SceShutterSound.html", "group__SceShutterSound" ]
 ];
