@@ -22,6 +22,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "display.h", "display_8h.html", "display_8h" ],
     [ "dmac5.h", "dmac5_8h.html", "dmac5_8h" ],
     [ "fiber.h", "fiber_8h.html", "fiber_8h" ],
+    [ "gps.h", "gps_8h.html", "gps_8h" ],
     [ "gxm.h", "gxm_8h.html", "gxm_8h" ],
     [ "gxt.h", "gxt_8h.html", "gxt_8h" ],
     [ "hid.h", "hid_8h.html", "hid_8h" ],

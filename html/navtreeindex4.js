@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"group__SceAudiodecUser.html#ga8a4dbf1f327b49b385e2836ecb79245d":[4,0,1,0,7,22],
+"group__SceAudiodecUser.html#ga8a4dbf1f327b49b385e2836ecb79245d":[1,2,2,0,22],
 "group__SceAudiodecUser.html#ga8cb433921212b190e3832098e874d507":[4,0,1,0,7,44],
 "group__SceAudiodecUser.html#ga8cb433921212b190e3832098e874d507":[1,2,2,0,87],
 "group__SceAudiodecUser.html#gaa1cf4f1c09bfc9210f8b6306c7dbe62e":[4,0,1,0,7,16],
@@ -204,8 +206,8 @@ var NAVTREEINDEX4 =
 "group__SceAudioencUser.html#gaf7cf2b85d40c07455fc4b1aa5c559238":[4,0,1,0,8,8],
 "group__SceAudioencUser.html#gaf7cf2b85d40c07455fc4b1aa5c559238":[1,2,3,0,8],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a271aacda0dec74fa2f79707435e6de18":[4,0,1,0,8,7,13],
-"group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a271aacda0dec74fa2f79707435e6de18":[1,2,3,0,7,13],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a271aacda0dec74fa2f79707435e6de18":[1,2,3,0,23],
+"group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a271aacda0dec74fa2f79707435e6de18":[1,2,3,0,7,13],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a28dce82489423341bd1a06c5d88170d6":[4,0,1,0,8,7,6],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a28dce82489423341bd1a06c5d88170d6":[1,2,3,0,7,6],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5a28dce82489423341bd1a06c5d88170d6":[1,2,3,0,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5aed21bf1b747f960400bf7e7fc26d3fc1":[1,2,3,0,12],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5aed250464060d5e732a1adfa27f94e39a":[4,0,1,0,8,7,5],
 "group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5aed250464060d5e732a1adfa27f94e39a":[1,2,3,0,7,5],
-"group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5aed250464060d5e732a1adfa27f94e39a":[1,2,3,0,15],
-"group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5afd343653df71a6cb477191bbcf46d935":[4,0,1,0,8,7,0],
-"group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5afd343653df71a6cb477191bbcf46d935":[1,2,3,0,7,0]
+"group__SceAudioencUser.html#gga49904416b8043a7518d7fb2f528f61e5aed250464060d5e732a1adfa27f94e39a":[1,2,3,0,15]
 };
