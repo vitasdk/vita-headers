@@ -112,13 +112,13 @@ int sceIoCloseAsync(SceUID fd);
  * bytes_read = sceIoRead(fd, data, 100);
  * @endcode
  *
- * @param fd - Opened file descriptor to read from
- * @param data - Pointer to the buffer where the read data will be placed
- * @param size - Size of the read in bytes
+ * @param fd    - Opened file descriptor to read from
+ * @param buf   - Pointer to the buffer where the read data will be placed
+ * @param nbyte - Size of the read in bytes
  *
  * @return The number of bytes read
  */
-int sceIoRead(SceUID fd, void *data, SceSize size);
+SceSSize sceIoRead(SceUID fd, void *buf, SceSize nbyte);
 
 /**
  * Read input (asynchronous)
@@ -161,13 +161,13 @@ int sceIoPread(SceUID fd, void *data, SceSize size, SceOff offset);
  * bytes_written = sceIoWrite(fd, data, 100);
  * @endcode
  *
- * @param fd - Opened file descriptor to write to
- * @param data - Pointer to the data to write
- * @param size - Size of data to write
+ * @param fd    - Opened file descriptor to write to
+ * @param buf   - Pointer to the data to write
+ * @param nbyte - Size of data to write
  *
  * @return The number of bytes written
  */
-int sceIoWrite(SceUID fd, const void *data, SceSize size);
+SceSSize sceIoWrite(SceUID fd, const void *buf, SceSize nbyte);
 
 /**
  * Write output (asynchronous)
@@ -238,7 +238,7 @@ int sceIoLseekAsync(SceUID fd, SceOff offset, int whence);
  *
  * @return The position in the file after the seek.
  */
-int sceIoLseek32(SceUID fd, int offset, int whence);
+long sceIoLseek32(SceUID fd, long offset, int whence);
 
 /**
  * Remove directory entry
@@ -268,11 +268,12 @@ int sceIoSync(const char *device, unsigned int unk);
 /**
  * Synchronize the file data for one file
  *
- * @param fd - Opened file descriptor to sync
+ * @param fd   - Opened file descriptor to sync
+ * @param flag - unknown
  *
  * @return < 0 on error.
  */
-int sceIoSyncByFd(SceUID fd);
+int sceIoSyncByFd(SceUID fd, int flag);
 
 /**
   * Cancel an asynchronous operation on a file descriptor.
@@ -282,6 +283,21 @@ int sceIoSyncByFd(SceUID fd);
   * @return < 0 on error.
   */
 int sceIoCancel(SceUID fd);
+
+int sceIoGetPriority(SceUID fd);
+int sceIoGetProcessDefaultPriority(void);
+int sceIoGetThreadDefaultPriority(void);
+int sceIoSetPriority(SceUID fd, int priority);
+int sceIoSetProcessDefaultPriority(int priority);
+int sceIoSetThreadDefaultPriority(int priority);
+
+SceOff _sceIoLseek(SceUID fd, SceOff offset, int whence);
+SceSSize _sceIoPread(SceUID fd, void *buf, SceSize nbyte, SceOff offset);
+SceSSize _sceIoPwrite(SceUID fd, const void *buf, SceSize nbyte, SceOff offset);
+SceUID _sceIoOpen(const char *filename, int flag, SceIoMode mode);
+int _sceIoSync(const char *devname, int flag);
+int _sceIoRemove(const char *filename);
+int _sceIoRename(const char *oldname, const char *newname);
 
 #ifdef __cplusplus
 }

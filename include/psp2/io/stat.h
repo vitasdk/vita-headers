@@ -8,6 +8,7 @@
 #define _PSP2_IO_STAT_H_
 
 #include <psp2/types.h>
+#include <psp2/io/fcntl.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -137,6 +138,13 @@ int sceIoChstat(const char *file, SceIoStat *stat, int bits);
   * @return < 0 on error.
   */
 int sceIoChstatByFd(SceUID fd, const SceIoStat *buf, unsigned int cbit);
+
+int _sceIoMkdir(const char *dirname, SceIoMode mode);
+int _sceIoRmdir(const char *dirname);
+int _sceIoChstat(const char *name, const SceIoStat *buf, unsigned int cbit);
+int _sceIoChstatByFd(SceUID fd, const SceIoStat *buf, unsigned int cbit);
+int _sceIoGetstat(const char *name, SceIoStat *buf);
+int _sceIoGetstatByFd(SceUID fd, SceIoStat *buf);
 
 #ifdef __cplusplus
 }
