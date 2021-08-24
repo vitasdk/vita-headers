@@ -108,6 +108,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga97db4dbfd789bc92aa7e1eb7ffefed39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39">sceIoChstatByFd</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *buf, unsigned int cbit)</td></tr>
 <tr class="memdesc:ga97db4dbfd789bc92aa7e1eb7ffefed39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the status of a file descriptor.  <a href="group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39">More...</a><br /></td></tr>
 <tr class="separator:ga97db4dbfd789bc92aa7e1eb7ffefed39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5012b12f5ed36b6b87ee47b97dd544d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga5012b12f5ed36b6b87ee47b97dd544d5">_sceIoMkdir</a> (const char *dirname, <a class="el" href="group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a> mode)</td></tr>
+<tr class="separator:ga5012b12f5ed36b6b87ee47b97dd544d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3f6e8bbb507da431bc710fadd651423"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#gae3f6e8bbb507da431bc710fadd651423">_sceIoRmdir</a> (const char *dirname)</td></tr>
+<tr class="separator:gae3f6e8bbb507da431bc710fadd651423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2477c5e877a81c8a04c7425e5c6a07a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#gad2477c5e877a81c8a04c7425e5c6a07a">_sceIoChstat</a> (const char *name, const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *buf, unsigned int cbit)</td></tr>
+<tr class="separator:gad2477c5e877a81c8a04c7425e5c6a07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d5261369d7aeb850d7f08aa077e040d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga0d5261369d7aeb850d7f08aa077e040d">_sceIoChstatByFd</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *buf, unsigned int cbit)</td></tr>
+<tr class="separator:ga0d5261369d7aeb850d7f08aa077e040d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4eb9dc248b89a4340177a1ab40369e1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#ga4eb9dc248b89a4340177a1ab40369e1f">_sceIoGetstat</a> (const char *name, <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *buf)</td></tr>
+<tr class="separator:ga4eb9dc248b89a4340177a1ab40369e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec9cff41a12fd4a9714c0d052be19ee0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceStatUser.html#gaec9cff41a12fd4a9714c0d052be19ee0">_sceIoGetstatByFd</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *buf)</td></tr>
+<tr class="separator:gaec9cff41a12fd4a9714c0d052be19ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -747,6 +759,176 @@ Device-specific data. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga5012b12f5ed36b6b87ee47b97dd544d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5012b12f5ed36b6b87ee47b97dd544d5">&#9670;&nbsp;</a></span>_sceIoMkdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceIoMkdir </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dirname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFcntlUser.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae3f6e8bbb507da431bc710fadd651423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3f6e8bbb507da431bc710fadd651423">&#9670;&nbsp;</a></span>_sceIoRmdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceIoRmdir </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dirname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad2477c5e877a81c8a04c7425e5c6a07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2477c5e877a81c8a04c7425e5c6a07a">&#9670;&nbsp;</a></span>_sceIoChstat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceIoChstat </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>cbit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0d5261369d7aeb850d7f08aa077e040d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d5261369d7aeb850d7f08aa077e040d">&#9670;&nbsp;</a></span>_sceIoChstatByFd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceIoChstatByFd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>cbit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4eb9dc248b89a4340177a1ab40369e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4eb9dc248b89a4340177a1ab40369e1f">&#9670;&nbsp;</a></span>_sceIoGetstat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceIoGetstat </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaec9cff41a12fd4a9714c0d052be19ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec9cff41a12fd4a9714c0d052be19ee0">&#9670;&nbsp;</a></span>_sceIoGetstatByFd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceIoGetstatByFd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
