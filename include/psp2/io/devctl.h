@@ -65,6 +65,9 @@ int sceIoIoctl(SceUID fd, unsigned int cmd, void *indata, int inlen, void *outda
   */
 int sceIoIoctlAsync(SceUID fd, unsigned int cmd, void *indata, int inlen, void *outdata, int outlen);
 
+int _sceIoDevctl(const char *devname, int cmd, const void *arg, SceSize arglen);
+int _sceIoIoctl(SceUID fd, int cmd, const void *argp, SceSize arglen);
+
 #ifdef __cplusplus
 }
 #endif

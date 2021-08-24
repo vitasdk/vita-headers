@@ -58,6 +58,9 @@ int sceIoDread(SceUID fd, SceIoDirent *dir);
   */
 int sceIoDclose(SceUID fd);
 
+SceUID _sceIoDopen(const char *dirname);
+int _sceIoDread(SceUID fd, SceIoDirent *buf);
+
 #ifdef __cplusplus
 }
 #endif
