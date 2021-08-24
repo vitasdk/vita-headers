@@ -6,5 +6,6 @@ var group__Input =
     [ "Location Library", "group__SceLocation.html", "group__SceLocation" ],
     [ "The gps library", "group__SceGps.html", "group__SceGps" ],
     [ "Motion Library", "group__SceMotion.html", "group__SceMotion" ],
+    [ "MotionDev Library", "group__SceMotionDev.html", "group__SceMotionDev" ],
     [ "Hid Library", "group__SceHid.html", "group__SceHid" ]
 ];
