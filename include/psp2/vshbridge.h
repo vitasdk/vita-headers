@@ -32,6 +32,16 @@ int _vshSblAimgrGetSMI(SceUInt32 *info);
 int _vshSblAimgrGetConsoleId(char CID[32]);
 
 /**
+ * @brief Check if a module is loaded.
+ *
+ * @param[in] module_name - The module's name
+ * @param[in] buffer - Set a buffer with a size of 8 bytes
+ *
+ * @return 0 on success, < 0 on error.
+ */
+Sce UID _vshKernelSearchModuleByName(const char *module_name, const void *buffer)
+
+/**
  * @param[in] id - mount id
  * @param[in] path - mount path
  * @param[in] permission - 1/RO 2/RW
