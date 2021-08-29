@@ -39,7 +39,7 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
  *
  * @return the SceUID of the module on success, < 0 on error.
  */
-Sce UID _vshKernelSearchModuleByName(const char *module_name, const void *buffer)
+SceUID _vshKernelSearchModuleByName(const char *module_name, const void *buffer)
 
 /**
  * @param[in] id - mount id
