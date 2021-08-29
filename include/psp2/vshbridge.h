@@ -37,7 +37,7 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
  * @param[in] module_name - The module's name
  * @param[in] buffer - Set a buffer with a size of 8 bytes
  *
- * @return 0 on success, < 0 on error.
+ * @return the SceUID of the module on success, < 0 on error.
  */
 Sce UID _vshKernelSearchModuleByName(const char *module_name, const void *buffer)
 
