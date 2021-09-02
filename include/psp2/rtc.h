@@ -265,20 +265,22 @@ int _sceRtcConvertUtcToLocalTime(const SceRtcTick *utc, SceRtcTick *localtime);
  * @param[out] datetime - The datetime string buffer
  * @param[in]  utc      - The UTC time tick pointer
  * @param[in]  offset   - A timezone offset. this value have to minute value
+ * @param[in]  a4       - The Syscall validity buffer
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceRtcFormatRFC2822(char *datetime, const SceRtcTick *utc, int offset);
+int _sceRtcFormatRFC2822(char *datetime, const SceRtcTick *utc, int offset, SceUInt64 *a4);
 
 /**
  * Convert RFC2822 time string from UTC with localtime
  *
  * @param[out] datetime - The datetime string buffer
  * @param[in]  utc      - The UTC time tick pointer
+ * @param[in]  a3       - The Syscall validity buffer
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceRtcFormatRFC2822LocalTime(char *datetime, const SceRtcTick *utc);
+int _sceRtcFormatRFC2822LocalTime(char *datetime, const SceRtcTick *utc, SceUInt64 *a3);
 
 /**
  * Convert RFC3339 time string from UTC
@@ -286,20 +288,22 @@ int _sceRtcFormatRFC2822LocalTime(char *datetime, const SceRtcTick *utc);
  * @param[out] datetime - The datetime string buffer
  * @param[in]  utc      - The UTC time tick pointer
  * @param[in]  offset   - A timezone offset. this value have to minute value
+ * @param[in]  a4       - The Syscall validity buffer
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceRtcFormatRFC3339(char *datetime, const SceRtcTick *utc, int offset);
+int _sceRtcFormatRFC3339(char *datetime, const SceRtcTick *utc, int offset, SceUInt64 *a4);
 
 /**
  * Convert RFC3339 time string from UTC with localtime
  *
  * @param[out] datetime - The datetime string buffer
  * @param[in]  utc      - The UTC time tick pointer
+ * @param[in]  a3       - The Syscall validity buffer
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceRtcFormatRFC3339LocalTime(char *datetime, const SceRtcTick *utc);
+int _sceRtcFormatRFC3339LocalTime(char *datetime, const SceRtcTick *utc, SceUInt64 *a3);
 
 int _sceRtcGetCurrentAdNetworkTick(SceRtcTick *tick);
 int _sceRtcGetCurrentClock(SceDateTime *time, int time_zone);
