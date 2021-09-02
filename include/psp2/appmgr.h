@@ -559,8 +559,18 @@ typedef struct SceAppMgrDrmOpenParam SceAppMgrDrmOpenParam;
 typedef struct SceAppMgrAppInfo SceAppMgrAppInfo;
 
 SceInt32 __sceAppMgrGetAppState(SceAppMgrAppState *state, SceSize state_size, SceUInt32 build_version);
-SceInt32 _sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *param);
-SceInt32 _sceAppMgrGetAppInfo(SceAppMgrAppInfo *info, SceSize info_size, SceUInt32 build_version);
+SceInt32 _sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *param, SceSize *syscall_validity);
+
+/**
+ * Get AppInfo via syscall directly
+ *
+ * @param[in]  unk              - unknown; maybe titleid
+ * @param[out] state            - The app state output buffer pointer
+ * @param[in]  syscall_validity - The syscall validity buffer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+SceInt32 _sceAppMgrGetAppInfo(const char *unk, SceAppMgrAppState *state, SceUInt64 *syscall_validity);
 SceInt32 _sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *system_event);
 
 #ifdef __cplusplus
