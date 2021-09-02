@@ -24,7 +24,7 @@ int _sceGpsClose(void);
 int _sceGpsGetData(SceGpsPositionData *pos, SceGpsSatelliteData *sat);
 int _sceGpsGetDeviceInfo(SceGpsDeviceInfo *dev_info);
 int _sceGpsGetState(SceGpsStatus *state);
-int _sceGpsIoctl(SceUInt32 ioctl_command, SceVoid *arg, SceSize arg_size);
+int _sceGpsIoctl(SceUInt32 ioctl_command, SceVoid *arg, SceSize arg_size, SceSize *a4);
 int _sceGpsIsDevice(void);
 int _sceGpsOpen(SceUID cbid);
 int _sceGpsResumeCallback(void);
