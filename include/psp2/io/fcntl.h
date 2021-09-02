@@ -291,13 +291,34 @@ int sceIoSetPriority(SceUID fd, int priority);
 int sceIoSetProcessDefaultPriority(int priority);
 int sceIoSetThreadDefaultPriority(int priority);
 
-SceOff _sceIoLseek(SceUID fd, SceOff offset, int whence);
-SceSSize _sceIoPread(SceUID fd, void *buf, SceSize nbyte, SceOff offset);
-SceSSize _sceIoPwrite(SceUID fd, const void *buf, SceSize nbyte, SceOff offset);
-SceUID _sceIoOpen(const char *filename, int flag, SceIoMode mode);
-int _sceIoSync(const char *devname, int flag);
-int _sceIoRemove(const char *filename);
-int _sceIoRename(const char *oldname, const char *newname);
+typedef struct SceIoLseekSyscallArgs {
+	SceOff offset;
+	int whence;
+	int padding;
+} SceIoLseekSyscallArgs;
+
+SceOff _sceIoLseek(SceUID fd, SceIoLseekSyscallArgs *args);
+
+typedef struct SceIoPreadSyscallArgs {
+	void *buf;
+	SceSize nbyte;
+	SceOff offset;
+} SceIoPreadSyscallArgs;
+
+SceSSize _sceIoPread(SceUID fd, SceIoPreadSyscallArgs *args);
+
+typedef struct SceIoPwriteSyscallArgs {
+	const void *buf;
+	SceSize nbyte;
+	SceOff offset;
+} SceIoPwriteSyscallArgs;
+
+SceSSize _sceIoPwrite(SceUID fd, SceIoPwriteSyscallArgs *args);
+
+SceUID _sceIoOpen(const char *filename, int flag, SceIoMode mode, SceUInt64 *syscall_validity);
+int _sceIoSync(const char *devname, int flag, SceUInt64 *syscall_validity);
+int _sceIoRemove(const char *filename, SceUInt64 *syscall_validity);
+int _sceIoRename(const char *oldname, const char *newname, void *syscall_validity);
 
 #ifdef __cplusplus
 }
