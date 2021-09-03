@@ -1,7 +1,6 @@
 var jpegenc_8h =
 [
     [ "SceJpegEncoderContext", "group__SceJpegEncUser.html#ga882d171ac9cb67d91643f8ff525adb77", null ],
-    [ "SceJpegSplitDecodeCtrl", "group__SceJpegEncUser.html#ga53ec53463887a22e9cb2a3932001ccb1", null ],
     [ "SceJpegEncErrorCode", "group__SceJpegEncUser.html#ga88a0f6c00904fcf39aec813841e8776b", [
       [ "SCE_JPEGENC_ERROR_IMAGE_SIZE", "group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba5bc3424ba5d51d68f8c323df110c83be", null ],
       [ "SCE_JPEGENC_ERROR_INSUFFICIENT_BUFFER", "group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba8245f6703b5bd61ebeeff95f0c495344", null ],
@@ -47,26 +46,5 @@ var jpegenc_8h =
     [ "sceJpegEncoderCsc", "group__SceJpegEncUser.html#ga3e8f25732bd2af7dc21d2c88e32b260f", null ],
     [ "sceJpegEncoderGetContextSize", "group__SceJpegEncUser.html#ga61998ab72318fcc4d806d3ca6476a5e0", null ],
     [ "sceJpegEncoderSetValidRegion", "group__SceJpegEncUser.html#gae995a98b8f55400e55e255f20287a43e", null ],
-    [ "sceJpegEncoderSetHeaderMode", "group__SceJpegEncUser.html#gaa7503f04dac7ffc95fe72c77801c1331", null ],
-    [ "_sceJpegCreateSplitDecoder", "group__SceJpegEncUser.html#gad21ccadda624674f6cedaca088d0d7d7", null ],
-    [ "_sceJpegCsc", "group__SceJpegEncUser.html#gaa2db4efd134d0e14af0d9233e9e3e35b", null ],
-    [ "_sceJpegDecodeMJpeg", "group__SceJpegEncUser.html#gaae1669387b249ad2e8d44506f1c331c2", null ],
-    [ "_sceJpegDecodeMJpegYCbCr", "group__SceJpegEncUser.html#ga257c59a7021420fb184351aeb0ff4a9c", null ],
-    [ "_sceJpegDeleteSplitDecoder", "group__SceJpegEncUser.html#gaf3d8f2e61f4c025bd01f175a0f7524ca", null ],
-    [ "_sceJpegEncoderCsc", "group__SceJpegEncUser.html#ga7eb7ab0a9a78316805b97b8f162057fb", null ],
-    [ "_sceJpegEncoderEncode", "group__SceJpegEncUser.html#ga32fbf89607a408d2e4d747194ee674dc", null ],
-    [ "_sceJpegEncoderEnd", "group__SceJpegEncUser.html#ga4c60e520e370832be5f5f0f11460e629", null ],
-    [ "_sceJpegEncoderGetContextSize", "group__SceJpegEncUser.html#ga7eb10a6c023549488284f61dd28bd01a", null ],
-    [ "_sceJpegEncoderInit", "group__SceJpegEncUser.html#gae7ae09bbd8668089b363bcc33061f50c", null ],
-    [ "_sceJpegEncoderInitWithParam", "group__SceJpegEncUser.html#gaeaf453c948610701d5930a97e432b4c5", null ],
-    [ "_sceJpegEncoderSetCompressionRatio", "group__SceJpegEncUser.html#ga51a9294a448e76b1f368c0fec570c9a8", null ],
-    [ "_sceJpegEncoderSetHeaderMode", "group__SceJpegEncUser.html#gaaac7748e8f29573e0a2394b76e93a35f", null ],
-    [ "_sceJpegEncoderSetOutputAddr", "group__SceJpegEncUser.html#ga8ce410018cb0fdd1e657e475c5cfe5d0", null ],
-    [ "_sceJpegEncoderSetValidRegion", "group__SceJpegEncUser.html#ga45c82480ed7fa7a5e271df5b77bfac2b", null ],
-    [ "_sceJpegFinishMJpeg", "group__SceJpegEncUser.html#gab7e2c227e3ae66bf5ed63cc6c8a7ffc8", null ],
-    [ "_sceJpegGetOutputInfo", "group__SceJpegEncUser.html#gaf8ced125b30fd0d23e71365313f0d62b", null ],
-    [ "_sceJpegInitMJpeg", "group__SceJpegEncUser.html#ga2c9db4a149508f2d60fbeaf6ac50766d", null ],
-    [ "_sceJpegInitMJpegWithParam", "group__SceJpegEncUser.html#ga1861429162e259fea5b69f83a9080e1c", null ],
-    [ "_sceJpegMJpegCsc", "group__SceJpegEncUser.html#gaae423ce03d7db34ce5ca7e52c2a387fe", null ],
-    [ "_sceJpegSplitDecodeMJpeg", "group__SceJpegEncUser.html#ga7d4e02612affba6c3ef68f46d7db3db8", null ]
+    [ "sceJpegEncoderSetHeaderMode", "group__SceJpegEncUser.html#gaa7503f04dac7ffc95fe72c77801c1331", null ]
 ];
