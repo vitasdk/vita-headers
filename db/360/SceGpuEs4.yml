@@ -26,9 +26,11 @@ modules:
           PVRSRVPerProcessDataConnect: 0x1A53327D
           PVRSRVPerProcessDataDisconnect: 0xB4A2B60F
           PVRSRVSetInitServerState: 0xDCD78852
+          SGXGetInfoForSrvinitKM: 0x668B1A60
           ksceGpuGetRegisterDump: 0x14ECCFCD
           ksceGpuMmuMapMemory: 0xEF4B16D3
           ksceGpuMmuUnmapMemory: 0x9AAAD91C
+          ksceGpuSignalWaitLockup: 0x40E292D7
       SceGpuEs4ForUser:
         kernel: false
         nid: 0x6EC1443D
