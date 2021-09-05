@@ -88,14 +88,14 @@ typedef enum SceImeOption {
 	SCE_IME_OPTION_NO_ASSISTANCE           = 0x04
 } SceImeOption;
 
-typedef enum SceImeEvent {
+typedef enum SceImeEventType {
 	SCE_IME_EVENT_OPEN              = 0,
 	SCE_IME_EVENT_UPDATE_TEXT       = 1,
 	SCE_IME_EVENT_UPDATE_CARET      = 2,
 	SCE_IME_EVENT_CHANGE_SIZE       = 3,
 	SCE_IME_EVENT_PRESS_CLOSE       = 4,
 	SCE_IME_EVENT_PRESS_ENTER       = 5
-} SceImeEvent;
+} SceImeEventType;
 
 typedef struct SceImeRect {
 	SceUInt32 x;
