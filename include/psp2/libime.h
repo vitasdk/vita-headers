@@ -6,6 +6,7 @@
 #ifndef _PSP2_LIBIME_H
 #define _PSP2_LIBIME_H
 
+#include <string.h>
 #include <psp2/types.h>
 #include <psp2/defs.h>
 
