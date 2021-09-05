@@ -7,6 +7,7 @@
 #define _PSP2_LIBIME_H
 
 #include <psp2/types.h>
+#include <psp2/defs.h>
 
 #ifdef __cplusplus
 extern "C" {
