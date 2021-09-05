@@ -112,6 +112,13 @@ typedef struct SceImeEditText {
 	SceUInt32 editIndex;
 	SceInt32 editLengthChange;
 } SceImeEditText;
+	
+typedef union SceImeEventParam {
+	SceImeRect rect;
+	SceImeEditText text;
+	SceUInt32 caretIndex;
+	SceUChar8 reserved[40];
+} SceImeEventParam;
 
 typedef struct SceImeEvent {
 	SceUInt32 id;
@@ -130,13 +137,6 @@ typedef struct SceImePreeditGeometry {
 	SceUInt32 y;
 	SceUInt32 height;
 } SceImePreeditGeometry;
-
-typedef union SceImeEventParam {
-	SceImeRect rect;
-	SceImeEditText text;
-	SceUInt32 caretIndex;
-	SceUChar8 reserved[40];
-} SceImeEventParam;
 
 typedef SceInt32 (*SceImeTextFilter)(SceWChar16 *outText, SceUInt32 *outTextLength,
 										const SceWChar16 *srcText, SceUInt32 srcTextLength);
