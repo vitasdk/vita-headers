@@ -78,7 +78,7 @@ var appmgr_8h =
     [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ],
     [ "_sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#ga6f604761a40085666f9b396b33c09b0f", null ],
     [ "__sceAppMgrGetAppState", "group__SceAppMgrUser.html#gaecb239cc221ef43a9e771baf38245f50", null ],
-    [ "_sceAppMgrDrmOpen", "group__SceAppMgrUser.html#gaef8b581ca168c189d64fb7eba941cc01", null ],
-    [ "_sceAppMgrGetAppInfo", "group__SceAppMgrUser.html#gadb27bd0b60791ffab66662e215135251", null ],
+    [ "_sceAppMgrDrmOpen", "group__SceAppMgrUser.html#gacd81560a4e5b392712aa14d5dc94b126", null ],
+    [ "_sceAppMgrGetAppInfo", "group__SceAppMgrUser.html#ga4b58fb1097a53a1312f89ef11fbb4d31", null ],
     [ "_sceAppMgrReceiveSystemEvent", "group__SceAppMgrUser.html#gaa75ab0309c48fbde7a0ce50ef24c22d2", null ]
 ];
