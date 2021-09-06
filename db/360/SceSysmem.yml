@@ -171,14 +171,22 @@ modules:
         kernel: false
         nid: 0xAE004C0A
         functions:
+          sceDebugLedInvokeHandle0: 0x2B6EABAD
+          sceDebugLedInvokeHandle1: 0x0E6B9890
           sceKernelGetGPI: 0x14F582CF
           sceKernelSetGPO: 0x78E702D3
       SceDebugLedForDriver:
         kernel: true
         nid: 0x7BC05EAD
         functions:
+          ksceDebugLedInvokeHandle0: 0x2B6EABAD
+          ksceDebugLedInvokeHandle1: 0x0E6B9890
+          ksceDebugLedRegisterHandle0: 0x24173819
+          ksceDebugLedRegisterHandle1: 0xF62154E7
+          ksceKernelGetGPI: 0x14F582CF
           ksceKernelGetGPO: 0x3BB289F7
           ksceKernelSetGPI: 0x51C5325A
+          ksceKernelSetGPO: 0x78E702D3
           ksceKernelSetGPOMask: 0x098473B0
       SceDipsw:
         kernel: false
