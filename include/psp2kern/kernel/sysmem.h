@@ -130,7 +130,7 @@ typedef struct SceClass {
 	struct SceClass *uidclass;
 	unsigned int attributes;
 	unsigned short itemsize;
-	unsigned short unk1A;
+	unsigned short itemsize_aligned;
 	unsigned int unk1C;
 	SceClassCallback create_cb;
 	SceClassCallback destroy_cb;
