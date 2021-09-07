@@ -7,7 +7,7 @@ var group__SceSysmemKernel_structSceClass =
     [ "uidclass", "group__SceSysmemKernel.html#ga2d6fb317ae4cf9501853b5ec6417753d", null ],
     [ "attributes", "group__SceSysmemKernel.html#ga7226916d5ac287faea2d1aa35df40772", null ],
     [ "itemsize", "group__SceSysmemKernel.html#gad34a586cff7440345df2d0e3a20f6bec", null ],
-    [ "unk1A", "group__SceSysmemKernel.html#ga9e86f5f965cf473d7d1e25abe9a98772", null ],
+    [ "itemsize_aligned", "group__SceSysmemKernel.html#ga94eb7aec14dbfa4cba3cc1e33e05e237", null ],
     [ "unk1C", "group__SceSysmemKernel.html#ga7795c5f361367b68e516bbe051147148", null ],
     [ "create_cb", "group__SceSysmemKernel.html#ga7f0b057df6a468552e814bac935bdc73", null ],
     [ "destroy_cb", "group__SceSysmemKernel.html#gae6a63870cc76a7bdd96640ca3b9fa27b", null ],
