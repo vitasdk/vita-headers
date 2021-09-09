@@ -3,6 +3,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "kbl", "dir_c365722192b87e379a2994b0f320a544.html", "dir_c365722192b87e379a2994b0f320a544" ],
     [ "cpu.h", "ern_2kernel_2cpu_8h.html", "ern_2kernel_2cpu_8h" ],
     [ "debug.h", "debug_8h.html", "debug_8h" ],
+    [ "debugled.h", "debugled_8h.html", "debugled_8h" ],
     [ "dipsw.h", "dipsw_8h.html", "dipsw_8h" ],
     [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
     [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
