@@ -88,14 +88,14 @@ typedef enum SceImeOption {
 	SCE_IME_OPTION_NO_ASSISTANCE           = 0x04
 } SceImeOption;
 
-typedef enum SceImeEventType {
+typedef enum SceImeEvent {
 	SCE_IME_EVENT_OPEN              = 0,
 	SCE_IME_EVENT_UPDATE_TEXT       = 1,
 	SCE_IME_EVENT_UPDATE_CARET      = 2,
 	SCE_IME_EVENT_CHANGE_SIZE       = 3,
 	SCE_IME_EVENT_PRESS_CLOSE       = 4,
 	SCE_IME_EVENT_PRESS_ENTER       = 5
-} SceImeEventType;
+} SceImeEvent;
 
 typedef struct SceImeRect {
 	SceUInt32 x;
@@ -120,10 +120,10 @@ typedef union SceImeEventParam {
 	SceUChar8 reserved[40];
 } SceImeEventParam;
 
-typedef struct SceImeEvent {
+typedef struct SceImeEventData {
 	SceUInt32 id;
 	SceImeEventParam param;
-} SceImeEvent;
+} SceImeEventData;
 
 typedef struct SceImeCaret {
 	SceUInt32 x;
@@ -140,7 +140,7 @@ typedef struct SceImePreeditGeometry {
 
 typedef SceInt32 (*SceImeTextFilter)(SceWChar16 *outText, SceUInt32 *outTextLength,
 										const SceWChar16 *srcText, SceUInt32 srcTextLength);
-typedef void (*SceImeEventHandler)(void* arg, const SceImeEvent *e);
+typedef void (*SceImeEventHandler)(void* arg, const SceImeEventData *e);
 
 typedef struct SceImeParam {
 	SceUInt32 sdkVersion;
