@@ -9,56 +9,22 @@
 
 #include <psp2/common_dialog.h>
 #include <psp2/types.h>
+#include <psp2/libime.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef enum SceImeLanguage {
-	SCE_IME_LANGUAGE_DANISH              = 0x00000001ULL,
-	SCE_IME_LANGUAGE_GERMAN              = 0x00000002ULL,
-	SCE_IME_LANGUAGE_ENGLISH             = 0x00000004ULL,
-	SCE_IME_LANGUAGE_SPANISH             = 0x00000008ULL,
-	SCE_IME_LANGUAGE_FRENCH              = 0x00000010ULL,
-	SCE_IME_LANGUAGE_ITALIAN             = 0x00000020ULL,
-	SCE_IME_LANGUAGE_DUTCH               = 0x00000040ULL,
-	SCE_IME_LANGUAGE_NORWEGIAN           = 0x00000080ULL,
-	SCE_IME_LANGUAGE_POLISH              = 0x00000100ULL,
-	SCE_IME_LANGUAGE_PORTUGUESE          = 0x00000200ULL,
-	SCE_IME_LANGUAGE_RUSSIAN             = 0x00000400ULL,
-	SCE_IME_LANGUAGE_FINNISH             = 0x00000800ULL,
-	SCE_IME_LANGUAGE_SWEDISH             = 0x00001000ULL,
-	SCE_IME_LANGUAGE_JAPANESE            = 0x00002000ULL,
-	SCE_IME_LANGUAGE_KOREAN              = 0x00004000ULL,
-	SCE_IME_LANGUAGE_SIMPLIFIED_CHINESE  = 0x00008000ULL,
-	SCE_IME_LANGUAGE_TRADITIONAL_CHINESE = 0x00010000ULL,
-	SCE_IME_LANGUAGE_PORTUGUESE_BR       = 0x00020000ULL,
-	SCE_IME_LANGUAGE_ENGLISH_GB          = 0x00040000ULL,
-	SCE_IME_LANGUAGE_TURKISH             = 0x00080000ULL
-} SceImeLanguage;
-
 #define SCE_IME_DIALOG_MAX_TITLE_LENGTH    (128)
-#define SCE_IME_DIALOG_MAX_TEXT_LENGTH     (512)
+#define SCE_IME_DIALOG_MAX_TEXT_LENGTH     (2048)
 
-typedef enum SceImeType {
-	SCE_IME_TYPE_DEFAULT             = 0,
-	SCE_IME_TYPE_BASIC_LATIN         = 1,
-	SCE_IME_TYPE_NUMBER              = 2,
-	SCE_IME_TYPE_EXTENDED_NUMBER     = 3
-} SceImeType;
-
-typedef enum SceImeEnterLabel {
-	SCE_IME_ENTER_LABEL_DEFAULT = 0,
-	SCE_IME_ENTER_LABEL_SEND    = 1,
-	SCE_IME_ENTER_LABEL_SEARCH  = 2,
-	SCE_IME_ENTER_LABEL_GO      = 3
-} SceImeEnterLabel;
-
-typedef enum SceImeOption {
-	SCE_IME_OPTION_MULTILINE               = 0x01,
-	SCE_IME_OPTION_NO_AUTO_CAPITALIZATION  = 0x02,
-	SCE_IME_OPTION_NO_ASSISTANCE           = 0x04
-} SceImeOption;
+typedef enum SceImeDialogErrorCode {
+	SCE_IME_DIALOG_ERROR_PARAM                      = 0x80102001,
+	SCE_IME_DIALOG_ERROR_INTERNAL                   = 0x80102002,
+	SCE_IME_DIALOG_ERROR_INVALID_DIALOG_MODE        = 0x80102003,
+	SCE_IME_DIALOG_ERROR_INVALID_TEXT_BOX_MODE      = 0x80102004,
+	SCE_IME_DIALOG_ERROR_INVALID_TITLE              = 0x80102005
+} SceImeDialogError;
 
 typedef enum SceImeDialogDialogMode {
 	SCE_IME_DIALOG_DIALOG_MODE_DEFAULT      = 0,
@@ -77,8 +43,6 @@ typedef enum SceImeDialogButton {
 	SCE_IME_DIALOG_BUTTON_ENTER = 2
 } SceImeDialogButton;
 
-typedef SceInt32 (*SceImeCharFilter)(SceWChar16 ch);
-
 typedef struct SceImeDialogParam {
 	SceUInt32 sdkVersion;
 
@@ -87,7 +51,7 @@ typedef struct SceImeDialogParam {
 	SceBool languagesForced;
 	SceUInt32 type;                       //!< Dialog type (One of ::SceImeType)
 	SceUInt32 option;                     //!< Dialog options (One or more ::SceImeOption)
-	SceImeCharFilter filter;
+	SceImeTextFilter filter;
 
 	SceUInt32 dialogMode;                 //!< Dialog mode (One of ::SceImeDialogDialogMode)
 	SceUInt32 textBoxMode;                //!< Textbox mode (One of ::SceImeDialogTextboxMode)
@@ -127,4 +91,3 @@ SceInt32 sceImeDialogTerm( void );
 #endif
 
 #endif
-
