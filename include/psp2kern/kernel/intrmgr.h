@@ -43,10 +43,13 @@ typedef struct SceKernelIntrOptParam {
 int ksceKernelRegisterIntrHandler(int intr_code, const char *name, int interrupt_type,
 	SceKernelIntrHandler handler, void *user_ctx, int priority, int target_cpu, SceKernelIntrOptParam *opt);
 int ksceKernelReleaseIntrHandler(int intr_code);
-int ksceKernelMaskIntr(int intr_code);
-int ksceKernelUnmaskIntr(int intr_code);
-int ksceKernelSetIntrMasked(int intr_code, int masked);
-int ksceKernelGetIntrMasked(int intr_code, int *masked);
+
+int ksceKernelEnableIntr(int intr_code);
+int ksceKernelDisableIntr(int intr_code);
+
+int ksceKernelResumeIntr(int intr_code, int enabled);
+int ksceKernelSuspendIntr(int intr_code, int *enabled);
+
 int ksceKernelIsIntrPending(int intr_code);
 int ksceKernelClearIntrPending(int intr_code);
 int ksceKernelSetIntrPriority(int intr_code, int priority);
@@ -61,6 +64,11 @@ int ksceKernelReleaseSubIntrHandler(int intr_code, int subintr_code);
 int ksceKernelTriggerSubIntr(int intr_code, int subintr_code, void *subintr_arg);
 int ksceKernelEnableSubIntr(int intr_code, int subintr_code);
 int ksceKernelDisableSubIntr(int intr_code, int subintr_code);
+
+#define ksceKernelMaskIntr(intr_code) ksceKernelDisableIntr(intr_code)
+#define ksceKernelSetIntrMasked(intr_code, masked) ksceKernelEnableIntr(intr_code)
+#define ksceKernelUnmaskIntr(intr_code) ksceKernelEnableIntr(intr_code)
+#define ksceKernelGetIntrMasked ksceKernelSuspendIntr
 
 #ifdef __cplusplus
 }
