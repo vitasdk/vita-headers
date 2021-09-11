@@ -1,5 +1,13 @@
 var NAVTREEINDEX83 =
 {
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,11,12,0,26],
+"group__SystemFunction.html":[1,5],
+"group__SystemParams.html":[1,13],
+"group__SystemStatus.html":[1,11],
+"group__USB.html":[1,12],
+"group__Vitasdk.html":[1,14],
+"group__debug.html":[1,9],
+"group__kernel.html":[1,7],
 "group__update.html":[1,8],
 "gxm_8h.html":[4,0,1,0,24],
 "gxm_8h_source.html":[4,0,1,0,24],
@@ -19,8 +27,8 @@ var NAVTREEINDEX83 =
 "ime__dialog_8h_source.html":[4,0,1,0,27],
 "incoming__dialog_8h.html":[4,0,1,0,28],
 "incoming__dialog_8h_source.html":[4,0,1,0,28],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intrmgr_8h.html":[4,0,1,1,2,7],
 "intrmgr_8h_source.html":[4,0,1,1,2,7],
 "io_2devctl_8h.html":[4,0,1,0,1,0],

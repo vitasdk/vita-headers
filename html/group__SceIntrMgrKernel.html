@@ -74,7 +74,8 @@ $(document).ready(function(){initNavTree('group__SceIntrMgrKernel.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceIntrMgr.html">Interrupt Manager Library</a></div></div>  </div>
 </div><!--header-->
@@ -97,14 +98,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga6164deaf45e605aa8e34ce32784f35fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae1108c740d871b0874a48bcd9d7f3998"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gae1108c740d871b0874a48bcd9d7f3998">ksceKernelReleaseIntrHandler</a> (int intr_code)</td></tr>
 <tr class="separator:gae1108c740d871b0874a48bcd9d7f3998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5df4056c52da2398a6b862cd95f35293"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga5df4056c52da2398a6b862cd95f35293">ksceKernelMaskIntr</a> (int intr_code)</td></tr>
-<tr class="separator:ga5df4056c52da2398a6b862cd95f35293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae858d31132c24d55440fac3cf7eef2a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gae858d31132c24d55440fac3cf7eef2a5">ksceKernelUnmaskIntr</a> (int intr_code)</td></tr>
-<tr class="separator:gae858d31132c24d55440fac3cf7eef2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadec589ed122e17aaa912ef443fc2c199"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gadec589ed122e17aaa912ef443fc2c199">ksceKernelSetIntrMasked</a> (int intr_code, int masked)</td></tr>
-<tr class="separator:gadec589ed122e17aaa912ef443fc2c199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3420ba1e60f54a7f1d0a4d9b19b06891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga3420ba1e60f54a7f1d0a4d9b19b06891">ksceKernelGetIntrMasked</a> (int intr_code, int *masked)</td></tr>
-<tr class="separator:ga3420ba1e60f54a7f1d0a4d9b19b06891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61a97467e45dd8b3b5c938c393b7aa8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a> (int intr_code)</td></tr>
+<tr class="separator:ga61a97467e45dd8b3b5c938c393b7aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab74faef8e41bc195cf9e58d21ad19ad0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gab74faef8e41bc195cf9e58d21ad19ad0">ksceKernelDisableIntr</a> (int intr_code)</td></tr>
+<tr class="separator:gab74faef8e41bc195cf9e58d21ad19ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdd26d99dba7d205fb5751084ebc06d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gabdd26d99dba7d205fb5751084ebc06d5">ksceKernelResumeIntr</a> (int intr_code, int enabled)</td></tr>
+<tr class="separator:gabdd26d99dba7d205fb5751084ebc06d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22ab7c1092465c7aab26e03750befe7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga22ab7c1092465c7aab26e03750befe7b">ksceKernelSuspendIntr</a> (int intr_code, int *enabled)</td></tr>
+<tr class="separator:ga22ab7c1092465c7aab26e03750befe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c16119fa0704a8cbb44a6944b425741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga0c16119fa0704a8cbb44a6944b425741">ksceKernelIsIntrPending</a> (int intr_code)</td></tr>
 <tr class="separator:ga0c16119fa0704a8cbb44a6944b425741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga146f56bf7f406b88f6ec666d600de307"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga146f56bf7f406b88f6ec666d600de307">ksceKernelClearIntrPending</a> (int intr_code)</td></tr>
@@ -144,6 +145,17 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga95eea41a243da0f511481213b9260646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a>) (int intr_code, int subintr_code, <a class="el" href="group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff">SceKernelSubIntrHandler</a> handler, void *register_arg)</td></tr>
 <tr class="separator:ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga33f7c8b4b71c801c0851576b54ec1893"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga33f7c8b4b71c801c0851576b54ec1893">ksceKernelMaskIntr</a>(intr_code)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#gab74faef8e41bc195cf9e58d21ad19ad0">ksceKernelDisableIntr</a>(intr_code)</td></tr>
+<tr class="separator:ga33f7c8b4b71c801c0851576b54ec1893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga380885050e95a110e759fcd205fe4d49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga380885050e95a110e759fcd205fe4d49">ksceKernelSetIntrMasked</a>(intr_code,  masked)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td></tr>
+<tr class="separator:ga380885050e95a110e759fcd205fe4d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88d1d177585245a55e879faf9a246202"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga88d1d177585245a55e879faf9a246202">ksceKernelUnmaskIntr</a>(intr_code)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td></tr>
+<tr class="separator:ga88d1d177585245a55e879faf9a246202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76ba30a6025f97a6eab757d33a22f0f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga76ba30a6025f97a6eab757d33a22f0f1">ksceKernelGetIntrMasked</a>&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga22ab7c1092465c7aab26e03750befe7b">ksceKernelSuspendIntr</a></td></tr>
+<tr class="separator:ga76ba30a6025f97a6eab757d33a22f0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelIntrOptHandlers" id="structSceKernelIntrOptHandlers"></a>
@@ -267,6 +279,85 @@ unk_10</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga33f7c8b4b71c801c0851576b54ec1893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga33f7c8b4b71c801c0851576b54ec1893">&#9670;&nbsp;</a></span>ksceKernelMaskIntr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelMaskIntr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">intr_code</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#gab74faef8e41bc195cf9e58d21ad19ad0">ksceKernelDisableIntr</a>(intr_code)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga380885050e95a110e759fcd205fe4d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga380885050e95a110e759fcd205fe4d49">&#9670;&nbsp;</a></span>ksceKernelSetIntrMasked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelSetIntrMasked</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">intr_code, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">masked&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga88d1d177585245a55e879faf9a246202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88d1d177585245a55e879faf9a246202">&#9670;&nbsp;</a></span>ksceKernelUnmaskIntr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelUnmaskIntr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">intr_code</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga76ba30a6025f97a6eab757d33a22f0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76ba30a6025f97a6eab757d33a22f0f1">&#9670;&nbsp;</a></span>ksceKernelGetIntrMasked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelGetIntrMasked&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga22ab7c1092465c7aab26e03750befe7b">ksceKernelSuspendIntr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -424,14 +515,14 @@ unk_10</td>
 
 </div>
 </div>
-<a id="ga5df4056c52da2398a6b862cd95f35293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5df4056c52da2398a6b862cd95f35293">&#9670;&nbsp;</a></span>ksceKernelMaskIntr()</h2>
+<a id="ga61a97467e45dd8b3b5c938c393b7aa8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61a97467e45dd8b3b5c938c393b7aa8e">&#9670;&nbsp;</a></span>ksceKernelEnableIntr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelMaskIntr </td>
+          <td class="memname">int ksceKernelEnableIntr </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>intr_code</em></td><td>)</td>
@@ -442,14 +533,14 @@ unk_10</td>
 
 </div>
 </div>
-<a id="gae858d31132c24d55440fac3cf7eef2a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae858d31132c24d55440fac3cf7eef2a5">&#9670;&nbsp;</a></span>ksceKernelUnmaskIntr()</h2>
+<a id="gab74faef8e41bc195cf9e58d21ad19ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab74faef8e41bc195cf9e58d21ad19ad0">&#9670;&nbsp;</a></span>ksceKernelDisableIntr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelUnmaskIntr </td>
+          <td class="memname">int ksceKernelDisableIntr </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>intr_code</em></td><td>)</td>
@@ -460,14 +551,14 @@ unk_10</td>
 
 </div>
 </div>
-<a id="gadec589ed122e17aaa912ef443fc2c199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadec589ed122e17aaa912ef443fc2c199">&#9670;&nbsp;</a></span>ksceKernelSetIntrMasked()</h2>
+<a id="gabdd26d99dba7d205fb5751084ebc06d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdd26d99dba7d205fb5751084ebc06d5">&#9670;&nbsp;</a></span>ksceKernelResumeIntr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelSetIntrMasked </td>
+          <td class="memname">int ksceKernelResumeIntr </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>intr_code</em>, </td>
@@ -476,7 +567,7 @@ unk_10</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>masked</em>&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -488,14 +579,14 @@ unk_10</td>
 
 </div>
 </div>
-<a id="ga3420ba1e60f54a7f1d0a4d9b19b06891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3420ba1e60f54a7f1d0a4d9b19b06891">&#9670;&nbsp;</a></span>ksceKernelGetIntrMasked()</h2>
+<a id="ga22ab7c1092465c7aab26e03750befe7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22ab7c1092465c7aab26e03750befe7b">&#9670;&nbsp;</a></span>ksceKernelSuspendIntr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelGetIntrMasked </td>
+          <td class="memname">int ksceKernelSuspendIntr </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>intr_code</em>, </td>
@@ -504,7 +595,7 @@ unk_10</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>masked</em>&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
