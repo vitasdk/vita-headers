@@ -51,7 +51,7 @@ typedef enum SceLocationErrorCode {
 //TO DO: further comment each struct and function (i.e. parameters)
 
 /** Location handle datatype */
-typedef SceUInt8 SceLocationHandle;
+typedef SceUInt32 SceLocationHandle;
 
 /** Usage permission dialog display status */
 typedef enum SceLocationDialogStatus {
