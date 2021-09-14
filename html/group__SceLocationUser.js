@@ -1,7 +1,7 @@
 var group__SceLocationUser =
 [
     [ "SCE_LOCATION_DATA_INVALID", "group__SceLocationUser.html#ga833d969a9e763280124ea9ed7b7b31a1", null ],
-    [ "SceLocationHandle", "group__SceLocationUser.html#ga46a55d856edecaa6a7a3376365276be0", null ],
+    [ "SceLocationHandle", "group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344", null ],
     [ "SceLocationLocationInfoCallback", "group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2", null ],
     [ "SceLocationHeadingInfoCallback", "group__SceLocationUser.html#gaf379391927de99daef6f95dffb73f226", null ],
     [ "SceLocationErrorCode", "group__SceLocationUser.html#gaddf7a2c21ea1e16531aab2a10ba01038", [
