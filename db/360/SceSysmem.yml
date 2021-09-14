@@ -377,7 +377,11 @@ modules:
         kernel: true
         nid: 0x6F25E18A
         functions:
+          ksceGUIDClose: 0x047D32F2
+          ksceGUIDReferObject: 0x0F5C84B7
+          ksceGUIDReferObjectWithClass: 0x00ED6C14
           ksceGUIDReferObjectWithClassLevel: 0x77066FD1
+          ksceGUIDReleaseObject: 0x149885C4
           ksceKernelAddressSpaceVAtoPABySW: 0x65419BD3
           ksceKernelAllocHeapMemory: 0x7B4CB60A
           ksceKernelAllocHeapMemoryFromGlobalHeap: 0x7750CEA7
@@ -390,13 +394,10 @@ modules:
           ksceKernelCreateHeap: 0x9328E0E8
           ksceKernelCreateUidObj2: 0x56A13E90
           ksceKernelCreateUidObjForUid: 0x89A44858
-          ksceKernelCreateUserUid: 0xBF209859
           ksceKernelCreateUserUidForClass: 0xCED1547B
           ksceKernelCreateUserUidForName: 0x513B9DDD
           ksceKernelCreateUserUidForNameWithClass: 0x8DA0BCA5
           ksceKernelDeleteHeap: 0xD6437637
-          ksceKernelDeleteUid: 0x047D32F2
-          ksceKernelDeleteUserUid: 0x84A4AF5E
           ksceKernelFindMemBlock: 0x9C78064C
           ksceKernelFindMemBlockByAddr: 0x8A1742F6
           ksceKernelFindMemBlockByAddrForDefaultSize: 0xF3BBE2E1
@@ -420,12 +421,9 @@ modules:
           ksceKernelGetNameForPidByUid: 0x09896EB7
           ksceKernelGetNameForUid: 0xA78755EB
           ksceKernelGetNameForUid2: 0xE655852F
-          ksceKernelGetObjForUid: 0x00ED6C14
           ksceKernelGetObjectForPidForUid: 0xFE6D7FAE
           ksceKernelGetObjectForUidForAttr: 0xF6DB54BA
           ksceKernelGetObjectForUidForClassTree: 0x72A98D17
-          ksceKernelGetPaddr: 0x8D160E65
-          ksceKernelGetPaddrList: 0xE68BEEBD
           ksceKernelGetPaddrListForLargePage: 0x08A8A7E8
           ksceKernelGetPaddrListForSmallPage: 0x16844CE6
           ksceKernelGetPaddrPair: 0xAE36C775
@@ -435,7 +433,6 @@ modules:
           ksceKernelGetPidContext: 0x2ECF7944
           ksceKernelGetUidClass: 0x85336A1C
           ksceKernelIsPaddrWithinSameSectionForUid: 0xF4AD89D8
-          ksceKernelKernelUidForUserUid: 0x45D22597
           ksceKernelKernelUidForUserUidForClass: 0x184172B1
           ksceKernelMapBlockUserVisible: 0x58D21746
           ksceKernelMapBlockUserVisibleWithFlag: 0x04059C4B
@@ -475,10 +472,13 @@ modules:
           ksceKernelStrnlenUserForPid: 0x9929EB07
           ksceKernelSwitchPidContext: 0x2D711589
           ksceKernelSwitchVmaForPid: 0x6F2ACDAE
-          ksceKernelUidRelease: 0x149885C4
-          ksceKernelUidRetain: 0x0F5C84B7
           ksceKernelUnmapMemBlock: 0xFFCD9B60
           ksceKernelUserMap: 0x278BC201
+          ksceKernelVARangeToPAVector: 0xE68BEEBD
+          ksceKernelVAtoPA: 0x8D160E65
+          kscePUIDClose: 0x84A4AF5E
+          kscePUIDOpenByGUID: 0xBF209859
+          kscePUIDtoGUID: 0x45D22597
       SceSysmemForKernel:
         kernel: true
         nid: 0x63A519E5

@@ -7,9 +7,14 @@
 #define _PSP2_KERNEL_SYSMEM_H_
 
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/sysmem/uid_class.h>
+#include <psp2kern/kernel/sysmem/uid_guid.h>
+#include <psp2kern/kernel/sysmem/uid_puid.h>
+#include <psp2kern/kernel/sysmem/heap.h>
+#include <psp2kern/kernel/sysmem/data_transfers.h>
+#include <psp2kern/kernel/sysmem/mmu.h>
 #include <psp2kern/kernel/debug.h>
 #include <psp2kern/kernel/sysroot.h>
-#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -48,19 +53,6 @@ typedef enum SceKernelMemoryRefPerm {
 	SCE_KERNEL_MEMORY_REF_PERM_KERN_X	= 0x40,
 } SceKernelMemoryRefPerm;
 
-typedef struct SceKernelAddrPair {
-	uint32_t addr;                  //!< Address
-	uint32_t length;                //!< Length
-} SceKernelAddrPair;
-
-typedef struct SceKernelPaddrList {
-	uint32_t size;                  //!< sizeof(SceKernelPaddrList)
-	uint32_t list_size;             //!< Size in elements of the list array
-	uint32_t ret_length;            //!< Total physical size of the memory pairs
-	uint32_t ret_count;             //!< Number of elements of list filled by ksceKernelGetPaddrList
-	SceKernelAddrPair *list;        //!< Array of physical addresses and their lengths pairs
-} SceKernelPaddrList;
-
 // specific to 3.60
 typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceSize size;                   //!< sizeof(SceKernelAllocMemBlockKernelOpt)
@@ -87,74 +79,10 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
 
-typedef enum SceKernelHeapAttr {
-	SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND = 0x00000001,
-	SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE = 0x00000400
-} SceKernelHeapAttr;
-
-typedef struct SceKernelHeapCreateOpt {
-	SceSize size;
-	union { //<! Union for compatibility
-		SceUInt32 attr;
-		SceUInt32 uselock; //<! Do not use uselock as it will be deprecated.
-	};
-	SceUInt32 field_8;
-	SceUInt32 field_C;
-	SceUInt32 memtype;
-	SceUInt32 field_14;
-	SceUInt32 field_18;
-} SceKernelHeapCreateOpt;
-
-typedef struct SceCreateUidObjOpt {
-	SceUInt32 flags;
-	SceUInt32 field_4;
-	SceUInt32 field_8;
-	SceUInt32 pid;
-	SceUInt32 field_10;
-	SceUInt32 field_14;
-	SceUInt32 field_18;
-} SceCreateUidObjOpt;
-
 typedef enum SceKernelModel {
 	SCE_KERNEL_MODEL_VITA   = 0x10000,
 	SCE_KERNEL_MODEL_VITATV = 0x20000
 } SceKernelModel;
-
-typedef int (* SceClassCallback)(void *item);
-
-typedef struct SceClass {
-	struct SceClass *next;
-	struct SceClass *root;
-	struct SceClass *prev;
-	const char *name;
-	struct SceClass *uidclass;
-	unsigned int attributes;
-	unsigned short itemsize;
-	unsigned short itemsize_aligned;
-	unsigned int unk1C;
-	SceClassCallback create_cb;
-	SceClassCallback destroy_cb;
-	unsigned int magic; /* 0xABCE9DA5 */
-} SceClass; /* size = 0x2C */
-
-typedef struct SceObjectBase {
-	uint32_t sce_reserved[2];
-	uint32_t data[];
-} SceObjectBase;
-
-typedef struct SceKernelProcessContext {
-	SceUInt32 TTBR1;
-	SceUInt32 DACR;
-	SceUInt32 CONTEXTIDR;
-} SceKernelProcessContext;
-
-typedef struct SceAllocOpt {
-	SceSize size;   // 0x14
-	SceSize data04; // maybe len align?
-	SceSize align;
-	int data0C;
-	int data10; 
-} SceAllocOpt;
 
 /**
  * Allocates a new memory block
@@ -228,206 +156,8 @@ SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize 
  */
 int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
 
-/**
- * Create heap area
- *
- * @param[in] name - The heap name
- * @param[in] size - The heap size
- * @param[in] opt  - The pointer of SceKernelHeapCreateOpt option data
- *
- * @return heapid on success, < 0 on error.
- */
-SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateOpt *opt);
-
-/**
- * Delete heap area
- *
- * @param[in] uid - The heapid
- *
- * @return always 0.
- *
- * note - Trigger an infinite loop if something fails internally.
- *        For example, passing an invalid heapid.
- */
-int ksceKernelDeleteHeap(SceUID uid);
-
-/**
- * Allocation the specified length of memory from heap
- *
- * @param[in] uid  - The heapid
- * @param[in] size - The alloc size
- *
- * @return The pointer of allocated memory on success, NULL on error.
- */
-void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
-
-/**
- * Allocation the specified length of memory from heap with option
- *
- * @param[in] uid  - The heapid
- * @param[in] size - The alloc size
- * @param[in] opt  - The pointer of option
- *
- * @return The pointer of allocated memory on success, NULL on error.
- */
-void *ksceKernelAllocHeapMemoryWithOption(SceUID heapid, SceSize len, SceAllocOpt *opt);
-
-/**
- * Free allocated memory
- *
- * @param[in] uid - The heapid
- * @param[in] ptr - The pointer of allocated memory
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelFreeHeapMemory(SceUID uid, void *ptr);
-
-/**
- * Memory copy from user
- *
- * @param[in] dst - The pointer of kern memory output buffer
- * @param[in] src - The pointer of user memory
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelMemcpyUserToKernel(void *dst, uintptr_t src, SceSize len);
-
-/**
- * Memory copy from user with process
- *
- * @param[in] pid - The target process id
- * @param[in] dst - The pointer of kern memory
- * @param[in] src - The pointer of user memory
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelMemcpyUserToKernelForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
-
-/**
- * Memory copy to user
- *
- * @param[in] dst - The pointer of user memory
- * @param[in] src - The pointer of kern memory
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelMemcpyKernelToUser(uintptr_t dst, const void *src, SceSize len);
-
-/**
- * Memory copy to user Read only memory
- *
- * @param[in] dst - The pointer of user memory
- * @param[in] src - The pointer of kern memory
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelMemcpyToUserRo(uintptr_t dst, const void *src, SceSize len);
-
-/**
- * Memory copy to user Read execute memory
- *
- * @param[in] dst - The pointer of user memory
- * @param[in] src - The pointer of kern memory
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelMemcpyToUserRx(uintptr_t dst, const void *src, SceSize len);
-
-/**
- * Memory copy to user with process
- *
- * @param[in] pid - The target process id
- * @param[in] dst - The pointer of user memory
- * @param[in] src - The pointer of kern memory
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelRxMemcpyKernelToUserForPid(SceUID pid, uintptr_t dst, const void *src, SceSize len);
-
-/**
- * Strncpy from user
- *
- * @param[in] dst - The pointer of user space strings
- * @param[in] src - The pointer of kern strings output
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelStrncpyUserToKernel(void *dst, uintptr_t src, SceSize len);
-
-/**
- * Strncpy to user
- *
- * @param[in] dst - The pointer of kern space strings
- * @param[in] src - The pointer of user strings output
- * @param[in] len - The copy length
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelStrncpyKernelToUser(uintptr_t dst, const void *src, SceSize len);
-int ksceKernelStrncpyUserForPid(SceUID pid, void *dst, uintptr_t src, SceSize len);
-
-SceUID ksceKernelKernelUidForUserUid(SceUID pid, SceUID user_uid);
-SceUID ksceKernelCreateUserUid(SceUID pid, SceUID kern_uid);
-SceUID ksceKernelCreateUidObj(SceClass *cls, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
-
-/**
- * Gets an object from a UID.
- *
- * This retains the object internally! You must call `ksceKernelUidRelease`
- * after you are done using it.
- *
- * @param[in]  uid   The uid
- * @param      cls   The class
- * @param      obj   The object
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetObjForUid(SceUID uid, SceClass *cls, SceObjectBase **obj);
-
-/**
- * Retains an object referenced by the UID.
- *
- * This increases the internal reference count.
- *
- * @param[in]  uid   The uid
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelUidRetain(SceUID uid);
-
-/**
- * Releases an object referenced by the UID.
- *
- * This decreases the internal reference count.
- *
- * @param[in]  uid   The uid
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelUidRelease(SceUID uid);
-
-SceClass *ksceKernelGetUidClass(void);
-SceClass *ksceKernelGetUidDLinkClass(void);
-SceClass *ksceKernelGetUidHeapClass(void);
-SceClass *ksceKernelGetUidMemBlockClass(void);
-
-int ksceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, SceSize itemsize, SceClassCallback create, SceClassCallback destroy);
-int ksceKernelDeleteUserUid(SceUID pid, SceUID user_uid);
-int ksceKernelDeleteUid(SceUID uid);
-int ksceKernelFindClassByName(const char *name, SceClass **cls);
-
-int ksceKernelSwitchVmaForPid(SceUID pid);
-
-int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
-
 int ksceKernelMapBlockUserVisible(SceUID uid);
+
 SceUID ksceKernelMapUserBlock(const char *name, int permission, int type,
 			   const void *user_buf, SceSize size, void **kernel_page,
 			   SceSize *kernel_size, unsigned int *kernel_offset);
@@ -472,26 +202,6 @@ SceUID ksceKernelUserMap(const char *name, int permission, const void *user_buf,
 SceUID ksceKernelProcUserMap(SceUID pid, const char *name, int permission, const void *user_buf, SceSize size, void **kernel_page, SceSize *kernel_size, SceUInt32 *kernel_offset);
 
 #define ksceKernelMapUserBlockDefaultTypeForPid(pid, name, permission, user_buf, size, kernel_page, kernel_size, kernel_offset) ksceKernelProcUserMap(pid, name, permission, user_buf, size, kernel_page, kernel_size, kernel_offset)
-
-/**
- * Get the physical address of a given virtual address
- *
- * @param[in] addr - The virtual address
- * @param[out] paddr - The physical address
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetPaddr(const void *addr, uintptr_t *paddr);
-
-/**
- * Get the physical address list of a given virtual address range
- *
- * @param[in] input - The virtual address range
- * @param[out] list - The list of physical addresses
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetPaddrList(const SceKernelAddrPair *input, SceKernelPaddrList *list);
 
 /**
  * Releases a memblock referenced by the UID.
@@ -591,24 +301,6 @@ int ksceKernelMemRangeReleaseForPid(SceUID pid, void *addr, SceSize size);
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
-
-/**
- * Alloc kernel memory
- *
- * @param[in] size - The alloction memory size
- *
- * @return memory pointer on success, NULL on error.
- */
-void *ksceKernelAlloc(unsigned int size);
-
-/**
- * Free kernel memory
- *
- * @param[in] ptr - The free memory pointer
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelFree(void *ptr);
 
 #ifdef __cplusplus
 }
