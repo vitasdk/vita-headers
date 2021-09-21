@@ -1,6 +1,5 @@
 var ern_2kernel_2processmgr_8h =
 [
-    [ "SceKernelSysClock", "group__SceProcessmgrKernel.html#gab4c7be6a9c6275c4162899a98e7a640a", null ],
     [ "SceKernelProcessType", "group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf", null ],
     [ "ksceKernelGetProcessKernelBuf", "group__SceProcessmgrKernel.html#ga6b3b5f895ae1e3fd5e89bb57467e55ca", null ],
     [ "ksceKernelGetProcessInfo", "group__SceProcessmgrKernel.html#ga0900825db6367507b27169093cf58227", null ],
