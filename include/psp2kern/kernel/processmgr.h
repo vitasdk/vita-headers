@@ -13,8 +13,6 @@
 extern "C" {
 #endif
 
-typedef uint64_t SceKernelSysClock;
-
 typedef struct SceKernelProcessInfo {
 	SceSize size;           //!< size of this struct, make sure it's 0xE8
 	SceUID pid;             //!< our process ID
