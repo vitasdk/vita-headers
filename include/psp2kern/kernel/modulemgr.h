@@ -229,12 +229,23 @@ int ksceKernelGetModuleInfoMinByAddr(SceUID pid, const void *module_addr, uint32
 /**
  * @brief Get module info (internal)
  *
- * @param[in]  modid       - target module id
- * @param[out] module_info - module_info output pointer
+ * @param[in]  modid - target module id
+ * @param[out] info  - module_info output pointer
  *
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelGetModuleInternal(SceUID modid, void **info);
+
+/**
+ * @brief Get module info by address (internal)
+ *
+ * @param[in]  pid         - target process id
+ * @param[in]  module_addr - target module address
+ * @param[out] info        - module_info output pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetProcessEntryPointByAddr(SceUID pid, const void *module_addr, void **info);
 
 /**
  * @brief Get module id by module address
@@ -500,48 +511,6 @@ int ksceKernelGetModulePath(SceUID modid, char *path, SceSize pathlen);
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID library_id, SceKernelModuleLibraryInfo *info);
-
-typedef struct SceKernelModuleExportEntry {
-	uint32_t libnid;
-	const void *entry; // function ptr. or vars?
-} SceKernelModuleExportEntry;
-
-/**
- * @brief Get module export entry
- *
- * @param[in]    pid          - target pid
- * @param[in]    libid        - target library uid
- * @param[out]   list         - data output
- * @param[inout] num          - in:list max num, out:get entry num
- * @param[in]    cpy_skip_num - The index at which to start copying
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetModuleLibExportList(SceUID pid, SceUID library_id, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
-
-/**
- * @brief Get module id list by import
- *
- * @param[in]    pid          - target pid
- * @param[in]    library_id   - target library uid
- * @param[out]   modids       - module id output list
- * @param[inout] num          - in:list max num, out:get entry num
- * @param[in]    cpy_skip_num - The index at which to start copying
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetModuleListByImport(SceUID pid, SceUID library_id, SceUID *modids, SceSize *num, SceSize cpy_skip_num);
-
-/**
- * @brief Get module export list
- *
- * @param[in]    pid         - target pid
- * @param[out]   library_ids - library id output list
- * @param[inout] num         - in:list max num, out:get entry num
- *
- * @return 0 on success, < 0 on error.
- */
-int ksceKernelGetProcessLibraryIdList(SceUID pid, SceUID *library_ids, SceSize *num);
 
 #ifdef __cplusplus
 }
