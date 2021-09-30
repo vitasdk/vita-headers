@@ -1,7 +1,15 @@
 var group__SceKernelSysrootKernel =
 [
+    [ "SCE_SYSROOT_INIT_CALLBACK_MAX_FUNC", "group__SceKernelSysrootKernel.html#ga636b496ee280fb476e23547694d32049", null ],
+    [ "SCE_SYSROOT_INIT_CALLBACK_MAX_SLOT", "group__SceKernelSysrootKernel.html#gaac6c04a259f3323b8cce37f16415c1f0", null ],
     [ "ksceKernelGetSysrootBuffer", "group__SceKernelSysrootKernel.html#ga192d7ce764117e51b25a1879f5bc06a0", null ],
     [ "ksceKernelGetProcessTitleId", "group__SceKernelSysrootKernel.html#ga666ce33aa0fa454d5fcff558840ed258", null ],
+    [ "SceKernelVARange", "group__SceKernelSysrootKernel.html#ga5fb89e56dc9026107162eefd31bf2281", null ],
+    [ "SceKernelBootArgs", "group__SceKernelSysrootKernel.html#gad4da8e9a7bb7fbfabedd6221a89e376f", null ],
+    [ "SceSysrootModulemgrHandlers", "group__SceKernelSysrootKernel.html#ga07c38484329702160a6b307183fb6d4d", null ],
+    [ "SceSysrootForKernel_D29BCA77_struct", "group__SceKernelSysrootKernel.html#ga339b520d143361d21d51553b41f8cb95", null ],
+    [ "SceSysrootForDriver_733C243E_struct", "group__SceKernelSysrootKernel.html#ga7e52887c24e0454a3cd742420553b7b7", null ],
+    [ "SceSysroot", "group__SceKernelSysrootKernel.html#gaa0ccbbc5329e182a24b0d3a0a98f70f6", null ],
     [ "SceKernelGetSystemSwVersionFunc", "group__SceKernelSysrootKernel.html#ga333bacf35fa6ddf45edeb574840aeb60", null ],
     [ "SceKernelSysrootSelfIndex", "group__SceKernelSysrootKernel.html#gaae18ca6d933be8561673eb190fde924c", [
       [ "SCE_KERNEL_SYSROOT_SELF_INDEX_GCAUTHMGR_SM", "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca3f9c8d2a5e5cfea7754248383a48673b", null ],
@@ -11,6 +19,8 @@ var group__SceKernelSysrootKernel =
     [ "SCE_KERNEL_SYSROOT_SELF_INDEX_GCAUTHMGR_SM", "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca3f9c8d2a5e5cfea7754248383a48673b", null ],
     [ "SCE_KERNEL_SYSROOT_SELF_INDEX_RMAUTH_SM", "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60", null ],
     [ "SCE_KERNEL_SYSROOT_SELF_INDEX_ENCDEC_W_PORTABILITY_SM", "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924caabea726cf1f5054ef0dcffd8e82a9ab3", null ],
+    [ "ksceSysrootGetSysroot", "group__SceKernelSysrootKernel.html#gaa88efb3df75b44b513662e1c6c6c1529", null ],
+    [ "ksceKernelSysrootSetSysroot", "group__SceKernelSysrootKernel.html#gae079055e4380c2d36839661112a628e0", null ],
     [ "ksceKernelSysrootGetKblParam", "group__SceKernelSysrootKernel.html#ga667430e4c173b766cc31ba19ede85078", null ],
     [ "ksceKernelSysrootGetProcessTitleId", "group__SceKernelSysrootKernel.html#ga571e101d51a20ed6a0af26952172773d", null ],
     [ "ksceSysrootGetSelfInfo", "group__SceKernelSysrootKernel.html#ga888ca62deb0c08c14af41b51a22a232e", null ],

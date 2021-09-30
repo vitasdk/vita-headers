@@ -402,6 +402,8 @@ var annotated_dup =
     [ "SceUdcdInterfaceSettings", "group__SceUdcdKernel.html#structSceUdcdInterfaceSettings", "group__SceUdcdKernel_structSceUdcdInterfaceSettings" ],
     [ "SceUdcdStringDescriptor", "group__SceUdcdKernel.html#structSceUdcdStringDescriptor", "group__SceUdcdKernel_structSceUdcdStringDescriptor" ],
     [ "SceUdcdWaitParam", "group__SceUdcdUser.html#structSceUdcdWaitParam", "group__SceUdcdUser_structSceUdcdWaitParam" ],
+    [ "SceUIDSysrootObject", "group__SceKernelSysrootKernel.html#structSceUIDSysrootObject", "group__SceKernelSysrootKernel_structSceUIDSysrootObject" ],
+    [ "SceUIDSysrootObject.init_callback_slot", "group__SceKernelSysrootKernel.html#structSceUIDSysrootObject_8init__callback__slot", "group__SceKernelSysrootKernel_structSceUIDSysrootObject_8init__callback__slot" ],
     [ "SceUsbdControlTransferRequest", "group__SceUsbdKernel.html#structSceUsbdControlTransferRequest", "group__SceUsbdKernel_structSceUsbdControlTransferRequest" ],
     [ "SceUsbdDeviceAddress", "group__SceUsbdUser.html#structSceUsbdDeviceAddress", "group__SceUsbdUser_structSceUsbdDeviceAddress" ],
     [ "SceUsbdDeviceDescriptor", "group__SceUsbdKernel.html#structSceUsbdDeviceDescriptor", "group__SceUsbdKernel_structSceUsbdDeviceDescriptor" ],
