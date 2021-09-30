@@ -113,6 +113,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gacc93c42e732e167f276ed09892cedfaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gacc93c42e732e167f276ed09892cedfaa">ksceKernelGetModuleInternal</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, void **info)</td></tr>
 <tr class="memdesc:gacc93c42e732e167f276ed09892cedfaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module info (internal)  <a href="group__SceModulemgrKernel.html#gacc93c42e732e167f276ed09892cedfaa">More...</a><br /></td></tr>
 <tr class="separator:gacc93c42e732e167f276ed09892cedfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa0a09f73b16636aed705c11405f528a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gafa0a09f73b16636aed705c11405f528a">ksceKernelGetProcessEntryPointByAddr</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const void *module_addr, void **info)</td></tr>
+<tr class="memdesc:gafa0a09f73b16636aed705c11405f528a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module info by address (internal)  <a href="group__SceModulemgrKernel.html#gafa0a09f73b16636aed705c11405f528a">More...</a><br /></td></tr>
+<tr class="separator:gafa0a09f73b16636aed705c11405f528a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6abf55c09b2c587a7c5e1538e1f87414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#ga6abf55c09b2c587a7c5e1538e1f87414">ksceKernelGetModuleIdByAddr</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const void *module_addr)</td></tr>
 <tr class="memdesc:ga6abf55c09b2c587a7c5e1538e1f87414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module id by module address.  <a href="group__SceModulemgrKernel.html#ga6abf55c09b2c587a7c5e1538e1f87414">More...</a><br /></td></tr>
 <tr class="separator:ga6abf55c09b2c587a7c5e1538e1f87414"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,15 +182,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga292971abb283d62b9ec487dfa3212316"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#ga292971abb283d62b9ec487dfa3212316">ksceKernelGetModuleLibraryInfo</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> library_id, <a class="el" href="group__SceModulemgrKernel.html#structSceKernelModuleLibraryInfo">SceKernelModuleLibraryInfo</a> *info)</td></tr>
 <tr class="memdesc:ga292971abb283d62b9ec487dfa3212316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get library info.  <a href="group__SceModulemgrKernel.html#ga292971abb283d62b9ec487dfa3212316">More...</a><br /></td></tr>
 <tr class="separator:ga292971abb283d62b9ec487dfa3212316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c5528896a5d275f75f2612365519829"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#ga0c5528896a5d275f75f2612365519829">ksceKernelGetModuleLibExportList</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> library_id, <a class="el" href="group__SceModulemgrKernel.html#structSceKernelModuleExportEntry">SceKernelModuleExportEntry</a> *list, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> cpy_skip_num)</td></tr>
-<tr class="memdesc:ga0c5528896a5d275f75f2612365519829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module export entry.  <a href="group__SceModulemgrKernel.html#ga0c5528896a5d275f75f2612365519829">More...</a><br /></td></tr>
-<tr class="separator:ga0c5528896a5d275f75f2612365519829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga08d50e26cbcc652aed4ec80a1864507e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#ga08d50e26cbcc652aed4ec80a1864507e">ksceKernelGetModuleListByImport</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> library_id, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *modids, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> cpy_skip_num)</td></tr>
-<tr class="memdesc:ga08d50e26cbcc652aed4ec80a1864507e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module id list by import.  <a href="group__SceModulemgrKernel.html#ga08d50e26cbcc652aed4ec80a1864507e">More...</a><br /></td></tr>
-<tr class="separator:ga08d50e26cbcc652aed4ec80a1864507e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4651a5dfd9e716af2e824c6d88805122"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#ga4651a5dfd9e716af2e824c6d88805122">ksceKernelGetProcessLibraryIdList</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *library_ids, <a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num)</td></tr>
-<tr class="memdesc:ga4651a5dfd9e716af2e824c6d88805122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module export list.  <a href="group__SceModulemgrKernel.html#ga4651a5dfd9e716af2e824c6d88805122">More...</a><br /></td></tr>
-<tr class="separator:ga4651a5dfd9e716af2e824c6d88805122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -902,35 +896,6 @@ modid2</td>
 
 </div>
 </div>
-<a name="structSceKernelModuleExportEntry" id="structSceKernelModuleExportEntry"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelModuleExportEntry">&#9670;&nbsp;</a></span>SceKernelModuleExportEntry</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelModuleExportEntry</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga7999da87c7a0b6338f0339a8a932600a"></a>uint32_t</td>
-<td class="fieldname">
-libnid</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga1f6b86086a3fd12bc12c4ba649d3c7a5"></a>const void *</td>
-<td class="fieldname">
-entry</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gaa297434ef456cbbdf41df20a44238a85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa297434ef456cbbdf41df20a44238a85">&#9670;&nbsp;</a></span>SCE_KERNEL_START_SUCCESS</h2>
@@ -1370,7 +1335,52 @@ entry</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">modid</td><td>- target module id </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">module_info</td><td>- module_info output pointer</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- module_info output pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gafa0a09f73b16636aed705c11405f528a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa0a09f73b16636aed705c11405f528a">&#9670;&nbsp;</a></span>ksceKernelGetProcessEntryPointByAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetProcessEntryPointByAddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>module_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get module info by address (internal) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- target process id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">module_addr</td><td>- target module address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- module_info output pointer</td></tr>
   </table>
   </dd>
 </dl>
@@ -2524,169 +2534,6 @@ entry</td>
     <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- target pid </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">modid</td><td>- target library id </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- info output</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga0c5528896a5d275f75f2612365519829"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c5528896a5d275f75f2612365519829">&#9670;&nbsp;</a></span>ksceKernelGetModuleLibExportList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelGetModuleLibExportList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>library_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceModulemgrKernel.html#structSceKernelModuleExportEntry">SceKernelModuleExportEntry</a> *&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
-          <td class="paramname"><em>num</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>cpy_skip_num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get module export entry. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- target pid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">libid</td><td>- target library uid </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">list</td><td>- data output </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">num</td><td>- in:list max num, out:get entry num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cpy_skip_num</td><td>- The index at which to start copying</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga08d50e26cbcc652aed4ec80a1864507e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga08d50e26cbcc652aed4ec80a1864507e">&#9670;&nbsp;</a></span>ksceKernelGetModuleListByImport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelGetModuleListByImport </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>library_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
-          <td class="paramname"><em>modids</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
-          <td class="paramname"><em>num</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>cpy_skip_num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get module id list by import. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- target pid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">library_id</td><td>- target library uid </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">modids</td><td>- module id output list </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">num</td><td>- in:list max num, out:get entry num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cpy_skip_num</td><td>- The index at which to start copying</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga4651a5dfd9e716af2e824c6d88805122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4651a5dfd9e716af2e824c6d88805122">&#9670;&nbsp;</a></span>ksceKernelGetProcessLibraryIdList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelGetProcessLibraryIdList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
-          <td class="paramname"><em>library_ids</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get module export list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- target pid </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">library_ids</td><td>- library id output list </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">num</td><td>- in:list max num, out:get entry num</td></tr>
   </table>
   </dd>
 </dl>

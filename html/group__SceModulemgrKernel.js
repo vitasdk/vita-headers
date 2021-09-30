@@ -25,6 +25,7 @@ var group__SceModulemgrKernel =
     [ "ksceKernelGetModuleInfo", "group__SceModulemgrKernel.html#gacecebf1d4bb156b73646f76c4c16cee6", null ],
     [ "ksceKernelGetModuleInfoMinByAddr", "group__SceModulemgrKernel.html#ga47fa309f35451118f8b934f97f794165", null ],
     [ "ksceKernelGetModuleInternal", "group__SceModulemgrKernel.html#gacc93c42e732e167f276ed09892cedfaa", null ],
+    [ "ksceKernelGetProcessEntryPointByAddr", "group__SceModulemgrKernel.html#gafa0a09f73b16636aed705c11405f528a", null ],
     [ "ksceKernelGetModuleIdByAddr", "group__SceModulemgrKernel.html#ga6abf55c09b2c587a7c5e1538e1f87414", null ],
     [ "ksceKernelSearchModuleByName", "group__SceModulemgrKernel.html#ga57a0cbedf74ca1199eaa3c28da2ff0aa", null ],
     [ "ksceKernelGetSystemSwVersion", "group__SceModulemgrKernel.html#gaf8e98274a12bb8b9822b24164ac5e3dc", null ],
@@ -46,8 +47,5 @@ var group__SceModulemgrKernel =
     [ "ksceKernelUmountBootfs", "group__SceModulemgrKernel.html#gabf6e33f8ddb4e65999805415d838cf20", null ],
     [ "ksceKernelGetProcessMainModule", "group__SceModulemgrKernel.html#gaf83a2645b578d8082cbe93a0d80becfe", null ],
     [ "ksceKernelGetModulePath", "group__SceModulemgrKernel.html#gab4cc15ec37a12f1dfe1adec9a00053ba", null ],
-    [ "ksceKernelGetModuleLibraryInfo", "group__SceModulemgrKernel.html#ga292971abb283d62b9ec487dfa3212316", null ],
-    [ "ksceKernelGetModuleLibExportList", "group__SceModulemgrKernel.html#ga0c5528896a5d275f75f2612365519829", null ],
-    [ "ksceKernelGetModuleListByImport", "group__SceModulemgrKernel.html#ga08d50e26cbcc652aed4ec80a1864507e", null ],
-    [ "ksceKernelGetProcessLibraryIdList", "group__SceModulemgrKernel.html#ga4651a5dfd9e716af2e824c6d88805122", null ]
+    [ "ksceKernelGetModuleLibraryInfo", "group__SceModulemgrKernel.html#ga292971abb283d62b9ec487dfa3212316", null ]
 ];
