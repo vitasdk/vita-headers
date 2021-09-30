@@ -20,7 +20,7 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "sblaimgr.h", "sblaimgr_8h.html", "sblaimgr_8h" ],
     [ "sblauthmgr.h", "sblauthmgr_8h.html", "sblauthmgr_8h" ],
     [ "syscon.h", "syscon_8h.html", "syscon_8h" ],
-    [ "types.h", "ern_2types_8h.html", null ],
+    [ "types.h", "ern_2types_8h.html", "ern_2types_8h" ],
     [ "uart.h", "uart_8h.html", "uart_8h" ],
     [ "udcd.h", "ern_2udcd_8h.html", "ern_2udcd_8h" ],
     [ "usbd.h", "ern_2usbd_8h.html", "ern_2usbd_8h" ],

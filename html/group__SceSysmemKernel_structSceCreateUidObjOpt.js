@@ -6,5 +6,6 @@ var group__SceSysmemKernel_structSceCreateUidObjOpt =
     [ "pid", "group__SceSysmemKernel.html#gaaae8dbc38a99e9e06641db4a816e56c4", null ],
     [ "field_10", "group__SceSysmemKernel.html#ga64fa0b60a54fd6405c93d062a00e864b", null ],
     [ "field_14", "group__SceSysmemKernel.html#ga5a55adc297f50cd80da2c69ddc70902a", null ],
-    [ "field_18", "group__SceSysmemKernel.html#ga4239a73fd08c5195a932cceb9302a38e", null ]
+    [ "field_18", "group__SceSysmemKernel.html#ga4239a73fd08c5195a932cceb9302a38e", null ],
+    [ "field_1C", "group__SceSysmemKernel.html#gab3183e77d97ee9c33b39499c30caccfc", null ]
 ];

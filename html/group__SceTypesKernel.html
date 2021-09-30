@@ -72,6 +72,8 @@ $(document).ready(function(){initNavTree('group__SceTypesKernel.html',''); initR
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__Vitasdk.html">Vitasdk</a> &raquo; <a class="el" href="group__SceTypes.html">Types Defines</a></div></div>  </div>
 </div><!--header-->
@@ -84,7 +86,71 @@ $(document).ready(function(){initNavTree('group__SceTypesKernel.html',''); initR
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2types_8h.html">psp2kern/types.h</a>&gt;</span> </div>
 </div><!-- fragment --><p><br  />
  </p><hr  />
- <hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga16bd89500bda643408a63870447d9993"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#structSceKernelPAVector">SceKernelPAVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga16bd89500bda643408a63870447d9993">SceKernelPaddrList</a></td></tr>
+<tr class="separator:ga16bd89500bda643408a63870447d9993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceKernelAddrPair" id="structSceKernelAddrPair"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelAddrPair">&#9670;&nbsp;</a></span>SceKernelAddrPair</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelAddrPair</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaa069395ec7882746bb975c2018b4d842"></a>uint32_t</td>
+<td class="fieldname">
+addr</td>
+<td class="fielddoc">
+Address. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaae6d39e0dfac491a8a2d87b77121a213"></a>uint32_t</td>
+<td class="fieldname">
+length</td>
+<td class="fielddoc">
+Length. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelVARange" id="structSceKernelVARange"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelVARange">&#9670;&nbsp;</a></span>SceKernelVARange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelVARange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga7d4260f0de2b7dd0bad9ea38428885bf"></a>uint32_t</td>
+<td class="fieldname">
+addr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga25e5a2e9a05758d12e34f790b195abf6"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceKernelPARange" id="structSceKernelPARange"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceKernelPARange">&#9670;&nbsp;</a></span>SceKernelPARange</h2>
 
@@ -111,6 +177,120 @@ size</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<a name="structSceKernelPAVector" id="structSceKernelPAVector"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelPAVector">&#9670;&nbsp;</a></span>SceKernelPAVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelPAVector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga166422e9a7136c534cb4603595f1a1d8"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of this structure. </td></tr>
+<tr><td class="fieldtype">
+<a id="gae84d8ba21140019bf69b388575050b8c"></a>union <a class="el" href="group__SceTypesKernel.html#unionSceKernelPAVector_8____unnamed____">SceKernelPAVector</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionSceKernelPAVector_8____unnamed____" id="unionSceKernelPAVector_8____unnamed____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionSceKernelPAVector_8____unnamed____">&#9670;&nbsp;</a></span>SceKernelPAVector.__unnamed__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union SceKernelPAVector.__unnamed__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a04d3ba270993d7b58f7b7dbf6025683f"></a><a class="el" href="group__SceTypesKernel.html#structSceKernelPAVector_8____unnamed_____8____unnamed____">__unnamed__</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7384dfd0b43b293f4b86f50b3646fa37"></a><a class="el" href="group__SceTypesKernel.html#structSceKernelPAVector_8____unnamed_____8____unnamed____">__unnamed__</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelPAVector_8____unnamed_____8____unnamed____" id="structSceKernelPAVector_8____unnamed_____8____unnamed____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelPAVector_8____unnamed_____8____unnamed____">&#9670;&nbsp;</a></span>SceKernelPAVector.__unnamed__.__unnamed__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelPAVector.__unnamed__.__unnamed__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a5d2a317a59847deee3ca99dd68099f52"></a>uint32_t</td>
+<td class="fieldname">
+ranges_size</td>
+<td class="fielddoc">
+Ex: 8. </td></tr>
+<tr><td class="fieldtype">
+<a id="aaac359f91d85f63a792da187d44092de"></a>uint32_t</td>
+<td class="fieldname">
+data_in_vector</td>
+<td class="fielddoc">
+Must be &lt;= 8. </td></tr>
+<tr><td class="fieldtype">
+<a id="ae2942a04780e223b215eb8b663cf5353"></a>uint32_t</td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8d8102fb58fd9e8e1b76f1907171bc97"></a><a class="el" href="group__SceTypesKernel.html#structSceKernelPARange">SceKernelPARange</a> *</td>
+<td class="fieldname">
+ranges</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga16bd89500bda643408a63870447d9993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16bd89500bda643408a63870447d9993">&#9670;&nbsp;</a></span>SceKernelPaddrList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group__SceTypesKernel.html#structSceKernelPAVector">SceKernelPAVector</a> <a class="el" href="group__SceTypesKernel.html#ga16bd89500bda643408a63870447d9993">SceKernelPaddrList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

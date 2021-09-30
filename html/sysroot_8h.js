@@ -4,7 +4,6 @@ var sysroot_8h =
     [ "SCE_SYSROOT_INIT_CALLBACK_MAX_SLOT", "group__SceKernelSysrootKernel.html#gaac6c04a259f3323b8cce37f16415c1f0", null ],
     [ "ksceKernelGetSysrootBuffer", "group__SceKernelSysrootKernel.html#ga192d7ce764117e51b25a1879f5bc06a0", null ],
     [ "ksceKernelGetProcessTitleId", "group__SceKernelSysrootKernel.html#ga666ce33aa0fa454d5fcff558840ed258", null ],
-    [ "SceKernelVARange", "group__SceKernelSysrootKernel.html#ga5fb89e56dc9026107162eefd31bf2281", null ],
     [ "SceKernelBootArgs", "group__SceKernelSysrootKernel.html#gad4da8e9a7bb7fbfabedd6221a89e376f", null ],
     [ "SceSysrootModulemgrHandlers", "group__SceKernelSysrootKernel.html#ga07c38484329702160a6b307183fb6d4d", null ],
     [ "SceSysrootForKernel_D29BCA77_struct", "group__SceKernelSysrootKernel.html#ga339b520d143361d21d51553b41f8cb95", null ],
