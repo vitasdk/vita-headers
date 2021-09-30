@@ -8,6 +8,7 @@
 #define _PSP2_PSS_H_
 
 #include <psp2/types.h>
+#include <pthread.h>
 
 #ifdef __cplusplus
 extern "C" {
