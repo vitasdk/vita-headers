@@ -23,6 +23,23 @@ typedef struct SceKernelProcessInfo {
 	int unk[0xE8 / 4 - 6];  //!< the rest is unknown
 } SceKernelProcessInfo;
 
+typedef struct SceModuleLibraryInfo SceModuleLibraryInfo;
+typedef struct SceModuleNonlinkedInfo SceModuleNonlinkedInfo;
+typedef struct SceModuleInfoInternal SceModuleInfoInternal;
+
+typedef struct SceKernelProcessModuleInfo { // size is 0x24
+	SceUID pid;
+	SceModuleLibraryInfo *library_info;
+	SceUID data_0x08;                              // uid?
+	SceModuleNonlinkedInfo *nonlinked_info;
+	SceModuleInfoInternal *module_info;
+	SceUID process_main_module_id;
+	uint16_t process_module_count;
+	uint16_t inhibit_state;
+	void *data_0x1C;
+	int cpu_addr;
+} SceKernelProcessModuleInfo;
+
 void *ksceKernelGetProcessKernelBuf(SceUID pid);
 
 int ksceKernelGetProcessInfo(SceUID pid, SceKernelProcessInfo *info);
@@ -72,8 +89,6 @@ int ksceKernelGetProcessStatus(SceUID pid, int *status);
  * @return      The thread UID on success, else < 0 on error.
  */
 SceUID ksceKernelGetProcessMainThread(SceUID pid);
-
-typedef struct SceKernelProcessModuleInfo SceKernelProcessModuleInfo;
 
 /**
  * @brief       Get the process module control block.
