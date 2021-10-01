@@ -15,12 +15,11 @@ extern "C" {
 #endif
 
 #define PSS_OK 0
-#define PSS_ERROR_THREAD_SUSPENDED -2147319763
+#define PSS_ERROR_THREAD_SUSPENDED 0x8002802D
 
-/* IO Defines */
-#define PSS_ERROR_ERRNO_EEXIST -2147418095
-#define PSS_ERROR_ERRNO_ENOENT -2147418110
-#define PSS_ERROR_ERRNO_EACCES -2147418099
+#define PSS_ERROR_ERRNO_EEXIST 0x80010011
+#define PSS_ERROR_ERRNO_ENOENT 0x80010002
+#define PSS_ERROR_ERRNO_EACCES 0x8001000D
 
 #define PSS_STM_RWU (00600)
 #define PSS_STM_FDIR (0x1 << 12)
@@ -36,7 +35,6 @@ extern "C" {
 #define PSS_CST_AT 0x0010
 #define PSS_CST_MT 0x0020
 
-/* Net defines */
 #define PSS_NET_IPPROTO_IP            0
 #define PSS_NET_IPPROTO_ICMP          1
 #define PSS_NET_IPPROTO_IGMP          2
@@ -274,40 +272,40 @@ typedef struct pss_ucontext {
 	PSSFloatRegisters fregs;
 } pss_ucontext;
 
-typedef struct _PssCryptoContext {
+typedef struct PssCryptoContext {
 	int handle;
 	int valid;
 	int size;
 	int type;
 } PssCryptoContext;
 
-typedef struct _PssTimeval {
-	long tv_sec;
-	long tv_usec;
+typedef struct PssTimeval {
+	int64_t tv_sec;
+	int64_t tv_usec;
 } PssTimeval;
 
-typedef struct _PssTimespec {
+typedef struct PssTimespec {
 	int tv_sec;
 	int tv_nsec;
 } PssTimespec;
 
-typedef struct _PssTimezone {
+typedef struct PssTimezone {
 	int tz_minuteswest;
 	int tz_dsttime;
 } PssTimezone;
 
-typedef struct _PssDateTime {
-    unsigned short year;
-    unsigned short month;
-    unsigned short day;
-    unsigned short hour;
-    unsigned short minute;
-    unsigned short second;
+typedef struct PssDateTime {
+    uint16_t year;
+    uint16_t month;
+    uint16_t day;
+    uint16_t hour;
+    uint16_t minute;
+    uint16_t second;
     unsigned int   microsecond;
 } PssDateTime;
 
 
-typedef struct _PssIoStat {
+typedef struct PssIoStat {
 	int st_mode;
 	unsigned int st_attr;
 	int64_t st_size;
@@ -317,31 +315,31 @@ typedef struct _PssIoStat {
 	unsigned int st_private[6];
 } PssIoStat;
 
-typedef struct _PssNetHostent {
-    char  *h_name;
+typedef struct PssNetHostent {
+    char *h_name;
     char **h_aliases;
-    int    h_addrtype;
-    int    h_length;
+    int h_addrtype;
+    int h_length;
     char **h_addr_list;
 } PssNetHostent;
 
-typedef struct _PssNetLinger {
+typedef struct PssNetLinger {
     int l_onoff;
     int l_linger;
 } PssNetLinger;
 
-typedef struct _PssNetSockaddr {
+typedef struct PssNetSockaddr {
     unsigned char sa_len;
     unsigned char sa_family;
     signed char sa_data[14];
 } PssNetSockaddr;
 
-typedef struct _PssNetIovec {
+typedef struct PssNetIovec {
     void *iov_base;
     int iov_len;
 } PssNetIovec;
 
-typedef struct _PssNetMsghdr {
+typedef struct PssNetMsghdr {
     void *msg_name;
     uint32_t msg_namelen;
     PssNetIovec *msg_iov;
@@ -351,169 +349,158 @@ typedef struct _PssNetMsghdr {
     int msg_flags;
 } PssNetMsghdr;
 
-typedef struct _PssNetInAddr {
+typedef struct PssNetInAddr {
     uint32_t s_addr;
 } PssNetInAddr;
 
-typedef struct _PssNetIpMreq {
+typedef struct PssNetIpMreq {
     PssNetInAddr imr_multiaddr;
     PssNetInAddr imr_interface;
 } PssNetIpMreq;
 
 
-typedef struct _PssNetSockaddrIn {
+typedef struct PssNetSockaddrIn {
     unsigned char sin_len;
     unsigned char sin_family;
-    unsigned short sin_port;
+    uint16_t sin_port;
     PssNetInAddr sin_addr;
-    unsigned short sin_vport;
+    uint16_t sin_vport;
     unsigned char sin_zero[6];
 } PssNetSockaddrIn;
 
 typedef struct PssNetEpollDataExt {
-        int id;
-        uint32_t u32;
+    int id;
+    uint32_t u32;
 } PssNetEpollDataExt;
 
 typedef union PssNetEpollData {
-        void *ptr;
-        int fd;
-        uint32_t u32;
-        uint64_t u64;
-        PssNetEpollDataExt ext;
+    void *ptr;
+    int fd;
+    uint32_t u32;
+    uint64_t u64;
+    PssNetEpollDataExt ext;
 } PssNetEpollData;
 
 typedef struct PssNetEpollSystemData {
-        uint32_t system[4];
+    uint32_t system[4];
 } PssNetEpollSystemData;
 
 typedef struct PssNetEpollEvent {
-        uint32_t events;
-        uint32_t reserved;
-        PssNetEpollSystemData system;
-        PssNetEpollData data;
+    uint32_t events;
+    uint32_t reserved;
+    PssNetEpollSystemData system;
+    PssNetEpollData data;
 } PssNetEpollEvent;
 
 
-/* Misc */
-int pss_getpid ();
-int pss_nanosleep (const PssTimespec *req, PssTimespec *rem);
+int pss_getpid();
+int pss_nanosleep(const PssTimespec *req, PssTimespec *rem);
 
-/* Threading */
 typedef void (*pss_exception_callback)(pthread_t tid, pss_ucontext *ctx);
-int32_t pss_suspend_thread (int tid, uint32_t *timeout);
-int32_t pss_resume_thread (int tid);
-int32_t pss_set_thread_context (int tid, PSSIntegerRegisters *iregs, PSSFloatRegisters *fregs);
-int32_t pss_get_thread_context (int tid, PSSIntegerRegisters *iregs, PSSFloatRegisters *fregs);
-void pss_disable_ftz ();
-int pss_supports_fast_tls ();
-void pss_threads_initialize (pss_exception_callback cb);
-void *pss_get_stack_bottom ();
+int32_t pss_suspend_thread(int tid, uint32_t *timeout);
+int32_t pss_resume_thread(int tid);
+int32_t pss_set_thread_context(int tid, PSSIntegerRegisters *iregs, PSSFloatRegisters *fregs);
+int32_t pss_get_thread_context(int tid, PSSIntegerRegisters *iregs, PSSFloatRegisters *fregs);
+void pss_disable_ftz();
+int pss_supports_fast_tls();
+void pss_threads_initialize(pss_exception_callback cb);
+void *pss_get_stack_bottom();
 
-/* Time */
-uint32_t pss_get_ticks_32 (void);
-int64_t pss_get_ticks_64 (void);
-int64_t pss_get_ticks_since_111 (void);
-int pss_gettimeofday (PssTimeval *tv, PssTimezone *tz);
-int32_t pss_delay_thread (uint32_t usec);
-int pss_get_win32_filetime (const PssDateTime *time, uint64_t *win32time);
-int pss_set_win32_filetime (PssDateTime *time, uint64_t win32time);
+uint32_t pss_get_ticks_32(void);
+int64_t pss_get_ticks_64(void);
+int64_t pss_get_ticks_since_111(void);
+int pss_gettimeofday(PssTimeval *tv, PssTimezone *tz);
+int32_t pss_delay_thread(uint32_t usec);
+int pss_get_win32_filetime(const PssDateTime *time, uint64_t *win32time);
+int pss_set_win32_filetime(PssDateTime *time, uint64_t win32time);
 
-/* PRng */
-void *pss_get_prng_provider ();
-void pss_free_prng_provider (void *provider);
-void pss_prng_fill (void *provider, unsigned char *buffer, size_t bytes);
+void *pss_get_prng_provider();
+void pss_free_prng_provider(void *provider);
+void pss_prng_fill(void *provider, unsigned char *buffer, size_t bytes);
 
-/* Memory */
-int pss_getpagesize ();
+int pss_getpagesize();
 
-void pss_code_mem_initialize ();
-void pss_code_mem_flush_icache (uint8_t *code, int size);
-void *pss_code_mem_alloc (unsigned int *length);
-void pss_code_mem_lock ();
-void pss_code_mem_unlock ();
-int pss_code_mem_free (void *code);
-void pss_code_mem_terminate ();
+void pss_code_mem_initialize();
+void pss_code_mem_flush_icache(uint8_t *code, int size);
+void *pss_code_mem_alloc(unsigned int *length);
+void pss_code_mem_lock();
+void pss_code_mem_unlock();
+int pss_code_mem_free(void *code);
+void pss_code_mem_terminate();
 
-void *pss_alloc_mem (size_t length, size_t alignment);
-int pss_free_mem (void *addr, size_t length);
+void *pss_alloc_mem(size_t length, size_t alignment);
+int pss_free_mem(void *addr, size_t length);
 
-int pss_alloc_raw (void **base, size_t length);
-void pss_free_raw (int id);
+int pss_alloc_raw(void **base, size_t length);
+void pss_free_raw(int id);
 
-/* USB Transport */
-void pss_usb_transport_connect (const char *address);
-void pss_usb_transport_close1 (void);
-void pss_usb_transport_close2 (void);
-int pss_usb_transport_send (void *data, int len);
-int pss_usb_transport_recv (void *data, int len);
+void pss_usb_transport_connect(const char *address);
+void pss_usb_transport_close1(void);
+void pss_usb_transport_close2(void);
+int pss_usb_transport_send(void *data, int len);
+int pss_usb_transport_recv(void *data, int len);
 
-/* Crypto */
-int pss_crypto_open (PssCryptoContext *context, const char *path);
-char *pss_crypto_read (PssCryptoContext *context);
-int pss_crypto_fread (PssCryptoContext *context, char *buffer, int bytes);
-void pss_crypto_close (PssCryptoContext *context);
+int pss_crypto_open(PssCryptoContext *context, const char *path);
+char *pss_crypto_read(PssCryptoContext *context);
+int pss_crypto_fread(PssCryptoContext *context, char *buffer, int bytes);
+void pss_crypto_close(PssCryptoContext *context);
 
-/* Semaphores */
-int pss_create_semaphore (int32_t initial);
-void pss_delete_semaphore (int32_t semaphore);
-int pss_signal_semaphore (int32_t semaphore, int32_t count);
-int pss_wait_semaphore (int32_t semaphore, int32_t count, uint32_t *timeout);
+int pss_create_semaphore(int32_t initial);
+void pss_delete_semaphore(int32_t semaphore);
+int pss_signal_semaphore(int32_t semaphore, int32_t count);
+int pss_wait_semaphore(int32_t semaphore, int32_t count, uint32_t *timeout);
 
-/* IO */
-int pss_io_mkdir (const char *dirname, int mode);
-int pss_io_rmdir (const char *dirname);
-int pss_io_getstat (const char *filename, PssIoStat *stat);
-int pss_io_rename (const char *src, const char *dst);
-int pss_io_open (const char *filename, int flag, int mode);
-int pss_io_close (int fd);
-int pss_io_remove (const char *filename);
-int pss_io_dopen (const char *dirname);
-int pss_io_dclose (int fd);
-int pss_io_read (int fd, void *buf, unsigned int nbyte);
-int pss_io_write (int fd, void *buf, unsigned int nbyte);
-int pss_io_lseek (int fd, int offset, int whence);
-int pss_io_chstat (const char *name, const PssIoStat *buf, unsigned int cbit);
+int pss_io_mkdir(const char *dirname, int mode);
+int pss_io_rmdir(const char *dirname);
+int pss_io_getstat(const char *filename, PssIoStat *stat);
+int pss_io_rename(const char *src, const char *dst);
+int pss_io_open(const char *filename, int flag, int mode);
+int pss_io_close(int fd);
+int pss_io_remove(const char *filename);
+int pss_io_dopen(const char *dirname);
+int pss_io_dclose(int fd);
+int pss_io_read(int fd, void *buf, unsigned int nbyte);
+int pss_io_write(int fd, void *buf, unsigned int nbyte);
+int pss_io_lseek(int fd, int offset, int whence);
+int pss_io_chstat(const char *name, const PssIoStat *buf, unsigned int cbit);
 
-/* Network */
+void pss_net_init();
+int pss_net_shutdown(int socket, int how);
+int *pss_get_errnoloc();
+#define pss_net_errno(*pss_get_errnoloc())
+int pss_net_socket_close(int socket);
+int pss_net_accept(int socket, PssNetSockaddr *addr, uint32_t *len);
+int pss_net_bind(int socket, PssNetSockaddr *addr, uint32_t len);
+int pss_net_connect(int socket, const PssNetSockaddr *addr, uint32_t len);
+int pss_net_getpeername(int socket, PssNetSockaddr *addr, uint32_t *len);
+int pss_net_getsockname(int socket, PssNetSockaddr *addr, uint32_t *len);
+int pss_net_getsockopt(int socket, int level, int optname, void *optval, uint32_t *len);
+int pss_net_setsockopt(int socket, int level, int optname, const void *optval, uint32_t len);
+int pss_net_gethostname(char *name, size_t len);
+int pss_net_resolver_start_aton(int rid, const PssNetInAddr *addr, char *hostname, int len, int timeout, int retry, int flags);
+int pss_net_resolver_start_ntoa(int rid, const char *hostname, PssNetInAddr *addr, int timeout, int retry, int flags);
+int pss_net_resolver_create(const char *name, void *param, int flags);
+int pss_net_listen(int socket, int backlog);
+int pss_net_recv(int socket, void *buf, uint32_t len, int flags);
+int pss_net_recvfrom(int socket, void *buf, uint32_t len, int flags, PssNetSockaddr *addr, uint32_t *fromlen);
+int pss_net_send(int socket, const void *msg, uint32_t len, int flags);
+int pss_net_sendto(int socket, const void *msg, uint32_t len, int flags, const PssNetSockaddr *to, uint32_t tolen);
+int pss_net_socket(const char *name, int domain, int type, int protocol);
+int pss_net_socket_available(int socket, int* amount);
+uint16_t pss_net_ntohs(uint16_t net16);
+uint32_t pss_net_ntohl(uint32_t net32);
+uint16_t pss_net_htons(uint16_t net16);
+uint32_t pss_net_htonl(uint32_t net32);
+PssNetInAddr* pss_net_get_local_ips(int family, int* nips);
 
-void pss_net_init ();
-int pss_net_shutdown (int s, int how);
-int *pss_get_errnoloc ();
-#define pss_net_errno (*pss_get_errnoloc ())
-int pss_net_socket_close (int sock);
-int pss_net_accept (int s, PssNetSockaddr *addr, uint32_t *len);
-int pss_net_bind (int s, PssNetSockaddr *addr, uint32_t len);
-int pss_net_connect (int s, const PssNetSockaddr *addr, uint32_t len);
-int pss_net_getpeername (int s, PssNetSockaddr *addr, uint32_t *len);
-int pss_net_getsockname (int s, PssNetSockaddr *addr, uint32_t *len);
-int pss_net_getsockopt (int s, int level, int optname, void *optval, uint32_t *len);
-int pss_net_setsockopt (int s, int level, int optname, const void *optval, uint32_t len);
-int pss_net_gethostname (char *name, size_t len);
-int pss_net_resolver_start_aton (int rid, const PssNetInAddr *addr, char *hostname, int len, int timeout, int retry, int flags);
-int pss_net_resolver_start_ntoa (int rid, const char *hostname, PssNetInAddr *addr, int timeout, int retry, int flags);
-int pss_net_resolver_create (const char *name, void *param, int flags);
-int pss_net_listen (int sock, int backlog);
-int pss_net_recv (int s, void *buf, uint32_t len, int flags);
-int pss_net_recvfrom (int s, void *buf, uint32_t len, int flags, PssNetSockaddr *addr, uint32_t *fromlen);
-int pss_net_send (int s, const void *msg, uint32_t len, int flags);
-int pss_net_sendto (int s, const void *msg, uint32_t len, int flags, const PssNetSockaddr *to, uint32_t tolen);
-int pss_net_socket (const char *name, int domain, int type, int protocol);
-int pss_net_socket_available (int s, int* amount);
-unsigned short pss_net_ntohs (unsigned short net16);
-uint32_t pss_net_ntohl (uint32_t net32);
-unsigned short pss_net_htons (unsigned short net16);
-uint32_t pss_net_htonl (uint32_t net32);
-PssNetInAddr* pss_net_get_local_ips (int family, int* nips);
+int pss_net_epoll_create(const char *name, int flags);
+int pss_net_epoll_ctl(int eid, int op, int id, PssNetEpollEvent *event);
+int pss_net_epoll_wait(int eid, PssNetEpollEvent *events, int maxevents, int timeout);
+int pss_net_epoll_destroy(int eid);
+int pss_net_epoll_abort(int eid, int flags);
 
-int pss_net_epoll_create (const char *name, int flags);
-int pss_net_epoll_ctl (int eid, int op, int id, PssNetEpollEvent *event);
-int pss_net_epoll_wait (int eid, PssNetEpollEvent *events, int maxevents, int timeout);
-int pss_net_epoll_destroy (int eid);
-int pss_net_epoll_abort (int eid, int flags);
-
-void *pss_load_system_certs (void **out_pemList);
-void pss_free_system_certs (void *ctx);
+void *pss_load_system_certs(void **out_pemList);
+void pss_free_system_certs(void *ctx);
 
 #define PSS_NET_ID_SOCKET_MIN      0
 #define PSS_NET_ID_SOCKET_MAX      1023
@@ -564,7 +551,7 @@ typedef struct {
 	PSS_NET_ID_ZERO(p, PSS_NET_FD_SETSIZE)
 #define FD_SETSIZE PSS_NET_FD_SETSIZE
 
-int pss_net_select (int nfds, PssNetFdSet *readFds, PssNetFdSet *writefds, PssNetFdSet *exceptfds, int ms_timeout);
+int pss_net_select(int nfds, PssNetFdSet *readFds, PssNetFdSet *writefds, PssNetFdSet *exceptfds, int ms_timeout);
 
 int pss_return_to_lb( void );
   
