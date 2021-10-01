@@ -73,6 +73,17 @@ int ksceKernelGetProcessStatus(SceUID pid, int *status);
  */
 SceUID ksceKernelGetProcessMainThread(SceUID pid);
 
+typedef struct SceKernelProcessModuleInfo SceKernelProcessModuleInfo;
+
+/**
+ * @brief       Get the process module control block.
+ *
+ * @param[in] - The target process id.
+ *
+ * @return      The process module cb pointer
+ */
+SceKernelProcessModuleInfo *ksceKernelGetProcessModuleInfo(SceUID pid);
+
 #ifdef __cplusplus
 }
 #endif
