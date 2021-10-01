@@ -241,6 +241,7 @@ var annotated_dup =
     [ "SceKernelPAVector.__unnamed__.__unnamed__", "group__SceTypesKernel.html#structSceKernelPAVector_8____unnamed_____8____unnamed____", "group__SceTypesKernel_structSceKernelPAVector_8____unnamed_____8____unnamed____" ],
     [ "SceKernelProcessContext", "group__SceSysmemKernel.html#structSceKernelProcessContext", "group__SceSysmemKernel_structSceKernelProcessContext" ],
     [ "SceKernelProcessInfo", "group__SceProcessmgrKernel.html#structSceKernelProcessInfo", "group__SceProcessmgrKernel_structSceKernelProcessInfo" ],
+    [ "SceKernelProcessModuleInfo", "group__SceProcessmgrKernel.html#structSceKernelProcessModuleInfo", "group__SceProcessmgrKernel_structSceKernelProcessModuleInfo" ],
     [ "SceKernelSegmentInfo", "group__SceModulemgrUser.html#structSceKernelSegmentInfo", "group__SceModulemgrUser_structSceKernelSegmentInfo" ],
     [ "SceKernelSegmentInfo2", "group__SceModulemgrKernel.html#structSceKernelSegmentInfo2", "group__SceModulemgrKernel_structSceKernelSegmentInfo2" ],
     [ "SceKernelSemaInfo", "group__SceThreadMgrUser.html#structSceKernelSemaInfo", "group__SceThreadMgrUser_structSceKernelSemaInfo" ],

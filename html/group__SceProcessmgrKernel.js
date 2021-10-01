@@ -1,7 +1,9 @@
 var group__SceProcessmgrKernel =
 [
+    [ "SceModuleLibraryInfo", "group__SceProcessmgrKernel.html#gadfabd62239b32ffc70cf6c3aa7d793d2", null ],
+    [ "SceModuleNonlinkedInfo", "group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47", null ],
+    [ "SceModuleInfoInternal", "group__SceProcessmgrKernel.html#ga128ad939437db491ccd5e9a38e33a900", null ],
     [ "SceKernelProcessType", "group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf", null ],
-    [ "SceKernelProcessModuleInfo", "group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4", null ],
     [ "ksceKernelGetProcessKernelBuf", "group__SceProcessmgrKernel.html#ga6b3b5f895ae1e3fd5e89bb57467e55ca", null ],
     [ "ksceKernelGetProcessInfo", "group__SceProcessmgrKernel.html#ga0900825db6367507b27169093cf58227", null ],
     [ "ksceKernelCreateProcessLocalStorage", "group__SceProcessmgrKernel.html#ga3845b5bbcdb0cbb823dab8a5ec669971", null ],

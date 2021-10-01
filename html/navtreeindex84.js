@@ -1,5 +1,9 @@
 var NAVTREEINDEX84 =
 {
+"uid__class_8h.html":[4,0,1,1,2,1,3],
+"uid__class_8h_source.html":[4,0,1,1,2,1,3],
+"uid__guid_8h.html":[4,0,1,1,2,1,4],
+"uid__guid_8h_source.html":[4,0,1,1,2,1,4],
 "uid__puid_8h.html":[4,0,1,1,2,1,5],
 "uid__puid_8h_source.html":[4,0,1,1,2,1,5],
 "update_8h.html":[4,0,1,0,75],
