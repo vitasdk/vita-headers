@@ -118,11 +118,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7922b417466daa37ba0514784cf7ef0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b">ksceKernelGetProcessMainThread</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="memdesc:ga7922b417466daa37ba0514784cf7ef0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the main thread for a given process.  <a href="group__SceProcessmgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b">More...</a><br /></td></tr>
 <tr class="separator:ga7922b417466daa37ba0514784cf7ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc465e37535bc301e52e274a7db5bdc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4">SceKernelProcessModuleInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5">ksceKernelGetProcessModuleInfo</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gabc465e37535bc301e52e274a7db5bdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process module control block.  <a href="group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5">More...</a><br /></td></tr>
+<tr class="separator:gabc465e37535bc301e52e274a7db5bdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga337851539a6ec21c154d8fbdadc63eaf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a></td></tr>
 <tr class="separator:ga337851539a6ec21c154d8fbdadc63eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3e18a19d6ad099d8ac5b5654cb15ee4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4">SceKernelProcessModuleInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4">SceKernelProcessModuleInfo</a></td></tr>
+<tr class="separator:gac3e18a19d6ad099d8ac5b5654cb15ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelProcessInfo" id="structSceKernelProcessInfo"></a>
@@ -193,6 +198,20 @@ the rest is unknown </td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="group__SceTypesUser.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac3e18a19d6ad099d8ac5b5654cb15ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3e18a19d6ad099d8ac5b5654cb15ee4">&#9670;&nbsp;</a></span>SceKernelProcessModuleInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4">SceKernelProcessModuleInfo</a> <a class="el" href="group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4">SceKernelProcessModuleInfo</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -511,6 +530,33 @@ the rest is unknown </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The thread UID on success, else &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gabc465e37535bc301e52e274a7db5bdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc465e37535bc301e52e274a7db5bdc5">&#9670;&nbsp;</a></span>ksceKernelGetProcessModuleInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4">SceKernelProcessModuleInfo</a>* ksceKernelGetProcessModuleInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the process module control block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>The target process id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The process module cb pointer </dd></dl>
 
 </div>
 </div>

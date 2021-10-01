@@ -1,6 +1,7 @@
 var group__SceProcessmgrKernel =
 [
     [ "SceKernelProcessType", "group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf", null ],
+    [ "SceKernelProcessModuleInfo", "group__SceProcessmgrKernel.html#gac3e18a19d6ad099d8ac5b5654cb15ee4", null ],
     [ "ksceKernelGetProcessKernelBuf", "group__SceProcessmgrKernel.html#ga6b3b5f895ae1e3fd5e89bb57467e55ca", null ],
     [ "ksceKernelGetProcessInfo", "group__SceProcessmgrKernel.html#ga0900825db6367507b27169093cf58227", null ],
     [ "ksceKernelCreateProcessLocalStorage", "group__SceProcessmgrKernel.html#ga3845b5bbcdb0cbb823dab8a5ec669971", null ],
@@ -10,5 +11,6 @@ var group__SceProcessmgrKernel =
     [ "ksceKernelResumeProcess", "group__SceProcessmgrKernel.html#ga3d6212e760ed87b8dff0560329c1ddc6", null ],
     [ "ksceKernelSuspendProcess", "group__SceProcessmgrKernel.html#gad71f056f14de2b141a5af710d62fe83d", null ],
     [ "ksceKernelGetProcessStatus", "group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f", null ],
-    [ "ksceKernelGetProcessMainThread", "group__SceProcessmgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b", null ]
+    [ "ksceKernelGetProcessMainThread", "group__SceProcessmgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b", null ],
+    [ "ksceKernelGetProcessModuleInfo", "group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5", null ]
 ];
