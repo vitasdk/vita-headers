@@ -13,9 +13,6 @@
 extern "C" {
 #endif
 
-/** 64-bit system clock type. */
-typedef SceUInt64 SceKernelSysClock;
-
 /* Threads. */
 
 typedef int (*SceKernelThreadEntry)(SceSize args, void *argp);

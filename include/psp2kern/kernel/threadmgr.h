@@ -15,9 +15,6 @@ extern "C" {
 
 #define SCE_KERNEL_MUTEX_ATTR_RECURSIVE 2
 
-/** 64-bit system clock type. */
-typedef SceUInt64 SceKernelSysClock;
-
 /* Threads. */
 
 typedef int (* SceKernelThreadEntry)(SceSize args, void *argp);

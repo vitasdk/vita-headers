@@ -6,7 +6,7 @@
 #ifndef _PSP2_KERNEL_TYPES_H_
 #define _PSP2_KERNEL_TYPES_H_
 
-#include <psp2/types.h>
+#include <psp2common/types.h>
 
 #ifdef __cplusplus
 extern "C" {
