@@ -101,7 +101,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7426fa4734515219b68466bb9a50dda4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga7426fa4734515219b68466bb9a50dda4">sceMotionGetDeviceLocation</a> (<a class="el" href="group__SceMotionUser.html#structSceMotionDeviceLocation">SceMotionDeviceLocation</a> *deviceLocation)</td></tr>
 <tr class="memdesc:ga7426fa4734515219b68466bb9a50dda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the location of the device's sensors in relation to its center point (in mm).  <a href="group__SceMotionUser.html#ga7426fa4734515219b68466bb9a50dda4">More...</a><br /></td></tr>
 <tr class="separator:ga7426fa4734515219b68466bb9a50dda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb7835fed503836f84cb11726a6b9df6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gacb7835fed503836f84cb11726a6b9df6">sceMotionGetBasicOrientation</a> (<a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a> *basicOrientation)</td></tr>
+<tr class="memitem:gacb7835fed503836f84cb11726a6b9df6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gacb7835fed503836f84cb11726a6b9df6">sceMotionGetBasicOrientation</a> (<a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> *basicOrientation)</td></tr>
 <tr class="memdesc:gacb7835fed503836f84cb11726a6b9df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the basic orientation of the device in relation to gravity.  <a href="group__SceMotionUser.html#gacb7835fed503836f84cb11726a6b9df6">More...</a><br /></td></tr>
 <tr class="separator:gacb7835fed503836f84cb11726a6b9df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c1d6101fded892991ea92d000c5d44f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga2c1d6101fded892991ea92d000c5d44f">sceMotionRotateYaw</a> (float radians)</td></tr>
@@ -172,13 +172,13 @@ timestamp</td>
 <td class="fielddoc">
 Local timestamp of the device. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga435859c3c6817c515980f9c063ab66b4"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="ga435859c3c6817c515980f9c063ab66b4"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 acceleration</td>
 <td class="fielddoc">
 Accelerometer data. </td></tr>
 <tr><td class="fieldtype">
-<a id="gae1056c8994dd91568e2d37e9e1400a10"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="gae1056c8994dd91568e2d37e9e1400a10"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 angularVelocity</td>
 <td class="fielddoc">
@@ -190,19 +190,19 @@ reserved1[12]</td>
 <td class="fielddoc">
 Reserved data. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga2aecca6955f4273ac70fecce7e4bd79f"></a><a class="el" href="group__SceTypesUser.html#structSceFQuaternion">SceFQuaternion</a></td>
+<a id="ga2aecca6955f4273ac70fecce7e4bd79f"></a><a class="el" href="group__SceTypesKernel.html#structSceFQuaternion">SceFQuaternion</a></td>
 <td class="fieldname">
 deviceQuat</td>
 <td class="fielddoc">
 Orientation data as a Quaternion. </td></tr>
 <tr><td class="fieldtype">
-<a id="gafa04868acee83ef01a2667ec88925c3e"></a><a class="el" href="group__SceTypesUser.html#structSceFMatrix4">SceFMatrix4</a></td>
+<a id="gafa04868acee83ef01a2667ec88925c3e"></a><a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a></td>
 <td class="fieldname">
 rotationMatrix</td>
 <td class="fielddoc">
 Orientation data as a rotation matrix. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga44881ddf752e191b35221e3480805e2d"></a><a class="el" href="group__SceTypesUser.html#structSceFMatrix4">SceFMatrix4</a></td>
+<a id="ga44881ddf752e191b35221e3480805e2d"></a><a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a></td>
 <td class="fieldname">
 nedMatrix</td>
 <td class="fielddoc">
@@ -214,13 +214,13 @@ reserved2[4]</td>
 <td class="fielddoc">
 Reserved data. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga355ea78d453e822f662fb15f03edcb0a"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="ga355ea78d453e822f662fb15f03edcb0a"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 basicOrientation</td>
 <td class="fielddoc">
 Orientation of the device in reference to gravity. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga64c98b53f70c7e9d99e08574bd98b53a"></a><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
+<a id="ga64c98b53f70c7e9d99e08574bd98b53a"></a><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
 <td class="fieldname">
 hostTimestamp</td>
 <td class="fielddoc">
@@ -269,13 +269,13 @@ Reserved data. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga9dc438d95f74919afdb148266bac03d8"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="ga9dc438d95f74919afdb148266bac03d8"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 accelerometer</td>
 <td class="fielddoc">
 Accelerometer data. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga12f64b34c0537622d5f5a06c91860dc0"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="ga12f64b34c0537622d5f5a06c91860dc0"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 gyro</td>
 <td class="fielddoc">
@@ -305,7 +305,7 @@ reserved2[4]</td>
 <td class="fielddoc">
 Reserved data. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf291022bab2fd26deaa83ba16a315ca3"></a><a class="el" href="group__SceTypesUser.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
+<a id="gaf291022bab2fd26deaa83ba16a315ca3"></a><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a></td>
 <td class="fieldname">
 hostTimestamp</td>
 <td class="fielddoc">
@@ -356,13 +356,13 @@ Reserved data. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gadbd4c86b67905ff9dddaca930be6aa75"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="gadbd4c86b67905ff9dddaca930be6aa75"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 accelerometer</td>
 <td class="fielddoc">
 Location of te accelerometer in relation to the center of the device (in mm) </td></tr>
 <tr><td class="fieldtype">
-<a id="gaaef58853d33027c72bba93297730e9d8"></a><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a></td>
+<a id="gaaef58853d33027c72bba93297730e9d8"></a><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a></td>
 <td class="fieldname">
 gyro</td>
 <td class="fielddoc">
@@ -524,7 +524,7 @@ Reserved data. </td></tr>
         <tr>
           <td class="memname">int sceMotionGetBasicOrientation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#structSceFVector3">SceFVector3</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> *&#160;</td>
           <td class="paramname"><em>basicOrientation</em></td><td>)</td>
           <td></td>
         </tr>

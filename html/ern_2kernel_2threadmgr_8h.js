@@ -1,7 +1,6 @@
 var ern_2kernel_2threadmgr_8h =
 [
     [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrKernel.html#ga276cbf64a90f4dbb228165980b454361", null ],
-    [ "SceKernelSysClock", "group__SceThreadMgrKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714", null ],
     [ "SceKernelWorkQueueWorkFunction", "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1", null ],

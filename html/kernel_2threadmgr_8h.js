@@ -1,6 +1,5 @@
 var kernel_2threadmgr_8h =
 [
-    [ "SceKernelSysClock", "group__SceThreadMgrUser.html#gaf51ef41af830ba6422cc9c5106fb68b8", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e", null ],
     [ "SceThreadStatus", "group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40", [

@@ -137,10 +137,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga182cbb8c81bff3b914e1515e9dace575"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga182cbb8c81bff3b914e1515e9dace575">sceDisplayWaitSetFrameBufMultiCB</a> (unsigned int vcount)</td></tr>
 <tr class="memdesc:ga182cbb8c81bff3b914e1515e9dace575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start with callback after specified number of vertical periods since last update of framebuffer.  <a href="group__SceDisplayUser.html#ga182cbb8c81bff3b914e1515e9dace575">More...</a><br /></td></tr>
 <tr class="separator:ga182cbb8c81bff3b914e1515e9dace575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc0e756f9b27e8e14ce748e9fbec14d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gadc0e756f9b27e8e14ce748e9fbec14d6">sceDisplayRegisterVblankStartCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memitem:gadc0e756f9b27e8e14ce748e9fbec14d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gadc0e756f9b27e8e14ce748e9fbec14d6">sceDisplayRegisterVblankStartCallback</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="memdesc:gadc0e756f9b27e8e14ce748e9fbec14d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback to be used at each vertical blank start.  <a href="group__SceDisplayUser.html#gadc0e756f9b27e8e14ce748e9fbec14d6">More...</a><br /></td></tr>
 <tr class="separator:gadc0e756f9b27e8e14ce748e9fbec14d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a">sceDisplayUnregisterVblankStartCallback</a> (<a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
+<tr class="memitem:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a">sceDisplayUnregisterVblankStartCallback</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="memdesc:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback used at each vertical blank start.  <a href="group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a">More...</a><br /></td></tr>
 <tr class="separator:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga4818747e9c93ab650824cd4c484506df"></a><a class="el" href="group__SceTypesUser.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="ga4818747e9c93ab650824cd4c484506df"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
@@ -687,7 +687,7 @@ framebuffer height </td></tr>
         <tr>
           <td class="memname">int sceDisplayRegisterVblankStartCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
@@ -713,7 +713,7 @@ framebuffer height </td></tr>
         <tr>
           <td class="memname">int sceDisplayUnregisterVblankStartCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesUser.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>

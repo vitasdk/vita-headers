@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__Miscellaneous.html":[1,15],
 "group__Net.html":[1,10],
 "group__SceAVConfig.html":[1,11,2],
 "group__SceAVConfigUser.html":[1,11,2,0],
@@ -19,17 +20,17 @@ var NAVTREEINDEX1 =
 "group__SceAVConfigUser.html#gae39175631bf077e026c483b6e0facbe8":[4,0,1,0,11,2],
 "group__SceAVConfigUser.html#gaf56864e9563463360221f1e22ba7b14d":[1,11,2,0,6],
 "group__SceAVConfigUser.html#gaf56864e9563463360221f1e22ba7b14d":[4,0,1,0,11,4],
-"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,2],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,0,1],
+"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,2],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[4,0,1,0,11,0,1],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,0,0],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,1],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[4,0,1,0,11,0,0],
 "group__SceAppMgr.html":[1,11,0],
 "group__SceAppMgrKernel.html":[1,11,0,1],
-"group__SceAppMgrKernel.html#ga391e603061dc444eb22e848dc8a73692":[4,0,1,1,5,0],
+"group__SceAppMgrKernel.html#ga391e603061dc444eb22e848dc8a73692":[4,0,1,2,5,0],
 "group__SceAppMgrKernel.html#ga391e603061dc444eb22e848dc8a73692":[1,11,0,1,0],
-"group__SceAppMgrKernel.html#ga6a9997389809ff54ec080640230c78cd":[4,0,1,1,5,1],
+"group__SceAppMgrKernel.html#ga6a9997389809ff54ec080640230c78cd":[4,0,1,2,5,1],
 "group__SceAppMgrKernel.html#ga6a9997389809ff54ec080640230c78cd":[1,11,0,1,1],
 "group__SceAppMgrUser.html":[1,11,0,0],
 "group__SceAppMgrUser.html#ga075c1e3c8dfcab225b2c778d5f33d517":[1,11,0,0,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceAppUtilUser.html#gaaf0fb3623067ff42e900679229288bb6":[1,11,1,0,47],
 "group__SceAppUtilUser.html#gaaf0fb3623067ff42e900679229288bb6":[4,0,1,0,5,26],
 "group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d":[1,11,1,0,8],
-"group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d":[4,0,1,0,5,8],
-"group__SceAppUtilUser.html#gab6ba629d8487be59a84dc347d7263f03":[1,11,1,0,34]
+"group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d":[4,0,1,0,5,8]
 };
