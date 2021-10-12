@@ -35,7 +35,6 @@ typedef struct SceFiosOverlay {
   uint8_t order;
   uint16_t dst_len;
   uint16_t src_len;
-  uint16_t unk2;
   SceUID pid;
   SceFiosOverlayID id;
   char dst[292];
