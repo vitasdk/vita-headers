@@ -99,6 +99,16 @@ SceUID ksceKernelGetProcessMainThread(SceUID pid);
  */
 SceKernelProcessModuleInfo *ksceKernelGetProcessModuleInfo(SceUID pid);
 
+/**
+ * @brief      Get the process self auth info.
+ *
+ * @param[in]  pid            - The target process id.
+ * @param[out] self_auth_info - The output buffer pointer of self auth info.
+ *
+ * @return     Zero on success, < 0 on error.
+ */
+int ksceKernelGetProcessSelfAuthInfo(SceUID pid, SceSelfAuthInfo *self_auth_info);
+
 #ifdef __cplusplus
 }
 #endif

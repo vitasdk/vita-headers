@@ -99,6 +99,24 @@ typedef struct SceKernelPAVector { // size is 0x14
 
 typedef SceKernelPAVector SceKernelPaddrList; // do not use.
 
+typedef struct SceSharedSecret { // size is 0x40-bytes
+	uint8_t shared_secret_0[0x10];
+	uint8_t klicensee[0x10];
+	uint8_t shared_secret_2[0x10];
+	uint32_t shared_secret_3_0; // ex: 0x10
+	uint32_t shared_secret_3_1;
+	uint32_t shared_secret_3_2;
+	uint32_t shared_secret_3_3;
+} SceSharedSecret;
+
+typedef struct SceSelfAuthInfo { // size is 0x90-bytes
+	SceUInt64 program_authority_id;
+	uint8_t padding[8];
+	uint8_t capability[0x20];
+	uint8_t attribute[0x20];
+	SceSharedSecret secret;
+} SceSelfAuthInfo;
+
 #ifdef __cplusplus
 }
 #endif
