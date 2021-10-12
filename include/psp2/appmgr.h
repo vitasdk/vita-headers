@@ -343,6 +343,16 @@ int sceAppMgrLaunchAppByUri(int flags, const char *uri);
 int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaunchAppOptParam *optParam);
 
 /**
+*
+* @param[in] flags - Flags (must be 0x60000)
+* @param[in] name - Title ID of the application
+* @param[in] param - The params passed to the application which can be retrieved with ::sceAppMgrGetAppParam
+*
+* @return 0 on success < 0 on error.
+*/
+int sceAppMgrLaunchAppByName(int flags, char* name, char* param);
+	
+/**
  * Start an application by Title ID for Shell
  *
  * @param[in] name - Title ID of the application
