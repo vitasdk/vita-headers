@@ -37,7 +37,7 @@ typedef struct SceFiosOverlay {
       struct {
         uint16_t dst_len;
         uint16_t src_len;
-        uint32_t unk2;
+        uint16_t unk2;
         SceUID pid;
       };
       uint8_t reserved[10];
