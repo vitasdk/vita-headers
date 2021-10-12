@@ -350,7 +350,7 @@ int sceAppMgrLaunchAppByName2(const char *name, const char *param, SceAppMgrLaun
 *
 * @return 0 on success < 0 on error.
 */
-int sceAppMgrLaunchAppByName(int flags, char* name, char* param);
+int sceAppMgrLaunchAppByName(int flags, const char* name, const char* param);
 	
 /**
  * Start an application by Title ID for Shell
