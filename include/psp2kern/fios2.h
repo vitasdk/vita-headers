@@ -33,9 +33,12 @@ typedef enum SceFiosOverlayType {
 typedef struct SceFiosOverlay {
   uint8_t type; // see SceFiosOverlayType
   uint8_t order;
-  uint16_t dst_len;
-  uint16_t src_len;
-  SceUID pid;
+  union { //<! Union for compatibility
+    uint16_t dst_len;
+    uint16_t src_len;
+    uint32_t unk2;
+    SceUID pid;
+	};
   SceFiosOverlayID id;
   char dst[292];
   char src[292]; // src path replaces dst path based on type policy
