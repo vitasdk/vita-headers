@@ -7,6 +7,6 @@ var group__SceFios2KernelKernel_structSceFiosOverlay =
     [ "unk2", "group__SceFios2KernelKernel.html#ga39f8adc965b7cbfc44c141f0559d3fd8", null ],
     [ "pid", "group__SceFios2KernelKernel.html#ga251409fcdd74e557dbebc0ab0da5eefa", null ],
     [ "id", "group__SceFios2KernelKernel.html#ga3670f391cba14738ef8fb74bcdef18a0", null ],
-    [ "dst", "group__SceFios2KernelKernel.html#ga5ae899a898b659c6ada1133a4941508e", null ],
-    [ "src", "group__SceFios2KernelKernel.html#gabf52aa39af42be9d5bf8451b73542a55", null ]
+    [ "dst", "group__SceFios2KernelKernel.html#ga5cf6cb442ff4d8b8407ab1f04b708c99", null ],
+    [ "src", "group__SceFios2KernelKernel.html#ga2132d050656cd9d81980d08713614521", null ]
 ];
