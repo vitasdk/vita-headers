@@ -14,5 +14,6 @@ var ern_2kernel_2processmgr_8h =
     [ "ksceKernelSuspendProcess", "group__SceProcessmgrKernel.html#gad71f056f14de2b141a5af710d62fe83d", null ],
     [ "ksceKernelGetProcessStatus", "group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f", null ],
     [ "ksceKernelGetProcessMainThread", "group__SceProcessmgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b", null ],
-    [ "ksceKernelGetProcessModuleInfo", "group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5", null ]
+    [ "ksceKernelGetProcessModuleInfo", "group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5", null ],
+    [ "ksceKernelGetProcessSelfAuthInfo", "group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa", null ]
 ];

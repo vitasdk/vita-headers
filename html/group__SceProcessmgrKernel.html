@@ -121,6 +121,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabc465e37535bc301e52e274a7db5bdc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessModuleInfo">SceKernelProcessModuleInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5">ksceKernelGetProcessModuleInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="memdesc:gabc465e37535bc301e52e274a7db5bdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process module control block.  <a href="group__SceProcessmgrKernel.html#gabc465e37535bc301e52e274a7db5bdc5">More...</a><br /></td></tr>
 <tr class="separator:gabc465e37535bc301e52e274a7db5bdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6a33969dd1494b7a59d0376c114d3fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa">ksceKernelGetProcessSelfAuthInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#structSceSelfAuthInfo">SceSelfAuthInfo</a> *self_auth_info)</td></tr>
+<tr class="memdesc:gac6a33969dd1494b7a59d0376c114d3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process self auth info.  <a href="group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa">More...</a><br /></td></tr>
+<tr class="separator:gac6a33969dd1494b7a59d0376c114d3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -666,6 +669,44 @@ cpu_addr</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The process module cb pointer </dd></dl>
+
+</div>
+</div>
+<a id="gac6a33969dd1494b7a59d0376c114d3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6a33969dd1494b7a59d0376c114d3fa">&#9670;&nbsp;</a></span>ksceKernelGetProcessSelfAuthInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetProcessSelfAuthInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#structSceSelfAuthInfo">SceSelfAuthInfo</a> *&#160;</td>
+          <td class="paramname"><em>self_auth_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the process self auth info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">self_auth_info</td><td>- The output buffer pointer of self auth info.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
