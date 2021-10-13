@@ -12,6 +12,9 @@
 extern "C" {
 #endif
 
+#define SCE_FIOS2_OVERLAY_PATH_SIZE       (292)
+#define SCE_FIOS2_OVERLAY_PATH_MAX_LENGTH (SCE_FIOS2KERNEL_PATH_SIZE - 1)
+
 typedef int32_t SceFiosOverlayID;
 
 typedef enum SceFiosOverlayType {
@@ -38,8 +41,8 @@ typedef struct SceFiosOverlay {
   uint16_t unk2;
   SceUID pid;
   SceFiosOverlayID id;
-  char dst[292];
-  char src[292]; // src path replaces dst path based on type policy
+  char dst[SCE_FIOS2_OVERLAY_PATH_SIZE];
+  char src[SCE_FIOS2_OVERLAY_PATH_SIZE]; // src path replaces dst path based on type policy
 } SceFiosOverlay;
 
 /**
