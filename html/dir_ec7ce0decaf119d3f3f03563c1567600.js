@@ -2,6 +2,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
 [
     [ "kbl", "dir_c365722192b87e379a2994b0f320a544.html", "dir_c365722192b87e379a2994b0f320a544" ],
     [ "sysmem", "dir_7e39855c60bb86726f822b20b3793aa0.html", "dir_7e39855c60bb86726f822b20b3793aa0" ],
+    [ "threadmgr", "dir_d32688b4d6c61bb6b4337d60e27d9435.html", "dir_d32688b4d6c61bb6b4337d60e27d9435" ],
     [ "cpu.h", "ern_2kernel_2cpu_8h.html", "ern_2kernel_2cpu_8h" ],
     [ "debug.h", "debug_8h.html", "debug_8h" ],
     [ "debugled.h", "debugled_8h.html", "debugled_8h" ],
@@ -19,6 +20,6 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "sysclib.h", "sysclib_8h.html", "sysclib_8h" ],
     [ "sysmem.h", "ern_2kernel_2sysmem_8h.html", "ern_2kernel_2sysmem_8h" ],
     [ "sysroot.h", "sysroot_8h.html", "sysroot_8h" ],
-    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", "ern_2kernel_2threadmgr_8h" ],
+    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", null ],
     [ "utils.h", "psp2kern_2kernel_2utils_8h.html", "psp2kern_2kernel_2utils_8h" ]
 ];

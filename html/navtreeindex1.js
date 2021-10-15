@@ -1,5 +1,14 @@
 var NAVTREEINDEX1 =
 {
+"gps_8h_source.html":[4,0,1,0,23],
+"gpu__es4_8h.html":[4,0,1,2,10],
+"gpu__es4_8h_source.html":[4,0,1,2,10],
+"group__Audio.html":[1,2],
+"group__Dialog.html":[1,3],
+"group__Filesystem.html":[1,4],
+"group__Graphics.html":[1,0],
+"group__Input.html":[1,1],
+"group__Lowio.html":[1,6],
 "group__Miscellaneous.html":[1,15],
 "group__Net.html":[1,10],
 "group__SceAVConfig.html":[1,11,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[4,0,1,0,5,4],
 "group__SceAppUtilUser.html#ga9933c174ca527e0faee9f620d0fc3418":[1,11,1,0,7],
 "group__SceAppUtilUser.html#ga9933c174ca527e0faee9f620d0fc3418":[4,0,1,0,5,7],
-"group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318":[1,11,1,0,3],
-"group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318":[4,0,1,0,5,3],
-"group__SceAppUtilUser.html#gaa2d0436cc5c45c401b1ccf7581207c86":[1,11,1,0,36],
-"group__SceAppUtilUser.html#gaa2d0436cc5c45c401b1ccf7581207c86":[4,0,1,0,5,15],
-"group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a":[1,11,1,0,2],
-"group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a":[4,0,1,0,5,2],
-"group__SceAppUtilUser.html#gaaf0fb3623067ff42e900679229288bb6":[1,11,1,0,47],
-"group__SceAppUtilUser.html#gaaf0fb3623067ff42e900679229288bb6":[4,0,1,0,5,26],
-"group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d":[1,11,1,0,8],
-"group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d":[4,0,1,0,5,8]
+"group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318":[1,11,1,0,3]
 };
