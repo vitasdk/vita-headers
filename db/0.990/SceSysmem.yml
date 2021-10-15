@@ -1,0 +1,11 @@
+version: 2
+firmware: 0.990
+modules:
+  SceSysmem:
+    nid: 0x00000000
+    libraries:
+      SceSysmemForDriver:
+        kernel: true
+        nid: 0x6F25E18A
+        functions:
+          ksceKernelProcMemcpyToUserRo: 0x571D2739

@@ -451,29 +451,28 @@ modules:
           ksceKernelMemRangeRetain: 0x59A4402F
           ksceKernelMemRangeRetainForPid: 0x659586BF
           ksceKernelMemRangeRetainWithPerm: 0xBC0A1D60
-          ksceKernelMemcpyKernelToUser: 0x6D88EF8A
-          ksceKernelMemcpyKernelToUserForPid: 0x6B825479
-          ksceKernelMemcpyKernelToUserForPidUnchecked: 0xFED82F2D
-          ksceKernelMemcpyUserToKernel: 0xBC996A7A
-          ksceKernelMemcpyUserToKernelForPid: 0x605275F8
-          ksceKernelMemcpyUserToUser: 0x1BD44DD5
-          ksceKernelMemcpyUserToUserForPid: 0x8E086C33
+          ksceKernelMemcpyFromUser: 0xBC996A7A
+          ksceKernelMemcpyToUser: 0x6D88EF8A
           ksceKernelOpenUidForName: 0xD76E7452
+          ksceKernelProcMemcpyFromUser: 0x605275F8
+          ksceKernelProcMemcpyToUser: 0x6B825479
           ksceKernelProcModeVAtoPA: 0x61A67D32
+          ksceKernelProcStrncpyFromUser: 0x75AAF178
+          ksceKernelProcStrncpyToUser: 0xFED82F2D
+          ksceKernelProcStrnlenUser: 0x9929EB07
           ksceKernelProcUserMap: 0x0091D74D
+          ksceKernelProcUserMemcpy: 0x8E086C33
           ksceKernelRemapBlock: 0xDFE2C8CB
-          ksceKernelRoMemcpyKernelToUserForPid: 0x571D2739
           ksceKernelSetNameForPidForUid: 0x12624884
           ksceKernelSetObjectForUid: 0x4CFA4100
-          ksceKernelStrncpyKernelToUser: 0x80BD6FEB
-          ksceKernelStrncpyUserForPid: 0x75AAF178
-          ksceKernelStrncpyUserToKernel: 0xDB3EC244
+          ksceKernelStrncpyFromUser: 0xDB3EC244
+          ksceKernelStrncpyToUser: 0x80BD6FEB
           ksceKernelStrnlenUser: 0xB429D419
-          ksceKernelStrnlenUserForPid: 0x9929EB07
           ksceKernelSwitchPidContext: 0x2D711589
           ksceKernelSwitchVmaForPid: 0x6F2ACDAE
           ksceKernelUnmapMemBlock: 0xFFCD9B60
           ksceKernelUserMap: 0x278BC201
+          ksceKernelUserMemcpy: 0x1BD44DD5
           ksceKernelVARangeToPAVector: 0xE68BEEBD
           ksceKernelVAtoPA: 0x8D160E65
           kscePUIDClose: 0x84A4AF5E
@@ -509,7 +508,7 @@ modules:
           ksceKernelMemcpyToUserRo: 0xA6F95838
           ksceKernelMemcpyToUserRx: 0x67BAD5B4
           ksceKernelNameHeapGetInfo: 0xE443253B
-          ksceKernelRxMemcpyKernelToUserForPid: 0x30931572
+          ksceKernelProcMemcpyToUserRx: 0x30931572
           ksceKernelUIDEntryHeapGetInfo: 0x686AA15C
       SceSysrootForDriver:
         kernel: true
