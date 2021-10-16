@@ -96,8 +96,10 @@ int _sceNpDrmGetRifNameForInstall(char *rif_name, const void *rif_data, int unk)
  * @param[out] keydata - Decrypted key data
  *
  * @param[in] flags - Unknown
+ * 
+ * @return >0 on success, <0 on error
 */
-void scePsmDrmGetRifKey(const char *license_buf, char *keydata, int flags);
+int scePsmDrmGetRifKey(const char *license_buf, char *keydata, int flags);
  
 #ifdef __cplusplus
 }
