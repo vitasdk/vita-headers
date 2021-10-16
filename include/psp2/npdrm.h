@@ -37,6 +37,22 @@ typedef struct SceNpDrmLicense { // size is 0x200
   char rsa_signature[0x100];
 } SceNpDrmLicense;
 
+typedef struct ScePsmDrmLicense {
+  char magic[0x8];             
+  uint32_t unk1;               
+  uint32_t unk2;               
+  uint64_t aid;                
+  uint32_t unk3;               
+  uint32_t unk4;               
+  uint64_t start_time;         
+  uint64_t expiration_time;    
+  uint8_t act_digest[0x20];    
+  char content_id[0x30];       
+  uint8_t unk5[0x80];          
+  uint8_t key[0x200];          
+  uint8_t sha256digest[0x100]; 
+} ScePsmDrmLicense;
+  
 /**
  * Get rif name
  *
@@ -72,6 +88,17 @@ int _sceNpDrmGetFixedRifName(char *rif_name, uint64_t aid);
 */
 int _sceNpDrmGetRifNameForInstall(char *rif_name, const void *rif_data, int unk);
 
+/**
+ * Get PSM rif key
+ *
+ * @param[in] license_buf - RIF buffer (1024 bytes)
+ *
+ * @param[out] keydata - Decrypted key data
+ *
+ * @param[in] flags - Unknown
+*/
+void scePsmDrmGetRifKey(const char *license_buf, char *keydata, int flags);
+ 
 #ifdef __cplusplus
 }
 #endif
