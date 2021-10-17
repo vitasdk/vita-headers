@@ -46,11 +46,13 @@ typedef struct ScePsmDrmLicense {
   uint32_t unk4;               
   uint64_t start_time;         
   uint64_t expiration_time;    
-  uint8_t act_digest[0x20];    
+  uint8_t act_sha256digest[0x20];    
   char content_id[0x30];       
   uint8_t unk5[0x80];          
-  uint8_t key[0x200];          
-  uint8_t sha256digest[0x100]; 
+  uint8_t unk6[0x20];
+  uint8_t key[0x10];
+  uint8_t signature[0x1D0];
+  uint8_t signature_rsa[0x100]; 
 } ScePsmDrmLicense;
   
 /**
