@@ -246,8 +246,8 @@ var NAVTREEINDEX11 =
 "group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3":[1,7,2,1,0],
 "group__SceCpuKernel.html#gaa7e762b395b3ff620fa62deff747641e":[4,0,1,2,2,3,11],
 "group__SceCpuKernel.html#gaa7e762b395b3ff620fa62deff747641e":[1,7,2,1,15],
-"group__SceCpuKernel.html#gaaf2c0255688b5b2114c417484e46644d":[1,7,2,1,14],
 "group__SceCpuKernel.html#gaaf2c0255688b5b2114c417484e46644d":[4,0,1,2,2,3,10],
+"group__SceCpuKernel.html#gaaf2c0255688b5b2114c417484e46644d":[1,7,2,1,14],
 "group__SceCpuKernel.html#gab0e8774c9f4d2e6f3870ce26adb30c71":[4,0,1,2,2,3,17],
 "group__SceCpuKernel.html#gab0e8774c9f4d2e6f3870ce26adb30c71":[1,7,2,1,21]
 };

@@ -1110,20 +1110,17 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelMemBlockRelease()
 : <a class="el" href="group__SceSysmemKernel.html#ga1fc8a7535b8d13bcc6d9ef7a4e8e548d">sysmem.h</a>
 </li>
-<li>ksceKernelMemcpyKernelToUser()
-: <a class="el" href="group__SceSysmemKernel.html#gaa4b992cd4c328af2b28bc4ca839a42db">data_transfers.h</a>
+<li>ksceKernelMemcpyFromUser()
+: <a class="el" href="group__SceSysmemKernel.html#gaf09e9e0baac300a7a5ae62648546cf4e">data_transfers.h</a>
+</li>
+<li>ksceKernelMemcpyToUser()
+: <a class="el" href="group__SceSysmemKernel.html#gafe0442b8d701799149d9d8bc1b9182b0">data_transfers.h</a>
 </li>
 <li>ksceKernelMemcpyToUserRo()
-: <a class="el" href="group__SceSysmemKernel.html#gace95e111c9c26363386af1d8f077f8d4">data_transfers.h</a>
+: <a class="el" href="group__SceSysmemKernel.html#ga10bfa06560b1bd30fbad1493a8483db7">data_transfers.h</a>
 </li>
 <li>ksceKernelMemcpyToUserRx()
-: <a class="el" href="group__SceSysmemKernel.html#ga06d3bd2140ebc7b95420e8991836ac4a">data_transfers.h</a>
-</li>
-<li>ksceKernelMemcpyUserToKernel()
-: <a class="el" href="group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32">data_transfers.h</a>
-</li>
-<li>ksceKernelMemcpyUserToKernelForPid()
-: <a class="el" href="group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8">data_transfers.h</a>
+: <a class="el" href="group__SceSysmemKernel.html#ga371fe1e41a8d06e5a6658ad8910742ec">data_transfers.h</a>
 </li>
 <li>ksceKernelMemRangeRelease()
 : <a class="el" href="group__SceSysmemKernel.html#ga220a655e812b83b1dca9326a5f423c2a">sysmem.h</a>
@@ -1158,8 +1155,29 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelPowerTick()
 : <a class="el" href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">suspend.h</a>
 </li>
+<li>ksceKernelProcMemcpyFromUser()
+: <a class="el" href="group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397">data_transfers.h</a>
+</li>
+<li>ksceKernelProcMemcpyToUser()
+: <a class="el" href="group__SceSysmemKernel.html#gaea1c160158aee851aab631efd2343118">data_transfers.h</a>
+</li>
+<li>ksceKernelProcMemcpyToUserRx()
+: <a class="el" href="group__SceSysmemKernel.html#ga32ba7d1d89b4b42eea1d66df59ec9ea3">data_transfers.h</a>
+</li>
+<li>ksceKernelProcStrncpyFromUser()
+: <a class="el" href="group__SceSysmemKernel.html#ga278c3a10a538fcb887d831d2428c915f">data_transfers.h</a>
+</li>
+<li>ksceKernelProcStrncpyToUser()
+: <a class="el" href="group__SceSysmemKernel.html#gac0f4b33e0908fdf055b6b6db4a9364c4">data_transfers.h</a>
+</li>
+<li>ksceKernelProcStrnlenUser()
+: <a class="el" href="group__SceSysmemKernel.html#gafe16d2f59b892d113106e562e1f4494d">data_transfers.h</a>
+</li>
 <li>ksceKernelProcUserMap()
 : <a class="el" href="group__SceSysmemKernel.html#ga284c39f31d257b38912fa299979f2424">sysmem.h</a>
+</li>
+<li>ksceKernelProcUserMemcpy()
+: <a class="el" href="group__SceSysmemKernel.html#gaa737aa0cc1ba0258f4109b00b510a806">data_transfers.h</a>
 </li>
 <li>ksceKernelReceiveMsgPipeVector()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga0e1a1fb6bd202305c3772ba573fd5eb7">msg_pipe.h</a>
@@ -1196,9 +1214,6 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelRunWithStack()
 : <a class="el" href="group__SceThreadMgrKernel.html#gaf4b5522c842ee278113a4010d4e72107">misc.h</a>
-</li>
-<li>ksceKernelRxMemcpyKernelToUserForPid()
-: <a class="el" href="group__SceSysmemKernel.html#gafe4211cf9557a097a1223213ebfca9f9">data_transfers.h</a>
 </li>
 <li>ksceKernelSearchModuleByName()
 : <a class="el" href="group__SceModulemgrKernel.html#ga57a0cbedf74ca1199eaa3c28da2ff0aa">modulemgr.h</a>
@@ -1272,14 +1287,14 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelStopUnloadSharedModuleForPid()
 : <a class="el" href="group__SceModulemgrKernel.html#ga8952fd9ee53b55a90c9ea18eb67d0d5d">modulemgr.h</a>
 </li>
-<li>ksceKernelStrncpyKernelToUser()
-: <a class="el" href="group__SceSysmemKernel.html#ga22b8be05c0ffea7560d04bc8c7c6365f">data_transfers.h</a>
+<li>ksceKernelStrncpyFromUser()
+: <a class="el" href="group__SceSysmemKernel.html#ga57af88007b0c1695d6af8896eb19506b">data_transfers.h</a>
 </li>
-<li>ksceKernelStrncpyUserForPid()
-: <a class="el" href="group__SceSysmemKernel.html#gaeafc18da6a856d3e359733512c8a5207">data_transfers.h</a>
+<li>ksceKernelStrncpyToUser()
+: <a class="el" href="group__SceSysmemKernel.html#ga8663b2bec3d8cddc046469c83d19a0c2">data_transfers.h</a>
 </li>
-<li>ksceKernelStrncpyUserToKernel()
-: <a class="el" href="group__SceSysmemKernel.html#gadfc365275d1b9406bcc15c1f28b8f347">data_transfers.h</a>
+<li>ksceKernelStrnlenUser()
+: <a class="el" href="group__SceSysmemKernel.html#ga2515f5ebe1315098aed6eb76cc355d2a">data_transfers.h</a>
 </li>
 <li>ksceKernelSuspendIntr()
 : <a class="el" href="group__SceIntrMgrKernel.html#ga22ab7c1092465c7aab26e03750befe7b">intrmgr.h</a>
@@ -1352,6 +1367,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelUserMap()
 : <a class="el" href="group__SceSysmemKernel.html#gaac4117cb1ddc84d8b41e803dc805699d">sysmem.h</a>
+</li>
+<li>ksceKernelUserMemcpy()
+: <a class="el" href="group__SceSysmemKernel.html#ga0940cc90594a0c27f971e3546bf31cce">data_transfers.h</a>
 </li>
 <li>ksceKernelVARangeToPAVector()
 : <a class="el" href="group__SceSysmemKernel.html#ga2c25db542655e83ab9e43c1971beaf2a">mmu.h</a>

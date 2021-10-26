@@ -154,32 +154,51 @@ $(document).ready(function(){initNavTree('group__SceSysmemKernel.html',''); init
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac8ac1f0e6149e9817e3dc609c328fc32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32">ksceKernelMemcpyUserToKernel</a> (void *dst, uintptr_t src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:gac8ac1f0e6149e9817e3dc609c328fc32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy from user.  <a href="group__SceSysmemKernel.html#gac8ac1f0e6149e9817e3dc609c328fc32">More...</a><br /></td></tr>
-<tr class="separator:gac8ac1f0e6149e9817e3dc609c328fc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacbd07a7c2448c9701367daebd28a24c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8">ksceKernelMemcpyUserToKernelForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, uintptr_t src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:gacbd07a7c2448c9701367daebd28a24c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy from user with process.  <a href="group__SceSysmemKernel.html#gacbd07a7c2448c9701367daebd28a24c8">More...</a><br /></td></tr>
-<tr class="separator:gacbd07a7c2448c9701367daebd28a24c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4b992cd4c328af2b28bc4ca839a42db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaa4b992cd4c328af2b28bc4ca839a42db">ksceKernelMemcpyKernelToUser</a> (uintptr_t dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:gaa4b992cd4c328af2b28bc4ca839a42db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy to user.  <a href="group__SceSysmemKernel.html#gaa4b992cd4c328af2b28bc4ca839a42db">More...</a><br /></td></tr>
-<tr class="separator:gaa4b992cd4c328af2b28bc4ca839a42db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace95e111c9c26363386af1d8f077f8d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gace95e111c9c26363386af1d8f077f8d4">ksceKernelMemcpyToUserRo</a> (uintptr_t dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:gace95e111c9c26363386af1d8f077f8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy to user Read only memory.  <a href="group__SceSysmemKernel.html#gace95e111c9c26363386af1d8f077f8d4">More...</a><br /></td></tr>
-<tr class="separator:gace95e111c9c26363386af1d8f077f8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga06d3bd2140ebc7b95420e8991836ac4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga06d3bd2140ebc7b95420e8991836ac4a">ksceKernelMemcpyToUserRx</a> (uintptr_t dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:ga06d3bd2140ebc7b95420e8991836ac4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy to user Read execute memory.  <a href="group__SceSysmemKernel.html#ga06d3bd2140ebc7b95420e8991836ac4a">More...</a><br /></td></tr>
-<tr class="separator:ga06d3bd2140ebc7b95420e8991836ac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe4211cf9557a097a1223213ebfca9f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gafe4211cf9557a097a1223213ebfca9f9">ksceKernelRxMemcpyKernelToUserForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, uintptr_t dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:gafe4211cf9557a097a1223213ebfca9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy to user with process.  <a href="group__SceSysmemKernel.html#gafe4211cf9557a097a1223213ebfca9f9">More...</a><br /></td></tr>
-<tr class="separator:gafe4211cf9557a097a1223213ebfca9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadfc365275d1b9406bcc15c1f28b8f347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gadfc365275d1b9406bcc15c1f28b8f347">ksceKernelStrncpyUserToKernel</a> (void *dst, uintptr_t src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:gadfc365275d1b9406bcc15c1f28b8f347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strncpy from user.  <a href="group__SceSysmemKernel.html#gadfc365275d1b9406bcc15c1f28b8f347">More...</a><br /></td></tr>
-<tr class="separator:gadfc365275d1b9406bcc15c1f28b8f347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22b8be05c0ffea7560d04bc8c7c6365f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga22b8be05c0ffea7560d04bc8c7c6365f">ksceKernelStrncpyKernelToUser</a> (uintptr_t dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="memdesc:ga22b8be05c0ffea7560d04bc8c7c6365f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strncpy to user.  <a href="group__SceSysmemKernel.html#ga22b8be05c0ffea7560d04bc8c7c6365f">More...</a><br /></td></tr>
-<tr class="separator:ga22b8be05c0ffea7560d04bc8c7c6365f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeafc18da6a856d3e359733512c8a5207"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeafc18da6a856d3e359733512c8a5207">ksceKernelStrncpyUserForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, uintptr_t src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
-<tr class="separator:gaeafc18da6a856d3e359733512c8a5207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf09e9e0baac300a7a5ae62648546cf4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaf09e9e0baac300a7a5ae62648546cf4e">ksceKernelMemcpyFromUser</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:gaf09e9e0baac300a7a5ae62648546cf4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy from user memory.  <a href="group__SceSysmemKernel.html#gaf09e9e0baac300a7a5ae62648546cf4e">More...</a><br /></td></tr>
+<tr class="separator:gaf09e9e0baac300a7a5ae62648546cf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bc9996c9a2ec9dcb3f67eb98dd39397"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397">ksceKernelProcMemcpyFromUser</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga7bc9996c9a2ec9dcb3f67eb98dd39397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy from user memory with process.  <a href="group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397">More...</a><br /></td></tr>
+<tr class="separator:ga7bc9996c9a2ec9dcb3f67eb98dd39397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe0442b8d701799149d9d8bc1b9182b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gafe0442b8d701799149d9d8bc1b9182b0">ksceKernelMemcpyToUser</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:gafe0442b8d701799149d9d8bc1b9182b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy to user memory.  <a href="group__SceSysmemKernel.html#gafe0442b8d701799149d9d8bc1b9182b0">More...</a><br /></td></tr>
+<tr class="separator:gafe0442b8d701799149d9d8bc1b9182b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea1c160158aee851aab631efd2343118"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaea1c160158aee851aab631efd2343118">ksceKernelProcMemcpyToUser</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:gaea1c160158aee851aab631efd2343118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy from user memory with process.  <a href="group__SceSysmemKernel.html#gaea1c160158aee851aab631efd2343118">More...</a><br /></td></tr>
+<tr class="separator:gaea1c160158aee851aab631efd2343118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10bfa06560b1bd30fbad1493a8483db7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga10bfa06560b1bd30fbad1493a8483db7">ksceKernelMemcpyToUserRo</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga10bfa06560b1bd30fbad1493a8483db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy to user RO memory.  <a href="group__SceSysmemKernel.html#ga10bfa06560b1bd30fbad1493a8483db7">More...</a><br /></td></tr>
+<tr class="separator:ga10bfa06560b1bd30fbad1493a8483db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga371fe1e41a8d06e5a6658ad8910742ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga371fe1e41a8d06e5a6658ad8910742ec">ksceKernelMemcpyToUserRx</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga371fe1e41a8d06e5a6658ad8910742ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy to user RO memory with DcacheAndL2WritebackRange.  <a href="group__SceSysmemKernel.html#ga371fe1e41a8d06e5a6658ad8910742ec">More...</a><br /></td></tr>
+<tr class="separator:ga371fe1e41a8d06e5a6658ad8910742ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32ba7d1d89b4b42eea1d66df59ec9ea3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga32ba7d1d89b4b42eea1d66df59ec9ea3">ksceKernelProcMemcpyToUserRx</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga32ba7d1d89b4b42eea1d66df59ec9ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy to user RX memory with process.  <a href="group__SceSysmemKernel.html#ga32ba7d1d89b4b42eea1d66df59ec9ea3">More...</a><br /></td></tr>
+<tr class="separator:ga32ba7d1d89b4b42eea1d66df59ec9ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57af88007b0c1695d6af8896eb19506b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga57af88007b0c1695d6af8896eb19506b">ksceKernelStrncpyFromUser</a> (char *dst, const char *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga57af88007b0c1695d6af8896eb19506b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strncpy from user memory.  <a href="group__SceSysmemKernel.html#ga57af88007b0c1695d6af8896eb19506b">More...</a><br /></td></tr>
+<tr class="separator:ga57af88007b0c1695d6af8896eb19506b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga278c3a10a538fcb887d831d2428c915f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga278c3a10a538fcb887d831d2428c915f">ksceKernelProcStrncpyFromUser</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, char *dst, const char *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga278c3a10a538fcb887d831d2428c915f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strncpy from user memory with process.  <a href="group__SceSysmemKernel.html#ga278c3a10a538fcb887d831d2428c915f">More...</a><br /></td></tr>
+<tr class="separator:ga278c3a10a538fcb887d831d2428c915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8663b2bec3d8cddc046469c83d19a0c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8663b2bec3d8cddc046469c83d19a0c2">ksceKernelStrncpyToUser</a> (char *dst, const char *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga8663b2bec3d8cddc046469c83d19a0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strncpy to user memory.  <a href="group__SceSysmemKernel.html#ga8663b2bec3d8cddc046469c83d19a0c2">More...</a><br /></td></tr>
+<tr class="separator:ga8663b2bec3d8cddc046469c83d19a0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0f4b33e0908fdf055b6b6db4a9364c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac0f4b33e0908fdf055b6b6db4a9364c4">ksceKernelProcStrncpyToUser</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, char *dst, const char *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:gac0f4b33e0908fdf055b6b6db4a9364c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strncpy to user memory with process.  <a href="group__SceSysmemKernel.html#gac0f4b33e0908fdf055b6b6db4a9364c4">More...</a><br /></td></tr>
+<tr class="separator:gac0f4b33e0908fdf055b6b6db4a9364c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2515f5ebe1315098aed6eb76cc355d2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga2515f5ebe1315098aed6eb76cc355d2a">ksceKernelStrnlenUser</a> (const char *s, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n)</td></tr>
+<tr class="memdesc:ga2515f5ebe1315098aed6eb76cc355d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strnlen user memory.  <a href="group__SceSysmemKernel.html#ga2515f5ebe1315098aed6eb76cc355d2a">More...</a><br /></td></tr>
+<tr class="separator:ga2515f5ebe1315098aed6eb76cc355d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe16d2f59b892d113106e562e1f4494d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gafe16d2f59b892d113106e562e1f4494d">ksceKernelProcStrnlenUser</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const char *s, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n)</td></tr>
+<tr class="memdesc:gafe16d2f59b892d113106e562e1f4494d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strnlen user memory with process.  <a href="group__SceSysmemKernel.html#gafe16d2f59b892d113106e562e1f4494d">More...</a><br /></td></tr>
+<tr class="separator:gafe16d2f59b892d113106e562e1f4494d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0940cc90594a0c27f971e3546bf31cce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga0940cc90594a0c27f971e3546bf31cce">ksceKernelUserMemcpy</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga0940cc90594a0c27f971e3546bf31cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy user memory to user memory.  <a href="group__SceSysmemKernel.html#ga0940cc90594a0c27f971e3546bf31cce">More...</a><br /></td></tr>
+<tr class="separator:ga0940cc90594a0c27f971e3546bf31cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa737aa0cc1ba0258f4109b00b510a806"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaa737aa0cc1ba0258f4109b00b510a806">ksceKernelProcUserMemcpy</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:gaa737aa0cc1ba0258f4109b00b510a806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy user memory to user memory with process.  <a href="group__SceSysmemKernel.html#gaa737aa0cc1ba0258f4109b00b510a806">More...</a><br /></td></tr>
+<tr class="separator:gaa737aa0cc1ba0258f4109b00b510a806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafba2b363434bce815c1627756f6ea8e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gafba2b363434bce815c1627756f6ea8e8">ksceKernelCreateHeap</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, <a class="el" href="group__SceSysmemKernel.html#structSceKernelHeapCreateOpt">SceKernelHeapCreateOpt</a> *opt)</td></tr>
 <tr class="memdesc:gafba2b363434bce815c1627756f6ea8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create heap area.  <a href="group__SceSysmemKernel.html#gafba2b363434bce815c1627756f6ea8e8">More...</a><br /></td></tr>
 <tr class="separator:gafba2b363434bce815c1627756f6ea8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,6 +324,24 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga0919c6e1feb701b00f7cde83ec558684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga0919c6e1feb701b00f7cde83ec558684">ksceKernelMemcpyUserToKernel</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gaf09e9e0baac300a7a5ae62648546cf4e">ksceKernelMemcpyFromUser</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga0919c6e1feb701b00f7cde83ec558684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac28d23aaaab851d95478fea28c66c5a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac28d23aaaab851d95478fea28c66c5a2">ksceKernelMemcpyUserToKernelForPid</a>(__pid__,  __dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397">ksceKernelProcMemcpyFromUser</a>((__pid__), (__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:gac28d23aaaab851d95478fea28c66c5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18316936595ce50e304c8e5e60ecbdc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga18316936595ce50e304c8e5e60ecbdc0">ksceKernelMemcpyKernelToUser</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gafe0442b8d701799149d9d8bc1b9182b0">ksceKernelMemcpyToUser</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga18316936595ce50e304c8e5e60ecbdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga467c6bad0f40dd26c87fb18a1988332c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga467c6bad0f40dd26c87fb18a1988332c">ksceKernelMemcpyToUserRo</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;ksceKernelMemcpyToUserRo((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga467c6bad0f40dd26c87fb18a1988332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab07bcdbcade1810f5bae29d112e8d63b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gab07bcdbcade1810f5bae29d112e8d63b">ksceKernelMemcpyToUserRx</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;ksceKernelMemcpyToUserRx((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:gab07bcdbcade1810f5bae29d112e8d63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a3d3184e2ac53a6cb33fbd2e729bfb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8a3d3184e2ac53a6cb33fbd2e729bfb0">ksceKernelRxMemcpyKernelToUserForPid</a>(__pid__,  __dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga32ba7d1d89b4b42eea1d66df59ec9ea3">ksceKernelProcMemcpyToUserRx</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga8a3d3184e2ac53a6cb33fbd2e729bfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34a04e2e64c4eda1033ac92b313cc122"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga34a04e2e64c4eda1033ac92b313cc122">ksceKernelStrncpyUserToKernel</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga57af88007b0c1695d6af8896eb19506b">ksceKernelStrncpyFromUser</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga34a04e2e64c4eda1033ac92b313cc122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab42791b424891af41c1e040c05940d04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gab42791b424891af41c1e040c05940d04">ksceKernelStrncpyUserForPid</a>(__pid__,  __dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga278c3a10a538fcb887d831d2428c915f">ksceKernelProcStrncpyFromUser</a>((__pid__), (__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:gab42791b424891af41c1e040c05940d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06446476a484742d1e74c262ad133c4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga06446476a484742d1e74c262ad133c4f">ksceKernelStrncpyKernelToUser</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga8663b2bec3d8cddc046469c83d19a0c2">ksceKernelStrncpyToUser</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga06446476a484742d1e74c262ad133c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08919a4ad0eade0704d3849a07760b4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga08919a4ad0eade0704d3849a07760b4b">ksceKernelGetPaddr</a>(va,  pa)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga1d08cf0a1dc1804d7ae09763c8aab190">ksceKernelVAtoPA</a>(va, pa)</td></tr>
 <tr class="separator:ga08919a4ad0eade0704d3849a07760b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2cd2942139ad596a6a4e5cb8123763f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gab2cd2942139ad596a6a4e5cb8123763f">ksceKernelGetPaddrList</a>(input,  list)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga2c25db542655e83ab9e43c1971beaf2a">ksceKernelVARangeToPAVector</a>((const <a class="el" href="group__SceTypesKernel.html#structSceKernelVARange">SceKernelVARange</a> *)input, list)</td></tr>
@@ -888,6 +925,330 @@ field_54</td>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga0919c6e1feb701b00f7cde83ec558684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0919c6e1feb701b00f7cde83ec558684">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelMemcpyUserToKernel</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gaf09e9e0baac300a7a5ae62648546cf4e">ksceKernelMemcpyFromUser</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac28d23aaaab851d95478fea28c66c5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac28d23aaaab851d95478fea28c66c5a2">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernelForPid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelMemcpyUserToKernelForPid</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__pid__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397">ksceKernelProcMemcpyFromUser</a>((__pid__), (__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga18316936595ce50e304c8e5e60ecbdc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18316936595ce50e304c8e5e60ecbdc0">&#9670;&nbsp;</a></span>ksceKernelMemcpyKernelToUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelMemcpyKernelToUser</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gafe0442b8d701799149d9d8bc1b9182b0">ksceKernelMemcpyToUser</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga467c6bad0f40dd26c87fb18a1988332c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga467c6bad0f40dd26c87fb18a1988332c">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUserRo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelMemcpyToUserRo</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;ksceKernelMemcpyToUserRo((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab07bcdbcade1810f5bae29d112e8d63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab07bcdbcade1810f5bae29d112e8d63b">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUserRx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelMemcpyToUserRx</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;ksceKernelMemcpyToUserRx((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a3d3184e2ac53a6cb33fbd2e729bfb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a3d3184e2ac53a6cb33fbd2e729bfb0">&#9670;&nbsp;</a></span>ksceKernelRxMemcpyKernelToUserForPid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelRxMemcpyKernelToUserForPid</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__pid__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga32ba7d1d89b4b42eea1d66df59ec9ea3">ksceKernelProcMemcpyToUserRx</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga34a04e2e64c4eda1033ac92b313cc122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34a04e2e64c4eda1033ac92b313cc122">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserToKernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelStrncpyUserToKernel</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga57af88007b0c1695d6af8896eb19506b">ksceKernelStrncpyFromUser</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab42791b424891af41c1e040c05940d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab42791b424891af41c1e040c05940d04">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserForPid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelStrncpyUserForPid</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__pid__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga278c3a10a538fcb887d831d2428c915f">ksceKernelProcStrncpyFromUser</a>((__pid__), (__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga06446476a484742d1e74c262ad133c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06446476a484742d1e74c262ad133c4f">&#9670;&nbsp;</a></span>ksceKernelStrncpyKernelToUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelStrncpyKernelToUser</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga8663b2bec3d8cddc046469c83d19a0c2">ksceKernelStrncpyToUser</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga08919a4ad0eade0704d3849a07760b4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga08919a4ad0eade0704d3849a07760b4b">&#9670;&nbsp;</a></span>ksceKernelGetPaddr</h2>
 
@@ -1354,113 +1715,16 @@ field_54</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac8ac1f0e6149e9817e3dc609c328fc32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8ac1f0e6149e9817e3dc609c328fc32">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernel()</h2>
+<a id="gaf09e9e0baac300a7a5ae62648546cf4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf09e9e0baac300a7a5ae62648546cf4e">&#9670;&nbsp;</a></span>ksceKernelMemcpyFromUser()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelMemcpyUserToKernel </td>
+          <td class="memname">int ksceKernelMemcpyFromUser </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory copy from user. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of kern memory output buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of user memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gacbd07a7c2448c9701367daebd28a24c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacbd07a7c2448c9701367daebd28a24c8">&#9670;&nbsp;</a></span>ksceKernelMemcpyUserToKernelForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemcpyUserToKernelForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory copy from user with process. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of kern memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of user memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaa4b992cd4c328af2b28bc4ca839a42db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa4b992cd4c328af2b28bc4ca839a42db">&#9670;&nbsp;</a></span>ksceKernelMemcpyKernelToUser()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelMemcpyKernelToUser </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -1483,21 +1747,174 @@ field_54</td>
       </table>
 </div><div class="memdoc">
 
-<p>Memory copy to user. </p>
+<p>Memcpy from user memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of user memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of kern memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcMemcpyFromUser. DACR - 0x55555555 Setting TTBR1 - No (use current TTBR1) </dd></dl>
 
 </div>
 </div>
-<a id="gace95e111c9c26363386af1d8f077f8d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace95e111c9c26363386af1d8f077f8d4">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUserRo()</h2>
+<a id="ga7bc9996c9a2ec9dcb3f67eb98dd39397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bc9996c9a2ec9dcb3f67eb98dd39397">&#9670;&nbsp;</a></span>ksceKernelProcMemcpyFromUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelProcMemcpyFromUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memcpy from user memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelMemcpyFromUser with disable interrupts. Setting TTBR1 - Yes </dd></dl>
+
+</div>
+</div>
+<a id="gafe0442b8d701799149d9d8bc1b9182b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe0442b8d701799149d9d8bc1b9182b0">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelMemcpyToUser </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memcpy to user memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcMemcpyToUser. DACR - 0x55555555 Setting TTBR1 - No (use current TTBR1) </dd></dl>
+
+</div>
+</div>
+<a id="gaea1c160158aee851aab631efd2343118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea1c160158aee851aab631efd2343118">&#9670;&nbsp;</a></span>ksceKernelProcMemcpyToUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelProcMemcpyToUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memcpy from user memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelMemcpyToUser with disable interrupts. Setting TTBR1 - Yes </dd></dl>
+
+</div>
+</div>
+<a id="ga10bfa06560b1bd30fbad1493a8483db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10bfa06560b1bd30fbad1493a8483db7">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUserRo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1505,7 +1922,7 @@ field_54</td>
         <tr>
           <td class="memname">int ksceKernelMemcpyToUserRo </td>
           <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -1528,21 +1945,22 @@ field_54</td>
       </table>
 </div><div class="memdoc">
 
-<p>Memory copy to user Read only memory. </p>
+<p>Memcpy to user RO memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of user memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of kern memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. DACR - 0x15450FC3 Setting TTBR1 - No (use current TTBR1) </dd></dl>
 
 </div>
 </div>
-<a id="ga06d3bd2140ebc7b95420e8991836ac4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06d3bd2140ebc7b95420e8991836ac4a">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUserRx()</h2>
+<a id="ga371fe1e41a8d06e5a6658ad8910742ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga371fe1e41a8d06e5a6658ad8910742ec">&#9670;&nbsp;</a></span>ksceKernelMemcpyToUserRx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1550,154 +1968,12 @@ field_54</td>
         <tr>
           <td class="memname">int ksceKernelMemcpyToUserRx </td>
           <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory copy to user Read execute memory. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of user memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of kern memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gafe4211cf9557a097a1223213ebfca9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe4211cf9557a097a1223213ebfca9f9">&#9670;&nbsp;</a></span>ksceKernelRxMemcpyKernelToUserForPid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelRxMemcpyKernelToUserForPid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory copy to user with process. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of user memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of kern memory </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gadfc365275d1b9406bcc15c1f28b8f347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadfc365275d1b9406bcc15c1f28b8f347">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserToKernel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelStrncpyUserToKernel </td>
-          <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Strncpy from user. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of user space strings </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of kern strings output </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga22b8be05c0ffea7560d04bc8c7c6365f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga22b8be05c0ffea7560d04bc8c7c6365f">&#9670;&nbsp;</a></span>ksceKernelStrncpyKernelToUser()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelStrncpyKernelToUser </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
@@ -1715,27 +1991,28 @@ field_54</td>
       </table>
 </div><div class="memdoc">
 
-<p>Strncpy to user. </p>
+<p>Memcpy to user RO memory with DcacheAndL2WritebackRange. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The pointer of kern space strings </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The pointer of user strings output </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcMemcpyToUserRx. DACR - 0x15450FC3 Setting TTBR1 - No (use current TTBR1) </dd></dl>
 
 </div>
 </div>
-<a id="gaeafc18da6a856d3e359733512c8a5207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeafc18da6a856d3e359733512c8a5207">&#9670;&nbsp;</a></span>ksceKernelStrncpyUserForPid()</h2>
+<a id="ga32ba7d1d89b4b42eea1d66df59ec9ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32ba7d1d89b4b42eea1d66df59ec9ea3">&#9670;&nbsp;</a></span>ksceKernelProcMemcpyToUserRx()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelStrncpyUserForPid </td>
+          <td class="memname">int ksceKernelProcMemcpyToUserRx </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
@@ -1749,7 +2026,7 @@ field_54</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1765,6 +2042,401 @@ field_54</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Memcpy to user RX memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The memcpy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelMemcpyToUserRx with disable interrupts. Setting TTBR1 - Yes </dd></dl>
+
+</div>
+</div>
+<a id="ga57af88007b0c1695d6af8896eb19506b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57af88007b0c1695d6af8896eb19506b">&#9670;&nbsp;</a></span>ksceKernelStrncpyFromUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a> ksceKernelStrncpyFromUser </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strncpy from user memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The copied length on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcStrncpyFromUser. DACR - 0x55555555 Setting TTBR1 - No (use current TTBR1) </dd></dl>
+
+</div>
+</div>
+<a id="ga278c3a10a538fcb887d831d2428c915f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga278c3a10a538fcb887d831d2428c915f">&#9670;&nbsp;</a></span>ksceKernelProcStrncpyFromUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a> ksceKernelProcStrncpyFromUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strncpy from user memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The copied length on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelStrncpyFromUserInternal with disable interrupts. DACR - Current process DACR Setting TTBR1 - Yes </dd></dl>
+
+</div>
+</div>
+<a id="ga8663b2bec3d8cddc046469c83d19a0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8663b2bec3d8cddc046469c83d19a0c2">&#9670;&nbsp;</a></span>ksceKernelStrncpyToUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a> ksceKernelStrncpyToUser </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strncpy to user memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The copied length on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcStrncpyToUser. DACR - 0x55555555 Setting TTBR1 - No (use current TTBR1) </dd></dl>
+
+</div>
+</div>
+<a id="gac0f4b33e0908fdf055b6b6db4a9364c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0f4b33e0908fdf055b6b6db4a9364c4">&#9670;&nbsp;</a></span>ksceKernelProcStrncpyToUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a> ksceKernelProcStrncpyToUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strncpy to user memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland or kernel memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The copied length on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelStrncpyToUserInternal with disable interrupts. DACR - Current process DACR Setting TTBR1 - Yes </dd></dl>
+
+</div>
+</div>
+<a id="ga2515f5ebe1315098aed6eb76cc355d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2515f5ebe1315098aed6eb76cc355d2a">&#9670;&nbsp;</a></span>ksceKernelStrnlenUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> ksceKernelStrnlenUser </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strnlen user memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- The max length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The strings length</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcStrnlenUser. DACR - 0x55555555 Setting TTBR1 - No (use current TTBR1) </dd></dl>
+
+</div>
+</div>
+<a id="gafe16d2f59b892d113106e562e1f4494d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe16d2f59b892d113106e562e1f4494d">&#9670;&nbsp;</a></span>ksceKernelProcStrnlenUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a> ksceKernelProcStrnlenUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strnlen user memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- The max length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The strings length on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelStrnlenUserInternal with disable interrupts. DACR - Current process DACR Setting TTBR1 - Yes </dd></dl>
+
+</div>
+</div>
+<a id="ga0940cc90594a0c27f971e3546bf31cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0940cc90594a0c27f971e3546bf31cce">&#9670;&nbsp;</a></span>ksceKernelUserMemcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelUserMemcpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memcpy user memory to user memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cannot use this function in kernel context. Use ksceKernelProcUserMemcpy. DACR - 0x55555555 Setting TTBR1 - No (use current TTBR1) </dd></dl>
+
+</div>
+</div>
+<a id="gaa737aa0cc1ba0258f4109b00b510a806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa737aa0cc1ba0258f4109b00b510a806">&#9670;&nbsp;</a></span>ksceKernelProcUserMemcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelProcUserMemcpy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memcpy user memory to user memory with process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The userland memory pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The copy length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- Invoke ksceKernelUserMemcpyInternal with disable interrupts. DACR - Current process DACR Setting TTBR1 - Yes </dd></dl>
 
 </div>
 </div>
