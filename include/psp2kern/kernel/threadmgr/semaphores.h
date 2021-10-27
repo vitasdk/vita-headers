@@ -43,6 +43,16 @@ typedef struct SceKernelSemaInfo {
 } SceKernelSemaInfo;
 
 /**
+ * Get semaphore info
+ *
+ * @param[in]  semaid - The semaphore guid.
+ * @param[out] info   - The info output buffer pointer.
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceKernelGetSemaInfo(SceUID semaid, SceKernelSemaInfo *info);
+
+/**
  * Creates a new semaphore
  *
  * @par Example:
