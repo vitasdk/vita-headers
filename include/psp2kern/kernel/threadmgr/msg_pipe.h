@@ -14,6 +14,27 @@ extern "C" {
 #endif
 
 
+typedef struct SceKernelMsgPipeInfo {
+	SceSize size;
+	SceUID  msgpipe_id;
+	char    name[0x20];
+	int     attr;
+	SceSize buffer_size;
+	SceSize free_size;
+	int     num_send_wait_threads;
+	int     num_receive_wait_threads;
+} SceKernelMsgPipeInfo;
+
+/**
+ * Get msgpipe info
+ *
+ * @param[in]  msgpipe_id - The msg pipe guid.
+ * @param[out] info       - The info output buffer pointer.
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceKernelGetMsgPipeInfo(SceUID msgpipe_id, SceKernelMsgPipeInfo *info);
+
 /**
  * Create a message pipe
  *

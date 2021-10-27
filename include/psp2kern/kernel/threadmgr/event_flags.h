@@ -50,6 +50,16 @@ typedef enum SceEventFlagWaitTypes {
 } SceEventFlagWaitTypes;
 
 /**
+ * Get event flags info
+ *
+ * @param[in]  evfid - The event flags guid.
+ * @param[out] info  - The info output buffer pointer.
+ *
+ * @return 0 on success, < 0 on error
+ */
+int ksceKernelGetEventFlagInfo(SceUID evfid, SceKernelEventFlagInfo *info);
+
+/**
   * Create an event flag.
   *
   * @param name - The name of the event flag.

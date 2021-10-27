@@ -223,9 +223,14 @@ modules:
           ksceKernelExitDeleteThread: 0x1D17DECF
           ksceKernelExitThread: 0x0C8A38E1
           ksceKernelGetCallbackCount: 0x0892D8DF
+          ksceKernelGetEventFlagInfo: 0x612277C9
+          ksceKernelGetLwCondInfo: 0xC2AFFBD0
+          ksceKernelGetLwMutexInfo: 0x15287EF6
+          ksceKernelGetMsgPipeInfo: 0x207E0E18
           ksceKernelGetMutexInfo: 0x69B78A12
           ksceKernelGetProcessId: 0x9DCB4B7A
           ksceKernelGetProcessIdFromTLS: 0xFA54D49A
+          ksceKernelGetSemaInfo: 0xC99DCF0D
           ksceKernelGetSystemTimeLow: 0x47F6DE49
           ksceKernelGetSystemTimeWide: 0xF4EE4FA9
           ksceKernelGetTLSAddr: 0xE938FB20
@@ -240,7 +245,9 @@ modules:
           ksceKernelGetThreadmgrUIDClass: 0x0A20775A
           ksceKernelGetTimerBaseWide: 0xA6D11DD3
           ksceKernelGetTimerTimeWide: 0xC1286004
+          ksceKernelGetUserThreadId: 0xF311808F
           ksceKernelInitializeFastMutex: 0xAF8E1266
+          ksceKernelIsThreadDebugSuspended: 0xA0B1AB21
           ksceKernelLockFastMutex: 0x70627F3A
           ksceKernelLockMutex: 0x16AC80C5
           ksceKernelLockMutexCB_089: 0xD06F2886
