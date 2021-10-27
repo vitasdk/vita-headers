@@ -14,14 +14,6 @@ extern "C" {
 #endif
 
 
-typedef struct  SceKernelLwCondWork {
-	SceInt64 data[4];
-} SceKernelLwCondWork;
-
-typedef struct SceKernelLwCondOptParam {
-	SceSize size;
-} SceKernelLwCondOptParam;
-
 /** Additional options used when creating condition variables. */
 typedef struct SceKernelCondOptParam {
 	/** Size of the ::SceKernelCondOptParam structure. */

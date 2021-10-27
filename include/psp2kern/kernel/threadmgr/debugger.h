@@ -108,6 +108,24 @@ int ksceKernelGetFaultingProcess(SceKernelFaultingProcessInfo *info);
  */
 int ksceKernelChangeThreadSuspendStatus(SceUID thid, int status);
 
+/**
+ * @brief Get thread PUID from GUID.
+ *
+ * @param[in] thid - The thread global uid.
+ *
+ * @return thread_puid on success, else < 0 on error.
+ */
+SceUID ksceKernelGetUserThreadId(SceUID thid);
+
+/**
+ * @brief Get thread PUID from GUID.
+ *
+ * @param[in] thid - The thread global uid.
+ *
+ * @return thread some state on success, else < 0 on error.
+ */
+int ksceKernelIsThreadDebugSuspended(SceUID thid);
+
 
 #ifdef __cplusplus
 }
