@@ -29,7 +29,9 @@ modules:
         kernel: true
         nid: 0x0351D827
         functions:
+          ksceRtcConvertDateTimeToUnixTime: 0x497B5DC9
           ksceRtcConvertLocalTimeToUtc: 0xAD2F3544
+          ksceRtcConvertTickToDateTime: 0x42A0DFCB
           ksceRtcConvertUtcToLocal: 0xC6E03DD4
           ksceRtcFormatRFC2822: 0xBA3415F8
           ksceRtcFormatRFC2822LocalTime: 0x1F7FC209
