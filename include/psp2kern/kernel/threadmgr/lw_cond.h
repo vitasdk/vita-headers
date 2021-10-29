@@ -32,7 +32,7 @@ typedef struct SceKernelLwCondInfo {
 	int     num_wait_threads;
 } SceKernelLwCondInfo;
 
-int sceKernelGetLwCondInfo(SceUID lwcond_id, SceKernelLwCondInfo *info);
+int ksceKernelGetLwCondInfo(SceUID lwcond_id, SceKernelLwCondInfo *info);
 
 
 #ifdef __cplusplus
