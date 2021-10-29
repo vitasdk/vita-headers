@@ -134,7 +134,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelWaitEventFlag", "group__SceThreadMgrKernel.html#ga691d0b6c49777b105e74eb2c1c568e05", null ],
     [ "ksceKernelWaitEventFlagCB", "group__SceThreadMgrKernel.html#ga32bafce5ebad8c767dadb3fed29be7ed", null ],
     [ "ksceKernelDeleteEventFlag", "group__SceThreadMgrKernel.html#ga2b04ad24aa84f0dfba882ace1eca58af", null ],
-    [ "sceKernelGetLwCondInfo", "group__SceThreadMgrKernel.html#ga87e21b5ea9d848011535f9c647ce1ef6", null ],
+    [ "ksceKernelGetLwCondInfo", "group__SceThreadMgrKernel.html#ga9f5049bf8b2c47b32715d1c95d0c2f06", null ],
     [ "ksceKernelGetLwMutexInfo", "group__SceThreadMgrKernel.html#ga63a8531d0d3b2d1790774776840e7638", null ],
     [ "ksceKernelInitializeFastMutex", "group__SceThreadMgrKernel.html#ga58cc836433bdf69b6be4877dc18a903c", null ],
     [ "ksceKernelLockFastMutex", "group__SceThreadMgrKernel.html#ga053a7d832e9b6eafe26bd191a974d100", null ],

@@ -246,8 +246,8 @@ var NAVTREEINDEX75 =
 "group__SceThreadMgrKernel.html#ga844cb252809d39019937caeb949f962e":[4,0,1,2,2,2,1,1],
 "group__SceThreadMgrKernel.html#ga864708a9f14755ed84efedb759ab03a6":[1,7,8,1,89],
 "group__SceThreadMgrKernel.html#ga864708a9f14755ed84efedb759ab03a6":[4,0,1,2,2,2,8,2],
-"group__SceThreadMgrKernel.html#ga87e21b5ea9d848011535f9c647ce1ef6":[4,0,1,2,2,2,4,0],
-"group__SceThreadMgrKernel.html#ga87e21b5ea9d848011535f9c647ce1ef6":[1,7,8,1,65],
 "group__SceThreadMgrKernel.html#ga8b91fe8a1677319b9ddf388b88d107ff":[4,0,1,2,2,2,9,4],
-"group__SceThreadMgrKernel.html#ga8b91fe8a1677319b9ddf388b88d107ff":[1,7,8,1,99]
+"group__SceThreadMgrKernel.html#ga8b91fe8a1677319b9ddf388b88d107ff":[1,7,8,1,99],
+"group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9":[4,0,1,2,2,2,3,3],
+"group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9":[1,7,8,1,58]
 };

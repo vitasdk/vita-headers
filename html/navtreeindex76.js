@@ -1,7 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9":[4,0,1,2,2,2,3,3],
-"group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9":[1,7,8,1,58],
 "group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca":[1,7,8,1,114],
 "group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca":[4,0,1,2,2,2,11,1],
 "group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215":[4,0,1,2,2,2,9,0],
@@ -12,6 +10,8 @@ var NAVTREEINDEX76 =
 "group__SceThreadMgrKernel.html#ga98211b814dfb0a1f325bcb081a3e4e4d":[1,7,8,1,106],
 "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1":[4,0,1,2,2,2,11,0],
 "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1":[1,7,8,1,5],
+"group__SceThreadMgrKernel.html#ga9f5049bf8b2c47b32715d1c95d0c2f06":[4,0,1,2,2,2,4,0],
+"group__SceThreadMgrKernel.html#ga9f5049bf8b2c47b32715d1c95d0c2f06":[1,7,8,1,65],
 "group__SceThreadMgrKernel.html#gaa746c64f423d2fcba6cc76ed132035fe":[1,7,8,1,105],
 "group__SceThreadMgrKernel.html#gaa746c64f423d2fcba6cc76ed132035fe":[4,0,1,2,2,2,10,6],
 "group__SceThreadMgrKernel.html#gaa7e9ab55b646fd2afac24968feb6c690":[1,7,8,1,97],
