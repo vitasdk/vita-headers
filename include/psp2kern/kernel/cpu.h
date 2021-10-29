@@ -8,7 +8,8 @@
 #define _PSP2_KERNEL_CPU_H_
 
 #include <psp2kern/types.h>
-#include <string.h>
+#include <psp2kern/kernel/sysclib.h>
+#include <psp2kern/kernel/sysmem/mmu.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -50,11 +51,11 @@ void ksceKernelCpuDcacheWritebackRange(const void *ptr, SceSize len);
  *
  * @param      context  The context
  */
-static inline void ksceKernelCpuSaveContext(int context[3])
+static inline void ksceKernelCpuSaveContext(SceKernelProcessContext *context)
 {
-	asm ("mrc p15, 0, %0, c2, c0, 1" : "=r" (context[0]));
-	asm ("mrc p15, 0, %0, c3, c0, 0" : "=r" (context[1]));
-	asm ("mrc p15, 0, %0, c13, c0, 1" : "=r" (context[2]));
+	asm ("mrc p15, 0, %0, c2, c0, 1" : "=r" (context->TTBR1));
+	asm ("mrc p15, 0, %0, c3, c0, 0" : "=r" (context->DACR));
+	asm ("mrc p15, 0, %0, c13, c0, 1" : "=r" (context->CONTEXTIDR));
 }
 
 /**
@@ -62,7 +63,7 @@ static inline void ksceKernelCpuSaveContext(int context[3])
  *
  * @param      context  The context, can be from ::ksceKernelGetPidContext
  */
-static inline void ksceKernelCpuRestoreContext(int context[3])
+static inline void ksceKernelCpuRestoreContext(const SceKernelProcessContext *context)
 {
 	int cpsr, tmp;
 
@@ -70,13 +71,13 @@ static inline void ksceKernelCpuRestoreContext(int context[3])
 	if (!(cpsr & 0x80))
 		asm volatile ("cpsid i" ::: "memory");
 	asm volatile ("mrc p15, 0, %0, c13, c0, 1" : "=r" (tmp));
-	tmp = (tmp & 0xFFFFFF00) | context[2];
+	tmp = (tmp & 0xFFFFFF00) | context->CONTEXTIDR;
 	asm volatile ("mcr p15, 0, %0, c13, c0, 1" :: "r" (0));
 	asm volatile ("isb" ::: "memory");
-	asm volatile ("mcr p15, 0, %0, c2, c0, 1" :: "r" (context[0] | 0x4A));
+	asm volatile ("mcr p15, 0, %0, c2, c0, 1" :: "r" (context->TTBR1 | 0x4A));
 	asm volatile ("isb" ::: "memory");
 	asm volatile ("mcr p15, 0, %0, c13, c0, 1" :: "r" (tmp));
-	asm volatile ("mcr p15, 0, %0, c3, c0, 0" :: "r" (context[1] & 0x55555555));
+	asm volatile ("mcr p15, 0, %0, c3, c0, 0" :: "r" (context->DACR & 0x55555555));
 	if (!(cpsr & 0x80))
 		asm volatile ("cpsie i" ::: "memory");
 }
