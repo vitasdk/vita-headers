@@ -1,12 +1,13 @@
 var NAVTREEINDEX84 =
 {
 "group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a":[1,11,12,0,29],
-"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[4,0,1,0,81,17],
+"group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a":[4,0,1,0,81,29],
 "group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[1,11,12,0,17],
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[4,0,1,0,81,17],
 "group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,11,12,0,27],
 "group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[4,0,1,0,81,27],
-"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,81,6],
 "group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[1,11,12,0,6],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,81,6],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,81,26],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,11,12,0,26],
 "group__SystemFunction.html":[1,5],
@@ -122,8 +123,8 @@ var NAVTREEINDEX84 =
 "namespaces.html":[2,0],
 "namespacesce.html":[2,0,0],
 "namespacesce.html":[3,0,0],
-"namespacesce_1_1Json.html":[3,0,0,0],
 "namespacesce_1_1Json.html":[2,0,0,0],
+"namespacesce_1_1Json.html":[3,0,0,0],
 "net_2net_8h.html":[4,0,1,0,3,1],
 "net_2net_8h_source.html":[4,0,1,0,3,1],
 "net__syscalls_8h.html":[4,0,1,0,3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX84 =
 "videodec_8h.html":[4,0,1,0,79],
 "videodec_8h_source.html":[4,0,1,0,79],
 "videoexport_8h.html":[4,0,1,0,80],
-"videoexport_8h_source.html":[4,0,1,0,80],
-"vitasdk_2utils_8h.html":[4,0,1,3,1]
+"videoexport_8h_source.html":[4,0,1,0,80]
 };
