@@ -7,6 +7,7 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "net", "dir_2ce7e998e987a9400106ba4a5e6baf69.html", "dir_2ce7e998e987a9400106ba4a5e6baf69" ],
     [ "appmgr.h", "ern_2appmgr_8h.html", "ern_2appmgr_8h" ],
     [ "bt.h", "bt_8h.html", "bt_8h" ],
+    [ "coredump.h", "coredump_8h.html", "coredump_8h" ],
     [ "ctrl.h", "ern_2ctrl_8h.html", "ern_2ctrl_8h" ],
     [ "display.h", "ern_2display_8h.html", "ern_2display_8h" ],
     [ "fios2.h", "fios2_8h.html", "fios2_8h" ],
