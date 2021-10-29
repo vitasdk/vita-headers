@@ -47,6 +47,26 @@ int ksceRtcGetCurrentSecureTick(SceRtcTick *tick);
 int ksceRtcSetCurrentDebugNetworkTick(SceRtcTick *tick);
 int ksceRtcGetCurrentDebugNetworkTick(SceRtcTick *tick);
 
+/**
+ * Convert tick to date time
+ *
+ * @param[out] dst - The output SceDateTime struct pointer.
+ * @param[in]  src - The input tick pointer.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceRtcConvertTickToDateTime(SceDateTime *dst, SceRtcTick *src);
+
+/**
+ * Convert date time to unix time
+ *
+ * @param[in]  src - The input SceDateTime struct pointer.
+ * @param[out] dst - The output unix time buffer pointer.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceRtcConvertDateTimeToUnixTime(const SceDateTime *src, SceUInt64 *dst);
+
 #ifdef __cplusplus
 }
 #endif
