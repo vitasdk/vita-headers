@@ -9,5 +9,7 @@ var group__SceRtcKernel =
     [ "ksceRtcSetCurrentSecureTick", "group__SceRtcKernel.html#ga247f0fa918a9b287938908a8fe9f0e6d", null ],
     [ "ksceRtcGetCurrentSecureTick", "group__SceRtcKernel.html#gac5e4d3b6a382a695bec6f0aa1dc32237", null ],
     [ "ksceRtcSetCurrentDebugNetworkTick", "group__SceRtcKernel.html#gaeffdd673eac631e5ec9cccefc1dbf6be", null ],
-    [ "ksceRtcGetCurrentDebugNetworkTick", "group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285", null ]
+    [ "ksceRtcGetCurrentDebugNetworkTick", "group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285", null ],
+    [ "ksceRtcConvertTickToDateTime", "group__SceRtcKernel.html#ga8a4458cf86b7768004d9ee655c82cda9", null ],
+    [ "ksceRtcConvertDateTimeToUnixTime", "group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d", null ]
 ];

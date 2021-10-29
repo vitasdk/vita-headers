@@ -1,5 +1,9 @@
 var NAVTREEINDEX85 =
 {
+"videodec_8h.html":[4,0,1,0,79],
+"videodec_8h_source.html":[4,0,1,0,79],
+"videoexport_8h.html":[4,0,1,0,80],
+"videoexport_8h_source.html":[4,0,1,0,80],
 "vitasdk_2utils_8h.html":[4,0,1,3,1],
 "vitasdk_2utils_8h.html#a6a55a1b745c1e8467dbb4b6cb933ab7e":[4,0,1,3,1,1],
 "vitasdk_2utils_8h.html#a94fe23a44a1a8afae2b8285db5fb707b":[4,0,1,3,1,2],

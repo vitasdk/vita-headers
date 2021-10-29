@@ -106,11 +106,15 @@ $(document).ready(function(){initNavTree('ern_2kernel_2rtc_8h_source.html',''); 
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceRtcKernel.html#gaeffdd673eac631e5ec9cccefc1dbf6be">ksceRtcSetCurrentDebugNetworkTick</a>(<a class="code" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285">ksceRtcGetCurrentDebugNetworkTick</a>(<a class="code" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_RTC_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceRtcKernel.html#ga8a4458cf86b7768004d9ee655c82cda9">ksceRtcConvertTickToDateTime</a>(<a class="code" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *dst, <a class="code" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *src);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d">ksceRtcConvertDateTimeToUnixTime</a>(<span class="keyword">const</span> <a class="code" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *src, <a class="code" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *dst);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_RTC_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__SceTypesKernel_html_structSceDateTime"><div class="ttname"><a href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a></div><div class="ttdef"><b>Definition:</b> types.h:183</div></div>
@@ -121,6 +125,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2rtc_8h_source.html',''); 
 <div class="ttc" id="agroup__SceRtcKernel_html_ga247f0fa918a9b287938908a8fe9f0e6d"><div class="ttname"><a href="group__SceRtcKernel.html#ga247f0fa918a9b287938908a8fe9f0e6d">ksceRtcSetCurrentSecureTick</a></div><div class="ttdeci">int ksceRtcSetCurrentSecureTick(SceRtcTick *tick)</div></div>
 <div class="ttc" id="agroup__SceRtcKernel_html_ga85af632fdb2af0b8813b569a986048b7"><div class="ttname"><a href="group__SceRtcKernel.html#ga85af632fdb2af0b8813b569a986048b7">ksceRtcGetCurrentClockLocalTime</a></div><div class="ttdeci">int ksceRtcGetCurrentClockLocalTime(SceDateTime *time)</div><div class="ttdoc">Get current real time clock time with system time zone.</div></div>
 <div class="ttc" id="agroup__SceRtcKernel_html_gaeffdd673eac631e5ec9cccefc1dbf6be"><div class="ttname"><a href="group__SceRtcKernel.html#gaeffdd673eac631e5ec9cccefc1dbf6be">ksceRtcSetCurrentDebugNetworkTick</a></div><div class="ttdeci">int ksceRtcSetCurrentDebugNetworkTick(SceRtcTick *tick)</div></div>
+<div class="ttc" id="agroup__SceRtcKernel_html_ga8a4458cf86b7768004d9ee655c82cda9"><div class="ttname"><a href="group__SceRtcKernel.html#ga8a4458cf86b7768004d9ee655c82cda9">ksceRtcConvertTickToDateTime</a></div><div class="ttdeci">int ksceRtcConvertTickToDateTime(SceDateTime *dst, SceRtcTick *src)</div><div class="ttdoc">Convert tick to date time.</div></div>
 <div class="ttc" id="agroup__SceTypesKernel_html_gab1bcf7d8b15df17d3b286f6580ba2492"><div class="ttname"><a href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></div><div class="ttdeci">uint64_t SceUInt64</div><div class="ttdef"><b>Definition:</b> types.h:36</div></div>
 <div class="ttc" id="agroup__SceRtcKernel_html_gad6a686c6f4fc52815c22fed766a57865"><div class="ttname"><a href="group__SceRtcKernel.html#gad6a686c6f4fc52815c22fed766a57865">ksceRtcGetCurrentTick</a></div><div class="ttdeci">int ksceRtcGetCurrentTick(SceRtcTick *tick)</div></div>
 <div class="ttc" id="agroup__SceRtcKernel_html_ga95bcbf150c4012a1794f86568894b285"><div class="ttname"><a href="group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285">ksceRtcGetCurrentDebugNetworkTick</a></div><div class="ttdeci">int ksceRtcGetCurrentDebugNetworkTick(SceRtcTick *tick)</div></div>
@@ -129,6 +134,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2rtc_8h_source.html',''); 
 <div class="ttc" id="agroup__SceKernelDebugKernel_html_gae9c48e1047c871aefb9faa2f6d89fd3a"><div class="ttname"><a href="group__SceKernelDebugKernel.html#gae9c48e1047c871aefb9faa2f6d89fd3a">time</a></div><div class="ttdeci">SceUInt64 time</div><div class="ttdoc">Time of the event occurred.</div><div class="ttdef"><b>Definition:</b> debug.h:138</div></div>
 <div class="ttc" id="agroup__SceRtcKernel_html_gae2ac49a1b82bde6e3ce9596b12382611"><div class="ttname"><a href="group__SceRtcKernel.html#gae2ac49a1b82bde6e3ce9596b12382611">ksceRtcSetCurrentTick</a></div><div class="ttdeci">int ksceRtcSetCurrentTick(SceRtcTick *tick)</div></div>
 <div class="ttc" id="agroup__SceRtcKernel_html_gab961bf2e612a3fce9a74093a4516f363"><div class="ttname"><a href="group__SceRtcKernel.html#gab961bf2e612a3fce9a74093a4516f363">ksceRtcGetCurrentNetworkTick</a></div><div class="ttdeci">int ksceRtcGetCurrentNetworkTick(SceRtcTick *tick)</div></div>
+<div class="ttc" id="agroup__SceRtcKernel_html_ga595ed5216c24074df65c2ac79c844b1d"><div class="ttname"><a href="group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d">ksceRtcConvertDateTimeToUnixTime</a></div><div class="ttdeci">int ksceRtcConvertDateTimeToUnixTime(const SceDateTime *src, SceUInt64 *dst)</div><div class="ttdoc">Convert date time to unix time.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

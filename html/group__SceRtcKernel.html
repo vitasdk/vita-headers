@@ -114,6 +114,12 @@ Functions</h2></td></tr>
 <tr class="separator:gaeffdd673eac631e5ec9cccefc1dbf6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95bcbf150c4012a1794f86568894b285"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285">ksceRtcGetCurrentDebugNetworkTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
 <tr class="separator:ga95bcbf150c4012a1794f86568894b285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a4458cf86b7768004d9ee655c82cda9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcKernel.html#ga8a4458cf86b7768004d9ee655c82cda9">ksceRtcConvertTickToDateTime</a> (<a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *dst, <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *src)</td></tr>
+<tr class="memdesc:ga8a4458cf86b7768004d9ee655c82cda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert tick to date time.  <a href="group__SceRtcKernel.html#ga8a4458cf86b7768004d9ee655c82cda9">More...</a><br /></td></tr>
+<tr class="separator:ga8a4458cf86b7768004d9ee655c82cda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga595ed5216c24074df65c2ac79c844b1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d">ksceRtcConvertDateTimeToUnixTime</a> (const <a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *src, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *dst)</td></tr>
+<tr class="memdesc:ga595ed5216c24074df65c2ac79c844b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert date time to unix time.  <a href="group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d">More...</a><br /></td></tr>
+<tr class="separator:ga595ed5216c24074df65c2ac79c844b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceRtcTick" id="structSceRtcTick"></a>
@@ -346,6 +352,82 @@ tick</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a4458cf86b7768004d9ee655c82cda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a4458cf86b7768004d9ee655c82cda9">&#9670;&nbsp;</a></span>ksceRtcConvertTickToDateTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceRtcConvertTickToDateTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert tick to date time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>- The output <a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> struct pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The input tick pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga595ed5216c24074df65c2ac79c844b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga595ed5216c24074df65c2ac79c844b1d">&#9670;&nbsp;</a></span>ksceRtcConvertDateTimeToUnixTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceRtcConvertDateTimeToUnixTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert date time to unix time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>- The input <a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> struct pointer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>- The output unix time buffer pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
