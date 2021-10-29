@@ -5,5 +5,7 @@ var debugger_8h =
     [ "ksceKernelGetThreadIdList", "group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde", null ],
     [ "ksceKernelGetThreadCpuRegisters", "group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b", null ],
     [ "ksceKernelGetFaultingProcess", "group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d", null ],
-    [ "ksceKernelChangeThreadSuspendStatus", "group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d", null ]
+    [ "ksceKernelChangeThreadSuspendStatus", "group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d", null ],
+    [ "ksceKernelGetUserThreadId", "group__SceThreadMgrKernel.html#gaea88b8fbc856f4840b96e27dd72e8071", null ],
+    [ "ksceKernelIsThreadDebugSuspended", "group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38", null ]
 ];

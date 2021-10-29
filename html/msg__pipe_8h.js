@@ -1,5 +1,6 @@
 var msg__pipe_8h =
 [
+    [ "ksceKernelGetMsgPipeInfo", "group__SceThreadMgrKernel.html#gafaa783aea175646bfaf4fdeb1651b8d2", null ],
     [ "ksceKernelCreateMsgPipe", "group__SceThreadMgrKernel.html#ga30584c9e6398a7113ae735bdc637d46b", null ],
     [ "ksceKernelDeleteMsgPipe", "group__SceThreadMgrKernel.html#gaab53d6d4dce857d0409263b698c8dbfa", null ],
     [ "ksceKernelSendMsgPipeVector", "group__SceThreadMgrKernel.html#ga4b770dd64325292584c90eb146201ee8", null ],

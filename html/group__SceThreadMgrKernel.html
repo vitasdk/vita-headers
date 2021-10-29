@@ -125,6 +125,16 @@ $(document).ready(function(){initNavTree('group__SceThreadMgrKernel.html',''); i
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="lw__cond_8h.html">psp2kern/kernel/threadmgr/lw_cond.h</a>&gt;</span> </div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceThreadmgrForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<p>Exports for Kernel</p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="lw__mutex_8h.html">psp2kern/kernel/threadmgr/lw_mutex.h</a>&gt;</span> </div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
@@ -252,6 +262,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2c327377d284bbc645a46eb68dcbff8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d">ksceKernelChangeThreadSuspendStatus</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
 <tr class="memdesc:ga2c327377d284bbc645a46eb68dcbff8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the thread suspension status to another value.  <a href="group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d">More...</a><br /></td></tr>
 <tr class="separator:ga2c327377d284bbc645a46eb68dcbff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea88b8fbc856f4840b96e27dd72e8071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaea88b8fbc856f4840b96e27dd72e8071">ksceKernelGetUserThreadId</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>
+<tr class="memdesc:gaea88b8fbc856f4840b96e27dd72e8071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thread PUID from GUID.  <a href="group__SceThreadMgrKernel.html#gaea88b8fbc856f4840b96e27dd72e8071">More...</a><br /></td></tr>
+<tr class="separator:gaea88b8fbc856f4840b96e27dd72e8071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18529a0737075d78b2901f9a3f773a38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38">ksceKernelIsThreadDebugSuspended</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>
+<tr class="memdesc:ga18529a0737075d78b2901f9a3f773a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thread PUID from GUID.  <a href="group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38">More...</a><br /></td></tr>
+<tr class="separator:ga18529a0737075d78b2901f9a3f773a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">ksceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
+<tr class="memdesc:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get event flags info.  <a href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">More...</a><br /></td></tr>
+<tr class="separator:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d943b0de33908f541e36d4895b869c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9">ksceKernelCreateEventFlag</a> (const char *name, int attr, int bits, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a> *opt)</td></tr>
 <tr class="memdesc:ga8d943b0de33908f541e36d4895b869c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an event flag.  <a href="group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9">More...</a><br /></td></tr>
 <tr class="separator:ga8d943b0de33908f541e36d4895b869c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,6 +292,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2b04ad24aa84f0dfba882ace1eca58af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga2b04ad24aa84f0dfba882ace1eca58af">ksceKernelDeleteEventFlag</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid)</td></tr>
 <tr class="memdesc:ga2b04ad24aa84f0dfba882ace1eca58af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an event flag.  <a href="group__SceThreadMgrKernel.html#ga2b04ad24aa84f0dfba882ace1eca58af">More...</a><br /></td></tr>
 <tr class="separator:ga2b04ad24aa84f0dfba882ace1eca58af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87e21b5ea9d848011535f9c647ce1ef6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga87e21b5ea9d848011535f9c647ce1ef6">sceKernelGetLwCondInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> lwcond_id, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwCondInfo">SceKernelLwCondInfo</a> *info)</td></tr>
+<tr class="separator:ga87e21b5ea9d848011535f9c647ce1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63a8531d0d3b2d1790774776840e7638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga63a8531d0d3b2d1790774776840e7638">ksceKernelGetLwMutexInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> lwmtxid, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwMutexInfo">SceKernelLwMutexInfo</a> *info)</td></tr>
+<tr class="separator:ga63a8531d0d3b2d1790774776840e7638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58cc836433bdf69b6be4877dc18a903c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga58cc836433bdf69b6be4877dc18a903c">ksceKernelInitializeFastMutex</a> (void *mutex, const char *name, int unk0, int unk1)</td></tr>
 <tr class="separator:ga58cc836433bdf69b6be4877dc18a903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga053a7d832e9b6eafe26bd191a974d100"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga053a7d832e9b6eafe26bd191a974d100">ksceKernelLockFastMutex</a> (void *mutex)</td></tr>
@@ -308,6 +331,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf4b5522c842ee278113a4010d4e72107"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaf4b5522c842ee278113a4010d4e72107">ksceKernelRunWithStack</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> stack_size, int(*to_call)(void *), void *args)</td></tr>
 <tr class="memdesc:gaf4b5522c842ee278113a4010d4e72107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a function with larger stack size.  <a href="group__SceThreadMgrKernel.html#gaf4b5522c842ee278113a4010d4e72107">More...</a><br /></td></tr>
 <tr class="separator:gaf4b5522c842ee278113a4010d4e72107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaa783aea175646bfaf4fdeb1651b8d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gafaa783aea175646bfaf4fdeb1651b8d2">ksceKernelGetMsgPipeInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> msgpipe_id, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelMsgPipeInfo">SceKernelMsgPipeInfo</a> *info)</td></tr>
+<tr class="memdesc:gafaa783aea175646bfaf4fdeb1651b8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get msgpipe info.  <a href="group__SceThreadMgrKernel.html#gafaa783aea175646bfaf4fdeb1651b8d2">More...</a><br /></td></tr>
+<tr class="separator:gafaa783aea175646bfaf4fdeb1651b8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30584c9e6398a7113ae735bdc637d46b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga30584c9e6398a7113ae735bdc637d46b">ksceKernelCreateMsgPipe</a> (const char *name, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int attr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> bufSize, void *opt)</td></tr>
 <tr class="memdesc:ga30584c9e6398a7113ae735bdc637d46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a message pipe.  <a href="group__SceThreadMgrKernel.html#ga30584c9e6398a7113ae735bdc637d46b">More...</a><br /></td></tr>
 <tr class="separator:ga30584c9e6398a7113ae735bdc637d46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,6 +376,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga05007c0e839fa8cf5e777e7732d5fbf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga05007c0e839fa8cf5e777e7732d5fbf3">ksceKernelGetMutexInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> mutexid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a> *info)</td></tr>
 <tr class="memdesc:ga05007c0e839fa8cf5e777e7732d5fbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve information about a mutex.  <a href="group__SceThreadMgrKernel.html#ga05007c0e839fa8cf5e777e7732d5fbf3">More...</a><br /></td></tr>
 <tr class="separator:ga05007c0e839fa8cf5e777e7732d5fbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9293c6bd36c0500428d905dc6fc19215"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215">ksceKernelGetSemaInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> semaid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a> *info)</td></tr>
+<tr class="memdesc:ga9293c6bd36c0500428d905dc6fc19215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get semaphore info.  <a href="group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215">More...</a><br /></td></tr>
+<tr class="separator:ga9293c6bd36c0500428d905dc6fc19215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8a54d87b63526344ac0f27fe3f38c5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaf8a54d87b63526344ac0f27fe3f38c5a">ksceKernelCreateSema</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int initVal, int maxVal, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam">SceKernelSemaOptParam</a> *option)</td></tr>
 <tr class="memdesc:gaf8a54d87b63526344ac0f27fe3f38c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new semaphore.  <a href="group__SceThreadMgrKernel.html#gaf8a54d87b63526344ac0f27fe3f38c5a">More...</a><br /></td></tr>
 <tr class="separator:gaf8a54d87b63526344ac0f27fe3f38c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,58 +520,6 @@ Unknown. </td></tr>
 notifyArg</td>
 <td class="fielddoc">
 Unknown. </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelLwCondWork" id="structSceKernelLwCondWork"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondWork">&#9670;&nbsp;</a></span>SceKernelLwCondWork</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelLwCondWork</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga52c66c0ec1d97d4f21c08229de3b83b4"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
-<td class="fieldname">
-data[4]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaff19b13fd3dfb73912b66ad58d688379"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
-<td class="fieldname">
-data[4]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelLwCondOptParam" id="structSceKernelLwCondOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondOptParam">&#9670;&nbsp;</a></span>SceKernelLwCondOptParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelLwCondOptParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga178db2e3200b9a38b30f602a4ff6e11d"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
 </table>
 
 </div>
@@ -948,6 +925,117 @@ size</td>
 
 </div>
 </div>
+<a name="structSceKernelLwCondWork" id="structSceKernelLwCondWork"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondWork">&#9670;&nbsp;</a></span>SceKernelLwCondWork</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwCondWork</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga52c66c0ec1d97d4f21c08229de3b83b4"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
+<td class="fieldname">
+data[4]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaff19b13fd3dfb73912b66ad58d688379"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
+<td class="fieldname">
+data[4]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwCondOptParam" id="structSceKernelLwCondOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondOptParam">&#9670;&nbsp;</a></span>SceKernelLwCondOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwCondOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga178db2e3200b9a38b30f602a4ff6e11d"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwCondInfo" id="structSceKernelLwCondInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondInfo">&#9670;&nbsp;</a></span>SceKernelLwCondInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwCondInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gade11c226db34c5e50ae065ad896e9cb2"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8cfdd815e2d7bf87ebe6473fe7450162"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+lwcond_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab9a0cd2c522d02bf64995ef4a034ef70"></a>char</td>
+<td class="fieldname">
+name[0x20]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga7e2b5c16f8ec40113109049616e98ff2"></a>int</td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga171a89c45b5f3f40549eab5b4bbcc0f6"></a><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *</td>
+<td class="fieldname">
+work</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gacc69d73d46ced096010835d35d50a305"></a><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a> *</td>
+<td class="fieldname">
+lwmutex</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga7c70343442f3a550faa2809590b49b08"></a>int</td>
+<td class="fieldname">
+num_wait_threads</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceKernelLwMutexWork" id="structSceKernelLwMutexWork"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwMutexWork">&#9670;&nbsp;</a></span>SceKernelLwMutexWork</h2>
 
@@ -988,6 +1076,142 @@ data[4]</td>
 <a id="ga2bcd9689691161c017a72ab37ec05411"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwMutexInfo" id="structSceKernelLwMutexInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwMutexInfo">&#9670;&nbsp;</a></span>SceKernelLwMutexInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwMutexInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gabebcceb0523fa8017d44fc0049f47601"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf9ec9f59c36f3672845898d9b49587b0"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+mtxid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga59c7730bb3ca3347b29968c10ffa00ce"></a>char</td>
+<td class="fieldname">
+name[0x20]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaa0facf149b397b5222d15829621774fe"></a>int</td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5e1a7b1674263c15017edaedf82b0afb"></a><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a> *</td>
+<td class="fieldname">
+work</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gac658be33f7a99008504822a0366ac760"></a>int</td>
+<td class="fieldname">
+init_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga506ef564441c7776f7aabce8bb6d8637"></a>int</td>
+<td class="fieldname">
+current_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf66790381d4bb4c3461b6b75f9ee0d69"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+current_owner_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga91c6f32f2813613f0f761a8e4670c8e1"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+num_wait_threads</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelMsgPipeInfo" id="structSceKernelMsgPipeInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMsgPipeInfo">&#9670;&nbsp;</a></span>SceKernelMsgPipeInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelMsgPipeInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga2b954c4f864b36d181b38dd572036def"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae8366722afa7d78f28ace5688fc3b8f4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+msgpipe_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga6aebadbae194baca6d314dbb20686a4f"></a>char</td>
+<td class="fieldname">
+name[0x20]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gac22610e445122958b55fd87944d4e427"></a>int</td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga9a0797114c75c27bb331a98462028737"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+buffer_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga68bbd8412b6dd97a7b51d3568ea62659"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+free_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga050d825119f64be93c986ed4fc685172"></a>int</td>
+<td class="fieldname">
+num_send_wait_threads</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga64741bf2c034fa86280985dc12357bc9"></a>int</td>
+<td class="fieldname">
+num_receive_wait_threads</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -1189,7 +1413,7 @@ Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSema
 <div class="textblock"><p>Current state of a semaphore. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a" title="Retrieve information about a semaphore.">sceKernelGetSemaInfo</a>.</dd>
 <dd>
-ksceKernelGetSemaInfo. </dd></dl>
+<a class="el" href="group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215" title="Get semaphore info.">ksceKernelGetSemaInfo</a>. </dd></dl>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -2310,6 +2534,98 @@ priority</td>
 
 </div>
 </div>
+<a id="gaea88b8fbc856f4840b96e27dd72e8071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea88b8fbc856f4840b96e27dd72e8071">&#9670;&nbsp;</a></span>ksceKernelGetUserThreadId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelGetUserThreadId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get thread PUID from GUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>- The thread global uid.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>thread_puid on success, else &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga18529a0737075d78b2901f9a3f773a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18529a0737075d78b2901f9a3f773a38">&#9670;&nbsp;</a></span>ksceKernelIsThreadDebugSuspended()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelIsThreadDebugSuspended </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get thread PUID from GUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>- The thread global uid.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>thread some state on success, else &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gab45ad76d83db1f7bba7900d2a38f01e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab45ad76d83db1f7bba7900d2a38f01e3">&#9670;&nbsp;</a></span>ksceKernelGetEventFlagInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetEventFlagInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>evfid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get event flags info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">evfid</td><td>- The event flags guid. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- The info output buffer pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
 <a id="ga8d943b0de33908f541e36d4895b869c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8d943b0de33908f541e36d4895b869c9">&#9670;&nbsp;</a></span>ksceKernelCreateEventFlag()</h2>
 
@@ -2635,6 +2951,62 @@ priority</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lt; 0 On error </dd></dl>
+
+</div>
+</div>
+<a id="ga87e21b5ea9d848011535f9c647ce1ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87e21b5ea9d848011535f9c647ce1ef6">&#9670;&nbsp;</a></span>sceKernelGetLwCondInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelGetLwCondInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>lwcond_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwCondInfo">SceKernelLwCondInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga63a8531d0d3b2d1790774776840e7638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63a8531d0d3b2d1790774776840e7638">&#9670;&nbsp;</a></span>ksceKernelGetLwMutexInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetLwMutexInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>lwmtxid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwMutexInfo">SceKernelLwMutexInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2983,6 +3355,44 @@ priority</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a id="gafaa783aea175646bfaf4fdeb1651b8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafaa783aea175646bfaf4fdeb1651b8d2">&#9670;&nbsp;</a></span>ksceKernelGetMsgPipeInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetMsgPipeInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>msgpipe_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelMsgPipeInfo">SceKernelMsgPipeInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get msgpipe info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msgpipe_id</td><td>- The msg pipe guid. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- The info output buffer pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
 
 </div>
 </div>
@@ -3650,6 +4060,44 @@ priority</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga9293c6bd36c0500428d905dc6fc19215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9293c6bd36c0500428d905dc6fc19215">&#9670;&nbsp;</a></span>ksceKernelGetSemaInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetSemaInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>semaid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get semaphore info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">semaid</td><td>- The semaphore guid. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- The info output buffer pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
 
 </div>
 </div>
@@ -4379,6 +4827,7 @@ priority</td>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__SceThreadMgrKernel_html_ga8b91fe8a1677319b9ddf388b88d107ff"><div class="ttname"><a href="group__SceThreadMgrKernel.html#ga8b91fe8a1677319b9ddf388b88d107ff">ksceKernelWaitSema</a></div><div class="ttdeci">int ksceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout)</div><div class="ttdoc">Lock a semaphore.</div></div>
+<div class="ttc" id="alw__cond_8h_html"><div class="ttname"><a href="lw__cond_8h.html">lw_cond.h</a></div></div>
 <div class="ttc" id="agroup__SceThreadMgrKernel_html_gae82231f24f198d232dd45deddf15ad6d"><div class="ttname"><a href="group__SceThreadMgrKernel.html#gae82231f24f198d232dd45deddf15ad6d">ksceKernelDelayThread</a></div><div class="ttdeci">int ksceKernelDelayThread(SceUInt delay)</div><div class="ttdoc">Delay the current thread by a specified number of microseconds.</div></div>
 <div class="ttc" id="asemaphores_8h_html"><div class="ttname"><a href="semaphores_8h.html">semaphores.h</a></div></div>
 <div class="ttc" id="aevent__flags_8h_html"><div class="ttname"><a href="event__flags_8h.html">event_flags.h</a></div></div>
