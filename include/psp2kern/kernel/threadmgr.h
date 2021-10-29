@@ -10,6 +10,7 @@
 #include <psp2kern/kernel/threadmgr/thread.h>
 #include <psp2kern/kernel/threadmgr/cond.h>
 #include <psp2kern/kernel/threadmgr/mutex.h>
+#include <psp2kern/kernel/threadmgr/lw_cond.h>
 #include <psp2kern/kernel/threadmgr/lw_mutex.h>
 #include <psp2kern/kernel/threadmgr/event_flags.h>
 #include <psp2kern/kernel/threadmgr/semaphores.h>
