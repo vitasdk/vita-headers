@@ -11,6 +11,7 @@
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/kbl/kbl.h>
 #include <psp2kern/kernel/cpu.h>
+#include <psp2kern/coredump.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -341,6 +342,23 @@ int ksceKernelSysrootGetSystemSwVersion(void);
  * @return pid on success, < 0 on error.
  */
 SceUID ksceKernelSysrootGetShellPid(void);
+
+typedef int (* SceKernelCoredumpTriggerFunc)(
+	SceUID pid,
+	SceKernelCoredumpStateUpdateCallback update_func,
+	SceKernelCoredumpStateFinishCallback finish_func,
+	SceCoredumpTriggerParam *param
+);
+
+/**
+ * Register coredump trigger function.
+ *
+ * @param[in] func - The coredump trigger function pointer.
+ *
+ * @return none.
+ */
+void ksceKernelSysrootRegisterCoredumpTrigger(SceKernelCoredumpTriggerFunc func);
+
 
 #ifdef __cplusplus
 }
