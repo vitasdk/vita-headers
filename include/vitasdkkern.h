@@ -19,6 +19,7 @@
 #include <psp2kern/sblaimgr.h>
 #include <psp2kern/sblauthmgr.h>
 #include <psp2kern/syscon.h>
+#include <psp2kern/touch.h>
 #include <psp2kern/uart.h>
 #include <psp2kern/udcd.h>
 #include <psp2kern/usbd.h>
