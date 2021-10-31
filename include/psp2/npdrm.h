@@ -39,20 +39,20 @@ typedef struct SceNpDrmLicense { // size is 0x200
 
 typedef struct ScePsmDrmLicense {
   char magic[0x8];             
-  uint32_t unk1;               
-  uint32_t unk2;               
-  uint64_t aid;                
-  uint32_t unk3;               
-  uint32_t unk4;               
-  uint64_t start_time;         
-  uint64_t expiration_time;    
-  uint8_t act_sha256digest[0x20];    
+  SceUInt32 unk1;               
+  SceUInt32 unk2;               
+  SceUInt64 account_id;                
+  SceUInt32 unk3;               
+  SceUInt32 unk4;               
+  SceUInt64 start_time;         
+  SceUInt64 expiration_time;    
+  SceUInt8 activation_checksum[0x20];    
   char content_id[0x30];       
-  uint8_t unk5[0x80];          
-  uint8_t unk6[0x20];
-  uint8_t key[0x10];
-  uint8_t signature[0x1D0];
-  uint8_t signature_rsa[0x100]; 
+  SceUInt8 unk5[0x80];          
+  SceUInt8 unk6[0x20];
+  SceUInt8 key[0x10];
+  SceUInt8 signature[0x1D0];
+  SceUInt8 rsa_signature[0x100]; 
 } ScePsmDrmLicense;
   
 /**
@@ -101,7 +101,7 @@ int _sceNpDrmGetRifNameForInstall(char *rif_name, const void *rif_data, int unk)
  * 
  * @return >0 on success, <0 on error
 */
-int scePsmDrmGetRifKey(const char *license_buf, char *keydata, int flags);
+int scePsmDrmGetRifKey(const ScePsmDrmLicense *license_buf, char *keydata, int flags);
  
 #ifdef __cplusplus
 }
