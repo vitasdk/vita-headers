@@ -101,6 +101,8 @@ int ksceKernelGetFaultingProcess(SceKernelFaultingProcessInfo *info);
  * More research needs to be done to find out exactly what each status actually means. Some examples of useful scenarios:
  * When handling an exception changing the status to 0x1002 (on a newly suspended thread) will stop the kernel rethrowing the same exception.
  * When resuming a suspended thread changing the status to 2 will allow it to resume.
+ * 
+ * @note The valid mask for \p status is 0xF7F03.
  *
  * @param[in]   thid    The thread to change.
  * @param[in]   status  The new status for suspension.
@@ -118,13 +120,37 @@ int ksceKernelChangeThreadSuspendStatus(SceUID thid, int status);
 SceUID ksceKernelGetUserThreadId(SceUID thid);
 
 /**
- * @brief Get thread PUID from GUID.
+ * @brief Get thread suspend status.
  *
  * @param[in] thid - The thread global uid.
  *
- * @return thread some state on success, else < 0 on error.
+ * @return    Suspend status on success, else <0 on error.
  */
 int ksceKernelIsThreadDebugSuspended(SceUID thid);
+
+/**
+ * @brief Debug suspend a thread.
+ *
+ * @note The valid mask for \p status is 0xF7F03.
+ * 
+ * @param[in] thid    The thread global uid.
+ * @param[in] status  The suspend status.
+ *  
+ * @return    Zero on success, else <0 on error.
+ */
+int ksceKernelDebugSuspendThread(SceUID thid, int status);
+
+/**
+ * @brief Debug resume a thread.
+ *
+ * @note The valid mask for \p status is 0xF7F03.
+ *
+ * @param[in] thid    The thread global uid.
+ * @param[in] status  The suspend status to resume from.
+ *  
+ * @return    Zero on success, else <0 on error.
+ */
+int ksceKernelDebugResumeThread(SceUID thid, int status);
 
 
 #ifdef __cplusplus
