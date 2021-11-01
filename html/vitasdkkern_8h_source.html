@@ -97,54 +97,55 @@ $(document).ready(function(){initNavTree('vitasdkkern_8h_source.html',''); initR
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sblaimgr_8h.html">psp2kern/sblaimgr.h</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sblauthmgr_8h.html">psp2kern/sblauthmgr.h</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="syscon_8h.html">psp2kern/syscon.h</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uart_8h.html">psp2kern/uart.h</a>&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2udcd_8h.html">psp2kern/udcd.h</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2usbd_8h.html">psp2kern/usbd.h</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2usbserial_8h.html">psp2kern/usbserial.h</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2avcodec_2jpegenc_8h.html">psp2kern/avcodec/jpegenc.h</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2devctl_8h.html">psp2kern/io/devctl.h</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2dirent_8h.html">psp2kern/io/dirent.h</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2fcntl_8h.html">psp2kern/io/fcntl.h</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2stat_8h.html">psp2kern/io/stat.h</a>&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2cpu_8h.html">psp2kern/kernel/cpu.h</a>&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="debug_8h.html">psp2kern/kernel/debug.h</a>&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="debugled_8h.html">psp2kern/kernel/debugled.h</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dipsw_8h.html">psp2kern/kernel/dipsw.h</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2dmac_8h.html">psp2kern/kernel/dmac.h</a>&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="excpmgr_8h.html">psp2kern/kernel/excpmgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="intrmgr_8h.html">psp2kern/kernel/intrmgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iofilemgr_8h.html">psp2kern/kernel/iofilemgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2modulemgr_8h.html">psp2kern/kernel/modulemgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="proc__event_8h.html">psp2kern/kernel/proc_event.h</a>&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2processmgr_8h.html">psp2kern/kernel/processmgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2rtc_8h.html">psp2kern/kernel/rtc.h</a>&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ssmgr_8h.html">psp2kern/kernel/ssmgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="suspend_8h.html">psp2kern/kernel/suspend.h</a>&gt;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sysclib_8h.html">psp2kern/kernel/sysclib.h</a>&gt;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2sysmem_8h.html">psp2kern/kernel/sysmem.h</a>&gt;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sysroot_8h.html">psp2kern/kernel/sysroot.h</a>&gt;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2threadmgr_8h.html">psp2kern/kernel/threadmgr.h</a>&gt;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2kernel_2utils_8h.html">psp2kern/kernel/utils.h</a>&gt;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="kbl_8h.html">psp2kern/kernel/kbl/kbl.h</a>&gt;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="data__transfers_8h.html">psp2kern/kernel/sysmem/data_transfers.h</a>&gt;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="heap_8h.html">psp2kern/kernel/sysmem/heap.h</a>&gt;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mmu_8h.html">psp2kern/kernel/sysmem/mmu.h</a>&gt;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__class_8h.html">psp2kern/kernel/sysmem/uid_class.h</a>&gt;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__guid_8h.html">psp2kern/kernel/sysmem/uid_guid.h</a>&gt;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__puid_8h.html">psp2kern/kernel/sysmem/uid_puid.h</a>&gt;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dsi_8h.html">psp2kern/lowio/dsi.h</a>&gt;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gpio_8h.html">psp2kern/lowio/gpio.h</a>&gt;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="i2c_8h.html">psp2kern/lowio/i2c.h</a>&gt;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iftu_8h.html">psp2kern/lowio/iftu.h</a>&gt;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pervasive_8h.html">psp2kern/lowio/pervasive.h</a>&gt;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2net_2net_8h.html">psp2kern/net/net.h</a>&gt;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2touch_8h.html">psp2kern/touch.h</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uart_8h.html">psp2kern/uart.h</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2udcd_8h.html">psp2kern/udcd.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2usbd_8h.html">psp2kern/usbd.h</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2usbserial_8h.html">psp2kern/usbserial.h</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2avcodec_2jpegenc_8h.html">psp2kern/avcodec/jpegenc.h</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2devctl_8h.html">psp2kern/io/devctl.h</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2dirent_8h.html">psp2kern/io/dirent.h</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2fcntl_8h.html">psp2kern/io/fcntl.h</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2io_2stat_8h.html">psp2kern/io/stat.h</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2cpu_8h.html">psp2kern/kernel/cpu.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="debug_8h.html">psp2kern/kernel/debug.h</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="debugled_8h.html">psp2kern/kernel/debugled.h</a>&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dipsw_8h.html">psp2kern/kernel/dipsw.h</a>&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2dmac_8h.html">psp2kern/kernel/dmac.h</a>&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="excpmgr_8h.html">psp2kern/kernel/excpmgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="intrmgr_8h.html">psp2kern/kernel/intrmgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iofilemgr_8h.html">psp2kern/kernel/iofilemgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2modulemgr_8h.html">psp2kern/kernel/modulemgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="proc__event_8h.html">psp2kern/kernel/proc_event.h</a>&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2processmgr_8h.html">psp2kern/kernel/processmgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2rtc_8h.html">psp2kern/kernel/rtc.h</a>&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ssmgr_8h.html">psp2kern/kernel/ssmgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="suspend_8h.html">psp2kern/kernel/suspend.h</a>&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sysclib_8h.html">psp2kern/kernel/sysclib.h</a>&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2sysmem_8h.html">psp2kern/kernel/sysmem.h</a>&gt;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sysroot_8h.html">psp2kern/kernel/sysroot.h</a>&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2threadmgr_8h.html">psp2kern/kernel/threadmgr.h</a>&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2kernel_2utils_8h.html">psp2kern/kernel/utils.h</a>&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="kbl_8h.html">psp2kern/kernel/kbl/kbl.h</a>&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="data__transfers_8h.html">psp2kern/kernel/sysmem/data_transfers.h</a>&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="heap_8h.html">psp2kern/kernel/sysmem/heap.h</a>&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mmu_8h.html">psp2kern/kernel/sysmem/mmu.h</a>&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__class_8h.html">psp2kern/kernel/sysmem/uid_class.h</a>&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__guid_8h.html">psp2kern/kernel/sysmem/uid_guid.h</a>&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__puid_8h.html">psp2kern/kernel/sysmem/uid_puid.h</a>&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dsi_8h.html">psp2kern/lowio/dsi.h</a>&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gpio_8h.html">psp2kern/lowio/gpio.h</a>&gt;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="i2c_8h.html">psp2kern/lowio/i2c.h</a>&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iftu_8h.html">psp2kern/lowio/iftu.h</a>&gt;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pervasive_8h.html">psp2kern/lowio/pervasive.h</a>&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ern_2net_2net_8h.html">psp2kern/net/net.h</a>&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aern_2udcd_8h_html"><div class="ttname"><a href="ern_2udcd_8h.html">udcd.h</a></div></div>
@@ -193,6 +194,7 @@ $(document).ready(function(){initNavTree('vitasdkkern_8h_source.html',''); initR
 <div class="ttc" id="avitasdk_2utils_8h_html"><div class="ttname"><a href="vitasdk_2utils_8h.html">utils.h</a></div></div>
 <div class="ttc" id="auid__guid_8h_html"><div class="ttname"><a href="uid__guid_8h.html">uid_guid.h</a></div></div>
 <div class="ttc" id="aern_2avcodec_2jpegenc_8h_html"><div class="ttname"><a href="ern_2avcodec_2jpegenc_8h.html">jpegenc.h</a></div></div>
+<div class="ttc" id="aern_2touch_8h_html"><div class="ttname"><a href="ern_2touch_8h.html">touch.h</a></div></div>
 <div class="ttc" id="aern_2npdrm_8h_html"><div class="ttname"><a href="ern_2npdrm_8h.html">npdrm.h</a></div></div>
 <div class="ttc" id="auid__class_8h_html"><div class="ttname"><a href="uid__class_8h.html">uid_class.h</a></div></div>
 <div class="ttc" id="aern_2registrymgr_8h_html"><div class="ttname"><a href="ern_2registrymgr_8h.html">registrymgr.h</a></div></div>

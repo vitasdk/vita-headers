@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"globals_w.html":[4,1,0,21],
+"gpio_8h.html":[4,0,1,2,3,1],
 "gpio_8h_source.html":[4,0,1,2,3,1],
 "gps_8h.html":[4,0,1,0,23],
 "gps_8h_source.html":[4,0,1,0,23],
@@ -31,11 +33,11 @@ var NAVTREEINDEX1 =
 "group__SceAVConfigUser.html#gae39175631bf077e026c483b6e0facbe8":[4,0,1,0,11,2],
 "group__SceAVConfigUser.html#gaf56864e9563463360221f1e22ba7b14d":[1,11,2,0,6],
 "group__SceAVConfigUser.html#gaf56864e9563463360221f1e22ba7b14d":[4,0,1,0,11,4],
-"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,2],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,0,1],
+"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,2],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[4,0,1,0,11,0,1],
-"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,0,0],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,1],
+"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,0,0],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[4,0,1,0,11,0,0],
 "group__SceAppMgr.html":[1,11,0],
 "group__SceAppMgrKernel.html":[1,11,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceAppUtilUser.html#ga6dba1ab9dfb7bdaca18f02efdd67f6b9":[4,0,1,0,5,10],
 "group__SceAppUtilUser.html#ga768225668e5530ecf408ff908b56c21d":[1,11,1,0,40],
 "group__SceAppUtilUser.html#ga768225668e5530ecf408ff908b56c21d":[4,0,1,0,5,19],
-"group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[1,11,1,0,4],
-"group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[4,0,1,0,5,4],
-"group__SceAppUtilUser.html#ga9933c174ca527e0faee9f620d0fc3418":[1,11,1,0,7]
+"group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[1,11,1,0,4]
 };
