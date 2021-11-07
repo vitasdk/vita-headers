@@ -24,18 +24,19 @@ typedef struct SceKernelProcessInfo {
 } SceKernelProcessInfo;
 
 typedef struct SceModuleLibraryInfo SceModuleLibraryInfo;
-typedef struct SceModuleNonlinkedInfo SceModuleNonlinkedInfo;
+typedef struct SceModuleImportInfo SceModuleImportInfo;
 typedef struct SceModuleInfoInternal SceModuleInfoInternal;
 
-typedef struct SceKernelProcessModuleInfo { // size is 0x24
+typedef struct SceKernelProcessModuleInfo { // size is 0x24-bytes
 	SceUID pid;
 	SceModuleLibraryInfo *library_info;
-	SceUID data_0x08;                              // uid?
-	SceModuleNonlinkedInfo *nonlinked_info;
+	SceUInt16 data_0x08;
+	SceUInt16 nonlinked_lib_number;
+	SceModuleImportInfo *nonlinked_info;
 	SceModuleInfoInternal *module_info;
 	SceUID process_main_module_id;
-	uint16_t process_module_count;
-	uint16_t inhibit_state;
+	SceUInt16 process_module_count;
+	SceUInt16 inhibit_state;
 	void *data_0x1C;
 	int cpu_addr;
 } SceKernelProcessModuleInfo;
