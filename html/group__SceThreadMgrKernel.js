@@ -126,6 +126,8 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelChangeThreadSuspendStatus", "group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d", null ],
     [ "ksceKernelGetUserThreadId", "group__SceThreadMgrKernel.html#gaea88b8fbc856f4840b96e27dd72e8071", null ],
     [ "ksceKernelIsThreadDebugSuspended", "group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38", null ],
+    [ "ksceKernelDebugSuspendThread", "group__SceThreadMgrKernel.html#ga413f2176c2d24a836792f900c86a37cc", null ],
+    [ "ksceKernelDebugResumeThread", "group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270", null ],
     [ "ksceKernelGetEventFlagInfo", "group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3", null ],
     [ "ksceKernelCreateEventFlag", "group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9", null ],
     [ "ksceKernelSetEventFlag", "group__SceThreadMgrKernel.html#ga542fabbbac9f0c66091be3b4f29d9955", null ],

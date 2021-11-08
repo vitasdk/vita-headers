@@ -266,8 +266,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaea88b8fbc856f4840b96e27dd72e8071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thread PUID from GUID.  <a href="group__SceThreadMgrKernel.html#gaea88b8fbc856f4840b96e27dd72e8071">More...</a><br /></td></tr>
 <tr class="separator:gaea88b8fbc856f4840b96e27dd72e8071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga18529a0737075d78b2901f9a3f773a38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38">ksceKernelIsThreadDebugSuspended</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>
-<tr class="memdesc:ga18529a0737075d78b2901f9a3f773a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thread PUID from GUID.  <a href="group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38">More...</a><br /></td></tr>
+<tr class="memdesc:ga18529a0737075d78b2901f9a3f773a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thread suspend status.  <a href="group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38">More...</a><br /></td></tr>
 <tr class="separator:ga18529a0737075d78b2901f9a3f773a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413f2176c2d24a836792f900c86a37cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga413f2176c2d24a836792f900c86a37cc">ksceKernelDebugSuspendThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
+<tr class="memdesc:ga413f2176c2d24a836792f900c86a37cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug suspend a thread.  <a href="group__SceThreadMgrKernel.html#ga413f2176c2d24a836792f900c86a37cc">More...</a><br /></td></tr>
+<tr class="separator:ga413f2176c2d24a836792f900c86a37cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa946a49c521eec223d903695a70e8270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">ksceKernelDebugResumeThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
+<tr class="memdesc:gaa946a49c521eec223d903695a70e8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug resume a thread.  <a href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">More...</a><br /></td></tr>
+<tr class="separator:gaa946a49c521eec223d903695a70e8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">ksceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
 <tr class="memdesc:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get event flags info.  <a href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">More...</a><br /></td></tr>
 <tr class="separator:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2523,6 +2529,7 @@ priority</td>
 
 <p>Change the thread suspension status to another value. </p>
 <p>More research needs to be done to find out exactly what each status actually means. Some examples of useful scenarios: When handling an exception changing the status to 0x1002 (on a newly suspended thread) will stop the kernel rethrowing the same exception. When resuming a suspended thread changing the status to 2 will allow it to resume.</p>
+<dl class="section note"><dt>Note</dt><dd>The valid mask for <code>status</code> is 0xF7F03.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>The thread to change. </td></tr>
@@ -2577,14 +2584,92 @@ priority</td>
       </table>
 </div><div class="memdoc">
 
-<p>Get thread PUID from GUID. </p>
+<p>Get thread suspend status. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>- The thread global uid.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>thread some state on success, else &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Suspend status on success, else &lt;0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga413f2176c2d24a836792f900c86a37cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga413f2176c2d24a836792f900c86a37cc">&#9670;&nbsp;</a></span>ksceKernelDebugSuspendThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelDebugSuspendThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug suspend a thread. </p>
+<dl class="section note"><dt>Note</dt><dd>The valid mask for <code>status</code> is 0xF7F03.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>The thread global uid. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>The suspend status.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success, else &lt;0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa946a49c521eec223d903695a70e8270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa946a49c521eec223d903695a70e8270">&#9670;&nbsp;</a></span>ksceKernelDebugResumeThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelDebugResumeThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug resume a thread. </p>
+<dl class="section note"><dt>Note</dt><dd>The valid mask for <code>status</code> is 0xF7F03.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thid</td><td>The thread global uid. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>The suspend status to resume from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success, else &lt;0 on error. </dd></dl>
 
 </div>
 </div>

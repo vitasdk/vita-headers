@@ -1,5 +1,9 @@
 var NAVTREEINDEX85 =
 {
+"update_8h_source.html":[4,0,1,0,75],
+"usbd_8h.html":[4,0,1,0,76],
+"usbd_8h_source.html":[4,0,1,0,76],
+"usbserial_8h.html":[4,0,1,0,77],
 "usbserial_8h_source.html":[4,0,1,0,77],
 "usbstorvstor_8h.html":[4,0,1,0,78],
 "usbstorvstor_8h_source.html":[4,0,1,0,78],

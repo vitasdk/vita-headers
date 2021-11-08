@@ -135,16 +135,16 @@ var NAVTREEINDEX =
 "group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea5b9509788415fa82adda621b60aef389",
 "group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa98209222e15b5053174664f17c788001",
 "group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41ae3204fea8e0b7d603b4b3eaa7b605a19",
-"group__SceThreadMgrKernel.html#ga6b2e224643051e6f423e54e0a4ef4825",
-"group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04",
-"group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf",
-"group__SceTypesKernel.html#ga6ac76d3692b13ab566275e1a0c6e2fa3",
-"group__SceUdcdKernel.html#ga1e9306b8984ec89c575b3d7b857dabe0",
-"group__SceUdcdKernel.html#gga9830ab504b7cb5de34e6e43118997034a60294157df2d94b8fc1edf1c2351236d",
-"group__SceUsbSerialKernel.html",
-"group__SceUtilsKernel.html#ga059b44b47f50459213dfee226549d8f0",
-"group__SceVshBridgeUser.html#ga97081fbc3a387b72a036236f579dc780",
-"usbserial_8h_source.html"
+"group__SceThreadMgrKernel.html#ga6a41e5137d6c4e03291a54178e81f005",
+"group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10",
+"group__SceThreadMgrUser.html#ga855107887c994fcf69f74630758fb7ca",
+"group__SceTypesKernel.html#ga5784113ea26c58da731bbb022f6632fc",
+"group__SceUdcdKernel.html#ga0c98e1c46f9365d138e9e3034264ddc9",
+"group__SceUdcdKernel.html#gga9830ab504b7cb5de34e6e43118997034a343520c9a01800faeb2d5d4d4b3f0ef0",
+"group__SceUpdateMgrUser.html#gae2afdee86d66c9cea9c245f417e57565",
+"group__SceUsbstorVStorDriverUser.html#ggac1f0fe2517fda63d85571377794ebe98ae357bf123ecc6c5a53b6545a3171bfed",
+"group__SceVshBridgeUser.html#ga7dcb9fb6b15e0b397a4315ffe3d67244",
+"update_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
