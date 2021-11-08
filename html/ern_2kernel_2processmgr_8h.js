@@ -1,7 +1,7 @@
 var ern_2kernel_2processmgr_8h =
 [
     [ "SceModuleLibraryInfo", "group__SceProcessmgrKernel.html#gadfabd62239b32ffc70cf6c3aa7d793d2", null ],
-    [ "SceModuleNonlinkedInfo", "group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47", null ],
+    [ "SceModuleImportInfo", "group__SceProcessmgrKernel.html#ga32e00097574e189de576662c68b34069", null ],
     [ "SceModuleInfoInternal", "group__SceProcessmgrKernel.html#ga128ad939437db491ccd5e9a38e33a900", null ],
     [ "SceKernelProcessType", "group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf", null ],
     [ "ksceKernelGetProcessKernelBuf", "group__SceProcessmgrKernel.html#ga6b3b5f895ae1e3fd5e89bb57467e55ca", null ],

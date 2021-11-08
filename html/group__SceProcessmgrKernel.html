@@ -129,8 +129,8 @@ Functions</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:gadfabd62239b32ffc70cf6c3aa7d793d2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#gadfabd62239b32ffc70cf6c3aa7d793d2">SceModuleLibraryInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gadfabd62239b32ffc70cf6c3aa7d793d2">SceModuleLibraryInfo</a></td></tr>
 <tr class="separator:gadfabd62239b32ffc70cf6c3aa7d793d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaacc2858843c8397db19aadcd0c223c47"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47">SceModuleNonlinkedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47">SceModuleNonlinkedInfo</a></td></tr>
-<tr class="separator:gaacc2858843c8397db19aadcd0c223c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32e00097574e189de576662c68b34069"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#ga32e00097574e189de576662c68b34069">SceModuleImportInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga32e00097574e189de576662c68b34069">SceModuleImportInfo</a></td></tr>
+<tr class="separator:ga32e00097574e189de576662c68b34069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga128ad939437db491ccd5e9a38e33a900"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#ga128ad939437db491ccd5e9a38e33a900">SceModuleInfoInternal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga128ad939437db491ccd5e9a38e33a900">SceModuleInfoInternal</a></td></tr>
 <tr class="separator:ga128ad939437db491ccd5e9a38e33a900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga337851539a6ec21c154d8fbdadc63eaf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a></td></tr>
@@ -222,13 +222,19 @@ library_info</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gac7dba91f18cd2ae4bce9a8f8e6d63698"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="ga9ffa5cfedb337e24d14d75822f63423f"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
 <td class="fieldname">
 data_0x08</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga950b0341818486398042de6cf4c9b458"></a><a class="el" href="group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47">SceModuleNonlinkedInfo</a> *</td>
+<a id="ga8b5a6961972548e72c20e9086fe51d68"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
+<td class="fieldname">
+nonlinked_lib_number</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga75afaac07ad578be514a3c039cc0ab7c"></a><a class="el" href="group__SceProcessmgrKernel.html#ga32e00097574e189de576662c68b34069">SceModuleImportInfo</a> *</td>
 <td class="fieldname">
 nonlinked_info</td>
 <td class="fielddoc">
@@ -246,13 +252,13 @@ process_main_module_id</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gad4d6b043872f262aa1c61ca464ccf41d"></a>uint16_t</td>
+<a id="ga82e16e18d5d8b2b4470c67baa06d6701"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
 <td class="fieldname">
 process_module_count</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga47f023b93f1863afa531cc22b8ee889e"></a>uint16_t</td>
+<a id="gac726d7a92007d27af524219f1c5a5c64"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
 <td class="fieldname">
 inhibit_state</td>
 <td class="fielddoc">
@@ -288,14 +294,14 @@ cpu_addr</td>
 
 </div>
 </div>
-<a id="gaacc2858843c8397db19aadcd0c223c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaacc2858843c8397db19aadcd0c223c47">&#9670;&nbsp;</a></span>SceModuleNonlinkedInfo</h2>
+<a id="ga32e00097574e189de576662c68b34069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32e00097574e189de576662c68b34069">&#9670;&nbsp;</a></span>SceModuleImportInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47">SceModuleNonlinkedInfo</a> <a class="el" href="group__SceProcessmgrKernel.html#gaacc2858843c8397db19aadcd0c223c47">SceModuleNonlinkedInfo</a></td>
+          <td class="memname">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#ga32e00097574e189de576662c68b34069">SceModuleImportInfo</a> <a class="el" href="group__SceProcessmgrKernel.html#ga32e00097574e189de576662c68b34069">SceModuleImportInfo</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
