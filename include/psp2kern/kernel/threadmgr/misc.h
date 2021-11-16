@@ -87,13 +87,20 @@ int ksceKernelSetPermission(int value);
 SceUID ksceKernelGetProcessId(void);
 
 /**
- * @brief Set Process id
+ * @brief Get Process id from Thread Local Storage
+ *
+ * @return current process id
+ */
+SceUID ksceKernelGetProcessIdFromTLS(void);
+
+/**
+ * @brief Set Process id to Thread Local Storage
  *
  * @param[in] value - The new process id
  *
  * @return previous process id
  */
-SceUID ksceKernelSetProcessId(SceUID pid);
+SceUID ksceKernelSetProcessIdToTLS(SceUID pid);
 
 /**
  * @brief      Runs a function with larger stack size
