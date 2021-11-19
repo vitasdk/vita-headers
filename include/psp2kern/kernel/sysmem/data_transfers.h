@@ -252,16 +252,16 @@ int ksceKernelProcUserMemcpy(SceUID pid, void *dst, const void *src, SceSize len
 
 
 /* Macros for backwards compatibility */
-#define ksceKernelMemcpyUserToKernel(__dst__, __src__, __len__) ksceKernelMemcpyFromUser((__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyUserToKernelForPid(__pid__, __dst__, __src__, __len__) ksceKernelProcMemcpyFromUser((__pid__), (__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyKernelToUser(__dst__, __src__, __len__) ksceKernelMemcpyToUser((__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyToUserRo(__dst__, __src__, __len__) ksceKernelMemcpyToUserRo((__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyToUserRx(__dst__, __src__, __len__) ksceKernelMemcpyToUserRx((__dst__), (__src__), (__len__))
-#define ksceKernelRxMemcpyKernelToUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelProcMemcpyToUserRx((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyUserToKernel(__dst__, __src__, __len__)                  ksceKernelMemcpyFromUser((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyUserToKernelForPid(__pid__, __dst__, __src__, __len__)   ksceKernelProcMemcpyFromUser((__pid__), (__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyKernelToUser(__dst__, __src__, __len__)                  ksceKernelMemcpyToUser((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyToUserRo(__dst__, __src__, __len__)                      ksceKernelMemcpyToUserRo((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyToUserRx(__dst__, __src__, __len__)                      ksceKernelMemcpyToUserRx((__dst__), (__src__), (__len__))
+#define ksceKernelRxMemcpyKernelToUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelProcMemcpyToUserRx((__pid__), (__dst__), (__src__), (__len__))
 
-#define ksceKernelStrncpyUserToKernel(__dst__, __src__, __len__) ksceKernelStrncpyFromUser((__dst__), (__src__), (__len__))
+#define ksceKernelStrncpyUserToKernel(__dst__, __src__, __len__)        ksceKernelStrncpyFromUser((__dst__), (__src__), (__len__))
 #define ksceKernelStrncpyUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelProcStrncpyFromUser((__pid__), (__dst__), (__src__), (__len__))
-#define ksceKernelStrncpyKernelToUser(__dst__, __src__, __len__) ksceKernelStrncpyToUser((__dst__), (__src__), (__len__))
+#define ksceKernelStrncpyKernelToUser(__dst__, __src__, __len__)        ksceKernelStrncpyToUser((__dst__), (__src__), (__len__))
 
 
 #ifdef __cplusplus
