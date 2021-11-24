@@ -331,6 +331,8 @@ var annotated_dup =
     [ "SceObjectBase.__unnamed__.__unnamed__", "group__SceSysmemKernel.html#structSceObjectBase_8____unnamed_____8____unnamed____", "group__SceSysmemKernel_structSceObjectBase_8____unnamed_____8____unnamed____" ],
     [ "SceOpenPsId", "group__SceSblSsMgrKernel.html#structSceOpenPsId", "group__SceSblSsMgrKernel_structSceOpenPsId" ],
     [ "ScePafDateTime", "group__ScePafUser.html#structScePafDateTime", "group__ScePafUser_structScePafDateTime" ],
+    [ "ScePafHeapContext", "group__ScePafUser.html#structScePafHeapContext", "group__ScePafUser_structScePafHeapContext" ],
+    [ "ScePafHeapOpt", "group__ScePafUser.html#structScePafHeapOpt", "group__ScePafUser_structScePafHeapOpt" ],
     [ "ScePafSha1Context", "group__ScePafUser.html#structScePafSha1Context", "group__ScePafUser_structScePafSha1Context" ],
     [ "ScePfsRndDriveId", "group__ScePfsMgrKernel.html#structScePfsRndDriveId", "group__ScePfsMgrKernel_structScePfsRndDriveId" ],
     [ "ScePortabilityData", "group__SceSblSsMgrKernel.html#structScePortabilityData", "group__SceSblSsMgrKernel_structScePortabilityData" ],

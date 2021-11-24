@@ -72,87 +72,14 @@ $(document).ready(function(){initNavTree('paf_8h.html',''); initResizable(); });
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">paf.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">psp2/types.h</a>&gt;</code><br />
-<code>#include &lt;stdarg.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdc_8h_source.html">psp2/paf/stdc.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="paf_2misc_8h_source.html">psp2/paf/misc.h</a>&gt;</code><br />
 </div>
 <p><a href="paf_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structScePafDateTime"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#structScePafDateTime">ScePafDateTime</a></td></tr>
-<tr class="separator:structScePafDateTime"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structScePafSha1Context"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a></td></tr>
-<tr class="separator:structScePafSha1Context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gad4bb2ca96925b9413d806fe8102252e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gad4bb2ca96925b9413d806fe8102252e3">sce_paf_vsnprintf</a>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga07284da71d116b6baa11a1f005e5cd92">sce_paf_private_vsnprintf</a></td></tr>
-<tr class="separator:gad4bb2ca96925b9413d806fe8102252e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga724f89ceda36d1cd4c6756725d7a3a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga724f89ceda36d1cd4c6756725d7a3a90">sce_paf_private_free</a> (void *ptr)</td></tr>
-<tr class="separator:ga724f89ceda36d1cd4c6756725d7a3a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga556121bfa3ff35da66bf6824a06c1d6e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga556121bfa3ff35da66bf6824a06c1d6e">sce_paf_private_malloc</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
-<tr class="separator:ga556121bfa3ff35da66bf6824a06c1d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441">sce_paf_memalign</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> align, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>)</td></tr>
-<tr class="memdesc:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc memory with align.  <a href="group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441">More...</a><br /></td></tr>
-<tr class="separator:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba82d640f1abf4bf8277ecc367b94b5c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaba82d640f1abf4bf8277ecc367b94b5c">sce_paf_private_bzero</a> (void *ptr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:gaba82d640f1abf4bf8277ecc367b94b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga610b2a40c54544921bf4cc2d822722c2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga610b2a40c54544921bf4cc2d822722c2">sce_paf_private_memchr</a> (const void *ptr, int value, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga610b2a40c54544921bf4cc2d822722c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga632c520cecb3527901ecfcc4aec29ed6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga632c520cecb3527901ecfcc4aec29ed6">sce_paf_private_memcmp</a> (const void *ptr1, const void *ptr2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga632c520cecb3527901ecfcc4aec29ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c0d709784b3cdca78debd48e7b804dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0c0d709784b3cdca78debd48e7b804dc">sce_paf_private_bcmp</a> (const void *ptr1, const void *ptr2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga0c0d709784b3cdca78debd48e7b804dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48bbb6dbe1b36872861b3f4fcaddef00"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga48bbb6dbe1b36872861b3f4fcaddef00">sce_paf_private_memcpy</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga48bbb6dbe1b36872861b3f4fcaddef00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0581ccb1aad81a87efe5a7e52d367a9d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0581ccb1aad81a87efe5a7e52d367a9d">sce_paf_private_memcpy2</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga0581ccb1aad81a87efe5a7e52d367a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga773582460c6d195e39020a34f3d7eb4c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga773582460c6d195e39020a34f3d7eb4c">sce_paf_private_memmove</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga773582460c6d195e39020a34f3d7eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab47af1f1c4a34c50a5d9d751a5505ca9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gab47af1f1c4a34c50a5d9d751a5505ca9">sce_paf_private_bcopy</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:gab47af1f1c4a34c50a5d9d751a5505ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4fe5e75081687ea9b1016c5d23c4a05"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gae4fe5e75081687ea9b1016c5d23c4a05">sce_paf_private_memset</a> (void *ptr, int value, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:gae4fe5e75081687ea9b1016c5d23c4a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60610d5b831546d322ae68389ec8db1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga60610d5b831546d322ae68389ec8db1d">sce_paf_private_snprintf</a> (char *s, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n, const char *format,...)</td></tr>
-<tr class="separator:ga60610d5b831546d322ae68389ec8db1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07284da71d116b6baa11a1f005e5cd92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga07284da71d116b6baa11a1f005e5cd92">sce_paf_private_vsnprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
-<tr class="separator:ga07284da71d116b6baa11a1f005e5cd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60bcb5f76b7bf806fa0cd1c1d1031943"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga60bcb5f76b7bf806fa0cd1c1d1031943">sce_paf_private_strcasecmp</a> (const char *str1, const char *str2)</td></tr>
-<tr class="separator:ga60bcb5f76b7bf806fa0cd1c1d1031943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee87a1b835d325d6e4efbae975e635a6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaee87a1b835d325d6e4efbae975e635a6">sce_paf_private_strchr</a> (const char *str, int character)</td></tr>
-<tr class="separator:gaee87a1b835d325d6e4efbae975e635a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ff47347d916798a0ec7ef644dbc8551"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0ff47347d916798a0ec7ef644dbc8551">sce_paf_private_strcmp</a> (const char *str1, const char *str2)</td></tr>
-<tr class="separator:ga0ff47347d916798a0ec7ef644dbc8551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf26b51d5bf4f37f33be6e405a94b1ef"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gabf26b51d5bf4f37f33be6e405a94b1ef">sce_paf_private_strlen</a> (const char *str)</td></tr>
-<tr class="separator:gabf26b51d5bf4f37f33be6e405a94b1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8dcfb9689c368629987849ab84731d0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga8dcfb9689c368629987849ab84731d0c">sce_paf_private_strncasecmp</a> (const char *str1, const char *str2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga8dcfb9689c368629987849ab84731d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5846e5431d925f0ffa4799f6f982ce65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5846e5431d925f0ffa4799f6f982ce65">sce_paf_private_strncmp</a> (const char *str1, const char *str2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga5846e5431d925f0ffa4799f6f982ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga190249e55f2be14fff672ba76353da77"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga190249e55f2be14fff672ba76353da77">sce_paf_private_strncpy</a> (char *destination, const char *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga190249e55f2be14fff672ba76353da77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8176dd33e4858679e86fa42a919f7cb4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga8176dd33e4858679e86fa42a919f7cb4">sce_paf_private_strrchr</a> (const char *str, int character)</td></tr>
-<tr class="separator:ga8176dd33e4858679e86fa42a919f7cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5352793106ba81601d289126bc9fd6ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5352793106ba81601d289126bc9fd6ad">scePafGetCurrentClockLocalTime</a> (<a class="el" href="group__ScePafUser.html#structScePafDateTime">ScePafDateTime</a> *data)</td></tr>
-<tr class="separator:ga5352793106ba81601d289126bc9fd6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5eefd908fa4cabca626813894be9e54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gac5eefd908fa4cabca626813894be9e54">scePafSha1Init</a> (<a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a> *context)</td></tr>
-<tr class="separator:gac5eefd908fa4cabca626813894be9e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f29d7bc35c3661b7715138dd504ea93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga1f29d7bc35c3661b7715138dd504ea93">scePafSha1Update</a> (<a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a> *context, const void *data, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>)</td></tr>
-<tr class="separator:ga1f29d7bc35c3661b7715138dd504ea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2550314ca97d176bdbcdf279076a6422"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga2550314ca97d176bdbcdf279076a6422">scePafSha1Result</a> (<a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a> *context, void *dst)</td></tr>
-<tr class="separator:ga2550314ca97d176bdbcdf279076a6422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

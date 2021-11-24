@@ -6,7 +6,7 @@ var dir_d32688b4d6c61bb6b4337d60e27d9435 =
     [ "event_flags.h", "event__flags_8h.html", "event__flags_8h" ],
     [ "lw_cond.h", "lw__cond_8h.html", "lw__cond_8h" ],
     [ "lw_mutex.h", "lw__mutex_8h.html", "lw__mutex_8h" ],
-    [ "misc.h", "misc_8h.html", "misc_8h" ],
+    [ "misc.h", "ern_2kernel_2threadmgr_2misc_8h.html", "ern_2kernel_2threadmgr_2misc_8h" ],
     [ "msg_pipe.h", "msg__pipe_8h.html", "msg__pipe_8h" ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "semaphores.h", "semaphores_8h.html", "semaphores_8h" ],

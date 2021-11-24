@@ -84,6 +84,26 @@ $(document).ready(function(){initNavTree('group__ScePafUser.html',''); initResiz
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="paf_2misc_8h.html">psp2/paf/misc.h</a>&gt;</span> </div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">ScePaf_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<p>Exports for User</p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="stdc_8h.html">psp2/paf/stdc.h</a>&gt;</span> </div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">ScePaf_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<p>Exports for User</p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="paf_8h.html">psp2/paf.h</a>&gt;</span> </div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
@@ -93,51 +113,6 @@ $(document).ready(function(){initNavTree('group__ScePafUser.html',''); initResiz
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga724f89ceda36d1cd4c6756725d7a3a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga724f89ceda36d1cd4c6756725d7a3a90">sce_paf_private_free</a> (void *ptr)</td></tr>
-<tr class="separator:ga724f89ceda36d1cd4c6756725d7a3a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga556121bfa3ff35da66bf6824a06c1d6e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga556121bfa3ff35da66bf6824a06c1d6e">sce_paf_private_malloc</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
-<tr class="separator:ga556121bfa3ff35da66bf6824a06c1d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441">sce_paf_memalign</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> align, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>)</td></tr>
-<tr class="memdesc:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc memory with align.  <a href="group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441">More...</a><br /></td></tr>
-<tr class="separator:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba82d640f1abf4bf8277ecc367b94b5c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaba82d640f1abf4bf8277ecc367b94b5c">sce_paf_private_bzero</a> (void *ptr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:gaba82d640f1abf4bf8277ecc367b94b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga610b2a40c54544921bf4cc2d822722c2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga610b2a40c54544921bf4cc2d822722c2">sce_paf_private_memchr</a> (const void *ptr, int value, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga610b2a40c54544921bf4cc2d822722c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga632c520cecb3527901ecfcc4aec29ed6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga632c520cecb3527901ecfcc4aec29ed6">sce_paf_private_memcmp</a> (const void *ptr1, const void *ptr2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga632c520cecb3527901ecfcc4aec29ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c0d709784b3cdca78debd48e7b804dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0c0d709784b3cdca78debd48e7b804dc">sce_paf_private_bcmp</a> (const void *ptr1, const void *ptr2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga0c0d709784b3cdca78debd48e7b804dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48bbb6dbe1b36872861b3f4fcaddef00"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga48bbb6dbe1b36872861b3f4fcaddef00">sce_paf_private_memcpy</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga48bbb6dbe1b36872861b3f4fcaddef00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0581ccb1aad81a87efe5a7e52d367a9d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0581ccb1aad81a87efe5a7e52d367a9d">sce_paf_private_memcpy2</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga0581ccb1aad81a87efe5a7e52d367a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga773582460c6d195e39020a34f3d7eb4c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga773582460c6d195e39020a34f3d7eb4c">sce_paf_private_memmove</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga773582460c6d195e39020a34f3d7eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab47af1f1c4a34c50a5d9d751a5505ca9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gab47af1f1c4a34c50a5d9d751a5505ca9">sce_paf_private_bcopy</a> (void *destination, const void *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:gab47af1f1c4a34c50a5d9d751a5505ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4fe5e75081687ea9b1016c5d23c4a05"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gae4fe5e75081687ea9b1016c5d23c4a05">sce_paf_private_memset</a> (void *ptr, int value, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:gae4fe5e75081687ea9b1016c5d23c4a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60610d5b831546d322ae68389ec8db1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga60610d5b831546d322ae68389ec8db1d">sce_paf_private_snprintf</a> (char *s, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n, const char *format,...)</td></tr>
-<tr class="separator:ga60610d5b831546d322ae68389ec8db1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07284da71d116b6baa11a1f005e5cd92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga07284da71d116b6baa11a1f005e5cd92">sce_paf_private_vsnprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
-<tr class="separator:ga07284da71d116b6baa11a1f005e5cd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60bcb5f76b7bf806fa0cd1c1d1031943"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga60bcb5f76b7bf806fa0cd1c1d1031943">sce_paf_private_strcasecmp</a> (const char *str1, const char *str2)</td></tr>
-<tr class="separator:ga60bcb5f76b7bf806fa0cd1c1d1031943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee87a1b835d325d6e4efbae975e635a6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaee87a1b835d325d6e4efbae975e635a6">sce_paf_private_strchr</a> (const char *str, int character)</td></tr>
-<tr class="separator:gaee87a1b835d325d6e4efbae975e635a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ff47347d916798a0ec7ef644dbc8551"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0ff47347d916798a0ec7ef644dbc8551">sce_paf_private_strcmp</a> (const char *str1, const char *str2)</td></tr>
-<tr class="separator:ga0ff47347d916798a0ec7ef644dbc8551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf26b51d5bf4f37f33be6e405a94b1ef"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gabf26b51d5bf4f37f33be6e405a94b1ef">sce_paf_private_strlen</a> (const char *str)</td></tr>
-<tr class="separator:gabf26b51d5bf4f37f33be6e405a94b1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8dcfb9689c368629987849ab84731d0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga8dcfb9689c368629987849ab84731d0c">sce_paf_private_strncasecmp</a> (const char *str1, const char *str2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga8dcfb9689c368629987849ab84731d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5846e5431d925f0ffa4799f6f982ce65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5846e5431d925f0ffa4799f6f982ce65">sce_paf_private_strncmp</a> (const char *str1, const char *str2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga5846e5431d925f0ffa4799f6f982ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga190249e55f2be14fff672ba76353da77"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga190249e55f2be14fff672ba76353da77">sce_paf_private_strncpy</a> (char *destination, const char *source, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
-<tr class="separator:ga190249e55f2be14fff672ba76353da77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8176dd33e4858679e86fa42a919f7cb4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga8176dd33e4858679e86fa42a919f7cb4">sce_paf_private_strrchr</a> (const char *str, int character)</td></tr>
-<tr class="separator:ga8176dd33e4858679e86fa42a919f7cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5352793106ba81601d289126bc9fd6ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5352793106ba81601d289126bc9fd6ad">scePafGetCurrentClockLocalTime</a> (<a class="el" href="group__ScePafUser.html#structScePafDateTime">ScePafDateTime</a> *data)</td></tr>
 <tr class="separator:ga5352793106ba81601d289126bc9fd6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5eefd908fa4cabca626813894be9e54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gac5eefd908fa4cabca626813894be9e54">scePafSha1Init</a> (<a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a> *context)</td></tr>
@@ -146,11 +121,100 @@ Functions</h2></td></tr>
 <tr class="separator:ga1f29d7bc35c3661b7715138dd504ea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2550314ca97d176bdbcdf279076a6422"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga2550314ca97d176bdbcdf279076a6422">scePafSha1Result</a> (<a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a> *context, void *dst)</td></tr>
 <tr class="separator:ga2550314ca97d176bdbcdf279076a6422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f6b6067714665ee585ddec926625d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga6f6b6067714665ee585ddec926625d5f">scePafCreateHeap</a> (<a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *context, void *membase, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, const char *name, <a class="el" href="group__ScePafUser.html#structScePafHeapOpt">ScePafHeapOpt</a> *opt)</td></tr>
+<tr class="separator:ga6f6b6067714665ee585ddec926625d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadff63f5bff9660e6693c73bbe5cf2679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gadff63f5bff9660e6693c73bbe5cf2679">scePafDeleteHeap</a> (<a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *context)</td></tr>
+<tr class="separator:gadff63f5bff9660e6693c73bbe5cf2679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga788d307c11004c0d7b974cdd40ca923a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga788d307c11004c0d7b974cdd40ca923a">scePafMallocWithContext</a> (<a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *context, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga788d307c11004c0d7b974cdd40ca923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga146ecc40894153f5897e0956fb74d217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga146ecc40894153f5897e0956fb74d217">scePafFreeWithContext</a> (<a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *context, void *ptr)</td></tr>
+<tr class="separator:ga146ecc40894153f5897e0956fb74d217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cd553f972ae5c6f98273716aa663ed6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga8cd553f972ae5c6f98273716aa663ed6">scePafMallocAlignWithContext</a> (<a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *context, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> align, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga8cd553f972ae5c6f98273716aa663ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac3e48a20035f43e51dc1314fc3f3ad2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaac3e48a20035f43e51dc1314fc3f3ad2">scePafReallocWithContext</a> (<a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *context, void *ptr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:gaac3e48a20035f43e51dc1314fc3f3ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31c5a915eb5a66c831add689372590d6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga31c5a915eb5a66c831add689372590d6">sce_paf_malloc</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
+<tr class="separator:ga31c5a915eb5a66c831add689372590d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf72e1763bbb53c093b5cbf9021e384cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaf72e1763bbb53c093b5cbf9021e384cc">sce_paf_free</a> (void *ptr)</td></tr>
+<tr class="separator:gaf72e1763bbb53c093b5cbf9021e384cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441">sce_paf_memalign</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> align, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>)</td></tr>
+<tr class="memdesc:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc memory with align.  <a href="group__ScePafUser.html#ga5aaa75fde02d7af14d3c8bf3602db441">More...</a><br /></td></tr>
+<tr class="separator:ga5aaa75fde02d7af14d3c8bf3602db441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9145931782e9c985339b3bd4533d05d2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga9145931782e9c985339b3bd4533d05d2">sce_paf_memchr</a> (const void *src, int ch, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceBtKernel.html#gaebb70c2aab3407a9f05334c47131a43b">length</a>)</td></tr>
+<tr class="separator:ga9145931782e9c985339b3bd4533d05d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6">sce_paf_memcmp</a> (const void *s1, const void *s2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n)</td></tr>
+<tr class="separator:ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ad860d640c9a62bb7eddc1c1fd490a7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga7ad860d640c9a62bb7eddc1c1fd490a7">sce_paf_memcpy</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga7ad860d640c9a62bb7eddc1c1fd490a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6115f19b3d0c099a7473a16496e70f9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaa6115f19b3d0c099a7473a16496e70f9">sce_paf_memset</a> (void *dst, int ch, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:gaa6115f19b3d0c099a7473a16496e70f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90568bb9def0c170a7c29e6338627ea9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga90568bb9def0c170a7c29e6338627ea9">sce_paf_memmove</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga90568bb9def0c170a7c29e6338627ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3f609c1085e6a3a885f289a3cbe417b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaa3f609c1085e6a3a885f289a3cbe417b">sce_paf_snprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="separator:gaa3f609c1085e6a3a885f289a3cbe417b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413768ee029d191ccb8d4e141155f3ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga413768ee029d191ccb8d4e141155f3ee">sce_paf_vsnprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
+<tr class="separator:ga413768ee029d191ccb8d4e141155f3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga222a504a4f4c890674cc6d911fa0ebdf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga222a504a4f4c890674cc6d911fa0ebdf">sce_paf_bcmp</a> (const void *ptr1, const void *ptr2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num)</td></tr>
+<tr class="separator:ga222a504a4f4c890674cc6d911fa0ebdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf70717033799a8251fb59c28e1e7ab0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gacf70717033799a8251fb59c28e1e7ab0">sce_paf_bcopy</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n)</td></tr>
+<tr class="separator:gacf70717033799a8251fb59c28e1e7ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69ecbccf58ae603e111d1628471841ce"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga69ecbccf58ae603e111d1628471841ce">sce_paf_bzero</a> (void *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> n)</td></tr>
+<tr class="separator:ga69ecbccf58ae603e111d1628471841ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21ef22b8d0fea5c0f8d8d7494dc6107f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga21ef22b8d0fea5c0f8d8d7494dc6107f">sce_paf_strchr</a> (const char *s, int ch)</td></tr>
+<tr class="separator:ga21ef22b8d0fea5c0f8d8d7494dc6107f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74b6b84143059d37a1e45321d675cc56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga74b6b84143059d37a1e45321d675cc56">sce_paf_strcmp</a> (const char *s1, const char *s2)</td></tr>
+<tr class="separator:ga74b6b84143059d37a1e45321d675cc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab51c094fd627d92ed76ed276d6e624f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaab51c094fd627d92ed76ed276d6e624f">sce_paf_strlen</a> (const char *s)</td></tr>
+<tr class="separator:gaab51c094fd627d92ed76ed276d6e624f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43c57aae14f833037ebb95166fa7b2aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga43c57aae14f833037ebb95166fa7b2aa">sce_paf_strcasecmp</a> (const char *s1, const char *s2)</td></tr>
+<tr class="separator:ga43c57aae14f833037ebb95166fa7b2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52b9e239380aad9f22512fdad19bacb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga52b9e239380aad9f22512fdad19bacb2">sce_paf_strncasecmp</a> (const char *s1, const char *s2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga52b9e239380aad9f22512fdad19bacb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f73a1d58c7e6b95d232d955050aba14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga7f73a1d58c7e6b95d232d955050aba14">sce_paf_strncmp</a> (const char *s1, const char *s2, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga7f73a1d58c7e6b95d232d955050aba14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21f4ef760701c9dd3978b698d603b61e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga21f4ef760701c9dd3978b698d603b61e">sce_paf_strncpy</a> (char *dst, const char *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="separator:ga21f4ef760701c9dd3978b698d603b61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3c9e985b370a9ea6f5095d5e26faf65"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gac3c9e985b370a9ea6f5095d5e26faf65">sce_paf_strrchr</a> (const char *s, int ch)</td></tr>
+<tr class="separator:gac3c9e985b370a9ea6f5095d5e26faf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gad4bb2ca96925b9413d806fe8102252e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gad4bb2ca96925b9413d806fe8102252e3">sce_paf_vsnprintf</a>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga07284da71d116b6baa11a1f005e5cd92">sce_paf_private_vsnprintf</a></td></tr>
-<tr class="separator:gad4bb2ca96925b9413d806fe8102252e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03552aa32e693f62963c008afa12f9eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga03552aa32e693f62963c008afa12f9eb">sce_paf_private_bcmp</a>(__ptr1__,  __ptr2__,  __num__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga222a504a4f4c890674cc6d911fa0ebdf">sce_paf_bcmp</a>((__ptr1__), (__ptr2__), (__num__))</td></tr>
+<tr class="separator:ga03552aa32e693f62963c008afa12f9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b1b5f7142adb756acf1468184cf4a13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga7b1b5f7142adb756acf1468184cf4a13">sce_paf_private_bcopy</a>(__dst__,  __src__,  __n__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gacf70717033799a8251fb59c28e1e7ab0">sce_paf_bcopy</a>((__dst__), (__src__), (__n__))</td></tr>
+<tr class="separator:ga7b1b5f7142adb756acf1468184cf4a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82f2a96fd137ba677d0ed155737ac9ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga82f2a96fd137ba677d0ed155737ac9ee">sce_paf_private_bzero</a>(__dst__,  __n__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga69ecbccf58ae603e111d1628471841ce">sce_paf_bzero</a>((__dst__), (__n__))</td></tr>
+<tr class="separator:ga82f2a96fd137ba677d0ed155737ac9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga813e3a33251727442cd084ca056e6914"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga813e3a33251727442cd084ca056e6914">sce_paf_private_memchr</a>(__src__,  __ch__,  __length__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga9145931782e9c985339b3bd4533d05d2">sce_paf_memchr</a>((__src__), (__ch__), (__length__))</td></tr>
+<tr class="separator:ga813e3a33251727442cd084ca056e6914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5134a40cac13e50ae44bcfc9ec0c353"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaf5134a40cac13e50ae44bcfc9ec0c353">sce_paf_private_memcmp</a>(__s1__,  __s2__,  __n__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6">sce_paf_memcmp</a>((__s1__), (__s2__), (__n__))</td></tr>
+<tr class="separator:gaf5134a40cac13e50ae44bcfc9ec0c353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bd42120acb9d8bfeb264aebe4aa0ed2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga1bd42120acb9d8bfeb264aebe4aa0ed2">sce_paf_private_memcpy</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga7ad860d640c9a62bb7eddc1c1fd490a7">sce_paf_memcpy</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga1bd42120acb9d8bfeb264aebe4aa0ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa31e85e7ba8b1404b2c6618511f530e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaa31e85e7ba8b1404b2c6618511f530e4">sce_paf_private_memmove</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga90568bb9def0c170a7c29e6338627ea9">sce_paf_memmove</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:gaa31e85e7ba8b1404b2c6618511f530e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffa49e7780ed0fd705784f8be77fac5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaffa49e7780ed0fd705784f8be77fac5b">sce_paf_private_memset</a>(__dst__,  __ch__,  __len__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gaa6115f19b3d0c099a7473a16496e70f9">sce_paf_memset</a>((__dst__), (__ch__), (__len__))</td></tr>
+<tr class="separator:gaffa49e7780ed0fd705784f8be77fac5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f096bc6791033808b98dc4af1e77b4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga2f096bc6791033808b98dc4af1e77b4c">sce_paf_private_snprintf</a>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gaa3f609c1085e6a3a885f289a3cbe417b">sce_paf_snprintf</a></td></tr>
+<tr class="separator:ga2f096bc6791033808b98dc4af1e77b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a2a11aa86d1c176b277ee545bf5e2fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga9a2a11aa86d1c176b277ee545bf5e2fc">sce_paf_private_vsnprintf</a>(__dst__,  __max__,  __fmt__,  __arg__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga413768ee029d191ccb8d4e141155f3ee">sce_paf_vsnprintf</a>((__dst__), (__max__), (__fmt__), (__arg__))</td></tr>
+<tr class="separator:ga9a2a11aa86d1c176b277ee545bf5e2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga394382fe234d76418532c7bc107c9998"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga394382fe234d76418532c7bc107c9998">sce_paf_private_strchr</a>(__s__,  __ch__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga21ef22b8d0fea5c0f8d8d7494dc6107f">sce_paf_strchr</a>((__s__), (__ch__))</td></tr>
+<tr class="separator:ga394382fe234d76418532c7bc107c9998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f650ecf18d38fc6b3b1b07a63f09205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga3f650ecf18d38fc6b3b1b07a63f09205">sce_paf_private_strcmp</a>(__s1__,  __s2__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga74b6b84143059d37a1e45321d675cc56">sce_paf_strcmp</a>((__s1__), (__s2__))</td></tr>
+<tr class="separator:ga3f650ecf18d38fc6b3b1b07a63f09205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1067a19fe7550e07972c6b6e3b69a1aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga1067a19fe7550e07972c6b6e3b69a1aa">sce_paf_private_strlen</a>(__s__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gaab51c094fd627d92ed76ed276d6e624f">sce_paf_strlen</a>((__s__))</td></tr>
+<tr class="separator:ga1067a19fe7550e07972c6b6e3b69a1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c3b80d1642676e4ecb9daa7d36cdf1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga3c3b80d1642676e4ecb9daa7d36cdf1b">sce_paf_private_strcasecmp</a>(__s1__,  __s2__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga43c57aae14f833037ebb95166fa7b2aa">sce_paf_strcasecmp</a>((__s1__), (__s2__))</td></tr>
+<tr class="separator:ga3c3b80d1642676e4ecb9daa7d36cdf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga338d13d77b94611270e3994c6e0e8acd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga338d13d77b94611270e3994c6e0e8acd">sce_paf_private_strncasecmp</a>(__s1__,  __s2__,  __len__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga52b9e239380aad9f22512fdad19bacb2">sce_paf_strncasecmp</a>((__s1__), (__s2__), (__len__))</td></tr>
+<tr class="separator:ga338d13d77b94611270e3994c6e0e8acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaddd80be0befcd3dd0e15b719c0b69e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaaaddd80be0befcd3dd0e15b719c0b69e">sce_paf_private_strncmp</a>(__s1__,  __s2__,  __len__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga7f73a1d58c7e6b95d232d955050aba14">sce_paf_strncmp</a>((__s1__), (__s2__), (__len__))</td></tr>
+<tr class="separator:gaaaddd80be0befcd3dd0e15b719c0b69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49dfd9916fb7b901a4dc38c5e71e0be1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga49dfd9916fb7b901a4dc38c5e71e0be1">sce_paf_private_strncpy</a>(__dst__,  __src__,  __len__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga21f4ef760701c9dd3978b698d603b61e">sce_paf_strncpy</a>((__dst__), (__src__), (__len__))</td></tr>
+<tr class="separator:ga49dfd9916fb7b901a4dc38c5e71e0be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25417b32b65d1f6210264047769431d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga25417b32b65d1f6210264047769431d3">sce_paf_private_strrchr</a>(__s__,  __ch__)&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gac3c9e985b370a9ea6f5095d5e26faf65">sce_paf_strrchr</a>((__s__), (__ch__))</td></tr>
+<tr class="separator:ga25417b32b65d1f6210264047769431d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structScePafDateTime" id="structScePafDateTime"></a>
@@ -217,15 +281,701 @@ unk[0x54]</td>
 
 </div>
 </div>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gad4bb2ca96925b9413d806fe8102252e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4bb2ca96925b9413d806fe8102252e3">&#9670;&nbsp;</a></span>sce_paf_vsnprintf</h2>
+<a name="structScePafHeapContext" id="structScePafHeapContext"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structScePafHeapContext">&#9670;&nbsp;</a></span>ScePafHeapContext</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define sce_paf_vsnprintf&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga07284da71d116b6baa11a1f005e5cd92">sce_paf_private_vsnprintf</a></td>
+          <td class="memname">struct ScePafHeapContext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga493723cdb03fdbcbbdc70b216b2690db"></a>void *</td>
+<td class="fieldname">
+vtable</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab1e5cd99740accd936fea4e1a7459c4e"></a>void *</td>
+<td class="fieldname">
+heap</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga7768f51670ca5e3c2112c0b81aabae00"></a>void *</td>
+<td class="fieldname">
+membase</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga52c4557cb845a869a8f1ca0f97a142f7"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab31fa82778485127dc9a181dd5c424b4"></a>char</td>
+<td class="fieldname">
+name[0x20]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4e13ac613d0bc7529b9a25f4bb3076c1"></a><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a></td>
+<td class="fieldname">
+is_import_membase</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga96bf6c93cc31e4b8e6c42fcdf244fa3b"></a><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a></td>
+<td class="fieldname">
+is_skip_debug_msg</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4bce9db4777445a122bcb335bf7d71bf"></a>char</td>
+<td class="fieldname">
+data_0x32</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaaeb78bf688ca6df17dcefa8c24185eb7"></a>char</td>
+<td class="fieldname">
+data_0x33</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga924de88b5b5ac623dc0e6ed76a42fc42"></a>int</td>
+<td class="fieldname">
+data_0x34</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga30c678b0619ae251987f75571d191c67"></a><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a></td>
+<td class="fieldname">
+lw_mtx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga483bc22c6e0e1bc04756d4e3fd1912a2"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+memblk_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaea434274fd43ab1e0b9dfadef65dd214"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
+<td class="fieldname">
+mode</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structScePafHeapOpt" id="structScePafHeapOpt"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structScePafHeapOpt">&#9670;&nbsp;</a></span>ScePafHeapOpt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ScePafHeapOpt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaf757b03dec18f006cb035da8c4b728c4"></a>int</td>
+<td class="fieldname">
+a1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5fe6a41dbf008a385c26bcc7aef92a45"></a>int</td>
+<td class="fieldname">
+a2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8f612d148c40fc1d3809f970d5653d17"></a><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a></td>
+<td class="fieldname">
+is_skip_debug_msg</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab6daac5d4503af373385057e732aeb3a"></a>char</td>
+<td class="fieldname">
+a3[3]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8d48eeeb5d79268da0af01e416451282"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
+<td class="fieldname">
+mode</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga6a2510b043e24b33bc60fbe3675ac933"></a>int</td>
+<td class="fieldname">
+a5</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga03552aa32e693f62963c008afa12f9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03552aa32e693f62963c008afa12f9eb">&#9670;&nbsp;</a></span>sce_paf_private_bcmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_bcmp</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__ptr1__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__ptr2__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__num__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga222a504a4f4c890674cc6d911fa0ebdf">sce_paf_bcmp</a>((__ptr1__), (__ptr2__), (__num__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7b1b5f7142adb756acf1468184cf4a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b1b5f7142adb756acf1468184cf4a13">&#9670;&nbsp;</a></span>sce_paf_private_bcopy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_bcopy</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__n__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gacf70717033799a8251fb59c28e1e7ab0">sce_paf_bcopy</a>((__dst__), (__src__), (__n__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga82f2a96fd137ba677d0ed155737ac9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82f2a96fd137ba677d0ed155737ac9ee">&#9670;&nbsp;</a></span>sce_paf_private_bzero</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_bzero</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__n__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga69ecbccf58ae603e111d1628471841ce">sce_paf_bzero</a>((__dst__), (__n__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga813e3a33251727442cd084ca056e6914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga813e3a33251727442cd084ca056e6914">&#9670;&nbsp;</a></span>sce_paf_private_memchr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_memchr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__ch__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__length__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga9145931782e9c985339b3bd4533d05d2">sce_paf_memchr</a>((__src__), (__ch__), (__length__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf5134a40cac13e50ae44bcfc9ec0c353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5134a40cac13e50ae44bcfc9ec0c353">&#9670;&nbsp;</a></span>sce_paf_private_memcmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_memcmp</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s1__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s2__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__n__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6">sce_paf_memcmp</a>((__s1__), (__s2__), (__n__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1bd42120acb9d8bfeb264aebe4aa0ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bd42120acb9d8bfeb264aebe4aa0ed2">&#9670;&nbsp;</a></span>sce_paf_private_memcpy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_memcpy</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga7ad860d640c9a62bb7eddc1c1fd490a7">sce_paf_memcpy</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa31e85e7ba8b1404b2c6618511f530e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa31e85e7ba8b1404b2c6618511f530e4">&#9670;&nbsp;</a></span>sce_paf_private_memmove</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_memmove</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga90568bb9def0c170a7c29e6338627ea9">sce_paf_memmove</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaffa49e7780ed0fd705784f8be77fac5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffa49e7780ed0fd705784f8be77fac5b">&#9670;&nbsp;</a></span>sce_paf_private_memset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_memset</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__ch__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gaa6115f19b3d0c099a7473a16496e70f9">sce_paf_memset</a>((__dst__), (__ch__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2f096bc6791033808b98dc4af1e77b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f096bc6791033808b98dc4af1e77b4c">&#9670;&nbsp;</a></span>sce_paf_private_snprintf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_snprintf&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gaa3f609c1085e6a3a885f289a3cbe417b">sce_paf_snprintf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9a2a11aa86d1c176b277ee545bf5e2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a2a11aa86d1c176b277ee545bf5e2fc">&#9670;&nbsp;</a></span>sce_paf_private_vsnprintf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_vsnprintf</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__max__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__fmt__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__arg__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga413768ee029d191ccb8d4e141155f3ee">sce_paf_vsnprintf</a>((__dst__), (__max__), (__fmt__), (__arg__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga394382fe234d76418532c7bc107c9998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394382fe234d76418532c7bc107c9998">&#9670;&nbsp;</a></span>sce_paf_private_strchr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strchr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__ch__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga21ef22b8d0fea5c0f8d8d7494dc6107f">sce_paf_strchr</a>((__s__), (__ch__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3f650ecf18d38fc6b3b1b07a63f09205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f650ecf18d38fc6b3b1b07a63f09205">&#9670;&nbsp;</a></span>sce_paf_private_strcmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strcmp</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s1__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s2__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga74b6b84143059d37a1e45321d675cc56">sce_paf_strcmp</a>((__s1__), (__s2__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1067a19fe7550e07972c6b6e3b69a1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1067a19fe7550e07972c6b6e3b69a1aa">&#9670;&nbsp;</a></span>sce_paf_private_strlen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strlen</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gaab51c094fd627d92ed76ed276d6e624f">sce_paf_strlen</a>((__s__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3c3b80d1642676e4ecb9daa7d36cdf1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c3b80d1642676e4ecb9daa7d36cdf1b">&#9670;&nbsp;</a></span>sce_paf_private_strcasecmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strcasecmp</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s1__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s2__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga43c57aae14f833037ebb95166fa7b2aa">sce_paf_strcasecmp</a>((__s1__), (__s2__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga338d13d77b94611270e3994c6e0e8acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga338d13d77b94611270e3994c6e0e8acd">&#9670;&nbsp;</a></span>sce_paf_private_strncasecmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strncasecmp</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s1__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s2__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga52b9e239380aad9f22512fdad19bacb2">sce_paf_strncasecmp</a>((__s1__), (__s2__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaaddd80be0befcd3dd0e15b719c0b69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaddd80be0befcd3dd0e15b719c0b69e">&#9670;&nbsp;</a></span>sce_paf_private_strncmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strncmp</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s1__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s2__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga7f73a1d58c7e6b95d232d955050aba14">sce_paf_strncmp</a>((__s1__), (__s2__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga49dfd9916fb7b901a4dc38c5e71e0be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49dfd9916fb7b901a4dc38c5e71e0be1">&#9670;&nbsp;</a></span>sce_paf_private_strncpy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strncpy</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__dst__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__src__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__len__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#ga21f4ef760701c9dd3978b698d603b61e">sce_paf_strncpy</a>((__dst__), (__src__), (__len__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga25417b32b65d1f6210264047769431d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25417b32b65d1f6210264047769431d3">&#9670;&nbsp;</a></span>sce_paf_private_strrchr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sce_paf_private_strrchr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__s__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__ch__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__ScePafUser.html#gac3c9e985b370a9ea6f5095d5e26faf65">sce_paf_strrchr</a>((__s__), (__ch__))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -233,692 +983,6 @@ unk[0x54]</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga724f89ceda36d1cd4c6756725d7a3a90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga724f89ceda36d1cd4c6756725d7a3a90">&#9670;&nbsp;</a></span>sce_paf_private_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sce_paf_private_free </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga556121bfa3ff35da66bf6824a06c1d6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga556121bfa3ff35da66bf6824a06c1d6e">&#9670;&nbsp;</a></span>sce_paf_private_malloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_malloc </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5aaa75fde02d7af14d3c8bf3602db441"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5aaa75fde02d7af14d3c8bf3602db441">&#9670;&nbsp;</a></span>sce_paf_memalign()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_memalign </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>align</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Alloc memory with align. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">align</td><td>- The align size </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>- The alloc length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>memory pointer or NULL </dd></dl>
-
-</div>
-</div>
-<a id="gaba82d640f1abf4bf8277ecc367b94b5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba82d640f1abf4bf8277ecc367b94b5c">&#9670;&nbsp;</a></span>sce_paf_private_bzero()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_bzero </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga610b2a40c54544921bf4cc2d822722c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga610b2a40c54544921bf4cc2d822722c2">&#9670;&nbsp;</a></span>sce_paf_private_memchr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_memchr </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga632c520cecb3527901ecfcc4aec29ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga632c520cecb3527901ecfcc4aec29ed6">&#9670;&nbsp;</a></span>sce_paf_private_memcmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_memcmp </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0c0d709784b3cdca78debd48e7b804dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c0d709784b3cdca78debd48e7b804dc">&#9670;&nbsp;</a></span>sce_paf_private_bcmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_bcmp </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga48bbb6dbe1b36872861b3f4fcaddef00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga48bbb6dbe1b36872861b3f4fcaddef00">&#9670;&nbsp;</a></span>sce_paf_private_memcpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_memcpy </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0581ccb1aad81a87efe5a7e52d367a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0581ccb1aad81a87efe5a7e52d367a9d">&#9670;&nbsp;</a></span>sce_paf_private_memcpy2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_memcpy2 </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga773582460c6d195e39020a34f3d7eb4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga773582460c6d195e39020a34f3d7eb4c">&#9670;&nbsp;</a></span>sce_paf_private_memmove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_memmove </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab47af1f1c4a34c50a5d9d751a5505ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab47af1f1c4a34c50a5d9d751a5505ca9">&#9670;&nbsp;</a></span>sce_paf_private_bcopy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_bcopy </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae4fe5e75081687ea9b1016c5d23c4a05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae4fe5e75081687ea9b1016c5d23c4a05">&#9670;&nbsp;</a></span>sce_paf_private_memset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* sce_paf_private_memset </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga60610d5b831546d322ae68389ec8db1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60610d5b831546d322ae68389ec8db1d">&#9670;&nbsp;</a></span>sce_paf_private_snprintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_snprintf </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga07284da71d116b6baa11a1f005e5cd92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07284da71d116b6baa11a1f005e5cd92">&#9670;&nbsp;</a></span>sce_paf_private_vsnprintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_vsnprintf </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga60bcb5f76b7bf806fa0cd1c1d1031943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60bcb5f76b7bf806fa0cd1c1d1031943">&#9670;&nbsp;</a></span>sce_paf_private_strcasecmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_strcasecmp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaee87a1b835d325d6e4efbae975e635a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee87a1b835d325d6e4efbae975e635a6">&#9670;&nbsp;</a></span>sce_paf_private_strchr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* sce_paf_private_strchr </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>character</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0ff47347d916798a0ec7ef644dbc8551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ff47347d916798a0ec7ef644dbc8551">&#9670;&nbsp;</a></span>sce_paf_private_strcmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_strcmp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabf26b51d5bf4f37f33be6e405a94b1ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf26b51d5bf4f37f33be6e405a94b1ef">&#9670;&nbsp;</a></span>sce_paf_private_strlen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t sce_paf_private_strlen </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga8dcfb9689c368629987849ab84731d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8dcfb9689c368629987849ab84731d0c">&#9670;&nbsp;</a></span>sce_paf_private_strncasecmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_strncasecmp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5846e5431d925f0ffa4799f6f982ce65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5846e5431d925f0ffa4799f6f982ce65">&#9670;&nbsp;</a></span>sce_paf_private_strncmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sce_paf_private_strncmp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga190249e55f2be14fff672ba76353da77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga190249e55f2be14fff672ba76353da77">&#9670;&nbsp;</a></span>sce_paf_private_strncpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* sce_paf_private_strncpy </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga8176dd33e4858679e86fa42a919f7cb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8176dd33e4858679e86fa42a919f7cb4">&#9670;&nbsp;</a></span>sce_paf_private_strrchr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* sce_paf_private_strrchr </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>character</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga5352793106ba81601d289126bc9fd6ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5352793106ba81601d289126bc9fd6ad">&#9670;&nbsp;</a></span>scePafGetCurrentClockLocalTime()</h2>
 
@@ -1017,9 +1081,851 @@ unk[0x54]</td>
 
 </div>
 </div>
+<a id="ga6f6b6067714665ee585ddec926625d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f6b6067714665ee585ddec926625d5f">&#9670;&nbsp;</a></span>scePafCreateHeap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scePafCreateHeap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>membase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapOpt">ScePafHeapOpt</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadff63f5bff9660e6693c73bbe5cf2679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadff63f5bff9660e6693c73bbe5cf2679">&#9670;&nbsp;</a></span>scePafDeleteHeap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scePafDeleteHeap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga788d307c11004c0d7b974cdd40ca923a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga788d307c11004c0d7b974cdd40ca923a">&#9670;&nbsp;</a></span>scePafMallocWithContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* scePafMallocWithContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga146ecc40894153f5897e0956fb74d217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga146ecc40894153f5897e0956fb74d217">&#9670;&nbsp;</a></span>scePafFreeWithContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scePafFreeWithContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8cd553f972ae5c6f98273716aa663ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8cd553f972ae5c6f98273716aa663ed6">&#9670;&nbsp;</a></span>scePafMallocAlignWithContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* scePafMallocAlignWithContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaac3e48a20035f43e51dc1314fc3f3ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac3e48a20035f43e51dc1314fc3f3ad2">&#9670;&nbsp;</a></span>scePafReallocWithContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* scePafReallocWithContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ScePafUser.html#structScePafHeapContext">ScePafHeapContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31c5a915eb5a66c831add689372590d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31c5a915eb5a66c831add689372590d6">&#9670;&nbsp;</a></span>sce_paf_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_malloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf72e1763bbb53c093b5cbf9021e384cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf72e1763bbb53c093b5cbf9021e384cc">&#9670;&nbsp;</a></span>sce_paf_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sce_paf_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5aaa75fde02d7af14d3c8bf3602db441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5aaa75fde02d7af14d3c8bf3602db441">&#9670;&nbsp;</a></span>sce_paf_memalign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_memalign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alloc memory with align. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">align</td><td>The align size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The alloc length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>memory pointer or NULL </dd></dl>
+
+</div>
+</div>
+<a id="ga9145931782e9c985339b3bd4533d05d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9145931782e9c985339b3bd4533d05d2">&#9670;&nbsp;</a></span>sce_paf_memchr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_memchr </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e58e8e7ad24ecd7e72e9dd07d7ae1d6">&#9670;&nbsp;</a></span>sce_paf_memcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_memcmp </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7ad860d640c9a62bb7eddc1c1fd490a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ad860d640c9a62bb7eddc1c1fd490a7">&#9670;&nbsp;</a></span>sce_paf_memcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_memcpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa6115f19b3d0c099a7473a16496e70f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6115f19b3d0c099a7473a16496e70f9">&#9670;&nbsp;</a></span>sce_paf_memset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_memset </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga90568bb9def0c170a7c29e6338627ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90568bb9def0c170a7c29e6338627ea9">&#9670;&nbsp;</a></span>sce_paf_memmove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_memmove </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa3f609c1085e6a3a885f289a3cbe417b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3f609c1085e6a3a885f289a3cbe417b">&#9670;&nbsp;</a></span>sce_paf_snprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_snprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga413768ee029d191ccb8d4e141155f3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga413768ee029d191ccb8d4e141155f3ee">&#9670;&nbsp;</a></span>sce_paf_vsnprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_vsnprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga222a504a4f4c890674cc6d911fa0ebdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga222a504a4f4c890674cc6d911fa0ebdf">&#9670;&nbsp;</a></span>sce_paf_bcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_bcmp </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacf70717033799a8251fb59c28e1e7ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf70717033799a8251fb59c28e1e7ab0">&#9670;&nbsp;</a></span>sce_paf_bcopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_bcopy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga69ecbccf58ae603e111d1628471841ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69ecbccf58ae603e111d1628471841ce">&#9670;&nbsp;</a></span>sce_paf_bzero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sce_paf_bzero </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga21ef22b8d0fea5c0f8d8d7494dc6107f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21ef22b8d0fea5c0f8d8d7494dc6107f">&#9670;&nbsp;</a></span>sce_paf_strchr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* sce_paf_strchr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga74b6b84143059d37a1e45321d675cc56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74b6b84143059d37a1e45321d675cc56">&#9670;&nbsp;</a></span>sce_paf_strcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_strcmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab51c094fd627d92ed76ed276d6e624f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab51c094fd627d92ed76ed276d6e624f">&#9670;&nbsp;</a></span>sce_paf_strlen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sce_paf_strlen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga43c57aae14f833037ebb95166fa7b2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43c57aae14f833037ebb95166fa7b2aa">&#9670;&nbsp;</a></span>sce_paf_strcasecmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_strcasecmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga52b9e239380aad9f22512fdad19bacb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52b9e239380aad9f22512fdad19bacb2">&#9670;&nbsp;</a></span>sce_paf_strncasecmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_strncasecmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f73a1d58c7e6b95d232d955050aba14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f73a1d58c7e6b95d232d955050aba14">&#9670;&nbsp;</a></span>sce_paf_strncmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sce_paf_strncmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga21f4ef760701c9dd3978b698d603b61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21f4ef760701c9dd3978b698d603b61e">&#9670;&nbsp;</a></span>sce_paf_strncpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* sce_paf_strncpy </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac3c9e985b370a9ea6f5095d5e26faf65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3c9e985b370a9ea6f5095d5e26faf65">&#9670;&nbsp;</a></span>sce_paf_strrchr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* sce_paf_strrchr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="apaf_8h_html"><div class="ttname"><a href="paf_8h.html">paf.h</a></div></div>
+<div class="ttc" id="apaf_2misc_8h_html"><div class="ttname"><a href="paf_2misc_8h.html">misc.h</a></div></div>
+<div class="ttc" id="astdc_8h_html"><div class="ttname"><a href="stdc_8h.html">stdc.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
