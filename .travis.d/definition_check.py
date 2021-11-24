@@ -70,6 +70,8 @@ def read_nids():
             for line_no, line in enumerate(readlines(d)):
                 line = line.strip()
                 k, v = line.split(':')[:3]
+                if k[0] == "#": # It a comment
+                    continue
                 if not v.strip():
                     SECTION = k
                     continue
