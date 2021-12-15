@@ -771,6 +771,13 @@ unsigned long long int sceNetNtohll(unsigned long long int net64);
 unsigned int sceNetNtohl(unsigned int net32);
 unsigned short int sceNetNtohs(unsigned short int net16);
 
+/**
+ * Get pointer to last network errno.
+ *
+ * @return pointer to int.
+ */
+int *sceNetErrnoLoc(void);
+
 #ifdef __cplusplus
 }
 #endif
