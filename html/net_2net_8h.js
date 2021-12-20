@@ -794,5 +794,6 @@ var net_2net_8h =
     [ "sceNetHtons", "group__SceNetUser.html#ga1a3504137116a340606387a91e7ec80a", null ],
     [ "sceNetNtohll", "group__SceNetUser.html#ga718c307037dc034e731bd68c85cc70e3", null ],
     [ "sceNetNtohl", "group__SceNetUser.html#gaf0079d91bfd48309ff3717692f98ef5a", null ],
-    [ "sceNetNtohs", "group__SceNetUser.html#ga2538abe15fa19b0250f80705a0e3ca94", null ]
+    [ "sceNetNtohs", "group__SceNetUser.html#ga2538abe15fa19b0250f80705a0e3ca94", null ],
+    [ "sceNetErrnoLoc", "group__SceNetUser.html#ga3b63382213be67f4ff0de70394226a28", null ]
 ];

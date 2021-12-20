@@ -824,12 +824,14 @@ $(document).ready(function(){initNavTree('net_2net_8h_source.html',''); initResi
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__SceNetUser.html#gaf0079d91bfd48309ff3717692f98ef5a">sceNetNtohl</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> net32);</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="group__SceNetUser.html#ga2538abe15fa19b0250f80705a0e3ca94">sceNetNtohs</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> net16);</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160; </div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;}</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_NET_NET_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="keywordtype">int</span> *<a class="code" href="group__SceNetUser.html#ga3b63382213be67f4ff0de70394226a28">sceNetErrnoLoc</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160; </div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;}</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160; </div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_NET_NET_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__SceNetKernel_html_gga059631a28b7785f0898f141e1e13b89da2374b08aacd48f900e108db065319155"><div class="ttname"><a href="group__SceNetKernel.html#gga059631a28b7785f0898f141e1e13b89da2374b08aacd48f900e108db065319155">SCE_NET_MSG_DONTWAIT</a></div><div class="ttdeci">@ SCE_NET_MSG_DONTWAIT</div><div class="ttdef"><b>Definition:</b> net.h:406</div></div>
@@ -1056,6 +1058,7 @@ $(document).ready(function(){initNavTree('net_2net_8h_source.html',''); initResi
 <div class="ttc" id="agroup__SceNetKernel_html_gga80cc519fa0e058a19a67b756f8837ef0a5e86e076a135a038771ce498f04efa38"><div class="ttname"><a href="group__SceNetKernel.html#gga80cc519fa0e058a19a67b756f8837ef0a5e86e076a135a038771ce498f04efa38">SCE_NET_EISCONN</a></div><div class="ttdeci">@ SCE_NET_EISCONN</div><div class="ttdef"><b>Definition:</b> net.h:193</div></div>
 <div class="ttc" id="agroup__SceNetUser_html_gaa7599e847e251f6f6357aa448d24dcc2"><div class="ttname"><a href="group__SceNetUser.html#gaa7599e847e251f6f6357aa448d24dcc2">SceNetIpHeader::ip_len</a></div><div class="ttdeci">unsigned short ip_len</div><div class="ttdef"><b>Definition:</b> net.h:670</div></div>
 <div class="ttc" id="agroup__SceNetUser_html_ga081692ddddcd3bf8e94fed06cc142408"><div class="ttname"><a href="group__SceNetUser.html#ga081692ddddcd3bf8e94fed06cc142408">sceNetListen</a></div><div class="ttdeci">int sceNetListen(int s, int backlog)</div></div>
+<div class="ttc" id="agroup__SceNetUser_html_ga3b63382213be67f4ff0de70394226a28"><div class="ttname"><a href="group__SceNetUser.html#ga3b63382213be67f4ff0de70394226a28">sceNetErrnoLoc</a></div><div class="ttdeci">int * sceNetErrnoLoc(void)</div><div class="ttdoc">Get pointer to last network errno.</div></div>
 <div class="ttc" id="agroup__SceNetKernel_html_ggad86d79264293e1c317019d5e581ce1d7aa0d9501deee9a3731f8240e178448a17"><div class="ttname"><a href="group__SceNetKernel.html#ggad86d79264293e1c317019d5e581ce1d7aa0d9501deee9a3731f8240e178448a17">SCE_NET_ERROR_ERETURN</a></div><div class="ttdeci">@ SCE_NET_ERROR_ERETURN</div><div class="ttdef"><b>Definition:</b> net.h:117</div></div>
 <div class="ttc" id="agroup__SceNetUser_html_ga3db1e083124c4ba05c4f7d82d227f0e2"><div class="ttname"><a href="group__SceNetUser.html#ga3db1e083124c4ba05c4f7d82d227f0e2">sceNetGetSockIdInfo</a></div><div class="ttdeci">int sceNetGetSockIdInfo(SceNetFdSet *fds, int sockinfoflags, int flags)</div></div>
 <div class="ttc" id="agroup__SceNetUser_html_gga0afc1f6c3ee846a7a577450323ea268baaa40660cddb8859a14029fcb54bd47fe"><div class="ttname"><a href="group__SceNetUser.html#gga0afc1f6c3ee846a7a577450323ea268baaa40660cddb8859a14029fcb54bd47fe">SCE_NET_RESOLVER_EINTERNAL</a></div><div class="ttdeci">@ SCE_NET_RESOLVER_EINTERNAL</div><div class="ttdef"><b>Definition:</b> net.h:248</div></div>
