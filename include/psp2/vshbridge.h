@@ -6,6 +6,7 @@
 #ifndef _PSP2_VSHBRIDGE_H_
 #define _PSP2_VSHBRIDGE_H_
 
+#include <psp2common/kernel/msif.h>
 #include <psp2/types.h>
 #include <psp2/kernel/modulemgr.h>
 
@@ -108,6 +109,8 @@ int vshSysconShowModeClear(void);
 
 int vshMemoryCardGetCardInsertState(void);
 int vshRemovableMemoryGetCardInsertState(void);
+
+int vshMsifGetMsInfo(SceMsInfo *info);
 
 #ifdef __cplusplus
 }
