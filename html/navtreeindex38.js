@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a683f1e3e1b7f23bc041e31b02c264c4d":[4,0,1,0,2,3,0,111],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a69f4944f0ef4cb9ad862dd6dbe1fd411":[1,7,5,0,0,189],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a69f4944f0ef4cb9ad862dd6dbe1fd411":[1,7,5,0,190],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a69f4944f0ef4cb9ad862dd6dbe1fd411":[4,0,1,0,2,3,0,189],
@@ -48,9 +49,9 @@ var NAVTREEINDEX38 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7756d8e99477ed1265c81fb3f6d70641":[1,7,5,0,0,78],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7756d8e99477ed1265c81fb3f6d70641":[1,7,5,0,79],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7756d8e99477ed1265c81fb3f6d70641":[4,0,1,0,2,3,0,78],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7762f70c6d7f3e15803cb236807d5a6e":[4,0,1,0,2,3,0,163],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7762f70c6d7f3e15803cb236807d5a6e":[1,7,5,0,0,163],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7762f70c6d7f3e15803cb236807d5a6e":[1,7,5,0,164],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7762f70c6d7f3e15803cb236807d5a6e":[4,0,1,0,2,3,0,163],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a77edb0dff33b84ba16bd37a65b7d0940":[1,7,5,0,0,49],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a77edb0dff33b84ba16bd37a65b7d0940":[1,7,5,0,50],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a77edb0dff33b84ba16bd37a65b7d0940":[4,0,1,0,2,3,0,49],
@@ -159,9 +160,9 @@ var NAVTREEINDEX38 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8ca28c9bf3ce0228fbfe7571631523d0":[1,7,5,0,0,20],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8ca28c9bf3ce0228fbfe7571631523d0":[1,7,5,0,21],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8ca28c9bf3ce0228fbfe7571631523d0":[4,0,1,0,2,3,0,20],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8cf0de21f9ce78cf80a43c734836ef8a":[4,0,1,0,2,3,0,188],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8cf0de21f9ce78cf80a43c734836ef8a":[1,7,5,0,0,188],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8cf0de21f9ce78cf80a43c734836ef8a":[1,7,5,0,189],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8cf0de21f9ce78cf80a43c734836ef8a":[4,0,1,0,2,3,0,188],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8da9ce3ab4bccbfac5ec3d776554daba":[1,7,5,0,0,107],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8da9ce3ab4bccbfac5ec3d776554daba":[1,7,5,0,108],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a8da9ce3ab4bccbfac5ec3d776554daba":[4,0,1,0,2,3,0,107],
@@ -186,9 +187,9 @@ var NAVTREEINDEX38 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a93fb4c4a69de7eaa38f0192378e43777":[1,7,5,0,0,19],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a93fb4c4a69de7eaa38f0192378e43777":[1,7,5,0,20],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a93fb4c4a69de7eaa38f0192378e43777":[4,0,1,0,2,3,0,19],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a94021fe2677eeac380095cd15d664b22":[4,0,1,0,2,3,0,180],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a94021fe2677eeac380095cd15d664b22":[1,7,5,0,0,180],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a94021fe2677eeac380095cd15d664b22":[1,7,5,0,181],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a94021fe2677eeac380095cd15d664b22":[4,0,1,0,2,3,0,180],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9496e144dd2c8f28fe411420e2783339":[1,7,5,0,0,134],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9496e144dd2c8f28fe411420e2783339":[1,7,5,0,135],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9496e144dd2c8f28fe411420e2783339":[4,0,1,0,2,3,0,134],
@@ -220,8 +221,8 @@ var NAVTREEINDEX38 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9f3e108b1d4ab95b40d87f1e491aca3f":[1,7,5,0,0,198],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a9f3e108b1d4ab95b40d87f1e491aca3f":[1,7,5,0,199],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa03d15fc76446863663c80986b51f92f":[1,7,5,0,0,204],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa03d15fc76446863663c80986b51f92f":[4,0,1,0,2,3,0,204],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa03d15fc76446863663c80986b51f92f":[1,7,5,0,205],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa03d15fc76446863663c80986b51f92f":[4,0,1,0,2,3,0,204],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa149cc1ea60f1c4b937fcab21c41f1d3":[1,7,5,0,0,110],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa149cc1ea60f1c4b937fcab21c41f1d3":[1,7,5,0,111],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa149cc1ea60f1c4b937fcab21c41f1d3":[4,0,1,0,2,3,0,110],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aa9d738a93a9db25ff3a7249e151124ad":[4,0,1,0,2,3,0,234],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aaaf293e4fab919cdaf2b40e74977dc41":[1,7,5,0,0,21],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aaaf293e4fab919cdaf2b40e74977dc41":[1,7,5,0,22],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aaaf293e4fab919cdaf2b40e74977dc41":[4,0,1,0,2,3,0,21],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aabee2b3957fc54149947092ac977e260":[1,7,5,0,0,52]
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136aaaf293e4fab919cdaf2b40e74977dc41":[4,0,1,0,2,3,0,21]
 };

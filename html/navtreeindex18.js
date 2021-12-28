@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"group__SceGpsKernel.html#ga8813f09e30caa83952ab7f1adc2cf34f":[1,1,4,0,3],
 "group__SceGpsKernel.html#ga8813f09e30caa83952ab7f1adc2cf34f":[4,0,1,0,24,3],
 "group__SceGpsKernel.html#ga9fb91ea702777f2bc17a615529477e0a":[1,1,4,0,9],
 "group__SceGpsKernel.html#ga9fb91ea702777f2bc17a615529477e0a":[4,0,1,0,24,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "group__SceGxmUser.html#ga52408110ffcdae3e8dd05e8a31016fe4":[4,0,1,0,25,318],
 "group__SceGxmUser.html#ga52408110ffcdae3e8dd05e8a31016fe4":[1,0,4,0,1106],
 "group__SceGxmUser.html#ga5250603e99710af07b6687d49d1c35a2":[4,0,1,0,25,179],
-"group__SceGxmUser.html#ga5250603e99710af07b6687d49d1c35a2":[1,0,4,0,967],
-"group__SceGxmUser.html#ga5258c50eb1b4478bfe8011d6030c5fdc":[1,0,4,0,4]
+"group__SceGxmUser.html#ga5250603e99710af07b6687d49d1c35a2":[1,0,4,0,967]
 };

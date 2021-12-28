@@ -277,6 +277,7 @@ var annotated_dup =
     [ "SceMsgDialogResult", "group__SceMessageDialogUser.html#structSceMsgDialogResult", "group__SceMessageDialogUser_structSceMsgDialogResult" ],
     [ "SceMsgDialogSystemMessageParam", "group__SceMessageDialogUser.html#structSceMsgDialogSystemMessageParam", "group__SceMessageDialogUser_structSceMsgDialogSystemMessageParam" ],
     [ "SceMsgDialogUserMessageParam", "group__SceMessageDialogUser.html#structSceMsgDialogUserMessageParam", "group__SceMessageDialogUser_structSceMsgDialogUserMessageParam" ],
+    [ "SceMsInfo", "group__SceMsifKernel.html#structSceMsInfo", "group__SceMsifKernel_structSceMsInfo" ],
     [ "SceNetAdhocctlAdhocId", "group__ScePspnetAdhocctlUser.html#structSceNetAdhocctlAdhocId", "group__ScePspnetAdhocctlUser_structSceNetAdhocctlAdhocId" ],
     [ "SceNetAdhocctlBSSId", "group__ScePspnetAdhocctlUser.html#structSceNetAdhocctlBSSId", "group__ScePspnetAdhocctlUser_structSceNetAdhocctlBSSId" ],
     [ "SceNetAdhocctlGroupName", "group__ScePspnetAdhocctlUser.html#structSceNetAdhocctlGroupName", "group__ScePspnetAdhocctlUser_structSceNetAdhocctlGroupName" ],

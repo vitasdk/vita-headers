@@ -30,5 +30,6 @@ var vshbridge_8h =
     [ "vshSysconShowModeSet", "group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2", null ],
     [ "vshSysconShowModeClear", "group__SceVshBridgeUser.html#ga7dcb9fb6b15e0b397a4315ffe3d67244", null ],
     [ "vshMemoryCardGetCardInsertState", "group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a", null ],
-    [ "vshRemovableMemoryGetCardInsertState", "group__SceVshBridgeUser.html#ga121a576126f3dff4688cdba0fbdfcc69", null ]
+    [ "vshRemovableMemoryGetCardInsertState", "group__SceVshBridgeUser.html#ga121a576126f3dff4688cdba0fbdfcc69", null ],
+    [ "vshMsifGetMsInfo", "group__SceVshBridgeUser.html#gaa02b3f58a73b07b38474f2a6e6d7f3f2", null ]
 ];
