@@ -16,24 +16,24 @@ extern "C" {
 /**
  * DMA memcpy
  *
- * @param[in] dst - Destination
- * @param[in] src - Source
+ * @param[in] dst  - Destination
+ * @param[in] src  - Source
  * @param[in] size - Size
  *
- * @return dst.
-*/
-void *ksceDmacMemcpy(void *dst, const void *src, SceSize size);
+ * @return 0 on success, < 0 on error.
+ */
+int ksceDmacMemcpy(void *dst, const void *src, SceSize size);
 
 /**
  * DMA memset
  *
- * @param[in] dst - Destination
- * @param[in] c - Constant
+ * @param[in] dst  - Destination
+ * @param[in] c    - Constant
  * @param[in] size - Size
  *
- * @return dst.
-*/
-void *ksceDmacMemset(void *dst, int c, SceSize size);
+ * @return 0 on success, < 0 on error.
+ */
+int ksceDmacMemset(void *dst, int c, SceSize size);
 
 #ifdef __cplusplus
 }
