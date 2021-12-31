@@ -1,5 +1,5 @@
 var ern_2kernel_2dmac_8h =
 [
-    [ "ksceDmacMemcpy", "group__SceDmacMgrKernel.html#ga571324520ce249e662e7a0967dde9e12", null ],
-    [ "ksceDmacMemset", "group__SceDmacMgrKernel.html#ga5715f386ae09d55c88fb6d55c448cbe0", null ]
+    [ "ksceDmacMemcpy", "group__SceDmacMgrKernel.html#gadb732da08050e8ccc4d107eec78661ea", null ],
+    [ "ksceDmacMemset", "group__SceDmacMgrKernel.html#ga6874fc86548f4c7b481b7a298325263f", null ]
 ];
