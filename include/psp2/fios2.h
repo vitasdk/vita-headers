@@ -35,11 +35,11 @@ typedef enum SceFiosOverlayType {
 } SceFiosOverlayType;
   
 typedef struct SceFiosOverlay {
-  uint8_t type; // see SceFiosOverlayType
-  uint8_t order;
-  uint16_t dst_len;
-  uint16_t src_len;
-  uint16_t unk2;
+  SceUInt8 type; // see SceFiosOverlayType
+  SceUInt8 order;
+  SceUInt16 dst_len;
+  SceUInt16 src_len;
+  SceUInt16 unk2;
   SceUID pid;
   SceFiosOverlayID id;
   char dst[SCE_FIOS2_OVERLAY_PATH_SIZE];
@@ -55,7 +55,7 @@ typedef struct SceFiosOverlay {
  *
  * @return     Error code or zero on success
  */
-int sceFiosKernelOverlayAddForProcess02(int pid, SceFiosKernelOverlay* overlay, SceFiosOverlayID* outID);
+int sceFiosKernelOverlayAddForProcess02(int pid, SceFiosOverlay* overlay, SceFiosOverlayID* outID);
   
   
 #ifdef __cplusplus
