@@ -343,6 +343,7 @@ var annotated_dup =
     [ "ScePromoterUtilityImportParams", "group__ScePromoterUtilUser.html#structScePromoterUtilityImportParams", "group__ScePromoterUtilUser_structScePromoterUtilityImportParams" ],
     [ "ScePromoterUtilityLAUpdate", "group__ScePromoterUtilUser.html#structScePromoterUtilityLAUpdate", "group__ScePromoterUtilUser_structScePromoterUtilityLAUpdate" ],
     [ "ScePsCode", "group__SceSblSsMgrKernel.html#structScePsCode", "group__SceSblSsMgrKernel_structScePsCode" ],
+    [ "ScePsmDrmLicense", "group__SceNpDrmUser.html#structScePsmDrmLicense", "group__SceNpDrmUser_structScePsmDrmLicense" ],
     [ "ScePssCryptoHandle", "group__ScePssUser.html#structScePssCryptoHandle", "group__ScePssUser_structScePssCryptoHandle" ],
     [ "ScePvfCacheKey", "group__ScePvfUser.html#structScePvfCacheKey", "group__ScePvfUser_structScePvfCacheKey" ],
     [ "ScePvfCacheSystemInterface", "group__ScePvfUser.html#structScePvfCacheSystemInterface", "group__ScePvfUser_structScePvfCacheSystemInterface" ],
