@@ -99,7 +99,7 @@ int _sceNpDrmGetRifNameForInstall(char *rif_name, const void *rif_data, int unk)
  *
  * @param[in] flags - Unknown
  * 
- * @return >0 on success, <0 on error
+ * @return 0 on success, < 0 on error
 */
 int scePsmDrmGetRifKey(const ScePsmDrmLicense *license_buf, char *keydata, int flags);
  
