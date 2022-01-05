@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceFios2User}
+ * \usergroup{SceFios2}
  * \usage{psp2/fios2.h,SceFios2_stub}
  */
 
