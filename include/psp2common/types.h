@@ -81,8 +81,8 @@ typedef char* SceName;       //!< Names are used to describe object names
 /** 64-bit system clock type. */
 typedef SceUInt64 SceKernelSysClock;
 
-
-#define SCE_KERNEL_PROCESS_ID_SELF 0  //!< Current running process ID is always 0
+#define SCE_KERNEL_THREAD_ID_SELF  0  //!< Current thread's UID - pass to APIs expecting a thread ID to operate on calling thread
+#define SCE_KERNEL_PROCESS_ID_SELF 0  //!< Current process's UID - pass to APIs expecting a process ID to operate on calling process
 #define SCE_UID_NAMELEN            31 //!< Maximum length for kernel object names
 
 

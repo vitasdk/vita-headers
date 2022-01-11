@@ -237,8 +237,7 @@ int ksceKernelGetThreadCurrentPriority(void);
 /**
  * Get the free stack size for a thread.
  *
- * @param thid - The thread ID. Seem to take current thread
- * if set to 0.
+ * @param thid - The thread ID
  *
  * @return The free size.
  */
