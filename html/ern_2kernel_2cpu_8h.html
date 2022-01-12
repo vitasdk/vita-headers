@@ -75,7 +75,6 @@ $(document).ready(function(){initNavTree('ern_2kernel_2cpu_8h.html',''); initRes
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cpu.h File Reference</div>  </div>
@@ -100,15 +99,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga47b24d3d1d69aeea9dc02cf55ccd55c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9">EXIT_SYSCALL</a>(state)</td></tr>
 <tr class="memdesc:ga47b24d3d1d69aeea9dc02cf55ccd55c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when exiting a syscall.  <a href="group__SceCpuKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9">More...</a><br /></td></tr>
 <tr class="separator:ga47b24d3d1d69aeea9dc02cf55ccd55c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga7972593dbd2f5676f9da51b48f863f44"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga7972593dbd2f5676f9da51b48f863f44">SceCorelockCore</a> { <a class="el" href="group__SceCpuKernel.html#gga7972593dbd2f5676f9da51b48f863f44aa1215885fec5761d71fed9f3d082abfe">SCE_CORELOCK_CORE0</a> = 0, 
-<a class="el" href="group__SceCpuKernel.html#gga7972593dbd2f5676f9da51b48f863f44a882cf4374b64a48b11e7424aa2f1dd53">SCE_CORELOCK_CORE1</a> = 1, 
-<a class="el" href="group__SceCpuKernel.html#gga7972593dbd2f5676f9da51b48f863f44a4a9431766f04c389bfa63075108ab5d7">SCE_CORELOCK_CORE2</a> = 2, 
-<a class="el" href="group__SceCpuKernel.html#gga7972593dbd2f5676f9da51b48f863f44a7ff2e9bf2db31045129716fb502214f9">SCE_CORELOCK_CORE3</a> = 3
- }</td></tr>
-<tr class="separator:ga7972593dbd2f5676f9da51b48f863f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -169,10 +159,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf609c6394e271c010838dbd33550a35b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b">ksceKernelCpuSpinLockIrqRestore</a> (int *addr, int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
 <tr class="memdesc:gaf609c6394e271c010838dbd33550a35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin-unlock and restore interrupt state.  <a href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b">More...</a><br /></td></tr>
 <tr class="separator:gaf609c6394e271c010838dbd33550a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66a0b185626e3a33792410e0e3b703b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga66a0b185626e3a33792410e0e3b703b5">ksceKernelCorelockContextInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
-<tr class="separator:ga66a0b185626e3a33792410e0e3b703b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf598bcb06ab29d54f67984f72edd9ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gadf598bcb06ab29d54f67984f72edd9ac">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, int core)</td></tr>
-<tr class="separator:gadf598bcb06ab29d54f67984f72edd9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97fec603f28a6c333e9469fcf1859abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga97fec603f28a6c333e9469fcf1859abb">ksceKernelCorelockInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
+<tr class="separator:ga97fec603f28a6c333e9469fcf1859abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> core)</td></tr>
+<tr class="separator:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59efe9a7590000a8317bf777c7e9b770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga59efe9a7590000a8317bf777c7e9b770">ksceKernelCorelockUnlock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
 <tr class="separator:ga59efe9a7590000a8317bf777c7e9b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

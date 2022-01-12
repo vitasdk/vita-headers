@@ -150,10 +150,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf609c6394e271c010838dbd33550a35b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b">ksceKernelCpuSpinLockIrqRestore</a> (int *addr, int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
 <tr class="memdesc:gaf609c6394e271c010838dbd33550a35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin-unlock and restore interrupt state.  <a href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b">More...</a><br /></td></tr>
 <tr class="separator:gaf609c6394e271c010838dbd33550a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66a0b185626e3a33792410e0e3b703b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga66a0b185626e3a33792410e0e3b703b5">ksceKernelCorelockContextInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
-<tr class="separator:ga66a0b185626e3a33792410e0e3b703b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf598bcb06ab29d54f67984f72edd9ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gadf598bcb06ab29d54f67984f72edd9ac">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, int core)</td></tr>
-<tr class="separator:gadf598bcb06ab29d54f67984f72edd9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97fec603f28a6c333e9469fcf1859abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga97fec603f28a6c333e9469fcf1859abb">ksceKernelCorelockInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
+<tr class="separator:ga97fec603f28a6c333e9469fcf1859abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> core)</td></tr>
+<tr class="separator:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59efe9a7590000a8317bf777c7e9b770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga59efe9a7590000a8317bf777c7e9b770">ksceKernelCorelockUnlock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
 <tr class="separator:ga59efe9a7590000a8317bf777c7e9b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -259,27 +259,6 @@ last_wait_core</td>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga7972593dbd2f5676f9da51b48f863f44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7972593dbd2f5676f9da51b48f863f44">&#9670;&nbsp;</a></span>SceCorelockCore</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceCpuKernel.html#ga7972593dbd2f5676f9da51b48f863f44">SceCorelockCore</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44aa1215885fec5761d71fed9f3d082abfe"></a>SCE_CORELOCK_CORE0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44a882cf4374b64a48b11e7424aa2f1dd53"></a>SCE_CORELOCK_CORE1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44a4a9431766f04c389bfa63075108ab5d7"></a>SCE_CORELOCK_CORE2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7972593dbd2f5676f9da51b48f863f44a7ff2e9bf2db31045129716fb502214f9"></a>SCE_CORELOCK_CORE3&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
@@ -861,14 +840,14 @@ last_wait_core</td>
 
 </div>
 </div>
-<a id="ga66a0b185626e3a33792410e0e3b703b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga66a0b185626e3a33792410e0e3b703b5">&#9670;&nbsp;</a></span>ksceKernelCorelockContextInitialize()</h2>
+<a id="ga97fec603f28a6c333e9469fcf1859abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97fec603f28a6c333e9469fcf1859abb">&#9670;&nbsp;</a></span>ksceKernelCorelockInitialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ksceKernelCorelockContextInitialize </td>
+          <td class="memname">void ksceKernelCorelockInitialize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
@@ -879,8 +858,8 @@ last_wait_core</td>
 
 </div>
 </div>
-<a id="gadf598bcb06ab29d54f67984f72edd9ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf598bcb06ab29d54f67984f72edd9ac">&#9670;&nbsp;</a></span>ksceKernelCorelockLock()</h2>
+<a id="ga9eeaceac9629151baafa9bcd7e37a971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9eeaceac9629151baafa9bcd7e37a971">&#9670;&nbsp;</a></span>ksceKernelCorelockLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -894,7 +873,7 @@ last_wait_core</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>core</em>&#160;</td>
         </tr>
         <tr>
