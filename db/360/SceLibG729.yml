@@ -1,0 +1,18 @@
+version: 2
+firmware: 3.60
+modules:
+  SceLibG729:
+    nid: 0xC1C50DCF
+    libraries:
+      SceG729:
+        kernel: false
+        nid: 0x9372381A
+        functions:
+          sceG729DecodeCore: 0x918BE529
+          sceG729DecodeGetContextSize: 0x57DB3ADD
+          sceG729DecodeInit: 0x7A74B98F
+          sceG729DecodeReset: 0x60C5F97E
+          sceG729EncodeCore: 0xFF57E664
+          sceG729EncodeGetContextSize: 0xFB053ABE
+          sceG729EncodeInit: 0xAB9DA641
+          sceG729EncodeReset: 0xA5B87504
