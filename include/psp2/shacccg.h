@@ -112,12 +112,12 @@ typedef struct SceShaccCgCompileOptions {
 	SceInt32 useFastmath;
 	SceInt32 useFastprecision;
 	SceInt32 useFastint;
+	int field_48;
 	SceInt32 warningsAsErrors;
 	SceInt32 performanceWarnings;
 	SceInt32 warningLevel;
 	SceInt32 pedantic;
 	SceInt32 pedanticError;
-	int field_5C;
 	int field_60;
 	int field_64;
 } SceShaccCgCompileOptions;
