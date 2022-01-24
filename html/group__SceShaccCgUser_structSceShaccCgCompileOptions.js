@@ -18,12 +18,12 @@ var group__SceShaccCgUser_structSceShaccCgCompileOptions =
     [ "useFastmath", "group__SceShaccCgUser.html#ga46d584193b77e6c300a8e867fa643d96", null ],
     [ "useFastprecision", "group__SceShaccCgUser.html#ga50921401d5d1b52650dbc085f018542b", null ],
     [ "useFastint", "group__SceShaccCgUser.html#ga72972308ead1c2a5cf4c55aeeb5b6c39", null ],
+    [ "field_48", "group__SceShaccCgUser.html#ga3ecd63f4b8f43658658662b7c3b20385", null ],
     [ "warningsAsErrors", "group__SceShaccCgUser.html#gaf9ab5b935d0a3986f75f684212721530", null ],
     [ "performanceWarnings", "group__SceShaccCgUser.html#ga3a895e72825d760eee477a4ae16b38a2", null ],
     [ "warningLevel", "group__SceShaccCgUser.html#gae839d0d4a79bce67615bae1698f5eb94", null ],
     [ "pedantic", "group__SceShaccCgUser.html#ga21aea2248e05edf178e87661c3f6b745", null ],
     [ "pedanticError", "group__SceShaccCgUser.html#ga34fa585b6fd33c1bed2dfad0d1859e6c", null ],
-    [ "field_5C", "group__SceShaccCgUser.html#ga0f7f37ac0e53e81d1e918cb197b1a6f3", null ],
     [ "field_60", "group__SceShaccCgUser.html#gad732015f70b7f41ed8f149552f2710cb", null ],
     [ "field_64", "group__SceShaccCgUser.html#gaf55862cdd7d14d61ccc625e4a14e3798", null ]
 ];
