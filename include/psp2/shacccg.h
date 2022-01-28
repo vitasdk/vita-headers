@@ -153,6 +153,10 @@ void sceShaccCgInitializeCallbackList(
 void sceShaccCgDestroyCompileOutput(
 	SceShaccCgCompileOutput const *output);
 
+void sceShaccCgReleaseCompiler(void);
+
+const char *sceShaccCgGetVersionString(void);
+
 #ifdef	__cplusplus
 }
 #endif	/* __cplusplus */
