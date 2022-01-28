@@ -35,5 +35,7 @@ var group__SceShaccCgUser =
     [ "sceShaccCgCompileProgram", "group__SceShaccCgUser.html#ga1171b9fde099c54e21ae1f18d4f6c250", null ],
     [ "sceShaccCgSetDefaultAllocator", "group__SceShaccCgUser.html#ga1c8466c51cd2158fd9898e688f25c923", null ],
     [ "sceShaccCgInitializeCallbackList", "group__SceShaccCgUser.html#gad6a68198587c2540a25d1ef1292e00d4", null ],
-    [ "sceShaccCgDestroyCompileOutput", "group__SceShaccCgUser.html#gac5cfea60e2d1b8b8bd19efa1fb1f5847", null ]
+    [ "sceShaccCgDestroyCompileOutput", "group__SceShaccCgUser.html#gac5cfea60e2d1b8b8bd19efa1fb1f5847", null ],
+    [ "sceShaccCgReleaseCompiler", "group__SceShaccCgUser.html#ga2943a1111df9df5a45115fc4f66a8d98", null ],
+    [ "sceShaccCgGetVersionString", "group__SceShaccCgUser.html#gad4fcd5059a5c3370724b149d2f476d51", null ]
 ];

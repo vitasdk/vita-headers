@@ -27,6 +27,8 @@ var shacccg_8h =
     [ "sceShaccCgSetDefaultAllocator", "group__SceShaccCgUser.html#ga1c8466c51cd2158fd9898e688f25c923", null ],
     [ "sceShaccCgInitializeCallbackList", "group__SceShaccCgUser.html#gad6a68198587c2540a25d1ef1292e00d4", null ],
     [ "sceShaccCgDestroyCompileOutput", "group__SceShaccCgUser.html#gac5cfea60e2d1b8b8bd19efa1fb1f5847", null ],
+    [ "sceShaccCgReleaseCompiler", "group__SceShaccCgUser.html#ga2943a1111df9df5a45115fc4f66a8d98", null ],
+    [ "sceShaccCgGetVersionString", "group__SceShaccCgUser.html#gad4fcd5059a5c3370724b149d2f476d51", null ],
     [ "SceShaccCgCallbackLocateFile", "group__SceShaccCgUser.html#ga383e04601f1a589c07393d6f3cdce570", null ],
     [ "SceShaccCgCallbackAbsolutePath", "group__SceShaccCgUser.html#ga6f478de5cf3d7bcd657384fa709e354b", null ]
 ];
