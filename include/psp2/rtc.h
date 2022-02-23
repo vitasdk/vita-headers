@@ -305,16 +305,12 @@ int _sceRtcFormatRFC3339(char *datetime, const SceRtcTick *utc, int offset, SceU
  */
 int _sceRtcFormatRFC3339LocalTime(char *datetime, const SceRtcTick *utc, SceUInt64 *a3);
 
-int _sceRtcGetCurrentAdNetworkTick(SceRtcTick *tick);
-int _sceRtcGetCurrentClock(SceDateTime *time, int time_zone);
-int _sceRtcGetCurrentClockLocalTime(SceDateTime *time);
-int _sceRtcGetCurrentDebugNetworkTick(SceRtcTick *tick);
-int _sceRtcGetCurrentGpsTick(SceRtcTick *tick);
-int _sceRtcGetCurrentNetworkTick(SceRtcTick *tick);
-int _sceRtcGetCurrentRetainedNetworkTick(SceRtcTick *tick);
-int _sceRtcGetCurrentTick(SceRtcTick *tick);
-int _sceRtcGetLastAdjustedTick(SceRtcTick *tick);
-int _sceRtcGetLastReincarnatedTick(SceRtcTick *tick);
+int sceRtcGetCurrentAdNetworkTick(SceRtcTick *tick);
+int sceRtcGetCurrentDebugNetworkTick(SceRtcTick *tick);
+int sceRtcGetCurrentGpsTick(SceRtcTick *tick);
+int sceRtcGetCurrentRetainedNetworkTick(SceRtcTick *tick);
+int sceRtcGetLastAdjustedTick(SceRtcTick *tick);
+int sceRtcGetLastReincarnatedTick(SceRtcTick *tick);
 SceULong64 sceRtcGetAccumulativeTime(void);
 
 #ifdef __cplusplus
