@@ -101,7 +101,6 @@ SceUInt64 sceKernelGetProcessTimeWide(void);
 
 SceUID sceKernelGetCurrentProcess(void);
 SceInt32 sceKernelGetRemoteProcessTime(SceUID processId, SceKernelSysClock *pClock);
-int _sceKernelExitProcessForUser(SceInt32 stat);
 
 SceUID sceKernelGetStderr(void);
 SceUID sceKernelGetStdin(void);
