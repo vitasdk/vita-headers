@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-int _sceSblACMgrIsGameProgram(void);
+SceInt32 sceSblACMgrIsGameProgram(SceBool *result);
 
 #ifdef __cplusplus
 }

@@ -563,14 +563,13 @@ typedef struct SceAppMgrCoredumpState {
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrGetCoredumpStateForShell(SceAppMgrCoredumpState *state);
+int sceAppMgrGetCoredumpStateForShell(SceAppMgrCoredumpState *state);
 
 // missing structs
 typedef struct SceAppMgrDrmOpenParam SceAppMgrDrmOpenParam;
 typedef struct SceAppMgrAppInfo SceAppMgrAppInfo;
 
-SceInt32 __sceAppMgrGetAppState(SceAppMgrAppState *state, SceSize state_size, SceUInt32 build_version);
-SceInt32 _sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *param, SceSize *syscall_validity);
+SceInt32 sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *param);
 
 /**
  * Get AppInfo via syscall directly
@@ -581,8 +580,7 @@ SceInt32 _sceAppMgrDrmOpen(const SceAppMgrDrmOpenParam *param, SceSize *syscall_
  *
  * @return 0 on success, < 0 on error.
  */
-SceInt32 _sceAppMgrGetAppInfo(const char *unk, SceAppMgrAppState *state, SceUInt64 *syscall_validity);
-SceInt32 _sceAppMgrReceiveSystemEvent(SceAppMgrSystemEvent *system_event);
+SceInt32 sceAppMgrGetAppInfo(const char *unk, SceAppMgrAppState *state);
 
 #ifdef __cplusplus
 }
