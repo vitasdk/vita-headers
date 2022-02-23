@@ -31,7 +31,6 @@ var kernel_2processmgr_8h =
     [ "sceKernelGetProcessTimeWide", "group__SceProcessmgrUser.html#ga2c53e1020ff30c2e0700818a5cb48bed", null ],
     [ "sceKernelGetCurrentProcess", "group__SceProcessmgrUser.html#gae2ddcd7d5fc792254c6ceb4b3f94ef8e", null ],
     [ "sceKernelGetRemoteProcessTime", "group__SceProcessmgrUser.html#gaf22c650c2af8502654f1377215b41c1e", null ],
-    [ "_sceKernelExitProcessForUser", "group__SceProcessmgrUser.html#ga81b10c8bdeb98dc1f1782a9d7b7e19a1", null ],
     [ "sceKernelGetStderr", "group__SceProcessmgrUser.html#gab38fe0fad51a7082476a8f45c2dcb74f", null ],
     [ "sceKernelGetStdin", "group__SceProcessmgrUser.html#gaca5042f4a41a131e4cbc3cd5574d02fb", null ],
     [ "sceKernelGetStdout", "group__SceProcessmgrUser.html#ga4fbcd594d41dd94430d79e9ac6ee8f6b", null ],

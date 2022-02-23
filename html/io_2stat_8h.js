@@ -72,11 +72,5 @@ var io_2stat_8h =
     [ "sceIoGetstat", "group__SceStatUser.html#ga4e3afddc6b738ae99872eb74eb70a509", null ],
     [ "sceIoGetstatByFd", "group__SceStatUser.html#gaa0a12c50241cb6fd705c8e569163fb33", null ],
     [ "sceIoChstat", "group__SceStatUser.html#ga89361a511354826e6ac54ff587368e33", null ],
-    [ "sceIoChstatByFd", "group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39", null ],
-    [ "_sceIoMkdir", "group__SceStatUser.html#ga5012b12f5ed36b6b87ee47b97dd544d5", null ],
-    [ "_sceIoRmdir", "group__SceStatUser.html#gae3f6e8bbb507da431bc710fadd651423", null ],
-    [ "_sceIoChstat", "group__SceStatUser.html#gad2477c5e877a81c8a04c7425e5c6a07a", null ],
-    [ "_sceIoChstatByFd", "group__SceStatUser.html#ga0d5261369d7aeb850d7f08aa077e040d", null ],
-    [ "_sceIoGetstat", "group__SceStatUser.html#ga4eb9dc248b89a4340177a1ab40369e1f", null ],
-    [ "_sceIoGetstatByFd", "group__SceStatUser.html#gaec9cff41a12fd4a9714c0d052be19ee0", null ]
+    [ "sceIoChstatByFd", "group__SceStatUser.html#ga97db4dbfd789bc92aa7e1eb7ffefed39", null ]
 ];

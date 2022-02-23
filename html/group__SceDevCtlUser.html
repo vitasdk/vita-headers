@@ -98,10 +98,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga71371e769022cfa0eac4fa7003c9c94a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDevCtlUser.html#ga71371e769022cfa0eac4fa7003c9c94a">sceIoIoctlAsync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, unsigned int cmd, void *indata, int inlen, void *outdata, int outlen)</td></tr>
 <tr class="memdesc:ga71371e769022cfa0eac4fa7003c9c94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an ioctl on a device.  <a href="group__SceDevCtlUser.html#ga71371e769022cfa0eac4fa7003c9c94a">More...</a><br /></td></tr>
 <tr class="separator:ga71371e769022cfa0eac4fa7003c9c94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8303c01027b32b38e5c14fd63c0567a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDevCtlUser.html#ga8303c01027b32b38e5c14fd63c0567a2">_sceIoDevctl</a> (const char *devname, int cmd, const void *arg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arglen)</td></tr>
-<tr class="separator:ga8303c01027b32b38e5c14fd63c0567a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7341b459e72bcd36a8d80feb1230054b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDevCtlUser.html#ga7341b459e72bcd36a8d80feb1230054b">_sceIoIoctl</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, int cmd, const void *argp, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arglen)</td></tr>
-<tr class="separator:ga7341b459e72bcd36a8d80feb1230054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceIoDevInfo" id="structSceIoDevInfo"></a>
@@ -345,86 +341,6 @@ unk</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga8303c01027b32b38e5c14fd63c0567a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8303c01027b32b38e5c14fd63c0567a2">&#9670;&nbsp;</a></span>_sceIoDevctl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceIoDevctl </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>devname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>arglen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7341b459e72bcd36a8d80feb1230054b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7341b459e72bcd36a8d80feb1230054b">&#9670;&nbsp;</a></span>_sceIoIoctl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _sceIoIoctl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>argp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
-          <td class="paramname"><em>arglen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

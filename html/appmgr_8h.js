@@ -77,9 +77,7 @@ var appmgr_8h =
     [ "_sceAppMgrGetRawPath", "group__SceAppMgrUser.html#gabebda48556d7943e1ce1ec6e7ab101b1", null ],
     [ "_sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gaaa1cb4ce2b82b943ccb118a32864ce53", null ],
     [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ],
-    [ "_sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#ga6f604761a40085666f9b396b33c09b0f", null ],
-    [ "__sceAppMgrGetAppState", "group__SceAppMgrUser.html#gaecb239cc221ef43a9e771baf38245f50", null ],
-    [ "_sceAppMgrDrmOpen", "group__SceAppMgrUser.html#gacd81560a4e5b392712aa14d5dc94b126", null ],
-    [ "_sceAppMgrGetAppInfo", "group__SceAppMgrUser.html#ga4b58fb1097a53a1312f89ef11fbb4d31", null ],
-    [ "_sceAppMgrReceiveSystemEvent", "group__SceAppMgrUser.html#gaa75ab0309c48fbde7a0ce50ef24c22d2", null ]
+    [ "sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#gadecd3cffc716ace8256b449c641d30f1", null ],
+    [ "sceAppMgrDrmOpen", "group__SceAppMgrUser.html#gaf20938bf3dadaf5dcebea9d2ea951437", null ],
+    [ "sceAppMgrGetAppInfo", "group__SceAppMgrUser.html#gaa2aa1c4b980b813bc9f981618f78b731", null ]
 ];

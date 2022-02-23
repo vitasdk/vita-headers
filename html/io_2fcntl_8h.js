@@ -83,12 +83,5 @@ var io_2fcntl_8h =
     [ "sceIoGetThreadDefaultPriority", "group__SceFcntlUser.html#gafb126f69ec4cec10b747188106f1c35b", null ],
     [ "sceIoSetPriority", "group__SceFcntlUser.html#ga31edb0fd8c5fedc14812c8431a10459b", null ],
     [ "sceIoSetProcessDefaultPriority", "group__SceFcntlUser.html#gaba9f55beafb920306110db63c1be2230", null ],
-    [ "sceIoSetThreadDefaultPriority", "group__SceFcntlUser.html#ga4ff4d80689f2db43ccc1e41b406d6a8b", null ],
-    [ "_sceIoLseek", "group__SceFcntlUser.html#ga5f186bcbc722ea4f5a39d734770d06e5", null ],
-    [ "_sceIoPread", "group__SceFcntlUser.html#gaf02d99562bee9e5e380e2560d3a27ab2", null ],
-    [ "_sceIoPwrite", "group__SceFcntlUser.html#gae41a94e20de95a8276e36c4ad051add2", null ],
-    [ "_sceIoOpen", "group__SceFcntlUser.html#ga4621a4cbb450c7c2dae7a8d05260bdbe", null ],
-    [ "_sceIoSync", "group__SceFcntlUser.html#ga0571550673e7b3b13b0a9ecc23fc0456", null ],
-    [ "_sceIoRemove", "group__SceFcntlUser.html#ga02ee4c51235b5e8fd1ee644507b938f5", null ],
-    [ "_sceIoRename", "group__SceFcntlUser.html#gaf546a3e21049ed74eaf4d315d5852472", null ]
+    [ "sceIoSetThreadDefaultPriority", "group__SceFcntlUser.html#ga4ff4d80689f2db43ccc1e41b406d6a8b", null ]
 ];
