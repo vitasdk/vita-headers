@@ -85,6 +85,11 @@ typedef enum SceSysmoduleModuleId {
 	SCE_SYSMODULE_MARLIN_DOWNLOADER     = 0x003B, //!< Marlin Downloader module
 	SCE_SYSMODULE_MARLIN_APP_LIB        = 0x003C, //!< Marlin AppLib module
 	SCE_SYSMODULE_TELEPHONY_UTIL        = 0x003D, //!< TelephonyUtil module
+	SCE_SYSMODULE_SHACCCG               = 0x003E, //!< ShaccCg module
+	SCE_SYSMODULE_MONO_BRIDGE           = 0x003F, //!< Mono bridge module
+	SCE_SYSMODULE_MONO                  = 0x0040, //!< Mono module
+	SCE_SYSMODULE_PSM                   = 0x0041, //!< Psm module
+	SCE_SYSMODULE_PSM_DEVAGENT          = 0x0042, //!< Psm devagent module
 	SCE_SYSMODULE_PSPNET_ADHOC          = 0x0043, //!< PSPNet Adhoc module
 	SCE_SYSMODULE_DTCP_IP               = 0x0044, //!< DTCP/IP module
 	SCE_SYSMODULE_VIDEO_SEARCH_EMPR     = 0x0045, //!< VideoSearch module
