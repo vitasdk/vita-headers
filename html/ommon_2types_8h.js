@@ -3,6 +3,7 @@ var ommon_2types_8h =
     [ "SCE_KERNEL_THREAD_ID_SELF", "group__SceTypesKernel.html#gaf856fa38304053971aa4b7db3ab8dabd", null ],
     [ "SCE_KERNEL_PROCESS_ID_SELF", "group__SceTypesKernel.html#gae50a711d10b726734d4b4d27295ff0e2", null ],
     [ "SCE_UID_NAMELEN", "group__SceTypesKernel.html#ga2582b3509efd06e62a9b6f79a6cf82e2", null ],
+    [ "SCE_OK", "group__SceTypesKernel.html#gafd29545ae2bc8c87ffe18d84f6244f1a", null ],
     [ "SceChar8", "group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6", null ],
     [ "SceUChar8", "group__SceTypesKernel.html#gafce19396d4bbb28f5ac214f322232809", null ],
     [ "SceInt8", "group__SceTypesKernel.html#gaf23aaf582950952963327ff859721173", null ],
