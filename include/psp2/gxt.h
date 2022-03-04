@@ -15,7 +15,6 @@ extern "C" {
 
 /** GXT error codes */
 typedef enum SceGxtErrorCode {
-	SCE_OK                          = 0,
 	SCE_GXT_ERROR_INVALID_VALUE     = 0x805D0000,
 	SCE_GXT_ERROR_INVALID_POINTER   = 0x805D0001,
 	SCE_GXT_ERROR_INVALID_ALIGNMENT = 0x805D0002
