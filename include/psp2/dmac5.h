@@ -12,106 +12,114 @@
 extern "C" {
 #endif
 
-/*
- * Basic
- */
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x0            (0x0)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x1            (0x1)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x2            (0x2)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x4            (0x4)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x8            (0x8)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x10           (0x10)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x20           (0x20)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x100          (0x100)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x200          (0x200)
-#define SCE_SBL_DMAC5_COMMAND_BASIC_0x300          (0x300)
 
-/*
- * stdc
- */
-#define SCE_SBL_DMAC5_COMMAND_MEMCPY               (SCE_SBL_DMAC5_COMMAND_BASIC_0x0)
-#define SCE_SBL_DMAC5_COMMAND_MEMSET               (SCE_SBL_DMAC5_COMMAND_BASIC_0x4 | SCE_SBL_DMAC5_COMMAND_BASIC_0x8)
+typedef struct SceSblDmac5EncDecParam { // size is 0x18-bytes
+	const void *src; //<! The operation input buffer
+	void *dst;       //<! The operation output buffer
+	SceSize length;  //<! The src data length
+	const void *key; //<! The key data
+	SceSize keysize; //<! The key size in bits
+	void *iv;        //<! The initialization vector
+} SceSblDmac5EncDecParam;
 
-/*
- * Random number generator
- */
-#define SCE_SBL_DMAC5_COMMAND_RNG                  (SCE_SBL_DMAC5_COMMAND_BASIC_0x4)
+typedef struct SceSblDmac5HashTransformContext { // size is 0x28-bytes
+	SceUInt32 state[8];
+	SceUInt64 length;
+} SceSblDmac5HashTransformContext;
 
-/*
- * Secure hash algorithm
- */
-#define SCE_SBL_DMAC5_COMMAND_SHA                  (SCE_SBL_DMAC5_COMMAND_BASIC_0x1 | SCE_SBL_DMAC5_COMMAND_BASIC_0x2)
-#define SCE_SBL_DMAC5_COMMAND_HASH_BIT_SIZE_SHA1   (SCE_SBL_DMAC5_COMMAND_BASIC_0x0  & 0x18)
-#define SCE_SBL_DMAC5_COMMAND_HASH_BIT_SIZE_SHA224 (SCE_SBL_DMAC5_COMMAND_BASIC_0x8  & 0x18)
-#define SCE_SBL_DMAC5_COMMAND_HASH_BIT_SIZE_SHA256 (SCE_SBL_DMAC5_COMMAND_BASIC_0x10 & 0x18)
-#define SCE_SBL_DMAC5_COMMAND_SHA1                 (SCE_SBL_DMAC5_COMMAND_SHA | SCE_SBL_DMAC5_COMMAND_HASH_BIT_SIZE_SHA1)
-#define SCE_SBL_DMAC5_COMMAND_SHA224               (SCE_SBL_DMAC5_COMMAND_SHA | SCE_SBL_DMAC5_COMMAND_HASH_BIT_SIZE_SHA224)
-#define SCE_SBL_DMAC5_COMMAND_SHA256               (SCE_SBL_DMAC5_COMMAND_SHA | SCE_SBL_DMAC5_COMMAND_HASH_BIT_SIZE_SHA256)
-
-#define SCE_SBL_DMAC5_COMMAND_HMAC_SHA             (SCE_SBL_DMAC5_COMMAND_BASIC_0x20)
-#define SCE_SBL_DMAC5_COMMAND_HMAC_SHA1            (SCE_SBL_DMAC5_COMMAND_HMAC_SHA | SCE_SBL_DMAC5_COMMAND_SHA1)
-#define SCE_SBL_DMAC5_COMMAND_HMAC_SHA224          (SCE_SBL_DMAC5_COMMAND_HMAC_SHA | SCE_SBL_DMAC5_COMMAND_SHA224)
-#define SCE_SBL_DMAC5_COMMAND_HMAC_SHA256          (SCE_SBL_DMAC5_COMMAND_HMAC_SHA | SCE_SBL_DMAC5_COMMAND_SHA256)
-
-/*
- * AES
- */
-#define SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128     (SCE_SBL_DMAC5_COMMAND_BASIC_0x100 & 0x300)
-#define SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192     (SCE_SBL_DMAC5_COMMAND_BASIC_0x200 & 0x300)
-#define SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256     (SCE_SBL_DMAC5_COMMAND_BASIC_0x300 & 0x300)
-
-#define SCE_SBL_DMAC5_COMMAND_AES_ECB_ENC          (SCE_SBL_DMAC5_COMMAND_BASIC_0x1)
-#define SCE_SBL_DMAC5_COMMAND_AES_ECB_DEC          (SCE_SBL_DMAC5_COMMAND_BASIC_0x2)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_ECB_ENC      (SCE_SBL_DMAC5_COMMAND_AES_ECB_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_ECB_DEC      (SCE_SBL_DMAC5_COMMAND_AES_ECB_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_ECB_ENC      (SCE_SBL_DMAC5_COMMAND_AES_ECB_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_ECB_DEC      (SCE_SBL_DMAC5_COMMAND_AES_ECB_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_ECB_ENC      (SCE_SBL_DMAC5_COMMAND_AES_ECB_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_ECB_DEC      (SCE_SBL_DMAC5_COMMAND_AES_ECB_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-
-#define SCE_SBL_DMAC5_COMMAND_AES_CBC              (SCE_SBL_DMAC5_COMMAND_BASIC_0x8)
-#define SCE_SBL_DMAC5_COMMAND_AES_CBC_ENC          (SCE_SBL_DMAC5_COMMAND_AES_CBC | SCE_SBL_DMAC5_COMMAND_AES_ECB_ENC)
-#define SCE_SBL_DMAC5_COMMAND_AES_CBC_DEC          (SCE_SBL_DMAC5_COMMAND_AES_CBC | SCE_SBL_DMAC5_COMMAND_AES_ECB_DEC)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_CBC_ENC      (SCE_SBL_DMAC5_COMMAND_AES_CBC_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_CBC_DEC      (SCE_SBL_DMAC5_COMMAND_AES_CBC_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_CBC_ENC      (SCE_SBL_DMAC5_COMMAND_AES_CBC_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_CBC_DEC      (SCE_SBL_DMAC5_COMMAND_AES_CBC_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_CBC_ENC      (SCE_SBL_DMAC5_COMMAND_AES_CBC_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_CBC_DEC      (SCE_SBL_DMAC5_COMMAND_AES_CBC_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-
-#define SCE_SBL_DMAC5_COMMAND_AES_CTR              (SCE_SBL_DMAC5_COMMAND_BASIC_0x10)
-#define SCE_SBL_DMAC5_COMMAND_AES_CTR_ENC          (SCE_SBL_DMAC5_COMMAND_AES_CTR | SCE_SBL_DMAC5_COMMAND_AES_ECB_ENC)
-#define SCE_SBL_DMAC5_COMMAND_AES_CTR_DEC          (SCE_SBL_DMAC5_COMMAND_AES_CTR | SCE_SBL_DMAC5_COMMAND_AES_ECB_DEC)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_CTR_ENC      (SCE_SBL_DMAC5_COMMAND_AES_CTR_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_CTR_DEC      (SCE_SBL_DMAC5_COMMAND_AES_CTR_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_CTR_ENC      (SCE_SBL_DMAC5_COMMAND_AES_CTR_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_CTR_DEC      (SCE_SBL_DMAC5_COMMAND_AES_CTR_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_CTR_ENC      (SCE_SBL_DMAC5_COMMAND_AES_CTR_ENC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_CTR_DEC      (SCE_SBL_DMAC5_COMMAND_AES_CTR_DEC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-
-#define SCE_SBL_DMAC5_COMMAND_AES_CMAC             (SCE_SBL_DMAC5_COMMAND_BASIC_0x1 | SCE_SBL_DMAC5_COMMAND_BASIC_0x2 | SCE_SBL_DMAC5_COMMAND_BASIC_0x8 | SCE_SBL_DMAC5_COMMAND_BASIC_0x10 | SCE_SBL_DMAC5_COMMAND_BASIC_0x20)
-#define SCE_SBL_DMAC5_COMMAND_AES_128_CMAC         (SCE_SBL_DMAC5_COMMAND_AES_CMAC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_128)
-#define SCE_SBL_DMAC5_COMMAND_AES_192_CMAC         (SCE_SBL_DMAC5_COMMAND_AES_CMAC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_192)
-#define SCE_SBL_DMAC5_COMMAND_AES_256_CMAC         (SCE_SBL_DMAC5_COMMAND_AES_CMAC | SCE_SBL_DMAC5_COMMAND_AES_BIT_SIZE_256)
-
-typedef struct SceDmac5EncDecParam {
-	const void *src;
-	void       *dst;
-	SceSize     size;
-	const void *key;
-	SceSize     key_bit_size;
-	void       *iv;
-} SceDmac5EncDecParam;
+typedef struct SceSblDmac5HashTransformParam { // size is 0x18-bytes
+	const void *src; //<! The operation input buffer
+	void *dst;       //<! The operation output buffer
+	SceSize length;  //<! The src data length
+	const void *key; //<! The key data
+	SceSize keysize; //<! The key size in bits
+	void *ctx;       //<! SceSblDmac5HashTransformContext Or another context of size 0x10-bytes
+} SceSblDmac5HashTransformParam;
 
 /**
- * @brief Execute DMAC5 command
+ * @brief Execute DMAC5 encdec command
  *
  * @param[inout] param   - The encdec param.
- * @param[in]    command - The DMAC5 command. See:SCE_SBL_DMAC5_COMMAND_*
+ * @param[in]    command - The DMAC5 encdec command.
  *
  * @return 0 on success, else < 0.
  */
-int sceSblDmac5EncDec(SceDmac5EncDecParam *param, int command);
+int sceSblDmac5EncDec(SceSblDmac5EncDecParam *param, SceUInt32 command);
+
+
+/**
+ * @brief Execute DMAC5 hash transform command
+ *
+ * @param[inout] param   - The encdec param.
+ * @param[in]    command - The DMAC5 hash base command.
+ * @param[in]    extra   - The DMAC5 extra command.
+ *
+ * @return 0 on success, else < 0.
+ */
+int sceSblDmac5HashTransform(SceSblDmac5HashTransformParam *param, SceUInt32 command, SceUInt32 extra);
+
+
+static inline int sceSblDmac5AesCbcEnc(const void *src, void *dst, SceSize length, const void *key, SceSize keysize, void *iv)
+{
+	SceSblDmac5EncDecParam param = {.src = src, .dst = dst, .length = length, .key = key, .keysize = keysize, .iv = iv};
+
+	return sceSblDmac5EncDec(
+		&param,
+		1 | 8 | (((keysize << 2) - 0x100) & 0x300)
+	);
+}
+
+static inline int sceSblDmac5AesCbcDec(const void *src, void *dst, SceSize length, const void *key, SceSize keysize, void *iv)
+{
+	SceSblDmac5EncDecParam param = {.src = src, .dst = dst, .length = length, .key = key, .keysize = keysize, .iv = iv};
+
+	return sceSblDmac5EncDec(
+		&param,
+		2 | 8 | (((keysize << 2) - 0x100) & 0x300)
+	);
+}
+
+static inline int sceSblDmac5AesCtrEnc(const void *src, void *dst, SceSize length, const void *key, SceSize keysize, void *iv)
+{
+	SceSblDmac5EncDecParam param = {.src = src, .dst = dst, .length = length, .key = key, .keysize = keysize, .iv = iv};
+
+	return sceSblDmac5EncDec(
+		&param,
+		1 | 0x20 | (((keysize << 2) - 0x100) & 0x300)
+	);
+}
+
+static inline int sceSblDmac5AesCtrDec(const void *src, void *dst, SceSize length, const void *key, SceSize keysize, void *iv)
+{
+	SceSblDmac5EncDecParam param = {.src = src, .dst = dst, .length = length, .key = key, .keysize = keysize, .iv = iv};
+
+	return sceSblDmac5EncDec(
+		&param,
+		2 | 0x20 | (((keysize << 2) - 0x100) & 0x300)
+	);
+}
+
+static inline int sceSblDmac5Sha256Digest(const void *src, void *dst, SceSize length)
+{
+	SceSblDmac5HashTransformContext ctx;
+	SceSblDmac5HashTransformParam param = {.src = src, .dst = dst, .length = length, .key = NULL, .keysize = 0, .ctx = &ctx};
+
+	ctx.state[0] = __builtin_bswap32(0x6a09e667);
+	ctx.state[1] = __builtin_bswap32(0xbb67ae85);
+	ctx.state[2] = __builtin_bswap32(0x3c6ef372);
+	ctx.state[3] = __builtin_bswap32(0xa54ff53a);
+	ctx.state[4] = __builtin_bswap32(0x510e527f);
+	ctx.state[5] = __builtin_bswap32(0x9b05688c);
+	ctx.state[6] = __builtin_bswap32(0x1f83d9ab);
+	ctx.state[7] = __builtin_bswap32(0x5be0cd19);
+	ctx.length = 0LL;
+
+	return sceSblDmac5HashTransform(
+		&param,
+		3 | 0x10, 0x800
+	);
+}
+
 
 #ifdef __cplusplus
 }
