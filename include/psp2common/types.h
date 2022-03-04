@@ -191,6 +191,9 @@ typedef struct SceDateTime {
 } SceDateTime;
 
 
+#define SCE_OK (0)
+
+
 #ifdef __cplusplus
 }
 #endif
