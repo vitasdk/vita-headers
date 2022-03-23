@@ -1451,6 +1451,8 @@ void sceGxmSetBackVisibilityTestOp(SceGxmContext *context, SceGxmVisibilityTestO
 void sceGxmSetFrontVisibilityTestEnable(SceGxmContext *context, SceGxmVisibilityTestMode enable);
 void sceGxmSetBackVisibilityTestEnable(SceGxmContext *context, SceGxmVisibilityTestMode enable);
 
+int sceGxmSetYuvProfile(SceGxmContext *context, unsigned int index, SceGxmYuvProfile profile);
+
 void sceGxmFinish(SceGxmContext *context);
 
 int sceGxmPushUserMarker(SceGxmContext *context, const char *tag);
