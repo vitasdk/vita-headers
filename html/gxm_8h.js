@@ -1043,6 +1043,7 @@ var gxm_8h =
     [ "sceGxmSetBackVisibilityTestOp", "group__SceGxmUser.html#ga9cb0bd0adc9ef4a7807cadfa0b4bd1c4", null ],
     [ "sceGxmSetFrontVisibilityTestEnable", "group__SceGxmUser.html#gab1ff61ef023553fc5d16d1b19b5bdef6", null ],
     [ "sceGxmSetBackVisibilityTestEnable", "group__SceGxmUser.html#gace6fb8549094b397c4620a5230cddb72", null ],
+    [ "sceGxmSetYuvProfile", "group__SceGxmUser.html#ga23530fccf15b61136e090a4b8b708d9e", null ],
     [ "sceGxmFinish", "group__SceGxmUser.html#ga71ca45f4da92231417ed116e143a0746", null ],
     [ "sceGxmPushUserMarker", "group__SceGxmUser.html#ga756bcded1fa8119b6e10717041534f96", null ],
     [ "sceGxmPopUserMarker", "group__SceGxmUser.html#ga372be24a237c0d5d7762a332a117602f", null ],
