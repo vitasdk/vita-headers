@@ -313,6 +313,25 @@ int sceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info);
  */
 int sceKernelGetThreadRunStatus(SceUID thid, SceKernelThreadRunStatus *status);
 
+/**
+ * Retrive the cpu affinity mask of a thread.
+ *
+ * @param thid - UID of the thread to retrieve affinity mask for.
+ *
+ * @return current affinity mask if >= 0, otherwise the error code.
+ */
+int sceKernelGetThreadCpuAffinityMask(SceUID thid);
+
+/**
+ * Set the cpu affinity mask of a thread.
+ *
+ * @param thid - UID of the thread to retrieve affinity mask for.
+ * @param mask - New cpu affinity mask.
+ *
+ * @return 0 if successful, otherwise the error code.
+ */
+int sceKernelChangeThreadCpuAffinityMask(SceUID thid, int mask);
+
 
 /* Semaphores. */
 
