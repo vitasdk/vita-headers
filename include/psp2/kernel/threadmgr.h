@@ -8,6 +8,10 @@
 #define _PSP2_KERNEL_THREADMGR_H_
 
 #include <psp2/types.h>
+#include <psp2/kernel/cpu.h>
+
+/** Inherit calling thread affinity mask. */
+#define SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT (0)
 
 #ifdef __cplusplus
 extern "C" {
@@ -125,6 +129,16 @@ typedef enum SceKernelMutexAttribute {
  * @param stackSize - The size of the initial stack.
  * @param attr - The thread attributes, zero or more of ::SceThreadAttributes.
  * @param cpuAffinityMask - The CPU affinity mask
+ *                          A thread can run only on the cores specified in the CPU affinity mask.
+ *                          The CPU affinity mask can be specified by the logical sum of the following macros:
+ *                          - SCE_KERNEL_CPU_MASK_USER_0
+ *                          - SCE_KERNEL_CPU_MASK_USER_1
+ *                          - SCE_KERNEL_CPU_MASK_USER_2
+ *                          - SCE_KERNEL_CPU_MASK_SYSTEM (system-reserved core)
+ *                          The following macro are also available to represent all available in userland CPU cores:
+ *                          - SCE_KERNEL_CPU_MASK_USER_ALL
+ *                          The following macro are also available to inherit affinity mask of the calling thread:
+ *                          - SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT
  * @param option - Additional options specified by ::SceKernelThreadOptParam.
 
  * @return UID of the created thread, or an error code.
