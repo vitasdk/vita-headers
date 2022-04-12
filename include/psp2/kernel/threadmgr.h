@@ -214,12 +214,12 @@ int sceKernelDelayThreadCB(SceUInt delay);
 /**
  * Modify the attributes of the current thread.
  *
- * @param unknown - Set to 0.
- * @param attr - The thread attributes to modify.  One of ::SceThreadAttributes.
+ * @param clearAttr - The thread attributes to clear.  One of ::SceThreadAttributes.
+ * @param setAttr - The thread attributes to set.  One of ::SceThreadAttributes.
  *
  * @return < 0 on error.
  */
-int sceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
+int sceKernelChangeCurrentThreadAttr(SceUInt clearAttr, SceUInt setAttr);
 
 /**
   * Change the threads current priority.
