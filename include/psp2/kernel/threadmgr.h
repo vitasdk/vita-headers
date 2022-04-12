@@ -137,7 +137,7 @@ typedef enum SceKernelMutexAttribute {
  *                          - SCE_KERNEL_CPU_MASK_SYSTEM (system-reserved core)
  *                          The following macro are also available to represent all available in userland CPU cores:
  *                          - SCE_KERNEL_CPU_MASK_USER_ALL
- *                          The following macro are also available to inherit affinity mask of the calling thread:
+ *                          The following macro are also available to inherit affinity mask of the calling process:
  *                          - SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT
  * @param option - Additional options specified by ::SceKernelThreadOptParam.
 
