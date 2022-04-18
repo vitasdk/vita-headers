@@ -80,17 +80,26 @@ $(document).ready(function(){initNavTree('kernel_2cpu_8h_source.html',''); initR
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _PSP2_KERNEL_CPU_H_</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _PSP2_KERNEL_CPU_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceCpuUser.html#ga2505822a5e77c5a885beab743dac2a10">sceKernelGetCpuId</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_CPU_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="group__SceCpuUser.html#ga8c14240b401edbdad9b2c2ee7855c479">   10</a></span>&#160;<span class="preprocessor">#define SCE_KERNEL_CPU_MASK_USER_0  0x00010000</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="group__SceCpuUser.html#ga7f9e058206fd87c5f869c072747a13d9">   11</a></span>&#160;<span class="preprocessor">#define SCE_KERNEL_CPU_MASK_USER_1  0x00020000</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="group__SceCpuUser.html#gab131da8b01b1abdb4f8c41de66368d3d">   12</a></span>&#160;<span class="preprocessor">#define SCE_KERNEL_CPU_MASK_USER_2  0x00040000</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="group__SceCpuUser.html#ga92796fbfabc36479edd3191681b4b53e">   13</a></span>&#160;<span class="preprocessor">#define SCE_KERNEL_CPU_MASK_SYSTEM  0x00080000</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="group__SceCpuUser.html#ga2b1b8d77bef37b159180e6e7bcf038cd">   15</a></span>&#160;<span class="preprocessor">#define SCE_KERNEL_CPU_MASK_USER_ALL    \</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">                        (SCE_KERNEL_CPU_MASK_USER_0 | SCE_KERNEL_CPU_MASK_USER_1 | SCE_KERNEL_CPU_MASK_USER_2)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceCpuUser.html#ga2505822a5e77c5a885beab743dac2a10">sceKernelGetCpuId</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_CPU_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__SceCpuUser_html_ga2505822a5e77c5a885beab743dac2a10"><div class="ttname"><a href="group__SceCpuUser.html#ga2505822a5e77c5a885beab743dac2a10">sceKernelGetCpuId</a></div><div class="ttdeci">int sceKernelGetCpuId(void)</div></div>

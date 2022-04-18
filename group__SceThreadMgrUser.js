@@ -1,5 +1,6 @@
 var group__SceThreadMgrUser =
 [
+    [ "SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT", "group__SceThreadMgrUser.html#ga187ec3703b6e03f0c898fdd45d674802", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e", null ],
     [ "SceThreadStatus", "group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40", [
@@ -124,7 +125,7 @@ var group__SceThreadMgrUser =
     [ "sceKernelWaitThreadEndCB", "group__SceThreadMgrUser.html#gab384737a3374b8443aa44a3b072c2231", null ],
     [ "sceKernelDelayThread", "group__SceThreadMgrUser.html#ga76893a433dee550c0b7be52d807e62a8", null ],
     [ "sceKernelDelayThreadCB", "group__SceThreadMgrUser.html#ga7b51417e5999e727715379282cc2bf8b", null ],
-    [ "sceKernelChangeCurrentThreadAttr", "group__SceThreadMgrUser.html#gaf951d0cf8f791972e4b467e16042364c", null ],
+    [ "sceKernelChangeCurrentThreadAttr", "group__SceThreadMgrUser.html#ga64c505023beb8d6f92685c581c54c371", null ],
     [ "sceKernelChangeThreadPriority", "group__SceThreadMgrUser.html#ga9495237d122769ed5ea5c6f2c6285e43", null ],
     [ "sceKernelGetThreadId", "group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7", null ],
     [ "sceKernelGetProcessId", "group__SceThreadMgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b", null ],
@@ -134,6 +135,8 @@ var group__SceThreadMgrUser =
     [ "sceKernelGetThreadStackFreeSize", "group__SceThreadMgrUser.html#gafee4714c33cfa560511663e4110e1f9d", null ],
     [ "sceKernelGetThreadInfo", "group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591", null ],
     [ "sceKernelGetThreadRunStatus", "group__SceThreadMgrUser.html#ga01b86d2c4e22ae44ff7dc9607196cc17", null ],
+    [ "sceKernelGetThreadCpuAffinityMask", "group__SceThreadMgrUser.html#ga5de221c854aa569a479e29d22699ca35", null ],
+    [ "sceKernelChangeThreadCpuAffinityMask", "group__SceThreadMgrUser.html#gab1abca32320ddd682c7c3b5ac413af1b", null ],
     [ "sceKernelCreateSema", "group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad", null ],
     [ "sceKernelDeleteSema", "group__SceThreadMgrUser.html#gabfae2ae4f32fd9b1ffdfbb7ddd4af114", null ],
     [ "sceKernelSignalSema", "group__SceThreadMgrUser.html#gab81b0362839d7f9cbdcbf64305e7e603", null ],
