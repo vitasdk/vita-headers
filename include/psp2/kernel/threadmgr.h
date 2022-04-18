@@ -8,6 +8,10 @@
 #define _PSP2_KERNEL_THREADMGR_H_
 
 #include <psp2/types.h>
+#include <psp2/kernel/cpu.h>
+
+/** Inherit calling thread affinity mask. */
+#define SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT (0)
 
 #ifdef __cplusplus
 extern "C" {
@@ -125,6 +129,16 @@ typedef enum SceKernelMutexAttribute {
  * @param stackSize - The size of the initial stack.
  * @param attr - The thread attributes, zero or more of ::SceThreadAttributes.
  * @param cpuAffinityMask - The CPU affinity mask
+ *                          A thread can run only on the cores specified in the CPU affinity mask.
+ *                          The CPU affinity mask can be specified by the logical sum of the following macros:
+ *                          - SCE_KERNEL_CPU_MASK_USER_0
+ *                          - SCE_KERNEL_CPU_MASK_USER_1
+ *                          - SCE_KERNEL_CPU_MASK_USER_2
+ *                          - SCE_KERNEL_CPU_MASK_SYSTEM (system-reserved core)
+ *                          The following macro are also available to represent all available in userland CPU cores:
+ *                          - SCE_KERNEL_CPU_MASK_USER_ALL
+ *                          The following macro are also available to inherit affinity mask of the calling process:
+ *                          - SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT
  * @param option - Additional options specified by ::SceKernelThreadOptParam.
 
  * @return UID of the created thread, or an error code.
@@ -214,12 +228,12 @@ int sceKernelDelayThreadCB(SceUInt delay);
 /**
  * Modify the attributes of the current thread.
  *
- * @param unknown - Set to 0.
- * @param attr - The thread attributes to modify.  One of ::SceThreadAttributes.
+ * @param clearAttr - The thread attributes to clear.  One of ::SceThreadAttributes.
+ * @param setAttr - The thread attributes to set.  One of ::SceThreadAttributes.
  *
  * @return < 0 on error.
  */
-int sceKernelChangeCurrentThreadAttr(int unknown, SceUInt attr);
+int sceKernelChangeCurrentThreadAttr(SceUInt clearAttr, SceUInt setAttr);
 
 /**
   * Change the threads current priority.
@@ -312,6 +326,25 @@ int sceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info);
  * @return 0 if successful, otherwise the error code.
  */
 int sceKernelGetThreadRunStatus(SceUID thid, SceKernelThreadRunStatus *status);
+
+/**
+ * Retrive the cpu affinity mask of a thread.
+ *
+ * @param thid - UID of the thread to retrieve affinity mask for.
+ *
+ * @return current affinity mask if >= 0, otherwise the error code.
+ */
+int sceKernelGetThreadCpuAffinityMask(SceUID thid);
+
+/**
+ * Set the cpu affinity mask of a thread.
+ *
+ * @param thid - UID of the thread to retrieve affinity mask for.
+ * @param mask - New cpu affinity mask.
+ *
+ * @return 0 if successful, otherwise the error code.
+ */
+int sceKernelChangeThreadCpuAffinityMask(SceUID thid, int mask);
 
 
 /* Semaphores. */
