@@ -13,8 +13,11 @@
 extern "C" {
 #endif
 
-typedef struct SceCreateUidObjOpt {
-	SceUInt32 flags;
+typedef struct SceGUIDKernelCreateOpt {
+	union {
+		SceUInt32 flags;
+		SceUInt32 attr;
+	};
 	SceUInt32 field_4;
 	SceUInt32 field_8;
 	SceUInt32 pid;
@@ -22,7 +25,7 @@ typedef struct SceCreateUidObjOpt {
 	SceUInt32 field_14;
 	SceUInt32 field_18;
 	SceUInt32 field_1C;
-} SceCreateUidObjOpt;
+} SceGUIDKernelCreateOpt;
 
 /*
  * Create a GUID object that belongs to the target process id
@@ -35,18 +38,16 @@ typedef struct SceCreateUidObjOpt {
  *
  * @return GUID on success, < 0 on error.
  */
-SceUID ksceKernelCreateUidObj(SceClass *sce_class, const char *name, SceCreateUidObjOpt *opt, SceObjectBase **obj);
+SceUID ksceGUIDKernelCreateWithOpt(SceClass *sce_class, const char *name, SceGUIDKernelCreateOpt *opt, SceObjectBase **obj);
 
 /*
- * Close GUID (Remove GUID)
+ * Close GUID (Inactive GUID)
  *
  * @param[in] guid - The remove target guid.
  *
  * @return 0 on success, < 0 on error.
  */
 int ksceGUIDClose(SceUID guid);
-
-#define ksceKernelDeleteUid(guid) ksceGUIDClose(guid)
 
 /**
  * Gets an object from a UID.
@@ -73,8 +74,6 @@ int ksceGUIDReferObject(SceUID guid, SceObjectBase **object);
  * @return 0 on success, < 0 on error.
  */
 int ksceGUIDReferObjectWithClass(SceUID guid, SceClass *sce_class, SceObjectBase **object);
-
-#define ksceKernelGetObjForUid(guid, sce_class, object) ksceGUIDReferObjectWithClass(guid, sce_class, object)
 
 /**
  * Gets an object from a UID with class and level.
@@ -104,7 +103,27 @@ int ksceGUIDReferObjectWithClassLevel(SceUID guid, SceClass *pClass, SceUInt32 l
  */
 int ksceGUIDReleaseObject(SceUID guid);
 
+/**
+ * Get created GUID vectors.
+ *
+ * @param[in]  cls       - The Class.
+ * @param[in]  vis_level - The Visible level.
+ * @param[out] vector    - The GUID vector output.
+ * @param[in]  num       - The GUID vector max number.
+ * @param[out] ret_num   - The GUID vector result number.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceGUIDGetUIDVectorByClass(SceClass *cls, int vis_level, SceUID *vector, SceSize num, SceSize *ret_num);
+
+
+typedef SceGUIDKernelCreateOpt SceCreateUidObjOpt;
+
+#define ksceKernelCreateUidObj(sce_class, name, opt, obj) ksceGUIDKernelCreateWithOpt(sce_class, name, opt, obj)
+#define ksceKernelDeleteUid(guid) ksceGUIDClose(guid)
+#define ksceKernelGetObjForUid(guid, sce_class, object) ksceGUIDReferObjectWithClass(guid, sce_class, object)
 #define ksceKernelUidRelease(guid) ksceGUIDReleaseObject(guid)
+
 
 #ifdef __cplusplus
 }
