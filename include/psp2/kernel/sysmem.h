@@ -8,26 +8,11 @@
 #define _PSP2_KERNEL_SYSMEM_H_
 
 #include <psp2/types.h>
+#include <psp2common/kernel/sysmem.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef enum SceKernelMemBlockType {
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE          = 0x0C208060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_RX                  = 0x0C20D050,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_RW                  = 0x0C20D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_GAME_RW        = 0x0C50D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW     = 0x0C80D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_CDIALOG_NC_RW  = 0x0CA08060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_CDIALOG_RW     = 0x0CA0D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_NC_RW          = 0x0CF08060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_RW             = 0x0CF0D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW  = 0x0D808060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDIALOG_NC_RW       = 0x0E208060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDIALOG_RW          = 0x0E20D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW            = 0x09408060
-} SceKernelMemBlockType;
 
 typedef enum SceKernelAllocMemBlockAttr {
 	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT      = 0x00000004U
@@ -61,7 +46,7 @@ typedef struct SceKernelMemBlockInfo {
 	SceSize mappedSize;
 	int memoryType;
 	SceUInt32 access;
-	SceKernelMemBlockType type;
+	SceUInt32 type;
 } SceKernelMemBlockInfo;
 
 typedef enum SceKernelMemoryAccessType {
@@ -79,13 +64,13 @@ typedef enum SceKernelMemoryType {
  * Allocates a new memory block
  *
  * @param[in] name - Name for the memory block
- * @param[in] type - Type of the memory to allocate
+ * @param[in] type - Type of the memory to allocate. Use `SCE_KERNEL_MEMBLOCK_TYPE_USER_*`.
  * @param[in] size - Size of the memory to allocate
  * @param[in] opt  - Memory block options?
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockOpt *opt);
+SceUID sceKernelAllocMemBlock(const char *name, SceUInt32 type, SceSize size, SceKernelAllocMemBlockOpt *opt);
 
 /**
  * Frees new memory block
