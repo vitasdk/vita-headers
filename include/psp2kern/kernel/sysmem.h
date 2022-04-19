@@ -15,23 +15,11 @@
 #include <psp2kern/kernel/sysmem/mmu.h>
 #include <psp2kern/kernel/debug.h>
 #include <psp2kern/kernel/sysroot.h>
+#include <psp2common/kernel/sysmem.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef enum SceKernelMemBlockType {
-	SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX                = 0x0390D050,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW            = 0x09408060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE          = 0x0C208060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_RX                  = 0x0C20D050,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_RW                  = 0x0C20D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW     = 0x0C80D060,
-	SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW  = 0x0D808060,
-	SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX                = 0x1020D005,
-	SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW                = 0x1020D006,
-	SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0                  = 0x6020D006
-} SceKernelMemBlockType;
 
 typedef enum SceKernelAllocMemBlockAttr {
 	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR          = 0x00000002U,
@@ -88,13 +76,13 @@ typedef enum SceKernelModel {
  * Allocates a new memory block
  *
  * @param[in] name - Name for the memory block
- * @param[in] type - Type of the memory to allocate
+ * @param[in] type - Type of the memory to allocate. Use `SCE_KERNEL_MEMBLOCK_TYPE_USER_*` or `SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_*`.
  * @param[in] size - Size of the memory to allocate
  * @param[in] opt  - Memory block options?
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
+SceUID ksceKernelAllocMemBlock(const char *name, SceUInt32 type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
 
 /**
  * Frees new memory block
@@ -154,7 +142,7 @@ SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize 
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
+int ksceKernelRemapBlock(SceUID uid, SceUInt32 type);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
 
