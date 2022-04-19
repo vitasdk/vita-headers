@@ -75,6 +75,7 @@ $(document).ready(function(){initNavTree('uid__guid_8h.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">uid_guid.h File Reference</div>  </div>
@@ -87,11 +88,15 @@ $(document).ready(function(){initNavTree('uid__guid_8h.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:structSceCreateUidObjOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#structSceCreateUidObjOpt">SceCreateUidObjOpt</a></td></tr>
-<tr class="separator:structSceCreateUidObjOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceGUIDKernelCreateOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt">SceGUIDKernelCreateOpt</a></td></tr>
+<tr class="separator:structSceGUIDKernelCreateOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionSceGUIDKernelCreateOpt_8____unnamed____"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#unionSceGUIDKernelCreateOpt_8____unnamed____">SceGUIDKernelCreateOpt.__unnamed__</a></td></tr>
+<tr class="separator:unionSceGUIDKernelCreateOpt_8____unnamed____"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga9f25b3a80d09c4c6f59050e6b0ec8a46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga9f25b3a80d09c4c6f59050e6b0ec8a46">ksceKernelCreateUidObj</a>(sce_class,  name,  opt,  obj)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gabdaaa14b059b34333d73a0cb2bfffbbe">ksceGUIDKernelCreateWithOpt</a>(sce_class, name, opt, obj)</td></tr>
+<tr class="separator:ga9f25b3a80d09c4c6f59050e6b0ec8a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62c12d9054d205c482e2fe5c289ca5b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga62c12d9054d205c482e2fe5c289ca5b0">ksceKernelDeleteUid</a>(guid)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga3560fcd0b87493976abd1c98ef758d75">ksceGUIDClose</a>(guid)</td></tr>
 <tr class="separator:ga62c12d9054d205c482e2fe5c289ca5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97f721bf7dbec767df4ff9b5a2bfb5b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga97f721bf7dbec767df4ff9b5a2bfb5b1">ksceKernelGetObjForUid</a>(guid,  sce_class,  object)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga46d6d6fb3156f9297f7bcc8bb9b381be">ksceGUIDReferObjectWithClass</a>(guid, sce_class, object)</td></tr>
@@ -99,10 +104,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ga278aec66fa415ac3e8cb51e61b10770f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga278aec66fa415ac3e8cb51e61b10770f">ksceKernelUidRelease</a>(guid)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga20bce130c9ee8926441445710d024818">ksceGUIDReleaseObject</a>(guid)</td></tr>
 <tr class="separator:ga278aec66fa415ac3e8cb51e61b10770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga83e12570c9cf837b46227303b71a2789"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt">SceGUIDKernelCreateOpt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga83e12570c9cf837b46227303b71a2789">SceCreateUidObjOpt</a></td></tr>
+<tr class="separator:ga83e12570c9cf837b46227303b71a2789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf81dcd950e3b512e328a86e44e2332d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaf81dcd950e3b512e328a86e44e2332d2">ksceKernelCreateUidObj</a> (<a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *sce_class, const char *name, <a class="el" href="group__SceSysmemKernel.html#structSceCreateUidObjOpt">SceCreateUidObjOpt</a> *opt, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **obj)</td></tr>
-<tr class="separator:gaf81dcd950e3b512e328a86e44e2332d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdaaa14b059b34333d73a0cb2bfffbbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gabdaaa14b059b34333d73a0cb2bfffbbe">ksceGUIDKernelCreateWithOpt</a> (<a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *sce_class, const char *name, <a class="el" href="group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt">SceGUIDKernelCreateOpt</a> *opt, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **obj)</td></tr>
+<tr class="separator:gabdaaa14b059b34333d73a0cb2bfffbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3560fcd0b87493976abd1c98ef758d75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3560fcd0b87493976abd1c98ef758d75">ksceGUIDClose</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid)</td></tr>
 <tr class="separator:ga3560fcd0b87493976abd1c98ef758d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada9cde72216a40f8977a33778f6485f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gada9cde72216a40f8977a33778f6485f0">ksceGUIDReferObject</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **object)</td></tr>
@@ -117,6 +127,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga20bce130c9ee8926441445710d024818"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga20bce130c9ee8926441445710d024818">ksceGUIDReleaseObject</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid)</td></tr>
 <tr class="memdesc:ga20bce130c9ee8926441445710d024818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases an object referenced by the UID.  <a href="group__SceSysmemKernel.html#ga20bce130c9ee8926441445710d024818">More...</a><br /></td></tr>
 <tr class="separator:ga20bce130c9ee8926441445710d024818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeee5e7842a0d79b192ef60bb27b58afd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd">ksceGUIDGetUIDVectorByClass</a> (<a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *cls, int vis_level, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *vector, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *ret_num)</td></tr>
+<tr class="memdesc:gaeee5e7842a0d79b192ef60bb27b58afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get created GUID vectors.  <a href="group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd">More...</a><br /></td></tr>
+<tr class="separator:gaeee5e7842a0d79b192ef60bb27b58afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
