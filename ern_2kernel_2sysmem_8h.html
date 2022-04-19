@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h.html',''); init
 <code>#include &lt;<a class="el" href="mmu_8h_source.html">psp2kern/kernel/sysmem/mmu.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="debug_8h_source.html">psp2kern/kernel/debug.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sysroot_8h_source.html">psp2kern/kernel/sysroot.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ommon_2kernel_2sysmem_8h_source.html">psp2common/kernel/sysmem.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2kernel_2sysmem_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,38 +108,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaaa2a5b0a0ae74026d992a82e4f80b6be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaaa2a5b0a0ae74026d992a82e4f80b6be">SceKernelMemBlockType</a> { <br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaeca8b415e3bad84099b6d12522dab59c">SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE</a> = 0x0C208060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea370483a05caf142c3ba9c89d7a53c330">SCE_KERNEL_MEMBLOCK_TYPE_USER_RX</a> = 0x0C20D050, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea41f3c507da32c8086ce2706a8ee31aea">SCE_KERNEL_MEMBLOCK_TYPE_USER_RW</a> = 0x0C20D060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaae8a82b1cef2f0a2597d62b160a08dc1">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_GAME_RW</a> = 0x0C50D060, 
-<br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea5b9509788415fa82adda621b60aef389">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW</a> = 0x0C80D060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea59591a726472733a883f190f0f874d02">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_CDIALOG_NC_RW</a> = 0x0CA08060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beae8356a661ba5e52287ae07f443cf7c23">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_CDIALOG_RW</a> = 0x0CA0D060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beab10247cc59c0bd59a51a14081c38f573">SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_NC_RW</a> = 0x0CF08060, 
-<br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea893244b3d10e41eb77f409afaf7f0695">SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_RW</a> = 0x0CF0D060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beab643fa23488d6ca0ca07d79b2b320635">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW</a> = 0x0D808060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beac98039c003d9896d857af8f90ad4e600">SCE_KERNEL_MEMBLOCK_TYPE_USER_CDIALOG_NC_RW</a> = 0x0E208060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beab721c178bc1df5cf8c53ec72b0d1a53d">SCE_KERNEL_MEMBLOCK_TYPE_USER_CDIALOG_RW</a> = 0x0E20D060, 
-<br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea77fa4f121ca487acd5dcf2b3e6042251">SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW</a> = 0x09408060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea7f3574a66c5c9435aec944fe5b3ebe92">SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX</a> = 0x0390D050, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea77fa4f121ca487acd5dcf2b3e6042251">SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW</a> = 0x09408060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaeca8b415e3bad84099b6d12522dab59c">SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE</a> = 0x0C208060, 
-<br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea370483a05caf142c3ba9c89d7a53c330">SCE_KERNEL_MEMBLOCK_TYPE_USER_RX</a> = 0x0C20D050, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea41f3c507da32c8086ce2706a8ee31aea">SCE_KERNEL_MEMBLOCK_TYPE_USER_RW</a> = 0x0C20D060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea5b9509788415fa82adda621b60aef389">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW</a> = 0x0C80D060, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beab643fa23488d6ca0ca07d79b2b320635">SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW</a> = 0x0D808060, 
-<br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea06b94c70d909e644b0e814d4c8673264">SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX</a> = 0x1020D005, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6bea7b7cd86a2f950a06a1b6f22e55b16acf">SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW</a> = 0x1020D006, 
-<a class="el" href="group__SceSysmemKernel.html#ggaaa2a5b0a0ae74026d992a82e4f80b6beaa5bad95a632fd506903225fdb0ce621e">SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0</a> = 0x6020D006
-<br />
- }</td></tr>
-<tr class="separator:gaaa2a5b0a0ae74026d992a82e4f80b6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e4b4287824bdc72a51b05c7ef583076"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076">SceKernelAllocMemBlockAttr</a> { <br />
 &#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT</a> = 0x00000004U, 
 <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR</a> = 0x00000002U, 
@@ -173,9 +142,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4ee63e9e66f9a196d0d613bc9327df31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31">ksceKernelAllocMemBlock</a> (const char *name, <a class="el" href="group__SceSysmemUser.html#gaaa2a5b0a0ae74026d992a82e4f80b6be">SceKernelMemBlockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, <a class="el" href="group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt">SceKernelAllocMemBlockKernelOpt</a> *opt)</td></tr>
-<tr class="memdesc:ga4ee63e9e66f9a196d0d613bc9327df31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a new memory block.  <a href="group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31">More...</a><br /></td></tr>
-<tr class="separator:ga4ee63e9e66f9a196d0d613bc9327df31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19bec212f4939b88a95ca47854075f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga19bec212f4939b88a95ca47854075f8d">ksceKernelAllocMemBlock</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, <a class="el" href="group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt">SceKernelAllocMemBlockKernelOpt</a> *opt)</td></tr>
+<tr class="memdesc:ga19bec212f4939b88a95ca47854075f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a new memory block.  <a href="group__SceSysmemKernel.html#ga19bec212f4939b88a95ca47854075f8d">More...</a><br /></td></tr>
+<tr class="separator:ga19bec212f4939b88a95ca47854075f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga113d062740f0c07bbef0587a23e163f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1">ksceKernelFreeMemBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="memdesc:ga113d062740f0c07bbef0587a23e163f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees new memory block.  <a href="group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1">More...</a><br /></td></tr>
 <tr class="separator:ga113d062740f0c07bbef0587a23e163f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,9 +160,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeef2a3961f1b1ea68057a05003113404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeef2a3961f1b1ea68057a05003113404">ksceKernelFindMemBlockByAddrForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const void *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="memdesc:gaeef2a3961f1b1ea68057a05003113404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the SceUID of a memory block for a PID.  <a href="group__SceSysmemKernel.html#gaeef2a3961f1b1ea68057a05003113404">More...</a><br /></td></tr>
 <tr class="separator:gaeef2a3961f1b1ea68057a05003113404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad43b8bc5f01d6bf319108edababd2e33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33">ksceKernelRemapBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceSysmemUser.html#gaaa2a5b0a0ae74026d992a82e4f80b6be">SceKernelMemBlockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
-<tr class="memdesc:gad43b8bc5f01d6bf319108edababd2e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the block type.  <a href="group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33">More...</a><br /></td></tr>
-<tr class="separator:gad43b8bc5f01d6bf319108edababd2e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f5ec8fdd5041d4314d240f5a086ba78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga4f5ec8fdd5041d4314d240f5a086ba78">ksceKernelRemapBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memdesc:ga4f5ec8fdd5041d4314d240f5a086ba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the block type.  <a href="group__SceSysmemKernel.html#ga4f5ec8fdd5041d4314d240f5a086ba78">More...</a><br /></td></tr>
+<tr class="separator:ga4f5ec8fdd5041d4314d240f5a086ba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac45b79af14718bc342b116b9149289c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac45b79af14718bc342b116b9149289c8">ksceKernelMapBlockUserVisible</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="separator:gac45b79af14718bc342b116b9149289c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c662718634d19870883187b0cd331dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3c662718634d19870883187b0cd331dc">ksceKernelMapUserBlock</a> (const char *name, int permission, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, const void *user_buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, void **kernel_page, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *kernel_size, unsigned int *kernel_offset)</td></tr>
