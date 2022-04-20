@@ -46,7 +46,7 @@ typedef struct SceKernelMemBlockInfo {
 	SceSize mappedSize;
 	int memoryType;
 	SceUInt32 access;
-	SceUInt32 type;
+	SceKernelMemBlockType type;
 } SceKernelMemBlockInfo;
 
 typedef enum SceKernelMemoryAccessType {
@@ -70,7 +70,7 @@ typedef enum SceKernelMemoryType {
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID sceKernelAllocMemBlock(const char *name, SceUInt32 type, SceSize size, SceKernelAllocMemBlockOpt *opt);
+SceUID sceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockOpt *opt);
 
 /**
  * Frees new memory block
