@@ -71,10 +71,7 @@ var memtype_8h =
     [ "SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_UNK_60208014_NC_R", "group__SceSysmemKernel.html#gac594e0da7a6bce688c85dee65a17c90e", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_UNK_60208016_NC_RW", "group__SceSysmemKernel.html#ga4d381aec36364cf190b627d698eba8d8", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_SHARED_RX", "group__SceSysmemKernel.html#ga9382219508a105872c8493efec6a5c93", null ],
-    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW", "group__SceSysmemKernel.html#ga72ed7714bf791e58d0a3c76102efa472", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_RX", "group__SceSysmemKernel.html#gaa5559b71af108aad5756741e3597da3e", null ],
-    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_RW", "group__SceSysmemKernel.html#gaa961e859dbf0ae63a032694707238112", null ],
-    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_PHYCONT_NC_RW", "group__SceSysmemKernel.html#ga072eb4fec86475245da8e9dea2253899", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RX", "group__SceSysmemKernel.html#ga1cf7304571b0626d6ddcd77cc6f923bc", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_KERNEL_RW", "group__SceSysmemKernel.html#gafd73f0c90cabf98b773285f6ae6c4864", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_RW_UNK0", "group__SceSysmemKernel.html#ga3a45dfeb201adb546fa59914cdb49494", null ]
