@@ -12,6 +12,7 @@
 extern "C" {
 #endif
 
+typedef SceUInt32 SceKernelMemBlockType;
 
 /*
  * User/Kernel shared memtypes
