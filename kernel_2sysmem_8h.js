@@ -25,7 +25,7 @@ var kernel_2sysmem_8h =
       [ "SCE_KERNEL_MEMORY_TYPE_NORMAL_NC", "group__SceSysmemUser.html#ggad5653766a0ced763eb2301a5d698697da467a3b95bff3406789e5c5a01b0a2e48", null ],
       [ "SCE_KERNEL_MEMORY_TYPE_NORMAL", "group__SceSysmemUser.html#ggad5653766a0ced763eb2301a5d698697da298498bb570db5602f7d4217807adade", null ]
     ] ],
-    [ "sceKernelAllocMemBlock", "group__SceSysmemUser.html#gac0d46aacf6ba44d82dbcb7c372d128cf", null ],
+    [ "sceKernelAllocMemBlock", "group__SceSysmemUser.html#ga6f4fd5dc592c7e7a907225196160b597", null ],
     [ "sceKernelFreeMemBlock", "group__SceSysmemUser.html#ga938f751bb400cc057976e3239cbe88e4", null ],
     [ "sceKernelGetMemBlockBase", "group__SceSysmemUser.html#ga0deb1afb4bce53a13963b2ec693d1bac", null ],
     [ "sceKernelFindMemBlockByAddr", "group__SceSysmemUser.html#gaa6160548f7e6df4e4b92734da3a29573", null ],

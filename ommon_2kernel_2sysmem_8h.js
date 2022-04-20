@@ -20,5 +20,6 @@ var ommon_2kernel_2sysmem_8h =
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_CDIALOG_NC_RW", "group__SceSysmemKernel.html#ga218a1d6822b9b918210d2f067412a1e0", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE", "group__SceSysmemKernel.html#ga32d28ea9eddc4f37fff039969492e3aa", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_RW", "group__SceSysmemKernel.html#ga67bb0fa1dc7426a6aad0bf0bb41697b2", null ],
-    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_NC_RW", "group__SceSysmemKernel.html#gabfbcc49487dfca84ec33e8752a0bdbf6", null ]
+    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_NC_RW", "group__SceSysmemKernel.html#gabfbcc49487dfca84ec33e8752a0bdbf6", null ],
+    [ "SceKernelMemBlockType", "group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571", null ]
 ];
