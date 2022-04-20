@@ -82,7 +82,7 @@ typedef enum SceKernelModel {
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID ksceKernelAllocMemBlock(const char *name, SceUInt32 type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
+SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
 
 /**
  * Frees new memory block
@@ -142,7 +142,7 @@ SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize 
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelRemapBlock(SceUID uid, SceUInt32 type);
+int ksceKernelRemapBlock(SceUID uid, SceKernelMemBlockType type);
 
 int ksceKernelMapBlockUserVisible(SceUID uid);
 
