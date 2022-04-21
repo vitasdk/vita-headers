@@ -6,7 +6,7 @@
 #ifndef _PSP2_AVCODEC_JPEGENC_H_
 #define _PSP2_AVCODEC_JPEGENC_H_
 
-#include <psp2/types.h>
+#include <psp2kern/types.h>
 
 typedef void *SceJpegEncoderContext;
 
