@@ -1,6 +1,6 @@
 var NAVTREEINDEX73 =
 {
-"group__SceSysmemKernel.html#gaf7a3e92e5e0501590bf549487ec472a3":[1,7,10,1,73],
+"group__SceSysmemKernel.html#gaf9340d9cf939170ea6d8052e227bc307":[4,0,1,2,2,1,2,12],
 "group__SceSysmemKernel.html#gafa6166dafb22e592a629a6ffc7e451ee":[1,7,10,1,195],
 "group__SceSysmemKernel.html#gafa6166dafb22e592a629a6ffc7e451ee":[4,0,1,2,2,20,17],
 "group__SceSysmemKernel.html#gafb0725eb40e829f1ea28bfcbb8d8fad7":[1,7,10,1,36],

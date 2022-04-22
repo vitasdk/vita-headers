@@ -187,8 +187,8 @@ var NAVTREEINDEX71 =
 "group__SceSysmemKernel.html#ga1940288651419e73d3260af5f9d9769f":[4,0,1,2,2,1,2,61],
 "group__SceSysmemKernel.html#ga1a666280f06c9ccfe84782f9577af2c7":[1,7,10,1,40],
 "group__SceSysmemKernel.html#ga1a666280f06c9ccfe84782f9577af2c7":[4,0,1,2,2,1,2,10],
-"group__SceSysmemKernel.html#ga1abc42422ed6fdd79c415bad2bd8c068":[4,0,1,2,2,1,2,19],
-"group__SceSysmemKernel.html#ga1abc42422ed6fdd79c415bad2bd8c068":[1,7,10,1,49],
+"group__SceSysmemKernel.html#ga1abc42422ed6fdd79c415bad2bd8c068":[1,7,10,1,53],
+"group__SceSysmemKernel.html#ga1abc42422ed6fdd79c415bad2bd8c068":[4,0,1,2,2,1,2,23],
 "group__SceSysmemKernel.html#ga1cf7304571b0626d6ddcd77cc6f923bc":[4,0,1,2,2,1,2,72],
 "group__SceSysmemKernel.html#ga1cf7304571b0626d6ddcd77cc6f923bc":[1,7,10,1,102],
 "group__SceSysmemKernel.html#ga1d08cf0a1dc1804d7ae09763c8aab190":[4,0,1,2,2,1,3,2],
@@ -247,7 +247,7 @@ var NAVTREEINDEX71 =
 "group__SceSysmemKernel.html#ga371fe1e41a8d06e5a6658ad8910742ec":[4,0,1,2,2,1,0,14],
 "group__SceSysmemKernel.html#ga38d77788e8d299204966deb69e523193":[4,0,1,2,2,1,2,38],
 "group__SceSysmemKernel.html#ga38d77788e8d299204966deb69e523193":[1,7,10,1,68],
-"group__SceSysmemKernel.html#ga3a45dfeb201adb546fa59914cdb49494":[1,7,10,1,104],
-"group__SceSysmemKernel.html#ga3a45dfeb201adb546fa59914cdb49494":[4,0,1,2,2,1,2,74],
-"group__SceSysmemKernel.html#ga3ae1e4e7ce1e10abab4c36467d7cc9a4":[4,0,1,2,2,1,5,9]
+"group__SceSysmemKernel.html#ga391ee0e0cb3f73dee7e9bc4deb3f802a":[4,0,1,2,2,1,2,14],
+"group__SceSysmemKernel.html#ga391ee0e0cb3f73dee7e9bc4deb3f802a":[1,7,10,1,44],
+"group__SceSysmemKernel.html#ga3a45dfeb201adb546fa59914cdb49494":[1,7,10,1,104]
 };

@@ -3,7 +3,7 @@ var ommon_2kernel_2sysmem_8h =
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_L1WBWA_RW", "group__SceSysmemKernel.html#ga9352829effdc513cbfbcd9b90779a2cf", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_R", "group__SceSysmemKernel.html#ga3f9cbe55d57484bf623c6cb88694cf44", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW", "group__SceSysmemKernel.html#ga72ed7714bf791e58d0a3c76102efa472", null ],
-    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_UNK_0C200860_RW", "group__SceSysmemKernel.html#ga8c72baf43481cf298a437d29be7fbd14", null ],
+    [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_DEVICE_RW", "group__SceSysmemKernel.html#ga3e0b5b52da732b4cd16095c1bbce3e25", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_R", "group__SceSysmemKernel.html#ga85b46e6f0f63ddee53eaa78bbbf54d37", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_RW", "group__SceSysmemKernel.html#ga5eb45b06e7ccf3a13f4913ac237281ff", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_MAIN_NC_RW", "group__SceSysmemKernel.html#ga1e3a30258fcd0f61b6b485110f0eb872", null ],
