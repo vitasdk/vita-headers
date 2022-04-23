@@ -3,8 +3,8 @@
  * \usage{psp2kern/avcodec/jpegenc.h,SceAvcodecForDriver_stub}
  */
 
-#ifndef _PSP2_AVCODEC_JPEGENC_H_
-#define _PSP2_AVCODEC_JPEGENC_H_
+#ifndef _PSP2_KERNEL_AVCODEC_JPEGENC_H_
+#define _PSP2_KERNEL_AVCODEC_JPEGENC_H_
 
 #include <psp2kern/types.h>
 
