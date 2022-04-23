@@ -118,5 +118,5 @@ SceInt32 sceNetCheckDialogTerm(void);
 }
 #endif
 
-#endif
+#endif /* _PSP2_NETCHECK_DIALOG_H_ */
 

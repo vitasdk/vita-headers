@@ -53,4 +53,4 @@ int ksceKernelFindClassByName(const char *name, SceClass **cls);
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_UID_CLASS_H_ */

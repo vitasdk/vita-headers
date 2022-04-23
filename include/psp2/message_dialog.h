@@ -199,5 +199,5 @@ int sceMsgDialogProgressBarSetMsg( SceMsgDialogProgressBarTarget target, const S
 }
 #endif
 
-#endif
+#endif /* _PSP2_MSG_DIALOG_H_ */
 

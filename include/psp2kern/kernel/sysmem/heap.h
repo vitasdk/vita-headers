@@ -114,4 +114,4 @@ int ksceKernelFree(void *ptr);
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_HEAP_H_ */

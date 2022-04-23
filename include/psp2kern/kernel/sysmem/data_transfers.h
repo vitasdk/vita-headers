@@ -268,4 +268,4 @@ int ksceKernelProcUserMemcpy(SceUID pid, void *dst, const void *src, SceSize len
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_DATA_TRANSFERS_H_ */

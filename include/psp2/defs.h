@@ -9,4 +9,4 @@
 
 #define PSP2_SDK_VERSION 0x03570011
 
-#endif
+#endif /* _PSP2_DEFS_H_ */

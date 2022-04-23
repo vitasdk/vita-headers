@@ -75,4 +75,4 @@ SceSize ksceUsbSerialRecv(void *buffer, SceSize max_len, int unk1, int unk2);
 #ifdef __cplusplus
 }
 #endif
-#endif
+#endif /* _PSP2_KERNEL_USBSERIAL_H_ */

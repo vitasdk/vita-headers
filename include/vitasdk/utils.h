@@ -31,4 +31,4 @@ int vitasdk_delete_thread_reent(SceUID thid);
 #ifdef __cplusplus
 }
 #endif
-#endif
+#endif /* _VITASDKUTILS_H_ */

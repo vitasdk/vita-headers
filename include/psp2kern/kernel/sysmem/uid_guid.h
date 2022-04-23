@@ -129,4 +129,4 @@ typedef SceGUIDKernelCreateOpt SceCreateUidObjOpt;
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_UID_GUID_H_ */

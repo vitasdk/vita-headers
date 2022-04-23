@@ -147,5 +147,5 @@ int sceTouchDisableTouchForce(SceUInt32 port);
 }
 #endif
 
-#endif
+#endif /* _PSP2_TOUCH_H_ */
 

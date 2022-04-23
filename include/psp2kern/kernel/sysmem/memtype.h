@@ -113,4 +113,4 @@ extern "C" {
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_MEMTYPE_H_ */

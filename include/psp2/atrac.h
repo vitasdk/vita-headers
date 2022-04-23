@@ -177,5 +177,5 @@ int sceAtracGetInternalError(int atracHandle, int *pInternalError);
 }
 #endif
 
-#endif
+#endif /* _PSP2_ATRAC_H_ */
 

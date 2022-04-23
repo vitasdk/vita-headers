@@ -128,5 +128,5 @@ int ksceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, in
  */
 int ksceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
-#endif
+#endif /* _PSP2_KERNEL_AVCODEC_JPEGENC_H_ */
 

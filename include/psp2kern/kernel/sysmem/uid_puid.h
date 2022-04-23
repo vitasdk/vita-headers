@@ -50,4 +50,4 @@ SceUID kscePUIDtoGUID(SceUID pid, SceUID puid);
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_UID_PUID_H_ */

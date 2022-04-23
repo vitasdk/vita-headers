@@ -9,4 +9,4 @@
 
 #include <psp2common/types.h>
 
-#endif
+#endif /* _PSP2_TYPES_H_ */

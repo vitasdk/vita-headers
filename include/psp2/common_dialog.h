@@ -128,5 +128,5 @@ int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);
 }
 #endif
 
-#endif
+#endif /* _PSP2_COMMON_API_H_ */
 

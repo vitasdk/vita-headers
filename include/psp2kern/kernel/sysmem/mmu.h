@@ -50,4 +50,4 @@ int ksceKernelSwitchVmaForPid(SceUID pid);
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_MMU_H_ */
