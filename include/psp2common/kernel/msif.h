@@ -30,4 +30,4 @@ typedef struct SceMsInfo {
 }
 #endif
 
-#endif /* _PSP2_COMMON_TYPES__KERNEL_MSIF_H_ */
+#endif /* _PSP2_COMMON_TYPES_KERNEL_MSIF_H_ */

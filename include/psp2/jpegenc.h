@@ -160,5 +160,5 @@ int sceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 }
 #endif /* __cplusplus */
 
-#endif /* _PSP2_JPEGENC_H_ */
+#endif /* _JPEGENC_H_ */
 
