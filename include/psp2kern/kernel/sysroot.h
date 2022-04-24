@@ -5,8 +5,8 @@
 
 // or SceSysrootForKernel_stub
 
-#ifndef _PSP2_KERNEL_SYSROOT_H_
-#define _PSP2_KERNEL_SYSROOT_H_
+#ifndef _PSP2KERN_KERNEL_SYSROOT_H_
+#define _PSP2KERN_KERNEL_SYSROOT_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/kbl/kbl.h>
@@ -364,4 +364,4 @@ void ksceKernelSysrootRegisterCoredumpTrigger(SceKernelCoredumpTriggerFunc func)
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SYSROOT_H_ */
+#endif /* _PSP2KERN_KERNEL_SYSROOT_H_ */

@@ -3,8 +3,8 @@
  * \usage{psp2common/kernel/msif.h}
  */
 
-#ifndef _PSP2_COMMON_TYPES_KERNEL_MSIF_H_
-#define _PSP2_COMMON_TYPES_KERNEL_MSIF_H_
+#ifndef _PSP2COMMON_KERNEL_MSIF_H_
+#define _PSP2COMMON_KERNEL_MSIF_H_
 
 #include <psp2common/types.h>
 
@@ -30,4 +30,4 @@ typedef struct SceMsInfo {
 }
 #endif
 
-#endif /* _PSP2_COMMON_TYPES__KERNEL_MSIF_H_ */
+#endif /* _PSP2COMMON_KERNEL_MSIF_H_ */

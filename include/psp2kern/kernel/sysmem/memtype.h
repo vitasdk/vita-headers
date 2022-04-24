@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/memtype.h}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_MEMTYPE_H_
-#define _PSP2_KERNEL_SYSMEM_MEMTYPE_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_MEMTYPE_H_
+#define _PSP2KERN_KERNEL_SYSMEM_MEMTYPE_H_
 
 #include <psp2kern/types.h>
 #include <psp2common/kernel/sysmem.h>
@@ -113,4 +113,4 @@ extern "C" {
 }
 #endif
 
-#endif
+#endif /* _PSP2KERN_KERNEL_SYSMEM_MEMTYPE_H_ */

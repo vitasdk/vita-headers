@@ -3,8 +3,8 @@
  * \usage{psp2kern/npdrm.h,SceNpDrmForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_NPDRM_H_
-#define _PSP2_KERNEL_NPDRM_H_
+#ifndef _PSP2KERN_NPDRM_H_
+#define _PSP2KERN_NPDRM_H_
 
 #include <psp2kern/types.h>
 
@@ -94,4 +94,4 @@ int ksceNpDrmGetRifInfo(const void *license, SceSize license_size, int check_sig
 }
 #endif
 
-#endif /* _PSP2_KERNEL_NPDRM_H_ */
+#endif /* _PSP2KERN_NPDRM_H_ */

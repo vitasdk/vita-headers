@@ -3,8 +3,8 @@
  * \usage{psp2kern/pfsmgr.h,ScePfsMgrForKernel_stub}
  */
 
-#ifndef _PSP2_KERNEL_PFSMGR_H_
-#define _PSP2_KERNEL_PFSMGR_H_
+#ifndef _PSP2KERN_PFSMGR_H_
+#define _PSP2KERN_PFSMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -57,4 +57,4 @@ int kscePfsDisapprove(const ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_au
 }
 #endif
 
-#endif /* _PSP2_KERNEL_PFSMGR_H_ */
+#endif /* _PSP2KERN_PFSMGR_H_ */

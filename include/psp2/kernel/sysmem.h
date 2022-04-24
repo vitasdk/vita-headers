@@ -132,5 +132,5 @@ int sceKernelIsPSVitaTV(void);
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_SYSMEM_H_ */
 

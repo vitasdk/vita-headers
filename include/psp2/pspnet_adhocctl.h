@@ -78,5 +78,5 @@ int sceNetAdhocctlGetEtherAddr(struct SceNetEtherAddr *addr);
 }
 #endif
 
-#endif
+#endif /* _PSP2_PSPNET_ADHOCCTL_H_ */
 

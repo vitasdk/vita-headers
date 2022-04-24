@@ -3,8 +3,8 @@
  * \usage{psp2/jpegenc.h,SceJpegEnc_stub}
  */
 
-#ifndef _JPEGENC_H_
-#define _JPEGENC_H_
+#ifndef _PSP2_JPEGENC_H_
+#define _PSP2_JPEGENC_H_
 
 #include <psp2/types.h>
 

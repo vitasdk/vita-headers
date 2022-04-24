@@ -72,5 +72,5 @@ int sceHidMouseRead(SceUInt32 handle, SceHidMouseReport *reports[], int nReports
 }
 #endif
 
-#endif
+#endif /* _PSP2_HID_H_ */
 

@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/uid_puid.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_UID_PUID_H_
-#define _PSP2_KERNEL_SYSMEM_UID_PUID_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_UID_PUID_H_
+#define _PSP2KERN_KERNEL_SYSMEM_UID_PUID_H_
 
 #include <psp2kern/types.h>
 
@@ -50,4 +50,4 @@ SceUID kscePUIDtoGUID(SceUID pid, SceUID puid);
 }
 #endif
 
-#endif
+#endif /* _PSP2KERN_KERNEL_SYSMEM_UID_PUID_H_ */

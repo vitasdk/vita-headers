@@ -143,5 +143,5 @@ int sceNetAdhocGetPtpStat(int *buflen, void *buf);
 }
 #endif
 
-#endif
+#endif /* _PSP2_PSPNET_ADHOC_H_ */
 

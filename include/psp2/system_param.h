@@ -104,4 +104,4 @@ typedef enum SceSystemParamTimeFormat {
 }
 #endif
 
-#endif
+#endif /* _PSP2_SYSTEM_PARAM_H_ */

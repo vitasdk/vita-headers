@@ -67,4 +67,4 @@
 
 #include <psp2kern/net/net.h>
 
-#endif
+#endif /* _VITASDKKERN_H_ */

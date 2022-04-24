@@ -87,5 +87,5 @@ int sceAVConfigSetDisplayColorSpaceMode(int csm);
 }
 #endif
 
-#endif
+#endif /* _PSP2_AVCONFIG_H_ */
 

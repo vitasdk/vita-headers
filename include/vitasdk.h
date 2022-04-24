@@ -106,4 +106,4 @@
 #include <psp2/net/net_syscalls.h>
 #include <psp2/net/netctl.h>
 
-#endif
+#endif /* _VITASDK_H_ */

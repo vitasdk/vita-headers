@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/intrmgr.h,SceIntrmgrForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_INTRMGR_H_
-#define _PSP2_KERNEL_INTRMGR_H_
+#ifndef _PSP2KERN_KERNEL_INTRMGR_H_
+#define _PSP2KERN_KERNEL_INTRMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -74,5 +74,5 @@ int ksceKernelDisableSubIntr(int intr_code, int subintr_code);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_INTRMGR_H_ */
+#endif /* _PSP2KERN_KERNEL_INTRMGR_H_ */
 

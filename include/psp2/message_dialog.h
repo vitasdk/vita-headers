@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_MSG_DIALOG_H_
-#define _PSP2_MSG_DIALOG_H_
+#ifndef _PSP2_MESSAGE_DIALOG_H_
+#define _PSP2_MESSAGE_DIALOG_H_
 
 #include <psp2/common_dialog.h>
 #include <psp2/types.h>
@@ -199,5 +199,5 @@ int sceMsgDialogProgressBarSetMsg( SceMsgDialogProgressBarTarget target, const S
 }
 #endif
 
-#endif
+#endif /* _PSP2_MESSAGE_DIALOG_H_ */
 

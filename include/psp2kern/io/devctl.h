@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_IO_DEVCTL_H_
-#define _PSP2_IO_DEVCTL_H_
+#ifndef _PSP2KERN_IO_DEVCTL_H_
+#define _PSP2KERN_IO_DEVCTL_H_
 
 #include <psp2kern/types.h>
 
@@ -43,5 +43,5 @@ int ksceIoDevctl(const char *dev, unsigned int cmd, void *indata, int inlen, voi
 }
 #endif
 
-#endif /* _PSP2_IO_DEVCTL_H_ */
+#endif /* _PSP2KERN_IO_DEVCTL_H_ */
 

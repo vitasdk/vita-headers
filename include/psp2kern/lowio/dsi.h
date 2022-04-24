@@ -3,8 +3,8 @@
  * \usage{psp2kern/lowio/dsi.h,SceDsiForDriver_stub}
  */
 
-#ifndef _PSP2_KERN_LOWIO_DSI_H_
-#define _PSP2_KERN_LOWIO_DSI_H_
+#ifndef _PSP2KERN_LOWIO_DSI_H_
+#define _PSP2KERN_LOWIO_DSI_H_
 
 #include <psp2kern/types.h>
 
@@ -40,5 +40,5 @@ int ksceDsiDcsRead(int head, unsigned short param, void *buff, unsigned int size
 }
 #endif
 
-#endif /* _PSP2_KERN_LOWIO_DSI_H_ */
+#endif /* _PSP2KERN_LOWIO_DSI_H_ */
 

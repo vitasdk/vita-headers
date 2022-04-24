@@ -3,8 +3,8 @@
  * \usage{psp2kern/idstorage.h,SceIdStorageForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_IDSTORAGE_H_
-#define _PSP2_KERNEL_IDSTORAGE_H_
+#ifndef _PSP2KERN_IDSTORAGE_H_
+#define _PSP2KERN_IDSTORAGE_H_
 
 #include <psp2kern/types.h>
 
@@ -34,4 +34,4 @@ int ksceIdStorageWriteLeaf(SceSize leafnum, const void *buf);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_IDSTORAGE_H_ */
+#endif /* _PSP2KERN_IDSTORAGE_H_ */
