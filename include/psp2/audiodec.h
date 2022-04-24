@@ -202,4 +202,4 @@ extern SceInt32 sceAudiodecDeleteDecoderExternal(SceAudiodecCtrl *pCtrl, SceUInt
 }
 #endif
 
-#endif
+#endif /* _PSP2_AUDIODEC_H_ */

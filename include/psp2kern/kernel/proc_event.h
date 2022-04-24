@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/proc_event.h,SceProcEventForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_PROC_EVENT_H_
-#define _PSP2_KERNEL_PROC_EVENT_H_
+#ifndef _PSP2KERN_KERNEL_PROC_EVENT_H_
+#define _PSP2KERN_KERNEL_PROC_EVENT_H_
 
 #include <psp2kern/types.h>
 
@@ -75,4 +75,4 @@ int ksceKernelInvokeProcEventHandler(SceUID pid, int event_id, int event_type, v
 }
 #endif
 
-#endif /* _PSP2_KERNEL_PROC_EVENT_H_ */
+#endif /* _PSP2KERN_KERNEL_PROC_EVENT_H_ */

@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_THREADMGR_MISC_H_
-#define _PSP2_KERNEL_THREADMGR_MISC_H_
+#ifndef _PSP2KERN_KERNEL_THREADMGR_MISC_H_
+#define _PSP2KERN_KERNEL_THREADMGR_MISC_H_
 
 #include <psp2kern/types.h>
 
@@ -118,4 +118,4 @@ int ksceKernelRunWithStack(SceSize stack_size, int (* to_call)(void *), void *ar
 }
 #endif
 
-#endif /* _PSP2_KERNEL_THREADMGR_MISC_H_ */
+#endif /* _PSP2KERN_KERNEL_THREADMGR_MISC_H_ */

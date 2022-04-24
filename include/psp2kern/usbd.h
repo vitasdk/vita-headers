@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_USBD_H_
-#define _PSP2_KERNEL_USBD_H_
+#ifndef _PSP2KERN_USBD_H_
+#define _PSP2KERN_USBD_H_
 
 #include <psp2kern/kernel/threadmgr.h>
 
@@ -103,4 +103,4 @@ int ksceUsbdInterruptTransfer(int endpoint_id,
 }
 #endif
 
-#endif /* _PSP2_KERNEL_USBD_H_ */
+#endif /* _PSP2KERN_USBD_H_ */

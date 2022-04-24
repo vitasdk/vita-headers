@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_SHUTTERSOUND_H_
-#define _PSP2_SHUTTERSOUND_H_
+#ifndef _PSP2_SHUTTER_SOUND_H_
+#define _PSP2_SHUTTER_SOUND_H_
 
 #include <stdint.h>
 
@@ -38,5 +38,5 @@ int sceShutterSoundPlay(uint32_t type);
 }
 #endif
 
-#endif /* _PSP2_SHUTTERSOUND_H_ */
+#endif /* _PSP2_SHUTTER_SOUND_H_ */
 

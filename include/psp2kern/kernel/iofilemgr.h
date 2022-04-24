@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/iofilemgr.h,SceIofilemgrForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_IOFILEMGR_H_
-#define _PSP2_KERNEL_IOFILEMGR_H_
+#ifndef _PSP2KERN_KERNEL_IOFILEMGR_H_
+#define _PSP2KERN_KERNEL_IOFILEMGR_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/io/devctl.h>
@@ -114,4 +114,4 @@ int ksceIoGetRemoteKPLSData(SceUID pid, void *dst);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_IOFILEMGR_H_ */
+#endif /* _PSP2KERN_KERNEL_IOFILEMGR_H_ */

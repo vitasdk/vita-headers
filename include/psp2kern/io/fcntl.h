@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_IO_FCNTL_H_
-#define _PSP2_IO_FCNTL_H_
+#ifndef _PSP2KERN_IO_FCNTL_H_
+#define _PSP2KERN_IO_FCNTL_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/iofilemgr.h>
@@ -272,5 +272,5 @@ int ksceIoCancel(SceUID fd);
 }
 #endif
 
-#endif /* _PSP2_IO_FCNTL_H_ */
+#endif /* _PSP2KERN_IO_FCNTL_H_ */
 

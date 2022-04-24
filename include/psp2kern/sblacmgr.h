@@ -3,8 +3,8 @@
  * \usage{psp2kern/sblacmgr.h,SceSblACMgrForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SBLACMGR_H_
-#define _PSP2_KERNEL_SBLACMGR_H_
+#ifndef _PSP2KERN_SBLACMGR_H_
+#define _PSP2KERN_SBLACMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -100,4 +100,4 @@ int ksceSblACMgrIsDevelopmentMode(void);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SBLACMGR_H_ */
+#endif /* _PSP2KERN_SBLACMGR_H_ */

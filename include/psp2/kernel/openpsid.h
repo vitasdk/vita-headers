@@ -21,5 +21,5 @@ int sceKernelGetOpenPsId(SceKernelOpenPsId *id);
 }
 #endif
 
-#endif
+#endif /* _PSP2_KERNEL_OPENPSID_H_ */
 

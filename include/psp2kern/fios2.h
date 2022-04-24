@@ -3,8 +3,8 @@
  * \usage{psp2kern/fios2.h,SceFios2KernelForDriver}
  */
 
-#ifndef _PSP2_KERNEL_FIOS2KERNEL_H_
-#define _PSP2_KERNEL_FIOS2KERNEL_H_
+#ifndef _PSP2KERN_FIOS2_H_
+#define _PSP2KERN_FIOS2_H_
 
 #include <psp2kern/types.h>
 
@@ -93,4 +93,4 @@ int ksceFiosKernelOverlayResolveSync(SceUID pid, int resolveFlag, const char *in
 }
 #endif
 
-#endif /* _PSP2_KERNEL_FIOS2KERNEL_H_ */
+#endif /* _PSP2KERN_FIOS2_H_ */

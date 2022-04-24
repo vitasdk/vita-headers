@@ -228,4 +228,4 @@ int sceAvPlayerSetTrickSpeed(SceAvPlayerHandle handle, int speed);
 }
 #endif
 
-#endif
+#endif /* _PSP2_AVPLAYER_H_ */

@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_MUSIC_EXPORT_H_
-#define _PSP2_MUSIC_EXPORT_H_
+#ifndef _PSP2_MUSICEXPORT_H_
+#define _PSP2_MUSICEXPORT_H_
 
 #include <psp2/types.h>
 #include <stdint.h>
@@ -24,5 +24,5 @@ int sceMusicExportFromFile(const char* path, const MusicExportParam* param, void
 }
 #endif
 
-#endif /* _PSP2_MUSIC_EXPORT_H_ */
+#endif /* _PSP2_MUSICEXPORT_H_ */
 

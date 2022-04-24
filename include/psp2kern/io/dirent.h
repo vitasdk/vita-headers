@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_IO_DRENT_H_
-#define _PSP2_IO_DRENT_H_
+#ifndef _PSP2KERN_IO_DIRENT_H_
+#define _PSP2KERN_IO_DIRENT_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/io/stat.h>
@@ -62,5 +62,5 @@ int ksceIoDclose(SceUID fd);
 }
 #endif
 
-#endif /* _PSP2_IO_DRENT_H_ */
+#endif /* _PSP2KERN_IO_DIRENT_H_ */
 

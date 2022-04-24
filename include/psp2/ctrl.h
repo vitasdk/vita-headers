@@ -329,4 +329,4 @@ int sceCtrlIsMultiControllerSupported(void);
 }
 #endif
 
-#endif /* _PSP2CTRL_H_ */
+#endif /* _PSP2_CTRL_H_ */

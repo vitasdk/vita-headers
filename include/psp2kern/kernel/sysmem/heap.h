@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/heap.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_HEAP_H_
-#define _PSP2_KERNEL_SYSMEM_HEAP_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_HEAP_H_
+#define _PSP2KERN_KERNEL_SYSMEM_HEAP_H_
 
 #include <psp2kern/types.h>
 
@@ -114,4 +114,4 @@ int ksceKernelFree(void *ptr);
 }
 #endif
 
-#endif
+#endif /* _PSP2KERN_KERNEL_SYSMEM_HEAP_H_ */

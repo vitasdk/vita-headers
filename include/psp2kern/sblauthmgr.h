@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_SBLAUTHMGR_H_
-#define _PSP2_KERNEL_SBLAUTHMGR_H_
+#ifndef _PSP2KERN_SBLAUTHMGR_H_
+#define _PSP2KERN_SBLAUTHMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -20,5 +20,5 @@ int ksceSblAuthMgrSetDmac5Key(const void *key, SceSize keylen, int slot_id, int 
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SBLAUTHMGR_H_ */
+#endif /* _PSP2KERN_SBLAUTHMGR_H_ */
 

@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_THREADMGR_LW_COND_H_
-#define _PSP2_KERNEL_THREADMGR_LW_COND_H_
+#ifndef _PSP2KERN_KERNEL_THREADMGR_LW_COND_H_
+#define _PSP2KERN_KERNEL_THREADMGR_LW_COND_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/threadmgr/lw_mutex.h>
@@ -39,4 +39,4 @@ int ksceKernelGetLwCondInfo(SceUID lwcond_id, SceKernelLwCondInfo *info);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_THREADMGR_LW_COND_H_ */
+#endif /* _PSP2KERN_KERNEL_THREADMGR_LW_COND_H_ */

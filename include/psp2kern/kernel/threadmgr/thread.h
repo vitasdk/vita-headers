@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_THREADMGR_THREAD_H_
-#define _PSP2_KERNEL_THREADMGR_THREAD_H_
+#ifndef _PSP2KERN_KERNEL_THREADMGR_THREAD_H_
+#define _PSP2KERN_KERNEL_THREADMGR_THREAD_H_
 
 #include <psp2kern/types.h>
 
@@ -248,4 +248,4 @@ int ksceKernelGetThreadStackFreeSize(SceUID thid);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_THREADMGR_THREAD_H_ */
+#endif /* _PSP2KERN_KERNEL_THREADMGR_THREAD_H_ */

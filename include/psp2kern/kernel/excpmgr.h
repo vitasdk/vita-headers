@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_EXCPMGR_H_
-#define _PSP2_KERNEL_EXCPMGR_H_
+#ifndef _PSP2KERN_KERNEL_EXCPMGR_H_
+#define _PSP2KERN_KERNEL_EXCPMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -129,4 +129,4 @@ int ksceExcpmgrRegisterHandler(SceExcpKind kind, int priority, void *handler);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_EXCPMGR_H_ */
+#endif /* _PSP2KERN_KERNEL_EXCPMGR_H_ */

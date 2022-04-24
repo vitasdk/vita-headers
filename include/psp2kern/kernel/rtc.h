@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/rtc.h,SceRtcForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_RTC_H_
-#define _PSP2_KERNEL_RTC_H_
+#ifndef _PSP2KERN_KERNEL_RTC_H_
+#define _PSP2KERN_KERNEL_RTC_H_
 
 #include <psp2kern/types.h>
 
@@ -71,4 +71,4 @@ int ksceRtcConvertDateTimeToUnixTime(const SceDateTime *src, SceUInt64 *dst);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_RTC_H_ */
+#endif /* _PSP2KERN_KERNEL_RTC_H_ */

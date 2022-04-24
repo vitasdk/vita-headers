@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_DMAC_H_
-#define _PSP2_DMAC_H_
+#ifndef _PSP2_KERNEL_DMAC_H_
+#define _PSP2_KERNEL_DMAC_H_
 
 #include <psp2/types.h>
 
@@ -39,4 +39,4 @@ void *sceDmacMemset(void *dst, int c, SceSize size);
 }
 #endif
 
-#endif /* _PSP2_DMAC_H_ */
+#endif /* _PSP2_KERNEL_DMAC_H_ */

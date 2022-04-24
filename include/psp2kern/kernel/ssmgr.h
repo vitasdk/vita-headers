@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/ssmgr.h,SceSblSsMgrForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SBL_SS_MGR_H_
-#define _PSP2_KERNEL_SBL_SS_MGR_H_
+#ifndef _PSP2KERN_KERNEL_SSMGR_H_
+#define _PSP2KERN_KERNEL_SSMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -61,4 +61,4 @@ int ksceSblSsDecryptWithPortability(SceUInt32 key_type, void *iv, ScePortability
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SBL_SS_MGR_H_ */
+#endif /* _PSP2KERN_KERNEL_SSMGR_H_ */

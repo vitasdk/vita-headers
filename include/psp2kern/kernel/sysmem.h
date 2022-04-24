@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_H_
-#define _PSP2_KERNEL_SYSMEM_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_H_
+#define _PSP2KERN_KERNEL_SYSMEM_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/sysmem/uid_class.h>
@@ -294,4 +294,4 @@ int ksceKernelMemRangeReleaseWithPerm(SceKernelMemoryRefPerm perm, void *addr, S
 }
 #endif
 
-#endif
+#endif /* _PSP2KERN_KERNEL_SYSMEM_H_ */

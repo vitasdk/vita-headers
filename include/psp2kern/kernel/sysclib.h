@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysclib.h,SceSysclibForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSCLIB_H_
-#define _PSP2_KERNEL_SYSCLIB_H_
+#ifndef _PSP2KERN_KERNEL_SYSCLIB_H_
+#define _PSP2KERN_KERNEL_SYSCLIB_H_
 
 #include <stdarg.h>
 
@@ -153,4 +153,4 @@ void __stack_chk_fail(void);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SYSCLIB_H_ */
+#endif /* _PSP2KERN_KERNEL_SYSCLIB_H_ */

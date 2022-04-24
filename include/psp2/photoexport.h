@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_PHOTO_EXPORT_H_
-#define _PSP2_PHOTO_EXPORT_H_
+#ifndef _PSP2_PHOTOEXPORT_H_
+#define _PSP2_PHOTOEXPORT_H_
 
 #include <psp2/types.h>
 #include <stdint.h>
@@ -29,4 +29,4 @@ int scePhotoExportFromFile(const char* path, const PhotoExportParam* param, void
 }
 #endif
 
-#endif /* _PSP2_PHOTO_EXPORT_H_ */
+#endif /* _PSP2_PHOTOEXPORT_H_ */

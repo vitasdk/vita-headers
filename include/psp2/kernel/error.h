@@ -326,5 +326,5 @@ typedef enum SceKernelErrorCode {
 	SCE_KERNEL_ERROR_NO_AUTH                                     = 0x8002F001
 } SceKernelErrorCode;
 
-#endif
+#endif /* _PSP2_KERNEL_ERROR_H_ */
 

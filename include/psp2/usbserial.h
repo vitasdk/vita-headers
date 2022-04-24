@@ -86,4 +86,4 @@ unsigned int sceUsbSerialRecv(void *buffer, unsigned int max_len, int unk1, int 
 #ifdef __cplusplus
 }
 #endif
-#endif
+#endif /* _PSP2_USBSERIAL_H_ */

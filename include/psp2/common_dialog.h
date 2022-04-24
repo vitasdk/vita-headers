@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_COMMON_API_H_
-#define _PSP2_COMMON_API_H_
+#ifndef _PSP2_COMMON_DIALOG_H_
+#define _PSP2_COMMON_DIALOG_H_
 
 #include <string.h>
 #include <psp2/system_param.h>
@@ -128,5 +128,5 @@ int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);
 }
 #endif
 
-#endif
+#endif /* _PSP2_COMMON_DIALOG_H_ */
 

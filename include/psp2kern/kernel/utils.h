@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_UTILS_H_
-#define _PSP2_KERNEL_UTILS_H_
+#ifndef _PSP2KERN_KERNEL_UTILS_H_
+#define _PSP2KERN_KERNEL_UTILS_H_
 
 #include <psp2kern/types.h>
 
@@ -208,4 +208,4 @@ int ksceAesEncrypt2(SceAesContext *ctx, const void *src, void *dst);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_UTILS_H_ */
+#endif /* _PSP2KERN_KERNEL_UTILS_H_ */

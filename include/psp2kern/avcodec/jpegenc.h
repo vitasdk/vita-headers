@@ -3,8 +3,8 @@
  * \usage{psp2kern/avcodec/jpegenc.h,SceAvcodecForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_AVCODEC_JPEGENC_H_
-#define _PSP2_KERNEL_AVCODEC_JPEGENC_H_
+#ifndef _PSP2KERN_AVCODEC_JPEGENC_H_
+#define _PSP2KERN_AVCODEC_JPEGENC_H_
 
 #include <psp2kern/types.h>
 
@@ -128,5 +128,5 @@ int ksceJpegEncoderSetValidRegion(SceJpegEncoderContext context, int inWidth, in
  */
 int ksceJpegEncoderSetHeaderMode(SceJpegEncoderContext context, int mode);
 
-#endif
+#endif /* _PSP2KERN_AVCODEC_JPEGENC_H_ */
 

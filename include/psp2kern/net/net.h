@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_NET_NET_H_
-#define _PSP2_KERNEL_NET_NET_H_
+#ifndef _PSP2KERN_NET_NET_H_
+#define _PSP2KERN_NET_NET_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -564,4 +564,4 @@ int ksceNetClose(int s);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_NET_NET_H_ */
+#endif /* _PSP2KERN_NET_NET_H_ */

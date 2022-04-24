@@ -3,8 +3,8 @@
  * \usage{psp2kern/power.h,ScePowerForDriver_stub}
  */
 
-#ifndef _PSP2_KERN_POWER_H_
-#define _PSP2_KERN_POWER_H_
+#ifndef _PSP2KERN_POWER_H_
+#define _PSP2KERN_POWER_H_
 
 #include <psp2kern/types.h>
 
@@ -255,4 +255,4 @@ int kscePowerSetGpuXbarClockFrequency(int freq);
 }
 #endif
 
-#endif /* _PSP2_KERN_POWER_H_ */
+#endif /* _PSP2KERN_POWER_H_ */

@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/modulemgr.h,SceModulemgrForKernel_stub}
  */
 
-#ifndef _PSP2_KERNEL_MODULEMGR_H_
-#define _PSP2_KERNEL_MODULEMGR_H_
+#ifndef _PSP2KERN_KERNEL_MODULEMGR_H_
+#define _PSP2KERN_KERNEL_MODULEMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -516,4 +516,4 @@ int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID library_id, SceKernelModul
 }
 #endif
 
-#endif /* _PSP2_KERNEL_MODULEMGR_H_ */
+#endif /* _PSP2KERN_KERNEL_MODULEMGR_H_ */

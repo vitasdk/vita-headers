@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/pm_mgr.h,ScePmMgrForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_PM_MGR_H_
-#define _PSP2_KERNEL_PM_MGR_H_
+#ifndef _PSP2KERN_KERNEL_PM_MGR_H_
+#define _PSP2KERN_KERNEL_PM_MGR_H_
 
 #include <psp2kern/types.h>
 
@@ -22,4 +22,4 @@ int kscePmMgrIsExternalBootMode(void);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_PM_MGR_H_ */
+#endif /* _PSP2KERN_KERNEL_PM_MGR_H_ */
