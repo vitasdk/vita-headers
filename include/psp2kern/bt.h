@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_BT_H_
-#define _PSP2_KERNEL_BT_H_
+#ifndef _PSP2KERN_BT_H_
+#define _PSP2KERN_BT_H_
 
 #include <psp2kern/types.h>
 
@@ -343,4 +343,4 @@ int ksceBtUnregisterCallback(SceUID cb);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_BT_H_ */
+#endif /* _PSP2KERN_BT_H_ */

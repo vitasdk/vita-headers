@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_THREADMGR_DEBUGGER_H_
-#define _PSP2_KERNEL_THREADMGR_DEBUGGER_H_
+#ifndef _PSP2KERN_KERNEL_THREADMGR_DEBUGGER_H_
+#define _PSP2KERN_KERNEL_THREADMGR_DEBUGGER_H_
 
 #include <psp2kern/types.h>
 
@@ -157,4 +157,4 @@ int ksceKernelDebugResumeThread(SceUID thid, int status);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_THREADMGR_DEBUGGER_H_ */
+#endif /* _PSP2KERN_KERNEL_THREADMGR_DEBUGGER_H_ */

@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/data_transfers.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_DATA_TRANSFERS_H_
-#define _PSP2_KERNEL_SYSMEM_DATA_TRANSFERS_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_DATA_TRANSFERS_H_
+#define _PSP2KERN_KERNEL_SYSMEM_DATA_TRANSFERS_H_
 
 #include <psp2kern/types.h>
 
@@ -268,4 +268,4 @@ int ksceKernelProcUserMemcpy(SceUID pid, void *dst, const void *src, SceSize len
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SYSMEM_DATA_TRANSFERS_H_ */
+#endif /* _PSP2KERN_KERNEL_SYSMEM_DATA_TRANSFERS_H_ */

@@ -3,8 +3,8 @@
  * \usage{psp2kern/registrymgr.h,SceRegMgrForDriver_stub}
  */
 
-#ifndef _PSP2_REGISTRYMGR_H_
-#define _PSP2_REGISTRYMGR_H_
+#ifndef _PSP2KERN_REGISTRYMGR_H_
+#define _PSP2KERN_REGISTRYMGR_H_
 
 #include <psp2kern/types.h>
 
@@ -86,4 +86,4 @@ int ksceRegMgrSetKeyStr(const char *category, const char *name, char *buf, SceSi
 }
 #endif
 
-#endif /* _PSP2_REGISTRYMGR_H_ */
+#endif /* _PSP2KERN_REGISTRYMGR_H_ */

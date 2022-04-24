@@ -3,8 +3,8 @@
  * \usage{psp2kern/types.h}
  */
 
-#ifndef _PSP2_KERNEL_TYPES_H_
-#define _PSP2_KERNEL_TYPES_H_
+#ifndef _PSP2KERN_TYPES_H_
+#define _PSP2KERN_TYPES_H_
 
 #include <psp2common/types.h>
 
@@ -121,4 +121,4 @@ typedef struct SceSelfAuthInfo { // size is 0x90-bytes
 }
 #endif
 
-#endif /* _PSP2_KERNEL_TYPES_H_ */
+#endif /* _PSP2KERN_TYPES_H_ */

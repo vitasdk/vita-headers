@@ -3,8 +3,8 @@
  * \usage{psp2common/kernel/sysmem.h}
  */
 
-#ifndef _PSP2_COMMON_TYPES_KERNEL_SYSMEM_H_
-#define _PSP2_COMMON_TYPES_KERNEL_SYSMEM_H_
+#ifndef _PSP2COMMON_KERNEL_SYSMEM_H_
+#define _PSP2COMMON_KERNEL_SYSMEM_H_
 
 #include <psp2common/types.h>
 
@@ -52,4 +52,4 @@ typedef SceUInt32 SceKernelMemBlockType;
 }
 #endif
 
-#endif /* _PSP2_COMMON_TYPES_KERNEL_SYSMEM_H_ */
+#endif /* _PSP2COMMON_KERNEL_SYSMEM_H_ */

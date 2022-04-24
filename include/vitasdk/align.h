@@ -1,5 +1,5 @@
-#ifndef _VITASDKALIGN_H_
-#define _VITASDKALIGN_H_
+#ifndef _VITASDK_ALIGN_H_
+#define _VITASDK_ALIGN_H_
 
 #ifdef  __cplusplus
 extern "C" {
@@ -16,4 +16,4 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-#endif /* _VITASDKALIGN_H_ */
+#endif /* _VITASDK_ALIGN_H_ */

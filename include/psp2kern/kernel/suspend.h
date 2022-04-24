@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_SUSPEND_H_
-#define _PSP2_KERNEL_SUSPEND_H_
+#ifndef _PSP2KERN_KERNEL_SUSPEND_H_
+#define _PSP2KERN_KERNEL_SUSPEND_H_
 
 #include <psp2kern/types.h>
 
@@ -51,4 +51,4 @@ int ksceKernelRegisterSysEventHandler(const char *name, SceSysEventHandler handl
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SUSPEND_H_ */
+#endif /* _PSP2KERN_KERNEL_SUSPEND_H_ */

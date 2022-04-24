@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_THREADMGR_H_
-#define _PSP2_KERNEL_THREADMGR_H_
+#ifndef _PSP2KERN_KERNEL_THREADMGR_H_
+#define _PSP2KERN_KERNEL_THREADMGR_H_
 
 #include <psp2kern/kernel/threadmgr/thread.h>
 #include <psp2kern/kernel/threadmgr/cond.h>
@@ -20,4 +20,4 @@
 #include <psp2kern/kernel/threadmgr/workqueues.h>
 #include <psp2kern/kernel/threadmgr/debugger.h>
 
-#endif /* _PSP2_KERNEL_THREADMGR_H_ */
+#endif /* _PSP2KERN_KERNEL_THREADMGR_H_ */

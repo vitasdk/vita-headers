@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_USBSERIAL_H_
-#define _PSP2_KERNEL_USBSERIAL_H_
+#ifndef _PSP2KERN_USBSERIAL_H_
+#define _PSP2KERN_USBSERIAL_H_
 
 #include <psp2kern/types.h>
 
@@ -75,4 +75,4 @@ SceSize ksceUsbSerialRecv(void *buffer, SceSize max_len, int unk1, int unk2);
 #ifdef __cplusplus
 }
 #endif
-#endif /* _PSP2_KERNEL_USBSERIAL_H_ */
+#endif /* _PSP2KERN_USBSERIAL_H_ */

@@ -3,8 +3,8 @@
  * \usage{psp2/update.h,SceSblSsUpdateMgr_stub}
  */
 
-#ifndef _PSP2_UPDATE_MGR_H_
-#define _PSP2_UPDATE_MGR_H_
+#ifndef _PSP2_UPDATE_H_
+#define _PSP2_UPDATE_H_
 
 #include <psp2/types.h>
 
@@ -46,4 +46,4 @@ int sceSblUsSetUpdateMode(SceUpdateMode mode);
  */
 int sceSblUsVerifyPup(const char *path);
 
-#endif /* _PSP2_UPDATE_MGR_H_ */
+#endif /* _PSP2_UPDATE_H_ */

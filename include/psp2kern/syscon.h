@@ -3,8 +3,8 @@
  * \usage{psp2kern/syscon.h,SceSysconForDriver_stub}
  */
 
-#ifndef _PSP2_KERN_SYSCON_H_
-#define _PSP2_KERN_SYSCON_H_
+#ifndef _PSP2KERN_SYSCON_H_
+#define _PSP2KERN_SYSCON_H_
 
 #include <psp2kern/types.h>
 
@@ -267,5 +267,5 @@ int ksceSysconGetControlsInfo(SceUInt32 *ctrl);
 }
 #endif
 
-#endif /* _PSP2_KERN_SYSCON_H_ */
+#endif /* _PSP2KERN_SYSCON_H_ */
 

@@ -3,8 +3,8 @@
  * \usage{psp2common/types.h}
  */
 
-#ifndef _PSP2_COMMON_TYPES_H_
-#define _PSP2_COMMON_TYPES_H_
+#ifndef _PSP2COMMON_TYPES_H_
+#define _PSP2COMMON_TYPES_H_
 
 #include <stddef.h>
 #include <stdint.h>
@@ -198,4 +198,4 @@ typedef struct SceDateTime {
 }
 #endif
 
-#endif /* _PSP2_COMMON_TYPES_H_ */
+#endif /* _PSP2COMMON_TYPES_H_ */

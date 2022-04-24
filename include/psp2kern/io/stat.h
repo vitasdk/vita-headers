@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_IO_STAT_H_
-#define _PSP2_IO_STAT_H_
+#ifndef _PSP2KERN_IO_STAT_H_
+#define _PSP2KERN_IO_STAT_H_
 
 #include <psp2kern/types.h>
 
@@ -135,5 +135,5 @@ int ksceIoChstatByFd(SceUID fd, SceIoStat *stat, int bits);
 }
 #endif
 
-#endif /* _PSP2_IO_STAT_H_ */
+#endif /* _PSP2KERN_IO_STAT_H_ */
 

@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_KERNEL_THREADMGR_EVENT_FLAGS_H_
-#define _PSP2_KERNEL_THREADMGR_EVENT_FLAGS_H_
+#ifndef _PSP2KERN_KERNEL_THREADMGR_EVENT_FLAGS_H_
+#define _PSP2KERN_KERNEL_THREADMGR_EVENT_FLAGS_H_
 
 #include <psp2kern/types.h>
 
@@ -145,4 +145,4 @@ int ksceKernelDeleteEventFlag(SceUID evfid);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_THREADMGR_EVENT_FLAGS_H_ */
+#endif /* _PSP2KERN_KERNEL_THREADMGR_EVENT_FLAGS_H_ */

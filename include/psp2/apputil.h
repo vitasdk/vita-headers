@@ -4,8 +4,8 @@
  */
 
 
-#ifndef _PSP2_APPUTL_H_
-#define _PSP2_APPUTL_H_
+#ifndef _PSP2_APPUTIL_H_
+#define _PSP2_APPUTIL_H_
 
 #include <psp2/types.h>
 #include <stdint.h>
@@ -243,5 +243,5 @@ int sceAppUtilLaunchWebBrowser(SceAppUtilWebBrowserParam *param);
 }
 #endif
 
-#endif /* _PSP2_APPUTL_H_ */
+#endif /* _PSP2_APPUTIL_H_ */
 

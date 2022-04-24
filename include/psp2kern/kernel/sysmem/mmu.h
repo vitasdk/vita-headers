@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/mmu.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_MMU_H_
-#define _PSP2_KERNEL_SYSMEM_MMU_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_MMU_H_
+#define _PSP2KERN_KERNEL_SYSMEM_MMU_H_
 
 #include <psp2kern/types.h>
 
@@ -50,4 +50,4 @@ int ksceKernelSwitchVmaForPid(SceUID pid);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SYSMEM_MMU_H_ */
+#endif /* _PSP2KERN_KERNEL_SYSMEM_MMU_H_ */

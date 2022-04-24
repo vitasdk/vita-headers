@@ -3,8 +3,8 @@
  * \usage{psp2kern/lowio/pervasive.h,ScePervasiveForDriver_stub}
  */
 
-#ifndef _PSP2_KERN_LOWIO_PERVASIVE_H_
-#define _PSP2_KERN_LOWIO_PERVASIVE_H_
+#ifndef _PSP2KERN_LOWIO_PERVASIVE_H_
+#define _PSP2KERN_LOWIO_PERVASIVE_H_
 
 #include <psp2kern/types.h>
 
@@ -48,5 +48,5 @@ SceUInt32 kscePervasiveGetSoCRevision(void);
 }
 #endif
 
-#endif /* _PSP2_KERN_LOWIO_PERVASIVE_H_ */
+#endif /* _PSP2KERN_LOWIO_PERVASIVE_H_ */
 

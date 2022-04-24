@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/uid_guid.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_UID_GUID_H_
-#define _PSP2_KERNEL_SYSMEM_UID_GUID_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_UID_GUID_H_
+#define _PSP2KERN_KERNEL_SYSMEM_UID_GUID_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/sysmem/uid_class.h>
@@ -129,4 +129,4 @@ typedef SceGUIDKernelCreateOpt SceCreateUidObjOpt;
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SYSMEM_UID_GUID_H_ */
+#endif /* _PSP2KERN_KERNEL_SYSMEM_UID_GUID_H_ */

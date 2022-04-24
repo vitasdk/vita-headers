@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/sysmem/uid_class.h,SceSysmemForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_SYSMEM_UID_CLASS_H_
-#define _PSP2_KERNEL_SYSMEM_UID_CLASS_H_
+#ifndef _PSP2KERN_KERNEL_SYSMEM_UID_CLASS_H_
+#define _PSP2KERN_KERNEL_SYSMEM_UID_CLASS_H_
 
 #include <psp2kern/types.h>
 
@@ -53,4 +53,4 @@ int ksceKernelFindClassByName(const char *name, SceClass **cls);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_SYSMEM_UID_CLASS_H_ */
+#endif /* _PSP2KERN_KERNEL_SYSMEM_UID_CLASS_H_ */

@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/kbl/kbl.h}
  */
 
-#ifndef _PSP2_KERNEL_KBL_H_
-#define _PSP2_KERNEL_KBL_H_
+#ifndef _PSP2KERN_KERNEL_KBL_KBL_H_
+#define _PSP2KERN_KERNEL_KBL_KBL_H_
 
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/dipsw.h>
@@ -66,4 +66,4 @@ typedef struct SceKblParam { // size is 0x100 or 0x200. must 0x200 on 3.60.
 }
 #endif
 
-#endif /* _PSP2_KERNEL_KBL_H_ */
+#endif /* _PSP2KERN_KERNEL_KBL_KBL_H_ */

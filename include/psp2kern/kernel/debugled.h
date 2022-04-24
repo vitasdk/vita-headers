@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/debugled.h,SceDebugLedForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_DEBUGLED_H_
-#define _PSP2_KERNEL_DEBUGLED_H_
+#ifndef _PSP2KERN_KERNEL_DEBUGLED_H_
+#define _PSP2KERN_KERNEL_DEBUGLED_H_
 
 #include <psp2kern/types.h>
 
@@ -28,4 +28,4 @@ void ksceDebugLedInvokeHandle1(int a1, int a2, int a3, int a4);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_DEBUGLED_H_ */
+#endif /* _PSP2KERN_KERNEL_DEBUGLED_H_ */

@@ -1,5 +1,5 @@
-#ifndef _VITASDKUTILS_H_
-#define _VITASDKUTILS_H_
+#ifndef _VITASDK_UTILS_H_
+#define _VITASDK_UTILS_H_
 
 #ifdef  __cplusplus
 extern "C" {
@@ -31,4 +31,4 @@ int vitasdk_delete_thread_reent(SceUID thid);
 #ifdef __cplusplus
 }
 #endif
-#endif /* _VITASDKUTILS_H_ */
+#endif /* _VITASDK_UTILS_H_ */

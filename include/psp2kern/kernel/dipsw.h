@@ -3,8 +3,8 @@
  * \usage{psp2kern/kernel/dipsw.h,SceDipswForDriver_stub}
  */
 
-#ifndef _PSP2_KERNEL_DIPSW_H_
-#define _PSP2_KERNEL_DIPSW_H_
+#ifndef _PSP2KERN_KERNEL_DIPSW_H_
+#define _PSP2KERN_KERNEL_DIPSW_H_
 
 #include <psp2kern/types.h>
 
@@ -72,4 +72,4 @@ void ksceKernelClearDipsw(unsigned int bit);
 }
 #endif
 
-#endif /* _PSP2_KERNEL_DIPSW_H_ */
+#endif /* _PSP2KERN_KERNEL_DIPSW_H_ */
