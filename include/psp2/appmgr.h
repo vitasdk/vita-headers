@@ -135,7 +135,7 @@ typedef struct sceAppMgrLoadExecOptParam {
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrSaveDataDataSave(SceAppMgrSaveDataData* data);
+int sceAppMgrSaveDataDataSave(SceAppMgrSaveDataData *data);
 
 /**
  * Remove data on savedata0: partition
@@ -144,7 +144,7 @@ int _sceAppMgrSaveDataDataSave(SceAppMgrSaveDataData* data);
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrSaveDataDataRemove(SceAppMgrSaveDataDataDelete* data);
+int sceAppMgrSaveDataDataRemove(SceAppMgrSaveDataDataDelete *data);
 
 /**
  * Create a savedata slot
@@ -153,7 +153,7 @@ int _sceAppMgrSaveDataDataRemove(SceAppMgrSaveDataDataDelete* data);
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrSaveDataSlotCreate(SceAppMgrSaveDataSlot* data);
+int sceAppMgrSaveDataSlotCreate(SceAppMgrSaveDataSlot *data);
 
 /**
  * Get current param of a savedata slot
@@ -162,7 +162,7 @@ int _sceAppMgrSaveDataSlotCreate(SceAppMgrSaveDataSlot* data);
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrSaveDataSlotGetParam(SceAppMgrSaveDataSlot* data);
+int sceAppMgrSaveDataSlotGetParam(SceAppMgrSaveDataSlot *data);
 
 /**
  * Set current param of a savedata slot
@@ -171,7 +171,7 @@ int _sceAppMgrSaveDataSlotGetParam(SceAppMgrSaveDataSlot* data);
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrSaveDataSlotSetParam(SceAppMgrSaveDataSlot* data);
+int sceAppMgrSaveDataSlotSetParam(SceAppMgrSaveDataSlot *data);
 
 /**
  * Delete a savedata slot
@@ -180,7 +180,7 @@ int _sceAppMgrSaveDataSlotSetParam(SceAppMgrSaveDataSlot* data);
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceAppMgrSaveDataSlotDelete(SceAppMgrSaveDataSlotDelete* data);
+int sceAppMgrSaveDataSlotDelete(SceAppMgrSaveDataSlotDelete *data);
 
 /**
  * Get Process ID by Title ID
@@ -225,7 +225,7 @@ int sceAppMgrDestroyAppByName(const char *name);
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAppMgrDestroyAppByAppId(SceUID appId);
+int sceAppMgrDestroyAppByAppId(SceInt32 appId);
 
 /**
  * Get PID of an application for Shell
@@ -234,7 +234,7 @@ int sceAppMgrDestroyAppByAppId(SceUID appId);
  *
  * @return The PID on success, < 0 on error.
  */
-SceUID sceAppMgrGetProcessIdByAppIdForShell(SceUID appId);
+SceUID sceAppMgrGetProcessIdByAppIdForShell(SceInt32 appId);
 
 /**
  * Get a list of running applications
@@ -244,7 +244,7 @@ SceUID sceAppMgrGetProcessIdByAppIdForShell(SceUID appId);
  *
  * @return Number of running applications.
  */
-int sceAppMgrGetRunningAppIdListForShell(SceUID *appIds, int count);
+int sceAppMgrGetRunningAppIdListForShell(SceInt32 *appIds, int count);
 
 /**
  * Get an application state
@@ -502,24 +502,13 @@ int sceAppMgrConvertVs0UserDrivePath(char *path, char *mount_point, int unk);
 /**
  * Get raw path for a given path
  *
- * @param[in] path - Path to convert
- * @param[in] mount_point - Mountpoint to use
- * @param[in] unk - Unknown
+ * @param[out] path               - Path to convert
+ * @param[in]  resolved_path      - The input process path
+ * @param[in]  resolved_path_size - The input process path length
  *
  * @return 0 on success, < 0 on error.
  */
-int sceAppMgrGetRawPath(char *path, char *mount_point, char *unk);
-
-/**
- * Resolve a path to the corresponding true path (uses ::ksceFiosKernelOverlayResolveSync underneath).
- *
- * @param[in] path - Path to convert (e.g. app0:)
- * @param[out] resolved_path - True resolved path
- * @param[in] unk - Unknown, provide an empty buffer
- *
- * @return 0 on success, < 0 on error.
- */
-int _sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size, char unk[16]);
+int sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size);
 
 /**
  * Get the real/resolved path of app0: (where it's actually mounted)
@@ -529,7 +518,7 @@ int _sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size
  *
  * @return 0 on success.
  */
-int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]);
+int sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]);
 
 /**
  * Get memory budget info for a running system application
