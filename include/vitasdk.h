@@ -93,7 +93,6 @@
 #include <psp2/kernel/cpu.h>
 #include <psp2/kernel/dmac.h>
 #include <psp2/kernel/error.h>
-#include <psp2/kernel/loadcore.h>
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/kernel/openpsid.h>
 #include <psp2/kernel/processmgr.h>
