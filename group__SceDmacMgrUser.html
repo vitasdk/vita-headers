@@ -92,22 +92,22 @@ $(document).ready(function(){initNavTree('group__SceDmacMgrUser.html',''); initR
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa44ad7930ee98e99e50b0429b0033bc4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrUser.html#gaa44ad7930ee98e99e50b0429b0033bc4">sceDmacMemcpy</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
-<tr class="memdesc:gaa44ad7930ee98e99e50b0429b0033bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memcpy.  <a href="group__SceDmacMgrUser.html#gaa44ad7930ee98e99e50b0429b0033bc4">More...</a><br /></td></tr>
-<tr class="separator:gaa44ad7930ee98e99e50b0429b0033bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1400fa1da5fa2f5ee6056c0f22064c8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrUser.html#gab1400fa1da5fa2f5ee6056c0f22064c8">sceDmacMemset</a> (void *dst, int c, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
-<tr class="memdesc:gab1400fa1da5fa2f5ee6056c0f22064c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memset.  <a href="group__SceDmacMgrUser.html#gab1400fa1da5fa2f5ee6056c0f22064c8">More...</a><br /></td></tr>
-<tr class="separator:gab1400fa1da5fa2f5ee6056c0f22064c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab36eccd05c8b288bb29f787f04bc83b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrUser.html#gab36eccd05c8b288bb29f787f04bc83b4">sceDmacMemcpy</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
+<tr class="memdesc:gab36eccd05c8b288bb29f787f04bc83b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memcpy.  <a href="group__SceDmacMgrUser.html#gab36eccd05c8b288bb29f787f04bc83b4">More...</a><br /></td></tr>
+<tr class="separator:gab36eccd05c8b288bb29f787f04bc83b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4458b05e7be1deee267fc6a2546c3547"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrUser.html#ga4458b05e7be1deee267fc6a2546c3547">sceDmacMemset</a> (void *dst, int ch, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
+<tr class="memdesc:ga4458b05e7be1deee267fc6a2546c3547"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memset.  <a href="group__SceDmacMgrUser.html#ga4458b05e7be1deee267fc6a2546c3547">More...</a><br /></td></tr>
+<tr class="separator:ga4458b05e7be1deee267fc6a2546c3547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa44ad7930ee98e99e50b0429b0033bc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa44ad7930ee98e99e50b0429b0033bc4">&#9670;&nbsp;</a></span>sceDmacMemcpy()</h2>
+<a id="gab36eccd05c8b288bb29f787f04bc83b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab36eccd05c8b288bb29f787f04bc83b4">&#9670;&nbsp;</a></span>sceDmacMemcpy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* sceDmacMemcpy </td>
+          <td class="memname">int sceDmacMemcpy </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
@@ -141,18 +141,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>dst. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
 
 </div>
 </div>
-<a id="gab1400fa1da5fa2f5ee6056c0f22064c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab1400fa1da5fa2f5ee6056c0f22064c8">&#9670;&nbsp;</a></span>sceDmacMemset()</h2>
+<a id="ga4458b05e7be1deee267fc6a2546c3547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4458b05e7be1deee267fc6a2546c3547">&#9670;&nbsp;</a></span>sceDmacMemset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* sceDmacMemset </td>
+          <td class="memname">int sceDmacMemset </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
@@ -161,7 +161,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
+          <td class="paramname"><em>ch</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -181,12 +181,12 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>- Destination </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Constant </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>- The character </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- Size</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>dst. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
 
 </div>
 </div>

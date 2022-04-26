@@ -260,7 +260,6 @@ var annotated_dup =
     [ "SceKernelTimezone", "group__SceProcessmgrUser.html#structSceKernelTimezone", "group__SceProcessmgrUser_structSceKernelTimezone" ],
     [ "SceKernelULMOption", "group__SceModulemgrUser.html#structSceKernelULMOption", "group__SceModulemgrUser_structSceKernelULMOption" ],
     [ "SceKernelVARange", "group__SceTypesKernel.html#structSceKernelVARange", "group__SceTypesKernel_structSceKernelVARange" ],
-    [ "SceLibraryEntryTable", "group__SceLoadcoreUser.html#structSceLibraryEntryTable", "group__SceLoadcoreUser_structSceLibraryEntryTable" ],
     [ "SceLocationHeadingInfo", "group__SceLocationUser.html#structSceLocationHeadingInfo", "group__SceLocationUser_structSceLocationHeadingInfo" ],
     [ "SceLocationLocationInfo", "group__SceLocationUser.html#structSceLocationLocationInfo", "group__SceLocationUser_structSceLocationLocationInfo" ],
     [ "SceLocationPermissionInfo", "group__SceLocationUser.html#structSceLocationPermissionInfo", "group__SceLocationUser_structSceLocationPermissionInfo" ],

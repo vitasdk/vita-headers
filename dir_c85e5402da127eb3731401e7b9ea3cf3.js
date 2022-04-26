@@ -4,7 +4,6 @@ var dir_c85e5402da127eb3731401e7b9ea3cf3 =
     [ "cpu.h", "kernel_2cpu_8h.html", "kernel_2cpu_8h" ],
     [ "dmac.h", "kernel_2dmac_8h.html", "kernel_2dmac_8h" ],
     [ "error.h", "error_8h.html", "error_8h" ],
-    [ "loadcore.h", "loadcore_8h.html", null ],
     [ "modulemgr.h", "kernel_2modulemgr_8h.html", "kernel_2modulemgr_8h" ],
     [ "openpsid.h", "openpsid_8h.html", "openpsid_8h" ],
     [ "processmgr.h", "kernel_2processmgr_8h.html", "kernel_2processmgr_8h" ],

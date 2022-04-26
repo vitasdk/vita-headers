@@ -1,5 +1,5 @@
 var group__SceDmacMgrUser =
 [
-    [ "sceDmacMemcpy", "group__SceDmacMgrUser.html#gaa44ad7930ee98e99e50b0429b0033bc4", null ],
-    [ "sceDmacMemset", "group__SceDmacMgrUser.html#gab1400fa1da5fa2f5ee6056c0f22064c8", null ]
+    [ "sceDmacMemcpy", "group__SceDmacMgrUser.html#gab36eccd05c8b288bb29f787f04bc83b4", null ],
+    [ "sceDmacMemset", "group__SceDmacMgrUser.html#ga4458b05e7be1deee267fc6a2546c3547", null ]
 ];
