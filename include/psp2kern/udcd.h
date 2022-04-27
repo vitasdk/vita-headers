@@ -8,7 +8,6 @@
 #define _PSP2KERN_UDCD_H_
 
 #include <psp2kern/types.h>
-#include <vitasdk/align.h>
 
 #ifdef __cplusplus
 extern "C" {
