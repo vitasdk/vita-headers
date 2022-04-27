@@ -13,7 +13,17 @@
 extern "C" {
 #endif
 
+
 /* SCE types */
+
+#if defined(_MSC_VER)
+#define SCE_ALIGN(x) __declspec(align(x))
+#else
+#if defined(__GNUC__)
+#define SCE_ALIGN(x) __attribute__ ((aligned(x)))
+#endif
+#endif
+
 typedef int8_t SceChar8;
 typedef uint8_t SceUChar8;
 
