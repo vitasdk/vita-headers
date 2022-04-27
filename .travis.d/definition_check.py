@@ -27,7 +27,6 @@ FUNCTION_RULE = re.compile(FUNC_RULE_PATTERN)
 IGNORE_FILES = [
     'vitasdk.h',
     'vitasdkkern.h',
-    'vitasdk/align.h',
     'vitasdk/utils.h',
 ]
 

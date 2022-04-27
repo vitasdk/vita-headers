@@ -8,7 +8,6 @@
 #define _PSP2_FIBER_H
 
 #include <psp2/types.h>
-#include <vitasdk/align.h>
 
 #ifdef __cplusplus
 extern "C" {
