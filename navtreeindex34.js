@@ -1,7 +1,5 @@
 var NAVTREEINDEX34 =
 {
-"group__SceImeUser.html#ggac1424541278092ca2d2a59603dc95209acb3ec27f5c42cb005bc6969c2300767e":[1,3,3,0,54],
-"group__SceImeUser.html#ggac1424541278092ca2d2a59603dc95209acb3ec27f5c42cb005bc6969c2300767e":[4,0,1,0,36,6,3],
 "group__SceImeUser.html#ggac1424541278092ca2d2a59603dc95209ad2e466ab01a77d12407b1a08a857bad0":[4,0,1,0,36,6,0],
 "group__SceImeUser.html#ggac1424541278092ca2d2a59603dc95209ad2e466ab01a77d12407b1a08a857bad0":[1,3,3,0,12,0],
 "group__SceImeUser.html#ggac1424541278092ca2d2a59603dc95209ad2e466ab01a77d12407b1a08a857bad0":[1,3,3,0,51],
@@ -249,5 +247,7 @@ var NAVTREEINDEX34 =
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[4,0,1,0,32,3,0],
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[4,0,1,0,32,3,2],
 "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[4,0,1,2,0,0,3,0],
-"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,9,0,3,0]
+"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,9,0,3,0],
+"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,9,0,3,2],
+"group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985":[1,0,9,0,16]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"globals_type_t.html":[4,1,3,2],
-"globals_u.html":[4,1,0,19],
 "globals_v.html":[4,1,0,20],
 "globals_vars.html":[4,1,2],
 "globals_w.html":[4,1,0,21],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "group__SceAppUtilUser.html#ga6dba1ab9dfb7bdaca18f02efdd67f6b9":[4,0,1,0,6,10],
 "group__SceAppUtilUser.html#ga768225668e5530ecf408ff908b56c21d":[1,11,1,0,40],
 "group__SceAppUtilUser.html#ga768225668e5530ecf408ff908b56c21d":[4,0,1,0,6,19],
-"group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[1,11,1,0,4]
+"group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[1,11,1,0,4],
+"group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e":[4,0,1,0,6,4],
+"group__SceAppUtilUser.html#ga9933c174ca527e0faee9f620d0fc3418":[1,11,1,0,7]
 };
