@@ -73,29 +73,22 @@ $(document).ready(function(){initNavTree('ern_2io_2dirent_8h.html',''); initResi
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">dirent.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="ern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ern_2io_2stat_8h_source.html">psp2kern/io/stat.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2common_2kernel_2iofilemgr_8h_source.html">psp2common/kernel/iofilemgr.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2io_2dirent_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structSceIoDirent"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a></td></tr>
-<tr class="memdesc:structSceIoDirent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single directory entry.  <a href="group__SceDirEntUser.html#structSceIoDirent">More...</a><br /></td></tr>
-<tr class="separator:structSceIoDirent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gadcae7d6ba1db296d8f79460b31a76ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntKernel.html#gadcae7d6ba1db296d8f79460b31a76ec1">ksceIoDopen</a> (const char *dirname)</td></tr>
 <tr class="memdesc:gadcae7d6ba1db296d8f79460b31a76ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a directory.  <a href="group__SceDirEntKernel.html#gadcae7d6ba1db296d8f79460b31a76ec1">More...</a><br /></td></tr>
 <tr class="separator:gadcae7d6ba1db296d8f79460b31a76ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1554b047cff1ec5151a4caf2e0ee4c1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntKernel.html#ga1554b047cff1ec5151a4caf2e0ee4c1c">ksceIoDread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a> *dir)</td></tr>
+<tr class="memitem:ga1554b047cff1ec5151a4caf2e0ee4c1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntKernel.html#ga1554b047cff1ec5151a4caf2e0ee4c1c">ksceIoDread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceIofilemgrKernel.html#structSceIoDirent">SceIoDirent</a> *dir)</td></tr>
 <tr class="memdesc:ga1554b047cff1ec5151a4caf2e0ee4c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an entry from an opened file descriptor.  <a href="group__SceDirEntKernel.html#ga1554b047cff1ec5151a4caf2e0ee4c1c">More...</a><br /></td></tr>
 <tr class="separator:ga1554b047cff1ec5151a4caf2e0ee4c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31d0f552c29232dcd7897d44974636fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntKernel.html#ga31d0f552c29232dcd7897d44974636fd">ksceIoDclose</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd)</td></tr>

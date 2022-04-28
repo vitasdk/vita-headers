@@ -73,29 +73,22 @@ $(document).ready(function(){initNavTree('io_2dirent_8h.html',''); initResizable
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">dirent.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">psp2/types.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="io_2stat_8h_source.html">psp2/io/stat.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2common_2kernel_2iofilemgr_8h_source.html">psp2common/kernel/iofilemgr.h</a>&gt;</code><br />
 </div>
 <p><a href="io_2dirent_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structSceIoDirent"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a></td></tr>
-<tr class="memdesc:structSceIoDirent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single directory entry.  <a href="group__SceDirEntUser.html#structSceIoDirent">More...</a><br /></td></tr>
-<tr class="separator:structSceIoDirent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga99e6868991c01f146ecdd86b924eef1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c">sceIoDopen</a> (const char *dirname)</td></tr>
 <tr class="memdesc:ga99e6868991c01f146ecdd86b924eef1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a directory.  <a href="group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c">More...</a><br /></td></tr>
 <tr class="separator:ga99e6868991c01f146ecdd86b924eef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ed21c046e24cab62913f8d39e26809b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b">sceIoDread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a> *dir)</td></tr>
+<tr class="memitem:ga9ed21c046e24cab62913f8d39e26809b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b">sceIoDread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceIofilemgrKernel.html#structSceIoDirent">SceIoDirent</a> *dir)</td></tr>
 <tr class="memdesc:ga9ed21c046e24cab62913f8d39e26809b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an entry from an opened file descriptor.  <a href="group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b">More...</a><br /></td></tr>
 <tr class="separator:ga9ed21c046e24cab62913f8d39e26809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc2ca2130e3e8947f5fd18f5e2bd10e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDirEntUser.html#gacc2ca2130e3e8947f5fd18f5e2bd10e9">sceIoDclose</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd)</td></tr>

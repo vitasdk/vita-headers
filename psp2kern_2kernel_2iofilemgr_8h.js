@@ -1,4 +1,4 @@
-var iofilemgr_8h =
+var psp2kern_2kernel_2iofilemgr_8h =
 [
     [ "ksceIoGetGUIDFdList", "group__SceIofilemgrKernel.html#ga070acc1bf9cf932cbbea17bdbf5eb44e", null ],
     [ "ksceIoGetPUIDFdList", "group__SceIofilemgrKernel.html#ga7830331102d8c2be40e37a949cb077db", null ],

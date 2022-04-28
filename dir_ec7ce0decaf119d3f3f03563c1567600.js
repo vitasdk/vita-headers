@@ -10,7 +10,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
     [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
     [ "intrmgr.h", "intrmgr_8h.html", "intrmgr_8h" ],
-    [ "iofilemgr.h", "iofilemgr_8h.html", "iofilemgr_8h" ],
+    [ "iofilemgr.h", "psp2kern_2kernel_2iofilemgr_8h.html", "psp2kern_2kernel_2iofilemgr_8h" ],
     [ "modulemgr.h", "ern_2kernel_2modulemgr_8h.html", "ern_2kernel_2modulemgr_8h" ],
     [ "msif.h", "psp2kern_2kernel_2msif_8h.html", "psp2kern_2kernel_2msif_8h" ],
     [ "pm_mgr.h", "pm__mgr_8h.html", "pm__mgr_8h" ],

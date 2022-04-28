@@ -81,44 +81,33 @@ $(document).ready(function(){initNavTree('io_2dirent_8h_source.html',''); initRe
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _PSP2_IO_DIRENT_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">psp2/types.h</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="io_2stat_8h.html">psp2/io/stat.h</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="psp2common_2kernel_2iofilemgr_8h.html">psp2common/kernel/iofilemgr.h</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__SceDirEntUser.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__SceDirEntUser.html#ga3a4bcbbc3ff31daf29269f6edd0ef058">   19</a></span>&#160;    <a class="code" href="group__SceStatUser.html#structSceIoStat">SceIoStat</a> <a class="code" href="group__SceDirEntUser.html#ga3a4bcbbc3ff31daf29269f6edd0ef058">d_stat</a>; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="group__SceDirEntUser.html#ga162a7061852cd91ab6b9d3cb8586c7d1">   20</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="group__SceDirEntUser.html#ga162a7061852cd91ab6b9d3cb8586c7d1">d_name</a>[256]; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group__SceDirEntUser.html#ga11eed026297784f0e2723679abe80406">   21</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="group__SceDirEntUser.html#ga11eed026297784f0e2723679abe80406">d_private</a>;  </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="group__SceDirEntUser.html#gac2a6943eda6b27d5c20d6389ad9ab680">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__SceDirEntUser.html#gac2a6943eda6b27d5c20d6389ad9ab680">dummy</a>;        </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <a class="code" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="code" href="group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c">sceIoDopen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dirname);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b">sceIoDread</a>(<a class="code" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="code" href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a> *dir);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceDirEntUser.html#gacc2ca2130e3e8947f5fd18f5e2bd10e9">sceIoDclose</a>(<a class="code" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_IO_DIRENT_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="code" href="group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c">sceIoDopen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dirname);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b">sceIoDread</a>(<a class="code" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="code" href="group__SceIofilemgrKernel.html#structSceIoDirent">SceIoDirent</a> *dir);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceDirEntUser.html#gacc2ca2130e3e8947f5fd18f5e2bd10e9">sceIoDclose</a>(<a class="code" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_IO_DIRENT_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="agroup__SceDirEntUser_html_ga99e6868991c01f146ecdd86b924eef1c"><div class="ttname"><a href="group__SceDirEntUser.html#ga99e6868991c01f146ecdd86b924eef1c">sceIoDopen</a></div><div class="ttdeci">SceUID sceIoDopen(const char *dirname)</div><div class="ttdoc">Open a directory.</div></div>
-<div class="ttc" id="agroup__SceDirEntUser_html_ga3a4bcbbc3ff31daf29269f6edd0ef058"><div class="ttname"><a href="group__SceDirEntUser.html#ga3a4bcbbc3ff31daf29269f6edd0ef058">SceIoDirent::d_stat</a></div><div class="ttdeci">SceIoStat d_stat</div><div class="ttdoc">File status.</div><div class="ttdef"><b>Definition:</b> dirent.h:19</div></div>
-<div class="ttc" id="agroup__SceDirEntUser_html_structSceIoDirent"><div class="ttname"><a href="group__SceDirEntUser.html#structSceIoDirent">SceIoDirent</a></div><div class="ttdoc">Describes a single directory entry.</div><div class="ttdef"><b>Definition:</b> dirent.h:18</div></div>
-<div class="ttc" id="agroup__SceDirEntUser_html_ga11eed026297784f0e2723679abe80406"><div class="ttname"><a href="group__SceDirEntUser.html#ga11eed026297784f0e2723679abe80406">SceIoDirent::d_private</a></div><div class="ttdeci">void * d_private</div><div class="ttdoc">Device-specific data.</div><div class="ttdef"><b>Definition:</b> dirent.h:21</div></div>
-<div class="ttc" id="aio_2stat_8h_html"><div class="ttname"><a href="io_2stat_8h.html">stat.h</a></div></div>
-<div class="ttc" id="agroup__SceStatUser_html_structSceIoStat"><div class="ttname"><a href="group__SceStatUser.html#structSceIoStat">SceIoStat</a></div><div class="ttdoc">Structure to hold the status information about a file.</div><div class="ttdef"><b>Definition:</b> stat.h:66</div></div>
 <div class="ttc" id="agroup__SceDirEntUser_html_gacc2ca2130e3e8947f5fd18f5e2bd10e9"><div class="ttname"><a href="group__SceDirEntUser.html#gacc2ca2130e3e8947f5fd18f5e2bd10e9">sceIoDclose</a></div><div class="ttdeci">int sceIoDclose(SceUID fd)</div><div class="ttdoc">Close an opened directory file descriptor.</div></div>
-<div class="ttc" id="agroup__SceDirEntUser_html_gac2a6943eda6b27d5c20d6389ad9ab680"><div class="ttname"><a href="group__SceDirEntUser.html#gac2a6943eda6b27d5c20d6389ad9ab680">SceIoDirent::dummy</a></div><div class="ttdeci">int dummy</div><div class="ttdoc">Dummy data.</div><div class="ttdef"><b>Definition:</b> dirent.h:22</div></div>
+<div class="ttc" id="apsp2common_2kernel_2iofilemgr_8h_html"><div class="ttname"><a href="psp2common_2kernel_2iofilemgr_8h.html">iofilemgr.h</a></div></div>
+<div class="ttc" id="agroup__SceIofilemgrKernel_html_structSceIoDirent"><div class="ttname"><a href="group__SceIofilemgrKernel.html#structSceIoDirent">SceIoDirent</a></div><div class="ttdoc">Describes a single directory entry.</div><div class="ttdef"><b>Definition:</b> iofilemgr.h:131</div></div>
 <div class="ttc" id="agroup__SceTypesKernel_html_ga9c036549fd8cfd554ba3aa26a397b663"><div class="ttname"><a href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></div><div class="ttdeci">int SceUID</div><div class="ttdoc">UIDs are used to describe many different kernel objects.</div><div class="ttdef"><b>Definition:</b> types.h:85</div></div>
-<div class="ttc" id="agroup__SceDirEntUser_html_ga162a7061852cd91ab6b9d3cb8586c7d1"><div class="ttname"><a href="group__SceDirEntUser.html#ga162a7061852cd91ab6b9d3cb8586c7d1">SceIoDirent::d_name</a></div><div class="ttdeci">char d_name[256]</div><div class="ttdoc">File name.</div><div class="ttdef"><b>Definition:</b> dirent.h:20</div></div>
 <div class="ttc" id="agroup__SceDirEntUser_html_ga9ed21c046e24cab62913f8d39e26809b"><div class="ttname"><a href="group__SceDirEntUser.html#ga9ed21c046e24cab62913f8d39e26809b">sceIoDread</a></div><div class="ttdeci">int sceIoDread(SceUID fd, SceIoDirent *dir)</div><div class="ttdoc">Reads an entry from an opened file descriptor.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
