@@ -75,16 +75,6 @@ typedef enum SceIoDevType {
 SceUID sceIoOpen(const char *file, int flags, SceMode mode);
 
 /**
- * Open or create a file for reading or writing (asynchronous)
- *
- * @param file - Pointer to a string holding the name of the file to open.
- * @param flags - Libc styled flags that are or'ed together (One or more ::SceIoMode).
- * @param mode - One or more ::SceIoAccessMode flags or'ed together. Can also use Unix absolute permissions.
- * @return > 0 is a valid file handle, < 0 on error.
- */
-SceUID sceIoOpenAsync(const char *file, int flags, SceMode mode);
-
-/**
  * Delete a descriptor
  *
  * @code
@@ -95,14 +85,6 @@ SceUID sceIoOpenAsync(const char *file, int flags, SceMode mode);
  * @return < 0 on error
  */
 int sceIoClose(SceUID fd);
-
-/**
- * Delete a descriptor (asynchronous)
- *
- * @param fd - File descriptor to close
- * @return < 0 on error
- */
-int sceIoCloseAsync(SceUID fd);
 
 /**
  * Read input
@@ -119,22 +101,6 @@ int sceIoCloseAsync(SceUID fd);
  * @return The number of bytes read
  */
 SceSSize sceIoRead(SceUID fd, void *buf, SceSize nbyte);
-
-/**
- * Read input (asynchronous)
- *
- * @par Example:
- * @code
- * bytes_read = sceIoRead(fd, data, 100);
- * @endcode
- *
- * @param fd - Opened file descriptor to read from
- * @param data - Pointer to the buffer where the read data will be placed
- * @param size - Size of the read in bytes
- *
- * @return < 0 on error.
- */
-int sceIoReadAsync(SceUID fd, void *data, SceSize size);
 
 /**
  * Read input at offset
@@ -170,17 +136,6 @@ int sceIoPread(SceUID fd, void *data, SceSize size, SceOff offset);
 SceSSize sceIoWrite(SceUID fd, const void *buf, SceSize nbyte);
 
 /**
- * Write output (asynchronous)
- *
- * @param fd - Opened file descriptor to write to
- * @param data - Pointer to the data to write
- * @param size - Size of data to write
- *
- * @return < 0 on error.
- */
-int sceIoWriteAsync(SceUID fd, const void *data, SceSize size);
-
-/**
  * Write output at offset
  *
  * @par Example:
@@ -212,17 +167,6 @@ int sceIoPwrite(SceUID fd, const void *data, SceSize size, SceOff offset);
  * @return The position in the file after the seek.
  */
 SceOff sceIoLseek(SceUID fd, SceOff offset, int whence);
-
-/**
- * Reposition read/write file descriptor offset (asynchronous)
- *
- * @param fd - Opened file descriptor with which to seek
- * @param offset - Relative offset from the start position given by whence
- * @param whence - One of ::SceIoSeekMode.
- *
- * @return < 0 on error. Actual value should be passed returned by the ::sceIoWaitAsync call.
- */
-int sceIoLseekAsync(SceUID fd, SceOff offset, int whence);
 
 /**
  * Reposition read/write file descriptor offset (32bit mode)
