@@ -8,17 +8,12 @@
 #define _PSP2KERN_IO_DEVCTL_H_
 
 #include <psp2kern/types.h>
+#include <psp2common/kernel/iofilemgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef struct SceIoDevInfo {
-	SceOff max_size;
-	SceOff free_size;
-	SceSize cluster_size;
-	void *unk;
-} SceIoDevInfo;
 
 /**
   * Send a devctl command to a device.
