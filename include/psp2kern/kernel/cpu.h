@@ -45,17 +45,17 @@ extern "C" {
  */
 void ksceKernelCpuDcacheWritebackRange(const void *ptr, SceSize len);
 
-
 /**
  * @brief      Save process context
  *
  * @param      context  The context
  */
-static inline void ksceKernelCpuSaveContext(SceKernelProcessContext *context)
+static inline SceInt32 ksceKernelCpuSaveContext(SceKernelProcessContext *context)
 {
 	asm ("mrc p15, 0, %0, c2, c0, 1" : "=r" (context->TTBR1));
 	asm ("mrc p15, 0, %0, c3, c0, 0" : "=r" (context->DACR));
 	asm ("mrc p15, 0, %0, c13, c0, 1" : "=r" (context->CONTEXTIDR));
+	return 0;
 }
 
 /**
@@ -63,23 +63,32 @@ static inline void ksceKernelCpuSaveContext(SceKernelProcessContext *context)
  *
  * @param      context  The context, can be from ::ksceKernelGetPidContext
  */
-static inline void ksceKernelCpuRestoreContext(const SceKernelProcessContext *context)
+static inline SceInt32 ksceKernelCpuRestoreContext(const SceKernelProcessContext *context)
 {
 	int cpsr, tmp;
 
 	asm volatile ("mrs %0, cpsr" : "=r" (cpsr));
+
 	if (!(cpsr & 0x80))
+	{
 		asm volatile ("cpsid i" ::: "memory");
+	}
+
 	asm volatile ("mrc p15, 0, %0, c13, c0, 1" : "=r" (tmp));
-	tmp = (tmp & 0xFFFFFF00) | context->CONTEXTIDR;
+	tmp = (tmp & ~0xFF) | context->CONTEXTIDR;
 	asm volatile ("mcr p15, 0, %0, c13, c0, 1" :: "r" (0));
 	asm volatile ("isb" ::: "memory");
 	asm volatile ("mcr p15, 0, %0, c2, c0, 1" :: "r" (context->TTBR1 | 0x4A));
 	asm volatile ("isb" ::: "memory");
 	asm volatile ("mcr p15, 0, %0, c13, c0, 1" :: "r" (tmp));
 	asm volatile ("mcr p15, 0, %0, c3, c0, 0" :: "r" (context->DACR & 0x55555555));
+
 	if (!(cpsr & 0x80))
+	{
 		asm volatile ("cpsie i" ::: "memory");
+	}
+
+	return 0;
 }
 
 /**
@@ -132,9 +141,9 @@ int ksceKernelCpuDisableInterrupts(void);
  *
  * @param[in]  flags  Interrupt masks
  *
- * @return     Zero on success
+ * @return     none
  */
-int ksceKernelCpuEnableInterrupts(int flags);
+void ksceKernelCpuEnableInterrupts(int flags);
 
 /**
  * @brief      Invalidate a range of L1 dcache (without L2)
