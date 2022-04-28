@@ -8,19 +8,12 @@
 #define _PSP2KERN_IO_DIRENT_H_
 
 #include <psp2kern/types.h>
-#include <psp2kern/io/stat.h>
+#include <psp2common/kernel/iofilemgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/** Describes a single directory entry */
-typedef struct SceIoDirent {
-	SceIoStat d_stat; //!< File status
-	char d_name[256]; //!< File name
-	void *d_private;  //!< Device-specific data
-	int dummy;        //!< Dummy data
-} SceIoDirent;
 
 /**
   * Open a directory

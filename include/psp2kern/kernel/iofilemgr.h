@@ -7,6 +7,7 @@
 #define _PSP2KERN_KERNEL_IOFILEMGR_H_
 
 #include <psp2kern/types.h>
+#include <psp2kern/io/fcntl.h>
 #include <psp2kern/io/devctl.h>
 #include <psp2kern/io/stat.h>
 #include <psp2kern/io/dirent.h>
