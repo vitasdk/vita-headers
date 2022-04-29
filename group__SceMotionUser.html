@@ -542,7 +542,9 @@ Reserved data. </td></tr>
 <dd>
 - Both examples would result in the returned value being -1 if flipped 180 degrees, swapping their top and bottom sides in correlation to gravity </dd>
 <dd>
-- The angle of rotation in relation to being in a centered state on an axis (returned as 0) after which the device will change the value is determined by ::SceMotionSetAngleThreshold </dd></dl>
+- The angle of rotation in relation to being in a centered state on an axis (returned as 0) after which the device will change the value is determined by ::SceMotionSetAngleThreshold </dd>
+<dd>
+- In order for this function to return up to date data, <a class="el" href="group__SceMotionUser.html#ga7006e842f607f08484ef015455f0c589" title="Gets the current motion state.">sceMotionGetState</a> must be called prior to call this function. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">*basicOrientation</td><td></td></tr>
