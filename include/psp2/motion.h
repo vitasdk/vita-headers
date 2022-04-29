@@ -124,6 +124,7 @@ int sceMotionGetDeviceLocation(SceMotionDeviceLocation *deviceLocation);
  * @note - Now flipping the device upwards, taking hold of the right joystick's side, until it forms a 90 degree angle to the surface will result in the X part of the vector being 1 instead
  * @note - Both examples would result in the returned value being -1 if flipped 180 degrees, swapping their top and bottom sides in correlation to gravity
  * @note - The angle of rotation in relation to being in a centered state on an axis (returned as 0) after which the device will change the value is determined by ::SceMotionSetAngleThreshold
+ * @note - In order for this function to return up to date data, ::sceMotionGetState must be called prior to call this function.
  * @param[out] *basicOrientation
  *
  * @return 0, <0 on error
