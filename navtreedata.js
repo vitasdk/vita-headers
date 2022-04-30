@@ -71,7 +71,7 @@ var NAVTREEINDEX =
 "group__SceCLibUser.html#ga82cc653c251e5b18acefeac69a615b4e",
 "group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a0c4246feaa627a4436adf4ee33c0d160",
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa82c87f83e9d8917d75dcb24189c57392",
-"group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3",
+"group__SceCpuKernel.html#gaa7e762b395b3ff620fa62deff747641e",
 "group__SceCtrlKernel.html#gga7e5a5d40bbb69e9af702d5dedac70760a28afba04a95f4d7738b22e7af3fb6814",
 "group__SceDeci4pUserpKernel.html#ga0b7faab35fc0b79646dc16e9069c614c",
 "group__SceDisplayUser.html",

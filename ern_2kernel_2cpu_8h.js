@@ -5,7 +5,7 @@ var ern_2kernel_2cpu_8h =
     [ "ksceKernelCpuDcacheWritebackRange", "group__SceCpuKernel.html#ga644001baef7abdd596b8d536b62fe3f0", null ],
     [ "ksceKernelCpuGetCpuId", "group__SceCpuKernel.html#gab4651268bb4ef22633f5b6055061fd64", null ],
     [ "ksceKernelCpuDisableInterrupts", "group__SceCpuKernel.html#ga5e4ae03a7a343e652e31eb16f815f543", null ],
-    [ "ksceKernelCpuEnableInterrupts", "group__SceCpuKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c", null ],
+    [ "ksceKernelCpuEnableInterrupts", "group__SceCpuKernel.html#gaf2d7c1d3c751c3af9b5fc0b2393b665e", null ],
     [ "ksceKernelCpuDcacheInvalidateRange", "group__SceCpuKernel.html#ga58e43bde269f1e1ad556c0f7602960ed", null ],
     [ "ksceKernelCpuDcacheWritebackInvalidateRange", "group__SceCpuKernel.html#ga8a93171fc77d84fa8a70b71b0798d2c8", null ],
     [ "ksceKernelCpuDcacheInvalidateAll", "group__SceCpuKernel.html#ga6986657ca54a772cf65172cc942b80d6", null ],

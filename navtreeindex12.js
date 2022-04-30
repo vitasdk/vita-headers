@@ -1,7 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3":[4,0,1,2,2,3,0],
-"group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3":[1,7,3,1,0],
 "group__SceCpuKernel.html#gaa7e762b395b3ff620fa62deff747641e":[4,0,1,2,2,3,10],
 "group__SceCpuKernel.html#gaa7e762b395b3ff620fa62deff747641e":[1,7,3,1,10],
 "group__SceCpuKernel.html#gaaf2c0255688b5b2114c417484e46644d":[4,0,1,2,2,3,9],
@@ -16,8 +14,10 @@ var NAVTREEINDEX12 =
 "group__SceCpuKernel.html#gad9f7f38286e8d0b08837729bab4face8":[1,7,3,1,18],
 "group__SceCpuKernel.html#gae1401f75bbf69455bf24e189207b24e0":[4,0,1,2,2,3,13],
 "group__SceCpuKernel.html#gae1401f75bbf69455bf24e189207b24e0":[1,7,3,1,13],
-"group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b":[1,7,3,1,20],
+"group__SceCpuKernel.html#gaf2d7c1d3c751c3af9b5fc0b2393b665e":[4,0,1,2,2,3,5],
+"group__SceCpuKernel.html#gaf2d7c1d3c751c3af9b5fc0b2393b665e":[1,7,3,1,5],
 "group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b":[4,0,1,2,2,3,20],
+"group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b":[1,7,3,1,20],
 "group__SceCpuUser.html":[1,7,3,0],
 "group__SceCpuUser.html#ga2505822a5e77c5a885beab743dac2a10":[1,7,3,0,5],
 "group__SceCpuUser.html#ga2505822a5e77c5a885beab743dac2a10":[4,0,1,0,2,1,5],

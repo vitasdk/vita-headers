@@ -220,8 +220,6 @@ var NAVTREEINDEX11 =
 "group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a":[1,9,2,0,0],
 "group__SceCpu.html":[1,7,3],
 "group__SceCpuKernel.html":[1,7,3,1],
-"group__SceCpuKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c":[4,0,1,2,2,3,5],
-"group__SceCpuKernel.html#ga09e3d6e169f9611ddf583e6d03328e2c":[1,7,3,1,5],
 "group__SceCpuKernel.html#ga1e9446f23dc8fea22955dd21c250743e":[4,0,1,2,2,3,12],
 "group__SceCpuKernel.html#ga1e9446f23dc8fea22955dd21c250743e":[1,7,3,1,12],
 "group__SceCpuKernel.html#ga34661ab47340a3c061425f5f4bf0fe35":[4,0,1,2,2,3,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971":[4,0,1,2,2,3,22],
 "group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971":[1,7,3,1,22],
 "group__SceCpuKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145":[4,0,1,2,2,3,19],
-"group__SceCpuKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145":[1,7,3,1,19]
+"group__SceCpuKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145":[1,7,3,1,19],
+"group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3":[4,0,1,2,2,3,0],
+"group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3":[1,7,3,1,0]
 };
