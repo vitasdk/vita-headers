@@ -12,6 +12,10 @@
 extern "C" {
 #endif
 
+
+typedef void (* SceSysclibPrntCallback)(void *argp, int ch);
+
+
 /**
  * @brief Set character to memory
  *
@@ -146,8 +150,21 @@ void *__memset_chk(void *dst, int ch, unsigned int len, unsigned int dst_len);
 void *__memmove_chk(void *dst, const void *src, unsigned int len, unsigned int dst_len);
 char *__strncpy_chk(char *dst, const char *src, unsigned int n, unsigned int dst_len);
 
+/**
+ * @brief Internal functions used for snprintf, vsnprintf, kscDebugPrintf
+ *
+ * @param[in] callback - The callback to receive ch output by this function
+ * @param[in] argp     - The passed to callback
+ * @param[in] fmt      - The base format. example: "%-18s"
+ * @param[in] list     - The variable argument list
+ *
+ * @return none
+ */
+void __prnt(SceSysclibPrntCallback callback, void *argp, const char *fmt, va_list list);
+
 __attribute__((__noreturn__))
 void __stack_chk_fail(void);
+
 
 #ifdef __cplusplus
 }
