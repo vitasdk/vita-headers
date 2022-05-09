@@ -73,6 +73,7 @@ $(document).ready(function(){initNavTree('sysclib_8h.html',''); initResizable();
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sysclib.h File Reference</div>  </div>
@@ -82,6 +83,11 @@ $(document).ready(function(){initNavTree('sysclib_8h.html',''); initResizable();
 </div>
 <p><a href="sysclib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gafdde78aac4a9b53e6caa23b79018fe77"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77">SceSysclibPrntCallback</a>) (void *argp, int ch)</td></tr>
+<tr class="separator:gafdde78aac4a9b53e6caa23b79018fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga9cd53cf55b51a961d112d65dc206163d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga9cd53cf55b51a961d112d65dc206163d">memset</a> (void *dst, int ch, unsigned int len)</td></tr>
@@ -132,6 +138,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga2eb8e55c7f506ba7a711978380ac4642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8f77c972f57d2bde8b00116fd1c8346"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gac8f77c972f57d2bde8b00116fd1c8346">__strncpy_chk</a> (char *dst, const char *src, unsigned int n, unsigned int dst_len)</td></tr>
 <tr class="separator:gac8f77c972f57d2bde8b00116fd1c8346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf0a78e093596d371dac997469b2447f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gabf0a78e093596d371dac997469b2447f">__prnt</a> (<a class="el" href="group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77">SceSysclibPrntCallback</a> callback, void *argp, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list list)</td></tr>
+<tr class="memdesc:gabf0a78e093596d371dac997469b2447f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal functions used for snprintf, vsnprintf, kscDebugPrintf.  <a href="group__SceSysclibKernel.html#gabf0a78e093596d371dac997469b2447f">More...</a><br /></td></tr>
+<tr class="separator:gabf0a78e093596d371dac997469b2447f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9531929ae9e77d46d7083973175ce72b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga9531929ae9e77d46d7083973175ce72b">__attribute__</a> ((__noreturn__)) void __stack_chk_fail(void)</td></tr>
 <tr class="separator:ga9531929ae9e77d46d7083973175ce72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -1,5 +1,6 @@
 var sysclib_8h =
 [
+    [ "SceSysclibPrntCallback", "group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77", null ],
     [ "memset", "group__SceSysclibKernel.html#ga9cd53cf55b51a961d112d65dc206163d", null ],
     [ "memcpy", "group__SceSysclibKernel.html#gaaa9a3c56c10233a05c3e455d9235a5b5", null ],
     [ "memmove", "group__SceSysclibKernel.html#ga6a102752d8338ea4ec44a968c85d0557", null ],
@@ -18,5 +19,6 @@ var sysclib_8h =
     [ "__memset_chk", "group__SceSysclibKernel.html#ga3e8edb477cb804d6a1ddd606f30d1283", null ],
     [ "__memmove_chk", "group__SceSysclibKernel.html#ga2eb8e55c7f506ba7a711978380ac4642", null ],
     [ "__strncpy_chk", "group__SceSysclibKernel.html#gac8f77c972f57d2bde8b00116fd1c8346", null ],
+    [ "__prnt", "group__SceSysclibKernel.html#gabf0a78e093596d371dac997469b2447f", null ],
     [ "__attribute__", "group__SceSysclibKernel.html#ga9531929ae9e77d46d7083973175ce72b", null ]
 ];
