@@ -51,6 +51,19 @@ int sce_paf_strncmp(const char *s1, const char *s2, SceSize len);
 char *sce_paf_strncpy(char *dst, const char *src, SceSize len);
 char *sce_paf_strrchr(const char *s, int ch);
 
+/**
+ * @brief strtof
+ *
+ * @param[in]  nptr   The input float string
+ * @param[out] endptr The float string endpoint
+ *
+ * @return parsed value
+ *
+ * @note The return value is obviously a `double`, not a `float`
+ */
+double sce_paf_private_strtof(const char *nptr, char **endptr);
+
+
 #define sce_paf_private_bcmp(__ptr1__, __ptr2__, __num__)             sce_paf_bcmp((__ptr1__), (__ptr2__), (__num__))
 #define sce_paf_private_bcopy(__dst__, __src__, __n__)                sce_paf_bcopy((__dst__), (__src__), (__n__))
 #define sce_paf_private_bzero(__dst__, __n__)                         sce_paf_bzero((__dst__), (__n__))
