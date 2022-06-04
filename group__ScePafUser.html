@@ -176,6 +176,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga21f4ef760701c9dd3978b698d603b61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac3c9e985b370a9ea6f5095d5e26faf65"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gac3c9e985b370a9ea6f5095d5e26faf65">sce_paf_strrchr</a> (const char *s, int ch)</td></tr>
 <tr class="separator:gac3c9e985b370a9ea6f5095d5e26faf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fcb62b4fe952ae457ccba82b40e113a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga0fcb62b4fe952ae457ccba82b40e113a">sce_paf_private_strtof</a> (const char *nptr, char **endptr)</td></tr>
+<tr class="memdesc:ga0fcb62b4fe952ae457ccba82b40e113a"><td class="mdescLeft">&#160;</td><td class="mdescRight">strtof  <a href="group__ScePafUser.html#ga0fcb62b4fe952ae457ccba82b40e113a">More...</a><br /></td></tr>
+<tr class="separator:ga0fcb62b4fe952ae457ccba82b40e113a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -1918,6 +1921,45 @@ a5</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0fcb62b4fe952ae457ccba82b40e113a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fcb62b4fe952ae457ccba82b40e113a">&#9670;&nbsp;</a></span>sce_paf_private_strtof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double sce_paf_private_strtof </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>endptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>strtof </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nptr</td><td>The input float string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">endptr</td><td>The float string endpoint</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>parsed value</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The return value is obviously a <code>double</code>, not a <code>float</code> </dd></dl>
 
 </div>
 </div>
