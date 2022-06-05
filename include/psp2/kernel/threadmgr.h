@@ -10,12 +10,15 @@
 #include <psp2/types.h>
 #include <psp2/kernel/cpu.h>
 
-/** Inherit calling thread affinity mask. */
-#define SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT (0)
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+
+/** Inherit calling thread affinity mask. */
+#define SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT (0)
+
 
 /* Threads. */
 
@@ -110,8 +113,23 @@ typedef enum SceThreadStatus {
 	SCE_THREAD_SUSPENDED = 256
 } SceThreadStatus;
 
+typedef enum SceKernelWaitableAttribute {
+	SCE_KERNEL_ATTR_THREAD_FIFO  = 0x00000000, //!< Waiting threads First input First output
+	SCE_KERNEL_ATTR_THREAD_PRIO  = 0x00002000, //!< Waiting threads queued on priority basis
+	SCE_KERNEL_ATTR_OPENABLE     = 0x00000080  //!< Sync object can be accessed by sceKernelOpenXxx
+} SceKernelWaitableAttribute;
+
+typedef enum SceEventFlagAttributes {
+	SCE_DEPRECATED(SCE_EVENT_THREAD_FIFO) = SCE_KERNEL_ATTR_THREAD_FIFO, //!< Use SCE_KERNEL_ATTR_THREAD_FIFO
+	SCE_DEPRECATED(SCE_EVENT_THREAD_PRIO) = SCE_KERNEL_ATTR_THREAD_PRIO, //!< Use SCE_KERNEL_ATTR_THREAD_PRIO
+	SCE_EVENT_WAITSINGLE   = 0,          //!< Sync object can only be waited upon by one thread.
+	SCE_EVENT_WAITMULTIPLE = 0x00001000, //!< Sync object can be waited upon by multiple threads.
+	SCE_DEPRECATED(SCE_EVENT_OPENABLE) = SCE_KERNEL_ATTR_OPENABLE //!< Use SCE_KERNEL_ATTR_OPENABLE
+} SceEventFlagAttributes;
+
 typedef enum SceKernelMutexAttribute {
-	SCE_KERNEL_MUTEX_ATTR_RECURSIVE = 0x02
+	SCE_KERNEL_MUTEX_ATTR_RECURSIVE   = 0x02,
+	SCE_KERNEL_MUTEX_ATTR_CEILING     = 0x04
 } SceKernelMutexAttribute;
 
 /**
@@ -481,6 +499,9 @@ int sceKernelCancelSema(SceUID semaid, int setCount, int *numWaitThreads);
  */
 int sceKernelGetSemaInfo(SceUID semaid, SceKernelSemaInfo *info);
 
+SceUID sceKernelOpenSema(const char *name);
+int sceKernelCloseSema(SceUID semaid);
+
 
 /* Mutexes. */
 
@@ -631,20 +652,6 @@ typedef struct SceKernelEventFlagOptParam {
 } SceKernelEventFlagOptParam;
 
 typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
-
-/** Event flag creation attributes */
-typedef enum SceEventFlagAttributes {
-	/* Waiting threads queued on a FIFO basis */
-	SCE_EVENT_THREAD_FIFO = 0,
-	/* Waiting threads queued on priority basis */
-	SCE_EVENT_THREAD_PRIO = 0x00002000,
-	/* Event flag can only be waited upon by one thread */
-	SCE_EVENT_WAITSINGLE = 0,
-	/* Event flag can be waited upon by multiple threads */
-	SCE_EVENT_WAITMULTIPLE = 0x00001000,
-	/* Event flag can be accessed by sceKernelOpenEventFlag / sceKernelCloseEventFlag */
-	SCE_EVENT_OPENABLE = 0x00000080
-} SceEventFlagAttributes;
 
 /** Event flag wait types */
 typedef enum SceEventFlagWaitTypes {
