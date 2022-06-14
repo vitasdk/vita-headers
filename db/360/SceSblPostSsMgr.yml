@@ -4,6 +4,13 @@ modules:
   SceSblPostSsMgr:
     nid: 0xB6C941F2
     libraries:
+      SceSblFwLoaderForDriver:
+        kernel: true
+        nid: 0x6FE424E4
+        functions:
+          ksceSblFwLoaderLoad: 0x91C73A54
+          ksceSblFwLoaderLock: 0xA6278D27
+          ksceSblFwLoaderUnlock: 0xBB59FC7A
       SceSblLicMgr:
         kernel: false
         nid: 0x62083C72
