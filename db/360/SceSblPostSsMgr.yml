@@ -8,9 +8,9 @@ modules:
         kernel: true
         nid: 0x6FE424E4
         functions:
-          ksceSblFwLoaderLoadForDriver: 0x91C73A54
-          sceSblFwLoaderLockForDriver: 0xA6278D27
-          sceSblFwLoaderUnlockForDriver: 0xBB59FC7A
+          ksceSblFwLoaderLoad: 0x91C73A54
+          sceSblFwLoaderLock: 0xA6278D27
+          sceSblFwLoaderUnlock: 0xBB59FC7A
       SceSblLicMgr:
         kernel: false
         nid: 0x62083C72
