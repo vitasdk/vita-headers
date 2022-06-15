@@ -20,14 +20,19 @@ typedef enum SceNotificationUitlErrorCode {
 } SceNotificationUtilErrorCode;
 
 /**
+ * Constants
+ */
+#define SCE_NOTIFICATION_UTIL_TEXT_MAX			(0x3F)
+
+/**
  * BGDL-type notification event handler function
  */
 typedef void(*SceNotificationUtilProgressEventHandler)(int eventId);
 
 typedef struct SceNotificationUtilProgressInitParam {
-	SceWChar16 notificationText[0x3F];
+	SceWChar16 notificationText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	SceWChar16 notificationSubText[0x3F];
+	SceWChar16 notificationSubText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator1;						//must be 0
 	SceChar8 unk[0x3E6];
 	SceInt32 unk_4EC;						//can be set to 0
@@ -35,21 +40,29 @@ typedef struct SceNotificationUtilProgressInitParam {
 } SceNotificationUtilProgressInitParam;
 
 typedef struct SceNotificationUtilProgressUpdateParam {
-	SceWChar16 notificationText[0x3F];
+	SceWChar16 notificationText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	SceWChar16 notificationSubText[0x3F];
+	SceWChar16 notificationSubText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator1;						//must be 0
 	SceFloat targetProgress;
 	SceChar8 reserved[0x38];
 } SceNotificationUtilProgressUpdateParam;
 
 typedef struct SceNotificationUtilProgressFinishParam {
-	SceWChar16 notificationText[0x3F];
+	SceWChar16 notificationText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	SceWChar16 notificationSubText[0x3F];
+	SceWChar16 notificationSubText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator1;						//must be 0
 	SceChar8 path[0x3E8];
 } SceNotificationUtilProgressFinishParam;
+
+typedef struct SceNotificationUtilSendParam {
+	SceWChar16 notificationText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
+	SceInt16 separator0;						//must be 0
+	char unk_80[0x3E8];
+	SceInt32 unk_468;						//must be 0
+	SceInt32 unk_46C;						//must be 0
+} SceNotificationUtilSendParam;
 
 /**
  * Initialize notification util for use with BG application.
@@ -63,7 +76,7 @@ SceInt32 sceNotificationUtilBgAppInitialize(void);
  *
  * Text buffer size must be 0x410.
  */
-SceInt32 sceNotificationUtilSendNotification(const SceWChar16* text);
+SceInt32 sceNotificationUtilSendNotification(const SceNotificationUtilSendParam* sendParam);
 
 /**
  * Clean notifications for calling app from notification history.
