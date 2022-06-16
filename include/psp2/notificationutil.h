@@ -59,7 +59,7 @@ typedef struct SceNotificationUtilProgressFinishParam {
 typedef struct SceNotificationUtilSendParam {
 	SceWChar16 notificationText[SCE_NOTIFICATION_UTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	char unk_80[0x3E8];
+	SceChar8 unk_80[0x3E8];
 	SceInt32 unk_468;						//must be 0
 	SceInt32 unk_46C;						//must be 0
 } SceNotificationUtilSendParam;
