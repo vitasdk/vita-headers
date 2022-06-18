@@ -12,6 +12,8 @@
 extern "C" {
 #endif
 
+#define SCE_NOTIFICATIONUTIL_TEXT_MAX			0x3F
+
 /**
  * Error Codes
  */
@@ -25,9 +27,9 @@ typedef enum SceNotificationUitlErrorCode {
 typedef void(*SceNotificationUtilProgressEventHandler)(int eventId);
 
 typedef struct SceNotificationUtilProgressInitParam {
-	SceWChar16 notificationText[0x3F];
+	SceWChar16 notificationText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	SceWChar16 notificationSubText[0x3F];
+	SceWChar16 notificationSubText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
 	SceInt16 separator1;						//must be 0
 	SceChar8 unk[0x3E6];
 	SceInt32 unk_4EC;						//can be set to 0
@@ -35,18 +37,18 @@ typedef struct SceNotificationUtilProgressInitParam {
 } SceNotificationUtilProgressInitParam;
 
 typedef struct SceNotificationUtilProgressUpdateParam {
-	SceWChar16 notificationText[0x3F];
+	SceWChar16 notificationText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	SceWChar16 notificationSubText[0x3F];
+	SceWChar16 notificationSubText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
 	SceInt16 separator1;						//must be 0
 	SceFloat targetProgress;
 	SceChar8 reserved[0x38];
 } SceNotificationUtilProgressUpdateParam;
 
 typedef struct SceNotificationUtilProgressFinishParam {
-	SceWChar16 notificationText[0x3F];
+	SceWChar16 notificationText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
 	SceInt16 separator0;						//must be 0
-	SceWChar16 notificationSubText[0x3F];
+	SceWChar16 notificationSubText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
 	SceInt16 separator1;						//must be 0
 	SceChar8 path[0x3E8];
 } SceNotificationUtilProgressFinishParam;
