@@ -12,6 +12,9 @@
 extern "C" {
 #endif
 
+/**
+ * Constants
+ */
 #define SCE_NOTIFICATIONUTIL_TEXT_MAX			0x3F
 
 /**
