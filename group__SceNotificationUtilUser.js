@@ -1,5 +1,6 @@
 var group__SceNotificationUtilUser =
 [
+    [ "SCE_NOTIFICATIONUTIL_TEXT_MAX", "group__SceNotificationUtilUser.html#ga5519aa4298ea728a42aa34d62a300c37", null ],
     [ "SceNotificationUtilProgressEventHandler", "group__SceNotificationUtilUser.html#gac05c34af8df2fdc5a6d6104fb6a68f44", null ],
     [ "SceNotificationUitlErrorCode", "group__SceNotificationUtilUser.html#ga793d50e92ce88b0a90b46927aa0e39d7", [
       [ "SCE_NOTIFICATIONUTIL_ERROR_INTERNAL", "group__SceNotificationUtilUser.html#gga793d50e92ce88b0a90b46927aa0e39d7a0ea2da65b03f19e2a785626ac51d9f27", null ]
