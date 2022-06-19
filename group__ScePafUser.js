@@ -49,5 +49,5 @@ var group__ScePafUser =
     [ "sce_paf_strncmp", "group__ScePafUser.html#ga7f73a1d58c7e6b95d232d955050aba14", null ],
     [ "sce_paf_strncpy", "group__ScePafUser.html#ga21f4ef760701c9dd3978b698d603b61e", null ],
     [ "sce_paf_strrchr", "group__ScePafUser.html#gac3c9e985b370a9ea6f5095d5e26faf65", null ],
-    [ "sce_paf_private_strtof", "group__ScePafUser.html#ga0fcb62b4fe952ae457ccba82b40e113a", null ]
+    [ "sce_paf_strtod", "group__ScePafUser.html#ga5777e80fe88857e549b64518d9adb41b", null ]
 ];
