@@ -181,6 +181,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gab50456c2cdfbb75fd94b3a2cfde0376a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a">sceKernelGetSemaInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> semaid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a> *info)</td></tr>
 <tr class="memdesc:gab50456c2cdfbb75fd94b3a2cfde0376a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve information about a semaphore.  <a href="group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a">More...</a><br /></td></tr>
 <tr class="separator:gab50456c2cdfbb75fd94b3a2cfde0376a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4df52a5f80d2e1d39ad12bec8e514e57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga4df52a5f80d2e1d39ad12bec8e514e57">sceKernelOpenSema</a> (const char *name)</td></tr>
+<tr class="separator:ga4df52a5f80d2e1d39ad12bec8e514e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45722c60bfc0cd19418c48c172cb3333"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga45722c60bfc0cd19418c48c172cb3333">sceKernelCloseSema</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> semaid)</td></tr>
+<tr class="separator:ga45722c60bfc0cd19418c48c172cb3333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga86f0e930ecdef81393d7ff1d67ca5faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf">sceKernelCreateMutex</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int initCount, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a> *option)</td></tr>
 <tr class="memdesc:ga86f0e930ecdef81393d7ff1d67ca5faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mutex.  <a href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf">More...</a><br /></td></tr>
 <tr class="separator:ga86f0e930ecdef81393d7ff1d67ca5faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1380,19 +1384,24 @@ size</td>
 
 </div>
 </div>
-<a id="gacaf974d94877969095678f463230d242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacaf974d94877969095678f463230d242">&#9670;&nbsp;</a></span>SceKernelMutexAttribute</h2>
+<a id="gaad5c93e9ef85b6e5a13b726df820d8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad5c93e9ef85b6e5a13b726df820d8ca">&#9670;&nbsp;</a></span>SceKernelWaitableAttribute</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242">SceKernelMutexAttribute</a></td>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca">SceKernelWaitableAttribute</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe"></a>SCE_KERNEL_MUTEX_ATTR_RECURSIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a"></a>SCE_KERNEL_ATTR_THREAD_FIFO&#160;</td><td class="fielddoc"><p>Waiting threads First input First output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b"></a>SCE_KERNEL_ATTR_THREAD_PRIO&#160;</td><td class="fielddoc"><p>Waiting threads queued on priority basis. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad5c93e9ef85b6e5a13b726df820d8caab491605571ed7395fc5921291bc83075"></a>SCE_KERNEL_ATTR_OPENABLE&#160;</td><td class="fielddoc"><p>Sync object can be accessed by sceKernelOpenXxx. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1408,16 +1417,37 @@ size</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event flag creation attributes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8"></a>SCE_EVENT_THREAD_FIFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c"></a>SCE_EVENT_THREAD_PRIO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841"></a>SCE_EVENT_WAITSINGLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3"></a>SCE_EVENT_WAITMULTIPLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849"></a>SCE_EVENT_OPENABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8"></a>SCE_EVENT_THREAD_FIFO&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_THREAD_FIFO. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c"></a>SCE_EVENT_THREAD_PRIO&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_THREAD_PRIO. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841"></a>SCE_EVENT_WAITSINGLE&#160;</td><td class="fielddoc"><p>Sync object can only be waited upon by one thread. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3"></a>SCE_EVENT_WAITMULTIPLE&#160;</td><td class="fielddoc"><p>Sync object can be waited upon by multiple threads. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849"></a>SCE_EVENT_OPENABLE&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_OPENABLE. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3"></a>SCE_EVENT_WAITMULTIPLE&#160;</td><td class="fielddoc"><p>Allow the event flag to be waited upon by multiple threads. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="gacaf974d94877969095678f463230d242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacaf974d94877969095678f463230d242">&#9670;&nbsp;</a></span>SceKernelMutexAttribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242">SceKernelMutexAttribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe"></a>SCE_KERNEL_MUTEX_ATTR_RECURSIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b"></a>SCE_KERNEL_MUTEX_ATTR_CEILING&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2578,6 +2608,42 @@ size</td>
 
 </div>
 </div>
+<a id="ga4df52a5f80d2e1d39ad12bec8e514e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4df52a5f80d2e1d39ad12bec8e514e57">&#9670;&nbsp;</a></span>sceKernelOpenSema()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelOpenSema </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45722c60bfc0cd19418c48c172cb3333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45722c60bfc0cd19418c48c172cb3333">&#9670;&nbsp;</a></span>sceKernelCloseSema()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelCloseSema </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>semaid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga86f0e930ecdef81393d7ff1d67ca5faf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga86f0e930ecdef81393d7ff1d67ca5faf">&#9670;&nbsp;</a></span>sceKernelCreateMutex()</h2>
 
@@ -3005,7 +3071,7 @@ size</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>- The name of the event flag. </td></tr>
-    <tr><td class="paramname">attr</td><td>- Attributes from <a class="el" href="group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791" title="Event flag creation attributes.">SceEventFlagAttributes</a> </td></tr>
+    <tr><td class="paramname">attr</td><td>- Attributes from <a class="el" href="group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791">SceEventFlagAttributes</a> </td></tr>
     <tr><td class="paramname">bits</td><td>- Initial bit pattern. </td></tr>
     <tr><td class="paramname">opt</td><td>- Options, set to NULL </td></tr>
   </table>
@@ -4902,7 +4968,7 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga86f0e930ecdef81393d7ff1d67ca5faf"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf">sceKernelCreateMutex</a></div><div class="ttdeci">SceUID sceKernelCreateMutex(const char *name, SceUInt attr, int initCount, SceKernelMutexOptParam *option)</div><div class="ttdoc">Creates a new mutex.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga6bf8403f033a543d7c8a0a21e1153591"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a></div><div class="ttdeci">int sceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info)</div><div class="ttdoc">Get the status information for the specified thread.</div></div>
 <div class="ttc" id="akernel_2threadmgr_8h_html"><div class="ttname"><a href="kernel_2threadmgr_8h.html">threadmgr.h</a></div></div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:37</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:40</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga0d9ab619595e80459f2bffdca0fa888b"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">sceKernelCreateCallback</a></div><div class="ttdeci">int sceKernelCreateCallback(const char *name, unsigned int attr, SceKernelCallbackFunction func, void *userData)</div><div class="ttdoc">Create callback.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga983a3acb8fb04c7a46ebe8f5930582d7"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7">sceKernelCreateEventFlag</a></div><div class="ttdeci">SceUID sceKernelCreateEventFlag(const char *name, int attr, int bits, SceKernelEventFlagOptParam *opt)</div><div class="ttdoc">Create an event flag.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_gab81b0362839d7f9cbdcbf64305e7e603"><div class="ttname"><a href="group__SceThreadMgrUser.html#gab81b0362839d7f9cbdcbf64305e7e603">sceKernelSignalSema</a></div><div class="ttdeci">int sceKernelSignalSema(SceUID semaid, int signal)</div><div class="ttdoc">Send a signal to a semaphore.</div></div>
@@ -4913,7 +4979,7 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga49188b83b8954dc367fdbe4709424729"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a></div><div class="ttdeci">SceUID sceKernelCreateCond(const char *name, SceUInt attr, SceUID mutexId, const SceKernelCondOptParam *option)</div><div class="ttdoc">Creates a new condition variable.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7">sceKernelGetThreadId</a></div><div class="ttdeci">int sceKernelGetThreadId(void)</div><div class="ttdoc">Get the current thread Id.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_gabae55d2ad8fa3ea26c7402fe34bbf8d5"><div class="ttname"><a href="group__SceThreadMgrUser.html#gabae55d2ad8fa3ea26c7402fe34bbf8d5">sceKernelWaitSema</a></div><div class="ttdeci">int sceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout)</div><div class="ttdoc">Lock a semaphore.</div></div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:35</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:38</div></div>
 <div class="ttc" id="agroup__SceTypesKernel_html_ga9c036549fd8cfd554ba3aa26a397b663"><div class="ttname"><a href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></div><div class="ttdeci">int SceUID</div><div class="ttdoc">UIDs are used to describe many different kernel objects.</div><div class="ttdef"><b>Definition:</b> types.h:87</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga76893a433dee550c0b7be52d807e62a8"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga76893a433dee550c0b7be52d807e62a8">sceKernelDelayThread</a></div><div class="ttdeci">int sceKernelDelayThread(SceUInt delay)</div><div class="ttdoc">Delay the current thread by a specified number of microseconds.</div></div>
 <!-- start footer part -->

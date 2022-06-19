@@ -26,8 +26,10 @@ var group__SceThreadMgrUser =
       [ "SCE_THREAD_STAGNANT", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa", null ],
       [ "SCE_THREAD_SUSPENDED", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093", null ]
     ] ],
-    [ "SceKernelMutexAttribute", "group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242", [
-      [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ]
+    [ "SceKernelWaitableAttribute", "group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca", [
+      [ "SCE_KERNEL_ATTR_THREAD_FIFO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a", null ],
+      [ "SCE_KERNEL_ATTR_THREAD_PRIO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b", null ],
+      [ "SCE_KERNEL_ATTR_OPENABLE", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caab491605571ed7395fc5921291bc83075", null ]
     ] ],
     [ "SceEventFlagAttributes", "group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791", [
       [ "SCE_EVENT_THREAD_FIFO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8", null ],
@@ -36,6 +38,10 @@ var group__SceThreadMgrUser =
       [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ],
       [ "SCE_EVENT_OPENABLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849", null ],
       [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ]
+    ] ],
+    [ "SceKernelMutexAttribute", "group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242", [
+      [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
+      [ "SCE_KERNEL_MUTEX_ATTR_CEILING", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b", null ]
     ] ],
     [ "SceEventFlagWaitTypes", "group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843", [
       [ "SCE_EVENT_WAITAND", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b", null ],
@@ -91,12 +97,16 @@ var group__SceThreadMgrUser =
     [ "SCE_THREAD_DEAD", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48", null ],
     [ "SCE_THREAD_STAGNANT", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa", null ],
     [ "SCE_THREAD_SUSPENDED", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093", null ],
-    [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
+    [ "SCE_KERNEL_ATTR_THREAD_FIFO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a", null ],
+    [ "SCE_KERNEL_ATTR_THREAD_PRIO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b", null ],
+    [ "SCE_KERNEL_ATTR_OPENABLE", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caab491605571ed7395fc5921291bc83075", null ],
     [ "SCE_EVENT_THREAD_FIFO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8", null ],
     [ "SCE_EVENT_THREAD_PRIO", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c", null ],
     [ "SCE_EVENT_WAITSINGLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841", null ],
     [ "SCE_EVENT_WAITMULTIPLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3", null ],
     [ "SCE_EVENT_OPENABLE", "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849", null ],
+    [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
+    [ "SCE_KERNEL_MUTEX_ATTR_CEILING", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b", null ],
     [ "SCE_EVENT_WAITAND", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b", null ],
     [ "SCE_EVENT_WAITOR", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04", null ],
     [ "SCE_EVENT_WAITCLEAR", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10", null ],
@@ -145,6 +155,8 @@ var group__SceThreadMgrUser =
     [ "sceKernelPollSema", "group__SceThreadMgrUser.html#ga57b23ac4e988e2f461812aa06cb7928a", null ],
     [ "sceKernelCancelSema", "group__SceThreadMgrUser.html#ga9be7a097ef400710208a16325afd865e", null ],
     [ "sceKernelGetSemaInfo", "group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a", null ],
+    [ "sceKernelOpenSema", "group__SceThreadMgrUser.html#ga4df52a5f80d2e1d39ad12bec8e514e57", null ],
+    [ "sceKernelCloseSema", "group__SceThreadMgrUser.html#ga45722c60bfc0cd19418c48c172cb3333", null ],
     [ "sceKernelCreateMutex", "group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf", null ],
     [ "sceKernelDeleteMutex", "group__SceThreadMgrUser.html#ga2c79ea0bef6c807b46650bd4a3f5d2f2", null ],
     [ "sceKernelOpenMutex", "group__SceThreadMgrUser.html#gaec88b8bd6f478426538b184ddd6816bf", null ],
