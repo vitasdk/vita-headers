@@ -206,6 +206,34 @@ typedef struct SceDateTime {
 #define SCE_OK (0)
 
 
+#define SCE_KERNEL_1KiB   (0x400)
+#define SCE_KERNEL_2KiB   (0x800)
+#define SCE_KERNEL_4KiB   (0x1000)
+#define SCE_KERNEL_8KiB   (0x2000)
+#define SCE_KERNEL_16KiB  (0x4000)
+#define SCE_KERNEL_32KiB  (0x8000)
+#define SCE_KERNEL_64KiB  (0x10000)
+#define SCE_KERNEL_128KiB (0x20000)
+#define SCE_KERNEL_256KiB (0x40000)
+#define SCE_KERNEL_512KiB (0x80000)
+#define SCE_KERNEL_1MiB   (0x100000)
+#define SCE_KERNEL_2MiB   (0x200000)
+#define SCE_KERNEL_4MiB   (0x400000)
+#define SCE_KERNEL_8MiB   (0x800000)
+#define SCE_KERNEL_16MiB  (0x1000000)
+#define SCE_KERNEL_32MiB  (0x2000000)
+#define SCE_KERNEL_64MiB  (0x4000000)
+#define SCE_KERNEL_128MiB (0x8000000)
+#define SCE_KERNEL_256MiB (0x10000000)
+#define SCE_KERNEL_512MiB (0x20000000)
+#define SCE_KERNEL_1GiB   (0x40000000)
+#define SCE_KERNEL_2GiB   (0x80000000)
+#define SCE_KERNEL_4GiB   (0x100000000LL)
+#define SCE_KERNEL_8GiB   (0x200000000LL)
+#define SCE_KERNEL_16GiB  (0x400000000LL)
+#define SCE_KERNEL_32GiB  (0x800000000LL)
+
+
 #ifdef __cplusplus
 }
 #endif
