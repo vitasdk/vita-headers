@@ -1,7 +1,7 @@
 var group__SceRazorHudUser_structSceRazorGpuLiveEntryJobVertexValues2 =
 [
-    [ "vdmPrimitivesInput", "group__SceRazorHudUser.html#ga4a4d6e6644bee468a4e51ab08d700b10", null ],
-    [ "mtePrimitivesOutput", "group__SceRazorHudUser.html#ga1dc8856212bb59dace5a67466470f3d8", null ],
-    [ "vdmVerticesInput", "group__SceRazorHudUser.html#ga3328172d78c45c1dc1f53b729f47e4f6", null ],
-    [ "mteVerticesOutput", "group__SceRazorHudUser.html#gab261142231517910d8f7a04f5ccd0885", null ]
+    [ "vdm_primitives_input_num", "group__SceRazorHudUser.html#ga111ba62279829f0fe2556b8b3cc19c49", null ],
+    [ "mte_primitives_output_num", "group__SceRazorHudUser.html#ga7abad7b158e9c6b47a9662445cc3db1e", null ],
+    [ "vdm_vertices_input_num", "group__SceRazorHudUser.html#gafcc023466dd6c066529978c427653136", null ],
+    [ "mte_vertices_output_num", "group__SceRazorHudUser.html#ga6b7b74353b9b0076ae8bea58bd65df37", null ]
 ];

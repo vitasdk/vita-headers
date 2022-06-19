@@ -1,6 +1,6 @@
 var group__SceRazorHudUser_structSceRazorGpuLiveEntryHeader =
 [
-    [ "entrySize", "group__SceRazorHudUser.html#ga2fad822399faf07678b2633834986b96", null ],
-    [ "entryType", "group__SceRazorHudUser.html#ga23493f8e2f0760211b4ef95f82839fec", null ],
+    [ "entry_size", "group__SceRazorHudUser.html#ga297adeb0af9969860e25046453498a32", null ],
+    [ "entry_type", "group__SceRazorHudUser.html#gafe139f5bdec0a790f2fcaf547f53f3ed", null ],
     [ "reserved", "group__SceRazorHudUser.html#ga8fb080a97b328dd59086246d3f759b1d", null ]
 ];

@@ -1,10 +1,10 @@
 var group__SceRazorHudUser_structSceRazorGpuLiveEntryJobValues =
 [
-    [ "vertexValues1", "group__SceRazorHudUser.html#gae7964074c1194eaf77e96bba26cdb07d", null ],
-    [ "fragmentValues1", "group__SceRazorHudUser.html#ga6aa43767e00dad445247e96941cc4689", null ],
-    [ "vertexValues2", "group__SceRazorHudUser.html#ga5aaa9d9bb84dfc7467efb0c819002393", null ],
-    [ "fragmentValues2", "group__SceRazorHudUser.html#ga53ab4e86ea4daad89b57a932f7d231d2", null ],
-    [ "vertexValues3", "group__SceRazorHudUser.html#ga342b8ab6674be0d3c840cc999a139f1b", null ],
-    [ "fragmentValues3", "group__SceRazorHudUser.html#ga2a459e316fa9c7a0bf60698f689618ec", null ],
+    [ "vertex_values_type1", "group__SceRazorHudUser.html#ga65405abf50c317be160c95032153b68f", null ],
+    [ "fragment_values_type1", "group__SceRazorHudUser.html#ga113058be0153d61cffa2608ce458627c", null ],
+    [ "vertex_values_type2", "group__SceRazorHudUser.html#ga8361bd4df4b097653da5aec55b00d74d", null ],
+    [ "fragment_values_type2", "group__SceRazorHudUser.html#ga635ca1c1eb2cb8f1ed276d89c42a6df2", null ],
+    [ "vertex_values_type3", "group__SceRazorHudUser.html#ga9f443c0869a267d3e727fd229a7ba2a5", null ],
+    [ "fragment_values_type3", "group__SceRazorHudUser.html#gac7d48ea6934f88131a979204c7752326", null ],
     [ "reserved", "group__SceRazorHudUser.html#ga4d0d5a8827d2b5fccfac72eb1fc60a77", null ]
 ];

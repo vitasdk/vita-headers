@@ -1,4 +1,4 @@
 var group__SceRazorHudUser_structSceRazorGpuLiveEntryJobFragmentValues3 =
 [
-    [ "bifIspParameterFetchMemoryRead", "group__SceRazorHudUser.html#ga4a5e443a8cac2490782a2fad9c2fc5c9", null ]
+    [ "isp_parameter_fetches_mem_reads", "group__SceRazorHudUser.html#gaae33f09b46b6c3e7b9011e7605d1d7dd", null ]
 ];

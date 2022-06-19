@@ -1,6 +1,6 @@
 var group__SceRazorHudUser_structSceRazorGpuLiveEntryJobFragmentValues2 =
 [
-    [ "rasterizedPixelsBeforeHsr", "group__SceRazorHudUser.html#ga0ae8abe5eb6c185de15589ffb0c2c635", null ],
-    [ "rasterizedOutputPixels", "group__SceRazorHudUser.html#gadf2d232266c91b7ca41c675a2acd5ae8", null ],
-    [ "rasterizedOutputSamples", "group__SceRazorHudUser.html#ga2df81e8ef7a04291b77563c05b601638", null ]
+    [ "rasterized_pixels_before_hsr_num", "group__SceRazorHudUser.html#ga47132bfea5e3d3d906acebfbb8b2fa09", null ],
+    [ "rasterized_output_pixels_num", "group__SceRazorHudUser.html#ga67af3cbee408cac96d1c638d1b5c67e0", null ],
+    [ "rasterized_output_samples_num", "group__SceRazorHudUser.html#ga9d37ab585f529345c73f976dabd2b4f0", null ]
 ];

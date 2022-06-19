@@ -1,11 +1,11 @@
 var group__SceRazorHudUser_structSceRazorGpuLiveResultInfo =
 [
-    [ "resultData", "group__SceRazorHudUser.html#ga967cd7c7a63581214810dabc25fdff4f", null ],
-    [ "entryCount", "group__SceRazorHudUser.html#ga864fd970870d6eef3c834fd5531fcd15", null ],
-    [ "overflowCount", "group__SceRazorHudUser.html#ga29cae11f30eeab8c5525c7de29e98231", null ],
-    [ "bufferSize", "group__SceRazorHudUser.html#gaa9c006abdfecdb5e7dde521048c49489", null ],
-    [ "startTime", "group__SceRazorHudUser.html#gaa2d4f164b86c2d9c3b86ea2a66d65bcf", null ],
-    [ "endTime", "group__SceRazorHudUser.html#gaeb8801ccc3aa3d4c940b60b78a6acf22", null ],
-    [ "metricGroup", "group__SceRazorHudUser.html#ga5764c12dd855d8e6eff38ff734219837", null ],
+    [ "result_data", "group__SceRazorHudUser.html#gaa0bd927019aaad36f57121fd0a812eff", null ],
+    [ "entry_count", "group__SceRazorHudUser.html#gae32b20888b0e0fe9cc7468e26a6af402", null ],
+    [ "overflow_count", "group__SceRazorHudUser.html#ga4567ecd6d10e923e2f5d206f6193617c", null ],
+    [ "buffer_size", "group__SceRazorHudUser.html#ga7a012ddb9dc30f95678d942e05c02d7a", null ],
+    [ "start_time", "group__SceRazorHudUser.html#ga1164c321592d3d8758e0ca903b9d99fc", null ],
+    [ "end_time", "group__SceRazorHudUser.html#gaf8dc5dbfe15b7795dce6a2a9bbb889fe", null ],
+    [ "metric_group", "group__SceRazorHudUser.html#ga53cae38061e2db7258eed09179d86b05", null ],
     [ "reserved", "group__SceRazorHudUser.html#gac5db7496ab5009aafa3c7fb24b7e9662", null ]
 ];
