@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceDmacMgr}
- * \usage{psp2/kernel/dmac.h,SceDmacmgr_stub}
+ * \usage{psp2/kernel/dmac.h,SceKernelDmacMgr_stub}
  */
 
 
