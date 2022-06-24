@@ -13,6 +13,7 @@
 #include <psp2kern/kernel/sysmem/heap.h>
 #include <psp2kern/kernel/sysmem/data_transfers.h>
 #include <psp2kern/kernel/sysmem/mmu.h>
+#include <psp2kern/kernel/sysmem/memtype.h>
 #include <psp2kern/kernel/debug.h>
 #include <psp2kern/kernel/sysroot.h>
 #include <psp2common/kernel/sysmem.h>
