@@ -1,10 +1,10 @@
 var NAVTREEINDEX29 =
 {
-"group__SceHidUser.html#gac44af84b16730925f260248d462c572a":[4,0,1,0,27,1],
-"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[1,1,7,0,4],
+"group__SceHidUser.html#gac44af84b16730925f260248d462c572a":[1,1,7,0,1],
 "group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[4,0,1,0,27,4],
-"group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[1,1,7,0,3],
+"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[1,1,7,0,4],
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[4,0,1,0,27,3],
+"group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[1,1,7,0,3],
 "group__SceHttp.html":[1,10,0],
 "group__SceHttpUser.html":[1,10,0,0],
 "group__SceHttpUser.html#ga0043a39b9e13e283156792d106191cac":[4,0,1,0,3,0,46],
