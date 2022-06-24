@@ -1,5 +1,7 @@
 var NAVTREEINDEX84 =
 {
+"vitasdk_2utils_8h_source.html":[4,0,1,3,0],
+"vitasdk_8h.html":[4,0,1,4],
 "vitasdk_8h_source.html":[4,0,1,4],
 "vitasdkkern_8h.html":[4,0,1,5],
 "vitasdkkern_8h_source.html":[4,0,1,5],

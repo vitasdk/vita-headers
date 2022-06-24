@@ -10,6 +10,7 @@ var clib_8h =
     [ "sceClibVsnprintf", "group__SceCLibUser.html#gafe8dc83427798c3515a30050d02494c7", null ],
     [ "sceClibStrncpy", "group__SceCLibUser.html#ga0128fa4adab370744b9357b481606f0d", null ],
     [ "sceClibStrncat", "group__SceCLibUser.html#ga0f7338ac36e22b9be487d4745fbefa18", null ],
+    [ "sceClibStrchr", "group__SceCLibUser.html#ga037d49bc656ee7c63934ec46b31b40ed", null ],
     [ "sceClibStrrchr", "group__SceCLibUser.html#gae5e96f4c333998a2f9dd3399cf2c19c4", null ],
     [ "sceClibStrstr", "group__SceCLibUser.html#ga4a7f3c1cb4c534fd05ff69d47b76f3f9", null ],
     [ "sceClibStrcmp", "group__SceCLibUser.html#gaf0feab012391a6bf43b0a7c887d1568a", null ],
