@@ -48,6 +48,7 @@ int sceClibVsnprintf(char *dst, SceSize dst_max_size, const char *fmt, va_list a
 char *sceClibStrncpy(char *dst, const char *src, SceSize len);
 char *sceClibStrncat(char *dst, const char *src, SceSize len);
 
+char *sceClibStrchr(const char *s, int ch);
 char *sceClibStrrchr(const char *src, int ch);
 char *sceClibStrstr(const char *s1, const char *s2);
 
