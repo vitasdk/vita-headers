@@ -1,4 +1,5 @@
 var group__SceProcessmgrUser_structSceKernelTimeval =
 [
-    [ "value", "group__SceProcessmgrUser.html#gae868cc6dbe372f358837c9f9926e2830", null ]
+    [ "sec", "group__SceProcessmgrUser.html#ga14fed8ba7456c1d683c4959280358518", null ],
+    [ "usec", "group__SceProcessmgrUser.html#ga5a4dd98da7736a6e67b9da59e2d51806", null ]
 ];
