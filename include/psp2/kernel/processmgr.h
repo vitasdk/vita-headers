@@ -112,7 +112,8 @@ SceKernelClock sceKernelLibcClock(void);
 SceKernelTime sceKernelLibcTime(SceKernelTime *tloc);
 
 typedef struct SceKernelTimeval {
-	SceUInt64 value;
+	SceInt32 sec;
+	SceInt32 usec;
 } SceKernelTimeval;
 
 typedef struct SceKernelTimezone {
