@@ -1183,6 +1183,8 @@ typedef struct SceKernelLwCondOptParam {
 int sceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigned int attr, SceKernelLwMutexWork *pLwMutex, const SceKernelLwCondOptParam *pOptParam);
 int sceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
 int sceKernelSignalLwCond(SceKernelLwCondWork *pWork);
+int sceKernelSignalLwCondAll(SceKernelLwCondWork *pWork);
+int sceKernelSignalLwCondTo(SceKernelLwCondWork *pWork, SceUID threadId);
 int sceKernelWaitLwCond(SceKernelLwCondWork *pWork,  unsigned int *pTimeout);
 
 /**
