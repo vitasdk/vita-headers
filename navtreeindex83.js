@@ -1,5 +1,9 @@
 var NAVTREEINDEX83 =
 {
+"group__SystemStatus.html":[1,11],
+"group__USB.html":[1,12],
+"group__Vitasdk.html":[1,14],
+"group__debug.html":[1,9],
 "group__kernel.html":[1,7],
 "group__update.html":[1,8],
 "gxm_8h.html":[4,0,1,0,25],
@@ -22,8 +26,8 @@ var NAVTREEINDEX83 =
 "ime__dialog_8h_source.html":[4,0,1,0,28],
 "incoming__dialog_8h.html":[4,0,1,0,29],
 "incoming__dialog_8h_source.html":[4,0,1,0,29],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intrmgr_8h.html":[4,0,1,2,2,9],
 "intrmgr_8h_source.html":[4,0,1,2,2,9],
 "io_2devctl_8h.html":[4,0,1,0,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX83 =
 "videodec_8h.html":[4,0,1,0,80],
 "videodec_8h_source.html":[4,0,1,0,80],
 "videoexport_8h.html":[4,0,1,0,81],
-"videoexport_8h_source.html":[4,0,1,0,81],
-"vitasdk_2utils_8h.html":[4,0,1,3,0],
-"vitasdk_2utils_8h.html#a6a55a1b745c1e8467dbb4b6cb933ab7e":[4,0,1,3,0,1],
-"vitasdk_2utils_8h.html#a94fe23a44a1a8afae2b8285db5fb707b":[4,0,1,3,0,2],
-"vitasdk_2utils_8h.html#ae0d8ee6250228dab0b4c0e9686b962ba":[4,0,1,3,0,0]
+"videoexport_8h_source.html":[4,0,1,0,81]
 };

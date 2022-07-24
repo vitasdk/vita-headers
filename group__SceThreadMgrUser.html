@@ -339,6 +339,10 @@ Functions</h2></td></tr>
 <tr class="separator:gadeae7e417052b8f6009dc1f6193c1930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8649a23c271251a985f0005f4199784e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga8649a23c271251a985f0005f4199784e">sceKernelSignalLwCond</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork)</td></tr>
 <tr class="separator:ga8649a23c271251a985f0005f4199784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga953c79382ca3d7d425d73a30fc4eedc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga953c79382ca3d7d425d73a30fc4eedc5">sceKernelSignalLwCondAll</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork)</td></tr>
+<tr class="separator:ga953c79382ca3d7d425d73a30fc4eedc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad8d92ec27f2bbb4c8968f30b0dc230d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaad8d92ec27f2bbb4c8968f30b0dc230d">sceKernelSignalLwCondTo</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId)</td></tr>
+<tr class="separator:gaad8d92ec27f2bbb4c8968f30b0dc230d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga74fc1c0a89c8216ceb71767292d81006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga74fc1c0a89c8216ceb71767292d81006">sceKernelWaitLwCond</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork, unsigned int *pTimeout)</td></tr>
 <tr class="separator:ga74fc1c0a89c8216ceb71767292d81006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0aa2c21b5cbd523bb7804731e235e3d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0aa2c21b5cbd523bb7804731e235e3d3">sceKernelWaitSignal</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> unk0, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> delay, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *timeout)</td></tr>
@@ -4767,6 +4771,52 @@ size</td>
           <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *&#160;</td>
           <td class="paramname"><em>pWork</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga953c79382ca3d7d425d73a30fc4eedc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga953c79382ca3d7d425d73a30fc4eedc5">&#9670;&nbsp;</a></span>sceKernelSignalLwCondAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelSignalLwCondAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *&#160;</td>
+          <td class="paramname"><em>pWork</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaad8d92ec27f2bbb4c8968f30b0dc230d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad8d92ec27f2bbb4c8968f30b0dc230d">&#9670;&nbsp;</a></span>sceKernelSignalLwCondTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelSignalLwCondTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *&#160;</td>
+          <td class="paramname"><em>pWork</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>threadId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
