@@ -1246,7 +1246,16 @@ typedef struct SceKernelRWLockInfo {
 	SceUID          rwlockId;
 	/** NULL-terminated name of the rwlock */
 	char            name[32];
-	int             unk[5];
+	/** Attributes */
+  SceUInt32       attr;
+	/** The current lock count */
+	int             currentCount;
+	/** The UID of the current owner of the rwlock with write access, 0 when locked for reads */
+	SceUID          currentWriteOwnerId;
+	/** The number of threads waiting on the rwlock for read access */
+	int             numReadWaitThreads;
+	/** The number of threads waiting on the rwlock for write access */
+	int             numWriteWaitThreads;
 } SceKernelRWLockInfo;
 
 /**
