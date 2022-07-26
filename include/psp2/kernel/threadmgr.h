@@ -1243,7 +1243,7 @@ typedef struct SceKernelRWLockInfo {
 	/** Size of the ::SceKernelRWLockInfo structure */
 	SceSize         size;
 	/** The UID of the rwlock */
-	SceUID          rwlockId;
+	SceUID          rwLockId;
 	/** NULL-terminated name of the rwlock */
 	char            name[32];
 	/** Attributes */
