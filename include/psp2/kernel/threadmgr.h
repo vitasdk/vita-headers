@@ -1376,7 +1376,6 @@ int sceKernelUnlockWriteRWLock(SceUID rwlock_id);
  */
 int sceKernelGetRWLockInfo(SceUID rwlock_id, SceKernelRWLockInfo *info);
 
-
 #ifdef __cplusplus
 }
 #endif
