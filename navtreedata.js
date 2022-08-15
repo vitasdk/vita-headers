@@ -136,14 +136,14 @@ var NAVTREEINDEX =
 "group__SceSystemParamUser.html#ggaae33ce498fb58ec8fb018e03635e33cdac28ae20d59f65452e901513b03cb100b",
 "group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3",
 "group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6f586e8489418f6428ac915abfa3320e",
-"group__SceThreadMgrUser.html#gaf68d3fc1069a77dcec0ae8044d444144",
-"group__SceTypesKernel.html#gad563fb9897e927ac60a231ba16859629",
-"group__SceUdcdKernel.html#ga4c5ffd9e3b2d23c93d29b70193b8d79c",
-"group__SceUdcdKernel.html#gga9830ab504b7cb5de34e6e43118997034aa16b4add07745eaf75b6eb19ed2230ef",
-"group__SceUsbSerialUser.html#gab844c467ba0dfe6201630408fe131a09",
-"group__SceUtilsKernel.html#ga8285e853598092a38ebf4026558f5b55",
-"group__SystemStatus.html",
-"vitasdk_2utils_8h.html"
+"group__SceThreadMgrUser.html#gae2d1aad3b2d00e3fae4003cb32338697",
+"group__SceTypesKernel.html#gab5edd32fee63a5c39d61d295592b7537",
+"group__SceUdcdKernel.html#ga158c8122feafcc64f46565c0a354ba76",
+"group__SceUdcdKernel.html#gga9830ab504b7cb5de34e6e43118997034a4040b0a38fc23a36dc2d0ed5feaf5253",
+"group__SceUpdateMgrUser.html#gaf0f3a48dc43971b3bafb43ec252fb47b",
+"group__SceUtils.html",
+"group__SceVshBridgeUser.html#ga8f5bf7c26c7bdaafc9f43c7f5febc940",
+"types_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

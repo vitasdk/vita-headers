@@ -243,6 +243,8 @@ var annotated_dup =
     [ "SceKernelProcessContext", "group__SceSysmemKernel.html#structSceKernelProcessContext", "group__SceSysmemKernel_structSceKernelProcessContext" ],
     [ "SceKernelProcessInfo", "group__SceProcessmgrKernel.html#structSceKernelProcessInfo", "group__SceProcessmgrKernel_structSceKernelProcessInfo" ],
     [ "SceKernelProcessModuleInfo", "group__SceProcessmgrKernel.html#structSceKernelProcessModuleInfo", "group__SceProcessmgrKernel_structSceKernelProcessModuleInfo" ],
+    [ "SceKernelRWLockInfo", "group__SceThreadMgrUser.html#structSceKernelRWLockInfo", "group__SceThreadMgrUser_structSceKernelRWLockInfo" ],
+    [ "SceKernelRWLockOptParam", "group__SceThreadMgrUser.html#structSceKernelRWLockOptParam", "group__SceThreadMgrUser_structSceKernelRWLockOptParam" ],
     [ "SceKernelSegmentInfo", "group__SceModulemgrUser.html#structSceKernelSegmentInfo", "group__SceModulemgrUser_structSceKernelSegmentInfo" ],
     [ "SceKernelSegmentInfo2", "group__SceModulemgrKernel.html#structSceKernelSegmentInfo2", "group__SceModulemgrKernel_structSceKernelSegmentInfo2" ],
     [ "SceKernelSemaInfo", "group__SceThreadMgrUser.html#structSceKernelSemaInfo", "group__SceThreadMgrUser_structSceKernelSemaInfo" ],

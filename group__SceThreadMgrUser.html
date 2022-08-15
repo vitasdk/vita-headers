@@ -360,6 +360,45 @@ Functions</h2></td></tr>
 <tr class="memitem:gae74b3a3318e9781fe140bd49f56f43b6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae74b3a3318e9781fe140bd49f56f43b6">sceKernelGetTLSAddr</a> (int key)</td></tr>
 <tr class="memdesc:gae74b3a3318e9781fe140bd49f56f43b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sceKernelGetTLSAddr get pointer to TLS key area for current thread  <a href="group__SceThreadMgrUser.html#gae74b3a3318e9781fe140bd49f56f43b6">More...</a><br /></td></tr>
 <tr class="separator:gae74b3a3318e9781fe140bd49f56f43b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae436e9ff9c632110520f547fc391efe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8">sceKernelCreateRWLock</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> attr, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockOptParam">SceKernelRWLockOptParam</a> *opt_param)</td></tr>
+<tr class="memdesc:gae436e9ff9c632110520f547fc391efe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new rwlock.  <a href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8">More...</a><br /></td></tr>
+<tr class="separator:gae436e9ff9c632110520f547fc391efe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9feeb19d7954d102d387d3dba9bc83bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga9feeb19d7954d102d387d3dba9bc83bd">sceKernelDeleteRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id)</td></tr>
+<tr class="memdesc:ga9feeb19d7954d102d387d3dba9bc83bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a rwlock.  <a href="group__SceThreadMgrUser.html#ga9feeb19d7954d102d387d3dba9bc83bd">More...</a><br /></td></tr>
+<tr class="separator:ga9feeb19d7954d102d387d3dba9bc83bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e11e59d7a71201d0e76053186aaaa75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga7e11e59d7a71201d0e76053186aaaa75">sceKernelOpenRWLock</a> (const char *name)</td></tr>
+<tr class="memdesc:ga7e11e59d7a71201d0e76053186aaaa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a rwlock.  <a href="group__SceThreadMgrUser.html#ga7e11e59d7a71201d0e76053186aaaa75">More...</a><br /></td></tr>
+<tr class="separator:ga7e11e59d7a71201d0e76053186aaaa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77e0d567d14090377de60219aa8f2a91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga77e0d567d14090377de60219aa8f2a91">sceKernelCloseRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id)</td></tr>
+<tr class="memdesc:ga77e0d567d14090377de60219aa8f2a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a rwlock.  <a href="group__SceThreadMgrUser.html#ga77e0d567d14090377de60219aa8f2a91">More...</a><br /></td></tr>
+<tr class="separator:ga77e0d567d14090377de60219aa8f2a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad62cfd547c05e69b6b15ff5a9944a76a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gad62cfd547c05e69b6b15ff5a9944a76a">sceKernelLockReadRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id, unsigned int *timeout)</td></tr>
+<tr class="memdesc:gad62cfd547c05e69b6b15ff5a9944a76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a rwlock with read access.  <a href="group__SceThreadMgrUser.html#gad62cfd547c05e69b6b15ff5a9944a76a">More...</a><br /></td></tr>
+<tr class="separator:gad62cfd547c05e69b6b15ff5a9944a76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga374b4f279e4e1f496283be0cee453d65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga374b4f279e4e1f496283be0cee453d65">sceKernelLockWriteRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id, unsigned int *timeout)</td></tr>
+<tr class="memdesc:ga374b4f279e4e1f496283be0cee453d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a rwlock with write access.  <a href="group__SceThreadMgrUser.html#ga374b4f279e4e1f496283be0cee453d65">More...</a><br /></td></tr>
+<tr class="separator:ga374b4f279e4e1f496283be0cee453d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga544c72ad99fc6d70985d0e75a03eab95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga544c72ad99fc6d70985d0e75a03eab95">sceKernelLockReadRWLockCB</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id, unsigned int *timeout)</td></tr>
+<tr class="memdesc:ga544c72ad99fc6d70985d0e75a03eab95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a rwlock with read access and handle callbacks.  <a href="group__SceThreadMgrUser.html#ga544c72ad99fc6d70985d0e75a03eab95">More...</a><br /></td></tr>
+<tr class="separator:ga544c72ad99fc6d70985d0e75a03eab95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga985bd0e6d349cc426135056c69c66abe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga985bd0e6d349cc426135056c69c66abe">sceKernelLockWriteRWLockCB</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id, unsigned int *timeout)</td></tr>
+<tr class="memdesc:ga985bd0e6d349cc426135056c69c66abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a rwlock with write access and handle callbacks.  <a href="group__SceThreadMgrUser.html#ga985bd0e6d349cc426135056c69c66abe">More...</a><br /></td></tr>
+<tr class="separator:ga985bd0e6d349cc426135056c69c66abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa46aacb0ea16a4b8e52d2ca9896b0d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gafa46aacb0ea16a4b8e52d2ca9896b0d2">sceKernelTryLockReadRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id)</td></tr>
+<tr class="memdesc:gafa46aacb0ea16a4b8e52d2ca9896b0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to lock a rwlock with read access (non-blocking)  <a href="group__SceThreadMgrUser.html#gafa46aacb0ea16a4b8e52d2ca9896b0d2">More...</a><br /></td></tr>
+<tr class="separator:gafa46aacb0ea16a4b8e52d2ca9896b0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8dd2656ea148873806ab020d23a54dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gac8dd2656ea148873806ab020d23a54dc">sceKernelTryLockWriteRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id)</td></tr>
+<tr class="memdesc:gac8dd2656ea148873806ab020d23a54dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to lock a rwlock with write access (non-blocking)  <a href="group__SceThreadMgrUser.html#gac8dd2656ea148873806ab020d23a54dc">More...</a><br /></td></tr>
+<tr class="separator:gac8dd2656ea148873806ab020d23a54dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga787172c8f6bb5f2f3cd11c3448b4951f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga787172c8f6bb5f2f3cd11c3448b4951f">sceKernelUnlockReadRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id)</td></tr>
+<tr class="memdesc:ga787172c8f6bb5f2f3cd11c3448b4951f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to unlock a rwlock with read access (non-blocking)  <a href="group__SceThreadMgrUser.html#ga787172c8f6bb5f2f3cd11c3448b4951f">More...</a><br /></td></tr>
+<tr class="separator:ga787172c8f6bb5f2f3cd11c3448b4951f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga790a71e7aee6193900c03f2f1b2e9d29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga790a71e7aee6193900c03f2f1b2e9d29">sceKernelUnlockWriteRWLock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id)</td></tr>
+<tr class="memdesc:ga790a71e7aee6193900c03f2f1b2e9d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to unlock a rwlock with write access (non-blocking)  <a href="group__SceThreadMgrUser.html#ga790a71e7aee6193900c03f2f1b2e9d29">More...</a><br /></td></tr>
+<tr class="separator:ga790a71e7aee6193900c03f2f1b2e9d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c20b763cf7fc189f5366d8c63fda4c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga4c20b763cf7fc189f5366d8c63fda4c4">sceKernelGetRWLockInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockInfo">SceKernelRWLockInfo</a> *info)</td></tr>
+<tr class="memdesc:ga4c20b763cf7fc189f5366d8c63fda4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve information about a rwlock.  <a href="group__SceThreadMgrUser.html#ga4c20b763cf7fc189f5366d8c63fda4c4">More...</a><br /></td></tr>
+<tr class="separator:ga4c20b763cf7fc189f5366d8c63fda4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -1298,6 +1337,97 @@ data[4]</td>
 size</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelRWLockOptParam" id="structSceKernelRWLockOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelRWLockOptParam">&#9670;&nbsp;</a></span>SceKernelRWLockOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelRWLockOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Additional options used when creating rwlock. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga0132651945362427d936f1412127a649"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockOptParam" title="Additional options used when creating rwlock.">SceKernelRWLockOptParam</a> structure. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelRWLockInfo" id="structSceKernelRWLockInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelRWLockInfo">&#9670;&nbsp;</a></span>SceKernelRWLockInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelRWLockInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Current state of a rwlock. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#ga4c20b763cf7fc189f5366d8c63fda4c4" title="Retrieve information about a rwlock.">sceKernelGetRWLockInfo</a> </dd></dl>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga0323fb054039df680435e40f01c746d7"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockInfo" title="Current state of a rwlock.">SceKernelRWLockInfo</a> structure. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1f99d2ab7e426663d35e4ac662339ba4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+rwLockId</td>
+<td class="fielddoc">
+The UID of the rwlock. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga6cbdd0966aa1c88e90239a9663bee800"></a>char</td>
+<td class="fieldname">
+name[32]</td>
+<td class="fielddoc">
+NULL-terminated name of the rwlock. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1d151b6666f0a49118d8665953f8ad67"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+Attributes. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga933b242576fa5eefcbb8002fb6b7d852"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
+<td class="fieldname">
+lockCount</td>
+<td class="fielddoc">
+The current lock count. </td></tr>
+<tr><td class="fieldtype">
+<a id="gae7d64591b9ff5b4fc1305c0fd7712ade"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+writeOwnerId</td>
+<td class="fielddoc">
+The UID of the current owner of the rwlock with write access, 0 when locked for reads. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga3bf247221b23a9583ec769dfbe0121a5"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+numReadWaitThreads</td>
+<td class="fielddoc">
+The number of threads waiting on the rwlock for read access. </td></tr>
+<tr><td class="fieldtype">
+<a id="gabd51dc5a9f1a16d2e9734415424a014b"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+numWriteWaitThreads</td>
+<td class="fielddoc">
+The number of threads waiting on the rwlock for write access. </td></tr>
 </table>
 
 </div>
@@ -5013,6 +5143,433 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 
 </div>
 </div>
+<a id="gae436e9ff9c632110520f547fc391efe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae436e9ff9c632110520f547fc391efe8">&#9670;&nbsp;</a></span>sceKernelCreateRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelCreateRWLock </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockOptParam">SceKernelRWLockOptParam</a> *&#160;</td>
+          <td class="paramname"><em>opt_param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new rwlock. </p>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> rwlock_id;</div>
+<div class="line">rwlock_id = <a class="code" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8">sceKernelCreateRWLock</a>(<span class="stringliteral">&quot;MyRWLock&quot;</span>, 0, NULL);</div>
+</div><!-- fragment --></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- Specifies the name of the rwlock </td></tr>
+    <tr><td class="paramname">attr</td><td>- RWLock attribute flags (normally set to 0) </td></tr>
+    <tr><td class="paramname">option</td><td>- RWLock options (normally set to NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RWLock id on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga9feeb19d7954d102d387d3dba9bc83bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9feeb19d7954d102d387d3dba9bc83bd">&#9670;&nbsp;</a></span>sceKernelDeleteRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelDeleteRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a rwlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga7e11e59d7a71201d0e76053186aaaa75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e11e59d7a71201d0e76053186aaaa75">&#9670;&nbsp;</a></span>sceKernelOpenRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelOpenRWLock </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a rwlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- The name of the rwlock to open </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RWLock id on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga77e0d567d14090377de60219aa8f2a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77e0d567d14090377de60219aa8f2a91">&#9670;&nbsp;</a></span>sceKernelCloseRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelCloseRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close a rwlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gad62cfd547c05e69b6b15ff5a9944a76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad62cfd547c05e69b6b15ff5a9944a76a">&#9670;&nbsp;</a></span>sceKernelLockReadRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelLockReadRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock a rwlock with read access. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+    <tr><td class="paramname">timeout</td><td>- Timeout in microseconds, use NULL to disable it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga374b4f279e4e1f496283be0cee453d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga374b4f279e4e1f496283be0cee453d65">&#9670;&nbsp;</a></span>sceKernelLockWriteRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelLockWriteRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock a rwlock with write access. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+    <tr><td class="paramname">timeout</td><td>- Timeout in microseconds, use NULL to disable it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga544c72ad99fc6d70985d0e75a03eab95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga544c72ad99fc6d70985d0e75a03eab95">&#9670;&nbsp;</a></span>sceKernelLockReadRWLockCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelLockReadRWLockCB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock a rwlock with read access and handle callbacks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+    <tr><td class="paramname">timeout</td><td>- Timeout in microseconds, use NULL to disable it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga985bd0e6d349cc426135056c69c66abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga985bd0e6d349cc426135056c69c66abe">&#9670;&nbsp;</a></span>sceKernelLockWriteRWLockCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelLockWriteRWLockCB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock a rwlock with write access and handle callbacks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+    <tr><td class="paramname">timeout</td><td>- Timeout in microseconds, use NULL to disable it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gafa46aacb0ea16a4b8e52d2ca9896b0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa46aacb0ea16a4b8e52d2ca9896b0d2">&#9670;&nbsp;</a></span>sceKernelTryLockReadRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelTryLockReadRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to lock a rwlock with read access (non-blocking) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gac8dd2656ea148873806ab020d23a54dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8dd2656ea148873806ab020d23a54dc">&#9670;&nbsp;</a></span>sceKernelTryLockWriteRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelTryLockWriteRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to lock a rwlock with write access (non-blocking) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga787172c8f6bb5f2f3cd11c3448b4951f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga787172c8f6bb5f2f3cd11c3448b4951f">&#9670;&nbsp;</a></span>sceKernelUnlockReadRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelUnlockReadRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to unlock a rwlock with read access (non-blocking) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga790a71e7aee6193900c03f2f1b2e9d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga790a71e7aee6193900c03f2f1b2e9d29">&#9670;&nbsp;</a></span>sceKernelUnlockWriteRWLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelUnlockWriteRWLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to unlock a rwlock with write access (non-blocking) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- The rwlock id returned from <a class="el" href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8" title="Creates a new rwlock.">sceKernelCreateRWLock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="ga4c20b763cf7fc189f5366d8c63fda4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c20b763cf7fc189f5366d8c63fda4c4">&#9670;&nbsp;</a></span>sceKernelGetRWLockInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceKernelGetRWLockInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>rwlock_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockInfo">SceKernelRWLockInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve information about a rwlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rwlock_id</td><td>- UID of the rwlock to retrieve info for. </td></tr>
+    <tr><td class="paramname">info</td><td>- Pointer to a <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockInfo" title="Current state of a rwlock.">SceKernelRWLockInfo</a> struct to receive the info.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga86f0e930ecdef81393d7ff1d67ca5faf"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf">sceKernelCreateMutex</a></div><div class="ttdeci">SceUID sceKernelCreateMutex(const char *name, SceUInt attr, int initCount, SceKernelMutexOptParam *option)</div><div class="ttdoc">Creates a new mutex.</div></div>
@@ -5028,6 +5585,7 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 <div class="ttc" id="agroup__SceThreadMgrUser_html_gada2ceb5a89c2a999545844fa2cae9dad"><div class="ttname"><a href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad">sceKernelCreateSema</a></div><div class="ttdeci">SceUID sceKernelCreateSema(const char *name, SceUInt attr, int initVal, int maxVal, SceKernelSemaOptParam *option)</div><div class="ttdoc">Creates a new semaphore.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga49188b83b8954dc367fdbe4709424729"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a></div><div class="ttdeci">SceUID sceKernelCreateCond(const char *name, SceUInt attr, SceUID mutexId, const SceKernelCondOptParam *option)</div><div class="ttdoc">Creates a new condition variable.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7">sceKernelGetThreadId</a></div><div class="ttdeci">int sceKernelGetThreadId(void)</div><div class="ttdoc">Get the current thread Id.</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_gae436e9ff9c632110520f547fc391efe8"><div class="ttname"><a href="group__SceThreadMgrUser.html#gae436e9ff9c632110520f547fc391efe8">sceKernelCreateRWLock</a></div><div class="ttdeci">SceUID sceKernelCreateRWLock(const char *name, SceUInt32 attr, const SceKernelRWLockOptParam *opt_param)</div><div class="ttdoc">Creates a new rwlock.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_gabae55d2ad8fa3ea26c7402fe34bbf8d5"><div class="ttname"><a href="group__SceThreadMgrUser.html#gabae55d2ad8fa3ea26c7402fe34bbf8d5">sceKernelWaitSema</a></div><div class="ttdeci">int sceKernelWaitSema(SceUID semaid, int signal, SceUInt *timeout)</div><div class="ttdoc">Lock a semaphore.</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:38</div></div>
 <div class="ttc" id="agroup__SceTypesKernel_html_ga9c036549fd8cfd554ba3aa26a397b663"><div class="ttname"><a href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></div><div class="ttdeci">int SceUID</div><div class="ttdoc">UIDs are used to describe many different kernel objects.</div><div class="ttdef"><b>Definition:</b> types.h:87</div></div>
