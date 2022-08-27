@@ -58,10 +58,11 @@ typedef struct SceThreadCpuRegisters
 /* Typedef for compatibility */
 typedef SceThreadCpuRegisters ThreadCpuRegisters;
 
-typedef struct SceKernelFaultingProcessInfo {
-	SceUID pid;
-	SceUID faultingThreadId; //!< Kernel UID of the faulting thread
-} SceKernelFaultingProcessInfo;
+typedef struct SceKernelThreadContextInfo {
+	ScePID process_id;  //<! Process ID the thread scheduled on this CPU belongs to
+	SceUID thread_id;   //<! Thread ID of the thread scheduled on this CPU
+} SceKernelThreadContextInfo;
+
 
 /**
  * @brief       Retrieve a list of all threads belonging to a process.
@@ -87,13 +88,17 @@ int ksceKernelGetThreadIdList(SceUID pid, SceUID *ids, int n, int *copy_count);
 int ksceKernelGetThreadCpuRegisters(SceUID thid, SceThreadCpuRegisters *registers);
 
 /**
- * @brief      Call from an abort handler to get info on faulting process
+ * @brief      Obtain the context information for the thread scheduled on this CPU.
  *
- * @param      info  Output info
+ * This function can be called from an exception handler to obtain information about
+ * the thread that was interrupted.
  *
- * @return     Zero on success
+ * @param[out]  pInfo   Context information of the thread
+ *
+ * @return      Zero on success, < 0 on error
  */
-int ksceKernelGetFaultingProcess(SceKernelFaultingProcessInfo *info);
+int ksceKernelGetThreadContextInfo(SceKernelThreadContextInfo *pInfo);
+
 
 /**
  * @brief       Change the thread suspension status to another value.
@@ -152,6 +157,14 @@ int ksceKernelDebugSuspendThread(SceUID thid, int status);
  */
 int ksceKernelDebugResumeThread(SceUID thid, int status);
 
+
+/* For backwards compatibility */
+typedef struct __attribute__((deprecated("This structure has been replaced by SceKernelThreadContextInfo"))) SceKernelFaultingProcessInfo {
+    SceUID pid;
+    SceUID faultingThreadId;
+} SceKernelFaultingProcessInfo;
+
+#define ksceKernelGetFaultingProcessInfo(info) ksceKernelGetThreadContextInfo((SceKernelThreadContextInfo*)info)
 
 #ifdef __cplusplus
 }
