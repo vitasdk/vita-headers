@@ -54,6 +54,13 @@ int ksceSblAimgrGetProductCode(void);
 #define ksceSblAimgrGetTargetId() ksceSblAimgrGetProductCode()
 
 /**
+ * @brief Get product sub code.
+ *
+ * @return product sub code value.
+ */
+int ksceSblAimgrGetProductSubCode(void);
+
+/**
  * @brief Get system type state.
  *
  * @return If product code is TEST, 1. else 0.
