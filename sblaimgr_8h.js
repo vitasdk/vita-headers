@@ -24,6 +24,7 @@ var sblaimgr_8h =
     ] ],
     [ "ksceSblAimgrGetSMI", "group__SceSblAIMgrKernel.html#ga5a75904c56e3fd819e4a7038c9944ef2", null ],
     [ "ksceSblAimgrGetProductCode", "group__SceSblAIMgrKernel.html#gae8114780f6693b054ab693c7d2d2c7e1", null ],
+    [ "ksceSblAimgrGetProductSubCode", "group__SceSblAIMgrKernel.html#ga90fe63d54b7015455094e5d9eeb811ff", null ],
     [ "ksceSblAimgrIsTest", "group__SceSblAIMgrKernel.html#gacf7d54f682b78d79eddebecfbf928423", null ],
     [ "ksceSblAimgrIsTool", "group__SceSblAIMgrKernel.html#ga8742a7a336dd28870ce38027eea22c36", null ],
     [ "ksceSblAimgrIsDEX", "group__SceSblAIMgrKernel.html#ga8674594c67877f98779f8df59bb97de3", null ],
