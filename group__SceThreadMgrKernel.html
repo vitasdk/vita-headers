@@ -256,9 +256,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b">ksceKernelGetThreadCpuRegisters</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">SceThreadCpuRegisters</a> *registers)</td></tr>
 <tr class="memdesc:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the state of the registers for a suspended thread.  <a href="group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b">More...</a><br /></td></tr>
 <tr class="separator:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae983e3dea76a9d0d928aad804430744d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d">ksceKernelGetFaultingProcess</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a> *info)</td></tr>
-<tr class="memdesc:gae983e3dea76a9d0d928aad804430744d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call from an abort handler to get info on faulting process.  <a href="group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d">More...</a><br /></td></tr>
-<tr class="separator:gae983e3dea76a9d0d928aad804430744d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68abb1fc16bacdda4e7f06a5194489c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:ga68abb1fc16bacdda4e7f06a5194489c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the context information for the thread scheduled on this CPU.  <a href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">More...</a><br /></td></tr>
+<tr class="separator:ga68abb1fc16bacdda4e7f06a5194489c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c327377d284bbc645a46eb68dcbff8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d">ksceKernelChangeThreadSuspendStatus</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
 <tr class="memdesc:ga2c327377d284bbc645a46eb68dcbff8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the thread suspension status to another value.  <a href="group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d">More...</a><br /></td></tr>
 <tr class="separator:ga2c327377d284bbc645a46eb68dcbff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,6 +274,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa946a49c521eec223d903695a70e8270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">ksceKernelDebugResumeThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
 <tr class="memdesc:gaa946a49c521eec223d903695a70e8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug resume a thread.  <a href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">More...</a><br /></td></tr>
 <tr class="separator:gaa946a49c521eec223d903695a70e8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a">__attribute__</a> ((deprecated(&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;))) SceKernelFaultingProcessInfo</td></tr>
+<tr class="separator:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">ksceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
 <tr class="memdesc:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get event flags info.  <a href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">More...</a><br /></td></tr>
 <tr class="separator:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,6 +464,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga7850183f206dd0db1c222cc745af5f36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga7850183f206dd0db1c222cc745af5f36">ksceKernelGetFaultingProcessInfo</a>(info)&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a>((<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>*)info)</td></tr>
+<tr class="separator:ga7850183f206dd0db1c222cc745af5f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga276cbf64a90f4dbb228165980b454361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga276cbf64a90f4dbb228165980b454361">SCE_KERNEL_MUTEX_ATTR_RECURSIVE</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ga276cbf64a90f4dbb228165980b454361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -822,31 +826,31 @@ Set of registers used for kernel mode. </td></tr>
 
 </div>
 </div>
-<a name="structSceKernelFaultingProcessInfo" id="structSceKernelFaultingProcessInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelFaultingProcessInfo">&#9670;&nbsp;</a></span>SceKernelFaultingProcessInfo</h2>
+<a name="structSceKernelThreadContextInfo" id="structSceKernelThreadContextInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelThreadContextInfo">&#9670;&nbsp;</a></span>SceKernelThreadContextInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelFaultingProcessInfo</td>
+          <td class="memname">struct SceKernelThreadContextInfo</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga89e64d6ac24543f31f7645081269ed42"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="gafccf2adbdb8dacbcada606259dd1601c"></a><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a></td>
 <td class="fieldname">
-pid</td>
+process_id</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga52792d3d6f0a3b0344ee1dbe786365c4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="gaf178ee5c990b003cb91a912270f840ac"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
 <td class="fieldname">
-faultingThreadId</td>
+thread_id</td>
 <td class="fielddoc">
-Kernel UID of the faulting thread. </td></tr>
+</td></tr>
 </table>
 
 </div>
@@ -1747,6 +1751,24 @@ priority</td>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga7850183f206dd0db1c222cc745af5f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7850183f206dd0db1c222cc745af5f36">&#9670;&nbsp;</a></span>ksceKernelGetFaultingProcessInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelGetFaultingProcessInfo</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">info</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a>((<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>*)info)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga276cbf64a90f4dbb228165980b454361"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga276cbf64a90f4dbb228165980b454361">&#9670;&nbsp;</a></span>SCE_KERNEL_MUTEX_ATTR_RECURSIVE</h2>
 
@@ -2482,30 +2504,31 @@ priority</td>
 
 </div>
 </div>
-<a id="gae983e3dea76a9d0d928aad804430744d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae983e3dea76a9d0d928aad804430744d">&#9670;&nbsp;</a></span>ksceKernelGetFaultingProcess()</h2>
+<a id="ga68abb1fc16bacdda4e7f06a5194489c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68abb1fc16bacdda4e7f06a5194489c1">&#9670;&nbsp;</a></span>ksceKernelGetThreadContextInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelGetFaultingProcess </td>
+          <td class="memname">int ksceKernelGetThreadContextInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a> *&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a> *&#160;</td>
+          <td class="paramname"><em>pInfo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Call from an abort handler to get info on faulting process. </p>
+<p>Obtain the context information for the thread scheduled on this CPU. </p>
+<p>This function can be called from an exception handler to obtain information about the thread that was interrupted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td>Output info</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pInfo</td><td>Context information of the thread</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success, &lt; 0 on error </dd></dl>
 
 </div>
 </div>
@@ -2678,6 +2701,24 @@ priority</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success, else &lt;0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gae6ca2dec878950a59947b0ea81b4b50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6ca2dec878950a59947b0ea81b4b50a">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(deprecated(&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

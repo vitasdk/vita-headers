@@ -74,8 +74,10 @@ $(document).ready(function(){initNavTree('debugger_8h.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">debugger.h File Reference</div>  </div>
 </div><!--header-->
@@ -92,12 +94,17 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structSceThreadCpuRegisters"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">SceThreadCpuRegisters</a></td></tr>
 <tr class="memdesc:structSceThreadCpuRegisters"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing a threads register states.  <a href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">More...</a><br /></td></tr>
 <tr class="separator:structSceThreadCpuRegisters"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelFaultingProcessInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a></td></tr>
-<tr class="separator:structSceKernelFaultingProcessInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelThreadContextInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a></td></tr>
+<tr class="separator:structSceKernelThreadContextInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:unionSceThreadCpuRegisters_8____unnamed____"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#unionSceThreadCpuRegisters_8____unnamed____">SceThreadCpuRegisters.__unnamed__</a></td></tr>
 <tr class="separator:unionSceThreadCpuRegisters_8____unnamed____"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceThreadCpuRegisters_8____unnamed_____8____unnamed____"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters_8____unnamed_____8____unnamed____">SceThreadCpuRegisters.__unnamed__.__unnamed__</a></td></tr>
 <tr class="separator:structSceThreadCpuRegisters_8____unnamed_____8____unnamed____"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga7850183f206dd0db1c222cc745af5f36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga7850183f206dd0db1c222cc745af5f36">ksceKernelGetFaultingProcessInfo</a>(info)&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a>((<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>*)info)</td></tr>
+<tr class="separator:ga7850183f206dd0db1c222cc745af5f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -114,9 +121,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b">ksceKernelGetThreadCpuRegisters</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">SceThreadCpuRegisters</a> *registers)</td></tr>
 <tr class="memdesc:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the state of the registers for a suspended thread.  <a href="group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b">More...</a><br /></td></tr>
 <tr class="separator:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae983e3dea76a9d0d928aad804430744d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d">ksceKernelGetFaultingProcess</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a> *info)</td></tr>
-<tr class="memdesc:gae983e3dea76a9d0d928aad804430744d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call from an abort handler to get info on faulting process.  <a href="group__SceThreadMgrKernel.html#gae983e3dea76a9d0d928aad804430744d">More...</a><br /></td></tr>
-<tr class="separator:gae983e3dea76a9d0d928aad804430744d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68abb1fc16bacdda4e7f06a5194489c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:ga68abb1fc16bacdda4e7f06a5194489c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the context information for the thread scheduled on this CPU.  <a href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">More...</a><br /></td></tr>
+<tr class="separator:ga68abb1fc16bacdda4e7f06a5194489c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c327377d284bbc645a46eb68dcbff8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d">ksceKernelChangeThreadSuspendStatus</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
 <tr class="memdesc:ga2c327377d284bbc645a46eb68dcbff8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the thread suspension status to another value.  <a href="group__SceThreadMgrKernel.html#ga2c327377d284bbc645a46eb68dcbff8d">More...</a><br /></td></tr>
 <tr class="separator:ga2c327377d284bbc645a46eb68dcbff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +139,13 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa946a49c521eec223d903695a70e8270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">ksceKernelDebugResumeThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
 <tr class="memdesc:gaa946a49c521eec223d903695a70e8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug resume a thread.  <a href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">More...</a><br /></td></tr>
 <tr class="separator:gaa946a49c521eec223d903695a70e8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a">__attribute__</a> ((deprecated(&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;))) SceKernelFaultingProcessInfo</td></tr>
+<tr class="separator:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga975e41f1257d6cb3d931a0202b1beced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga975e41f1257d6cb3d931a0202b1beced">SceKernelFaultingProcessInfo</a></td></tr>
+<tr class="separator:ga975e41f1257d6cb3d931a0202b1beced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
