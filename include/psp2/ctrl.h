@@ -178,11 +178,38 @@ int sceCtrlGetSamplingMode(SceCtrlPadInputMode *pMode);
 int sceCtrlPeekBufferPositive(int port, SceCtrlData *pad_data, int count);
 
 /**
- * Get the controller state information (polling, positive logic).
+ * Get the wireless controller state information (polling, positive logic).
  *
  * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
  *
+ * @param[in] port - use 0 - 5.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlPeekBufferPositive2(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the controller state information (polling, positive logic).
+ *
+ * This function will return button presses, even if they're intercepted by common dialog/IME.
+ *
  * @param[in] port - use 0.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlPeekBufferPositiveExt(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the wireless controller state information (polling, positive logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ * This function will return button presses, even if they're intercepted by common dialog/IME.
+ *
+ * @param[in] port - use 0 - 5.
  * @param[out] *pad_data - see ::SceCtrlData.
  * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
@@ -202,6 +229,19 @@ int sceCtrlPeekBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
 int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
 
 /**
+ * Get the wireless controller state information (polling, negative logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ *
+ * @param[in] port - use 0-5.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlPeekBufferNegative2(int port, SceCtrlData *pad_data, int count);
+
+/**
  * Get the controller state information (blocking, positive logic).
  *
  * @param[in] port - use 0.
@@ -213,11 +253,38 @@ int sceCtrlPeekBufferNegative(int port, SceCtrlData *pad_data, int count);
 int sceCtrlReadBufferPositive(int port, SceCtrlData *pad_data, int count);
 
 /**
- * Get the controller extended state information (blocking, positive logic).
+ * Get the wireless controller state information (blocking, positive logic).
  *
  * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
  *
+ * @param[in] port - use 0-5.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlReadBufferPositive2(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the controller extended state information (blocking, positive logic).
+ *
+ * This function will return button presses, even if they're intercepted by common dialog/IME.
+ *
  * @param[in] port - use 0.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlReadBufferPositiveExt(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the wireless controller extended state information (blocking, positive logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ * This function will return button presses, even if they're intercepted by common dialog/IME.
+ *
+ * @param[in] port - use 0-5.
  * @param[out] *pad_data - see ::SceCtrlData.
  * @param[in] count - Buffers count. Up to 64 buffers can be requested.
  *
@@ -235,6 +302,19 @@ int sceCtrlReadBufferPositiveExt2(int port, SceCtrlData *pad_data, int count);
  * @return Buffers count, between 1 and 'count'. <0 on error.
  */
 int sceCtrlReadBufferNegative(int port, SceCtrlData *pad_data, int count);
+
+/**
+ * Get the wireless controller state information (blocking, negative logic).
+ *
+ * This function will bind L/R trigger value to L1/R1 instead of LTRIGGER/RTRIGGER
+ *
+ * @param[in] port - use 0-5.
+ * @param[out] *pad_data - see ::SceCtrlData.
+ * @param[in] count - Buffers count. Up to 64 buffers can be requested.
+ *
+ * @return Buffers count, between 1 and 'count'. <0 on error.
+ */
+int sceCtrlReadBufferNegative2(int port, SceCtrlData *pad_data, int count);
 
 /**
  * Set rules for button rapid fire
