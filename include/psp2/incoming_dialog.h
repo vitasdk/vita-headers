@@ -9,7 +9,7 @@
 
 #include <psp2/kernel/clib.h>
 #include <psp2/types.h>
-#include <psp2/defs.h>
+#include <psp2common/defs.h>
 
 #ifdef __cplusplus
 extern "C" {
