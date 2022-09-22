@@ -11,7 +11,7 @@
 #include <psp2/system_param.h>
 #include <psp2/gxm.h>
 #include <psp2/types.h>
-#include <psp2/defs.h>
+#include <psp2common/defs.h>
 
 #ifdef __cplusplus
 extern "C" {
