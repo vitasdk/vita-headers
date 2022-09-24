@@ -32,6 +32,12 @@ typedef enum SceAvPlayerTrickSpeeds {
 	SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_32X = 3200   //!< Fast Forward 32x
 } SceAvPlayerTrickSpeeds;
 
+typedef enum SceAvPlayerStreamType {
+	SCE_AVPLAYER_VIDEO,     //!< Video stream type
+	SCE_AVPLAYER_AUDIO,     //!< Audio stream type
+	SCE_AVPLAYER_TIMEDTEXT  //!< Timed text (subtitles) stream type
+} SceAvPlayerStreamType;
+
 typedef void* (*SceAvPlayerAlloc)(void *arg, uint32_t alignment, uint32_t size);
 typedef void (*SceAvPlayerFree)(void *arg, void *ptr);
 typedef void* (*SceAvPlayerAllocFrame)(void *arg, uint32_t alignment, uint32_t size);
@@ -100,10 +106,10 @@ typedef struct SceAvPlayerTextPosition{
 } SceAvPlayerTextPosition;
 
 typedef struct SceAvPlayerTimedText {
-	uint32_t languageCode;             //!< The language code of the subtitles.
-	uint16_t textSize;                 //!< The size of the subtitles.
-	uint16_t fontSize;                 //!< The size of the subtitles.
-	SceAvPlayerTextPosition position;  //!< The position of the subtitles.
+	uint32_t languageCode;            //!< The language code of the subtitles.
+	uint16_t textSize;                //!< The size of the subtitles.
+	uint16_t fontSize;                //!< The size of the subtitles.
+	SceAvPlayerTextPosition position; //!< The position of the subtitles.
 } SceAvPlayerTimedText;
 
 typedef union SceAvPlayerStreamDetails {
@@ -114,11 +120,19 @@ typedef union SceAvPlayerStreamDetails {
 } SceAvPlayerStreamDetails;
 
 typedef struct SceAvPlayerFrameInfo {
-	uint8_t *pData;                     //!< Pointer to the frame data.
-	uint32_t reserved;                  //!< Reserved data
-	uint64_t timeStamp;                 //!< Timestamp of the frame in milliseconds
-	SceAvPlayerStreamDetails details;	//!< The frame details.
+	uint8_t *pData;                   //!< Pointer to the frame data.
+	uint32_t reserved;                //!< Reserved data
+	uint64_t timeStamp;               //!< Timestamp of the frame in milliseconds
+	SceAvPlayerStreamDetails details; //!< The frame details.
 } SceAvPlayerFrameInfo;
+
+typedef struct SceAvPlayerStreamInfo {
+	uint32_t type;                    //!< Type of the stream (One of ::SceAvPlayerStreamType)
+	uint32_t reserved;                //!< Reserved data             
+	SceAvPlayerStreamDetails details; //!< The stream details.
+	uint64_t duration;                //!< Total duration of the stream in milliseconds.
+	uint64_t startTime;               //!< Starting time of the stream in milliseconds.
+} SceAvPlayerStreamInfo;
 
 /**
  * @param[in] data - Init data for the video player
@@ -223,6 +237,15 @@ int sceAvPlayerJumpToTime(SceAvPlayerHandle handle, uint64_t offset);
  * @return 0 on success, < 0 on error.
  */
 int sceAvPlayerSetTrickSpeed(SceAvPlayerHandle handle, int speed);
+
+/**
+ * @param[in] handle - A player handle created with ::sceAvPlayerInit
+ * @param[in] id - Stream ID to get info for.
+ * @param[out] info - Info retrieved for the requested stream.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvPlayerGetStreamInfo(SceAvPlayerHandle handle, uint32_t id, SceAvPlayerStreamInfo *info);
 
 #ifdef __cplusplus
 }
