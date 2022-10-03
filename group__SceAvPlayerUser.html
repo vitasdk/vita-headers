@@ -124,6 +124,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga714915fcb1c874bacf863bf24045fc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2e624ff0a218c080481e6e2cf3fe3bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAvPlayerUser.html#gab2e624ff0a218c080481e6e2cf3fe3bb">sceAvPlayerSetTrickSpeed</a> (<a class="el" href="group__SceAvPlayerUser.html#gaa881364993e45df258ae90e384138dae">SceAvPlayerHandle</a> handle, int speed)</td></tr>
 <tr class="separator:gab2e624ff0a218c080481e6e2cf3fe3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace76a67ee085867ef9f2b119c67be9fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAvPlayerUser.html#gace76a67ee085867ef9f2b119c67be9fc">sceAvPlayerGetStreamInfo</a> (<a class="el" href="group__SceAvPlayerUser.html#gaa881364993e45df258ae90e384138dae">SceAvPlayerHandle</a> handle, uint32_t id, <a class="el" href="group__SceAvPlayerUser.html#structSceAvPlayerStreamInfo">SceAvPlayerStreamInfo</a> *info)</td></tr>
+<tr class="separator:gace76a67ee085867ef9f2b119c67be9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -595,6 +597,54 @@ The frame details. </td></tr>
 
 </div>
 </div>
+<a name="structSceAvPlayerStreamInfo" id="structSceAvPlayerStreamInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceAvPlayerStreamInfo">&#9670;&nbsp;</a></span>SceAvPlayerStreamInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceAvPlayerStreamInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaeebad3be275052fe4fe4d0f198e99621"></a>uint32_t</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+Type of the stream (One of <a class="el" href="group__SceAvPlayerUser.html#ga2562e7d41c82a2e84d1a4d956053cf27">SceAvPlayerStreamType</a>) </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1fca7a672cc57a51245165ff77782160"></a>uint32_t</td>
+<td class="fieldname">
+reserved</td>
+<td class="fielddoc">
+Reserved data <br  />
+ </td></tr>
+<tr><td class="fieldtype">
+<a id="gac1e341e1c18f95e868f539d1e15149ad"></a><a class="el" href="group__SceAvPlayerUser.html#unionSceAvPlayerStreamDetails">SceAvPlayerStreamDetails</a></td>
+<td class="fieldname">
+details</td>
+<td class="fielddoc">
+The stream details. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac0bbac157f828196771fecb970491c1a"></a>uint64_t</td>
+<td class="fieldname">
+duration</td>
+<td class="fielddoc">
+Total duration of the stream in milliseconds. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaf98ce7ba8282194770175a6e37e8a98a"></a>uint64_t</td>
+<td class="fieldname">
+startTime</td>
+<td class="fielddoc">
+Starting time of the stream in milliseconds. </td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaa881364993e45df258ae90e384138dae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa881364993e45df258ae90e384138dae">&#9670;&nbsp;</a></span>SceAvPlayerHandle</h2>
@@ -784,6 +834,28 @@ The frame details. </td></tr>
 <tr><td class="fieldname"><a id="gga7716c7fcc4e0530cd480d144ce6c7ceba11db3186ef62c414686c270fbdf3c63c"></a>SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_16X&#160;</td><td class="fielddoc"><p>Fast Forward 16x. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga7716c7fcc4e0530cd480d144ce6c7ceba520cad84ede964ea8f340a4e6ce8f355"></a>SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_32X&#160;</td><td class="fielddoc"><p>Fast Forward 32x. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga2562e7d41c82a2e84d1a4d956053cf27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2562e7d41c82a2e84d1a4d956053cf27">&#9670;&nbsp;</a></span>SceAvPlayerStreamType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAvPlayerUser.html#ga2562e7d41c82a2e84d1a4d956053cf27">SceAvPlayerStreamType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2562e7d41c82a2e84d1a4d956053cf27afb0f9c711e3ef82f03f2a510404d140e"></a>SCE_AVPLAYER_VIDEO&#160;</td><td class="fielddoc"><p>Video stream type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2562e7d41c82a2e84d1a4d956053cf27a3e69865352d4e2eb74690c192fe1dcc2"></a>SCE_AVPLAYER_AUDIO&#160;</td><td class="fielddoc"><p>Audio stream type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2562e7d41c82a2e84d1a4d956053cf27a1997c9d2ef2a6e65b5c740bfe206d339"></a>SCE_AVPLAYER_TIMEDTEXT&#160;</td><td class="fielddoc"><p>Timed text (subtitles) stream type. </p>
 </td></tr>
 </table>
 
@@ -1199,6 +1271,49 @@ The frame details. </td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>- A player handle created with <a class="el" href="group__SceAvPlayerUser.html#gad75ae925577a4702397e416e82be01f3">sceAvPlayerInit</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>- One of <a class="el" href="group__SceAvPlayerUser.html#ga7716c7fcc4e0530cd480d144ce6c7ceb">SceAvPlayerTrickSpeeds</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gace76a67ee085867ef9f2b119c67be9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace76a67ee085867ef9f2b119c67be9fc">&#9670;&nbsp;</a></span>sceAvPlayerGetStreamInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAvPlayerGetStreamInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAvPlayerUser.html#gaa881364993e45df258ae90e384138dae">SceAvPlayerHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAvPlayerUser.html#structSceAvPlayerStreamInfo">SceAvPlayerStreamInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>- A player handle created with <a class="el" href="group__SceAvPlayerUser.html#gad75ae925577a4702397e416e82be01f3">sceAvPlayerInit</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Stream ID to get info for. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Info retrieved for the requested stream.</td></tr>
   </table>
   </dd>
 </dl>

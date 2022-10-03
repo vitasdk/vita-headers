@@ -72,6 +72,7 @@ var annotated_dup =
     [ "SceAvPlayerInitData", "group__SceAvPlayerUser.html#structSceAvPlayerInitData", "group__SceAvPlayerUser_structSceAvPlayerInitData" ],
     [ "SceAvPlayerMemReplacement", "group__SceAvPlayerUser.html#structSceAvPlayerMemReplacement", "group__SceAvPlayerUser_structSceAvPlayerMemReplacement" ],
     [ "SceAvPlayerStreamDetails", "group__SceAvPlayerUser.html#unionSceAvPlayerStreamDetails", "group__SceAvPlayerUser_unionSceAvPlayerStreamDetails" ],
+    [ "SceAvPlayerStreamInfo", "group__SceAvPlayerUser.html#structSceAvPlayerStreamInfo", "group__SceAvPlayerUser_structSceAvPlayerStreamInfo" ],
     [ "SceAvPlayerTextPosition", "group__SceAvPlayerUser.html#structSceAvPlayerTextPosition", "group__SceAvPlayerUser_structSceAvPlayerTextPosition" ],
     [ "SceAvPlayerTimedText", "group__SceAvPlayerUser.html#structSceAvPlayerTimedText", "group__SceAvPlayerUser_structSceAvPlayerTimedText" ],
     [ "SceAvPlayerVideo", "group__SceAvPlayerUser.html#structSceAvPlayerVideo", "group__SceAvPlayerUser_structSceAvPlayerVideo" ],

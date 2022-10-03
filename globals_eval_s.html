@@ -702,11 +702,17 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 <li>SCE_AVCONFIG_COLOR_SPACE_MODE_HIGH_CONTRAST
 : <a class="el" href="group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7">avconfig.h</a>
 </li>
+<li>SCE_AVPLAYER_AUDIO
+: <a class="el" href="group__SceAvPlayerUser.html#gga2562e7d41c82a2e84d1a4d956053cf27a3e69865352d4e2eb74690c192fe1dcc2">avplayer.h</a>
+</li>
 <li>SCE_AVPLAYER_ERROR_INVALID_PARAM
 : <a class="el" href="group__SceAvPlayerUser.html#gga91f6631008b7afd8c87b1cba835cfac5a8403f7d914034242f5aa6405016b41cc">avplayer.h</a>
 </li>
 <li>SCE_AVPLAYER_ERROR_OUT_OF_MEMORY
 : <a class="el" href="group__SceAvPlayerUser.html#gga91f6631008b7afd8c87b1cba835cfac5a8c77ab6833e70657e4eae83bb4d78d33">avplayer.h</a>
+</li>
+<li>SCE_AVPLAYER_TIMEDTEXT
+: <a class="el" href="group__SceAvPlayerUser.html#gga2562e7d41c82a2e84d1a4d956053cf27a1997c9d2ef2a6e65b5c740bfe206d339">avplayer.h</a>
 </li>
 <li>SCE_AVPLAYER_TRICK_SPEED_FAST_FORWARD_16X
 : <a class="el" href="group__SceAvPlayerUser.html#gga7716c7fcc4e0530cd480d144ce6c7ceba11db3186ef62c414686c270fbdf3c63c">avplayer.h</a>
@@ -734,6 +740,9 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 </li>
 <li>SCE_AVPLAYER_TRICK_SPEED_REWIND_8X
 : <a class="el" href="group__SceAvPlayerUser.html#gga7716c7fcc4e0530cd480d144ce6c7ceba9d5049f1ec9fc44b7239934b3ebfe3a5">avplayer.h</a>
+</li>
+<li>SCE_AVPLAYER_VIDEO
+: <a class="el" href="group__SceAvPlayerUser.html#gga2562e7d41c82a2e84d1a4d956053cf27afb0f9c711e3ef82f03f2a510404d140e">avplayer.h</a>
 </li>
 <li>SCE_BGAPP_UTIL_ERROR_INVALID_ARG
 : <a class="el" href="group__SceBgAppUtilUser.html#gga670dfd5d08df905333592d61efb3fd21acb252d03efef2f81e24eca651bf24633">bgapputil.h</a>
@@ -6852,8 +6861,8 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 : <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4110bbac5ac5268f53c30b28ca2d294c">error.h</a>
 </li>
 <li>SCE_KERNEL_POWER_TICK_DEFAULT
-: <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9">processmgr.h</a>
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9">suspend.h</a>
+: <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9">suspend.h</a>
+, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9">processmgr.h</a>
 </li>
 <li>SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND
 : <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa3e8b9af3aaeb7cd8fb6ce66a8063d872">processmgr.h</a>
@@ -6925,24 +6934,24 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 : <a class="el" href="group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60">sysroot.h</a>
 </li>
 <li>SCE_KERNEL_TMID_Alarm
-: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca673bce289cfe11dfa9daac5dc5405167">misc.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca673bce289cfe11dfa9daac5dc5405167">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca673bce289cfe11dfa9daac5dc5405167">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca673bce289cfe11dfa9daac5dc5405167">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_Callback
 : <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca14cad08b131ef9371a6a0a7322d7af5d">threadmgr.h</a>
 , <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca14cad08b131ef9371a6a0a7322d7af5d">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_DelayThread
-: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca3a02bc58bf1ba70ac6dc77d2cb16aadb">misc.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca3a02bc58bf1ba70ac6dc77d2cb16aadb">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca3a02bc58bf1ba70ac6dc77d2cb16aadb">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca3a02bc58bf1ba70ac6dc77d2cb16aadb">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_DormantThread
 : <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca874f26b72bce479b904e5b8d50fb89d1">threadmgr.h</a>
 , <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca874f26b72bce479b904e5b8d50fb89d1">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_EventFlag
-: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca8abd95cf3cd992b483d74e71490a366c">misc.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca8abd95cf3cd992b483d74e71490a366c">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca8abd95cf3cd992b483d74e71490a366c">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca8abd95cf3cd992b483d74e71490a366c">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_Fpl
 : <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca411fae0b430b218535117cb750048ccc">threadmgr.h</a>
@@ -6957,24 +6966,24 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 , <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca60147b6fe440e3c4770cfd1a61892376">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_Semaphore
-: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6f586e8489418f6428ac915abfa3320e">misc.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6f586e8489418f6428ac915abfa3320e">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6f586e8489418f6428ac915abfa3320e">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6f586e8489418f6428ac915abfa3320e">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_SleepThread
 : <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca2e1cada1f0344173360de9aba065bd2b">threadmgr.h</a>
 , <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca2e1cada1f0344173360de9aba065bd2b">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_SuspendThread
-: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca93d8b4b14edcd3b462df1b11a0cc4442">misc.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca93d8b4b14edcd3b462df1b11a0cc4442">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca93d8b4b14edcd3b462df1b11a0cc4442">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca93d8b4b14edcd3b462df1b11a0cc4442">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_Thread
 : <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6c07486899e0df175dcb90cefb2ac7b5">threadmgr.h</a>
 , <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca6c07486899e0df175dcb90cefb2ac7b5">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_ThreadEventHandler
-: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca205a48351680e34a080bb3958ab179b4">misc.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca205a48351680e34a080bb3958ab179b4">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca205a48351680e34a080bb3958ab179b4">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dca205a48351680e34a080bb3958ab179b4">misc.h</a>
 </li>
 <li>SCE_KERNEL_TMID_Vpl
 : <a class="el" href="group__SceThreadMgrKernel.html#ggab73e1647ba8ce49d40132e57883602dcada22acf5747579086eb359e0ddc183d5">threadmgr.h</a>
@@ -9832,8 +9841,8 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 : <a class="el" href="group__SceSystemParamUser.html#ggafc21d49875f7a76f1a430c8209a566b7a8c7aac731da6a34a4fcd9442534b9188">system_param.h</a>
 </li>
 <li>SCE_THREAD_DEAD
-: <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48">threadmgr.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48">thread.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48">thread.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48">threadmgr.h</a>
 </li>
 <li>SCE_THREAD_DELETED
 : <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad72f4388295e8f8564335351ba225c44">threadmgr.h</a>
@@ -9859,8 +9868,8 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 , <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa">thread.h</a>
 </li>
 <li>SCE_THREAD_STANDBY
-: <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2">threadmgr.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2">thread.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2">thread.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2">threadmgr.h</a>
 </li>
 <li>SCE_THREAD_STOPPED
 : <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a56f4a808a0901deffe6249baedd764b8">threadmgr.h</a>
@@ -9873,8 +9882,8 @@ $(document).ready(function(){initNavTree('globals_eval_s.html',''); initResizabl
 , <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093">threadmgr.h</a>
 </li>
 <li>SCE_THREAD_WAITING
-: <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e">threadmgr.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e">thread.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e">thread.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e">threadmgr.h</a>
 </li>
 <li>SCE_TOUCH_ERROR_FATAL
 : <a class="el" href="group__SceTouchUser.html#gga3772c556df8f755f345d8f2c09807ae0acb656f5b2523f3186eb3dbaa9e6af108">touch.h</a>
