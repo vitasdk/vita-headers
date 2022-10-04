@@ -19,7 +19,6 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "common_dialog.h", "common__dialog_8h.html", "common__dialog_8h" ],
     [ "compat.h", "compat_8h.html", "compat_8h" ],
     [ "ctrl.h", "ctrl_8h.html", "ctrl_8h" ],
-    [ "defs.h", "defs_8h.html", "defs_8h" ],
     [ "display.h", "display_8h.html", "display_8h" ],
     [ "dmac5.h", "dmac5_8h.html", "dmac5_8h" ],
     [ "fiber.h", "fiber_8h.html", "fiber_8h" ],
