@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.60
+modules:
+  SceKernelBootimage:
+    nid: 0x0
+    libraries:
+      SceKernelBootimage:
+        kernel: true
+        nid: 0x17E65BD7
+        variables:
+          - sceKernelBootimageEntries: 0x9C08E88A
