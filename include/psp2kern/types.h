@@ -117,6 +117,62 @@ typedef struct SceSelfAuthInfo { // size is 0x90-bytes
 	SceSharedSecret secret;
 } SceSelfAuthInfo;
 
+/**
+ * @brief Regular Spinlock
+ * 
+ * Spinlocks are a simple mutual exclusion mechanism implemented
+ * using atomic primitives (LDREX/STREX). Unlike other kernel
+ * synchronisation primitives, spinlocks can be acquired under
+ * any context, including an IRQ or exception handler.
+ * 
+ * Since threads/CPUs trying to acquire a spinlock loop until
+ * the lock is free, this synchronisation primitive should only
+ * be used when the data to protect may be accessed under a context
+ * in which entering WAITING state is not allowed (e.g. IRQ handler).
+ * 
+ * Spinlocks cannot be acquired recursively. Attempting to recursively
+ * acquire a regular spinlock will deadlock.
+ *
+ * 
+ * The regular Spinlock works similarly to a mutex - only one thread
+ * or CPU may own the Spinlock at a time.
+ */
+typedef int SceKernelSpinlock;
+
+/**
+ * @brief RW Spinlock
+ * 
+ * (Refer to the regular spinlock description for more details
+ * about the spinlock synchronisation primitive)
+ * 
+ * 
+ * The RWSpinlock works similarly to a RWLock - multiple threads/CPUs
+ * can access the protected data at the same time as long as only reads
+ * are performed. When acquired for writing, a single thread/CPU at a time
+ * is allowed to own the RWSpinlock and is thus free to modify the data.
+ * Modifying data protected by a RWSpinlock while holding it for reading is
+ * undefined behaviour and will lead to data corruption and system instability.
+ * 
+ * RW Spinlocks may be acquired by up to ?128? readers at a time. It is
+ * also possible to recursively acquire a RWSpinlock for reading. Recursively
+ * acquiring a RWSpinlock for writing is not allowed and will deadlock.
+ */
+typedef int SceKernelRWSpinlock;
+
+/**
+ * @brief Interrupt status
+ * 
+ * This opaque value is used to hold the interruptability status
+ * (whether the CPU can be interrupted) on entry to functions that
+ * temporarily suspend interrupts. For readers familiar with the
+ * Windows NT kernel, this is similar in spirit to the IRQL value.
+ * 
+ * The only usage that can be made of this value is to compare it
+ * against zero to check whether a function call failed, if applicable.
+ * See the description of functions using this datatype for more details.
+ */
+typedef int SceKernelIntrStatus;
+
 #ifdef __cplusplus
 }
 #endif
