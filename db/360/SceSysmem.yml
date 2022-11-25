@@ -98,24 +98,24 @@ modules:
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
           ksceKernelCpuGetCpuId: 0x5E4D5DE1
           ksceKernelCpuIsVaddrMapped: 0x337CBDF3
-          ksceKernelCpuLockStoreFlag: 0x3F42B434
-          ksceKernelCpuLockStoreLR: 0xBF82DEB2
-          ksceKernelCpuLockSuspendIntrStoreFlag: 0x4C38CE4D
-          ksceKernelCpuResumeIntr: 0x7BB9D5DF
-          ksceKernelCpuSpinLockIrqRestore: 0x740A0750
-          ksceKernelCpuSpinLockIrqSave: 0xEC53D007
-          ksceKernelCpuSpinLockStoreLR: 0xCAC9AE80
-          ksceKernelCpuSpinUnlockStoreLR: 0xF5FD5676
-          ksceKernelCpuSuspendIntr: 0xD32ACE9E
-          ksceKernelCpuTryLockStoreFlag: 0x4F7790B4
-          ksceKernelCpuTryLockStoreLR: 0x5AC9D394
-          ksceKernelCpuTryLockSuspendIntrStoreFlag: 0xDE6482C6
-          ksceKernelCpuTryLockSuspendIntrStoreLR: 0x27C0B340
-          ksceKernelCpuTrySpinLockStoreLR: 0x093925BD
-          ksceKernelCpuTrySpinLockSuspendIntrStoreLR: 0xF02467D1
-          ksceKernelCpuUnlockResumeIntrStoreFlag: 0x9EC91017
-          ksceKernelCpuUnlockStoreFlag: 0xCB8ABDF0
-          ksceKernelCpuUnlockStoreLR: 0xD6ED0C46
+          ksceKernelSpinlockLowLock: 0xBF82DEB2
+          ksceKernelSpinlockLowTryLock: 0x5AC9D394
+          ksceKernelSpinlockLowUnlock: 0xD6ED0C46
+          ksceKernelSpinlockLowLockCpuSuspendIntr: 0xD32ACE9E
+          ksceKernelSpinlockLowTryLockCpuSuspendIntr: 0x27C0B340
+          ksceKernelSpinlockLowUnlockCpuResumeIntr: 0x7BB9D5DF
+          ksceKernelRWSpinlockLowReadLock: 0xCAC9AE80
+          ksceKernelRWSpinlockLowTryReadLock: 0x093925BD
+          ksceKernelRWSpinlockLowReadUnlock: 0xF5FD5676
+          ksceKernelRWSpinlockLowReadLockCpuSuspendIntr: 0xEC53D007
+          ksceKernelRWSpinlockLowTryReadLockCpuSuspendIntr: 0xF02467D1
+          ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr: 0x740A0750
+          ksceKernelRWSpinlockLowWriteLock: 0x3F42B434
+          ksceKernelRWSpinlockLowTryWriteLock: 0x4F7790B4
+          ksceKernelRWSpinlockLowWriteUnlock: 0xCB8ABDF0
+          ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr: 0x4C38CE4D
+          ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr: 0xDE6482C6
+          ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr: 0x9EC91017
       SceCpuForKernel:
         kernel: true
         nid: 0x54BF2BAB
