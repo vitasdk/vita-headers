@@ -239,8 +239,6 @@ var NAVTREEINDEX11 =
 "group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75":[1,7,3,1,20],
 "group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97":[4,0,1,2,2,3,34],
 "group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97":[1,7,3,1,34],
-"group__SceCpuKernel.html#ga1cfc2ced805ee495aca0a61877211032":[4,0,1,2,2,3,21],
-"group__SceCpuKernel.html#ga1cfc2ced805ee495aca0a61877211032":[1,7,3,1,21],
 "group__SceCpuKernel.html#ga1e9446f23dc8fea22955dd21c250743e":[4,0,1,2,2,3,12],
 "group__SceCpuKernel.html#ga1e9446f23dc8fea22955dd21c250743e":[1,7,3,1,12],
 "group__SceCpuKernel.html#ga2a8e345d257fb1643ccbb301820a6550":[4,0,1,2,2,3,24],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "group__SceCpuKernel.html#ga2e6aa771d998e8a9f40e85b892e1e691":[1,7,3,1,25],
 "group__SceCpuKernel.html#ga34661ab47340a3c061425f5f4bf0fe35":[4,0,1,2,2,3,14],
 "group__SceCpuKernel.html#ga34661ab47340a3c061425f5f4bf0fe35":[1,7,3,1,14],
-"group__SceCpuKernel.html#ga4663f02bb006575ef7c939048e5c712f":[4,0,1,2,2,3,23]
+"group__SceCpuKernel.html#ga4663f02bb006575ef7c939048e5c712f":[4,0,1,2,2,3,23],
+"group__SceCpuKernel.html#ga4663f02bb006575ef7c939048e5c712f":[1,7,3,1,23],
+"group__SceCpuKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9":[4,0,1,2,2,3,1]
 };
