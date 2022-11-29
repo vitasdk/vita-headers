@@ -326,15 +326,15 @@ SceKernelIntrStatus ksceKernelRWSpinlockLowReadLockCpuSuspendIntr(SceKernelRWSpi
  * @note       Interrupts are only suspended if the acquisition of the spinlock succeeds
  * @note       It is forbidden to write to data protected by the spinlock after acquiring it with this function.
  */
-SceKernelIntrStatus ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr(SceKernelRWSpinlock* lock);
+SceKernelIntrStatus ksceKernelRWSpinlockLowTryReadLockCpuSuspendIntr(SceKernelRWSpinlock* lock);
 
 /**
  * @brief      Release a RWSpinlock previously acquired for reading and resume interrupts if necessary.
  *
  * @param[in]  lock          RWSpinlock to release
- * @param[in]  intr_status   Status value obtained from ::ksceKernelRWSpinlockLowReadLockCpuSuspendIntr/::ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr.
+ * @param[in]  intr_status   Status value obtained from ::ksceKernelRWSpinlockLowReadLockCpuSuspendIntr/::ksceKernelRWSpinlockLowTryReadLockCpuSuspendIntr.
  *
- * @note This function resumes interrupts only if they were enabled before the call to ::ksceKernelRWSpinlockLowReadLockCpuSuspendIntr/::ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr.
+ * @note This function resumes interrupts only if they were enabled before the call to ::ksceKernelRWSpinlockLowReadLockCpuSuspendIntr/::ksceKernelRWSpinlockLowTryReadLockCpuSuspendIntr.
  */
 void ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr(SceKernelRWSpinlock* lock, SceKernelIntrStatus intr_status);
 
