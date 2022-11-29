@@ -138,18 +138,60 @@ Functions</h2></td></tr>
 <tr class="memitem:gab0e8774c9f4d2e6f3870ce26adb30c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gab0e8774c9f4d2e6f3870ce26adb30c71">ksceKernelCpuIcacheAndL2WritebackInvalidateRange</a> (const void *ptr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
 <tr class="memdesc:gab0e8774c9f4d2e6f3870ce26adb30c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback and invalidate a range of L1 icache and L2.  <a href="group__SceCpuKernel.html#gab0e8774c9f4d2e6f3870ce26adb30c71">More...</a><br /></td></tr>
 <tr class="separator:gab0e8774c9f4d2e6f3870ce26adb30c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74cc811b572caa5ef2a7616707f2f766"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga74cc811b572caa5ef2a7616707f2f766">ksceKernelCpuSuspendIntr</a> (int *addr)</td></tr>
-<tr class="memdesc:ga74cc811b572caa5ef2a7616707f2f766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend all interrupts (disables IRQs)  <a href="group__SceCpuKernel.html#ga74cc811b572caa5ef2a7616707f2f766">More...</a><br /></td></tr>
-<tr class="separator:ga74cc811b572caa5ef2a7616707f2f766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad9f7f38286e8d0b08837729bab4face8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gad9f7f38286e8d0b08837729bab4face8">ksceKernelCpuResumeIntr</a> (int *addr, int prev_state)</td></tr>
-<tr class="memdesc:gad9f7f38286e8d0b08837729bab4face8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume all interrupts (enables IRQs)  <a href="group__SceCpuKernel.html#gad9f7f38286e8d0b08837729bab4face8">More...</a><br /></td></tr>
-<tr class="separator:gad9f7f38286e8d0b08837729bab4face8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa30b72fe83595ec4dfcafc14bf04b145"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145">ksceKernelCpuSpinLockIrqSave</a> (int *addr)</td></tr>
-<tr class="memdesc:gaa30b72fe83595ec4dfcafc14bf04b145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable interrupts (IRQs) and spin-lock.  <a href="group__SceCpuKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145">More...</a><br /></td></tr>
-<tr class="separator:gaa30b72fe83595ec4dfcafc14bf04b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf609c6394e271c010838dbd33550a35b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b">ksceKernelCpuSpinLockIrqRestore</a> (int *addr, int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
-<tr class="memdesc:gaf609c6394e271c010838dbd33550a35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin-unlock and restore interrupt state.  <a href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b">More...</a><br /></td></tr>
-<tr class="separator:gaf609c6394e271c010838dbd33550a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59cde14788f3bec957e6c54cbd42c3fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga59cde14788f3bec957e6c54cbd42c3fb">ksceKernelSpinlockLowLockForDriver</a> (<a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga59cde14788f3bec957e6c54cbd42c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a spinlock.  <a href="group__SceCpuKernel.html#ga59cde14788f3bec957e6c54cbd42c3fb">More...</a><br /></td></tr>
+<tr class="separator:ga59cde14788f3bec957e6c54cbd42c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf320612efbec4c9f2f2e0dd7b8ffa56c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaf320612efbec4c9f2f2e0dd7b8ffa56c">ksceKernelSpinlockLowTryLockForDriver</a> (<a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:gaf320612efbec4c9f2f2e0dd7b8ffa56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to acquire a spinlock.  <a href="group__SceCpuKernel.html#gaf320612efbec4c9f2f2e0dd7b8ffa56c">More...</a><br /></td></tr>
+<tr class="separator:gaf320612efbec4c9f2f2e0dd7b8ffa56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga901c4efa2670b347c229b81674b9bc14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga901c4efa2670b347c229b81674b9bc14">ksceKernelSpinlockLowUnlockForDriver</a> (<a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga901c4efa2670b347c229b81674b9bc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a previously acquired spinlock.  <a href="group__SceCpuKernel.html#ga901c4efa2670b347c229b81674b9bc14">More...</a><br /></td></tr>
+<tr class="separator:ga901c4efa2670b347c229b81674b9bc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05ea1ecfc1775b151abe04b000716b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75">ksceKernelSpinlockLowLockCpuSuspendIntr</a> (<a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga05ea1ecfc1775b151abe04b000716b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a spinlock and suspend interrupts if necessary.  <a href="group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75">More...</a><br /></td></tr>
+<tr class="separator:ga05ea1ecfc1775b151abe04b000716b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cfc2ced805ee495aca0a61877211032"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga1cfc2ced805ee495aca0a61877211032">ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver</a> (<a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga1cfc2ced805ee495aca0a61877211032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to acquire a spinlock and suspend interrupts if necessary.  <a href="group__SceCpuKernel.html#ga1cfc2ced805ee495aca0a61877211032">More...</a><br /></td></tr>
+<tr class="separator:ga1cfc2ced805ee495aca0a61877211032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81f89f46b34e134e541ae3ff67e7224f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga81f89f46b34e134e541ae3ff67e7224f">ksceKernelSpinlockLowUnlockCpuResumeIntr</a> (<a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *lock, <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> intr_status)</td></tr>
+<tr class="memdesc:ga81f89f46b34e134e541ae3ff67e7224f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a previously acquired spinlock and resume interrupts if necessary.  <a href="group__SceCpuKernel.html#ga81f89f46b34e134e541ae3ff67e7224f">More...</a><br /></td></tr>
+<tr class="separator:ga81f89f46b34e134e541ae3ff67e7224f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4663f02bb006575ef7c939048e5c712f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga4663f02bb006575ef7c939048e5c712f">ksceKernelRWSpinlockLowReadLock</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga4663f02bb006575ef7c939048e5c712f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a RWSpinlock for reading.  <a href="group__SceCpuKernel.html#ga4663f02bb006575ef7c939048e5c712f">More...</a><br /></td></tr>
+<tr class="separator:ga4663f02bb006575ef7c939048e5c712f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a8e345d257fb1643ccbb301820a6550"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga2a8e345d257fb1643ccbb301820a6550">ksceKernelRWSpinlockLowTryReadLock</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga2a8e345d257fb1643ccbb301820a6550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to acquire a RWSpinlock for reading.  <a href="group__SceCpuKernel.html#ga2a8e345d257fb1643ccbb301820a6550">More...</a><br /></td></tr>
+<tr class="separator:ga2a8e345d257fb1643ccbb301820a6550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e6aa771d998e8a9f40e85b892e1e691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga2e6aa771d998e8a9f40e85b892e1e691">ksceKernelRWSpinlockLowReadUnlock</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga2e6aa771d998e8a9f40e85b892e1e691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock a RWSpinlock previously acquired for reading.  <a href="group__SceCpuKernel.html#ga2e6aa771d998e8a9f40e85b892e1e691">More...</a><br /></td></tr>
+<tr class="separator:ga2e6aa771d998e8a9f40e85b892e1e691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a9eb223ebfe1828ea649733c4da0f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga4a9eb223ebfe1828ea649733c4da0f9d">ksceKernelRWSpinlockLowReadLockCpuSuspendIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga4a9eb223ebfe1828ea649733c4da0f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a RWSpinlock for reading and suspend interrupts if necessary.  <a href="group__SceCpuKernel.html#ga4a9eb223ebfe1828ea649733c4da0f9d">More...</a><br /></td></tr>
+<tr class="separator:ga4a9eb223ebfe1828ea649733c4da0f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5bdcf6fa2da565f070ea9ca1982d4c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gae5bdcf6fa2da565f070ea9ca1982d4c4">ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:gae5bdcf6fa2da565f070ea9ca1982d4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to acquire a RWSpinlock for reading and suspend interrupts if necessary.  <a href="group__SceCpuKernel.html#gae5bdcf6fa2da565f070ea9ca1982d4c4">More...</a><br /></td></tr>
+<tr class="separator:gae5bdcf6fa2da565f070ea9ca1982d4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e37ece27ef1ca32822a9e7dfc9e9a6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga5e37ece27ef1ca32822a9e7dfc9e9a6f">ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock, <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> intr_status)</td></tr>
+<tr class="memdesc:ga5e37ece27ef1ca32822a9e7dfc9e9a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a RWSpinlock previously acquired for reading and resume interrupts if necessary.  <a href="group__SceCpuKernel.html#ga5e37ece27ef1ca32822a9e7dfc9e9a6f">More...</a><br /></td></tr>
+<tr class="separator:ga5e37ece27ef1ca32822a9e7dfc9e9a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf577b4cab05e17d9f97be7db7107e1ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaf577b4cab05e17d9f97be7db7107e1ae">ksceKernelRWSpinlockLowWriteLock</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:gaf577b4cab05e17d9f97be7db7107e1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a RWSpinlock for writing.  <a href="group__SceCpuKernel.html#gaf577b4cab05e17d9f97be7db7107e1ae">More...</a><br /></td></tr>
+<tr class="separator:gaf577b4cab05e17d9f97be7db7107e1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dc432901323dd9d6f2286cb823a97e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga8dc432901323dd9d6f2286cb823a97e9">ksceKernelRWSpinlockLowTryWriteLock</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:ga8dc432901323dd9d6f2286cb823a97e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to acquire a RWSpinlock for writing.  <a href="group__SceCpuKernel.html#ga8dc432901323dd9d6f2286cb823a97e9">More...</a><br /></td></tr>
+<tr class="separator:ga8dc432901323dd9d6f2286cb823a97e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf63b6cf1b1fe285840e6fff9689f7d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaf63b6cf1b1fe285840e6fff9689f7d7c">ksceKernelRWSpinlockLowWriteUnlock</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:gaf63b6cf1b1fe285840e6fff9689f7d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock a RWSpinlock previously acquired for writing.  <a href="group__SceCpuKernel.html#gaf63b6cf1b1fe285840e6fff9689f7d7c">More...</a><br /></td></tr>
+<tr class="separator:gaf63b6cf1b1fe285840e6fff9689f7d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb9176c3771e2a853144df68eceaef55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaeb9176c3771e2a853144df68eceaef55">ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:gaeb9176c3771e2a853144df68eceaef55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a RWSpinlock for writing and suspend interrupts if necessary.  <a href="group__SceCpuKernel.html#gaeb9176c3771e2a853144df68eceaef55">More...</a><br /></td></tr>
+<tr class="separator:gaeb9176c3771e2a853144df68eceaef55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa06db131a9f6167d19fc83ad96904fbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gaa06db131a9f6167d19fc83ad96904fbd">ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock)</td></tr>
+<tr class="memdesc:gaa06db131a9f6167d19fc83ad96904fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to acquire a RWSpinlock for writing and suspend interrupts if necessary.  <a href="group__SceCpuKernel.html#gaa06db131a9f6167d19fc83ad96904fbd">More...</a><br /></td></tr>
+<tr class="separator:gaa06db131a9f6167d19fc83ad96904fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1670ab4cf602818e4f288c5917400f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97">ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock, <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> intr_status)</td></tr>
+<tr class="memdesc:ga1670ab4cf602818e4f288c5917400f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a RWSpinlock acquired for writing and resume interrupts if necessary.  <a href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97">More...</a><br /></td></tr>
+<tr class="separator:ga1670ab4cf602818e4f288c5917400f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97fec603f28a6c333e9469fcf1859abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga97fec603f28a6c333e9469fcf1859abb">ksceKernelCorelockInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
 <tr class="separator:ga97fec603f28a6c333e9469fcf1859abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> core)</td></tr>
@@ -710,50 +752,169 @@ last_wait_core</td>
 
 </div>
 </div>
-<a id="ga74cc811b572caa5ef2a7616707f2f766"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74cc811b572caa5ef2a7616707f2f766">&#9670;&nbsp;</a></span>ksceKernelCpuSuspendIntr()</h2>
+<a id="ga59cde14788f3bec957e6c54cbd42c3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59cde14788f3bec957e6c54cbd42c3fb">&#9670;&nbsp;</a></span>ksceKernelSpinlockLowLockForDriver()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuSuspendIntr </td>
+          <td class="memname">void ksceKernelSpinlockLowLockForDriver </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Suspend all interrupts (disables IRQs) </p>
+<p>Acquire a spinlock. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the suspend-resume pair</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The current state of the interrupt controller, to be used with <a class="el" href="group__SceCpuKernel.html#gad9f7f38286e8d0b08837729bab4face8" title="Resume all interrupts (enables IRQs)">ksceKernelCpuResumeIntr</a>. </dd></dl>
 
 </div>
 </div>
-<a id="gad9f7f38286e8d0b08837729bab4face8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad9f7f38286e8d0b08837729bab4face8">&#9670;&nbsp;</a></span>ksceKernelCpuResumeIntr()</h2>
+<a id="gaf320612efbec4c9f2f2e0dd7b8ffa56c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf320612efbec4c9f2f2e0dd7b8ffa56c">&#9670;&nbsp;</a></span>ksceKernelSpinlockLowTryLockForDriver()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuResumeIntr </td>
+          <td class="memname">int ksceKernelSpinlockLowTryLockForDriver </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to acquire a spinlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SCE_OK</td><td>if the spinlock is acquired </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>if the spinlock could not be acquired </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga901c4efa2670b347c229b81674b9bc14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga901c4efa2670b347c229b81674b9bc14">&#9670;&nbsp;</a></span>ksceKernelSpinlockLowUnlockForDriver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelSpinlockLowUnlockForDriver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release a previously acquired spinlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to release </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga05ea1ecfc1775b151abe04b000716b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05ea1ecfc1775b151abe04b000716b75">&#9670;&nbsp;</a></span>ksceKernelSpinlockLowLockCpuSuspendIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> ksceKernelSpinlockLowLockCpuSuspendIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Acquire a spinlock and suspend interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An opaque value to be used during the call to <a class="el" href="group__SceCpuKernel.html#ga81f89f46b34e134e541ae3ff67e7224f" title="Release a previously acquired spinlock and resume interrupts if necessary.">ksceKernelSpinlockLowUnlockCpuResumeIntr</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga1cfc2ced805ee495aca0a61877211032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cfc2ced805ee495aca0a61877211032">&#9670;&nbsp;</a></span>ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to acquire a spinlock and suspend interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>if the spinlock is acquired - opaque value describing the interrupt state </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>if the spinlock could not be acquired </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Interrupts are only suspended if the acquisition of the spinlock succeeds </dd></dl>
+
+</div>
+</div>
+<a id="ga81f89f46b34e134e541ae3ff67e7224f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81f89f46b34e134e541ae3ff67e7224f">&#9670;&nbsp;</a></span>ksceKernelSpinlockLowUnlockCpuResumeIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelSpinlockLowUnlockCpuResumeIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>prev_state</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td>
+          <td class="paramname"><em>intr_status</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -763,62 +924,186 @@ last_wait_core</td>
       </table>
 </div><div class="memdoc">
 
-<p>Resume all interrupts (enables IRQs) </p>
+<p>Release a previously acquired spinlock and resume interrupts if necessary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the suspend-resume pair </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prev_state</td><td>State obtained from <a class="el" href="group__SceCpuKernel.html#ga74cc811b572caa5ef2a7616707f2f766" title="Suspend all interrupts (disables IRQs)">ksceKernelCpuSuspendIntr</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to release </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_status</td><td>Status value obtained from <a class="el" href="group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75" title="Acquire a spinlock and suspend interrupts if necessary.">ksceKernelSpinlockLowLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#ga1cfc2ced805ee495aca0a61877211032" title="Attempt to acquire a spinlock and suspend interrupts if necessary.">ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The previous state of the interrupt controller. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function resumes interrupts only if they were enabled before the call to <a class="el" href="group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75" title="Acquire a spinlock and suspend interrupts if necessary.">ksceKernelSpinlockLowLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#ga1cfc2ced805ee495aca0a61877211032" title="Attempt to acquire a spinlock and suspend interrupts if necessary.">ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver</a>. </dd></dl>
 
 </div>
 </div>
-<a id="gaa30b72fe83595ec4dfcafc14bf04b145"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa30b72fe83595ec4dfcafc14bf04b145">&#9670;&nbsp;</a></span>ksceKernelCpuSpinLockIrqSave()</h2>
+<a id="ga4663f02bb006575ef7c939048e5c712f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4663f02bb006575ef7c939048e5c712f">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowReadLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuSpinLockIrqSave </td>
+          <td class="memname">void ksceKernelRWSpinlockLowReadLock </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disable interrupts (IRQs) and spin-lock. </p>
+<p>Acquire a RWSpinlock for reading. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the lock-unlock pair</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to acquire</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The current state of the interrupt controller, to be passed to <a class="el" href="group__SceCpuKernel.html#gaf609c6394e271c010838dbd33550a35b" title="Spin-unlock and restore interrupt state.">ksceKernelCpuSpinLockIrqRestore</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is forbidden to write to data protected by the spinlock after acquiring it with this function. </dd></dl>
 
 </div>
 </div>
-<a id="gaf609c6394e271c010838dbd33550a35b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf609c6394e271c010838dbd33550a35b">&#9670;&nbsp;</a></span>ksceKernelCpuSpinLockIrqRestore()</h2>
+<a id="ga2a8e345d257fb1643ccbb301820a6550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a8e345d257fb1643ccbb301820a6550">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowTryReadLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelCpuSpinLockIrqRestore </td>
+          <td class="memname">int ksceKernelRWSpinlockLowTryReadLock </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to acquire a RWSpinlock for reading. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SCE_OK</td><td>if the spinlock is acquired </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>if the spinlock could not be acquired </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>It is forbidden to write to data protected by the spinlock after acquiring it with this function. </dd></dl>
+
+</div>
+</div>
+<a id="ga2e6aa771d998e8a9f40e85b892e1e691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e6aa771d998e8a9f40e85b892e1e691">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowReadUnlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelRWSpinlockLowReadUnlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unlock a RWSpinlock previously acquired for reading. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to release </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4a9eb223ebfe1828ea649733c4da0f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a9eb223ebfe1828ea649733c4da0f9d">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowReadLockCpuSuspendIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> ksceKernelRWSpinlockLowReadLockCpuSuspendIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Acquire a RWSpinlock for reading and suspend interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An opaque value to be used during the call to <a class="el" href="group__SceCpuKernel.html#ga5e37ece27ef1ca32822a9e7dfc9e9a6f" title="Release a RWSpinlock previously acquired for reading and resume interrupts if necessary.">ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is forbidden to write to data protected by the spinlock after acquiring it with this function. </dd></dl>
+
+</div>
+</div>
+<a id="gae5bdcf6fa2da565f070ea9ca1982d4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5bdcf6fa2da565f070ea9ca1982d4c4">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to acquire a RWSpinlock for reading and suspend interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>if the spinlock is acquired - opaque value describing the interrupt state </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>if the spinlock could not be acquired </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Interrupts are only suspended if the acquisition of the spinlock succeeds </dd>
+<dd>
+It is forbidden to write to data protected by the spinlock after acquiring it with this function. </dd></dl>
+
+</div>
+</div>
+<a id="ga5e37ece27ef1ca32822a9e7dfc9e9a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e37ece27ef1ca32822a9e7dfc9e9a6f">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td>
+          <td class="paramname"><em>intr_status</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -828,15 +1113,199 @@ last_wait_core</td>
       </table>
 </div><div class="memdoc">
 
-<p>Spin-unlock and restore interrupt state. </p>
+<p>Release a RWSpinlock previously acquired for reading and resume interrupts if necessary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Mutex associated to the lock-unlock pair </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Previous interrupt state to be restored (returned by <a class="el" href="group__SceCpuKernel.html#gaa30b72fe83595ec4dfcafc14bf04b145" title="Disable interrupts (IRQs) and spin-lock.">ksceKernelCpuSpinLockIrqSave</a>)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to release </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_status</td><td>Status value obtained from <a class="el" href="group__SceCpuKernel.html#ga4a9eb223ebfe1828ea649733c4da0f9d" title="Acquire a RWSpinlock for reading and suspend interrupts if necessary.">ksceKernelRWSpinlockLowReadLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#gae5bdcf6fa2da565f070ea9ca1982d4c4" title="Attempt to acquire a RWSpinlock for reading and suspend interrupts if necessary.">ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function resumes interrupts only if they were enabled before the call to <a class="el" href="group__SceCpuKernel.html#ga4a9eb223ebfe1828ea649733c4da0f9d" title="Acquire a RWSpinlock for reading and suspend interrupts if necessary.">ksceKernelRWSpinlockLowReadLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#gae5bdcf6fa2da565f070ea9ca1982d4c4" title="Attempt to acquire a RWSpinlock for reading and suspend interrupts if necessary.">ksceKernelRWSpinlockLowReadTryLockCpuSuspendIntr</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gaf577b4cab05e17d9f97be7db7107e1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf577b4cab05e17d9f97be7db7107e1ae">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowWriteLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelRWSpinlockLowWriteLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Acquire a RWSpinlock for writing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to acquire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8dc432901323dd9d6f2286cb823a97e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8dc432901323dd9d6f2286cb823a97e9">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowTryWriteLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelRWSpinlockLowTryWriteLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to acquire a RWSpinlock for writing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SCE_OK</td><td>if the spinlock is acquired </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>if the spinlock could not be acquired </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaf63b6cf1b1fe285840e6fff9689f7d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf63b6cf1b1fe285840e6fff9689f7d7c">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowWriteUnlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelRWSpinlockLowWriteUnlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unlock a RWSpinlock previously acquired for writing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to release </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaeb9176c3771e2a853144df68eceaef55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb9176c3771e2a853144df68eceaef55">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Acquire a RWSpinlock for writing and suspend interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An opaque value to be used during the call to <a class="el" href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97" title="Release a RWSpinlock acquired for writing and resume interrupts if necessary.">ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gaa06db131a9f6167d19fc83ad96904fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa06db131a9f6167d19fc83ad96904fbd">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to acquire a RWSpinlock for writing and suspend interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>Spinlock to acquire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>if the spinlock is acquired - opaque value describing the interrupt state </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>if the spinlock could not be acquired </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Interrupts are only suspended if the acquisition of the spinlock succeeds </dd></dl>
+
+</div>
+</div>
+<a id="ga1670ab4cf602818e4f288c5917400f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1670ab4cf602818e4f288c5917400f97">&#9670;&nbsp;</a></span>ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *&#160;</td>
+          <td class="paramname"><em>lock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a>&#160;</td>
+          <td class="paramname"><em>intr_status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release a RWSpinlock acquired for writing and resume interrupts if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>RWSpinlock to release </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_status</td><td>Status value obtained from <a class="el" href="group__SceCpuKernel.html#gaeb9176c3771e2a853144df68eceaef55" title="Acquire a RWSpinlock for writing and suspend interrupts if necessary.">ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#gaa06db131a9f6167d19fc83ad96904fbd" title="Attempt to acquire a RWSpinlock for writing and suspend interrupts if necessary.">ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function resumes interrupts only if they were enabled before the call to <a class="el" href="group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75" title="Acquire a spinlock and suspend interrupts if necessary.">ksceKernelSpinlockLowLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#gaa06db131a9f6167d19fc83ad96904fbd" title="Attempt to acquire a RWSpinlock for writing and suspend interrupts if necessary.">ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr</a>. </dd></dl>
 
 </div>
 </div>

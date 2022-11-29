@@ -71,7 +71,10 @@ var group__SceTypesKernel =
     [ "SceNID", "group__SceTypesKernel.html#gab4e62685e441b2443bd40f3dd9acd454", null ],
     [ "SceName", "group__SceTypesKernel.html#ga024ba7ccff867a062790a9d0d3d4effe", null ],
     [ "SceKernelSysClock", "group__SceTypesKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8", null ],
-    [ "SceKernelPaddrList", "group__SceTypesKernel.html#ga16bd89500bda643408a63870447d9993", [
+    [ "SceKernelPaddrList", "group__SceTypesKernel.html#ga16bd89500bda643408a63870447d9993", null ],
+    [ "SceKernelSpinlock", "group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f", null ],
+    [ "SceKernelRWSpinlock", "group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e", null ],
+    [ "SceKernelIntrStatus", "group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c", [
       [ "SCE_FALSE", "group__SceTypesKernel.html#ggabc5c98fcc1211af2b80116dd6e0a035da905def7c2528ee21e546716ec3ea247b", null ],
       [ "SCE_TRUE", "group__SceTypesKernel.html#ggabc5c98fcc1211af2b80116dd6e0a035da8b45ff35248ec8024afcb466484107c0", null ],
       [ "SCE_GUID_SYSROOT", "group__SceTypesKernel.html#gga394b3903fbf00ba2b6243f60689a5a5fa4df1f71d4bf27b87e67ccd3f919ebe86", null ],

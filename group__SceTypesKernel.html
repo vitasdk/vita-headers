@@ -188,6 +188,15 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaf51ef41af830ba6422cc9c5106fb68b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16bd89500bda643408a63870447d9993"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#structSceKernelPAVector">SceKernelPAVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga16bd89500bda643408a63870447d9993">SceKernelPaddrList</a></td></tr>
 <tr class="separator:ga16bd89500bda643408a63870447d9993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f1880b9d4572300ac06d53e9434af0f"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a></td></tr>
+<tr class="memdesc:ga4f1880b9d4572300ac06d53e9434af0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular Spinlock.  <a href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">More...</a><br /></td></tr>
+<tr class="separator:ga4f1880b9d4572300ac06d53e9434af0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad116214e9909d62d055153fd0521d9e"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a></td></tr>
+<tr class="memdesc:gaad116214e9909d62d055153fd0521d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">RW Spinlock.  <a href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">More...</a><br /></td></tr>
+<tr class="separator:gaad116214e9909d62d055153fd0521d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab3ab7ee1fe7b83627744c13eb90d20c"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a></td></tr>
+<tr class="memdesc:gaab3ab7ee1fe7b83627744c13eb90d20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status.  <a href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">More...</a><br /></td></tr>
+<tr class="separator:gaab3ab7ee1fe7b83627744c13eb90d20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -2177,6 +2186,63 @@ secret</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4f1880b9d4572300ac06d53e9434af0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f1880b9d4572300ac06d53e9434af0f">&#9670;&nbsp;</a></span>SceKernelSpinlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regular Spinlock. </p>
+<p>Spinlocks are a simple mutual exclusion mechanism implemented using atomic primitives (LDREX/STREX). Unlike other kernel synchronisation primitives, spinlocks can be acquired under any context, including an IRQ or exception handler.</p>
+<p>Since threads/CPUs trying to acquire a spinlock loop until the lock is free, this synchronisation primitive should only be used when the data to protect may be accessed under a context in which entering WAITING state is not allowed (e.g. IRQ handler).</p>
+<p>Spinlocks cannot be acquired recursively. Attempting to recursively acquire a regular spinlock will deadlock.</p>
+<p>The regular Spinlock works similarly to a mutex - only one thread or CPU may own the Spinlock at a time. </p>
+
+</div>
+</div>
+<a id="gaad116214e9909d62d055153fd0521d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad116214e9909d62d055153fd0521d9e">&#9670;&nbsp;</a></span>SceKernelRWSpinlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RW Spinlock. </p>
+<p>(Refer to the regular spinlock description for more details about the spinlock synchronisation primitive)</p>
+<p>The RWSpinlock works similarly to a RWLock - multiple threads/CPUs can access the protected data at the same time as long as only reads are performed. When acquired for writing, a single thread/CPU at a time is allowed to own the RWSpinlock and is thus free to modify the data. Modifying data protected by a RWSpinlock while holding it for reading is undefined behaviour and will lead to data corruption and system instability.</p>
+<p>RW Spinlocks may be acquired by up to ?128? readers at a time. It is also possible to recursively acquire a RWSpinlock for reading. Recursively acquiring a RWSpinlock for writing is not allowed and will deadlock. </p>
+
+</div>
+</div>
+<a id="gaab3ab7ee1fe7b83627744c13eb90d20c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab3ab7ee1fe7b83627744c13eb90d20c">&#9670;&nbsp;</a></span>SceKernelIntrStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status. </p>
+<p>This opaque value is used to hold the interruptability status (whether the CPU can be interrupted) on entry to functions that temporarily suspend interrupts. For readers familiar with the Windows NT kernel, this is similar in spirit to the IRQL value.</p>
+<p>The only usage that can be made of this value is to compare it against zero to check whether a function call failed, if applicable. See the description of functions using this datatype for more details. </p>
 
 </div>
 </div>

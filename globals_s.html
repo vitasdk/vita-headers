@@ -12357,7 +12357,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceCtrlUser.html#ga594215e0488ae1f7a54c38eebec18adb">ctrl.h</a>
 </li>
 <li>SceCtrlExternalInputMode
-: <a class="el" href="group__SceCtrlKernel.html#ga4284796d5063074e02d4915af9d5ab04">ctrl.h</a>
+: <a class="el" href="group__SceCtrlUser.html#ga4284796d5063074e02d4915af9d5ab04">ctrl.h</a>
 </li>
 <li>sceCtrlGetBatteryInfo()
 : <a class="el" href="group__SceCtrlUser.html#ga25f0643e210083fb88e075cb897e7690">ctrl.h</a>
@@ -14184,7 +14184,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceJpegEncKernel.html#ga88a0f6c00904fcf39aec813841e8776b">jpegenc.h</a>
 </li>
 <li>SceJpegEncoderContext
-: <a class="el" href="group__SceJpegEncUser.html#ga882d171ac9cb67d91643f8ff525adb77">jpegenc.h</a>
+: <a class="el" href="group__SceJpegEncKernel.html#ga882d171ac9cb67d91643f8ff525adb77">jpegenc.h</a>
 </li>
 <li>sceJpegEncoderCsc()
 : <a class="el" href="group__SceJpegEncUser.html#ga3e8f25732bd2af7dc21d2c88e32b260f">jpegenc.h</a>
@@ -14211,7 +14211,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceJpegEncUser.html#ga3625becf84ed1146677aef21fe748520">jpegenc.h</a>
 </li>
 <li>SceJpegEncoderPixelFormat
-: <a class="el" href="group__SceJpegEncKernel.html#ga8603f36fb28263ac28ce4be90d8b604e">jpegenc.h</a>
+: <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">jpegenc.h</a>
 </li>
 <li>sceJpegEncoderSetCompressionRatio()
 : <a class="el" href="group__SceJpegEncUser.html#gaef39b2da88e06bf8b818ed30b7741ca5">jpegenc.h</a>
@@ -14590,6 +14590,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>SceKernelIntrOptHandlersCb3
 : <a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">intrmgr.h</a>
 </li>
+<li>SceKernelIntrStatus
+: <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">types.h</a>
+</li>
 <li>sceKernelIsCalledFromSysModule()
 : <a class="el" href="group__SceModulemgrUser.html#gaa4024c08068b04c9532df0e05e926d54">modulemgr.h</a>
 </li>
@@ -14651,10 +14654,10 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceSysmemUser.html#gad5653766a0ced763eb2301a5d698697d">sysmem.h</a>
 </li>
 <li>SceKernelModel
-: <a class="el" href="group__SceSysmemKernel.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c">sysmem.h</a>
+: <a class="el" href="group__SceSysmemUser.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c">sysmem.h</a>
 </li>
 <li>SceKernelModuleState
-: <a class="el" href="group__SceModulemgrUser.html#gaa5e9568f90e268bfc335c3dbfb46edd0">modulemgr.h</a>
+: <a class="el" href="group__SceModulemgrKernel.html#gaa5e9568f90e268bfc335c3dbfb46edd0">modulemgr.h</a>
 </li>
 <li>SceKernelMutexAttribute
 : <a class="el" href="group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242">threadmgr.h</a>
@@ -14777,8 +14780,8 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceProcessmgrUser.html#ga2255f042fe267ddd8b38eee5fa578e33">processmgr.h</a>
 </li>
 <li>SceKernelPowerTickType
-: <a class="el" href="group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f">processmgr.h</a>
-, <a class="el" href="group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f">suspend.h</a>
+: <a class="el" href="group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f">suspend.h</a>
+, <a class="el" href="group__SceProcessmgrUser.html#ga1b448620c7525b730a2b94164e34d77f">processmgr.h</a>
 </li>
 <li>sceKernelPowerUnlock()
 : <a class="el" href="group__SceProcessmgrUser.html#ga37afabdf671c166288c4b5f787d95734">processmgr.h</a>
@@ -14800,6 +14803,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 </li>
 <li>sceKernelReceiveMsgPipeCB()
 : <a class="el" href="group__SceThreadMgrUser.html#ga90cdb280fd9d0f6ab7d09ec6828147c3">threadmgr.h</a>
+</li>
+<li>SceKernelRWSpinlock
+: <a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">types.h</a>
 </li>
 <li>sceKernelSendMsgPipe()
 : <a class="el" href="group__SceThreadMgrUser.html#gad1b98f9743cae9a86d6414da646c61a0">threadmgr.h</a>
@@ -14834,6 +14840,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>sceKernelSignalSema()
 : <a class="el" href="group__SceThreadMgrUser.html#gab81b0362839d7f9cbdcbf64305e7e603">threadmgr.h</a>
 </li>
+<li>SceKernelSpinlock
+: <a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">types.h</a>
+</li>
 <li>sceKernelStartModule()
 : <a class="el" href="group__SceModulemgrUser.html#ga5f357531104e9e8ab3653634d10ef996">modulemgr.h</a>
 </li>
@@ -14859,8 +14868,8 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceKernelSysrootKernel.html#gaae18ca6d933be8561673eb190fde924c">sysroot.h</a>
 </li>
 <li>SceKernelThreadEntry
-: <a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">threadmgr.h</a>
-, <a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">thread.h</a>
+: <a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">thread.h</a>
+, <a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">threadmgr.h</a>
 </li>
 <li>SceKernelTime
 : <a class="el" href="group__SceProcessmgrUser.html#ga5fd5556a01c9d9cc7b987a4172c1d28a">processmgr.h</a>
@@ -15559,7 +15568,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceNetUser.html#ga9590ec0654b5a164fb9854afc9315c7a">net.h</a>
 </li>
 <li>SceNetKernelErrorCode
-: <a class="el" href="group__SceNetKernel.html#ga80cc519fa0e058a19a67b756f8837ef0">net.h</a>
+: <a class="el" href="group__SceNetUser.html#ga80cc519fa0e058a19a67b756f8837ef0">net.h</a>
 </li>
 <li>SceNetLibnetErrorCode
 : <a class="el" href="group__SceNetKernel.html#ga161fa8371cfb4d79f0ccfae4947b4d8b">net.h</a>
@@ -15568,7 +15577,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceNetUser.html#ga081692ddddcd3bf8e94fed06cc142408">net.h</a>
 </li>
 <li>SceNetMsgFlag
-: <a class="el" href="group__SceNetUser.html#ga059631a28b7785f0898f141e1e13b89d">net.h</a>
+: <a class="el" href="group__SceNetKernel.html#ga059631a28b7785f0898f141e1e13b89d">net.h</a>
 </li>
 <li>sceNetNtohl()
 : <a class="el" href="group__SceNetUser.html#gaf0079d91bfd48309ff3717692f98ef5a">net.h</a>
@@ -15580,7 +15589,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceNetUser.html#ga2538abe15fa19b0250f80705a0e3ca94">net.h</a>
 </li>
 <li>SceNetProtocol
-: <a class="el" href="group__SceNetUser.html#gaa5ea6e407e2c996ec4536c5dbdddc35d">net.h</a>
+: <a class="el" href="group__SceNetKernel.html#gaa5ea6e407e2c996ec4536c5dbdddc35d">net.h</a>
 </li>
 <li>sceNetRecv()
 : <a class="el" href="group__SceNetUser.html#ga52ae8b302f723e3f741449c2313dc308">net.h</a>
@@ -15667,16 +15676,16 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceNetUser.html#ga6f135ab228c6c82b2f3a71cf64b89c1c">net.h</a>
 </li>
 <li>SceNetSocketOption
-: <a class="el" href="group__SceNetKernel.html#gadda60e631259413051c912fe52af5264">net.h</a>
+: <a class="el" href="group__SceNetUser.html#gadda60e631259413051c912fe52af5264">net.h</a>
 </li>
 <li>SceNetSocketType
-: <a class="el" href="group__SceNetKernel.html#gaa3084023b94330820332b4a6d802d3ca">net.h</a>
+: <a class="el" href="group__SceNetUser.html#gaa3084023b94330820332b4a6d802d3ca">net.h</a>
 </li>
 <li>SceNetSockInfoFlag
-: <a class="el" href="group__SceNetUser.html#ga1ed6a8357fa6fac7b39ade81816648f0">net.h</a>
+: <a class="el" href="group__SceNetKernel.html#ga1ed6a8357fa6fac7b39ade81816648f0">net.h</a>
 </li>
 <li>SceNetSockInfoState
-: <a class="el" href="group__SceNetKernel.html#gaccdd18c5062ffdc4d6c0b736025bf97f">net.h</a>
+: <a class="el" href="group__SceNetUser.html#gaccdd18c5062ffdc4d6c0b736025bf97f">net.h</a>
 </li>
 <li>sceNetSyscallAccept()
 : <a class="el" href="group__SceNetKernel.html#ga2c19b6bf3bd070960806a8f53f65f32f">net_syscalls.h</a>
@@ -16093,10 +16102,10 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">types.h</a>
 </li>
 <li>ScePowerCallback
-: <a class="el" href="group__ScePowerKernel.html#ga2905d0fcc48aa6fb36b6edf2bf78cb2c">power.h</a>
+: <a class="el" href="group__ScePowerUser.html#gadecfb9ec1a301e138ff57db53c0e5c7a">power.h</a>
 </li>
 <li>ScePowerCallbackType
-: <a class="el" href="group__ScePowerUser.html#ga87add7efd8177f03fecc6fdf9233c57a">power.h</a>
+: <a class="el" href="group__ScePowerKernel.html#ga87add7efd8177f03fecc6fdf9233c57a">power.h</a>
 </li>
 <li>ScePowerConfigurationMode
 : <a class="el" href="group__ScePowerUser.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce">power.h</a>
@@ -16984,8 +16993,8 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceSystemParamUser.html#gafc21d49875f7a76f1a430c8209a566b7">system_param.h</a>
 </li>
 <li>SceThreadStatus
-: <a class="el" href="group__SceThreadMgrKernel.html#ga552cbf506e81e208e4bf3e75badc1c40">thread.h</a>
-, <a class="el" href="group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40">threadmgr.h</a>
+: <a class="el" href="group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40">threadmgr.h</a>
+, <a class="el" href="group__SceThreadMgrKernel.html#ga552cbf506e81e208e4bf3e75badc1c40">thread.h</a>
 </li>
 <li>sceTouchDisableTouchForce()
 : <a class="el" href="group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be">touch.h</a>
@@ -17108,7 +17117,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceUdcdUser.html#gaffd43136d3fc38126bd4a36392c5f3b9">udcd.h</a>
 </li>
 <li>SceUdcdStatusDriver
-: <a class="el" href="group__SceUdcdUser.html#ga9a4e508891cafbcd50ec6e553d75f4d6">udcd.h</a>
+: <a class="el" href="group__SceUdcdKernel.html#ga9a4e508891cafbcd50ec6e553d75f4d6">udcd.h</a>
 </li>
 <li>sceUdcdUnregisterCallback()
 : <a class="el" href="group__SceUdcdUser.html#gadea8513795b26936a41fc0718fdf22ef">udcd.h</a>
@@ -17168,7 +17177,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="group__SceUsbdUser.html#ga35560d2ad3162cfb55f92e401546513e">usbd.h</a>
 </li>
 <li>SceUsbdErrorCode
-: <a class="el" href="group__SceUsbdUser.html#gaea15c9e75b573d065050efee195a98fd">usbd.h</a>
+: <a class="el" href="group__SceUsbdKernel.html#gaea15c9e75b573d065050efee195a98fd">usbd.h</a>
 </li>
 <li>sceUsbdGetDescriptor()
 : <a class="el" href="group__SceUsbdUser.html#ga792c0c82926d86fe23a711269c12c357">usbd.h</a>
