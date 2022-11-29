@@ -230,7 +230,7 @@ void ksceKernelCpuIcacheAndL2WritebackInvalidateRange(const void *ptr, SceSize l
  * 
  * @param[in]   lock     Spinlock to acquire
  */
-void ksceKernelSpinlockLowLockForDriver(SceKernelSpinlock *lock);
+void ksceKernelSpinlockLowLock(SceKernelSpinlock *lock);
 
 /**
  * @brief      Attempt to acquire a spinlock
@@ -240,14 +240,14 @@ void ksceKernelSpinlockLowLockForDriver(SceKernelSpinlock *lock);
  * @retval     SCE_OK if the spinlock is acquired
  * @retval     <0 if the spinlock could not be acquired
  */
-int ksceKernelSpinlockLowTryLockForDriver(SceKernelSpinlock *lock);
+int ksceKernelSpinlockLowTryLock(SceKernelSpinlock *lock);
 
 /**
  * @brief      Release a previously acquired spinlock
  * 
  * @param[in]  lock     Spinlock to release
  */
-void ksceKernelSpinlockLowUnlockForDriver(SceKernelSpinlock *lock);
+void ksceKernelSpinlockLowUnlock(SceKernelSpinlock *lock);
 
 /**
  * @brief      Acquire a spinlock and suspend interrupts if necessary
@@ -267,13 +267,13 @@ SceKernelIntrStatus ksceKernelSpinlockLowLockCpuSuspendIntr(SceKernelSpinlock* l
  * @retval     <0 if the spinlock could not be acquired
  * @note       Interrupts are only suspended if the acquisition of the spinlock succeeds
  */
-SceKernelIntrStatus ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver(SceKernelSpinlock *lock);
+SceKernelIntrStatus ksceKernelSpinlockLowTryLockCpuSuspendIntr(SceKernelSpinlock *lock);
 
 /**
  * @brief      Release a previously acquired spinlock and resume interrupts if necessary
  *
  * @param[in]  lock          Spinlock to release
- * @param[in]  intr_status   Status value obtained from ::ksceKernelSpinlockLowLockCpuSuspendIntr/::ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver.
+ * @param[in]  intr_status   Status value obtained from ::ksceKernelSpinlockLowLockCpuSuspendIntr/::ksceKernelSpinlockLowTryLockCpuSuspendIntr.
  * 
  * @note       This function resumes interrupts only if they were enabled before the call to ::ksceKernelSpinlockLowLockCpuSuspendIntr/::ksceKernelSpinlockLowTryLockCpuSuspendIntrForDriver.
  */
