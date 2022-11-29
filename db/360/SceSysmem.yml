@@ -98,24 +98,24 @@ modules:
           ksceKernelCpuEnableInterrupts: 0xF5BAD43B
           ksceKernelCpuGetCpuId: 0x5E4D5DE1
           ksceKernelCpuIsVaddrMapped: 0x337CBDF3
-          ksceKernelSpinlockLowLock: 0xBF82DEB2
-          ksceKernelSpinlockLowTryLock: 0x5AC9D394
-          ksceKernelSpinlockLowUnlock: 0xD6ED0C46
-          ksceKernelSpinlockLowLockCpuSuspendIntr: 0xD32ACE9E
-          ksceKernelSpinlockLowTryLockCpuSuspendIntr: 0x27C0B340
-          ksceKernelSpinlockLowUnlockCpuResumeIntr: 0x7BB9D5DF
           ksceKernelRWSpinlockLowReadLock: 0xCAC9AE80
-          ksceKernelRWSpinlockLowTryReadLock: 0x093925BD
-          ksceKernelRWSpinlockLowReadUnlock: 0xF5FD5676
           ksceKernelRWSpinlockLowReadLockCpuSuspendIntr: 0xEC53D007
-          ksceKernelRWSpinlockLowTryReadLockCpuSuspendIntr: 0xF02467D1
+          ksceKernelRWSpinlockLowReadUnlock: 0xF5FD5676
           ksceKernelRWSpinlockLowReadUnlockCpuResumeIntr: 0x740A0750
-          ksceKernelRWSpinlockLowWriteLock: 0x3F42B434
+          ksceKernelRWSpinlockLowTryReadLock: 0x093925BD
+          ksceKernelRWSpinlockLowTryReadLockCpuSuspendIntr: 0xF02467D1
           ksceKernelRWSpinlockLowTryWriteLock: 0x4F7790B4
-          ksceKernelRWSpinlockLowWriteUnlock: 0xCB8ABDF0
-          ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr: 0x4C38CE4D
           ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr: 0xDE6482C6
+          ksceKernelRWSpinlockLowWriteLock: 0x3F42B434
+          ksceKernelRWSpinlockLowWriteLockCpuSuspendIntr: 0x4C38CE4D
+          ksceKernelRWSpinlockLowWriteUnlock: 0xCB8ABDF0
           ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr: 0x9EC91017
+          ksceKernelSpinlockLowLock: 0xBF82DEB2
+          ksceKernelSpinlockLowLockCpuSuspendIntr: 0xD32ACE9E
+          ksceKernelSpinlockLowTryLock: 0x5AC9D394
+          ksceKernelSpinlockLowTryLockCpuSuspendIntr: 0x27C0B340
+          ksceKernelSpinlockLowUnlock: 0xD6ED0C46
+          ksceKernelSpinlockLowUnlockCpuResumeIntr: 0x7BB9D5DF
       SceCpuForKernel:
         kernel: true
         nid: 0x54BF2BAB
