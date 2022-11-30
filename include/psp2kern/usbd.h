@@ -7,6 +7,8 @@
 #ifndef _PSP2KERN_USBD_H_
 #define _PSP2KERN_USBD_H_
 
+#include <psp2common/types.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -300,7 +302,7 @@ void *ksceUsbdScanStaticDescriptor(SceUID device_id, void *start, SceUsbdDescrip
  * @param endpoint endpoint (may be null for default configuration endpoint)
  *
  */
-ScCeUID ksceUsbdOpenPipe(int device_id, SceUsbdEndpointDescriptor *endpoint);
+SceUID ksceUsbdOpenPipe(int device_id, SceUsbdEndpointDescriptor *endpoint);
 
 /**
  * Close communication pipe to endpoint
@@ -384,6 +386,7 @@ int ksceUsbdIsochronousTransfer(
  * @param cb transfer callback
  * @param user_data userdata to pass to callback
  *
+ * @note buffer pointer must be 64b aligned
  */
 int ksceUsbdBulkTransfer(
     SceUID pipe_id,
@@ -404,6 +407,7 @@ int ksceUsbdBulkTransfer(
  * @param cb transfer callback
  * @param user_data userdata to pass to callback
  *
+ * @note buffer pointer must be 64b aligned
  */
 int ksceUsbdBulkTransfer2(
     int pipe_id,

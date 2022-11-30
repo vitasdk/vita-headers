@@ -77,6 +77,7 @@
 #include <psp2/update.h>
 #include <psp2/usbd.h>
 #include <psp2/usbserial.h>
+#include <psp2/usbserv.h>
 #include <psp2/usbstorvstor.h>
 #include <psp2/videodec.h>
 #include <psp2/videoexport.h>
