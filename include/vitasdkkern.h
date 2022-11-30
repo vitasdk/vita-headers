@@ -24,6 +24,7 @@
 #include <psp2kern/udcd.h>
 #include <psp2kern/usbd.h>
 #include <psp2kern/usbserial.h>
+#include <psp2kern/usbserv.h>
 
 #include <psp2kern/avcodec/jpegenc.h>
 

@@ -8,27 +8,27 @@ modules:
         kernel: true
         nid: 0xA0EBCA41
         functions:
+          ksceUsbdBulkTransfer: 0x235C094A
+          ksceUsbdBulkTransfer2: 0x470D5289
           ksceUsbdClosePipe: 0xF304DC5C
           ksceUsbdControlTransfer: 0x2E05660F
-          ksceUsbdScanStaticDescriptor: 0xBC3EF82B
+          ksceUsbdGetDeviceLocation: 0x0E73D253
+          ksceUsbdGetDeviceSpeed: 0xC3BECF5F
+          ksceUsbdHostStart: 0x5E301E18
+          ksceUsbdHostStop: 0x3C3396BB
           ksceUsbdInterruptTransfer: 0xA0BF85B8
+          ksceUsbdIsochronousTransfer: 0x2249BF99
           ksceUsbdOpenPipe: 0x1CDBFF9F
           ksceUsbdRegisterCompositeLdd: 0x6E53D7F4
           ksceUsbdRegisterDriver: 0x1EC94F18
+          ksceUsbdResume: 0x206634f9
+          ksceUsbdScanStaticDescriptor: 0xBC3EF82B
+          ksceUsbdSuspend: 0x3EBF5FFE
           ksceUsbdSuspendPhase2: 0xD7AA730D
+          ksceUsbdUnregisterCompositeLdd: 0x7934bb4a
           ksceUsbdUnregisterDriver: 0x216F108D
           ksceUsbd_05073925: 0x05073925
-          ksceUsbdGetDeviceLocation: 0x0E73D253
-          ksceUsbdResume: 0x206634f9
-          ksceUsbdIsochronousTransfer: 0x2249BF99
-          ksceUsbdBulkTransfer: 0x235C094A
-          ksceUsbdHostStop: 0x3C3396BB
-          ksceUsbdSuspend: 0x3EBF5FFE
-          ksceUsbdBulkTransfer2: 0x470D5289
-          ksceUsbdHostStart: 0x5E301E18
-          ksceUsbdUnregisterCompositeLdd: 0x7934bb4a
           ksceUsbd_7938DAC7: 0x7938DAC7
-          ksceUsbdGetDeviceSpeed: 0xC3BECF5F
       SceUsbdForUser:
         kernel: false
         nid: 0xC3AEAB67

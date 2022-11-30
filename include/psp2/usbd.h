@@ -7,6 +7,8 @@
 #ifndef _PSP2_USBD_H_
 #define _PSP2_USBD_H_
 
+#include <psp2common/types.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -53,8 +55,8 @@ typedef struct SceUsbdReceiveEvent {
 } SceUsbdReceiveEvent; /* size = 0x1C */
 
 typedef struct SceUsbdDeviceAddress {
-        unsigned int unk0;
-        unsigned short unk1;
+    unsigned int unk0;
+    unsigned short unk1;
 } SceUsbdDeviceAddress; /* size = 0x6 */
 
 #define USB_DESCRIPTOR_DEVICE                   0x01    // bDescriptorType for a Device Descriptor.
@@ -338,7 +340,7 @@ typedef struct SceUsbdIsochTransferStatus {
     uint32_t unk1; // unused
     uintptr_t* unk2; // ret up to 0x28 buff. 10 * 4 bytes. or 8*5 bytes
     uint32_t unk3; // ret 4. ptr?
-} SceUsbdTransferStatus;
+} SceUsbdIsochTransferStatus;
 
 /**
  * Get transfer status
@@ -494,7 +496,7 @@ typedef struct SceUsbdAttachCompositeParam {
     uint32_t device;
     uint32_t unk3; // num devices?
     uint32_t unk4;
-} SceUsbdAttachCompisiteParam; /* size = 0x14 */
+} SceUsbdAttachCompositeParam; /* size = 0x14 */
 
 /**
  * Attach composite driver to device
@@ -507,5 +509,8 @@ typedef struct SceUsbdAttachCompositeParam {
  */
 int sceUsbdAttachCompositeLdd(SceUID uid, SceUsbdAttachCompositeParam* param);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* _PSP2_USBD_H_ */
