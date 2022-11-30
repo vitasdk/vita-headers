@@ -10,3 +10,14 @@ modules:
         functions:
           sceUsbServAccessoryActivate: 0xB33AA2EB
           sceUsbServAccessoryDeactivate: 0x154246A9
+      SceUsbServForDriver:
+        kernel: true
+        nid: 0xA75BBDF2
+        functions:
+          ksceUsbServEtherEnable: 0x30AE5F66
+          ksceUsbServEtherDisable: 0xD787B191
+          ksceUsbServAccessoryActivate: 0xAA6D4409
+          ksceUsbServAccessoryDeactivate: 0x853CB8E4
+          ksceUsbServMacSelect: 0x7AD36284
+          ksceUsbServMacGet: 0xF0553A69
+          ksceUsbServDisableEtherSuspend: 0x6D738018
