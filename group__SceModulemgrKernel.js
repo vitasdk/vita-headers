@@ -7,6 +7,8 @@ var group__SceModulemgrKernel =
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrKernel.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrKernel.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_CANCEL", "group__SceModulemgrKernel.html#gae09ae07a8901f7f75ed837e3bca6e968", null ],
+    [ "ksceKernelGetModuleInternal", "group__SceModulemgrKernel.html#gacaef49442f9f565549ab33e111afa7b8", null ],
+    [ "ksceKernelGetProcessMainModule", "group__SceModulemgrKernel.html#ga4423abbccdcbe86ecbd321124ccc0ead", null ],
     [ "SceKernelModuleState", "group__SceModulemgrKernel.html#gaa5e9568f90e268bfc335c3dbfb46edd0", [
       [ "SCE_KERNEL_MODULE_STATE_READY", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a7a5d0ae7190799f7f847c2b5e0c33cad", null ],
       [ "SCE_KERNEL_MODULE_STATE_STARTED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a9c8e9bfacd82627ae1015cbf004e5926", null ],
@@ -19,14 +21,14 @@ var group__SceModulemgrKernel =
     [ "SCE_KERNEL_MODULE_STATE_STARTED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a9c8e9bfacd82627ae1015cbf004e5926", null ],
     [ "SCE_KERNEL_MODULE_STATE_ENDED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0af167ea41eb07f347d658eab72949f4a2", null ],
     [ "ksceKernelRegisterSyscall", "group__SceModulemgrKernel.html#ga54151a4817040fd414bbdd1782f5f2a5", null ],
-    [ "ksceKernelSetupForModulemgr", "group__SceModulemgrKernel.html#gadf058851b70521f2899fdd936a0b5a29", null ],
+    [ "ksceKernelRegisterModulesAfterBoot", "group__SceModulemgrKernel.html#ga4cf623ca7d989bc2649a9e5ede70a6a0", null ],
     [ "ksceKernelGetModuleList", "group__SceModulemgrKernel.html#ga4bee9d1d40bc8c3a17bb78f81b67b774", null ],
-    [ "ksceKernelGetModuleList2", "group__SceModulemgrKernel.html#ga31985c1f190f70b5f97032f7ad25b3c5", null ],
+    [ "ksceKernelGetModuleInfoForDebugger", "group__SceModulemgrKernel.html#ga7052e3d1be23773faa0f926e2eca82b3", null ],
     [ "ksceKernelGetModuleInfo", "group__SceModulemgrKernel.html#gacecebf1d4bb156b73646f76c4c16cee6", null ],
     [ "ksceKernelGetModuleInfoMinByAddr", "group__SceModulemgrKernel.html#ga47fa309f35451118f8b934f97f794165", null ],
-    [ "ksceKernelGetModuleInternal", "group__SceModulemgrKernel.html#gacc93c42e732e167f276ed09892cedfaa", null ],
-    [ "ksceKernelGetProcessEntryPointByAddr", "group__SceModulemgrKernel.html#gafa0a09f73b16636aed705c11405f528a", null ],
-    [ "ksceKernelGetModuleIdByAddr", "group__SceModulemgrKernel.html#ga6abf55c09b2c587a7c5e1538e1f87414", null ],
+    [ "ksceKernelGetModuleCB", "group__SceModulemgrKernel.html#gae092ca139d4d34f9e4b7ef006232b53d", null ],
+    [ "ksceKernelGetModuleCBByAddr", "group__SceModulemgrKernel.html#ga32a5caf2c0a7f76c95a27284d017825f", null ],
+    [ "ksceKernelGetModuleIdByAddrForDebugger", "group__SceModulemgrKernel.html#ga8fbd95e823f72abdb54e7ea8877e7c02", null ],
     [ "ksceKernelSearchModuleByName", "group__SceModulemgrKernel.html#ga57a0cbedf74ca1199eaa3c28da2ff0aa", null ],
     [ "ksceKernelGetSystemSwVersion", "group__SceModulemgrKernel.html#gaf8e98274a12bb8b9822b24164ac5e3dc", null ],
     [ "ksceKernelLoadModule", "group__SceModulemgrKernel.html#ga1a38255cc912a55eae4db7a3009a1709", null ],
@@ -45,7 +47,7 @@ var group__SceModulemgrKernel =
     [ "ksceKernelStopUnloadSharedModuleForPid", "group__SceModulemgrKernel.html#ga8952fd9ee53b55a90c9ea18eb67d0d5d", null ],
     [ "ksceKernelMountBootfs", "group__SceModulemgrKernel.html#ga572e4002ddc14186de161f64bec8b0b8", null ],
     [ "ksceKernelUmountBootfs", "group__SceModulemgrKernel.html#gabf6e33f8ddb4e65999805415d838cf20", null ],
-    [ "ksceKernelGetProcessMainModule", "group__SceModulemgrKernel.html#gaf83a2645b578d8082cbe93a0d80becfe", null ],
+    [ "ksceKernelGetModuleIdByPid", "group__SceModulemgrKernel.html#ga10972b240685148e53ae48b28beac121", null ],
     [ "ksceKernelGetModulePath", "group__SceModulemgrKernel.html#gab4cc15ec37a12f1dfe1adec9a00053ba", null ],
-    [ "ksceKernelGetModuleLibraryInfo", "group__SceModulemgrKernel.html#ga292971abb283d62b9ec487dfa3212316", null ]
+    [ "ksceKernelGetLibraryInfoForDebugger", "group__SceModulemgrKernel.html#ga9041a0febfdb51c72227129c18a8b7fe", null ]
 ];

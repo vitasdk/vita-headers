@@ -1,7 +1,5 @@
 var group__SceLibJsonUser =
 [
-    [ "sce", "namespacesce.html", null ],
-    [ "Json", "namespacesce_1_1Json.html", null ],
     [ "SerializeCallback", "group__SceLibJsonUser.html#ga2c33eab4440d4d88a53a7ccf1bd9fb53", null ],
     [ "NullAccessCallback", "group__SceLibJsonUser.html#ga18c425c1bc70544294b78884bec756d6", null ],
     [ "ParseCallback", "group__SceLibJsonUser.html#ga4c7b018872d5f4a16283500890c134b9", null ],
@@ -13,16 +11,7 @@ var group__SceLibJsonUser =
       [ "SCE_JSON_PARSER_ERROR_FILE_LOAD", "group__SceLibJsonUser.html#ggaf30a6fdf3792f781b11100140db91301aa99aa371bac374bb22d12e16372ad8a9", null ],
       [ "SCE_JSON_PARSER_ERROR_INVALID_TOKEN", "group__SceLibJsonUser.html#ggaf30a6fdf3792f781b11100140db91301a5b242caa01442f4417a49f5a882e4c84", null ]
     ] ],
-    [ "ValueType", "group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b", [
-      [ "NullValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481bae8d27005eb87501714a8a4fc67b6347a", null ],
-      [ "BoolValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481ba7c3cde2b6823cd3c235ecdfe4d3b9375", null ],
-      [ "IntValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481bab7cb7224d8be8f9f9ca75fcc0b92f561", null ],
-      [ "UIntValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481baacd322f34a3cfe0daf9cc693c9f0615e", null ],
-      [ "RealValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481baa141073211d6b2807d1925e1fb514bf0", null ],
-      [ "StringValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481baf6d2b0e17b94cf73adf2a5be1f0ca160", null ],
-      [ "ArrayValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481ba1c0f6fe44a2fb944a5ec1698364b4642", null ],
-      [ "ObjectValue", "group__SceLibJsonUser.html#gga4fd6d8e5cb54326aa629828a9617481ba10db00566191cc6ffe951bc87e4bce28", null ]
-    ] ],
+    [ "ValueType", "group__SceLibJsonUser.html#ga4fd6d8e5cb54326aa629828a9617481b", null ],
     [ "SCE_JSON_ERROR_UNLOADED", "group__SceLibJsonUser.html#ggaf30a6fdf3792f781b11100140db91301aa9c5ca57bd154a2251c56749dd90e837", null ],
     [ "SCE_JSON_ERROR_LOADED", "group__SceLibJsonUser.html#ggaf30a6fdf3792f781b11100140db91301a211caaa69b650727985d49f4f1ac8131", null ],
     [ "SCE_JSON_ERROR_MEM_ALLOC", "group__SceLibJsonUser.html#ggaf30a6fdf3792f781b11100140db91301a2ba33d3eeb09e84414c9685f49116212", null ],

@@ -7,12 +7,12 @@ var group__SceImeUser =
     [ "SCE_IME_MAX_TEXT_LENGTH", "group__SceImeUser.html#ga956ad69f0301c584a8e16bdfe2e4d006", null ],
     [ "SceImeTextFilter", "group__SceImeUser.html#gaddd9a387a5a3069e472d38fc406c1cb7", null ],
     [ "SceImeEventHandler", "group__SceImeUser.html#gac3b290bff6d5907884d003fcdb028842", null ],
-    [ "SceImeDialogErrorCode", "group__SceImeUser.html#ga071e4ce064963c98be8e67af50c4bab9", [
-      [ "SCE_IME_DIALOG_ERROR_PARAM", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a8985afbd02d6a504ec72f4162582000b", null ],
-      [ "SCE_IME_DIALOG_ERROR_INTERNAL", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a317ccb020912e7a3eb01907a4d473797", null ],
-      [ "SCE_IME_DIALOG_ERROR_INVALID_DIALOG_MODE", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a3a62b12441f74b416ee17ab6b46c2450", null ],
-      [ "SCE_IME_DIALOG_ERROR_INVALID_TEXT_BOX_MODE", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a181a1b01fcdcc2aff251847c11abf514", null ],
-      [ "SCE_IME_DIALOG_ERROR_INVALID_TITLE", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a22eddd59ab70af4bde738dbfd2965f3f", null ]
+    [ "SceImeDialogError", "group__SceImeUser.html#ga5f880e372ad4009b88dca60b22ed94ae", [
+      [ "SCE_IME_DIALOG_ERROR_PARAM", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea8985afbd02d6a504ec72f4162582000b", null ],
+      [ "SCE_IME_DIALOG_ERROR_INTERNAL", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea317ccb020912e7a3eb01907a4d473797", null ],
+      [ "SCE_IME_DIALOG_ERROR_INVALID_DIALOG_MODE", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea3a62b12441f74b416ee17ab6b46c2450", null ],
+      [ "SCE_IME_DIALOG_ERROR_INVALID_TEXT_BOX_MODE", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea181a1b01fcdcc2aff251847c11abf514", null ],
+      [ "SCE_IME_DIALOG_ERROR_INVALID_TITLE", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea22eddd59ab70af4bde738dbfd2965f3f", null ]
     ] ],
     [ "SceImeDialogDialogMode", "group__SceImeUser.html#ga405b0cd7ee0573b564ebf792feeae06f", [
       [ "SCE_IME_DIALOG_DIALOG_MODE_DEFAULT", "group__SceImeUser.html#gga405b0cd7ee0573b564ebf792feeae06fa9f90ff55590cd02ceb27c35e7f06e929", null ],
@@ -100,11 +100,11 @@ var group__SceImeUser =
       [ "SCE_IME_EVENT_PRESS_CLOSE", "group__SceImeUser.html#gga635a4c47f013cb6af063488db94be418acf9c321bc57022a270e1b3f3641c656e", null ],
       [ "SCE_IME_EVENT_PRESS_ENTER", "group__SceImeUser.html#gga635a4c47f013cb6af063488db94be418a78013530dc3bffb3ad35c70eb9a74e80", null ]
     ] ],
-    [ "SCE_IME_DIALOG_ERROR_PARAM", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a8985afbd02d6a504ec72f4162582000b", null ],
-    [ "SCE_IME_DIALOG_ERROR_INTERNAL", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a317ccb020912e7a3eb01907a4d473797", null ],
-    [ "SCE_IME_DIALOG_ERROR_INVALID_DIALOG_MODE", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a3a62b12441f74b416ee17ab6b46c2450", null ],
-    [ "SCE_IME_DIALOG_ERROR_INVALID_TEXT_BOX_MODE", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a181a1b01fcdcc2aff251847c11abf514", null ],
-    [ "SCE_IME_DIALOG_ERROR_INVALID_TITLE", "group__SceImeUser.html#gga071e4ce064963c98be8e67af50c4bab9a22eddd59ab70af4bde738dbfd2965f3f", null ],
+    [ "SCE_IME_DIALOG_ERROR_PARAM", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea8985afbd02d6a504ec72f4162582000b", null ],
+    [ "SCE_IME_DIALOG_ERROR_INTERNAL", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea317ccb020912e7a3eb01907a4d473797", null ],
+    [ "SCE_IME_DIALOG_ERROR_INVALID_DIALOG_MODE", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea3a62b12441f74b416ee17ab6b46c2450", null ],
+    [ "SCE_IME_DIALOG_ERROR_INVALID_TEXT_BOX_MODE", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea181a1b01fcdcc2aff251847c11abf514", null ],
+    [ "SCE_IME_DIALOG_ERROR_INVALID_TITLE", "group__SceImeUser.html#gga5f880e372ad4009b88dca60b22ed94aea22eddd59ab70af4bde738dbfd2965f3f", null ],
     [ "SCE_IME_DIALOG_DIALOG_MODE_DEFAULT", "group__SceImeUser.html#gga405b0cd7ee0573b564ebf792feeae06fa9f90ff55590cd02ceb27c35e7f06e929", null ],
     [ "SCE_IME_DIALOG_DIALOG_MODE_WITH_CANCEL", "group__SceImeUser.html#gga405b0cd7ee0573b564ebf792feeae06fa3b6aad9bab8937239026d8b0eb3f7fff", null ],
     [ "SCE_IME_DIALOG_TEXTBOX_MODE_DEFAULT", "group__SceImeUser.html#gga81ce5bb8ea1f8e82a5aa9e8e10d5a32fad8d69379747c0529d49322114beae7cd", null ],
