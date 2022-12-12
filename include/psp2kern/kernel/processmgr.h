@@ -23,24 +23,6 @@ typedef struct SceKernelProcessInfo {
 	int unk[0xE8 / 4 - 6];  //!< the rest is unknown
 } SceKernelProcessInfo;
 
-typedef struct SceModuleLibraryInfo SceModuleLibraryInfo;
-typedef struct SceModuleImportInfo SceModuleImportInfo;
-typedef struct SceModuleInfoInternal SceModuleInfoInternal;
-
-typedef struct SceKernelProcessModuleInfo { // size is 0x24-bytes
-	SceUID pid;
-	SceModuleLibraryInfo *library_info;
-	SceUInt16 data_0x08;
-	SceUInt16 nonlinked_lib_number;
-	SceModuleImportInfo *nonlinked_info;
-	SceModuleInfoInternal *module_info;
-	SceUID process_main_module_id;
-	SceUInt16 process_module_count;
-	SceUInt16 inhibit_state;
-	void *data_0x1C;
-	int cpu_addr;
-} SceKernelProcessModuleInfo;
-
 void *ksceKernelGetProcessKernelBuf(SceUID pid);
 
 int ksceKernelGetProcessInfo(SceUID pid, SceKernelProcessInfo *info);
@@ -98,7 +80,7 @@ SceUID ksceKernelGetProcessMainThread(SceUID pid);
  *
  * @return      The process module cb pointer
  */
-SceKernelProcessModuleInfo *ksceKernelGetProcessModuleInfo(SceUID pid);
+ScePVoid ksceKernelGetProcessModuleInfo(SceUID pid);
 
 /**
  * @brief      Get the process self auth info.
@@ -110,9 +92,9 @@ SceKernelProcessModuleInfo *ksceKernelGetProcessModuleInfo(SceUID pid);
  */
 int ksceKernelGetProcessSelfAuthInfo(SceUID pid, SceSelfAuthInfo *self_auth_info);
 
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2KERN_KERNEL_PROCESSMGR_H_ */
-

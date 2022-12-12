@@ -157,7 +157,7 @@ void ksceKernelRegisterSyscall(SceSize syscall_id, const void *func);
  *
  * @return none
  */
-void ksceKernelSetupForModulemgr(void);
+void ksceKernelRegisterModulesAfterBoot(void);
 
 /**
  * @brief Get module id list
@@ -180,7 +180,7 @@ int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, 
  * uint32_t offset = 0;
  * SceKernelModuleListInfo *info = &infolists[0];
  *
- * ksceKernelGetModuleList2(0x10005, infolists, &num);
+ * ksceKernelGetModuleInfoForDebugger(0x10005, infolists, &num);
  *
  * for(int i=0;i<num;i++){
  *   printf("name : %s\n", info->module_name);
@@ -200,7 +200,7 @@ int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, 
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleList2(SceUID pid, SceKernelModuleListInfo *infolists, SceSize *num);
+int ksceKernelGetModuleInfoForDebugger(SceUID pid, SceKernelModuleListInfo *infolists, SceSize *num);
 
 /**
  * @brief Get module info
@@ -234,7 +234,7 @@ int ksceKernelGetModuleInfoMinByAddr(SceUID pid, const void *module_addr, uint32
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleInternal(SceUID modid, void **info);
+int ksceKernelGetModuleCB(SceUID modid, void **info);
 
 /**
  * @brief Get module info by address (internal)
@@ -245,7 +245,7 @@ int ksceKernelGetModuleInternal(SceUID modid, void **info);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetProcessEntryPointByAddr(SceUID pid, const void *module_addr, void **info);
+int ksceKernelGetModuleCBByAddr(SceUID pid, const void *module_addr, void **info);
 
 /**
  * @brief Get module id by module address
@@ -255,7 +255,7 @@ int ksceKernelGetProcessEntryPointByAddr(SceUID pid, const void *module_addr, vo
  *
  * @return modid on success, < 0 on error.
  */
-SceUID ksceKernelGetModuleIdByAddr(SceUID pid, const void *module_addr);
+SceUID ksceKernelGetModuleIdByAddrForDebugger(SceUID pid, const void *module_addr);
 
 /**
  * @brief search kernel module by module name
@@ -484,11 +484,11 @@ int ksceKernelMountBootfs(const char *bootImagePath);
 int ksceKernelUmountBootfs(void);
 
 /**
- * @brief Get the main module for a given process.
+ * @brief Get the main module id for a given process.
  * @param pid The process to query.
  * @return the UID of the module else < 0 for an error.
  */
-SceUID ksceKernelGetProcessMainModule(SceUID pid);
+SceUID ksceKernelGetModuleIdByPid(SceUID pid);
 
 /**
  * @brief Get the module path
@@ -510,7 +510,12 @@ int ksceKernelGetModulePath(SceUID modid, char *path, SceSize pathlen);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelGetModuleLibraryInfo(SceUID pid, SceUID library_id, SceKernelModuleLibraryInfo *info);
+int ksceKernelGetLibraryInfoForDebugger(SceUID pid, SceUID library_id, SceKernelModuleLibraryInfo *info);
+
+
+#define ksceKernelGetModuleInternal ksceKernelGetModuleCB
+#define ksceKernelGetProcessMainModule ksceKernelGetModuleIdByPid
+
 
 #ifdef __cplusplus
 }
