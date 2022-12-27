@@ -1,5 +1,6 @@
 import re
 import json
+import os
 try:
     import urllib2
 except ImportError:
@@ -10,8 +11,15 @@ GITHUB_REPO = 'vitasdk/autobuilds'
 GITHUB_API = 'https://api.github.com'
 GITHUB_REL = GITHUB_API + '/repos/' + GITHUB_REPO + '/releases'
 
+try:
+    token = os.environ['TOKEN']
+except KeyError:
+    token = None
+
 def fetch_last_release(branch='master', os='linux'):
     req = urllib2.Request(GITHUB_REL)
+    if token:
+        req.add_header('Authorization', 'Bearer ' + token);
     builds = json.load(urllib2.urlopen(req))
 
     for build in builds:
