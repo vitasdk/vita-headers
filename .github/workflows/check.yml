@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y cmake cmake-data git doxygen python curl rsync 
+        sudo apt-get install -y cmake cmake-data git doxygen python3 curl rsync 
     - name: Check
       run: |
         set -e
@@ -36,7 +36,7 @@ jobs:
         rm -rf *_stub.a
         cd $TRAVIS_BUILD_DIR
         cp -r include/* $VITASDK/arm-vita-eabi/include
-        USE_LINT=1 python build.py output
+        USE_LINT=1 python3 build.py output
         cd $TRAVIS_BUILD_DIR
         git clone https://github.com/vitasdk/samples
         cd samples
