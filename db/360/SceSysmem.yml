@@ -312,8 +312,12 @@ modules:
         nid: 0x7EE45391
         functions:
           __aeabi_idiv: 0x2518CD9E
+          __aeabi_idivmod: 0xAC86B4BA
+          __aeabi_lasr: 0x1D89F6C0
           __aeabi_lcmp: 0x709077A1
           __aeabi_ldivmod: 0x7554AB04
+          __aeabi_llsl: 0x72D31F9D
+          __aeabi_llsr: 0xE46C47E6
           __aeabi_lmul: 0xFEE5E751
           __aeabi_uidiv: 0xA9FF1205
           __aeabi_uidivmod: 0xA46CB7DE
@@ -323,16 +327,21 @@ modules:
           __memmove_chk: 0x35DBB110
           __memset_chk: 0x1A30BB28
           __prnt: 0xE38E7605
+          __snprintf_chk: 0x7DBE7007
           __stack_chk_fail: 0xB997493D
+          __strlcat_chk: 0x224BE33F
+          __strlcpy_chk: 0xCF86EA38
           __strncat_chk: 0x33EE298B
+          __strncat_chk2: 0xDE4666F0
           __strncpy_chk: 0x96268C53
+          __strncpy_chk2: 0x545DA5FD
+          __vsnprintf_chk: 0xCBF64DF6
           look_ctype_table: 0xCDF7F155
           memchr: 0x60DAEA30
           memcmp: 0xF939E83D
           memcpy: 0x40C88316
           memmove: 0x6CC9C1A1
           memset: 0x0AB9BF5C
-          rshift: 0x1D89F6C0
           snprintf: 0xAE7A8981
           strchr: 0x38463759
           strcmp: 0x0B33BC43
@@ -342,15 +351,19 @@ modules:
           strncat: 0xA1D1C32C
           strncmp: 0x12CEE649
           strncpy: 0x6D286146
+          strncpy_s: 0xFE39AEAC
           strnlen: 0xCD4BD884
           strrchr: 0x7F0E0835
           strstr: 0x1304A69D
           strtol: 0xAB77C5AA
           strtoll: 0x87AAAFA2
           strtoul: 0x4E5042DA
+          timingsafe_memcmp: 0xB5A4D745
           tolower: 0x0021DAF9
           toupper: 0xA685DCB1
           vsnprintf: 0x3DDBE2E1
+        variables:
+          __stack_chk_guard: 0x99EEBD1F
       SceSysmem:
         kernel: false
         nid: 0x37FE725A
