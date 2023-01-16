@@ -12,7 +12,7 @@ jobs:
   deploy-docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Install dependencies
       run: |
         sudo apt-get update
@@ -26,7 +26,7 @@ jobs:
         cat searchdata.xml >> html/search.html
         echo "</script>" >> html/search.html
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.4
+      uses: JamesIves/github-pages-deploy-action@v4
       if: contains(github.ref,'refs/heads/master')
       with:
         branch: gh-pages
