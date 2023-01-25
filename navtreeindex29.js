@@ -6,8 +6,6 @@ var NAVTREEINDEX29 =
 "group__SceGxtUser.html":[1,0,6,0],
 "group__SceGxtUser.html#ga138077ed21b596d15817981bde20f3b0":[4,0,1,0,25,0],
 "group__SceGxtUser.html#ga138077ed21b596d15817981bde20f3b0":[1,0,6,0,0],
-"group__SceGxtUser.html#gaca7b73db3002fb17d50bfcaf46aa72a1":[4,0,1,0,25,1],
-"group__SceGxtUser.html#gaca7b73db3002fb17d50bfcaf46aa72a1":[1,0,6,0,4],
 "group__SceGxtUser.html#gga138077ed21b596d15817981bde20f3b0a0329f13c00494384384b505108009628":[4,0,1,0,25,0,2],
 "group__SceGxtUser.html#gga138077ed21b596d15817981bde20f3b0a0329f13c00494384384b505108009628":[1,0,6,0,0,2],
 "group__SceGxtUser.html#gga138077ed21b596d15817981bde20f3b0a0329f13c00494384384b505108009628":[1,0,6,0,3],
@@ -27,8 +25,8 @@ var NAVTREEINDEX29 =
 "group__SceHidUser.html#gabeaa4e952b223e4eccf70e88e79bd442":[1,1,7,0,0],
 "group__SceHidUser.html#gac44af84b16730925f260248d462c572a":[4,0,1,0,26,1],
 "group__SceHidUser.html#gac44af84b16730925f260248d462c572a":[1,1,7,0,1],
-"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[4,0,1,0,26,4],
 "group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[1,1,7,0,4],
+"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[4,0,1,0,26,4],
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[4,0,1,0,26,3],
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[1,1,7,0,3],
 "group__SceHttp.html":[1,10,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX29 =
 "group__SceHttpUser.html#gga498cb0b6c8f3c3d77ff506d3f25836adab86127811789dc24e879031eaad2fd75":[1,10,0,0,23,2],
 "group__SceHttpUser.html#gga498cb0b6c8f3c3d77ff506d3f25836adab86127811789dc24e879031eaad2fd75":[1,10,0,0,130],
 "group__SceHttpUser.html#gga4bdbb7988c7d6a03c5888abe1e0b6cd9a02ef1505340a1ce004ce74de31306878":[4,0,1,0,3,0,22,45],
-"group__SceHttpUser.html#gga4bdbb7988c7d6a03c5888abe1e0b6cd9a02ef1505340a1ce004ce74de31306878":[1,10,0,0,22,45]
+"group__SceHttpUser.html#gga4bdbb7988c7d6a03c5888abe1e0b6cd9a02ef1505340a1ce004ce74de31306878":[1,10,0,0,22,45],
+"group__SceHttpUser.html#gga4bdbb7988c7d6a03c5888abe1e0b6cd9a02ef1505340a1ce004ce74de31306878":[1,10,0,0,126],
+"group__SceHttpUser.html#gga4bdbb7988c7d6a03c5888abe1e0b6cd9a0d5a5871175e3c4f3fc3daae188b2f1c":[4,0,1,0,3,0,22,5]
 };
