@@ -52,7 +52,10 @@ typedef struct SceGxtTextureInfo {
  * @param	gxt	pointer to the GXT data
  * @return A pointer to the start of the texture data
  */
-const void *sceGxtGetDataAddress(const void *gxt);
+static const void *sceGxtGetDataAddress(const void *gxt){
+	const SceGxtHeader *header = (const SceGxtHeader *)gxt;
+	return (const void *)(((SceUIntPtr)gxt) + header->dataOffset);
+}
 
 #ifdef __cplusplus
 }
