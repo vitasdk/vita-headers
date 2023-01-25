@@ -22,16 +22,6 @@
 extern "C" {
 #endif
 
-typedef enum SceKernelAllocMemBlockAttr {
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR          = 0x00000002U,
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT      = 0x00000004U,
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID = 0x00000040U,
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID            = 0x00000080U,
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST     = 0x00001000U,
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT            = 0x00200000U,
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP   = 0x04000000U
-} SceKernelAllocMemBlockAttr;
-
 typedef enum SceKernelMemoryRefPerm {
 	SCE_KERNEL_MEMORY_REF_PERM_ANY		= 0,
 	SCE_KERNEL_MEMORY_REF_PERM_USER_R	= 0x01,
@@ -67,11 +57,6 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceUInt32 field_50;
 	SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
-
-typedef enum SceKernelModel {
-	SCE_KERNEL_MODEL_VITA   = 0x10000,
-	SCE_KERNEL_MODEL_VITATV = 0x20000
-} SceKernelModel;
 
 /**
  * Allocates a new memory block
