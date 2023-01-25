@@ -155,7 +155,6 @@ modules:
           sqlite3_step: 0xCA8755B7
           sqlite3_stmt_status: 0xF7ABF5FA
           sqlite3_strnicmp: 0x12E2FC18
-          sqlite3_temp_directory: 0x1AEC1F74
           sqlite3_test_control: 0x324D4EFD
           sqlite3_thread_cleanup: 0x173C9C0B
           sqlite3_threadsafe: 0xA3B818DA
@@ -176,8 +175,10 @@ modules:
           sqlite3_value_text16be: 0x3B89AA8D
           sqlite3_value_text16le: 0x014863A6
           sqlite3_value_type: 0xC5EEBB5D
-          sqlite3_version: 0xB80D43C7
           sqlite3_vfs_find: 0x0C6DD8C3
           sqlite3_vfs_register: 0x65F53B9C
           sqlite3_vfs_unregister: 0x69CF4171
           sqlite3_vmprintf: 0xC6372184
+        variables:
+          sqlite3_temp_directory: 0x1AEC1F74
+          sqlite3_version: 0xB80D43C7
