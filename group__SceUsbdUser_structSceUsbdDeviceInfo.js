@@ -1,6 +1,6 @@
 var group__SceUsbdUser_structSceUsbdDeviceInfo =
 [
-    [ "unk0", "group__SceUsbdUser.html#gafba9f42a7bbed208fb02713aead63477", null ],
-    [ "device_id", "group__SceUsbdUser.html#gaae702a449230b997ec87fd71ace8b4f8", null ],
-    [ "unk2", "group__SceUsbdUser.html#gab3548651e4dfc07a10f808c78e77e270", null ]
+    [ "port", "group__SceUsbdUser.html#ga6615495e57f31616ade36c6871b9b1ce", null ],
+    [ "device_num", "group__SceUsbdUser.html#gaf1a863f7bb3f3c0cd816b9f96bb588d3", null ],
+    [ "unk3", "group__SceUsbdUser.html#ga97c2037324b1e864fe14939722c5a80c", null ]
 ];
