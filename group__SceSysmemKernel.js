@@ -119,12 +119,7 @@ var group__SceSysmemKernel =
     [ "SceKernelMemBlockType", "group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571", null ],
     [ "SceClassCallback", "group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5", null ],
     [ "SceCreateUidObjOpt", "group__SceSysmemKernel.html#ga83e12570c9cf837b46227303b71a2789", null ],
-    [ "SceKernelHeapAttr", "group__SceSysmemKernel.html#gaee8ef626957de1b3b3b26f3c1d81f86d", [
-      [ "SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da4e77f76531b014ab9138a081d4e167e4", null ],
-      [ "SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da7aa3bfcb72636330a81e750526f4c75c", null ]
-    ] ],
     [ "SceKernelAllocMemBlockAttr", "group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076", [
-      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8", null ],
@@ -132,6 +127,14 @@ var group__SceSysmemKernel =
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0", null ]
+    ] ],
+    [ "SceKernelModel", "group__SceSysmemKernel.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c", [
+      [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
+      [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ]
+    ] ],
+    [ "SceKernelHeapAttr", "group__SceSysmemKernel.html#gaee8ef626957de1b3b3b26f3c1d81f86d", [
+      [ "SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da4e77f76531b014ab9138a081d4e167e4", null ],
+      [ "SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da7aa3bfcb72636330a81e750526f4c75c", null ]
     ] ],
     [ "SceKernelMemoryRefPerm", "group__SceSysmemKernel.html#gab8b3d8a0785853cb784efcfa26a641b9", [
       [ "SCE_KERNEL_MEMORY_REF_PERM_ANY", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a", null ],
@@ -142,14 +145,6 @@ var group__SceSysmemKernel =
       [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_W", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a7b09d0555d14bceff20796770151d3ec", null ],
       [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_X", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a68546636b48a2378cfea27b0c4a10fad", null ]
     ] ],
-    [ "SceKernelModel", "group__SceSysmemKernel.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c", [
-      [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
-      [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ],
-      [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
-      [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ]
-    ] ],
-    [ "SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da4e77f76531b014ab9138a081d4e167e4", null ],
-    [ "SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da7aa3bfcb72636330a81e750526f4c75c", null ],
     [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae", null ],
     [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
     [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8", null ],
@@ -157,6 +152,10 @@ var group__SceSysmemKernel =
     [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df", null ],
     [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505", null ],
     [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0", null ],
+    [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
+    [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ],
+    [ "SCE_KERNEL_HEAP_ATTR_HAS_AUTO_EXTEND", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da4e77f76531b014ab9138a081d4e167e4", null ],
+    [ "SCE_KERNEL_HEAP_ATTR_HAS_MEMORY_TYPE", "group__SceSysmemKernel.html#ggaee8ef626957de1b3b3b26f3c1d81f86da7aa3bfcb72636330a81e750526f4c75c", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_ANY", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_USER_R", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a015658dcbf6446654dbe9aec3be6bc2a", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_USER_W", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9aacd9ccb69c5ece02f4270e5f549380a7", null ],
@@ -164,8 +163,6 @@ var group__SceSysmemKernel =
     [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_R", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a4959d22201a0b9e8c9dd2e3d1bae5421", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_W", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a7b09d0555d14bceff20796770151d3ec", null ],
     [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_X", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a68546636b48a2378cfea27b0c4a10fad", null ],
-    [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
-    [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ],
     [ "ksceKernelMemcpyFromUser", "group__SceSysmemKernel.html#gaf09e9e0baac300a7a5ae62648546cf4e", null ],
     [ "ksceKernelProcMemcpyFromUser", "group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397", null ],
     [ "ksceKernelMemcpyToUser", "group__SceSysmemKernel.html#gafe0442b8d701799149d9d8bc1b9182b0", null ],
