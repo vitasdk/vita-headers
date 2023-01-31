@@ -312,17 +312,23 @@ $(document).ready(function(){initNavTree('globals_k.html',''); initResizable(); 
 <li>ksceDebugLedRegisterHandle1()
 : <a class="el" href="group__SceDebugLedKernel.html#gac6cfd38d34c68d904288f2e7f907b89f">debugled.h</a>
 </li>
-<li>ksceDebugPrintf()
-: <a class="el" href="group__SceKernelDebugKernel.html#ga45399d5f520fa2001dfc4becba3893c7">debug.h</a>
+<li>ksceDebugPrintf
+: <a class="el" href="group__SceKernelDebugKernel.html#ga6fcc753bef95e607d09c348e5486f6e1">debug.h</a>
 </li>
-<li>ksceDebugPrintf2()
-: <a class="el" href="group__SceKernelDebugKernel.html#ga49531b072a01eaf080b6fb8cf542cb0a">debug.h</a>
+<li>ksceDebugPrintf2
+: <a class="el" href="group__SceKernelDebugKernel.html#ga56a4f9c6b7d0a1c2c68669cc53cd45b7">debug.h</a>
 </li>
-<li>ksceDebugPrintfKernelAssertion()
-: <a class="el" href="group__SceKernelDebugKernel.html#ga23b9f9e7cef75151a162689e5cd8ce64">debug.h</a>
+<li>ksceDebugPrintfKernelAssertion
+: <a class="el" href="group__SceKernelDebugKernel.html#ga1e7e39380de0d73fcb2f93fea7b11963">debug.h</a>
 </li>
-<li>ksceDebugPrintKernelAssertion()
-: <a class="el" href="group__SceKernelDebugKernel.html#ga1ddf08c90a5d84f3a060d3f17013adb0">debug.h</a>
+<li>ksceDebugPrintfKernelPanic
+: <a class="el" href="group__SceKernelDebugKernel.html#gadaafde8942db45a5d0d9fbb69275710c">debug.h</a>
+</li>
+<li>ksceDebugPrintKernelAssertion
+: <a class="el" href="group__SceKernelDebugKernel.html#gaab131e91336f64c4061c83910bd6e046">debug.h</a>
+</li>
+<li>ksceDebugPrintKernelPanic
+: <a class="el" href="group__SceKernelDebugKernel.html#ga24f43a4ba64e1c1bba99a3bb87e45485">debug.h</a>
 </li>
 <li>ksceDebugPutchar()
 : <a class="el" href="group__SceKernelDebugKernel.html#ga81255f2979cb222f8bc62996234f983d">debug.h</a>
@@ -720,6 +726,12 @@ $(document).ready(function(){initNavTree('globals_k.html',''); initResizable(); 
 <li>ksceKernelAllocMemBlock()
 : <a class="el" href="group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31">sysmem.h</a>
 </li>
+<li>ksceKernelAssert()
+: <a class="el" href="group__SceKernelDebugKernel.html#gaba141b1f4e89efde4408ab1d34036d85">debug.h</a>
+</li>
+<li>ksceKernelAssertLevel()
+: <a class="el" href="group__SceKernelDebugKernel.html#gae0bd415e7829c543464edb6b529e18ca">debug.h</a>
+</li>
 <li>ksceKernelCancelCallback()
 : <a class="el" href="group__SceThreadMgrKernel.html#gae5a0eb3d286fa177cadbdf4bccc93a80">callback.h</a>
 </li>
@@ -927,6 +939,9 @@ $(document).ready(function(){initNavTree('globals_k.html',''); initResizable(); 
 <li>ksceKernelFreeMemBlock()
 : <a class="el" href="group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1">sysmem.h</a>
 </li>
+<li>ksceKernelGetAssertLevel()
+: <a class="el" href="group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584">debug.h</a>
+</li>
 <li>ksceKernelGetCallbackCount()
 : <a class="el" href="group__SceThreadMgrKernel.html#gadd611f34b3c5f8ae11a29ce67ef768f8">callback.h</a>
 </li>
@@ -969,8 +984,8 @@ $(document).ready(function(){initNavTree('globals_k.html',''); initResizable(); 
 <li>ksceKernelGetMemBlockType()
 : <a class="el" href="group__SceSysmemKernel.html#ga1f0ea472002e3ecf42faed6b24e0c4d7">sysmem.h</a>
 </li>
-<li>ksceKernelGetMinimumAssertionLevel()
-: <a class="el" href="group__SceKernelDebugKernel.html#ga8288506beeb713361e225dc70df1ace3">debug.h</a>
+<li>ksceKernelGetMinimumAssertionLevel
+: <a class="el" href="group__SceKernelDebugKernel.html#gae61f531d7bbf09edd7d33199c883c46a">debug.h</a>
 </li>
 <li>ksceKernelGetModuleCB()
 : <a class="el" href="group__SceModulemgrKernel.html#gae092ca139d4d34f9e4b7ef006232b53d">modulemgr.h</a>
@@ -1226,6 +1241,21 @@ $(document).ready(function(){initNavTree('globals_k.html',''); initResizable(); 
 </li>
 <li>ksceKernelPowerTick()
 : <a class="el" href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">suspend.h</a>
+</li>
+<li>ksceKernelPrintf()
+: <a class="el" href="group__SceKernelDebugKernel.html#gad60adc8b51c4df61fd83be9f867b3315">debug.h</a>
+</li>
+<li>ksceKernelPrintfAssertLevel()
+: <a class="el" href="group__SceKernelDebugKernel.html#gaab8452d94eeb4f32fd977f9f118a1a6f">debug.h</a>
+</li>
+<li>ksceKernelPrintfLevel()
+: <a class="el" href="group__SceKernelDebugKernel.html#gaebd967615a353e8a5a312ac646ef19f1">debug.h</a>
+</li>
+<li>ksceKernelPrintfLevelWithInfo()
+: <a class="el" href="group__SceKernelDebugKernel.html#ga9c43ea32215fa47029de8441d29f3f22">debug.h</a>
+</li>
+<li>ksceKernelPrintfWithInfo()
+: <a class="el" href="group__SceKernelDebugKernel.html#gaea9df7ba1075e9bcbbb9e6a5e96046fa">debug.h</a>
 </li>
 <li>ksceKernelProcMemcpyFromUser()
 : <a class="el" href="group__SceSysmemKernel.html#ga7bc9996c9a2ec9dcb3f67eb98dd39397">data_transfers.h</a>
@@ -1526,6 +1556,12 @@ $(document).ready(function(){initNavTree('globals_k.html',''); initResizable(); 
 </li>
 <li>ksceKernelVAtoPA()
 : <a class="el" href="group__SceSysmemKernel.html#ga1d08cf0a1dc1804d7ae09763c8aab190">mmu.h</a>
+</li>
+<li>ksceKernelVprintf()
+: <a class="el" href="group__SceKernelDebugKernel.html#ga5c96d168e258d86bf7a2e2c6a993dffd">debug.h</a>
+</li>
+<li>ksceKernelVprintfLevel()
+: <a class="el" href="group__SceKernelDebugKernel.html#gae93990207478343377a3a6aa4818e605">debug.h</a>
 </li>
 <li>ksceKernelWaitCond()
 : <a class="el" href="group__SceThreadMgrKernel.html#gab5572c7290092e9a693f44c6d7e710bd">cond.h</a>

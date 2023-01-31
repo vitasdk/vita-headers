@@ -73,7 +73,9 @@ $(document).ready(function(){initNavTree('group__SceKernelDebugKernel.html','');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Kernel<div class="ingroups"><a class="el" href="group__debug.html">Debug</a> &raquo; <a class="el" href="group__SceKernelDebug.html">Kernel Debug Util</a></div></div>  </div>
 </div><!--header-->
@@ -95,20 +97,36 @@ $(document).ready(function(){initNavTree('group__SceKernelDebugKernel.html','');
 Functions</h2></td></tr>
 <tr class="memitem:ga81255f2979cb222f8bc62996234f983d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga81255f2979cb222f8bc62996234f983d">ksceDebugPutchar</a> (int character)</td></tr>
 <tr class="separator:ga81255f2979cb222f8bc62996234f983d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45399d5f520fa2001dfc4becba3893c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga45399d5f520fa2001dfc4becba3893c7">ksceDebugPrintf</a> (const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
-<tr class="memdesc:ga45399d5f520fa2001dfc4becba3893c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print log.  <a href="group__SceKernelDebugKernel.html#ga45399d5f520fa2001dfc4becba3893c7">More...</a><br /></td></tr>
-<tr class="separator:ga45399d5f520fa2001dfc4becba3893c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga49531b072a01eaf080b6fb8cf542cb0a">ksceDebugPrintf2</a> (int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
-<tr class="memdesc:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print log with ctx.  <a href="group__SceKernelDebugKernel.html#ga49531b072a01eaf080b6fb8cf542cb0a">More...</a><br /></td></tr>
-<tr class="separator:ga49531b072a01eaf080b6fb8cf542cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab148f7a4ae21e8a8f767f90d6f1ab100"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gab148f7a4ae21e8a8f767f90d6f1ab100">__attribute__</a> ((__noreturn__)) void ksceDebugPrintKernelPanic(const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx</td></tr>
-<tr class="separator:gab148f7a4ae21e8a8f767f90d6f1ab100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ddf08c90a5d84f3a060d3f17013adb0"><td class="memItemLeft" align="right" valign="top">const void const char int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga1ddf08c90a5d84f3a060d3f17013adb0">ksceDebugPrintKernelAssertion</a> (int condition, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, const void *<a class="el" href="group__SceKernelDebugKernel.html#gadeabf200deeba6699379f4d9133e635f">lr</a>)</td></tr>
-<tr class="memdesc:ga1ddf08c90a5d84f3a060d3f17013adb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assertion with ctx.  <a href="group__SceKernelDebugKernel.html#ga1ddf08c90a5d84f3a060d3f17013adb0">More...</a><br /></td></tr>
-<tr class="separator:ga1ddf08c90a5d84f3a060d3f17013adb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23b9f9e7cef75151a162689e5cd8ce64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga23b9f9e7cef75151a162689e5cd8ce64">ksceDebugPrintfKernelAssertion</a> (int level, int condition, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *ctx, const void *<a class="el" href="group__SceKernelDebugKernel.html#gadeabf200deeba6699379f4d9133e635f">lr</a>, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
-<tr class="memdesc:ga23b9f9e7cef75151a162689e5cd8ce64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assertion with ctx and Print.  <a href="group__SceKernelDebugKernel.html#ga23b9f9e7cef75151a162689e5cd8ce64">More...</a><br /></td></tr>
-<tr class="separator:ga23b9f9e7cef75151a162689e5cd8ce64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad60adc8b51c4df61fd83be9f867b3315"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gad60adc8b51c4df61fd83be9f867b3315">ksceKernelPrintf</a> (const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="memdesc:gad60adc8b51c4df61fd83be9f867b3315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print log.  <a href="group__SceKernelDebugKernel.html#gad60adc8b51c4df61fd83be9f867b3315">More...</a><br /></td></tr>
+<tr class="separator:gad60adc8b51c4df61fd83be9f867b3315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebd967615a353e8a5a312ac646ef19f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gaebd967615a353e8a5a312ac646ef19f1">ksceKernelPrintfLevel</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> level, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="memdesc:gaebd967615a353e8a5a312ac646ef19f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel Printf.  <a href="group__SceKernelDebugKernel.html#gaebd967615a353e8a5a312ac646ef19f1">More...</a><br /></td></tr>
+<tr class="separator:gaebd967615a353e8a5a312ac646ef19f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c43ea32215fa47029de8441d29f3f22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga9c43ea32215fa47029de8441d29f3f22">ksceKernelPrintfLevelWithInfo</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> level, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *dbginfo, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="memdesc:ga9c43ea32215fa47029de8441d29f3f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel Printf Level with Info.  <a href="group__SceKernelDebugKernel.html#ga9c43ea32215fa47029de8441d29f3f22">More...</a><br /></td></tr>
+<tr class="separator:ga9c43ea32215fa47029de8441d29f3f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea9df7ba1075e9bcbbb9e6a5e96046fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gaea9df7ba1075e9bcbbb9e6a5e96046fa">ksceKernelPrintfWithInfo</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *dbginfo, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="memdesc:gaea9df7ba1075e9bcbbb9e6a5e96046fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel Printf with Info.  <a href="group__SceKernelDebugKernel.html#gaea9df7ba1075e9bcbbb9e6a5e96046fa">More...</a><br /></td></tr>
+<tr class="separator:gaea9df7ba1075e9bcbbb9e6a5e96046fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c96d168e258d86bf7a2e2c6a993dffd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga5c96d168e258d86bf7a2e2c6a993dffd">ksceKernelVprintf</a> (const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
+<tr class="memdesc:ga5c96d168e258d86bf7a2e2c6a993dffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel Vprintf.  <a href="group__SceKernelDebugKernel.html#ga5c96d168e258d86bf7a2e2c6a993dffd">More...</a><br /></td></tr>
+<tr class="separator:ga5c96d168e258d86bf7a2e2c6a993dffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae93990207478343377a3a6aa4818e605"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gae93990207478343377a3a6aa4818e605">ksceKernelVprintfLevel</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> level, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
+<tr class="memdesc:gae93990207478343377a3a6aa4818e605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel Vprintf Level.  <a href="group__SceKernelDebugKernel.html#gae93990207478343377a3a6aa4818e605">More...</a><br /></td></tr>
+<tr class="separator:gae93990207478343377a3a6aa4818e605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96fb338170605a833fa44c5298b29cff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga96fb338170605a833fa44c5298b29cff">__attribute__</a> ((__noreturn__)) void ksceKernelPanic(const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *dbginfo</td></tr>
+<tr class="memdesc:ga96fb338170605a833fa44c5298b29cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel Panic.  <a href="group__SceKernelDebugKernel.html#ga96fb338170605a833fa44c5298b29cff">More...</a><br /></td></tr>
+<tr class="separator:ga96fb338170605a833fa44c5298b29cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba141b1f4e89efde4408ab1d34036d85"><td class="memItemLeft" align="right" valign="top">const void const char void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gaba141b1f4e89efde4408ab1d34036d85">ksceKernelAssert</a> (<a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> condition, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *dbginfo, const void *<a class="el" href="group__SceKernelDebugKernel.html#gadeabf200deeba6699379f4d9133e635f">lr</a>)</td></tr>
+<tr class="memdesc:gaba141b1f4e89efde4408ab1d34036d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assertion.  <a href="group__SceKernelDebugKernel.html#gaba141b1f4e89efde4408ab1d34036d85">More...</a><br /></td></tr>
+<tr class="separator:gaba141b1f4e89efde4408ab1d34036d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0bd415e7829c543464edb6b529e18ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gae0bd415e7829c543464edb6b529e18ca">ksceKernelAssertLevel</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> level, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> condition, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *dbginfo, const void *<a class="el" href="group__SceKernelDebugKernel.html#gadeabf200deeba6699379f4d9133e635f">lr</a>)</td></tr>
+<tr class="memdesc:gae0bd415e7829c543464edb6b529e18ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printf Assertion Level.  <a href="group__SceKernelDebugKernel.html#gae0bd415e7829c543464edb6b529e18ca">More...</a><br /></td></tr>
+<tr class="separator:gae0bd415e7829c543464edb6b529e18ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab8452d94eeb4f32fd977f9f118a1a6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gaab8452d94eeb4f32fd977f9f118a1a6f">ksceKernelPrintfAssertLevel</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> level, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> condition, const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *dbginfo, const void *<a class="el" href="group__SceKernelDebugKernel.html#gadeabf200deeba6699379f4d9133e635f">lr</a>, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="memdesc:gaab8452d94eeb4f32fd977f9f118a1a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printf Assertion Level.  <a href="group__SceKernelDebugKernel.html#gaab8452d94eeb4f32fd977f9f118a1a6f">More...</a><br /></td></tr>
+<tr class="separator:gaab8452d94eeb4f32fd977f9f118a1a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47abb7cc0f9bd50cba7268f857043472"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga47abb7cc0f9bd50cba7268f857043472">ksceDebugSetHandlers</a> (int(*func)(int unk, const char *format, const va_list args), void *args)</td></tr>
 <tr class="separator:ga47abb7cc0f9bd50cba7268f857043472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06d35c45431424e832d5a2d1b7cb26a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga06d35c45431424e832d5a2d1b7cb26a5">ksceDebugRegisterPutcharHandler</a> (int(*func)(void *args, char c), void *args)</td></tr>
@@ -118,9 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga494f482e4e9f7181952a756c947d1b29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga494f482e4e9f7181952a756c947d1b29">ksceDebugDisableInfoDump</a> (int flag)</td></tr>
 <tr class="memdesc:ga494f482e4e9f7181952a756c947d1b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set kpanic flag.  <a href="group__SceKernelDebugKernel.html#ga494f482e4e9f7181952a756c947d1b29">More...</a><br /></td></tr>
 <tr class="separator:ga494f482e4e9f7181952a756c947d1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8288506beeb713361e225dc70df1ace3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga8288506beeb713361e225dc70df1ace3">ksceKernelGetMinimumAssertionLevel</a> (void)</td></tr>
-<tr class="memdesc:ga8288506beeb713361e225dc70df1ace3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current minimum assertion level.  <a href="group__SceKernelDebugKernel.html#ga8288506beeb713361e225dc70df1ace3">More...</a><br /></td></tr>
-<tr class="separator:ga8288506beeb713361e225dc70df1ace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11105ec4b67a836b948b5204af3bc584"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584">ksceKernelGetAssertLevel</a> (void)</td></tr>
+<tr class="memdesc:ga11105ec4b67a836b948b5204af3bc584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current minimum assertion level.  <a href="group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584">More...</a><br /></td></tr>
+<tr class="separator:ga11105ec4b67a836b948b5204af3bc584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59c83ca5fd9f4d5f9b1f4852375003f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8">ksceKernelSetMinimumAssertionLevel</a> (int level)</td></tr>
 <tr class="memdesc:ga59c83ca5fd9f4d5f9b1f4852375003f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current minimum assertion level.  <a href="group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8">More...</a><br /></td></tr>
 <tr class="separator:ga59c83ca5fd9f4d5f9b1f4852375003f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,53 +150,71 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6fc86f5be6249a986b161e710bfc69aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa">ksceKernelGetTtyInfo</a> (char *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> buf_size)</td></tr>
 <tr class="memdesc:ga6fc86f5be6249a986b161e710bfc69aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tty log info.  <a href="group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa">More...</a><br /></td></tr>
 <tr class="separator:ga6fc86f5be6249a986b161e710bfc69aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaab14753e5eabbb0f629bb801f6bd122d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gaab14753e5eabbb0f629bb801f6bd122d">SceKernelDebugMessageContext</a></td></tr>
+<tr class="separator:gaab14753e5eabbb0f629bb801f6bd122d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga4ad9e1587bfe8994de1a4399b444adc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga4ad9e1587bfe8994de1a4399b444adc7">SCE_KERNEL_PANIC</a>()</td></tr>
+<tr class="separator:ga4ad9e1587bfe8994de1a4399b444adc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54c15489daf9242d6cf45687b97be8f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga54c15489daf9242d6cf45687b97be8f2">SCE_KERNEL_PRINTF_PANIC</a>(__fmt__, ...)</td></tr>
+<tr class="separator:ga54c15489daf9242d6cf45687b97be8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae62af788958798416e4d4ab5f51fb1d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gae62af788958798416e4d4ab5f51fb1d4">SCE_KERNEL_ASSERT</a>(__cond__)</td></tr>
+<tr class="separator:gae62af788958798416e4d4ab5f51fb1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f706fdf19145baf419dede49fc549be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga6f706fdf19145baf419dede49fc549be">SCE_KERNEL_ASSERT_LEVEL</a>(__level__,  __cond__)</td></tr>
+<tr class="separator:ga6f706fdf19145baf419dede49fc549be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fcc753bef95e607d09c348e5486f6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga6fcc753bef95e607d09c348e5486f6e1">ksceDebugPrintf</a>&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gad60adc8b51c4df61fd83be9f867b3315">ksceKernelPrintf</a></td></tr>
+<tr class="separator:ga6fcc753bef95e607d09c348e5486f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56a4f9c6b7d0a1c2c68669cc53cd45b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga56a4f9c6b7d0a1c2c68669cc53cd45b7">ksceDebugPrintf2</a>&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gaea9df7ba1075e9bcbbb9e6a5e96046fa">ksceKernelPrintfWithInfo</a></td></tr>
+<tr class="separator:ga56a4f9c6b7d0a1c2c68669cc53cd45b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24f43a4ba64e1c1bba99a3bb87e45485"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga24f43a4ba64e1c1bba99a3bb87e45485">ksceDebugPrintKernelPanic</a>&#160;&#160;&#160;ksceKernelPanic</td></tr>
+<tr class="separator:ga24f43a4ba64e1c1bba99a3bb87e45485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadaafde8942db45a5d0d9fbb69275710c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gadaafde8942db45a5d0d9fbb69275710c">ksceDebugPrintfKernelPanic</a>&#160;&#160;&#160;ksceKernelVprintfPanic</td></tr>
+<tr class="separator:gadaafde8942db45a5d0d9fbb69275710c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab131e91336f64c4061c83910bd6e046"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gaab131e91336f64c4061c83910bd6e046">ksceDebugPrintKernelAssertion</a>&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gaba141b1f4e89efde4408ab1d34036d85">ksceKernelAssert</a></td></tr>
+<tr class="separator:gaab131e91336f64c4061c83910bd6e046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e7e39380de0d73fcb2f93fea7b11963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#ga1e7e39380de0d73fcb2f93fea7b11963">ksceDebugPrintfKernelAssertion</a>&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gaab8452d94eeb4f32fd977f9f118a1a6f">ksceKernelPrintfAssertLevel</a></td></tr>
+<tr class="separator:ga1e7e39380de0d73fcb2f93fea7b11963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae61f531d7bbf09edd7d33199c883c46a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceKernelDebugKernel.html#gae61f531d7bbf09edd7d33199c883c46a">ksceKernelGetMinimumAssertionLevel</a>&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584">ksceKernelGetAssertLevel</a></td></tr>
+<tr class="separator:gae61f531d7bbf09edd7d33199c883c46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structSceKernelDebugMessageContext" id="structSceKernelDebugMessageContext"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugMessageContext">&#9670;&nbsp;</a></span>SceKernelDebugMessageContext</h2>
+<a name="structSceKernelDebugInfo" id="structSceKernelDebugInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugInfo">&#9670;&nbsp;</a></span>SceKernelDebugInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelDebugMessageContext</td>
+          <td class="memname">struct SceKernelDebugInfo</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae9a1aae22f10154dde44acc7376b4b06"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<a id="ga2926138d452684ff21a1ad61c882c1d3"></a>union <a class="el" href="group__SceKernelDebugKernel.html#unionSceKernelDebugInfo_8____attribute____">SceKernelDebugInfo</a></td>
 <td class="fieldname">
-hex_value0_hi</td>
+__attribute__</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga2cd3e936274b50ceb9cab885fd3b6e94"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-hex_value0_lo</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9de3043ec90d35f4785283bb2817b4d1"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-hex_value1</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaed7a181d07d730f585b182d67307d2f3"></a>const char *</td>
+<a id="gab0ec8ddaa2d064689ee2d9cd467dab51"></a>const char *</td>
 <td class="fieldname">
 func</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga0ee76ba8f3626a19c94e81d1b5076e71"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="ga81b216600699b8281db7623c489217d3"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
 <td class="fieldname">
 line</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga9e983c11d0617c7914962df82cb47136"></a>const char *</td>
+<a id="ga5af6041f8d28b76ae29ded5c0b94ad0c"></a>const char *</td>
 <td class="fieldname">
 file</td>
 <td class="fielddoc">
@@ -384,23 +420,122 @@ item_size</td>
 <td class="fielddoc">
 Event data size. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga9054460bd2e604b5d58e41fa45123b06"></a>union <a class="el" href="group__SceKernelDebugKernel.html#unionSceKernelDebugEventLog_8____attribute____">SceKernelDebugEventLog</a></td>
+<a id="ga4fe6adefd18165e0fddd9f4d00172808"></a>union <a class="el" href="group__SceKernelDebugKernel.html#unionSceKernelDebugEventLog_8____unnamed21____">SceKernelDebugEventLog</a></td>
 <td class="fieldname">
-__attribute__</td>
+__unnamed__</td>
 <td class="fielddoc">
 </td></tr>
 </table>
 
 </div>
 </div>
-<a name="unionSceKernelDebugEventLog_8____attribute____" id="unionSceKernelDebugEventLog_8____attribute____"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#unionSceKernelDebugEventLog_8____attribute____">&#9670;&nbsp;</a></span>SceKernelDebugEventLog.__attribute__</h2>
+<a name="unionSceKernelDebugInfo_8____attribute____" id="unionSceKernelDebugInfo_8____attribute____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionSceKernelDebugInfo_8____attribute____">&#9670;&nbsp;</a></span>SceKernelDebugInfo.__attribute__</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union SceKernelDebugEventLog.__attribute__</td>
+          <td class="memname">union SceKernelDebugInfo.__attribute__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a522dbf5f367e0a96a94135f388be7754"></a><a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo_8____attribute_____8____unnamed17____">__attribute__</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4f00241ecd5092c2fc11b08da27303be"></a><a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo_8____attribute_____8____unnamed19____">__attribute__</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelDebugInfo_8____attribute_____8____unnamed17____" id="structSceKernelDebugInfo_8____attribute_____8____unnamed17____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugInfo_8____attribute_____8____unnamed17____">&#9670;&nbsp;</a></span>SceKernelDebugInfo.__attribute__.__unnamed17__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelDebugInfo.__attribute__.__unnamed17__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ab90df27c74bb62e4043d4c44e2335467"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+fileHash</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae2b1d9fa87f11e50f046bf1f4b0ff21a"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+lineHash</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4d034b272b71aa84fad7e07ea83d1c52"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+funcHash</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelDebugInfo_8____attribute_____8____unnamed19____" id="structSceKernelDebugInfo_8____attribute_____8____unnamed19____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDebugInfo_8____attribute_____8____unnamed19____">&#9670;&nbsp;</a></span>SceKernelDebugInfo.__attribute__.__unnamed19__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelDebugInfo.__attribute__.__unnamed19__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="abc1ae79b4f3ee17150e279f4bdc313bf"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+hex_value0_hi</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9bbf09ac41433f4d9339bfaba248e961"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+hex_value0_lo</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aabb249b03446b111024aa83dd71fc671"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+hex_value1</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionSceKernelDebugEventLog_8____unnamed21____" id="unionSceKernelDebugEventLog_8____unnamed21____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionSceKernelDebugEventLog_8____unnamed21____">&#9670;&nbsp;</a></span>SceKernelDebugEventLog.__unnamed21__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union SceKernelDebugEventLog.__unnamed21__</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -428,52 +563,285 @@ type3</td>
 
 </div>
 </div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gabff1f5526c17d17ff9c6b68194b10287"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabff1f5526c17d17ff9c6b68194b10287">&#9670;&nbsp;</a></span>SceKernelDebugPrintFlags</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga4ad9e1587bfe8994de1a4399b444adc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ad9e1587bfe8994de1a4399b444adc7">&#9670;&nbsp;</a></span>SCE_KERNEL_PANIC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceKernelDebugKernel.html#gabff1f5526c17d17ff9c6b68194b10287">SceKernelDebugPrintFlags</a></td>
+          <td class="memname">#define SCE_KERNEL_PANIC</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
+<div class="line">    static <span class="keyword">const</span> <a class="code" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .<a class="code" href="group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51">func</a> = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \</div>
+<div class="line">    ksceKernelPanic(&amp;__dbginfo, __builtin_return_address(0)); \</div>
+<div class="line">    } <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="agroup__SceKernelDebugKernel_html_gab0ec8ddaa2d064689ee2d9cd467dab51"><div class="ttname"><a href="group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51">SceKernelDebugInfo::func</a></div><div class="ttdeci">const char * func</div><div class="ttdef"><b>Definition:</b> debug.h:32</div></div>
+<div class="ttc" id="agroup__SceKernelDebugKernel_html_structSceKernelDebugInfo"><div class="ttname"><a href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a></div><div class="ttdef"><b>Definition:</b> debug.h:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga54c15489daf9242d6cf45687b97be8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54c15489daf9242d6cf45687b97be8f2">&#9670;&nbsp;</a></span>SCE_KERNEL_PRINTF_PANIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PRINTF_PANIC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__fmt__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
+<div class="line">    static <span class="keyword">const</span> <a class="code" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .<a class="code" href="group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51">func</a> = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \</div>
+<div class="line">    ksceKernelPrintfPanic(&amp;__dbginfo, __builtin_return_address(0), __fmt__, ##__VA_ARGS__); \</div>
+<div class="line">    } <span class="keywordflow">while</span>(0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gae62af788958798416e4d4ab5f51fb1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae62af788958798416e4d4ab5f51fb1d4">&#9670;&nbsp;</a></span>SCE_KERNEL_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__cond__</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
+<div class="line">    static <span class="keyword">const</span> <a class="code" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .<a class="code" href="group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51">func</a> = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \</div>
+<div class="line">    ksceKernelAssert(__cond__, &amp;__dbginfo, __builtin_return_address(0)); \</div>
+<div class="line">    } <span class="keywordflow">while</span>(0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga6f706fdf19145baf419dede49fc549be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f706fdf19145baf419dede49fc549be">&#9670;&nbsp;</a></span>SCE_KERNEL_ASSERT_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_ASSERT_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__level__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__cond__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
+<div class="line">    static <span class="keyword">const</span> <a class="code" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .<a class="code" href="group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51">func</a> = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \</div>
+<div class="line">    ksceKernelAssertLevel(__level__, __cond__, &amp;__dbginfo, __builtin_return_address(0)); \</div>
+<div class="line">    } <span class="keywordflow">while</span>(0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga6fcc753bef95e607d09c348e5486f6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fcc753bef95e607d09c348e5486f6e1">&#9670;&nbsp;</a></span>ksceDebugPrintf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceDebugPrintf&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gad60adc8b51c4df61fd83be9f867b3315">ksceKernelPrintf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga56a4f9c6b7d0a1c2c68669cc53cd45b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56a4f9c6b7d0a1c2c68669cc53cd45b7">&#9670;&nbsp;</a></span>ksceDebugPrintf2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceDebugPrintf2&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gaea9df7ba1075e9bcbbb9e6a5e96046fa">ksceKernelPrintfWithInfo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga24f43a4ba64e1c1bba99a3bb87e45485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24f43a4ba64e1c1bba99a3bb87e45485">&#9670;&nbsp;</a></span>ksceDebugPrintKernelPanic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceDebugPrintKernelPanic&#160;&#160;&#160;ksceKernelPanic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadaafde8942db45a5d0d9fbb69275710c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadaafde8942db45a5d0d9fbb69275710c">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelPanic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceDebugPrintfKernelPanic&#160;&#160;&#160;ksceKernelVprintfPanic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab131e91336f64c4061c83910bd6e046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab131e91336f64c4061c83910bd6e046">&#9670;&nbsp;</a></span>ksceDebugPrintKernelAssertion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceDebugPrintKernelAssertion&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gaba141b1f4e89efde4408ab1d34036d85">ksceKernelAssert</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1e7e39380de0d73fcb2f93fea7b11963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e7e39380de0d73fcb2f93fea7b11963">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelAssertion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceDebugPrintfKernelAssertion&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#gaab8452d94eeb4f32fd977f9f118a1a6f">ksceKernelPrintfAssertLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae61f531d7bbf09edd7d33199c883c46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae61f531d7bbf09edd7d33199c883c46a">&#9670;&nbsp;</a></span>ksceKernelGetMinimumAssertionLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelGetMinimumAssertionLevel&#160;&#160;&#160;<a class="el" href="group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584">ksceKernelGetAssertLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gaab14753e5eabbb0f629bb801f6bd122d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab14753e5eabbb0f629bb801f6bd122d">&#9670;&nbsp;</a></span>SceKernelDebugMessageContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> <a class="el" href="group__SceKernelDebugKernel.html#gaab14753e5eabbb0f629bb801f6bd122d">SceKernelDebugMessageContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gabc469e837a77bbb42a745ee946d86b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc469e837a77bbb42a745ee946d86b5a">&#9670;&nbsp;</a></span>SceKernelDebugInfoFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceKernelDebugKernel.html#gabc469e837a77bbb42a745ee946d86b5a">SceKernelDebugInfoFlags</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabff1f5526c17d17ff9c6b68194b10287a0b64ae15a3b015b12b6399350386fda6"></a>SCE_DBG_PRINT_FLAG_NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabff1f5526c17d17ff9c6b68194b10287aeaf1cc945c0e00e99b81ab4fbc8e3139"></a>SCE_DBG_PRINT_FLAG_CORE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabff1f5526c17d17ff9c6b68194b10287a228bb3fa4f91c6055fa079d67a5eddb3"></a>SCE_DBG_PRINT_FLAG_FUNC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabff1f5526c17d17ff9c6b68194b10287a996c67f277ccd6a45cefe60637194ec3"></a>SCE_DBG_PRINT_FLAG_LINE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabff1f5526c17d17ff9c6b68194b10287ae82bb18e8f4df07318f3651125ef4af0"></a>SCE_DBG_PRINT_FLAG_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabc469e837a77bbb42a745ee946d86b5aa212eb7932e00d22251f6320749abd0e2"></a>SCE_KERNEL_DEBUG_INFO_FLAG_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggabc469e837a77bbb42a745ee946d86b5aa9bf2f9989ad0e8a70abe2ae861b07167"></a>SCE_KERNEL_DEBUG_INFO_FLAG_CORE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggabc469e837a77bbb42a745ee946d86b5aa348fe4460ae54e78788b96a1c4951ff2"></a>SCE_KERNEL_DEBUG_INFO_FLAG_FUNC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggabc469e837a77bbb42a745ee946d86b5aa9783b197708f88fa3232cf8e28e93ab4"></a>SCE_KERNEL_DEBUG_INFO_FLAG_LINE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggabc469e837a77bbb42a745ee946d86b5aa78415cc9999419706f5fec9248b5871b"></a>SCE_KERNEL_DEBUG_INFO_FLAG_FILE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="gaee1e714d35e2e5aedf86b89b7327d19b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee1e714d35e2e5aedf86b89b7327d19b">&#9670;&nbsp;</a></span>SceDbgLogLevel</h2>
+<a id="gad2f40116611467bc1896df0e88d4c909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2f40116611467bc1896df0e88d4c909">&#9670;&nbsp;</a></span>SceKernelDebugLevel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__SceLibDbgUser.html#gaee1e714d35e2e5aedf86b89b7327d19b">SceDbgLogLevel</a></td>
+          <td class="memname">enum <a class="el" href="group__SceKernelDebugKernel.html#gad2f40116611467bc1896df0e88d4c909">SceKernelDebugLevel</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba428c03a4760781ca5b581d99970bc06d"></a>SCE_DBG_LOG_LEVEL_TRACE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba0edb13b198303462bc9e93149184e405"></a>SCE_DBG_LOG_LEVEL_DEBUG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19babed517df5a922d44f96d36fb6d157a11"></a>SCE_DBG_LOG_LEVEL_INFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba482bfd30808cf8f169626d5c30fb4b9a"></a>SCE_DBG_LOG_LEVEL_WARNING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba4ec7c30a86f6150c8883c88035a024d0"></a>SCE_DBG_LOG_LEVEL_ERROR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba45ce3d26fe32eee77d4e4a4445b97f31"></a>SCE_DBG_NUM_LOG_LEVELS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba428c03a4760781ca5b581d99970bc06d"></a>SCE_DBG_LOG_LEVEL_TRACE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba0edb13b198303462bc9e93149184e405"></a>SCE_DBG_LOG_LEVEL_DEBUG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19babed517df5a922d44f96d36fb6d157a11"></a>SCE_DBG_LOG_LEVEL_INFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba482bfd30808cf8f169626d5c30fb4b9a"></a>SCE_DBG_LOG_LEVEL_WARNING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba4ec7c30a86f6150c8883c88035a024d0"></a>SCE_DBG_LOG_LEVEL_ERROR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaee1e714d35e2e5aedf86b89b7327d19ba45ce3d26fe32eee77d4e4a4445b97f31"></a>SCE_DBG_NUM_LOG_LEVELS&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad2f40116611467bc1896df0e88d4c909a68f9509b862a56ec8db2d9fdea9cf559"></a>SCE_KERNEL_DEBUG_LEVEL_ALWAYS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad2f40116611467bc1896df0e88d4c909a668ce046d6bd3a3f081efc9125ea351d"></a>SCE_KERNEL_DEBUG_LEVEL_DEBUG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad2f40116611467bc1896df0e88d4c909a07dad4e76ac8f39604db92918c70ce8b"></a>SCE_KERNEL_DEBUG_LEVEL_TRACE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga255042a396ced96bee885071d4afe270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga255042a396ced96bee885071d4afe270">&#9670;&nbsp;</a></span>SceKernelAssertLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceKernelDebugKernel.html#ga255042a396ced96bee885071d4afe270">SceKernelAssertLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga255042a396ced96bee885071d4afe270af2bbddc21e1ed0a8e36a8b91077489d2"></a>SCE_KERNEL_ASSERT_LEVEL_0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga255042a396ced96bee885071d4afe270aeae88cde5321a25e6978e3568b5ec7e5"></a>SCE_KERNEL_ASSERT_LEVEL_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga255042a396ced96bee885071d4afe270a9991f4c64908e6e0822fedeb4c3b79f2"></a>SCE_KERNEL_ASSERT_LEVEL_2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -497,14 +865,14 @@ type3</td>
 
 </div>
 </div>
-<a id="ga45399d5f520fa2001dfc4becba3893c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45399d5f520fa2001dfc4becba3893c7">&#9670;&nbsp;</a></span>ksceDebugPrintf()</h2>
+<a id="gad60adc8b51c4df61fd83be9f867b3315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad60adc8b51c4df61fd83be9f867b3315">&#9670;&nbsp;</a></span>ksceKernelPrintf()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceDebugPrintf </td>
+          <td class="memname">int ksceKernelPrintf </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>
@@ -535,23 +903,17 @@ type3</td>
 
 </div>
 </div>
-<a id="ga49531b072a01eaf080b6fb8cf542cb0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49531b072a01eaf080b6fb8cf542cb0a">&#9670;&nbsp;</a></span>ksceDebugPrintf2()</h2>
+<a id="gaebd967615a353e8a5a312ac646ef19f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebd967615a353e8a5a312ac646ef19f1">&#9670;&nbsp;</a></span>ksceKernelPrintfLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceDebugPrintf2 </td>
+          <td class="memname">int ksceKernelPrintfLevel </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -573,22 +935,209 @@ type3</td>
       </table>
 </div><div class="memdoc">
 
-<p>Print log with ctx. </p>
+<p>Kernel Printf. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- The printf level. see::SceKernelDebugLevel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- The text format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9c43ea32215fa47029de8441d29f3f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c43ea32215fa47029de8441d29f3f22">&#9670;&nbsp;</a></span>ksceKernelPrintfLevelWithInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelPrintfLevelWithInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *&#160;</td>
+          <td class="paramname"><em>dbginfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kernel Printf Level with Info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- The printf level. see::SceKernelDebugLevel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- The debug info flags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- The debug info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- The text format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaea9df7ba1075e9bcbbb9e6a5e96046fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea9df7ba1075e9bcbbb9e6a5e96046fa">&#9670;&nbsp;</a></span>ksceKernelPrintfWithInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelPrintfWithInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *&#160;</td>
+          <td class="paramname"><em>dbginfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kernel Printf with Info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- ctx print flags, see:SceKernelDebugPrintFlags </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>- debug msg ctx </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- debug info </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- print fmt</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>- main log is pass to ksceDebugRegisterPutcharHandler's handler. ctx log is pass to ksceDebugSetHandlers's handler. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>- main log is pass to ksceDebugRegisterPutcharHandler's handler. dbginfo log is pass to ksceDebugSetHandlers's handler. </dd></dl>
 
 </div>
 </div>
-<a id="gab148f7a4ae21e8a8f767f90d6f1ab100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab148f7a4ae21e8a8f767f90d6f1ab100">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
+<a id="ga5c96d168e258d86bf7a2e2c6a993dffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c96d168e258d86bf7a2e2c6a993dffd">&#9670;&nbsp;</a></span>ksceKernelVprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelVprintf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kernel Vprintf. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- The text format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>- The fmt list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae93990207478343377a3a6aa4818e605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae93990207478343377a3a6aa4818e605">&#9670;&nbsp;</a></span>ksceKernelVprintfLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelVprintfLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kernel Vprintf Level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- The printf level. see::SceKernelDebugLevel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- The text format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>- The fmt list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga96fb338170605a833fa44c5298b29cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96fb338170605a833fa44c5298b29cff">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,25 +1152,38 @@ type3</td>
       </table>
 </div><div class="memdoc">
 
+<p>Kernel Panic. </p>
+<p>Kernel Printf Panic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- The debug info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lr</td><td>- The link register</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- The debug info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lr</td><td>- The link register </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- The text format </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ga1ddf08c90a5d84f3a060d3f17013adb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ddf08c90a5d84f3a060d3f17013adb0">&#9670;&nbsp;</a></span>ksceDebugPrintKernelAssertion()</h2>
+<a id="gaba141b1f4e89efde4408ab1d34036d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba141b1f4e89efde4408ab1d34036d85">&#9670;&nbsp;</a></span>ksceKernelAssert()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const void const char int ksceDebugPrintKernelAssertion </td>
+          <td class="memname">const void const char void ksceKernelAssert </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
           <td class="paramname"><em>condition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *&#160;</td>
+          <td class="paramname"><em>dbginfo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -637,42 +1199,94 @@ type3</td>
       </table>
 </div><div class="memdoc">
 
-<p>Assertion with ctx. </p>
+<p>Assertion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">condition</td><td>- condition </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>- debug msg ctx </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">condition</td><td>- The condition </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- The debug info </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lr</td><td>- The link register</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
 
 </div>
 </div>
-<a id="ga23b9f9e7cef75151a162689e5cd8ce64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga23b9f9e7cef75151a162689e5cd8ce64">&#9670;&nbsp;</a></span>ksceDebugPrintfKernelAssertion()</h2>
+<a id="gae0bd415e7829c543464edb6b529e18ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0bd415e7829c543464edb6b529e18ca">&#9670;&nbsp;</a></span>ksceKernelAssertLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceDebugPrintfKernelAssertion </td>
+          <td class="memname">void ksceKernelAssertLevel </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
           <td class="paramname"><em>condition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugMessageContext">SceKernelDebugMessageContext</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
+          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *&#160;</td>
+          <td class="paramname"><em>dbginfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>lr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Printf Assertion Level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- The print level. see:SceKernelAssertLevel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">condition</td><td>- The condition </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- The debug info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lr</td><td>- The link register</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
+
+</div>
+</div>
+<a id="gaab8452d94eeb4f32fd977f9f118a1a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab8452d94eeb4f32fd977f9f118a1a6f">&#9670;&nbsp;</a></span>ksceKernelPrintfAssertLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ksceKernelPrintfAssertLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>condition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceKernelDebugKernel.html#structSceKernelDebugInfo">SceKernelDebugInfo</a> *&#160;</td>
+          <td class="paramname"><em>dbginfo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -700,18 +1314,18 @@ type3</td>
       </table>
 </div><div class="memdoc">
 
-<p>Assertion with ctx and Print. </p>
+<p>Printf Assertion Level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- print level, see:SceDbgLogLevel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">condition</td><td>- condition </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>- debug msg ctx </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- The print level. see:SceKernelAssertLevel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">condition</td><td>- The condition </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbginfo</td><td>- The debug info </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lr</td><td>- The link register </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- print fmt</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>- The text fmt</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
 
 </div>
 </div>
@@ -816,14 +1430,14 @@ type3</td>
 
 </div>
 </div>
-<a id="ga8288506beeb713361e225dc70df1ace3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8288506beeb713361e225dc70df1ace3">&#9670;&nbsp;</a></span>ksceKernelGetMinimumAssertionLevel()</h2>
+<a id="ga11105ec4b67a836b948b5204af3bc584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11105ec4b67a836b948b5204af3bc584">&#9670;&nbsp;</a></span>ksceKernelGetAssertLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceKernelGetMinimumAssertionLevel </td>
+          <td class="memname">int ksceKernelGetAssertLevel </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>

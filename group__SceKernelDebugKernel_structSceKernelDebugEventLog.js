@@ -9,6 +9,5 @@ var group__SceKernelDebugKernel_structSceKernelDebugEventLog =
     [ "rsvd", "group__SceKernelDebugKernel.html#ga671a79011e46e174544350a919cc9a2f", null ],
     [ "time", "group__SceKernelDebugKernel.html#ga3b0a5f5f858991b77fcea8b14f6af89f", null ],
     [ "data_0x38", "group__SceKernelDebugKernel.html#gabc42df82f31b2f8575a0186e768b7b64", null ],
-    [ "item_size", "group__SceKernelDebugKernel.html#ga28626dbd1177c2cad1c23815e44efa65", null ],
-    [ "__attribute__", "group__SceKernelDebugKernel.html#ga9054460bd2e604b5d58e41fa45123b06", null ]
+    [ "item_size", "group__SceKernelDebugKernel.html#ga28626dbd1177c2cad1c23815e44efa65", null ]
 ];
