@@ -148,15 +148,22 @@ modules:
         kernel: true
         nid: 0x88758561
         functions:
-          ksceDebugPrintKernelAssertion: 0x35A35322
-          ksceDebugPrintKernelPanic: 0x391B5B74
-          ksceDebugPrintf: 0x391B74B7
-          ksceDebugPrintf2: 0x02B04343
-          ksceDebugPrintfKernelAssertion: 0x821A2D59
-          ksceDebugPrintfKernelPanic: 0x00CCE39C
+          k_sceEventLogPut: 0x95B38C6C
           ksceEventLogGetInfo: 0xCC5365D3
-          ksceKernelGetMinimumAssertionLevel: 0x374B7868
+          ksceEventLogPut: 0x912CF2BA
+          ksceKernelAssert: 0x35A35322
+          ksceKernelAssertLevel: 0xFD753E7A
+          ksceKernelGetAssertLevel: 0x374B7868
           ksceKernelGetTtyInfo: 0x62466B0A
+          ksceKernelPanic: 0x391B5B74
+          ksceKernelPrintf: 0x391B74B7
+          ksceKernelPrintfAssertLevel: 0x821A2D59
+          ksceKernelPrintfLevel: 0x1A3F2AA4
+          ksceKernelPrintfLevelWithInfo: 0xD9703808
+          ksceKernelPrintfPanic: 0x00CCE39C
+          ksceKernelPrintfWithInfo: 0x02B04343
+          ksceKernelVprintf: 0x411C0733
+          ksceKernelVprintfLevel: 0x611A158B
       SceDebugForKernel:
         kernel: true
         nid: 0x88C17370
