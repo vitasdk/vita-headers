@@ -15,31 +15,47 @@
 extern "C" {
 #endif
 
-typedef struct SceKernelDebugMessageContext {
-  SceUInt32 hex_value0_hi;
-  SceUInt32 hex_value0_lo;
-  SceUInt32 hex_value1;
-  const char *func;
-  SceSize line;
-  const char *file;
-} SceKernelDebugMessageContext;
 
-typedef enum SceKernelDebugPrintFlags {
-  SCE_DBG_PRINT_FLAG_NONE = 0,
-  SCE_DBG_PRINT_FLAG_CORE = 1,
-  SCE_DBG_PRINT_FLAG_FUNC = 2,
-  SCE_DBG_PRINT_FLAG_LINE = 4,
-  SCE_DBG_PRINT_FLAG_FILE = 8
-} SceKernelDebugPrintFlags;
+typedef struct SceKernelDebugInfo {
+	union {
+		struct {
+			SceUInt32 fileHash;
+			SceUInt32 lineHash;
+			SceUInt32 funcHash;
+		};
+		struct { /* For backwards compatibility */
+			SceUInt32 hex_value0_hi;
+			SceUInt32 hex_value0_lo;
+			SceUInt32 hex_value1;
+		};
+	};
+	const char *func;
+	SceUInt32 line;
+	const char *file;
+} SceKernelDebugInfo;
 
-typedef enum SceDbgLogLevel {
-  SCE_DBG_LOG_LEVEL_TRACE = 0, /* An extremely verbose logging level, mostly useful for internal developers. */
-  SCE_DBG_LOG_LEVEL_DEBUG,     /* A diagnostic logging level. */
-  SCE_DBG_LOG_LEVEL_INFO,      /* An informational logging level. */
-  SCE_DBG_LOG_LEVEL_WARNING,   /* A logging level that gives warnings of situations detrimental to proper execution. */
-  SCE_DBG_LOG_LEVEL_ERROR,     /* A logging level that will report erroneous conditions in execution. */
-  SCE_DBG_NUM_LOG_LEVELS       /* The number of logging levels available. */
-} SceDbgLogLevel;
+typedef SceKernelDebugInfo SceKernelDebugMessageContext;
+
+typedef enum SceKernelDebugInfoFlags {
+	SCE_KERNEL_DEBUG_INFO_FLAG_NONE = 0,
+	SCE_KERNEL_DEBUG_INFO_FLAG_CORE = 1,
+	SCE_KERNEL_DEBUG_INFO_FLAG_FUNC = 2,
+	SCE_KERNEL_DEBUG_INFO_FLAG_LINE = 4,
+	SCE_KERNEL_DEBUG_INFO_FLAG_FILE = 8
+} SceKernelDebugInfoFlags;
+
+typedef enum SceKernelDebugLevel {
+	SCE_KERNEL_DEBUG_LEVEL_ALWAYS = 0,
+	SCE_KERNEL_DEBUG_LEVEL_DEBUG,
+	SCE_KERNEL_DEBUG_LEVEL_TRACE
+} SceKernelDebugLevel;
+
+typedef enum SceKernelAssertLevel {
+	SCE_KERNEL_ASSERT_LEVEL_0 = 0,
+	SCE_KERNEL_ASSERT_LEVEL_1,
+	SCE_KERNEL_ASSERT_LEVEL_2
+} SceKernelAssertLevel;
+
 
 int ksceDebugPutchar(int character);
 
@@ -52,51 +68,131 @@ int ksceDebugPutchar(int character);
  *
  * @note - log is pass to ksceDebugRegisterPutcharHandler's handler.
  */
-int ksceDebugPrintf(const char *fmt, ...);
+int ksceKernelPrintf(const char *fmt, ...);
 
 /**
- * @brief Print log with ctx
+ * @brief Kernel Printf
  *
- * @param[in] flags - ctx print flags, see:SceKernelDebugPrintFlags
- * @param[in] ctx   - debug msg ctx
- * @param[in] fmt   - print fmt
+ * @param[in] level - The printf level. see::SceKernelDebugLevel
+ * @param[in] fmt   - The text format
+ */
+int ksceKernelPrintfLevel(SceUInt32 level, const char *fmt, ...);
+
+/**
+ * @brief Kernel Printf Level with Info
+ *
+ * @param[in] level   - The printf level. see::SceKernelDebugLevel
+ * @param[in] flags   - The debug info flags
+ * @param[in] dbginfo - The debug info
+ * @param[in] fmt     - The text format
+ */
+int ksceKernelPrintfLevelWithInfo(SceUInt32 level, SceUInt32 flags, const SceKernelDebugInfo *dbginfo, const char *fmt, ...);
+
+/**
+ * @brief Kernel Printf with Info
+ *
+ * @param[in] flags   - ctx print flags, see:SceKernelDebugPrintFlags
+ * @param[in] dbginfo - debug info
+ * @param[in] fmt     - print fmt
  *
  * @return 0 on success, < 0 on error.
  *
- * @note - main log is pass to ksceDebugRegisterPutcharHandler's handler.
- *         ctx  log is pass to ksceDebugSetHandlers's handler.
+ * @note - main    log is pass to ksceDebugRegisterPutcharHandler's handler.
+ *         dbginfo log is pass to ksceDebugSetHandlers's handler.
  */
-int ksceDebugPrintf2(int flags, const SceKernelDebugMessageContext *ctx, const char *fmt, ...);
-
-__attribute__((__noreturn__))
-void ksceDebugPrintKernelPanic(const SceKernelDebugMessageContext *ctx, const void *lr);
-
-__attribute__((__noreturn__))
-void ksceDebugPrintfKernelPanic(const SceKernelDebugMessageContext *ctx, const void *lr, const char *fmt, ...);
+int ksceKernelPrintfWithInfo(SceUInt32 flags, const SceKernelDebugInfo *dbginfo, const char *fmt, ...);
 
 /**
- * @brief Assertion with ctx
+ * @brief Kernel Vprintf
  *
- * @param[in] condition - condition
- * @param[in] ctx       - debug msg ctx
+ * @param[in] fmt - The text format
+ * @param[in] arg - The fmt list
+ */
+int ksceKernelVprintf(const char *fmt, va_list arg);
+
+/**
+ * @brief Kernel Vprintf Level
+ *
+ * @param[in] level - The printf level. see::SceKernelDebugLevel
+ * @param[in] fmt   - The text format
+ * @param[in] arg   - The fmt list
+ */
+int ksceKernelVprintfLevel(SceUInt32 level, const char *fmt, va_list arg);
+
+/**
+ * @brief Kernel Panic
+ *
+ * @param[in] dbginfo - The debug info
+ * @param[in] lr      - The link register
+ */
+__attribute__((__noreturn__)) void ksceKernelPanic(const SceKernelDebugInfo *dbginfo, const void *lr);
+
+/**
+ * @brief Kernel Printf Panic
+ *
+ * @param[in] dbginfo - The debug info
+ * @param[in] lr      - The link register
+ * @param[in] fmt     - The text format
+ */
+__attribute__((__noreturn__)) void ksceKernelPrintfPanic(const SceKernelDebugInfo *dbginfo, const void *lr, const char *fmt, ...);
+
+/**
+ * @brief Assertion
+ *
+ * @param[in] condition - The condition
+ * @param[in] dbginfo   - The debug info
  * @param[in] lr        - The link register
  *
- * @return 0 on success, < 0 on error.
+ * @return none.
  */
-int ksceDebugPrintKernelAssertion(int condition, const SceKernelDebugMessageContext *ctx, const void *lr);
+void ksceKernelAssert(SceBool condition, const SceKernelDebugInfo *dbginfo, const void *lr);
 
 /**
- * @brief Assertion with ctx and Print
+ * @brief Printf Assertion Level
  *
- * @param[in] level     - print level, see:SceDbgLogLevel
- * @param[in] condition - condition
- * @param[in] ctx       - debug msg ctx
+ * @param[in] level     - The print level. see:SceKernelAssertLevel
+ * @param[in] condition - The condition
+ * @param[in] dbginfo   - The debug info
  * @param[in] lr        - The link register
- * @param[in] fmt       - print fmt
  *
- * @return 0 on success, < 0 on error.
+ * @return none.
  */
-int ksceDebugPrintfKernelAssertion(int level, int condition, const SceKernelDebugMessageContext *ctx, const void *lr, const char *fmt, ...);
+void ksceKernelAssertLevel(SceUInt32 level, SceBool condition, const SceKernelDebugInfo *dbginfo, const void *lr);
+
+/**
+ * @brief Printf Assertion Level
+ *
+ * @param[in] level     - The print level. see:SceKernelAssertLevel
+ * @param[in] condition - The condition
+ * @param[in] dbginfo   - The debug info
+ * @param[in] lr        - The link register
+ * @param[in] fmt       - The text fmt
+ *
+ * @return none.
+ */
+void ksceKernelPrintfAssertLevel(SceUInt32 level, SceBool condition, const SceKernelDebugInfo *dbginfo, const void *lr, const char *fmt, ...);
+
+
+#define SCE_KERNEL_PANIC() do { \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	ksceKernelPanic(&__dbginfo, __builtin_return_address(0)); \
+	} while(0)
+
+#define SCE_KERNEL_PRINTF_PANIC(__fmt__, ...) do { \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	ksceKernelPrintfPanic(&__dbginfo, __builtin_return_address(0), __fmt__, ##__VA_ARGS__); \
+	} while(0)
+
+#define SCE_KERNEL_ASSERT(__cond__) do { \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	ksceKernelAssert(__cond__, &__dbginfo, __builtin_return_address(0)); \
+	} while(0)
+
+#define SCE_KERNEL_ASSERT_LEVEL(__level__, __cond__) do { \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	ksceKernelAssertLevel(__level__, __cond__, &__dbginfo, __builtin_return_address(0)); \
+	} while(0)
+
 
 int ksceDebugSetHandlers(int (* func)(int unk, const char *format, const va_list args), void *args);
 
@@ -118,7 +214,7 @@ int ksceDebugDisableInfoDump(int flag);
  *
  * @return current minimum assertion level.
  */
-int ksceKernelGetMinimumAssertionLevel(void);
+int ksceKernelGetAssertLevel(void);
 
 /**
  * @brief Get current minimum assertion level
@@ -191,6 +287,18 @@ int ksceEventLogGetInfo(void *buf, SceSize buf_size, SceSize *read_blocks);
  * @return log length on success, < 0 on error.
  */
 int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
+
+
+/* For backwards compatibility */
+
+#define ksceDebugPrintf ksceKernelPrintf
+#define ksceDebugPrintf2 ksceKernelPrintfWithInfo
+#define ksceDebugPrintKernelPanic ksceKernelPanic
+#define ksceDebugPrintfKernelPanic ksceKernelVprintfPanic
+#define ksceDebugPrintKernelAssertion ksceKernelAssert
+#define ksceDebugPrintfKernelAssertion ksceKernelPrintfAssertLevel
+#define ksceKernelGetMinimumAssertionLevel ksceKernelGetAssertLevel
+
 
 #ifdef __cplusplus
 }
