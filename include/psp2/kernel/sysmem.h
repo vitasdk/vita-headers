@@ -14,9 +14,6 @@
 extern "C" {
 #endif
 
-typedef enum SceKernelAllocMemBlockAttr {
-	SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT      = 0x00000004U
-} SceKernelAllocMemBlockAttr;
 
 typedef struct SceKernelAllocMemBlockOpt {
 	SceSize size;
@@ -34,11 +31,6 @@ typedef struct SceKernelFreeMemorySizeInfo {
 	int size_cdram;   //!< Free memory size for USER_CDRAM_RW memory
 	int size_phycont; //!< Free memory size for USER_MAIN_PHYCONT_*_RW memory
 } SceKernelFreeMemorySizeInfo;
-
-typedef enum SceKernelModel {
-	SCE_KERNEL_MODEL_VITA   = 0x10000,
-	SCE_KERNEL_MODEL_VITATV = 0x20000
-} SceKernelModel;
 
 typedef struct SceKernelMemBlockInfo {
 	SceSize size;
