@@ -13,6 +13,7 @@ var group__SceFios2KernelKernel =
     [ "SCE_FIOS_OVERLAY_TYPE_TRANSLUCENT", "group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c", null ],
     [ "SCE_FIOS_OVERLAY_TYPE_NEWER", "group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de", null ],
     [ "SCE_FIOS_OVERLAY_TYPE_WRITABLE", "group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f", null ],
+    [ "sceFiosKernelOverlayAddForProcess02", "group__SceFios2KernelKernel.html#ga29eb5b029cb16a7e5750bff964738699", null ],
     [ "ksceFiosKernelOverlayAdd", "group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432", null ],
     [ "ksceFiosKernelOverlayAddForProcess", "group__SceFios2KernelKernel.html#ga1345cdbd5408050293bf8272591c0638", null ],
     [ "ksceFiosKernelOverlayRemoveForProcess", "group__SceFios2KernelKernel.html#gae8dc6232017173c296da1e11001b3392", null ],

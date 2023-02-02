@@ -10,7 +10,7 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "coredump.h", "coredump_8h.html", "coredump_8h" ],
     [ "ctrl.h", "psp2kern_2ctrl_8h.html", "psp2kern_2ctrl_8h" ],
     [ "display.h", "psp2kern_2display_8h.html", "psp2kern_2display_8h" ],
-    [ "fios2.h", "fios2_8h.html", "fios2_8h" ],
+    [ "fios2.h", "psp2kern_2fios2_8h.html", "psp2kern_2fios2_8h" ],
     [ "gpu_es4.h", "gpu__es4_8h.html", "gpu__es4_8h" ],
     [ "idstorage.h", "idstorage_8h.html", "idstorage_8h" ],
     [ "npdrm.h", "psp2kern_2npdrm_8h.html", "psp2kern_2npdrm_8h" ],

@@ -85,8 +85,25 @@ $(document).ready(function(){initNavTree('group__SceFios2KernelKernel.html','');
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fios2_8h.html">psp2kern/fios2.h</a>&gt;</span> </div>
-<div class="ttc" id="afios2_8h_html"><div class="ttname"><a href="fios2_8h.html">fios2.h</a></div></div>
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fios2kernel02_8h.html">psp2/fios2kernel02.h</a>&gt;</span> </div>
+<div class="ttc" id="afios2kernel02_8h_html"><div class="ttname"><a href="fios2kernel02_8h.html">fios2kernel02.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceFios2Kernel </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2fios2_8h.html">psp2common/fios2.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2fios2_8h_html"><div class="ttname"><a href="psp2common_2fios2_8h.html">fios2.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2fios2_8h.html">psp2kern/fios2.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2fios2_8h_html"><div class="ttname"><a href="psp2kern_2fios2_8h.html">fios2.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
 </p><div class="fragment"><div class="line">SceFios2KernelForDriver </div>
@@ -95,6 +112,8 @@ $(document).ready(function(){initNavTree('group__SceFios2KernelKernel.html','');
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga29eb5b029cb16a7e5750bff964738699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga29eb5b029cb16a7e5750bff964738699">sceFiosKernelOverlayAddForProcess02</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
+<tr class="separator:ga29eb5b029cb16a7e5750bff964738699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga045f58dcf924f09a660f9ddf573e9432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432">ksceFiosKernelOverlayAdd</a> (<a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
 <tr class="memdesc:ga045f58dcf924f09a660f9ddf573e9432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay process file system overlay.  <a href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432">More...</a><br /></td></tr>
 <tr class="separator:ga045f58dcf924f09a660f9ddf573e9432"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +277,40 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga29eb5b029cb16a7e5750bff964738699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29eb5b029cb16a7e5750bff964738699">&#9670;&nbsp;</a></span>sceFiosKernelOverlayAddForProcess02()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceFiosKernelOverlayAddForProcess02 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *&#160;</td>
+          <td class="paramname"><em>overlay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *&#160;</td>
+          <td class="paramname"><em>outID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga045f58dcf924f09a660f9ddf573e9432"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga045f58dcf924f09a660f9ddf573e9432">&#9670;&nbsp;</a></span>ksceFiosKernelOverlayAdd()</h2>
 
