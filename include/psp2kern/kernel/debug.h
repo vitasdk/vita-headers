@@ -174,22 +174,22 @@ void ksceKernelPrintfAssertLevel(SceUInt32 level, SceBool condition, const SceKe
 
 
 #define SCE_KERNEL_PANIC() do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
 	ksceKernelPanic(&__dbginfo, __builtin_return_address(0)); \
 	} while(0)
 
 #define SCE_KERNEL_PRINTF_PANIC(__fmt__, ...) do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
 	ksceKernelPrintfPanic(&__dbginfo, __builtin_return_address(0), __fmt__, ##__VA_ARGS__); \
 	} while(0)
 
 #define SCE_KERNEL_ASSERT(__cond__) do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
 	ksceKernelAssert(__cond__, &__dbginfo, __builtin_return_address(0)); \
 	} while(0)
 
 #define SCE_KERNEL_ASSERT_LEVEL(__level__, __cond__) do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = ___LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
 	ksceKernelAssertLevel(__level__, __cond__, &__dbginfo, __builtin_return_address(0)); \
 	} while(0)
 
