@@ -27,7 +27,8 @@ typedef enum SceDisplayErrorCode {
 } SceDisplayErrorCode;
 
 typedef enum SceDisplayPixelFormat {
-	SCE_DISPLAY_PIXELFORMAT_A8B8G8R8 = 0x00000000U
+	SCE_DISPLAY_PIXELFORMAT_A8B8G8R8    = 0x00000000U,
+	SCE_DISPLAY_PIXELFORMAT_A2B10G10R10 = 0x60800000U
 } SceDisplayPixelFormat;
 
 typedef enum SceDisplaySetBufSync {
