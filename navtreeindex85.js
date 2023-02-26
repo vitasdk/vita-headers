@@ -1,5 +1,15 @@
 var NAVTREEINDEX85 =
 {
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,83,26],
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,11,12,0,26],
+"group__SystemFunction.html":[1,5],
+"group__SystemParams.html":[1,13],
+"group__SystemStatus.html":[1,11],
+"group__USB.html":[1,12],
+"group__Vitasdk.html":[1,14],
+"group__debug.html":[1,9],
+"group__kernel.html":[1,7],
+"group__update.html":[1,8],
 "gxm_8h.html":[4,0,1,0,25],
 "gxm_8h_source.html":[4,0,1,0,25],
 "gxt_8h.html":[4,0,1,0,26],
@@ -20,8 +30,8 @@ var NAVTREEINDEX85 =
 "ime__dialog_8h_source.html":[4,0,1,0,28],
 "incoming__dialog_8h.html":[4,0,1,0,29],
 "incoming__dialog_8h_source.html":[4,0,1,0,29],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h.html":[4,0,1,2,2,9],
 "intrmgr_8h_source.html":[4,0,1,2,2,9],
 "io_2devctl_8h.html":[4,0,1,0,1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX85 =
 "sqlite_8h.html":[4,0,1,0,69],
 "sqlite_8h_source.html":[4,0,1,0,69],
 "ssmgr_8h.html":[4,0,1,2,2,17],
-"ssmgr_8h_source.html":[4,0,1,2,2,17],
-"stdc_8h.html":[4,0,1,0,4,1],
-"stdc_8h_source.html":[4,0,1,0,4,1],
-"suspend_8h.html":[4,0,1,2,2,18],
-"suspend_8h_source.html":[4,0,1,2,2,18],
-"sysclib_8h.html":[4,0,1,2,2,19],
-"sysclib_8h_source.html":[4,0,1,2,2,19],
-"syscon_8h.html":[4,0,1,2,20],
-"syscon_8h_source.html":[4,0,1,2,20],
-"sysmodule_8h.html":[4,0,1,0,70],
-"sysmodule_8h_source.html":[4,0,1,0,70]
+"ssmgr_8h_source.html":[4,0,1,2,2,17]
 };

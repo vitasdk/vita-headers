@@ -25,7 +25,9 @@ var group__SceDisplayKernel =
     ] ],
     [ "SceDisplayPixelFormat", "group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c", [
       [ "SCE_DISPLAY_PIXELFORMAT_A8B8G8R8", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c", null ],
-      [ "SCE_DISPLAY_PIXELFORMAT_A8B8G8R8", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c", null ]
+      [ "SCE_DISPLAY_PIXELFORMAT_A2B10G10R10", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9", null ],
+      [ "SCE_DISPLAY_PIXELFORMAT_A8B8G8R8", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c", null ],
+      [ "SCE_DISPLAY_PIXELFORMAT_A2B10G10R10", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9", null ]
     ] ],
     [ "SceDisplaySetBufSync", "group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55", [
       [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016", null ],
@@ -44,6 +46,7 @@ var group__SceDisplayKernel =
     [ "SCE_DISPLAY_ERROR_NO_FRAME_BUFFER", "group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728aab7831ed72313e8699ad44badd177588", null ],
     [ "SCE_DISPLAY_ERROR_NO_PIXEL_DATA", "group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a940965b34707d6a5eea1f4712dc3e0b7", null ],
     [ "SCE_DISPLAY_PIXELFORMAT_A8B8G8R8", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c", null ],
+    [ "SCE_DISPLAY_PIXELFORMAT_A2B10G10R10", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9", null ],
     [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016", null ],
     [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c", null ],
     [ "ksceDisplaySetFrameBuf", "group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
