@@ -144,3 +144,10 @@ modules:
         nid: 0x073F8C68
         functions:
           scePafWidgetSetFontSize: 0x39B15B98
+      ScePafGraphics:
+        kernel: false
+        nid: 0xA070D6A7
+        functions:
+          scePafGraphicsUpdateCurrentWave: 0x2E30F1B5
+        variables:
+          scePafGraphicsCurrentWave: 0xE71DB07B
