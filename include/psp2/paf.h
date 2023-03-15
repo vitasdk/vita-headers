@@ -12,5 +12,6 @@
  */
 #include <psp2/paf/stdc.h>
 #include <psp2/paf/misc.h>
+#include <psp2/paf/graphics.h>
 
 #endif /* _PSP2_PAF_H_ */
