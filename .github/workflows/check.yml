@@ -37,10 +37,15 @@ jobs:
         cd $TRAVIS_BUILD_DIR
         cp -r include/* $VITASDK/arm-vita-eabi/include
         USE_LINT=1 python3 build.py output
-        #cd $TRAVIS_BUILD_DIR
-        #git clone https://github.com/vitasdk/samples
-        #cd samples
-        #mkdir build
-        #cd build
-        #cmake ..
-        #make -j$(nproc)
+        vdpm SDL2
+        vdpm curl
+        vdpm openssl
+        vdpm soloud
+        vdpm zlib
+        cd $TRAVIS_BUILD_DIR
+        git clone https://github.com/vitasdk/samples
+        cd samples
+        mkdir build
+        cd build
+        cmake ..
+        make -j$(nproc)
