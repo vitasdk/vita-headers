@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"group__SceKernelSysrootKernel.html#ga5e162175510b3327fd3d678471ff65f8":[4,0,1,2,2,21,30],
+"group__SceKernelSysrootKernel.html#ga5e162175510b3327fd3d678471ff65f8":[1,7,19,0,33],
 "group__SceKernelSysrootKernel.html#ga636b496ee280fb476e23547694d32049":[4,0,1,2,2,21,0],
 "group__SceKernelSysrootKernel.html#ga636b496ee280fb476e23547694d32049":[1,7,19,0,0],
 "group__SceKernelSysrootKernel.html#ga63d0a07b5dcdb55e2d2488c6bf2dfd34":[4,0,1,2,2,21,31],
@@ -8,12 +10,12 @@ var NAVTREEINDEX40 =
 "group__SceKernelSysrootKernel.html#ga666ce33aa0fa454d5fcff558840ed258":[1,7,19,0,3],
 "group__SceKernelSysrootKernel.html#ga667430e4c173b766cc31ba19ede85078":[4,0,1,2,2,21,14],
 "group__SceKernelSysrootKernel.html#ga667430e4c173b766cc31ba19ede85078":[1,7,19,0,17],
-"group__SceKernelSysrootKernel.html#ga7e52887c24e0454a3cd742420553b7b7":[1,7,19,0,7],
 "group__SceKernelSysrootKernel.html#ga7e52887c24e0454a3cd742420553b7b7":[4,0,1,2,2,21,7],
+"group__SceKernelSysrootKernel.html#ga7e52887c24e0454a3cd742420553b7b7":[1,7,19,0,7],
 "group__SceKernelSysrootKernel.html#ga87d3f35098a20dde0665dc87d7b17408":[4,0,1,2,2,21,17],
 "group__SceKernelSysrootKernel.html#ga87d3f35098a20dde0665dc87d7b17408":[1,7,19,0,20],
-"group__SceKernelSysrootKernel.html#ga888ca62deb0c08c14af41b51a22a232e":[1,7,19,0,19],
 "group__SceKernelSysrootKernel.html#ga888ca62deb0c08c14af41b51a22a232e":[4,0,1,2,2,21,16],
+"group__SceKernelSysrootKernel.html#ga888ca62deb0c08c14af41b51a22a232e":[1,7,19,0,19],
 "group__SceKernelSysrootKernel.html#ga9e1ee712b0fb578cbb50311b0173e10a":[4,0,1,2,2,21,26],
 "group__SceKernelSysrootKernel.html#ga9e1ee712b0fb578cbb50311b0173e10a":[1,7,19,0,29],
 "group__SceKernelSysrootKernel.html#gaa0ccbbc5329e182a24b0d3a0a98f70f6":[4,0,1,2,2,21,8],
@@ -26,8 +28,8 @@ var NAVTREEINDEX40 =
 "group__SceKernelSysrootKernel.html#gaadec162afc0c11b580fae0a36f333987":[1,7,19,0,24],
 "group__SceKernelSysrootKernel.html#gaae18ca6d933be8561673eb190fde924c":[4,0,1,2,2,21,11],
 "group__SceKernelSysrootKernel.html#gaae18ca6d933be8561673eb190fde924c":[1,7,19,0,11],
-"group__SceKernelSysrootKernel.html#gacb9971ac02a2900bbd76e61fe9c823d4":[1,7,19,0,31],
 "group__SceKernelSysrootKernel.html#gacb9971ac02a2900bbd76e61fe9c823d4":[4,0,1,2,2,21,28],
+"group__SceKernelSysrootKernel.html#gacb9971ac02a2900bbd76e61fe9c823d4":[1,7,19,0,31],
 "group__SceKernelSysrootKernel.html#gad4da8e9a7bb7fbfabedd6221a89e376f":[4,0,1,2,2,21,4],
 "group__SceKernelSysrootKernel.html#gad4da8e9a7bb7fbfabedd6221a89e376f":[1,7,19,0,4],
 "group__SceKernelSysrootKernel.html#gae079055e4380c2d36839661112a628e0":[4,0,1,2,2,21,13],
@@ -44,9 +46,9 @@ var NAVTREEINDEX40 =
 "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60":[4,0,1,2,2,21,11,1],
 "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60":[1,7,19,0,11,1],
 "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924ca9e1425368d9829500a8316186d508f60":[1,7,19,0,13],
-"group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924caabea726cf1f5054ef0dcffd8e82a9ab3":[4,0,1,2,2,21,11,2],
 "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924caabea726cf1f5054ef0dcffd8e82a9ab3":[1,7,19,0,11,2],
 "group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924caabea726cf1f5054ef0dcffd8e82a9ab3":[1,7,19,0,14],
+"group__SceKernelSysrootKernel.html#ggaae18ca6d933be8561673eb190fde924caabea726cf1f5054ef0dcffd8e82a9ab3":[4,0,1,2,2,21,11,2],
 "group__SceLibDbg.html":[1,9,0],
 "group__SceLibDbgUser.html":[1,9,0,0],
 "group__SceLibDbgUser.html#ga0d4f8d81c8132963658ffe6c7be44eaa":[4,0,1,0,35,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX40 =
 "group__SceLibJsonUser.html#gaf716dc78353f0a78283f3137f3a9c6dd":[1,15,2,0,57],
 "group__SceLibJsonUser.html#gaf75cab01fe0cad535d205fe545fe5781":[1,15,2,0,66],
 "group__SceLibJsonUser.html#gaf79726a6c7a64e1b9775bed9289b8fa5":[1,15,2,0,53],
-"group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39":[1,15,2,0,98],
-"group__SceLibJsonUser.html#gaf81ce58f84503544b0d5a481e5de99dc":[1,15,2,0,100],
-"group__SceLibJsonUser.html#gaf86bd8d9956353c54062c680f64ce68c":[1,15,2,0,58]
+"group__SceLibJsonUser.html#gaf7aa096bb7e920df528129a321ea5c39":[1,15,2,0,98]
 };

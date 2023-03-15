@@ -84,6 +84,16 @@ $(document).ready(function(){initNavTree('group__ScePafUser.html',''); initResiz
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="graphics_8h.html">psp2/paf/graphics.h</a>&gt;</span> </div>
+<div class="ttc" id="agraphics_8h_html"><div class="ttname"><a href="graphics_8h.html">graphics.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">ScePaf_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="paf_2misc_8h.html">psp2/paf/misc.h</a>&gt;</span> </div>
 <div class="ttc" id="apaf_2misc_8h_html"><div class="ttname"><a href="paf_2misc_8h.html">misc.h</a></div></div>
 </div><!-- fragment --><p><br  />
@@ -114,6 +124,9 @@ $(document).ready(function(){initNavTree('group__ScePafUser.html',''); initResiz
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaddf7254553439f54dd7a127dc374aeb6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gaddf7254553439f54dd7a127dc374aeb6">scePafGraphicsUpdateCurrentWave</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> index, <a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> update_interval)</td></tr>
+<tr class="memdesc:gaddf7254553439f54dd7a127dc374aeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the current wave.  <a href="group__ScePafUser.html#gaddf7254553439f54dd7a127dc374aeb6">More...</a><br /></td></tr>
+<tr class="separator:gaddf7254553439f54dd7a127dc374aeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5352793106ba81601d289126bc9fd6ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#ga5352793106ba81601d289126bc9fd6ad">scePafGetCurrentClockLocalTime</a> (<a class="el" href="group__ScePafUser.html#structScePafDateTime">ScePafDateTime</a> *data)</td></tr>
 <tr class="separator:ga5352793106ba81601d289126bc9fd6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5eefd908fa4cabca626813894be9e54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePafUser.html#gac5eefd908fa4cabca626813894be9e54">scePafSha1Init</a> (<a class="el" href="group__ScePafUser.html#structScePafSha1Context">ScePafSha1Context</a> *context)</td></tr>
@@ -987,6 +1000,44 @@ a5</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaddf7254553439f54dd7a127dc374aeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddf7254553439f54dd7a127dc374aeb6">&#9670;&nbsp;</a></span>scePafGraphicsUpdateCurrentWave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scePafGraphicsUpdateCurrentWave </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td>
+          <td class="paramname"><em>update_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the current wave. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- The index from 0 to 0x1F within range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">update_interval</td><td>- The update interval. 0.0f to it will change soon. 1.0f will slowly turn into an updated wave after 1 second, just like when you change it the normal way.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="ga5352793106ba81601d289126bc9fd6ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5352793106ba81601d289126bc9fd6ad">&#9670;&nbsp;</a></span>scePafGetCurrentClockLocalTime()</h2>
 

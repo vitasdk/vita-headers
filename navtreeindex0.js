@@ -193,8 +193,8 @@ var NAVTREEINDEX0 =
 "globals_eval_s.html":[4,1,5,3],
 "globals_eval_u.html":[4,1,5,4],
 "globals_f.html":[4,1,0,6],
-"globals_func.html":[4,1,1,0],
 "globals_func.html":[4,1,1],
+"globals_func.html":[4,1,1,0],
 "globals_func_k.html":[4,1,1,1],
 "globals_func_m.html":[4,1,1,2],
 "globals_func_p.html":[4,1,1,3],
@@ -212,8 +212,8 @@ var NAVTREEINDEX0 =
 "globals_r.html":[4,1,0,16],
 "globals_s.html":[4,1,0,17],
 "globals_t.html":[4,1,0,18],
-"globals_type.html":[4,1,3,0],
 "globals_type.html":[4,1,3],
+"globals_type.html":[4,1,3,0],
 "globals_type_k.html":[4,1,3,1],
 "globals_type_s.html":[4,1,3,2],
 "globals_type_t.html":[4,1,3,3],
@@ -227,6 +227,8 @@ var NAVTREEINDEX0 =
 "gps_8h_source.html":[4,0,1,0,24],
 "gpu__es4_8h.html":[4,0,1,2,11],
 "gpu__es4_8h_source.html":[4,0,1,2,11],
+"graphics_8h.html":[4,0,1,0,4,0],
+"graphics_8h_source.html":[4,0,1,0,4,0],
 "group__Audio.html":[1,2],
 "group__Dialog.html":[1,3],
 "group__Filesystem.html":[1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "group__SceAVConfigUser.html#ga724e3f64091b786d25b051030583e157":[4,0,1,0,12,3],
 "group__SceAVConfigUser.html#ga9fb38a05ef1a49a1c1c5e8581d2de1bf":[1,11,2,0,3],
 "group__SceAVConfigUser.html#ga9fb38a05ef1a49a1c1c5e8581d2de1bf":[4,0,1,0,12,1],
-"group__SceAVConfigUser.html#gabf77878ea84515be1428b3a660508c81":[1,11,2,0,9],
-"group__SceAVConfigUser.html#gabf77878ea84515be1428b3a660508c81":[4,0,1,0,12,7],
-"group__SceAVConfigUser.html#gae39175631bf077e026c483b6e0facbe8":[1,11,2,0,4]
+"group__SceAVConfigUser.html#gabf77878ea84515be1428b3a660508c81":[1,11,2,0,9]
 };

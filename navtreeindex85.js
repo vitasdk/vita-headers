@@ -1,7 +1,12 @@
 var NAVTREEINDEX85 =
 {
-"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,83,26],
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[1,11,12,0,17],
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,11,12,0,27],
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[4,0,1,0,83,27],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[1,11,12,0,6],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,83,6],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,11,12,0,26],
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,83,26],
 "group__SystemFunction.html":[1,5],
 "group__SystemParams.html":[1,13],
 "group__SystemStatus.html":[1,11],
@@ -119,8 +124,8 @@ var NAVTREEINDEX85 =
 "ommon_2kernel_2sysmem_8h_source.html":[4,0,1,1,0,2],
 "openpsid_8h.html":[4,0,1,0,2,5],
 "openpsid_8h_source.html":[4,0,1,0,2,5],
-"paf_2misc_8h.html":[4,0,1,0,4,0],
-"paf_2misc_8h_source.html":[4,0,1,0,4,0],
+"paf_2misc_8h.html":[4,0,1,0,4,1],
+"paf_2misc_8h_source.html":[4,0,1,0,4,1],
 "paf_8h.html":[4,0,1,0,49],
 "paf_8h_source.html":[4,0,1,0,49],
 "pages.html":[],
@@ -244,10 +249,5 @@ var NAVTREEINDEX85 =
 "sharedfb_8h_source.html":[4,0,1,0,66],
 "shellutil_8h.html":[4,0,1,0,67],
 "shellutil_8h_source.html":[4,0,1,0,67],
-"shutter__sound_8h.html":[4,0,1,0,68],
-"shutter__sound_8h_source.html":[4,0,1,0,68],
-"sqlite_8h.html":[4,0,1,0,69],
-"sqlite_8h_source.html":[4,0,1,0,69],
-"ssmgr_8h.html":[4,0,1,2,2,17],
-"ssmgr_8h_source.html":[4,0,1,2,2,17]
+"shutter__sound_8h.html":[4,0,1,0,68]
 };

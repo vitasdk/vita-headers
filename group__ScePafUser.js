@@ -18,6 +18,7 @@ var group__ScePafUser =
     [ "sce_paf_private_strncmp", "group__ScePafUser.html#gaaaddd80be0befcd3dd0e15b719c0b69e", null ],
     [ "sce_paf_private_strncpy", "group__ScePafUser.html#ga49dfd9916fb7b901a4dc38c5e71e0be1", null ],
     [ "sce_paf_private_strrchr", "group__ScePafUser.html#ga25417b32b65d1f6210264047769431d3", null ],
+    [ "scePafGraphicsUpdateCurrentWave", "group__ScePafUser.html#gaddf7254553439f54dd7a127dc374aeb6", null ],
     [ "scePafGetCurrentClockLocalTime", "group__ScePafUser.html#ga5352793106ba81601d289126bc9fd6ad", null ],
     [ "scePafSha1Init", "group__ScePafUser.html#gac5eefd908fa4cabca626813894be9e54", null ],
     [ "scePafSha1Update", "group__ScePafUser.html#ga1f29d7bc35c3661b7715138dd504ea93", null ],
