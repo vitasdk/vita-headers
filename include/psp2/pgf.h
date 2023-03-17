@@ -30,7 +30,7 @@ typedef enum SceFontErrorCode {
 	SCE_FONT_ERROR_INVALID_FONT_DATA    = 0x8046000A,
 } SceFontErrorCode;
 
-typedef struct SceSceFontNewLibParams {
+typedef struct SceFontNewLibParams {
 	void *userData;
 	unsigned int numFonts;
 	void *cacheData;
