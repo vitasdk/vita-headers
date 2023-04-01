@@ -1,9 +1,12 @@
 var group__SceKernelDebugKernel =
 [
+    [ "__PSP2FILEHASH__", "group__SceKernelDebugKernel.html#ga39a1a282283360ac9a25a63dbd6d4408", null ],
+    [ "__PSP2FILE__", "group__SceKernelDebugKernel.html#gacc5d4d580228659ca4d839de38fae08c", null ],
     [ "SCE_KERNEL_PANIC", "group__SceKernelDebugKernel.html#ga4ad9e1587bfe8994de1a4399b444adc7", null ],
     [ "SCE_KERNEL_PRINTF_PANIC", "group__SceKernelDebugKernel.html#ga54c15489daf9242d6cf45687b97be8f2", null ],
     [ "SCE_KERNEL_ASSERT", "group__SceKernelDebugKernel.html#gae62af788958798416e4d4ab5f51fb1d4", null ],
     [ "SCE_KERNEL_ASSERT_LEVEL", "group__SceKernelDebugKernel.html#ga6f706fdf19145baf419dede49fc549be", null ],
+    [ "SCE_KERNEL_PRINTF_LEVEL", "group__SceKernelDebugKernel.html#ga53dd38508e2e0855ba73c252cefd1912", null ],
     [ "ksceDebugPrintf", "group__SceKernelDebugKernel.html#ga6fcc753bef95e607d09c348e5486f6e1", null ],
     [ "ksceDebugPrintf2", "group__SceKernelDebugKernel.html#ga56a4f9c6b7d0a1c2c68669cc53cd45b7", null ],
     [ "ksceDebugPrintKernelPanic", "group__SceKernelDebugKernel.html#ga24f43a4ba64e1c1bba99a3bb87e45485", null ],

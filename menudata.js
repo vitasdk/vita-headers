@@ -178,7 +178,8 @@ var menudata={children:[
 {text:"s",url:"globals_eval_s.html#index_s"},
 {text:"u",url:"globals_eval_u.html#index_u"}]},
 {text:"Macros",url:"globals_defs.html",children:[
-{text:"b",url:"globals_defs.html#index_b"},
+{text:"_",url:"globals_defs.html#index__5F"},
+{text:"b",url:"globals_defs_b.html#index_b"},
 {text:"e",url:"globals_defs_e.html#index_e"},
 {text:"h",url:"globals_defs_h.html#index_h"},
 {text:"k",url:"globals_defs_k.html#index_k"},
