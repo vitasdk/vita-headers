@@ -173,24 +173,38 @@ void ksceKernelAssertLevel(SceUInt32 level, SceBool condition, const SceKernelDe
 void ksceKernelPrintfAssertLevel(SceUInt32 level, SceBool condition, const SceKernelDebugInfo *dbginfo, const void *lr, const char *fmt, ...);
 
 
+#ifndef __PSP2FILEHASH__
+#define __PSP2FILEHASH__ (0)
+#endif
+
+#ifndef __PSP2FILE__
+#define __PSP2FILE__ __FILE__
+#endif
+
+
 #define SCE_KERNEL_PANIC() do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = __PSP2FILEHASH__, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __PSP2FILE__}; \
 	ksceKernelPanic(&__dbginfo, __builtin_return_address(0)); \
 	} while(0)
 
 #define SCE_KERNEL_PRINTF_PANIC(__fmt__, ...) do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = __PSP2FILEHASH__, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __PSP2FILE__}; \
 	ksceKernelPrintfPanic(&__dbginfo, __builtin_return_address(0), __fmt__, ##__VA_ARGS__); \
 	} while(0)
 
 #define SCE_KERNEL_ASSERT(__cond__) do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = __PSP2FILEHASH__, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __PSP2FILE__}; \
 	ksceKernelAssert(__cond__, &__dbginfo, __builtin_return_address(0)); \
 	} while(0)
 
 #define SCE_KERNEL_ASSERT_LEVEL(__level__, __cond__) do { \
-	static const SceKernelDebugInfo __dbginfo = {.fileHash = 0, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __FILE__}; \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = __PSP2FILEHASH__, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __PSP2FILE__}; \
 	ksceKernelAssertLevel(__level__, __cond__, &__dbginfo, __builtin_return_address(0)); \
+	} while(0)
+
+#define SCE_KERNEL_PRINTF_LEVEL(__level__, __fmt__, ...) do { \
+	static const SceKernelDebugInfo __dbginfo = {.fileHash = __PSP2FILEHASH__, .lineHash = 0, .funcHash = 0, .func = __FUNCTION__, .line = __LINE__, .file = __PSP2FILE__}; \
+	ksceKernelPrintfLevelWithInfo(__level__, 0xF, &__dbginfo, __fmt__, ##__VA_ARGS__); \
 	} while(0)
 
 
