@@ -33,6 +33,9 @@ modules:
         kernel: true
         nid: 0xA5195D20
         functions:
+          ksceKernelCorelockInitialize: 0xA65F6F14
+          ksceKernelCorelockLock: 0x2FF54320
+          ksceKernelCorelockUnlock: 0xFE2B77A3
           ksceKernelCpuDcacheInvalidateAll: 0xF9B0B171
           ksceKernelCpuDcacheWritebackAll: 0x49180814
           ksceKernelCpuDcacheWritebackInvalidateAll: 0x4BBA5C82
@@ -40,6 +43,3 @@ modules:
           ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x73E895EA
           ksceKernelCpuIcacheInvalidateAll: 0x803C84BF
           ksceKernelCpuIcacheInvalidateRange: 0x2E637B1D
-          ksceKernelCorelockInitialize: 0xA65F6F14
-          ksceKernelCorelockLock: 0x2FF54320
-          ksceKernelCorelockUnlock: 0xFE2B77A3
