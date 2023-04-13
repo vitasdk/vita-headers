@@ -1,0 +1,27 @@
+version: 2
+firmware: 3.60
+modules:
+  SceUsbAudioIn:
+    nid: 0x3525FE7A
+    libraries:
+      SceUsbAudioForDriver:
+        kernel: true
+        nid: 0x066BBE8B
+        functions:
+          ksceUsbAudioGetDeviceIdList: 0x96EC3E18
+          ksceUsbAudioInput: 0x863B0617
+          ksceUsbAudioInput2: 0xEFB4E3E4
+          ksceUsbAudioRegisterCallback: 0x974DBE03
+          ksceUsbAudioUnregisterCallback: 0x23A07D29
+      SceUsbAudioIn:
+        kernel: false
+        nid: 0x53AD0094
+        functions:
+          sceUsbAudioInCloseDevice: 0x8D592FBC
+          sceUsbAudioInGetDeviceIdList: 0x8E5FA43F
+          sceUsbAudioInGetDeviceInformation: 0x00CCAA66
+          sceUsbAudioInGetMaxValueOfVolume: 0x0E334392
+          sceUsbAudioInGetMinValueOfVolume: 0x40A15361
+          sceUsbAudioInInput: 0xFAB27059
+          sceUsbAudioInOpenDevice: 0x00563102
+          sceUsbAudioInSetCurrentValueOfVolume: 0xFA026651
