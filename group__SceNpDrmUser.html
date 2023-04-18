@@ -112,7 +112,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8dc8b1cc4d8c972d5d80d9515790305a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga8dc8b1cc4d8c972d5d80d9515790305a">_sceNpDrmGetRifNameForInstall</a> (char *rif_name, const void *rif_data, int unk)</td></tr>
 <tr class="memdesc:ga8dc8b1cc4d8c972d5d80d9515790305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rif name for install.  <a href="group__SceNpDrmUser.html#ga8dc8b1cc4d8c972d5d80d9515790305a">More...</a><br /></td></tr>
 <tr class="separator:ga8dc8b1cc4d8c972d5d80d9515790305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95eeab23a328cc7c0014cb66320101e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga95eeab23a328cc7c0014cb66320101e4">scePsmDrmGetRifKey</a> (const <a class="el" href="group__SceNpDrmUser.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *license_buf, char *keydata, int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
+<tr class="memitem:ga95eeab23a328cc7c0014cb66320101e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga95eeab23a328cc7c0014cb66320101e4">scePsmDrmGetRifKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *license_buf, char *keydata, int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
 <tr class="memdesc:ga95eeab23a328cc7c0014cb66320101e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get PSM rif key.  <a href="group__SceNpDrmUser.html#ga95eeab23a328cc7c0014cb66320101e4">More...</a><br /></td></tr>
 <tr class="separator:ga95eeab23a328cc7c0014cb66320101e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gad30e0e81da89df4e6d9fb5c746bcd6b7">ksceNpDrmGetRifName</a> (char *name, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> aid)</td></tr>
@@ -128,257 +128,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2f0733beefadbc467c42b07722e17975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license info.  <a href="group__SceNpDrmUser.html#ga2f0733beefadbc467c42b07722e17975">More...</a><br /></td></tr>
 <tr class="separator:ga2f0733beefadbc467c42b07722e17975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structSceNpDrmLicense" id="structSceNpDrmLicense"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceNpDrmLicense">&#9670;&nbsp;</a></span>SceNpDrmLicense</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceNpDrmLicense</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gaa830811063298fa0a61b59a02065cadd"></a><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
-<td class="fieldname">
-version</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga265588f8e36782e1dfeffb262ac4cb18"></a><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
-<td class="fieldname">
-version_flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga25ff7086f87e7f591a0720c1314d0ecf"></a><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
-<td class="fieldname">
-license_type</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga5a2b79876eeb30a5bd667a18428c165e"></a><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a></td>
-<td class="fieldname">
-license_flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga6b28682c0aadc9f47dd32e09c0918993"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
-<td class="fieldname">
-account_id</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga7e97786886ca4deddaa4229b9ecd09a1"></a>char</td>
-<td class="fieldname">
-content_id[0x30]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9232dae092ef06b979b7fa0fff555303"></a>char</td>
-<td class="fieldname">
-key_table[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga6dccf97996e94ae88cd3d59c1b5a4d42"></a>char</td>
-<td class="fieldname">
-key1[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gad069418786a0dfd9c9b93369b5ffcd08"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
-<td class="fieldname">
-start_time</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gac179a1f10c40cb4bce0d891be711fa26"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
-<td class="fieldname">
-expiration_time</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gac39e7a7c0e06c031bc194a65439d6dde"></a>char</td>
-<td class="fieldname">
-ecdsa_signature[0x28]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga70dfc5c644506fa41da151e2fdca03d3"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
-<td class="fieldname">
-flags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa6f19a762aed6ba9607d0fbf44a5e531"></a>char</td>
-<td class="fieldname">
-key2[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gadf26b577e0aa6eeb7229dfa6b8182d85"></a>char</td>
-<td class="fieldname">
-unk_0xB0[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gac66bd0c8bd2daaefe4112c7e3bfe6bda"></a>char</td>
-<td class="fieldname">
-open_psid[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga34b87f4ae6ebd266d302648e18e18b9c"></a>char</td>
-<td class="fieldname">
-unk_0xD0[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gae6a04108de5d645201aabc9c886eacb4"></a>char</td>
-<td class="fieldname">
-cmd56_handshake_part[0x14]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga49355a0e7ad25c93b9e4f35aeb5036b4"></a>int</td>
-<td class="fieldname">
-debug_upgradable</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga3a6c415f0484a54b3a78126fce364bec"></a>int</td>
-<td class="fieldname">
-unk_0xF8</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga017dc6813308fe3a7581c0c39ba636e5"></a>int</td>
-<td class="fieldname">
-sku_flag</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga929573a33caeefbf7a20967cd68de9a6"></a>char</td>
-<td class="fieldname">
-rsa_signature[0x100]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structScePsmDrmLicense" id="structScePsmDrmLicense"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structScePsmDrmLicense">&#9670;&nbsp;</a></span>ScePsmDrmLicense</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct ScePsmDrmLicense</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gaa702849c0e07835355f6cb3492bb1f6d"></a>char</td>
-<td class="fieldname">
-magic[0x8]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga6cd92bdb8fc8d8f0f7597a2aaa56b8a7"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-unk1</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga90f13d24adae4ae5944264e209a27920"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-unk2</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga458f16f473ba9d7cd56c47de42e2ab6d"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
-<td class="fieldname">
-account_id</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga3a9f7ec7799c9a6a09505e108e954b7d"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-unk3</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa5957a929c336fa79c26aebc3cd7953d"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-unk4</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gab6043018c6f8df4a844c86c5232dd24c"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
-<td class="fieldname">
-start_time</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gab5f4d2ef0c32e10c698b34a37d5f562b"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
-<td class="fieldname">
-expiration_time</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga6027181b4d7d8248454294e8791fb6d3"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
-<td class="fieldname">
-activation_checksum[0x20]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa398f023e670e50615eb25ccf2cedc18"></a>char</td>
-<td class="fieldname">
-content_id[0x30]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga94096947d95c251c33acb77ee185f056"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
-<td class="fieldname">
-unk5[0x80]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga75dffa4c1de93037285b8c915c63f649"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
-<td class="fieldname">
-unk6[0x20]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga1bed768e3b6273c78c960ac9f95a3989"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
-<td class="fieldname">
-key[0x10]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gae6f9cdeea760b61115cfbb8eb1bd6917"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
-<td class="fieldname">
-signature[0x1D0]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaf4485f3a6750b6372f19ced70d3374d3"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
-<td class="fieldname">
-rsa_signature[0x100]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gab78d2af5626a9b65752bdb6bb255ed36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab78d2af5626a9b65752bdb6bb255ed36">&#9670;&nbsp;</a></span>_sceNpDrmGetRifName()</h2>
@@ -510,7 +259,7 @@ rsa_signature[0x100]</td>
         <tr>
           <td class="memname">int scePsmDrmGetRifKey </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceNpDrmUser.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *&#160;</td>
           <td class="paramname"><em>license_buf</em>, </td>
         </tr>
         <tr>
@@ -675,7 +424,7 @@ rsa_signature[0x100]</td>
 <p>Get license key info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmUser.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">klicense</td><td>- The pointer of klicense output buffer. size is 0x10. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The pointer of flags output. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">sku_flags</td><td>- The pointer of sku flags output. </td></tr>
@@ -777,7 +526,7 @@ rsa_signature[0x100]</td>
 <p>Get license info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmUser.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">license_size</td><td>- The license data size. 0x200 etc </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">check_sign</td><td>- The license signature check flag. if pass 1, do check. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">content_id</td><td>- The pointer of license content_id output buffer. size is 0x30. </td></tr>

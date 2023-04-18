@@ -1,6 +1,6 @@
 var NAVTREEINDEX36 =
 {
-"group__SceKernelDebugKernel.html#gga255042a396ced96bee885071d4afe270af2bbddc21e1ed0a8e36a8b91077489d2":[1,9,1,0,26],
+"group__SceKernelDebugKernel.html#gga255042a396ced96bee885071d4afe270af2bbddc21e1ed0a8e36a8b91077489d2":[4,0,1,2,2,4,17,0],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa212eb7932e00d22251f6320749abd0e2":[4,0,1,2,2,4,15,0],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa212eb7932e00d22251f6320749abd0e2":[1,9,1,0,15,0],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa212eb7932e00d22251f6320749abd0e2":[1,9,1,0,18],
@@ -13,12 +13,12 @@ var NAVTREEINDEX36 =
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9783b197708f88fa3232cf8e28e93ab4":[4,0,1,2,2,4,15,3],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9783b197708f88fa3232cf8e28e93ab4":[1,9,1,0,15,3],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9783b197708f88fa3232cf8e28e93ab4":[1,9,1,0,21],
+"group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9bf2f9989ad0e8a70abe2ae861b07167":[4,0,1,2,2,4,15,1],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9bf2f9989ad0e8a70abe2ae861b07167":[1,9,1,0,15,1],
 "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9bf2f9989ad0e8a70abe2ae861b07167":[1,9,1,0,19],
-"group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa9bf2f9989ad0e8a70abe2ae861b07167":[4,0,1,2,2,4,15,1],
-"group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a07dad4e76ac8f39604db92918c70ce8b":[4,0,1,2,2,4,16,2],
 "group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a07dad4e76ac8f39604db92918c70ce8b":[1,9,1,0,16,2],
 "group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a07dad4e76ac8f39604db92918c70ce8b":[1,9,1,0,25],
+"group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a07dad4e76ac8f39604db92918c70ce8b":[4,0,1,2,2,4,16,2],
 "group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a668ce046d6bd3a3f081efc9125ea351d":[4,0,1,2,2,4,16,1],
 "group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a668ce046d6bd3a3f081efc9125ea351d":[1,9,1,0,16,1],
 "group__SceKernelDebugKernel.html#ggad2f40116611467bc1896df0e88d4c909a668ce046d6bd3a3f081efc9125ea351d":[1,9,1,0,24],
