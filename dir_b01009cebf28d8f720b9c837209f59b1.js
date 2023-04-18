@@ -77,6 +77,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "types.h", "psp2_2types_8h.html", null ],
     [ "udcd.h", "psp2_2udcd_8h.html", "psp2_2udcd_8h" ],
     [ "update.h", "update_8h.html", "update_8h" ],
+    [ "usbaudioin.h", "usbaudioin_8h.html", "usbaudioin_8h" ],
     [ "usbd.h", "psp2_2usbd_8h.html", "psp2_2usbd_8h" ],
     [ "usbserial.h", "psp2_2usbserial_8h.html", "psp2_2usbserial_8h" ],
     [ "usbserv.h", "psp2_2usbserv_8h.html", "psp2_2usbserv_8h" ],

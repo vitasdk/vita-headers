@@ -436,6 +436,8 @@ var annotated_dup =
     [ "SceUdcdWaitParam", "group__SceUdcdUser.html#structSceUdcdWaitParam", "group__SceUdcdUser_structSceUdcdWaitParam" ],
     [ "SceUIDSysrootObject", "group__SceKernelSysrootKernel.html#structSceUIDSysrootObject", "group__SceKernelSysrootKernel_structSceUIDSysrootObject" ],
     [ "SceUIDSysrootObject.init_callback_slot", "group__SceKernelSysrootKernel.html#structSceUIDSysrootObject_8init__callback__slot", "group__SceKernelSysrootKernel_structSceUIDSysrootObject_8init__callback__slot" ],
+    [ "SceUsbAudioInDeviceInfo", "group__SceUsbAudioUser.html#structSceUsbAudioInDeviceInfo", "group__SceUsbAudioUser_structSceUsbAudioInDeviceInfo" ],
+    [ "SceUsbAudioInDeviceListItem", "group__SceUsbAudioUser.html#structSceUsbAudioInDeviceListItem", "group__SceUsbAudioUser_structSceUsbAudioInDeviceListItem" ],
     [ "SceUsbdAttachCompositeParam", "group__SceUsbdUser.html#structSceUsbdAttachCompositeParam", "group__SceUsbdUser_structSceUsbdAttachCompositeParam" ],
     [ "SceUsbdCompositeDriver", "group__SceUsbdKernel.html#structSceUsbdCompositeDriver", "group__SceUsbdKernel_structSceUsbdCompositeDriver" ],
     [ "SceUsbdConfigurationDescriptor", "group__SceUsbdUser.html#structSceUsbdConfigurationDescriptor", "group__SceUsbdUser_structSceUsbdConfigurationDescriptor" ],
