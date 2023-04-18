@@ -83,7 +83,7 @@ var group__SceAppMgrUser =
     [ "sceAppMgrLaunchAppByName2", "group__SceAppMgrUser.html#ga372b7edb499d710ac40016b9012511cc", null ],
     [ "sceAppMgrLaunchAppByName", "group__SceAppMgrUser.html#ga82c0300dbe6b56a7a6bb44bfb07f3300", null ],
     [ "sceAppMgrLaunchAppByName2ForShell", "group__SceAppMgrUser.html#gab865fbedcc3772e21b221cf1d5862966", null ],
-    [ "sceAppMgrGameDataMount", "group__SceAppMgrUser.html#ga9f86fe3ca28ac18aef3aa12eeb3cc50a", null ],
+    [ "sceAppMgrGameDataMount", "group__SceAppMgrUser.html#gaf58df3cfeaff6dca6bb3034e2df0740f", null ],
     [ "sceAppMgrAppDataMount", "group__SceAppMgrUser.html#ga8f57db4848090ff5bca28df9a0d17d56", null ],
     [ "sceAppMgrAppDataMountById", "group__SceAppMgrUser.html#gaaae990bce760d4f3c78985955ee547e5", null ],
     [ "sceAppMgrAppParamGetString", "group__SceAppMgrUser.html#ga8b99e3239585b530b0f4aa295d143601", null ],
