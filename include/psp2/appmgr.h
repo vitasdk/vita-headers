@@ -367,15 +367,15 @@ SceUID sceAppMgrLaunchAppByName2ForShell(const char *name, const char *param, Sc
 /**
  * Mount game data
  *
- * @param[in] path - ux0:app/TITLEID
- * @param[in] unk1 - Unknown, set 0
- * @param[in] unk2 - Unknown, set 0
- * @param[in] mount_point - Mountpoint to use
+ * @param[in] app_path    - example : "ux0:/app/${TITLEID}"
+ * @param[in] patch_path  - example : "ux0:/patch/${TITLEID}", "invalid:"
+ * @param[in] rif_path    - If NULL the system will automatically search the rif path. example : "ux0:/license/app/${TITLEID}/${HEX}.rif"
+ * @param[in] mount_point - Mountpoint output
  *
  * @return 0 on success, < 0 on error.
  *
  */
-int sceAppMgrGameDataMount(const char *path, int unk1, int unk2, const char *mount_point);
+int sceAppMgrGameDataMount(const char *app_path, const char *patch_path, const char *rif_path, char *mount_point);
 
 /**
  * Mount application data
