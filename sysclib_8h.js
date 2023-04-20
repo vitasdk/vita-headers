@@ -1,6 +1,16 @@
 var sysclib_8h =
 [
     [ "SceSysclibPrntCallback", "group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77", null ],
+    [ "SceCTypeFlag", "group__SceSysclibKernel.html#ga7dc4124e45e50b88970c6ed289fb5ea9", [
+      [ "SCE_CTYPE_NONE", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9ab1f38e2965653054557f48964fd45345", null ],
+      [ "SCE_CTYPE_UPPERCASE", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9ae248494cd59616471cabde69ca2be3bc", null ],
+      [ "SCE_CTYPE_LOWERCASE", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a42d5eab10207a28bc8c42505aa4ede98", null ],
+      [ "SCE_CTYPE_NUMBER", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a0bbe1e047f7acd6badb87332adee15b2", null ],
+      [ "SCE_CTYPE_CONTROL", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a4413921aceb62eadc38c6ea5a27579f5", null ],
+      [ "SCE_CTYPE_SYMBOL", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a3dab78e9903a9782584f4d159a859214", null ],
+      [ "SCE_CTYPE_INVISIBLE", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a186799588e3825442ff2b77a300cdc89", null ],
+      [ "SCE_CTYPE_HEX_CASE", "group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a00ce0ceca3da4e378eab848a3011e923", null ]
+    ] ],
     [ "memset", "group__SceSysclibKernel.html#ga9cd53cf55b51a961d112d65dc206163d", null ],
     [ "memcpy", "group__SceSysclibKernel.html#gaaa9a3c56c10233a05c3e455d9235a5b5", null ],
     [ "memmove", "group__SceSysclibKernel.html#ga6a102752d8338ea4ec44a968c85d0557", null ],
@@ -15,6 +25,13 @@ var sysclib_8h =
     [ "strncpy", "group__SceSysclibKernel.html#gadcf5444a8769d2e78fe515237c3c64b3", null ],
     [ "snprintf", "group__SceSysclibKernel.html#ga70c3a77badf767c803f3e21dd8b6e76d", null ],
     [ "vsnprintf", "group__SceSysclibKernel.html#ga2f4a06a03cfc388e615508ed1541d4e0", null ],
+    [ "look_ctype_table", "group__SceSysclibKernel.html#ga52178dad5bd0755afdcf01eb86ad0138", null ],
+    [ "tolower", "group__SceSysclibKernel.html#ga0b1bc56d030f74d9bce900d252db8351", null ],
+    [ "toupper", "group__SceSysclibKernel.html#ga20432919c6ab1d393542e4252b68cb5e", null ],
+    [ "timingsafe_memcmp", "group__SceSysclibKernel.html#ga29134994af2d035df7881a7dbae19b39", null ],
+    [ "strtol", "group__SceSysclibKernel.html#gaeafd194f4f11d5efd00480ac4b3fe497", null ],
+    [ "strtoll", "group__SceSysclibKernel.html#ga11dd8f0251a1b6e05a9b4a031a1129c2", null ],
+    [ "strtoul", "group__SceSysclibKernel.html#ga27d4151ef962d7cd272ce527560cbb19", null ],
     [ "__memcpy_chk", "group__SceSysclibKernel.html#ga09258ebf752178ed64a321111a07742e", null ],
     [ "__memset_chk", "group__SceSysclibKernel.html#ga3e8edb477cb804d6a1ddd606f30d1283", null ],
     [ "__memmove_chk", "group__SceSysclibKernel.html#ga2eb8e55c7f506ba7a711978380ac4642", null ],

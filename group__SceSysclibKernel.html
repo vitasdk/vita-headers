@@ -134,6 +134,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga70c3a77badf767c803f3e21dd8b6e76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f4a06a03cfc388e615508ed1541d4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga2f4a06a03cfc388e615508ed1541d4e0">vsnprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
 <tr class="separator:ga2f4a06a03cfc388e615508ed1541d4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52178dad5bd0755afdcf01eb86ad0138"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga52178dad5bd0755afdcf01eb86ad0138">look_ctype_table</a> (char ch)</td></tr>
+<tr class="separator:ga52178dad5bd0755afdcf01eb86ad0138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b1bc56d030f74d9bce900d252db8351"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga0b1bc56d030f74d9bce900d252db8351">tolower</a> (char ch)</td></tr>
+<tr class="separator:ga0b1bc56d030f74d9bce900d252db8351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20432919c6ab1d393542e4252b68cb5e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga20432919c6ab1d393542e4252b68cb5e">toupper</a> (char ch)</td></tr>
+<tr class="separator:ga20432919c6ab1d393542e4252b68cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29134994af2d035df7881a7dbae19b39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga29134994af2d035df7881a7dbae19b39">timingsafe_memcmp</a> (const void *s1, const void *s2, int n)</td></tr>
+<tr class="separator:ga29134994af2d035df7881a7dbae19b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeafd194f4f11d5efd00480ac4b3fe497"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gaeafd194f4f11d5efd00480ac4b3fe497">strtol</a> (const char *str, char **endptr, int base)</td></tr>
+<tr class="separator:gaeafd194f4f11d5efd00480ac4b3fe497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11dd8f0251a1b6e05a9b4a031a1129c2"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga11dd8f0251a1b6e05a9b4a031a1129c2">strtoll</a> (const char *str, char **endptr, int base)</td></tr>
+<tr class="separator:ga11dd8f0251a1b6e05a9b4a031a1129c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27d4151ef962d7cd272ce527560cbb19"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga27d4151ef962d7cd272ce527560cbb19">strtoul</a> (const char *str, char **endptr, int base)</td></tr>
+<tr class="separator:ga27d4151ef962d7cd272ce527560cbb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga09258ebf752178ed64a321111a07742e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga09258ebf752178ed64a321111a07742e">__memcpy_chk</a> (void *dst, const void *src, unsigned int len, unsigned int dst_len)</td></tr>
 <tr class="separator:ga09258ebf752178ed64a321111a07742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e8edb477cb804d6a1ddd606f30d1283"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga3e8edb477cb804d6a1ddd606f30d1283">__memset_chk</a> (void *dst, int ch, unsigned int len, unsigned int dst_len)</td></tr>
@@ -165,6 +179,31 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga7dc4124e45e50b88970c6ed289fb5ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7dc4124e45e50b88970c6ed289fb5ea9">&#9670;&nbsp;</a></span>SceCTypeFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceSysclibKernel.html#ga7dc4124e45e50b88970c6ed289fb5ea9">SceCTypeFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9ab1f38e2965653054557f48964fd45345"></a>SCE_CTYPE_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9ae248494cd59616471cabde69ca2be3bc"></a>SCE_CTYPE_UPPERCASE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9a42d5eab10207a28bc8c42505aa4ede98"></a>SCE_CTYPE_LOWERCASE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9a0bbe1e047f7acd6badb87332adee15b2"></a>SCE_CTYPE_NUMBER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9a4413921aceb62eadc38c6ea5a27579f5"></a>SCE_CTYPE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9a3dab78e9903a9782584f4d159a859214"></a>SCE_CTYPE_SYMBOL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9a186799588e3825442ff2b77a300cdc89"></a>SCE_CTYPE_INVISIBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7dc4124e45e50b88970c6ed289fb5ea9a00ce0ceca3da4e378eab848a3011e923"></a>SCE_CTYPE_HEX_CASE&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -732,6 +771,196 @@ Typedefs</h2></td></tr>
           <td></td>
           <td class="paramtype">va_list&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga52178dad5bd0755afdcf01eb86ad0138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52178dad5bd0755afdcf01eb86ad0138">&#9670;&nbsp;</a></span>look_ctype_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char look_ctype_table </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0b1bc56d030f74d9bce900d252db8351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b1bc56d030f74d9bce900d252db8351">&#9670;&nbsp;</a></span>tolower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char tolower </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga20432919c6ab1d393542e4252b68cb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20432919c6ab1d393542e4252b68cb5e">&#9670;&nbsp;</a></span>toupper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char toupper </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga29134994af2d035df7881a7dbae19b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29134994af2d035df7881a7dbae19b39">&#9670;&nbsp;</a></span>timingsafe_memcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int timingsafe_memcmp </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeafd194f4f11d5efd00480ac4b3fe497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeafd194f4f11d5efd00480ac4b3fe497">&#9670;&nbsp;</a></span>strtol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long strtol </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>endptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga11dd8f0251a1b6e05a9b4a031a1129c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11dd8f0251a1b6e05a9b4a031a1129c2">&#9670;&nbsp;</a></span>strtoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long strtoll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>endptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga27d4151ef962d7cd272ce527560cbb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27d4151ef962d7cd272ce527560cbb19">&#9670;&nbsp;</a></span>strtoul()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long strtoul </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>endptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

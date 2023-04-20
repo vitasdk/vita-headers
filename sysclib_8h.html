@@ -74,6 +74,7 @@ $(document).ready(function(){initNavTree('sysclib_8h.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sysclib.h File Reference</div>  </div>
@@ -87,6 +88,22 @@ $(document).ready(function(){initNavTree('sysclib_8h.html',''); initResizable();
 Typedefs</h2></td></tr>
 <tr class="memitem:gafdde78aac4a9b53e6caa23b79018fe77"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77">SceSysclibPrntCallback</a>) (void *argp, int ch)</td></tr>
 <tr class="separator:gafdde78aac4a9b53e6caa23b79018fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga7dc4124e45e50b88970c6ed289fb5ea9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga7dc4124e45e50b88970c6ed289fb5ea9">SceCTypeFlag</a> { <br />
+&#160;&#160;<a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9ab1f38e2965653054557f48964fd45345">SCE_CTYPE_NONE</a> = 0
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9ae248494cd59616471cabde69ca2be3bc">SCE_CTYPE_UPPERCASE</a> = 1
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a42d5eab10207a28bc8c42505aa4ede98">SCE_CTYPE_LOWERCASE</a> = 2
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a0bbe1e047f7acd6badb87332adee15b2">SCE_CTYPE_NUMBER</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a4413921aceb62eadc38c6ea5a27579f5">SCE_CTYPE_CONTROL</a> = 8
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a3dab78e9903a9782584f4d159a859214">SCE_CTYPE_SYMBOL</a> = 0x10
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a186799588e3825442ff2b77a300cdc89">SCE_CTYPE_INVISIBLE</a> = 0x20
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a00ce0ceca3da4e378eab848a3011e923">SCE_CTYPE_HEX_CASE</a> = 0x40
+<br />
+ }</td></tr>
+<tr class="separator:ga7dc4124e45e50b88970c6ed289fb5ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -130,6 +147,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga70c3a77badf767c803f3e21dd8b6e76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f4a06a03cfc388e615508ed1541d4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga2f4a06a03cfc388e615508ed1541d4e0">vsnprintf</a> (char *dst, unsigned int max, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list arg)</td></tr>
 <tr class="separator:ga2f4a06a03cfc388e615508ed1541d4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52178dad5bd0755afdcf01eb86ad0138"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga52178dad5bd0755afdcf01eb86ad0138">look_ctype_table</a> (char ch)</td></tr>
+<tr class="separator:ga52178dad5bd0755afdcf01eb86ad0138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b1bc56d030f74d9bce900d252db8351"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga0b1bc56d030f74d9bce900d252db8351">tolower</a> (char ch)</td></tr>
+<tr class="separator:ga0b1bc56d030f74d9bce900d252db8351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20432919c6ab1d393542e4252b68cb5e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga20432919c6ab1d393542e4252b68cb5e">toupper</a> (char ch)</td></tr>
+<tr class="separator:ga20432919c6ab1d393542e4252b68cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29134994af2d035df7881a7dbae19b39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga29134994af2d035df7881a7dbae19b39">timingsafe_memcmp</a> (const void *s1, const void *s2, int n)</td></tr>
+<tr class="separator:ga29134994af2d035df7881a7dbae19b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeafd194f4f11d5efd00480ac4b3fe497"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gaeafd194f4f11d5efd00480ac4b3fe497">strtol</a> (const char *str, char **endptr, int base)</td></tr>
+<tr class="separator:gaeafd194f4f11d5efd00480ac4b3fe497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11dd8f0251a1b6e05a9b4a031a1129c2"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga11dd8f0251a1b6e05a9b4a031a1129c2">strtoll</a> (const char *str, char **endptr, int base)</td></tr>
+<tr class="separator:ga11dd8f0251a1b6e05a9b4a031a1129c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27d4151ef962d7cd272ce527560cbb19"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga27d4151ef962d7cd272ce527560cbb19">strtoul</a> (const char *str, char **endptr, int base)</td></tr>
+<tr class="separator:ga27d4151ef962d7cd272ce527560cbb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga09258ebf752178ed64a321111a07742e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga09258ebf752178ed64a321111a07742e">__memcpy_chk</a> (void *dst, const void *src, unsigned int len, unsigned int dst_len)</td></tr>
 <tr class="separator:ga09258ebf752178ed64a321111a07742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e8edb477cb804d6a1ddd606f30d1283"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga3e8edb477cb804d6a1ddd606f30d1283">__memset_chk</a> (void *dst, int ch, unsigned int len, unsigned int dst_len)</td></tr>
