@@ -15,6 +15,7 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "idstorage.h", "idstorage_8h.html", "idstorage_8h" ],
     [ "npdrm.h", "psp2kern_2npdrm_8h.html", "psp2kern_2npdrm_8h" ],
     [ "pfsmgr.h", "pfsmgr_8h.html", "pfsmgr_8h" ],
+    [ "post_ss_mgr.h", "post__ss__mgr_8h.html", "post__ss__mgr_8h" ],
     [ "power.h", "psp2kern_2power_8h.html", "psp2kern_2power_8h" ],
     [ "registrymgr.h", "psp2kern_2registrymgr_8h.html", "psp2kern_2registrymgr_8h" ],
     [ "sblacmgr.h", "psp2kern_2sblacmgr_8h.html", "psp2kern_2sblacmgr_8h" ],
