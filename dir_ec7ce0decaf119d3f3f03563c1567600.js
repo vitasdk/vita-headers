@@ -22,6 +22,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "sysclib.h", "sysclib_8h.html", "sysclib_8h" ],
     [ "sysmem.h", "ern_2kernel_2sysmem_8h.html", "ern_2kernel_2sysmem_8h" ],
     [ "sysroot.h", "sysroot_8h.html", "sysroot_8h" ],
+    [ "systimer.h", "systimer_8h.html", "systimer_8h" ],
     [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", null ],
     [ "utils.h", "psp2kern_2kernel_2utils_8h.html", "psp2kern_2kernel_2utils_8h" ]
 ];
