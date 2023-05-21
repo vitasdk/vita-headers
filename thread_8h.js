@@ -36,5 +36,6 @@ var thread_8h =
     [ "ksceKernelChangeThreadPriority", "group__SceThreadMgrKernel.html#ga527485f66d7aaae348c0cd99fc9f4518", null ],
     [ "ksceKernelGetThreadId", "group__SceThreadMgrKernel.html#ga65330c74812c46e94404fcccf829775b", null ],
     [ "ksceKernelGetThreadCurrentPriority", "group__SceThreadMgrKernel.html#ga34336a88354c03f36fdb8938b249b4e4", null ],
-    [ "ksceKernelGetThreadStackFreeSize", "group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305", null ]
+    [ "ksceKernelGetThreadStackFreeSize", "group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305", null ],
+    [ "ksceKernelGetThreadInfo", "group__SceThreadMgrKernel.html#ga4d68f3866074d95916bea68bf6147eff", null ]
 ];

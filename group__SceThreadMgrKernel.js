@@ -5,6 +5,8 @@ var group__SceThreadMgrKernel =
     [ "SceKernelCallbackFunction", "group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714", null ],
     [ "ArmCpuRegisters", "group__SceThreadMgrKernel.html#ga075dfeb7c0e77ac6e15c051ca52bbc53", null ],
     [ "ThreadCpuRegisters", "group__SceThreadMgrKernel.html#gad5b161408ba064c20157367b7be98e6e", null ],
+    [ "SceKernelThreadInfoInternal", "group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46", null ],
+    [ "SceKernelThreadVfpRegister", "group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelWorkQueueWorkFunction", "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1", null ],
     [ "SceEventFlagAttributes", "group__SceThreadMgrKernel.html#ga32240cfc9096477a62cfad5ee4768791", [
@@ -129,6 +131,8 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelIsThreadDebugSuspended", "group__SceThreadMgrKernel.html#ga18529a0737075d78b2901f9a3f773a38", null ],
     [ "ksceKernelDebugSuspendThread", "group__SceThreadMgrKernel.html#ga413f2176c2d24a836792f900c86a37cc", null ],
     [ "ksceKernelDebugResumeThread", "group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270", null ],
+    [ "ksceKernelGetThreadInfoForDebugger", "group__SceThreadMgrKernel.html#gac29e4659eed3ac6892c929750653a7a1", null ],
+    [ "ksceKernelGetVfpRegisterForDebugger", "group__SceThreadMgrKernel.html#gab73111e1e8d6288d8849e07738bdaeeb", null ],
     [ "__attribute__", "group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a", null ],
     [ "ksceKernelGetEventFlagInfo", "group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3", null ],
     [ "ksceKernelCreateEventFlag", "group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9", null ],
@@ -188,5 +192,6 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelGetThreadId", "group__SceThreadMgrKernel.html#ga65330c74812c46e94404fcccf829775b", null ],
     [ "ksceKernelGetThreadCurrentPriority", "group__SceThreadMgrKernel.html#ga34336a88354c03f36fdb8938b249b4e4", null ],
     [ "ksceKernelGetThreadStackFreeSize", "group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305", null ],
+    [ "ksceKernelGetThreadInfo", "group__SceThreadMgrKernel.html#ga4d68f3866074d95916bea68bf6147eff", null ],
     [ "ksceKernelEnqueueWorkQueue", "group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca", null ]
 ];

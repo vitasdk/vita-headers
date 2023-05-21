@@ -275,6 +275,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa946a49c521eec223d903695a70e8270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">ksceKernelDebugResumeThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int status)</td></tr>
 <tr class="memdesc:gaa946a49c521eec223d903695a70e8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug resume a thread.  <a href="group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270">More...</a><br /></td></tr>
 <tr class="separator:gaa946a49c521eec223d903695a70e8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac29e4659eed3ac6892c929750653a7a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gac29e4659eed3ac6892c929750653a7a1">ksceKernelGetThreadInfoForDebugger</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int a2, <a class="el" href="group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46">SceKernelThreadInfoInternal</a> *pInfo)</td></tr>
+<tr class="separator:gac29e4659eed3ac6892c929750653a7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab73111e1e8d6288d8849e07738bdaeeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab73111e1e8d6288d8849e07738bdaeeb">ksceKernelGetVfpRegisterForDebugger</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a> *pVfpRegister)</td></tr>
+<tr class="separator:gab73111e1e8d6288d8849e07738bdaeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a">__attribute__</a> ((deprecated(&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;))) SceKernelFaultingProcessInfo</td></tr>
 <tr class="separator:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">ksceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
@@ -445,6 +449,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7bb5adf3b9752516fc3f36e03c6e1305"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305">ksceKernelGetThreadStackFreeSize</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>
 <tr class="memdesc:ga7bb5adf3b9752516fc3f36e03c6e1305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free stack size for a thread.  <a href="group__SceThreadMgrKernel.html#ga7bb5adf3b9752516fc3f36e03c6e1305">More...</a><br /></td></tr>
 <tr class="separator:ga7bb5adf3b9752516fc3f36e03c6e1305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d68f3866074d95916bea68bf6147eff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4d68f3866074d95916bea68bf6147eff">ksceKernelGetThreadInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a> *info)</td></tr>
+<tr class="memdesc:ga4d68f3866074d95916bea68bf6147eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread info by thread id.  <a href="group__SceThreadMgrKernel.html#ga4d68f3866074d95916bea68bf6147eff">More...</a><br /></td></tr>
+<tr class="separator:ga4d68f3866074d95916bea68bf6147eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca">ksceKernelEnqueueWorkQueue</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, const char *name, <a class="el" href="group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1">SceKernelWorkQueueWorkFunction</a> work, void *args)</td></tr>
 <tr class="memdesc:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue work to a workqueue.  <a href="group__SceThreadMgrKernel.html#ga8e723f29b9444f2c43a1f752208dd4ca">More...</a><br /></td></tr>
 <tr class="separator:ga8e723f29b9444f2c43a1f752208dd4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -458,6 +465,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga075dfeb7c0e77ac6e15c051ca52bbc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5b161408ba064c20157367b7be98e6e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">SceThreadCpuRegisters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gad5b161408ba064c20157367b7be98e6e">ThreadCpuRegisters</a></td></tr>
 <tr class="separator:gad5b161408ba064c20157367b7be98e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e4c3d15043d32e5cb80b318d5671e46"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46">SceKernelThreadInfoInternal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46">SceKernelThreadInfoInternal</a></td></tr>
+<tr class="separator:ga9e4c3d15043d32e5cb80b318d5671e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5bc740c2e38b3c24543e16c37dbd287"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a></td></tr>
+<tr class="separator:gab5bc740c2e38b3c24543e16c37dbd287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaed1c8b50410fdccf5d5dc00563499662"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td></tr>
 <tr class="separator:gaed1c8b50410fdccf5d5dc00563499662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98f4e3c95a076580a1af53c612b1dfc1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1">SceKernelWorkQueueWorkFunction</a>) (void *args)</td></tr>
@@ -1468,7 +1479,7 @@ Attributes. </td></tr>
 <div class="textblock"><p>Structure to hold the status information for a thread. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591" title="Get the status information for the specified thread.">sceKernelGetThreadInfo</a></dd>
 <dd>
-ksceKernelGetThreadInfo </dd></dl>
+<a class="el" href="group__SceThreadMgrKernel.html#ga4d68f3866074d95916bea68bf6147eff" title="Get the thread info by thread id.">ksceKernelGetThreadInfo</a> </dd></dl>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -1841,6 +1852,34 @@ Set of registers used for kernel mode. </td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">SceThreadCpuRegisters</a> <a class="el" href="group__SceThreadMgrKernel.html#gad5b161408ba064c20157367b7be98e6e">ThreadCpuRegisters</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9e4c3d15043d32e5cb80b318d5671e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e4c3d15043d32e5cb80b318d5671e46">&#9670;&nbsp;</a></span>SceKernelThreadInfoInternal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46">SceKernelThreadInfoInternal</a> <a class="el" href="group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46">SceKernelThreadInfoInternal</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab5bc740c2e38b3c24543e16c37dbd287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5bc740c2e38b3c24543e16c37dbd287">&#9670;&nbsp;</a></span>SceKernelThreadVfpRegister</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a> <a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2723,6 +2762,68 @@ Set of registers used for kernel mode. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success, else &lt;0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac29e4659eed3ac6892c929750653a7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac29e4659eed3ac6892c929750653a7a1">&#9670;&nbsp;</a></span>ksceKernelGetThreadInfoForDebugger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetThreadInfoForDebugger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#ga9e4c3d15043d32e5cb80b318d5671e46">SceKernelThreadInfoInternal</a> *&#160;</td>
+          <td class="paramname"><em>pInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab73111e1e8d6288d8849e07738bdaeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab73111e1e8d6288d8849e07738bdaeeb">&#9670;&nbsp;</a></span>ksceKernelGetVfpRegisterForDebugger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetVfpRegisterForDebugger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a> *&#160;</td>
+          <td class="paramname"><em>pVfpRegister</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4955,6 +5056,44 @@ Set of registers used for kernel mode. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The free size. </dd></dl>
+
+</div>
+</div>
+<a id="ga4d68f3866074d95916bea68bf6147eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d68f3866074d95916bea68bf6147eff">&#9670;&nbsp;</a></span>ksceKernelGetThreadInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetThreadInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the thread info by thread id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thid</td><td>- The thread id for get info. </td></tr>
+    <tr><td class="paramname">info</td><td>- The info output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
 
 </div>
 </div>
