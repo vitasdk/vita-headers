@@ -243,6 +243,16 @@ int ksceKernelGetThreadCurrentPriority(void);
  */
 int ksceKernelGetThreadStackFreeSize(SceUID thid);
 
+/**
+ * Get the thread info by thread id.
+ *
+ * @param thid - The thread id for get info.
+ * @param info - The info output.
+ *
+ * @return < 0 on error.
+ */
+int ksceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info);
+
 
 #ifdef __cplusplus
 }
