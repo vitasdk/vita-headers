@@ -63,6 +63,10 @@ typedef struct SceKernelThreadContextInfo {
 	SceUID thread_id;   //<! Thread ID of the thread scheduled on this CPU
 } SceKernelThreadContextInfo;
 
+// TODO: Add this by any somehow. this struct is very big.
+typedef struct SceKernelThreadInfoInternal SceKernelThreadInfoInternal;
+typedef struct SceKernelThreadVfpRegister SceKernelThreadVfpRegister;
+
 
 /**
  * @brief       Retrieve a list of all threads belonging to a process.
@@ -157,6 +161,9 @@ int ksceKernelDebugSuspendThread(SceUID thid, int status);
  */
 int ksceKernelDebugResumeThread(SceUID thid, int status);
 
+int ksceKernelGetThreadInfoForDebugger(SceUID thid, int a2, SceKernelThreadInfoInternal *pInfo);
+int ksceKernelGetVfpRegisterForDebugger(SceUID thid, SceKernelThreadVfpRegister *pVfpRegister);
+
 
 /* For backwards compatibility */
 typedef struct __attribute__((deprecated("This structure has been replaced by SceKernelThreadContextInfo"))) SceKernelFaultingProcessInfo {
@@ -165,6 +172,7 @@ typedef struct __attribute__((deprecated("This structure has been replaced by Sc
 } SceKernelFaultingProcessInfo;
 
 #define ksceKernelGetFaultingProcessInfo(info) ksceKernelGetThreadContextInfo((SceKernelThreadContextInfo*)info)
+
 
 #ifdef __cplusplus
 }
