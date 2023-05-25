@@ -19,8 +19,7 @@ extern "C" {
 #if defined(_MSC_VER)
 #define SCE_ALIGN(x) __declspec(align(x))
 #define SCE_DEPRECATED(name) __declspec(deprecated) name
-#warning "TODO : impl good SCE_DEPRECATED_EX in here"
-#define SCE_DEPRECATED_EX(name) __declspec(deprecated) name
+#define SCE_DEPRECATED_EX(name, __comment__) __declspec(deprecated(__comment__)) name
 #else
 #if defined(__GNUC__)
 #define SCE_ALIGN(x) __attribute__ ((aligned(x)))
