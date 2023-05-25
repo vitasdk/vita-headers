@@ -1,5 +1,7 @@
 var NAVTREEINDEX87 =
 {
+"group__kernel.html":[1,7],
+"group__update.html":[1,8],
 "gxm_8h.html":[4,0,1,0,25],
 "gxm_8h_source.html":[4,0,1,0,25],
 "gxt_8h.html":[4,0,1,0,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX87 =
 "stdc_8h.html":[4,0,1,0,4,2],
 "stdc_8h_source.html":[4,0,1,0,4,2],
 "suspend_8h.html":[4,0,1,2,2,18],
-"suspend_8h_source.html":[4,0,1,2,2,18],
-"sysclib_8h.html":[4,0,1,2,2,19],
-"sysclib_8h_source.html":[4,0,1,2,2,19]
+"suspend_8h_source.html":[4,0,1,2,2,18]
 };

@@ -300,6 +300,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeef2a3961f1b1ea68057a05003113404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeef2a3961f1b1ea68057a05003113404">ksceKernelFindMemBlockByAddrForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const void *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="memdesc:gaeef2a3961f1b1ea68057a05003113404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the SceUID of a memory block for a PID.  <a href="group__SceSysmemKernel.html#gaeef2a3961f1b1ea68057a05003113404">More...</a><br /></td></tr>
 <tr class="separator:gaeef2a3961f1b1ea68057a05003113404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeeb136543f4bc5f7783ea0f413442eea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeeb136543f4bc5f7783ea0f413442eea">ksceKernelGetMemBlockAllocMapSize</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> memid, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *alloc_map_size)</td></tr>
+<tr class="memdesc:gaeeb136543f4bc5f7783ea0f413442eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the AllocMapSize of a MemBlock.  <a href="group__SceSysmemKernel.html#gaeeb136543f4bc5f7783ea0f413442eea">More...</a><br /></td></tr>
+<tr class="separator:gaeeb136543f4bc5f7783ea0f413442eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43b8bc5f01d6bf319108edababd2e33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33">ksceKernelRemapBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571">SceKernelMemBlockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="memdesc:gad43b8bc5f01d6bf319108edababd2e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the block type.  <a href="group__SceSysmemKernel.html#gad43b8bc5f01d6bf319108edababd2e33">More...</a><br /></td></tr>
 <tr class="separator:gad43b8bc5f01d6bf319108edababd2e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5186,6 +5189,44 @@ attr</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SceUID of the memory block on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaeeb136543f4bc5f7783ea0f413442eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeeb136543f4bc5f7783ea0f413442eea">&#9670;&nbsp;</a></span>ksceKernelGetMemBlockAllocMapSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetMemBlockAllocMapSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>memid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
+          <td class="paramname"><em>alloc_map_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the AllocMapSize of a MemBlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">memid</td><td>- The target uid of the memblock </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">alloc_map_size</td><td>- The output for AllocMapSize</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
