@@ -435,6 +435,7 @@ modules:
           ksceKernelGUIDGetObject: 0x0FC24464
           ksceKernelGetClassForPidForUid: 0xE9728A12
           ksceKernelGetClassForUid: 0xC74B0152
+          ksceKernelGetMemBlockAllocMapSize: 0x78337B62
           ksceKernelGetMemBlockBase: 0xA841EDDA
           ksceKernelGetMemBlockMappedBase: 0x0B1FD5C3
           ksceKernelGetMemBlockPARange: 0x98C15666
@@ -462,7 +463,6 @@ modules:
           ksceKernelMemBlockDecRefCounterAndReleaseUid: 0xF50BDC0C
           ksceKernelMemBlockGetInfoEx: 0x24A99FFF
           ksceKernelMemBlockGetInfoExForVisibilityLevel: 0xA73CFFEF
-          ksceKernelMemBlockGetSomeSize: 0x78337B62
           ksceKernelMemBlockIncRefCounterAndReleaseUid: 0xEAF3849B
           ksceKernelMemBlockRelease: 0x00575B00
           ksceKernelMemBlockType2Memtype: 0x20C811FA
