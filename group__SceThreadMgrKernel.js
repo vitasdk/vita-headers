@@ -133,7 +133,7 @@ var group__SceThreadMgrKernel =
     [ "ksceKernelDebugResumeThread", "group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270", null ],
     [ "ksceKernelGetThreadInfoForDebugger", "group__SceThreadMgrKernel.html#gac29e4659eed3ac6892c929750653a7a1", null ],
     [ "ksceKernelGetVfpRegisterForDebugger", "group__SceThreadMgrKernel.html#gab73111e1e8d6288d8849e07738bdaeeb", null ],
-    [ "__attribute__", "group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a", null ],
+    [ "SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga4ed6273503d1cafbbe88b9ae6be1e1ac", null ],
     [ "ksceKernelGetEventFlagInfo", "group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3", null ],
     [ "ksceKernelCreateEventFlag", "group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9", null ],
     [ "ksceKernelSetEventFlag", "group__SceThreadMgrKernel.html#ga542fabbbac9f0c66091be3b4f29d9955", null ],

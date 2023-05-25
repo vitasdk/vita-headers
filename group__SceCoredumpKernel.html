@@ -93,9 +93,9 @@ $(document).ready(function(){initNavTree('group__SceCoredumpKernel.html',''); in
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gad252716c7e87a79af3b307bc0a31729a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a">SceKernelCoredumpStateUpdateCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td></tr>
+<tr class="memitem:gad252716c7e87a79af3b307bc0a31729a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a">SceKernelCoredumpStateUpdateCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td></tr>
 <tr class="separator:gad252716c7e87a79af3b307bc0a31729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b500348d7c447fba2054cfb237d440b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b">SceKernelCoredumpStateFinishCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td></tr>
+<tr class="memitem:ga8b500348d7c447fba2054cfb237d440b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b">SceKernelCoredumpStateFinishCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td></tr>
 <tr class="separator:ga8b500348d7c447fba2054cfb237d440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -202,7 +202,7 @@ data_0x30</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* SceKernelCoredumpStateUpdateCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td>
+          <td class="memname">typedef int(* SceKernelCoredumpStateUpdateCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,7 +216,7 @@ data_0x30</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* SceKernelCoredumpStateFinishCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td>
+          <td class="memname">typedef int(* SceKernelCoredumpStateFinishCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td>
         </tr>
       </table>
 </div><div class="memdoc">

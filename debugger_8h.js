@@ -15,6 +15,7 @@ var debugger_8h =
     [ "ksceKernelDebugResumeThread", "group__SceThreadMgrKernel.html#gaa946a49c521eec223d903695a70e8270", null ],
     [ "ksceKernelGetThreadInfoForDebugger", "group__SceThreadMgrKernel.html#gac29e4659eed3ac6892c929750653a7a1", null ],
     [ "ksceKernelGetVfpRegisterForDebugger", "group__SceThreadMgrKernel.html#gab73111e1e8d6288d8849e07738bdaeeb", null ],
-    [ "__attribute__", "group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a", null ],
-    [ "SceKernelFaultingProcessInfo", "group__SceThreadMgrKernel.html#ga975e41f1257d6cb3d931a0202b1beced", null ]
+    [ "SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga4ed6273503d1cafbbe88b9ae6be1e1ac", null ],
+    [ "pid", "group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b", null ],
+    [ "faultingThreadId", "group__SceThreadMgrKernel.html#gadd386e22affe05ad938dd41a3956fc85", null ]
 ];

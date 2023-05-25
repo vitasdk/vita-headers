@@ -251,7 +251,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6b2e224643051e6f423e54e0a4ef4825"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga6b2e224643051e6f423e54e0a4ef4825">ksceKernelSignalCondTo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId)</td></tr>
 <tr class="memdesc:ga6b2e224643051e6f423e54e0a4ef4825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals a condition variable to a specific thread waiting for it.  <a href="group__SceThreadMgrKernel.html#ga6b2e224643051e6f423e54e0a4ef4825">More...</a><br /></td></tr>
 <tr class="separator:ga6b2e224643051e6f423e54e0a4ef4825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde">ksceKernelGetThreadIdList</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *ids, int n, int *copy_count)</td></tr>
+<tr class="memitem:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde">ksceKernelGetThreadIdList</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *ids, int n, int *copy_count)</td></tr>
 <tr class="memdesc:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of all threads belonging to a process.  <a href="group__SceThreadMgrKernel.html#ga55cc6fa2f5de0aa59f4d293601f9cbde">More...</a><br /></td></tr>
 <tr class="separator:ga55cc6fa2f5de0aa59f4d293601f9cbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97d25ea194cd3e39c6da0ccabc53629b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga97d25ea194cd3e39c6da0ccabc53629b">ksceKernelGetThreadCpuRegisters</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters">SceThreadCpuRegisters</a> *registers)</td></tr>
@@ -279,8 +279,8 @@ Functions</h2></td></tr>
 <tr class="separator:gac29e4659eed3ac6892c929750653a7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab73111e1e8d6288d8849e07738bdaeeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab73111e1e8d6288d8849e07738bdaeeb">ksceKernelGetVfpRegisterForDebugger</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceThreadMgrKernel.html#gab5bc740c2e38b3c24543e16c37dbd287">SceKernelThreadVfpRegister</a> *pVfpRegister)</td></tr>
 <tr class="separator:gab73111e1e8d6288d8849e07738bdaeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gae6ca2dec878950a59947b0ea81b4b50a">__attribute__</a> ((deprecated(&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;))) SceKernelFaultingProcessInfo</td></tr>
-<tr class="separator:gae6ca2dec878950a59947b0ea81b4b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ed6273503d1cafbbe88b9ae6be1e1ac"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4ed6273503d1cafbbe88b9ae6be1e1ac">SCE_DEPRECATED_EX</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a>, &quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;)</td></tr>
+<tr class="separator:ga4ed6273503d1cafbbe88b9ae6be1e1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">ksceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
 <tr class="memdesc:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get event flags info.  <a href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">More...</a><br /></td></tr>
 <tr class="separator:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga68b5814deefbb9d758999c9e3023aead"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga68b5814deefbb9d758999c9e3023aead">ksceKernelGetProcessIdFromTLS</a> (void)</td></tr>
 <tr class="memdesc:ga68b5814deefbb9d758999c9e3023aead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Process id from Thread Local Storage.  <a href="group__SceThreadMgrKernel.html#ga68b5814deefbb9d758999c9e3023aead">More...</a><br /></td></tr>
 <tr class="separator:ga68b5814deefbb9d758999c9e3023aead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a43696f7d9e0b9165db5cb78df88590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga0a43696f7d9e0b9165db5cb78df88590">ksceKernelSetProcessIdToTLS</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memitem:ga0a43696f7d9e0b9165db5cb78df88590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga0a43696f7d9e0b9165db5cb78df88590">ksceKernelSetProcessIdToTLS</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="memdesc:ga0a43696f7d9e0b9165db5cb78df88590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Process id to Thread Local Storage.  <a href="group__SceThreadMgrKernel.html#ga0a43696f7d9e0b9165db5cb78df88590">More...</a><br /></td></tr>
 <tr class="separator:ga0a43696f7d9e0b9165db5cb78df88590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4b5522c842ee278113a4010d4e72107"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaf4b5522c842ee278113a4010d4e72107">ksceKernelRunWithStack</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> stack_size, int(*to_call)(void *), void *args)</td></tr>
@@ -771,9 +771,9 @@ fpscr</td>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ga96a045ca519586de20c49883d7044edd"></a>union <a class="el" href="group__SceThreadMgrKernel.html#unionSceThreadCpuRegisters_8____unnamed44____">SceThreadCpuRegisters</a></td>
+<a id="gaf19657c5540ddfd4c8973f35f658456e"></a>union <a class="el" href="group__SceThreadMgrKernel.html#unionSceThreadCpuRegisters_8SCE__DEPRECATED__EX">SceThreadCpuRegisters</a></td>
 <td class="fieldname">
-__unnamed__</td>
+SCE_DEPRECATED_EX</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -803,6 +803,35 @@ process_id</td>
 <a id="gaf178ee5c990b003cb91a912270f840ac"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
 <td class="fieldname">
 thread_id</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelFaultingProcessInfo" id="structSceKernelFaultingProcessInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelFaultingProcessInfo">&#9670;&nbsp;</a></span>SceKernelFaultingProcessInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelFaultingProcessInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga89e64d6ac24543f31f7645081269ed42"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+pid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga52792d3d6f0a3b0344ee1dbe786365c4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+faultingThreadId</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -1660,7 +1689,7 @@ cpuInfo[4]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga684cd701f3302a11fed77e661e453d4c"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
+<a id="ga7f68346c697b706f15a907b5e7a797c8"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
 <td class="fieldname">
 cpuInfo[4]</td>
 <td class="fielddoc">
@@ -1722,21 +1751,21 @@ priority</td>
 
 </div>
 </div>
-<a name="unionSceThreadCpuRegisters_8____unnamed44____" id="unionSceThreadCpuRegisters_8____unnamed44____"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#unionSceThreadCpuRegisters_8____unnamed44____">&#9670;&nbsp;</a></span>SceThreadCpuRegisters.__unnamed44__</h2>
+<a name="unionSceThreadCpuRegisters_8SCE__DEPRECATED__EX" id="unionSceThreadCpuRegisters_8SCE__DEPRECATED__EX"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionSceThreadCpuRegisters_8SCE__DEPRECATED__EX">&#9670;&nbsp;</a></span>SceThreadCpuRegisters.SCE_DEPRECATED_EX</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union SceThreadCpuRegisters.__unnamed44__</td>
+          <td class="memname">union SceThreadCpuRegisters.SCE_DEPRECATED_EX</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ab42c5158db1be112f865a544d153f55c"></a><a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters_8____unnamed44_____8____unnamed46____">__unnamed44__</a></td>
+<a id="a7384dfd0b43b293f4b86f50b3646fa37"></a><a class="el" href="group__SceThreadMgrKernel.html#structSceThreadCpuRegisters_8SCE__DEPRECATED__EX_8____unnamed45____">SCE_DEPRECATED_EX</a></td>
 <td class="fieldname">
 __unnamed__</td>
 <td class="fielddoc">
@@ -1751,14 +1780,14 @@ entry[2]</td>
 
 </div>
 </div>
-<a name="structSceThreadCpuRegisters_8____unnamed44_____8____unnamed46____" id="structSceThreadCpuRegisters_8____unnamed44_____8____unnamed46____"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceThreadCpuRegisters_8____unnamed44_____8____unnamed46____">&#9670;&nbsp;</a></span>SceThreadCpuRegisters.__unnamed44__.__unnamed46__</h2>
+<a name="structSceThreadCpuRegisters_8SCE__DEPRECATED__EX_8____unnamed45____" id="structSceThreadCpuRegisters_8SCE__DEPRECATED__EX_8____unnamed45____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceThreadCpuRegisters_8SCE__DEPRECATED__EX_8____unnamed45____">&#9670;&nbsp;</a></span>SceThreadCpuRegisters.SCE_DEPRECATED_EX.__unnamed45__</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceThreadCpuRegisters.__unnamed44__.__unnamed46__</td>
+          <td class="memname">struct SceThreadCpuRegisters.SCE_DEPRECATED_EX.__unnamed45__</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2827,18 +2856,28 @@ Set of registers used for kernel mode. </td></tr>
 
 </div>
 </div>
-<a id="gae6ca2dec878950a59947b0ea81b4b50a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae6ca2dec878950a59947b0ea81b4b50a">&#9670;&nbsp;</a></span>__attribute__()</h2>
+<a id="ga4ed6273503d1cafbbe88b9ae6be1e1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ed6273503d1cafbbe88b9ae6be1e1ac">&#9670;&nbsp;</a></span>SCE_DEPRECATED_EX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct __attribute__ </td>
+          <td class="memname">struct <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a> SCE_DEPRECATED_EX </td>
           <td>(</td>
-          <td class="paramtype">(deprecated(&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;))&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo">SceKernelFaultingProcessInfo</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&quot;This structure has been replaced by <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
