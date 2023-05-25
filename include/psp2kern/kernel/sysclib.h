@@ -159,8 +159,8 @@ int vsnprintf(char *dst, unsigned int max, const char *fmt, va_list arg);
 
 char look_ctype_table(char ch);
 
-char tolower(char ch);
-char toupper(char ch);
+int tolower(int ch);
+int toupper(int ch);
 
 int timingsafe_memcmp(const void *s1, const void *s2, int n);
 
