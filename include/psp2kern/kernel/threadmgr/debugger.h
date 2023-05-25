@@ -166,10 +166,10 @@ int ksceKernelGetVfpRegisterForDebugger(SceUID thid, SceKernelThreadVfpRegister 
 
 
 /* For backwards compatibility */
-typedef struct __attribute__((deprecated("This structure has been replaced by SceKernelThreadContextInfo"))) SceKernelFaultingProcessInfo {
+typedef struct SceKernelFaultingProcessInfo {
     SceUID pid;
     SceUID faultingThreadId;
-} SceKernelFaultingProcessInfo;
+} SCE_DEPRECATED_EX(SceKernelFaultingProcessInfo, "This structure has been replaced by SceKernelThreadContextInfo");
 
 #define ksceKernelGetFaultingProcessInfo(info) ksceKernelGetThreadContextInfo((SceKernelThreadContextInfo*)info)
 
