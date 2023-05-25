@@ -91,6 +91,11 @@ static inline SceInt32 ksceKernelCpuRestoreContext(const SceKernelProcessContext
 	return 0;
 }
 
+// ksceKernelCpuUnrestrictedMemcpy removed from 3.63
+#if PSP2_SDK_VERSION >= 0x3630000 && defined(__USE_SCE_KERNEL_DOMAIN_TEXT_MEMCPY_IMPORT)
+#undef __USE_SCE_KERNEL_DOMAIN_TEXT_MEMCPY_IMPORT
+#endif
+
 /**
  * @brief      MMU permission bypassing memcpy
  *
@@ -100,8 +105,11 @@ static inline SceInt32 ksceKernelCpuRestoreContext(const SceKernelProcessContext
  * @param[in]  src   The source
  * @param[in]  len   The length
  *
- * @return     Zero on success.
+ * @return     SCE_OK on success.
  */
+#if defined(__USE_SCE_KERNEL_DOMAIN_TEXT_MEMCPY_IMPORT)
+int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, SceSize len);
+#else
 static inline int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, SceSize len)
 {
 	int prev_dacr;
@@ -121,6 +129,7 @@ static inline int ksceKernelCpuUnrestrictedMemcpy(void *dst, const void *src, Sc
 	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (prev_dacr));
 	return 0;
 }
+#endif
 
 /**
  * @brief      Returns the CPU ID of the calling processor
