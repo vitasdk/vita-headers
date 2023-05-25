@@ -121,6 +121,16 @@ SceUID ksceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 SceUID ksceKernelFindMemBlockByAddrForPid(SceUID pid, const void *addr, SceSize size);
 
 /**
+ * Get the AllocMapSize of a MemBlock
+ *
+ * @param[in]           memid - The target uid of the memblock
+ * @param[out] alloc_map_size - The output for AllocMapSize
+ *
+ * @return SCE_OK on success, < 0 on error.
+ */
+int ksceKernelGetMemBlockAllocMapSize(SceUID memid, SceSize *alloc_map_size);
+
+/**
  * Changes the block type
  *
  * @param[in] uid - SceUID of the memory block to change
