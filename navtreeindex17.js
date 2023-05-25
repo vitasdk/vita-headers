@@ -1,7 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493":[1,7,15,0,1,0],
 "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493":[1,7,15,0,3],
-"group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493":[4,0,1,2,2,8,1,0],
 "group__SceFcntl.html":[1,4,2],
 "group__SceFcntlKernel.html":[1,4,2,1],
 "group__SceFcntlKernel.html#ga3ef81fe38532500ab3b2385595bd9c67":[1,4,2,1,5],
