@@ -46,50 +46,20 @@ extern "C" {
 void ksceKernelCpuDcacheWritebackRange(const void *ptr, SceSize len);
 
 /**
- * @brief      Save process context
+ * @brief Get the process context
  *
- * @param      context  The context
+ * @param[in]  pid - The target process id
+ * @param[out] ctx - The context output pointer of pointer
  */
-static inline SceInt32 ksceKernelCpuSaveContext(SceKernelProcessContext *context)
-{
-	asm ("mrc p15, 0, %0, c2, c0, 1" : "=r" (context->TTBR1));
-	asm ("mrc p15, 0, %0, c3, c0, 0" : "=r" (context->DACR));
-	asm ("mrc p15, 0, %0, c13, c0, 1" : "=r" (context->CONTEXTIDR));
-	return 0;
-}
+int ksceKernelProcessGetContext(SceUID pid, SceKernelProcessContext **ctx);
 
 /**
- * @brief      Restore process context
+ * @brief Switch the process context
  *
- * @param      context  The context, can be from ::ksceKernelGetPidContext
+ * @param[in]   new_context - The new context
+ * @param[out] prev_context - The prev context
  */
-static inline SceInt32 ksceKernelCpuRestoreContext(const SceKernelProcessContext *context)
-{
-	int cpsr, tmp;
-
-	asm volatile ("mrs %0, cpsr" : "=r" (cpsr));
-
-	if (!(cpsr & 0x80))
-	{
-		asm volatile ("cpsid i" ::: "memory");
-	}
-
-	asm volatile ("mrc p15, 0, %0, c13, c0, 1" : "=r" (tmp));
-	tmp = (tmp & ~0xFF) | context->CONTEXTIDR;
-	asm volatile ("mcr p15, 0, %0, c13, c0, 1" :: "r" (0));
-	asm volatile ("isb" ::: "memory");
-	asm volatile ("mcr p15, 0, %0, c2, c0, 1" :: "r" (context->TTBR1 | 0x4A));
-	asm volatile ("isb" ::: "memory");
-	asm volatile ("mcr p15, 0, %0, c13, c0, 1" :: "r" (tmp));
-	asm volatile ("mcr p15, 0, %0, c3, c0, 0" :: "r" (context->DACR & 0x55555555));
-
-	if (!(cpsr & 0x80))
-	{
-		asm volatile ("cpsie i" ::: "memory");
-	}
-
-	return 0;
-}
+int ksceKernelProcessSwitchContext(const SceKernelProcessContext *new_context, SceKernelProcessContext *prev_context);
 
 // ksceKernelCpuUnrestrictedMemcpy removed from 3.63
 #if PSP2_SDK_VERSION >= 0x3630000 && defined(__USE_SCE_KERNEL_DOMAIN_TEXT_MEMCPY_IMPORT)
@@ -413,6 +383,36 @@ void ksceKernelCorelockLock(SceCorelockContext *ctx, SceUInt32 core);
 void ksceKernelCorelockUnlock(SceCorelockContext *ctx);
 
 /* For backwards compatibility */
+
+/**
+ * @brief      Save process context
+ *
+ * @param      context  The context
+ */
+static inline SceInt32 ksceKernelCpuSaveContext(SceKernelProcessContext *context)
+{
+	int res;
+	SceKernelProcessContext *ctx;
+
+	res = ksceKernelProcessGetContext(SCE_KERNEL_PROCESS_ID_SELF, &ctx);
+	if(res < 0){
+		return res;
+	}
+
+	memcpy(context, ctx, sizeof(*context));
+
+	return 0;
+}
+
+/**
+ * @brief      Restore process context
+ *
+ * @param      context  The context, can be from ::ksceKernelGetPidContext
+ */
+static inline SceInt32 ksceKernelCpuRestoreContext(const SceKernelProcessContext *context)
+{
+	return ksceKernelProcessSwitchContext(context, NULL);
+}
 
 //This name conflicts with the official name for ksceKernelCpuDisableInterrupts and may become deprecated soon
 static inline __attribute__((deprecated("Use ksceKernelSpinlockLowLockCpuSuspendIntr"))) int ksceKernelCpuSuspendIntr(int *addr) {
