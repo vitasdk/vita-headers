@@ -97,6 +97,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga644001baef7abdd596b8d536b62fe3f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga644001baef7abdd596b8d536b62fe3f0">ksceKernelCpuDcacheWritebackRange</a> (const void *ptr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
 <tr class="memdesc:ga644001baef7abdd596b8d536b62fe3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writeback a range of L1 dcache (without L2)  <a href="group__SceCpuKernel.html#ga644001baef7abdd596b8d536b62fe3f0">More...</a><br /></td></tr>
 <tr class="separator:ga644001baef7abdd596b8d536b62fe3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfea04df41dcebba993db73a0901af54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gabfea04df41dcebba993db73a0901af54">ksceKernelProcessGetContext</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> **ctx)</td></tr>
+<tr class="memdesc:gabfea04df41dcebba993db73a0901af54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process context.  <a href="group__SceCpuKernel.html#gabfea04df41dcebba993db73a0901af54">More...</a><br /></td></tr>
+<tr class="separator:gabfea04df41dcebba993db73a0901af54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1973f41f15c2294bb4d2f31f06c96ef1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1">ksceKernelProcessSwitchContext</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> *new_context, <a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> *prev_context)</td></tr>
+<tr class="memdesc:ga1973f41f15c2294bb4d2f31f06c96ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch the process context.  <a href="group__SceCpuKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1">More...</a><br /></td></tr>
+<tr class="separator:ga1973f41f15c2294bb4d2f31f06c96ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4651268bb4ef22633f5b6055061fd64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#gab4651268bb4ef22633f5b6055061fd64">ksceKernelCpuGetCpuId</a> (void)</td></tr>
 <tr class="memdesc:gab4651268bb4ef22633f5b6055061fd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the CPU ID of the calling processor.  <a href="group__SceCpuKernel.html#gab4651268bb4ef22633f5b6055061fd64">More...</a><br /></td></tr>
 <tr class="separator:gab4651268bb4ef22633f5b6055061fd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,6 +343,80 @@ last_wait_core</td>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ptr</td><td>The pointer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabfea04df41dcebba993db73a0901af54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfea04df41dcebba993db73a0901af54">&#9670;&nbsp;</a></span>ksceKernelProcessGetContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelProcessGetContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> **&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the process context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process id </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctx</td><td>- The context output pointer of pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1973f41f15c2294bb4d2f31f06c96ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1973f41f15c2294bb4d2f31f06c96ef1">&#9670;&nbsp;</a></span>ksceKernelProcessSwitchContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelProcessSwitchContext </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> *&#160;</td>
+          <td class="paramname"><em>new_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> *&#160;</td>
+          <td class="paramname"><em>prev_context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Switch the process context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_context</td><td>- The new context </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prev_context</td><td>- The prev context </td></tr>
   </table>
   </dd>
 </dl>

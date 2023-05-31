@@ -3,6 +3,8 @@ var group__SceCpuKernel =
     [ "ENTER_SYSCALL", "group__SceCpuKernel.html#gaa5b75a3c600994738e933102d28329e3", null ],
     [ "EXIT_SYSCALL", "group__SceCpuKernel.html#ga47b24d3d1d69aeea9dc02cf55ccd55c9", null ],
     [ "ksceKernelCpuDcacheWritebackRange", "group__SceCpuKernel.html#ga644001baef7abdd596b8d536b62fe3f0", null ],
+    [ "ksceKernelProcessGetContext", "group__SceCpuKernel.html#gabfea04df41dcebba993db73a0901af54", null ],
+    [ "ksceKernelProcessSwitchContext", "group__SceCpuKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1", null ],
     [ "ksceKernelCpuGetCpuId", "group__SceCpuKernel.html#gab4651268bb4ef22633f5b6055061fd64", null ],
     [ "ksceKernelCpuDisableInterrupts", "group__SceCpuKernel.html#ga5e4ae03a7a343e652e31eb16f815f543", null ],
     [ "ksceKernelCpuEnableInterrupts", "group__SceCpuKernel.html#gaf2d7c1d3c751c3af9b5fc0b2393b665e", null ],
