@@ -70,10 +70,19 @@ modules:
         kernel: false
         nid: 0x3F2B0888
         functions:
+          scePsmDrmGetActInfo: 0xA89653B3
           scePsmDrmGetRifInfo: 0xE31A6220
           scePsmDrmGetRifKey: 0x207A2C53
+          scePsmDrmGetRifName: 0x3E881391
+          scePsmDrmGetRifNameForInstall: 0x0D6470DA
+          scePsmDrmRemoveActData: 0x0E193CBB
       ScePsmDrmForDriver:
         kernel: true
         nid: 0x9F4924F2
         functions:
+          kscePsmDrmGetActInfo: 0xB09003A7
           kscePsmDrmGetRifInfo: 0x984F9017
+          kscePsmDrmGetRifKey: 0x8C8CFD01
+          kscePsmDrmReadActData: 0x791198CE
+          kscePsmDrmRemoveActData: 0x4CD5375C
+          kscePsmDrmWriteActData: 0xCB73E9D3
