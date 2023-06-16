@@ -91,7 +91,7 @@ int ksceNpDrmGetRifInfo(const void *license, SceSize license_size, int check_sig
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceNpDrmEbootSigGenPsp(const char* eboot_pbp_path, const void* eboot_sha256, void* eboot_signature, int sw_version);
+int ksceNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version);
 
 /**
  * Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game
@@ -103,7 +103,7 @@ int ksceNpDrmEbootSigGenPsp(const char* eboot_pbp_path, const void* eboot_sha256
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceNpDrmEbootSigGenPs1(const char* eboot_pbp_path, const void* eboot_sha256, void* eboot_signature, int sw_version);
+int ksceNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version);
 
 #ifdef __cplusplus
 }
