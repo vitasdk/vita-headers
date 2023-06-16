@@ -49,6 +49,19 @@ int ksceNpDrmGetFixedRifName(char *name, SceUInt64 aid);
 int ksceNpDrmGetRifVitaKey(const void *license, void *klicense, int *flags, int *sku_flags, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
 
 /**
+ * Get license key info for a PSP game
+ *
+ * @param[in]  license        - The pointer of license data. see:SceNpDrmLicense
+ * @param[out] klicense       - The pointer of klicense output buffer. size is 0x10.
+ * @param[out] flags          - The pointer of flags output.
+ * @param[out] lic_start_time - The pointer of license start time output.
+ * @param[out] lic_exp_time   - The pointer of license exp time output.
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceNpDrmGetRifPspKey(const void *license, void *klicense, int *flags, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
+
+/**
  * Get license info
  *
  * @param[in]  license         - The pointer of license data. see:SceNpDrmLicense
@@ -67,6 +80,30 @@ int ksceNpDrmGetRifVitaKey(const void *license, void *klicense, int *flags, int 
  * @return 0 on success, < 0 on error.
 */
 int ksceNpDrmGetRifInfo(const void *license, SceSize license_size, int check_sign, char *content_id, SceUInt64 *account_id, int *license_version, int *license_flags, int *flags, int *sku_flags, SceInt64 *lic_start_time, SceInt64 *lic_exp_time, SceUInt64 *flags2);
+
+/**
+ * Generate eboot.pbp signature "__sce_ebootpbp"  for a PSP game
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first 0x1D900 bytes of EBOOT.PBP??
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
+ * @param[in]  sw_version             - The minimum firmware version the signature can be used on. cannot be lower than current firmware
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceNpDrmEbootSigGenPsp(const char* eboot_pbp_path, const void* eboot_sha256, void* eboot_signature, int sw_version);
+
+/**
+ * Generate eboot.pbp signature "__sce_ebootpbp"  for a PS1 game
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first 0x1D900 bytes of EBOOT.PBP??
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
+ * @param[in]  sw_version             - The minimum firmware version the signature can be used on. cannot be lower than current firmware
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceNpDrmEbootSigGenPs1(const char* eboot_pbp_path, const void* eboot_sha256, void* eboot_signature, int sw_version);
 
 #ifdef __cplusplus
 }
