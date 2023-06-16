@@ -16,6 +16,7 @@ extern "C" {
 /** Avalible types for ::ScePromoterUtilityImportParams **/
 typedef enum ScePromoterUtilityPackageType {
 	SCE_PKG_TYPE_VITA               = 0x0001,          //!< PSVita Apps
+	SCE_PKG_TYPE_PSP                = 0x0001,          //!< PSP Games
 	SCE_PKG_TYPE_PSM                = 0x0003,          //!< PlayStation Mobile
 } ScePromoterUtilityPackageType;
 
@@ -27,7 +28,7 @@ typedef struct ScePromoterUtilityLAUpdate {
 
 /** Parameters for scePromoterUtilityPromoteImport() */
 typedef struct ScePromoterUtilityImportParams {
-	char path[0x80]; //!< Install path usually (ux0:/temp/game)
+	char path[0x80]; //!< Install path (ux0:/temp/game on PSM/PSV, ux0:/pspemu/temp/game on PSP)
 	char titleid[0xC]; //!< Game titleid
 	ScePromoterUtilityPackageType type; //!< Package type
 	uint32_t attribute; //!< Additional Attributes (Appears to be 0x1 on PSM content but 0x00 on Vita contents)
