@@ -82,7 +82,7 @@ int ksceNpDrmGetRifPspKey(const void *license, void *klicense, int *flags, SceUI
 int ksceNpDrmGetRifInfo(const void *license, SceSize license_size, int check_sign, char *content_id, SceUInt64 *account_id, int *license_version, int *license_flags, int *flags, int *sku_flags, SceInt64 *lic_start_time, SceInt64 *lic_exp_time, SceUInt64 *flags2);
 
 /**
- * Generate eboot.pbp signature "__sce_ebootpbp"  for a PSP game
+ * Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first 0x1D900 bytes of EBOOT.PBP??
@@ -94,7 +94,7 @@ int ksceNpDrmGetRifInfo(const void *license, SceSize license_size, int check_sig
 int ksceNpDrmEbootSigGenPsp(const char* eboot_pbp_path, const void* eboot_sha256, void* eboot_signature, int sw_version);
 
 /**
- * Generate eboot.pbp signature "__sce_ebootpbp"  for a PS1 game
+ * Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first 0x1D900 bytes of EBOOT.PBP??
