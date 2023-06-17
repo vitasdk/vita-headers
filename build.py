@@ -53,9 +53,10 @@ if __name__ == '__main__':
         if definition_check():
             raise SystemExit(1)
 
-        for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
-            if definition_ordering(yml):
-                raise SystemExit(2)
+        # Name sort is now handled by vita-nid-check
+        # for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
+        #     if definition_ordering(yml):
+        #         raise SystemExit(2)
 
     for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
         dirs, fn = (os.path.split(yml))
