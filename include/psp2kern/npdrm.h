@@ -152,7 +152,7 @@ int ksceNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  sce_discinfo           - The pointer of contents of vs0:/app/NPXS10028/__sce_discinfo
- * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x100
  * @param[in]  sw_version             - The minimum firmware version the signature can be used on. cannot be lower than current firmware
  *
  * @return eboot_signature size on success, < 0 on error.
