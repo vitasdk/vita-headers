@@ -130,12 +130,27 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2f0733beefadbc467c42b07722e17975"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga2f0733beefadbc467c42b07722e17975">ksceNpDrmGetRifInfo</a> (const void *license, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> license_size, int check_sign, char *content_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, int *license_version, int *license_flags, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, int *sku_flags, <a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *lic_exp_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *flags2)</td></tr>
 <tr class="memdesc:ga2f0733beefadbc467c42b07722e17975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license info.  <a href="group__SceNpDrmUser.html#ga2f0733beefadbc467c42b07722e17975">More...</a><br /></td></tr>
 <tr class="separator:ga2f0733beefadbc467c42b07722e17975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8607d04a82ec60ee499600b7ba46bb43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga8607d04a82ec60ee499600b7ba46bb43">ksceNpDrmEbootSigVerify</a> (const char *eboot_pbp_path, const void *eboot_signature)</td></tr>
+<tr class="memdesc:ga8607d04a82ec60ee499600b7ba46bb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify a eboot.pbp signature "__sce_ebootpbp".  <a href="group__SceNpDrmUser.html#ga8607d04a82ec60ee499600b7ba46bb43">More...</a><br /></td></tr>
+<tr class="separator:ga8607d04a82ec60ee499600b7ba46bb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e6b267a07852c39ec849b502514c391"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga3e6b267a07852c39ec849b502514c391">ksceNpDrmPspEbootVerify</a> (const char *eboot_pbp_path, const void *eboot_signature)</td></tr>
+<tr class="memdesc:ga3e6b267a07852c39ec849b502514c391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware &lt;2.00.  <a href="group__SceNpDrmUser.html#ga3e6b267a07852c39ec849b502514c391">More...</a><br /></td></tr>
+<tr class="separator:ga3e6b267a07852c39ec849b502514c391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga795831c7db8e903fe0f5b34f21caef8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga795831c7db8e903fe0f5b34f21caef8b">ksceNpDrmPspEbootSigGen</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature)</td></tr>
+<tr class="memdesc:ga795831c7db8e903fe0f5b34f21caef8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware &gt;2.00.  <a href="group__SceNpDrmUser.html#ga795831c7db8e903fe0f5b34f21caef8b">More...</a><br /></td></tr>
+<tr class="separator:ga795831c7db8e903fe0f5b34f21caef8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga53ac7effac4a0c35e4da5c722d4c3d56">ksceNpDrmEbootSigConvert</a> (const char *eboot_pbp_path, const void *old_eboot_signature, void *new_eboot_signature)</td></tr>
+<tr class="memdesc:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares &gt;2.00.  <a href="group__SceNpDrmUser.html#ga53ac7effac4a0c35e4da5c722d4c3d56">More...</a><br /></td></tr>
+<tr class="separator:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad7eb961eb8f13520c08cf7abef288158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gad7eb961eb8f13520c08cf7abef288158">ksceNpDrmEbootSigGenPsp</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version)</td></tr>
 <tr class="memdesc:gad7eb961eb8f13520c08cf7abef288158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game.  <a href="group__SceNpDrmUser.html#gad7eb961eb8f13520c08cf7abef288158">More...</a><br /></td></tr>
 <tr class="separator:gad7eb961eb8f13520c08cf7abef288158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9337d12a493884eaee967b227486ca13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga9337d12a493884eaee967b227486ca13">ksceNpDrmEbootSigGenPs1</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version)</td></tr>
-<tr class="memdesc:ga9337d12a493884eaee967b227486ca13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game.  <a href="group__SceNpDrmUser.html#ga9337d12a493884eaee967b227486ca13">More...</a><br /></td></tr>
+<tr class="memdesc:ga9337d12a493884eaee967b227486ca13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game.  <a href="group__SceNpDrmUser.html#ga9337d12a493884eaee967b227486ca13">More...</a><br /></td></tr>
 <tr class="separator:ga9337d12a493884eaee967b227486ca13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67be6a70af0add5dd2fb2556b19230a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga67be6a70af0add5dd2fb2556b19230a5">ksceNpDrmEbootSigGenMultiDisc</a> (const char *eboot_pbp_path, const void *sce_discinfo, void *eboot_signature, int sw_version)</td></tr>
+<tr class="memdesc:ga67be6a70af0add5dd2fb2556b19230a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game.  <a href="group__SceNpDrmUser.html#ga67be6a70af0add5dd2fb2556b19230a5">More...</a><br /></td></tr>
+<tr class="separator:ga67be6a70af0add5dd2fb2556b19230a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gab78d2af5626a9b65752bdb6bb255ed36"></a>
@@ -613,6 +628,172 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8607d04a82ec60ee499600b7ba46bb43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8607d04a82ec60ee499600b7ba46bb43">&#9670;&nbsp;</a></span>ksceNpDrmEbootSigVerify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigVerify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify a eboot.pbp signature "__sce_ebootpbp". </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_signature</td><td>- The pointer of data of __sce_ebootpbp signature. size is 0x200</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga3e6b267a07852c39ec849b502514c391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e6b267a07852c39ec849b502514c391">&#9670;&nbsp;</a></span>ksceNpDrmPspEbootVerify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmPspEbootVerify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware &lt;2.00. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_signature</td><td>- The pointer of data of __sce_ebootpbp signature. size is 0x100</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga795831c7db8e903fe0f5b34f21caef8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga795831c7db8e903fe0f5b34f21caef8b">&#9670;&nbsp;</a></span>ksceNpDrmPspEbootSigGen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmPspEbootSigGen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_sha256</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware &gt;2.00. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x100</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga53ac7effac4a0c35e4da5c722d4c3d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53ac7effac4a0c35e4da5c722d4c3d56">&#9670;&nbsp;</a></span>ksceNpDrmEbootSigConvert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigConvert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>old_eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>new_eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares &gt;2.00. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">old_eboot_signature</td><td>- The pointer of old eboot signature data. size is 0x100 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">new_eboot_signature</td><td>- The pointer of new eboot signature data. size is 0x200</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="gad7eb961eb8f13520c08cf7abef288158"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad7eb961eb8f13520c08cf7abef288158">&#9670;&nbsp;</a></span>ksceNpDrmEbootSigGenPsp()</h2>
 
@@ -661,7 +842,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -703,7 +884,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game. </p>
+<p>Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
@@ -713,7 +894,59 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga67be6a70af0add5dd2fb2556b19230a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67be6a70af0add5dd2fb2556b19230a5">&#9670;&nbsp;</a></span>ksceNpDrmEbootSigGenMultiDisc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigGenMultiDisc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>sce_discinfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sw_version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sce_discinfo</td><td>- The pointer of contents of vs0:/app/NPXS10028/__sce_discinfo </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x100 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
