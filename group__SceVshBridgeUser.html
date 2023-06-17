@@ -118,6 +118,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga6bc6cf7f5893439c3d399ab02dc7ac00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15598bde9c8257ee4a81e1b44255d875"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga15598bde9c8257ee4a81e1b44255d875">vshIdStorageWriteLeaf</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> leafnum, const void *buf)</td></tr>
 <tr class="separator:ga15598bde9c8257ee4a81e1b44255d875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43834d261b3ceb7e4d443a9e0e3497bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga43834d261b3ceb7e4d443a9e0e3497bc">_vshNpDrmEbootSigGenPsp</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version)</td></tr>
+<tr class="memdesc:ga43834d261b3ceb7e4d443a9e0e3497bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game.  <a href="group__SceVshBridgeUser.html#ga43834d261b3ceb7e4d443a9e0e3497bc">More...</a><br /></td></tr>
+<tr class="separator:ga43834d261b3ceb7e4d443a9e0e3497bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38a9e3ee2a87ecb40a5368cc7b0b4b28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga38a9e3ee2a87ecb40a5368cc7b0b4b28">_vshNpDrmEbootSigGenPs1</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version)</td></tr>
+<tr class="memdesc:ga38a9e3ee2a87ecb40a5368cc7b0b4b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game.  <a href="group__SceVshBridgeUser.html#ga38a9e3ee2a87ecb40a5368cc7b0b4b28">More...</a><br /></td></tr>
+<tr class="separator:ga38a9e3ee2a87ecb40a5368cc7b0b4b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5344884b9e5f470b33570191a51cb917"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga5344884b9e5f470b33570191a51cb917">vshSblAimgrIsCEX</a> (void)</td></tr>
 <tr class="separator:ga5344884b9e5f470b33570191a51cb917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06d9af277607bd595af6a0f1949b76cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga06d9af277607bd595af6a0f1949b76cb">vshSblAimgrIsDEX</a> (void)</td></tr>
@@ -495,6 +501,110 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error.</dd></dl>
 <p>note - Writing to leaf requires manufacturing mode. </p>
+
+</div>
+</div>
+<a id="ga43834d261b3ceb7e4d443a9e0e3497bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43834d261b3ceb7e4d443a9e0e3497bc">&#9670;&nbsp;</a></span>_vshNpDrmEbootSigGenPsp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _vshNpDrmEbootSigGenPsp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_sha256</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sw_version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x200 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga38a9e3ee2a87ecb40a5368cc7b0b4b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38a9e3ee2a87ecb40a5368cc7b0b4b28">&#9670;&nbsp;</a></span>_vshNpDrmEbootSigGenPs1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _vshNpDrmEbootSigGenPs1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_sha256</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sw_version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x200 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

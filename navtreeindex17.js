@@ -1,8 +1,8 @@
 var NAVTREEINDEX17 =
 {
-"group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db":[4,0,1,2,2,8,1,2],
 "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db":[1,7,15,0,1,2],
 "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db":[1,7,15,0,5],
+"group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db":[4,0,1,2,2,8,1,2],
 "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493":[4,0,1,2,2,8,1,0],
 "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493":[1,7,15,0,1,0],
 "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493":[1,7,15,0,3],
@@ -24,8 +24,8 @@ var NAVTREEINDEX17 =
 "group__SceFcntlKernel.html#gab063eafa246ec17e96caea985fc8ad7e":[4,0,1,2,1,2,0],
 "group__SceFcntlKernel.html#gab6f0743dc6356206101cdf891b1f4143":[1,4,2,1,6],
 "group__SceFcntlKernel.html#gab6f0743dc6356206101cdf891b1f4143":[4,0,1,2,1,2,6],
-"group__SceFcntlKernel.html#gabda80bd474bdd34dc7f8b00cec168e71":[4,0,1,2,1,2,9],
 "group__SceFcntlKernel.html#gabda80bd474bdd34dc7f8b00cec168e71":[1,4,2,1,9],
+"group__SceFcntlKernel.html#gabda80bd474bdd34dc7f8b00cec168e71":[4,0,1,2,1,2,9],
 "group__SceFcntlKernel.html#gad27cbe1fdaf3cf2050f056da2eafd094":[1,4,2,1,10],
 "group__SceFcntlKernel.html#gad27cbe1fdaf3cf2050f056da2eafd094":[4,0,1,2,1,2,10],
 "group__SceFcntlKernel.html#gaf1c3ab11e7942db4639e4652a67cea3f":[1,4,2,1,7],

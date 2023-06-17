@@ -1,5 +1,15 @@
 var NAVTREEINDEX87 =
 {
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[1,11,12,0,19],
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[4,0,1,0,84,19],
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[4,0,1,0,84,29],
+"group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,11,12,0,29],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[1,11,12,0,6],
+"group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,84,6],
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,11,12,0,28],
+"group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,84,28],
+"group__SystemFunction.html":[1,5],
+"group__SystemParams.html":[1,13],
 "group__SystemStatus.html":[1,11],
 "group__USB.html":[1,12],
 "group__Vitasdk.html":[1,14],
@@ -26,8 +36,8 @@ var NAVTREEINDEX87 =
 "ime__dialog_8h_source.html":[4,0,1,0,28],
 "incoming__dialog_8h.html":[4,0,1,0,29],
 "incoming__dialog_8h_source.html":[4,0,1,0,29],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intrmgr_8h.html":[4,0,1,2,2,9],
 "intrmgr_8h_source.html":[4,0,1,2,2,9],
 "io_2devctl_8h.html":[4,0,1,0,1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX87 =
 "semaphores_8h.html":[4,0,1,2,2,2,9],
 "semaphores_8h_source.html":[4,0,1,2,2,2,9],
 "shacccg_8h.html":[4,0,1,0,65],
-"shacccg_8h_source.html":[4,0,1,0,65],
-"sharedfb_8h.html":[4,0,1,0,66],
-"sharedfb_8h_source.html":[4,0,1,0,66],
-"shellutil_8h.html":[4,0,1,0,67],
-"shellutil_8h_source.html":[4,0,1,0,67],
-"shutter__sound_8h.html":[4,0,1,0,68],
-"shutter__sound_8h_source.html":[4,0,1,0,68],
-"sqlite_8h.html":[4,0,1,0,69],
-"sqlite_8h_source.html":[4,0,1,0,69],
-"ssmgr_8h.html":[4,0,1,2,2,17],
-"ssmgr_8h_source.html":[4,0,1,2,2,17]
+"shacccg_8h_source.html":[4,0,1,0,65]
 };

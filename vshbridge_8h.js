@@ -11,6 +11,8 @@ var vshbridge_8h =
     [ "vshIdStorageIsReadOnly", "group__SceVshBridgeUser.html#ga324c4f0e940138dc8008f5b484793789", null ],
     [ "vshIdStorageReadLeaf", "group__SceVshBridgeUser.html#ga6bc6cf7f5893439c3d399ab02dc7ac00", null ],
     [ "vshIdStorageWriteLeaf", "group__SceVshBridgeUser.html#ga15598bde9c8257ee4a81e1b44255d875", null ],
+    [ "_vshNpDrmEbootSigGenPsp", "group__SceVshBridgeUser.html#ga43834d261b3ceb7e4d443a9e0e3497bc", null ],
+    [ "_vshNpDrmEbootSigGenPs1", "group__SceVshBridgeUser.html#ga38a9e3ee2a87ecb40a5368cc7b0b4b28", null ],
     [ "vshSblAimgrIsCEX", "group__SceVshBridgeUser.html#ga5344884b9e5f470b33570191a51cb917", null ],
     [ "vshSblAimgrIsDEX", "group__SceVshBridgeUser.html#ga06d9af277607bd595af6a0f1949b76cb", null ],
     [ "vshSblAimgrIsVITA", "group__SceVshBridgeUser.html#ga55c746e32c4deee70165a080291f3a35", null ],
