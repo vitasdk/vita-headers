@@ -90,20 +90,22 @@ int vshIdStorageWriteLeaf(SceSize leafnum, const void *buf);
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  eboot_signature        - The pointer of data of __sce_ebootpbp signature. size is 0x200
+ * @param[in]  eboot_signature_magic  - The pointer of a pointer of magic number within __sce_ebootpbp, "NPUMDSIG" or "PSISOSIG"
  *
  * @return 0 on success, < 0 on error.
 */
-int _vshNpDrmEbootSigVerify(const char *eboot_pbp_path, const char *eboot_signature);
+int _vshNpDrmEbootSigVerify(const char *eboot_pbp_path, const char *eboot_signature, char** eboot_signature_header);
 
 /**
  * Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware <2.00
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  eboot_signature        - The pointer of data of __sce_ebootpbp signature. size is 0x100
+ * @param[in]  eboot_signature_magic  - The pointer of a pointer of magic number within __sce_ebootpbp, "NPUMDSIG" or "PSISOSIG"
  *
  * @return 0 on success, < 0 on error.
 */
-int _vshNpDrmPspEbootVerify(const char *eboot_pbp_path, const char *eboot_signature);
+int _vshNpDrmPspEbootVerify(const char *eboot_pbp_path, const char *eboot_signature, char** eboot_signature_header);
 
 /**
  * Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware >2.00
