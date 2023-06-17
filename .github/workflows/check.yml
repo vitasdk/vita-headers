@@ -26,6 +26,7 @@ jobs:
         export VITASDK=$PWD/vitasdk
         export PATH=$VITASDK/bin:$PATH
         export INCLUDE_DIR=$TRAVIS_BUILD_DIR/include
+        vita-nid-check -dbg=debug -dbdirver="./db"
         # Make sure headers are valid
         find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-gcc -I$INCLUDE_DIR -fsyntax-only -c FN -o /dev/null
         find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-g++ -I$INCLUDE_DIR -fsyntax-only -c FN -o /dev/null
@@ -36,6 +37,7 @@ jobs:
         rm -rf *_stub.a
         cd $TRAVIS_BUILD_DIR
         cp -r include/* $VITASDK/arm-vita-eabi/include
+        # header define check
         USE_LINT=1 python3 build.py output
         vdpm SDL2
         vdpm curl
