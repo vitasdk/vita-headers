@@ -154,7 +154,7 @@ int _vshNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void* eboot_sha256
 int _vshNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version);
 
 /**
- * Generate eboot.pbp signature "__sce_ebootpbp" for a multi-disc PS1 game
+ * Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  sce_discinfo           - The pointer of contents of vs0:/app/NPXS10028/__sce_discinfo
