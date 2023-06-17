@@ -1,5 +1,8 @@
 var NAVTREEINDEX87 =
 {
+"group__SystemStatus.html":[1,11],
+"group__USB.html":[1,12],
+"group__Vitasdk.html":[1,14],
 "group__debug.html":[1,9],
 "group__kernel.html":[1,7],
 "group__update.html":[1,8],
@@ -23,8 +26,8 @@ var NAVTREEINDEX87 =
 "ime__dialog_8h_source.html":[4,0,1,0,28],
 "incoming__dialog_8h.html":[4,0,1,0,29],
 "incoming__dialog_8h_source.html":[4,0,1,0,29],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "intrmgr_8h.html":[4,0,1,2,2,9],
 "intrmgr_8h_source.html":[4,0,1,2,2,9],
 "io_2devctl_8h.html":[4,0,1,0,1,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX87 =
 "sqlite_8h.html":[4,0,1,0,69],
 "sqlite_8h_source.html":[4,0,1,0,69],
 "ssmgr_8h.html":[4,0,1,2,2,17],
-"ssmgr_8h_source.html":[4,0,1,2,2,17],
-"stdc_8h.html":[4,0,1,0,4,2],
-"stdc_8h_source.html":[4,0,1,0,4,2],
-"suspend_8h.html":[4,0,1,2,2,18]
+"ssmgr_8h_source.html":[4,0,1,2,2,17]
 };

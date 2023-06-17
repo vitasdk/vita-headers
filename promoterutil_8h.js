@@ -2,6 +2,7 @@ var promoterutil_8h =
 [
     [ "ScePromoterUtilityPackageType", "group__ScePromoterUtilUser.html#gaa73ff0673f95679417e358a5b15fd911", [
       [ "SCE_PKG_TYPE_VITA", "group__ScePromoterUtilUser.html#ggaa73ff0673f95679417e358a5b15fd911a7f9de715d903c74b0fd6faea5d740dae", null ],
+      [ "SCE_PKG_TYPE_PSP", "group__ScePromoterUtilUser.html#ggaa73ff0673f95679417e358a5b15fd911a155e2befc2471b585d17ff33e16c7968", null ],
       [ "SCE_PKG_TYPE_PSM", "group__ScePromoterUtilUser.html#ggaa73ff0673f95679417e358a5b15fd911a66b92107faaeaad26fe0b651a5bcf8e3", null ]
     ] ],
     [ "scePromoterUtilityInit", "group__ScePromoterUtilUser.html#ga6879c67b9aa18d951f8be26748fb6796", null ],
