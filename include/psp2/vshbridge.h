@@ -52,6 +52,7 @@ SceUID _vshKernelSearchModuleByName(const char *module_name, const void *buffer)
  */
 int _vshIoMount(int id, const char *path, int permission, void *buf);
 
+
 /**
  * @param[in] id - mount id
  * @param[in] force - Set to 1 to force umount
@@ -83,6 +84,32 @@ int vshIdStorageReadLeaf(SceSize leafnum, void *buf);
  * note - Writing to leaf requires manufacturing mode.
  */
 int vshIdStorageWriteLeaf(SceSize leafnum, const void *buf);
+
+
+/**
+ * Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
+ * @param[in]  sw_version             - The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int _vshNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void* eboot_sha256, void *eboot_signature, int *sw_version);
+
+
+/**
+ * Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
+ * @param[in]  sw_version             - The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int _vshNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version);
 
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);
