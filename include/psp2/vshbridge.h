@@ -85,6 +85,50 @@ int vshIdStorageReadLeaf(SceSize leafnum, void *buf);
  */
 int vshIdStorageWriteLeaf(SceSize leafnum, const void *buf);
 
+/**
+ * Verify a eboot.pbp signature "__sce_ebootpbp"
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_signature        - The pointer of data of __sce_ebootpbp signature. size is 0x200
+ * @param[in]  eboot_signature_magic  - The pointer of a pointer of magic number within __sce_ebootpbp, "NPUMDSIG" or "PSISOSIG"
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int _vshNpDrmEbootSigVerify(const char *eboot_pbp_path, const char *eboot_signature, char** eboot_signature_header);
+
+/**
+ * Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware <2.00
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_signature        - The pointer of data of __sce_ebootpbp signature. size is 0x100
+ * @param[in]  eboot_signature_magic  - The pointer of a pointer of magic number within __sce_ebootpbp, "NPUMDSIG" or "PSISOSIG"
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int _vshNpDrmPspEbootVerify(const char *eboot_pbp_path, const char *eboot_signature, char** eboot_signature_header);
+
+/**
+ * Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware >2.00
+ * 
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x100
+ *
+ * @return eboot_signature size on success, < 0 on error.
+*/
+int _vshNpDrmPspEbootSigGen(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature);
+
+/**
+ * Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares >2.00
+ * 
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  old_eboot_signature    - The pointer of old eboot signature data. size is 0x100
+ * @param[out] new_eboot_signature    - The pointer of new eboot signature data. size is 0x200
+ *
+ * @return eboot_signature size on success, < 0 on error.
+*/
+int _vshNpDrmEbootSigConvert(const char *eboot_pbp_path, const void* old_eboot_signature, void* new_eboot_signature); 
+
 
 /**
  * Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game
@@ -94,22 +138,34 @@ int vshIdStorageWriteLeaf(SceSize leafnum, const void *buf);
  * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
  * @param[in]  sw_version             - The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware
  *
- * @return 0 on success, < 0 on error.
+ * @return eboot_signature size on success, < 0 on error.
 */
 int _vshNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void* eboot_sha256, void *eboot_signature, int *sw_version);
 
 
 /**
- * Generate eboot.pbp signature "__sce_ebootpbp" for a PS1 game
+ * Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game
  *
  * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
  * @param[in]  eboot_sha256           - The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file
  * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x200
  * @param[in]  sw_version             - The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware
  *
- * @return 0 on success, < 0 on error.
+ * @return eboot_signature size on success, < 0 on error.
 */
 int _vshNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version);
+
+/**
+ * Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game
+ *
+ * @param[in]  eboot_pbp_path         - The pointer of the file path of the EBOOT.PBP file
+ * @param[in]  sce_discinfo           - The pointer of contents of vs0:/app/NPXS10028/__sce_discinfo
+ * @param[out] eboot_signature        - The pointer of the output eboot signature data. size is 0x100
+ * @param[in]  sw_version             - The pointer of the minimum firmware version the signature can be used on. cannot be lower than current firmware
+ *
+ * @return eboot_signature size on success, < 0 on error.
+*/
+int _vshNpDrmEbootSigGenMultiDisc(const char *eboot_pbp_path, const void *sce_discinfo, void *eboot_signature, int *sw_version);
 
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);
