@@ -96,7 +96,7 @@ int vshIdStorageWriteLeaf(SceSize leafnum, const void *buf);
  *
  * @return 0 on success, < 0 on error.
 */
-int _vshNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void* eboot_sha256, void *eboot_signature, int *sw_version));
+int _vshNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void* eboot_sha256, void *eboot_signature, int *sw_version);
 
 
 /**
@@ -109,7 +109,7 @@ int _vshNpDrmEbootSigGenPsp(const char *eboot_pbp_path, const void* eboot_sha256
  *
  * @return 0 on success, < 0 on error.
 */
-int _vshNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version));
+int _vshNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int *sw_version);
 
 int vshSblAimgrIsCEX(void);
 int vshSblAimgrIsDEX(void);
