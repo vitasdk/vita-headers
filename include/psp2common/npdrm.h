@@ -12,9 +12,24 @@
 extern "C" {
 #endif
 
+typedef struct SceNpDrmActivationData { // size is 0x1038
+  SceInt16 act_type; 
+  SceInt16 version_flag;
+  SceInt32 version;
+  SceUInt64 account_id;
+  SceUInt8 primary_key_table[0x80][0x10];
+  SceUInt8 unk1[0x40];
+  SceUInt8 openpsid[0x10];
+  SceUInt8 unk2[0x10];
+  SceUInt8 unk3[0x10];
+  SceUInt8 secondary_key_table[0x65][0x10];
+  SceUInt8 rsa_signature[0x100];
+  SceUInt8 unk_sigmature[0x40];
+  SceUInt8 ecdsa_signature[0x28]; // checked by pspemu, and SceNpDrm.
+} SceNpDrmActivationData;
 
 typedef struct SceNpDrmLicense { // size is 0x200
-  SceInt16 version;       // -1, 1
+  SceInt16 version;       // -1 VITA, 0 PSP, 1 PSP-VITA
   SceInt16 version_flags; // 0, 1
   SceInt16 license_type;  // 1
   SceInt16 license_flags; // 0x400:non-check ecdsa

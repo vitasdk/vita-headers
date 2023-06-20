@@ -35,6 +35,28 @@ int ksceNpDrmGetRifName(char *name, SceUInt64 aid);
 int ksceNpDrmGetFixedRifName(char *name, SceUInt64 aid);
 
 /**
+ * Get current activation data
+ *
+ * @param[out] act_data       - The pointer of output activation data see:SceNpDrmActivationData. if ecdsa or rsa verify fail, will be all 0.
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceNpDrmReadActData(SceNpDrmActivationData *act_data);
+
+/**
+ * Check you have npdrm activation data, and get information from it
+ *
+ * @param[out]  act_type        - The pointer of activation type output.
+ * @param[out]  version_flag    - The pointer of version flag output.
+ * @param[out]  account_id      - The pointer of activated account id output.
+ * @param[out]  act_start_time  - The pointer of activation data start time output.
+ * @param[out]  act_exp_time    - The pointer of activation data expire time output
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int ksceNpDrmCheckActData(int *act_type, int *version_flag, SceUInt64 *account_id, SceUInt64 *act_start_time, SceUInt64 *act_end_time);
+
+/**
  * Get license key info
  *
  * @param[in]  license        - The pointer of license data. see:SceNpDrmLicense

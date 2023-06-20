@@ -38,6 +38,21 @@ int _sceNpDrmGetRifName(char *rif_name, uint64_t aid);
 int _sceNpDrmGetFixedRifName(char *rif_name, uint64_t aid);
 
 /**
+ * Check you have npdrm activation data, and get information from it
+ *
+ * @param[out]  act_type        - The pointer of activation type output.
+ *
+ * @param[out]  version_flag    - The pointer of version flag output.
+ *
+ * @param[out]  account_id      - The pointer of activated account id output.
+ *
+ * @param[out]  act_exp_time    - The pointer of activation expire time output, [0] is start_date, [1] is end_date
+ *
+ * @return 0 on success, < 0 on error.
+*/
+int _sceNpDrmCheckActData(int *act_type, int *version_flag, SceUInt64 *account_id, SceUInt64 act_exp_time[2]);
+
+/**
  * Get rif name for install
  *
  * @param[out] rif_name - RIF name buffer (48 bytes)
