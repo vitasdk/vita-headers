@@ -162,7 +162,7 @@ char look_ctype_table(char ch);
 int tolower(int ch);
 int toupper(int ch);
 
-int timingsafe_memcmp(const void *s1, const void *s2, int n);
+int timingsafe_memcmp(const void *s1, const void *s2, size_t n);
 
 long strtol(const char *str, char **endptr, int base);
 long long strtoll(const char *str, char **endptr, int base);
