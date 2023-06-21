@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSCLIB_H_
 #define _PSP2KERN_KERNEL_SYSCLIB_H_
 
+#include <psp2kern/types.h>
 #include <stdarg.h>
 
 #ifdef __cplusplus
