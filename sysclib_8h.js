@@ -28,7 +28,7 @@ var sysclib_8h =
     [ "look_ctype_table", "group__SceSysclibKernel.html#ga52178dad5bd0755afdcf01eb86ad0138", null ],
     [ "tolower", "group__SceSysclibKernel.html#gad5a8cd3426754cdbc5f29fbbb473a451", null ],
     [ "toupper", "group__SceSysclibKernel.html#gad78f6ce254fada0092061f75ea657885", null ],
-    [ "timingsafe_memcmp", "group__SceSysclibKernel.html#ga29134994af2d035df7881a7dbae19b39", null ],
+    [ "timingsafe_memcmp", "group__SceSysclibKernel.html#ga967d39a5676ced50b8e4353ddf4c731e", null ],
     [ "strtol", "group__SceSysclibKernel.html#gaeafd194f4f11d5efd00480ac4b3fe497", null ],
     [ "strtoll", "group__SceSysclibKernel.html#ga11dd8f0251a1b6e05a9b4a031a1129c2", null ],
     [ "strtoul", "group__SceSysclibKernel.html#ga27d4151ef962d7cd272ce527560cbb19", null ],
