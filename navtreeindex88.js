@@ -1,5 +1,7 @@
 var NAVTREEINDEX88 =
 {
+"psp2kern_2usbserial_8h.html":[4,0,1,2,27],
+"psp2kern_2usbserial_8h_source.html":[4,0,1,2,27],
 "psp2kern_2usbserv_8h.html":[4,0,1,2,28],
 "psp2kern_2usbserv_8h_source.html":[4,0,1,2,28],
 "pspnet__adhoc_8h.html":[4,0,1,0,55],

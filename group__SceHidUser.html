@@ -98,8 +98,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab3fc6d6c925fb50c2481e892c6c28390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate hid keyboards.  <a href="group__SceHidUser.html#gab3fc6d6c925fb50c2481e892c6c28390">More...</a><br /></td></tr>
 <tr class="separator:gab3fc6d6c925fb50c2481e892c6c28390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae64163d66f649a7683dd785fa3c3b6e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5">sceHidKeyboardRead</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> handle, <a class="el" href="group__SceHidUser.html#structSceHidKeyboardReport">SceHidKeyboardReport</a> *reports[], int nReports)</td></tr>
-<tr class="memdesc:gae64163d66f649a7683dd785fa3c3b6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get hid keyboard reports.  <a href="group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5">More...</a><br /></td></tr>
+<tr class="memdesc:gae64163d66f649a7683dd785fa3c3b6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get hid keyboard reports (blocking).  <a href="group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5">More...</a><br /></td></tr>
 <tr class="separator:gae64163d66f649a7683dd785fa3c3b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25bb4a9229e6f37f896a4e24bdb4a624"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#ga25bb4a9229e6f37f896a4e24bdb4a624">sceHidKeyboardPeek</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> handle, <a class="el" href="group__SceHidUser.html#structSceHidKeyboardReport">SceHidKeyboardReport</a> *reports[], int nReports)</td></tr>
+<tr class="memdesc:ga25bb4a9229e6f37f896a4e24bdb4a624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get hid keyboard reports (non-blocking).  <a href="group__SceHidUser.html#ga25bb4a9229e6f37f896a4e24bdb4a624">More...</a><br /></td></tr>
+<tr class="separator:ga25bb4a9229e6f37f896a4e24bdb4a624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad77a117cc8011d4dad133b634cf590f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8">sceHidMouseEnumerate</a> (int *handle, int count)</td></tr>
 <tr class="memdesc:gad77a117cc8011d4dad133b634cf590f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate hid mice.  <a href="group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8">More...</a><br /></td></tr>
 <tr class="separator:gad77a117cc8011d4dad133b634cf590f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,9 +150,15 @@ keycodes[6]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="ga9e2cfe8cfe538654e9899f14d94e3269"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
+<a id="ga3ddbb221078325f240281a67f1515351"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
 <td class="fieldname">
-unk1[15]</td>
+reserved2[7]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae8ca98e45fd2bb93ebec3b7736184074"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
+<td class="fieldname">
+timestamp</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -302,7 +311,51 @@ unk[10]</td>
       </table>
 </div><div class="memdoc">
 
-<p>Get hid keyboard reports. </p>
+<p>Get hid keyboard reports (blocking). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Hid handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reports</td><td>Buffer to receive reports. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nReports</td><td>Number of reports to receive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga25bb4a9229e6f37f896a4e24bdb4a624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25bb4a9229e6f37f896a4e24bdb4a624">&#9670;&nbsp;</a></span>sceHidKeyboardPeek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceHidKeyboardPeek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceHidUser.html#structSceHidKeyboardReport">SceHidKeyboardReport</a> *&#160;</td>
+          <td class="paramname"><em>reports</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nReports</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get hid keyboard reports (non-blocking). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Hid handle. </td></tr>
