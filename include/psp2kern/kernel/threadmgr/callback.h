@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_CALLBACK_H_
 #define _PSP2KERN_KERNEL_THREADMGR_CALLBACK_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -36,6 +37,7 @@ typedef struct SceKernelCallbackInfo {
 	/** Unknown */
 	int     notifyArg;
 } SceKernelCallbackInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelCallbackInfo);
 
 /**
  * Create callback

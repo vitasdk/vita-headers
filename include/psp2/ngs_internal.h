@@ -7,19 +7,27 @@
 #ifndef _PSP2_NGS_INTERNAL_H_
 #define _PSP2_NGS_INTERNAL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef SceUInt32 SceNgsHRack;
-typedef SceUInt32 SceNgsHPatch;
-typedef SceUInt32 SceNgsHSynSystem;
-typedef SceUInt32 SceNgsHVoice;
+typedef SceUInt32 SceNgsHRack;             
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsHRack);
+typedef SceUInt32 SceNgsHPatch;            
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsHPatch);
+typedef SceUInt32 SceNgsHSynSystem;        
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsHSynSystem);
+typedef SceUInt32 SceNgsHVoice;            
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsHVoice);
 typedef SceUInt32 SulphaNgsModuleQueryType;
-typedef SceUInt32 SceNgsModuleID;
-typedef void * SceNgsSulphaUpdateCallback;
+VITASDK_BUILD_ASSERT_EQ(4, SulphaNgsModuleQueryType);
+typedef SceUInt32 SceNgsModuleID;          
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsModuleID);
+typedef void * SceNgsSulphaUpdateCallback; 
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsSulphaUpdateCallback);
 
 typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
 

@@ -7,7 +7,8 @@
 #ifndef _PSP2_COMMON_DIALOG_H_
 #define _PSP2_COMMON_DIALOG_H_
 
-#include <string.h>
+#include <vitasdk/build_utils.h>
+#include <psp2/kernel/clib.h>
 #include <psp2/system_param.h>
 #include <psp2/gxm.h>
 #include <psp2/types.h>
@@ -50,6 +51,7 @@ typedef struct SceCommonDialogConfigParam {
 	SceSystemParamEnterButtonAssign enterButtonAssign;
 	SceUInt8 reserved[32];
 } SceCommonDialogConfigParam;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceCommonDialogConfigParam);
 
 typedef enum SceCommonDialogStatus {
 	SCE_COMMON_DIALOG_STATUS_NONE       = 0,
@@ -73,12 +75,14 @@ typedef struct SceCommonDialogRenderTargetInfo {
 	SceUInt32 strideInPixels;
 	SceUInt8 reserved[32];
 } SceCommonDialogRenderTargetInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceCommonDialogRenderTargetInfo);
 
 typedef struct SceCommonDialogUpdateParam {
 	SceCommonDialogRenderTargetInfo renderTarget;
 	SceGxmSyncObject *displaySyncObject;
 	SceUInt8 reserved[32];
 } SceCommonDialogUpdateParam;
+VITASDK_BUILD_ASSERT_EQ(0x60, SceCommonDialogUpdateParam);
 
 typedef struct SceCommonDialogInfobarParam {
 	SceInt32 visibility;
@@ -86,6 +90,7 @@ typedef struct SceCommonDialogInfobarParam {
 	SceInt32 transparency;
 	SceUInt8 reserved[32];
 } SceCommonDialogInfobarParam;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceCommonDialogInfobarParam);
 
 typedef struct SceCommonDialogColor {
 	SceUInt8 r;
@@ -93,8 +98,10 @@ typedef struct SceCommonDialogColor {
 	SceUInt8 b;
 	SceUInt8 a;
 } SceCommonDialogColor;
+VITASDK_BUILD_ASSERT_EQ(4, SceCommonDialogColor);
 
 typedef SceCommonDialogColor SceCommonDialogBgColor;
+VITASDK_BUILD_ASSERT_EQ(4, SceCommonDialogBgColor);
 
 typedef struct SceCommonDialogParam {
 	SceCommonDialogInfobarParam* infobarParam;
@@ -103,6 +110,7 @@ typedef struct SceCommonDialogParam {
 	SceUInt8 reserved[60];
 	SceUInt32 magic;
 } SceCommonDialogParam;
+VITASDK_BUILD_ASSERT_EQ(0x4C, SceCommonDialogParam);
 
 #define SCE_COMMON_DIALOG_MAGIC_NUMBER 0xC0D1A109
 
@@ -115,11 +123,11 @@ void _sceCommonDialogSetMagicNumber(SceCommonDialogParam *param)
 static inline
 void sceCommonDialogConfigParamInit(SceCommonDialogConfigParam *param)
 {
-	memset(param, 0x0, sizeof(SceCommonDialogConfigParam));
+	sceClibMemset(param, 0x0, sizeof(SceCommonDialogConfigParam));
 	param->language = SCE_SYSTEM_PARAM_LANG_MAX_VALUE;
 	param->enterButtonAssign = SCE_SYSTEM_PARAM_ENTER_BUTTON_MAX_VALUE;
 	param->sdkVersion = PSP2_SDK_VERSION;
-};
+}
 
 int sceCommonDialogSetConfigParam(const SceCommonDialogConfigParam *configParam);
 int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);

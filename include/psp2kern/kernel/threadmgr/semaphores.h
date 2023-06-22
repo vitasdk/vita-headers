@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_SEMAPHORES_H_
 #define _PSP2KERN_KERNEL_THREADMGR_SEMAPHORES_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -19,6 +20,7 @@ typedef struct SceKernelSemaOptParam {
 	/** Size of the ::SceKernelSemaOptParam structure. */
 	SceSize   size;
 } SceKernelSemaOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelSemaOptParam);
 
 /** Current state of a semaphore.
  * @see ksceKernelGetSemaInfo.
@@ -41,6 +43,7 @@ typedef struct SceKernelSemaInfo {
 	/** The number of threads waiting on the semaphore. */
 	int             numWaitThreads;
 } SceKernelSemaInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelSemaInfo);
 
 /**
  * Get semaphore info

@@ -7,6 +7,7 @@
 #ifndef _PSP2_AUDIODEC_H_
 #define _PSP2_AUDIODEC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -116,11 +117,13 @@ typedef struct SceAudiodecInitStreamParam {
 	SceUInt32 size;
 	SceUInt32 totalStreams;
 } SceAudiodecInitStreamParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceAudiodecInitStreamParam);
 
 typedef struct SceAudiodecInitChParam {
 	SceUInt32 size;
 	SceUInt32 totalCh;
 } SceAudiodecInitChParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceAudiodecInitChParam);
 
 typedef union SceAudiodecInitParam {
 	SceUInt32                  size;
@@ -129,6 +132,7 @@ typedef union SceAudiodecInitParam {
 	SceAudiodecInitStreamParam aac;
 	SceAudiodecInitStreamParam celp;
 } SceAudiodecInitParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceAudiodecInitParam);
 
 typedef struct SceAudiodecInfoAt9 {
 	SceUInt32 size;
@@ -139,12 +143,14 @@ typedef struct SceAudiodecInfoAt9 {
 	SceUInt32 superFrameSize;
 	SceUInt32 framesInSuperFrame;
 } SceAudiodecInfoAt9;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceAudiodecInfoAt9);
 
 typedef struct SceAudiodecInfoMp3 {
 	SceUInt32 size;      //!< sizeof(SceAudiodecInfoMp3)
 	SceUInt32 ch;        //!< number of channels (mono: 1, stereo/joint stereo/two mono: 2)
 	SceUInt32 version;   //!< MPEG version (MPEG1: 3, MPEG2: 2, MPEG2.5: 0)
 } SceAudiodecInfoMp3;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceAudiodecInfoMp3);
 
 typedef struct SceAudiodecInfoAac {
 	SceUInt32 size;
@@ -153,6 +159,7 @@ typedef struct SceAudiodecInfoAac {
 	SceUInt32 samplingRate;
 	SceUInt32 isSbr;
 } SceAudiodecInfoAac;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceAudiodecInfoAac);
 
 /** Information structure for CELP */
 typedef struct SceAudiodecInfoCelp {
@@ -162,6 +169,7 @@ typedef struct SceAudiodecInfoCelp {
 	SceUInt32 bitRate;               //!< Bit rate (one of ::SceAudiodecCelpBitrate)
 	SceUInt32 lostCount;
 } SceAudiodecInfoCelp;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceAudiodecInfoCelp);
 
 typedef union SceAudiodecInfo {
 	SceUInt32           size;
@@ -170,6 +178,7 @@ typedef union SceAudiodecInfo {
 	SceAudiodecInfoAac  aac;
 	SceAudiodecInfoCelp celp;
 } SceAudiodecInfo;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceAudiodecInfo);
 
 typedef struct SceAudiodecCtrl {
 	SceUInt32       size;
@@ -183,6 +192,7 @@ typedef struct SceAudiodecCtrl {
 	SceUInt32       wordLength;		//!< PCM bit depth
 	SceAudiodecInfo *pInfo;			//!< pointer to SceAudiodecInfo
 } SceAudiodecCtrl;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceAudiodecCtrl);
 
 extern SceInt32 sceAudiodecInitLibrary(SceUInt32 codecType, SceAudiodecInitParam *pInitParam);
 extern SceInt32 sceAudiodecTermLibrary(SceUInt32 codecType);

@@ -7,6 +7,7 @@
 #ifndef _PSP2_SHAREDFB_H_
 #define _PSP2_SHAREDFB_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2common/defs.h>
 
@@ -28,6 +29,7 @@ typedef struct SceSharedFbInfo {
 	int vsync;
 	int unk3[3];
 } SceSharedFbInfo;
+VITASDK_BUILD_ASSERT_EQ(0x58, SceSharedFbInfo);
 
 SceUID _sceSharedFbOpen(int index, int sysver);
 int sceSharedFbClose(SceUID fb_id);

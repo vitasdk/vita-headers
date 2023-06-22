@@ -8,6 +8,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
+#include <vitasdk/build_utils.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -28,32 +29,32 @@ extern "C" {
 #endif
 #endif
 
-typedef int8_t SceChar8;
+typedef int8_t  SceChar8;
 typedef uint8_t SceUChar8;
 
-typedef int8_t SceInt8;
+typedef int8_t  SceInt8;
 typedef uint8_t SceUInt8;
 
-typedef int16_t SceShort16;
+typedef int16_t  SceShort16;
 typedef uint16_t SceUShort16;
 
 typedef int16_t  SceInt16;
-typedef uint16_t  SceUInt16;
+typedef uint16_t SceUInt16;
 
-typedef int32_t SceInt32;
+typedef int32_t  SceInt32;
 typedef uint32_t SceUInt32;
 
-typedef int32_t SceInt;
+typedef int32_t  SceInt;
 typedef uint32_t SceUInt;
 
-typedef int64_t SceInt64;
+typedef int64_t  SceInt64;
 typedef uint64_t SceUInt64;
 
-typedef int64_t SceLong64;
+typedef int64_t  SceLong64;
 typedef uint64_t SceULong64;
 
 typedef unsigned int SceSize;
-typedef int SceSSize;
+typedef signed int   SceSSize;
 
 typedef int SceBool;
 enum {
@@ -105,23 +106,27 @@ typedef struct SceIVector2 {
     SceInt x;
     SceInt y;
 } SceIVector2;
+VITASDK_BUILD_ASSERT_EQ(8, SceIVector2);
 
 typedef struct SceFVector2 {
     SceFloat x;
     SceFloat y;
 } SceFVector2;
+VITASDK_BUILD_ASSERT_EQ(8, SceFVector2);
 
 typedef struct SceIVector3 {
     SceInt x;
     SceInt y;
     SceInt z;
 } SceIVector3;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceIVector3);
 
 typedef struct SceFVector3 {
     SceFloat x;
     SceFloat y;
     SceFloat z;
 } SceFVector3;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceFVector3);
 
 typedef struct SceIVector4 {
     SceInt x;
@@ -129,6 +134,7 @@ typedef struct SceIVector4 {
     SceInt z;
     SceInt w;
 } SceIVector4;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceIVector4);
 
 typedef struct SceFVector4 {
     SceFloat x;
@@ -136,28 +142,33 @@ typedef struct SceFVector4 {
     SceFloat z;
     SceFloat w;
 } SceFVector4;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceFVector4);
 
 typedef struct SceIMatrix2 {
     SceIVector2 x;
     SceIVector2 y;
 } SceIMatrix2;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceIMatrix2);
 
 typedef struct SceFMatrix2 {
     SceFVector2 x;
     SceFVector2 y;
 } SceFMatrix2;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceFMatrix2);
 
 typedef struct SceIMatrix3 {
     SceIVector3 x;
     SceIVector3 y;
     SceIVector3 z;
 } SceIMatrix3;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceIMatrix3);
 
 typedef struct SceFMatrix3 {
     SceFVector3 x;
     SceFVector3 y;
     SceFVector3 z;
 } SceFMatrix3;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceFMatrix3);
 
 typedef struct SceIMatrix4 {
     SceIVector4 x;
@@ -165,6 +176,7 @@ typedef struct SceIMatrix4 {
     SceIVector4 z;
     SceIVector4 w;
 } SceIMatrix4;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceIMatrix4);
 
 typedef struct SceFMatrix4 {
     SceFVector4 x;
@@ -172,6 +184,7 @@ typedef struct SceFMatrix4 {
     SceFVector4 z;
     SceFVector4 w;
 } SceFMatrix4;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceFMatrix4);
 
 typedef struct SceFQuaternion {
     SceFloat x;
@@ -179,6 +192,7 @@ typedef struct SceFQuaternion {
     SceFloat z;
     SceFloat w;
 } SceFQuaternion;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceFQuaternion);
 
 typedef struct SceFColor {
     SceFloat r;
@@ -186,6 +200,7 @@ typedef struct SceFColor {
     SceFloat b;
     SceFloat a;
 } SceFColor;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceFColor);
 
 typedef struct SceFPlane {
     SceFloat a;
@@ -193,6 +208,7 @@ typedef struct SceFPlane {
     SceFloat c;
     SceFloat d;
 } SceFPlane;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceFPlane);
 
 typedef struct SceDateTime {
     unsigned short year;
@@ -203,6 +219,7 @@ typedef struct SceDateTime {
     unsigned short second;
     unsigned int microsecond;
 } SceDateTime;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceDateTime);
 
 
 #define SCE_OK (0)

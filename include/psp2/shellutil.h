@@ -7,6 +7,8 @@
 #ifndef _PSP2_SHELLUTIL_H_
 #define _PSP2_SHELLUTIL_H_
 
+#include <vitasdk/build_utils.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -74,6 +76,7 @@ int sceShellUtilUnlock(SceShellUtilLockType type);
 typedef struct SceShellUtilLaunchAppParam {
 	const char *cmd;
 } SceShellUtilLaunchAppParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceShellUtilLaunchAppParam);
 
 int sceShellUtilRequestLaunchApp(SceShellUtilLaunchAppParam *param);
 int sceShellUtilLaunchAppRequestLaunchApp(SceShellUtilLaunchAppParam *param);

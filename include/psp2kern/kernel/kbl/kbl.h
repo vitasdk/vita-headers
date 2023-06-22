@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_KBL_KBL_H_
 #define _PSP2KERN_KERNEL_KBL_KBL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/dipsw.h>
 #include <psp2kern/kernel/ssmgr.h>
@@ -61,6 +62,7 @@ typedef struct SceKblParam { // size is 0x100 or 0x200. must 0x200 on 3.60.
 	uint8_t coredump_session_key[0x20];
 	uint8_t unused[0xE0];
 } __attribute__((packed)) SceKblParam;
+VITASDK_BUILD_ASSERT_EQ(0x200, SceKblParam);
 
 #ifdef __cplusplus
 }

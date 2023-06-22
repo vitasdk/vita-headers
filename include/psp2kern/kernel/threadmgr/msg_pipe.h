@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_MSG_PIPE_H_
 #define _PSP2KERN_KERNEL_THREADMGR_MSG_PIPE_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -24,6 +25,7 @@ typedef struct SceKernelMsgPipeInfo {
 	int     num_send_wait_threads;
 	int     num_receive_wait_threads;
 } SceKernelMsgPipeInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMsgPipeInfo);
 
 /**
  * Get msgpipe info

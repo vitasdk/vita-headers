@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_EXCPMGR_H_
 #define _PSP2KERN_KERNEL_EXCPMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -38,6 +39,7 @@ typedef struct SceExcpmgrData { //Data in each array is per-CPU core
     void *ExcpStackTop[4]; 		//!< Top of the exception stack (size is 0x1000)
     void *ExcpStackBottom[4]; 		//!< Bottom of the exception stack
 } SceExcpmgrData;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceExcpmgrData);
 
 typedef struct SceExcpmgrExceptionContext { //!< Size is 0x400 on FW 3.60
     uint32_t r0;
@@ -95,10 +97,11 @@ typedef struct SceExcpmgrExceptionContext { //!< Size is 0x400 on FW 3.60
     uint32_t unusedD0;
     uint32_t unkD4; 		//<! Comes from SceVfpIntRegs memblock
     uint32_t DBGSCRext;
-    uint32_t unusedDC[9];  
+    uint32_t unusedDC[9];
     uint64_t VFP_registers[32]; //<! Content of floating-point registers d0-d31
     uint32_t unk200[128];       //<! Comes from SceVfpIntRegs memblock
-} SceExcpmgrExceptionContext;	
+} SceExcpmgrExceptionContext;
+VITASDK_BUILD_ASSERT_EQ(0x400, SceExcpmgrExceptionContext);
 
 typedef void(SceExcpmgrExceptionHandler)(SceExcpmgrExceptionContext* context, SceExcpHandlingCode code); //<! Exception handler function
 

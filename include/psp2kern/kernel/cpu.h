@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_CPU_H_
 #define _PSP2KERN_KERNEL_CPU_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/sysclib.h>
 #include <psp2kern/kernel/sysmem/mmu.h>
@@ -376,6 +377,7 @@ typedef struct SceCorelockContext {
 	int16_t core_count;
 	int16_t last_wait_core;
 } SceCorelockContext;
+VITASDK_BUILD_ASSERT_EQ(8, SceCorelockContext);
 
 void ksceKernelCorelockInitialize(SceCorelockContext *ctx);
 

@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSMEM_MMU_H_
 #define _PSP2KERN_KERNEL_SYSMEM_MMU_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -37,6 +38,7 @@ typedef struct SceKernelProcessContext {
 	SceUInt32 DACR;
 	SceUInt32 CONTEXTIDR;
 } SceKernelProcessContext;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceKernelProcessContext);
 
 int ksceKernelGetPidContext(SceUID pid, SceKernelProcessContext **ctx);
 

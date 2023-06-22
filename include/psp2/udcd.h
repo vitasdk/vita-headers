@@ -7,6 +7,7 @@
 #ifndef _PSP2_UDCD_H_
 #define _PSP2_UDCD_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -38,6 +39,7 @@ typedef enum SceUdcdStatusDriver {
 typedef struct {
 	uint8_t info[64];
 } SceUdcdDeviceInfo;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceUdcdDeviceInfo);
 
 typedef struct SceUdcdWaitParam {
 	int unk_00;
@@ -47,6 +49,7 @@ typedef struct SceUdcdWaitParam {
 	int unk_10;
 	const char *driverName;
 } SceUdcdWaitParam;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUdcdWaitParam);
 
 typedef struct SceUdcdDeviceState {
 	int unk_00;
@@ -56,6 +59,7 @@ typedef struct SceUdcdDeviceState {
 	int use_usb_charging;
 	int unk_14;
 } SceUdcdDeviceState;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUdcdDeviceState);
 
 /**
  * Get device state

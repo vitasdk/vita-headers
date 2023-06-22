@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_PROCESSMGR_H_
 #define _PSP2KERN_KERNEL_PROCESSMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -22,6 +23,7 @@ typedef struct SceKernelProcessInfo {
 	SceUID ppid;            //!< parent process ID
 	int unk[0xE8 / 4 - 6];  //!< the rest is unknown
 } SceKernelProcessInfo;
+VITASDK_BUILD_ASSERT_EQ(0xE8, SceKernelProcessInfo);
 
 void *ksceKernelGetProcessKernelBuf(SceUID pid);
 
@@ -32,6 +34,7 @@ void *ksceKernelGetProcessLocalStorageAddr(int key);
 int ksceKernelGetProcessLocalStorageAddrForPid(SceUID pid, int key, void **out_addr, int create_if_doesnt_exist);
 
 typedef SceUInt32 SceKernelProcessType;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelProcessType);
 
 /**
  * @brief       Create process

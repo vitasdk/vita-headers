@@ -6,6 +6,7 @@
 #ifndef _PSP2_KERNEL_MODULEMGR_H_
 #define _PSP2_KERNEL_MODULEMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -67,6 +68,7 @@ typedef struct SceKernelSegmentInfo {
 	SceSize filesz; //!< original size of memsz
 	SceUInt res;    //!< unused
 } SceKernelSegmentInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelSegmentInfo);
 
 typedef struct SceKernelModuleInfo {
 	SceSize size;                       //!< 0x1B8 for Vita 1.x
@@ -89,14 +91,17 @@ typedef struct SceKernelModuleInfo {
 	SceKernelSegmentInfo segments[4];
 	SceUInt state;                       //!< see:SceKernelModuleState
 } SceKernelModuleInfo;
+VITASDK_BUILD_ASSERT_EQ(0x1B8, SceKernelModuleInfo);
 
 typedef struct SceKernelLMOption {
 	SceSize size;
 } SceKernelLMOption;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelLMOption);
 
 typedef struct SceKernelULMOption {
 	SceSize size;
 } SceKernelULMOption;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelULMOption);
 
 int sceKernelGetModuleInfo(SceUID uid, SceKernelModuleInfo *info);
 int sceKernelGetModuleList(SceUInt8 type, SceUID *uids, SceSize *num);
@@ -116,6 +121,7 @@ typedef struct SceKernelSystemSwVersion {
 	SceUInt version;
 	SceUInt unk_24;
 } SceKernelSystemSwVersion;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceKernelSystemSwVersion);
 
 /* For backward compatibility */
 typedef SceKernelSystemSwVersion SceKernelFwInfo;

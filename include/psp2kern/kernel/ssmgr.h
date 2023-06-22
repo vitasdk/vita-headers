@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SSMGR_H_
 #define _PSP2KERN_KERNEL_SSMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -26,10 +27,12 @@ typedef struct SceConsoleId { // size is 0x10
 	};
 	uint8_t unk3[7];
 } SceConsoleId;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceConsoleId);
 
 typedef struct SceOpenPsId { // size is 0x10
 	uint8_t open_psid[0x10];
 } SceOpenPsId;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceOpenPsId);
 
 typedef struct ScePsCode { // size is 0x10
 	uint16_t company_code;
@@ -37,6 +40,7 @@ typedef struct ScePsCode { // size is 0x10
 	uint16_t product_sub_code;
 	uint16_t factory_code;
 } ScePsCode;
+VITASDK_BUILD_ASSERT_EQ(8, ScePsCode);
 
 int ksceSblAimgrGetConsoleId(SceConsoleId *cid);
 int ksceSblAimgrGetOpenPsId(SceOpenPsId *open_psid);
@@ -54,6 +58,7 @@ typedef struct ScePortabilityData { // size is 0x24
 	SceSize msg_size;           // max size is 0x20
 	uint8_t msg[0x20];
 } ScePortabilityData;
+VITASDK_BUILD_ASSERT_EQ(0x24, ScePortabilityData);
 
 int ksceSblSsDecryptWithPortability(SceUInt32 key_type, void *iv, ScePortabilityData *src, ScePortabilityData *dst);
 

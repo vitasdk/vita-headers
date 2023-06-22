@@ -44,7 +44,20 @@ jobs:
         vdpm openssl
         vdpm soloud
         vdpm zlib
-        cd $TRAVIS_BUILD_DIR
+        vdpm taihen
+    - name: Header sanitize checks
+      run: |
+        export VITASDK=$PWD/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        cd check_size
+        mkdir build
+        cd build
+        cmake ..
+        make
+    - name: Sample build test
+      run: |
+        export VITASDK=$PWD/vitasdk
+        export PATH=$VITASDK/bin:$PATH
         git clone https://github.com/vitasdk/samples
         cd samples
         mkdir build

@@ -6,6 +6,7 @@
 #ifndef _PSP2COMMON_NPDRM_H_
 #define _PSP2COMMON_NPDRM_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
@@ -27,6 +28,7 @@ typedef struct SceNpDrmActivationData { // size is 0x1038
   SceUInt8 unk_sigmature[0x40];
   SceUInt8 ecdsa_signature[0x28]; // checked by pspemu, and SceNpDrm.
 } SceNpDrmActivationData;
+VITASDK_BUILD_ASSERT_EQ(0x1038, SceNpDrmActivationData);
 
 typedef struct SceNpDrmLicense { // size is 0x200
   SceInt16 version;       // -1 VITA, 0 PSP, 1 PSP-VITA
@@ -51,6 +53,7 @@ typedef struct SceNpDrmLicense { // size is 0x200
   int sku_flag;
   char rsa_signature[0x100];
 } SceNpDrmLicense;
+VITASDK_BUILD_ASSERT_EQ(0x200, SceNpDrmLicense);
 
 typedef struct ScePsmDrmLicense {
   char magic[0x8];
@@ -69,6 +72,7 @@ typedef struct ScePsmDrmLicense {
   SceUInt8 signature[0x1D0];
   SceUInt8 rsa_signature[0x100];
 } ScePsmDrmLicense;
+VITASDK_BUILD_ASSERT_EQ(0x400, ScePsmDrmLicense);
 
 
 #ifdef __cplusplus

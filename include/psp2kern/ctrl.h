@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_CTRL_H_
 #define _PSP2KERN_CTRL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -89,6 +90,7 @@ typedef struct SceCtrlData {
 	/** Reserved. */
 	uint8_t 	reserved1[10];
 } SceCtrlData;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceCtrlData);
 
 /** Structure to pass as argument to ::sceCtrlSetRapidFire */
 typedef struct SceCtrlRapidFireRule {
@@ -99,6 +101,7 @@ typedef struct SceCtrlRapidFireRule {
 	unsigned int Make;
 	unsigned int Break;
 } SceCtrlRapidFireRule;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceCtrlRapidFireRule);
 
 /** Structure to pass as argument to ::sceCtrlSetActuator */
 typedef struct SceCtrlActuator {
@@ -106,12 +109,14 @@ typedef struct SceCtrlActuator {
 	unsigned char large;  //!< Vibration strength of the large motor
 	uint8_t       unk[6]; //!< Unknown
 } SceCtrlActuator;
+VITASDK_BUILD_ASSERT_EQ(8, SceCtrlActuator);
 
 /** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
 typedef struct SceCtrlPortInfo {
 	uint8_t port[5];  //!< Controller type of each ports
 	uint8_t unk[11];  //!< Unknown
 } SceCtrlPortInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceCtrlPortInfo);
 
 /** Structure to pass as argument to ::ksceCtrlRegisterVirtualControllerDriver */
 typedef struct SceCtrlVirtualControllerDriver {
@@ -129,6 +134,7 @@ typedef struct SceCtrlVirtualControllerDriver {
 	int (*unk1)(int port);
 	int (*singleControllerMode)(int port);
 } SceCtrlVirtualControllerDriver;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceCtrlVirtualControllerDriver);
 
 /**
  * Set the controller mode.

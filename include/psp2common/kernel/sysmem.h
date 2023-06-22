@@ -6,6 +6,7 @@
 #ifndef _PSP2COMMON_KERNEL_SYSMEM_H_
 #define _PSP2COMMON_KERNEL_SYSMEM_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
@@ -13,6 +14,7 @@ extern "C" {
 #endif
 
 typedef SceUInt32 SceKernelMemBlockType;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelMemBlockType);
 
 /*
  * User/Kernel shared memtypes

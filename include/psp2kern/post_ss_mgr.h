@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_POST_SS_MGR_H_
 #define _PSP2KERN_POST_SS_MGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -17,11 +18,13 @@ typedef struct SceSblRsaDataParam {
 	void *data;
 	unsigned int size;
 } SceSblRsaDataParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceSblRsaDataParam);
 
 typedef struct SceSblRsaPublicKeyParam {
 	const void *n;
 	const void *k; // e/d
 } SceSblRsaPublicKeyParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceSblRsaPublicKeyParam);
 
 typedef struct SceSblRsaPrivateKeyParam {
 	int unk_0x00;
@@ -34,6 +37,7 @@ typedef struct SceSblRsaPrivateKeyParam {
 	void *dq; // d % (q - 1)
 	void *qp; // q^-1 % p
 } SceSblRsaPrivateKeyParam;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceSblRsaPrivateKeyParam);
 
 
 /**

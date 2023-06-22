@@ -7,6 +7,8 @@
 #ifndef _PSP2KERN_NET_NET_H_
 #define _PSP2KERN_NET_NET_H_
 
+#include <vitasdk/build_utils.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -410,10 +412,12 @@ typedef enum SceNetIcmpCode {
 typedef struct SceNetFdSet {
 	unsigned int bits[32];
 } SceNetFdSet;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceNetFdSet);
 
 typedef struct SceNetInAddr {
 	unsigned int s_addr;
 } SceNetInAddr;
+VITASDK_BUILD_ASSERT_EQ(4, SceNetInAddr);
 
 typedef struct SceNetSockaddrIn {
 	unsigned char sin_len;
@@ -423,35 +427,42 @@ typedef struct SceNetSockaddrIn {
 	unsigned short int sin_vport;
 	char sin_zero[6];
 } SceNetSockaddrIn;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceNetSockaddrIn);
 
 typedef struct SceNetIpMreq {
 	SceNetInAddr imr_multiaddr;
 	SceNetInAddr imr_interface;
 } SceNetIpMreq;
+VITASDK_BUILD_ASSERT_EQ(8, SceNetIpMreq);
 
 typedef struct SceNetEtherAddr {
 	unsigned char data[6];
 } SceNetEtherAddr;
+VITASDK_BUILD_ASSERT_EQ(6, SceNetEtherAddr);
 
 typedef struct SceNetDnsInfo {
 	SceNetInAddr dns_addr[2];
 } SceNetDnsInfo;
+VITASDK_BUILD_ASSERT_EQ(8, SceNetDnsInfo);
 
 typedef struct SceNetLinger {
 	int l_onoff;
 	int l_linger;
 } SceNetLinger;
+VITASDK_BUILD_ASSERT_EQ(8, SceNetLinger);
 
 typedef struct SceNetSockaddr {
 	unsigned char sa_len;
 	unsigned char sa_family;
 	char sa_data[14];
 } SceNetSockaddr;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceNetSockaddr);
 
 typedef struct SceNetIovec {
 	void *iov_base;
 	unsigned int iov_len;
 } SceNetIovec;
+VITASDK_BUILD_ASSERT_EQ(8, SceNetIovec);
 
 typedef struct SceNetMsghdr {
 	void *msg_name;
@@ -462,6 +473,7 @@ typedef struct SceNetMsghdr {
 	unsigned int msg_controllen;
 	int msg_flags;
 } SceNetMsghdr;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceNetMsghdr);
 
 typedef struct SceNetSockInfo {
 	char name[SCE_NET_DEBUG_NAME_LEN_MAX + 1];
@@ -482,6 +494,7 @@ typedef struct SceNetSockInfo {
 	int flags;
 	int reserved[8];
 } SceNetSockInfo;
+VITASDK_BUILD_ASSERT_EQ(0x6C, SceNetSockInfo);
 
 typedef struct SceNetStatisticsInfo {
 
@@ -493,16 +506,19 @@ typedef struct SceNetStatisticsInfo {
 	int libnet_mem_free_size;
 	int libnet_mem_free_min;
 } SceNetStatisticsInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceNetStatisticsInfo);
 
 typedef struct SceNetIpHeaderIpVerHl {
 	unsigned char hl;
 	unsigned char ver;
 } SceNetIpHeaderIpVerHl;
+VITASDK_BUILD_ASSERT_EQ(2, SceNetIpHeaderIpVerHl);
 
 typedef union SceNetIpHeaderUnion {
 	SceNetIpHeaderIpVerHl ip_ver_hl;
 	unsigned char ver_hl;
 } SceNetIpHeaderUnion;
+VITASDK_BUILD_ASSERT_EQ(2, SceNetIpHeaderUnion);
 
 typedef struct SceNetIpHeader {
 	SceNetIpHeaderUnion un;
@@ -516,22 +532,26 @@ typedef struct SceNetIpHeader {
 	SceNetInAddr ip_src;
 	SceNetInAddr ip_dst;
 } SceNetIpHeader;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceNetIpHeader);
 
 typedef struct SceNetIcmpHeaderEcho {
 	unsigned short id;
 	unsigned short sequence;
 } SceNetIcmpHeaderEcho;
+VITASDK_BUILD_ASSERT_EQ(4, SceNetIcmpHeaderEcho);
 
 typedef struct SceNetIcmpHeaderFrag {
 	unsigned short unused;
 	unsigned short mtu;
 } SceNetIcmpHeaderFrag;
+VITASDK_BUILD_ASSERT_EQ(4, SceNetIcmpHeaderFrag);
 
 typedef union SceNetIcmpHeaderUnion {
 	SceNetIcmpHeaderEcho echo;
 	unsigned int gateway;
 	SceNetIcmpHeaderFrag frag;
 } SceNetIcmpHeaderUnion;
+VITASDK_BUILD_ASSERT_EQ(4, SceNetIcmpHeaderUnion);
 
 typedef struct SceNetIcmpHeader {
 	unsigned char type;
@@ -539,6 +559,7 @@ typedef struct SceNetIcmpHeader {
 	unsigned short checksum;
 	SceNetIcmpHeaderUnion un;
 } SceNetIcmpHeader;
+VITASDK_BUILD_ASSERT_EQ(8, SceNetIcmpHeader);
 
 /* prototypes */
 

@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_COREDUMP_H_
 #define _PSP2KERN_COREDUMP_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -29,6 +30,7 @@ typedef struct SceCoredumpTriggerParam {
 	SceUID crash_thid;
 	int data_0x30;
 } SceCoredumpTriggerParam;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceCoredumpTriggerParam);
 
 typedef int (* SceKernelCoredumpStateUpdateCallback)(int task_id, SceUID pid, int progress);
 typedef int (* SceKernelCoredumpStateFinishCallback)(int task_id, SceUID pid, int result, const char *path, SceSize path_len, int unk);

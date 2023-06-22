@@ -7,6 +7,7 @@
 #ifndef _PSP2_AUDIOENC_H_
 #define _PSP2_AUDIOENC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <stdint.h>
 
@@ -63,6 +64,7 @@ typedef struct SceAudioencInitStreamParam {
 	SceSize size;               //!< sizeof(SceAudioencInitStreamParam)
 	unsigned int totalStreams;  //!< Total number of audio streams
 } SceAudioencInitStreamParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceAudioencInitStreamParam);
 
 /** Information structure for CELP */
 typedef struct SceAudioencInfoCelp {
@@ -71,6 +73,7 @@ typedef struct SceAudioencInfoCelp {
 	unsigned int samplingRate;       //!< Sampling rate
 	unsigned int bitRate;            //!< Bit rate (one of ::SceAudioencCelpBitrate)
 } SceAudioencInfoCelp;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAudioencInfoCelp);
 
 /** Optional information structure for CELP */
 typedef struct SceAudioencOptInfoCelp {
@@ -79,24 +82,28 @@ typedef struct SceAudioencOptInfoCelp {
 	SceSize headerSize;            //!< Header size
 	unsigned int encoderVersion;   //!< Encoder version
 } SceAudioencOptInfoCelp;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceAudioencOptInfoCelp);
 
 /** Initialization structure to pass as argument to ::sceAudioencInitLibrary */
 typedef union SceAudioencInitParam {
 	SceSize size;                     //!< sizeof(SceAudioencInitParam)
 	SceAudioencInitStreamParam celp;  //!< See ::SceAudioencInitStreamParam
 } SceAudioencInitParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceAudioencInitParam);
 
 /** Audio encoder info */
 typedef union SceAudioencInfo {
 	SceSize size;              //!< sizeof(SceAudioencInfo)
 	SceAudioencInfoCelp celp;  //!< Information structure for CELP
 } SceAudioencInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAudioencInfo);
 
 /** Audio encoder optional info */
 typedef union SceAudioencOptInfo {
 	SceSize size;                 //!< sizeof(SceAudioencOptInfo)
 	SceAudioencOptInfoCelp celp;  //!< Optional information structure for CELP
 } SceAudioencOptInfo;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceAudioencOptInfo);
 
 typedef struct SceAudioencCtrl {
 	SceSize size;                   //!< sizeof(SceAudioencCtrl)
@@ -111,6 +118,7 @@ typedef struct SceAudioencCtrl {
 	SceAudioencInfo *pInfo;         //!< Pointer to ::SceAudioencInfo
 	SceAudioencOptInfo *pOptInfo;   //!< Pointer to ::SceAudioencOptInfo
 } SceAudioencCtrl;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceAudioencCtrl);
 
 int sceAudioencInitLibrary(int codecType, SceAudioencInitParam *pInitParam);
 int sceAudioencTermLibrary(unsigned int codecType);

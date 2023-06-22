@@ -7,6 +7,7 @@
 #ifndef _PSP2_SCREENSHOT_H_
 #define _PSP2_SCREENSHOT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -49,6 +50,7 @@ typedef struct SceScreenShotParam {
 	const SceWChar32 *gameComment;  //!< Game description
 	void *reserved;                 //!< Reserved range (Must be NULL)
 } SceScreenShotParam;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceScreenShotParam);
 
 //! Set screenshot params
 int sceScreenShotSetParam(const SceScreenShotParam *param);

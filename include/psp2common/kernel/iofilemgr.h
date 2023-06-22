@@ -6,6 +6,7 @@
 #ifndef _PSP2COMMON_KERNEL_IOFILEMGR_H_
 #define _PSP2COMMON_KERNEL_IOFILEMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
@@ -19,6 +20,7 @@ typedef struct SceIoDevInfo {
 	SceSize cluster_size;
 	void *unk;
 } SceIoDevInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceIoDevInfo);
 
 
 /* Note: Not all of these sceIoOpen() flags are not compatible with the
@@ -131,6 +133,7 @@ typedef struct SceIoStat {
 	SceDateTime st_mtime;        //!< Last modification time
 	unsigned int st_private[6];  //!< Device-specific data
 } SceIoStat;
+VITASDK_BUILD_ASSERT_EQ(0x58, SceIoStat);
 
 /** Defines for `sceIoChstat` and `sceIoChstatByFd` **/
 #define SCE_CST_MODE        0x0001
@@ -147,6 +150,7 @@ typedef struct SceIoDirent {
 	void *d_private;  //!< Device-specific data
 	int dummy;        //!< Dummy data
 } SceIoDirent;
+VITASDK_BUILD_ASSERT_EQ(0x160, SceIoDirent);
 
 
 #ifdef __cplusplus

@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_MODULEMGR_H_
 #define _PSP2KERN_KERNEL_MODULEMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -35,6 +36,7 @@ typedef enum SceKernelModuleState {
 typedef struct SceKernelModuleName {
   char s[0x1C];
 } SceKernelModuleName;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceKernelModuleName);
 
 typedef struct SceKernelSegmentInfo {
   SceSize size;   //!< this structure size (0x18)
@@ -44,6 +46,7 @@ typedef struct SceKernelSegmentInfo {
   SceSize filesz; //!< original size of memsz
   SceUInt res;    //!< unused
 } SceKernelSegmentInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelSegmentInfo);
 
 typedef struct SceKernelModuleInfo {
   SceSize size;                       //!< 0x1B8 for Vita 1.x
@@ -66,14 +69,17 @@ typedef struct SceKernelModuleInfo {
   SceKernelSegmentInfo segments[4];
   SceUInt state;                       //!< see:SceKernelModuleState
 } SceKernelModuleInfo;
+VITASDK_BUILD_ASSERT_EQ(0x1B8, SceKernelModuleInfo);
 
 typedef struct {
   SceSize size;
 } SceKernelLMOption;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelLMOption);
 
 typedef struct {
   SceSize size;
 } SceKernelULMOption;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelULMOption);
 
 typedef struct {
   SceSize size;
@@ -81,6 +87,7 @@ typedef struct {
   SceUInt version;
   SceUInt unk_24;
 } SceKernelFwInfo;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceKernelFwInfo);
 
 typedef struct {
   SceSize size; //!< sizeof(SceKernelSegmentInfo2) (0x14)
@@ -89,6 +96,7 @@ typedef struct {
   uint32_t memsz;
   int unk_10;
 } SceKernelSegmentInfo2;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceKernelSegmentInfo2);
 
 typedef struct {
   SceSize size;
@@ -124,6 +132,7 @@ typedef struct {
     } seg4;
   };
 } SceKernelModuleListInfo;
+VITASDK_BUILD_ASSERT_EQ(0xB0, SceKernelModuleListInfo);
 
 typedef struct SceKernelModuleLibraryInfo {
   SceSize size; //!< sizeof(SceKernelModuleLibraryInfo) : 0x120
@@ -139,6 +148,7 @@ typedef struct SceKernelModuleLibraryInfo {
   SceSize number_of_imported;
   SceUID modid2;
 } SceKernelModuleLibraryInfo;
+VITASDK_BUILD_ASSERT_EQ(0x120, SceKernelModuleLibraryInfo);
 
 /**
  * @brief Register syscall function

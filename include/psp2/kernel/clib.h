@@ -7,6 +7,7 @@
 #ifndef _PSP2_KERNEL_CLIB_H_
 #define _PSP2_KERNEL_CLIB_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <stdarg.h>
 
@@ -18,6 +19,7 @@ extern "C" {
  * A handle for a managed memory space.
  */
 typedef void* SceClibMspace;
+VITASDK_BUILD_ASSERT_EQ(4, SceClibMspace);
 
 /**
  * Structure for stats of SceClibMspace
@@ -28,6 +30,7 @@ typedef struct SceClibMspaceStats {
     SceSize peak_in_use;    //!< Peak memory allocated
     SceSize current_in_use; //!< Current memory allocated
 } SceClibMspaceStats;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceClibMspaceStats);
 
 /**
  * Run bkpt #0x88 and end the process in state -1

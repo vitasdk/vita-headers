@@ -7,6 +7,7 @@
 #ifndef _PSP2_INCOMING_DIALOG_H_
 #define _PSP2_INCOMING_DIALOG_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/types.h>
 #include <psp2common/defs.h>
@@ -49,6 +50,7 @@ typedef struct SceIncomingDialogParam {
 	SceWChar16 dialogText[0x80];        //Text for dialog window, also shared with notification
 	SceInt16 separator2;                //must be 0
 } SceIncomingDialogParam;
+VITASDK_BUILD_ASSERT_EQ(0x25C, SceIncomingDialogParam);
 
 /**
  * Initialize incoming dialog library, init_type must be 1.

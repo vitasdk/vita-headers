@@ -7,6 +7,7 @@
 #ifndef _PSP2_PAF_MISC_H_
 #define _PSP2_PAF_MISC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -19,6 +20,7 @@ typedef struct ScePafDateTime {
   int data_0x10;
   int data_0x14;
 } ScePafDateTime;
+VITASDK_BUILD_ASSERT_EQ(0x18, ScePafDateTime);
 
 int scePafGetCurrentClockLocalTime(ScePafDateTime *data);
 
@@ -26,6 +28,7 @@ typedef struct ScePafSha1Context { // size is 0x68
 	uint32_t h[5];
 	char unk[0x54];
 } ScePafSha1Context;
+VITASDK_BUILD_ASSERT_EQ(0x68, ScePafSha1Context);
 
 int scePafSha1Init(ScePafSha1Context *context);
 int scePafSha1Update(ScePafSha1Context *context, const void *data, SceSize length);
@@ -51,6 +54,7 @@ typedef struct ScePafHeapContext { // size is 0x60-bytes
 	 */
 	SceInt32 mode;
 } ScePafHeapContext;
+VITASDK_BUILD_ASSERT_EQ(0x60, ScePafHeapContext);
 
 typedef struct ScePafHeapOpt { // size is 0x14-bytes
 	int a1;
@@ -60,6 +64,7 @@ typedef struct ScePafHeapOpt { // size is 0x14-bytes
 	SceInt32 mode;
 	int a5;
 } ScePafHeapOpt;
+VITASDK_BUILD_ASSERT_EQ(0x14, ScePafHeapOpt);
 
 void scePafCreateHeap(ScePafHeapContext *context, void *membase, SceSize size, const char *name, ScePafHeapOpt *opt);
 void scePafDeleteHeap(ScePafHeapContext *context);

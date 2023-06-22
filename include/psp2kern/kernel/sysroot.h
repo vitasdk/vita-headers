@@ -8,6 +8,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSROOT_H_
 #define _PSP2KERN_KERNEL_SYSROOT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/kbl/kbl.h>
 #include <psp2kern/kernel/cpu.h>
@@ -152,6 +153,7 @@ typedef struct SceUIDSysrootObject { // size is 0x41C on FW 3.60
 	void *unk_func_0x414; // ScePamgr
 	SceUInt32 magic2;
 } SceUIDSysrootObject;
+VITASDK_BUILD_ASSERT_EQ(0x41C, SceUIDSysrootObject);
 
 typedef SceUIDSysrootObject SceSysroot;
 
@@ -166,6 +168,7 @@ typedef struct SceKernelSysrootSelfInfo {
 	void *self_data;
 	SceSize self_size;
 } SceKernelSysrootSelfInfo;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceKernelSysrootSelfInfo);
 
 /**
  * Get sysroot object pointer.
@@ -248,6 +251,7 @@ typedef struct SceSysrootProcessHandler {
     void (* unk_20)(SceUID pid, SceUID modid, uint64_t time);
     void (* unk_24)(SceUID pid, SceUID modid, int flags, uint64_t time);
 } SceSysrootProcessHandler;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceSysrootProcessHandler);
 
 /**
  * Set handlers for the process lifecycle.
@@ -286,6 +290,7 @@ typedef struct SceSysrootDbgpHandler {
     int  (* unk_0x54)(int a1, int a2, int a3, int a4, int a5);
     int  (* unk_0x58)(int a1, int a2, int a3);
 } SceSysrootDbgpHandler;
+VITASDK_BUILD_ASSERT_EQ(0x5C, SceSysrootDbgpHandler);
 
 /**
  * Register Dbgp handlers.

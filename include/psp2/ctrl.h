@@ -7,7 +7,7 @@
 #ifndef _PSP2_CTRL_H_
 #define _PSP2_CTRL_H_
 
-#include <stdint.h>
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -115,6 +115,7 @@ typedef struct SceCtrlData {
 	/** Reserved. */
 	uint8_t 	reserved[4];
 } SceCtrlData;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceCtrlData);
 
 /** Structure to pass as argument to ::sceCtrlSetRapidFire */
 typedef struct SceCtrlRapidFireRule {
@@ -125,6 +126,7 @@ typedef struct SceCtrlRapidFireRule {
 	unsigned int Make;
 	unsigned int Break;
 } SceCtrlRapidFireRule;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceCtrlRapidFireRule);
 
 /** Structure to pass as argument to ::sceCtrlSetActuator */
 typedef struct SceCtrlActuator {
@@ -132,12 +134,14 @@ typedef struct SceCtrlActuator {
 	unsigned char large; //!< Vibration strength of the large motor
 	uint8_t unk[6];      //!< Unknown
 } SceCtrlActuator;
+VITASDK_BUILD_ASSERT_EQ(8, SceCtrlActuator);
 
 /** Structure to pass as argument to ::sceCtrlGetControllerPortInfo */
 typedef struct SceCtrlPortInfo {
 	uint8_t port[5];  //!< Controller type of each port (See ::SceCtrlExternalInputMode)
 	uint8_t unk[11];  //!< Unknown
 } SceCtrlPortInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceCtrlPortInfo);
 
 /**
  * Set the controller mode.

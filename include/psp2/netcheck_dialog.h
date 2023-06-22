@@ -7,9 +7,11 @@
 #ifndef _PSP2_NETCHECK_DIALOG_H_
 #define _PSP2_NETCHECK_DIALOG_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/common_dialog.h>
 #include <psp2/pspnet_adhocctl.h>
+#include <psp2/kernel/clib.h>
 #include <psp2/net/net.h>
 
 #ifdef __cplusplus
@@ -56,6 +58,7 @@ typedef struct SceNpCommunicationId {
 	SceUChar8 num;
 	char dummy;
 } SceNpCommunicationId;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceNpCommunicationId);
 
 typedef struct SceNetCheckDialogPS3ConnectParam {
 	SceInt32 action;
@@ -63,12 +66,14 @@ typedef struct SceNetCheckDialogPS3ConnectParam {
 	char wpaKey[64 + 1];
 	char titleId[9 + 1];
 } SceNetCheckDialogPS3ConnectParam;
+VITASDK_BUILD_ASSERT_EQ(0x70, SceNetCheckDialogPS3ConnectParam);
 
 typedef struct SceNetCheckDialogAgeRestriction {
 	char countryCode[SCE_NETCHECK_DIALOG_COUNTRY_CODE_LEN];
 	SceInt8 age;
 	SceInt8 padding;
 } SceNetCheckDialogAgeRestriction;
+VITASDK_BUILD_ASSERT_EQ(4, SceNetCheckDialogAgeRestriction);
 
 typedef struct SceNetCheckDialogParam {
 	SceUInt32 sdkVersion;
@@ -84,12 +89,14 @@ typedef struct SceNetCheckDialogParam {
 	const SceNetCheckDialogAgeRestriction *ageRestriction;
 	SceUInt8 reserved[104];
 } SceNetCheckDialogParam;
+VITASDK_BUILD_ASSERT_EQ(0xE0, SceNetCheckDialogParam);
 
 typedef struct SceNetCheckDialogResult {
 	SceInt32 result;
 	SceBool psnModeSucceeded;
 	SceUInt8 reserved[124];
 } SceNetCheckDialogResult;
+VITASDK_BUILD_ASSERT_EQ(0x84, SceNetCheckDialogResult);
 
 typedef struct SceNetCheckDialogPS3ConnectInfo {
 	SceNetInAddr inaddr;
@@ -97,11 +104,12 @@ typedef struct SceNetCheckDialogPS3ConnectInfo {
 	SceUInt8 macAddress[6];
 	SceUInt8 reserved[6];
 } SceNetCheckDialogPS3ConnectInfo;
+VITASDK_BUILD_ASSERT_EQ(0x90, SceNetCheckDialogPS3ConnectInfo);
 
 static inline
 void sceNetCheckDialogParamInit(SceNetCheckDialogParam *param)
 {
-	memset(param, 0x0, sizeof(SceNetCheckDialogParam));
+	sceClibMemset(param, 0x0, sizeof(SceNetCheckDialogParam));
 	_sceCommonDialogSetMagicNumber(&param->commonParam);
 	param->sdkVersion = PSP2_SDK_VERSION;
 	param->defaultAgeRestriction = SCE_NETCHECK_DIALOG_INITIAL_AGE_RESTRICTION;

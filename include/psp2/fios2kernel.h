@@ -7,6 +7,7 @@
 #ifndef _PSP2_FIOS2KERNEL_H_
 #define _PSP2_FIOS2KERNEL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -14,7 +15,9 @@ extern "C" {
 #endif
 
 typedef int32_t SceFiosKernelOverlayDH;
+VITASDK_BUILD_ASSERT_EQ(4, SceFiosKernelOverlayDH);
 typedef int32_t SceFiosKernelOverlayID;
+VITASDK_BUILD_ASSERT_EQ(4, SceFiosKernelOverlayID);
 
 // missing structs
 typedef struct SceFiosKernelOverlay SceFiosKernelOverlay;
@@ -30,6 +33,7 @@ typedef struct SceFiosDHOpenSyncSyscallArgs {
 	SceUInt8 to_order;
 	int padding[2];
 } SceFiosDHOpenSyncSyscallArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceFiosDHOpenSyncSyscallArgs);
 
 int _sceFiosKernelOverlayDHOpenSync(SceFiosKernelOverlayDH *out_dh, const char *path, SceUInt8 from_order, SceFiosDHOpenSyncSyscallArgs *args);
 int _sceFiosKernelOverlayDHReadSync(SceFiosKernelOverlayDH dh, SceFiosNativeDirEntry *out_entry);
@@ -46,6 +50,7 @@ typedef struct SceFiosGetListSyscallArgs {
 	int data_0x10;
 	int data_0x14;
 } SceFiosGetListSyscallArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosGetListSyscallArgs);
 
 int _sceFiosKernelOverlayGetList(SceUID pid, SceUInt8 min_order, SceUInt8 max_order, SceFiosGetListSyscallArgs *args);
 int _sceFiosKernelOverlayGetRecommendedScheduler(int avail, const char *partially_resolved_path, SceUInt64 *a3);
@@ -62,6 +67,7 @@ typedef struct SceFiosResolveSyncSyscallArgs {
 	int data_0x10;
 	int data_0x14;
 } SceFiosResolveSyncSyscallArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosResolveSyncSyscallArgs);
 
 int _sceFiosKernelOverlayResolveSync(SceUID pid, int resolve_flag, const char *in_path, SceFiosResolveSyncSyscallArgs *args);
 
@@ -74,6 +80,7 @@ typedef struct SceFiosResolveWithRangeSyncSyscallArgs {
 	int data_0x10;
 	int data_0x14;
 } SceFiosResolveWithRangeSyncSyscallArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosResolveWithRangeSyncSyscallArgs);
 
 int _sceFiosKernelOverlayResolveWithRangeSync(SceUID pid, int resolve_flag, const char *in_path, SceFiosResolveWithRangeSyncSyscallArgs *args);
 int _sceFiosKernelOverlayThreadIsDisabled(void);

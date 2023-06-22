@@ -6,6 +6,7 @@
 #ifndef _PSP2COMMON_KERNEL_MSIF_H_
 #define _PSP2COMMON_KERNEL_MSIF_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
@@ -25,6 +26,7 @@ typedef struct SceMsInfo {
     SceUInt32 unk_0x2C;
     SceUInt8 id[0x10];
 } SceMsInfo;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceMsInfo);
 
 #ifdef __cplusplus
 }

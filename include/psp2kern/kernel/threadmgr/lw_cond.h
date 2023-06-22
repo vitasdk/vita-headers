@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_LW_COND_H_
 #define _PSP2KERN_KERNEL_THREADMGR_LW_COND_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/threadmgr/lw_mutex.h>
 
@@ -17,10 +18,12 @@ extern "C" {
 typedef struct  SceKernelLwCondWork {
 	SceInt64 data[4];
 } SceKernelLwCondWork;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceKernelLwCondWork);
 
 typedef struct SceKernelLwCondOptParam {
 	SceSize size;
 } SceKernelLwCondOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelLwCondOptParam);
 
 typedef struct SceKernelLwCondInfo {
 	SceSize size;
@@ -31,6 +34,7 @@ typedef struct SceKernelLwCondInfo {
 	SceKernelLwMutexWork *lwmutex;
 	int     num_wait_threads;
 } SceKernelLwCondInfo;
+VITASDK_BUILD_ASSERT_EQ(0x38, SceKernelLwCondInfo);
 
 int ksceKernelGetLwCondInfo(SceUID lwcond_id, SceKernelLwCondInfo *info);
 

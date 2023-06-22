@@ -7,6 +7,8 @@
 #ifndef _PSP2_NET_HTTP_H_
 #define _PSP2_NET_HTTP_H_
 
+#include <vitasdk/build_utils.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -171,6 +173,7 @@ typedef struct SceHttpMemoryPoolStats {
 	unsigned int currentInuseSize;
 	int reserved;
 } SceHttpMemoryPoolStats;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceHttpMemoryPoolStats);
 
 typedef enum SceHttpMethods {
 	SCE_HTTP_METHOD_GET,
@@ -195,6 +198,7 @@ typedef struct SceHttpUriElement {
 	unsigned short port;
 	unsigned char  reserved[10];
 } SceHttpUriElement;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceHttpUriElement);
 
 typedef enum SceHttpVersion {
 	SCE_HTTP_VERSION_1_0 = 1,
@@ -230,11 +234,13 @@ typedef struct SceHttpsData {
 	char *ptr;
 	unsigned int size;
 } SceHttpsData;
+VITASDK_BUILD_ASSERT_EQ(8, SceHttpsData);
 
 typedef struct SceHttpsCaList {
 	void **caCerts;
 	int caNum;
 } SceHttpsCaList;
+VITASDK_BUILD_ASSERT_EQ(8, SceHttpsCaList);
 
 /* callbacks */
 

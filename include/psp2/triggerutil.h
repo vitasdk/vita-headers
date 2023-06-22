@@ -7,6 +7,7 @@
 #ifndef _PSP2_TRIGGERUTIL_H_
 #define _PSP2_TRIGGERUTIL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/rtc.h>
 #include <psp2/types.h>
@@ -59,6 +60,7 @@ typedef struct SceTriggerUtilEventParamDaily { // size is 0x50
 	SceUInt16 repeatDays;                      // bitwise
 	SceChar8 reserved[0x40];
 } SceTriggerUtilEventParamDaily;
+VITASDK_BUILD_ASSERT_EQ(0x50, SceTriggerUtilEventParamDaily);
 
 typedef struct SceTriggerUtilEventParamOneTime { // size is 0x54
 	SceUInt32 ver;
@@ -67,18 +69,21 @@ typedef struct SceTriggerUtilEventParamOneTime { // size is 0x54
 	SceUInt8 extraParam2;                        // set to 0
 	SceChar8 reserved[0x44];
 } SceTriggerUtilEventParamOneTime;
+VITASDK_BUILD_ASSERT_EQ(0x58, SceTriggerUtilEventParamOneTime);
 
 typedef struct SceTriggerUtilUserAppInfo { // size is 0x46A
 	SceWChar16 name[0x34];
 	SceChar8 iconPath[0x400];
 	short unk;
 } SceTriggerUtilUserAppInfo;
+VITASDK_BUILD_ASSERT_EQ(0x46A, SceTriggerUtilUserAppInfo);
 
 typedef struct SceTriggerUtilSystemAppInfo { // size is 0x602
 	SceWChar16 name[0x100];
 	SceChar8 iconPath[0x400];
-	char reserved[0x102];
+	char reserved[2];
 } SceTriggerUtilSystemAppInfo;
+VITASDK_BUILD_ASSERT_EQ(0x602, SceTriggerUtilSystemAppInfo);
 
 /**
  * Register application start event that will be repeated on certain days

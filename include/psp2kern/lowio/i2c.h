@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_LOWIO_I2C_H_
 #define _PSP2KERN_LOWIO_I2C_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -28,6 +29,7 @@ typedef struct SceI2cDebugHandlers {
 		unsigned int read_addr, unsigned char *read_buffer, int read_size);
 	void (*write_read_end)(int bus, int error, int result);
 } SceI2cDebugHandlers;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceI2cDebugHandlers);
 
 int ksceI2cInit(int bus);
 int ksceI2cReset(int bus);

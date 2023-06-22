@@ -7,6 +7,7 @@
 #ifndef _PSP2_NPDRMPACKAGE_H_
 #define _PSP2_NPDRMPACKAGE_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -24,6 +25,7 @@ typedef struct _sceNpDrmPackageDecrypt {
 	 */
 	unsigned int identifier;
 } _sceNpDrmPackageDecrypt_opt;
+VITASDK_BUILD_ASSERT_EQ(0x10, _sceNpDrmPackageDecrypt_opt);
 
 /**
  * Read the header of the PKG and initialize the context

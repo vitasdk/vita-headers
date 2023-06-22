@@ -1,8 +1,6 @@
 #ifndef _VITASDKKERN_H_
 #define _VITASDKKERN_H_
 
-#include <vitasdk/utils.h>
-
 #include <psp2kern/types.h>
 #include <psp2kern/appmgr.h>
 #include <psp2kern/bt.h>
@@ -13,6 +11,7 @@
 #include <psp2kern/idstorage.h>
 #include <psp2kern/npdrm.h>
 #include <psp2kern/pfsmgr.h>
+#include <psp2kern/post_ss_mgr.h>
 #include <psp2kern/power.h>
 #include <psp2kern/registrymgr.h>
 #include <psp2kern/sblacmgr.h>

@@ -7,7 +7,7 @@
 #ifndef _PSP2_LOCATION_H_
 #define _PSP2_LOCATION_H_
 
-#include <stdint.h>
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/rtc.h>
 
@@ -52,23 +52,24 @@ typedef enum SceLocationErrorCode {
 
 /** Location handle datatype */
 typedef SceUInt32 SceLocationHandle;
+VITASDK_BUILD_ASSERT_EQ(4, SceLocationHandle);
 
 /** Usage permission dialog display status */
-typedef enum SceLocationDialogStatus {
+typedef enum SceLocationDialogStatus : int {
 	SCE_LOCATION_DIALOG_STATUS_IDLE     = 0, //!< Dialog initial idle status
 	SCE_LOCATION_DIALOG_STATUS_RUNNING  = 1, //!< Dialog running
 	SCE_LOCATION_DIALOG_STATUS_FINISHED = 2  //!< Dialog operation finished
 } SceLocationDialogStatus;
 
 /** Usage permission dialog result */
-typedef enum SceLocationDialogResult {
+typedef enum SceLocationDialogResult : SceInt32 {
 	SCE_LOCATION_DIALOG_RESULT_NONE    = 0, //!< Result is not stored
 	SCE_LOCATION_DIALOG_RESULT_DISABLE = 1, //!< Negative result is stored
 	SCE_LOCATION_DIALOG_RESULT_ENABLE  = 2  //!< Positive result is stored
 } SceLocationDialogResult;
 
 /** location usage permission status for individual application */
-typedef enum SceLocationPermissionApplicationStatus {
+typedef enum SceLocationPermissionApplicationStatus : SceInt32 {
 	SCE_LOCATION_PERMISSION_APPLICATION_NONE  = 0, //!< liblocation not used
 	SCE_LOCATION_PERMISSION_APPLICATION_INIT  = 1, //!< liblocation not accessed
 	SCE_LOCATION_PERMISSION_APPLICATION_DENY  = 2, //!< liblocation access denied status
@@ -76,13 +77,13 @@ typedef enum SceLocationPermissionApplicationStatus {
 } SceLocationPermissionApplicationStatus;
 
 /** location usage permission status */
-typedef enum SceLocationPermissionStatus {
+typedef enum SceLocationPermissionStatus : SceInt32 {
 	SCE_LOCATION_PERMISSION_DENY  = 0, //!< liblocation access denied status
 	SCE_LOCATION_PERMISSION_ALLOW = 1  //!< liblocation access allowed status
 } SceLocationPermissionStatus;
 
 /** Location measurement method */
-typedef enum SceLocationLocationMethod {
+typedef enum SceLocationLocationMethod : SceInt32 {
 	SCE_LOCATION_LMETHOD_NONE                 = 0,  //!< Do not perform location measurement
 	SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI = 1,  //!< Perform measurement by switching between AGPS, Wi-Fi, and 3G
 	SCE_LOCATION_LMETHOD_GPS_AND_WIFI         = 2,  //!< Perform measurement by switching between GPS and Wi-Fi
@@ -92,7 +93,7 @@ typedef enum SceLocationLocationMethod {
 } SceLocationLocationMethod;
 
 /** Direction measurement method */
-typedef enum SceLocationHeadingMethod {
+typedef enum SceLocationHeadingMethod : SceInt32 {
 	SCE_LOCATION_HMETHOD_NONE       = 0,    //!< Don't perform heading measurement
 	SCE_LOCATION_HMETHOD_AUTO       = 1,    //!< Automatically determine hold orientation and outputs its value
 	SCE_LOCATION_HMETHOD_VERTICAL   = 2,    //!< Output value in vertical hold reference system
@@ -111,6 +112,7 @@ typedef struct SceLocationLocationInfo {
 	SceFloat32 speed;       //!< Travel speed (m/s). If cannot be obtained, SCE_LOCATION_DATA_INVALID
 	SceRtcTick timestamp;   //!< Time of data acquisition, in μsec (UTC)
 } SceLocationLocationInfo;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceLocationLocationInfo);
 
 
 /** Structure of heading information */
@@ -123,6 +125,7 @@ typedef struct SceLocationHeadingInfo {
 	SceFloat32 reserve2;        //!< Reserve
 	SceRtcTick timestamp;       //!< Time acquired in unit of 1 usec (UTC)
 } SceLocationHeadingInfo;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceLocationHeadingInfo);
 
 /** Location information callback notification function */
 typedef void(*SceLocationLocationInfoCallback)(SceInt32 result, SceLocationHandle handle, const SceLocationLocationInfo *location, void *userdata);
@@ -135,7 +138,10 @@ typedef struct SceLocationPermissionInfo {
 	SceLocationPermissionStatus parentalstatus;                //!< Status of usage permission through parental control
 	SceLocationPermissionStatus mainstatus;                    //!< Status of usage permission through location data item of system settings
 	SceLocationPermissionApplicationStatus applicationstatus;  //!< Status of usage permission through location data item for each application in system settings
+	int unk_0x0C;
+	int unk_0x10;
 } SceLocationPermissionInfo;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceLocationPermissionInfo);
 
 /** Functions */
 /** Library start */

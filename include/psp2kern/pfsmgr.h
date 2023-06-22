@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_PFSMGR_H_
 #define _PSP2KERN_PFSMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -15,6 +16,7 @@ extern "C" {
 typedef struct ScePfsRndDriveId {
 	char drive_id[0x10];
 } ScePfsRndDriveId;
+VITASDK_BUILD_ASSERT_EQ(0x10, ScePfsRndDriveId);
 
 /**
  * Mount pfs directory

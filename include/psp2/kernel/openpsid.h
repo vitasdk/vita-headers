@@ -7,6 +7,8 @@
 #ifndef _PSP2_KERNEL_OPENPSID_H_
 #define _PSP2_KERNEL_OPENPSID_H_
 
+#include <vitasdk/build_utils.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -14,6 +16,7 @@ extern "C" {
 typedef struct SceKernelOpenPsId {
 	char id[16];
 } SceKernelOpenPsId;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelOpenPsId);
 
 int sceKernelGetOpenPsId(SceKernelOpenPsId *id);
 

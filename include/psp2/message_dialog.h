@@ -7,8 +7,10 @@
 #ifndef _PSP2_MESSAGE_DIALOG_H_
 #define _PSP2_MESSAGE_DIALOG_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/common_dialog.h>
 #include <psp2/types.h>
+#include <psp2/kernel/clib.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -102,6 +104,7 @@ typedef struct SceMsgDialogButtonsParam {
 	SceInt32 fontSize3;        //!< Font size of the third button (one of ::SceMsgDialogFontSize)
 	SceChar8 reserved[32];     //!< Reserved range
 } SceMsgDialogButtonsParam;
+VITASDK_BUILD_ASSERT_EQ(0x38, SceMsgDialogButtonsParam);
 
 typedef struct SceMsgDialogUserMessageParam {
 	SceInt32 buttonType;                    //!< Type of button set (one of ::SceMsgDialogButtonType)
@@ -109,17 +112,20 @@ typedef struct SceMsgDialogUserMessageParam {
 	SceMsgDialogButtonsParam *buttonParam;  //!< Buttons parameters
 	SceChar8 reserved[28];                  //!< Reserved range
 } SceMsgDialogUserMessageParam;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceMsgDialogUserMessageParam);
 
 typedef struct SceMsgDialogSystemMessageParam {
 	SceInt32 sysMsgType;                    //!< System message type (one of ::SceMsgDialogSystemMessageType)
 	SceInt32 value;                         //!< Additional value
 	SceChar8 reserved[32];                  //!< Reserved range
 } SceMsgDialogSystemMessageParam;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceMsgDialogSystemMessageParam);
 
 typedef struct SceMsgDialogErrorCodeParam {
 	SceInt32 errorCode;     //!< Displayed error code
 	SceChar8 reserved[32];  //!< Reserved range
 } SceMsgDialogErrorCodeParam;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceMsgDialogErrorCodeParam);
 
 typedef struct SceMsgDialogProgressBarParam {
 	SceInt32 barType;                           //!< Progress bar type (one of ::SceMsgDialogProgressBarType)
@@ -127,6 +133,7 @@ typedef struct SceMsgDialogProgressBarParam {
 	const SceChar8 *msg;                        //!< Displayed user message
 	SceInt32 reserved[8];                       //!< Reserved range
 } SceMsgDialogProgressBarParam;
+VITASDK_BUILD_ASSERT_EQ(0x50, SceMsgDialogProgressBarParam);
 
 typedef struct SceMsgDialogParam {
 	SceUInt32 sdkVersion;                         //!< Required to use MsgDialog. Just use NULL
@@ -139,6 +146,7 @@ typedef struct SceMsgDialogParam {
 	SceInt32 flag;                                //!< Settings for dialog environment (one of ::SceMsgDialogEnvFlag)
 	SceChar8 reserved[32];                        //!< Reserved range
 } SceMsgDialogParam;
+VITASDK_BUILD_ASSERT_EQ(0x88, SceMsgDialogParam);
 
 typedef struct SceMsgDialogResult {
 	SceInt32 mode;                       //!< Mode of function (one of ::SceMsgDialogMode)
@@ -146,11 +154,12 @@ typedef struct SceMsgDialogResult {
 	SceInt32 buttonId;                   //!< Id of button user selected (one of ::SceMsgDialogButtonId)
 	SceChar8 reserved[32];               //!< Reserved range
 } SceMsgDialogResult;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceMsgDialogResult);
 
 static inline
 void sceMsgDialogParamInit(SceMsgDialogParam *param)
 {
-	memset( param, 0x0, sizeof(SceMsgDialogParam) );
+	sceClibMemset( param, 0x0, sizeof(SceMsgDialogParam) );
 	_sceCommonDialogSetMagicNumber( &param->commonParam );
 	param->sdkVersion = PSP2_SDK_VERSION;
 }

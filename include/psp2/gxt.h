@@ -11,6 +11,7 @@
 extern "C" {
 #endif
 
+#include <vitasdk/build_utils.h>
 #include <psp2/gxm.h>
 
 /** GXT error codes */
@@ -31,6 +32,7 @@ typedef struct SceGxtHeader {
 	uint32_t numP8Palettes; //!< Number of 256 entry palettes
 	uint32_t pad;           //!< Padding
 } SceGxtHeader;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceGxtHeader);
 
 /** This structure contains information about each texture in the GXT file */
 typedef struct SceGxtTextureInfo {
@@ -45,6 +47,7 @@ typedef struct SceGxtTextureInfo {
 	uint8_t mipCount;           //!< Number of mipmaps
 	uint8_t pad[3];             //!< Padding
 } SceGxtTextureInfo;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceGxtTextureInfo);
 
 /**
  * Gets the start address of the texture data.

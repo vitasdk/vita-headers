@@ -7,6 +7,7 @@
 #ifndef _PSP2_USBAUDIOIN_H_
 #define _PSP2_USBAUDIOIN_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -36,10 +37,12 @@ typedef struct SceUsbAudioInDeviceInfo {
     uint16_t product;
     SceUInt32 _reserved[5];
 } SceUsbAudioInDeviceInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUsbAudioInDeviceInfo);
 
 typedef struct SceUsbAudioInDeviceListItem {
     SceUInt32 device_id;
 } SceUsbAudioInDeviceListItem;
+VITASDK_BUILD_ASSERT_EQ(4, SceUsbAudioInDeviceListItem);
 
 /**
  * Open usb audio device
