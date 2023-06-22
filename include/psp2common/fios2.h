@@ -6,6 +6,7 @@
 #ifndef _PSP2COMMON_FIOS2KERNEL_H_
 #define _PSP2COMMON_FIOS2KERNEL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
@@ -17,6 +18,7 @@ extern "C" {
 #define SCE_FIOS2_OVERLAY_PATH_MAX_LENGTH (SCE_FIOS2_OVERLAY_PATH_SIZE - 1)
 
 typedef int32_t SceFiosOverlayID;
+VITASDK_BUILD_ASSERT_EQ(4, SceFiosOverlayID);
 
 typedef enum SceFiosOverlayType {
   // src replaces dst. All accesses to dst are redirected to src.
@@ -45,6 +47,7 @@ typedef struct SceFiosOverlay {
   char dst[SCE_FIOS2_OVERLAY_PATH_SIZE];
   char src[SCE_FIOS2_OVERLAY_PATH_SIZE]; // src path replaces dst path based on type policy
 } SceFiosOverlay;
+VITASDK_BUILD_ASSERT_EQ(0x258, SceFiosOverlay);
 
 
 #ifdef __cplusplus

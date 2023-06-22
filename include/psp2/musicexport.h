@@ -7,8 +7,8 @@
 #ifndef _PSP2_MUSICEXPORT_H_
 #define _PSP2_MUSICEXPORT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -17,6 +17,7 @@ extern "C" {
 typedef struct MusicExportParam {
 	char reserved[128];  //!< Reserved data
 } MusicExportParam;
+VITASDK_BUILD_ASSERT_EQ(0x80, MusicExportParam);
 
 int sceMusicExportFromFile(const char* path, const MusicExportParam* param, void* workingMemory, void* cancelCb, void (*progress)(void*, int), void* user, char* outPath, SceSize outPathSize);
 

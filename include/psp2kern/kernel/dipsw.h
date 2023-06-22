@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_DIPSW_H_
 #define _PSP2KERN_KERNEL_DIPSW_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -23,6 +24,7 @@ typedef struct SceDipsw {
 	uint32_t debug_control_flags;
 	uint32_t system_control_flags;
 } SceDipsw;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceDipsw);
 
 /**
  * Get dipsw info.

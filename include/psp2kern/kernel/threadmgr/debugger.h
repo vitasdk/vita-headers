@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_DEBUGGER_H_
 #define _PSP2KERN_KERNEL_THREADMGR_DEBUGGER_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -36,6 +37,7 @@ typedef struct SceArmCpuRegisters
     uint32_t    cpsr;
     uint32_t    fpscr;
 } SceArmCpuRegisters;
+VITASDK_BUILD_ASSERT_EQ(0x48, SceArmCpuRegisters);
 
 /* Typedef for compatibility */
 typedef SceArmCpuRegisters ArmCpuRegisters;
@@ -54,6 +56,7 @@ typedef struct SceThreadCpuRegisters
         SceArmCpuRegisters entry[2];
     };
 } SceThreadCpuRegisters;
+VITASDK_BUILD_ASSERT_EQ(0x90, SceThreadCpuRegisters);
 
 /* Typedef for compatibility */
 typedef SceThreadCpuRegisters ThreadCpuRegisters;
@@ -62,6 +65,7 @@ typedef struct SceKernelThreadContextInfo {
 	ScePID process_id;  //<! Process ID the thread scheduled on this CPU belongs to
 	SceUID thread_id;   //<! Thread ID of the thread scheduled on this CPU
 } SceKernelThreadContextInfo;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelThreadContextInfo);
 
 
 /**

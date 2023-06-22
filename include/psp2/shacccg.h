@@ -6,6 +6,7 @@
 #ifndef _PSP2_SHACCCG_H_
 #define _PSP2_SHACCCG_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef	__cplusplus
@@ -16,6 +17,7 @@ typedef struct SceShaccCgCompileOptions SceShaccCgCompileOptions;
 typedef struct SceShaccCgSourceFile SceShaccCgSourceFile;
 typedef struct SceShaccCgSourceLocation SceShaccCgSourceLocation;
 typedef void const *SceShaccCgParameter;
+VITASDK_BUILD_ASSERT_EQ(4, SceShaccCgParameter);
 
 typedef SceShaccCgSourceFile* (*SceShaccCgCallbackOpenFile)(
 	const char *fileName,
@@ -77,12 +79,14 @@ typedef struct SceShaccCgSourceFile {
 	const char *text;
 	SceUInt32 size;
 } SceShaccCgSourceFile;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceShaccCgSourceFile);
 
 typedef struct SceShaccCgSourceLocation {
 	const SceShaccCgSourceFile *file;
 	SceUInt32 lineNumber;
 	SceUInt32 columnNumber;
 } SceShaccCgSourceLocation;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceShaccCgSourceLocation);
 
 typedef struct SceShaccCgCallbackList {
 	SceShaccCgCallbackOpenFile openFile;
@@ -92,6 +96,7 @@ typedef struct SceShaccCgCallbackList {
 	SceShaccCgCallbackReleaseFileName releaseFileName;
 	SceShaccCgCallbackFileDate fileDate;
 } SceShaccCgCallbackList;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceShaccCgCallbackList);
 
 typedef struct SceShaccCgCompileOptions {
 	const char *mainSourceFile;
@@ -121,6 +126,7 @@ typedef struct SceShaccCgCompileOptions {
 	int field_60;
 	int field_64;
 } SceShaccCgCompileOptions;
+VITASDK_BUILD_ASSERT_EQ(0x68, SceShaccCgCompileOptions);
 
 typedef struct SceShaccCgDiagnosticMessage {
 	SceShaccCgDiagnosticLevel level;
@@ -128,6 +134,7 @@ typedef struct SceShaccCgDiagnosticMessage {
 	const SceShaccCgSourceLocation *location;
 	const char *message;
 } SceShaccCgDiagnosticMessage;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceShaccCgDiagnosticMessage);
 
 typedef struct SceShaccCgCompileOutput {
 	const uint8_t *programData;
@@ -135,6 +142,7 @@ typedef struct SceShaccCgCompileOutput {
 	SceInt32 diagnosticCount;
 	const SceShaccCgDiagnosticMessage *diagnostics;
 } SceShaccCgCompileOutput;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceShaccCgCompileOutput);
 
 int sceShaccCgInitializeCompileOptions(
 	SceShaccCgCompileOptions *options);

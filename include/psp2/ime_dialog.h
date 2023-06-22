@@ -7,6 +7,7 @@
 #ifndef _PSP2_COMMON_DIALOG_IME_DIALOG_H
 #define _PSP2_COMMON_DIALOG_IME_DIALOG_H
 
+#include <vitasdk/build_utils.h>
 #include <psp2/common_dialog.h>
 #include <psp2/types.h>
 #include <psp2/libime.h>
@@ -65,17 +66,19 @@ typedef struct SceImeDialogParam {
 	SceUChar8 enterLabel;
 	SceChar8 reserved[35];
 } SceImeDialogParam;
+VITASDK_BUILD_ASSERT_EQ(0xA8, SceImeDialogParam);
 
 typedef struct SceImeDialogResult {
 	SceInt32 result;
 	SceInt32 button;
 	SceChar8 reserved[28];
 } SceImeDialogResult;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceImeDialogResult);
 
 static inline
 void sceImeDialogParamInit( SceImeDialogParam *param )
 {
-	memset( param, 0x0, sizeof(SceImeDialogParam) );
+	sceClibMemset( param, 0x0, sizeof(SceImeDialogParam) );
 	_sceCommonDialogSetMagicNumber(&param->commonParam);
 	param->sdkVersion = PSP2_SDK_VERSION;
 }

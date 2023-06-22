@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_TYPES_H_
 #define _PSP2KERN_TYPES_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
@@ -68,16 +69,19 @@ typedef struct SceKernelAddrPair { // do not use
 	uint32_t addr;             //!< Address
 	uint32_t length;           //!< Length
 } SceKernelAddrPair;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelAddrPair);
 
 typedef struct SceKernelVARange { // size is 0x8
 	uint32_t addr;
 	SceSize size;
 } SceKernelVARange;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelVARange);
 
 typedef struct SceKernelPARange { // size is 0x8
 	uint32_t addr;
 	SceSize size;
 } SceKernelPARange;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelPARange);
 
 typedef struct SceKernelPAVector { // size is 0x14
 	SceSize size;              //!< Size of this structure
@@ -96,6 +100,7 @@ typedef struct SceKernelPAVector { // size is 0x14
 		};
 	};
 } SceKernelPAVector;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceKernelPAVector);
 
 typedef SceKernelPAVector SceKernelPaddrList; // do not use.
 
@@ -108,6 +113,7 @@ typedef struct SceSharedSecret { // size is 0x40-bytes
 	uint32_t shared_secret_3_2;
 	uint32_t shared_secret_3_3;
 } SceSharedSecret;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceSharedSecret);
 
 typedef struct SceSelfAuthInfo { // size is 0x90-bytes
 	SceUInt64 program_authority_id;
@@ -116,6 +122,7 @@ typedef struct SceSelfAuthInfo { // size is 0x90-bytes
 	uint8_t attribute[0x20];
 	SceSharedSecret secret;
 } SceSelfAuthInfo;
+VITASDK_BUILD_ASSERT_EQ(0x90, SceSelfAuthInfo);
 
 /**
  * @brief Regular Spinlock
@@ -138,6 +145,7 @@ typedef struct SceSelfAuthInfo { // size is 0x90-bytes
  * or CPU may own the Spinlock at a time.
  */
 typedef int SceKernelSpinlock;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelSpinlock);
 
 /**
  * @brief RW Spinlock
@@ -158,6 +166,7 @@ typedef int SceKernelSpinlock;
  * acquiring a RWSpinlock for writing is not allowed and will deadlock.
  */
 typedef int SceKernelRWSpinlock;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelRWSpinlock);
 
 /**
  * @brief Interrupt status
@@ -172,6 +181,7 @@ typedef int SceKernelRWSpinlock;
  * See the description of functions using this datatype for more details.
  */
 typedef int SceKernelIntrStatus;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelIntrStatus);
 
 #ifdef __cplusplus
 }

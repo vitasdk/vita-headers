@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_DMAC_H_
 #define _PSP2KERN_KERNEL_DMAC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -136,6 +137,7 @@ int ksceDmacMemset(void *dst, int c, SceSize size);
 /** @} */
 
 typedef SceInt32 SceKernelDmaOpId;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelDmaOpId);
 
 typedef enum SceKernelDmacId {
     SCE_KERNEL_DMAC_ID_DMAC01  = 0x10, //!< DMAC0/1
@@ -169,6 +171,7 @@ typedef struct SceKernelDmaOpTag {
     SceUInt32 blockSize;
     struct SceKernelDmaOpTag *pNext; //!< Set to SCE_KERNEL_DMAC_CHAIN_END to signify the last tag
 } SceKernelDmaOpTag;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceKernelDmaOpTag);
 
 typedef struct SceKernelDmaOpEncDec {
     SceUInt32 keyring;
@@ -177,17 +180,20 @@ typedef struct SceKernelDmaOpEncDec {
     SceUInt32 reserved;
     SceUInt8 key[0x40];
 } SceKernelDmaOpEncDec;
+VITASDK_BUILD_ASSERT_EQ(0x50, SceKernelDmaOpEncDec);
 
 typedef struct SceKernelDmaOpChainParam {
     SceSize size;
     SceUInt32 coherencyMask;
     SceUInt32 setValue; //!< 8-bit value duplicated into 32 bits
 } SceKernelDmaOpChainParam;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceKernelDmaOpChainParam);
 
 typedef struct SceKernelDmaOpEncDecChainParam {
     SceKernelDmaOpChainParam header; //!< header.size = sizeof(SceKernelDmaOpEncDecChainParam)
     SceKernelDmaOpEncDec encDec;
 } SceKernelDmaOpEncDecChainParam;
+VITASDK_BUILD_ASSERT_EQ(0x5C, SceKernelDmaOpEncDecChainParam);
 
 typedef struct SceKernelDmaOpDirectParam {
     const void *src;
@@ -199,6 +205,7 @@ typedef struct SceKernelDmaOpDirectParam {
     SceUInt32 setValue; //!< 8-bit value duplicated into 32 bits
     SceKernelDmaOpEncDec encDec;
 } SceKernelDmaOpDirectParam;
+VITASDK_BUILD_ASSERT_EQ(0x6C, SceKernelDmaOpDirectParam);
 
 typedef void (*SceKernelDmaOpCallback)(SceKernelDmaOpId opid, SceUInt32 stat, void *pUserData, SceKernelDmaOpTag *pTag);
 

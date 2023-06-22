@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_APPMGR_H_
 #define _PSP2KERN_APPMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -36,6 +37,7 @@ typedef struct
     unsigned int unk_2C;
     unsigned int unk_30;
 } SceAppMgrLaunchParam;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceAppMgrLaunchParam);
 
 /**
  * @brief       Launch an application for debugging

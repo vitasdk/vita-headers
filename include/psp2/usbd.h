@@ -7,7 +7,8 @@
 #ifndef _PSP2_USBD_H_
 #define _PSP2_USBD_H_
 
-#include <psp2common/types.h>
+#include <vitasdk/build_utils.h>
+#include <psp2/types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -35,6 +36,7 @@ typedef struct SceUsbdDeviceInfo {
 	unsigned int device_num;
 	unsigned int unk3; // handled? 0, 1, 2
 } SceUsbdDeviceInfo;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceUsbdDeviceInfo);
 
 typedef struct SceUsbdTransferData {
 	unsigned int pipe; // 0x00
@@ -42,7 +44,8 @@ typedef struct SceUsbdTransferData {
 	unsigned int data_size;  // 0x08
 	void *transferred; //  // 0x0C // ptr to 8 bytes?
 	unsigned int timeout;  // 0x10 // size of above ptr? only 8 allowed?
-} SceUsbdTransferData; /* size = 0x14 */
+} SceUsbdTransferData;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceUsbdTransferData);
 
 typedef struct SceUsbdReceiveEvent {
 	unsigned int unk0; // 0
@@ -52,12 +55,14 @@ typedef struct SceUsbdReceiveEvent {
 	unsigned int unk4;
 	unsigned int unk5;
 	unsigned int transfer_id;
-} SceUsbdReceiveEvent; /* size = 0x1C */
+} SceUsbdReceiveEvent;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceUsbdReceiveEvent);
 
 typedef struct SceUsbdDeviceAddress {
 	unsigned int unk0;
 	unsigned short unk1;
-} SceUsbdDeviceAddress; /* size = 0x6 */
+} __attribute__((packed)) SceUsbdDeviceAddress;
+VITASDK_BUILD_ASSERT_EQ(6, SceUsbdDeviceAddress);
 
 #define USB_DESCRIPTOR_DEVICE                   0x01    // bDescriptorType for a Device Descriptor.
 #define USB_DESCRIPTOR_CONFIGURATION            0x02    // bDescriptorType for a Configuration Descriptor.
@@ -171,6 +176,7 @@ typedef struct SceUsbdDeviceDescriptor {
 	uint8_t iSerialNumber;
 	uint8_t bNumConfigurations;
 } SceUsbdDeviceDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0x12, SceUsbdDeviceDescriptor);
 
 typedef struct SceUsbdConfigurationDescriptor {
 	uint8_t bLength;
@@ -182,6 +188,7 @@ typedef struct SceUsbdConfigurationDescriptor {
 	uint8_t bmAttributes;
 	uint8_t MaxPower;
 } SceUsbdConfigurationDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0xA, SceUsbdConfigurationDescriptor);
 
 #define SCE_USBD_CONFIGURATION_RESERVED_ZERO         0x1f
 #define SCE_USBD_CONFIGURATION_REMOTE_WAKEUP         0x20
@@ -199,6 +206,7 @@ typedef struct SceUsbdInterfaceDescriptor {
 	uint8_t bInterfaceProtocol;
 	uint8_t iInterface;
 } SceUsbdInterfaceDescriptor;
+VITASDK_BUILD_ASSERT_EQ(9, SceUsbdInterfaceDescriptor);
 
 typedef struct SceUsbdEndpointDescriptor {
 	uint8_t bLength;
@@ -208,6 +216,7 @@ typedef struct SceUsbdEndpointDescriptor {
 	uint16_t wMaxPacketSize;
 	uint8_t bInterval;
 } SceUsbdEndpointDescriptor;
+VITASDK_BUILD_ASSERT_EQ(8, SceUsbdEndpointDescriptor);
 
 /* bmAttributes */
 #define SCE_USBD_ENDPOINT_TRANSFER_TYPE_BITS         0x03
@@ -231,12 +240,14 @@ typedef struct SceUsbdStringDescriptor {
 	uint8_t bDescriptorType;
 	uint8_t bString[0];
 } SceUsbdStringDescriptor;
+VITASDK_BUILD_ASSERT_EQ(2, SceUsbdStringDescriptor);
 
 typedef struct SceUsbdHidSubDescriptorInfo {
 	uint8_t bDescriptorType;
 	uint8_t wDescriptorLength0;
 	uint8_t wDescriptorLength1;
 } SceUsbdHidSubDescriptorInfo;
+VITASDK_BUILD_ASSERT_EQ(3, SceUsbdHidSubDescriptorInfo);
 
 typedef struct SceUsbdHidDescriptor {
 	uint8_t bLength;
@@ -247,6 +258,7 @@ typedef struct SceUsbdHidDescriptor {
 	uint8_t bNumDescriptors;  /* SubDescriptor count */
 	SceUsbdHidSubDescriptorInfo SubDescriptorInfo[0];
 } SceUsbdHidDescriptor;
+VITASDK_BUILD_ASSERT_EQ(6, SceUsbdHidDescriptor);
 
 
 /**
@@ -334,6 +346,7 @@ typedef struct SceUsbdTransferStatus {
 	uint32_t unk2; // ret 4. ptr? // status?
 	uint32_t unk3; // ret 4. ptr? // transferred?
 } SceUsbdTransferStatus;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceUsbdTransferStatus);
 
 typedef struct SceUsbdIsochTransferStatus {
 	uint32_t unk0; // < 0x40 - size? pipe? transfer id?
@@ -341,6 +354,7 @@ typedef struct SceUsbdIsochTransferStatus {
 	uintptr_t* unk2; // ret up to 0x28 buff. 10 * 4 bytes. or 8*5 bytes
 	uint32_t unk3; // ret 4. ptr?
 } SceUsbdIsochTransferStatus;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceUsbdIsochTransferStatus);
 
 /**
  * Get transfer status
@@ -373,7 +387,8 @@ typedef struct SceUsbdDevicePipe {
 	unsigned int unk3;
 	unsigned int unk4;
 	unsigned int unk5;
-} SceUsbdDevicePipe; /* size = 0x18 */
+} SceUsbdDevicePipe;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUsbdDevicePipe);
 
 /**
  * Open endpoint communication pipe
@@ -432,7 +447,8 @@ typedef struct SceUsbdIsochTransfer {
 
 	unsigned int unk8;
 	unsigned int unk9;
-} SceUsbdIsochTransfer; /* size = 0x28 */
+} SceUsbdIsochTransfer;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceUsbdIsochTransfer);
 
 /**
  * Transfer data to/from endpoint isochronously
@@ -496,7 +512,8 @@ typedef struct SceUsbdAttachCompositeParam {
 	uint32_t device;
 	uint32_t unk3; // num devices?
 	uint32_t unk4;
-} SceUsbdAttachCompositeParam; /* size = 0x14 */
+} SceUsbdAttachCompositeParam;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceUsbdAttachCompositeParam);
 
 /**
  * Attach composite driver to device

@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_IOFILEMGR_H_
 #define _PSP2KERN_KERNEL_IOFILEMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/io/fcntl.h>
 #include <psp2kern/io/devctl.h>
@@ -20,6 +21,7 @@ typedef struct SceIoFdInfo {
 	SceUID fd;
 	SceUID pid;
 } SceIoFdInfo;
+VITASDK_BUILD_ASSERT_EQ(8, SceIoFdInfo);
 
 /**
   * Get global file descriptor
@@ -63,6 +65,7 @@ typedef struct SceIofileInfo { // size is 0x828
 	int data_0x820; // maybe media type
 	int data_0x824;
 } SceIofileInfo;
+VITASDK_BUILD_ASSERT_EQ(0x828, SceIofileInfo);
 
 /**
   * Get file info

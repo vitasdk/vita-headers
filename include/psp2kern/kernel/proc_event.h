@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_PROC_EVENT_H_
 #define _PSP2KERN_KERNEL_PROC_EVENT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -18,6 +19,7 @@ typedef struct SceProcEventInvokeParam1 {
 	int unk_0x08;
 	int unk_0x0C;
 } SceProcEventInvokeParam1;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceProcEventInvokeParam1);
 
 typedef struct SceProcEventInvokeParam2 {
 	SceSize size;                                     // SceProcEventInvokeParam2 struct size : 0x14
@@ -26,6 +28,7 @@ typedef struct SceProcEventInvokeParam2 {
 	int unk_0x0C;
 	int unk_0x10;
 } SceProcEventInvokeParam2;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceProcEventInvokeParam2);
 
 typedef struct SceProcEventHandler {
 	SceSize size;                                                                               // SceProcEventHandler struct size : 0x1C
@@ -36,6 +39,7 @@ typedef struct SceProcEventHandler {
 	int (* start)(SceUID pid, int event_type, SceProcEventInvokeParam1 *a3, int a4);
 	int (* switch_process)(int event_id, int event_type, SceProcEventInvokeParam2 *a3, int a4); // switch display frame?
 } SceProcEventHandler;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceProcEventHandler);
 
 /**
  * Register process event handler

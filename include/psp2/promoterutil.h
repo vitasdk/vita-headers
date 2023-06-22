@@ -7,6 +7,7 @@
 #ifndef _PSP2_PROMOTERUTIL_H_
 #define _PSP2_PROMOTERUTIL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -25,6 +26,7 @@ typedef struct ScePromoterUtilityLAUpdate {
 	char titleid[12];  //!< Target app.
 	char path[128];    //!< Directory of extracted LA update data.
 } ScePromoterUtilityLAUpdate;
+VITASDK_BUILD_ASSERT_EQ(0x8C, ScePromoterUtilityLAUpdate);
 
 /** Parameters for scePromoterUtilityPromoteImport() */
 typedef struct ScePromoterUtilityImportParams {
@@ -34,6 +36,7 @@ typedef struct ScePromoterUtilityImportParams {
 	uint32_t attribute; //!< Additional Attributes (Appears to be 0x1 on PSM content but 0x00 on Vita contents)
 	char reserved[0x1C];
 } ScePromoterUtilityImportParams;
+VITASDK_BUILD_ASSERT_EQ(0xB0, ScePromoterUtilityImportParams);
 
 /**
  * Init the promoter utility.

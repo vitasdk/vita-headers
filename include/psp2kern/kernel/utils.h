@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_UTILS_H_
 #define _PSP2KERN_KERNEL_UTILS_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -29,6 +30,7 @@ typedef struct SceSha1Context {
 	char result[SCE_SHA1_DIGEST_SIZE];
 	uint32_t pad;
 } SceSha1Context;
+VITASDK_BUILD_ASSERT_EQ(0x78, SceSha1Context);
 
 typedef struct SceSha224Context {
 	uint32_t h[8];
@@ -40,6 +42,7 @@ typedef struct SceSha224Context {
 	char result[SCE_SHA224_DIGEST_SIZE];
 	uint32_t pad2;
 } SceSha224Context;
+VITASDK_BUILD_ASSERT_EQ(0x90, SceSha224Context);
 
 typedef struct SceSha256Context {
 	uint32_t h[8];
@@ -50,6 +53,7 @@ typedef struct SceSha256Context {
 	char buf[SCE_SHA256_BLOCK_SIZE];
 	char result[SCE_SHA256_DIGEST_SIZE];
 } SceSha256Context;
+VITASDK_BUILD_ASSERT_EQ(0x90, SceSha256Context);
 
 struct SceDeflatePartialInputParam;
 
@@ -59,10 +63,12 @@ typedef struct SceDeflatePartialInputParam {
 	void *cookie;
 	const void *(* SceDeflateDecompressPartialInputCallback)(struct SceDeflatePartialInputParam* param, uint32_t outputsize);
 } SceDeflatePartialInputParam;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceDeflatePartialInputParam);
 
 typedef struct SceAesContext { // size is 0x3D0(0x10 + 0x1E0 * 2)
 	uint8_t data[976];
 } SceAesContext;
+VITASDK_BUILD_ASSERT_EQ(0x3D0, SceAesContext);
 
 int ksceSha1BlockInit(SceSha1Context *ctx);
 int ksceSha1BlockUpdate(SceSha1Context *ctx, const void *plain, SceSize len);

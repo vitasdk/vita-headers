@@ -7,8 +7,8 @@
 #ifndef _PSP2_VIDEODEC_H_
 #define _PSP2_VIDEODEC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -67,42 +67,50 @@ typedef struct SceVideodecQueryInitInfoHwAvcdec {
 	uint32_t numOfRefFrames;    //!< Number of reference frames to use
 	uint32_t numOfStreams;      //!< Must be set to 1
 } SceVideodecQueryInitInfoHwAvcdec;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceVideodecQueryInitInfoHwAvcdec);
 
 typedef union SceVideodecQueryInitInfo {
 	uint8_t                           reserved[32];
 	SceVideodecQueryInitInfoHwAvcdec  hwAvc;
 } SceVideodecQueryInitInfo;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceVideodecQueryInitInfo);
 
 typedef struct SceVideodecTimeStamp {
 	uint32_t upper;
 	uint32_t lower;
 } SceVideodecTimeStamp;
+VITASDK_BUILD_ASSERT_EQ(8, SceVideodecTimeStamp);
 
 typedef struct SceAvcdecQueryDecoderInfo {
 	uint32_t horizontal;
 	uint32_t vertical;
 	uint32_t numOfRefFrames;  //!< Number of reference frames
 } SceAvcdecQueryDecoderInfo;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceAvcdecQueryDecoderInfo);
 
 typedef struct SceAvcdecDecoderInfo {
 	uint32_t frameMemSize;
 } SceAvcdecDecoderInfo;
+VITASDK_BUILD_ASSERT_EQ(4, SceAvcdecDecoderInfo);
 
 typedef struct SceAvcdecBuf {
 	void     *pBuf;
 	uint32_t size;
 } SceAvcdecBuf;
+VITASDK_BUILD_ASSERT_EQ(8, SceAvcdecBuf);
 
 typedef struct SceAvcdecCtrl {
 	uint32_t     handle;
 	SceAvcdecBuf frameBuf;
 } SceAvcdecCtrl;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceAvcdecCtrl);
 
 typedef struct SceAvcdecAu {
 	SceVideodecTimeStamp pts;
 	SceVideodecTimeStamp dts;
 	SceAvcdecBuf         es;
 } SceAvcdecAu;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceAvcdecAu);
 
 typedef struct SceAvcdecInfo {
 	uint32_t numUnitsInTick;
@@ -124,17 +132,20 @@ typedef struct SceAvcdecInfo {
 
 	SceVideodecTimeStamp pts;
 } SceAvcdecInfo;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceAvcdecInfo);
 
 typedef struct SceAvcdecFrameOptionRGBA {
 	uint8_t alpha;
 	uint8_t cscCoefficient;
 	uint8_t reserved[14];
 } SceAvcdecFrameOptionRGBA;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAvcdecFrameOptionRGBA);
 
 typedef union SceAvcdecFrameOption {
 	uint8_t                  reserved[16];
 	SceAvcdecFrameOptionRGBA rgba;
 } SceAvcdecFrameOption;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAvcdecFrameOption);
 
 typedef struct SceAvcdecFrame {
 	uint32_t pixelType;     //!< One of ::SceAvcdecPixelFormat
@@ -154,18 +165,21 @@ typedef struct SceAvcdecFrame {
 
 	void     *pPicture[2];   //!< address of picture buffer
 } SceAvcdecFrame;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceAvcdecFrame);
 
 typedef struct SceAvcdecPicture {
 	uint32_t       size;
 	SceAvcdecFrame frame;
 	SceAvcdecInfo  info;
 } SceAvcdecPicture;
+VITASDK_BUILD_ASSERT_EQ(0x64, SceAvcdecPicture);
 
 typedef struct SceAvcdecArrayPicture {
 	uint32_t         numOfOutput; //!< Number of outputs
 	uint32_t         numOfElm;    //!< Number of elements
 	SceAvcdecPicture **pPicture;
 } SceAvcdecArrayPicture;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceAvcdecArrayPicture);
 
 /**
  * @param[in] codec - See ::SceVideodecType

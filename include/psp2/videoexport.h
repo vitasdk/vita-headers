@@ -7,8 +7,8 @@
 #ifndef _PSP2_VIDEOEXPORT_H_
 #define _PSP2_VIDEOEXPORT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -18,11 +18,13 @@ typedef struct VideoExportInputParam {
 	char path[1024]; //!< Path of file to be exported
 	char reserved[64]; //!< Reserved data
 } VideoExportInputParam;
+VITASDK_BUILD_ASSERT_EQ(0x440, VideoExportInputParam);
 
 typedef struct VideoExportOutputParam {
 	char path[1024]; //!< Path of exported file
 	char reserved[8]; //!< Reserved data
 } VideoExportOutputParam;
+VITASDK_BUILD_ASSERT_EQ(0x408, VideoExportOutputParam);
 
 /**
  * Export video file

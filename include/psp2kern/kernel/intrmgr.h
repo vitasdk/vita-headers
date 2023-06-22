@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_INTRMGR_H_
 #define _PSP2KERN_KERNEL_INTRMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -31,6 +32,7 @@ typedef struct SceKernelIntrOptHandlers {
 	SceKernelIntrOptHandlersCb1 *fptr4;
 	SceKernelIntrOptHandlersCb1 *fptr5;
 } SceKernelIntrOptHandlers;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceKernelIntrOptHandlers);
 
 typedef struct SceKernelIntrOptParam {
 	uint32_t size; // 0x14
@@ -39,6 +41,7 @@ typedef struct SceKernelIntrOptParam {
 	uint32_t unk_C;
 	uint32_t unk_10;
 } SceKernelIntrOptParam;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceKernelIntrOptParam);
 
 int ksceKernelRegisterIntrHandler(int intr_code, const char *name, int interrupt_type,
 	SceKernelIntrHandler handler, void *user_ctx, int priority, int target_cpu, SceKernelIntrOptParam *opt);

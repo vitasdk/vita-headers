@@ -6,9 +6,11 @@
 #ifndef _PSP2_UPDATE_H_
 #define _PSP2_UPDATE_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 typedef char SceUpdateMode;
+VITASDK_BUILD_ASSERT_EQ(1, SceUpdateMode);
 
 #define SCE_UPDATE_MODE_SWU_GUI 0x10
 #define SCE_UPDATE_MODE_SWU_CUI 0x30

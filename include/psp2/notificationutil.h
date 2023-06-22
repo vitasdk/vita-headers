@@ -6,6 +6,7 @@
 #ifndef _PSP2_NOTIFICATIONUTIL_H_
 #define _PSP2_NOTIFICATIONUTIL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -38,6 +39,7 @@ typedef struct SceNotificationUtilProgressInitParam {
 	SceInt32 unk_4EC;						//can be set to 0
 	SceNotificationUtilProgressEventHandler eventHandler;
 } SceNotificationUtilProgressInitParam;
+VITASDK_BUILD_ASSERT_EQ(0x4F0, SceNotificationUtilProgressInitParam);
 
 typedef struct SceNotificationUtilProgressUpdateParam {
 	SceWChar16 notificationText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
@@ -47,6 +49,7 @@ typedef struct SceNotificationUtilProgressUpdateParam {
 	SceFloat targetProgress;
 	SceChar8 reserved[0x38];
 } SceNotificationUtilProgressUpdateParam;
+VITASDK_BUILD_ASSERT_EQ(0x13C, SceNotificationUtilProgressUpdateParam);
 
 typedef struct SceNotificationUtilProgressFinishParam {
 	SceWChar16 notificationText[SCE_NOTIFICATIONUTIL_TEXT_MAX];
@@ -55,6 +58,7 @@ typedef struct SceNotificationUtilProgressFinishParam {
 	SceInt16 separator1;						//must be 0
 	SceChar8 path[0x3E8];
 } SceNotificationUtilProgressFinishParam;
+VITASDK_BUILD_ASSERT_EQ(0x4E8, SceNotificationUtilProgressFinishParam);
 
 /**
  * Initialize notification util for use with BG application.

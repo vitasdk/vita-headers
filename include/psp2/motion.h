@@ -7,8 +7,8 @@
 #ifndef _PSP2_MOTION_H_
 #define _PSP2_MOTION_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -54,6 +54,7 @@ typedef struct SceMotionState {
 	uint8_t unknown;                //!< Unknown
 	uint8_t reserved4[2];           //!< Reserved data
 } SceMotionState;
+VITASDK_BUILD_ASSERT_EQ(0xF8, SceMotionState);
 
 /** Returned motion sensor state 
 * @note - ::SceMotionSensorState holds actual sensor data as opposed to ::SceMotionState which uses a calculated state
@@ -69,6 +70,7 @@ typedef struct SceMotionSensorState {
 	uint8_t unknown;                //!< Unknown
 	uint8_t reserved3[7];           //!< Reserved data
 } SceMotionSensorState;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceMotionSensorState);
 
 /** Returned location of both the accelerometer and gyroscope in mm
 * @note - Axies are fixed with z axis being straight perpendicular through the screen and x axis being parallel to the screen's bottom and top edge
@@ -85,6 +87,7 @@ typedef struct SceMotionDeviceLocation {
 	SceFVector3 gyro;               //!< Location of te gyroscope in relation to the center of the device (in mm)
 	uint8_t reserved[24];           //!< Reserved data
 } SceMotionDeviceLocation;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceMotionDeviceLocation);
 
 /* prototypes */
 

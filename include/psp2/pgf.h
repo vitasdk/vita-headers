@@ -7,8 +7,8 @@
 #ifndef _PSP2_PGF_H_
 #define _PSP2_PGF_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -17,7 +17,9 @@ extern "C" {
 /* typedef */
 
 typedef void *SceFontLibHandle;
-typedef void *SceFontHandle;
+VITASDK_BUILD_ASSERT_EQ(4, SceFontLibHandle);
+typedef void *SceFontHandle;   
+VITASDK_BUILD_ASSERT_EQ(4, SceFontHandle);
 
 /* struct */
 
@@ -45,6 +47,7 @@ typedef struct SceFontNewLibParams {
 	void *errorFunc;
 	void *ioFinishFunc;
 } SceFontNewLibParams;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceFontNewLibParams);
 
 typedef enum SceFontFamilyCode {
 	SCE_FONT_FAMILY_DEFAULT    = 0,
@@ -92,6 +95,7 @@ typedef struct SceFontImageRect {
 	unsigned short width;
 	unsigned short height;
 } SceFontImageRect;
+VITASDK_BUILD_ASSERT_EQ(4, SceFontImageRect);
 
 typedef struct SceFontGlyphImage {
 	unsigned int pixelFormat;
@@ -103,6 +107,7 @@ typedef struct SceFontGlyphImage {
 	unsigned short pad;
 	unsigned int bufferPtr;
 } SceFontGlyphImage;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceFontGlyphImage);
 
 typedef struct SceFontStyle {
 	float fontH;
@@ -122,6 +127,7 @@ typedef struct SceFontStyle {
 	unsigned int fontAttributes;
 	unsigned int fontExpire;
 } SceFontStyle;
+VITASDK_BUILD_ASSERT_EQ(0xA8, SceFontStyle);
 
 typedef struct SceFontCharInfo {
 	unsigned int bitmapWidth;
@@ -142,6 +148,7 @@ typedef struct SceFontCharInfo {
 	short shadowFlags;
 	short shadowId;
 } SceFontCharInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceFontCharInfo);
 
 typedef struct SceFontInfo {
 	// Glyph metrics (in 26.6 signed fixed-point).
@@ -180,6 +187,7 @@ typedef struct SceFontInfo {
 	uint8_t BPP; //!< Font's BPP.
 	uint8_t pad[3];
 } SceFontInfo;
+VITASDK_BUILD_ASSERT_EQ(0x108, SceFontInfo);
 
 /* prototypes */
 

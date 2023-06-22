@@ -11,6 +11,7 @@
 extern "C" {
 #endif
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 typedef struct SceHidKeyboardReport {
@@ -20,6 +21,7 @@ typedef struct SceHidKeyboardReport {
 	SceUInt8 reserved2[7];
 	SceUInt64 timestamp; // microseconds
 } SceHidKeyboardReport;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceHidKeyboardReport);
 
 typedef struct SceHidMouseReport {
 	SceUInt8 buttons;
@@ -28,6 +30,7 @@ typedef struct SceHidMouseReport {
 	SceInt16 rel_y;
 	SceInt8 unk[10];
 } SceHidMouseReport;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceHidMouseReport);
 
 #define SCE_HID_MAX_REPORT 16
 #define SCE_HID_MAX_DEVICE_COUNT 8

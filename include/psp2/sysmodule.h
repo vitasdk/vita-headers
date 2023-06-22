@@ -7,6 +7,7 @@
 #ifndef _PSP2_SYSMODULE_H_
 #define _PSP2_SYSMODULE_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -159,6 +160,7 @@ typedef struct SceSysmoduleOpt {
 	int *result;
 	int unused[2];
 } SceSysmoduleOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceSysmoduleOpt);
 
 /**
  * Load a module.

@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSMEM_UID_CLASS_H_
 #define _PSP2KERN_KERNEL_SYSMEM_UID_CLASS_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -27,7 +28,8 @@ typedef struct SceClass {
 	SceClassCallback create_cb;
 	SceClassCallback destroy_cb;
 	unsigned int magic; /* 0xABCE9DA5 */
-} SceClass; /* size = 0x2C */
+} SceClass;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceClass);
 
 typedef struct SceObjectBase { // size is 0x8-bytes
 	union {
@@ -39,6 +41,7 @@ typedef struct SceObjectBase { // size is 0x8-bytes
 	};
 	uint32_t data[];
 } SceObjectBase;
+VITASDK_BUILD_ASSERT_EQ(8, SceObjectBase);
 
 SceClass *ksceKernelGetUidClass(void);
 SceClass *ksceKernelGetUidDLinkClass(void);

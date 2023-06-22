@@ -11,6 +11,7 @@
 #ifndef _PSP2_JPEGENCARM_H_
 #define _PSP2_JPEGENCARM_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -28,6 +29,7 @@ extern "C" {
  * The address must be 4 byte aligned.
  */
 typedef void* SceJpegArmEncoderContext;
+VITASDK_BUILD_ASSERT_EQ(4, SceJpegArmEncoderContext);
 
 /**
  * Error Codes

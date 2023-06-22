@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_BT_H_
 #define _PSP2KERN_BT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -264,6 +265,7 @@ typedef struct SceBtRegisteredInfo {
 	char           name[128];
 	unsigned char  unk5[0x60];
 } SceBtRegisteredInfo;
+VITASDK_BUILD_ASSERT_EQ(0x100, SceBtRegisteredInfo);
 
 typedef struct SceBtEvent {
 	union {
@@ -278,6 +280,7 @@ typedef struct SceBtEvent {
 		};
 	};
 } SceBtEvent;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceBtEvent);
 
 typedef void (*SceBtCallback)(int r0, int r1, int r2, int r3);
 
@@ -292,6 +295,7 @@ typedef struct _SceBtHidRequest {
 	uint32_t length;
 	struct   _SceBtHidRequest *next;
 } __attribute__((packed)) SceBtHidRequest;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceBtHidRequest);
 
 int ksceBtAvrcpReadVolume(int r0, int r1, int r2, int r3);
 int ksceBtAvrcpSendButton(int r0, int r1, int r2, int r3);

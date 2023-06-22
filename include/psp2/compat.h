@@ -7,10 +7,10 @@
 #ifndef _PSP2_COMPAT_H_
 #define _PSP2_COMPAT_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/io/devctl.h>
 #include <psp2/rtc.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -33,6 +33,7 @@ typedef struct SceCompatCdram {
 	void *cached_cdram;
 	void *uncached_cdram;
 } SceCompatCdram;
+VITASDK_BUILD_ASSERT_EQ(8, SceCompatCdram);
 
 typedef struct SceCtrlDataPsp {
 	unsigned int TimeStamp;
@@ -43,6 +44,7 @@ typedef struct SceCtrlDataPsp {
 	unsigned char Ry;
 	unsigned char Rsrv[4];
 } SceCtrlDataPsp;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceCtrlDataPsp);
 
 /**
  * Init compat

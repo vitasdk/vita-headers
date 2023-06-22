@@ -7,6 +7,7 @@
 #ifndef _PSP2_APPMGR_H_
 #define _PSP2_APPMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/apputil.h>
 
@@ -57,6 +58,7 @@ typedef struct SceAppMgrSystemEvent {
 	int     systemEvent;   //!< One of ::SceAppMgrSystemEventType
 	uint8_t reserved[60];  //!< Reserved data
 } SceAppMgrSystemEvent;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceAppMgrSystemEvent);
 
 typedef struct SceAppMgrSaveDataData {
 	int size;                                //!< Must be 0x4C
@@ -67,7 +69,9 @@ typedef struct SceAppMgrSaveDataData {
 	int fileNum;                             //!< Number of files to save
 	SceAppUtilSaveDataMountPoint mountPoint; //!< Savedata mountpoint
 	unsigned int* requiredSizeKB;            //!< Required size in KBs
+	int unk_0x48;
 } SceAppMgrSaveDataData;
+VITASDK_BUILD_ASSERT_EQ(0x4C, SceAppMgrSaveDataData);
 
 typedef struct SceAppMgrSaveDataDataDelete {
 	int size;                                //!< Must be 0x44
@@ -78,6 +82,7 @@ typedef struct SceAppMgrSaveDataDataDelete {
 	int fileNum;                             //!< Number of files to delete
 	SceAppUtilSaveDataMountPoint mountPoint; //!< Savedata mountpoint
 } SceAppMgrSaveDataDataDelete;
+VITASDK_BUILD_ASSERT_EQ(0x44, SceAppMgrSaveDataDataDelete);
 
 typedef struct SceAppMgrSaveDataSlot {
 	int size;                                //!< Must be 0x418
@@ -85,13 +90,16 @@ typedef struct SceAppMgrSaveDataSlot {
 	SceAppUtilSaveDataSlotParam slotParam;   //!< Save slot params
 	uint8_t reserved[116];                   //!< Reserved data
 	SceAppUtilSaveDataMountPoint mountPoint; //!< Savedata mountpoint
+	uint8_t reserved2[0x40];
 } SceAppMgrSaveDataSlot;
+VITASDK_BUILD_ASSERT_EQ(0x418, SceAppMgrSaveDataSlot);
 
 typedef struct SceAppMgrSaveDataSlotDelete {
 	int size;                                 //!< Must be 0x18
 	unsigned int slotId;                      //!< Save slot to use
 	SceAppUtilSaveDataMountPoint mountPoint;  //!< Savedata mountpoint
 } SceAppMgrSaveDataSlotDelete;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceAppMgrSaveDataSlotDelete);
 
 typedef struct SceAppMgrAppState {
 	SceUInt32 systemEventNum;
@@ -99,6 +107,7 @@ typedef struct SceAppMgrAppState {
 	SceBool isSystemUiOverlaid;
 	SceUInt8 reserved[116];
 } SceAppMgrAppState;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceAppMgrAppState);
 
 typedef struct SceAppMgrBudgetInfo {
 	int size;                           //!< Must be 0x88
@@ -118,13 +127,15 @@ typedef struct SceAppMgrBudgetInfo {
 	unsigned int free_cdram_mem;        //!< Free amount of accessible CDRAM memory
 	int reserved[9];                    //!< Reserved data
 } SceAppMgrBudgetInfo;
+VITASDK_BUILD_ASSERT_EQ(0x88, SceAppMgrBudgetInfo);
 
 typedef struct SceAppMgrExecOptParam SceAppMgrExecOptParam; // Missing struct
 typedef struct SceAppMgrLaunchAppOptParam SceAppMgrLaunchAppOptParam; // Missing struct
 
-typedef struct sceAppMgrLoadExecOptParam {
+typedef struct SceAppMgrLoadExecOptParam {
 	int reserved[64];    //!< Reserved data
-} sceAppMgrLoadExecOptParam;
+} SceAppMgrLoadExecOptParam;
+VITASDK_BUILD_ASSERT_EQ(0x100, SceAppMgrLoadExecOptParam);
 
 #define SCE_APPMGR_MAX_APP_NAME_LENGTH	(31)
 
@@ -544,6 +555,7 @@ typedef struct SceAppMgrCoredumpState {
 	int data_0x420;
 	int data_0x424;
 } SceAppMgrCoredumpState;
+VITASDK_BUILD_ASSERT_EQ(0x428, SceAppMgrCoredumpState);
 
 /**
  * Get current coredump state for shell
