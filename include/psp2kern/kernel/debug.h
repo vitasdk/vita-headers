@@ -137,7 +137,7 @@ __attribute__((__noreturn__)) void ksceKernelPanic(const SceKernelDebugInfo *dbg
 __attribute__((__noreturn__)) void ksceKernelPrintfPanic(const SceKernelDebugInfo *dbginfo, const void *lr, const char *fmt, ...);
 
 /**
- * @brief Assertion
+ * @brief Assertion. The condition SCE_FALSE to stopped CPU core.
  *
  * @param[in] condition - The condition
  * @param[in] dbginfo   - The debug info
@@ -148,7 +148,7 @@ __attribute__((__noreturn__)) void ksceKernelPrintfPanic(const SceKernelDebugInf
 void ksceKernelAssert(SceBool condition, const SceKernelDebugInfo *dbginfo, const void *lr);
 
 /**
- * @brief Printf Assertion Level
+ * @brief Printf Assertion Level. The condition SCE_FALSE to stopped CPU core.
  *
  * @param[in] level     - The print level. see:SceKernelAssertLevel
  * @param[in] condition - The condition
@@ -160,7 +160,7 @@ void ksceKernelAssert(SceBool condition, const SceKernelDebugInfo *dbginfo, cons
 void ksceKernelAssertLevel(SceUInt32 level, SceBool condition, const SceKernelDebugInfo *dbginfo, const void *lr);
 
 /**
- * @brief Printf Assertion Level
+ * @brief Printf Assertion Level. The condition SCE_FALSE to stopped CPU core.
  *
  * @param[in] level     - The print level. see:SceKernelAssertLevel
  * @param[in] condition - The condition
