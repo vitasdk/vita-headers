@@ -8,6 +8,7 @@
 #ifndef _PSP2KERN_KERNEL_DEBUG_H_
 #define _PSP2KERN_KERNEL_DEBUG_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <stdarg.h>
 
@@ -33,6 +34,7 @@ typedef struct SceKernelDebugInfo {
 	SceUInt32 line;
 	const char *file;
 } SceKernelDebugInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelDebugInfo);
 
 typedef SceKernelDebugInfo SceKernelDebugMessageContext;
 
@@ -247,11 +249,13 @@ typedef struct SceKernelDebugEventLog1 { // size is 0x1C
 	int data_0x4C;    //!< 0xA
 	char titleid[0xC];
 } __attribute__((packed)) SceKernelDebugEventLog1;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceKernelDebugEventLog1);
 
 // Related to network
 typedef struct SceKernelDebugEventLog2 { // size is 0x4
 	int data_0x40;    //!< 0 or 0x80412118?
 } __attribute__((packed)) SceKernelDebugEventLog2;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelDebugEventLog2);
 
 // Related to network
 typedef struct SceKernelDebugEventLog3 { // size is 0x54
@@ -262,6 +266,7 @@ typedef struct SceKernelDebugEventLog3 { // size is 0x54
 	char ip4[0x10];
 	char ip5[0x10];
 } __attribute__((packed)) SceKernelDebugEventLog3;
+VITASDK_BUILD_ASSERT_EQ(0x54, SceKernelDebugEventLog3);
 
 typedef struct SceKernelDebugEventLog {
 	SceSize size;      //!< struct size(variable size)
@@ -280,6 +285,7 @@ typedef struct SceKernelDebugEventLog {
 		SceKernelDebugEventLog3 type3;
 	};
 } __attribute__((packed)) SceKernelDebugEventLog;
+VITASDK_BUILD_ASSERT_EQ(0x54 + 0x40, SceKernelDebugEventLog);
 
 /**
  * @brief Get event log info

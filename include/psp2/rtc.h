@@ -7,6 +7,7 @@
 #ifndef _PSP2_RTC_H_
 #define _PSP2_RTC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <time.h>
 
@@ -44,6 +45,7 @@ typedef enum SceRtcDayOfWeek {
 typedef struct SceRtcTick {
 	SceUInt64 tick;
 } SceRtcTick;
+VITASDK_BUILD_ASSERT_EQ(8, SceRtcTick);
 
 unsigned int sceRtcGetTickResolution(void);
 

@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_MUTEX_H_
 #define _PSP2KERN_KERNEL_THREADMGR_MUTEX_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -22,6 +23,7 @@ typedef struct SceKernelMutexOptParam {
 	SceSize   size;
 	int             ceilingPriority;
 } SceKernelMutexOptParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelMutexOptParam);
 
 /** Current state of a mutex.
  * @see ksceKernelGetMutexInfo.
@@ -44,6 +46,7 @@ typedef struct SceKernelMutexInfo {
 	/** The number of threads waiting on the mutex. */
 	int             numWaitThreads;
 } SceKernelMutexInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMutexInfo);
 
 /**
  * Creates a new mutex

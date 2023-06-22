@@ -7,8 +7,8 @@
 #ifndef _PSP2_PVF_H_
 #define _PSP2_PVF_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <stdint.h>
 
 #ifdef __cplusplus
 
@@ -117,30 +117,46 @@ typedef enum ScePvfDataAccessMode {
 #define SCE_PVF_MIN_SKEW_VALUE      -30.0f
 #define SCE_PVF_MAX_SKEW_VALUE      30.0f
 
-typedef unsigned int  ScePvfU32;
-typedef signed	 int  ScePvfS32;
-typedef unsigned short ScePvfU16;
-typedef unsigned char  ScePvfU8;
-typedef float	   ScePvfFloat32;
-typedef ScePvfU32  ScePvfBool;
-typedef void *ScePvfLibId;
-typedef void *ScePvfFontId;
-typedef void *ScePvfPointer;
-typedef void *ScePvfHandle;
-typedef ScePvfS32 ScePvfError;
-typedef ScePvfS32 ScePvfInt;
-typedef ScePvfU16 ScePvfCharCode;
+typedef unsigned int  ScePvfU32;  
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfU32);
+typedef signed	 int  ScePvfS32;  
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfS32);
+typedef unsigned short ScePvfU16; 
+VITASDK_BUILD_ASSERT_EQ(2, ScePvfU16);
+typedef unsigned char  ScePvfU8;  
+VITASDK_BUILD_ASSERT_EQ(1, ScePvfU8);
+typedef float	   ScePvfFloat32; 
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfFloat32);
+typedef ScePvfU32  ScePvfBool;    
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfBool);
+typedef void *ScePvfLibId;        
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfLibId);
+typedef void *ScePvfFontId;       
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfFontId);
+typedef void *ScePvfPointer;      
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfPointer);
+typedef void *ScePvfHandle;       
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfHandle);
+typedef ScePvfS32 ScePvfError;    
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfError);
+typedef ScePvfS32 ScePvfInt;      
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfInt);
+typedef ScePvfU16 ScePvfCharCode; 
+VITASDK_BUILD_ASSERT_EQ(2, ScePvfCharCode);
 typedef ScePvfS32 ScePvfFontIndex;
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfFontIndex);
 
 typedef struct ScePvfIrect {
 	ScePvfU16 width;
 	ScePvfU16 height;
 } ScePvfIrect;
+VITASDK_BUILD_ASSERT_EQ(4, ScePvfIrect);
 
 typedef struct ScePvfRect {
 	ScePvfU32 width;
 	ScePvfU32 height;
 } ScePvfRect;
+VITASDK_BUILD_ASSERT_EQ(8, ScePvfRect);
 
 typedef ScePvfS32 (*ScePvfFontCacheLockFunc)(ScePvfPointer cacheInstance);
 
@@ -169,6 +185,7 @@ typedef struct ScePvfCacheSystemInterface {
 	ScePvfFontChcheReadFromCacheFunc read0FromCacheFunc;
 	ScePvfFontChcheReadFromCacheFunc read1FromCacheFunc;
 } ScePvfCacheSystemInterface;
+VITASDK_BUILD_ASSERT_EQ(0x24, ScePvfCacheSystemInterface);
 
 typedef ScePvfPointer (*ScePvfAllocFunc)(ScePvfPointer userData, ScePvfU32 size);
 
@@ -186,6 +203,7 @@ typedef struct ScePvfInitRec {
 	ScePvfReallocFunc reallocFunc;
 	ScePvfFreeFunc freeFunc;
 } ScePvfInitRec;
+VITASDK_BUILD_ASSERT_EQ(0x1C, ScePvfInitRec);
 
 typedef struct ScePvfFontStyleInfo {
 	ScePvfFloat32 weight;
@@ -201,6 +219,7 @@ typedef struct ScePvfFontStyleInfo {
 	ScePvfU32 extraAttributes;
 	ScePvfU32 expireDate;
 } ScePvfFontStyleInfo;
+VITASDK_BUILD_ASSERT_EQ(0xD8, ScePvfFontStyleInfo);
 
 typedef struct ScePvfUserImageBufferRec {
 	ScePvfU32 pixelFormat;
@@ -211,6 +230,7 @@ typedef struct ScePvfUserImageBufferRec {
 	ScePvfU16 reserved;
 	ScePvfU8 *buffer;
 } ScePvfUserImageBufferRec;
+VITASDK_BUILD_ASSERT_EQ(0x18, ScePvfUserImageBufferRec);
 
 typedef struct ScePvfIGlyphMetricsInfo {
 	ScePvfU32 width64;
@@ -224,6 +244,7 @@ typedef struct ScePvfIGlyphMetricsInfo {
 	ScePvfS32 horizontalAdvance64;
 	ScePvfS32 verticalAdvance64;
 } ScePvfIGlyphMetricsInfo;
+VITASDK_BUILD_ASSERT_EQ(0x28, ScePvfIGlyphMetricsInfo);
 
 typedef struct ScePvfCharInfo {
 	ScePvfU32 bitmapWidth;
@@ -235,6 +256,7 @@ typedef struct ScePvfCharInfo {
 	ScePvfU8 reserved0 [2];
 	ScePvfU16 reserved1;
 } ScePvfCharInfo;
+VITASDK_BUILD_ASSERT_EQ(0x40, ScePvfCharInfo);
 
 typedef struct ScePvfFGlyphMetricsInfo {
 	ScePvfFloat32 width;
@@ -248,6 +270,7 @@ typedef struct ScePvfFGlyphMetricsInfo {
 	ScePvfFloat32 horizontalAdvance;
 	ScePvfFloat32 verticalAdvance;
 } ScePvfFGlyphMetricsInfo;
+VITASDK_BUILD_ASSERT_EQ(0x28, ScePvfFGlyphMetricsInfo);
 
 typedef struct ScePvfFontInfo {
 	ScePvfIGlyphMetricsInfo maxIGlyphMetrics;
@@ -256,21 +279,25 @@ typedef struct ScePvfFontInfo {
 	ScePvfFontStyleInfo fontStyleInfo;
 	ScePvfU8 reserved [4];
 } ScePvfFontInfo;
+VITASDK_BUILD_ASSERT_EQ(0x130, ScePvfFontInfo);
 
 typedef struct ScePvfIKerningInfo {
 	ScePvfS32 xOffset64;
 	ScePvfS32 yOffset64;
 } ScePvfIKerningInfo;
+VITASDK_BUILD_ASSERT_EQ(8, ScePvfIKerningInfo);
 
 typedef struct ScePvfFKerningInfo {
 	ScePvfFloat32 xOffset;
 	ScePvfFloat32 yOffset;
 } ScePvfFKerningInfo;
+VITASDK_BUILD_ASSERT_EQ(8, ScePvfFKerningInfo);
 
 typedef struct ScePvfKerningInfo {
 	ScePvfIKerningInfo iKerningInfo;
 	ScePvfFKerningInfo fKerningInfo;
 } ScePvfKerningInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, ScePvfKerningInfo);
 
 typedef struct ScePvfCacheKey {
 	int keyValue0;
@@ -283,6 +310,7 @@ typedef struct ScePvfCacheKey {
 	float keyValue7;
 	float keyValue8;
 } ScePvfCacheKey;
+VITASDK_BUILD_ASSERT_EQ(0x24, ScePvfCacheKey);
 
 ScePvfLibId scePvfNewLib(ScePvfInitRec *initParam, ScePvfError *errorCode);
 

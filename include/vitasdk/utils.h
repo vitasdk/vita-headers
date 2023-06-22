@@ -1,11 +1,11 @@
 #ifndef _VITASDK_UTILS_H_
 #define _VITASDK_UTILS_H_
 
+#include <psp2/types.h>
+
 #ifdef  __cplusplus
 extern "C" {
 #endif
-
-#include <psp2/types.h>
 
 /**
  * @brief vitasdk_get_tls_data - Get pointer to memory location to store TLS data

@@ -7,6 +7,7 @@
 #ifndef _PSP2_GXM_
 #define _PSP2_GXM_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -53,6 +54,7 @@ typedef struct SceGxmInitializeParams {
 	unsigned int displayQueueCallbackDataSize;
 	SceSize parameterBufferSize;
 } SceGxmInitializeParams;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmInitializeParams);
 
 typedef enum SceGxmMemoryAttribFlags {
 	SCE_GXM_MEMORY_ATTRIB_READ  = 1,
@@ -1065,6 +1067,7 @@ typedef struct SceGxmBlendInfo {
 	uint8_t alphaSrc : 4;  //!< Alpha source blend factor (One of ::SceGxmBlendFactor)
 	uint8_t alphaDst : 4;  //!< Alpha destination blend factor (One of ::SceGxmBlendFactor)
 } SceGxmBlendInfo;
+VITASDK_BUILD_ASSERT_EQ(4, SceGxmBlendInfo);
 
 typedef struct SceGxmRenderTarget SceGxmRenderTarget;
 
@@ -1077,11 +1080,13 @@ typedef struct SceGxmVertexAttribute {
 	uint8_t componentCount; //!< Number of components for the stream data
 	uint16_t regIndex;      //!< The register index in the vertex shader to link stream to.
 } SceGxmVertexAttribute;
+VITASDK_BUILD_ASSERT_EQ(8, SceGxmVertexAttribute);
 
 typedef struct SceGxmVertexStream {
 	uint16_t stride;
 	uint16_t indexSource;
 } SceGxmVertexStream;
+VITASDK_BUILD_ASSERT_EQ(4, SceGxmVertexStream);
 
 //! Texture struct
 typedef struct SceGxmTexture {
@@ -1142,10 +1147,12 @@ typedef struct SceGxmTexture {
 	uint32_t swizzle_format : 3;      //!< Texture format swizzling
 	uint32_t normalize_mode : 1;      //!< Normalize mode
 } SceGxmTexture;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceGxmTexture);
 
 typedef struct SceGxmCommandList {
     uint32_t words[8];
 } SceGxmCommandList;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceGxmCommandList);
 
 typedef struct SceGxmColorSurface {
 	unsigned int pbeSidebandWord;
@@ -1153,6 +1160,7 @@ typedef struct SceGxmColorSurface {
 	unsigned int outputRegisterSize;
 	SceGxmTexture backgroundTex;
 } SceGxmColorSurface;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceGxmColorSurface);
 
 typedef struct SceGxmDepthStencilSurface {
 	unsigned int zlsControl;
@@ -1161,6 +1169,7 @@ typedef struct SceGxmDepthStencilSurface {
 	float backgroundDepth;
 	unsigned int backgroundControl;
 } SceGxmDepthStencilSurface;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmDepthStencilSurface);
 
 //! Represents an auxiliary surface
 typedef struct SceGxmAuxiliarySurface {
@@ -1171,16 +1180,19 @@ typedef struct SceGxmAuxiliarySurface {
 	uint32_t stride;      //!< Surface stride in bytes
 	void *data;           //!< A pointer to the surface data
 } SceGxmAuxiliarySurface;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceGxmAuxiliarySurface);
 
 typedef struct SceGxmNotification {
 	volatile unsigned int *address;
 	unsigned int value;
 } SceGxmNotification;
+VITASDK_BUILD_ASSERT_EQ(8, SceGxmNotification);
 
 typedef struct SceGxmValidRegion {
 	uint32_t xMax;
 	uint32_t yMax;
 } SceGxmValidRegion;
+VITASDK_BUILD_ASSERT_EQ(8, SceGxmValidRegion);
 
 typedef struct SceGxmContext SceGxmContext;
 
@@ -1204,6 +1216,7 @@ typedef struct SceGxmContextParams {
 	SceSize fragmentUsseRingBufferMemSize;
 	unsigned int fragmentUsseRingBufferOffset;
 } SceGxmContextParams;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceGxmContextParams);
 
 typedef struct SceGxmDeferredContextParams {
 	void *hostMem;
@@ -1219,6 +1232,7 @@ typedef struct SceGxmDeferredContextParams {
 	void *fragmentRingBufferMem;
 	SceSize fragmentRingBufferMemSize;
 } SceGxmDeferredContextParams;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceGxmDeferredContextParams);
 
 typedef struct SceGxmVertexProgram SceGxmVertexProgram;
 
@@ -1233,14 +1247,17 @@ typedef enum SceGxmPrecomputedWordCount {
 typedef struct SceGxmPrecomputedVertexState {
 	unsigned int data[SCE_GXM_PRECOMPUTED_VERTEX_STATE_WORD_COUNT];
 } SceGxmPrecomputedVertexState;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceGxmPrecomputedVertexState);
 
 typedef struct SceGxmPrecomputedFragmentState {
 	unsigned int data[SCE_GXM_PRECOMPUTED_FRAGMENT_STATE_WORD_COUNT];
 } SceGxmPrecomputedFragmentState;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceGxmPrecomputedFragmentState);
 
 typedef struct SceGxmPrecomputedDraw {
 	unsigned int data[SCE_GXM_PRECOMPUTED_DRAW_WORD_COUNT];
 } SceGxmPrecomputedDraw;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceGxmPrecomputedDraw);
 
 #define SCE_GXM_MAX_VERTEX_ATTRIBUTES   16
 #define SCE_GXM_MAX_VERTEX_STREAMS      16
@@ -1311,6 +1328,7 @@ typedef struct SceGxmShaderPatcher SceGxmShaderPatcher;
 typedef struct SceGxmRegisteredProgram SceGxmRegisteredProgram;
 
 typedef SceGxmRegisteredProgram *SceGxmShaderPatcherId;
+VITASDK_BUILD_ASSERT_EQ(4, SceGxmShaderPatcherId);
 
 typedef void *(SceGxmShaderPatcherHostAllocCallback)(void *userData, SceSize size);
 typedef void (SceGxmShaderPatcherHostFreeCallback)(void *userData, void *mem);
@@ -1338,6 +1356,7 @@ typedef struct SceGxmShaderPatcherParams {
 	SceSize fragmentUsseMemSize;
 	unsigned int fragmentUsseOffset;
 } SceGxmShaderPatcherParams;
+VITASDK_BUILD_ASSERT_EQ(0x44, SceGxmShaderPatcherParams);
 
 typedef enum SceGxmRenderTargetFlags {
 	SCE_GXM_RENDER_TARGET_CUSTOM_MULTISAMPLE_LOCATIONS = (1 << 0)
@@ -1352,6 +1371,7 @@ typedef struct SceGxmRenderTargetParams {
 	uint32_t multisampleLocations;  //!< If enabled in the flags, the multisample locations to use.
 	SceUID driverMemBlock;          //!< The uncached LPDDR memblock for the render target GPU data structures or SCE_UID_INVALID_UID to specify memory should be allocated in libgxm.
 } SceGxmRenderTargetParams;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmRenderTargetParams);
 
 /* prototypes */
 

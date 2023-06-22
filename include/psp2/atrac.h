@@ -7,6 +7,7 @@
 #ifndef _PSP2_ATRAC_H_
 #define _PSP2_ATRAC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/audiodec.h>
 
@@ -99,6 +100,7 @@ typedef struct {
 	SceUInt32 wordLength;
 	SceUInt32 totalCh;
 } SceAtracDecoderGroup;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceAtracDecoderGroup);
 
 /* Content information structure */
 typedef struct {
@@ -116,6 +118,7 @@ typedef struct {
 	SceUInt32 loopBlockOffset;
 	SceUInt32 loopBlockSize;
 } SceAtracContentInfo;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceAtracContentInfo);
 
 /* Stream information structure */
 typedef struct {
@@ -124,6 +127,7 @@ typedef struct {
 	SceUInt32 readPosition;
 	SceUInt32 writableSize;
 } SceAtracStreamInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAtracStreamInfo);
 
 int sceAtracQueryDecoderGroupMemSize(SceUInt32 atracType, const SceAtracDecoderGroup *pDecoderGroup);
 

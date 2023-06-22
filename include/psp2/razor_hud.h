@@ -6,6 +6,7 @@
 #ifndef _PSP2_RAZOR_HUD_H_
 #define _PSP2_RAZOR_HUD_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -50,22 +51,26 @@ typedef struct SceRazorGpuLiveResultInfo {
 	uint32_t metric_group;  //!< Metrics group used for the results
 	int reserved;           //!< Reserved data
 } SceRazorGpuLiveResultInfo;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceRazorGpuLiveResultInfo);
 
 typedef struct SceRazorGpuLiveEntryHeader {
 	uint16_t entry_size;  //!< Entry size in bytes
 	uint16_t entry_type;  //!< Entry type (One of ::SceRazorLiveTraceMetricEntryType)
 	int reserved;         //!< Reserved data
 } SceRazorGpuLiveEntryHeader;
+VITASDK_BUILD_ASSERT_EQ(8, SceRazorGpuLiveEntryHeader);
 
 typedef struct SceRazorGpuLiveEntryJobVertexValues1 {
 	float usse_vertex_processing_percent; //!< USSE vertex processing percentage
 } SceRazorGpuLiveEntryJobVertexValues1;
+VITASDK_BUILD_ASSERT_EQ(4, SceRazorGpuLiveEntryJobVertexValues1);
 
 typedef struct SceRazorGpuLiveEntryJobFragmentValues1 {
 	float usse_fragment_processing_percent;         //!< USSE fragment processing percentage
 	float usse_dependent_texture_reads_percent;     //!< USSE dependant texture reads requests percentage
 	float usse_non_dependent_texture_reads_percent; //!< USSE non-dependant texture reads requests percentage
 } SceRazorGpuLiveEntryJobFragmentValues1;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceRazorGpuLiveEntryJobFragmentValues1);
 
 typedef struct SceRazorGpuLiveEntryJobVertexValues2 {
 	uint32_t vdm_primitives_input_num;  //!< VDM input primitives  number
@@ -73,20 +78,24 @@ typedef struct SceRazorGpuLiveEntryJobVertexValues2 {
 	uint32_t vdm_vertices_input_num;    //!< VDM input vertices number
 	uint32_t mte_vertices_output_num;   //!< MTE output vertices number
 } SceRazorGpuLiveEntryJobVertexValues2;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceRazorGpuLiveEntryJobVertexValues2);
 
 typedef struct SceRazorGpuLiveEntryJobFragmentValues2 {
 	uint32_t rasterized_pixels_before_hsr_num; //!< Number of rasterized pixels before Hidden Surface Removal
 	uint32_t rasterized_output_pixels_num;     //!< Number of rasterized pixels
 	uint32_t rasterized_output_samples_num;    //!< Number of rasterized samples
 } SceRazorGpuLiveEntryJobFragmentValues2;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceRazorGpuLiveEntryJobFragmentValues2);
 
 typedef struct SceRazorGpuLiveEntryJobVertexValues3 {
 	uint32_t tiling_accelerated_mem_writes; //!< Amount of tiling accelerated memory writes in bytes
 } SceRazorGpuLiveEntryJobVertexValues3;
+VITASDK_BUILD_ASSERT_EQ(4, SceRazorGpuLiveEntryJobVertexValues3);
 
 typedef struct SceRazorGpuLiveEntryJobFragmentValues3 {
 	uint32_t isp_parameter_fetches_mem_reads; //!< Amount of ISP parameter fetches memory reads in bytes
 } SceRazorGpuLiveEntryJobFragmentValues3;
+VITASDK_BUILD_ASSERT_EQ(4, SceRazorGpuLiveEntryJobFragmentValues3);
 
 typedef struct SceRazorGpuLiveEntryJobValues {
 	SceRazorGpuLiveEntryJobVertexValues1 vertex_values_type1;     //!< Values for a job of SCE_RAZOR_LIVE_TRACE_METRIC_JOB_TYPE_VERTEX1 type
@@ -97,6 +106,7 @@ typedef struct SceRazorGpuLiveEntryJobValues {
 	SceRazorGpuLiveEntryJobFragmentValues3 fragment_values_type3; //!< Values for a job of SCE_RAZOR_LIVE_TRACE_METRIC_JOB_TYPE_FRAGMENT3 type
 	int reserved[8];                                              //!< Reserved data
 } SceRazorGpuLiveEntryJobValues;
+VITASDK_BUILD_ASSERT_EQ(0x54, SceRazorGpuLiveEntryJobValues);
 
 typedef struct SceRazorGpuLiveEntryJob {
 	SceRazorGpuLiveEntryHeader header;        //!< Distinguishing header for the entry
@@ -110,6 +120,7 @@ typedef struct SceRazorGpuLiveEntryJob {
 	uint32_t process_id;                      //!< ID of the process which executed the job
 	int unk;                                  //!< Unknown data
 } SceRazorGpuLiveEntryJob;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceRazorGpuLiveEntryJob);
 
 typedef struct SceRazorGpuLiveEntryParameterBuffer {
 	SceRazorGpuLiveEntryHeader header;       //!< Distinguishing header for the entry
@@ -118,6 +129,7 @@ typedef struct SceRazorGpuLiveEntryParameterBuffer {
 	uint8_t partial_render;                  //!< Flag indicating wether a partial render occurred or not
 	uint8_t vertex_job_paused;               //!< Flag indicating wether a vertex job had been paused or not
 } SceRazorGpuLiveEntryParameterBuffer;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceRazorGpuLiveEntryParameterBuffer);
 
 typedef struct SceRazorGpuLiveEntryFrame {
 	SceRazorGpuLiveEntryHeader header;       //!< Distinguishing header for the entry
@@ -127,6 +139,7 @@ typedef struct SceRazorGpuLiveEntryFrame {
 	uint32_t gpu_activity_duration_time;     //!< Duration of GPU activity for the frame in microseconds
 	int reserved;                            //!< Reserved data
 } SceRazorGpuLiveEntryFrame;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceRazorGpuLiveEntryFrame);
 
 /**
  * Sets a metrics group to use for gpu live debugging

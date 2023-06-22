@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSMEM_UID_GUID_H_
 #define _PSP2KERN_KERNEL_SYSMEM_UID_GUID_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/sysmem/uid_class.h>
 
@@ -26,6 +27,7 @@ typedef struct SceGUIDKernelCreateOpt {
 	SceUInt32 field_18;
 	SceUInt32 field_1C;
 } SceGUIDKernelCreateOpt;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceGUIDKernelCreateOpt);
 
 /*
  * Create a GUID object that belongs to the target process id

@@ -6,9 +6,10 @@
 #ifndef _PSP2_LIBIME_H
 #define _PSP2_LIBIME_H
 
-#include <string.h>
-#include <psp2/types.h>
+#include <vitasdk/build_utils.h>
 #include <psp2common/defs.h>
+#include <psp2/types.h>
+#include <psp2/kernel/clib.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -103,6 +104,7 @@ typedef struct SceImeRect {
 	SceUInt32 width;
 	SceUInt32 height;
 } SceImeRect;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceImeRect);
 
 typedef struct SceImeEditText {
 	SceUInt32 preeditIndex;
@@ -112,6 +114,7 @@ typedef struct SceImeEditText {
 	SceUInt32 editIndex;
 	SceInt32 editLengthChange;
 } SceImeEditText;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceImeEditText);
 	
 typedef union SceImeEventParam {
 	SceImeRect rect;
@@ -119,11 +122,13 @@ typedef union SceImeEventParam {
 	SceUInt32 caretIndex;
 	SceUChar8 reserved[40];
 } SceImeEventParam;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceImeEventParam);
 
 typedef struct SceImeEventData {
 	SceUInt32 id;
 	SceImeEventParam param;
 } SceImeEventData;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceImeEventData);
 
 typedef struct SceImeCaret {
 	SceUInt32 x;
@@ -131,12 +136,14 @@ typedef struct SceImeCaret {
 	SceUInt32 height;
 	SceUInt32 index;
 } SceImeCaret;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceImeCaret);
 
 typedef struct SceImePreeditGeometry {
 	SceUInt32 x;
 	SceUInt32 y;
 	SceUInt32 height;
 } SceImePreeditGeometry;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceImePreeditGeometry);
 
 typedef SceInt32 (*SceImeTextFilter)(SceWChar16 *outText, SceUInt32 *outTextLength,
 										const SceWChar16 *srcText, SceUInt32 srcTextLength);
@@ -163,11 +170,12 @@ typedef struct SceImeParam {
 	SceUChar8 enterLabel;
 	SceUChar8 reserved[7];
 } SceImeParam;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceImeParam);
 
 static inline
 void sceImeParamInit(SceImeParam *param)
 {
-	memset(param, 0x0, sizeof(SceImeParam));
+	sceClibMemset(param, 0x0, sizeof(SceImeParam));
 	param->sdkVersion = PSP2_SDK_VERSION;
 }
 

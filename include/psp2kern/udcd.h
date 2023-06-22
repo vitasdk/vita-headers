@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_UDCD_H_
 #define _PSP2KERN_UDCD_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -213,6 +214,7 @@ typedef struct SceUdcdStringDescriptor {
 	unsigned char bDescriptorType;
 	short         bString[31];
 } SceUdcdStringDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceUdcdStringDescriptor);
 
 /**  USB device descriptor
  */
@@ -232,6 +234,7 @@ typedef struct SCE_ALIGN(4) SceUdcdDeviceDescriptor {
 	unsigned char  iSerialNumber;
 	unsigned char  bNumConfigurations;
 } SceUdcdDeviceDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceUdcdDeviceDescriptor);
 
 /**  USB device qualifier descriptor
  */
@@ -246,6 +249,7 @@ typedef struct SCE_ALIGN(4) SceUdcdDeviceQualifierDescriptor {
 	unsigned char  bNumConfigurations;
 	unsigned char  bReserved;
 } SceUdcdDeviceQualifierDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceUdcdDeviceQualifierDescriptor);
 
 /**  USB configuration descriptor
  */
@@ -262,6 +266,7 @@ typedef struct SceUdcdConfigDescriptor {
 	unsigned char *extra;                       //!< Extra descriptors
 	int extraLength;
 } SceUdcdConfigDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUdcdConfigDescriptor);
 
 /**  USB driver interfaces structure
  */
@@ -270,6 +275,7 @@ typedef struct SceUdcdInterfaceSettings {
 	unsigned int alternateSetting;
 	unsigned int numDescriptors;                    //!< Number of interface descriptors
 } SceUdcdInterfaceSettings;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceUdcdInterfaceSettings);
 
 /**  USB Interface descriptor
  */
@@ -287,6 +293,7 @@ typedef struct SceUdcdInterfaceDescriptor {
 	unsigned char *extra;                         //!< Extra descriptors
 	int extraLength;
 } SceUdcdInterfaceDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUdcdInterfaceDescriptor);
 
 /**  USB endpoint descriptor
  */
@@ -300,6 +307,7 @@ typedef struct SceUdcdEndpointDescriptor {
 	unsigned char *extra;              //!< Extra descriptors
 	int extraLength;
 } SceUdcdEndpointDescriptor;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceUdcdEndpointDescriptor);
 
 /**  USB driver interface
  */
@@ -308,6 +316,7 @@ typedef struct SceUdcdInterface {
 	int interfaceNumber;  //!< End interface
 	int numInterfaces;    //!< Number of interfaces
 } SceUdcdInterface;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceUdcdInterface);
 
 /**  USB driver endpoint
  */
@@ -317,6 +326,7 @@ typedef struct SceUdcdEndpoint {
 	int endpointNumber;       //!< Endpoint number (Filled in by the bus driver)
 	int transmittedBytes;     //!< Number of transmitted bytes
 } SceUdcdEndpoint;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceUdcdEndpoint);
 
 /**  USB driver configuration
  */
@@ -326,6 +336,7 @@ typedef struct SceUdcdConfiguration {
 	SceUdcdInterfaceDescriptor *interfaceDescriptors;  //!< Pointer to the first interface descriptor
 	SceUdcdEndpointDescriptor *endpointDescriptors;   //!< Pointer to the first endpoint descriptor
 } SceUdcdConfiguration;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceUdcdConfiguration);
 
 /**  USB EP0 Device Request
  */
@@ -336,6 +347,7 @@ typedef struct SceUdcdEP0DeviceRequest {
 	unsigned short wIndex;
 	unsigned short wLength;
 } SceUdcdEP0DeviceRequest;
+VITASDK_BUILD_ASSERT_EQ(8, SceUdcdEP0DeviceRequest);
 
 /**  USB driver structure
  */
@@ -362,6 +374,7 @@ typedef struct SceUdcdDriver {
 	int bus;                   //!< USB bus
 	struct SceUdcdDriver *link;          //!< Link to next USB driver in the chain, set to NULL
 } SceUdcdDriver;
+VITASDK_BUILD_ASSERT_EQ(0x54, SceUdcdDriver);
 
 /**  USB device request
  */
@@ -378,6 +391,7 @@ typedef struct SceUdcdDeviceRequest {
 	void *unused;                                         //!< An unused value (maybe an argument)
 	void *physicalAddress;                                //!< Physical address
 } SceUdcdDeviceRequest;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceUdcdDeviceRequest);
 
 /**  USB driver name
  */
@@ -386,12 +400,14 @@ typedef struct SCE_ALIGN(16) SceUdcdDriverName {
 	char name[32];
 	int  flags;
 } SceUdcdDriverName;
+VITASDK_BUILD_ASSERT_EQ(((0x28 + (0x10 - 1)) & ~(0x10 - 1)), SceUdcdDriverName);
 
 /**  USB device information
  */
 typedef struct SceUdcdDeviceInfo {
 	unsigned char info[64];
 } SceUdcdDeviceInfo;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceUdcdDeviceInfo);
 
 typedef struct SceUdcdWaitParam {
 	int unk_00;
@@ -401,6 +417,7 @@ typedef struct SceUdcdWaitParam {
 	int unk_10;
 	const char *driverName;
 } SceUdcdWaitParam;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceUdcdWaitParam);
 
 /**
  * Waits until an UDCD bus is initialized

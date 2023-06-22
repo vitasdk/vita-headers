@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_THREAD_H_
 #define _PSP2KERN_KERNEL_THREADMGR_THREAD_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -23,6 +24,7 @@ typedef struct SceKernelThreadOptParam {
 	/** Attributes */
 	SceUInt32       attr;
 } SceKernelThreadOptParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelThreadOptParam);
 
 /** Structure to hold the status information for a thread
   * @see ksceKernelGetThreadInfo
@@ -77,6 +79,7 @@ typedef struct SceKernelThreadInfo {
 	/** Reserved */
 	SceInt32             reserved;
 } SceKernelThreadInfo;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceKernelThreadInfo);
 
 /** Statistics about a running thread.
  * @see ksceKernelGetThreadRunStatus.
@@ -89,6 +92,7 @@ typedef struct SceKernelThreadRunStatus {
 		int    priority;
 	} cpuInfo[4];
 } SceKernelThreadRunStatus;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelThreadRunStatus);
 
 typedef enum SceThreadStatus {
 	SCE_THREAD_RUNNING   = 1,

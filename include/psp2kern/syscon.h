@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_SYSCON_H_
 #define _PSP2KERN_SYSCON_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -46,7 +47,8 @@ typedef struct SceSysconPacket {
 	void *argp;
 	unsigned int time;
 	unsigned int unk2[5];
-} SceSysconPacket; /* size 0x80 */
+} SceSysconPacket;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceSysconPacket);
 
 /** A set of debug handlers for syscon, that you can set in ksceSysconSetDebugHandlers(). */
 typedef struct SceSysconDebugHandlers {
@@ -57,6 +59,7 @@ typedef struct SceSysconDebugHandlers {
 	/** Callback ran right after finishing running a packet, with a pointer to it passed as the first argument. */
 	void (*end)(SceSysconPacket *packet);
 } SceSysconDebugHandlers;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceSysconDebugHandlers);
 
 typedef int (*SceSysconCmdExecAsyncCallback)(SceSysconPacket *packet, void *argp);
 

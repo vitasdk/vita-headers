@@ -28,6 +28,7 @@ IGNORE_FILES = [
     'vitasdk.h',
     'vitasdkkern.h',
     'vitasdk/utils.h',
+    'vitasdk/build_utils.h',
 ]
 
 # older python's glob not support `**`

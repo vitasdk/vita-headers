@@ -6,6 +6,7 @@
 #ifndef _PSP2_JPEG_H_
 #define _PSP2_JPEG_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -17,11 +18,13 @@ typedef struct SceJpegMJpegInitParam {
     SceInt32 decoderCount;
     SceInt32 options;
 } SceJpegMJpegInitParam;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceJpegMJpegInitParam);
 
 typedef struct SceJpegPitch {
     SceUInt32 x;
     SceUInt32 y;
 } SceJpegPitch;
+VITASDK_BUILD_ASSERT_EQ(8, SceJpegPitch);
 
 typedef struct SceJpegOutputInfo {
     SceInt32 colorSpace;
@@ -32,6 +35,7 @@ typedef struct SceJpegOutputInfo {
     SceUInt32 unk_0x10;
     SceJpegPitch pitch[4];
 } SceJpegOutputInfo;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceJpegOutputInfo);
 
 int sceJpegInitMJpeg(SceInt32 decoderCount);
 

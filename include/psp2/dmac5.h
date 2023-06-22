@@ -6,6 +6,7 @@
 #ifndef _PSP2_DMAC5_H_
 #define _PSP2_DMAC5_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -21,11 +22,13 @@ typedef struct SceSblDmac5EncDecParam { // size is 0x18-bytes
 	SceSize keysize; //<! The key size in bits
 	void *iv;        //<! The initialization vector
 } SceSblDmac5EncDecParam;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5EncDecParam);
 
 typedef struct SceSblDmac5HashTransformContext { // size is 0x28-bytes
 	SceUInt32 state[8];
 	SceUInt64 length;
 } SceSblDmac5HashTransformContext;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceSblDmac5HashTransformContext);
 
 typedef struct SceSblDmac5HashTransformParam { // size is 0x18-bytes
 	const void *src; //<! The operation input buffer
@@ -35,6 +38,7 @@ typedef struct SceSblDmac5HashTransformParam { // size is 0x18-bytes
 	SceSize keysize; //<! The key size in bits
 	void *ctx;       //<! SceSblDmac5HashTransformContext Or another context of size 0x10-bytes
 } SceSblDmac5HashTransformParam;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5HashTransformParam);
 
 /**
  * @brief Execute DMAC5 encdec command

@@ -7,6 +7,7 @@
 #ifndef _PSP2KERN_KERNEL_THREADMGR_COND_H_
 #define _PSP2KERN_KERNEL_THREADMGR_COND_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -19,6 +20,7 @@ typedef struct SceKernelCondOptParam {
 	/** Size of the ::SceKernelCondOptParam structure. */
 	SceSize 	size;
 } SceKernelCondOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelCondOptParam);
 
 /** Current state of a condition variable.
  * @see ksceKernelGetCondInfo.
@@ -37,6 +39,7 @@ typedef struct SceKernelCondInfo {
 	/** The number of threads waiting on the condition variable. */
 	int             numWaitThreads;
 } SceKernelCondInfo;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelCondInfo);
 
 /**
  * Creates a new condition variable

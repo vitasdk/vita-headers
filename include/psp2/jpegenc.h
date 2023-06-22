@@ -6,6 +6,7 @@
 #ifndef _PSP2_JPEGENC_H_
 #define _PSP2_JPEGENC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -13,6 +14,7 @@ extern "C" {
 #endif
 
 typedef void* SceJpegEncoderContext;
+VITASDK_BUILD_ASSERT_EQ(4, SceJpegEncoderContext);
 
 typedef enum SceJpegEncErrorCode {
 	SCE_JPEGENC_ERROR_IMAGE_SIZE                = 0x80650200,
@@ -50,6 +52,7 @@ typedef struct SceJpegEncoderInitParam {
 	SceSize outSize;     //!< Output size in bytes
 	int     option;      //!< Additional options, OR of ::SceJpegEncoderInitParamOption
 } SceJpegEncoderInitParam;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceJpegEncoderInitParam);
 
 /**
  * Initialize a jpeg encoder

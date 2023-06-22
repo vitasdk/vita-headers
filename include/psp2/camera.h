@@ -7,6 +7,7 @@
 #ifndef _PSP2_CAMERA_H_
 #define _PSP2_CAMERA_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <stdint.h>
 
@@ -221,6 +222,7 @@ typedef struct SceCameraInfo {
 	uint16_t pitch;
 	uint16_t buffer;
 } SceCameraInfo;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceCameraInfo);
 
 typedef struct SceCameraRead {
 	SceSize size;         //!< sizeof(SceCameraRead)
@@ -236,6 +238,7 @@ typedef struct SceCameraRead {
 	void *pUBase;
 	void *pVBase;
 } SceCameraRead;
+VITASDK_BUILD_ASSERT_EQ(0x38, SceCameraRead);
 
 /**
  * Open a camera device.

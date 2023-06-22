@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSMEM_HEAP_H_
 #define _PSP2KERN_KERNEL_SYSMEM_HEAP_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -29,6 +30,7 @@ typedef struct SceKernelHeapCreateOpt {
 	SceUInt32 field_14;
 	SceUInt32 field_18;
 } SceKernelHeapCreateOpt;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceKernelHeapCreateOpt);
 
 typedef struct SceAllocOpt {
 	SceSize size;   // 0x14
@@ -37,6 +39,7 @@ typedef struct SceAllocOpt {
 	int data0C;
 	int data10;
 } SceAllocOpt;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceAllocOpt);
 
 /**
  * Create heap area

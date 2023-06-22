@@ -7,6 +7,7 @@
 #ifndef _PSP2_SSL_LIBSSL_H
 #define _PSP2_SSL_LIBSSL_H
 
+#include <vitasdk/build_utils.h>
 #include <psp2/rtc.h>
 
 typedef enum SceSslErrorCode {
@@ -28,6 +29,7 @@ typedef struct SceSslMemoryPoolStats{
 	unsigned currentInuseSize;
 	int  reserved;
 } SceSslMemoryPoolStats;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceSslMemoryPoolStats);
 
 #ifdef __cplusplus
 extern "C" {

@@ -7,6 +7,8 @@
 #ifndef _PSP2_SQLITE_H_
 #define _PSP2_SQLITE_H_
 
+#include <vitasdk/build_utils.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -16,6 +18,7 @@ typedef struct{
 	void *(*xRealloc)(void*,int);
 	void (*xFree)(void*);
 } SceSqliteMallocMethods;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceSqliteMallocMethods);
 
 /**
  * Wrapper for sqlite3_config(SQLITE_CONFIG_MALLOC)

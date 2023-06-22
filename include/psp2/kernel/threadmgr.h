@@ -7,6 +7,7 @@
 #ifndef _PSP2_KERNEL_THREADMGR_H_
 #define _PSP2_KERNEL_THREADMGR_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/kernel/cpu.h>
 
@@ -31,6 +32,7 @@ typedef struct SceKernelThreadOptParam {
 	/** Attributes */
 	SceUInt32   attr;
 } SceKernelThreadOptParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelThreadOptParam);
 
 /** Structure to hold the status information for a thread
   * @see sceKernelGetThreadInfo
@@ -85,6 +87,7 @@ typedef struct SceKernelThreadInfo {
 	/** Reserved */
 	SceInt32             reserved;
 } SceKernelThreadInfo;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceKernelThreadInfo);
 
 /** Statistics about a running thread.
  * @see sceKernelGetThreadRunStatus.
@@ -97,6 +100,7 @@ typedef struct SceKernelThreadRunStatus {
 		int    priority;
 	} cpuInfo[4];
 } SceKernelThreadRunStatus;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelThreadRunStatus);
 
 typedef enum SceThreadStatus {
 	SCE_THREAD_RUNNING   = 1,
@@ -372,6 +376,7 @@ typedef struct SceKernelSemaOptParam {
 	/** Size of the ::SceKernelSemaOptParam structure. */
 	SceSize 	size;
 } SceKernelSemaOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelSemaOptParam);
 
 /** Current state of a semaphore.
  * @see sceKernelGetSemaInfo.
@@ -394,6 +399,7 @@ typedef struct SceKernelSemaInfo {
 	/** The number of threads waiting on the semaphore. */
 	int             numWaitThreads;
 } SceKernelSemaInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelSemaInfo);
 
 /**
  * Creates a new semaphore
@@ -511,6 +517,7 @@ typedef struct SceKernelMutexOptParam {
 	SceSize     size;
 	int         ceilingPriority;
 } SceKernelMutexOptParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelMutexOptParam);
 
 /** Current state of a mutex.
  * @see sceKernelGetMutexInfo.
@@ -533,6 +540,7 @@ typedef struct SceKernelMutexInfo {
 	/** The number of threads waiting on the mutex. */
 	int             numWaitThreads;
 } SceKernelMutexInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMutexInfo);
 
 /**
  * Creates a new mutex
@@ -646,12 +654,12 @@ typedef struct SceKernelEventFlagInfo {
 	SceUInt currentPattern;
 	int     numWaitThreads;
 } SceKernelEventFlagInfo;
+VITASDK_BUILD_ASSERT_EQ(0x38, SceKernelEventFlagInfo);
 
 typedef struct SceKernelEventFlagOptParam {
 	SceSize         size;
 } SceKernelEventFlagOptParam;
-
-typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelEventFlagOptParam);
 
 /** Event flag wait types */
 typedef enum SceEventFlagWaitTypes {
@@ -763,6 +771,7 @@ typedef struct SceKernelCondOptParam {
 	/** Size of the ::SceKernelCondOptParam structure. */
 	SceSize 	size;
 } SceKernelCondOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelCondOptParam);
 
 /** Current state of a condition variable.
  * @see sceKernelGetCondInfo.
@@ -781,6 +790,7 @@ typedef struct SceKernelCondInfo {
 	/** The number of threads waiting on the condition variable. */
 	int             numWaitThreads;
 } SceKernelCondInfo;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelCondInfo);
 
 /**
  * Creates a new condition variable
@@ -890,6 +900,7 @@ typedef struct SceKernelCallbackInfo {
 	/** Unknown */
 	int     notifyArg;
 } SceKernelCallbackInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelCallbackInfo);
 
 /**
  * Create callback
@@ -1093,6 +1104,7 @@ typedef struct SceKernelMppInfo {
 	int     numSendWaitThreads;
 	int     numReceiveWaitThreads;
 } SceKernelMppInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMppInfo);
 
 /**
  * Get the status of a Message Pipe
@@ -1117,6 +1129,7 @@ typedef struct SceKernelSystemInfo {
 		SceUInt32         threadSwitchCount;
 	} cpuInfo[4];
 } SceKernelSystemInfo;
+VITASDK_BUILD_ASSERT_EQ(0x48, SceKernelSystemInfo);
 
 /**
  * Get the system information
@@ -1161,10 +1174,12 @@ SceKernelIdListType sceKernelGetThreadmgrUIDClass(SceUID uid);
 typedef struct	SceKernelLwMutexWork {
 	SceInt64 data[4];
 } SceKernelLwMutexWork;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceKernelLwMutexWork);
 
 typedef struct SceKernelLwMutexOptParam {
 	SceSize	size;
 } SceKernelLwMutexOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelLwMutexOptParam);
 
 int sceKernelCreateLwMutex(SceKernelLwMutexWork *pWork,const char *pName, unsigned int attr, int initCount, const SceKernelLwMutexOptParam *pOptParam);
 int sceKernelDeleteLwMutex(SceKernelLwMutexWork *pWork);
@@ -1175,10 +1190,12 @@ int sceKernelUnlockLwMutex(SceKernelLwMutexWork *pWork, int unlockCount);
 typedef struct	SceKernelLwCondWork {
 	SceInt32 data[4];
 } SceKernelLwCondWork;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelLwCondWork);
 
 typedef struct SceKernelLwCondOptParam {
 	SceSize	size;
 } SceKernelLwCondOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelLwCondOptParam);
 
 int sceKernelCreateLwCond(SceKernelLwCondWork *pWork, const char *pName, unsigned int attr, SceKernelLwMutexWork *pLwMutex, const SceKernelLwCondOptParam *pOptParam);
 int sceKernelDeleteLwCond(SceKernelLwCondWork *pWork);
@@ -1237,6 +1254,7 @@ typedef struct SceKernelRWLockOptParam {
 	/** Size of the ::SceKernelRWLockOptParam structure */
 	SceSize     size;
 } SceKernelRWLockOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelRWLockOptParam);
 
 /** Current state of a rwlock.
  * @see sceKernelGetRWLockInfo
@@ -1259,6 +1277,7 @@ typedef struct SceKernelRWLockInfo {
 	/** The number of threads waiting on the rwlock for write access */
 	SceUInt32       numWriteWaitThreads;
 } SceKernelRWLockInfo;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelRWLockInfo);
 
 /**
  * Creates a new rwlock

@@ -7,6 +7,7 @@
 #ifndef _PSP2_FIBER_H
 #define _PSP2_FIBER_H
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -30,10 +31,12 @@ typedef enum SceFiberErrorCode {
 typedef struct SCE_ALIGN(8) SceFiber {
 	char reserved[128];
 } SceFiber;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceFiber);
 
 typedef struct SCE_ALIGN(8) SceFiberOptParam {
 	char reserved[128];
 } SceFiberOptParam;
+VITASDK_BUILD_ASSERT_EQ(0x80, SceFiberOptParam);
 
 typedef void (SceFiberEntry)(SceUInt32 argOnInitialize, SceUInt32 argOnRun);
 
@@ -45,6 +48,7 @@ typedef struct SCE_ALIGN(8) SceFiberInfo {
 	char name[32];
 	unsigned padding[80];
 } SceFiberInfo;
+VITASDK_BUILD_ASSERT_EQ(0x170, SceFiberInfo);
 
 SceInt32 _sceFiberInitializeImpl(SceFiber* fiber, char* name, SceFiberEntry* entry, SceUInt32 argOnInitialize, void* addrContext, SceSize sizeContext, SceFiberOptParam* params);
 

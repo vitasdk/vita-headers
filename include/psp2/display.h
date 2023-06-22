@@ -7,6 +7,7 @@
 #ifndef _PSP2_DISPLAY_H_
 #define _PSP2_DISPLAY_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -55,6 +56,7 @@ typedef struct SceDisplayFrameBuf {
 	unsigned int width;         //!< framebuffer width
 	unsigned int height;        //!< framebuffer height
 } SceDisplayFrameBuf;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceDisplayFrameBuf);
 
 /**
  * Set/Update framebuffer parameters

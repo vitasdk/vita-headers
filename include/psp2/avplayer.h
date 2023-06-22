@@ -6,6 +6,7 @@
 #ifndef _PSP2_AVPLAYER_H_
 #define _PSP2_AVPLAYER_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <stdint.h>
 
@@ -14,6 +15,7 @@ extern "C" {
 #endif
 
 typedef int SceAvPlayerHandle;
+VITASDK_BUILD_ASSERT_EQ(4, SceAvPlayerHandle);
 
 typedef enum SceAvPlayerErrorCode {
 	SCE_AVPLAYER_ERROR_INVALID_PARAM = 0x806A0001,
@@ -57,6 +59,7 @@ typedef struct SceAvPlayerMemReplacement {
 	SceAvPlayerAllocFrame allocateTexture;   //!< Memory allocator for video frames
 	SceAvPlayerFreeFrame deallocateTexture;  //!< Memory deallocator for video frames
 } SceAvPlayerMemReplacement;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceAvPlayerMemReplacement);
 
 typedef struct SceAvPlayerFileReplacement {
 	void* objectPointer;
@@ -65,11 +68,13 @@ typedef struct SceAvPlayerFileReplacement {
 	SceAvPlayerReadOffsetFile readOffset;    //!< File read from offset
 	SceAvPlayerSizeFile size;                //!< File size
 } SceAvPlayerFileReplacement;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceAvPlayerFileReplacement);
 
 typedef struct SceAvPlayerEventReplacement {
 	void *objectPointer;
 	SceAvPlayerEventCallback eventCallback;
 } SceAvPlayerEventReplacement;
+VITASDK_BUILD_ASSERT_EQ(8, SceAvPlayerEventReplacement);
 
 typedef struct SceAvPlayerInitData {
 	SceAvPlayerMemReplacement memoryReplacement;  //!< Memory allocator replacement
@@ -82,6 +87,7 @@ typedef struct SceAvPlayerInitData {
 	uint8_t reserved[3];                          //!< Reserved data
 	const char *defaultLanguage;
 } SceAvPlayerInitData;
+VITASDK_BUILD_ASSERT_EQ(0x48, SceAvPlayerInitData);
 
 typedef struct SceAvPlayerAudio {
 	uint16_t channelCount; //!< The number of audio channels of the audio frame.
@@ -90,6 +96,7 @@ typedef struct SceAvPlayerAudio {
 	uint32_t size;         //!< The size of the audio frame in bytes.
 	uint32_t languageCode; //!< The language code of the audio frame.
 } SceAvPlayerAudio;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAvPlayerAudio);
 
 typedef struct SceAvPlayerVideo {
 	uint32_t width;        //!< The width of the video frame in pixels.
@@ -97,6 +104,7 @@ typedef struct SceAvPlayerVideo {
 	float aspectRatio;     //!< The aspect ratio of the video frame.
 	uint32_t languageCode; //!< The language code of the video frame.
 } SceAvPlayerVideo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAvPlayerVideo);
 
 typedef struct SceAvPlayerTextPosition{
 	uint16_t top;
@@ -104,6 +112,7 @@ typedef struct SceAvPlayerTextPosition{
 	uint16_t bottom;
 	uint16_t right;
 } SceAvPlayerTextPosition;
+VITASDK_BUILD_ASSERT_EQ(8, SceAvPlayerTextPosition);
 
 typedef struct SceAvPlayerTimedText {
 	uint32_t languageCode;            //!< The language code of the subtitles.
@@ -111,6 +120,7 @@ typedef struct SceAvPlayerTimedText {
 	uint16_t fontSize;                //!< The size of the subtitles.
 	SceAvPlayerTextPosition position; //!< The position of the subtitles.
 } SceAvPlayerTimedText;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAvPlayerTimedText);
 
 typedef union SceAvPlayerStreamDetails {
 	uint32_t reserved[4];      //!< Reserved data.
@@ -118,6 +128,7 @@ typedef union SceAvPlayerStreamDetails {
 	SceAvPlayerVideo video;    //!< Video details.
 	SceAvPlayerTimedText subs; //!< Subtitles details.
 } SceAvPlayerStreamDetails;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAvPlayerStreamDetails);
 
 typedef struct SceAvPlayerFrameInfo {
 	uint8_t *pData;                   //!< Pointer to the frame data.
@@ -125,6 +136,7 @@ typedef struct SceAvPlayerFrameInfo {
 	uint64_t timeStamp;               //!< Timestamp of the frame in milliseconds
 	SceAvPlayerStreamDetails details; //!< The frame details.
 } SceAvPlayerFrameInfo;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceAvPlayerFrameInfo);
 
 typedef struct SceAvPlayerStreamInfo {
 	uint32_t type;                    //!< Type of the stream (One of ::SceAvPlayerStreamType)
@@ -133,6 +145,7 @@ typedef struct SceAvPlayerStreamInfo {
 	uint64_t duration;                //!< Total duration of the stream in milliseconds.
 	uint64_t startTime;               //!< Starting time of the stream in milliseconds.
 } SceAvPlayerStreamInfo;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceAvPlayerStreamInfo);
 
 /**
  * @param[in] data - Init data for the video player

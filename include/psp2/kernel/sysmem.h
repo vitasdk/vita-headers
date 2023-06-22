@@ -7,6 +7,7 @@
 #ifndef _PSP2_KERNEL_SYSMEM_H_
 #define _PSP2_KERNEL_SYSMEM_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2common/kernel/sysmem.h>
 
@@ -24,6 +25,7 @@ typedef struct SceKernelAllocMemBlockOpt {
 	int flags;                     //! Unknown flags 0x10 or 0x30 for ::sceKernelOpenMemBlock
 	int reserved[10];
 } SceKernelAllocMemBlockOpt;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceKernelAllocMemBlockOpt);
 
 typedef struct SceKernelFreeMemorySizeInfo {
 	int size;         //!< sizeof(SceKernelFreeMemorySizeInfo)
@@ -31,6 +33,7 @@ typedef struct SceKernelFreeMemorySizeInfo {
 	int size_cdram;   //!< Free memory size for USER_CDRAM_RW memory
 	int size_phycont; //!< Free memory size for USER_MAIN_PHYCONT_*_RW memory
 } SceKernelFreeMemorySizeInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelFreeMemorySizeInfo);
 
 typedef struct SceKernelMemBlockInfo {
 	SceSize size;
@@ -40,6 +43,7 @@ typedef struct SceKernelMemBlockInfo {
 	SceUInt32 access;
 	SceKernelMemBlockType type;
 } SceKernelMemBlockInfo;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelMemBlockInfo);
 
 typedef enum SceKernelMemoryAccessType {
 	SCE_KERNEL_MEMORY_ACCESS_X = 0x01,

@@ -7,6 +7,7 @@
 #ifndef _PSP2_PSS_H_
 #define _PSP2_PSS_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -19,6 +20,7 @@ typedef struct ScePssCryptoHandle {
   SceSize size;
   uint32_t unk3;
 } ScePssCryptoHandle;
+VITASDK_BUILD_ASSERT_EQ(0x10, ScePssCryptoHandle);
 
 int pss_crypto_open(ScePssCryptoHandle *handle, char *path);
 char *pss_crypto_read(ScePssCryptoHandle *handle, int *mode);

@@ -7,6 +7,7 @@
 #ifndef _PSP2_NET_NETCTL_H_
 #define _PSP2_NET_NETCTL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/net/net.h>
 
 #ifdef __cplusplus
@@ -82,6 +83,7 @@ typedef union SceNetCtlInfo {
 	char http_proxy_server[256];
 	unsigned int http_proxy_port;
 } SceNetCtlInfo;
+VITASDK_BUILD_ASSERT_EQ(0x100, SceNetCtlInfo);
 
 
 typedef struct SceNetCtlNatInfo {
@@ -90,11 +92,13 @@ typedef struct SceNetCtlNatInfo {
 	int nat_type;
 	SceNetInAddr mapped_addr;
 } SceNetCtlNatInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceNetCtlNatInfo);
 
 typedef struct SceNetCtlAdhocPeerInfo {
 	struct SceNetCtlAdhocPeerInfo *next;
 	SceNetInAddr inet_addr;
 } SceNetCtlAdhocPeerInfo;
+VITASDK_BUILD_ASSERT_EQ(8, SceNetCtlAdhocPeerInfo);
 
 /* prototypes */
 

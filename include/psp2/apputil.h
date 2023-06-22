@@ -7,6 +7,7 @@
 #ifndef _PSP2_APPUTIL_H_
 #define _PSP2_APPUTIL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <stdint.h>
 
@@ -58,30 +59,36 @@ typedef struct SceAppUtilBgdlStatus {
 	SceUInt32 licenseReady;
 	SceChar8 reserved[28];
 } SceAppUtilBgdlStatus;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceAppUtilBgdlStatus);
 
 typedef struct SceAppUtilInitParam {
 	SceSize workBufSize;  //!< Buffer size
 	uint8_t reserved[60]; //!< Reserved range
 } SceAppUtilInitParam;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceAppUtilInitParam);
 
 typedef struct SceAppUtilBootParam {
 	SceAppUtilBootAttribute attr;   //!< Boot attribute
 	unsigned int appVersion;        //!< App version
 	uint8_t reserved[32];           //!< Reserved range
 } SceAppUtilBootParam;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceAppUtilBootParam);
 
 typedef struct SceAppUtilSaveDataMountPoint {
 	uint8_t data[16];
 } SceAppUtilSaveDataMountPoint;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppUtilSaveDataMountPoint);
 
 typedef struct SceAppUtilAppEventParam {
 	SceAppUtilAppEventType type; //!< Event type
 	uint8_t dat[1024];           //!< Event parameter
 } SceAppUtilAppEventParam;
+VITASDK_BUILD_ASSERT_EQ(0x404, SceAppUtilAppEventParam);
 
 typedef struct SceAppUtilMountPoint {
 	int8_t data[16]; //!< Mount point
 } SceAppUtilMountPoint;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppUtilMountPoint);
 
 typedef struct SceAppUtilSaveDataSlotEmptyParam {
 	SceWChar16 *title;     //!< Title string
@@ -90,6 +97,7 @@ typedef struct SceAppUtilSaveDataSlotEmptyParam {
 	SceSize iconBufSize;   //!< Icon buffer size
 	uint8_t reserved[32];  //!< Reserved range
 } SceAppUtilSaveDataSlotEmptyParam;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceAppUtilSaveDataSlotEmptyParam);
 
 typedef struct SceAppUtilSaveDataSlot {
 	SceAppUtilSaveDataSlotId id;                  //!< Slot id
@@ -97,6 +105,7 @@ typedef struct SceAppUtilSaveDataSlot {
 	int userParam;                                //!< Param for free usage
 	SceAppUtilSaveDataSlotEmptyParam *emptyParam; //!< Settings for empty slot
 } SceAppUtilSaveDataSlot;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppUtilSaveDataSlot);
 
 typedef struct SceAppUtilSaveDataSlotParam {
 	SceAppUtilSaveDataSlotStatus status; //!< Status
@@ -109,6 +118,7 @@ typedef struct SceAppUtilSaveDataSlotParam {
 	SceDateTime modifiedTime;            //!< Last modified time
 	uint8_t reserved[48];                //!< Reserved range
 } SceAppUtilSaveDataSlotParam;
+VITASDK_BUILD_ASSERT_EQ(0x34C, SceAppUtilSaveDataSlotParam);
 
 typedef struct SceAppUtilSaveDataSaveItem {
 	const char *dataPath;             //!< Path to savedata
@@ -118,6 +128,7 @@ typedef struct SceAppUtilSaveDataSaveItem {
 	int mode;                         //!< Savedata save mode (One of ::SceAppUtilSaveDataSaveMode)
 	uint8_t reserved[36];             //!< Reserved range
 } SceAppUtilSaveDataSaveItem;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceAppUtilSaveDataSaveItem);
 
 typedef struct SceAppUtilSaveDataFile {
 	const char *filePath;
@@ -128,23 +139,27 @@ typedef struct SceAppUtilSaveDataFile {
 	unsigned int progDelta;
 	uint8_t reserved[32];
 } SceAppUtilSaveDataFile;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceAppUtilSaveDataFile);
 
 typedef struct SceAppUtilSaveDataFileSlot {
 	unsigned int id;
 	SceAppUtilSaveDataSlotParam *slotParam;
 	uint8_t reserved[32];
 } SceAppUtilSaveDataFileSlot;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceAppUtilSaveDataFileSlot);
 
 typedef struct SceAppUtilSaveDataRemoveItem {
 	const char *dataPath;               //!< Path to savedata data
 	int mode;                           //!< Savedata remove mode (One of ::SceAppUtilSaveDataRemoveMode)
 	uint8_t reserved[36];               //!< Reserved range
 } SceAppUtilSaveDataRemoveItem;
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceAppUtilSaveDataRemoveItem);
 
 typedef struct SceAppUtilStoreBrowseParam {
 	unsigned int type;          //!< Store browse type
 	const char *id;             //!< Target id
 } SceAppUtilStoreBrowseParam;
+VITASDK_BUILD_ASSERT_EQ(8, SceAppUtilStoreBrowseParam);
 
 typedef struct SceAppUtilWebBrowserParam {
 	const char *str;            //!< String that's passed to command specified by launchMode
@@ -152,6 +167,7 @@ typedef struct SceAppUtilWebBrowserParam {
 	unsigned int launchMode;    //!< Browser mode
 	unsigned int reserved;      //!< Reserved area
 } SceAppUtilWebBrowserParam;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppUtilWebBrowserParam);
 
 /**
  * Initializes the AppUtil library. Call this before any of the other functions.

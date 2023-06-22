@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_KERNEL_SYSMEM_H_
 #define _PSP2KERN_KERNEL_SYSMEM_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/sysmem/uid_class.h>
 #include <psp2kern/kernel/sysmem/uid_guid.h>
@@ -57,6 +58,7 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceUInt32 field_50;
 	SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
+VITASDK_BUILD_ASSERT_EQ(0x58, SceKernelAllocMemBlockKernelOpt);
 
 /**
  * Allocates a new memory block

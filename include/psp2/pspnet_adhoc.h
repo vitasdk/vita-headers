@@ -7,6 +7,7 @@
 #ifndef _PSP2_PSPNET_ADHOC_H_
 #define _PSP2_PSPNET_ADHOC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/pspnet_adhocctl.h>
 #include <psp2/net/net.h>
@@ -51,7 +52,7 @@ struct SceNetAdhocPollSd {
 	int id;
 	int events;
 	int revents;
-};
+}; VITASDK_BUILD_ASSERT_EX(SceNetAdhocPollSd, 0xC == sizeof(struct SceNetAdhocPollSd));
 
 typedef enum ScePspnetAdhocEvent {
 	SCE_NET_ADHOC_EV_SEND        = 0x0001,
@@ -71,7 +72,7 @@ struct SceNetAdhocPdpStat {
 	struct SceNetEtherAddr laddr;
 	SceUShort16 lport;
 	unsigned int rcv_sb_cc;
-};
+}; VITASDK_BUILD_ASSERT_EX(SceNetAdhocPdpStat, 0x14 == sizeof(struct SceNetAdhocPdpStat));
 
 typedef enum ScePspnetAdhocPtpState {
 	SCE_NET_ADHOC_PTP_STATE_CLOSED       = 0,

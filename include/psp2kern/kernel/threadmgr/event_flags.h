@@ -3,16 +3,21 @@
  * \usage{psp2kern/kernel/threadmgr/event_flags.h,SceThreadmgrForDriver_stub}
  */
 
-
 #ifndef _PSP2KERN_KERNEL_THREADMGR_EVENT_FLAGS_H_
 #define _PSP2KERN_KERNEL_THREADMGR_EVENT_FLAGS_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
+
+typedef struct SceKernelEventFlagOptParam {
+	SceSize         size;
+} SceKernelEventFlagOptParam;
+VITASDK_BUILD_ASSERT_EQ(4, SceKernelEventFlagOptParam);
 
 /** Structure to hold the event flag information */
 typedef struct SceKernelEventFlagInfo {
@@ -24,12 +29,7 @@ typedef struct SceKernelEventFlagInfo {
 	SceUInt   currentPattern;
 	int     numWaitThreads;
 } SceKernelEventFlagInfo;
-
-typedef struct SceKernelEventFlagOptParam {
-	SceSize         size;
-} SceKernelEventFlagOptParam;
-
-typedef struct SceKernelEventFlagOptParam SceKernelEventFlagOptParam;
+VITASDK_BUILD_ASSERT_EQ(0x38, SceKernelEventFlagInfo);
 
 /** Event flag creation attributes */
 typedef enum SceEventFlagAttributes {

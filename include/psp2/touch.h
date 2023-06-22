@@ -7,11 +7,12 @@
 #ifndef _PSP2_TOUCH_H_
 #define _PSP2_TOUCH_H_
 
+#include <vitasdk/build_utils.h>
+#include <psp2/types.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#include <psp2/types.h>
 
 /** Touch error codes */
 typedef enum SceTouchErrorCode {
@@ -66,6 +67,7 @@ typedef struct SceTouchPanelInfo {
 	SceUInt8 maxForce;      //!< Max touch force value
 	SceUInt8 reserved[30];  //!< Reserved
 } SceTouchPanelInfo;
+VITASDK_BUILD_ASSERT_EQ(0x30, SceTouchPanelInfo);
 
 typedef struct SceTouchReport {
 	SceUInt8	id;          //!< Touch ID
@@ -75,6 +77,7 @@ typedef struct SceTouchReport {
 	SceUInt8 	reserved[8]; //!< Reserved
 	SceUInt16 	info;        //!< Information of this touch
 } SceTouchReport;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceTouchReport);
 
 typedef struct SceTouchData {
 	SceUInt64       timeStamp;                    //!< Data timestamp
@@ -82,6 +85,7 @@ typedef struct SceTouchData {
 	SceUInt32       reportNum;                    //!< Number of touch reports
 	SceTouchReport	report[SCE_TOUCH_MAX_REPORT]; //!< Touch reports
 } SceTouchData;
+VITASDK_BUILD_ASSERT_EQ(0x90, SceTouchData);
 
 /**
  * Get Touch Panel information

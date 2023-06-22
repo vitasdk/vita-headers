@@ -6,9 +6,11 @@
 #ifndef _PSP2KERN_AVCODEC_JPEGENC_H_
 #define _PSP2KERN_AVCODEC_JPEGENC_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 typedef void *SceJpegEncoderContext;
+VITASDK_BUILD_ASSERT_EQ(4, SceJpegEncoderContext);
 
 typedef enum SceJpegEncErrorCode {
 	SCE_JPEGENC_ERROR_IMAGE_SIZE                = 0x80650200,

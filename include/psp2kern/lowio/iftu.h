@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_LOWIO_IFTU_H_
 #define _PSP2KERN_LOWIO_IFTU_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
@@ -47,6 +48,7 @@ typedef struct SceIftuCscParams {
 	unsigned int post_clamp_min_1_2;	/* 10-bit integer */
 	unsigned int ctm[3][3];			/* S3.9 fixed point format */
 } SceIftuCscParams;
+VITASDK_BUILD_ASSERT_EQ(0x3C, SceIftuCscParams);
 
 typedef struct SceIftuConvParams {
 	unsigned int size;
@@ -60,6 +62,7 @@ typedef struct SceIftuConvParams {
 	unsigned int alpha;
 	unsigned int unk24;
 } SceIftuConvParams;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceIftuConvParams);
 
 typedef struct SceIftuFrameBuf {
 	unsigned int pixelformat;
@@ -71,6 +74,7 @@ typedef struct SceIftuFrameBuf {
 	unsigned int paddr1;		/* Physical address of the second plane */
 	unsigned int paddr2;		/* Physical address of the third plane */
 } SceIftuFrameBuf;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceIftuFrameBuf);
 
 typedef struct SceIftuPlaneState {
 	SceIftuFrameBuf fb;
@@ -88,6 +92,7 @@ typedef struct SceIftuPlaneState {
 	unsigned int hleft_padding;
 	unsigned int hright_padding;	/* w - aligned_w */
 } SceIftuPlaneState;
+VITASDK_BUILD_ASSERT_EQ(0x54, SceIftuPlaneState);
 
 int ksceIftuCsc(SceIftuFrameBuf *dst, SceIftuPlaneState *src, SceIftuConvParams *params);
 
