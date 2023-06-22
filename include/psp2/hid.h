@@ -17,7 +17,8 @@ typedef struct SceHidKeyboardReport {
 	SceUInt8 reserved;
 	SceUInt8 modifiers[2]; //modifiers[0] Standard modifiers Ctrl Shift Alt, modifiers[1] Caps Lock, ..?
 	SceUInt8 keycodes[6];
-	SceUInt8 unk1[15];
+	SceUInt8 reserved2[7];
+	SceUInt64 timestamp; // microseconds
 } SceHidKeyboardReport;
 
 typedef struct SceHidMouseReport {
@@ -41,13 +42,22 @@ int sceHidKeyboardEnumerate(int* handle, int count);
 
 
 /**
- * Get hid keyboard reports.
+ * Get hid keyboard reports (blocking).
  *
  * @param[in]	handle		Hid handle.
  * @param[in]	reports		Buffer to receive reports.
  * @param[in]	nReports	Number of reports to receive.
  */
 int sceHidKeyboardRead(SceUInt32 handle, SceHidKeyboardReport *reports[], int nReports);
+
+/**
+ * Get hid keyboard reports (non-blocking).
+ *
+ * @param[in]	handle		Hid handle.
+ * @param[in]	reports		Buffer to receive reports.
+ * @param[in]	nReports	Number of reports to receive.
+ */
+int sceHidKeyboardPeek(SceUInt32 handle, SceHidKeyboardReport *reports[], int nReports);
 
 /**
  * Enumerate hid mice.
