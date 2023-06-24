@@ -20,6 +20,7 @@ var group__SceIncomingDialogUser =
     [ "SCE_INCOMING_DIALOG_BUSY", "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53bab8ec80c86f9239a04e008e1d809e378b", null ],
     [ "SCE_INCOMING_DIALOG_TIMEOUT", "group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba181ba1aa1023955bd385f7ec4f34b70f", null ],
     [ "SCE_INCOMINGDIALOG_ERROR_INVALID_ARG", "group__SceIncomingDialogUser.html#gga9017328db2ccfaf684594a13449260b4a63bcf1252a8331c19c87cdedefeafbfe", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIncomingDialogUser.html#gae2ebc7876e6476f0593a95f2d7270289", null ],
     [ "sceIncomingDialogInitialize", "group__SceIncomingDialogUser.html#ga29eae5b6c535a4c81063cc168f41508e", null ],
     [ "sceIncomingDialogOpen", "group__SceIncomingDialogUser.html#ga0fc01095861515e8992b0361e64103b4", null ],
     [ "sceIncomingDialogGetStatus", "group__SceIncomingDialogUser.html#gab4f1296791c351019c4127f7ad08c335", null ],

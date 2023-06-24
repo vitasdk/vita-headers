@@ -22,6 +22,8 @@ var group__SceNgsUser =
     [ "SceNgsPatchSetupInfo", "group__SceNgsUser.html#ga616af37c1ead8e4dee949e4c93131394", null ],
     [ "SceNgsParamsDescriptor", "group__SceNgsUser.html#gabb599f3633ca0748bf25df695f2496b0", null ],
     [ "SceNgsVoiceDefinition", "group__SceNgsUser.html#ga497aebc2c5bb15d923a1f799e1632459", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNgsUser.html#ga221ff295e606f6286fe624c47b0c00d5", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNgsUser.html#ga24d266bcf88490fd5b146a7bb7bee005", null ],
     [ "sceNgsModuleCheckParamsInRangeInternal", "group__SceNgsUser.html#ga8696f886c46980dc0360d04971b7974a", null ],
     [ "sceNgsModuleGetNumPresetsInternal", "group__SceNgsUser.html#ga653db5f357e7594375dc5e005bcb6110", null ],
     [ "sceNgsModuleGetPresetInternal", "group__SceNgsUser.html#ga015538c5260258645a1e6513b4dd9266", null ],

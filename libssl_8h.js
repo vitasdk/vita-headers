@@ -12,6 +12,7 @@ var libssl_8h =
       [ "SCE_SSL_ERROR_INVALID_FORMAT", "group__SceLibSslUser.html#ggaa87d604f7d09c5bf42fe99ac57ac81fda7405cde81cb669009912bba0644bc34e", null ],
       [ "SCE_SSL_ERROR_INVALID_VALUE", "group__SceLibSslUser.html#ggaa87d604f7d09c5bf42fe99ac57ac81fda5ffdb9331b83ef32fa50565050d23ac1", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLibSslUser.html#gaac2da5d3ede9857a64763911f270d2b7", null ],
     [ "sceSslInit", "group__SceLibSslUser.html#ga13926687f23c60d45340f013b1382f75", null ],
     [ "sceSslTerm", "group__SceLibSslUser.html#ga4bc1a9248ba253229a7b3a44727f2ad3", null ],
     [ "sceSslGetMemoryPoolStats", "group__SceLibSslUser.html#ga6837e440287fdb2bf7b296fa8b414e95", null ],

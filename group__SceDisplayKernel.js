@@ -49,6 +49,8 @@ var group__SceDisplayKernel =
     [ "SCE_DISPLAY_PIXELFORMAT_A2B10G10R10", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9", null ],
     [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016", null ],
     [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayKernel.html#ga746511d8227c31c611becb919a907707", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayKernel.html#gaf3fe7dec70b834a468a84ef02c25ba2e", null ],
     [ "ksceDisplaySetFrameBuf", "group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
     [ "ksceDisplaySetFrameBufInternal", "group__SceDisplayKernel.html#ga167b702166adcc723e120d443c61a200", null ],
     [ "ksceDisplayGetFrameBuf", "group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89", null ],

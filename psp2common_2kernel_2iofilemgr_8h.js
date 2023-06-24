@@ -77,5 +77,8 @@ var psp2common_2kernel_2iofilemgr_8h =
       [ "SCE_SO_IFDIR", "group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828", null ],
       [ "SCE_SO_IFREG", "group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c", null ],
       [ "SCE_SO_IFMT", "group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31", null ]
-    ] ]
+    ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIofilemgrKernel.html#ga104d3d5b85e345b0641bcad60ee02814", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIofilemgrKernel.html#ga226fd5458ea8b80f85a0078d1adb2cbc", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIofilemgrKernel.html#gaf3691dccf6341477ca1c1073cd68781e", null ]
 ];

@@ -56,6 +56,13 @@ var message__dialog_8h =
       [ "SCE_MSG_DIALOG_FONT_SIZE_DEFAULT", "group__SceMessageDialogUser.html#ggabee454a7c7f4767ce33ef2cd4874d09fa82138c9ab7cf450a638252f25a389a13", null ],
       [ "SCE_MSG_DIALOG_FONT_SIZE_SMALL", "group__SceMessageDialogUser.html#ggabee454a7c7f4767ce33ef2cd4874d09faebe6e8deac4b391e49e6b0975fcfae17", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#gae66096ec6e60e342f9f2e8a60d4ccc42", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#ga9fec35caddcfba9b6986fd6dff610d51", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#ga382e5206e79eb184ce73d1362f1bc1d3", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#ga28bbc9e9a91c6aa8c62fc3fe64b50783", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#gaaa8eb44f8a5a7f7e5f71d952272217c3", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#ga1fac79fa652698a1819eeca0bafd8c13", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMessageDialogUser.html#ga6039f0074c6b9d1eb0e131cf63f6ed00", null ],
     [ "sceMsgDialogInit", "group__SceMessageDialogUser.html#gae307b8345b4616687ab0f8e48e0293f6", null ],
     [ "sceMsgDialogGetStatus", "group__SceMessageDialogUser.html#gab267acac3c046d4cd68b775bff8b406e", null ],
     [ "sceMsgDialogAbort", "group__SceMessageDialogUser.html#gaded4c1c514d253f163b6752d55f409c5", null ],

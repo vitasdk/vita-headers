@@ -79,7 +79,8 @@ $(document).ready(function(){initNavTree('lw__mutex_8h.html',''); initResizable(
 <div class="title">lw_mutex.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
 </div>
 <p><a href="lw__mutex_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -94,9 +95,15 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaaab497a9d4e5009f527600c05abc91f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaaab497a9d4e5009f527600c05abc91f0">VITASDK_BUILD_ASSERT_EQ</a> (0x20, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a>)</td></tr>
+<tr class="separator:gaaab497a9d4e5009f527600c05abc91f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a1e017e3e2eebb9376522417a71f18f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga5a1e017e3e2eebb9376522417a71f18f">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a>)</td></tr>
+<tr class="separator:ga5a1e017e3e2eebb9376522417a71f18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga530f39c4168c2bb6fef65b0c98e0f345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga530f39c4168c2bb6fef65b0c98e0f345">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwMutexInfo">SceKernelLwMutexInfo</a>)</td></tr>
+<tr class="separator:ga530f39c4168c2bb6fef65b0c98e0f345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63a8531d0d3b2d1790774776840e7638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga63a8531d0d3b2d1790774776840e7638">ksceKernelGetLwMutexInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> lwmtxid, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwMutexInfo">SceKernelLwMutexInfo</a> *info)</td></tr>
 <tr class="separator:ga63a8531d0d3b2d1790774776840e7638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58cc836433bdf69b6be4877dc18a903c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga58cc836433bdf69b6be4877dc18a903c">ksceKernelInitializeFastMutex</a> (void *mutex, const char *name, int unk0, int unk1)</td></tr>
+<tr class="memitem:ga58cc836433bdf69b6be4877dc18a903c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga58cc836433bdf69b6be4877dc18a903c">ksceKernelInitializeFastMutex</a> (void *mutex, const char *name, int <a class="el" href="group__SceUsbdKernel.html#ga5cea4a128211e96eb30044401ecec718">unk0</a>, int <a class="el" href="group__SceUsbdKernel.html#ga46deee7a0b8882df5eedbfa55db36021">unk1</a>)</td></tr>
 <tr class="separator:ga58cc836433bdf69b6be4877dc18a903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga053a7d832e9b6eafe26bd191a974d100"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga053a7d832e9b6eafe26bd191a974d100">ksceKernelLockFastMutex</a> (void *mutex)</td></tr>
 <tr class="separator:ga053a7d832e9b6eafe26bd191a974d100"><td class="memSeparator" colspan="2">&#160;</td></tr>

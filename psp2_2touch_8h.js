@@ -18,6 +18,9 @@ var psp2_2touch_8h =
     [ "SceTouchReportInfo", "group__SceTouchUser.html#gaa58c8770e9c43753822ff76837ea419b", [
       [ "SCE_TOUCH_REPORT_INFO_HIDE_UPPER_LAYER", "group__SceTouchUser.html#ggaa58c8770e9c43753822ff76837ea419ba16bcec75ea413db6acb60b970bb3f238", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTouchUser.html#gafcb3c88a958b8772e4f28a8b1166f338", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTouchUser.html#gace0877a5365412742e072353e0d3febe", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTouchUser.html#ga900f01fc24da4da0296c4ff83facd955", null ],
     [ "sceTouchGetPanelInfo", "group__SceTouchUser.html#gadb2690976483db65dc1dd6196f8941bd", null ],
     [ "sceTouchRead", "group__SceTouchUser.html#ga1be514c50dff91429a192c78f227f4b0", null ],
     [ "sceTouchPeek", "group__SceTouchUser.html#ga3abee1c2d7d15f632f80b3c3f3a5a680", null ],

@@ -1,5 +1,6 @@
 var msg__pipe_8h =
 [
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gadce4d75f6fd98ee6f5df949d402b3471", null ],
     [ "ksceKernelGetMsgPipeInfo", "group__SceThreadMgrKernel.html#gafaa783aea175646bfaf4fdeb1651b8d2", null ],
     [ "ksceKernelCreateMsgPipe", "group__SceThreadMgrKernel.html#ga30584c9e6398a7113ae735bdc637d46b", null ],
     [ "ksceKernelDeleteMsgPipe", "group__SceThreadMgrKernel.html#gaab53d6d4dce857d0409263b698c8dbfa", null ],

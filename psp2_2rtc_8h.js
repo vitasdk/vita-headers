@@ -37,6 +37,7 @@ var psp2_2rtc_8h =
       [ "SCE_RTC_DAYOFWEEK_FRIDAY", "group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa1a7e46249b3ef02b051cbbfd527f9b42", null ],
       [ "SCE_RTC_DAYOFWEEK_SATURDAY", "group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa970a0a490d7f890d336780ff81262ac9", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRtcUser.html#gafe4ce575d3e4fa57607eb120b4185b3f", null ],
     [ "sceRtcGetTickResolution", "group__SceRtcUser.html#gad07add7ff5fd320b08c88c7d88b0f80a", null ],
     [ "sceRtcGetCurrentTick", "group__SceRtcUser.html#gab091c8febd02d62bee300d09babd6107", null ],
     [ "sceRtcGetCurrentClock", "group__SceRtcUser.html#ga5faac20344bf45afde5124a7346fa627", null ],

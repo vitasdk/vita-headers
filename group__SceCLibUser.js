@@ -1,6 +1,8 @@
 var group__SceCLibUser =
 [
     [ "SceClibMspace", "group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCLibUser.html#gaa7c75e94ea5fbcd7881125a08222ad6f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCLibUser.html#ga986a7064ae727fdac10fa610f1d4286c", null ],
     [ "sceClibAbort", "group__SceCLibUser.html#gac7e43931cbb0c6fad394caa44c21de0f", null ],
     [ "sceClibLookCtypeTable", "group__SceCLibUser.html#ga467dcef630914e8bd052b19a66612c12", null ],
     [ "sceClibTolower", "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46", null ],

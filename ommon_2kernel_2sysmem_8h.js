@@ -34,5 +34,6 @@ var ommon_2kernel_2sysmem_8h =
     [ "SceKernelModel", "group__SceSysmemKernel.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c", [
       [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
       [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ]
-    ] ]
+    ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#ga90111a4cc51bf80d0b13b30440591546", null ]
 ];

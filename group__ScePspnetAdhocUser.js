@@ -112,6 +112,8 @@ var group__ScePspnetAdhocUser =
     [ "SCE_NET_ADHOC_F_ALERTCONNECT", "group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1a13faec3c9908c27bdf492ad9a64d5f99", null ],
     [ "SCE_NET_ADHOC_F_ALERTACCEPT", "group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1a1406f674b72463c973ea5f9c2084f7a5", null ],
     [ "SCE_NET_ADHOC_F_ALERTFLUSH", "group__ScePspnetAdhocUser.html#gga4777fcc17a0f337e48deea8a7caa78b1aa038f65d9cdab3e9b7d9f3f10722e0ab", null ],
+    [ "VITASDK_BUILD_ASSERT_EX", "group__ScePspnetAdhocUser.html#ga08e726b158bd9863671063b16dd841ce", null ],
+    [ "VITASDK_BUILD_ASSERT_EX", "group__ScePspnetAdhocUser.html#ga88e44ceebbe22c756422345e937586bc", null ],
     [ "sceNetAdhocInit", "group__ScePspnetAdhocUser.html#ga53da19c02bb5599871147a96025cfb53", null ],
     [ "sceNetAdhocTerm", "group__ScePspnetAdhocUser.html#ga31caf67274885110ff7edef664fd8347", null ],
     [ "sceNetAdhocPollSocket", "group__ScePspnetAdhocUser.html#ga782ea302527255d621940bab1876887c", null ],

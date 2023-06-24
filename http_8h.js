@@ -178,6 +178,10 @@ var http_8h =
       [ "SCE_HTTPS_SSLV3", "group__SceHttpUser.html#gga7b0c5470843880895a2542cb00084b2aa0c1828c29d35247b689074f3d9265fdd", null ],
       [ "SCE_HTTPS_TLSV1", "group__SceHttpUser.html#gga7b0c5470843880895a2542cb00084b2aae2ae02d5cc7b045b3c2e8efdd9982065", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceHttpUser.html#ga01b01c9ce8b7930ffaced1fddbe9f861", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceHttpUser.html#ga0038f4512e7aca1558fff0dfe042d7f9", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceHttpUser.html#gaf5e402d1ee92f6e68c1936ac1e50f1fa", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceHttpUser.html#ga65ff37e0c03eecd4cf6d8c7499fedaa2", null ],
     [ "sceHttpInit", "group__SceHttpUser.html#ga5d14fa7a80924f420904ab1330a5fcaa", null ],
     [ "sceHttpTerm", "group__SceHttpUser.html#ga72d1fe843d6e9c4eeae4b9b419775c98", null ],
     [ "sceHttpGetMemoryPoolStats", "group__SceHttpUser.html#gabfb8699a959aca3d3975ff56e5ab69ba", null ],

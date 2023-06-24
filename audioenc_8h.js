@@ -40,6 +40,13 @@ var audioenc_8h =
       [ "SCE_AUDIOENC_CELP_BIT_RATE_11800BPS", "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa810e18f2856a6598c69fd7de29dca3eb", null ],
       [ "SCE_AUDIOENC_CELP_BIT_RATE_12200BPS", "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab4f2319f3bb23f6dc9fbd12bc2b7699b", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#ga461c0433f291122929f65ea302871503", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#gad886ae473e4b762bb74743269af2bbdf", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#ga703bb945e4f1e73f51d1bf275c2480c3", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#gaead12c87d13b06e62361ed9283bc659f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#ga14c330ccf7876120ac67f546a29c1855", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#gab103920585b0ad555f393f6fdc6a7227", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAudioencUser.html#gaa69fc430dc0a0d2547db80b2ee45ec9e", null ],
     [ "sceAudioencInitLibrary", "group__SceAudioencUser.html#ga2e06d6d0acec949280fa6c3e9d845eee", null ],
     [ "sceAudioencTermLibrary", "group__SceAudioencUser.html#gaf1da8192ae818ac19bdbbf3cc965c203", null ],
     [ "sceAudioencCreateEncoder", "group__SceAudioencUser.html#gacbb09589c976e8564876a664cec1cf3f", null ],

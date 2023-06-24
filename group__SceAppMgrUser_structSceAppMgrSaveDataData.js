@@ -7,5 +7,6 @@ var group__SceAppMgrUser_structSceAppMgrSaveDataData =
     [ "files", "group__SceAppMgrUser.html#gacdc67c01ae8752a444489d8c42a20605", null ],
     [ "fileNum", "group__SceAppMgrUser.html#gaa90090dbd993aa00a88dbd3ed8c83184", null ],
     [ "mountPoint", "group__SceAppMgrUser.html#gad202d248cdf2bce5a360e0c512f31b8e", null ],
-    [ "requiredSizeKB", "group__SceAppMgrUser.html#ga41766ec906048bebeba7a74fbae9db42", null ]
+    [ "requiredSizeKB", "group__SceAppMgrUser.html#ga41766ec906048bebeba7a74fbae9db42", null ],
+    [ "unk_0x48", "group__SceAppMgrUser.html#ga0793cd456f768fd591d82dc1a256079f", null ]
 ];

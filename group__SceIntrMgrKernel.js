@@ -9,6 +9,8 @@ var group__SceIntrMgrKernel =
     [ "SceKernelIntrOptHandlersCb1", "group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e", null ],
     [ "SceKernelIntrOptHandlersCb2", "group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646", null ],
     [ "SceKernelIntrOptHandlersCb3", "group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIntrMgrKernel.html#ga67a5d57a0462f34b424df159124254a1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIntrMgrKernel.html#gaf8de7477d4c920bf402bc8cb59bf3536", null ],
     [ "ksceKernelRegisterIntrHandler", "group__SceIntrMgrKernel.html#ga6164deaf45e605aa8e34ce32784f35fb", null ],
     [ "ksceKernelReleaseIntrHandler", "group__SceIntrMgrKernel.html#gae1108c740d871b0874a48bcd9d7f3998", null ],
     [ "ksceKernelEnableIntr", "group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e", null ],

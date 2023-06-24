@@ -33,6 +33,7 @@ var psp2kern_2avcodec_2jpegenc_8h =
       [ "SCE_JPEGENC_HEADER_MODE_JPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985", null ],
       [ "SCE_JPEGENC_HEADER_MODE_MJPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegEncKernel.html#ga5e58a6315aa72a8f4de88cea4bf001dd", null ],
     [ "ksceJpegEncoderInit", "group__SceJpegEncKernel.html#ga0929d9e49113c872f113fd2c3a083ec7", null ],
     [ "ksceJpegEncoderEnd", "group__SceJpegEncKernel.html#gaa7f415839b641071361e3c5b9508b52b", null ],
     [ "ksceJpegEncoderEncode", "group__SceJpegEncKernel.html#ga4a2fbb32b0d29824b86976f5f5f2de0a", null ],

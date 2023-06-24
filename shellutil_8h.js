@@ -23,6 +23,7 @@ var shellutil_8h =
     [ "sceShellUtilRegisterEventHandler", "group__SceShellSvcUser.html#ga5f9b9fbf5cf33d8d99c7de6fe5ea2307", null ],
     [ "sceShellUtilLock", "group__SceShellSvcUser.html#gaed63c312c55dc285ae4f6f60517f2786", null ],
     [ "sceShellUtilUnlock", "group__SceShellSvcUser.html#gaf7817cd6e37c91b1756b06b143663896", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShellSvcUser.html#ga441c90a1fe29603d433fb4c31b14b285", null ],
     [ "sceShellUtilRequestLaunchApp", "group__SceShellSvcUser.html#gaabebcc1d43c0fb99be2984c7f66a34e4", null ],
     [ "sceShellUtilLaunchAppRequestLaunchApp", "group__SceShellSvcUser.html#ga65ccc9f3672d314501c982b4c791c268", null ]
 ];

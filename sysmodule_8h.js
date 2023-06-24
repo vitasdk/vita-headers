@@ -135,6 +135,7 @@ var sysmodule_8h =
       [ "SCE_SYSMODULE_INTERNAL_LOCATION_INTERNAL", "group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aaff85954d62f418a070985987ccb77dea", null ],
       [ "SCE_SYSMODULE_INTERNAL_LOCATION_FACTORY", "group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa4b4688bd5589ba220a9fd147f837c5ce", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmoduleUser.html#ga2085497ad69502d7ea4addfebd9fbb13", null ],
     [ "sceSysmoduleLoadModule", "group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29", null ],
     [ "sceSysmoduleUnloadModule", "group__SceSysmoduleUser.html#gada63522e2aaa7d968e0662b32d4d6c3e", null ],
     [ "sceSysmoduleIsLoaded", "group__SceSysmoduleUser.html#ga4f58acf9abf2c28c160a1448e7477abe", null ],

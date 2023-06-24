@@ -24,5 +24,9 @@ var iftu_8h =
       [ "SCE_IFTU_PIXELFORMAT_YUV420", "group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294ae03986d6cd6ddba7260e110012ad3372", null ],
       [ "SCE_IFTU_PIXELFORMAT_YUV422", "group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a9b01254e384d1e53eabd3ed4e6b20226", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIftuKernel.html#ga62e6bf5228584c7e361246f55b29166a", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIftuKernel.html#ga21c8c9f0fa8a862014000246746034ee", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIftuKernel.html#ga28d7ebf4209f553e8d526ec4edb95060", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceIftuKernel.html#ga56b522c133f94a46968cdb88e7853b32", null ],
     [ "ksceIftuCsc", "group__SceIftuKernel.html#gaec5fdf4ee5d2390bd4edba0c5cd1c877", null ]
 ];

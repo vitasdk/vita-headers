@@ -16,6 +16,9 @@ var motion_8h =
       [ "SCE_MOTION_ERROR_ALREADY_SAMPLING", "group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3bea419fa1cc0f2fc2d0bbe4134e64a7a52a", null ],
       [ "SCE_MOTION_ERROR_MEM_IN_USE", "group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beaadb4cd75becc29aa76bf81f708161a4e", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMotionUser.html#ga3088f62d4c68d7591190a42aad3830de", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMotionUser.html#ga525f5d23f62c2be4b34457f95a574c5f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceMotionUser.html#ga5d493421e96a73923b42484af1c5ef02", null ],
     [ "sceMotionGetState", "group__SceMotionUser.html#ga7006e842f607f08484ef015455f0c589", null ],
     [ "sceMotionGetSensorState", "group__SceMotionUser.html#gaf510e6f268474067f386ebb01033ce3f", null ],
     [ "sceMotionGetDeviceLocation", "group__SceMotionUser.html#ga7426fa4734515219b68466bb9a50dda4", null ],

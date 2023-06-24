@@ -11,6 +11,7 @@ var ern_2kernel_2sysmem_8h =
       [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_W", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a7b09d0555d14bceff20796770151d3ec", null ],
       [ "SCE_KERNEL_MEMORY_REF_PERM_KERN_X", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a68546636b48a2378cfea27b0c4a10fad", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#ga8a0ac08227f9b7f5e981466084de5d85", null ],
     [ "ksceKernelAllocMemBlock", "group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31", null ],
     [ "ksceKernelFreeMemBlock", "group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1", null ],
     [ "ksceKernelGetMemBlockBase", "group__SceSysmemKernel.html#gabbc259154e4239912bec06e30baf19fc", null ],

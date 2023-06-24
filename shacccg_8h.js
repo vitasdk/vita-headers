@@ -24,6 +24,13 @@ var shacccg_8h =
       [ "SCE_SHACCCG_ENGLISH", "group__SceShaccCgUser.html#gga67add71836df0d0d35f7423d976b169fae9211e92b730c27d382d73c4a361f0d5", null ],
       [ "SCE_SHACCCG_JAPANESE", "group__SceShaccCgUser.html#gga67add71836df0d0d35f7423d976b169fa6c7e84adf318096e364d66096fa8894b", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#ga7f07bdbd09214af344720d4317325a96", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#ga2f07c770713a9e4a2fc901ed79b41268", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#ga818d49161a4884104debb5d08994b6b6", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#ga73d610348cf158c68877ddb574ea8ef1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#gaabaac79e4228c5c651e76063063cb9c5", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#gabd00dc6cf2c45a4e85793cc1188f7d46", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#ga304dee232f029808a385a0144abd1a25", null ],
     [ "sceShaccCgInitializeCompileOptions", "group__SceShaccCgUser.html#gaef31a86772012ed19ce70c032a17f871", null ],
     [ "sceShaccCgCompileProgram", "group__SceShaccCgUser.html#ga7716d01d46ccef9a8e11e3ae93eeca7a", null ],
     [ "sceShaccCgSetDefaultAllocator", "group__SceShaccCgUser.html#ga1c8466c51cd2158fd9898e688f25c923", null ],

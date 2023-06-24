@@ -43,6 +43,7 @@ var group__SceKernelDebugKernel =
     [ "SCE_KERNEL_ASSERT_LEVEL_0", "group__SceKernelDebugKernel.html#gga255042a396ced96bee885071d4afe270af2bbddc21e1ed0a8e36a8b91077489d2", null ],
     [ "SCE_KERNEL_ASSERT_LEVEL_1", "group__SceKernelDebugKernel.html#gga255042a396ced96bee885071d4afe270aeae88cde5321a25e6978e3568b5ec7e5", null ],
     [ "SCE_KERNEL_ASSERT_LEVEL_2", "group__SceKernelDebugKernel.html#gga255042a396ced96bee885071d4afe270a9991f4c64908e6e0822fedeb4c3b79f2", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#ga41b17f91bf7b69bc108118169749b4e6", null ],
     [ "ksceDebugPutchar", "group__SceKernelDebugKernel.html#ga81255f2979cb222f8bc62996234f983d", null ],
     [ "ksceKernelPrintf", "group__SceKernelDebugKernel.html#gad60adc8b51c4df61fd83be9f867b3315", null ],
     [ "ksceKernelPrintfLevel", "group__SceKernelDebugKernel.html#gaebd967615a353e8a5a312ac646ef19f1", null ],
@@ -61,6 +62,10 @@ var group__SceKernelDebugKernel =
     [ "ksceKernelGetAssertLevel", "group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584", null ],
     [ "ksceKernelSetMinimumAssertionLevel", "group__SceKernelDebugKernel.html#ga59c83ca5fd9f4d5f9b1f4852375003f8", null ],
     [ "__attribute__", "group__SceKernelDebugKernel.html#ga66b13dfa3e7bc9d00cf644f015886652", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#ga79ed79de12562f411302f88b24f1848b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#ga1bd4330c8c05942150b57fc0b2f01f45", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#gad79f57b0821291405d50fcac6c02bfb8", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#ga58aa337c03028c09e96f3222bf2be27c", null ],
     [ "ksceEventLogGetInfo", "group__SceKernelDebugKernel.html#gae7d4ebcc204313d68da4eb0836d397ec", null ],
     [ "ksceKernelGetTtyInfo", "group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa", null ]
 ];

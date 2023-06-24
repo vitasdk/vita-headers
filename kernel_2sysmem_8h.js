@@ -9,6 +9,9 @@ var kernel_2sysmem_8h =
       [ "SCE_KERNEL_MEMORY_TYPE_NORMAL_NC", "group__SceSysmemUser.html#ggad5653766a0ced763eb2301a5d698697da467a3b95bff3406789e5c5a01b0a2e48", null ],
       [ "SCE_KERNEL_MEMORY_TYPE_NORMAL", "group__SceSysmemUser.html#ggad5653766a0ced763eb2301a5d698697da298498bb570db5602f7d4217807adade", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemUser.html#ga9c71d7b684c740544ffe8b683abb2571", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemUser.html#gab61616bdbb078ff2e44358e8a54a20cc", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemUser.html#ga87c97be9b21bbe2838c2b1a71d75c493", null ],
     [ "sceKernelAllocMemBlock", "group__SceSysmemUser.html#ga6f4fd5dc592c7e7a907225196160b597", null ],
     [ "sceKernelFreeMemBlock", "group__SceSysmemUser.html#ga938f751bb400cc057976e3239cbe88e4", null ],
     [ "sceKernelGetMemBlockBase", "group__SceSysmemUser.html#ga0deb1afb4bce53a13963b2ec693d1bac", null ],

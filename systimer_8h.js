@@ -10,6 +10,7 @@ var systimer_8h =
       [ "SCE_SYSTIMER_CLOCK_SOURCE_SYS", "group__SceSystimerKernel.html#gga5694c586b551cbbf6c29bd697ba6cf48ad3954f89455531abf277115366382e05", null ],
       [ "SCE_SYSTIMER_CLOCK_SOURCE_48MHZ", "group__SceSystimerKernel.html#gga5694c586b551cbbf6c29bd697ba6cf48abf363b1c5b9f045cf7a5ce7378ff020a", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSystimerKernel.html#gae2529847aa9993806e5370124b8e7666", null ],
     [ "ksceKernelSysTimerAlloc", "group__SceSystimerKernel.html#gadce2359ba4f06a257fa913cc99633e4c", null ],
     [ "ksceKernelSysTimerFree", "group__SceSystimerKernel.html#ga495c3e3d9cbc43064b2b97e6c860deda", null ],
     [ "ksceKernelSysTimerStartCount", "group__SceSystimerKernel.html#ga5998dae018ddac4ea70ad22aee78044d", null ],

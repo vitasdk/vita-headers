@@ -31,6 +31,8 @@ var group__SceExcpmgrKernel =
     [ "SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_2", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86", null ],
     [ "SCE_EXCPMGR_EXCEPTION_NOT_HANDLED_FATAL", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec", null ],
     [ "SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_4", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#gaab0d8411d117829b670fdf68320d6be0", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#ga0d451515efa9dcf65702ac8e98eb9398", null ],
     [ "ksceExcpmgrGetData", "group__SceExcpmgrKernel.html#ga87911737cb06f4d26ea837d282f5d104", null ],
     [ "ksceExcpmgrRegisterHandler", "group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5", null ]
 ];

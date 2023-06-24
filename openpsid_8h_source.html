@@ -80,24 +80,29 @@ $(document).ready(function(){initNavTree('openpsid_8h_source.html',''); initResi
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _PSP2_KERNEL_OPENPSID_H_</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _PSP2_KERNEL_OPENPSID_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html#ga585d10e2f148e22d2a1f58885e479b89">   15</a></span>&#160;    <span class="keywordtype">char</span> <span class="keywordtype">id</span>[16];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html#gadcffab68ceab31e0807f38275e6f1c53">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceOpenPsidUser.html#gadcffab68ceab31e0807f38275e6f1c53">sceKernelGetOpenPsId</a>(<a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a> *<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_OPENPSID_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="build__utils_8h.html">vitasdk/build_utils.h</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html#ga585d10e2f148e22d2a1f58885e479b89">   17</a></span>&#160;    <span class="keywordtype">char</span> <span class="keywordtype">id</span>[16];</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html#ga08d18df7573cb1653f653c76317a57c4">   19</a></span>&#160;<a class="code" href="group__SceOpenPsidUser.html#ga08d18df7573cb1653f653c76317a57c4">VITASDK_BUILD_ASSERT_EQ</a>(0x10, <a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group__SceOpenPsidUser.html#gadcffab68ceab31e0807f38275e6f1c53">   21</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceOpenPsidUser.html#gadcffab68ceab31e0807f38275e6f1c53">sceKernelGetOpenPsId</a>(<a class="code" href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a> *<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_KERNEL_OPENPSID_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="ttc" id="abuild__utils_8h_html"><div class="ttname"><a href="build__utils_8h.html">build_utils.h</a></div></div>
+<div class="ttc" id="agroup__SceOpenPsidUser_html_ga08d18df7573cb1653f653c76317a57c4"><div class="ttname"><a href="group__SceOpenPsidUser.html#ga08d18df7573cb1653f653c76317a57c4">VITASDK_BUILD_ASSERT_EQ</a></div><div class="ttdeci">VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelOpenPsId)</div></div>
 <div class="ttc" id="agroup__SceOpenPsidUser_html_gadcffab68ceab31e0807f38275e6f1c53"><div class="ttname"><a href="group__SceOpenPsidUser.html#gadcffab68ceab31e0807f38275e6f1c53">sceKernelGetOpenPsId</a></div><div class="ttdeci">int sceKernelGetOpenPsId(SceKernelOpenPsId *id)</div></div>
-<div class="ttc" id="agroup__SceOpenPsidUser_html_structSceKernelOpenPsId"><div class="ttname"><a href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a></div><div class="ttdef"><b>Definition:</b> openpsid.h:14</div></div>
+<div class="ttc" id="agroup__SceOpenPsidUser_html_structSceKernelOpenPsId"><div class="ttname"><a href="group__SceOpenPsidUser.html#structSceKernelOpenPsId">SceKernelOpenPsId</a></div><div class="ttdef"><b>Definition:</b> openpsid.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

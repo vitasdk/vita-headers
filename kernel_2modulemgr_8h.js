@@ -31,6 +31,10 @@ var kernel_2modulemgr_8h =
       [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF", "group__SceModulemgrUser.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3dabfb1160f83af68e46c1b9b7268cd0890", null ],
       [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF", "group__SceModulemgrUser.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da16133dc47733579d2bb86f1a115f4744", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga576fee6ecde265285fce2964eab63f69", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga818023fa50b9f7a82169e23fa5c3a509", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga220bd1b331b95501c305a0cdfec7a3bd", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga6b628941e2ecd044c245cefbb8fd2ad1", null ],
     [ "sceKernelGetModuleInfo", "group__SceModulemgrUser.html#ga4075668baf86b13bb20defae4c6bdcb4", null ],
     [ "sceKernelGetModuleList", "group__SceModulemgrUser.html#ga91ed9f5c71e57ad0ab9f797cb5024dc4", null ],
     [ "sceKernelLoadModule", "group__SceModulemgrUser.html#ga7777a48e07030061c3b5da63697d27b2", null ],
@@ -39,6 +43,7 @@ var kernel_2modulemgr_8h =
     [ "sceKernelStopModule", "group__SceModulemgrUser.html#ga84e0bd32e41c8072c50697fe2da67afe", null ],
     [ "sceKernelLoadStartModule", "group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327", null ],
     [ "sceKernelStopUnloadModule", "group__SceModulemgrUser.html#gab5207a83a1b1a9a1cb0ffda46cd088f6", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga0ba11e2ea473d817816bd3ca1db33c0c", null ],
     [ "sceKernelGetSystemSwVersion", "group__SceModulemgrUser.html#ga7d9b7b96a111c3f62a3878468f417c19", null ],
     [ "_sceKernelLoadModule", "group__SceModulemgrUser.html#ga6cf51a9e3ea0542659d2cd9b30ec7c02", null ],
     [ "_sceKernelLoadStartModule", "group__SceModulemgrUser.html#gaf84c5e69e9c7faf8b09f40a0d72c7374", null ],

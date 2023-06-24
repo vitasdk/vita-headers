@@ -13,6 +13,9 @@ var fiber_8h =
       [ "SCE_FIBER_ERROR_FATAL", "group__SceFiberUser.html#gga84a7d9b255d7ce79d87a043eb5ae33d9ac0646ab67f3561ba7f44ded68e32fb1b", null ]
     ] ],
     [ "SCE_ALIGN", "group__SceFiberUser.html#ga86879061f5abcc01a1167fcbb83f5beb", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFiberUser.html#gab127e3d17b600d1d2cdf5995d82fa111", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFiberUser.html#ga0ab8bfcf6734f3a7e3748147cdaaac71", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFiberUser.html#ga2c7e363231e23821348be2ffa56058bb", null ],
     [ "_sceFiberInitializeImpl", "group__SceFiberUser.html#gae12c67388b27798156f3f93ad4123a07", null ],
     [ "sceFiberOptParamInitialize", "group__SceFiberUser.html#ga16ed3639853f266fe40ecf892680d1a6", null ],
     [ "sceFiberFinalize", "group__SceFiberUser.html#gad43432f5851c9d9a740cc8b26fc729af", null ],

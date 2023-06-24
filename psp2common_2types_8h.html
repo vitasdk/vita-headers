@@ -76,13 +76,15 @@ $(document).ready(function(){initNavTree('psp2common_2types_8h.html',''); initRe
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">types.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 </div>
 <p><a href="psp2common_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -223,8 +225,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaf47723b332a4cf70bd27c027e1e65c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f2706740670a84a49050f5327a2bf35"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td></tr>
 <tr class="separator:ga6f2706740670a84a49050f5327a2bf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabed425d1d37747659f03f11b65d4ff2a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gabed425d1d37747659f03f11b65d4ff2a">SceSSize</a></td></tr>
-<tr class="separator:gabed425d1d37747659f03f11b65d4ff2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cb018f18700ff0a9c8d8fd64115bf21"><td class="memItemLeft" align="right" valign="top">typedef signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga0cb018f18700ff0a9c8d8fd64115bf21">SceSSize</a></td></tr>
+<tr class="separator:ga0cb018f18700ff0a9c8d8fd64115bf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga492e1dc38bbe2713a4c93c64ec127d13"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a></td></tr>
 <tr class="separator:ga492e1dc38bbe2713a4c93c64ec127d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff9822a21436b59d750edd910b390e33"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gaff9822a21436b59d750edd910b390e33">SceFloat</a></td></tr>
@@ -285,6 +287,41 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__SceTypesKernel.html#ggabc5c98fcc1211af2b80116dd6e0a035da8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a>
  }</td></tr>
 <tr class="separator:gabc5c98fcc1211af2b80116dd6e0a035d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1c43ae33106c4ab6569c86286179307b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga1c43ae33106c4ab6569c86286179307b">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceTypesKernel.html#structSceIVector2">SceIVector2</a>)</td></tr>
+<tr class="separator:ga1c43ae33106c4ab6569c86286179307b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8806e8800b03f74011dba2e98f660ed3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga8806e8800b03f74011dba2e98f660ed3">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceTypesKernel.html#structSceFVector2">SceFVector2</a>)</td></tr>
+<tr class="separator:ga8806e8800b03f74011dba2e98f660ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfce32f0527245715b4b2cb8fb5f9d35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gadfce32f0527245715b4b2cb8fb5f9d35">VITASDK_BUILD_ASSERT_EQ</a> (0xC, <a class="el" href="group__SceTypesKernel.html#structSceIVector3">SceIVector3</a>)</td></tr>
+<tr class="separator:gadfce32f0527245715b4b2cb8fb5f9d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba6c7fb22e2e62811ecb676ea36d9926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gaba6c7fb22e2e62811ecb676ea36d9926">VITASDK_BUILD_ASSERT_EQ</a> (0xC, <a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>)</td></tr>
+<tr class="separator:gaba6c7fb22e2e62811ecb676ea36d9926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3aeaddfa7fadfb592506319978aa517"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gab3aeaddfa7fadfb592506319978aa517">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceIVector4">SceIVector4</a>)</td></tr>
+<tr class="separator:gab3aeaddfa7fadfb592506319978aa517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf6b34345f708ef45a7f76922990e40a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gadf6b34345f708ef45a7f76922990e40a">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceFVector4">SceFVector4</a>)</td></tr>
+<tr class="separator:gadf6b34345f708ef45a7f76922990e40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec1603dbe2b640b1832c100fc92e3874"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gaec1603dbe2b640b1832c100fc92e3874">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceIMatrix2">SceIMatrix2</a>)</td></tr>
+<tr class="separator:gaec1603dbe2b640b1832c100fc92e3874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb0ce8daef01171e6922930c24490dce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gafb0ce8daef01171e6922930c24490dce">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceFMatrix2">SceFMatrix2</a>)</td></tr>
+<tr class="separator:gafb0ce8daef01171e6922930c24490dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad1bc8e1a930d353d5ec93b7a0025501"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gaad1bc8e1a930d353d5ec93b7a0025501">VITASDK_BUILD_ASSERT_EQ</a> (0x24, <a class="el" href="group__SceTypesKernel.html#structSceIMatrix3">SceIMatrix3</a>)</td></tr>
+<tr class="separator:gaad1bc8e1a930d353d5ec93b7a0025501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3046a835d1ac0ec572b8fe9cf387b0a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga3046a835d1ac0ec572b8fe9cf387b0a0">VITASDK_BUILD_ASSERT_EQ</a> (0x24, <a class="el" href="group__SceTypesKernel.html#structSceFMatrix3">SceFMatrix3</a>)</td></tr>
+<tr class="separator:ga3046a835d1ac0ec572b8fe9cf387b0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64135e79a464c10497632be7c14730a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga64135e79a464c10497632be7c14730a5">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceTypesKernel.html#structSceIMatrix4">SceIMatrix4</a>)</td></tr>
+<tr class="separator:ga64135e79a464c10497632be7c14730a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5f5a0f653c9a4145c0648f935e323c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gac5f5a0f653c9a4145c0648f935e323c1">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a>)</td></tr>
+<tr class="separator:gac5f5a0f653c9a4145c0648f935e323c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2a5bba6eecd1423adcdcf1b6508bd8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gac2a5bba6eecd1423adcdcf1b6508bd8e">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceFQuaternion">SceFQuaternion</a>)</td></tr>
+<tr class="separator:gac2a5bba6eecd1423adcdcf1b6508bd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a77dc1b8e772687ff814fd6edb35fd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga4a77dc1b8e772687ff814fd6edb35fd6">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceFColor">SceFColor</a>)</td></tr>
+<tr class="separator:ga4a77dc1b8e772687ff814fd6edb35fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8cb00dfe4974bb689b074af04f93f54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#gac8cb00dfe4974bb689b074af04f93f54">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceFPlane">SceFPlane</a>)</td></tr>
+<tr class="separator:gac8cb00dfe4974bb689b074af04f93f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55fedb8640e4383c30fe3bdc754a1838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga55fedb8640e4383c30fe3bdc754a1838">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a>)</td></tr>
+<tr class="separator:ga55fedb8640e4383c30fe3bdc754a1838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

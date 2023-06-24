@@ -17,6 +17,8 @@ var usbaudioin_8h =
       [ "SCE_USBAUDIO_IN_ERROR_TIMEOUT", "group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a8748cf0a29d752097768d9b75b85af28", null ],
       [ "SCE_USBAUDIO_IN_ERROR_PROCESS_CANNOT_OPEN_MORE_DEVICE", "group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ac653dd47d6f116a41178d396cdb94feb", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUsbAudioUser.html#ga59a95437037d3aa0307fef180bee3c6d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUsbAudioUser.html#ga43e1cdf148a0ab208c4a48be6fb83a81", null ],
     [ "sceUsbAudioInOpenDevice", "group__SceUsbAudioUser.html#ga8eff2b7c562a0c246aa1f3fca19f06e1", null ],
     [ "sceUsbAudioInCloseDevice", "group__SceUsbAudioUser.html#ga28834b4c73ff45af76f8f5b023bba588", null ],
     [ "sceUsbAudioInGetDeviceIdList", "group__SceUsbAudioUser.html#gae35898d43db78d5b5aa34d9fe3512c97", null ],

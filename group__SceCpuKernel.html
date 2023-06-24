@@ -199,6 +199,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1670ab4cf602818e4f288c5917400f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97">ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock, <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> intr_status)</td></tr>
 <tr class="memdesc:ga1670ab4cf602818e4f288c5917400f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a RWSpinlock acquired for writing and resume interrupts if necessary.  <a href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97">More...</a><br /></td></tr>
 <tr class="separator:ga1670ab4cf602818e4f288c5917400f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4806721780419720a4a5fae006e2f315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga4806721780419720a4a5fae006e2f315">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a>)</td></tr>
+<tr class="separator:ga4806721780419720a4a5fae006e2f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97fec603f28a6c333e9469fcf1859abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga97fec603f28a6c333e9469fcf1859abb">ksceKernelCorelockInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
 <tr class="separator:ga97fec603f28a6c333e9469fcf1859abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> core)</td></tr>
@@ -1387,6 +1389,34 @@ It is forbidden to write to data protected by the spinlock after acquiring it wi
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function resumes interrupts only if they were enabled before the call to <a class="el" href="group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75" title="Acquire a spinlock and suspend interrupts if necessary.">ksceKernelSpinlockLowLockCpuSuspendIntr</a>/<a class="el" href="group__SceCpuKernel.html#gaa06db131a9f6167d19fc83ad96904fbd" title="Attempt to acquire a RWSpinlock for writing and suspend interrupts if necessary.">ksceKernelRWSpinlockLowTryWriteLockCpuSuspendIntr</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga4806721780419720a4a5fae006e2f315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4806721780419720a4a5fae006e2f315">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

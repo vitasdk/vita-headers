@@ -30,6 +30,12 @@ var netcheck__dialog_8h =
       [ "SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_ENTER", "group__SceNetCheckDialogUser.html#gga46842dd57ea8e763625c34ac6ed4c345a05b1654332d27e15f73851a7995c1fd1", null ],
       [ "SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_LEAVE", "group__SceNetCheckDialogUser.html#gga46842dd57ea8e763625c34ac6ed4c345a429422c8a1135c868fe0aa2fc1cba28f", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gae4fd7e8fa9eebee6be970e0186dc906e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#ga6400a4f6882a250865e8ca5235063b9b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gab23649c4e205cdcec1fdc0b95a537974", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gaa27d3d4331dc60e2f7541f70b685ad8e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gab7d666b2c956a79a184ad36d36d62d59", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gaf78a131b4145efbbd7721c13083a36b6", null ],
     [ "sceNetCheckDialogInit", "group__SceNetCheckDialogUser.html#ga9fa6cf71a7d9bb154e6959bae20ef745", null ],
     [ "sceNetCheckDialogGetStatus", "group__SceNetCheckDialogUser.html#ga7d085e8ba2023ada7152dd5f26db92c2", null ],
     [ "sceNetCheckDialogAbort", "group__SceNetCheckDialogUser.html#ga99ecf6cb71ed4d4221f2e4806a383a5b", null ],

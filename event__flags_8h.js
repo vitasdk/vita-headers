@@ -18,6 +18,8 @@ var event__flags_8h =
       [ "SCE_EVENT_WAITCLEAR", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10", null ],
       [ "SCE_EVENT_WAITCLEAR_PAT", "group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga2d930d794255b3ef29ebe65c4af8d16d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gacd52bec7c3899c971058478080b14eeb", null ],
     [ "ksceKernelGetEventFlagInfo", "group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3", null ],
     [ "ksceKernelCreateEventFlag", "group__SceThreadMgrKernel.html#ga8d943b0de33908f541e36d4895b869c9", null ],
     [ "ksceKernelSetEventFlag", "group__SceThreadMgrKernel.html#ga542fabbbac9f0c66091be3b4f29d9955", null ],

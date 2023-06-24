@@ -24,6 +24,9 @@ var thread_8h =
       [ "SCE_THREAD_STAGNANT", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa", null ],
       [ "SCE_THREAD_SUSPENDED", "group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga66580ad672c63cb3b54a910e0dbbd331", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gaa74ad12a10bc8cfb5ef3469331569863", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gabad12e90a6c274821cd5f202ff3c7897", null ],
     [ "ksceKernelCreateThread", "group__SceThreadMgrKernel.html#ga6a41e5137d6c4e03291a54178e81f005", null ],
     [ "ksceKernelDeleteThread", "group__SceThreadMgrKernel.html#ga4a6a0829e34df8f407e6615e5bcff43e", null ],
     [ "ksceKernelStartThread", "group__SceThreadMgrKernel.html#ga31f9ac872f7028fb8c224b9f1c0649c9", null ],

@@ -14,6 +14,12 @@ var pspnet__adhocctl_8h =
       [ "SCE_NET_ADHOCCTL_ADHOCTYPE_RESERVED", "group__ScePspnetAdhocctlUser.html#ggaab86a6e58180b4866fc751a0aa7b8bffa0ecb3a9525e1137ce1d964a1206e4370", null ],
       [ "SCE_NET_ADHOCCTL_ADHOCTYPE_SYSTEM", "group__ScePspnetAdhocctlUser.html#ggaab86a6e58180b4866fc751a0aa7b8bffa8ba10a79b2bdbe37537c3fe5556285cd", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePspnetAdhocctlUser.html#ga46a26837f41032820f2965b252a05bd2", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePspnetAdhocctlUser.html#gabfaf7501a560ff27ffc10b018fa8cf07", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePspnetAdhocctlUser.html#ga57f3717f758cf62aa0524ec10577805d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePspnetAdhocctlUser.html#ga77643a00ee3ba131cfc4e53af93c5d2f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePspnetAdhocctlUser.html#ga15b52717e056e4af822ac7dfab879464", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePspnetAdhocctlUser.html#ga6da3635b83fd8022f742c808fbef507a", null ],
     [ "sceNetAdhocctlInit", "group__ScePspnetAdhocctlUser.html#ga0bd249299f896b4aa12368323ca37e70", null ],
     [ "sceNetAdhocctlTerm", "group__ScePspnetAdhocctlUser.html#ga6176a295820917a9a171eee52d53b923", null ],
     [ "sceNetAdhocctlGetAdhocId", "group__ScePspnetAdhocctlUser.html#ga3e3f809163830e7e7d4320b8f6e61a81", null ],

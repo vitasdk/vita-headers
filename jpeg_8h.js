@@ -1,5 +1,8 @@
 var jpeg_8h =
 [
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegUser.html#ga5965ac51f2f695f2b03b92979856d4c4", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegUser.html#ga9adf236cfda040e229aa69fb75c4a6ac", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegUser.html#gafa75c4c3ebb431bdea481529db23001b", null ],
     [ "sceJpegInitMJpeg", "group__SceJpegUser.html#ga8ac5002206bdc3a1738896a7761c1604", null ],
     [ "sceJpegInitMJpegWithParam", "group__SceJpegUser.html#gad57433c752577fc7bc9a5f5de5c2b10e", null ],
     [ "sceJpegFinishMJpeg", "group__SceJpegUser.html#gafb17719c629f962507a18ec8cb561d02", null ],

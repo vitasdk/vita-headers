@@ -154,6 +154,8 @@ var camera_8h =
       [ "SCE_CAMERA_NIGHTMODE_LESS100", "group__SceCameraUser.html#gga4d6d3f0ec23c1fff8948f9bbb1bd47f1a03ef54dbde3d9c62ae578cde5c66109d", null ],
       [ "SCE_CAMERA_NIGHTMODE_OVER100", "group__SceCameraUser.html#gga4d6d3f0ec23c1fff8948f9bbb1bd47f1a5744033043fae9305b47c0d7eac8e278", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCameraUser.html#ga5be4c55392e48a348ed0ccded2c7ecbf", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCameraUser.html#gaafce61b612348836ef9f28a0b8854db4", null ],
     [ "sceCameraOpen", "group__SceCameraUser.html#gaa37d9cdb92004d6dfd4339145fa25fa5", null ],
     [ "sceCameraClose", "group__SceCameraUser.html#gacd40aface688fb979afa5098db9859c1", null ],
     [ "sceCameraStart", "group__SceCameraUser.html#gab90fa215f3233656773ba28d3306fa0d", null ],

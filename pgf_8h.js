@@ -48,6 +48,13 @@ var pgf_8h =
       [ "SCE_FONT_PIXELFORMAT_24", "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3a107185882b6a465e907e108a0ad7a12f", null ],
       [ "SCE_FONT_PIXELFORMAT_32", "group__ScePgfUser.html#gga2e161afc01d5e97ed8ca486c13ac95e3afd4139c2d4e2b7f0d1167b998e3955d7", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#ga7f2a8d1b3e96d2aa33f9272d5802baf1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#ga43021ce8e4608ea052ffa3ad3dcb0bd1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#ga0cedefd65c4f82579b90cd64d61ebd1e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#ga77da80e064b691ee68361d46198ca6a2", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#ga7bbefd1aa5dbf4735487cf7d7b90579b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#gaeb3cfb217fa37399eb943145bd6015d8", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePgfUser.html#ga9d286e51f50b31c6411eb92f312c900d", null ],
     [ "sceFontNewLib", "group__ScePgfUser.html#ga37763cd2c48140f6181cd1cf68742aa1", null ],
     [ "sceFontDoneLib", "group__ScePgfUser.html#ga713de408f32c7311dc5f17d995a3a5e8", null ],
     [ "sceFontOpen", "group__ScePgfUser.html#gaf2794ecdc3ca589422b029126957d9c0", null ],

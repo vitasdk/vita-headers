@@ -52,6 +52,8 @@ var group__SceJpegEncUser =
     [ "SCE_JPEGENC_HEADER_MODE_MJPEG", "group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221", null ],
     [ "SCE_JPEGENC_INIT_PARAM_OPTION_NONE", "group__SceJpegEncUser.html#gga6e7c1e7560d2eafb40da505711686f9ba44b005da815f7976345d0a80533a3737", null ],
     [ "SCE_JPEGENC_INIT_PARAM_OPTION_LPDDR2_MEMORY", "group__SceJpegEncUser.html#gga6e7c1e7560d2eafb40da505711686f9ba8a22ec91c816b515086aea1a242d2de1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegEncUser.html#ga5e58a6315aa72a8f4de88cea4bf001dd", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegEncUser.html#ga73bdff8405396d7a47f18c0b7cc2aecc", null ],
     [ "sceJpegEncoderInit", "group__SceJpegEncUser.html#ga9a974f8adfd0b6d3423aff1c6f15af0f", null ],
     [ "sceJpegEncoderInitWithParam", "group__SceJpegEncUser.html#ga3625becf84ed1146677aef21fe748520", null ],
     [ "sceJpegEncoderEnd", "group__SceJpegEncUser.html#ga848e5caf95f79e15ef84a0c3cc5683c6", null ],

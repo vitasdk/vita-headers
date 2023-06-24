@@ -8,5 +8,7 @@ var psp2common_2fios2_8h =
       [ "SCE_FIOS_OVERLAY_TYPE_TRANSLUCENT", "group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c", null ],
       [ "SCE_FIOS_OVERLAY_TYPE_NEWER", "group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de", null ],
       [ "SCE_FIOS_OVERLAY_TYPE_WRITABLE", "group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f", null ]
-    ] ]
+    ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFios2KernelKernel.html#ga6f857da9d97962e77e397cf804de1360", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFios2KernelKernel.html#ga2cd96e62ba6f30d249870f4217aa251a", null ]
 ];

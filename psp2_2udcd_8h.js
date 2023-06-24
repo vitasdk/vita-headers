@@ -30,6 +30,9 @@ var psp2_2udcd_8h =
       [ "SCE_UDCD_STATUS_DRIVER_STARTED", "group__SceUdcdKernel.html#gga9a4e508891cafbcd50ec6e553d75f4d6add2257a8f356010bfc1b418cef108dba", null ],
       [ "SCE_UDCD_STATUS_DRIVER_REGISTERED", "group__SceUdcdKernel.html#gga9a4e508891cafbcd50ec6e553d75f4d6a644d78d9dedb131b870c0304d37abe1c", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUdcdUser.html#ga74edabeddd02c64bfabdc9884c1216a1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUdcdUser.html#ga6f12898525703be6fd44064fbda29962", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUdcdUser.html#ga7f5e6fa011dfa83c819fcd114897d2d3", null ],
     [ "sceUdcdGetDeviceState", "group__SceUdcdUser.html#ga750f2e74d89448d7a7bda7d046b39963", null ],
     [ "sceUdcdGetDeviceInfo", "group__SceUdcdUser.html#ga9aec751feaa755bb263aee2dd275cdab", null ],
     [ "sceUdcdGetDrvState", "group__SceUdcdUser.html#ga263f89d49acd202f4c7ec258737ab2d6", null ],

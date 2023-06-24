@@ -1,5 +1,6 @@
 var pss_8h =
 [
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePssUser.html#ga0fe4dbd9ed08cfc0c66ebfaab73689ab", null ],
     [ "pss_crypto_open", "group__ScePssUser.html#ga368db73a9f881eedd851bcf79a0d9355", null ],
     [ "pss_crypto_read", "group__ScePssUser.html#gadbaec5faac0264156ddcf0199a213dd5", null ],
     [ "pss_crypto_close", "group__ScePssUser.html#ga7f70ed1ba9cd410e360671b12ca7ff83", null ],

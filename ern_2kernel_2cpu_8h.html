@@ -81,7 +81,8 @@ $(document).ready(function(){initNavTree('ern_2kernel_2cpu_8h.html',''); initRes
 <div class="title">cpu.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sysclib_8h_source.html">psp2kern/kernel/sysclib.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mmu_8h_source.html">psp2kern/kernel/sysmem/mmu.h</a>&gt;</code><br />
 </div>
@@ -208,6 +209,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1670ab4cf602818e4f288c5917400f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97">ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr</a> (<a class="el" href="group__SceTypesKernel.html#gaad116214e9909d62d055153fd0521d9e">SceKernelRWSpinlock</a> *lock, <a class="el" href="group__SceTypesKernel.html#gaab3ab7ee1fe7b83627744c13eb90d20c">SceKernelIntrStatus</a> intr_status)</td></tr>
 <tr class="memdesc:ga1670ab4cf602818e4f288c5917400f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a RWSpinlock acquired for writing and resume interrupts if necessary.  <a href="group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97">More...</a><br /></td></tr>
 <tr class="separator:ga1670ab4cf602818e4f288c5917400f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4806721780419720a4a5fae006e2f315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga4806721780419720a4a5fae006e2f315">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a>)</td></tr>
+<tr class="separator:ga4806721780419720a4a5fae006e2f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97fec603f28a6c333e9469fcf1859abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga97fec603f28a6c333e9469fcf1859abb">ksceKernelCorelockInitialize</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx)</td></tr>
 <tr class="separator:ga97fec603f28a6c333e9469fcf1859abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9eeaceac9629151baafa9bcd7e37a971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuKernel.html#ga9eeaceac9629151baafa9bcd7e37a971">ksceKernelCorelockLock</a> (<a class="el" href="group__SceCpuKernel.html#structSceCorelockContext">SceCorelockContext</a> *ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> core)</td></tr>

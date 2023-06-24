@@ -50,6 +50,9 @@ var atrac_8h =
       [ "SCE_ATRAC_LOOP_STATUS_NON_RESETABLE_PART", "group__SceAtracUser.html#gga812b4bebcdb4a8f0ac59d4641cf9d86aaea8ca4301d391cc5703f7c10c1723ead", null ],
       [ "SCE_ATRAC_LOOP_STATUS_RESETABLE_PART", "group__SceAtracUser.html#gga812b4bebcdb4a8f0ac59d4641cf9d86aa1741534c4c6fa6f62f869bb687eb6c74", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAtracUser.html#ga9b5808662e31310378f6ec15c7f4a9fd", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAtracUser.html#gae35f4c67e6fbf2b74edd4adf1b897a24", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAtracUser.html#ga41accfcfbcd5a3976eab1c967bc70609", null ],
     [ "sceAtracQueryDecoderGroupMemSize", "group__SceAtracUser.html#ga6c5add6d247139d86ff9c06144dfaaa8", null ],
     [ "sceAtracCreateDecoderGroup", "group__SceAtracUser.html#ga17a8d40e49e6267334e3e91103282997", null ],
     [ "sceAtracDeleteDecoderGroup", "group__SceAtracUser.html#ga819413775d62de793ab31727c869faef", null ],

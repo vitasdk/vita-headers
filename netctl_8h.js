@@ -33,6 +33,9 @@ var netctl_8h =
       [ "SCE_NETCTL_STATE_FINALIZING", "group__SceNetCtlUser.html#gga5eb6373a8ba8a512e5ebfc18c70584f4a18b8f09ef624dfd3ee2f9f9b26e2588c", null ],
       [ "SCE_NETCTL_STATE_CONNECTED", "group__SceNetCtlUser.html#gga5eb6373a8ba8a512e5ebfc18c70584f4a7ddafe842893a52a261531a06bb00bcd", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCtlUser.html#ga9a9ec697ba08e7e75951085eb1f033cb", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCtlUser.html#ga4e13ec94057d7dc1432d0fafeee707be", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCtlUser.html#ga4239b6eaf60b7cf84cdb77e56f38a0ac", null ],
     [ "sceNetCtlInit", "group__SceNetCtlUser.html#ga2b9ce92dae6b7f2fab82ebb712811490", null ],
     [ "sceNetCtlTerm", "group__SceNetCtlUser.html#ga78f957fe2d0b4abda522a67151096ea3", null ],
     [ "sceNetCtlCheckCallback", "group__SceNetCtlUser.html#ga35e9deefc24e5d2acd4645e44279ac49", null ],

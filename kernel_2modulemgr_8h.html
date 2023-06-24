@@ -82,7 +82,8 @@ $(document).ready(function(){initNavTree('kernel_2modulemgr_8h.html',''); initRe
 <div class="title">modulemgr.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psp2_2types_8h_source.html">psp2/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2_2types_8h_source.html">psp2/types.h</a>&gt;</code><br />
 </div>
 <p><a href="kernel_2modulemgr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -160,6 +161,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga576fee6ecde265285fce2964eab63f69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga576fee6ecde265285fce2964eab63f69">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceModulemgrUser.html#structSceKernelSegmentInfo">SceKernelSegmentInfo</a>)</td></tr>
+<tr class="separator:ga576fee6ecde265285fce2964eab63f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga818023fa50b9f7a82169e23fa5c3a509"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga818023fa50b9f7a82169e23fa5c3a509">VITASDK_BUILD_ASSERT_EQ</a> (0x1B8, <a class="el" href="group__SceModulemgrUser.html#structSceKernelModuleInfo">SceKernelModuleInfo</a>)</td></tr>
+<tr class="separator:ga818023fa50b9f7a82169e23fa5c3a509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga220bd1b331b95501c305a0cdfec7a3bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga220bd1b331b95501c305a0cdfec7a3bd">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceModulemgrUser.html#structSceKernelLMOption">SceKernelLMOption</a>)</td></tr>
+<tr class="separator:ga220bd1b331b95501c305a0cdfec7a3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b628941e2ecd044c245cefbb8fd2ad1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga6b628941e2ecd044c245cefbb8fd2ad1">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a>)</td></tr>
+<tr class="separator:ga6b628941e2ecd044c245cefbb8fd2ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4075668baf86b13bb20defae4c6bdcb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga4075668baf86b13bb20defae4c6bdcb4">sceKernelGetModuleInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceModulemgrUser.html#structSceKernelModuleInfo">SceKernelModuleInfo</a> *info)</td></tr>
 <tr class="separator:ga4075668baf86b13bb20defae4c6bdcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91ed9f5c71e57ad0ab9f797cb5024dc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga91ed9f5c71e57ad0ab9f797cb5024dc4">sceKernelGetModuleList</a> (<a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *uids, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num)</td></tr>
@@ -176,6 +185,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga54c98cf78b16d4412442b53e0632d327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab5207a83a1b1a9a1cb0ffda46cd088f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#gab5207a83a1b1a9a1cb0ffda46cd088f6">sceKernelStopUnloadModule</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> modid, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp, int <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="group__SceModulemgrUser.html#structSceKernelULMOption">SceKernelULMOption</a> *option, int *status)</td></tr>
 <tr class="separator:gab5207a83a1b1a9a1cb0ffda46cd088f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ba11e2ea473d817816bd3ca1db33c0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga0ba11e2ea473d817816bd3ca1db33c0c">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceModulemgrUser.html#structSceKernelSystemSwVersion">SceKernelSystemSwVersion</a>)</td></tr>
+<tr class="separator:ga0ba11e2ea473d817816bd3ca1db33c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d9b7b96a111c3f62a3878468f417c19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrUser.html#ga7d9b7b96a111c3f62a3878468f417c19">sceKernelGetSystemSwVersion</a> (<a class="el" href="group__SceModulemgrUser.html#structSceKernelSystemSwVersion">SceKernelSystemSwVersion</a> *<a class="el" href="group__SceKblKernel.html#gab6d7b6f8c2ceaba7acda80aaf05f4899">version</a>)</td></tr>
 <tr class="memdesc:ga7d9b7b96a111c3f62a3878468f417c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets system firmware information.  <a href="group__SceModulemgrUser.html#ga7d9b7b96a111c3f62a3878468f417c19">More...</a><br /></td></tr>
 <tr class="separator:ga7d9b7b96a111c3f62a3878468f417c19"><td class="memSeparator" colspan="2">&#160;</td></tr>

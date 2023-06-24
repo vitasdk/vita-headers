@@ -1,6 +1,8 @@
 var uid__class_8h =
 [
     [ "SceClassCallback", "group__SceSysmemKernel.html#gac04de86fb0a37624c069a3311358c9f5", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#gaf47659144240f9dbf6d6f3363bf7136d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#gac8abc561016cc95e7e55fb3e9dbbe17f", null ],
     [ "ksceKernelGetUidClass", "group__SceSysmemKernel.html#ga31ac66ef8604284f9fd7c2dd717e6360", null ],
     [ "ksceKernelGetUidDLinkClass", "group__SceSysmemKernel.html#ga46fe504bf586cd94155c2eef35bc8517", null ],
     [ "ksceKernelGetUidHeapClass", "group__SceSysmemKernel.html#ga9127eaa3b3458b14e529ee170d527fa8", null ],

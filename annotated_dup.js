@@ -26,7 +26,7 @@ var annotated_dup =
     [ "SceAppMgrBudgetInfo", "group__SceAppMgrUser.html#structSceAppMgrBudgetInfo", "group__SceAppMgrUser_structSceAppMgrBudgetInfo" ],
     [ "SceAppMgrCoredumpState", "group__SceAppMgrUser.html#structSceAppMgrCoredumpState", "group__SceAppMgrUser_structSceAppMgrCoredumpState" ],
     [ "SceAppMgrLaunchParam", "group__SceAppMgrKernel.html#structSceAppMgrLaunchParam", "group__SceAppMgrKernel_structSceAppMgrLaunchParam" ],
-    [ "sceAppMgrLoadExecOptParam", "group__SceAppMgrUser.html#structsceAppMgrLoadExecOptParam", "group__SceAppMgrUser_structsceAppMgrLoadExecOptParam" ],
+    [ "SceAppMgrLoadExecOptParam", "group__SceAppMgrUser.html#structSceAppMgrLoadExecOptParam", "group__SceAppMgrUser_structSceAppMgrLoadExecOptParam" ],
     [ "SceAppMgrSaveDataData", "group__SceAppMgrUser.html#structSceAppMgrSaveDataData", "group__SceAppMgrUser_structSceAppMgrSaveDataData" ],
     [ "SceAppMgrSaveDataDataDelete", "group__SceAppMgrUser.html#structSceAppMgrSaveDataDataDelete", "group__SceAppMgrUser_structSceAppMgrSaveDataDataDelete" ],
     [ "SceAppMgrSaveDataSlot", "group__SceAppMgrUser.html#structSceAppMgrSaveDataSlot", "group__SceAppMgrUser_structSceAppMgrSaveDataSlot" ],

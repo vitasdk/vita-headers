@@ -37,6 +37,12 @@ var common__dialog_8h =
       [ "SCE_COMMON_DIALOG_RESULT_USER_CANCELED", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2a09458fd7ffbd41d65c8f1609b170c282", null ],
       [ "SCE_COMMON_DIALOG_RESULT_ABORTED", "group__SceCommonDialogUser.html#gga8135bab22247446782c58e47220666d2ad88bf1bf734ff87bc792f3792f952d43", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCommonDialogUser.html#gabecaa3bc09626834dad459a5612882ff", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCommonDialogUser.html#ga43529d92b439d1fa2263177914b5b4f5", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCommonDialogUser.html#gac6a4fde980cdca7cdfa792ee93d2e154", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCommonDialogUser.html#ga7fc2500df48a6ed80a31270525df857f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCommonDialogUser.html#gaa52089b41d65da06e8cb455a665002d0", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCommonDialogUser.html#gab624cfd211f1a16c1c8daea073942dfd", null ],
     [ "sceCommonDialogSetConfigParam", "group__SceCommonDialogUser.html#gabd988f7619d3142141d20430ffcdc9f5", null ],
     [ "sceCommonDialogUpdate", "group__SceCommonDialogUser.html#gaee0f5feb36b2342d41aa9907e1a7a245", null ]
 ];

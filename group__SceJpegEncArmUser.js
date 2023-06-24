@@ -30,6 +30,7 @@ var group__SceJpegEncArmUser =
     [ "SCE_JPEGENCARM_PIXELFORMAT_YCBCR422", "group__SceJpegEncArmUser.html#gga85c6405c81eb5f43dd34f1902c447136aaabfcec20ea1ee0a0735fd9d7576dd9c", null ],
     [ "SCE_JPEGENCARM_HEADER_MODE_JPEG", "group__SceJpegEncArmUser.html#gga7a77d5108f13bb5d4dffbc42ef923c1fa702430fb88713bcb399ef81daff0fc01", null ],
     [ "SCE_JPEGENCARM_HEADER_MODE_MJPEG", "group__SceJpegEncArmUser.html#gga7a77d5108f13bb5d4dffbc42ef923c1faf9124eda0703a75b773e1f597b7e1e1c", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceJpegEncArmUser.html#ga901f0448c63b87cd41cdd6be2fea2a38", null ],
     [ "sceJpegArmEncoderGetContextSize", "group__SceJpegEncArmUser.html#ga6b1ca86792cfa0282b2253411a828d8d", null ],
     [ "sceJpegArmEncoderInit", "group__SceJpegEncArmUser.html#ga8a62910e81bafff48bbb45aa4a5b4522", null ],
     [ "sceJpegArmEncoderEnd", "group__SceJpegEncArmUser.html#gaba6057fa818900db26dad860a8743552", null ],

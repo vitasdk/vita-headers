@@ -18,6 +18,10 @@ var triggerutil_8h =
       [ "SCE_TRIGGER_UTIL_ERROR_EVENT_TYPE_MISMATCH", "group__SceTriggerUtilUser.html#gga18054e3202fbf49fad67e1e3c1330726a999d5f5d43eb2d08ec59b3d821430e13", null ],
       [ "SCE_TRIGGER_UTIL_ERROR_INVALID_ARG", "group__SceTriggerUtilUser.html#gga18054e3202fbf49fad67e1e3c1330726ad77faac7522b894608abcfbacf5ff846", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTriggerUtilUser.html#ga4924fb5839af2bf7de5d41d2538dd100", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTriggerUtilUser.html#ga56eab5e7d01e4563e6f16917ce7837ab", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTriggerUtilUser.html#ga9069caa73e2cd41b4c3fd9bc4494266e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTriggerUtilUser.html#ga1ea8b5aa8907e3ee346a11afda1101dd", null ],
     [ "sceTriggerUtilRegisterDailyEvent", "group__SceTriggerUtilUser.html#ga7f8664224d33d6ab2220c1c7d130f37f", null ],
     [ "sceTriggerUtilRegisterOneTimeEvent", "group__SceTriggerUtilUser.html#gac73b506b4ab79ec39c4edeb9d3f358a1", null ],
     [ "sceTriggerUtilUnregisterDailyEvent", "group__SceTriggerUtilUser.html#ga4e32db953f37737cd906d336c4bb19b3", null ],

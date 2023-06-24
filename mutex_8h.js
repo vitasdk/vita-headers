@@ -1,6 +1,8 @@
 var mutex_8h =
 [
     [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrKernel.html#ga276cbf64a90f4dbb228165980b454361", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga39f41af55c85980b0a118278a7143f8b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga9b724b7deeb54bb1dbc2e058a7bf41b4", null ],
     [ "ksceKernelCreateMutex", "group__SceThreadMgrKernel.html#ga53754b346abbcd9caae1d3459316d47d", null ],
     [ "ksceKernelDeleteMutex", "group__SceThreadMgrKernel.html#ga864708a9f14755ed84efedb759ab03a6", null ],
     [ "ksceKernelLockMutex", "group__SceThreadMgrKernel.html#ga34718c25a9bca2a6302a7a1c7097b319", null ],

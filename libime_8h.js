@@ -77,6 +77,13 @@ var libime_8h =
       [ "SCE_IME_EVENT_PRESS_CLOSE", "group__SceImeUser.html#gga635a4c47f013cb6af063488db94be418acf9c321bc57022a270e1b3f3641c656e", null ],
       [ "SCE_IME_EVENT_PRESS_ENTER", "group__SceImeUser.html#gga635a4c47f013cb6af063488db94be418a78013530dc3bffb3ad35c70eb9a74e80", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#gac69dd2ca026c13fdabd17ee0538b814b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#ga4674f50720df0e41701008a70945cc2e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#ga67d05c20e5cb9bdd2efd2d90e4785638", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#ga07a27d690db2f08f9f6dbb3c032072df", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#ga3a12fe8afbdf283c4c73432a7d68cf7d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#gad27c7f96a4ae69b2709fca11177baa34", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#ga2c961e686387cecc90b9a4ea04d9a2c3", null ],
     [ "sceImeOpen", "group__SceImeUser.html#ga8dff69a91fdbb32fa74918dab18c1c5d", null ],
     [ "sceImeUpdate", "group__SceImeUser.html#ga40424720b4a57f58a530e872708b2f49", null ],
     [ "sceImeSetText", "group__SceImeUser.html#gafdbec814f2c3c7c69fb96694f5dac366", null ],

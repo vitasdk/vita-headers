@@ -38,6 +38,14 @@ var psp2_2appmgr_8h =
       [ "SCE_APPMGR_APPLICATION_MODE_B", "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8", null ],
       [ "SCE_APPMGR_APPLICATION_MODE_C", "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#gaaad885d07a7dbda807c9c1c0987c465b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#ga907f8f364cc828942d01edfe14b31850", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#gafbf36582bbdde26f172824d44394fac9", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#ga53426345e404f53e1e52ce0bb5215529", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#gabb405f5bf5114776de0c4394a9cf16c3", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#ga608db357284b0db123a768e24242cdc6", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#gac432a94c7ed358c528a69d4fd5eda83a", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#ga761ae2ec3cecc72126008a5e3d2798ec", null ],
     [ "sceAppMgrSaveDataDataSave", "group__SceAppMgrUser.html#gadbc4d94e586624c5c04bb2fb65af982a", null ],
     [ "sceAppMgrSaveDataDataRemove", "group__SceAppMgrUser.html#ga2e94c20e97e692b5c3bce79676c4516c", null ],
     [ "sceAppMgrSaveDataSlotCreate", "group__SceAppMgrUser.html#ga5500e0ac06f6d5c422514fb1abce925e", null ],
@@ -76,6 +84,7 @@ var psp2_2appmgr_8h =
     [ "sceAppMgrGetRawPath", "group__SceAppMgrUser.html#ga5f71c0667956286446103da4b5e38cd5", null ],
     [ "sceAppMgrGetRawPathOfApp0ByAppIdForShell", "group__SceAppMgrUser.html#gadcc72e8b78f4fc4980775d5e60f6be4f", null ],
     [ "sceAppMgrGetBudgetInfo", "group__SceAppMgrUser.html#gac4b9cd5f4c4881a79570a353b87143ea", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceAppMgrUser.html#ga5e888d216b493fdeee117620178aaf04", null ],
     [ "sceAppMgrGetCoredumpStateForShell", "group__SceAppMgrUser.html#gadecd3cffc716ace8256b449c641d30f1", null ],
     [ "sceAppMgrDrmOpen", "group__SceAppMgrUser.html#gaf20938bf3dadaf5dcebea9d2ea951437", null ],
     [ "sceAppMgrGetAppInfo", "group__SceAppMgrUser.html#gaa2aa1c4b980b813bc9f981618f78b731", null ]

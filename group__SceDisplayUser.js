@@ -50,6 +50,7 @@ var group__SceDisplayUser =
     [ "SCE_DISPLAY_PIXELFORMAT_A2B10G10R10", "group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9", null ],
     [ "SCE_DISPLAY_SETBUF_IMMEDIATE", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016", null ],
     [ "SCE_DISPLAY_SETBUF_NEXTFRAME", "group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#ga746511d8227c31c611becb919a907707", null ],
     [ "sceDisplaySetFrameBuf", "group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f", null ],
     [ "sceDisplayGetFrameBuf", "group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be", null ],
     [ "sceDisplayGetPrimaryHead", "group__SceDisplayUser.html#ga68872adf7fde59f52a28208457b912bc", null ],

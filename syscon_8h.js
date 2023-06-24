@@ -39,6 +39,8 @@ var syscon_8h =
       [ "SCE_SYSCON_CTRL_VOLDOWN", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea1ea724f49978a243449a5e5268cc7457", null ],
       [ "SCE_SYSCON_CTRL_HEADPHONE", "group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeae212368ffc9a57afb650efc1a28a85a1", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysconKernel.html#ga1c0f630fb87db93a0cf5c1b4b449bd95", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysconKernel.html#ga41069b4b7526c635bfb6685432833792", null ],
     [ "ksceSysconWaitInitialized", "group__SceSysconKernel.html#ga3f3e840a1dfb319aa9018867ec1147fd", null ],
     [ "ksceSysconCmdExec", "group__SceSysconKernel.html#gab2c9b314b57b1136810e129a3a046231", null ],
     [ "ksceSysconCmdExecAsync", "group__SceSysconKernel.html#gab7ed542ead682933745023d2005cc167", null ],

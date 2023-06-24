@@ -238,7 +238,10 @@ var bt_8h =
       [ "SCE_BT_ERROR_JEDI_SNIFF_NOT_CONNECTED", "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74ea3569507c3fc73192630b12d1d7d2dae9", null ],
       [ "SCE_BT_ERROR_JEDI_SNIFF_NOT_JEDI", "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eae306a9a9599655e6eb69e1f941c12553", null ]
     ] ],
-    [ "__attribute__", "group__SceBtKernel.html#gab973844b68cf574ba925f313ab6f465e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceBtKernel.html#ga7872c76dfaccbf970aa97330e98db638", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceBtKernel.html#gade7550301a65a2aee209e1dc334c3a1b", null ],
+    [ "__attribute__", "group__SceBtKernel.html#gae9ddf779708b5e38f5114c4ba25c26e4", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceBtKernel.html#ga244845597c43e210ab9874296d504c52", null ],
     [ "ksceBtAvrcpReadVolume", "group__SceBtKernel.html#ga6af314b5eca212aa6c97346a726bf333", null ],
     [ "ksceBtAvrcpSendButton", "group__SceBtKernel.html#gad716b66cfd4fc8825ba074df3b335fbc", null ],
     [ "ksceBtAvrcpSendVolume", "group__SceBtKernel.html#gaf038923f39d49036b22162b520df2ef2", null ],

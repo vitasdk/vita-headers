@@ -1,6 +1,7 @@
 var kbl_8h =
 [
     [ "__attribute__", "group__SceKblKernel.html#ga4c91f4a71ac45f0adbec79d62858389b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKblKernel.html#ga73240452ecc8804be5ba2ea983163717", null ],
     [ "version", "group__SceKblKernel.html#gab6d7b6f8c2ceaba7acda80aaf05f4899", null ],
     [ "size", "group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0", null ],
     [ "current_fw_version", "group__SceKblKernel.html#ga558b6fb20e7e6b878947e09914a945a0", null ],

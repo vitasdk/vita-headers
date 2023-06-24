@@ -80,7 +80,8 @@ $(document).ready(function(){initNavTree('psp2kern_2kernel_2iofilemgr_8h.html','
 <div class="title">iofilemgr.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ern_2io_2fcntl_8h_source.html">psp2kern/io/fcntl.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ern_2io_2devctl_8h_source.html">psp2kern/io/devctl.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ern_2io_2stat_8h_source.html">psp2kern/io/stat.h</a>&gt;</code><br />
@@ -104,12 +105,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga3dfe1a9d7105351f67ef4c99e30da536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga3dfe1a9d7105351f67ef4c99e30da536">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceIofilemgrKernel.html#structSceIoFdInfo">SceIoFdInfo</a>)</td></tr>
+<tr class="separator:ga3dfe1a9d7105351f67ef4c99e30da536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56660fa44c1d52936dca961ee0bfd7be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga56660fa44c1d52936dca961ee0bfd7be">ksceIoGetGUIDFdListForDebugger</a> (int vis_level, <a class="el" href="group__SceIofilemgrKernel.html#structSceIoFdInfo">SceIoFdInfo</a> *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> max_size, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *res_size)</td></tr>
 <tr class="memdesc:ga56660fa44c1d52936dca961ee0bfd7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get global file descriptor.  <a href="group__SceIofilemgrKernel.html#ga56660fa44c1d52936dca961ee0bfd7be">More...</a><br /></td></tr>
 <tr class="separator:ga56660fa44c1d52936dca961ee0bfd7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e5a390707a3a3e95b80236ecb53e1c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga0e5a390707a3a3e95b80236ecb53e1c9">ksceIoGetPUIDFdListForDebugger</a> (int vis_level, <a class="el" href="group__SceIofilemgrKernel.html#structSceIoFdInfo">SceIoFdInfo</a> *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> max_size, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *res_size)</td></tr>
 <tr class="memdesc:ga0e5a390707a3a3e95b80236ecb53e1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get process file descriptor.  <a href="group__SceIofilemgrKernel.html#ga0e5a390707a3a3e95b80236ecb53e1c9">More...</a><br /></td></tr>
 <tr class="separator:ga0e5a390707a3a3e95b80236ecb53e1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb928550164a8086ee90702b38d86135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaeb928550164a8086ee90702b38d86135">VITASDK_BUILD_ASSERT_EQ</a> (0x828, <a class="el" href="group__SceIofilemgrKernel.html#structSceIofileInfo">SceIofileInfo</a>)</td></tr>
+<tr class="separator:gaeb928550164a8086ee90702b38d86135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6662c00770b242df9b67ff70ba7e394d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga6662c00770b242df9b67ff70ba7e394d">ksceIoGetFileInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceIofilemgrKernel.html#structSceIofileInfo">SceIofileInfo</a> *info)</td></tr>
 <tr class="memdesc:ga6662c00770b242df9b67ff70ba7e394d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file info.  <a href="group__SceIofilemgrKernel.html#ga6662c00770b242df9b67ff70ba7e394d">More...</a><br /></td></tr>
 <tr class="separator:ga6662c00770b242df9b67ff70ba7e394d"><td class="memSeparator" colspan="2">&#160;</td></tr>

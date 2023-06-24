@@ -30,40 +30,40 @@ var group__SceLocationUser =
       [ "SCE_LOCATION_ERROR_INVALID_TITLE_ID", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a5bb6a0c1207205ba806c35a835e65473", null ],
       [ "SCE_LOCATION_ERROR_FATAL_ERROR", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a895357c163475296c9587817c257d48c", null ]
     ] ],
-    [ "SceLocationDialogStatus", "group__SceLocationUser.html#gaede1fcb282a8e02c31961adc7dd28001", [
-      [ "SCE_LOCATION_DIALOG_STATUS_IDLE", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a17a9685831b73c1c27697153454e7cec", null ],
-      [ "SCE_LOCATION_DIALOG_STATUS_RUNNING", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b", null ],
-      [ "SCE_LOCATION_DIALOG_STATUS_FINISHED", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001ae07806ef76fbf1f702da4f26724ebcb1", null ]
+    [ "SceLocationDialogStatus", "group__SceLocationUser.html#gaaa3e955c291a979cd882121ea68dcb7f", [
+      [ "SCE_LOCATION_DIALOG_STATUS_IDLE", "group__SceLocationUser.html#ggaaa3e955c291a979cd882121ea68dcb7fa17a9685831b73c1c27697153454e7cec", null ],
+      [ "SCE_LOCATION_DIALOG_STATUS_RUNNING", "group__SceLocationUser.html#ggaaa3e955c291a979cd882121ea68dcb7fa48fba000551177b35ab416ea0e12606b", null ],
+      [ "SCE_LOCATION_DIALOG_STATUS_FINISHED", "group__SceLocationUser.html#ggaaa3e955c291a979cd882121ea68dcb7fae07806ef76fbf1f702da4f26724ebcb1", null ]
     ] ],
-    [ "SceLocationDialogResult", "group__SceLocationUser.html#gacd49038cc21f91a3d337af5d14f17d00", [
-      [ "SCE_LOCATION_DIALOG_RESULT_NONE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00ac1d4cf0db1c00e9a61f08c550f1822c6", null ],
-      [ "SCE_LOCATION_DIALOG_RESULT_DISABLE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a2a19317a8dc0eb7196ad0fe82ba910da", null ],
-      [ "SCE_LOCATION_DIALOG_RESULT_ENABLE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a27e1ecf075e49062d49a4b38a7512b06", null ]
+    [ "SceLocationDialogResult", "group__SceLocationUser.html#ga08a54310c0a3c6a69905cb947b7a6da6", [
+      [ "SCE_LOCATION_DIALOG_RESULT_NONE", "group__SceLocationUser.html#gga08a54310c0a3c6a69905cb947b7a6da6ac1d4cf0db1c00e9a61f08c550f1822c6", null ],
+      [ "SCE_LOCATION_DIALOG_RESULT_DISABLE", "group__SceLocationUser.html#gga08a54310c0a3c6a69905cb947b7a6da6a2a19317a8dc0eb7196ad0fe82ba910da", null ],
+      [ "SCE_LOCATION_DIALOG_RESULT_ENABLE", "group__SceLocationUser.html#gga08a54310c0a3c6a69905cb947b7a6da6a27e1ecf075e49062d49a4b38a7512b06", null ]
     ] ],
-    [ "SceLocationPermissionApplicationStatus", "group__SceLocationUser.html#ga79d97b38146a8eee437fa1ab15d59301", [
-      [ "SCE_LOCATION_PERMISSION_APPLICATION_NONE", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3f5fe977f1e7c4a0437d2103fa7458bd", null ],
-      [ "SCE_LOCATION_PERMISSION_APPLICATION_INIT", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3a5ff782951ae4832d665c0fd055ac28", null ],
-      [ "SCE_LOCATION_PERMISSION_APPLICATION_DENY", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3bb8f2e54c080bac27e1daf12f6f51f7", null ],
-      [ "SCE_LOCATION_PERMISSION_APPLICATION_ALLOW", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301addf56b1b2b24d56a70be780e62f82fbd", null ]
+    [ "SceLocationPermissionApplicationStatus", "group__SceLocationUser.html#gad743ddb15bd8b79e20eda875d61953d9", [
+      [ "SCE_LOCATION_PERMISSION_APPLICATION_NONE", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9a3f5fe977f1e7c4a0437d2103fa7458bd", null ],
+      [ "SCE_LOCATION_PERMISSION_APPLICATION_INIT", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9a3a5ff782951ae4832d665c0fd055ac28", null ],
+      [ "SCE_LOCATION_PERMISSION_APPLICATION_DENY", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9a3bb8f2e54c080bac27e1daf12f6f51f7", null ],
+      [ "SCE_LOCATION_PERMISSION_APPLICATION_ALLOW", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9addf56b1b2b24d56a70be780e62f82fbd", null ]
     ] ],
-    [ "SceLocationPermissionStatus", "group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd", [
-      [ "SCE_LOCATION_PERMISSION_DENY", "group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda905cff7cac2df26c509c3f204b0fb36e", null ],
-      [ "SCE_LOCATION_PERMISSION_ALLOW", "group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda10174694069b79f874a1e7d6a3f17c7b", null ]
+    [ "SceLocationPermissionStatus", "group__SceLocationUser.html#ga92a2b5910e31908ec6db3a6d5f4de0af", [
+      [ "SCE_LOCATION_PERMISSION_DENY", "group__SceLocationUser.html#gga92a2b5910e31908ec6db3a6d5f4de0afa905cff7cac2df26c509c3f204b0fb36e", null ],
+      [ "SCE_LOCATION_PERMISSION_ALLOW", "group__SceLocationUser.html#gga92a2b5910e31908ec6db3a6d5f4de0afa10174694069b79f874a1e7d6a3f17c7b", null ]
     ] ],
-    [ "SceLocationLocationMethod", "group__SceLocationUser.html#gaf1a21f2a89eb1da54d3e969fee335b47", [
-      [ "SCE_LOCATION_LMETHOD_NONE", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a670cfd55c1f596592ae4cdf8aaa07cb6", null ],
-      [ "SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a75d4dcd98428f38cf927371874b27957", null ],
-      [ "SCE_LOCATION_LMETHOD_GPS_AND_WIFI", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47aba6b69667b39a9304de0cc3c31d8a328", null ],
-      [ "SCE_LOCATION_LMETHOD_WIFI", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47ac30679895f80b988664791481018b3b9", null ],
-      [ "SCE_LOCATION_LMETHOD_3G", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47af678f3dccbfe951613764a29cee394ec", null ],
-      [ "SCE_LOCATION_LMETHOD_GPS", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a6c1a1ec99fae21a2923091d6ecf1ff72", null ]
+    [ "SceLocationLocationMethod", "group__SceLocationUser.html#ga8624830f412e4b1c7c45c01450b7007c", [
+      [ "SCE_LOCATION_LMETHOD_NONE", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007ca670cfd55c1f596592ae4cdf8aaa07cb6", null ],
+      [ "SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007ca75d4dcd98428f38cf927371874b27957", null ],
+      [ "SCE_LOCATION_LMETHOD_GPS_AND_WIFI", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007caba6b69667b39a9304de0cc3c31d8a328", null ],
+      [ "SCE_LOCATION_LMETHOD_WIFI", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007cac30679895f80b988664791481018b3b9", null ],
+      [ "SCE_LOCATION_LMETHOD_3G", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007caf678f3dccbfe951613764a29cee394ec", null ],
+      [ "SCE_LOCATION_LMETHOD_GPS", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007ca6c1a1ec99fae21a2923091d6ecf1ff72", null ]
     ] ],
-    [ "SceLocationHeadingMethod", "group__SceLocationUser.html#gafb8512aad9366c1c282da8218df682b6", [
-      [ "SCE_LOCATION_HMETHOD_NONE", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a93f38ff16e3eb125437ecb1b3efcc6c9", null ],
-      [ "SCE_LOCATION_HMETHOD_AUTO", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a820912380d4f5a2232eed224b652bab4", null ],
-      [ "SCE_LOCATION_HMETHOD_VERTICAL", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a44444a3a3aabb2bde13329e8d29f661b", null ],
-      [ "SCE_LOCATION_HMETHOD_HORIZONTAL", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6adc17a55585e9f79738fedc8cde762071", null ],
-      [ "SCE_LOCATION_HMETHOD_CAMERA", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6abac0538fe2cdf29009883d2f79e714ca", null ]
+    [ "SceLocationHeadingMethod", "group__SceLocationUser.html#ga0dbea76d3bb264a3accad5f2189540dd", [
+      [ "SCE_LOCATION_HMETHOD_NONE", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540dda93f38ff16e3eb125437ecb1b3efcc6c9", null ],
+      [ "SCE_LOCATION_HMETHOD_AUTO", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540dda820912380d4f5a2232eed224b652bab4", null ],
+      [ "SCE_LOCATION_HMETHOD_VERTICAL", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540dda44444a3a3aabb2bde13329e8d29f661b", null ],
+      [ "SCE_LOCATION_HMETHOD_HORIZONTAL", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540ddadc17a55585e9f79738fedc8cde762071", null ],
+      [ "SCE_LOCATION_HMETHOD_CAMERA", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540ddabac0538fe2cdf29009883d2f79e714ca", null ]
     ] ],
     [ "SCE_LOCATION_SUCCESS", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a918e71a0153a9635bf0169ccf09eeeed", null ],
     [ "SCE_LOCATION_INFO_UNDETERMINED_LOCATION", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038ac1e1ed20018120e6541af3a5ade6b8e0", null ],
@@ -89,29 +89,33 @@ var group__SceLocationUser =
     [ "SCE_LOCATION_ERROR_NO_SERVER_MEMORY", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a6555567eadf70d4de12d7993807d1486", null ],
     [ "SCE_LOCATION_ERROR_INVALID_TITLE_ID", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a5bb6a0c1207205ba806c35a835e65473", null ],
     [ "SCE_LOCATION_ERROR_FATAL_ERROR", "group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a895357c163475296c9587817c257d48c", null ],
-    [ "SCE_LOCATION_DIALOG_STATUS_IDLE", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a17a9685831b73c1c27697153454e7cec", null ],
-    [ "SCE_LOCATION_DIALOG_STATUS_RUNNING", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b", null ],
-    [ "SCE_LOCATION_DIALOG_STATUS_FINISHED", "group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001ae07806ef76fbf1f702da4f26724ebcb1", null ],
-    [ "SCE_LOCATION_DIALOG_RESULT_NONE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00ac1d4cf0db1c00e9a61f08c550f1822c6", null ],
-    [ "SCE_LOCATION_DIALOG_RESULT_DISABLE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a2a19317a8dc0eb7196ad0fe82ba910da", null ],
-    [ "SCE_LOCATION_DIALOG_RESULT_ENABLE", "group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a27e1ecf075e49062d49a4b38a7512b06", null ],
-    [ "SCE_LOCATION_PERMISSION_APPLICATION_NONE", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3f5fe977f1e7c4a0437d2103fa7458bd", null ],
-    [ "SCE_LOCATION_PERMISSION_APPLICATION_INIT", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3a5ff782951ae4832d665c0fd055ac28", null ],
-    [ "SCE_LOCATION_PERMISSION_APPLICATION_DENY", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3bb8f2e54c080bac27e1daf12f6f51f7", null ],
-    [ "SCE_LOCATION_PERMISSION_APPLICATION_ALLOW", "group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301addf56b1b2b24d56a70be780e62f82fbd", null ],
-    [ "SCE_LOCATION_PERMISSION_DENY", "group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda905cff7cac2df26c509c3f204b0fb36e", null ],
-    [ "SCE_LOCATION_PERMISSION_ALLOW", "group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda10174694069b79f874a1e7d6a3f17c7b", null ],
-    [ "SCE_LOCATION_LMETHOD_NONE", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a670cfd55c1f596592ae4cdf8aaa07cb6", null ],
-    [ "SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a75d4dcd98428f38cf927371874b27957", null ],
-    [ "SCE_LOCATION_LMETHOD_GPS_AND_WIFI", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47aba6b69667b39a9304de0cc3c31d8a328", null ],
-    [ "SCE_LOCATION_LMETHOD_WIFI", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47ac30679895f80b988664791481018b3b9", null ],
-    [ "SCE_LOCATION_LMETHOD_3G", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47af678f3dccbfe951613764a29cee394ec", null ],
-    [ "SCE_LOCATION_LMETHOD_GPS", "group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a6c1a1ec99fae21a2923091d6ecf1ff72", null ],
-    [ "SCE_LOCATION_HMETHOD_NONE", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a93f38ff16e3eb125437ecb1b3efcc6c9", null ],
-    [ "SCE_LOCATION_HMETHOD_AUTO", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a820912380d4f5a2232eed224b652bab4", null ],
-    [ "SCE_LOCATION_HMETHOD_VERTICAL", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a44444a3a3aabb2bde13329e8d29f661b", null ],
-    [ "SCE_LOCATION_HMETHOD_HORIZONTAL", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6adc17a55585e9f79738fedc8cde762071", null ],
-    [ "SCE_LOCATION_HMETHOD_CAMERA", "group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6abac0538fe2cdf29009883d2f79e714ca", null ],
+    [ "SCE_LOCATION_DIALOG_STATUS_IDLE", "group__SceLocationUser.html#ggaaa3e955c291a979cd882121ea68dcb7fa17a9685831b73c1c27697153454e7cec", null ],
+    [ "SCE_LOCATION_DIALOG_STATUS_RUNNING", "group__SceLocationUser.html#ggaaa3e955c291a979cd882121ea68dcb7fa48fba000551177b35ab416ea0e12606b", null ],
+    [ "SCE_LOCATION_DIALOG_STATUS_FINISHED", "group__SceLocationUser.html#ggaaa3e955c291a979cd882121ea68dcb7fae07806ef76fbf1f702da4f26724ebcb1", null ],
+    [ "SCE_LOCATION_DIALOG_RESULT_NONE", "group__SceLocationUser.html#gga08a54310c0a3c6a69905cb947b7a6da6ac1d4cf0db1c00e9a61f08c550f1822c6", null ],
+    [ "SCE_LOCATION_DIALOG_RESULT_DISABLE", "group__SceLocationUser.html#gga08a54310c0a3c6a69905cb947b7a6da6a2a19317a8dc0eb7196ad0fe82ba910da", null ],
+    [ "SCE_LOCATION_DIALOG_RESULT_ENABLE", "group__SceLocationUser.html#gga08a54310c0a3c6a69905cb947b7a6da6a27e1ecf075e49062d49a4b38a7512b06", null ],
+    [ "SCE_LOCATION_PERMISSION_APPLICATION_NONE", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9a3f5fe977f1e7c4a0437d2103fa7458bd", null ],
+    [ "SCE_LOCATION_PERMISSION_APPLICATION_INIT", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9a3a5ff782951ae4832d665c0fd055ac28", null ],
+    [ "SCE_LOCATION_PERMISSION_APPLICATION_DENY", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9a3bb8f2e54c080bac27e1daf12f6f51f7", null ],
+    [ "SCE_LOCATION_PERMISSION_APPLICATION_ALLOW", "group__SceLocationUser.html#ggad743ddb15bd8b79e20eda875d61953d9addf56b1b2b24d56a70be780e62f82fbd", null ],
+    [ "SCE_LOCATION_PERMISSION_DENY", "group__SceLocationUser.html#gga92a2b5910e31908ec6db3a6d5f4de0afa905cff7cac2df26c509c3f204b0fb36e", null ],
+    [ "SCE_LOCATION_PERMISSION_ALLOW", "group__SceLocationUser.html#gga92a2b5910e31908ec6db3a6d5f4de0afa10174694069b79f874a1e7d6a3f17c7b", null ],
+    [ "SCE_LOCATION_LMETHOD_NONE", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007ca670cfd55c1f596592ae4cdf8aaa07cb6", null ],
+    [ "SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007ca75d4dcd98428f38cf927371874b27957", null ],
+    [ "SCE_LOCATION_LMETHOD_GPS_AND_WIFI", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007caba6b69667b39a9304de0cc3c31d8a328", null ],
+    [ "SCE_LOCATION_LMETHOD_WIFI", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007cac30679895f80b988664791481018b3b9", null ],
+    [ "SCE_LOCATION_LMETHOD_3G", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007caf678f3dccbfe951613764a29cee394ec", null ],
+    [ "SCE_LOCATION_LMETHOD_GPS", "group__SceLocationUser.html#gga8624830f412e4b1c7c45c01450b7007ca6c1a1ec99fae21a2923091d6ecf1ff72", null ],
+    [ "SCE_LOCATION_HMETHOD_NONE", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540dda93f38ff16e3eb125437ecb1b3efcc6c9", null ],
+    [ "SCE_LOCATION_HMETHOD_AUTO", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540dda820912380d4f5a2232eed224b652bab4", null ],
+    [ "SCE_LOCATION_HMETHOD_VERTICAL", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540dda44444a3a3aabb2bde13329e8d29f661b", null ],
+    [ "SCE_LOCATION_HMETHOD_HORIZONTAL", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540ddadc17a55585e9f79738fedc8cde762071", null ],
+    [ "SCE_LOCATION_HMETHOD_CAMERA", "group__SceLocationUser.html#gga0dbea76d3bb264a3accad5f2189540ddabac0538fe2cdf29009883d2f79e714ca", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLocationUser.html#ga076fab6b8a2097772be7fa790a0de495", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLocationUser.html#gaed74b4f5a392f8c15da932faa91f368d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLocationUser.html#gac375e96bd7718bcb13e474313b1a29db", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLocationUser.html#gae6ea3d3beeb564da84ee2d7c26f66807", null ],
     [ "sceLocationOpen", "group__SceLocationUser.html#gab902d309cdce116314386691c8a684d5", null ],
     [ "sceLocationClose", "group__SceLocationUser.html#gaa5a2156576b347f7b901b48a1f53e25f", null ],
     [ "sceLocationReopen", "group__SceLocationUser.html#gaa4f954c9cee58721b69abdc8f060d8bf", null ],

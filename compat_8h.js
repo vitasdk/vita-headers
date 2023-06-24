@@ -11,6 +11,8 @@ var compat_8h =
       [ "SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_PERCENT", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a7244ec40009be3e9f5c2d5664fd14055", null ],
       [ "SCE_COMPAT_PERIPHERAL_HPREMOTE_IS_HEADPHONE_EXIST", "group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851adb50e4333979790c7d136a4ff4fcfc79", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCompatUser.html#ga7a9c1576bd1fdd5682fb23ea2a64769e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceCompatUser.html#ga85be3d2099c507dcddd8c026b3609ec9", null ],
     [ "sceCompatInitEx", "group__SceCompatUser.html#ga55b1105ec26d1ada689c59a441c00659", null ],
     [ "sceCompatUninit", "group__SceCompatUser.html#ga2fe3cc2558a610a23906e4c51d50f661", null ],
     [ "sceCompatStart", "group__SceCompatUser.html#ga1455120122d124fb2ed23c38d9cab1d5", null ],

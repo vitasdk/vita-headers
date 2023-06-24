@@ -23,6 +23,8 @@ var ime__dialog_8h =
       [ "SCE_IME_DIALOG_BUTTON_CLOSE", "group__SceImeUser.html#gga28aef3cc2c048eef726a8510267f7c28a3d86b3ff54e408643789076d1a3fe030", null ],
       [ "SCE_IME_DIALOG_BUTTON_ENTER", "group__SceImeUser.html#gga28aef3cc2c048eef726a8510267f7c28a2e1fdc19652c02593ebc53ea638d74c7", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#gab75e477b252aae978de03c3d7af7d384", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceImeUser.html#gadacebda4b7371c282b9dcfdf78a1a812", null ],
     [ "sceImeDialogInit", "group__SceImeUser.html#gaa7c272631ba571d5e03614aac89bcf52", null ],
     [ "sceImeDialogGetStatus", "group__SceImeUser.html#gae52e816eae3285f7935112569dde68ec", null ],
     [ "sceImeDialogAbort", "group__SceImeUser.html#ga14e28c70e342e22dbb4bff76a51ac3e4", null ],
