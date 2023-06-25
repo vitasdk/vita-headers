@@ -18,9 +18,5 @@ var group__SceCtrlUser_structSceCtrlData =
     [ "circle", "group__SceCtrlUser.html#ga206bfaeccfea6d81a4721871e911d82c", null ],
     [ "cross", "group__SceCtrlUser.html#gabed879db0a7c37fd85494dd96e245fc1", null ],
     [ "square", "group__SceCtrlUser.html#ga98572aac5eb2b1eabd181ce57b6e3b27", null ],
-    [ "reserved", "group__SceCtrlUser.html#ga293f561a121fbb4ae145a986cee01904", null ],
-    [ "reserved0", "group__SceCtrlKernel.html#ga49526eb7bf0cb85fa8ec1881ca6ed774", null ],
-    [ "lt", "group__SceCtrlKernel.html#gae43a39ba42c0866f063d72b545b733bb", null ],
-    [ "rt", "group__SceCtrlKernel.html#ga4e04962e85a8b352a225c40774dde8d0", null ],
-    [ "reserved1", "group__SceCtrlKernel.html#gac46b7a6fb2bb000b63a33d004f8961c9", null ]
+    [ "reserved", "group__SceCtrlUser.html#ga293f561a121fbb4ae145a986cee01904", null ]
 ];
