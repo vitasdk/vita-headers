@@ -1,7 +1,10 @@
 
 #include "defs.h"
-#include <vitasdk.h>
-#include <vitasdkkern.h>
+// #include <vitasdk.h>
+// #include <vitasdkkern.h>
+
+#include <psp2/ctrl.h>
+#include <psp2kern/ctrl.h>
 
 __attribute__ ((used)) const unsigned int version = PSP2_SDK_VERSION;
 

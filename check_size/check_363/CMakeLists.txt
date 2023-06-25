@@ -23,8 +23,7 @@ link_directories(
 )
 
 add_executable(${PROJECT_NAME}-psp2all
-  # ../psp2all.c
-  ../psp2user.c
+  ../psp2all.c
 )
 
 target_link_libraries(${PROJECT_NAME}-psp2all
