@@ -74,13 +74,13 @@ $(document).ready(function(){initNavTree('suspend_8h.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">suspend.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="ommon_2kernel_2processmgr_8h_source.html">psp2common/kernel/processmgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
 </div>
 <p><a href="suspend_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -89,27 +89,11 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a>) (int resume, int eventid, void *args, void *opt)</td></tr>
 <tr class="separator:gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga1b448620c7525b730a2b94164e34d77f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> { <br />
-&#160;&#160;<a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9">SCE_KERNEL_POWER_TICK_DEFAULT</a> = 0
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa3e8b9af3aaeb7cd8fb6ce66a8063d872">SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND</a> = 1
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa61d6ff07f428ecf1f42ecb4644002d39">SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF</a> = 4
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650">SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING</a> = 6
-, <br />
-&#160;&#160;<a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fae71baa308d1cf3469b372f41a74de0e9">SCE_KERNEL_POWER_TICK_DEFAULT</a> = 0
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa3e8b9af3aaeb7cd8fb6ce66a8063d872">SCE_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND</a> = 1
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa61d6ff07f428ecf1f42ecb4644002d39">SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF</a> = 4
-, <a class="el" href="group__SceSuspendKernel.html#gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650">SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING</a> = 6
-<br />
- }</td></tr>
-<tr class="separator:ga1b448620c7525b730a2b94164e34d77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">ksceKernelPowerTick</a> (int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
-<tr class="memdesc:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <a href="group__SceSuspendKernel.html#ga6c15db71646bdff1e4fd4ff45c71bcc4">More...</a><br /></td></tr>
-<tr class="separator:ga6c15db71646bdff1e4fd4ff45c71bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga317448d654802c962fe786d5cf8c7c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga317448d654802c962fe786d5cf8c7c52">ksceKernelPowerTick</a> (<a class="el" href="group__SceProcessmgrKernel.html#ga8fb37ca0dc2c31c9a74c873fd2686560">SceKernelPowerTickType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memdesc:ga317448d654802c962fe786d5cf8c7c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <a href="group__SceSuspendKernel.html#ga317448d654802c962fe786d5cf8c7c52">More...</a><br /></td></tr>
+<tr class="separator:ga317448d654802c962fe786d5cf8c7c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">ksceKernelRegisterSysEventHandler</a> (const char *name, <a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a> handler, void *args)</td></tr>
 <tr class="memdesc:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register system event handler.  <a href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">More...</a><br /></td></tr>
 <tr class="separator:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
