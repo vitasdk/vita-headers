@@ -31,10 +31,10 @@ void sceKernelAtomicSet16(SceInt16 *store, SceInt16 value);
 void sceKernelAtomicSet32(SceInt32 *store, SceInt32 value);
 void sceKernelAtomicSet64(SceInt64 *store, SceInt64 value);
 
-void sceKernelAtomicCompareAndSet8(SceInt8 *store, SceInt8 value);
-void sceKernelAtomicCompareAndSet16(SceInt16 *store, SceInt16 value);
-void sceKernelAtomicCompareAndSet32(SceInt32 *store, SceInt32 value);
-void sceKernelAtomicCompareAndSet64(SceInt64 *store, SceInt64 value);
+SceInt8 sceKernelAtomicCompareAndSet8(SceInt8 *store, SceInt8 value, SceInt8 new_value);
+SceInt16 sceKernelAtomicCompareAndSet16(SceInt16 *store, SceInt16 value, SceInt16 new_value);
+SceInt32 sceKernelAtomicCompareAndSet32(SceInt32 *store, SceInt32 value, SceInt32 new_value);
+SceInt64 sceKernelAtomicCompareAndSet64(SceInt64 *store, SceInt64 value, SceInt64 new_value);
 
 
 SceInt8 sceKernelAtomicAddAndGet8(SceInt8 *store, SceInt8 value);
