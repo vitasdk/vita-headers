@@ -7,16 +7,13 @@
 #define _PSP2KERN_KERNEL_RTC_H_
 
 #include <vitasdk/build_utils.h>
+#include <psp2common/kernel/rtc.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef struct SceRtcTick {
-	SceUInt64 tick;
-} SceRtcTick;
-VITASDK_BUILD_ASSERT_EQ(8, SceRtcTick);
 
 int ksceRtcSetCurrentTick(SceRtcTick *tick);
 int ksceRtcGetCurrentTick(SceRtcTick *tick);

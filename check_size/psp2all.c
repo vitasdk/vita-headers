@@ -19,8 +19,8 @@
 #include <psp2kern/kernel/processmgr.h>
 #include <psp2kern/kernel/suspend.h>
 
-// #include <psp2/rtc.h>
-// #include <psp2kern/kernel/rtc.h>
+#include <psp2/rtc.h>
+#include <psp2kern/kernel/rtc.h>
 
 // #include <psp2/jpegenc.h>
 // #include <psp2kern/avcodec/jpegenc.h>
