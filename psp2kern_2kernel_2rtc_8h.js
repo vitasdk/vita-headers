@@ -1,6 +1,5 @@
 var psp2kern_2kernel_2rtc_8h =
 [
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRtcKernel.html#gafe4ce575d3e4fa57607eb120b4185b3f", null ],
     [ "ksceRtcSetCurrentTick", "group__SceRtcKernel.html#gae2ac49a1b82bde6e3ce9596b12382611", null ],
     [ "ksceRtcGetCurrentTick", "group__SceRtcKernel.html#gad6a686c6f4fc52815c22fed766a57865", null ],
     [ "ksceRtcGetCurrentClock", "group__SceRtcKernel.html#gabbab79911fdbf4312d06d4fe25fe22eb", null ],
