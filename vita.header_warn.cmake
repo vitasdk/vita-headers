@@ -1,6 +1,8 @@
 
 # Here are the backwards compatibility breaking changes that occur in vita-headers and their dates.
 
+if(NOT SHOWED_DEPRECATION_WARNING)
+
 string(TIMESTAMP __vitasdk_year  "%Y" UTC)
 string(TIMESTAMP __vitasdk_month "%m" UTC)
 string(TIMESTAMP __vitasdk_day   "%d" UTC)
@@ -73,4 +75,8 @@ if(${__vitasdk_current_time} LESS ${__vitasdk_expires_wrong_libs})
   message("- SceAudioIn library with SceAudioIn_stub")
   message("Alternative: link SceAudioin_stub instead.")
   message("")
+endif()
+
+set(SHOWED_DEPRECATION_WARNING On)
+
 endif()
