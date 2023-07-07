@@ -93,12 +93,10 @@ $(document).ready(function(){initNavTree('group__SceDisplayUser.html',''); initR
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga746511d8227c31c611becb919a907707"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga746511d8227c31c611becb919a907707">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a>)</td></tr>
-<tr class="separator:ga746511d8227c31c611becb919a907707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5b985953c60c63c1981bf4ea5ce717f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f">sceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a> sync)</td></tr>
+<tr class="memitem:gad5b985953c60c63c1981bf4ea5ce717f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f">sceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, <a class="el" href="group__SceDisplayKernel.html#ga4115e9ff9bb8bec9119a06909587c047">SceDisplaySetBufSync</a> sync)</td></tr>
 <tr class="memdesc:gad5b985953c60c63c1981bf4ea5ce717f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Update framebuffer parameters.  <a href="group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f">More...</a><br /></td></tr>
 <tr class="separator:gad5b985953c60c63c1981bf4ea5ce717f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf833a23b956140624e23129be886b8be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be">sceDisplayGetFrameBuf</a> (<a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a> sync)</td></tr>
+<tr class="memitem:gaf833a23b956140624e23129be886b8be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be">sceDisplayGetFrameBuf</a> (<a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, <a class="el" href="group__SceDisplayKernel.html#ga4115e9ff9bb8bec9119a06909587c047">SceDisplaySetBufSync</a> sync)</td></tr>
 <tr class="memdesc:gaf833a23b956140624e23129be886b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current framebuffer parameters.  <a href="group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be">More...</a><br /></td></tr>
 <tr class="separator:gaf833a23b956140624e23129be886b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68872adf7fde59f52a28208457b912bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayUser.html#ga68872adf7fde59f52a28208457b912bc">sceDisplayGetPrimaryHead</a> (void)</td></tr>
@@ -147,177 +145,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback used at each vertical blank start.  <a href="group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a">More...</a><br /></td></tr>
 <tr class="separator:ga86f33274ad8c58dabe53ec4ec5e7f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structSceDisplayFrameBuf" id="structSceDisplayFrameBuf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceDisplayFrameBuf">&#9670;&nbsp;</a></span>SceDisplayFrameBuf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceDisplayFrameBuf</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Structure used with <a class="el" href="group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f" title="Set/Update framebuffer parameters.">sceDisplaySetFrameBuf</a> to set/update framebuffer. </p>
-<p>Structure used with <a class="el" href="group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8" title="Set/Update framebuffer parameters.">ksceDisplaySetFrameBuf</a> to set/update framebuffer.</p>
-<p>Original screen resolution is 960x544, but the following resolutions can also be supplied as width and height : 480x272, 640x368, 720x408</p>
-<dl class="section note"><dt>Note</dt><dd>- This structure is returned by <a class="el" href="group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be" title="Get current framebuffer parameters.">sceDisplayGetFrameBuf</a></dd></dl>
-<p>Original screen resolution is 960x544, but the following resolutions can also be supplied as width and height : 480x272, 640x368, 720x408</p>
-<dl class="section note"><dt>Note</dt><dd>- This structure is returned by <a class="el" href="group__SceDisplayKernel.html#ga5d16b8195b9c190d39fa83939443eb89" title="Get current framebuffer parameters.">ksceDisplayGetFrameBuf</a> </dd></dl>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga4818747e9c93ab650824cd4c484506df"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-sizeof(SceDisplayFrameBuf) </td></tr>
-<tr><td class="fieldtype">
-<a id="ga946b22be25bfe9974a36ef9838c44be2"></a>void *</td>
-<td class="fieldname">
-base</td>
-<td class="fielddoc">
-Pointer to framebuffer. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga44160853361a441b8e43578d0a2941b9"></a>unsigned int</td>
-<td class="fieldname">
-pitch</td>
-<td class="fielddoc">
-pitch pixels </td></tr>
-<tr><td class="fieldtype">
-<a id="ga00b8ff65e24a20a98cbced5ea7925089"></a>unsigned int</td>
-<td class="fieldname">
-pixelformat</td>
-<td class="fielddoc">
-pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>) </td></tr>
-<tr><td class="fieldtype">
-<a id="ga4443600a76935ec481ca282d48e9268c"></a>unsigned int</td>
-<td class="fieldname">
-width</td>
-<td class="fielddoc">
-framebuffer width </td></tr>
-<tr><td class="fieldtype">
-<a id="gacf6c5759f48d231bd31415cbe552ca3d"></a>unsigned int</td>
-<td class="fieldname">
-height</td>
-<td class="fielddoc">
-framebuffer height </td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gaa1abc2fc8664f894ce78aaf58160b728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa1abc2fc8664f894ce78aaf58160b728">&#9670;&nbsp;</a></span>SceDisplayErrorCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceDisplayUser.html#gaa1abc2fc8664f894ce78aaf58160b728">SceDisplayErrorCode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728ab68af62b91ef823420da383066b8bc2d"></a>SCE_DISPLAY_ERROR_OK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a11a0efb6ab214c0f991a3e60dc097cf1"></a>SCE_DISPLAY_ERROR_INVALID_HEAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a400f4d5d343f7cf9e3cdfb576890cd41"></a>SCE_DISPLAY_ERROR_INVALID_VALUE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aa34efa912fda5453b7b204095f593b10"></a>SCE_DISPLAY_ERROR_INVALID_ADDR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a2e99f537459ef376f35de1495db25007"></a>SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728abac39a22cb13101dafb4250bb67b4cd9"></a>SCE_DISPLAY_ERROR_INVALID_PITCH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3f447fa5ff4752eb5833fbe5d4576a05"></a>SCE_DISPLAY_ERROR_INVALID_RESOLUTION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3c4d4a583fa57a99bf0b8167d6edc8af"></a>SCE_DISPLAY_ERROR_INVALID_UPDATETIMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aab7831ed72313e8699ad44badd177588"></a>SCE_DISPLAY_ERROR_NO_FRAME_BUFFER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a940965b34707d6a5eea1f4712dc3e0b7"></a>SCE_DISPLAY_ERROR_NO_PIXEL_DATA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728ad54a3a72d19528b7ea711db60ede071f"></a>SCE_DISPLAY_ERROR_NO_OUTPUT_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728ab68af62b91ef823420da383066b8bc2d"></a>SCE_DISPLAY_ERROR_OK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a11a0efb6ab214c0f991a3e60dc097cf1"></a>SCE_DISPLAY_ERROR_INVALID_HEAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a400f4d5d343f7cf9e3cdfb576890cd41"></a>SCE_DISPLAY_ERROR_INVALID_VALUE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aa34efa912fda5453b7b204095f593b10"></a>SCE_DISPLAY_ERROR_INVALID_ADDR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a2e99f537459ef376f35de1495db25007"></a>SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728abac39a22cb13101dafb4250bb67b4cd9"></a>SCE_DISPLAY_ERROR_INVALID_PITCH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3f447fa5ff4752eb5833fbe5d4576a05"></a>SCE_DISPLAY_ERROR_INVALID_RESOLUTION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a3c4d4a583fa57a99bf0b8167d6edc8af"></a>SCE_DISPLAY_ERROR_INVALID_UPDATETIMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728aab7831ed72313e8699ad44badd177588"></a>SCE_DISPLAY_ERROR_NO_FRAME_BUFFER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa1abc2fc8664f894ce78aaf58160b728a940965b34707d6a5eea1f4712dc3e0b7"></a>SCE_DISPLAY_ERROR_NO_PIXEL_DATA&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="gac6176811ed0355e537d44c825ab1931c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6176811ed0355e537d44c825ab1931c">&#9670;&nbsp;</a></span>SceDisplayPixelFormat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceDisplayUser.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c"></a>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9"></a>SCE_DISPLAY_PIXELFORMAT_A2B10G10R10&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c"></a>SCE_DISPLAY_PIXELFORMAT_A8B8G8R8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9"></a>SCE_DISPLAY_PIXELFORMAT_A2B10G10R10&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="ga1cccbd19bead1c902688ec8409ff0c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1cccbd19bead1c902688ec8409ff0c55">&#9670;&nbsp;</a></span>SceDisplaySetBufSync</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016"></a>SCE_DISPLAY_SETBUF_IMMEDIATE&#160;</td><td class="fielddoc"><p>Buffer change effective immediately. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c"></a>SCE_DISPLAY_SETBUF_NEXTFRAME&#160;</td><td class="fielddoc"><p>Buffer change effective next frame. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016"></a>SCE_DISPLAY_SETBUF_IMMEDIATE&#160;</td><td class="fielddoc"><p>Buffer change effective immediately. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c"></a>SCE_DISPLAY_SETBUF_NEXTFRAME&#160;</td><td class="fielddoc"><p>Buffer change effective next frame. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga746511d8227c31c611becb919a907707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga746511d8227c31c611becb919a907707">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x18&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gad5b985953c60c63c1981bf4ea5ce717f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad5b985953c60c63c1981bf4ea5ce717f">&#9670;&nbsp;</a></span>sceDisplaySetFrameBuf()</h2>
 
@@ -327,13 +155,13 @@ framebuffer height </td></tr>
         <tr>
           <td class="memname">int sceDisplaySetFrameBuf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
           <td class="paramname"><em>pParam</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga4115e9ff9bb8bec9119a06909587c047">SceDisplaySetBufSync</a>&#160;</td>
           <td class="paramname"><em>sync</em>&#160;</td>
         </tr>
         <tr>
@@ -347,8 +175,8 @@ framebuffer height </td></tr>
 <p>Set/Update framebuffer parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga4115e9ff9bb8bec9119a06909587c047">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -366,13 +194,13 @@ framebuffer height </td></tr>
         <tr>
           <td class="memname">int sceDisplayGetFrameBuf </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *&#160;</td>
           <td class="paramname"><em>pParam</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga4115e9ff9bb8bec9119a06909587c047">SceDisplaySetBufSync</a>&#160;</td>
           <td class="paramname"><em>sync</em>&#160;</td>
         </tr>
         <tr>
@@ -386,8 +214,8 @@ framebuffer height </td></tr>
 <p>Get current framebuffer parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayUser.html#structSceDisplayFrameBuf" title="Structure used with sceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayUser.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga4115e9ff9bb8bec9119a06909587c047">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>

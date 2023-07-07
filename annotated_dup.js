@@ -118,7 +118,7 @@ var annotated_dup =
     [ "SceDateTime", "group__SceTypesKernel.html#structSceDateTime", "group__SceTypesKernel_structSceDateTime" ],
     [ "SceDeflatePartialInputParam", "group__SceUtilsKernel.html#structSceDeflatePartialInputParam", "group__SceUtilsKernel_structSceDeflatePartialInputParam" ],
     [ "SceDipsw", "group__SceDipswKernel.html#structSceDipsw", "group__SceDipswKernel_structSceDipsw" ],
-    [ "SceDisplayFrameBuf", "group__SceDisplayUser.html#structSceDisplayFrameBuf", "group__SceDisplayUser_structSceDisplayFrameBuf" ],
+    [ "SceDisplayFrameBuf", "group__SceDisplayKernel.html#structSceDisplayFrameBuf", "group__SceDisplayKernel_structSceDisplayFrameBuf" ],
     [ "SceDisplayFrameBufInfo", "group__SceDisplayKernel.html#structSceDisplayFrameBufInfo", "group__SceDisplayKernel_structSceDisplayFrameBufInfo" ],
     [ "SceExcpmgrData", "group__SceExcpmgrKernel.html#structSceExcpmgrData", "group__SceExcpmgrKernel_structSceExcpmgrData" ],
     [ "SceExcpmgrExceptionContext", "group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext", "group__SceExcpmgrKernel_structSceExcpmgrExceptionContext" ],
