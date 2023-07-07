@@ -25,8 +25,8 @@
 // #include <psp2/jpegenc.h>
 // #include <psp2kern/avcodec/jpegenc.h>
 
-// #include <psp2/display.h>
-// #include <psp2kern/display.h>
+#include <psp2/display.h>
+#include <psp2kern/display.h>
 
 // #include <psp2/power.h>
 // #include <psp2kern/power.h>
