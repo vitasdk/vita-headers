@@ -3,62 +3,15 @@
  * \usage{psp2/power.h,ScePower_stub}
  */
 
-
 #ifndef _PSP2_POWER_H_
 #define _PSP2_POWER_H_
 
+#include <psp2common/power.h>
 #include <psp2/types.h>
-
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef enum ScePowerErrorCode {
-	SCE_POWER_ERROR_INVALID_VALUE           = 0x802B0000,
-	SCE_POWER_ERROR_ALREADY_REGISTERED      = 0x802B0001,
-	SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED = 0x802B0002,
-	SCE_POWER_ERROR_CANT_SUSPEND            = 0x802B0003,
-	SCE_POWER_ERROR_NO_BATTERY              = 0x802B0100,
-	SCE_POWER_ERROR_DETECTING               = 0x802B0101
-} ScePowerErrorCode;
-
-typedef enum ScePowerCallbackType {
-	/** indicates the unit is using battery as power source */
-	SCE_POWER_CB_BATTERY_MODE          = 0x00000000,
-	/** indicates the battery is in low state */
-	SCE_POWER_CB_LOW_BATTERY           = 0x00000100,
-	/** indicates the unit is using an AC outlet as power source */
-	SCE_POWER_CB_AC_POWER_MODE         = 0x00001000,
-	/** indicates the unit has been shutdown **/
-	SCE_POWER_CB_SHUTDOWN              = 0x00010000,
-	/** indicates the application resumed after being put in suspend from a LiveArea event **/
-	SCE_POWER_CB_RESUME_LIVEAREA       = 0x00200000,
-	/** indicates the unit entered suspend mode **/
-	SCE_POWER_CB_SUSPENDING            = 0x00400000,
-	/** indicates the unit resumed from suspend mode **/
-	SCE_POWER_CB_RESUMING              = 0x00800000,
-	/** indicates the system is taking a screenshot **/
-	SCE_POWER_CB_SCREENSHOT_TRIGGER    = 0x04000000,
-	/** indicates the system shown the Quick Menu screen **/
-	SCE_POWER_CB_QUICK_MENU_TRIGGER    = 0x10000000,
-	/** indicates the PS button was pushed **/
-	SCE_POWER_CB_PS_BUTTON_PRESS       = 0x20000000,
-	/** indicates the system shown the shutdown screen **/
-	SCE_POWER_CB_SHUTDOWN_MENU_TRIGGER = 0x40000000,
-	/** indicates the system shown the unlock screen **/
-	SCE_POWER_CB_UNLOCK_MENU_TRIGGER   = 0x80000000,
-} ScePowerCallbackType;
-
-/* GPU, WLAN/COM configuration setting */
-typedef enum ScePowerConfigurationMode {
-	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, WLAN/COM enabled */
-	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high, WLAN/COM disabled */
-	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high, WLAN/COM enabled (drains battery faster) */
-} ScePowerConfigurationMode;
-
-/** Callback function prototype */
-typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo, void* userData);
 
 /**
  * Registers a ScePower Callback

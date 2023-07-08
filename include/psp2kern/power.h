@@ -6,39 +6,12 @@
 #ifndef _PSP2KERN_POWER_H_
 #define _PSP2KERN_POWER_H_
 
+#include <psp2common/power.h>
 #include <psp2kern/types.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef enum ScePowerCallbackType {
-	/** indicates the power button was pushed, putting the unit into suspend mode */
-	SCE_POWER_CB_POWER_SWITCH     = 0x80000000,
-	/** ? screen on after off ? **/
-	SCE_POWER_CB_UNK_1            = 0x00600000,
-	/** ? screen off ? **/
-	SCE_POWER_CB_UNK_2            = 0x00400000,
-	/** indicates the unit has finish resuming from suspend mode */
-	SCE_POWER_CB_RESUME_COMPLETE  = 0x00040000,
-	/** indicates the unit is resuming from suspend mode */
-	SCE_POWER_CB_RESUMING         = 0x00020000,
-	/** indicates the unit is suspending, seems to occur due to inactivity */
-	SCE_POWER_CB_SUSPENDING       = 0x00010000,
-	/** indicates the unit is plugged into an AC outlet */
-	SCE_POWER_CB_AC_POWER         = 0x00001000,
-	/** indicates the battery is in low state **/
-	SCE_POWER_CB_LOWBATTERY       = 0x00000100,
-	/** indicates there is a battery present in the unit **/
-	SCE_POWER_CB_BATTERY_EXIST    = 0x00000080
-} ScePowerCallbackType;
-
-/* Callbacks */
-
-/** Callback function prototype */
-typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo);
-
-/* Prototypes */
 
 /**
  * Registers a ScePower Callback
