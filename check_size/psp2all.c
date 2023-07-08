@@ -28,8 +28,8 @@
 #include <psp2/display.h>
 #include <psp2kern/display.h>
 
-// #include <psp2/power.h>
-// #include <psp2kern/power.h>
+#include <psp2/power.h>
+#include <psp2kern/power.h>
 
 // #include <psp2/udcd.h>
 // #include <psp2kern/udcd.h>
