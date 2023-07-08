@@ -6,5 +6,6 @@ var dir_4493c19f28139de49fae0794dbd9f9f1 =
     [ "display.h", "psp2common_2display_8h.html", "psp2common_2display_8h" ],
     [ "fios2.h", "psp2common_2fios2_8h.html", "psp2common_2fios2_8h" ],
     [ "npdrm.h", "psp2common_2npdrm_8h.html", "psp2common_2npdrm_8h" ],
+    [ "power.h", "psp2common_2power_8h.html", "psp2common_2power_8h" ],
     [ "types.h", "psp2common_2types_8h.html", "psp2common_2types_8h" ]
 ];

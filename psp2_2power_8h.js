@@ -1,42 +1,5 @@
 var psp2_2power_8h =
 [
-    [ "ScePowerCallback", "group__ScePowerUser.html#gadecfb9ec1a301e138ff57db53c0e5c7a", null ],
-    [ "ScePowerErrorCode", "group__ScePowerUser.html#ga1c8753ba9797fab72c09a1f22e33dc80", [
-      [ "SCE_POWER_ERROR_INVALID_VALUE", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e", null ],
-      [ "SCE_POWER_ERROR_ALREADY_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c", null ],
-      [ "SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770", null ],
-      [ "SCE_POWER_ERROR_CANT_SUSPEND", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80aeb38212c797975a5a5fe8dba439c65a1", null ],
-      [ "SCE_POWER_ERROR_NO_BATTERY", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80aa5714542a995707aac4a9902a78d2d7a", null ],
-      [ "SCE_POWER_ERROR_DETECTING", "group__ScePowerUser.html#gga1c8753ba9797fab72c09a1f22e33dc80ab0e1e5d2a0f7335017712d3029a97603", null ]
-    ] ],
-    [ "ScePowerCallbackType", "group__ScePowerUser.html#ga87add7efd8177f03fecc6fdf9233c57a", [
-      [ "SCE_POWER_CB_BATTERY_MODE", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa9276fe7d6794063bf8c91496bf273bc6", null ],
-      [ "SCE_POWER_CB_LOW_BATTERY", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aae7cc7845cb80b53c3269e0cecd52d56b", null ],
-      [ "SCE_POWER_CB_AC_POWER_MODE", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa480417fffdfdfcbf03959d2bcacf013a", null ],
-      [ "SCE_POWER_CB_SHUTDOWN", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa5459ec1a9a3f58c79b14524979bddb57", null ],
-      [ "SCE_POWER_CB_RESUME_LIVEAREA", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa5d20ed0869fbe15ecdd86aad7455dfcf", null ],
-      [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
-      [ "SCE_POWER_CB_RESUMING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
-      [ "SCE_POWER_CB_SCREENSHOT_TRIGGER", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa4de0aa6f3fd10a73f82df1b655cb21fb", null ],
-      [ "SCE_POWER_CB_QUICK_MENU_TRIGGER", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa7376a08cb2d00811cff51601a7106e19", null ],
-      [ "SCE_POWER_CB_PS_BUTTON_PRESS", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa9d7a137936369b0c9446c079ac0a1df5", null ],
-      [ "SCE_POWER_CB_SHUTDOWN_MENU_TRIGGER", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aadd71ea50052772c4044438d294bd05e0", null ],
-      [ "SCE_POWER_CB_UNLOCK_MENU_TRIGGER", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaa2de4c9b9eaa633da4c1b12f00da5ab2", null ],
-      [ "SCE_POWER_CB_POWER_SWITCH", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaf6da1bdc2032d997495c94ed797f42df", null ],
-      [ "SCE_POWER_CB_UNK_1", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa977e32cc201d8028a0d7368a31e887fb", null ],
-      [ "SCE_POWER_CB_UNK_2", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaf19cb24d56d7c71d996ac775be288b40", null ],
-      [ "SCE_POWER_CB_RESUME_COMPLETE", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa43ac20c4e39bb0f163dfc2b93d7b4856", null ],
-      [ "SCE_POWER_CB_RESUMING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0b8f4a3dc08fea72c1f683a6e2f1abdc", null ],
-      [ "SCE_POWER_CB_SUSPENDING", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaae3bc8a581879f9adb289f546c3e8796", null ],
-      [ "SCE_POWER_CB_AC_POWER", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aace52bb76f3293e50c167d28c2214f43c", null ],
-      [ "SCE_POWER_CB_LOWBATTERY", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa13b344e28f36642a9899a85601726967", null ],
-      [ "SCE_POWER_CB_BATTERY_EXIST", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa55d78a7982f8e38cf74e58b915fa9195", null ]
-    ] ],
-    [ "ScePowerConfigurationMode", "group__ScePowerUser.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce", [
-      [ "SCE_POWER_CONFIGURATION_MODE_A", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed", null ],
-      [ "SCE_POWER_CONFIGURATION_MODE_B", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c", null ],
-      [ "SCE_POWER_CONFIGURATION_MODE_C", "group__ScePowerUser.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489", null ]
-    ] ],
     [ "scePowerRegisterCallback", "group__ScePowerUser.html#gab0c85add301950702a57859121a60b26", null ],
     [ "scePowerUnregisterCallback", "group__ScePowerUser.html#ga5a9c0154c265e0f011ad09f679176714", null ],
     [ "scePowerIsBatteryCharging", "group__ScePowerUser.html#gafaa0e75b6d63ef96afa0121695361e08", null ],
