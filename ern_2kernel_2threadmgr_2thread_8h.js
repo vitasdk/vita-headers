@@ -1,4 +1,4 @@
-var thread_8h =
+var ern_2kernel_2threadmgr_2thread_8h =
 [
     [ "SceKernelThreadEntry", "group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceThreadStatus", "group__SceThreadMgrKernel.html#ga552cbf506e81e208e4bf3e75badc1c40", [

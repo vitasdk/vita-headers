@@ -1,4 +1,4 @@
-var lw__mutex_8h =
+var ern_2kernel_2threadmgr_2lw__mutex_8h =
 [
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gaaab497a9d4e5009f527600c05abc91f0", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga5a1e017e3e2eebb9376522417a71f18f", null ],

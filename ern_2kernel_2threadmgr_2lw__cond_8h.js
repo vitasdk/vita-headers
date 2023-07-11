@@ -1,4 +1,4 @@
-var lw__cond_8h =
+var ern_2kernel_2threadmgr_2lw__cond_8h =
 [
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gaa6166a3846b699342d5b5afa18ddcc20", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga9b29927969289a3c2c41406ceb58dece", null ],

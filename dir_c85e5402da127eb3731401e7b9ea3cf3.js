@@ -1,5 +1,6 @@
 var dir_c85e5402da127eb3731401e7b9ea3cf3 =
 [
+    [ "threadmgr", "dir_6358a0ce56f5d818b07c3579fd41789c.html", "dir_6358a0ce56f5d818b07c3579fd41789c" ],
     [ "clib.h", "clib_8h.html", "clib_8h" ],
     [ "cpu.h", "kernel_2cpu_8h.html", "kernel_2cpu_8h" ],
     [ "dmac.h", "kernel_2dmac_8h.html", "kernel_2dmac_8h" ],

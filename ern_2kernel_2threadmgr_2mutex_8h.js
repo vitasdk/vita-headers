@@ -1,4 +1,4 @@
-var mutex_8h =
+var ern_2kernel_2threadmgr_2mutex_8h =
 [
     [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrKernel.html#ga276cbf64a90f4dbb228165980b454361", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga39f41af55c85980b0a118278a7143f8b", null ],

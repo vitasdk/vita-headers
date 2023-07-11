@@ -1,4 +1,4 @@
-var callback_8h =
+var ern_2kernel_2threadmgr_2callback_8h =
 [
     [ "SceKernelCallbackFunction", "group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga6f3985da305cd603b6ad27aba47c1b5f", null ],
