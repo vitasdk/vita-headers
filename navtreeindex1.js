@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__Audio.html":[1,2],
 "group__Dialog.html":[1,3],
 "group__DmacRegisterFields.html":[1,7,10,1,0],
 "group__DmacRegisterFields.html#ga005c61b1339c90cb5cc439151a31fff5":[4,0,1,2,2,7,4],
@@ -123,8 +124,8 @@ var NAVTREEINDEX1 =
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,0,1],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[1,11,2,0,2],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0a012a8b67ed4026c919dc7ea5175621d7":[4,0,1,0,12,0,1],
-"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,0,0],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,1],
+"group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[1,11,2,0,0,0],
 "group__SceAVConfigUser.html#gga38fcead826920cc717e6ea46521848b0ab921c61db67c148c4674d7126637313c":[4,0,1,0,12,0,0],
 "group__SceAppMgr.html":[1,11,0],
 "group__SceAppMgrKernel.html":[1,11,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375":[1,11,0,0,7],
 "group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375":[4,0,1,0,5,7],
 "group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6":[1,11,0,0,55],
-"group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6":[4,0,1,0,5,34],
-"group__SceAppMgrUser.html#gaf20938bf3dadaf5dcebea9d2ea951437":[1,11,0,0,80]
+"group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6":[4,0,1,0,5,34]
 };

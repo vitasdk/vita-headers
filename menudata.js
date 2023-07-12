@@ -174,7 +174,8 @@ var menudata={children:[
 {text:"Enumerations",url:"globals_enum.html",children:[
 {text:"s",url:"globals_enum.html#index_s"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[
-{text:"b",url:"globals_eval.html#index_b"},
+{text:"_",url:"globals_eval.html#index__5F"},
+{text:"b",url:"globals_eval_b.html#index_b"},
 {text:"h",url:"globals_eval_h.html#index_h"},
 {text:"r",url:"globals_eval_r.html#index_r"},
 {text:"s",url:"globals_eval_s.html#index_s"},

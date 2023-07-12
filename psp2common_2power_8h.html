@@ -93,61 +93,62 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga5cbb78a924aa8c0f481c10625f2d5e84"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga5cbb78a924aa8c0f481c10625f2d5e84">ScePowerErrorCode</a> : SceInt32 { <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga5cbb78a924aa8c0f481c10625f2d5e84a874bfa0b07b53c143f5067f7df30d96e">SCE_POWER_ERROR_INVALID_VALUE</a> = (SceInt32)0x802B0000
-, <a class="el" href="group__ScePowerKernel.html#gga5cbb78a924aa8c0f481c10625f2d5e84a8be62fc5af9b4bfcb9899c34b7972f1c">SCE_POWER_ERROR_ALREADY_REGISTERED</a> = (SceInt32)0x802B0001
-, <a class="el" href="group__ScePowerKernel.html#gga5cbb78a924aa8c0f481c10625f2d5e84a694f41335d884b6b5e8733e93b15b770">SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED</a> = (SceInt32)0x802B0002
-, <a class="el" href="group__ScePowerKernel.html#gga5cbb78a924aa8c0f481c10625f2d5e84aeb38212c797975a5a5fe8dba439c65a1">SCE_POWER_ERROR_CANT_SUSPEND</a> = (SceInt32)0x802B0003
+<tr class="memitem:ga1c8753ba9797fab72c09a1f22e33dc80"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga1c8753ba9797fab72c09a1f22e33dc80">ScePowerErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e">SCE_POWER_ERROR_INVALID_VALUE</a> = 0x802B0000
+, <a class="el" href="group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c">SCE_POWER_ERROR_ALREADY_REGISTERED</a> = 0x802B0001
+, <a class="el" href="group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770">SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED</a> = 0x802B0002
+, <a class="el" href="group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80aeb38212c797975a5a5fe8dba439c65a1">SCE_POWER_ERROR_CANT_SUSPEND</a> = 0x802B0003
 , <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga5cbb78a924aa8c0f481c10625f2d5e84aa5714542a995707aac4a9902a78d2d7a">SCE_POWER_ERROR_NO_BATTERY</a> = (SceInt32)0x802B0100
-, <a class="el" href="group__ScePowerKernel.html#gga5cbb78a924aa8c0f481c10625f2d5e84ab0e1e5d2a0f7335017712d3029a97603">SCE_POWER_ERROR_DETECTING</a> = (SceInt32)0x802B0101
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80aa5714542a995707aac4a9902a78d2d7a">SCE_POWER_ERROR_NO_BATTERY</a> = 0x802B0100
+, <a class="el" href="group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80ab0e1e5d2a0f7335017712d3029a97603">SCE_POWER_ERROR_DETECTING</a> = 0x802B0101
 <br />
  }</td></tr>
-<tr class="separator:ga5cbb78a924aa8c0f481c10625f2d5e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f08cf145861cff107ef69cfcb1413a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga7f08cf145861cff107ef69cfcb1413a0">ScePowerCallbackType</a> : SceUInt32 { <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a0db2b0724612ef9cfc3f09b7f7bdad7a">SCE_POWER_CB_AFTER_SYSTEM_RESUME</a> = 0x00000080
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a9a54e70b1537b652c098df2afce74fe5">SCE_POWER_CB_BATTERY_ONLINE</a> = 0x00000100
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a21e5d059977eefc2503a56518ba7e496">SCE_POWER_CB_THERMAL_SUSPEND</a> = 0x00000200
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a9f9a702d0db91b16caba6546ec1238c6">SCE_POWER_CB_LOW_BATTERY_SUSPEND</a> = 0x00000400
+<tr class="separator:ga1c8753ba9797fab72c09a1f22e33dc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87add7efd8177f03fecc6fdf9233c57a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga87add7efd8177f03fecc6fdf9233c57a">ScePowerCallbackType</a> { <br />
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0db2b0724612ef9cfc3f09b7f7bdad7a">SCE_POWER_CB_AFTER_SYSTEM_RESUME</a> = 0x00000080
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa9a54e70b1537b652c098df2afce74fe5">SCE_POWER_CB_BATTERY_ONLINE</a> = 0x00000100
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa21e5d059977eefc2503a56518ba7e496">SCE_POWER_CB_THERMAL_SUSPEND</a> = 0x00000200
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa9f9a702d0db91b16caba6546ec1238c6">SCE_POWER_CB_LOW_BATTERY_SUSPEND</a> = 0x00000400
 , <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0ae7cc7845cb80b53c3269e0cecd52d56b">SCE_POWER_CB_LOW_BATTERY</a> = 0x00000800
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a66a52fb6a0713e46392cb812d484dd5a">SCE_POWER_CB_POWER_ONLINE</a> = 0x00001000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0acfac8f28d122c5a21564c494acef8969">SCE_POWER_CB_SYSTEM_SUSPEND</a> = 0x00010000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a7aaae2158ca09342ea507d1337eca5ae">SCE_POWER_CB_SYSTEM_RESUMING</a> = 0x00020000
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aae7cc7845cb80b53c3269e0cecd52d56b">SCE_POWER_CB_LOW_BATTERY</a> = 0x00000800
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa66a52fb6a0713e46392cb812d484dd5a">SCE_POWER_CB_POWER_ONLINE</a> = 0x00001000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aacfac8f28d122c5a21564c494acef8969">SCE_POWER_CB_SYSTEM_SUSPEND</a> = 0x00010000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa7aaae2158ca09342ea507d1337eca5ae">SCE_POWER_CB_SYSTEM_RESUMING</a> = 0x00020000
 , <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a0b6c67b1512ec548415c72a3d596becc">SCE_POWER_CB_SYSTEM_RESUME</a> = 0x00040000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0ad4456e052eb0441688a37034f17ee420">SCE_POWER_CB_UNK_0x100000</a> = 0x00100000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a960abf1b2370b44f1f6c2419cff3d68f">SCE_POWER_CB_APP_RESUME</a> = 0x00200000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a6412d175db31541ac9ffcda79f4a77f4">SCE_POWER_CB_APP_SUSPEND</a> = 0x00400000
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0b6c67b1512ec548415c72a3d596becc">SCE_POWER_CB_SYSTEM_RESUME</a> = 0x00040000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aad4456e052eb0441688a37034f17ee420">SCE_POWER_CB_UNK_0x100000</a> = 0x00100000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa960abf1b2370b44f1f6c2419cff3d68f">SCE_POWER_CB_APP_RESUME</a> = 0x00200000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa6412d175db31541ac9ffcda79f4a77f4">SCE_POWER_CB_APP_SUSPEND</a> = 0x00400000
 , <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a7c7d7ee3149ead9b53c321ac2524ed25">SCE_POWER_CB_APP_RESUMING</a> = 0x00800000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a0fe49ed7a41661894007a748ce0609ed">SCE_POWER_CB_BUTTON_PS_START_PRESS</a> = 0x04000000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0ae39a81e1ac953bc932be64a145e56011">SCE_POWER_CB_BUTTON_PS_POWER_PRESS</a> = 0x08000000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0ab42ad71bc134562fee1b53030e2b56fd">SCE_POWER_CB_BUTTON_PS_HOLD</a> = 0x10000000
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa7c7d7ee3149ead9b53c321ac2524ed25">SCE_POWER_CB_APP_RESUMING</a> = 0x00800000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa0fe49ed7a41661894007a748ce0609ed">SCE_POWER_CB_BUTTON_PS_START_PRESS</a> = 0x04000000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aae39a81e1ac953bc932be64a145e56011">SCE_POWER_CB_BUTTON_PS_POWER_PRESS</a> = 0x08000000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aab42ad71bc134562fee1b53030e2b56fd">SCE_POWER_CB_BUTTON_PS_HOLD</a> = 0x10000000
 , <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a8eef2b51b7e168edf2c2e81b557152cd">SCE_POWER_CB_BUTTON_PS_PRESS</a> = 0x20000000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0ad8ae64842604c34dbc6350a37a9a550c">SCE_POWER_CB_BUTTON_POWER_HOLD</a> = 0x40000000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0af629f9a60ce8c7f8066687b1ee16dec2">SCE_POWER_CB_BUTTON_POWER_PRESS</a> = 0x80000000
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0af93a1b30664f14d1a4758a6765695aca">SCE_POWER_CB_VALID_MASK_KERNEL</a> = 0xFCF71F80
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa8eef2b51b7e168edf2c2e81b557152cd">SCE_POWER_CB_BUTTON_PS_PRESS</a> = 0x20000000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aad8ae64842604c34dbc6350a37a9a550c">SCE_POWER_CB_BUTTON_POWER_HOLD</a> = 0x40000000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaf629f9a60ce8c7f8066687b1ee16dec2">SCE_POWER_CB_BUTTON_POWER_PRESS</a> = 0x80000000
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaf93a1b30664f14d1a4758a6765695aca">SCE_POWER_CB_VALID_MASK_KERNEL</a> = 0xFCF71F80
 , <br />
-&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a19a293e3322326c34b83ee213f2e3dd6">SCE_POWER_CB_VALID_MASK_SYSTEM</a> = 0xFCF71F80
-, <a class="el" href="group__ScePowerKernel.html#gga7f08cf145861cff107ef69cfcb1413a0a3549a7f7d1f6d6501bde384da788138e">SCE_POWER_CB_VALID_MASK_NON_SYSTEM</a> = 0x00361180
+&#160;&#160;<a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa19a293e3322326c34b83ee213f2e3dd6">SCE_POWER_CB_VALID_MASK_SYSTEM</a> = 0xFCF71F80
+, <a class="el" href="group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa3549a7f7d1f6d6501bde384da788138e">SCE_POWER_CB_VALID_MASK_NON_SYSTEM</a> = 0x00361180
 <br />
  }</td></tr>
-<tr class="separator:ga7f08cf145861cff107ef69cfcb1413a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga339312c75374dcea46008fedf6a12573"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga339312c75374dcea46008fedf6a12573">ScePowerConfigurationMode</a> : SceInt32 { <a class="el" href="group__ScePowerKernel.html#gga339312c75374dcea46008fedf6a12573ad6f7c730e25ea472927c75ef6037b9ed">SCE_POWER_CONFIGURATION_MODE_A</a> = 0x00000080U
-, <a class="el" href="group__ScePowerKernel.html#gga339312c75374dcea46008fedf6a12573af03f8808a2c611923ee4b48f729e155c">SCE_POWER_CONFIGURATION_MODE_B</a> = 0x00000800U
-, <a class="el" href="group__ScePowerKernel.html#gga339312c75374dcea46008fedf6a12573a66d3ee9602495d73f7e2e4a676f9b489">SCE_POWER_CONFIGURATION_MODE_C</a> = 0x00010880U
+<tr class="separator:ga87add7efd8177f03fecc6fdf9233c57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2bcfd45ea2a6c6e97ecc3145bbc45ce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce">ScePowerConfigurationMode</a> { <a class="el" href="group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed">SCE_POWER_CONFIGURATION_MODE_A</a> = 0x00000080U
+, <a class="el" href="group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c">SCE_POWER_CONFIGURATION_MODE_B</a> = 0x00000800U
+, <a class="el" href="group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489">SCE_POWER_CONFIGURATION_MODE_C</a> = 0x00010880U
+, <a class="el" href="group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaec9d923ec7b6718967dd4996e2b7f6e2">__SCE_POWER_CONFIGURATION_MODE</a> = 0xFFFFFFFF
  }</td></tr>
-<tr class="separator:ga339312c75374dcea46008fedf6a12573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gaa2bcfd45ea2a6c6e97ecc3145bbc45ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad876c05b362c75ddca59445510cc2ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#gad876c05b362c75ddca59445510cc2ee5">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__ScePowerKernel.html#ga5cbb78a924aa8c0f481c10625f2d5e84">ScePowerErrorCode</a>)</td></tr>
+<tr class="memitem:gad876c05b362c75ddca59445510cc2ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#gad876c05b362c75ddca59445510cc2ee5">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__ScePowerKernel.html#ga1c8753ba9797fab72c09a1f22e33dc80">ScePowerErrorCode</a>)</td></tr>
 <tr class="separator:gad876c05b362c75ddca59445510cc2ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c5ea02b55616974c43d3d7cd3b8a37b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga0c5ea02b55616974c43d3d7cd3b8a37b">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__ScePowerKernel.html#ga7f08cf145861cff107ef69cfcb1413a0">ScePowerCallbackType</a>)</td></tr>
+<tr class="memitem:ga0c5ea02b55616974c43d3d7cd3b8a37b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga0c5ea02b55616974c43d3d7cd3b8a37b">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__ScePowerKernel.html#ga87add7efd8177f03fecc6fdf9233c57a">ScePowerCallbackType</a>)</td></tr>
 <tr class="separator:ga0c5ea02b55616974c43d3d7cd3b8a37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e788a12f8b9557b969255b7c0e51fee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga0e788a12f8b9557b969255b7c0e51fee">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__ScePowerKernel.html#ga339312c75374dcea46008fedf6a12573">ScePowerConfigurationMode</a>)</td></tr>
+<tr class="memitem:ga0e788a12f8b9557b969255b7c0e51fee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePowerKernel.html#ga0e788a12f8b9557b969255b7c0e51fee">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__ScePowerKernel.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce">ScePowerConfigurationMode</a>)</td></tr>
 <tr class="separator:ga0e788a12f8b9557b969255b7c0e51fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

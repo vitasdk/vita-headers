@@ -13,17 +13,17 @@ var ommon_2kernel_2modulemgr_8h =
       [ "SCE_KERNEL_MODULE_STATE_STARTED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a9c8e9bfacd82627ae1015cbf004e5926", null ],
       [ "SCE_KERNEL_MODULE_STATE_ENDED", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0af167ea41eb07f347d658eab72949f4a2", null ]
     ] ],
-    [ "SceKernelPreloadInhibit", "group__SceModulemgrKernel.html#gaa9c6c76b15d2932e6ab6798c387e3024", [
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_NONE", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a6d3fe3a2f6994bd75c9e9edf1a1d4361", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBC", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a7b84dcf1d0e55648ba4f5e5883ad9abd", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBDBG", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a9fbb1d9bbfe58cb02294f922f3c06342", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBSHELLSVC", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a6134f6fac7c7121f0c7e07c191bb7545", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBCDLG", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024ad68639e105256f76306a2f8adb43747a", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBFIOS2", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a8c1042943f108398ad63f01c15e81adf", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_APPUTIL", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a251287a02f7c6b4ba823d596819c1566", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBSCEFT2", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024aa16906a186ad19fdeb56bbee3a983371", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024abfb1160f83af68e46c1b9b7268cd0890", null ],
-      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF", "group__SceModulemgrKernel.html#ggaa9c6c76b15d2932e6ab6798c387e3024a16133dc47733579d2bb86f1a115f4744", null ]
+    [ "SceKernelPreloadInhibit", "group__SceModulemgrKernel.html#gafb1efc97b0bee8a9bb7179e0bfa05d3d", [
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_NONE", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da6d3fe3a2f6994bd75c9e9edf1a1d4361", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBC", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da7b84dcf1d0e55648ba4f5e5883ad9abd", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBDBG", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da9fbb1d9bbfe58cb02294f922f3c06342", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBSHELLSVC", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da6134f6fac7c7121f0c7e07c191bb7545", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBCDLG", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3dad68639e105256f76306a2f8adb43747a", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBFIOS2", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da8c1042943f108398ad63f01c15e81adf", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_APPUTIL", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da251287a02f7c6b4ba823d596819c1566", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBSCEFT2", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3daa16906a186ad19fdeb56bbee3a983371", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3dabfb1160f83af68e46c1b9b7268cd0890", null ],
+      [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da16133dc47733579d2bb86f1a115f4744", null ]
     ] ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga8b04aaef9772687afa9efb3d8379999f", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga576fee6ecde265285fce2964eab63f69", null ],
