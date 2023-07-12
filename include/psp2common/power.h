@@ -13,17 +13,17 @@
 extern "C" {
 #endif
 
-typedef enum ScePowerErrorCode : SceInt32 {
-	SCE_POWER_ERROR_INVALID_VALUE           = (SceInt32)0x802B0000,
-	SCE_POWER_ERROR_ALREADY_REGISTERED      = (SceInt32)0x802B0001,
-	SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED = (SceInt32)0x802B0002,
-	SCE_POWER_ERROR_CANT_SUSPEND            = (SceInt32)0x802B0003,
-	SCE_POWER_ERROR_NO_BATTERY              = (SceInt32)0x802B0100,
-	SCE_POWER_ERROR_DETECTING               = (SceInt32)0x802B0101
+typedef enum ScePowerErrorCode {
+	SCE_POWER_ERROR_INVALID_VALUE           = 0x802B0000,
+	SCE_POWER_ERROR_ALREADY_REGISTERED      = 0x802B0001,
+	SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED = 0x802B0002,
+	SCE_POWER_ERROR_CANT_SUSPEND            = 0x802B0003,
+	SCE_POWER_ERROR_NO_BATTERY              = 0x802B0100,
+	SCE_POWER_ERROR_DETECTING               = 0x802B0101
 } ScePowerErrorCode;
 VITASDK_BUILD_ASSERT_EQ(4, ScePowerErrorCode);
 
-typedef enum ScePowerCallbackType : SceUInt32 {
+typedef enum ScePowerCallbackType {
 	SCE_POWER_CB_AFTER_SYSTEM_RESUME   = 0x00000080, /* TODO: confirm */
 	SCE_POWER_CB_BATTERY_ONLINE        = 0x00000100,
 	SCE_POWER_CB_THERMAL_SUSPEND       = 0x00000200, /* TODO: confirm */
@@ -50,10 +50,11 @@ typedef enum ScePowerCallbackType : SceUInt32 {
 VITASDK_BUILD_ASSERT_EQ(4, ScePowerCallbackType);
 
 /* GPU, WLAN/COM configuration setting */
-typedef enum ScePowerConfigurationMode : SceInt32 {
-	SCE_POWER_CONFIGURATION_MODE_A   = 0x00000080U, /* GPU clock normal, WLAN/COM enabled */
-	SCE_POWER_CONFIGURATION_MODE_B   = 0x00000800U, /* GPU clock high, WLAN/COM disabled */
-	SCE_POWER_CONFIGURATION_MODE_C   = 0x00010880U, /* GPU clock high, WLAN/COM enabled (drains battery faster) */
+typedef enum ScePowerConfigurationMode {
+	SCE_POWER_CONFIGURATION_MODE_A = 0x00000080U, /* GPU clock normal, WLAN/COM enabled */
+	SCE_POWER_CONFIGURATION_MODE_B = 0x00000800U, /* GPU clock high, WLAN/COM disabled */
+	SCE_POWER_CONFIGURATION_MODE_C = 0x00010880U, /* GPU clock high, WLAN/COM enabled (drains battery faster) */
+	__SCE_POWER_CONFIGURATION_MODE = 0xFFFFFFFF
 } ScePowerConfigurationMode;
 VITASDK_BUILD_ASSERT_EQ(4, ScePowerConfigurationMode);
 

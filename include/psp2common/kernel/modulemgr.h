@@ -47,7 +47,7 @@ typedef enum SceKernelModuleState {
  * WARNING
  * If SceLibNet etc. is loaded without SceShellSvc etc. loaded, an unintended system crash will occur.
  */
-typedef enum SceKernelPreloadInhibit : SceUInt32 {
+typedef enum SceKernelPreloadInhibit {
 	SCE_KERNEL_PRELOAD_INHIBIT_NONE        = 0x00000000,
 	SCE_KERNEL_PRELOAD_INHIBIT_LIBC        = 0x10000,
 	SCE_KERNEL_PRELOAD_INHIBIT_LIBDBG      = 0x20000,
