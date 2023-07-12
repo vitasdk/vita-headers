@@ -55,50 +55,56 @@ typedef SceUInt32 SceLocationHandle;
 VITASDK_BUILD_ASSERT_EQ(4, SceLocationHandle);
 
 /** Usage permission dialog display status */
-typedef enum SceLocationDialogStatus : int {
+typedef enum SceLocationDialogStatus {
 	SCE_LOCATION_DIALOG_STATUS_IDLE     = 0, //!< Dialog initial idle status
 	SCE_LOCATION_DIALOG_STATUS_RUNNING  = 1, //!< Dialog running
-	SCE_LOCATION_DIALOG_STATUS_FINISHED = 2  //!< Dialog operation finished
+	SCE_LOCATION_DIALOG_STATUS_FINISHED = 2, //!< Dialog operation finished
+	__SCE_LOCATION_DIALOG_STATUS = 0xFFFFFFFF
 } SceLocationDialogStatus;
 
 /** Usage permission dialog result */
-typedef enum SceLocationDialogResult : SceInt32 {
+typedef enum SceLocationDialogResult {
 	SCE_LOCATION_DIALOG_RESULT_NONE    = 0, //!< Result is not stored
 	SCE_LOCATION_DIALOG_RESULT_DISABLE = 1, //!< Negative result is stored
-	SCE_LOCATION_DIALOG_RESULT_ENABLE  = 2  //!< Positive result is stored
+	SCE_LOCATION_DIALOG_RESULT_ENABLE  = 2, //!< Positive result is stored
+	__SCE_LOCATION_DIALOG_RESULT = 0xFFFFFFFF
 } SceLocationDialogResult;
 
 /** location usage permission status for individual application */
-typedef enum SceLocationPermissionApplicationStatus : SceInt32 {
+typedef enum SceLocationPermissionApplicationStatus {
 	SCE_LOCATION_PERMISSION_APPLICATION_NONE  = 0, //!< liblocation not used
 	SCE_LOCATION_PERMISSION_APPLICATION_INIT  = 1, //!< liblocation not accessed
 	SCE_LOCATION_PERMISSION_APPLICATION_DENY  = 2, //!< liblocation access denied status
-	SCE_LOCATION_PERMISSION_APPLICATION_ALLOW = 3  //!< liblocation access allowed status
+	SCE_LOCATION_PERMISSION_APPLICATION_ALLOW = 3, //!< liblocation access allowed status
+	__SCE_LOCATION_PERMISSION_APPLICATION = 0xFFFFFFFF
 } SceLocationPermissionApplicationStatus;
 
 /** location usage permission status */
-typedef enum SceLocationPermissionStatus : SceInt32 {
+typedef enum SceLocationPermissionStatus {
 	SCE_LOCATION_PERMISSION_DENY  = 0, //!< liblocation access denied status
-	SCE_LOCATION_PERMISSION_ALLOW = 1  //!< liblocation access allowed status
+	SCE_LOCATION_PERMISSION_ALLOW = 1, //!< liblocation access allowed status
+	__SCE_LOCATION_PERMISSION = 0xFFFFFFFF
 } SceLocationPermissionStatus;
 
 /** Location measurement method */
-typedef enum SceLocationLocationMethod : SceInt32 {
+typedef enum SceLocationLocationMethod {
 	SCE_LOCATION_LMETHOD_NONE                 = 0,  //!< Do not perform location measurement
 	SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI = 1,  //!< Perform measurement by switching between AGPS, Wi-Fi, and 3G
 	SCE_LOCATION_LMETHOD_GPS_AND_WIFI         = 2,  //!< Perform measurement by switching between GPS and Wi-Fi
 	SCE_LOCATION_LMETHOD_WIFI                 = 3,  //!< Use only Wi-Fi
 	SCE_LOCATION_LMETHOD_3G                   = 4,  //!< Use only 3G
-	SCE_LOCATION_LMETHOD_GPS                  = 5   //!< Use only GPS
+	SCE_LOCATION_LMETHOD_GPS                  = 5,  //!< Use only GPS
+	__SCE_LOCATION_LMETHOD = 0xFFFFFFFF
 } SceLocationLocationMethod;
 
 /** Direction measurement method */
-typedef enum SceLocationHeadingMethod : SceInt32 {
+typedef enum SceLocationHeadingMethod {
 	SCE_LOCATION_HMETHOD_NONE       = 0,    //!< Don't perform heading measurement
 	SCE_LOCATION_HMETHOD_AUTO       = 1,    //!< Automatically determine hold orientation and outputs its value
 	SCE_LOCATION_HMETHOD_VERTICAL   = 2,    //!< Output value in vertical hold reference system
 	SCE_LOCATION_HMETHOD_HORIZONTAL = 3,    //!< Output value in horizontal hold reference system
-	SCE_LOCATION_HMETHOD_CAMERA     = 4     //!< Output value in camera axis reference system
+	SCE_LOCATION_HMETHOD_CAMERA     = 4,    //!< Output value in camera axis reference system
+	__SCE_LOCATION_HMETHOD = 0xFFFFFFFF
 } SceLocationHeadingMethod;
 
 /** Structure of location information */
