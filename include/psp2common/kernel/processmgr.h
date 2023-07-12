@@ -19,21 +19,23 @@ typedef SceUInt32 SceKernelProcessType;
 typedef SceUInt64 SceKernelClock;
 typedef SceUInt32 SceKernelTime; 
 
-typedef enum SceKernelProcessPrioritySystem : SceInt32 {
+typedef enum SceKernelProcessPrioritySystem {
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_HIGH     = 32,
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_DEFAULT  = 96,
-	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_LOW      = 159
+	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_LOW      = 159,
+	__SCE_KERNEL_PROCESS_PRIORITY_SYSTEM = 0xFFFFFFFF
 } SceKernelProcessPrioritySystem;
 VITASDK_BUILD_ASSERT_EQ(4, SceKernelProcessPrioritySystem);
 
-typedef enum SceKernelProcessPriorityUser : SceInt32 {
+typedef enum SceKernelProcessPriorityUser {
 	SCE_KERNEL_PROCESS_PRIORITY_USER_HIGH       = 64,
 	SCE_KERNEL_PROCESS_PRIORITY_USER_DEFAULT    = 96,
-	SCE_KERNEL_PROCESS_PRIORITY_USER_LOW        = 127
+	SCE_KERNEL_PROCESS_PRIORITY_USER_LOW        = 127,
+	__SCE_KERNEL_PROCESS_PRIORITY_USER = 0xFFFFFFFF
 } SceKernelProcessPriorityUser;
 VITASDK_BUILD_ASSERT_EQ(4, SceKernelProcessPriorityUser);
 
-typedef enum SceKernelPowerTickType : SceInt32 {
+typedef enum SceKernelPowerTickType {
 	/** Cancel all timers */
 	SCE_KERNEL_POWER_TICK_DEFAULT			= 0,
 	/** Cancel automatic suspension timer */
@@ -41,7 +43,8 @@ typedef enum SceKernelPowerTickType : SceInt32 {
 	/** Cancel OLED-off timer */
 	SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF		= 4,
 	/** Cancel OLED dimming timer */
-	SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING	= 6
+	SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING	= 6,
+	__SCE_KERNEL_POWER_TICK_DISABLE = 0xFFFFFFFF
 } SceKernelPowerTickType;
 VITASDK_BUILD_ASSERT_EQ(4, SceKernelPowerTickType);
 
