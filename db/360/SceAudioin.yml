@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceAudioIn:
+  SceAudioin:
     nid: 0x3DFB6F18
     libraries:
       SceAudioIn:
+        stubname: SceAudioIn
         kernel: false
         nid: 0xF8DC61A3
         functions:

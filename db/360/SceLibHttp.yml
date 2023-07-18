@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceHttp:
+  SceLibHttp:
     nid: 0xB015B405
     libraries:
       SceHttp:
+        stubname: SceHttp
         kernel: false
         nid: 0xE8F15CDE
         functions:
