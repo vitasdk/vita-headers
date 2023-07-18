@@ -73,3 +73,9 @@ jobs:
         cd build
         cmake ..
         make -j$(nproc)
+    - name: Upload artifacts
+      if: ${{ success() }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: vitasdk-db-stubs
+        path: vitasdk-db-stubs.tar.bz2
