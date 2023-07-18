@@ -45,6 +45,15 @@ jobs:
         vdpm soloud
         vdpm zlib
         vdpm taihen
+    - name: DB Stub test
+      run: |
+        export VITASDK=$PWD/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        vita-libs-gen-2 -yml=./db -output=./stubs
+        cd ./stubs
+        make -j$(nproc)
+        cd ..
+        tar "cfvj" "vitasdk-db-stubs.tar.bz2" "./stubs"
     - name: Header sanitize checks
       run: |
         export VITASDK=$PWD/vitasdk
@@ -53,7 +62,7 @@ jobs:
         mkdir build
         cd build
         cmake ..
-        make
+        make -j$(nproc)
     - name: Sample build test
       run: |
         export VITASDK=$PWD/vitasdk
