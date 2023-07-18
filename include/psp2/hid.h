@@ -28,7 +28,9 @@ typedef struct SceHidMouseReport {
 	SceUInt8 reserved;
 	SceInt16 rel_x;
 	SceInt16 rel_y;
-	SceInt8 unk[10];
+	SceInt8 wheel;
+	SceInt8 tilt;
+	SceUInt64 timestamp; // microseconds
 } SceHidMouseReport;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceHidMouseReport);
 
