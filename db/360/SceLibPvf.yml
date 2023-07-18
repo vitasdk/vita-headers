@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  ScePvf:
+  SceLibPvf:
     nid: 0x820F86E8
     libraries:
       ScePvf:
+        stubname: ScePvf
         kernel: false
         nid: 0x68D59260
         functions:

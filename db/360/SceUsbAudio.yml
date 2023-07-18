@@ -1,7 +1,7 @@
 version: 2
 firmware: 3.60
 modules:
-  SceUsbAudioIn:
+  SceUsbAudio:
     nid: 0x3525FE7A
     libraries:
       SceUsbAudioForDriver:
@@ -14,6 +14,7 @@ modules:
           ksceUsbAudioRegisterCallback: 0x974DBE03
           ksceUsbAudioUnregisterCallback: 0x23A07D29
       SceUsbAudioIn:
+        stubname: SceUsbAudioIn
         kernel: false
         nid: 0x53AD0094
         functions:

@@ -48,6 +48,13 @@ endif()
 math(EXPR __vitasdk_expires_wrong_libs_module_name "20240101 + 2 * 100")
 
 if(${__vitasdk_current_time} LESS ${__vitasdk_expires_wrong_libs_module_name})
+endif()
+
+if(Off)
+  # Planned
+
+  # Done with nothing
+  # __vitasdk_expires_wrong_libs_module_name on 2023/07/19
   message("#")
   message("# The following library link will be obsolete on 2024/01/01")
   message("#")
@@ -82,10 +89,7 @@ if(${__vitasdk_current_time} LESS ${__vitasdk_expires_wrong_libs_module_name})
   message("- SceAudioIn library with SceAudioIn_stub")
   message("Alternative: link SceAudioin_stub instead.")
   message("")
-endif()
 
-if(Off)
-  # Planned
   message("#")
   message("# The following library link will be obsolete on ----/--/--")
   message("#")

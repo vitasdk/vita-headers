@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceLocation:
+  SceLibLocation:
     nid: 0x00000059
     libraries:
       SceLibLocation:
+        stubname: SceLocation
         kernel: false
         nid: 0x924D86D7
         functions:

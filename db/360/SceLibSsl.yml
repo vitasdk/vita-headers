@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceSsl:
+  SceLibSsl:
     nid: 0x9CD6CA85
     libraries:
       SceSsl:
+        stubname: SceSsl
         kernel: false
         nid: 0xCAF5F2E9
         functions:
@@ -20,6 +21,7 @@ modules:
           sceSslInit: 0x3C733316
           sceSslTerm: 0x03CE6E3A
       SceSslInternal:
+        stubname: SceSsl
         kernel: false
         nid: 0x68D6C3FF
         functions:

@@ -58,14 +58,15 @@ if __name__ == '__main__':
         #     if definition_ordering(yml):
         #         raise SystemExit(2)
 
-    for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
-        dirs, fn = (os.path.split(yml))
-        _, ver = os.path.split(dirs)
-        build_target = os.path.join(outdir, ver, fn)
-        if os.path.exists(build_target):
-            shutil.rmtree(build_target)
-        os.makedirs(build_target)
-        vita_libs_gen(yml, build_target)
-        make(build_target)
-        if not os.environ.get('BYPASS_INSTALL'):
-            make_install(build_target)
+    if not os.environ.get('BYPASS_VITA_LIBS_GEN'):
+        for yml in glob.glob(os.path.join(CURR_DIR, 'db', '**', '*.yml')):
+            dirs, fn = (os.path.split(yml))
+            _, ver = os.path.split(dirs)
+            build_target = os.path.join(outdir, ver, fn)
+            if os.path.exists(build_target):
+                shutil.rmtree(build_target)
+            os.makedirs(build_target)
+            vita_libs_gen(yml, build_target)
+            make(build_target)
+            if not os.environ.get('BYPASS_INSTALL'):
+                make_install(build_target)
