@@ -53,7 +53,8 @@ jobs:
         cd ./stubs
         make -j$(nproc)
         cd ..
-        tar "cfvj" "vitasdk-db-stubs.tar.bz2" "./stubs"
+        rm stubs/makefile
+        tar "cfvj" "vitasdk-db-stubs.tar.bz2" "stubs"
     - name: Header sanitize checks
       run: |
         export VITASDK=$PWD/vitasdk
