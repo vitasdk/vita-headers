@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceNetCtl:
+  SceLibNetCtl:
     nid: 0xFA4A5948
     libraries:
       SceNetCtl:
+        stubname: SceNetCtl
         kernel: false
         nid: 0xC6083AE1
         functions:

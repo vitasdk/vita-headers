@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceDTrace:
+  SceDeci4pDtracep:
     nid: 0x00000023
     libraries:
       SceDTrace:
+        stubname: SceDTrace
         kernel: false
         nid: 0x69699F30
         functions:

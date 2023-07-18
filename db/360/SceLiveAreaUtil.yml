@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceLiveArea:
+  SceLiveAreaUtil:
     nid: 0x6D180EF6
     libraries:
       SceLiveAreaUtil:
+        stubname: SceLiveArea
         kernel: false
         nid: 0x5303CB07
         functions:

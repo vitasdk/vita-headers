@@ -38,7 +38,7 @@ jobs:
         cd $TRAVIS_BUILD_DIR
         cp -r include/* $VITASDK/arm-vita-eabi/include
         # header define check
-        USE_LINT=1 python3 build.py output
+        BYPASS_VITA_LIBS_GEN=1 USE_LINT=1 python3 build.py output
         vdpm SDL2
         vdpm curl
         vdpm openssl
@@ -51,7 +51,7 @@ jobs:
         export PATH=$VITASDK/bin:$PATH
         vita-libs-gen-2 -yml=./db -output=./stubs
         cd ./stubs
-        make -j$(nproc)
+        make -j$(nproc) install
         cd ..
         rm stubs/makefile
         tar "cfvj" "vitasdk-db-stubs.tar.bz2" "stubs"

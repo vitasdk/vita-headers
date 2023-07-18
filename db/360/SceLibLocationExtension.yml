@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceLocationExtension:
+  SceLibLocationExtension:
     nid: 0x0000005B
     libraries:
       SceLibLocationExtension:
+        stubname: SceLocationExtension
         kernel: false
         nid: 0x2ECC3C56
         functions:

@@ -1,10 +1,11 @@
 version: 2
 firmware: 3.60
 modules:
-  SceFios2:
+  SceLibFios2:
     nid: 0x00000032
     libraries:
       SceFios2:
+        stubname: SceFios2
         kernel: false
         nid: 0x3AD4D630
         functions:
@@ -176,17 +177,3 @@ modules:
           sceFiosTimeIntervalToNanoseconds: 0x397BF626
           sceFiosUpdateParameters: 0x1915052A
           sceFiosVprintf: 0x5BA4BD6D
-      SceFios2User:
-        kernel: false
-        nid: 0xC2ED82D7
-        functions:
-          sceFiosOverlayAddForProcess02: 0x6C4BE9CD
-          sceFiosOverlayGetInfoForProcess02: 0xAB7B4213
-          sceFiosOverlayGetList02: 0x1DD808D1
-          sceFiosOverlayGetRecommendedScheduler02: 0xF5C1F928
-          sceFiosOverlayModifyForProcess02: 0xCA388053
-          sceFiosOverlayRemoveForProcess02: 0xE5D1B6F5
-          sceFiosOverlayResolveSync02: 0x9C3AAAF0
-          sceFiosOverlayResolveWithRangeSync02: 0x61C4AAC4
-          sceFiosOverlayThreadIsDisabled02: 0x23B8DB1D
-          sceFiosOverlayThreadSetDisabled02: 0x70321220
