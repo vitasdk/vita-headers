@@ -230,6 +230,12 @@ int sceAppUtilPhotoMount();
 //! Unmount photo data
 int sceAppUtilPhotoUmount();
 
+//! Mount cache data
+int sceAppUtilCacheMount();
+
+//! Unmount cache data
+int sceAppUtilCacheUmount();
+
 //! Get system parameters for int type
 int sceAppUtilSystemParamGetInt(unsigned int paramId, int *value);
 
