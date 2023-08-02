@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"group__SceAtracUser.html#ga41accfcfbcd5a3976eab1c967bc70609":[1,2,0,0,49],
+"group__SceAtracUser.html#ga41accfcfbcd5a3976eab1c967bc70609":[4,0,1,0,7,17],
+"group__SceAtracUser.html#ga42f0e777f247b21fb2c41e6635d04fdf":[1,2,0,0,62],
+"group__SceAtracUser.html#ga42f0e777f247b21fb2c41e6635d04fdf":[4,0,1,0,7,30],
 "group__SceAtracUser.html#ga447197a1dc841a78521786c04e31896d":[1,2,0,0,7],
 "group__SceAtracUser.html#ga447197a1dc841a78521786c04e31896d":[4,0,1,0,7,7],
 "group__SceAtracUser.html#ga474266047e52dd5731d42d526b8d0bfe":[1,2,0,0,69],
@@ -218,8 +222,8 @@ var NAVTREEINDEX3 =
 "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f":[4,0,1,0,10,2,1],
 "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f":[1,2,4,0,2,1],
 "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f":[1,2,4,0,18],
-"group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b":[4,0,1,0,10,2,0],
 "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b":[1,2,4,0,2,0],
+"group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b":[4,0,1,0,10,2,0],
 "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b":[1,2,4,0,17],
 "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49":[4,0,1,0,10,1,1],
 "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49":[1,2,4,0,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114":[1,2,1,0,41],
 "group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114":[4,0,1,0,11,13],
 "group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da":[1,2,1,0,2],
-"group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da":[4,0,1,0,11,2],
-"group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c":[1,2,1,0,0],
-"group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c":[4,0,1,0,11,0],
-"group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00":[1,2,1,0,42],
-"group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00":[4,0,1,0,11,14]
+"group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da":[4,0,1,0,11,2]
 };

@@ -83,6 +83,8 @@ var group__SceAppUtilUser =
     [ "sceAppUtilMusicUmount", "group__SceAppUtilUser.html#gaea4d86491081ce432ff6450a734a0dc3", null ],
     [ "sceAppUtilPhotoMount", "group__SceAppUtilUser.html#ga572884685f0fdf9210f16e5196b09055", null ],
     [ "sceAppUtilPhotoUmount", "group__SceAppUtilUser.html#ga36b0006801074e289d92fdc763fa97c0", null ],
+    [ "sceAppUtilCacheMount", "group__SceAppUtilUser.html#ga8e712861be29b31c19fb8319cbdaaa6f", null ],
+    [ "sceAppUtilCacheUmount", "group__SceAppUtilUser.html#ga010f93fd214725d4f00927c581141b1e", null ],
     [ "sceAppUtilSystemParamGetInt", "group__SceAppUtilUser.html#gad771013108eeb704f77e1441c38142f3", null ],
     [ "sceAppUtilSystemParamGetString", "group__SceAppUtilUser.html#gaf05b420df9d1607f70477c55a4bd70e9", null ],
     [ "sceAppUtilAppParamGetInt", "group__SceAppUtilUser.html#ga11d6c9aed6fc3d55e38d35acfdc903b3", null ],
