@@ -8,37 +8,12 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-
-/** Additional options used when creating condition variables. */
-typedef struct SceKernelCondOptParam {
-	/** Size of the ::SceKernelCondOptParam structure. */
-	SceSize 	size;
-} SceKernelCondOptParam;
-VITASDK_BUILD_ASSERT_EQ(4, SceKernelCondOptParam);
-
-/** Current state of a condition variable.
- * @see sceKernelGetCondInfo.
- */
-typedef struct SceKernelCondInfo {
-	/** Size of the ::SceKernelCondInfo structure. */
-	SceSize         size;
-	/** The UID of the condition variable. */
-	SceUID          condId;
-	/** NUL-terminated name of the condition variable. */
-	char            name[32];
-	/** Attributes. */
-	SceUInt         attr;
-	/** Mutex associated with the condition variable. */
-	SceUID          mutexId;
-	/** The number of threads waiting on the condition variable. */
-	int             numWaitThreads;
-} SceKernelCondInfo;
-VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelCondInfo);
 
 /**
  * Creates a new condition variable
