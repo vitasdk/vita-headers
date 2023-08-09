@@ -1,4 +1,4 @@
 var group__SceNetUser_structSceNetEtherAddr =
 [
-    [ "data", "group__SceNetUser.html#gaa363ba563eb5ba9c87a5589d217844e1", null ]
+    [ "data", "group__SceNetUser.html#ga0aafc3f4ff120bfe1f4b665f35be1869", null ]
 ];

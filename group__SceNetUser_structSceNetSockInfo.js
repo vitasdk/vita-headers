@@ -1,6 +1,6 @@
 var group__SceNetUser_structSceNetSockInfo =
 [
-    [ "name", "group__SceNetUser.html#ga69363e469b9b261c85ce8c7255f04a39", null ],
+    [ "name", "group__SceNetUser.html#gaf9c8b5b9f1a609a43067c71f65332ade", null ],
     [ "pid", "group__SceNetUser.html#ga6cafa2ca0c46ee9cd5bcd17402bd2dc3", null ],
     [ "s", "group__SceNetUser.html#gaf234709f9de8cedfed64b1363518c37a", null ],
     [ "socket_type", "group__SceNetUser.html#ga9cc30231c28207c8debf5b7cbe9b8e11", null ],
@@ -16,5 +16,5 @@ var group__SceNetUser_structSceNetSockInfo =
     [ "remote_vport", "group__SceNetUser.html#gad2d5052837518f0fbc451822865c7c55", null ],
     [ "state", "group__SceNetUser.html#gad3b748906c58e74c4d929adb66669451", null ],
     [ "flags", "group__SceNetUser.html#ga30931886611d80b8dce35a3a38b29a43", null ],
-    [ "reserved", "group__SceNetUser.html#ga9242d9ae96b4ded37f207fd3d1c540d1", null ]
+    [ "reserved", "group__SceNetUser.html#ga6608de13c79245b191c1a0ddbbc14138", null ]
 ];

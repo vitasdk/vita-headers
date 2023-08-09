@@ -122,9 +122,9 @@ var NAVTREEINDEX37 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a215301f91d0e590915974f41026fe468":[1,7,5,0,0,303],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a215301f91d0e590915974f41026fe468":[1,7,5,0,304],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a215301f91d0e590915974f41026fe468":[4,0,1,0,2,4,0,303],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a21912dbed85e49961a8648fac87f1c4b":[1,7,5,0,0,33],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a21912dbed85e49961a8648fac87f1c4b":[1,7,5,0,34],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a21912dbed85e49961a8648fac87f1c4b":[4,0,1,0,2,4,0,33],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a21912dbed85e49961a8648fac87f1c4b":[1,7,5,0,0,33],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a219b1414f4f95ea39096d57a865cd706":[1,7,5,0,0,228],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a219b1414f4f95ea39096d57a865cd706":[1,7,5,0,229],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a219b1414f4f95ea39096d57a865cd706":[4,0,1,0,2,4,0,228],
@@ -246,8 +246,8 @@ var NAVTREEINDEX37 =
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a426fde94250e2013cc5d22bfc1839996":[1,7,5,0,252],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a426fde94250e2013cc5d22bfc1839996":[4,0,1,0,2,4,0,251],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a42ca5607e7bcf493eb9c2e4b2bff7657":[1,7,5,0,0,162],
-"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a42ca5607e7bcf493eb9c2e4b2bff7657":[1,7,5,0,163],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a42ca5607e7bcf493eb9c2e4b2bff7657":[4,0,1,0,2,4,0,162],
+"group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a42ca5607e7bcf493eb9c2e4b2bff7657":[1,7,5,0,163],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4307acc1ff6b98b1e575ea848040c2e1":[1,7,5,0,0,202],
 "group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4307acc1ff6b98b1e575ea848040c2e1":[1,7,5,0,203]
 };
