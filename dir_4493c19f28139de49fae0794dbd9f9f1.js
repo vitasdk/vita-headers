@@ -11,5 +11,6 @@ var dir_4493c19f28139de49fae0794dbd9f9f1 =
     [ "power.h", "psp2common_2power_8h.html", "psp2common_2power_8h" ],
     [ "types.h", "psp2common_2types_8h.html", "psp2common_2types_8h" ],
     [ "udcd.h", "psp2common_2udcd_8h.html", "psp2common_2udcd_8h" ],
-    [ "usbd.h", "psp2common_2usbd_8h.html", "psp2common_2usbd_8h" ]
+    [ "usbd.h", "psp2common_2usbd_8h.html", "psp2common_2usbd_8h" ],
+    [ "usbserv.h", "psp2common_2usbserv_8h.html", "psp2common_2usbserv_8h" ]
 ];

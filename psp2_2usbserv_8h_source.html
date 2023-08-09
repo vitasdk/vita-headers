@@ -80,34 +80,24 @@ $(document).ready(function(){initNavTree('psp2_2usbserv_8h_source.html',''); ini
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef _PSP2_USBSERV_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define _PSP2_USBSERV_H_</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="group__SceUsbServUser.html#gafc83aa9a7e6c8de7275274a0014f5c8f">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="group__SceUsbServUser.html#gafc83aa9a7e6c8de7275274a0014f5c8f">SceUsbservErrorCode</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee">   14</a></span>&#160;    <a class="code" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee">SCE_USBSERV_ERROR_UNAVAILABLE</a>    = 0x80248002,</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa3dd73db68761ee0ee0cd3e0d6a3145fc">   15</a></span>&#160;    <a class="code" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa3dd73db68761ee0ee0cd3e0d6a3145fc">SCE_USBSERV_ERROR_INVALID_PARAM</a>  = 0x80248003,</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa287ac8a5ff2f55d1c865f170cf158991">   16</a></span>&#160;    <a class="code" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa287ac8a5ff2f55d1c865f170cf158991">SCE_USBSERV_ERROR_NOT_SUPPORTED</a>  = 0x80248004,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4">SCE_USBSERV_ERROR_FATAL</a>          = 0x802480FF</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4">   19</a></span>&#160;} <a class="code" href="group__SceUsbServUser.html#gafc83aa9a7e6c8de7275274a0014f5c8f">SceUsbservErrorCode</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group__SceUsbServUser.html#gace49bd464277268382e8e01476a1a47e">   27</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceUsbServUser.html#gace49bd464277268382e8e01476a1a47e">sceUsbServAccessoryActivate</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44">   35</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44">sceUsbServAccessoryDeactivate</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_USBSERV_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="agroup__SceUsbServKernel_html_ggafc83aa9a7e6c8de7275274a0014f5c8fa287ac8a5ff2f55d1c865f170cf158991"><div class="ttname"><a href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa287ac8a5ff2f55d1c865f170cf158991">SCE_USBSERV_ERROR_NOT_SUPPORTED</a></div><div class="ttdeci">@ SCE_USBSERV_ERROR_NOT_SUPPORTED</div><div class="ttdef"><b>Definition:</b> usbserv.h:16</div></div>
-<div class="ttc" id="agroup__SceUsbServKernel_html_ggafc83aa9a7e6c8de7275274a0014f5c8fa3dd73db68761ee0ee0cd3e0d6a3145fc"><div class="ttname"><a href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa3dd73db68761ee0ee0cd3e0d6a3145fc">SCE_USBSERV_ERROR_INVALID_PARAM</a></div><div class="ttdeci">@ SCE_USBSERV_ERROR_INVALID_PARAM</div><div class="ttdef"><b>Definition:</b> usbserv.h:15</div></div>
-<div class="ttc" id="agroup__SceUsbServKernel_html_ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee"><div class="ttname"><a href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee">SCE_USBSERV_ERROR_UNAVAILABLE</a></div><div class="ttdeci">@ SCE_USBSERV_ERROR_UNAVAILABLE</div><div class="ttdef"><b>Definition:</b> usbserv.h:14</div></div>
-<div class="ttc" id="agroup__SceUsbServKernel_html_ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4"><div class="ttname"><a href="group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4">SCE_USBSERV_ERROR_FATAL</a></div><div class="ttdeci">@ SCE_USBSERV_ERROR_FATAL</div><div class="ttdef"><b>Definition:</b> usbserv.h:18</div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="psp2common_2usbserv_8h.html">psp2common/usbserv.h</a>&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group__SceUsbServUser.html#gace49bd464277268382e8e01476a1a47e">   21</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceUsbServUser.html#gace49bd464277268382e8e01476a1a47e">sceUsbServAccessoryActivate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44">   29</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44">sceUsbServAccessoryDeactivate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2_USBSERV_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="agroup__SceUsbServUser_html_ga024c25addc384e8671e5a5fe0cd7de44"><div class="ttname"><a href="group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44">sceUsbServAccessoryDeactivate</a></div><div class="ttdeci">int sceUsbServAccessoryDeactivate(void)</div><div class="ttdoc">Disable accessory port.</div></div>
 <div class="ttc" id="agroup__SceUsbServUser_html_gace49bd464277268382e8e01476a1a47e"><div class="ttname"><a href="group__SceUsbServUser.html#gace49bd464277268382e8e01476a1a47e">sceUsbServAccessoryActivate</a></div><div class="ttdeci">int sceUsbServAccessoryActivate(void)</div><div class="ttdoc">Enable accessory port.</div></div>
-<div class="ttc" id="agroup__SceUsbServUser_html_gafc83aa9a7e6c8de7275274a0014f5c8f"><div class="ttname"><a href="group__SceUsbServUser.html#gafc83aa9a7e6c8de7275274a0014f5c8f">SceUsbservErrorCode</a></div><div class="ttdeci">SceUsbservErrorCode</div><div class="ttdef"><b>Definition:</b> usbserv.h:13</div></div>
+<div class="ttc" id="apsp2common_2usbserv_8h_html"><div class="ttname"><a href="psp2common_2usbserv_8h.html">usbserv.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
