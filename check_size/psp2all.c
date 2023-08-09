@@ -34,8 +34,8 @@
 #include <psp2/udcd.h>
 #include <psp2kern/udcd.h>
 
-// #include <psp2/usbd.h>
-// #include <psp2kern/usbd.h>
+#include <psp2/usbd.h>
+#include <psp2kern/usbd.h>
 
 __attribute__ ((used)) const unsigned int version = PSP2_SDK_VERSION;
 
