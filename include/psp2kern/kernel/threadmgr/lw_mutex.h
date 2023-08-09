@@ -31,11 +31,6 @@ VITASDK_BUILD_ASSERT_EQ(0x40, SceKernelLwMutexInfo);
 
 int ksceKernelGetLwMutexInfo(SceUID lwmtxid, SceKernelLwMutexInfo *info);
 
-int ksceKernelInitializeFastMutex(void *mutex, const char *name, int unk0, int unk1);
-int ksceKernelLockFastMutex(void *mutex);
-int ksceKernelUnlockFastMutex(void *mutex);
-int ksceKernelDeleteFastMutex(void *mutex);
-
 
 #ifdef __cplusplus
 }
