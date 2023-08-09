@@ -8,46 +8,12 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-
-typedef struct SceKernelEventFlagOptParam {
-	SceSize         size;
-} SceKernelEventFlagOptParam;
-VITASDK_BUILD_ASSERT_EQ(4, SceKernelEventFlagOptParam);
-
-/** Structure to hold the event flag information */
-typedef struct SceKernelEventFlagInfo {
-	SceSize   size;
-	SceUID          evfId; // Needs confirmation
-	char    name[32];
-	SceUInt   attr;
-	SceUInt   initPattern;
-	SceUInt   currentPattern;
-	int     numWaitThreads;
-} SceKernelEventFlagInfo;
-VITASDK_BUILD_ASSERT_EQ(0x38, SceKernelEventFlagInfo);
-
-/** Event flag creation attributes */
-typedef enum SceEventFlagAttributes {
-	/** Allow the event flag to be waited upon by multiple threads */
-	SCE_EVENT_WAITMULTIPLE = 0x1000
-} SceEventFlagAttributes;
-
-/** Event flag wait types */
-typedef enum SceEventFlagWaitTypes {
-	/** Wait for all bits in the pattern to be set */
-	SCE_EVENT_WAITAND = 0,
-	/** Wait for one or more bits in the pattern to be set */
-	SCE_EVENT_WAITOR  = 1,
-	/** Clear all the bits when it matches */
-	SCE_EVENT_WAITCLEAR = 2,
-	/** Clear the wait pattern when it matches */
-	SCE_EVENT_WAITCLEAR_PAT = 4
-} SceEventFlagWaitTypes;
 
 /**
  * Get event flags info
