@@ -73,8 +73,6 @@ $(document).ready(function(){initNavTree('psp2kern_2avcodec_2jpegenc_8h.html',''
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jpegenc.h File Reference</div>  </div>
@@ -82,61 +80,12 @@ $(document).ready(function(){initNavTree('psp2kern_2avcodec_2jpegenc_8h.html',''
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2common_2jpegenc_8h_source.html">psp2common/jpegenc.h</a>&gt;</code><br />
 </div>
 <p><a href="psp2kern_2avcodec_2jpegenc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga882d171ac9cb67d91643f8ff525adb77"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncKernel.html#ga882d171ac9cb67d91643f8ff525adb77">SceJpegEncoderContext</a></td></tr>
-<tr class="separator:ga882d171ac9cb67d91643f8ff525adb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga88a0f6c00904fcf39aec813841e8776b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncKernel.html#ga88a0f6c00904fcf39aec813841e8776b">SceJpegEncErrorCode</a> { <br />
-&#160;&#160;<a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba5bc3424ba5d51d68f8c323df110c83be">SCE_JPEGENC_ERROR_IMAGE_SIZE</a> = 0x80650200
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba8245f6703b5bd61ebeeff95f0c495344">SCE_JPEGENC_ERROR_INSUFFICIENT_BUFFER</a> = 0x80650201
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776baae8ab9ad93f8d769b886dd62432adc82">SCE_JPEGENC_ERROR_INVALID_COMPRATIO</a> = 0x80650202
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba533e48675203c12e2c695e99fb9e3f49">SCE_JPEGENC_ERROR_INVALID_PIXELFORMAT</a> = 0x80650203
-, <br />
-&#160;&#160;<a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776bafcf2e21afdf63e09c27bc78ed4b5ba48">SCE_JPEGENC_ERROR_INVALID_HEADER_MODE</a> = 0x80650204
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba60cd046ec4e4c2d24a3a6d1b146b9796">SCE_JPEGENC_ERROR_INVALID_POINTER</a> = 0x80650205
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba1309e6713b0dd7f4e98a99e2e211b1e8">SCE_JPEGENC_ERROR_NOT_PHY_CONTINUOUS_MEMORY</a> = 0x80650206
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba5bc3424ba5d51d68f8c323df110c83be">SCE_JPEGENC_ERROR_IMAGE_SIZE</a> = 0x80650200
-, <br />
-&#160;&#160;<a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba8245f6703b5bd61ebeeff95f0c495344">SCE_JPEGENC_ERROR_INSUFFICIENT_BUFFER</a> = 0x80650201
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776baae8ab9ad93f8d769b886dd62432adc82">SCE_JPEGENC_ERROR_INVALID_COMPRATIO</a> = 0x80650202
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba533e48675203c12e2c695e99fb9e3f49">SCE_JPEGENC_ERROR_INVALID_PIXELFORMAT</a> = 0x80650203
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776bafcf2e21afdf63e09c27bc78ed4b5ba48">SCE_JPEGENC_ERROR_INVALID_HEADER_MODE</a> = 0x80650204
-, <br />
-&#160;&#160;<a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba60cd046ec4e4c2d24a3a6d1b146b9796">SCE_JPEGENC_ERROR_INVALID_POINTER</a> = 0x80650205
-, <a class="el" href="group__SceJpegEncKernel.html#gga88a0f6c00904fcf39aec813841e8776ba1309e6713b0dd7f4e98a99e2e211b1e8">SCE_JPEGENC_ERROR_NOT_PHY_CONTINUOUS_MEMORY</a> = 0x80650206
-<br />
- }</td></tr>
-<tr class="separator:ga88a0f6c00904fcf39aec813841e8776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8603f36fb28263ac28ce4be90d8b604e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncKernel.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> { <br />
-&#160;&#160;<a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951">SCE_JPEGENC_PIXELFORMAT_ARGB8888</a> = 0
-, <a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4">SCE_JPEGENC_PIXELFORMAT_YCBCR420</a> = 8
-, <a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eae1a3397a8144cc8da7dbcc2e4350112e">SCE_JPEGENC_PIXELFORMAT_YCBCR422</a> = 9
-, <a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405">SCE_JPEGENC_PIXELFORMAT_CSC_ARGB_YCBCR</a> = 16
-, <br />
-&#160;&#160;<a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604ea230a872e17dedd28c241538415b5b951">SCE_JPEGENC_PIXELFORMAT_ARGB8888</a> = 0
-, <a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eaa80cdc1f8a217d2c9b7574affdbccbc4">SCE_JPEGENC_PIXELFORMAT_YCBCR420</a> = 8
-, <a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eae1a3397a8144cc8da7dbcc2e4350112e">SCE_JPEGENC_PIXELFORMAT_YCBCR422</a> = 9
-, <a class="el" href="group__SceJpegEncKernel.html#gga8603f36fb28263ac28ce4be90d8b604eab9c80191a395e54cf627dc84b33ed405">SCE_JPEGENC_PIXELFORMAT_CSC_ARGB_YCBCR</a> = 16
-<br />
- }</td></tr>
-<tr class="separator:ga8603f36fb28263ac28ce4be90d8b604e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f1c1a954eccddb0e002f24da4d13d1c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncKernel.html#ga4f1c1a954eccddb0e002f24da4d13d1c">SceJpegEncoderHeaderMode</a> { <a class="el" href="group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985">SCE_JPEGENC_HEADER_MODE_JPEG</a> = 0
-, <a class="el" href="group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221">SCE_JPEGENC_HEADER_MODE_MJPEG</a> = 1
-, <a class="el" href="group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2aaec3b6ef4f638a94608e8a374aa985">SCE_JPEGENC_HEADER_MODE_JPEG</a> = 0
-, <a class="el" href="group__SceJpegEncKernel.html#gga4f1c1a954eccddb0e002f24da4d13d1ca2a0d07640275417d54a81771b8b0b221">SCE_JPEGENC_HEADER_MODE_MJPEG</a> = 1
- }</td></tr>
-<tr class="separator:ga4f1c1a954eccddb0e002f24da4d13d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5e58a6315aa72a8f4de88cea4bf001dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncKernel.html#ga5e58a6315aa72a8f4de88cea4bf001dd">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceJpegEncUser.html#ga882d171ac9cb67d91643f8ff525adb77">SceJpegEncoderContext</a>)</td></tr>
-<tr class="separator:ga5e58a6315aa72a8f4de88cea4bf001dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0929d9e49113c872f113fd2c3a083ec7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncKernel.html#ga0929d9e49113c872f113fd2c3a083ec7">ksceJpegEncoderInit</a> (<a class="el" href="group__SceJpegEncUser.html#ga882d171ac9cb67d91643f8ff525adb77">SceJpegEncoderContext</a> context, int inWidth, int inHeight, <a class="el" href="group__SceJpegEncUser.html#ga8603f36fb28263ac28ce4be90d8b604e">SceJpegEncoderPixelFormat</a> pixelformat, void *outBuffer, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> outSize)</td></tr>
 <tr class="memdesc:ga0929d9e49113c872f113fd2c3a083ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a jpeg encoder.  <a href="group__SceJpegEncKernel.html#ga0929d9e49113c872f113fd2c3a083ec7">More...</a><br /></td></tr>
 <tr class="separator:ga0929d9e49113c872f113fd2c3a083ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
