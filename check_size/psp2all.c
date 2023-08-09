@@ -31,8 +31,8 @@
 #include <psp2/power.h>
 #include <psp2kern/power.h>
 
-// #include <psp2/udcd.h>
-// #include <psp2kern/udcd.h>
+#include <psp2/udcd.h>
+#include <psp2kern/udcd.h>
 
 // #include <psp2/usbd.h>
 // #include <psp2kern/usbd.h>
