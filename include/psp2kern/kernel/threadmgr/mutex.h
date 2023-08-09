@@ -3,50 +3,17 @@
  * \usage{psp2kern/kernel/threadmgr/mutex.h,SceThreadmgrForDriver_stub}
  */
 
-
 #ifndef _PSP2KERN_KERNEL_THREADMGR_MUTEX_H_
 #define _PSP2KERN_KERNEL_THREADMGR_MUTEX_H_
 
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-
-#define SCE_KERNEL_MUTEX_ATTR_RECURSIVE 2
-
-/** Additional options used when creating mutexes. */
-typedef struct SceKernelMutexOptParam {
-	/** Size of the ::SceKernelMutexOptParam structure. */
-	SceSize   size;
-	int             ceilingPriority;
-} SceKernelMutexOptParam;
-VITASDK_BUILD_ASSERT_EQ(8, SceKernelMutexOptParam);
-
-/** Current state of a mutex.
- * @see ksceKernelGetMutexInfo.
- */
-typedef struct SceKernelMutexInfo {
-	/** Size of the ::SceKernelMutexInfo structure. */
-	SceSize         size;
-	/** The UID of the mutex. */
-	SceUID          mutexId;
-	/** NUL-terminated name of the mutex. */
-	char            name[32];
-	/** Attributes. */
-	SceUInt         attr;
-	/** The initial count the mutex was created with. */
-	int             initCount;
-	/** The current count. */
-	int             currentCount;
-	/** The UID of the current owner of the mutex. */
-	SceUID          currentOwnerId;
-	/** The number of threads waiting on the mutex. */
-	int             numWaitThreads;
-} SceKernelMutexInfo;
-VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMutexInfo);
 
 /**
  * Creates a new mutex

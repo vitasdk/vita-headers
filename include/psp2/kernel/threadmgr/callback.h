@@ -8,34 +8,11 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/** Callback function prototype */
-typedef int (* SceKernelCallbackFunction)(int notifyId, int notifyCount, int notifyArg, void *userData);
-
-/** Structure to hold the status information for a callback */
-typedef struct SceKernelCallbackInfo {
-	/** Size of the structure (i.e. sizeof(SceKernelCallbackInfo)) */
-	SceSize size;
-	/** The UID of the callback. */
-	SceUID  callbackId; // Needs confirmation
-	/** The name given to the callback */
-	char    name[32];
-	/** The thread id associated with the callback */
-	SceUID  threadId;
-	/** Pointer to the callback function */
-	SceKernelCallbackFunction callback;
-	/** User supplied argument for the callback */
-	void    *common;
-	/** Unknown */
-	int     notifyCount;
-	/** Unknown */
-	int     notifyArg;
-} SceKernelCallbackInfo;
-VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelCallbackInfo);
 
 /**
  * Create callback

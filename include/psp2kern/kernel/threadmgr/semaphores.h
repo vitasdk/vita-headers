@@ -9,41 +9,12 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-
-/** Additional options used when creating semaphores. */
-typedef struct SceKernelSemaOptParam {
-	/** Size of the ::SceKernelSemaOptParam structure. */
-	SceSize   size;
-} SceKernelSemaOptParam;
-VITASDK_BUILD_ASSERT_EQ(4, SceKernelSemaOptParam);
-
-/** Current state of a semaphore.
- * @see ksceKernelGetSemaInfo.
- */
-typedef struct SceKernelSemaInfo {
-	/** Size of the ::SceKernelSemaInfo structure. */
-	SceSize         size;
-	/** The UID of the semaphore */
-	SceUID          semaId;
-	/** NUL-terminated name of the semaphore. */
-	char            name[32];
-	/** Attributes. */
-	SceUInt         attr;
-	/** The initial count the semaphore was created with. */
-	int             initCount;
-	/** The current count. */
-	int             currentCount;
-	/** The maximum count. */
-	int             maxCount;
-	/** The number of threads waiting on the semaphore. */
-	int             numWaitThreads;
-} SceKernelSemaInfo;
-VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelSemaInfo);
 
 /**
  * Get semaphore info

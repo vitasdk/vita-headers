@@ -9,8 +9,8 @@
 // #include <psp2/net/net.h>
 // #include <psp2kern/net/net.h>
 
-// #include <psp2/kernel/threadmgr.h>
-// #include <psp2kern/kernel/threadmgr.h>
+#include <psp2/kernel/threadmgr.h>
+#include <psp2kern/kernel/threadmgr.h>
 
 #include <psp2/kernel/modulemgr.h>
 #include <psp2kern/kernel/modulemgr.h>
