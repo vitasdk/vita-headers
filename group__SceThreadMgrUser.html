@@ -169,12 +169,17 @@ $(document).ready(function(){initNavTree('group__SceThreadMgrUser.html',''); ini
 </p><div class="fragment"><div class="line">SceKernelThreadMgr_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ommon_2kernel_2threadmgr_8h.html">psp2common/kernel/threadmgr.h</a>&gt;</span> </div>
+<div class="ttc" id="aommon_2kernel_2threadmgr_8h_html"><div class="ttname"><a href="ommon_2kernel_2threadmgr_8h.html">threadmgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
  <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga6f3985da305cd603b6ad27aba47c1b5f">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a>)</td></tr>
-<tr class="separator:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d9ab619595e80459f2bffdca0fa888b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">sceKernelCreateCallback</a> (const char *name, unsigned int attr, <a class="el" href="group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714">SceKernelCallbackFunction</a> func, void *userData)</td></tr>
+<tr class="memitem:ga0d9ab619595e80459f2bffdca0fa888b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">sceKernelCreateCallback</a> (const char *name, unsigned int attr, <a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a> func, void *userData)</td></tr>
 <tr class="memdesc:ga0d9ab619595e80459f2bffdca0fa888b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create callback.  <a href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">More...</a><br /></td></tr>
 <tr class="separator:ga0d9ab619595e80459f2bffdca0fa888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21f09cf87b713739db45043ffca7f43f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f">sceKernelGetCallbackInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> cb, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a> *infop)</td></tr>
@@ -195,10 +200,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaefe11af04ae86030017a9c7c9c80c365"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaefe11af04ae86030017a9c7c9c80c365">sceKernelCheckCallback</a> (void)</td></tr>
 <tr class="memdesc:gaefe11af04ae86030017a9c7c9c80c365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check callback ?  <a href="group__SceThreadMgrUser.html#gaefe11af04ae86030017a9c7c9c80c365">More...</a><br /></td></tr>
 <tr class="separator:gaefe11af04ae86030017a9c7c9c80c365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c0bbdad70d3dcb7b0f6311fe2d33dbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0c0bbdad70d3dcb7b0f6311fe2d33dbb">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a>)</td></tr>
-<tr class="separator:ga0c0bbdad70d3dcb7b0f6311fe2d33dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86d682831acecf54dbe2da4f28117d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga86d682831acecf54dbe2da4f28117d59">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo">SceKernelCondInfo</a>)</td></tr>
-<tr class="separator:ga86d682831acecf54dbe2da4f28117d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga49188b83b8954dc367fdbe4709424729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">sceKernelCreateCond</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> mutexId, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a> *option)</td></tr>
 <tr class="memdesc:ga49188b83b8954dc367fdbe4709424729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new condition variable.  <a href="group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729">More...</a><br /></td></tr>
 <tr class="separator:ga49188b83b8954dc367fdbe4709424729"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,10 +227,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gae56028c8da4be211466b0a8ebba4d0a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae56028c8da4be211466b0a8ebba4d0a3">sceKernelSignalCondTo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> condId, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId)</td></tr>
 <tr class="memdesc:gae56028c8da4be211466b0a8ebba4d0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals a condition variable to a specific thread waiting for it.  <a href="group__SceThreadMgrUser.html#gae56028c8da4be211466b0a8ebba4d0a3">More...</a><br /></td></tr>
 <tr class="separator:gae56028c8da4be211466b0a8ebba4d0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd52bec7c3899c971058478080b14eeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gacd52bec7c3899c971058478080b14eeb">VITASDK_BUILD_ASSERT_EQ</a> (0x38, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a>)</td></tr>
-<tr class="separator:gacd52bec7c3899c971058478080b14eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2d930d794255b3ef29ebe65c4af8d16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga2d930d794255b3ef29ebe65c4af8d16d">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a>)</td></tr>
-<tr class="separator:ga2d930d794255b3ef29ebe65c4af8d16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga983a3acb8fb04c7a46ebe8f5930582d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7">sceKernelCreateEventFlag</a> (const char *name, int attr, int bits, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a> *opt)</td></tr>
 <tr class="memdesc:ga983a3acb8fb04c7a46ebe8f5930582d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an event flag.  <a href="group__SceThreadMgrUser.html#ga983a3acb8fb04c7a46ebe8f5930582d7">More...</a><br /></td></tr>
 <tr class="separator:ga983a3acb8fb04c7a46ebe8f5930582d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,10 +251,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf8d66461efa0b7abcf055c765ac7c427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaf8d66461efa0b7abcf055c765ac7c427">sceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> event, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
 <tr class="memdesc:gaf8d66461efa0b7abcf055c765ac7c427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of an event flag.  <a href="group__SceThreadMgrUser.html#gaf8d66461efa0b7abcf055c765ac7c427">More...</a><br /></td></tr>
 <tr class="separator:gaf8d66461efa0b7abcf055c765ac7c427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c3a17abdac0face224bfd787284b8c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1c3a17abdac0face224bfd787284b8c1">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a>)</td></tr>
-<tr class="separator:ga1c3a17abdac0face224bfd787284b8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b29927969289a3c2c41406ceb58dece"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga9b29927969289a3c2c41406ceb58dece">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondOptParam">SceKernelLwCondOptParam</a>)</td></tr>
-<tr class="separator:ga9b29927969289a3c2c41406ceb58dece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae55d0079994bc5ef66f84321d2ffc6ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae55d0079994bc5ef66f84321d2ffc6ff">sceKernelCreateLwCond</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork, const char *pName, unsigned int attr, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a> *pLwMutex, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondOptParam">SceKernelLwCondOptParam</a> *pOptParam)</td></tr>
 <tr class="separator:gae55d0079994bc5ef66f84321d2ffc6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadeae7e417052b8f6009dc1f6193c1930"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gadeae7e417052b8f6009dc1f6193c1930">sceKernelDeleteLwCond</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork)</td></tr>
@@ -270,10 +263,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaad8d92ec27f2bbb4c8968f30b0dc230d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga74fc1c0a89c8216ceb71767292d81006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga74fc1c0a89c8216ceb71767292d81006">sceKernelWaitLwCond</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a> *pWork, unsigned int *pTimeout)</td></tr>
 <tr class="separator:ga74fc1c0a89c8216ceb71767292d81006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaab497a9d4e5009f527600c05abc91f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaaab497a9d4e5009f527600c05abc91f0">VITASDK_BUILD_ASSERT_EQ</a> (0x20, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a>)</td></tr>
-<tr class="separator:gaaab497a9d4e5009f527600c05abc91f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a1e017e3e2eebb9376522417a71f18f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5a1e017e3e2eebb9376522417a71f18f">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a>)</td></tr>
-<tr class="separator:ga5a1e017e3e2eebb9376522417a71f18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6d83de3ef287e9e375497f319ca2ca7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gac6d83de3ef287e9e375497f319ca2ca7">sceKernelCreateLwMutex</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a> *pWork, const char *pName, unsigned int attr, int initCount, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a> *pOptParam)</td></tr>
 <tr class="separator:gac6d83de3ef287e9e375497f319ca2ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80f4120a92af42f5f99d9a7b5dafcf5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga80f4120a92af42f5f99d9a7b5dafcf5a">sceKernelDeleteLwMutex</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a> *pWork)</td></tr>
@@ -316,10 +305,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gad263478e578668ed10a772b57e4562f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gad263478e578668ed10a772b57e4562f4">sceKernelGetMsgPipeInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMppInfo">SceKernelMppInfo</a> *info)</td></tr>
 <tr class="memdesc:gad263478e578668ed10a772b57e4562f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of a Message Pipe.  <a href="group__SceThreadMgrUser.html#gad263478e578668ed10a772b57e4562f4">More...</a><br /></td></tr>
 <tr class="separator:gad263478e578668ed10a772b57e4562f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39f41af55c85980b0a118278a7143f8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga39f41af55c85980b0a118278a7143f8b">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a>)</td></tr>
-<tr class="separator:ga39f41af55c85980b0a118278a7143f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b724b7deeb54bb1dbc2e058a7bf41b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga9b724b7deeb54bb1dbc2e058a7bf41b4">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a>)</td></tr>
-<tr class="separator:ga9b724b7deeb54bb1dbc2e058a7bf41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga86f0e930ecdef81393d7ff1d67ca5faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf">sceKernelCreateMutex</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int initCount, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a> *option)</td></tr>
 <tr class="memdesc:ga86f0e930ecdef81393d7ff1d67ca5faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mutex.  <a href="group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf">More...</a><br /></td></tr>
 <tr class="separator:ga86f0e930ecdef81393d7ff1d67ca5faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,10 +378,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4c20b763cf7fc189f5366d8c63fda4c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga4c20b763cf7fc189f5366d8c63fda4c4">sceKernelGetRWLockInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> rwlock_id, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelRWLockInfo">SceKernelRWLockInfo</a> *info)</td></tr>
 <tr class="memdesc:ga4c20b763cf7fc189f5366d8c63fda4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve information about a rwlock.  <a href="group__SceThreadMgrUser.html#ga4c20b763cf7fc189f5366d8c63fda4c4">More...</a><br /></td></tr>
 <tr class="separator:ga4c20b763cf7fc189f5366d8c63fda4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a3866ac4781d27797ba6178131666fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5a3866ac4781d27797ba6178131666fd">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam">SceKernelSemaOptParam</a>)</td></tr>
-<tr class="separator:ga5a3866ac4781d27797ba6178131666fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae219d08e4008ab5af6d6bd5186485246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae219d08e4008ab5af6d6bd5186485246">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a>)</td></tr>
-<tr class="separator:gae219d08e4008ab5af6d6bd5186485246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada2ceb5a89c2a999545844fa2cae9dad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad">sceKernelCreateSema</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int initVal, int maxVal, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam">SceKernelSemaOptParam</a> *option)</td></tr>
 <tr class="memdesc:gada2ceb5a89c2a999545844fa2cae9dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new semaphore.  <a href="group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad">More...</a><br /></td></tr>
 <tr class="separator:gada2ceb5a89c2a999545844fa2cae9dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,13 +412,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga752c12c9395e4d3e05de3e181ab6cbfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga752c12c9395e4d3e05de3e181ab6cbfc">sceKernelSendSignal</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>
 <tr class="memdesc:ga752c12c9395e4d3e05de3e181ab6cbfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a signal to the thread specified by thid.  <a href="group__SceThreadMgrUser.html#ga752c12c9395e4d3e05de3e181ab6cbfc">More...</a><br /></td></tr>
 <tr class="separator:ga752c12c9395e4d3e05de3e181ab6cbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga66580ad672c63cb3b54a910e0dbbd331">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>)</td></tr>
-<tr class="separator:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaa74ad12a10bc8cfb5ef3469331569863">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>)</td></tr>
-<tr class="separator:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabad12e90a6c274821cd5f202ff3c7897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gabad12e90a6c274821cd5f202ff3c7897">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a>)</td></tr>
-<tr class="separator:gabad12e90a6c274821cd5f202ff3c7897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5dde78a982dcc0f00a6c93372ead9ea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5dde78a982dcc0f00a6c93372ead9ea8">sceKernelCreateThread</a> (const char *name, <a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a> entry, int initPriority, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> stackSize, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int cpuAffinityMask, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a> *option)</td></tr>
+<tr class="memitem:ga5dde78a982dcc0f00a6c93372ead9ea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5dde78a982dcc0f00a6c93372ead9ea8">sceKernelCreateThread</a> (const char *name, <a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a> entry, int initPriority, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> stackSize, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int cpuAffinityMask, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a> *option)</td></tr>
 <tr class="memdesc:ga5dde78a982dcc0f00a6c93372ead9ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread.  <a href="group__SceThreadMgrUser.html#ga5dde78a982dcc0f00a6c93372ead9ea8">More...</a><br /></td></tr>
 <tr class="separator:ga5dde78a982dcc0f00a6c93372ead9ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ca67bdd8f53d50a169befe55b0c9684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5ca67bdd8f53d50a169befe55b0c9684">sceKernelDeleteThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>
@@ -517,351 +492,56 @@ Functions</h2></td></tr>
 <tr class="memitem:ga667b282cd3c9da73c237d39f8d7c11b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3">sceKernelGetSystemTimeWide</a> (void)</td></tr>
 <tr class="memdesc:ga667b282cd3c9da73c237d39f8d7c11b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system time (wide version)  <a href="group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3">More...</a><br /></td></tr>
 <tr class="separator:ga667b282cd3c9da73c237d39f8d7c11b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabad12e90a6c274821cd5f202ff3c7897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gabad12e90a6c274821cd5f202ff3c7897">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a>)</td></tr>
+<tr class="separator:gabad12e90a6c274821cd5f202ff3c7897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga66580ad672c63cb3b54a910e0dbbd331">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>)</td></tr>
+<tr class="separator:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaa74ad12a10bc8cfb5ef3469331569863">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>)</td></tr>
+<tr class="separator:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga6f3985da305cd603b6ad27aba47c1b5f">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a>)</td></tr>
+<tr class="separator:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a3866ac4781d27797ba6178131666fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5a3866ac4781d27797ba6178131666fd">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam">SceKernelSemaOptParam</a>)</td></tr>
+<tr class="separator:ga5a3866ac4781d27797ba6178131666fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae219d08e4008ab5af6d6bd5186485246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae219d08e4008ab5af6d6bd5186485246">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a>)</td></tr>
+<tr class="separator:gae219d08e4008ab5af6d6bd5186485246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d930d794255b3ef29ebe65c4af8d16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga2d930d794255b3ef29ebe65c4af8d16d">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a>)</td></tr>
+<tr class="separator:ga2d930d794255b3ef29ebe65c4af8d16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd52bec7c3899c971058478080b14eeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gacd52bec7c3899c971058478080b14eeb">VITASDK_BUILD_ASSERT_EQ</a> (0x38, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a>)</td></tr>
+<tr class="separator:gacd52bec7c3899c971058478080b14eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c3a17abdac0face224bfd787284b8c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1c3a17abdac0face224bfd787284b8c1">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a>)</td></tr>
+<tr class="separator:ga1c3a17abdac0face224bfd787284b8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b29927969289a3c2c41406ceb58dece"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga9b29927969289a3c2c41406ceb58dece">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondOptParam">SceKernelLwCondOptParam</a>)</td></tr>
+<tr class="separator:ga9b29927969289a3c2c41406ceb58dece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaab497a9d4e5009f527600c05abc91f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaaab497a9d4e5009f527600c05abc91f0">VITASDK_BUILD_ASSERT_EQ</a> (0x20, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a>)</td></tr>
+<tr class="separator:gaaab497a9d4e5009f527600c05abc91f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a1e017e3e2eebb9376522417a71f18f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga5a1e017e3e2eebb9376522417a71f18f">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a>)</td></tr>
+<tr class="separator:ga5a1e017e3e2eebb9376522417a71f18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39f41af55c85980b0a118278a7143f8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga39f41af55c85980b0a118278a7143f8b">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a>)</td></tr>
+<tr class="separator:ga39f41af55c85980b0a118278a7143f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b724b7deeb54bb1dbc2e058a7bf41b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga9b724b7deeb54bb1dbc2e058a7bf41b4">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a>)</td></tr>
+<tr class="separator:ga9b724b7deeb54bb1dbc2e058a7bf41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c0bbdad70d3dcb7b0f6311fe2d33dbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0c0bbdad70d3dcb7b0f6311fe2d33dbb">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a>)</td></tr>
+<tr class="separator:ga0c0bbdad70d3dcb7b0f6311fe2d33dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86d682831acecf54dbe2da4f28117d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga86d682831acecf54dbe2da4f28117d59">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo">SceKernelCondInfo</a>)</td></tr>
+<tr class="separator:ga86d682831acecf54dbe2da4f28117d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:gaed1c8b50410fdccf5d5dc00563499662"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td></tr>
+<tr class="separator:gaed1c8b50410fdccf5d5dc00563499662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1466aebeba490fe29f9beb1adf84160e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a>) (int notifyId, int notifyCount, int notifyArg, void *userData)</td></tr>
 <tr class="memdesc:ga1466aebeba490fe29f9beb1adf84160e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function prototype.  <a href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">More...</a><br /></td></tr>
 <tr class="separator:ga1466aebeba490fe29f9beb1adf84160e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed1c8b50410fdccf5d5dc00563499662"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td></tr>
-<tr class="separator:gaed1c8b50410fdccf5d5dc00563499662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga187ec3703b6e03f0c898fdd45d674802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga187ec3703b6e03f0c898fdd45d674802">SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="memdesc:ga187ec3703b6e03f0c898fdd45d674802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inherit calling thread affinity mask.  <a href="group__SceThreadMgrUser.html#ga187ec3703b6e03f0c898fdd45d674802">More...</a><br /></td></tr>
 <tr class="separator:ga187ec3703b6e03f0c898fdd45d674802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga276cbf64a90f4dbb228165980b454361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga276cbf64a90f4dbb228165980b454361">SCE_KERNEL_MUTEX_ATTR_RECURSIVE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga276cbf64a90f4dbb228165980b454361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structSceKernelCallbackInfo" id="structSceKernelCallbackInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCallbackInfo">&#9670;&nbsp;</a></span>SceKernelCallbackInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelCallbackInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Structure to hold the status information for a callback. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gaeaa2262448be6179eeb02d4a0c377e21"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-Size of the structure (i.e. <p>sizeof(SceKernelCallbackInfo)) </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gade16fb6b70292d817054187537a8b55c"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-callbackId</td>
-<td class="fielddoc">
-The UID of the callback. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga77edf9097d2b003188b5bdea0f181eca"></a>char</td>
-<td class="fieldname">
-name[32]</td>
-<td class="fielddoc">
-The name given to the callback. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga30c183d7fa234de1fce25b2ea3a3f10a"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-threadId</td>
-<td class="fielddoc">
-The thread id associated with the callback. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga8fb49b90f496e6ee191ac96806873f89"></a><a class="el" href="group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714">SceKernelCallbackFunction</a></td>
-<td class="fieldname">
-callback</td>
-<td class="fielddoc">
-Pointer to the callback function. </td></tr>
-<tr><td class="fieldtype">
-<a id="gae30047cfeffadfd5ce94b0c598690bb4"></a>void *</td>
-<td class="fieldname">
-common</td>
-<td class="fielddoc">
-User supplied argument for the callback. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga1aaf328ab83967373b9281c4e3ea45c5"></a>int</td>
-<td class="fieldname">
-notifyCount</td>
-<td class="fielddoc">
-Unknown. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaa12bebd86b0409c380eaebbe3d401ffc"></a>int</td>
-<td class="fieldname">
-notifyArg</td>
-<td class="fielddoc">
-Unknown. </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelCondOptParam" id="structSceKernelCondOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCondOptParam">&#9670;&nbsp;</a></span>SceKernelCondOptParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelCondOptParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Additional options used when creating condition variables. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga6720a3d5f4aeb9939333a67495a8d6d3"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam" title="Additional options used when creating condition variables.">SceKernelCondOptParam</a> structure. </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelCondInfo" id="structSceKernelCondInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCondInfo">&#9670;&nbsp;</a></span>SceKernelCondInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelCondInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Current state of a condition variable. </p>
-<dl class="section see"><dt>See also</dt><dd>sceKernelGetCondInfo.</dd>
-<dd>
-ksceKernelGetCondInfo. </dd></dl>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga01c95bfe129bab21f63f82815e2f391e"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo" title="Current state of a condition variable.">SceKernelCondInfo</a> structure. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga21278202592d9e26fb63d5afe6588a87"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-condId</td>
-<td class="fielddoc">
-The UID of the condition variable. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga2222350f6363bae213c8dadc3aa78bfd"></a>char</td>
-<td class="fieldname">
-name[32]</td>
-<td class="fielddoc">
-NUL-terminated name of the condition variable. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga807a56525bcc6ed7ac1c9adfbff5ead5"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
-<td class="fieldname">
-attr</td>
-<td class="fielddoc">
-Attributes. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga7017fc75aec39f056ac175dcfc63bdf0"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-mutexId</td>
-<td class="fielddoc">
-Mutex associated with the condition variable. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga2f16f3839984fbf70fa382148f63fbf6"></a>int</td>
-<td class="fieldname">
-numWaitThreads</td>
-<td class="fielddoc">
-The number of threads waiting on the condition variable. </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelEventFlagInfo" id="structSceKernelEventFlagInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelEventFlagInfo">&#9670;&nbsp;</a></span>SceKernelEventFlagInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelEventFlagInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Structure to hold the event flag information. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga7d83fadd88ac0ee793fb83223aa13b33"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaa7b113583f740b86a3d78b77680caae6"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-evfId</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9a7d14c312d936d2b2912f755769338f"></a>char</td>
-<td class="fieldname">
-name[32]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gadb5597c90a7d070a541ae07853af68e0"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
-<td class="fieldname">
-attr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga19ff2cb23dbc31cfa5d5dd8352acc31f"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
-<td class="fieldname">
-initPattern</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga2438485d1f7da3a179148d5ac0ce6627"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
-<td class="fieldname">
-currentPattern</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga0bedc86144a6d5a4cbe7f5ed44e02918"></a>int</td>
-<td class="fieldname">
-numWaitThreads</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelEventFlagOptParam" id="structSceKernelEventFlagOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelEventFlagOptParam">&#9670;&nbsp;</a></span>SceKernelEventFlagOptParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelEventFlagOptParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga2e5b7f14aeaca58e3eea53cf7b8711e1"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelLwCondWork" id="structSceKernelLwCondWork"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondWork">&#9670;&nbsp;</a></span>SceKernelLwCondWork</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelLwCondWork</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga52c66c0ec1d97d4f21c08229de3b83b4"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
-<td class="fieldname">
-data[4]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gaff19b13fd3dfb73912b66ad58d688379"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
-<td class="fieldname">
-data[4]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelLwCondOptParam" id="structSceKernelLwCondOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondOptParam">&#9670;&nbsp;</a></span>SceKernelLwCondOptParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelLwCondOptParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga178db2e3200b9a38b30f602a4ff6e11d"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelLwMutexWork" id="structSceKernelLwMutexWork"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwMutexWork">&#9670;&nbsp;</a></span>SceKernelLwMutexWork</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelLwMutexWork</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga436b1313a7c49073f1e9e680de3079b7"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
-<td class="fieldname">
-data[4]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelLwMutexOptParam" id="structSceKernelLwMutexOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwMutexOptParam">&#9670;&nbsp;</a></span>SceKernelLwMutexOptParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelLwMutexOptParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga2bcd9689691161c017a72ab37ec05411"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
 <a name="structSceKernelMppInfo" id="structSceKernelMppInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMppInfo">&#9670;&nbsp;</a></span>SceKernelMppInfo</h2>
 
@@ -924,105 +604,6 @@ numSendWaitThreads</td>
 numReceiveWaitThreads</td>
 <td class="fielddoc">
 </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelMutexOptParam" id="structSceKernelMutexOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMutexOptParam">&#9670;&nbsp;</a></span>SceKernelMutexOptParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelMutexOptParam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Additional options used when creating mutexes. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gace16a9d35701555220f670d55da72cfd"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam" title="Additional options used when creating mutexes.">SceKernelMutexOptParam</a> structure. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaedd9eb3e4f78a6aff9b63134012e454c"></a>int</td>
-<td class="fieldname">
-ceilingPriority</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceKernelMutexInfo" id="structSceKernelMutexInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMutexInfo">&#9670;&nbsp;</a></span>SceKernelMutexInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceKernelMutexInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Current state of a mutex. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#gab244325100e9ff4376d6b3a2d48ea138" title="Retrieve information about a mutex.">sceKernelGetMutexInfo</a>.</dd>
-<dd>
-<a class="el" href="group__SceThreadMgrKernel.html#ga05007c0e839fa8cf5e777e7732d5fbf3" title="Retrieve information about a mutex.">ksceKernelGetMutexInfo</a>. </dd></dl>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ga2af420e6bfaf35ed339c244b27e3f4f4"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
-<td class="fieldname">
-size</td>
-<td class="fielddoc">
-Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo" title="Current state of a mutex.">SceKernelMutexInfo</a> structure. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga9e5d6104cffd7550a5a81838fa7b32db"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-mutexId</td>
-<td class="fielddoc">
-The UID of the mutex. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga85b89fa81e05ce94080a6eca4fc5c9b5"></a>char</td>
-<td class="fieldname">
-name[32]</td>
-<td class="fielddoc">
-NUL-terminated name of the mutex. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga23f163d24fbb34c04c2fd9b399b39d69"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
-<td class="fieldname">
-attr</td>
-<td class="fielddoc">
-Attributes. </td></tr>
-<tr><td class="fieldtype">
-<a id="gacb357f408aa6ec60103b8ac4d6381fe6"></a>int</td>
-<td class="fieldname">
-initCount</td>
-<td class="fielddoc">
-The initial count the mutex was created with. </td></tr>
-<tr><td class="fieldtype">
-<a id="gac2d933dddbfbe8a103e0d898e6fe8f28"></a>int</td>
-<td class="fieldname">
-currentCount</td>
-<td class="fielddoc">
-The current count. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga8d7617f89cc803bee00e0c126abf08b4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
-<td class="fieldname">
-currentOwnerId</td>
-<td class="fielddoc">
-The UID of the current owner of the mutex. </td></tr>
-<tr><td class="fieldtype">
-<a id="gab929111a2429f8351b817ba01949648d"></a>int</td>
-<td class="fieldname">
-numWaitThreads</td>
-<td class="fielddoc">
-The number of threads waiting on the mutex. </td></tr>
 </table>
 
 </div>
@@ -1118,95 +699,68 @@ The number of threads waiting on the rwlock for write access. </td></tr>
 
 </div>
 </div>
-<a name="structSceKernelSemaOptParam" id="structSceKernelSemaOptParam"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelSemaOptParam">&#9670;&nbsp;</a></span>SceKernelSemaOptParam</h2>
+<a name="structSceKernelSystemInfo" id="structSceKernelSystemInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelSystemInfo">&#9670;&nbsp;</a></span>SceKernelSystemInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelSemaOptParam</td>
+          <td class="memname">struct SceKernelSystemInfo</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Additional options used when creating semaphores. </p>
-</div><table class="fieldtable">
+<div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gaa6a9268018fdc26fd09309dc422bd23f"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="gaca9b7a54bfb3f435fa5c313dab75e19a"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
-Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam" title="Additional options used when creating semaphores.">SceKernelSemaOptParam</a> structure. </td></tr>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gad21516ffbe7f1acccb0834e7c6eeeed9"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+activeCpuMask</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4b8250c49b115afa647787311504e2c9"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
+<td class="fieldname">
+cpuInfo[4]</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
 </div>
-<a name="structSceKernelSemaInfo" id="structSceKernelSemaInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelSemaInfo">&#9670;&nbsp;</a></span>SceKernelSemaInfo</h2>
+<a name="structSceKernelThreadRunStatus" id="structSceKernelThreadRunStatus"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelThreadRunStatus">&#9670;&nbsp;</a></span>SceKernelThreadRunStatus</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelSemaInfo</td>
+          <td class="memname">struct SceKernelThreadRunStatus</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Current state of a semaphore. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a" title="Retrieve information about a semaphore.">sceKernelGetSemaInfo</a>.</dd>
-<dd>
-<a class="el" href="group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215" title="Get semaphore info.">ksceKernelGetSemaInfo</a>. </dd></dl>
+<div class="textblock"><p>Statistics about a running thread. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#ga01b86d2c4e22ae44ff7dc9607196cc17" title="Retrive the runtime status of a thread.">sceKernelGetThreadRunStatus</a>. </dd></dl>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gac9c2f4b85e3632e188ff51f48d8fa8e3"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="gae5877005b3d0698e3d3ca53064b243b4"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
-Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo" title="Current state of a semaphore.">SceKernelSemaInfo</a> structure. </td></tr>
+</td></tr>
 <tr><td class="fieldtype">
-<a id="ga407ce5d30670d7f94dec8a04011403ae"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="ga4025ceea737e10fc219af4467abe4d7b"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
 <td class="fieldname">
-semaId</td>
+cpuInfo[4]</td>
 <td class="fielddoc">
-The UID of the semaphore. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga6f6990ff49851aac3265cdbd3302aa9a"></a>char</td>
-<td class="fieldname">
-name[32]</td>
-<td class="fielddoc">
-NUL-terminated name of the semaphore. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaa828681068d8cf1b644c53b2857db656"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
-<td class="fieldname">
-attr</td>
-<td class="fielddoc">
-Attributes. </td></tr>
-<tr><td class="fieldtype">
-<a id="gadfd8c09ff32bf0047269054e9d032c87"></a>int</td>
-<td class="fieldname">
-initCount</td>
-<td class="fielddoc">
-The initial count the semaphore was created with. </td></tr>
-<tr><td class="fieldtype">
-<a id="gad0aef61d05f3ba87f555aecd2c81707d"></a>int</td>
-<td class="fieldname">
-currentCount</td>
-<td class="fielddoc">
-The current count. </td></tr>
-<tr><td class="fieldtype">
-<a id="gad5fafcca551c905a77ddfc090c8bc084"></a>int</td>
-<td class="fieldname">
-maxCount</td>
-<td class="fielddoc">
-The maximum count. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga77ee30ffb32694f53a405f0e81aa9989"></a>int</td>
-<td class="fieldname">
-numWaitThreads</td>
-<td class="fielddoc">
-The number of threads waiting on the semaphore. </td></tr>
+</td></tr>
 </table>
 
 </div>
@@ -1253,9 +807,7 @@ Attributes. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>Structure to hold the status information for a thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591" title="Get the status information for the specified thread.">sceKernelGetThreadInfo</a></dd>
-<dd>
-<a class="el" href="group__SceThreadMgrKernel.html#ga4d68f3866074d95916bea68bf6147eff" title="Get the thread info by thread id.">ksceKernelGetThreadInfo</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591" title="Get the status information for the specified thread.">sceKernelGetThreadInfo</a> </dd></dl>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -1271,7 +823,7 @@ processId</td>
 <td class="fielddoc">
 The UID of the process where the thread belongs. </td></tr>
 <tr><td class="fieldtype">
-<a id="gad61dd99a74bf523d96c4a4cbac1ec603"></a>char</td>
+<a id="gae56890fcacae673875d2d9eeefca3b17"></a>char</td>
 <td class="fieldname">
 name[32]</td>
 <td class="fielddoc">
@@ -1289,13 +841,13 @@ status</td>
 <td class="fielddoc">
 Thread status. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga3ca76db6f243d1b628b21b1421a05582"></a><a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a></td>
+<a id="ga3ca76db6f243d1b628b21b1421a05582"></a><a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a></td>
 <td class="fieldname">
 entry</td>
 <td class="fielddoc">
 Thread entry point. </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf45401f5a22dfcde99d76b8341837b80"></a>void *</td>
+<a id="ga6fa6536d29c24261e6c582ec89f35547"></a>void *</td>
 <td class="fieldname">
 stack</td>
 <td class="fielddoc">
@@ -1406,129 +958,511 @@ Reserved. </td></tr>
 
 </div>
 </div>
-<a name="structSceKernelThreadRunStatus" id="structSceKernelThreadRunStatus"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelThreadRunStatus">&#9670;&nbsp;</a></span>SceKernelThreadRunStatus</h2>
+<a name="structSceKernelCallbackInfo" id="structSceKernelCallbackInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCallbackInfo">&#9670;&nbsp;</a></span>SceKernelCallbackInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelThreadRunStatus</td>
+          <td class="memname">struct SceKernelCallbackInfo</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Statistics about a running thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#ga01b86d2c4e22ae44ff7dc9607196cc17" title="Retrive the runtime status of a thread.">sceKernelGetThreadRunStatus</a>.</dd>
-<dd>
-ksceKernelGetThreadRunStatus. </dd></dl>
+<div class="textblock"><p>Structure to hold the status information for a callback. </p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gae5877005b3d0698e3d3ca53064b243b4"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="gaeaa2262448be6179eeb02d4a0c377e21"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
+Size of the structure (i.e. <p>sizeof(SceKernelCallbackInfo)) </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="gaf69c243a867f292b96701de52857d6d8"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
+<a id="gade16fb6b70292d817054187537a8b55c"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
 <td class="fieldname">
-cpuInfo[4]</td>
+callbackId</td>
 <td class="fielddoc">
-</td></tr>
+The UID of the callback. </td></tr>
 <tr><td class="fieldtype">
-<a id="ga7f68346c697b706f15a907b5e7a797c8"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus</a></td>
+<a id="ga4e1008ecf923b84c9f0e9e5d8c8ae3e7"></a>char</td>
 <td class="fieldname">
-cpuInfo[4]</td>
+name[32]</td>
 <td class="fielddoc">
-</td></tr>
+The name given to the callback. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga30c183d7fa234de1fce25b2ea3a3f10a"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+threadId</td>
+<td class="fielddoc">
+The thread id associated with the callback. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga8fb49b90f496e6ee191ac96806873f89"></a><a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a></td>
+<td class="fieldname">
+callback</td>
+<td class="fielddoc">
+Pointer to the callback function. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga16a6314cf9df4fc14ac355fca96937f3"></a>void *</td>
+<td class="fieldname">
+common</td>
+<td class="fielddoc">
+User supplied argument for the callback. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1aaf328ab83967373b9281c4e3ea45c5"></a>int</td>
+<td class="fieldname">
+notifyCount</td>
+<td class="fielddoc">
+Unknown. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa12bebd86b0409c380eaebbe3d401ffc"></a>int</td>
+<td class="fieldname">
+notifyArg</td>
+<td class="fielddoc">
+Unknown. </td></tr>
 </table>
 
 </div>
 </div>
-<a name="structSceKernelSystemInfo" id="structSceKernelSystemInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelSystemInfo">&#9670;&nbsp;</a></span>SceKernelSystemInfo</h2>
+<a name="structSceKernelSemaOptParam" id="structSceKernelSemaOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelSemaOptParam">&#9670;&nbsp;</a></span>SceKernelSemaOptParam</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelSystemInfo</td>
+          <td class="memname">struct SceKernelSemaOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Additional options used when creating semaphores. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaa6a9268018fdc26fd09309dc422bd23f"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam" title="Additional options used when creating semaphores.">SceKernelSemaOptParam</a> structure. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelSemaInfo" id="structSceKernelSemaInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelSemaInfo">&#9670;&nbsp;</a></span>SceKernelSemaInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelSemaInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Current state of a semaphore. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#gab50456c2cdfbb75fd94b3a2cfde0376a" title="Retrieve information about a semaphore.">sceKernelGetSemaInfo</a>. </dd></dl>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gac9c2f4b85e3632e188ff51f48d8fa8e3"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo" title="Current state of a semaphore.">SceKernelSemaInfo</a> structure. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga407ce5d30670d7f94dec8a04011403ae"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+semaId</td>
+<td class="fielddoc">
+The UID of the semaphore. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga0498c9d74b2370ae188e24b13c12a971"></a>char</td>
+<td class="fieldname">
+name[32]</td>
+<td class="fielddoc">
+NUL-terminated name of the semaphore. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa828681068d8cf1b644c53b2857db656"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+Attributes. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadfd8c09ff32bf0047269054e9d032c87"></a>int</td>
+<td class="fieldname">
+initCount</td>
+<td class="fielddoc">
+The initial count the semaphore was created with. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad0aef61d05f3ba87f555aecd2c81707d"></a>int</td>
+<td class="fieldname">
+currentCount</td>
+<td class="fielddoc">
+The current count. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad5fafcca551c905a77ddfc090c8bc084"></a>int</td>
+<td class="fieldname">
+maxCount</td>
+<td class="fielddoc">
+The maximum count. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga77ee30ffb32694f53a405f0e81aa9989"></a>int</td>
+<td class="fieldname">
+numWaitThreads</td>
+<td class="fielddoc">
+The number of threads waiting on the semaphore. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelEventFlagOptParam" id="structSceKernelEventFlagOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelEventFlagOptParam">&#9670;&nbsp;</a></span>SceKernelEventFlagOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelEventFlagOptParam</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="gaca9b7a54bfb3f435fa5c313dab75e19a"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<a id="ga2e5b7f14aeaca58e3eea53cf7b8711e1"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 size</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="gad21516ffbe7f1acccb0834e7c6eeeed9"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
-<td class="fieldname">
-activeCpuMask</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ga9258c7b0b1a49bcc827a569568dff8a5"></a>struct <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo_8cpuInfo">SceKernelSystemInfo</a></td>
-<td class="fieldname">
-cpuInfo[4]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
 
 </div>
 </div>
-<a name="structSceKernelThreadRunStatus_8cpuInfo" id="structSceKernelThreadRunStatus_8cpuInfo"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelThreadRunStatus_8cpuInfo">&#9670;&nbsp;</a></span>SceKernelThreadRunStatus.cpuInfo</h2>
+<a name="structSceKernelEventFlagInfo" id="structSceKernelEventFlagInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelEventFlagInfo">&#9670;&nbsp;</a></span>SceKernelEventFlagInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct SceKernelThreadRunStatus.cpuInfo</td>
+          <td class="memname">struct SceKernelEventFlagInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Structure to hold the event flag information. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga7d83fadd88ac0ee793fb83223aa13b33"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaa7b113583f740b86a3d78b77680caae6"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+evfId</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga6b13b15e78983de6c0e77d09063bb76e"></a>char</td>
+<td class="fieldname">
+name[32]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gadb5597c90a7d070a541ae07853af68e0"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga19ff2cb23dbc31cfa5d5dd8352acc31f"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
+<td class="fieldname">
+initPattern</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga2438485d1f7da3a179148d5ac0ce6627"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
+<td class="fieldname">
+currentPattern</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga0bedc86144a6d5a4cbe7f5ed44e02918"></a>int</td>
+<td class="fieldname">
+numWaitThreads</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwCondWork" id="structSceKernelLwCondWork"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondWork">&#9670;&nbsp;</a></span>SceKernelLwCondWork</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwCondWork</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ad903442ab4ebee4c1aa7cf992c2086b9"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="ga52c66c0ec1d97d4f21c08229de3b83b4"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
 <td class="fieldname">
-processId</td>
+data[4]</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwCondOptParam" id="structSceKernelLwCondOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwCondOptParam">&#9670;&nbsp;</a></span>SceKernelLwCondOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwCondOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a61dc2bd347732448287f2a6771f304d8"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="ga178db2e3200b9a38b30f602a4ff6e11d"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-threadId</td>
+size</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwMutexWork" id="structSceKernelLwMutexWork"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwMutexWork">&#9670;&nbsp;</a></span>SceKernelLwMutexWork</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwMutexWork</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ab988295c268025b49dfb3df26171ddc3"></a>int</td>
+<a id="gaa8f3d447a92586ce79af011390cdf4bb"></a><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a></td>
 <td class="fieldname">
-priority</td>
+data[4]</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelLwMutexOptParam" id="structSceKernelLwMutexOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelLwMutexOptParam">&#9670;&nbsp;</a></span>SceKernelLwMutexOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelLwMutexOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ad903442ab4ebee4c1aa7cf992c2086b9"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="ga2bcd9689691161c017a72ab37ec05411"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-processId</td>
+size</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelMutexOptParam" id="structSceKernelMutexOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMutexOptParam">&#9670;&nbsp;</a></span>SceKernelMutexOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelMutexOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Additional options used when creating mutexes. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a61dc2bd347732448287f2a6771f304d8"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<a id="gace16a9d35701555220f670d55da72cfd"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
-threadId</td>
+size</td>
 <td class="fielddoc">
-</td></tr>
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam" title="Additional options used when creating mutexes.">SceKernelMutexOptParam</a> structure. </td></tr>
 <tr><td class="fieldtype">
-<a id="ab988295c268025b49dfb3df26171ddc3"></a>int</td>
+<a id="gaedd9eb3e4f78a6aff9b63134012e454c"></a>int</td>
 <td class="fieldname">
-priority</td>
+ceilingPriority</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelMutexInfo" id="structSceKernelMutexInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelMutexInfo">&#9670;&nbsp;</a></span>SceKernelMutexInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelMutexInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Current state of a mutex. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__SceThreadMgrUser.html#gab244325100e9ff4376d6b3a2d48ea138" title="Retrieve information about a mutex.">sceKernelGetMutexInfo</a>. </dd></dl>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga2af420e6bfaf35ed339c244b27e3f4f4"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo" title="Current state of a mutex.">SceKernelMutexInfo</a> structure. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9e5d6104cffd7550a5a81838fa7b32db"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+mutexId</td>
+<td class="fielddoc">
+The UID of the mutex. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga8f4efffe8ff5ca60e15ea051e62c16a1"></a>char</td>
+<td class="fieldname">
+name[32]</td>
+<td class="fielddoc">
+NUL-terminated name of the mutex. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga23f163d24fbb34c04c2fd9b399b39d69"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+Attributes. </td></tr>
+<tr><td class="fieldtype">
+<a id="gacb357f408aa6ec60103b8ac4d6381fe6"></a>int</td>
+<td class="fieldname">
+initCount</td>
+<td class="fielddoc">
+The initial count the mutex was created with. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac2d933dddbfbe8a103e0d898e6fe8f28"></a>int</td>
+<td class="fieldname">
+currentCount</td>
+<td class="fielddoc">
+The current count. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga8d7617f89cc803bee00e0c126abf08b4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+currentOwnerId</td>
+<td class="fielddoc">
+The UID of the current owner of the mutex. </td></tr>
+<tr><td class="fieldtype">
+<a id="gab929111a2429f8351b817ba01949648d"></a>int</td>
+<td class="fieldname">
+numWaitThreads</td>
+<td class="fielddoc">
+The number of threads waiting on the mutex. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelCondOptParam" id="structSceKernelCondOptParam"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCondOptParam">&#9670;&nbsp;</a></span>SceKernelCondOptParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelCondOptParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Additional options used when creating condition variables. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga6720a3d5f4aeb9939333a67495a8d6d3"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam" title="Additional options used when creating condition variables.">SceKernelCondOptParam</a> structure. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelCondInfo" id="structSceKernelCondInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelCondInfo">&#9670;&nbsp;</a></span>SceKernelCondInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelCondInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Current state of a condition variable. </p>
+<dl class="section see"><dt>See also</dt><dd>sceKernelGetCondInfo. </dd></dl>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga01c95bfe129bab21f63f82815e2f391e"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo" title="Current state of a condition variable.">SceKernelCondInfo</a> structure. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga21278202592d9e26fb63d5afe6588a87"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+condId</td>
+<td class="fielddoc">
+The UID of the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaeec9e514748bd6aa5f408bdb44a0497e"></a>char</td>
+<td class="fieldname">
+name[32]</td>
+<td class="fielddoc">
+NUL-terminated name of the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga807a56525bcc6ed7ac1c9adfbff5ead5"></a><a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a></td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+Attributes. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7017fc75aec39f056ac175dcfc63bdf0"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+mutexId</td>
+<td class="fielddoc">
+Mutex associated with the condition variable. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga2f16f3839984fbf70fa382148f63fbf6"></a>int</td>
+<td class="fieldname">
+numWaitThreads</td>
+<td class="fielddoc">
+The number of threads waiting on the condition variable. </td></tr>
 </table>
 
 </div>
@@ -1568,6 +1502,41 @@ threadSwitchCount</td>
 
 </div>
 </div>
+<a name="structSceKernelThreadRunStatus_8cpuInfo" id="structSceKernelThreadRunStatus_8cpuInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelThreadRunStatus_8cpuInfo">&#9670;&nbsp;</a></span>SceKernelThreadRunStatus.cpuInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelThreadRunStatus.cpuInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ad903442ab4ebee4c1aa7cf992c2086b9"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+processId</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a61dc2bd347732448287f2a6771f304d8"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+threadId</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab988295c268025b49dfb3df26171ddc3"></a>int</td>
+<td class="fieldname">
+priority</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga187ec3703b6e03f0c898fdd45d674802"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga187ec3703b6e03f0c898fdd45d674802">&#9670;&nbsp;</a></span>SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT</h2>
@@ -1585,7 +1554,35 @@ threadSwitchCount</td>
 
 </div>
 </div>
+<a id="ga276cbf64a90f4dbb228165980b454361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga276cbf64a90f4dbb228165980b454361">&#9670;&nbsp;</a></span>SCE_KERNEL_MUTEX_ATTR_RECURSIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_MUTEX_ATTR_RECURSIVE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="gaed1c8b50410fdccf5d5dc00563499662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed1c8b50410fdccf5d5dc00563499662">&#9670;&nbsp;</a></span>SceKernelThreadEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* SceKernelThreadEntry) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga1466aebeba490fe29f9beb1adf84160e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1466aebeba490fe29f9beb1adf84160e">&#9670;&nbsp;</a></span>SceKernelCallbackFunction</h2>
 
@@ -1602,138 +1599,7 @@ threadSwitchCount</td>
 
 </div>
 </div>
-<a id="gaed1c8b50410fdccf5d5dc00563499662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed1c8b50410fdccf5d5dc00563499662">&#9670;&nbsp;</a></span>SceKernelThreadEntry</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int(* SceKernelThreadEntry) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga32240cfc9096477a62cfad5ee4768791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga32240cfc9096477a62cfad5ee4768791">&#9670;&nbsp;</a></span>SceEventFlagAttributes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791">SceEventFlagAttributes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8"></a>SCE_EVENT_THREAD_FIFO&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_THREAD_FIFO. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c"></a>SCE_EVENT_THREAD_PRIO&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_THREAD_PRIO. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841"></a>SCE_EVENT_WAITSINGLE&#160;</td><td class="fielddoc"><p>Sync object can only be waited upon by one thread. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3"></a>SCE_EVENT_WAITMULTIPLE&#160;</td><td class="fielddoc"><p>Sync object can be waited upon by multiple threads. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849"></a>SCE_EVENT_OPENABLE&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_OPENABLE. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3"></a>SCE_EVENT_WAITMULTIPLE&#160;</td><td class="fielddoc"><p>Allow the event flag to be waited upon by multiple threads. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="ga705f51eec6069fac8fdd74d430472843"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga705f51eec6069fac8fdd74d430472843">&#9670;&nbsp;</a></span>SceEventFlagWaitTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843">SceEventFlagWaitTypes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event flag wait types. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b"></a>SCE_EVENT_WAITAND&#160;</td><td class="fielddoc"><p>Wait for all bits in the pattern to be set. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04"></a>SCE_EVENT_WAITOR&#160;</td><td class="fielddoc"><p>Wait for one or more bits in the pattern to be set. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10"></a>SCE_EVENT_WAITCLEAR&#160;</td><td class="fielddoc"><p>Clear all the bits when it matches. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23"></a>SCE_EVENT_WAITCLEAR_PAT&#160;</td><td class="fielddoc"><p>Clear the wait pattern when it matches. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b"></a>SCE_EVENT_WAITAND&#160;</td><td class="fielddoc"><p>Wait for all bits in the pattern to be set. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04"></a>SCE_EVENT_WAITOR&#160;</td><td class="fielddoc"><p>Wait for one or more bits in the pattern to be set. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10"></a>SCE_EVENT_WAITCLEAR&#160;</td><td class="fielddoc"><p>Clear all the bits when it matches. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23"></a>SCE_EVENT_WAITCLEAR_PAT&#160;</td><td class="fielddoc"><p>Clear the wait pattern when it matches. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="gacaf974d94877969095678f463230d242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacaf974d94877969095678f463230d242">&#9670;&nbsp;</a></span>SceKernelMutexAttribute</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242">SceKernelMutexAttribute</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe"></a>SCE_KERNEL_MUTEX_ATTR_RECURSIVE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b"></a>SCE_KERNEL_MUTEX_ATTR_CEILING&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="ga552cbf506e81e208e4bf3e75badc1c40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga552cbf506e81e208e4bf3e75badc1c40">&#9670;&nbsp;</a></span>SceThreadStatus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40">SceThreadStatus</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958"></a>SCE_THREAD_RUNNING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c"></a>SCE_THREAD_READY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2"></a>SCE_THREAD_STANDBY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e"></a>SCE_THREAD_WAITING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a24f465ecb5dabe84ef912447516e7637"></a>SCE_THREAD_SUSPEND&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a54e85d186b3e69db94e4186116df331c"></a>SCE_THREAD_DORMANT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a56f4a808a0901deffe6249baedd764b8"></a>SCE_THREAD_STOPPED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40ad72f4388295e8f8564335351ba225c44"></a>SCE_THREAD_DELETED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a88e74bc6b07d25dffd2519ed837a358d"></a>SCE_THREAD_KILLED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48"></a>SCE_THREAD_DEAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa"></a>SCE_THREAD_STAGNANT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093"></a>SCE_THREAD_SUSPENDED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958"></a>SCE_THREAD_RUNNING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c"></a>SCE_THREAD_READY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2"></a>SCE_THREAD_STANDBY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e"></a>SCE_THREAD_WAITING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a54e85d186b3e69db94e4186116df331c"></a>SCE_THREAD_DORMANT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40ad72f4388295e8f8564335351ba225c44"></a>SCE_THREAD_DELETED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48"></a>SCE_THREAD_DEAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa"></a>SCE_THREAD_STAGNANT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093"></a>SCE_THREAD_SUSPENDED&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="gab73e1647ba8ce49d40132e57883602dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab73e1647ba8ce49d40132e57883602dc">&#9670;&nbsp;</a></span>SceKernelIdListType</h2>
 
@@ -1763,21 +1629,34 @@ threadSwitchCount</td>
 <tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca3a02bc58bf1ba70ac6dc77d2cb16aadb"></a>SCE_KERNEL_TMID_DelayThread&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca93d8b4b14edcd3b462df1b11a0cc4442"></a>SCE_KERNEL_TMID_SuspendThread&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca874f26b72bce479b904e5b8d50fb89d1"></a>SCE_KERNEL_TMID_DormantThread&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca6c07486899e0df175dcb90cefb2ac7b5"></a>SCE_KERNEL_TMID_Thread&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca6f586e8489418f6428ac915abfa3320e"></a>SCE_KERNEL_TMID_Semaphore&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca8abd95cf3cd992b483d74e71490a366c"></a>SCE_KERNEL_TMID_EventFlag&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dcab0c48409be61f88ae379761cdf5e98ae"></a>SCE_KERNEL_TMID_Mbox&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dcada22acf5747579086eb359e0ddc183d5"></a>SCE_KERNEL_TMID_Vpl&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca411fae0b430b218535117cb750048ccc"></a>SCE_KERNEL_TMID_Fpl&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca60147b6fe440e3c4770cfd1a61892376"></a>SCE_KERNEL_TMID_Mpipe&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca14cad08b131ef9371a6a0a7322d7af5d"></a>SCE_KERNEL_TMID_Callback&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca205a48351680e34a080bb3958ab179b4"></a>SCE_KERNEL_TMID_ThreadEventHandler&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca673bce289cfe11dfa9daac5dc5405167"></a>SCE_KERNEL_TMID_Alarm&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca13a6f5bc10feb810635e18a9e63994cb"></a>SCE_KERNEL_TMID_VTimer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca2e1cada1f0344173360de9aba065bd2b"></a>SCE_KERNEL_TMID_SleepThread&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca3a02bc58bf1ba70ac6dc77d2cb16aadb"></a>SCE_KERNEL_TMID_DelayThread&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca93d8b4b14edcd3b462df1b11a0cc4442"></a>SCE_KERNEL_TMID_SuspendThread&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab73e1647ba8ce49d40132e57883602dca874f26b72bce479b904e5b8d50fb89d1"></a>SCE_KERNEL_TMID_DormantThread&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga552cbf506e81e208e4bf3e75badc1c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga552cbf506e81e208e4bf3e75badc1c40">&#9670;&nbsp;</a></span>SceThreadStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga552cbf506e81e208e4bf3e75badc1c40">SceThreadStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958"></a>SCE_THREAD_RUNNING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c"></a>SCE_THREAD_READY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2"></a>SCE_THREAD_STANDBY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e"></a>SCE_THREAD_WAITING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a24f465ecb5dabe84ef912447516e7637"></a>SCE_THREAD_SUSPEND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a54e85d186b3e69db94e4186116df331c"></a>SCE_THREAD_DORMANT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a56f4a808a0901deffe6249baedd764b8"></a>SCE_THREAD_STOPPED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40ad72f4388295e8f8564335351ba225c44"></a>SCE_THREAD_DELETED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a88e74bc6b07d25dffd2519ed837a358d"></a>SCE_THREAD_KILLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48"></a>SCE_THREAD_DEAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa"></a>SCE_THREAD_STAGNANT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093"></a>SCE_THREAD_SUSPENDED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1804,35 +1683,79 @@ threadSwitchCount</td>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga6f3985da305cd603b6ad27aba47c1b5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6f3985da305cd603b6ad27aba47c1b5f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/20]</span></h2>
+<a id="ga32240cfc9096477a62cfad5ee4768791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32240cfc9096477a62cfad5ee4768791">&#9670;&nbsp;</a></span>SceEventFlagAttributes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x3C&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791">SceEventFlagAttributes</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Event flag creation attributes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8"></a>SCE_EVENT_THREAD_FIFO&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_THREAD_FIFO. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c"></a>SCE_EVENT_THREAD_PRIO&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_THREAD_PRIO. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841"></a>SCE_EVENT_WAITSINGLE&#160;</td><td class="fielddoc"><p>Sync object can only be waited upon by one thread. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3"></a>SCE_EVENT_WAITMULTIPLE&#160;</td><td class="fielddoc"><p>Sync object can be waited upon by multiple threads. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849"></a>SCE_EVENT_OPENABLE&#160;</td><td class="fielddoc"><p>Use SCE_KERNEL_ATTR_OPENABLE. </p>
+</td></tr>
+</table>
+
 </div>
 </div>
+<a id="ga705f51eec6069fac8fdd74d430472843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga705f51eec6069fac8fdd74d430472843">&#9670;&nbsp;</a></span>SceEventFlagWaitTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga705f51eec6069fac8fdd74d430472843">SceEventFlagWaitTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event flag wait types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b"></a>SCE_EVENT_WAITAND&#160;</td><td class="fielddoc"><p>Wait for all bits in the pattern to be set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04"></a>SCE_EVENT_WAITOR&#160;</td><td class="fielddoc"><p>Wait for one or more bits in the pattern to be set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10"></a>SCE_EVENT_WAITCLEAR&#160;</td><td class="fielddoc"><p>Clear all the bits when it matches. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23"></a>SCE_EVENT_WAITCLEAR_PAT&#160;</td><td class="fielddoc"><p>Clear the wait pattern when it matches. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gacaf974d94877969095678f463230d242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacaf974d94877969095678f463230d242">&#9670;&nbsp;</a></span>SceKernelMutexAttribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242">SceKernelMutexAttribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe"></a>SCE_KERNEL_MUTEX_ATTR_RECURSIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b"></a>SCE_KERNEL_MUTEX_ATTR_CEILING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ga0d9ab619595e80459f2bffdca0fa888b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0d9ab619595e80459f2bffdca0fa888b">&#9670;&nbsp;</a></span>sceKernelCreateCallback()</h2>
 
@@ -1854,7 +1777,7 @@ threadSwitchCount</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714">SceKernelCallbackFunction</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a>&#160;</td>
           <td class="paramname"><em>func</em>, </td>
         </tr>
         <tr>
@@ -2064,62 +1987,6 @@ threadSwitchCount</td>
 
 <p>Check callback ? </p>
 <dl class="section return"><dt>Returns</dt><dd>Something or another </dd></dl>
-
-</div>
-</div>
-<a id="ga0c0bbdad70d3dcb7b0f6311fe2d33dbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c0bbdad70d3dcb7b0f6311fe2d33dbb">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga86d682831acecf54dbe2da4f28117d59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86d682831acecf54dbe2da4f28117d59">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x34&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo">SceKernelCondInfo</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -2429,62 +2296,6 @@ threadSwitchCount</td>
 
 </div>
 </div>
-<a id="gacd52bec7c3899c971058478080b14eeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd52bec7c3899c971058478080b14eeb">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x38&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2d930d794255b3ef29ebe65c4af8d16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2d930d794255b3ef29ebe65c4af8d16d">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga983a3acb8fb04c7a46ebe8f5930582d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga983a3acb8fb04c7a46ebe8f5930582d7">&#9670;&nbsp;</a></span>sceKernelCreateEventFlag()</h2>
 
@@ -2527,7 +2338,7 @@ threadSwitchCount</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>- The name of the event flag. </td></tr>
-    <tr><td class="paramname">attr</td><td>- Attributes from <a class="el" href="group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791">SceEventFlagAttributes</a> </td></tr>
+    <tr><td class="paramname">attr</td><td>- Attributes from <a class="el" href="group__SceThreadMgrUser.html#ga32240cfc9096477a62cfad5ee4768791" title="Event flag creation attributes.">SceEventFlagAttributes</a> </td></tr>
     <tr><td class="paramname">bits</td><td>- Initial bit pattern. </td></tr>
     <tr><td class="paramname">opt</td><td>- Options, set to NULL </td></tr>
   </table>
@@ -2852,62 +2663,6 @@ threadSwitchCount</td>
 
 </div>
 </div>
-<a id="ga1c3a17abdac0face224bfd787284b8c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c3a17abdac0face224bfd787284b8c1">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x10&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9b29927969289a3c2c41406ceb58dece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b29927969289a3c2c41406ceb58dece">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondOptParam">SceKernelLwCondOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gae55d0079994bc5ef66f84321d2ffc6ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae55d0079994bc5ef66f84321d2ffc6ff">&#9670;&nbsp;</a></span>sceKernelCreateLwCond()</h2>
 
@@ -3053,62 +2808,6 @@ threadSwitchCount</td>
           <td></td>
           <td class="paramtype">unsigned int *&#160;</td>
           <td class="paramname"><em>pTimeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaaab497a9d4e5009f527600c05abc91f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaab497a9d4e5009f527600c05abc91f0">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x20&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5a1e017e3e2eebb9376522417a71f18f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a1e017e3e2eebb9376522417a71f18f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3788,7 +3487,7 @@ threadSwitchCount</td>
 </div>
 </div>
 <a id="gadf551603df491817fef102694a1f81c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf551603df491817fef102694a1f81c0">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf551603df491817fef102694a1f81c0">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3850,62 +3549,6 @@ threadSwitchCount</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga39f41af55c85980b0a118278a7143f8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga39f41af55c85980b0a118278a7143f8b">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">8&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9b724b7deeb54bb1dbc2e058a7bf41b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b724b7deeb54bb1dbc2e058a7bf41b4">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x3C&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -4296,7 +3939,7 @@ threadSwitchCount</td>
 </div>
 </div>
 <a id="ga1706a52d0a959c94ec87e4457ab9ca86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1706a52d0a959c94ec87e4457ab9ca86">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1706a52d0a959c94ec87e4457ab9ca86">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4324,7 +3967,7 @@ threadSwitchCount</td>
 </div>
 </div>
 <a id="ga8299508e1863a32280fb190cd69f9e36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8299508e1863a32280fb190cd69f9e36">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8299508e1863a32280fb190cd69f9e36">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4776,62 +4419,6 @@ threadSwitchCount</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
-</div>
-</div>
-<a id="ga5a3866ac4781d27797ba6178131666fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a3866ac4781d27797ba6178131666fd">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam">SceKernelSemaOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae219d08e4008ab5af6d6bd5186485246"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae219d08e4008ab5af6d6bd5186485246">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x3C&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -5296,90 +4883,6 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 
 </div>
 </div>
-<a id="ga66580ad672c63cb3b54a910e0dbbd331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga66580ad672c63cb3b54a910e0dbbd331">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">8&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa74ad12a10bc8cfb5ef3469331569863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa74ad12a10bc8cfb5ef3469331569863">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[18/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x80&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabad12e90a6c274821cd5f202ff3c7897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabad12e90a6c274821cd5f202ff3c7897">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[19/20]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x34&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga5dde78a982dcc0f00a6c93372ead9ea8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5dde78a982dcc0f00a6c93372ead9ea8">&#9670;&nbsp;</a></span>sceKernelCreateThread()</h2>
 
@@ -5395,7 +4898,7 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>&#160;</td>
           <td class="paramname"><em>entry</em>, </td>
         </tr>
         <tr>
@@ -5962,9 +5465,9 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 <div class="line">status.<a class="code" href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">size</a> = <span class="keyword">sizeof</span>(<a class="code" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>);</div>
 <div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a>(thid, &amp;status) == 0)</div>
 <div class="line">{ Do something... }</div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition:</b> thread.h:41</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:78</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga6bf8403f033a543d7c8a0a21e1153591"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a></div><div class="ttdeci">int sceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info)</div><div class="ttdoc">Get the status information for the specified thread.</div></div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> thread.h:39</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:76</div></div>
 </div><!-- fragment --> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successful, otherwise the error code. </dd></dl>
 
@@ -6116,7 +5619,7 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 </div>
 </div>
 <a id="ga0d6c6c680f4a1ead74c1feda28d0138e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d6c6c680f4a1ead74c1feda28d0138e">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[20/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d6c6c680f4a1ead74c1feda28d0138e">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6280,6 +5783,454 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 
 <p>Get the system time (wide version) </p>
 <dl class="section return"><dt>Returns</dt><dd>The system time </dd></dl>
+
+</div>
+</div>
+<a id="gabad12e90a6c274821cd5f202ff3c7897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabad12e90a6c274821cd5f202ff3c7897">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x34&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga66580ad672c63cb3b54a910e0dbbd331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66580ad672c63cb3b54a910e0dbbd331">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa74ad12a10bc8cfb5ef3469331569863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa74ad12a10bc8cfb5ef3469331569863">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x80&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6f3985da305cd603b6ad27aba47c1b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f3985da305cd603b6ad27aba47c1b5f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x3C&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a3866ac4781d27797ba6178131666fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a3866ac4781d27797ba6178131666fd">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaOptParam">SceKernelSemaOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae219d08e4008ab5af6d6bd5186485246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae219d08e4008ab5af6d6bd5186485246">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x3C&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelSemaInfo">SceKernelSemaInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2d930d794255b3ef29ebe65c4af8d16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d930d794255b3ef29ebe65c4af8d16d">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacd52bec7c3899c971058478080b14eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd52bec7c3899c971058478080b14eeb">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x38&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1c3a17abdac0face224bfd787284b8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c3a17abdac0face224bfd787284b8c1">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x10&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondWork">SceKernelLwCondWork</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9b29927969289a3c2c41406ceb58dece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b29927969289a3c2c41406ceb58dece">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwCondOptParam">SceKernelLwCondOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaab497a9d4e5009f527600c05abc91f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaab497a9d4e5009f527600c05abc91f0">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x20&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexWork">SceKernelLwMutexWork</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a1e017e3e2eebb9376522417a71f18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a1e017e3e2eebb9376522417a71f18f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelLwMutexOptParam">SceKernelLwMutexOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga39f41af55c85980b0a118278a7143f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39f41af55c85980b0a118278a7143f8b">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9b724b7deeb54bb1dbc2e058a7bf41b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b724b7deeb54bb1dbc2e058a7bf41b4">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[18/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x3C&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0c0bbdad70d3dcb7b0f6311fe2d33dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c0bbdad70d3dcb7b0f6311fe2d33dbb">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[19/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondOptParam">SceKernelCondOptParam</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga86d682831acecf54dbe2da4f28117d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86d682831acecf54dbe2da4f28117d59">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[20/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x34&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCondInfo">SceKernelCondInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

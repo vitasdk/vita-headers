@@ -1,7 +1,5 @@
 var kernel_2threadmgr_2callback_8h =
 [
-    [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga6f3985da305cd603b6ad27aba47c1b5f", null ],
     [ "sceKernelCreateCallback", "group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b", null ],
     [ "sceKernelGetCallbackInfo", "group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f", null ],
     [ "sceKernelDeleteCallback", "group__SceThreadMgrUser.html#ga08fcc15c1357518a5b910066c9cb1666", null ],

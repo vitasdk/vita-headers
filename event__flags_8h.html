@@ -73,8 +73,6 @@ $(document).ready(function(){initNavTree('event__flags_8h.html',''); initResizab
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">event_flags.h File Reference</div>  </div>
@@ -82,52 +80,12 @@ $(document).ready(function(){initNavTree('event__flags_8h.html',''); initResizab
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ommon_2kernel_2threadmgr_8h_source.html">psp2common/kernel/threadmgr.h</a>&gt;</code><br />
 </div>
 <p><a href="event__flags_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structSceKernelEventFlagOptParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a></td></tr>
-<tr class="separator:structSceKernelEventFlagOptParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelEventFlagInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a></td></tr>
-<tr class="memdesc:structSceKernelEventFlagInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to hold the event flag information.  <a href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelEventFlagInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga32240cfc9096477a62cfad5ee4768791"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga32240cfc9096477a62cfad5ee4768791">SceEventFlagAttributes</a> { <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791abb282c0531bc7673150732bedf13f4a8">SCE_EVENT_THREAD_FIFO</a> = SCE_KERNEL_ATTR_THREAD_FIFO
-, <a class="el" href="group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a043ee70862b8a66d35c71674b5b5279c">SCE_EVENT_THREAD_PRIO</a> = SCE_KERNEL_ATTR_THREAD_PRIO
-, <a class="el" href="group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a2663bd3ddfbb9859304db39b2e331841">SCE_EVENT_WAITSINGLE</a> = 0
-, <a class="el" href="group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3">SCE_EVENT_WAITMULTIPLE</a> = 0x00001000
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791a82e7053e0c4bdc5c684178701e057849">SCE_EVENT_OPENABLE</a> = SCE_KERNEL_ATTR_OPENABLE
-, <a class="el" href="group__SceThreadMgrKernel.html#gga32240cfc9096477a62cfad5ee4768791aa0e5c42fdd6464a558f2a1fe6effa0d3">SCE_EVENT_WAITMULTIPLE</a> = 0x1000
-<br />
- }</td></tr>
-<tr class="memdesc:ga32240cfc9096477a62cfad5ee4768791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event flag creation attributes.  <a href="group__SceThreadMgrKernel.html#ga32240cfc9096477a62cfad5ee4768791">More...</a><br /></td></tr>
-<tr class="separator:ga32240cfc9096477a62cfad5ee4768791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga705f51eec6069fac8fdd74d430472843"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga705f51eec6069fac8fdd74d430472843">SceEventFlagWaitTypes</a> { <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b">SCE_EVENT_WAITAND</a> = 0
-, <a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04">SCE_EVENT_WAITOR</a> = 1
-, <a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10">SCE_EVENT_WAITCLEAR</a> = 2
-, <a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23">SCE_EVENT_WAITCLEAR_PAT</a> = 4
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a29d7fd92bfcb7eb11354b4e3cbddc39b">SCE_EVENT_WAITAND</a> = 0
-, <a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843ad44fc701f872045e2e251ec1f90c2a04">SCE_EVENT_WAITOR</a> = 1
-, <a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843abf5597c6681a253a772a9c8ae32fcd10">SCE_EVENT_WAITCLEAR</a> = 2
-, <a class="el" href="group__SceThreadMgrKernel.html#gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23">SCE_EVENT_WAITCLEAR_PAT</a> = 4
-<br />
- }</td></tr>
-<tr class="memdesc:ga705f51eec6069fac8fdd74d430472843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event flag wait types.  <a href="group__SceThreadMgrKernel.html#ga705f51eec6069fac8fdd74d430472843">More...</a><br /></td></tr>
-<tr class="separator:ga705f51eec6069fac8fdd74d430472843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga2d930d794255b3ef29ebe65c4af8d16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga2d930d794255b3ef29ebe65c4af8d16d">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam">SceKernelEventFlagOptParam</a>)</td></tr>
-<tr class="separator:ga2d930d794255b3ef29ebe65c4af8d16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd52bec7c3899c971058478080b14eeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gacd52bec7c3899c971058478080b14eeb">VITASDK_BUILD_ASSERT_EQ</a> (0x38, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a>)</td></tr>
-<tr class="separator:gacd52bec7c3899c971058478080b14eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">ksceKernelGetEventFlagInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelEventFlagInfo">SceKernelEventFlagInfo</a> *info)</td></tr>
 <tr class="memdesc:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get event flags info.  <a href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">More...</a><br /></td></tr>
 <tr class="separator:gab45ad76d83db1f7bba7900d2a38f01e3"><td class="memSeparator" colspan="2">&#160;</td></tr>

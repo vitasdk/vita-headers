@@ -73,9 +73,6 @@ $(document).ready(function(){initNavTree('ern_2kernel_2threadmgr_2thread_8h.html
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">thread.h File Reference</div>  </div>
@@ -83,70 +80,13 @@ $(document).ready(function(){initNavTree('ern_2kernel_2threadmgr_2thread_8h.html
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ommon_2kernel_2threadmgr_8h_source.html">psp2common/kernel/threadmgr.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2kernel_2threadmgr_2thread_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structSceKernelThreadOptParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a></td></tr>
-<tr class="memdesc:structSceKernelThreadOptParam"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional options used when creating threads.  <a href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelThreadOptParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelThreadInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></td></tr>
-<tr class="memdesc:structSceKernelThreadInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to hold the status information for a thread.  <a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelThreadInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelThreadRunStatus"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a></td></tr>
-<tr class="memdesc:structSceKernelThreadRunStatus"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics about a running thread.  <a href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelThreadRunStatus"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelThreadRunStatus_8cpuInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus_8cpuInfo">SceKernelThreadRunStatus.cpuInfo</a></td></tr>
-<tr class="separator:structSceKernelThreadRunStatus_8cpuInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaed1c8b50410fdccf5d5dc00563499662"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td></tr>
-<tr class="separator:gaed1c8b50410fdccf5d5dc00563499662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga552cbf506e81e208e4bf3e75badc1c40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga552cbf506e81e208e4bf3e75badc1c40">SceThreadStatus</a> { <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958">SCE_THREAD_RUNNING</a> = 1
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c">SCE_THREAD_READY</a> = 2
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2">SCE_THREAD_STANDBY</a> = 4
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e">SCE_THREAD_WAITING</a> = 8
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a24f465ecb5dabe84ef912447516e7637">SCE_THREAD_SUSPEND</a> = 8
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a54e85d186b3e69db94e4186116df331c">SCE_THREAD_DORMANT</a> = 16
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a56f4a808a0901deffe6249baedd764b8">SCE_THREAD_STOPPED</a> = 16
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad72f4388295e8f8564335351ba225c44">SCE_THREAD_DELETED</a> = 32
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a88e74bc6b07d25dffd2519ed837a358d">SCE_THREAD_KILLED</a> = 32
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48">SCE_THREAD_DEAD</a> = 64
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa">SCE_THREAD_STAGNANT</a> = 128
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093">SCE_THREAD_SUSPENDED</a> = 256
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a0a089353fbc88c9ab2ee7243ff1c6958">SCE_THREAD_RUNNING</a> = 1
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a44cc53f63bd1b1e4a52c3fa1f6b3d63c">SCE_THREAD_READY</a> = 2
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a35bbb20deb55c3b46a7688672adec8c2">SCE_THREAD_STANDBY</a> = 4
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad359e4765c5dc04dc073fe82179b3f9e">SCE_THREAD_WAITING</a> = 8
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a54e85d186b3e69db94e4186116df331c">SCE_THREAD_DORMANT</a> = 16
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40ad72f4388295e8f8564335351ba225c44">SCE_THREAD_DELETED</a> = 32
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48">SCE_THREAD_DEAD</a> = 64
-, <a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa">SCE_THREAD_STAGNANT</a> = 128
-, <br />
-&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093">SCE_THREAD_SUSPENDED</a> = 256
-<br />
- }</td></tr>
-<tr class="separator:ga552cbf506e81e208e4bf3e75badc1c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga66580ad672c63cb3b54a910e0dbbd331">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>)</td></tr>
-<tr class="separator:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaa74ad12a10bc8cfb5ef3469331569863">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>)</td></tr>
-<tr class="separator:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabad12e90a6c274821cd5f202ff3c7897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gabad12e90a6c274821cd5f202ff3c7897">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a>)</td></tr>
-<tr class="separator:gabad12e90a6c274821cd5f202ff3c7897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a41e5137d6c4e03291a54178e81f005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga6a41e5137d6c4e03291a54178e81f005">ksceKernelCreateThread</a> (const char *name, <a class="el" href="group__SceThreadMgrKernel.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a> entry, int initPriority, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> stackSize, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int cpuAffinityMask, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a> *option)</td></tr>
+<tr class="memitem:ga6a41e5137d6c4e03291a54178e81f005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga6a41e5137d6c4e03291a54178e81f005">ksceKernelCreateThread</a> (const char *name, <a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a> entry, int initPriority, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> stackSize, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int cpuAffinityMask, const <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a> *option)</td></tr>
 <tr class="memdesc:ga6a41e5137d6c4e03291a54178e81f005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread.  <a href="group__SceThreadMgrKernel.html#ga6a41e5137d6c4e03291a54178e81f005">More...</a><br /></td></tr>
 <tr class="separator:ga6a41e5137d6c4e03291a54178e81f005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a6a0829e34df8f407e6615e5bcff43e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4a6a0829e34df8f407e6615e5bcff43e">ksceKernelDeleteThread</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid)</td></tr>

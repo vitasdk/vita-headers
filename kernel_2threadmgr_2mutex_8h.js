@@ -1,11 +1,5 @@
 var kernel_2threadmgr_2mutex_8h =
 [
-    [ "SceKernelMutexAttribute", "group__SceThreadMgrUser.html#gacaf974d94877969095678f463230d242", [
-      [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
-      [ "SCE_KERNEL_MUTEX_ATTR_CEILING", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b", null ]
-    ] ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga39f41af55c85980b0a118278a7143f8b", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga9b724b7deeb54bb1dbc2e058a7bf41b4", null ],
     [ "sceKernelCreateMutex", "group__SceThreadMgrUser.html#ga86f0e930ecdef81393d7ff1d67ca5faf", null ],
     [ "sceKernelDeleteMutex", "group__SceThreadMgrUser.html#ga2c79ea0bef6c807b46650bd4a3f5d2f2", null ],
     [ "sceKernelOpenMutex", "group__SceThreadMgrUser.html#gaec88b8bd6f478426538b184ddd6816bf", null ],

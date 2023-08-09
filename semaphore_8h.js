@@ -1,7 +1,5 @@
 var semaphore_8h =
 [
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga5a3866ac4781d27797ba6178131666fd", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gae219d08e4008ab5af6d6bd5186485246", null ],
     [ "sceKernelCreateSema", "group__SceThreadMgrUser.html#gada2ceb5a89c2a999545844fa2cae9dad", null ],
     [ "sceKernelDeleteSema", "group__SceThreadMgrUser.html#gabfae2ae4f32fd9b1ffdfbb7ddd4af114", null ],
     [ "sceKernelSignalSema", "group__SceThreadMgrUser.html#gab81b0362839d7f9cbdcbf64305e7e603", null ],

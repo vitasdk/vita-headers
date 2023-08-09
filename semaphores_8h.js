@@ -1,7 +1,5 @@
 var semaphores_8h =
 [
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga5a3866ac4781d27797ba6178131666fd", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gae219d08e4008ab5af6d6bd5186485246", null ],
     [ "ksceKernelGetSemaInfo", "group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215", null ],
     [ "ksceKernelCreateSema", "group__SceThreadMgrKernel.html#gaf8a54d87b63526344ac0f27fe3f38c5a", null ],
     [ "ksceKernelDeleteSema", "group__SceThreadMgrKernel.html#gaa7e9ab55b646fd2afac24968feb6c690", null ],

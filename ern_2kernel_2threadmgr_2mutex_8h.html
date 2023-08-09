@@ -73,8 +73,6 @@ $(document).ready(function(){initNavTree('ern_2kernel_2threadmgr_2mutex_8h.html'
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mutex.h File Reference</div>  </div>
@@ -82,29 +80,12 @@ $(document).ready(function(){initNavTree('ern_2kernel_2threadmgr_2mutex_8h.html'
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ommon_2kernel_2threadmgr_8h_source.html">psp2common/kernel/threadmgr.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2kernel_2threadmgr_2mutex_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structSceKernelMutexOptParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a></td></tr>
-<tr class="memdesc:structSceKernelMutexOptParam"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional options used when creating mutexes.  <a href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelMutexOptParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceKernelMutexInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a></td></tr>
-<tr class="memdesc:structSceKernelMutexInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of a mutex.  <a href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelMutexInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga276cbf64a90f4dbb228165980b454361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga276cbf64a90f4dbb228165980b454361">SCE_KERNEL_MUTEX_ATTR_RECURSIVE</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga276cbf64a90f4dbb228165980b454361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga39f41af55c85980b0a118278a7143f8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga39f41af55c85980b0a118278a7143f8b">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a>)</td></tr>
-<tr class="separator:ga39f41af55c85980b0a118278a7143f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b724b7deeb54bb1dbc2e058a7bf41b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga9b724b7deeb54bb1dbc2e058a7bf41b4">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexInfo">SceKernelMutexInfo</a>)</td></tr>
-<tr class="separator:ga9b724b7deeb54bb1dbc2e058a7bf41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53754b346abbcd9caae1d3459316d47d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga53754b346abbcd9caae1d3459316d47d">ksceKernelCreateMutex</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga8583c5b1b9c46660e6bfb019b54e874c">SceUInt</a> attr, int initCount, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelMutexOptParam">SceKernelMutexOptParam</a> *option)</td></tr>
 <tr class="memdesc:ga53754b346abbcd9caae1d3459316d47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mutex.  <a href="group__SceThreadMgrKernel.html#ga53754b346abbcd9caae1d3459316d47d">More...</a><br /></td></tr>
 <tr class="separator:ga53754b346abbcd9caae1d3459316d47d"><td class="memSeparator" colspan="2">&#160;</td></tr>

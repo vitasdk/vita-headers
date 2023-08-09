@@ -1,7 +1,5 @@
 var ern_2kernel_2threadmgr_2lw__mutex_8h =
 [
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#gaaab497a9d4e5009f527600c05abc91f0", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga5a1e017e3e2eebb9376522417a71f18f", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrKernel.html#ga530f39c4168c2bb6fef65b0c98e0f345", null ],
     [ "ksceKernelGetLwMutexInfo", "group__SceThreadMgrKernel.html#ga63a8531d0d3b2d1790774776840e7638", null ],
     [ "ksceKernelInitializeFastMutex", "group__SceThreadMgrKernel.html#ga58cc836433bdf69b6be4877dc18a903c", null ],

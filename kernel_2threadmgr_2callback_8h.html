@@ -73,8 +73,6 @@ $(document).ready(function(){initNavTree('kernel_2threadmgr_2callback_8h.html','
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">callback.h File Reference</div>  </div>
@@ -82,26 +80,13 @@ $(document).ready(function(){initNavTree('kernel_2threadmgr_2callback_8h.html','
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2_2types_8h_source.html">psp2/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ommon_2kernel_2threadmgr_8h_source.html">psp2common/kernel/threadmgr.h</a>&gt;</code><br />
 </div>
 <p><a href="kernel_2threadmgr_2callback_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structSceKernelCallbackInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a></td></tr>
-<tr class="memdesc:structSceKernelCallbackInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to hold the status information for a callback.  <a href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">More...</a><br /></td></tr>
-<tr class="separator:structSceKernelCallbackInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga1466aebeba490fe29f9beb1adf84160e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a>) (int notifyId, int notifyCount, int notifyArg, void *userData)</td></tr>
-<tr class="memdesc:ga1466aebeba490fe29f9beb1adf84160e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function prototype.  <a href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">More...</a><br /></td></tr>
-<tr class="separator:ga1466aebeba490fe29f9beb1adf84160e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga6f3985da305cd603b6ad27aba47c1b5f">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a>)</td></tr>
-<tr class="separator:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d9ab619595e80459f2bffdca0fa888b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">sceKernelCreateCallback</a> (const char *name, unsigned int attr, <a class="el" href="group__SceThreadMgrKernel.html#ga42edb965a03ae988ec2e88af677e8714">SceKernelCallbackFunction</a> func, void *userData)</td></tr>
+<tr class="memitem:ga0d9ab619595e80459f2bffdca0fa888b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">sceKernelCreateCallback</a> (const char *name, unsigned int attr, <a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a> func, void *userData)</td></tr>
 <tr class="memdesc:ga0d9ab619595e80459f2bffdca0fa888b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create callback.  <a href="group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b">More...</a><br /></td></tr>
 <tr class="separator:ga0d9ab619595e80459f2bffdca0fa888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21f09cf87b713739db45043ffca7f43f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f">sceKernelGetCallbackInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> cb, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a> *infop)</td></tr>

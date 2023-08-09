@@ -2,11 +2,11 @@ var group__SceThreadMgrUser_structSceKernelThreadInfo =
 [
     [ "size", "group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be", null ],
     [ "processId", "group__SceThreadMgrUser.html#gadeff847365036cb16421d965b6b17c80", null ],
-    [ "name", "group__SceThreadMgrUser.html#gad61dd99a74bf523d96c4a4cbac1ec603", null ],
+    [ "name", "group__SceThreadMgrUser.html#gae56890fcacae673875d2d9eeefca3b17", null ],
     [ "attr", "group__SceThreadMgrUser.html#ga30339ccbd6ca7acc27bbddb0753c8491", null ],
     [ "status", "group__SceThreadMgrUser.html#ga2ebabdf7dc2da4ee310ea1befc8c1d99", null ],
     [ "entry", "group__SceThreadMgrUser.html#ga3ca76db6f243d1b628b21b1421a05582", null ],
-    [ "stack", "group__SceThreadMgrUser.html#gaf45401f5a22dfcde99d76b8341837b80", null ],
+    [ "stack", "group__SceThreadMgrUser.html#ga6fa6536d29c24261e6c582ec89f35547", null ],
     [ "stackSize", "group__SceThreadMgrUser.html#gaee96dd5e893c7798736b85fbdf95f44b", null ],
     [ "initPriority", "group__SceThreadMgrUser.html#ga54d32fa74cf85a6e32e59c933b0b0a3d", null ],
     [ "currentPriority", "group__SceThreadMgrUser.html#gace2dd3b21d7db7b88784313d5d191a1a", null ],

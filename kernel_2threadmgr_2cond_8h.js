@@ -1,7 +1,5 @@
 var kernel_2threadmgr_2cond_8h =
 [
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga0c0bbdad70d3dcb7b0f6311fe2d33dbb", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga86d682831acecf54dbe2da4f28117d59", null ],
     [ "sceKernelCreateCond", "group__SceThreadMgrUser.html#ga49188b83b8954dc367fdbe4709424729", null ],
     [ "sceKernelDeleteCond", "group__SceThreadMgrUser.html#ga2c719ce688b6a8cf699b2829cae70098", null ],
     [ "sceKernelOpenCond", "group__SceThreadMgrUser.html#ga80f9140d8b5b22f84cacb5ae58e8f20a", null ],
