@@ -148,10 +148,9 @@ var NAVTREEINDEX =
 "group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0aaff6f1f5eee828fce9d50435333b7d93",
 "group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44",
 "group__SceUsbdKernel.html#gaea15c9e75b573d065050efee195a98fd",
-"group__SceUsbdKernel.html#ggaf788ac99ab1c666d59f94586ee7e8fe9a7cf783b4005dac959a6645050ae60be4",
-"group__SceUtilsKernel.html#ga36ccc6490b838eb5f932fdda76dff670",
-"group__SceVshBridgeUser.html#ga30ca874c7bd029ef2807525c16d9ddfb",
-"psp2common_2display_8h.html"
+"group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533",
+"group__SceVideoDecUser.html#ggaf81c12ed1ad94fbb7ec55a9a0ce66118af764bb851aa3657d28cd6b54868dc895",
+"psp2_2npdrm_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
