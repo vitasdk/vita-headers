@@ -6,8 +6,8 @@
 #include <psp2/ctrl.h>
 #include <psp2kern/ctrl.h>
 
-// #include <psp2/net/net.h>
-// #include <psp2kern/net/net.h>
+#include <psp2/net/net.h>
+#include <psp2kern/net/net.h>
 
 #include <psp2/kernel/threadmgr.h>
 #include <psp2kern/kernel/threadmgr.h>
@@ -36,6 +36,9 @@
 
 #include <psp2/usbd.h>
 #include <psp2kern/usbd.h>
+
+// #include <psp2/usbserv.h>
+// #include <psp2kern/usbserv.h>
 
 __attribute__ ((used)) const unsigned int version = PSP2_SDK_VERSION;
 
