@@ -10,12 +10,6 @@
 extern "C" {
 #endif
 
-typedef enum SceKernelWaitableAttribute {
-	SCE_KERNEL_ATTR_THREAD_FIFO  = 0x00000000, //!< Waiting threads First input First output
-	SCE_KERNEL_ATTR_THREAD_PRIO  = 0x00002000, //!< Waiting threads queued on priority basis
-	SCE_KERNEL_ATTR_OPENABLE     = 0x00000080  //!< Sync object can be accessed by sceKernelOpenXxx
-} SceKernelWaitableAttribute;
-
 #ifdef __cplusplus
 }
 #endif

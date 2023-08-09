@@ -3,108 +3,17 @@
  * \usage{psp2kern/kernel/threadmgr/thread.h,SceThreadmgrForDriver_stub}
  */
 
-
 #ifndef _PSP2KERN_KERNEL_THREADMGR_THREAD_H_
 #define _PSP2KERN_KERNEL_THREADMGR_THREAD_H_
 
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-
-typedef int (* SceKernelThreadEntry)(SceSize args, void *argp);
-
-/** Additional options used when creating threads. */
-typedef struct SceKernelThreadOptParam {
-	/** Size of the ::SceKernelThreadOptParam structure. */
-	SceSize   size;
-	/** Attributes */
-	SceUInt32       attr;
-} SceKernelThreadOptParam;
-VITASDK_BUILD_ASSERT_EQ(8, SceKernelThreadOptParam);
-
-/** Structure to hold the status information for a thread
-  * @see ksceKernelGetThreadInfo
-  */
-typedef struct SceKernelThreadInfo {
-	/** Size of the structure */
-	SceSize              size;
-	/** The UID of the process where the thread belongs */
-	SceUID               processId;
-	/** Nul terminated name of the thread */
-	char                 name[32];
-	/** Thread attributes */
-	SceUInt32            attr;
-	/** Thread status */
-	SceUInt32            status;
-	/** Thread entry point */
-	SceKernelThreadEntry entry;
-	/** Thread stack pointer */
-	void                 *stack;
-	/** Thread stack size */
-	SceInt32             stackSize;
-	/** Initial priority */
-	SceInt32             initPriority;
-	/** Current priority */
-	SceInt32             currentPriority;
-	/** Initial CPU affinity mask */
-	SceInt32             initCpuAffinityMask;
-	/** Current CPU affinity mask */
-	SceInt32             currentCpuAffinityMask;
-	/** Current CPU ID */
-	SceInt32             currentCpuId;
-	/** Last executed CPU ID */
-	SceInt32             lastExecutedCpuId;
-	/** Wait type */
-	SceUInt32            waitType;
-	/** Wait id */
-	SceUID               waitId;
-	/** Exit status of the thread */
-	SceInt32             exitStatus;
-	/** Number of clock cycles run */
-	SceKernelSysClock    runClocks;
-	/** Interrupt preemption count */
-	SceUInt32            intrPreemptCount;
-	/** Thread preemption count */
-	SceUInt32            threadPreemptCount;
-	/** Thread release count */
-	SceUInt32            threadReleaseCount;
-	/** Number of CPUs to which the thread is moved */
-	SceInt32             changeCpuCount;
-	/** Function notify callback UID */
-	SceInt32             fNotifyCallback;
-	/** Reserved */
-	SceInt32             reserved;
-} SceKernelThreadInfo;
-VITASDK_BUILD_ASSERT_EQ(0x80, SceKernelThreadInfo);
-
-/** Statistics about a running thread.
- * @see ksceKernelGetThreadRunStatus.
- */
-typedef struct SceKernelThreadRunStatus {
-	SceSize        size;
-	struct {
-		SceUID processId;
-		SceUID threadId;
-		int    priority;
-	} cpuInfo[4];
-} SceKernelThreadRunStatus;
-VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelThreadRunStatus);
-
-typedef enum SceThreadStatus {
-	SCE_THREAD_RUNNING   = 1,
-	SCE_THREAD_READY     = 2,
-	SCE_THREAD_STANDBY   = 4,
-	SCE_THREAD_WAITING   = 8,
-	SCE_THREAD_DORMANT   = 16,
-	SCE_THREAD_DELETED   = 32, /* Thread manager has killed the thread (stack overflow) */
-	SCE_THREAD_DEAD      = 64,
-	SCE_THREAD_STAGNANT  = 128,
-	SCE_THREAD_SUSPENDED = 256
-} SceThreadStatus;
 
 /**
  * \brief Create a thread
