@@ -145,13 +145,13 @@ var NAVTREEINDEX =
 "group__SceTriggerUtilUser.html#ga34a27c375e1cdccb0e7a64626acff406",
 "group__SceTypesKernel.html#gaf72989c578a407c258362de759e5901c",
 "group__SceUdcdKernel.html#gab57c4cf22ac08fbfc4750bef6049435f",
-"group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0a44e21463218b78f0ab1ed136df02a3d7",
-"group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ac653dd47d6f116a41178d396cdb94feb",
-"group__SceUsbdKernel.html#ga9e0c06cb4d7d8c9f0ce3ff7f298c495a",
-"group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda3438a107662811debdf003e46beaa92d",
-"group__SceUsbdUser.html#ga9e4bceca2f846581cfc3a5170f6303ea",
-"group__SceVideoDecUser.html#ggacab7dff1511b1a3851ffeec15fb9d3eaa19c98b8a75796bd0360d751e61869054",
-"message__dialog_8h.html"
+"group__SceUdcdKernel.html#ggabed431682dbbdd502c439344809679b0aaff6f1f5eee828fce9d50435333b7d93",
+"group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44",
+"group__SceUsbdKernel.html#gaea15c9e75b573d065050efee195a98fd",
+"group__SceUsbdKernel.html#ggaf788ac99ab1c666d59f94586ee7e8fe9a7cf783b4005dac959a6645050ae60be4",
+"group__SceUtilsKernel.html#ga36ccc6490b838eb5f932fdda76dff670",
+"group__SceVshBridgeUser.html#ga30ca874c7bd029ef2807525c16d9ddfb",
+"psp2common_2display_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
