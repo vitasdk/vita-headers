@@ -84,7 +84,8 @@ int ksceDmacMemset(void *dst, int c, SceSize size);
 
 #define SCE_KERNEL_DMAC_CMD_COHERENT_SRC         (0x01000000) //!< L2 Cache Coherent pTag->src accesses
 #define SCE_KERNEL_DMAC_CMD_COHERENT_DST         (0x02000000) //!< L2 Cache Coherent pTag->dst accesses
-#define SCE_KERNEL_DMAC_CMD_COHERENT_IV          (0x0C000000) //!< L2 Cache Coherent pTag->iv accesses
+#define SCE_KERNEL_DMAC_CMD_COHERENT_IV_READ     (0x04000000) //!< L2 Cache Coherent pTag->iv reads
+#define SCE_KERNEL_DMAC_CMD_COHERENT_IV_WRITE    (0x08000000) //!< L2 Cache Coherent pTag->iv writes
 /** @} */
 
 /**
@@ -114,7 +115,7 @@ int ksceDmacMemset(void *dst, int c, SceSize size);
 /**
  * @name Coherency mask fields
  * 
- * This field, along with the SCE_KERNEL_DMAC_CMD_COHERENT_* command flags, control cache coherency behavior. \n
+ * This field, along with the SCE_KERNEL_DMAC_CMD_COHERENT_{SRC/DST} command flags, control cache coherency behavior for the src and dst. \n
  * The actual encoding of the subfields is still unknown. \n
  * Observed values: \n
  * DmacMemcpy - 0x3E7F3 (src: 0x1F3 dst: 0x1F3) \n
@@ -126,12 +127,30 @@ int ksceDmacMemset(void *dst, int c, SceSize size);
 #define SCE_KERNEL_DMAC_COHERENCY_MSK_SRC_MASK     (0x000001FF)
 
 #define SCE_KERNEL_DMAC_COHERENCY_MSK_DST_SHIFT    (9)
-#define SCE_KERNEL_DMAC_COHERENCY_MSK_DST_MASK     (0x0003FC00)
+#define SCE_KERNEL_DMAC_COHERENCY_MSK_DST_MASK     (0x0003FE00)
 
 #define SCE_KERNEL_DMAC_COHERENCY_MSK_SRC_DST_MASK (0x0003FFFF)
 
 #define SCE_KERNEL_DMAC_COHERENCY_MSK_UNK_SHIFT    (18)
-#define SCE_KERNEL_DMAC_COHERENCY_MSK_UNK_MASK     (0x07FC0000) //!< This mask is set internally by DmacMgr. It affects either DMA tag or IV coherency
+#define SCE_KERNEL_DMAC_COHERENCY_MSK_UNK_MASK     (0x07FC0000) //!< This mask is set internally by DmacMgr. It likely affects the coherency of the DMA tag reads
+/** @} */
+
+/**
+ * @name IV Coherency mask fields
+ * 
+ * This field, along with the SCE_KERNEL_DMAC_CMD_COHERENT_IV_{READ/WRITE} command flags, control cache coherency behavior for the iv. \n
+ * The actual encoding of the subfields is still unknown. \n
+ * Observed values: \n
+ * SblDmac5   - 0x1FF01FF (read: 0x1FF write: 0x1FF) \n
+ */
+/** @{ */
+#define SCE_KERNEL_DMAC_IV_COHERENCY_MSK_READ_SHIFT  (0)
+#define SCE_KERNEL_DMAC_IV_COHERENCY_MSK_READ_MASK   (0x000001FF)
+
+#define SCE_KERNEL_DMAC_IV_COHERENCY_MSK_WRITE_SHIFT (16)
+#define SCE_KERNEL_DMAC_IV_COHERENCY_MSK_WRITE_MASK  (0x01FF0000)
+
+#define SCE_KERNEL_DMAC_IV_COHERENCY_MSK_RW_MASK     (0x01FF01FF)
 /** @} */
 
 /** @} */
@@ -167,7 +186,7 @@ typedef struct SceKernelDmaOpTag {
     SceUInt32 len;
     SceUInt32 cmd; //!< Bitwise combination of SCE_KERNEL_DMAC_CMD_* fields
     SceUInt32 keyring;
-    void *iv;
+    void *iv; //!< Must be a physical address
     SceUInt32 blockSize;
     struct SceKernelDmaOpTag *pNext; //!< Set to SCE_KERNEL_DMAC_CHAIN_END to signify the last tag
 } SceKernelDmaOpTag;
@@ -175,8 +194,8 @@ VITASDK_BUILD_ASSERT_EQ(0x20, SceKernelDmaOpTag);
 
 typedef struct SceKernelDmaOpEncDec {
     SceUInt32 keyring;
-    void *iv;
-    SceUInt32 unk_0x8;
+    void *iv; //!< Must be a physical address
+    SceUInt32 ivCoherencyMask;
     SceUInt32 reserved;
     SceUInt8 key[0x40];
 } SceKernelDmaOpEncDec;
