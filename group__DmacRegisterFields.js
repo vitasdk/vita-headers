@@ -28,7 +28,8 @@ var group__DmacRegisterFields =
     [ "SCE_KERNEL_DMAC_CMD_HASH_FINALIZE", "group__DmacRegisterFields.html#ga1d3cdae75152cad3d7cc9d4ab58eec45", null ],
     [ "SCE_KERNEL_DMAC_CMD_COHERENT_SRC", "group__DmacRegisterFields.html#gac8f102788104fab376d94dbaf9153c46", null ],
     [ "SCE_KERNEL_DMAC_CMD_COHERENT_DST", "group__DmacRegisterFields.html#gae7c2d6bf30d54559978ecd5a5ed7b9f2", null ],
-    [ "SCE_KERNEL_DMAC_CMD_COHERENT_IV", "group__DmacRegisterFields.html#ga54d99f988e27999450b66fcde538cc1d", null ],
+    [ "SCE_KERNEL_DMAC_CMD_COHERENT_IV_READ", "group__DmacRegisterFields.html#ga11a7e9db299e234c219aaeb31eb57f63", null ],
+    [ "SCE_KERNEL_DMAC_CMD_COHERENT_IV_WRITE", "group__DmacRegisterFields.html#ga38d97b323622f15263d52daa71e1b67e", null ],
     [ "SCE_KERNEL_DMAC_BLOCKSIZE_SRC_SHIFT", "group__DmacRegisterFields.html#ga574c321ed8746102e78e13992b4e9e0d", null ],
     [ "SCE_KERNEL_DMAC_BLOCKSIZE_SRC_MASK", "group__DmacRegisterFields.html#ga85c43cd11f7b7b2b8bca5b68d9f6a86b", null ],
     [ "SCE_KERNEL_DMAC_BLOCKSIZE_DST_SHIFT", "group__DmacRegisterFields.html#gaee76eef837cea1a262d90e8b793a88d1", null ],
@@ -46,5 +47,10 @@ var group__DmacRegisterFields =
     [ "SCE_KERNEL_DMAC_COHERENCY_MSK_DST_MASK", "group__DmacRegisterFields.html#gabadb81b0869306885496ebbff9b3eac3", null ],
     [ "SCE_KERNEL_DMAC_COHERENCY_MSK_SRC_DST_MASK", "group__DmacRegisterFields.html#ga89f8ebaf618f7dd51836ac32c1dc1231", null ],
     [ "SCE_KERNEL_DMAC_COHERENCY_MSK_UNK_SHIFT", "group__DmacRegisterFields.html#ga9247566efde12ff3cd27dcb8afb6ea8d", null ],
-    [ "SCE_KERNEL_DMAC_COHERENCY_MSK_UNK_MASK", "group__DmacRegisterFields.html#ga11422461d0902f8b2a800f602bec9455", null ]
+    [ "SCE_KERNEL_DMAC_COHERENCY_MSK_UNK_MASK", "group__DmacRegisterFields.html#ga11422461d0902f8b2a800f602bec9455", null ],
+    [ "SCE_KERNEL_DMAC_IV_COHERENCY_MSK_READ_SHIFT", "group__DmacRegisterFields.html#ga8564e0bf39ae643e2c012cabe5599cad", null ],
+    [ "SCE_KERNEL_DMAC_IV_COHERENCY_MSK_READ_MASK", "group__DmacRegisterFields.html#ga1d05027f6f6710ef7e021b02115ea6a9", null ],
+    [ "SCE_KERNEL_DMAC_IV_COHERENCY_MSK_WRITE_SHIFT", "group__DmacRegisterFields.html#gaa9cb7692daad21fcbe0d3072a45c9066", null ],
+    [ "SCE_KERNEL_DMAC_IV_COHERENCY_MSK_WRITE_MASK", "group__DmacRegisterFields.html#gab22814687335d1a144d1107986419088", null ],
+    [ "SCE_KERNEL_DMAC_IV_COHERENCY_MSK_RW_MASK", "group__DmacRegisterFields.html#ga9fd7e7d84de77b767917f5ba47a81937", null ]
 ];
