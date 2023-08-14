@@ -125,6 +125,16 @@ $(document).ready(function(){initNavTree('group__SceThreadMgrKernel.html',''); i
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fast__mutex_8h.html">psp2kern/kernel/threadmgr/fast_mutex.h</a>&gt;</span> </div>
+<div class="ttc" id="afast__mutex_8h_html"><div class="ttname"><a href="fast__mutex_8h.html">fast_mutex.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceThreadmgrForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2threadmgr_2lw__cond_8h.html">psp2kern/kernel/threadmgr/lw_cond.h</a>&gt;</span> </div>
 <div class="ttc" id="aern_2kernel_2threadmgr_2lw__cond_8h_html"><div class="ttname"><a href="ern_2kernel_2threadmgr_2lw__cond_8h.html">lw_cond.h</a></div></div>
 </div><!-- fragment --><p><br  />
@@ -311,6 +321,20 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2b04ad24aa84f0dfba882ace1eca58af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga2b04ad24aa84f0dfba882ace1eca58af">ksceKernelDeleteEventFlag</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> evfid)</td></tr>
 <tr class="memdesc:ga2b04ad24aa84f0dfba882ace1eca58af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an event flag.  <a href="group__SceThreadMgrKernel.html#ga2b04ad24aa84f0dfba882ace1eca58af">More...</a><br /></td></tr>
 <tr class="separator:ga2b04ad24aa84f0dfba882ace1eca58af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac6f5069937799a3cdafeb685eb12bc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaac6f5069937799a3cdafeb685eb12bc9">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a>)</td></tr>
+<tr class="separator:gaac6f5069937799a3cdafeb685eb12bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ae2c6a5ecc4cbb21871918ba0f87c62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4ae2c6a5ecc4cbb21871918ba0f87c62">ksceKernelInitializeFastMutex</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *fast_mutex, const char *name, int attr, void *opt)</td></tr>
+<tr class="separator:ga4ae2c6a5ecc4cbb21871918ba0f87c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93cf79391f777f9cd6c69e643dae37d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga93cf79391f777f9cd6c69e643dae37d6">ksceKernelFinalizeFastMutex</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *fast_mutex)</td></tr>
+<tr class="separator:ga93cf79391f777f9cd6c69e643dae37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ed9bfb944e56abcb645d0c949be5bf5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga1ed9bfb944e56abcb645d0c949be5bf5">ksceKernelLockFastMutex</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *fast_mutex)</td></tr>
+<tr class="separator:ga1ed9bfb944e56abcb645d0c949be5bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f4faf42e2a75c5ddfd1db0589d9ff14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga3f4faf42e2a75c5ddfd1db0589d9ff14">ksceKernelTryLockFastMutex</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *fast_mutex)</td></tr>
+<tr class="separator:ga3f4faf42e2a75c5ddfd1db0589d9ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb3280c17f1f145afabde276efb2648f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaeb3280c17f1f145afabde276efb2648f">ksceKernelUnlockFastMutex</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *fast_mutex)</td></tr>
+<tr class="separator:gaeb3280c17f1f145afabde276efb2648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d1bd89fe66b8c339ed13ab1b0819ed5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga9d1bd89fe66b8c339ed13ab1b0819ed5">ksceKernelGetFastMutexInfo</a> (<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *fast_mutex, void *info)</td></tr>
+<tr class="separator:ga9d1bd89fe66b8c339ed13ab1b0819ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4af92e15ec19ff5d1934427d549f7e1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4af92e15ec19ff5d1934427d549f7e1f">VITASDK_BUILD_ASSERT_EQ</a> (0x38, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwCondInfo">SceKernelLwCondInfo</a>)</td></tr>
 <tr class="separator:ga4af92e15ec19ff5d1934427d549f7e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f5049bf8b2c47b32715d1c95d0c2f06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga9f5049bf8b2c47b32715d1c95d0c2f06">ksceKernelGetLwCondInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> lwcond_id, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwCondInfo">SceKernelLwCondInfo</a> *info)</td></tr>
@@ -319,14 +343,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga530f39c4168c2bb6fef65b0c98e0f345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63a8531d0d3b2d1790774776840e7638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga63a8531d0d3b2d1790774776840e7638">ksceKernelGetLwMutexInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> lwmtxid, <a class="el" href="group__SceThreadMgrKernel.html#structSceKernelLwMutexInfo">SceKernelLwMutexInfo</a> *info)</td></tr>
 <tr class="separator:ga63a8531d0d3b2d1790774776840e7638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58cc836433bdf69b6be4877dc18a903c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga58cc836433bdf69b6be4877dc18a903c">ksceKernelInitializeFastMutex</a> (void *mutex, const char *name, int <a class="el" href="group__SceUsbdKernel.html#ga63ff4c385fe8aae14ae8fea192caadf0">unk0</a>, int <a class="el" href="group__SceUsbdKernel.html#gae5acfd9819cda5f971743bcb2a5dd9d9">unk1</a>)</td></tr>
-<tr class="separator:ga58cc836433bdf69b6be4877dc18a903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga053a7d832e9b6eafe26bd191a974d100"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga053a7d832e9b6eafe26bd191a974d100">ksceKernelLockFastMutex</a> (void *mutex)</td></tr>
-<tr class="separator:ga053a7d832e9b6eafe26bd191a974d100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6651302d69a54a7c328f93bb824f6c9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga6651302d69a54a7c328f93bb824f6c9b">ksceKernelUnlockFastMutex</a> (void *mutex)</td></tr>
-<tr class="separator:ga6651302d69a54a7c328f93bb824f6c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga566c1763c066786ae1871dbcf8e509c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga566c1763c066786ae1871dbcf8e509c1">ksceKernelDeleteFastMutex</a> (void *mutex)</td></tr>
-<tr class="separator:ga566c1763c066786ae1871dbcf8e509c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga163c78f3bb573018e2e4c9b61071cc70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc">SceKernelIdListType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga163c78f3bb573018e2e4c9b61071cc70">ksceKernelGetThreadmgrUIDClass</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr class="memdesc:ga163c78f3bb573018e2e4c9b61071cc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of a Threadmgr uid.  <a href="group__SceThreadMgrKernel.html#ga163c78f3bb573018e2e4c9b61071cc70">More...</a><br /></td></tr>
 <tr class="separator:ga163c78f3bb573018e2e4c9b61071cc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,6 +497,8 @@ Typedefs</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ga7850183f206dd0db1c222cc745af5f36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga7850183f206dd0db1c222cc745af5f36">ksceKernelGetFaultingProcessInfo</a>(info)&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a>((<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>*)info)</td></tr>
 <tr class="separator:ga7850183f206dd0db1c222cc745af5f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadeb83085041b336eb2017478774f49da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gadeb83085041b336eb2017478774f49da">ksceKernelDeleteFastMutex</a>(__fast_mutex__)&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga93cf79391f777f9cd6c69e643dae37d6">ksceKernelFinalizeFastMutex</a>((__fast_mutex__))</td></tr>
+<tr class="separator:gadeb83085041b336eb2017478774f49da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceArmCpuRegisters" id="structSceArmCpuRegisters"></a>
@@ -685,6 +703,29 @@ pid</td>
 <a id="ga52792d3d6f0a3b0344ee1dbe786365c4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
 <td class="fieldname">
 faultingThreadId</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceKernelFastMutex" id="structSceKernelFastMutex"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelFastMutex">&#9670;&nbsp;</a></span>SceKernelFastMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelFastMutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gad6728f4ee10e5b24eeab01589e69db4a"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
+<td class="fieldname">
+data[0x40]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -1015,6 +1056,24 @@ Set of registers used for kernel mode. </td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">info</td><td>)</td>
           <td>&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga68abb1fc16bacdda4e7f06a5194489c1">ksceKernelGetThreadContextInfo</a>((<a class="el" href="group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo">SceKernelThreadContextInfo</a>*)info)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadeb83085041b336eb2017478774f49da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadeb83085041b336eb2017478774f49da">&#9670;&nbsp;</a></span>ksceKernelDeleteFastMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceKernelDeleteFastMutex</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__fast_mutex__</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__SceThreadMgrKernel.html#ga93cf79391f777f9cd6c69e643dae37d6">ksceKernelFinalizeFastMutex</a>((__fast_mutex__))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1475,7 +1534,7 @@ Set of registers used for kernel mode. </td></tr>
 </div>
 </div>
 <a id="gaf375fb1aad5054206d977ec9fab8583f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf375fb1aad5054206d977ec9fab8583f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf375fb1aad5054206d977ec9fab8583f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1503,7 +1562,7 @@ Set of registers used for kernel mode. </td></tr>
 </div>
 </div>
 <a id="ga57219062bec00bff0a756a0862fa6b78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga57219062bec00bff0a756a0862fa6b78">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57219062bec00bff0a756a0862fa6b78">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1531,7 +1590,7 @@ Set of registers used for kernel mode. </td></tr>
 </div>
 </div>
 <a id="ga175e7c1f486780c0c5a2d56e591852a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga175e7c1f486780c0c5a2d56e591852a9">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga175e7c1f486780c0c5a2d56e591852a9">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2306,8 +2365,176 @@ Set of registers used for kernel mode. </td></tr>
 
 </div>
 </div>
+<a id="gaac6f5069937799a3cdafeb685eb12bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac6f5069937799a3cdafeb685eb12bc9">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x40&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4ae2c6a5ecc4cbb21871918ba0f87c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ae2c6a5ecc4cbb21871918ba0f87c62">&#9670;&nbsp;</a></span>ksceKernelInitializeFastMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelInitializeFastMutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *&#160;</td>
+          <td class="paramname"><em>fast_mutex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga93cf79391f777f9cd6c69e643dae37d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93cf79391f777f9cd6c69e643dae37d6">&#9670;&nbsp;</a></span>ksceKernelFinalizeFastMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelFinalizeFastMutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *&#160;</td>
+          <td class="paramname"><em>fast_mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1ed9bfb944e56abcb645d0c949be5bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ed9bfb944e56abcb645d0c949be5bf5">&#9670;&nbsp;</a></span>ksceKernelLockFastMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelLockFastMutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *&#160;</td>
+          <td class="paramname"><em>fast_mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3f4faf42e2a75c5ddfd1db0589d9ff14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f4faf42e2a75c5ddfd1db0589d9ff14">&#9670;&nbsp;</a></span>ksceKernelTryLockFastMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelTryLockFastMutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *&#160;</td>
+          <td class="paramname"><em>fast_mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeb3280c17f1f145afabde276efb2648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb3280c17f1f145afabde276efb2648f">&#9670;&nbsp;</a></span>ksceKernelUnlockFastMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelUnlockFastMutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *&#160;</td>
+          <td class="paramname"><em>fast_mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9d1bd89fe66b8c339ed13ab1b0819ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d1bd89fe66b8c339ed13ab1b0819ed5">&#9670;&nbsp;</a></span>ksceKernelGetFastMutexInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetFastMutexInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> *&#160;</td>
+          <td class="paramname"><em>fast_mutex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga4af92e15ec19ff5d1934427d549f7e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4af92e15ec19ff5d1934427d549f7e1f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4af92e15ec19ff5d1934427d549f7e1f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2363,7 +2590,7 @@ Set of registers used for kernel mode. </td></tr>
 </div>
 </div>
 <a id="ga530f39c4168c2bb6fef65b0c98e0f345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga530f39c4168c2bb6fef65b0c98e0f345">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga530f39c4168c2bb6fef65b0c98e0f345">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2412,100 +2639,6 @@ Set of registers used for kernel mode. </td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga58cc836433bdf69b6be4877dc18a903c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58cc836433bdf69b6be4877dc18a903c">&#9670;&nbsp;</a></span>ksceKernelInitializeFastMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelInitializeFastMutex </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>mutex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga053a7d832e9b6eafe26bd191a974d100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga053a7d832e9b6eafe26bd191a974d100">&#9670;&nbsp;</a></span>ksceKernelLockFastMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelLockFastMutex </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>mutex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6651302d69a54a7c328f93bb824f6c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6651302d69a54a7c328f93bb824f6c9b">&#9670;&nbsp;</a></span>ksceKernelUnlockFastMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelUnlockFastMutex </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>mutex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga566c1763c066786ae1871dbcf8e509c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga566c1763c066786ae1871dbcf8e509c1">&#9670;&nbsp;</a></span>ksceKernelDeleteFastMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceKernelDeleteFastMutex </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>mutex</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2788,7 +2921,7 @@ Set of registers used for kernel mode. </td></tr>
 </div>
 </div>
 <a id="gadce4d75f6fd98ee6f5df949d402b3471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadce4d75f6fd98ee6f5df949d402b3471">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadce4d75f6fd98ee6f5df949d402b3471">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

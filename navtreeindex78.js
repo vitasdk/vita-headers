@@ -1,5 +1,15 @@
 var NAVTREEINDEX78 =
 {
+"notificationutil_8h.html":[4,0,1,0,46],
+"notificationutil_8h_source.html":[4,0,1,0,46],
+"npdrmpackage_8h.html":[4,0,1,0,48],
+"npdrmpackage_8h_source.html":[4,0,1,0,48],
+"ommon_2kernel_2modulemgr_8h.html":[4,0,1,1,0,1],
+"ommon_2kernel_2modulemgr_8h_source.html":[4,0,1,1,0,1],
+"ommon_2kernel_2processmgr_8h.html":[4,0,1,1,0,3],
+"ommon_2kernel_2processmgr_8h_source.html":[4,0,1,1,0,3],
+"ommon_2kernel_2sysmem_8h.html":[4,0,1,1,0,5],
+"ommon_2kernel_2sysmem_8h_source.html":[4,0,1,1,0,5],
 "ommon_2kernel_2threadmgr_8h.html":[4,0,1,1,0,6],
 "ommon_2kernel_2threadmgr_8h_source.html":[4,0,1,1,0,6],
 "ommon_2net_8h.html":[4,0,1,1,6],
@@ -147,8 +157,8 @@ var NAVTREEINDEX78 =
 "screenshot_8h_source.html":[4,0,1,0,64],
 "semaphore_8h.html":[4,0,1,0,2,0,8],
 "semaphore_8h_source.html":[4,0,1,0,2,0,8],
-"semaphores_8h.html":[4,0,1,2,2,2,9],
-"semaphores_8h_source.html":[4,0,1,2,2,2,9],
+"semaphores_8h.html":[4,0,1,2,2,2,10],
+"semaphores_8h_source.html":[4,0,1,2,2,2,10],
 "shacccg_8h.html":[4,0,1,0,65],
 "shacccg_8h_source.html":[4,0,1,0,65],
 "sharedfb_8h.html":[4,0,1,0,66],
@@ -212,6 +222,6 @@ var NAVTREEINDEX78 =
 "vitasdkkern_8h_source.html":[4,0,1,5],
 "vshbridge_8h.html":[4,0,1,0,84],
 "vshbridge_8h_source.html":[4,0,1,0,84],
-"workqueues_8h.html":[4,0,1,2,2,2,11],
-"workqueues_8h_source.html":[4,0,1,2,2,2,11]
+"workqueues_8h.html":[4,0,1,2,2,2,12],
+"workqueues_8h_source.html":[4,0,1,2,2,2,12]
 };

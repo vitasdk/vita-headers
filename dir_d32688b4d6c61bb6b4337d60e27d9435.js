@@ -4,6 +4,7 @@ var dir_d32688b4d6c61bb6b4337d60e27d9435 =
     [ "cond.h", "ern_2kernel_2threadmgr_2cond_8h.html", "ern_2kernel_2threadmgr_2cond_8h" ],
     [ "debugger.h", "debugger_8h.html", "debugger_8h" ],
     [ "event_flags.h", "event__flags_8h.html", "event__flags_8h" ],
+    [ "fast_mutex.h", "fast__mutex_8h.html", "fast__mutex_8h" ],
     [ "lw_cond.h", "ern_2kernel_2threadmgr_2lw__cond_8h.html", "ern_2kernel_2threadmgr_2lw__cond_8h" ],
     [ "lw_mutex.h", "ern_2kernel_2threadmgr_2lw__mutex_8h.html", "ern_2kernel_2threadmgr_2lw__mutex_8h" ],
     [ "misc.h", "ern_2kernel_2threadmgr_2misc_8h.html", "ern_2kernel_2threadmgr_2misc_8h" ],

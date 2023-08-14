@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"graphics_8h.html":[4,0,1,0,4,0],
+"graphics_8h_source.html":[4,0,1,0,4,0],
 "group__Audio.html":[1,2],
 "group__Dialog.html":[1,3],
 "group__DmacRegisterFields.html":[1,7,10,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceAppMgrUser.html#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc":[1,11,0,0,47],
 "group__SceAppMgrUser.html#gaeb7f7f8ff5ab2ef9827e76e51c55d6cc":[4,0,1,0,5,26],
 "group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375":[1,11,0,0,7],
-"group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375":[4,0,1,0,5,7],
-"group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6":[1,11,0,0,55],
-"group__SceAppMgrUser.html#gaf01d5d2104529c560c05b248ed1f7dd6":[4,0,1,0,5,34]
+"group__SceAppMgrUser.html#gaebe44866148489f26fa2db17140be375":[4,0,1,0,5,7]
 };

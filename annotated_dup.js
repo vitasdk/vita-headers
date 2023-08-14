@@ -229,6 +229,7 @@ var annotated_dup =
     [ "SceKernelDmaOpTag", "group__SceDmacMgrKernel.html#structSceKernelDmaOpTag", "group__SceDmacMgrKernel_structSceKernelDmaOpTag" ],
     [ "SceKernelEventFlagInfo", "group__SceThreadMgrUser.html#structSceKernelEventFlagInfo", "group__SceThreadMgrUser_structSceKernelEventFlagInfo" ],
     [ "SceKernelEventFlagOptParam", "group__SceThreadMgrUser.html#structSceKernelEventFlagOptParam", "group__SceThreadMgrUser_structSceKernelEventFlagOptParam" ],
+    [ "SceKernelFastMutex", "group__SceThreadMgrKernel.html#structSceKernelFastMutex", "group__SceThreadMgrKernel_structSceKernelFastMutex" ],
     [ "SceKernelFaultingProcessInfo", "group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo", "group__SceThreadMgrKernel_structSceKernelFaultingProcessInfo" ],
     [ "SceKernelFreeMemorySizeInfo", "group__SceSysmemUser.html#structSceKernelFreeMemorySizeInfo", "group__SceSysmemUser_structSceKernelFreeMemorySizeInfo" ],
     [ "SceKernelHeapCreateOpt", "group__SceSysmemKernel.html#structSceKernelHeapCreateOpt", "group__SceSysmemKernel_structSceKernelHeapCreateOpt" ],
