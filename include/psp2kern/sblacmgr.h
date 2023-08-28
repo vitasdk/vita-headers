@@ -90,6 +90,16 @@ int ksceSblACMgrIsFself(SceUID pid);
 int ksceSblACMgrGetProcessProgramAuthId(SceUID pid, SceUInt64 *authid);
 
 /**
+ * @brief Get media type for input path.
+ *
+ * @param[in]        path - The target path
+ * @param[out] media_type - The media type output pointer
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSblACMgrGetMediaType(const char *path, SceUInt32 *media_type);
+
+/**
  * @brief Get development mode state
  *
  * @return If development mode, 1. else 0.
