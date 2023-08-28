@@ -10,5 +10,6 @@ var group__SceSblACMgrKernel =
     [ "ksceSblACMgrIsSceShell", "group__SceSblACMgrKernel.html#ga56d88eec80bba6ed76bb612019b3eb64", null ],
     [ "ksceSblACMgrIsFself", "group__SceSblACMgrKernel.html#ga8e8b9a7255c43fd70d852e3af7cec215", null ],
     [ "ksceSblACMgrGetProcessProgramAuthId", "group__SceSblACMgrKernel.html#ga864b72ba653d391cd41fc2b1e5f9b9e2", null ],
+    [ "ksceSblACMgrGetMediaType", "group__SceSblACMgrKernel.html#ga03d6384dc80b2f1e00185aaa7f5f711a", null ],
     [ "ksceSblACMgrIsDevelopmentMode", "group__SceSblACMgrKernel.html#ga9731aeaeff29c8e605b891046e6c5d78", null ]
 ];
