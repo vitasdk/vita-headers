@@ -10,5 +10,6 @@ var psp2kern_2types_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTypesKernel.html#gaedcaff95ba71e484831eb3110b3c2d2c", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTypesKernel.html#ga83e13e47c19ba3c73b4126d114832f33", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTypesKernel.html#ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTypesKernel.html#ga0e4d273403b2138042fe9cc8671b2ce1", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceTypesKernel.html#ga067f00354e4e2dc62b4b7c8a8c54214f", null ]
 ];

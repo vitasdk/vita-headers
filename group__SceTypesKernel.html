@@ -143,6 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga83e13e47c19ba3c73b4126d114832f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb">VITASDK_BUILD_ASSERT_EQ</a> (0x90, <a class="el" href="group__SceTypesKernel.html#structSceSelfAuthInfo">SceSelfAuthInfo</a>)</td></tr>
 <tr class="separator:ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e4d273403b2138042fe9cc8671b2ce1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga0e4d273403b2138042fe9cc8671b2ce1">VITASDK_BUILD_ASSERT_EQ</a> (0x130, <a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a>)</td></tr>
+<tr class="separator:ga0e4d273403b2138042fe9cc8671b2ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga067f00354e4e2dc62b4b7c8a8c54214f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTypesKernel.html#ga067f00354e4e2dc62b4b7c8a8c54214f">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a>)</td></tr>
 <tr class="separator:ga067f00354e4e2dc62b4b7c8a8c54214f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1134,6 +1136,59 @@ attribute[0x20]</td>
 <a id="gae21867761f8d6dcbe037989af9c3daaa"></a><a class="el" href="group__SceTypesKernel.html#structSceSharedSecret">SceSharedSecret</a></td>
 <td class="fieldname">
 secret</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceAuthInfo" id="structSceAuthInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceAuthInfo">&#9670;&nbsp;</a></span>SceAuthInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceAuthInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga72696ba2078dd0607da7383c4d29e966"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+unk_0x00</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab6f67cb3af039c78b2ad3132eee9488c"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+self_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5d529479a5abeefaf0a1a2ca3081040d"></a><a class="el" href="group__SceTypesKernel.html#structSceSelfAuthInfo">SceSelfAuthInfo</a></td>
+<td class="fieldname">
+request</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga809125fb8912bbde560583327428bb26"></a><a class="el" href="group__SceTypesKernel.html#structSceSelfAuthInfo">SceSelfAuthInfo</a></td>
+<td class="fieldname">
+response</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gae168bf217e745afabdc73ed86f045641"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+media_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga8e2ed9bb9e4b1200f56973af6d86d0bd"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+unk_0x12C</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -2423,7 +2478,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga1c43ae33106c4ab6569c86286179307b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c43ae33106c4ab6569c86286179307b">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c43ae33106c4ab6569c86286179307b">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2451,7 +2506,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga8806e8800b03f74011dba2e98f660ed3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8806e8800b03f74011dba2e98f660ed3">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8806e8800b03f74011dba2e98f660ed3">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2479,7 +2534,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gadfce32f0527245715b4b2cb8fb5f9d35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadfce32f0527245715b4b2cb8fb5f9d35">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadfce32f0527245715b4b2cb8fb5f9d35">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2507,7 +2562,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gaba6c7fb22e2e62811ecb676ea36d9926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba6c7fb22e2e62811ecb676ea36d9926">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba6c7fb22e2e62811ecb676ea36d9926">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2535,7 +2590,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gab3aeaddfa7fadfb592506319978aa517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab3aeaddfa7fadfb592506319978aa517">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3aeaddfa7fadfb592506319978aa517">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2563,7 +2618,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gadf6b34345f708ef45a7f76922990e40a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf6b34345f708ef45a7f76922990e40a">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf6b34345f708ef45a7f76922990e40a">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2591,7 +2646,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gaec1603dbe2b640b1832c100fc92e3874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec1603dbe2b640b1832c100fc92e3874">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec1603dbe2b640b1832c100fc92e3874">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2619,7 +2674,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gafb0ce8daef01171e6922930c24490dce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafb0ce8daef01171e6922930c24490dce">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb0ce8daef01171e6922930c24490dce">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2647,7 +2702,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gaad1bc8e1a930d353d5ec93b7a0025501"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad1bc8e1a930d353d5ec93b7a0025501">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad1bc8e1a930d353d5ec93b7a0025501">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2675,7 +2730,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga3046a835d1ac0ec572b8fe9cf387b0a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3046a835d1ac0ec572b8fe9cf387b0a0">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3046a835d1ac0ec572b8fe9cf387b0a0">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2703,7 +2758,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga64135e79a464c10497632be7c14730a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64135e79a464c10497632be7c14730a5">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64135e79a464c10497632be7c14730a5">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2731,7 +2786,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gac5f5a0f653c9a4145c0648f935e323c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac5f5a0f653c9a4145c0648f935e323c1">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5f5a0f653c9a4145c0648f935e323c1">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2759,7 +2814,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gac2a5bba6eecd1423adcdcf1b6508bd8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2a5bba6eecd1423adcdcf1b6508bd8e">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2a5bba6eecd1423adcdcf1b6508bd8e">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2787,7 +2842,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga4a77dc1b8e772687ff814fd6edb35fd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a77dc1b8e772687ff814fd6edb35fd6">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a77dc1b8e772687ff814fd6edb35fd6">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2815,7 +2870,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gac8cb00dfe4974bb689b074af04f93f54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8cb00dfe4974bb689b074af04f93f54">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8cb00dfe4974bb689b074af04f93f54">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2843,7 +2898,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga55fedb8640e4383c30fe3bdc754a1838"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55fedb8640e4383c30fe3bdc754a1838">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55fedb8640e4383c30fe3bdc754a1838">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2871,7 +2926,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga1460e76c34877a175fc9099c89212262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1460e76c34877a175fc9099c89212262">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1460e76c34877a175fc9099c89212262">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2899,7 +2954,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gac3e19c1a45456c9c5ec4f51c01cb141f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac3e19c1a45456c9c5ec4f51c01cb141f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[18/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3e19c1a45456c9c5ec4f51c01cb141f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[18/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2927,7 +2982,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gac6dff6e26f76cda8633026765af27742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6dff6e26f76cda8633026765af27742">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[19/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6dff6e26f76cda8633026765af27742">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[19/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2955,7 +3010,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="gaedcaff95ba71e484831eb3110b3c2d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaedcaff95ba71e484831eb3110b3c2d2c">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[20/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedcaff95ba71e484831eb3110b3c2d2c">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[20/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2983,7 +3038,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga83e13e47c19ba3c73b4126d114832f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga83e13e47c19ba3c73b4126d114832f33">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[21/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83e13e47c19ba3c73b4126d114832f33">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[21/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3011,7 +3066,7 @@ Array of physical addresses and their lengths pairs. </td></tr>
 </div>
 </div>
 <a id="ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[22/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c0ae54d9d27eb4bfa92bbb4bb1b35bb">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[22/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3038,8 +3093,36 @@ Array of physical addresses and their lengths pairs. </td></tr>
 
 </div>
 </div>
+<a id="ga0e4d273403b2138042fe9cc8671b2ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e4d273403b2138042fe9cc8671b2ce1">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[23/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x130&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga067f00354e4e2dc62b4b7c8a8c54214f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga067f00354e4e2dc62b4b7c8a8c54214f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[23/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga067f00354e4e2dc62b4b7c8a8c54214f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[24/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
