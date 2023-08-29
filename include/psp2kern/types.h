@@ -124,6 +124,16 @@ typedef struct SceSelfAuthInfo { // size is 0x90-bytes
 } SceSelfAuthInfo;
 VITASDK_BUILD_ASSERT_EQ(0x90, SceSelfAuthInfo);
 
+typedef struct SceAuthInfo { // size is 0x130-bytes
+	SceUInt32 unk_0x00;
+	SceUInt32 self_type;      // kernel = 0, user = 1, sm = 2
+	SceSelfAuthInfo request;
+	SceSelfAuthInfo response;
+	SceUInt32 media_type;
+	SceUInt32 unk_0x12C;
+} SceAuthInfo;
+VITASDK_BUILD_ASSERT_EQ(0x130, SceAuthInfo);
+
 /**
  * @brief Regular Spinlock
  * 
