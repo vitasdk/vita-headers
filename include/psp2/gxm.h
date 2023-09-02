@@ -42,7 +42,8 @@ typedef enum SceGxmErrorCode {
 	SCE_GXM_ERROR_DRIVER                                        = 0x805B0017,
 	SCE_GXM_ERROR_INVALID_TEXTURE                               = 0x805B0018,
 	SCE_GXM_ERROR_INVALID_TEXTURE_DATA_POINTER                  = 0x805B0019,
-	SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER               = 0x805B001A
+	SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER               = 0x805B001A,
+	SCE_GXM_ERROR_OUT_OF_RENDER_TARGETS                         = 0x805B0027
 } SceGxmErrorCode;
 
 typedef void (SceGxmDisplayQueueCallback)(const void *callbackData);
