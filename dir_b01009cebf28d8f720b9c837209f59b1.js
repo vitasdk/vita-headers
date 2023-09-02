@@ -51,6 +51,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "npdrmpackage.h", "npdrmpackage_8h.html", "npdrmpackage_8h" ],
     [ "paf.h", "paf_8h.html", null ],
     [ "pamgr.h", "pamgr_8h.html", "pamgr_8h" ],
+    [ "perf.h", "perf_8h.html", "perf_8h" ],
     [ "pgf.h", "pgf_8h.html", "pgf_8h" ],
     [ "photoexport.h", "photoexport_8h.html", "photoexport_8h" ],
     [ "power.h", "psp2_2power_8h.html", "psp2_2power_8h" ],
