@@ -62,7 +62,8 @@ var group__SceGxmUser =
       [ "SCE_GXM_ERROR_DRIVER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa61bfa923792e007d099ff5669408d0d5", null ],
       [ "SCE_GXM_ERROR_INVALID_TEXTURE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa3544740d8c0175cbeec70f44d4601b0b", null ],
       [ "SCE_GXM_ERROR_INVALID_TEXTURE_DATA_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa4da4bad29fbd5b0834fd9a2a0efdc4b", null ],
-      [ "SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac8d5b6df66e54383a369a65ca49052ad", null ]
+      [ "SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac8d5b6df66e54383a369a65ca49052ad", null ],
+      [ "SCE_GXM_ERROR_OUT_OF_RENDER_TARGETS", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa64227e5544fb666b93ea21bd27dc6400", null ]
     ] ],
     [ "SceGxmMemoryAttribFlags", "group__SceGxmUser.html#ga74fdeacb4d6d9a1b75870f06ed83655f", [
       [ "SCE_GXM_MEMORY_ATTRIB_READ", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fa226d286b5ee13fd203d7daa1c6872fc8", null ],
@@ -992,6 +993,7 @@ var group__SceGxmUser =
     [ "SCE_GXM_ERROR_INVALID_TEXTURE", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa3544740d8c0175cbeec70f44d4601b0b", null ],
     [ "SCE_GXM_ERROR_INVALID_TEXTURE_DATA_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa4da4bad29fbd5b0834fd9a2a0efdc4b", null ],
     [ "SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac8d5b6df66e54383a369a65ca49052ad", null ],
+    [ "SCE_GXM_ERROR_OUT_OF_RENDER_TARGETS", "group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa64227e5544fb666b93ea21bd27dc6400", null ],
     [ "SCE_GXM_MEMORY_ATTRIB_READ", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fa226d286b5ee13fd203d7daa1c6872fc8", null ],
     [ "SCE_GXM_MEMORY_ATTRIB_WRITE", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fad2b630608f87ce6147e0aedaa7592208", null ],
     [ "SCE_GXM_MEMORY_ATTRIB_RW", "group__SceGxmUser.html#gga74fdeacb4d6d9a1b75870f06ed83655fac3fd3f3cf711d5ac83255a550e4a821a", null ],
