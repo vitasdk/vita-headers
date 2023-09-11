@@ -23,6 +23,7 @@
 #include <psp2/dmac5.h>
 #include <psp2/fiber.h>
 #include <psp2/fios2kernel.h>
+#include <psp2/fios2kernel02.h>
 #include <psp2/gps.h>
 #include <psp2/gxm.h>
 #include <psp2/gxt.h>
@@ -50,6 +51,7 @@
 #include <psp2/npdrmpackage.h>
 #include <psp2/paf.h>
 #include <psp2/pamgr.h>
+#include <psp2/perf.h>
 #include <psp2/pgf.h>
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
@@ -75,6 +77,7 @@
 #include <psp2/triggerutil.h>
 #include <psp2/udcd.h>
 #include <psp2/update.h>
+#include <psp2/usbaudioin.h>
 #include <psp2/usbd.h>
 #include <psp2/usbserial.h>
 #include <psp2/usbserv.h>
