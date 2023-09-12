@@ -265,8 +265,6 @@ typedef enum SceKernelMutexAttribute {
 	SCE_KERNEL_MUTEX_ATTR_CEILING     = 0x04
 } SceKernelMutexAttribute;
 
-#define SCE_KERNEL_MUTEX_ATTR_RECURSIVE 2
-
 /** Additional options used when creating mutexes. */
 typedef struct SceKernelMutexOptParam {
 	/** Size of the ::SceKernelMutexOptParam structure. */
