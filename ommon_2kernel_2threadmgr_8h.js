@@ -1,7 +1,6 @@
 var ommon_2kernel_2threadmgr_8h =
 [
     [ "SCE_KERNEL_THREAD_CPU_AFFINITY_MASK_DEFAULT", "group__SceThreadMgrUser.html#ga187ec3703b6e03f0c898fdd45d674802", null ],
-    [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ga276cbf64a90f4dbb228165980b454361", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e", null ],
     [ "SceKernelIdListType", "group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc", [
