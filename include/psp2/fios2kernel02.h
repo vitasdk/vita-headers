@@ -6,7 +6,7 @@
 #ifndef _PSP2_FIOS2KERNEL02_H_
 #define _PSP2_FIOS2KERNEL02_H_
 
-#include <psp2kern/types.h>
+#include <psp2/types.h>
 #include <psp2common/fios2.h>
 
 #ifdef __cplusplus
