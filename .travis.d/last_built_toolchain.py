@@ -10,7 +10,7 @@ except ImportError:
 
 GITHUB_REPO = 'vitasdk/autobuilds'
 GITHUB_API = 'https://api.github.com'
-GITHUB_REL = GITHUB_API + '/repos/' + GITHUB_REPO + '/releases'
+GITHUB_REL = GITHUB_API + '/repos/' + GITHUB_REPO + '/releases?per_page=100'
 
 try:
     token = os.environ['TOKEN']
