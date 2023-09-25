@@ -134,13 +134,13 @@ var NAVTREEINDEX =
 "group__SceThreadMgrUser.html#gab384737a3374b8443aa44a3b072c2231",
 "group__SceTouchUser.html#gga3772c556df8f755f345d8f2c09807ae0a794c9c4aae4007e3405876854b994608",
 "group__SceTypesKernel.html#gad75d69275ece7906434ce93b9414e464",
-"group__SceUdcdKernel.html#ga85a0b07827c2926cffbc487ef6dd1c5d",
-"group__SceUdcdKernel.html#gga9830ab504b7cb5de34e6e43118997034ac14c6e205900ba8105aace4a530fbdd3",
-"group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee",
-"group__SceUsbdKernel.html#gae4527635997cd157d4f05b67f877fffd",
-"group__SceUsbstorVStorDriverUser.html#ga342bce6f1463f98310c428884d508a63",
-"group__SceVideoDecUser.html#ggaf81c12ed1ad94fbb7ec55a9a0ce66118ab7d84ea55bbba243b430680b21182bd7",
-"proc__event_8h_source.html"
+"group__SceUdcdKernel.html#ga3c9d71f89c5c70f35ace9e5b46cc4845",
+"group__SceUdcdKernel.html#gga9830ab504b7cb5de34e6e43118997034a04d7d165eb859842a32741f28fa67b0e",
+"group__SceUsbSerialKernel.html#gad72dfb8ec9107537832d1eea400078ab",
+"group__SceUsbdKernel.html#gacb82a22dbcf7f4dd86b39089b835e158",
+"group__SceUsbdUser.html#ga96a1fbf977082e077ea01135647aa4fe",
+"group__SceVideoDecUser.html#ggacab7dff1511b1a3851ffeec15fb9d3eaae73da9fe1bce1e527999f1372a39e6a9",
+"netcheck__dialog_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
