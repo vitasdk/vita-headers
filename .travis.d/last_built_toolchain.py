@@ -10,15 +10,15 @@ except ImportError:
 
 GITHUB_REPO = 'vitasdk/autobuilds'
 GITHUB_API = 'https://api.github.com'
-GITHUB_REL = GITHUB_API + '/repos/' + GITHUB_REPO + '/releases'
+GITHUB_REL = GITHUB_API + '/repos/' + GITHUB_REPO + '/releases?per_page=100'
 
 try:
     token = os.environ['TOKEN']
 except KeyError:
     token = None
 
-def fetch_last_release(branch='master', os='linux'):
-    req = urllib2.Request(GITHUB_REL)
+def fetch_last_release(branch='master', os='linux', page=1):
+    req = urllib2.Request(GITHUB_REL+'&page=' + str(page))
     if token:
         req.add_header('Authorization', 'Bearer ' + token);
     try:
@@ -41,7 +41,12 @@ def fetch_last_release(branch='master', os='linux'):
 if __name__ == '__main__':
     import sys
 
-    url = fetch_last_release(*sys.argv[1:])
+    for page in range(1,6):
+        url = fetch_last_release(*sys.argv[1:3], page=page)
+        if not url:
+            continue
+        break
+
     if not url:
         raise SystemExit(1)
     print(url)
