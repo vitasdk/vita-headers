@@ -1,4 +1,4 @@
-var ern_2net_2net_8h =
+var netps_8h =
 [
     [ "ksceNetRecv", "group__SceNetKernel.html#gad7ff4a39bc51313e4303df323cb43de6", null ],
     [ "ksceNetSend", "group__SceNetKernel.html#ga99fdf484ea24a657917ec8a8890d0dfb", null ],

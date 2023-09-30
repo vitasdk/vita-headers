@@ -1,4 +1,4 @@
-var psp2kern_2avcodec_2jpegenc_8h =
+var psp2kern_2jpegenc_8h =
 [
     [ "ksceJpegEncoderInit", "group__SceJpegEncKernel.html#ga0929d9e49113c872f113fd2c3a083ec7", null ],
     [ "ksceJpegEncoderEnd", "group__SceJpegEncKernel.html#gaa7f415839b641071361e3c5b9508b52b", null ],

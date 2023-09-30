@@ -1,4 +1,4 @@
-var sblaimgr_8h =
+var aimgr_8h =
 [
     [ "ksceSblAimgrGetTargetId", "group__SceSblAIMgrKernel.html#gaff974459249d9378b26d077dfa5fba96", null ],
     [ "SceProductCode", "group__SceSblAIMgrKernel.html#ga5cb195dbceb6980fced02a2652618e7f", [

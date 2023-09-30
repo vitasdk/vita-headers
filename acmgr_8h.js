@@ -1,4 +1,4 @@
-var psp2kern_2sblacmgr_8h =
+var acmgr_8h =
 [
     [ "ksceSblACMgrIsSystem", "group__SceSblACMgrKernel.html#gabd9122a6bfed828d831a211d2b47a9a0", null ],
     [ "ksceSblACMgrIsShell", "group__SceSblACMgrKernel.html#ga9fceb129afd49763d7bb74137d44bc80", null ],

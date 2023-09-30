@@ -64,7 +64,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "razor_hud.h", "razor__hud_8h.html", "razor__hud_8h" ],
     [ "registrymgr.h", "psp2_2registrymgr_8h.html", "psp2_2registrymgr_8h" ],
     [ "rtc.h", "psp2_2rtc_8h.html", "psp2_2rtc_8h" ],
-    [ "sblacmgr.h", "psp2_2sblacmgr_8h.html", "psp2_2sblacmgr_8h" ],
+    [ "sblacmgr.h", "sblacmgr_8h.html", "sblacmgr_8h" ],
     [ "screenshot.h", "screenshot_8h.html", "screenshot_8h" ],
     [ "shacccg.h", "shacccg_8h.html", "shacccg_8h" ],
     [ "sharedfb.h", "sharedfb_8h.html", "sharedfb_8h" ],
