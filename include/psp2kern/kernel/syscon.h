@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceSyscon}
- * \usage{psp2kern/syscon.h,SceSysconForDriver_stub}
+ * \usage{psp2kern/kernel/syscon.h,SceSysconForDriver_stub}
  */
 
 #ifndef _PSP2KERN_SYSCON_H_
