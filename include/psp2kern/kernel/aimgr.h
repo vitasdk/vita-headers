@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceSblAIMgr}
- * \usage{psp2kern/sblaimgr.h,SceSblAIMgrForDriver_stub}
+ * \usage{psp2kern/kernel/aimgr.h,SceSblAIMgrForDriver_stub}
  */
 
 #ifndef _PSP2KERN_SBLAIMGR_H_

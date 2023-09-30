@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceUart}
- * \usage{psp2kern/uart.h,SceUartForKernel_stub}
+ * \usage{psp2kern/kernel/uart.h,SceUartForKernel_stub}
  */
 
 #ifndef _PSP2KERN_UART_H_
