@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceSblACMgr}
- * \usage{psp2kern/sblacmgr.h,SceSblACMgrForDriver_stub}
+ * \usage{psp2kern/kernel/acmgr.h,SceSblACMgrForDriver_stub}
  */
 
 #ifndef _PSP2KERN_SBLACMGR_H_

@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceNet}
- * \usage{psp2kern/net/net.h,SceNetPsForDriver_stub}
+ * \usage{psp2kern/netps.h,SceNetPsForDriver_stub}
  */
 
 
