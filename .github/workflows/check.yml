@@ -60,6 +60,7 @@ jobs:
         export VITASDK=$PWD/vitasdk
         export PATH=$VITASDK/bin:$PATH
         cd check_size
+        python3 ./includes_all.py ../include
         mkdir build
         cd build
         cmake ..
