@@ -26,7 +26,7 @@ jobs:
         export VITASDK=$PWD/vitasdk
         export PATH=$VITASDK/bin:$PATH
         export INCLUDE_DIR=$TRAVIS_BUILD_DIR/include
-        vita-nid-check -dbg=debug -dbdirver="./db"
+        ls ./db | xargs -I__name__ vita-nid-check -dbdirver=./db/__name__ -dbg=trace
         # Make sure headers are valid
         find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-gcc -I$INCLUDE_DIR -fsyntax-only -c FN -o /dev/null
         find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-g++ -I$INCLUDE_DIR -fsyntax-only -c FN -o /dev/null
