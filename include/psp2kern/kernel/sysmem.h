@@ -8,12 +8,12 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/sysmem/address_space.h>
 #include <psp2kern/kernel/sysmem/uid_class.h>
 #include <psp2kern/kernel/sysmem/uid_guid.h>
 #include <psp2kern/kernel/sysmem/uid_puid.h>
 #include <psp2kern/kernel/sysmem/heap.h>
 #include <psp2kern/kernel/sysmem/data_transfers.h>
-#include <psp2kern/kernel/sysmem/mmu.h>
 #include <psp2kern/kernel/sysmem/memtype.h>
 #include <psp2common/kernel/sysmem.h>
 

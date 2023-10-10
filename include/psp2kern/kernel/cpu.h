@@ -10,7 +10,6 @@
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
 #include <psp2kern/kernel/sysclib.h>
-#include <psp2kern/kernel/sysmem/mmu.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -45,22 +44,6 @@ extern "C" {
  * @param[in]  len   The length
  */
 void ksceKernelCpuDcacheWritebackRange(const void *ptr, SceSize len);
-
-/**
- * @brief Get the process context
- *
- * @param[in]  pid - The target process id
- * @param[out] ctx - The context output pointer of pointer
- */
-int ksceKernelProcessGetContext(SceUID pid, SceKernelProcessContext **ctx);
-
-/**
- * @brief Switch the process context
- *
- * @param[in]   new_context - The new context
- * @param[out] prev_context - The prev context
- */
-int ksceKernelProcessSwitchContext(const SceKernelProcessContext *new_context, SceKernelProcessContext *prev_context);
 
 // ksceKernelCpuUnrestrictedMemcpy removed from 3.63
 #if PSP2_SDK_VERSION >= 0x3630000 && defined(__USE_SCE_KERNEL_DOMAIN_TEXT_MEMCPY_IMPORT)
@@ -385,36 +368,6 @@ void ksceKernelCorelockLock(SceCorelockContext *ctx, SceUInt32 core);
 void ksceKernelCorelockUnlock(SceCorelockContext *ctx);
 
 /* For backwards compatibility */
-
-/**
- * @brief      Save process context
- *
- * @param      context  The context
- */
-static inline SceInt32 ksceKernelCpuSaveContext(SceKernelProcessContext *context)
-{
-	int res;
-	SceKernelProcessContext *ctx;
-
-	res = ksceKernelProcessGetContext(SCE_KERNEL_PROCESS_ID_SELF, &ctx);
-	if(res < 0){
-		return res;
-	}
-
-	memcpy(context, ctx, sizeof(*context));
-
-	return 0;
-}
-
-/**
- * @brief      Restore process context
- *
- * @param      context  The context, can be from ::ksceKernelGetPidContext
- */
-static inline SceInt32 ksceKernelCpuRestoreContext(const SceKernelProcessContext *context)
-{
-	return ksceKernelProcessSwitchContext(context, NULL);
-}
 
 //This name conflicts with the official name for ksceKernelCpuDisableInterrupts and may become deprecated soon
 static inline __attribute__((deprecated("Use ksceKernelSpinlockLowLockCpuSuspendIntr"))) int ksceKernelCpuSuspendIntr(int *addr) {
