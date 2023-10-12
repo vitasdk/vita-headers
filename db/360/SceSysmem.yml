@@ -13,91 +13,91 @@ modules:
         kernel: true
         nid: 0x40ECDB0E
         functions:
-          ksceKernelCpuAtomicAddAndGet16: 0x59F74E94
-          ksceKernelCpuAtomicAddAndGet32: 0x5F6A8743
-          ksceKernelCpuAtomicAddAndGet64: 0x4E459A03
-          ksceKernelCpuAtomicAddAndGet8: 0x1E850481
-          ksceKernelCpuAtomicAddUnless16: 0x0F84AFE9
-          ksceKernelCpuAtomicAddUnless32: 0x1F157DC3
-          ksceKernelCpuAtomicAddUnless64: 0x06CCFA4B
-          ksceKernelCpuAtomicAddUnless8: 0x5CC62CEC
-          ksceKernelCpuAtomicAndAndGet16: 0xB281D52A
-          ksceKernelCpuAtomicAndAndGet32: 0xDF899E4B
-          ksceKernelCpuAtomicAndAndGet64: 0xD18E7B54
-          ksceKernelCpuAtomicAndAndGet8: 0x32B62B1A
-          ksceKernelCpuAtomicClearAndGet16: 0x6B050D7C
-          ksceKernelCpuAtomicClearAndGet32: 0x78C1F148
-          ksceKernelCpuAtomicClearAndGet64: 0x2149CD4C
-          ksceKernelCpuAtomicClearAndGet8: 0x8E538AB5
-          ksceKernelCpuAtomicClearMask16: 0x1BE58599
-          ksceKernelCpuAtomicClearMask32: 0x4AE1BCC0
-          ksceKernelCpuAtomicClearMask64: 0x55760309
-          ksceKernelCpuAtomicClearMask8: 0x1B3336B0
-          ksceKernelCpuAtomicCompareAndSet16: 0x6F63F56D
-          ksceKernelCpuAtomicCompareAndSet32: 0xCDA96E81
-          ksceKernelCpuAtomicCompareAndSet64: 0x4B527009
-          ksceKernelCpuAtomicCompareAndSet8: 0x3627F4E0
-          ksceKernelCpuAtomicDecIfPositive16: 0x9A693F5B
-          ksceKernelCpuAtomicDecIfPositive32: 0x2A71B03C
-          ksceKernelCpuAtomicDecIfPositive64: 0x267D0B33
-          ksceKernelCpuAtomicDecIfPositive8: 0x45153D4E
-          ksceKernelCpuAtomicGetAndAdd16: 0x225DF91A
-          ksceKernelCpuAtomicGetAndAdd32: 0x341B6E81
-          ksceKernelCpuAtomicGetAndAdd64: 0x043FD446
-          ksceKernelCpuAtomicGetAndAdd8: 0xFCDCD4DE
-          ksceKernelCpuAtomicGetAndAnd16: 0x4A820BC5
-          ksceKernelCpuAtomicGetAndAnd32: 0x10EB35EB
-          ksceKernelCpuAtomicGetAndAnd64: 0x18A17E07
-          ksceKernelCpuAtomicGetAndAnd8: 0xD8E675C0
-          ksceKernelCpuAtomicGetAndClear16: 0x8E9C086D
-          ksceKernelCpuAtomicGetAndClear32: 0xE36F3A46
-          ksceKernelCpuAtomicGetAndClear64: 0x88BA6002
-          ksceKernelCpuAtomicGetAndClear8: 0x382D1466
-          ksceKernelCpuAtomicGetAndOr16: 0x004F09D1
-          ksceKernelCpuAtomicGetAndOr32: 0x2A40BB93
-          ksceKernelCpuAtomicGetAndOr64: 0xCB73D6D5
-          ksceKernelCpuAtomicGetAndOr8: 0xBDF6F8E4
-          ksceKernelCpuAtomicGetAndSet16: 0x085532C8
-          ksceKernelCpuAtomicGetAndSet32: 0x0EE04C03
-          ksceKernelCpuAtomicGetAndSet64: 0xD2DEE625
-          ksceKernelCpuAtomicGetAndSet8: 0x29599FC8
-          ksceKernelCpuAtomicGetAndSub16: 0x3EE9B5B8
-          ksceKernelCpuAtomicGetAndSub32: 0xF891CF2A
-          ksceKernelCpuAtomicGetAndSub64: 0xA7585370
-          ksceKernelCpuAtomicGetAndSub8: 0x7B43D0D7
-          ksceKernelCpuAtomicGetAndXor16: 0x711801E6
-          ksceKernelCpuAtomicGetAndXor32: 0x77E34309
-          ksceKernelCpuAtomicGetAndXor64: 0xE212ECAD
-          ksceKernelCpuAtomicGetAndXor8: 0xBAF47F7B
-          ksceKernelCpuAtomicOrAndGet16: 0xADD39B84
-          ksceKernelCpuAtomicOrAndGet32: 0xBC248C30
-          ksceKernelCpuAtomicOrAndGet64: 0x3E218AF7
-          ksceKernelCpuAtomicOrAndGet8: 0x5D515F1B
-          ksceKernelCpuAtomicSet16: 0x532CA3E8
-          ksceKernelCpuAtomicSet32: 0x3168BC57
-          ksceKernelCpuAtomicSet64: 0xC381CE8C
-          ksceKernelCpuAtomicSet8: 0x0836537E
-          ksceKernelCpuAtomicSetIfGreaterGet16: 0x875B094D
-          ksceKernelCpuAtomicSetIfGreaterGet32: 0x26F71995
-          ksceKernelCpuAtomicSetIfGreaterGet8: 0xC3868071
-          ksceKernelCpuAtomicSubAndGet16: 0x515682C9
-          ksceKernelCpuAtomicSubAndGet32: 0xA4884C4E
-          ksceKernelCpuAtomicSubAndGet64: 0xB5F8919C
-          ksceKernelCpuAtomicSubAndGet8: 0xEB085370
-          ksceKernelCpuAtomicXorAndGet16: 0x646003D6
-          ksceKernelCpuAtomicXorAndGet32: 0x4244BE65
-          ksceKernelCpuAtomicXorAndGet64: 0x692C51B3
-          ksceKernelCpuAtomicXorAndGet8: 0x03887992
-          ksceKernelCpuDcacheAndL2CleanInvalidateMVACRange_20: 0xE551F99B
-          ksceKernelCpuDcacheAndL2InvalidateRange: 0x02796361
-          ksceKernelCpuDcacheAndL2WritebackInvalidateRange: 0x364E68A4
-          ksceKernelCpuDcacheAndL2WritebackRange: 0x103872A5
-          ksceKernelCpuDcacheInvalidateRange: 0x8B4C26DF
-          ksceKernelCpuDcacheWritebackRange: 0x9CB9F0CE
-          ksceKernelCpuDisableInterrupts: 0x821FC0EE
-          ksceKernelCpuEnableInterrupts: 0xF5BAD43B
-          ksceKernelCpuGetCpuId: 0x5E4D5DE1
-          ksceKernelCpuIsVaddrMapped: 0x337CBDF3
+          ksceKernelAtomicAddAndGet16: 0x59F74E94
+          ksceKernelAtomicAddAndGet32: 0x5F6A8743
+          ksceKernelAtomicAddAndGet64: 0x4E459A03
+          ksceKernelAtomicAddAndGet8: 0x1E850481
+          ksceKernelAtomicAddUnless16: 0x0F84AFE9
+          ksceKernelAtomicAddUnless32: 0x1F157DC3
+          ksceKernelAtomicAddUnless64: 0x06CCFA4B
+          ksceKernelAtomicAddUnless8: 0x5CC62CEC
+          ksceKernelAtomicAndAndGet16: 0xB281D52A
+          ksceKernelAtomicAndAndGet32: 0xDF899E4B
+          ksceKernelAtomicAndAndGet64: 0xD18E7B54
+          ksceKernelAtomicAndAndGet8: 0x32B62B1A
+          ksceKernelAtomicClearAndGet16: 0x6B050D7C
+          ksceKernelAtomicClearAndGet32: 0x78C1F148
+          ksceKernelAtomicClearAndGet64: 0x2149CD4C
+          ksceKernelAtomicClearAndGet8: 0x8E538AB5
+          ksceKernelAtomicClearMask16: 0x1BE58599
+          ksceKernelAtomicClearMask32: 0x4AE1BCC0
+          ksceKernelAtomicClearMask64: 0x55760309
+          ksceKernelAtomicClearMask8: 0x1B3336B0
+          ksceKernelAtomicCompareAndSet16: 0x6F63F56D
+          ksceKernelAtomicCompareAndSet32: 0xCDA96E81
+          ksceKernelAtomicCompareAndSet64: 0x4B527009
+          ksceKernelAtomicCompareAndSet8: 0x3627F4E0
+          ksceKernelAtomicDecIfPositive16: 0x9A693F5B
+          ksceKernelAtomicDecIfPositive32: 0x2A71B03C
+          ksceKernelAtomicDecIfPositive64: 0x267D0B33
+          ksceKernelAtomicDecIfPositive8: 0x45153D4E
+          ksceKernelAtomicGetAndAdd16: 0x225DF91A
+          ksceKernelAtomicGetAndAdd32: 0x341B6E81
+          ksceKernelAtomicGetAndAdd64: 0x043FD446
+          ksceKernelAtomicGetAndAdd8: 0xFCDCD4DE
+          ksceKernelAtomicGetAndAnd16: 0x4A820BC5
+          ksceKernelAtomicGetAndAnd32: 0x10EB35EB
+          ksceKernelAtomicGetAndAnd64: 0x18A17E07
+          ksceKernelAtomicGetAndAnd8: 0xD8E675C0
+          ksceKernelAtomicGetAndClear16: 0x8E9C086D
+          ksceKernelAtomicGetAndClear32: 0xE36F3A46
+          ksceKernelAtomicGetAndClear64: 0x88BA6002
+          ksceKernelAtomicGetAndClear8: 0x382D1466
+          ksceKernelAtomicGetAndOr16: 0x004F09D1
+          ksceKernelAtomicGetAndOr32: 0x2A40BB93
+          ksceKernelAtomicGetAndOr64: 0xCB73D6D5
+          ksceKernelAtomicGetAndOr8: 0xBDF6F8E4
+          ksceKernelAtomicGetAndSet16: 0x085532C8
+          ksceKernelAtomicGetAndSet32: 0x0EE04C03
+          ksceKernelAtomicGetAndSet64: 0xD2DEE625
+          ksceKernelAtomicGetAndSet8: 0x29599FC8
+          ksceKernelAtomicGetAndSub16: 0x3EE9B5B8
+          ksceKernelAtomicGetAndSub32: 0xF891CF2A
+          ksceKernelAtomicGetAndSub64: 0xA7585370
+          ksceKernelAtomicGetAndSub8: 0x7B43D0D7
+          ksceKernelAtomicGetAndXor16: 0x711801E6
+          ksceKernelAtomicGetAndXor32: 0x77E34309
+          ksceKernelAtomicGetAndXor64: 0xE212ECAD
+          ksceKernelAtomicGetAndXor8: 0xBAF47F7B
+          ksceKernelAtomicOrAndGet16: 0xADD39B84
+          ksceKernelAtomicOrAndGet32: 0xBC248C30
+          ksceKernelAtomicOrAndGet64: 0x3E218AF7
+          ksceKernelAtomicOrAndGet8: 0x5D515F1B
+          ksceKernelAtomicSet16: 0x532CA3E8
+          ksceKernelAtomicSet32: 0x3168BC57
+          ksceKernelAtomicSet64: 0xC381CE8C
+          ksceKernelAtomicSet8: 0x0836537E
+          ksceKernelAtomicSetIfGreaterGet16: 0x875B094D
+          ksceKernelAtomicSetIfGreaterGet32: 0x26F71995
+          ksceKernelAtomicSetIfGreaterGet8: 0xC3868071
+          ksceKernelAtomicSubAndGet16: 0x515682C9
+          ksceKernelAtomicSubAndGet32: 0xA4884C4E
+          ksceKernelAtomicSubAndGet64: 0xB5F8919C
+          ksceKernelAtomicSubAndGet8: 0xEB085370
+          ksceKernelAtomicXorAndGet16: 0x646003D6
+          ksceKernelAtomicXorAndGet32: 0x4244BE65
+          ksceKernelAtomicXorAndGet64: 0x692C51B3
+          ksceKernelAtomicXorAndGet8: 0x03887992
+          ksceKernelCpuId: 0x5E4D5DE1
+          ksceKernelCpuResumeIntr: 0xF5BAD43B
+          ksceKernelCpuSuspendIntr: 0x821FC0EE
+          ksceKernelDcacheCleanInvalidateRange: 0x364E68A4
+          ksceKernelDcacheCleanInvalidateRangeForL1WBWA: 0xE551F99B
+          ksceKernelDcacheCleanRange: 0x103872A5
+          ksceKernelDcacheCleanRangeForL1WBWA: 0x9CB9F0CE
+          ksceKernelDcacheInvalidateRange: 0x02796361
+          ksceKernelDcacheInvalidateRangeForL1WBWA: 0x8B4C26DF
+          ksceKernelIsUncacheAddressInTmpFsGame: 0x337CBDF3
           ksceKernelRWSpinlockLowReadLock: 0xCAC9AE80
           ksceKernelRWSpinlockLowReadLockCpuSuspendIntr: 0xEC53D007
           ksceKernelRWSpinlockLowReadUnlock: 0xF5FD5676
@@ -112,38 +112,55 @@ modules:
           ksceKernelRWSpinlockLowWriteUnlockCpuResumeIntr: 0x9EC91017
           ksceKernelSpinlockLowLock: 0xBF82DEB2
           ksceKernelSpinlockLowLockCpuSuspendIntr: 0xD32ACE9E
-          ksceKernelSpinlockLowTryLock: 0x5AC9D394
-          ksceKernelSpinlockLowTryLockCpuSuspendIntr: 0x27C0B340
+          ksceKernelSpinlockLowTrylock: 0x5AC9D394
+          ksceKernelSpinlockLowTrylockCpuSuspendIntr: 0x27C0B340
           ksceKernelSpinlockLowUnlock: 0xD6ED0C46
           ksceKernelSpinlockLowUnlockCpuResumeIntr: 0x7BB9D5DF
+          # SceCpuForDriver_E813EBB2: 0xE813EBB2
       SceCpuForKernel:
         kernel: true
         nid: 0x54BF2BAB
         functions:
+          ksceKernelAtomicAdd32AndGet64InHiLoRange: 0xD37AABE5
+          ksceKernelAtomicAdd32AndGet64InRange: 0xD8A7216C
+          ksceKernelAtomicAddAndGetPositive32InRange: 0x98E91C1C
+          ksceKernelAtomicDecIfLowPositive32: 0x8510FA52
+          ksceKernelAtomicGet32AndSet64: 0x4553FBDE
+          ksceKernelAtomicGet32AndSet64_2: 0x7FB4E7AC
+          ksceKernelAtomicIncrementHighwaterCounter: 0x5F64E5ED
+          ksceKernelAtomicLimit64: 0x6190A018
+          ksceKernelAtomicSubIfGreater64: 0x37FBFD12
           ksceKernelCorelockInitialize: 0x4CD4D921
           ksceKernelCorelockLock: 0x9D72DD1B
           ksceKernelCorelockUnlock: 0xA5C9DBBA
           ksceKernelCpuBranchPredictorInvalidateAll: 0x4C4C7D6B
           ksceKernelCpuBranchPredictorInvalidateAllIS: 0x1BB2BB8D
-          ksceKernelCpuDcacheCleanInvalidateMVAC: 0xC8E8C9E9
-          ksceKernelCpuDcacheCleanMVAC: 0xF7159B55
-          ksceKernelCpuDcacheCleanMVACRange: 0xC5C1EE4E
-          ksceKernelCpuDcacheInvalidateAll: 0x2F3BF020
-          ksceKernelCpuDcacheInvalidateMVAC: 0x470EAE1E
-          ksceKernelCpuDcacheInvalidateMVACRange: 0x583F30D1
-          ksceKernelCpuDcacheWritebackAll: 0x73A30DB2
-          ksceKernelCpuDcacheWritebackInvalidateAll: 0x76DAB4D0
-          ksceKernelCpuDcacheWritebackInvalidateRange: 0x6BA2E51C
           ksceKernelCpuGetCONTEXTIDR: 0x5B6B3274
-          ksceKernelCpuGetPaddr: 0x2A46E800
-          ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x19F17BD0
-          ksceKernelCpuIcacheInvalidateAll: 0x264DA250
-          ksceKernelCpuIcacheInvalidateAllU: 0xAEE0B489
-          ksceKernelCpuIcacheInvalidateRange: 0xF4C7F578
-          ksceKernelCpuPreloadEngineKill: 0xD0D85FF8
-          ksceKernelCpuUnrestrictedMemcpy: 0x8C683DEC
           ksceKernelCpuUpdateSCTLR: 0x04008CF7
+          ksceKernelDomainTextMemcpy: 0x8C683DEC
+          ksceKernelGetVmaccessRange: 0x9A3281C0
+          ksceKernelIcacheInvalidateRange: 0x19F17BD0
+          ksceKernelL1DcacheClean: 0xF7159B55
+          ksceKernelL1DcacheCleanAll: 0x73A30DB2
+          ksceKernelL1DcacheCleanInvalidate: 0xC8E8C9E9
+          ksceKernelL1DcacheCleanInvalidateAll: 0x76DAB4D0
+          ksceKernelL1DcacheCleanInvalidateRange: 0x6BA2E51C
+          ksceKernelL1DcacheCleanRange: 0xC5C1EE4E
+          ksceKernelL1DcacheInvalidate: 0x470EAE1E
+          ksceKernelL1DcacheInvalidateAll: 0x2F3BF020
+          ksceKernelL1DcacheInvalidateRange: 0x583F30D1
+          ksceKernelL1IcacheInvalidateEntire: 0xAEE0B489
+          ksceKernelL1IcacheInvalidateEntireAllCore: 0x264DA250
+          ksceKernelL1IcacheInvalidateRange: 0xF4C7F578
+          ksceKernelMMUGetMemoryType: 0x9B8173F4
+          ksceKernelMMUVAtoPA: 0x2A46E800
           ksceKernelMMUVAtoPAWithMode: 0x67343A07
+          ksceKernelPleFlushRequest: 0xD0D85FF8
+          # SceCpuForKernel_337473B5: 0x337473B5
+          # SceCpuForKernel_43CC6E20: 0x43CC6E20
+          # SceCpuForKernel_6C7E7B57: 0x6C7E7B57
+          # SceCpuForKernel_76EB0DD4: 0x76EB0DD4
+          # SceCpuForKernel_9CB82EB0: 0x9CB82EB0
       SceDebugForDriver:
         kernel: true
         nid: 0x88758561
