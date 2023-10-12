@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"gps_8h.html":[4,0,1,0,24],
+"gps_8h_source.html":[4,0,1,0,24],
 "gpu__es4_8h.html":[4,0,1,2,9],
 "gpu__es4_8h_source.html":[4,0,1,2,9],
 "graphics_8h.html":[4,0,1,0,4,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd":[1,11,0,0,6],
 "group__SceAppMgrUser.html#gad863aa5e7fcb541a0aada48e8c86f9bd":[4,0,1,0,5,6],
 "group__SceAppMgrUser.html#gadbc4d94e586624c5c04bb2fb65af982a":[1,11,0,0,40],
-"group__SceAppMgrUser.html#gadbc4d94e586624c5c04bb2fb65af982a":[4,0,1,0,5,19],
-"group__SceAppMgrUser.html#gadcc72e8b78f4fc4980775d5e60f6be4f":[1,11,0,0,76],
-"group__SceAppMgrUser.html#gadcc72e8b78f4fc4980775d5e60f6be4f":[4,0,1,0,5,55]
+"group__SceAppMgrUser.html#gadbc4d94e586624c5c04bb2fb65af982a":[4,0,1,0,5,19]
 };

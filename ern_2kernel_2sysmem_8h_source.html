@@ -82,12 +82,12 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h_source.html',''
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="build__utils_8h.html">vitasdk/build_utils.h</a>&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2types_8h.html">psp2kern/types.h</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__class_8h.html">psp2kern/kernel/sysmem/uid_class.h</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__guid_8h.html">psp2kern/kernel/sysmem/uid_guid.h</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__puid_8h.html">psp2kern/kernel/sysmem/uid_puid.h</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="heap_8h.html">psp2kern/kernel/sysmem/heap.h</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="data__transfers_8h.html">psp2kern/kernel/sysmem/data_transfers.h</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mmu_8h.html">psp2kern/kernel/sysmem/mmu.h</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="address__space_8h.html">psp2kern/kernel/sysmem/address_space.h</a>&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__class_8h.html">psp2kern/kernel/sysmem/uid_class.h</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__guid_8h.html">psp2kern/kernel/sysmem/uid_guid.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uid__puid_8h.html">psp2kern/kernel/sysmem/uid_puid.h</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="heap_8h.html">psp2kern/kernel/sysmem/heap.h</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="data__transfers_8h.html">psp2kern/kernel/sysmem/data_transfers.h</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="memtype_8h.html">psp2kern/kernel/sysmem/memtype.h</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ommon_2kernel_2sysmem_8h.html">psp2common/kernel/sysmem.h</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -181,6 +181,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h_source.html',''
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PSP2KERN_KERNEL_SYSMEM_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aaddress__space_8h_html"><div class="ttname"><a href="address__space_8h.html">address_space.h</a></div></div>
 <div class="ttc" id="abuild__utils_8h_html"><div class="ttname"><a href="build__utils_8h.html">build_utils.h</a></div></div>
 <div class="ttc" id="adata__transfers_8h_html"><div class="ttname"><a href="data__transfers_8h.html">data_transfers.h</a></div></div>
 <div class="ttc" id="agroup__SceBtKernel_html_ga1d127017fb298b889f4ba24752d08b8e"><div class="ttname"><a href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdoc">0 = read?, 1 = write?, 2 = feature?, 3 = ?</div><div class="ttdef"><b>Definition:</b> bt.h:2</div></div>
@@ -244,7 +245,6 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h_source.html',''
 <div class="ttc" id="agroup__SceTypesKernel_html_structSceKernelPAVector"><div class="ttname"><a href="group__SceTypesKernel.html#structSceKernelPAVector">SceKernelPAVector</a></div><div class="ttdef"><b>Definition:</b> types.h:128</div></div>
 <div class="ttc" id="aheap_8h_html"><div class="ttname"><a href="heap_8h.html">heap.h</a></div></div>
 <div class="ttc" id="amemtype_8h_html"><div class="ttname"><a href="memtype_8h.html">memtype.h</a></div></div>
-<div class="ttc" id="ammu_8h_html"><div class="ttname"><a href="mmu_8h.html">mmu.h</a></div></div>
 <div class="ttc" id="aommon_2kernel_2sysmem_8h_html"><div class="ttname"><a href="ommon_2kernel_2sysmem_8h.html">sysmem.h</a></div></div>
 <div class="ttc" id="apsp2kern_2types_8h_html"><div class="ttname"><a href="psp2kern_2types_8h.html">types.h</a></div></div>
 <div class="ttc" id="auid__class_8h_html"><div class="ttname"><a href="uid__class_8h.html">uid_class.h</a></div></div>

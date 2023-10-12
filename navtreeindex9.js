@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab6153a0ffad99529be464451fb2a20aa":[4,0,1,2,4,1,3],
+"group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab7395e93d3b02c246eb1c99b4e5e7794":[1,10,2,0,1,144],
 "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab7395e93d3b02c246eb1c99b4e5e7794":[1,10,2,0,146],
 "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab7395e93d3b02c246eb1c99b4e5e7794":[4,0,1,2,4,1,144],
 "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab81f4b40f9a007e8c9b884cb540577e7":[1,10,2,0,1,57],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "group__SceCLibUser.html#ga89fd24be2159a25dcda44fdb350cdca1":[4,0,1,0,2,1,31],
 "group__SceCLibUser.html#ga986a7064ae727fdac10fa610f1d4286c":[1,7,2,0,2],
 "group__SceCLibUser.html#ga986a7064ae727fdac10fa610f1d4286c":[4,0,1,0,2,1,2],
-"group__SceCLibUser.html#gaa7c75e94ea5fbcd7881125a08222ad6f":[1,7,2,0,1],
-"group__SceCLibUser.html#gaa7c75e94ea5fbcd7881125a08222ad6f":[4,0,1,0,2,1,1],
-"group__SceCLibUser.html#gabfe7c49693ffaaff9b555ed9fee2624b":[1,7,2,0,16]
+"group__SceCLibUser.html#gaa7c75e94ea5fbcd7881125a08222ad6f":[1,7,2,0,1]
 };
