@@ -9,7 +9,7 @@ This repository contains all Vita headers needed for development.
 - `include/` contains the header files themselves
   - `psp2` is for header files of user-exported libraries
   - `psp2kern` is for header files of kernel-exported libraries
-  - `psp2common` is for shared defines on psp and psp2kern
+  - `psp2common` is for shared defines on psp2 and psp2kern
 - `docs` contains everything related to the generation of the documentation using doxygen.
 - `vita.header_warn.cmake` definition to notify developers when there are breaking changes to backwards compatibility in vita-headers
 
