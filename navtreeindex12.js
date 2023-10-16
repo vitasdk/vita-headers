@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa63abd6dfc7f3ed2ae0dfcbdfb0cd4d89":[4,0,1,0,15,13,15],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa72fbf169a059f9c375593e7eefb21c0d":[1,1,2,0,13,5],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa72fbf169a059f9c375593e7eefb21c0d":[1,1,2,0,115],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa72fbf169a059f9c375593e7eefb21c0d":[4,0,1,0,15,13,5],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa82c87f83e9d8917d75dcb24189c57392":[1,1,2,0,13,12],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa82c87f83e9d8917d75dcb24189c57392":[1,1,2,0,122],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa82c87f83e9d8917d75dcb24189c57392":[4,0,1,0,15,13,12],
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aaa79657473221c46808603d1d97d4b12d":[1,1,2,0,13,0],
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aaa79657473221c46808603d1d97d4b12d":[1,1,2,0,110],
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aaa79657473221c46808603d1d97d4b12d":[4,0,1,0,15,13,0],
@@ -237,17 +244,10 @@ var NAVTREEINDEX12 =
 "group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a":[1,9,2,0,0],
 "group__SceCpu.html":[1,7,3],
 "group__SceCpuKernel.html":[1,7,3,1],
-"group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75":[4,0,1,2,1,6,20],
-"group__SceCpuKernel.html#ga05ea1ecfc1775b151abe04b000716b75":[1,7,3,1,20],
-"group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97":[4,0,1,2,1,6,34],
-"group__SceCpuKernel.html#ga1670ab4cf602818e4f288c5917400f97":[1,7,3,1,34],
-"group__SceCpuKernel.html#ga1e9446f23dc8fea22955dd21c250743e":[4,0,1,2,1,6,12],
-"group__SceCpuKernel.html#ga1e9446f23dc8fea22955dd21c250743e":[1,7,3,1,12],
-"group__SceCpuKernel.html#ga2a8e345d257fb1643ccbb301820a6550":[4,0,1,2,1,6,24],
-"group__SceCpuKernel.html#ga2a8e345d257fb1643ccbb301820a6550":[1,7,3,1,24],
-"group__SceCpuKernel.html#ga2e6aa771d998e8a9f40e85b892e1e691":[4,0,1,2,1,6,25],
-"group__SceCpuKernel.html#ga2e6aa771d998e8a9f40e85b892e1e691":[1,7,3,1,25],
-"group__SceCpuKernel.html#ga34661ab47340a3c061425f5f4bf0fe35":[4,0,1,2,1,6,14],
-"group__SceCpuKernel.html#ga34661ab47340a3c061425f5f4bf0fe35":[1,7,3,1,14],
-"group__SceCpuKernel.html#ga4663f02bb006575ef7c939048e5c712f":[1,7,3,1,23]
+"group__SceCpuKernel.html#ga002a4d724350b5bb24490055edc59414":[4,0,1,2,1,0,0,60],
+"group__SceCpuKernel.html#ga002a4d724350b5bb24490055edc59414":[1,7,3,1,62],
+"group__SceCpuKernel.html#ga0215abf301685022f2e3cf887afe4def":[4,0,1,2,1,0,1,3],
+"group__SceCpuKernel.html#ga0215abf301685022f2e3cf887afe4def":[1,7,3,1,86],
+"group__SceCpuKernel.html#ga0462c23ee8a2f61bd2489fc7ffc6de40":[4,0,1,2,1,0,0,68],
+"group__SceCpuKernel.html#ga0462c23ee8a2f61bd2489fc7ffc6de40":[1,7,3,1,70]
 };

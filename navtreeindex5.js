@@ -1,5 +1,12 @@
 var NAVTREEINDEX5 =
 {
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea05a8e87a3eba2b1088bdcfab2ed6758c":[1,2,2,0,33,1],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea05a8e87a3eba2b1088bdcfab2ed6758c":[1,2,2,0,38],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea1ed7d1ad6fcc8cdfb8e5147b59b97367":[4,0,1,0,8,33,18],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea1ed7d1ad6fcc8cdfb8e5147b59b97367":[1,2,2,0,33,18],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea1ed7d1ad6fcc8cdfb8e5147b59b97367":[1,2,2,0,55],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea2864445b912c4f65dd75873f853a97cc":[4,0,1,0,8,33,22],
+"group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea2864445b912c4f65dd75873f853a97cc":[1,2,2,0,33,22],
 "group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea2864445b912c4f65dd75873f853a97cc":[1,2,2,0,59],
 "group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea307604461221a0207fc7f4b1ff548580":[4,0,1,0,8,33,11],
 "group__SceAudiodecUser.html#gga261ce1c505a86bac3b261a8cb3f5e1fea307604461221a0207fc7f4b1ff548580":[1,2,2,0,33,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX5 =
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab4f2319f3bb23f6dc9fbd12bc2b7699b":[4,0,1,0,9,9,9],
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab4f2319f3bb23f6dc9fbd12bc2b7699b":[1,2,3,0,9,9],
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab4f2319f3bb23f6dc9fbd12bc2b7699b":[1,2,3,0,36],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[4,0,1,0,9,9,3],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[1,2,3,0,9,3],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[1,2,3,0,30],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fad5937049715f9558083be51835c50116":[4,0,1,0,9,9,0],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fad5937049715f9558083be51835c50116":[1,2,3,0,9,0],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fad5937049715f9558083be51835c50116":[1,2,3,0,27],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fae645ac1f01ccbc924df25568f30a5a28":[4,0,1,0,9,9,2],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fae645ac1f01ccbc924df25568f30a5a28":[1,2,3,0,9,2]
+"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fab923f4f60cd6154cc69dc84372dd3efe":[4,0,1,0,9,9,3]
 };
