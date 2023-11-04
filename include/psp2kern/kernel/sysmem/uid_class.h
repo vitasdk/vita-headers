@@ -43,14 +43,22 @@ typedef struct SceObjectBase { // size is 0x8-bytes
 } SceObjectBase;
 VITASDK_BUILD_ASSERT_EQ(8, SceObjectBase);
 
-SceClass *ksceKernelGetUidClass(void);
-SceClass *ksceKernelGetUidDLinkClass(void);
-SceClass *ksceKernelGetUidHeapClass(void);
-SceClass *ksceKernelGetUidMemBlockClass(void);
+SceClass *ksceKernelGetUIDClass(void);
+SceClass *ksceKernelGetUIDDLinkClass(void);
+SceClass *ksceKernelGetUIDHeapClass(void);
+SceClass *ksceKernelGetUIDMemBlockClass(void);
 
-int ksceKernelCreateClass(SceClass *cls, const char *name, void *uidclass, SceSize itemsize, SceClassCallback create, SceClassCallback destroy);
+int ksceUIDClassInitClass(SceClass *cls, const char *name, void *uidclass, SceSize itemsize, SceClassCallback create, SceClassCallback destroy);
 
 int ksceKernelFindClassByName(const char *name, SceClass **cls);
+
+/* Macros for backwards compatibility */
+#define ksceKernelCreateClass(cls, name, uidclass, itemsize, create, destroy) ksceUIDClassInitClass(cls, name, uidclass, itemsize, create, destroy)
+
+#define ksceKernelGetUidClass()         ksceKernelGetUIDClass()
+#define ksceKernelGetUidDLinkClass()    ksceKernelGetUIDDLinkClass()
+#define ksceKernelGetUidHeapClass()     ksceKernelGetUIDHeapClass()
+#define ksceKernelGetUidMemBlockClass() ksceKernelGetUIDMemBlockClass()
 
 #ifdef __cplusplus
 }

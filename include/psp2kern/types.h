@@ -137,7 +137,7 @@ typedef struct SceKernelPAVector { // size is 0x14
 		struct { // do not use.
 			uint32_t list_size;             //!< Size in elements of the list array
 			uint32_t ret_length;            //!< Total physical size of the memory pairs
-			uint32_t ret_count;             //!< Number of elements of list filled by ksceKernelGetPaddrList
+			uint32_t ret_count;             //!< Number of elements of list filled by ksceKernelVARangeToPAVector
 			SceKernelAddrPair *list;        //!< Array of physical addresses and their lengths pairs
 		};
 	};

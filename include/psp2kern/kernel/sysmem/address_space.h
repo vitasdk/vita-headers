@@ -25,6 +25,16 @@ extern "C" {
 int ksceKernelVAtoPA(const void *va, uintptr_t *pa);
 
 /**
+ * Get the physical address range of a given virtual address range
+ *
+ * @param[in]  va_range  - The virtual address range
+ * @param[out] pa_range - The vector of physical addresses
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelVARangeToPARange(const SceKernelVARange *va_range, SceKernelPARange *pa_range);
+
+/**
  * Get the physical address list of a given virtual address range
  *
  * @param[in]  va_range  - The virtual address range

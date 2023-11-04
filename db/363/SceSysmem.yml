@@ -9,9 +9,9 @@ modules:
         nid: 0x02451F0F
         functions:
           ksceGUIDKernelCreateWithOpt: 0xFB6390CE
+          ksceKernelCopyToUserProcTextDomain: 0x2995558D
           ksceKernelFindClassByName: 0x7D87F706
           ksceKernelGetMemBlockType: 0xD44FE44B
-          ksceKernelProcMemcpyToUserRx: 0x2995558D
       SceUartForKernel:
         kernel: true
         nid: 0x1CCD9BA3

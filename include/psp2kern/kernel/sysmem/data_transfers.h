@@ -36,7 +36,7 @@ extern "C" {
  *       DACR          - 0x55555555
  *       Setting TTBR1 - No (use current TTBR1)
  */
-int ksceKernelMemcpyFromUser(void *dst, const void *src, SceSize len);
+int ksceKernelCopyFromUser(void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy from user memory with process
@@ -51,7 +51,7 @@ int ksceKernelMemcpyFromUser(void *dst, const void *src, SceSize len);
  * @note - Invoke ksceKernelMemcpyFromUser with disable interrupts.
  *         Setting TTBR1 - Yes
  */
-int ksceKernelProcMemcpyFromUser(SceUID pid, void *dst, const void *src, SceSize len);
+int ksceKernelCopyFromUserProc(SceUID pid, void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy to user memory
@@ -66,7 +66,7 @@ int ksceKernelProcMemcpyFromUser(SceUID pid, void *dst, const void *src, SceSize
  *       DACR          - 0x55555555
  *       Setting TTBR1 - No (use current TTBR1)
  */
-int ksceKernelMemcpyToUser(void *dst, const void *src, SceSize len);
+int ksceKernelCopyToUser(void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy from user memory with process
@@ -81,7 +81,7 @@ int ksceKernelMemcpyToUser(void *dst, const void *src, SceSize len);
  * @note - Invoke ksceKernelMemcpyToUser with disable interrupts.
  *         Setting TTBR1 - Yes
  */
-int ksceKernelProcMemcpyToUser(SceUID pid, void *dst, const void *src, SceSize len);
+int ksceKernelCopyToUserProc(SceUID pid, void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy to user RO memory
@@ -96,7 +96,7 @@ int ksceKernelProcMemcpyToUser(SceUID pid, void *dst, const void *src, SceSize l
  *       DACR          - 0x15450FC3
  *       Setting TTBR1 - No (use current TTBR1)
  */
-int ksceKernelMemcpyToUserRo(void *dst, const void *src, SceSize len);
+int ksceKernelCopyToUserDomain(void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy to user RO memory with DcacheAndL2WritebackRange
@@ -111,7 +111,7 @@ int ksceKernelMemcpyToUserRo(void *dst, const void *src, SceSize len);
  *       DACR          - 0x15450FC3
  *       Setting TTBR1 - No (use current TTBR1)
  */
-int ksceKernelMemcpyToUserRx(void *dst, const void *src, SceSize len);
+int ksceKernelCopyToUserTextDomain(void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy to user RX memory with process
@@ -123,10 +123,10 @@ int ksceKernelMemcpyToUserRx(void *dst, const void *src, SceSize len);
  *
  * @return 0 on success, < 0 on error.
  *
- * @note - Invoke ksceKernelMemcpyToUserRx with disable interrupts.
+ * @note - Invokes ksceKernelCopyToUserTextDomain with disable interrupts. Cleans the cache.
  *         Setting TTBR1 - Yes
  */
-int ksceKernelProcMemcpyToUserRx(SceUID pid, void *dst, const void *src, SceSize len);
+int ksceKernelCopyToUserProcTextDomain(SceUID pid, void *dst, const void *src, SceSize len);
 
 /**
  * Strncpy from user memory
@@ -157,7 +157,7 @@ SceSSize ksceKernelStrncpyFromUser(char *dst, const char *src, SceSize len);
  *         DACR          - Current process DACR
  *         Setting TTBR1 - Yes
  */
-SceSSize ksceKernelProcStrncpyFromUser(SceUID pid, char *dst, const char *src, SceSize len);
+SceSSize ksceKernelStrncpyFromUserProc(SceUID pid, char *dst, const char *src, SceSize len);
 
 /**
  * Strncpy to user memory
@@ -188,7 +188,7 @@ SceSSize ksceKernelStrncpyToUser(char *dst, const char *src, SceSize len);
  *         DACR          - Current process DACR
  *         Setting TTBR1 - Yes
  */
-SceSSize ksceKernelProcStrncpyToUser(SceUID pid, char *dst, const char *src, SceSize len);
+SceSSize ksceKernelStrncpyToUserProc(SceUID pid, char *dst, const char *src, SceSize len);
 
 /**
  * Strnlen user memory
@@ -202,7 +202,7 @@ SceSSize ksceKernelProcStrncpyToUser(SceUID pid, char *dst, const char *src, Sce
  *       DACR          - 0x55555555
  *       Setting TTBR1 - No (use current TTBR1)
  */
-SceSize ksceKernelStrnlenUser(const char *s, SceSize n);
+SceSize ksceKernelStrnlenFromUser(const char *s, SceSize n);
 
 /**
  * Strnlen user memory with process
@@ -217,7 +217,7 @@ SceSize ksceKernelStrnlenUser(const char *s, SceSize n);
  *         DACR          - Current process DACR
  *         Setting TTBR1 - Yes
  */
-SceSSize ksceKernelProcStrnlenUser(SceUID pid, const char *s, SceSize n);
+SceSSize ksceKernelStrnlenFromUserProc(SceUID pid, const char *s, SceSize n);
 
 /**
  * Memcpy user memory to user memory
@@ -232,7 +232,7 @@ SceSSize ksceKernelProcStrnlenUser(SceUID pid, const char *s, SceSize n);
  *       DACR          - 0x55555555
  *       Setting TTBR1 - No (use current TTBR1)
  */
-int ksceKernelUserMemcpy(void *dst, const void *src, SceSize len);
+int ksceKernelCopyFromToUser(void *dst, const void *src, SceSize len);
 
 /**
  * Memcpy user memory to user memory with process
@@ -248,21 +248,33 @@ int ksceKernelUserMemcpy(void *dst, const void *src, SceSize len);
  *         DACR          - Current process DACR
  *         Setting TTBR1 - Yes
  */
-int ksceKernelProcUserMemcpy(SceUID pid, void *dst, const void *src, SceSize len);
+int ksceKernelCopyFromToUserProc(SceUID pid, void *dst, const void *src, SceSize len);
 
 
 /* Macros for backwards compatibility */
-#define ksceKernelMemcpyUserToKernel(__dst__, __src__, __len__)                  ksceKernelMemcpyFromUser((__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyUserToKernelForPid(__pid__, __dst__, __src__, __len__)   ksceKernelProcMemcpyFromUser((__pid__), (__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyKernelToUser(__dst__, __src__, __len__)                  ksceKernelMemcpyToUser((__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyToUserRo(__dst__, __src__, __len__)                      ksceKernelMemcpyToUserRo((__dst__), (__src__), (__len__))
-#define ksceKernelMemcpyToUserRx(__dst__, __src__, __len__)                      ksceKernelMemcpyToUserRx((__dst__), (__src__), (__len__))
-#define ksceKernelRxMemcpyKernelToUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelProcMemcpyToUserRx((__pid__), (__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyUserToKernel(__dst__, __src__, __len__)                  ksceKernelCopyFromUser((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyUserToKernelForPid(__pid__, __dst__, __src__, __len__)   ksceKernelCopyFromUserProc((__pid__), (__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyKernelToUser(__dst__, __src__, __len__)                  ksceKernelCopyToUser((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyToUserRo(__dst__, __src__, __len__)                      ksceKernelCopyToUserDomain((__dst__), (__src__), (__len__))
+#define ksceKernelMemcpyToUserRx(__dst__, __src__, __len__)                      ksceKernelCopyToUserTextDomain((__dst__), (__src__), (__len__))
+#define ksceKernelRxMemcpyKernelToUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelCopyToUserProcTextDomain((__pid__), (__dst__), (__src__), (__len__))
+
+#define ksceKernelMemcpyFromUser(__dst__, __src__, __len__)              ksceKernelCopyFromUser(__dst__, __src__, __len__)
+#define ksceKernelProcMemcpyFromUser(__pid__, __dst__, __src__, __len__) ksceKernelCopyFromUserProc(__pid__, __dst__, __src__, __len__)
+#define ksceKernelMemcpyToUser(__dst__, __src__, __len__)                ksceKernelCopyToUser(__dst__, __src__, __len__)
+#define ksceKernelProcMemcpyToUser(__pid__, __dst__, __src__, __len__)   ksceKernelCopyToUserProc(__pid__, __dst__, __src__, __len__)
+#define ksceKernelUserMemcpy(__dst__, __src__, __len__)                  ksceKernelCopyFromToUser(__dst__, __src__, __len__)
+#define ksceKernelProcUserMemcpy(__pid__, __dst__, __src__, __len__)     ksceKernelCopyFromToUserProc(__pid__, __dst__, __src__, __len__)
+#define ksceKernelProcMemcpyToUserRx(__pid__, __dst__, __src__, __len__) ksceKernelCopyToUserProcTextDomain(__pid__, __dst__, __src__, __len__)
 
 #define ksceKernelStrncpyUserToKernel(__dst__, __src__, __len__)        ksceKernelStrncpyFromUser((__dst__), (__src__), (__len__))
-#define ksceKernelStrncpyUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelProcStrncpyFromUser((__pid__), (__dst__), (__src__), (__len__))
+#define ksceKernelStrncpyUserForPid(__pid__, __dst__, __src__, __len__) ksceKernelStrncpyFromUserProc((__pid__), (__dst__), (__src__), (__len__))
 #define ksceKernelStrncpyKernelToUser(__dst__, __src__, __len__)        ksceKernelStrncpyToUser((__dst__), (__src__), (__len__))
 
+#define ksceKernelProcStrncpyFromUser(__pid__, __dst__, __src__, __len__) ksceKernelStrncpyFromUserProc((__pid__), (__dst__), (__src__), (__len__))
+#define ksceKernelProcStrncpyToUser(__pid__, __dst__, __src__, __len__)   ksceKernelStrncpyToUserProc((__pid__), (__dst__), (__src__), (__len__))
+#define ksceKernelStrnlenUser(__s__, __n__)                               ksceKernelStrnlenFromUser(__s__, __n__)
+#define ksceKernelProcStrnlenUser(__pid__, __s__, __n__)                  ksceKernelStrnlenFromUserProc(__pid__, __s__, __n__)
 
 #ifdef __cplusplus
 }
