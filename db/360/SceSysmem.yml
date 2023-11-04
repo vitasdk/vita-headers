@@ -417,106 +417,106 @@ modules:
         nid: 0x6F25E18A
         functions:
           ksceGUIDClose: 0x047D32F2
+          ksceGUIDCreate: 0x89A44858
+          ksceGUIDGetClass: 0xC74B0152
+          ksceGUIDGetName: 0xA78755EB
+          ksceGUIDGetObject: 0x0FC24464
+          ksceGUIDKernelCreate: 0x56A13E90
+          ksceGUIDName: 0xE655852F
+          ksceGUIDOpenByName: 0xD76E7452
           ksceGUIDReferObject: 0x0F5C84B7
           ksceGUIDReferObjectWithClass: 0x00ED6C14
           ksceGUIDReferObjectWithClassLevel: 0x77066FD1
+          ksceGUIDReferObjectWithLevel: 0xF6DB54BA
+          ksceGUIDReferObjectWithSubclass: 0x72A98D17
           ksceGUIDReleaseObject: 0x149885C4
-          ksceKernelAddressSpaceVAtoPABySW: 0x65419BD3
+          ksceGUIDSetName: 0x4CFA4100
           ksceKernelAllocHeapMemory: 0x7B4CB60A
-          ksceKernelAllocHeapMemoryFromGlobalHeap: 0x7750CEA7
-          ksceKernelAllocHeapMemoryFromGlobalHeapWithOpt: 0x0B4ED16A
-          ksceKernelAllocHeapMemoryWithOpt1: 0xB415B5A8
+          ksceKernelAllocHeapMemoryWithOpt: 0xB415B5A8
           ksceKernelAllocHeapMemoryWithOption: 0x49D4DD9B
           ksceKernelAllocMemBlock: 0xC94850C9
           ksceKernelAllocMemBlockWithInfo: 0xD44F464D
-          ksceKernelCreateClass: 0x61317102
+          ksceKernelAllocUncacheHeapMemory: 0x7750CEA7
+          ksceKernelAllocUncacheHeapMemoryWithOption: 0x0B4ED16A
+          ksceKernelCopyFromToUser: 0x1BD44DD5
+          ksceKernelCopyFromToUserProc: 0x8E086C33
+          ksceKernelCopyFromUser: 0xBC996A7A
+          ksceKernelCopyFromUserProc: 0x605275F8
+          ksceKernelCopyToUser: 0x6D88EF8A
+          ksceKernelCopyToUserProc: 0x6B825479
+          ksceKernelCountFillValue64FromUser: 0xBB3B02C2
+          ksceKernelCountFillValue64FromUserProc: 0xE83855FD
+          ksceKernelCountFillValueFromUser: 0xBDA6E42B
+          ksceKernelCountFillValueFromUserProc: 0x8334454F
           ksceKernelCreateHeap: 0x9328E0E8
-          ksceKernelCreateUidObj2: 0x56A13E90
-          ksceKernelCreateUidObjForUid: 0x89A44858
-          ksceKernelCreateUserUidForClass: 0xCED1547B
-          ksceKernelCreateUserUidForName: 0x513B9DDD
-          ksceKernelCreateUserUidForNameWithClass: 0x8DA0BCA5
+          ksceKernelDecRefCountMemBlock: 0xF50BDC0C
           ksceKernelDeleteHeap: 0xD6437637
-          ksceKernelFindMemBlock: 0x9C78064C
           ksceKernelFindMemBlockByAddr: 0x8A1742F6
-          ksceKernelFindMemBlockByAddrForDefaultSize: 0xF3BBE2E1
-          ksceKernelFindMemBlockByAddrForPid: 0x857F1D5A
-          ksceKernelFindMemBlockForPid: 0x9F6E45E3
-          ksceKernelFirstDifferentBlock32User: 0xBDA6E42B
-          ksceKernelFirstDifferentBlock64User: 0xBB3B02C2
-          ksceKernelFirstDifferentBlock64UserForPid: 0xE83855FD
-          ksceKernelFirstDifferentIntUserForPid: 0x8334454F
+          ksceKernelFindProcMemBlockByAddr: 0x857F1D5A
           ksceKernelFreeHeapMemory: 0x3EBCE343
-          ksceKernelFreeHeapMemoryFromGlobalHeap: 0xFB817A59
           ksceKernelFreeMemBlock: 0x009E1C61
-          ksceKernelGUIDGetObject: 0x0FC24464
-          ksceKernelGetClassForPidForUid: 0xE9728A12
-          ksceKernelGetClassForUid: 0xC74B0152
+          ksceKernelFreeUncacheHeapMemory: 0xFB817A59
           ksceKernelGetMemBlockAllocMapSize: 0x78337B62
           ksceKernelGetMemBlockBase: 0xA841EDDA
+          ksceKernelGetMemBlockInfo: 0xA73CFFEF
           ksceKernelGetMemBlockMappedBase: 0x0B1FD5C3
+          ksceKernelGetMemBlockMemtypeByAddr: 0xF3BBE2E1
           ksceKernelGetMemBlockPARange: 0x98C15666
-          ksceKernelGetMemBlockPaddrListForUid: 0x19A51AC7
+          ksceKernelGetMemBlockPAVector: 0x19A51AC7
           ksceKernelGetMemBlockVBase: 0xB81CF0A3
-          ksceKernelGetNameForPidByUid: 0x09896EB7
-          ksceKernelGetNameForUid: 0xA78755EB
-          ksceKernelGetNameForUid2: 0xE655852F
-          ksceKernelGetObjectForPidForUid: 0xFE6D7FAE
-          ksceKernelGetObjectForUidForAttr: 0xF6DB54BA
-          ksceKernelGetObjectForUidForClassTree: 0x72A98D17
-          ksceKernelGetPaddrListForLargePage: 0x08A8A7E8
-          ksceKernelGetPaddrListForSmallPage: 0x16844CE6
-          ksceKernelGetPaddrPair: 0xAE36C775
-          ksceKernelGetPaddrPairForLargePage: 0x32257A24
-          ksceKernelGetPaddrPairForSmallPage: 0xB3575090
           ksceKernelGetPhysicalMemoryType: 0x0AAA4FDD
-          ksceKernelGetUidClass: 0x85336A1C
-          ksceKernelIsPaddrWithinSameSectionForUid: 0xF4AD89D8
-          ksceKernelKernelUidForUserUidForClass: 0x184172B1
-          ksceKernelMapBlockUserVisible: 0x58D21746
-          ksceKernelMapBlockUserVisibleWithFlag: 0x04059C4B
-          ksceKernelMapUserBlock: 0x7D4F8B5F
-          ksceKernelMemBlockDecRefCounterAndReleaseUid: 0xF50BDC0C
+          ksceKernelGetUIDClass: 0x85336A1C
+          ksceKernelIncRefCountMemBlock: 0xEAF3849B
+          ksceKernelIsAccessibleRange: 0x9C78064C
+          ksceKernelIsAccessibleRangeProc: 0x9F6E45E3
+          ksceKernelIsEqualAccessibleRangeProcBySW: 0xF4AD89D8
+          ksceKernelLockRange: 0x59A4402F
+          ksceKernelLockRangeProc: 0x659586BF
+          ksceKernelLockRangeWithMode: 0xBC0A1D60
+          ksceKernelMapMemBlock: 0x58D21746
+          ksceKernelMapMemBlockWithFlag: 0x04059C4B
           ksceKernelMemBlockGetInfoEx: 0x24A99FFF
-          ksceKernelMemBlockGetInfoExForVisibilityLevel: 0xA73CFFEF
-          ksceKernelMemBlockIncRefCounterAndReleaseUid: 0xEAF3849B
-          ksceKernelMemBlockRelease: 0x00575B00
           ksceKernelMemBlockType2Memtype: 0x20C811FA
           ksceKernelMemBlockTypeGetPrivileges: 0x6A0792A3
-          ksceKernelMemRangeRelease: 0x75C70DE0
-          ksceKernelMemRangeReleaseForPid: 0xA8525B06
-          ksceKernelMemRangeReleaseWithPerm: 0x22CBE925
-          ksceKernelMemRangeRetain: 0x59A4402F
-          ksceKernelMemRangeRetainForPid: 0x659586BF
-          ksceKernelMemRangeRetainWithPerm: 0xBC0A1D60
-          ksceKernelMemcpyFromUser: 0xBC996A7A
-          ksceKernelMemcpyToUser: 0x6D88EF8A
-          ksceKernelOpenUidForName: 0xD76E7452
-          ksceKernelProcMemcpyFromUser: 0x605275F8
-          ksceKernelProcMemcpyToUser: 0x6B825479
           ksceKernelProcModeVAtoPA: 0x61A67D32
-          ksceKernelProcStrncpyFromUser: 0x75AAF178
-          ksceKernelProcStrncpyToUser: 0xFED82F2D
-          ksceKernelProcStrnlenUser: 0x9929EB07
           ksceKernelProcUserMap: 0x0091D74D
-          ksceKernelProcUserMemcpy: 0x8E086C33
           ksceKernelProcessGetContext: 0x2ECF7944
           ksceKernelProcessSwitchContext: 0x2D711589
-          ksceKernelRemapBlock: 0xDFE2C8CB
-          ksceKernelSetNameForPidForUid: 0x12624884
-          ksceKernelSetObjectForUid: 0x4CFA4100
+          ksceKernelRemapMemBlock: 0xDFE2C8CB
           ksceKernelStrncpyFromUser: 0xDB3EC244
+          ksceKernelStrncpyFromUserProc: 0x75AAF178
           ksceKernelStrncpyToUser: 0x80BD6FEB
-          ksceKernelStrnlenUser: 0xB429D419
+          ksceKernelStrncpyToUserProc: 0xFED82F2D
+          ksceKernelStrnlenFromUser: 0xB429D419
+          ksceKernelStrnlenFromUserProc: 0x9929EB07
           ksceKernelSwitchVmaForPid: 0x6F2ACDAE
+          ksceKernelUnlockRange: 0x75C70DE0
+          ksceKernelUnlockRangeProc: 0xA8525B06
+          ksceKernelUnlockRangeWithMode: 0x22CBE925
           ksceKernelUnmapMemBlock: 0xFFCD9B60
           ksceKernelUserMap: 0x278BC201
-          ksceKernelUserMemcpy: 0x1BD44DD5
+          ksceKernelUserMapWithFlags: 0x7D4F8B5F
+          ksceKernelUserUnmap: 0x00575B00
+          ksceKernelVARangeToPARange: 0xAE36C775
+          ksceKernelVARangeToPARangeByHW: 0xB3575090
+          ksceKernelVARangeToPARangeBySW: 0x32257A24
           ksceKernelVARangeToPAVector: 0xE68BEEBD
+          ksceKernelVARangeToPAVectorByHW: 0x16844CE6
+          ksceKernelVARangeToPAVectorBySW: 0x08A8A7E8
           ksceKernelVAtoPA: 0x8D160E65
+          ksceKernelVAtoPABySW: 0x65419BD3
           kscePUIDClose: 0x84A4AF5E
+          kscePUIDGetClass: 0xE9728A12
+          kscePUIDGetName: 0x09896EB7
+          kscePUIDGetObject: 0xFE6D7FAE
           kscePUIDOpenByGUID: 0xBF209859
+          kscePUIDOpenByGUIDWithFlags: 0xCED1547B
+          kscePUIDOpenByName: 0x513B9DDD
+          kscePUIDOpenByNameWithClass: 0x8DA0BCA5
+          kscePUIDSetName: 0x12624884
           kscePUIDtoGUID: 0x45D22597
+          kscePUIDtoGUIDWithClass: 0x184172B1
+          ksceUIDClassInitClass: 0x61317102
       SceSysmemForKernel:
         kernel: true
         nid: 0x63A519E5
@@ -531,7 +531,10 @@ modules:
           ksceKernelAddressSpaceUnmap: 0xCE72839E
           ksceKernelAddressSpaceVAtoPA: 0xF2179820
           ksceKernelAlloc: 0xC0A4D2F3
-          ksceKernelAllocSystemCallTable: 0x5FFE4B79
+          ksceKernelAllocPartitionMemBlock: 0x5FFE4B79
+          ksceKernelCopyToUserDomain: 0xA6F95838
+          ksceKernelCopyToUserProcTextDomain: 0x30931572
+          ksceKernelCopyToUserTextDomain: 0x67BAD5B4
           ksceKernelCreateAddressSpace: 0x4A3737F0
           ksceKernelDeleteAddressSpace: 0xF2D7FE3A
           ksceKernelFindClassByName: 0x62989905
@@ -541,13 +544,10 @@ modules:
           ksceKernelGetHeapInfo: 0x91733EF4
           ksceKernelGetHeapInfoByPtr: 0x68451777
           ksceKernelGetMemBlockType: 0x289BE3EC
-          ksceKernelGetUidDLinkClass: 0xC105604E
-          ksceKernelGetUidHeapClass: 0x4CCA935D
-          ksceKernelGetUidMemBlockClass: 0xAF729575
-          ksceKernelMemcpyToUserRo: 0xA6F95838
-          ksceKernelMemcpyToUserRx: 0x67BAD5B4
+          ksceKernelGetUIDDLinkClass: 0xC105604E
+          ksceKernelGetUIDHeapClass: 0x4CCA935D
+          ksceKernelGetUIDMemBlockClass: 0xAF729575
           ksceKernelNameHeapGetInfo: 0xE443253B
-          ksceKernelProcMemcpyToUserRx: 0x30931572
           ksceKernelUIDEntryHeapGetInfo: 0x686AA15C
       SceSysrootForDriver:
         kernel: true
