@@ -48,12 +48,12 @@ modules:
         kernel: true
         nid: 0x13D793B7
         functions:
-          ksceDebugDisableInfoDump: 0xA465A31A
-          ksceDebugGetPutcharHandler: 0x8D474850
-          ksceDebugPutchar: 0x2AABAEDA
-          ksceDebugRegisterPutcharHandler: 0x22546577
-          ksceDebugSetHandlers: 0x88AD6D0C
-          ksceKernelSetMinimumAssertionLevel: 0xA0CE3287
+          ksceKernelDebugPutchar: 0x2AABAEDA
+          ksceKernelEnableCrashDump: 0xA465A31A
+          ksceKernelGetDebugPutcharHandler: 0x8D474850
+          ksceKernelRegisterDebugPutcharHandler: 0x22546577
+          ksceKernelRegisterKprintfHandler: 0x88AD6D0C
+          ksceKernelSetAssertLevel: 0xA0CE3287
       SceCpuForKernel:
         kernel: true
         nid: 0xA5195D20
