@@ -93,7 +93,7 @@ static inline int ksceKernelDomainTextMemcpy(void *dst, const void *src, SceSize
 
 	memcpy(dst, src, len);
 
-	ksceKernelDcacheCleanRangeForL1WBWA((void *)(((uintptr_t)dst) & ~0x1F), ((((uintptr_t)dst) + len + 0x1F) & ~0x1F) - (((uintptr_t)dst) & 0x1F));
+	ksceKernelDcacheCleanRangeForL1WBWA((void *)(((uintptr_t)dst) & ~0x1F), ((((uintptr_t)dst) + len + 0x1F) & ~0x1F) - (((uintptr_t)dst) & ~0x1F));
 
 	asm volatile("mcr p15, 0, %0, c3, c0, 0" :: "r" (prev_dacr));
 
