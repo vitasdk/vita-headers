@@ -8,7 +8,14 @@ modules:
         kernel: true
         nid: 0xEB1F8EF7
         functions:
+          ksceKernelCreateProcess: 0x68068618
           ksceKernelExitProcess: 0x905621F9
-          ksceKernelGetProcessAuthid: 0x324F2B20
           ksceKernelGetProcessKernelBuf: 0xD991C85E
-          ksceKernelLaunchApp: 0x68068618
+          ksceKernelGetProcessMainThread: 0xD20553C6
+          ksceKernelGetProcessModuleInfo: 0x3AF6B088
+          ksceKernelGetProcessSelfAuthInfo: 0x324F2B20
+          ksceKernelGetUIDProcessClass: 0x98AE4BC8
+          ksceKernelLibcGettimeofday: 0x014F5113
+          ksceKernelLibcTime: 0xB0E076D6
+          ksceKernelResumeProcess: 0x6894499C
+          ksceKernelSuspendProcess: 0x93B8E785
