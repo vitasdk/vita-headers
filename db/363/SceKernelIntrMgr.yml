@@ -1,0 +1,11 @@
+version: 2
+firmware: 3.63
+modules:
+  SceKernelIntrMgr:
+    nid: 0x0
+    libraries:
+      SceIntrmgrForKernel:
+        kernel: true
+        nid: 0xDF44892E
+        functions:
+          ksceKernelQueryIntrHandlerInfo: 0xF769CEFA

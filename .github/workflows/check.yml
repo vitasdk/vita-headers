@@ -66,6 +66,15 @@ jobs:
         cd build
         cmake ..
         make -j$(nproc)
+    - name: NID compat checks
+      run: |
+        export VITASDK=$PWD/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        cd check_nid_compat
+        mkdir build
+        cd build
+        cmake ..
+        make -j$(nproc)
     - name: Sample build test
       run: |
         export VITASDK=$PWD/vitasdk

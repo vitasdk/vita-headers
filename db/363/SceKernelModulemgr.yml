@@ -8,12 +8,46 @@ modules:
         kernel: true
         nid: 0x92C9FFC2
         functions:
+          ksceKernelFinalizeKbl: 0xB911516F
+          ksceKernelGetExportedLibraryListInModule: 0x7E3F9F55
+          ksceKernelGetImportedLibraryListInModule: 0x1360E9A8
+          ksceKernelGetLibEntCBListForSyslibtrace: 0x534519CD
+          ksceKernelGetLibraryClientList: 0xAAF6E971
+          ksceKernelGetLibraryDBFlags: 0x1C82E9F7
+          ksceKernelGetLibraryExportInfoForDebugger: 0xACDB6FEF
+          ksceKernelGetLibraryInfoForDebugger: 0xB54482AF
+          ksceKernelGetLibraryList: 0x12AD6DE3
+          ksceKernelGetLostLibraryInfo: 0x388D4DE0
+          ksceKernelGetLostLibraryList: 0x7D71892B
+          ksceKernelGetLostLibraryListInModule: 0x6A5DFBBA
+          ksceKernelGetMetaDataForDebugger: 0x2E6569F3
+          ksceKernelGetModuleCB: 0x37512E29
+          ksceKernelGetModuleCBByAddr: 0x1728612F
+          ksceKernelGetModuleEntryPoint: 0x7B302C5D
+          ksceKernelGetModuleFingerprint: 0x337A3908
+          ksceKernelGetModuleIdByAddrForDebugger: 0x0C668636
+          ksceKernelGetModuleIdByPid: 0x679F5144
           ksceKernelGetModuleInfo: 0xDAA90093
-          ksceKernelGetModuleInternal: 0x37512E29
+          ksceKernelGetModuleInfoForDebugger: 0x0155FE40
+          ksceKernelGetModuleInfoMinByAddr: 0x5564A860
+          ksceKernelGetModuleIsSharedByAddr: 0xF1DE6949
           ksceKernelGetModuleList: 0xB72C75A4
+          ksceKernelGetModulePath: 0x79E761B5
+          ksceKernelGetProgramIdentificationInfo: 0x5D60CD77
+          ksceKernelGetStubInfoForDebugger: 0x07DBB649
+          ksceKernelGetStubList: 0xE48CDE07
+          ksceKernelGetStubNidTableForDebugger: 0xCE201AFC
           ksceKernelLoadModuleForPid: 0x4E85022D
+          ksceKernelLoadPreloadingModules: 0xE3C1AAA1
+          ksceKernelLoadProcessImage: 0xA85A44D7
+          ksceKernelLoadPtLoadSegForFwloader: 0xA07063EA
+          ksceKernelModuleUnloadMySelf: 0x2F82EEBC
           ksceKernelMountBootfs: 0x185FF1BC
+          ksceKernelRegisterModulesAfterBoot: 0xD0AF9DB7
+          ksceKernelRegisterSyscall: 0x2E4A10A0
           ksceKernelStartModuleForPid: 0x3FE47DDF
+          ksceKernelStartPreloadingModules: 0x998C7AE9
           ksceKernelStopModuleForPid: 0xBDBD391D
           ksceKernelUmountBootfs: 0xBD61AD4D
           ksceKernelUnloadModuleForPid: 0xFCA9FDB1
+          ksceKernelUnloadProcessModules: 0xE71530D7
