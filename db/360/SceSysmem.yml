@@ -185,12 +185,12 @@ modules:
         kernel: true
         nid: 0x88C17370
         functions:
-          ksceDebugDisableInfoDump: 0xF857CDD6
-          ksceDebugGetPutcharHandler: 0xE783518C
-          ksceDebugPutchar: 0x82D2EDCE
-          ksceDebugRegisterPutcharHandler: 0xE6115A72
-          ksceDebugSetHandlers: 0x10067B7B
-          ksceKernelSetMinimumAssertionLevel: 0xCE9060F1
+          ksceKernelDebugPutchar: 0x82D2EDCE
+          ksceKernelEnableCrashDump: 0xF857CDD6
+          ksceKernelGetDebugPutcharHandler: 0xE783518C
+          ksceKernelRegisterDebugPutcharHandler: 0xE6115A72
+          ksceKernelRegisterKprintfHandler: 0x10067B7B
+          ksceKernelSetAssertLevel: 0xCE9060F1
       SceDebugLed:
         kernel: false
         nid: 0xAE004C0A
