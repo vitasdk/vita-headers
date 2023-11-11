@@ -69,12 +69,12 @@ const function_entry SceCpuForKernel[] = {
 };
 
 const function_entry SceDebugForKernel[] = {
-	_x(sceDebugDisableInfoDump),
-	_x(sceDebugGetPutcharHandler),
-	_x(sceDebugPutchar),
-	_x(sceDebugRegisterPutcharHandler),
-	_x(sceDebugSetHandlers),
-	_x(sceKernelSetMinimumAssertionLevel),
+	_x(sceKernelDebugPutchar),
+	_x(sceKernelEnableCrashDump),
+	_x(sceKernelGetDebugPutcharHandler),
+	_x(sceKernelRegisterDebugPutcharHandler),
+	_x(sceKernelRegisterKprintfHandler),
+	_x(sceKernelSetAssertLevel),
 	{
 		.function_name = NULL,
 		.function = NULL
