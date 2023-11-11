@@ -113,6 +113,11 @@ void *ksceKernelAlloc(unsigned int size);
  */
 int ksceKernelFree(void *ptr);
 
+
+int ksceKernelGetHeapInfo(SceUID heapid, SceUInt32 level, void *pInfo);
+int ksceKernelGetHeapInfoByPtr(void *pObject, void *pInfo);
+
+
 #ifdef __cplusplus
 }
 #endif

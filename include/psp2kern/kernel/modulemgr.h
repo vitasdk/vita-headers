@@ -9,6 +9,7 @@
 #include <vitasdk/build_utils.h>
 #include <psp2common/kernel/modulemgr.h>
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -63,6 +64,70 @@ typedef struct {
   };
 } SceKernelModuleListInfo;
 VITASDK_BUILD_ASSERT_EQ(0xB0, SceKernelModuleListInfo);
+
+typedef struct SceKernelModuleExportEntry {
+  SceNID libnid;
+  void *entry; // function ptr. or vars?
+} SceKernelModuleExportEntry;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelModuleExportEntry);
+
+typedef struct SceKernelModuleImportNonlinkedInfo {
+	SceSize size; // 0x124
+	SceUID modid;
+	SceNID libnid;
+	char libname[0x100];
+	int data_0x10C;
+	int data_0x110;
+	int data_0x114;
+	int data_0x118;
+	int data_0x11C;
+	int data_0x120;
+} SceKernelModuleImportNonlinkedInfo;
+VITASDK_BUILD_ASSERT_EQ(0x124, SceKernelModuleImportNonlinkedInfo);
+
+typedef struct SceSelfAppInfo {
+	int vendor_id;
+	int self_type;
+} SceSelfAppInfo;
+VITASDK_BUILD_ASSERT_EQ(8, SceSelfAppInfo);
+
+typedef struct SceLoadProcessParam { // size is 0x7C-bytes
+	SceUInt32 sysver;
+	char thread_name[0x20];
+	SceUInt32 initial_thread_priority; // ex: 0x100000EC
+	SceSize initial_thread_stack_size; // ex: 0x6000
+	SceUInt32 unk_0x2C;
+	SceUInt32 unk_0x30;
+	SceKernelThreadOptParam	threadOptParam;
+	int unk_0x50;
+	char process_name[0x20]; // not titleid
+	SceUInt32 preload_disabled;
+	void *module_proc_param;
+} SceLoadProcessParam;
+VITASDK_BUILD_ASSERT_EQ(0x7C, SceLoadProcessParam);
+
+typedef struct _SceKernelFunctionShimInfo {
+  SceNID replaced_function_nid; /**< NID of the function that needs to be replaced */
+  SceNID replacing_function_nid; /**< NID of the function that will serve as a replacement - must probably come from same library as replaced function */
+} SceKernelFunctionShimInfo;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelFunctionShimInfo);
+
+typedef struct _SceKernelLibraryShimInfo {
+  const char *library_name;                  /**< Name of the library the shimmed functions come from (i.e. SceThreadmgr) */
+  SceUInt32 unk_04;                          /**< Always 0 ? */
+  SceUInt32 function_shims_count;            /**< Size of the array pointed to by next field */
+  SceKernelFunctionShimInfo* function_shims;
+} SceKernelLibraryShimInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelLibraryShimInfo);
+
+typedef struct _SceKernelCompatibilityShimInfo {
+  const char *title_id;                    /**< TitleID (process name) of the app this shim applies to */
+  SceUInt32 unk_04;                        /**< Always 0 ? */
+  SceUInt32 library_shims_count;           /**< Size of the array pointed to by next field */
+  SceKernelLibraryShimInfo *library_shims;
+} SceKernelCompatibilityShimInfo;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelCompatibilityShimInfo);
+
 
 /**
  * @brief Register syscall function
@@ -436,6 +501,34 @@ int ksceKernelGetModulePath(SceUID modid, char *path, SceSize pathlen);
  */
 int ksceKernelGetLibraryInfoForDebugger(SceUID pid, SceUID library_id, SceKernelModuleLibraryInfo *info);
 
+
+void ksceKernelFinalizeKbl(void);
+int ksceKernelGetExportedLibraryListInModule(SceUID pid, SceUID modid, SceUID *library_ids, SceSize *num);
+int ksceKernelGetImportedLibraryListInModule(SceUID pid, SceUID modid, SceUID *library_ids, SceSize *num);
+int ksceKernelGetLibEntCBListForSyslibtrace(void **ppList, SceSize *num);
+int ksceKernelGetLibraryClientList(SceUID pid, SceUID library_id, SceUID *modids, SceSize *num, SceSize cpy_skip_num);
+int ksceKernelGetLibraryDBFlags(SceUID pid, int *pFlags);
+int ksceKernelGetLibraryExportInfoForDebugger(SceUID pid, SceUID library_id, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
+int ksceKernelGetLostLibraryInfo(SceUID pid, SceUID modid, SceNID libnid, SceKernelModuleImportNonlinkedInfo *info);
+int ksceKernelGetLostLibraryList(SceUID pid, void *a2, SceSize *num);
+int ksceKernelGetLostLibraryListInModule(SceUID pid, SceUID modid, void *pList, SceSize *num);
+int ksceKernelGetMetaDataForDebugger(SceUID pid, SceUID uModuleId, void **start, void **stop);
+void *ksceKernelGetModuleEntryPoint(SceUID modid);
+int ksceKernelGetModuleFingerprint(SceUID moduleId, SceUInt32 *pFingerprint);
+int ksceKernelGetModuleIsSharedByAddr(SceUID pid, void *addr);
+int ksceKernelGetProgramIdentificationInfo(const char *path, SceUInt64 *pAuthid, SceSelfAppInfo *pInfo);
+int ksceKernelGetStubInfoForDebugger(SceUID pid, SceUID stubid, void *a3);
+int ksceKernelGetStubList(SceUID pid, SceUID *stub, SceSize *num);
+int ksceKernelGetStubNidTableForDebugger(SceUID pid, SceUID stubid, void *a3, SceSize *num, SceSize cpy_skip_num);
+int ksceKernelLoadPreloadingModules(SceUID pid, const SceLoadProcessParam *pParam, int flags);
+SceUID ksceKernelLoadProcessImage(SceUID pid, const char *path, int flags, SceSelfAuthInfo *auth_info, SceLoadProcessParam *param, SceKernelCompatibilityShimInfo *shim_info);
+int ksceKernelLoadPtLoadSegForFwloader(const char *path, int e_phnum, void *buffer, SceSize bufsize, int zero_unk, SceSize *bytes_read);
+int ksceKernelModuleUnloadMySelf(void);
+int ksceKernelStartPreloadingModules(SceUID pid);
+int ksceKernelUnloadProcessModules(SceUID pid);
+
+
+/* For backwards compatibility */
 
 #define ksceKernelGetModuleInternal ksceKernelGetModuleCB
 #define ksceKernelGetProcessMainModule ksceKernelGetModuleIdByPid

@@ -17,17 +17,6 @@ extern "C" {
 #endif
 
 
-typedef struct SceKernelTimeval {
-	SceInt32 sec;
-	SceInt32 usec;
-} SceKernelTimeval;
-VITASDK_BUILD_ASSERT_EQ(8, SceKernelTimeval);
-
-typedef struct SceKernelTimezone {
-	SceUInt64 value;
-} SceKernelTimezone;
-VITASDK_BUILD_ASSERT_EQ(8, SceKernelTimezone);
-
 /**
  * Exit current Process with specified return code
  *

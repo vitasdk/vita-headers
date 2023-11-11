@@ -102,13 +102,14 @@ static inline int ksceKernelDomainTextMemcpy(void *dst, const void *src, SceSize
 #endif
 
 
-// ksceKernelGetVmaccessRange
+// sceKernelGetVmaccessRange had prototype changed in some times
+void ksceKernelGetVmaccessRange(SceUIntPtr *pRangeStart, SceUIntPtr *pRangeEnd);
 
 void ksceKernelCpuBranchPredictorInvalidateAll(void);
 void ksceKernelCpuBranchPredictorInvalidateAllIS(void);
 
 SceUInt8 ksceKernelCpuGetCONTEXTIDR(void);
-// ksceKernelCpuUpdateSCTLR
+void ksceKernelCpuUpdateSCTLR(void);
 
 SceBool ksceKernelIsUncacheAddressInTmpFsGame(void *address);
 
