@@ -8,10 +8,34 @@ modules:
         kernel: true
         nid: 0x02451F0F
         functions:
+          ksceGUIDGetObjectWithClass: 0x0E43E113
+          ksceGUIDGetUIDVectorByClass: 0x52137FA3
+          ksceGUIDKernelCreateWithAttr: 0x6D26B066
           ksceGUIDKernelCreateWithOpt: 0xFB6390CE
+          ksceGUIDOpenByGUID: 0x89D33DF0
+          ksceKernelAddressSpaceFreeAllMemBlock: 0x36159CF5
+          ksceKernelAddressSpaceSetPhyMemPart: 0x7DF07D60
+          ksceKernelAddressSpaceUnmap: 0x73C38695
+          ksceKernelAddressSpaceVAtoPA: 0x1BAF8C0B
+          ksceKernelAlloc: 0x85571907
+          ksceKernelAllocPartitionMemBlock: 0x6DB46017
+          ksceKernelCopyToUserDomain: 0x499A9FFF
           ksceKernelCopyToUserProcTextDomain: 0x2995558D
+          ksceKernelCopyToUserTextDomain: 0x5EF1DAAF
+          ksceKernelCreateAddressSpace: 0x8EE89D2C
+          ksceKernelDeleteAddressSpace: 0x4A2E421D
           ksceKernelFindClassByName: 0x7D87F706
+          ksceKernelFree: 0x4233C16D
+          ksceKernelFreeSimpleMemBlock: 0xA4DB88E1
+          ksceKernelGetFixedHeapInfoByPointer: 0xA24D2C8D
+          ksceKernelGetHeapInfo: 0x17DB1A0A
+          ksceKernelGetHeapInfoByPtr: 0x80A75187
           ksceKernelGetMemBlockType: 0xD44FE44B
+          ksceKernelGetUIDDLinkClass: 0xE4193EB6
+          ksceKernelGetUIDHeapClass: 0x7C878E94
+          ksceKernelGetUIDMemBlockClass: 0x86681B64
+          ksceKernelNameHeapGetInfo: 0x01194C2E
+          ksceKernelUIDEntryHeapGetInfo: 0xCCD47B97
       SceUartForKernel:
         kernel: true
         nid: 0x1CCD9BA3
@@ -29,17 +53,43 @@ modules:
           ksceDebugPutchar: 0x2AABAEDA
           ksceDebugRegisterPutcharHandler: 0x22546577
           ksceDebugSetHandlers: 0x88AD6D0C
+          ksceKernelSetMinimumAssertionLevel: 0xA0CE3287
       SceCpuForKernel:
         kernel: true
         nid: 0xA5195D20
         functions:
+          ksceKernelAtomicAdd32AndGet64InHiLoRange: 0x61DDA758
+          ksceKernelAtomicAdd32AndGet64InRange: 0xA12D4388
+          ksceKernelAtomicAddAndGetPositive32InRange: 0x8F40D0FD
+          ksceKernelAtomicDecIfLowPositive32: 0x0E04BD2E
+          ksceKernelAtomicGet32AndSet64: 0x59448055
+          ksceKernelAtomicGet32AndSet64_2: 0x1A62AD6A
+          ksceKernelAtomicIncrementHighwaterCounter: 0x9DA58A9E
+          ksceKernelAtomicLimit64: 0xA3D7140F
+          ksceKernelAtomicSubIfGreater64: 0x3D4FBB32
           ksceKernelCorelockInitialize: 0xA65F6F14
           ksceKernelCorelockLock: 0x2FF54320
           ksceKernelCorelockUnlock: 0xFE2B77A3
-          ksceKernelCpuDcacheInvalidateAll: 0xF9B0B171
-          ksceKernelCpuDcacheWritebackAll: 0x49180814
-          ksceKernelCpuDcacheWritebackInvalidateAll: 0x4BBA5C82
-          ksceKernelCpuDcacheWritebackInvalidateRange: 0x4F442396
-          ksceKernelCpuIcacheAndL2WritebackInvalidateRange: 0x73E895EA
-          ksceKernelCpuIcacheInvalidateAll: 0x803C84BF
-          ksceKernelCpuIcacheInvalidateRange: 0x2E637B1D
+          ksceKernelCpuBranchPredictorInvalidateAll: 0x050B8EF6
+          ksceKernelCpuBranchPredictorInvalidateAllIS: 0x7B0643E2
+          ksceKernelCpuGetCONTEXTIDR: 0xFD54A91D
+          ksceKernelCpuUpdateSCTLR: 0xC6426313
+          # Removed ksceKernelDomainTextMemcpy: 0xDEADBEEF
+          ksceKernelGetVmaccessRange: 0xC32687D0
+          ksceKernelIcacheInvalidateRange: 0x73E895EA
+          ksceKernelL1DcacheClean: 0x74B7F445
+          ksceKernelL1DcacheCleanAll: 0x49180814
+          ksceKernelL1DcacheCleanInvalidate: 0x597426D2
+          ksceKernelL1DcacheCleanInvalidateAll: 0x4BBA5C82
+          ksceKernelL1DcacheCleanInvalidateRange: 0x4F442396
+          ksceKernelL1DcacheCleanRange: 0x70350360
+          ksceKernelL1DcacheInvalidate: 0x7ED856FE
+          ksceKernelL1DcacheInvalidateAll: 0xF9B0B171
+          ksceKernelL1DcacheInvalidateRange: 0x4236E06A
+          ksceKernelL1IcacheInvalidateEntire: 0x15A48AB4
+          ksceKernelL1IcacheInvalidateEntireAllCore: 0x803C84BF
+          ksceKernelL1IcacheInvalidateRange: 0x2E637B1D
+          ksceKernelMMUGetMemoryType: 0x87F7631D
+          ksceKernelMMUVAtoPA: 0x14E0B0C4
+          ksceKernelMMUVAtoPAWithMode: 0x1BD23326
+          ksceKernelPleFlushRequest: 0xA0A70166
