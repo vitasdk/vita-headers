@@ -19,6 +19,17 @@ typedef SceUInt32 SceKernelProcessType;
 typedef SceUInt64 SceKernelClock;
 typedef SceUInt32 SceKernelTime; 
 
+typedef struct SceKernelTimeval {
+	SceInt32 sec;
+	SceInt32 usec;
+} SceKernelTimeval;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelTimeval);
+
+typedef struct SceKernelTimezone {
+	SceUInt64 value;
+} SceKernelTimezone;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelTimezone);
+
 typedef enum SceKernelProcessPrioritySystem {
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_HIGH     = 32,
 	SCE_KERNEL_PROCESS_PRIORITY_SYSTEM_DEFAULT  = 96,

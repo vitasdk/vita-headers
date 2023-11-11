@@ -12,6 +12,9 @@
 #include <psp2kern/kernel/sysmem/uid_class.h>
 #include <psp2kern/kernel/sysmem/uid_guid.h>
 #include <psp2kern/kernel/sysmem/uid_puid.h>
+#include <psp2kern/kernel/sysmem/uid_entryheap.h>
+#include <psp2kern/kernel/sysmem/fixedheap.h>
+#include <psp2kern/kernel/sysmem/nameheap.h>
 #include <psp2kern/kernel/sysmem/heap.h>
 #include <psp2kern/kernel/sysmem/data_transfers.h>
 #include <psp2kern/kernel/sysmem/memtype.h>
@@ -57,6 +60,8 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceUInt32 field_54;
 } SceKernelAllocMemBlockKernelOpt;
 VITASDK_BUILD_ASSERT_EQ(0x58, SceKernelAllocMemBlockKernelOpt);
+
+typedef SceKernelAllocMemBlockKernelOpt SceKernelAllocMemBlockOptKernel;
 
 /**
  * Allocates a new memory block
@@ -322,6 +327,11 @@ int ksceKernelUnlockRangeProc(SceUID pid, void *addr, SceSize size);
  * @return 0 on success, < 0 on error.
  */
 int ksceKernelUnlockRangeWithMode(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
+
+
+SceUID ksceKernelAllocPartitionMemBlock(SceUID part, const char *name, SceKernelMemBlockType type, SceSize size, const SceKernelAllocMemBlockOptKernel *pOpt);
+int ksceKernelFreeSimpleMemBlock(void *a1);
+
 
 /* Macros for backwards compatibility */
 #define ksceKernelFindMemBlockByAddrForPid(pid, addr, size) ksceKernelFindProcMemBlockByAddr(pid, addr, size)
