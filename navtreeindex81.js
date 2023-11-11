@@ -1,5 +1,17 @@
 var NAVTREEINDEX81 =
 {
+"psp2kern_2jpegenc_8h.html":[4,0,1,2,11],
+"psp2kern_2jpegenc_8h_source.html":[4,0,1,2,11],
+"psp2kern_2kernel_2iofilemgr_8h.html":[4,0,1,2,1,14],
+"psp2kern_2kernel_2iofilemgr_8h_source.html":[4,0,1,2,1,14],
+"psp2kern_2kernel_2msif_8h.html":[4,0,1,2,1,16],
+"psp2kern_2kernel_2msif_8h_source.html":[4,0,1,2,1,16],
+"psp2kern_2kernel_2rtc_8h.html":[4,0,1,2,1,20],
+"psp2kern_2kernel_2rtc_8h_source.html":[4,0,1,2,1,20],
+"psp2kern_2kernel_2utils_8h.html":[4,0,1,2,1,31],
+"psp2kern_2kernel_2utils_8h_source.html":[4,0,1,2,1,31],
+"psp2kern_2npdrm_8h.html":[4,0,1,2,13],
+"psp2kern_2npdrm_8h_source.html":[4,0,1,2,13],
 "psp2kern_2power_8h.html":[4,0,1,2,16],
 "psp2kern_2power_8h_source.html":[4,0,1,2,16],
 "psp2kern_2registrymgr_8h.html":[4,0,1,2,17],

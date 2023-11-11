@@ -1,6 +1,6 @@
 var NAVTREEINDEX31 =
 {
-"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[4,0,1,0,27,7],
+"group__SceHidUser.html#gad77a117cc8011d4dad133b634cf590f8":[1,1,7,0,7],
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[1,1,7,0,5],
 "group__SceHidUser.html#gae64163d66f649a7683dd785fa3c3b6e5":[4,0,1,0,27,5],
 "group__SceHttp.html":[1,10,0],
