@@ -36,7 +36,7 @@ var group__SceKernelSysrootKernel_structSceUIDSysrootObject =
     [ "longtime5base", "group__SceKernelSysrootKernel.html#ga2f72ba47e40674c396a6f1823d19ec68", null ],
     [ "cpu_intr_for_init_callback", "group__SceKernelSysrootKernel.html#ga22285d9267a0efc5d2999ce120a9c13b", null ],
     [ "init_callback_registable_base_number", "group__SceKernelSysrootKernel.html#ga2bc9ff9fe5266e45c10e4bade20850a5", null ],
-    [ "init_callback_slot", "group__SceKernelSysrootKernel.html#gaa3b9b2fffd045a00df70104f78d8c8a8", null ],
+    [ "init_callback_slot", "group__SceKernelSysrootKernel.html#gaf4a0ab5de701c92a1eb30ec327ddf967", null ],
     [ "funcThreadMgrStartAfterProcess", "group__SceKernelSysrootKernel.html#ga9c767aec3521eee91eae80b73a458048", null ],
     [ "funcIofilemgrStart", "group__SceKernelSysrootKernel.html#gada0fe506195a5471df3af892bd9608d9", null ],
     [ "unk_0x2DC", "group__SceKernelSysrootKernel.html#gacc7a30fd97dc33c31f8ca52f48382714", null ],

@@ -15,5 +15,6 @@ var modules =
     [ "Universal Serial Bus", "group__USB.html", "group__USB" ],
     [ "System Parameters", "group__SystemParams.html", "group__SystemParams" ],
     [ "Vitasdk", "group__Vitasdk.html", "group__Vitasdk" ],
+    [ "Internal", "group__Internal.html", "group__Internal" ],
     [ "Miscellaneous", "group__Miscellaneous.html", "group__Miscellaneous" ]
 ];
