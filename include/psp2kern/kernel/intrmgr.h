@@ -68,10 +68,16 @@ int ksceKernelTriggerSubIntr(int intr_code, int subintr_code, void *subintr_arg)
 int ksceKernelEnableSubIntr(int intr_code, int subintr_code);
 int ksceKernelDisableSubIntr(int intr_code, int subintr_code);
 
+int ksceKernelQueryIntrHandlerInfo(unsigned int intr_code, unsigned int a2, int a3);
+
+
+/* For backwards compatibility */
+
 #define ksceKernelMaskIntr(intr_code) ksceKernelDisableIntr(intr_code)
 #define ksceKernelSetIntrMasked(intr_code, masked) ksceKernelEnableIntr(intr_code)
 #define ksceKernelUnmaskIntr(intr_code) ksceKernelEnableIntr(intr_code)
 #define ksceKernelGetIntrMasked ksceKernelSuspendIntr
+
 
 #ifdef __cplusplus
 }

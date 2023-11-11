@@ -119,6 +119,13 @@ int ksceGUIDReleaseObject(SceUID guid);
 int ksceGUIDGetUIDVectorByClass(SceClass *cls, int vis_level, SceUID *vector, SceSize num, SceSize *ret_num);
 
 
+int ksceGUIDGetObjectWithClass(SceUID uid, SceClass *pClass, SceObjectBase **obj);
+int ksceGUIDKernelCreateWithAttr(SceClass *pClass, const char *name, SceUInt32 attr, SceObjectBase **ppEntry);
+SceUID ksceGUIDOpenByGUID(SceUID guid);
+
+
+/* For backwards compatibility */
+
 typedef SceGUIDKernelCreateOpt SceCreateUidObjOpt;
 
 #define ksceKernelCreateUidObj(sce_class, name, opt, obj) ksceGUIDKernelCreateWithOpt(sce_class, name, opt, obj)
