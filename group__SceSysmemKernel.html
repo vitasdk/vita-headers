@@ -112,6 +112,16 @@ $(document).ready(function(){initNavTree('group__SceSysmemKernel.html',''); init
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fixedheap_8h.html">psp2kern/kernel/sysmem/fixedheap.h</a>&gt;</span> </div>
+<div class="ttc" id="afixedheap_8h_html"><div class="ttname"><a href="fixedheap_8h.html">fixedheap.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSysmemForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="heap_8h.html">psp2kern/kernel/sysmem/heap.h</a>&gt;</span> </div>
 <div class="ttc" id="aheap_8h_html"><div class="ttname"><a href="heap_8h.html">heap.h</a></div></div>
 </div><!-- fragment --><p><br  />
@@ -129,8 +139,28 @@ $(document).ready(function(){initNavTree('group__SceSysmemKernel.html',''); init
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="nameheap_8h.html">psp2kern/kernel/sysmem/nameheap.h</a>&gt;</span> </div>
+<div class="ttc" id="anameheap_8h_html"><div class="ttname"><a href="nameheap_8h.html">nameheap.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSysmemForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uid__class_8h.html">psp2kern/kernel/sysmem/uid_class.h</a>&gt;</span> </div>
 <div class="ttc" id="auid__class_8h_html"><div class="ttname"><a href="uid__class_8h.html">uid_class.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSysmemForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uid__entryheap_8h.html">psp2kern/kernel/sysmem/uid_entryheap.h</a>&gt;</span> </div>
+<div class="ttc" id="auid__entryheap_8h_html"><div class="ttname"><a href="uid__entryheap_8h.html">uid_entryheap.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
 </p><div class="fragment"><div class="line">SceSysmemForDriver_stub </div>
@@ -188,6 +218,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1973f41f15c2294bb4d2f31f06c96ef1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1">ksceKernelProcessSwitchContext</a> (const <a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> *new_context, <a class="el" href="group__SceSysmemKernel.html#structSceKernelProcessContext">SceKernelProcessContext</a> *prev_context)</td></tr>
 <tr class="memdesc:ga1973f41f15c2294bb4d2f31f06c96ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch the process context.  <a href="group__SceSysmemKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1">More...</a><br /></td></tr>
 <tr class="separator:ga1973f41f15c2294bb4d2f31f06c96ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae01cbc614e28a6b764456cede51338b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gae01cbc614e28a6b764456cede51338b1">ksceKernelAddressSpaceFreeAllMemBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid)</td></tr>
+<tr class="separator:gae01cbc614e28a6b764456cede51338b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e9ea5067fa359ff59e426945ff1d0c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3e9ea5067fa359ff59e426945ff1d0c7">ksceKernelAddressSpaceSetPhyMemPart</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> index, void *pPhyMemPart)</td></tr>
+<tr class="separator:ga3e9ea5067fa359ff59e426945ff1d0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69030efa1976526bce5d008f9887fbc2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga69030efa1976526bce5d008f9887fbc2">ksceKernelAddressSpaceUnmap</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, int a2, int a3, void *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
+<tr class="separator:ga69030efa1976526bce5d008f9887fbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c0962ade29ddf2fe5d5d2adde374ba4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga4c0962ade29ddf2fe5d5d2adde374ba4">ksceKernelAddressSpaceVAtoPA</a> (void *pAS, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> mode, void *pVA, void **pPA)</td></tr>
+<tr class="separator:ga4c0962ade29ddf2fe5d5d2adde374ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c740afc16cd73eda298232dc7eb93cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8c740afc16cd73eda298232dc7eb93cc">ksceKernelCreateAddressSpace</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const char *name, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, void *pOpt)</td></tr>
+<tr class="separator:ga8c740afc16cd73eda298232dc7eb93cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadac16ef9b0f6da6f24e1918e1f34a77b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gadac16ef9b0f6da6f24e1918e1f34a77b">ksceKernelDeleteAddressSpace</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid)</td></tr>
+<tr class="separator:gadac16ef9b0f6da6f24e1918e1f34a77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7684666be9ee22b6a5850520ee7ed0bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga7684666be9ee22b6a5850520ee7ed0bb">ksceKernelCopyFromUser</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
 <tr class="memdesc:ga7684666be9ee22b6a5850520ee7ed0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy from user memory.  <a href="group__SceSysmemKernel.html#ga7684666be9ee22b6a5850520ee7ed0bb">More...</a><br /></td></tr>
 <tr class="separator:ga7684666be9ee22b6a5850520ee7ed0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,6 +275,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0e5784e9e80d0031a9d2cbf4e637b9aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga0e5784e9e80d0031a9d2cbf4e637b9aa">ksceKernelCopyFromToUserProc</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
 <tr class="memdesc:ga0e5784e9e80d0031a9d2cbf4e637b9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memcpy user memory to user memory with process.  <a href="group__SceSysmemKernel.html#ga0e5784e9e80d0031a9d2cbf4e637b9aa">More...</a><br /></td></tr>
 <tr class="separator:ga0e5784e9e80d0031a9d2cbf4e637b9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga518e78838b252ef468c4bfcd89129f30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga518e78838b252ef468c4bfcd89129f30">ksceKernelGetFixedHeapInfoByPointer</a> (void *pFixedHeap, void *pInfo)</td></tr>
+<tr class="separator:ga518e78838b252ef468c4bfcd89129f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f94c779f5b5484b140c31e5021d0bff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8f94c779f5b5484b140c31e5021d0bff">VITASDK_BUILD_ASSERT_EQ</a> (0x1C, <a class="el" href="group__SceSysmemKernel.html#structSceKernelHeapCreateOpt">SceKernelHeapCreateOpt</a>)</td></tr>
 <tr class="separator:ga8f94c779f5b5484b140c31e5021d0bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga86a515d9d8744b9346e3f60f53a11935"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga86a515d9d8744b9346e3f60f53a11935">VITASDK_BUILD_ASSERT_EQ</a> (0x14, <a class="el" href="group__SceSysmemKernel.html#structSceAllocOpt">SceAllocOpt</a>)</td></tr>
@@ -258,6 +302,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga93724c6e5730bbe92fc729b2392df9a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga93724c6e5730bbe92fc729b2392df9a7">ksceKernelFree</a> (void *ptr)</td></tr>
 <tr class="memdesc:ga93724c6e5730bbe92fc729b2392df9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free kernel memory.  <a href="group__SceSysmemKernel.html#ga93724c6e5730bbe92fc729b2392df9a7">More...</a><br /></td></tr>
 <tr class="separator:ga93724c6e5730bbe92fc729b2392df9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fb8124062d785f6aef66fd918050014"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga7fb8124062d785f6aef66fd918050014">ksceKernelGetHeapInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> heapid, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> level, void *pInfo)</td></tr>
+<tr class="separator:ga7fb8124062d785f6aef66fd918050014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36e49b1b43817fab29f70f8b1192c0cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga36e49b1b43817fab29f70f8b1192c0cb">ksceKernelGetHeapInfoByPtr</a> (void *pObject, void *pInfo)</td></tr>
+<tr class="separator:ga36e49b1b43817fab29f70f8b1192c0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9662ad6a1d09cb5da8b14c9b77703286"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga9662ad6a1d09cb5da8b14c9b77703286">ksceKernelNameHeapGetInfo</a> (void *pInfo)</td></tr>
+<tr class="separator:ga9662ad6a1d09cb5da8b14c9b77703286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf47659144240f9dbf6d6f3363bf7136d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaf47659144240f9dbf6d6f3363bf7136d">VITASDK_BUILD_ASSERT_EQ</a> (0x2C, <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a>)</td></tr>
 <tr class="separator:gaf47659144240f9dbf6d6f3363bf7136d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8abc561016cc95e7e55fb3e9dbbe17f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gac8abc561016cc95e7e55fb3e9dbbe17f">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a>)</td></tr>
@@ -274,6 +324,8 @@ Functions</h2></td></tr>
 <tr class="separator:gac4c0ba4297138e503fc971a1f3e89ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b6b5ddadfa9a82287945b5bc04cd0de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga0b6b5ddadfa9a82287945b5bc04cd0de">ksceKernelFindClassByName</a> (const char *name, <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> **cls)</td></tr>
 <tr class="separator:ga0b6b5ddadfa9a82287945b5bc04cd0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e40bcfde6cc7baecbc5d2d05f35c246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3e40bcfde6cc7baecbc5d2d05f35c246">ksceKernelUIDEntryHeapGetInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> entryHeapId, void *pInfo)</td></tr>
+<tr class="separator:ga3e40bcfde6cc7baecbc5d2d05f35c246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a7c82f0d64c44a3e47a76ca1ebac36e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8a7c82f0d64c44a3e47a76ca1ebac36e">VITASDK_BUILD_ASSERT_EQ</a> (0x20, <a class="el" href="group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt">SceGUIDKernelCreateOpt</a>)</td></tr>
 <tr class="separator:ga8a7c82f0d64c44a3e47a76ca1ebac36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabdaaa14b059b34333d73a0cb2bfffbbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gabdaaa14b059b34333d73a0cb2bfffbbe">ksceGUIDKernelCreateWithOpt</a> (<a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *sce_class, const char *name, <a class="el" href="group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt">SceGUIDKernelCreateOpt</a> *opt, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **obj)</td></tr>
@@ -295,6 +347,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeee5e7842a0d79b192ef60bb27b58afd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd">ksceGUIDGetUIDVectorByClass</a> (<a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *cls, int vis_level, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *vector, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> num, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *ret_num)</td></tr>
 <tr class="memdesc:gaeee5e7842a0d79b192ef60bb27b58afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get created GUID vectors.  <a href="group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd">More...</a><br /></td></tr>
 <tr class="separator:gaeee5e7842a0d79b192ef60bb27b58afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80524977b0f695bd96182c694802e790"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga80524977b0f695bd96182c694802e790">ksceGUIDGetObjectWithClass</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *pClass, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **obj)</td></tr>
+<tr class="separator:ga80524977b0f695bd96182c694802e790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dba97b7292f84149f859a9703b38b23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga6dba97b7292f84149f859a9703b38b23">ksceGUIDKernelCreateWithAttr</a> (<a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *pClass, const char *name, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> attr, <a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **ppEntry)</td></tr>
+<tr class="separator:ga6dba97b7292f84149f859a9703b38b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf491c13643650324dbda58d6fd3df962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaf491c13643650324dbda58d6fd3df962">ksceGUIDOpenByGUID</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid)</td></tr>
+<tr class="separator:gaf491c13643650324dbda58d6fd3df962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga33a670947b1bc94b9d3b71042d1cb695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga33a670947b1bc94b9d3b71042d1cb695">kscePUIDOpenByGUID</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> guid)</td></tr>
 <tr class="separator:ga33a670947b1bc94b9d3b71042d1cb695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadca32d62193841a900f757cf39dfa561"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gadca32d62193841a900f757cf39dfa561">kscePUIDClose</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> puid)</td></tr>
@@ -366,6 +424,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8368e564ac97534508fac16c2d086839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839">ksceKernelUnlockRangeWithMode</a> (<a class="el" href="group__SceSysmemKernel.html#gab8b3d8a0785853cb784efcfa26a641b9">SceKernelMemoryRefPerm</a> perm, void *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="memdesc:ga8368e564ac97534508fac16c2d086839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks a memory range checking for a given permission.  <a href="group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839">More...</a><br /></td></tr>
 <tr class="separator:ga8368e564ac97534508fac16c2d086839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1917a3dfcd8b8193079624ba4b02fad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga1917a3dfcd8b8193079624ba4b02fad9">ksceKernelAllocPartitionMemBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> part, const char *name, <a class="el" href="group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571">SceKernelMemBlockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, const <a class="el" href="group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe">SceKernelAllocMemBlockOptKernel</a> *pOpt)</td></tr>
+<tr class="separator:ga1917a3dfcd8b8193079624ba4b02fad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb4f91ed5ef28fdbe046592e8d7269f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeb4f91ed5ef28fdbe046592e8d7269f2">ksceKernelFreeSimpleMemBlock</a> (void *a1)</td></tr>
+<tr class="separator:gaeb4f91ed5ef28fdbe046592e8d7269f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -375,6 +437,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:gac04de86fb0a37624c069a3311358c9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83e12570c9cf837b46227303b71a2789"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt">SceGUIDKernelCreateOpt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga83e12570c9cf837b46227303b71a2789">SceCreateUidObjOpt</a></td></tr>
 <tr class="separator:ga83e12570c9cf837b46227303b71a2789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga358827f503bbc3bab655078430684dfe"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt">SceKernelAllocMemBlockKernelOpt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe">SceKernelAllocMemBlockOptKernel</a></td></tr>
+<tr class="separator:ga358827f503bbc3bab655078430684dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -4249,6 +4313,20 @@ attr</td>
 
 </div>
 </div>
+<a id="ga358827f503bbc3bab655078430684dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga358827f503bbc3bab655078430684dfe">&#9670;&nbsp;</a></span>SceKernelAllocMemBlockOptKernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt">SceKernelAllocMemBlockKernelOpt</a> <a class="el" href="group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe">SceKernelAllocMemBlockOptKernel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga3e4b4287824bdc72a51b05c7ef583076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3e4b4287824bdc72a51b05c7ef583076">&#9670;&nbsp;</a></span>SceKernelAllocMemBlockAttr</h2>
@@ -4574,6 +4652,202 @@ attr</td>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gae01cbc614e28a6b764456cede51338b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae01cbc614e28a6b764456cede51338b1">&#9670;&nbsp;</a></span>ksceKernelAddressSpaceFreeAllMemBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelAddressSpaceFreeAllMemBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>guid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3e9ea5067fa359ff59e426945ff1d0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e9ea5067fa359ff59e426945ff1d0c7">&#9670;&nbsp;</a></span>ksceKernelAddressSpaceSetPhyMemPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelAddressSpaceSetPhyMemPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>guid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pPhyMemPart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga69030efa1976526bce5d008f9887fbc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69030efa1976526bce5d008f9887fbc2">&#9670;&nbsp;</a></span>ksceKernelAddressSpaceUnmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelAddressSpaceUnmap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c0962ade29ddf2fe5d5d2adde374ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c0962ade29ddf2fe5d5d2adde374ba4">&#9670;&nbsp;</a></span>ksceKernelAddressSpaceVAtoPA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelAddressSpaceVAtoPA </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pAS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pVA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>pPA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8c740afc16cd73eda298232dc7eb93cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c740afc16cd73eda298232dc7eb93cc">&#9670;&nbsp;</a></span>ksceKernelCreateAddressSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateAddressSpace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pOpt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadac16ef9b0f6da6f24e1918e1f34a77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadac16ef9b0f6da6f24e1918e1f34a77b">&#9670;&nbsp;</a></span>ksceKernelDeleteAddressSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelDeleteAddressSpace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>guid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -5302,6 +5576,34 @@ attr</td>
 
 </div>
 </div>
+<a id="ga518e78838b252ef468c4bfcd89129f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga518e78838b252ef468c4bfcd89129f30">&#9670;&nbsp;</a></span>ksceKernelGetFixedHeapInfoByPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetFixedHeapInfoByPointer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pFixedHeap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga8f94c779f5b5484b140c31e5021d0bff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8f94c779f5b5484b140c31e5021d0bff">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/8]</span></h2>
 
@@ -5606,6 +5908,86 @@ attr</td>
 
 </div>
 </div>
+<a id="ga7fb8124062d785f6aef66fd918050014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7fb8124062d785f6aef66fd918050014">&#9670;&nbsp;</a></span>ksceKernelGetHeapInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetHeapInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>heapid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga36e49b1b43817fab29f70f8b1192c0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36e49b1b43817fab29f70f8b1192c0cb">&#9670;&nbsp;</a></span>ksceKernelGetHeapInfoByPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetHeapInfoByPtr </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9662ad6a1d09cb5da8b14c9b77703286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9662ad6a1d09cb5da8b14c9b77703286">&#9670;&nbsp;</a></span>ksceKernelNameHeapGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelNameHeapGetInfo </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaf47659144240f9dbf6d6f3363bf7136d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf47659144240f9dbf6d6f3363bf7136d">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/8]</span></h2>
 
@@ -5803,6 +6185,34 @@ attr</td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> **&#160;</td>
           <td class="paramname"><em>cls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3e40bcfde6cc7baecbc5d2d05f35c246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e40bcfde6cc7baecbc5d2d05f35c246">&#9670;&nbsp;</a></span>ksceKernelUIDEntryHeapGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceKernelUIDEntryHeapGetInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>entryHeapId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pInfo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6122,6 +6532,98 @@ attr</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga80524977b0f695bd96182c694802e790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80524977b0f695bd96182c694802e790">&#9670;&nbsp;</a></span>ksceGUIDGetObjectWithClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceGUIDGetObjectWithClass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td>
+          <td class="paramname"><em>pClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6dba97b7292f84149f859a9703b38b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dba97b7292f84149f859a9703b38b23">&#9670;&nbsp;</a></span>ksceGUIDKernelCreateWithAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceGUIDKernelCreateWithAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td>
+          <td class="paramname"><em>pClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#structSceObjectBase">SceObjectBase</a> **&#160;</td>
+          <td class="paramname"><em>ppEntry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf491c13643650324dbda58d6fd3df962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf491c13643650324dbda58d6fd3df962">&#9670;&nbsp;</a></span>ksceGUIDOpenByGUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceGUIDOpenByGUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>guid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -7170,6 +7672,70 @@ attr</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1917a3dfcd8b8193079624ba4b02fad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1917a3dfcd8b8193079624ba4b02fad9">&#9670;&nbsp;</a></span>ksceKernelAllocPartitionMemBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelAllocPartitionMemBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>part</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571">SceKernelMemBlockType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe">SceKernelAllocMemBlockOptKernel</a> *&#160;</td>
+          <td class="paramname"><em>pOpt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeb4f91ed5ef28fdbe046592e8d7269f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb4f91ed5ef28fdbe046592e8d7269f2">&#9670;&nbsp;</a></span>ksceKernelFreeSimpleMemBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelFreeSimpleMemBlock </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>a1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

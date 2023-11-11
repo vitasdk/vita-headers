@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab01f598d32b0c573ef405152041e1df4":[4,0,1,2,4,1,15],
+"group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab5bd6d2e813e262b41279a789b7ed195":[1,10,2,0,1,26],
 "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab5bd6d2e813e262b41279a789b7ed195":[1,10,2,0,28],
 "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab5bd6d2e813e262b41279a789b7ed195":[4,0,1,2,4,1,26],
 "group__SceBtKernel.html#gga342d70612661ed1c5631e7bb3cb2a74eab60225530a43451cf040ce7063b2183d":[1,10,2,0,1,50],
@@ -222,10 +224,10 @@ var NAVTREEINDEX9 =
 "group__SceCLibUser.html#ga0f7338ac36e22b9be487d4745fbefa18":[4,0,1,0,2,1,11],
 "group__SceCLibUser.html#ga16a8047787a952d4153624247bfd1c5e":[1,7,2,0,36],
 "group__SceCLibUser.html#ga16a8047787a952d4153624247bfd1c5e":[4,0,1,0,2,1,36],
-"group__SceCLibUser.html#ga1bae11351a3e8d1cd248301ac9e817ca":[1,7,2,0,33],
 "group__SceCLibUser.html#ga1bae11351a3e8d1cd248301ac9e817ca":[4,0,1,0,2,1,33],
-"group__SceCLibUser.html#ga2e4b8932ee48f1b87db94e4fd5107131":[1,7,2,0,32],
+"group__SceCLibUser.html#ga1bae11351a3e8d1cd248301ac9e817ca":[1,7,2,0,33],
 "group__SceCLibUser.html#ga2e4b8932ee48f1b87db94e4fd5107131":[4,0,1,0,2,1,32],
+"group__SceCLibUser.html#ga2e4b8932ee48f1b87db94e4fd5107131":[1,7,2,0,32],
 "group__SceCLibUser.html#ga2fde699b35ab557d0193c49a4bdccf00":[1,7,2,0,20],
 "group__SceCLibUser.html#ga2fde699b35ab557d0193c49a4bdccf00":[4,0,1,0,2,1,20],
 "group__SceCLibUser.html#ga30e81b2578da554423223bf46d285ab5":[1,7,2,0,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46":[1,7,2,0,5],
 "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46":[4,0,1,0,2,1,5],
 "group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084":[1,7,2,0,34],
-"group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084":[4,0,1,0,2,1,34],
-"group__SceCLibUser.html#ga82cc653c251e5b18acefeac69a615b4e":[1,7,2,0,8],
-"group__SceCLibUser.html#ga82cc653c251e5b18acefeac69a615b4e":[4,0,1,0,2,1,8]
+"group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084":[4,0,1,0,2,1,34]
 };

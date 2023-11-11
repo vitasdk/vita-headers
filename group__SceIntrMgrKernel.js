@@ -29,5 +29,6 @@ var group__SceIntrMgrKernel =
     [ "ksceKernelReleaseSubIntrHandler", "group__SceIntrMgrKernel.html#ga9c64ba1137cb29b206b2600575f8e393", null ],
     [ "ksceKernelTriggerSubIntr", "group__SceIntrMgrKernel.html#ga8e5d582562933d4201126b6b87fa2723", null ],
     [ "ksceKernelEnableSubIntr", "group__SceIntrMgrKernel.html#gace0fad25a5f0df833ef837798a549fc7", null ],
-    [ "ksceKernelDisableSubIntr", "group__SceIntrMgrKernel.html#gaa63e24698a4059a1e1ef2c9de5892b56", null ]
+    [ "ksceKernelDisableSubIntr", "group__SceIntrMgrKernel.html#gaa63e24698a4059a1e1ef2c9de5892b56", null ],
+    [ "ksceKernelQueryIntrHandlerInfo", "group__SceIntrMgrKernel.html#ga52391ac61fccf0326d6e679531e146e8", null ]
 ];

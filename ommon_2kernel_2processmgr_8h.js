@@ -22,6 +22,8 @@ var ommon_2kernel_2processmgr_8h =
       [ "SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING", "group__SceProcessmgrKernel.html#gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650", null ],
       [ "__SCE_KERNEL_POWER_TICK_DISABLE", "group__SceProcessmgrKernel.html#gga1b448620c7525b730a2b94164e34d77fae0cdd5bbbd52b2a6814b95730606814d", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#ga9096b15aff065259faae93c7ce23f577", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#ga34870f1e1be9758fbad54254ab5aee26", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#gae49572e6f71ee3efca6804195100a742", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#gae8866e954e641aa111f4a94b6d7b69b8", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#gac396217ca06fc5f539a8e1ed3b470689", null ]

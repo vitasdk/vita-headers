@@ -494,8 +494,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga667b282cd3c9da73c237d39f8d7c11b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabad12e90a6c274821cd5f202ff3c7897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gabad12e90a6c274821cd5f202ff3c7897">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadRunStatus">SceKernelThreadRunStatus</a>)</td></tr>
 <tr class="separator:gabad12e90a6c274821cd5f202ff3c7897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga66580ad672c63cb3b54a910e0dbbd331">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>)</td></tr>
-<tr class="separator:ga66580ad672c63cb3b54a910e0dbbd331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97149af01bfb79f07b3a5d794a59199f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga97149af01bfb79f07b3a5d794a59199f">VITASDK_BUILD_ASSERT_EQ</a> (0x1C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadOptParam">SceKernelThreadOptParam</a>)</td></tr>
+<tr class="separator:ga97149af01bfb79f07b3a5d794a59199f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaa74ad12a10bc8cfb5ef3469331569863">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>)</td></tr>
 <tr class="separator:gaa74ad12a10bc8cfb5ef3469331569863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f3985da305cd603b6ad27aba47c1b5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga6f3985da305cd603b6ad27aba47c1b5f">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelCallbackInfo">SceKernelCallbackInfo</a>)</td></tr>
@@ -789,6 +789,36 @@ Size of the <a class="el" href="group__SceThreadMgrUser.html#structSceKernelThre
 attr</td>
 <td class="fielddoc">
 Attributes. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga2b0d9b687743352065ac00325c59c8c2"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+kStackMemType</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4b6c276c4029c81e37b20488f1c99e47"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+uStackMemType</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga933908ad675ff14fc0324569ed6bab1d"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+uTLSMemType</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaa01e5dd5ce9205e0a07dbcf2d52edc66"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+uStackMemid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga552fd7b128426b6abb981a96fdcb2e2b"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+data_0x18</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -5449,9 +5479,9 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 <div class="line">status.<a class="code" href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">size</a> = <span class="keyword">sizeof</span>(<a class="code" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>);</div>
 <div class="line"><span class="keywordflow">if</span>(<a class="code" href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a>(thid, &amp;status) == 0)</div>
 <div class="line">{ Do something... }</div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:78</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:83</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga6bf8403f033a543d7c8a0a21e1153591"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a></div><div class="ttdeci">int sceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info)</div><div class="ttdoc">Get the status information for the specified thread.</div></div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:76</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition:</b> threadmgr.h:81</div></div>
 </div><!-- fragment --> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successful, otherwise the error code. </dd></dl>
 
@@ -5798,8 +5828,8 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 
 </div>
 </div>
-<a id="ga66580ad672c63cb3b54a910e0dbbd331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga66580ad672c63cb3b54a910e0dbbd331">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/20]</span></h2>
+<a id="ga97149af01bfb79f07b3a5d794a59199f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97149af01bfb79f07b3a5d794a59199f">&#9670;&nbsp;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5807,7 +5837,7 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
         <tr>
           <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
           <td>(</td>
-          <td class="paramtype">8&#160;</td>
+          <td class="paramtype">0x1C&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>

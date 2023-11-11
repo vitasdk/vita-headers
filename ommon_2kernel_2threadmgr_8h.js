@@ -57,7 +57,7 @@ var ommon_2kernel_2threadmgr_8h =
       [ "SCE_KERNEL_MUTEX_ATTR_CEILING", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b", null ]
     ] ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gabad12e90a6c274821cd5f202ff3c7897", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga66580ad672c63cb3b54a910e0dbbd331", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga97149af01bfb79f07b3a5d794a59199f", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gaa74ad12a10bc8cfb5ef3469331569863", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga6f3985da305cd603b6ad27aba47c1b5f", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga5a3866ac4781d27797ba6178131666fd", null ],

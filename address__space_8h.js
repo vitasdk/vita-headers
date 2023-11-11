@@ -9,5 +9,11 @@ var address__space_8h =
     [ "ksceKernelVARangeToPAVector", "group__SceSysmemKernel.html#ga2c25db542655e83ab9e43c1971beaf2a", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#ga51da91157080bf920fabfc83e88ec210", null ],
     [ "ksceKernelProcessGetContext", "group__SceSysmemKernel.html#gabfea04df41dcebba993db73a0901af54", null ],
-    [ "ksceKernelProcessSwitchContext", "group__SceSysmemKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1", null ]
+    [ "ksceKernelProcessSwitchContext", "group__SceSysmemKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1", null ],
+    [ "ksceKernelAddressSpaceFreeAllMemBlock", "group__SceSysmemKernel.html#gae01cbc614e28a6b764456cede51338b1", null ],
+    [ "ksceKernelAddressSpaceSetPhyMemPart", "group__SceSysmemKernel.html#ga3e9ea5067fa359ff59e426945ff1d0c7", null ],
+    [ "ksceKernelAddressSpaceUnmap", "group__SceSysmemKernel.html#ga69030efa1976526bce5d008f9887fbc2", null ],
+    [ "ksceKernelAddressSpaceVAtoPA", "group__SceSysmemKernel.html#ga4c0962ade29ddf2fe5d5d2adde374ba4", null ],
+    [ "ksceKernelCreateAddressSpace", "group__SceSysmemKernel.html#ga8c740afc16cd73eda298232dc7eb93cc", null ],
+    [ "ksceKernelDeleteAddressSpace", "group__SceSysmemKernel.html#gadac16ef9b0f6da6f24e1918e1f34a77b", null ]
 ];

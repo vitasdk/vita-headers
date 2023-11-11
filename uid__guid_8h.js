@@ -12,5 +12,8 @@ var uid__guid_8h =
     [ "ksceGUIDReferObjectWithClass", "group__SceSysmemKernel.html#ga46d6d6fb3156f9297f7bcc8bb9b381be", null ],
     [ "ksceGUIDReferObjectWithClassLevel", "group__SceSysmemKernel.html#ga3ae1e4e7ce1e10abab4c36467d7cc9a4", null ],
     [ "ksceGUIDReleaseObject", "group__SceSysmemKernel.html#ga20bce130c9ee8926441445710d024818", null ],
-    [ "ksceGUIDGetUIDVectorByClass", "group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd", null ]
+    [ "ksceGUIDGetUIDVectorByClass", "group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd", null ],
+    [ "ksceGUIDGetObjectWithClass", "group__SceSysmemKernel.html#ga80524977b0f695bd96182c694802e790", null ],
+    [ "ksceGUIDKernelCreateWithAttr", "group__SceSysmemKernel.html#ga6dba97b7292f84149f859a9703b38b23", null ],
+    [ "ksceGUIDOpenByGUID", "group__SceSysmemKernel.html#gaf491c13643650324dbda58d6fd3df962", null ]
 ];

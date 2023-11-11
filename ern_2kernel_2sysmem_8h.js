@@ -13,6 +13,7 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelMemRangeRelease", "group__SceSysmemKernel.html#ga6503e522eb894ad697173d3f1d862c52", null ],
     [ "ksceKernelMemRangeReleaseForPid", "group__SceSysmemKernel.html#gaa115820b941ecc94c3c0ae56bf936b85", null ],
     [ "ksceKernelMemRangeReleaseWithPerm", "group__SceSysmemKernel.html#gaa199835314aee2e9d5fde6a524d9f2d7", null ],
+    [ "SceKernelAllocMemBlockOptKernel", "group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe", null ],
     [ "SceKernelMemoryRefPerm", "group__SceSysmemKernel.html#gab8b3d8a0785853cb784efcfa26a641b9", [
       [ "SCE_KERNEL_MEMORY_REF_PERM_ANY", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a6b1520560830cba802967580213c228a", null ],
       [ "SCE_KERNEL_MEMORY_REF_PERM_USER_R", "group__SceSysmemKernel.html#ggab8b3d8a0785853cb784efcfa26a641b9a015658dcbf6446654dbe9aec3be6bc2a", null ],
@@ -43,5 +44,7 @@ var ern_2kernel_2sysmem_8h =
     [ "ksceKernelLockRangeWithMode", "group__SceSysmemKernel.html#ga753c19f1aff80252b328d85cd93bff2f", null ],
     [ "ksceKernelUnlockRange", "group__SceSysmemKernel.html#ga972d6234aa60f777eafa9480b04d91ca", null ],
     [ "ksceKernelUnlockRangeProc", "group__SceSysmemKernel.html#gad0a13b292547ffa1c3397ce338ea5e24", null ],
-    [ "ksceKernelUnlockRangeWithMode", "group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839", null ]
+    [ "ksceKernelUnlockRangeWithMode", "group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839", null ],
+    [ "ksceKernelAllocPartitionMemBlock", "group__SceSysmemKernel.html#ga1917a3dfcd8b8193079624ba4b02fad9", null ],
+    [ "ksceKernelFreeSimpleMemBlock", "group__SceSysmemKernel.html#gaeb4f91ed5ef28fdbe046592e8d7269f2", null ]
 ];

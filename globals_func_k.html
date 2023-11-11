@@ -507,11 +507,20 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceGUIDClose()
 : <a class="el" href="group__SceSysmemKernel.html#ga3560fcd0b87493976abd1c98ef758d75">uid_guid.h</a>
 </li>
+<li>ksceGUIDGetObjectWithClass()
+: <a class="el" href="group__SceSysmemKernel.html#ga80524977b0f695bd96182c694802e790">uid_guid.h</a>
+</li>
 <li>ksceGUIDGetUIDVectorByClass()
 : <a class="el" href="group__SceSysmemKernel.html#gaeee5e7842a0d79b192ef60bb27b58afd">uid_guid.h</a>
 </li>
+<li>ksceGUIDKernelCreateWithAttr()
+: <a class="el" href="group__SceSysmemKernel.html#ga6dba97b7292f84149f859a9703b38b23">uid_guid.h</a>
+</li>
 <li>ksceGUIDKernelCreateWithOpt()
 : <a class="el" href="group__SceSysmemKernel.html#gabdaaa14b059b34333d73a0cb2bfffbbe">uid_guid.h</a>
+</li>
+<li>ksceGUIDOpenByGUID()
+: <a class="el" href="group__SceSysmemKernel.html#gaf491c13643650324dbda58d6fd3df962">uid_guid.h</a>
 </li>
 <li>ksceGUIDReferObject()
 : <a class="el" href="group__SceSysmemKernel.html#gada9cde72216a40f8977a33778f6485f0">uid_guid.h</a>
@@ -687,6 +696,18 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceJpegEncoderSetValidRegion()
 : <a class="el" href="group__SceJpegEncKernel.html#ga3bc52e40ea13b411e3c66ecbad8fc434">jpegenc.h</a>
 </li>
+<li>ksceKernelAddressSpaceFreeAllMemBlock()
+: <a class="el" href="group__SceSysmemKernel.html#gae01cbc614e28a6b764456cede51338b1">address_space.h</a>
+</li>
+<li>ksceKernelAddressSpaceSetPhyMemPart()
+: <a class="el" href="group__SceSysmemKernel.html#ga3e9ea5067fa359ff59e426945ff1d0c7">address_space.h</a>
+</li>
+<li>ksceKernelAddressSpaceUnmap()
+: <a class="el" href="group__SceSysmemKernel.html#ga69030efa1976526bce5d008f9887fbc2">address_space.h</a>
+</li>
+<li>ksceKernelAddressSpaceVAtoPA()
+: <a class="el" href="group__SceSysmemKernel.html#ga4c0962ade29ddf2fe5d5d2adde374ba4">address_space.h</a>
+</li>
 <li>ksceKernelAlloc()
 : <a class="el" href="group__SceSysmemKernel.html#ga54ff4ee788be86b55efc47a51ed870c5">heap.h</a>
 </li>
@@ -698,6 +719,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelAllocMemBlock()
 : <a class="el" href="group__SceSysmemKernel.html#ga4ee63e9e66f9a196d0d613bc9327df31">sysmem.h</a>
+</li>
+<li>ksceKernelAllocPartitionMemBlock()
+: <a class="el" href="group__SceSysmemKernel.html#ga1917a3dfcd8b8193079624ba4b02fad9">sysmem.h</a>
 </li>
 <li>ksceKernelAssert()
 : <a class="el" href="group__SceKernelDebugKernel.html#gaba141b1f4e89efde4408ab1d34036d85">debug.h</a>
@@ -1032,6 +1056,12 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelCpuSuspendIntr()
 : <a class="el" href="group__SceCpuKernel.html#ga0cd43f0ac57a77a20bec391a62dbaec7">cpu.h</a>
 </li>
+<li>ksceKernelCpuUpdateSCTLR()
+: <a class="el" href="group__SceCpuKernel.html#ga2b688c921034fc9584e8ad9b0c3ec469">cpu.h</a>
+</li>
+<li>ksceKernelCreateAddressSpace()
+: <a class="el" href="group__SceSysmemKernel.html#ga8c740afc16cd73eda298232dc7eb93cc">address_space.h</a>
+</li>
 <li>ksceKernelCreateCallback()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga1a18a5f6673003272934c42bd3353aae">callback.h</a>
 </li>
@@ -1091,6 +1121,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelDelayThreadCB()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga0461c3413fbb0eeec36a6042990331e1">thread.h</a>
+</li>
+<li>ksceKernelDeleteAddressSpace()
+: <a class="el" href="group__SceSysmemKernel.html#gadac16ef9b0f6da6f24e1918e1f34a77b">address_space.h</a>
 </li>
 <li>ksceKernelDeleteCallback()
 : <a class="el" href="group__SceThreadMgrKernel.html#gab63ccf38a1d074967222e7e7f7395348">callback.h</a>
@@ -1167,11 +1200,17 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelExitDeleteThread()
 : <a class="el" href="group__SceThreadMgrKernel.html#gaa746c64f423d2fcba6cc76ed132035fe">thread.h</a>
 </li>
+<li>ksceKernelExitProcess()
+: <a class="el" href="group__SceProcessmgrKernel.html#gafd393ed0dd74ea461c5c6bb6042294a1">processmgr.h</a>
+</li>
 <li>ksceKernelExitThread()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga374f8554b36f0b172844ee3193021099">thread.h</a>
 </li>
 <li>ksceKernelFinalizeFastMutex()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga93cf79391f777f9cd6c69e643dae37d6">fast_mutex.h</a>
+</li>
+<li>ksceKernelFinalizeKbl()
+: <a class="el" href="group__SceModulemgrKernel.html#ga8ee6cc3e300fa0f86a785d913ab33591">modulemgr.h</a>
 </li>
 <li>ksceKernelFindClassByName()
 : <a class="el" href="group__SceSysmemKernel.html#ga0b6b5ddadfa9a82287945b5bc04cd0de">uid_class.h</a>
@@ -1191,6 +1230,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelFreeMemBlock()
 : <a class="el" href="group__SceSysmemKernel.html#ga113d062740f0c07bbef0587a23e163f1">sysmem.h</a>
 </li>
+<li>ksceKernelFreeSimpleMemBlock()
+: <a class="el" href="group__SceSysmemKernel.html#gaeb4f91ed5ef28fdbe046592e8d7269f2">sysmem.h</a>
+</li>
 <li>ksceKernelGetAssertLevel()
 : <a class="el" href="group__SceKernelDebugKernel.html#ga11105ec4b67a836b948b5204af3bc584">debug.h</a>
 </li>
@@ -1203,8 +1245,14 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelGetEventFlagInfo()
 : <a class="el" href="group__SceThreadMgrKernel.html#gab45ad76d83db1f7bba7900d2a38f01e3">event_flags.h</a>
 </li>
+<li>ksceKernelGetExportedLibraryListInModule()
+: <a class="el" href="group__SceModulemgrKernel.html#ga05eed59e4bc99aa28ec86cb0a0201c83">modulemgr.h</a>
+</li>
 <li>ksceKernelGetFastMutexInfo()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga9d1bd89fe66b8c339ed13ab1b0819ed5">fast_mutex.h</a>
+</li>
+<li>ksceKernelGetFixedHeapInfoByPointer()
+: <a class="el" href="group__SceSysmemKernel.html#ga518e78838b252ef468c4bfcd89129f30">fixedheap.h</a>
 </li>
 <li>ksceKernelGetGPI()
 : <a class="el" href="group__SceDebugLedKernel.html#gace1e3389965e1c88b407c39052662926">debugled.h</a>
@@ -1212,14 +1260,44 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelGetGPO()
 : <a class="el" href="group__SceDebugLedKernel.html#ga147bfcc4c299a9821e023f1c699ed0bd">debugled.h</a>
 </li>
+<li>ksceKernelGetHeapInfo()
+: <a class="el" href="group__SceSysmemKernel.html#ga7fb8124062d785f6aef66fd918050014">heap.h</a>
+</li>
+<li>ksceKernelGetHeapInfoByPtr()
+: <a class="el" href="group__SceSysmemKernel.html#ga36e49b1b43817fab29f70f8b1192c0cb">heap.h</a>
+</li>
+<li>ksceKernelGetImportedLibraryListInModule()
+: <a class="el" href="group__SceModulemgrKernel.html#ga631f4d80b67af6c27fdffb88f11e054c">modulemgr.h</a>
+</li>
 <li>ksceKernelGetIntrPriority()
 : <a class="el" href="group__SceIntrMgrKernel.html#ga63130b2fc16056046f524bd5d0e648b1">intrmgr.h</a>
 </li>
 <li>ksceKernelGetIntrTarget()
 : <a class="el" href="group__SceIntrMgrKernel.html#gace8653e5de54d98322b6720c2699d590">intrmgr.h</a>
 </li>
+<li>ksceKernelGetLibEntCBListForSyslibtrace()
+: <a class="el" href="group__SceModulemgrKernel.html#gabc1334ae7a9dbbf01ca0052fe1a2c43a">modulemgr.h</a>
+</li>
+<li>ksceKernelGetLibraryClientList()
+: <a class="el" href="group__SceModulemgrKernel.html#gaf124b13a092429d5fb76ad7322fc5d61">modulemgr.h</a>
+</li>
+<li>ksceKernelGetLibraryDBFlags()
+: <a class="el" href="group__SceModulemgrKernel.html#gaf9a1de5222ba9a6c6476e92c8532e593">modulemgr.h</a>
+</li>
+<li>ksceKernelGetLibraryExportInfoForDebugger()
+: <a class="el" href="group__SceModulemgrKernel.html#ga74a53fae5a6748c4090647fadba0e87a">modulemgr.h</a>
+</li>
 <li>ksceKernelGetLibraryInfoForDebugger()
 : <a class="el" href="group__SceModulemgrKernel.html#ga9041a0febfdb51c72227129c18a8b7fe">modulemgr.h</a>
+</li>
+<li>ksceKernelGetLostLibraryInfo()
+: <a class="el" href="group__SceModulemgrKernel.html#ga2590470672d63240d35e39c5986ec2c2">modulemgr.h</a>
+</li>
+<li>ksceKernelGetLostLibraryList()
+: <a class="el" href="group__SceModulemgrKernel.html#ga94ca2e28995244f334adabccde700215">modulemgr.h</a>
+</li>
+<li>ksceKernelGetLostLibraryListInModule()
+: <a class="el" href="group__SceModulemgrKernel.html#ga47df5f35b6665ff9a7fe2e842ef983d4">modulemgr.h</a>
 </li>
 <li>ksceKernelGetLwCondInfo()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga9f5049bf8b2c47b32715d1c95d0c2f06">lw_cond.h</a>
@@ -1236,11 +1314,20 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelGetMemBlockType()
 : <a class="el" href="group__SceSysmemKernel.html#ga1f0ea472002e3ecf42faed6b24e0c4d7">sysmem.h</a>
 </li>
+<li>ksceKernelGetMetaDataForDebugger()
+: <a class="el" href="group__SceModulemgrKernel.html#gab1018b1f27d2995cac232e5e2feffed6">modulemgr.h</a>
+</li>
 <li>ksceKernelGetModuleCB()
 : <a class="el" href="group__SceModulemgrKernel.html#gae092ca139d4d34f9e4b7ef006232b53d">modulemgr.h</a>
 </li>
 <li>ksceKernelGetModuleCBByAddr()
 : <a class="el" href="group__SceModulemgrKernel.html#ga32a5caf2c0a7f76c95a27284d017825f">modulemgr.h</a>
+</li>
+<li>ksceKernelGetModuleEntryPoint()
+: <a class="el" href="group__SceModulemgrKernel.html#gae5a86651304cb52eeedad627a52a226d">modulemgr.h</a>
+</li>
+<li>ksceKernelGetModuleFingerprint()
+: <a class="el" href="group__SceModulemgrKernel.html#ga2705e46bb1bb7e6022b057128922b25e">modulemgr.h</a>
 </li>
 <li>ksceKernelGetModuleIdByAddrForDebugger()
 : <a class="el" href="group__SceModulemgrKernel.html#ga8fbd95e823f72abdb54e7ea8877e7c02">modulemgr.h</a>
@@ -1256,6 +1343,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelGetModuleInfoMinByAddr()
 : <a class="el" href="group__SceModulemgrKernel.html#ga47fa309f35451118f8b934f97f794165">modulemgr.h</a>
+</li>
+<li>ksceKernelGetModuleIsSharedByAddr()
+: <a class="el" href="group__SceModulemgrKernel.html#ga2c11195566656260034d5fe0b7d7a62e">modulemgr.h</a>
 </li>
 <li>ksceKernelGetModuleList()
 : <a class="el" href="group__SceModulemgrKernel.html#ga4bee9d1d40bc8c3a17bb78f81b67b774">modulemgr.h</a>
@@ -1299,8 +1389,20 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelGetProcessStatus()
 : <a class="el" href="group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f">processmgr.h</a>
 </li>
+<li>ksceKernelGetProgramIdentificationInfo()
+: <a class="el" href="group__SceModulemgrKernel.html#ga4dc27f66efe96cde0e2355d5c195ae09">modulemgr.h</a>
+</li>
 <li>ksceKernelGetSemaInfo()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga9293c6bd36c0500428d905dc6fc19215">semaphores.h</a>
+</li>
+<li>ksceKernelGetStubInfoForDebugger()
+: <a class="el" href="group__SceModulemgrKernel.html#ga10945f9dacee4b05873faf12e71f5510">modulemgr.h</a>
+</li>
+<li>ksceKernelGetStubList()
+: <a class="el" href="group__SceModulemgrKernel.html#ga2a624f685ec2dd8ba2a579e7a9f30780">modulemgr.h</a>
+</li>
+<li>ksceKernelGetStubNidTableForDebugger()
+: <a class="el" href="group__SceModulemgrKernel.html#gaa8d9e1ec00b64c59563a5dbe4a08fe74">modulemgr.h</a>
 </li>
 <li>ksceKernelGetSystemSwVersion()
 : <a class="el" href="group__SceModulemgrKernel.html#gaf8e98274a12bb8b9822b24164ac5e3dc">modulemgr.h</a>
@@ -1359,11 +1461,17 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelGetUIDMemBlockClass()
 : <a class="el" href="group__SceSysmemKernel.html#ga0d23a298c45dd1c69815db32f32d0ead">uid_class.h</a>
 </li>
+<li>ksceKernelGetUIDProcessClass()
+: <a class="el" href="group__SceProcessmgrKernel.html#ga0acd6cf9bc4022c321a49e3cbda25d40">processmgr.h</a>
+</li>
 <li>ksceKernelGetUserThreadId()
 : <a class="el" href="group__SceThreadMgrKernel.html#gaea88b8fbc856f4840b96e27dd72e8071">debugger.h</a>
 </li>
 <li>ksceKernelGetVfpRegisterForDebugger()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga8ce5af437555faeab2c22931485c54e1">debugger.h</a>
+</li>
+<li>ksceKernelGetVmaccessRange()
+: <a class="el" href="group__SceCpuKernel.html#ga9853a110333efbe815ed9e35661c8dff">cpu.h</a>
 </li>
 <li>ksceKernelIcacheInvalidateRange()
 : <a class="el" href="group__SceCpuKernel.html#ga282db6c3ae3b69abf749f95c5462d5f7">cache.h</a>
@@ -1422,11 +1530,26 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelL1IcacheInvalidateRange()
 : <a class="el" href="group__SceCpuKernel.html#gaf55f5c7e683a10715ea10e2f1d54514b">cache.h</a>
 </li>
+<li>ksceKernelLibcGettimeofday()
+: <a class="el" href="group__SceProcessmgrKernel.html#ga37cfb9024ed496d8eee6f47e12fd9424">processmgr.h</a>
+</li>
+<li>ksceKernelLibcTime()
+: <a class="el" href="group__SceProcessmgrKernel.html#ga5de1f9d38ff7f661ff33f00cd2b01046">processmgr.h</a>
+</li>
 <li>ksceKernelLoadModule()
 : <a class="el" href="group__SceModulemgrKernel.html#ga1a38255cc912a55eae4db7a3009a1709">modulemgr.h</a>
 </li>
 <li>ksceKernelLoadModuleForPid()
 : <a class="el" href="group__SceModulemgrKernel.html#gae6996022ffe32745aa390e674a3be23d">modulemgr.h</a>
+</li>
+<li>ksceKernelLoadPreloadingModules()
+: <a class="el" href="group__SceModulemgrKernel.html#gacd88fc8b6bef89b8dda0cc1d647ab241">modulemgr.h</a>
+</li>
+<li>ksceKernelLoadProcessImage()
+: <a class="el" href="group__SceModulemgrKernel.html#gaec748dfd6469c4e8a07de8ecd44d9c73">modulemgr.h</a>
+</li>
+<li>ksceKernelLoadPtLoadSegForFwloader()
+: <a class="el" href="group__SceModulemgrKernel.html#ga3adc3b4df84cd8a0d02e8d3a6a8e8935">modulemgr.h</a>
 </li>
 <li>ksceKernelLoadStartModule()
 : <a class="el" href="group__SceModulemgrKernel.html#ga1f8dd6c9fca93ebf6d800939bc6bc85a">modulemgr.h</a>
@@ -1467,8 +1590,14 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelMMUVAtoPAWithMode()
 : <a class="el" href="group__SceCpuKernel.html#ga469a55904192c82d3fbae5603f8e156f">mmu.h</a>
 </li>
+<li>ksceKernelModuleUnloadMySelf()
+: <a class="el" href="group__SceModulemgrKernel.html#gae1c37efc51510830df02b8e24b75c64a">modulemgr.h</a>
+</li>
 <li>ksceKernelMountBootfs()
 : <a class="el" href="group__SceModulemgrKernel.html#ga572e4002ddc14186de161f64bec8b0b8">modulemgr.h</a>
+</li>
+<li>ksceKernelNameHeapGetInfo()
+: <a class="el" href="group__SceSysmemKernel.html#ga9662ad6a1d09cb5da8b14c9b77703286">nameheap.h</a>
 </li>
 <li>ksceKernelNotifyCallback()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga1ca0938fd9e73a469f994d5761de0dc1">callback.h</a>
@@ -1508,6 +1637,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelProcUserMap()
 : <a class="el" href="group__SceSysmemKernel.html#ga284c39f31d257b38912fa299979f2424">sysmem.h</a>
+</li>
+<li>ksceKernelQueryIntrHandlerInfo()
+: <a class="el" href="group__SceIntrMgrKernel.html#ga52391ac61fccf0326d6e679531e146e8">intrmgr.h</a>
 </li>
 <li>ksceKernelReceiveMsgPipeVector()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga0e1a1fb6bd202305c3772ba573fd5eb7">msg_pipe.h</a>
@@ -1653,6 +1785,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelStartModuleForPid()
 : <a class="el" href="group__SceModulemgrKernel.html#gac1129ba1bde21e0ea0ad86ee0913ac90">modulemgr.h</a>
 </li>
+<li>ksceKernelStartPreloadingModules()
+: <a class="el" href="group__SceModulemgrKernel.html#gacd9e244dccdb00f915865cfc85e625d4">modulemgr.h</a>
+</li>
 <li>ksceKernelStartThread()
 : <a class="el" href="group__SceThreadMgrKernel.html#ga31f9ac872f7028fb8c224b9f1c0649c9">thread.h</a>
 </li>
@@ -1773,6 +1908,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 <li>ksceKernelTrySendMsgPipeVector()
 : <a class="el" href="group__SceThreadMgrKernel.html#gae6e1855e65b8c587a5c1635adfe4a55d">msg_pipe.h</a>
 </li>
+<li>ksceKernelUIDEntryHeapGetInfo()
+: <a class="el" href="group__SceSysmemKernel.html#ga3e40bcfde6cc7baecbc5d2d05f35c246">uid_entryheap.h</a>
+</li>
 <li>ksceKernelUmountBootfs()
 : <a class="el" href="group__SceModulemgrKernel.html#gabf6e33f8ddb4e65999805415d838cf20">modulemgr.h</a>
 </li>
@@ -1781,6 +1919,9 @@ $(document).ready(function(){initNavTree('globals_func_k.html',''); initResizabl
 </li>
 <li>ksceKernelUnloadModuleForPid()
 : <a class="el" href="group__SceModulemgrKernel.html#ga665eae1dcd5ebffc5a8fb5842630e486">modulemgr.h</a>
+</li>
+<li>ksceKernelUnloadProcessModules()
+: <a class="el" href="group__SceModulemgrKernel.html#gad98ddcdcec6cad762f86a9022d0e3dd7">modulemgr.h</a>
 </li>
 <li>ksceKernelUnlockFastMutex()
 : <a class="el" href="group__SceThreadMgrKernel.html#gaeb3280c17f1f145afabde276efb2648f">fast_mutex.h</a>

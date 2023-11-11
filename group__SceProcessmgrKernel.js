@@ -36,6 +36,8 @@ var group__SceProcessmgrKernel =
     [ "SCE_KERNEL_POWER_TICK_DISABLE_OLED_OFF", "group__SceProcessmgrKernel.html#gga1b448620c7525b730a2b94164e34d77fa61d6ff07f428ecf1f42ecb4644002d39", null ],
     [ "SCE_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING", "group__SceProcessmgrKernel.html#gga1b448620c7525b730a2b94164e34d77fa55cba5df6d5a94e9b0188c47696cb650", null ],
     [ "__SCE_KERNEL_POWER_TICK_DISABLE", "group__SceProcessmgrKernel.html#gga1b448620c7525b730a2b94164e34d77fae0cdd5bbbd52b2a6814b95730606814d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#ga9096b15aff065259faae93c7ce23f577", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#ga34870f1e1be9758fbad54254ab5aee26", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#gae49572e6f71ee3efca6804195100a742", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#gae8866e954e641aa111f4a94b6d7b69b8", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#gac396217ca06fc5f539a8e1ed3b470689", null ],
@@ -52,5 +54,9 @@ var group__SceProcessmgrKernel =
     [ "ksceKernelGetProcessStatus", "group__SceProcessmgrKernel.html#gad8302d3b5b5672b34cc71f5dc80ac37f", null ],
     [ "ksceKernelGetProcessMainThread", "group__SceProcessmgrKernel.html#ga7922b417466daa37ba0514784cf7ef0b", null ],
     [ "ksceKernelGetProcessModuleInfo", "group__SceProcessmgrKernel.html#gae93d8dd5ea9f9177334b3e7ad3e932ed", null ],
-    [ "ksceKernelGetProcessSelfAuthInfo", "group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa", null ]
+    [ "ksceKernelGetProcessSelfAuthInfo", "group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa", null ],
+    [ "ksceKernelLibcGettimeofday", "group__SceProcessmgrKernel.html#ga37cfb9024ed496d8eee6f47e12fd9424", null ],
+    [ "ksceKernelLibcTime", "group__SceProcessmgrKernel.html#ga5de1f9d38ff7f661ff33f00cd2b01046", null ],
+    [ "ksceKernelExitProcess", "group__SceProcessmgrKernel.html#gafd393ed0dd74ea461c5c6bb6042294a1", null ],
+    [ "ksceKernelGetUIDProcessClass", "group__SceProcessmgrKernel.html#ga0acd6cf9bc4022c321a49e3cbda25d40", null ]
 ];

@@ -75,6 +75,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h.html',''); init
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -87,6 +88,9 @@ $(document).ready(function(){initNavTree('ern_2kernel_2sysmem_8h.html',''); init
 <code>#include &lt;<a class="el" href="uid__class_8h_source.html">psp2kern/kernel/sysmem/uid_class.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uid__guid_8h_source.html">psp2kern/kernel/sysmem/uid_guid.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uid__puid_8h_source.html">psp2kern/kernel/sysmem/uid_puid.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uid__entryheap_8h_source.html">psp2kern/kernel/sysmem/uid_entryheap.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fixedheap_8h_source.html">psp2kern/kernel/sysmem/fixedheap.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="nameheap_8h_source.html">psp2kern/kernel/sysmem/nameheap.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="heap_8h_source.html">psp2kern/kernel/sysmem/heap.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="data__transfers_8h_source.html">psp2kern/kernel/sysmem/data_transfers.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="memtype_8h_source.html">psp2kern/kernel/sysmem/memtype.h</a>&gt;</code><br />
@@ -127,6 +131,11 @@ Macros</h2></td></tr>
 <tr class="separator:gaa115820b941ecc94c3c0ae56bf936b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa199835314aee2e9d5fde6a524d9f2d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaa199835314aee2e9d5fde6a524d9f2d7">ksceKernelMemRangeReleaseWithPerm</a>(perm,  addr,  <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)&#160;&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839">ksceKernelUnlockRangeWithMode</a>(perm, addr, <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="separator:gaa199835314aee2e9d5fde6a524d9f2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga358827f503bbc3bab655078430684dfe"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceSysmemKernel.html#structSceKernelAllocMemBlockKernelOpt">SceKernelAllocMemBlockKernelOpt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe">SceKernelAllocMemBlockOptKernel</a></td></tr>
+<tr class="separator:ga358827f503bbc3bab655078430684dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -210,6 +219,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8368e564ac97534508fac16c2d086839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839">ksceKernelUnlockRangeWithMode</a> (<a class="el" href="group__SceSysmemKernel.html#gab8b3d8a0785853cb784efcfa26a641b9">SceKernelMemoryRefPerm</a> perm, void *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="memdesc:ga8368e564ac97534508fac16c2d086839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks a memory range checking for a given permission.  <a href="group__SceSysmemKernel.html#ga8368e564ac97534508fac16c2d086839">More...</a><br /></td></tr>
 <tr class="separator:ga8368e564ac97534508fac16c2d086839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1917a3dfcd8b8193079624ba4b02fad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga1917a3dfcd8b8193079624ba4b02fad9">ksceKernelAllocPartitionMemBlock</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> part, const char *name, <a class="el" href="group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571">SceKernelMemBlockType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKblKernel.html#gaaba88b24a21a6c70c895c0d55f4a69a0">size</a>, const <a class="el" href="group__SceSysmemKernel.html#ga358827f503bbc3bab655078430684dfe">SceKernelAllocMemBlockOptKernel</a> *pOpt)</td></tr>
+<tr class="separator:ga1917a3dfcd8b8193079624ba4b02fad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb4f91ed5ef28fdbe046592e8d7269f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaeb4f91ed5ef28fdbe046592e8d7269f2">ksceKernelFreeSimpleMemBlock</a> (void *a1)</td></tr>
+<tr class="separator:gaeb4f91ed5ef28fdbe046592e8d7269f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

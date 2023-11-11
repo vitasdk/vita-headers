@@ -12,5 +12,7 @@ var heap_8h =
     [ "ksceKernelAllocHeapMemoryWithOption", "group__SceSysmemKernel.html#gabd46dfc50fdb3778ff8e74bba2a2d3f9", null ],
     [ "ksceKernelFreeHeapMemory", "group__SceSysmemKernel.html#ga7bf486913efbcd018bf52e29c71735db", null ],
     [ "ksceKernelAlloc", "group__SceSysmemKernel.html#ga54ff4ee788be86b55efc47a51ed870c5", null ],
-    [ "ksceKernelFree", "group__SceSysmemKernel.html#ga93724c6e5730bbe92fc729b2392df9a7", null ]
+    [ "ksceKernelFree", "group__SceSysmemKernel.html#ga93724c6e5730bbe92fc729b2392df9a7", null ],
+    [ "ksceKernelGetHeapInfo", "group__SceSysmemKernel.html#ga7fb8124062d785f6aef66fd918050014", null ],
+    [ "ksceKernelGetHeapInfoByPtr", "group__SceSysmemKernel.html#ga36e49b1b43817fab29f70f8b1192c0cb", null ]
 ];

@@ -81,7 +81,9 @@ $(document).ready(function(){initNavTree('ern_2kernel_2processmgr_8h.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ommon_2kernel_2processmgr_8h_source.html">psp2common/kernel/processmgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ern_2kernel_2sysmem_8h_source.html">psp2kern/kernel/sysmem.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2kernel_2processmgr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -132,6 +134,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gac6a33969dd1494b7a59d0376c114d3fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa">ksceKernelGetProcessSelfAuthInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#structSceSelfAuthInfo">SceSelfAuthInfo</a> *self_auth_info)</td></tr>
 <tr class="memdesc:gac6a33969dd1494b7a59d0376c114d3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process self auth info.  <a href="group__SceProcessmgrKernel.html#gac6a33969dd1494b7a59d0376c114d3fa">More...</a><br /></td></tr>
 <tr class="separator:gac6a33969dd1494b7a59d0376c114d3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37cfb9024ed496d8eee6f47e12fd9424"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga37cfb9024ed496d8eee6f47e12fd9424">ksceKernelLibcGettimeofday</a> (<a class="el" href="group__SceProcessmgrKernel.html#structSceKernelTimeval">SceKernelTimeval</a> *tv, <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelTimezone">SceKernelTimezone</a> *tz)</td></tr>
+<tr class="separator:ga37cfb9024ed496d8eee6f47e12fd9424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5de1f9d38ff7f661ff33f00cd2b01046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceProcessmgrKernel.html#ga5fd5556a01c9d9cc7b987a4172c1d28a">SceKernelTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga5de1f9d38ff7f661ff33f00cd2b01046">ksceKernelLibcTime</a> (<a class="el" href="group__SceProcessmgrKernel.html#ga5fd5556a01c9d9cc7b987a4172c1d28a">SceKernelTime</a> *tloc)</td></tr>
+<tr class="separator:ga5de1f9d38ff7f661ff33f00cd2b01046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd393ed0dd74ea461c5c6bb6042294a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gafd393ed0dd74ea461c5c6bb6042294a1">ksceKernelExitProcess</a> (int status)</td></tr>
+<tr class="separator:gafd393ed0dd74ea461c5c6bb6042294a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0acd6cf9bc4022c321a49e3cbda25d40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga0acd6cf9bc4022c321a49e3cbda25d40">ksceKernelGetUIDProcessClass</a> (void)</td></tr>
+<tr class="separator:ga0acd6cf9bc4022c321a49e3cbda25d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

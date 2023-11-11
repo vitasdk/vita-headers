@@ -1,7 +1,5 @@
 var kernel_2processmgr_8h =
 [
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrUser.html#ga9096b15aff065259faae93c7ce23f577", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrUser.html#ga34870f1e1be9758fbad54254ab5aee26", null ],
     [ "sceKernelExitProcess", "group__SceProcessmgrUser.html#gaf64b2cd0fc96095e3f77dee2dc9a68c3", null ],
     [ "sceKernelPowerTick", "group__SceProcessmgrUser.html#ga2255f042fe267ddd8b38eee5fa578e33", null ],
     [ "sceKernelPowerLock", "group__SceProcessmgrUser.html#ga2cd2b3124993e2b420003f7d9d6dc5a8", null ],

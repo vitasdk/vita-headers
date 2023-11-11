@@ -1,5 +1,11 @@
 var NAVTREEINDEX14 =
 {
+"group__SceCpuKernel.html#gaeb9176c3771e2a853144df68eceaef55":[4,0,1,2,1,0,5,9],
+"group__SceCpuKernel.html#gaeb9176c3771e2a853144df68eceaef55":[1,7,3,1,119],
+"group__SceCpuKernel.html#gaed06e237847b2e2570dc3e9d1fa432b0":[4,0,1,2,1,0,0,57],
+"group__SceCpuKernel.html#gaed06e237847b2e2570dc3e9d1fa432b0":[1,7,3,1,59],
+"group__SceCpuKernel.html#gaf113551f680d40bbc465dd9330acbfd1":[4,0,1,2,1,0,1,4],
+"group__SceCpuKernel.html#gaf113551f680d40bbc465dd9330acbfd1":[1,7,3,1,87],
 "group__SceCpuKernel.html#gaf3cef51381d062a515cd9085e64e71f4":[4,0,1,2,1,0,0,6],
 "group__SceCpuKernel.html#gaf3cef51381d062a515cd9085e64e71f4":[1,7,3,1,8],
 "group__SceCpuKernel.html#gaf55f5c7e683a10715ea10e2f1d54514b":[4,0,1,2,1,0,1,16],
@@ -209,8 +215,8 @@ var NAVTREEINDEX14 =
 "group__SceCtrlKernel.html#gae5b415cb36093f289f2c671f93a0e896":[1,1,0,1,8],
 "group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab":[4,0,1,2,6,10],
 "group__SceCtrlKernel.html#gaf733abe4b9e80651f49be03d2c6885ab":[1,1,0,1,10],
-"group__SceCtrlKernel.html#gafe0a11b69712e9bd19c48cfc5a22c0c0":[4,0,1,2,6,1],
 "group__SceCtrlKernel.html#gafe0a11b69712e9bd19c48cfc5a22c0c0":[1,1,0,1,1],
+"group__SceCtrlKernel.html#gafe0a11b69712e9bd19c48cfc5a22c0c0":[4,0,1,2,6,1],
 "group__SceCtrlUser.html":[1,1,0,0],
 "group__SceCtrlUser.html#ga15c8f8daf3f09aa0be3696836b52a20c":[1,1,0,0,59],
 "group__SceCtrlUser.html#ga15c8f8daf3f09aa0be3696836b52a20c":[4,0,1,0,18,17],
@@ -243,11 +249,5 @@ var NAVTREEINDEX14 =
 "group__SceCtrlUser.html#gab1150eaaef6a4f20524c14c14ba20cd0":[4,0,1,1,1,5],
 "group__SceCtrlUser.html#gab1150eaaef6a4f20524c14c14ba20cd0":[1,1,0,0,67],
 "group__SceCtrlUser.html#gab32b1862b92fa2537346eaaf7def1d1b":[1,1,0,0,65],
-"group__SceCtrlUser.html#gab32b1862b92fa2537346eaaf7def1d1b":[4,0,1,0,18,23],
-"group__SceCtrlUser.html#gab99dafda34384cd2ad1ed49d8e9ef623":[1,1,0,0,44],
-"group__SceCtrlUser.html#gab99dafda34384cd2ad1ed49d8e9ef623":[4,0,1,0,18,2],
-"group__SceCtrlUser.html#gac01f6a1bd6052bfc28c7d7e7dec9cbf1":[1,1,0,0,52],
-"group__SceCtrlUser.html#gac01f6a1bd6052bfc28c7d7e7dec9cbf1":[4,0,1,0,18,10],
-"group__SceCtrlUser.html#gac0e09a8c837fbf0a63adcd083d9eb705":[1,1,0,0,57],
-"group__SceCtrlUser.html#gac0e09a8c837fbf0a63adcd083d9eb705":[4,0,1,0,18,15]
+"group__SceCtrlUser.html#gab32b1862b92fa2537346eaaf7def1d1b":[4,0,1,0,18,23]
 };
