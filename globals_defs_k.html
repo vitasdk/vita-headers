@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 <li>ksceIoGetPUIDFdList
 : <a class="el" href="group__SceIofilemgrKernel.html#ga7830331102d8c2be40e37a949cb077db">iofilemgr.h</a>
 </li>
+<li>ksceKernelCreateClass
+: <a class="el" href="group__SceSysmemKernel.html#ga1ec80f40d8ddfa9b69aea08bb441ee40">uid_class.h</a>
+</li>
 <li>ksceKernelCreateUidObj
 : <a class="el" href="group__SceSysmemKernel.html#ga9f25b3a80d09c4c6f59050e6b0ec8a46">uid_guid.h</a>
 </li>
@@ -113,6 +116,9 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 </li>
 <li>ksceKernelDeleteUserUid
 : <a class="el" href="group__SceSysmemKernel.html#ga586d554f57cc9b49db85792fe4f5b5dc">uid_puid.h</a>
+</li>
+<li>ksceKernelFindMemBlockByAddrForPid
+: <a class="el" href="group__SceSysmemKernel.html#gaf2231943f1f083728ac2f92c3d7b3de1">sysmem.h</a>
 </li>
 <li>ksceKernelGetFaultingProcessInfo
 : <a class="el" href="group__SceThreadMgrKernel.html#ga7850183f206dd0db1c222cc745af5f36">debugger.h</a>
@@ -147,8 +153,26 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 <li>ksceKernelGetSysrootBuffer
 : <a class="el" href="group__SceKernelSysrootKernel.html#ga192d7ce764117e51b25a1879f5bc06a0">sysroot.h</a>
 </li>
+<li>ksceKernelGetUidClass
+: <a class="el" href="group__SceSysmemKernel.html#gab9b345d2fa110f176e7e28eec391ac3d">uid_class.h</a>
+</li>
+<li>ksceKernelGetUidDLinkClass
+: <a class="el" href="group__SceSysmemKernel.html#ga373010ce3daf6c34e0af821234848d56">uid_class.h</a>
+</li>
+<li>ksceKernelGetUidHeapClass
+: <a class="el" href="group__SceSysmemKernel.html#ga29a9b26f7989b786cee6261c0e8436ab">uid_class.h</a>
+</li>
+<li>ksceKernelGetUidMemBlockClass
+: <a class="el" href="group__SceSysmemKernel.html#ga09d6a977dca811d685bfdc373af4f618">uid_class.h</a>
+</li>
 <li>ksceKernelKernelUidForUserUid
 : <a class="el" href="group__SceSysmemKernel.html#ga32398005b7555bf3ea1ea869dbb6dc70">uid_puid.h</a>
+</li>
+<li>ksceKernelMapBlockUserVisible
+: <a class="el" href="group__SceSysmemKernel.html#ga47fa3b17fe830296a829081ff6c8bd65">sysmem.h</a>
+</li>
+<li>ksceKernelMapUserBlock
+: <a class="el" href="group__SceSysmemKernel.html#ga1881e34c72501fb4c877748a3794c9bc">sysmem.h</a>
 </li>
 <li>ksceKernelMapUserBlockDefaultType
 : <a class="el" href="group__SceSysmemKernel.html#ga7ce8eae6e544fb24d4db0d2dfe781347">sysmem.h</a>
@@ -159,8 +183,17 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 <li>ksceKernelMaskIntr
 : <a class="el" href="group__SceIntrMgrKernel.html#ga33f7c8b4b71c801c0851576b54ec1893">intrmgr.h</a>
 </li>
+<li>ksceKernelMemBlockRelease
+: <a class="el" href="group__SceSysmemKernel.html#gacfb910424429c1cd5278cf0e771571df">sysmem.h</a>
+</li>
+<li>ksceKernelMemcpyFromUser
+: <a class="el" href="group__SceSysmemKernel.html#ga6fcc83ccc07eb097dca8aaa40cafb0c9">data_transfers.h</a>
+</li>
 <li>ksceKernelMemcpyKernelToUser
 : <a class="el" href="group__SceSysmemKernel.html#ga18316936595ce50e304c8e5e60ecbdc0">data_transfers.h</a>
+</li>
+<li>ksceKernelMemcpyToUser
+: <a class="el" href="group__SceSysmemKernel.html#ga4d0ee316b3f797237d3667441407dcbe">data_transfers.h</a>
 </li>
 <li>ksceKernelMemcpyToUserRo
 : <a class="el" href="group__SceSysmemKernel.html#ga467c6bad0f40dd26c87fb18a1988332c">data_transfers.h</a>
@@ -173,6 +206,48 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 </li>
 <li>ksceKernelMemcpyUserToKernelForPid
 : <a class="el" href="group__SceSysmemKernel.html#gac28d23aaaab851d95478fea28c66c5a2">data_transfers.h</a>
+</li>
+<li>ksceKernelMemRangeRelease
+: <a class="el" href="group__SceSysmemKernel.html#ga6503e522eb894ad697173d3f1d862c52">sysmem.h</a>
+</li>
+<li>ksceKernelMemRangeReleaseForPid
+: <a class="el" href="group__SceSysmemKernel.html#gaa115820b941ecc94c3c0ae56bf936b85">sysmem.h</a>
+</li>
+<li>ksceKernelMemRangeReleaseWithPerm
+: <a class="el" href="group__SceSysmemKernel.html#gaa199835314aee2e9d5fde6a524d9f2d7">sysmem.h</a>
+</li>
+<li>ksceKernelMemRangeRetain
+: <a class="el" href="group__SceSysmemKernel.html#ga6442a2f505771d1a972134a165ef4842">sysmem.h</a>
+</li>
+<li>ksceKernelMemRangeRetainForPid
+: <a class="el" href="group__SceSysmemKernel.html#ga8bbadbc6c2f492a49d12ea23dfe75d39">sysmem.h</a>
+</li>
+<li>ksceKernelMemRangeRetainWithPerm
+: <a class="el" href="group__SceSysmemKernel.html#ga6550313a96d596a381795e849e4adc3a">sysmem.h</a>
+</li>
+<li>ksceKernelProcMemcpyFromUser
+: <a class="el" href="group__SceSysmemKernel.html#gaeeb8a682d78cf235887b67698d6e5712">data_transfers.h</a>
+</li>
+<li>ksceKernelProcMemcpyToUser
+: <a class="el" href="group__SceSysmemKernel.html#ga3dba979c8c0704145004929ff52d6cee">data_transfers.h</a>
+</li>
+<li>ksceKernelProcMemcpyToUserRx
+: <a class="el" href="group__SceSysmemKernel.html#ga6b61b35045ac27422b8ab4daa5e23941">data_transfers.h</a>
+</li>
+<li>ksceKernelProcStrncpyFromUser
+: <a class="el" href="group__SceSysmemKernel.html#gafc75ccdd9b02d84f97415355cd04380d">data_transfers.h</a>
+</li>
+<li>ksceKernelProcStrncpyToUser
+: <a class="el" href="group__SceSysmemKernel.html#ga13b39aa84f1ec6f2a1590cdf1a3a4666">data_transfers.h</a>
+</li>
+<li>ksceKernelProcStrnlenUser
+: <a class="el" href="group__SceSysmemKernel.html#ga0a0b1330bb304d8defbe173c64436f87">data_transfers.h</a>
+</li>
+<li>ksceKernelProcUserMemcpy
+: <a class="el" href="group__SceSysmemKernel.html#ga7c90fd37a299fdadab88f9a2a747942e">data_transfers.h</a>
+</li>
+<li>ksceKernelRemapBlock
+: <a class="el" href="group__SceSysmemKernel.html#ga21a95b4f8700112c732803fb100664bb">sysmem.h</a>
 </li>
 <li>ksceKernelRxMemcpyKernelToUserForPid
 : <a class="el" href="group__SceSysmemKernel.html#ga8a3d3184e2ac53a6cb33fbd2e729bfb0">data_transfers.h</a>
@@ -189,6 +264,9 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 <li>ksceKernelStrncpyUserToKernel
 : <a class="el" href="group__SceSysmemKernel.html#ga34a04e2e64c4eda1033ac92b313cc122">data_transfers.h</a>
 </li>
+<li>ksceKernelStrnlenUser
+: <a class="el" href="group__SceSysmemKernel.html#gaa2eefe3155a78c3e0af3e5c7fcf109d3">data_transfers.h</a>
+</li>
 <li>ksceKernelSwitchPidContext
 : <a class="el" href="group__SceSysmemKernel.html#ga8512b33d6f1b769c49c5bdbc90d04ac9">address_space.h</a>
 </li>
@@ -197,6 +275,9 @@ $(document).ready(function(){initNavTree('globals_defs_k.html',''); initResizabl
 </li>
 <li>ksceKernelUnmaskIntr
 : <a class="el" href="group__SceIntrMgrKernel.html#ga88d1d177585245a55e879faf9a246202">intrmgr.h</a>
+</li>
+<li>ksceKernelUserMemcpy
+: <a class="el" href="group__SceSysmemKernel.html#ga25852403d1b288eacddc2a88586b9d01">data_transfers.h</a>
 </li>
 <li>ksceNetHtonl
 : <a class="el" href="group__SceNetKernel.html#gabca3383275b64caf7192a28e759ed952">netps.h</a>
