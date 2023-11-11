@@ -506,6 +506,7 @@ void ksceKernelFinalizeKbl(void);
 int ksceKernelGetExportedLibraryListInModule(SceUID pid, SceUID modid, SceUID *library_ids, SceSize *num);
 int ksceKernelGetImportedLibraryListInModule(SceUID pid, SceUID modid, SceUID *library_ids, SceSize *num);
 int ksceKernelGetLibEntCBListForSyslibtrace(void **ppList, SceSize *num);
+int ksceKernelGetLibraryList(SceUID pid, SceUID *library_ids, SceSize *num);
 int ksceKernelGetLibraryClientList(SceUID pid, SceUID library_id, SceUID *modids, SceSize *num, SceSize cpy_skip_num);
 int ksceKernelGetLibraryDBFlags(SceUID pid, int *pFlags);
 int ksceKernelGetLibraryExportInfoForDebugger(SceUID pid, SceUID library_id, SceKernelModuleExportEntry *list, SceSize *num, SceSize cpy_skip_num);
