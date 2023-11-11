@@ -45,6 +45,16 @@ if(${__vitasdk_current_time} LESS ${__vitasdk_expires_kern_cpu_big_fix})
   message("")
 endif()
 
+math(EXPR __vitasdk_expires_removed_some_user_backwards_compat_20240801 "20240801 + 2 * 100")
+
+if(${__vitasdk_current_time} LESS ${__vitasdk_expires_removed_some_user_backwards_compat_20240801})
+  message("#")
+  message("# The backwards compatibility of headers will be removed for the following users on 2024/08/01")
+  message("# > power.h / paf.h")
+  message("#")
+  message("")
+endif()
+
 math(EXPR __vitasdk_expires_wrong_libs_module_name "20240101 + 2 * 100")
 
 if(${__vitasdk_current_time} LESS ${__vitasdk_expires_wrong_libs_module_name})
