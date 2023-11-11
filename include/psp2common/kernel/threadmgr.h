@@ -67,8 +67,13 @@ typedef struct SceKernelThreadOptParam {
 	SceSize     size;
 	/** Attributes */
 	SceUInt32   attr;
+	SceUInt32 kStackMemType;
+	SceUInt32 uStackMemType;
+	SceUInt32 uTLSMemType;
+	SceUInt32 uStackMemid;
+	SceUInt32 data_0x18;
 } SceKernelThreadOptParam;
-VITASDK_BUILD_ASSERT_EQ(8, SceKernelThreadOptParam);
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceKernelThreadOptParam);
 
 /** Structure to hold the status information for a thread
   * @see sceKernelGetThreadInfo

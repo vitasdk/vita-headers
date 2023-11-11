@@ -8,7 +8,9 @@
 #define _PSP2KERN_KERNEL_PROCESSMGR_H_
 
 #include <vitasdk/build_utils.h>
+#include <psp2common/kernel/processmgr.h>
 #include <psp2kern/types.h>
+#include <psp2kern/kernel/sysmem.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -94,6 +96,12 @@ ScePVoid ksceKernelGetProcessModuleInfo(SceUID pid);
  * @return     Zero on success, < 0 on error.
  */
 int ksceKernelGetProcessSelfAuthInfo(SceUID pid, SceSelfAuthInfo *self_auth_info);
+
+
+int ksceKernelLibcGettimeofday(SceKernelTimeval *tv, SceKernelTimezone *tz);
+SceKernelTime ksceKernelLibcTime(SceKernelTime *tloc);
+int ksceKernelExitProcess(int status);
+SceClass *ksceKernelGetUIDProcessClass(void);
 
 
 #ifdef __cplusplus
