@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"psp2kern_2power_8h.html":[4,0,1,2,16],
+"psp2kern_2power_8h_source.html":[4,0,1,2,16],
 "psp2kern_2registrymgr_8h.html":[4,0,1,2,17],
 "psp2kern_2registrymgr_8h_source.html":[4,0,1,2,17],
 "psp2kern_2touch_8h.html":[4,0,1,2,18],

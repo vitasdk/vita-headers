@@ -233,6 +233,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga631f4d80b67af6c27fdffb88f11e054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc1334ae7a9dbbf01ca0052fe1a2c43a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gabc1334ae7a9dbbf01ca0052fe1a2c43a">ksceKernelGetLibEntCBListForSyslibtrace</a> (void **ppList, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num)</td></tr>
 <tr class="separator:gabc1334ae7a9dbbf01ca0052fe1a2c43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafebfc046789bd7e0d68bcaee3b338841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gafebfc046789bd7e0d68bcaee3b338841">ksceKernelGetLibraryList</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *library_ids, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num)</td></tr>
+<tr class="separator:gafebfc046789bd7e0d68bcaee3b338841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf124b13a092429d5fb76ad7322fc5d61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gaf124b13a092429d5fb76ad7322fc5d61">ksceKernelGetLibraryClientList</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> library_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *modids, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *num, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> cpy_skip_num)</td></tr>
 <tr class="separator:gaf124b13a092429d5fb76ad7322fc5d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf9a1de5222ba9a6c6476e92c8532e593"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceModulemgrKernel.html#gaf9a1de5222ba9a6c6476e92c8532e593">ksceKernelGetLibraryDBFlags</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceThreadMgrKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int *pFlags)</td></tr>
@@ -3627,6 +3629,40 @@ addr[4]</td>
           <td>(</td>
           <td class="paramtype">void **&#160;</td>
           <td class="paramname"><em>ppList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafebfc046789bd7e0d68bcaee3b338841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafebfc046789bd7e0d68bcaee3b338841">&#9670;&nbsp;</a></span>ksceKernelGetLibraryList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetLibraryList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
+          <td class="paramname"><em>library_ids</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

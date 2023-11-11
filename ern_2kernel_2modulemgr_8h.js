@@ -46,6 +46,7 @@ var ern_2kernel_2modulemgr_8h =
     [ "ksceKernelGetExportedLibraryListInModule", "group__SceModulemgrKernel.html#ga05eed59e4bc99aa28ec86cb0a0201c83", null ],
     [ "ksceKernelGetImportedLibraryListInModule", "group__SceModulemgrKernel.html#ga631f4d80b67af6c27fdffb88f11e054c", null ],
     [ "ksceKernelGetLibEntCBListForSyslibtrace", "group__SceModulemgrKernel.html#gabc1334ae7a9dbbf01ca0052fe1a2c43a", null ],
+    [ "ksceKernelGetLibraryList", "group__SceModulemgrKernel.html#gafebfc046789bd7e0d68bcaee3b338841", null ],
     [ "ksceKernelGetLibraryClientList", "group__SceModulemgrKernel.html#gaf124b13a092429d5fb76ad7322fc5d61", null ],
     [ "ksceKernelGetLibraryDBFlags", "group__SceModulemgrKernel.html#gaf9a1de5222ba9a6c6476e92c8532e593", null ],
     [ "ksceKernelGetLibraryExportInfoForDebugger", "group__SceModulemgrKernel.html#ga74a53fae5a6748c4090647fadba0e87a", null ],

@@ -1,15 +1,17 @@
 var NAVTREEINDEX80 =
 {
-"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[4,0,1,0,85,24],
+"group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a":[4,0,1,0,85,36],
+"group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a":[1,11,12,0,36],
 "group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[1,11,12,0,24],
+"group__SceVshBridgeUser.html#gacf92a8b41214dcc2516ea9630b3ffaa3":[4,0,1,0,85,24],
 "group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[4,0,1,0,85,34],
 "group__SceVshBridgeUser.html#gae3bd6adbed0b1e57e623c67653a41ea2":[1,11,12,0,34],
 "group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[1,11,12,0,6],
 "group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902":[4,0,1,0,85,6],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[1,11,12,0,33],
 "group__SceVshBridgeUser.html#gaf41f69612f13114f85e5b24e64faad0b":[4,0,1,0,85,33],
-"group__SceVshBridgeUser.html#gaf4b574fa09efb2b34c1892e9651187b6":[1,11,12,0,13],
 "group__SceVshBridgeUser.html#gaf4b574fa09efb2b34c1892e9651187b6":[4,0,1,0,85,13],
+"group__SceVshBridgeUser.html#gaf4b574fa09efb2b34c1892e9651187b6":[1,11,12,0,13],
 "group__SystemFunction.html":[1,5],
 "group__SystemParams.html":[1,13],
 "group__SystemStatus.html":[1,11],
@@ -38,8 +40,8 @@ var NAVTREEINDEX80 =
 "ime__dialog_8h_source.html":[4,0,1,0,28],
 "incoming__dialog_8h.html":[4,0,1,0,29],
 "incoming__dialog_8h_source.html":[4,0,1,0,29],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "intrmgr_8h.html":[4,0,1,2,1,13],
 "intrmgr_8h_source.html":[4,0,1,2,1,13],
 "io_2devctl_8h.html":[4,0,1,0,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX80 =
 "psp2kern_2kernel_2utils_8h.html":[4,0,1,2,1,31],
 "psp2kern_2kernel_2utils_8h_source.html":[4,0,1,2,1,31],
 "psp2kern_2npdrm_8h.html":[4,0,1,2,13],
-"psp2kern_2npdrm_8h_source.html":[4,0,1,2,13],
-"psp2kern_2power_8h.html":[4,0,1,2,16],
-"psp2kern_2power_8h_source.html":[4,0,1,2,16]
+"psp2kern_2npdrm_8h_source.html":[4,0,1,2,13]
 };
