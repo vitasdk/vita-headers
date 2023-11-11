@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('ern_2kernel_2cpu_8h_source.html',''); 
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="group__SceSysclibKernel.html#gaaa9a3c56c10233a05c3e455d9235a5b5">memcpy</a>(dst, src, len);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="group__SceCpuKernel.html#ga0215abf301685022f2e3cf887afe4def">ksceKernelDcacheCleanRangeForL1WBWA</a>((<span class="keywordtype">void</span> *)(((uintptr_t)dst) &amp; ~0x1F), ((((uintptr_t)dst) + len + 0x1F) &amp; ~0x1F) - (((uintptr_t)dst) &amp; 0x1F));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="group__SceCpuKernel.html#ga0215abf301685022f2e3cf887afe4def">ksceKernelDcacheCleanRangeForL1WBWA</a>((<span class="keywordtype">void</span> *)(((uintptr_t)dst) &amp; ~0x1F), ((((uintptr_t)dst) + len + 0x1F) &amp; ~0x1F) - (((uintptr_t)dst) &amp; ~0x1F));</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mcr p15, 0, %0, c3, c0, 0&quot;</span> :: <span class="stringliteral">&quot;r&quot;</span> (prev_dacr));</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
