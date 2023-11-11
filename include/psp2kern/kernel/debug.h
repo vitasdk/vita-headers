@@ -59,7 +59,7 @@ typedef enum SceKernelAssertLevel {
 } SceKernelAssertLevel;
 
 
-int ksceDebugPutchar(int character);
+int ksceKernelDebugPutchar(int character);
 
 /**
  * @brief Print log
@@ -100,7 +100,7 @@ int ksceKernelPrintfLevelWithInfo(SceUInt32 level, SceUInt32 flags, const SceKer
  * @return 0 on success, < 0 on error.
  *
  * @note - main    log is pass to ksceDebugRegisterPutcharHandler's handler.
- *         dbginfo log is pass to ksceDebugSetHandlers's handler.
+ *         dbginfo log is pass to sceKernelRegisterKprintfHandler's handler.
  */
 int ksceKernelPrintfWithInfo(SceUInt32 flags, const SceKernelDebugInfo *dbginfo, const char *fmt, ...);
 
@@ -210,20 +210,20 @@ void ksceKernelPrintfAssertLevel(SceUInt32 level, SceBool condition, const SceKe
 	} while(0)
 
 
-int ksceDebugSetHandlers(int (* func)(int unk, const char *format, const va_list args), void *args);
+int ksceKernelRegisterKprintfHandler(int (* handler)(int unk, const char *format, va_list args), void *argp);
 
-int ksceDebugRegisterPutcharHandler(int (* func)(void *args, char c), void *args);
+int ksceKernelRegisterDebugPutcharHandler(int (* handler)(void *argp, char c), void *argp);
 
-void *ksceDebugGetPutcharHandler(void);
+void *ksceKernelGetDebugPutcharHandler(void);
 
 /**
- * @brief Set kpanic flag
+ * @brief Set CrashDump enable
  *
- * @param[in] flag - If pass not zero to flag, kpanic is not stopped and do smc 0x122.
+ * @param[in] enable - pass SCE_TRUE to do reboot on kernel panic or kernel assert failed.
  *
  * @return previous flag.
  */
-int ksceDebugDisableInfoDump(int flag);
+int ksceKernelEnableCrashDump(SceBool enable);
 
 /**
  * @brief Get current minimum assertion level
@@ -233,13 +233,13 @@ int ksceDebugDisableInfoDump(int flag);
 int ksceKernelGetAssertLevel(void);
 
 /**
- * @brief Get current minimum assertion level
+ * @brief Get current assert level
  *
- * @param[in] level - new minimum assertion level
+ * @param[in] level - new assert level
  *
- * @return previous minimum assertion level.
+ * @return previous assert level.
  */
-int ksceKernelSetMinimumAssertionLevel(int level);
+SceUInt32 ksceKernelSetAssertLevel(SceUInt32 level);
 
 // process
 typedef struct SceKernelDebugEventLog1 { // size is 0x1C
@@ -318,6 +318,12 @@ int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
 #define ksceDebugPrintKernelAssertion ksceKernelAssert
 #define ksceDebugPrintfKernelAssertion ksceKernelPrintfAssertLevel
 #define ksceKernelGetMinimumAssertionLevel ksceKernelGetAssertLevel
+#define ksceDebugPutchar ksceKernelDebugPutchar
+#define ksceDebugSetHandlers ksceKernelRegisterKprintfHandler
+#define ksceDebugRegisterPutcharHandler ksceKernelRegisterDebugPutcharHandler
+#define ksceDebugGetPutcharHandler ksceKernelGetDebugPutcharHandler
+#define ksceDebugDisableInfoDump ksceKernelEnableCrashDump
+#define ksceKernelSetMinimumAssertionLevel ksceKernelSetAssertLevel
 
 
 #ifdef __cplusplus
