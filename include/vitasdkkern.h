@@ -23,6 +23,7 @@
 #include <psp2kern/usbserv.h>
 
 #include <psp2kern/internal/exfatfs.h>
+#include <psp2kern/internal/sdstor.h>
 
 #include <psp2kern/io/devctl.h>
 #include <psp2kern/io/dirent.h>
