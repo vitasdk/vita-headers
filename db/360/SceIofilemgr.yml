@@ -73,10 +73,10 @@ modules:
         functions:
           ksceIoCancel: 0x6D59658D
           ksceIoChstat: 0x7D42B8DC
-          ksceIoChstat2: 0x1F98BD50
           ksceIoChstatAsync: 0x7EC442BF
           ksceIoChstatByFd: 0xDF57A75F
           ksceIoChstatByFdAsync: 0xEC974400
+          ksceIoChstatForVshbridge: 0x1F98BD50
           ksceIoClearErrorEvent: 0x40B933C7
           ksceIoClose: 0xF99DD8A3
           ksceIoCloseAsync: 0x11C57CC6
@@ -91,8 +91,8 @@ modules:
           ksceIoDopen: 0x463B25CC
           ksceIoDopenAsync: 0x72F06BDE
           ksceIoDread: 0x20CF5FC7
-          ksceIoDread2: 0x03051B02
           ksceIoDreadAsync: 0x5982B0E3
+          ksceIoDreadForVshbridge: 0x03051B02
           ksceIoFlock: 0x16336A0D
           ksceIoGetFileInfo: 0xA1EF2648
           ksceIoGetGUIDFdListForDebugger: 0xDCF75F6D
@@ -102,10 +102,10 @@ modules:
           ksceIoGetRemoteKPLSData: 0x44EDCE57
           ksceIoGetThreadDefaultPriorityForSystem: 0x6D0FEDB6
           ksceIoGetstat: 0x75C96D25
-          ksceIoGetstat2: 0xD6503624
           ksceIoGetstatAsync: 0x94A5304A
           ksceIoGetstatByFd: 0x462F059B
           ksceIoGetstatByFdAsync: 0x0FEE1238
+          ksceIoGetstatForVshbridge: 0xD6503624
           ksceIoIoctl: 0x161CD33F
           ksceIoIoctlAsync: 0xB761E91B
           ksceIoLseek: 0x62090481
@@ -139,36 +139,65 @@ modules:
           ksceIoUmount: 0x20574100
           ksceIoWrite: 0x21EE91F0
           ksceIoWriteAsync: 0xA1BD13D0
-          kscePfsMgrVfsMount: 0xFEEE44A9
-          kscePfsMgrVfsUmount: 0xD220539D
           ksceVfsAddVfs: 0x673D2FCD
           ksceVfsDeleteVfs: 0x9CBFA725
-          ksceVfsFreeVnode: 0x21D57633
-          ksceVfsGetNewNode: 0xD60B5C63
-          ksceVfsLockMnt: 0x6B3CA9F7
-          ksceVfsMount: 0xB62DE9A6
-          ksceVfsNodeSetEventFlag: 0x6048F245
-          ksceVfsNodeWaitEventFlag: 0xAA45010B
           ksceVfsOpDecodePathElem: 0xF7DAC0F5
           ksceVfsOpDevctl: 0xB07B307D
-          ksceVfsUnlockMnt: 0xDC2D8BCE
-          ksceVfsUnmount: 0x9C7E7B76
           ksceVopChstat: 0x1974FA92
+          ksceVopCleanup: 0x0F7E1718
           ksceVopClose: 0x40944C2E
           ksceVopCreate: 0x9E347C7D
           ksceVopDclose: 0x1350F5C7
           ksceVopDopen: 0x00C9C2DD
           ksceVopDread: 0x77584C8F
+          ksceVopFchstat: 0x082AFD7F
+          ksceVopFgetstat: 0x1DBCBB01
           ksceVopGetstat: 0x50A63ACF
           ksceVopInactive: 0x8FB94521
           ksceVopIoctl: 0x333C904D
+          ksceVopLink: 0x942AA61F
+          ksceVopLookup: 0xA5A6A55C
           ksceVopLseek: 0xB2B13818
           ksceVopMkdir: 0x2F3F8C70
           ksceVopOpen: 0x76B79BEC
           ksceVopPread: 0xABBC80E3
           ksceVopPwrite: 0xA53C040D
           ksceVopRead: 0x570388A5
+          ksceVopRemove: 0xDC1E7EE4
           ksceVopRename: 0x36A794C7
           ksceVopRmdir: 0x1D551105
           ksceVopSync: 0x9CD96406
+          ksceVopUnlink: 0x0D8A806E
+          ksceVopWhiteout: 0xF53399BC
           ksceVopWrite: 0x9A68378D
+          ksceVopZerofill: 0xEEAE8B51
+          vfsAllocateFile: 0xBBAC1751
+          vfsAllocateFileDummy: 0xCDF3EF52
+          vfsBuffCacheCtl: 0xA7020B0D
+          vfsBuffCacheFree: 0xD6AB5E4B
+          vfsChstat: 0xBCE4865B
+          vfsChstatByFd: 0x7517FE29
+          vfsClose: 0x1AE14011
+          vfsFreeFile: 0xC85E33A2
+          vfsFreeVnode: 0x21D57633
+          vfsGetMntInfo: 0xB987450D
+          vfsGetMntList: 0xC20C621C
+          vfsGetNewVnode: 0xD60B5C63
+          vfsGetVnodeName: 0xAA253B68
+          vfsIoctl: 0xC1DD4317
+          vfsIsLockedMnt: 0xC468B5EF
+          vfsIsOwner: 0xC3AE93A2
+          vfsLockMnt: 0x6B3CA9F7
+          vfsLockVnode: 0xAA45010B
+          vfsMount: 0xB62DE9A6
+          vfsMountForPFS: 0xFEEE44A9
+          vfsOpen: 0x0E518FA9
+          vfsPread: 0x0B54F9E0
+          vfsPwrite: 0xE5DEA6B7
+          vfsRead: 0x809892C1
+          vfsRmdev: 0x69A7E076
+          vfsUmount: 0x9C7E7B76
+          vfsUmountForPFS: 0xD220539D
+          vfsUnlockMnt: 0xDC2D8BCE
+          vfsUnlockVnode: 0x6048F245
+          vfsWrite: 0x8598ADC3
