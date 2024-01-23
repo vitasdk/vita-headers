@@ -4,6 +4,17 @@ modules:
   SceSblGcAuthMgr:
     nid: 0xDB1A9016
     libraries:
+      SceSblGcAuthMgrDrmBBForDriver:
+        nid: 0x1926B182
+        kernel: true
+        functions:
+          ksceSblGcAuthMgrDrmBBClearCartSecret: 0xBB451E83
+          ksceSblGcAuthMgrDrmBBGetCartSecret: 0xBB70DDC0
+      SceSblGcAuthMgrGcAuthForDriver:
+        nid: 0xC6627F5E
+        kernel: true
+        functions:
+          ksceSblGcAuthMgrGcAuthCartAuthentication: 0x68781760
       SceSblGcAuthMgr:
         kernel: false
         nid: 0x7B13BCF7
