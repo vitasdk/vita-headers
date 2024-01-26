@@ -1,6 +1,7 @@
 var dir_ec7ce0decaf119d3f3f03563c1567600 =
 [
     [ "cpu", "dir_2885d25b7431fd099597aa6199fbb4a8.html", "dir_2885d25b7431fd099597aa6199fbb4a8" ],
+    [ "gcauthmgr", "dir_a5a6bac8422e4f72e0c89b5ecec36977.html", "dir_a5a6bac8422e4f72e0c89b5ecec36977" ],
     [ "kbl", "dir_c365722192b87e379a2994b0f320a544.html", "dir_c365722192b87e379a2994b0f320a544" ],
     [ "sysmem", "dir_7e39855c60bb86726f822b20b3793aa0.html", "dir_7e39855c60bb86726f822b20b3793aa0" ],
     [ "threadmgr", "dir_d32688b4d6c61bb6b4337d60e27d9435.html", "dir_d32688b4d6c61bb6b4337d60e27d9435" ],
@@ -13,6 +14,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "dipsw.h", "dipsw_8h.html", "dipsw_8h" ],
     [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
     [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
+    [ "gcauthmgr.h", "gcauthmgr_8h.html", null ],
     [ "intrmgr.h", "intrmgr_8h.html", "intrmgr_8h" ],
     [ "iofilemgr.h", "psp2kern_2kernel_2iofilemgr_8h.html", "psp2kern_2kernel_2iofilemgr_8h" ],
     [ "modulemgr.h", "ern_2kernel_2modulemgr_8h.html", "ern_2kernel_2modulemgr_8h" ],

@@ -24,5 +24,6 @@ var group__kernel =
     [ "Kernel Ss Library", "group__SceSblSsMgr.html", "group__SceSblSsMgr" ],
     [ "dip switch Library", "group__SceDipsw.html", "group__SceDipsw" ],
     [ "Hardware Timer Library", "group__SceSystimer.html", "group__SceSystimer" ],
-    [ "SM Loader", "group__SceSblSsComm.html", "group__SceSblSsComm" ]
+    [ "SM Loader", "group__SceSblSsComm.html", "group__SceSblSsComm" ],
+    [ "game cart Authentication Manager", "group__SceSblGcAuthMgr.html", "group__SceSblGcAuthMgr" ]
 ];

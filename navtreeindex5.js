@@ -1,5 +1,12 @@
 var NAVTREEINDEX5 =
 {
+"group__SceAudiodecUser.html#gadd90a59f3ef4a41222cdcb0f61a67493":[4,0,1,0,8,36],
+"group__SceAudiodecUser.html#gadd90a59f3ef4a41222cdcb0f61a67493":[1,2,2,0,36],
+"group__SceAudiodecUser.html#gae813022cc07663c7eb6614a1a7363bef":[4,0,1,0,8,43],
+"group__SceAudiodecUser.html#gae813022cc07663c7eb6614a1a7363bef":[1,2,2,0,86],
+"group__SceAudiodecUser.html#gaefd0b7b2050b03ece58d6213cf856880":[4,0,1,0,8,27],
+"group__SceAudiodecUser.html#gaefd0b7b2050b03ece58d6213cf856880":[1,2,2,0,27],
+"group__SceAudiodecUser.html#gaf2c82b74ed29ab4a41d933d7f03bde23":[4,0,1,0,8,34],
 "group__SceAudiodecUser.html#gaf2c82b74ed29ab4a41d933d7f03bde23":[1,2,2,0,34],
 "group__SceAudiodecUser.html#gaf736ac26f0edbd6b111b7c2dbc449446":[4,0,1,0,8,23],
 "group__SceAudiodecUser.html#gaf736ac26f0edbd6b111b7c2dbc449446":[1,2,2,0,23],
@@ -242,12 +249,5 @@ var NAVTREEINDEX5 =
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa63731779aaf847ca9cbe9acae8d4aaa8":[1,2,3,0,34],
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa810e18f2856a6598c69fd7de29dca3eb":[4,0,1,0,9,9,8],
 "group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa810e18f2856a6598c69fd7de29dca3eb":[1,2,3,0,9,8],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa810e18f2856a6598c69fd7de29dca3eb":[1,2,3,0,35],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa94271211db60dfb35e77e34998ea74fe":[4,0,1,0,9,9,4],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa94271211db60dfb35e77e34998ea74fe":[1,2,3,0,9,4],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa94271211db60dfb35e77e34998ea74fe":[1,2,3,0,31],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa956c4cd42e5f29378b6988f3236bbaf9":[4,0,1,0,9,9,5],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa956c4cd42e5f29378b6988f3236bbaf9":[1,2,3,0,9,5],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa956c4cd42e5f29378b6988f3236bbaf9":[1,2,3,0,32],
-"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa9c7afbad44aefbca81a7cdde894f666e":[4,0,1,0,9,9,6]
+"group__SceAudioencUser.html#gga4be944dc9c06556ef45708ab57f0846fa810e18f2856a6598c69fd7de29dca3eb":[1,2,3,0,35]
 };

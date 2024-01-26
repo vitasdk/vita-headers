@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa42be75d10199a9f60e03fb2cd2199578":[1,1,2,0,123],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa42be75d10199a9f60e03fb2cd2199578":[4,0,1,0,15,13,13],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa44c82fd8a7e5379d4414c6c6f9404cca":[1,1,2,0,13,1],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa44c82fd8a7e5379d4414c6c6f9404cca":[1,1,2,0,111],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa44c82fd8a7e5379d4414c6c6f9404cca":[4,0,1,0,15,13,1],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa46cae0f1b9a965dbf0d845054e5585b1":[1,1,2,0,13,2],
+"group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa46cae0f1b9a965dbf0d845054e5585b1":[1,1,2,0,112],
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa46cae0f1b9a965dbf0d845054e5585b1":[4,0,1,0,15,13,2],
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa4bcaf6d1ea72d1c6b7e605eae1123c45":[1,1,2,0,13,10],
 "group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa4bcaf6d1ea72d1c6b7e605eae1123c45":[1,1,2,0,120],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aafe0dcfd17f3eb46869cc353b8bf433dd":[4,0,1,0,17,0,2],
 "group__SceCoredump.html":[1,9,2],
 "group__SceCoredumpKernel.html":[1,9,2,0],
-"group__SceCoredumpKernel.html#ga3d2107d2724d74ba548421380f4e1b08":[4,0,1,2,6,2],
-"group__SceCoredumpKernel.html#ga3d2107d2724d74ba548421380f4e1b08":[1,9,2,0,2],
-"group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b":[4,0,1,2,6,1],
-"group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b":[1,9,2,0,1],
-"group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a":[4,0,1,2,6,0],
-"group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a":[1,9,2,0,0],
-"group__SceCpu.html":[1,7,3],
-"group__SceCpuKernel.html":[1,7,3,1]
+"group__SceCoredumpKernel.html#ga3d2107d2724d74ba548421380f4e1b08":[4,0,1,2,6,2]
 };

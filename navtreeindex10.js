@@ -1,5 +1,12 @@
 var NAVTREEINDEX10 =
 {
+"group__SceCLibUser.html#ga4830ee2ab25aca98bab80c7955b061c5":[4,0,1,0,2,1,35],
+"group__SceCLibUser.html#ga4a7f3c1cb4c534fd05ff69d47b76f3f9":[1,7,2,0,14],
+"group__SceCLibUser.html#ga4a7f3c1cb4c534fd05ff69d47b76f3f9":[4,0,1,0,2,1,14],
+"group__SceCLibUser.html#ga54ae8366cc4cd2dda55b268fbff08932":[1,7,2,0,18],
+"group__SceCLibUser.html#ga54ae8366cc4cd2dda55b268fbff08932":[4,0,1,0,2,1,18],
+"group__SceCLibUser.html#ga5924173d05f406fcb5ddc1e5f53f7ba0":[1,7,2,0,23],
+"group__SceCLibUser.html#ga5924173d05f406fcb5ddc1e5f53f7ba0":[4,0,1,0,2,1,23],
 "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46":[1,7,2,0,5],
 "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46":[4,0,1,0,2,1,5],
 "group__SceCLibUser.html#ga7fd063ce8567a4d02a733d44ceb2c084":[1,7,2,0,34],
@@ -242,12 +249,5 @@ var NAVTREEINDEX10 =
 "group__SceCameraUser.html#gga3d60500b6025253d90cbfc89dcea0e9bab0c5f7c0c896bc7546e0aca360307e15":[4,0,1,0,15,14,1],
 "group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca0d8a7642452ba67dcabae2f3fa33058e":[1,1,2,0,3,0],
 "group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca0d8a7642452ba67dcabae2f3fa33058e":[1,1,2,0,41],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca0d8a7642452ba67dcabae2f3fa33058e":[4,0,1,0,15,3,0],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca1dc9b165cd92ed7a40e10ba0e1e76354":[1,1,2,0,3,5],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca1dc9b165cd92ed7a40e10ba0e1e76354":[1,1,2,0,46],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca1dc9b165cd92ed7a40e10ba0e1e76354":[4,0,1,0,15,3,5],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca3eceb033a04e23e38ef37b54fbe275d7":[1,1,2,0,3,3],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca3eceb033a04e23e38ef37b54fbe275d7":[1,1,2,0,44],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca3eceb033a04e23e38ef37b54fbe275d7":[4,0,1,0,15,3,3],
-"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca49621a59a63819144261cff863b97203":[1,1,2,0,3,4]
+"group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca0d8a7642452ba67dcabae2f3fa33058e":[4,0,1,0,15,3,0]
 };
