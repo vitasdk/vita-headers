@@ -39,6 +39,7 @@
 #include <psp2kern/kernel/dipsw.h>
 #include <psp2kern/kernel/dmac.h>
 #include <psp2kern/kernel/excpmgr.h>
+#include <psp2kern/kernel/gcauthmgr.h>
 #include <psp2kern/kernel/intrmgr.h>
 #include <psp2kern/kernel/iofilemgr.h>
 #include <psp2kern/kernel/modulemgr.h>
