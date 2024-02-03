@@ -109,6 +109,8 @@ Functions</h2></td></tr>
 <tr class="separator:gae689001c51ceb2f0c04d79ffe57b5af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac69b9bbc0b49b4604316383f840c5fab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gac69b9bbc0b49b4604316383f840c5fab">sceClibPrintf</a> (const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
 <tr class="separator:gac69b9bbc0b49b4604316383f840c5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71959ad25db3a1de51397b3c9d472981"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga71959ad25db3a1de51397b3c9d472981">sceClibDprintf</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
+<tr class="separator:ga71959ad25db3a1de51397b3c9d472981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82cc653c251e5b18acefeac69a615b4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga82cc653c251e5b18acefeac69a615b4e">sceClibSnprintf</a> (char *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> dst_max_size, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>,...)</td></tr>
 <tr class="separator:ga82cc653c251e5b18acefeac69a615b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe8dc83427798c3515a30050d02494c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gafe8dc83427798c3515a30050d02494c7">sceClibVsnprintf</a> (char *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> dst_max_size, const char *<a class="el" href="group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34">fmt</a>, va_list args)</td></tr>
@@ -375,6 +377,40 @@ Current memory allocated. </td></tr>
         <tr>
           <td class="memname">int sceClibPrintf </td>
           <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga71959ad25db3a1de51397b3c9d472981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71959ad25db3a1de51397b3c9d472981">&#9670;&nbsp;</a></span>sceClibDprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceClibDprintf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>
         </tr>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"netctl_8h_source.html":[4,0,1,0,3,3],
+"netps_8h.html":[4,0,1,2,13],
 "netps_8h_source.html":[4,0,1,2,13],
 "ngs__internal_8h.html":[4,0,1,0,45],
 "ngs__internal_8h_source.html":[4,0,1,0,45],

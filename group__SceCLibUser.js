@@ -8,6 +8,7 @@ var group__SceCLibUser =
     [ "sceClibTolower", "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46", null ],
     [ "sceClibToupper", "group__SceCLibUser.html#gae689001c51ceb2f0c04d79ffe57b5af7", null ],
     [ "sceClibPrintf", "group__SceCLibUser.html#gac69b9bbc0b49b4604316383f840c5fab", null ],
+    [ "sceClibDprintf", "group__SceCLibUser.html#ga71959ad25db3a1de51397b3c9d472981", null ],
     [ "sceClibSnprintf", "group__SceCLibUser.html#ga82cc653c251e5b18acefeac69a615b4e", null ],
     [ "sceClibVsnprintf", "group__SceCLibUser.html#gafe8dc83427798c3515a30050d02494c7", null ],
     [ "sceClibStrncpy", "group__SceCLibUser.html#ga0128fa4adab370744b9357b481606f0d", null ],
