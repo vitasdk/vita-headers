@@ -44,11 +44,11 @@ char sceClibLookCtypeTable(char ch);
 int sceClibTolower(char ch);
 int sceClibToupper(char ch);
 
-int sceClibPrintf(const char *fmt, ...);
-int sceClibDprintf(SceUID fd, const char *fmt, ...);
+int sceClibPrintf(const char *fmt, ...) __attribute__ ((format (printf, 1, 2)));
+int sceClibDprintf(SceUID fd, const char *fmt, ...) __attribute__ ((format (printf, 2, 3)));
 
-int sceClibSnprintf(char *dst, SceSize dst_max_size, const char *fmt, ...);
-int sceClibVsnprintf(char *dst, SceSize dst_max_size, const char *fmt, va_list args);
+int sceClibSnprintf(char *dst, SceSize dst_max_size, const char *fmt, ...) __attribute__ ((format (printf, 3, 4)));
+int sceClibVsnprintf(char *dst, SceSize dst_max_size, const char *fmt, va_list args) __attribute__ ((format (printf, 3, 0)));
 
 char *sceClibStrncpy(char *dst, const char *src, SceSize len);
 char *sceClibStrncat(char *dst, const char *src, SceSize len);
