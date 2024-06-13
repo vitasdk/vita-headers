@@ -68,7 +68,7 @@ int ksceNpDrmCheckActData(int *act_type, int *version_flag, SceUInt64 *account_i
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceNpDrmGetRifVitaKey(const void *license, void *klicense, int *flags, int *sku_flags, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
+int ksceNpDrmGetRifVitaKey(const SceNpDrmLicense *license, void *klicense, int *flags, int *sku_flags, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
 
 /**
  * Get license key info for a PSP game
@@ -81,7 +81,7 @@ int ksceNpDrmGetRifVitaKey(const void *license, void *klicense, int *flags, int 
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceNpDrmGetRifPspKey(const void *license, void *klicense, int *flags, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
+int ksceNpDrmGetRifPspKey(const SceNpDrmLicense *license, void *klicense, int *flags, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
 
 /**
  * Get license info
@@ -101,7 +101,7 @@ int ksceNpDrmGetRifPspKey(const void *license, void *klicense, int *flags, SceUI
  *
  * @return 0 on success, < 0 on error.
 */
-int ksceNpDrmGetRifInfo(const void *license, SceSize license_size, int check_sign, char *content_id, SceUInt64 *account_id, int *license_version, int *license_flags, int *flags, int *sku_flags, SceInt64 *lic_start_time, SceInt64 *lic_exp_time, SceUInt64 *flags2);
+int ksceNpDrmGetRifInfo(const SceNpDrmLicense *license, SceSize license_size, int check_sign, char *content_id, SceUInt64 *account_id, int *license_version, int *license_flags, int *flags, int *sku_flags, SceInt64 *lic_start_time, SceInt64 *lic_exp_time, SceUInt64 *flags2);
 
 /**
  * Verify a eboot.pbp signature "__sce_ebootpbp"

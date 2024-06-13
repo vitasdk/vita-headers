@@ -7,11 +7,26 @@
 #define _PSP2COMMON_NPDRM_H_
 
 #include <vitasdk/build_utils.h>
+#include <psp2common/kernel/rtc.h>
 #include <psp2common/types.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+typedef struct ScePsmDrmKeySet {
+  SceUInt8 hmac_key[0x20];
+  SceUInt8 key[0x10];
+  SceUInt8 signature[0x1D0];
+} ScePsmDrmKeySet;
+VITASDK_BUILD_ASSERT_EQ(0x200, ScePsmDrmKeySet);
+
+typedef struct ScePsmDrmExpireTime { // size is 0x10
+	SceRtcTick* start_date;
+	SceRtcTick* end_date;
+	int pad[2];
+} ScePsmDrmExpireTime;
+VITASDK_BUILD_ASSERT_EQ(0x10, ScePsmDrmExpireTime);
 
 typedef struct SceNpDrmActivationData { // size is 0x1038
   SceInt16 act_type; 
@@ -31,16 +46,16 @@ typedef struct SceNpDrmActivationData { // size is 0x1038
 VITASDK_BUILD_ASSERT_EQ(0x1038, SceNpDrmActivationData);
 
 typedef struct SceNpDrmLicense { // size is 0x200
-  SceInt16 version;       // -1 VITA, 0 PSP, 1 PSP-VITA
+  SceInt16 version;       // -1 VITA (NPDRM_FREE), 0 PSP, 1 PSP-VITA
   SceInt16 version_flags; // 0, 1
   SceInt16 license_type;  // 1
   SceInt16 license_flags; // 0x400:non-check ecdsa
-  SceUInt64 account_id;
+  SceUInt64 account_id;   // 0x0:NPDRM_FREE
   char content_id[0x30];
   char key_table[0x10];
   char key1[0x10];
-  SceInt64 start_time;
-  SceInt64 expiration_time;
+  SceRtcTick start_time;
+  SceRtcTick expiration_time;
   char ecdsa_signature[0x28];
   SceInt64 flags;
   char key2[0x10];
@@ -62,14 +77,12 @@ typedef struct ScePsmDrmLicense {
   SceUInt64 account_id;
   SceUInt32 unk3;
   SceUInt32 unk4;
-  SceUInt64 start_time;
-  SceUInt64 expiration_time;
+  SceRtcTick start_time;
+  SceRtcTick expiration_time;
   SceUInt8 activation_checksum[0x20];
   char content_id[0x30];
   SceUInt8 unk5[0x80];
-  SceUInt8 unk6[0x20];
-  SceUInt8 key[0x10];
-  SceUInt8 signature[0x1D0];
+  ScePsmDrmKeySet keyset;
   SceUInt8 rsa_signature[0x100];
 } ScePsmDrmLicense;
 VITASDK_BUILD_ASSERT_EQ(0x400, ScePsmDrmLicense);

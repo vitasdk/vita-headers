@@ -63,20 +63,23 @@ int _sceNpDrmCheckActData(int *act_type, int *version_flag, SceUInt64 *account_i
  *
  * @return 0 on success, < 0 on error.
 */
-int _sceNpDrmGetRifNameForInstall(char *rif_name, const void *rif_data, int unk);
+int _sceNpDrmGetRifNameForInstall(char *rif_name, const SceNpDrmLicense *rif_data, int unk);
 
 /**
  * Get PSM rif key
  *
  * @param[in] license_buf - RIF buffer (1024 bytes)
  *
- * @param[out] keydata - Decrypted key data
+ * @param[out] keydata - Decrypted keyset
  *
- * @param[in] flags - Unknown
+ * @param[out] flags - License flags
+ * 
+ * @param[out] exp_time - Expire times output
  * 
  * @return 0 on success, < 0 on error
 */
-int scePsmDrmGetRifKey(const ScePsmDrmLicense *license_buf, char *keydata, int flags);
+int scePsmDrmGetRifKey(const ScePsmDrmLicense *license_buf, ScePsmDrmKeySet *keydata, int* flags, ScePsmDrmExpireTime* exp_time);
+
  
 #ifdef __cplusplus
 }
