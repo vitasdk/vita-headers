@@ -43,10 +43,10 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
 SceUID _vshKernelSearchModuleByName(const char *module_name, const void *buffer);
 
 /**
- * @param[in] id - mount id
- * @param[in] path - mount path
- * @param[in] permission - 1/RO 2/RW
- * @param[in] buf - work buffer
+ * @param[in] id - Partition ID. Known IDs are: 0x200: os0, 0x300: vs0, 0x400: vd0, 0x500: tm0, 0x700: ud0, 0x800: sa0, 0x900: gro0, 0xC00: pd0
+ * @param[in] path - Mount path (optional, can be NULL)
+ * @param[in] permission - 1 for read-only, 2 for read-write
+ * @param[in] buf - Work buffer. Allocate 0x100 and (important!) memset to 0
  *
  * @return 0 >= on success, < 0 on error.
  */
@@ -54,7 +54,7 @@ int _vshIoMount(int id, const char *path, int permission, void *buf);
 
 
 /**
- * @param[in] id - mount id
+ * @param[in] id - Partition ID. Known IDs are: 0x200: os0, 0x300: vs0, 0x400: vd0, 0x500: tm0, 0x700: ud0, 0x800: sa0, 0x900: gro0, 0xC00: pd0
  * @param[in] force - Set to 1 to force umount
  * @param[in] unk2 - Unknown, set 0
  * @param[in] unk3 - Unknown, set 0
