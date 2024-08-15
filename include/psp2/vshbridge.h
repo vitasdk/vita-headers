@@ -67,7 +67,7 @@ SceUID _vshKernelSearchModuleByName(const char *module_name, const void *buffer)
 /**
  * @brief Mount a partition.
  *
- * @param[in] id - Mount ID.
+ * @param[in] id - Mount ID (one of ::SceVshMountId).
  * @param[in] path - Mount path (optional, can be NULL).
  * @param[in] permission - `1` for read-only, `2` for read-write.
  * @param[in] buf - Work buffer. Allocate `0x100` and (important!) fill with `0`.
@@ -83,7 +83,7 @@ int _vshIoMount(SceVshMountId id, const char *path, int permission, void *buf);
  *          you remount them back. For example, FIOS overlays used by the Shell
  *          won't get recreated and would effectively render the Shell unusable
  *
- * @param[in] id - Mount ID.
+ * @param[in] id - Mount ID (one of ::SceVshMountId).
  * @param[in] force - `1` to force unmount, `0` otherwise.
  * @param[in] unk2 - Unknown, set to `0`.
  * @param[in] unk3 - Unknown, set to `0`.
