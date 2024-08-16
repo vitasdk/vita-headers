@@ -104,10 +104,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga97081fbc3a387b72a036236f579dc780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga97081fbc3a387b72a036236f579dc780">_vshKernelSearchModuleByName</a> (const char *module_name, const void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>)</td></tr>
 <tr class="memdesc:ga97081fbc3a387b72a036236f579dc780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a module is loaded.  <a href="group__SceVshBridgeUser.html#ga97081fbc3a387b72a036236f579dc780">More...</a><br /></td></tr>
 <tr class="separator:ga97081fbc3a387b72a036236f579dc780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab437d640375011bed4c7a1a332329ef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#gab437d640375011bed4c7a1a332329ef3">_vshIoMount</a> (int id, const char *path, int permission, void *buf)</td></tr>
-<tr class="separator:gab437d640375011bed4c7a1a332329ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa754c13fd1fa6d1181cc449d2925bfef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#gaa754c13fd1fa6d1181cc449d2925bfef">vshIoUmount</a> (int id, int force, int unk2, int unk3)</td></tr>
-<tr class="separator:gaa754c13fd1fa6d1181cc449d2925bfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d654c39bfa1976ed56518031cc50bfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga7d654c39bfa1976ed56518031cc50bfe">_vshIoMount</a> (<a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a> id, const char *path, int permission, void *buf)</td></tr>
+<tr class="memdesc:ga7d654c39bfa1976ed56518031cc50bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a partition.  <a href="group__SceVshBridgeUser.html#ga7d654c39bfa1976ed56518031cc50bfe">More...</a><br /></td></tr>
+<tr class="separator:ga7d654c39bfa1976ed56518031cc50bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e0a2f0a7c705c565d39227015223191"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga0e0a2f0a7c705c565d39227015223191">vshIoUmount</a> (<a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a> id, int force, int unk2, int unk3)</td></tr>
+<tr class="memdesc:ga0e0a2f0a7c705c565d39227015223191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a partition.  <a href="group__SceVshBridgeUser.html#ga0e0a2f0a7c705c565d39227015223191">More...</a><br /></td></tr>
+<tr class="separator:ga0e0a2f0a7c705c565d39227015223191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae79046cedcbb3a3def18c7146c311902"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#gae79046cedcbb3a3def18c7146c311902">vshIdStorageIsDirty</a> (void)</td></tr>
 <tr class="separator:gae79046cedcbb3a3def18c7146c311902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30ca874c7bd029ef2807525c16d9ddfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#ga30ca874c7bd029ef2807525c16d9ddfb">vshIdStorageIsFormatted</a> (void)</td></tr>
@@ -182,6 +184,42 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa02b3f58a73b07b38474f2a6e6d7f3f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVshBridgeUser.html#gaa02b3f58a73b07b38474f2a6e6d7f3f2">vshMsifGetMsInfo</a> (<a class="el" href="group__SceMsifKernel.html#structSceMsInfo">SceMsInfo</a> *info)</td></tr>
 <tr class="separator:gaa02b3f58a73b07b38474f2a6e6d7f3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga6bf5bd36446fb4500f6b3247d1d4d1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6bf5bd36446fb4500f6b3247d1d4d1dd">&#9670;&nbsp;</a></span>SceVshMountId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda2119c5ac15f325971aaa78ba0596148c"></a>SCE_VSH_MOUNT_SD0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda0e7318f26563d8261c74984c12b648f3"></a>SCE_VSH_MOUNT_OS0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1ddaf0a6445a9822a71655253120afc49e68"></a>SCE_VSH_MOUNT_VS0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda6bd238b58b2d538976d767125bd3e15d"></a>SCE_VSH_MOUNT_VD0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda2628b1ddd21c3358480110eb73392a66"></a>SCE_VSH_MOUNT_TM0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1ddade437461061474c3109a463a9dbe641e"></a>SCE_VSH_MOUNT_UR0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda117ce30f2bf756e029de6a29efa8663a"></a>SCE_VSH_MOUNT_UD0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1ddacde0d9e34f3a213deb0d3af8d3d8ab2f"></a>SCE_VSH_MOUNT_UX0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda5feeaa79d5b8fad44574008f35548562"></a>SCE_VSH_MOUNT_GRO0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1ddada6a0fffec47f330a40b543d55fb31b3"></a>SCE_VSH_MOUNT_GRW0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda6bd22df15b5481d2e34ec5053e1b910f"></a>SCE_VSH_MOUNT_SA0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda71d73c690c54160eb7458ab3148971ce"></a>SCE_VSH_MOUNT_PD0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda841be474b1f4e572174277215688d10e"></a>SCE_VSH_MOUNT_IMC0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda112605adfa1bcfb90c5996a9f0ed0195"></a>SCE_VSH_MOUNT_XMC0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda53adcad607f43eb1e66e86b17b695fca"></a>SCE_VSH_MOUNT_UMA0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda3b8f2ddb835850866c983c8e39fbd81c"></a>SCE_VSH_MOUNT_LMA0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda47463f4df6c17eb1ee0e669568a47672"></a>SCE_VSH_MOUNT_LMB0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda45d7d82eb54258bdb21b0d974542f8d2"></a>SCE_VSH_MOUNT_MFA0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bf5bd36446fb4500f6b3247d1d4d1dda170553e3dc8f58a9e6d0ac59c71fef6d"></a>SCE_VSH_MOUNT_MFB0&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga252fa5f8c9e461bd50d634937608f762"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga252fa5f8c9e461bd50d634937608f762">&#9670;&nbsp;</a></span>_vshSblGetSystemSwVersion()</h2>
@@ -292,8 +330,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab437d640375011bed4c7a1a332329ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab437d640375011bed4c7a1a332329ef3">&#9670;&nbsp;</a></span>_vshIoMount()</h2>
+<a id="ga7d654c39bfa1976ed56518031cc50bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d654c39bfa1976ed56518031cc50bfe">&#9670;&nbsp;</a></span>_vshIoMount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +339,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int _vshIoMount </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -329,21 +367,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Mount a partition. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- mount id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- mount path </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">permission</td><td>- 1/RO 2/RW </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- work buffer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Mount ID (one of <a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Mount path (optional, can be NULL). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">permission</td><td>- <code>1</code> for read-only, <code>2</code> for read-write. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- Work buffer. Allocate <code>0x100</code> and (important!) fill with <code>0</code>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 &gt;= on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>&gt;= 0</code> on success, <code>&lt; 0</code> on error. </dd></dl>
 
 </div>
 </div>
-<a id="gaa754c13fd1fa6d1181cc449d2925bfef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa754c13fd1fa6d1181cc449d2925bfef">&#9670;&nbsp;</a></span>vshIoUmount()</h2>
+<a id="ga0e0a2f0a7c705c565d39227015223191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e0a2f0a7c705c565d39227015223191">&#9670;&nbsp;</a></span>vshIoUmount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +391,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int vshIoUmount </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -379,16 +419,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Unmount a partition. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Unmounting system partitions can cause system instability, even if you remount them back. For example, FIOS overlays used by the Shell won't get recreated and would effectively render the Shell unusable</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- mount id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>- Set to 1 to force umount </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk2</td><td>- Unknown, set 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk3</td><td>- Unknown, set 0</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Mount ID (one of <a class="el" href="group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd">SceVshMountId</a>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>- <code>1</code> to force unmount, <code>0</code> otherwise. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk2</td><td>- Unknown, set to <code>0</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unk3</td><td>- Unknown, set to <code>0</code>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 &gt;= on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>&gt;= 0</code> on success, <code>&lt; 0</code> on error. </dd></dl>
 
 </div>
 </div>

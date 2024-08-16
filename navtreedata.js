@@ -142,7 +142,8 @@ var NAVTREEINDEX =
 "group__SceUsbdKernel.html#gacb82a22dbcf7f4dd86b39089b835e158",
 "group__SceUsbdUser.html#ga96a1fbf977082e077ea01135647aa4fe",
 "group__SceVideoDecUser.html#ggacab7dff1511b1a3851ffeec15fb9d3eaae73da9fe1bce1e527999f1372a39e6a9",
-"net__syscalls_8h_source.html"
+"kernel_2dmac_8h.html",
+"suspend_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
