@@ -14,6 +14,28 @@
 extern "C" {
 #endif
 
+typedef enum SceVshMountId {
+    SCE_VSH_MOUNT_SD0  = 0x00100,
+    SCE_VSH_MOUNT_OS0  = 0x00200,
+    SCE_VSH_MOUNT_VS0  = 0x00300,
+    SCE_VSH_MOUNT_VD0  = 0x00400,
+    SCE_VSH_MOUNT_TM0  = 0x00500,
+    SCE_VSH_MOUNT_UR0  = 0x00600,
+    SCE_VSH_MOUNT_UD0  = 0x00700,
+    SCE_VSH_MOUNT_UX0  = 0x00800,
+    SCE_VSH_MOUNT_GRO0 = 0x00900,
+    SCE_VSH_MOUNT_GRW0 = 0x00A00,
+    SCE_VSH_MOUNT_SA0  = 0x00B00,
+    SCE_VSH_MOUNT_PD0  = 0x00C00,
+    SCE_VSH_MOUNT_IMC0 = 0x00D00,
+    SCE_VSH_MOUNT_XMC0 = 0x00E00,
+    SCE_VSH_MOUNT_UMA0 = 0x00F00,
+    SCE_VSH_MOUNT_LMA0 = 0x10000,
+    SCE_VSH_MOUNT_LMB0 = 0x20000,
+    SCE_VSH_MOUNT_MFA0 = 0x50000,
+    SCE_VSH_MOUNT_MFB0 = 0x60000,
+} SceVshMountId;
+
 /**
  * Gets real system firmware information.
  *
@@ -43,25 +65,32 @@ int _vshSblAimgrGetConsoleId(char CID[32]);
 SceUID _vshKernelSearchModuleByName(const char *module_name, const void *buffer);
 
 /**
- * @param[in] id - mount id
- * @param[in] path - mount path
- * @param[in] permission - 1/RO 2/RW
- * @param[in] buf - work buffer
+ * @brief Mount a partition.
  *
- * @return 0 >= on success, < 0 on error.
+ * @param[in] id - Mount ID (one of ::SceVshMountId).
+ * @param[in] path - Mount path (optional, can be NULL).
+ * @param[in] permission - `1` for read-only, `2` for read-write.
+ * @param[in] buf - Work buffer. Allocate `0x100` and (important!) fill with `0`.
+ *
+ * @return `>= 0` on success, `< 0` on error.
  */
-int _vshIoMount(int id, const char *path, int permission, void *buf);
-
+int _vshIoMount(SceVshMountId id, const char *path, int permission, void *buf);
 
 /**
- * @param[in] id - mount id
- * @param[in] force - Set to 1 to force umount
- * @param[in] unk2 - Unknown, set 0
- * @param[in] unk3 - Unknown, set 0
+ * @brief Unmount a partition.
  *
- * @return 0 >= on success, < 0 on error.
+ * @warning Unmounting system partitions can cause system instability, even if
+ *          you remount them back. For example, FIOS overlays used by the Shell
+ *          won't get recreated and would effectively render the Shell unusable
+ *
+ * @param[in] id - Mount ID (one of ::SceVshMountId).
+ * @param[in] force - `1` to force unmount, `0` otherwise.
+ * @param[in] unk2 - Unknown, set to `0`.
+ * @param[in] unk3 - Unknown, set to `0`.
+ *
+ * @return `>= 0` on success, `< 0` on error.
  */
-int vshIoUmount(int id, int force, int unk2, int unk3);
+int vshIoUmount(SceVshMountId id, int force, int unk2, int unk3);
 
 int vshIdStorageIsDirty(void);
 int vshIdStorageIsFormatted(void);
