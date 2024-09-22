@@ -62,26 +62,6 @@ char *sce_paf_strrchr(const char *s, int ch);
 double sce_paf_strtod(const char *nptr, char **endptr);
 
 
-#define sce_paf_private_bcmp(__ptr1__, __ptr2__, __num__)             sce_paf_bcmp((__ptr1__), (__ptr2__), (__num__))
-#define sce_paf_private_bcopy(__dst__, __src__, __n__)                sce_paf_bcopy((__dst__), (__src__), (__n__))
-#define sce_paf_private_bzero(__dst__, __n__)                         sce_paf_bzero((__dst__), (__n__))
-#define sce_paf_private_memchr(__src__, __ch__, __length__)           sce_paf_memchr((__src__), (__ch__), (__length__))
-#define sce_paf_private_memcmp(__s1__, __s2__, __n__)                 sce_paf_memcmp((__s1__), (__s2__), (__n__))
-#define sce_paf_private_memcpy(__dst__, __src__, __len__)             sce_paf_memcpy((__dst__), (__src__), (__len__))
-#define sce_paf_private_memmove(__dst__, __src__, __len__)            sce_paf_memmove((__dst__), (__src__), (__len__))
-#define sce_paf_private_memset(__dst__, __ch__, __len__)              sce_paf_memset((__dst__), (__ch__), (__len__))
-#define sce_paf_private_snprintf                                      sce_paf_snprintf
-#define sce_paf_private_vsnprintf(__dst__, __max__, __fmt__, __arg__) sce_paf_vsnprintf((__dst__), (__max__), (__fmt__), (__arg__))
-#define sce_paf_private_strchr(__s__, __ch__)                         sce_paf_strchr((__s__), (__ch__))
-#define sce_paf_private_strcmp(__s1__, __s2__)                        sce_paf_strcmp((__s1__), (__s2__))
-#define sce_paf_private_strlen(__s__)                                 sce_paf_strlen((__s__))
-#define sce_paf_private_strcasecmp(__s1__, __s2__)                    sce_paf_strcasecmp((__s1__), (__s2__))
-#define sce_paf_private_strncasecmp(__s1__, __s2__, __len__)          sce_paf_strncasecmp((__s1__), (__s2__), (__len__))
-#define sce_paf_private_strncmp(__s1__, __s2__, __len__)              sce_paf_strncmp((__s1__), (__s2__), (__len__))
-#define sce_paf_private_strncpy(__dst__, __src__, __len__)            sce_paf_strncpy((__dst__), (__src__), (__len__))
-#define sce_paf_private_strrchr(__s__, __ch__)                        sce_paf_strrchr((__s__), (__ch__))
-
-
 #ifdef __cplusplus
 }
 #endif
