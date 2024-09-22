@@ -55,19 +55,6 @@ VITASDK_BUILD_ASSERT_EQ(4, ScePowerCallbackType);
 typedef void (*ScePowerCallback)(int notifyId, int notifyCount, int powerInfo, void* userData);
 
 
-/* For backwards compatibility */
-
-#ifdef _PSP2_POWER_H_
-#define SCE_POWER_CB_SUSPENDING (SCE_POWER_CB_APP_SUSPEND)
-#define SCE_POWER_CB_RESUMING   (SCE_POWER_CB_APP_RESUMING)
-#endif
-
-#ifdef _PSP2KERN_POWER_H_
-#define SCE_POWER_CB_SUSPENDING (SCE_POWER_CB_SYSTEM_SUSPEND)
-#define SCE_POWER_CB_RESUMING   (SCE_POWER_CB_SYSTEM_RESUMING)
-#endif
-
-
 #ifdef __cplusplus
 }
 #endif
