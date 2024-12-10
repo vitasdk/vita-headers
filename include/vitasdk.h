@@ -104,6 +104,7 @@
 #include <psp2/kernel/sysmem.h>
 #include <psp2/kernel/threadmgr.h>
 
+#include <psp2/net/adhoc_matching.h>
 #include <psp2/net/http.h>
 #include <psp2/net/net.h>
 #include <psp2/net/net_syscalls.h>
