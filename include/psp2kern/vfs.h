@@ -32,39 +32,39 @@ typedef struct SceVopTable SceVopTable;
  * VFS Info defining a VFS Implementation
  */
 typedef struct SceVfsInfo {
-    SceVfsOpTable *vfsOps;    //!< VFS Implementation operations for mountpoint actions.
-    char *vfsName;            //!< Name of the VFS implementation (Must be unique, used to identify the VFS)
-    SceSize vfsNameLen;       //!< Length of vfsName plus null-terminator
-    
-    SceUInt32 refCount;       //!< Internal use only
-    SceUInt32 type;           //!< One of SCE_VFS_TYPE_*
-    
-    SceVopTable *defaultVops; //!< Default vop table for the vnodes
-    void *vfsData;            //!< Optional data that can be passed to the vfs_init callback
-    
-    struct SceVfsInfo *next;  //!< Internal use only
+	SceVfsOpTable *vfs_ops;    //!< VFS Implementation operations for mountpoint actions.
+	char *vfs_name;            //!< Name of the VFS implementation (Must be unique, used to identify the VFS)
+	SceSize vfs_name_len;       //!< Length of vfs_name plus null-terminator
+
+	SceUInt32 ref_count;       //!< Internal use only
+	SceUInt32 type;           //!< One of SCE_VFS_TYPE_*
+
+	SceVopTable *default_vops; //!< Default vop table for the vnodes
+	void *vfs_data;            //!< Optional data that can be passed to the vfs_init callback
+
+	struct SceVfsInfo *next;  //!< Internal use only
 } SceVfsInfo;
 
 /**
  * VFS Path for vnode
  * 
- * @note The paths used internally are root based paths, not mountpoint based.
+ * @note These paths used internally are root based paths, not mountpoint based.
  */
 typedef struct SceVfsPath {
-    char *name;         //!< Name of vnode
-    SceSize nameLength; //!< Length of name
-    char *path;         //!< Full path name is from
+	char *name;         //!< Name of vnode
+	SceSize name_length; //!< Length of name
+	char *path;         //!< Full path name is from
 } SceVfsPath;
 
 /**
  * Mountpoint Data
  */
 typedef struct SceVfsMountData {
-    char *assignName;          //!< Assigned name for the mount point. Must end with ':', typically in format '<mnt>0:'
-    char *fsName;              //!< Name of the FS being mounted.
-    char *blockdevName;        //!< Path to the block device
-    char *blockdevNameNoPart;  //!< Path to the block device without a partition specified (used as a fallback if blockdevName isn't found)
-    SceUInt32 mntId;           //!< Mountpoint ID (example: 0xF00 for uma0:)
+	char *assign_name;           //!< Assigned name for the mount point. Must end with ':', typically in format '<mnt>0:'
+	char *fs_name;               //!< Name of the FS being mounted.
+	char *blockdev_name;         //!< Path to the block device
+	char *blockdev_name_no_part; //!< Path to the block device without a partition specified (used as a fallback if blockdev_name isn't found)
+	SceUInt32 mnt_id;            //!< Mountpoint ID (example: 0xF00 for uma0:)
 } SceVfsMountData;
 
 #define SCE_VFS_FS_TYPE_FS      (0x01) //!< All exfat mounts
@@ -94,46 +94,46 @@ typedef struct SceVfsMountData {
 #define SCE_VFS_MOUNT_FLAG_NO_RECLAIM   (0x00100000) //!< Prevents Vnodes from being reclaimed. Only set internally for devfs 
 
 typedef struct SceVfsMount {
-    SceKernelFastMutex fastMutex;
+	SceKernelFastMutex fast_mutex;
 
-    SceVfsVnode *mntVnode;
-    
-    SceUID allocator;
-    
-    SceUInt32 state;
-    SceUInt8 fsType;    //!< One of SCE_VFS_FS_TYPE_*
-    SceUInt16 opt;
-    SceUInt32 mntFlags; //!< ORed together SCE_VFS_MOUNT_FLAG_* flags
-    
-    SceVfsVnode *vnodeList;
-    SceUInt32 vnodeNum;
-    
-    SceVfsInfo *mntVfsInf;
-    SceUInt32 mntRefCount;
-    
-    SceUInt32 openedEntryNum;
-    SceUInt32 availableEntryNum;
-    
-    SceUID pid;
-    
-    SceVfsMount *mntedOnList;
-    SceVfsMount *mntedOnListPrev;
-    SceVfsMount *mntListNext;
-    
-    SceVfsMountData *mntData;
-    char path[64];
+	SceVfsVnode *mnt_vnode;
 
-    SceUInt32 defaultIoCacheSize;
-    
-    void *pData;  //!< VFS Implementation defined mount point data.
-    
-    struct FdLock *pFdLock;
-    struct Fumount *pFumount;
+	SceUID allocator;
 
-    SceUInt32 opaque[4];  // Backing storage for pFdLock
-    SceUInt32 opaque2[4]; // Backing storage for pFumount
-    
-    SceUInt8 padding[16];
+	SceUInt32 state;
+	SceUInt8 fs_type;    //!< One of SCE_VFS_FS_TYPE_*
+	SceUInt16 opt;
+	SceUInt32 mnt_flags; //!< ORed together SCE_VFS_MOUNT_FLAG_* flags
+
+	SceVfsVnode *vnode_list;
+	SceUInt32 vnode_num;
+
+	SceVfsInfo *mnt_vfs_inf;
+	SceUInt32 mnt_ref_count;
+
+	SceUInt32 opened_entry_num;
+	SceUInt32 available_entry_num;
+
+	SceUID pid;
+
+	SceVfsMount *mnted_on_list;
+	SceVfsMount *mnted_on_list_prev;
+	SceVfsMount *mnt_list_next;
+
+	SceVfsMountData *mnt_data;
+	char path[64];
+
+	SceUInt32 default_io_cache_size;
+
+	void *data;  //!< VFS Implementation defined mount point data.
+
+	struct FdLock *fd_lock;
+	struct Fumount *fumount;
+
+	SceUInt32 opaque[4];  // Backing storage for pFdLock
+	SceUInt32 opaque2[4]; // Backing storage for pFumount
+
+	SceUInt8 padding[16];
 } SceVfsMount;
 
 #define SCE_VNODE_TYPE_REG     (0x00000001) //!< Regular file
@@ -161,59 +161,59 @@ typedef struct SceVfsMount {
  * directory which has been looked-up or accessed.
  */
 typedef struct SceVfsVnode {
-    struct { // vdlock?
-        SceUInt32 waiter;
-        SceUID ownerId;
-        SceUInt32 recursiveCount;
-        SceUID waitId;
-        SceUInt32 waitPattern;
-    };
+	struct {
+		SceUInt32 waiter;
+		SceUID owner_id;
+		SceUInt32 recursive_count;
+		SceUID wait_id;
+		SceUInt32 wait_pattern;
+	} vdlock;
 
-    SceUInt8 padding[44];
+	SceUInt8 padding[44];
 
-    struct {  
-        SceVopTable *ops;
-        
-        SceUInt32 nodeInf; //!< Field for private VFS vnode info
-        void *nodeData;    //!< Pointer for private VFS data
-        
-        SceVfsMount *mnt;
-        
-        SceVfsVnode *dd;   //!<  Parent vnode
-        SceVfsVnode *next;
-        
-        SceUInt32 refCount;
-        
-        struct BuffCache *bc;
+	struct {  
+		SceVopTable *ops;
 
-        SceUInt32 fid[2];
-        struct Flock *flock;
+		SceUInt32 node_inf; //!< Field for private VFS vnode info
+		void *node_data;    //!< Pointer for private VFS data
 
-        SceUID allocator;
-        
-        struct Ncache *ncache;
+		SceVfsMount *mnt;
 
-        SceUInt32 state; //!< One of SCE_VNODE_STATE_*
-        SceUInt32 type;  //!< ORed together SCE_VNODE_TYPE_* flags
-        
-        SceVopTable *vop_tbl; //!< Internal use only
-        
-        SceUInt64 size;
-        SceUInt32 aclData[2]; //!< Typically holds st_attr in aclData[0]
+		SceVfsVnode *dd;   //!<  Parent vnode
+		SceVfsVnode *next;
 
-        SceVfsFile *fdList;
-        SceUInt32 fdNum;
-        
-        SceVfsVnode *linkTo;
-        SceUInt32 linkedNum;
-        
-        SceUInt8 unused[48];
-        
-        SceUInt32 mntOpt;
-        SceUInt32 unk_0xd4;
-    };
+		SceUInt32 ref_count;
 
-    SceUInt8 padding2[40];
+		struct BuffCache *bc;
+
+		SceUInt32 fid[2];
+		struct Flock *flock;
+
+		SceUID allocator;
+
+		struct Ncache *ncache;
+
+		SceUInt32 state; //!< One of SCE_VNODE_STATE_*
+		SceUInt32 type;  //!< ORed together SCE_VNODE_TYPE_* flags
+
+		SceVopTable *vop_tbl; //!< Internal use only
+
+		SceUInt64 size;
+		SceUInt32 acl_data[2]; //!< Typically holds st_attr in acl_data[0]
+
+		SceVfsFile *fd_list;
+		SceUInt32 fd_num;
+
+		SceVfsVnode *link_to;
+		SceUInt32 linked_num;
+
+		SceUInt8 unused[48];
+
+		SceUInt32 mnt_opt;
+		SceUInt32 unk_0xd4;
+	} core;
+
+	SceUInt8 padding2[40];
 } SceVfsVnode;
 
 #define SCE_VFS_FILE_STATE_OPEN   (0x00000001) //!< File is open
@@ -227,30 +227,30 @@ typedef struct SceVfsVnode {
  * The file structure is contained within the SceUIDVfsFileObject structure, and represents file handles in the VFS.
  */
 typedef struct SceVfsFile {
-    SceUInt32 isDir;
-    SceUInt32 flags;
+	SceUInt32 is_dir;
+	SceUInt32 flags;
 
-    SceOff position;
+	SceOff position;
 
-    SceUInt32 state;
-    SceUID pid;
-    
-    SceVfsVnode *vp;
-    SceVfsFile *next;
-    
-    SceUInt32 fd;
-    SceUInt16 flockBusyCount;
-    
-    SceUInt8 isLocked;
-    SceUInt8 hasFlockEnt;
-    
-    struct FdLock *fdLock;
-    
-    SceUInt32 idata;
-    
-    struct DebugPath *debugPath; 
-    
-    SceUInt32 ioSchedData[3];
+	SceUInt32 state;
+	SceUID pid;
+
+	SceVfsVnode *vp;
+	SceVfsFile *next;
+
+	SceUInt32 fd; //!< File descriptor provided and used by VFS implementation
+	SceUInt16 flock_busy_count;
+
+	SceUInt8 is_locked;
+	SceUInt8 has_flock_ent;
+
+	struct FdLock *fd_lock;
+
+	SceUInt32 idata;
+
+	struct DebugPath *debug_path; 
+
+	SceUInt32 ioSchedData[3];
 } SceVfsFile;
 /** @} */
 
@@ -260,7 +260,7 @@ typedef struct SceVfsFile {
 /** @{ */
 typedef struct SceVfsOpMountArgs {
 	SceVfsMount *mnt;
-	SceVfsPath *devFilePath;
+	SceVfsPath *dev_file_path; //!< Path to the device file.
 } SceVfsOpMountArgs;
 
 typedef struct SceVfsOpUmountArgs {
@@ -286,21 +286,21 @@ typedef struct SceVfsOpSyncArgs {
 } SceVfsOpSyncArgs;
 
 typedef struct SceVfsOpInitArgs {
-	SceVfsInfo *vfsInf;
+	SceVfsInfo *vfs_inf;
 } SceVfsOpInitArgs;
 
 typedef struct SceVfsOpFiniArgs {
-    SceVfsInfo *vfsInf;
+	SceVfsInfo *vfs_inf;
 } SceVfsOpFiniArgs;
 
 typedef struct SceVfsOpDevctlArg {
 	SceVfsMount *mnt;
 	const char *dev;
 	unsigned int cmd;
-    const void *arg;
-    SceSize argLen;
-    void *buf;
-    SceSize bufLen;
+	const void *arg;
+	SceSize arg_len;
+	void *buf;
+	SceSize buf_len;
 } SceVfsOpDevctlArg;
 
 typedef struct SceVfsOpDecodePathElemArgs { 
@@ -309,30 +309,29 @@ typedef struct SceVfsOpDecodePathElemArgs {
 	const char **path2;    // path + something
 	const char **path3;    // path3 + *decodeLen
 	char *buf;             
-	SceSize bufLen;      
-	SceSize *decodeLen;  // out
+	SceSize buf_len;      
+	SceSize *decode_len;  // out
 } SceVfsOpDecodePathElemArgs;
 
-typedef struct SceVfsOpTable
-{
-    int (*vfs_mount)(SceVfsOpMountArgs *argp);
-    int (*vfs_umount)(SceVfsOpUmountArgs *argp);
-    int (*vfs_set_root)(SceVfsOpSetRootArgs *argp);
-    int (*vfs_get_root)(SceVfsOpGetRootArgs *argp);
+typedef struct SceVfsOpTable {
+	int (*vfs_mount)(SceVfsOpMountArgs *argp);
+	int (*vfs_umount)(SceVfsOpUmountArgs *argp);
+	int (*vfs_set_root)(SceVfsOpSetRootArgs *argp);
+	int (*vfs_get_root)(SceVfsOpGetRootArgs *argp);
 
-    void *reserved[2]; // Unused
+	void *reserved[2]; // Unused
 
-    int (*vfs_sync)(SceVfsOpSyncArgs *argp);
+	int (*vfs_sync)(SceVfsOpSyncArgs *argp);
 
-    void *reserved2; // Unused
+	void *reserved2; // Unused
 
-    int (*vfs_init)(SceVfsOpInitArgs *argp);
-    int (*vfs_fini)(SceVfsOpFiniArgs *argp);
+	int (*vfs_init)(SceVfsOpInitArgs *argp);
+	int (*vfs_fini)(SceVfsOpFiniArgs *argp);
 
-    void *reserved3; // Unused
+	void *reserved3; // Unused
 
-    int (*vfs_devctl)(SceVfsOpDevctlArg *arg);
-    int (*vfs_decode_path_elem)(SceVfsOpDecodePathElemArgs *argp);
+	int (*vfs_devctl)(SceVfsOpDevctlArg *arg);
+	int (*vfs_decode_path_elem)(SceVfsOpDecodePathElemArgs *argp);
 } SceVfsOpTable;
 /** @} */
 
@@ -391,11 +390,11 @@ typedef struct SceVopLseekArgs {
 typedef struct SceVopIoctlArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
-    int cmd;
-    const void *inData;
-    SceSize inLen;
-    void *outData;
-    SceSize outLen;
+	int cmd;
+	const void *in_data;
+	SceSize in_len;
+	void *out_data;
+	SceSize out_len;
 } SceVopIoctlArgs;
 
 typedef struct SceVopRemoveArgs {
@@ -449,7 +448,7 @@ typedef struct SceVopChstatArgs {
 } SceVopChstatArgs;
 
 typedef struct SceVopFchstatArgs {
-	SceVfsVnode *pNode;
+	SceVfsVnode *vp;
 	SceVfsFile *file;
 	SceIoStat *stat;
 	SceUInt32 bit;
@@ -484,33 +483,33 @@ typedef struct SceVopSyncArgs {
 typedef struct SceVopRenameArgs {
 	SceVfsVnode *odvp;
 	SceVfsVnode *ovp;
-	SceVfsPath *oldPath;
+	SceVfsPath *old_path;
 	SceVfsVnode *ndvp;
 	SceVfsVnode **nvpp;
-	SceVfsPath *newPath;
+	SceVfsPath *new_path;
 } SceVopRenameArgs;
 
 typedef struct SceVopPreadArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
-    void *buf;
-    SceSize nbyte;
-    SceOff offset;
+	void *buf;
+	SceSize nbyte;
+	SceOff offset;
 } SceVopPreadArgs;
 
 typedef struct SceVopPwriteArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
-    const void *buf;
-    SceSize nbyte;
-    SceOff offset;
+	const void *buf;
+	SceSize nbyte;
+	SceOff offset;
 } SceVopPwriteArgs;
 
 typedef struct SceVopWhiteoutArgs {
 	SceVfsVnode *dvp;
 	SceVfsVnode *vp;
-	SceVfsPath *oldPath;
-	SceVfsPath *newPath;
+	SceVfsPath *old_path;
+	SceVfsPath *new_path;
 } SceVopWhiteoutArgs;
 
 typedef struct SceVopCleanupArgs {
@@ -520,55 +519,54 @@ typedef struct SceVopCleanupArgs {
 
 typedef struct SceVopZerofillArgs {
 	SceVfsVnode *vp;
-    SceUInt64 unk;
-    SceUInt64 unk1;
-    SceUInt64 unk2;
+	SceUInt64 unk;
+	SceUInt64 unk1;
+	SceUInt64 unk2;
 } SceVopZerofillArgs;
 
-typedef struct SceVopTable
-{
-    int (*vop_open)(SceVopOpenArgs *argp);
-    int (*vop_create)(SceVopCreateArgs *argp);
-    int (*vop_close)(SceVopCloseArgs *argp);
-    int (*vop_lookup)(SceVopLookupArgs *argp);
+typedef struct SceVopTable {
+	int (*vop_open)(SceVopOpenArgs *argp);
+	int (*vop_create)(SceVopCreateArgs *argp);
+	int (*vop_close)(SceVopCloseArgs *argp);
+	int (*vop_lookup)(SceVopLookupArgs *argp);
 
-    SceSSize (*vop_read)(SceVopReadArgs *argp);
-    SceSSize (*vop_write)(SceVopWriteArgs *argp);
-    SceOff (*vop_lseek)(SceVopLseekArgs *argp);
+	SceSSize (*vop_read)(SceVopReadArgs *argp);
+	SceSSize (*vop_write)(SceVopWriteArgs *argp);
+	SceOff (*vop_lseek)(SceVopLseekArgs *argp);
 
-    int (*vop_ioctl)(SceVopIoctlArgs *argp);
+	int (*vop_ioctl)(SceVopIoctlArgs *argp);
 
-    int (*vop_remove)(SceVopRemoveArgs *argp);
+	int (*vop_remove)(SceVopRemoveArgs *argp);
 
-    int (*vop_mkdir)(SceVopMkdirArgs *argp);
-    int (*vop_rmdir)(SceVopRmdirArgs *argp);
+	int (*vop_mkdir)(SceVopMkdirArgs *argp);
+	int (*vop_rmdir)(SceVopRmdirArgs *argp);
 
-    int (*vop_dopen)(SceVopDopenAgrs *argp);
-    int (*vop_dclose)(SceVopDcloseArgs *argp);
-    int (*vop_dread)(SceVopDreadArgs *argp);
+	int (*vop_dopen)(SceVopDopenAgrs *argp);
+	int (*vop_dclose)(SceVopDcloseArgs *argp);
+	int (*vop_dread)(SceVopDreadArgs *argp);
 
-    int (*vop_getstat)(SceVopGetstatArgs *argp);
-    int (*vop_chstat)(SceVopChstatArgs *argp);
+	int (*vop_getstat)(SceVopGetstatArgs *argp);
+	int (*vop_chstat)(SceVopChstatArgs *argp);
 
-    int (*vop_rename)(SceVopRenameArgs *argp);
+	int (*vop_rename)(SceVopRenameArgs *argp);
 
-    const void *reserved; // Unused
+	const void *reserved; // Unused
 
-    SceSSize (*vop_pread)(SceVopPreadArgs *argp);
-    SceSSize (*vop_pwrite)(SceVopPwriteArgs *argp);
+	SceSSize (*vop_pread)(SceVopPreadArgs *argp);
+	SceSSize (*vop_pwrite)(SceVopPwriteArgs *argp);
 
-    int (*vop_inactive)(SceVopInactiveArgs *argp);
-    int (*vop_link)(SceVopLinkArgs *argp);
-    int (*vop_unlink)(SceVopUnlinkArgs *argp);
+	int (*vop_inactive)(SceVopInactiveArgs *argp);
+	int (*vop_link)(SceVopLinkArgs *argp);
+	int (*vop_unlink)(SceVopUnlinkArgs *argp);
 
-    int (*vop_sync)(SceVopSyncArgs *argp);
+	int (*vop_sync)(SceVopSyncArgs *argp);
 
-    int (*vop_fgetstat)(SceVopFgetstatArgs *argp);
-    int (*vop_fchstat)(SceVopFchstatArgs *argp);
+	int (*vop_fgetstat)(SceVopFgetstatArgs *argp);
+	int (*vop_fchstat)(SceVopFchstatArgs *argp);
 
-    int (*vop_whiteout)(SceVopWhiteoutArgs *argp);
-    int (*vop_cleanup)(SceVopCleanupArgs *argp);
-    int (*vop_verofill)(SceVopZerofillArgs *argp);
+	int (*vop_whiteout)(SceVopWhiteoutArgs *argp);
+	int (*vop_cleanup)(SceVopCleanupArgs *argp);
+	int (*vop_verofill)(SceVopZerofillArgs *argp);
 } SceVopTable;
 /** @} */
 
@@ -580,20 +578,20 @@ typedef struct SceVopTable
  * Parameters for vfsMount and vfsMountForPFS
  */
 typedef struct SceVfsMountParam {
-    char *rootPath;       //!< This is the internal root path of the mountpoint. (example: /ux/exfat for ux0:)
-    char *blockdevName;   //!< Overrides blockdevName in misc->blockdevName
+	char *root_path;       //!< This is the internal root path of the mountpoint. (example: /ux/exfat for ux0:)
+	char *blockdev_name;   //!< Overrides blockdevName in misc->blockdevName
 
-    SceUInt8 fsType;      //!< One of SCE_VFS_FS_TYPE_*
-    SceUInt16 opt;        //!< Used to identify the IO Scheduler queue to use for the mountpoint
-    SceUInt32 mntFlags;   //!< ORed together SCE_VFS_MOUNT_FLAG_* flags
+	SceUInt8 fs_type;      //!< One of SCE_VFS_FS_TYPE_*
+	SceUInt16 opt;         //!< Used to identify the IO Scheduler queue to use for the mountpoint
+	SceUInt32 mnt_flags;   //!< ORed together SCE_VFS_MOUNT_FLAG_* flags
 
-    char *vfsName;        //!< Name of the VFS to use for the mountpoint
+	char *vfs_name;        //!< Name of the VFS to use for the mountpoint
 
-    void *pData;          //!< To be passed to the created mountpoint
+	void *data;            //!< To be passed to the created mountpoint
 
-    SceVfsMountData *misc;
+	SceVfsMountData *misc;
 
-    SceVopTable *vops;    //!< Overrides defaultVops in the VFS Info for the root vnode of the VFS
+	SceVopTable *vops;     //!< Overrides defaultVops in the VFS Info for the root vnode of the VFS
 } SceVfsMountParam;
 
 #define SCE_VFS_UMOUNT_FLAG_FORCE (0x1) //!< Force unmount
@@ -602,27 +600,27 @@ typedef struct SceVfsMountParam {
  * Parameters for vfsUmount and vfsUmountForPFS
  */
 typedef struct SceVfsUmountParam {
-    char *assignName; //!< Assigned name of the mountpoint to unmount
-    int flag;         //!< One of SCE_VFS_UMOUNT_FLAG_*
+	char *assign_name; //!< Assigned name of the mountpoint to unmount
+	int flag;         //!< One of SCE_VFS_UMOUNT_FLAG_*
 } SceVfsUmountParam;
 
 /**
  * Register a VFS implementation
  *
- * @param vfsInfo - The VFS Info structure for the VFS. (This pointer should remain persistent until the VFS is deleted)
+ * @param vfs_info - The VFS Info structure for the VFS. (This pointer should remain persistent until the VFS is deleted)
  * 
  * @return 0 on success, < 0 on error
  */
-int ksceVfsAddVfs(SceVfsInfo *vfsInfo);
+int ksceVfsAddVfs(SceVfsInfo *vfs_info);
 /**
  * Unegister a VFS implementation
  *
  * @param name    - The name of the VFS implementation to unregister
- * @param vfsInfo - The VFS Info structure for the VFS. (This pointer should remain persistent until the VFS is deleted)
+ * @param vfs_info - The VFS Info structure for the VFS. (This pointer should remain persistent until the VFS is deleted)
  *
  * @return 0 on success, < 0 on error
  */
-int ksceVfsDeleteVfs(const char *name, SceVfsInfo **vfsInfo);
+int ksceVfsDeleteVfs(const char *name, SceVfsInfo **vfs_info);
 
 /**
  * Mount a drive
@@ -687,12 +685,12 @@ SceBool vfsIsLockedMnt(SceVfsMount *mnt);
  * Allocate a new VFS file object
  * 
  * @param vp     - The vnode the file should be referencing
- * @param ppFile - The pointer reference the file will be returned to
+ * @param file - The pointer reference the file will be returned to
  * @param name   - The name of the file
  * 
  * @return The UID of the file object on success, < 0 on error
  */
-SceUID vfsAllocateFile(SceVfsVnode *vp, SceVfsFile **ppFile, const char *name);
+SceUID vfsAllocateFile(SceVfsVnode *vp, SceVfsFile **file, const char *name);
 /**
  * Free a File object
  * 
@@ -771,11 +769,11 @@ int ksceVopOpen(SceVfsVnode *vp, SceVfsPath *path, int flags, SceVfsFile *file);
 int ksceVopCreate(SceVfsVnode *dvp, SceVfsVnode **vpp, SceVfsPath *path, int flags, int mode);
 int ksceVopClose(SceVfsVnode *vp, SceVfsFile *file);
 int ksceVopLookup(SceVfsVnode *dvp, SceVfsVnode **vpp, SceVfsPath *path, SceUInt32 flags);
-int ksceVopRead(SceVfsVnode *vp, SceVfsFile *file, void *data, SceSize nbyte, SceSize *pResult);
-int ksceVopWrite(SceVfsVnode *vp, SceVfsFile *file, const void *data, SceSize nbyte, SceSize *pResult);
+int ksceVopRead(SceVfsVnode *vp, SceVfsFile *file, void *data, SceSize nbyte, SceSize *result);
+int ksceVopWrite(SceVfsVnode *vp, SceVfsFile *file, const void *data, SceSize nbyte, SceSize *result);
 SceOff ksceVopLseek(SceVfsVnode *vp, SceVfsFile *file, SceOff offset, int whence);
 
-int ksceVopIoctl(SceVfsVnode *vp, SceVfsFile *file, int cmd, const void *inData, SceSize inLen, void *outData, SceSize outLen);
+int ksceVopIoctl(SceVfsVnode *vp, SceVfsFile *file, int cmd, const void *in_data, SceSize in_len, void *out_data, SceSize out_len);
 int ksceVopRemove(SceVfsVnode *dvp, SceVfsVnode *vp, SceVfsPath *path, SceUInt32 flags); 
 int ksceVopMkdir(SceVfsVnode *dvp, SceVfsVnode **vpp, SceVfsPath *path, int mode);
 int ksceVopRmdir(SceVfsVnode *dvp, SceVfsVnode *vp, SceVfsPath *path);
@@ -787,9 +785,9 @@ int ksceVopDread(SceVfsVnode *vp, SceVfsFile *file, SceIoDirent *dir);
 int ksceVopGetstat(SceVfsVnode *vp, SceVfsPath *path, SceIoStat *stat);
 int ksceVopChstat(SceVfsVnode *vp, SceVfsPath *path, SceIoStat *stat, int bit);
 
-int ksceVopRename(SceVfsVnode *odvp, SceVfsVnode *ovp, SceVfsPath *oldPath, SceVfsVnode *ndvp, SceVfsVnode **nvpp, SceVfsPath *newPath);
+int ksceVopRename(SceVfsVnode *odvp, SceVfsVnode *ovp, SceVfsPath *old_path, SceVfsVnode *ndvp, SceVfsVnode **nvpp, SceVfsPath *new_path);
 int ksceVopPread(SceVfsVnode *vp, SceVfsFile *file, void *data, SceSize nbyte, SceOff offset, SceSize *pResult);
-int ksceVopPwrite(SceVfsVnode *vp, SceVfsFile *file, const void *data, SceSize nbyte, SceOff offset, SceSize *pResult);
+int ksceVopPwrite(SceVfsVnode *vp, SceVfsFile *file, const void *data, SceSize nbyte, SceOff offset, SceSize *result);
 int ksceVopInactive(SceVfsVnode *vp);
 int ksceVopSync(SceVfsVnode *vp, SceVfsFile *file, int flags);
 int ksceVopFgetstat(SceVfsVnode *vp, SceVfsFile *file, SceIoStat *stat);
@@ -798,7 +796,7 @@ int ksceVopFchstat(SceVfsVnode *vp, SceVfsFile *file, SceIoStat *stat, int bit);
 int ksceVopLink(SceVfsVnode *fvp, SceVfsVnode *tvp);
 int ksceVopUnlink(SceVfsVnode *fvp, SceVfsVnode *tvp);
 
-int ksceVopWhiteout(SceVfsVnode *dvp, SceVfsVnode *vp, SceVfsPath *oldPath, SceVfsPath *newPath);
+int ksceVopWhiteout(SceVfsVnode *dvp, SceVfsVnode *vp, SceVfsPath *old_path, SceVfsPath *new_path);
 int ksceVopCleanup(SceVfsVnode *vp, SceVfsFile *file);
 int ksceVopZerofill(SceVfsVnode *vp, SceUInt64 unk, SceUInt64 unk1, SceUInt64 unk2);
 /** @} */
