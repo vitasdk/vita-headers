@@ -32,17 +32,17 @@ typedef struct SceVopTable SceVopTable;
  * VFS Info defining a VFS Implementation
  */
 typedef struct SceVfsInfo {
-	SceVfsOpTable *vfs_ops;    //!< VFS Implementation operations for mountpoint actions.
-	char *vfs_name;            //!< Name of the VFS implementation (Must be unique, used to identify the VFS)
-	SceSize vfs_name_len;       //!< Length of vfs_name plus null-terminator
+	const SceVfsOpTable *vfs_ops;    //!< VFS Implementation operations for mountpoint actions.
+	const char *vfs_name;            //!< Name of the VFS implementation (Must be unique, used to identify the VFS)
+	SceSize vfs_name_len;            //!< Length of vfs_name plus null-terminator
 
-	SceUInt32 ref_count;       //!< Internal use only
-	SceUInt32 type;           //!< One of SCE_VFS_TYPE_*
+	SceUInt32 ref_count;             //!< Internal use only
+	SceUInt32 type;                  //!< One of SCE_VFS_TYPE_*
 
-	SceVopTable *default_vops; //!< Default vop table for the vnodes
-	void *vfs_data;            //!< Optional data that can be passed to the vfs_init callback
+	const SceVopTable *default_vops; //!< Default vop table for the vnodes
+	void *vfs_data;                  //!< Optional data that can be passed to the vfs_init callback
 
-	struct SceVfsInfo *next;  //!< Internal use only
+	struct SceVfsInfo *next;         //!< Internal use only
 } SceVfsInfo;
 
 /**
@@ -51,20 +51,20 @@ typedef struct SceVfsInfo {
  * @note These paths used internally are root based paths, not mountpoint based.
  */
 typedef struct SceVfsPath {
-	char *name;         //!< Name of vnode
+	const char *name;    //!< Name of vnode
 	SceSize name_length; //!< Length of name
-	char *path;         //!< Full path name is from
+	const char *path;    //!< Full path name is from
 } SceVfsPath;
 
 /**
  * Mountpoint Data
  */
 typedef struct SceVfsMountData {
-	char *assign_name;           //!< Assigned name for the mount point. Must end with ':', typically in format '<mnt>0:'
-	char *fs_name;               //!< Name of the FS being mounted.
-	char *blockdev_name;         //!< Path to the block device
-	char *blockdev_name_no_part; //!< Path to the block device without a partition specified (used as a fallback if blockdev_name isn't found)
-	SceUInt32 mnt_id;            //!< Mountpoint ID (example: 0xF00 for uma0:)
+	const char *assign_name;           //!< Assigned name for the mount point. Must end with ':', typically in format '<mnt>0:'
+	const char *fs_name;               //!< Name of the FS being mounted.
+	const char *blockdev_name;         //!< Path to the block device
+	const char *blockdev_name_no_part; //!< Path to the block device without a partition specified (used as a fallback if blockdev_name isn't found)
+	SceUInt32 mnt_id;                  //!< Mountpoint ID (example: 0xF00 for uma0:)
 } SceVfsMountData;
 
 #define SCE_VFS_FS_TYPE_FS      (0x01) //!< All exfat mounts
@@ -305,12 +305,12 @@ typedef struct SceVfsOpDevctlArg {
 
 typedef struct SceVfsOpDecodePathElemArgs { 
 	SceVfsMount *mnt;
-	const char *path;      
-	const char **path2;    // path + something
-	const char **path3;    // path3 + *decodeLen
-	char *buf;             
-	SceSize buf_len;      
-	SceSize *decode_len;  // out
+	const char *path;
+	const char **path2;  // path + something
+	const char **path3;  // path3 + *decodeLen
+	char *buf;
+	SceSize buf_len;
+	SceSize *decode_len; // out
 } SceVfsOpDecodePathElemArgs;
 
 typedef struct SceVfsOpTable {
@@ -578,14 +578,14 @@ typedef struct SceVopTable {
  * Parameters for vfsMount and vfsMountForPFS
  */
 typedef struct SceVfsMountParam {
-	char *root_path;       //!< This is the internal root path of the mountpoint. (example: /ux/exfat for ux0:)
-	char *blockdev_name;   //!< Overrides blockdevName in misc->blockdevName
+	const char *root_path;       //!< This is the internal root path of the mountpoint. (example: /ux/exfat for ux0:)
+	const char *blockdev_name;   //!< Overrides blockdevName in misc->blockdevName
 
 	SceUInt8 fs_type;      //!< One of SCE_VFS_FS_TYPE_*
 	SceUInt16 opt;         //!< Used to identify the IO Scheduler queue to use for the mountpoint
 	SceUInt32 mnt_flags;   //!< ORed together SCE_VFS_MOUNT_FLAG_* flags
 
-	char *vfs_name;        //!< Name of the VFS to use for the mountpoint
+	const char *vfs_name;        //!< Name of the VFS to use for the mountpoint
 
 	void *data;            //!< To be passed to the created mountpoint
 
@@ -600,7 +600,7 @@ typedef struct SceVfsMountParam {
  * Parameters for vfsUmount and vfsUmountForPFS
  */
 typedef struct SceVfsUmountParam {
-	char *assign_name; //!< Assigned name of the mountpoint to unmount
+	const char *assign_name; //!< Assigned name of the mountpoint to unmount
 	int flag;         //!< One of SCE_VFS_UMOUNT_FLAG_*
 } SceVfsUmountParam;
 
