@@ -969,7 +969,7 @@ public:
 	 *
 	 * @return  An iterator pointing to the Pair with the matching key.
 	 */
-	iterator find(const String& key);
+	iterator find(const String& key) const;
 	/**
 	 * Empty the object.
 	 */
