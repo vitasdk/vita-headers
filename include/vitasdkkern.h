@@ -21,6 +21,7 @@
 #include <psp2kern/usbd.h>
 #include <psp2kern/usbserial.h>
 #include <psp2kern/usbserv.h>
+#include <psp2kern/vfs.h>
 
 #include <psp2kern/internal/exfatfs.h>
 #include <psp2kern/internal/sdstor.h>
