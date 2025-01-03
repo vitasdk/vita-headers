@@ -100,7 +100,7 @@ var psp2kern_2usbd_8h =
     [ "ksceUsbdRegisterCompositeLdd", "group__SceUsbdKernel.html#ga615561463719e673fd80f0fbfc1dd43c", null ],
     [ "ksceUsbdUnregisterDriver", "group__SceUsbdKernel.html#gafe62b8ed21f2bc3b00495cac91f03bf3", null ],
     [ "ksceUsbdUnregisterCompositeLdd", "group__SceUsbdKernel.html#gac86f9bb233c37d0a9e51a78a94fb8d2d", null ],
-    [ "ksceUsbdScanStaticDescriptor", "group__SceUsbdKernel.html#gaa48e0f67c5064c991803a5ffb3322952", null ],
+    [ "ksceUsbdScanStaticDescriptor", "group__SceUsbdKernel.html#gaa4cc9a3e5b7ac4de1b49d0c717be5ec7", null ],
     [ "ksceUsbdOpenPipe", "group__SceUsbdKernel.html#gaac91b53e0629eb889b52ffc86c019de2", null ],
     [ "ksceUsbdClosePipe", "group__SceUsbdKernel.html#gaa7918a5d2616341b9a418bb9d2d17c75", null ],
     [ "ksceUsbdControlTransfer", "group__SceUsbdKernel.html#ga1bba036b0a5ca6692bc80051850f34d1", null ],

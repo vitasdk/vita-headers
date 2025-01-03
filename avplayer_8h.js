@@ -1,9 +1,9 @@
 var avplayer_8h =
 [
     [ "SceAvPlayerHandle", "group__SceAvPlayerUser.html#gaa881364993e45df258ae90e384138dae", null ],
-    [ "SceAvPlayerAlloc", "group__SceAvPlayerUser.html#gad996ce2d59ff858470cd640f3a30d4a7", null ],
+    [ "SceAvPlayerAlloc", "group__SceAvPlayerUser.html#ga7ea2c9f505f223821732423c0cf3a0b1", null ],
     [ "SceAvPlayerFree", "group__SceAvPlayerUser.html#ga628dbc08b944ef560f31c52837239065", null ],
-    [ "SceAvPlayerAllocFrame", "group__SceAvPlayerUser.html#ga37479a7b7466f932ae28937e2534b23c", null ],
+    [ "SceAvPlayerAllocFrame", "group__SceAvPlayerUser.html#gaa2cde383651775246997d394cb1bb517", null ],
     [ "SceAvPlayerFreeFrame", "group__SceAvPlayerUser.html#ga8d50e793659e1e6a8650407737634553", null ],
     [ "SceAvPlayerOpenFile", "group__SceAvPlayerUser.html#ga02b240f509c79365025cf96d6381e187", null ],
     [ "SceAvPlayerCloseFile", "group__SceAvPlayerUser.html#ga874a6b014e276e6a509df2909b9266ee", null ],

@@ -20,6 +20,6 @@ var excpmgr_8h =
     ] ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#gaab0d8411d117829b670fdf68320d6be0", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#ga0d451515efa9dcf65702ac8e98eb9398", null ],
-    [ "ksceExcpmgrGetData", "group__SceExcpmgrKernel.html#ga87911737cb06f4d26ea837d282f5d104", null ],
+    [ "ksceExcpmgrGetData", "group__SceExcpmgrKernel.html#gab3be0c3fbf4a2deb42fdf83773dad596", null ],
     [ "ksceExcpmgrRegisterHandler", "group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5", null ]
 ];

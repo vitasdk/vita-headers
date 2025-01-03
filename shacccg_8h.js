@@ -1,10 +1,10 @@
 var shacccg_8h =
 [
     [ "SceShaccCgParameter", "group__SceShaccCgUser.html#gafc961b7216d3352736aa1d00edffdc3e", null ],
-    [ "SceShaccCgCallbackOpenFile", "group__SceShaccCgUser.html#ga13c05e72ea76af448272eecf4a575d26", null ],
+    [ "SceShaccCgCallbackOpenFile", "group__SceShaccCgUser.html#gab155c67c38c1116a5c295a85f465587c", null ],
     [ "SceShaccCgCallbackReleaseFile", "group__SceShaccCgUser.html#ga01da2bb204665fff5dad4972e44982dd", null ],
-    [ "SceShaccCgCallbackLocateFile", "group__SceShaccCgUser.html#ga5bcf847d930848353e3d0bf4761732d6", null ],
-    [ "SceShaccCgCallbackAbsolutePath", "group__SceShaccCgUser.html#ga9b463c1e72d7d975dfc5823fe4dd3bfb", null ],
+    [ "SceShaccCgCallbackLocateFile", "group__SceShaccCgUser.html#ga1eb70b1ee01957754b59013980d47359", null ],
+    [ "SceShaccCgCallbackAbsolutePath", "group__SceShaccCgUser.html#gab7b829762daf3371b3d41b9218d70a63", null ],
     [ "SceShaccCgCallbackReleaseFileName", "group__SceShaccCgUser.html#gaf0736f6a7ff67c2933c6f808d9adf54a", null ],
     [ "SceShaccCgCallbackFileDate", "group__SceShaccCgUser.html#ga73daab6652f7eda7256ca66188c3ca20", null ],
     [ "SceShaccCgDiagnosticLevel", "group__SceShaccCgUser.html#ga0833a8b6560f7ebb8c476f8be8d02729", [
@@ -32,10 +32,10 @@ var shacccg_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#gabd00dc6cf2c45a4e85793cc1188f7d46", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceShaccCgUser.html#ga304dee232f029808a385a0144abd1a25", null ],
     [ "sceShaccCgInitializeCompileOptions", "group__SceShaccCgUser.html#gaef31a86772012ed19ce70c032a17f871", null ],
-    [ "sceShaccCgCompileProgram", "group__SceShaccCgUser.html#ga7716d01d46ccef9a8e11e3ae93eeca7a", null ],
+    [ "sceShaccCgCompileProgram", "group__SceShaccCgUser.html#ga4580d737c96040189550ba3ecf7b832d", null ],
     [ "sceShaccCgSetDefaultAllocator", "group__SceShaccCgUser.html#ga1c8466c51cd2158fd9898e688f25c923", null ],
     [ "sceShaccCgInitializeCallbackList", "group__SceShaccCgUser.html#gad6a68198587c2540a25d1ef1292e00d4", null ],
     [ "sceShaccCgDestroyCompileOutput", "group__SceShaccCgUser.html#gac5cfea60e2d1b8b8bd19efa1fb1f5847", null ],
     [ "sceShaccCgReleaseCompiler", "group__SceShaccCgUser.html#ga2943a1111df9df5a45115fc4f66a8d98", null ],
-    [ "sceShaccCgGetVersionString", "group__SceShaccCgUser.html#gad4fcd5059a5c3370724b149d2f476d51", null ]
+    [ "sceShaccCgGetVersionString", "group__SceShaccCgUser.html#gaad1da454d00d52c3a5b21a2a3e747227", null ]
 ];

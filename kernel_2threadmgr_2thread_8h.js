@@ -24,7 +24,7 @@ var kernel_2threadmgr_2thread_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga0d6c6c680f4a1ead74c1feda28d0138e", null ],
     [ "sceKernelGetSystemInfo", "group__SceThreadMgrUser.html#ga098d45a290dbe3ca0b23883b4c480f48", null ],
     [ "sceKernelGetThreadmgrUIDClass", "group__SceThreadMgrUser.html#gac134727fae595f8af7be1d8004bfae37", null ],
-    [ "sceKernelGetThreadTLSAddr", "group__SceThreadMgrUser.html#ga5c88ce8f3b9a96ce584ec3822744fe97", null ],
-    [ "sceKernelGetTLSAddr", "group__SceThreadMgrUser.html#gae74b3a3318e9781fe140bd49f56f43b6", null ],
+    [ "sceKernelGetThreadTLSAddr", "group__SceThreadMgrUser.html#gae2d8dbd8fb8bae2d6ca510f6b0b073fa", null ],
+    [ "sceKernelGetTLSAddr", "group__SceThreadMgrUser.html#gace3edd187384e8d0958e2095511577f1", null ],
     [ "sceKernelGetSystemTimeWide", "group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3", null ]
 ];

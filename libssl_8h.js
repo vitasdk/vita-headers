@@ -21,7 +21,7 @@ var libssl_8h =
     [ "sceSslGetNotAfter", "group__SceLibSslUser.html#gafa209c71c2205c2ce7e4cf78aa21e0dc", null ],
     [ "sceSslGetNameEntryCount", "group__SceLibSslUser.html#ga2226619231d9e18c0f4e58fb48fc8c16", null ],
     [ "sceSslGetNameEntryInfo", "group__SceLibSslUser.html#gac23339aac973b39e0e74701c1ff4e484", null ],
-    [ "sceSslGetSubjectName", "group__SceLibSslUser.html#gae1ba256263383abca54f686720ecc873", null ],
-    [ "sceSslGetIssuerName", "group__SceLibSslUser.html#ga1e75cf79605b30062c33b03b622438da", null ],
+    [ "sceSslGetSubjectName", "group__SceLibSslUser.html#ga0ae549d4b609ea4919d42d4d66716d0d", null ],
+    [ "sceSslGetIssuerName", "group__SceLibSslUser.html#gab11f8d374a759e2e582db418dbbab95e", null ],
     [ "sceSslFreeSslCertName", "group__SceLibSslUser.html#ga52861a9bb6eee66901b8393dc50b152b", null ]
 ];

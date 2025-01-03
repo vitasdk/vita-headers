@@ -3,7 +3,7 @@ var group__ScePgfUser_structSceFontNewLibParams =
     [ "userData", "group__ScePgfUser.html#ga95929f31baa7ffa8dcebe1b9ecb9c26f", null ],
     [ "numFonts", "group__ScePgfUser.html#ga652d4d51f17a1546e801eca57acfb096", null ],
     [ "cacheData", "group__ScePgfUser.html#ga4a8d8f32d4ee1a902a6ddf26cb8a6bc7", null ],
-    [ "allocFunc", "group__ScePgfUser.html#gac5fd55ff59203a7560ac3f2de0771f29", null ],
+    [ "allocFunc", "group__ScePgfUser.html#ga609e6428d9d6c1dfeca083fd62f196fa", null ],
     [ "freeFunc", "group__ScePgfUser.html#gaf59d58c36c64e222a924a81ebd50e59e", null ],
     [ "openFunc", "group__ScePgfUser.html#ga897c3132edc6c237f7f264b531b526a5", null ],
     [ "closeFunc", "group__ScePgfUser.html#gaa1a9c3156d4c090f3fd39effeb20ceb5", null ],

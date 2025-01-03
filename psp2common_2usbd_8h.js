@@ -60,7 +60,7 @@ var psp2common_2usbd_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUsbdKernel.html#ga480f3da2998381ac969e21d142546658", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUsbdKernel.html#gab833f8fc3c3198d111d5e2c5b88160cb", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUsbdKernel.html#ga2efc4901d286ed19d542b6a5aba7e6f7", null ],
-    [ "__attribute__", "group__SceUsbdKernel.html#gaae3f65f052bfcd47e0f30c286b21123d", null ],
+    [ "__attribute__", "group__SceUsbdKernel.html#ga7c3cc8622566a4bc365ae16c5b811498", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUsbdKernel.html#gad9065263cf4fea93d3136af6a91100a5", null ],
     [ "unk0", "group__SceUsbdKernel.html#ga63ff4c385fe8aae14ae8fea192caadf0", null ],
     [ "unk1", "group__SceUsbdKernel.html#gae5acfd9819cda5f971743bcb2a5dd9d9", null ]

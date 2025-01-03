@@ -11,7 +11,7 @@ var group__SceLibJsonUser_classsce_1_1Json_1_1Object =
     [ "erase", "group__SceLibJsonUser.html#ga0b51555d2af4379b7f26c8af718f7a63", null ],
     [ "size", "group__SceLibJsonUser.html#gad4038e3117581f1437726d1958edaca9", null ],
     [ "empty", "group__SceLibJsonUser.html#gacae4c089022bb13cbae6c33240ceb234", null ],
-    [ "operator[]", "group__SceLibJsonUser.html#ga8f27171d4180fb537681294d8f598fed", null ],
-    [ "operator=", "group__SceLibJsonUser.html#gaa7f25eda460acf31349035d8144d8a83", null ],
+    [ "operator[]", "group__SceLibJsonUser.html#gaa1a0701c29b1f72f2d4a11eb29caba9f", null ],
+    [ "operator=", "group__SceLibJsonUser.html#gaf3fe29a8a721e498d21090351d8705f3", null ],
     [ "implData", "group__SceLibJsonUser.html#ga9f3c01041f56134be914cf04b350568b", null ]
 ];

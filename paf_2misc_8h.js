@@ -10,8 +10,8 @@ var paf_2misc_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePafUser.html#gabd469bdbd43099f0b71dee53e5a04fa4", null ],
     [ "scePafCreateHeap", "group__ScePafUser.html#ga6f6b6067714665ee585ddec926625d5f", null ],
     [ "scePafDeleteHeap", "group__ScePafUser.html#gadff63f5bff9660e6693c73bbe5cf2679", null ],
-    [ "scePafMallocWithContext", "group__ScePafUser.html#ga788d307c11004c0d7b974cdd40ca923a", null ],
+    [ "scePafMallocWithContext", "group__ScePafUser.html#gac35a3fd3a7093ddbe2f173b1f43aa8f4", null ],
     [ "scePafFreeWithContext", "group__ScePafUser.html#ga146ecc40894153f5897e0956fb74d217", null ],
-    [ "scePafMallocAlignWithContext", "group__ScePafUser.html#ga8cd553f972ae5c6f98273716aa663ed6", null ],
-    [ "scePafReallocWithContext", "group__ScePafUser.html#gaac3e48a20035f43e51dc1314fc3f3ad2", null ]
+    [ "scePafMallocAlignWithContext", "group__ScePafUser.html#ga4425894d08ddfb947af6204bf92149e8", null ],
+    [ "scePafReallocWithContext", "group__ScePafUser.html#ga666a96ef5d65cdb84c9f6b02d1b9fbfb", null ]
 ];

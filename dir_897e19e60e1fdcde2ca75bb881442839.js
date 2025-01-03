@@ -24,5 +24,6 @@ var dir_897e19e60e1fdcde2ca75bb881442839 =
     [ "udcd.h", "psp2kern_2udcd_8h.html", "psp2kern_2udcd_8h" ],
     [ "usbd.h", "psp2kern_2usbd_8h.html", "psp2kern_2usbd_8h" ],
     [ "usbserial.h", "psp2kern_2usbserial_8h.html", "psp2kern_2usbserial_8h" ],
-    [ "usbserv.h", "psp2kern_2usbserv_8h.html", "psp2kern_2usbserv_8h" ]
+    [ "usbserv.h", "psp2kern_2usbserv_8h.html", "psp2kern_2usbserv_8h" ],
+    [ "vfs.h", "vfs_8h.html", "vfs_8h" ]
 ];

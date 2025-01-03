@@ -3,7 +3,7 @@ var net_2net_8h =
     [ "SCE_NET_EPOLL_ABORT_FLAG_PRESERVATION", "group__SceNetUser.html#ga1c1181dad159246cabc55c6b18ee5e65", null ],
     [ "SCE_NET_RESOLVER_PORT", "group__SceNetUser.html#gab082cf5a54b7ab21e09b2912f601eba9", null ],
     [ "SCE_NET_RESOLVER_HOSTNAME_LEN_MAX", "group__SceNetUser.html#ga5a0f227806acd8e3f0127363d04a3240", null ],
-    [ "SceNetResolverFunctionAllocate", "group__SceNetUser.html#ga8d3b116dc09c949f38c2863cfef16c8e", null ],
+    [ "SceNetResolverFunctionAllocate", "group__SceNetUser.html#ga29688e8499a50b72b20802eca20415b8", null ],
     [ "SceNetResolverFunctionFree", "group__SceNetUser.html#gaff1dc586af8124462ebe48ab445c03b3", null ],
     [ "SceNetResolverErrorCode", "group__SceNetUser.html#ga0afc1f6c3ee846a7a577450323ea268b", [
       [ "SCE_NET_RESOLVER_EINTERNAL", "group__SceNetUser.html#gga0afc1f6c3ee846a7a577450323ea268baaa40660cddb8859a14029fcb54bd47fe", null ],
@@ -118,7 +118,7 @@ var net_2net_8h =
     [ "sceNetGetStatisticsInfo", "group__SceNetUser.html#gadced820fafe0994573799d825a9257ac", null ],
     [ "sceNetSetDnsInfo", "group__SceNetUser.html#gac334fd7ea92d6507921844bd762c8032", null ],
     [ "sceNetClearDnsCache", "group__SceNetUser.html#ga05801345b64a356f85632c70ddb3c7fa", null ],
-    [ "sceNetInetNtop", "group__SceNetUser.html#ga359446517eb46f05a8360429ed48fd82", null ],
+    [ "sceNetInetNtop", "group__SceNetUser.html#ga67ed22822670a2247550bfe66511215d", null ],
     [ "sceNetInetPton", "group__SceNetUser.html#gab69c98ff6e0ba31ac57bc22130fd34ff", null ],
     [ "sceNetHtonll", "group__SceNetUser.html#ga73643376f69871d2023b7bb5bdf50592", null ],
     [ "sceNetHtonl", "group__SceNetUser.html#gab7add7b0125675007cba6470a3adaa32", null ],
@@ -126,5 +126,5 @@ var net_2net_8h =
     [ "sceNetNtohll", "group__SceNetUser.html#ga718c307037dc034e731bd68c85cc70e3", null ],
     [ "sceNetNtohl", "group__SceNetUser.html#gaf0079d91bfd48309ff3717692f98ef5a", null ],
     [ "sceNetNtohs", "group__SceNetUser.html#ga2538abe15fa19b0250f80705a0e3ca94", null ],
-    [ "sceNetErrnoLoc", "group__SceNetUser.html#ga3b63382213be67f4ff0de70394226a28", null ]
+    [ "sceNetErrnoLoc", "group__SceNetUser.html#ga96b450ab97463cd44fd043c3369ad09b", null ]
 ];

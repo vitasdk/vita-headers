@@ -2,7 +2,7 @@ var netctl_8h =
 [
     [ "SCE_NETCTL_INFO_CONFIG_NAME_LEN_MAX", "group__SceNetCtlUser.html#ga7656af6427a1eeaa42933887fc57844e", null ],
     [ "SCE_NETCTL_INFO_SSID_LEN_MAX", "group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776", null ],
-    [ "SceNetCtlCallback", "group__SceNetCtlUser.html#ga47d1d3aa0e8737823dff3bcb251ba331", null ],
+    [ "SceNetCtlCallback", "group__SceNetCtlUser.html#gada4e29b4dfe14978ecd924fbdf6c030f", null ],
     [ "SceNetCtlInfoType", "group__SceNetCtlUser.html#ga66858d830843be2be6b779989d10cf25", [
       [ "SCE_NETCTL_INFO_GET_CNF_NAME", "group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a27650b1ecde557637cfdd555df7f8675", null ],
       [ "SCE_NETCTL_INFO_GET_DEVICE", "group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25af25801f3edcf7f5549665301363a4f9f", null ],

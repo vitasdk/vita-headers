@@ -2,10 +2,10 @@ var ern_2kernel_2processmgr_8h =
 [
     [ "SceKernelProcessType", "group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#ga5e00129f26659eb5cda7c5fdda38c917", null ],
-    [ "ksceKernelGetProcessKernelBuf", "group__SceProcessmgrKernel.html#ga6b3b5f895ae1e3fd5e89bb57467e55ca", null ],
+    [ "ksceKernelGetProcessKernelBuf", "group__SceProcessmgrKernel.html#ga476c0469443aba2d568b72580b85da72", null ],
     [ "ksceKernelGetProcessInfo", "group__SceProcessmgrKernel.html#ga0900825db6367507b27169093cf58227", null ],
     [ "ksceKernelCreateProcessLocalStorage", "group__SceProcessmgrKernel.html#ga3845b5bbcdb0cbb823dab8a5ec669971", null ],
-    [ "ksceKernelGetProcessLocalStorageAddr", "group__SceProcessmgrKernel.html#ga06498ae67bc5e0b2fbe26112d9bc6050", null ],
+    [ "ksceKernelGetProcessLocalStorageAddr", "group__SceProcessmgrKernel.html#ga2c6b26f5886c61763fbef1e47d2dc27e", null ],
     [ "ksceKernelGetProcessLocalStorageAddrForPid", "group__SceProcessmgrKernel.html#gabb60dbc5ecd5c2b590d048930a1b6922", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrKernel.html#ga3640c887535f8196c39fda4cb274ad22", null ],
     [ "ksceKernelCreateProcess", "group__SceProcessmgrKernel.html#gaf13c87d065bae35665bc4a5906871adc", null ],
@@ -18,5 +18,5 @@ var ern_2kernel_2processmgr_8h =
     [ "ksceKernelLibcGettimeofday", "group__SceProcessmgrKernel.html#ga37cfb9024ed496d8eee6f47e12fd9424", null ],
     [ "ksceKernelLibcTime", "group__SceProcessmgrKernel.html#ga5de1f9d38ff7f661ff33f00cd2b01046", null ],
     [ "ksceKernelExitProcess", "group__SceProcessmgrKernel.html#gafd393ed0dd74ea461c5c6bb6042294a1", null ],
-    [ "ksceKernelGetUIDProcessClass", "group__SceProcessmgrKernel.html#ga0acd6cf9bc4022c321a49e3cbda25d40", null ]
+    [ "ksceKernelGetUIDProcessClass", "group__SceProcessmgrKernel.html#gaeeeeb1de6287ad2a97979c1197ddcf42", null ]
 ];

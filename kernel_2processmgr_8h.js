@@ -12,7 +12,7 @@ var kernel_2processmgr_8h =
     [ "sceKernelGetStderr", "group__SceProcessmgrUser.html#gab38fe0fad51a7082476a8f45c2dcb74f", null ],
     [ "sceKernelGetStdin", "group__SceProcessmgrUser.html#gaca5042f4a41a131e4cbc3cd5574d02fb", null ],
     [ "sceKernelGetStdout", "group__SceProcessmgrUser.html#ga4fbcd594d41dd94430d79e9ac6ee8f6b", null ],
-    [ "sceKernelGetProcessParam", "group__SceProcessmgrUser.html#ga3eb82309ef0b6a3e4e2dd233635ffd35", null ],
+    [ "sceKernelGetProcessParam", "group__SceProcessmgrUser.html#gace18679986df83eff860e2e7f6cb44b5", null ],
     [ "sceKernelLibcClock", "group__SceProcessmgrUser.html#gaa06b7d896c6611f1250b60711ed065fd", null ],
     [ "sceKernelLibcTime", "group__SceProcessmgrUser.html#ga2ce94ab54870f46ed95bbb2917be4477", null ],
     [ "sceKernelLibcGettimeofday", "group__SceProcessmgrUser.html#gac268657dfbfea56250ac6438f24ad149", null ]

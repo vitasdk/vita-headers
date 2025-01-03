@@ -1,0 +1,27 @@
+var group__SceVfsKernel_structSceVfsVnode_8core =
+[
+    [ "ops", "group__SceVfsKernel.html#ae847897826ceb8346eb5141f8c23436a", null ],
+    [ "node_inf", "group__SceVfsKernel.html#aa990717934fb8f56c53962d75afb6a79", null ],
+    [ "node_data", "group__SceVfsKernel.html#a55802c54d6032dcd2a67f2fb6b43f9a8", null ],
+    [ "mnt", "group__SceVfsKernel.html#a9cd78390881d564d549c61bfa2dc2229", null ],
+    [ "dd", "group__SceVfsKernel.html#a1aabac6d068eef6a7bad3fdf50a05cc8", null ],
+    [ "next", "group__SceVfsKernel.html#ad0cab90d8d20d57e2f2b9be52f7dd25d", null ],
+    [ "ref_count", "group__SceVfsKernel.html#ab3d2f97e8dabd2ef063bf7ebbb8bc86b", null ],
+    [ "bc", "group__SceVfsKernel.html#a5360af35bde9ebd8f01f492dc059593c", null ],
+    [ "fid", "group__SceVfsKernel.html#a79a45b7559e23553bbae330d96f43a49", null ],
+    [ "flock", "group__SceVfsKernel.html#af5f43dd44a652bab4be8197039a120b6", null ],
+    [ "allocator", "group__SceVfsKernel.html#a3ea9a0394aab44aadd148cfafa5c6693", null ],
+    [ "ncache", "group__SceVfsKernel.html#a387c9187adf98cd90c130ad7b81fd748", null ],
+    [ "state", "group__SceVfsKernel.html#a9ed39e2ea931586b6a985a6942ef573e", null ],
+    [ "type", "group__SceVfsKernel.html#a599dcce2998a6b40b1e38e8c6006cb0a", null ],
+    [ "vop_tbl", "group__SceVfsKernel.html#aa776b93435ec1dffd8022b1199fa4d3a", null ],
+    [ "size", "group__SceVfsKernel.html#af7bd60b75b29d79b660a2859395c1a24", null ],
+    [ "acl_data", "group__SceVfsKernel.html#afe8ef46c7eb011e52946211317fb502b", null ],
+    [ "fd_list", "group__SceVfsKernel.html#af1d0f8dd196df570ca9aa6e1bf32eaef", null ],
+    [ "fd_num", "group__SceVfsKernel.html#a59d4d244ce2d921f595af4fa0ff33096", null ],
+    [ "link_to", "group__SceVfsKernel.html#a67228a95a7deca2352ef0e9ac0e97ee2", null ],
+    [ "linked_num", "group__SceVfsKernel.html#a9f715647a675a3bcea245a1165a0321a", null ],
+    [ "unused", "group__SceVfsKernel.html#a0bd780470ee18dde6046f58cb1b51120", null ],
+    [ "mnt_opt", "group__SceVfsKernel.html#a62420db7014a125515c98496e373bec3", null ],
+    [ "unk_0xd4", "group__SceVfsKernel.html#a4bb74ee2bfa7b57278d3b546c12a8a4a", null ]
+];
