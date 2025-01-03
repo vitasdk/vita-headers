@@ -1,6 +1,6 @@
 var group__SceVfsKernel_structSceVfsPath =
 [
-    [ "name", "group__SceVfsKernel.html#ga92a803c6a9457b6827d4208244a0eab1", null ],
+    [ "name", "group__SceVfsKernel.html#ga62f943dfe257d231507b264304f7554d", null ],
     [ "name_length", "group__SceVfsKernel.html#ga2d1ab141df40382d0664798a0d56cd8e", null ],
-    [ "path", "group__SceVfsKernel.html#ga8d48bbc81194b54a74a0de36512302bc", null ]
+    [ "path", "group__SceVfsKernel.html#ga966e6e200698bd6ad64bd8b12f4ac79f", null ]
 ];
