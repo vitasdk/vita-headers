@@ -6,6 +6,7 @@
 #ifndef _PSP2KERN_VFS_H_
 #define _PSP2KERN_VFS_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/kernel/iofilemgr.h>
 #include <psp2kern/kernel/threadmgr/fast_mutex.h>
 #include <psp2kern/types.h>
@@ -44,6 +45,7 @@ typedef struct SceVfsInfo {
 
 	struct SceVfsInfo *next;         //!< Internal use only
 } SceVfsInfo;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceVfsInfo);
 
 /**
  * VFS Path for vnode
@@ -55,6 +57,7 @@ typedef struct SceVfsPath {
 	SceSize name_length; //!< Length of name
 	const char *path;    //!< Full path name is from
 } SceVfsPath;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVfsPath);
 
 /**
  * Mountpoint Data
@@ -66,6 +69,7 @@ typedef struct SceVfsMountData {
 	const char *blockdev_name_no_part; //!< Path to the block device without a partition specified (used as a fallback if blockdev_name isn't found)
 	SceUInt32 mnt_id;                  //!< Mountpoint ID (example: 0xF00 for uma0:)
 } SceVfsMountData;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceVfsMountData);
 
 #define SCE_VFS_FS_TYPE_FS      (0x01) //!< All exfat mounts
 #define SCE_VFS_FS_TYPE_PFS     (0x03) //!< PFS mounts
@@ -135,6 +139,7 @@ typedef struct SceVfsMount {
 
 	SceUInt8 padding[16];
 } SceVfsMount;
+VITASDK_BUILD_ASSERT_EQ(0x100, SceVfsMount);
 
 #define SCE_VNODE_TYPE_REG     (0x00000001) //!< Regular file
 #define SCE_VNODE_TYPE_DIR     (0x00000002) //!< Regular directory
@@ -215,6 +220,7 @@ typedef struct SceVfsVnode {
 
 	SceUInt8 padding2[40];
 } SceVfsVnode;
+VITASDK_BUILD_ASSERT_EQ(0x100, SceVfsVnode);
 
 #define SCE_VFS_FILE_STATE_OPEN   (0x00000001) //!< File is open
 #define SCE_VFS_FILE_STATE_CLOSED (0x00000200) //!< File is closed
@@ -252,6 +258,7 @@ typedef struct SceVfsFile {
 
 	SceUInt32 ioSchedData[3];
 } SceVfsFile;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceVfsFile);
 /** @} */
 
 /**
@@ -262,36 +269,43 @@ typedef struct SceVfsOpMountArgs {
 	SceVfsMount *mnt;
 	SceVfsPath *dev_file_path; //!< Path to the device file.
 } SceVfsOpMountArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVfsOpMountArgs);
 
 typedef struct SceVfsOpUmountArgs {
 	SceVfsMount *mnt;
 	int flags;
 } SceVfsOpUmountArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVfsOpUmountArgs);
 
 typedef struct SceVfsOpSetRootArgs {
 	SceVfsMount *mnt;
 	int unk;
 	struct SceVfsVnode *vp;
 } SceVfsOpSetRootArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVfsOpSetRootArgs);
 
 typedef struct SceVfsOpGetRootArgs {
 	SceVfsMount *mnt;
 	int unk;
 	struct SceVfsVnode **vpp;
 } SceVfsOpGetRootArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVfsOpGetRootArgs);
 
 typedef struct SceVfsOpSyncArgs {
 	SceVfsMount *mnt;
 	int flags;
 } SceVfsOpSyncArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVfsOpSyncArgs);
 
 typedef struct SceVfsOpInitArgs {
 	SceVfsInfo *vfs_inf;
 } SceVfsOpInitArgs;
+VITASDK_BUILD_ASSERT_EQ(0x4, SceVfsOpInitArgs);
 
 typedef struct SceVfsOpFiniArgs {
 	SceVfsInfo *vfs_inf;
 } SceVfsOpFiniArgs;
+VITASDK_BUILD_ASSERT_EQ(0x4, SceVfsOpFiniArgs);
 
 typedef struct SceVfsOpDevctlArg {
 	SceVfsMount *mnt;
@@ -302,6 +316,7 @@ typedef struct SceVfsOpDevctlArg {
 	void *buf;
 	SceSize buf_len;
 } SceVfsOpDevctlArg;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceVfsOpDevctlArg);
 
 typedef struct SceVfsOpDecodePathElemArgs { 
 	SceVfsMount *mnt;
@@ -312,6 +327,7 @@ typedef struct SceVfsOpDecodePathElemArgs {
 	SceSize buf_len;
 	SceSize *decode_len; // out
 } SceVfsOpDecodePathElemArgs;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceVfsOpDecodePathElemArgs);
 
 typedef struct SceVfsOpTable {
 	int (*vfs_mount)(SceVfsOpMountArgs *argp);
@@ -333,6 +349,7 @@ typedef struct SceVfsOpTable {
 	int (*vfs_devctl)(SceVfsOpDevctlArg *arg);
 	int (*vfs_decode_path_elem)(SceVfsOpDecodePathElemArgs *argp);
 } SceVfsOpTable;
+VITASDK_BUILD_ASSERT_EQ(0x34, SceVfsOpTable);
 /** @} */
 
 /**
@@ -345,6 +362,7 @@ typedef struct SceVopOpenArgs {
 	int flags;
 	SceVfsFile *file;
 } SceVopOpenArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopOpenArgs);
 
 typedef struct SceVopCreateArgs {
 	SceVfsVnode *dvp;
@@ -353,11 +371,13 @@ typedef struct SceVopCreateArgs {
 	int flags;
 	int mode;
 } SceVopCreateArgs;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceVopCreateArgs);
 
 typedef struct SceVopCloseArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
 } SceVopCloseArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVopCloseArgs);
 
 typedef struct SceVopLookupArgs {
 	SceVfsVnode  *dvp;
@@ -365,6 +385,7 @@ typedef struct SceVopLookupArgs {
 	SceVfsPath *path;
 	SceUInt32 flags;
 } SceVopLookupArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopLookupArgs);
 
 typedef struct SceVopReadArgs {
 	SceVfsVnode *vp;
@@ -372,6 +393,7 @@ typedef struct SceVopReadArgs {
 	void *buf;
 	SceSize nbyte;
 } SceVopReadArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopReadArgs);
 
 typedef struct SceVopWriteArgs {
 	SceVfsVnode *vp;
@@ -379,6 +401,7 @@ typedef struct SceVopWriteArgs {
 	const void *buf;
 	SceSize nbyte;
 } SceVopWriteArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopWriteArgs);
 
 typedef struct SceVopLseekArgs {
 	SceVfsVnode *vp;
@@ -386,6 +409,7 @@ typedef struct SceVopLseekArgs {
 	SceOff offset;
 	int whence;
 } SceVopLseekArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceVopLseekArgs); // really 0x18 by SceOff align 8?
 
 typedef struct SceVopIoctlArgs {
 	SceVfsVnode *vp;
@@ -396,6 +420,7 @@ typedef struct SceVopIoctlArgs {
 	void *out_data;
 	SceSize out_len;
 } SceVopIoctlArgs;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceVopIoctlArgs);
 
 typedef struct SceVopRemoveArgs {
 	SceVfsVnode *dvp;
@@ -403,6 +428,7 @@ typedef struct SceVopRemoveArgs {
 	SceVfsPath *path;
 	SceUInt32 flags;
 } SceVopRemoveArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopRemoveArgs);
 
 typedef struct SceVopMkdirArgs {
 	SceVfsVnode  *dvp;
@@ -410,35 +436,41 @@ typedef struct SceVopMkdirArgs {
 	SceVfsPath *path;
 	int mode;
 } SceVopMkdirArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopMkdirArgs);
 
 typedef struct SceVopRmdirArgs {
 	SceVfsVnode *dvp;
 	SceVfsVnode *vp;
 	SceVfsPath *path;
 } SceVopRmdirArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVopRmdirArgs);
 
 typedef struct SceVopDopenAgrs {
 	SceVfsVnode *vp;
 	SceVfsPath *path;
 	SceVfsFile *file;
 } SceVopDopenAgrs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVopDopenAgrs);
 
 typedef struct SceVopDcloseArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
 } SceVopDcloseArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVopDcloseArgs);
 
 typedef struct SceVopDreadArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
 	SceIoDirent *dir;
 } SceVopDreadArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVopDreadArgs);
 
 typedef struct SceVopGetstatArgs {
 	SceVfsVnode *vp;
 	SceVfsPath *path;
 	SceIoStat *stat;
 } SceVopGetstatArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVopGetstatArgs);
 
 typedef struct SceVopChstatArgs {
 	SceVfsVnode *vp;
@@ -446,6 +478,7 @@ typedef struct SceVopChstatArgs {
 	SceIoStat *stat;
 	int bit;
 } SceVopChstatArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopChstatArgs);
 
 typedef struct SceVopFchstatArgs {
 	SceVfsVnode *vp;
@@ -453,32 +486,38 @@ typedef struct SceVopFchstatArgs {
 	SceIoStat *stat;
 	SceUInt32 bit;
 } SceVopFchstatArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopFchstatArgs);
 
 typedef struct SceVopFgetstatArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
 	SceIoStat *stat;
 } SceVopFgetstatArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVopFgetstatArgs);
 
 typedef struct SceVopInactiveArgs {
 	SceVfsVnode *vp;
 } SceVopInactiveArgs;
+VITASDK_BUILD_ASSERT_EQ(0x4, SceVopInactiveArgs);
 
 typedef struct SceVopLinkArgs {
 	SceVfsVnode *fvp;
 	SceVfsVnode *tvp;
 } SceVopLinkArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVopLinkArgs);
 
 typedef struct SceVopUnlinkArgs {
 	SceVfsVnode *fvp;
 	SceVfsVnode *tvp;
 } SceVopUnlinkArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVopUnlinkArgs);
 
 typedef struct SceVopSyncArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
 	int flags;
 } SceVopSyncArgs;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceVopSyncArgs);
 
 typedef struct SceVopRenameArgs {
 	SceVfsVnode *odvp;
@@ -488,6 +527,7 @@ typedef struct SceVopRenameArgs {
 	SceVfsVnode **nvpp;
 	SceVfsPath *new_path;
 } SceVopRenameArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceVopRenameArgs);
 
 typedef struct SceVopPreadArgs {
 	SceVfsVnode *vp;
@@ -496,6 +536,7 @@ typedef struct SceVopPreadArgs {
 	SceSize nbyte;
 	SceOff offset;
 } SceVopPreadArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceVopPreadArgs);
 
 typedef struct SceVopPwriteArgs {
 	SceVfsVnode *vp;
@@ -504,6 +545,7 @@ typedef struct SceVopPwriteArgs {
 	SceSize nbyte;
 	SceOff offset;
 } SceVopPwriteArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceVopPwriteArgs);
 
 typedef struct SceVopWhiteoutArgs {
 	SceVfsVnode *dvp;
@@ -511,11 +553,13 @@ typedef struct SceVopWhiteoutArgs {
 	SceVfsPath *old_path;
 	SceVfsPath *new_path;
 } SceVopWhiteoutArgs;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceVopWhiteoutArgs);
 
 typedef struct SceVopCleanupArgs {
 	SceVfsVnode *vp;
 	SceVfsFile *file;
 } SceVopCleanupArgs;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVopCleanupArgs);
 
 typedef struct SceVopZerofillArgs {
 	SceVfsVnode *vp;
@@ -523,6 +567,7 @@ typedef struct SceVopZerofillArgs {
 	SceUInt64 unk1;
 	SceUInt64 unk2;
 } SceVopZerofillArgs;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceVopZerofillArgs);
 
 typedef struct SceVopTable {
 	int (*vop_open)(SceVopOpenArgs *argp);
@@ -568,6 +613,7 @@ typedef struct SceVopTable {
 	int (*vop_cleanup)(SceVopCleanupArgs *argp);
 	int (*vop_verofill)(SceVopZerofillArgs *argp);
 } SceVopTable;
+VITASDK_BUILD_ASSERT_EQ(0x74, SceVopTable);
 /** @} */
 
 /**
@@ -593,6 +639,7 @@ typedef struct SceVfsMountParam {
 
 	SceVopTable *vops;     //!< Overrides defaultVops in the VFS Info for the root vnode of the VFS
 } SceVfsMountParam;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceVfsMountParam);
 
 #define SCE_VFS_UMOUNT_FLAG_FORCE (0x1) //!< Force unmount
 
@@ -603,6 +650,7 @@ typedef struct SceVfsUmountParam {
 	const char *assign_name; //!< Assigned name of the mountpoint to unmount
 	int flag;         //!< One of SCE_VFS_UMOUNT_FLAG_*
 } SceVfsUmountParam;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceVfsUmountParam);
 
 /**
  * Register a VFS implementation
