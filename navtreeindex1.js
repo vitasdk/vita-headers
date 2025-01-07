@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"globals_k.html":[3,1,0,9],
+"globals_l.html":[3,1,0,10],
 "globals_m.html":[3,1,0,11],
 "globals_n.html":[3,1,0,12],
 "globals_o.html":[3,1,0,13],
@@ -33,8 +35,8 @@ var NAVTREEINDEX1 =
 "heap_8h_source.html":[3,0,1,2,2,3,3],
 "hid_8h.html":[3,0,1,0,27],
 "hid_8h_source.html":[3,0,1,0,27],
-"http_8h.html":[3,0,1,0,3,0],
-"http_8h_source.html":[3,0,1,0,3,0],
+"http_8h.html":[3,0,1,0,3,1],
+"http_8h_source.html":[3,0,1,0,3,1],
 "i2c_8h.html":[3,0,1,2,3,2],
 "i2c_8h_source.html":[3,0,1,2,3,2],
 "idstorage_8h.html":[3,0,1,2,11],
@@ -122,14 +124,14 @@ var NAVTREEINDEX1 =
 "namespacemembers.html":[1,1,0],
 "namespacemembers_enum.html":[1,1,1],
 "namespaces.html":[1,0],
-"net_2net_8h.html":[3,0,1,0,3,1],
-"net_2net_8h_source.html":[3,0,1,0,3,1],
-"net__syscalls_8h.html":[3,0,1,0,3,2],
-"net__syscalls_8h_source.html":[3,0,1,0,3,2],
+"net_2net_8h.html":[3,0,1,0,3,2],
+"net_2net_8h_source.html":[3,0,1,0,3,2],
+"net__syscalls_8h.html":[3,0,1,0,3,3],
+"net__syscalls_8h_source.html":[3,0,1,0,3,3],
 "netcheck__dialog_8h.html":[3,0,1,0,44],
 "netcheck__dialog_8h_source.html":[3,0,1,0,44],
-"netctl_8h.html":[3,0,1,0,3,3],
-"netctl_8h_source.html":[3,0,1,0,3,3],
+"netctl_8h.html":[3,0,1,0,3,4],
+"netctl_8h_source.html":[3,0,1,0,3,4],
 "netps_8h.html":[3,0,1,2,13],
 "netps_8h_source.html":[3,0,1,2,13],
 "ngs__internal_8h.html":[3,0,1,0,45],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "psp2kern_2kernel_2msif_8h_source.html":[3,0,1,2,2,18],
 "psp2kern_2kernel_2rtc_8h.html":[3,0,1,2,2,22],
 "psp2kern_2kernel_2rtc_8h_source.html":[3,0,1,2,2,22],
-"psp2kern_2kernel_2utils_8h.html":[3,0,1,2,2,33],
-"psp2kern_2kernel_2utils_8h_source.html":[3,0,1,2,2,33],
-"psp2kern_2npdrm_8h.html":[3,0,1,2,14]
+"psp2kern_2kernel_2utils_8h.html":[3,0,1,2,2,33]
 };

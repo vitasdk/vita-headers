@@ -319,6 +319,7 @@ var annotated_dup =
     [ "SceNetAdhocctlNickname", "group__ScePspnetAdhocctlUser.html#structSceNetAdhocctlNickname", "group__ScePspnetAdhocctlUser_structSceNetAdhocctlNickname" ],
     [ "SceNetAdhocctlParameter", "group__ScePspnetAdhocctlUser.html#structSceNetAdhocctlParameter", "group__ScePspnetAdhocctlUser_structSceNetAdhocctlParameter" ],
     [ "SceNetAdhocctlPeerInfo", "group__ScePspnetAdhocctlUser.html#structSceNetAdhocctlPeerInfo", "group__ScePspnetAdhocctlUser_structSceNetAdhocctlPeerInfo" ],
+    [ "SceNetAdhocMatchingMember", "group__SceNetAdhocMatchingUser.html#structSceNetAdhocMatchingMember", "group__SceNetAdhocMatchingUser_structSceNetAdhocMatchingMember" ],
     [ "SceNetAdhocPdpStat", "group__ScePspnetAdhocUser.html#structSceNetAdhocPdpStat", "group__ScePspnetAdhocUser_structSceNetAdhocPdpStat" ],
     [ "SceNetAdhocPollSd", "group__ScePspnetAdhocUser.html#structSceNetAdhocPollSd", "group__ScePspnetAdhocUser_structSceNetAdhocPollSd" ],
     [ "SceNetAdhocPtpStat", "group__ScePspnetAdhocUser.html#structSceNetAdhocPtpStat", "group__ScePspnetAdhocUser_structSceNetAdhocPtpStat" ],

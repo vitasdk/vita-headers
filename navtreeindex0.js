@@ -4,6 +4,8 @@ var NAVTREEINDEX0 =
 "acmgr_8h_source.html":[3,0,1,2,2,5],
 "address__space_8h.html":[3,0,1,2,2,3,0],
 "address__space_8h_source.html":[3,0,1,2,2,3,0],
+"adhoc__matching_8h.html":[3,0,1,0,3,0],
+"adhoc__matching_8h_source.html":[3,0,1,0,3,0],
 "aimgr_8h.html":[3,0,1,2,2,6],
 "aimgr_8h_source.html":[3,0,1,2,2,6],
 "annotated.html":[2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "globals_func_t.html":[3,1,1,6],
 "globals_func_v.html":[3,1,1,7],
 "globals_h.html":[3,1,0,7],
-"globals_i.html":[3,1,0,8],
-"globals_k.html":[3,1,0,9],
-"globals_l.html":[3,1,0,10]
+"globals_i.html":[3,1,0,8]
 };

@@ -61,8 +61,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "acmgr_8h.html",
-"globals_m.html",
-"psp2kern_2npdrm_8h_source.html"
+"globals_k.html",
+"psp2kern_2kernel_2utils_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

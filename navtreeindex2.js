@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"psp2kern_2kernel_2utils_8h_source.html":[3,0,1,2,2,33],
+"psp2kern_2npdrm_8h.html":[3,0,1,2,14],
 "psp2kern_2npdrm_8h_source.html":[3,0,1,2,14],
 "psp2kern_2power_8h.html":[3,0,1,2,17],
 "psp2kern_2power_8h_source.html":[3,0,1,2,17],
