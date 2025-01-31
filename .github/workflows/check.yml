@@ -87,7 +87,7 @@ jobs:
         make -j$(nproc)
     - name: Upload artifacts
       if: ${{ success() }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: vitasdk-db-stubs
         path: vitasdk-db-stubs.tar.bz2
