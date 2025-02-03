@@ -48,11 +48,12 @@ typedef enum ScePspnetAdhocErrorCode {
 	SCE_ERROR_NET_ADHOC_INVALID_ALIGNMENT      = 0x8041071D
 } ScePspnetAdhocErrorCode;
 
-struct SceNetAdhocPollSd {
+typedef struct _SceNetAdhocPollSd {
 	int id;
 	int events;
 	int revents;
-}; VITASDK_BUILD_ASSERT_EX(SceNetAdhocPollSd, 0xC == sizeof(struct SceNetAdhocPollSd));
+} SceNetAdhocPollSd;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceNetAdhocPollSd);
 
 typedef enum ScePspnetAdhocEvent {
 	SCE_NET_ADHOC_EV_SEND        = 0x0001,
@@ -66,13 +67,14 @@ typedef enum ScePspnetAdhocEvent {
 	SCE_NET_ADHOC_EV_DISCONNECT  = 0x0800
 } ScePspnetAdhocEvent;
 
-struct SceNetAdhocPdpStat {
-	struct SceNetAdhocPdpStat *next;
+typedef struct _SceNetAdhocPdpStat {
+	struct _SceNetAdhocPdpStat *next;
 	int id;
-	struct SceNetEtherAddr laddr;
+	SceNetEtherAddr laddr;
 	SceUShort16 lport;
 	unsigned int rcv_sb_cc;
-}; VITASDK_BUILD_ASSERT_EX(SceNetAdhocPdpStat, 0x14 == sizeof(struct SceNetAdhocPdpStat));
+} SceNetAdhocPdpStat;
+VITASDK_BUILD_ASSERT_EQ(0x14, SceNetAdhocPdpStat);
 
 typedef enum ScePspnetAdhocPtpState {
 	SCE_NET_ADHOC_PTP_STATE_CLOSED       = 0,
@@ -82,17 +84,18 @@ typedef enum ScePspnetAdhocPtpState {
 	SCE_NET_ADHOC_PTP_STATE_ESTABLISHED  = 4
 } ScePspnetAdhocPtpState;
 
-struct SceNetAdhocPtpStat {
-	struct SceNetAdhocPtpStat *next;
+typedef struct _SceNetAdhocPtpStat {
+	struct _SceNetAdhocPtpStat *next;
 	int id;
-	struct SceNetEtherAddr laddr;
-	struct SceNetEtherAddr paddr;
+	SceNetEtherAddr laddr;
+	SceNetEtherAddr paddr;
 	SceUShort16 lport;
 	SceUShort16 pport;
 	unsigned int snd_sb_cc;
 	unsigned int rcv_sb_cc;
 	int state;
-};
+} SceNetAdhocPtpStat;
+VITASDK_BUILD_ASSERT_EQ(0x24, SceNetAdhocPtpStat);
 
 typedef enum ScePspnetAdhocFlags {
 	SCE_NET_ADHOC_F_NONBLOCK      = 0x0001,
@@ -120,20 +123,20 @@ typedef enum ScePspnetAdhocFlags {
 int sceNetAdhocInit(void);
 int sceNetAdhocTerm(void);
 
-int sceNetAdhocPollSocket(struct SceNetAdhocPollSd *sds, int nsds, unsigned int timeout, int flag);
+int sceNetAdhocPollSocket(SceNetAdhocPollSd *sds, int nsds, unsigned int timeout, int flag);
 int sceNetAdhocSetSocketAlert(int id, int flag);
 int sceNetAdhocGetSocketAlert(int id, int *flag);
 
-int sceNetAdhocPdpCreate(const struct SceNetEtherAddr *saddr, SceUShort16 sport, unsigned int bufsize, int flag);
-int sceNetAdhocPdpSend(int id, const struct SceNetEtherAddr *daddr, SceUShort16 dport, const void *data, int len, unsigned int timeout, int flag);
-int sceNetAdhocPdpRecv(int id, struct SceNetEtherAddr *saddr, SceUShort16 *sport, void *buf, int *len, unsigned   int timeout, int flag);
+int sceNetAdhocPdpCreate(const SceNetEtherAddr *saddr, SceUShort16 sport, unsigned int bufsize, int flag);
+int sceNetAdhocPdpSend(int id, const SceNetEtherAddr *daddr, SceUShort16 dport, const void *data, int len, unsigned int timeout, int flag);
+int sceNetAdhocPdpRecv(int id, SceNetEtherAddr *saddr, SceUShort16 *sport, void *buf, int *len, unsigned   int timeout, int flag);
 int sceNetAdhocPdpDelete(int id, int flag);
 int sceNetAdhocGetPdpStat(int *buflen, void *buf);
 
-int sceNetAdhocPtpOpen(const struct SceNetEtherAddr *saddr, SceUShort16 sport, const struct SceNetEtherAddr *daddr, SceUShort16 dport, unsigned int bufsize, unsigned int rexmt_int, int rexmt_cnt, int flag);
+int sceNetAdhocPtpOpen(const SceNetEtherAddr *saddr, SceUShort16 sport, const SceNetEtherAddr *daddr, SceUShort16 dport, unsigned int bufsize, unsigned int rexmt_int, int rexmt_cnt, int flag);
 int sceNetAdhocPtpConnect(int id, unsigned int timeout, int flag);
-int sceNetAdhocPtpListen(const struct SceNetEtherAddr *saddr, SceUShort16 sport, unsigned int bufsize, unsigned int rexmt_int, int rexmt_cnt, int backlog, int flag);
-int sceNetAdhocPtpAccept(int id, struct SceNetEtherAddr *addr, SceUShort16 *port, unsigned int timeout, int flag);
+int sceNetAdhocPtpListen(const SceNetEtherAddr *saddr, SceUShort16 sport, unsigned int bufsize, unsigned int rexmt_int, int rexmt_cnt, int backlog, int flag);
+int sceNetAdhocPtpAccept(int id, SceNetEtherAddr *addr, SceUShort16 *port, unsigned int timeout, int flag);
 int sceNetAdhocPtpSend(int id, const void *data, int *len, unsigned int timeout, int flag);
 int sceNetAdhocPtpRecv(int id, void *buf, int *len, unsigned int timeout, int flag);
 int sceNetAdhocPtpFlush(int id, unsigned int timeout, int flag);
@@ -145,4 +148,3 @@ int sceNetAdhocGetPtpStat(int *buflen, void *buf);
 #endif
 
 #endif /* _PSP2_PSPNET_ADHOC_H_ */
-
