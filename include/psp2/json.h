@@ -583,7 +583,7 @@ public:
 	 *
 	 * @param[in] value - New value
 	 */
-	void set(SceBool value);
+	void set(bool value);
 	/**
 	 * Set the value to a long integer(64 bits)
 	 *
@@ -650,7 +650,7 @@ public:
 	 * @return  The value. Will return false if the Value is not of type
 	 *          ValueType::BoolValue.
 	 */
-	const SceBool& getBoolean() const;
+	const bool& getBoolean() const;
 	/**
 	 * Returns a constant reference to the value.
 	 *
@@ -846,7 +846,7 @@ private:
 	NullAccessCallback cb; //!< The value's NullAccessCallback.
 	union
 	{
-	SceBool boolean;
+	bool boolean;
 	SceInt64 integer;
 	SceUInt64 uinteger;
 	SceDouble real;
