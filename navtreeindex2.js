@@ -41,6 +41,8 @@ var NAVTREEINDEX2 =
 "sblacmgr_8h_source.html":[3,0,1,0,64],
 "screenshot_8h.html":[3,0,1,0,65],
 "screenshot_8h_source.html":[3,0,1,0,65],
+"sdif_8h.html":[3,0,1,2,3,5],
+"sdif_8h_source.html":[3,0,1,2,3,5],
 "sdstor_8h.html":[3,0,1,2,0,1],
 "sdstor_8h_source.html":[3,0,1,2,0,1],
 "semaphore_8h.html":[3,0,1,0,2,0,8],
