@@ -73,5 +73,6 @@
 #include <psp2kern/lowio/i2c.h>
 #include <psp2kern/lowio/iftu.h>
 #include <psp2kern/lowio/pervasive.h>
+#include <psp2kern/lowio/sdif.h>
 
 #endif /* _VITASDKKERN_H_ */
