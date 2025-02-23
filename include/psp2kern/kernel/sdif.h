@@ -1,10 +1,10 @@
 /**
  * \kernelgroup{SceSdif}
- * \usage{psp2kern/lowio/sdif.h,SceSdifForDriver}
+ * \usage{psp2kern/kernel/sdif.h,SceSdifForDriver}
  */
 
-#ifndef _PSP2KERN_LOWIO_SDIF_H_
-#define _PSP2KERN_LOWIO_SDIF_H_
+#ifndef _PSP2KERN_KERNEL_SDIF_H_
+#define _PSP2KERN_KERNEL_SDIF_H_
 
 #include <psp2kern/types.h>
 
@@ -37,4 +37,4 @@ int ksceSdifReadCmd56(SceSdifDeviceContext* dev_ctx, void* buf, SceSize size);
 }
 #endif
 
-#endif /* _PSP2KERN_LOWIO_SDIF_H_ */
+#endif /* _PSP2KERN_KERNEL_SDIF_H_ */

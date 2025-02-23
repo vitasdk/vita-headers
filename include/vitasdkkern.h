@@ -49,6 +49,7 @@
 #include <psp2kern/kernel/proc_event.h>
 #include <psp2kern/kernel/processmgr.h>
 #include <psp2kern/kernel/rtc.h>
+#include <psp2kern/kernel/sdif.h>
 #include <psp2kern/kernel/sm_comm.h>
 #include <psp2kern/kernel/ssmgr.h>
 #include <psp2kern/kernel/suspend.h>
@@ -73,6 +74,5 @@
 #include <psp2kern/lowio/i2c.h>
 #include <psp2kern/lowio/iftu.h>
 #include <psp2kern/lowio/pervasive.h>
-#include <psp2kern/lowio/sdif.h>
 
 #endif /* _VITASDKKERN_H_ */
