@@ -249,5 +249,5 @@ var NAVTREEINDEX1 =
 "psp2kern_2kernel_2msif_8h_source.html":[3,0,1,2,2,18],
 "psp2kern_2kernel_2rtc_8h.html":[3,0,1,2,2,22],
 "psp2kern_2kernel_2rtc_8h_source.html":[3,0,1,2,2,22],
-"psp2kern_2kernel_2utils_8h.html":[3,0,1,2,2,33]
+"psp2kern_2kernel_2utils_8h.html":[3,0,1,2,2,34]
 };

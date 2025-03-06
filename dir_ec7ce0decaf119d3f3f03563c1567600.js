@@ -23,6 +23,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "proc_event.h", "proc__event_8h.html", "proc__event_8h" ],
     [ "processmgr.h", "ern_2kernel_2processmgr_8h.html", "ern_2kernel_2processmgr_8h" ],
     [ "rtc.h", "psp2kern_2kernel_2rtc_8h.html", "psp2kern_2kernel_2rtc_8h" ],
+    [ "sdif.h", "sdif_8h.html", "sdif_8h" ],
     [ "sm_comm.h", "sm__comm_8h.html", "sm__comm_8h" ],
     [ "ssmgr.h", "ssmgr_8h.html", "ssmgr_8h" ],
     [ "suspend.h", "suspend_8h.html", "suspend_8h" ],
