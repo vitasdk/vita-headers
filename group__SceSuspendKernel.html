@@ -73,11 +73,29 @@ $(document).ready(function(){initNavTree('group__SceSuspendKernel.html',''); ini
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceSuspend.html">Suspend Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gab4b3d9582f3d8e17aa5ff9ade6eee8e8" id="r_gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a>) (int resume, int eventid, void *args, void *opt)</td></tr>
+<tr class="separator:gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga317448d654802c962fe786d5cf8c7c52" id="r_ga317448d654802c962fe786d5cf8c7c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga317448d654802c962fe786d5cf8c7c52">ksceKernelPowerTick</a> (<a class="el" href="group__SceProcessmgrKernel.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memdesc:ga317448d654802c962fe786d5cf8c7c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <br /></td></tr>
+<tr class="separator:ga317448d654802c962fe786d5cf8c7c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7f1736fd9b7b9d3473d81573a3e875f" id="r_gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">ksceKernelRegisterSysEventHandler</a> (const char *name, <a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a> handler, void *args)</td></tr>
+<tr class="memdesc:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register system event handler.  <br /></td></tr>
+<tr class="separator:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -90,22 +108,7 @@ $(document).ready(function(){initNavTree('group__SceSuspendKernel.html',''); ini
 </p><div class="fragment"><div class="line">SceKernelSuspendForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga317448d654802c962fe786d5cf8c7c52" id="r_ga317448d654802c962fe786d5cf8c7c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga317448d654802c962fe786d5cf8c7c52">ksceKernelPowerTick</a> (<a class="el" href="group__SceProcessmgrKernel.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
-<tr class="memdesc:ga317448d654802c962fe786d5cf8c7c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <br /></td></tr>
-<tr class="separator:ga317448d654802c962fe786d5cf8c7c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7f1736fd9b7b9d3473d81573a3e875f" id="r_gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">ksceKernelRegisterSysEventHandler</a> (const char *name, <a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a> handler, void *args)</td></tr>
-<tr class="memdesc:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register system event handler.  <br /></td></tr>
-<tr class="separator:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gab4b3d9582f3d8e17aa5ff9ade6eee8e8" id="r_gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a>) (int resume, int eventid, void *args, void *opt)</td></tr>
-<tr class="separator:gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Typedef Documentation</h2>
+ <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab4b3d9582f3d8e17aa5ff9ade6eee8e8" name="gab4b3d9582f3d8e17aa5ff9ade6eee8e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">&#9670;&#160;</a></span>SceSysEventHandler</h2>
 

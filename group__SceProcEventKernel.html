@@ -73,23 +73,25 @@ $(document).ready(function(){initNavTree('group__SceProcEventKernel.html',''); i
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceProcEvent.html">Process event Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="proc__event_8h.html">psp2kern/kernel/proc_event.h</a>&gt;</span> </div>
-<div class="ttc" id="aproc__event_8h_html"><div class="ttname"><a href="proc__event_8h.html">proc_event.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceProcEventForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceProcEventInvokeParam1" id="r_structSceProcEventInvokeParam1"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a></td></tr>
+<tr class="separator:structSceProcEventInvokeParam1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceProcEventInvokeParam2" id="r_structSceProcEventInvokeParam2"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam2">SceProcEventInvokeParam2</a></td></tr>
+<tr class="separator:structSceProcEventInvokeParam2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceProcEventHandler" id="r_structSceProcEventHandler"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#structSceProcEventHandler">SceProcEventHandler</a></td></tr>
+<tr class="separator:structSceProcEventHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gab4df828952d8206c9a5a0c0ce4935594" id="r_gab4df828952d8206c9a5a0c0ce4935594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#gab4df828952d8206c9a5a0c0ce4935594">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a>)</td></tr>
@@ -107,8 +109,55 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0554559441b0007591ec2787a7527b75" id="r_ga0554559441b0007591ec2787a7527b75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga0554559441b0007591ec2787a7527b75">ksceKernelInvokeProcEventHandler</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int event_id, int event_type, void *param, void *a5, int a6)</td></tr>
 <tr class="memdesc:ga0554559441b0007591ec2787a7527b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke process event handler.  <br /></td></tr>
 <tr class="separator:ga0554559441b0007591ec2787a7527b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga7d506cea2f8c007bf9c0afd6aa1bbc87" id="r_ga7d506cea2f8c007bf9c0afd6aa1bbc87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga7d506cea2f8c007bf9c0afd6aa1bbc87">SceProcEventInvokeParam1::size</a></td></tr>
+<tr class="separator:ga7d506cea2f8c007bf9c0afd6aa1bbc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f930fcf963afc90cbb89f9f8ac54c63" id="r_ga4f930fcf963afc90cbb89f9f8ac54c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga4f930fcf963afc90cbb89f9f8ac54c63">SceProcEventInvokeParam1::unk_0x04</a></td></tr>
+<tr class="separator:ga4f930fcf963afc90cbb89f9f8ac54c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa65dbef122320fc70e57908f92099eec" id="r_gaa65dbef122320fc70e57908f92099eec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#gaa65dbef122320fc70e57908f92099eec">SceProcEventInvokeParam1::unk_0x08</a></td></tr>
+<tr class="separator:gaa65dbef122320fc70e57908f92099eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a0967263c7640428236ed4dacd0bdac" id="r_ga9a0967263c7640428236ed4dacd0bdac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga9a0967263c7640428236ed4dacd0bdac">SceProcEventInvokeParam1::unk_0x0C</a></td></tr>
+<tr class="separator:ga9a0967263c7640428236ed4dacd0bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ab721954e4c719366765bdf8fb7420d" id="r_ga6ab721954e4c719366765bdf8fb7420d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga6ab721954e4c719366765bdf8fb7420d">SceProcEventInvokeParam2::size</a></td></tr>
+<tr class="separator:ga6ab721954e4c719366765bdf8fb7420d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6317f3137bfb4d0223eb22fcb6977e" id="r_ga4b6317f3137bfb4d0223eb22fcb6977e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga4b6317f3137bfb4d0223eb22fcb6977e">SceProcEventInvokeParam2::pid</a></td></tr>
+<tr class="separator:ga4b6317f3137bfb4d0223eb22fcb6977e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga956dbac8abd7800f3a2926df7c6364e4" id="r_ga956dbac8abd7800f3a2926df7c6364e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga956dbac8abd7800f3a2926df7c6364e4">SceProcEventInvokeParam2::unk_0x08</a></td></tr>
+<tr class="separator:ga956dbac8abd7800f3a2926df7c6364e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9635e9c5a8d4afb8fb02ca887a42a47" id="r_gaa9635e9c5a8d4afb8fb02ca887a42a47"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#gaa9635e9c5a8d4afb8fb02ca887a42a47">SceProcEventInvokeParam2::unk_0x0C</a></td></tr>
+<tr class="separator:gaa9635e9c5a8d4afb8fb02ca887a42a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ac04c3ee946a3d0506308d849c48350" id="r_ga2ac04c3ee946a3d0506308d849c48350"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga2ac04c3ee946a3d0506308d849c48350">SceProcEventInvokeParam2::unk_0x10</a></td></tr>
+<tr class="separator:ga2ac04c3ee946a3d0506308d849c48350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d135ff9dc8e2dd6ffa681a71a3be651" id="r_ga1d135ff9dc8e2dd6ffa681a71a3be651"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga1d135ff9dc8e2dd6ffa681a71a3be651">SceProcEventHandler::size</a></td></tr>
+<tr class="separator:ga1d135ff9dc8e2dd6ffa681a71a3be651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga227fe99d5957372a099105441d34dde2" id="r_ga227fe99d5957372a099105441d34dde2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga227fe99d5957372a099105441d34dde2">SceProcEventHandler::create</a> )(<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam2">SceProcEventInvokeParam2</a> *a2, int a3)</td></tr>
+<tr class="separator:ga227fe99d5957372a099105441d34dde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccc83b72f1baa8035e39ed0f72fa288b" id="r_gaccc83b72f1baa8035e39ed0f72fa288b"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#gaccc83b72f1baa8035e39ed0f72fa288b">SceProcEventHandler::exit</a> )(<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a2, int a3)</td></tr>
+<tr class="separator:gaccc83b72f1baa8035e39ed0f72fa288b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47a7b43278da8a5acad865ebd09586d5" id="r_ga47a7b43278da8a5acad865ebd09586d5"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga47a7b43278da8a5acad865ebd09586d5">SceProcEventHandler::kill</a> )(<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a2, int a3)</td></tr>
+<tr class="separator:ga47a7b43278da8a5acad865ebd09586d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c78c5a154f31713327586c8058d73ab" id="r_ga4c78c5a154f31713327586c8058d73ab"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga4c78c5a154f31713327586c8058d73ab">SceProcEventHandler::stop</a> )(<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int event_type, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a3, int a4)</td></tr>
+<tr class="separator:ga4c78c5a154f31713327586c8058d73ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa22e488f062fcd3c4acd9967590327d5" id="r_gaa22e488f062fcd3c4acd9967590327d5"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#gaa22e488f062fcd3c4acd9967590327d5">SceProcEventHandler::start</a> )(<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int event_type, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a3, int a4)</td></tr>
+<tr class="separator:gaa22e488f062fcd3c4acd9967590327d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d58f814ecb9d0010ace05327bb865b1" id="r_ga4d58f814ecb9d0010ace05327bb865b1"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcEventKernel.html#ga4d58f814ecb9d0010ace05327bb865b1">SceProcEventHandler::switch_process</a> )(int event_id, int event_type, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam2">SceProcEventInvokeParam2</a> *a3, int a4)</td></tr>
+<tr class="separator:ga4d58f814ecb9d0010ace05327bb865b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="proc__event_8h.html">psp2kern/kernel/proc_event.h</a>&gt;</span> </div>
+<div class="ttc" id="aproc__event_8h_html"><div class="ttname"><a href="proc__event_8h.html">proc_event.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceProcEventForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceProcEventInvokeParam1" id="structSceProcEventInvokeParam1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceProcEventInvokeParam1">&#9670;&#160;</a></span>SceProcEventInvokeParam1</h2>
 
@@ -448,6 +497,231 @@ unk_0x10</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uid on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga7d506cea2f8c007bf9c0afd6aa1bbc87" name="ga7d506cea2f8c007bf9c0afd6aa1bbc87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d506cea2f8c007bf9c0afd6aa1bbc87">&#9670;&#160;</a></span>size <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceProcEventInvokeParam1::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4f930fcf963afc90cbb89f9f8ac54c63" name="ga4f930fcf963afc90cbb89f9f8ac54c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f930fcf963afc90cbb89f9f8ac54c63">&#9670;&#160;</a></span>unk_0x04</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceProcEventInvokeParam1::unk_0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa65dbef122320fc70e57908f92099eec" name="gaa65dbef122320fc70e57908f92099eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa65dbef122320fc70e57908f92099eec">&#9670;&#160;</a></span>unk_0x08 <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceProcEventInvokeParam1::unk_0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9a0967263c7640428236ed4dacd0bdac" name="ga9a0967263c7640428236ed4dacd0bdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a0967263c7640428236ed4dacd0bdac">&#9670;&#160;</a></span>unk_0x0C <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceProcEventInvokeParam1::unk_0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6ab721954e4c719366765bdf8fb7420d" name="ga6ab721954e4c719366765bdf8fb7420d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ab721954e4c719366765bdf8fb7420d">&#9670;&#160;</a></span>size <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceProcEventInvokeParam2::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4b6317f3137bfb4d0223eb22fcb6977e" name="ga4b6317f3137bfb4d0223eb22fcb6977e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b6317f3137bfb4d0223eb22fcb6977e">&#9670;&#160;</a></span>pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceProcEventInvokeParam2::pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga956dbac8abd7800f3a2926df7c6364e4" name="ga956dbac8abd7800f3a2926df7c6364e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga956dbac8abd7800f3a2926df7c6364e4">&#9670;&#160;</a></span>unk_0x08 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceProcEventInvokeParam2::unk_0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9635e9c5a8d4afb8fb02ca887a42a47" name="gaa9635e9c5a8d4afb8fb02ca887a42a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9635e9c5a8d4afb8fb02ca887a42a47">&#9670;&#160;</a></span>unk_0x0C <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceProcEventInvokeParam2::unk_0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2ac04c3ee946a3d0506308d849c48350" name="ga2ac04c3ee946a3d0506308d849c48350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ac04c3ee946a3d0506308d849c48350">&#9670;&#160;</a></span>unk_0x10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceProcEventInvokeParam2::unk_0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1d135ff9dc8e2dd6ffa681a71a3be651" name="ga1d135ff9dc8e2dd6ffa681a71a3be651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d135ff9dc8e2dd6ffa681a71a3be651">&#9670;&#160;</a></span>size <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceProcEventHandler::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga227fe99d5957372a099105441d34dde2" name="ga227fe99d5957372a099105441d34dde2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga227fe99d5957372a099105441d34dde2">&#9670;&#160;</a></span>create</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceProcEventHandler::create) (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam2">SceProcEventInvokeParam2</a> *a2, int a3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaccc83b72f1baa8035e39ed0f72fa288b" name="gaccc83b72f1baa8035e39ed0f72fa288b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccc83b72f1baa8035e39ed0f72fa288b">&#9670;&#160;</a></span>exit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceProcEventHandler::exit) (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a2, int a3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga47a7b43278da8a5acad865ebd09586d5" name="ga47a7b43278da8a5acad865ebd09586d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47a7b43278da8a5acad865ebd09586d5">&#9670;&#160;</a></span>kill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceProcEventHandler::kill) (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a2, int a3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c78c5a154f31713327586c8058d73ab" name="ga4c78c5a154f31713327586c8058d73ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c78c5a154f31713327586c8058d73ab">&#9670;&#160;</a></span>stop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceProcEventHandler::stop) (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int event_type, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a3, int a4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa22e488f062fcd3c4acd9967590327d5" name="gaa22e488f062fcd3c4acd9967590327d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa22e488f062fcd3c4acd9967590327d5">&#9670;&#160;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceProcEventHandler::start) (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int event_type, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam1">SceProcEventInvokeParam1</a> *a3, int a4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4d58f814ecb9d0010ace05327bb865b1" name="ga4d58f814ecb9d0010ace05327bb865b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d58f814ecb9d0010ace05327bb865b1">&#9670;&#160;</a></span>switch_process</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceProcEventHandler::switch_process) (int event_id, int event_type, <a class="el" href="group__SceProcEventKernel.html#structSceProcEventInvokeParam2">SceProcEventInvokeParam2</a> *a3, int a4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

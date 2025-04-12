@@ -73,23 +73,61 @@ $(document).ready(function(){initNavTree('group__SceIftuKernel.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Lowio.html">Low-level I/O and communications</a> &raquo; <a class="el" href="group__SceIftu.html">IFTU Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="iftu_8h.html">psp2kern/lowio/iftu.h</a>&gt;</span> </div>
-<div class="ttc" id="aiftu_8h_html"><div class="ttname"><a href="iftu_8h.html">iftu.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceIftuForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceIftuCscParams" id="r_structSceIftuCscParams"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#structSceIftuCscParams">SceIftuCscParams</a></td></tr>
+<tr class="separator:structSceIftuCscParams"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIftuConvParams" id="r_structSceIftuConvParams"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#structSceIftuConvParams">SceIftuConvParams</a></td></tr>
+<tr class="separator:structSceIftuConvParams"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIftuFrameBuf" id="r_structSceIftuFrameBuf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a></td></tr>
+<tr class="separator:structSceIftuFrameBuf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIftuPlaneState" id="r_structSceIftuPlaneState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#structSceIftuPlaneState">SceIftuPlaneState</a></td></tr>
+<tr class="separator:structSceIftuPlaneState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gab36264b4088d8482d1e599718b38856a" id="r_gab36264b4088d8482d1e599718b38856a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gab36264b4088d8482d1e599718b38856a">SceIftuErrorCode</a> { <a class="el" href="group__SceIftuKernel.html#ggab36264b4088d8482d1e599718b38856aa9d3a059c445ad3091b59d8a04b134ae2">SCE_IFTU_ERROR_INVALID_PLANE</a> = 0x803F0700
+, <a class="el" href="group__SceIftuKernel.html#ggab36264b4088d8482d1e599718b38856aa049db5a7cf8102059a8840046ec7be18">SCE_IFTU_ERROR_INVALID_PARAM</a> = 0x803F0701
+, <a class="el" href="group__SceIftuKernel.html#ggab36264b4088d8482d1e599718b38856aa49256d8ff4099c466c1dbcdbc77d3ab5">SCE_IFTU_ERROR_INVALID_PIXELFORMAT</a> = 0x803F0703
+, <a class="el" href="group__SceIftuKernel.html#ggab36264b4088d8482d1e599718b38856aafabb2c440874b51fca3078496306a642">SCE_IFTU_ERROR_PLANE_BUSY</a> = 0x803F0704
+ }</td></tr>
+<tr class="separator:gab36264b4088d8482d1e599718b38856a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaee54b0515f11151d0a5980148aba294" id="r_gaaee54b0515f11151d0a5980148aba294"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaaee54b0515f11151d0a5980148aba294">SceIftuPixelformat</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294abcd0fc562d9aca1d097946b80350c5f5">SCE_IFTU_PIXELFORMAT_BGR565</a> = 0x01
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a7eacf8f3a7dc81168d1b52331a9b0435">SCE_IFTU_PIXELFORMAT_RGB565</a> = 0x02
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a3c6a2ddb5bbec10cf6601aa08d630233">SCE_IFTU_PIXELFORMAT_BGRA5551</a> = 0x04
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a8cfd8563d25cf1ec0ee3d6675fd2f786">SCE_IFTU_PIXELFORMAT_RGBA5551</a> = 0x08
+, <br />
+&#160;&#160;<a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a863cf8089df8fec29a02babe59a26c22">SCE_IFTU_PIXELFORMAT_BGRX8888</a> = 0x10
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a5febb218eb86b196cdb16c8b4dac43c8">SCE_IFTU_PIXELFORMAT_RGBX8888</a> = 0x20
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294ae7020fe24692091c252d21b72b5ef8a0">SCE_IFTU_PIXELFORMAT_BGRA1010102</a> = 0x40
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294ac2dd16a9fddefaa210261b853ce6d680">SCE_IFTU_PIXELFORMAT_RGBA1010102</a> = 0x80
+, <br />
+&#160;&#160;<a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294ad56319799f947bb18e0f32c8f729f0ac">SCE_IFTU_PIXELFORMAT_BGRP</a> = 0x100
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a22b41e001af531ef1890cb3ff7c8e3db">SCE_IFTU_PIXELFORMAT_RGBX8888_MULT</a> = 0x1000
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a066afb3cd6d76e5f56d1f50aac214420">SCE_IFTU_PIXELFORMAT_BGRX8888_MULT</a> = 0x2000
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a3387e78995ce3145e603fa858078f15f">SCE_IFTU_PIXELFORMAT_RGBA1010102_MULT</a> = 0x4000
+, <br />
+&#160;&#160;<a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a297375f2a7ac8aa800f42a952f765bba">SCE_IFTU_PIXELFORMAT_BGRA1010102_MULT</a> = 0x8000
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a7d46a7af830b96531ca0a758aa461bef">SCE_IFTU_PIXELFORMAT_NV12</a> = 0x10000
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294ae03986d6cd6ddba7260e110012ad3372">SCE_IFTU_PIXELFORMAT_YUV420</a> = 0x20000
+, <a class="el" href="group__SceIftuKernel.html#ggaaee54b0515f11151d0a5980148aba294a9b01254e384d1e53eabd3ed4e6b20226">SCE_IFTU_PIXELFORMAT_YUV422</a> = 0x200000
+<br />
+ }</td></tr>
+<tr class="separator:gaaee54b0515f11151d0a5980148aba294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga62e6bf5228584c7e361246f55b29166a" id="r_ga62e6bf5228584c7e361246f55b29166a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga62e6bf5228584c7e361246f55b29166a">VITASDK_BUILD_ASSERT_EQ</a> (0x3C, <a class="el" href="group__SceIftuKernel.html#structSceIftuCscParams">SceIftuCscParams</a>)</td></tr>
@@ -102,8 +140,101 @@ Functions</h2></td></tr>
 <tr class="separator:ga56b522c133f94a46968cdb88e7853b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec5fdf4ee5d2390bd4edba0c5cd1c877" id="r_gaec5fdf4ee5d2390bd4edba0c5cd1c877"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaec5fdf4ee5d2390bd4edba0c5cd1c877">ksceIftuCsc</a> (<a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a> *dst, <a class="el" href="group__SceIftuKernel.html#structSceIftuPlaneState">SceIftuPlaneState</a> *src, <a class="el" href="group__SceIftuKernel.html#structSceIftuConvParams">SceIftuConvParams</a> *params)</td></tr>
 <tr class="separator:gaec5fdf4ee5d2390bd4edba0c5cd1c877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga30e882fd0c2c73147538f2b2a750a4e7" id="r_ga30e882fd0c2c73147538f2b2a750a4e7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga30e882fd0c2c73147538f2b2a750a4e7">SceIftuCscParams::post_add_0</a></td></tr>
+<tr class="separator:ga30e882fd0c2c73147538f2b2a750a4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae635f1d9c606be14c7152a854f986b36" id="r_gae635f1d9c606be14c7152a854f986b36"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gae635f1d9c606be14c7152a854f986b36">SceIftuCscParams::post_add_1_2</a></td></tr>
+<tr class="separator:gae635f1d9c606be14c7152a854f986b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09b27a1ff6fc6a65bcae8d9a4ba6226f" id="r_ga09b27a1ff6fc6a65bcae8d9a4ba6226f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga09b27a1ff6fc6a65bcae8d9a4ba6226f">SceIftuCscParams::post_clamp_max_0</a></td></tr>
+<tr class="separator:ga09b27a1ff6fc6a65bcae8d9a4ba6226f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecb3138e2ea3a0fe4aa59c76b6af9dda" id="r_gaecb3138e2ea3a0fe4aa59c76b6af9dda"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaecb3138e2ea3a0fe4aa59c76b6af9dda">SceIftuCscParams::post_clamp_min_0</a></td></tr>
+<tr class="separator:gaecb3138e2ea3a0fe4aa59c76b6af9dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b93fbb818b66d2c9d36a4ffc374c2ba" id="r_ga3b93fbb818b66d2c9d36a4ffc374c2ba"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga3b93fbb818b66d2c9d36a4ffc374c2ba">SceIftuCscParams::post_clamp_max_1_2</a></td></tr>
+<tr class="separator:ga3b93fbb818b66d2c9d36a4ffc374c2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8449439472d682589331df7bf68bc813" id="r_ga8449439472d682589331df7bf68bc813"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga8449439472d682589331df7bf68bc813">SceIftuCscParams::post_clamp_min_1_2</a></td></tr>
+<tr class="separator:ga8449439472d682589331df7bf68bc813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4fb86ecf0fb29d7ff4748e0b021cf68" id="r_gaf4fb86ecf0fb29d7ff4748e0b021cf68"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaf4fb86ecf0fb29d7ff4748e0b021cf68">SceIftuCscParams::ctm</a> [3][3]</td></tr>
+<tr class="separator:gaf4fb86ecf0fb29d7ff4748e0b021cf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa36deb3692b65a43598bd73509b361f6" id="r_gaa36deb3692b65a43598bd73509b361f6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaa36deb3692b65a43598bd73509b361f6">SceIftuConvParams::size</a></td></tr>
+<tr class="separator:gaa36deb3692b65a43598bd73509b361f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf6f2763c2bdf2393c0821797d3a5583" id="r_gadf6f2763c2bdf2393c0821797d3a5583"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gadf6f2763c2bdf2393c0821797d3a5583">SceIftuConvParams::unk04</a></td></tr>
+<tr class="separator:gadf6f2763c2bdf2393c0821797d3a5583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacaf9c2878660020cd2c556a52445b4b7" id="r_gacaf9c2878660020cd2c556a52445b4b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIftuKernel.html#structSceIftuCscParams">SceIftuCscParams</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gacaf9c2878660020cd2c556a52445b4b7">SceIftuConvParams::csc_params1</a></td></tr>
+<tr class="separator:gacaf9c2878660020cd2c556a52445b4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d65de6536c4a9ad682f863ed0b5bd1f" id="r_ga2d65de6536c4a9ad682f863ed0b5bd1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIftuKernel.html#structSceIftuCscParams">SceIftuCscParams</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga2d65de6536c4a9ad682f863ed0b5bd1f">SceIftuConvParams::csc_params2</a></td></tr>
+<tr class="separator:ga2d65de6536c4a9ad682f863ed0b5bd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae23719ed9621f3c4ed27b1f02e465c1d" id="r_gae23719ed9621f3c4ed27b1f02e465c1d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gae23719ed9621f3c4ed27b1f02e465c1d">SceIftuConvParams::csc_control</a></td></tr>
+<tr class="separator:gae23719ed9621f3c4ed27b1f02e465c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe1bc743a152eeb0945d3f07198a0507" id="r_gafe1bc743a152eeb0945d3f07198a0507"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gafe1bc743a152eeb0945d3f07198a0507">SceIftuConvParams::unk14</a></td></tr>
+<tr class="separator:gafe1bc743a152eeb0945d3f07198a0507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7ddb5b54b42363a3fb165f78e39a28b" id="r_gac7ddb5b54b42363a3fb165f78e39a28b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gac7ddb5b54b42363a3fb165f78e39a28b">SceIftuConvParams::unk18</a></td></tr>
+<tr class="separator:gac7ddb5b54b42363a3fb165f78e39a28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad00ed5a5d51654d0beb57a53995d7c20" id="r_gad00ed5a5d51654d0beb57a53995d7c20"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gad00ed5a5d51654d0beb57a53995d7c20">SceIftuConvParams::unk1C</a></td></tr>
+<tr class="separator:gad00ed5a5d51654d0beb57a53995d7c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52063fe0104c408759a384aeed0035b1" id="r_ga52063fe0104c408759a384aeed0035b1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga52063fe0104c408759a384aeed0035b1">SceIftuConvParams::alpha</a></td></tr>
+<tr class="separator:ga52063fe0104c408759a384aeed0035b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8244c69e834a51dda612e89b8dd9a009" id="r_ga8244c69e834a51dda612e89b8dd9a009"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga8244c69e834a51dda612e89b8dd9a009">SceIftuConvParams::unk24</a></td></tr>
+<tr class="separator:ga8244c69e834a51dda612e89b8dd9a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4722eae54666599360911b5527c46aac" id="r_ga4722eae54666599360911b5527c46aac"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga4722eae54666599360911b5527c46aac">SceIftuFrameBuf::pixelformat</a></td></tr>
+<tr class="separator:ga4722eae54666599360911b5527c46aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga258adeead080a9df23c1a6726079ef95" id="r_ga258adeead080a9df23c1a6726079ef95"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga258adeead080a9df23c1a6726079ef95">SceIftuFrameBuf::width</a></td></tr>
+<tr class="separator:ga258adeead080a9df23c1a6726079ef95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9ab5e2ca2abddddc4fe883a81bc30c5" id="r_gad9ab5e2ca2abddddc4fe883a81bc30c5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gad9ab5e2ca2abddddc4fe883a81bc30c5">SceIftuFrameBuf::height</a></td></tr>
+<tr class="separator:gad9ab5e2ca2abddddc4fe883a81bc30c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6daaadae5bd3d04c7f9a7182ff52b58e" id="r_ga6daaadae5bd3d04c7f9a7182ff52b58e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga6daaadae5bd3d04c7f9a7182ff52b58e">SceIftuFrameBuf::leftover_stride</a></td></tr>
+<tr class="separator:ga6daaadae5bd3d04c7f9a7182ff52b58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb2f37392a4a08800cbd3e545a55c098" id="r_gadb2f37392a4a08800cbd3e545a55c098"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gadb2f37392a4a08800cbd3e545a55c098">SceIftuFrameBuf::leftover_align</a></td></tr>
+<tr class="separator:gadb2f37392a4a08800cbd3e545a55c098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45f4828995b49b473b05d612056d7fb4" id="r_ga45f4828995b49b473b05d612056d7fb4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga45f4828995b49b473b05d612056d7fb4">SceIftuFrameBuf::paddr0</a></td></tr>
+<tr class="separator:ga45f4828995b49b473b05d612056d7fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga470034c71296a6430ec378f571c0575d" id="r_ga470034c71296a6430ec378f571c0575d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga470034c71296a6430ec378f571c0575d">SceIftuFrameBuf::paddr1</a></td></tr>
+<tr class="separator:ga470034c71296a6430ec378f571c0575d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42fe52c8612a5f91b138334041d6d724" id="r_ga42fe52c8612a5f91b138334041d6d724"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga42fe52c8612a5f91b138334041d6d724">SceIftuFrameBuf::paddr2</a></td></tr>
+<tr class="separator:ga42fe52c8612a5f91b138334041d6d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2398e8c7da57ac2a7eda0b6cb9db73a" id="r_gab2398e8c7da57ac2a7eda0b6cb9db73a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gab2398e8c7da57ac2a7eda0b6cb9db73a">SceIftuPlaneState::fb</a></td></tr>
+<tr class="separator:gab2398e8c7da57ac2a7eda0b6cb9db73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50871f82dbaa262e31dc9d759d9a6d95" id="r_ga50871f82dbaa262e31dc9d759d9a6d95"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga50871f82dbaa262e31dc9d759d9a6d95">SceIftuPlaneState::unk20</a></td></tr>
+<tr class="separator:ga50871f82dbaa262e31dc9d759d9a6d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433db34f09eeaca35700971201cb62f1" id="r_ga433db34f09eeaca35700971201cb62f1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga433db34f09eeaca35700971201cb62f1">SceIftuPlaneState::src_x</a></td></tr>
+<tr class="separator:ga433db34f09eeaca35700971201cb62f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae420c1715cb3676395c1772aaa63ff86" id="r_gae420c1715cb3676395c1772aaa63ff86"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gae420c1715cb3676395c1772aaa63ff86">SceIftuPlaneState::src_y</a></td></tr>
+<tr class="separator:gae420c1715cb3676395c1772aaa63ff86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga692e95b6e7f239ff349e7efa5de752a5" id="r_ga692e95b6e7f239ff349e7efa5de752a5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga692e95b6e7f239ff349e7efa5de752a5">SceIftuPlaneState::src_w</a></td></tr>
+<tr class="separator:ga692e95b6e7f239ff349e7efa5de752a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga268df405c9e3f8a5045014ab0f55fd52" id="r_ga268df405c9e3f8a5045014ab0f55fd52"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga268df405c9e3f8a5045014ab0f55fd52">SceIftuPlaneState::src_h</a></td></tr>
+<tr class="separator:ga268df405c9e3f8a5045014ab0f55fd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga518cd22aa1f559a1ac3defee2881c839" id="r_ga518cd22aa1f559a1ac3defee2881c839"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga518cd22aa1f559a1ac3defee2881c839">SceIftuPlaneState::dst_x</a></td></tr>
+<tr class="separator:ga518cd22aa1f559a1ac3defee2881c839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e2a48e51c92ff962f5e4870ae366715" id="r_ga1e2a48e51c92ff962f5e4870ae366715"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga1e2a48e51c92ff962f5e4870ae366715">SceIftuPlaneState::dst_y</a></td></tr>
+<tr class="separator:ga1e2a48e51c92ff962f5e4870ae366715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdea1962afe1fa0b5cfa0208966a629d" id="r_gacdea1962afe1fa0b5cfa0208966a629d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gacdea1962afe1fa0b5cfa0208966a629d">SceIftuPlaneState::dst_w</a></td></tr>
+<tr class="separator:gacdea1962afe1fa0b5cfa0208966a629d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebdc1917aa568afa6993dc90814c7305" id="r_gaebdc1917aa568afa6993dc90814c7305"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaebdc1917aa568afa6993dc90814c7305">SceIftuPlaneState::dst_h</a></td></tr>
+<tr class="separator:gaebdc1917aa568afa6993dc90814c7305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga948fa906182524fb48db13a1ad6c8d6c" id="r_ga948fa906182524fb48db13a1ad6c8d6c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#ga948fa906182524fb48db13a1ad6c8d6c">SceIftuPlaneState::vtop_padding</a></td></tr>
+<tr class="separator:ga948fa906182524fb48db13a1ad6c8d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8354229818d04eec54f88a615e3d8a6" id="r_gaf8354229818d04eec54f88a615e3d8a6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaf8354229818d04eec54f88a615e3d8a6">SceIftuPlaneState::vbot_padding</a></td></tr>
+<tr class="separator:gaf8354229818d04eec54f88a615e3d8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7cd3ea094af1424d48475cebb24c9b7" id="r_gaf7cd3ea094af1424d48475cebb24c9b7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaf7cd3ea094af1424d48475cebb24c9b7">SceIftuPlaneState::hleft_padding</a></td></tr>
+<tr class="separator:gaf7cd3ea094af1424d48475cebb24c9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf20b4f6e773ae38a1feb91e8cf487023" id="r_gaf20b4f6e773ae38a1feb91e8cf487023"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIftuKernel.html#gaf20b4f6e773ae38a1feb91e8cf487023">SceIftuPlaneState::hright_padding</a></td></tr>
+<tr class="separator:gaf20b4f6e773ae38a1feb91e8cf487023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="iftu_8h.html">psp2kern/lowio/iftu.h</a>&gt;</span> </div>
+<div class="ttc" id="aiftu_8h_html"><div class="ttname"><a href="iftu_8h.html">iftu.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceIftuForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceIftuCscParams" id="structSceIftuCscParams"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceIftuCscParams">&#9670;&#160;</a></span>SceIftuCscParams</h2>
 
@@ -600,6 +731,553 @@ hright_padding</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga30e882fd0c2c73147538f2b2a750a4e7" name="ga30e882fd0c2c73147538f2b2a750a4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30e882fd0c2c73147538f2b2a750a4e7">&#9670;&#160;</a></span>post_add_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::post_add_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae635f1d9c606be14c7152a854f986b36" name="gae635f1d9c606be14c7152a854f986b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae635f1d9c606be14c7152a854f986b36">&#9670;&#160;</a></span>post_add_1_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::post_add_1_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga09b27a1ff6fc6a65bcae8d9a4ba6226f" name="ga09b27a1ff6fc6a65bcae8d9a4ba6226f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09b27a1ff6fc6a65bcae8d9a4ba6226f">&#9670;&#160;</a></span>post_clamp_max_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::post_clamp_max_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaecb3138e2ea3a0fe4aa59c76b6af9dda" name="gaecb3138e2ea3a0fe4aa59c76b6af9dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecb3138e2ea3a0fe4aa59c76b6af9dda">&#9670;&#160;</a></span>post_clamp_min_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::post_clamp_min_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3b93fbb818b66d2c9d36a4ffc374c2ba" name="ga3b93fbb818b66d2c9d36a4ffc374c2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b93fbb818b66d2c9d36a4ffc374c2ba">&#9670;&#160;</a></span>post_clamp_max_1_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::post_clamp_max_1_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8449439472d682589331df7bf68bc813" name="ga8449439472d682589331df7bf68bc813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8449439472d682589331df7bf68bc813">&#9670;&#160;</a></span>post_clamp_min_1_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::post_clamp_min_1_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf4fb86ecf0fb29d7ff4748e0b021cf68" name="gaf4fb86ecf0fb29d7ff4748e0b021cf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4fb86ecf0fb29d7ff4748e0b021cf68">&#9670;&#160;</a></span>ctm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuCscParams::ctm[3][3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa36deb3692b65a43598bd73509b361f6" name="gaa36deb3692b65a43598bd73509b361f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa36deb3692b65a43598bd73509b361f6">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadf6f2763c2bdf2393c0821797d3a5583" name="gadf6f2763c2bdf2393c0821797d3a5583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf6f2763c2bdf2393c0821797d3a5583">&#9670;&#160;</a></span>unk04</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::unk04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacaf9c2878660020cd2c556a52445b4b7" name="gacaf9c2878660020cd2c556a52445b4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacaf9c2878660020cd2c556a52445b4b7">&#9670;&#160;</a></span>csc_params1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIftuKernel.html#structSceIftuCscParams">SceIftuCscParams</a>* SceIftuConvParams::csc_params1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2d65de6536c4a9ad682f863ed0b5bd1f" name="ga2d65de6536c4a9ad682f863ed0b5bd1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d65de6536c4a9ad682f863ed0b5bd1f">&#9670;&#160;</a></span>csc_params2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIftuKernel.html#structSceIftuCscParams">SceIftuCscParams</a>* SceIftuConvParams::csc_params2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae23719ed9621f3c4ed27b1f02e465c1d" name="gae23719ed9621f3c4ed27b1f02e465c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae23719ed9621f3c4ed27b1f02e465c1d">&#9670;&#160;</a></span>csc_control</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::csc_control</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafe1bc743a152eeb0945d3f07198a0507" name="gafe1bc743a152eeb0945d3f07198a0507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe1bc743a152eeb0945d3f07198a0507">&#9670;&#160;</a></span>unk14</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::unk14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac7ddb5b54b42363a3fb165f78e39a28b" name="gac7ddb5b54b42363a3fb165f78e39a28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7ddb5b54b42363a3fb165f78e39a28b">&#9670;&#160;</a></span>unk18</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::unk18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad00ed5a5d51654d0beb57a53995d7c20" name="gad00ed5a5d51654d0beb57a53995d7c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad00ed5a5d51654d0beb57a53995d7c20">&#9670;&#160;</a></span>unk1C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::unk1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga52063fe0104c408759a384aeed0035b1" name="ga52063fe0104c408759a384aeed0035b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52063fe0104c408759a384aeed0035b1">&#9670;&#160;</a></span>alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::alpha</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8244c69e834a51dda612e89b8dd9a009" name="ga8244c69e834a51dda612e89b8dd9a009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8244c69e834a51dda612e89b8dd9a009">&#9670;&#160;</a></span>unk24</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuConvParams::unk24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4722eae54666599360911b5527c46aac" name="ga4722eae54666599360911b5527c46aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4722eae54666599360911b5527c46aac">&#9670;&#160;</a></span>pixelformat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::pixelformat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga258adeead080a9df23c1a6726079ef95" name="ga258adeead080a9df23c1a6726079ef95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga258adeead080a9df23c1a6726079ef95">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad9ab5e2ca2abddddc4fe883a81bc30c5" name="gad9ab5e2ca2abddddc4fe883a81bc30c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9ab5e2ca2abddddc4fe883a81bc30c5">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6daaadae5bd3d04c7f9a7182ff52b58e" name="ga6daaadae5bd3d04c7f9a7182ff52b58e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6daaadae5bd3d04c7f9a7182ff52b58e">&#9670;&#160;</a></span>leftover_stride</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::leftover_stride</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadb2f37392a4a08800cbd3e545a55c098" name="gadb2f37392a4a08800cbd3e545a55c098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb2f37392a4a08800cbd3e545a55c098">&#9670;&#160;</a></span>leftover_align</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::leftover_align</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45f4828995b49b473b05d612056d7fb4" name="ga45f4828995b49b473b05d612056d7fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45f4828995b49b473b05d612056d7fb4">&#9670;&#160;</a></span>paddr0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::paddr0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga470034c71296a6430ec378f571c0575d" name="ga470034c71296a6430ec378f571c0575d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga470034c71296a6430ec378f571c0575d">&#9670;&#160;</a></span>paddr1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::paddr1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga42fe52c8612a5f91b138334041d6d724" name="ga42fe52c8612a5f91b138334041d6d724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42fe52c8612a5f91b138334041d6d724">&#9670;&#160;</a></span>paddr2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuFrameBuf::paddr2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab2398e8c7da57ac2a7eda0b6cb9db73a" name="gab2398e8c7da57ac2a7eda0b6cb9db73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2398e8c7da57ac2a7eda0b6cb9db73a">&#9670;&#160;</a></span>fb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIftuKernel.html#structSceIftuFrameBuf">SceIftuFrameBuf</a> SceIftuPlaneState::fb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga50871f82dbaa262e31dc9d759d9a6d95" name="ga50871f82dbaa262e31dc9d759d9a6d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50871f82dbaa262e31dc9d759d9a6d95">&#9670;&#160;</a></span>unk20</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::unk20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga433db34f09eeaca35700971201cb62f1" name="ga433db34f09eeaca35700971201cb62f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga433db34f09eeaca35700971201cb62f1">&#9670;&#160;</a></span>src_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::src_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae420c1715cb3676395c1772aaa63ff86" name="gae420c1715cb3676395c1772aaa63ff86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae420c1715cb3676395c1772aaa63ff86">&#9670;&#160;</a></span>src_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::src_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga692e95b6e7f239ff349e7efa5de752a5" name="ga692e95b6e7f239ff349e7efa5de752a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga692e95b6e7f239ff349e7efa5de752a5">&#9670;&#160;</a></span>src_w</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::src_w</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga268df405c9e3f8a5045014ab0f55fd52" name="ga268df405c9e3f8a5045014ab0f55fd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga268df405c9e3f8a5045014ab0f55fd52">&#9670;&#160;</a></span>src_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::src_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga518cd22aa1f559a1ac3defee2881c839" name="ga518cd22aa1f559a1ac3defee2881c839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga518cd22aa1f559a1ac3defee2881c839">&#9670;&#160;</a></span>dst_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::dst_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1e2a48e51c92ff962f5e4870ae366715" name="ga1e2a48e51c92ff962f5e4870ae366715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e2a48e51c92ff962f5e4870ae366715">&#9670;&#160;</a></span>dst_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::dst_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacdea1962afe1fa0b5cfa0208966a629d" name="gacdea1962afe1fa0b5cfa0208966a629d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdea1962afe1fa0b5cfa0208966a629d">&#9670;&#160;</a></span>dst_w</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::dst_w</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaebdc1917aa568afa6993dc90814c7305" name="gaebdc1917aa568afa6993dc90814c7305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebdc1917aa568afa6993dc90814c7305">&#9670;&#160;</a></span>dst_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::dst_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga948fa906182524fb48db13a1ad6c8d6c" name="ga948fa906182524fb48db13a1ad6c8d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga948fa906182524fb48db13a1ad6c8d6c">&#9670;&#160;</a></span>vtop_padding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::vtop_padding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf8354229818d04eec54f88a615e3d8a6" name="gaf8354229818d04eec54f88a615e3d8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8354229818d04eec54f88a615e3d8a6">&#9670;&#160;</a></span>vbot_padding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::vbot_padding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf7cd3ea094af1424d48475cebb24c9b7" name="gaf7cd3ea094af1424d48475cebb24c9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7cd3ea094af1424d48475cebb24c9b7">&#9670;&#160;</a></span>hleft_padding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::hleft_padding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf20b4f6e773ae38a1feb91e8cf487023" name="gaf20b4f6e773ae38a1feb91e8cf487023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf20b4f6e773ae38a1feb91e8cf487023">&#9670;&#160;</a></span>hright_padding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIftuPlaneState::hright_padding</td>
         </tr>
       </table>
 </div><div class="memdoc">

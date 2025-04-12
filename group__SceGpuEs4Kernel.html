@@ -77,6 +77,21 @@ $(document).ready(function(){initNavTree('group__SceGpuEs4Kernel.html',''); init
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceGpuEs4.html">Kernel gpu base driver Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gab108c62736521e6d427a928112bb970b" id="r_gab108c62736521e6d427a928112bb970b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#gab108c62736521e6d427a928112bb970b">PVRSRVGetMiscInfoKM</a> (void *info)</td></tr>
+<tr class="separator:gab108c62736521e6d427a928112bb970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab14e01ea7aff9e278936161041dbf568" id="r_gab14e01ea7aff9e278936161041dbf568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#gab14e01ea7aff9e278936161041dbf568">ksceGpuGetRegisterDump</a> (void *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="separator:gab14e01ea7aff9e278936161041dbf568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga779b16b51f3fb2914cc8388883e9823f" id="r_ga779b16b51f3fb2914cc8388883e9823f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#ga779b16b51f3fb2914cc8388883e9823f">ksceGpuMmuMapMemory</a> (void *mmuContext, uint32_t vaddr, void *base, uint32_t <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>, uint32_t <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
+<tr class="separator:ga779b16b51f3fb2914cc8388883e9823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11cffa3af6d76e84e0bb2582d8a5651b" id="r_ga11cffa3af6d76e84e0bb2582d8a5651b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#ga11cffa3af6d76e84e0bb2582d8a5651b">ksceGpuMmuUnmapMemory</a> (void *mmuContext, uint32_t vaddr, uint32_t <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="separator:ga11cffa3af6d76e84e0bb2582d8a5651b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -89,19 +104,7 @@ $(document).ready(function(){initNavTree('group__SceGpuEs4Kernel.html',''); init
 </p><div class="fragment"><div class="line">SceGpuEs4ForDriver </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gab108c62736521e6d427a928112bb970b" id="r_gab108c62736521e6d427a928112bb970b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#gab108c62736521e6d427a928112bb970b">PVRSRVGetMiscInfoKM</a> (void *info)</td></tr>
-<tr class="separator:gab108c62736521e6d427a928112bb970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab14e01ea7aff9e278936161041dbf568" id="r_gab14e01ea7aff9e278936161041dbf568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#gab14e01ea7aff9e278936161041dbf568">ksceGpuGetRegisterDump</a> (void *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
-<tr class="separator:gab14e01ea7aff9e278936161041dbf568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga779b16b51f3fb2914cc8388883e9823f" id="r_ga779b16b51f3fb2914cc8388883e9823f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#ga779b16b51f3fb2914cc8388883e9823f">ksceGpuMmuMapMemory</a> (void *mmuContext, uint32_t vaddr, void *base, uint32_t <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>, uint32_t <a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
-<tr class="separator:ga779b16b51f3fb2914cc8388883e9823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11cffa3af6d76e84e0bb2582d8a5651b" id="r_ga11cffa3af6d76e84e0bb2582d8a5651b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGpuEs4Kernel.html#ga11cffa3af6d76e84e0bb2582d8a5651b">ksceGpuMmuUnmapMemory</a> (void *mmuContext, uint32_t vaddr, uint32_t <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
-<tr class="separator:ga11cffa3af6d76e84e0bb2582d8a5651b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
+ <h2 class="groupheader">Function Documentation</h2>
 <a id="gab108c62736521e6d427a928112bb970b" name="gab108c62736521e6d427a928112bb970b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab108c62736521e6d427a928112bb970b">&#9670;&#160;</a></span>PVRSRVGetMiscInfoKM()</h2>
 

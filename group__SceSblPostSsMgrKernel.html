@@ -73,23 +73,25 @@ $(document).ready(function(){initNavTree('group__SceSblPostSsMgrKernel.html','')
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__SystemFunction.html">SystemFunction</a> &raquo; <a class="el" href="group__SceSblPostSsMgr.html">Post Ss Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="post__ss__mgr_8h.html">psp2kern/post_ss_mgr.h</a>&gt;</span> </div>
-<div class="ttc" id="apost__ss__mgr_8h_html"><div class="ttname"><a href="post__ss__mgr_8h.html">post_ss_mgr.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceSblPostSsMgrForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceSblRsaDataParam" id="r_structSceSblRsaDataParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaDataParam">SceSblRsaDataParam</a></td></tr>
+<tr class="separator:structSceSblRsaDataParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSblRsaPublicKeyParam" id="r_structSceSblRsaPublicKeyParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaPublicKeyParam">SceSblRsaPublicKeyParam</a></td></tr>
+<tr class="separator:structSceSblRsaPublicKeyParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSblRsaPrivateKeyParam" id="r_structSceSblRsaPrivateKeyParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaPrivateKeyParam">SceSblRsaPrivateKeyParam</a></td></tr>
+<tr class="separator:structSceSblRsaPrivateKeyParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad43149abd2230de9ee06eaf935a17883" id="r_gad43149abd2230de9ee06eaf935a17883"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#gad43149abd2230de9ee06eaf935a17883">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaDataParam">SceSblRsaDataParam</a>)</td></tr>
@@ -104,8 +106,49 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9f6895fb42488a7ae783b156d5912ca5" id="r_ga9f6895fb42488a7ae783b156d5912ca5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga9f6895fb42488a7ae783b156d5912ca5">ksceSblRSA2048VerifySignature</a> (<a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaDataParam">SceSblRsaDataParam</a> *rsa_signature, <a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaDataParam">SceSblRsaDataParam</a> *hash, <a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblRsaPublicKeyParam">SceSblRsaPublicKeyParam</a> *public_key, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="memdesc:ga9f6895fb42488a7ae783b156d5912ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verufy the new RSA signature.  <br /></td></tr>
 <tr class="separator:ga9f6895fb42488a7ae783b156d5912ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5933bfe3cc37138b510ff3a0ba2a7255" id="r_ga5933bfe3cc37138b510ff3a0ba2a7255"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga5933bfe3cc37138b510ff3a0ba2a7255">SceSblRsaDataParam::data</a></td></tr>
+<tr class="separator:ga5933bfe3cc37138b510ff3a0ba2a7255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01510d413bd0e703cd246cb0dcda78a7" id="r_ga01510d413bd0e703cd246cb0dcda78a7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga01510d413bd0e703cd246cb0dcda78a7">SceSblRsaDataParam::size</a></td></tr>
+<tr class="separator:ga01510d413bd0e703cd246cb0dcda78a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14b56f63e8e654391692a7d368390c47" id="r_ga14b56f63e8e654391692a7d368390c47"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga14b56f63e8e654391692a7d368390c47">SceSblRsaPublicKeyParam::n</a></td></tr>
+<tr class="separator:ga14b56f63e8e654391692a7d368390c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f85cd9b2c1114da48a8a0f14ec58833" id="r_ga8f85cd9b2c1114da48a8a0f14ec58833"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga8f85cd9b2c1114da48a8a0f14ec58833">SceSblRsaPublicKeyParam::k</a></td></tr>
+<tr class="separator:ga8f85cd9b2c1114da48a8a0f14ec58833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c500e72d7175a04349e026f05d331c7" id="r_ga5c500e72d7175a04349e026f05d331c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga5c500e72d7175a04349e026f05d331c7">SceSblRsaPrivateKeyParam::unk_0x00</a></td></tr>
+<tr class="separator:ga5c500e72d7175a04349e026f05d331c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf64af7cf82491e968dd05414991ad212" id="r_gaf64af7cf82491e968dd05414991ad212"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#gaf64af7cf82491e968dd05414991ad212">SceSblRsaPrivateKeyParam::unk_0x04</a></td></tr>
+<tr class="separator:gaf64af7cf82491e968dd05414991ad212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga968c24d96a506cb7f81b5b295ae605de" id="r_ga968c24d96a506cb7f81b5b295ae605de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga968c24d96a506cb7f81b5b295ae605de">SceSblRsaPrivateKeyParam::unk_0x08</a></td></tr>
+<tr class="separator:ga968c24d96a506cb7f81b5b295ae605de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ecc5dd9da1490ee90027693f2afd655" id="r_ga7ecc5dd9da1490ee90027693f2afd655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga7ecc5dd9da1490ee90027693f2afd655">SceSblRsaPrivateKeyParam::unk_0x0C</a></td></tr>
+<tr class="separator:ga7ecc5dd9da1490ee90027693f2afd655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga766173cce539fea651b6de072e125c5e" id="r_ga766173cce539fea651b6de072e125c5e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga766173cce539fea651b6de072e125c5e">SceSblRsaPrivateKeyParam::p</a></td></tr>
+<tr class="separator:ga766173cce539fea651b6de072e125c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34f6c87627f5e3995ab3e449eaa0d5ef" id="r_ga34f6c87627f5e3995ab3e449eaa0d5ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga34f6c87627f5e3995ab3e449eaa0d5ef">SceSblRsaPrivateKeyParam::q</a></td></tr>
+<tr class="separator:ga34f6c87627f5e3995ab3e449eaa0d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85da304b4350989d1c2f5f5f5e403164" id="r_ga85da304b4350989d1c2f5f5f5e403164"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga85da304b4350989d1c2f5f5f5e403164">SceSblRsaPrivateKeyParam::dp</a></td></tr>
+<tr class="separator:ga85da304b4350989d1c2f5f5f5e403164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac76c56d1f82f494af4cbe769b1f5c190" id="r_gac76c56d1f82f494af4cbe769b1f5c190"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#gac76c56d1f82f494af4cbe769b1f5c190">SceSblRsaPrivateKeyParam::dq</a></td></tr>
+<tr class="separator:gac76c56d1f82f494af4cbe769b1f5c190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a902a7eac8bcba7b1727102049026de" id="r_ga6a902a7eac8bcba7b1727102049026de"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblPostSsMgrKernel.html#ga6a902a7eac8bcba7b1727102049026de">SceSblRsaPrivateKeyParam::qp</a></td></tr>
+<tr class="separator:ga6a902a7eac8bcba7b1727102049026de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="post__ss__mgr_8h.html">psp2kern/post_ss_mgr.h</a>&gt;</span> </div>
+<div class="ttc" id="apost__ss__mgr_8h_html"><div class="ttname"><a href="post__ss__mgr_8h.html">post_ss_mgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSblPostSsMgrForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceSblRsaDataParam" id="structSceSblRsaDataParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceSblRsaDataParam">&#9670;&#160;</a></span>SceSblRsaDataParam</h2>
 
@@ -421,6 +464,189 @@ qp</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga5933bfe3cc37138b510ff3a0ba2a7255" name="ga5933bfe3cc37138b510ff3a0ba2a7255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5933bfe3cc37138b510ff3a0ba2a7255">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblRsaDataParam::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga01510d413bd0e703cd246cb0dcda78a7" name="ga01510d413bd0e703cd246cb0dcda78a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01510d413bd0e703cd246cb0dcda78a7">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceSblRsaDataParam::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga14b56f63e8e654391692a7d368390c47" name="ga14b56f63e8e654391692a7d368390c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14b56f63e8e654391692a7d368390c47">&#9670;&#160;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* SceSblRsaPublicKeyParam::n</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8f85cd9b2c1114da48a8a0f14ec58833" name="ga8f85cd9b2c1114da48a8a0f14ec58833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f85cd9b2c1114da48a8a0f14ec58833">&#9670;&#160;</a></span>k</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* SceSblRsaPublicKeyParam::k</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5c500e72d7175a04349e026f05d331c7" name="ga5c500e72d7175a04349e026f05d331c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c500e72d7175a04349e026f05d331c7">&#9670;&#160;</a></span>unk_0x00</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblRsaPrivateKeyParam::unk_0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf64af7cf82491e968dd05414991ad212" name="gaf64af7cf82491e968dd05414991ad212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf64af7cf82491e968dd05414991ad212">&#9670;&#160;</a></span>unk_0x04</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblRsaPrivateKeyParam::unk_0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga968c24d96a506cb7f81b5b295ae605de" name="ga968c24d96a506cb7f81b5b295ae605de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga968c24d96a506cb7f81b5b295ae605de">&#9670;&#160;</a></span>unk_0x08</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblRsaPrivateKeyParam::unk_0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7ecc5dd9da1490ee90027693f2afd655" name="ga7ecc5dd9da1490ee90027693f2afd655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ecc5dd9da1490ee90027693f2afd655">&#9670;&#160;</a></span>unk_0x0C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblRsaPrivateKeyParam::unk_0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga766173cce539fea651b6de072e125c5e" name="ga766173cce539fea651b6de072e125c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga766173cce539fea651b6de072e125c5e">&#9670;&#160;</a></span>p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblRsaPrivateKeyParam::p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga34f6c87627f5e3995ab3e449eaa0d5ef" name="ga34f6c87627f5e3995ab3e449eaa0d5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34f6c87627f5e3995ab3e449eaa0d5ef">&#9670;&#160;</a></span>q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblRsaPrivateKeyParam::q</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga85da304b4350989d1c2f5f5f5e403164" name="ga85da304b4350989d1c2f5f5f5e403164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85da304b4350989d1c2f5f5f5e403164">&#9670;&#160;</a></span>dp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblRsaPrivateKeyParam::dp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac76c56d1f82f494af4cbe769b1f5c190" name="gac76c56d1f82f494af4cbe769b1f5c190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac76c56d1f82f494af4cbe769b1f5c190">&#9670;&#160;</a></span>dq</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblRsaPrivateKeyParam::dq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6a902a7eac8bcba7b1727102049026de" name="ga6a902a7eac8bcba7b1727102049026de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a902a7eac8bcba7b1727102049026de">&#9670;&#160;</a></span>qp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblRsaPrivateKeyParam::qp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

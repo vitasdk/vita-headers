@@ -73,23 +73,233 @@ $(document).ready(function(){initNavTree('group__SceCameraUser.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Input.html">Input</a> &raquo; <a class="el" href="group__SceCamera.html">Camera Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="camera_8h.html">psp2/camera.h</a>&gt;</span> </div>
-<div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="camera_8h.html">camera.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceCamera_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceCameraInfo" id="r_structSceCameraInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#structSceCameraInfo">SceCameraInfo</a></td></tr>
+<tr class="separator:structSceCameraInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceCameraRead" id="r_structSceCameraRead"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#structSceCameraRead">SceCameraRead</a></td></tr>
+<tr class="separator:structSceCameraRead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga5a14d3531bb54a2f3b587e853596b5f6" id="r_ga5a14d3531bb54a2f3b587e853596b5f6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga5a14d3531bb54a2f3b587e853596b5f6">SceCameraErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a9aebbd77042d3ab80ab54a91419bed00">SCE_CAMERA_ERROR_PARAM</a> = 0x802E0000
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a7b87ee8a5166dfb03e7a7ac471117ac6">SCE_CAMERA_ERROR_ALREADY_INIT</a> = 0x802E0001
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a313b128bb202214d007f94332730ebd8">SCE_CAMERA_ERROR_NOT_INIT</a> = 0x802E0002
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6afda25e2721313708a207f080cfc65824">SCE_CAMERA_ERROR_ALREADY_OPEN</a> = 0x802E0003
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a91153236d54d3c311dc89bd18f2b6bdc">SCE_CAMERA_ERROR_NOT_OPEN</a> = 0x802E0004
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6abf07ec480d33448e994a4d014869f5d2">SCE_CAMERA_ERROR_ALREADY_START</a> = 0x802E0005
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a8cc4c6652c572f373b8ad70da3b55f62">SCE_CAMERA_ERROR_NOT_START</a> = 0x802E0006
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a871bf8b2dc248d9b8c786a1889b1d542">SCE_CAMERA_ERROR_FORMAT_UNKNOWN</a> = 0x802E0007
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a7be60bb872d779fb63daa9a180917599">SCE_CAMERA_ERROR_RESOLUTION_UNKNOWN</a> = 0x802E0008
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6af5fce27f21b9bd10120034817a020299">SCE_CAMERA_ERROR_BAD_FRAMERATE</a> = 0x802E0009
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6aeee5f52aa7f5513616c5493b26e6dada">SCE_CAMERA_ERROR_TIMEOUT</a> = 0x802E000A
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a6d4d52888ae51c8ef87117c3ba8d7290">SCE_CAMERA_ERROR_EXCLUSIVE</a> = 0x802E000B
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a137c2e8fef27f6b38cecd6b317c86341">SCE_CAMERA_ERROR_ATTRIBUTE_UNKNOWN</a> = 0x802E000C
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a3de4d2382c2d5ef6269311b7c8bccddf">SCE_CAMERA_ERROR_MAX_PROCESS</a> = 0x802E000D
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a67c018777160480e7a197e3978e4cab0">SCE_CAMERA_ERROR_NOT_ACTIVE</a> = 0x802E000E
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a2f2eb928521e8fd6150014b72018e03f">SCE_CAMERA_ERROR_ALREADY_READ</a> = 0x802E000F
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a4a12282246a13e29f2dbcdf690dc4064">SCE_CAMERA_ERROR_NOT_MOUNTED</a> = 0x802E0010
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6af9e14f695886fb067402c5bef0c2d737">SCE_CAMERA_ERROR_DATA_RANGE_UNKNOWN</a> = 0x802E0011
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a0b54d242323909d5eaa426f4c9f16ef1">SCE_CAMERA_ERROR_OTHER_ALREADY_START</a> = 0x802E0012
+, <a class="el" href="group__SceCameraUser.html#gga5a14d3531bb54a2f3b587e853596b5f6a123d27ecda043fa45def6814d89d24d6">SCE_CAMERA_ERROR_FATAL</a> = 0x802E00FF
+<br />
+ }</td></tr>
+<tr class="memdesc:ga5a14d3531bb54a2f3b587e853596b5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera error codes.  <a href="group__SceCameraUser.html#ga5a14d3531bb54a2f3b587e853596b5f6">More...</a><br /></td></tr>
+<tr class="separator:ga5a14d3531bb54a2f3b587e853596b5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga526c5f58e3b338f604cd84ab419dc9ad" id="r_ga526c5f58e3b338f604cd84ab419dc9ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga526c5f58e3b338f604cd84ab419dc9ad">SceCameraDevice</a> { <a class="el" href="group__SceCameraUser.html#gga526c5f58e3b338f604cd84ab419dc9adae35764ab6ca57f6631913458d18c8e1c">SCE_CAMERA_DEVICE_FRONT</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga526c5f58e3b338f604cd84ab419dc9ada076932b034fa7a6efea9b2abf7c071cd">SCE_CAMERA_DEVICE_BACK</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga526c5f58e3b338f604cd84ab419dc9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera device types.  <a href="group__SceCameraUser.html#ga526c5f58e3b338f604cd84ab419dc9ad">More...</a><br /></td></tr>
+<tr class="separator:ga526c5f58e3b338f604cd84ab419dc9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4aa0ccc8e3095fcf1e39dd26611c750a" id="r_ga4aa0ccc8e3095fcf1e39dd26611c750a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga4aa0ccc8e3095fcf1e39dd26611c750a">SceCameraPriority</a> { <a class="el" href="group__SceCameraUser.html#gga4aa0ccc8e3095fcf1e39dd26611c750aa15067f499743bdf810407fe0c49e3601">SCE_CAMERA_PRIORITY_SHARE</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga4aa0ccc8e3095fcf1e39dd26611c750aa38fa1ea4143007de792bd0475c190ad4">SCE_CAMERA_PRIORITY_EXCLUSIVE</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga4aa0ccc8e3095fcf1e39dd26611c750a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera process priorities.  <a href="group__SceCameraUser.html#ga4aa0ccc8e3095fcf1e39dd26611c750a">More...</a><br /></td></tr>
+<tr class="separator:ga4aa0ccc8e3095fcf1e39dd26611c750a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d95d44487503d6048333d0ac8afedfc" id="r_ga3d95d44487503d6048333d0ac8afedfc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga3d95d44487503d6048333d0ac8afedfc">SceCameraFormat</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca0d8a7642452ba67dcabae2f3fa33058e">SCE_CAMERA_FORMAT_INVALID</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca9c9770e703e1db2aeb97ac06341e8136">SCE_CAMERA_FORMAT_YUV422_PLANE</a> = 1
+, <a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca761abc0044062d025be13846630b30ec">SCE_CAMERA_FORMAT_YUV422_PACKED</a> = 2
+, <a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca3eceb033a04e23e38ef37b54fbe275d7">SCE_CAMERA_FORMAT_YUV420_PLANE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca49621a59a63819144261cff863b97203">SCE_CAMERA_FORMAT_ARGB</a> = 4
+, <a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca1dc9b165cd92ed7a40e10ba0e1e76354">SCE_CAMERA_FORMAT_ABGR</a> = 5
+, <a class="el" href="group__SceCameraUser.html#gga3d95d44487503d6048333d0ac8afedfca685e13d45c86bd04e724c66f741d3081">SCE_CAMERA_FORMAT_RAW8</a> = 6
+<br />
+ }</td></tr>
+<tr class="memdesc:ga3d95d44487503d6048333d0ac8afedfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera output formats.  <a href="group__SceCameraUser.html#ga3d95d44487503d6048333d0ac8afedfc">More...</a><br /></td></tr>
+<tr class="separator:ga3d95d44487503d6048333d0ac8afedfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30bcce68a36fb599a8d7dd63f31b037a" id="r_ga30bcce68a36fb599a8d7dd63f31b037a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga30bcce68a36fb599a8d7dd63f31b037a">SceCameraResolution</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa2f758a107f47fb3808c33fcd1f39daa8">SCE_CAMERA_RESOLUTION_0_0</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aafb0c2525d6f1bcebbcc3ff0878b2b43e">SCE_CAMERA_RESOLUTION_640_480</a> = 1
+, <a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa6d6c25f129efa22d9d72e5d6b10076b8">SCE_CAMERA_RESOLUTION_320_240</a> = 2
+, <a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aaadcceab21df92234bf7c60b1407801b8">SCE_CAMERA_RESOLUTION_160_120</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa066652992bcc83b2e5418dafc0b3260c">SCE_CAMERA_RESOLUTION_352_288</a> = 4
+, <a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aaeefbc9d85eda1dfdf0f4f2f8625126b1">SCE_CAMERA_RESOLUTION_176_144</a> = 5
+, <a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa2bc3bd0b36d38ccf0d81c0990c8623f3">SCE_CAMERA_RESOLUTION_480_272</a> = 6
+, <a class="el" href="group__SceCameraUser.html#gga30bcce68a36fb599a8d7dd63f31b037aa74ebb60d6eec269532eb5f50cc986ac1">SCE_CAMERA_RESOLUTION_640_360</a> = 8
+<br />
+ }</td></tr>
+<tr class="memdesc:ga30bcce68a36fb599a8d7dd63f31b037a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera resolutions.  <a href="group__SceCameraUser.html#ga30bcce68a36fb599a8d7dd63f31b037a">More...</a><br /></td></tr>
+<tr class="separator:ga30bcce68a36fb599a8d7dd63f31b037a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4588e783c667860efff696257a2b40d0" id="r_ga4588e783c667860efff696257a2b40d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga4588e783c667860efff696257a2b40d0">SceCameraFrameRate</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0aa86e799f5db488028118721b6a71731a">SCE_CAMERA_FRAMERATE_3_FPS</a> = 3
+, <a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a0c4246feaa627a4436adf4ee33c0d160">SCE_CAMERA_FRAMERATE_5_FPS</a> = 5
+, <a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a887342eb6bab2c67fe315873b026500c">SCE_CAMERA_FRAMERATE_7_FPS</a> = 7
+, <a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a46f8ce2fee17d3837c286e0787962ac3">SCE_CAMERA_FRAMERATE_10_FPS</a> = 10
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0ab449d3a938009cba7dcbeda20dadc20a">SCE_CAMERA_FRAMERATE_15_FPS</a> = 15
+, <a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a33da3762a8493bed6932c1cafe826f96">SCE_CAMERA_FRAMERATE_20_FPS</a> = 20
+, <a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0ae439d776892e797052fdacbc25dd87d6">SCE_CAMERA_FRAMERATE_30_FPS</a> = 30
+, <a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a81e3a744573a434750de7ef84da9de56">SCE_CAMERA_FRAMERATE_60_FPS</a> = 60
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga4588e783c667860efff696257a2b40d0a8940a1dddfbda3dcf76b5652497063f1">SCE_CAMERA_FRAMERATE_120_FPS</a> = 120
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4588e783c667860efff696257a2b40d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera framerates.  <a href="group__SceCameraUser.html#ga4588e783c667860efff696257a2b40d0">More...</a><br /></td></tr>
+<tr class="separator:ga4588e783c667860efff696257a2b40d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga606bd6373b0b836b66f4451a770d2877" id="r_ga606bd6373b0b836b66f4451a770d2877"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga606bd6373b0b836b66f4451a770d2877">SceCameraExposureCompensation</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a388c9c34165c67185bec09a49fa31a87">SCE_CAMERA_EV_NEGATIVE_20</a> = -20
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877ad95acdaccc0042b19aa7c8491ccd62e0">SCE_CAMERA_EV_NEGATIVE_17</a> = -17
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a452d0f53b9895c2cfa6809ce2ae2ca30">SCE_CAMERA_EV_NEGATIVE_15</a> = -15
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a0402707f2f831e819956de9618697ecd">SCE_CAMERA_EV_NEGATIVE_13</a> = -13
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877acad63893bb940f65ce27a6f3bb719407">SCE_CAMERA_EV_NEGATIVE_10</a> = -10
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a3a006a505159ad57e453b899a76b79ed">SCE_CAMERA_EV_NEGATIVE_7</a> = -7
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a0c0f10b0652f3527123bb54d0d6ff45a">SCE_CAMERA_EV_NEGATIVE_5</a> = -5
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877aa6d18a468a1d7177c40067292f6e47ea">SCE_CAMERA_EV_NEGATIVE_3</a> = -3
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a3ef0cc4fa87d8e381c730f49878894d1">SCE_CAMERA_EV_POSITIVE_0</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a74cbd3eb4e1fc89a4fd40e0d1c4df4ed">SCE_CAMERA_EV_POSITIVE_3</a> = 3
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a2929e2a832beb7775443f687077c7545">SCE_CAMERA_EV_POSITIVE_5</a> = 5
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877ae616ef4ae9889a3375fe8632089a6b79">SCE_CAMERA_EV_POSITIVE_7</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a1edffd76bf18b007dd0c5e8c6c9a7e87">SCE_CAMERA_EV_POSITIVE_10</a> = 10
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877aa06808238e5dd16586824b9077bb1b4c">SCE_CAMERA_EV_POSITIVE_13</a> = 13
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a3349906b58d5cd95b1adc34964ebe43d">SCE_CAMERA_EV_POSITIVE_15</a> = 15
+, <a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a6e5485fbeac2f7d79c4101dec762244d">SCE_CAMERA_EV_POSITIVE_17</a> = 17
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga606bd6373b0b836b66f4451a770d2877a89b41e1cb3a5170a561d0c9c3de84226">SCE_CAMERA_EV_POSITIVE_20</a> = 20
+<br />
+ }</td></tr>
+<tr class="memdesc:ga606bd6373b0b836b66f4451a770d2877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera exposure compensations.  <a href="group__SceCameraUser.html#ga606bd6373b0b836b66f4451a770d2877">More...</a><br /></td></tr>
+<tr class="separator:ga606bd6373b0b836b66f4451a770d2877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7d6ebed185c1a019a614cb190e8656c" id="r_gaf7d6ebed185c1a019a614cb190e8656c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaf7d6ebed185c1a019a614cb190e8656c">SceCameraEffect</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656caa1036e87faaee9045d7c61bd51fbd7e1">SCE_CAMERA_EFFECT_NORMAL</a> = 0
+, <a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656ca4d4ca02152dca469aa1f39a8a1c60584">SCE_CAMERA_EFFECT_NEGATIVE</a> = 1
+, <a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656ca9ea9c3e2e65f6899b01a5bb9f6d40bab">SCE_CAMERA_EFFECT_BLACKWHITE</a> = 2
+, <a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656cab8a35437865a0b808a90eb23ccb9bf8a">SCE_CAMERA_EFFECT_SEPIA</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656cacd5dc911e3813f1a57ab9063fe836ac5">SCE_CAMERA_EFFECT_BLUE</a> = 4
+, <a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656cad48ee33b1e369dfc4d4528d9aea2a5dd">SCE_CAMERA_EFFECT_RED</a> = 5
+, <a class="el" href="group__SceCameraUser.html#ggaf7d6ebed185c1a019a614cb190e8656ca5e33c72dd1fc408aefa59acb39b42f9d">SCE_CAMERA_EFFECT_GREEN</a> = 6
+<br />
+ }</td></tr>
+<tr class="memdesc:gaf7d6ebed185c1a019a614cb190e8656c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera effects.  <a href="group__SceCameraUser.html#gaf7d6ebed185c1a019a614cb190e8656c">More...</a><br /></td></tr>
+<tr class="separator:gaf7d6ebed185c1a019a614cb190e8656c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24814c463db2b3f399d1e9e368b595ec" id="r_ga24814c463db2b3f399d1e9e368b595ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga24814c463db2b3f399d1e9e368b595ec">SceCameraReverse</a> { <a class="el" href="group__SceCameraUser.html#gga24814c463db2b3f399d1e9e368b595eca19ad1e5c44a5b169950d7a5a187fd536">SCE_CAMERA_REVERSE_OFF</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga24814c463db2b3f399d1e9e368b595eca730749c5890a2ec56efae6ab3d7fff98">SCE_CAMERA_REVERSE_MIRROR</a> = 1
+, <a class="el" href="group__SceCameraUser.html#gga24814c463db2b3f399d1e9e368b595ecae7b6f679514a4d47852f12fd0446f848">SCE_CAMERA_REVERSE_FLIP</a> = 2
+, <a class="el" href="group__SceCameraUser.html#gga24814c463db2b3f399d1e9e368b595eca0f8aa978653dbc1fbf692de48e3bbcc5">SCE_CAMERA_REVERSE_MIRROR_FLIP</a> = (SCE_CAMERA_REVERSE_MIRROR | SCE_CAMERA_REVERSE_FLIP)
+ }</td></tr>
+<tr class="memdesc:ga24814c463db2b3f399d1e9e368b595ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera reverse modes.  <a href="group__SceCameraUser.html#ga24814c463db2b3f399d1e9e368b595ec">More...</a><br /></td></tr>
+<tr class="separator:ga24814c463db2b3f399d1e9e368b595ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bb9e62c56802bc5459d62f00a33b11d" id="r_ga0bb9e62c56802bc5459d62f00a33b11d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga0bb9e62c56802bc5459d62f00a33b11d">SceCameraSaturation</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga0bb9e62c56802bc5459d62f00a33b11dad6259c48de269f0433b60156edb38af5">SCE_CAMERA_SATURATION_0</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga0bb9e62c56802bc5459d62f00a33b11daf66f6fb50c5ff39252bf5133401eafda">SCE_CAMERA_SATURATION_5</a> = 5
+, <a class="el" href="group__SceCameraUser.html#gga0bb9e62c56802bc5459d62f00a33b11da2ecc0cf5e77e6dcb5553f7d8fd7a101c">SCE_CAMERA_SATURATION_10</a> = 10
+, <a class="el" href="group__SceCameraUser.html#gga0bb9e62c56802bc5459d62f00a33b11da7f008fef3078e2eb09fdf212498bbf9c">SCE_CAMERA_SATURATION_20</a> = 20
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#gga0bb9e62c56802bc5459d62f00a33b11dad25a9b1b0ba46d78056ef94ec6764e37">SCE_CAMERA_SATURATION_30</a> = 30
+, <a class="el" href="group__SceCameraUser.html#gga0bb9e62c56802bc5459d62f00a33b11da347f0999ba5b3e6ec1e664c379f2fa0b">SCE_CAMERA_SATURATION_40</a> = 40
+<br />
+ }</td></tr>
+<tr class="memdesc:ga0bb9e62c56802bc5459d62f00a33b11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera saturations.  <a href="group__SceCameraUser.html#ga0bb9e62c56802bc5459d62f00a33b11d">More...</a><br /></td></tr>
+<tr class="separator:ga0bb9e62c56802bc5459d62f00a33b11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga816338d43515f67ee18c1daaa4802259" id="r_ga816338d43515f67ee18c1daaa4802259"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga816338d43515f67ee18c1daaa4802259">SceCameraSharpness</a> { <a class="el" href="group__SceCameraUser.html#gga816338d43515f67ee18c1daaa4802259a9c14b53a06f042114f830e09722ff69e">SCE_CAMERA_SHARPNESS_100</a> = 1
+, <a class="el" href="group__SceCameraUser.html#gga816338d43515f67ee18c1daaa4802259a3e52a22a6c48d9385e998877088321a1">SCE_CAMERA_SHARPNESS_200</a> = 2
+, <a class="el" href="group__SceCameraUser.html#gga816338d43515f67ee18c1daaa4802259ae6452fa496f56e88a151a97cb4b66770">SCE_CAMERA_SHARPNESS_300</a> = 3
+, <a class="el" href="group__SceCameraUser.html#gga816338d43515f67ee18c1daaa4802259a5218d060c81406ec9e93381094767739">SCE_CAMERA_SHARPNESS_400</a> = 4
+ }</td></tr>
+<tr class="memdesc:ga816338d43515f67ee18c1daaa4802259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera sharpnesses.  <a href="group__SceCameraUser.html#ga816338d43515f67ee18c1daaa4802259">More...</a><br /></td></tr>
+<tr class="separator:ga816338d43515f67ee18c1daaa4802259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2a79ea7b6dad9f0b55b093ad8cf5e72" id="r_gaf2a79ea7b6dad9f0b55b093ad8cf5e72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaf2a79ea7b6dad9f0b55b093ad8cf5e72">SceCameraAntiFlicker</a> { <a class="el" href="group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72ab26b5386411275c252508b54daf66382">SCE_CAMERA_ANTIFLICKER_AUTO</a> = 1
+, <a class="el" href="group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72a9a66bcaf682b57c0667bb3ee276e8915">SCE_CAMERA_ANTIFLICKER_50HZ</a> = 2
+, <a class="el" href="group__SceCameraUser.html#ggaf2a79ea7b6dad9f0b55b093ad8cf5e72afbf72d8ffc769ce8e5e0ddd31c9aa113">SCE_CAMERA_ANTIFLICKER_60HZ</a> = 3
+ }</td></tr>
+<tr class="memdesc:gaf2a79ea7b6dad9f0b55b093ad8cf5e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera anti-flickering modes.  <a href="group__SceCameraUser.html#gaf2a79ea7b6dad9f0b55b093ad8cf5e72">More...</a><br /></td></tr>
+<tr class="separator:gaf2a79ea7b6dad9f0b55b093ad8cf5e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae58383a773949218dee4c63242d61943" id="r_gae58383a773949218dee4c63242d61943"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gae58383a773949218dee4c63242d61943">SceCameraISO</a> { <a class="el" href="group__SceCameraUser.html#ggae58383a773949218dee4c63242d61943ad4e0347d477e65f784ecd0a5c2350ba4">SCE_CAMERA_ISO_AUTO</a> = 1
+, <a class="el" href="group__SceCameraUser.html#ggae58383a773949218dee4c63242d61943ae051fe9aa2376d7ea2190454ba723ab7">SCE_CAMERA_ISO_100</a> = 100
+, <a class="el" href="group__SceCameraUser.html#ggae58383a773949218dee4c63242d61943a1a151120f044748c816f47e4d04ffa9d">SCE_CAMERA_ISO_200</a> = 200
+, <a class="el" href="group__SceCameraUser.html#ggae58383a773949218dee4c63242d61943a184cbd1fc4d5ca7d434930554d8fc060">SCE_CAMERA_ISO_400</a> = 400
+ }</td></tr>
+<tr class="memdesc:gae58383a773949218dee4c63242d61943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera ISO speed modes.  <a href="group__SceCameraUser.html#gae58383a773949218dee4c63242d61943">More...</a><br /></td></tr>
+<tr class="separator:gae58383a773949218dee4c63242d61943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafef9d2259cf3c481af4ee07001b40c5a" id="r_gafef9d2259cf3c481af4ee07001b40c5a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gafef9d2259cf3c481af4ee07001b40c5a">SceCameraGain</a> { <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aaa79657473221c46808603d1d97d4b12d">SCE_CAMERA_GAIN_AUTO</a> = 0
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa44c82fd8a7e5379d4414c6c6f9404cca">SCE_CAMERA_GAIN_1</a> = 1
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa46cae0f1b9a965dbf0d845054e5585b1">SCE_CAMERA_GAIN_2</a> = 2
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa3f36e74e901de399a66d28c2e7c5f2bb">SCE_CAMERA_GAIN_3</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aab4bd7e0310096e90171c1d1ea51f41dd">SCE_CAMERA_GAIN_4</a> = 4
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa72fbf169a059f9c375593e7eefb21c0d">SCE_CAMERA_GAIN_5</a> = 5
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa355fcfcc8d541e36cc8d37cba1542d7a">SCE_CAMERA_GAIN_6</a> = 6
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aad7b29f37780f3285d0110623f7a15180">SCE_CAMERA_GAIN_7</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aaf49b32491ff62e2b57a16fa447c9d766">SCE_CAMERA_GAIN_8</a> = 8
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa1ee51593f4c0d7cfedf4729c83cfefd7">SCE_CAMERA_GAIN_9</a> = 9
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa4bcaf6d1ea72d1c6b7e605eae1123c45">SCE_CAMERA_GAIN_10</a> = 10
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aaaf538dd4421b2c48f54393c030758400">SCE_CAMERA_GAIN_11</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa82c87f83e9d8917d75dcb24189c57392">SCE_CAMERA_GAIN_12</a> = 12
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa42be75d10199a9f60e03fb2cd2199578">SCE_CAMERA_GAIN_13</a> = 13
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aab59391effbb32f6f5922a47771fc36e3">SCE_CAMERA_GAIN_14</a> = 14
+, <a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aa63abd6dfc7f3ed2ae0dfcbdfb0cd4d89">SCE_CAMERA_GAIN_15</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="group__SceCameraUser.html#ggafef9d2259cf3c481af4ee07001b40c5aab2a499a3e2f1c239bc77395570359de4">SCE_CAMERA_GAIN_16</a> = 16
+<br />
+ }</td></tr>
+<tr class="memdesc:gafef9d2259cf3c481af4ee07001b40c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera gain modes.  <a href="group__SceCameraUser.html#gafef9d2259cf3c481af4ee07001b40c5a">More...</a><br /></td></tr>
+<tr class="separator:gafef9d2259cf3c481af4ee07001b40c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d60500b6025253d90cbfc89dcea0e9b" id="r_ga3d60500b6025253d90cbfc89dcea0e9b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga3d60500b6025253d90cbfc89dcea0e9b">SceCameraWhiteBalance</a> { <a class="el" href="group__SceCameraUser.html#gga3d60500b6025253d90cbfc89dcea0e9ba6a524be7a6108dbb7bec11ef170eb9f7">SCE_CAMERA_WB_AUTO</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga3d60500b6025253d90cbfc89dcea0e9bab0c5f7c0c896bc7546e0aca360307e15">SCE_CAMERA_WB_DAY</a> = 1
+, <a class="el" href="group__SceCameraUser.html#gga3d60500b6025253d90cbfc89dcea0e9baa5cd99abeab98cd10cead27b7cdc8552">SCE_CAMERA_WB_CWF</a> = 2
+, <a class="el" href="group__SceCameraUser.html#gga3d60500b6025253d90cbfc89dcea0e9ba156b5231b328f27c2bad3dff953c6f26">SCE_CAMERA_WB_SLSA</a> = 4
+ }</td></tr>
+<tr class="memdesc:ga3d60500b6025253d90cbfc89dcea0e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera white balance modes.  <a href="group__SceCameraUser.html#ga3d60500b6025253d90cbfc89dcea0e9b">More...</a><br /></td></tr>
+<tr class="separator:ga3d60500b6025253d90cbfc89dcea0e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefac85344010de2794dd9da99ebbfd74" id="r_gaefac85344010de2794dd9da99ebbfd74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaefac85344010de2794dd9da99ebbfd74">SceCameraBacklight</a> { <a class="el" href="group__SceCameraUser.html#ggaefac85344010de2794dd9da99ebbfd74ad95bcd30909ac8a6679ef638a4b682c8">SCE_CAMERA_BACKLIGHT_OFF</a> = 0
+, <a class="el" href="group__SceCameraUser.html#ggaefac85344010de2794dd9da99ebbfd74a77fb2f38552fc553a5a9c8657488bb9f">SCE_CAMERA_BACKLIGHT_ON</a> = 1
+ }</td></tr>
+<tr class="memdesc:gaefac85344010de2794dd9da99ebbfd74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera backlight modes.  <a href="group__SceCameraUser.html#gaefac85344010de2794dd9da99ebbfd74">More...</a><br /></td></tr>
+<tr class="separator:gaefac85344010de2794dd9da99ebbfd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d6d3f0ec23c1fff8948f9bbb1bd47f1" id="r_ga4d6d3f0ec23c1fff8948f9bbb1bd47f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga4d6d3f0ec23c1fff8948f9bbb1bd47f1">SceCameraNightmode</a> { <a class="el" href="group__SceCameraUser.html#gga4d6d3f0ec23c1fff8948f9bbb1bd47f1a05beb444dc40d461c8ccaf9702825a92">SCE_CAMERA_NIGHTMODE_OFF</a> = 0
+, <a class="el" href="group__SceCameraUser.html#gga4d6d3f0ec23c1fff8948f9bbb1bd47f1a6c1bfd1de297a4a8fb9191a492e65f61">SCE_CAMERA_NIGHTMODE_LESS10</a> = 1
+, <a class="el" href="group__SceCameraUser.html#gga4d6d3f0ec23c1fff8948f9bbb1bd47f1a03ef54dbde3d9c62ae578cde5c66109d">SCE_CAMERA_NIGHTMODE_LESS100</a> = 2
+, <a class="el" href="group__SceCameraUser.html#gga4d6d3f0ec23c1fff8948f9bbb1bd47f1a5744033043fae9305b47c0d7eac8e278">SCE_CAMERA_NIGHTMODE_OVER100</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga4d6d3f0ec23c1fff8948f9bbb1bd47f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the camera nightmode modes.  <a href="group__SceCameraUser.html#ga4d6d3f0ec23c1fff8948f9bbb1bd47f1">More...</a><br /></td></tr>
+<tr class="separator:ga4d6d3f0ec23c1fff8948f9bbb1bd47f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga5be4c55392e48a348ed0ccded2c7ecbf" id="r_ga5be4c55392e48a348ed0ccded2c7ecbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga5be4c55392e48a348ed0ccded2c7ecbf">VITASDK_BUILD_ASSERT_EQ</a> (0x30, <a class="el" href="group__SceCameraUser.html#structSceCameraInfo">SceCameraInfo</a>)</td></tr>
@@ -225,8 +435,88 @@ Functions</h2></td></tr>
 <tr class="separator:ga82ac11b05b01d18d76d5496132449fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7bfc0fd9b1c57ac0b9b39618948faa58" id="r_ga7bfc0fd9b1c57ac0b9b39618948faa58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga7bfc0fd9b1c57ac0b9b39618948faa58">sceCameraSetSharpnessOff</a> (int devnum, int level)</td></tr>
 <tr class="separator:ga7bfc0fd9b1c57ac0b9b39618948faa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga1bb8dcdca01aa5944b3d9b34f4bd3f43" id="r_ga1bb8dcdca01aa5944b3d9b34f4bd3f43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga1bb8dcdca01aa5944b3d9b34f4bd3f43">SceCameraInfo::size</a></td></tr>
+<tr class="memdesc:ga1bb8dcdca01aa5944b3d9b34f4bd3f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(SceCameraInfo)  <br /></td></tr>
+<tr class="separator:ga1bb8dcdca01aa5944b3d9b34f4bd3f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cb79a755c2a090cbdcff993ab122f17" id="r_ga9cb79a755c2a090cbdcff993ab122f17"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga9cb79a755c2a090cbdcff993ab122f17">SceCameraInfo::priority</a></td></tr>
+<tr class="memdesc:ga9cb79a755c2a090cbdcff993ab122f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process priority (one of <a class="el" href="group__SceCameraUser.html#ga4aa0ccc8e3095fcf1e39dd26611c750a" title="Enumeration for the camera process priorities.">SceCameraPriority</a>)  <br /></td></tr>
+<tr class="separator:ga9cb79a755c2a090cbdcff993ab122f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e8e8deee6fca615c6eb7e59fb3ddc27" id="r_ga4e8e8deee6fca615c6eb7e59fb3ddc27"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga4e8e8deee6fca615c6eb7e59fb3ddc27">SceCameraInfo::format</a></td></tr>
+<tr class="memdesc:ga4e8e8deee6fca615c6eb7e59fb3ddc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output format (One or more <a class="el" href="group__SceCameraUser.html#ga3d95d44487503d6048333d0ac8afedfc" title="Enumeration for the camera output formats.">SceCameraFormat</a>)  <br /></td></tr>
+<tr class="separator:ga4e8e8deee6fca615c6eb7e59fb3ddc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga390db7197ad68ed330e1eb6361f6380b" id="r_ga390db7197ad68ed330e1eb6361f6380b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga390db7197ad68ed330e1eb6361f6380b">SceCameraInfo::resolution</a></td></tr>
+<tr class="memdesc:ga390db7197ad68ed330e1eb6361f6380b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution (one of <a class="el" href="group__SceCameraUser.html#ga30bcce68a36fb599a8d7dd63f31b037a" title="Enumeration for the camera resolutions.">SceCameraResolution</a>)  <br /></td></tr>
+<tr class="separator:ga390db7197ad68ed330e1eb6361f6380b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dd8d32cbc0a4b798660105074ea3aa4" id="r_ga0dd8d32cbc0a4b798660105074ea3aa4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga0dd8d32cbc0a4b798660105074ea3aa4">SceCameraInfo::framerate</a></td></tr>
+<tr class="memdesc:ga0dd8d32cbc0a4b798660105074ea3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framerate (one of <a class="el" href="group__SceCameraUser.html#ga4588e783c667860efff696257a2b40d0" title="Enumeration for the camera framerates.">SceCameraFrameRate</a>)  <br /></td></tr>
+<tr class="separator:ga0dd8d32cbc0a4b798660105074ea3aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81664363ed0ca658c8fd9da141855bfe" id="r_ga81664363ed0ca658c8fd9da141855bfe"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga81664363ed0ca658c8fd9da141855bfe">SceCameraInfo::width</a></td></tr>
+<tr class="separator:ga81664363ed0ca658c8fd9da141855bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga076dde5e6329c692a7a2d13016ea194b" id="r_ga076dde5e6329c692a7a2d13016ea194b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga076dde5e6329c692a7a2d13016ea194b">SceCameraInfo::height</a></td></tr>
+<tr class="separator:ga076dde5e6329c692a7a2d13016ea194b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f0fe59da33abafa9188ad6ef4064c90" id="r_ga2f0fe59da33abafa9188ad6ef4064c90"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga2f0fe59da33abafa9188ad6ef4064c90">SceCameraInfo::range</a></td></tr>
+<tr class="separator:ga2f0fe59da33abafa9188ad6ef4064c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga772a366fa0830116a944a100386750b7" id="r_ga772a366fa0830116a944a100386750b7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga772a366fa0830116a944a100386750b7">SceCameraInfo::pad</a></td></tr>
+<tr class="memdesc:ga772a366fa0830116a944a100386750b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure padding.  <br /></td></tr>
+<tr class="separator:ga772a366fa0830116a944a100386750b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95af9811794216c10dcef9594859481a" id="r_ga95af9811794216c10dcef9594859481a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga95af9811794216c10dcef9594859481a">SceCameraInfo::sizeIBase</a></td></tr>
+<tr class="separator:ga95af9811794216c10dcef9594859481a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92ff172bc176fc88cf655e0aca72c495" id="r_ga92ff172bc176fc88cf655e0aca72c495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga92ff172bc176fc88cf655e0aca72c495">SceCameraInfo::sizeUBase</a></td></tr>
+<tr class="separator:ga92ff172bc176fc88cf655e0aca72c495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d1dbb8b4d38f8a5596f91cf5ac0a13f" id="r_ga5d1dbb8b4d38f8a5596f91cf5ac0a13f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga5d1dbb8b4d38f8a5596f91cf5ac0a13f">SceCameraInfo::sizeVBase</a></td></tr>
+<tr class="separator:ga5d1dbb8b4d38f8a5596f91cf5ac0a13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga657206c8c640922f1b0a6fdce2718d44" id="r_ga657206c8c640922f1b0a6fdce2718d44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga657206c8c640922f1b0a6fdce2718d44">SceCameraInfo::pIBase</a></td></tr>
+<tr class="separator:ga657206c8c640922f1b0a6fdce2718d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad77f7ffd501e14e46649fc1ac15392c1" id="r_gad77f7ffd501e14e46649fc1ac15392c1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gad77f7ffd501e14e46649fc1ac15392c1">SceCameraInfo::pUBase</a></td></tr>
+<tr class="separator:gad77f7ffd501e14e46649fc1ac15392c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf95a73094e9d23297ad688258f5618f7" id="r_gaf95a73094e9d23297ad688258f5618f7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaf95a73094e9d23297ad688258f5618f7">SceCameraInfo::pVBase</a></td></tr>
+<tr class="separator:gaf95a73094e9d23297ad688258f5618f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8072d0b448df9bf4a6d910b9e776997a" id="r_ga8072d0b448df9bf4a6d910b9e776997a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga8072d0b448df9bf4a6d910b9e776997a">SceCameraInfo::pitch</a></td></tr>
+<tr class="separator:ga8072d0b448df9bf4a6d910b9e776997a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac02b8115521340602d45483254388f92" id="r_gac02b8115521340602d45483254388f92"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gac02b8115521340602d45483254388f92">SceCameraInfo::buffer</a></td></tr>
+<tr class="separator:gac02b8115521340602d45483254388f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga469acd97da2ca44e7b0767d9e8bc928d" id="r_ga469acd97da2ca44e7b0767d9e8bc928d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga469acd97da2ca44e7b0767d9e8bc928d">SceCameraRead::size</a></td></tr>
+<tr class="memdesc:ga469acd97da2ca44e7b0767d9e8bc928d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(SceCameraRead)  <br /></td></tr>
+<tr class="separator:ga469acd97da2ca44e7b0767d9e8bc928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dbd4c64a3dc72741b0460d082541635" id="r_ga5dbd4c64a3dc72741b0460d082541635"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga5dbd4c64a3dc72741b0460d082541635">SceCameraRead::mode</a></td></tr>
+<tr class="separator:ga5dbd4c64a3dc72741b0460d082541635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76d4349839413fd09e58c464986b4230" id="r_ga76d4349839413fd09e58c464986b4230"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga76d4349839413fd09e58c464986b4230">SceCameraRead::pad</a></td></tr>
+<tr class="separator:ga76d4349839413fd09e58c464986b4230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5922e864d3973f1196dbb4657e9b962e" id="r_ga5922e864d3973f1196dbb4657e9b962e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga5922e864d3973f1196dbb4657e9b962e">SceCameraRead::status</a></td></tr>
+<tr class="separator:ga5922e864d3973f1196dbb4657e9b962e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2f3cad0a68e99231214bcd77ee4349b" id="r_gab2f3cad0a68e99231214bcd77ee4349b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gab2f3cad0a68e99231214bcd77ee4349b">SceCameraRead::frame</a></td></tr>
+<tr class="separator:gab2f3cad0a68e99231214bcd77ee4349b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefc6d3a88ea7197f9878469af77f4997" id="r_gaefc6d3a88ea7197f9878469af77f4997"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaefc6d3a88ea7197f9878469af77f4997">SceCameraRead::timestamp</a></td></tr>
+<tr class="separator:gaefc6d3a88ea7197f9878469af77f4997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dcb3d9b737bc645f5a228eabbab045f" id="r_ga4dcb3d9b737bc645f5a228eabbab045f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga4dcb3d9b737bc645f5a228eabbab045f">SceCameraRead::sizeIBase</a></td></tr>
+<tr class="separator:ga4dcb3d9b737bc645f5a228eabbab045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1ac0b85fd90719a158ca6b5114e6da8" id="r_gaa1ac0b85fd90719a158ca6b5114e6da8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaa1ac0b85fd90719a158ca6b5114e6da8">SceCameraRead::sizeUBase</a></td></tr>
+<tr class="separator:gaa1ac0b85fd90719a158ca6b5114e6da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa232147b8f187ab4f72c4bdd06b539d6" id="r_gaa232147b8f187ab4f72c4bdd06b539d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaa232147b8f187ab4f72c4bdd06b539d6">SceCameraRead::sizeVBase</a></td></tr>
+<tr class="separator:gaa232147b8f187ab4f72c4bdd06b539d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cd3652c9b00916853c923a3f40adbfb" id="r_ga4cd3652c9b00916853c923a3f40adbfb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga4cd3652c9b00916853c923a3f40adbfb">SceCameraRead::pIBase</a></td></tr>
+<tr class="separator:ga4cd3652c9b00916853c923a3f40adbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45ce3e4bb04ddd280f1adf0690d0b360" id="r_ga45ce3e4bb04ddd280f1adf0690d0b360"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#ga45ce3e4bb04ddd280f1adf0690d0b360">SceCameraRead::pUBase</a></td></tr>
+<tr class="separator:ga45ce3e4bb04ddd280f1adf0690d0b360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf52db10d946d629052e264c38a7f62d5" id="r_gaf52db10d946d629052e264c38a7f62d5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCameraUser.html#gaf52db10d946d629052e264c38a7f62d5">SceCameraRead::pVBase</a></td></tr>
+<tr class="separator:gaf52db10d946d629052e264c38a7f62d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="camera_8h.html">psp2/camera.h</a>&gt;</span> </div>
+<div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="camera_8h.html">camera.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceCamera_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCameraInfo" id="structSceCameraInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceCameraInfo">&#9670;&#160;</a></span>SceCameraInfo</h2>
 
@@ -2603,6 +2893,427 @@ pVBase</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga1bb8dcdca01aa5944b3d9b34f4bd3f43" name="ga1bb8dcdca01aa5944b3d9b34f4bd3f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bb8dcdca01aa5944b3d9b34f4bd3f43">&#9670;&#160;</a></span>size <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraInfo::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sizeof(SceCameraInfo) </p>
+
+</div>
+</div>
+<a id="ga9cb79a755c2a090cbdcff993ab122f17" name="ga9cb79a755c2a090cbdcff993ab122f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cb79a755c2a090cbdcff993ab122f17">&#9670;&#160;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process priority (one of <a class="el" href="group__SceCameraUser.html#ga4aa0ccc8e3095fcf1e39dd26611c750a" title="Enumeration for the camera process priorities.">SceCameraPriority</a>) </p>
+
+</div>
+</div>
+<a id="ga4e8e8deee6fca615c6eb7e59fb3ddc27" name="ga4e8e8deee6fca615c6eb7e59fb3ddc27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e8e8deee6fca615c6eb7e59fb3ddc27">&#9670;&#160;</a></span>format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output format (One or more <a class="el" href="group__SceCameraUser.html#ga3d95d44487503d6048333d0ac8afedfc" title="Enumeration for the camera output formats.">SceCameraFormat</a>) </p>
+
+</div>
+</div>
+<a id="ga390db7197ad68ed330e1eb6361f6380b" name="ga390db7197ad68ed330e1eb6361f6380b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga390db7197ad68ed330e1eb6361f6380b">&#9670;&#160;</a></span>resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::resolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolution (one of <a class="el" href="group__SceCameraUser.html#ga30bcce68a36fb599a8d7dd63f31b037a" title="Enumeration for the camera resolutions.">SceCameraResolution</a>) </p>
+
+</div>
+</div>
+<a id="ga0dd8d32cbc0a4b798660105074ea3aa4" name="ga0dd8d32cbc0a4b798660105074ea3aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0dd8d32cbc0a4b798660105074ea3aa4">&#9670;&#160;</a></span>framerate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::framerate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Framerate (one of <a class="el" href="group__SceCameraUser.html#ga4588e783c667860efff696257a2b40d0" title="Enumeration for the camera framerates.">SceCameraFrameRate</a>) </p>
+
+</div>
+</div>
+<a id="ga81664363ed0ca658c8fd9da141855bfe" name="ga81664363ed0ca658c8fd9da141855bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81664363ed0ca658c8fd9da141855bfe">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga076dde5e6329c692a7a2d13016ea194b" name="ga076dde5e6329c692a7a2d13016ea194b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga076dde5e6329c692a7a2d13016ea194b">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2f0fe59da33abafa9188ad6ef4064c90" name="ga2f0fe59da33abafa9188ad6ef4064c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f0fe59da33abafa9188ad6ef4064c90">&#9670;&#160;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga772a366fa0830116a944a100386750b7" name="ga772a366fa0830116a944a100386750b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga772a366fa0830116a944a100386750b7">&#9670;&#160;</a></span>pad <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::pad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure padding. </p>
+
+</div>
+</div>
+<a id="ga95af9811794216c10dcef9594859481a" name="ga95af9811794216c10dcef9594859481a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95af9811794216c10dcef9594859481a">&#9670;&#160;</a></span>sizeIBase <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraInfo::sizeIBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga92ff172bc176fc88cf655e0aca72c495" name="ga92ff172bc176fc88cf655e0aca72c495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92ff172bc176fc88cf655e0aca72c495">&#9670;&#160;</a></span>sizeUBase <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraInfo::sizeUBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5d1dbb8b4d38f8a5596f91cf5ac0a13f" name="ga5d1dbb8b4d38f8a5596f91cf5ac0a13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d1dbb8b4d38f8a5596f91cf5ac0a13f">&#9670;&#160;</a></span>sizeVBase <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraInfo::sizeVBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga657206c8c640922f1b0a6fdce2718d44" name="ga657206c8c640922f1b0a6fdce2718d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga657206c8c640922f1b0a6fdce2718d44">&#9670;&#160;</a></span>pIBase <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCameraInfo::pIBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad77f7ffd501e14e46649fc1ac15392c1" name="gad77f7ffd501e14e46649fc1ac15392c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad77f7ffd501e14e46649fc1ac15392c1">&#9670;&#160;</a></span>pUBase <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCameraInfo::pUBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf95a73094e9d23297ad688258f5618f7" name="gaf95a73094e9d23297ad688258f5618f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf95a73094e9d23297ad688258f5618f7">&#9670;&#160;</a></span>pVBase <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCameraInfo::pVBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8072d0b448df9bf4a6d910b9e776997a" name="ga8072d0b448df9bf4a6d910b9e776997a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8072d0b448df9bf4a6d910b9e776997a">&#9670;&#160;</a></span>pitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::pitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac02b8115521340602d45483254388f92" name="gac02b8115521340602d45483254388f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac02b8115521340602d45483254388f92">&#9670;&#160;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceCameraInfo::buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga469acd97da2ca44e7b0767d9e8bc928d" name="ga469acd97da2ca44e7b0767d9e8bc928d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga469acd97da2ca44e7b0767d9e8bc928d">&#9670;&#160;</a></span>size <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraRead::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sizeof(SceCameraRead) </p>
+
+</div>
+</div>
+<a id="ga5dbd4c64a3dc72741b0460d082541635" name="ga5dbd4c64a3dc72741b0460d082541635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5dbd4c64a3dc72741b0460d082541635">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCameraRead::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga76d4349839413fd09e58c464986b4230" name="ga76d4349839413fd09e58c464986b4230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76d4349839413fd09e58c464986b4230">&#9670;&#160;</a></span>pad <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCameraRead::pad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5922e864d3973f1196dbb4657e9b962e" name="ga5922e864d3973f1196dbb4657e9b962e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5922e864d3973f1196dbb4657e9b962e">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCameraRead::status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab2f3cad0a68e99231214bcd77ee4349b" name="gab2f3cad0a68e99231214bcd77ee4349b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2f3cad0a68e99231214bcd77ee4349b">&#9670;&#160;</a></span>frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SceCameraRead::frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaefc6d3a88ea7197f9878469af77f4997" name="gaefc6d3a88ea7197f9878469af77f4997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefc6d3a88ea7197f9878469af77f4997">&#9670;&#160;</a></span>timestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SceCameraRead::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4dcb3d9b737bc645f5a228eabbab045f" name="ga4dcb3d9b737bc645f5a228eabbab045f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dcb3d9b737bc645f5a228eabbab045f">&#9670;&#160;</a></span>sizeIBase <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraRead::sizeIBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa1ac0b85fd90719a158ca6b5114e6da8" name="gaa1ac0b85fd90719a158ca6b5114e6da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1ac0b85fd90719a158ca6b5114e6da8">&#9670;&#160;</a></span>sizeUBase <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraRead::sizeUBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa232147b8f187ab4f72c4bdd06b539d6" name="gaa232147b8f187ab4f72c4bdd06b539d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa232147b8f187ab4f72c4bdd06b539d6">&#9670;&#160;</a></span>sizeVBase <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCameraRead::sizeVBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4cd3652c9b00916853c923a3f40adbfb" name="ga4cd3652c9b00916853c923a3f40adbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cd3652c9b00916853c923a3f40adbfb">&#9670;&#160;</a></span>pIBase <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCameraRead::pIBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45ce3e4bb04ddd280f1adf0690d0b360" name="ga45ce3e4bb04ddd280f1adf0690d0b360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45ce3e4bb04ddd280f1adf0690d0b360">&#9670;&#160;</a></span>pUBase <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCameraRead::pUBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf52db10d946d629052e264c38a7f62d5" name="gaf52db10d946d629052e264c38a7f62d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf52db10d946d629052e264c38a7f62d5">&#9670;&#160;</a></span>pVBase <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCameraRead::pVBase</td>
         </tr>
       </table>
 </div><div class="memdoc">

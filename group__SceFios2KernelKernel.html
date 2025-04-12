@@ -73,12 +73,88 @@ $(document).ready(function(){initNavTree('group__SceFios2KernelKernel.html','');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Filesystem.html">Filesystem</a> &raquo; <a class="el" href="group__SceFios2Kernel.html">File System Overlay Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceFiosOverlay" id="r_structSceFiosOverlay"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a></td></tr>
+<tr class="separator:structSceFiosOverlay"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga95411438d511f6a68fc22be9d5b53040" id="r_ga95411438d511f6a68fc22be9d5b53040"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>&#160;&#160;&#160;(292)</td></tr>
+<tr class="separator:ga95411438d511f6a68fc22be9d5b53040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97e0dc938f1417acef271be19fc5cd5d" id="r_ga97e0dc938f1417acef271be19fc5cd5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga97e0dc938f1417acef271be19fc5cd5d">SCE_FIOS2_OVERLAY_PATH_MAX_LENGTH</a>&#160;&#160;&#160;(<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a> - 1)</td></tr>
+<tr class="separator:ga97e0dc938f1417acef271be19fc5cd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga9ce1e49d24011604564ec4dd73e555b4" id="r_ga9ce1e49d24011604564ec4dd73e555b4"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a></td></tr>
+<tr class="separator:ga9ce1e49d24011604564ec4dd73e555b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga4cff87d2582f23b178ded5e6420ddc01" id="r_ga4cff87d2582f23b178ded5e6420ddc01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a> { <a class="el" href="group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01aab34262acb1a28145942ef941e6259c1">SCE_FIOS_OVERLAY_TYPE_OPAQUE</a> = 0
+, <a class="el" href="group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c">SCE_FIOS_OVERLAY_TYPE_TRANSLUCENT</a> = 1
+, <a class="el" href="group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de">SCE_FIOS_OVERLAY_TYPE_NEWER</a> = 2
+, <a class="el" href="group__SceFios2KernelKernel.html#gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f">SCE_FIOS_OVERLAY_TYPE_WRITABLE</a> = 3
+ }</td></tr>
+<tr class="separator:ga4cff87d2582f23b178ded5e6420ddc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga29eb5b029cb16a7e5750bff964738699" id="r_ga29eb5b029cb16a7e5750bff964738699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga29eb5b029cb16a7e5750bff964738699">sceFiosKernelOverlayAddForProcess02</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
+<tr class="separator:ga29eb5b029cb16a7e5750bff964738699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f857da9d97962e77e397cf804de1360" id="r_ga6f857da9d97962e77e397cf804de1360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga6f857da9d97962e77e397cf804de1360">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>)</td></tr>
+<tr class="separator:ga6f857da9d97962e77e397cf804de1360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cd96e62ba6f30d249870f4217aa251a" id="r_ga2cd96e62ba6f30d249870f4217aa251a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga2cd96e62ba6f30d249870f4217aa251a">VITASDK_BUILD_ASSERT_EQ</a> (0x258, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a>)</td></tr>
+<tr class="separator:ga2cd96e62ba6f30d249870f4217aa251a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga045f58dcf924f09a660f9ddf573e9432" id="r_ga045f58dcf924f09a660f9ddf573e9432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432">ksceFiosKernelOverlayAdd</a> (<a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
+<tr class="memdesc:ga045f58dcf924f09a660f9ddf573e9432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay process file system overlay.  <br /></td></tr>
+<tr class="separator:ga045f58dcf924f09a660f9ddf573e9432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1345cdbd5408050293bf8272591c0638" id="r_ga1345cdbd5408050293bf8272591c0638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga1345cdbd5408050293bf8272591c0638">ksceFiosKernelOverlayAddForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
+<tr class="memdesc:ga1345cdbd5408050293bf8272591c0638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay process file system overlay.  <br /></td></tr>
+<tr class="separator:ga1345cdbd5408050293bf8272591c0638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8dc6232017173c296da1e11001b3392" id="r_gae8dc6232017173c296da1e11001b3392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gae8dc6232017173c296da1e11001b3392">ksceFiosKernelOverlayRemoveForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id)</td></tr>
+<tr class="memdesc:gae8dc6232017173c296da1e11001b3392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove process file system overlay.  <br /></td></tr>
+<tr class="separator:gae8dc6232017173c296da1e11001b3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff69dd245c855399c78a1e2f7ac6b524" id="r_gaff69dd245c855399c78a1e2f7ac6b524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gaff69dd245c855399c78a1e2f7ac6b524">ksceFiosKernelOverlayResolveSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolveFlag, const char *inPath, char *outPath, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> maxPath)</td></tr>
+<tr class="memdesc:gaff69dd245c855399c78a1e2f7ac6b524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve process file system overlay with sync.  <br /></td></tr>
+<tr class="separator:gaff69dd245c855399c78a1e2f7ac6b524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga30ce9c640ddae124be64c4a19a740de5" id="r_ga30ce9c640ddae124be64c4a19a740de5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga30ce9c640ddae124be64c4a19a740de5">SceFiosOverlay::type</a></td></tr>
+<tr class="separator:ga30ce9c640ddae124be64c4a19a740de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57b3de5d40d266baa3de1a0f12093ef6" id="r_ga57b3de5d40d266baa3de1a0f12093ef6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga57b3de5d40d266baa3de1a0f12093ef6">SceFiosOverlay::order</a></td></tr>
+<tr class="separator:ga57b3de5d40d266baa3de1a0f12093ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c65b16ca3252130934ad4e6dc454377" id="r_ga5c65b16ca3252130934ad4e6dc454377"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga5c65b16ca3252130934ad4e6dc454377">SceFiosOverlay::dst_len</a></td></tr>
+<tr class="separator:ga5c65b16ca3252130934ad4e6dc454377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c422a3c57b138f1d1367568183e9f96" id="r_ga4c422a3c57b138f1d1367568183e9f96"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga4c422a3c57b138f1d1367568183e9f96">SceFiosOverlay::src_len</a></td></tr>
+<tr class="separator:ga4c422a3c57b138f1d1367568183e9f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39f8adc965b7cbfc44c141f0559d3fd8" id="r_ga39f8adc965b7cbfc44c141f0559d3fd8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga39f8adc965b7cbfc44c141f0559d3fd8">SceFiosOverlay::unk2</a></td></tr>
+<tr class="separator:ga39f8adc965b7cbfc44c141f0559d3fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga251409fcdd74e557dbebc0ab0da5eefa" id="r_ga251409fcdd74e557dbebc0ab0da5eefa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga251409fcdd74e557dbebc0ab0da5eefa">SceFiosOverlay::pid</a></td></tr>
+<tr class="separator:ga251409fcdd74e557dbebc0ab0da5eefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3670f391cba14738ef8fb74bcdef18a0" id="r_ga3670f391cba14738ef8fb74bcdef18a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga3670f391cba14738ef8fb74bcdef18a0">SceFiosOverlay::id</a></td></tr>
+<tr class="separator:ga3670f391cba14738ef8fb74bcdef18a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cf6cb442ff4d8b8407ab1f04b708c99" id="r_ga5cf6cb442ff4d8b8407ab1f04b708c99"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga5cf6cb442ff4d8b8407ab1f04b708c99">SceFiosOverlay::dst</a> [<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td></tr>
+<tr class="separator:ga5cf6cb442ff4d8b8407ab1f04b708c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2132d050656cd9d81980d08713614521" id="r_ga2132d050656cd9d81980d08713614521"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga2132d050656cd9d81980d08713614521">SceFiosOverlay::src</a> [<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td></tr>
+<tr class="separator:ga2132d050656cd9d81980d08713614521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -108,41 +184,7 @@ $(document).ready(function(){initNavTree('group__SceFios2KernelKernel.html','');
 </p><div class="fragment"><div class="line">SceFios2KernelForDriver </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga29eb5b029cb16a7e5750bff964738699" id="r_ga29eb5b029cb16a7e5750bff964738699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga29eb5b029cb16a7e5750bff964738699">sceFiosKernelOverlayAddForProcess02</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
-<tr class="separator:ga29eb5b029cb16a7e5750bff964738699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f857da9d97962e77e397cf804de1360" id="r_ga6f857da9d97962e77e397cf804de1360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga6f857da9d97962e77e397cf804de1360">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>)</td></tr>
-<tr class="separator:ga6f857da9d97962e77e397cf804de1360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2cd96e62ba6f30d249870f4217aa251a" id="r_ga2cd96e62ba6f30d249870f4217aa251a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga2cd96e62ba6f30d249870f4217aa251a">VITASDK_BUILD_ASSERT_EQ</a> (0x258, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a>)</td></tr>
-<tr class="separator:ga2cd96e62ba6f30d249870f4217aa251a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga045f58dcf924f09a660f9ddf573e9432" id="r_ga045f58dcf924f09a660f9ddf573e9432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432">ksceFiosKernelOverlayAdd</a> (<a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
-<tr class="memdesc:ga045f58dcf924f09a660f9ddf573e9432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay process file system overlay.  <br /></td></tr>
-<tr class="separator:ga045f58dcf924f09a660f9ddf573e9432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1345cdbd5408050293bf8272591c0638" id="r_ga1345cdbd5408050293bf8272591c0638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga1345cdbd5408050293bf8272591c0638">ksceFiosKernelOverlayAddForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
-<tr class="memdesc:ga1345cdbd5408050293bf8272591c0638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay process file system overlay.  <br /></td></tr>
-<tr class="separator:ga1345cdbd5408050293bf8272591c0638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8dc6232017173c296da1e11001b3392" id="r_gae8dc6232017173c296da1e11001b3392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gae8dc6232017173c296da1e11001b3392">ksceFiosKernelOverlayRemoveForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id)</td></tr>
-<tr class="memdesc:gae8dc6232017173c296da1e11001b3392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove process file system overlay.  <br /></td></tr>
-<tr class="separator:gae8dc6232017173c296da1e11001b3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff69dd245c855399c78a1e2f7ac6b524" id="r_gaff69dd245c855399c78a1e2f7ac6b524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gaff69dd245c855399c78a1e2f7ac6b524">ksceFiosKernelOverlayResolveSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolveFlag, const char *inPath, char *outPath, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> maxPath)</td></tr>
-<tr class="memdesc:gaff69dd245c855399c78a1e2f7ac6b524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve process file system overlay with sync.  <br /></td></tr>
-<tr class="separator:gaff69dd245c855399c78a1e2f7ac6b524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga9ce1e49d24011604564ec4dd73e555b4" id="r_ga9ce1e49d24011604564ec4dd73e555b4"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a></td></tr>
-<tr class="separator:ga9ce1e49d24011604564ec4dd73e555b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga95411438d511f6a68fc22be9d5b53040" id="r_ga95411438d511f6a68fc22be9d5b53040"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>&#160;&#160;&#160;(292)</td></tr>
-<tr class="separator:ga95411438d511f6a68fc22be9d5b53040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97e0dc938f1417acef271be19fc5cd5d" id="r_ga97e0dc938f1417acef271be19fc5cd5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga97e0dc938f1417acef271be19fc5cd5d">SCE_FIOS2_OVERLAY_PATH_MAX_LENGTH</a>&#160;&#160;&#160;(<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a> - 1)</td></tr>
-<tr class="separator:ga97e0dc938f1417acef271be19fc5cd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceFiosOverlay" id="structSceFiosOverlay"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceFiosOverlay">&#9670;&#160;</a></span>SceFiosOverlay</h2>
 
@@ -547,6 +589,133 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Error code or zero on success </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga30ce9c640ddae124be64c4a19a740de5" name="ga30ce9c640ddae124be64c4a19a740de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30ce9c640ddae124be64c4a19a740de5">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceFiosOverlay::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga57b3de5d40d266baa3de1a0f12093ef6" name="ga57b3de5d40d266baa3de1a0f12093ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57b3de5d40d266baa3de1a0f12093ef6">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceFiosOverlay::order</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5c65b16ca3252130934ad4e6dc454377" name="ga5c65b16ca3252130934ad4e6dc454377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c65b16ca3252130934ad4e6dc454377">&#9670;&#160;</a></span>dst_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceFiosOverlay::dst_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c422a3c57b138f1d1367568183e9f96" name="ga4c422a3c57b138f1d1367568183e9f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c422a3c57b138f1d1367568183e9f96">&#9670;&#160;</a></span>src_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceFiosOverlay::src_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga39f8adc965b7cbfc44c141f0559d3fd8" name="ga39f8adc965b7cbfc44c141f0559d3fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39f8adc965b7cbfc44c141f0559d3fd8">&#9670;&#160;</a></span>unk2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceFiosOverlay::unk2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga251409fcdd74e557dbebc0ab0da5eefa" name="ga251409fcdd74e557dbebc0ab0da5eefa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga251409fcdd74e557dbebc0ab0da5eefa">&#9670;&#160;</a></span>pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceFiosOverlay::pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3670f391cba14738ef8fb74bcdef18a0" name="ga3670f391cba14738ef8fb74bcdef18a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3670f391cba14738ef8fb74bcdef18a0">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> SceFiosOverlay::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5cf6cb442ff4d8b8407ab1f04b708c99" name="ga5cf6cb442ff4d8b8407ab1f04b708c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5cf6cb442ff4d8b8407ab1f04b708c99">&#9670;&#160;</a></span>dst</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceFiosOverlay::dst[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2132d050656cd9d81980d08713614521" name="ga2132d050656cd9d81980d08713614521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2132d050656cd9d81980d08713614521">&#9670;&#160;</a></span>src</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceFiosOverlay::src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

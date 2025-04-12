@@ -73,11 +73,48 @@ $(document).ready(function(){initNavTree('group__SceSdifKernel.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Lowio.html">Low-level I/O and communications</a> &raquo; <a class="el" href="group__SceSdif.html">SD Interface Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga5506ebef06c37c101f00bec00e31c4a1" id="r_ga5506ebef06c37c101f00bec00e31c4a1"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a></td></tr>
+<tr class="separator:ga5506ebef06c37c101f00bec00e31c4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gad9642a652847062022330af1d63c3c60" id="r_gad9642a652847062022330af1d63c3c60"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#gad9642a652847062022330af1d63c3c60">SceSdifDeviceIndex</a> { <a class="el" href="group__SceSdifKernel.html#ggad9642a652847062022330af1d63c3c60ab3971e33879ae68a260120fac0b02559">SCE_SDIF_DEVICE_EMMC</a> = 0x0
+, <a class="el" href="group__SceSdifKernel.html#ggad9642a652847062022330af1d63c3c60a59688146305d571c7fa662af20aa29fd">SCE_SDIF_DEVICE_GC</a> = 0x1
+, <a class="el" href="group__SceSdifKernel.html#ggad9642a652847062022330af1d63c3c60af90293c2091f2f4967120016a88829d7">SCE_SDIF_DEVICE_SDIO</a> = 0x2
+, <a class="el" href="group__SceSdifKernel.html#ggad9642a652847062022330af1d63c3c60a68d5cd834ad0903489f5a7979adcd44e">SCE_SDIF_DEVICE_SD</a> = 0x3
+ }</td></tr>
+<tr class="separator:gad9642a652847062022330af1d63c3c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40d76c45d8ddc059103a38af70c9446b" id="r_ga40d76c45d8ddc059103a38af70c9446b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga40d76c45d8ddc059103a38af70c9446b">SceSdifDeviceType</a> { <a class="el" href="group__SceSdifKernel.html#gga40d76c45d8ddc059103a38af70c9446bad5a2344c3a07622289e26b3430079950">SCE_SDIF_DEVICE_TYPE_INVALID</a> = 0x0
+, <a class="el" href="group__SceSdifKernel.html#gga40d76c45d8ddc059103a38af70c9446bae2ad8a5155490f2d61c1ca52bc4ece88">SCE_SDIF_DEVICE_TYPE_MMC</a> = 0x1
+, <a class="el" href="group__SceSdifKernel.html#gga40d76c45d8ddc059103a38af70c9446baca6354b76484d76f922dfe2cb4d38a50">SCE_SDIF_DEVICE_TYPE_SD</a> = 0x2
+, <a class="el" href="group__SceSdifKernel.html#gga40d76c45d8ddc059103a38af70c9446bae8d3089c90aac5b635850dc63cc8d22a">SCE_SDIF_DEVICE_TYPE_SDIO</a> = 0x3
+ }</td></tr>
+<tr class="separator:ga40d76c45d8ddc059103a38af70c9446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaf3117d5098949f2d64c4a893e7cf006e" id="r_gaf3117d5098949f2d64c4a893e7cf006e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#gaf3117d5098949f2d64c4a893e7cf006e">ksceSdifGetSdContextPartValidateMmc</a> (<a class="el" href="group__SceSdifKernel.html#gad9642a652847062022330af1d63c3c60">SceSdifDeviceIndex</a> dev_index)</td></tr>
+<tr class="separator:gaf3117d5098949f2d64c4a893e7cf006e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d189496895849d49565047d58c04acf" id="r_ga4d189496895849d49565047d58c04acf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga4d189496895849d49565047d58c04acf">ksceSdifInitializeMmcDevice</a> (<a class="el" href="group__SceSdifKernel.html#gad9642a652847062022330af1d63c3c60">SceSdifDeviceIndex</a> dev_index, <a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *dev_ctx)</td></tr>
+<tr class="separator:ga4d189496895849d49565047d58c04acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga706c48aad70e9bff684231a5e4ed7261" id="r_ga706c48aad70e9bff684231a5e4ed7261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga706c48aad70e9bff684231a5e4ed7261">ksceSdifWriteCmd56</a> (<a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *dev_ctx, const void *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="separator:ga706c48aad70e9bff684231a5e4ed7261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e0443d56a7969b1a0e2fe9c68da9695" id="r_ga4e0443d56a7969b1a0e2fe9c68da9695"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga4e0443d56a7969b1a0e2fe9c68da9695">ksceSdifReadCmd56</a> (<a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *dev_ctx, void *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="separator:ga4e0443d56a7969b1a0e2fe9c68da9695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -90,24 +127,7 @@ $(document).ready(function(){initNavTree('group__SceSdifKernel.html',''); initRe
 </p><div class="fragment"><div class="line">SceSdifForDriver </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gaf3117d5098949f2d64c4a893e7cf006e" id="r_gaf3117d5098949f2d64c4a893e7cf006e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#gaf3117d5098949f2d64c4a893e7cf006e">ksceSdifGetSdContextPartValidateMmc</a> (<a class="el" href="group__SceSdifKernel.html#gad9642a652847062022330af1d63c3c60">SceSdifDeviceIndex</a> dev_index)</td></tr>
-<tr class="separator:gaf3117d5098949f2d64c4a893e7cf006e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d189496895849d49565047d58c04acf" id="r_ga4d189496895849d49565047d58c04acf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga4d189496895849d49565047d58c04acf">ksceSdifInitializeMmcDevice</a> (<a class="el" href="group__SceSdifKernel.html#gad9642a652847062022330af1d63c3c60">SceSdifDeviceIndex</a> dev_index, <a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *dev_ctx)</td></tr>
-<tr class="separator:ga4d189496895849d49565047d58c04acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga706c48aad70e9bff684231a5e4ed7261" id="r_ga706c48aad70e9bff684231a5e4ed7261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga706c48aad70e9bff684231a5e4ed7261">ksceSdifWriteCmd56</a> (<a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *dev_ctx, const void *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
-<tr class="separator:ga706c48aad70e9bff684231a5e4ed7261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e0443d56a7969b1a0e2fe9c68da9695" id="r_ga4e0443d56a7969b1a0e2fe9c68da9695"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga4e0443d56a7969b1a0e2fe9c68da9695">ksceSdifReadCmd56</a> (<a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a> *dev_ctx, void *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
-<tr class="separator:ga4e0443d56a7969b1a0e2fe9c68da9695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga5506ebef06c37c101f00bec00e31c4a1" id="r_ga5506ebef06c37c101f00bec00e31c4a1"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdifKernel.html#ga5506ebef06c37c101f00bec00e31c4a1">SceSdifDeviceContext</a></td></tr>
-<tr class="separator:ga5506ebef06c37c101f00bec00e31c4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Typedef Documentation</h2>
+ <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga5506ebef06c37c101f00bec00e31c4a1" name="ga5506ebef06c37c101f00bec00e31c4a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5506ebef06c37c101f00bec00e31c4a1">&#9670;&#160;</a></span>SceSdifDeviceContext</h2>
 

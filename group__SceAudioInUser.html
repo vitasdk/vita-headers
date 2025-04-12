@@ -73,23 +73,45 @@ $(document).ready(function(){initNavTree('group__SceAudioInUser.html',''); initR
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Audio.html">Audio</a> &raquo; <a class="el" href="group__SceAudioIn.html">Audio In Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="audioin_8h.html">psp2/audioin.h</a>&gt;</span> </div>
-<div class="ttc" id="aaudioin_8h_html"><div class="ttname"><a href="audioin_8h.html">audioin.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceAudioIn_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga28abc8ed0115ce4f3c3b19bbac143dcc" id="r_ga28abc8ed0115ce4f3c3b19bbac143dcc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga28abc8ed0115ce4f3c3b19bbac143dcc">SceAudioInErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a">SCE_AUDIO_IN_ERROR_FATAL</a> = 0x80260100
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f">SCE_AUDIO_IN_ERROR_INVALID_PORT</a> = 0x80260101
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca35bdf669ddfbf4d998046fbf6de95238">SCE_AUDIO_IN_ERROR_INVALID_SIZE</a> = 0x80260102
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca304714f75da98e79d1dcca568c93aa68">SCE_AUDIO_IN_ERROR_INVALID_SAMPLE_FREQ</a> = 0x80260103
+, <br />
+&#160;&#160;<a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca3c576051078ad8374a033b1a081d8c54">SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE</a> = 0x80260104
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9">SCE_AUDIO_IN_ERROR_INVALID_POINTER</a> = 0x80260105
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910">SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM</a> = 0x80260106
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c">SCE_AUDIO_IN_ERROR_PORT_FULL</a> = 0x80260107
+, <br />
+&#160;&#160;<a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94">SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY</a> = 0x80260108
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594">SCE_AUDIO_IN_ERROR_NOT_OPENED</a> = 0x80260109
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885">SCE_AUDIO_IN_ERROR_BUSY</a> = 0x8026010A
+, <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a">SCE_AUDIO_IN_ERROR_INVALID_PARAMETER</a> = 0x8026010B
+<br />
+ }</td></tr>
+<tr class="separator:ga28abc8ed0115ce4f3c3b19bbac143dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa85902ccecf8f073a69d586a3a554660" id="r_gaa85902ccecf8f073a69d586a3a554660"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a> { <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b">SCE_AUDIO_IN_PORT_TYPE_VOICE</a> = 0
+, <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49">SCE_AUDIO_IN_PORT_TYPE_RAW</a> = 2
+ }</td></tr>
+<tr class="separator:gaa85902ccecf8f073a69d586a3a554660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga952b9bb4d200c4627dc667b0785ae00d" id="r_ga952b9bb4d200c4627dc667b0785ae00d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d">SceAudioInParam</a> { <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b">SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO</a> = 0
+, <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f">SCE_AUDIO_IN_GETSTATUS_MUTE</a> = 1
+ }</td></tr>
+<tr class="separator:ga952b9bb4d200c4627dc667b0785ae00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gafd74510965e47b7194e496808d47458b" id="r_gafd74510965e47b7194e496808d47458b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b">sceAudioInOpenPort</a> (<a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a> portType, int grain, int freq, <a class="el" href="group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d">SceAudioInParam</a> param)</td></tr>
@@ -105,7 +127,19 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3156b2e164d368f2c9d20cec93b5dee2" id="r_ga3156b2e164d368f2c9d20cec93b5dee2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga3156b2e164d368f2c9d20cec93b5dee2">sceAudioInGetStatus</a> (int select)</td></tr>
 <tr class="separator:ga3156b2e164d368f2c9d20cec93b5dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="audioin_8h.html">psp2/audioin.h</a>&gt;</span> </div>
+<div class="ttc" id="aaudioin_8h_html"><div class="ttname"><a href="audioin_8h.html">audioin.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceAudioIn_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga28abc8ed0115ce4f3c3b19bbac143dcc" name="ga28abc8ed0115ce4f3c3b19bbac143dcc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga28abc8ed0115ce4f3c3b19bbac143dcc">&#9670;&#160;</a></span>SceAudioInErrorCode</h2>
 

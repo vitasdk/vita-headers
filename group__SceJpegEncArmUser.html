@@ -73,33 +73,61 @@ $(document).ready(function(){initNavTree('group__SceJpegEncArmUser.html',''); in
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceJpegEncArm.html">JPEG ARM Encoding Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="jpegencarm_8h.html">psp2/jpegencarm.h</a>&gt;</span> </div>
-<div class="ttc" id="ajpegencarm_8h_html"><div class="ttname"><a href="jpegencarm_8h.html">jpegencarm.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceJpegEncArm_stub </div>
-</div><!-- fragment --><p> <br  />
- Load the required module:<br  />
-</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#ga91b1d39f3e92ab1ac6b8754cb2d7fd81">sceSysmoduleLoadModuleInternal</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88">SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</a>); </div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_ga91b1d39f3e92ab1ac6b8754cb2d7fd81"><div class="ttname"><a href="group__SceSysmoduleUser.html#ga91b1d39f3e92ab1ac6b8754cb2d7fd81">sceSysmoduleLoadModuleInternal</a></div><div class="ttdeci">int sceSysmoduleLoadModuleInternal(SceSysmoduleInternalModuleId id)</div><div class="ttdoc">Load an internal module.</div></div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88"><div class="ttname"><a href="group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88">SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</a></div><div class="ttdeci">@ SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</div><div class="ttdoc">sceJpegEncArm module</div><div class="ttdef"><b>Definition</b> sysmodule.h:117</div></div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
-<dl class="section note"><dt>Note</dt><dd>The maximum supported image width and height is 65520 for YCbCr420, and 65528 for YCbCr422.<br  />
-<br  />
- The width and height of YCbCr422 images must be a multiple of 8. The width and height of YCbCr420 images must be a multiple of 16. </dd></dl>
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gac986f9d07184ff7f489b3af5f6cd5d7c" id="r_gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gac986f9d07184ff7f489b3af5f6cd5d7c">SCE_JPEGENCARM_MIN_COMP_RATIO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest compression ratio, best quality.  <br /></td></tr>
+<tr class="separator:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f369001468f3a1e93ab71b591bf7d42" id="r_ga7f369001468f3a1e93ab71b591bf7d42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga7f369001468f3a1e93ab71b591bf7d42">SCE_JPEGENCARM_DEFAULT_COMP_RATIO</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:ga7f369001468f3a1e93ab71b591bf7d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default compression ratio.  <br /></td></tr>
+<tr class="separator:ga7f369001468f3a1e93ab71b591bf7d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a99e716ab385a0af4037e4932e497e7" id="r_ga2a99e716ab385a0af4037e4932e497e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga2a99e716ab385a0af4037e4932e497e7">SCE_JPEGENCARM_MAX_COMP_RATIO</a>&#160;&#160;&#160;255</td></tr>
+<tr class="memdesc:ga2a99e716ab385a0af4037e4932e497e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest compression ratio, lowest quality.  <br /></td></tr>
+<tr class="separator:ga2a99e716ab385a0af4037e4932e497e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga8cbfde2bf4eb36e0bbb012757b5b9884" id="r_ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a></td></tr>
+<tr class="memdesc:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically allocated encoder context.  <br /></td></tr>
+<tr class="separator:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga102bf499e11484ce5881e62495f26e66" id="r_ga102bf499e11484ce5881e62495f26e66"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga102bf499e11484ce5881e62495f26e66">SceJpegEncArmErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceJpegEncArmUser.html#gga102bf499e11484ce5881e62495f26e66a20b25a4a35c9c5aac370cb1cb2029d99">SCE_JPEGENCARM_ERROR_IMAGE_SIZE</a> = 0x80650300
+, <a class="el" href="group__SceJpegEncArmUser.html#gga102bf499e11484ce5881e62495f26e66a8e2f7c942686d217965f4d8bb2db6d0a">SCE_JPEGENCARM_ERROR_INSUFFICIENT_BUFFER</a> = 0x80650301
+, <a class="el" href="group__SceJpegEncArmUser.html#gga102bf499e11484ce5881e62495f26e66a8c5f217d885b4ceec06d4b16a92ba68a">SCE_JPEGENCARM_ERROR_INVALID_COMP_RATIO</a> = 0x80650302
+, <a class="el" href="group__SceJpegEncArmUser.html#gga102bf499e11484ce5881e62495f26e66a97ac01f526fe5e535d52c079d3c7be34">SCE_JPEGENCARM_ERROR_INVALID_PIXELFORMAT</a> = 0x80650303
+, <br />
+&#160;&#160;<a class="el" href="group__SceJpegEncArmUser.html#gga102bf499e11484ce5881e62495f26e66a1d008375d5bf95a61a86e0ed1301193c">SCE_JPEGENCARM_ERROR_INVALID_HEADER_MODE</a> = 0x80650304
+, <a class="el" href="group__SceJpegEncArmUser.html#gga102bf499e11484ce5881e62495f26e66a18068344c00db1ec8068b21a7300525a">SCE_JPEGENCARM_ERROR_INVALID_POINTER</a> = 0x80650305
+<br />
+ }</td></tr>
+<tr class="memdesc:ga102bf499e11484ce5881e62495f26e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error Codes.  <a href="group__SceJpegEncArmUser.html#ga102bf499e11484ce5881e62495f26e66">More...</a><br /></td></tr>
+<tr class="separator:ga102bf499e11484ce5881e62495f26e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85c6405c81eb5f43dd34f1902c447136" id="r_ga85c6405c81eb5f43dd34f1902c447136"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136">SceJpegArmEncoderPixelFormat</a> { <a class="el" href="group__SceJpegEncArmUser.html#gga85c6405c81eb5f43dd34f1902c447136ac9928e6f53a6dd93c5fa87d38a298bb8">SCE_JPEGENCARM_PIXELFORMAT_YCBCR420</a> = 8
+, <a class="el" href="group__SceJpegEncArmUser.html#gga85c6405c81eb5f43dd34f1902c447136aaabfcec20ea1ee0a0735fd9d7576dd9c">SCE_JPEGENCARM_PIXELFORMAT_YCBCR422</a> = 9
+ }</td></tr>
+<tr class="memdesc:ga85c6405c81eb5f43dd34f1902c447136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel Formats.  <a href="group__SceJpegEncArmUser.html#ga85c6405c81eb5f43dd34f1902c447136">More...</a><br /></td></tr>
+<tr class="separator:ga85c6405c81eb5f43dd34f1902c447136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a77d5108f13bb5d4dffbc42ef923c1f" id="r_ga7a77d5108f13bb5d4dffbc42ef923c1f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f">SceJpegArmEncoderHeaderMode</a> { <a class="el" href="group__SceJpegEncArmUser.html#gga7a77d5108f13bb5d4dffbc42ef923c1fa702430fb88713bcb399ef81daff0fc01">SCE_JPEGENCARM_HEADER_MODE_JPEG</a> = 0
+, <a class="el" href="group__SceJpegEncArmUser.html#gga7a77d5108f13bb5d4dffbc42ef923c1faf9124eda0703a75b773e1f597b7e1e1c">SCE_JPEGENCARM_HEADER_MODE_MJPEG</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga7a77d5108f13bb5d4dffbc42ef923c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEG Header Modes.  <a href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f">More...</a><br /></td></tr>
+<tr class="separator:ga7a77d5108f13bb5d4dffbc42ef923c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga901f0448c63b87cd41cdd6be2fea2a38" id="r_ga901f0448c63b87cd41cdd6be2fea2a38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga901f0448c63b87cd41cdd6be2fea2a38">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a>)</td></tr>
@@ -128,25 +156,27 @@ Functions</h2></td></tr>
 <tr class="memitem:gad07978927400307c24ffca66e48a5ce7" id="r_gad07978927400307c24ffca66e48a5ce7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gad07978927400307c24ffca66e48a5ce7">sceJpegArmEncoderSetHeaderMode</a> (<a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a> context, <a class="el" href="group__SceJpegEncArmUser.html#ga7a77d5108f13bb5d4dffbc42ef923c1f">SceJpegArmEncoderHeaderMode</a> mode)</td></tr>
 <tr class="memdesc:gad07978927400307c24ffca66e48a5ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set header used for output file.  <br /></td></tr>
 <tr class="separator:gad07978927400307c24ffca66e48a5ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga8cbfde2bf4eb36e0bbb012757b5b9884" id="r_ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga8cbfde2bf4eb36e0bbb012757b5b9884">SceJpegArmEncoderContext</a></td></tr>
-<tr class="memdesc:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically allocated encoder context.  <br /></td></tr>
-<tr class="separator:ga8cbfde2bf4eb36e0bbb012757b5b9884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gac986f9d07184ff7f489b3af5f6cd5d7c" id="r_gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#gac986f9d07184ff7f489b3af5f6cd5d7c">SCE_JPEGENCARM_MIN_COMP_RATIO</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest compression ratio, best quality.  <br /></td></tr>
-<tr class="separator:gac986f9d07184ff7f489b3af5f6cd5d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f369001468f3a1e93ab71b591bf7d42" id="r_ga7f369001468f3a1e93ab71b591bf7d42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga7f369001468f3a1e93ab71b591bf7d42">SCE_JPEGENCARM_DEFAULT_COMP_RATIO</a>&#160;&#160;&#160;64</td></tr>
-<tr class="memdesc:ga7f369001468f3a1e93ab71b591bf7d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default compression ratio.  <br /></td></tr>
-<tr class="separator:ga7f369001468f3a1e93ab71b591bf7d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a99e716ab385a0af4037e4932e497e7" id="r_ga2a99e716ab385a0af4037e4932e497e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegEncArmUser.html#ga2a99e716ab385a0af4037e4932e497e7">SCE_JPEGENCARM_MAX_COMP_RATIO</a>&#160;&#160;&#160;255</td></tr>
-<tr class="memdesc:ga2a99e716ab385a0af4037e4932e497e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest compression ratio, lowest quality.  <br /></td></tr>
-<tr class="separator:ga2a99e716ab385a0af4037e4932e497e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="jpegencarm_8h.html">psp2/jpegencarm.h</a>&gt;</span> </div>
+<div class="ttc" id="ajpegencarm_8h_html"><div class="ttname"><a href="jpegencarm_8h.html">jpegencarm.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceJpegEncArm_stub </div>
+</div><!-- fragment --><p> <br  />
+ Load the required module:<br  />
+</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#ga91b1d39f3e92ab1ac6b8754cb2d7fd81">sceSysmoduleLoadModuleInternal</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88">SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</a>); </div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_ga91b1d39f3e92ab1ac6b8754cb2d7fd81"><div class="ttname"><a href="group__SceSysmoduleUser.html#ga91b1d39f3e92ab1ac6b8754cb2d7fd81">sceSysmoduleLoadModuleInternal</a></div><div class="ttdeci">int sceSysmoduleLoadModuleInternal(SceSysmoduleInternalModuleId id)</div><div class="ttdoc">Load an internal module.</div></div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88"><div class="ttname"><a href="group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa2f163768bf32b2b18235585d4a335f88">SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</a></div><div class="ttdeci">@ SCE_SYSMODULE_INTERNAL_JPEG_ENC_ARM</div><div class="ttdoc">sceJpegEncArm module</div><div class="ttdef"><b>Definition</b> sysmodule.h:117</div></div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<dl class="section note"><dt>Note</dt><dd>The maximum supported image width and height is 65520 for YCbCr420, and 65528 for YCbCr422.<br  />
+<br  />
+ The width and height of YCbCr422 images must be a multiple of 8. The width and height of YCbCr420 images must be a multiple of 16. </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gac986f9d07184ff7f489b3af5f6cd5d7c" name="gac986f9d07184ff7f489b3af5f6cd5d7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac986f9d07184ff7f489b3af5f6cd5d7c">&#9670;&#160;</a></span>SCE_JPEGENCARM_MIN_COMP_RATIO</h2>

@@ -73,23 +73,39 @@ $(document).ready(function(){initNavTree('group__SceCompatUser.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Miscellaneous.html">Miscellaneous</a> &raquo; <a class="el" href="group__SceCompat.html">Compat Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="compat_8h.html">psp2/compat.h</a>&gt;</span> </div>
-<div class="ttc" id="acompat_8h_html"><div class="ttname"><a href="compat_8h.html">compat.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceCompat_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceCompatCdram" id="r_structSceCompatCdram"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#structSceCompatCdram">SceCompatCdram</a></td></tr>
+<tr class="separator:structSceCompatCdram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceCtrlDataPsp" id="r_structSceCtrlDataPsp"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#structSceCtrlDataPsp">SceCtrlDataPsp</a></td></tr>
+<tr class="separator:structSceCtrlDataPsp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga7e3c16b4e18ae5f4b264775a3fd5d58a" id="r_ga7e3c16b4e18ae5f4b264775a3fd5d58a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga7e3c16b4e18ae5f4b264775a3fd5d58a">SceCompatCacheMode</a> { <a class="el" href="group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aa447e459d57ed8ad2095fb0c44506ab3a">SCE_COMPAT_CACHE_NONE</a> = 0
+, <a class="el" href="group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aaa9fb791ba2e33b77a7fda26d567de9ad">SCE_COMPAT_CACHE_INVALIDATE</a> = 1
+, <a class="el" href="group__SceCompatUser.html#gga7e3c16b4e18ae5f4b264775a3fd5d58aafe0dcfd17f3eb46869cc353b8bf433dd">SCE_COMPAT_CACHE_WRITEBACK</a> = 2
+ }</td></tr>
+<tr class="separator:ga7e3c16b4e18ae5f4b264775a3fd5d58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72d999bd2e01ac92563a562fa9edf851" id="r_ga72d999bd2e01ac92563a562fa9edf851"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga72d999bd2e01ac92563a562fa9edf851">SceCompatPeripheralMode</a> { <a class="el" href="group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a78d73742b3937a0725ce62fe2a7ef581">SCE_COMPAT_PERIPHERAL_POWER_IS_SUSPEND_REQUIRED</a> = 1
+, <a class="el" href="group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851ac389b1634a501c4688aceca9fbfd16c7">SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_LIFETIME</a> = 2
+, <a class="el" href="group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851a7244ec40009be3e9f5c2d5664fd14055">SCE_COMPAT_PERIPHERAL_POWER_GET_BATTERY_PERCENT</a> = 3
+, <a class="el" href="group__SceCompatUser.html#gga72d999bd2e01ac92563a562fa9edf851adb50e4333979790c7d136a4ff4fcfc79">SCE_COMPAT_PERIPHERAL_HPREMOTE_IS_HEADPHONE_EXIST</a> = 4
+ }</td></tr>
+<tr class="separator:ga72d999bd2e01ac92563a562fa9edf851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7a9c1576bd1fdd5682fb23ea2a64769e" id="r_ga7a9c1576bd1fdd5682fb23ea2a64769e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga7a9c1576bd1fdd5682fb23ea2a64769e">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceCompatUser.html#structSceCompatCdram">SceCompatCdram</a>)</td></tr>
@@ -186,8 +202,41 @@ Functions</h2></td></tr>
 <tr class="memitem:ga233fc42e19338dbb1166ac71b1b2e39d" id="r_ga233fc42e19338dbb1166ac71b1b2e39d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga233fc42e19338dbb1166ac71b1b2e39d">sceCompatGetCurrentSecureTick</a> (<a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *tick)</td></tr>
 <tr class="memdesc:ga233fc42e19338dbb1166ac71b1b2e39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current secure tick.  <br /></td></tr>
 <tr class="separator:ga233fc42e19338dbb1166ac71b1b2e39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gac1bf91a1e9e424135dc8b876431c258b" id="r_gac1bf91a1e9e424135dc8b876431c258b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#gac1bf91a1e9e424135dc8b876431c258b">SceCompatCdram::cached_cdram</a></td></tr>
+<tr class="separator:gac1bf91a1e9e424135dc8b876431c258b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf83aabba5a9822e9181e2225525a1364" id="r_gaf83aabba5a9822e9181e2225525a1364"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#gaf83aabba5a9822e9181e2225525a1364">SceCompatCdram::uncached_cdram</a></td></tr>
+<tr class="separator:gaf83aabba5a9822e9181e2225525a1364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga911a2d76c1a62564ee4c181833c4c33e" id="r_ga911a2d76c1a62564ee4c181833c4c33e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga911a2d76c1a62564ee4c181833c4c33e">SceCtrlDataPsp::TimeStamp</a></td></tr>
+<tr class="separator:ga911a2d76c1a62564ee4c181833c4c33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1450535089bceeede61520b3db3292e2" id="r_ga1450535089bceeede61520b3db3292e2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga1450535089bceeede61520b3db3292e2">SceCtrlDataPsp::Buttons</a></td></tr>
+<tr class="separator:ga1450535089bceeede61520b3db3292e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad11e366fc923f71f7650240c41ae5b72" id="r_gad11e366fc923f71f7650240c41ae5b72"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#gad11e366fc923f71f7650240c41ae5b72">SceCtrlDataPsp::Lx</a></td></tr>
+<tr class="separator:gad11e366fc923f71f7650240c41ae5b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga932a3c26e9e80ed4a8d267f3cc28a59b" id="r_ga932a3c26e9e80ed4a8d267f3cc28a59b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#ga932a3c26e9e80ed4a8d267f3cc28a59b">SceCtrlDataPsp::Ly</a></td></tr>
+<tr class="separator:ga932a3c26e9e80ed4a8d267f3cc28a59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2743416cd6e64bd3c4f1bef6bd0dbb4" id="r_gaf2743416cd6e64bd3c4f1bef6bd0dbb4"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#gaf2743416cd6e64bd3c4f1bef6bd0dbb4">SceCtrlDataPsp::Rx</a></td></tr>
+<tr class="separator:gaf2743416cd6e64bd3c4f1bef6bd0dbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf5c302949d50666b44439d4b59359c6" id="r_gaaf5c302949d50666b44439d4b59359c6"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#gaaf5c302949d50666b44439d4b59359c6">SceCtrlDataPsp::Ry</a></td></tr>
+<tr class="separator:gaaf5c302949d50666b44439d4b59359c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3cff0e24cd17c6ddbf97fe939a8babb" id="r_gad3cff0e24cd17c6ddbf97fe939a8babb"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCompatUser.html#gad3cff0e24cd17c6ddbf97fe939a8babb">SceCtrlDataPsp::Rsrv</a> [4]</td></tr>
+<tr class="separator:gad3cff0e24cd17c6ddbf97fe939a8babb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="compat_8h.html">psp2/compat.h</a>&gt;</span> </div>
+<div class="ttc" id="acompat_8h_html"><div class="ttname"><a href="compat_8h.html">compat.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceCompat_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCompatCdram" id="structSceCompatCdram"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceCompatCdram">&#9670;&#160;</a></span>SceCompatCdram</h2>
 
@@ -1198,6 +1247,133 @@ Rsrv[4]</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gac1bf91a1e9e424135dc8b876431c258b" name="gac1bf91a1e9e424135dc8b876431c258b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1bf91a1e9e424135dc8b876431c258b">&#9670;&#160;</a></span>cached_cdram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCompatCdram::cached_cdram</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf83aabba5a9822e9181e2225525a1364" name="gaf83aabba5a9822e9181e2225525a1364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf83aabba5a9822e9181e2225525a1364">&#9670;&#160;</a></span>uncached_cdram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceCompatCdram::uncached_cdram</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga911a2d76c1a62564ee4c181833c4c33e" name="ga911a2d76c1a62564ee4c181833c4c33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga911a2d76c1a62564ee4c181833c4c33e">&#9670;&#160;</a></span>TimeStamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceCtrlDataPsp::TimeStamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1450535089bceeede61520b3db3292e2" name="ga1450535089bceeede61520b3db3292e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1450535089bceeede61520b3db3292e2">&#9670;&#160;</a></span>Buttons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceCtrlDataPsp::Buttons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad11e366fc923f71f7650240c41ae5b72" name="gad11e366fc923f71f7650240c41ae5b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad11e366fc923f71f7650240c41ae5b72">&#9670;&#160;</a></span>Lx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceCtrlDataPsp::Lx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga932a3c26e9e80ed4a8d267f3cc28a59b" name="ga932a3c26e9e80ed4a8d267f3cc28a59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga932a3c26e9e80ed4a8d267f3cc28a59b">&#9670;&#160;</a></span>Ly</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceCtrlDataPsp::Ly</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf2743416cd6e64bd3c4f1bef6bd0dbb4" name="gaf2743416cd6e64bd3c4f1bef6bd0dbb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2743416cd6e64bd3c4f1bef6bd0dbb4">&#9670;&#160;</a></span>Rx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceCtrlDataPsp::Rx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaf5c302949d50666b44439d4b59359c6" name="gaaf5c302949d50666b44439d4b59359c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf5c302949d50666b44439d4b59359c6">&#9670;&#160;</a></span>Ry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceCtrlDataPsp::Ry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad3cff0e24cd17c6ddbf97fe939a8babb" name="gad3cff0e24cd17c6ddbf97fe939a8babb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3cff0e24cd17c6ddbf97fe939a8babb">&#9670;&#160;</a></span>Rsrv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceCtrlDataPsp::Rsrv[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -73,30 +73,142 @@ $(document).ready(function(){initNavTree('group__SceLocationUser.html',''); init
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Input.html">Input</a> &raquo; <a class="el" href="group__SceLocation.html">Location Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="location_8h.html">psp2/location.h</a>&gt;</span> </div>
-<div class="ttc" id="alocation_8h_html"><div class="ttname"><a href="location_8h.html">location.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceLibLocation_stub </div>
-</div><!-- fragment --><p> <br  />
- Load the required module:<br  />
-</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a59160eb765d472cccb30cb5e3d827708">SCE_SYSMODULE_LOCATION</a>); </div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a59160eb765d472cccb30cb5e3d827708"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a59160eb765d472cccb30cb5e3d827708">SCE_SYSMODULE_LOCATION</a></div><div class="ttdeci">@ SCE_SYSMODULE_LOCATION</div><div class="ttdoc">Location module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:47</div></div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceLocationLocationInfo" id="r_structSceLocationLocationInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#structSceLocationLocationInfo">SceLocationLocationInfo</a></td></tr>
+<tr class="memdesc:structSceLocationLocationInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure of location information.  <a href="group__SceLocationUser.html#structSceLocationLocationInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceLocationLocationInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceLocationHeadingInfo" id="r_structSceLocationHeadingInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#structSceLocationHeadingInfo">SceLocationHeadingInfo</a></td></tr>
+<tr class="memdesc:structSceLocationHeadingInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure of heading information.  <a href="group__SceLocationUser.html#structSceLocationHeadingInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceLocationHeadingInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceLocationPermissionInfo" id="r_structSceLocationPermissionInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#structSceLocationPermissionInfo">SceLocationPermissionInfo</a></td></tr>
+<tr class="memdesc:structSceLocationPermissionInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location information acquisition permission information.  <a href="group__SceLocationUser.html#structSceLocationPermissionInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceLocationPermissionInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga833d969a9e763280124ea9ed7b7b31a1" id="r_ga833d969a9e763280124ea9ed7b7b31a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga833d969a9e763280124ea9ed7b7b31a1">SCE_LOCATION_DATA_INVALID</a>&#160;&#160;&#160;(-9999.0)</td></tr>
+<tr class="separator:ga833d969a9e763280124ea9ed7b7b31a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gab8271ab2e8f268bc48b0f50eb6a3f344" id="r_gab8271ab2e8f268bc48b0f50eb6a3f344"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a></td></tr>
+<tr class="memdesc:gab8271ab2e8f268bc48b0f50eb6a3f344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location handle datatype.  <br /></td></tr>
+<tr class="separator:gab8271ab2e8f268bc48b0f50eb6a3f344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98776079bb1f0b9cb08e74954952e5e2" id="r_ga98776079bb1f0b9cb08e74954952e5e2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2">SceLocationLocationInfoCallback</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> result, <a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a> handle, const <a class="el" href="group__SceLocationUser.html#structSceLocationLocationInfo">SceLocationLocationInfo</a> *location, void *userdata)</td></tr>
+<tr class="memdesc:ga98776079bb1f0b9cb08e74954952e5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location information callback notification function.  <br /></td></tr>
+<tr class="separator:ga98776079bb1f0b9cb08e74954952e5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf379391927de99daef6f95dffb73f226" id="r_gaf379391927de99daef6f95dffb73f226"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaf379391927de99daef6f95dffb73f226">SceLocationHeadingInfoCallback</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> result, <a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a> handle, const <a class="el" href="group__SceLocationUser.html#structSceLocationHeadingInfo">SceLocationHeadingInfo</a> *heading, void *userdata)</td></tr>
+<tr class="memdesc:gaf379391927de99daef6f95dffb73f226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback notification function for direction information.  <br /></td></tr>
+<tr class="separator:gaf379391927de99daef6f95dffb73f226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaddf7a2c21ea1e16531aab2a10ba01038" id="r_gaddf7a2c21ea1e16531aab2a10ba01038"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaddf7a2c21ea1e16531aab2a10ba01038">SceLocationErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a918e71a0153a9635bf0169ccf09eeeed">SCE_LOCATION_SUCCESS</a> = 0
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038ac1e1ed20018120e6541af3a5ade6b8e0">SCE_LOCATION_INFO_UNDETERMINED_LOCATION</a> = 0x80101200
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038aeb12153adfcb1ddf5d89d7266886fb0e">SCE_LOCATION_INFO_INSUFFICIENT_INFORMATION</a> = 0x80101201
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038aab5c4ab39b6e78b64ba354d915602a0f">SCE_LOCATION_INFO_GET_LOCATION_CANCELED</a> = 0x80101202
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a67a56e096459eccddd5113cc65d74800">SCE_LOCATION_INFO_DENIED_BY_USER</a> = 0x80101203
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a3f492c927694bcd73cfcac97ef54854b">SCE_LOCATION_ERROR_INVALID_ADDRESS</a> = 0x80101204
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a23932971fdbe7396400ca8f4f0e97656">SCE_LOCATION_ERROR_INVALID_HANDLE</a> = 0x80101205
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a5a876f0f9e41c4b8411d37e64e254d0d">SCE_LOCATION_ERROR_NO_MEMORY</a> = 0x80101206
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a1ba8e795caa6b830179c4771d9da7c76">SCE_LOCATION_ERROR_TOO_MANY_HANDLES</a> = 0x80101207
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a1eded45a811310abb810e46d8a26ed3f">SCE_LOCATION_ERROR_INVALID_LOCATION_METHOD</a> = 0x80101208
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a174fe6552d199d5fbe5d4ebf03373fe2">SCE_LOCATION_ERROR_INVALID_HEADING_METHOD</a> = 0x80101209
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038ae3fcbb53f19df554fc1114f9f52db9a9">SCE_LOCATION_ERROR_MULTIPLE_CALLBACK</a> = 0x8010120A
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a36ce618f5c79ad262c4f0df3e30b1ae1">SCE_LOCATION_ERROR_NOT_RUNNING_CALLBACK</a> = 0x8010120B
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a32caecee47cc9783a5418b4aa61e625f">SCE_LOCATION_ERROR_DIALOG_RESULT_NONE</a> = 0x8010120C
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038abeb089c76e18c1ed2f358e8dc0dad253">SCE_LOCATION_ERROR_DISABLE_APPLICATION</a> = 0x8010120D
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038ab4f2c975052033c651640cef7241781b">SCE_LOCATION_ERROR_MULTIPLE_CONFIRM</a> = 0x8010120E
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a6fd547d22ac4ac36aa982a01ecbe6adb">SCE_LOCATION_ERROR_UNAUTHORIZED</a> = 0x80101280
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a7add4eb39643a0bb8fa3707f5cce5901">SCE_LOCATION_ERROR_PROVIDER_UNAVAILABLE</a> = 0x80101281
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a0743db7b56f79d970e756ba621480b8a">SCE_LOCATION_ERROR_FILE_IO</a> = 0x80101282
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a99b1c539f7246a5306374a862f88bea3">SCE_LOCATION_ERROR_INVALID_FILE_FORMAT</a> = 0x80101283
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a7ea1d960e238577cf73c609cb986d854">SCE_LOCATION_ERROR_TIME_OUT</a> = 0x80101284
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a6555567eadf70d4de12d7993807d1486">SCE_LOCATION_ERROR_NO_SERVER_MEMORY</a> = 0x80101285
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a5bb6a0c1207205ba806c35a835e65473">SCE_LOCATION_ERROR_INVALID_TITLE_ID</a> = 0x80101286
+, <a class="el" href="group__SceLocationUser.html#ggaddf7a2c21ea1e16531aab2a10ba01038a895357c163475296c9587817c257d48c">SCE_LOCATION_ERROR_FATAL_ERROR</a> = 0x801012FF
+<br />
+ }</td></tr>
+<tr class="memdesc:gaddf7a2c21ea1e16531aab2a10ba01038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location error codes.  <a href="group__SceLocationUser.html#gaddf7a2c21ea1e16531aab2a10ba01038">More...</a><br /></td></tr>
+<tr class="separator:gaddf7a2c21ea1e16531aab2a10ba01038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaede1fcb282a8e02c31961adc7dd28001" id="r_gaede1fcb282a8e02c31961adc7dd28001"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaede1fcb282a8e02c31961adc7dd28001">SceLocationDialogStatus</a> { <a class="el" href="group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a17a9685831b73c1c27697153454e7cec">SCE_LOCATION_DIALOG_STATUS_IDLE</a> = 0
+, <a class="el" href="group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001a48fba000551177b35ab416ea0e12606b">SCE_LOCATION_DIALOG_STATUS_RUNNING</a> = 1
+, <a class="el" href="group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001ae07806ef76fbf1f702da4f26724ebcb1">SCE_LOCATION_DIALOG_STATUS_FINISHED</a> = 2
+, <a class="el" href="group__SceLocationUser.html#ggaede1fcb282a8e02c31961adc7dd28001aa0178a972af8d823b9add2612917ca27">__SCE_LOCATION_DIALOG_STATUS</a> = 0xFFFFFFFF
+ }</td></tr>
+<tr class="memdesc:gaede1fcb282a8e02c31961adc7dd28001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usage permission dialog display status.  <a href="group__SceLocationUser.html#gaede1fcb282a8e02c31961adc7dd28001">More...</a><br /></td></tr>
+<tr class="separator:gaede1fcb282a8e02c31961adc7dd28001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd49038cc21f91a3d337af5d14f17d00" id="r_gacd49038cc21f91a3d337af5d14f17d00"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gacd49038cc21f91a3d337af5d14f17d00">SceLocationDialogResult</a> { <a class="el" href="group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00ac1d4cf0db1c00e9a61f08c550f1822c6">SCE_LOCATION_DIALOG_RESULT_NONE</a> = 0
+, <a class="el" href="group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a2a19317a8dc0eb7196ad0fe82ba910da">SCE_LOCATION_DIALOG_RESULT_DISABLE</a> = 1
+, <a class="el" href="group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00a27e1ecf075e49062d49a4b38a7512b06">SCE_LOCATION_DIALOG_RESULT_ENABLE</a> = 2
+, <a class="el" href="group__SceLocationUser.html#ggacd49038cc21f91a3d337af5d14f17d00af6d14c955ea24ecfbf0519db9be44adb">__SCE_LOCATION_DIALOG_RESULT</a> = 0xFFFFFFFF
+ }</td></tr>
+<tr class="memdesc:gacd49038cc21f91a3d337af5d14f17d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usage permission dialog result.  <a href="group__SceLocationUser.html#gacd49038cc21f91a3d337af5d14f17d00">More...</a><br /></td></tr>
+<tr class="separator:gacd49038cc21f91a3d337af5d14f17d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79d97b38146a8eee437fa1ab15d59301" id="r_ga79d97b38146a8eee437fa1ab15d59301"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga79d97b38146a8eee437fa1ab15d59301">SceLocationPermissionApplicationStatus</a> { <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3f5fe977f1e7c4a0437d2103fa7458bd">SCE_LOCATION_PERMISSION_APPLICATION_NONE</a> = 0
+, <a class="el" href="group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3a5ff782951ae4832d665c0fd055ac28">SCE_LOCATION_PERMISSION_APPLICATION_INIT</a> = 1
+, <a class="el" href="group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301a3bb8f2e54c080bac27e1daf12f6f51f7">SCE_LOCATION_PERMISSION_APPLICATION_DENY</a> = 2
+, <a class="el" href="group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301addf56b1b2b24d56a70be780e62f82fbd">SCE_LOCATION_PERMISSION_APPLICATION_ALLOW</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#gga79d97b38146a8eee437fa1ab15d59301adcfe66a02f5b12cd5d046503b31223ef">__SCE_LOCATION_PERMISSION_APPLICATION</a> = 0xFFFFFFFF
+<br />
+ }</td></tr>
+<tr class="memdesc:ga79d97b38146a8eee437fa1ab15d59301"><td class="mdescLeft">&#160;</td><td class="mdescRight">location usage permission status for individual application  <a href="group__SceLocationUser.html#ga79d97b38146a8eee437fa1ab15d59301">More...</a><br /></td></tr>
+<tr class="separator:ga79d97b38146a8eee437fa1ab15d59301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26f6889e149bdfaa945bf67ae79315bd" id="r_ga26f6889e149bdfaa945bf67ae79315bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd">SceLocationPermissionStatus</a> { <a class="el" href="group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda905cff7cac2df26c509c3f204b0fb36e">SCE_LOCATION_PERMISSION_DENY</a> = 0
+, <a class="el" href="group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda10174694069b79f874a1e7d6a3f17c7b">SCE_LOCATION_PERMISSION_ALLOW</a> = 1
+, <a class="el" href="group__SceLocationUser.html#gga26f6889e149bdfaa945bf67ae79315bda37ac3752f74fb793d0915d25b17879fb">__SCE_LOCATION_PERMISSION</a> = 0xFFFFFFFF
+ }</td></tr>
+<tr class="memdesc:ga26f6889e149bdfaa945bf67ae79315bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">location usage permission status  <a href="group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd">More...</a><br /></td></tr>
+<tr class="separator:ga26f6889e149bdfaa945bf67ae79315bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1a21f2a89eb1da54d3e969fee335b47" id="r_gaf1a21f2a89eb1da54d3e969fee335b47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaf1a21f2a89eb1da54d3e969fee335b47">SceLocationLocationMethod</a> { <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a670cfd55c1f596592ae4cdf8aaa07cb6">SCE_LOCATION_LMETHOD_NONE</a> = 0
+, <a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a75d4dcd98428f38cf927371874b27957">SCE_LOCATION_LMETHOD_AGPS_AND_3G_AND_WIFI</a> = 1
+, <a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47aba6b69667b39a9304de0cc3c31d8a328">SCE_LOCATION_LMETHOD_GPS_AND_WIFI</a> = 2
+, <a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47ac30679895f80b988664791481018b3b9">SCE_LOCATION_LMETHOD_WIFI</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47af678f3dccbfe951613764a29cee394ec">SCE_LOCATION_LMETHOD_3G</a> = 4
+, <a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47a6c1a1ec99fae21a2923091d6ecf1ff72">SCE_LOCATION_LMETHOD_GPS</a> = 5
+, <a class="el" href="group__SceLocationUser.html#ggaf1a21f2a89eb1da54d3e969fee335b47aced490313c4ede36e37d18e04af77544">__SCE_LOCATION_LMETHOD</a> = 0xFFFFFFFF
+<br />
+ }</td></tr>
+<tr class="memdesc:gaf1a21f2a89eb1da54d3e969fee335b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location measurement method.  <a href="group__SceLocationUser.html#gaf1a21f2a89eb1da54d3e969fee335b47">More...</a><br /></td></tr>
+<tr class="separator:gaf1a21f2a89eb1da54d3e969fee335b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb8512aad9366c1c282da8218df682b6" id="r_gafb8512aad9366c1c282da8218df682b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gafb8512aad9366c1c282da8218df682b6">SceLocationHeadingMethod</a> { <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a93f38ff16e3eb125437ecb1b3efcc6c9">SCE_LOCATION_HMETHOD_NONE</a> = 0
+, <a class="el" href="group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a820912380d4f5a2232eed224b652bab4">SCE_LOCATION_HMETHOD_AUTO</a> = 1
+, <a class="el" href="group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6a44444a3a3aabb2bde13329e8d29f661b">SCE_LOCATION_HMETHOD_VERTICAL</a> = 2
+, <a class="el" href="group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6adc17a55585e9f79738fedc8cde762071">SCE_LOCATION_HMETHOD_HORIZONTAL</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6abac0538fe2cdf29009883d2f79e714ca">SCE_LOCATION_HMETHOD_CAMERA</a> = 4
+, <a class="el" href="group__SceLocationUser.html#ggafb8512aad9366c1c282da8218df682b6aa026b264d56ed240fd59568c9bea1643">__SCE_LOCATION_HMETHOD</a> = 0xFFFFFFFF
+<br />
+ }</td></tr>
+<tr class="memdesc:gafb8512aad9366c1c282da8218df682b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction measurement method.  <a href="group__SceLocationUser.html#gafb8512aad9366c1c282da8218df682b6">More...</a><br /></td></tr>
+<tr class="separator:gafb8512aad9366c1c282da8218df682b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga076fab6b8a2097772be7fa790a0de495" id="r_ga076fab6b8a2097772be7fa790a0de495"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga076fab6b8a2097772be7fa790a0de495">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a>)</td></tr>
@@ -159,24 +271,85 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac171198dc204d6be44fb66600aac7673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get location information acquisition permission information.  <br /></td></tr>
 <tr class="separator:gac171198dc204d6be44fb66600aac7673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gab8271ab2e8f268bc48b0f50eb6a3f344" id="r_gab8271ab2e8f268bc48b0f50eb6a3f344"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a></td></tr>
-<tr class="memdesc:gab8271ab2e8f268bc48b0f50eb6a3f344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location handle datatype.  <br /></td></tr>
-<tr class="separator:gab8271ab2e8f268bc48b0f50eb6a3f344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98776079bb1f0b9cb08e74954952e5e2" id="r_ga98776079bb1f0b9cb08e74954952e5e2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga98776079bb1f0b9cb08e74954952e5e2">SceLocationLocationInfoCallback</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> result, <a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a> handle, const <a class="el" href="group__SceLocationUser.html#structSceLocationLocationInfo">SceLocationLocationInfo</a> *location, void *userdata)</td></tr>
-<tr class="memdesc:ga98776079bb1f0b9cb08e74954952e5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location information callback notification function.  <br /></td></tr>
-<tr class="separator:ga98776079bb1f0b9cb08e74954952e5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf379391927de99daef6f95dffb73f226" id="r_gaf379391927de99daef6f95dffb73f226"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaf379391927de99daef6f95dffb73f226">SceLocationHeadingInfoCallback</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> result, <a class="el" href="group__SceLocationUser.html#gab8271ab2e8f268bc48b0f50eb6a3f344">SceLocationHandle</a> handle, const <a class="el" href="group__SceLocationUser.html#structSceLocationHeadingInfo">SceLocationHeadingInfo</a> *heading, void *userdata)</td></tr>
-<tr class="memdesc:gaf379391927de99daef6f95dffb73f226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback notification function for direction information.  <br /></td></tr>
-<tr class="separator:gaf379391927de99daef6f95dffb73f226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga833d969a9e763280124ea9ed7b7b31a1" id="r_ga833d969a9e763280124ea9ed7b7b31a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga833d969a9e763280124ea9ed7b7b31a1">SCE_LOCATION_DATA_INVALID</a>&#160;&#160;&#160;(-9999.0)</td></tr>
-<tr class="separator:ga833d969a9e763280124ea9ed7b7b31a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaa8c08a263d988e30886c40321b4576ab" id="r_gaa8c08a263d988e30886c40321b4576ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9d71b632d855f0bb605e063bd6980865">SceDouble64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaa8c08a263d988e30886c40321b4576ab">SceLocationLocationInfo::latitude</a></td></tr>
+<tr class="memdesc:gaa8c08a263d988e30886c40321b4576ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latitude (deg). Valid range: -90 to + 90. If cannot be obtained, SCE_LOCATION_DATA_INVALID.  <br /></td></tr>
+<tr class="separator:gaa8c08a263d988e30886c40321b4576ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1fdad28a02da22a325df54c8b4f63d4" id="r_gaf1fdad28a02da22a325df54c8b4f63d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9d71b632d855f0bb605e063bd6980865">SceDouble64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaf1fdad28a02da22a325df54c8b4f63d4">SceLocationLocationInfo::longitude</a></td></tr>
+<tr class="memdesc:gaf1fdad28a02da22a325df54c8b4f63d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Longitude (deg). Valid range: -180 to +180. If cannot be obtained, SCE_LOCATION_DATA_INVALID.  <br /></td></tr>
+<tr class="separator:gaf1fdad28a02da22a325df54c8b4f63d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ea0b217a3b82fc3d31a708981b94220" id="r_ga2ea0b217a3b82fc3d31a708981b94220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9d71b632d855f0bb605e063bd6980865">SceDouble64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga2ea0b217a3b82fc3d31a708981b94220">SceLocationLocationInfo::altitude</a></td></tr>
+<tr class="memdesc:ga2ea0b217a3b82fc3d31a708981b94220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Altitude (m). If cannot be obtained, SCE_LOCATION_DATA_INVALID.  <br /></td></tr>
+<tr class="separator:ga2ea0b217a3b82fc3d31a708981b94220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac04328172c2459c2ad5da23fec9bc31f" id="r_gac04328172c2459c2ad5da23fec9bc31f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gac04328172c2459c2ad5da23fec9bc31f">SceLocationLocationInfo::accuracy</a></td></tr>
+<tr class="memdesc:gac04328172c2459c2ad5da23fec9bc31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal error (m). If cannot be obtained, SCE_LOCATION_DATA_INVALID.  <br /></td></tr>
+<tr class="separator:gac04328172c2459c2ad5da23fec9bc31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc4039c574afa66b190013d519b34f05" id="r_gadc4039c574afa66b190013d519b34f05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gadc4039c574afa66b190013d519b34f05">SceLocationLocationInfo::reserve</a></td></tr>
+<tr class="memdesc:gadc4039c574afa66b190013d519b34f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve.  <br /></td></tr>
+<tr class="separator:gadc4039c574afa66b190013d519b34f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeecc7aa4df7eeba837f21cd636b54a61" id="r_gaeecc7aa4df7eeba837f21cd636b54a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaeecc7aa4df7eeba837f21cd636b54a61">SceLocationLocationInfo::direction</a></td></tr>
+<tr class="memdesc:gaeecc7aa4df7eeba837f21cd636b54a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Travel direction. If cannot be obtained, SCE_LOCATION_DATA_INVALID.  <br /></td></tr>
+<tr class="separator:gaeecc7aa4df7eeba837f21cd636b54a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61ae6005a548afb42f08632752068989" id="r_ga61ae6005a548afb42f08632752068989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga61ae6005a548afb42f08632752068989">SceLocationLocationInfo::speed</a></td></tr>
+<tr class="memdesc:ga61ae6005a548afb42f08632752068989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Travel speed (m/s). If cannot be obtained, SCE_LOCATION_DATA_INVALID.  <br /></td></tr>
+<tr class="separator:ga61ae6005a548afb42f08632752068989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b68cd9b4daeef7ebe3a42e62427687c" id="r_ga0b68cd9b4daeef7ebe3a42e62427687c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga0b68cd9b4daeef7ebe3a42e62427687c">SceLocationLocationInfo::timestamp</a></td></tr>
+<tr class="memdesc:ga0b68cd9b4daeef7ebe3a42e62427687c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of data acquisition, in μsec (UTC)  <br /></td></tr>
+<tr class="separator:ga0b68cd9b4daeef7ebe3a42e62427687c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c2007852f8f71503c5d6673df873477" id="r_ga9c2007852f8f71503c5d6673df873477"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga9c2007852f8f71503c5d6673df873477">SceLocationHeadingInfo::trueHeading</a></td></tr>
+<tr class="memdesc:ga9c2007852f8f71503c5d6673df873477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clockwise angle from true north (0 to 360 degrees). If cannot be acquired, SCE_LOCATION_INVALID_DATA.  <br /></td></tr>
+<tr class="separator:ga9c2007852f8f71503c5d6673df873477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab787f06246360da95fe7921d2b283d85" id="r_gab787f06246360da95fe7921d2b283d85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gab787f06246360da95fe7921d2b283d85">SceLocationHeadingInfo::headingVectorX</a></td></tr>
+<tr class="memdesc:gab787f06246360da95fe7921d2b283d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction vector X coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA.  <br /></td></tr>
+<tr class="separator:gab787f06246360da95fe7921d2b283d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bd80a2e7056863a3674af6692126716" id="r_ga8bd80a2e7056863a3674af6692126716"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga8bd80a2e7056863a3674af6692126716">SceLocationHeadingInfo::headingVectorY</a></td></tr>
+<tr class="memdesc:ga8bd80a2e7056863a3674af6692126716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction vector Y coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA.  <br /></td></tr>
+<tr class="separator:ga8bd80a2e7056863a3674af6692126716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67ce7f9de0879ac9059163004b7e4162" id="r_ga67ce7f9de0879ac9059163004b7e4162"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga67ce7f9de0879ac9059163004b7e4162">SceLocationHeadingInfo::headingVectorZ</a></td></tr>
+<tr class="memdesc:ga67ce7f9de0879ac9059163004b7e4162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction vector Z coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA.  <br /></td></tr>
+<tr class="separator:ga67ce7f9de0879ac9059163004b7e4162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad954a6df8ffcac123f39e5a98ea71b7e" id="r_gad954a6df8ffcac123f39e5a98ea71b7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gad954a6df8ffcac123f39e5a98ea71b7e">SceLocationHeadingInfo::reserve</a></td></tr>
+<tr class="memdesc:gad954a6df8ffcac123f39e5a98ea71b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve.  <br /></td></tr>
+<tr class="separator:gad954a6df8ffcac123f39e5a98ea71b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga973af0883a66023875eb75c2599a0774" id="r_ga973af0883a66023875eb75c2599a0774"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga973af0883a66023875eb75c2599a0774">SceLocationHeadingInfo::reserve2</a></td></tr>
+<tr class="memdesc:ga973af0883a66023875eb75c2599a0774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve.  <br /></td></tr>
+<tr class="separator:ga973af0883a66023875eb75c2599a0774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1deff38485ca6c8d317a94088e1b4e0" id="r_gaa1deff38485ca6c8d317a94088e1b4e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gaa1deff38485ca6c8d317a94088e1b4e0">SceLocationHeadingInfo::timestamp</a></td></tr>
+<tr class="memdesc:gaa1deff38485ca6c8d317a94088e1b4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time acquired in unit of 1 usec (UTC)  <br /></td></tr>
+<tr class="separator:gaa1deff38485ca6c8d317a94088e1b4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bbcf02dc5579c04e8f2c257fc83308b" id="r_ga8bbcf02dc5579c04e8f2c257fc83308b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd">SceLocationPermissionStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga8bbcf02dc5579c04e8f2c257fc83308b">SceLocationPermissionInfo::parentalstatus</a></td></tr>
+<tr class="memdesc:ga8bbcf02dc5579c04e8f2c257fc83308b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of usage permission through parental control.  <br /></td></tr>
+<tr class="separator:ga8bbcf02dc5579c04e8f2c257fc83308b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d75901987f7c564c0c251cbb9d0c19f" id="r_ga6d75901987f7c564c0c251cbb9d0c19f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd">SceLocationPermissionStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga6d75901987f7c564c0c251cbb9d0c19f">SceLocationPermissionInfo::mainstatus</a></td></tr>
+<tr class="memdesc:ga6d75901987f7c564c0c251cbb9d0c19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of usage permission through location data item of system settings.  <br /></td></tr>
+<tr class="separator:ga6d75901987f7c564c0c251cbb9d0c19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdaabcb57a43c8ac5aae85a9df5ab2f8" id="r_gafdaabcb57a43c8ac5aae85a9df5ab2f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceLocationUser.html#ga79d97b38146a8eee437fa1ab15d59301">SceLocationPermissionApplicationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#gafdaabcb57a43c8ac5aae85a9df5ab2f8">SceLocationPermissionInfo::applicationstatus</a></td></tr>
+<tr class="memdesc:gafdaabcb57a43c8ac5aae85a9df5ab2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of usage permission through location data item for each application in system settings.  <br /></td></tr>
+<tr class="separator:gafdaabcb57a43c8ac5aae85a9df5ab2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e43cc3beff0b5fc4f54ef522c488b49" id="r_ga8e43cc3beff0b5fc4f54ef522c488b49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga8e43cc3beff0b5fc4f54ef522c488b49">SceLocationPermissionInfo::unk_0x0C</a></td></tr>
+<tr class="separator:ga8e43cc3beff0b5fc4f54ef522c488b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga071cdd717255f58f2c7210f57e61d61b" id="r_ga071cdd717255f58f2c7210f57e61d61b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLocationUser.html#ga071cdd717255f58f2c7210f57e61d61b">SceLocationPermissionInfo::unk_0x10</a></td></tr>
+<tr class="separator:ga071cdd717255f58f2c7210f57e61d61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="location_8h.html">psp2/location.h</a>&gt;</span> </div>
+<div class="ttc" id="alocation_8h_html"><div class="ttname"><a href="location_8h.html">location.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceLibLocation_stub </div>
+</div><!-- fragment --><p> <br  />
+ Load the required module:<br  />
+</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a59160eb765d472cccb30cb5e3d827708">SCE_SYSMODULE_LOCATION</a>); </div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a59160eb765d472cccb30cb5e3d827708"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a59160eb765d472cccb30cb5e3d827708">SCE_SYSMODULE_LOCATION</a></div><div class="ttdeci">@ SCE_SYSMODULE_LOCATION</div><div class="ttdoc">Location module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:47</div></div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceLocationLocationInfo" id="structSceLocationLocationInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceLocationLocationInfo">&#9670;&#160;</a></span>SceLocationLocationInfo</h2>
 
@@ -1211,6 +1384,323 @@ unk_0x10</td>
 </div><div class="memdoc">
 
 <p>Get location information acquisition permission information. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gaa8c08a263d988e30886c40321b4576ab" name="gaa8c08a263d988e30886c40321b4576ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa8c08a263d988e30886c40321b4576ab">&#9670;&#160;</a></span>latitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9d71b632d855f0bb605e063bd6980865">SceDouble64</a> SceLocationLocationInfo::latitude</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Latitude (deg). Valid range: -90 to + 90. If cannot be obtained, SCE_LOCATION_DATA_INVALID. </p>
+
+</div>
+</div>
+<a id="gaf1fdad28a02da22a325df54c8b4f63d4" name="gaf1fdad28a02da22a325df54c8b4f63d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf1fdad28a02da22a325df54c8b4f63d4">&#9670;&#160;</a></span>longitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9d71b632d855f0bb605e063bd6980865">SceDouble64</a> SceLocationLocationInfo::longitude</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Longitude (deg). Valid range: -180 to +180. If cannot be obtained, SCE_LOCATION_DATA_INVALID. </p>
+
+</div>
+</div>
+<a id="ga2ea0b217a3b82fc3d31a708981b94220" name="ga2ea0b217a3b82fc3d31a708981b94220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ea0b217a3b82fc3d31a708981b94220">&#9670;&#160;</a></span>altitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9d71b632d855f0bb605e063bd6980865">SceDouble64</a> SceLocationLocationInfo::altitude</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Altitude (m). If cannot be obtained, SCE_LOCATION_DATA_INVALID. </p>
+
+</div>
+</div>
+<a id="gac04328172c2459c2ad5da23fec9bc31f" name="gac04328172c2459c2ad5da23fec9bc31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac04328172c2459c2ad5da23fec9bc31f">&#9670;&#160;</a></span>accuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationLocationInfo::accuracy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Horizontal error (m). If cannot be obtained, SCE_LOCATION_DATA_INVALID. </p>
+
+</div>
+</div>
+<a id="gadc4039c574afa66b190013d519b34f05" name="gadc4039c574afa66b190013d519b34f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc4039c574afa66b190013d519b34f05">&#9670;&#160;</a></span>reserve <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationLocationInfo::reserve</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserve. </p>
+
+</div>
+</div>
+<a id="gaeecc7aa4df7eeba837f21cd636b54a61" name="gaeecc7aa4df7eeba837f21cd636b54a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeecc7aa4df7eeba837f21cd636b54a61">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationLocationInfo::direction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Travel direction. If cannot be obtained, SCE_LOCATION_DATA_INVALID. </p>
+
+</div>
+</div>
+<a id="ga61ae6005a548afb42f08632752068989" name="ga61ae6005a548afb42f08632752068989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61ae6005a548afb42f08632752068989">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationLocationInfo::speed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Travel speed (m/s). If cannot be obtained, SCE_LOCATION_DATA_INVALID. </p>
+
+</div>
+</div>
+<a id="ga0b68cd9b4daeef7ebe3a42e62427687c" name="ga0b68cd9b4daeef7ebe3a42e62427687c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b68cd9b4daeef7ebe3a42e62427687c">&#9670;&#160;</a></span>timestamp <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> SceLocationLocationInfo::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time of data acquisition, in μsec (UTC) </p>
+
+</div>
+</div>
+<a id="ga9c2007852f8f71503c5d6673df873477" name="ga9c2007852f8f71503c5d6673df873477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c2007852f8f71503c5d6673df873477">&#9670;&#160;</a></span>trueHeading</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationHeadingInfo::trueHeading</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clockwise angle from true north (0 to 360 degrees). If cannot be acquired, SCE_LOCATION_INVALID_DATA. </p>
+
+</div>
+</div>
+<a id="gab787f06246360da95fe7921d2b283d85" name="gab787f06246360da95fe7921d2b283d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab787f06246360da95fe7921d2b283d85">&#9670;&#160;</a></span>headingVectorX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationHeadingInfo::headingVectorX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direction vector X coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA. </p>
+
+</div>
+</div>
+<a id="ga8bd80a2e7056863a3674af6692126716" name="ga8bd80a2e7056863a3674af6692126716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bd80a2e7056863a3674af6692126716">&#9670;&#160;</a></span>headingVectorY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationHeadingInfo::headingVectorY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direction vector Y coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA. </p>
+
+</div>
+</div>
+<a id="ga67ce7f9de0879ac9059163004b7e4162" name="ga67ce7f9de0879ac9059163004b7e4162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67ce7f9de0879ac9059163004b7e4162">&#9670;&#160;</a></span>headingVectorZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationHeadingInfo::headingVectorZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direction vector Z coordinates element of true north. If cannot be acquired, SCE_LOCATION_INVALID_DATA. </p>
+
+</div>
+</div>
+<a id="gad954a6df8ffcac123f39e5a98ea71b7e" name="gad954a6df8ffcac123f39e5a98ea71b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad954a6df8ffcac123f39e5a98ea71b7e">&#9670;&#160;</a></span>reserve <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationHeadingInfo::reserve</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserve. </p>
+
+</div>
+</div>
+<a id="ga973af0883a66023875eb75c2599a0774" name="ga973af0883a66023875eb75c2599a0774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga973af0883a66023875eb75c2599a0774">&#9670;&#160;</a></span>reserve2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9b3b844b1a60926dc6db6a721d8449c8">SceFloat32</a> SceLocationHeadingInfo::reserve2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserve. </p>
+
+</div>
+</div>
+<a id="gaa1deff38485ca6c8d317a94088e1b4e0" name="gaa1deff38485ca6c8d317a94088e1b4e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1deff38485ca6c8d317a94088e1b4e0">&#9670;&#160;</a></span>timestamp <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> SceLocationHeadingInfo::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time acquired in unit of 1 usec (UTC) </p>
+
+</div>
+</div>
+<a id="ga8bbcf02dc5579c04e8f2c257fc83308b" name="ga8bbcf02dc5579c04e8f2c257fc83308b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bbcf02dc5579c04e8f2c257fc83308b">&#9670;&#160;</a></span>parentalstatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd">SceLocationPermissionStatus</a> SceLocationPermissionInfo::parentalstatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of usage permission through parental control. </p>
+
+</div>
+</div>
+<a id="ga6d75901987f7c564c0c251cbb9d0c19f" name="ga6d75901987f7c564c0c251cbb9d0c19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d75901987f7c564c0c251cbb9d0c19f">&#9670;&#160;</a></span>mainstatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceLocationUser.html#ga26f6889e149bdfaa945bf67ae79315bd">SceLocationPermissionStatus</a> SceLocationPermissionInfo::mainstatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of usage permission through location data item of system settings. </p>
+
+</div>
+</div>
+<a id="gafdaabcb57a43c8ac5aae85a9df5ab2f8" name="gafdaabcb57a43c8ac5aae85a9df5ab2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdaabcb57a43c8ac5aae85a9df5ab2f8">&#9670;&#160;</a></span>applicationstatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceLocationUser.html#ga79d97b38146a8eee437fa1ab15d59301">SceLocationPermissionApplicationStatus</a> SceLocationPermissionInfo::applicationstatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of usage permission through location data item for each application in system settings. </p>
+
+</div>
+</div>
+<a id="ga8e43cc3beff0b5fc4f54ef522c488b49" name="ga8e43cc3beff0b5fc4f54ef522c488b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e43cc3beff0b5fc4f54ef522c488b49">&#9670;&#160;</a></span>unk_0x0C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceLocationPermissionInfo::unk_0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga071cdd717255f58f2c7210f57e61d61b" name="ga071cdd717255f58f2c7210f57e61d61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga071cdd717255f58f2c7210f57e61d61b">&#9670;&#160;</a></span>unk_0x10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceLocationPermissionInfo::unk_0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

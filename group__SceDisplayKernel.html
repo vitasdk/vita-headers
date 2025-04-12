@@ -73,30 +73,56 @@ $(document).ready(function(){initNavTree('group__SceDisplayKernel.html',''); ini
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceDisplay.html">Display Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2display_8h.html">psp2common/display.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2common_2display_8h_html"><div class="ttname"><a href="psp2common_2display_8h.html">display.h</a></div></div>
-</div><!-- fragment --><p><br  />
- </p><hr  />
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2display_8h.html">psp2kern/display.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2kern_2display_8h_html"><div class="ttname"><a href="psp2kern_2display_8h.html">display.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceDisplayForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceDisplayFrameBuf" id="r_structSceDisplayFrameBuf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a></td></tr>
+<tr class="memdesc:structSceDisplayFrameBuf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used with <a class="el" href="group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8" title="Set/Update framebuffer parameters.">ksceDisplaySetFrameBuf</a> to set/update framebuffer.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">More...</a><br /></td></tr>
+<tr class="separator:structSceDisplayFrameBuf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayFrameBufInfo" id="r_structSceDisplayFrameBufInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">SceDisplayFrameBufInfo</a></td></tr>
+<tr class="memdesc:structSceDisplayFrameBufInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended framebuffer information.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceDisplayFrameBufInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaa1abc2fc8664f894ce78aaf58160b728" id="r_gaa1abc2fc8664f894ce78aaf58160b728"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaa1abc2fc8664f894ce78aaf58160b728">SceDisplayErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728ab68af62b91ef823420da383066b8bc2d">SCE_DISPLAY_ERROR_OK</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a11a0efb6ab214c0f991a3e60dc097cf1">SCE_DISPLAY_ERROR_INVALID_HEAD</a> = 0x80290000
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a400f4d5d343f7cf9e3cdfb576890cd41">SCE_DISPLAY_ERROR_INVALID_VALUE</a> = 0x80290001
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728aa34efa912fda5453b7b204095f593b10">SCE_DISPLAY_ERROR_INVALID_ADDR</a> = 0x80290002
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a2e99f537459ef376f35de1495db25007">SCE_DISPLAY_ERROR_INVALID_PIXELFORMAT</a> = 0x80290003
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728abac39a22cb13101dafb4250bb67b4cd9">SCE_DISPLAY_ERROR_INVALID_PITCH</a> = 0x80290004
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a3f447fa5ff4752eb5833fbe5d4576a05">SCE_DISPLAY_ERROR_INVALID_RESOLUTION</a> = 0x80290005
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a3c4d4a583fa57a99bf0b8167d6edc8af">SCE_DISPLAY_ERROR_INVALID_UPDATETIMING</a> = 0x80290006
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728aab7831ed72313e8699ad44badd177588">SCE_DISPLAY_ERROR_NO_FRAME_BUFFER</a> = 0x80290007
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728a940965b34707d6a5eea1f4712dc3e0b7">SCE_DISPLAY_ERROR_NO_PIXEL_DATA</a> = 0x80290008
+, <a class="el" href="group__SceDisplayKernel.html#ggaa1abc2fc8664f894ce78aaf58160b728ad54a3a72d19528b7ea711db60ede071f">SCE_DISPLAY_ERROR_NO_OUTPUT_SIGNAL</a> = 0x80290009
+<br />
+ }</td></tr>
+<tr class="separator:gaa1abc2fc8664f894ce78aaf58160b728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6176811ed0355e537d44c825ab1931c" id="r_gac6176811ed0355e537d44c825ab1931c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a> { <a class="el" href="group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca959e8096513825a1d478b4d6f8f8123c">SCE_DISPLAY_PIXELFORMAT_A8B8G8R8</a> = 0x00000000U
+, <a class="el" href="group__SceDisplayKernel.html#ggac6176811ed0355e537d44c825ab1931ca4435e805e395d21b262d69ec4af855e9">SCE_DISPLAY_PIXELFORMAT_A2B10G10R10</a> = 0x60800000U
+ }</td></tr>
+<tr class="separator:gac6176811ed0355e537d44c825ab1931c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cccbd19bead1c902688ec8409ff0c55" id="r_ga1cccbd19bead1c902688ec8409ff0c55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a> { <a class="el" href="group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55aed1ba9da79d96bef5d2c401d271ed016">SCE_DISPLAY_SETBUF_IMMEDIATE</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a942be0a40abb1c6466d4583f2cefa98c">SCE_DISPLAY_SETBUF_NEXTFRAME</a> = 1
+, <a class="el" href="group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a0933dc4d6c641d5d8df41b92dc0be658">__SCE_DISPLAY_SETBUF</a> = 0xFFFFFFFF
+ }</td></tr>
+<tr class="separator:ga1cccbd19bead1c902688ec8409ff0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaa68503c400ba70914076691205b2bf3b" id="r_gaa68503c400ba70914076691205b2bf3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaa68503c400ba70914076691205b2bf3b">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceDisplayKernel.html#gaa1abc2fc8664f894ce78aaf58160b728">SceDisplayErrorCode</a>)</td></tr>
@@ -190,8 +216,66 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8b2cb118d615ec679b40f8d7367790c1" id="r_ga8b2cb118d615ec679b40f8d7367790c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga8b2cb118d615ec679b40f8d7367790c1">ksceDisplaySetOwner</a> (int head, int index, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="memdesc:ga8b2cb118d615ec679b40f8d7367790c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display plane owner.  <br /></td></tr>
 <tr class="separator:ga8b2cb118d615ec679b40f8d7367790c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga4818747e9c93ab650824cd4c484506df" id="r_ga4818747e9c93ab650824cd4c484506df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga4818747e9c93ab650824cd4c484506df">SceDisplayFrameBuf::size</a></td></tr>
+<tr class="memdesc:ga4818747e9c93ab650824cd4c484506df"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(SceDisplayFrameBuf)  <br /></td></tr>
+<tr class="separator:ga4818747e9c93ab650824cd4c484506df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf65ac368b8054a7d77fbbaafe307b945" id="r_gaf65ac368b8054a7d77fbbaafe307b945"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf65ac368b8054a7d77fbbaafe307b945">SceDisplayFrameBuf::base</a></td></tr>
+<tr class="memdesc:gaf65ac368b8054a7d77fbbaafe307b945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to framebuffer.  <br /></td></tr>
+<tr class="separator:gaf65ac368b8054a7d77fbbaafe307b945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44160853361a441b8e43578d0a2941b9" id="r_ga44160853361a441b8e43578d0a2941b9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga44160853361a441b8e43578d0a2941b9">SceDisplayFrameBuf::pitch</a></td></tr>
+<tr class="memdesc:ga44160853361a441b8e43578d0a2941b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">pitch pixels  <br /></td></tr>
+<tr class="separator:ga44160853361a441b8e43578d0a2941b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00b8ff65e24a20a98cbced5ea7925089" id="r_ga00b8ff65e24a20a98cbced5ea7925089"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga00b8ff65e24a20a98cbced5ea7925089">SceDisplayFrameBuf::pixelformat</a></td></tr>
+<tr class="memdesc:ga00b8ff65e24a20a98cbced5ea7925089"><td class="mdescLeft">&#160;</td><td class="mdescRight">pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>)  <br /></td></tr>
+<tr class="separator:ga00b8ff65e24a20a98cbced5ea7925089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4443600a76935ec481ca282d48e9268c" id="r_ga4443600a76935ec481ca282d48e9268c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga4443600a76935ec481ca282d48e9268c">SceDisplayFrameBuf::width</a></td></tr>
+<tr class="memdesc:ga4443600a76935ec481ca282d48e9268c"><td class="mdescLeft">&#160;</td><td class="mdescRight">framebuffer width  <br /></td></tr>
+<tr class="separator:ga4443600a76935ec481ca282d48e9268c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf6c5759f48d231bd31415cbe552ca3d" id="r_gacf6c5759f48d231bd31415cbe552ca3d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gacf6c5759f48d231bd31415cbe552ca3d">SceDisplayFrameBuf::height</a></td></tr>
+<tr class="memdesc:gacf6c5759f48d231bd31415cbe552ca3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">framebuffer height  <br /></td></tr>
+<tr class="separator:gacf6c5759f48d231bd31415cbe552ca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae73edbc4a45330dcf1c1e8505380d2a0" id="r_gae73edbc4a45330dcf1c1e8505380d2a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gae73edbc4a45330dcf1c1e8505380d2a0">SceDisplayFrameBufInfo::size</a></td></tr>
+<tr class="memdesc:gae73edbc4a45330dcf1c1e8505380d2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(SceDisplayFrameBufInfo)  <br /></td></tr>
+<tr class="separator:gae73edbc4a45330dcf1c1e8505380d2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88acd1dc990b6e485cef630941a77a02" id="r_ga88acd1dc990b6e485cef630941a77a02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga88acd1dc990b6e485cef630941a77a02">SceDisplayFrameBufInfo::pid</a></td></tr>
+<tr class="memdesc:ga88acd1dc990b6e485cef630941a77a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID of the process owning this framebuffer.  <br /></td></tr>
+<tr class="separator:ga88acd1dc990b6e485cef630941a77a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga650fa3e9c459d0eb1904906a80efeb10" id="r_ga650fa3e9c459d0eb1904906a80efeb10"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga650fa3e9c459d0eb1904906a80efeb10">SceDisplayFrameBufInfo::vblankcount</a></td></tr>
+<tr class="memdesc:ga650fa3e9c459d0eb1904906a80efeb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of VBlanks this framebuffer has been displayed.  <br /></td></tr>
+<tr class="separator:ga650fa3e9c459d0eb1904906a80efeb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60165f518513b69febbba1ff2c80d8b3" id="r_ga60165f518513b69febbba1ff2c80d8b3"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga60165f518513b69febbba1ff2c80d8b3">SceDisplayFrameBufInfo::paddr</a></td></tr>
+<tr class="memdesc:ga60165f518513b69febbba1ff2c80d8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical address.  <br /></td></tr>
+<tr class="separator:ga60165f518513b69febbba1ff2c80d8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc3c8c036f63af068b848b0d039e08dc" id="r_gabc3c8c036f63af068b848b0d039e08dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gabc3c8c036f63af068b848b0d039e08dc">SceDisplayFrameBufInfo::framebuf</a></td></tr>
+<tr class="memdesc:gabc3c8c036f63af068b848b0d039e08dc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> information.  <br /></td></tr>
+<tr class="separator:gabc3c8c036f63af068b848b0d039e08dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66105322c2fa987559ee4625f427e3c0" id="r_ga66105322c2fa987559ee4625f427e3c0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga66105322c2fa987559ee4625f427e3c0">SceDisplayFrameBufInfo::resolution</a></td></tr>
+<tr class="memdesc:ga66105322c2fa987559ee4625f427e3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution.  <br /></td></tr>
+<tr class="separator:ga66105322c2fa987559ee4625f427e3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2display_8h.html">psp2common/display.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2display_8h_html"><div class="ttname"><a href="psp2common_2display_8h.html">display.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2display_8h.html">psp2kern/display.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2display_8h_html"><div class="ttname"><a href="psp2kern_2display_8h.html">display.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceDisplayForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceDisplayFrameBuf" id="structSceDisplayFrameBuf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceDisplayFrameBuf">&#9670;&#160;</a></span>SceDisplayFrameBuf</h2>
 
@@ -1354,6 +1438,199 @@ Resolution. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga4818747e9c93ab650824cd4c484506df" name="ga4818747e9c93ab650824cd4c484506df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4818747e9c93ab650824cd4c484506df">&#9670;&#160;</a></span>size <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceDisplayFrameBuf::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sizeof(SceDisplayFrameBuf) </p>
+
+</div>
+</div>
+<a id="gaf65ac368b8054a7d77fbbaafe307b945" name="gaf65ac368b8054a7d77fbbaafe307b945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf65ac368b8054a7d77fbbaafe307b945">&#9670;&#160;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceDisplayFrameBuf::base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to framebuffer. </p>
+
+</div>
+</div>
+<a id="ga44160853361a441b8e43578d0a2941b9" name="ga44160853361a441b8e43578d0a2941b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44160853361a441b8e43578d0a2941b9">&#9670;&#160;</a></span>pitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBuf::pitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pitch pixels </p>
+
+</div>
+</div>
+<a id="ga00b8ff65e24a20a98cbced5ea7925089" name="ga00b8ff65e24a20a98cbced5ea7925089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00b8ff65e24a20a98cbced5ea7925089">&#9670;&#160;</a></span>pixelformat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBuf::pixelformat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>) </p>
+
+</div>
+</div>
+<a id="ga4443600a76935ec481ca282d48e9268c" name="ga4443600a76935ec481ca282d48e9268c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4443600a76935ec481ca282d48e9268c">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBuf::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>framebuffer width </p>
+
+</div>
+</div>
+<a id="gacf6c5759f48d231bd31415cbe552ca3d" name="gacf6c5759f48d231bd31415cbe552ca3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf6c5759f48d231bd31415cbe552ca3d">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBuf::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>framebuffer height </p>
+
+</div>
+</div>
+<a id="gae73edbc4a45330dcf1c1e8505380d2a0" name="gae73edbc4a45330dcf1c1e8505380d2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae73edbc4a45330dcf1c1e8505380d2a0">&#9670;&#160;</a></span>size <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceDisplayFrameBufInfo::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sizeof(SceDisplayFrameBufInfo) </p>
+
+</div>
+</div>
+<a id="ga88acd1dc990b6e485cef630941a77a02" name="ga88acd1dc990b6e485cef630941a77a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88acd1dc990b6e485cef630941a77a02">&#9670;&#160;</a></span>pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceDisplayFrameBufInfo::pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PID of the process owning this framebuffer. </p>
+
+</div>
+</div>
+<a id="ga650fa3e9c459d0eb1904906a80efeb10" name="ga650fa3e9c459d0eb1904906a80efeb10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga650fa3e9c459d0eb1904906a80efeb10">&#9670;&#160;</a></span>vblankcount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBufInfo::vblankcount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Amount of VBlanks this framebuffer has been displayed. </p>
+
+</div>
+</div>
+<a id="ga60165f518513b69febbba1ff2c80d8b3" name="ga60165f518513b69febbba1ff2c80d8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60165f518513b69febbba1ff2c80d8b3">&#9670;&#160;</a></span>paddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t SceDisplayFrameBufInfo::paddr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Physical address. </p>
+
+</div>
+</div>
+<a id="gabc3c8c036f63af068b848b0d039e08dc" name="gabc3c8c036f63af068b848b0d039e08dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc3c8c036f63af068b848b0d039e08dc">&#9670;&#160;</a></span>framebuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> SceDisplayFrameBufInfo::framebuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> information. </p>
+
+</div>
+</div>
+<a id="ga66105322c2fa987559ee4625f427e3c0" name="ga66105322c2fa987559ee4625f427e3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66105322c2fa987559ee4625f427e3c0">&#9670;&#160;</a></span>resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBufInfo::resolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolution. </p>
 
 </div>
 </div>

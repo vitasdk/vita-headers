@@ -73,31 +73,89 @@ $(document).ready(function(){initNavTree('group__SceRtcUser.html',''); initResiz
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__SystemStatus.html">System Status</a> &raquo; <a class="el" href="group__SceRtc.html">Real-time Clock Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2_2rtc_8h.html">psp2/rtc.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2_2rtc_8h_html"><div class="ttname"><a href="psp2_2rtc_8h.html">rtc.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceRtc_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2kernel_2rtc_8h.html">psp2common/kernel/rtc.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2common_2kernel_2rtc_8h_html"><div class="ttname"><a href="psp2common_2kernel_2rtc_8h.html">rtc.h</a></div></div>
-</div><!-- fragment --><p><br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceRtcTick" id="r_structSceRtcTick"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a></td></tr>
+<tr class="separator:structSceRtcTick"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga48e9a50e1dccabd8d528a4caaa9177b2" id="r_ga48e9a50e1dccabd8d528a4caaa9177b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga48e9a50e1dccabd8d528a4caaa9177b2">sceRtcGetCurrentTickUtc</a>(_tick)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gab091c8febd02d62bee300d09babd6107">sceRtcGetCurrentTick</a>(_tick)</td></tr>
+<tr class="separator:ga48e9a50e1dccabd8d528a4caaa9177b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8868beea47766afc100a791a3708b859" id="r_ga8868beea47766afc100a791a3708b859"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga8868beea47766afc100a791a3708b859">sceRtcGetCurrentClockUtc</a>(_p)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga5faac20344bf45afde5124a7346fa627">sceRtcGetCurrentClock</a>(_p,0)</td></tr>
+<tr class="separator:ga8868beea47766afc100a791a3708b859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d3b9ff8da911654bdabb200305552ef" id="r_ga4d3b9ff8da911654bdabb200305552ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga4d3b9ff8da911654bdabb200305552ef">sceRtcGetCurrentNetworkTickUtc</a>(_tick)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gad27b9f04553c287b6d8fee04a41ff764">sceRtcGetCurrentNetworkTick</a>(_tick)</td></tr>
+<tr class="separator:ga4d3b9ff8da911654bdabb200305552ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0053f871791c4885af6f025bc35575cb" id="r_ga0053f871791c4885af6f025bc35575cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga0053f871791c4885af6f025bc35575cb">sceRtcConvertTime_tToDateTime</a>(_timet,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gac56f4f8dade60bcf772a2e23e570c53a">sceRtcSetTime_t</a>(_pdatetime, _timet)</td></tr>
+<tr class="separator:ga0053f871791c4885af6f025bc35575cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9880f9f12dfff3d611805ecbfeb347e1" id="r_ga9880f9f12dfff3d611805ecbfeb347e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga9880f9f12dfff3d611805ecbfeb347e1">sceRtcConvertTime64_tToDateTime</a>(_timet,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gaa599f7355ff212cde9b635d0affd64a6">sceRtcSetTime64_t</a>(_pdatetime, _timet)</td></tr>
+<tr class="separator:ga9880f9f12dfff3d611805ecbfeb347e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf16b678c68a3e8989dc1a293ce621331" id="r_gaf16b678c68a3e8989dc1a293ce621331"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gaf16b678c68a3e8989dc1a293ce621331">sceRtcConvertDateTimeToTime_t</a>(_pdatetime,  _ptimet)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gad5be702cf35dc2eb7f482924d5fbe646">sceRtcGetTime_t</a>(_pdatetime, _ptimet)</td></tr>
+<tr class="separator:gaf16b678c68a3e8989dc1a293ce621331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa824eb3df8fc0e20a4383bd11516294f" id="r_gaa824eb3df8fc0e20a4383bd11516294f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gaa824eb3df8fc0e20a4383bd11516294f">sceRtcConvertDateTimeToTime64_t</a>(_pdatetime,  _ptimet)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga7f029809be8f003b1d29f383e14e4f4e">sceRtcGetTime64_t</a>(_pdatetime, _ptimet)</td></tr>
+<tr class="separator:gaa824eb3df8fc0e20a4383bd11516294f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5ac8b6126a6fc9a50a2ccb33e984472" id="r_gae5ac8b6126a6fc9a50a2ccb33e984472"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gae5ac8b6126a6fc9a50a2ccb33e984472">sceRtcConvertDosTimeToDateTime</a>(_dostime,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga7c0106fff8b5b1073b2fd067611eeda0">sceRtcSetDosTime</a>(_pdatetime, _dostime)</td></tr>
+<tr class="separator:gae5ac8b6126a6fc9a50a2ccb33e984472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7cf2973a623313162dccd1a137eb7d" id="r_gadf7cf2973a623313162dccd1a137eb7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gadf7cf2973a623313162dccd1a137eb7d">sceRtcConvertDateTimeToDosTime</a>(_pdatetime,  _pdostime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga42815809915ed654e2188f9d051864c3">sceRtcGetDosTime</a>(_pdatetime, _pdostime)</td></tr>
+<tr class="separator:gadf7cf2973a623313162dccd1a137eb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e85e7b1194b10c043ca50c3906189a4" id="r_ga8e85e7b1194b10c043ca50c3906189a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga8e85e7b1194b10c043ca50c3906189a4">sceRtcConvertWin32TimeToDateTime</a>(_pw32time,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga3fa0de6910d919390bfa4d0da663efad">sceRtcSetWin32FileTime</a>(_pdatetime, _pw32time)</td></tr>
+<tr class="separator:ga8e85e7b1194b10c043ca50c3906189a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga036b46e176a8b54e03bec7e739f1b4f3" id="r_ga036b46e176a8b54e03bec7e739f1b4f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga036b46e176a8b54e03bec7e739f1b4f3">sceRtcConvertDateTimeToWin32Time</a>(_pdatetime,  _pw32time)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gacf67dc428a986702dcc2bc765aff5493">sceRtcGetWin32FileTime</a>(_pdatetime, _pw32time)</td></tr>
+<tr class="separator:ga036b46e176a8b54e03bec7e739f1b4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab934457ba293c2b1e40c6e2073f4b608" id="r_gab934457ba293c2b1e40c6e2073f4b608"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gab934457ba293c2b1e40c6e2073f4b608">sceRtcConvertTickToDateTime</a>(_ptick,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga7b1450e083b91c368dadcb7db0e62d7a">sceRtcSetTick</a>(_pdatetime, _ptick)</td></tr>
+<tr class="separator:gab934457ba293c2b1e40c6e2073f4b608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf982c4597c42b514c6d27661971746a" id="r_gacf982c4597c42b514c6d27661971746a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gacf982c4597c42b514c6d27661971746a">sceRtcConvertDateTimeToTick</a>(_pdatetime,  _ptick)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga0b304ed54a00df71dd175970d3623531">sceRtcGetTick</a>(_pdatetime, _ptick)</td></tr>
+<tr class="separator:gacf982c4597c42b514c6d27661971746a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga9b9bca602e59800218435c06d5db161b" id="r_ga9b9bca602e59800218435c06d5db161b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga9b9bca602e59800218435c06d5db161b">SceRtcErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba3dcc8aed359aeed23d41b5d3398ddebb">SCE_RTC_ERROR_INVALID_VALUE</a> = 0x80251000
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba70d011c5cc511d6a5a1434969631e9c4">SCE_RTC_ERROR_INVALID_POINTER</a> = 0x80251001
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba42bcafac6c138b1bc50099746d109921">SCE_RTC_ERROR_NOT_INITIALIZED</a> = 0x80251002
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161bac7a2fcc8b303f69fbf89b1c1e3667d9d">SCE_RTC_ERROR_ALREADY_REGISTERD</a> = 0x80251003
+, <br />
+&#160;&#160;<a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba2c30be679363b4ab1ac391c8df5e3278">SCE_RTC_ERROR_NOT_FOUND</a> = 0x80251004
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba855441745cf5ab8cd9a4bad46746caed">SCE_RTC_ERROR_BAD_PARSE</a> = 0x80251080
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba7958ac8f725ca68374f618d627c25268">SCE_RTC_ERROR_INVALID_YEAR</a> = 0x80251081
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba0b4f2e1626320cf4a3e407922b45ecb6">SCE_RTC_ERROR_INVALID_MONTH</a> = 0x80251082
+, <br />
+&#160;&#160;<a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba012957bfe0d8083edbfd1f89d0578034">SCE_RTC_ERROR_INVALID_DAY</a> = 0x80251083
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba09725a78cfc6e57d5ee07e6647322e33">SCE_RTC_ERROR_INVALID_HOUR</a> = 0x80251084
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba2d94cf54ff152171ae416eef5a976381">SCE_RTC_ERROR_INVALID_MINUTE</a> = 0x80251085
+, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba496ff77374644b8cd0ecac3c0cbb3d2a">SCE_RTC_ERROR_INVALID_SECOND</a> = 0x80251086
+, <br />
+&#160;&#160;<a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba586e77678496096ddbe154d9b3d4cd17">SCE_RTC_ERROR_INVALID_MICROSECOND</a> = 0x80251087
+<br />
+ }</td></tr>
+<tr class="separator:ga9b9bca602e59800218435c06d5db161b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87a2cf54497706f98dcb447871ab994a" id="r_ga87a2cf54497706f98dcb447871ab994a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga87a2cf54497706f98dcb447871ab994a">SceRtcDayOfWeek</a> { <br />
+&#160;&#160;<a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aafa061b280cfe845fcde3556b76b74a4e">SCE_RTC_DAYOFWEEK_SUNDAY</a> = 0
+, <a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa48f5b863161ab3bbe1bd06aeb8cdca8b">SCE_RTC_DAYOFWEEK_MONDAY</a> = 1
+, <a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa7ec4a51dc7bbae6f6bfdff41721c6e01">SCE_RTC_DAYOFWEEK_TUESDAY</a> = 2
+, <a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aaf2f9731300aab796dbd8036bde1f1af4">SCE_RTC_DAYOFWEEK_WEDNESDAY</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa4c6804613bcd0e80c587d6bf9ca0a6dd">SCE_RTC_DAYOFWEEK_THURSDAY</a> = 4
+, <a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa1a7e46249b3ef02b051cbbfd527f9b42">SCE_RTC_DAYOFWEEK_FRIDAY</a> = 5
+, <a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa970a0a490d7f890d336780ff81262ac9">SCE_RTC_DAYOFWEEK_SATURDAY</a> = 6
+, <a class="el" href="group__SceRtcUser.html#gga87a2cf54497706f98dcb447871ab994aa4e740d2f5d52f8e969690602e6239419">__SCE_RTC_DAYOFWEEK</a> = 0xFFFFFFFF
+<br />
+ }</td></tr>
+<tr class="separator:ga87a2cf54497706f98dcb447871ab994a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad07add7ff5fd320b08c88c7d88b0f80a" id="r_gad07add7ff5fd320b08c88c7d88b0f80a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gad07add7ff5fd320b08c88c7d88b0f80a">sceRtcGetTickResolution</a> (void)</td></tr>
@@ -215,36 +273,31 @@ Functions</h2></td></tr>
 <tr class="memitem:gafe4ce575d3e4fa57607eb120b4185b3f" id="r_gafe4ce575d3e4fa57607eb120b4185b3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gafe4ce575d3e4fa57607eb120b4185b3f">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>)</td></tr>
 <tr class="separator:gafe4ce575d3e4fa57607eb120b4185b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga48e9a50e1dccabd8d528a4caaa9177b2" id="r_ga48e9a50e1dccabd8d528a4caaa9177b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga48e9a50e1dccabd8d528a4caaa9177b2">sceRtcGetCurrentTickUtc</a>(_tick)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gab091c8febd02d62bee300d09babd6107">sceRtcGetCurrentTick</a>(_tick)</td></tr>
-<tr class="separator:ga48e9a50e1dccabd8d528a4caaa9177b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8868beea47766afc100a791a3708b859" id="r_ga8868beea47766afc100a791a3708b859"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga8868beea47766afc100a791a3708b859">sceRtcGetCurrentClockUtc</a>(_p)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga5faac20344bf45afde5124a7346fa627">sceRtcGetCurrentClock</a>(_p,0)</td></tr>
-<tr class="separator:ga8868beea47766afc100a791a3708b859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d3b9ff8da911654bdabb200305552ef" id="r_ga4d3b9ff8da911654bdabb200305552ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga4d3b9ff8da911654bdabb200305552ef">sceRtcGetCurrentNetworkTickUtc</a>(_tick)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gad27b9f04553c287b6d8fee04a41ff764">sceRtcGetCurrentNetworkTick</a>(_tick)</td></tr>
-<tr class="separator:ga4d3b9ff8da911654bdabb200305552ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0053f871791c4885af6f025bc35575cb" id="r_ga0053f871791c4885af6f025bc35575cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga0053f871791c4885af6f025bc35575cb">sceRtcConvertTime_tToDateTime</a>(_timet,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gac56f4f8dade60bcf772a2e23e570c53a">sceRtcSetTime_t</a>(_pdatetime, _timet)</td></tr>
-<tr class="separator:ga0053f871791c4885af6f025bc35575cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9880f9f12dfff3d611805ecbfeb347e1" id="r_ga9880f9f12dfff3d611805ecbfeb347e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga9880f9f12dfff3d611805ecbfeb347e1">sceRtcConvertTime64_tToDateTime</a>(_timet,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gaa599f7355ff212cde9b635d0affd64a6">sceRtcSetTime64_t</a>(_pdatetime, _timet)</td></tr>
-<tr class="separator:ga9880f9f12dfff3d611805ecbfeb347e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf16b678c68a3e8989dc1a293ce621331" id="r_gaf16b678c68a3e8989dc1a293ce621331"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gaf16b678c68a3e8989dc1a293ce621331">sceRtcConvertDateTimeToTime_t</a>(_pdatetime,  _ptimet)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gad5be702cf35dc2eb7f482924d5fbe646">sceRtcGetTime_t</a>(_pdatetime, _ptimet)</td></tr>
-<tr class="separator:gaf16b678c68a3e8989dc1a293ce621331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa824eb3df8fc0e20a4383bd11516294f" id="r_gaa824eb3df8fc0e20a4383bd11516294f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gaa824eb3df8fc0e20a4383bd11516294f">sceRtcConvertDateTimeToTime64_t</a>(_pdatetime,  _ptimet)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga7f029809be8f003b1d29f383e14e4f4e">sceRtcGetTime64_t</a>(_pdatetime, _ptimet)</td></tr>
-<tr class="separator:gaa824eb3df8fc0e20a4383bd11516294f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5ac8b6126a6fc9a50a2ccb33e984472" id="r_gae5ac8b6126a6fc9a50a2ccb33e984472"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gae5ac8b6126a6fc9a50a2ccb33e984472">sceRtcConvertDosTimeToDateTime</a>(_dostime,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga7c0106fff8b5b1073b2fd067611eeda0">sceRtcSetDosTime</a>(_pdatetime, _dostime)</td></tr>
-<tr class="separator:gae5ac8b6126a6fc9a50a2ccb33e984472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf7cf2973a623313162dccd1a137eb7d" id="r_gadf7cf2973a623313162dccd1a137eb7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gadf7cf2973a623313162dccd1a137eb7d">sceRtcConvertDateTimeToDosTime</a>(_pdatetime,  _pdostime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga42815809915ed654e2188f9d051864c3">sceRtcGetDosTime</a>(_pdatetime, _pdostime)</td></tr>
-<tr class="separator:gadf7cf2973a623313162dccd1a137eb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e85e7b1194b10c043ca50c3906189a4" id="r_ga8e85e7b1194b10c043ca50c3906189a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga8e85e7b1194b10c043ca50c3906189a4">sceRtcConvertWin32TimeToDateTime</a>(_pw32time,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga3fa0de6910d919390bfa4d0da663efad">sceRtcSetWin32FileTime</a>(_pdatetime, _pw32time)</td></tr>
-<tr class="separator:ga8e85e7b1194b10c043ca50c3906189a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga036b46e176a8b54e03bec7e739f1b4f3" id="r_ga036b46e176a8b54e03bec7e739f1b4f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga036b46e176a8b54e03bec7e739f1b4f3">sceRtcConvertDateTimeToWin32Time</a>(_pdatetime,  _pw32time)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#gacf67dc428a986702dcc2bc765aff5493">sceRtcGetWin32FileTime</a>(_pdatetime, _pw32time)</td></tr>
-<tr class="separator:ga036b46e176a8b54e03bec7e739f1b4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab934457ba293c2b1e40c6e2073f4b608" id="r_gab934457ba293c2b1e40c6e2073f4b608"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gab934457ba293c2b1e40c6e2073f4b608">sceRtcConvertTickToDateTime</a>(_ptick,  _pdatetime)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga7b1450e083b91c368dadcb7db0e62d7a">sceRtcSetTick</a>(_pdatetime, _ptick)</td></tr>
-<tr class="separator:gab934457ba293c2b1e40c6e2073f4b608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf982c4597c42b514c6d27661971746a" id="r_gacf982c4597c42b514c6d27661971746a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#gacf982c4597c42b514c6d27661971746a">sceRtcConvertDateTimeToTick</a>(_pdatetime,  _ptick)&#160;&#160;&#160;<a class="el" href="group__SceRtcUser.html#ga0b304ed54a00df71dd175970d3623531">sceRtcGetTick</a>(_pdatetime, _ptick)</td></tr>
-<tr class="separator:gacf982c4597c42b514c6d27661971746a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga8c84486c98bc9827eaf755a46eda1a49" id="r_ga8c84486c98bc9827eaf755a46eda1a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcUser.html#ga8c84486c98bc9827eaf755a46eda1a49">SceRtcTick::tick</a></td></tr>
+<tr class="separator:ga8c84486c98bc9827eaf755a46eda1a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2_2rtc_8h.html">psp2/rtc.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2_2rtc_8h_html"><div class="ttname"><a href="psp2_2rtc_8h.html">rtc.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceRtc_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2kernel_2rtc_8h.html">psp2common/kernel/rtc.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2kernel_2rtc_8h_html"><div class="ttname"><a href="psp2common_2kernel_2rtc_8h.html">rtc.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceRtcTick" id="structSceRtcTick"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceRtcTick">&#9670;&#160;</a></span>SceRtcTick</h2>
 
@@ -2199,6 +2252,21 @@ tick</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga8c84486c98bc9827eaf755a46eda1a49" name="ga8c84486c98bc9827eaf755a46eda1a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c84486c98bc9827eaf755a46eda1a49">&#9670;&#160;</a></span>tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> SceRtcTick::tick</td>
         </tr>
       </table>
 </div><div class="memdoc">

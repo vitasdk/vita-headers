@@ -73,20 +73,58 @@ $(document).ready(function(){initNavTree('group__SceSdstorKernel.html',''); init
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Internal.html">Internal</a> &raquo; <a class="el" href="group__SceSdstor.html">blockdev handler</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sdstor_8h.html">psp2kern/internal/sdstor.h</a>&gt;</span> </div>
-<div class="ttc" id="asdstor_8h_html"><div class="ttname"><a href="sdstor_8h.html">sdstor.h</a></div></div>
-</div><!-- fragment --><p><br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceSdstorSddev" id="r_structSceSdstorSddev"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a></td></tr>
+<tr class="separator:structSceSdstorSddev"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSdstorPartitionEntry" id="r_structSceSdstorPartitionEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a></td></tr>
+<tr class="separator:structSceSdstorPartitionEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSdstorSdpart" id="r_structSceSdstorSdpart"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSdpart">SceSdstorSdpart</a></td></tr>
+<tr class="separator:structSceSdstorSdpart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSdstorOpHandle" id="r_structSceSdstorOpHandle"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorOpHandle">SceSdstorOpHandle</a></td></tr>
+<tr class="separator:structSceSdstorOpHandle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSdstorFd" id="r_structSceSdstorFd"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorFd">SceSdstorFd</a></td></tr>
+<tr class="separator:structSceSdstorFd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSdstorSdintr" id="r_structSceSdstorSdintr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSdintr">SceSdstorSdintr</a></td></tr>
+<tr class="separator:structSceSdstorSdintr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga88e2d6c37cc4e255a6b8ed8c09bdc84d" id="r_ga88e2d6c37cc4e255a6b8ed8c09bdc84d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga88e2d6c37cc4e255a6b8ed8c09bdc84d">SceSdstorSdpartPort</a> { <br />
+&#160;&#160;<a class="el" href="group__SceSdstorKernel.html#gga88e2d6c37cc4e255a6b8ed8c09bdc84da34d2e9a0caaeed868d9720a7d783ebef">SCE_SDSTOR_SDPART_PORT_EMMC</a> = 0x0
+, <a class="el" href="group__SceSdstorKernel.html#gga88e2d6c37cc4e255a6b8ed8c09bdc84da7ca6dad7d568c9cca19c8ce105a715ee">SCE_SDSTOR_SDPART_PORT_GC</a> = 0x1
+, <a class="el" href="group__SceSdstorKernel.html#gga88e2d6c37cc4e255a6b8ed8c09bdc84da3bc84b968e00e40b295aa81c4ddb2956">SCE_SDSTOR_SDPART_PORT_RM</a> = 0x2
+, <a class="el" href="group__SceSdstorKernel.html#gga88e2d6c37cc4e255a6b8ed8c09bdc84da93d935db8a5ce6a7d9e7e7eed58203b2">SCE_SDSTOR_SDPART_PORT_UMA</a> = 0x3
+, <br />
+&#160;&#160;<a class="el" href="group__SceSdstorKernel.html#gga88e2d6c37cc4e255a6b8ed8c09bdc84dacf6fa829c09a9204620d4dd16cd735d6">SCE_SDSTOR_SDPART_PORT_USD</a> = 0x4
+, <a class="el" href="group__SceSdstorKernel.html#gga88e2d6c37cc4e255a6b8ed8c09bdc84da1813fa97a9a8c106d164a5c09c278059">SCE_SDSTOR_SDPART_PORT_PSUDO_MC</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:ga88e2d6c37cc4e255a6b8ed8c09bdc84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3ae31e96b0e46afd4ca0e3b3d6936a1" id="r_gad3ae31e96b0e46afd4ca0e3b3d6936a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gad3ae31e96b0e46afd4ca0e3b3d6936a1">SceSdstorSdpartStat</a> { <a class="el" href="group__SceSdstorKernel.html#ggad3ae31e96b0e46afd4ca0e3b3d6936a1a876233f1fd7b2faaa21ac46dd825665e">SCE_SDSTOR_SDPART_STAT_INA</a> = 0
+, <a class="el" href="group__SceSdstorKernel.html#ggad3ae31e96b0e46afd4ca0e3b3d6936a1a8fb2392a34decf3d3b17a1ea1a6ad096">SCE_SDSTOR_SDPART_STAT_ACT</a> = 1
+, <a class="el" href="group__SceSdstorKernel.html#ggad3ae31e96b0e46afd4ca0e3b3d6936a1a3fcc9c8c17eaba9f15c26b1586f2fe44">SCE_SDSTOR_SDPART_STAT_IGN</a> = 2
+ }</td></tr>
+<tr class="separator:gad3ae31e96b0e46afd4ca0e3b3d6936a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf15e4d3109a02bb1338f9215356912f" id="r_gacf15e4d3109a02bb1338f9215356912f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gacf15e4d3109a02bb1338f9215356912f">SceSdstorSdpartKind</a> { <a class="el" href="group__SceSdstorKernel.html#ggacf15e4d3109a02bb1338f9215356912fa8cc03523711969b88a6cb031ed6fea3e">SCE_SDSTOR_SDPART_KIND_INVALID</a> = 0x0
+, <a class="el" href="group__SceSdstorKernel.html#ggacf15e4d3109a02bb1338f9215356912fa6e435340a6a1d63e1dc7a3a47cd87009">SCE_SDSTOR_SDPART_KIND_GC</a> = 0x1
+, <a class="el" href="group__SceSdstorKernel.html#ggacf15e4d3109a02bb1338f9215356912fa5bfdb75102758ad0c57ddd1a09a067de">SCE_SDSTOR_SDPART_KIND_RM</a> = 0x2
+, <a class="el" href="group__SceSdstorKernel.html#ggacf15e4d3109a02bb1338f9215356912fad9b6419a4262d5dabb850ce05c9f07f6">SCE_SDSTOR_SDPART_KIND_USD</a> = 0x3
+ }</td></tr>
+<tr class="separator:gacf15e4d3109a02bb1338f9215356912f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaf5415db521d89eb9d3271e1743001842" id="r_gaf5415db521d89eb9d3271e1743001842"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaf5415db521d89eb9d3271e1743001842">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceSdstorKernel.html#ga88e2d6c37cc4e255a6b8ed8c09bdc84d">SceSdstorSdpartPort</a>)</td></tr>
@@ -107,8 +145,122 @@ Functions</h2></td></tr>
 <tr class="separator:gacda1b0eee3dd3e7ce022eb70a61f0367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5e3850eb5a4edcf47c6349d65badc9c" id="r_gad5e3850eb5a4edcf47c6349d65badc9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gad5e3850eb5a4edcf47c6349d65badc9c">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceSdstorKernel.html#structSceSdstorSdintr">SceSdstorSdintr</a>)</td></tr>
 <tr class="separator:gad5e3850eb5a4edcf47c6349d65badc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaba74bc87ce487e19670ba4097d495657" id="r_gaba74bc87ce487e19670ba4097d495657"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaba74bc87ce487e19670ba4097d495657">SceSdstorSddev::fastmutex</a></td></tr>
+<tr class="separator:gaba74bc87ce487e19670ba4097d495657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09622daa56d2b4cfba4901a29a6cf4f8" id="r_ga09622daa56d2b4cfba4901a29a6cf4f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga09622daa56d2b4cfba4901a29a6cf4f8">SceSdstorSddev::kind</a></td></tr>
+<tr class="separator:ga09622daa56d2b4cfba4901a29a6cf4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a80e67a83a957d0395e5101896339bc" id="r_ga7a80e67a83a957d0395e5101896339bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#ga88e2d6c37cc4e255a6b8ed8c09bdc84d">SceSdstorSdpartPort</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga7a80e67a83a957d0395e5101896339bc">SceSdstorSddev::port</a></td></tr>
+<tr class="separator:ga7a80e67a83a957d0395e5101896339bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf32ed9a8354ac0d5026767b144a0eda0" id="r_gaf32ed9a8354ac0d5026767b144a0eda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaf32ed9a8354ac0d5026767b144a0eda0">SceSdstorSddev::stat</a></td></tr>
+<tr class="separator:gaf32ed9a8354ac0d5026767b144a0eda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa817da08c8ced1d914e26db3cba2e690" id="r_gaa817da08c8ced1d914e26db3cba2e690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaa817da08c8ced1d914e26db3cba2e690">SceSdstorSddev::prev_stat</a></td></tr>
+<tr class="separator:gaa817da08c8ced1d914e26db3cba2e690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga628c192ae20143dc552a934b7086f23b" id="r_ga628c192ae20143dc552a934b7086f23b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga628c192ae20143dc552a934b7086f23b">SceSdstorSddev::unk_44</a></td></tr>
+<tr class="separator:ga628c192ae20143dc552a934b7086f23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadaf7bc81daaa9abbbeff98f0e63a4123" id="r_gadaf7bc81daaa9abbbeff98f0e63a4123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gadaf7bc81daaa9abbbeff98f0e63a4123">SceSdstorSddev::unk_48</a></td></tr>
+<tr class="separator:gadaf7bc81daaa9abbbeff98f0e63a4123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf393c2a8438fb592ad504619ca1cb092" id="r_gaf393c2a8438fb592ad504619ca1cb092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaf393c2a8438fb592ad504619ca1cb092">SceSdstorSddev::unk_4C</a></td></tr>
+<tr class="separator:gaf393c2a8438fb592ad504619ca1cb092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb5acd3b9caaf0f323b1564d8131c086" id="r_gadb5acd3b9caaf0f323b1564d8131c086"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gadb5acd3b9caaf0f323b1564d8131c086">SceSdstorSddev::sdif_ctx</a></td></tr>
+<tr class="separator:gadb5acd3b9caaf0f323b1564d8131c086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf984f52a5e5b947b5b8dd6dfbd707f0a" id="r_gaf984f52a5e5b947b5b8dd6dfbd707f0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaf984f52a5e5b947b5b8dd6dfbd707f0a">SceSdstorPartitionEntry::start_lba</a></td></tr>
+<tr class="separator:gaf984f52a5e5b947b5b8dd6dfbd707f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9946e09ad6c499a80f3706d3a9f2da17" id="r_ga9946e09ad6c499a80f3706d3a9f2da17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga9946e09ad6c499a80f3706d3a9f2da17">SceSdstorPartitionEntry::n_sectors</a></td></tr>
+<tr class="separator:ga9946e09ad6c499a80f3706d3a9f2da17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86fcbe96bde63d09a1254835db25fdb9" id="r_ga86fcbe96bde63d09a1254835db25fdb9"><td class="memItemLeft" align="right" valign="top">struct _SceSdstorSdpart *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga86fcbe96bde63d09a1254835db25fdb9">SceSdstorPartitionEntry::sdpart</a></td></tr>
+<tr class="separator:ga86fcbe96bde63d09a1254835db25fdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b09e5e09b9bbddffc4e2d21f73948ab" id="r_ga1b09e5e09b9bbddffc4e2d21f73948ab"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga1b09e5e09b9bbddffc4e2d21f73948ab">SceSdstorPartitionEntry::partition_entry</a></td></tr>
+<tr class="separator:ga1b09e5e09b9bbddffc4e2d21f73948ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea36cee0362861e8f9be14af7c38f675" id="r_gaea36cee0362861e8f9be14af7c38f675"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaea36cee0362861e8f9be14af7c38f675">SceSdstorPartitionEntry::numeric_name</a> [4]</td></tr>
+<tr class="separator:gaea36cee0362861e8f9be14af7c38f675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafed0dbc6d75616934b9d74de67dfe55b" id="r_gafed0dbc6d75616934b9d74de67dfe55b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gafed0dbc6d75616934b9d74de67dfe55b">SceSdstorPartitionEntry::type</a></td></tr>
+<tr class="separator:gafed0dbc6d75616934b9d74de67dfe55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a88105dd2f04910128fa8c2d3f81e78" id="r_ga7a88105dd2f04910128fa8c2d3f81e78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga7a88105dd2f04910128fa8c2d3f81e78">SceSdstorPartitionEntry::flag</a></td></tr>
+<tr class="separator:ga7a88105dd2f04910128fa8c2d3f81e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffb66278f805b1839af40dbc0d94bd77" id="r_gaffb66278f805b1839af40dbc0d94bd77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaffb66278f805b1839af40dbc0d94bd77">SceSdstorPartitionEntry::acl</a></td></tr>
+<tr class="separator:gaffb66278f805b1839af40dbc0d94bd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3564509e000381efde91c15c5b124010" id="r_ga3564509e000381efde91c15c5b124010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga3564509e000381efde91c15c5b124010">SceSdstorPartitionEntry::unused</a></td></tr>
+<tr class="separator:ga3564509e000381efde91c15c5b124010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9786ef95896d007084fb85ff9640618d" id="r_ga9786ef95896d007084fb85ff9640618d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga9786ef95896d007084fb85ff9640618d">SceSdstorPartitionEntry::unk</a></td></tr>
+<tr class="separator:ga9786ef95896d007084fb85ff9640618d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2ccaa306f49dffae3c57a2584fb3e86" id="r_gac2ccaa306f49dffae3c57a2584fb3e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gac2ccaa306f49dffae3c57a2584fb3e86">SceSdstorSdpart::fastmutex</a></td></tr>
+<tr class="separator:gac2ccaa306f49dffae3c57a2584fb3e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24cfb180eec29d50924cb20670b555ac" id="r_ga24cfb180eec29d50924cb20670b555ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga24cfb180eec29d50924cb20670b555ac">SceSdstorSdpart::unk_40</a></td></tr>
+<tr class="separator:ga24cfb180eec29d50924cb20670b555ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga096f89f8a5931938ba56358b8b77e639" id="r_ga096f89f8a5931938ba56358b8b77e639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga096f89f8a5931938ba56358b8b77e639">SceSdstorSdpart::sddev</a></td></tr>
+<tr class="separator:ga096f89f8a5931938ba56358b8b77e639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6c14aae729b50f373b64ff9b284a27c" id="r_gad6c14aae729b50f373b64ff9b284a27c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gad6c14aae729b50f373b64ff9b284a27c">SceSdstorSdpart::unk_48</a></td></tr>
+<tr class="separator:gad6c14aae729b50f373b64ff9b284a27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac37d7e2fb6cff15b897b7c645e671a28" id="r_gac37d7e2fb6cff15b897b7c645e671a28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gac37d7e2fb6cff15b897b7c645e671a28">SceSdstorSdpart::unk_4C</a></td></tr>
+<tr class="separator:gac37d7e2fb6cff15b897b7c645e671a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad67083683d360234ecdb257deb1aeb65" id="r_gad67083683d360234ecdb257deb1aeb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gad67083683d360234ecdb257deb1aeb65">SceSdstorSdpart::unk_50</a></td></tr>
+<tr class="separator:gad67083683d360234ecdb257deb1aeb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f59b15bcd8a624b792a05d7b1afc49f" id="r_ga8f59b15bcd8a624b792a05d7b1afc49f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga8f59b15bcd8a624b792a05d7b1afc49f">SceSdstorSdpart::mbr_ptr</a></td></tr>
+<tr class="separator:ga8f59b15bcd8a624b792a05d7b1afc49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga461176b19005d9d51d12946b246fb643" id="r_ga461176b19005d9d51d12946b246fb643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga461176b19005d9d51d12946b246fb643">SceSdstorSdpart::pentry</a> [17]</td></tr>
+<tr class="separator:ga461176b19005d9d51d12946b246fb643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab0e20e13249a1302820ec7323cc0d9a" id="r_gaab0e20e13249a1302820ec7323cc0d9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaab0e20e13249a1302820ec7323cc0d9a">SceSdstorSdpart::stat</a></td></tr>
+<tr class="separator:gaab0e20e13249a1302820ec7323cc0d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4956d9cd5f6446cf5285a915ed10ce4d" id="r_ga4956d9cd5f6446cf5285a915ed10ce4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga4956d9cd5f6446cf5285a915ed10ce4d">SceSdstorSdpart::prev_stat</a></td></tr>
+<tr class="separator:ga4956d9cd5f6446cf5285a915ed10ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68d9393a8ab6e74634a65c24f6fb61b7" id="r_ga68d9393a8ab6e74634a65c24f6fb61b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga68d9393a8ab6e74634a65c24f6fb61b7">SceSdstorSdpart::unk_236</a></td></tr>
+<tr class="separator:ga68d9393a8ab6e74634a65c24f6fb61b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8d815a4e45328f0a4955d841ea58439" id="r_gab8d815a4e45328f0a4955d841ea58439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gab8d815a4e45328f0a4955d841ea58439">SceSdstorSdpart::unk_237</a></td></tr>
+<tr class="separator:gab8d815a4e45328f0a4955d841ea58439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8495d03ea9a1f046293683bafb695c4e" id="r_ga8495d03ea9a1f046293683bafb695c4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga8495d03ea9a1f046293683bafb695c4e">SceSdstorOpHandle::pentry</a></td></tr>
+<tr class="separator:ga8495d03ea9a1f046293683bafb695c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9bf5d1af95a1db72e835e8aafa68d36" id="r_gad9bf5d1af95a1db72e835e8aafa68d36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gad9bf5d1af95a1db72e835e8aafa68d36">SceSdstorOpHandle::sddev</a></td></tr>
+<tr class="separator:gad9bf5d1af95a1db72e835e8aafa68d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35ad8d367c0c8617def46101d7dade30" id="r_ga35ad8d367c0c8617def46101d7dade30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga35ad8d367c0c8617def46101d7dade30">SceSdstorOpHandle::unk_0x08</a></td></tr>
+<tr class="separator:ga35ad8d367c0c8617def46101d7dade30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada7c349a528d648a0e06fb191c299ff7" id="r_gada7c349a528d648a0e06fb191c299ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gada7c349a528d648a0e06fb191c299ff7">SceSdstorFd::fastmutex</a></td></tr>
+<tr class="separator:gada7c349a528d648a0e06fb191c299ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e8204373720a214e7cb74166a0bfea2" id="r_ga9e8204373720a214e7cb74166a0bfea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga9e8204373720a214e7cb74166a0bfea2">SceSdstorFd::unk_40</a></td></tr>
+<tr class="separator:ga9e8204373720a214e7cb74166a0bfea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga852c6bf96b1402f9699dcce63952b906" id="r_ga852c6bf96b1402f9699dcce63952b906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga852c6bf96b1402f9699dcce63952b906">SceSdstorFd::start_lba</a></td></tr>
+<tr class="separator:ga852c6bf96b1402f9699dcce63952b906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bf42c3bc861fa2974db554f5696eb0f" id="r_ga4bf42c3bc861fa2974db554f5696eb0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga4bf42c3bc861fa2974db554f5696eb0f">SceSdstorFd::n_sectors</a></td></tr>
+<tr class="separator:ga4bf42c3bc861fa2974db554f5696eb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadb15165ed47ac4944c6d59475e3f0ae" id="r_gaadb15165ed47ac4944c6d59475e3f0ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaadb15165ed47ac4944c6d59475e3f0ae">SceSdstorFd::flags</a></td></tr>
+<tr class="separator:gaadb15165ed47ac4944c6d59475e3f0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0953a16a720da5d1c508e41d897c81e" id="r_gad0953a16a720da5d1c508e41d897c81e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gad0953a16a720da5d1c508e41d897c81e">SceSdstorFd::pentry</a></td></tr>
+<tr class="separator:gad0953a16a720da5d1c508e41d897c81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3a532de0ac7b8639b2fd54703165757" id="r_gac3a532de0ac7b8639b2fd54703165757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gac3a532de0ac7b8639b2fd54703165757">SceSdstorFd::sddev</a></td></tr>
+<tr class="separator:gac3a532de0ac7b8639b2fd54703165757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b03f0ed2048ce2f227d058c5e300d71" id="r_ga6b03f0ed2048ce2f227d058c5e300d71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga6b03f0ed2048ce2f227d058c5e300d71">SceSdstorSdintr::unk_0x00</a></td></tr>
+<tr class="separator:ga6b03f0ed2048ce2f227d058c5e300d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b6b255b095cd911111ce356bd94ae0d" id="r_ga1b6b255b095cd911111ce356bd94ae0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga1b6b255b095cd911111ce356bd94ae0d">SceSdstorSdintr::request_id</a></td></tr>
+<tr class="separator:ga1b6b255b095cd911111ce356bd94ae0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed3d156b4807ac7f129c1ad99f3c6cdf" id="r_gaed3d156b4807ac7f129c1ad99f3c6cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaed3d156b4807ac7f129c1ad99f3c6cdf">SceSdstorSdintr::op_sync_id</a></td></tr>
+<tr class="separator:gaed3d156b4807ac7f129c1ad99f3c6cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9e0d63a65b6c6bd9f539d8363c7791b" id="r_gaa9e0d63a65b6c6bd9f539d8363c7791b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#gaa9e0d63a65b6c6bd9f539d8363c7791b">SceSdstorSdintr::unk_0x0C</a></td></tr>
+<tr class="separator:gaa9e0d63a65b6c6bd9f539d8363c7791b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e2325b3ecc208bf717c9425a2939345" id="r_ga3e2325b3ecc208bf717c9425a2939345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga3e2325b3ecc208bf717c9425a2939345">SceSdstorSdintr::unk_0x10</a></td></tr>
+<tr class="separator:ga3e2325b3ecc208bf717c9425a2939345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19b54ce6c501df6a8adff83216655091" id="r_ga19b54ce6c501df6a8adff83216655091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga19b54ce6c501df6a8adff83216655091">SceSdstorSdintr::mediaid</a> [4]</td></tr>
+<tr class="separator:ga19b54ce6c501df6a8adff83216655091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga356ca36e2f1d1f9365e1ed8765d977bc" id="r_ga356ca36e2f1d1f9365e1ed8765d977bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSdstorKernel.html#ga88e2d6c37cc4e255a6b8ed8c09bdc84d">SceSdstorSdpartPort</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga356ca36e2f1d1f9365e1ed8765d977bc">SceSdstorSdintr::port</a></td></tr>
+<tr class="separator:ga356ca36e2f1d1f9365e1ed8765d977bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94f23095d67758a1cd0f0eaa289de09b" id="r_ga94f23095d67758a1cd0f0eaa289de09b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga94f23095d67758a1cd0f0eaa289de09b">SceSdstorSdintr::stat</a></td></tr>
+<tr class="separator:ga94f23095d67758a1cd0f0eaa289de09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5231c7e0bc168b59e10a273fc18484d8" id="r_ga5231c7e0bc168b59e10a273fc18484d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga5231c7e0bc168b59e10a273fc18484d8">SceSdstorSdintr::unk_0x26</a></td></tr>
+<tr class="separator:ga5231c7e0bc168b59e10a273fc18484d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f9d55fc03d9ccd7780981ece917624a" id="r_ga2f9d55fc03d9ccd7780981ece917624a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSdstorKernel.html#ga2f9d55fc03d9ccd7780981ece917624a">SceSdstorSdintr::unk_0x27</a></td></tr>
+<tr class="separator:ga2f9d55fc03d9ccd7780981ece917624a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sdstor_8h.html">psp2kern/internal/sdstor.h</a>&gt;</span> </div>
+<div class="ttc" id="asdstor_8h_html"><div class="ttname"><a href="sdstor_8h.html">sdstor.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceSdstorSddev" id="structSceSdstorSddev"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceSdstorSddev">&#9670;&#160;</a></span>SceSdstorSddev</h2>
 
@@ -826,6 +978,721 @@ unk_0x27</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gaba74bc87ce487e19670ba4097d495657" name="gaba74bc87ce487e19670ba4097d495657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba74bc87ce487e19670ba4097d495657">&#9670;&#160;</a></span>fastmutex <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> SceSdstorSddev::fastmutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga09622daa56d2b4cfba4901a29a6cf4f8" name="ga09622daa56d2b4cfba4901a29a6cf4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09622daa56d2b4cfba4901a29a6cf4f8">&#9670;&#160;</a></span>kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSddev::kind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7a80e67a83a957d0395e5101896339bc" name="ga7a80e67a83a957d0395e5101896339bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a80e67a83a957d0395e5101896339bc">&#9670;&#160;</a></span>port <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#ga88e2d6c37cc4e255a6b8ed8c09bdc84d">SceSdstorSdpartPort</a> SceSdstorSddev::port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf32ed9a8354ac0d5026767b144a0eda0" name="gaf32ed9a8354ac0d5026767b144a0eda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf32ed9a8354ac0d5026767b144a0eda0">&#9670;&#160;</a></span>stat <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSddev::stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa817da08c8ced1d914e26db3cba2e690" name="gaa817da08c8ced1d914e26db3cba2e690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa817da08c8ced1d914e26db3cba2e690">&#9670;&#160;</a></span>prev_stat <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSddev::prev_stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga628c192ae20143dc552a934b7086f23b" name="ga628c192ae20143dc552a934b7086f23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga628c192ae20143dc552a934b7086f23b">&#9670;&#160;</a></span>unk_44</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSddev::unk_44</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadaf7bc81daaa9abbbeff98f0e63a4123" name="gadaf7bc81daaa9abbbeff98f0e63a4123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadaf7bc81daaa9abbbeff98f0e63a4123">&#9670;&#160;</a></span>unk_48 <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSddev::unk_48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf393c2a8438fb592ad504619ca1cb092" name="gaf393c2a8438fb592ad504619ca1cb092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf393c2a8438fb592ad504619ca1cb092">&#9670;&#160;</a></span>unk_4C <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSddev::unk_4C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadb5acd3b9caaf0f323b1564d8131c086" name="gadb5acd3b9caaf0f323b1564d8131c086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb5acd3b9caaf0f323b1564d8131c086">&#9670;&#160;</a></span>sdif_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSdstorSddev::sdif_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf984f52a5e5b947b5b8dd6dfbd707f0a" name="gaf984f52a5e5b947b5b8dd6dfbd707f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf984f52a5e5b947b5b8dd6dfbd707f0a">&#9670;&#160;</a></span>start_lba <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorPartitionEntry::start_lba</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9946e09ad6c499a80f3706d3a9f2da17" name="ga9946e09ad6c499a80f3706d3a9f2da17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9946e09ad6c499a80f3706d3a9f2da17">&#9670;&#160;</a></span>n_sectors <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorPartitionEntry::n_sectors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga86fcbe96bde63d09a1254835db25fdb9" name="ga86fcbe96bde63d09a1254835db25fdb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86fcbe96bde63d09a1254835db25fdb9">&#9670;&#160;</a></span>sdpart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct _SceSdstorSdpart* SceSdstorPartitionEntry::sdpart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1b09e5e09b9bbddffc4e2d21f73948ab" name="ga1b09e5e09b9bbddffc4e2d21f73948ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b09e5e09b9bbddffc4e2d21f73948ab">&#9670;&#160;</a></span>partition_entry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSdstorPartitionEntry::partition_entry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaea36cee0362861e8f9be14af7c38f675" name="gaea36cee0362861e8f9be14af7c38f675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea36cee0362861e8f9be14af7c38f675">&#9670;&#160;</a></span>numeric_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceSdstorPartitionEntry::numeric_name[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafed0dbc6d75616934b9d74de67dfe55b" name="gafed0dbc6d75616934b9d74de67dfe55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafed0dbc6d75616934b9d74de67dfe55b">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorPartitionEntry::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7a88105dd2f04910128fa8c2d3f81e78" name="ga7a88105dd2f04910128fa8c2d3f81e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a88105dd2f04910128fa8c2d3f81e78">&#9670;&#160;</a></span>flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorPartitionEntry::flag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaffb66278f805b1839af40dbc0d94bd77" name="gaffb66278f805b1839af40dbc0d94bd77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffb66278f805b1839af40dbc0d94bd77">&#9670;&#160;</a></span>acl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> SceSdstorPartitionEntry::acl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3564509e000381efde91c15c5b124010" name="ga3564509e000381efde91c15c5b124010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3564509e000381efde91c15c5b124010">&#9670;&#160;</a></span>unused</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> SceSdstorPartitionEntry::unused</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9786ef95896d007084fb85ff9640618d" name="ga9786ef95896d007084fb85ff9640618d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9786ef95896d007084fb85ff9640618d">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> SceSdstorPartitionEntry::unk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac2ccaa306f49dffae3c57a2584fb3e86" name="gac2ccaa306f49dffae3c57a2584fb3e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2ccaa306f49dffae3c57a2584fb3e86">&#9670;&#160;</a></span>fastmutex <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> SceSdstorSdpart::fastmutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga24cfb180eec29d50924cb20670b555ac" name="ga24cfb180eec29d50924cb20670b555ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24cfb180eec29d50924cb20670b555ac">&#9670;&#160;</a></span>unk_40 <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSdpart::unk_40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga096f89f8a5931938ba56358b8b77e639" name="ga096f89f8a5931938ba56358b8b77e639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga096f89f8a5931938ba56358b8b77e639">&#9670;&#160;</a></span>sddev <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a>* SceSdstorSdpart::sddev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad6c14aae729b50f373b64ff9b284a27c" name="gad6c14aae729b50f373b64ff9b284a27c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6c14aae729b50f373b64ff9b284a27c">&#9670;&#160;</a></span>unk_48 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSdpart::unk_48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac37d7e2fb6cff15b897b7c645e671a28" name="gac37d7e2fb6cff15b897b7c645e671a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac37d7e2fb6cff15b897b7c645e671a28">&#9670;&#160;</a></span>unk_4C <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSdpart::unk_4C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad67083683d360234ecdb257deb1aeb65" name="gad67083683d360234ecdb257deb1aeb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad67083683d360234ecdb257deb1aeb65">&#9670;&#160;</a></span>unk_50</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSdpart::unk_50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8f59b15bcd8a624b792a05d7b1afc49f" name="ga8f59b15bcd8a624b792a05d7b1afc49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f59b15bcd8a624b792a05d7b1afc49f">&#9670;&#160;</a></span>mbr_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSdstorSdpart::mbr_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga461176b19005d9d51d12946b246fb643" name="ga461176b19005d9d51d12946b246fb643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga461176b19005d9d51d12946b246fb643">&#9670;&#160;</a></span>pentry <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a> SceSdstorSdpart::pentry[17]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab0e20e13249a1302820ec7323cc0d9a" name="gaab0e20e13249a1302820ec7323cc0d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab0e20e13249a1302820ec7323cc0d9a">&#9670;&#160;</a></span>stat <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdpart::stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4956d9cd5f6446cf5285a915ed10ce4d" name="ga4956d9cd5f6446cf5285a915ed10ce4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4956d9cd5f6446cf5285a915ed10ce4d">&#9670;&#160;</a></span>prev_stat <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdpart::prev_stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga68d9393a8ab6e74634a65c24f6fb61b7" name="ga68d9393a8ab6e74634a65c24f6fb61b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68d9393a8ab6e74634a65c24f6fb61b7">&#9670;&#160;</a></span>unk_236</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdpart::unk_236</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab8d815a4e45328f0a4955d841ea58439" name="gab8d815a4e45328f0a4955d841ea58439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8d815a4e45328f0a4955d841ea58439">&#9670;&#160;</a></span>unk_237</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdpart::unk_237</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8495d03ea9a1f046293683bafb695c4e" name="ga8495d03ea9a1f046293683bafb695c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8495d03ea9a1f046293683bafb695c4e">&#9670;&#160;</a></span>pentry <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a>* SceSdstorOpHandle::pentry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad9bf5d1af95a1db72e835e8aafa68d36" name="gad9bf5d1af95a1db72e835e8aafa68d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9bf5d1af95a1db72e835e8aafa68d36">&#9670;&#160;</a></span>sddev <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a>* SceSdstorOpHandle::sddev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga35ad8d367c0c8617def46101d7dade30" name="ga35ad8d367c0c8617def46101d7dade30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35ad8d367c0c8617def46101d7dade30">&#9670;&#160;</a></span>unk_0x08</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSdstorOpHandle::unk_0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gada7c349a528d648a0e06fb191c299ff7" name="gada7c349a528d648a0e06fb191c299ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada7c349a528d648a0e06fb191c299ff7">&#9670;&#160;</a></span>fastmutex <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceThreadMgrKernel.html#structSceKernelFastMutex">SceKernelFastMutex</a> SceSdstorFd::fastmutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9e8204373720a214e7cb74166a0bfea2" name="ga9e8204373720a214e7cb74166a0bfea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e8204373720a214e7cb74166a0bfea2">&#9670;&#160;</a></span>unk_40 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorFd::unk_40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga852c6bf96b1402f9699dcce63952b906" name="ga852c6bf96b1402f9699dcce63952b906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga852c6bf96b1402f9699dcce63952b906">&#9670;&#160;</a></span>start_lba <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorFd::start_lba</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4bf42c3bc861fa2974db554f5696eb0f" name="ga4bf42c3bc861fa2974db554f5696eb0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bf42c3bc861fa2974db554f5696eb0f">&#9670;&#160;</a></span>n_sectors <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorFd::n_sectors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaadb15165ed47ac4944c6d59475e3f0ae" name="gaadb15165ed47ac4944c6d59475e3f0ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadb15165ed47ac4944c6d59475e3f0ae">&#9670;&#160;</a></span>flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSdstorFd::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad0953a16a720da5d1c508e41d897c81e" name="gad0953a16a720da5d1c508e41d897c81e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0953a16a720da5d1c508e41d897c81e">&#9670;&#160;</a></span>pentry <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorPartitionEntry">SceSdstorPartitionEntry</a>* SceSdstorFd::pentry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac3a532de0ac7b8639b2fd54703165757" name="gac3a532de0ac7b8639b2fd54703165757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3a532de0ac7b8639b2fd54703165757">&#9670;&#160;</a></span>sddev <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#structSceSdstorSddev">SceSdstorSddev</a>* SceSdstorFd::sddev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6b03f0ed2048ce2f227d058c5e300d71" name="ga6b03f0ed2048ce2f227d058c5e300d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b03f0ed2048ce2f227d058c5e300d71">&#9670;&#160;</a></span>unk_0x00</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSdstorSdintr::unk_0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1b6b255b095cd911111ce356bd94ae0d" name="ga1b6b255b095cd911111ce356bd94ae0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b6b255b095cd911111ce356bd94ae0d">&#9670;&#160;</a></span>request_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceSdstorSdintr::request_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaed3d156b4807ac7f129c1ad99f3c6cdf" name="gaed3d156b4807ac7f129c1ad99f3c6cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed3d156b4807ac7f129c1ad99f3c6cdf">&#9670;&#160;</a></span>op_sync_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceSdstorSdintr::op_sync_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9e0d63a65b6c6bd9f539d8363c7791b" name="gaa9e0d63a65b6c6bd9f539d8363c7791b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e0d63a65b6c6bd9f539d8363c7791b">&#9670;&#160;</a></span>unk_0x0C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSdstorSdintr::unk_0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3e2325b3ecc208bf717c9425a2939345" name="ga3e2325b3ecc208bf717c9425a2939345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e2325b3ecc208bf717c9425a2939345">&#9670;&#160;</a></span>unk_0x10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSdstorSdintr::unk_0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga19b54ce6c501df6a8adff83216655091" name="ga19b54ce6c501df6a8adff83216655091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19b54ce6c501df6a8adff83216655091">&#9670;&#160;</a></span>mediaid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSdstorSdintr::mediaid[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga356ca36e2f1d1f9365e1ed8765d977bc" name="ga356ca36e2f1d1f9365e1ed8765d977bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga356ca36e2f1d1f9365e1ed8765d977bc">&#9670;&#160;</a></span>port <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceSdstorKernel.html#ga88e2d6c37cc4e255a6b8ed8c09bdc84d">SceSdstorSdpartPort</a> SceSdstorSdintr::port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga94f23095d67758a1cd0f0eaa289de09b" name="ga94f23095d67758a1cd0f0eaa289de09b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94f23095d67758a1cd0f0eaa289de09b">&#9670;&#160;</a></span>stat <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdintr::stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5231c7e0bc168b59e10a273fc18484d8" name="ga5231c7e0bc168b59e10a273fc18484d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5231c7e0bc168b59e10a273fc18484d8">&#9670;&#160;</a></span>unk_0x26</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdintr::unk_0x26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2f9d55fc03d9ccd7780981ece917624a" name="ga2f9d55fc03d9ccd7780981ece917624a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f9d55fc03d9ccd7780981ece917624a">&#9670;&#160;</a></span>unk_0x27</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceSdstorSdintr::unk_0x27</td>
         </tr>
       </table>
 </div><div class="memdoc">

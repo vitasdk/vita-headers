@@ -73,10 +73,34 @@ $(document).ready(function(){initNavTree('group__SceMusicExportUser.html',''); i
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__SystemParams.html">System Parameters</a> &raquo; <a class="el" href="group__SceMusicExport.html">Music Exporting Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structMusicExportParam" id="r_structMusicExportParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMusicExportUser.html#structMusicExportParam">MusicExportParam</a></td></tr>
+<tr class="separator:structMusicExportParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac38a39c85dff10ec5b49e51b44dd1efe" id="r_gac38a39c85dff10ec5b49e51b44dd1efe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMusicExportUser.html#gac38a39c85dff10ec5b49e51b44dd1efe">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceMusicExportUser.html#structMusicExportParam">MusicExportParam</a>)</td></tr>
+<tr class="separator:gac38a39c85dff10ec5b49e51b44dd1efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8d73ea7b3e3b65188b7b6ca21f9e557" id="r_gab8d73ea7b3e3b65188b7b6ca21f9e557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMusicExportUser.html#gab8d73ea7b3e3b65188b7b6ca21f9e557">sceMusicExportFromFile</a> (const char *path, const <a class="el" href="group__SceMusicExportUser.html#structMusicExportParam">MusicExportParam</a> *param, void *workingMemory, void *cancelCb, void(*progress)(void *, int), void *user, char *outPath, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> outPathSize)</td></tr>
+<tr class="separator:gab8d73ea7b3e3b65188b7b6ca21f9e557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gac9e45a4292189aca6ae0d255ce97b131" id="r_gac9e45a4292189aca6ae0d255ce97b131"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMusicExportUser.html#gac9e45a4292189aca6ae0d255ce97b131">MusicExportParam::reserved</a> [128]</td></tr>
+<tr class="memdesc:gac9e45a4292189aca6ae0d255ce97b131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:gac9e45a4292189aca6ae0d255ce97b131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
 <hr  />
@@ -89,15 +113,7 @@ $(document).ready(function(){initNavTree('group__SceMusicExportUser.html',''); i
 </p><div class="fragment"><div class="line">SceMusicExport_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gac38a39c85dff10ec5b49e51b44dd1efe" id="r_gac38a39c85dff10ec5b49e51b44dd1efe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMusicExportUser.html#gac38a39c85dff10ec5b49e51b44dd1efe">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceMusicExportUser.html#structMusicExportParam">MusicExportParam</a>)</td></tr>
-<tr class="separator:gac38a39c85dff10ec5b49e51b44dd1efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8d73ea7b3e3b65188b7b6ca21f9e557" id="r_gab8d73ea7b3e3b65188b7b6ca21f9e557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMusicExportUser.html#gab8d73ea7b3e3b65188b7b6ca21f9e557">sceMusicExportFromFile</a> (const char *path, const <a class="el" href="group__SceMusicExportUser.html#structMusicExportParam">MusicExportParam</a> *param, void *workingMemory, void *cancelCb, void(*progress)(void *, int), void *user, char *outPath, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> outPathSize)</td></tr>
-<tr class="separator:gab8d73ea7b3e3b65188b7b6ca21f9e557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structMusicExportParam" id="structMusicExportParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structMusicExportParam">&#9670;&#160;</a></span>MusicExportParam</h2>
 
@@ -211,6 +227,23 @@ Reserved data. </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gac9e45a4292189aca6ae0d255ce97b131" name="gac9e45a4292189aca6ae0d255ce97b131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9e45a4292189aca6ae0d255ce97b131">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char MusicExportParam::reserved[128]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
 
 </div>
 </div>

@@ -73,24 +73,72 @@ $(document).ready(function(){initNavTree('group__SceNetAdhocMatchingUser.html','
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Net.html">Network</a> &raquo; <a class="el" href="group__SceNetAdhocMatching.html">net adhoc matching</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="adhoc__matching_8h.html">psp2/net/adhoc_matching.h</a>&gt;</span> </div>
-<div class="ttc" id="aadhoc__matching_8h_html"><div class="ttname"><a href="adhoc__matching_8h.html">adhoc_matching.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceNetAdhocMatching_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceNetAdhocMatchingMember" id="r_structSceNetAdhocMatchingMember"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#structSceNetAdhocMatchingMember">SceNetAdhocMatchingMember</a></td></tr>
+<tr class="separator:structSceNetAdhocMatchingMember"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gafa7a7a541c51385b5e094604f20cbf7b" id="r_gafa7a7a541c51385b5e094604f20cbf7b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#gafa7a7a541c51385b5e094604f20cbf7b">SceNetAdhocMatchingCallback</a>) (int id, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> opt_len, void *opt)</td></tr>
+<tr class="separator:gafa7a7a541c51385b5e094604f20cbf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gac211d3850f8b0f10535adcdf93421299" id="r_gac211d3850f8b0f10535adcdf93421299"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#gac211d3850f8b0f10535adcdf93421299">SceNetAdhocMatchingErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299ae1aa2dd9fd6181ed10b1300155594842">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_MODE</a> = 0x80413101
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299ad40b16824e52864cb9b9d7d67620d7a8">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_PORT</a> = 0x80413102
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a6ecce99ea9e1b115700b24655cc26b23">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_MAXNUM</a> = 0x80413103
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299acf1b951969324434492afad136ecc924">SCE_NET_ADHOC_MATCHING_ERROR_RXBUF_TOO_SHORT</a> = 0x80413104
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a13082709db127163507cae87325e45d9">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_OPTLEN</a> = 0x80413105
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299ad6fc45e4326aac494e000002c4f64338">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_ARG</a> = 0x80413106
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299ad8e91fd3c1827dbaac4f3392799a4855">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_ID</a> = 0x80413107
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299af36299e3a7554045728f067e4b584819">SCE_NET_ADHOC_MATCHING_ERROR_ID_NOT_AVAIL</a> = 0x80413108
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a3f2f171ea31cb33c8619f1455fc30106">SCE_NET_ADHOC_MATCHING_ERROR_NO_SPACE</a> = 0x80413109
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a3074280d035abed5cd9e38c5275d001b">SCE_NET_ADHOC_MATCHING_ERROR_IS_RUNNING</a> = 0x8041310a
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a9f3cbf6d98bd7fde78d918bb3c3fbae5">SCE_NET_ADHOC_MATCHING_ERROR_NOT_RUNNING</a> = 0x8041310b
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a3ab7de8120c7c62c2e83256916d8c8cb">SCE_NET_ADHOC_MATCHING_ERROR_UNKNOWN_TARGET</a> = 0x8041310c
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a33f66b1f1b9b29e49e1733571bb14658">SCE_NET_ADHOC_MATCHING_ERROR_TARGET_NOT_READY</a> = 0x8041310d
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299aff05d96cd55bec10b6861927b75a4657">SCE_NET_ADHOC_MATCHING_ERROR_EXCEED_MAXNUM</a> = 0x8041310e
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a56c073075e667891ab4a3d1b0c01f156">SCE_NET_ADHOC_MATCHING_ERROR_REQUEST_IN_PROGRESS</a> = 0x8041310f
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a00d142ee6e9a6a39a7584baeea127609">SCE_NET_ADHOC_MATCHING_ERROR_ALREADY_ESTABLISHED</a> = 0x80413110
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a6324eff149cc148e121f1f4ba3d8af64">SCE_NET_ADHOC_MATCHING_ERROR_BUSY</a> = 0x80413111
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a2cf329112fe16f8ca71765559a75b78c">SCE_NET_ADHOC_MATCHING_ERROR_ALREADY_INITIALIZED</a> = 0x80413112
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299aa6fb57071c2cfaad0c715027dd31478d">SCE_NET_ADHOC_MATCHING_ERROR_NOT_INITIALIZED</a> = 0x80413113
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299aa32dbd099aef06355f88dae28ab0647b">SCE_NET_ADHOC_MATCHING_ERROR_PORT_IN_USE</a> = 0x80413114
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299abeb654f2937605748baaedf3d3938554">SCE_NET_ADHOC_MATCHING_ERROR_STACKSIZE_TOO_SHORT</a> = 0x80413115
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a5e8b798051ade3b0079b77d753f72993">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_DATALEN</a> = 0x80413116
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a5625d019d2e86838e23e27b04536a2cf">SCE_NET_ADHOC_MATCHING_ERROR_NOT_ESTABLISHED</a> = 0x80413117
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299a9e475ce7efc5cbc6ff82f4759d41c364">SCE_NET_ADHOC_MATCHING_ERROR_DATA_BUSY</a> = 0x80413118
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetAdhocMatchingUser.html#ggac211d3850f8b0f10535adcdf93421299ad479e574807776e336985db267ae2e90">SCE_NET_ADHOC_MATCHING_ERROR_INVALID_ALIGNMENT</a> = 0x80413119
+<br />
+ }</td></tr>
+<tr class="separator:gac211d3850f8b0f10535adcdf93421299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f7fea5fa7574d5307db48f9dbb49b99" id="r_ga9f7fea5fa7574d5307db48f9dbb49b99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#ga9f7fea5fa7574d5307db48f9dbb49b99">SceNetAdhocMatchingMode</a> { <a class="el" href="group__SceNetAdhocMatchingUser.html#gga9f7fea5fa7574d5307db48f9dbb49b99a651ec58616c83ada5e94b97f238e142c">SCE_NET_ADHOC_MATCHING_MODE_PARENT</a> = 1
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#gga9f7fea5fa7574d5307db48f9dbb49b99a51526894d5ac1190cdca242243d6102d">SCE_NET_ADHOC_MATCHING_MODE_CHILD</a>
+, <a class="el" href="group__SceNetAdhocMatchingUser.html#gga9f7fea5fa7574d5307db48f9dbb49b99ae1c3bafdb1f5476c5f3c401ce8ae06f9">SCE_NET_ADHOC_MATCHING_MODE_P2P</a>
+ }</td></tr>
+<tr class="separator:ga9f7fea5fa7574d5307db48f9dbb49b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaf86ee474983b45f69d6199c19573e77b" id="r_gaf86ee474983b45f69d6199c19573e77b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#gaf86ee474983b45f69d6199c19573e77b">sceNetAdhocMatchingInit</a> (unsigned int pool_size, void *pool_ptr)</td></tr>
@@ -122,12 +170,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0bb8f3918f7f2fe94d77eb5284d8caec" id="r_ga0bb8f3918f7f2fe94d77eb5284d8caec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#ga0bb8f3918f7f2fe94d77eb5284d8caec">sceNetAdhocMatchingSendData</a> (int id, <a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *addr, int data_len, void *data)</td></tr>
 <tr class="separator:ga0bb8f3918f7f2fe94d77eb5284d8caec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafa7a7a541c51385b5e094604f20cbf7b" id="r_gafa7a7a541c51385b5e094604f20cbf7b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#gafa7a7a541c51385b5e094604f20cbf7b">SceNetAdhocMatchingCallback</a>) (int id, int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> opt_len, void *opt)</td></tr>
-<tr class="separator:gafa7a7a541c51385b5e094604f20cbf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gadda7852925319c41fe3ea8ca01e640de" id="r_gadda7852925319c41fe3ea8ca01e640de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetAdhocMatchingUser.html#gadda7852925319c41fe3ea8ca01e640de">SceNetAdhocMatchingMember::addr</a></td></tr>
+<tr class="separator:gadda7852925319c41fe3ea8ca01e640de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="adhoc__matching_8h.html">psp2/net/adhoc_matching.h</a>&gt;</span> </div>
+<div class="ttc" id="aadhoc__matching_8h_html"><div class="ttname"><a href="adhoc__matching_8h.html">adhoc_matching.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceNetAdhocMatching_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceNetAdhocMatchingMember" id="structSceNetAdhocMatchingMember"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceNetAdhocMatchingMember">&#9670;&#160;</a></span>SceNetAdhocMatchingMember</h2>
 
@@ -704,6 +764,21 @@ addr</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gadda7852925319c41fe3ea8ca01e640de" name="gadda7852925319c41fe3ea8ca01e640de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadda7852925319c41fe3ea8ca01e640de">&#9670;&#160;</a></span>addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> SceNetAdhocMatchingMember::addr</td>
         </tr>
       </table>
 </div><div class="memdoc">

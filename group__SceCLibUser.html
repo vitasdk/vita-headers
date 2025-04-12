@@ -73,24 +73,29 @@ $(document).ready(function(){initNavTree('group__SceCLibUser.html',''); initResi
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceCLib.html">C Standard Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="clib_8h.html">psp2/kernel/clib.h</a>&gt;</span> </div>
-<div class="ttc" id="aclib_8h_html"><div class="ttname"><a href="clib_8h.html">clib.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceLibKernel_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceClibMspaceStats" id="r_structSceClibMspaceStats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#structSceClibMspaceStats">SceClibMspaceStats</a></td></tr>
+<tr class="memdesc:structSceClibMspaceStats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for stats of SceClibMspace.  <a href="group__SceCLibUser.html#structSceClibMspaceStats">More...</a><br /></td></tr>
+<tr class="separator:structSceClibMspaceStats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gacc0bbbf773f4ea1f0dd0494a22d7d5a1" id="r_gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a></td></tr>
+<tr class="memdesc:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle for a managed memory space.  <br /></td></tr>
+<tr class="separator:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaa7c75e94ea5fbcd7881125a08222ad6f" id="r_gaa7c75e94ea5fbcd7881125a08222ad6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gaa7c75e94ea5fbcd7881125a08222ad6f">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a>)</td></tr>
@@ -169,13 +174,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ga16a8047787a952d4153624247bfd1c5e" id="r_ga16a8047787a952d4153624247bfd1c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga16a8047787a952d4153624247bfd1c5e">sceClibMspaceFree</a> (<a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a> mspace, void *ptr)</td></tr>
 <tr class="separator:ga16a8047787a952d4153624247bfd1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gacc0bbbf773f4ea1f0dd0494a22d7d5a1" id="r_gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gacc0bbbf773f4ea1f0dd0494a22d7d5a1">SceClibMspace</a></td></tr>
-<tr class="memdesc:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle for a managed memory space.  <br /></td></tr>
-<tr class="separator:gacc0bbbf773f4ea1f0dd0494a22d7d5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gac40ae0390293e68a56b9e5a268b0f5ac" id="r_gac40ae0390293e68a56b9e5a268b0f5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gac40ae0390293e68a56b9e5a268b0f5ac">SceClibMspaceStats::capacity</a></td></tr>
+<tr class="memdesc:gac40ae0390293e68a56b9e5a268b0f5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capacity of the Mspace.  <br /></td></tr>
+<tr class="separator:gac40ae0390293e68a56b9e5a268b0f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b76dff8b391cb7d41fc3acd6380011d" id="r_ga7b76dff8b391cb7d41fc3acd6380011d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga7b76dff8b391cb7d41fc3acd6380011d">SceClibMspaceStats::unk</a></td></tr>
+<tr class="memdesc:ga7b76dff8b391cb7d41fc3acd6380011d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unknown, value is equal to capacity.  <br /></td></tr>
+<tr class="separator:ga7b76dff8b391cb7d41fc3acd6380011d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd93b668dd9fcc37706abe8ee85f79b1" id="r_gadd93b668dd9fcc37706abe8ee85f79b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#gadd93b668dd9fcc37706abe8ee85f79b1">SceClibMspaceStats::peak_in_use</a></td></tr>
+<tr class="memdesc:gadd93b668dd9fcc37706abe8ee85f79b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peak memory allocated.  <br /></td></tr>
+<tr class="separator:gadd93b668dd9fcc37706abe8ee85f79b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga718dfadcf803cc004056e92337e5aeb4" id="r_ga718dfadcf803cc004056e92337e5aeb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCLibUser.html#ga718dfadcf803cc004056e92337e5aeb4">SceClibMspaceStats::current_in_use</a></td></tr>
+<tr class="memdesc:ga718dfadcf803cc004056e92337e5aeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current memory allocated.  <br /></td></tr>
+<tr class="separator:ga718dfadcf803cc004056e92337e5aeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="clib_8h.html">psp2/kernel/clib.h</a>&gt;</span> </div>
+<div class="ttc" id="aclib_8h_html"><div class="ttname"><a href="clib_8h.html">clib.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceLibKernel_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceClibMspaceStats" id="structSceClibMspaceStats"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceClibMspaceStats">&#9670;&#160;</a></span>SceClibMspaceStats</h2>
 
@@ -1322,6 +1348,71 @@ Current memory allocated. </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gac40ae0390293e68a56b9e5a268b0f5ac" name="gac40ae0390293e68a56b9e5a268b0f5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac40ae0390293e68a56b9e5a268b0f5ac">&#9670;&#160;</a></span>capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceClibMspaceStats::capacity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capacity of the Mspace. </p>
+
+</div>
+</div>
+<a id="ga7b76dff8b391cb7d41fc3acd6380011d" name="ga7b76dff8b391cb7d41fc3acd6380011d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b76dff8b391cb7d41fc3acd6380011d">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceClibMspaceStats::unk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unknown, value is equal to capacity. </p>
+
+</div>
+</div>
+<a id="gadd93b668dd9fcc37706abe8ee85f79b1" name="gadd93b668dd9fcc37706abe8ee85f79b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd93b668dd9fcc37706abe8ee85f79b1">&#9670;&#160;</a></span>peak_in_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceClibMspaceStats::peak_in_use</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peak memory allocated. </p>
+
+</div>
+</div>
+<a id="ga718dfadcf803cc004056e92337e5aeb4" name="ga718dfadcf803cc004056e92337e5aeb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga718dfadcf803cc004056e92337e5aeb4">&#9670;&#160;</a></span>current_in_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceClibMspaceStats::current_in_use</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current memory allocated. </p>
 
 </div>
 </div>

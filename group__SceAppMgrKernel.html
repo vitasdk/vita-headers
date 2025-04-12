@@ -73,10 +73,61 @@ $(document).ready(function(){initNavTree('group__SceAppMgrKernel.html',''); init
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__SystemStatus.html">System Status</a> &raquo; <a class="el" href="group__SceAppMgr.html">Application Manager Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceAppMgrLaunchParam" id="r_structSceAppMgrLaunchParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a></td></tr>
+<tr class="separator:structSceAppMgrLaunchParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga391e603061dc444eb22e848dc8a73692" id="r_ga391e603061dc444eb22e848dc8a73692"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga391e603061dc444eb22e848dc8a73692">ksceAppMgrKillProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga391e603061dc444eb22e848dc8a73692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill a process.  <br /></td></tr>
+<tr class="separator:ga391e603061dc444eb22e848dc8a73692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2e2f14a9e306f112700b9860d8a3c0e" id="r_gac2e2f14a9e306f112700b9860d8a3c0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gac2e2f14a9e306f112700b9860d8a3c0e">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a>)</td></tr>
+<tr class="separator:gac2e2f14a9e306f112700b9860d8a3c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a9997389809ff54ec080640230c78cd" id="r_ga6a9997389809ff54ec080640230c78cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga6a9997389809ff54ec080640230c78cd">ksceAppMgrLaunchAppByPath</a> (const char *path, const char *args, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, unsigned int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, const <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a> *param, void *unk)</td></tr>
+<tr class="memdesc:ga6a9997389809ff54ec080640230c78cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch an application for debugging.  <br /></td></tr>
+<tr class="separator:ga6a9997389809ff54ec080640230c78cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga929854cecfe1826aa7bea04e313f2789" id="r_ga929854cecfe1826aa7bea04e313f2789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga929854cecfe1826aa7bea04e313f2789">SceAppMgrLaunchParam::size</a></td></tr>
+<tr class="separator:ga929854cecfe1826aa7bea04e313f2789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f3502ede4e1685fa665a36f86754fcb" id="r_ga0f3502ede4e1685fa665a36f86754fcb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga0f3502ede4e1685fa665a36f86754fcb">SceAppMgrLaunchParam::unk_4</a></td></tr>
+<tr class="separator:ga0f3502ede4e1685fa665a36f86754fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad888cc966f84e20ad065ce3b7f4f71fa" id="r_gad888cc966f84e20ad065ce3b7f4f71fa"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gad888cc966f84e20ad065ce3b7f4f71fa">SceAppMgrLaunchParam::unk_8</a></td></tr>
+<tr class="separator:gad888cc966f84e20ad065ce3b7f4f71fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66fe2d4ca2dcd0ef4b904c5d57d06ec9" id="r_ga66fe2d4ca2dcd0ef4b904c5d57d06ec9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga66fe2d4ca2dcd0ef4b904c5d57d06ec9">SceAppMgrLaunchParam::unk_C</a></td></tr>
+<tr class="separator:ga66fe2d4ca2dcd0ef4b904c5d57d06ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac43f7d2b1f74522f4c286ef455b304cc" id="r_gac43f7d2b1f74522f4c286ef455b304cc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gac43f7d2b1f74522f4c286ef455b304cc">SceAppMgrLaunchParam::unk_10</a></td></tr>
+<tr class="separator:gac43f7d2b1f74522f4c286ef455b304cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8402142a9bf9c9cac6c2932d3b1d75e1" id="r_ga8402142a9bf9c9cac6c2932d3b1d75e1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga8402142a9bf9c9cac6c2932d3b1d75e1">SceAppMgrLaunchParam::unk_14</a></td></tr>
+<tr class="separator:ga8402142a9bf9c9cac6c2932d3b1d75e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a89503f13876048f09c3f43d8489498" id="r_ga5a89503f13876048f09c3f43d8489498"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga5a89503f13876048f09c3f43d8489498">SceAppMgrLaunchParam::unk_18</a></td></tr>
+<tr class="separator:ga5a89503f13876048f09c3f43d8489498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b650e6baed8df96c95393af9e3b8d6a" id="r_ga3b650e6baed8df96c95393af9e3b8d6a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga3b650e6baed8df96c95393af9e3b8d6a">SceAppMgrLaunchParam::unk_1C</a></td></tr>
+<tr class="separator:ga3b650e6baed8df96c95393af9e3b8d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga595675aaeeb1b3638f5213e4ff2fcc44" id="r_ga595675aaeeb1b3638f5213e4ff2fcc44"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga595675aaeeb1b3638f5213e4ff2fcc44">SceAppMgrLaunchParam::unk_20</a></td></tr>
+<tr class="separator:ga595675aaeeb1b3638f5213e4ff2fcc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeafe159c8967b721999d8d71accca810" id="r_gaeafe159c8967b721999d8d71accca810"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gaeafe159c8967b721999d8d71accca810">SceAppMgrLaunchParam::unk_24</a></td></tr>
+<tr class="separator:gaeafe159c8967b721999d8d71accca810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22af84490044ae9b371bd9a05edc7a76" id="r_ga22af84490044ae9b371bd9a05edc7a76"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga22af84490044ae9b371bd9a05edc7a76">SceAppMgrLaunchParam::unk_28</a></td></tr>
+<tr class="separator:ga22af84490044ae9b371bd9a05edc7a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51d4e2b781254a31ad5754ccb7e81539" id="r_ga51d4e2b781254a31ad5754ccb7e81539"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga51d4e2b781254a31ad5754ccb7e81539">SceAppMgrLaunchParam::unk_2C</a></td></tr>
+<tr class="separator:ga51d4e2b781254a31ad5754ccb7e81539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6ea52587cff6f2a457680093cda02ea" id="r_gae6ea52587cff6f2a457680093cda02ea"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gae6ea52587cff6f2a457680093cda02ea">SceAppMgrLaunchParam::unk_30</a></td></tr>
+<tr class="separator:gae6ea52587cff6f2a457680093cda02ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -89,19 +140,7 @@ $(document).ready(function(){initNavTree('group__SceAppMgrKernel.html',''); init
 </p><div class="fragment"><div class="line">SceAppMgrForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga391e603061dc444eb22e848dc8a73692" id="r_ga391e603061dc444eb22e848dc8a73692"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga391e603061dc444eb22e848dc8a73692">ksceAppMgrKillProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
-<tr class="memdesc:ga391e603061dc444eb22e848dc8a73692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill a process.  <br /></td></tr>
-<tr class="separator:ga391e603061dc444eb22e848dc8a73692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2e2f14a9e306f112700b9860d8a3c0e" id="r_gac2e2f14a9e306f112700b9860d8a3c0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gac2e2f14a9e306f112700b9860d8a3c0e">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a>)</td></tr>
-<tr class="separator:gac2e2f14a9e306f112700b9860d8a3c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a9997389809ff54ec080640230c78cd" id="r_ga6a9997389809ff54ec080640230c78cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga6a9997389809ff54ec080640230c78cd">ksceAppMgrLaunchAppByPath</a> (const char *path, const char *args, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, unsigned int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, const <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a> *param, void *unk)</td></tr>
-<tr class="memdesc:ga6a9997389809ff54ec080640230c78cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch an application for debugging.  <br /></td></tr>
-<tr class="separator:ga6a9997389809ff54ec080640230c78cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceAppMgrLaunchParam" id="structSceAppMgrLaunchParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceAppMgrLaunchParam">&#9670;&#160;</a></span>SceAppMgrLaunchParam</h2>
 
@@ -316,6 +355,189 @@ unk_30</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pid on success, else &lt; 0. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga929854cecfe1826aa7bea04e313f2789" name="ga929854cecfe1826aa7bea04e313f2789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga929854cecfe1826aa7bea04e313f2789">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceAppMgrLaunchParam::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f3502ede4e1685fa665a36f86754fcb" name="ga0f3502ede4e1685fa665a36f86754fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f3502ede4e1685fa665a36f86754fcb">&#9670;&#160;</a></span>unk_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad888cc966f84e20ad065ce3b7f4f71fa" name="gad888cc966f84e20ad065ce3b7f4f71fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad888cc966f84e20ad065ce3b7f4f71fa">&#9670;&#160;</a></span>unk_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga66fe2d4ca2dcd0ef4b904c5d57d06ec9" name="ga66fe2d4ca2dcd0ef4b904c5d57d06ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66fe2d4ca2dcd0ef4b904c5d57d06ec9">&#9670;&#160;</a></span>unk_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac43f7d2b1f74522f4c286ef455b304cc" name="gac43f7d2b1f74522f4c286ef455b304cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac43f7d2b1f74522f4c286ef455b304cc">&#9670;&#160;</a></span>unk_10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8402142a9bf9c9cac6c2932d3b1d75e1" name="ga8402142a9bf9c9cac6c2932d3b1d75e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8402142a9bf9c9cac6c2932d3b1d75e1">&#9670;&#160;</a></span>unk_14</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a89503f13876048f09c3f43d8489498" name="ga5a89503f13876048f09c3f43d8489498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a89503f13876048f09c3f43d8489498">&#9670;&#160;</a></span>unk_18</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3b650e6baed8df96c95393af9e3b8d6a" name="ga3b650e6baed8df96c95393af9e3b8d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b650e6baed8df96c95393af9e3b8d6a">&#9670;&#160;</a></span>unk_1C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga595675aaeeb1b3638f5213e4ff2fcc44" name="ga595675aaeeb1b3638f5213e4ff2fcc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga595675aaeeb1b3638f5213e4ff2fcc44">&#9670;&#160;</a></span>unk_20</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeafe159c8967b721999d8d71accca810" name="gaeafe159c8967b721999d8d71accca810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeafe159c8967b721999d8d71accca810">&#9670;&#160;</a></span>unk_24</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga22af84490044ae9b371bd9a05edc7a76" name="ga22af84490044ae9b371bd9a05edc7a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22af84490044ae9b371bd9a05edc7a76">&#9670;&#160;</a></span>unk_28</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga51d4e2b781254a31ad5754ccb7e81539" name="ga51d4e2b781254a31ad5754ccb7e81539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51d4e2b781254a31ad5754ccb7e81539">&#9670;&#160;</a></span>unk_2C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_2C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae6ea52587cff6f2a457680093cda02ea" name="gae6ea52587cff6f2a457680093cda02ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6ea52587cff6f2a457680093cda02ea">&#9670;&#160;</a></span>unk_30</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppMgrLaunchParam::unk_30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

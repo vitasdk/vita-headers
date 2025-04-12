@@ -73,23 +73,22 @@ $(document).ready(function(){initNavTree('group__SceCtrlKernel.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Input.html">Input</a> &raquo; <a class="el" href="group__SceCtrl.html">Control Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2ctrl_8h.html">psp2kern/ctrl.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2kern_2ctrl_8h_html"><div class="ttname"><a href="psp2kern_2ctrl_8h.html">ctrl.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceCtrlForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceCtrlVirtualControllerDriver" id="r_structSceCtrlVirtualControllerDriver"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#structSceCtrlVirtualControllerDriver">SceCtrlVirtualControllerDriver</a></td></tr>
+<tr class="memdesc:structSceCtrlVirtualControllerDriver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to pass as argument to <a class="el" href="group__SceCtrlKernel.html#gaa282e6a36485649ee6059c41468f7bef" title="Register virtual controller driver.">ksceCtrlRegisterVirtualControllerDriver</a>.  <a href="group__SceCtrlKernel.html#structSceCtrlVirtualControllerDriver">More...</a><br /></td></tr>
+<tr class="separator:structSceCtrlVirtualControllerDriver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga067943e7d4009db5654de3f8632c0201" id="r_ga067943e7d4009db5654de3f8632c0201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga067943e7d4009db5654de3f8632c0201">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceCtrlKernel.html#structSceCtrlVirtualControllerDriver">SceCtrlVirtualControllerDriver</a>)</td></tr>
@@ -148,8 +147,49 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6522aead380c3b306fa903a977e526ab" id="r_ga6522aead380c3b306fa903a977e526ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga6522aead380c3b306fa903a977e526ab">ksceCtrlGetMaskForAll</a> (uint32_t *mask)</td></tr>
 <tr class="memdesc:ga6522aead380c3b306fa903a977e526ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ctrl mask for all process.  <br /></td></tr>
 <tr class="separator:ga6522aead380c3b306fa903a977e526ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5eff420260d97376f3bc4164cb074d68" id="r_ga5eff420260d97376f3bc4164cb074d68"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga5eff420260d97376f3bc4164cb074d68">SceCtrlVirtualControllerDriver::readButtons</a> )(int port, <a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *pad_data, int count)</td></tr>
+<tr class="separator:ga5eff420260d97376f3bc4164cb074d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fcad9fc29241613452f6309ce9f2b44" id="r_ga8fcad9fc29241613452f6309ce9f2b44"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga8fcad9fc29241613452f6309ce9f2b44">SceCtrlVirtualControllerDriver::setActuator</a> )(int port, const <a class="el" href="group__SceCtrlUser.html#structSceCtrlActuator">SceCtrlActuator</a> *pState)</td></tr>
+<tr class="separator:ga8fcad9fc29241613452f6309ce9f2b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga373c94effbc5e48c0b1e55d263e1292f" id="r_ga373c94effbc5e48c0b1e55d263e1292f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga373c94effbc5e48c0b1e55d263e1292f">SceCtrlVirtualControllerDriver::getBatteryInfo</a> )(int port, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *batt)</td></tr>
+<tr class="separator:ga373c94effbc5e48c0b1e55d263e1292f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2304ad7d761f0709eae0c7bf8c609db9" id="r_ga2304ad7d761f0709eae0c7bf8c609db9"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga2304ad7d761f0709eae0c7bf8c609db9">SceCtrlVirtualControllerDriver::disconnect</a> )(int port)</td></tr>
+<tr class="separator:ga2304ad7d761f0709eae0c7bf8c609db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc7971665ef653490aa9787cb5d6e3f7" id="r_gafc7971665ef653490aa9787cb5d6e3f7"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gafc7971665ef653490aa9787cb5d6e3f7">SceCtrlVirtualControllerDriver::setTurnOffInterval</a> )(int port)</td></tr>
+<tr class="separator:gafc7971665ef653490aa9787cb5d6e3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf354e4e78f82cc85c39fda2241cb3883" id="r_gaf354e4e78f82cc85c39fda2241cb3883"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gaf354e4e78f82cc85c39fda2241cb3883">SceCtrlVirtualControllerDriver::getActiveControllerPort</a> )(void)</td></tr>
+<tr class="separator:gaf354e4e78f82cc85c39fda2241cb3883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4fd93e37c8a3298fcee88ad3e2a7b61" id="r_gac4fd93e37c8a3298fcee88ad3e2a7b61"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gac4fd93e37c8a3298fcee88ad3e2a7b61">SceCtrlVirtualControllerDriver::changePortAssign</a> )(int port1, int port2)</td></tr>
+<tr class="separator:gac4fd93e37c8a3298fcee88ad3e2a7b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7c53c2857f21b4dedff258eb0111f4e" id="r_gad7c53c2857f21b4dedff258eb0111f4e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gad7c53c2857f21b4dedff258eb0111f4e">SceCtrlVirtualControllerDriver::unk0</a> )(void)</td></tr>
+<tr class="separator:gad7c53c2857f21b4dedff258eb0111f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae62e46de2c578c834e56fe79e6e5898f" id="r_gae62e46de2c578c834e56fe79e6e5898f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gae62e46de2c578c834e56fe79e6e5898f">SceCtrlVirtualControllerDriver::getControllerPortInfo</a> )(<a class="el" href="group__SceCtrlUser.html#structSceCtrlPortInfo">SceCtrlPortInfo</a> *info)</td></tr>
+<tr class="separator:gae62e46de2c578c834e56fe79e6e5898f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54cb98c9bc02e23a57c3bb49f4eacc70" id="r_ga54cb98c9bc02e23a57c3bb49f4eacc70"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga54cb98c9bc02e23a57c3bb49f4eacc70">SceCtrlVirtualControllerDriver::setLightBar</a> )(int port, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> r, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> g, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> b)</td></tr>
+<tr class="separator:ga54cb98c9bc02e23a57c3bb49f4eacc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf28652a4f18887009e310b9bd03849e2" id="r_gaf28652a4f18887009e310b9bd03849e2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gaf28652a4f18887009e310b9bd03849e2">SceCtrlVirtualControllerDriver::resetLightBar</a> )(int port)</td></tr>
+<tr class="separator:gaf28652a4f18887009e310b9bd03849e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c53f7d22e66dd24726bf26be0721dfd" id="r_ga4c53f7d22e66dd24726bf26be0721dfd"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#ga4c53f7d22e66dd24726bf26be0721dfd">SceCtrlVirtualControllerDriver::unk1</a> )(int port)</td></tr>
+<tr class="separator:ga4c53f7d22e66dd24726bf26be0721dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae48d6be0065dd7d8971110e98297c51f" id="r_gae48d6be0065dd7d8971110e98297c51f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCtrlKernel.html#gae48d6be0065dd7d8971110e98297c51f">SceCtrlVirtualControllerDriver::singleControllerMode</a> )(int port)</td></tr>
+<tr class="separator:gae48d6be0065dd7d8971110e98297c51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2ctrl_8h.html">psp2kern/ctrl.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2ctrl_8h_html"><div class="ttname"><a href="psp2kern_2ctrl_8h.html">ctrl.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceCtrlForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCtrlVirtualControllerDriver" id="structSceCtrlVirtualControllerDriver"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceCtrlVirtualControllerDriver">&#9670;&#160;</a></span>SceCtrlVirtualControllerDriver</h2>
 
@@ -938,6 +978,189 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga5eff420260d97376f3bc4164cb074d68" name="ga5eff420260d97376f3bc4164cb074d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5eff420260d97376f3bc4164cb074d68">&#9670;&#160;</a></span>readButtons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::readButtons) (int port, <a class="el" href="group__SceCtrlUser.html#structSceCtrlData">SceCtrlData</a> *pad_data, int count)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8fcad9fc29241613452f6309ce9f2b44" name="ga8fcad9fc29241613452f6309ce9f2b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fcad9fc29241613452f6309ce9f2b44">&#9670;&#160;</a></span>setActuator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::setActuator) (int port, const <a class="el" href="group__SceCtrlUser.html#structSceCtrlActuator">SceCtrlActuator</a> *pState)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga373c94effbc5e48c0b1e55d263e1292f" name="ga373c94effbc5e48c0b1e55d263e1292f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga373c94effbc5e48c0b1e55d263e1292f">&#9670;&#160;</a></span>getBatteryInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::getBatteryInfo) (int port, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *batt)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2304ad7d761f0709eae0c7bf8c609db9" name="ga2304ad7d761f0709eae0c7bf8c609db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2304ad7d761f0709eae0c7bf8c609db9">&#9670;&#160;</a></span>disconnect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::disconnect) (int port)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafc7971665ef653490aa9787cb5d6e3f7" name="gafc7971665ef653490aa9787cb5d6e3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc7971665ef653490aa9787cb5d6e3f7">&#9670;&#160;</a></span>setTurnOffInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::setTurnOffInterval) (int port)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf354e4e78f82cc85c39fda2241cb3883" name="gaf354e4e78f82cc85c39fda2241cb3883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf354e4e78f82cc85c39fda2241cb3883">&#9670;&#160;</a></span>getActiveControllerPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::getActiveControllerPort) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac4fd93e37c8a3298fcee88ad3e2a7b61" name="gac4fd93e37c8a3298fcee88ad3e2a7b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4fd93e37c8a3298fcee88ad3e2a7b61">&#9670;&#160;</a></span>changePortAssign</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::changePortAssign) (int port1, int port2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad7c53c2857f21b4dedff258eb0111f4e" name="gad7c53c2857f21b4dedff258eb0111f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7c53c2857f21b4dedff258eb0111f4e">&#9670;&#160;</a></span>unk0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::unk0) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae62e46de2c578c834e56fe79e6e5898f" name="gae62e46de2c578c834e56fe79e6e5898f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae62e46de2c578c834e56fe79e6e5898f">&#9670;&#160;</a></span>getControllerPortInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::getControllerPortInfo) (<a class="el" href="group__SceCtrlUser.html#structSceCtrlPortInfo">SceCtrlPortInfo</a> *info)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga54cb98c9bc02e23a57c3bb49f4eacc70" name="ga54cb98c9bc02e23a57c3bb49f4eacc70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54cb98c9bc02e23a57c3bb49f4eacc70">&#9670;&#160;</a></span>setLightBar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::setLightBar) (int port, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> r, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> g, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf28652a4f18887009e310b9bd03849e2" name="gaf28652a4f18887009e310b9bd03849e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf28652a4f18887009e310b9bd03849e2">&#9670;&#160;</a></span>resetLightBar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::resetLightBar) (int port)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c53f7d22e66dd24726bf26be0721dfd" name="ga4c53f7d22e66dd24726bf26be0721dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c53f7d22e66dd24726bf26be0721dfd">&#9670;&#160;</a></span>unk1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::unk1) (int port)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae48d6be0065dd7d8971110e98297c51f" name="gae48d6be0065dd7d8971110e98297c51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae48d6be0065dd7d8971110e98297c51f">&#9670;&#160;</a></span>singleControllerMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceCtrlVirtualControllerDriver::singleControllerMode) (int port)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

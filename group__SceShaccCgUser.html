@@ -73,28 +73,71 @@ $(document).ready(function(){initNavTree('group__SceShaccCgUser.html',''); initR
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceShaccCg.html">Runtime Shader Compiler Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="shacccg_8h.html">psp2/shacccg.h</a>&gt;</span> </div>
-<div class="ttc" id="ashacccg_8h_html"><div class="ttname"><a href="shacccg_8h.html">shacccg.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceShaccCg_stub </div>
-</div><!-- fragment --><p> <br  />
- Load the required module:<br  />
-</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327">sceKernelLoadStartModule</a>(<span class="stringliteral">&quot;path:/to/libshacccg.suprx&quot;</span>, 0, 0, 0, &amp;opt_arg, &amp;status_arg); </div>
-<div class="ttc" id="agroup__SceModulemgrUser_html_ga54c98cf78b16d4412442b53e0632d327"><div class="ttname"><a href="group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327">sceKernelLoadStartModule</a></div><div class="ttdeci">SceUID sceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status)</div></div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceShaccCgSourceFile" id="r_structSceShaccCgSourceFile"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a></td></tr>
+<tr class="separator:structSceShaccCgSourceFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceShaccCgSourceLocation" id="r_structSceShaccCgSourceLocation"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a></td></tr>
+<tr class="separator:structSceShaccCgSourceLocation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceShaccCgCallbackList" id="r_structSceShaccCgCallbackList"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCallbackList">SceShaccCgCallbackList</a></td></tr>
+<tr class="separator:structSceShaccCgCallbackList"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceShaccCgCompileOptions" id="r_structSceShaccCgCompileOptions"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a></td></tr>
+<tr class="separator:structSceShaccCgCompileOptions"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceShaccCgDiagnosticMessage" id="r_structSceShaccCgDiagnosticMessage"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#structSceShaccCgDiagnosticMessage">SceShaccCgDiagnosticMessage</a></td></tr>
+<tr class="separator:structSceShaccCgDiagnosticMessage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceShaccCgCompileOutput" id="r_structSceShaccCgCompileOutput"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOutput">SceShaccCgCompileOutput</a></td></tr>
+<tr class="separator:structSceShaccCgCompileOutput"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gafc961b7216d3352736aa1d00edffdc3e" id="r_gafc961b7216d3352736aa1d00edffdc3e"><td class="memItemLeft" align="right" valign="top">typedef void const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gafc961b7216d3352736aa1d00edffdc3e">SceShaccCgParameter</a></td></tr>
+<tr class="separator:gafc961b7216d3352736aa1d00edffdc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab155c67c38c1116a5c295a85f465587c" id="r_gab155c67c38c1116a5c295a85f465587c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gab155c67c38c1116a5c295a85f465587c">SceShaccCgCallbackOpenFile</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions, const char **errorString)</td></tr>
+<tr class="separator:gab155c67c38c1116a5c295a85f465587c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01da2bb204665fff5dad4972e44982dd" id="r_ga01da2bb204665fff5dad4972e44982dd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga01da2bb204665fff5dad4972e44982dd">SceShaccCgCallbackReleaseFile</a>) (const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *file, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions)</td></tr>
+<tr class="separator:ga01da2bb204665fff5dad4972e44982dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1eb70b1ee01957754b59013980d47359" id="r_ga1eb70b1ee01957754b59013980d47359"><td class="memItemLeft" align="right" valign="top">typedef const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga1eb70b1ee01957754b59013980d47359">SceShaccCgCallbackLocateFile</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> searchPathCount, const char *const *searchPaths, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions, const char **errorString)</td></tr>
+<tr class="separator:ga1eb70b1ee01957754b59013980d47359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7b829762daf3371b3d41b9218d70a63" id="r_gab7b829762daf3371b3d41b9218d70a63"><td class="memItemLeft" align="right" valign="top">typedef const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gab7b829762daf3371b3d41b9218d70a63">SceShaccCgCallbackAbsolutePath</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions)</td></tr>
+<tr class="separator:gab7b829762daf3371b3d41b9218d70a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0736f6a7ff67c2933c6f808d9adf54a" id="r_gaf0736f6a7ff67c2933c6f808d9adf54a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaf0736f6a7ff67c2933c6f808d9adf54a">SceShaccCgCallbackReleaseFileName</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions)</td></tr>
+<tr class="separator:gaf0736f6a7ff67c2933c6f808d9adf54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73daab6652f7eda7256ca66188c3ca20" id="r_ga73daab6652f7eda7256ca66188c3ca20"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga73daab6652f7eda7256ca66188c3ca20">SceShaccCgCallbackFileDate</a>) (const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *file, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions, int64_t *timeLastStatusChange, int64_t *timeLastModified)</td></tr>
+<tr class="separator:ga73daab6652f7eda7256ca66188c3ca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga0833a8b6560f7ebb8c476f8be8d02729" id="r_ga0833a8b6560f7ebb8c476f8be8d02729"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga0833a8b6560f7ebb8c476f8be8d02729">SceShaccCgDiagnosticLevel</a> { <a class="el" href="group__SceShaccCgUser.html#gga0833a8b6560f7ebb8c476f8be8d02729adf778d939d6db823c65ad77b3cfec8a8">SCE_SHACCCG_DIAGNOSTIC_LEVEL_INFO</a>
+, <a class="el" href="group__SceShaccCgUser.html#gga0833a8b6560f7ebb8c476f8be8d02729a6c76bf3aa0b08258323b93ebaa688e3e">SCE_SHACCCG_DIAGNOSTIC_LEVEL_WARNING</a>
+, <a class="el" href="group__SceShaccCgUser.html#gga0833a8b6560f7ebb8c476f8be8d02729a5688153f46e3aad41e9f7155003252cd">SCE_SHACCCG_DIAGNOSTIC_LEVEL_ERROR</a>
+ }</td></tr>
+<tr class="separator:ga0833a8b6560f7ebb8c476f8be8d02729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e72d865e40f928051bbb56426f40e94" id="r_ga5e72d865e40f928051bbb56426f40e94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga5e72d865e40f928051bbb56426f40e94">SceShaccCgTargetProfile</a> { <a class="el" href="group__SceShaccCgUser.html#gga5e72d865e40f928051bbb56426f40e94adf6d008ea29ec386ea0bcb6330187321">SCE_SHACCCG_PROFILE_VP</a>
+, <a class="el" href="group__SceShaccCgUser.html#gga5e72d865e40f928051bbb56426f40e94a7946645808fee192d3c6015d3e1ab1ec">SCE_SHACCCG_PROFILE_FP</a>
+ }</td></tr>
+<tr class="separator:ga5e72d865e40f928051bbb56426f40e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbf58214c60f6ddadee4d0b22c1a75c5" id="r_gafbf58214c60f6ddadee4d0b22c1a75c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gafbf58214c60f6ddadee4d0b22c1a75c5">SceShaccCgCallbackDefaults</a> { <a class="el" href="group__SceShaccCgUser.html#ggafbf58214c60f6ddadee4d0b22c1a75c5ae41c1086d697ef914decd270d7625e87">SCE_SHACCCG_SYSTEM_FILES</a>
+, <a class="el" href="group__SceShaccCgUser.html#ggafbf58214c60f6ddadee4d0b22c1a75c5adf5d36bccc47d6a06ddaff33dfd64819">SCE_SHACCCG_TRIVIAL</a>
+ }</td></tr>
+<tr class="separator:gafbf58214c60f6ddadee4d0b22c1a75c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67add71836df0d0d35f7423d976b169f" id="r_ga67add71836df0d0d35f7423d976b169f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga67add71836df0d0d35f7423d976b169f">SceShaccCgLocale</a> { <a class="el" href="group__SceShaccCgUser.html#gga67add71836df0d0d35f7423d976b169fae9211e92b730c27d382d73c4a361f0d5">SCE_SHACCCG_ENGLISH</a>
+, <a class="el" href="group__SceShaccCgUser.html#gga67add71836df0d0d35f7423d976b169fa6c7e84adf318096e364d66096fa8894b">SCE_SHACCCG_JAPANESE</a>
+ }</td></tr>
+<tr class="separator:ga67add71836df0d0d35f7423d976b169f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7f07bdbd09214af344720d4317325a96" id="r_ga7f07bdbd09214af344720d4317325a96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga7f07bdbd09214af344720d4317325a96">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceShaccCgUser.html#gafc961b7216d3352736aa1d00edffdc3e">SceShaccCgParameter</a>)</td></tr>
@@ -126,24 +169,118 @@ Functions</h2></td></tr>
 <tr class="memitem:gaad1da454d00d52c3a5b21a2a3e747227" id="r_gaad1da454d00d52c3a5b21a2a3e747227"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaad1da454d00d52c3a5b21a2a3e747227">sceShaccCgGetVersionString</a> (void)</td></tr>
 <tr class="separator:gaad1da454d00d52c3a5b21a2a3e747227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafc961b7216d3352736aa1d00edffdc3e" id="r_gafc961b7216d3352736aa1d00edffdc3e"><td class="memItemLeft" align="right" valign="top">typedef void const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gafc961b7216d3352736aa1d00edffdc3e">SceShaccCgParameter</a></td></tr>
-<tr class="separator:gafc961b7216d3352736aa1d00edffdc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab155c67c38c1116a5c295a85f465587c" id="r_gab155c67c38c1116a5c295a85f465587c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gab155c67c38c1116a5c295a85f465587c">SceShaccCgCallbackOpenFile</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions, const char **errorString)</td></tr>
-<tr class="separator:gab155c67c38c1116a5c295a85f465587c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga01da2bb204665fff5dad4972e44982dd" id="r_ga01da2bb204665fff5dad4972e44982dd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga01da2bb204665fff5dad4972e44982dd">SceShaccCgCallbackReleaseFile</a>) (const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *file, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions)</td></tr>
-<tr class="separator:ga01da2bb204665fff5dad4972e44982dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1eb70b1ee01957754b59013980d47359" id="r_ga1eb70b1ee01957754b59013980d47359"><td class="memItemLeft" align="right" valign="top">typedef const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga1eb70b1ee01957754b59013980d47359">SceShaccCgCallbackLocateFile</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> searchPathCount, const char *const *searchPaths, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions, const char **errorString)</td></tr>
-<tr class="separator:ga1eb70b1ee01957754b59013980d47359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7b829762daf3371b3d41b9218d70a63" id="r_gab7b829762daf3371b3d41b9218d70a63"><td class="memItemLeft" align="right" valign="top">typedef const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gab7b829762daf3371b3d41b9218d70a63">SceShaccCgCallbackAbsolutePath</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions)</td></tr>
-<tr class="separator:gab7b829762daf3371b3d41b9218d70a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0736f6a7ff67c2933c6f808d9adf54a" id="r_gaf0736f6a7ff67c2933c6f808d9adf54a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaf0736f6a7ff67c2933c6f808d9adf54a">SceShaccCgCallbackReleaseFileName</a>) (const char *fileName, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions)</td></tr>
-<tr class="separator:gaf0736f6a7ff67c2933c6f808d9adf54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73daab6652f7eda7256ca66188c3ca20" id="r_ga73daab6652f7eda7256ca66188c3ca20"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga73daab6652f7eda7256ca66188c3ca20">SceShaccCgCallbackFileDate</a>) (const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *file, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *includedFrom, const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgCompileOptions">SceShaccCgCompileOptions</a> *compileOptions, int64_t *timeLastStatusChange, int64_t *timeLastModified)</td></tr>
-<tr class="separator:ga73daab6652f7eda7256ca66188c3ca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga07334f3487d93f7d954be88799f64aee" id="r_ga07334f3487d93f7d954be88799f64aee"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga07334f3487d93f7d954be88799f64aee">SceShaccCgSourceFile::fileName</a></td></tr>
+<tr class="separator:ga07334f3487d93f7d954be88799f64aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f8b737816a6cd1005258f4a232b40f5" id="r_ga0f8b737816a6cd1005258f4a232b40f5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga0f8b737816a6cd1005258f4a232b40f5">SceShaccCgSourceFile::text</a></td></tr>
+<tr class="separator:ga0f8b737816a6cd1005258f4a232b40f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0889f8d345f8fb578cbe689c9a565876" id="r_ga0889f8d345f8fb578cbe689c9a565876"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga0889f8d345f8fb578cbe689c9a565876">SceShaccCgSourceFile::size</a></td></tr>
+<tr class="separator:ga0889f8d345f8fb578cbe689c9a565876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ee2d15e843daf31fbeb51df721db2a2" id="r_ga0ee2d15e843daf31fbeb51df721db2a2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga0ee2d15e843daf31fbeb51df721db2a2">SceShaccCgSourceLocation::file</a></td></tr>
+<tr class="separator:ga0ee2d15e843daf31fbeb51df721db2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ec42d5c4bf5ce340afed0841ecd9c1c" id="r_ga3ec42d5c4bf5ce340afed0841ecd9c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga3ec42d5c4bf5ce340afed0841ecd9c1c">SceShaccCgSourceLocation::lineNumber</a></td></tr>
+<tr class="separator:ga3ec42d5c4bf5ce340afed0841ecd9c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeec40dfb3ebab2c35866ef66ced4d2d0" id="r_gaeec40dfb3ebab2c35866ef66ced4d2d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaeec40dfb3ebab2c35866ef66ced4d2d0">SceShaccCgSourceLocation::columnNumber</a></td></tr>
+<tr class="separator:gaeec40dfb3ebab2c35866ef66ced4d2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga306f553b81c3f0b8b5eac0b2202b4eda" id="r_ga306f553b81c3f0b8b5eac0b2202b4eda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#gab155c67c38c1116a5c295a85f465587c">SceShaccCgCallbackOpenFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga306f553b81c3f0b8b5eac0b2202b4eda">SceShaccCgCallbackList::openFile</a></td></tr>
+<tr class="separator:ga306f553b81c3f0b8b5eac0b2202b4eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf33c14f13a2d0febb9bc77d1a7196d9" id="r_gacf33c14f13a2d0febb9bc77d1a7196d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#ga01da2bb204665fff5dad4972e44982dd">SceShaccCgCallbackReleaseFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gacf33c14f13a2d0febb9bc77d1a7196d9">SceShaccCgCallbackList::releaseFile</a></td></tr>
+<tr class="separator:gacf33c14f13a2d0febb9bc77d1a7196d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada17eef0a6ac87fb75a8b1ba66af94e7" id="r_gada17eef0a6ac87fb75a8b1ba66af94e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#ga1eb70b1ee01957754b59013980d47359">SceShaccCgCallbackLocateFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gada17eef0a6ac87fb75a8b1ba66af94e7">SceShaccCgCallbackList::locateFile</a></td></tr>
+<tr class="separator:gada17eef0a6ac87fb75a8b1ba66af94e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23aa9642f7ee85362213c8fefa783b62" id="r_ga23aa9642f7ee85362213c8fefa783b62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#gab7b829762daf3371b3d41b9218d70a63">SceShaccCgCallbackAbsolutePath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga23aa9642f7ee85362213c8fefa783b62">SceShaccCgCallbackList::absolutePath</a></td></tr>
+<tr class="separator:ga23aa9642f7ee85362213c8fefa783b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bfc0814302eba9c675b26e6795b0b66" id="r_ga3bfc0814302eba9c675b26e6795b0b66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#gaf0736f6a7ff67c2933c6f808d9adf54a">SceShaccCgCallbackReleaseFileName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga3bfc0814302eba9c675b26e6795b0b66">SceShaccCgCallbackList::releaseFileName</a></td></tr>
+<tr class="separator:ga3bfc0814302eba9c675b26e6795b0b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62be4d9073366803539b8a90da5e4269" id="r_ga62be4d9073366803539b8a90da5e4269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#ga73daab6652f7eda7256ca66188c3ca20">SceShaccCgCallbackFileDate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga62be4d9073366803539b8a90da5e4269">SceShaccCgCallbackList::fileDate</a></td></tr>
+<tr class="separator:ga62be4d9073366803539b8a90da5e4269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga912c161f22d1ebc240ed270d68217253" id="r_ga912c161f22d1ebc240ed270d68217253"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga912c161f22d1ebc240ed270d68217253">SceShaccCgCompileOptions::mainSourceFile</a></td></tr>
+<tr class="separator:ga912c161f22d1ebc240ed270d68217253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4b7599c2913370591e0d5683770cdce" id="r_gaf4b7599c2913370591e0d5683770cdce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#ga5e72d865e40f928051bbb56426f40e94">SceShaccCgTargetProfile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaf4b7599c2913370591e0d5683770cdce">SceShaccCgCompileOptions::targetProfile</a></td></tr>
+<tr class="separator:gaf4b7599c2913370591e0d5683770cdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga495fa6bfead1058e6f07b5ed0fcedb90" id="r_ga495fa6bfead1058e6f07b5ed0fcedb90"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga495fa6bfead1058e6f07b5ed0fcedb90">SceShaccCgCompileOptions::entryFunctionName</a></td></tr>
+<tr class="separator:ga495fa6bfead1058e6f07b5ed0fcedb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2d3a67571914cc344224acd36d18bbc" id="r_gab2d3a67571914cc344224acd36d18bbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gab2d3a67571914cc344224acd36d18bbc">SceShaccCgCompileOptions::searchPathCount</a></td></tr>
+<tr class="separator:gab2d3a67571914cc344224acd36d18bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga367bb29403f8ae43509f448363faac59" id="r_ga367bb29403f8ae43509f448363faac59"><td class="memItemLeft" align="right" valign="top">const char *const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga367bb29403f8ae43509f448363faac59">SceShaccCgCompileOptions::searchPaths</a></td></tr>
+<tr class="separator:ga367bb29403f8ae43509f448363faac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f0fb1f67f1399cc881f205392adad86" id="r_ga4f0fb1f67f1399cc881f205392adad86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga4f0fb1f67f1399cc881f205392adad86">SceShaccCgCompileOptions::macroDefinitionCount</a></td></tr>
+<tr class="separator:ga4f0fb1f67f1399cc881f205392adad86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga362a2bbd2beeaac24a7a7c79116209c8" id="r_ga362a2bbd2beeaac24a7a7c79116209c8"><td class="memItemLeft" align="right" valign="top">const char *const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga362a2bbd2beeaac24a7a7c79116209c8">SceShaccCgCompileOptions::macroDefinitions</a></td></tr>
+<tr class="separator:ga362a2bbd2beeaac24a7a7c79116209c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa848b6887a354c0d1731872d67b1ab5f" id="r_gaa848b6887a354c0d1731872d67b1ab5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaa848b6887a354c0d1731872d67b1ab5f">SceShaccCgCompileOptions::includeFileCount</a></td></tr>
+<tr class="separator:gaa848b6887a354c0d1731872d67b1ab5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a83708b23cb8e4b0f2146531c9de3e2" id="r_ga4a83708b23cb8e4b0f2146531c9de3e2"><td class="memItemLeft" align="right" valign="top">const char *const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga4a83708b23cb8e4b0f2146531c9de3e2">SceShaccCgCompileOptions::includeFiles</a></td></tr>
+<tr class="separator:ga4a83708b23cb8e4b0f2146531c9de3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a5ccd2f894be1761a770e62215cf382" id="r_ga7a5ccd2f894be1761a770e62215cf382"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga7a5ccd2f894be1761a770e62215cf382">SceShaccCgCompileOptions::suppressedWarningsCount</a></td></tr>
+<tr class="separator:ga7a5ccd2f894be1761a770e62215cf382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d73ad33f88a9854beaf8125654d9288" id="r_ga5d73ad33f88a9854beaf8125654d9288"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga5d73ad33f88a9854beaf8125654d9288">SceShaccCgCompileOptions::suppressedWarnings</a></td></tr>
+<tr class="separator:ga5d73ad33f88a9854beaf8125654d9288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ee9bcd87c770505f23db0940c5c9645" id="r_ga7ee9bcd87c770505f23db0940c5c9645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#ga67add71836df0d0d35f7423d976b169f">SceShaccCgLocale</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga7ee9bcd87c770505f23db0940c5c9645">SceShaccCgCompileOptions::locale</a></td></tr>
+<tr class="separator:ga7ee9bcd87c770505f23db0940c5c9645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a34db9c4637ed8ed359b572a583ac17" id="r_ga2a34db9c4637ed8ed359b572a583ac17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga2a34db9c4637ed8ed359b572a583ac17">SceShaccCgCompileOptions::useFx</a></td></tr>
+<tr class="separator:ga2a34db9c4637ed8ed359b572a583ac17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8528b2f162ef7a2841366e4001446820" id="r_ga8528b2f162ef7a2841366e4001446820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga8528b2f162ef7a2841366e4001446820">SceShaccCgCompileOptions::noStdlib</a></td></tr>
+<tr class="separator:ga8528b2f162ef7a2841366e4001446820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706" id="r_gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706">SceShaccCgCompileOptions::optimizationLevel</a></td></tr>
+<tr class="separator:gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46d584193b77e6c300a8e867fa643d96" id="r_ga46d584193b77e6c300a8e867fa643d96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga46d584193b77e6c300a8e867fa643d96">SceShaccCgCompileOptions::useFastmath</a></td></tr>
+<tr class="separator:ga46d584193b77e6c300a8e867fa643d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50921401d5d1b52650dbc085f018542b" id="r_ga50921401d5d1b52650dbc085f018542b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga50921401d5d1b52650dbc085f018542b">SceShaccCgCompileOptions::useFastprecision</a></td></tr>
+<tr class="separator:ga50921401d5d1b52650dbc085f018542b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72972308ead1c2a5cf4c55aeeb5b6c39" id="r_ga72972308ead1c2a5cf4c55aeeb5b6c39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga72972308ead1c2a5cf4c55aeeb5b6c39">SceShaccCgCompileOptions::useFastint</a></td></tr>
+<tr class="separator:ga72972308ead1c2a5cf4c55aeeb5b6c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ecd63f4b8f43658658662b7c3b20385" id="r_ga3ecd63f4b8f43658658662b7c3b20385"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga3ecd63f4b8f43658658662b7c3b20385">SceShaccCgCompileOptions::field_48</a></td></tr>
+<tr class="separator:ga3ecd63f4b8f43658658662b7c3b20385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9ab5b935d0a3986f75f684212721530" id="r_gaf9ab5b935d0a3986f75f684212721530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaf9ab5b935d0a3986f75f684212721530">SceShaccCgCompileOptions::warningsAsErrors</a></td></tr>
+<tr class="separator:gaf9ab5b935d0a3986f75f684212721530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a895e72825d760eee477a4ae16b38a2" id="r_ga3a895e72825d760eee477a4ae16b38a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga3a895e72825d760eee477a4ae16b38a2">SceShaccCgCompileOptions::performanceWarnings</a></td></tr>
+<tr class="separator:ga3a895e72825d760eee477a4ae16b38a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae839d0d4a79bce67615bae1698f5eb94" id="r_gae839d0d4a79bce67615bae1698f5eb94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gae839d0d4a79bce67615bae1698f5eb94">SceShaccCgCompileOptions::warningLevel</a></td></tr>
+<tr class="separator:gae839d0d4a79bce67615bae1698f5eb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21aea2248e05edf178e87661c3f6b745" id="r_ga21aea2248e05edf178e87661c3f6b745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga21aea2248e05edf178e87661c3f6b745">SceShaccCgCompileOptions::pedantic</a></td></tr>
+<tr class="separator:ga21aea2248e05edf178e87661c3f6b745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34fa585b6fd33c1bed2dfad0d1859e6c" id="r_ga34fa585b6fd33c1bed2dfad0d1859e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga34fa585b6fd33c1bed2dfad0d1859e6c">SceShaccCgCompileOptions::pedanticError</a></td></tr>
+<tr class="separator:ga34fa585b6fd33c1bed2dfad0d1859e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad732015f70b7f41ed8f149552f2710cb" id="r_gad732015f70b7f41ed8f149552f2710cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gad732015f70b7f41ed8f149552f2710cb">SceShaccCgCompileOptions::field_60</a></td></tr>
+<tr class="separator:gad732015f70b7f41ed8f149552f2710cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf55862cdd7d14d61ccc625e4a14e3798" id="r_gaf55862cdd7d14d61ccc625e4a14e3798"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaf55862cdd7d14d61ccc625e4a14e3798">SceShaccCgCompileOptions::field_64</a></td></tr>
+<tr class="separator:gaf55862cdd7d14d61ccc625e4a14e3798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab3dadaa8a5fad8de3c91e8534d77c6c" id="r_gaab3dadaa8a5fad8de3c91e8534d77c6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceShaccCgUser.html#ga0833a8b6560f7ebb8c476f8be8d02729">SceShaccCgDiagnosticLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaab3dadaa8a5fad8de3c91e8534d77c6c">SceShaccCgDiagnosticMessage::level</a></td></tr>
+<tr class="separator:gaab3dadaa8a5fad8de3c91e8534d77c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c1f22f7c08b72da29f9c1e834acb13" id="r_ga26c1f22f7c08b72da29f9c1e834acb13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga26c1f22f7c08b72da29f9c1e834acb13">SceShaccCgDiagnosticMessage::code</a></td></tr>
+<tr class="separator:ga26c1f22f7c08b72da29f9c1e834acb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6620d81ad554e295f108a9cbb85ed11c" id="r_ga6620d81ad554e295f108a9cbb85ed11c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga6620d81ad554e295f108a9cbb85ed11c">SceShaccCgDiagnosticMessage::location</a></td></tr>
+<tr class="separator:ga6620d81ad554e295f108a9cbb85ed11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c754b3101458d0d591933dbb15948ab" id="r_ga5c754b3101458d0d591933dbb15948ab"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga5c754b3101458d0d591933dbb15948ab">SceShaccCgDiagnosticMessage::message</a></td></tr>
+<tr class="separator:ga5c754b3101458d0d591933dbb15948ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b151dd0055b61083273d6b308996ed9" id="r_ga5b151dd0055b61083273d6b308996ed9"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga5b151dd0055b61083273d6b308996ed9">SceShaccCgCompileOutput::programData</a></td></tr>
+<tr class="separator:ga5b151dd0055b61083273d6b308996ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffb60107180a7418785f3e54fcc04f75" id="r_gaffb60107180a7418785f3e54fcc04f75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gaffb60107180a7418785f3e54fcc04f75">SceShaccCgCompileOutput::programSize</a></td></tr>
+<tr class="separator:gaffb60107180a7418785f3e54fcc04f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39a80578e7f7ace3855548d11c3d027d" id="r_ga39a80578e7f7ace3855548d11c3d027d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#ga39a80578e7f7ace3855548d11c3d027d">SceShaccCgCompileOutput::diagnosticCount</a></td></tr>
+<tr class="separator:ga39a80578e7f7ace3855548d11c3d027d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae73130a13677cdb1ec0fecd2442b60d8" id="r_gae73130a13677cdb1ec0fecd2442b60d8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgDiagnosticMessage">SceShaccCgDiagnosticMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceShaccCgUser.html#gae73130a13677cdb1ec0fecd2442b60d8">SceShaccCgCompileOutput::diagnostics</a></td></tr>
+<tr class="separator:gae73130a13677cdb1ec0fecd2442b60d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="shacccg_8h.html">psp2/shacccg.h</a>&gt;</span> </div>
+<div class="ttc" id="ashacccg_8h_html"><div class="ttname"><a href="shacccg_8h.html">shacccg.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceShaccCg_stub </div>
+</div><!-- fragment --><p> <br  />
+ Load the required module:<br  />
+</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327">sceKernelLoadStartModule</a>(<span class="stringliteral">&quot;path:/to/libshacccg.suprx&quot;</span>, 0, 0, 0, &amp;opt_arg, &amp;status_arg); </div>
+<div class="ttc" id="agroup__SceModulemgrUser_html_ga54c98cf78b16d4412442b53e0632d327"><div class="ttname"><a href="group__SceModulemgrUser.html#ga54c98cf78b16d4412442b53e0632d327">sceKernelLoadStartModule</a></div><div class="ttdeci">SceUID sceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status)</div></div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceShaccCgSourceFile" id="structSceShaccCgSourceFile"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceShaccCgSourceFile">&#9670;&#160;</a></span>SceShaccCgSourceFile</h2>
 
@@ -1048,6 +1185,651 @@ diagnostics</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga07334f3487d93f7d954be88799f64aee" name="ga07334f3487d93f7d954be88799f64aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07334f3487d93f7d954be88799f64aee">&#9670;&#160;</a></span>fileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceShaccCgSourceFile::fileName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f8b737816a6cd1005258f4a232b40f5" name="ga0f8b737816a6cd1005258f4a232b40f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f8b737816a6cd1005258f4a232b40f5">&#9670;&#160;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceShaccCgSourceFile::text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0889f8d345f8fb578cbe689c9a565876" name="ga0889f8d345f8fb578cbe689c9a565876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0889f8d345f8fb578cbe689c9a565876">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgSourceFile::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0ee2d15e843daf31fbeb51df721db2a2" name="ga0ee2d15e843daf31fbeb51df721db2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ee2d15e843daf31fbeb51df721db2a2">&#9670;&#160;</a></span>file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceFile">SceShaccCgSourceFile</a>* SceShaccCgSourceLocation::file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3ec42d5c4bf5ce340afed0841ecd9c1c" name="ga3ec42d5c4bf5ce340afed0841ecd9c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ec42d5c4bf5ce340afed0841ecd9c1c">&#9670;&#160;</a></span>lineNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgSourceLocation::lineNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeec40dfb3ebab2c35866ef66ced4d2d0" name="gaeec40dfb3ebab2c35866ef66ced4d2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeec40dfb3ebab2c35866ef66ced4d2d0">&#9670;&#160;</a></span>columnNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgSourceLocation::columnNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga306f553b81c3f0b8b5eac0b2202b4eda" name="ga306f553b81c3f0b8b5eac0b2202b4eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga306f553b81c3f0b8b5eac0b2202b4eda">&#9670;&#160;</a></span>openFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#gab155c67c38c1116a5c295a85f465587c">SceShaccCgCallbackOpenFile</a> SceShaccCgCallbackList::openFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacf33c14f13a2d0febb9bc77d1a7196d9" name="gacf33c14f13a2d0febb9bc77d1a7196d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf33c14f13a2d0febb9bc77d1a7196d9">&#9670;&#160;</a></span>releaseFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#ga01da2bb204665fff5dad4972e44982dd">SceShaccCgCallbackReleaseFile</a> SceShaccCgCallbackList::releaseFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gada17eef0a6ac87fb75a8b1ba66af94e7" name="gada17eef0a6ac87fb75a8b1ba66af94e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada17eef0a6ac87fb75a8b1ba66af94e7">&#9670;&#160;</a></span>locateFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#ga1eb70b1ee01957754b59013980d47359">SceShaccCgCallbackLocateFile</a> SceShaccCgCallbackList::locateFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga23aa9642f7ee85362213c8fefa783b62" name="ga23aa9642f7ee85362213c8fefa783b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23aa9642f7ee85362213c8fefa783b62">&#9670;&#160;</a></span>absolutePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#gab7b829762daf3371b3d41b9218d70a63">SceShaccCgCallbackAbsolutePath</a> SceShaccCgCallbackList::absolutePath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3bfc0814302eba9c675b26e6795b0b66" name="ga3bfc0814302eba9c675b26e6795b0b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bfc0814302eba9c675b26e6795b0b66">&#9670;&#160;</a></span>releaseFileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#gaf0736f6a7ff67c2933c6f808d9adf54a">SceShaccCgCallbackReleaseFileName</a> SceShaccCgCallbackList::releaseFileName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga62be4d9073366803539b8a90da5e4269" name="ga62be4d9073366803539b8a90da5e4269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62be4d9073366803539b8a90da5e4269">&#9670;&#160;</a></span>fileDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#ga73daab6652f7eda7256ca66188c3ca20">SceShaccCgCallbackFileDate</a> SceShaccCgCallbackList::fileDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga912c161f22d1ebc240ed270d68217253" name="ga912c161f22d1ebc240ed270d68217253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga912c161f22d1ebc240ed270d68217253">&#9670;&#160;</a></span>mainSourceFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceShaccCgCompileOptions::mainSourceFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf4b7599c2913370591e0d5683770cdce" name="gaf4b7599c2913370591e0d5683770cdce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4b7599c2913370591e0d5683770cdce">&#9670;&#160;</a></span>targetProfile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#ga5e72d865e40f928051bbb56426f40e94">SceShaccCgTargetProfile</a> SceShaccCgCompileOptions::targetProfile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga495fa6bfead1058e6f07b5ed0fcedb90" name="ga495fa6bfead1058e6f07b5ed0fcedb90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga495fa6bfead1058e6f07b5ed0fcedb90">&#9670;&#160;</a></span>entryFunctionName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceShaccCgCompileOptions::entryFunctionName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab2d3a67571914cc344224acd36d18bbc" name="gab2d3a67571914cc344224acd36d18bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2d3a67571914cc344224acd36d18bbc">&#9670;&#160;</a></span>searchPathCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgCompileOptions::searchPathCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga367bb29403f8ae43509f448363faac59" name="ga367bb29403f8ae43509f448363faac59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga367bb29403f8ae43509f448363faac59">&#9670;&#160;</a></span>searchPaths</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const* SceShaccCgCompileOptions::searchPaths</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4f0fb1f67f1399cc881f205392adad86" name="ga4f0fb1f67f1399cc881f205392adad86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f0fb1f67f1399cc881f205392adad86">&#9670;&#160;</a></span>macroDefinitionCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgCompileOptions::macroDefinitionCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga362a2bbd2beeaac24a7a7c79116209c8" name="ga362a2bbd2beeaac24a7a7c79116209c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga362a2bbd2beeaac24a7a7c79116209c8">&#9670;&#160;</a></span>macroDefinitions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const* SceShaccCgCompileOptions::macroDefinitions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa848b6887a354c0d1731872d67b1ab5f" name="gaa848b6887a354c0d1731872d67b1ab5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa848b6887a354c0d1731872d67b1ab5f">&#9670;&#160;</a></span>includeFileCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgCompileOptions::includeFileCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4a83708b23cb8e4b0f2146531c9de3e2" name="ga4a83708b23cb8e4b0f2146531c9de3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a83708b23cb8e4b0f2146531c9de3e2">&#9670;&#160;</a></span>includeFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const* SceShaccCgCompileOptions::includeFiles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7a5ccd2f894be1761a770e62215cf382" name="ga7a5ccd2f894be1761a770e62215cf382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a5ccd2f894be1761a770e62215cf382">&#9670;&#160;</a></span>suppressedWarningsCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgCompileOptions::suppressedWarningsCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5d73ad33f88a9854beaf8125654d9288" name="ga5d73ad33f88a9854beaf8125654d9288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d73ad33f88a9854beaf8125654d9288">&#9670;&#160;</a></span>suppressedWarnings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>* SceShaccCgCompileOptions::suppressedWarnings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7ee9bcd87c770505f23db0940c5c9645" name="ga7ee9bcd87c770505f23db0940c5c9645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ee9bcd87c770505f23db0940c5c9645">&#9670;&#160;</a></span>locale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#ga67add71836df0d0d35f7423d976b169f">SceShaccCgLocale</a> SceShaccCgCompileOptions::locale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2a34db9c4637ed8ed359b572a583ac17" name="ga2a34db9c4637ed8ed359b572a583ac17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a34db9c4637ed8ed359b572a583ac17">&#9670;&#160;</a></span>useFx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::useFx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8528b2f162ef7a2841366e4001446820" name="ga8528b2f162ef7a2841366e4001446820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8528b2f162ef7a2841366e4001446820">&#9670;&#160;</a></span>noStdlib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::noStdlib</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706" name="gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc1a06fd8e8fb3fcb9fd5a8d5f6e6706">&#9670;&#160;</a></span>optimizationLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::optimizationLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga46d584193b77e6c300a8e867fa643d96" name="ga46d584193b77e6c300a8e867fa643d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46d584193b77e6c300a8e867fa643d96">&#9670;&#160;</a></span>useFastmath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::useFastmath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga50921401d5d1b52650dbc085f018542b" name="ga50921401d5d1b52650dbc085f018542b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50921401d5d1b52650dbc085f018542b">&#9670;&#160;</a></span>useFastprecision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::useFastprecision</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga72972308ead1c2a5cf4c55aeeb5b6c39" name="ga72972308ead1c2a5cf4c55aeeb5b6c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72972308ead1c2a5cf4c55aeeb5b6c39">&#9670;&#160;</a></span>useFastint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::useFastint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3ecd63f4b8f43658658662b7c3b20385" name="ga3ecd63f4b8f43658658662b7c3b20385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ecd63f4b8f43658658662b7c3b20385">&#9670;&#160;</a></span>field_48</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceShaccCgCompileOptions::field_48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf9ab5b935d0a3986f75f684212721530" name="gaf9ab5b935d0a3986f75f684212721530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9ab5b935d0a3986f75f684212721530">&#9670;&#160;</a></span>warningsAsErrors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::warningsAsErrors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3a895e72825d760eee477a4ae16b38a2" name="ga3a895e72825d760eee477a4ae16b38a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a895e72825d760eee477a4ae16b38a2">&#9670;&#160;</a></span>performanceWarnings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::performanceWarnings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae839d0d4a79bce67615bae1698f5eb94" name="gae839d0d4a79bce67615bae1698f5eb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae839d0d4a79bce67615bae1698f5eb94">&#9670;&#160;</a></span>warningLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::warningLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga21aea2248e05edf178e87661c3f6b745" name="ga21aea2248e05edf178e87661c3f6b745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21aea2248e05edf178e87661c3f6b745">&#9670;&#160;</a></span>pedantic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::pedantic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga34fa585b6fd33c1bed2dfad0d1859e6c" name="ga34fa585b6fd33c1bed2dfad0d1859e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34fa585b6fd33c1bed2dfad0d1859e6c">&#9670;&#160;</a></span>pedanticError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOptions::pedanticError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad732015f70b7f41ed8f149552f2710cb" name="gad732015f70b7f41ed8f149552f2710cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad732015f70b7f41ed8f149552f2710cb">&#9670;&#160;</a></span>field_60</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceShaccCgCompileOptions::field_60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf55862cdd7d14d61ccc625e4a14e3798" name="gaf55862cdd7d14d61ccc625e4a14e3798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf55862cdd7d14d61ccc625e4a14e3798">&#9670;&#160;</a></span>field_64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceShaccCgCompileOptions::field_64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab3dadaa8a5fad8de3c91e8534d77c6c" name="gaab3dadaa8a5fad8de3c91e8534d77c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab3dadaa8a5fad8de3c91e8534d77c6c">&#9670;&#160;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceShaccCgUser.html#ga0833a8b6560f7ebb8c476f8be8d02729">SceShaccCgDiagnosticLevel</a> SceShaccCgDiagnosticMessage::level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga26c1f22f7c08b72da29f9c1e834acb13" name="ga26c1f22f7c08b72da29f9c1e834acb13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26c1f22f7c08b72da29f9c1e834acb13">&#9670;&#160;</a></span>code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgDiagnosticMessage::code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6620d81ad554e295f108a9cbb85ed11c" name="ga6620d81ad554e295f108a9cbb85ed11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6620d81ad554e295f108a9cbb85ed11c">&#9670;&#160;</a></span>location</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgSourceLocation">SceShaccCgSourceLocation</a>* SceShaccCgDiagnosticMessage::location</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5c754b3101458d0d591933dbb15948ab" name="ga5c754b3101458d0d591933dbb15948ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c754b3101458d0d591933dbb15948ab">&#9670;&#160;</a></span>message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceShaccCgDiagnosticMessage::message</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5b151dd0055b61083273d6b308996ed9" name="ga5b151dd0055b61083273d6b308996ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b151dd0055b61083273d6b308996ed9">&#9670;&#160;</a></span>programData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* SceShaccCgCompileOutput::programData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaffb60107180a7418785f3e54fcc04f75" name="gaffb60107180a7418785f3e54fcc04f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffb60107180a7418785f3e54fcc04f75">&#9670;&#160;</a></span>programSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceShaccCgCompileOutput::programSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga39a80578e7f7ace3855548d11c3d027d" name="ga39a80578e7f7ace3855548d11c3d027d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39a80578e7f7ace3855548d11c3d027d">&#9670;&#160;</a></span>diagnosticCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceShaccCgCompileOutput::diagnosticCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae73130a13677cdb1ec0fecd2442b60d8" name="gae73130a13677cdb1ec0fecd2442b60d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae73130a13677cdb1ec0fecd2442b60d8">&#9670;&#160;</a></span>diagnostics</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__SceShaccCgUser.html#structSceShaccCgDiagnosticMessage">SceShaccCgDiagnosticMessage</a>* SceShaccCgCompileOutput::diagnostics</td>
         </tr>
       </table>
 </div><div class="memdoc">

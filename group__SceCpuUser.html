@@ -73,24 +73,28 @@ $(document).ready(function(){initNavTree('group__SceCpuUser.html',''); initResiz
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceCpu.html">CPU Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="kernel_2cpu_8h.html">psp2/kernel/cpu.h</a>&gt;</span> </div>
-<div class="ttc" id="akernel_2cpu_8h_html"><div class="ttname"><a href="kernel_2cpu_8h.html">cpu.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceSysmem_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga8c14240b401edbdad9b2c2ee7855c479" id="r_ga8c14240b401edbdad9b2c2ee7855c479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga8c14240b401edbdad9b2c2ee7855c479">SCE_KERNEL_CPU_MASK_USER_0</a>&#160;&#160;&#160;0x00010000</td></tr>
+<tr class="separator:ga8c14240b401edbdad9b2c2ee7855c479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f9e058206fd87c5f869c072747a13d9" id="r_ga7f9e058206fd87c5f869c072747a13d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga7f9e058206fd87c5f869c072747a13d9">SCE_KERNEL_CPU_MASK_USER_1</a>&#160;&#160;&#160;0x00020000</td></tr>
+<tr class="separator:ga7f9e058206fd87c5f869c072747a13d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab131da8b01b1abdb4f8c41de66368d3d" id="r_gab131da8b01b1abdb4f8c41de66368d3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#gab131da8b01b1abdb4f8c41de66368d3d">SCE_KERNEL_CPU_MASK_USER_2</a>&#160;&#160;&#160;0x00040000</td></tr>
+<tr class="separator:gab131da8b01b1abdb4f8c41de66368d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92796fbfabc36479edd3191681b4b53e" id="r_ga92796fbfabc36479edd3191681b4b53e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga92796fbfabc36479edd3191681b4b53e">SCE_KERNEL_CPU_MASK_SYSTEM</a>&#160;&#160;&#160;0x00080000</td></tr>
+<tr class="separator:ga92796fbfabc36479edd3191681b4b53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1b8d77bef37b159180e6e7bcf038cd" id="r_ga2b1b8d77bef37b159180e6e7bcf038cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga2b1b8d77bef37b159180e6e7bcf038cd">SCE_KERNEL_CPU_MASK_USER_ALL</a>&#160;&#160;&#160;                        (<a class="el" href="group__SceCpuUser.html#ga8c14240b401edbdad9b2c2ee7855c479">SCE_KERNEL_CPU_MASK_USER_0</a> | <a class="el" href="group__SceCpuUser.html#ga7f9e058206fd87c5f869c072747a13d9">SCE_KERNEL_CPU_MASK_USER_1</a> | <a class="el" href="group__SceCpuUser.html#gab131da8b01b1abdb4f8c41de66368d3d">SCE_KERNEL_CPU_MASK_USER_2</a>)</td></tr>
+<tr class="separator:ga2b1b8d77bef37b159180e6e7bcf038cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga2505822a5e77c5a885beab743dac2a10" id="r_ga2505822a5e77c5a885beab743dac2a10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga2505822a5e77c5a885beab743dac2a10">sceKernelGetCpuId</a> (void)</td></tr>
@@ -239,21 +243,20 @@ Functions</h2></td></tr>
 <tr class="separator:gaab074ce7033713a1fc61c8ab423354ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e10e598757312c6b886c043f1c8e835" id="r_ga0e10e598757312c6b886c043f1c8e835"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga0e10e598757312c6b886c043f1c8e835">sceKernelAtomicDecIfPositive64</a> (<a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *store)</td></tr>
 <tr class="separator:ga0e10e598757312c6b886c043f1c8e835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga8c14240b401edbdad9b2c2ee7855c479" id="r_ga8c14240b401edbdad9b2c2ee7855c479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga8c14240b401edbdad9b2c2ee7855c479">SCE_KERNEL_CPU_MASK_USER_0</a>&#160;&#160;&#160;0x00010000</td></tr>
-<tr class="separator:ga8c14240b401edbdad9b2c2ee7855c479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f9e058206fd87c5f869c072747a13d9" id="r_ga7f9e058206fd87c5f869c072747a13d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga7f9e058206fd87c5f869c072747a13d9">SCE_KERNEL_CPU_MASK_USER_1</a>&#160;&#160;&#160;0x00020000</td></tr>
-<tr class="separator:ga7f9e058206fd87c5f869c072747a13d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab131da8b01b1abdb4f8c41de66368d3d" id="r_gab131da8b01b1abdb4f8c41de66368d3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#gab131da8b01b1abdb4f8c41de66368d3d">SCE_KERNEL_CPU_MASK_USER_2</a>&#160;&#160;&#160;0x00040000</td></tr>
-<tr class="separator:gab131da8b01b1abdb4f8c41de66368d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92796fbfabc36479edd3191681b4b53e" id="r_ga92796fbfabc36479edd3191681b4b53e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga92796fbfabc36479edd3191681b4b53e">SCE_KERNEL_CPU_MASK_SYSTEM</a>&#160;&#160;&#160;0x00080000</td></tr>
-<tr class="separator:ga92796fbfabc36479edd3191681b4b53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b1b8d77bef37b159180e6e7bcf038cd" id="r_ga2b1b8d77bef37b159180e6e7bcf038cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCpuUser.html#ga2b1b8d77bef37b159180e6e7bcf038cd">SCE_KERNEL_CPU_MASK_USER_ALL</a>&#160;&#160;&#160;                        (<a class="el" href="group__SceCpuUser.html#ga8c14240b401edbdad9b2c2ee7855c479">SCE_KERNEL_CPU_MASK_USER_0</a> | <a class="el" href="group__SceCpuUser.html#ga7f9e058206fd87c5f869c072747a13d9">SCE_KERNEL_CPU_MASK_USER_1</a> | <a class="el" href="group__SceCpuUser.html#gab131da8b01b1abdb4f8c41de66368d3d">SCE_KERNEL_CPU_MASK_USER_2</a>)</td></tr>
-<tr class="separator:ga2b1b8d77bef37b159180e6e7bcf038cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="kernel_2cpu_8h.html">psp2/kernel/cpu.h</a>&gt;</span> </div>
+<div class="ttc" id="akernel_2cpu_8h_html"><div class="ttname"><a href="kernel_2cpu_8h.html">cpu.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSysmem_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga8c14240b401edbdad9b2c2ee7855c479" name="ga8c14240b401edbdad9b2c2ee7855c479"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8c14240b401edbdad9b2c2ee7855c479">&#9670;&#160;</a></span>SCE_KERNEL_CPU_MASK_USER_0</h2>
 

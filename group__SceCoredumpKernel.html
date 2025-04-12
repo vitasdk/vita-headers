@@ -73,11 +73,63 @@ $(document).ready(function(){initNavTree('group__SceCoredumpKernel.html',''); in
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__debug.html">Debug</a> &raquo; <a class="el" href="group__SceCoredump.html">coredump module</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceCoredumpTriggerParam" id="r_structSceCoredumpTriggerParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#structSceCoredumpTriggerParam">SceCoredumpTriggerParam</a></td></tr>
+<tr class="separator:structSceCoredumpTriggerParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gad252716c7e87a79af3b307bc0a31729a" id="r_gad252716c7e87a79af3b307bc0a31729a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a">SceKernelCoredumpStateUpdateCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td></tr>
+<tr class="separator:gad252716c7e87a79af3b307bc0a31729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b500348d7c447fba2054cfb237d440b" id="r_ga8b500348d7c447fba2054cfb237d440b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b">SceKernelCoredumpStateFinishCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td></tr>
+<tr class="separator:ga8b500348d7c447fba2054cfb237d440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga3d2107d2724d74ba548421380f4e1b08" id="r_ga3d2107d2724d74ba548421380f4e1b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga3d2107d2724d74ba548421380f4e1b08">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceCoredumpKernel.html#structSceCoredumpTriggerParam">SceCoredumpTriggerParam</a>)</td></tr>
+<tr class="separator:ga3d2107d2724d74ba548421380f4e1b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga2cd49dc8342df9165288fd9b91ae8683" id="r_ga2cd49dc8342df9165288fd9b91ae8683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga2cd49dc8342df9165288fd9b91ae8683">SceCoredumpTriggerParam::size</a></td></tr>
+<tr class="separator:ga2cd49dc8342df9165288fd9b91ae8683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5642b818a7b89e97a3307bfb46f927c4" id="r_ga5642b818a7b89e97a3307bfb46f927c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga5642b818a7b89e97a3307bfb46f927c4">SceCoredumpTriggerParam::data_0x04</a></td></tr>
+<tr class="separator:ga5642b818a7b89e97a3307bfb46f927c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64dbc5a19a2f748d6241ba68b9b4c3e0" id="r_ga64dbc5a19a2f748d6241ba68b9b4c3e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga64dbc5a19a2f748d6241ba68b9b4c3e0">SceCoredumpTriggerParam::data_0x08</a></td></tr>
+<tr class="separator:ga64dbc5a19a2f748d6241ba68b9b4c3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec45f125abe4976e4ff205536eb43341" id="r_gaec45f125abe4976e4ff205536eb43341"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gaec45f125abe4976e4ff205536eb43341">SceCoredumpTriggerParam::data_0x0C</a></td></tr>
+<tr class="separator:gaec45f125abe4976e4ff205536eb43341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2dbe661669f56b61d5ff146cdfcb630" id="r_gac2dbe661669f56b61d5ff146cdfcb630"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gac2dbe661669f56b61d5ff146cdfcb630">SceCoredumpTriggerParam::data_0x10</a></td></tr>
+<tr class="separator:gac2dbe661669f56b61d5ff146cdfcb630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bca484b11622ff0fd5d63c6e596f813" id="r_ga4bca484b11622ff0fd5d63c6e596f813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga4bca484b11622ff0fd5d63c6e596f813">SceCoredumpTriggerParam::titleid_len</a></td></tr>
+<tr class="separator:ga4bca484b11622ff0fd5d63c6e596f813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e02a1cf8a66b35f8ddc0845258b1834" id="r_ga6e02a1cf8a66b35f8ddc0845258b1834"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga6e02a1cf8a66b35f8ddc0845258b1834">SceCoredumpTriggerParam::titleid</a></td></tr>
+<tr class="separator:ga6e02a1cf8a66b35f8ddc0845258b1834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54e7792b14fc7be45de332668e7af289" id="r_ga54e7792b14fc7be45de332668e7af289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga54e7792b14fc7be45de332668e7af289">SceCoredumpTriggerParam::app_name_len</a></td></tr>
+<tr class="separator:ga54e7792b14fc7be45de332668e7af289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ce4e8bfb595af8f1dc76106c07601ba" id="r_ga5ce4e8bfb595af8f1dc76106c07601ba"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga5ce4e8bfb595af8f1dc76106c07601ba">SceCoredumpTriggerParam::app_name</a></td></tr>
+<tr class="separator:ga5ce4e8bfb595af8f1dc76106c07601ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2feecc9d76ab956eb985c6b9dee40901" id="r_ga2feecc9d76ab956eb985c6b9dee40901"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga2feecc9d76ab956eb985c6b9dee40901">SceCoredumpTriggerParam::data_0x24</a></td></tr>
+<tr class="separator:ga2feecc9d76ab956eb985c6b9dee40901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08423d3a53f9a08c8a7d3979bb9403c8" id="r_ga08423d3a53f9a08c8a7d3979bb9403c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga08423d3a53f9a08c8a7d3979bb9403c8">SceCoredumpTriggerParam::data_0x28</a></td></tr>
+<tr class="separator:ga08423d3a53f9a08c8a7d3979bb9403c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36c6361c14ff0f7749a02d70d20a489a" id="r_ga36c6361c14ff0f7749a02d70d20a489a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga36c6361c14ff0f7749a02d70d20a489a">SceCoredumpTriggerParam::crash_thid</a></td></tr>
+<tr class="separator:ga36c6361c14ff0f7749a02d70d20a489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b8eabeb17ca4837c87756c47ac02ba6" id="r_ga8b8eabeb17ca4837c87756c47ac02ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b8eabeb17ca4837c87756c47ac02ba6">SceCoredumpTriggerParam::data_0x30</a></td></tr>
+<tr class="separator:ga8b8eabeb17ca4837c87756c47ac02ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -90,20 +142,7 @@ $(document).ready(function(){initNavTree('group__SceCoredumpKernel.html',''); in
 </p><div class="fragment"><div class="line">SceCoredumpForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga3d2107d2724d74ba548421380f4e1b08" id="r_ga3d2107d2724d74ba548421380f4e1b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga3d2107d2724d74ba548421380f4e1b08">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceCoredumpKernel.html#structSceCoredumpTriggerParam">SceCoredumpTriggerParam</a>)</td></tr>
-<tr class="separator:ga3d2107d2724d74ba548421380f4e1b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gad252716c7e87a79af3b307bc0a31729a" id="r_gad252716c7e87a79af3b307bc0a31729a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a">SceKernelCoredumpStateUpdateCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td></tr>
-<tr class="separator:gad252716c7e87a79af3b307bc0a31729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b500348d7c447fba2054cfb237d440b" id="r_ga8b500348d7c447fba2054cfb237d440b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b">SceKernelCoredumpStateFinishCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td></tr>
-<tr class="separator:ga8b500348d7c447fba2054cfb237d440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceCoredumpTriggerParam" id="structSceCoredumpTriggerParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceCoredumpTriggerParam">&#9670;&#160;</a></span>SceCoredumpTriggerParam</h2>
 
@@ -251,6 +290,189 @@ data_0x30</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga2cd49dc8342df9165288fd9b91ae8683" name="ga2cd49dc8342df9165288fd9b91ae8683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2cd49dc8342df9165288fd9b91ae8683">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCoredumpTriggerParam::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5642b818a7b89e97a3307bfb46f927c4" name="ga5642b818a7b89e97a3307bfb46f927c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5642b818a7b89e97a3307bfb46f927c4">&#9670;&#160;</a></span>data_0x04</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga64dbc5a19a2f748d6241ba68b9b4c3e0" name="ga64dbc5a19a2f748d6241ba68b9b4c3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64dbc5a19a2f748d6241ba68b9b4c3e0">&#9670;&#160;</a></span>data_0x08</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaec45f125abe4976e4ff205536eb43341" name="gaec45f125abe4976e4ff205536eb43341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec45f125abe4976e4ff205536eb43341">&#9670;&#160;</a></span>data_0x0C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac2dbe661669f56b61d5ff146cdfcb630" name="gac2dbe661669f56b61d5ff146cdfcb630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2dbe661669f56b61d5ff146cdfcb630">&#9670;&#160;</a></span>data_0x10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4bca484b11622ff0fd5d63c6e596f813" name="ga4bca484b11622ff0fd5d63c6e596f813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bca484b11622ff0fd5d63c6e596f813">&#9670;&#160;</a></span>titleid_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCoredumpTriggerParam::titleid_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e02a1cf8a66b35f8ddc0845258b1834" name="ga6e02a1cf8a66b35f8ddc0845258b1834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e02a1cf8a66b35f8ddc0845258b1834">&#9670;&#160;</a></span>titleid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceCoredumpTriggerParam::titleid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga54e7792b14fc7be45de332668e7af289" name="ga54e7792b14fc7be45de332668e7af289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54e7792b14fc7be45de332668e7af289">&#9670;&#160;</a></span>app_name_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceCoredumpTriggerParam::app_name_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5ce4e8bfb595af8f1dc76106c07601ba" name="ga5ce4e8bfb595af8f1dc76106c07601ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ce4e8bfb595af8f1dc76106c07601ba">&#9670;&#160;</a></span>app_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceCoredumpTriggerParam::app_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2feecc9d76ab956eb985c6b9dee40901" name="ga2feecc9d76ab956eb985c6b9dee40901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2feecc9d76ab956eb985c6b9dee40901">&#9670;&#160;</a></span>data_0x24</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga08423d3a53f9a08c8a7d3979bb9403c8" name="ga08423d3a53f9a08c8a7d3979bb9403c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08423d3a53f9a08c8a7d3979bb9403c8">&#9670;&#160;</a></span>data_0x28</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga36c6361c14ff0f7749a02d70d20a489a" name="ga36c6361c14ff0f7749a02d70d20a489a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36c6361c14ff0f7749a02d70d20a489a">&#9670;&#160;</a></span>crash_thid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceCoredumpTriggerParam::crash_thid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8b8eabeb17ca4837c87756c47ac02ba6" name="ga8b8eabeb17ca4837c87756c47ac02ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b8eabeb17ca4837c87756c47ac02ba6">&#9670;&#160;</a></span>data_0x30</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceCoredumpTriggerParam::data_0x30</td>
         </tr>
       </table>
 </div><div class="memdoc">

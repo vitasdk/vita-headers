@@ -73,25 +73,81 @@ $(document).ready(function(){initNavTree('group__SceNetCtlUser.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Net.html">Network</a> &raquo; <a class="el" href="group__SceNetCtl.html">Network Control Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="netctl_8h.html">psp2/net/netctl.h</a>&gt;</span> </div>
-<div class="ttc" id="anetctl_8h_html"><div class="ttname"><a href="netctl_8h.html">netctl.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceNetCtl_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:unionSceNetCtlInfo" id="r_unionSceNetCtlInfo"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#unionSceNetCtlInfo">SceNetCtlInfo</a></td></tr>
+<tr class="separator:unionSceNetCtlInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceNetCtlNatInfo" id="r_structSceNetCtlNatInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#structSceNetCtlNatInfo">SceNetCtlNatInfo</a></td></tr>
+<tr class="separator:structSceNetCtlNatInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceNetCtlAdhocPeerInfo" id="r_structSceNetCtlAdhocPeerInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#structSceNetCtlAdhocPeerInfo">SceNetCtlAdhocPeerInfo</a></td></tr>
+<tr class="separator:structSceNetCtlAdhocPeerInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga7656af6427a1eeaa42933887fc57844e" id="r_ga7656af6427a1eeaa42933887fc57844e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga7656af6427a1eeaa42933887fc57844e">SCE_NETCTL_INFO_CONFIG_NAME_LEN_MAX</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:ga7656af6427a1eeaa42933887fc57844e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga627b96dbb999f01d9d6da988f543d776" id="r_ga627b96dbb999f01d9d6da988f543d776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776">SCE_NETCTL_INFO_SSID_LEN_MAX</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ga627b96dbb999f01d9d6da988f543d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gada4e29b4dfe14978ecd924fbdf6c030f" id="r_gada4e29b4dfe14978ecd924fbdf6c030f"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gada4e29b4dfe14978ecd924fbdf6c030f">SceNetCtlCallback</a>) (int event_type, void *arg)</td></tr>
+<tr class="separator:gada4e29b4dfe14978ecd924fbdf6c030f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga66858d830843be2be6b779989d10cf25" id="r_ga66858d830843be2be6b779989d10cf25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga66858d830843be2be6b779989d10cf25">SceNetCtlInfoType</a> { <br />
+&#160;&#160;<a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a27650b1ecde557637cfdd555df7f8675">SCE_NETCTL_INFO_GET_CNF_NAME</a> = 1
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25af25801f3edcf7f5549665301363a4f9f">SCE_NETCTL_INFO_GET_DEVICE</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a9af44c3eaedb189cf1eb4d4fb405368e">SCE_NETCTL_INFO_GET_ETHER_ADDR</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25aa061bc5bc5984e56a79db838c48692dd">SCE_NETCTL_INFO_GET_MTU</a>
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25aac667a4a243cd3df153854783d82b538">SCE_NETCTL_INFO_GET_LINK</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25afc65584425472415ecb6da9ac8d1d37c">SCE_NETCTL_INFO_GET_BSSID</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a792e1f967f617f48780a7460f9671355">SCE_NETCTL_INFO_GET_SSID</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a7022998f396558e2e03d309696652421">SCE_NETCTL_INFO_GET_WIFI_SECURITY</a>
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a64c4668271a6ba86609b4d8dd03b535c">SCE_NETCTL_INFO_GET_RSSI_DBM</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25aaba5430a56d4a3f18adfee4e234cf212">SCE_NETCTL_INFO_GET_RSSI_PERCENTAGE</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25abd596a02c4d7afbda680f6fd4a54629c">SCE_NETCTL_INFO_GET_CHANNEL</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25ae7f5e0b4a5113aaf795e3fc091131f02">SCE_NETCTL_INFO_GET_IP_CONFIG</a>
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a6f85be57a6407a07cb128065e09e39ae">SCE_NETCTL_INFO_GET_DHCP_HOSTNAME</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25af3421c3a4aa5f426f12765c0d9eeb72e">SCE_NETCTL_INFO_GET_PPPOE_AUTH_NAME</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25ac88a99619ef432eecd21133f83f82a18">SCE_NETCTL_INFO_GET_IP_ADDRESS</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25ac18d91f782e7f7b90fa7f236ec816f49">SCE_NETCTL_INFO_GET_NETMASK</a>
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25ae5b8d765621a43c8f9b0bccbf47426ca">SCE_NETCTL_INFO_GET_DEFAULT_ROUTE</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25aa6da48d8a604d81f9d73e8cd65240745">SCE_NETCTL_INFO_GET_PRIMARY_DNS</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a756f4164533a1503b2cd3cc0d37b2b65">SCE_NETCTL_INFO_GET_SECONDARY_DNS</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25a092f968c0a4507e7dacec3198a848b20">SCE_NETCTL_INFO_GET_HTTP_PROXY_CONFIG</a>
+, <br />
+&#160;&#160;<a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25aa7b36c71f321fd3e8235722347427213">SCE_NETCTL_INFO_GET_HTTP_PROXY_SERVER</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga66858d830843be2be6b779989d10cf25ac49d93caf56c79a43d858b9ef9738279">SCE_NETCTL_INFO_GET_HTTP_PROXY_PORT</a>
+<br />
+ }</td></tr>
+<tr class="separator:ga66858d830843be2be6b779989d10cf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5eb6373a8ba8a512e5ebfc18c70584f4" id="r_ga5eb6373a8ba8a512e5ebfc18c70584f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga5eb6373a8ba8a512e5ebfc18c70584f4">SceNetCtlState</a> { <a class="el" href="group__SceNetCtlUser.html#gga5eb6373a8ba8a512e5ebfc18c70584f4aad3192bfaa402ee69a565447d4d1b42f">SCE_NETCTL_STATE_DISCONNECTED</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga5eb6373a8ba8a512e5ebfc18c70584f4a861c46ffaf32653d68ba5942ee6cd9cb">SCE_NETCTL_STATE_CONNECTING</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga5eb6373a8ba8a512e5ebfc18c70584f4a18b8f09ef624dfd3ee2f9f9b26e2588c">SCE_NETCTL_STATE_FINALIZING</a>
+, <a class="el" href="group__SceNetCtlUser.html#gga5eb6373a8ba8a512e5ebfc18c70584f4a7ddafe842893a52a261531a06bb00bcd">SCE_NETCTL_STATE_CONNECTED</a>
+ }</td></tr>
+<tr class="separator:ga5eb6373a8ba8a512e5ebfc18c70584f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga9a9ec697ba08e7e75951085eb1f033cb" id="r_ga9a9ec697ba08e7e75951085eb1f033cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga9a9ec697ba08e7e75951085eb1f033cb">VITASDK_BUILD_ASSERT_EQ</a> (0x100, <a class="el" href="group__SceNetCtlUser.html#unionSceNetCtlInfo">SceNetCtlInfo</a>)</td></tr>
@@ -133,19 +189,78 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2faaa0a1ac8d49af7feb0e40134ea5e3" id="r_ga2faaa0a1ac8d49af7feb0e40134ea5e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga2faaa0a1ac8d49af7feb0e40134ea5e3">sceNetCtlAdhocGetInAddr</a> (<a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *inaddr)</td></tr>
 <tr class="separator:ga2faaa0a1ac8d49af7feb0e40134ea5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gada4e29b4dfe14978ecd924fbdf6c030f" id="r_gada4e29b4dfe14978ecd924fbdf6c030f"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gada4e29b4dfe14978ecd924fbdf6c030f">SceNetCtlCallback</a>) (int event_type, void *arg)</td></tr>
-<tr class="separator:gada4e29b4dfe14978ecd924fbdf6c030f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga7656af6427a1eeaa42933887fc57844e" id="r_ga7656af6427a1eeaa42933887fc57844e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga7656af6427a1eeaa42933887fc57844e">SCE_NETCTL_INFO_CONFIG_NAME_LEN_MAX</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:ga7656af6427a1eeaa42933887fc57844e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga627b96dbb999f01d9d6da988f543d776" id="r_ga627b96dbb999f01d9d6da988f543d776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776">SCE_NETCTL_INFO_SSID_LEN_MAX</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:ga627b96dbb999f01d9d6da988f543d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gae78ea0a6e355c843804d7abd458c79ea" id="r_gae78ea0a6e355c843804d7abd458c79ea"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gae78ea0a6e355c843804d7abd458c79ea">SceNetCtlInfo::cnf_name</a> [<a class="el" href="group__SceNetCtlUser.html#ga7656af6427a1eeaa42933887fc57844e">SCE_NETCTL_INFO_CONFIG_NAME_LEN_MAX</a>+1]</td></tr>
+<tr class="separator:gae78ea0a6e355c843804d7abd458c79ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacce3d6329ac9d1f84344dd526f1508cf" id="r_gacce3d6329ac9d1f84344dd526f1508cf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gacce3d6329ac9d1f84344dd526f1508cf">SceNetCtlInfo::device</a></td></tr>
+<tr class="separator:gacce3d6329ac9d1f84344dd526f1508cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8851f22c7a32d1a58d54c2d41f05727b" id="r_ga8851f22c7a32d1a58d54c2d41f05727b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga8851f22c7a32d1a58d54c2d41f05727b">SceNetCtlInfo::ether_addr</a></td></tr>
+<tr class="separator:ga8851f22c7a32d1a58d54c2d41f05727b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d010550c40c6ca695b59e3e0bb95b70" id="r_ga0d010550c40c6ca695b59e3e0bb95b70"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga0d010550c40c6ca695b59e3e0bb95b70">SceNetCtlInfo::mtu</a></td></tr>
+<tr class="separator:ga0d010550c40c6ca695b59e3e0bb95b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeac5a70d606b094ddd930711ec8d1af0" id="r_gaeac5a70d606b094ddd930711ec8d1af0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gaeac5a70d606b094ddd930711ec8d1af0">SceNetCtlInfo::link</a></td></tr>
+<tr class="separator:gaeac5a70d606b094ddd930711ec8d1af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc3da747b2be88657a00e0c7478b395" id="r_ga9fc3da747b2be88657a00e0c7478b395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga9fc3da747b2be88657a00e0c7478b395">SceNetCtlInfo::bssid</a></td></tr>
+<tr class="separator:ga9fc3da747b2be88657a00e0c7478b395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f45a42c32b302b107cb50268cb91f9d" id="r_ga0f45a42c32b302b107cb50268cb91f9d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga0f45a42c32b302b107cb50268cb91f9d">SceNetCtlInfo::ssid</a> [<a class="el" href="group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776">SCE_NETCTL_INFO_SSID_LEN_MAX</a>+1]</td></tr>
+<tr class="separator:ga0f45a42c32b302b107cb50268cb91f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1450116bb4c10213efa620a1e489e7be" id="r_ga1450116bb4c10213efa620a1e489e7be"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga1450116bb4c10213efa620a1e489e7be">SceNetCtlInfo::wifi_security</a></td></tr>
+<tr class="separator:ga1450116bb4c10213efa620a1e489e7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf65e4708e28505d57768c8382f33f958" id="r_gaf65e4708e28505d57768c8382f33f958"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gaf65e4708e28505d57768c8382f33f958">SceNetCtlInfo::rssi_dbm</a></td></tr>
+<tr class="separator:gaf65e4708e28505d57768c8382f33f958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99bca134e7e1129fe6c9e1ce9598da93" id="r_ga99bca134e7e1129fe6c9e1ce9598da93"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga99bca134e7e1129fe6c9e1ce9598da93">SceNetCtlInfo::rssi_percentage</a></td></tr>
+<tr class="separator:ga99bca134e7e1129fe6c9e1ce9598da93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga677ab7b4d215e623f4c78f6a345acc2b" id="r_ga677ab7b4d215e623f4c78f6a345acc2b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga677ab7b4d215e623f4c78f6a345acc2b">SceNetCtlInfo::channel</a></td></tr>
+<tr class="separator:ga677ab7b4d215e623f4c78f6a345acc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c76c70dc7236733c6bc20f6eea0238b" id="r_ga5c76c70dc7236733c6bc20f6eea0238b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga5c76c70dc7236733c6bc20f6eea0238b">SceNetCtlInfo::ip_config</a></td></tr>
+<tr class="separator:ga5c76c70dc7236733c6bc20f6eea0238b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53c7ef96f6795c02c4790689905632e5" id="r_ga53c7ef96f6795c02c4790689905632e5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga53c7ef96f6795c02c4790689905632e5">SceNetCtlInfo::dhcp_hostname</a> [256]</td></tr>
+<tr class="separator:ga53c7ef96f6795c02c4790689905632e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98a9d2acb9e053ad167921bedd14fe78" id="r_ga98a9d2acb9e053ad167921bedd14fe78"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga98a9d2acb9e053ad167921bedd14fe78">SceNetCtlInfo::pppoe_auth_name</a> [128]</td></tr>
+<tr class="separator:ga98a9d2acb9e053ad167921bedd14fe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ad790c55efacc8372468d41a0cee157" id="r_ga7ad790c55efacc8372468d41a0cee157"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga7ad790c55efacc8372468d41a0cee157">SceNetCtlInfo::ip_address</a> [16]</td></tr>
+<tr class="separator:ga7ad790c55efacc8372468d41a0cee157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6ac4b986b2ada8d2c5ff116967e925f" id="r_gae6ac4b986b2ada8d2c5ff116967e925f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gae6ac4b986b2ada8d2c5ff116967e925f">SceNetCtlInfo::netmask</a> [16]</td></tr>
+<tr class="separator:gae6ac4b986b2ada8d2c5ff116967e925f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4873a13df1b8caa7977d4bfcdcad9c2f" id="r_ga4873a13df1b8caa7977d4bfcdcad9c2f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga4873a13df1b8caa7977d4bfcdcad9c2f">SceNetCtlInfo::default_route</a> [16]</td></tr>
+<tr class="separator:ga4873a13df1b8caa7977d4bfcdcad9c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37e424a44021106e8641ddcab9e4d4d3" id="r_ga37e424a44021106e8641ddcab9e4d4d3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga37e424a44021106e8641ddcab9e4d4d3">SceNetCtlInfo::primary_dns</a> [16]</td></tr>
+<tr class="separator:ga37e424a44021106e8641ddcab9e4d4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5866b608ee87a7affc23b1c9960e8e7" id="r_gac5866b608ee87a7affc23b1c9960e8e7"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gac5866b608ee87a7affc23b1c9960e8e7">SceNetCtlInfo::secondary_dns</a> [16]</td></tr>
+<tr class="separator:gac5866b608ee87a7affc23b1c9960e8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dc06d668d0e31fe8aee61b8cd6293eb" id="r_ga5dc06d668d0e31fe8aee61b8cd6293eb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga5dc06d668d0e31fe8aee61b8cd6293eb">SceNetCtlInfo::http_proxy_config</a></td></tr>
+<tr class="separator:ga5dc06d668d0e31fe8aee61b8cd6293eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6bbeb0d48be5071a5983af5e875a62b" id="r_gad6bbeb0d48be5071a5983af5e875a62b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gad6bbeb0d48be5071a5983af5e875a62b">SceNetCtlInfo::http_proxy_server</a> [256]</td></tr>
+<tr class="separator:gad6bbeb0d48be5071a5983af5e875a62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab472afc3c6820cb860379c3954da5ce9" id="r_gab472afc3c6820cb860379c3954da5ce9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gab472afc3c6820cb860379c3954da5ce9">SceNetCtlInfo::http_proxy_port</a></td></tr>
+<tr class="separator:gab472afc3c6820cb860379c3954da5ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga538c438311da3034a80ee1fe5b27ce97" id="r_ga538c438311da3034a80ee1fe5b27ce97"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga538c438311da3034a80ee1fe5b27ce97">SceNetCtlNatInfo::size</a></td></tr>
+<tr class="separator:ga538c438311da3034a80ee1fe5b27ce97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ffe7318166b145e47edef6fb5260816" id="r_ga2ffe7318166b145e47edef6fb5260816"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga2ffe7318166b145e47edef6fb5260816">SceNetCtlNatInfo::stun_status</a></td></tr>
+<tr class="separator:ga2ffe7318166b145e47edef6fb5260816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e6eef05fa17e10c680be939d2587d5a" id="r_ga5e6eef05fa17e10c680be939d2587d5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga5e6eef05fa17e10c680be939d2587d5a">SceNetCtlNatInfo::nat_type</a></td></tr>
+<tr class="separator:ga5e6eef05fa17e10c680be939d2587d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a2aee0ca9b4b263601bb75095ba2874" id="r_ga3a2aee0ca9b4b263601bb75095ba2874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#ga3a2aee0ca9b4b263601bb75095ba2874">SceNetCtlNatInfo::mapped_addr</a></td></tr>
+<tr class="separator:ga3a2aee0ca9b4b263601bb75095ba2874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd9c0f27b41c4c63dc51df01a03aca04" id="r_gadd9c0f27b41c4c63dc51df01a03aca04"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceNetCtlUser.html#structSceNetCtlAdhocPeerInfo">SceNetCtlAdhocPeerInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gadd9c0f27b41c4c63dc51df01a03aca04">SceNetCtlAdhocPeerInfo::next</a></td></tr>
+<tr class="separator:gadd9c0f27b41c4c63dc51df01a03aca04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf47af063637391123f459c66bbfb9629" id="r_gaf47af063637391123f459c66bbfb9629"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNetCtlUser.html#gaf47af063637391123f459c66bbfb9629">SceNetCtlAdhocPeerInfo::inet_addr</a></td></tr>
+<tr class="separator:gaf47af063637391123f459c66bbfb9629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="netctl_8h.html">psp2/net/netctl.h</a>&gt;</span> </div>
+<div class="ttc" id="anetctl_8h_html"><div class="ttname"><a href="netctl_8h.html">netctl.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceNetCtl_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="unionSceNetCtlInfo" id="unionSceNetCtlInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#unionSceNetCtlInfo">&#9670;&#160;</a></span>SceNetCtlInfo</h2>
 
@@ -903,6 +1018,399 @@ inet_addr</td>
           <td class="paramtype"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> *&#160;</td>
           <td class="paramname"><em>inaddr</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gae78ea0a6e355c843804d7abd458c79ea" name="gae78ea0a6e355c843804d7abd458c79ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae78ea0a6e355c843804d7abd458c79ea">&#9670;&#160;</a></span>cnf_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::cnf_name[<a class="el" href="group__SceNetCtlUser.html#ga7656af6427a1eeaa42933887fc57844e">SCE_NETCTL_INFO_CONFIG_NAME_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacce3d6329ac9d1f84344dd526f1508cf" name="gacce3d6329ac9d1f84344dd526f1508cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacce3d6329ac9d1f84344dd526f1508cf">&#9670;&#160;</a></span>device</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::device</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8851f22c7a32d1a58d54c2d41f05727b" name="ga8851f22c7a32d1a58d54c2d41f05727b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8851f22c7a32d1a58d54c2d41f05727b">&#9670;&#160;</a></span>ether_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> SceNetCtlInfo::ether_addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0d010550c40c6ca695b59e3e0bb95b70" name="ga0d010550c40c6ca695b59e3e0bb95b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d010550c40c6ca695b59e3e0bb95b70">&#9670;&#160;</a></span>mtu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::mtu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeac5a70d606b094ddd930711ec8d1af0" name="gaeac5a70d606b094ddd930711ec8d1af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeac5a70d606b094ddd930711ec8d1af0">&#9670;&#160;</a></span>link</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::link</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9fc3da747b2be88657a00e0c7478b395" name="ga9fc3da747b2be88657a00e0c7478b395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fc3da747b2be88657a00e0c7478b395">&#9670;&#160;</a></span>bssid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceNetUser.html#structSceNetEtherAddr">SceNetEtherAddr</a> SceNetCtlInfo::bssid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f45a42c32b302b107cb50268cb91f9d" name="ga0f45a42c32b302b107cb50268cb91f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f45a42c32b302b107cb50268cb91f9d">&#9670;&#160;</a></span>ssid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::ssid[<a class="el" href="group__SceNetCtlUser.html#ga627b96dbb999f01d9d6da988f543d776">SCE_NETCTL_INFO_SSID_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1450116bb4c10213efa620a1e489e7be" name="ga1450116bb4c10213efa620a1e489e7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1450116bb4c10213efa620a1e489e7be">&#9670;&#160;</a></span>wifi_security</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::wifi_security</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf65e4708e28505d57768c8382f33f958" name="gaf65e4708e28505d57768c8382f33f958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf65e4708e28505d57768c8382f33f958">&#9670;&#160;</a></span>rssi_dbm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::rssi_dbm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga99bca134e7e1129fe6c9e1ce9598da93" name="ga99bca134e7e1129fe6c9e1ce9598da93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99bca134e7e1129fe6c9e1ce9598da93">&#9670;&#160;</a></span>rssi_percentage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::rssi_percentage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga677ab7b4d215e623f4c78f6a345acc2b" name="ga677ab7b4d215e623f4c78f6a345acc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga677ab7b4d215e623f4c78f6a345acc2b">&#9670;&#160;</a></span>channel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5c76c70dc7236733c6bc20f6eea0238b" name="ga5c76c70dc7236733c6bc20f6eea0238b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c76c70dc7236733c6bc20f6eea0238b">&#9670;&#160;</a></span>ip_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::ip_config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga53c7ef96f6795c02c4790689905632e5" name="ga53c7ef96f6795c02c4790689905632e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53c7ef96f6795c02c4790689905632e5">&#9670;&#160;</a></span>dhcp_hostname</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::dhcp_hostname[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga98a9d2acb9e053ad167921bedd14fe78" name="ga98a9d2acb9e053ad167921bedd14fe78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98a9d2acb9e053ad167921bedd14fe78">&#9670;&#160;</a></span>pppoe_auth_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::pppoe_auth_name[128]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7ad790c55efacc8372468d41a0cee157" name="ga7ad790c55efacc8372468d41a0cee157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ad790c55efacc8372468d41a0cee157">&#9670;&#160;</a></span>ip_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::ip_address[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae6ac4b986b2ada8d2c5ff116967e925f" name="gae6ac4b986b2ada8d2c5ff116967e925f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6ac4b986b2ada8d2c5ff116967e925f">&#9670;&#160;</a></span>netmask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::netmask[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4873a13df1b8caa7977d4bfcdcad9c2f" name="ga4873a13df1b8caa7977d4bfcdcad9c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4873a13df1b8caa7977d4bfcdcad9c2f">&#9670;&#160;</a></span>default_route</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::default_route[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga37e424a44021106e8641ddcab9e4d4d3" name="ga37e424a44021106e8641ddcab9e4d4d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37e424a44021106e8641ddcab9e4d4d3">&#9670;&#160;</a></span>primary_dns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::primary_dns[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac5866b608ee87a7affc23b1c9960e8e7" name="gac5866b608ee87a7affc23b1c9960e8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5866b608ee87a7affc23b1c9960e8e7">&#9670;&#160;</a></span>secondary_dns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::secondary_dns[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5dc06d668d0e31fe8aee61b8cd6293eb" name="ga5dc06d668d0e31fe8aee61b8cd6293eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5dc06d668d0e31fe8aee61b8cd6293eb">&#9670;&#160;</a></span>http_proxy_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::http_proxy_config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad6bbeb0d48be5071a5983af5e875a62b" name="gad6bbeb0d48be5071a5983af5e875a62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6bbeb0d48be5071a5983af5e875a62b">&#9670;&#160;</a></span>http_proxy_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceNetCtlInfo::http_proxy_server[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab472afc3c6820cb860379c3954da5ce9" name="gab472afc3c6820cb860379c3954da5ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab472afc3c6820cb860379c3954da5ce9">&#9670;&#160;</a></span>http_proxy_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlInfo::http_proxy_port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga538c438311da3034a80ee1fe5b27ce97" name="ga538c438311da3034a80ee1fe5b27ce97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga538c438311da3034a80ee1fe5b27ce97">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceNetCtlNatInfo::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2ffe7318166b145e47edef6fb5260816" name="ga2ffe7318166b145e47edef6fb5260816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ffe7318166b145e47edef6fb5260816">&#9670;&#160;</a></span>stun_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceNetCtlNatInfo::stun_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5e6eef05fa17e10c680be939d2587d5a" name="ga5e6eef05fa17e10c680be939d2587d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e6eef05fa17e10c680be939d2587d5a">&#9670;&#160;</a></span>nat_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceNetCtlNatInfo::nat_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3a2aee0ca9b4b263601bb75095ba2874" name="ga3a2aee0ca9b4b263601bb75095ba2874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a2aee0ca9b4b263601bb75095ba2874">&#9670;&#160;</a></span>mapped_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> SceNetCtlNatInfo::mapped_addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadd9c0f27b41c4c63dc51df01a03aca04" name="gadd9c0f27b41c4c63dc51df01a03aca04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd9c0f27b41c4c63dc51df01a03aca04">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceNetCtlUser.html#structSceNetCtlAdhocPeerInfo">SceNetCtlAdhocPeerInfo</a>* SceNetCtlAdhocPeerInfo::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf47af063637391123f459c66bbfb9629" name="gaf47af063637391123f459c66bbfb9629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf47af063637391123f459c66bbfb9629">&#9670;&#160;</a></span>inet_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceNetUser.html#structSceNetInAddr">SceNetInAddr</a> SceNetCtlAdhocPeerInfo::inet_addr</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -73,23 +73,53 @@ $(document).ready(function(){initNavTree('group__SceMotionUser.html',''); initRe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Input.html">Input</a> &raquo; <a class="el" href="group__SceMotion.html">Motion Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="motion_8h.html">psp2/motion.h</a>&gt;</span> </div>
-<div class="ttc" id="amotion_8h_html"><div class="ttname"><a href="motion_8h.html">motion.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceMotion_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceMotionState" id="r_structSceMotionState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#structSceMotionState">SceMotionState</a></td></tr>
+<tr class="memdesc:structSceMotionState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned motion state.  <a href="group__SceMotionUser.html#structSceMotionState">More...</a><br /></td></tr>
+<tr class="separator:structSceMotionState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceMotionSensorState" id="r_structSceMotionSensorState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#structSceMotionSensorState">SceMotionSensorState</a></td></tr>
+<tr class="memdesc:structSceMotionSensorState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned motion sensor state.  <a href="group__SceMotionUser.html#structSceMotionSensorState">More...</a><br /></td></tr>
+<tr class="separator:structSceMotionSensorState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceMotionDeviceLocation" id="r_structSceMotionDeviceLocation"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#structSceMotionDeviceLocation">SceMotionDeviceLocation</a></td></tr>
+<tr class="memdesc:structSceMotionDeviceLocation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned location of both the accelerometer and gyroscope in mm.  <a href="group__SceMotionUser.html#structSceMotionDeviceLocation">More...</a><br /></td></tr>
+<tr class="separator:structSceMotionDeviceLocation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gafbfdbb2de5f1fd0fd3725812c8c2bfeb" id="r_gafbfdbb2de5f1fd0fd3725812c8c2bfeb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gafbfdbb2de5f1fd0fd3725812c8c2bfeb">SceMotionMagFieldStability</a> { <a class="el" href="group__SceMotionUser.html#ggafbfdbb2de5f1fd0fd3725812c8c2bfeba39bc8394def8c5b8ff1c0cb7b3cb6382">SCE_MOTION_MAGFIELD_UNSTABLE</a> = 0
+, <a class="el" href="group__SceMotionUser.html#ggafbfdbb2de5f1fd0fd3725812c8c2bfeba6cb9e96b1d1c24f3fbd9964ec93cb2a2">SCE_MOTION_MAGFIELD_UNUSED</a> = 1
+, <a class="el" href="group__SceMotionUser.html#ggafbfdbb2de5f1fd0fd3725812c8c2bfeba55856706d6e3d5ea9c28e52ad4c07ca5">SCE_MOTION_MAGFIELD_STABLE</a> = 2
+ }</td></tr>
+<tr class="separator:gafbfdbb2de5f1fd0fd3725812c8c2bfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63f445ee88f6a84c40b6b8d10e47e3be" id="r_ga63f445ee88f6a84c40b6b8d10e47e3be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga63f445ee88f6a84c40b6b8d10e47e3be">SceMotionErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beaa33abfafc044bf219e4a45d7484a56cf">SCE_MOTION_ERROR_DATA_INVALID</a> = 0x80360200
+, <a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beaa9a9cc39fc96b8472d846d31774c40ef">SCE_MOTION_ERROR_READING</a> = 0x80360201
+, <a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3bea6d0e830e9cd26498110392861e12e35c">SCE_MOTION_ERROR_NON_INIT_ERR</a> = 0x80360202
+, <a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beafa2193991cdfb62c09b9df8d65af06ea">SCE_MOTION_ERROR_STATE_INVALID</a> = 0x80360203
+, <br />
+&#160;&#160;<a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beac1bdba5612b1d5a715a9ee1ca190a384">SCE_MOTION_ERROR_CALIB_READ_FAIL</a> = 0x80360204
+, <a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3bea49931a1198a864fd3376d27a827c2f2b">SCE_MOTION_ERROR_OUT_OF_BOUNDS</a> = 0x80360205
+, <a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beae6fa88c7d3eeef3bb617f4bfebdff1e8">SCE_MOTION_ERROR_NOT_SAMPLING</a> = 0x80360206
+, <a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3bea419fa1cc0f2fc2d0bbe4134e64a7a52a">SCE_MOTION_ERROR_ALREADY_SAMPLING</a> = 0x80360207
+, <br />
+&#160;&#160;<a class="el" href="group__SceMotionUser.html#gga63f445ee88f6a84c40b6b8d10e47e3beaadb4cd75becc29aa76bf81f708161a4e">SCE_MOTION_ERROR_MEM_IN_USE</a> = 0x80360208
+<br />
+ }</td></tr>
+<tr class="separator:ga63f445ee88f6a84c40b6b8d10e47e3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3088f62d4c68d7591190a42aad3830de" id="r_ga3088f62d4c68d7591190a42aad3830de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga3088f62d4c68d7591190a42aad3830de">VITASDK_BUILD_ASSERT_EQ</a> (0xF8, <a class="el" href="group__SceMotionUser.html#structSceMotionState">SceMotionState</a>)</td></tr>
@@ -155,8 +185,101 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa790e15855bf15a26f80debc10a79d63" id="r_gaa790e15855bf15a26f80debc10a79d63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gaa790e15855bf15a26f80debc10a79d63">sceMotionStopSampling</a> (void)</td></tr>
 <tr class="memdesc:gaa790e15855bf15a26f80debc10a79d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop sampling.  <br /></td></tr>
 <tr class="separator:gaa790e15855bf15a26f80debc10a79d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaa12bef5bd6433afb47d88a32b99322c5" id="r_gaa12bef5bd6433afb47d88a32b99322c5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gaa12bef5bd6433afb47d88a32b99322c5">SceMotionState::timestamp</a></td></tr>
+<tr class="memdesc:gaa12bef5bd6433afb47d88a32b99322c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local timestamp of the device.  <br /></td></tr>
+<tr class="separator:gaa12bef5bd6433afb47d88a32b99322c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga435859c3c6817c515980f9c063ab66b4" id="r_ga435859c3c6817c515980f9c063ab66b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga435859c3c6817c515980f9c063ab66b4">SceMotionState::acceleration</a></td></tr>
+<tr class="memdesc:ga435859c3c6817c515980f9c063ab66b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accelerometer data.  <br /></td></tr>
+<tr class="separator:ga435859c3c6817c515980f9c063ab66b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1056c8994dd91568e2d37e9e1400a10" id="r_gae1056c8994dd91568e2d37e9e1400a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gae1056c8994dd91568e2d37e9e1400a10">SceMotionState::angularVelocity</a></td></tr>
+<tr class="memdesc:gae1056c8994dd91568e2d37e9e1400a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angular velocity data.  <br /></td></tr>
+<tr class="separator:gae1056c8994dd91568e2d37e9e1400a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dbf4cc7562984a44a44f975aa28df3a" id="r_ga8dbf4cc7562984a44a44f975aa28df3a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga8dbf4cc7562984a44a44f975aa28df3a">SceMotionState::reserved1</a> [12]</td></tr>
+<tr class="memdesc:ga8dbf4cc7562984a44a44f975aa28df3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga8dbf4cc7562984a44a44f975aa28df3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2aecca6955f4273ac70fecce7e4bd79f" id="r_ga2aecca6955f4273ac70fecce7e4bd79f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFQuaternion">SceFQuaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga2aecca6955f4273ac70fecce7e4bd79f">SceMotionState::deviceQuat</a></td></tr>
+<tr class="memdesc:ga2aecca6955f4273ac70fecce7e4bd79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation data as a Quaternion.  <br /></td></tr>
+<tr class="separator:ga2aecca6955f4273ac70fecce7e4bd79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa04868acee83ef01a2667ec88925c3e" id="r_gafa04868acee83ef01a2667ec88925c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gafa04868acee83ef01a2667ec88925c3e">SceMotionState::rotationMatrix</a></td></tr>
+<tr class="memdesc:gafa04868acee83ef01a2667ec88925c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation data as a rotation matrix.  <br /></td></tr>
+<tr class="separator:gafa04868acee83ef01a2667ec88925c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44881ddf752e191b35221e3480805e2d" id="r_ga44881ddf752e191b35221e3480805e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga44881ddf752e191b35221e3480805e2d">SceMotionState::nedMatrix</a></td></tr>
+<tr class="memdesc:ga44881ddf752e191b35221e3480805e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magnetometer orientation matrix.  <br /></td></tr>
+<tr class="separator:ga44881ddf752e191b35221e3480805e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed1378199cc3e5391233ac37e3a837ee" id="r_gaed1378199cc3e5391233ac37e3a837ee"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gaed1378199cc3e5391233ac37e3a837ee">SceMotionState::reserved2</a> [4]</td></tr>
+<tr class="memdesc:gaed1378199cc3e5391233ac37e3a837ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:gaed1378199cc3e5391233ac37e3a837ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga355ea78d453e822f662fb15f03edcb0a" id="r_ga355ea78d453e822f662fb15f03edcb0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga355ea78d453e822f662fb15f03edcb0a">SceMotionState::basicOrientation</a></td></tr>
+<tr class="memdesc:ga355ea78d453e822f662fb15f03edcb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation of the device in reference to gravity.  <br /></td></tr>
+<tr class="separator:ga355ea78d453e822f662fb15f03edcb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64c98b53f70c7e9d99e08574bd98b53a" id="r_ga64c98b53f70c7e9d99e08574bd98b53a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga64c98b53f70c7e9d99e08574bd98b53a">SceMotionState::hostTimestamp</a></td></tr>
+<tr class="memdesc:ga64c98b53f70c7e9d99e08574bd98b53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the data in microseconds.  <br /></td></tr>
+<tr class="separator:ga64c98b53f70c7e9d99e08574bd98b53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e5163676a2a2109345ec2792f2aa1e5" id="r_ga7e5163676a2a2109345ec2792f2aa1e5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga7e5163676a2a2109345ec2792f2aa1e5">SceMotionState::reserved3</a> [36]</td></tr>
+<tr class="memdesc:ga7e5163676a2a2109345ec2792f2aa1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga7e5163676a2a2109345ec2792f2aa1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae00cc1e0f75d52c3fe1dc4ca2af202fa" id="r_gae00cc1e0f75d52c3fe1dc4ca2af202fa"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gae00cc1e0f75d52c3fe1dc4ca2af202fa">SceMotionState::magFieldStability</a></td></tr>
+<tr class="memdesc:gae00cc1e0f75d52c3fe1dc4ca2af202fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of <a class="el" href="group__SceMotionUser.html#gafbfdbb2de5f1fd0fd3725812c8c2bfeb">SceMotionMagFieldStability</a>.  <br /></td></tr>
+<tr class="separator:gae00cc1e0f75d52c3fe1dc4ca2af202fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcf1a1828e5049e5e1b2a45c2e1d5330" id="r_gafcf1a1828e5049e5e1b2a45c2e1d5330"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gafcf1a1828e5049e5e1b2a45c2e1d5330">SceMotionState::unknown</a></td></tr>
+<tr class="memdesc:gafcf1a1828e5049e5e1b2a45c2e1d5330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unknown.  <br /></td></tr>
+<tr class="separator:gafcf1a1828e5049e5e1b2a45c2e1d5330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga498feeb8e59bab592e86da5d2b588d6c" id="r_ga498feeb8e59bab592e86da5d2b588d6c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga498feeb8e59bab592e86da5d2b588d6c">SceMotionState::reserved4</a> [2]</td></tr>
+<tr class="memdesc:ga498feeb8e59bab592e86da5d2b588d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga498feeb8e59bab592e86da5d2b588d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dc438d95f74919afdb148266bac03d8" id="r_ga9dc438d95f74919afdb148266bac03d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga9dc438d95f74919afdb148266bac03d8">SceMotionSensorState::accelerometer</a></td></tr>
+<tr class="memdesc:ga9dc438d95f74919afdb148266bac03d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accelerometer data.  <br /></td></tr>
+<tr class="separator:ga9dc438d95f74919afdb148266bac03d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12f64b34c0537622d5f5a06c91860dc0" id="r_ga12f64b34c0537622d5f5a06c91860dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga12f64b34c0537622d5f5a06c91860dc0">SceMotionSensorState::gyro</a></td></tr>
+<tr class="memdesc:ga12f64b34c0537622d5f5a06c91860dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angular velocity data.  <br /></td></tr>
+<tr class="separator:ga12f64b34c0537622d5f5a06c91860dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad11e5a3f93d50113ae8f8f2dbb186831" id="r_gad11e5a3f93d50113ae8f8f2dbb186831"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gad11e5a3f93d50113ae8f8f2dbb186831">SceMotionSensorState::reserved1</a> [12]</td></tr>
+<tr class="memdesc:gad11e5a3f93d50113ae8f8f2dbb186831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:gad11e5a3f93d50113ae8f8f2dbb186831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66ec4f2befe18b2990dc570e5e580ab5" id="r_ga66ec4f2befe18b2990dc570e5e580ab5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga66ec4f2befe18b2990dc570e5e580ab5">SceMotionSensorState::timestamp</a></td></tr>
+<tr class="memdesc:ga66ec4f2befe18b2990dc570e5e580ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the data in microseconds.  <br /></td></tr>
+<tr class="separator:ga66ec4f2befe18b2990dc570e5e580ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18379d8bdae6bc65d4436e63422fba75" id="r_ga18379d8bdae6bc65d4436e63422fba75"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga18379d8bdae6bc65d4436e63422fba75">SceMotionSensorState::counter</a></td></tr>
+<tr class="memdesc:ga18379d8bdae6bc65d4436e63422fba75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of requested state.  <br /></td></tr>
+<tr class="separator:ga18379d8bdae6bc65d4436e63422fba75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98d17b4e988cd31f3f193c0b801c9c83" id="r_ga98d17b4e988cd31f3f193c0b801c9c83"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga98d17b4e988cd31f3f193c0b801c9c83">SceMotionSensorState::reserved2</a> [4]</td></tr>
+<tr class="memdesc:ga98d17b4e988cd31f3f193c0b801c9c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga98d17b4e988cd31f3f193c0b801c9c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf291022bab2fd26deaa83ba16a315ca3" id="r_gaf291022bab2fd26deaa83ba16a315ca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gaf291022bab2fd26deaa83ba16a315ca3">SceMotionSensorState::hostTimestamp</a></td></tr>
+<tr class="memdesc:gaf291022bab2fd26deaa83ba16a315ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the data in microseconds.  <br /></td></tr>
+<tr class="separator:gaf291022bab2fd26deaa83ba16a315ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb97c6a5839c3f815c3c4d72d5dad49c" id="r_gabb97c6a5839c3f815c3c4d72d5dad49c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gabb97c6a5839c3f815c3c4d72d5dad49c">SceMotionSensorState::unknown</a></td></tr>
+<tr class="memdesc:gabb97c6a5839c3f815c3c4d72d5dad49c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unknown.  <br /></td></tr>
+<tr class="separator:gabb97c6a5839c3f815c3c4d72d5dad49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga733f4b148e5b37ffabdf8a2a39ee8069" id="r_ga733f4b148e5b37ffabdf8a2a39ee8069"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga733f4b148e5b37ffabdf8a2a39ee8069">SceMotionSensorState::reserved3</a> [7]</td></tr>
+<tr class="memdesc:ga733f4b148e5b37ffabdf8a2a39ee8069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga733f4b148e5b37ffabdf8a2a39ee8069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbd4c86b67905ff9dddaca930be6aa75" id="r_gadbd4c86b67905ff9dddaca930be6aa75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gadbd4c86b67905ff9dddaca930be6aa75">SceMotionDeviceLocation::accelerometer</a></td></tr>
+<tr class="memdesc:gadbd4c86b67905ff9dddaca930be6aa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location of te accelerometer in relation to the center of the device (in mm)  <br /></td></tr>
+<tr class="separator:gadbd4c86b67905ff9dddaca930be6aa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaef58853d33027c72bba93297730e9d8" id="r_gaaef58853d33027c72bba93297730e9d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#gaaef58853d33027c72bba93297730e9d8">SceMotionDeviceLocation::gyro</a></td></tr>
+<tr class="memdesc:gaaef58853d33027c72bba93297730e9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location of te gyroscope in relation to the center of the device (in mm)  <br /></td></tr>
+<tr class="separator:gaaef58853d33027c72bba93297730e9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a6791043e00d9bbb9f6315809044b6d" id="r_ga0a6791043e00d9bbb9f6315809044b6d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMotionUser.html#ga0a6791043e00d9bbb9f6315809044b6d">SceMotionDeviceLocation::reserved</a> [24]</td></tr>
+<tr class="memdesc:ga0a6791043e00d9bbb9f6315809044b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga0a6791043e00d9bbb9f6315809044b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="motion_8h.html">psp2/motion.h</a>&gt;</span> </div>
+<div class="ttc" id="amotion_8h_html"><div class="ttname"><a href="motion_8h.html">motion.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceMotion_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceMotionState" id="structSceMotionState"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceMotionState">&#9670;&#160;</a></span>SceMotionState</h2>
 
@@ -1001,6 +1124,423 @@ Reserved data. </td></tr>
 
 <p>Stop sampling. </p>
 <dl class="section return"><dt>Returns</dt><dd>0, &lt;0 on error </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gaa12bef5bd6433afb47d88a32b99322c5" name="gaa12bef5bd6433afb47d88a32b99322c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa12bef5bd6433afb47d88a32b99322c5">&#9670;&#160;</a></span>timestamp <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceMotionState::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Local timestamp of the device. </p>
+
+</div>
+</div>
+<a id="ga435859c3c6817c515980f9c063ab66b4" name="ga435859c3c6817c515980f9c063ab66b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga435859c3c6817c515980f9c063ab66b4">&#9670;&#160;</a></span>acceleration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionState::acceleration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accelerometer data. </p>
+
+</div>
+</div>
+<a id="gae1056c8994dd91568e2d37e9e1400a10" name="gae1056c8994dd91568e2d37e9e1400a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1056c8994dd91568e2d37e9e1400a10">&#9670;&#160;</a></span>angularVelocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionState::angularVelocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Angular velocity data. </p>
+
+</div>
+</div>
+<a id="ga8dbf4cc7562984a44a44f975aa28df3a" name="ga8dbf4cc7562984a44a44f975aa28df3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8dbf4cc7562984a44a44f975aa28df3a">&#9670;&#160;</a></span>reserved1 <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionState::reserved1[12]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="ga2aecca6955f4273ac70fecce7e4bd79f" name="ga2aecca6955f4273ac70fecce7e4bd79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2aecca6955f4273ac70fecce7e4bd79f">&#9670;&#160;</a></span>deviceQuat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFQuaternion">SceFQuaternion</a> SceMotionState::deviceQuat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Orientation data as a Quaternion. </p>
+
+</div>
+</div>
+<a id="gafa04868acee83ef01a2667ec88925c3e" name="gafa04868acee83ef01a2667ec88925c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa04868acee83ef01a2667ec88925c3e">&#9670;&#160;</a></span>rotationMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a> SceMotionState::rotationMatrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Orientation data as a rotation matrix. </p>
+
+</div>
+</div>
+<a id="ga44881ddf752e191b35221e3480805e2d" name="ga44881ddf752e191b35221e3480805e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44881ddf752e191b35221e3480805e2d">&#9670;&#160;</a></span>nedMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFMatrix4">SceFMatrix4</a> SceMotionState::nedMatrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Magnetometer orientation matrix. </p>
+
+</div>
+</div>
+<a id="gaed1378199cc3e5391233ac37e3a837ee" name="gaed1378199cc3e5391233ac37e3a837ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed1378199cc3e5391233ac37e3a837ee">&#9670;&#160;</a></span>reserved2 <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionState::reserved2[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="ga355ea78d453e822f662fb15f03edcb0a" name="ga355ea78d453e822f662fb15f03edcb0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga355ea78d453e822f662fb15f03edcb0a">&#9670;&#160;</a></span>basicOrientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionState::basicOrientation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Orientation of the device in reference to gravity. </p>
+
+</div>
+</div>
+<a id="ga64c98b53f70c7e9d99e08574bd98b53a" name="ga64c98b53f70c7e9d99e08574bd98b53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64c98b53f70c7e9d99e08574bd98b53a">&#9670;&#160;</a></span>hostTimestamp <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a> SceMotionState::hostTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp of the data in microseconds. </p>
+
+</div>
+</div>
+<a id="ga7e5163676a2a2109345ec2792f2aa1e5" name="ga7e5163676a2a2109345ec2792f2aa1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e5163676a2a2109345ec2792f2aa1e5">&#9670;&#160;</a></span>reserved3 <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionState::reserved3[36]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="gae00cc1e0f75d52c3fe1dc4ca2af202fa" name="gae00cc1e0f75d52c3fe1dc4ca2af202fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae00cc1e0f75d52c3fe1dc4ca2af202fa">&#9670;&#160;</a></span>magFieldStability</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionState::magFieldStability</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One of <a class="el" href="group__SceMotionUser.html#gafbfdbb2de5f1fd0fd3725812c8c2bfeb">SceMotionMagFieldStability</a>. </p>
+
+</div>
+</div>
+<a id="gafcf1a1828e5049e5e1b2a45c2e1d5330" name="gafcf1a1828e5049e5e1b2a45c2e1d5330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcf1a1828e5049e5e1b2a45c2e1d5330">&#9670;&#160;</a></span>unknown <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionState::unknown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unknown. </p>
+
+</div>
+</div>
+<a id="ga498feeb8e59bab592e86da5d2b588d6c" name="ga498feeb8e59bab592e86da5d2b588d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga498feeb8e59bab592e86da5d2b588d6c">&#9670;&#160;</a></span>reserved4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionState::reserved4[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="ga9dc438d95f74919afdb148266bac03d8" name="ga9dc438d95f74919afdb148266bac03d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9dc438d95f74919afdb148266bac03d8">&#9670;&#160;</a></span>accelerometer <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionSensorState::accelerometer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accelerometer data. </p>
+
+</div>
+</div>
+<a id="ga12f64b34c0537622d5f5a06c91860dc0" name="ga12f64b34c0537622d5f5a06c91860dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12f64b34c0537622d5f5a06c91860dc0">&#9670;&#160;</a></span>gyro <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionSensorState::gyro</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Angular velocity data. </p>
+
+</div>
+</div>
+<a id="gad11e5a3f93d50113ae8f8f2dbb186831" name="gad11e5a3f93d50113ae8f8f2dbb186831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad11e5a3f93d50113ae8f8f2dbb186831">&#9670;&#160;</a></span>reserved1 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionSensorState::reserved1[12]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="ga66ec4f2befe18b2990dc570e5e580ab5" name="ga66ec4f2befe18b2990dc570e5e580ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66ec4f2befe18b2990dc570e5e580ab5">&#9670;&#160;</a></span>timestamp <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceMotionSensorState::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp of the data in microseconds. </p>
+
+</div>
+</div>
+<a id="ga18379d8bdae6bc65d4436e63422fba75" name="ga18379d8bdae6bc65d4436e63422fba75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18379d8bdae6bc65d4436e63422fba75">&#9670;&#160;</a></span>counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceMotionSensorState::counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of requested state. </p>
+
+</div>
+</div>
+<a id="ga98d17b4e988cd31f3f193c0b801c9c83" name="ga98d17b4e988cd31f3f193c0b801c9c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98d17b4e988cd31f3f193c0b801c9c83">&#9670;&#160;</a></span>reserved2 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionSensorState::reserved2[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="gaf291022bab2fd26deaa83ba16a315ca3" name="gaf291022bab2fd26deaa83ba16a315ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf291022bab2fd26deaa83ba16a315ca3">&#9670;&#160;</a></span>hostTimestamp <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a> SceMotionSensorState::hostTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp of the data in microseconds. </p>
+
+</div>
+</div>
+<a id="gabb97c6a5839c3f815c3c4d72d5dad49c" name="gabb97c6a5839c3f815c3c4d72d5dad49c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb97c6a5839c3f815c3c4d72d5dad49c">&#9670;&#160;</a></span>unknown <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionSensorState::unknown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unknown. </p>
+
+</div>
+</div>
+<a id="ga733f4b148e5b37ffabdf8a2a39ee8069" name="ga733f4b148e5b37ffabdf8a2a39ee8069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga733f4b148e5b37ffabdf8a2a39ee8069">&#9670;&#160;</a></span>reserved3 <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionSensorState::reserved3[7]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="gadbd4c86b67905ff9dddaca930be6aa75" name="gadbd4c86b67905ff9dddaca930be6aa75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbd4c86b67905ff9dddaca930be6aa75">&#9670;&#160;</a></span>accelerometer <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionDeviceLocation::accelerometer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Location of te accelerometer in relation to the center of the device (in mm) </p>
+
+</div>
+</div>
+<a id="gaaef58853d33027c72bba93297730e9d8" name="gaaef58853d33027c72bba93297730e9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaef58853d33027c72bba93297730e9d8">&#9670;&#160;</a></span>gyro <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceFVector3">SceFVector3</a> SceMotionDeviceLocation::gyro</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Location of te gyroscope in relation to the center of the device (in mm) </p>
+
+</div>
+</div>
+<a id="ga0a6791043e00d9bbb9f6315809044b6d" name="ga0a6791043e00d9bbb9f6315809044b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a6791043e00d9bbb9f6315809044b6d">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceMotionDeviceLocation::reserved[24]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
 
 </div>
 </div>

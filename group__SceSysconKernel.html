@@ -73,25 +73,93 @@ $(document).ready(function(){initNavTree('group__SceSysconKernel.html',''); init
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Lowio.html">Low-level I/O and communications</a> &raquo; <a class="el" href="group__SceSyscon.html">Syscon communication Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="syscon_8h.html">psp2kern/kernel/syscon.h</a>&gt;</span> </div>
-<div class="ttc" id="asyscon_8h_html"><div class="ttname"><a href="syscon_8h.html">syscon.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceSysconForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceSysconPacket" id="r_structSceSysconPacket"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a></td></tr>
+<tr class="separator:structSceSysconPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSysconDebugHandlers" id="r_structSceSysconDebugHandlers"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#structSceSysconDebugHandlers">SceSysconDebugHandlers</a></td></tr>
+<tr class="memdesc:structSceSysconDebugHandlers"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of debug handlers for syscon, that you can set in <a class="el" href="group__SceSysconKernel.html#ga0c7b30cee806394963eea6190bc205fd" title="Set the debug handlers.">ksceSysconSetDebugHandlers()</a>.  <a href="group__SceSysconKernel.html#structSceSysconDebugHandlers">More...</a><br /></td></tr>
+<tr class="separator:structSceSysconDebugHandlers"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gac819bc1a3c44d5f533b86d09f1d8100d" id="r_gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac819bc1a3c44d5f533b86d09f1d8100d">SCE_SYSCON_PACKET_TX_CMD_LO</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab9f8bd2486bd583c8a803102828db74" id="r_gaab9f8bd2486bd583c8a803102828db74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaab9f8bd2486bd583c8a803102828db74">SCE_SYSCON_PACKET_TX_CMD_HI</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gaab9f8bd2486bd583c8a803102828db74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d8dc68bb03c9028b7f29547bf537bd6" id="r_ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7d8dc68bb03c9028b7f29547bf537bd6">SCE_SYSCON_PACKET_TX_LENGTH</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dd0121b06dcb62d26e6e2b8c53c303f" id="r_ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8dd0121b06dcb62d26e6e2b8c53c303f">SCE_SYSCON_PACKET_TX_DATA</a>(i)&#160;&#160;&#160;(3 + (i))</td></tr>
+<tr class="separator:ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga032dedbd9a54a7dc973acf8e5b6ad9d3" id="r_ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga032dedbd9a54a7dc973acf8e5b6ad9d3">SCE_SYSCON_PACKET_RX_STATUS_LO</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97be4882dd163e46c311a5900c58ed89" id="r_ga97be4882dd163e46c311a5900c58ed89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga97be4882dd163e46c311a5900c58ed89">SCE_SYSCON_PACKET_RX_STATUS_HI</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga97be4882dd163e46c311a5900c58ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7e9a6544921dab664fda0e5ce9a8d61" id="r_gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa7e9a6544921dab664fda0e5ce9a8d61">SCE_SYSCON_PACKET_RX_LENGTH</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19a614cc2994ea67ff640ea915e2e517" id="r_ga19a614cc2994ea67ff640ea915e2e517"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga19a614cc2994ea67ff640ea915e2e517">SCE_SYSCON_PACKET_RX_RESULT</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga19a614cc2994ea67ff640ea915e2e517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8eba05a0bf125e062bb495d0a3d26a35" id="r_ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8eba05a0bf125e062bb495d0a3d26a35">SCE_SYSCON_PACKET_RX_DATA</a>(i)&#160;&#160;&#160;(4 + (i))</td></tr>
+<tr class="separator:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaa94a59bed75c9ecaeb24899ff67ab8a9" id="r_gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a>) (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *argp)</td></tr>
+<tr class="separator:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8925b6c9611c398bc74bf0469886bf3d" id="r_ga8925b6c9611c398bc74bf0469886bf3d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>) (int enable, void *argp)</td></tr>
+<tr class="separator:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga90caee69178d57cd0678da8d14419e26" id="r_ga90caee69178d57cd0678da8d14419e26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga90caee69178d57cd0678da8d14419e26">SceSysconCmd</a> { <a class="el" href="group__SceSysconKernel.html#gga90caee69178d57cd0678da8d14419e26a743a14dc2b9b7f1cbe28787157506886">SCE_SYSCON_CMD_RESET_DEVICE</a> = 0x0C
+ }</td></tr>
+<tr class="separator:ga90caee69178d57cd0678da8d14419e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeedd5b2730a3b09c39b91ed100cb4175" id="r_gaeedd5b2730a3b09c39b91ed100cb4175"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaeedd5b2730a3b09c39b91ed100cb4175">SceSysconResetType</a> { <a class="el" href="group__SceSysconKernel.html#ggaeedd5b2730a3b09c39b91ed100cb4175a58b294b616d783f2fbc383d445cfc668">SCE_SYSCON_RESET_TYPE_POWEROFF</a> = 0x00
+, <a class="el" href="group__SceSysconKernel.html#ggaeedd5b2730a3b09c39b91ed100cb4175a77db21261d7fd64123981b2cfafd02d0">SCE_SYSCON_RESET_TYPE_SUSPEND</a> = 0x01
+, <a class="el" href="group__SceSysconKernel.html#ggaeedd5b2730a3b09c39b91ed100cb4175a55de01fe1cdd5780da28c0abf1a6c22d">SCE_SYSCON_RESET_TYPE_COLD_RESET</a> = 0x02
+, <a class="el" href="group__SceSysconKernel.html#ggaeedd5b2730a3b09c39b91ed100cb4175aa6ec35f5e89dabefbabd6515fc942cd7">SCE_SYSCON_RESET_TYPE_SOFT_RESET</a> = 0x11
+ }</td></tr>
+<tr class="separator:gaeedd5b2730a3b09c39b91ed100cb4175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c6b1fb438122526270f29b1eac44fee" id="r_ga7c6b1fb438122526270f29b1eac44fee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7c6b1fb438122526270f29b1eac44fee">SceSysconControl</a> { <br />
+&#160;&#160;<a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea685551e640d1e18b72ad25f0bfbaa22a">SCE_SYSCON_CTRL_UP</a> = 0x1
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea3534acb8a49ed7be6e81ad380d81921c">SCE_SYSCON_CTRL_RIGHT</a> = 0x2
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeaa3326298ca1d71050fc6ccd62c119323">SCE_SYSCON_CTRL_DOWN</a> = 0x4
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea33ef9d13f32e399078aba3cac154f819">SCE_SYSCON_CTRL_LEFT</a> = 0x8
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeaad578ec8c6bdbaa238797573c45036f2">SCE_SYSCON_CTRL_TRIANGLE</a> = 0x10
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea413746269537db92a3574e9f63943411">SCE_SYSCON_CTRL_CIRCLE</a> = 0x20
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea3ea5d91fd0a3e10a1cc61d498dacf468">SCE_SYSCON_CTRL_CROSS</a> = 0x40
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea6f48fb54ac5edf43a5ece731220b50bf">SCE_SYSCON_CTRL_SQUARE</a> = 0x80
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feead1d91b2de8c3135d3e2179632fb45d3d">SCE_SYSCON_CTRL_SELECT</a> = 0x100
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeafa61345b498848b30c8fc78c0dd18548">SCE_SYSCON_CTRL_LTRIGGER</a> = 0x200
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeafa18da7b1790fe280ad8233263a5caf1">SCE_SYSCON_CTRL_RTRIGGER</a> = 0x400
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea59083967ec9f898d63b2f51a0ec71529">SCE_SYSCON_CTRL_START</a> = 0x800
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea5d28cf9914b28f6960d7507d2e1d5ac9">SCE_SYSCON_CTRL_PSBUTTON</a> = 0x1000
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea2aeb11428cbd0ce4366f7f5318f0635a">SCE_SYSCON_CTRL_POWER</a> = 0x4000
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea82b07fb5d86522453f1a831b8ddb427c">SCE_SYSCON_CTRL_VOLUP</a> = 0x10000
+, <a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feea1ea724f49978a243449a5e5268cc7457">SCE_SYSCON_CTRL_VOLDOWN</a> = 0x20000
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysconKernel.html#gga7c6b1fb438122526270f29b1eac44feeae212368ffc9a57afb650efc1a28a85a1">SCE_SYSCON_CTRL_HEADPHONE</a> = 0x8000000
+<br />
+ }</td></tr>
+<tr class="separator:ga7c6b1fb438122526270f29b1eac44fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga1c0f630fb87db93a0cf5c1b4b449bd95" id="r_ga1c0f630fb87db93a0cf5c1b4b449bd95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga1c0f630fb87db93a0cf5c1b4b449bd95">VITASDK_BUILD_ASSERT_EQ</a> (0x80, <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a>)</td></tr>
@@ -199,35 +267,53 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga1e5958bfa3875d475e217942d5d16663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get physics button control info.  <br /></td></tr>
 <tr class="separator:ga1e5958bfa3875d475e217942d5d16663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaa94a59bed75c9ecaeb24899ff67ab8a9" id="r_gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa94a59bed75c9ecaeb24899ff67ab8a9">SceSysconCmdExecAsyncCallback</a>) (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *argp)</td></tr>
-<tr class="separator:gaa94a59bed75c9ecaeb24899ff67ab8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8925b6c9611c398bc74bf0469886bf3d" id="r_ga8925b6c9611c398bc74bf0469886bf3d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8925b6c9611c398bc74bf0469886bf3d">SceSysconCallback</a>) (int enable, void *argp)</td></tr>
-<tr class="separator:ga8925b6c9611c398bc74bf0469886bf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gac819bc1a3c44d5f533b86d09f1d8100d" id="r_gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac819bc1a3c44d5f533b86d09f1d8100d">SCE_SYSCON_PACKET_TX_CMD_LO</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gac819bc1a3c44d5f533b86d09f1d8100d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab9f8bd2486bd583c8a803102828db74" id="r_gaab9f8bd2486bd583c8a803102828db74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaab9f8bd2486bd583c8a803102828db74">SCE_SYSCON_PACKET_TX_CMD_HI</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gaab9f8bd2486bd583c8a803102828db74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d8dc68bb03c9028b7f29547bf537bd6" id="r_ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7d8dc68bb03c9028b7f29547bf537bd6">SCE_SYSCON_PACKET_TX_LENGTH</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga7d8dc68bb03c9028b7f29547bf537bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8dd0121b06dcb62d26e6e2b8c53c303f" id="r_ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8dd0121b06dcb62d26e6e2b8c53c303f">SCE_SYSCON_PACKET_TX_DATA</a>(i)&#160;&#160;&#160;(3 + (i))</td></tr>
-<tr class="separator:ga8dd0121b06dcb62d26e6e2b8c53c303f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga032dedbd9a54a7dc973acf8e5b6ad9d3" id="r_ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga032dedbd9a54a7dc973acf8e5b6ad9d3">SCE_SYSCON_PACKET_RX_STATUS_LO</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga032dedbd9a54a7dc973acf8e5b6ad9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97be4882dd163e46c311a5900c58ed89" id="r_ga97be4882dd163e46c311a5900c58ed89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga97be4882dd163e46c311a5900c58ed89">SCE_SYSCON_PACKET_RX_STATUS_HI</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga97be4882dd163e46c311a5900c58ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7e9a6544921dab664fda0e5ce9a8d61" id="r_gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa7e9a6544921dab664fda0e5ce9a8d61">SCE_SYSCON_PACKET_RX_LENGTH</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:gaa7e9a6544921dab664fda0e5ce9a8d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19a614cc2994ea67ff640ea915e2e517" id="r_ga19a614cc2994ea67ff640ea915e2e517"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga19a614cc2994ea67ff640ea915e2e517">SCE_SYSCON_PACKET_RX_RESULT</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga19a614cc2994ea67ff640ea915e2e517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eba05a0bf125e062bb495d0a3d26a35" id="r_ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga8eba05a0bf125e062bb495d0a3d26a35">SCE_SYSCON_PACKET_RX_DATA</a>(i)&#160;&#160;&#160;(4 + (i))</td></tr>
-<tr class="separator:ga8eba05a0bf125e062bb495d0a3d26a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gafd9c0972258645e6995287e8c1bd11ec" id="r_gafd9c0972258645e6995287e8c1bd11ec"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gafd9c0972258645e6995287e8c1bd11ec">SceSysconPacket::next</a></td></tr>
+<tr class="separator:gafd9c0972258645e6995287e8c1bd11ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c56f70ac3b7f1cb74a8ff4dc5f11f87" id="r_ga2c56f70ac3b7f1cb74a8ff4dc5f11f87"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga2c56f70ac3b7f1cb74a8ff4dc5f11f87">SceSysconPacket::status</a></td></tr>
+<tr class="separator:ga2c56f70ac3b7f1cb74a8ff4dc5f11f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9315b4db99bca39dd1b6fbb0cef26935" id="r_ga9315b4db99bca39dd1b6fbb0cef26935"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga9315b4db99bca39dd1b6fbb0cef26935">SceSysconPacket::semaId</a></td></tr>
+<tr class="separator:ga9315b4db99bca39dd1b6fbb0cef26935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29d55fa04d7aae3a6b11fb506123dfe5" id="r_ga29d55fa04d7aae3a6b11fb506123dfe5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga29d55fa04d7aae3a6b11fb506123dfe5">SceSysconPacket::unk</a></td></tr>
+<tr class="separator:ga29d55fa04d7aae3a6b11fb506123dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa87440170576e52004a47d85ae236a13" id="r_gaa87440170576e52004a47d85ae236a13"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gaa87440170576e52004a47d85ae236a13">SceSysconPacket::tx</a> [32]</td></tr>
+<tr class="separator:gaa87440170576e52004a47d85ae236a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38a60268c453481de6a0b240a40109c6" id="r_ga38a60268c453481de6a0b240a40109c6"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga38a60268c453481de6a0b240a40109c6">SceSysconPacket::rx</a> [32]</td></tr>
+<tr class="separator:ga38a60268c453481de6a0b240a40109c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8a25c4bd2772ca16d4bb340de6967ec" id="r_gac8a25c4bd2772ca16d4bb340de6967ec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac8a25c4bd2772ca16d4bb340de6967ec">SceSysconPacket::unk1</a> [4]</td></tr>
+<tr class="separator:gac8a25c4bd2772ca16d4bb340de6967ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a04ac886ba32813e645dd1edc29eec1" id="r_ga7a04ac886ba32813e645dd1edc29eec1"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7a04ac886ba32813e645dd1edc29eec1">SceSysconPacket::callback</a> )(struct <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *<a class="el" href="group__SceSysconKernel.html#ga0b59714adc2340967bf5300c09bdb179">argp</a>)</td></tr>
+<tr class="separator:ga7a04ac886ba32813e645dd1edc29eec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b59714adc2340967bf5300c09bdb179" id="r_ga0b59714adc2340967bf5300c09bdb179"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga0b59714adc2340967bf5300c09bdb179">SceSysconPacket::argp</a></td></tr>
+<tr class="separator:ga0b59714adc2340967bf5300c09bdb179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f7e0f8cf85b2fa64a1c3a1846e69b32" id="r_ga7f7e0f8cf85b2fa64a1c3a1846e69b32"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga7f7e0f8cf85b2fa64a1c3a1846e69b32">SceSysconPacket::time</a></td></tr>
+<tr class="separator:ga7f7e0f8cf85b2fa64a1c3a1846e69b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95cad90cbf1bad947f641bdb76c1f79f" id="r_ga95cad90cbf1bad947f641bdb76c1f79f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga95cad90cbf1bad947f641bdb76c1f79f">SceSysconPacket::unk2</a> [5]</td></tr>
+<tr class="separator:ga95cad90cbf1bad947f641bdb76c1f79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac362ab71ec3d266fe02bcf750bd21fbd" id="r_gac362ab71ec3d266fe02bcf750bd21fbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#gac362ab71ec3d266fe02bcf750bd21fbd">SceSysconDebugHandlers::size</a></td></tr>
+<tr class="memdesc:gac362ab71ec3d266fe02bcf750bd21fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure size (probably, unused).  <br /></td></tr>
+<tr class="separator:gac362ab71ec3d266fe02bcf750bd21fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga369571b579013b714ba7686aba1fcab5" id="r_ga369571b579013b714ba7686aba1fcab5"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga369571b579013b714ba7686aba1fcab5">SceSysconDebugHandlers::start</a> )(<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet)</td></tr>
+<tr class="memdesc:ga369571b579013b714ba7686aba1fcab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback ran right before running a packet, with a pointer to it passed as the first argument.  <br /></td></tr>
+<tr class="separator:ga369571b579013b714ba7686aba1fcab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fffde9cae3be628b0128a5f7bf72c65" id="r_ga2fffde9cae3be628b0128a5f7bf72c65"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysconKernel.html#ga2fffde9cae3be628b0128a5f7bf72c65">SceSysconDebugHandlers::end</a> )(<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet)</td></tr>
+<tr class="memdesc:ga2fffde9cae3be628b0128a5f7bf72c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback ran right after finishing running a packet, with a pointer to it passed as the first argument.  <br /></td></tr>
+<tr class="separator:ga2fffde9cae3be628b0128a5f7bf72c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="syscon_8h.html">psp2kern/kernel/syscon.h</a>&gt;</span> </div>
+<div class="ttc" id="asyscon_8h_html"><div class="ttname"><a href="syscon_8h.html">syscon.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSysconForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceSysconPacket" id="structSceSysconPacket"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceSysconPacket">&#9670;&#160;</a></span>SceSysconPacket</h2>
 
@@ -1678,6 +1764,209 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gafd9c0972258645e6995287e8c1bd11ec" name="gafd9c0972258645e6995287e8c1bd11ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd9c0972258645e6995287e8c1bd11ec">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a>* SceSysconPacket::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2c56f70ac3b7f1cb74a8ff4dc5f11f87" name="ga2c56f70ac3b7f1cb74a8ff4dc5f11f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c56f70ac3b7f1cb74a8ff4dc5f11f87">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceSysconPacket::status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9315b4db99bca39dd1b6fbb0cef26935" name="ga9315b4db99bca39dd1b6fbb0cef26935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9315b4db99bca39dd1b6fbb0cef26935">&#9670;&#160;</a></span>semaId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceSysconPacket::semaId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga29d55fa04d7aae3a6b11fb506123dfe5" name="ga29d55fa04d7aae3a6b11fb506123dfe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29d55fa04d7aae3a6b11fb506123dfe5">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceSysconPacket::unk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa87440170576e52004a47d85ae236a13" name="gaa87440170576e52004a47d85ae236a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa87440170576e52004a47d85ae236a13">&#9670;&#160;</a></span>tx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceSysconPacket::tx[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga38a60268c453481de6a0b240a40109c6" name="ga38a60268c453481de6a0b240a40109c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38a60268c453481de6a0b240a40109c6">&#9670;&#160;</a></span>rx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char SceSysconPacket::rx[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac8a25c4bd2772ca16d4bb340de6967ec" name="gac8a25c4bd2772ca16d4bb340de6967ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8a25c4bd2772ca16d4bb340de6967ec">&#9670;&#160;</a></span>unk1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceSysconPacket::unk1[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7a04ac886ba32813e645dd1edc29eec1" name="ga7a04ac886ba32813e645dd1edc29eec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a04ac886ba32813e645dd1edc29eec1">&#9670;&#160;</a></span>callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SceSysconPacket::callback) (struct <a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet, void *<a class="el" href="group__SceSysconKernel.html#ga0b59714adc2340967bf5300c09bdb179">argp</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0b59714adc2340967bf5300c09bdb179" name="ga0b59714adc2340967bf5300c09bdb179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b59714adc2340967bf5300c09bdb179">&#9670;&#160;</a></span>argp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSysconPacket::argp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f7e0f8cf85b2fa64a1c3a1846e69b32" name="ga7f7e0f8cf85b2fa64a1c3a1846e69b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f7e0f8cf85b2fa64a1c3a1846e69b32">&#9670;&#160;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceSysconPacket::time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga95cad90cbf1bad947f641bdb76c1f79f" name="ga95cad90cbf1bad947f641bdb76c1f79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95cad90cbf1bad947f641bdb76c1f79f">&#9670;&#160;</a></span>unk2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceSysconPacket::unk2[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac362ab71ec3d266fe02bcf750bd21fbd" name="gac362ab71ec3d266fe02bcf750bd21fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac362ab71ec3d266fe02bcf750bd21fbd">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSysconDebugHandlers::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure size (probably, unused). </p>
+
+</div>
+</div>
+<a id="ga369571b579013b714ba7686aba1fcab5" name="ga369571b579013b714ba7686aba1fcab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga369571b579013b714ba7686aba1fcab5">&#9670;&#160;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* SceSysconDebugHandlers::start) (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback ran right before running a packet, with a pointer to it passed as the first argument. </p>
+
+</div>
+</div>
+<a id="ga2fffde9cae3be628b0128a5f7bf72c65" name="ga2fffde9cae3be628b0128a5f7bf72c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fffde9cae3be628b0128a5f7bf72c65">&#9670;&#160;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* SceSysconDebugHandlers::end) (<a class="el" href="group__SceSysconKernel.html#structSceSysconPacket">SceSysconPacket</a> *packet)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback ran right after finishing running a packet, with a pointer to it passed as the first argument. </p>
 
 </div>
 </div>

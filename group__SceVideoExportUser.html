@@ -73,10 +73,48 @@ $(document).ready(function(){initNavTree('group__SceVideoExportUser.html',''); i
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__SystemParams.html">System Parameters</a> &raquo; <a class="el" href="group__SceVideoExport.html">Video Export Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structVideoExportInputParam" id="r_structVideoExportInputParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#structVideoExportInputParam">VideoExportInputParam</a></td></tr>
+<tr class="separator:structVideoExportInputParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structVideoExportOutputParam" id="r_structVideoExportOutputParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#structVideoExportOutputParam">VideoExportOutputParam</a></td></tr>
+<tr class="separator:structVideoExportOutputParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga6e1d8fb0ce50a44fb77834aa6be85b1e" id="r_ga6e1d8fb0ce50a44fb77834aa6be85b1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#ga6e1d8fb0ce50a44fb77834aa6be85b1e">VITASDK_BUILD_ASSERT_EQ</a> (0x440, <a class="el" href="group__SceVideoExportUser.html#structVideoExportInputParam">VideoExportInputParam</a>)</td></tr>
+<tr class="separator:ga6e1d8fb0ce50a44fb77834aa6be85b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0bc02156c55b7838121ab7574fab55d" id="r_gad0bc02156c55b7838121ab7574fab55d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#gad0bc02156c55b7838121ab7574fab55d">VITASDK_BUILD_ASSERT_EQ</a> (0x408, <a class="el" href="group__SceVideoExportUser.html#structVideoExportOutputParam">VideoExportOutputParam</a>)</td></tr>
+<tr class="separator:gad0bc02156c55b7838121ab7574fab55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae32e438dc817ea300cd368812143688f" id="r_gae32e438dc817ea300cd368812143688f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#gae32e438dc817ea300cd368812143688f">sceVideoExportFromFile</a> (const <a class="el" href="group__SceVideoExportUser.html#structVideoExportInputParam">VideoExportInputParam</a> *in_param, int unk, void *workingMemory, void *cancelCb, void(*progress)(void *, int), void *user, int unk2, <a class="el" href="group__SceVideoExportUser.html#structVideoExportOutputParam">VideoExportOutputParam</a> *out_param)</td></tr>
+<tr class="memdesc:gae32e438dc817ea300cd368812143688f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export video file.  <br /></td></tr>
+<tr class="separator:gae32e438dc817ea300cd368812143688f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga794c1b18e09138204357290a701450dc" id="r_ga794c1b18e09138204357290a701450dc"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#ga794c1b18e09138204357290a701450dc">VideoExportInputParam::path</a> [1024]</td></tr>
+<tr class="memdesc:ga794c1b18e09138204357290a701450dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path of file to be exported.  <br /></td></tr>
+<tr class="separator:ga794c1b18e09138204357290a701450dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga278bc7c5b30c43a8c7d89181f3f0d75c" id="r_ga278bc7c5b30c43a8c7d89181f3f0d75c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#ga278bc7c5b30c43a8c7d89181f3f0d75c">VideoExportInputParam::reserved</a> [64]</td></tr>
+<tr class="memdesc:ga278bc7c5b30c43a8c7d89181f3f0d75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:ga278bc7c5b30c43a8c7d89181f3f0d75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37c5cd7c67b4bc641077d0715e5384c6" id="r_ga37c5cd7c67b4bc641077d0715e5384c6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#ga37c5cd7c67b4bc641077d0715e5384c6">VideoExportOutputParam::path</a> [1024]</td></tr>
+<tr class="memdesc:ga37c5cd7c67b4bc641077d0715e5384c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path of exported file.  <br /></td></tr>
+<tr class="separator:ga37c5cd7c67b4bc641077d0715e5384c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa00aa1dfad1ca3a22b8d996466f2e191" id="r_gaa00aa1dfad1ca3a22b8d996466f2e191"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#gaa00aa1dfad1ca3a22b8d996466f2e191">VideoExportOutputParam::reserved</a> [8]</td></tr>
+<tr class="memdesc:gaa00aa1dfad1ca3a22b8d996466f2e191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved data.  <br /></td></tr>
+<tr class="separator:gaa00aa1dfad1ca3a22b8d996466f2e191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
 <hr  />
@@ -89,18 +127,7 @@ $(document).ready(function(){initNavTree('group__SceVideoExportUser.html',''); i
 </p><div class="fragment"><div class="line">SceVideoExport_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga6e1d8fb0ce50a44fb77834aa6be85b1e" id="r_ga6e1d8fb0ce50a44fb77834aa6be85b1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#ga6e1d8fb0ce50a44fb77834aa6be85b1e">VITASDK_BUILD_ASSERT_EQ</a> (0x440, <a class="el" href="group__SceVideoExportUser.html#structVideoExportInputParam">VideoExportInputParam</a>)</td></tr>
-<tr class="separator:ga6e1d8fb0ce50a44fb77834aa6be85b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0bc02156c55b7838121ab7574fab55d" id="r_gad0bc02156c55b7838121ab7574fab55d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#gad0bc02156c55b7838121ab7574fab55d">VITASDK_BUILD_ASSERT_EQ</a> (0x408, <a class="el" href="group__SceVideoExportUser.html#structVideoExportOutputParam">VideoExportOutputParam</a>)</td></tr>
-<tr class="separator:gad0bc02156c55b7838121ab7574fab55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae32e438dc817ea300cd368812143688f" id="r_gae32e438dc817ea300cd368812143688f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceVideoExportUser.html#gae32e438dc817ea300cd368812143688f">sceVideoExportFromFile</a> (const <a class="el" href="group__SceVideoExportUser.html#structVideoExportInputParam">VideoExportInputParam</a> *in_param, int unk, void *workingMemory, void *cancelCb, void(*progress)(void *, int), void *user, int unk2, <a class="el" href="group__SceVideoExportUser.html#structVideoExportOutputParam">VideoExportOutputParam</a> *out_param)</td></tr>
-<tr class="memdesc:gae32e438dc817ea300cd368812143688f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export video file.  <br /></td></tr>
-<tr class="separator:gae32e438dc817ea300cd368812143688f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structVideoExportInputParam" id="structVideoExportInputParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structVideoExportInputParam">&#9670;&#160;</a></span>VideoExportInputParam</h2>
 
@@ -293,6 +320,71 @@ Reserved data. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga794c1b18e09138204357290a701450dc" name="ga794c1b18e09138204357290a701450dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga794c1b18e09138204357290a701450dc">&#9670;&#160;</a></span>path <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VideoExportInputParam::path[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Path of file to be exported. </p>
+
+</div>
+</div>
+<a id="ga278bc7c5b30c43a8c7d89181f3f0d75c" name="ga278bc7c5b30c43a8c7d89181f3f0d75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga278bc7c5b30c43a8c7d89181f3f0d75c">&#9670;&#160;</a></span>reserved <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VideoExportInputParam::reserved[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
+
+</div>
+</div>
+<a id="ga37c5cd7c67b4bc641077d0715e5384c6" name="ga37c5cd7c67b4bc641077d0715e5384c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37c5cd7c67b4bc641077d0715e5384c6">&#9670;&#160;</a></span>path <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VideoExportOutputParam::path[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Path of exported file. </p>
+
+</div>
+</div>
+<a id="gaa00aa1dfad1ca3a22b8d996466f2e191" name="gaa00aa1dfad1ca3a22b8d996466f2e191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa00aa1dfad1ca3a22b8d996466f2e191">&#9670;&#160;</a></span>reserved <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VideoExportOutputParam::reserved[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved data. </p>
 
 </div>
 </div>

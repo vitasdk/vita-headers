@@ -73,23 +73,29 @@ $(document).ready(function(){initNavTree('group__SceDsiKernel.html',''); initRes
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Lowio.html">Low-level I/O and communications</a> &raquo; <a class="el" href="group__SceDsi.html">DSI Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dsi_8h.html">psp2kern/lowio/dsi.h</a>&gt;</span> </div>
-<div class="ttc" id="adsi_8h_html"><div class="ttname"><a href="dsi_8h.html">dsi.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceDsiForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga299cbdb990d6cf2d48f5d11b4f3010de" id="r_ga299cbdb990d6cf2d48f5d11b4f3010de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#ga299cbdb990d6cf2d48f5d11b4f3010de">SceDsiErrorCode</a> { <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010deac117e16fa4851fdc2d3a3e4e83e53b23">SCE_DSI_ERROR_INVALID_HEAD</a> = 0x803F0600
+, <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010dea58327f6284c54a21ddf8b0052a62c401">SCE_DSI_ERROR_INVALID_STATE</a> = 0x803F0601
+, <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010dea6ba8e3d159e4c427833b06c89d4756a0">SCE_DSI_ERROR_INVALID_PARAM</a> = 0x803F0602
+, <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010dea487bfee2a3320aad45fa75829574345e">SCE_DSI_ERROR_HEAD_NOT_ENABLED</a> = 0x803F0603
+ }</td></tr>
+<tr class="separator:ga299cbdb990d6cf2d48f5d11b4f3010de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad209bc384800f1dd50bcdac847a5e84c" id="r_gad209bc384800f1dd50bcdac847a5e84c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gad209bc384800f1dd50bcdac847a5e84c">SceDsiHead</a> { <a class="el" href="group__SceDsiKernel.html#ggad209bc384800f1dd50bcdac847a5e84cacdb6fa25aef98497dba7c9ca496232b5">SCE_DSI_HEAD_OLED_LCD</a> = 0
+, <a class="el" href="group__SceDsiKernel.html#ggad209bc384800f1dd50bcdac847a5e84cad69d76275f630911ec3e13b02a27aa51">SCE_DSI_HEAD_HDMI</a> = 1
+ }</td></tr>
+<tr class="separator:gad209bc384800f1dd50bcdac847a5e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gac8e0556346b688585758b2f123da9005" id="r_gac8e0556346b688585758b2f123da9005"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gac8e0556346b688585758b2f123da9005">ksceDsiEnableHead</a> (int head)</td></tr>
@@ -115,7 +121,19 @@ Functions</h2></td></tr>
 <tr class="memitem:gabca434b2eb2c6e5f9d05c19a513d7535" id="r_gabca434b2eb2c6e5f9d05c19a513d7535"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535">ksceDsiDcsRead</a> (int head, unsigned short param, void *buff, unsigned int <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
 <tr class="separator:gabca434b2eb2c6e5f9d05c19a513d7535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dsi_8h.html">psp2kern/lowio/dsi.h</a>&gt;</span> </div>
+<div class="ttc" id="adsi_8h_html"><div class="ttname"><a href="dsi_8h.html">dsi.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceDsiForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga299cbdb990d6cf2d48f5d11b4f3010de" name="ga299cbdb990d6cf2d48f5d11b4f3010de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga299cbdb990d6cf2d48f5d11b4f3010de">&#9670;&#160;</a></span>SceDsiErrorCode</h2>
 

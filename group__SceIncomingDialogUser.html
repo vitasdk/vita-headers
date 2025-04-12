@@ -73,28 +73,43 @@ $(document).ready(function(){initNavTree('group__SceIncomingDialogUser.html','')
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Dialog.html">Dialog</a> &raquo; <a class="el" href="group__SceIncomingDialog.html">Incoming Dialog Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="incoming__dialog_8h.html">psp2/incoming_dialog.h</a>&gt;</span> </div>
-<div class="ttc" id="aincoming__dialog_8h_html"><div class="ttname"><a href="incoming__dialog_8h.html">incoming_dialog.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceIncomingDialog_stub </div>
-</div><!-- fragment --><p> <br  />
- Load the required module:<br  />
-</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a4f968915f78ea5471ff2d06569696410">SCE_SYSMODULE_INCOMING_DIALOG</a>); </div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a4f968915f78ea5471ff2d06569696410"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a4f968915f78ea5471ff2d06569696410">SCE_SYSMODULE_INCOMING_DIALOG</a></div><div class="ttdeci">@ SCE_SYSMODULE_INCOMING_DIALOG</div><div class="ttdoc">Incoming Dialog module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:80</div></div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceIncomingDialogParam" id="r_structSceIncomingDialogParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#structSceIncomingDialogParam">SceIncomingDialogParam</a></td></tr>
+<tr class="separator:structSceIncomingDialogParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga4677c17ec75afbd97c3843cd78d1d53b" id="r_ga4677c17ec75afbd97c3843cd78d1d53b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga4677c17ec75afbd97c3843cd78d1d53b">SceIncomingDialogStatus</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba82af093b14f529854d8e1e656461af5f">SCE_INCOMING_DIALOG_NOT_RUNNING</a>
+, <a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba99183fc089d73ca9f4dabc83e69cd485">SCE_INCOMING_DIALOG_ACCEPTED</a>
+, <a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53badbc40b4d9b51e7bf445c2e80ff79ebaf">SCE_INCOMING_DIALOG_RUNNING</a>
+, <a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53baa6d455317bba481bfc341c611ba7be5f">SCE_INCOMING_DIALOG_REJECTED</a>
+, <br />
+&#160;&#160;<a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba1487b3ae65a17cf684f469badd5b9717">SCE_INCOMING_DIALOG_CLOSED</a>
+, <a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53bab8ec80c86f9239a04e008e1d809e378b">SCE_INCOMING_DIALOG_BUSY</a>
+, <a class="el" href="group__SceIncomingDialogUser.html#gga4677c17ec75afbd97c3843cd78d1d53ba181ba1aa1023955bd385f7ec4f34b70f">SCE_INCOMING_DIALOG_TIMEOUT</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4677c17ec75afbd97c3843cd78d1d53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialog status.  <a href="group__SceIncomingDialogUser.html#ga4677c17ec75afbd97c3843cd78d1d53b">More...</a><br /></td></tr>
+<tr class="separator:ga4677c17ec75afbd97c3843cd78d1d53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9017328db2ccfaf684594a13449260b4" id="r_ga9017328db2ccfaf684594a13449260b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga9017328db2ccfaf684594a13449260b4">SceIncomingDialogErrorCode</a> { <a class="el" href="group__SceIncomingDialogUser.html#gga9017328db2ccfaf684594a13449260b4a63bcf1252a8331c19c87cdedefeafbfe">SCE_INCOMINGDIALOG_ERROR_INVALID_ARG</a> = 0x80106201
+ }</td></tr>
+<tr class="memdesc:ga9017328db2ccfaf684594a13449260b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error Codes.  <a href="group__SceIncomingDialogUser.html#ga9017328db2ccfaf684594a13449260b4">More...</a><br /></td></tr>
+<tr class="separator:ga9017328db2ccfaf684594a13449260b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae2ebc7876e6476f0593a95f2d7270289" id="r_gae2ebc7876e6476f0593a95f2d7270289"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gae2ebc7876e6476f0593a95f2d7270289">VITASDK_BUILD_ASSERT_EQ</a> (0x25C, <a class="el" href="group__SceIncomingDialogUser.html#structSceIncomingDialogParam">SceIncomingDialogParam</a>)</td></tr>
@@ -117,8 +132,52 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa75057ecbd43f5aaa7c4bae893356d11" id="r_gaa75057ecbd43f5aaa7c4bae893356d11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gaa75057ecbd43f5aaa7c4bae893356d11">sceIncomingDialogFinish</a> (void)</td></tr>
 <tr class="memdesc:gaa75057ecbd43f5aaa7c4bae893356d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish incoming dialog library.  <br /></td></tr>
 <tr class="separator:gaa75057ecbd43f5aaa7c4bae893356d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga7f912faca1302549c3c540d05c76c97c" id="r_ga7f912faca1302549c3c540d05c76c97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga7f912faca1302549c3c540d05c76c97c">SceIncomingDialogParam::sdkVersion</a></td></tr>
+<tr class="separator:ga7f912faca1302549c3c540d05c76c97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e86f6573e2c4080a74f97acd25a9f6d" id="r_ga4e86f6573e2c4080a74f97acd25a9f6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga4e86f6573e2c4080a74f97acd25a9f6d">SceIncomingDialogParam::audioPath</a> [0x80]</td></tr>
+<tr class="separator:ga4e86f6573e2c4080a74f97acd25a9f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc665bc00febf10895d11b81a9fdf62b" id="r_gafc665bc00febf10895d11b81a9fdf62b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gafc665bc00febf10895d11b81a9fdf62b">SceIncomingDialogParam::titleid</a> [0x10]</td></tr>
+<tr class="separator:gafc665bc00febf10895d11b81a9fdf62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac98eff1f99f9115be587723d451a1f9b" id="r_gac98eff1f99f9115be587723d451a1f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gac98eff1f99f9115be587723d451a1f9b">SceIncomingDialogParam::unk_BC</a></td></tr>
+<tr class="separator:gac98eff1f99f9115be587723d451a1f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2234bef0ce656740efde8a1bba899a74" id="r_ga2234bef0ce656740efde8a1bba899a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga2234bef0ce656740efde8a1bba899a74">SceIncomingDialogParam::dialogTimer</a></td></tr>
+<tr class="separator:ga2234bef0ce656740efde8a1bba899a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf6262d8f086f7e4a7fff513da2919f8" id="r_gadf6262d8f086f7e4a7fff513da2919f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gadf6262d8f086f7e4a7fff513da2919f8">SceIncomingDialogParam::reserved1</a> [0x3E]</td></tr>
+<tr class="separator:gadf6262d8f086f7e4a7fff513da2919f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e0f2123d46b44dd5758ea1a74c81130" id="r_ga9e0f2123d46b44dd5758ea1a74c81130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga9e0f2123d46b44dd5758ea1a74c81130">SceIncomingDialogParam::buttonRightText</a> [0x1F]</td></tr>
+<tr class="separator:ga9e0f2123d46b44dd5758ea1a74c81130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ebff7cbe301256f09089917eaa68b28" id="r_ga4ebff7cbe301256f09089917eaa68b28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga4ebff7cbe301256f09089917eaa68b28">SceIncomingDialogParam::separator0</a></td></tr>
+<tr class="separator:ga4ebff7cbe301256f09089917eaa68b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc52ae6e3f488b28d946ee6d8ad5aaff" id="r_gabc52ae6e3f488b28d946ee6d8ad5aaff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gabc52ae6e3f488b28d946ee6d8ad5aaff">SceIncomingDialogParam::buttonLeftText</a> [0x1F]</td></tr>
+<tr class="separator:gabc52ae6e3f488b28d946ee6d8ad5aaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac693b1c38f77f8b74b389e2a3322d7d" id="r_gaac693b1c38f77f8b74b389e2a3322d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gaac693b1c38f77f8b74b389e2a3322d7d">SceIncomingDialogParam::separator1</a></td></tr>
+<tr class="separator:gaac693b1c38f77f8b74b389e2a3322d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef8aaf693608d925b67d417896722b81" id="r_gaef8aaf693608d925b67d417896722b81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#gaef8aaf693608d925b67d417896722b81">SceIncomingDialogParam::dialogText</a> [0x80]</td></tr>
+<tr class="separator:gaef8aaf693608d925b67d417896722b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c4d3388f0226e321294f2cd5ac17652" id="r_ga1c4d3388f0226e321294f2cd5ac17652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIncomingDialogUser.html#ga1c4d3388f0226e321294f2cd5ac17652">SceIncomingDialogParam::separator2</a></td></tr>
+<tr class="separator:ga1c4d3388f0226e321294f2cd5ac17652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="incoming__dialog_8h.html">psp2/incoming_dialog.h</a>&gt;</span> </div>
+<div class="ttc" id="aincoming__dialog_8h_html"><div class="ttname"><a href="incoming__dialog_8h.html">incoming_dialog.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceIncomingDialog_stub </div>
+</div><!-- fragment --><p> <br  />
+ Load the required module:<br  />
+</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a4f968915f78ea5471ff2d06569696410">SCE_SYSMODULE_INCOMING_DIALOG</a>); </div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a4f968915f78ea5471ff2d06569696410"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a4f968915f78ea5471ff2d06569696410">SCE_SYSMODULE_INCOMING_DIALOG</a></div><div class="ttdeci">@ SCE_SYSMODULE_INCOMING_DIALOG</div><div class="ttdoc">Incoming Dialog module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:80</div></div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceIncomingDialogParam" id="structSceIncomingDialogParam"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceIncomingDialogParam">&#9670;&#160;</a></span>SceIncomingDialogParam</h2>
 
@@ -399,6 +458,175 @@ separator2</td>
 </div><div class="memdoc">
 
 <p>Finish incoming dialog library. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga7f912faca1302549c3c540d05c76c97c" name="ga7f912faca1302549c3c540d05c76c97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f912faca1302549c3c540d05c76c97c">&#9670;&#160;</a></span>sdkVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceIncomingDialogParam::sdkVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4e86f6573e2c4080a74f97acd25a9f6d" name="ga4e86f6573e2c4080a74f97acd25a9f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e86f6573e2c4080a74f97acd25a9f6d">&#9670;&#160;</a></span>audioPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a> SceIncomingDialogParam::audioPath[0x80]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafc665bc00febf10895d11b81a9fdf62b" name="gafc665bc00febf10895d11b81a9fdf62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc665bc00febf10895d11b81a9fdf62b">&#9670;&#160;</a></span>titleid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a> SceIncomingDialogParam::titleid[0x10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac98eff1f99f9115be587723d451a1f9b" name="gac98eff1f99f9115be587723d451a1f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac98eff1f99f9115be587723d451a1f9b">&#9670;&#160;</a></span>unk_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceIncomingDialogParam::unk_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2234bef0ce656740efde8a1bba899a74" name="ga2234bef0ce656740efde8a1bba899a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2234bef0ce656740efde8a1bba899a74">&#9670;&#160;</a></span>dialogTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceIncomingDialogParam::dialogTimer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadf6262d8f086f7e4a7fff513da2919f8" name="gadf6262d8f086f7e4a7fff513da2919f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf6262d8f086f7e4a7fff513da2919f8">&#9670;&#160;</a></span>reserved1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a> SceIncomingDialogParam::reserved1[0x3E]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9e0f2123d46b44dd5758ea1a74c81130" name="ga9e0f2123d46b44dd5758ea1a74c81130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e0f2123d46b44dd5758ea1a74c81130">&#9670;&#160;</a></span>buttonRightText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> SceIncomingDialogParam::buttonRightText[0x1F]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4ebff7cbe301256f09089917eaa68b28" name="ga4ebff7cbe301256f09089917eaa68b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ebff7cbe301256f09089917eaa68b28">&#9670;&#160;</a></span>separator0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a> SceIncomingDialogParam::separator0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabc52ae6e3f488b28d946ee6d8ad5aaff" name="gabc52ae6e3f488b28d946ee6d8ad5aaff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc52ae6e3f488b28d946ee6d8ad5aaff">&#9670;&#160;</a></span>buttonLeftText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> SceIncomingDialogParam::buttonLeftText[0x1F]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaac693b1c38f77f8b74b389e2a3322d7d" name="gaac693b1c38f77f8b74b389e2a3322d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac693b1c38f77f8b74b389e2a3322d7d">&#9670;&#160;</a></span>separator1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a> SceIncomingDialogParam::separator1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaef8aaf693608d925b67d417896722b81" name="gaef8aaf693608d925b67d417896722b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef8aaf693608d925b67d417896722b81">&#9670;&#160;</a></span>dialogText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> SceIncomingDialogParam::dialogText[0x80]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1c4d3388f0226e321294f2cd5ac17652" name="ga1c4d3388f0226e321294f2cd5ac17652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c4d3388f0226e321294f2cd5ac17652">&#9670;&#160;</a></span>separator2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga18e758e47733121c9612598090e82aaf">SceInt16</a> SceIncomingDialogParam::separator2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

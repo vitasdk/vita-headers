@@ -73,10 +73,32 @@ $(document).ready(function(){initNavTree('group__SceJpegArmUser.html',''); initR
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Graphics.html">Graphics</a> &raquo; <a class="el" href="group__SceJpegArm.html">JPEG ARM Decoding Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gabc39c184b3d03c9306359273c57334b4" id="r_gabc39c184b3d03c9306359273c57334b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#gabc39c184b3d03c9306359273c57334b4">SceJpegArmErrorCode</a> { <a class="el" href="group__SceJpegArmUser.html#ggabc39c184b3d03c9306359273c57334b4a44c8cb6da6fbe5b06086792903e6a334">SCE_JPEG_ARM_OK</a> = 0
+ }</td></tr>
+<tr class="memdesc:gabc39c184b3d03c9306359273c57334b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error Codes.  <a href="group__SceJpegArmUser.html#gabc39c184b3d03c9306359273c57334b4">More...</a><br /></td></tr>
+<tr class="separator:gabc39c184b3d03c9306359273c57334b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga6cc9d79ed755c89a6e8bbb083801cbd6" id="r_ga6cc9d79ed755c89a6e8bbb083801cbd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#ga6cc9d79ed755c89a6e8bbb083801cbd6">sceJpegArmDecodeMJpeg</a> (const <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pJpeg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> isize, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> decodeMode, void *pRGBA, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> osize, void *pCoefBuffer, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> coefBufferSize)</td></tr>
+<tr class="separator:ga6cc9d79ed755c89a6e8bbb083801cbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab99d229cccd33c6c49c5b2b62254d6fa" id="r_gab99d229cccd33c6c49c5b2b62254d6fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#gab99d229cccd33c6c49c5b2b62254d6fa">sceJpegArmDecodeMJpegYCbCr</a> (const <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pJpeg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> isize, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> decodeMode, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pYCbCr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> osize, void *pCoefBuffer, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> coefBufferSize)</td></tr>
+<tr class="separator:gab99d229cccd33c6c49c5b2b62254d6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1603d02d55076e5cf408d6e33c598dc" id="r_gae1603d02d55076e5cf408d6e33c598dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#gae1603d02d55076e5cf408d6e33c598dc">sceJpegArmGetOutputInfo</a> (const <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pJpeg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> isize, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> decodeMode, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> outputFormat, <a class="el" href="group__SceJpegUser.html#structSceJpegOutputInfo">SceJpegOutputInfo</a> *pOutputInfo)</td></tr>
+<tr class="separator:gae1603d02d55076e5cf408d6e33c598dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
 <hr  />
@@ -94,17 +116,7 @@ $(document).ready(function(){initNavTree('group__SceJpegArmUser.html',''); initR
 <div class="ttc" id="agroup__SceSysmoduleUser_html_gga083efdadfb15fe959ad144180c49cc7aa1bdfa182c95ce19c54e41605eb116794"><div class="ttname"><a href="group__SceSysmoduleUser.html#gga083efdadfb15fe959ad144180c49cc7aa1bdfa182c95ce19c54e41605eb116794">SCE_SYSMODULE_INTERNAL_JPEG_ARM</a></div><div class="ttdeci">@ SCE_SYSMODULE_INTERNAL_JPEG_ARM</div><div class="ttdoc">sceJpegArm module</div><div class="ttdef"><b>Definition</b> sysmodule.h:119</div></div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga6cc9d79ed755c89a6e8bbb083801cbd6" id="r_ga6cc9d79ed755c89a6e8bbb083801cbd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#ga6cc9d79ed755c89a6e8bbb083801cbd6">sceJpegArmDecodeMJpeg</a> (const <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pJpeg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> isize, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> decodeMode, void *pRGBA, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> osize, void *pCoefBuffer, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> coefBufferSize)</td></tr>
-<tr class="separator:ga6cc9d79ed755c89a6e8bbb083801cbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab99d229cccd33c6c49c5b2b62254d6fa" id="r_gab99d229cccd33c6c49c5b2b62254d6fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#gab99d229cccd33c6c49c5b2b62254d6fa">sceJpegArmDecodeMJpegYCbCr</a> (const <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pJpeg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> isize, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> decodeMode, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pYCbCr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> osize, void *pCoefBuffer, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> coefBufferSize)</td></tr>
-<tr class="separator:gab99d229cccd33c6c49c5b2b62254d6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1603d02d55076e5cf408d6e33c598dc" id="r_gae1603d02d55076e5cf408d6e33c598dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceJpegArmUser.html#gae1603d02d55076e5cf408d6e33c598dc">sceJpegArmGetOutputInfo</a> (const <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> *pJpeg, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> isize, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> decodeMode, <a class="el" href="group__SceTypesKernel.html#gaf1c49f852c7c102ad63d58b7314dd84d">SceInt</a> outputFormat, <a class="el" href="group__SceJpegUser.html#structSceJpegOutputInfo">SceJpegOutputInfo</a> *pOutputInfo)</td></tr>
-<tr class="separator:gae1603d02d55076e5cf408d6e33c598dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+ <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gabc39c184b3d03c9306359273c57334b4" name="gabc39c184b3d03c9306359273c57334b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabc39c184b3d03c9306359273c57334b4">&#9670;&#160;</a></span>SceJpegArmErrorCode</h2>
 

@@ -73,25 +73,49 @@ $(document).ready(function(){initNavTree('group__SceIntrMgrKernel.html',''); ini
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceIntrMgr.html">Interrupt Manager Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="intrmgr_8h.html">psp2kern/kernel/intrmgr.h</a>&gt;</span> </div>
-<div class="ttc" id="aintrmgr_8h_html"><div class="ttname"><a href="intrmgr_8h.html">intrmgr.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceIntrmgrForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceKernelIntrOptHandlers" id="r_structSceKernelIntrOptHandlers"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#structSceKernelIntrOptHandlers">SceKernelIntrOptHandlers</a></td></tr>
+<tr class="separator:structSceKernelIntrOptHandlers"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelIntrOptParam" id="r_structSceKernelIntrOptParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#structSceKernelIntrOptParam">SceKernelIntrOptParam</a></td></tr>
+<tr class="separator:structSceKernelIntrOptParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga33f7c8b4b71c801c0851576b54ec1893" id="r_ga33f7c8b4b71c801c0851576b54ec1893"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga33f7c8b4b71c801c0851576b54ec1893">ksceKernelMaskIntr</a>(intr_code)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#gab74faef8e41bc195cf9e58d21ad19ad0">ksceKernelDisableIntr</a>(intr_code)</td></tr>
+<tr class="separator:ga33f7c8b4b71c801c0851576b54ec1893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga380885050e95a110e759fcd205fe4d49" id="r_ga380885050e95a110e759fcd205fe4d49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga380885050e95a110e759fcd205fe4d49">ksceKernelSetIntrMasked</a>(intr_code,  masked)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td></tr>
+<tr class="separator:ga380885050e95a110e759fcd205fe4d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88d1d177585245a55e879faf9a246202" id="r_ga88d1d177585245a55e879faf9a246202"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga88d1d177585245a55e879faf9a246202">ksceKernelUnmaskIntr</a>(intr_code)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td></tr>
+<tr class="separator:ga88d1d177585245a55e879faf9a246202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76ba30a6025f97a6eab757d33a22f0f1" id="r_ga76ba30a6025f97a6eab757d33a22f0f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga76ba30a6025f97a6eab757d33a22f0f1">ksceKernelGetIntrMasked</a>&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga22ab7c1092465c7aab26e03750befe7b">ksceKernelSuspendIntr</a></td></tr>
+<tr class="separator:ga76ba30a6025f97a6eab757d33a22f0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gab955de2ad0a9bca928a895f57fb9782f" id="r_gab955de2ad0a9bca928a895f57fb9782f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gab955de2ad0a9bca928a895f57fb9782f">SceKernelIntrHandler</a>) (int unk, void *userCtx)</td></tr>
+<tr class="separator:gab955de2ad0a9bca928a895f57fb9782f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8091ffcd1bd34918ac5517e79b5f0dff" id="r_ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff">SceKernelSubIntrHandler</a>) (void *subintr_arg, void *register_arg, unsigned char intr_priority)</td></tr>
+<tr class="separator:ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae4ab184e3330d0a3d091e7d07a6c73e" id="r_gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>) (int intr_code, int subintr_code)</td></tr>
+<tr class="separator:gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95eea41a243da0f511481213b9260646" id="r_ga95eea41a243da0f511481213b9260646"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646">SceKernelIntrOptHandlersCb2</a>) (int intr_code, int subintr_code, void *arg)</td></tr>
+<tr class="separator:ga95eea41a243da0f511481213b9260646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7000acd192bdb3060d2b66dd0f5509d8" id="r_ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a>) (int intr_code, int subintr_code, <a class="el" href="group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff">SceKernelSubIntrHandler</a> handler, void *register_arg)</td></tr>
+<tr class="separator:ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga67a5d57a0462f34b424df159124254a1" id="r_ga67a5d57a0462f34b424df159124254a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga67a5d57a0462f34b424df159124254a1">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceIntrMgrKernel.html#structSceKernelIntrOptHandlers">SceKernelIntrOptHandlers</a>)</td></tr>
@@ -139,31 +163,52 @@ Functions</h2></td></tr>
 <tr class="memitem:ga52391ac61fccf0326d6e679531e146e8" id="r_ga52391ac61fccf0326d6e679531e146e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga52391ac61fccf0326d6e679531e146e8">ksceKernelQueryIntrHandlerInfo</a> (unsigned int intr_code, unsigned int a2, int a3)</td></tr>
 <tr class="separator:ga52391ac61fccf0326d6e679531e146e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gab955de2ad0a9bca928a895f57fb9782f" id="r_gab955de2ad0a9bca928a895f57fb9782f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gab955de2ad0a9bca928a895f57fb9782f">SceKernelIntrHandler</a>) (int unk, void *userCtx)</td></tr>
-<tr class="separator:gab955de2ad0a9bca928a895f57fb9782f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8091ffcd1bd34918ac5517e79b5f0dff" id="r_ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff">SceKernelSubIntrHandler</a>) (void *subintr_arg, void *register_arg, unsigned char intr_priority)</td></tr>
-<tr class="separator:ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae4ab184e3330d0a3d091e7d07a6c73e" id="r_gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>) (int intr_code, int subintr_code)</td></tr>
-<tr class="separator:gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95eea41a243da0f511481213b9260646" id="r_ga95eea41a243da0f511481213b9260646"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646">SceKernelIntrOptHandlersCb2</a>) (int intr_code, int subintr_code, void *arg)</td></tr>
-<tr class="separator:ga95eea41a243da0f511481213b9260646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7000acd192bdb3060d2b66dd0f5509d8" id="r_ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a>) (int intr_code, int subintr_code, <a class="el" href="group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff">SceKernelSubIntrHandler</a> handler, void *register_arg)</td></tr>
-<tr class="separator:ga7000acd192bdb3060d2b66dd0f5509d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga33f7c8b4b71c801c0851576b54ec1893" id="r_ga33f7c8b4b71c801c0851576b54ec1893"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga33f7c8b4b71c801c0851576b54ec1893">ksceKernelMaskIntr</a>(intr_code)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#gab74faef8e41bc195cf9e58d21ad19ad0">ksceKernelDisableIntr</a>(intr_code)</td></tr>
-<tr class="separator:ga33f7c8b4b71c801c0851576b54ec1893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga380885050e95a110e759fcd205fe4d49" id="r_ga380885050e95a110e759fcd205fe4d49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga380885050e95a110e759fcd205fe4d49">ksceKernelSetIntrMasked</a>(intr_code,  masked)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td></tr>
-<tr class="separator:ga380885050e95a110e759fcd205fe4d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88d1d177585245a55e879faf9a246202" id="r_ga88d1d177585245a55e879faf9a246202"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga88d1d177585245a55e879faf9a246202">ksceKernelUnmaskIntr</a>(intr_code)&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga61a97467e45dd8b3b5c938c393b7aa8e">ksceKernelEnableIntr</a>(intr_code)</td></tr>
-<tr class="separator:ga88d1d177585245a55e879faf9a246202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76ba30a6025f97a6eab757d33a22f0f1" id="r_ga76ba30a6025f97a6eab757d33a22f0f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga76ba30a6025f97a6eab757d33a22f0f1">ksceKernelGetIntrMasked</a>&#160;&#160;&#160;<a class="el" href="group__SceIntrMgrKernel.html#ga22ab7c1092465c7aab26e03750befe7b">ksceKernelSuspendIntr</a></td></tr>
-<tr class="separator:ga76ba30a6025f97a6eab757d33a22f0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga26e9a7a1370194cc507e082768b2d98a" id="r_ga26e9a7a1370194cc507e082768b2d98a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga26e9a7a1370194cc507e082768b2d98a">SceKernelIntrOptHandlers::size</a></td></tr>
+<tr class="separator:ga26e9a7a1370194cc507e082768b2d98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga472fce38a19666a2a395240aa8f371cb" id="r_ga472fce38a19666a2a395240aa8f371cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga472fce38a19666a2a395240aa8f371cb">SceKernelIntrOptHandlers::pre_register_subintr_cb</a></td></tr>
+<tr class="separator:ga472fce38a19666a2a395240aa8f371cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff41d9222b9c03376b3605979ad4d346" id="r_gaff41d9222b9c03376b3605979ad4d346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gaff41d9222b9c03376b3605979ad4d346">SceKernelIntrOptHandlers::post_register_subintr_cb</a></td></tr>
+<tr class="separator:gaff41d9222b9c03376b3605979ad4d346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4609ccadf5c93294f240ee14eaa2f767" id="r_ga4609ccadf5c93294f240ee14eaa2f767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga4609ccadf5c93294f240ee14eaa2f767">SceKernelIntrOptHandlers::release_subintr_cb</a></td></tr>
+<tr class="separator:ga4609ccadf5c93294f240ee14eaa2f767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7320af9dbe0bcbe379cfaf950fef432e" id="r_ga7320af9dbe0bcbe379cfaf950fef432e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga7320af9dbe0bcbe379cfaf950fef432e">SceKernelIntrOptHandlers::fptr0</a></td></tr>
+<tr class="separator:ga7320af9dbe0bcbe379cfaf950fef432e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae706b88f5a9706a6142b0946e0c39735" id="r_gae706b88f5a9706a6142b0946e0c39735"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gae706b88f5a9706a6142b0946e0c39735">SceKernelIntrOptHandlers::enable_subintr_cb</a></td></tr>
+<tr class="separator:gae706b88f5a9706a6142b0946e0c39735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabba6431813714c4ee680f79f94426fd2" id="r_gabba6431813714c4ee680f79f94426fd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gabba6431813714c4ee680f79f94426fd2">SceKernelIntrOptHandlers::disable_subintr_cb</a></td></tr>
+<tr class="separator:gabba6431813714c4ee680f79f94426fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8134f23650c1298d8c25f1a11c3131c1" id="r_ga8134f23650c1298d8c25f1a11c3131c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646">SceKernelIntrOptHandlersCb2</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga8134f23650c1298d8c25f1a11c3131c1">SceKernelIntrOptHandlers::fptr3</a></td></tr>
+<tr class="separator:ga8134f23650c1298d8c25f1a11c3131c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga105dfe95ec9c8079832efc0d9fb269dc" id="r_ga105dfe95ec9c8079832efc0d9fb269dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga105dfe95ec9c8079832efc0d9fb269dc">SceKernelIntrOptHandlers::fptr4</a></td></tr>
+<tr class="separator:ga105dfe95ec9c8079832efc0d9fb269dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6dd95282701a6a7b4e5fb70a9e4812d" id="r_gac6dd95282701a6a7b4e5fb70a9e4812d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gac6dd95282701a6a7b4e5fb70a9e4812d">SceKernelIntrOptHandlers::fptr5</a></td></tr>
+<tr class="separator:gac6dd95282701a6a7b4e5fb70a9e4812d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c8c282753748e588d4cb9176c7f1a72" id="r_ga1c8c282753748e588d4cb9176c7f1a72"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga1c8c282753748e588d4cb9176c7f1a72">SceKernelIntrOptParam::size</a></td></tr>
+<tr class="separator:ga1c8c282753748e588d4cb9176c7f1a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc6fde638d1c2eef7e334288b99197b3" id="r_gadc6fde638d1c2eef7e334288b99197b3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gadc6fde638d1c2eef7e334288b99197b3">SceKernelIntrOptParam::num</a></td></tr>
+<tr class="separator:gadc6fde638d1c2eef7e334288b99197b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1664298a6191eb3fa2328b2cbb253f9" id="r_gab1664298a6191eb3fa2328b2cbb253f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIntrMgrKernel.html#structSceKernelIntrOptHandlers">SceKernelIntrOptHandlers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gab1664298a6191eb3fa2328b2cbb253f9">SceKernelIntrOptParam::handlers</a></td></tr>
+<tr class="separator:gab1664298a6191eb3fa2328b2cbb253f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga018a2789b592a9b8a521f2b1ede8daac" id="r_ga018a2789b592a9b8a521f2b1ede8daac"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga018a2789b592a9b8a521f2b1ede8daac">SceKernelIntrOptParam::unk_C</a></td></tr>
+<tr class="separator:ga018a2789b592a9b8a521f2b1ede8daac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0038f00f3a72fae53493048a507c9e5" id="r_gab0038f00f3a72fae53493048a507c9e5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gab0038f00f3a72fae53493048a507c9e5">SceKernelIntrOptParam::unk_10</a></td></tr>
+<tr class="separator:gab0038f00f3a72fae53493048a507c9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="intrmgr_8h.html">psp2kern/kernel/intrmgr.h</a>&gt;</span> </div>
+<div class="ttc" id="aintrmgr_8h_html"><div class="ttname"><a href="intrmgr_8h.html">intrmgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceIntrmgrForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelIntrOptHandlers" id="structSceKernelIntrOptHandlers"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceKernelIntrOptHandlers">&#9670;&#160;</a></span>SceKernelIntrOptHandlers</h2>
 
@@ -1061,6 +1106,217 @@ unk_10</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga26e9a7a1370194cc507e082768b2d98a" name="ga26e9a7a1370194cc507e082768b2d98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26e9a7a1370194cc507e082768b2d98a">&#9670;&#160;</a></span>size <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceKernelIntrOptHandlers::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga472fce38a19666a2a395240aa8f371cb" name="ga472fce38a19666a2a395240aa8f371cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga472fce38a19666a2a395240aa8f371cb">&#9670;&#160;</a></span>pre_register_subintr_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a>* SceKernelIntrOptHandlers::pre_register_subintr_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaff41d9222b9c03376b3605979ad4d346" name="gaff41d9222b9c03376b3605979ad4d346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff41d9222b9c03376b3605979ad4d346">&#9670;&#160;</a></span>post_register_subintr_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8">SceKernelIntrOptHandlersCb3</a>* SceKernelIntrOptHandlers::post_register_subintr_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4609ccadf5c93294f240ee14eaa2f767" name="ga4609ccadf5c93294f240ee14eaa2f767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4609ccadf5c93294f240ee14eaa2f767">&#9670;&#160;</a></span>release_subintr_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>* SceKernelIntrOptHandlers::release_subintr_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7320af9dbe0bcbe379cfaf950fef432e" name="ga7320af9dbe0bcbe379cfaf950fef432e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7320af9dbe0bcbe379cfaf950fef432e">&#9670;&#160;</a></span>fptr0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>* SceKernelIntrOptHandlers::fptr0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae706b88f5a9706a6142b0946e0c39735" name="gae706b88f5a9706a6142b0946e0c39735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae706b88f5a9706a6142b0946e0c39735">&#9670;&#160;</a></span>enable_subintr_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>* SceKernelIntrOptHandlers::enable_subintr_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabba6431813714c4ee680f79f94426fd2" name="gabba6431813714c4ee680f79f94426fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabba6431813714c4ee680f79f94426fd2">&#9670;&#160;</a></span>disable_subintr_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>* SceKernelIntrOptHandlers::disable_subintr_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8134f23650c1298d8c25f1a11c3131c1" name="ga8134f23650c1298d8c25f1a11c3131c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8134f23650c1298d8c25f1a11c3131c1">&#9670;&#160;</a></span>fptr3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646">SceKernelIntrOptHandlersCb2</a>* SceKernelIntrOptHandlers::fptr3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga105dfe95ec9c8079832efc0d9fb269dc" name="ga105dfe95ec9c8079832efc0d9fb269dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga105dfe95ec9c8079832efc0d9fb269dc">&#9670;&#160;</a></span>fptr4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>* SceKernelIntrOptHandlers::fptr4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac6dd95282701a6a7b4e5fb70a9e4812d" name="gac6dd95282701a6a7b4e5fb70a9e4812d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6dd95282701a6a7b4e5fb70a9e4812d">&#9670;&#160;</a></span>fptr5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>* SceKernelIntrOptHandlers::fptr5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1c8c282753748e588d4cb9176c7f1a72" name="ga1c8c282753748e588d4cb9176c7f1a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c8c282753748e588d4cb9176c7f1a72">&#9670;&#160;</a></span>size <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceKernelIntrOptParam::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadc6fde638d1c2eef7e334288b99197b3" name="gadc6fde638d1c2eef7e334288b99197b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc6fde638d1c2eef7e334288b99197b3">&#9670;&#160;</a></span>num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceKernelIntrOptParam::num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab1664298a6191eb3fa2328b2cbb253f9" name="gab1664298a6191eb3fa2328b2cbb253f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1664298a6191eb3fa2328b2cbb253f9">&#9670;&#160;</a></span>handlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIntrMgrKernel.html#structSceKernelIntrOptHandlers">SceKernelIntrOptHandlers</a>* SceKernelIntrOptParam::handlers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga018a2789b592a9b8a521f2b1ede8daac" name="ga018a2789b592a9b8a521f2b1ede8daac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga018a2789b592a9b8a521f2b1ede8daac">&#9670;&#160;</a></span>unk_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceKernelIntrOptParam::unk_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab0038f00f3a72fae53493048a507c9e5" name="gab0038f00f3a72fae53493048a507c9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0038f00f3a72fae53493048a507c9e5">&#9670;&#160;</a></span>unk_10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceKernelIntrOptParam::unk_10</td>
         </tr>
       </table>
 </div><div class="memdoc">

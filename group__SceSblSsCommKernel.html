@@ -73,11 +73,45 @@ $(document).ready(function(){initNavTree('group__SceSblSsCommKernel.html',''); i
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceSblSsComm.html">SM Loader</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceSblSmCommPair" id="r_structSceSblSmCommPair"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#structSceSblSmCommPair">SceSblSmCommPair</a></td></tr>
+<tr class="separator:structSceSblSmCommPair"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga29223654e22aa854de137ce321d874ac" id="r_ga29223654e22aa854de137ce321d874ac"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a></td></tr>
+<tr class="separator:ga29223654e22aa854de137ce321d874ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3" id="r_gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceSblSsCommKernel.html#structSceSblSmCommPair">SceSblSmCommPair</a>)</td></tr>
+<tr class="separator:gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd576b7e005049ef934db6385957ae36" id="r_gacd576b7e005049ef934db6385957ae36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gacd576b7e005049ef934db6385957ae36">ksceSblSmCommStartSmFromFile</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> priority, const char *sm_path, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> cmd_id, <a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a> *auth_info, <a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a> *id)</td></tr>
+<tr class="separator:gacd576b7e005049ef934db6385957ae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd13b4e22e07ad0fbdf6cd4beac9cf95" id="r_gacd13b4e22e07ad0fbdf6cd4beac9cf95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gacd13b4e22e07ad0fbdf6cd4beac9cf95">ksceSblSmCommCallFunc</a> (<a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a> id, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> service_id, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *service_result, void *data, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="separator:gacd13b4e22e07ad0fbdf6cd4beac9cf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga265bc981b7ec87fa68bafc01409e25a5" id="r_ga265bc981b7ec87fa68bafc01409e25a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#ga265bc981b7ec87fa68bafc01409e25a5">ksceSblSmCommStopSm</a> (<a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a> id, <a class="el" href="group__SceSblSsCommKernel.html#structSceSblSmCommPair">SceSblSmCommPair</a> *result)</td></tr>
+<tr class="separator:ga265bc981b7ec87fa68bafc01409e25a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gadf2d5997e4fbceb74792731912fb17d4" id="r_gadf2d5997e4fbceb74792731912fb17d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gadf2d5997e4fbceb74792731912fb17d4">SceSblSmCommPair::data_00</a></td></tr>
+<tr class="separator:gadf2d5997e4fbceb74792731912fb17d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9b49bb98daf4fb19b6ec64c48925bab" id="r_gae9b49bb98daf4fb19b6ec64c48925bab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gae9b49bb98daf4fb19b6ec64c48925bab">SceSblSmCommPair::data_04</a></td></tr>
+<tr class="separator:gae9b49bb98daf4fb19b6ec64c48925bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
 <hr  />
@@ -90,24 +124,7 @@ $(document).ready(function(){initNavTree('group__SceSblSsCommKernel.html',''); i
 </p><div class="fragment"><div class="line">SceSblSmCommForKernel_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3" id="r_gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceSblSsCommKernel.html#structSceSblSmCommPair">SceSblSmCommPair</a>)</td></tr>
-<tr class="separator:gadbf8cd1e8c1aff67b5dfc42fa6fd4aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd576b7e005049ef934db6385957ae36" id="r_gacd576b7e005049ef934db6385957ae36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gacd576b7e005049ef934db6385957ae36">ksceSblSmCommStartSmFromFile</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> priority, const char *sm_path, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> cmd_id, <a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a> *auth_info, <a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a> *id)</td></tr>
-<tr class="separator:gacd576b7e005049ef934db6385957ae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd13b4e22e07ad0fbdf6cd4beac9cf95" id="r_gacd13b4e22e07ad0fbdf6cd4beac9cf95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#gacd13b4e22e07ad0fbdf6cd4beac9cf95">ksceSblSmCommCallFunc</a> (<a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a> id, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> service_id, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *service_result, void *data, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
-<tr class="separator:gacd13b4e22e07ad0fbdf6cd4beac9cf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga265bc981b7ec87fa68bafc01409e25a5" id="r_ga265bc981b7ec87fa68bafc01409e25a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#ga265bc981b7ec87fa68bafc01409e25a5">ksceSblSmCommStopSm</a> (<a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a> id, <a class="el" href="group__SceSblSsCommKernel.html#structSceSblSmCommPair">SceSblSmCommPair</a> *result)</td></tr>
-<tr class="separator:ga265bc981b7ec87fa68bafc01409e25a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga29223654e22aa854de137ce321d874ac" id="r_ga29223654e22aa854de137ce321d874ac"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblSsCommKernel.html#ga29223654e22aa854de137ce321d874ac">SceSblSmCommId</a></td></tr>
-<tr class="separator:ga29223654e22aa854de137ce321d874ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceSblSmCommPair" id="structSceSblSmCommPair"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceSblSmCommPair">&#9670;&#160;</a></span>SceSblSmCommPair</h2>
 
@@ -295,6 +312,35 @@ data_04</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gadf2d5997e4fbceb74792731912fb17d4" name="gadf2d5997e4fbceb74792731912fb17d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf2d5997e4fbceb74792731912fb17d4">&#9670;&#160;</a></span>data_00</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblSmCommPair::data_00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae9b49bb98daf4fb19b6ec64c48925bab" name="gae9b49bb98daf4fb19b6ec64c48925bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9b49bb98daf4fb19b6ec64c48925bab">&#9670;&#160;</a></span>data_04</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblSmCommPair::data_04</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -73,23 +73,50 @@ $(document).ready(function(){initNavTree('group__SceUsbAudioUser.html',''); init
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Audio.html">Audio</a> &raquo; <a class="el" href="group__SceUsbAudio.html">Usb Audio In Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="usbaudioin_8h.html">psp2/usbaudioin.h</a>&gt;</span> </div>
-<div class="ttc" id="ausbaudioin_8h_html"><div class="ttname"><a href="usbaudioin_8h.html">usbaudioin.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceUsbAudioIn_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceUsbAudioInDeviceInfo" id="r_structSceUsbAudioInDeviceInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#structSceUsbAudioInDeviceInfo">SceUsbAudioInDeviceInfo</a></td></tr>
+<tr class="separator:structSceUsbAudioInDeviceInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceUsbAudioInDeviceListItem" id="r_structSceUsbAudioInDeviceListItem"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#structSceUsbAudioInDeviceListItem">SceUsbAudioInDeviceListItem</a></td></tr>
+<tr class="separator:structSceUsbAudioInDeviceListItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga320de6c80839a882a0445397d3259399" id="r_ga320de6c80839a882a0445397d3259399"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#ga320de6c80839a882a0445397d3259399">SceUsbAudioInErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a1ebc2ebf44e3d40b055bef085935112b">SCE_USBAUDIO_IN_ERROR_INVALID_ARGUMENT</a> = 0x803e0001
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ad5773c23e8c3f32e804b2bf9868b3397">SCE_USBAUDIO_IN_ERROR_DUPLICATE_ID</a> = 0x803e0002
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a448c0faf00475d0b02a3af404373a275">SCE_USBAUDIO_IN_ERROR_NO_MEMORY</a> = 0x803e0003
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a7fc95e1db0ae8840e1462dd94ba80ff7">SCE_USBAUDIO_IN_ERROR_DEVICE_NOT_FOUND</a> = 0x803e0004
+, <br />
+&#160;&#160;<a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a396d0aa9cc07ba46eda839fa6640ec99">SCE_USBAUDIO_IN_ERROR_NOT_SUPPORTED</a> = 0x803e0005
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ae1e3af0c34483a91eade74c1fd9d7b31">SCE_USBAUDIO_IN_ERROR_CANNOT_GET_PORT_OWNERSHIP</a> = 0x803e0006
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a16137dfb910333e12545b0e61e53b23d">SCE_USBAUDIO_IN_ERROR_PORT_IS_ALREADY_OPENED</a> = 0x803e0007
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a3005593b13295fa5e61ad307c37902fc">SCE_USBAUDIO_IN_ERROR_PROCESS_HAS_NOT_A_DEVICE_OWNERSHIP</a> = 0x803e0008
+, <br />
+&#160;&#160;<a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a292a4a5065439d3506058e4531d0d73d">SCE_USBAUDIO_IN_ERROR_FAILED_TO_READ_STREAM</a> = 0x803e0009
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a3bf94445f8d484996e00ec804d40f79a">SCE_USBAUDIO_IN_ERROR_DEVICE_WAS_HALTED</a> = 0x803e000a
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ac0a792bd3063d8d8c9fe6dfb199f2c97">SCE_USBAUDIO_IN_ERROR_NO_DATA_TO_READ</a> = 0x803e000b
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a3a5d8df9f95c5308cbbecac8751a377c">SCE_USBAUDIO_IN_ERROR_FAILED_TO_COPY_BUFFER</a> = 0x803e000c
+, <br />
+&#160;&#160;<a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399aa97f65821dab66868798d41e66979d19">SCE_USBAUDIO_IN_ERROR_FAILED_TO_REQUEST_ISOCHRONOUS</a> = 0x803e000d
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399a8748cf0a29d752097768d9b75b85af28">SCE_USBAUDIO_IN_ERROR_TIMEOUT</a> = 0x803e000e
+, <a class="el" href="group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ac653dd47d6f116a41178d396cdb94feb">SCE_USBAUDIO_IN_ERROR_PROCESS_CANNOT_OPEN_MORE_DEVICE</a> = 0x803e000f
+<br />
+ }</td></tr>
+<tr class="separator:ga320de6c80839a882a0445397d3259399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga59a95437037d3aa0307fef180bee3c6d" id="r_ga59a95437037d3aa0307fef180bee3c6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#ga59a95437037d3aa0307fef180bee3c6d">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceUsbAudioUser.html#structSceUsbAudioInDeviceInfo">SceUsbAudioInDeviceInfo</a>)</td></tr>
@@ -120,8 +147,31 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8ff2e34ee6a8ae316f535bfa0470eaf7" id="r_ga8ff2e34ee6a8ae316f535bfa0470eaf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#ga8ff2e34ee6a8ae316f535bfa0470eaf7">sceUsbAudioInInput</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> device_id, void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>)</td></tr>
 <tr class="memdesc:ga8ff2e34ee6a8ae316f535bfa0470eaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive sound data from usb device.  <br /></td></tr>
 <tr class="separator:ga8ff2e34ee6a8ae316f535bfa0470eaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga05c9d5ac3caa849c2e6bfa00c2b9a73a" id="r_ga05c9d5ac3caa849c2e6bfa00c2b9a73a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#ga05c9d5ac3caa849c2e6bfa00c2b9a73a">SceUsbAudioInDeviceInfo::vendor</a></td></tr>
+<tr class="separator:ga05c9d5ac3caa849c2e6bfa00c2b9a73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee36727d6256ea8d4b8670e452dd3b9c" id="r_gaee36727d6256ea8d4b8670e452dd3b9c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#gaee36727d6256ea8d4b8670e452dd3b9c">SceUsbAudioInDeviceInfo::product</a></td></tr>
+<tr class="separator:gaee36727d6256ea8d4b8670e452dd3b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f7d543723f79bf45855f9827abaf6c" id="r_ga97f7d543723f79bf45855f9827abaf6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#ga97f7d543723f79bf45855f9827abaf6c">SceUsbAudioInDeviceInfo::_reserved</a> [5]</td></tr>
+<tr class="separator:ga97f7d543723f79bf45855f9827abaf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bc0bcd37d701d42277b36284c44d554" id="r_ga3bc0bcd37d701d42277b36284c44d554"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceUsbAudioUser.html#ga3bc0bcd37d701d42277b36284c44d554">SceUsbAudioInDeviceListItem::device_id</a></td></tr>
+<tr class="separator:ga3bc0bcd37d701d42277b36284c44d554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="usbaudioin_8h.html">psp2/usbaudioin.h</a>&gt;</span> </div>
+<div class="ttc" id="ausbaudioin_8h_html"><div class="ttname"><a href="usbaudioin_8h.html">usbaudioin.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceUsbAudioIn_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceUsbAudioInDeviceInfo" id="structSceUsbAudioInDeviceInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceUsbAudioInDeviceInfo">&#9670;&#160;</a></span>SceUsbAudioInDeviceInfo</h2>
 
@@ -580,6 +630,63 @@ device_id</td>
 <dl class="section note"><dt>Note</dt><dd>You should call sceUsbAudioInOpenDevice first to use this function </dd>
 <dd>
 Data is in S16_MONO format. Granularity is 768 (thus buffer is 768*2) </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga05c9d5ac3caa849c2e6bfa00c2b9a73a" name="ga05c9d5ac3caa849c2e6bfa00c2b9a73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05c9d5ac3caa849c2e6bfa00c2b9a73a">&#9670;&#160;</a></span>vendor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceUsbAudioInDeviceInfo::vendor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaee36727d6256ea8d4b8670e452dd3b9c" name="gaee36727d6256ea8d4b8670e452dd3b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee36727d6256ea8d4b8670e452dd3b9c">&#9670;&#160;</a></span>product</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SceUsbAudioInDeviceInfo::product</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97f7d543723f79bf45855f9827abaf6c" name="ga97f7d543723f79bf45855f9827abaf6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97f7d543723f79bf45855f9827abaf6c">&#9670;&#160;</a></span>_reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceUsbAudioInDeviceInfo::_reserved[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3bc0bcd37d701d42277b36284c44d554" name="ga3bc0bcd37d701d42277b36284c44d554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bc0bcd37d701d42277b36284c44d554">&#9670;&#160;</a></span>device_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceUsbAudioInDeviceListItem::device_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

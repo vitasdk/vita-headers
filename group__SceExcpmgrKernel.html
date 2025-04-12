@@ -73,24 +73,57 @@ $(document).ready(function(){initNavTree('group__SceExcpmgrKernel.html',''); ini
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceExcpmgr.html">Exception handling Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="excpmgr_8h.html">psp2kern/kernel/excpmgr.h</a>&gt;</span> </div>
-<div class="ttc" id="aexcpmgr_8h_html"><div class="ttname"><a href="excpmgr_8h.html">excpmgr.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceExcpmgrForKernel_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceExcpmgrData" id="r_structSceExcpmgrData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a></td></tr>
+<tr class="separator:structSceExcpmgrData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceExcpmgrExceptionContext" id="r_structSceExcpmgrExceptionContext"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a></td></tr>
+<tr class="separator:structSceExcpmgrExceptionContext"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga10137c58f1bf80f35e9cec90612e7164" id="r_ga10137c58f1bf80f35e9cec90612e7164"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga10137c58f1bf80f35e9cec90612e7164">SceExcpmgrExceptionHandler</a>(<a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a> *context, <a class="el" href="group__SceExcpmgrKernel.html#ga66b2162c277738d17f6463c875dbaa5c">SceExcpHandlingCode</a> code)</td></tr>
+<tr class="separator:ga10137c58f1bf80f35e9cec90612e7164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga9b3daa6d42c404744d8f43ea28173972" id="r_ga9b3daa6d42c404744d8f43ea28173972"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a> { <br />
+&#160;&#160;<a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493">SCE_EXCP_RESET</a> = 0
+, <a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972a729a765aed49ca5ad4aa1e499901fca1">SCE_EXCP_UNDEF_INSTRUCTION</a> = 1
+, <a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db">SCE_EXCP_SVC</a> = 2
+, <a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972a91908f9f7f9fcf4b13a956e1107c861d">SCE_EXCP_PABT</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972a82d0f8c199378afab4153cbbbde888c1">SCE_EXCP_DABT</a> = 4
+, <a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abaf0ecd9d2da1e694561816779a617dd">SCE_EXCP_UNUSED</a> = 5
+, <a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972a3f2f2dd092c6dd722a034f4cfd87821d">SCE_EXCP_IRQ</a> = 6
+, <a class="el" href="group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972a0652163c89612e72d709c4fcaa07d62b">SCE_EXCP_FIQ</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:ga9b3daa6d42c404744d8f43ea28173972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66b2162c277738d17f6463c875dbaa5c" id="r_ga66b2162c277738d17f6463c875dbaa5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga66b2162c277738d17f6463c875dbaa5c">SceExcpHandlingCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cad514d7b5dd73e7cd776a5550ea7394c0">SCE_EXCPMGR_EXCEPTION_HANDLED</a> = 0
+, <a class="el" href="group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5ca0b8f828278ab3804297e5f874d6920c3">SCE_EXCPMGR_EXCEPTION_NOT_HANDLED</a> = 1
+, <a class="el" href="group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86">SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_2</a> = 2
+, <a class="el" href="group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec">SCE_EXCPMGR_EXCEPTION_NOT_HANDLED_FATAL</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422">SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_4</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:ga66b2162c277738d17f6463c875dbaa5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaab0d8411d117829b670fdf68320d6be0" id="r_gaab0d8411d117829b670fdf68320d6be0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaab0d8411d117829b670fdf68320d6be0">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a>)</td></tr>
@@ -104,12 +137,151 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad9bbe98307b693818d3d8db4a358b0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an exception handler.  <br /></td></tr>
 <tr class="separator:gad9bbe98307b693818d3d8db4a358b0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga10137c58f1bf80f35e9cec90612e7164" id="r_ga10137c58f1bf80f35e9cec90612e7164"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga10137c58f1bf80f35e9cec90612e7164">SceExcpmgrExceptionHandler</a>(<a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a> *context, <a class="el" href="group__SceExcpmgrKernel.html#ga66b2162c277738d17f6463c875dbaa5c">SceExcpHandlingCode</a> code)</td></tr>
-<tr class="separator:ga10137c58f1bf80f35e9cec90612e7164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga9baa3541cbab960021e07640e2c05ede" id="r_ga9baa3541cbab960021e07640e2c05ede"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga9baa3541cbab960021e07640e2c05ede">SceExcpmgrData::nestedExceptionCount</a> [4]</td></tr>
+<tr class="memdesc:ga9baa3541cbab960021e07640e2c05ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of times an exception handler has been entered on core - panic if &gt; 1 on exception return.  <br /></td></tr>
+<tr class="separator:ga9baa3541cbab960021e07640e2c05ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga996a7817fc7ba169bf42d1aa8520921b" id="r_ga996a7817fc7ba169bf42d1aa8520921b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga996a7817fc7ba169bf42d1aa8520921b">SceExcpmgrData::unused</a> [4]</td></tr>
+<tr class="memdesc:ga996a7817fc7ba169bf42d1aa8520921b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seemingly unused.  <br /></td></tr>
+<tr class="separator:ga996a7817fc7ba169bf42d1aa8520921b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa82903a3d5b13e977b94a6b77598e90a" id="r_gaa82903a3d5b13e977b94a6b77598e90a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa82903a3d5b13e977b94a6b77598e90a">SceExcpmgrData::ExcpStackTop</a> [4]</td></tr>
+<tr class="memdesc:gaa82903a3d5b13e977b94a6b77598e90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top of the exception stack (size is 0x1000)  <br /></td></tr>
+<tr class="separator:gaa82903a3d5b13e977b94a6b77598e90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3c61dbb8fe66949038b6e68cc74c1c1" id="r_gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gae3c61dbb8fe66949038b6e68cc74c1c1">SceExcpmgrData::ExcpStackBottom</a> [4]</td></tr>
+<tr class="memdesc:gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bottom of the exception stack.  <br /></td></tr>
+<tr class="separator:gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6730d5ef253853be606221bf9063d48e" id="r_ga6730d5ef253853be606221bf9063d48e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga6730d5ef253853be606221bf9063d48e">SceExcpmgrExceptionContext::r0</a></td></tr>
+<tr class="memdesc:ga6730d5ef253853be606221bf9063d48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Size is 0x400 on FW 3.60  <br /></td></tr>
+<tr class="separator:ga6730d5ef253853be606221bf9063d48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84149d1ad1aa2ef5b59ff161b7732794" id="r_ga84149d1ad1aa2ef5b59ff161b7732794"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga84149d1ad1aa2ef5b59ff161b7732794">SceExcpmgrExceptionContext::r1</a></td></tr>
+<tr class="separator:ga84149d1ad1aa2ef5b59ff161b7732794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab1975ab6b3f581fe8aa2e564ac57829" id="r_gaab1975ab6b3f581fe8aa2e564ac57829"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaab1975ab6b3f581fe8aa2e564ac57829">SceExcpmgrExceptionContext::r2</a></td></tr>
+<tr class="separator:gaab1975ab6b3f581fe8aa2e564ac57829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04aa1ac8382dfaa115b533084d139ba1" id="r_ga04aa1ac8382dfaa115b533084d139ba1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga04aa1ac8382dfaa115b533084d139ba1">SceExcpmgrExceptionContext::r3</a></td></tr>
+<tr class="separator:ga04aa1ac8382dfaa115b533084d139ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a091ecb31f5e2d1693e41f6aa760062" id="r_ga6a091ecb31f5e2d1693e41f6aa760062"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga6a091ecb31f5e2d1693e41f6aa760062">SceExcpmgrExceptionContext::r4</a></td></tr>
+<tr class="separator:ga6a091ecb31f5e2d1693e41f6aa760062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07afa2dc2101a9d17c29f60587ee5b4f" id="r_ga07afa2dc2101a9d17c29f60587ee5b4f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga07afa2dc2101a9d17c29f60587ee5b4f">SceExcpmgrExceptionContext::r5</a></td></tr>
+<tr class="separator:ga07afa2dc2101a9d17c29f60587ee5b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73386d6b4f4de1bd92c4b6ba589c28df" id="r_ga73386d6b4f4de1bd92c4b6ba589c28df"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga73386d6b4f4de1bd92c4b6ba589c28df">SceExcpmgrExceptionContext::r6</a></td></tr>
+<tr class="separator:ga73386d6b4f4de1bd92c4b6ba589c28df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc9e5fbdf274fe6737b97b208d98dba" id="r_ga1cc9e5fbdf274fe6737b97b208d98dba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga1cc9e5fbdf274fe6737b97b208d98dba">SceExcpmgrExceptionContext::r7</a></td></tr>
+<tr class="separator:ga1cc9e5fbdf274fe6737b97b208d98dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab296298a829c7c555e974d9f1304f099" id="r_gab296298a829c7c555e974d9f1304f099"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gab296298a829c7c555e974d9f1304f099">SceExcpmgrExceptionContext::r8</a></td></tr>
+<tr class="separator:gab296298a829c7c555e974d9f1304f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26d490bf3d28ac20dbbde30b6c3e7b7a" id="r_ga26d490bf3d28ac20dbbde30b6c3e7b7a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga26d490bf3d28ac20dbbde30b6c3e7b7a">SceExcpmgrExceptionContext::r9</a></td></tr>
+<tr class="separator:ga26d490bf3d28ac20dbbde30b6c3e7b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7c09cb6f04782b0ec0051e76f57f42d" id="r_gab7c09cb6f04782b0ec0051e76f57f42d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gab7c09cb6f04782b0ec0051e76f57f42d">SceExcpmgrExceptionContext::r10</a></td></tr>
+<tr class="separator:gab7c09cb6f04782b0ec0051e76f57f42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4215f4219543b7eda1e7c45e83446dc" id="r_gaf4215f4219543b7eda1e7c45e83446dc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaf4215f4219543b7eda1e7c45e83446dc">SceExcpmgrExceptionContext::r11</a></td></tr>
+<tr class="separator:gaf4215f4219543b7eda1e7c45e83446dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe987b83624610689051b1edadda5adc" id="r_gabe987b83624610689051b1edadda5adc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gabe987b83624610689051b1edadda5adc">SceExcpmgrExceptionContext::r12</a></td></tr>
+<tr class="separator:gabe987b83624610689051b1edadda5adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d275ecfcc45671a5e073dde223d919c" id="r_ga6d275ecfcc45671a5e073dde223d919c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga6d275ecfcc45671a5e073dde223d919c">SceExcpmgrExceptionContext::sp</a></td></tr>
+<tr class="separator:ga6d275ecfcc45671a5e073dde223d919c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05506e0d603c8dd4fc3506e129954c13" id="r_ga05506e0d603c8dd4fc3506e129954c13"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga05506e0d603c8dd4fc3506e129954c13">SceExcpmgrExceptionContext::lr</a></td></tr>
+<tr class="separator:ga05506e0d603c8dd4fc3506e129954c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6641e7b322c1f7077c54277108a635d" id="r_gac6641e7b322c1f7077c54277108a635d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac6641e7b322c1f7077c54277108a635d">SceExcpmgrExceptionContext::address_of_faulting_instruction</a></td></tr>
+<tr class="separator:gac6641e7b322c1f7077c54277108a635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfcedf6243dbc408af617f5396370fb4" id="r_gacfcedf6243dbc408af617f5396370fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gacfcedf6243dbc408af617f5396370fb4">SceExcpmgrExceptionContext::ExceptionKind</a></td></tr>
+<tr class="separator:gacfcedf6243dbc408af617f5396370fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeda2f1d792faf8dccc41f177901d7091" id="r_gaeda2f1d792faf8dccc41f177901d7091"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaeda2f1d792faf8dccc41f177901d7091">SceExcpmgrExceptionContext::SPSR</a></td></tr>
+<tr class="separator:gaeda2f1d792faf8dccc41f177901d7091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e5ec6ca3d25045cf650014ce2853aa3" id="r_ga8e5ec6ca3d25045cf650014ce2853aa3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga8e5ec6ca3d25045cf650014ce2853aa3">SceExcpmgrExceptionContext::CPACR</a></td></tr>
+<tr class="separator:ga8e5ec6ca3d25045cf650014ce2853aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7423006cc10e69507cde8e19b3d8d9bf" id="r_ga7423006cc10e69507cde8e19b3d8d9bf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga7423006cc10e69507cde8e19b3d8d9bf">SceExcpmgrExceptionContext::FPSCR</a></td></tr>
+<tr class="separator:ga7423006cc10e69507cde8e19b3d8d9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabab55d3f0504ef871497fc794fa8d4f8" id="r_gabab55d3f0504ef871497fc794fa8d4f8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gabab55d3f0504ef871497fc794fa8d4f8">SceExcpmgrExceptionContext::FPEXC</a></td></tr>
+<tr class="separator:gabab55d3f0504ef871497fc794fa8d4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd6923361be08b4053501d37c53ae17a" id="r_gadd6923361be08b4053501d37c53ae17a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gadd6923361be08b4053501d37c53ae17a">SceExcpmgrExceptionContext::CONTEXTIDR</a></td></tr>
+<tr class="separator:gadd6923361be08b4053501d37c53ae17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5a3ef17e9284bde69feac66e102863a" id="r_gaa5a3ef17e9284bde69feac66e102863a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa5a3ef17e9284bde69feac66e102863a">SceExcpmgrExceptionContext::TPIDRURW</a></td></tr>
+<tr class="separator:gaa5a3ef17e9284bde69feac66e102863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1d27d11df08a2bd31d5214c74fb71aa" id="r_gab1d27d11df08a2bd31d5214c74fb71aa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gab1d27d11df08a2bd31d5214c74fb71aa">SceExcpmgrExceptionContext::TPIDRURO</a></td></tr>
+<tr class="separator:gab1d27d11df08a2bd31d5214c74fb71aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedb01d02072a83f4e404705abb09fdd5" id="r_gaedb01d02072a83f4e404705abb09fdd5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaedb01d02072a83f4e404705abb09fdd5">SceExcpmgrExceptionContext::TPIDRPRW</a></td></tr>
+<tr class="separator:gaedb01d02072a83f4e404705abb09fdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cebf3ff8e8b7ad5731b839d4ea6e719" id="r_ga3cebf3ff8e8b7ad5731b839d4ea6e719"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga3cebf3ff8e8b7ad5731b839d4ea6e719">SceExcpmgrExceptionContext::TTBR1</a></td></tr>
+<tr class="separator:ga3cebf3ff8e8b7ad5731b839d4ea6e719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2faa21d8dc32b92643daaea183dda9b" id="r_gac2faa21d8dc32b92643daaea183dda9b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac2faa21d8dc32b92643daaea183dda9b">SceExcpmgrExceptionContext::unused68</a></td></tr>
+<tr class="separator:gac2faa21d8dc32b92643daaea183dda9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa508931db10cecfdc5096d9943fa0fd3" id="r_gaa508931db10cecfdc5096d9943fa0fd3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa508931db10cecfdc5096d9943fa0fd3">SceExcpmgrExceptionContext::DACR</a></td></tr>
+<tr class="separator:gaa508931db10cecfdc5096d9943fa0fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4840aa54477340bf6e023a7e5a4aeacd" id="r_ga4840aa54477340bf6e023a7e5a4aeacd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga4840aa54477340bf6e023a7e5a4aeacd">SceExcpmgrExceptionContext::DFSR</a></td></tr>
+<tr class="separator:ga4840aa54477340bf6e023a7e5a4aeacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga198a21f6af58c4cdca6d60f32a5e3b52" id="r_ga198a21f6af58c4cdca6d60f32a5e3b52"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga198a21f6af58c4cdca6d60f32a5e3b52">SceExcpmgrExceptionContext::IFSR</a></td></tr>
+<tr class="separator:ga198a21f6af58c4cdca6d60f32a5e3b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaca731d0d29d6a4985341e01ee7f5d8b" id="r_gaaca731d0d29d6a4985341e01ee7f5d8b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaaca731d0d29d6a4985341e01ee7f5d8b">SceExcpmgrExceptionContext::DFAR</a></td></tr>
+<tr class="separator:gaaca731d0d29d6a4985341e01ee7f5d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc577d17d10093f14d1520541253d9f" id="r_ga1cc577d17d10093f14d1520541253d9f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga1cc577d17d10093f14d1520541253d9f">SceExcpmgrExceptionContext::IFAR</a></td></tr>
+<tr class="separator:ga1cc577d17d10093f14d1520541253d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23e2ded432bc90abffad6700a572e6a8" id="r_ga23e2ded432bc90abffad6700a572e6a8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga23e2ded432bc90abffad6700a572e6a8">SceExcpmgrExceptionContext::PAR</a></td></tr>
+<tr class="separator:ga23e2ded432bc90abffad6700a572e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90750eba1a0848f2a49a36f7a04a6db2" id="r_ga90750eba1a0848f2a49a36f7a04a6db2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga90750eba1a0848f2a49a36f7a04a6db2">SceExcpmgrExceptionContext::TEEHBR</a></td></tr>
+<tr class="separator:ga90750eba1a0848f2a49a36f7a04a6db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5660e9a125db477b445eebafd0649e66" id="r_ga5660e9a125db477b445eebafd0649e66"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga5660e9a125db477b445eebafd0649e66">SceExcpmgrExceptionContext::PMCR</a></td></tr>
+<tr class="separator:ga5660e9a125db477b445eebafd0649e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23f2d5c03d9486076c0741ecc1232e5b" id="r_ga23f2d5c03d9486076c0741ecc1232e5b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga23f2d5c03d9486076c0741ecc1232e5b">SceExcpmgrExceptionContext::PMCNTENSET</a></td></tr>
+<tr class="separator:ga23f2d5c03d9486076c0741ecc1232e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5287d8c47ecb64d29b3932399fad1716" id="r_ga5287d8c47ecb64d29b3932399fad1716"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga5287d8c47ecb64d29b3932399fad1716">SceExcpmgrExceptionContext::PMCNTENSET_2</a></td></tr>
+<tr class="separator:ga5287d8c47ecb64d29b3932399fad1716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dadd4312cdd26cf86000b30a11ec459" id="r_ga2dadd4312cdd26cf86000b30a11ec459"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga2dadd4312cdd26cf86000b30a11ec459">SceExcpmgrExceptionContext::PMSELR</a></td></tr>
+<tr class="separator:ga2dadd4312cdd26cf86000b30a11ec459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a0a4fb1c231d525fd66bade36412318" id="r_ga2a0a4fb1c231d525fd66bade36412318"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga2a0a4fb1c231d525fd66bade36412318">SceExcpmgrExceptionContext::PMCCNTR</a></td></tr>
+<tr class="separator:ga2a0a4fb1c231d525fd66bade36412318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa541023c208e22ebf8c29e4c93daf63a" id="r_gaa541023c208e22ebf8c29e4c93daf63a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa541023c208e22ebf8c29e4c93daf63a">SceExcpmgrExceptionContext::PMUSERENR</a></td></tr>
+<tr class="separator:gaa541023c208e22ebf8c29e4c93daf63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5adfca165148ccd1b8de0d76304df163" id="r_ga5adfca165148ccd1b8de0d76304df163"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga5adfca165148ccd1b8de0d76304df163">SceExcpmgrExceptionContext::PMXEVTYPER0</a></td></tr>
+<tr class="separator:ga5adfca165148ccd1b8de0d76304df163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac49ca1719158ca9c681e423e2221befc" id="r_gac49ca1719158ca9c681e423e2221befc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac49ca1719158ca9c681e423e2221befc">SceExcpmgrExceptionContext::PMXEVCNTR0</a></td></tr>
+<tr class="separator:gac49ca1719158ca9c681e423e2221befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9143c5d476d387eea4eaebd095d6c2a" id="r_gaa9143c5d476d387eea4eaebd095d6c2a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa9143c5d476d387eea4eaebd095d6c2a">SceExcpmgrExceptionContext::PMXEVTYPER1</a></td></tr>
+<tr class="separator:gaa9143c5d476d387eea4eaebd095d6c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ff4c7a17a5cad1aa70688bfeb991f19" id="r_ga4ff4c7a17a5cad1aa70688bfeb991f19"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga4ff4c7a17a5cad1aa70688bfeb991f19">SceExcpmgrExceptionContext::PMXEVCNTR1</a></td></tr>
+<tr class="separator:ga4ff4c7a17a5cad1aa70688bfeb991f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5eb06b5c6c1c97e55665bcf0a767aa3e" id="r_ga5eb06b5c6c1c97e55665bcf0a767aa3e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga5eb06b5c6c1c97e55665bcf0a767aa3e">SceExcpmgrExceptionContext::PMXEVTYPER2</a></td></tr>
+<tr class="separator:ga5eb06b5c6c1c97e55665bcf0a767aa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09104de73ac3a0737d737ecf7d86ccf4" id="r_ga09104de73ac3a0737d737ecf7d86ccf4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga09104de73ac3a0737d737ecf7d86ccf4">SceExcpmgrExceptionContext::PMXEVCNTR2</a></td></tr>
+<tr class="separator:ga09104de73ac3a0737d737ecf7d86ccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae44add24458621cb24cbbea6f5b29feb" id="r_gae44add24458621cb24cbbea6f5b29feb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gae44add24458621cb24cbbea6f5b29feb">SceExcpmgrExceptionContext::PMXEVTYPER3</a></td></tr>
+<tr class="separator:gae44add24458621cb24cbbea6f5b29feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga563d8f0bd07ea976c97e5949d8c12e6b" id="r_ga563d8f0bd07ea976c97e5949d8c12e6b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga563d8f0bd07ea976c97e5949d8c12e6b">SceExcpmgrExceptionContext::PMXEVCNTR3</a></td></tr>
+<tr class="separator:ga563d8f0bd07ea976c97e5949d8c12e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb7abfc2c53a446400af35da16782bce" id="r_gacb7abfc2c53a446400af35da16782bce"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gacb7abfc2c53a446400af35da16782bce">SceExcpmgrExceptionContext::PMXEVTYPER4</a></td></tr>
+<tr class="separator:gacb7abfc2c53a446400af35da16782bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6935e118155f83f4b3f0c17b84607bc" id="r_gad6935e118155f83f4b3f0c17b84607bc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gad6935e118155f83f4b3f0c17b84607bc">SceExcpmgrExceptionContext::PMXEVCNTR4</a></td></tr>
+<tr class="separator:gad6935e118155f83f4b3f0c17b84607bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga153a89e05e9e37c3183b15a5868d9c6c" id="r_ga153a89e05e9e37c3183b15a5868d9c6c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga153a89e05e9e37c3183b15a5868d9c6c">SceExcpmgrExceptionContext::PMXEVTYPER5</a></td></tr>
+<tr class="separator:ga153a89e05e9e37c3183b15a5868d9c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae003d1e2a0f8ff22665013d501b1b14c" id="r_gae003d1e2a0f8ff22665013d501b1b14c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gae003d1e2a0f8ff22665013d501b1b14c">SceExcpmgrExceptionContext::PMXEVCNTR5</a></td></tr>
+<tr class="separator:gae003d1e2a0f8ff22665013d501b1b14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dcb60cb3b027ae1ba36be1c41c1fdc6" id="r_ga9dcb60cb3b027ae1ba36be1c41c1fdc6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga9dcb60cb3b027ae1ba36be1c41c1fdc6">SceExcpmgrExceptionContext::unusedD0</a></td></tr>
+<tr class="separator:ga9dcb60cb3b027ae1ba36be1c41c1fdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62d6ffe8794317b6b84e616362372118" id="r_ga62d6ffe8794317b6b84e616362372118"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga62d6ffe8794317b6b84e616362372118">SceExcpmgrExceptionContext::unkD4</a></td></tr>
+<tr class="separator:ga62d6ffe8794317b6b84e616362372118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6478477035488aefbe12209b34142d13" id="r_ga6478477035488aefbe12209b34142d13"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga6478477035488aefbe12209b34142d13">SceExcpmgrExceptionContext::DBGSCRext</a></td></tr>
+<tr class="separator:ga6478477035488aefbe12209b34142d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadef335f8dc54376e3c55150ee199ea35" id="r_gadef335f8dc54376e3c55150ee199ea35"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gadef335f8dc54376e3c55150ee199ea35">SceExcpmgrExceptionContext::unusedDC</a> [9]</td></tr>
+<tr class="separator:gadef335f8dc54376e3c55150ee199ea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga952df59c9d3a9fc78f0d6102aca46f4f" id="r_ga952df59c9d3a9fc78f0d6102aca46f4f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga952df59c9d3a9fc78f0d6102aca46f4f">SceExcpmgrExceptionContext::VFP_registers</a> [32]</td></tr>
+<tr class="separator:ga952df59c9d3a9fc78f0d6102aca46f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cca85f0cbf05f2885f949e1fb0e0242" id="r_ga1cca85f0cbf05f2885f949e1fb0e0242"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga1cca85f0cbf05f2885f949e1fb0e0242">SceExcpmgrExceptionContext::unk200</a> [128]</td></tr>
+<tr class="separator:ga1cca85f0cbf05f2885f949e1fb0e0242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="excpmgr_8h.html">psp2kern/kernel/excpmgr.h</a>&gt;</span> </div>
+<div class="ttc" id="aexcpmgr_8h_html"><div class="ttname"><a href="excpmgr_8h.html">excpmgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceExcpmgrForKernel_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceExcpmgrData" id="structSceExcpmgrData"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceExcpmgrData">&#9670;&#160;</a></span>SceExcpmgrData</h2>
 
@@ -702,6 +874,885 @@ unk200[128]</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Error code or zero on success </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga9baa3541cbab960021e07640e2c05ede" name="ga9baa3541cbab960021e07640e2c05ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9baa3541cbab960021e07640e2c05ede">&#9670;&#160;</a></span>nestedExceptionCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceExcpmgrData::nestedExceptionCount[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of times an exception handler has been entered on core - panic if &gt; 1 on exception return. </p>
+
+</div>
+</div>
+<a id="ga996a7817fc7ba169bf42d1aa8520921b" name="ga996a7817fc7ba169bf42d1aa8520921b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga996a7817fc7ba169bf42d1aa8520921b">&#9670;&#160;</a></span>unused</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceExcpmgrData::unused[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seemingly unused. </p>
+
+</div>
+</div>
+<a id="gaa82903a3d5b13e977b94a6b77598e90a" name="gaa82903a3d5b13e977b94a6b77598e90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa82903a3d5b13e977b94a6b77598e90a">&#9670;&#160;</a></span>ExcpStackTop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceExcpmgrData::ExcpStackTop[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Top of the exception stack (size is 0x1000) </p>
+
+</div>
+</div>
+<a id="gae3c61dbb8fe66949038b6e68cc74c1c1" name="gae3c61dbb8fe66949038b6e68cc74c1c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3c61dbb8fe66949038b6e68cc74c1c1">&#9670;&#160;</a></span>ExcpStackBottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceExcpmgrData::ExcpStackBottom[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bottom of the exception stack. </p>
+
+</div>
+</div>
+<a id="ga6730d5ef253853be606221bf9063d48e" name="ga6730d5ef253853be606221bf9063d48e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6730d5ef253853be606221bf9063d48e">&#9670;&#160;</a></span>r0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Size is 0x400 on FW 3.60 </p>
+
+</div>
+</div>
+<a id="ga84149d1ad1aa2ef5b59ff161b7732794" name="ga84149d1ad1aa2ef5b59ff161b7732794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84149d1ad1aa2ef5b59ff161b7732794">&#9670;&#160;</a></span>r1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaab1975ab6b3f581fe8aa2e564ac57829" name="gaab1975ab6b3f581fe8aa2e564ac57829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab1975ab6b3f581fe8aa2e564ac57829">&#9670;&#160;</a></span>r2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga04aa1ac8382dfaa115b533084d139ba1" name="ga04aa1ac8382dfaa115b533084d139ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04aa1ac8382dfaa115b533084d139ba1">&#9670;&#160;</a></span>r3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6a091ecb31f5e2d1693e41f6aa760062" name="ga6a091ecb31f5e2d1693e41f6aa760062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a091ecb31f5e2d1693e41f6aa760062">&#9670;&#160;</a></span>r4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga07afa2dc2101a9d17c29f60587ee5b4f" name="ga07afa2dc2101a9d17c29f60587ee5b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07afa2dc2101a9d17c29f60587ee5b4f">&#9670;&#160;</a></span>r5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga73386d6b4f4de1bd92c4b6ba589c28df" name="ga73386d6b4f4de1bd92c4b6ba589c28df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73386d6b4f4de1bd92c4b6ba589c28df">&#9670;&#160;</a></span>r6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1cc9e5fbdf274fe6737b97b208d98dba" name="ga1cc9e5fbdf274fe6737b97b208d98dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cc9e5fbdf274fe6737b97b208d98dba">&#9670;&#160;</a></span>r7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab296298a829c7c555e974d9f1304f099" name="gab296298a829c7c555e974d9f1304f099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab296298a829c7c555e974d9f1304f099">&#9670;&#160;</a></span>r8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga26d490bf3d28ac20dbbde30b6c3e7b7a" name="ga26d490bf3d28ac20dbbde30b6c3e7b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26d490bf3d28ac20dbbde30b6c3e7b7a">&#9670;&#160;</a></span>r9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab7c09cb6f04782b0ec0051e76f57f42d" name="gab7c09cb6f04782b0ec0051e76f57f42d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7c09cb6f04782b0ec0051e76f57f42d">&#9670;&#160;</a></span>r10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf4215f4219543b7eda1e7c45e83446dc" name="gaf4215f4219543b7eda1e7c45e83446dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4215f4219543b7eda1e7c45e83446dc">&#9670;&#160;</a></span>r11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabe987b83624610689051b1edadda5adc" name="gabe987b83624610689051b1edadda5adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe987b83624610689051b1edadda5adc">&#9670;&#160;</a></span>r12</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::r12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6d275ecfcc45671a5e073dde223d919c" name="ga6d275ecfcc45671a5e073dde223d919c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d275ecfcc45671a5e073dde223d919c">&#9670;&#160;</a></span>sp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::sp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga05506e0d603c8dd4fc3506e129954c13" name="ga05506e0d603c8dd4fc3506e129954c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05506e0d603c8dd4fc3506e129954c13">&#9670;&#160;</a></span>lr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::lr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac6641e7b322c1f7077c54277108a635d" name="gac6641e7b322c1f7077c54277108a635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6641e7b322c1f7077c54277108a635d">&#9670;&#160;</a></span>address_of_faulting_instruction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::address_of_faulting_instruction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacfcedf6243dbc408af617f5396370fb4" name="gacfcedf6243dbc408af617f5396370fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfcedf6243dbc408af617f5396370fb4">&#9670;&#160;</a></span>ExceptionKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a> SceExcpmgrExceptionContext::ExceptionKind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeda2f1d792faf8dccc41f177901d7091" name="gaeda2f1d792faf8dccc41f177901d7091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeda2f1d792faf8dccc41f177901d7091">&#9670;&#160;</a></span>SPSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::SPSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8e5ec6ca3d25045cf650014ce2853aa3" name="ga8e5ec6ca3d25045cf650014ce2853aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e5ec6ca3d25045cf650014ce2853aa3">&#9670;&#160;</a></span>CPACR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::CPACR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7423006cc10e69507cde8e19b3d8d9bf" name="ga7423006cc10e69507cde8e19b3d8d9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7423006cc10e69507cde8e19b3d8d9bf">&#9670;&#160;</a></span>FPSCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::FPSCR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabab55d3f0504ef871497fc794fa8d4f8" name="gabab55d3f0504ef871497fc794fa8d4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabab55d3f0504ef871497fc794fa8d4f8">&#9670;&#160;</a></span>FPEXC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::FPEXC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadd6923361be08b4053501d37c53ae17a" name="gadd6923361be08b4053501d37c53ae17a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd6923361be08b4053501d37c53ae17a">&#9670;&#160;</a></span>CONTEXTIDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::CONTEXTIDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa5a3ef17e9284bde69feac66e102863a" name="gaa5a3ef17e9284bde69feac66e102863a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5a3ef17e9284bde69feac66e102863a">&#9670;&#160;</a></span>TPIDRURW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::TPIDRURW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab1d27d11df08a2bd31d5214c74fb71aa" name="gab1d27d11df08a2bd31d5214c74fb71aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1d27d11df08a2bd31d5214c74fb71aa">&#9670;&#160;</a></span>TPIDRURO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::TPIDRURO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaedb01d02072a83f4e404705abb09fdd5" name="gaedb01d02072a83f4e404705abb09fdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedb01d02072a83f4e404705abb09fdd5">&#9670;&#160;</a></span>TPIDRPRW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::TPIDRPRW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3cebf3ff8e8b7ad5731b839d4ea6e719" name="ga3cebf3ff8e8b7ad5731b839d4ea6e719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3cebf3ff8e8b7ad5731b839d4ea6e719">&#9670;&#160;</a></span>TTBR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::TTBR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac2faa21d8dc32b92643daaea183dda9b" name="gac2faa21d8dc32b92643daaea183dda9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2faa21d8dc32b92643daaea183dda9b">&#9670;&#160;</a></span>unused68</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::unused68</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa508931db10cecfdc5096d9943fa0fd3" name="gaa508931db10cecfdc5096d9943fa0fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa508931db10cecfdc5096d9943fa0fd3">&#9670;&#160;</a></span>DACR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::DACR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4840aa54477340bf6e023a7e5a4aeacd" name="ga4840aa54477340bf6e023a7e5a4aeacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4840aa54477340bf6e023a7e5a4aeacd">&#9670;&#160;</a></span>DFSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::DFSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga198a21f6af58c4cdca6d60f32a5e3b52" name="ga198a21f6af58c4cdca6d60f32a5e3b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga198a21f6af58c4cdca6d60f32a5e3b52">&#9670;&#160;</a></span>IFSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::IFSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaca731d0d29d6a4985341e01ee7f5d8b" name="gaaca731d0d29d6a4985341e01ee7f5d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaca731d0d29d6a4985341e01ee7f5d8b">&#9670;&#160;</a></span>DFAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::DFAR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1cc577d17d10093f14d1520541253d9f" name="ga1cc577d17d10093f14d1520541253d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cc577d17d10093f14d1520541253d9f">&#9670;&#160;</a></span>IFAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::IFAR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga23e2ded432bc90abffad6700a572e6a8" name="ga23e2ded432bc90abffad6700a572e6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23e2ded432bc90abffad6700a572e6a8">&#9670;&#160;</a></span>PAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PAR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga90750eba1a0848f2a49a36f7a04a6db2" name="ga90750eba1a0848f2a49a36f7a04a6db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90750eba1a0848f2a49a36f7a04a6db2">&#9670;&#160;</a></span>TEEHBR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::TEEHBR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5660e9a125db477b445eebafd0649e66" name="ga5660e9a125db477b445eebafd0649e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5660e9a125db477b445eebafd0649e66">&#9670;&#160;</a></span>PMCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMCR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga23f2d5c03d9486076c0741ecc1232e5b" name="ga23f2d5c03d9486076c0741ecc1232e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23f2d5c03d9486076c0741ecc1232e5b">&#9670;&#160;</a></span>PMCNTENSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMCNTENSET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5287d8c47ecb64d29b3932399fad1716" name="ga5287d8c47ecb64d29b3932399fad1716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5287d8c47ecb64d29b3932399fad1716">&#9670;&#160;</a></span>PMCNTENSET_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMCNTENSET_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2dadd4312cdd26cf86000b30a11ec459" name="ga2dadd4312cdd26cf86000b30a11ec459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dadd4312cdd26cf86000b30a11ec459">&#9670;&#160;</a></span>PMSELR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMSELR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2a0a4fb1c231d525fd66bade36412318" name="ga2a0a4fb1c231d525fd66bade36412318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a0a4fb1c231d525fd66bade36412318">&#9670;&#160;</a></span>PMCCNTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMCCNTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa541023c208e22ebf8c29e4c93daf63a" name="gaa541023c208e22ebf8c29e4c93daf63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa541023c208e22ebf8c29e4c93daf63a">&#9670;&#160;</a></span>PMUSERENR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMUSERENR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5adfca165148ccd1b8de0d76304df163" name="ga5adfca165148ccd1b8de0d76304df163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5adfca165148ccd1b8de0d76304df163">&#9670;&#160;</a></span>PMXEVTYPER0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVTYPER0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac49ca1719158ca9c681e423e2221befc" name="gac49ca1719158ca9c681e423e2221befc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac49ca1719158ca9c681e423e2221befc">&#9670;&#160;</a></span>PMXEVCNTR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVCNTR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9143c5d476d387eea4eaebd095d6c2a" name="gaa9143c5d476d387eea4eaebd095d6c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9143c5d476d387eea4eaebd095d6c2a">&#9670;&#160;</a></span>PMXEVTYPER1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVTYPER1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4ff4c7a17a5cad1aa70688bfeb991f19" name="ga4ff4c7a17a5cad1aa70688bfeb991f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ff4c7a17a5cad1aa70688bfeb991f19">&#9670;&#160;</a></span>PMXEVCNTR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVCNTR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5eb06b5c6c1c97e55665bcf0a767aa3e" name="ga5eb06b5c6c1c97e55665bcf0a767aa3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5eb06b5c6c1c97e55665bcf0a767aa3e">&#9670;&#160;</a></span>PMXEVTYPER2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVTYPER2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga09104de73ac3a0737d737ecf7d86ccf4" name="ga09104de73ac3a0737d737ecf7d86ccf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09104de73ac3a0737d737ecf7d86ccf4">&#9670;&#160;</a></span>PMXEVCNTR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVCNTR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae44add24458621cb24cbbea6f5b29feb" name="gae44add24458621cb24cbbea6f5b29feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae44add24458621cb24cbbea6f5b29feb">&#9670;&#160;</a></span>PMXEVTYPER3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVTYPER3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga563d8f0bd07ea976c97e5949d8c12e6b" name="ga563d8f0bd07ea976c97e5949d8c12e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga563d8f0bd07ea976c97e5949d8c12e6b">&#9670;&#160;</a></span>PMXEVCNTR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVCNTR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacb7abfc2c53a446400af35da16782bce" name="gacb7abfc2c53a446400af35da16782bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb7abfc2c53a446400af35da16782bce">&#9670;&#160;</a></span>PMXEVTYPER4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVTYPER4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad6935e118155f83f4b3f0c17b84607bc" name="gad6935e118155f83f4b3f0c17b84607bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6935e118155f83f4b3f0c17b84607bc">&#9670;&#160;</a></span>PMXEVCNTR4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVCNTR4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga153a89e05e9e37c3183b15a5868d9c6c" name="ga153a89e05e9e37c3183b15a5868d9c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga153a89e05e9e37c3183b15a5868d9c6c">&#9670;&#160;</a></span>PMXEVTYPER5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVTYPER5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae003d1e2a0f8ff22665013d501b1b14c" name="gae003d1e2a0f8ff22665013d501b1b14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae003d1e2a0f8ff22665013d501b1b14c">&#9670;&#160;</a></span>PMXEVCNTR5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::PMXEVCNTR5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9dcb60cb3b027ae1ba36be1c41c1fdc6" name="ga9dcb60cb3b027ae1ba36be1c41c1fdc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9dcb60cb3b027ae1ba36be1c41c1fdc6">&#9670;&#160;</a></span>unusedD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::unusedD0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga62d6ffe8794317b6b84e616362372118" name="ga62d6ffe8794317b6b84e616362372118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62d6ffe8794317b6b84e616362372118">&#9670;&#160;</a></span>unkD4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::unkD4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6478477035488aefbe12209b34142d13" name="ga6478477035488aefbe12209b34142d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6478477035488aefbe12209b34142d13">&#9670;&#160;</a></span>DBGSCRext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::DBGSCRext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadef335f8dc54376e3c55150ee199ea35" name="gadef335f8dc54376e3c55150ee199ea35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadef335f8dc54376e3c55150ee199ea35">&#9670;&#160;</a></span>unusedDC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::unusedDC[9]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga952df59c9d3a9fc78f0d6102aca46f4f" name="ga952df59c9d3a9fc78f0d6102aca46f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga952df59c9d3a9fc78f0d6102aca46f4f">&#9670;&#160;</a></span>VFP_registers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SceExcpmgrExceptionContext::VFP_registers[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1cca85f0cbf05f2885f949e1fb0e0242" name="ga1cca85f0cbf05f2885f949e1fb0e0242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cca85f0cbf05f2885f949e1fb0e0242">&#9670;&#160;</a></span>unk200</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceExcpmgrExceptionContext::unk200[128]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

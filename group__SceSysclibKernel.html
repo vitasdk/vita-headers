@@ -73,24 +73,38 @@ $(document).ready(function(){initNavTree('group__SceSysclibKernel.html',''); ini
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceSysclib.html">Kernel C Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sysclib_8h.html">psp2kern/kernel/sysclib.h</a>&gt;</span> </div>
-<div class="ttc" id="asysclib_8h_html"><div class="ttname"><a href="sysclib_8h.html">sysclib.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceSysclibForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gafdde78aac4a9b53e6caa23b79018fe77" id="r_gafdde78aac4a9b53e6caa23b79018fe77"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77">SceSysclibPrntCallback</a>) (void *argp, int ch)</td></tr>
+<tr class="separator:gafdde78aac4a9b53e6caa23b79018fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga7dc4124e45e50b88970c6ed289fb5ea9" id="r_ga7dc4124e45e50b88970c6ed289fb5ea9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga7dc4124e45e50b88970c6ed289fb5ea9">SceCTypeFlag</a> { <br />
+&#160;&#160;<a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9ab1f38e2965653054557f48964fd45345">SCE_CTYPE_NONE</a> = 0
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9ae248494cd59616471cabde69ca2be3bc">SCE_CTYPE_UPPERCASE</a> = 1
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a42d5eab10207a28bc8c42505aa4ede98">SCE_CTYPE_LOWERCASE</a> = 2
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a0bbe1e047f7acd6badb87332adee15b2">SCE_CTYPE_NUMBER</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a4413921aceb62eadc38c6ea5a27579f5">SCE_CTYPE_CONTROL</a> = 8
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a3dab78e9903a9782584f4d159a859214">SCE_CTYPE_SYMBOL</a> = 0x10
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a186799588e3825442ff2b77a300cdc89">SCE_CTYPE_INVISIBLE</a> = 0x20
+, <a class="el" href="group__SceSysclibKernel.html#gga7dc4124e45e50b88970c6ed289fb5ea9a00ce0ceca3da4e378eab848a3011e923">SCE_CTYPE_HEX_CASE</a> = 0x40
+<br />
+ }</td></tr>
+<tr class="separator:ga7dc4124e45e50b88970c6ed289fb5ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gadbed51a304c5f89fd6822734944c787d" id="r_gadbed51a304c5f89fd6822734944c787d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gadbed51a304c5f89fd6822734944c787d">memset</a> (void *dst, int ch, unsigned int len)</td></tr>
@@ -160,13 +174,20 @@ Functions</h2></td></tr>
 <tr class="separator:gabf0a78e093596d371dac997469b2447f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9531929ae9e77d46d7083973175ce72b" id="r_ga9531929ae9e77d46d7083973175ce72b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#ga9531929ae9e77d46d7083973175ce72b">__attribute__</a> ((__noreturn__)) void __stack_chk_fail(void)</td></tr>
 <tr class="separator:ga9531929ae9e77d46d7083973175ce72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafdde78aac4a9b53e6caa23b79018fe77" id="r_gafdde78aac4a9b53e6caa23b79018fe77"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysclibKernel.html#gafdde78aac4a9b53e6caa23b79018fe77">SceSysclibPrntCallback</a>) (void *argp, int ch)</td></tr>
-<tr class="separator:gafdde78aac4a9b53e6caa23b79018fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sysclib_8h.html">psp2kern/kernel/sysclib.h</a>&gt;</span> </div>
+<div class="ttc" id="asysclib_8h_html"><div class="ttname"><a href="sysclib_8h.html">sysclib.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceSysclibForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gafdde78aac4a9b53e6caa23b79018fe77" name="gafdde78aac4a9b53e6caa23b79018fe77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafdde78aac4a9b53e6caa23b79018fe77">&#9670;&#160;</a></span>SceSysclibPrntCallback</h2>
 

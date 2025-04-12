@@ -73,29 +73,103 @@ $(document).ready(function(){initNavTree('group__SceAppUtilUser.html',''); initR
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__SystemStatus.html">System Status</a> &raquo; <a class="el" href="group__SceAppUtil.html">Application Utilities Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="apputil_8h.html">psp2/apputil.h</a>&gt;</span> </div>
-<div class="ttc" id="aapputil_8h_html"><div class="ttname"><a href="apputil_8h.html">apputil.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceAppUtil_stub </div>
-</div><!-- fragment --><p> <br  />
- Load the required module:<br  />
-</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a07bcba2f3bccf0f2bd4d7a4994c8b2de">SCE_SYSMODULE_APPUTIL</a>); </div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a07bcba2f3bccf0f2bd4d7a4994c8b2de"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a07bcba2f3bccf0f2bd4d7a4994c8b2de">SCE_SYSMODULE_APPUTIL</a></div><div class="ttdeci">@ SCE_SYSMODULE_APPUTIL</div><div class="ttdoc">AppUtil module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:42</div></div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceAppUtilBgdlStatus" id="r_structSceAppUtilBgdlStatus"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBgdlStatus">SceAppUtilBgdlStatus</a></td></tr>
+<tr class="separator:structSceAppUtilBgdlStatus"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilInitParam" id="r_structSceAppUtilInitParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilInitParam">SceAppUtilInitParam</a></td></tr>
+<tr class="separator:structSceAppUtilInitParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilBootParam" id="r_structSceAppUtilBootParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBootParam">SceAppUtilBootParam</a></td></tr>
+<tr class="separator:structSceAppUtilBootParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataMountPoint" id="r_structSceAppUtilSaveDataMountPoint"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataMountPoint">SceAppUtilSaveDataMountPoint</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataMountPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilAppEventParam" id="r_structSceAppUtilAppEventParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilAppEventParam">SceAppUtilAppEventParam</a></td></tr>
+<tr class="separator:structSceAppUtilAppEventParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilMountPoint" id="r_structSceAppUtilMountPoint"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilMountPoint">SceAppUtilMountPoint</a></td></tr>
+<tr class="separator:structSceAppUtilMountPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataSlotEmptyParam" id="r_structSceAppUtilSaveDataSlotEmptyParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlotEmptyParam">SceAppUtilSaveDataSlotEmptyParam</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataSlotEmptyParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataSlot" id="r_structSceAppUtilSaveDataSlot"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlot">SceAppUtilSaveDataSlot</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataSlot"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataSlotParam" id="r_structSceAppUtilSaveDataSlotParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlotParam">SceAppUtilSaveDataSlotParam</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataSlotParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataSaveItem" id="r_structSceAppUtilSaveDataSaveItem"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSaveItem">SceAppUtilSaveDataSaveItem</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataSaveItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataFile" id="r_structSceAppUtilSaveDataFile"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataFile">SceAppUtilSaveDataFile</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataFileSlot" id="r_structSceAppUtilSaveDataFileSlot"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataFileSlot">SceAppUtilSaveDataFileSlot</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataFileSlot"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilSaveDataRemoveItem" id="r_structSceAppUtilSaveDataRemoveItem"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataRemoveItem">SceAppUtilSaveDataRemoveItem</a></td></tr>
+<tr class="separator:structSceAppUtilSaveDataRemoveItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilStoreBrowseParam" id="r_structSceAppUtilStoreBrowseParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilStoreBrowseParam">SceAppUtilStoreBrowseParam</a></td></tr>
+<tr class="separator:structSceAppUtilStoreBrowseParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppUtilWebBrowserParam" id="r_structSceAppUtilWebBrowserParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilWebBrowserParam">SceAppUtilWebBrowserParam</a></td></tr>
+<tr class="separator:structSceAppUtilWebBrowserParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga0b442a0d7c1d9f19ffc5ed4796b9ac1d" id="r_ga0b442a0d7c1d9f19ffc5ed4796b9ac1d"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga0b442a0d7c1d9f19ffc5ed4796b9ac1d">SceAppUtilBootAttribute</a></td></tr>
+<tr class="separator:ga0b442a0d7c1d9f19ffc5ed4796b9ac1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe25bd5ff10f50587b70e53516efcef0" id="r_gabe25bd5ff10f50587b70e53516efcef0"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gabe25bd5ff10f50587b70e53516efcef0">SceAppUtilAppEventType</a></td></tr>
+<tr class="separator:gabe25bd5ff10f50587b70e53516efcef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabd8bd3006eee41336a59bf24e0f8c5a" id="r_gaabd8bd3006eee41336a59bf24e0f8c5a"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a">SceAppUtilSaveDataSlotId</a></td></tr>
+<tr class="separator:gaabd8bd3006eee41336a59bf24e0f8c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9eca9d76b9743c9284e7b54c02c39318" id="r_ga9eca9d76b9743c9284e7b54c02c39318"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318">SceAppUtilSaveDataSlotStatus</a></td></tr>
+<tr class="separator:ga9eca9d76b9743c9284e7b54c02c39318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98801a9fa481d6cee1ebf63f3e9a454e" id="r_ga98801a9fa481d6cee1ebf63f3e9a454e"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e">SceAppUtilAppParamId</a></td></tr>
+<tr class="separator:ga98801a9fa481d6cee1ebf63f3e9a454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd636dd29d6a883f4716246dcc7b527a" id="r_gafd636dd29d6a883f4716246dcc7b527a"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gafd636dd29d6a883f4716246dcc7b527a">SceAppUtilBgdlStatusType</a></td></tr>
+<tr class="separator:gafd636dd29d6a883f4716246dcc7b527a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gac739509232689dceb90ea1e3d7eb1009" id="r_gac739509232689dceb90ea1e3d7eb1009"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gac739509232689dceb90ea1e3d7eb1009">SceAppUtilSaveDataDataRemoveMode</a> { <a class="el" href="group__SceAppUtilUser.html#ggac739509232689dceb90ea1e3d7eb1009a09798fb8ce170e3ff216da528c27b77f">SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_DEFAULT</a> = 0
+, <a class="el" href="group__SceAppUtilUser.html#ggac739509232689dceb90ea1e3d7eb1009a3238b995dc9f045514588cd0f7c04601">SCE_APPUTIL_SAVEDATA_DATA_REMOVE_MODE_NO_SLOT</a> = 1
+ }</td></tr>
+<tr class="separator:gac739509232689dceb90ea1e3d7eb1009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7c38c9a43bc7510520f90dc90a4a5c2" id="r_gaf7c38c9a43bc7510520f90dc90a4a5c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaf7c38c9a43bc7510520f90dc90a4a5c2">SceAppUtilSaveDataDataSaveMode</a> { <a class="el" href="group__SceAppUtilUser.html#ggaf7c38c9a43bc7510520f90dc90a4a5c2a131779e6db42f538dea756fbe87da083">SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_FILE</a> = 0
+, <a class="el" href="group__SceAppUtilUser.html#ggaf7c38c9a43bc7510520f90dc90a4a5c2aab0361b32a32578d2c70c5be94770df1">SCE_APPUTIL_SAVEDATA_DATA_SAVE_MODE_DIRECTORY</a> = 2
+ }</td></tr>
+<tr class="separator:gaf7c38c9a43bc7510520f90dc90a4a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf123b89620d976629825ce3f6840f0d" id="r_gaaf123b89620d976629825ce3f6840f0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaaf123b89620d976629825ce3f6840f0d">SceAppUtilErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da2bc63464a9646aff22a956ce718d3009">SCE_APPUTIL_ERROR_PARAMETER</a> = 0x80100600
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da7abe4278f2d054a7f0252cf70d03d8fd">SCE_APPUTIL_ERROR_NOT_INITIALIZED</a> = 0x80100601
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da770f20e95bfdb764c8cfa6d2731cef09">SCE_APPUTIL_ERROR_NO_MEMORY</a> = 0x80100602
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da55590bfe51bf7c742a5c026d68c64920">SCE_APPUTIL_ERROR_BUSY</a> = 0x80100603
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da5cca54f3397766be20b34f1d600952fe">SCE_APPUTIL_ERROR_NOT_MOUNTED</a> = 0x80100604
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da108c8d0f750a9464d16c419710b26e5d">SCE_APPUTIL_ERROR_NO_PERMISSION</a> = 0x80100605
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0dae8f95c2133a6772c1766bb6f87c4504f">SCE_APPUTIL_ERROR_PASSCODE_MISMATCH</a> = 0x80100606
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da23c12ce114832096924f07d7a03eecab">SCE_APPUTIL_ERROR_APPEVENT_PARSE_INVALID_DATA</a> = 0x80100620
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0dab2fa114083f0855598390a5d4b33fa7b">SCE_APPUTIL_ERROR_SAVEDATA_SLOT_EXISTS</a> = 0x80100640
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da643a1487fa618ca3d60952b62c87573a">SCE_APPUTIL_ERROR_SAVEDATA_SLOT_NOT_FOUND</a> = 0x80100641
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da567cfe400928039a569db50424511b89">SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_QUOTA</a> = 0x80100642
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da159210e0c5a6f2c43865a095b37ad0e3">SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_FS</a> = 0x80100643
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da7b5e7afd34156350ced976a045951890">SCE_APPUTIL_ERROR_DRM_NO_ENTITLEMENT</a> = 0x80100660
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da6c93059c004f2ffa98802a0495f1999a">SCE_APPUTIL_ERROR_PHOTO_DEVICE_NOT_FOUND</a> = 0x80100680
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0dae4cfb8cd7c0e16b100829e2eb4db2095">SCE_APPUTIL_ERROR_MUSIC_DEVICE_NOT_FOUND</a> = 0x80100685
+, <a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da5610fac9b086153455d091214e201370">SCE_APPUTIL_ERROR_MOUNT_LIMIT_OVER</a> = 0x80100686
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppUtilUser.html#ggaaf123b89620d976629825ce3f6840f0da90680b9625e5641d5ac25665afb83378">SCE_APPUTIL_ERROR_STACKSIZE_TOO_SHORT</a> = 0x801006A0
+<br />
+ }</td></tr>
+<tr class="separator:gaaf123b89620d976629825ce3f6840f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga1e44976d9c86b79220d44785f905d3d0" id="r_ga1e44976d9c86b79220d44785f905d3d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga1e44976d9c86b79220d44785f905d3d0">VITASDK_BUILD_ASSERT_EQ</a> (0x2C, <a class="el" href="group__SceAppUtilUser.html#structSceAppUtilBgdlStatus">SceAppUtilBgdlStatus</a>)</td></tr>
@@ -200,22 +274,182 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga331a523bd5dfc953cb94cc186e927ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch web browser app.  <br /></td></tr>
 <tr class="separator:ga331a523bd5dfc953cb94cc186e927ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga0b442a0d7c1d9f19ffc5ed4796b9ac1d" id="r_ga0b442a0d7c1d9f19ffc5ed4796b9ac1d"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga0b442a0d7c1d9f19ffc5ed4796b9ac1d">SceAppUtilBootAttribute</a></td></tr>
-<tr class="separator:ga0b442a0d7c1d9f19ffc5ed4796b9ac1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe25bd5ff10f50587b70e53516efcef0" id="r_gabe25bd5ff10f50587b70e53516efcef0"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gabe25bd5ff10f50587b70e53516efcef0">SceAppUtilAppEventType</a></td></tr>
-<tr class="separator:gabe25bd5ff10f50587b70e53516efcef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaabd8bd3006eee41336a59bf24e0f8c5a" id="r_gaabd8bd3006eee41336a59bf24e0f8c5a"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a">SceAppUtilSaveDataSlotId</a></td></tr>
-<tr class="separator:gaabd8bd3006eee41336a59bf24e0f8c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9eca9d76b9743c9284e7b54c02c39318" id="r_ga9eca9d76b9743c9284e7b54c02c39318"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318">SceAppUtilSaveDataSlotStatus</a></td></tr>
-<tr class="separator:ga9eca9d76b9743c9284e7b54c02c39318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98801a9fa481d6cee1ebf63f3e9a454e" id="r_ga98801a9fa481d6cee1ebf63f3e9a454e"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga98801a9fa481d6cee1ebf63f3e9a454e">SceAppUtilAppParamId</a></td></tr>
-<tr class="separator:ga98801a9fa481d6cee1ebf63f3e9a454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd636dd29d6a883f4716246dcc7b527a" id="r_gafd636dd29d6a883f4716246dcc7b527a"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gafd636dd29d6a883f4716246dcc7b527a">SceAppUtilBgdlStatusType</a></td></tr>
-<tr class="separator:gafd636dd29d6a883f4716246dcc7b527a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga43c2b6f67b107c2a86ed4f854caa7be8" id="r_ga43c2b6f67b107c2a86ed4f854caa7be8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#gafd636dd29d6a883f4716246dcc7b527a">SceAppUtilBgdlStatusType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga43c2b6f67b107c2a86ed4f854caa7be8">SceAppUtilBgdlStatus::type</a></td></tr>
+<tr class="separator:ga43c2b6f67b107c2a86ed4f854caa7be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07b853343fc7a15398f90c691e943c55" id="r_ga07b853343fc7a15398f90c691e943c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga07b853343fc7a15398f90c691e943c55">SceAppUtilBgdlStatus::addcontNumReady</a></td></tr>
+<tr class="separator:ga07b853343fc7a15398f90c691e943c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3d508f1360229b62e5da721092450cb" id="r_gab3d508f1360229b62e5da721092450cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gab3d508f1360229b62e5da721092450cb">SceAppUtilBgdlStatus::addcontNumNotReady</a></td></tr>
+<tr class="separator:gab3d508f1360229b62e5da721092450cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9642e811b901f559fc4ef3bf375aa915" id="r_ga9642e811b901f559fc4ef3bf375aa915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga9642e811b901f559fc4ef3bf375aa915">SceAppUtilBgdlStatus::licenseReady</a></td></tr>
+<tr class="separator:ga9642e811b901f559fc4ef3bf375aa915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52ff674d7bbe3b034e609f7750b144f3" id="r_ga52ff674d7bbe3b034e609f7750b144f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga52ff674d7bbe3b034e609f7750b144f3">SceAppUtilBgdlStatus::reserved</a> [28]</td></tr>
+<tr class="separator:ga52ff674d7bbe3b034e609f7750b144f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71489ee415187c23eecde1c938658d15" id="r_ga71489ee415187c23eecde1c938658d15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga71489ee415187c23eecde1c938658d15">SceAppUtilInitParam::workBufSize</a></td></tr>
+<tr class="memdesc:ga71489ee415187c23eecde1c938658d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer size.  <br /></td></tr>
+<tr class="separator:ga71489ee415187c23eecde1c938658d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga932a732a1eb80d249d4efd476a2a9445" id="r_ga932a732a1eb80d249d4efd476a2a9445"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga932a732a1eb80d249d4efd476a2a9445">SceAppUtilInitParam::reserved</a> [60]</td></tr>
+<tr class="memdesc:ga932a732a1eb80d249d4efd476a2a9445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved range.  <br /></td></tr>
+<tr class="separator:ga932a732a1eb80d249d4efd476a2a9445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga132fd40d298f048e56d5813ab9983f4c" id="r_ga132fd40d298f048e56d5813ab9983f4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#ga0b442a0d7c1d9f19ffc5ed4796b9ac1d">SceAppUtilBootAttribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga132fd40d298f048e56d5813ab9983f4c">SceAppUtilBootParam::attr</a></td></tr>
+<tr class="memdesc:ga132fd40d298f048e56d5813ab9983f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boot attribute.  <br /></td></tr>
+<tr class="separator:ga132fd40d298f048e56d5813ab9983f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5b4e80e3d42fd5cd6fc235af57c8e3a" id="r_gaa5b4e80e3d42fd5cd6fc235af57c8e3a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaa5b4e80e3d42fd5cd6fc235af57c8e3a">SceAppUtilBootParam::appVersion</a></td></tr>
+<tr class="memdesc:gaa5b4e80e3d42fd5cd6fc235af57c8e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">App version.  <br /></td></tr>
+<tr class="separator:gaa5b4e80e3d42fd5cd6fc235af57c8e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9046d1d0ae8a73d71789cf7411aa20da" id="r_ga9046d1d0ae8a73d71789cf7411aa20da"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga9046d1d0ae8a73d71789cf7411aa20da">SceAppUtilBootParam::reserved</a> [32]</td></tr>
+<tr class="memdesc:ga9046d1d0ae8a73d71789cf7411aa20da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved range.  <br /></td></tr>
+<tr class="separator:ga9046d1d0ae8a73d71789cf7411aa20da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7f5a2a5ad680f56f4af18316c6a7d36" id="r_gac7f5a2a5ad680f56f4af18316c6a7d36"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gac7f5a2a5ad680f56f4af18316c6a7d36">SceAppUtilSaveDataMountPoint::data</a> [16]</td></tr>
+<tr class="separator:gac7f5a2a5ad680f56f4af18316c6a7d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56a7c0dd8b61dce4417861baaaef1913" id="r_ga56a7c0dd8b61dce4417861baaaef1913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#gabe25bd5ff10f50587b70e53516efcef0">SceAppUtilAppEventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga56a7c0dd8b61dce4417861baaaef1913">SceAppUtilAppEventParam::type</a></td></tr>
+<tr class="memdesc:ga56a7c0dd8b61dce4417861baaaef1913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event type.  <br /></td></tr>
+<tr class="separator:ga56a7c0dd8b61dce4417861baaaef1913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d09358eed2b67385a90ab954ffbbf31" id="r_ga7d09358eed2b67385a90ab954ffbbf31"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga7d09358eed2b67385a90ab954ffbbf31">SceAppUtilAppEventParam::dat</a> [1024]</td></tr>
+<tr class="memdesc:ga7d09358eed2b67385a90ab954ffbbf31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event parameter.  <br /></td></tr>
+<tr class="separator:ga7d09358eed2b67385a90ab954ffbbf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a4253e798ff793644c1df6b6241f529" id="r_ga1a4253e798ff793644c1df6b6241f529"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga1a4253e798ff793644c1df6b6241f529">SceAppUtilMountPoint::data</a> [16]</td></tr>
+<tr class="memdesc:ga1a4253e798ff793644c1df6b6241f529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount point.  <br /></td></tr>
+<tr class="separator:ga1a4253e798ff793644c1df6b6241f529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga054883368a5b65ecc573a5a6a9e2e460" id="r_ga054883368a5b65ecc573a5a6a9e2e460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga054883368a5b65ecc573a5a6a9e2e460">SceAppUtilSaveDataSlotEmptyParam::title</a></td></tr>
+<tr class="memdesc:ga054883368a5b65ecc573a5a6a9e2e460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Title string.  <br /></td></tr>
+<tr class="separator:ga054883368a5b65ecc573a5a6a9e2e460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d0630b99d616b3096c49b58008eadbb" id="r_ga7d0630b99d616b3096c49b58008eadbb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga7d0630b99d616b3096c49b58008eadbb">SceAppUtilSaveDataSlotEmptyParam::iconPath</a></td></tr>
+<tr class="memdesc:ga7d0630b99d616b3096c49b58008eadbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to icon.  <br /></td></tr>
+<tr class="separator:ga7d0630b99d616b3096c49b58008eadbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae03e076ab91c2a61b360ce21f1c80621" id="r_gae03e076ab91c2a61b360ce21f1c80621"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gae03e076ab91c2a61b360ce21f1c80621">SceAppUtilSaveDataSlotEmptyParam::iconBuf</a></td></tr>
+<tr class="memdesc:gae03e076ab91c2a61b360ce21f1c80621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon buffer.  <br /></td></tr>
+<tr class="separator:gae03e076ab91c2a61b360ce21f1c80621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc90a5c01be82817605dd1ec31f14fae" id="r_gacc90a5c01be82817605dd1ec31f14fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gacc90a5c01be82817605dd1ec31f14fae">SceAppUtilSaveDataSlotEmptyParam::iconBufSize</a></td></tr>
+<tr class="memdesc:gacc90a5c01be82817605dd1ec31f14fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon buffer size.  <br /></td></tr>
+<tr class="separator:gacc90a5c01be82817605dd1ec31f14fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga012ca7917ac44aa1e62b096ba57d4b7e" id="r_ga012ca7917ac44aa1e62b096ba57d4b7e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga012ca7917ac44aa1e62b096ba57d4b7e">SceAppUtilSaveDataSlotEmptyParam::reserved</a> [32]</td></tr>
+<tr class="memdesc:ga012ca7917ac44aa1e62b096ba57d4b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved range.  <br /></td></tr>
+<tr class="separator:ga012ca7917ac44aa1e62b096ba57d4b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9724ce66a0232fd2cec6ccd5b0f4f1da" id="r_ga9724ce66a0232fd2cec6ccd5b0f4f1da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a">SceAppUtilSaveDataSlotId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga9724ce66a0232fd2cec6ccd5b0f4f1da">SceAppUtilSaveDataSlot::id</a></td></tr>
+<tr class="memdesc:ga9724ce66a0232fd2cec6ccd5b0f4f1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot id.  <br /></td></tr>
+<tr class="separator:ga9724ce66a0232fd2cec6ccd5b0f4f1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf6b488b005119412e68e3e8c7c13a25" id="r_gaaf6b488b005119412e68e3e8c7c13a25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318">SceAppUtilSaveDataSlotStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaaf6b488b005119412e68e3e8c7c13a25">SceAppUtilSaveDataSlot::status</a></td></tr>
+<tr class="memdesc:gaaf6b488b005119412e68e3e8c7c13a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot status.  <br /></td></tr>
+<tr class="separator:gaaf6b488b005119412e68e3e8c7c13a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae91086ccf24d94482c46a14f35f29d67" id="r_gae91086ccf24d94482c46a14f35f29d67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gae91086ccf24d94482c46a14f35f29d67">SceAppUtilSaveDataSlot::userParam</a></td></tr>
+<tr class="memdesc:gae91086ccf24d94482c46a14f35f29d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Param for free usage.  <br /></td></tr>
+<tr class="separator:gae91086ccf24d94482c46a14f35f29d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga579eae0cbdf9beb992506f24d78858ef" id="r_ga579eae0cbdf9beb992506f24d78858ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlotEmptyParam">SceAppUtilSaveDataSlotEmptyParam</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga579eae0cbdf9beb992506f24d78858ef">SceAppUtilSaveDataSlot::emptyParam</a></td></tr>
+<tr class="memdesc:ga579eae0cbdf9beb992506f24d78858ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for empty slot.  <br /></td></tr>
+<tr class="separator:ga579eae0cbdf9beb992506f24d78858ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a9a21a8dc788989c68c14f94a7d6521" id="r_ga0a9a21a8dc788989c68c14f94a7d6521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318">SceAppUtilSaveDataSlotStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga0a9a21a8dc788989c68c14f94a7d6521">SceAppUtilSaveDataSlotParam::status</a></td></tr>
+<tr class="memdesc:ga0a9a21a8dc788989c68c14f94a7d6521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status.  <br /></td></tr>
+<tr class="separator:ga0a9a21a8dc788989c68c14f94a7d6521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2441849841afb440d18863f6f5513a93" id="r_ga2441849841afb440d18863f6f5513a93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga2441849841afb440d18863f6f5513a93">SceAppUtilSaveDataSlotParam::title</a> [32]</td></tr>
+<tr class="memdesc:ga2441849841afb440d18863f6f5513a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Title name.  <br /></td></tr>
+<tr class="separator:ga2441849841afb440d18863f6f5513a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f6719584d48a06848947fa70695431e" id="r_ga9f6719584d48a06848947fa70695431e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga9f6719584d48a06848947fa70695431e">SceAppUtilSaveDataSlotParam::subTitle</a> [64]</td></tr>
+<tr class="memdesc:ga9f6719584d48a06848947fa70695431e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtitle.  <br /></td></tr>
+<tr class="separator:ga9f6719584d48a06848947fa70695431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga414bb4cf053496ac6b97fed47af719de" id="r_ga414bb4cf053496ac6b97fed47af719de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga414bb4cf053496ac6b97fed47af719de">SceAppUtilSaveDataSlotParam::detail</a> [256]</td></tr>
+<tr class="memdesc:ga414bb4cf053496ac6b97fed47af719de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detail info.  <br /></td></tr>
+<tr class="separator:ga414bb4cf053496ac6b97fed47af719de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga688c67a1b184ec84034bd7daa77a3165" id="r_ga688c67a1b184ec84034bd7daa77a3165"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga688c67a1b184ec84034bd7daa77a3165">SceAppUtilSaveDataSlotParam::iconPath</a> [64]</td></tr>
+<tr class="memdesc:ga688c67a1b184ec84034bd7daa77a3165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon path.  <br /></td></tr>
+<tr class="separator:ga688c67a1b184ec84034bd7daa77a3165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2606b270579d2d52833b258e01f61832" id="r_ga2606b270579d2d52833b258e01f61832"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga2606b270579d2d52833b258e01f61832">SceAppUtilSaveDataSlotParam::userParam</a></td></tr>
+<tr class="memdesc:ga2606b270579d2d52833b258e01f61832"><td class="mdescLeft">&#160;</td><td class="mdescRight">User param.  <br /></td></tr>
+<tr class="separator:ga2606b270579d2d52833b258e01f61832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e7f7e388d13f0be3787d6b69cffa861" id="r_ga2e7f7e388d13f0be3787d6b69cffa861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga2e7f7e388d13f0be3787d6b69cffa861">SceAppUtilSaveDataSlotParam::sizeKB</a></td></tr>
+<tr class="memdesc:ga2e7f7e388d13f0be3787d6b69cffa861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data size (In KB)  <br /></td></tr>
+<tr class="separator:ga2e7f7e388d13f0be3787d6b69cffa861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cb25df5c4e0fcbffd280ce960f9adc4" id="r_ga3cb25df5c4e0fcbffd280ce960f9adc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga3cb25df5c4e0fcbffd280ce960f9adc4">SceAppUtilSaveDataSlotParam::modifiedTime</a></td></tr>
+<tr class="memdesc:ga3cb25df5c4e0fcbffd280ce960f9adc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last modified time.  <br /></td></tr>
+<tr class="separator:ga3cb25df5c4e0fcbffd280ce960f9adc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44a6fd391e5843c13a394e3a52a69cb4" id="r_ga44a6fd391e5843c13a394e3a52a69cb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga44a6fd391e5843c13a394e3a52a69cb4">SceAppUtilSaveDataSlotParam::reserved</a> [48]</td></tr>
+<tr class="memdesc:ga44a6fd391e5843c13a394e3a52a69cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved range.  <br /></td></tr>
+<tr class="separator:ga44a6fd391e5843c13a394e3a52a69cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac87532bbc50bad35a1e49f6b7cb6cd15" id="r_gac87532bbc50bad35a1e49f6b7cb6cd15"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gac87532bbc50bad35a1e49f6b7cb6cd15">SceAppUtilSaveDataSaveItem::dataPath</a></td></tr>
+<tr class="memdesc:gac87532bbc50bad35a1e49f6b7cb6cd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to savedata.  <br /></td></tr>
+<tr class="separator:gac87532bbc50bad35a1e49f6b7cb6cd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fa0695be592ee92f2ff681684b1c8a2" id="r_ga7fa0695be592ee92f2ff681684b1c8a2"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga7fa0695be592ee92f2ff681684b1c8a2">SceAppUtilSaveDataSaveItem::buf</a></td></tr>
+<tr class="memdesc:ga7fa0695be592ee92f2ff681684b1c8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer of savedata file.  <br /></td></tr>
+<tr class="separator:ga7fa0695be592ee92f2ff681684b1c8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7c50031574e2c5201022ffe38620b31" id="r_gae7c50031574e2c5201022ffe38620b31"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gae7c50031574e2c5201022ffe38620b31">SceAppUtilSaveDataSaveItem::pad</a></td></tr>
+<tr class="memdesc:gae7c50031574e2c5201022ffe38620b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding.  <br /></td></tr>
+<tr class="separator:gae7c50031574e2c5201022ffe38620b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafde25735372ebc4ed4c5fde24a2fab5e" id="r_gafde25735372ebc4ed4c5fde24a2fab5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gafde25735372ebc4ed4c5fde24a2fab5e">SceAppUtilSaveDataSaveItem::offset</a></td></tr>
+<tr class="memdesc:gafde25735372ebc4ed4c5fde24a2fab5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of savedata file.  <br /></td></tr>
+<tr class="separator:gafde25735372ebc4ed4c5fde24a2fab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c545bc45cb3b359fa0a53e302084b8c" id="r_ga4c545bc45cb3b359fa0a53e302084b8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga4c545bc45cb3b359fa0a53e302084b8c">SceAppUtilSaveDataSaveItem::mode</a></td></tr>
+<tr class="memdesc:ga4c545bc45cb3b359fa0a53e302084b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Savedata save mode (One of ::SceAppUtilSaveDataSaveMode)  <br /></td></tr>
+<tr class="separator:ga4c545bc45cb3b359fa0a53e302084b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fb799b208a0e334674d7c49901f95c7" id="r_ga4fb799b208a0e334674d7c49901f95c7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga4fb799b208a0e334674d7c49901f95c7">SceAppUtilSaveDataSaveItem::reserved</a> [36]</td></tr>
+<tr class="memdesc:ga4fb799b208a0e334674d7c49901f95c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved range.  <br /></td></tr>
+<tr class="separator:ga4fb799b208a0e334674d7c49901f95c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3768075f78d4db0c90abac59e2a6f69a" id="r_ga3768075f78d4db0c90abac59e2a6f69a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga3768075f78d4db0c90abac59e2a6f69a">SceAppUtilSaveDataFile::filePath</a></td></tr>
+<tr class="separator:ga3768075f78d4db0c90abac59e2a6f69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6a2c06d5ebc5a8bda338b1960333360" id="r_gaf6a2c06d5ebc5a8bda338b1960333360"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaf6a2c06d5ebc5a8bda338b1960333360">SceAppUtilSaveDataFile::buf</a></td></tr>
+<tr class="separator:gaf6a2c06d5ebc5a8bda338b1960333360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2bc4c40ed1fd08b79cf5ab7b3a95db" id="r_ga4a2bc4c40ed1fd08b79cf5ab7b3a95db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga4a2bc4c40ed1fd08b79cf5ab7b3a95db">SceAppUtilSaveDataFile::bufSize</a></td></tr>
+<tr class="separator:ga4a2bc4c40ed1fd08b79cf5ab7b3a95db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa48131b44dd4536b8b70b27905824a82" id="r_gaa48131b44dd4536b8b70b27905824a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gaa48131b44dd4536b8b70b27905824a82">SceAppUtilSaveDataFile::offset</a></td></tr>
+<tr class="separator:gaa48131b44dd4536b8b70b27905824a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacec37bfe1531e45e3a556f792e67b14c" id="r_gacec37bfe1531e45e3a556f792e67b14c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gacec37bfe1531e45e3a556f792e67b14c">SceAppUtilSaveDataFile::mode</a></td></tr>
+<tr class="separator:gacec37bfe1531e45e3a556f792e67b14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a9aa291cde106812d09d3ae8bbbe906" id="r_ga5a9aa291cde106812d09d3ae8bbbe906"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga5a9aa291cde106812d09d3ae8bbbe906">SceAppUtilSaveDataFile::progDelta</a></td></tr>
+<tr class="separator:ga5a9aa291cde106812d09d3ae8bbbe906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac98f0dda5e4d2d9e6da9a2639ed59a7b" id="r_gac98f0dda5e4d2d9e6da9a2639ed59a7b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gac98f0dda5e4d2d9e6da9a2639ed59a7b">SceAppUtilSaveDataFile::reserved</a> [32]</td></tr>
+<tr class="separator:gac98f0dda5e4d2d9e6da9a2639ed59a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1c95bfe2f24141ac886b3903bfef492" id="r_gad1c95bfe2f24141ac886b3903bfef492"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gad1c95bfe2f24141ac886b3903bfef492">SceAppUtilSaveDataFileSlot::id</a></td></tr>
+<tr class="separator:gad1c95bfe2f24141ac886b3903bfef492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46ab5eb9e68c2b2f22809503ef8cd764" id="r_ga46ab5eb9e68c2b2f22809503ef8cd764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlotParam">SceAppUtilSaveDataSlotParam</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga46ab5eb9e68c2b2f22809503ef8cd764">SceAppUtilSaveDataFileSlot::slotParam</a></td></tr>
+<tr class="separator:ga46ab5eb9e68c2b2f22809503ef8cd764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23931b55040ced350ab90331ba1868f1" id="r_ga23931b55040ced350ab90331ba1868f1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga23931b55040ced350ab90331ba1868f1">SceAppUtilSaveDataFileSlot::reserved</a> [32]</td></tr>
+<tr class="separator:ga23931b55040ced350ab90331ba1868f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga070501759ef409b63ee67f7b0668af6f" id="r_ga070501759ef409b63ee67f7b0668af6f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga070501759ef409b63ee67f7b0668af6f">SceAppUtilSaveDataRemoveItem::dataPath</a></td></tr>
+<tr class="memdesc:ga070501759ef409b63ee67f7b0668af6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to savedata data.  <br /></td></tr>
+<tr class="separator:ga070501759ef409b63ee67f7b0668af6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0ce4125c3170a25711ef4410228b11b" id="r_gad0ce4125c3170a25711ef4410228b11b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gad0ce4125c3170a25711ef4410228b11b">SceAppUtilSaveDataRemoveItem::mode</a></td></tr>
+<tr class="memdesc:gad0ce4125c3170a25711ef4410228b11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Savedata remove mode (One of ::SceAppUtilSaveDataRemoveMode)  <br /></td></tr>
+<tr class="separator:gad0ce4125c3170a25711ef4410228b11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c8413b757686e2f3f863bf48bca150" id="r_gac1c8413b757686e2f3f863bf48bca150"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gac1c8413b757686e2f3f863bf48bca150">SceAppUtilSaveDataRemoveItem::reserved</a> [36]</td></tr>
+<tr class="memdesc:gac1c8413b757686e2f3f863bf48bca150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved range.  <br /></td></tr>
+<tr class="separator:gac1c8413b757686e2f3f863bf48bca150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafac5d16a008650360e9c37d6cb065e21" id="r_gafac5d16a008650360e9c37d6cb065e21"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gafac5d16a008650360e9c37d6cb065e21">SceAppUtilStoreBrowseParam::type</a></td></tr>
+<tr class="memdesc:gafac5d16a008650360e9c37d6cb065e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store browse type.  <br /></td></tr>
+<tr class="separator:gafac5d16a008650360e9c37d6cb065e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ebd671d3f1ba36b26c4ca578567338f" id="r_ga2ebd671d3f1ba36b26c4ca578567338f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga2ebd671d3f1ba36b26c4ca578567338f">SceAppUtilStoreBrowseParam::id</a></td></tr>
+<tr class="memdesc:ga2ebd671d3f1ba36b26c4ca578567338f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target id.  <br /></td></tr>
+<tr class="separator:ga2ebd671d3f1ba36b26c4ca578567338f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5a7fb9f90dc0179620e40a732f92edb" id="r_gac5a7fb9f90dc0179620e40a732f92edb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#gac5a7fb9f90dc0179620e40a732f92edb">SceAppUtilWebBrowserParam::str</a></td></tr>
+<tr class="memdesc:gac5a7fb9f90dc0179620e40a732f92edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">String that's passed to command specified by launchMode.  <br /></td></tr>
+<tr class="separator:gac5a7fb9f90dc0179620e40a732f92edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga240d9fa0246190394422c45a1c5ed352" id="r_ga240d9fa0246190394422c45a1c5ed352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga240d9fa0246190394422c45a1c5ed352">SceAppUtilWebBrowserParam::strlen</a></td></tr>
+<tr class="memdesc:ga240d9fa0246190394422c45a1c5ed352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of str.  <br /></td></tr>
+<tr class="separator:ga240d9fa0246190394422c45a1c5ed352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga250d1a6b66a5aabffa3ac2441e6f3f62" id="r_ga250d1a6b66a5aabffa3ac2441e6f3f62"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga250d1a6b66a5aabffa3ac2441e6f3f62">SceAppUtilWebBrowserParam::launchMode</a></td></tr>
+<tr class="memdesc:ga250d1a6b66a5aabffa3ac2441e6f3f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Browser mode.  <br /></td></tr>
+<tr class="separator:ga250d1a6b66a5aabffa3ac2441e6f3f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56c01a075bc1662ca95910ba4566b3ea" id="r_ga56c01a075bc1662ca95910ba4566b3ea"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppUtilUser.html#ga56c01a075bc1662ca95910ba4566b3ea">SceAppUtilWebBrowserParam::reserved</a></td></tr>
+<tr class="memdesc:ga56c01a075bc1662ca95910ba4566b3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved area.  <br /></td></tr>
+<tr class="separator:ga56c01a075bc1662ca95910ba4566b3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="apputil_8h.html">psp2/apputil.h</a>&gt;</span> </div>
+<div class="ttc" id="aapputil_8h_html"><div class="ttname"><a href="apputil_8h.html">apputil.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceAppUtil_stub </div>
+</div><!-- fragment --><p> <br  />
+ Load the required module:<br  />
+</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a07bcba2f3bccf0f2bd4d7a4994c8b2de">SCE_SYSMODULE_APPUTIL</a>); </div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a07bcba2f3bccf0f2bd4d7a4994c8b2de"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a07bcba2f3bccf0f2bd4d7a4994c8b2de">SCE_SYSMODULE_APPUTIL</a></div><div class="ttdeci">@ SCE_SYSMODULE_APPUTIL</div><div class="ttdoc">AppUtil module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:42</div></div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceAppUtilBgdlStatus" id="structSceAppUtilBgdlStatus"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceAppUtilBgdlStatus">&#9670;&#160;</a></span>SceAppUtilBgdlStatus</h2>
 
@@ -2063,6 +2297,887 @@ Reserved area. </td></tr>
 </div><div class="memdoc">
 
 <p>Launch web browser app. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga43c2b6f67b107c2a86ed4f854caa7be8" name="ga43c2b6f67b107c2a86ed4f854caa7be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43c2b6f67b107c2a86ed4f854caa7be8">&#9670;&#160;</a></span>type <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#gafd636dd29d6a883f4716246dcc7b527a">SceAppUtilBgdlStatusType</a> SceAppUtilBgdlStatus::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga07b853343fc7a15398f90c691e943c55" name="ga07b853343fc7a15398f90c691e943c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07b853343fc7a15398f90c691e943c55">&#9670;&#160;</a></span>addcontNumReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAppUtilBgdlStatus::addcontNumReady</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab3d508f1360229b62e5da721092450cb" name="gab3d508f1360229b62e5da721092450cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3d508f1360229b62e5da721092450cb">&#9670;&#160;</a></span>addcontNumNotReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAppUtilBgdlStatus::addcontNumNotReady</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9642e811b901f559fc4ef3bf375aa915" name="ga9642e811b901f559fc4ef3bf375aa915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9642e811b901f559fc4ef3bf375aa915">&#9670;&#160;</a></span>licenseReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAppUtilBgdlStatus::licenseReady</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga52ff674d7bbe3b034e609f7750b144f3" name="ga52ff674d7bbe3b034e609f7750b144f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52ff674d7bbe3b034e609f7750b144f3">&#9670;&#160;</a></span>reserved <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga3e4c9f19810b033b3e1bf9c5be6f9fd6">SceChar8</a> SceAppUtilBgdlStatus::reserved[28]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga71489ee415187c23eecde1c938658d15" name="ga71489ee415187c23eecde1c938658d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71489ee415187c23eecde1c938658d15">&#9670;&#160;</a></span>workBufSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceAppUtilInitParam::workBufSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer size. </p>
+
+</div>
+</div>
+<a id="ga932a732a1eb80d249d4efd476a2a9445" name="ga932a732a1eb80d249d4efd476a2a9445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga932a732a1eb80d249d4efd476a2a9445">&#9670;&#160;</a></span>reserved <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilInitParam::reserved[60]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved range. </p>
+
+</div>
+</div>
+<a id="ga132fd40d298f048e56d5813ab9983f4c" name="ga132fd40d298f048e56d5813ab9983f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga132fd40d298f048e56d5813ab9983f4c">&#9670;&#160;</a></span>attr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#ga0b442a0d7c1d9f19ffc5ed4796b9ac1d">SceAppUtilBootAttribute</a> SceAppUtilBootParam::attr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boot attribute. </p>
+
+</div>
+</div>
+<a id="gaa5b4e80e3d42fd5cd6fc235af57c8e3a" name="gaa5b4e80e3d42fd5cd6fc235af57c8e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5b4e80e3d42fd5cd6fc235af57c8e3a">&#9670;&#160;</a></span>appVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilBootParam::appVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>App version. </p>
+
+</div>
+</div>
+<a id="ga9046d1d0ae8a73d71789cf7411aa20da" name="ga9046d1d0ae8a73d71789cf7411aa20da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9046d1d0ae8a73d71789cf7411aa20da">&#9670;&#160;</a></span>reserved <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilBootParam::reserved[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved range. </p>
+
+</div>
+</div>
+<a id="gac7f5a2a5ad680f56f4af18316c6a7d36" name="gac7f5a2a5ad680f56f4af18316c6a7d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7f5a2a5ad680f56f4af18316c6a7d36">&#9670;&#160;</a></span>data <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataMountPoint::data[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga56a7c0dd8b61dce4417861baaaef1913" name="ga56a7c0dd8b61dce4417861baaaef1913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56a7c0dd8b61dce4417861baaaef1913">&#9670;&#160;</a></span>type <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#gabe25bd5ff10f50587b70e53516efcef0">SceAppUtilAppEventType</a> SceAppUtilAppEventParam::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event type. </p>
+
+</div>
+</div>
+<a id="ga7d09358eed2b67385a90ab954ffbbf31" name="ga7d09358eed2b67385a90ab954ffbbf31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d09358eed2b67385a90ab954ffbbf31">&#9670;&#160;</a></span>dat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilAppEventParam::dat[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event parameter. </p>
+
+</div>
+</div>
+<a id="ga1a4253e798ff793644c1df6b6241f529" name="ga1a4253e798ff793644c1df6b6241f529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a4253e798ff793644c1df6b6241f529">&#9670;&#160;</a></span>data <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t SceAppUtilMountPoint::data[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount point. </p>
+
+</div>
+</div>
+<a id="ga054883368a5b65ecc573a5a6a9e2e460" name="ga054883368a5b65ecc573a5a6a9e2e460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga054883368a5b65ecc573a5a6a9e2e460">&#9670;&#160;</a></span>title <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a>* SceAppUtilSaveDataSlotEmptyParam::title</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Title string. </p>
+
+</div>
+</div>
+<a id="ga7d0630b99d616b3096c49b58008eadbb" name="ga7d0630b99d616b3096c49b58008eadbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d0630b99d616b3096c49b58008eadbb">&#9670;&#160;</a></span>iconPath <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* SceAppUtilSaveDataSlotEmptyParam::iconPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Path to icon. </p>
+
+</div>
+</div>
+<a id="gae03e076ab91c2a61b360ce21f1c80621" name="gae03e076ab91c2a61b360ce21f1c80621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae03e076ab91c2a61b360ce21f1c80621">&#9670;&#160;</a></span>iconBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceAppUtilSaveDataSlotEmptyParam::iconBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Icon buffer. </p>
+
+</div>
+</div>
+<a id="gacc90a5c01be82817605dd1ec31f14fae" name="gacc90a5c01be82817605dd1ec31f14fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc90a5c01be82817605dd1ec31f14fae">&#9670;&#160;</a></span>iconBufSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceAppUtilSaveDataSlotEmptyParam::iconBufSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Icon buffer size. </p>
+
+</div>
+</div>
+<a id="ga012ca7917ac44aa1e62b096ba57d4b7e" name="ga012ca7917ac44aa1e62b096ba57d4b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga012ca7917ac44aa1e62b096ba57d4b7e">&#9670;&#160;</a></span>reserved <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataSlotEmptyParam::reserved[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved range. </p>
+
+</div>
+</div>
+<a id="ga9724ce66a0232fd2cec6ccd5b0f4f1da" name="ga9724ce66a0232fd2cec6ccd5b0f4f1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9724ce66a0232fd2cec6ccd5b0f4f1da">&#9670;&#160;</a></span>id <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#gaabd8bd3006eee41336a59bf24e0f8c5a">SceAppUtilSaveDataSlotId</a> SceAppUtilSaveDataSlot::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Slot id. </p>
+
+</div>
+</div>
+<a id="gaaf6b488b005119412e68e3e8c7c13a25" name="gaaf6b488b005119412e68e3e8c7c13a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf6b488b005119412e68e3e8c7c13a25">&#9670;&#160;</a></span>status <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318">SceAppUtilSaveDataSlotStatus</a> SceAppUtilSaveDataSlot::status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Slot status. </p>
+
+</div>
+</div>
+<a id="gae91086ccf24d94482c46a14f35f29d67" name="gae91086ccf24d94482c46a14f35f29d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae91086ccf24d94482c46a14f35f29d67">&#9670;&#160;</a></span>userParam <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceAppUtilSaveDataSlot::userParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Param for free usage. </p>
+
+</div>
+</div>
+<a id="ga579eae0cbdf9beb992506f24d78858ef" name="ga579eae0cbdf9beb992506f24d78858ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga579eae0cbdf9beb992506f24d78858ef">&#9670;&#160;</a></span>emptyParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlotEmptyParam">SceAppUtilSaveDataSlotEmptyParam</a>* SceAppUtilSaveDataSlot::emptyParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Settings for empty slot. </p>
+
+</div>
+</div>
+<a id="ga0a9a21a8dc788989c68c14f94a7d6521" name="ga0a9a21a8dc788989c68c14f94a7d6521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a9a21a8dc788989c68c14f94a7d6521">&#9670;&#160;</a></span>status <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#ga9eca9d76b9743c9284e7b54c02c39318">SceAppUtilSaveDataSlotStatus</a> SceAppUtilSaveDataSlotParam::status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status. </p>
+
+</div>
+</div>
+<a id="ga2441849841afb440d18863f6f5513a93" name="ga2441849841afb440d18863f6f5513a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2441849841afb440d18863f6f5513a93">&#9670;&#160;</a></span>title <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> SceAppUtilSaveDataSlotParam::title[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Title name. </p>
+
+</div>
+</div>
+<a id="ga9f6719584d48a06848947fa70695431e" name="ga9f6719584d48a06848947fa70695431e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f6719584d48a06848947fa70695431e">&#9670;&#160;</a></span>subTitle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> SceAppUtilSaveDataSlotParam::subTitle[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subtitle. </p>
+
+</div>
+</div>
+<a id="ga414bb4cf053496ac6b97fed47af719de" name="ga414bb4cf053496ac6b97fed47af719de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga414bb4cf053496ac6b97fed47af719de">&#9670;&#160;</a></span>detail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaca550defc27d041b849d9ef72e040595">SceWChar16</a> SceAppUtilSaveDataSlotParam::detail[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detail info. </p>
+
+</div>
+</div>
+<a id="ga688c67a1b184ec84034bd7daa77a3165" name="ga688c67a1b184ec84034bd7daa77a3165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga688c67a1b184ec84034bd7daa77a3165">&#9670;&#160;</a></span>iconPath <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceAppUtilSaveDataSlotParam::iconPath[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Icon path. </p>
+
+</div>
+</div>
+<a id="ga2606b270579d2d52833b258e01f61832" name="ga2606b270579d2d52833b258e01f61832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2606b270579d2d52833b258e01f61832">&#9670;&#160;</a></span>userParam <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceAppUtilSaveDataSlotParam::userParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User param. </p>
+
+</div>
+</div>
+<a id="ga2e7f7e388d13f0be3787d6b69cffa861" name="ga2e7f7e388d13f0be3787d6b69cffa861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e7f7e388d13f0be3787d6b69cffa861">&#9670;&#160;</a></span>sizeKB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceAppUtilSaveDataSlotParam::sizeKB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data size (In KB) </p>
+
+</div>
+</div>
+<a id="ga3cb25df5c4e0fcbffd280ce960f9adc4" name="ga3cb25df5c4e0fcbffd280ce960f9adc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3cb25df5c4e0fcbffd280ce960f9adc4">&#9670;&#160;</a></span>modifiedTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> SceAppUtilSaveDataSlotParam::modifiedTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last modified time. </p>
+
+</div>
+</div>
+<a id="ga44a6fd391e5843c13a394e3a52a69cb4" name="ga44a6fd391e5843c13a394e3a52a69cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44a6fd391e5843c13a394e3a52a69cb4">&#9670;&#160;</a></span>reserved <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataSlotParam::reserved[48]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved range. </p>
+
+</div>
+</div>
+<a id="gac87532bbc50bad35a1e49f6b7cb6cd15" name="gac87532bbc50bad35a1e49f6b7cb6cd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac87532bbc50bad35a1e49f6b7cb6cd15">&#9670;&#160;</a></span>dataPath <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceAppUtilSaveDataSaveItem::dataPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Path to savedata. </p>
+
+</div>
+</div>
+<a id="ga7fa0695be592ee92f2ff681684b1c8a2" name="ga7fa0695be592ee92f2ff681684b1c8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7fa0695be592ee92f2ff681684b1c8a2">&#9670;&#160;</a></span>buf <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* SceAppUtilSaveDataSaveItem::buf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer of savedata file. </p>
+
+</div>
+</div>
+<a id="gae7c50031574e2c5201022ffe38620b31" name="gae7c50031574e2c5201022ffe38620b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7c50031574e2c5201022ffe38620b31">&#9670;&#160;</a></span>pad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SceAppUtilSaveDataSaveItem::pad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Padding. </p>
+
+</div>
+</div>
+<a id="gafde25735372ebc4ed4c5fde24a2fab5e" name="gafde25735372ebc4ed4c5fde24a2fab5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafde25735372ebc4ed4c5fde24a2fab5e">&#9670;&#160;</a></span>offset <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a> SceAppUtilSaveDataSaveItem::offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset of savedata file. </p>
+
+</div>
+</div>
+<a id="ga4c545bc45cb3b359fa0a53e302084b8c" name="ga4c545bc45cb3b359fa0a53e302084b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c545bc45cb3b359fa0a53e302084b8c">&#9670;&#160;</a></span>mode <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceAppUtilSaveDataSaveItem::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Savedata save mode (One of ::SceAppUtilSaveDataSaveMode) </p>
+
+</div>
+</div>
+<a id="ga4fb799b208a0e334674d7c49901f95c7" name="ga4fb799b208a0e334674d7c49901f95c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fb799b208a0e334674d7c49901f95c7">&#9670;&#160;</a></span>reserved <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataSaveItem::reserved[36]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved range. </p>
+
+</div>
+</div>
+<a id="ga3768075f78d4db0c90abac59e2a6f69a" name="ga3768075f78d4db0c90abac59e2a6f69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3768075f78d4db0c90abac59e2a6f69a">&#9670;&#160;</a></span>filePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceAppUtilSaveDataFile::filePath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf6a2c06d5ebc5a8bda338b1960333360" name="gaf6a2c06d5ebc5a8bda338b1960333360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6a2c06d5ebc5a8bda338b1960333360">&#9670;&#160;</a></span>buf <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceAppUtilSaveDataFile::buf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4a2bc4c40ed1fd08b79cf5ab7b3a95db" name="ga4a2bc4c40ed1fd08b79cf5ab7b3a95db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a2bc4c40ed1fd08b79cf5ab7b3a95db">&#9670;&#160;</a></span>bufSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceAppUtilSaveDataFile::bufSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa48131b44dd4536b8b70b27905824a82" name="gaa48131b44dd4536b8b70b27905824a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa48131b44dd4536b8b70b27905824a82">&#9670;&#160;</a></span>offset <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a> SceAppUtilSaveDataFile::offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacec37bfe1531e45e3a556f792e67b14c" name="gacec37bfe1531e45e3a556f792e67b14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacec37bfe1531e45e3a556f792e67b14c">&#9670;&#160;</a></span>mode <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilSaveDataFile::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a9aa291cde106812d09d3ae8bbbe906" name="ga5a9aa291cde106812d09d3ae8bbbe906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a9aa291cde106812d09d3ae8bbbe906">&#9670;&#160;</a></span>progDelta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilSaveDataFile::progDelta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac98f0dda5e4d2d9e6da9a2639ed59a7b" name="gac98f0dda5e4d2d9e6da9a2639ed59a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac98f0dda5e4d2d9e6da9a2639ed59a7b">&#9670;&#160;</a></span>reserved <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataFile::reserved[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad1c95bfe2f24141ac886b3903bfef492" name="gad1c95bfe2f24141ac886b3903bfef492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1c95bfe2f24141ac886b3903bfef492">&#9670;&#160;</a></span>id <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilSaveDataFileSlot::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga46ab5eb9e68c2b2f22809503ef8cd764" name="ga46ab5eb9e68c2b2f22809503ef8cd764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46ab5eb9e68c2b2f22809503ef8cd764">&#9670;&#160;</a></span>slotParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceAppUtilUser.html#structSceAppUtilSaveDataSlotParam">SceAppUtilSaveDataSlotParam</a>* SceAppUtilSaveDataFileSlot::slotParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga23931b55040ced350ab90331ba1868f1" name="ga23931b55040ced350ab90331ba1868f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23931b55040ced350ab90331ba1868f1">&#9670;&#160;</a></span>reserved <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataFileSlot::reserved[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga070501759ef409b63ee67f7b0668af6f" name="ga070501759ef409b63ee67f7b0668af6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga070501759ef409b63ee67f7b0668af6f">&#9670;&#160;</a></span>dataPath <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceAppUtilSaveDataRemoveItem::dataPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Path to savedata data. </p>
+
+</div>
+</div>
+<a id="gad0ce4125c3170a25711ef4410228b11b" name="gad0ce4125c3170a25711ef4410228b11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0ce4125c3170a25711ef4410228b11b">&#9670;&#160;</a></span>mode <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceAppUtilSaveDataRemoveItem::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Savedata remove mode (One of ::SceAppUtilSaveDataRemoveMode) </p>
+
+</div>
+</div>
+<a id="gac1c8413b757686e2f3f863bf48bca150" name="gac1c8413b757686e2f3f863bf48bca150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1c8413b757686e2f3f863bf48bca150">&#9670;&#160;</a></span>reserved <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SceAppUtilSaveDataRemoveItem::reserved[36]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved range. </p>
+
+</div>
+</div>
+<a id="gafac5d16a008650360e9c37d6cb065e21" name="gafac5d16a008650360e9c37d6cb065e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafac5d16a008650360e9c37d6cb065e21">&#9670;&#160;</a></span>type <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilStoreBrowseParam::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store browse type. </p>
+
+</div>
+</div>
+<a id="ga2ebd671d3f1ba36b26c4ca578567338f" name="ga2ebd671d3f1ba36b26c4ca578567338f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ebd671d3f1ba36b26c4ca578567338f">&#9670;&#160;</a></span>id <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceAppUtilStoreBrowseParam::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Target id. </p>
+
+</div>
+</div>
+<a id="gac5a7fb9f90dc0179620e40a732f92edb" name="gac5a7fb9f90dc0179620e40a732f92edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5a7fb9f90dc0179620e40a732f92edb">&#9670;&#160;</a></span>str</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SceAppUtilWebBrowserParam::str</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>String that's passed to command specified by launchMode. </p>
+
+</div>
+</div>
+<a id="ga240d9fa0246190394422c45a1c5ed352" name="ga240d9fa0246190394422c45a1c5ed352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga240d9fa0246190394422c45a1c5ed352">&#9670;&#160;</a></span>strlen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceAppUtilWebBrowserParam::strlen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Length of str. </p>
+
+</div>
+</div>
+<a id="ga250d1a6b66a5aabffa3ac2441e6f3f62" name="ga250d1a6b66a5aabffa3ac2441e6f3f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga250d1a6b66a5aabffa3ac2441e6f3f62">&#9670;&#160;</a></span>launchMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilWebBrowserParam::launchMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Browser mode. </p>
+
+</div>
+</div>
+<a id="ga56c01a075bc1662ca95910ba4566b3ea" name="ga56c01a075bc1662ca95910ba4566b3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56c01a075bc1662ca95910ba4566b3ea">&#9670;&#160;</a></span>reserved <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceAppUtilWebBrowserParam::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved area. </p>
 
 </div>
 </div>

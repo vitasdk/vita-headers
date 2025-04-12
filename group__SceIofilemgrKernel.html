@@ -73,31 +73,155 @@ $(document).ready(function(){initNavTree('group__SceIofilemgrKernel.html',''); i
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Filesystem.html">Filesystem</a> &raquo; <a class="el" href="group__SceIofilemgr.html">File I/O Manager Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2kernel_2iofilemgr_8h.html">psp2common/kernel/iofilemgr.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2common_2kernel_2iofilemgr_8h_html"><div class="ttname"><a href="psp2common_2kernel_2iofilemgr_8h.html">iofilemgr.h</a></div></div>
-</div><!-- fragment --><p><br  />
- </p><hr  />
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2kernel_2iofilemgr_8h.html">psp2kern/kernel/iofilemgr.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2kern_2kernel_2iofilemgr_8h_html"><div class="ttname"><a href="psp2kern_2kernel_2iofilemgr_8h.html">iofilemgr.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceIofilemgrForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceIoDevInfo" id="r_structSceIoDevInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#structSceIoDevInfo">SceIoDevInfo</a></td></tr>
+<tr class="separator:structSceIoDevInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIoStat" id="r_structSceIoStat"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#structSceIoStat">SceIoStat</a></td></tr>
+<tr class="memdesc:structSceIoStat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to hold the status information about a file.  <a href="group__SceIofilemgrKernel.html#structSceIoStat">More...</a><br /></td></tr>
+<tr class="separator:structSceIoStat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIoDirent" id="r_structSceIoDirent"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#structSceIoDirent">SceIoDirent</a></td></tr>
+<tr class="memdesc:structSceIoDirent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single directory entry.  <a href="group__SceIofilemgrKernel.html#structSceIoDirent">More...</a><br /></td></tr>
+<tr class="separator:structSceIoDirent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIoFdInfo" id="r_structSceIoFdInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#structSceIoFdInfo">SceIoFdInfo</a></td></tr>
+<tr class="separator:structSceIoFdInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceIofileInfo" id="r_structSceIofileInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#structSceIofileInfo">SceIofileInfo</a></td></tr>
+<tr class="separator:structSceIofileInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga2561715990b2e05ef0b56237b18e5d21" id="r_ga2561715990b2e05ef0b56237b18e5d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga2561715990b2e05ef0b56237b18e5d21">SCE_S_ISLNK</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a">SCE_S_IFLNK</a>)</td></tr>
+<tr class="separator:ga2561715990b2e05ef0b56237b18e5d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67719e79d77b8d45c94e97d02548dee6" id="r_ga67719e79d77b8d45c94e97d02548dee6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga67719e79d77b8d45c94e97d02548dee6">SCE_S_ISREG</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a63554c0828aa2d899245475c75453151">SCE_S_IFREG</a>)</td></tr>
+<tr class="separator:ga67719e79d77b8d45c94e97d02548dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd2d8a2c5c3095032e1999771132e115" id="r_gadd2d8a2c5c3095032e1999771132e115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gadd2d8a2c5c3095032e1999771132e115">SCE_S_ISDIR</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a519fcfb201c967cf0a13644e5181285f">SCE_S_IFDIR</a>)</td></tr>
+<tr class="separator:gadd2d8a2c5c3095032e1999771132e115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79903d28d909b3d5b79491d9b0ac39ed" id="r_ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga79903d28d909b3d5b79491d9b0ac39ed">SCE_SO_ISLNK</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaf12a32979732f52ce573ad8540b575b">SCE_SO_IFLNK</a>)</td></tr>
+<tr class="separator:ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ed64f564b5a8bff3a5a05e2afc7204c" id="r_ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga0ed64f564b5a8bff3a5a05e2afc7204c">SCE_SO_ISREG</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c">SCE_SO_IFREG</a>)</td></tr>
+<tr class="separator:ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad6e5e897cea0e2efda29316e139f7c9" id="r_gaad6e5e897cea0e2efda29316e139f7c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaad6e5e897cea0e2efda29316e139f7c9">SCE_SO_ISDIR</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a>)</td></tr>
+<tr class="separator:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ab2de5cda3b6e533aad21afe05a8dab" id="r_ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga3ab2de5cda3b6e533aad21afe05a8dab">SCE_CST_MODE</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines for <code>sceIoChstat</code> and <code>sceIoChstatByFd</code>  <br /></td></tr>
+<tr class="separator:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee878502d4240f77073d169f35ec4ba" id="r_ga8ee878502d4240f77073d169f35ec4ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga8ee878502d4240f77073d169f35ec4ba">SCE_CST_SIZE</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="separator:ga8ee878502d4240f77073d169f35ec4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d07f7450a30ba0304df744cbfa54ed9" id="r_ga8d07f7450a30ba0304df744cbfa54ed9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga8d07f7450a30ba0304df744cbfa54ed9">SCE_CST_CT</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="separator:ga8d07f7450a30ba0304df744cbfa54ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433f965611f5901f62760ab8492db663" id="r_ga433f965611f5901f62760ab8492db663"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga433f965611f5901f62760ab8492db663">SCE_CST_AT</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="separator:ga433f965611f5901f62760ab8492db663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6fcd74ddb836b83e71785a2d2f84ca6" id="r_gad6fcd74ddb836b83e71785a2d2f84ca6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gad6fcd74ddb836b83e71785a2d2f84ca6">SCE_CST_MT</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="separator:gad6fcd74ddb836b83e71785a2d2f84ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga070acc1bf9cf932cbbea17bdbf5eb44e" id="r_ga070acc1bf9cf932cbbea17bdbf5eb44e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga070acc1bf9cf932cbbea17bdbf5eb44e">ksceIoGetGUIDFdList</a>&#160;&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#ga56660fa44c1d52936dca961ee0bfd7be">ksceIoGetGUIDFdListForDebugger</a></td></tr>
+<tr class="separator:ga070acc1bf9cf932cbbea17bdbf5eb44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7830331102d8c2be40e37a949cb077db" id="r_ga7830331102d8c2be40e37a949cb077db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga7830331102d8c2be40e37a949cb077db">ksceIoGetPUIDFdList</a>&#160;&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#ga0e5a390707a3a3e95b80236ecb53e1c9">ksceIoGetPUIDFdListForDebugger</a></td></tr>
+<tr class="separator:ga7830331102d8c2be40e37a949cb077db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga89dbb113ece9b0f49d1a3a0e047da388" id="r_ga89dbb113ece9b0f49d1a3a0e047da388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga89dbb113ece9b0f49d1a3a0e047da388">SceIoMode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a6cadd0f04c521c58f5edf07e4b28e2bf">SCE_O_RDONLY</a> = 0x0001
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a36d04899ac60f4e66d4ac084c5e48dd2">SCE_O_WRONLY</a> = 0x0002
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a562bd9fc0dd4c9a7b442bb674a50ffdb">SCE_O_RDWR</a> = (SCE_O_RDONLY | SCE_O_WRONLY)
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aee20a6bacd31ddb17b1ffde2ab465461">SCE_O_NBLOCK</a> = 0x0004
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac1d504ef73b70869dbee8d8c6312b047">SCE_O_DIROPEN</a> = 0x0008
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a5f59f9162cd283e8d67d51e734c48b3b">SCE_O_RDLOCK</a> = 0x0010
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388ac5730bd17e5bf80af4ec878b41dd702f">SCE_O_WRLOCK</a> = 0x0020
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a9cd113b1cdc656c012b72dc362b0a09c">SCE_O_APPEND</a> = 0x0100
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a7e178e5668551bc92f167f7a8a0d959d">SCE_O_CREAT</a> = 0x0200
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a47a17ef972f7a5e4a7a87e712135f572">SCE_O_TRUNC</a> = 0x0400
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a2e8bfea13df7f057fefe59c9d21fec50">SCE_O_EXCL</a> = 0x0800
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a63b1ef68d1b51146f2a245172e77f5ef">SCE_O_SCAN</a> = 0x1000
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388afd9cff75ec3e7d1413f26f11c1cf66d6">SCE_O_RCOM</a> = 0x2000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a39f4784d0b337a44df15a53504241adc">SCE_O_NOBUF</a> = 0x4000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388aa84f9036169788830a18039697c60683">SCE_O_NOWAIT</a> = 0x8000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a568ca7f3f2d0b8562c4111df3d4b23f9">SCE_O_FDEXCL</a> = 0x01000000
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a996f7a67f394662d35d07239de81b31c">SCE_O_PWLOCK</a> = 0x02000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga89dbb113ece9b0f49d1a3a0e047da388a2306156ed7cfd1e655a78b6c6db709ff">SCE_O_FGAMEDATA</a> = 0x40000000
+<br />
+ }</td></tr>
+<tr class="separator:ga89dbb113ece9b0f49d1a3a0e047da388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5733272a008ed1a31fc1d94e7c42324f" id="r_ga5733272a008ed1a31fc1d94e7c42324f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga5733272a008ed1a31fc1d94e7c42324f">SceIoSeekMode</a> { <a class="el" href="group__SceIofilemgrKernel.html#gga5733272a008ed1a31fc1d94e7c42324fad1b02bcec0f31c1c2f4a1d1314e51e03">SCE_SEEK_SET</a>
+, <a class="el" href="group__SceIofilemgrKernel.html#gga5733272a008ed1a31fc1d94e7c42324fa30207bcde2a4a48be05f1dd2365492ec">SCE_SEEK_CUR</a>
+, <a class="el" href="group__SceIofilemgrKernel.html#gga5733272a008ed1a31fc1d94e7c42324fabbdb8bcddabf0188e8ed9997fe979b38">SCE_SEEK_END</a>
+ }</td></tr>
+<tr class="separator:ga5733272a008ed1a31fc1d94e7c42324f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5effa92f8bfef1b789c40d88730b2da8" id="r_ga5effa92f8bfef1b789c40d88730b2da8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga5effa92f8bfef1b789c40d88730b2da8">SceIoDevType</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a01c02bff477ebe8c61e23e30e30cdceb">SCE_DEV_TYPE_NULL</a> = 0x00
+, <a class="el" href="group__SceIofilemgrKernel.html#gga5effa92f8bfef1b789c40d88730b2da8aad9827ed08650871fa93c92fd8587be9">SCE_DEV_TYPE_CHAR</a> = 0x01
+, <a class="el" href="group__SceIofilemgrKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a27b63f889bd52bbb26911c8df8d60420">SCE_DEV_TYPE_BLOCK</a> = 0x04
+, <a class="el" href="group__SceIofilemgrKernel.html#gga5effa92f8bfef1b789c40d88730b2da8a1fd28b67b6df4ba702c5969a8a0f94e2">SCE_DEV_TYPE_FS</a> = 0x10
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ad5899a6dd55acc1cbe7daab64701a633">SCE_DEV_TYPE_ALIAS</a> = 0x20
+, <a class="el" href="group__SceIofilemgrKernel.html#gga5effa92f8bfef1b789c40d88730b2da8ac94739615b5f6b183154ac895c162cdb">SCE_DEV_TYPE_MOUNTPT</a> = 0x40
+<br />
+ }</td></tr>
+<tr class="separator:ga5effa92f8bfef1b789c40d88730b2da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dd637f7f7eea9b13a81e4ab04cb6b16" id="r_ga4dd637f7f7eea9b13a81e4ab04cb6b16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16">SceIoAccessMode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a51bb8db57c5ddb8d0403e214e36d9672">SCE_S_IXUSR</a> = 000100
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a2961bfcb4526e512eef589bbc43d2879">SCE_S_IWUSR</a> = 000200
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a838e5f4a43532fda65f210c1779dfb94">SCE_S_IRUSR</a> = 000400
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a4f329edb2d4f0674c6ce1560427ad3ea">SCE_S_IRWXU</a> = 000700
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a4107466cdab96eede13184ade4cc22cb">SCE_S_IXGRP</a> = 000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ae12a3dec52925566a16b1e0c2c09f89e">SCE_S_IWGRP</a> = 000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a574c94f22d19ccc052b5b37ed0a99adf">SCE_S_IRGRP</a> = 000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ac6992e1aba580078eac0cdc3f833dbf2">SCE_S_IRWXG</a> = 000000
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8de8e8820049387467a88fc950de56f0">SCE_S_IXSYS</a> = 000001
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a5a91cff1be35b5f21c6143dccfe301f9">SCE_S_IWSYS</a> = 000002
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a20dadd22b2fa3aae460bc0f7afc3c9ec">SCE_S_IRSYS</a> = 000004
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16aab29dbd16f6f488f107bb5209ad3a937">SCE_S_IRWXS</a> = 000007
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab0363977a8eacc28436491cc00793d0f">SCE_S_IXOTH</a> = 000001
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a31ba143a574fa88b01036ab30a40a98e">SCE_S_IWOTH</a> = 000002
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16adca232457511588b2e080b1a5f07db42">SCE_S_IROTH</a> = 000004
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a5588dae3da746622467b6d615cac1369">SCE_S_IRWXO</a> = 000007
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a852c7e35d7080ada6cc412208859cbef">SCE_S_ISVTX</a> = 000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8a36bf536365168b12e7dd715106a12d">SCE_S_ISGID</a> = 000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16aa98ffcc8d11e1a5c0e0ee55c34b7729f">SCE_S_ISUID</a> = 000000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a519fcfb201c967cf0a13644e5181285f">SCE_S_IFDIR</a> = 0010000
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a63554c0828aa2d899245475c75453151">SCE_S_IFREG</a> = 0020000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a">SCE_S_IFLNK</a> = 0040000
+, <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a> = 0170000
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4dd637f7f7eea9b13a81e4ab04cb6b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access modes for st_mode in <a class="el" href="group__SceIofilemgrKernel.html#structSceIoStat" title="Structure to hold the status information about a file.">SceIoStat</a>.  <a href="group__SceIofilemgrKernel.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16">More...</a><br /></td></tr>
+<tr class="separator:ga4dd637f7f7eea9b13a81e4ab04cb6b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae600835f7388ec3b81bff230b14f38e7" id="r_gae600835f7388ec3b81bff230b14f38e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gae600835f7388ec3b81bff230b14f38e7">SceIoFileMode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7ae1de730fbc3b0012e320b46ef9b298f0">SCE_SO_IXOTH</a> = 0x0001
+, <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a28730a1a01684ccf264820b54ca0634d">SCE_SO_IWOTH</a> = 0x0002
+, <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaa1de8016477dacee69adcedc6efa23c">SCE_SO_IROTH</a> = 0x0004
+, <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaf12a32979732f52ce573ad8540b575b">SCE_SO_IFLNK</a> = 0x0008
+, <br />
+&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a> = 0x0010
+, <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c">SCE_SO_IFREG</a> = 0x0020
+, <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a> = 0x0038
+<br />
+ }</td></tr>
+<tr class="memdesc:gae600835f7388ec3b81bff230b14f38e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">File modes, used for the st_attr parameter in <a class="el" href="group__SceIofilemgrKernel.html#structSceIoStat" title="Structure to hold the status information about a file.">SceIoStat</a>.  <a href="group__SceIofilemgrKernel.html#gae600835f7388ec3b81bff230b14f38e7">More...</a><br /></td></tr>
+<tr class="separator:gae600835f7388ec3b81bff230b14f38e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga104d3d5b85e345b0641bcad60ee02814" id="r_ga104d3d5b85e345b0641bcad60ee02814"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga104d3d5b85e345b0641bcad60ee02814">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceIofilemgrKernel.html#structSceIoDevInfo">SceIoDevInfo</a>)</td></tr>
@@ -129,37 +253,98 @@ Functions</h2></td></tr>
 <tr class="memdesc:gafd20ef3906fc99765a6b4c28a1a4ada2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Remote Kernel Process Local Storage Data.  <br /></td></tr>
 <tr class="separator:gafd20ef3906fc99765a6b4c28a1a4ada2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga2561715990b2e05ef0b56237b18e5d21" id="r_ga2561715990b2e05ef0b56237b18e5d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga2561715990b2e05ef0b56237b18e5d21">SCE_S_ISLNK</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16ab49204215d2085826c1436c4968fd31a">SCE_S_IFLNK</a>)</td></tr>
-<tr class="separator:ga2561715990b2e05ef0b56237b18e5d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67719e79d77b8d45c94e97d02548dee6" id="r_ga67719e79d77b8d45c94e97d02548dee6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga67719e79d77b8d45c94e97d02548dee6">SCE_S_ISREG</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a63554c0828aa2d899245475c75453151">SCE_S_IFREG</a>)</td></tr>
-<tr class="separator:ga67719e79d77b8d45c94e97d02548dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd2d8a2c5c3095032e1999771132e115" id="r_gadd2d8a2c5c3095032e1999771132e115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gadd2d8a2c5c3095032e1999771132e115">SCE_S_ISDIR</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a8e20ff5079a4910380a51d0144750ff9">SCE_S_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#gga4dd637f7f7eea9b13a81e4ab04cb6b16a519fcfb201c967cf0a13644e5181285f">SCE_S_IFDIR</a>)</td></tr>
-<tr class="separator:gadd2d8a2c5c3095032e1999771132e115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79903d28d909b3d5b79491d9b0ac39ed" id="r_ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga79903d28d909b3d5b79491d9b0ac39ed">SCE_SO_ISLNK</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7aaf12a32979732f52ce573ad8540b575b">SCE_SO_IFLNK</a>)</td></tr>
-<tr class="separator:ga79903d28d909b3d5b79491d9b0ac39ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ed64f564b5a8bff3a5a05e2afc7204c" id="r_ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga0ed64f564b5a8bff3a5a05e2afc7204c">SCE_SO_ISREG</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a9c7d6bbd1bf1c5b43672488abfae6c5c">SCE_SO_IFREG</a>)</td></tr>
-<tr class="separator:ga0ed64f564b5a8bff3a5a05e2afc7204c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad6e5e897cea0e2efda29316e139f7c9" id="r_gaad6e5e897cea0e2efda29316e139f7c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaad6e5e897cea0e2efda29316e139f7c9">SCE_SO_ISDIR</a>(m)&#160;&#160;&#160;(((m) &amp; <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a4875ddec51fcea287c271dd927bacd31">SCE_SO_IFMT</a>) == <a class="el" href="group__SceIofilemgrKernel.html#ggae600835f7388ec3b81bff230b14f38e7a133736354ce338273576c9b9dbc9d828">SCE_SO_IFDIR</a>)</td></tr>
-<tr class="separator:gaad6e5e897cea0e2efda29316e139f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ab2de5cda3b6e533aad21afe05a8dab" id="r_ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga3ab2de5cda3b6e533aad21afe05a8dab">SCE_CST_MODE</a>&#160;&#160;&#160;0x0001</td></tr>
-<tr class="memdesc:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines for <code>sceIoChstat</code> and <code>sceIoChstatByFd</code>  <br /></td></tr>
-<tr class="separator:ga3ab2de5cda3b6e533aad21afe05a8dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ee878502d4240f77073d169f35ec4ba" id="r_ga8ee878502d4240f77073d169f35ec4ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga8ee878502d4240f77073d169f35ec4ba">SCE_CST_SIZE</a>&#160;&#160;&#160;0x0004</td></tr>
-<tr class="separator:ga8ee878502d4240f77073d169f35ec4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d07f7450a30ba0304df744cbfa54ed9" id="r_ga8d07f7450a30ba0304df744cbfa54ed9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga8d07f7450a30ba0304df744cbfa54ed9">SCE_CST_CT</a>&#160;&#160;&#160;0x0008</td></tr>
-<tr class="separator:ga8d07f7450a30ba0304df744cbfa54ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga433f965611f5901f62760ab8492db663" id="r_ga433f965611f5901f62760ab8492db663"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga433f965611f5901f62760ab8492db663">SCE_CST_AT</a>&#160;&#160;&#160;0x0010</td></tr>
-<tr class="separator:ga433f965611f5901f62760ab8492db663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6fcd74ddb836b83e71785a2d2f84ca6" id="r_gad6fcd74ddb836b83e71785a2d2f84ca6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gad6fcd74ddb836b83e71785a2d2f84ca6">SCE_CST_MT</a>&#160;&#160;&#160;0x0020</td></tr>
-<tr class="separator:gad6fcd74ddb836b83e71785a2d2f84ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga070acc1bf9cf932cbbea17bdbf5eb44e" id="r_ga070acc1bf9cf932cbbea17bdbf5eb44e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga070acc1bf9cf932cbbea17bdbf5eb44e">ksceIoGetGUIDFdList</a>&#160;&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#ga56660fa44c1d52936dca961ee0bfd7be">ksceIoGetGUIDFdListForDebugger</a></td></tr>
-<tr class="separator:ga070acc1bf9cf932cbbea17bdbf5eb44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7830331102d8c2be40e37a949cb077db" id="r_ga7830331102d8c2be40e37a949cb077db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga7830331102d8c2be40e37a949cb077db">ksceIoGetPUIDFdList</a>&#160;&#160;&#160;<a class="el" href="group__SceIofilemgrKernel.html#ga0e5a390707a3a3e95b80236ecb53e1c9">ksceIoGetPUIDFdListForDebugger</a></td></tr>
-<tr class="separator:ga7830331102d8c2be40e37a949cb077db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga186cfae72ffe72d61eac92d8db3521d9" id="r_ga186cfae72ffe72d61eac92d8db3521d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga186cfae72ffe72d61eac92d8db3521d9">SceIoDevInfo::max_size</a></td></tr>
+<tr class="separator:ga186cfae72ffe72d61eac92d8db3521d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad75b9b528ae43fb7c0f6de70ac305512" id="r_gad75b9b528ae43fb7c0f6de70ac305512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gad75b9b528ae43fb7c0f6de70ac305512">SceIoDevInfo::free_size</a></td></tr>
+<tr class="separator:gad75b9b528ae43fb7c0f6de70ac305512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f8a7d31dd90980c2a8c31e672b9c1d6" id="r_ga9f8a7d31dd90980c2a8c31e672b9c1d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga9f8a7d31dd90980c2a8c31e672b9c1d6">SceIoDevInfo::cluster_size</a></td></tr>
+<tr class="separator:ga9f8a7d31dd90980c2a8c31e672b9c1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd4a8af2a5b1956782ab288fad5e60fa" id="r_gabd4a8af2a5b1956782ab288fad5e60fa"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gabd4a8af2a5b1956782ab288fad5e60fa">SceIoDevInfo::unk</a></td></tr>
+<tr class="separator:gabd4a8af2a5b1956782ab288fad5e60fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga432ee7ab09142b707686e318ae5f8f83" id="r_ga432ee7ab09142b707686e318ae5f8f83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gad563fb9897e927ac60a231ba16859629">SceMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga432ee7ab09142b707686e318ae5f8f83">SceIoStat::st_mode</a></td></tr>
+<tr class="memdesc:ga432ee7ab09142b707686e318ae5f8f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">One or more <a class="el" href="group__SceIofilemgrKernel.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16" title="Access modes for st_mode in SceIoStat.">SceIoAccessMode</a>.  <br /></td></tr>
+<tr class="separator:ga432ee7ab09142b707686e318ae5f8f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf32aa0a6b11893ba19b2d369159830cb" id="r_gaf32aa0a6b11893ba19b2d369159830cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaf32aa0a6b11893ba19b2d369159830cb">SceIoStat::st_attr</a></td></tr>
+<tr class="memdesc:gaf32aa0a6b11893ba19b2d369159830cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">One or more <a class="el" href="group__SceIofilemgrKernel.html#gae600835f7388ec3b81bff230b14f38e7" title="File modes, used for the st_attr parameter in SceIoStat.">SceIoFileMode</a>.  <br /></td></tr>
+<tr class="separator:gaf32aa0a6b11893ba19b2d369159830cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67a3e4e86264a440da54204caeeafb16" id="r_ga67a3e4e86264a440da54204caeeafb16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga67a3e4e86264a440da54204caeeafb16">SceIoStat::st_size</a></td></tr>
+<tr class="memdesc:ga67a3e4e86264a440da54204caeeafb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the file in bytes.  <br /></td></tr>
+<tr class="separator:ga67a3e4e86264a440da54204caeeafb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa05df6c104b75d64411e07b73e3c92a8" id="r_gaa05df6c104b75d64411e07b73e3c92a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaa05df6c104b75d64411e07b73e3c92a8">SceIoStat::st_ctime</a></td></tr>
+<tr class="memdesc:gaa05df6c104b75d64411e07b73e3c92a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation time.  <br /></td></tr>
+<tr class="separator:gaa05df6c104b75d64411e07b73e3c92a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4fdf932210dbb1abf8b171732efe946" id="r_gaa4fdf932210dbb1abf8b171732efe946"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaa4fdf932210dbb1abf8b171732efe946">SceIoStat::st_atime</a></td></tr>
+<tr class="memdesc:gaa4fdf932210dbb1abf8b171732efe946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last access time.  <br /></td></tr>
+<tr class="separator:gaa4fdf932210dbb1abf8b171732efe946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c15df236ec4703d958ab0d8fdbd1ba3" id="r_ga3c15df236ec4703d958ab0d8fdbd1ba3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga3c15df236ec4703d958ab0d8fdbd1ba3">SceIoStat::st_mtime</a></td></tr>
+<tr class="memdesc:ga3c15df236ec4703d958ab0d8fdbd1ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last modification time.  <br /></td></tr>
+<tr class="separator:ga3c15df236ec4703d958ab0d8fdbd1ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7b69aca53d97b66ebebfa7d2c7309a8" id="r_gaf7b69aca53d97b66ebebfa7d2c7309a8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaf7b69aca53d97b66ebebfa7d2c7309a8">SceIoStat::st_private</a> [6]</td></tr>
+<tr class="memdesc:gaf7b69aca53d97b66ebebfa7d2c7309a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device-specific data.  <br /></td></tr>
+<tr class="separator:gaf7b69aca53d97b66ebebfa7d2c7309a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a4bcbbc3ff31daf29269f6edd0ef058" id="r_ga3a4bcbbc3ff31daf29269f6edd0ef058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceIofilemgrKernel.html#structSceIoStat">SceIoStat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga3a4bcbbc3ff31daf29269f6edd0ef058">SceIoDirent::d_stat</a></td></tr>
+<tr class="memdesc:ga3a4bcbbc3ff31daf29269f6edd0ef058"><td class="mdescLeft">&#160;</td><td class="mdescRight">File status.  <br /></td></tr>
+<tr class="separator:ga3a4bcbbc3ff31daf29269f6edd0ef058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26afa621714ed02e988a758c8e69496a" id="r_ga26afa621714ed02e988a758c8e69496a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga26afa621714ed02e988a758c8e69496a">SceIoDirent::d_name</a> [256]</td></tr>
+<tr class="memdesc:ga26afa621714ed02e988a758c8e69496a"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name.  <br /></td></tr>
+<tr class="separator:ga26afa621714ed02e988a758c8e69496a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a5a0bd642cc54433fbeca9ce1d10682" id="r_ga3a5a0bd642cc54433fbeca9ce1d10682"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga3a5a0bd642cc54433fbeca9ce1d10682">SceIoDirent::d_private</a></td></tr>
+<tr class="memdesc:ga3a5a0bd642cc54433fbeca9ce1d10682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device-specific data.  <br /></td></tr>
+<tr class="separator:ga3a5a0bd642cc54433fbeca9ce1d10682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2a6943eda6b27d5c20d6389ad9ab680" id="r_gac2a6943eda6b27d5c20d6389ad9ab680"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gac2a6943eda6b27d5c20d6389ad9ab680">SceIoDirent::dummy</a></td></tr>
+<tr class="memdesc:gac2a6943eda6b27d5c20d6389ad9ab680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy data.  <br /></td></tr>
+<tr class="separator:gac2a6943eda6b27d5c20d6389ad9ab680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga731737916f516f0541b9ad2a7c516140" id="r_ga731737916f516f0541b9ad2a7c516140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga731737916f516f0541b9ad2a7c516140">SceIoFdInfo::fd</a></td></tr>
+<tr class="separator:ga731737916f516f0541b9ad2a7c516140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09466d8d5240c2ff2f45042c078b68a2" id="r_ga09466d8d5240c2ff2f45042c078b68a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga09466d8d5240c2ff2f45042c078b68a2">SceIoFdInfo::pid</a></td></tr>
+<tr class="separator:ga09466d8d5240c2ff2f45042c078b68a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ab593ba172ec467c6a97c07baa5b568" id="r_ga9ab593ba172ec467c6a97c07baa5b568"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga9ab593ba172ec467c6a97c07baa5b568">SceIofileInfo::path</a> [0x400]</td></tr>
+<tr class="separator:ga9ab593ba172ec467c6a97c07baa5b568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67df3fc7410ea31a08442a88d6587a7a" id="r_ga67df3fc7410ea31a08442a88d6587a7a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga67df3fc7410ea31a08442a88d6587a7a">SceIofileInfo::path2</a> [0x400]</td></tr>
+<tr class="separator:ga67df3fc7410ea31a08442a88d6587a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58be55beb81c687ab2a69970c3859054" id="r_ga58be55beb81c687ab2a69970c3859054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga58be55beb81c687ab2a69970c3859054">SceIofileInfo::pid</a></td></tr>
+<tr class="separator:ga58be55beb81c687ab2a69970c3859054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19f9825911f2bbcf97a178cf2366ec81" id="r_ga19f9825911f2bbcf97a178cf2366ec81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga19f9825911f2bbcf97a178cf2366ec81">SceIofileInfo::data_0x804</a></td></tr>
+<tr class="separator:ga19f9825911f2bbcf97a178cf2366ec81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0b41e325ee8917ccea386117b0e5be6" id="r_gaa0b41e325ee8917ccea386117b0e5be6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaa0b41e325ee8917ccea386117b0e5be6">SceIofileInfo::data_0x808</a></td></tr>
+<tr class="separator:gaa0b41e325ee8917ccea386117b0e5be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga375f3da6fd2fca1e1e3e1b923490dc86" id="r_ga375f3da6fd2fca1e1e3e1b923490dc86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga375f3da6fd2fca1e1e3e1b923490dc86">SceIofileInfo::data_0x80C</a></td></tr>
+<tr class="separator:ga375f3da6fd2fca1e1e3e1b923490dc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9cb23e6500ee40ffd1547e11cbd3325" id="r_gac9cb23e6500ee40ffd1547e11cbd3325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gac9cb23e6500ee40ffd1547e11cbd3325">SceIofileInfo::data_0x810</a></td></tr>
+<tr class="separator:gac9cb23e6500ee40ffd1547e11cbd3325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa393acdc4987953289a8e9b88bffdaea" id="r_gaa393acdc4987953289a8e9b88bffdaea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaa393acdc4987953289a8e9b88bffdaea">SceIofileInfo::data_0x814</a></td></tr>
+<tr class="separator:gaa393acdc4987953289a8e9b88bffdaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6990184c749e2984702309d5b221909d" id="r_ga6990184c749e2984702309d5b221909d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga6990184c749e2984702309d5b221909d">SceIofileInfo::data_0x818</a></td></tr>
+<tr class="separator:ga6990184c749e2984702309d5b221909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga326d7572a731116366d3443f58e9c45f" id="r_ga326d7572a731116366d3443f58e9c45f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#ga326d7572a731116366d3443f58e9c45f">SceIofileInfo::data_0x81C</a></td></tr>
+<tr class="separator:ga326d7572a731116366d3443f58e9c45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac46e56aee0f9078509e851aacca550a0" id="r_gac46e56aee0f9078509e851aacca550a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gac46e56aee0f9078509e851aacca550a0">SceIofileInfo::data_0x820</a></td></tr>
+<tr class="separator:gac46e56aee0f9078509e851aacca550a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa96113341b2952edfd7665b06cbb5cf9" id="r_gaa96113341b2952edfd7665b06cbb5cf9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIofilemgrKernel.html#gaa96113341b2952edfd7665b06cbb5cf9">SceIofileInfo::data_0x824</a></td></tr>
+<tr class="separator:gaa96113341b2952edfd7665b06cbb5cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2kernel_2iofilemgr_8h.html">psp2common/kernel/iofilemgr.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2kernel_2iofilemgr_8h_html"><div class="ttname"><a href="psp2common_2kernel_2iofilemgr_8h.html">iofilemgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2kernel_2iofilemgr_8h.html">psp2kern/kernel/iofilemgr.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2kernel_2iofilemgr_8h_html"><div class="ttname"><a href="psp2kern_2kernel_2iofilemgr_8h.html">iofilemgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceIofilemgrForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceIoDevInfo" id="structSceIoDevInfo"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceIoDevInfo">&#9670;&#160;</a></span>SceIoDevInfo</h2>
 
@@ -1273,6 +1458,435 @@ data_0x824</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga186cfae72ffe72d61eac92d8db3521d9" name="ga186cfae72ffe72d61eac92d8db3521d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186cfae72ffe72d61eac92d8db3521d9">&#9670;&#160;</a></span>max_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a> SceIoDevInfo::max_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad75b9b528ae43fb7c0f6de70ac305512" name="gad75b9b528ae43fb7c0f6de70ac305512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad75b9b528ae43fb7c0f6de70ac305512">&#9670;&#160;</a></span>free_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a> SceIoDevInfo::free_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9f8a7d31dd90980c2a8c31e672b9c1d6" name="ga9f8a7d31dd90980c2a8c31e672b9c1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f8a7d31dd90980c2a8c31e672b9c1d6">&#9670;&#160;</a></span>cluster_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceIoDevInfo::cluster_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabd4a8af2a5b1956782ab288fad5e60fa" name="gabd4a8af2a5b1956782ab288fad5e60fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd4a8af2a5b1956782ab288fad5e60fa">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceIoDevInfo::unk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga432ee7ab09142b707686e318ae5f8f83" name="ga432ee7ab09142b707686e318ae5f8f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga432ee7ab09142b707686e318ae5f8f83">&#9670;&#160;</a></span>st_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gad563fb9897e927ac60a231ba16859629">SceMode</a> SceIoStat::st_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One or more <a class="el" href="group__SceIofilemgrKernel.html#ga4dd637f7f7eea9b13a81e4ab04cb6b16" title="Access modes for st_mode in SceIoStat.">SceIoAccessMode</a>. </p>
+
+</div>
+</div>
+<a id="gaf32aa0a6b11893ba19b2d369159830cb" name="gaf32aa0a6b11893ba19b2d369159830cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf32aa0a6b11893ba19b2d369159830cb">&#9670;&#160;</a></span>st_attr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIoStat::st_attr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One or more <a class="el" href="group__SceIofilemgrKernel.html#gae600835f7388ec3b81bff230b14f38e7" title="File modes, used for the st_attr parameter in SceIoStat.">SceIoFileMode</a>. </p>
+
+</div>
+</div>
+<a id="ga67a3e4e86264a440da54204caeeafb16" name="ga67a3e4e86264a440da54204caeeafb16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67a3e4e86264a440da54204caeeafb16">&#9670;&#160;</a></span>st_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gac20a0c334ac3c41e9a7b295e31f6b111">SceOff</a> SceIoStat::st_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of the file in bytes. </p>
+
+</div>
+</div>
+<a id="gaa05df6c104b75d64411e07b73e3c92a8" name="gaa05df6c104b75d64411e07b73e3c92a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa05df6c104b75d64411e07b73e3c92a8">&#9670;&#160;</a></span>st_ctime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> SceIoStat::st_ctime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creation time. </p>
+
+</div>
+</div>
+<a id="gaa4fdf932210dbb1abf8b171732efe946" name="gaa4fdf932210dbb1abf8b171732efe946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4fdf932210dbb1abf8b171732efe946">&#9670;&#160;</a></span>st_atime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> SceIoStat::st_atime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last access time. </p>
+
+</div>
+</div>
+<a id="ga3c15df236ec4703d958ab0d8fdbd1ba3" name="ga3c15df236ec4703d958ab0d8fdbd1ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c15df236ec4703d958ab0d8fdbd1ba3">&#9670;&#160;</a></span>st_mtime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> SceIoStat::st_mtime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last modification time. </p>
+
+</div>
+</div>
+<a id="gaf7b69aca53d97b66ebebfa7d2c7309a8" name="gaf7b69aca53d97b66ebebfa7d2c7309a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7b69aca53d97b66ebebfa7d2c7309a8">&#9670;&#160;</a></span>st_private</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceIoStat::st_private[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device-specific data. </p>
+
+</div>
+</div>
+<a id="ga3a4bcbbc3ff31daf29269f6edd0ef058" name="ga3a4bcbbc3ff31daf29269f6edd0ef058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a4bcbbc3ff31daf29269f6edd0ef058">&#9670;&#160;</a></span>d_stat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceIofilemgrKernel.html#structSceIoStat">SceIoStat</a> SceIoDirent::d_stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File status. </p>
+
+</div>
+</div>
+<a id="ga26afa621714ed02e988a758c8e69496a" name="ga26afa621714ed02e988a758c8e69496a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26afa621714ed02e988a758c8e69496a">&#9670;&#160;</a></span>d_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceIoDirent::d_name[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File name. </p>
+
+</div>
+</div>
+<a id="ga3a5a0bd642cc54433fbeca9ce1d10682" name="ga3a5a0bd642cc54433fbeca9ce1d10682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a5a0bd642cc54433fbeca9ce1d10682">&#9670;&#160;</a></span>d_private</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceIoDirent::d_private</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device-specific data. </p>
+
+</div>
+</div>
+<a id="gac2a6943eda6b27d5c20d6389ad9ab680" name="gac2a6943eda6b27d5c20d6389ad9ab680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2a6943eda6b27d5c20d6389ad9ab680">&#9670;&#160;</a></span>dummy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIoDirent::dummy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dummy data. </p>
+
+</div>
+</div>
+<a id="ga731737916f516f0541b9ad2a7c516140" name="ga731737916f516f0541b9ad2a7c516140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga731737916f516f0541b9ad2a7c516140">&#9670;&#160;</a></span>fd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceIoFdInfo::fd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga09466d8d5240c2ff2f45042c078b68a2" name="ga09466d8d5240c2ff2f45042c078b68a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09466d8d5240c2ff2f45042c078b68a2">&#9670;&#160;</a></span>pid <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceIoFdInfo::pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9ab593ba172ec467c6a97c07baa5b568" name="ga9ab593ba172ec467c6a97c07baa5b568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ab593ba172ec467c6a97c07baa5b568">&#9670;&#160;</a></span>path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceIofileInfo::path[0x400]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga67df3fc7410ea31a08442a88d6587a7a" name="ga67df3fc7410ea31a08442a88d6587a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67df3fc7410ea31a08442a88d6587a7a">&#9670;&#160;</a></span>path2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SceIofileInfo::path2[0x400]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga58be55beb81c687ab2a69970c3859054" name="ga58be55beb81c687ab2a69970c3859054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58be55beb81c687ab2a69970c3859054">&#9670;&#160;</a></span>pid <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceIofileInfo::pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga19f9825911f2bbcf97a178cf2366ec81" name="ga19f9825911f2bbcf97a178cf2366ec81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19f9825911f2bbcf97a178cf2366ec81">&#9670;&#160;</a></span>data_0x804</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x804</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa0b41e325ee8917ccea386117b0e5be6" name="gaa0b41e325ee8917ccea386117b0e5be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0b41e325ee8917ccea386117b0e5be6">&#9670;&#160;</a></span>data_0x808</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x808</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga375f3da6fd2fca1e1e3e1b923490dc86" name="ga375f3da6fd2fca1e1e3e1b923490dc86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga375f3da6fd2fca1e1e3e1b923490dc86">&#9670;&#160;</a></span>data_0x80C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x80C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac9cb23e6500ee40ffd1547e11cbd3325" name="gac9cb23e6500ee40ffd1547e11cbd3325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9cb23e6500ee40ffd1547e11cbd3325">&#9670;&#160;</a></span>data_0x810</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x810</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa393acdc4987953289a8e9b88bffdaea" name="gaa393acdc4987953289a8e9b88bffdaea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa393acdc4987953289a8e9b88bffdaea">&#9670;&#160;</a></span>data_0x814</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x814</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6990184c749e2984702309d5b221909d" name="ga6990184c749e2984702309d5b221909d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6990184c749e2984702309d5b221909d">&#9670;&#160;</a></span>data_0x818</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x818</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga326d7572a731116366d3443f58e9c45f" name="ga326d7572a731116366d3443f58e9c45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga326d7572a731116366d3443f58e9c45f">&#9670;&#160;</a></span>data_0x81C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x81C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac46e56aee0f9078509e851aacca550a0" name="gac46e56aee0f9078509e851aacca550a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac46e56aee0f9078509e851aacca550a0">&#9670;&#160;</a></span>data_0x820</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x820</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa96113341b2952edfd7665b06cbb5cf9" name="gaa96113341b2952edfd7665b06cbb5cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa96113341b2952edfd7665b06cbb5cf9">&#9670;&#160;</a></span>data_0x824</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceIofileInfo::data_0x824</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

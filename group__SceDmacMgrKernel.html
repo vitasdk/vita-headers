@@ -74,29 +74,78 @@ $(document).ready(function(){initNavTree('group__SceDmacMgrKernel.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#func-members">Functions</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__kernel.html">Kernel</a> &raquo; <a class="el" href="group__SceDmacMgr.html">Direct Memory Access Controller</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2dmac_8h.html">psp2kern/kernel/dmac.h</a>&gt;</span> </div>
-<div class="ttc" id="aern_2kernel_2dmac_8h_html"><div class="ttname"><a href="ern_2kernel_2dmac_8h.html">dmac.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceDmacmgrForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for Kernel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
 <tr class="memitem:group__DmacRegisterFields" id="r_group__DmacRegisterFields"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DmacRegisterFields.html">DMAC Register Fields</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceKernelDmaOpTag" id="r_structSceKernelDmaOpTag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a></td></tr>
+<tr class="separator:structSceKernelDmaOpTag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelDmaOpEncDec" id="r_structSceKernelDmaOpEncDec"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpEncDec">SceKernelDmaOpEncDec</a></td></tr>
+<tr class="separator:structSceKernelDmaOpEncDec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelDmaOpChainParam" id="r_structSceKernelDmaOpChainParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpChainParam">SceKernelDmaOpChainParam</a></td></tr>
+<tr class="separator:structSceKernelDmaOpChainParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelDmaOpEncDecChainParam" id="r_structSceKernelDmaOpEncDecChainParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpEncDecChainParam">SceKernelDmaOpEncDecChainParam</a></td></tr>
+<tr class="separator:structSceKernelDmaOpEncDecChainParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelDmaOpDirectParam" id="r_structSceKernelDmaOpDirectParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpDirectParam">SceKernelDmaOpDirectParam</a></td></tr>
+<tr class="separator:structSceKernelDmaOpDirectParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gad686d9b1cfe4f8bfcc7bf350816cefac" id="r_gad686d9b1cfe4f8bfcc7bf350816cefac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gad686d9b1cfe4f8bfcc7bf350816cefac">SCE_KERNEL_DMAC_CHAIN_END</a>&#160;&#160;&#160;((<a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a> *)0xFFFFFFFF)</td></tr>
+<tr class="memdesc:gad686d9b1cfe4f8bfcc7bf350816cefac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signifies the end of the DMA tag chain.  <br /></td></tr>
+<tr class="separator:gad686d9b1cfe4f8bfcc7bf350816cefac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gae8c3d2ee8370107ff96c921a9b1f1ffb" id="r_gae8c3d2ee8370107ff96c921a9b1f1ffb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gae8c3d2ee8370107ff96c921a9b1f1ffb">SceKernelDmaOpId</a></td></tr>
+<tr class="separator:gae8c3d2ee8370107ff96c921a9b1f1ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcb30dc30eadbf82fb12b4622f1ecc50" id="r_gadcb30dc30eadbf82fb12b4622f1ecc50"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gadcb30dc30eadbf82fb12b4622f1ecc50">SceKernelDmaOpCallback</a>) (<a class="el" href="group__SceDmacMgrKernel.html#gae8c3d2ee8370107ff96c921a9b1f1ffb">SceKernelDmaOpId</a> opid, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> stat, void *pUserData, <a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a> *pTag)</td></tr>
+<tr class="separator:gadcb30dc30eadbf82fb12b4622f1ecc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga457d91a5ae57e193a60386399ccb948e" id="r_ga457d91a5ae57e193a60386399ccb948e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga457d91a5ae57e193a60386399ccb948e">SceKernelDmacId</a> { <br />
+&#160;&#160;<a class="el" href="group__SceDmacMgrKernel.html#gga457d91a5ae57e193a60386399ccb948eaf9283041237db968925dc190a0c2f10f">SCE_KERNEL_DMAC_ID_DMAC01</a> = 0x10
+, <a class="el" href="group__SceDmacMgrKernel.html#gga457d91a5ae57e193a60386399ccb948eaf8a5ae416e953cf2266a76957a31ec2e">SCE_KERNEL_DMAC_ID_DMAC23</a> = 0x11
+, <a class="el" href="group__SceDmacMgrKernel.html#gga457d91a5ae57e193a60386399ccb948ea8e25dd7c955e4b9c736a01a79f1d94e4">SCE_KERNEL_DMAC_ID_DMAC4</a> = 0x12
+, <a class="el" href="group__SceDmacMgrKernel.html#gga457d91a5ae57e193a60386399ccb948eafd7cf10ee0ffe90b71618683142d2cc3">SCE_KERNEL_DMAC_ID_DMAC5</a> = 0x13
+, <br />
+&#160;&#160;<a class="el" href="group__SceDmacMgrKernel.html#gga457d91a5ae57e193a60386399ccb948eaf6326679b58f2baed591078851dbfa50">SCE_KERNEL_DMAC_ID_DMAC6</a> = 0x14
+<br />
+ }</td></tr>
+<tr class="separator:ga457d91a5ae57e193a60386399ccb948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15b85ecf062d255c279c2da46c5204f9" id="r_ga15b85ecf062d255c279c2da46c5204f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga15b85ecf062d255c279c2da46c5204f9">SceKernelDmaOpFlag</a> { <br />
+&#160;&#160;<a class="el" href="group__SceDmacMgrKernel.html#gga15b85ecf062d255c279c2da46c5204f9a6118d1a0a8027ab8df84e0b1a2f274d9">SCE_KERNEL_DMA_OP_PHYSICAL_ADDR</a> = 0x000
+, <a class="el" href="group__SceDmacMgrKernel.html#gga15b85ecf062d255c279c2da46c5204f9a7831b72c527b8c65d4efd1c1ebc33cc3">SCE_KERNEL_DMA_OP_VIRTUAL_SRC_ADDR</a> = 0x001
+, <a class="el" href="group__SceDmacMgrKernel.html#gga15b85ecf062d255c279c2da46c5204f9adfe79b481259bb9464867689b0150270">SCE_KERNEL_DMA_OP_VIRTUAL_DST_ADDR</a> = 0x010
+, <a class="el" href="group__SceDmacMgrKernel.html#gga15b85ecf062d255c279c2da46c5204f9aac05b5c8a9cb3e6c3162aff6ecae115c">SCE_KERNEL_DMA_OP_VIRTUAL_ADDR</a> = 0x011
+, <br />
+&#160;&#160;<a class="el" href="group__SceDmacMgrKernel.html#gga15b85ecf062d255c279c2da46c5204f9a47edc16b618af7c889c67d84bc533f09">SCE_KERNEL_DMA_OP_COMPLETE_CHAIN</a> = 0x100
+<br />
+ }</td></tr>
+<tr class="separator:ga15b85ecf062d255c279c2da46c5204f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50bbaf8fa0693076a489b144cf1aa4c0" id="r_ga50bbaf8fa0693076a489b144cf1aa4c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga50bbaf8fa0693076a489b144cf1aa4c0">SceKernelDmaOpSyncMode</a> { <a class="el" href="group__SceDmacMgrKernel.html#gga50bbaf8fa0693076a489b144cf1aa4c0ae60ee57b49395d9916785ae34b0062cf">SCE_KERNEL_DMA_OP_SYNC_POLL</a> = 0x1
+, <a class="el" href="group__SceDmacMgrKernel.html#gga50bbaf8fa0693076a489b144cf1aa4c0aac6ae2b932f472ff5d3aaa9349988ca1">SCE_KERNEL_DMA_OP_SYNC_WAIT</a> = 0x2
+, <a class="el" href="group__SceDmacMgrKernel.html#gga50bbaf8fa0693076a489b144cf1aa4c0aa079ec4ca17089ef3ebc7cb390a8177a">SCE_KERNEL_DMA_OP_SYNC_TIMED_WAIT</a> = 0x3
+ }</td></tr>
+<tr class="separator:ga50bbaf8fa0693076a489b144cf1aa4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -146,18 +195,68 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga6406a7dc4ac35a5872bb8a0fa3a0e622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback for the completion of the DMA Op.  <br /></td></tr>
 <tr class="separator:ga6406a7dc4ac35a5872bb8a0fa3a0e622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gae8c3d2ee8370107ff96c921a9b1f1ffb" id="r_gae8c3d2ee8370107ff96c921a9b1f1ffb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gae8c3d2ee8370107ff96c921a9b1f1ffb">SceKernelDmaOpId</a></td></tr>
-<tr class="separator:gae8c3d2ee8370107ff96c921a9b1f1ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcb30dc30eadbf82fb12b4622f1ecc50" id="r_gadcb30dc30eadbf82fb12b4622f1ecc50"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gadcb30dc30eadbf82fb12b4622f1ecc50">SceKernelDmaOpCallback</a>) (<a class="el" href="group__SceDmacMgrKernel.html#gae8c3d2ee8370107ff96c921a9b1f1ffb">SceKernelDmaOpId</a> opid, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> stat, void *pUserData, <a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a> *pTag)</td></tr>
-<tr class="separator:gadcb30dc30eadbf82fb12b4622f1ecc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gad686d9b1cfe4f8bfcc7bf350816cefac" id="r_gad686d9b1cfe4f8bfcc7bf350816cefac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gad686d9b1cfe4f8bfcc7bf350816cefac">SCE_KERNEL_DMAC_CHAIN_END</a>&#160;&#160;&#160;((<a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a> *)0xFFFFFFFF)</td></tr>
-<tr class="memdesc:gad686d9b1cfe4f8bfcc7bf350816cefac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signifies the end of the DMA tag chain.  <br /></td></tr>
-<tr class="separator:gad686d9b1cfe4f8bfcc7bf350816cefac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gae5b5a70a312c25e69ae8929ce91c1c37" id="r_gae5b5a70a312c25e69ae8929ce91c1c37"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gae5b5a70a312c25e69ae8929ce91c1c37">SceKernelDmaOpTag::src</a></td></tr>
+<tr class="separator:gae5b5a70a312c25e69ae8929ce91c1c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4ad192953810c14364437c257b788a2" id="r_gab4ad192953810c14364437c257b788a2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gab4ad192953810c14364437c257b788a2">SceKernelDmaOpTag::dst</a></td></tr>
+<tr class="separator:gab4ad192953810c14364437c257b788a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacaaf4b1dfaa0d98a9cb3467efc307da0" id="r_gacaaf4b1dfaa0d98a9cb3467efc307da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gacaaf4b1dfaa0d98a9cb3467efc307da0">SceKernelDmaOpTag::len</a></td></tr>
+<tr class="separator:gacaaf4b1dfaa0d98a9cb3467efc307da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04938c02347546d0cb5fa38e28e15a30" id="r_ga04938c02347546d0cb5fa38e28e15a30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga04938c02347546d0cb5fa38e28e15a30">SceKernelDmaOpTag::cmd</a></td></tr>
+<tr class="memdesc:ga04938c02347546d0cb5fa38e28e15a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise combination of SCE_KERNEL_DMAC_CMD_* fields.  <br /></td></tr>
+<tr class="separator:ga04938c02347546d0cb5fa38e28e15a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga081012a91375b4994bfd37416918a5f0" id="r_ga081012a91375b4994bfd37416918a5f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga081012a91375b4994bfd37416918a5f0">SceKernelDmaOpTag::keyring</a></td></tr>
+<tr class="separator:ga081012a91375b4994bfd37416918a5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e1e51e2e5b9b3451512f3a90c7480ab" id="r_ga8e1e51e2e5b9b3451512f3a90c7480ab"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga8e1e51e2e5b9b3451512f3a90c7480ab">SceKernelDmaOpTag::iv</a></td></tr>
+<tr class="memdesc:ga8e1e51e2e5b9b3451512f3a90c7480ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be a physical address.  <br /></td></tr>
+<tr class="separator:ga8e1e51e2e5b9b3451512f3a90c7480ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4caa5c0e85d4401a3be1aa6f7ec16a9d" id="r_ga4caa5c0e85d4401a3be1aa6f7ec16a9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga4caa5c0e85d4401a3be1aa6f7ec16a9d">SceKernelDmaOpTag::blockSize</a></td></tr>
+<tr class="separator:ga4caa5c0e85d4401a3be1aa6f7ec16a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga847e53ef8c5f4bddd0b931368d9990ae" id="r_ga847e53ef8c5f4bddd0b931368d9990ae"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga847e53ef8c5f4bddd0b931368d9990ae">SceKernelDmaOpTag::pNext</a></td></tr>
+<tr class="memdesc:ga847e53ef8c5f4bddd0b931368d9990ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to SCE_KERNEL_DMAC_CHAIN_END to signify the last tag.  <br /></td></tr>
+<tr class="separator:ga847e53ef8c5f4bddd0b931368d9990ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ff8085d6c17eb702f62002352d2ed70" id="r_ga8ff8085d6c17eb702f62002352d2ed70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga8ff8085d6c17eb702f62002352d2ed70">SceKernelDmaOpEncDec::keyring</a></td></tr>
+<tr class="separator:ga8ff8085d6c17eb702f62002352d2ed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga439c869e888fda2be34e5488a6b074dc" id="r_ga439c869e888fda2be34e5488a6b074dc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga439c869e888fda2be34e5488a6b074dc">SceKernelDmaOpEncDec::iv</a></td></tr>
+<tr class="memdesc:ga439c869e888fda2be34e5488a6b074dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be a physical address.  <br /></td></tr>
+<tr class="separator:ga439c869e888fda2be34e5488a6b074dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e067b7b40be4cf718450f3e051c3b8c" id="r_ga0e067b7b40be4cf718450f3e051c3b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga0e067b7b40be4cf718450f3e051c3b8c">SceKernelDmaOpEncDec::ivCoherencyMask</a></td></tr>
+<tr class="separator:ga0e067b7b40be4cf718450f3e051c3b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d726218a3057f56d94dc2e9629413e8" id="r_ga9d726218a3057f56d94dc2e9629413e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga9d726218a3057f56d94dc2e9629413e8">SceKernelDmaOpEncDec::reserved</a></td></tr>
+<tr class="separator:ga9d726218a3057f56d94dc2e9629413e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac96e70839699942693abcd5c0f8e8d3a" id="r_gac96e70839699942693abcd5c0f8e8d3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gac96e70839699942693abcd5c0f8e8d3a">SceKernelDmaOpEncDec::key</a> [0x40]</td></tr>
+<tr class="separator:gac96e70839699942693abcd5c0f8e8d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4003f8b8b93a8480ffa034ab0b85ac1" id="r_gab4003f8b8b93a8480ffa034ab0b85ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gab4003f8b8b93a8480ffa034ab0b85ac1">SceKernelDmaOpChainParam::size</a></td></tr>
+<tr class="separator:gab4003f8b8b93a8480ffa034ab0b85ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a35a5445449898a4edc3cdc55808749" id="r_ga2a35a5445449898a4edc3cdc55808749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga2a35a5445449898a4edc3cdc55808749">SceKernelDmaOpChainParam::coherencyMask</a></td></tr>
+<tr class="separator:ga2a35a5445449898a4edc3cdc55808749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga687579644caddfa96105c866fbba9da2" id="r_ga687579644caddfa96105c866fbba9da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga687579644caddfa96105c866fbba9da2">SceKernelDmaOpChainParam::setValue</a></td></tr>
+<tr class="memdesc:ga687579644caddfa96105c866fbba9da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">8-bit value duplicated into 32 bits  <br /></td></tr>
+<tr class="separator:ga687579644caddfa96105c866fbba9da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ed746231d5de786ac63126c2a07b4ce" id="r_ga8ed746231d5de786ac63126c2a07b4ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpChainParam">SceKernelDmaOpChainParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga8ed746231d5de786ac63126c2a07b4ce">SceKernelDmaOpEncDecChainParam::header</a></td></tr>
+<tr class="memdesc:ga8ed746231d5de786ac63126c2a07b4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">header.size = sizeof(SceKernelDmaOpEncDecChainParam)  <br /></td></tr>
+<tr class="separator:ga8ed746231d5de786ac63126c2a07b4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8b173cabfcd8ca4a1e9f8fe2c56eeb6" id="r_gad8b173cabfcd8ca4a1e9f8fe2c56eeb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpEncDec">SceKernelDmaOpEncDec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gad8b173cabfcd8ca4a1e9f8fe2c56eeb6">SceKernelDmaOpEncDecChainParam::encDec</a></td></tr>
+<tr class="separator:gad8b173cabfcd8ca4a1e9f8fe2c56eeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3a40f0cbfb2456eeb46bbdcbec55f4b" id="r_gae3a40f0cbfb2456eeb46bbdcbec55f4b"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gae3a40f0cbfb2456eeb46bbdcbec55f4b">SceKernelDmaOpDirectParam::src</a></td></tr>
+<tr class="separator:gae3a40f0cbfb2456eeb46bbdcbec55f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8fe6d7f73fe32cc960c0594e5c9a78c" id="r_gaf8fe6d7f73fe32cc960c0594e5c9a78c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gaf8fe6d7f73fe32cc960c0594e5c9a78c">SceKernelDmaOpDirectParam::dst</a></td></tr>
+<tr class="separator:gaf8fe6d7f73fe32cc960c0594e5c9a78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55c2f1a11798afe10c9cfac0a7805eb3" id="r_ga55c2f1a11798afe10c9cfac0a7805eb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga55c2f1a11798afe10c9cfac0a7805eb3">SceKernelDmaOpDirectParam::len</a></td></tr>
+<tr class="separator:ga55c2f1a11798afe10c9cfac0a7805eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa149f45e269004efb9442061cde36d85" id="r_gaa149f45e269004efb9442061cde36d85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gaa149f45e269004efb9442061cde36d85">SceKernelDmaOpDirectParam::cmd</a></td></tr>
+<tr class="memdesc:gaa149f45e269004efb9442061cde36d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise combination of SCE_KERNEL_DMAC_CMD_* fields.  <br /></td></tr>
+<tr class="separator:gaa149f45e269004efb9442061cde36d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b14c54d74726cb5d7a6201f8fbad35c" id="r_ga4b14c54d74726cb5d7a6201f8fbad35c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga4b14c54d74726cb5d7a6201f8fbad35c">SceKernelDmaOpDirectParam::blockSize</a></td></tr>
+<tr class="separator:ga4b14c54d74726cb5d7a6201f8fbad35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga288fc244bfb58605b011e6a5d40fdf3b" id="r_ga288fc244bfb58605b011e6a5d40fdf3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga288fc244bfb58605b011e6a5d40fdf3b">SceKernelDmaOpDirectParam::coherencyMask</a></td></tr>
+<tr class="separator:ga288fc244bfb58605b011e6a5d40fdf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00d31df3a7490297a92f019cbb76a499" id="r_ga00d31df3a7490297a92f019cbb76a499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga00d31df3a7490297a92f019cbb76a499">SceKernelDmaOpDirectParam::setValue</a></td></tr>
+<tr class="memdesc:ga00d31df3a7490297a92f019cbb76a499"><td class="mdescLeft">&#160;</td><td class="mdescRight">8-bit value duplicated into 32 bits  <br /></td></tr>
+<tr class="separator:ga00d31df3a7490297a92f019cbb76a499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga797f90b994b21f48435a086f6aebe6b3" id="r_ga797f90b994b21f48435a086f6aebe6b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpEncDec">SceKernelDmaOpEncDec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#ga797f90b994b21f48435a086f6aebe6b3">SceKernelDmaOpDirectParam::encDec</a></td></tr>
+<tr class="separator:ga797f90b994b21f48435a086f6aebe6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Generic DMA Functions</h2></td></tr>
 <tr class="memitem:gadb732da08050e8ccc4d107eec78661ea" id="r_gadb732da08050e8ccc4d107eec78661ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDmacMgrKernel.html#gadb732da08050e8ccc4d107eec78661ea">ksceDmacMemcpy</a> (void *dst, const void *src, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
@@ -167,7 +266,19 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga6874fc86548f4c7b481b7a298325263f"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA memset.  <br /></td></tr>
 <tr class="separator:ga6874fc86548f4c7b481b7a298325263f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ern_2kernel_2dmac_8h.html">psp2kern/kernel/dmac.h</a>&gt;</span> </div>
+<div class="ttc" id="aern_2kernel_2dmac_8h_html"><div class="ttname"><a href="ern_2kernel_2dmac_8h.html">dmac.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceDmacmgrForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceKernelDmaOpTag" id="structSceKernelDmaOpTag"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceKernelDmaOpTag">&#9670;&#160;</a></span>SceKernelDmaOpTag</h2>
 
@@ -1205,6 +1316,387 @@ encDec</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gae5b5a70a312c25e69ae8929ce91c1c37" name="gae5b5a70a312c25e69ae8929ce91c1c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5b5a70a312c25e69ae8929ce91c1c37">&#9670;&#160;</a></span>src <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* SceKernelDmaOpTag::src</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab4ad192953810c14364437c257b788a2" name="gab4ad192953810c14364437c257b788a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4ad192953810c14364437c257b788a2">&#9670;&#160;</a></span>dst <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceKernelDmaOpTag::dst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacaaf4b1dfaa0d98a9cb3467efc307da0" name="gacaaf4b1dfaa0d98a9cb3467efc307da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacaaf4b1dfaa0d98a9cb3467efc307da0">&#9670;&#160;</a></span>len <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpTag::len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga04938c02347546d0cb5fa38e28e15a30" name="ga04938c02347546d0cb5fa38e28e15a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04938c02347546d0cb5fa38e28e15a30">&#9670;&#160;</a></span>cmd <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpTag::cmd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bitwise combination of SCE_KERNEL_DMAC_CMD_* fields. </p>
+
+</div>
+</div>
+<a id="ga081012a91375b4994bfd37416918a5f0" name="ga081012a91375b4994bfd37416918a5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga081012a91375b4994bfd37416918a5f0">&#9670;&#160;</a></span>keyring <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpTag::keyring</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8e1e51e2e5b9b3451512f3a90c7480ab" name="ga8e1e51e2e5b9b3451512f3a90c7480ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e1e51e2e5b9b3451512f3a90c7480ab">&#9670;&#160;</a></span>iv <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceKernelDmaOpTag::iv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be a physical address. </p>
+
+</div>
+</div>
+<a id="ga4caa5c0e85d4401a3be1aa6f7ec16a9d" name="ga4caa5c0e85d4401a3be1aa6f7ec16a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4caa5c0e85d4401a3be1aa6f7ec16a9d">&#9670;&#160;</a></span>blockSize <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpTag::blockSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga847e53ef8c5f4bddd0b931368d9990ae" name="ga847e53ef8c5f4bddd0b931368d9990ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga847e53ef8c5f4bddd0b931368d9990ae">&#9670;&#160;</a></span>pNext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpTag">SceKernelDmaOpTag</a>* SceKernelDmaOpTag::pNext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to SCE_KERNEL_DMAC_CHAIN_END to signify the last tag. </p>
+
+</div>
+</div>
+<a id="ga8ff8085d6c17eb702f62002352d2ed70" name="ga8ff8085d6c17eb702f62002352d2ed70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ff8085d6c17eb702f62002352d2ed70">&#9670;&#160;</a></span>keyring <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpEncDec::keyring</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga439c869e888fda2be34e5488a6b074dc" name="ga439c869e888fda2be34e5488a6b074dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga439c869e888fda2be34e5488a6b074dc">&#9670;&#160;</a></span>iv <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceKernelDmaOpEncDec::iv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be a physical address. </p>
+
+</div>
+</div>
+<a id="ga0e067b7b40be4cf718450f3e051c3b8c" name="ga0e067b7b40be4cf718450f3e051c3b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e067b7b40be4cf718450f3e051c3b8c">&#9670;&#160;</a></span>ivCoherencyMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpEncDec::ivCoherencyMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9d726218a3057f56d94dc2e9629413e8" name="ga9d726218a3057f56d94dc2e9629413e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d726218a3057f56d94dc2e9629413e8">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpEncDec::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac96e70839699942693abcd5c0f8e8d3a" name="gac96e70839699942693abcd5c0f8e8d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac96e70839699942693abcd5c0f8e8d3a">&#9670;&#160;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceKernelDmaOpEncDec::key[0x40]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab4003f8b8b93a8480ffa034ab0b85ac1" name="gab4003f8b8b93a8480ffa034ab0b85ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4003f8b8b93a8480ffa034ab0b85ac1">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceKernelDmaOpChainParam::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2a35a5445449898a4edc3cdc55808749" name="ga2a35a5445449898a4edc3cdc55808749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a35a5445449898a4edc3cdc55808749">&#9670;&#160;</a></span>coherencyMask <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpChainParam::coherencyMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga687579644caddfa96105c866fbba9da2" name="ga687579644caddfa96105c866fbba9da2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga687579644caddfa96105c866fbba9da2">&#9670;&#160;</a></span>setValue <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpChainParam::setValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>8-bit value duplicated into 32 bits </p>
+
+</div>
+</div>
+<a id="ga8ed746231d5de786ac63126c2a07b4ce" name="ga8ed746231d5de786ac63126c2a07b4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ed746231d5de786ac63126c2a07b4ce">&#9670;&#160;</a></span>header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpChainParam">SceKernelDmaOpChainParam</a> SceKernelDmaOpEncDecChainParam::header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>header.size = sizeof(SceKernelDmaOpEncDecChainParam) </p>
+
+</div>
+</div>
+<a id="gad8b173cabfcd8ca4a1e9f8fe2c56eeb6" name="gad8b173cabfcd8ca4a1e9f8fe2c56eeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8b173cabfcd8ca4a1e9f8fe2c56eeb6">&#9670;&#160;</a></span>encDec <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpEncDec">SceKernelDmaOpEncDec</a> SceKernelDmaOpEncDecChainParam::encDec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae3a40f0cbfb2456eeb46bbdcbec55f4b" name="gae3a40f0cbfb2456eeb46bbdcbec55f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3a40f0cbfb2456eeb46bbdcbec55f4b">&#9670;&#160;</a></span>src <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* SceKernelDmaOpDirectParam::src</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf8fe6d7f73fe32cc960c0594e5c9a78c" name="gaf8fe6d7f73fe32cc960c0594e5c9a78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8fe6d7f73fe32cc960c0594e5c9a78c">&#9670;&#160;</a></span>dst <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceKernelDmaOpDirectParam::dst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga55c2f1a11798afe10c9cfac0a7805eb3" name="ga55c2f1a11798afe10c9cfac0a7805eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55c2f1a11798afe10c9cfac0a7805eb3">&#9670;&#160;</a></span>len <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpDirectParam::len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa149f45e269004efb9442061cde36d85" name="gaa149f45e269004efb9442061cde36d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa149f45e269004efb9442061cde36d85">&#9670;&#160;</a></span>cmd <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpDirectParam::cmd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bitwise combination of SCE_KERNEL_DMAC_CMD_* fields. </p>
+
+</div>
+</div>
+<a id="ga4b14c54d74726cb5d7a6201f8fbad35c" name="ga4b14c54d74726cb5d7a6201f8fbad35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b14c54d74726cb5d7a6201f8fbad35c">&#9670;&#160;</a></span>blockSize <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpDirectParam::blockSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga288fc244bfb58605b011e6a5d40fdf3b" name="ga288fc244bfb58605b011e6a5d40fdf3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga288fc244bfb58605b011e6a5d40fdf3b">&#9670;&#160;</a></span>coherencyMask <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpDirectParam::coherencyMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga00d31df3a7490297a92f019cbb76a499" name="ga00d31df3a7490297a92f019cbb76a499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00d31df3a7490297a92f019cbb76a499">&#9670;&#160;</a></span>setValue <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelDmaOpDirectParam::setValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>8-bit value duplicated into 32 bits </p>
+
+</div>
+</div>
+<a id="ga797f90b994b21f48435a086f6aebe6b3" name="ga797f90b994b21f48435a086f6aebe6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga797f90b994b21f48435a086f6aebe6b3">&#9670;&#160;</a></span>encDec <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceDmacMgrKernel.html#structSceKernelDmaOpEncDec">SceKernelDmaOpEncDec</a> SceKernelDmaOpDirectParam::encDec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

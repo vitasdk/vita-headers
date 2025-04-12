@@ -73,29 +73,104 @@ $(document).ready(function(){initNavTree('group__SceAtracUser.html',''); initRes
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Audio.html">Audio</a> &raquo; <a class="el" href="group__SceAtrac.html">Atrac Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Exports for User. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="atrac_8h.html">psp2/atrac.h</a>&gt;</span> </div>
-<div class="ttc" id="aatrac_8h_html"><div class="ttname"><a href="atrac_8h.html">atrac.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceAtrac_stub </div>
-</div><!-- fragment --><p> <br  />
- Load the required module:<br  />
-</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a449288e03a8fcd1e65e46f5d118216b6">SCE_SYSMODULE_ATRAC</a>); </div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
-<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a449288e03a8fcd1e65e46f5d118216b6"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a449288e03a8fcd1e65e46f5d118216b6">SCE_SYSMODULE_ATRAC</a></div><div class="ttdeci">@ SCE_SYSMODULE_ATRAC</div><div class="ttdoc">Atrac module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:75</div></div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <table class="memberdecls">
+
+<p>Exports for User.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceAtracDecoderGroup" id="r_structSceAtracDecoderGroup"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#structSceAtracDecoderGroup">SceAtracDecoderGroup</a></td></tr>
+<tr class="separator:structSceAtracDecoderGroup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAtracContentInfo" id="r_structSceAtracContentInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#structSceAtracContentInfo">SceAtracContentInfo</a></td></tr>
+<tr class="separator:structSceAtracContentInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAtracStreamInfo" id="r_structSceAtracStreamInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#structSceAtracStreamInfo">SceAtracStreamInfo</a></td></tr>
+<tr class="separator:structSceAtracStreamInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga3da14a4d7d145b5bba0b9b2a5f033be1" id="r_ga3da14a4d7d145b5bba0b9b2a5f033be1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gab22dbab8114f56bd23aae1676e011490">SCE_AUDIODEC_ALIGNMENT_SIZE</a>)</td></tr>
+<tr class="separator:ga3da14a4d7d145b5bba0b9b2a5f033be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga693981f78a408342811906435b353726" id="r_ga693981f78a408342811906435b353726"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga693981f78a408342811906435b353726">SCE_ATRAC_ROUND_UP</a>(<a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)&#160;&#160;&#160;((<a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a> + <a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1) &amp; ~(<a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1))</td></tr>
+<tr class="separator:ga693981f78a408342811906435b353726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e277764979d547a211f248dd9d6f080" id="r_ga0e277764979d547a211f248dd9d6f080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga0e277764979d547a211f248dd9d6f080">SCE_ATRAC_TYPE_AT9</a>&#160;&#160;&#160;(0x2003U)</td></tr>
+<tr class="separator:ga0e277764979d547a211f248dd9d6f080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1822b4b9f7a7f8ac80fd9b688a5bc8e6" id="r_ga1822b4b9f7a7f8ac80fd9b688a5bc8e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga1822b4b9f7a7f8ac80fd9b688a5bc8e6">SCE_ATRAC_AT9_MAX_TOTAL_CH</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gab3997f04ddc9d35ac290e3f2bb79c61d">SCE_AUDIODEC_AT9_MAX_CH_IN_LIBRARY</a>)</td></tr>
+<tr class="separator:ga1822b4b9f7a7f8ac80fd9b688a5bc8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga932b72097ddfbc17024e215e4d9b47fd" id="r_ga932b72097ddfbc17024e215e4d9b47fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga932b72097ddfbc17024e215e4d9b47fd">SCE_ATRAC_WORD_LENGTH_16BITS</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gaa57417f18296d02cb8a6062d7dc1e5d8">SCE_AUDIODEC_WORD_LENGTH_16BITS</a>)</td></tr>
+<tr class="separator:ga932b72097ddfbc17024e215e4d9b47fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcdd1fc27336f850ab988727f47d8439" id="r_gadcdd1fc27336f850ab988727f47d8439"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gadcdd1fc27336f850ab988727f47d8439">SCE_ATRAC_AT9_MAX_CH_IN_DECODER</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#ga866421cabf341a976e9de94f48813f53">SCE_AUDIODEC_AT9_MAX_CH_IN_DECODER</a>)</td></tr>
+<tr class="separator:gadcdd1fc27336f850ab988727f47d8439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a277ad5c27a5db2169210d810428a7a" id="r_ga4a277ad5c27a5db2169210d810428a7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga4a277ad5c27a5db2169210d810428a7a">SCE_ATRAC_AT9_MAX_FRAME_SAMPLES</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#ga0158fc167716ee2f1b2f68d709ae18d5">SCE_AUDIODEC_AT9_MAX_SAMPLES</a>)</td></tr>
+<tr class="separator:ga4a277ad5c27a5db2169210d810428a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga447197a1dc841a78521786c04e31896d" id="r_ga447197a1dc841a78521786c04e31896d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga447197a1dc841a78521786c04e31896d">SCE_ATRAC_MAX_OUTPUT_SAMPLES</a>&#160;&#160;&#160;(2048)</td></tr>
+<tr class="separator:ga447197a1dc841a78521786c04e31896d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafff8d769d61f09e22d822ee580f49936" id="r_gafff8d769d61f09e22d822ee580f49936"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gafff8d769d61f09e22d822ee580f49936">SCE_ATRAC_AT9_MAX_OUTPUT_FRAMES</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="separator:gafff8d769d61f09e22d822ee580f49936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c5eabbb99671b8a392d0042848fed91" id="r_ga8c5eabbb99671b8a392d0042848fed91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga8c5eabbb99671b8a392d0042848fed91">SCE_ATRAC_AT9_MIN_LOOP_SAMPLES</a>&#160;&#160;&#160;(3072)</td></tr>
+<tr class="separator:ga8c5eabbb99671b8a392d0042848fed91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga678c9337d53c232e00f8a4e9c820f101" id="r_ga678c9337d53c232e00f8a4e9c820f101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga678c9337d53c232e00f8a4e9c820f101">SCE_ATRAC_INFINITE_LOOP_NUM</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:ga678c9337d53c232e00f8a4e9c820f101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3388b8ced57882d9806cfd666a4f9b85" id="r_ga3388b8ced57882d9806cfd666a4f9b85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga3388b8ced57882d9806cfd666a4f9b85">SCE_ATRAC_INFINITE_SAMPLES</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:ga3388b8ced57882d9806cfd666a4f9b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaf7d3434cf8ebec732eea15aaaab14a23" id="r_gaf7d3434cf8ebec732eea15aaaab14a23"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gaf7d3434cf8ebec732eea15aaaab14a23">SceAtracErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a8b82f9ba79512a0b95e81959e5cad62d">SCE_ATRAC_ERROR_INVALID_POINTER</a> = 0x80630000
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a6c3e6f059c768ce84c1f4d65ad9240a3">SCE_ATRAC_ERROR_INVALID_SIZE</a> = 0x80630001
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a55c4e143c0c056eb09bc5eebdc610f11">SCE_ATRAC_ERROR_INVALID_WORD_LENGTH</a> = 0x80630002
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23aff39c2510cd4c35ff3221284013aba67">SCE_ATRAC_ERROR_INVALID_TYPE</a> = 0x80630003
+, <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23ad52036773f44ae13d8705c5dab65f451">SCE_ATRAC_ERROR_INVALID_TOTAL_CH</a> = 0x80630004
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a97ec8c6b2210fd324dd8481d95873f0b">SCE_ATRAC_ERROR_INVALID_ALIGNMENT</a> = 0x80630005
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23aba0a56b213f24a4d569590054270ca4d">SCE_ATRAC_ERROR_ALREADY_CREATED</a> = 0x80630006
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a5b97ce30fd17aa5e6179b469cc67df7a">SCE_ATRAC_ERROR_NOT_CREATED</a> = 0x80630007
+, <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a126d977c756350bf95380cdab885405e">SCE_ATRAC_ERROR_SHORTAGE_OF_CH</a> = 0x80630008
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a6afe7d7cffcb4c1c8a6879c60a4015ea">SCE_ATRAC_ERROR_UNSUPPORTED_DATA</a> = 0x80630009
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a36baa654b6a5870b492a60fb5e03ae6e">SCE_ATRAC_ERROR_INVALID_DATA</a> = 0x8063000A
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a26f0bbc6ddc0cdabe7f6857bf813f577">SCE_ATRAC_ERROR_READ_SIZE_IS_TOO_SMALL</a> = 0x8063000B
+, <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a5ff29ba270b9a89ff6a4a78521fb0daa">SCE_ATRAC_ERROR_INVALID_HANDLE</a> = 0x8063000C
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a73be33ef09384baae5c1577c297670c2">SCE_ATRAC_ERROR_READ_SIZE_OVER_BUFFER</a> = 0x8063000D
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23acdd639653d89b080b68d783060fcbf5e">SCE_ATRAC_ERROR_MAIN_BUFFER_SIZE_IS_TOO_SMALL</a> = 0x8063000E
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23af6797b6f5b71cc9bd726d22252b8d520">SCE_ATRAC_ERROR_SUB_BUFFER_SIZE_IS_TOO_SMALL</a> = 0x8063000F
+, <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23aa63ca2094fd916243770fe3e1e8616f8">SCE_ATRAC_ERROR_DATA_SHORTAGE_IN_BUFFER</a> = 0x80630010
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a294f7df2fa212fac535b1289761b1651">SCE_ATRAC_ERROR_ALL_DATA_WAS_DECODED</a> = 0x80630011
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a71c29e777520d917211d8155e2e94df4">SCE_ATRAC_ERROR_INVALID_MAX_OUTPUT_SAMPLES</a> = 0x80630012
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a2aac75dd2ee5942c48916d5f8cd69d29">SCE_ATRAC_ERROR_ADDED_DATA_IS_TOO_BIG</a> = 0x80630013
+, <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23afb4294c93137bd5c0e7c4fbe54191ae7">SCE_ATRAC_ERROR_NEED_SUB_BUFFER</a> = 0x80630014
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23ad0774a8c9395085852fe3fb1238ee58e">SCE_ATRAC_ERROR_INVALID_SAMPLE</a> = 0x80630015
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a5d8239d4e07386a0d406bbe4e60d3959">SCE_ATRAC_ERROR_NO_NEED_SUB_BUFFER</a> = 0x80630016
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a0fa3c2029e4ab8fa942997714e6e0939">SCE_ATRAC_ERROR_INVALID_LOOP_STATUS</a> = 0x80630017
+, <br />
+&#160;&#160;<a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23ade7cf076e26e8804fea13613518f0b6a">SCE_ATRAC_ERROR_REMAIN_VALID_HANDLE</a> = 0x80630018
+, <a class="el" href="group__SceAtracUser.html#ggaf7d3434cf8ebec732eea15aaaab14a23a4e1d4e5f152f062bcd100d4e9971256d">SCE_ATRAC_ERROR_INVALID_LOOP_NUM</a> = 0x80630030
+<br />
+ }</td></tr>
+<tr class="separator:gaf7d3434cf8ebec732eea15aaaab14a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff9e9183c54bddc556ac6ecdd281f71e" id="r_gaff9e9183c54bddc556ac6ecdd281f71e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gaff9e9183c54bddc556ac6ecdd281f71e">SceAtracDecoderStatus</a> { <a class="el" href="group__SceAtracUser.html#ggaff9e9183c54bddc556ac6ecdd281f71ea70c3dd43b7c5c90d333e532434c82c46">SCE_ATRAC_DECODER_STATUS_ALL_DATA_WAS_DECODED</a> = 0x00000001
+, <a class="el" href="group__SceAtracUser.html#ggaff9e9183c54bddc556ac6ecdd281f71eaafc8d540d4edb75acb3fc67fe1c832cd">SCE_ATRAC_DECODER_STATUS_ALL_DATA_IS_ON_MEMORY</a> = 0x00000002
+, <a class="el" href="group__SceAtracUser.html#ggaff9e9183c54bddc556ac6ecdd281f71ea14fded8fbfa464ad9175b41345539726">SCE_ATRAC_DECODER_STATUS_NONLOOP_PART_IS_ON_MEMORY</a> = 0x00000004
+, <a class="el" href="group__SceAtracUser.html#ggaff9e9183c54bddc556ac6ecdd281f71ea1bab48a28b20f86f1acb503566a2de0e">SCE_ATRAC_DECODER_STATUS_LOOP_PART_IS_ON_MEMORY</a> = 0x00000008
+ }</td></tr>
+<tr class="separator:gaff9e9183c54bddc556ac6ecdd281f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga812b4bebcdb4a8f0ac59d4641cf9d86a" id="r_ga812b4bebcdb4a8f0ac59d4641cf9d86a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga812b4bebcdb4a8f0ac59d4641cf9d86a">SceAtracLoopStatus</a> { <a class="el" href="group__SceAtracUser.html#gga812b4bebcdb4a8f0ac59d4641cf9d86aaea8ca4301d391cc5703f7c10c1723ead">SCE_ATRAC_LOOP_STATUS_NON_RESETABLE_PART</a> = 0x00000000
+, <a class="el" href="group__SceAtracUser.html#gga812b4bebcdb4a8f0ac59d4641cf9d86aa1741534c4c6fa6f62f869bb687eb6c74">SCE_ATRAC_LOOP_STATUS_RESETABLE_PART</a> = 0x00000001
+ }</td></tr>
+<tr class="separator:ga812b4bebcdb4a8f0ac59d4641cf9d86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga9b5808662e31310378f6ec15c7f4a9fd" id="r_ga9b5808662e31310378f6ec15c7f4a9fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga9b5808662e31310378f6ec15c7f4a9fd">VITASDK_BUILD_ASSERT_EQ</a> (0xC, <a class="el" href="group__SceAtracUser.html#structSceAtracDecoderGroup">SceAtracDecoderGroup</a>)</td></tr>
@@ -153,34 +228,67 @@ Functions</h2></td></tr>
 <tr class="memitem:gac396ee93c4eca75f79427f7264857ed8" id="r_gac396ee93c4eca75f79427f7264857ed8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gac396ee93c4eca75f79427f7264857ed8">sceAtracGetInternalError</a> (int atracHandle, int *pInternalError)</td></tr>
 <tr class="separator:gac396ee93c4eca75f79427f7264857ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga3da14a4d7d145b5bba0b9b2a5f033be1" id="r_ga3da14a4d7d145b5bba0b9b2a5f033be1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gab22dbab8114f56bd23aae1676e011490">SCE_AUDIODEC_ALIGNMENT_SIZE</a>)</td></tr>
-<tr class="separator:ga3da14a4d7d145b5bba0b9b2a5f033be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga693981f78a408342811906435b353726" id="r_ga693981f78a408342811906435b353726"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga693981f78a408342811906435b353726">SCE_ATRAC_ROUND_UP</a>(<a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)&#160;&#160;&#160;((<a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a> + <a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1) &amp; ~(<a class="el" href="group__SceAtracUser.html#ga3da14a4d7d145b5bba0b9b2a5f033be1">SCE_ATRAC_ALIGNMENT_SIZE</a> - 1))</td></tr>
-<tr class="separator:ga693981f78a408342811906435b353726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e277764979d547a211f248dd9d6f080" id="r_ga0e277764979d547a211f248dd9d6f080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga0e277764979d547a211f248dd9d6f080">SCE_ATRAC_TYPE_AT9</a>&#160;&#160;&#160;(0x2003U)</td></tr>
-<tr class="separator:ga0e277764979d547a211f248dd9d6f080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1822b4b9f7a7f8ac80fd9b688a5bc8e6" id="r_ga1822b4b9f7a7f8ac80fd9b688a5bc8e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga1822b4b9f7a7f8ac80fd9b688a5bc8e6">SCE_ATRAC_AT9_MAX_TOTAL_CH</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gab3997f04ddc9d35ac290e3f2bb79c61d">SCE_AUDIODEC_AT9_MAX_CH_IN_LIBRARY</a>)</td></tr>
-<tr class="separator:ga1822b4b9f7a7f8ac80fd9b688a5bc8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga932b72097ddfbc17024e215e4d9b47fd" id="r_ga932b72097ddfbc17024e215e4d9b47fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga932b72097ddfbc17024e215e4d9b47fd">SCE_ATRAC_WORD_LENGTH_16BITS</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#gaa57417f18296d02cb8a6062d7dc1e5d8">SCE_AUDIODEC_WORD_LENGTH_16BITS</a>)</td></tr>
-<tr class="separator:ga932b72097ddfbc17024e215e4d9b47fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcdd1fc27336f850ab988727f47d8439" id="r_gadcdd1fc27336f850ab988727f47d8439"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gadcdd1fc27336f850ab988727f47d8439">SCE_ATRAC_AT9_MAX_CH_IN_DECODER</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#ga866421cabf341a976e9de94f48813f53">SCE_AUDIODEC_AT9_MAX_CH_IN_DECODER</a>)</td></tr>
-<tr class="separator:gadcdd1fc27336f850ab988727f47d8439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a277ad5c27a5db2169210d810428a7a" id="r_ga4a277ad5c27a5db2169210d810428a7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga4a277ad5c27a5db2169210d810428a7a">SCE_ATRAC_AT9_MAX_FRAME_SAMPLES</a>&#160;&#160;&#160;(<a class="el" href="group__SceAudiodecUser.html#ga0158fc167716ee2f1b2f68d709ae18d5">SCE_AUDIODEC_AT9_MAX_SAMPLES</a>)</td></tr>
-<tr class="separator:ga4a277ad5c27a5db2169210d810428a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga447197a1dc841a78521786c04e31896d" id="r_ga447197a1dc841a78521786c04e31896d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga447197a1dc841a78521786c04e31896d">SCE_ATRAC_MAX_OUTPUT_SAMPLES</a>&#160;&#160;&#160;(2048)</td></tr>
-<tr class="separator:ga447197a1dc841a78521786c04e31896d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafff8d769d61f09e22d822ee580f49936" id="r_gafff8d769d61f09e22d822ee580f49936"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gafff8d769d61f09e22d822ee580f49936">SCE_ATRAC_AT9_MAX_OUTPUT_FRAMES</a>&#160;&#160;&#160;(8)</td></tr>
-<tr class="separator:gafff8d769d61f09e22d822ee580f49936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c5eabbb99671b8a392d0042848fed91" id="r_ga8c5eabbb99671b8a392d0042848fed91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga8c5eabbb99671b8a392d0042848fed91">SCE_ATRAC_AT9_MIN_LOOP_SAMPLES</a>&#160;&#160;&#160;(3072)</td></tr>
-<tr class="separator:ga8c5eabbb99671b8a392d0042848fed91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga678c9337d53c232e00f8a4e9c820f101" id="r_ga678c9337d53c232e00f8a4e9c820f101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga678c9337d53c232e00f8a4e9c820f101">SCE_ATRAC_INFINITE_LOOP_NUM</a>&#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:ga678c9337d53c232e00f8a4e9c820f101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3388b8ced57882d9806cfd666a4f9b85" id="r_ga3388b8ced57882d9806cfd666a4f9b85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga3388b8ced57882d9806cfd666a4f9b85">SCE_ATRAC_INFINITE_SAMPLES</a>&#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:ga3388b8ced57882d9806cfd666a4f9b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga525c3a93a24aaa638ea374b02fa54932" id="r_ga525c3a93a24aaa638ea374b02fa54932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga525c3a93a24aaa638ea374b02fa54932">SceAtracDecoderGroup::size</a></td></tr>
+<tr class="separator:ga525c3a93a24aaa638ea374b02fa54932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ded2787b39385c075f317d149361d15" id="r_ga1ded2787b39385c075f317d149361d15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga1ded2787b39385c075f317d149361d15">SceAtracDecoderGroup::wordLength</a></td></tr>
+<tr class="separator:ga1ded2787b39385c075f317d149361d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ff88d03ac8902b6172434d14c6c1f09" id="r_ga8ff88d03ac8902b6172434d14c6c1f09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga8ff88d03ac8902b6172434d14c6c1f09">SceAtracDecoderGroup::totalCh</a></td></tr>
+<tr class="separator:ga8ff88d03ac8902b6172434d14c6c1f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad55d9b340c366d9a6e68d69aefe20b15" id="r_gad55d9b340c366d9a6e68d69aefe20b15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gad55d9b340c366d9a6e68d69aefe20b15">SceAtracContentInfo::size</a></td></tr>
+<tr class="separator:gad55d9b340c366d9a6e68d69aefe20b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3ab9f30e4432a7b8ca5e24c12876157" id="r_gad3ab9f30e4432a7b8ca5e24c12876157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gad3ab9f30e4432a7b8ca5e24c12876157">SceAtracContentInfo::atracType</a></td></tr>
+<tr class="separator:gad3ab9f30e4432a7b8ca5e24c12876157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a864177ff8781fc4d5cae2c5abdca2e" id="r_ga0a864177ff8781fc4d5cae2c5abdca2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga0a864177ff8781fc4d5cae2c5abdca2e">SceAtracContentInfo::channel</a></td></tr>
+<tr class="separator:ga0a864177ff8781fc4d5cae2c5abdca2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab96843647568d6df5394f5e6d1969323" id="r_gab96843647568d6df5394f5e6d1969323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gab96843647568d6df5394f5e6d1969323">SceAtracContentInfo::samplingRate</a></td></tr>
+<tr class="separator:gab96843647568d6df5394f5e6d1969323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c3858a2f477fdb40d242f5e5a87de68" id="r_ga8c3858a2f477fdb40d242f5e5a87de68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga8c3858a2f477fdb40d242f5e5a87de68">SceAtracContentInfo::endSample</a></td></tr>
+<tr class="separator:ga8c3858a2f477fdb40d242f5e5a87de68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ad793674ccb27814c2300a9fedc87e1" id="r_ga6ad793674ccb27814c2300a9fedc87e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga6ad793674ccb27814c2300a9fedc87e1">SceAtracContentInfo::loopStartSample</a></td></tr>
+<tr class="separator:ga6ad793674ccb27814c2300a9fedc87e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f56c7464638d8c7100cee1ed663b308" id="r_ga6f56c7464638d8c7100cee1ed663b308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga6f56c7464638d8c7100cee1ed663b308">SceAtracContentInfo::loopEndSample</a></td></tr>
+<tr class="separator:ga6f56c7464638d8c7100cee1ed663b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69e9daac58522c1f57ed5a5fdd3f0aa8" id="r_ga69e9daac58522c1f57ed5a5fdd3f0aa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga69e9daac58522c1f57ed5a5fdd3f0aa8">SceAtracContentInfo::bitRate</a></td></tr>
+<tr class="separator:ga69e9daac58522c1f57ed5a5fdd3f0aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga612648d59c8d098455ea6104dc5b44ab" id="r_ga612648d59c8d098455ea6104dc5b44ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga612648d59c8d098455ea6104dc5b44ab">SceAtracContentInfo::fixedEncBlockSize</a></td></tr>
+<tr class="separator:ga612648d59c8d098455ea6104dc5b44ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27a83cdd028cf0757747a7612d561537" id="r_ga27a83cdd028cf0757747a7612d561537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga27a83cdd028cf0757747a7612d561537">SceAtracContentInfo::fixedEncBlockSample</a></td></tr>
+<tr class="separator:ga27a83cdd028cf0757747a7612d561537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6192259a2a8927681fa5aaf6cc5328bb" id="r_ga6192259a2a8927681fa5aaf6cc5328bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga6192259a2a8927681fa5aaf6cc5328bb">SceAtracContentInfo::frameSample</a></td></tr>
+<tr class="separator:ga6192259a2a8927681fa5aaf6cc5328bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga526cbae8ed74ba2d4c2022517f821dd6" id="r_ga526cbae8ed74ba2d4c2022517f821dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga526cbae8ed74ba2d4c2022517f821dd6">SceAtracContentInfo::loopBlockOffset</a></td></tr>
+<tr class="separator:ga526cbae8ed74ba2d4c2022517f821dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5779918cfd59991cf6914e3fcdff6c6" id="r_gab5779918cfd59991cf6914e3fcdff6c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gab5779918cfd59991cf6914e3fcdff6c6">SceAtracContentInfo::loopBlockSize</a></td></tr>
+<tr class="separator:gab5779918cfd59991cf6914e3fcdff6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a4e8210497a53130ce885c5efb83e95" id="r_ga6a4e8210497a53130ce885c5efb83e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga6a4e8210497a53130ce885c5efb83e95">SceAtracStreamInfo::size</a></td></tr>
+<tr class="separator:ga6a4e8210497a53130ce885c5efb83e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a7202feca57ba19cf8af0ac0d9b0771" id="r_ga5a7202feca57ba19cf8af0ac0d9b0771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafce19396d4bbb28f5ac214f322232809">SceUChar8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#ga5a7202feca57ba19cf8af0ac0d9b0771">SceAtracStreamInfo::pWritePosition</a></td></tr>
+<tr class="separator:ga5a7202feca57ba19cf8af0ac0d9b0771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa86d90b3330f74d222eb1c3536f27a4e" id="r_gaa86d90b3330f74d222eb1c3536f27a4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gaa86d90b3330f74d222eb1c3536f27a4e">SceAtracStreamInfo::readPosition</a></td></tr>
+<tr class="separator:gaa86d90b3330f74d222eb1c3536f27a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb34636845e30ba9ab899133f12ba33e" id="r_gabb34636845e30ba9ab899133f12ba33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAtracUser.html#gabb34636845e30ba9ab899133f12ba33e">SceAtracStreamInfo::writableSize</a></td></tr>
+<tr class="separator:gabb34636845e30ba9ab899133f12ba33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Exports for User. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="atrac_8h.html">psp2/atrac.h</a>&gt;</span> </div>
+<div class="ttc" id="aatrac_8h_html"><div class="ttname"><a href="atrac_8h.html">atrac.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceAtrac_stub </div>
+</div><!-- fragment --><p> <br  />
+ Load the required module:<br  />
+</p><div class="fragment"><div class="line"><a class="code hl_function" href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a>(<a class="code hl_enumvalue" href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a449288e03a8fcd1e65e46f5d118216b6">SCE_SYSMODULE_ATRAC</a>); </div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_gaf3e3284700dc68cff9ba70bb56332a29"><div class="ttname"><a href="group__SceSysmoduleUser.html#gaf3e3284700dc68cff9ba70bb56332a29">sceSysmoduleLoadModule</a></div><div class="ttdeci">int sceSysmoduleLoadModule(SceSysmoduleModuleId id)</div><div class="ttdoc">Load a module.</div></div>
+<div class="ttc" id="agroup__SceSysmoduleUser_html_ggab4fe3bc5e185568aced2338b98cbae41a449288e03a8fcd1e65e46f5d118216b6"><div class="ttname"><a href="group__SceSysmoduleUser.html#ggab4fe3bc5e185568aced2338b98cbae41a449288e03a8fcd1e65e46f5d118216b6">SCE_SYSMODULE_ATRAC</a></div><div class="ttdeci">@ SCE_SYSMODULE_ATRAC</div><div class="ttdoc">Atrac module.</div><div class="ttdef"><b>Definition</b> sysmodule.h:75</div></div>
+</div><!-- fragment --><p> <br  />
+ </p><hr  />
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSceAtracDecoderGroup" id="structSceAtracDecoderGroup"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceAtracDecoderGroup">&#9670;&#160;</a></span>SceAtracDecoderGroup</h2>
 
@@ -1397,6 +1505,287 @@ writableSize</td>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga525c3a93a24aaa638ea374b02fa54932" name="ga525c3a93a24aaa638ea374b02fa54932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga525c3a93a24aaa638ea374b02fa54932">&#9670;&#160;</a></span>size <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracDecoderGroup::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1ded2787b39385c075f317d149361d15" name="ga1ded2787b39385c075f317d149361d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ded2787b39385c075f317d149361d15">&#9670;&#160;</a></span>wordLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracDecoderGroup::wordLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8ff88d03ac8902b6172434d14c6c1f09" name="ga8ff88d03ac8902b6172434d14c6c1f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ff88d03ac8902b6172434d14c6c1f09">&#9670;&#160;</a></span>totalCh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracDecoderGroup::totalCh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad55d9b340c366d9a6e68d69aefe20b15" name="gad55d9b340c366d9a6e68d69aefe20b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad55d9b340c366d9a6e68d69aefe20b15">&#9670;&#160;</a></span>size <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad3ab9f30e4432a7b8ca5e24c12876157" name="gad3ab9f30e4432a7b8ca5e24c12876157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3ab9f30e4432a7b8ca5e24c12876157">&#9670;&#160;</a></span>atracType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::atracType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0a864177ff8781fc4d5cae2c5abdca2e" name="ga0a864177ff8781fc4d5cae2c5abdca2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a864177ff8781fc4d5cae2c5abdca2e">&#9670;&#160;</a></span>channel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab96843647568d6df5394f5e6d1969323" name="gab96843647568d6df5394f5e6d1969323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab96843647568d6df5394f5e6d1969323">&#9670;&#160;</a></span>samplingRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::samplingRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8c3858a2f477fdb40d242f5e5a87de68" name="ga8c3858a2f477fdb40d242f5e5a87de68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c3858a2f477fdb40d242f5e5a87de68">&#9670;&#160;</a></span>endSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceAtracContentInfo::endSample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6ad793674ccb27814c2300a9fedc87e1" name="ga6ad793674ccb27814c2300a9fedc87e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ad793674ccb27814c2300a9fedc87e1">&#9670;&#160;</a></span>loopStartSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceAtracContentInfo::loopStartSample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6f56c7464638d8c7100cee1ed663b308" name="ga6f56c7464638d8c7100cee1ed663b308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f56c7464638d8c7100cee1ed663b308">&#9670;&#160;</a></span>loopEndSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceAtracContentInfo::loopEndSample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga69e9daac58522c1f57ed5a5fdd3f0aa8" name="ga69e9daac58522c1f57ed5a5fdd3f0aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69e9daac58522c1f57ed5a5fdd3f0aa8">&#9670;&#160;</a></span>bitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::bitRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga612648d59c8d098455ea6104dc5b44ab" name="ga612648d59c8d098455ea6104dc5b44ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga612648d59c8d098455ea6104dc5b44ab">&#9670;&#160;</a></span>fixedEncBlockSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::fixedEncBlockSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga27a83cdd028cf0757747a7612d561537" name="ga27a83cdd028cf0757747a7612d561537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27a83cdd028cf0757747a7612d561537">&#9670;&#160;</a></span>fixedEncBlockSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::fixedEncBlockSample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6192259a2a8927681fa5aaf6cc5328bb" name="ga6192259a2a8927681fa5aaf6cc5328bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6192259a2a8927681fa5aaf6cc5328bb">&#9670;&#160;</a></span>frameSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::frameSample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga526cbae8ed74ba2d4c2022517f821dd6" name="ga526cbae8ed74ba2d4c2022517f821dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga526cbae8ed74ba2d4c2022517f821dd6">&#9670;&#160;</a></span>loopBlockOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::loopBlockOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab5779918cfd59991cf6914e3fcdff6c6" name="gab5779918cfd59991cf6914e3fcdff6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5779918cfd59991cf6914e3fcdff6c6">&#9670;&#160;</a></span>loopBlockSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracContentInfo::loopBlockSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6a4e8210497a53130ce885c5efb83e95" name="ga6a4e8210497a53130ce885c5efb83e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a4e8210497a53130ce885c5efb83e95">&#9670;&#160;</a></span>size <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracStreamInfo::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a7202feca57ba19cf8af0ac0d9b0771" name="ga5a7202feca57ba19cf8af0ac0d9b0771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a7202feca57ba19cf8af0ac0d9b0771">&#9670;&#160;</a></span>pWritePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafce19396d4bbb28f5ac214f322232809">SceUChar8</a>* SceAtracStreamInfo::pWritePosition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa86d90b3330f74d222eb1c3536f27a4e" name="gaa86d90b3330f74d222eb1c3536f27a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa86d90b3330f74d222eb1c3536f27a4e">&#9670;&#160;</a></span>readPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracStreamInfo::readPosition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabb34636845e30ba9ab899133f12ba33e" name="gabb34636845e30ba9ab899133f12ba33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb34636845e30ba9ab899133f12ba33e">&#9670;&#160;</a></span>writableSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceAtracStreamInfo::writableSize</td>
         </tr>
       </table>
 </div><div class="memdoc">
