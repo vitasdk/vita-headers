@@ -20,5 +20,6 @@
 #include <psp2kern/kernel/threadmgr/misc.h>
 #include <psp2kern/kernel/threadmgr/workqueues.h>
 #include <psp2kern/kernel/threadmgr/debugger.h>
+#include <psp2kern/kernel/threadmgr/vfp.h>
 
 #endif /* _PSP2KERN_KERNEL_THREADMGR_H_ */
