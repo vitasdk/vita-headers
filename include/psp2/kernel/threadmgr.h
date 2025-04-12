@@ -26,6 +26,7 @@ extern "C" {
 #include <psp2/kernel/threadmgr/semaphore.h>
 #include <psp2/kernel/threadmgr/signal.h>
 #include <psp2/kernel/threadmgr/thread.h>
+#include <psp2/kernel/threadmgr/vfp.h>
 
 #endif /* _PSP2_KERNEL_THREADMGR_H_ */
 
