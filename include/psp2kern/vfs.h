@@ -63,7 +63,7 @@ VITASDK_BUILD_ASSERT_EQ(0xC, SceVfsPath);
  * Mountpoint Data
  */
 typedef struct SceVfsMountData {
-	const char *assign_name;           //!< Assigned name for the mount point. Must end with ':', typically in format '<mnt>0:'
+	const char *assign_name;           //!< Assigned name for the mount point. Must end with ':', typically in format `<mnt>0:`
 	const char *fs_name;               //!< Name of the FS being mounted.
 	const char *blockdev_name;         //!< Path to the block device
 	const char *blockdev_name_no_part; //!< Path to the block device without a partition specified (used as a fallback if blockdev_name isn't found)
