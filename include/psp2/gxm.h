@@ -1492,7 +1492,7 @@ int sceGxmUnmapFragmentUsseMemory(void *base);
  *
  * @param[in] oldBuffer - Synchronization object associated to the previous frame buffer.
  * @param[in] newBuffer - Synchronization object associated to the new incoming frame buffer.
- * @param[out] callbackData - Data to send to the display swap callback.
+ * @param[in] callbackData - Data to send to the display swap callback.
  *
  * @return 0 on success, < 0 on error.
 */
