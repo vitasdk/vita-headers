@@ -61,7 +61,7 @@ typedef struct SceGxmInitializeParams {
 	unsigned int displayQueueMaxPendingCount;         //!< Maximum number of allowed pending display swaps.
 	SceGxmDisplayQueueCallback *displayQueueCallback; //!< Callback used for performing display swap.
 	unsigned int displayQueueCallbackDataSize;        //!< Size (in bytes) of the data passed to the display swap callback.
-	SceSize parameterBufferSize;                      //!< Parameter buffer size (in bytes).
+	SceSize parameterBufferSize;                      //!< Parameter buffer size (in bytes). Must be 0x40000 or higher.
 } SceGxmInitializeParams;
 VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmInitializeParams);
 
