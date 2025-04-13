@@ -1,5 +1,19 @@
 var NAVTREEINDEX67 =
 {
+"ssmgr_8h_source.html":[4,0,1,2,2,25],
+"stdc_8h.html":[4,0,1,0,4,2],
+"stdc_8h_source.html":[4,0,1,0,4,2],
+"suspend_8h.html":[4,0,1,2,2,26],
+"suspend_8h_source.html":[4,0,1,2,2,26],
+"sysclib_8h.html":[4,0,1,2,2,27],
+"sysclib_8h_source.html":[4,0,1,2,2,27],
+"syscon_8h.html":[4,0,1,2,2,28],
+"syscon_8h_source.html":[4,0,1,2,2,28],
+"sysmodule_8h.html":[4,0,1,0,71],
+"sysmodule_8h_source.html":[4,0,1,0,71],
+"sysroot_8h.html":[4,0,1,2,2,30],
+"sysroot_8h_source.html":[4,0,1,2,2,30],
+"system__param_8h.html":[4,0,1,0,72],
 "system__param_8h_source.html":[4,0,1,0,72],
 "systimer_8h.html":[4,0,1,2,2,31],
 "systimer_8h_source.html":[4,0,1,2,2,31],
@@ -41,6 +55,6 @@ var NAVTREEINDEX67 =
 "vitasdkkern_8h_source.html":[4,0,1,5],
 "vshbridge_8h.html":[4,0,1,0,85],
 "vshbridge_8h_source.html":[4,0,1,0,85],
-"workqueues_8h.html":[4,0,1,2,2,4,12],
-"workqueues_8h_source.html":[4,0,1,2,2,4,12]
+"workqueues_8h.html":[4,0,1,2,2,4,13],
+"workqueues_8h_source.html":[4,0,1,2,2,4,13]
 };

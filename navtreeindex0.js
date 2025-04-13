@@ -125,6 +125,8 @@ var NAVTREEINDEX0 =
 "ern_2kernel_2threadmgr_2mutex_8h_source.html":[4,0,1,2,2,4,9],
 "ern_2kernel_2threadmgr_2thread_8h.html":[4,0,1,2,2,4,11],
 "ern_2kernel_2threadmgr_2thread_8h_source.html":[4,0,1,2,2,4,11],
+"ern_2kernel_2threadmgr_2vfp_8h.html":[4,0,1,2,2,4,12],
+"ern_2kernel_2threadmgr_2vfp_8h_source.html":[4,0,1,2,2,4,12],
 "ern_2kernel_2threadmgr_8h.html":[4,0,1,2,2,32],
 "ern_2kernel_2threadmgr_8h_source.html":[4,0,1,2,2,32],
 "error_8h.html":[4,0,1,0,2,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "globals_func_p.html":[4,1,1,4],
 "globals_func_s.html":[4,1,1,5],
 "globals_func_t.html":[4,1,1,6],
-"globals_func_v.html":[4,1,1,7],
-"globals_h.html":[4,1,0,7],
-"globals_i.html":[4,1,0,8]
+"globals_func_v.html":[4,1,1,7]
 };

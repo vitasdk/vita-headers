@@ -10,5 +10,6 @@ var dir_6358a0ce56f5d818b07c3579fd41789c =
     [ "rwlock.h", "rwlock_8h.html", "rwlock_8h" ],
     [ "semaphore.h", "semaphore_8h.html", "semaphore_8h" ],
     [ "signal.h", "signal_8h.html", "signal_8h" ],
-    [ "thread.h", "kernel_2threadmgr_2thread_8h.html", "kernel_2threadmgr_2thread_8h" ]
+    [ "thread.h", "kernel_2threadmgr_2thread_8h.html", "kernel_2threadmgr_2thread_8h" ],
+    [ "vfp.h", "kernel_2threadmgr_2vfp_8h.html", "kernel_2threadmgr_2vfp_8h" ]
 ];

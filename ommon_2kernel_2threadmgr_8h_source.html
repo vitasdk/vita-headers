@@ -364,13 +364,25 @@ $(document).ready(function(){initNavTree('ommon_2kernel_2threadmgr_8h_source.htm
 </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga86d682831acecf54dbe2da4f28117d59">  330</a></span><a class="code hl_define" href="build__utils_8h.html#ab4d7628e56e4db777e3bd90599f2b8d9">VITASDK_BUILD_ASSERT_EQ</a>(0x34, <a class="code hl_struct" href="group__SceThreadMgrUser.html#structSceKernelCondInfo">SceKernelCondInfo</a>);</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="preprocessor">#endif </span><span class="comment">/* _PSP2COMMON_KERNEL_THREADMGR_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment"> * Value linked to fpcsr</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga802264c726e0d3c425fbb668e9df5a66">  335</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_IOC (0x00000001)</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga866e11c0ca11a642232fbc62502dbfd0">  336</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_DZC (0x00000002)</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga6b24d7dce09d9e375f3ed7c267f2f631">  337</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_OFC (0x00000004)</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga0f8116f64c99bc4c9823b7fef5d5934f">  338</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_UFC (0x00000008)</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#gafe824c6ba4eeed5c86d6696a274e0d46">  339</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_IXC (0x00000010)</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#gacfe9aedb03c7483fb9242d447e84d810">  340</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_IDC (0x00000080)</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga86f92b8cb4c5bb4d10965c46bba27b1d">  341</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_QC  (0x08000000)</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="group__SceThreadMgrUser.html#ga9a00e8f6f666651c1711f63b55defce8">  342</a></span><span class="preprocessor">#define SCE_KERNEL_VFP_EXCP_ALL (SCE_KERNEL_VFP_EXCP_IOC | SCE_KERNEL_VFP_EXCP_DZC | SCE_KERNEL_VFP_EXCP_OFC | SCE_KERNEL_VFP_EXCP_UFC | SCE_KERNEL_VFP_EXCP_IXC | SCE_KERNEL_VFP_EXCP_IDC | SCE_KERNEL_VFP_EXCP_QC)</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>}</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="preprocessor">#endif </span><span class="comment">/* _PSP2COMMON_KERNEL_THREADMGR_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
 <div class="ttc" id="abuild__utils_8h_html_ab4d7628e56e4db777e3bd90599f2b8d9"><div class="ttname"><a href="build__utils_8h.html#ab4d7628e56e4db777e3bd90599f2b8d9">VITASDK_BUILD_ASSERT_EQ</a></div><div class="ttdeci">#define VITASDK_BUILD_ASSERT_EQ(__size__, __name__)</div><div class="ttdef"><b>Definition</b> build_utils.h:13</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga00b47f40fe92fa0598deda616631d4ba"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga00b47f40fe92fa0598deda616631d4ba">SceKernelThreadInfo::changeCpuCount</a></div><div class="ttdeci">SceInt32 changeCpuCount</div><div class="ttdoc">Number of CPUs to which the thread is moved.</div><div class="ttdef"><b>Definition</b> threadmgr.h:125</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga01c95bfe129bab21f63f82815e2f391e"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga01c95bfe129bab21f63f82815e2f391e">SceKernelCondInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the SceKernelCondInfo structure.</div><div class="ttdef"><b>Definition</b> threadmgr.h:318</div></div>
