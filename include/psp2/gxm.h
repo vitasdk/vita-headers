@@ -919,26 +919,30 @@ typedef enum SceGxmTextureNormalizeMode {
 	SCE_GXM_TEXTURE_NORMALIZE_ENABLED  = 0x80000000u
 } SceGxmTextureNormalizeMode;
 
+/** Indices formats. */
 typedef enum SceGxmIndexFormat {
-	SCE_GXM_INDEX_FORMAT_U16   = 0x00000000u,
-	SCE_GXM_INDEX_FORMAT_U32   = 0x01000000u
+	SCE_GXM_INDEX_FORMAT_U16   = 0x00000000u, //!< 16-bit unsigned integers
+	SCE_GXM_INDEX_FORMAT_U32   = 0x01000000u  //!< 32-bit unsigned integers
 } SceGxmIndexFormat;
 
+/** Vertex stream indexing formats. */
 typedef enum SceGxmIndexSource {
-	SCE_GXM_INDEX_SOURCE_INDEX_16BIT    = 0x00000000u,
-	SCE_GXM_INDEX_SOURCE_INDEX_32BIT    = 0x00000001u,
-	SCE_GXM_INDEX_SOURCE_INSTANCE_16BIT = 0x00000002u,
-	SCE_GXM_INDEX_SOURCE_INSTANCE_32BIT = 0x00000003u
+	SCE_GXM_INDEX_SOURCE_INDEX_16BIT    = 0x00000000u, //!< 16-bit indexing. Values must be lower than 64000.
+	SCE_GXM_INDEX_SOURCE_INDEX_32BIT    = 0x00000001u, //!< 32-bit indexing.
+	SCE_GXM_INDEX_SOURCE_INSTANCE_16BIT = 0x00000002u, //!< 16-bit indexing for instanced draws. Values must be lower than 64000.
+	SCE_GXM_INDEX_SOURCE_INSTANCE_32BIT = 0x00000003u  //!< 32-bit indexing for instanced draws.
 } SceGxmIndexSource;
 
+/** Fragment program states. */
 typedef enum SceGxmFragmentProgramMode {
-	SCE_GXM_FRAGMENT_PROGRAM_DISABLED   = 0x00200000u,
-	SCE_GXM_FRAGMENT_PROGRAM_ENABLED    = 0x00000000u
+	SCE_GXM_FRAGMENT_PROGRAM_DISABLED   = 0x00200000u, //!< Disabled
+	SCE_GXM_FRAGMENT_PROGRAM_ENABLED    = 0x00000000u  //!< Enabled
 } SceGxmFragmentProgramMode;
 
+/** Depth write states. */
 typedef enum SceGxmDepthWriteMode {
-	SCE_GXM_DEPTH_WRITE_DISABLED = 0x00100000u,
-	SCE_GXM_DEPTH_WRITE_ENABLED  = 0x00000000u
+	SCE_GXM_DEPTH_WRITE_DISABLED = 0x00100000u, //!< Disabled
+	SCE_GXM_DEPTH_WRITE_ENABLED  = 0x00000000u  //!< Enabled
 } SceGxmDepthWriteMode;
 
 typedef enum SceGxmLineFillLastPixelMode {
@@ -946,9 +950,10 @@ typedef enum SceGxmLineFillLastPixelMode {
 	SCE_GXM_LINE_FILL_LAST_PIXEL_ENABLED  = 0x00080000u
 } SceGxmLineFillLastPixelMode;
 
+/** Two sided rendering states. */
 typedef enum SceGxmTwoSidedMode {
-	SCE_GXM_TWO_SIDED_DISABLED  = 0x00000000u,
-	SCE_GXM_TWO_SIDED_ENABLED   = 0x00000800u
+	SCE_GXM_TWO_SIDED_DISABLED  = 0x00000000u, //!< Disabled
+	SCE_GXM_TWO_SIDED_ENABLED   = 0x00000800u  //!< Enabled
 } SceGxmTwoSidedMode;
 
 typedef enum SceGxmWClampMode {
@@ -956,14 +961,16 @@ typedef enum SceGxmWClampMode {
 	SCE_GXM_WCLAMP_MODE_ENABLED   = 0x00008000u
 } SceGxmWClampMode;
 
+/** W-clamp states */
 typedef enum SceGxmViewportMode {
-	SCE_GXM_VIEWPORT_DISABLED   = 0x00010000u,
-	SCE_GXM_VIEWPORT_ENABLED    = 0x00000000u
+	SCE_GXM_VIEWPORT_DISABLED   = 0x00010000u, //!< Disabled
+	SCE_GXM_VIEWPORT_ENABLED    = 0x00000000u  //!< Enabled
 } SceGxmViewportMode;
 
+/** W-buffer mode states */
 typedef enum SceGxmWBufferMode {
-	SCE_GXM_WBUFFER_DISABLED  = 0x00000000u,
-	SCE_GXM_WBUFFER_ENABLED   = 0x00004000u
+	SCE_GXM_WBUFFER_DISABLED  = 0x00000000u, //!< Disabled
+	SCE_GXM_WBUFFER_ENABLED   = 0x00004000u  //!< Enabled
 } SceGxmWBufferMode;
 
 typedef enum SceGxmDepthStencilForceLoadMode {
@@ -1077,20 +1084,21 @@ typedef enum SceGxmTransferColorKeyMode {
 	SCE_GXM_TRANSFER_COLORKEY_REJECT = 2
 } SceGxmTransferColorKeyMode;
 
+/** Transfer operation memory layouts */
 typedef enum SceGxmTransferType {
-	SCE_GXM_TRANSFER_LINEAR   = 0x00000000U,
-	SCE_GXM_TRANSFER_TILED    = 0x00400000U,
-	SCE_GXM_TRANSFER_SWIZZLED = 0x00800000U
+	SCE_GXM_TRANSFER_LINEAR   = 0x00000000U, //!< Linear memory layout.
+	SCE_GXM_TRANSFER_TILED    = 0x00400000U, //!< Tiled memory layout.
+	SCE_GXM_TRANSFER_SWIZZLED = 0x00800000U  //!< Swizzled memory layout.
 } SceGxmTransferType;
 
 typedef struct SceGxmBlendInfo {
-	uint8_t colorMask;     //!< Color Mask (One of ::SceGxmColorMask)
-	uint8_t colorFunc : 4; //!< Color blend function (One of ::SceGxmBlendFunc)
-	uint8_t alphaFunc : 4; //!< Alpha blend function (One of ::SceGxmBlendFunc)
-	uint8_t colorSrc : 4;  //!< Color source blend factor (One of ::SceGxmBlendFactor)
-	uint8_t colorDst : 4;  //!< Color destination blend factor (One of ::SceGxmBlendFactor)
-	uint8_t alphaSrc : 4;  //!< Alpha source blend factor (One of ::SceGxmBlendFactor)
-	uint8_t alphaDst : 4;  //!< Alpha destination blend factor (One of ::SceGxmBlendFactor)
+	uint8_t colorMask;     //!< Color Mask (One of ::SceGxmColorMask).
+	uint8_t colorFunc : 4; //!< Color blend function (One of ::SceGxmBlendFunc).
+	uint8_t alphaFunc : 4; //!< Alpha blend function (One of ::SceGxmBlendFunc).
+	uint8_t colorSrc : 4;  //!< Color source blend factor (One of ::SceGxmBlendFactor).
+	uint8_t colorDst : 4;  //!< Color destination blend factor (One of ::SceGxmBlendFactor).
+	uint8_t alphaSrc : 4;  //!< Alpha source blend factor (One of ::SceGxmBlendFactor).
+	uint8_t alphaDst : 4;  //!< Alpha destination blend factor (One of ::SceGxmBlendFactor).
 } SceGxmBlendInfo;
 VITASDK_BUILD_ASSERT_EQ(4, SceGxmBlendInfo);
 
@@ -1099,17 +1107,17 @@ typedef struct SceGxmRenderTarget SceGxmRenderTarget;
 typedef struct SceGxmSyncObject SceGxmSyncObject;
 
 typedef struct SceGxmVertexAttribute {
-	uint16_t streamIndex;   //!< Vertex stream index
-	uint16_t offset;        //!< Offset for the stream data in bytes
-	uint8_t format;         //!< Stream data type (One of ::SceGxmAttributeFormat)
-	uint8_t componentCount; //!< Number of components for the stream data
+	uint16_t streamIndex;   //!< Vertex stream index.
+	uint16_t offset;        //!< Offset for the stream data in bytes.
+	uint8_t format;         //!< Stream data type (One of ::SceGxmAttributeFormat).
+	uint8_t componentCount; //!< Number of components for the stream data.
 	uint16_t regIndex;      //!< The register index in the vertex shader to link stream to.
 } SceGxmVertexAttribute;
 VITASDK_BUILD_ASSERT_EQ(8, SceGxmVertexAttribute);
 
 typedef struct SceGxmVertexStream {
-	uint16_t stride;
-	uint16_t indexSource;
+	uint16_t stride; //!< Stride (in bytes) between each element of the stream.
+	uint16_t indexSource; //!< Indexing mode (One of ::SceGxmIndexSource).
 } SceGxmVertexStream;
 VITASDK_BUILD_ASSERT_EQ(4, SceGxmVertexStream);
 
@@ -1118,64 +1126,64 @@ typedef struct SceGxmTexture {
 	// Control Word 0
 	union {
 		struct { // Non LINEAR_STRIDED textures
-			uint32_t unk0 : 1;        //!< Unknown field
-			uint32_t stride_ext : 2;  //!< Stride extension for a LINEAR_STRIDED texture
-			uint32_t vaddr_mode : 3;  //!< V Address Mode
-			uint32_t uaddr_mode : 3;  //!< U Address Mode
-			uint32_t mip_filter : 1;  //!< Mip filter for a non LINEAR_STRIDED texture
-			uint32_t min_filter : 2;  //!< Min filter for a non LINEAR_STRIDED texture)
-			uint32_t mag_filter : 2;  //!< Mag Filter (and Min filter if LINEAR_STRIDED texture)
-			uint32_t unk1 : 3;        //!< Unknown field
-			uint32_t mip_count : 4;   //!< Mip count for a non LINEAR_STRIDED texture
-			uint32_t lod_bias : 6;    //!< Level of Details value for a non LINEAR_STRIDED texture
-			uint32_t gamma_mode : 2;  //!< Gamma mode
-			uint32_t unk2 : 2;        //!< Unknown field
-			uint32_t format0 : 1;     //!< Texture format extension
+			uint32_t unk0 : 1;        //!< Unknown field.
+			uint32_t stride_ext : 2;  //!< Stride extension for a LINEAR_STRIDED texture.
+			uint32_t vaddr_mode : 3;  //!< V Address Mode.
+			uint32_t uaddr_mode : 3;  //!< U Address Mode.
+			uint32_t mip_filter : 1;  //!< Mip filter for a non LINEAR_STRIDED texture.
+			uint32_t min_filter : 2;  //!< Min filter for a non LINEAR_STRIDED texture).
+			uint32_t mag_filter : 2;  //!< Mag Filter (and Min filter if LINEAR_STRIDED texture).
+			uint32_t unk1 : 3;        //!< Unknown field.
+			uint32_t mip_count : 4;   //!< Mip count for a non LINEAR_STRIDED texture.
+			uint32_t lod_bias : 6;    //!< Level of Details value for a non LINEAR_STRIDED texture.
+			uint32_t gamma_mode : 2;  //!< Gamma mode.
+			uint32_t unk2 : 2;        //!< Unknown field.
+			uint32_t format0 : 1;     //!< Texture format extension.
 		} generic;
 		struct { // LINEAR_STRIDED textures
-			uint32_t unk0 : 1;        //!< Unknown field
-			uint32_t stride_ext : 2;  //!< Stride extension for a LINEAR_STRIDED texture
-			uint32_t vaddr_mode : 3;  //!< V Address Mode
-			uint32_t uaddr_mode : 3;  //!< U Address Mode
-			uint32_t stride_low : 3;  //!< Internal stride lower bits for a LINEAR_STRIDED texture
-			uint32_t mag_filter : 2;  //!< Mag Filter (and Min filter if LINEAR_STRIDED texture)
-			uint32_t unk1 : 3;        //!< Unknown field
-			uint32_t stride : 10;     //!< Stride for a LINEAR_STRIDED texture
-			uint32_t gamma_mode : 2;  //!< Gamma mode
-			uint32_t unk2 : 2;        //!< Unknown field
-			uint32_t format0 : 1;     //!< Texture format extension
+			uint32_t unk0 : 1;        //!< Unknown field.
+			uint32_t stride_ext : 2;  //!< Stride extension for a LINEAR_STRIDED texture.
+			uint32_t vaddr_mode : 3;  //!< V Address Mode.
+			uint32_t uaddr_mode : 3;  //!< U Address Mode.
+			uint32_t stride_low : 3;  //!< Internal stride lower bits for a LINEAR_STRIDED texture.
+			uint32_t mag_filter : 2;  //!< Mag Filter (and Min filter if LINEAR_STRIDED texture).
+			uint32_t unk1 : 3;        //!< Unknown field.
+			uint32_t stride : 10;     //!< Stride for a LINEAR_STRIDED texture.
+			uint32_t gamma_mode : 2;  //!< Gamma mode.
+			uint32_t unk2 : 2;        //!< Unknown field.
+			uint32_t format0 : 1;     //!< Texture format extension.
 		} linear_strided;
 	};
 	// Control Word 1
 	union {
 		struct { // Non SWIZZLED and non CUBE textures
-			uint32_t height : 12;     //!< Texture height for non SWIZZLED and non CUBE textures
-			uint32_t width : 12;      //!< Texture width for non SWIZZLED and non CUBE textures
-			uint32_t base_format : 5; //!< Texture base format
-			uint32_t type : 3;        //!< Texture format type
+			uint32_t height : 12;     //!< Texture height for non SWIZZLED and non CUBE textures.
+			uint32_t width : 12;      //!< Texture width for non SWIZZLED and non CUBE textures.
+			uint32_t base_format : 5; //!< Texture base format.
+			uint32_t type : 3;        //!< Texture format type.
 		} generic2;
 		struct { // SWIZZLED and CUBE textures
-			uint32_t height_pot : 4;  //!< Power of 2 height value for SWIZZLED and CUBE textures
-			uint32_t reserved0 : 12;  //!< Reserved field
-			uint32_t width_pot : 4;   //!< Power of 2 width value for SWIZZLED and CUBE textures
-			uint32_t reserved1 : 4;   //!< Reserved field
-			uint32_t base_format : 5; //!< Texture base format
-			uint32_t type : 3;        //!< Texture format type
+			uint32_t height_pot : 4;  //!< Power of 2 height value for SWIZZLED and CUBE textures.
+			uint32_t reserved0 : 12;  //!< Reserved field.
+			uint32_t width_pot : 4;   //!< Power of 2 width value for SWIZZLED and CUBE textures.
+			uint32_t reserved1 : 4;   //!< Reserved field.
+			uint32_t base_format : 5; //!< Texture base format.
+			uint32_t type : 3;        //!< Texture format type.
 		} swizzled_cube;
 	};
 	// Control Word 2
-	uint32_t lod_min0 : 2;            //!< Level of Details higher bits
-	uint32_t data_addr : 30;          //!< Texture data address
+	uint32_t lod_min0 : 2;            //!< Level of Details higher bits.
+	uint32_t data_addr : 30;          //!< Texture data address.
 	// Control Word 3
-	uint32_t palette_addr : 26;       //!< Texture palette address
-	uint32_t lod_min1 : 2;            //!< Level of Details lower bits
-	uint32_t swizzle_format : 3;      //!< Texture format swizzling
-	uint32_t normalize_mode : 1;      //!< Normalize mode
+	uint32_t palette_addr : 26;       //!< Texture palette address.
+	uint32_t lod_min1 : 2;            //!< Level of Details lower bits.
+	uint32_t swizzle_format : 3;      //!< Texture format swizzling.
+	uint32_t normalize_mode : 1;      //!< Normalize mode.
 } SceGxmTexture;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceGxmTexture);
 
 typedef struct SceGxmCommandList {
-    uint32_t words[8];
+    uint32_t words[8]; //!< Internal control words.
 } SceGxmCommandList;
 VITASDK_BUILD_ASSERT_EQ(0x20, SceGxmCommandList);
 
@@ -1198,12 +1206,12 @@ VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmDepthStencilSurface);
 
 //! Represents an auxiliary surface
 typedef struct SceGxmAuxiliarySurface {
-	uint32_t colorFormat; //!< Format of auxiliary surface data from SceGxmColorFormat
-	uint32_t type;        //!< Memory layout of the surface data from SceGxmColorSurfaceType
-	uint32_t width;       //!< Surface width
-	uint32_t height;      //!< Surface height
-	uint32_t stride;      //!< Surface stride in bytes
-	void *data;           //!< A pointer to the surface data
+	uint32_t colorFormat; //!< Format of auxiliary surface data from SceGxmColorFormat.
+	uint32_t type;        //!< Memory layout of the surface data from SceGxmColorSurfaceType.
+	uint32_t width;       //!< Surface width.
+	uint32_t height;      //!< Surface height.
+	uint32_t stride;      //!< Surface stride in bytes.
+	void *data;           //!< A pointer to the surface data.
 } SceGxmAuxiliarySurface;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceGxmAuxiliarySurface);
 
@@ -1214,8 +1222,8 @@ typedef struct SceGxmNotification {
 VITASDK_BUILD_ASSERT_EQ(8, SceGxmNotification);
 
 typedef struct SceGxmValidRegion {
-	uint32_t xMax;
-	uint32_t yMax;
+	uint32_t xMax; //!< Maximum X value of the region in pixels.
+	uint32_t yMax; //!< Maximum Y value of the region in pixels.
 } SceGxmValidRegion;
 VITASDK_BUILD_ASSERT_EQ(8, SceGxmValidRegion);
 
@@ -1392,9 +1400,9 @@ typedef struct SceGxmRenderTargetParams {
 	uint16_t width;	                //!< The width of the render target in pixels.
 	uint16_t height;                //!< The height of the render target in pixels.
 	uint16_t scenesPerFrame;        //!< The expected number of scenes per frame, in the range [1,SCE_GXM_MAX_SCENES_PER_RENDERTARGET].
-	uint16_t multisampleMode;       //!< A value from the #SceGxmMultisampleMode enum.
+	uint16_t multisampleMode;       //!< Multisample mode to use (One of ::SceGxmMultisampleMode).
 	uint32_t multisampleLocations;  //!< If enabled in the flags, the multisample locations to use.
-	SceUID driverMemBlock;          //!< The uncached LPDDR memblock for the render target GPU data structures or SCE_UID_INVALID_UID to specify memory should be allocated in libgxm.
+	SceUID driverMemBlock;          //!< The uncached LPDDR memblock for the render target GPU data structures or SCE_UID_INVALID_UID to specify memory should be allocated in sceGxm.
 } SceGxmRenderTargetParams;
 VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmRenderTargetParams);
 
@@ -1405,7 +1413,7 @@ VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmRenderTargetParams);
  *
  * @return 0 on success, < 0 on error.
  * @note - flags field in the params struct must be set to SCE_GXM_INITIALIZE_FLAG_DEFAULT.
-*/
+ */
 int sceGxmInitialize(const SceGxmInitializeParams *params);
 
 /**
@@ -1414,14 +1422,14 @@ int sceGxmInitialize(const SceGxmInitializeParams *params);
  * @param[in] params - Pointer to a ::SceGxmInitializeParams structure.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmVshInitialize(const SceGxmInitializeParams *params);
 
 /**
  * Terminate sceGxm library.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmTerminate();
 
 volatile unsigned int *sceGxmGetNotificationRegion();
@@ -1435,7 +1443,7 @@ int sceGxmNotificationWait(const SceGxmNotification *notification);
  * @param[in] attr - GPU read/write privileges to assign to the memory region.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmMapMemory(void *base, SceSize size, SceGxmMemoryAttribFlags attr);
 
 /**
@@ -1444,7 +1452,7 @@ int sceGxmMapMemory(void *base, SceSize size, SceGxmMemoryAttribFlags attr);
  * @param[in] base - Base address of the memory region to unmap.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmUnmapMemory(void *base);
 
 /**
@@ -1455,7 +1463,7 @@ int sceGxmUnmapMemory(void *base);
  * @param[out] offset - Resulting offset for the given memory region, to be used with ::sceGxmShaderPatcherCreate.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmMapVertexUsseMemory(void *base, SceSize size, unsigned int *offset);
 
 /**
@@ -1464,7 +1472,7 @@ int sceGxmMapVertexUsseMemory(void *base, SceSize size, unsigned int *offset);
  * @param[in] base - Base address of the memory region to unmap.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmUnmapVertexUsseMemory(void *base);
 
 /**
@@ -1475,7 +1483,7 @@ int sceGxmUnmapVertexUsseMemory(void *base);
  * @param[out] offset - Resulting offset for the given memory region, to be used with ::sceGxmShaderPatcherCreate.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmMapFragmentUsseMemory(void *base, SceSize size, unsigned int *offset);
 
 /**
@@ -1484,7 +1492,7 @@ int sceGxmMapFragmentUsseMemory(void *base, SceSize size, unsigned int *offset);
  * @param[in] base - Base address of the memory region to unmap.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmUnmapFragmentUsseMemory(void *base);
 
 /**
@@ -1495,14 +1503,14 @@ int sceGxmUnmapFragmentUsseMemory(void *base);
  * @param[in] callbackData - Data to send to the display swap callback.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmDisplayQueueAddEntry(SceGxmSyncObject *oldBuffer, SceGxmSyncObject *newBuffer, const void *callbackData);
 
 /**
  * Wait until all pending display swaps finished.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmDisplayQueueFinish();
 
 /**
@@ -1511,7 +1519,7 @@ int sceGxmDisplayQueueFinish();
  * @param[out] syncObject - Pointer to the newly created synchronization object.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmSyncObjectCreate(SceGxmSyncObject **syncObject);
 
 /**
@@ -1520,7 +1528,7 @@ int sceGxmSyncObjectCreate(SceGxmSyncObject **syncObject);
  * @param[in] syncObject - Pointer to the synchronization object to destroy.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmSyncObjectDestroy(SceGxmSyncObject *syncObject);
 
 /**
@@ -1530,7 +1538,7 @@ int sceGxmSyncObjectDestroy(SceGxmSyncObject *syncObject);
  * @param[out] context - Pointer to the created sceGxm context. 
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmCreateContext(const SceGxmContextParams *params, SceGxmContext **context);
 
 /**
@@ -1539,7 +1547,7 @@ int sceGxmCreateContext(const SceGxmContextParams *params, SceGxmContext **conte
  * @param[in] context - Pointer to the context to destroy.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmDestroyContext(SceGxmContext *context);
 
 /**
@@ -1549,7 +1557,7 @@ int sceGxmDestroyContext(SceGxmContext *context);
  * @param[out] context - Pointer to the created sceGxm context. 
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmCreateDeferredContext(const SceGxmDeferredContextParams *params, SceGxmContext **context);
 
 /**
@@ -1558,7 +1566,7 @@ int sceGxmCreateDeferredContext(const SceGxmDeferredContextParams *params, SceGx
  * @param[in] context - Pointer to the context to destroy.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 int sceGxmDestroyDeferredContext(SceGxmContext *context);
 
 /**
@@ -1569,7 +1577,7 @@ int sceGxmDestroyDeferredContext(SceGxmContext *context);
  *
  * @return 0 on success, < 0 on error.
  * @note This function has effect only when debug version of sceGxm is being used.
-*/
+ */
 void sceGxmSetValidationEnable(SceGxmContext *context, SceBool enable);
 
 /**
@@ -1579,7 +1587,7 @@ void sceGxmSetValidationEnable(SceGxmContext *context, SceBool enable);
  * @param[in] vertexProgram - The vertex shader program to activate.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 void sceGxmSetVertexProgram(SceGxmContext *context, const SceGxmVertexProgram *vertexProgram);
 
 /**
@@ -1589,7 +1597,7 @@ void sceGxmSetVertexProgram(SceGxmContext *context, const SceGxmVertexProgram *v
  * @param[in] fragmentProgram - The fragment shader program to activate.
  *
  * @return 0 on success, < 0 on error.
-*/
+ */
 void sceGxmSetFragmentProgram(SceGxmContext *context, const SceGxmFragmentProgram *fragmentProgram);
 
 int sceGxmReserveVertexDefaultUniformBuffer(SceGxmContext *context, void **uniformBuffer);
@@ -1598,9 +1606,39 @@ int sceGxmReserveFragmentDefaultUniformBuffer(SceGxmContext *context, void **uni
 int sceGxmSetVertexDefaultUniformBuffer(SceGxmContext *context, const void *uniformBuffer);
 int sceGxmSetFragmentDefaultUniformBuffer(SceGxmContext *context, const void *uniformBuffer);
 
+/**
+ * Set an active vertex stream for future draw calls.
+ *
+ * @param[in] context - The sceGxm context to use.
+ * @param[in] streamIndex - The vertex stream index to bind.
+ * @param[in] streamData - The data to pass on the given vertex stream.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceGxmSetVertexStream(SceGxmContext *context, unsigned int streamIndex, const void *streamData);
+
+/**
+ * Set an active texture for vertex shader stage for future draw calls.
+ *
+ * @param[in] context - The sceGxm context to use.
+ * @param[in] textureIndex - The texture unit to bind.
+ * @param[in] texture - The texture to bind to the given texture unit.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceGxmSetVertexTexture(SceGxmContext *context, unsigned int textureIndex, const SceGxmTexture *texture);
+
+/**
+ * Set an active texture for fragment shader stage for future draw calls.
+ *
+ * @param[in] context - The sceGxm context to use.
+ * @param[in] textureIndex - The texture unit to bind.
+ * @param[in] texture - The texture to bind to the given texture unit.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceGxmSetFragmentTexture(SceGxmContext *context, unsigned int textureIndex, const SceGxmTexture *texture);
+
 int sceGxmSetVertexUniformBuffer(SceGxmContext *context, unsigned int bufferIndex, const void *bufferData);
 int sceGxmSetFragmentUniformBuffer(SceGxmContext *context, unsigned int bufferIndex, const void *bufferData);
 int sceGxmSetAuxiliarySurface(SceGxmContext *context, unsigned int surfaceIndex, const SceGxmAuxiliarySurface *surface);
@@ -1617,8 +1655,33 @@ int sceGxmBeginScene(SceGxmContext *context, unsigned int flags, const SceGxmRen
 int sceGxmMidSceneFlush(SceGxmContext *context, unsigned int flags, SceGxmSyncObject *vertexSyncObject, const SceGxmNotification *vertexNotification);
 int sceGxmEndScene(SceGxmContext *context, const SceGxmNotification *vertexNotification, const SceGxmNotification *fragmentNotification);
 
+/**
+ * Init generation of a new command list.
+ *
+ * @param[in] context - The sceGxm context to use.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceGxmBeginCommandList(SceGxmContext *context);
+
+/**
+ * Execute a command list.
+ *
+ * @param[in] context - The sceGxm context to use.
+ * @param[in] list - The command list to execute.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceGxmExecuteCommandList(SceGxmContext *context, SceGxmCommandList *list);
+
+/**
+ * Finalize the generation of a new command list.
+ *
+ * @param[in] context - The sceGxm context to use.
+ * @param[out] list - The finalized command list. Can be executed with ::sceGxmExecuteCommandList.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int sceGxmEndCommandList(SceGxmContext *context, SceGxmCommandList *list);
 
 void sceGxmSetFrontDepthFunc(SceGxmContext *context, SceGxmDepthFunc depthFunc);
@@ -1657,6 +1720,13 @@ void sceGxmSetBackVisibilityTestEnable(SceGxmContext *context, SceGxmVisibilityT
 
 int sceGxmSetYuvProfile(SceGxmContext *context, unsigned int index, SceGxmYuvProfile profile);
 
+/**
+ * Block CPU execution until GPU finished rendering.
+ *
+ * @param[in] context - The sceGxm context to use.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 void sceGxmFinish(SceGxmContext *context);
 
 int sceGxmPushUserMarker(SceGxmContext *context, const char *tag);
