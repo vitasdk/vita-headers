@@ -740,7 +740,7 @@ typedef enum SceGxmTextureFormat {
 	SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP_ABGR = SCE_GXM_TEXTURE_BASE_FORMAT_PVRTII4BPP | SCE_GXM_TEXTURE_SWIZZLE4_ABGR,
 	SCE_GXM_TEXTURE_FORMAT_PVRTII4BPP_1BGR = SCE_GXM_TEXTURE_BASE_FORMAT_PVRTII4BPP | SCE_GXM_TEXTURE_SWIZZLE4_1BGR,
 
-	SCE_GXM_TEXTURE_FORMAT_ETC1_RGB = SCE_GXM_TEXTURE_BASE_FORMAT_ETC1,
+	SCE_GXM_TEXTURE_FORMAT_ETC1_1BGR = SCE_GXM_TEXTURE_BASE_FORMAT_ETC1,
 
 	SCE_GXM_TEXTURE_FORMAT_UBC1_ABGR = SCE_GXM_TEXTURE_BASE_FORMAT_UBC1 | SCE_GXM_TEXTURE_SWIZZLE4_ABGR,
 	SCE_GXM_TEXTURE_FORMAT_UBC1_1BGR = SCE_GXM_TEXTURE_BASE_FORMAT_UBC1 | SCE_GXM_TEXTURE_SWIZZLE4_1BGR,
@@ -1116,7 +1116,7 @@ typedef struct SceGxmVertexAttribute {
 VITASDK_BUILD_ASSERT_EQ(8, SceGxmVertexAttribute);
 
 typedef struct SceGxmVertexStream {
-	uint16_t stride; //!< Stride (in bytes) between each element of the stream.
+	uint16_t stride;      //!< Stride (in bytes) between each element of the stream.
 	uint16_t indexSource; //!< Indexing mode (One of ::SceGxmIndexSource).
 } SceGxmVertexStream;
 VITASDK_BUILD_ASSERT_EQ(4, SceGxmVertexStream);
