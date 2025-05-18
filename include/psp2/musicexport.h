@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceMusicExport}
- * \usage{psp2/musicexport.h,SceMusicExport_stub}
+ * \usage{psp2/musicexport.h,SceMusicExport_stub,SCE_SYSMODULE_MUSIC_EXPORT}
  */
 
 

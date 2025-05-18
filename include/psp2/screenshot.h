@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceScreenShot}
- * \usage{psp2/screenshot.h,SceScreenShot_stub}
+ * \usage{psp2/screenshot.h,SceScreenShot_stub,SCE_SYSMODULE_SCREEN_SHOT}
  */
 
 

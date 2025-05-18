@@ -245,7 +245,7 @@ public:
 	Value& back() const;
 
 	/**
-	 * Will empty the Array, removing all child valus.
+	 * Will empty the Array, removing all child values.
 	 */
 	void clear();
 	/**

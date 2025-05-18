@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceVideoExport}
- * \usage{psp2/videoexport.h,SceVideoExport_stub}
+ * \usage{psp2/videoexport.h,SceVideoExport_stub,SCE_SYSMODULE_VIDEO_EXPORT}
  */
 
 
