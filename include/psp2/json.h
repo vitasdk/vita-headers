@@ -245,7 +245,7 @@ public:
 	Value& back() const;
 
 	/**
-	 * Will empty the Array, removing all child valus.
+	 * Will empty the Array, removing all child values.
 	 */
 	void clear();
 	/**
@@ -264,7 +264,7 @@ public:
 	 */
 	SceSize size() const;
 	/**
-	 * Is the array empty.
+	 * Checks if the array is empty.
 	 *
 	 * @return  true if empty, false otherwise.
 	 */
