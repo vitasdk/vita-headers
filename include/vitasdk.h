@@ -53,6 +53,8 @@
 #include <psp2/pamgr.h>
 #include <psp2/perf.h>
 #include <psp2/pgf.h>
+#include <psp2/photo_review_dialog.h>
+#include <psp2/photo_import_dialog.h>
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
 #include <psp2/promoterutil.h>
