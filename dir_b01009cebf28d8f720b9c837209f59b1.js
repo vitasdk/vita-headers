@@ -53,6 +53,8 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "pamgr.h", "pamgr_8h.html", "pamgr_8h" ],
     [ "perf.h", "perf_8h.html", "perf_8h" ],
     [ "pgf.h", "pgf_8h.html", "pgf_8h" ],
+    [ "photo_import_dialog.h", "photo__import__dialog_8h.html", "photo__import__dialog_8h" ],
+    [ "photo_review_dialog.h", "photo__review__dialog_8h.html", "photo__review__dialog_8h" ],
     [ "photoexport.h", "photoexport_8h.html", "photoexport_8h" ],
     [ "power.h", "psp2_2power_8h.html", "psp2_2power_8h" ],
     [ "promoterutil.h", "promoterutil_8h.html", "promoterutil_8h" ],
