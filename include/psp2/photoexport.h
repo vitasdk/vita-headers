@@ -1,6 +1,6 @@
 /**
  * \usergroup{ScePhotoExport}
- * \usage{psp2/photoexport.h,ScePhotoExport_stub}
+ * \usage{psp2/photoexport.h,ScePhotoExport_stub,SCE_SYSMODULE_PHOTO_EXPORT}
  */
 
 
