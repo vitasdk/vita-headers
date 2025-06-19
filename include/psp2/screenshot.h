@@ -52,6 +52,33 @@ typedef struct SceScreenShotParam {
 } SceScreenShotParam;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceScreenShotParam);
 
+/* Mode for screenshot capture */
+typedef enum SceScreenShotCaptureMode {
+	SCE_SCREENSHOT_CAPTURE_MODE_NORMAL           = 0,
+	SCE_SCREENSHOT_CAPTURE_MODE_FORCE_CAPTURE    = 1,
+} SceScreenShotCaptureMode;
+
+/* Screenshot capture file information */
+typedef struct SceScreenShotCaptureFileInfo {
+	SceChar8 path[SCE_SCREENSHOT_MAX_FS_PATH];    /* path of capture file */
+} SceScreenShotCaptureFileInfo;
+
+/* Disable screenshot notification */
+SceInt32 sceScreenShotDisableNotification(void);
+
+/* Enable screenshot notification */
+SceInt32 sceScreenShotEnableNotification(void);
+
+/* Callback function */
+typedef SceBool (*SceScreenShotCaptureCancelFunc)(void*);
+
+/* Capture screenshot */
+SceInt32 sceScreenShotCapture(
+	SceScreenShotCaptureMode mode,
+	SceScreenShotCaptureFileInfo *captureFileInfo,
+	SceScreenShotCaptureCancelFunc cancelFunc,
+	void *userdata);
+
 //! Set screenshot params
 int sceScreenShotSetParam(const SceScreenShotParam *param);
 
