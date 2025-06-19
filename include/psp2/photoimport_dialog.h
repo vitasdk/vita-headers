@@ -1,5 +1,5 @@
 /**
- * \usergroup{ScePhotoImportDialig}
+ * \usergroup{ScePhotoImportDialog}
  * \usage{psp2/photo_import_dialog.h,SceCommonDialog_stub}
  */
 
