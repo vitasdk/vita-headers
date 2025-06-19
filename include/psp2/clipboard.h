@@ -2,9 +2,11 @@
  * \usergroup{SceClipboard}
  * \usage{psp2/clipboard.h,SceClipboard_stub,SCE_SYSMODULE_CLIPBOARD}
  */
+
 #ifndef _PSP2_CLIPBOARD_H
 #define _PSP2_CLIPBOARD_H
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2/libime.h>
 
