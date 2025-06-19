@@ -19,6 +19,7 @@
 #include <psp2/common_dialog.h>
 #include <psp2/compat.h>
 #include <psp2/ctrl.h>
+#include <psp2/clipboard.h>
 #include <psp2/display.h>
 #include <psp2/dmac5.h>
 #include <psp2/fiber.h>
@@ -53,8 +54,8 @@
 #include <psp2/pamgr.h>
 #include <psp2/perf.h>
 #include <psp2/pgf.h>
-#include <psp2/photo_review_dialog.h>
-#include <psp2/photo_import_dialog.h>
+#include <psp2/photoreview_dialog.h>
+#include <psp2/photoimport_dialog.h>
 #include <psp2/photoexport.h>
 #include <psp2/power.h>
 #include <psp2/promoterutil.h>
