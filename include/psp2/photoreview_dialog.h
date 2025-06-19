@@ -1,5 +1,5 @@
 /**
- * \usergroup{ScePhotoReviewDialig}
+ * \usergroup{ScePhotoReviewDialog}
  * \usage{psp2/photo_review_dialog.h,SceCommonDialog_stub}
  */
 
