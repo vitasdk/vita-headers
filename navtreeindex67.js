@@ -1,15 +1,5 @@
 var NAVTREEINDEX67 =
 {
-"psp2kern_2udcd_8h.html":[4,0,1,2,21],
-"psp2kern_2udcd_8h_source.html":[4,0,1,2,21],
-"psp2kern_2usbd_8h.html":[4,0,1,2,22],
-"psp2kern_2usbd_8h_source.html":[4,0,1,2,22],
-"psp2kern_2usbserial_8h.html":[4,0,1,2,23],
-"psp2kern_2usbserial_8h_source.html":[4,0,1,2,23],
-"psp2kern_2usbserv_8h.html":[4,0,1,2,24],
-"psp2kern_2usbserv_8h_source.html":[4,0,1,2,24],
-"pspnet__adhoc_8h.html":[4,0,1,0,58],
-"pspnet__adhoc_8h_source.html":[4,0,1,0,58],
 "pspnet__adhocctl_8h.html":[4,0,1,0,59],
 "pspnet__adhocctl_8h_source.html":[4,0,1,0,59],
 "pss_8h.html":[4,0,1,0,60],

@@ -1,15 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"group__SceUtilsKernel.html#gae6826ff5b21181f1bc360269ec4be1ef":[1,7,16,0,31],
-"group__SceUtilsKernel.html#gaee0176a2e12e95e6d8bef46f910258d6":[1,7,16,0,34],
-"group__SceUtilsKernel.html#gaefa001b717d2d03d845eb3875c68536b":[1,7,16,0,46],
-"group__SceUtilsKernel.html#gaefa0c06e10fd04d88199d8cb3cdb0f3c":[1,7,16,0,28],
-"group__SceUtilsKernel.html#gaf0d21504b3944cdd86bb545bad3c96e6":[1,7,16,0,59],
-"group__SceUtilsKernel.html#gaf720465236d4d2d211cf7ecb416c51bb":[1,7,16,0,51],
-"group__SceUtilsKernel.html#gaf9868d88f3effd357f620840dcaace86":[1,7,16,0,35],
-"group__SceUtilsKernel.html#gafe9394125f9b64385b3dd6e0ea57b66a":[1,7,16,0,72],
-"group__SceUtilsKernel.html#structSceAesContext":[1,7,16,0,4],
-"group__SceUtilsKernel.html#structSceDeflatePartialInputParam":[1,7,16,0,3],
 "group__SceUtilsKernel.html#structSceSha1Context":[1,7,16,0,0],
 "group__SceUtilsKernel.html#structSceSha224Context":[1,7,16,0,1],
 "group__SceUtilsKernel.html#structSceSha256Context":[1,7,16,0,2],
@@ -249,5 +239,15 @@ var NAVTREEINDEX63 =
 "group__SceVfsKernel.html#ga813e051f0ee902e48beb31bb5986b1df":[1,4,7,0,305],
 "group__SceVfsKernel.html#ga82df5c046ef2a8cb21884198c62e2c70":[1,4,7,0,176],
 "group__SceVfsKernel.html#ga82dfc79129c876abce98d3d108b35450":[1,4,7,0,83],
-"group__SceVfsKernel.html#ga82f71fae6746479fcf493b0cd20041da":[1,4,7,0,343]
+"group__SceVfsKernel.html#ga82f71fae6746479fcf493b0cd20041da":[1,4,7,0,343],
+"group__SceVfsKernel.html#ga8314e9dfc99f0d3893c42f6789f9142d":[1,4,7,0,158],
+"group__SceVfsKernel.html#ga836aac8896fe3735780564ffea87f4d9":[1,4,7,0,206],
+"group__SceVfsKernel.html#ga8423d72c93e09feab3d01844727ee5a5":[1,4,7,0,204],
+"group__SceVfsKernel.html#ga84270f21002898ab245346adb7cd22f0":[1,4,7,0,331],
+"group__SceVfsKernel.html#ga845b0c59847a9884ec673c763578ec27":[1,4,7,0,362],
+"group__SceVfsKernel.html#ga84cc1b939905eba760c7f8366f5d9ec8":[1,4,7,0,80],
+"group__SceVfsKernel.html#ga854ecdfdf3f8ccdfd19b7c51e6c2fe06":[1,4,7,0,255],
+"group__SceVfsKernel.html#ga873a2eefb6fc92b319cb90dce45e325e":[1,4,7,0,161],
+"group__SceVfsKernel.html#ga87964488ac7aabcee293b5a38093dbdd":[1,4,7,0,152],
+"group__SceVfsKernel.html#ga8798bc618fade49bf13a1acd96400090":[1,4,7,0,398]
 };

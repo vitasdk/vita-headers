@@ -1,15 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"group__SceSysmemKernel.html#ga161598d20b1cd5cbaf22b756c0af9f30":[1,7,9,1,71],
-"group__SceSysmemKernel.html#ga1778dbe073a248538762e8e45cf20334":[1,7,9,1,72],
-"group__SceSysmemKernel.html#ga18316936595ce50e304c8e5e60ecbdc0":[1,7,9,1,51],
-"group__SceSysmemKernel.html#ga1881e34c72501fb4c877748a3794c9bc":[1,7,9,1,35],
-"group__SceSysmemKernel.html#ga1917a3dfcd8b8193079624ba4b02fad9":[1,7,9,1,205],
-"group__SceSysmemKernel.html#ga1940288651419e73d3260af5f9d9769f":[1,7,9,1,130],
-"group__SceSysmemKernel.html#ga1973f41f15c2294bb4d2f31f06c96ef1":[1,7,9,1,212],
-"group__SceSysmemKernel.html#ga1a666280f06c9ccfe84782f9577af2c7":[1,7,9,1,79],
-"group__SceSysmemKernel.html#ga1abc42422ed6fdd79c415bad2bd8c068":[1,7,9,1,92],
-"group__SceSysmemKernel.html#ga1cf7304571b0626d6ddcd77cc6f923bc":[1,7,9,1,141],
 "group__SceSysmemKernel.html#ga1d08cf0a1dc1804d7ae09763c8aab190":[1,7,9,1,207],
 "group__SceSysmemKernel.html#ga1d1185f69d5a0a164b4af22b5d9f3fcf":[1,7,9,1,95],
 "group__SceSysmemKernel.html#ga1dd7c94a15b29d3e3bed2f3fe970542f":[1,7,9,1,96],
@@ -249,5 +239,15 @@ var NAVTREEINDEX52 =
 "group__SceSysmemKernel.html#gae2318d3c2d83e29bb80e7a5963d532d8":[1,7,9,1,134],
 "group__SceSysmemKernel.html#gae2e9eec1aef8b2bdba4cd030ad61e2db":[1,7,9,1,80],
 "group__SceSysmemKernel.html#gae5d09f93e3ea8b124a02f5a83bff6686":[1,7,9,1,231],
-"group__SceSysmemKernel.html#gae5f95bb604fd2dd4d7895e8ab453d086":[1,7,9,1,302]
+"group__SceSysmemKernel.html#gae5f95bb604fd2dd4d7895e8ab453d086":[1,7,9,1,302],
+"group__SceSysmemKernel.html#gae66f407596196cf47942f4c44bf4060f":[1,7,9,1,111],
+"group__SceSysmemKernel.html#gae6a63870cc76a7bdd96640ca3b9fa27b":[1,7,9,1,318],
+"group__SceSysmemKernel.html#gae96dbe7ae8d0e693b0b337fc5083ddc5":[1,7,9,1,23],
+"group__SceSysmemKernel.html#gaeb4f91ed5ef28fdbe046592e8d7269f2":[1,7,9,1,206],
+"group__SceSysmemKernel.html#gaec7a983b281841e13ecd97aa809ac8b3":[1,7,9,1,293],
+"group__SceSysmemKernel.html#gaecc87abfb92794a8fe0b31b1c75aa583":[1,7,9,1,273],
+"group__SceSysmemKernel.html#gaecf4a31bf83c9c13adc8a6b62ad3933d":[1,7,9,1,113],
+"group__SceSysmemKernel.html#gaed7865d1ea53b6e4927a0db57086f1f2":[1,7,9,1,249],
+"group__SceSysmemKernel.html#gaee8ef626957de1b3b3b26f3c1d81f86d":[1,7,9,1,163],
+"group__SceSysmemKernel.html#gaeeb136543f4bc5f7783ea0f413442eea":[1,7,9,1,190]
 };

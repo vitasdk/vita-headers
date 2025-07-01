@@ -1,15 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1ddaf0a6445a9822a71655253120afc49e68":[1,11,12,0,3],
-"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1ddaf0a6445a9822a71655253120afc49e68":[1,11,12,0,0,2],
-"group__SystemFunction.html":[1,5],
-"group__SystemParams.html":[1,13],
-"group__SystemStatus.html":[1,11],
-"group__USB.html":[1,12],
-"group__Vitasdk.html":[1,14],
-"group__debug.html":[1,9],
-"group__kernel.html":[1,7],
-"group__update.html":[1,8],
 "gxm_8h.html":[4,0,1,0,25],
 "gxm_8h_source.html":[4,0,1,0,25],
 "gxt_8h.html":[4,0,1,0,26],
@@ -249,5 +239,15 @@ var NAVTREEINDEX66 =
 "psp2kern_2touch_8h.html":[4,0,1,2,19],
 "psp2kern_2touch_8h_source.html":[4,0,1,2,19],
 "psp2kern_2types_8h.html":[4,0,1,2,20],
-"psp2kern_2types_8h_source.html":[4,0,1,2,20]
+"psp2kern_2types_8h_source.html":[4,0,1,2,20],
+"psp2kern_2udcd_8h.html":[4,0,1,2,21],
+"psp2kern_2udcd_8h_source.html":[4,0,1,2,21],
+"psp2kern_2usbd_8h.html":[4,0,1,2,22],
+"psp2kern_2usbd_8h_source.html":[4,0,1,2,22],
+"psp2kern_2usbserial_8h.html":[4,0,1,2,23],
+"psp2kern_2usbserial_8h_source.html":[4,0,1,2,23],
+"psp2kern_2usbserv_8h.html":[4,0,1,2,24],
+"psp2kern_2usbserv_8h_source.html":[4,0,1,2,24],
+"pspnet__adhoc_8h.html":[4,0,1,0,58],
+"pspnet__adhoc_8h_source.html":[4,0,1,0,58]
 };

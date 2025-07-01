@@ -33,13 +33,6 @@ var psp2common_2power_8h =
       [ "SCE_POWER_CB_VALID_MASK_SYSTEM", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa19a293e3322326c34b83ee213f2e3dd6", null ],
       [ "SCE_POWER_CB_VALID_MASK_NON_SYSTEM", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa3549a7f7d1f6d6501bde384da788138e", null ]
     ] ],
-    [ "ScePowerConfigurationMode", "group__ScePowerKernel.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce", [
-      [ "SCE_POWER_CONFIGURATION_MODE_A", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed", null ],
-      [ "SCE_POWER_CONFIGURATION_MODE_B", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c", null ],
-      [ "SCE_POWER_CONFIGURATION_MODE_C", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489", null ],
-      [ "__SCE_POWER_CONFIGURATION_MODE", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaec9d923ec7b6718967dd4996e2b7f6e2", null ]
-    ] ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#gad876c05b362c75ddca59445510cc2ee5", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#ga0c5ea02b55616974c43d3d7cd3b8a37b", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#ga0e788a12f8b9557b969255b7c0e51fee", null ]
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#ga0c5ea02b55616974c43d3d7cd3b8a37b", null ]
 ];

@@ -33,12 +33,6 @@ var group__ScePowerKernel =
       [ "SCE_POWER_CB_VALID_MASK_SYSTEM", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa19a293e3322326c34b83ee213f2e3dd6", null ],
       [ "SCE_POWER_CB_VALID_MASK_NON_SYSTEM", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa3549a7f7d1f6d6501bde384da788138e", null ]
     ] ],
-    [ "ScePowerConfigurationMode", "group__ScePowerKernel.html#gaa2bcfd45ea2a6c6e97ecc3145bbc45ce", [
-      [ "SCE_POWER_CONFIGURATION_MODE_A", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed", null ],
-      [ "SCE_POWER_CONFIGURATION_MODE_B", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c", null ],
-      [ "SCE_POWER_CONFIGURATION_MODE_C", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489", null ],
-      [ "__SCE_POWER_CONFIGURATION_MODE", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaec9d923ec7b6718967dd4996e2b7f6e2", null ]
-    ] ],
     [ "SCE_POWER_ERROR_INVALID_VALUE", "group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80a874bfa0b07b53c143f5067f7df30d96e", null ],
     [ "SCE_POWER_ERROR_ALREADY_REGISTERED", "group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80a8be62fc5af9b4bfcb9899c34b7972f1c", null ],
     [ "SCE_POWER_ERROR_CALLBACK_NOT_REGISTERED", "group__ScePowerKernel.html#gga1c8753ba9797fab72c09a1f22e33dc80a694f41335d884b6b5e8733e93b15b770", null ],
@@ -67,13 +61,8 @@ var group__ScePowerKernel =
     [ "SCE_POWER_CB_VALID_MASK_KERNEL", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aaf93a1b30664f14d1a4758a6765695aca", null ],
     [ "SCE_POWER_CB_VALID_MASK_SYSTEM", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa19a293e3322326c34b83ee213f2e3dd6", null ],
     [ "SCE_POWER_CB_VALID_MASK_NON_SYSTEM", "group__ScePowerKernel.html#gga87add7efd8177f03fecc6fdf9233c57aa3549a7f7d1f6d6501bde384da788138e", null ],
-    [ "SCE_POWER_CONFIGURATION_MODE_A", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cead6f7c730e25ea472927c75ef6037b9ed", null ],
-    [ "SCE_POWER_CONFIGURATION_MODE_B", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaf03f8808a2c611923ee4b48f729e155c", null ],
-    [ "SCE_POWER_CONFIGURATION_MODE_C", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45cea66d3ee9602495d73f7e2e4a676f9b489", null ],
-    [ "__SCE_POWER_CONFIGURATION_MODE", "group__ScePowerKernel.html#ggaa2bcfd45ea2a6c6e97ecc3145bbc45ceaec9d923ec7b6718967dd4996e2b7f6e2", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#gad876c05b362c75ddca59445510cc2ee5", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#ga0c5ea02b55616974c43d3d7cd3b8a37b", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__ScePowerKernel.html#ga0e788a12f8b9557b969255b7c0e51fee", null ],
     [ "kscePowerRegisterCallback", "group__ScePowerKernel.html#ga4bc1a0655e5983f2e5dec68b5bae3f8b", null ],
     [ "kscePowerUnregisterCallback", "group__ScePowerKernel.html#ga056bb04e0e62fd134156b746889adf41", null ],
     [ "kscePowerIsBatteryCharging", "group__ScePowerKernel.html#ga9ef0d9952ff9bc4d771d5b20e3bdecb0", null ],

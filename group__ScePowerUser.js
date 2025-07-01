@@ -4,7 +4,7 @@ var group__ScePowerUser =
     [ "scePowerUnregisterCallback", "group__ScePowerUser.html#ga5a9c0154c265e0f011ad09f679176714", null ],
     [ "scePowerIsBatteryCharging", "group__ScePowerUser.html#gafaa0e75b6d63ef96afa0121695361e08", null ],
     [ "scePowerGetBatteryLifePercent", "group__ScePowerUser.html#ga2cab7e5112f52d930d2bd6d45872a8a4", null ],
-    [ "scePowerSetConfigurationMode", "group__ScePowerUser.html#ga9c95226b6af51ff89c04b61ee1fe01da", null ],
+    [ "scePowerSetConfigurationMode", "group__ScePowerUser.html#gaa0d74be80d0753a60a66ddc87ab19596", null ],
     [ "scePowerIsSuspendRequired", "group__ScePowerUser.html#ga70b22089c1e4e0ae2c823b026109ad9f", null ],
     [ "scePowerIsPowerOnline", "group__ScePowerUser.html#gae26d2c35668cf682c0d69e3b4ce35087", null ],
     [ "scePowerGetBatteryLifeTime", "group__ScePowerUser.html#ga15a0a268309a717cb9032a832c1b5fa6", null ],

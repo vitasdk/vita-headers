@@ -248,6 +248,6 @@ var NAVTREEINDEX1 =
 "group__SceAppMgrUser.html#gafc66fcb411ff80b645d319e641aab567":[1,11,0,0,9],
 "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8":[1,11,0,0,39],
 "group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa2f720d02bf856686b29f5b8cf7aed1b8":[1,11,0,0,19,1],
-"group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921":[1,11,0,0,19,2],
-"group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921":[1,11,0,0,40]
+"group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921":[1,11,0,0,40],
+"group__SceAppMgrUser.html#gga18739681c0ec91f312f17120af3a155aa35e808bd2b368e428fa775ebda596921":[1,11,0,0,19,2]
 };
