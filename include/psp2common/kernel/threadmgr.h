@@ -46,6 +46,11 @@ typedef enum SceThreadStatus {
 	SCE_THREAD_SUSPENDED = 256
 } SceThreadStatus;
 
+typedef enum SceKernelThreadEventType {
+	SCE_KERNEL_THREAD_EVENT_TYPE_START = 0x00000004,
+	SCE_KERNEL_THREAD_EVENT_TYPE_EXIT  = 0x00000008
+} SceKernelThreadEventType;
+
 /** Statistics about a running thread.
  * @see sceKernelGetThreadRunStatus.
  */
@@ -60,6 +65,8 @@ typedef struct SceKernelThreadRunStatus {
 VITASDK_BUILD_ASSERT_EQ(0x34, SceKernelThreadRunStatus);
 
 typedef int (* SceKernelThreadEntry)(SceSize args, void *argp);
+
+typedef int (* SceKernelThreadEventHandler)(SceInt32 type, SceUID threadId, SceInt32 arg, void *pCommon);
 
 /** Additional options used when creating threads. */
 typedef struct SceKernelThreadOptParam {
