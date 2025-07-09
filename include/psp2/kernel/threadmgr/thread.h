@@ -248,6 +248,28 @@ int sceKernelGetThreadId(void);
  */
 SceUID sceKernelGetProcessId(void);
 
+/**
+ * Register a handler for thread events
+ * 
+ * @param name      - Name of the thread event object
+ * @param thid      - Thread ID of the target thread. Use 0x10027 to target all threads in the process
+ * @param eventMask - Mask of ::SceKernelThreadEventType for this handler's valid events.
+ * @param handler   - Handler function
+ * @param userData  - User data to pass to the handler
+ * 
+ * @return ID of the thread event handler on success, < 0 on error
+ */
+SceUID sceKernelRegisterThreadEventHandler(const char *name, SceUID thid, SceInt32 eventMask, SceKernelThreadEventHandler handler, void *common);
+
+/**
+ * Unregister a thread event handler
+ * 
+ * @param id - The thread event handler to unregister
+ * 
+ * @return 0 on success, < 0 on error
+ */
+SceUID sceKernelUnregisterThreadEventHandler(SceUID id);
+
 typedef struct SceKernelSystemInfo {
 	SceSize   size;
 	SceUInt32 activeCpuMask;
