@@ -21,6 +21,8 @@ var kernel_2threadmgr_2thread_8h =
     [ "sceKernelChangeThreadCpuAffinityMask", "group__SceThreadMgrUser.html#gab1abca32320ddd682c7c3b5ac413af1b", null ],
     [ "sceKernelGetThreadId", "group__SceThreadMgrUser.html#ga5a71c2dc9a2d3e412fc9eeaae0c5a3c7", null ],
     [ "sceKernelGetProcessId", "group__SceThreadMgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b", null ],
+    [ "sceKernelRegisterThreadEventHandler", "group__SceThreadMgrUser.html#ga1b3fad2a47ebd82f3f24c3ec4a60f2b9", null ],
+    [ "sceKernelUnregisterThreadEventHandler", "group__SceThreadMgrUser.html#gae340e4b3d6a48805379137ccb4a6b9af", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga0d6c6c680f4a1ead74c1feda28d0138e", null ],
     [ "sceKernelGetSystemInfo", "group__SceThreadMgrUser.html#ga098d45a290dbe3ca0b23883b4c480f48", null ],
     [ "sceKernelGetThreadmgrUIDClass", "group__SceThreadMgrUser.html#gac134727fae595f8af7be1d8004bfae37", null ],

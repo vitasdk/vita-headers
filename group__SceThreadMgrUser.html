@@ -174,6 +174,8 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:gaed1c8b50410fdccf5d5dc00563499662" id="r_gaed1c8b50410fdccf5d5dc00563499662"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td></tr>
 <tr class="separator:gaed1c8b50410fdccf5d5dc00563499662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad99396d6f88687ec28fd3a0e5d43a954" id="r_gad99396d6f88687ec28fd3a0e5d43a954"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gad99396d6f88687ec28fd3a0e5d43a954">SceKernelThreadEventHandler</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> arg, void *pCommon)</td></tr>
+<tr class="separator:gad99396d6f88687ec28fd3a0e5d43a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1466aebeba490fe29f9beb1adf84160e" id="r_ga1466aebeba490fe29f9beb1adf84160e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a>) (int notifyId, int notifyCount, int notifyArg, void *userData)</td></tr>
 <tr class="memdesc:ga1466aebeba490fe29f9beb1adf84160e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function prototype.  <br /></td></tr>
 <tr class="separator:ga1466aebeba490fe29f9beb1adf84160e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,6 +223,10 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga552cbf506e81e208e4bf3e75badc1c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga984b629b9742acac0f95348696f37e55" id="r_ga984b629b9742acac0f95348696f37e55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga984b629b9742acac0f95348696f37e55">SceKernelThreadEventType</a> { <a class="el" href="group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf">SCE_KERNEL_THREAD_EVENT_TYPE_START</a> = 0x00000004
+, <a class="el" href="group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6">SCE_KERNEL_THREAD_EVENT_TYPE_EXIT</a> = 0x00000008
+ }</td></tr>
+<tr class="separator:ga984b629b9742acac0f95348696f37e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad5c93e9ef85b6e5a13b726df820d8ca" id="r_gaad5c93e9ef85b6e5a13b726df820d8ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca">SceKernelWaitableAttribute</a> { <a class="el" href="group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a">SCE_KERNEL_ATTR_THREAD_FIFO</a> = 0x00000000
 , <a class="el" href="group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b">SCE_KERNEL_ATTR_THREAD_PRIO</a> = 0x00002000
 , <a class="el" href="group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caab491605571ed7395fc5921291bc83075">SCE_KERNEL_ATTR_OPENABLE</a> = 0x00000080
@@ -547,6 +553,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1a5d235002e6c9023ee239d7f0e4ef6b" id="r_ga1a5d235002e6c9023ee239d7f0e4ef6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1a5d235002e6c9023ee239d7f0e4ef6b">sceKernelGetProcessId</a> (void)</td></tr>
 <tr class="memdesc:ga1a5d235002e6c9023ee239d7f0e4ef6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process ID of in the running thread.  <br /></td></tr>
 <tr class="separator:ga1a5d235002e6c9023ee239d7f0e4ef6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b3fad2a47ebd82f3f24c3ec4a60f2b9" id="r_ga1b3fad2a47ebd82f3f24c3ec4a60f2b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1b3fad2a47ebd82f3f24c3ec4a60f2b9">sceKernelRegisterThreadEventHandler</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> eventMask, <a class="el" href="group__SceThreadMgrUser.html#gad99396d6f88687ec28fd3a0e5d43a954">SceKernelThreadEventHandler</a> handler, void *common)</td></tr>
+<tr class="memdesc:ga1b3fad2a47ebd82f3f24c3ec4a60f2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a handler for thread events.  <br /></td></tr>
+<tr class="separator:ga1b3fad2a47ebd82f3f24c3ec4a60f2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae340e4b3d6a48805379137ccb4a6b9af" id="r_gae340e4b3d6a48805379137ccb4a6b9af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gae340e4b3d6a48805379137ccb4a6b9af">sceKernelUnregisterThreadEventHandler</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> id)</td></tr>
+<tr class="memdesc:gae340e4b3d6a48805379137ccb4a6b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a thread event handler.  <br /></td></tr>
+<tr class="separator:gae340e4b3d6a48805379137ccb4a6b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d6c6c680f4a1ead74c1feda28d0138e" id="r_ga0d6c6c680f4a1ead74c1feda28d0138e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga0d6c6c680f4a1ead74c1feda28d0138e">VITASDK_BUILD_ASSERT_EQ</a> (0x48, <a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo">SceKernelSystemInfo</a>)</td></tr>
 <tr class="separator:ga0d6c6c680f4a1ead74c1feda28d0138e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga098d45a290dbe3ca0b23883b4c480f48" id="r_ga098d45a290dbe3ca0b23883b4c480f48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga098d45a290dbe3ca0b23883b4c480f48">sceKernelGetSystemInfo</a> (<a class="el" href="group__SceThreadMgrUser.html#structSceKernelSystemInfo">SceKernelSystemInfo</a> *info)</td></tr>
@@ -2160,6 +2172,20 @@ priority</td>
 
 </div>
 </div>
+<a id="gad99396d6f88687ec28fd3a0e5d43a954" name="gad99396d6f88687ec28fd3a0e5d43a954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad99396d6f88687ec28fd3a0e5d43a954">&#9670;&#160;</a></span>SceKernelThreadEventHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* SceKernelThreadEventHandler) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> arg, void *pCommon)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga1466aebeba490fe29f9beb1adf84160e" name="ga1466aebeba490fe29f9beb1adf84160e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1466aebeba490fe29f9beb1adf84160e">&#9670;&#160;</a></span>SceKernelCallbackFunction</h2>
 
@@ -2234,6 +2260,24 @@ priority</td>
 <tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48" name="gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48"></a>SCE_THREAD_DEAD&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa" name="gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa"></a>SCE_THREAD_STAGNANT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093" name="gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093"></a>SCE_THREAD_SUSPENDED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga984b629b9742acac0f95348696f37e55" name="ga984b629b9742acac0f95348696f37e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga984b629b9742acac0f95348696f37e55">&#9670;&#160;</a></span>SceKernelThreadEventType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceThreadMgrUser.html#ga984b629b9742acac0f95348696f37e55">SceKernelThreadEventType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf" name="gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf"></a>SCE_KERNEL_THREAD_EVENT_TYPE_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6" name="gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6"></a>SCE_KERNEL_THREAD_EVENT_TYPE_EXIT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -6042,9 +6086,9 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 <div class="line">status.<a class="code hl_variable" href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">size</a> = <span class="keyword">sizeof</span>(<a class="code hl_struct" href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a>);</div>
 <div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a>(thid, &amp;status) == 0)</div>
 <div class="line">{ Do something... }</div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition</b> threadmgr.h:83</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_ga69ef974c7579b7af777fcb98b202a6be"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga69ef974c7579b7af777fcb98b202a6be">SceKernelThreadInfo::size</a></div><div class="ttdeci">SceSize size</div><div class="ttdoc">Size of the structure.</div><div class="ttdef"><b>Definition</b> threadmgr.h:90</div></div>
 <div class="ttc" id="agroup__SceThreadMgrUser_html_ga6bf8403f033a543d7c8a0a21e1153591"><div class="ttname"><a href="group__SceThreadMgrUser.html#ga6bf8403f033a543d7c8a0a21e1153591">sceKernelGetThreadInfo</a></div><div class="ttdeci">int sceKernelGetThreadInfo(SceUID thid, SceKernelThreadInfo *info)</div><div class="ttdoc">Get the status information for the specified thread.</div></div>
-<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition</b> threadmgr.h:81</div></div>
+<div class="ttc" id="agroup__SceThreadMgrUser_html_structSceKernelThreadInfo"><div class="ttname"><a href="group__SceThreadMgrUser.html#structSceKernelThreadInfo">SceKernelThreadInfo</a></div><div class="ttdoc">Structure to hold the status information for a thread.</div><div class="ttdef"><b>Definition</b> threadmgr.h:88</div></div>
 </div><!-- fragment --> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successful, otherwise the error code. </dd></dl>
 
@@ -6192,6 +6236,92 @@ SCE_KERNEL_ERROR_ALREADY_SENT if the last signal was not consumed by sceKernelWa
 
 <p>Get the process ID of in the running thread. </p>
 <dl class="section return"><dt>Returns</dt><dd>process ID of in the running thread </dd></dl>
+
+</div>
+</div>
+<a id="ga1b3fad2a47ebd82f3f24c3ec4a60f2b9" name="ga1b3fad2a47ebd82f3f24c3ec4a60f2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b3fad2a47ebd82f3f24c3ec4a60f2b9">&#9670;&#160;</a></span>sceKernelRegisterThreadEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelRegisterThreadEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceThreadMgrUser.html#gad99396d6f88687ec28fd3a0e5d43a954">SceKernelThreadEventHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>common</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a handler for thread events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- Name of the thread event object </td></tr>
+    <tr><td class="paramname">thid</td><td>- Thread ID of the target thread. Use 0x10027 to target all threads in the process </td></tr>
+    <tr><td class="paramname">eventMask</td><td>- Mask of <a class="el" href="group__SceThreadMgrUser.html#ga984b629b9742acac0f95348696f37e55">SceKernelThreadEventType</a> for this handler's valid events. </td></tr>
+    <tr><td class="paramname">handler</td><td>- Handler function </td></tr>
+    <tr><td class="paramname">userData</td><td>- User data to pass to the handler</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ID of the thread event handler on success, &lt; 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="gae340e4b3d6a48805379137ccb4a6b9af" name="gae340e4b3d6a48805379137ccb4a6b9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae340e4b3d6a48805379137ccb4a6b9af">&#9670;&#160;</a></span>sceKernelUnregisterThreadEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceKernelUnregisterThreadEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a thread event handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>- The thread event handler to unregister</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
 
 </div>
 </div>

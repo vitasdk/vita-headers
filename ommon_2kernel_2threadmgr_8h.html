@@ -159,6 +159,8 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:gaed1c8b50410fdccf5d5dc00563499662" id="r_gaed1c8b50410fdccf5d5dc00563499662"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662">SceKernelThreadEntry</a>) (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> args, void *argp)</td></tr>
 <tr class="separator:gaed1c8b50410fdccf5d5dc00563499662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad99396d6f88687ec28fd3a0e5d43a954" id="r_gad99396d6f88687ec28fd3a0e5d43a954"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gad99396d6f88687ec28fd3a0e5d43a954">SceKernelThreadEventHandler</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> threadId, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> arg, void *pCommon)</td></tr>
+<tr class="separator:gad99396d6f88687ec28fd3a0e5d43a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1466aebeba490fe29f9beb1adf84160e" id="r_ga1466aebeba490fe29f9beb1adf84160e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e">SceKernelCallbackFunction</a>) (int notifyId, int notifyCount, int notifyArg, void *userData)</td></tr>
 <tr class="memdesc:ga1466aebeba490fe29f9beb1adf84160e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function prototype.  <br /></td></tr>
 <tr class="separator:ga1466aebeba490fe29f9beb1adf84160e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +208,10 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga552cbf506e81e208e4bf3e75badc1c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga984b629b9742acac0f95348696f37e55" id="r_ga984b629b9742acac0f95348696f37e55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#ga984b629b9742acac0f95348696f37e55">SceKernelThreadEventType</a> { <a class="el" href="group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf">SCE_KERNEL_THREAD_EVENT_TYPE_START</a> = 0x00000004
+, <a class="el" href="group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6">SCE_KERNEL_THREAD_EVENT_TYPE_EXIT</a> = 0x00000008
+ }</td></tr>
+<tr class="separator:ga984b629b9742acac0f95348696f37e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad5c93e9ef85b6e5a13b726df820d8ca" id="r_gaad5c93e9ef85b6e5a13b726df820d8ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca">SceKernelWaitableAttribute</a> { <a class="el" href="group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a">SCE_KERNEL_ATTR_THREAD_FIFO</a> = 0x00000000
 , <a class="el" href="group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b">SCE_KERNEL_ATTR_THREAD_PRIO</a> = 0x00002000
 , <a class="el" href="group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caab491605571ed7395fc5921291bc83075">SCE_KERNEL_ATTR_OPENABLE</a> = 0x00000080

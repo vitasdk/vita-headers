@@ -10,6 +10,7 @@ var ommon_2kernel_2threadmgr_8h =
     [ "SCE_KERNEL_VFP_EXCP_QC", "group__SceThreadMgrUser.html#ga86f92b8cb4c5bb4d10965c46bba27b1d", null ],
     [ "SCE_KERNEL_VFP_EXCP_ALL", "group__SceThreadMgrUser.html#ga9a00e8f6f666651c1711f63b55defce8", null ],
     [ "SceKernelThreadEntry", "group__SceThreadMgrUser.html#gaed1c8b50410fdccf5d5dc00563499662", null ],
+    [ "SceKernelThreadEventHandler", "group__SceThreadMgrUser.html#gad99396d6f88687ec28fd3a0e5d43a954", null ],
     [ "SceKernelCallbackFunction", "group__SceThreadMgrUser.html#ga1466aebeba490fe29f9beb1adf84160e", null ],
     [ "SceKernelIdListType", "group__SceThreadMgrUser.html#gab73e1647ba8ce49d40132e57883602dc", [
       [ "SCE_KERNEL_TMID_Thread", "group__SceThreadMgrUser.html#ggab73e1647ba8ce49d40132e57883602dca6c07486899e0df175dcb90cefb2ac7b5", null ],
@@ -41,6 +42,10 @@ var ommon_2kernel_2threadmgr_8h =
       [ "SCE_THREAD_DEAD", "group__SceThreadMgrUser.html#gga552cbf506e81e208e4bf3e75badc1c40a5f584d8a118ceae4dc30acc81538bb48", null ],
       [ "SCE_THREAD_STAGNANT", "group__SceThreadMgrUser.html#gga552cbf506e81e208e4bf3e75badc1c40a5f6a8414593737422498665d169973aa", null ],
       [ "SCE_THREAD_SUSPENDED", "group__SceThreadMgrUser.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093", null ]
+    ] ],
+    [ "SceKernelThreadEventType", "group__SceThreadMgrUser.html#ga984b629b9742acac0f95348696f37e55", [
+      [ "SCE_KERNEL_THREAD_EVENT_TYPE_START", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf", null ],
+      [ "SCE_KERNEL_THREAD_EVENT_TYPE_EXIT", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6", null ]
     ] ],
     [ "SceKernelWaitableAttribute", "group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca", [
       [ "SCE_KERNEL_ATTR_THREAD_FIFO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a", null ],
