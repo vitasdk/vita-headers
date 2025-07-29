@@ -370,6 +370,11 @@ typedef enum SceGxmMultisampleMode {
 	SCE_GXM_MULTISAMPLE_4X
 } SceGxmMultisampleMode;
 
+typedef enum SceGxmTextureAnisoMode {
+	SCE_GXM_TEXTURE_ANISO_MODE_DISABLED = 0x00000000u,
+	SCE_GXM_TEXTURE_ANISO_MODE_2X = 0x00000001u
+} SceGxmTextureAnisoMode;
+
 typedef enum SceGxmTextureSwizzle4Mode {
 	SCE_GXM_TEXTURE_SWIZZLE4_ABGR   = 0x00000000u,
 	SCE_GXM_TEXTURE_SWIZZLE4_ARGB   = 0x00001000u,
@@ -1580,6 +1585,9 @@ int sceGxmTextureInitCube(SceGxmTexture *texture, const void *data, SceGxmTextur
 
 SceGxmTextureType sceGxmTextureGetType(const SceGxmTexture *texture);
 int sceGxmTextureValidate(const SceGxmTexture *texture);
+
+int sceGxmTextureSetAnisoMode(SceGxmTexture* texture, SceGxmTextureAnisoMode anisoMode);
+SceGxmTextureAnisoMode sceGxmTextureGetAnisoMode(const SceGxmTexture* texture);
 
 int sceGxmTextureSetMinFilter(SceGxmTexture *texture, SceGxmTextureFilter minFilter);
 SceGxmTextureFilter sceGxmTextureGetMinFilter(const SceGxmTexture *texture);
