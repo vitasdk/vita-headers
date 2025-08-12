@@ -44,6 +44,8 @@ char sceClibLookCtypeTable(char ch);
 int sceClibTolower(char ch);
 int sceClibToupper(char ch);
 
+int sceClibVprintf(const char *fmt, va_list args);
+
 int sceClibPrintf(const char *fmt, ...) __attribute__ ((format (printf, 1, 2)));
 int sceClibDprintf(SceUID fd, const char *fmt, ...) __attribute__ ((format (printf, 2, 3)));
 
