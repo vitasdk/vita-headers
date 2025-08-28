@@ -13,6 +13,7 @@ var group__SceCLibUser =
     [ "sceClibLookCtypeTable", "group__SceCLibUser.html#ga467dcef630914e8bd052b19a66612c12", null ],
     [ "sceClibTolower", "group__SceCLibUser.html#ga6dfbc686c2bcd769cc64ec5032de4d46", null ],
     [ "sceClibToupper", "group__SceCLibUser.html#gae689001c51ceb2f0c04d79ffe57b5af7", null ],
+    [ "sceClibVprintf", "group__SceCLibUser.html#gaa2f52051590878eea9774bbc37c1a9b8", null ],
     [ "sceClibPrintf", "group__SceCLibUser.html#ga509faef68ed1e0e90a44687e216c0ec4", null ],
     [ "sceClibDprintf", "group__SceCLibUser.html#ga9afa543726e1879e0b3deca7832b784a", null ],
     [ "sceClibSnprintf", "group__SceCLibUser.html#ga16a25bc72315080ee583db3bc2e7cfc3", null ],

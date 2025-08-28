@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"group__SceVfsKernel.html#ga836aac8896fe3735780564ffea87f4d9":[1,4,7,0,206],
 "group__SceVfsKernel.html#ga8423d72c93e09feab3d01844727ee5a5":[1,4,7,0,204],
 "group__SceVfsKernel.html#ga84270f21002898ab245346adb7cd22f0":[1,4,7,0,331],
 "group__SceVfsKernel.html#ga845b0c59847a9884ec673c763578ec27":[1,4,7,0,362],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "group__SceVideoDec.html":[1,0,12],
 "group__SceVideoDecUser.html":[1,0,12,0],
 "group__SceVideoDecUser.html#ga0262c840c73d4cae3ffeece800bd15e4":[1,0,12,0,78],
-"group__SceVideoDecUser.html#ga0581f92f5036180dad8120c54b2d9550":[1,0,12,0,108],
-"group__SceVideoDecUser.html#ga0900a19c69ec41d5a64b53d0b35364f4":[1,0,12,0,99]
+"group__SceVideoDecUser.html#ga0581f92f5036180dad8120c54b2d9550":[1,0,12,0,108]
 };

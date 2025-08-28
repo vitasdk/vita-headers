@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"group__SceUsbServKernel.html#ga149cd8d2fefe92f0347ed919febc77ad":[1,12,1,1,6],
 "group__SceUsbServKernel.html#ga20b58aedbc03a7670f0f9d7754cdf2d0":[1,12,1,1,10],
 "group__SceUsbServKernel.html#ga2a1e63511337f19107e0dca49f579f0f":[1,12,1,1,8],
 "group__SceUsbServKernel.html#gaa2bc41c257a218909bce401d7c985d26":[1,12,1,1,11],
@@ -13,8 +14,8 @@ var NAVTREEINDEX61 =
 "group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa3dd73db68761ee0ee0cd3e0d6a3145fc":[1,12,1,1,2],
 "group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee":[1,12,1,1,0,0],
 "group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8fa52ef1651c5eb9154733ff170930f3eee":[1,12,1,1,1],
-"group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4":[1,12,1,1,4],
 "group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4":[1,12,1,1,0,3],
+"group__SceUsbServKernel.html#ggafc83aa9a7e6c8de7275274a0014f5c8faefd07cb9a506e0efa1432a4445228cb4":[1,12,1,1,4],
 "group__SceUsbServUser.html":[1,12,1,0],
 "group__SceUsbServUser.html#ga024c25addc384e8671e5a5fe0cd7de44":[1,12,1,0,1],
 "group__SceUsbServUser.html#gace49bd464277268382e8e01476a1a47e":[1,12,1,0,0],
@@ -229,8 +230,8 @@ var NAVTREEINDEX61 =
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a1ff0157a10ea4d262db2d399efa02184":[1,12,0,1,124],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a2ba7061ab7ffc75a3121f2d53bfed7bc":[1,12,0,1,105,7],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a2ba7061ab7ffc75a3121f2d53bfed7bc":[1,12,0,1,125],
-"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a346d683b255fb528301106c35b948d27":[1,12,0,1,105,8],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a346d683b255fb528301106c35b948d27":[1,12,0,1,126],
+"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a346d683b255fb528301106c35b948d27":[1,12,0,1,105,8],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a3c2067171b4a1eecd6b7941b0888d37a":[1,12,0,1,105,2],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a3c2067171b4a1eecd6b7941b0888d37a":[1,12,0,1,120],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a615f9e545510e8a5fd34dd61df2b9546":[1,12,0,1,105,1],
@@ -241,13 +242,12 @@ var NAVTREEINDEX61 =
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a6feb54a0f0955f9b81261a647f5153a7":[1,12,0,1,121],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a71f9ad71eac358d61d5186cf61d17dc9":[1,12,0,1,105,10],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a71f9ad71eac358d61d5186cf61d17dc9":[1,12,0,1,128],
-"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6ad360ed79979f772f11e434b6067e4860":[1,12,0,1,105,5],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6ad360ed79979f772f11e434b6067e4860":[1,12,0,1,123],
+"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6ad360ed79979f772f11e434b6067e4860":[1,12,0,1,105,5],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6ae5d2f6cf63b753f6cc760545d3eadf86":[1,12,0,1,105,9],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6ae5d2f6cf63b753f6cc760545d3eadf86":[1,12,0,1,127],
-"group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda0966550ad675030e2bf4431367cfa1df":[1,12,0,1,113],
 "group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda0966550ad675030e2bf4431367cfa1df":[1,12,0,1,104,5],
-"group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda298a779baff683c7eee902cbbf553cb6":[1,12,0,1,104,7],
+"group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda0966550ad675030e2bf4431367cfa1df":[1,12,0,1,113],
 "group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda298a779baff683c7eee902cbbf553cb6":[1,12,0,1,115],
-"group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda3438a107662811debdf003e46beaa92d":[1,12,0,1,104,4]
+"group__SceUsbdKernel.html#ggaea15c9e75b573d065050efee195a98fda298a779baff683c7eee902cbbf553cb6":[1,12,0,1,104,7]
 };

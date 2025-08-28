@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"group__SceNgsUser.html#gac25839daba10e2babe6a5b903e303d32":[1,2,5,0,30],
 "group__SceNgsUser.html#gac26bf047a8793eef3acf4a9f40fc35c9":[1,2,5,0,77],
 "group__SceNgsUser.html#gac520e288d6c92a9c12f84e35f39d6ad2":[1,2,5,0,78],
 "group__SceNgsUser.html#gac556cdcab9ae89538bfe9ccdd2cb64ca":[1,2,5,0,6],
@@ -50,8 +51,8 @@ var NAVTREEINDEX42 =
 "group__SceNotificationUtilUser.html#gae5c293af2d2d31d866dd40c1d027402b":[1,11,4,0,8],
 "group__SceNotificationUtilUser.html#gaedf422623afc25e5a25502f35d257621":[1,11,4,0,11],
 "group__SceNotificationUtilUser.html#gaf86915318ac589b65646027feb823d34":[1,11,4,0,33],
-"group__SceNotificationUtilUser.html#ggab84dd5c92292aafdbbbde71c9dcfb8dfa0ea2da65b03f19e2a785626ac51d9f27":[1,11,4,0,6],
 "group__SceNotificationUtilUser.html#ggab84dd5c92292aafdbbbde71c9dcfb8dfa0ea2da65b03f19e2a785626ac51d9f27":[1,11,4,0,5,0],
+"group__SceNotificationUtilUser.html#ggab84dd5c92292aafdbbbde71c9dcfb8dfa0ea2da65b03f19e2a785626ac51d9f27":[1,11,4,0,6],
 "group__SceNotificationUtilUser.html#structSceNotificationUtilProgressFinishParam":[1,11,4,0,2],
 "group__SceNotificationUtilUser.html#structSceNotificationUtilProgressInitParam":[1,11,4,0,0],
 "group__SceNotificationUtilUser.html#structSceNotificationUtilProgressUpdateParam":[1,11,4,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "group__ScePamgrKernel.html#gac0c82fe4cafc99cca09daa0fdb78ce8e":[1,9,6,0,12],
 "group__ScePamgrKernel.html#gac8c70d58ad823efd5658f8cae3891470":[1,9,6,0,27],
 "group__ScePamgrKernel.html#gacb59f5ff6f0f39feb131d3c613fd0b76":[1,9,6,0,24],
-"group__ScePamgrKernel.html#gacc45df4ef59b8a04ca60b7969fd8b82c":[1,9,6,0,9],
-"group__ScePamgrKernel.html#gad317d449a34e95e92efb458cd18e7545":[1,9,6,0,20]
+"group__ScePamgrKernel.html#gacc45df4ef59b8a04ca60b7969fd8b82c":[1,9,6,0,9]
 };
