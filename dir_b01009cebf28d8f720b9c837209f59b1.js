@@ -21,6 +21,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "ctrl.h", "psp2_2ctrl_8h.html", "psp2_2ctrl_8h" ],
     [ "display.h", "psp2_2display_8h.html", "psp2_2display_8h" ],
     [ "dmac5.h", "dmac5_8h.html", "dmac5_8h" ],
+    [ "error.h", "error_8h.html", "error_8h" ],
     [ "fiber.h", "fiber_8h.html", "fiber_8h" ],
     [ "fios2kernel.h", "fios2kernel_8h.html", "fios2kernel_8h" ],
     [ "fios2kernel02.h", "fios2kernel02_8h.html", "fios2kernel02_8h" ],
