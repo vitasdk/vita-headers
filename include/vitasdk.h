@@ -19,6 +19,7 @@
 #include <psp2/common_dialog.h>
 #include <psp2/compat.h>
 #include <psp2/ctrl.h>
+#include <psp2/error.h>
 #include <psp2/display.h>
 #include <psp2/dmac5.h>
 #include <psp2/fiber.h>
