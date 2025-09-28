@@ -1,0 +1,18 @@
+version: 2
+firmware: 3.60
+modules:
+  SceWebUIPlugin:
+    libraries:
+      SceWebUIPlugin:
+        kernel: false
+        nid: 0x04FA0166
+        functions:
+          _ZN3paf5WebUI16PluginSetParamCBEPNS_6Plugin10InitParam2E: 0x93C92A4A
+          _ZN3paf5WebUI12PluginInitCBEPNS_6PluginE: 0x07F112B1
+          _ZN3paf5WebUI13PluginStartCBEPNS_6PluginE: 0x9CD848A2
+          _ZN3paf5WebUI12PluginStopCBEPNS_6PluginE: 0xD480614B
+          _ZN3paf5WebUI12PluginExitCBEPNS_6PluginE: 0x12EDFFFD
+          _ZN3paf5WebUI23SceWebUIPlugin_732FD74DEPvS1_: 0x732FD74D
+          _ZN3paf5WebUI23SceWebUIPlugin_C59CB476EiPvRNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE: 0xC59CB476
+          _ZN3paf5WebUI23SceWebUIPlugin_E6A8A5BCEii: 0xE6A8A5BC
+          _ZN3paf5WebUI23SceWebUIPlugin_B888A5A6Ei: 0xB888A5A6
