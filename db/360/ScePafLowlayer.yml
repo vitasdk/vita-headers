@@ -1,0 +1,10 @@
+version: 2
+firmware: 3.60
+modules:
+  ScePafLowlayer:
+    libraries:
+      ScePafLowlayer:
+        kernel: false
+        nid: 0x2342266A
+        functions:
+          sceZlibDecompress: 0xD7DAA151

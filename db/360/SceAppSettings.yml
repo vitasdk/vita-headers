@@ -1,0 +1,26 @@
+version: 2
+firmware: 3.60
+modules:
+  SceAppSettings:
+    libraries:
+      SceAppSettings:
+        kernel: false
+        nid: 0x9522D063
+        functions:
+          _ZN3sce11AppSettings11GetInstanceERNS0_9InitParamEPPS0_: 0x984AF519
+          _ZN3sce11AppSettings16PluginSetParamCBEPN3paf6Plugin10InitParam2E: 0xB3935DD3
+          _ZN3sce11AppSettings12PluginInitCBEPN3paf6PluginE: 0xD906433B
+          _ZN3sce11AppSettings13PluginStartCBEPN3paf6PluginE: 0xED46CAFD
+          _ZN3sce11AppSettings12PluginStopCBEPN3paf6PluginE: 0xD58DE5C7
+          _ZN3sce11AppSettings12PluginExitCBEPN3paf6PluginE: 0x2CE1780F
+          _ZN3sce11AppSettings6GetIntEPKcPii: 0xEC529AF7
+          _ZN3sce11AppSettings6SetIntEPKci: 0x272D902F
+          _ZN3sce11AppSettings10InitializeEv: 0x75E3F651
+          _ZN3sce11AppSettings9SetStringEPKcS2_: 0x9D20A196
+          _ZN3sce11AppSettings9GetStringEPKcS2_jS2_: 0x1E1BE36B
+          _ZN3sce11AppSettings9TerminateEv: 0x1C135375
+          _ZN3sce11AppSettings7GetBoolEPKcPbb: 0x67FD397D
+          _ZN3sce11AppSettings7SetBoolEPKcb: 0x562213F4
+          _ZN3sce11AppSettings7Element11GetPropertyEPKc: 0xEECA5057
+          _ZN3sce11AppSettings7Element11SetPropertyEPKcS3_: 0x5FD4997E
+          _ZN3sce11AppSettings8ListItemC1Ev: 0x131CF769

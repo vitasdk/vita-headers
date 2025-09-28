@@ -1,0 +1,47 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCommonGuiDialog:
+    libraries:
+      SceCommonGuiDialog:
+        kernel: false
+        nid: 0x4B4AAE97
+        functions:
+          _ZN3sce15CommonGuiDialog6Dialog4ShowEPN3paf6PluginEPNS2_12basic_stringIwNS2_11char_traitsIwEENS2_9allocatorIwEEEESB_PNS0_5ParamEPFviNS0_9DIALOG_CBEPvESF_: 0x6CE14F66
+          _ZN3sce15CommonGuiDialog6Dialog4ShowEPN3paf6PluginEPNS2_12basic_stringIwNS2_11char_traitsIwEENS2_9allocatorIwEEEESB_PNS0_5ParamEPNS0_15EventCBListenerE: 0xFA31832E
+          _ZN3sce15CommonGuiDialog6Dialog5CloseEi: 0xBC311DC0
+          _ZN3sce15CommonGuiDialog6Dialog9GetWidgetEiNS0_11REGISTER_IDE: 0x8947FC23
+          _ZN3sce15CommonGuiDialog6Dialog14SetDimmerColorEiRKN3paf4math2v4E: 0x206623FF
+          _ZN3sce15CommonGuiDialog6Dialog17SetTitleTextColorEiRKN3paf4math2v4E: 0x2BBC4734
+          _ZN3sce15CommonGuiDialog6Dialog14SetDialogColorEiRKN3paf4math2v4E: 0x0C2B57DC
+          _ZN3sce15CommonGuiDialog6Dialog10SetTextureEiNS0_11REGISTER_IDERKN3paf13intrusive_ptrINS3_5graph7SurfaceEEE: 0x52AB228A
+          _ZN3sce15CommonGuiDialog11ErrorDialog4ShowEv: 0x20B141F1
+          _ZN3sce15commonGuiDialog6DialogC1Ev: 0x696DB9C9
+          _ZN3sce15CommonGuiDialog6DialogC2Ev: 0x3EA370C9
+        variables:
+          _ZN3sce15CommonGuiDialog5Param10s_dialogOkE: 0xAF75CA6D
+          _ZN3sce15CommonGuiDialog5Param14s_dialogCancelE: 0xEF7F04DD
+          _ZN3sce15CommonGuiDialog5Param13s_dialogYesNoE: 0x6CD802FC
+          _ZN3sce15CommonGuiDialog5Param21s_dialogYesNoVerticalE: 0x22B17F2B
+          _ZN3sce15CommonGuiDialog5Param19s_dialogYesNoCancelE: 0x78399261
+          _ZN3sce15CommonGuiDialog5Param16s_dialogOkCancelE: 0x92752DE2
+          _ZN3sce15CommonGuiDialog5Param22s_dialogCancelProgressE: 0x446F8B49
+          _ZN3sce15CommonGuiDialog5Param23s_dialogCancelLProgressE: 0x25BD4084
+          _ZN3sce15CommonGuiDialog5Param28s_dialogCancelText2LProgressE: 0x95087497
+          _ZN3sce15CommonGuiDialog5Param18s_dialogCancelUnk1E: 0xEA557911
+          _ZN3sce15CommonGuiDialog5Param16s_dialogProgressE: 0xA0E0A437
+          _ZN3sce15CommonGuiDialog5Param12s_dialogTextE: 0x7AEA192C
+          _ZN3sce15CommonGuiDialog5Param17s_dialogTextSmallE: 0x5C8A2999
+          _ZN3sce15CommonGuiDialog5Param13s_dialogXViewE: 0xE872FB5D
+          _ZN3sce15CommonGuiDialog5Param14s_dialogOkViewE: 0x1424609E
+          _ZN3sce15CommonGuiDialog5Param17s_dialogYesNoViewE: 0x3AC06BC6
+          _ZN3sce15CommonGuiDialog5Param14s_dialogXLViewE: 0xDDC59760
+          _ZN3sce15CommonGuiDialog5Param15s_dialogOkLViewE: 0x3785AD25
+          _ZN3sce15CommonGuiDialog5Param21s_dialogTextSmallBusyE: 0x2A68B4A4
+          _ZN3sce15CommonGuiDialog5Param18s_dialogCancelBusyE: 0xF8B2D7E1
+          _ZN3sce15CommonGuiDialog5Param14s_dialogOkIconE: 0x7D8FE85E
+          _ZN3sce15CommonGuiDialog5Param20s_dialogOkCancelIconE: 0xC4A714DE
+          _ZN3sce15CommonGuiDialog5Param18s_dialogFullscreenE: 0x52A53037
+          _ZN3sce15CommonGuiDialog5Param20s_dialogOkFullscreenE: 0xB04C8C1A
+          _ZN3sce15CommonGuiDialog5Param17s_dialogOkTextboxE: 0xDEDA75E4
+          _ZN3sce15CommonGuiDialog5Param22s_dialogPlusInvitationE: 0x04D71470
