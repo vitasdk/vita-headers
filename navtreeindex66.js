@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1ddada6a0fffec47f330a40b543d55fb31b3":[1,11,12,0,0,9],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1ddade437461061474c3109a463a9dbe641e":[1,11,12,0,6],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1ddade437461061474c3109a463a9dbe641e":[1,11,12,0,0,5],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1ddaf0a6445a9822a71655253120afc49e68":[1,11,12,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "psp2kern_2npdrm_8h_source.html":[4,0,1,2,14],
 "psp2kern_2power_8h.html":[4,0,1,2,17],
 "psp2kern_2power_8h_source.html":[4,0,1,2,17],
-"psp2kern_2registrymgr_8h.html":[4,0,1,2,18],
-"psp2kern_2registrymgr_8h_source.html":[4,0,1,2,18]
+"psp2kern_2registrymgr_8h.html":[4,0,1,2,18]
 };

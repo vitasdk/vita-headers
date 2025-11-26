@@ -89,6 +89,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabfaa8a5b2a043192f91205634e6c7bf2" id="r_gabfaa8a5b2a043192f91205634e6c7bf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblGcAuthMgrKernel.html#gabfaa8a5b2a043192f91205634e6c7bf2">ksceSblGcAuthMgrDrmBBGetCartSecret</a> (void *secret)</td></tr>
 <tr class="memdesc:gabfaa8a5b2a043192f91205634e6c7bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets derived cart secret from memory.  <br /></td></tr>
 <tr class="separator:gabfaa8a5b2a043192f91205634e6c7bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1f177549bb7d227371e10ef83acba85" id="r_gae1f177549bb7d227371e10ef83acba85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblGcAuthMgrKernel.html#gae1f177549bb7d227371e10ef83acba85">ksceSblGcAuthMgrDrmBBCheckCartHash</a> (const void *hash)</td></tr>
+<tr class="memdesc:gae1f177549bb7d227371e10ef83acba85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks a given value and compares to the hash derived from authentication step.  <br /></td></tr>
+<tr class="separator:gae1f177549bb7d227371e10ef83acba85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1215c7ec1718be810be70da2095d16ca" id="r_ga1215c7ec1718be810be70da2095d16ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblGcAuthMgrKernel.html#ga1215c7ec1718be810be70da2095d16ca">ksceSblGcAuthMgrGcAuthCartAuthentication</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> key_id)</td></tr>
 <tr class="memdesc:ga1215c7ec1718be810be70da2095d16ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs gamecart authentication.  <br /></td></tr>
 <tr class="separator:ga1215c7ec1718be810be70da2095d16ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,13 +164,41 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets derived cart secret from memory. </p>
+<p>should be the result of sha256 of the cartridges 2 unique per-game keys</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">secret</td><td>- Pointer to 0x20 bytes.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">secret</td><td>- Pointer to 0x20 bytes.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gae1f177549bb7d227371e10ef83acba85" name="gae1f177549bb7d227371e10ef83acba85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1f177549bb7d227371e10ef83acba85">&#9670;&#160;</a></span>ksceSblGcAuthMgrDrmBBCheckCartHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblGcAuthMgrDrmBBCheckCartHash </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks a given value and compares to the hash derived from authentication step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td>- Pointer to 0x14 byte hash value to compare against</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if matches, &lt; 0 if does not match. </dd></dl>
 
 </div>
 </div>
