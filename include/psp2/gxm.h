@@ -1420,7 +1420,6 @@ int sceGxmSetVertexTexture(SceGxmContext *context, unsigned int textureIndex, co
 int sceGxmSetFragmentTexture(SceGxmContext *context, unsigned int textureIndex, const SceGxmTexture *texture);
 int sceGxmSetVertexUniformBuffer(SceGxmContext *context, unsigned int bufferIndex, const void *bufferData);
 int sceGxmSetFragmentUniformBuffer(SceGxmContext *context, unsigned int bufferIndex, const void *bufferData);
-int sceGxmSetAuxiliarySurface(SceGxmContext *context, unsigned int surfaceIndex, const SceGxmAuxiliarySurface *surface);
 
 void sceGxmSetPrecomputedFragmentState(SceGxmContext *context, const SceGxmPrecomputedFragmentState *precomputedState);
 void sceGxmSetPrecomputedVertexState(SceGxmContext *context, const SceGxmPrecomputedVertexState *precomputedState);
@@ -1556,7 +1555,6 @@ int sceGxmShaderPatcherRegisterProgram(SceGxmShaderPatcher *shaderPatcher, const
 int sceGxmShaderPatcherUnregisterProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId);
 int sceGxmShaderPatcherForceUnregisterProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId);
 const SceGxmProgram *sceGxmShaderPatcherGetProgramFromId(SceGxmShaderPatcherId programId);
-int sceGxmShaderPatcherSetAuxiliarySurface(SceGxmShaderPatcher *shaderPatcher, unsigned int auxSurfaceIndex, const SceGxmAuxiliarySurface *auxSurface);
 int sceGxmShaderPatcherCreateVertexProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId, const SceGxmVertexAttribute *attributes, unsigned int attributeCount, const SceGxmVertexStream *streams, unsigned int streamCount, SceGxmVertexProgram **vertexProgram);
 int sceGxmShaderPatcherCreateFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId, SceGxmOutputRegisterFormat outputFormat, SceGxmMultisampleMode multisampleMode, const SceGxmBlendInfo *blendInfo, const SceGxmProgram *vertexProgram, SceGxmFragmentProgram **fragmentProgram);
 int sceGxmShaderPatcherCreateMaskUpdateFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmFragmentProgram **fragmentProgram);
@@ -1639,7 +1637,6 @@ int sceGxmPrecomputedFragmentStateSetAllTextures(SceGxmPrecomputedFragmentState 
 int sceGxmPrecomputedFragmentStateSetTexture(SceGxmPrecomputedFragmentState *precomputedState, unsigned int textureIndex, const SceGxmTexture *texture);
 int sceGxmPrecomputedFragmentStateSetAllUniformBuffers(SceGxmPrecomputedFragmentState *precomputedState, const void * const *bufferDataArray);
 int sceGxmPrecomputedFragmentStateSetUniformBuffer(SceGxmPrecomputedFragmentState *precomputedState, unsigned int bufferIndex, const void *bufferData);
-int sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces(SceGxmPrecomputedFragmentState *precomputedState, const SceGxmAuxiliarySurface *auxSurfaceArray);
 unsigned int sceGxmGetPrecomputedDrawSize(const SceGxmVertexProgram *vertexProgram);
 int sceGxmPrecomputedDrawInit(SceGxmPrecomputedDraw *precomputedDraw, const SceGxmVertexProgram *vertexProgram, void *memBlock);
 int sceGxmPrecomputedDrawSetAllVertexStreams(SceGxmPrecomputedDraw *precomputedDraw, const void * const *streamDataArray);
@@ -1649,7 +1646,6 @@ void sceGxmPrecomputedDrawSetParamsInstanced(SceGxmPrecomputedDraw *precomputedD
 
 int sceGxmGetRenderTargetMemSize(const SceGxmRenderTargetParams *params, unsigned int *driverMemSize);
 int sceGxmCreateRenderTarget(const SceGxmRenderTargetParams *params, SceGxmRenderTarget **renderTarget);
-int sceGxmRenderTargetGetHostMem(const SceGxmRenderTarget *renderTarget, void **hostMem);
 int sceGxmRenderTargetGetDriverMemBlock(const SceGxmRenderTarget *renderTarget, SceUID *driverMemBlock);
 int sceGxmDestroyRenderTarget(SceGxmRenderTarget *renderTarget);
 
