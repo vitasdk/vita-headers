@@ -35,7 +35,6 @@ typedef enum SceGxmErrorCode {
 	SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_PRECISION         = 0x805B000F,
 	SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_COMPONENT_COUNT   = 0x805B0010,
 	SCE_GXM_ERROR_UNIFORM_BUFFER_NOT_RESERVED                   = 0x805B0011,
-	SCE_GXM_ERROR_INVALID_AUXILIARY_SURFACE                     = 0x805B0013,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW                      = 0x805B0014,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE              = 0x805B0015,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE            = 0x805B0016,
@@ -1172,17 +1171,6 @@ typedef struct SceGxmDepthStencilSurface {
 } SceGxmDepthStencilSurface;
 VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmDepthStencilSurface);
 
-//! Represents an auxiliary surface
-typedef struct SceGxmAuxiliarySurface {
-	uint32_t colorFormat; //!< Format of auxiliary surface data from SceGxmColorFormat
-	uint32_t type;        //!< Memory layout of the surface data from SceGxmColorSurfaceType
-	uint32_t width;       //!< Surface width
-	uint32_t height;      //!< Surface height
-	uint32_t stride;      //!< Surface stride in bytes
-	void *data;           //!< A pointer to the surface data
-} SceGxmAuxiliarySurface;
-VITASDK_BUILD_ASSERT_EQ(0x18, SceGxmAuxiliarySurface);
-
 typedef struct SceGxmNotification {
 	volatile unsigned int *address;
 	unsigned int value;
@@ -1264,7 +1252,6 @@ VITASDK_BUILD_ASSERT_EQ(0x2C, SceGxmPrecomputedDraw);
 #define SCE_GXM_MAX_VERTEX_STREAMS      16
 #define SCE_GXM_MAX_TEXTURE_UNITS       16
 #define SCE_GXM_MAX_UNIFORM_BUFFERS     14
-#define SCE_GXM_MAX_AUXILIARY_SURFACES  3
 
 #define SCE_GXM_TILE_SHIFTX 5U
 #define SCE_GXM_TILE_SHIFTY 5U
@@ -1289,8 +1276,7 @@ typedef enum SceGxmParameterCategory {
 	SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE,
 	SCE_GXM_PARAMETER_CATEGORY_UNIFORM,
 	SCE_GXM_PARAMETER_CATEGORY_SAMPLER,
-	SCE_GXM_PARAMETER_CATEGORY_AUXILIARY_SURFACE,
-	SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER
+	SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER = 4
 } SceGxmParameterCategory;
 
 typedef enum SceGxmParameterType {
