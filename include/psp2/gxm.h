@@ -48,12 +48,14 @@ typedef enum SceGxmErrorCode {
 typedef void (SceGxmDisplayQueueCallback)(const void *callbackData);
 
 typedef enum SceGxmInitializeFlags {
-    SCE_GXM_INITIALIZE_FLAG_DEFAULT         = 0x00000000u, //!< Default initialization flag.
-    SCE_GXM_INITIALIZE_FLAG_PB_LPDDR        = 0x00000001u, //!< Allocate the Parameter Buffer from MAIN LPDDR instead of CDRAM.
-    SCE_GXM_INITIALIZE_FLAG_SHARED_SYNC     = 0x00000002u, //!< Enable support for shared sync objects.
-    SCE_GXM_INITIALIZE_FLAG_SHAREDPB_CREATE = 0x00000004u, //!< Create a shared parameter buffer.
-    SCE_GXM_INITIALIZE_FLAG_SHAREDPB_OPEN   = 0x00000008u, //!< Open a shared parameter buffer. Provided parameterBufferSize will function as a minimum required size.
-    SCE_GXM_INITIALIZE_FLAG_EXTENDED_FORMAT = 0x00000010u  //!< Enable support for extended texture/color/pixel formats
+    SCE_GXM_INITIALIZE_FLAG_DEFAULT                              = 0x00000000u, //!< Default initialization flag.
+    SCE_GXM_INITIALIZE_FLAG_PB_LPDDR                             = 0x00000001u, //!< Allocate the Parameter Buffer from MAIN LPDDR instead of CDRAM.
+    SCE_GXM_INITIALIZE_FLAG_SHARED_SYNC                          = 0x00000002u, //!< Enable support for shared sync objects.
+    SCE_GXM_INITIALIZE_FLAG_SHAREDPB_CREATE                      = 0x00000004u, //!< Create a shared parameter buffer.
+    SCE_GXM_INITIALIZE_FLAG_SHAREDPB_OPEN                        = 0x00000008u, //!< Open a shared parameter buffer. Provided parameterBufferSize will function as a minimum required size.
+    SCE_GXM_INITIALIZE_FLAG_EXTENDED_FORMAT                      = 0x00000010u, //!< Enable support for extended texture/color/pixel formats
+    SCE_GXM_INITIALIZE_FLAG_DISPLAY_QUEUE_THREAD_AFFINITY_CPU_1  = 0x00010000u, //!< Start the display queue thread on core 1
+    SCE_GXM_INITIALIZE_FLAG_DISPLAY_QUEUE_THREAD_AFFINITY_CPU_2  = 0x00020000u, //!< Start the display queue thread on core 2
 } SceGxmInitializeFlags;
 
 typedef struct SceGxmInitializeParams {
