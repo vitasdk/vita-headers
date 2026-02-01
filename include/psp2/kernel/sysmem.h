@@ -46,14 +46,14 @@ typedef struct SceKernelMemBlockInfo {
 VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelMemBlockInfo);
 
 typedef enum SceKernelMemoryAccessType {
-	SCE_KERNEL_MEMORY_ACCESS_X = 0x01,
-	SCE_KERNEL_MEMORY_ACCESS_W = 0x02,
-	SCE_KERNEL_MEMORY_ACCESS_R = 0x04
+	SCE_KERNEL_MEMORY_ACCESS_X = 0x01, //!< Execute privileges
+	SCE_KERNEL_MEMORY_ACCESS_W = 0x02, //!< Write privileges
+	SCE_KERNEL_MEMORY_ACCESS_R = 0x04  //!< Read privileges
 } SceKernelMemoryAccessType;
 
 typedef enum SceKernelMemoryType {
-	SCE_KERNEL_MEMORY_TYPE_NORMAL_NC = 0x80,
-	SCE_KERNEL_MEMORY_TYPE_NORMAL    = 0xD0
+	SCE_KERNEL_MEMORY_TYPE_NORMAL_NC = 0x80, //!< Non cached memory type
+	SCE_KERNEL_MEMORY_TYPE_NORMAL    = 0xD0  //!< Cached memory type
 } SceKernelMemoryType;
 
 /**
@@ -61,7 +61,7 @@ typedef enum SceKernelMemoryType {
  *
  * @param[in] name - Name for the memory block
  * @param[in] type - Type of the memory to allocate. Use `SCE_KERNEL_MEMBLOCK_TYPE_USER_*`.
- * @param[in] size - Size of the memory to allocate
+ * @param[in] size - Size of the memory to allocate in bytes
  * @param[in] opt  - Memory block options?
  *
  * @return SceUID of the memory block on success, < 0 on error.
@@ -87,14 +87,71 @@ int sceKernelFreeMemBlock(SceUID uid);
 */
 int sceKernelGetMemBlockBase(SceUID uid, void **base);
 
+/**
+ * Gets the associated memory block to a given memory location.
+ *
+ * @param[in] base - Address of the memory location to search
+ * @param[in] size - Size of the memory location in bytes
+ *
+ * @return SceUID of the memory block on success, < 0 on error.
+*/
 SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
 
+/**
+ * Gets memory block information given a base address.
+ *
+ * @param[in]  base - Base address of the memory location
+ * @param[out] info - Information about the related memory block
+ *
+ * @return 0 on success, < 0 on error.
+*/
 int sceKernelGetMemBlockInfoByAddr(void *base, SceKernelMemBlockInfo *info);
+
+/**
+ * Gets memory block information given a memory location.
+ *
+ * @param[in]  base - Address of the memory location
+ * @param[in]  size - Size of the memory location in bytes
+ * @param[out] info - Information about the related memory block
+ *
+ * @return 0 on success, < 0 on error.
+*/
 int sceKernelGetMemBlockInfoByRange(void *base, SceSize size, SceKernelMemBlockInfo *info);
 
+/**
+ * Allocates a new memory block for Virtual Machine domain.
+ *
+ * @param[in] name - Name for the memory block
+ * @param[in] size - Size of the memory to allocate in bytes
+ *
+ * @return SceUID of the memory block on success, < 0 on error.
+ * @note - size can't be higher than 16 * 1024 * 1024.
+*/
 SceUID sceKernelAllocMemBlockForVM(const char *name, SceSize size);
+
+/**
+ * Flushes Virtual Machine caches for the given memory location.
+ *
+ * @param[in]  uid  - SceUID of the memory block to flush.
+ * @param[in]  base - Address of the memory location to flush
+ * @param[in]  size - Size of the memory to flush in bytes
+ *
+ * @return SceUID of the memory block on success, < 0 on error.
+*/
 int sceKernelSyncVMDomain(SceUID uid, void *data, SceSize size);
+
+/**
+ * Makes all Virtual Machine domain memblocks executeable.
+ *
+ * @return 0 on success, < 0 on error.
+*/
 int sceKernelOpenVMDomain(void);
+
+/**
+ * Makes all Virtual Machine domain memblocks non executeable.
+ *
+ * @return 0 on success, < 0 on error.
+*/
 int sceKernelCloseVMDomain(void);
 
 int sceKernelOpenMemBlock(const char *name, int flags);
@@ -122,6 +179,11 @@ int sceKernelGetModel(void);
 */
 int sceKernelGetFreeMemorySize(SceKernelFreeMemorySizeInfo *info);
 
+/**
+ * Returns wether the running device is a PSTV or not.
+ *
+ * @return 1 if the device is a PSTV, 0 otherwise.
+*/
 int sceKernelIsPSVitaTV(void);
 
 #ifdef __cplusplus
