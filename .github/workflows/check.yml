@@ -8,23 +8,29 @@ on:
   repository_dispatch:
     types: [run_build]
 
+env:
+  VITASDK: /usr/local/vitasdk
+
 jobs:
   check-headers:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Install dependencies
+    - uses: actions/checkout@v6
+    - uses: actions/checkout@v6
+      with:
+        repository: vitasdk/vdpm
+        path: vdpm
+    - name: Install vitasdk
       run: |
-        sudo apt-get update
-        sudo apt-get install -y cmake cmake-data git doxygen python3 curl rsync 
+        bash vdpm/bootstrap-vitasdk.sh
+        echo "$VITASDK/bin" >> "$GITHUB_PATH"
+    - name: Install packages
+      run: vdpm SDL2 curl openssl soloud taihen zlib zstd
     - name: Check
       run: |
         set -e
         export TRAVIS_BUILD_DIR=$PWD
         cd $TRAVIS_BUILD_DIR
-        bash $TRAVIS_BUILD_DIR/.travis.d/download_sdk.sh
-        export VITASDK=$PWD/vitasdk
-        export PATH=$VITASDK/bin:$PATH
         export INCLUDE_DIR=$TRAVIS_BUILD_DIR/include
         ls ./db | xargs -I__name__ vita-nid-check -dbdirver=./db/__name__ -dbg=trace
         # Make sure headers are valid
@@ -35,21 +41,13 @@ jobs:
         find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-gcc -I$INCLUDE_DIR -fsyntax-only -c FN -o /dev/null
         find $INCLUDE_DIR -type f -name "*.h" | xargs -I FN -n 1 -P 4 arm-vita-eabi-g++ -I$INCLUDE_DIR -fsyntax-only -c FN -o /dev/null
         cd $VITASDK/arm-vita-eabi/lib
-        rm -rf *_stub.a
+        rm -rf *libSce*_stub.a
         cd $TRAVIS_BUILD_DIR
         cp -r include/* $VITASDK/arm-vita-eabi/include
         # header define check
         BYPASS_VITA_LIBS_GEN=1 USE_LINT=1 python3 build.py output
-        vdpm SDL2
-        vdpm curl
-        vdpm openssl
-        vdpm soloud
-        vdpm zlib
-        vdpm taihen
     - name: DB Stub test
       run: |
-        export VITASDK=$PWD/vitasdk
-        export PATH=$VITASDK/bin:$PATH
         vita-libs-gen-2 -yml=./db -output=./stubs
         cd ./stubs
         make -j$(nproc) install
@@ -58,36 +56,27 @@ jobs:
         tar "cfvj" "vitasdk-db-stubs.tar.bz2" "stubs"
     - name: Header sanitize checks
       run: |
-        export VITASDK=$PWD/vitasdk
-        export PATH=$VITASDK/bin:$PATH
-        cd check_size
         python3 ./includes_all.py ../include
-        mkdir build
-        cd build
-        cmake ..
-        make -j$(nproc)
+        cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake
+        cmake --build build
+      working-directory: check_size
     - name: NID compat checks
       run: |
-        export VITASDK=$PWD/vitasdk
-        export PATH=$VITASDK/bin:$PATH
-        cd check_nid_compat
-        mkdir build
-        cd build
-        cmake ..
-        make -j$(nproc)
+        cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake
+        cmake --build build
+      working-directory: check_nid_compat
+    - uses: actions/checkout@v6
+      with:
+        repository: vitasdk/samples
+        path: samples
     - name: Sample build test
       run: |
-        export VITASDK=$PWD/vitasdk
-        export PATH=$VITASDK/bin:$PATH
-        git clone https://github.com/vitasdk/samples
-        cd samples
-        mkdir build
-        cd build
-        cmake ..
-        make -j$(nproc)
+        cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake
+        cmake --build build
+      working-directory: samples
     - name: Upload artifacts
       if: ${{ success() }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: vitasdk-db-stubs
         path: vitasdk-db-stubs.tar.bz2
