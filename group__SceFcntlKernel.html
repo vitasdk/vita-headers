@@ -113,9 +113,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabda80bd474bdd34dc7f8b00cec168e71" id="r_gabda80bd474bdd34dc7f8b00cec168e71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlKernel.html#gabda80bd474bdd34dc7f8b00cec168e71">ksceIoSync</a> (const char *device, unsigned int unk)</td></tr>
 <tr class="memdesc:gabda80bd474bdd34dc7f8b00cec168e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the file data on the device.  <br /></td></tr>
 <tr class="separator:gabda80bd474bdd34dc7f8b00cec168e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad27cbe1fdaf3cf2050f056da2eafd094" id="r_gad27cbe1fdaf3cf2050f056da2eafd094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlKernel.html#gad27cbe1fdaf3cf2050f056da2eafd094">ksceIoSyncByFd</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd)</td></tr>
-<tr class="memdesc:gad27cbe1fdaf3cf2050f056da2eafd094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the file data for one file.  <br /></td></tr>
-<tr class="separator:gad27cbe1fdaf3cf2050f056da2eafd094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99ad994e991ff85cf9219aeedc7ac652" id="r_ga99ad994e991ff85cf9219aeedc7ac652"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFcntlKernel.html#ga99ad994e991ff85cf9219aeedc7ac652">ksceIoSyncByFd</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fd, int *status)</td></tr>
+<tr class="memdesc:ga99ad994e991ff85cf9219aeedc7ac652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the file data for one file.  <br /></td></tr>
+<tr class="separator:ga99ad994e991ff85cf9219aeedc7ac652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -573,8 +573,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad27cbe1fdaf3cf2050f056da2eafd094" name="gad27cbe1fdaf3cf2050f056da2eafd094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad27cbe1fdaf3cf2050f056da2eafd094">&#9670;&#160;</a></span>ksceIoSyncByFd()</h2>
+<a id="ga99ad994e991ff85cf9219aeedc7ac652" name="ga99ad994e991ff85cf9219aeedc7ac652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99ad994e991ff85cf9219aeedc7ac652">&#9670;&#160;</a></span>ksceIoSyncByFd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,8 +583,18 @@ Functions</h2></td></tr>
           <td class="memname">int ksceIoSyncByFd </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -592,7 +602,8 @@ Functions</h2></td></tr>
 <p>Synchronize the file data for one file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fd</td><td>- Opened file descriptor to sync</td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">fd</td><td>- Opened file descriptor to sync </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>- result</td></tr>
   </table>
   </dd>
 </dl>

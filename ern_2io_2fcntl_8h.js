@@ -10,5 +10,5 @@ var ern_2io_2fcntl_8h =
     [ "ksceIoRemove", "group__SceFcntlKernel.html#gaf1c3ab11e7942db4639e4652a67cea3f", null ],
     [ "ksceIoRename", "group__SceFcntlKernel.html#ga9d9904db9514aceb4a8f84cf79570105", null ],
     [ "ksceIoSync", "group__SceFcntlKernel.html#gabda80bd474bdd34dc7f8b00cec168e71", null ],
-    [ "ksceIoSyncByFd", "group__SceFcntlKernel.html#gad27cbe1fdaf3cf2050f056da2eafd094", null ]
+    [ "ksceIoSyncByFd", "group__SceFcntlKernel.html#ga99ad994e991ff85cf9219aeedc7ac652", null ]
 ];
