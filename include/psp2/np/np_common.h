@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceNp}
- * \usage{psp2/np_common.h}
+ * \usage{psp2/np/np_common.h}
  */
 
 
