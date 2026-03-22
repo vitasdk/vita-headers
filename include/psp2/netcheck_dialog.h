@@ -13,7 +13,7 @@
 #include <psp2/pspnet_adhocctl.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/net/net.h>
-#include <psp2/np/np_common.h>
+#include <psp2/np/common.h>
 
 #ifdef __cplusplus
 extern "C" {
