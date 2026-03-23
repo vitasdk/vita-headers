@@ -89,6 +89,9 @@
 #include <psp2/videoexport.h>
 #include <psp2/vshbridge.h>
 
+#include <psp2/np/common.h>
+#include <psp2/np/mgr.h>
+
 #include <psp2/deci4p/user.h>
 
 #include <psp2/io/devctl.h>
