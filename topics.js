@@ -11,6 +11,7 @@ var topics =
     [ "Update", "group__update.html", "group__update" ],
     [ "Debug", "group__debug.html", "group__debug" ],
     [ "Network", "group__Net.html", "group__Net" ],
+    [ "Np", "group__Np.html", "group__Np" ],
     [ "System Status", "group__SystemStatus.html", "group__SystemStatus" ],
     [ "Universal Serial Bus", "group__USB.html", "group__USB" ],
     [ "System Parameters", "group__SystemParams.html", "group__SystemParams" ],

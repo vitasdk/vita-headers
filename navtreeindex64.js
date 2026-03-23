@@ -1,5 +1,11 @@
 var NAVTREEINDEX64 =
 {
+"group__SceVfsKernel.html#ga7382241751215b04d26f35d361c6bdfb":[1,4,7,0,267],
+"group__SceVfsKernel.html#ga74788d783c1e98cb11ad477f707fdaee":[1,4,7,0,69],
+"group__SceVfsKernel.html#ga74d245a01bb8a761ddde32989490dbca":[1,4,7,0,165],
+"group__SceVfsKernel.html#ga7604de05648846980ee42f826f46690d":[1,4,7,0,160],
+"group__SceVfsKernel.html#ga76968f7d64c5bc995ba1ceb48c12a5ce":[1,4,7,0,394],
+"group__SceVfsKernel.html#ga76cc628daf2d5bb3bdcc8727ba0890cc":[1,4,7,0,174],
 "group__SceVfsKernel.html#ga78025c16354b4efe5e7b7b23c8595e37":[1,4,7,0,220],
 "group__SceVfsKernel.html#ga785f6dca5f403cfbcf3f66aed7c5a18a":[1,4,7,0,404],
 "group__SceVfsKernel.html#ga78829176bbed3b86bfc37431323e2e58":[1,4,7,0,403],
@@ -243,11 +249,5 @@ var NAVTREEINDEX64 =
 "group__SceVfsKernel.html#structSceVfsVnode_8core":[1,4,7,0,48],
 "group__SceVfsKernel.html#structSceVfsVnode_8vdlock":[1,4,7,0,47],
 "group__SceVfsKernel.html#structSceVopChstatArgs":[1,4,7,0,31],
-"group__SceVfsKernel.html#structSceVopCleanupArgs":[1,4,7,0,42],
-"group__SceVfsKernel.html#structSceVopCloseArgs":[1,4,7,0,18],
-"group__SceVfsKernel.html#structSceVopCreateArgs":[1,4,7,0,17],
-"group__SceVfsKernel.html#structSceVopDcloseArgs":[1,4,7,0,28],
-"group__SceVfsKernel.html#structSceVopDopenAgrs":[1,4,7,0,27],
-"group__SceVfsKernel.html#structSceVopDreadArgs":[1,4,7,0,29],
-"group__SceVfsKernel.html#structSceVopFchstatArgs":[1,4,7,0,32]
+"group__SceVfsKernel.html#structSceVopCleanupArgs":[1,4,7,0,42]
 };

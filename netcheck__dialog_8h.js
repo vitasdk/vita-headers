@@ -30,7 +30,6 @@ var netcheck__dialog_8h =
       [ "SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_ENTER", "group__SceNetCheckDialogUser.html#gga46842dd57ea8e763625c34ac6ed4c345a05b1654332d27e15f73851a7995c1fd1", null ],
       [ "SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_LEAVE", "group__SceNetCheckDialogUser.html#gga46842dd57ea8e763625c34ac6ed4c345a429422c8a1135c868fe0aa2fc1cba28f", null ]
     ] ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gae4fd7e8fa9eebee6be970e0186dc906e", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#ga6400a4f6882a250865e8ca5235063b9b", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gab23649c4e205cdcec1fdc0b95a537974", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gaa27d3d4331dc60e2f7541f70b685ad8e", null ],

@@ -4,6 +4,7 @@ var dir_b01009cebf28d8f720b9c837209f59b1 =
     [ "io", "dir_b868a50dad41c392c74753fe5caef4e2.html", "dir_b868a50dad41c392c74753fe5caef4e2" ],
     [ "kernel", "dir_c85e5402da127eb3731401e7b9ea3cf3.html", "dir_c85e5402da127eb3731401e7b9ea3cf3" ],
     [ "net", "dir_28c9b31b794be7dddd0cd6c658658b14.html", "dir_28c9b31b794be7dddd0cd6c658658b14" ],
+    [ "np", "dir_f93c562eb553b895de66f43ca690881c.html", "dir_f93c562eb553b895de66f43ca690881c" ],
     [ "paf", "dir_1a3a77810341899a68c283761582d01d.html", "dir_1a3a77810341899a68c283761582d01d" ],
     [ "appmgr.h", "psp2_2appmgr_8h.html", "psp2_2appmgr_8h" ],
     [ "apputil.h", "apputil_8h.html", "apputil_8h" ],

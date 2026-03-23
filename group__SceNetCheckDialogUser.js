@@ -1,11 +1,5 @@
 var group__SceNetCheckDialogUser =
 [
-    [ "SceNpCommunicationId", "group__SceNetCheckDialogUser.html#structSceNpCommunicationId", [
-      [ "data", "group__SceNetCheckDialogUser.html#ga6e79ec7241d67cf947aa5e5397fd25a4", null ],
-      [ "term", "group__SceNetCheckDialogUser.html#gaa1c458b69c448f3847446d21e7c44178", null ],
-      [ "num", "group__SceNetCheckDialogUser.html#ga7abb19f78a0c78701c36475b5e4b5e12", null ],
-      [ "dummy", "group__SceNetCheckDialogUser.html#ga0975a109108e5735288b53c2ca30a303", null ]
-    ] ],
     [ "SceNetCheckDialogPS3ConnectParam", "group__SceNetCheckDialogUser.html#structSceNetCheckDialogPS3ConnectParam", [
       [ "action", "group__SceNetCheckDialogUser.html#gaf702cdd7933d56a1bcc808902f20d743", null ],
       [ "ssid", "group__SceNetCheckDialogUser.html#gade2648148d97c16a5cb42ad4cf875b5c", null ],
@@ -91,7 +85,6 @@ var group__SceNetCheckDialogUser =
     [ "SCE_NETCHECK_DIALOG_MODE_PSP_ADHOC_JOIN", "group__SceNetCheckDialogUser.html#gga19188164e1dc85270fec25310283e271a2b70b7b9d4629ab018fdf44cd3bf5096", null ],
     [ "SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_ENTER", "group__SceNetCheckDialogUser.html#gga46842dd57ea8e763625c34ac6ed4c345a05b1654332d27e15f73851a7995c1fd1", null ],
     [ "SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_LEAVE", "group__SceNetCheckDialogUser.html#gga46842dd57ea8e763625c34ac6ed4c345a429422c8a1135c868fe0aa2fc1cba28f", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gae4fd7e8fa9eebee6be970e0186dc906e", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#ga6400a4f6882a250865e8ca5235063b9b", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gab23649c4e205cdcec1fdc0b95a537974", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceNetCheckDialogUser.html#gaa27d3d4331dc60e2f7541f70b685ad8e", null ],
@@ -103,10 +96,6 @@ var group__SceNetCheckDialogUser =
     [ "sceNetCheckDialogGetResult", "group__SceNetCheckDialogUser.html#ga1b6412732b3c77ac04a72c996ef3a8c6", null ],
     [ "sceNetCheckDialogGetPS3ConnectInfo", "group__SceNetCheckDialogUser.html#ga4642a1b23eda5fd0eadfc5dd7a3df147", null ],
     [ "sceNetCheckDialogTerm", "group__SceNetCheckDialogUser.html#ga3d9f85052e3e743dec17f1999c7a7ed4", null ],
-    [ "SceNpCommunicationId::data", "group__SceNetCheckDialogUser.html#ga6e79ec7241d67cf947aa5e5397fd25a4", null ],
-    [ "SceNpCommunicationId::term", "group__SceNetCheckDialogUser.html#gaa1c458b69c448f3847446d21e7c44178", null ],
-    [ "SceNpCommunicationId::num", "group__SceNetCheckDialogUser.html#ga7abb19f78a0c78701c36475b5e4b5e12", null ],
-    [ "SceNpCommunicationId::dummy", "group__SceNetCheckDialogUser.html#ga0975a109108e5735288b53c2ca30a303", null ],
     [ "SceNetCheckDialogPS3ConnectParam::action", "group__SceNetCheckDialogUser.html#gaf702cdd7933d56a1bcc808902f20d743", null ],
     [ "SceNetCheckDialogPS3ConnectParam::ssid", "group__SceNetCheckDialogUser.html#gade2648148d97c16a5cb42ad4cf875b5c", null ],
     [ "SceNetCheckDialogPS3ConnectParam::wpaKey", "group__SceNetCheckDialogUser.html#ga7ccc65e2b9146afb0ef11336807d3d19", null ],
