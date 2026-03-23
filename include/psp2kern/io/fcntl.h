@@ -161,10 +161,11 @@ int ksceIoSync(const char *device, unsigned int unk);
  * Synchronize the file data for one file
  *
  * @param fd - Opened file descriptor to sync
+ * @param[out] status - result
  *
  * @return < 0 on error.
  */
-int ksceIoSyncByFd(SceUID fd);
+int ksceIoSyncByFd(SceUID fd, int* status);
 
 
 #ifdef __cplusplus

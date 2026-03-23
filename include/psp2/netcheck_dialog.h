@@ -13,6 +13,7 @@
 #include <psp2/pspnet_adhocctl.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/net/net.h>
+#include <psp2/np/common.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -51,14 +52,6 @@ typedef enum SceNetCheckDialogPS3ConnectAction {
 	SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_ENTER  = 0,
 	SCE_NETCHECK_DIALOG_PS3_CONNECT_ACTION_LEAVE  = 1
 } SceNetCheckDialogPS3ConnectAction;
-
-typedef struct SceNpCommunicationId {
-	char data[9];
-	char term;
-	SceUChar8 num;
-	char dummy;
-} SceNpCommunicationId;
-VITASDK_BUILD_ASSERT_EQ(0xC, SceNpCommunicationId);
 
 typedef struct SceNetCheckDialogPS3ConnectParam {
 	SceInt32 action;
