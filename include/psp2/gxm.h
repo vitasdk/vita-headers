@@ -34,7 +34,6 @@ typedef enum SceGxmErrorCode {
 	SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_PRECISION         = 0x805B000F,
 	SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_COMPONENT_COUNT   = 0x805B0010,
 	SCE_GXM_ERROR_UNIFORM_BUFFER_NOT_RESERVED                   = 0x805B0011,
-	SCE_GXM_ERROR_INVALID_AUXILIARY_SURFACE                     = 0x805B0013,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW                      = 0x805B0014,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE              = 0x805B0015,
 	SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE            = 0x805B0016,
@@ -1206,17 +1205,6 @@ typedef struct SceGxmDepthStencilSurface {
 } SceGxmDepthStencilSurface;
 VITASDK_BUILD_ASSERT_EQ(0x14, SceGxmDepthStencilSurface);
 
-//! Represents an auxiliary surface
-typedef struct SceGxmAuxiliarySurface {
-	uint32_t colorFormat; //!< Format of auxiliary surface data from SceGxmColorFormat.
-	uint32_t type;        //!< Memory layout of the surface data from SceGxmColorSurfaceType.
-	uint32_t width;       //!< Surface width.
-	uint32_t height;      //!< Surface height.
-	uint32_t stride;      //!< Surface stride in bytes.
-	void *data;           //!< A pointer to the surface data.
-} SceGxmAuxiliarySurface;
-VITASDK_BUILD_ASSERT_EQ(0x18, SceGxmAuxiliarySurface);
-
 typedef struct SceGxmNotification {
 	volatile unsigned int *address;
 	unsigned int value;
@@ -1298,7 +1286,6 @@ VITASDK_BUILD_ASSERT_EQ(0x2C, SceGxmPrecomputedDraw);
 #define SCE_GXM_MAX_VERTEX_STREAMS      16
 #define SCE_GXM_MAX_TEXTURE_UNITS       16
 #define SCE_GXM_MAX_UNIFORM_BUFFERS     14
-#define SCE_GXM_MAX_AUXILIARY_SURFACES  3
 
 #define SCE_GXM_TILE_SHIFTX 5U
 #define SCE_GXM_TILE_SHIFTY 5U
@@ -1323,7 +1310,6 @@ typedef enum SceGxmParameterCategory {
 	SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE,          //!< Vertex attribute input
 	SCE_GXM_PARAMETER_CATEGORY_UNIFORM,            //!< Uniform
 	SCE_GXM_PARAMETER_CATEGORY_SAMPLER,            //!< Sampler
-	SCE_GXM_PARAMETER_CATEGORY_AUXILIARY_SURFACE,  //!< Auxiliary surface
 	SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER      //!< Uniform buffer
 } SceGxmParameterCategory;
 
@@ -1643,7 +1629,6 @@ int sceGxmSetFragmentTexture(SceGxmContext *context, unsigned int textureIndex, 
 
 int sceGxmSetVertexUniformBuffer(SceGxmContext *context, unsigned int bufferIndex, const void *bufferData);
 int sceGxmSetFragmentUniformBuffer(SceGxmContext *context, unsigned int bufferIndex, const void *bufferData);
-int sceGxmSetAuxiliarySurface(SceGxmContext *context, unsigned int surfaceIndex, const SceGxmAuxiliarySurface *surface);
 
 void sceGxmSetPrecomputedFragmentState(SceGxmContext *context, const SceGxmPrecomputedFragmentState *precomputedState);
 void sceGxmSetPrecomputedVertexState(SceGxmContext *context, const SceGxmPrecomputedVertexState *precomputedState);
@@ -1811,7 +1796,6 @@ int sceGxmShaderPatcherRegisterProgram(SceGxmShaderPatcher *shaderPatcher, const
 int sceGxmShaderPatcherUnregisterProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId);
 int sceGxmShaderPatcherForceUnregisterProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId);
 const SceGxmProgram *sceGxmShaderPatcherGetProgramFromId(SceGxmShaderPatcherId programId);
-int sceGxmShaderPatcherSetAuxiliarySurface(SceGxmShaderPatcher *shaderPatcher, unsigned int auxSurfaceIndex, const SceGxmAuxiliarySurface *auxSurface);
 int sceGxmShaderPatcherCreateVertexProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId, const SceGxmVertexAttribute *attributes, unsigned int attributeCount, const SceGxmVertexStream *streams, unsigned int streamCount, SceGxmVertexProgram **vertexProgram);
 int sceGxmShaderPatcherCreateFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmShaderPatcherId programId, SceGxmOutputRegisterFormat outputFormat, SceGxmMultisampleMode multisampleMode, const SceGxmBlendInfo *blendInfo, const SceGxmProgram *vertexProgram, SceGxmFragmentProgram **fragmentProgram);
 int sceGxmShaderPatcherCreateMaskUpdateFragmentProgram(SceGxmShaderPatcher *shaderPatcher, SceGxmFragmentProgram **fragmentProgram);
@@ -1894,7 +1878,6 @@ int sceGxmPrecomputedFragmentStateSetAllTextures(SceGxmPrecomputedFragmentState 
 int sceGxmPrecomputedFragmentStateSetTexture(SceGxmPrecomputedFragmentState *precomputedState, unsigned int textureIndex, const SceGxmTexture *texture);
 int sceGxmPrecomputedFragmentStateSetAllUniformBuffers(SceGxmPrecomputedFragmentState *precomputedState, const void * const *bufferDataArray);
 int sceGxmPrecomputedFragmentStateSetUniformBuffer(SceGxmPrecomputedFragmentState *precomputedState, unsigned int bufferIndex, const void *bufferData);
-int sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces(SceGxmPrecomputedFragmentState *precomputedState, const SceGxmAuxiliarySurface *auxSurfaceArray);
 unsigned int sceGxmGetPrecomputedDrawSize(const SceGxmVertexProgram *vertexProgram);
 int sceGxmPrecomputedDrawInit(SceGxmPrecomputedDraw *precomputedDraw, const SceGxmVertexProgram *vertexProgram, void *memBlock);
 int sceGxmPrecomputedDrawSetAllVertexStreams(SceGxmPrecomputedDraw *precomputedDraw, const void * const *streamDataArray);
@@ -1904,7 +1887,6 @@ void sceGxmPrecomputedDrawSetParamsInstanced(SceGxmPrecomputedDraw *precomputedD
 
 int sceGxmGetRenderTargetMemSize(const SceGxmRenderTargetParams *params, unsigned int *driverMemSize);
 int sceGxmCreateRenderTarget(const SceGxmRenderTargetParams *params, SceGxmRenderTarget **renderTarget);
-int sceGxmRenderTargetGetHostMem(const SceGxmRenderTarget *renderTarget, void **hostMem);
 int sceGxmRenderTargetGetDriverMemBlock(const SceGxmRenderTarget *renderTarget, SceUID *driverMemBlock);
 int sceGxmDestroyRenderTarget(SceGxmRenderTarget *renderTarget);
 
