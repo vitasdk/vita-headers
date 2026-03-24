@@ -153,7 +153,6 @@ var annotated_dup =
     [ "SceFVector4", "group__SceTypesKernel.html#structSceFVector4", "group__SceTypesKernel_structSceFVector4" ],
     [ "SceGUIDKernelCreateOpt", "group__SceSysmemKernel.html#structSceGUIDKernelCreateOpt", "group__SceSysmemKernel_structSceGUIDKernelCreateOpt" ],
     [ "SceGUIDKernelCreateOpt.__unnamed42__", "group__SceSysmemKernel.html#unionSceGUIDKernelCreateOpt_8____unnamed42____", "group__SceSysmemKernel_unionSceGUIDKernelCreateOpt_8____unnamed42____" ],
-    [ "SceGxmAuxiliarySurface", "group__SceGxmUser.html#structSceGxmAuxiliarySurface", "group__SceGxmUser_structSceGxmAuxiliarySurface" ],
     [ "SceGxmBlendInfo", "group__SceGxmUser.html#structSceGxmBlendInfo", "group__SceGxmUser_structSceGxmBlendInfo" ],
     [ "SceGxmColorSurface", "group__SceGxmUser.html#structSceGxmColorSurface", "group__SceGxmUser_structSceGxmColorSurface" ],
     [ "SceGxmCommandList", "group__SceGxmUser.html#structSceGxmCommandList", "group__SceGxmUser_structSceGxmCommandList" ],

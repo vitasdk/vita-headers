@@ -106,9 +106,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:structSceGxmColorSurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceGxmDepthStencilSurface" id="r_structSceGxmDepthStencilSurface"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#structSceGxmDepthStencilSurface">SceGxmDepthStencilSurface</a></td></tr>
 <tr class="separator:structSceGxmDepthStencilSurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structSceGxmAuxiliarySurface" id="r_structSceGxmAuxiliarySurface"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a></td></tr>
-<tr class="memdesc:structSceGxmAuxiliarySurface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an auxiliary surface.  <a href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">More...</a><br /></td></tr>
-<tr class="separator:structSceGxmAuxiliarySurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceGxmNotification" id="r_structSceGxmNotification"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#structSceGxmNotification">SceGxmNotification</a></td></tr>
 <tr class="separator:structSceGxmNotification"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceGxmValidRegion" id="r_structSceGxmValidRegion"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#structSceGxmValidRegion">SceGxmValidRegion</a></td></tr>
@@ -162,8 +159,6 @@ Macros</h2></td></tr>
 <tr class="separator:gab46ca1254a5ba4b105b2018b09b5a7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6c01c40eb9cc1d9ca13b9ea747e6996" id="r_gac6c01c40eb9cc1d9ca13b9ea747e6996"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gac6c01c40eb9cc1d9ca13b9ea747e6996">SCE_GXM_MAX_UNIFORM_BUFFERS</a>&#160;&#160;&#160;14</td></tr>
 <tr class="separator:gac6c01c40eb9cc1d9ca13b9ea747e6996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga779136ff27a7753151298f2335a03fb1" id="r_ga779136ff27a7753151298f2335a03fb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga779136ff27a7753151298f2335a03fb1">SCE_GXM_MAX_AUXILIARY_SURFACES</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga779136ff27a7753151298f2335a03fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac83332b79af909ad2b2e57c705bb18e" id="r_gaac83332b79af909ad2b2e57c705bb18e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaac83332b79af909ad2b2e57c705bb18e">SCE_GXM_TILE_SHIFTX</a>&#160;&#160;&#160;5U</td></tr>
 <tr class="separator:gaac83332b79af909ad2b2e57c705bb18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6b0c28870b2b6dd2e585e82bb103d47" id="r_gae6b0c28870b2b6dd2e585e82bb103d47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gae6b0c28870b2b6dd2e585e82bb103d47">SCE_GXM_TILE_SHIFTY</a>&#160;&#160;&#160;5U</td></tr>
@@ -243,16 +238,15 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faada13ef22a427202272bc4c75bdad103">SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_COMPONENT_COUNT</a> = 0x805B0010
 , <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa8cfc026ef4cbe8ab841efa5a2301893">SCE_GXM_ERROR_UNIFORM_BUFFER_NOT_RESERVED</a> = 0x805B0011
-, <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa5e321def30069dbcfec6b204dbc6c544">SCE_GXM_ERROR_INVALID_AUXILIARY_SURFACE</a> = 0x805B0013
 , <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac1a8fb1badbfe04a2cad6d46c4bb3f48">SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW</a> = 0x805B0014
+, <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fadd0be539272b8b10a836ed0c562a5224">SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE</a> = 0x805B0015
 , <br />
-&#160;&#160;<a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fadd0be539272b8b10a836ed0c562a5224">SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE</a> = 0x805B0015
-, <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fad3a1e0410a5b25878b15380ad5dbe114">SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE</a> = 0x805B0016
+&#160;&#160;<a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fad3a1e0410a5b25878b15380ad5dbe114">SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE</a> = 0x805B0016
 , <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa61bfa923792e007d099ff5669408d0d5">SCE_GXM_ERROR_DRIVER</a> = 0x805B0017
 , <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa3544740d8c0175cbeec70f44d4601b0b">SCE_GXM_ERROR_INVALID_TEXTURE</a> = 0x805B0018
+, <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa4da4bad29fbd5b0834fd9a2a0efdc4b">SCE_GXM_ERROR_INVALID_TEXTURE_DATA_POINTER</a> = 0x805B0019
 , <br />
-&#160;&#160;<a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027faa4da4bad29fbd5b0834fd9a2a0efdc4b">SCE_GXM_ERROR_INVALID_TEXTURE_DATA_POINTER</a> = 0x805B0019
-, <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac8d5b6df66e54383a369a65ca49052ad">SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER</a> = 0x805B001A
+&#160;&#160;<a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fac8d5b6df66e54383a369a65ca49052ad">SCE_GXM_ERROR_INVALID_TEXTURE_PALETTE_POINTER</a> = 0x805B001A
 , <a class="el" href="group__SceGxmUser.html#ggad7a6e8555a60ee86ac7eeeb2495c027fa64227e5544fb666b93ea21bd27dc6400">SCE_GXM_ERROR_OUT_OF_RENDER_TARGETS</a> = 0x805B0027
 <br />
  }</td></tr>
@@ -1343,14 +1337,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__SceGxmUser.html#gga24f55b5eff0cc8357d4c94c430422d61af9a99c09f8c75b6726892c8fce2e74af">SCE_GXM_FRAGMENT_PROGRAM</a>
  }</td></tr>
 <tr class="separator:ga24f55b5eff0cc8357d4c94c430422d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaabee1741cd74c3f67271560f08e21e89" id="r_gaabee1741cd74c3f67271560f08e21e89"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaabee1741cd74c3f67271560f08e21e89">SceGxmParameterCategory</a> { <br />
-&#160;&#160;<a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a6153facbf6b99c2ed0078bc6eb4e1ac4">SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE</a>
+<tr class="memitem:gaabee1741cd74c3f67271560f08e21e89" id="r_gaabee1741cd74c3f67271560f08e21e89"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaabee1741cd74c3f67271560f08e21e89">SceGxmParameterCategory</a> { <a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a6153facbf6b99c2ed0078bc6eb4e1ac4">SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE</a>
 , <a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a88b3531ee29dae122b13099bfcca4aa5">SCE_GXM_PARAMETER_CATEGORY_UNIFORM</a>
 , <a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a5c0ce645fee8f396e36459314428fe75">SCE_GXM_PARAMETER_CATEGORY_SAMPLER</a>
-, <a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89a7b96c6d7105a7c7b0fcef29dded942f9">SCE_GXM_PARAMETER_CATEGORY_AUXILIARY_SURFACE</a>
-, <br />
-&#160;&#160;<a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89ab4fa28962dd7ff0b3f0f3519944928e5">SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER</a>
-<br />
+, <a class="el" href="group__SceGxmUser.html#ggaabee1741cd74c3f67271560f08e21e89ab4fa28962dd7ff0b3f0f3519944928e5">SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER</a>
  }</td></tr>
 <tr class="separator:gaabee1741cd74c3f67271560f08e21e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8b82ebb229b9a482d50aa79b2a3bf43b" id="r_ga8b82ebb229b9a482d50aa79b2a3bf43b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga8b82ebb229b9a482d50aa79b2a3bf43b">SceGxmParameterType</a> { <br />
@@ -1413,8 +1403,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga87d7b31dcf6e1badf2ea44b28ddef4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4acbfb5b9a713c10a43bcae280f0c97c" id="r_ga4acbfb5b9a713c10a43bcae280f0c97c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga4acbfb5b9a713c10a43bcae280f0c97c">VITASDK_BUILD_ASSERT_EQ</a> (0x14, <a class="el" href="group__SceGxmUser.html#structSceGxmDepthStencilSurface">SceGxmDepthStencilSurface</a>)</td></tr>
 <tr class="separator:ga4acbfb5b9a713c10a43bcae280f0c97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5c9a588c267eee32f0222c6c301afbc" id="r_gae5c9a588c267eee32f0222c6c301afbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gae5c9a588c267eee32f0222c6c301afbc">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a>)</td></tr>
-<tr class="separator:gae5c9a588c267eee32f0222c6c301afbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ca512ce5e33b47c1b64da5da1a5cc6f" id="r_ga1ca512ce5e33b47c1b64da5da1a5cc6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga1ca512ce5e33b47c1b64da5da1a5cc6f">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceGxmUser.html#structSceGxmNotification">SceGxmNotification</a>)</td></tr>
 <tr class="separator:ga1ca512ce5e33b47c1b64da5da1a5cc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6028165d11fe9dcd812c7a79e0abf4c" id="r_gae6028165d11fe9dcd812c7a79e0abf4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gae6028165d11fe9dcd812c7a79e0abf4c">VITASDK_BUILD_ASSERT_EQ</a> (8, <a class="el" href="group__SceGxmUser.html#structSceGxmValidRegion">SceGxmValidRegion</a>)</td></tr>
@@ -1520,8 +1508,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga2cc4a6ceb41fae78c83f25114af72197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04bd81287fca5c5d5c5a72d92814500c" id="r_ga04bd81287fca5c5d5c5a72d92814500c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga04bd81287fca5c5d5c5a72d92814500c">sceGxmSetFragmentUniformBuffer</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, unsigned int bufferIndex, const void *bufferData)</td></tr>
 <tr class="separator:ga04bd81287fca5c5d5c5a72d92814500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9028298ccadb00d5d0971acdc64ed70d" id="r_ga9028298ccadb00d5d0971acdc64ed70d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga9028298ccadb00d5d0971acdc64ed70d">sceGxmSetAuxiliarySurface</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, unsigned int surfaceIndex, const <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a> *surface)</td></tr>
-<tr class="separator:ga9028298ccadb00d5d0971acdc64ed70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga290092739bcc1973b8c7ab7d1d6468f7" id="r_ga290092739bcc1973b8c7ab7d1d6468f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga290092739bcc1973b8c7ab7d1d6468f7">sceGxmSetPrecomputedFragmentState</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, const <a class="el" href="group__SceGxmUser.html#structSceGxmPrecomputedFragmentState">SceGxmPrecomputedFragmentState</a> *precomputedState)</td></tr>
 <tr class="separator:ga290092739bcc1973b8c7ab7d1d6468f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2a39ae4acf50fc4957a58d535d82d806" id="r_ga2a39ae4acf50fc4957a58d535d82d806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga2a39ae4acf50fc4957a58d535d82d806">sceGxmSetPrecomputedVertexState</a> (<a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *context, const <a class="el" href="group__SceGxmUser.html#structSceGxmPrecomputedVertexState">SceGxmPrecomputedVertexState</a> *precomputedState)</td></tr>
@@ -1754,8 +1740,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga777c4defcd1aa5f6b2b03c2d575705b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf6ded11fce51923c1c7926d44984e787" id="r_gaf6ded11fce51923c1c7926d44984e787"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__SceGxmUser.html#ga77ff3089c329da8717f071ac193c364e">SceGxmProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaf6ded11fce51923c1c7926d44984e787">sceGxmShaderPatcherGetProgramFromId</a> (<a class="el" href="group__SceGxmUser.html#gada9559a890f93c7c8558a874e39e101b">SceGxmShaderPatcherId</a> programId)</td></tr>
 <tr class="separator:gaf6ded11fce51923c1c7926d44984e787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5bf6cf2f011fb2e1d80f1d156aa53fb" id="r_gaf5bf6cf2f011fb2e1d80f1d156aa53fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaf5bf6cf2f011fb2e1d80f1d156aa53fb">sceGxmShaderPatcherSetAuxiliarySurface</a> (<a class="el" href="group__SceGxmUser.html#ga9c443f5556a9eb50f08b4462ba050d6a">SceGxmShaderPatcher</a> *shaderPatcher, unsigned int auxSurfaceIndex, const <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a> *auxSurface)</td></tr>
-<tr class="separator:gaf5bf6cf2f011fb2e1d80f1d156aa53fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee8805b04bb68a9c024c0caeec25eb3c" id="r_gaee8805b04bb68a9c024c0caeec25eb3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaee8805b04bb68a9c024c0caeec25eb3c">sceGxmShaderPatcherCreateVertexProgram</a> (<a class="el" href="group__SceGxmUser.html#ga9c443f5556a9eb50f08b4462ba050d6a">SceGxmShaderPatcher</a> *shaderPatcher, <a class="el" href="group__SceGxmUser.html#gada9559a890f93c7c8558a874e39e101b">SceGxmShaderPatcherId</a> programId, const <a class="el" href="group__SceGxmUser.html#structSceGxmVertexAttribute">SceGxmVertexAttribute</a> *attributes, unsigned int attributeCount, const <a class="el" href="group__SceGxmUser.html#structSceGxmVertexStream">SceGxmVertexStream</a> *streams, unsigned int streamCount, <a class="el" href="group__SceGxmUser.html#ga9615920a106fd664aac450eb5df2226e">SceGxmVertexProgram</a> **vertexProgram)</td></tr>
 <tr class="separator:gaee8805b04bb68a9c024c0caeec25eb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade9520f1131e541eb4df166dba933d2b" id="r_gade9520f1131e541eb4df166dba933d2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gade9520f1131e541eb4df166dba933d2b">sceGxmShaderPatcherCreateFragmentProgram</a> (<a class="el" href="group__SceGxmUser.html#ga9c443f5556a9eb50f08b4462ba050d6a">SceGxmShaderPatcher</a> *shaderPatcher, <a class="el" href="group__SceGxmUser.html#gada9559a890f93c7c8558a874e39e101b">SceGxmShaderPatcherId</a> programId, <a class="el" href="group__SceGxmUser.html#gac0a2e79a2c9decc6b7d8f86af17449b6">SceGxmOutputRegisterFormat</a> outputFormat, <a class="el" href="group__SceGxmUser.html#ga79a56d8caeda63dcfc989f61195728cf">SceGxmMultisampleMode</a> multisampleMode, const <a class="el" href="group__SceGxmUser.html#structSceGxmBlendInfo">SceGxmBlendInfo</a> *blendInfo, const <a class="el" href="group__SceGxmUser.html#ga77ff3089c329da8717f071ac193c364e">SceGxmProgram</a> *vertexProgram, <a class="el" href="group__SceGxmUser.html#ga3b99e1aa1e7405bdfb4e74b231ab9945">SceGxmFragmentProgram</a> **fragmentProgram)</td></tr>
@@ -1886,8 +1870,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga3b8e52667280a2229f39d74e5a160856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d6faf45a01adeef7d0ac045ca023086" id="r_ga5d6faf45a01adeef7d0ac045ca023086"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga5d6faf45a01adeef7d0ac045ca023086">sceGxmPrecomputedFragmentStateSetUniformBuffer</a> (<a class="el" href="group__SceGxmUser.html#structSceGxmPrecomputedFragmentState">SceGxmPrecomputedFragmentState</a> *precomputedState, unsigned int bufferIndex, const void *bufferData)</td></tr>
 <tr class="separator:ga5d6faf45a01adeef7d0ac045ca023086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52408110ffcdae3e8dd05e8a31016fe4" id="r_ga52408110ffcdae3e8dd05e8a31016fe4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga52408110ffcdae3e8dd05e8a31016fe4">sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces</a> (<a class="el" href="group__SceGxmUser.html#structSceGxmPrecomputedFragmentState">SceGxmPrecomputedFragmentState</a> *precomputedState, const <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a> *auxSurfaceArray)</td></tr>
-<tr class="separator:ga52408110ffcdae3e8dd05e8a31016fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90d04cffc06557fa3f03765d377a97ef" id="r_ga90d04cffc06557fa3f03765d377a97ef"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga90d04cffc06557fa3f03765d377a97ef">sceGxmGetPrecomputedDrawSize</a> (const <a class="el" href="group__SceGxmUser.html#ga9615920a106fd664aac450eb5df2226e">SceGxmVertexProgram</a> *vertexProgram)</td></tr>
 <tr class="separator:ga90d04cffc06557fa3f03765d377a97ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01c65a68ae720aa1ffa269b468054ed7" id="r_ga01c65a68ae720aa1ffa269b468054ed7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga01c65a68ae720aa1ffa269b468054ed7">sceGxmPrecomputedDrawInit</a> (<a class="el" href="group__SceGxmUser.html#structSceGxmPrecomputedDraw">SceGxmPrecomputedDraw</a> *precomputedDraw, const <a class="el" href="group__SceGxmUser.html#ga9615920a106fd664aac450eb5df2226e">SceGxmVertexProgram</a> *vertexProgram, void *memBlock)</td></tr>
@@ -1904,8 +1886,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga0663655e1ab7f071617d872f49b36047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76071cc5386926a5543d0dbf562ce88c" id="r_ga76071cc5386926a5543d0dbf562ce88c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga76071cc5386926a5543d0dbf562ce88c">sceGxmCreateRenderTarget</a> (const <a class="el" href="group__SceGxmUser.html#structSceGxmRenderTargetParams">SceGxmRenderTargetParams</a> *params, <a class="el" href="group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0">SceGxmRenderTarget</a> **renderTarget)</td></tr>
 <tr class="separator:ga76071cc5386926a5543d0dbf562ce88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd79dc31cd3d4e1eb040c73458f42592" id="r_gafd79dc31cd3d4e1eb040c73458f42592"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gafd79dc31cd3d4e1eb040c73458f42592">sceGxmRenderTargetGetHostMem</a> (const <a class="el" href="group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0">SceGxmRenderTarget</a> *renderTarget, void **hostMem)</td></tr>
-<tr class="separator:gafd79dc31cd3d4e1eb040c73458f42592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2a8ff437a862a01417d9762cd19d865" id="r_gaf2a8ff437a862a01417d9762cd19d865"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaf2a8ff437a862a01417d9762cd19d865">sceGxmRenderTargetGetDriverMemBlock</a> (const <a class="el" href="group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0">SceGxmRenderTarget</a> *renderTarget, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *driverMemBlock)</td></tr>
 <tr class="separator:gaf2a8ff437a862a01417d9762cd19d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga725302f5052ab2968dd3d6777f324897" id="r_ga725302f5052ab2968dd3d6777f324897"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga725302f5052ab2968dd3d6777f324897">sceGxmDestroyRenderTarget</a> (<a class="el" href="group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0">SceGxmRenderTarget</a> *renderTarget)</td></tr>
@@ -2365,24 +2345,6 @@ Variables</h2></td></tr>
 <tr class="separator:gafd2c63c83f40d536c40f416da35b0f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacadc40c8efec986fdc053d201b908eb0" id="r_gacadc40c8efec986fdc053d201b908eb0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gacadc40c8efec986fdc053d201b908eb0">SceGxmDepthStencilSurface::backgroundControl</a></td></tr>
 <tr class="separator:gacadc40c8efec986fdc053d201b908eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9c35dd93c157754948fddc261b8b68a" id="r_gac9c35dd93c157754948fddc261b8b68a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gac9c35dd93c157754948fddc261b8b68a">SceGxmAuxiliarySurface::colorFormat</a></td></tr>
-<tr class="memdesc:gac9c35dd93c157754948fddc261b8b68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format of auxiliary surface data from SceGxmColorFormat.  <br /></td></tr>
-<tr class="separator:gac9c35dd93c157754948fddc261b8b68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6eb40c449e26c28d78bfb3ebeb73542" id="r_gac6eb40c449e26c28d78bfb3ebeb73542"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gac6eb40c449e26c28d78bfb3ebeb73542">SceGxmAuxiliarySurface::type</a></td></tr>
-<tr class="memdesc:gac6eb40c449e26c28d78bfb3ebeb73542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory layout of the surface data from SceGxmColorSurfaceType.  <br /></td></tr>
-<tr class="separator:gac6eb40c449e26c28d78bfb3ebeb73542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa8585cf15b1564606cb820d8e1428e57" id="r_gaa8585cf15b1564606cb820d8e1428e57"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaa8585cf15b1564606cb820d8e1428e57">SceGxmAuxiliarySurface::width</a></td></tr>
-<tr class="memdesc:gaa8585cf15b1564606cb820d8e1428e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface width.  <br /></td></tr>
-<tr class="separator:gaa8585cf15b1564606cb820d8e1428e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28ed28a19c12fc9541c0d656e8bf9a08" id="r_ga28ed28a19c12fc9541c0d656e8bf9a08"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga28ed28a19c12fc9541c0d656e8bf9a08">SceGxmAuxiliarySurface::height</a></td></tr>
-<tr class="memdesc:ga28ed28a19c12fc9541c0d656e8bf9a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface height.  <br /></td></tr>
-<tr class="separator:ga28ed28a19c12fc9541c0d656e8bf9a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8efc5770bf569a9d6293ecca7364284" id="r_gad8efc5770bf569a9d6293ecca7364284"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gad8efc5770bf569a9d6293ecca7364284">SceGxmAuxiliarySurface::stride</a></td></tr>
-<tr class="memdesc:gad8efc5770bf569a9d6293ecca7364284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface stride in bytes.  <br /></td></tr>
-<tr class="separator:gad8efc5770bf569a9d6293ecca7364284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4685b49d3bb6183be17c23a021c066fe" id="r_ga4685b49d3bb6183be17c23a021c066fe"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga4685b49d3bb6183be17c23a021c066fe">SceGxmAuxiliarySurface::data</a></td></tr>
-<tr class="memdesc:ga4685b49d3bb6183be17c23a021c066fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the surface data.  <br /></td></tr>
-<tr class="separator:ga4685b49d3bb6183be17c23a021c066fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaacb409f9f0c0a15c6693cf399d14707f" id="r_gaacb409f9f0c0a15c6693cf399d14707f"><td class="memItemLeft" align="right" valign="top">volatile unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#gaacb409f9f0c0a15c6693cf399d14707f">SceGxmNotification::address</a></td></tr>
 <tr class="separator:gaacb409f9f0c0a15c6693cf399d14707f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c8c59b75d59b15173b6a677e5470007" id="r_ga6c8c59b75d59b15173b6a677e5470007"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceGxmUser.html#ga6c8c59b75d59b15173b6a677e5470007">SceGxmNotification::value</a></td></tr>
@@ -2869,60 +2831,6 @@ backgroundDepth</td>
 backgroundControl</td>
 <td class="fielddoc">
 </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structSceGxmAuxiliarySurface" id="structSceGxmAuxiliarySurface"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structSceGxmAuxiliarySurface">&#9670;&#160;</a></span>SceGxmAuxiliarySurface</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SceGxmAuxiliarySurface</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Represents an auxiliary surface. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="gac9c35dd93c157754948fddc261b8b68a" name="gac9c35dd93c157754948fddc261b8b68a"></a>uint32_t</td>
-<td class="fieldname">
-colorFormat</td>
-<td class="fielddoc">
-Format of auxiliary surface data from SceGxmColorFormat. </td></tr>
-<tr><td class="fieldtype">
-<a id="gac6eb40c449e26c28d78bfb3ebeb73542" name="gac6eb40c449e26c28d78bfb3ebeb73542"></a>uint32_t</td>
-<td class="fieldname">
-type</td>
-<td class="fielddoc">
-Memory layout of the surface data from SceGxmColorSurfaceType. </td></tr>
-<tr><td class="fieldtype">
-<a id="gaa8585cf15b1564606cb820d8e1428e57" name="gaa8585cf15b1564606cb820d8e1428e57"></a>uint32_t</td>
-<td class="fieldname">
-width</td>
-<td class="fielddoc">
-Surface width. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga28ed28a19c12fc9541c0d656e8bf9a08" name="ga28ed28a19c12fc9541c0d656e8bf9a08"></a>uint32_t</td>
-<td class="fieldname">
-height</td>
-<td class="fielddoc">
-Surface height. </td></tr>
-<tr><td class="fieldtype">
-<a id="gad8efc5770bf569a9d6293ecca7364284" name="gad8efc5770bf569a9d6293ecca7364284"></a>uint32_t</td>
-<td class="fieldname">
-stride</td>
-<td class="fielddoc">
-Surface stride in bytes. </td></tr>
-<tr><td class="fieldtype">
-<a id="ga4685b49d3bb6183be17c23a021c066fe" name="ga4685b49d3bb6183be17c23a021c066fe"></a>void *</td>
-<td class="fieldname">
-data</td>
-<td class="fielddoc">
-A pointer to the surface data. </td></tr>
 </table>
 
 </div>
@@ -3827,20 +3735,6 @@ Texture format type. </td></tr>
 
 </div>
 </div>
-<a id="ga779136ff27a7753151298f2335a03fb1" name="ga779136ff27a7753151298f2335a03fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga779136ff27a7753151298f2335a03fb1">&#9670;&#160;</a></span>SCE_GXM_MAX_AUXILIARY_SURFACES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCE_GXM_MAX_AUXILIARY_SURFACES&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaac83332b79af909ad2b2e57c705bb18e" name="gaac83332b79af909ad2b2e57c705bb18e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaac83332b79af909ad2b2e57c705bb18e">&#9670;&#160;</a></span>SCE_GXM_TILE_SHIFTX</h2>
 
@@ -4225,7 +4119,6 @@ Texture format type. </td></tr>
 <tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027fa010100d14780bacf29f083e7cade393c" name="ggad7a6e8555a60ee86ac7eeeb2495c027fa010100d14780bacf29f083e7cade393c"></a>SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_PRECISION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027faada13ef22a427202272bc4c75bdad103" name="ggad7a6e8555a60ee86ac7eeeb2495c027faada13ef22a427202272bc4c75bdad103"></a>SCE_GXM_ERROR_INVALID_SAMPLER_RESULT_TYPE_COMPONENT_COUNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027faa8cfc026ef4cbe8ab841efa5a2301893" name="ggad7a6e8555a60ee86ac7eeeb2495c027faa8cfc026ef4cbe8ab841efa5a2301893"></a>SCE_GXM_ERROR_UNIFORM_BUFFER_NOT_RESERVED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027fa5e321def30069dbcfec6b204dbc6c544" name="ggad7a6e8555a60ee86ac7eeeb2495c027fa5e321def30069dbcfec6b204dbc6c544"></a>SCE_GXM_ERROR_INVALID_AUXILIARY_SURFACE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027fac1a8fb1badbfe04a2cad6d46c4bb3f48" name="ggad7a6e8555a60ee86ac7eeeb2495c027fac1a8fb1badbfe04a2cad6d46c4bb3f48"></a>SCE_GXM_ERROR_INVALID_PRECOMPUTED_DRAW&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027fadd0be539272b8b10a836ed0c562a5224" name="ggad7a6e8555a60ee86ac7eeeb2495c027fadd0be539272b8b10a836ed0c562a5224"></a>SCE_GXM_ERROR_INVALID_PRECOMPUTED_VERTEX_STATE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggad7a6e8555a60ee86ac7eeeb2495c027fad3a1e0410a5b25878b15380ad5dbe114" name="ggad7a6e8555a60ee86ac7eeeb2495c027fad3a1e0410a5b25878b15380ad5dbe114"></a>SCE_GXM_ERROR_INVALID_PRECOMPUTED_FRAGMENT_STATE&#160;</td><td class="fielddoc"></td></tr>
@@ -6309,8 +6202,6 @@ Texture format type. </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaabee1741cd74c3f67271560f08e21e89a5c0ce645fee8f396e36459314428fe75" name="ggaabee1741cd74c3f67271560f08e21e89a5c0ce645fee8f396e36459314428fe75"></a>SCE_GXM_PARAMETER_CATEGORY_SAMPLER&#160;</td><td class="fielddoc"><p>Sampler. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaabee1741cd74c3f67271560f08e21e89a7b96c6d7105a7c7b0fcef29dded942f9" name="ggaabee1741cd74c3f67271560f08e21e89a7b96c6d7105a7c7b0fcef29dded942f9"></a>SCE_GXM_PARAMETER_CATEGORY_AUXILIARY_SURFACE&#160;</td><td class="fielddoc"><p>Auxiliary surface. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="ggaabee1741cd74c3f67271560f08e21e89ab4fa28962dd7ff0b3f0f3519944928e5" name="ggaabee1741cd74c3f67271560f08e21e89ab4fa28962dd7ff0b3f0f3519944928e5"></a>SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER&#160;</td><td class="fielddoc"><p>Uniform buffer. </p>
 </td></tr>
 </table>
@@ -6393,7 +6284,7 @@ Texture format type. </td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga253a67bb73de45cd56bf281424998b2e" name="ga253a67bb73de45cd56bf281424998b2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga253a67bb73de45cd56bf281424998b2e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga253a67bb73de45cd56bf281424998b2e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6421,7 +6312,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga810a41b2b2662f0b791bc324755d502a" name="ga810a41b2b2662f0b791bc324755d502a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga810a41b2b2662f0b791bc324755d502a">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga810a41b2b2662f0b791bc324755d502a">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6449,7 +6340,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga874920ace8b788711bf5149f324c36a9" name="ga874920ace8b788711bf5149f324c36a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga874920ace8b788711bf5149f324c36a9">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga874920ace8b788711bf5149f324c36a9">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6477,7 +6368,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga311b167893ac855f050ea47fea3fd466" name="ga311b167893ac855f050ea47fea3fd466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga311b167893ac855f050ea47fea3fd466">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga311b167893ac855f050ea47fea3fd466">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6505,7 +6396,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga3933c5143d62bea788f4fa84ac56523a" name="ga3933c5143d62bea788f4fa84ac56523a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3933c5143d62bea788f4fa84ac56523a">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3933c5143d62bea788f4fa84ac56523a">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6533,7 +6424,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gacefabcb97d614cce4d9abfe5e25ad121" name="gacefabcb97d614cce4d9abfe5e25ad121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacefabcb97d614cce4d9abfe5e25ad121">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacefabcb97d614cce4d9abfe5e25ad121">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6561,7 +6452,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga87d7b31dcf6e1badf2ea44b28ddef4bd" name="ga87d7b31dcf6e1badf2ea44b28ddef4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga87d7b31dcf6e1badf2ea44b28ddef4bd">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87d7b31dcf6e1badf2ea44b28ddef4bd">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6589,7 +6480,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga4acbfb5b9a713c10a43bcae280f0c97c" name="ga4acbfb5b9a713c10a43bcae280f0c97c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4acbfb5b9a713c10a43bcae280f0c97c">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4acbfb5b9a713c10a43bcae280f0c97c">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6616,36 +6507,8 @@ Texture format type. </td></tr>
 
 </div>
 </div>
-<a id="gae5c9a588c267eee32f0222c6c301afbc" name="gae5c9a588c267eee32f0222c6c301afbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae5c9a588c267eee32f0222c6c301afbc">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/19]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
-          <td>(</td>
-          <td class="paramtype">0x18&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga1ca512ce5e33b47c1b64da5da1a5cc6f" name="ga1ca512ce5e33b47c1b64da5da1a5cc6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ca512ce5e33b47c1b64da5da1a5cc6f">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ca512ce5e33b47c1b64da5da1a5cc6f">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6673,7 +6536,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gae6028165d11fe9dcd812c7a79e0abf4c" name="gae6028165d11fe9dcd812c7a79e0abf4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae6028165d11fe9dcd812c7a79e0abf4c">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6028165d11fe9dcd812c7a79e0abf4c">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6701,7 +6564,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gaace713193b1630bc1325ea19aab894b9" name="gaace713193b1630bc1325ea19aab894b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaace713193b1630bc1325ea19aab894b9">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaace713193b1630bc1325ea19aab894b9">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6729,7 +6592,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gaddbe8e2f4de7b87f6c31f07650651b0b" name="gaddbe8e2f4de7b87f6c31f07650651b0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaddbe8e2f4de7b87f6c31f07650651b0b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddbe8e2f4de7b87f6c31f07650651b0b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6757,7 +6620,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga75bea5529d9507a5efdb77a890223f70" name="ga75bea5529d9507a5efdb77a890223f70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75bea5529d9507a5efdb77a890223f70">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75bea5529d9507a5efdb77a890223f70">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6785,7 +6648,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga0db7a58f52f633152ddf3f0f9ea214ab" name="ga0db7a58f52f633152ddf3f0f9ea214ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0db7a58f52f633152ddf3f0f9ea214ab">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0db7a58f52f633152ddf3f0f9ea214ab">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6813,7 +6676,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga2ebd3d54592b2e5425e8419f8f91b8d1" name="ga2ebd3d54592b2e5425e8419f8f91b8d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2ebd3d54592b2e5425e8419f8f91b8d1">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ebd3d54592b2e5425e8419f8f91b8d1">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6841,7 +6704,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga7ea825739cce437a1d01405fda711f41" name="ga7ea825739cce437a1d01405fda711f41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ea825739cce437a1d01405fda711f41">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ea825739cce437a1d01405fda711f41">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6869,7 +6732,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gac3db4fb8cde72f974f00ed90f5442ea1" name="gac3db4fb8cde72f974f00ed90f5442ea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac3db4fb8cde72f974f00ed90f5442ea1">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[18/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3db4fb8cde72f974f00ed90f5442ea1">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6897,7 +6760,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga1537b86bc2144b04e470366aa3dd0266" name="ga1537b86bc2144b04e470366aa3dd0266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1537b86bc2144b04e470366aa3dd0266">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[19/19]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1537b86bc2144b04e470366aa3dd0266">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[18/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7918,40 +7781,6 @@ Texture format type. </td></tr>
           <td></td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>bufferData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9028298ccadb00d5d0971acdc64ed70d" name="ga9028298ccadb00d5d0971acdc64ed70d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9028298ccadb00d5d0971acdc64ed70d">&#9670;&#160;</a></span>sceGxmSetAuxiliarySurface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceGxmSetAuxiliarySurface </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceGxmUser.html#ga4748093ba608ed9e4a3ea5abdb3a4f4b">SceGxmContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>surfaceIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a> *&#160;</td>
-          <td class="paramname"><em>surface</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -11106,40 +10935,6 @@ Texture format type. </td></tr>
 
 </div>
 </div>
-<a id="gaf5bf6cf2f011fb2e1d80f1d156aa53fb" name="gaf5bf6cf2f011fb2e1d80f1d156aa53fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf5bf6cf2f011fb2e1d80f1d156aa53fb">&#9670;&#160;</a></span>sceGxmShaderPatcherSetAuxiliarySurface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceGxmShaderPatcherSetAuxiliarySurface </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceGxmUser.html#ga9c443f5556a9eb50f08b4462ba050d6a">SceGxmShaderPatcher</a> *&#160;</td>
-          <td class="paramname"><em>shaderPatcher</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>auxSurfaceIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a> *&#160;</td>
-          <td class="paramname"><em>auxSurface</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaee8805b04bb68a9c024c0caeec25eb3c" name="gaee8805b04bb68a9c024c0caeec25eb3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaee8805b04bb68a9c024c0caeec25eb3c">&#9670;&#160;</a></span>sceGxmShaderPatcherCreateVertexProgram()</h2>
 
@@ -12972,34 +12767,6 @@ Texture format type. </td></tr>
 
 </div>
 </div>
-<a id="ga52408110ffcdae3e8dd05e8a31016fe4" name="ga52408110ffcdae3e8dd05e8a31016fe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52408110ffcdae3e8dd05e8a31016fe4">&#9670;&#160;</a></span>sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceGxmPrecomputedFragmentStateSetAllAuxiliarySurfaces </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceGxmUser.html#structSceGxmPrecomputedFragmentState">SceGxmPrecomputedFragmentState</a> *&#160;</td>
-          <td class="paramname"><em>precomputedState</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__SceGxmUser.html#structSceGxmAuxiliarySurface">SceGxmAuxiliarySurface</a> *&#160;</td>
-          <td class="paramname"><em>auxSurfaceArray</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga90d04cffc06557fa3f03765d377a97ef" name="ga90d04cffc06557fa3f03765d377a97ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga90d04cffc06557fa3f03765d377a97ef">&#9670;&#160;</a></span>sceGxmGetPrecomputedDrawSize()</h2>
 
@@ -13257,34 +13024,6 @@ Texture format type. </td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0">SceGxmRenderTarget</a> **&#160;</td>
           <td class="paramname"><em>renderTarget</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafd79dc31cd3d4e1eb040c73458f42592" name="gafd79dc31cd3d4e1eb040c73458f42592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafd79dc31cd3d4e1eb040c73458f42592">&#9670;&#160;</a></span>sceGxmRenderTargetGetHostMem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceGxmRenderTargetGetHostMem </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceGxmUser.html#ga86954c790bd835ebc36b96e3b4304ad0">SceGxmRenderTarget</a> *&#160;</td>
-          <td class="paramname"><em>renderTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>hostMem</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -14004,7 +13743,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga58127083a93f86b7d02f0ff0b53a8fea" name="ga58127083a93f86b7d02f0ff0b53a8fea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58127083a93f86b7d02f0ff0b53a8fea">&#9670;&#160;</a></span>stride <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58127083a93f86b7d02f0ff0b53a8fea">&#9670;&#160;</a></span>stride <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14370,7 +14109,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gadebd0a660d7f05a8c52d0ac9df212303" name="gadebd0a660d7f05a8c52d0ac9df212303"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadebd0a660d7f05a8c52d0ac9df212303">&#9670;&#160;</a></span>[] <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadebd0a660d7f05a8c52d0ac9df212303">&#9670;&#160;</a></span>[] <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14462,7 +14201,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gac2fbca9412febb1c2319983317f08c8f" name="gac2fbca9412febb1c2319983317f08c8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2fbca9412febb1c2319983317f08c8f">&#9670;&#160;</a></span>[] <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2fbca9412febb1c2319983317f08c8f">&#9670;&#160;</a></span>[] <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14478,7 +14217,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga05d8659aa2a150a0cad72dcfdefcc7f6" name="ga05d8659aa2a150a0cad72dcfdefcc7f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05d8659aa2a150a0cad72dcfdefcc7f6">&#9670;&#160;</a></span>[] <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05d8659aa2a150a0cad72dcfdefcc7f6">&#9670;&#160;</a></span>[] <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14510,7 +14249,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga65fc4c92ba6304123a61ba87cd41b7dd" name="ga65fc4c92ba6304123a61ba87cd41b7dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65fc4c92ba6304123a61ba87cd41b7dd">&#9670;&#160;</a></span>[] <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65fc4c92ba6304123a61ba87cd41b7dd">&#9670;&#160;</a></span>[] <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14620,7 +14359,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gaa82aebaaf32170317d11d68b58df8a23" name="gaa82aebaaf32170317d11d68b58df8a23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa82aebaaf32170317d11d68b58df8a23">&#9670;&#160;</a></span>[] <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa82aebaaf32170317d11d68b58df8a23">&#9670;&#160;</a></span>[] <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14898,102 +14637,6 @@ Texture format type. </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac9c35dd93c157754948fddc261b8b68a" name="gac9c35dd93c157754948fddc261b8b68a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9c35dd93c157754948fddc261b8b68a">&#9670;&#160;</a></span>colorFormat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SceGxmAuxiliarySurface::colorFormat</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Format of auxiliary surface data from SceGxmColorFormat. </p>
-
-</div>
-</div>
-<a id="gac6eb40c449e26c28d78bfb3ebeb73542" name="gac6eb40c449e26c28d78bfb3ebeb73542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6eb40c449e26c28d78bfb3ebeb73542">&#9670;&#160;</a></span>type <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SceGxmAuxiliarySurface::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory layout of the surface data from SceGxmColorSurfaceType. </p>
-
-</div>
-</div>
-<a id="gaa8585cf15b1564606cb820d8e1428e57" name="gaa8585cf15b1564606cb820d8e1428e57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa8585cf15b1564606cb820d8e1428e57">&#9670;&#160;</a></span>width <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SceGxmAuxiliarySurface::width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Surface width. </p>
-
-</div>
-</div>
-<a id="ga28ed28a19c12fc9541c0d656e8bf9a08" name="ga28ed28a19c12fc9541c0d656e8bf9a08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28ed28a19c12fc9541c0d656e8bf9a08">&#9670;&#160;</a></span>height <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SceGxmAuxiliarySurface::height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Surface height. </p>
-
-</div>
-</div>
-<a id="gad8efc5770bf569a9d6293ecca7364284" name="gad8efc5770bf569a9d6293ecca7364284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8efc5770bf569a9d6293ecca7364284">&#9670;&#160;</a></span>stride <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SceGxmAuxiliarySurface::stride</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Surface stride in bytes. </p>
-
-</div>
-</div>
-<a id="ga4685b49d3bb6183be17c23a021c066fe" name="ga4685b49d3bb6183be17c23a021c066fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4685b49d3bb6183be17c23a021c066fe">&#9670;&#160;</a></span>data <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* SceGxmAuxiliarySurface::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A pointer to the surface data. </p>
 
 </div>
 </div>
@@ -15380,7 +15023,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga8bae8b1c087c5b3b1d892e6bbf2b377a" name="ga8bae8b1c087c5b3b1d892e6bbf2b377a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8bae8b1c087c5b3b1d892e6bbf2b377a">&#9670;&#160;</a></span>data <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bae8b1c087c5b3b1d892e6bbf2b377a">&#9670;&#160;</a></span>data <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -15394,7 +15037,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gacfd6bb4d4b50952ba00b691345d9bc2d" name="gacfd6bb4d4b50952ba00b691345d9bc2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacfd6bb4d4b50952ba00b691345d9bc2d">&#9670;&#160;</a></span>data <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfd6bb4d4b50952ba00b691345d9bc2d">&#9670;&#160;</a></span>data <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -15408,7 +15051,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gaec209c19adcbeb921967df6b91e63c00" name="gaec209c19adcbeb921967df6b91e63c00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec209c19adcbeb921967df6b91e63c00">&#9670;&#160;</a></span>data <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec209c19adcbeb921967df6b91e63c00">&#9670;&#160;</a></span>data <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -15676,7 +15319,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="gab5684ffc402f806883fcdd6abc815b42" name="gab5684ffc402f806883fcdd6abc815b42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5684ffc402f806883fcdd6abc815b42">&#9670;&#160;</a></span>width <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5684ffc402f806883fcdd6abc815b42">&#9670;&#160;</a></span>width <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -15692,7 +15335,7 @@ Texture format type. </td></tr>
 </div>
 </div>
 <a id="ga89cac9234de02e899a0954c87d9cd6ba" name="ga89cac9234de02e899a0954c87d9cd6ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga89cac9234de02e899a0954c87d9cd6ba">&#9670;&#160;</a></span>height <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89cac9234de02e899a0954c87d9cd6ba">&#9670;&#160;</a></span>height <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
