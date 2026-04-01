@@ -39,12 +39,12 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceSize size;                   //!< sizeof(SceKernelAllocMemBlockKernelOpt)
 	SceUInt32 field_4;
 	SceUInt32 attr;                 //!< OR of SceKernelAllocMemBlockAttr
-	SceUInt32 field_C;
+	SceUInt32 vaddr;
 	SceUInt32 paddr;
 	SceSize alignment;
 	SceUInt32 extraLow;
 	SceUInt32 extraHigh;
-	SceUInt32 mirror_blockid;
+	SceUID mirror_blockid;
 	SceUID pid;
 	SceKernelPaddrList *paddr_list;
 	SceUInt32 field_2C;
