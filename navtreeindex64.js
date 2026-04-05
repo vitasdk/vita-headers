@@ -1,5 +1,10 @@
 var NAVTREEINDEX64 =
 {
+"group__SceVfsKernel.html#ga7b537e7d48bacc49bc43e08f902adb4e":[1,4,7,0,424],
+"group__SceVfsKernel.html#ga7b5874f1cf06d513614143cc210333ed":[1,4,7,0,88],
+"group__SceVfsKernel.html#ga7bf42f8df7b3340981a4d6239977badb":[1,4,7,0,434],
+"group__SceVfsKernel.html#ga7df8cc13501632b101fa36ec92e424a9":[1,4,7,0,429],
+"group__SceVfsKernel.html#ga7e3181139e290d4ff65d66110b92cecf":[1,4,7,0,262],
 "group__SceVfsKernel.html#ga7e9f169f50e8d5da37cc0dcb2f61ca10":[1,4,7,0,218],
 "group__SceVfsKernel.html#ga7ec35ad5795d568bfaea59e5334f83a6":[1,4,7,0,236],
 "group__SceVfsKernel.html#ga7f273048e034b7015fdfa3a8e5dcadae":[1,4,7,0,318],
@@ -244,10 +249,5 @@ var NAVTREEINDEX64 =
 "group__SceVfsKernel.html#structSceVopInactiveArgs":[1,4,7,0,34],
 "group__SceVfsKernel.html#structSceVopIoctlArgs":[1,4,7,0,23],
 "group__SceVfsKernel.html#structSceVopLinkArgs":[1,4,7,0,35],
-"group__SceVfsKernel.html#structSceVopLookupArgs":[1,4,7,0,19],
-"group__SceVfsKernel.html#structSceVopLseekArgs":[1,4,7,0,22],
-"group__SceVfsKernel.html#structSceVopMkdirArgs":[1,4,7,0,25],
-"group__SceVfsKernel.html#structSceVopOpenArgs":[1,4,7,0,16],
-"group__SceVfsKernel.html#structSceVopPreadArgs":[1,4,7,0,39],
-"group__SceVfsKernel.html#structSceVopPwriteArgs":[1,4,7,0,40]
+"group__SceVfsKernel.html#structSceVopLookupArgs":[1,4,7,0,19]
 };

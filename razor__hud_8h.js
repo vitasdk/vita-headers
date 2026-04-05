@@ -4,7 +4,8 @@ var razor__hud_8h =
       [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_PBUFFER_USAGE", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba9d329fb2955c1780c1f5121fa93dd5f2", null ],
       [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_1", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba5bdebda07a091f7dd840edb7b00aef47", null ],
       [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_2", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7babd528df77f4fbab9eedfc7ccc787fbdd", null ],
-      [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_3", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7bacfb171f016718775b9964604cf54faeb", null ]
+      [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_3", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7bacfb171f016718775b9964604cf54faeb", null ],
+      [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_NUM", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba76c60cb7eaa1bc381dab9719282cbb1e", null ]
     ] ],
     [ "SceRazorLiveTraceMetricEntryType", "group__SceRazorHudUser.html#gaa7c5727c7c0198be5c5877e76a6c592c", [
       [ "SCE_RAZOR_LIVE_TRACE_METRIC_ENTRY_TYPE_JOB", "group__SceRazorHudUser.html#ggaa7c5727c7c0198be5c5877e76a6c592cac31470fcbc3547fa8cb83c3fbfccf4e7", null ],
@@ -30,8 +31,8 @@ var razor__hud_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga05834743201f93150a7d2741d12805ac", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga8a765d00ce394d4edf05493ccc59bbd4", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#gaa0e096af4b45f8bfab911be695b336c9", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga47cf24532358cfc4fa7169ed6631223a", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga01514e2444f53c7bcbd8791887d244af", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga2f8b27db8dd9388fb99e6f5cc75d93aa", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga3e0036c71773649b71d22b2c544d1768", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga7216974b6e315fb8fa59311a1b8afe60", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga51aaaa5de24eb9f913af7b1e905f884f", null ],
     [ "sceRazorGpuLiveSetMetricsGroup", "group__SceRazorHudUser.html#gad3da32e024601ab703e68f44dfaa0377", null ],

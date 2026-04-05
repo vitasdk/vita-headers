@@ -40,14 +40,17 @@ var group__SceRazorHudUser =
     [ "SceRazorGpuLiveEntryJobFragmentValues3", "group__SceRazorHudUser.html#structSceRazorGpuLiveEntryJobFragmentValues3", [
       [ "isp_parameter_fetches_mem_reads", "group__SceRazorHudUser.html#gaae33f09b46b6c3e7b9011e7605d1d7dd", null ]
     ] ],
-    [ "SceRazorGpuLiveEntryJobValues", "group__SceRazorHudUser.html#structSceRazorGpuLiveEntryJobValues", [
+    [ "SceRazorGpuLiveEntryJobGeneric", "group__SceRazorHudUser.html#structSceRazorGpuLiveEntryJobGeneric", [
+      [ "reserved", "group__SceRazorHudUser.html#gabe9b53256df5f9f9f93fdc0c7f1948e6", null ]
+    ] ],
+    [ "SceRazorGpuLiveEntryJobValues", "group__SceRazorHudUser.html#unionSceRazorGpuLiveEntryJobValues", [
       [ "vertex_values_type1", "group__SceRazorHudUser.html#ga65405abf50c317be160c95032153b68f", null ],
       [ "fragment_values_type1", "group__SceRazorHudUser.html#ga113058be0153d61cffa2608ce458627c", null ],
       [ "vertex_values_type2", "group__SceRazorHudUser.html#ga8361bd4df4b097653da5aec55b00d74d", null ],
       [ "fragment_values_type2", "group__SceRazorHudUser.html#ga635ca1c1eb2cb8f1ed276d89c42a6df2", null ],
       [ "vertex_values_type3", "group__SceRazorHudUser.html#ga9f443c0869a267d3e727fd229a7ba2a5", null ],
       [ "fragment_values_type3", "group__SceRazorHudUser.html#gac7d48ea6934f88131a979204c7752326", null ],
-      [ "reserved", "group__SceRazorHudUser.html#ga4d0d5a8827d2b5fccfac72eb1fc60a77", null ]
+      [ "generic_values_type", "group__SceRazorHudUser.html#gaf6d74273beca503863bb1981abfa4f2c", null ]
     ] ],
     [ "SceRazorGpuLiveEntryJob", "group__SceRazorHudUser.html#structSceRazorGpuLiveEntryJob", [
       [ "header", "group__SceRazorHudUser.html#gafb4577da3a2592af811e7fa84af5e477", null ],
@@ -66,7 +69,8 @@ var group__SceRazorHudUser =
       [ "peak_usage_timestamp", "group__SceRazorHudUser.html#ga5cf0f914b7fbfef5d4871091d57a1e61", null ],
       [ "peak_usage_value", "group__SceRazorHudUser.html#gaa60467b26c7b34442e5f5a33d92d7a40", null ],
       [ "partial_render", "group__SceRazorHudUser.html#gaf29ce833e3ea83c2de900da2d76aa373", null ],
-      [ "vertex_job_paused", "group__SceRazorHudUser.html#gae6ff88fe7ea4e7c4c6e582dc6d5a15c2", null ]
+      [ "vertex_job_paused", "group__SceRazorHudUser.html#gae6ff88fe7ea4e7c4c6e582dc6d5a15c2", null ],
+      [ "reserved", "group__SceRazorHudUser.html#ga4d6315ef33dfcea711d90f0f0505b1f4", null ]
     ] ],
     [ "SceRazorGpuLiveEntryFrame", "group__SceRazorHudUser.html#structSceRazorGpuLiveEntryFrame", [
       [ "header", "group__SceRazorHudUser.html#gacfb6582857bb481517a48dc6d263ca58", null ],
@@ -80,7 +84,8 @@ var group__SceRazorHudUser =
       [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_PBUFFER_USAGE", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba9d329fb2955c1780c1f5121fa93dd5f2", null ],
       [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_1", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba5bdebda07a091f7dd840edb7b00aef47", null ],
       [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_2", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7babd528df77f4fbab9eedfc7ccc787fbdd", null ],
-      [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_3", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7bacfb171f016718775b9964604cf54faeb", null ]
+      [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_3", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7bacfb171f016718775b9964604cf54faeb", null ],
+      [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_NUM", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba76c60cb7eaa1bc381dab9719282cbb1e", null ]
     ] ],
     [ "SceRazorLiveTraceMetricEntryType", "group__SceRazorHudUser.html#gaa7c5727c7c0198be5c5877e76a6c592c", [
       [ "SCE_RAZOR_LIVE_TRACE_METRIC_ENTRY_TYPE_JOB", "group__SceRazorHudUser.html#ggaa7c5727c7c0198be5c5877e76a6c592cac31470fcbc3547fa8cb83c3fbfccf4e7", null ],
@@ -102,6 +107,7 @@ var group__SceRazorHudUser =
     [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_1", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba5bdebda07a091f7dd840edb7b00aef47", null ],
     [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_2", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7babd528df77f4fbab9eedfc7ccc787fbdd", null ],
     [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_OVERVIEW_3", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7bacfb171f016718775b9964604cf54faeb", null ],
+    [ "SCE_RAZOR_GPU_LIVE_METRICS_GROUP_NUM", "group__SceRazorHudUser.html#ggaebfaa62c00e65279f5cb0369527e3a7ba76c60cb7eaa1bc381dab9719282cbb1e", null ],
     [ "SCE_RAZOR_LIVE_TRACE_METRIC_ENTRY_TYPE_JOB", "group__SceRazorHudUser.html#ggaa7c5727c7c0198be5c5877e76a6c592cac31470fcbc3547fa8cb83c3fbfccf4e7", null ],
     [ "SCE_RAZOR_LIVE_TRACE_METRIC_ENTRY_TYPE_PARAMETER_BUFFER", "group__SceRazorHudUser.html#ggaa7c5727c7c0198be5c5877e76a6c592ca5c26b43285ffab467e3bada700353ccc", null ],
     [ "SCE_RAZOR_LIVE_TRACE_METRIC_ENTRY_TYPE_FRAME", "group__SceRazorHudUser.html#ggaa7c5727c7c0198be5c5877e76a6c592ca10b51ed696881ebcc37e42a6abc7b9f4", null ],
@@ -122,8 +128,8 @@ var group__SceRazorHudUser =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga05834743201f93150a7d2741d12805ac", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga8a765d00ce394d4edf05493ccc59bbd4", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#gaa0e096af4b45f8bfab911be695b336c9", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga47cf24532358cfc4fa7169ed6631223a", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga01514e2444f53c7bcbd8791887d244af", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga2f8b27db8dd9388fb99e6f5cc75d93aa", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga3e0036c71773649b71d22b2c544d1768", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga7216974b6e315fb8fa59311a1b8afe60", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceRazorHudUser.html#ga51aaaa5de24eb9f913af7b1e905f884f", null ],
     [ "sceRazorGpuLiveSetMetricsGroup", "group__SceRazorHudUser.html#gad3da32e024601ab703e68f44dfaa0377", null ],
@@ -154,13 +160,14 @@ var group__SceRazorHudUser =
     [ "SceRazorGpuLiveEntryJobFragmentValues2::rasterized_output_samples_num", "group__SceRazorHudUser.html#ga9d37ab585f529345c73f976dabd2b4f0", null ],
     [ "SceRazorGpuLiveEntryJobVertexValues3::tiling_accelerated_mem_writes", "group__SceRazorHudUser.html#ga119a8bb0c887f87b989253adefae265a", null ],
     [ "SceRazorGpuLiveEntryJobFragmentValues3::isp_parameter_fetches_mem_reads", "group__SceRazorHudUser.html#gaae33f09b46b6c3e7b9011e7605d1d7dd", null ],
+    [ "SceRazorGpuLiveEntryJobGeneric::reserved", "group__SceRazorHudUser.html#gabe9b53256df5f9f9f93fdc0c7f1948e6", null ],
     [ "SceRazorGpuLiveEntryJobValues::vertex_values_type1", "group__SceRazorHudUser.html#ga65405abf50c317be160c95032153b68f", null ],
     [ "SceRazorGpuLiveEntryJobValues::fragment_values_type1", "group__SceRazorHudUser.html#ga113058be0153d61cffa2608ce458627c", null ],
     [ "SceRazorGpuLiveEntryJobValues::vertex_values_type2", "group__SceRazorHudUser.html#ga8361bd4df4b097653da5aec55b00d74d", null ],
     [ "SceRazorGpuLiveEntryJobValues::fragment_values_type2", "group__SceRazorHudUser.html#ga635ca1c1eb2cb8f1ed276d89c42a6df2", null ],
     [ "SceRazorGpuLiveEntryJobValues::vertex_values_type3", "group__SceRazorHudUser.html#ga9f443c0869a267d3e727fd229a7ba2a5", null ],
     [ "SceRazorGpuLiveEntryJobValues::fragment_values_type3", "group__SceRazorHudUser.html#gac7d48ea6934f88131a979204c7752326", null ],
-    [ "SceRazorGpuLiveEntryJobValues::reserved", "group__SceRazorHudUser.html#ga4d0d5a8827d2b5fccfac72eb1fc60a77", null ],
+    [ "SceRazorGpuLiveEntryJobValues::generic_values_type", "group__SceRazorHudUser.html#gaf6d74273beca503863bb1981abfa4f2c", null ],
     [ "SceRazorGpuLiveEntryJob::header", "group__SceRazorHudUser.html#gafb4577da3a2592af811e7fa84af5e477", null ],
     [ "SceRazorGpuLiveEntryJob::start_time", "group__SceRazorHudUser.html#gab8fc13a6cd551d0a308ec4488f4126ee", null ],
     [ "SceRazorGpuLiveEntryJob::end_time", "group__SceRazorHudUser.html#ga6d5a02a4a772bed14e1d67269dc22bf3", null ],
@@ -176,6 +183,7 @@ var group__SceRazorHudUser =
     [ "SceRazorGpuLiveEntryParameterBuffer::peak_usage_value", "group__SceRazorHudUser.html#gaa60467b26c7b34442e5f5a33d92d7a40", null ],
     [ "SceRazorGpuLiveEntryParameterBuffer::partial_render", "group__SceRazorHudUser.html#gaf29ce833e3ea83c2de900da2d76aa373", null ],
     [ "SceRazorGpuLiveEntryParameterBuffer::vertex_job_paused", "group__SceRazorHudUser.html#gae6ff88fe7ea4e7c4c6e582dc6d5a15c2", null ],
+    [ "SceRazorGpuLiveEntryParameterBuffer::reserved", "group__SceRazorHudUser.html#ga4d6315ef33dfcea711d90f0f0505b1f4", null ],
     [ "SceRazorGpuLiveEntryFrame::header", "group__SceRazorHudUser.html#gacfb6582857bb481517a48dc6d263ca58", null ],
     [ "SceRazorGpuLiveEntryFrame::start_time", "group__SceRazorHudUser.html#ga1b5b2a3f26d4f8dad5297c9ae8ec1424", null ],
     [ "SceRazorGpuLiveEntryFrame::duration", "group__SceRazorHudUser.html#ga042068bd869effd4455a7613f7208eab", null ],

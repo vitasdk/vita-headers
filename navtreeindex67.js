@@ -1,5 +1,10 @@
 var NAVTREEINDEX67 =
 {
+"psp2kern_2jpegenc_8h.html":[4,0,1,2,12],
+"psp2kern_2jpegenc_8h_source.html":[4,0,1,2,12],
+"psp2kern_2kernel_2iofilemgr_8h.html":[4,0,1,2,2,16],
+"psp2kern_2kernel_2iofilemgr_8h_source.html":[4,0,1,2,2,16],
+"psp2kern_2kernel_2msif_8h.html":[4,0,1,2,2,18],
 "psp2kern_2kernel_2msif_8h_source.html":[4,0,1,2,2,18],
 "psp2kern_2kernel_2rtc_8h.html":[4,0,1,2,2,22],
 "psp2kern_2kernel_2rtc_8h_source.html":[4,0,1,2,2,22],
