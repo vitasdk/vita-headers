@@ -1310,7 +1310,7 @@ typedef enum SceGxmParameterCategory {
 	SCE_GXM_PARAMETER_CATEGORY_ATTRIBUTE,          //!< Vertex attribute input
 	SCE_GXM_PARAMETER_CATEGORY_UNIFORM,            //!< Uniform
 	SCE_GXM_PARAMETER_CATEGORY_SAMPLER,            //!< Sampler
-	SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER      //!< Uniform buffer
+	SCE_GXM_PARAMETER_CATEGORY_UNIFORM_BUFFER = 4  //!< Uniform buffer
 } SceGxmParameterCategory;
 
 typedef enum SceGxmParameterType {
