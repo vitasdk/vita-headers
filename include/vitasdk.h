@@ -43,6 +43,7 @@
 #include <psp2/message_dialog.h>
 #include <psp2/motion.h>
 #include <psp2/motion_dev.h>
+#include <psp2/mp4rec.h>
 #include <psp2/mtpif.h>
 #include <psp2/musicexport.h>
 #include <psp2/netcheck_dialog.h>
