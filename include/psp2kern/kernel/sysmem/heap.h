@@ -65,7 +65,7 @@ SceUID ksceKernelCreateHeap(const char *name, SceSize size, SceKernelHeapCreateO
 int ksceKernelDeleteHeap(SceUID uid);
 
 /**
- * Allocation the specified length of memory from heap
+ * Allocate the specified length of memory from heap
  *
  * @param[in] uid  - The heapid
  * @param[in] size - The alloc size
@@ -75,7 +75,7 @@ int ksceKernelDeleteHeap(SceUID uid);
 void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
 
 /**
- * Allocation the specified length of memory from heap with option
+ * Allocate the specified length of memory from heap with option
  *
  * @param[in] uid  - The heapid
  * @param[in] size - The alloc size
@@ -84,6 +84,17 @@ void *ksceKernelAllocHeapMemory(SceUID uid, SceSize size);
  * @return The pointer of allocated memory on success, NULL on error.
  */
 void *ksceKernelAllocHeapMemoryWithOption(SceUID heapid, SceSize len, SceAllocOpt *opt);
+
+/**
+ * Reallocate the specified pointer to the new length
+ *
+ * @param[in] uid - The heapid
+ * @param[in] ptr - The pointer of allocated memory or NULL
+ * @param[in] len - The new alloc size
+ *
+ * @return The pointer of allocated memory on success, NULL on error.
+ */
+void *ksceKernelReallocHeapMemory(SceUID heapid, void *ptr, SceSize len);
 
 /**
  * Free allocated memory
