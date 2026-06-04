@@ -29,6 +29,7 @@ typedef enum SceSdifDeviceType {
 typedef void* SceSdifDeviceContext;
 
 SceSdifDeviceContext* ksceSdifGetSdContextPartValidateMmc(SceSdifDeviceIndex dev_index);
+SceSdifDeviceContext* ksceSdifGetSdContextPartValidateSd(SceSdifDeviceIndex dev_index);
 int ksceSdifInitializeMmcDevice(SceSdifDeviceIndex dev_index, SceSdifDeviceContext* dev_ctx);
 int ksceSdifWriteCmd56(SceSdifDeviceContext* dev_ctx, const void* buf, SceSize size);
 int ksceSdifReadCmd56(SceSdifDeviceContext* dev_ctx, void* buf, SceSize size); 
