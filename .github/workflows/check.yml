@@ -25,7 +25,7 @@ jobs:
         bash vdpm/bootstrap-vitasdk.sh
         echo "$VITASDK/bin" >> "$GITHUB_PATH"
     - name: Install packages
-      run: vdpm SDL2 curl openssl soloud taihen zlib zstd
+      run: vdpm SDL2 SDL3 curl openssl soloud taihen zlib zstd
     - name: Check
       run: |
         set -e
