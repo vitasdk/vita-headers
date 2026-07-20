@@ -15,8 +15,8 @@ jobs:
   check-headers:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
+    - uses: actions/checkout@v7
       with:
         repository: vitasdk/vdpm
         path: vdpm
@@ -65,7 +65,7 @@ jobs:
         cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake
         cmake --build build
       working-directory: check_nid_compat
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
       with:
         repository: vitasdk/samples
         path: samples
@@ -76,7 +76,7 @@ jobs:
       working-directory: samples
     - name: Upload artifacts
       if: ${{ success() }}
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: vitasdk-db-stubs
         path: vitasdk-db-stubs.tar.bz2
