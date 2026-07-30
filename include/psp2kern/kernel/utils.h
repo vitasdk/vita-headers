@@ -210,6 +210,9 @@ int ksceAesDecrypt2(SceAesContext *ctx, const void *src, void *dst);
 int ksceAesEncrypt1(SceAesContext *ctx, const void *src, void *dst);
 int ksceAesEncrypt2(SceAesContext *ctx, const void *src, void *dst);
 
+int ksceMt19937GlobalInit(uint32_t cp_timestamp_2);
+int ksceMt19937GlobalUIntInRange(void *pBase, SceSize length);
+
 #ifdef __cplusplus
 }
 #endif

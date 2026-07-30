@@ -79,6 +79,12 @@ int ksceKernelQueryIntrHandlerInfo(unsigned int intr_code, unsigned int a2, int 
 #define ksceKernelGetIntrMasked ksceKernelSuspendIntr
 
 
+int ksceKernelIsSubInterruptOccurred(int intr_code, int subinterrupt_code);
+int ksceKernelRegisterIntrHookHandler(int intr_code, void *new_handler, void **old_handler);
+int ksceKernelReleaseIntrHookHandler(int intr_code);
+int ksceKernelResumeSubIntr(int intr_code, int subinterrupt_code, int enabled);
+int ksceKernelSuspendSubIntr(int intr_code, int subintr_code, void *arg);
+
 #ifdef __cplusplus
 }
 #endif

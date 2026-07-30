@@ -1,6 +1,6 @@
 /**
- * \usergroup{SceNpDrm}
- * \usage{psp2kern/npdrm.h,SceNpDrmForDriver_stub}
+ * \kernelgroup{SceNpDrm}
+ * \usage{psp2kern/npdrm.h,SceNpDrmForDriver_stub ScePsmDrmForDriver_stub}
  */
 
 #ifndef _PSP2KERN_NPDRM_H_
@@ -180,6 +180,95 @@ int ksceNpDrmEbootSigGenPs1(const char *eboot_pbp_path, const void *eboot_sha256
  * @return eboot_signature size on success, < 0 on error.
 */
 int ksceNpDrmEbootSigGenMultiDisc(const char *eboot_pbp_path, const void *sce_discinfo, void *eboot_signature, int sw_version);
+
+/**
+ * Get a legacy PSP document key
+ *
+ * @param[in] pRif - RIF data. This is only read when required by the document header.
+ * @param[in] pDocEdat - Document EDAT data with a PSPEDAT header; at least 0x90 bytes
+ * @param[in] docEdatSize - Size of the document EDAT data
+ * @param[out] pLegacyDocKey - Legacy document key output buffer (0x10 bytes)
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceNpDrmGetLegacyDocKey(void *pRif, void *pDocEdat, SceSize docEdatSize, void *pLegacyDocKey);
+
+/**
+ * Get a RIF name for installation
+ *
+ * @param[out] rif_name - RIF name buffer (0x30 bytes)
+ * @param[in] license - A pointer to a ::SceNpDrmLicense structure
+ * @param[in] is_fixed - Set to 0 to derive the name from the RIF content ID,
+ *                       or 1 to request the fixed account-based name
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceNpDrmGetRifNameForInstall(char *rif_name, const void *license, SceBool is_fixed);
+
+int ksceNpDrmIsLooseAccountBind(void);
+
+/**
+ * Set whether package game content exists
+ *
+ * FW 3.60 stores the value verbatim. Observed AppMgr callers use 0 or 1.
+ *
+ * @param[in] game_exists - Package game-content existence value
+ *
+ * @return 0.
+ */
+int ksceNpDrmPackageSetGameExist(int game_exists);
+
+int ksceNpDrmPresetRifProvisionalFlag(void *license, SceBool enable);
+int ksceNpDrmRemoveActData(SceUInt64 *pAccountId);
+int ksceNpDrmUpdateAccountId(SceUInt64 account_id);
+int ksceNpDrmUpdateActData(void);
+int ksceNpDrmUpdateDebugSettings(void);
+int ksceNpDrmVerifyRif(const void *license, SceSize license_size);
+int ksceNpDrmVerifyRifFull(const void *license);
+int ksceNpDrmWriteActData(void *npdrm_act_data, const char *aes_dec_key);
+
+/**
+ * Get PSM activation information
+ *
+ * @param[out] act_type - Activation type
+ * @param[out] version_flag - Activation version flag
+ * @param[out] account_id - Activated account ID
+ * @param[out] act_start_time - Activation start time
+ * @param[out] act_exp_time - Activation expiration time
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int kscePsmDrmGetActInfo(SceUInt32 *act_type, SceUInt32 *version_flag, SceUInt64 *account_id, SceUInt64 *act_start_time, SceUInt64 *act_exp_time);
+
+/**
+ * Get PSM RIF information
+ *
+ * @param[in] license - A pointer to a ::ScePsmDrmLicense structure
+ * @param[out] content_id - Content ID buffer (0x30 bytes)
+ * @param[out] account_id - License account ID
+ * @param[out] lic_start_time - License start time
+ * @param[out] lic_exp_time - License expiration time
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int kscePsmDrmGetRifInfo(void *license, char *content_id, SceUInt64 *account_id, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
+
+/**
+ * Get a PSM RIF key set and license information
+ *
+ * @param[in] license - PSM RIF data
+ * @param[out] keydata - A pointer to a ::ScePsmDrmKeySet structure
+ * @param[out] version_flag - Activation version flag
+ * @param[out] lic_start_time - License start time
+ * @param[out] lic_exp_time - License expiration time
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int kscePsmDrmGetRifKey(const void *license, void *keydata, SceUInt32 *version_flag, SceUInt64 *lic_start_time, SceUInt64 *lic_exp_time);
+
+int kscePsmDrmReadActData(void);
+int kscePsmDrmRemoveActData(SceUInt64 *pAccountId);
+int kscePsmDrmWriteActData(void *psm_act_data, const char *aes_dec_key);
 
 #ifdef __cplusplus
 }

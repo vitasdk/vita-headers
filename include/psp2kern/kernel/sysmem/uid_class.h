@@ -17,19 +17,19 @@ typedef int (* SceClassCallback)(void *item);
 
 typedef struct SceClass {
 	struct SceClass *next;
-	struct SceClass *root;
+	struct SceClass *root; //!< better name: pClass
 	struct SceClass *prev;
 	const char *name;
-	struct SceClass *uidclass;
+	struct SceClass *uidclass; //!< better name: parent
 	unsigned int attributes;
 	unsigned short itemsize;
 	unsigned short itemsize_aligned;
 	unsigned int unk1C;
-	SceClassCallback create_cb;
-	SceClassCallback destroy_cb;
-	unsigned int magic; /* 0xABCE9DA5 */
+	SceClassCallback create_cb; //!< better name: constructor
+	SceClassCallback destroy_cb; //!< better name: destructor
+	unsigned int magic; //!< Magic value that needs to be set to 0xABCD9DA5.
 } SceClass;
-VITASDK_BUILD_ASSERT_EQ(0x2C, SceClass);
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceClass); // size is from FW 3.60
 
 typedef struct SceObjectBase { // size is 0x8-bytes
 	union {

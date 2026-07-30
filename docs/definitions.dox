@@ -227,6 +227,9 @@
  *     \defgroup SceModulemgr Module Manager Library
  *      Get a list of all loaded modules, Load a module
  *
+ *     \defgroup SceBacktrace Backtrace Library
+ *      Gather and print thread backtraces
+ *
  *     \defgroup SceProcessmgr Process Manager Library
  *      Get time, ID of the current Process and exit it
  *
@@ -278,17 +281,23 @@
  *     \defgroup SceSystimer Hardware Timer Library
  *      Interface for hardware timers
  *
- *     \defgroup SceSblSsComm SM Loader
+ *     \defgroup SceSblSmComm SM Loader
  *      Interface for sm loading/CallFunc
  *
  *     \defgroup SceSblGcAuthMgr game cart Authentication Manager
  *      Interface for authentication with game carts
+ *
+ *     \defgroup SceSblGcAuthMgrMlnpsnl MLNPSNL Authentication
+ *      MLNPSNL authentication functions
+ *
+ *     \defgroup SceSblGcAuthMgrPkg Package Authentication
+ *      Package signature authentication functions
  * \}
  *
  * \defgroup update Update
  *  update
  * \{
- *     \defgroup SceUpdateMgr System software update manager
+ *     \defgroup SceSblSsUpdateMgr System software update manager
  *      Library for System update
  * \}
  *
@@ -508,6 +517,33 @@
  *
  *     \defgroup SceCompat Compat Library
  *      PspEmu communication
+ *
+ *     \defgroup SceClockgen Clock generator driver
+ *      Control clock generator functions
+ *
+ *     \defgroup SceDeci4pDbgp DECI4P debugger driver
+ *      Debugger support functions
+ *
+ *     \defgroup SceLcd LCD driver
+ *      Control LCD display functions
+ *
+ *     \defgroup SceLibKernel LibKernel internals
+ *      Internal LibKernel functions
+ *
+ *     \defgroup SceLibSsp Stack protector support
+ *      Stack protector failure handling
+ *
+ *     \defgroup SceOled OLED driver
+ *      Control OLED display functions
+ *
+ *     \defgroup SceSblSmSchedProxy Secure module scheduler proxy
+ *      Secure module scheduler proxy functions
+ *
+ *     \defgroup SceUlobjMgr User-level object manager
+ *      Manage user-level support objects
+ *
+ *     \defgroup SceWlanBt WLAN and Bluetooth driver
+ *      Configure WLAN and Bluetooth hardware
  *
  * \}
  */

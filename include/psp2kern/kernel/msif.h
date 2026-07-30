@@ -14,6 +14,12 @@ extern "C" {
 
 int ksceMsifGetMsInfo(SceMsInfo *info);
 
+int ksceMsifDisableSlowMode(void);
+int ksceMsifEnableSlowMode(void);
+int ksceMsifGetSlowModeState(void);
+int ksceMsifReadSector(int sector, char *buffer, int nSectors);
+int ksceMsifWriteSector(int sector, char *buffer, int nSectors);
+
 #ifdef __cplusplus
 }
 #endif

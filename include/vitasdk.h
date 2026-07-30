@@ -18,6 +18,7 @@
 #include <psp2/camera.h>
 #include <psp2/common_dialog.h>
 #include <psp2/compat.h>
+#include <psp2/coredump.h>
 #include <psp2/ctrl.h>
 #include <psp2/error.h>
 #include <psp2/display.h>
@@ -69,6 +70,9 @@
 #include <psp2/registrymgr.h>
 #include <psp2/rtc.h>
 #include <psp2/sblacmgr.h>
+#include <psp2/sblgcauthmgr.h>
+#include <psp2/sblpostssmgr.h>
+#include <psp2/sblssmgr.h>
 #include <psp2/screenshot.h>
 #include <psp2/shacccg.h>
 #include <psp2/sharedfb.h>
@@ -80,6 +84,7 @@
 #include <psp2/touch.h>
 #include <psp2/triggerutil.h>
 #include <psp2/udcd.h>
+#include <psp2/ulobjmgr.h>
 #include <psp2/update.h>
 #include <psp2/usbaudioin.h>
 #include <psp2/usbd.h>
@@ -100,14 +105,18 @@
 #include <psp2/io/fcntl.h>
 #include <psp2/io/stat.h>
 
+#include <psp2/kernel/backtrace.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/kernel/cpu.h>
+#include <psp2/kernel/debugled.h>
 #include <psp2/kernel/dmac.h>
 #include <psp2/kernel/error.h>
+#include <psp2/kernel/libkernel.h>
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/kernel/openpsid.h>
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/rng.h>
+#include <psp2/kernel/ssp.h>
 #include <psp2/kernel/sysmem.h>
 #include <psp2/kernel/threadmgr.h>
 

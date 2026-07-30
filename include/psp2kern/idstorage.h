@@ -30,6 +30,22 @@ int ksceIdStorageReadLeaf(SceSize leafnum, void *buf);
  */
 int ksceIdStorageWriteLeaf(SceSize leafnum, const void *buf);
 
+int ksceIdStorageCreateAtomicLeaves(SceUInt16 *keys, SceUInt32 numLeaves);
+int ksceIdStorageCreateLeaf(SceUInt16 key);
+int ksceIdStorageDeleteLeaf(SceUInt16 key);
+int ksceIdStorageEnumId(void);
+int ksceIdStorageFlush(void);
+int ksceIdStorageFormat(void);
+int ksceIdStorageGetFreeLeaves(void);
+SceSize ksceIdStorageGetLeafSize(void);
+char ksceIdStorageIsDirty(void);
+char ksceIdStorageIsFormatted(void);
+char ksceIdStorageIsReadOnly(void);
+int ksceIdStorageLookup(SceUInt16 key, SceUInt32 offset, void *buf, SceSize size);
+int ksceIdStorageRestart(SceBool flush);
+int ksceIdStorageUnformat(void);
+int ksceIdStorageUpdate(SceUInt16 key, SceUInt32 offset, void *buf, SceSize size);
+
 #ifdef __cplusplus
 }
 #endif

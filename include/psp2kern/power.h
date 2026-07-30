@@ -224,6 +224,94 @@ int kscePowerSetGpuClockFrequency(int freq);
  */
 int kscePowerSetGpuXbarClockFrequency(int freq);
 
+int kscePowerBatteryDisableUsbCharging(void);
+int kscePowerBatteryEnableUsbCharging(void);
+int kscePowerBatteryForbidCharging(void);
+int kscePowerBatteryPermitCharging(void);
+
+/**
+ * Sets the USB device state reported to Syscon.
+ *
+ * @param[in] usb_status USB device state. Known FW 3.60 values are 0 for
+ * disconnected, 2 for active or reset, 3 for configured, and 4 for suspended.
+ * Only the low eight bits are sent to Syscon; the value is not range-checked.
+ *
+ * @return 0 if battery polling is suspended, -1 if another request is
+ * pending, or the asynchronous Syscon request result.
+ */
+int kscePowerBatterySetUsbStatus(int usb_status);
+
+int kscePowerBatteryStopUsbCharging(void);
+int kscePowerGetArmClockFrequencyProc(SceUID pid);
+int kscePowerGetBusClockFrequencyProc(SceUID pid);
+int kscePowerGetCameraBusClockFrequency(void);
+int kscePowerGetCompatClockFrequency(void);
+int kscePowerGetDmac5ClockFrequency(void);
+int kscePowerGetGpuClockFrequencyInternal(SceInt32 *corefreq, SceInt32 *mpfreq);
+int kscePowerGetGpuClockFrequencyProc(SceUID pid);
+int kscePowerGetGpuXbarClockFrequencyProc(SceUID pid);
+int kscePowerGetPowerSwMode(void);
+int kscePowerGetVeneziaClockFrequency(void);
+int kscePowerGetVipClockFrequency(void);
+int kscePowerGetWakeupFactor(void);
+int kscePowerRequestDisplayOn(void);
+int kscePowerRequestHibernate(void);
+int kscePowerRequestResume(void);
+int kscePowerSetArmClockFrequencyProc(SceUID pid, int clock);
+int kscePowerSetBatteryFakeStatus(int status);
+int kscePowerSetBusClockFrequencyProc(SceUID pid, int clock);
+int kscePowerSetCameraBusClockFrequency(int clock);
+int kscePowerSetCompatClockFrequency(int clock);
+
+/**
+ * Sets the maximum display brightness.
+ *
+ * @param[in] max_brightness Maximum brightness in the internal scale. FW 3.60
+ * uses 0x10000 as the normal full-scale ceiling and 0xC4EC as a reduced
+ * high-GPU-clock ceiling. A value of 1 is normalized to 2; other values are
+ * not range-checked.
+ *
+ * @return Always 0.
+ */
+int kscePowerSetDisplayMaxBrightness(int max_brightness);
+
+int kscePowerSetDmac5ClockFrequency(int clock);
+int kscePowerSetGpuClockFrequencyInternal(SceInt32 corefreq, SceInt32 mpfreq);
+int kscePowerSetGpuClockFrequencyProc(SceUID pid, int clock);
+int kscePowerSetGpuXbarClockFrequencyProc(SceUID pid, int clock);
+int kscePowerSetIdleCallback(SceUInt32 idx, int inhibit_reset, SceUInt64 duration, void *idle_cb, int idle_cb_info_5);
+int kscePowerSetPowerSwMode(int mode);
+int kscePowerSetPowerSwMode2(int mode);
+int kscePowerSetProcessIdleCallback(int idle_cb_info_1, int idle_cb_info_2);
+
+/**
+ * Sets the PS button hold threshold.
+ *
+ * @param[in] push_time_us Hold threshold in microseconds. FW 3.60 defaults to
+ * 1000000 microseconds and does not range-check this value.
+ *
+ * @return Always 0.
+ */
+int kscePowerSetPsButtonPushTime(int push_time_us);
+
+/**
+ * Sets the standby/power button hold threshold.
+ *
+ * @param[in] push_time_us Hold threshold in microseconds. FW 3.60 defaults to
+ * 2000000 microseconds, or 4000000 in the special Sysroot mode selected during
+ * initialization, and does not range-check this value.
+ *
+ * @return Always 0.
+ */
+int kscePowerSetStandbyButtonPushTime(int push_time_us);
+
+int kscePowerSetSysClockFrequency(int clock);
+int kscePowerSetVeneziaClockFrequency(int clock);
+int kscePowerSetVipClockFrequency(int clock);
+int kscePowerTick(SceUInt32 type);
+int kscePowerWlanActivate(void);
+int kscePowerWlanDeactivate(void);
+
 #ifdef __cplusplus
 }
 #endif

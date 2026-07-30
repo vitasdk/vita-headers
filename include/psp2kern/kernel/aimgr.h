@@ -116,6 +116,13 @@ int ksceSblAimgrIsGenuineVITA(void);
  */
 int ksceSblAimgrIsGenuineDolce(void);
 
+int ksceSblAimgrIsJapaneseFat(void);
+int ksceSblAimgrIsPrototypeRev2(void);
+int ksceSblAimgrIsPrototypeRev7(void);
+int ksceSblAimgrIsToolRev3(void);
+int ksceSblAimgrIsToolRev4(void);
+int ksceSblAimgrIsToolRev5(void);
+
 #ifdef __cplusplus
 }
 #endif

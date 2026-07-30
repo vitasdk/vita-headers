@@ -62,8 +62,8 @@ VITASDK_BUILD_ASSERT_EQ(0x90, SceThreadCpuRegisters);
 typedef SceThreadCpuRegisters ThreadCpuRegisters;
 
 typedef struct SceKernelThreadContextInfo {
-	ScePID process_id;  //<! Process ID the thread scheduled on this CPU belongs to
-	SceUID thread_id;   //<! Thread ID of the thread scheduled on this CPU
+	ScePID process_id;  //!< Process ID the thread scheduled on this CPU belongs to
+	SceUID thread_id;   //!< Thread ID of the thread scheduled on this CPU
 } SceKernelThreadContextInfo;
 VITASDK_BUILD_ASSERT_EQ(8, SceKernelThreadContextInfo);
 

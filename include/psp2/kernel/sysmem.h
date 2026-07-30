@@ -35,26 +35,11 @@ typedef struct SceKernelFreeMemorySizeInfo {
 } SceKernelFreeMemorySizeInfo;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelFreeMemorySizeInfo);
 
-typedef struct SceKernelMemBlockInfo {
-	SceSize size;
-	void *mappedBase;
-	SceSize mappedSize;
-	int memoryType;
-	SceUInt32 access;
-	SceKernelMemBlockType type;
-} SceKernelMemBlockInfo;
-VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelMemBlockInfo);
-
 typedef enum SceKernelMemoryAccessType {
 	SCE_KERNEL_MEMORY_ACCESS_X = 0x01, //!< Execute privileges
 	SCE_KERNEL_MEMORY_ACCESS_W = 0x02, //!< Write privileges
 	SCE_KERNEL_MEMORY_ACCESS_R = 0x04  //!< Read privileges
 } SceKernelMemoryAccessType;
-
-typedef enum SceKernelMemoryType {
-	SCE_KERNEL_MEMORY_TYPE_NORMAL_NC = 0x80, //!< Non cached memory type
-	SCE_KERNEL_MEMORY_TYPE_NORMAL    = 0xD0  //!< Cached memory type
-} SceKernelMemoryType;
 
 /**
  * Allocates a new memory block
@@ -185,6 +170,44 @@ int sceKernelGetFreeMemorySize(SceKernelFreeMemorySizeInfo *info);
  * @return 1 if the device is a PSTV, 0 otherwise.
 */
 int sceKernelIsPSVitaTV(void);
+
+typedef struct SceKernelSubbudgetInfo {
+	int size; //!< Size of this structure. Must be set to 0xC.
+	SceUInt32 totalSize; //!< Total size of the subbudget in bytes.
+	SceUInt32 freeSize; //!< Free size of the subbudget in bytes.
+} SceKernelSubbudgetInfo;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceKernelSubbudgetInfo); // size is from FW 3.60
+
+#define SCE_KERNEL_SUBBUDGET_ID_MAIN (0)
+#define SCE_KERNEL_SUBBUDGET_ID_CDLG (1)
+
+int sceKernelAllocUnmapMemBlock(char *name, SceSize size);
+
+/**
+ * Tests a hardware-model capability exposed to user mode.
+ *
+ * FW 3.60 accepts capability indices 7 and 10.
+ *
+ * @param[in] capabilityIndex Capability bit index.
+ *
+ * @return 1 if the capability is present, 0 if it is absent,
+ * ::SCE_KERNEL_ERROR_INVALID_ARGUMENT if the index is unsupported.
+ */
+int sceKernelCheckModelCapability(int capabilityIndex);
+int sceKernelFreeMemBlockForVM(SceUID uid);
+
+/**
+ * Gets the total and free size of a memory subbudget.
+ *
+ * @param[in] subbudget ::SCE_KERNEL_SUBBUDGET_ID_MAIN or
+ * ::SCE_KERNEL_SUBBUDGET_ID_CDLG.
+ * @param[in,out] pInfo Pointer to a ::SceKernelSubbudgetInfo structure.
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note FW 3.60 requires DIP switch 159 to be enabled.
+ */
+int sceKernelGetSubbudgetInfo(SceInt subbudget, SceKernelSubbudgetInfo *pInfo);
 
 #ifdef __cplusplus
 }

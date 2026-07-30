@@ -20,9 +20,9 @@ typedef enum SceKernelHeapAttr {
 
 typedef struct SceKernelHeapCreateOpt {
 	SceSize size;
-	union { //<! Union for compatibility
+	union { // Union for compatibility
 		SceUInt32 attr;
-		SceUInt32 uselock; //<! Do not use uselock as it will be deprecated.
+		SceUInt32 uselock; //!< Do not use uselock as it will be deprecated.
 	};
 	SceUInt32 field_8;
 	SceUInt32 field_C;

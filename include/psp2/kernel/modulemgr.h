@@ -55,9 +55,28 @@ int sceKernelIsCalledFromSysModule(void *lr);
 SceUID sceKernelGetModuleIdByAddr(void *addr);
 SceUInt32 sceKernelGetAllowedSdkVersionOnSystem(void);
 
+typedef struct SceKernelModuleStartParam {
+	SceUInt32 flags; //!< Must be 0.
+	const SceKernelStartModuleOpt *pOpt; //!< Optional start parameters.
+	int *pRes; //!< Required; receives the result returned by the module start entry.
+	SceUInt32 reserved; //!< Ignored on FW 3.60.
+} SceKernelModuleStartParam;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelModuleStartParam); // size is from FW 3.60
+
+/**
+ * Starts a loaded user module.
+ *
+ * @param[in] modid Module ID.
+ * @param[in] args Size of the argument block.
+ * @param[in] argp Argument block.
+ * @param[in] pParam Required start parameters.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _sceKernelStartModule(SceUID modid, SceSize args, const void *argp, const SceKernelModuleStartParam *pParam);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_KERNEL_MODULEMGR_H_ */
-

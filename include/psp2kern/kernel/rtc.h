@@ -66,6 +66,9 @@ int ksceRtcConvertTickToDateTime(SceDateTime *dst, SceRtcTick *src);
  */
 int ksceRtcConvertDateTimeToUnixTime(const SceDateTime *src, SceUInt64 *dst);
 
+int ksceRtcFormatRFC3339(char *pszDateTime, const SceRtcTick *utc, int iTimeZoneMinutes);
+SceULong64 ksceRtcGetAccumulativeTime(void);
+
 #ifdef __cplusplus
 }
 #endif

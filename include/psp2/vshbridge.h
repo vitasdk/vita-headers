@@ -6,8 +6,12 @@
 #ifndef _PSP2_VSHBRIDGE_H_
 #define _PSP2_VSHBRIDGE_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2common/kernel/msif.h>
 #include <psp2/types.h>
+#include <psp2common/sblssmgr.h>
+#include <psp2/io/dirent.h>
+#include <psp2/io/stat.h>
 #include <psp2/kernel/modulemgr.h>
 
 #ifdef __cplusplus
@@ -52,7 +56,14 @@ int _vshSblGetSystemSwVersion(SceKernelFwInfo *data);
  */
 int _vshSblAimgrGetSMI(SceUInt32 *info);
 
-int _vshSblAimgrGetConsoleId(char CID[32]);
+/**
+ * Get the console identifier.
+ *
+ * @param[out] console_id - Receives exactly 16 bytes.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _vshSblAimgrGetConsoleId(char console_id[16]);
 
 /**
  * @brief Check if a module is loaded.
@@ -223,6 +234,293 @@ int vshMemoryCardGetCardInsertState(void);
 int vshRemovableMemoryGetCardInsertState(void);
 
 int vshMsifGetMsInfo(SceMsInfo *info);
+
+typedef struct ScePscode {
+	SceUInt16 company_code;
+	SceUInt16 product_code;
+	SceUInt16 product_sub_code;
+	SceUInt16 factory_code;
+} ScePscode;
+VITASDK_BUILD_ASSERT_EQ(8, ScePscode);
+
+typedef struct SceVshSblSsCreatePassPhraseArgs {
+	SceUInt32 secureModuleArg; //!< Forwarded to the secure module. The observed caller uses 0.
+	SceSize size; //!< Size of this structure; ignored on FW 3.60.
+	char accountIdText[0x10]; //!< Lowercase hexadecimal representation of the account ID from "/CONFIG/NP/account_id".
+} SceVshSblSsCreatePassPhraseArgs;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceVshSblSsCreatePassPhraseArgs); // size is from FW 3.60
+
+typedef struct _sceDrmBridgeMlnpsnlAuth1_opt {
+	void *sessionData; //!< Output buffer with the layout of ::SceSblGcAuthMgrMlnpsnlSessionData.
+	SceSize requestSize; //!< Number of request bytes to copy, at most 0x20.
+	SceSize secureTickSize; //!< Number of secure-tick bytes to copy, at most 8.
+	SceSize responseSize; //!< Number of response bytes to copy, at most 0x80.
+	SceSize sessionDataSize; //!< Number of session-data bytes to copy, at most 0x40.
+	SceUInt32 reserved; //!< Ignored on FW 3.60.
+} _sceDrmBridgeMlnpsnlAuth1_opt;
+VITASDK_BUILD_ASSERT_EQ(0x18, _sceDrmBridgeMlnpsnlAuth1_opt); // size is from FW 3.60
+
+typedef struct SceVshAppMgrBgdlQueueStatusEntry {
+	SceUInt32 downloadStatus; //!< Status derived from the SceShell background-download state.
+	SceBool unknownBoolean; //!< Set by SceShell for status 9, or when an unidentified state field is zero,
+	                        //!< flags 0x300 are clear, and flag 0x40000 is set. AppMgr copies but does not test
+	                        //!< this field on FW 3.60, so its meaning remains unresolved.
+	char identifier[0x30]; //!< NUL-terminated BGDL identifier; AppMgr treats bytes 7 through 15 as a title ID.
+} SceVshAppMgrBgdlQueueStatusEntry;
+VITASDK_BUILD_ASSERT_EQ(0x38, SceVshAppMgrBgdlQueueStatusEntry); // size is from FW 3.60
+
+typedef struct SceVshAppMgrBgdlQueueStatus {
+	SceVshAppMgrBgdlQueueStatusEntry entries[32];
+} SceVshAppMgrBgdlQueueStatus;
+VITASDK_BUILD_ASSERT_EQ(0x700, SceVshAppMgrBgdlQueueStatus); // size is from FW 3.60
+
+typedef struct spsfo_opt {
+	uint32_t reserved[2]; //!< Ignored on FW 3.60.
+} spsfo_opt;
+VITASDK_BUILD_ASSERT_EQ(8, spsfo_opt); // size is from FW 3.60
+
+typedef struct vshIoChstatOpt {
+	uint32_t reserved[2]; //!< Ignored on FW 3.60.
+} vshIoChstatOpt;
+VITASDK_BUILD_ASSERT_EQ(8, vshIoChstatOpt); // size is from FW 3.60
+
+typedef struct vshIoGetstatOpt {
+	uint32_t reserved[2]; //!< Ignored on FW 3.60.
+} vshIoGetstatOpt;
+VITASDK_BUILD_ASSERT_EQ(8, vshIoGetstatOpt); // size is from FW 3.60
+
+typedef struct vshNpDrmGetLegacyDocKey_opt {
+	void *dest; //!< Destination for the 16-byte document key.
+	int data_size; //!< Number of bytes to copy from the document data.
+	uint32_t reserved[2]; //!< Ignored on FW 3.60.
+} vshNpDrmGetLegacyDocKey_opt;
+VITASDK_BUILD_ASSERT_EQ(0x10, vshNpDrmGetLegacyDocKey_opt);
+
+typedef struct SceVshSblSsCreatePassPhraseOpt {
+	SceSize passPhraseSize; //!< Number of pass-phrase bytes to copy, at most 0x200.
+	SceUInt32 reserved; //!< Ignored on FW 3.60.
+} SceVshSblSsCreatePassPhraseOpt;
+VITASDK_BUILD_ASSERT_EQ(8, SceVshSblSsCreatePassPhraseOpt); // size is from FW 3.60
+
+/**
+ * Reports whether remote-play debugging is allowed.
+ *
+ * @return 1 when allowed, 0 when disabled, or a negative error code.
+ */
+SceBool _sceDrmBridgeIsAllowRemotePlayDebug(void);
+
+/**
+ * Performs the first MLNPSNL authentication exchange.
+ *
+ * @param[in] request - Buffer with the layout of ::SceSblGcAuthMgrMlnpsnlAuth1Request.
+ *                      The system wrapper supplies 0x20 bytes.
+ * @param[in] secureTick - Pointer to a ::SceRtcTick structure. The system wrapper
+ *                         supplies 8 bytes.
+ * @param[out] response - User pointer to a buffer with the layout of
+ *                        ::SceSblGcAuthMgrMlnpsnlAuth1Response, represented as an
+ *                        int for compatibility. The system wrapper supplies 0x80 bytes.
+ * @param[in] opt - Required copy-size and session-data output parameters.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _sceDrmBridgeMlnpsnlAuth1(int *request, int *secureTick, int response, _sceDrmBridgeMlnpsnlAuth1_opt *opt);
+
+/**
+ * Obtains add-on-content installation data.
+ *
+ * @param[in] titleId - Pointer to a 0x10-byte buffer containing a NUL-terminated, nine-character title ID.
+ * @param[in] addcontId - Pointer to a 0x14-byte buffer containing a NUL-terminated, 16-character add-on-content ID.
+ * @param[out] result - Pointer to a 0xE0-byte buffer with the layout of ::SceAppMgrAcInstResult.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshAppMgrAcInstGetAcdirParam(const void *titleId, const void *addcontId, void *result);
+
+/**
+ * Updates the background-download queue status table.
+ *
+ * @param[in] queueStatus - Pointer to a ::SceVshAppMgrBgdlQueueStatus structure.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshAppMgrBgdlSetQueueStatus(void *queueStatus);
+
+/**
+ * Checks whether a PFS path is mounted.
+ *
+ * @param[in] path - PFS path.
+ * @param[in] opt - Required 8-byte structure whose contents are ignored on FW 3.60.
+ *
+ * @return 0 when mounted, or a negative error code.
+ */
+int _vshAppMgrCheckPfsMounted(const char *path, const void *opt);
+
+/**
+ * Creates and signs a cloud-data header.
+ *
+ * @param[in] setupKey - 0x18-byte setup-key buffer. Its first 0x10 bytes contain the ASCII account ID.
+ * @param[in] dataSize - Size of the cloud-data payload, at most 0x40000000 bytes.
+ * @param[in] digest - 0x20-byte payload digest.
+ * @param[out] header - 0x170-byte "PSVB" header containing the timestamp,
+ *                     data size, account ID, digest, and RSA signature.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshAppMgrCloudDataCreateHeader(const void *setupKey, int dataSize, const void *digest, void *header);
+
+/**
+ * Changes selected attributes of a path.
+ *
+ * @param[in] file - Path to change.
+ * @param[in] stat - Input ::SceIoStat structure.
+ * @param[in] bits - Attribute-selection mask.
+ * @param[in] opt - Required 8-byte structure whose contents are ignored on FW 3.60.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshIoChstat(const char *file, SceIoStat *stat, int bits, vshIoChstatOpt *opt);
+
+/**
+ * Reads the next directory entry.
+ *
+ * @param[in] fd - Directory descriptor.
+ * @param[in,out] dir - ::SceIoDirent structure copied both to and from the provider.
+ *
+ * @return 1 when an entry is read, 0 at end of directory, or a negative error code.
+ */
+int _vshIoDread(SceUID fd, SceIoDirent *dir);
+
+/**
+ * Gets path metadata.
+ *
+ * @param[in] file - Path to query.
+ * @param[out] stat - Output ::SceIoStat structure.
+ * @param[in] opt - Required 8-byte structure whose contents are ignored on FW 3.60.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshIoGetstat(const char *file, SceIoStat *stat, vshIoGetstatOpt *opt);
+
+/**
+ * Gets the compiled SDK version of a process.
+ *
+ * @param[in] pid - Process ID.
+ * @param[out] sdkVersion - Result value of type ::SceUInt32.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshKernelGetCompiledSdkVersionByPid(SceUID pid, int *sdkVersion);
+
+/**
+ * Derives the 16-byte key for a legacy document.
+ *
+ * @param[in] rifData - 0x200-byte RIF data buffer.
+ * @param[in] documentData - Legacy document data.
+ * @param[in] documentDataSize - Size of documentData in bytes; must match opt->data_size.
+ * @param[in] opt - Required copy-size and document-key output parameters.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshNpDrmGetLegacyDocKey(void *rifData, void *documentData, int documentDataSize, vshNpDrmGetLegacyDocKey_opt *opt);
+
+/**
+ * Gets the primary platform security code.
+ *
+ * @param[out] pscode - Output ::ScePscode structure.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshSblAimgrGetPscode(ScePscode *pscode);
+
+/**
+ * Gets the secondary platform security code.
+ *
+ * @param[out] pscode - Output ::ScePscode structure.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshSblAimgrGetPscode2(ScePscode *pscode);
+
+/**
+ * Gets the 0x20-byte visible ID when the system is in product mode.
+ *
+ * @param[out] visibleId - Output ::SceVisibleId structure.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshSblAimgrGetVisibleId(SceVisibleId *visibleId);
+
+/**
+ * Verifies a signed PARAM.SFO file and copies its embedded payload.
+ *
+ * @param[in] path - Path to the signed PARAM.SFO file.
+ * @param[out] verifiedData - Output payload buffer.
+ * @param[in] verifiedDataCapacity - Capacity of verifiedData in bytes.
+ * @param[in] opt - Required 8-byte structure whose contents are ignored on FW 3.60.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshSblAuthMgrVerifySpsfo(char *path, char *verifiedData, int verifiedDataCapacity, spsfo_opt *opt);
+
+/**
+ * Creates a 0x200-byte account pass phrase.
+ *
+ * @param[in] args - Pass-phrase input parameters.
+ * @param[out] passPhrase - Output pass-phrase buffer.
+ * @param[in] opt - Required pointer to an 8-byte layout equivalent to ::SceVshSblSsCreatePassPhraseOpt.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshSblSsCreatePassPhrase(SceVshSblSsCreatePassPhraseArgs *args, void *passPhrase, SceSize *opt);
+
+/**
+ * Gets the manufacturing-status word.
+ *
+ * @param[out] manufacturingStatus - Result value of type ::SceUInt32.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _vshSysconGetManufacturesStatus(int *manufacturingStatus);
+
+/**
+ * Creates a mount event.
+ *
+ * @param[in] mountId - One of ::SceVshMountId.
+ * @param[in] eventBits - Event-bit mask. FW 3.60 accepts the nonzero bits in 0x333.
+ *
+ * @return Event UID on success, or a negative error code.
+ */
+SceUID vshIoCreateMountEvent(int mountId, int eventBits);
+
+/**
+ * Notifies the kernel that SceShell is ready.
+ *
+ * @param[in] eventId - Event ID. FW 3.60 accepts only 0.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int vshKernelSendSysEvent(int eventId);
+
+/**
+ * Reports whether the communication-test flag is set.
+ *
+ * @return 1 when set, 0 when clear, or a negative authorization error.
+ */
+int vshSblUtMgrHasComTestFlag(void);
+
+/**
+ * Reports whether the NP-test flag is set.
+ *
+ * @return 1 when set, 0 when clear, or a negative authorization error.
+ */
+int vshSblUtMgrHasNpTestFlag(void);
+
+/**
+ * Reports whether the store flag is set.
+ *
+ * @return 1 when set, 0 when clear, or a negative authorization error.
+ */
+int vshSblUtMgrHasStoreFlag(void);
 
 #ifdef __cplusplus
 }

@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceProcessmgr}
- * \usage{psp2kern/kernel/processmgr.h,SceProcessmgrForKernel_stub}
+ * \usage{psp2kern/kernel/processmgr.h,SceProcessmgrForKernel_stub SceProcessmgrForDriver_stub}
  */
 
 
@@ -43,7 +43,7 @@ VITASDK_BUILD_ASSERT_EQ(4, SceKernelProcessType);
  * @param[in]   titleid - The TitleId of the app to open.
  * @param[in]   type    - The process type.
  * @param[in]   path    - Path of the process image.
- * @param[in]   opt     - The create process option.
+ * @param[in]   opt     - A pointer to a ::SceKernelProcessOpt2 structure on FW 3.60.
  * @return      PID of the created process on success, < 0 on error.
  */
 SceUID ksceKernelCreateProcess(const char *titleid, SceKernelProcessType type, const char *path, void *opt);
@@ -103,6 +103,74 @@ SceKernelTime ksceKernelLibcTime(SceKernelTime *tloc);
 int ksceKernelExitProcess(int status);
 SceClass *ksceKernelGetUIDProcessClass(void);
 
+
+typedef struct SceKernelProcessOpt {
+	SceSize size; //!< Size of this structure
+	SceUInt32 unk_4; //!< Corresponding FW 3.60 field: attr; FW 0.990 semantics unverified.
+	SceUInt32 cpuAffinityMask;
+	SceUInt32 initPriority;
+	SceSize stackSize;
+	SceUInt32 unk_14; //!< Corresponding FW 3.60 field is ignored; FW 0.990 semantics unverified.
+	SceUInt32 budgetId;
+	SceUInt32 unk_1C; //!< Corresponding FW 3.60 field: parent PID; FW 0.990 semantics unverified.
+} SceKernelProcessOpt;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceKernelProcessOpt); // size is from FW 0.990
+
+typedef struct SceKernelProcessOpt2 {
+	SceSize size; //!< Size of this structure
+	int attr;
+	int cpuAffinityMask; //!< A ::SceUInt32 value.
+	int initPriority;
+	int stackSize; //!< A ::SceSize value.
+	int reserved; //!< Ignored on FW 3.60.
+	int budgetId;
+	SceUID ppid;
+	int processExitSpawnMode; //!< Set to 1 to reuse a pending exit-spawn process object.
+	void *processExitSpawnPid; //!< A ::ScePID value identifying the exiting process whose object is reused.
+	const void *klicensee;
+	SceSize file_open_max_num;
+	SceSize dir_open_max_level;
+	int uniqueHeapSize; //!< A ::SceSize value used for the process's unique heap.
+	int displayResolutionFlags; //!< Bit 0 enables 1280-wide modes; bit 1 enables 1440- and 1920-wide modes.
+	int powerConfigurationFlags; //!< Permission bits queried by ScePower for process-specific clock configurations.
+} SceKernelProcessOpt2;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceKernelProcessOpt2); // size is from FW 3.60
+
+typedef SceUInt32 SceProcessType;
+
+#define SCE_PROCESS_TYPE_GAME               0x01000000
+#define SCE_PROCESS_TYPE_MINI_APPLICATION   0x02000000
+#define SCE_PROCESS_TYPE_SYSTEM_APPLICATION 0x04000000
+#define SCE_PROCESS_TYPE_KERNEL             0x05000000
+
+#define SCE_KERNEL_PROCESS_CURRENT_PROCESS_BUDGET            0
+#define SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET          2
+#define SCE_KERNEL_PROCESS_SYSTEM_APPLICATION_PROCESS_BUDGET 3
+
+#define SCE_KERNEL_CPU_AFFINITY_FLAG_SYSTEM_CORE 0
+#define SCE_KERNEL_CPU_AFFINITY_FLAG_ALL_USER    8
+
+typedef struct SceUIDProcessObject SceUIDProcessObject;
+
+int ksceKernelGetProcessTimeCore(SceUInt64 *pTime);
+SceUInt32 ksceKernelGetProcessTimeLowCore(void);
+int ksceKernelGetRemoteProcessTime(SceUID pid, SceUInt64 *pTime);
+int ksceKernelIsCDialogAvailable(void);
+int ksceKernelKillProcess(SceUID pid, SceInt32 option);
+
+/**
+ * @param[in] pOpt On FW 3.60, points to a ::SceKernelProcessOpt2 structure.
+ */
+SceUID ksceKernelSpawnProcess(const char *name, SceKernelProcessType type, const char *path, SceSize argSize, const void *pArgBlock, SceKernelProcessOpt *pOpt);
+
+/**
+ * @param[in] pOpt On FW 3.60, points to a ::SceKernelProcessOpt2 structure.
+ */
+SceUID ksceKernelSpawnProcessExt(const char *name, SceKernelProcessType type, const char *path, SceSize argSize, const void *pArgBlock, SceKernelProcessOpt *pOpt, SceUInt32 flags);
+
+int ksceKernelStartProcess(SceUID pid, SceKernelProcessType type, SceSize argSize, const void *pArgBlock);
+int ksceKernelStartProcessExt(SceUID pid, SceKernelProcessType type, SceSize argSize, const void *pArgBlock, uint32_t flags);
+SceUIDProcessObject *ksceKernelUIDtoProcess(ScePID pid);
 
 #ifdef __cplusplus
 }

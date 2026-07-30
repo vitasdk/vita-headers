@@ -148,6 +148,13 @@ int sceRegMgrSystemParamGetStr(const int id, char* buf, const int size);
 int sceRegMgrGetRegVersion(int version, char* buf);
 
 
+typedef int SceRegMgrSystemParam;
+
+SceInt32 sceRegMgrSystemParamGetBin(SceRegMgrSystemParam paramId, SceChar8 *buf, SceSize bufSize);
+SceInt32 sceRegMgrSystemParamSetBin(SceRegMgrSystemParam paramId, const SceChar8 *buf, SceSize bufSize);
+SceInt32 sceRegMgrSystemParamSetInt(SceRegMgrSystemParam paramId, SceInt32 value);
+SceInt32 sceRegMgrSystemParamSetStr(SceRegMgrSystemParam paramId, const SceChar8 *buf, SceSize bufSize);
+
 #ifdef __cplusplus
 }
 #endif

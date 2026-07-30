@@ -165,7 +165,7 @@ modules:
         kernel: true
         nid: 0x88758561
         functions:
-          k_sceEventLogPut: 0x95B38C6C
+          _ksceEventLogPut: 0x95B38C6C
           ksceEventLogGetInfo: 0xCC5365D3
           ksceEventLogPut: 0x912CF2BA
           ksceKernelAssert: 0x35A35322
@@ -258,7 +258,7 @@ modules:
           ksceHmacSha224Digest: 0x7F2A7B99
           ksceHmacSha256Digest: 0x83EFA1CC
           ksceMt19937GlobalInit: 0xD428CC2A
-          ksceMt19937GlobalUninit: 0x875B2A1C
+          ksceMt19937GlobalUIntInRange: 0x875B2A1C
           ksceMt19937Init: 0x4C9A5730
           ksceMt19937UInt: 0x92AEDFBC
           ksceSfmt19937FillArray32: 0x2B30548B
@@ -574,7 +574,6 @@ modules:
         functions:
           ksceKernelAllocHeapMemory2: 0xD351EBC8
           ksceKernelIsColdBoot: 0xD7198963
-          ksceKernelIsSomeBootMode: 0x7B7F8171
           ksceKernelSysrootAppMgrSpawnProcess: 0x3ACACD22
           ksceKernelSysrootCheckRemapCodeForUser: 0xF8769E86
           ksceKernelSysrootDbgpSuspendProcessAndWaitResume: 0x256B2394
@@ -607,6 +606,7 @@ modules:
           ksceSysrootIsManufacturingMode: 0x55392965
           ksceSysrootIsNonRemovableCardMode: 0x50FE3B4D
           ksceSysrootIsSafeMode: 0x834439A7
+          ksceSysrootIsSdCardMode: 0x7B7F8171
           ksceSysrootIsUpdateMode: 0xB0E1FC67
           ksceSysrootIsUsbEnumWakeup: 0x79C9AE10
           ksceSysrootRegisterLicMgrGetLicenseStatus: 0x71DB83A2

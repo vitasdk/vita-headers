@@ -7,6 +7,7 @@
 #define _PSP2KERN_LOWIO_DSI_H_
 
 #include <psp2kern/types.h>
+#include <psp2common/display.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -35,6 +36,8 @@ int ksceDsiGenericShortWrite(int head, int param0, int param1, int param2);
 int ksceDsiGenericReadRequest(int head, int param, void *buff, unsigned int size);
 int ksceDsiDcsShortWrite(int head, unsigned short param0, int param1);
 int ksceDsiDcsRead(int head, unsigned short param, void *buff, unsigned int size);
+
+int ksceDsiStartDisplay(SceDisplayHead head, SceUInt32 control);
 
 #ifdef __cplusplus
 }

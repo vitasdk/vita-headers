@@ -290,11 +290,11 @@ VITASDK_BUILD_ASSERT_EQ(0x54 + 0x40, SceKernelDebugEventLog);
 /**
  * @brief Get event log info
  *
- * @param[out] buf         - The SceKernelDebugEventLog buffer list
+ * @param[out] buf         - The ::SceKernelDebugEventLog buffer list. Must not be NULL.
  * @param[in]  buf_size    - The buf size
- * @param[out] read_blocks - The read event log number
+ * @param[out] read_blocks - Optional output for the number of event logs copied
  *
- * @return < 0 on error.
+ * @return Number of bytes copied on success, < 0 on error.
  */
 int ksceEventLogGetInfo(void *buf, SceSize buf_size, SceSize *read_blocks);
 
@@ -325,6 +325,36 @@ int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
 #define ksceDebugDisableInfoDump ksceKernelEnableCrashDump
 #define ksceKernelSetMinimumAssertionLevel ksceKernelSetAssertLevel
 
+
+/**
+ * Writes an event-log record for the current kernel thread.
+ *
+ * @param[in] eventId Event identifier. FW 3.60 stores its low 16 bits.
+ * @param[in] index Event index. FW 3.60 stores its low 16 bits.
+ * @param[in] value Event value.
+ * @param[in] pBuf Optional payload buffer. The function does not modify it;
+ * it may be NULL only when \p bufSize is zero.
+ * @param[in] bufSize Payload size, at most 0x80 bytes.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int _ksceEventLogPut(int eventId, int index, int value, void *pBuf, SceSize bufSize);
+
+/**
+ * Writes an event-log record with explicit process and thread identifiers.
+ *
+ * @param[in] sourcePid Process identifier, with ::ScePID semantics.
+ * @param[in] threadId Thread identifier, with ::SceUID semantics.
+ * @param[in] eventId Event identifier. FW 3.60 stores its low 16 bits.
+ * @param[in] index Event index. FW 3.60 stores its low 16 bits.
+ * @param[in] value Event value.
+ * @param[in] pBuf Optional payload buffer. The function does not modify it;
+ * it may be NULL only when \p bufSize is zero.
+ * @param[in] bufSize Payload size, at most 0x80 bytes.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceEventLogPut(SceUInt32 sourcePid, int threadId, int eventId, int index, int value, void *pBuf, SceSize bufSize);
 
 #ifdef __cplusplus
 }

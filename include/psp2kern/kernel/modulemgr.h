@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceModulemgr}
- * \usage{psp2kern/kernel/modulemgr.h,SceModulemgrForKernel_stub}
+ * \usage{psp2kern/kernel/modulemgr.h,SceModulemgrForKernel_stub SceModulemgrForDriver_stub}
  */
 
 #ifndef _PSP2KERN_KERNEL_MODULEMGR_H_
@@ -534,6 +534,34 @@ int ksceKernelUnloadProcessModules(SceUID pid);
 #define ksceKernelGetModuleInternal ksceKernelGetModuleCB
 #define ksceKernelGetProcessMainModule ksceKernelGetModuleIdByPid
 
+
+/**
+ * Gets information about the loaded kernel module containing an address.
+ *
+ * @param[in] module_addr Address in any mapped module segment.
+ * @param[out] info Buffer that receives a ::SceKernelModuleInfo structure.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleInfoByAddr(const void *module_addr, SceKernelModuleInfo *info);
+
+/**
+ * Registers an export library from a loaded kernel module.
+ *
+ * @param[in] libent Pointer to a 0x20-byte library export-table entry.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelRegisterLibary(const void *libent);
+
+/**
+ * Unregisters an export library from a loaded kernel module.
+ *
+ * @param[in] libent Pointer to a 0x20-byte library export-table entry.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelReleaseLibary(const void *libent);
 
 #ifdef __cplusplus
 }

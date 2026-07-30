@@ -191,6 +191,12 @@ __attribute__((__noreturn__))
 void __stack_chk_fail(void);
 
 
+SceUInt64 __aeabi_uldivmod(SceUInt32 dividend_low, SceUInt32 dividend_hi, SceUInt32 divisor_low, SceUInt32 divisor_hi);
+char *__strncat_chk2(char *dest, const char *src, SceSize destlen);
+char *__strncpy_chk2(char *dest, const char *src, size_t destlen);
+char *strncat(char *s1, const char *s2, size_t n);
+char *strncpy_s(char *dst, const char *src, size_t dstsize);
+
 #ifdef __cplusplus
 }
 #endif

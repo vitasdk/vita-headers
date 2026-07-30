@@ -37,6 +37,10 @@ modules:
         nid: 0x2254E1B2
         functions:
           _ksceSblPostSsMgrExecutePmSmF00dCommand: 0xFE92A318
+          ksceSblCoredumpGetAesKey: 0xCB5436BD
+          ksceSblCoredumpGetHmacKey: 0x2C463AF1
+          ksceSblCoredumpKeyStoreFinalize: 0x4100B9E9
+          ksceSblCoredumpKeyStoreInitialize: 0xC977601E
           ksceSblLicMgrGetActivationKey: 0xF7F1015B
           ksceSblLicMgrGetLicenseStatus: 0x15F37282
           ksceSblPostSsMgrActivate: 0x0298382B
@@ -47,6 +51,7 @@ modules:
           ksceSblPostSsMgrExecutePmSmF00dCommand: 0xADF92824
           ksceSblPostSsMgrExecutePmSmF00dCommand8: 0x4663C195
           ksceSblPostSsMgrExecutePmSmSdF00dCommand: 0x19B63D65
+          ksceSblPostSsMgrGenerateAppKey: 0x2646DE64
           ksceSblPostSsMgrGetExpireDate: 0x4FF2682F
           ksceSblPostSsMgrInitializeSpfsoCtx: 0xBDF18922
           ksceSblPostSsMgrReleaseSpfsoCtx: 0xAD3B0078
@@ -58,11 +63,22 @@ modules:
           ksceSblRSA2048VerifySignature: 0x3DB69911
           ksceSblRtcMgrGetCpRtcLogical: 0xDE5150FE
           ksceSblRtcMgrGetCpRtcPhysical: 0x942010A0
+          ksceSblRtcMgrSetCpRtcLogical: 0xDC68EE5C
+          ksceSblSsMgrCloudDataGetEncDecCryptHandle: 0xC6684F7E
+          ksceSblSsMgrCloudDataGetSignCryptHandle: 0x739C981E
+          ksceSblSsMgrCloudDataStop: 0x2BF04B8E
           ksceSblUtMgrExecuteUtokenSmCommand1: 0xC2E58CE3
           ksceSblUtMgrGetTrilithiumBuffer: 0xABDD68CD
           ksceSblUtMgrHasComTestFlag: 0x7ACCAA50
+          ksceSblUtMgrHasFlag1: 0x22599675
+          ksceSblUtMgrHasFlag6: 0x9D1D8EE5
+          ksceSblUtMgrHasFlag7: 0xC93C0A0D
+          ksceSblUtMgrHasFlag8: 0x9B49C249
+          ksceSblUtMgrHasFlag9: 0x1923D80D
           ksceSblUtMgrHasNpTestFlag: 0x9FD835B0
           ksceSblUtMgrHasStoreFlag: 0x9D2E2D39
+          ksceSblUtMgrIsAllowComTest: 0x128FB35A
+          ksceSblUtMgrIsAllowProgramDebug: 0xD8A2D465
           ksceSblUtMgrResetUtokenFile: 0x1FF699DD
       SceSblRtcMgr:
         kernel: false
