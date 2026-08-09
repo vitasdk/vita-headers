@@ -22,6 +22,7 @@ var group__SceSdifKernel =
     [ "SCE_SDIF_DEVICE_TYPE_SD", "group__SceSdifKernel.html#gga40d76c45d8ddc059103a38af70c9446baca6354b76484d76f922dfe2cb4d38a50", null ],
     [ "SCE_SDIF_DEVICE_TYPE_SDIO", "group__SceSdifKernel.html#gga40d76c45d8ddc059103a38af70c9446bae8d3089c90aac5b635850dc63cc8d22a", null ],
     [ "ksceSdifGetSdContextPartValidateMmc", "group__SceSdifKernel.html#gaf3117d5098949f2d64c4a893e7cf006e", null ],
+    [ "ksceSdifGetSdContextPartValidateSd", "group__SceSdifKernel.html#gaf3ed11464581b64582fb2b5acc227118", null ],
     [ "ksceSdifInitializeMmcDevice", "group__SceSdifKernel.html#ga4d189496895849d49565047d58c04acf", null ],
     [ "ksceSdifWriteCmd56", "group__SceSdifKernel.html#ga706c48aad70e9bff684231a5e4ed7261", null ],
     [ "ksceSdifReadCmd56", "group__SceSdifKernel.html#ga4e0443d56a7969b1a0e2fe9c68da9695", null ]

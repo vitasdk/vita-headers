@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"group__SceVfsKernel.html#ga566b6b14183b9a0f17adae3fd79215ff":[1,4,7,0,286],
 "group__SceVfsKernel.html#ga5724555c0a1064160b1cf749630f4c92":[1,4,7,0,293],
 "group__SceVfsKernel.html#ga57a7dcdcd9c63545f5374177d9df7ba6":[1,4,7,0,342],
 "group__SceVfsKernel.html#ga57f86a47d2502f83756f994e13c7f25a":[1,4,7,0,439],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "group__SceVfsKernel.html#gae4ae0cc119513034f098a42721c3b4a5":[1,4,7,0,334],
 "group__SceVfsKernel.html#gae5190524f9d9b1a23903966f5565d62a":[1,4,7,0,330],
 "group__SceVfsKernel.html#gae55605d120b6529e5b8e2b474b699c04":[1,4,7,0,374],
-"group__SceVfsKernel.html#gae56f08201e030b07f22c3dd819ad3820":[1,4,7,0,288],
-"group__SceVfsKernel.html#gae5c715875b692584ddc25491e5fa1023":[1,4,7,0,355]
+"group__SceVfsKernel.html#gae56f08201e030b07f22c3dd819ad3820":[1,4,7,0,288]
 };

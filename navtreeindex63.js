@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"group__SceUsbdUser.html#structSceUsbdDevicePipe":[1,13,0,0,5],
 "group__SceUsbdUser.html#structSceUsbdIsochTransfer":[1,13,0,0,6],
 "group__SceUsbdUser.html#structSceUsbdIsochTransferStatus":[1,13,0,0,4],
 "group__SceUsbdUser.html#structSceUsbdReceiveEvent":[1,13,0,0,2],
@@ -12,8 +13,8 @@ var NAVTREEINDEX63 =
 "group__SceUsbstorVStorDriverUser.html#ga91ac980e580d85503ba23b8eb191d9bb":[1,13,4,0,5],
 "group__SceUsbstorVStorDriverUser.html#gabec7bf86144a4ed92ed3917b09b3a533":[1,13,4,0,4],
 "group__SceUsbstorVStorDriverUser.html#gac1f0fe2517fda63d85571377794ebe98":[1,13,4,0,0],
-"group__SceUsbstorVStorDriverUser.html#ggac1f0fe2517fda63d85571377794ebe98a5b54c2af0c941faa93a4493cf774b40a":[1,13,4,0,2],
 "group__SceUsbstorVStorDriverUser.html#ggac1f0fe2517fda63d85571377794ebe98a5b54c2af0c941faa93a4493cf774b40a":[1,13,4,0,0,1],
+"group__SceUsbstorVStorDriverUser.html#ggac1f0fe2517fda63d85571377794ebe98a5b54c2af0c941faa93a4493cf774b40a":[1,13,4,0,2],
 "group__SceUsbstorVStorDriverUser.html#ggac1f0fe2517fda63d85571377794ebe98ae357bf123ecc6c5a53b6545a3171bfed":[1,13,4,0,0,0],
 "group__SceUsbstorVStorDriverUser.html#ggac1f0fe2517fda63d85571377794ebe98ae357bf123ecc6c5a53b6545a3171bfed":[1,13,4,0,1],
 "group__SceUtils.html":[1,7,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "group__SceVfsKernel.html#ga5184fb56ecfd018a0fade18d5dc7ca60":[1,4,7,0,391],
 "group__SceVfsKernel.html#ga525b68945f1067a7bb77471c4b41f1cd":[1,4,7,0,350],
 "group__SceVfsKernel.html#ga543d1957a63b8b99dcd7bd7e1fbe13e5":[1,4,7,0,356],
-"group__SceVfsKernel.html#ga55c3bd3007dc78bc51d5f8ad5e11f16c":[1,4,7,0,211],
-"group__SceVfsKernel.html#ga566b6b14183b9a0f17adae3fd79215ff":[1,4,7,0,286]
+"group__SceVfsKernel.html#ga55c3bd3007dc78bc51d5f8ad5e11f16c":[1,4,7,0,211]
 };

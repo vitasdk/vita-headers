@@ -1,5 +1,6 @@
 var NAVTREEINDEX56 =
 {
+"group__SceThreadMgrKernel.html#structMsgPipeSendData":[1,7,8,1,8],
 "group__SceThreadMgrKernel.html#structSceArmCpuRegisters":[1,7,8,1,0],
 "group__SceThreadMgrKernel.html#structSceKernelFastMutex":[1,7,8,1,4],
 "group__SceThreadMgrKernel.html#structSceKernelFaultingProcessInfo":[1,7,8,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX56 =
 "group__SceThreadMgrUser.html#gae5877005b3d0698e3d3ca53064b243b4":[1,7,8,0,235],
 "group__SceThreadMgrUser.html#gae626d9bede722cfa9751a82563bd4244":[1,7,8,0,270],
 "group__SceThreadMgrUser.html#gae7d64591b9ff5b4fc1305c0fd7712ade":[1,7,8,0,226],
-"group__SceThreadMgrUser.html#gae82f5951866fb4974e03b5452c9773b4":[1,7,8,0,259],
-"group__SceThreadMgrUser.html#gae89a65ff1ed0d7fabd99d519ff398e85":[1,7,8,0,263]
+"group__SceThreadMgrUser.html#gae82f5951866fb4974e03b5452c9773b4":[1,7,8,0,259]
 };
