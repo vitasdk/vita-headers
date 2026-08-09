@@ -13,5 +13,6 @@ var group__Graphics =
     [ "JPEG ARM Encoding Library", "group__SceJpegEncArm.html", "group__SceJpegEncArm" ],
     [ "Video Player Library", "group__SceAvPlayer.html", "group__SceAvPlayer" ],
     [ "Video Decoding Library", "group__SceVideoDec.html", "group__SceVideoDec" ],
+    [ "Video Recorder Library", "group__SceMp4Rec.html", "group__SceMp4Rec" ],
     [ "Shared Framebuffer Library", "group__SceSharedFb.html", "group__SceSharedFb" ]
 ];
