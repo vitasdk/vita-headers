@@ -337,6 +337,7 @@ var group__SceSysmemKernel =
     [ "ksceKernelDeleteHeap", "group__SceSysmemKernel.html#gadf594ff037a5035136c9ae2c396e61c2", null ],
     [ "ksceKernelAllocHeapMemory", "group__SceSysmemKernel.html#gaf7e872cf5c268cba7b8c29c89543fb1d", null ],
     [ "ksceKernelAllocHeapMemoryWithOption", "group__SceSysmemKernel.html#ga3e5f9262ecc668ffdebe80debba201ef", null ],
+    [ "ksceKernelReallocHeapMemory", "group__SceSysmemKernel.html#ga16b79925380c5915c4ce5262d70aa017", null ],
     [ "ksceKernelFreeHeapMemory", "group__SceSysmemKernel.html#ga7bf486913efbcd018bf52e29c71735db", null ],
     [ "ksceKernelAlloc", "group__SceSysmemKernel.html#ga9619063cff2b1a4f4de1541738ddc5e3", null ],
     [ "ksceKernelFree", "group__SceSysmemKernel.html#ga93724c6e5730bbe92fc729b2392df9a7", null ],

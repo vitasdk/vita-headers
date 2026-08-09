@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"group__SceVfsKernel.html#structSceVopLookupArgs":[1,4,7,0,19],
 "group__SceVfsKernel.html#structSceVopLseekArgs":[1,4,7,0,22],
 "group__SceVfsKernel.html#structSceVopMkdirArgs":[1,4,7,0,25],
 "group__SceVfsKernel.html#structSceVopOpenArgs":[1,4,7,0,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda3b8f2ddb835850866c983c8e39fbd81c":[1,12,12,0,0,15],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda45d7d82eb54258bdb21b0d974542f8d2":[1,12,12,0,18],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda45d7d82eb54258bdb21b0d974542f8d2":[1,12,12,0,0,17],
-"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda47463f4df6c17eb1ee0e669568a47672":[1,12,12,0,0,16],
-"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda47463f4df6c17eb1ee0e669568a47672":[1,12,12,0,17]
+"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda47463f4df6c17eb1ee0e669568a47672":[1,12,12,0,0,16]
 };

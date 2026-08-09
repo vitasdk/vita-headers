@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"group__SceUdcdKernel.html#gaf722fba2585747f858d652c33a5a4a1e":[1,13,2,1,244],
 "group__SceUdcdKernel.html#gaf77223e91a04d4b5e68465e14beaf796":[1,13,2,1,196],
 "group__SceUdcdKernel.html#gaf88181b3870106d791fb7311c737338b":[1,13,2,1,192],
 "group__SceUdcdKernel.html#gafbb03350a5b807c3d215a1c87bf171c1":[1,13,2,1,272],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ad5773c23e8c3f32e804b2bf9868b3397":[1,2,7,0,4],
 "group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ae1e3af0c34483a91eade74c1fd9d7b31":[1,2,7,0,2,5],
 "group__SceUsbAudioUser.html#gga320de6c80839a882a0445397d3259399ae1e3af0c34483a91eade74c1fd9d7b31":[1,2,7,0,8],
-"group__SceUsbAudioUser.html#structSceUsbAudioInDeviceInfo":[1,2,7,0,0],
-"group__SceUsbAudioUser.html#structSceUsbAudioInDeviceListItem":[1,2,7,0,1]
+"group__SceUsbAudioUser.html#structSceUsbAudioInDeviceInfo":[1,2,7,0,0]
 };

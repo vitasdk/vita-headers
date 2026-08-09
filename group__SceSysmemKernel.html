@@ -611,11 +611,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:gadf594ff037a5035136c9ae2c396e61c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete heap area.  <br /></td></tr>
 <tr class="separator:gadf594ff037a5035136c9ae2c396e61c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf7e872cf5c268cba7b8c29c89543fb1d" id="r_gaf7e872cf5c268cba7b8c29c89543fb1d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gaf7e872cf5c268cba7b8c29c89543fb1d">ksceKernelAllocHeapMemory</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
-<tr class="memdesc:gaf7e872cf5c268cba7b8c29c89543fb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocation the specified length of memory from heap.  <br /></td></tr>
+<tr class="memdesc:gaf7e872cf5c268cba7b8c29c89543fb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the specified length of memory from heap.  <br /></td></tr>
 <tr class="separator:gaf7e872cf5c268cba7b8c29c89543fb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e5f9262ecc668ffdebe80debba201ef" id="r_ga3e5f9262ecc668ffdebe80debba201ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3e5f9262ecc668ffdebe80debba201ef">ksceKernelAllocHeapMemoryWithOption</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> heapid, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len, <a class="el" href="group__SceSysmemKernel.html#structSceAllocOpt">SceAllocOpt</a> *opt)</td></tr>
-<tr class="memdesc:ga3e5f9262ecc668ffdebe80debba201ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocation the specified length of memory from heap with option.  <br /></td></tr>
+<tr class="memdesc:ga3e5f9262ecc668ffdebe80debba201ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the specified length of memory from heap with option.  <br /></td></tr>
 <tr class="separator:ga3e5f9262ecc668ffdebe80debba201ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16b79925380c5915c4ce5262d70aa017" id="r_ga16b79925380c5915c4ce5262d70aa017"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga16b79925380c5915c4ce5262d70aa017">ksceKernelReallocHeapMemory</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> heapid, void *ptr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len)</td></tr>
+<tr class="memdesc:ga16b79925380c5915c4ce5262d70aa017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reallocate the specified pointer to the new length.  <br /></td></tr>
+<tr class="separator:ga16b79925380c5915c4ce5262d70aa017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7bf486913efbcd018bf52e29c71735db" id="r_ga7bf486913efbcd018bf52e29c71735db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga7bf486913efbcd018bf52e29c71735db">ksceKernelFreeHeapMemory</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, void *ptr)</td></tr>
 <tr class="memdesc:ga7bf486913efbcd018bf52e29c71735db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free allocated memory.  <br /></td></tr>
 <tr class="separator:ga7bf486913efbcd018bf52e29c71735db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7022,7 +7025,7 @@ attr</td>
       </table>
 </div><div class="memdoc">
 
-<p>Allocation the specified length of memory from heap. </p>
+<p>Allocate the specified length of memory from heap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- The heapid </td></tr>
@@ -7066,12 +7069,57 @@ attr</td>
       </table>
 </div><div class="memdoc">
 
-<p>Allocation the specified length of memory from heap with option. </p>
+<p>Allocate the specified length of memory from heap with option. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- The heapid </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>- The alloc size </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>- The pointer of option</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer of allocated memory on success, NULL on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga16b79925380c5915c4ce5262d70aa017" name="ga16b79925380c5915c4ce5262d70aa017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16b79925380c5915c4ce5262d70aa017">&#9670;&#160;</a></span>ksceKernelReallocHeapMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * ksceKernelReallocHeapMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>heapid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reallocate the specified pointer to the new length. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>- The heapid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>- The pointer of allocated memory or NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- The new alloc size</td></tr>
   </table>
   </dd>
 </dl>

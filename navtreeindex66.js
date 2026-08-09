@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda47463f4df6c17eb1ee0e669568a47672":[1,12,12,0,17],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda53adcad607f43eb1e66e86b17b695fca":[1,12,12,0,15],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda53adcad607f43eb1e66e86b17b695fca":[1,12,12,0,0,14],
 "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda5feeaa79d5b8fad44574008f35548562":[1,12,12,0,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "psp2kern_2ctrl_8h_source.html":[4,0,1,2,7],
 "psp2kern_2display_8h.html":[4,0,1,2,8],
 "psp2kern_2display_8h_source.html":[4,0,1,2,8],
-"psp2kern_2fios2_8h.html":[4,0,1,2,9],
-"psp2kern_2fios2_8h_source.html":[4,0,1,2,9]
+"psp2kern_2fios2_8h.html":[4,0,1,2,9]
 };

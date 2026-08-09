@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"group__SceUsbAudioUser.html#structSceUsbAudioInDeviceListItem":[1,2,7,0,1],
 "group__SceUsbSerial.html":[1,13,3],
 "group__SceUsbSerialKernel.html":[1,13,3,1],
 "group__SceUsbSerialKernel.html#ga14d591ede8f9ea6a7e3847533efa8f0b":[1,13,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a1ff0157a10ea4d262db2d399efa02184":[1,13,0,1,105,6],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a1ff0157a10ea4d262db2d399efa02184":[1,13,0,1,124],
 "group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a2ba7061ab7ffc75a3121f2d53bfed7bc":[1,13,0,1,125],
-"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a2ba7061ab7ffc75a3121f2d53bfed7bc":[1,13,0,1,105,7],
-"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a346d683b255fb528301106c35b948d27":[1,13,0,1,126]
+"group__SceUsbdKernel.html#gga10016fddd2edb5057b2baf8bcdd55be6a2ba7061ab7ffc75a3121f2d53bfed7bc":[1,13,0,1,105,7]
 };
