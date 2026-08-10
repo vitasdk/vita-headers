@@ -44,6 +44,7 @@ VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5HashTransformParam);
  * @return 0 on success, else < 0.
  */
 int sceSblDmac5EncDec(SceSblDmac5EncDecParam *param, SceUInt32 command);
+int sceSblDmac5EncDecKeyGen(SceSblDmac5EncDecParam *param, SceUInt32 key_id, SceUInt32 command);
 
 
 /**
@@ -56,6 +57,7 @@ int sceSblDmac5EncDec(SceSblDmac5EncDecParam *param, SceUInt32 command);
  * @return 0 on success, else < 0.
  */
 int sceSblDmac5HashTransform(SceSblDmac5HashTransformParam *param, SceUInt32 command, SceUInt32 flags);
+int sceSblDmac5HmacKeyGen(SceSblDmac5HashTransformParam *param, SceUInt32 key_id, SceUInt32 command, SceUInt32 flags);
 
 
 static inline int sceSblDmac5AesCbcEnc(const void *src, void *dst, SceSize length, const void *key, SceSize keysize, void *iv)

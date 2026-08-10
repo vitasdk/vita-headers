@@ -48,16 +48,14 @@ typedef struct SceFiosGetListSyscallArgs {
 	int actual_ids; //!< Optional user pointer receiving the total match count,
 	                //!< including entries beyond max_ids; points to a ::SceSize value.
 	SceSize out_ids_buffer_size; //!< Number of bytes copied to the output buffer.
-	int reserved1; //!< Ignored on FW 3.60.
-	int reserved2; //!< Ignored on FW 3.60.
+	int reserved[2]; //!< Ignored on FW 3.60.
 } SceFiosGetListSyscallArgs;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosGetListSyscallArgs); // size is from FW 3.60
 
-int _sceFiosKernelOverlayGetList(SceUID pid, SceUInt8 lo_order_filter, SceUInt8 hi_order_filter, SceFiosGetListSyscallArgs *args);
+int _sceFiosKernelOverlayGetList(SceUID pid, SceUInt8 min_order, SceUInt8 max_order, SceFiosGetListSyscallArgs *args);
 
 typedef struct SceFiosGetRecommendedSchedulerSyscallArgs {
-	int reserved1; //!< Ignored on FW 3.60.
-	int reserved2; //!< Ignored on FW 3.60.
+	int reserved[2]; //!< Ignored on FW 3.60.
 } SceFiosGetRecommendedSchedulerSyscallArgs;
 VITASDK_BUILD_ASSERT_EQ(0x8, SceFiosGetRecommendedSchedulerSyscallArgs); // size is from FW 3.60
 
@@ -79,10 +77,9 @@ int _sceFiosKernelOverlayRemoveForProcess(SceUID target_process, SceFiosKernelOv
 typedef struct SceFiosResolveSyncSyscallArgs {
 	char *out_path; //!< Resolved path output buffer.
 	int max_path; //!< Maximum path length used by the resolver; a ::SceSize value.
-	int reserved1; //!< Ignored on FW 3.60.
+	int reserved0; //!< Ignored on FW 3.60.
 	int out_path_buffer_size; //!< Number of bytes copied to the output buffer; a ::SceSize value.
-	int reserved3; //!< Ignored on FW 3.60.
-	int reserved4; //!< Ignored on FW 3.60.
+	int reserved1[2]; //!< Ignored on FW 3.60.
 } SceFiosResolveSyncSyscallArgs;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosResolveSyncSyscallArgs); // size is from FW 3.60
 
@@ -91,19 +88,18 @@ int _sceFiosKernelOverlayResolveSync(SceUID pid, int resolve_for_write, const ch
 typedef struct SceFiosResolveWithRangeSyncSyscallArgs {
 	char *out_path; //!< Resolved path output buffer.
 	int max_path; //!< Maximum path length used by the resolver; a ::SceSize value.
-	SceUInt8 lo_order_filter; //!< Minimum value of an overlay's order field to include.
-	SceUInt8 hi_order_filter; //!< Maximum value of an overlay's order field to include.
-	SceUInt8 reserved1; //!< Ignored on FW 3.60.
-	SceUInt8 reserved2; //!< Ignored on FW 3.60.
-	int reserved3; //!< Ignored on FW 3.60.
+	SceUInt8 min_order; //!< Minimum overlay order to include.
+	SceUInt8 max_order; //!< Maximum overlay order to include.
+	SceUInt8 reserved0[2]; //!< Ignored on FW 3.60.
+	int reserved1; //!< Ignored on FW 3.60.
 	int out_path_buffer_size; //!< Number of bytes copied to the output buffer; a ::SceSize value.
-	int reserved5; //!< Ignored on FW 3.60.
-	int reserved6; //!< Ignored on FW 3.60.
+	int reserved2[2]; //!< Ignored on FW 3.60.
 } SceFiosResolveWithRangeSyncSyscallArgs;
 VITASDK_BUILD_ASSERT_EQ(0x1C, SceFiosResolveWithRangeSyncSyscallArgs); // size is from FW 3.60
 
 /**
- * Resolves a path through overlays within an inclusive order range.
+ * Resolves a path through overlays whose order is between \c min_order and
+ * \c max_order, inclusive.
  *
  * @param[in]  pid               - Process whose overlays are used.
  * @param[in]  resolve_for_write - 0 for read resolution, 1 for write resolution.

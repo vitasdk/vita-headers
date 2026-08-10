@@ -250,15 +250,15 @@ typedef struct SceVshSblSsCreatePassPhraseArgs {
 } SceVshSblSsCreatePassPhraseArgs;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceVshSblSsCreatePassPhraseArgs); // size is from FW 3.60
 
-typedef struct _sceDrmBridgeMlnpsnlAuth1_opt {
+typedef struct SceDrmBridgeMlnpsnlAuth1Opt {
 	void *sessionData; //!< Output buffer with the layout of ::SceSblGcAuthMgrMlnpsnlSessionData.
 	SceSize requestSize; //!< Number of request bytes to copy, at most 0x20.
 	SceSize secureTickSize; //!< Number of secure-tick bytes to copy, at most 8.
 	SceSize responseSize; //!< Number of response bytes to copy, at most 0x80.
 	SceSize sessionDataSize; //!< Number of session-data bytes to copy, at most 0x40.
 	SceUInt32 reserved; //!< Ignored on FW 3.60.
-} _sceDrmBridgeMlnpsnlAuth1_opt;
-VITASDK_BUILD_ASSERT_EQ(0x18, _sceDrmBridgeMlnpsnlAuth1_opt); // size is from FW 3.60
+} SceDrmBridgeMlnpsnlAuth1Opt;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceDrmBridgeMlnpsnlAuth1Opt); // size is from FW 3.60
 
 typedef struct SceVshAppMgrBgdlQueueStatusEntry {
 	SceUInt32 downloadStatus; //!< Status derived from the SceShell background-download state.
@@ -323,7 +323,7 @@ SceBool _sceDrmBridgeIsAllowRemotePlayDebug(void);
  *
  * @return 0 on success, or a negative error code.
  */
-int _sceDrmBridgeMlnpsnlAuth1(int *request, int *secureTick, int response, _sceDrmBridgeMlnpsnlAuth1_opt *opt);
+int _sceDrmBridgeMlnpsnlAuth1(int *request, int *secureTick, int response, SceDrmBridgeMlnpsnlAuth1Opt *opt);
 
 /**
  * Obtains add-on-content installation data.

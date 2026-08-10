@@ -80,6 +80,7 @@
 
 #include <psp2kern/lowio/dsi.h>
 #include <psp2kern/lowio/gpio.h>
+#include <psp2kern/lowio/grab.h>
 #include <psp2kern/lowio/i2c.h>
 #include <psp2kern/lowio/iftu.h>
 #include <psp2kern/lowio/pervasive.h>

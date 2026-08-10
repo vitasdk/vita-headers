@@ -1,6 +1,6 @@
 /**
  * \usergroup{SceSblGcAuthMgr}
- * \usage{psp2/sblgcauthmgr.h,SceSblGcAuthMgr_stub SceLibKernel_stub}
+ * \usage{psp2/sblgcauthmgr.h,SceSblGcAuthMgr_stub}
  */
 
 #ifndef _PSP2_SBLGCAUTHMGR_H_
@@ -19,11 +19,11 @@ typedef struct SceMediaIdType01 {
 } SceMediaIdType01;
 VITASDK_BUILD_ASSERT_EQ(0x20, SceMediaIdType01); // size is from FW 3.60
 
-typedef struct _sceSblGcAuthMgrGetMediaIdType01_opt {
+typedef struct SceSblGcAuthMgrGetMediaIdType01Opt {
 	SceSize mediaIdSize; //!< Number of bytes to copy to pMediaId. Maximum size is 0x20 bytes.
 	SceUInt32 unused; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceSblGcAuthMgrGetMediaIdType01_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceSblGcAuthMgrGetMediaIdType01_opt); // size is from FW 3.60
+} SceSblGcAuthMgrGetMediaIdType01Opt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceSblGcAuthMgrGetMediaIdType01Opt); // size is from FW 3.60
 
 typedef struct ScePcactActivationKeyData {
 	short magic; //!< Must be 0x0211.
@@ -54,47 +54,7 @@ typedef struct SceSblGcAuthMgrPkgVryInfo {
 } SceSblGcAuthMgrPkgVryInfo;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceSblGcAuthMgrPkgVryInfo); // size is from FW 3.60
 
-/**
- * Get the 0x20-byte type 01 media ID produced by the game-card authentication state.
- *
- * @param[out] pMediaId - Output media ID.
- *
- * @return 0 on success, < 0 on error.
- */
-int sceSblGcAuthMgrGetMediaIdType01(SceMediaIdType01 *pMediaId);
-
-/**
- * Install PC activation data.
- *
- * @param[in] act_data - Pointer to a 0x1090-byte activation object.
- * @param[in] act_data_size - Must be 0x1090.
- *
- * @return 0 on success, < 0 on error.
- */
-int sceSblGcAuthMgrPcactActivation(const ScePcactActivationData *act_data, SceSize act_data_size);
-
-/**
- * Create a PC activation challenge.
- *
- * @param[in] mode - One of the values 0, 1, or 2.
- * @param[in] epassword - Pointer to a 0x20-byte input.
- * @param[out] challenge - Pointer to a 0x80-byte output.
- *
- * @return 0 on success, < 0 on error.
- */
-int sceSblGcAuthMgrPcactGetChallenge(SceUInt32 mode, const char *epassword, char *challenge);
-
-/**
- * Verify a package ECDSA-160 signature.
- *
- * @param[in] pHash - Pointer to a 0x14-byte SHA-1 digest.
- * @param[in] pSig - Pointer to a 0x28-byte ECDSA signature.
- *
- * @return 0 if the signature is valid, < 0 on error.
- */
-int sceSblGcAuthMgrPkgVry(const char *pHash, const char *pSig);
-
-int _sceSblGcAuthMgrGetMediaIdType01(SceMediaIdType01 *pMediaId, const _sceSblGcAuthMgrGetMediaIdType01_opt *pOpt);
+int _sceSblGcAuthMgrGetMediaIdType01(SceMediaIdType01 *pMediaId, const SceSblGcAuthMgrGetMediaIdType01Opt *pOpt);
 int _sceSblGcAuthMgrPcactActivation(const ScePcactActivationData *act_data, SceSize act_data_size);
 int _sceSblGcAuthMgrPcactGetChallenge(SceUInt32 mode, const char *epassword, char *challenge, ScePcactGetChallengeOpt *pOpt);
 int _sceSblGcAuthMgrPkgVry(const char *pHash, const char *pSig, SceSblGcAuthMgrPkgVryInfo *pInfo);

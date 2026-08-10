@@ -38,9 +38,11 @@ typedef enum SceAppMgrSystemEventType {
 	SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION   = 0x10000006
 } SceAppMgrSystemEventType;
 
-#define SCE_APP_EVENT_ON_ACTIVATE   (0x10000001)
-#define SCE_APP_EVENT_ON_DEACTIVATE (0x10000002)
-#define SCE_APP_EVENT_REQUEST_QUIT  (0x20000001)
+typedef enum SceAppMgrEventType {
+	SCE_APP_EVENT_ON_ACTIVATE   = 0x10000001,
+	SCE_APP_EVENT_ON_DEACTIVATE = 0x10000002,
+	SCE_APP_EVENT_REQUEST_QUIT  = 0x20000001
+} SceAppMgrEventType;
 
 typedef enum SceAppMgrInfoBarVisibility {
 	SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE = 0,
@@ -679,7 +681,7 @@ VITASDK_BUILD_ASSERT_EQ(0x2C, SceAppMgrBootParam); // size is from FW 3.60
 #define SCE_APP_MGR_MAX_EVENT_PARM_LENGTH (56)
 
 typedef struct SceAppMgrEvent {
-	int event; //!< Event ID
+	int event; //!< One of ::SceAppMgrEventType.
 	SceUID appId; //!< Application ID. Added when required by the event
 	char param[SCE_APP_MGR_MAX_EVENT_PARM_LENGTH]; //!< Parameters to pass with the event
 } SceAppMgrEvent;
@@ -705,51 +707,50 @@ typedef struct SceAppMgrNetworkDisconnectionWarningDialogStateOptParam {
 } SceAppMgrNetworkDisconnectionWarningDialogStateOptParam;
 VITASDK_BUILD_ASSERT_EQ(0x80, SceAppMgrNetworkDisconnectionWarningDialogStateOptParam); // size is from FW 3.60
 
-typedef struct _sceAppMgrCheckRifGD_opt {
+typedef struct SceAppMgrCheckRifGDOpt {
 	uint32_t reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrCheckRifGD_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrCheckRifGD_opt); // size is from FW 3.60
+} SceAppMgrCheckRifGDOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrCheckRifGDOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrGameDataMount_opt {
-	char *mount_point; //!< Receives a 16-byte mount point, for example "gp0123456789abd".
+typedef struct SceAppMgrGameDataMountOpt {
+	char *mount_point; //!< Receives a 16-byte mount point of the form "gpXXXXXXXXXXXd:".
 	uint32_t reserved[5]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGameDataMount_opt;
-VITASDK_BUILD_ASSERT_EQ(0x18, _sceAppMgrGameDataMount_opt); // size is from FW 3.60
+} SceAppMgrGameDataMountOpt;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceAppMgrGameDataMountOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrGetAppInfo_opt {
+typedef struct SceAppMgrGetAppInfoOpt {
 	SceUInt32 reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetAppInfo_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetAppInfo_opt); // size is from FW 3.60
+} SceAppMgrGetAppInfoOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetAppInfoOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrGetAppParam_opt {
+typedef struct SceAppMgrGetAppParamOpt {
 	SceSize appParamSize; //!< Copied from user memory but actually unused on FW 3.60.
 	SceUInt32 reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetAppParam_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetAppParam_opt); // size is from FW 0.990
+} SceAppMgrGetAppParamOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetAppParamOpt); // size is from FW 0.990
 
-typedef struct _sceAppMgrGetBootParam_opt {
+typedef struct SceAppMgrGetBootParamOpt {
 	SceSize bootParamSize;
 	SceUInt reserved; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetBootParam_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetBootParam_opt); // size is from FW 0.990
+} SceAppMgrGetBootParamOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetBootParamOpt); // size is from FW 0.990
 
-typedef struct _sceAppMgrGetIdByName_opt {
+typedef struct SceAppMgrGetIdByNameOpt {
 	SceSize appNameSize; //!< Copied from user memory but actually unused on FW 3.60.
 	SceUInt32 reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetIdByName_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetIdByName_opt); // size is from FW 0.990
+} SceAppMgrGetIdByNameOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetIdByNameOpt); // size is from FW 0.990
 
-typedef struct _sceAppMgrGetNameById_opt {
+typedef struct SceAppMgrGetNameByIdOpt {
 	SceSize appNameSize; //!< Copied from user memory but actually unused on FW 3.60.
 	SceUInt32 reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetNameById_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetNameById_opt); // size is from FW 0.990
+} SceAppMgrGetNameByIdOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetNameByIdOpt); // size is from FW 0.990
 
-typedef struct _sceAppMgrGetSaveDataInfoForSpecialExport_opt {
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetSaveDataInfoForSpecialExport_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetSaveDataInfoForSpecialExport_opt); // size is from FW 3.60
+typedef struct SceAppMgrGetSaveDataInfoForSpecialExportOpt {
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
+} SceAppMgrGetSaveDataInfoForSpecialExportOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetSaveDataInfoForSpecialExportOpt); // size is from FW 3.60
 
 typedef enum SceAppMgrSaveDataStorageType {
 	SCE_APPMGR_SAVE_DATA_STORAGE_OTHER       = 1,
@@ -758,34 +759,34 @@ typedef enum SceAppMgrSaveDataStorageType {
 	SCE_APPMGR_SAVE_DATA_STORAGE_USER        = 4
 } SceAppMgrSaveDataStorageType;
 
-typedef struct _sceAppMgrGetSaveDataInfo_res {
+typedef struct SceAppMgrGetSaveDataInfoResult {
 	int storageType; //!< One of ::SceAppMgrSaveDataStorageType.
 	int isMounted; //!< Non-zero when the save data is mounted.
 	int hasBrokenData; //!< Set for specific PFS validation failures or when sdslot.dat is absent.
 	int accountId[2]; //!< Low and high words of the param.sfo ACCOUNT_ID value.
 	int saveDataParam44; //!< Value at offset 0x44 of the param.sfo PARAMS entry.
 	int allocatedSizeKB;
-} _sceAppMgrGetSaveDataInfo_res;
-VITASDK_BUILD_ASSERT_EQ(0x1C, _sceAppMgrGetSaveDataInfo_res); // size is from FW 3.60
+} SceAppMgrGetSaveDataInfoResult;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceAppMgrGetSaveDataInfoResult); // size is from FW 3.60
 
-typedef struct _sceAppMgrGetSaveDataInfo_opt {
-	_sceAppMgrGetSaveDataInfo_res *res; //!< Receives a 0x1C-byte result.
+typedef struct SceAppMgrGetSaveDataInfoOpt {
+	SceAppMgrGetSaveDataInfoResult *res; //!< Receives a 0x1C-byte result.
 	int reserved[3]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetSaveDataInfo_opt;
-VITASDK_BUILD_ASSERT_EQ(0x10, _sceAppMgrGetSaveDataInfo_opt); // size is from FW 3.60
+} SceAppMgrGetSaveDataInfoOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppMgrGetSaveDataInfoOpt); // size is from FW 3.60
 
 //! FW 0.990-only, this option structure is not accepted on FW 3.60.
-typedef struct _sceAppMgrGetStatusById_opt {
+typedef struct SceAppMgrGetStatusByIdOpt {
 	SceSize appStatusSize;
 	SceUInt32 reserved1;
-} _sceAppMgrGetStatusById_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetStatusById_opt); // size is from FW 0.990
+} SceAppMgrGetStatusByIdOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetStatusByIdOpt); // size is from FW 0.990
 
-typedef struct _sceAppMgrGetUserDirPath_opt {
+typedef struct SceAppMgrGetUserDirPathOpt {
 	SceSize path_maxlen; //!< FW 0.990: must be <= 1024. Ignored on FW 3.60.
 	SceUInt32 reserved1; //!< Ignored on FW 3.60.
-} _sceAppMgrGetUserDirPath_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrGetUserDirPath_opt); // size is from FW 0.990
+} SceAppMgrGetUserDirPathOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrGetUserDirPathOpt); // size is from FW 0.990
 
 typedef struct SceAppMgrGenericMountContext {
 	SceTitleId titleId;
@@ -795,8 +796,7 @@ typedef struct SceAppMgrGenericMountContext {
 VITASDK_BUILD_ASSERT_EQ(0x40, SceAppMgrGenericMountContext); // size is from FW 3.60
 
 typedef struct sceAppMgrAppDataMountByIdOpt {
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved2; //!< Copied from user memory but actually unused on FW 3.60.
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrAppDataMountByIdOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrAppDataMountByIdOpt); // size is from FW 3.60
 
@@ -806,23 +806,20 @@ typedef struct sceAppMgrAppParamGetString_opt {
 } sceAppMgrAppParamGetString_opt;
 VITASDK_BUILD_ASSERT_EQ(0x10, sceAppMgrAppParamGetString_opt); // size is from FW 3.60
 
-typedef struct _sceAppMgrGetStatusByName_opt {
+typedef struct SceAppMgrGetStatusByNameOpt {
 	SceSize appNameSize; //!< FW 0.990 application-name size; copied but ignored on FW 3.60.
 	SceSize appStatusSize; //!< FW 0.990 application-status size; copied but ignored on FW 3.60.
-	SceUInt32 reserved1; //!< FW 0.990 reserved word; not copied on FW 3.60.
-	SceUInt32 reserved2; //!< FW 0.990 reserved word; not copied on FW 3.60.
-} _sceAppMgrGetStatusByName_opt;
-VITASDK_BUILD_ASSERT_EQ(0x10, _sceAppMgrGetStatusByName_opt); // size is from FW 0.990
+	SceUInt32 reserved[2]; //!< FW 0.990 reserved words; not copied on FW 3.60.
+} SceAppMgrGetStatusByNameOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppMgrGetStatusByNameOpt); // size is from FW 0.990
 
 typedef struct sceAppMgrLoadSaveDataSystemFileOpt {
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrLoadSaveDataSystemFileOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrLoadSaveDataSystemFileOpt); // size is from FW 3.60
 
 typedef struct sceAppMgrLoopBackMountOpt {
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrLoopBackMountOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrLoopBackMountOpt); // size is from FW 3.60
 
@@ -833,60 +830,53 @@ typedef struct sceAppMgrPhotoMountOpt {
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrPhotoMountOpt); // size is from FW 3.60
 
 typedef struct sceAppMgrThemeDataMountOpt {
-	char *mount_point; //!< Receives a 16-byte mount point, for example "tm0123456789abd".
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved2; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved3; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved4; //!< Copied from user memory but actually unused on FW 3.60.
+	char *mount_point; //!< Receives a 16-byte mount point of the form "tmXXXXXXXXXXXX:".
+	int reserved[5]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrThemeDataMountOpt;
 VITASDK_BUILD_ASSERT_EQ(0x18, sceAppMgrThemeDataMountOpt); // size is from FW 3.60
 
 typedef struct sceAppMgrTrophyMountByIdOpt {
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrTrophyMountByIdOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrTrophyMountByIdOpt); // size is from FW 3.60
 
 typedef struct sceAppMgrUpdateSaveDataParamOpt {
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrUpdateSaveDataParamOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrUpdateSaveDataParamOpt); // size is from FW 3.60
 
 typedef struct sceAppMgrWorkDirMountByIdOpt {
-	int reserved0; //!< Copied from user memory but actually unused on FW 3.60.
-	int reserved1; //!< Copied from user memory but actually unused on FW 3.60.
+	int reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
 } sceAppMgrWorkDirMountByIdOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceAppMgrWorkDirMountByIdOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrConvertVs0UserDrivePath_opt {
+typedef struct SceAppMgrConvertVs0UserDrivePathOpt {
 	SceUInt32 reserved[4]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrConvertVs0UserDrivePath_opt;
-VITASDK_BUILD_ASSERT_EQ(0x10, _sceAppMgrConvertVs0UserDrivePath_opt); // size is from FW 3.60
+} SceAppMgrConvertVs0UserDrivePathOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppMgrConvertVs0UserDrivePathOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrDeclareShellProcess2_opt {
+typedef struct SceAppMgrDeclareShellProcess2Opt {
 	SceUInt32 reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrDeclareShellProcess2_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrDeclareShellProcess2_opt); // size is from FW 3.60
+} SceAppMgrDeclareShellProcess2Opt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrDeclareShellProcess2Opt); // size is from FW 3.60
 
-typedef struct _sceAppMgrGetRawPath_opt {
+typedef struct SceAppMgrGetRawPathOpt {
 	SceUInt32 reserved[4]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrGetRawPath_opt;
-VITASDK_BUILD_ASSERT_EQ(0x10, _sceAppMgrGetRawPath_opt); // size is from FW 3.60
+} SceAppMgrGetRawPathOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceAppMgrGetRawPathOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrLaunchAppByUri2_opt {
+typedef struct SceAppMgrLaunchAppByUri2Opt {
 	SceUInt32 reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrLaunchAppByUri2_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrLaunchAppByUri2_opt); // size is from FW 3.60
+} SceAppMgrLaunchAppByUri2Opt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrLaunchAppByUri2Opt); // size is from FW 3.60
 
-typedef SceAppMgrLaunchAppByUri2Param _sceAppMgrLaunchVideoStreamingApp_opt;
-VITASDK_BUILD_ASSERT_EQ(0x40, _sceAppMgrLaunchVideoStreamingApp_opt); // size is from FW 3.60
+typedef SceAppMgrLaunchAppByUri2Param SceAppMgrLaunchVideoStreamingAppOpt;
+VITASDK_BUILD_ASSERT_EQ(0x40, SceAppMgrLaunchVideoStreamingAppOpt); // size is from FW 3.60
 
-typedef struct _sceAppMgrLoadExec_opt {
+typedef struct SceAppMgrLoadExecOpt {
 	SceUInt32 reserved[2]; //!< Copied from user memory but actually unused on FW 3.60.
-} _sceAppMgrLoadExec_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceAppMgrLoadExec_opt); // size is from FW 3.60
+} SceAppMgrLoadExecOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceAppMgrLoadExecOpt); // size is from FW 3.60
 
 int __sceAppMgrGetAppState(SceAppMgrAppState *appState, SceUInt32 sizeofSceAppMgrAppState, SceUInt32 buildVersion);
 int _sceAppMgrAddContAddMount(SceAppMgrGenericMountContext *data, int force_mount_ux);
@@ -895,13 +885,11 @@ int _sceAppMgrAppDataMount(int mountId, char *mountPoint);
 
 /**
  * @param[in] titleId A NUL-terminated identifier of at most 63 characters;
- *                    its required syntax depends on \a mountId. Still declared
- *                    as ::SceAppMgrGenericMountContext * for backwards
- *                    compatibility.
+ *                    its required syntax depends on \a mountId.
  */
-int _sceAppMgrAppDataMountById(int mountId, SceAppMgrGenericMountContext *titleId, char *mountPoint, sceAppMgrAppDataMountByIdOpt *opt);
+int _sceAppMgrAppDataMountById(int mountId, const char *titleId, char *mountPoint, sceAppMgrAppDataMountByIdOpt *opt);
 int _sceAppMgrAppParamGetString(int pid, int param, char *string, sceAppMgrAppParamGetString_opt *opt);
-int _sceAppMgrCheckRifGD(const char *path, void *dest, _sceAppMgrCheckRifGD_opt *opt);
+int _sceAppMgrCheckRifGD(const char *path, void *dest, SceAppMgrCheckRifGDOpt *opt);
 int _sceAppMgrContentInstallPeriodStart(void);
 int _sceAppMgrContentInstallPeriodStop(void);
 
@@ -911,71 +899,71 @@ int _sceAppMgrContentInstallPeriodStop(void);
  * @param[in] converted_path_size Output-buffer capacity. FW 3.60 requires a
  *                                value greater than 0x3F and caps it at 0x124.
  */
-int _sceAppMgrConvertVs0UserDrivePath(const char *path, char *converted_path, SceSize converted_path_size, _sceAppMgrConvertVs0UserDrivePath_opt *opt);
+int _sceAppMgrConvertVs0UserDrivePath(const char *path, char *converted_path, SceSize converted_path_size, SceAppMgrConvertVs0UserDrivePathOpt *opt);
 
 /**
- * @param[in] opt A pointer to a ::_sceAppMgrDeclareShellProcess2_opt
+ * @param[in] opt A pointer to a ::SceAppMgrDeclareShellProcess2Opt
  *                structure. Still declared as void * for backwards
  *                compatibility.
  */
 int _sceAppMgrDeclareShellProcess2(const char *appName, void *opt);
 int _sceAppMgrForceUmount(int id);
-int _sceAppMgrGameDataMount(char *app_path, char *patch_path, char *rif_file_path, _sceAppMgrGameDataMount_opt *opt);
+int _sceAppMgrGameDataMount(char *app_path, char *patch_path, char *rif_file_path, SceAppMgrGameDataMountOpt *opt);
 
 /**
  * @param[in] appName Application name of at most 31 characters; NULL selects
  *                    the calling process.
  */
-int _sceAppMgrGetAppInfo(const char *appName, SceAppMgrAppInfo *appInfo, _sceAppMgrGetAppInfo_opt *opt);
+int _sceAppMgrGetAppInfo(const char *appName, SceAppMgrAppInfo *appInfo, SceAppMgrGetAppInfoOpt *opt);
 int _sceAppMgrGetAppMgrState(SceAppMgrAppMgrState *appMgrState);
-int _sceAppMgrGetAppParam(SceAppMgrAppParam *appParam, _sceAppMgrGetAppParam_opt *opt);
-int _sceAppMgrGetBootParam(SceUInt32 selector, SceAppMgrBootParam *bootParam, _sceAppMgrGetBootParam_opt *opt);
+int _sceAppMgrGetAppParam(SceAppMgrAppParam *appParam, SceAppMgrGetAppParamOpt *opt);
+int _sceAppMgrGetBootParam(SceUInt32 selector, SceAppMgrBootParam *bootParam, SceAppMgrGetBootParamOpt *opt);
 
 /**
  * @param[out] processId A pointer to a value of type ::ScePID.
  * @param[out] bgmState A pointer to a value of type ::SceUInt32.
  */
 int _sceAppMgrGetCurrentBgmState(void **processId, void **bgmState);
-int _sceAppMgrGetIdByName(SceUID *processId, const char *appName, _sceAppMgrGetIdByName_opt *opt);
-int _sceAppMgrGetNameById(SceUID processId, char *appName, _sceAppMgrGetNameById_opt *opt);
+int _sceAppMgrGetIdByName(SceUID *processId, const char *appName, SceAppMgrGetIdByNameOpt *opt);
+int _sceAppMgrGetNameById(SceUID processId, char *appName, SceAppMgrGetNameByIdOpt *opt);
 
 /**
  * @param[out] resolved_path Output buffer for a path of at most 0x124 bytes,
  *                           including the terminating NUL.
  * @param[in] resolved_path_size Output-buffer capacity passed to the FIOS
  *                               overlay resolver, capped at 0x124 on FW 3.60.
- * @param[in] opt A ::_sceAppMgrGetRawPath_opt structure. Still declared as
+ * @param[in] opt A ::SceAppMgrGetRawPathOpt structure. Still declared as
  *                char[16] for backwards compatibility.
  */
 int _sceAppMgrGetRawPath(char *path, char *resolved_path, int resolved_path_size, char opt[16]);
 int _sceAppMgrGetRawPathOfApp0ByAppIdForShell(int appId, char resolved_path[292]);
-int _sceAppMgrGetSaveDataInfo(char *path, SceTitleId *titleid, int force_mount_ux, _sceAppMgrGetSaveDataInfo_opt *opt);
+int _sceAppMgrGetSaveDataInfo(char *path, SceTitleId *titleid, int force_mount_ux, SceAppMgrGetSaveDataInfoOpt *opt);
 
 /**
  * @param[out] accountId A pointer to a ::SceUInt64 ACCOUNT_ID value. Still
  *                       declared as char * for backwards compatibility.
  */
-int _sceAppMgrGetSaveDataInfoForSpecialExport(char *path, char *accountId, _sceAppMgrGetSaveDataInfoForSpecialExport_opt *opt);
+int _sceAppMgrGetSaveDataInfoForSpecialExport(char *path, char *accountId, SceAppMgrGetSaveDataInfoForSpecialExportOpt *opt);
 int _sceAppMgrGetStatusByAppId(int appId, SceAppMgrAppStatus *appStatus);
 int _sceAppMgrGetStatusById(SceUID processId, SceAppMgrAppStatus *appStatus);
-int _sceAppMgrGetStatusByName(const char *appName, SceAppMgrAppStatus *appStatus, _sceAppMgrGetStatusByName_opt *opt);
+int _sceAppMgrGetStatusByName(const char *appName, SceAppMgrAppStatus *appStatus, SceAppMgrGetStatusByNameOpt *opt);
 
 /**
  * @param[out] pSDPR A pointer to a value of type ::SceUInt64.
  */
 int _sceAppMgrGetSystemDataFilePlayReady(SceUInt32 location, void *pSDPR);
-int _sceAppMgrGetUserDirPath(int partition_id, char *userDirPath, SceSize path_maxlen, _sceAppMgrGetUserDirPath_opt *opt);
+int _sceAppMgrGetUserDirPath(int partition_id, char *userDirPath, SceSize path_maxlen, SceAppMgrGetUserDirPathOpt *opt);
 int _sceAppMgrGetVs0UserDataDrive(ScePfsRndDriveId *rnd_drive_id);
 int _sceAppMgrGetVs0UserModuleDrive(ScePfsRndDriveId *rnd_drive_id);
-int _sceAppMgrLaunchAppByUri2(const char *uri, SceAppMgrLaunchAppByUri2Param *pParam, _sceAppMgrLaunchAppByUri2_opt *opt);
+int _sceAppMgrLaunchAppByUri2(const char *uri, SceAppMgrLaunchAppByUri2Param *pParam, SceAppMgrLaunchAppByUri2Opt *opt);
 
 /**
- * @param[in] opt A pointer to a ::_sceAppMgrLaunchVideoStreamingApp_opt
+ * @param[in] opt A pointer to a ::SceAppMgrLaunchVideoStreamingAppOpt
  *                structure. Still declared as void * for backwards
  *                compatibility.
  */
 int _sceAppMgrLaunchVideoStreamingApp(char *buf, size_t buf_size, void *opt);
-int _sceAppMgrLoadExec(const char *appPath, char *const argv[], const SceAppMgrLoadExecOptParam *optParam, _sceAppMgrLoadExec_opt *opt);
+int _sceAppMgrLoadExec(const char *appPath, char *const argv[], const SceAppMgrLoadExecOptParam *optParam, SceAppMgrLoadExecOpt *opt);
 
 /**
  * @param[out] paramSfoBuffer Address of the output buffer, retained as int for

@@ -15,7 +15,7 @@ extern "C" {
 #endif
 
 typedef struct SceErrorStrings {
-	char s[16]; //!< NUL-terminated formatted external error code.
+	char s[16]; //!< NUL-terminated formatted external error code, for example "C2-12828-1".
 } SceErrorStrings;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceErrorStrings); // size is from FW 3.60
 

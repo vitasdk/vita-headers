@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceFios2Kernel}
+ * \usergroup{SceFios2Kernel02}
  * \usage{psp2/fios2kernel02.h,SceFios2Kernel_stub}
  */
 
@@ -23,38 +23,33 @@ typedef struct sceFiosKernelOverlayGetList02_opt {
 	size_t maxIDs; //!< Maximum number of overlay IDs to write.
 	size_t *actualIDs; //!< Optional pointer receiving the total match count, including entries beyond maxIDs.
 	int buffer_size; //!< Size of the output buffer in bytes; a ::SceSize value.
-	int reserved1; //!< Ignored on FW 3.60.
-	int reserved2; //!< Ignored on FW 3.60.
+	int reserved[2]; //!< Ignored on FW 3.60.
 } sceFiosKernelOverlayGetList02_opt;
 VITASDK_BUILD_ASSERT_EQ(0x18, sceFiosKernelOverlayGetList02_opt); // size is from FW 3.60
 
 typedef struct sceFiosKernelOverlayGetRecommendedScheduler02_opt {
-	int reserved1; //!< Ignored on FW 3.60.
-	int reserved2; //!< Ignored on FW 3.60.
+	int reserved[2]; //!< Ignored on FW 3.60.
 } sceFiosKernelOverlayGetRecommendedScheduler02_opt;
 VITASDK_BUILD_ASSERT_EQ(0x8, sceFiosKernelOverlayGetRecommendedScheduler02_opt); // size is from FW 3.60
 
 typedef struct sceFiosKernelOverlayResolveSync02_opt {
 	char *outPath; //!< Resolved path output buffer.
 	size_t maxPath; //!< Maximum path length used by the resolver.
-	int reserved1; //!< Ignored on FW 3.60.
+	int reserved0; //!< Ignored on FW 3.60.
 	int outPathBufferSize; //!< Number of bytes copied to the output buffer; a ::SceSize value.
-	int reserved3; //!< Ignored on FW 3.60.
-	int reserved4; //!< Ignored on FW 3.60.
+	int reserved1[2]; //!< Ignored on FW 3.60.
 } sceFiosKernelOverlayResolveSync02_opt;
 VITASDK_BUILD_ASSERT_EQ(0x18, sceFiosKernelOverlayResolveSync02_opt); // size is from FW 3.60
 
 typedef struct sceFiosKernelOverlayResolveWithRangeSync02_opt {
 	char *outPath; //!< Resolved path output buffer.
 	size_t maxPath; //!< Maximum path length used by the resolver.
-	char loOrderFilter; //!< Minimum value of an overlay's order field to include; treated as a ::SceUInt8 value.
-	char hiOrderFilter; //!< Maximum value of an overlay's order field to include; treated as a ::SceUInt8 value.
-	char reserved1; //!< Ignored on FW 3.60.
-	char reserved2; //!< Ignored on FW 3.60.
-	int reserved3; //!< Ignored on FW 3.60.
+	char minOrder; //!< Minimum overlay order to include; treated as a ::SceUInt8 value.
+	char maxOrder; //!< Maximum overlay order to include; treated as a ::SceUInt8 value.
+	char reserved0[2]; //!< Ignored on FW 3.60.
+	int reserved1; //!< Ignored on FW 3.60.
 	int outPathBufferSize; //!< Number of bytes copied to the output buffer; a ::SceSize value.
-	int reserved5; //!< Ignored on FW 3.60.
-	int reserved6; //!< Ignored on FW 3.60.
+	int reserved2[2]; //!< Ignored on FW 3.60.
 } sceFiosKernelOverlayResolveWithRangeSync02_opt;
 VITASDK_BUILD_ASSERT_EQ(0x1C, sceFiosKernelOverlayResolveWithRangeSync02_opt); // size is from FW 3.60
 
@@ -64,13 +59,13 @@ int sceFiosKernelOverlayGetInfoForProcess02(SceUID pid, SceFiosOverlayID id, Sce
  * Gets the overlay IDs in an inclusive order range.
  *
  * @param[in]  pid           - Process whose overlays are enumerated.
- * @param[in]  loOrderFilter - Minimum value of an overlay's order field to include; treated as a ::SceUInt8 value.
- * @param[in]  hiOrderFilter - Maximum value of an overlay's order field to include; treated as a ::SceUInt8 value.
+ * @param[in]  minOrder      - Minimum overlay order to include; treated as a ::SceUInt8 value.
+ * @param[in]  maxOrder      - Maximum overlay order to include; treated as a ::SceUInt8 value.
  * @param[in]  opt           - Enumeration options and output pointers.
  *
  * @return Error code or zero on success.
  */
-int sceFiosKernelOverlayGetList02(SceUID pid, char loOrderFilter, char hiOrderFilter, sceFiosKernelOverlayGetList02_opt *opt);
+int sceFiosKernelOverlayGetList02(SceUID pid, char minOrder, char maxOrder, sceFiosKernelOverlayGetList02_opt *opt);
 
 /**
  * Gets the recommended scheduler index for a partially resolved path.
@@ -87,7 +82,8 @@ int sceFiosKernelOverlayRemoveForProcess02(SceUID pid, SceFiosOverlayID id);
 int sceFiosKernelOverlayResolveSync02(SceUID pid, int resolveForWrite, const char *inPath, sceFiosKernelOverlayResolveSync02_opt *opt);
 
 /**
- * Resolves a path through overlays within an inclusive order range.
+ * Resolves a path through overlays whose order is between \c minOrder and
+ * \c maxOrder, inclusive.
  *
  * The order-filter fields in @p opt are treated as ::SceUInt8 values.
  *

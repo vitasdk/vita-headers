@@ -262,6 +262,10 @@ int ksceDisplayDisableHead(SceDisplayHead head);
 int ksceDisplayEnableHead(SceDisplayHead head);
 int ksceDisplayGetActualViewportConf(SceDisplayHead head, SceDisplayFrameBufType fb_idx, SceDisplayViewportConf *pViewportConf);
 int ksceDisplayGetDeviceType(SceDisplayHead head, SceUInt32 *pDeviceType);
+
+/**
+ * @param[in] iUpdateTimingMode One of ::SceDisplayUpdateTiming.
+ */
 int ksceDisplayGetFrameBufInternal(SceDisplayHead head, SceDisplayFrameBufType fb_idx, SceDisplayFrameBuf *pFrameBuf, SceInt32 iUpdateTimingMode);
 int ksceDisplayGetOutputMode(SceDisplayHead head, SceDisplayScreenMode *pScreenMode, SceDisplayPixelFormat *pPixelformat);
 SceInt32 ksceDisplayGetRefreshRateInternal(SceDisplayHead head, float *pFps, SceDisplayScanMode *pScanMode);
@@ -325,4 +329,3 @@ SceInt32 ksceDisplayWaitSetFrameBufMultiInternal(SceDisplayHead head, int fb_idx
 #endif
 
 #endif /* _PSP2KERN_DISPLAY_H_ */
-

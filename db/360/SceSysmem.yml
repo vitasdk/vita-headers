@@ -165,9 +165,9 @@ modules:
         kernel: true
         nid: 0x88758561
         functions:
-          _ksceEventLogPut: 0x95B38C6C
           ksceEventLogGetInfo: 0xCC5365D3
           ksceEventLogPut: 0x912CF2BA
+          ksceEventLogPutForCurrentThread: 0x95B38C6C
           ksceKernelAssert: 0x35A35322
           ksceKernelAssertLevel: 0xFD753E7A
           ksceKernelGetAssertLevel: 0x374B7868

@@ -25,12 +25,12 @@ int ksceAppMgrKillProcess(SceUID pid);
 typedef struct
 {
     SceSize size;
-    unsigned int unk_4; //!< set to 0x80000000 to break on launch
-    unsigned int unk_8;
+    unsigned int attr; //!< Set to 0x80000000 to break on launch.
+    unsigned int initPriority;
     unsigned int unk_C;
     unsigned int unk_10;
     unsigned int unk_14;
-    unsigned int unk_18;
+    unsigned int budgetId;
     unsigned int unk_1C;
     unsigned int unk_20;
     unsigned int unk_24;

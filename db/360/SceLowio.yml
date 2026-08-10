@@ -34,6 +34,18 @@ modules:
           ksceGpioQueryIntr: 0x010DC295
           ksceGpioSetIntrMode: 0xBBEA1DDC
           ksceGpioSetPortMode: 0x372022A4
+      SceGrabForDriver:
+        kernel: true
+        nid: 0x81C54BED
+        functions:
+          ksceGrabCompatLcdDmacInit: 0x379130B2
+          ksceGrabCompatStartEx: 0x072B8D93
+          ksceGrabCompatStop: 0xF13C63DD
+          ksceGrabSetBaseClockFields: 0x1F292554
+          ksceGrabSetClientRequestMask: 0xB22EE8BC
+          ksceGrabSetMemoryBankAddress: 0xE9C25A28
+          ksceGrabWaitForSonyRegbusFlags: 0x5F36ABC4
+          ksceGrabWriteIndexedRegister: 0x188BBCC8
       SceI2cForDriver:
         kernel: true
         nid: 0xE14BEF6E

@@ -66,9 +66,7 @@ VITASDK_BUILD_ASSERT_EQ(4, SceKernelPreloadInhibit);
 
 typedef struct SceKernelStartModuleOpt {
 	SceSize size; //!< Size of this structure.
-	SceUInt32 reserved1; //!< Reserved on FW 3.60.
-	SceUInt32 reserved2; //!< Reserved on FW 3.60.
-	SceUInt32 reserved3; //!< Reserved on FW 3.60.
+	SceUInt32 reserved[3]; //!< Reserved on FW 3.60.
 } SceKernelStartModuleOpt;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelStartModuleOpt); // size is from FW 3.60
 

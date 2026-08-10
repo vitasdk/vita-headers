@@ -30,25 +30,23 @@ typedef struct SceKernelGetThreadInfoOpt {
 } SceKernelGetThreadInfoOpt;
 VITASDK_BUILD_ASSERT_EQ(8, SceKernelGetThreadInfoOpt); // size is from FW 3.60
 
-typedef struct _sceKernelGetMutexInfo_opt {
+typedef struct SceKernelGetMutexInfoOpt {
 	SceSize infoSize; //!< Number of bytes to copy to and from pInfo.
 	SceUInt32 unused; //!< Ignored.
-} _sceKernelGetMutexInfo_opt;
-VITASDK_BUILD_ASSERT_EQ(8, _sceKernelGetMutexInfo_opt); // size is from FW 3.60
+} SceKernelGetMutexInfoOpt;
+VITASDK_BUILD_ASSERT_EQ(8, SceKernelGetMutexInfoOpt); // size is from FW 3.60
 
 typedef struct sceKernelCreateLwMutex_opt {
 	int initCount; //!< Initial lock count.
 	const SceKernelLwMutexOptParam *pOptParam; //!< Optional lightweight mutex parameters.
-	uint32_t unused0; //!< Ignored.
-	uint32_t unused1; //!< Ignored.
+	uint32_t unused[2]; //!< Ignored.
 } sceKernelCreateLwMutex_opt;
 VITASDK_BUILD_ASSERT_EQ(0x10, sceKernelCreateLwMutex_opt); // size is from FW 3.60
 
 typedef struct sceKernelRegisterThreadEventHandlerOpt {
 	SceKernelThreadEventHandler *handler; //!< Contains a callback value of type ::SceKernelThreadEventHandler.
 	void *common; //!< Value passed to the handler.
-	int unused0; //!< Ignored.
-	int unused1; //!< Ignored.
+	int unused[2]; //!< Ignored.
 } sceKernelRegisterThreadEventHandlerOpt;
 VITASDK_BUILD_ASSERT_EQ(0x10, sceKernelRegisterThreadEventHandlerOpt); // size is from FW 3.60
 
@@ -83,7 +81,7 @@ int __sceKernelCreateLwMutex(SceKernelLwMutexWork *pWork, const char *pName, uns
  *
  * @return 0 on success, or < 0 on error.
  */
-int _sceKernelGetMutexInfo(SceUID mutexid, SceKernelMutexInfo *pInfo, const _sceKernelGetMutexInfo_opt *pOpt);
+int _sceKernelGetMutexInfo(SceUID mutexid, SceKernelMutexInfo *pInfo, const SceKernelGetMutexInfoOpt *pOpt);
 
 /**
  * Retrieves size-prefixed thread information through the raw user export.

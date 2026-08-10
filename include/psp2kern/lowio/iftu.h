@@ -39,6 +39,12 @@ typedef enum SceIftuPixelformat {
 	SCE_IFTU_PIXELFORMAT_YUV422		= 0x200000,	/* 3 planes - Y, Cb, Cr */
 } SceIftuPixelformat;
 
+typedef enum SceIftuFilterMode {
+	SCE_IFTU_FILTER_MODE_NEAREST  = 0,
+	SCE_IFTU_FILTER_MODE_BILINEAR = 1
+} SceIftuFilterMode;
+VITASDK_BUILD_ASSERT_EQ(1, SceIftuFilterMode);
+
 typedef struct SceIftuCscParams {
 	unsigned int post_add_0;		//!< 10-bit post-add offset for component 0.
 	unsigned int post_add_1_2;		//!< Packed 10-bit post-add offsets for components 1 and 2.
@@ -51,8 +57,8 @@ typedef struct SceIftuCscParams {
 VITASDK_BUILD_ASSERT_EQ(0x3C, SceIftuCscParams);
 
 typedef struct SceIftuConvParams {
-	unsigned int size;               //!< Structure size. Observed callers set this to 0x28; FW 3.60 does not validate it.
-	unsigned int bilinear;           //!< Scaling filter: 0 selects nearest-neighbor and 1 selects bilinear.
+	unsigned int size;               //!< Structure size; FW 3.60 does not validate it.
+	unsigned int bilinear;           //!< One of ::SceIftuFilterMode.
 	SceIftuCscParams *csc_params1;   //!< Optional read-only parameters for the CSC register block starting at 0x130.
 	SceIftuCscParams *csc_params2;   //!< Optional read-only parameters for the CSC register block starting at 0x104.
 	unsigned int csc_control;        //!< Raw CSC control-register value.

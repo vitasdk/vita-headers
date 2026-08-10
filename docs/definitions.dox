@@ -99,6 +99,9 @@
  *     \defgroup SceNgs Audio sound effect
  *      Library for Audio sound effect
  *
+ *     \defgroup SceNgsInternal Internal audio sound effect
+ *      Internal library for Audio sound effect
+ *
  *     \defgroup SceShutterSound Shutter Sounds Library
  *      Play camera related shutter sounds
  *
@@ -147,6 +150,9 @@
  *
  *     \defgroup SceFios2Kernel File System Overlay Library
  *      Add/Remove file system overlay
+ *
+ *     \defgroup SceFios2Kernel02 File System Overlay Library 02
+ *      Add/Remove file system overlay through the 02 interface
 
  *     \defgroup SceIofilemgr File I/O Manager Library
  *      Mount/Unmount a file system and a part of SceFcntl
@@ -167,8 +173,29 @@
  *     \defgroup SceSblDmac5Mgr DMAC5 Library for user
  *      DMAC5 AES/SHA/stdc...
  *
+ *     \defgroup SceSblAimgr Secure identifier manager
+ *      Read the OpenPSID through the user interface
+ *
+ *     \defgroup SceSblLicMgr License manager
+ *      Manage activation and license data
+ *
+ *     \defgroup SceSblPmMgr Product-mode manager
+ *      Read and change product-mode state
+ *
  *     \defgroup SceSblPostSsMgr Post Ss Library
  *      RSA, utoken
+ *
+ *     \defgroup SceSblQafMgr QAF manager
+ *      Manage QAF tokens and feature flags
+ *
+ *     \defgroup SceSblRng Secure random-number interface
+ *      Generate random data through SceSblSsMgr
+ *
+ *     \defgroup SceSblRtcMgr Secure RTC manager
+ *      Manage secure CP RTC values
+ *
+ *     \defgroup SceSblUtMgr Utoken manager
+ *      Read, validate, and query Utokens
  * \}
  *
  * \defgroup Lowio Low-level I/O and communications
@@ -176,6 +203,9 @@
  * \{
  *     \defgroup SceGpio GPIO Library
  *      Read/write GPIO ports, configure GPIO interrupts...
+ *
+ *     \defgroup SceGrab Grab Library
+ *      Hardware arbitration and compatibility-path control
  *
  *     \defgroup SceI2c I2C Library
  *      I2C communication

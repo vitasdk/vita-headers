@@ -48,6 +48,7 @@
 #include <psp2/mtpif.h>
 #include <psp2/musicexport.h>
 #include <psp2/netcheck_dialog.h>
+#include <psp2/ngs.h>
 #include <psp2/ngs_internal.h>
 #include <psp2/notificationutil.h>
 #include <psp2/npdrm.h>
@@ -70,9 +71,14 @@
 #include <psp2/registrymgr.h>
 #include <psp2/rtc.h>
 #include <psp2/sblacmgr.h>
+#include <psp2/sblaimgr.h>
 #include <psp2/sblgcauthmgr.h>
-#include <psp2/sblpostssmgr.h>
-#include <psp2/sblssmgr.h>
+#include <psp2/sbllicmgr.h>
+#include <psp2/sblpmmgr.h>
+#include <psp2/sblqafmgr.h>
+#include <psp2/sblrng.h>
+#include <psp2/sblrtcmgr.h>
+#include <psp2/sblutmgr.h>
 #include <psp2/screenshot.h>
 #include <psp2/shacccg.h>
 #include <psp2/sharedfb.h>

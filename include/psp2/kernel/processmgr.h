@@ -94,7 +94,7 @@ typedef struct SceLibkernelAddresses {
 	SceSize size; //!< Size of this structure
 	int (*sceKernelExitThread)(int exitStatus);
 	int (*sceKernelExitDeleteThread)(int exitStatus);
-	int (*_sceKernelExitCallback)(void);
+	int (*sceKernelExitCallback)(void);
 	void *coredumpHandler; //!< A pointer to a function with signature `int (SceSize args, void *argp)`.
 	int *pProcessTime; //!< Points to the ::SceKernelSysClock process-time base.
 	int *pPMUSERENR; //!< Points to the cached ::SceUInt32 PMUSERENR value.

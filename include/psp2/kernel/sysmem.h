@@ -172,7 +172,7 @@ int sceKernelGetFreeMemorySize(SceKernelFreeMemorySizeInfo *info);
 int sceKernelIsPSVitaTV(void);
 
 typedef struct SceKernelSubbudgetInfo {
-	int size; //!< Size of this structure. Must be set to 0xC.
+	int size; //!< Must be set to sizeof(SceKernelSubbudgetInfo).
 	SceUInt32 totalSize; //!< Total size of the subbudget in bytes.
 	SceUInt32 freeSize; //!< Free size of the subbudget in bytes.
 } SceKernelSubbudgetInfo;
@@ -184,9 +184,9 @@ VITASDK_BUILD_ASSERT_EQ(0xC, SceKernelSubbudgetInfo); // size is from FW 3.60
 int sceKernelAllocUnmapMemBlock(char *name, SceSize size);
 
 /**
- * Tests a hardware-model capability exposed to user mode.
+ * Tests a hardware-model capability whose purpose is unknown.
  *
- * FW 3.60 accepts capability indices 7 and 10.
+ * FW 3.60 accepts capability indices 7 and 10; their meanings are unknown.
  *
  * @param[in] capabilityIndex Capability bit index.
  *
@@ -214,4 +214,3 @@ int sceKernelGetSubbudgetInfo(SceInt subbudget, SceKernelSubbudgetInfo *pInfo);
 #endif
 
 #endif /* _PSP2_KERNEL_SYSMEM_H_ */
-

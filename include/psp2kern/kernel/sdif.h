@@ -309,7 +309,7 @@ int ksceSdifMemoryCardEnableSlowMode(void);
  *
  * @return 0.
  */
-int ksceSdifDisableSlowCardMode(void);
+int ksceSdifMemoryCardDisableSlowMode(void);
 
 #ifdef __cplusplus
 }

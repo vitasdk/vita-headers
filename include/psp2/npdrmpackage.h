@@ -15,37 +15,37 @@
 extern "C" {
 #endif
 
-typedef struct _sceNpDrmPackageCheck_opt {
+typedef struct SceNpDrmPackageCheckOpt {
 	SceUInt32 reserved[8]; //!< Ignored on FW 3.60.
-} _sceNpDrmPackageCheck_opt;
-VITASDK_BUILD_ASSERT_EQ(0x20, _sceNpDrmPackageCheck_opt); // size is from FW 3.60
+} SceNpDrmPackageCheckOpt;
+VITASDK_BUILD_ASSERT_EQ(0x20, SceNpDrmPackageCheckOpt); // size is from FW 3.60
 
 /** Options for ::_sceNpDrmPackageDecrypt */
-typedef struct _sceNpDrmPackageDecrypt {
+typedef struct SceNpDrmPackageDecryptOpt {
 	SceOff offset; //!< Offset in the encrypted data.
 	unsigned int identifier; //!< Identifier passed to ::_sceNpDrmPackageCheck without the 0x100 flag.
-} _sceNpDrmPackageDecrypt_opt;
-VITASDK_BUILD_ASSERT_EQ(0x10, _sceNpDrmPackageDecrypt_opt); // size is from FW 3.60
+} SceNpDrmPackageDecryptOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceNpDrmPackageDecryptOpt); // size is from FW 3.60
 
-typedef struct _sceNpDrmPackageStarted_opt {
+typedef struct SceNpDrmPackageStartedOpt {
 	SceSize message_size; //!< Size of the message buffer.
 	SceSize message_copy_size; //!< Number of bytes to copy from the message buffer; must not exceed 0x40.
 	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
-} _sceNpDrmPackageStarted_opt;
-VITASDK_BUILD_ASSERT_EQ(0x10, _sceNpDrmPackageStarted_opt); // size is from FW 3.60
+} SceNpDrmPackageStartedOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceNpDrmPackageStartedOpt); // size is from FW 3.60
 
-typedef struct _sceNpDrmPackageFinished_opt {
+typedef struct SceNpDrmPackageFinishedOpt {
 	SceSize message_copy_size; //!< Number of bytes to copy from the message buffer; must not exceed 0x40.
 	SceUInt32 reserved; //!< Ignored on FW 3.60.
-} _sceNpDrmPackageFinished_opt;
-VITASDK_BUILD_ASSERT_EQ(0x8, _sceNpDrmPackageFinished_opt); // size is from FW 3.60
+} SceNpDrmPackageFinishedOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceNpDrmPackageFinishedOpt); // size is from FW 3.60
 
 /**
  * Read the header of the PKG and initialize the context
  *
  * @param buffer - The buffer containing the header of PKG.
  * @param size - The size of buffer. The minimum confirmed value is 0x8000.
- * @param opt - A 32-bit user pointer to a ::_sceNpDrmPackageCheck_opt structure,
+ * @param opt - A 32-bit user pointer to a ::SceNpDrmPackageCheckOpt structure,
  *              or 0. The structure contents are ignored on FW 3.60. Any nonzero
  *              pointer requests package-context teardown.
  * @param identifier - A value whose low byte is in the range [0, 6). The 0x100
@@ -65,7 +65,7 @@ int _sceNpDrmPackageCheck(const void *buffer, SceSize size, int opt, unsigned in
  *
  * @return 0 on success, != 0 on error
  */
-int _sceNpDrmPackageDecrypt(void * __restrict__ buffer, SceSize size, _sceNpDrmPackageDecrypt_opt * __restrict__ opt);
+int _sceNpDrmPackageDecrypt(void * __restrict__ buffer, SceSize size, SceNpDrmPackageDecryptOpt * __restrict__ opt);
 
 /**
  * Update a package hash-transform context
@@ -89,7 +89,7 @@ int _sceNpDrmPackageTransform(int buffer, int size, void *opt, int identifier);
  * @param forwarded_value - Forwarded unchanged to the system callback; 0 in
  *                          observed FW 3.60 callers
  * @param message - A 32-bit user pointer to the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageStarted_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageStartedOpt structure
  */
 int _sceNpDrmPackageInstallStarted(int identifier, int forwarded_value, int message, void *opt);
 
@@ -99,7 +99,7 @@ int _sceNpDrmPackageInstallStarted(int identifier, int forwarded_value, int mess
  * @param result_code - Operation result
  * @param message - A 32-bit user pointer to the status message
  * @param message_size - Size of the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageFinished_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageFinishedOpt structure
  */
 int _sceNpDrmPackageInstallFinished(int result_code, int message, int message_size, void *opt);
 
@@ -110,7 +110,7 @@ int _sceNpDrmPackageInstallFinished(int result_code, int message, int message_si
  * @param forwarded_value - Forwarded unchanged to the system callback; 0 in
  *                          observed FW 3.60 callers
  * @param message - A 32-bit user pointer to the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageStarted_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageStartedOpt structure
  */
 int _sceNpDrmPackageUninstallStarted(int identifier, int forwarded_value, int message, void *opt);
 
@@ -120,7 +120,7 @@ int _sceNpDrmPackageUninstallStarted(int identifier, int forwarded_value, int me
  * @param result_code - Operation result
  * @param message - A 32-bit user pointer to the status message
  * @param message_size - Size of the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageFinished_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageFinishedOpt structure
  */
 int _sceNpDrmPackageUninstallFinished(int result_code, int message, int message_size, void *opt);
 
@@ -131,7 +131,7 @@ int _sceNpDrmPackageUninstallFinished(int result_code, int message, int message_
  * @param forwarded_value - Forwarded unchanged to the system callback; 0 in
  *                          observed FW 3.60 callers
  * @param message - A 32-bit user pointer to the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageStarted_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageStartedOpt structure
  */
 int _sceNpDrmSaveDataFormatStarted(int identifier, int forwarded_value, int message, void *opt);
 
@@ -141,7 +141,7 @@ int _sceNpDrmSaveDataFormatStarted(int identifier, int forwarded_value, int mess
  * @param result_code - Operation result
  * @param message - A 32-bit user pointer to the status message
  * @param message_size - Size of the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageFinished_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageFinishedOpt structure
  */
 int _sceNpDrmSaveDataFormatFinished(int result_code, int message, int message_size, void *opt);
 
@@ -152,7 +152,7 @@ int _sceNpDrmSaveDataFormatFinished(int result_code, int message, int message_si
  * @param forwarded_value - Forwarded unchanged to the system callback; 0 in
  *                          observed FW 3.60 callers
  * @param message - A 32-bit user pointer to the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageStarted_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageStartedOpt structure
  */
 int _sceNpDrmSaveDataInstallStarted(int identifier, int forwarded_value, int message, void *opt);
 
@@ -162,7 +162,7 @@ int _sceNpDrmSaveDataInstallStarted(int identifier, int forwarded_value, int mes
  * @param result_code - Operation result
  * @param message - A 32-bit user pointer to the status message
  * @param message_size - Size of the status message
- * @param opt - A pointer to a ::_sceNpDrmPackageFinished_opt structure
+ * @param opt - A pointer to a ::SceNpDrmPackageFinishedOpt structure
  */
 int _sceNpDrmSaveDataInstallFinished(int result_code, int message, int message_size, void *opt);
 

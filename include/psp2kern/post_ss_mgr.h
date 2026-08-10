@@ -395,8 +395,8 @@ int ksceSblUtMgrHasComTestFlag(void);
 int ksceSblUtMgrHasNpTestFlag(void);
 int ksceSblUtMgrHasStoreFlag(void);
 
-/** Get Utoken flag bit 1. Its purpose is unknown. */
-int ksceSblUtMgrHasFlag1(void);
+/** Check whether the PSM test Utoken flag is set. */
+int ksceSblUtMgrHasPSMTestFlag(void);
 
 /** Get Utoken flag bit 6, which allows QAF PUP processing when set. */
 int ksceSblUtMgrHasFlag6(void);
@@ -404,8 +404,8 @@ int ksceSblUtMgrHasFlag6(void);
 /** Get Utoken flag bit 7. Its purpose is unknown. */
 int ksceSblUtMgrHasFlag7(void);
 
-/** Get Utoken flag bit 8. Its purpose is unknown. */
-int ksceSblUtMgrHasFlag8(void);
+/** Check whether the System Data File PlayReady Utoken flag is set. */
+int ksceSblUtMgrHasSystemDataFilePlayReadyFlag(void);
 
 /** Get Utoken flag bit 9. Its purpose is unknown. */
 int ksceSblUtMgrHasFlag9(void);

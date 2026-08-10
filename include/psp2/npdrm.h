@@ -111,19 +111,19 @@ typedef struct ScePsmDrmGetRifInfoOpt {
 } ScePsmDrmGetRifInfoOpt;
 VITASDK_BUILD_ASSERT_EQ(0x10, ScePsmDrmGetRifInfoOpt); // size is from FW 3.60
 
-typedef struct _sceNpDrmGetRifInfo_opt {
-	void *content_id; //!< A pointer to a 0x30-byte content ID buffer.
-	void *account_id; //!< A pointer to a ::SceUInt64.
-	void *version_number; //!< A pointer to a ::SceUInt32.
-	void *license_flags; //!< A pointer to a ::SceUInt32.
-	void *lic_type0; //!< A pointer to a ::SceUInt32.
-	void *lic_type1; //!< A pointer to a ::SceUInt32.
-	void *lic_start_time; //!< A pointer to a ::SceUInt64.
-	void *lic_exp_time; //!< A pointer to a ::SceUInt64.
-	void *rif_data_0x98; //!< A pointer to an 8-byte output buffer.
+typedef struct SceNpDrmGetRifInfoOpt {
+	char *content_id; //!< A 0x30-byte content ID output buffer.
+	SceUInt64 *account_id;
+	SceUInt32 *version_number;
+	SceUInt32 *license_flags;
+	SceUInt32 *lic_type0;
+	SceUInt32 *lic_type1;
+	SceUInt64 *lic_start_time;
+	SceUInt64 *lic_exp_time;
+	SceUInt8 *rif_data_0x98; //!< An 8-byte output buffer.
 	void *reserved; //!< Ignored on FW 3.60.
-} _sceNpDrmGetRifInfo_opt;
-VITASDK_BUILD_ASSERT_EQ(0x28, _sceNpDrmGetRifInfo_opt); // size is from FW 3.60
+} SceNpDrmGetRifInfoOpt;
+VITASDK_BUILD_ASSERT_EQ(0x28, SceNpDrmGetRifInfoOpt); // size is from FW 3.60
 
 /**
  * Check whether activation data must be reset
@@ -147,7 +147,7 @@ int _sceNpDrmCheckDrmReset(const void *input, SceSize input_size, SceNpDrmCheckD
  *
  * @return 0 on success, < 0 on error.
  */
-int _sceNpDrmGetRifInfo(void *license, SceSize license_size, SceUInt32 check_sign, _sceNpDrmGetRifInfo_opt *pOpt);
+int _sceNpDrmGetRifInfo(void *license, SceSize license_size, SceUInt32 check_sign, SceNpDrmGetRifInfoOpt *pOpt);
 
 int _sceNpDrmPresetRifProvisionalFlag(void *license);
 int _sceNpDrmRemoveActData(SceUInt64 *pAccountId);

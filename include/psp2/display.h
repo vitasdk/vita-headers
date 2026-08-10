@@ -140,20 +140,20 @@ int sceDisplayRegisterVblankStartCallback(SceUID uid);
 int sceDisplayUnregisterVblankStartCallback(SceUID uid);
 
 typedef struct SceDisplayGetFrameBufInternalOpt {
-	SceInt32 iUpdateTimingMode;
-	SceSize frameBufSize;
+	SceInt32 iUpdateTimingMode; //!< One of ::SceDisplayUpdateTiming.
+	SceSize frameBufSize; //!< Set to sizeof(SceDisplayFrameBuf) for the declared output type; maximum 0x1C with a larger compatible buffer.
 	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
 } SceDisplayGetFrameBufInternalOpt;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceDisplayGetFrameBufInternalOpt); // size is from FW 3.60
 
 typedef struct SceDisplayGetFrameBufOpt {
-	SceInt32 frameBufSize; //!< Value of type ::SceSize, with a maximum of 0x1C.
+	SceInt32 frameBufSize; //!< Set to sizeof(SceDisplayFrameBuf) for the declared output type; a ::SceSize value with a maximum of 0x1C.
 	SceUInt32 reserved; //!< Ignored on FW 3.60.
 } SceDisplayGetFrameBufOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, SceDisplayGetFrameBufOpt); // size is from FW 3.60
 
 typedef struct SceDisplayGetResolutionInfoInternalOpt {
-	SceSize infoSize;
+	SceSize infoSize; //!< Set to sizeof(SceDisplayResolutionInfo).
 	SceUInt32 reserved; //!< Ignored on FW 3.60.
 } SceDisplayGetResolutionInfoInternalOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, SceDisplayGetResolutionInfoInternalOpt); // size is from FW 3.60
@@ -165,29 +165,34 @@ typedef struct SceDisplayFrameBufForCompat {
 	unsigned int pixelformat; //!< One of ::SceDisplayPixelFormat.
 	unsigned int width;
 	unsigned int height;
-	SceUInt32 flags; //!< Bit 20 (0x00100000) enables bilinear filtering.
+	SceUInt32 flags; //!< Bitwise OR of ::SceDisplayFrameBufForCompatFlag values.
 } SceDisplayFrameBufForCompat;
 VITASDK_BUILD_ASSERT_EQ(0x1C, SceDisplayFrameBufForCompat); // size is from FW 3.60
 
+typedef enum SceDisplayFrameBufForCompatFlag {
+	SCE_DISPLAY_FRAMEBUF_FOR_COMPAT_FLAG_BILINEAR = 0x00100000
+} SceDisplayFrameBufForCompatFlag;
+VITASDK_BUILD_ASSERT_EQ(4, SceDisplayFrameBufForCompatFlag);
+
 typedef struct SceDisplaySetFrameBufForCompatOpt {
-	SceSize scaleY; //!< Vertical source-sampling step in unsigned 16.16 fixed-point format.
+	SceSize scaleY; //!< Vertical source-sampling step in unsigned 16.16 fixed-point format; 0x10000 selects 1:1 scaling.
 	SceDisplayFrameBuf *pFrameBuf; //!< Optional; points to a ::SceDisplayFrameBufForCompat structure.
 	SceDisplayCaptureFrameBuf *pCaptureFrameBuf; //!< Optional; NULL skips capture.
-	SceSize frameBufSize; //!< Number of bytes to copy from pFrameBuf; maximum 0x1C.
+	SceSize frameBufSize; //!< Set to sizeof(SceDisplayFrameBufForCompat).
 	SceSize captureFrameBufSize; //!< Number of bytes to copy from pCaptureFrameBuf; maximum 0x18.
 	int reserved; //!< Unused on FW 3.60.
 } SceDisplaySetFrameBufForCompatOpt;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceDisplaySetFrameBufForCompatOpt); // size is from FW 3.60
 
 typedef struct SceDisplaySetFrameBufOpt {
-	SceSize frameBufSize;
+	SceSize frameBufSize; //!< Set to sizeof(SceDisplayFrameBuf) for the declared input type; maximum 0x1C with a larger compatible buffer.
 	SceUInt32 reserved; //!< Ignored on FW 3.60.
 } SceDisplaySetFrameBufOpt;
 VITASDK_BUILD_ASSERT_EQ(0x8, SceDisplaySetFrameBufOpt); // size is from FW 3.60
 
 typedef struct SceDisplaySetFrameBufInternalOpt {
-	SceInt32 iUpdateTimingMode;
-	SceSize frameBufSize;
+	SceInt32 iUpdateTimingMode; //!< One of ::SceDisplayUpdateTiming.
+	SceSize frameBufSize; //!< Set to sizeof(SceDisplayFrameBuf) for the declared input type; maximum 0x1C with a larger compatible buffer.
 	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
 } SceDisplaySetFrameBufInternalOpt;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceDisplaySetFrameBufInternalOpt); // size is from FW 3.60
@@ -205,6 +210,10 @@ int _sceDisplayGetFrameBuf(SceDisplayFrameBuf *pFrameBuf, SceDisplayFrameBufType
 int _sceDisplayGetFrameBufInternal(SceDisplayHead head, SceDisplayFrameBufType fb_idx, SceDisplayFrameBuf *pFrameBuf, SceDisplayGetFrameBufInternalOpt *pOpt);
 int _sceDisplayGetMaximumFrameBufResolution(SceUInt32 *width, SceUInt32 *height);
 int _sceDisplayGetResolutionInfoInternal(SceDisplayHead head, SceDisplayResolutionInfo *pInfo, SceDisplayGetResolutionInfoInternalOpt *pOpt);
+
+/**
+ * @param[in] iUpdateTimingMode One of ::SceDisplayUpdateTiming.
+ */
 int _sceDisplaySetFrameBuf(const SceDisplayFrameBuf *pFrameBuf, SceInt32 iUpdateTimingMode, SceDisplaySetFrameBufOpt *pOpt);
 
 /**

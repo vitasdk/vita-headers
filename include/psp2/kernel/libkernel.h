@@ -8,6 +8,7 @@
 
 #include <psp2/types.h>
 #include <psp2/kernel/ssp.h>
+#include <psp2/sblgcauthmgr.h>
 #include <psp2common/kernel/backtrace.h>
 #include <psp2common/kernel/threadmgr.h>
 
@@ -137,6 +138,46 @@ int sceKernelSetTimerEvent(SceUID timerId, int type, SceUInt64 *interval, SceBoo
  * @return 0 on success, or < 0 on error.
  */
 int sceKernelSetTimerTime(SceUID timerId, SceUInt64 *timerTime);
+
+/**
+ * Get the 0x20-byte type 01 media ID produced by the game-card authentication state.
+ *
+ * @param[out] pMediaId - Output media ID.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceSblGcAuthMgrGetMediaIdType01(SceMediaIdType01 *pMediaId);
+
+/**
+ * Install PC activation data.
+ *
+ * @param[in] act_data - Pointer to a 0x1090-byte activation object.
+ * @param[in] act_data_size - Must be 0x1090.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceSblGcAuthMgrPcactActivation(const ScePcactActivationData *act_data, SceSize act_data_size);
+
+/**
+ * Create a PC activation challenge.
+ *
+ * @param[in] mode - One of the values 0, 1, or 2.
+ * @param[in] epassword - Pointer to a 0x20-byte input.
+ * @param[out] challenge - Pointer to a 0x80-byte output.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceSblGcAuthMgrPcactGetChallenge(SceUInt32 mode, const char *epassword, char *challenge);
+
+/**
+ * Verify a package ECDSA-160 signature.
+ *
+ * @param[in] pHash - Pointer to a 0x14-byte SHA-1 digest.
+ * @param[in] pSig - Pointer to a 0x28-byte ECDSA signature.
+ *
+ * @return 0 if the signature is valid, < 0 on error.
+ */
+int sceSblGcAuthMgrPkgVry(const char *pHash, const char *pSig);
 
 /**
  * Waits until any requested event bit is present.

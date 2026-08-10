@@ -1,25 +1,17 @@
 /**
- * \usergroup{SceSblSsMgr}
- * \usage{psp2/sblssmgr.h,SceSblSsMgr_stub}
+ * \usergroup{SceSblQafMgr}
+ * \usage{psp2/sblqafmgr.h,SceSblSsMgr_stub}
  */
 
-#ifndef _PSP2_SBLSSMGR_H_
-#define _PSP2_SBLSSMGR_H_
+#ifndef _PSP2_SBLQAFMGR_H_
+#define _PSP2_SBLQAFMGR_H_
 
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
-#include <psp2/dmac5.h>
-#include <psp2common/sblssmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef struct SceKernelGetRandomNumberParam {
-	SceUInt32 dstSize; //!< In bytes. Must be <= 0x40.
-	SceUInt32 reserved; //!< Ignored on FW 3.60.
-} SceKernelGetRandomNumberParam;
-VITASDK_BUILD_ASSERT_EQ(8, SceKernelGetRandomNumberParam); // size is from FW 3.60
 
 typedef struct SceQafToken {
 	char magic[4];
@@ -51,14 +43,6 @@ typedef struct SceQafTokenEx {
 } SceQafTokenEx;
 VITASDK_BUILD_ASSERT_EQ(0x180, SceQafTokenEx); // size is from FW 3.60
 
-int _sceKernelGetOpenPsId(SceOpenPsId *pOpenPsId);
-
-/**
- * @param[in] pParam - Parameter structure. The FW 3.60 provider only reads it.
- */
-int _sceKernelGetRandomNumber(void *pDst, SceSize length, SceKernelGetRandomNumberParam *pParam);
-int sceSblDmac5EncDecKeyGen(SceSblDmac5EncDecParam *pParam, SceUInt32 key_id, SceUInt32 command);
-int sceSblDmac5HmacKeyGen(SceSblDmac5HashTransformParam *pParam, SceUInt32 key_id, SceUInt32 command, SceUInt32 flags);
 int sceSblQafManagerDeleteQafTokenForUser(void);
 int sceSblQafManagerGetQafNameForUser(char *buffer, unsigned int max_len);
 int sceSblQafManagerIsAllowKernelDebugForUser(void);
@@ -82,4 +66,4 @@ int sceSblQafMgrSetQafToken2(const SceQafTokenEx *qaf_token);
 }
 #endif
 
-#endif /* _PSP2_SBLSSMGR_H_ */
+#endif /* _PSP2_SBLQAFMGR_H_ */

@@ -324,6 +324,8 @@ int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
 #define ksceDebugGetPutcharHandler ksceKernelGetDebugPutcharHandler
 #define ksceDebugDisableInfoDump ksceKernelEnableCrashDump
 #define ksceKernelSetMinimumAssertionLevel ksceKernelSetAssertLevel
+#define k_sceEventLogPut ksceEventLogPutForCurrentThread
+#define _ksceEventLogPut ksceEventLogPutForCurrentThread
 
 
 /**
@@ -338,7 +340,7 @@ int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
  *
  * @return 0 on success, < 0 on error.
  */
-int _ksceEventLogPut(int eventId, int index, int value, void *pBuf, SceSize bufSize);
+int ksceEventLogPutForCurrentThread(int eventId, int index, int value, void *pBuf, SceSize bufSize);
 
 /**
  * Writes an event-log record with explicit process and thread identifiers.
