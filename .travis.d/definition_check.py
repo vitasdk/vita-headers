@@ -15,13 +15,14 @@ USER_GROUP_RULE = re.compile(r' \* \\(user|kernel)group\{(Sce\w+)\}')
 
 FUNC_RULE_PATTERN = (
     # ret
-    '^\w+\s+' +
+    r'^\s*(?!(?:return|typedef)\b)(?:[A-Za-z_]\w*\s+)*[A-Za-z_]\w*' +
+    r'(?:\s*\*+\s*|\s+)' +
     # func name
-    '(_*k?sce\w+|__\w+)' +
+    r'(_*k?sce\w+|__\w+)' +
     # args; if define with multiline, end with comma, if not end with `);`
-    '\(.*(,|\);)' +
+    r'\(.*(?:,|\);)' +
     # white spaces
-    '\s*$'
+    r'\s*$'
 )
 FUNCTION_RULE = re.compile(FUNC_RULE_PATTERN)
 IGNORE_FILES = [
@@ -48,6 +49,20 @@ def dict_items(dic):
     if sys.version_info.major < 3:
         return dic.iteritems()
     return dic.items()
+
+def function_nid_aliases(domain, fn):
+    aliases = [fn]
+    if domain == 'psp2':
+        if fn.startswith('_sce'):
+            aliases.append(fn[1:])
+        elif fn.startswith('sce'):
+            aliases.append('_' + fn)
+    elif domain == 'psp2kern':
+        if fn.startswith('ksce'):
+            aliases.append(fn[1:])
+        elif fn.startswith('sce'):
+            aliases.append('k' + fn)
+    return aliases
 
 def read_def_groups():
     definitions = dict()
@@ -86,7 +101,10 @@ def read_nids():
                 # if nids.get(k):
                 #     errors.append('%s: NID conflict %s' % (line_no + 1, k))
                 nids[k] = 1
-    return dict(user_nids, **kernel_nids), errors
+    return {
+        'psp2': user_nids,
+        'psp2kern': kernel_nids,
+    }, errors
 
 def check_header_groups(definitions):
     errors = []
@@ -120,11 +138,12 @@ def check_header_groups(definitions):
                           (DEF_FILE, k))
     return errors
 
-def check_function_nids(nids):
+def check_function_nids(nids_by_domain):
     errors = []
     functions = dict()
     for header_path in findfile(INCLUDE_DIR, '*.h'):
         header_file = header_path.split('include/')[1]
+        domain = header_file.split('/', 1)[0]
         if header_file in IGNORE_FILES:
             continue
         with open(header_path, 'r') as h:
@@ -134,14 +153,20 @@ def check_function_nids(nids):
                 if not m:
                     continue
                 fn = m.group(1)
-                if functions.get(fn):
+                function_key = (domain, fn)
+                if functions.get(function_key):
                     errors.append('%s: Already defined %s' %
                                   (header_file, fn))
                     continue
-                if not nids.get(fn):
+                domain_nids = nids_by_domain.get(domain)
+                have_nid = domain_nids is None or any(
+                    domain_nids.get(alias)
+                    for alias in function_nid_aliases(domain, fn)
+                )
+                if not have_nid:
                     errors.append('%s: Could not find NID %s' %
                                   (header_file, fn))
-                functions[fn] = 1
+                functions[function_key] = 1
     return errors
 
 if __name__ == '__main__':

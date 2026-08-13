@@ -8,15 +8,11 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2kern/types.h>
+#include <psp2common/pfsmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef struct ScePfsRndDriveId {
-	char drive_id[0x10];
-} ScePfsRndDriveId;
-VITASDK_BUILD_ASSERT_EQ(0x10, ScePfsRndDriveId);
 
 /**
  * Mount pfs directory
@@ -54,6 +50,10 @@ int kscePfsUnmount(const ScePfsRndDriveId *rnd_drive_id);
 
 int kscePfsApprove(const ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_authority_id);
 int kscePfsDisapprove(const ScePfsRndDriveId *rnd_drive_id, SceUInt64 program_authority_id);
+
+int kscePfsAcidDirApprove(const char *mountpoint, const char *dlc_folder);
+int kscePfsAcidDirMount(const char *mountpoint, const char *dlc_folder, const void *klicensee);
+int kscePfsAcidDirUnmount(const char *mountpoint, const char *dlc_folder);
 
 #ifdef __cplusplus
 }

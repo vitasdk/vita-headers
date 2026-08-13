@@ -27,6 +27,9 @@ extern "C" {
 #define SCE_KERNEL_STOP_CANCEL        SCE_KERNEL_STOP_FAIL
 /** @} */
 
+#define SCE_MODULE_ATTR_NONE        (0x0000)
+#define SCE_KERNEL_MODULE_ATTR_NONE SCE_MODULE_ATTR_NONE
+
 typedef enum SceKernelModuleState {
     SCE_KERNEL_MODULE_STATE_READY   = 0x00000002,
     SCE_KERNEL_MODULE_STATE_STARTED = 0x00000006,
@@ -61,6 +64,11 @@ typedef enum SceKernelPreloadInhibit {
 } SceKernelPreloadInhibit;
 VITASDK_BUILD_ASSERT_EQ(4, SceKernelPreloadInhibit);
 
+typedef struct SceKernelStartModuleOpt {
+	SceSize size; //!< Size of this structure.
+	SceUInt32 reserved[3]; //!< Reserved on FW 3.60.
+} SceKernelStartModuleOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelStartModuleOpt); // size is from FW 3.60
 
 typedef struct SceKernelSegmentInfo {
   SceSize size;   //!< this structure size (0x18)
@@ -82,16 +90,16 @@ typedef struct SceKernelModuleInfo {
   void *start_entry;
   void *stop_entry;
   void *exit_entry;
-  void *exidx_top;
-  void *exidx_btm;
-  void *extab_top;
-  void *extab_btm;
-  void *tlsInit;
-  SceSize tlsInitSize;
-  SceSize tlsAreaSize;
+  void *exidx_top;                    //!< Start of the ARM exception index table.
+  void *exidx_btm;                    //!< End of the ARM exception index table.
+  void *extab_top;                    //!< Start of the ARM exception table.
+  void *extab_btm;                    //!< End of the ARM exception table.
+  void *tlsInit;                      //!< TLS initialization image.
+  SceSize tlsInitSize;                //!< Size of the TLS initialization image.
+  SceSize tlsAreaSize;                //!< Total TLS area size.
   char path[256];
   SceKernelSegmentInfo segments[4];
-  SceUInt state;                       //!< see:SceKernelModuleState
+  SceUInt state;                      //!< One of ::SceKernelModuleState.
 } SceKernelModuleInfo;
 VITASDK_BUILD_ASSERT_EQ(0x1B8, SceKernelModuleInfo);
 

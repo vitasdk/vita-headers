@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceNgs}
+ * \usergroup{SceNgsInternal}
  * \usage{psp2/ngs_internal.h,SceNgs_stub}
  */
 
@@ -41,14 +41,12 @@ typedef SceNgsCallbackFunc SceNgsParamsErrorCallbackFunc;
 typedef struct SceNgsVoicePreset SceNgsVoicePreset;
 typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
 typedef struct SceNgsBufferInfo SceNgsBufferInfo;
-typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
 typedef struct SceNgsCallbackListInfo SceNgsCallbackListInfo;
 typedef struct SulphaNgsModuleQuery SulphaNgsModuleQuery;
 typedef struct SulphaNgsRegistration SulphaNgsRegistration;
 typedef struct SceNgsRackDescription SceNgsRackDescription;
 typedef struct SceNgsPatchSetupInfo SceNgsPatchSetupInfo;
 typedef struct SceNgsParamsDescriptor SceNgsParamsDescriptor;
-typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
 typedef struct SceNgsVoiceDefinition SceNgsVoiceDefinition;
 
 SceInt32 sceNgsModuleCheckParamsInRangeInternal(SceNgsHVoice handle, const SceNgsModuleID module_id, const SceNgsParamsDescriptor* descriptor, const SceUInt32 size);

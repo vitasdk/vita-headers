@@ -4,14 +4,20 @@
 #include <psp2kern/types.h>
 #include <psp2kern/appmgr.h>
 #include <psp2kern/bt.h>
+#include <psp2kern/camera.h>
+#include <psp2kern/clockgen.h>
 #include <psp2kern/ctrl.h>
+#include <psp2kern/deci4p.h>
 #include <psp2kern/display.h>
 #include <psp2kern/fios2.h>
 #include <psp2kern/gpu_es4.h>
 #include <psp2kern/idstorage.h>
 #include <psp2kern/jpegenc.h>
+#include <psp2kern/lcd.h>
+#include <psp2kern/motion_dev.h>
 #include <psp2kern/netps.h>
 #include <psp2kern/npdrm.h>
+#include <psp2kern/oled.h>
 #include <psp2kern/pfsmgr.h>
 #include <psp2kern/post_ss_mgr.h>
 #include <psp2kern/power.h>
@@ -22,6 +28,7 @@
 #include <psp2kern/usbserial.h>
 #include <psp2kern/usbserv.h>
 #include <psp2kern/vfs.h>
+#include <psp2kern/wlanbt.h>
 
 #include <psp2kern/internal/exfatfs.h>
 #include <psp2kern/internal/sdstor.h>
@@ -34,6 +41,7 @@
 #include <psp2kern/kernel/acmgr.h>
 #include <psp2kern/kernel/aimgr.h>
 #include <psp2kern/kernel/authmgr.h>
+#include <psp2kern/kernel/backtrace.h>
 #include <psp2kern/kernel/cpu.h>
 #include <psp2kern/kernel/debug.h>
 #include <psp2kern/kernel/debugled.h>
@@ -51,6 +59,7 @@
 #include <psp2kern/kernel/rtc.h>
 #include <psp2kern/kernel/sdif.h>
 #include <psp2kern/kernel/sm_comm.h>
+#include <psp2kern/kernel/sm_sched.h>
 #include <psp2kern/kernel/ssmgr.h>
 #include <psp2kern/kernel/suspend.h>
 #include <psp2kern/kernel/sysclib.h>
@@ -71,6 +80,7 @@
 
 #include <psp2kern/lowio/dsi.h>
 #include <psp2kern/lowio/gpio.h>
+#include <psp2kern/lowio/grab.h>
 #include <psp2kern/lowio/i2c.h>
 #include <psp2kern/lowio/iftu.h>
 #include <psp2kern/lowio/pervasive.h>

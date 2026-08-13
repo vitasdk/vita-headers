@@ -209,7 +209,7 @@ typedef struct ScePvfFontStyleInfo {
 	ScePvfFloat32 weight;
 	ScePvfU16 familyCode;
 	ScePvfU16 style;
-	ScePvfU16 subStyle; //<! One of ::ScePvfSubstyle
+	ScePvfU16 subStyle; //!< One of ::ScePvfSubstyle
 	ScePvfU16 languageCode;
 	ScePvfU16 regionCode;
 	ScePvfU16 countryCode;

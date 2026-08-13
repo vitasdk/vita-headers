@@ -45,6 +45,12 @@ typedef enum SceDisplaySetBufSync {
 } SceDisplaySetBufSync;
 VITASDK_BUILD_ASSERT_EQ(4, SceDisplaySetBufSync);
 
+typedef enum SceDisplayUpdateTiming {
+	SCE_DISPLAY_UPDATETIMING_NEXTHSYNC = 0,
+	SCE_DISPLAY_UPDATETIMING_NEXTVSYNC = 1
+} SceDisplayUpdateTiming;
+VITASDK_BUILD_ASSERT_EQ(1, SceDisplayUpdateTiming);
+
 /**
  * Structure used with ::ksceDisplaySetFrameBuf to set/update framebuffer.
  * Original screen resolution is 960x544, but the following resolutions
@@ -64,9 +70,63 @@ typedef struct SceDisplayFrameBuf {
 VITASDK_BUILD_ASSERT_EQ(0x18, SceDisplayFrameBuf);
 
 
+typedef enum SceDisplayFrameBufType {
+	SCE_DISPLAY_FRAMEBUF_GAME_APP = 0,
+	SCE_DISPLAY_FRAMEBUF_LIVEAREA = 1
+} SceDisplayFrameBufType;
+VITASDK_BUILD_ASSERT_EQ(1, SceDisplayFrameBufType);
+
+typedef enum SceDisplayHead {
+	SCE_DISPLAY_HEAD_MAIN_LCD_OLED = 0,
+	SCE_DISPLAY_HEAD_HDMI          = 1,
+	SCE_DISPLAY_HEAD_SUB_LCD       = 2
+} SceDisplayHead;
+VITASDK_BUILD_ASSERT_EQ(1, SceDisplayHead);
+
+typedef enum SceDisplayScreenModeFlag {
+	SCE_DISPLAY_SCREENMODE_FLAG_60_HZ  = 0x0000,
+	SCE_DISPLAY_SCREENMODE_FLAG_24_HZ  = 0x0020,
+	SCE_DISPLAY_SCREENMODE_FLAG_50_HZ  = 0x0080,
+	SCE_DISPLAY_SCREENMODE_FLAG_480P   = 0x0300,
+	SCE_DISPLAY_SCREENMODE_FLAG_576P   = 0x0400,
+	SCE_DISPLAY_SCREENMODE_FLAG_1080I  = 0x0500,
+	SCE_DISPLAY_SCREENMODE_FLAG_720P   = 0x0600,
+	SCE_DISPLAY_SCREENMODE_FLAG_1080P  = 0x0700
+} SceDisplayScreenModeFlag;
+VITASDK_BUILD_ASSERT_EQ(2, SceDisplayScreenModeFlag);
+
+typedef SceUInt32 SceDisplayScreenMode;
+VITASDK_BUILD_ASSERT_EQ(4, SceDisplayScreenMode);
+
+typedef enum SceDisplayScanMode {
+	SCE_DISPLAY_SCANMODE_PROGRESSIVE = 0,
+	SCE_DISPLAY_SCANMODE_INTERLACED = 1
+} SceDisplayScanMode;
+VITASDK_BUILD_ASSERT_EQ(1, SceDisplayScanMode);
+
+typedef struct SceDisplayCaptureFrameBuf {
+	SceSize size;
+	void *base;
+	unsigned int pitch;
+	SceDisplayPixelFormat pixelformat;
+	unsigned int width;
+	unsigned int height;
+} SceDisplayCaptureFrameBuf;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceDisplayCaptureFrameBuf); // size is from FW 3.60
+
+typedef struct SceDisplayResolutionInfo {
+	SceSize size;
+	SceDisplayScreenMode screenMode;
+	SceUInt32 width;
+	SceUInt32 height;
+	SceDisplayPixelFormat pixelformat;
+	SceDisplayScanMode scanMode;
+	float fps;
+} SceDisplayResolutionInfo;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceDisplayResolutionInfo); // size is from FW 3.60
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2COMMON_DISPLAY_H_ */
-

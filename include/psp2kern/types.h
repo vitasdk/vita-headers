@@ -162,7 +162,7 @@ typedef struct SceSelfAuthInfo { // size is 0x90-bytes
 	uint8_t padding[8];
 	uint8_t capability[0x20];
 	uint8_t attribute[0x20];
-	SceSharedSecret secret;
+	SceSharedSecret secret; //!< better name: shared_secret
 } SceSelfAuthInfo;
 VITASDK_BUILD_ASSERT_EQ(0x90, SceSelfAuthInfo);
 

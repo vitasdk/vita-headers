@@ -38,6 +38,9 @@ int ksceKernelPowerTick(SceKernelPowerTickType type);
 */
 int ksceKernelRegisterSysEventHandler(const char *name, SceSysEventHandler handler, void *args);
 
+int ksceKernelSysEventDispatch(SceUInt32 resume, SceUInt32 eventid, void *param, void **ppResult);
+int ksceKernelUnregisterSysEventHandler(SceUID suspend_handler_id);
+
 #ifdef __cplusplus
 }
 #endif

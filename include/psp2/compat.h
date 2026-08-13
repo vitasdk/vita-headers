@@ -302,6 +302,9 @@ int sceCompatGetDevInf(SceIoDevInfo *info);
 */
 int sceCompatGetCurrentSecureTick(SceRtcTick *tick);
 
+int sceCompatDatRead(SceUInt32 index, SceUInt32 offset, void *pBuf, SceSize size);
+int sceCompatIdStorageLookup(SceUInt16 key, SceUInt32 offset, void *pBuf, SceSize size);
+
 #ifdef __cplusplus
 }
 #endif

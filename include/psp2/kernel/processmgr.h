@@ -90,9 +90,29 @@ SceKernelTime sceKernelLibcTime(SceKernelTime *tloc);
 
 int sceKernelLibcGettimeofday(SceKernelTimeval *tv, SceKernelTimezone *tz);
 
+typedef struct SceLibkernelAddresses {
+	SceSize size; //!< Size of this structure
+	int (*sceKernelExitThread)(int exitStatus);
+	int (*sceKernelExitDeleteThread)(int exitStatus);
+	int (*sceKernelExitCallback)(void);
+	void *coredumpHandler; //!< A pointer to a function with signature `int (SceSize args, void *argp)`.
+	int *pProcessTime; //!< Points to the ::SceKernelSysClock process-time base.
+	int *pPMUSERENR; //!< Points to the cached ::SceUInt32 PMUSERENR value.
+} SceLibkernelAddresses;
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceLibkernelAddresses); // size is from FW 3.60
+
+int _sceKernelExitProcessForUser(int status);
+int _sceKernelRegisterLibkernelAddresses(SceLibkernelAddresses *pAddresses);
+int sceKernelGetProcessTimeCore(SceUInt64 *pTime);
+int sceKernelGetProcessTimeLowCore(void);
+SceUInt64 sceKernelGetProcessTimeWideCore(void);
+int sceKernelIsCDialogAvailable(void);
+SceBool sceKernelIsGameBudget(void);
+SceInt32 sceKernelRegisterProcessTerminationCallback(SceUID pid, SceUID cbId);
+SceInt32 sceKernelUnregisterProcessTerminationCallback(SceUID pid, SceUID cbId);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_KERNEL_PROCESSMGR_H_ */
-

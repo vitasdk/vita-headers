@@ -266,9 +266,107 @@ typedef enum SceSysconControl {
  */
 int ksceSysconGetControlsInfo(SceUInt32 *ctrl);
 
+typedef struct SceKernelTouchpanelDeviceInfo {
+	uint16_t FrontVendorID;
+	uint16_t FrontFirmwareRev;
+	uint16_t RearVendorID;
+	uint16_t RearFirmwareRev;
+} SceKernelTouchpanelDeviceInfo;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceKernelTouchpanelDeviceInfo);
+
+int ksceSysconBatteryExecBLCommand(SceUInt16 ctx);
+
+/**
+ * Read data from a battery bootloader command response.
+ *
+ * @param ctx Command context identifier.
+ * @param request_parameter0 First raw request byte. Its purpose is unknown.
+ * @param request_parameter1 Second raw request byte. Its purpose is unknown.
+ * @param pDst Writable buffer that receives the response data.
+ * @param size Number of bytes to read. Must be between 1 and 16.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSysconBatteryReadBLCommand(SceUInt16 ctx, SceUInt8 request_parameter0, SceUInt8 request_parameter1, void *pDst, SceUInt8 size);
+int ksceSysconBatterySWReset(void);
+
+/**
+ * Write a chunk of battery bootloader command data.
+ *
+ * @param ctx Command context identifier.
+ * @param offset Byte offset of this chunk within the command data.
+ * @param pSrc Read-only buffer containing the data to write.
+ * @param size Number of bytes to write. Must be between 1 and 16.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSysconBatterySetBLCommand(SceUInt16 ctx, SceUInt8 offset, void *pSrc, SceUInt8 size);
+int ksceSysconBatteryStartBLMode(void);
+int ksceSysconBatteryStopBLMode(void);
+int ksceSysconCtrlAccPower(SceBool enable);
+int ksceSysconCtrlDevKitUsbPower(SceBool enable);
+int ksceSysconCtrlDolceUsbPower(SceBool enable);
+int ksceSysconCtrlHostOutputViaDongle(SceBool enable);
+
+/**
+ * Get the battery hardware, firmware, and data-flash versions.
+ *
+ * Each optional output pointer must point to a 32-bit word. FW 3.60
+ * zero-extends each 16-bit response value and performs a 32-bit store.
+ *
+ * @param[out] pHardwareInfo Battery hardware version, or NULL.
+ * @param[out] pFirmwareInfo Battery firmware version, or NULL.
+ * @param[out] pDataFlashInfo Battery data-flash version, or NULL.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSysconGetBatteryVersion(SceUInt32 *pHardwareInfo, SceUInt32 *pFirmwareInfo, SceUInt32 *pDataFlashInfo);
+int ksceSysconGetMicroUsbInfo(int *pInfo);
+int ksceSysconGetMultiCnInfo(SceUInt32 *pInfo);
+int ksceSysconGetTouchpanelDeviceInfo(SceKernelTouchpanelDeviceInfo *pInfo);
+int ksceSysconJigClosePort(void);
+int ksceSysconJigOpenPort(void);
+
+/**
+ * Set the two raw Jig configuration bytes.
+ *
+ * @param config0 First configuration byte. Its purpose is unknown.
+ * @param config1 Second configuration byte. Its purpose is unknown.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSysconJigSetConfig(SceUInt8 config0, SceUInt8 config1);
+int ksceSysconNvsReadData(SceUInt32 offset, void *buffer, SceSize size);
+int ksceSysconNvsSetRunMode(int mode);
+int ksceSysconNvsWriteData(SceUInt32 offset, void *buffer, SceSize size);
+int ksceSysconSetMultiCnPort(int port);
+
+/**
+ * Calculate the checksum of a Syscon updater firmware segment.
+ *
+ * @param segment Read-only buffer containing the segment data.
+ * @param segment_size Size of the segment data in bytes.
+ * @param pChecksum Pointer to a 32-bit word that receives the bitwise complement
+ *                  of the sum of the segment bytes. Must not be NULL.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSysconUpdaterCalcChecksum(void *segment, SceSize segment_size, int *pChecksum);
+int ksceSysconUpdaterExecFinalize(void *digest, SceSize size);
+int ksceSysconUpdaterExecProgramming(int checksum);
+int ksceSysconUpdaterSetRunMode(int mode);
+
+/**
+ * Select a Syscon updater firmware segment.
+ *
+ * @param segment_no Segment number. Only the low 8 bits are transmitted.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceSysconUpdaterSetSegment(SceUInt32 segment_no);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2KERN_SYSCON_H_ */
-

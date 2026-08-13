@@ -8,6 +8,7 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
+#include <psp2common/sblssmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -15,28 +16,22 @@ extern "C" {
 
 
 typedef struct SceSblDmac5EncDecParam { // size is 0x18-bytes
-	const void *src; //<! The operation input buffer
-	void *dst;       //<! The operation output buffer
-	SceSize length;  //<! The src data length
-	const void *key; //<! The key data
-	SceSize keysize; //<! The key size in bits
-	void *iv;        //<! The initialization vector
+	const void *src; //!< The operation input buffer
+	void *dst;       //!< The operation output buffer
+	SceSize length;  //!< The src data length
+	const void *key; //!< The key data
+	SceSize keysize; //!< The key size in bits
+	void *iv;        //!< The initialization vector
 } SceSblDmac5EncDecParam;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5EncDecParam);
 
-typedef struct SceSblDmac5HashTransformContext { // size is 0x28-bytes
-	SceUInt32 state[8];
-	SceUInt64 length;
-} SceSblDmac5HashTransformContext;
-VITASDK_BUILD_ASSERT_EQ(0x28, SceSblDmac5HashTransformContext);
-
 typedef struct SceSblDmac5HashTransformParam { // size is 0x18-bytes
-	const void *src; //<! The operation input buffer
-	void *dst;       //<! The operation output buffer
-	SceSize length;  //<! The src data length
-	const void *key; //<! The key data
-	SceSize keysize; //<! The key size in bits
-	void *ctx;       //<! SceSblDmac5HashTransformContext Or another context of size 0x10-bytes
+	const void *src; //!< The operation input buffer
+	void *dst;       //!< The operation output buffer
+	SceSize length;  //!< The src data length
+	const void *key; //!< The key data
+	SceSize keysize; //!< The key size in bits
+	void *ctx;       //!< A pointer to a ::SceSblDmac5HashTransformContext structure.
 } SceSblDmac5HashTransformParam;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5HashTransformParam);
 
@@ -49,18 +44,20 @@ VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5HashTransformParam);
  * @return 0 on success, else < 0.
  */
 int sceSblDmac5EncDec(SceSblDmac5EncDecParam *param, SceUInt32 command);
+int sceSblDmac5EncDecKeyGen(SceSblDmac5EncDecParam *param, SceUInt32 key_id, SceUInt32 command);
 
 
 /**
  * @brief Execute DMAC5 hash transform command
  *
- * @param[inout] param   - The encdec param.
+ * @param[inout] param   - The hash transform param.
  * @param[in]    command - The DMAC5 hash base command.
- * @param[in]    extra   - The DMAC5 extra command.
+ * @param[in]    flags   - Bitwise OR of ::SceSblDmac5HashFlag values.
  *
  * @return 0 on success, else < 0.
  */
-int sceSblDmac5HashTransform(SceSblDmac5HashTransformParam *param, SceUInt32 command, SceUInt32 extra);
+int sceSblDmac5HashTransform(SceSblDmac5HashTransformParam *param, SceUInt32 command, SceUInt32 flags);
+int sceSblDmac5HmacKeyGen(SceSblDmac5HashTransformParam *param, SceUInt32 key_id, SceUInt32 command, SceUInt32 flags);
 
 
 static inline int sceSblDmac5AesCbcEnc(const void *src, void *dst, SceSize length, const void *key, SceSize keysize, void *iv)
