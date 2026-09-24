@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceModulemgr}
- * \usage{psp2kern/kernel/modulemgr.h,SceModulemgrForKernel_stub}
+ * \usage{psp2kern/kernel/modulemgr.h,SceModulemgrForKernel_stub SceModulemgrForDriver_stub}
  */
 
 #ifndef _PSP2KERN_KERNEL_MODULEMGR_H_
@@ -25,7 +25,10 @@ typedef struct {
   int perm;
   void *vaddr;
   uint32_t memsz;
-  int unk_10;
+  union {
+    SceSize alignment; //!< Power-of-two segment alignment.
+    int unk_10; //!< Legacy name for ::alignment.
+  };
 } SceKernelSegmentInfo2;
 VITASDK_BUILD_ASSERT_EQ(0x14, SceKernelSegmentInfo2);
 
@@ -34,7 +37,14 @@ typedef struct {
   SceUID modid;
   uint32_t version;
   uint32_t module_version;
-  uint32_t unk10;
+  union {
+    uint32_t unk10; //!< Legacy field containing the packed module type and flags.
+    struct {
+      uint8_t module_type;
+      uint8_t reserved_0x11;
+      uint16_t module_flags;
+    };
+  };
   void *unk14;
   uint32_t unk18;
   void *unk1C;
@@ -281,8 +291,8 @@ SceUID ksceKernelLoadModule(const char *path, int flags, SceKernelLMOption *opti
  * @param[in]  modid  - target module id
  * @param[in]  args   - module start args
  * @param[in]  argp   - module start argp
- * @param[in]  flags  - unknown, set zero
- * @param[in]  option - unknown
+ * @param[in]  flags  - must be 0
+ * @param[in]  option - Optional 0x10-byte start-module options.
  * @param[out] status - module_start res, SCE_KERNEL_START_SUCCESS etc...
  *
  * @return 0 on success, < 0 on error.
@@ -310,7 +320,7 @@ SceUID ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int
  * @param[in]  args   - module stop args
  * @param[in]  argp   - module stop argp
  * @param[in]  flags  - unknown, set zero
- * @param[in]  option - unknown
+ * @param[in]  option - Optional 0x10-byte stop-module options.
  * @param[out] status - module_stop res, SCE_KERNEL_STOP_SUCCESS etc...
  *
  * @return 0 on success, < 0 on error.
@@ -362,7 +372,7 @@ SceUID ksceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKe
  * @param[in]  args   - module start args
  * @param[in]  argp   - module start argp
  * @param[in]  flags  - unknown, set zero
- * @param[in]  option - unknown
+ * @param[in]  option - Optional 0x10-byte start-module options.
  * @param[out] status - module_start res, SCE_KERNEL_START_SUCCESS etc...
  *
  * @return 0 on success, < 0 on error.
@@ -392,7 +402,7 @@ SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize arg
  * @param[in]  args   - module stop args
  * @param[in]  argp   - module stop argp
  * @param[in]  flags  - unknown, set zero
- * @param[in]  option - unknown
+ * @param[in]  option - Optional 0x10-byte stop-module options.
  * @param[out] status - module_stop res, SCE_KERNEL_STOP_SUCCESS etc...
  *
  * @return 0 on success, < 0 on error.
@@ -482,7 +492,7 @@ SceUID ksceKernelGetModuleIdByPid(SceUID pid);
 /**
  * @brief Get the module path
  *
- * @param[in]  pid     - target pid
+ * @param[in]  modid   - target module ID
  * @param[out] path    - module path output
  * @param[in]  pathlen - path output max len
  *
@@ -494,7 +504,7 @@ int ksceKernelGetModulePath(SceUID modid, char *path, SceSize pathlen);
  * @brief Get library info
  *
  * @param[in]  pid   - target pid
- * @param[in]  modid - target library id
+ * @param[in]  library_id - target library ID
  * @param[out] info  - info output
  *
  * @return 0 on success, < 0 on error.
@@ -534,6 +544,38 @@ int ksceKernelUnloadProcessModules(SceUID pid);
 #define ksceKernelGetModuleInternal ksceKernelGetModuleCB
 #define ksceKernelGetProcessMainModule ksceKernelGetModuleIdByPid
 
+
+/**
+ * Gets information about the loaded kernel module containing an address.
+ *
+ * @param[in] module_addr Address in any mapped module segment.
+ * @param[out] info ::SceKernelModuleInfo buffer. Zero it and set its \a size
+ *                  field to the size of the structure before calling.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelGetModuleInfoByAddr(const void *module_addr, SceKernelModuleInfo *info);
+
+/**
+ * Registers an export library from a loaded kernel module.
+ *
+ * @param[in] libent Pointer to the aligned 0x20-byte library export-table
+ *                   entry within the loaded kernel module that owns it.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelRegisterLibary(const void *libent);
+
+/**
+ * Unregisters an export library from a loaded kernel module and relinks
+ * modules whose imports are affected.
+ *
+ * @param[in] libent Pointer to the aligned 0x20-byte library export-table
+ *                   entry within the loaded kernel module that owns it.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelReleaseLibary(const void *libent);
 
 #ifdef __cplusplus
 }

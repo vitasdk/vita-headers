@@ -7,6 +7,7 @@
 #ifndef _PSP2_IO_FCNTL_H_
 #define _PSP2_IO_FCNTL_H_
 
+#include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 #include <psp2common/kernel/iofilemgr.h>
 
@@ -169,9 +170,10 @@ int sceIoRename(const char *oldname, const char *newname);
   * Synchronize the file data on the device.
   *
   * @param device - The device to synchronize (e.g. msfat0:)
-  * @param unk - Unknown
+  * @param flags - Mount synchronization flags. FW 3.60 forwards this value
+  *                when synchronizing the buffer cache for the entire mount.
   */
-int sceIoSync(const char *device, unsigned int unk);
+int sceIoSync(const char *device, unsigned int flags);
 
 /**
  * Synchronize the file data for one file
@@ -199,9 +201,118 @@ int sceIoSetPriority(SceUID fd, int priority);
 int sceIoSetProcessDefaultPriority(int priority);
 int sceIoSetThreadDefaultPriority(int priority);
 
+typedef struct SceIoDevctlOpt {
+	SceSize arglen; //!< Size of the device-driver-specific parameter block in bytes.
+	void *bufp; //!< Output buffer.
+	SceSize buflen; //!< Output buffer size.
+	SceUInt32 reserved[3]; //!< Ignored on FW 3.60.
+} SceIoDevctlOpt;
+VITASDK_BUILD_ASSERT_EQ(0x18, SceIoDevctlOpt); // size is from FW 3.60
+
+typedef struct sceIoChstatOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoChstatOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoChstatOpt); // size is from FW 3.60
+
+typedef struct sceIoDopenOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoDopenOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoDopenOpt); // size is from FW 3.60
+
+typedef struct sceIoGetstatOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoGetstatOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoGetstatOpt); // size is from FW 3.60
+
+typedef struct sceIoMkdirOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoMkdirOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoMkdirOpt); // size is from FW 3.60
+
+typedef struct sceIoOpenOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoOpenOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoOpenOpt); // size is from FW 3.60
+
+typedef struct sceIoRemoveOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoRemoveOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoRemoveOpt); // size is from FW 3.60
+
+typedef struct sceIoRenameOpt {
+	SceUInt32 reserved[4]; //!< Ignored on FW 3.60.
+} sceIoRenameOpt;
+VITASDK_BUILD_ASSERT_EQ(0x10, sceIoRenameOpt); // size is from FW 3.60
+
+typedef struct sceIoRmdirOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoRmdirOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoRmdirOpt); // size is from FW 3.60
+
+typedef struct sceIoSyncOpt {
+	SceUInt32 reserved[2]; //!< Ignored on FW 3.60.
+} sceIoSyncOpt;
+VITASDK_BUILD_ASSERT_EQ(0x8, sceIoSyncOpt); // size is from FW 3.60
+
+/**
+ * User export used by ::sceIoChstat.
+ *
+ * @param[in] name - Path to modify.
+ * @param[in] stat - Replacement values selected by \a cbit.
+ * @param[in] cbit - Bitwise OR of `SCE_CST_*` values.
+ * @param[in] opt - Required 8-byte option block. Its contents are ignored on FW 3.60.
+ *
+ * @return 0 on success, or a negative error code.
+ */
+int _sceIoChstat(const char *name, const SceIoStat *stat, unsigned int cbit, const sceIoChstatOpt *opt);
+
+/** User export used by ::sceIoChstatByFd. */
+int _sceIoChstatByFd(SceUID fd, const SceIoStat *buf, unsigned int cbit);
+
+/**
+ * User export used by ::sceIoDevctl.
+ *
+ * @param[in] devname - Device name.
+ * @param[in] cmd - Device-specific command.
+ * @param[in] arg - Input buffer containing \a opt->arglen bytes, or NULL.
+ * @param[in] opt - Required block describing the input and output buffers.
+ *
+ * @return The device-driver result, or a negative error code.
+ */
+int _sceIoDevctl(const char *devname, int cmd, const void *arg, const SceIoDevctlOpt *opt);
+
+/** User export used by ::sceIoDopen. The option block is required; its contents are ignored on FW 3.60. */
+SceUID _sceIoDopen(const char *dirname, const sceIoDopenOpt *opt);
+
+/** User export used by ::sceIoDread. The structure at \a dir is copied to and from user memory. */
+int _sceIoDread(SceUID fd, SceIoDirent *dir);
+
+/** User export used by ::sceIoGetstat. The option block is required; its contents are ignored on FW 3.60. */
+int _sceIoGetstat(const char *name, SceIoStat *buf, const sceIoGetstatOpt *opt);
+
+/** User export used by ::sceIoGetstatByFd. */
+int _sceIoGetstatByFd(SceUID fd, SceIoStat *stat);
+
+/** User export used by ::sceIoMkdir. The option block is required; its contents are ignored on FW 3.60. */
+int _sceIoMkdir(const char *dirname, SceMode mode, const sceIoMkdirOpt *opt);
+
+/** User export used by ::sceIoOpen. The option block is required; its contents are ignored on FW 3.60. */
+SceUID _sceIoOpen(const char *filename, int flags, SceMode mode, const sceIoOpenOpt *opt);
+
+/** User export used by ::sceIoRemove. The option block is required; its contents are ignored on FW 3.60. */
+int _sceIoRemove(const char *filename, const sceIoRemoveOpt *opt);
+
+/** User export used by ::sceIoRename. The option block is required; its contents are ignored on FW 3.60. */
+int _sceIoRename(const char *oldname, const char *newname, const sceIoRenameOpt *opt);
+
+/** User export used by ::sceIoRmdir. The option block is required; its contents are ignored on FW 3.60. */
+int _sceIoRmdir(const char *dirname, const sceIoRmdirOpt *opt);
+
+/** User export used by ::sceIoSync. The option block is required; its contents are ignored on FW 3.60. */
+int _sceIoSync(const char *device, unsigned int flags, const sceIoSyncOpt *opt);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_IO_FCNTL_H_ */
-

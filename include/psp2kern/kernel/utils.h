@@ -210,6 +210,33 @@ int ksceAesDecrypt2(SceAesContext *ctx, const void *src, void *dst);
 int ksceAesEncrypt1(SceAesContext *ctx, const void *src, void *dst);
 int ksceAesEncrypt2(SceAesContext *ctx, const void *src, void *dst);
 
+/**
+ * Initialize the global MT19937 state.
+ *
+ * @param[in] seed - Initial seed.
+ *
+ * @return 0.
+ */
+int ksceMt19937GlobalInit(SceUInt32 seed);
+
+/**
+ * Fill a buffer with 32-bit values from the global MT19937 generator.
+ *
+ * A global spinlock prevents calls from generating values concurrently. The
+ * buffer address must be four-byte aligned, and \p size must be a multiple of
+ * four bytes.
+ *
+ * @param[out] buffer - Destination buffer.
+ * @param[in] size - Number of bytes to fill.
+ *
+ * @return 0 on success, ::SCE_KERNEL_ERROR_INVALID_ARGUMENT if the address is
+ * not four-byte aligned or the size is not a multiple of four bytes.
+ */
+int ksceMt19937GlobalFillArray32(SceUInt32 *buffer, SceSize size);
+
+#define ksceMt19937GlobalUninit ksceMt19937GlobalFillArray32
+#define ksceMt19937GlobalUIntInRange ksceMt19937GlobalFillArray32
+
 #ifdef __cplusplus
 }
 #endif

@@ -1,6 +1,6 @@
 /**
  * \kernelgroup{SceCpu}
- * \usage{psp2kern/kernel/cpu/atomic.h}
+ * \usage{psp2kern/kernel/cpu/atomic.h,SceCpuForDriver_stub}
  */
 
 
@@ -117,6 +117,37 @@ SceInt16 ksceKernelAtomicDecIfPositive16(SceInt16 *store);
 SceInt32 ksceKernelAtomicDecIfPositive32(SceInt32 *store);
 SceInt64 ksceKernelAtomicDecIfPositive64(SceInt64 *store);
 
+
+/**
+ * Atomically store \p val if it is greater than the current signed 16-bit value.
+ *
+ * @param[in,out] addr Address updated with an exclusive 16-bit load/store.
+ * @param[in] val - Candidate value. Only its low 16 bits are stored.
+ *
+ * @return The greater of the previous value and \p val.
+ */
+SceInt16 ksceKernelAtomicSetIfGreaterGet16(SceInt16 *addr, SceInt16 val);
+
+/**
+ * Atomically store \p val if it is greater than the current value under a
+ * signed 32-bit comparison.
+ *
+ * @param[in,out] addr Address updated with an exclusive 32-bit load/store.
+ * @param[in] val - Candidate value.
+ *
+ * @return The greater of the previous value and \p val.
+ */
+SceInt32 ksceKernelAtomicSetIfGreaterGet32(SceInt32 *addr, SceInt32 val);
+
+/**
+ * Atomically store \p val if it is greater than the current signed 8-bit value.
+ *
+ * @param[in,out] addr Address updated with an exclusive 8-bit load/store.
+ * @param[in] val - Candidate value. Only its low 8 bits are stored.
+ *
+ * @return The greater of the previous value and \p val.
+ */
+SceInt8 ksceKernelAtomicSetIfGreaterGet8(SceInt8 *addr, SceInt8 val);
 
 #ifdef __cplusplus
 }

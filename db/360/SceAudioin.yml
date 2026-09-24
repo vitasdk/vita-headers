@@ -21,3 +21,17 @@ modules:
           sceAudioInSelectInput: 0xA0EB852F
           sceAudioInSetMicGain: 0x0F34DD73
           sceAudioInSetMute: 0x1DFE7698
+      SceAudioInForDriver:
+        kernel: true
+        nid: 0x60928C22
+        functions:
+          ksceAudioInInput: 0x0AB2743C
+          ksceAudioInIsAnyPortOpen: 0x005A2A31
+          ksceAudioInIsProcessPortOwner: 0xFB46FA10
+          ksceAudioInOpenPort: 0x9C7404BF
+          ksceAudioInReleasePort: 0x313C969A
+          ksceAudioInSelectInput: 0x44A497F8
+          ksceAudioInSetAdoptForPid: 0xE4042F6F
+          ksceAudioInSetPortOpenCallback: 0x3EC79053
+          ksceAudioInSetPortReleaseCallback: 0x197CAA1B
+          ksceAudioInSubmitBluetoothPcm: 0x3D164387
