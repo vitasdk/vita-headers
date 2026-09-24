@@ -37,27 +37,21 @@ typedef enum SceKernelMemoryRefPerm {
 // specific to 3.60
 typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceSize size;                   //!< Size of this structure.
-	SceUInt32 field_4;
+	SceUInt32 reserved;             //!< Ignored on FW 3.60.
 	SceUInt32 attr;                 //!< Bitwise OR of ::SceKernelAllocMemBlockAttr values.
-	SceUInt32 field_C;
-	SceUInt32 paddr;
+	void *vbase;                    //!< Optional virtual base address.
+	void *paddr;                    //!< Optional physical base address.
 	SceSize alignment;
 	SceSize extraLow;
 	SceSize extraHigh;
-	SceUInt32 mirror_blockid;
+	SceUID baseMemBlock;            //!< Memblock this allocation is based on.
 	SceUID pid;
-	SceKernelPaddrList *paddr_list;
-	SceUInt32 field_2C;
-	SceUInt32 field_30;
-	SceUInt32 field_34;
-	SceUInt32 field_38;
-	SceUInt32 field_3C;
-	SceUInt32 field_40;
-	SceUInt32 field_44;
-	SceUInt32 field_48;
-	SceUInt32 field_4C;
-	SceUInt32 field_50;
-	SceUInt32 field_54;
+	const SceKernelPAVector *paddr_list; //!< Input physical-address vector.
+	SceSize roundupUnitSize;
+	SceUInt8 domain;
+	SceUInt8 reservedDomain[3];     //!< Unused padding on FW 3.60.
+	SceUInt32 allowedOpenFlags;     //!< Flags permitted when another process opens the block.
+	SceUInt32 requiredCapabilityMask[8]; //!< Required 256-bit process capability mask.
 } SceKernelAllocMemBlockKernelOpt;
 VITASDK_BUILD_ASSERT_EQ(0x58, SceKernelAllocMemBlockKernelOpt); // size is from FW 3.60
 
@@ -73,7 +67,7 @@ typedef SceKernelAllocMemBlockKernelOpt SceKernelAllocMemBlockOptKernel;
  *
  * @return SceUID of the memory block on success, < 0 on error.
 */
-SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, SceKernelAllocMemBlockKernelOpt *opt);
+SceUID ksceKernelAllocMemBlock(const char *name, SceKernelMemBlockType type, SceSize size, const SceKernelAllocMemBlockKernelOpt *opt);
 
 /**
  * Frees new memory block
@@ -252,7 +246,7 @@ int ksceKernelUserUnmap(SceUID uid);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelLockRange(void *addr, SceSize size);
+int ksceKernelLockRange(const void *addr, SceSize size);
 
 /**
  * Locks a memory range for a process (pid)
@@ -267,7 +261,7 @@ int ksceKernelLockRange(void *addr, SceSize size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelLockRangeProc(ScePID pid, void *addr, SceSize size);
+int ksceKernelLockRangeProc(ScePID pid, const void *addr, SceSize size);
 
 /**
  * Locks a memory range, checking for a given permission
@@ -282,7 +276,7 @@ int ksceKernelLockRangeProc(ScePID pid, void *addr, SceSize size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelLockRangeWithMode(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
+int ksceKernelLockRangeWithMode(SceKernelMemoryRefPerm perm, const void *addr, SceSize size);
 
 /**
  * Unlocks a memory range
@@ -296,7 +290,7 @@ int ksceKernelLockRangeWithMode(SceKernelMemoryRefPerm perm, void *addr, SceSize
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelUnlockRange(void *addr, SceSize size);
+int ksceKernelUnlockRange(const void *addr, SceSize size);
 
 /**
  * Unlocks a memory range for a process (pid)
@@ -311,7 +305,7 @@ int ksceKernelUnlockRange(void *addr, SceSize size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelUnlockRangeProc(ScePID pid, void *addr, SceSize size);
+int ksceKernelUnlockRangeProc(ScePID pid, const void *addr, SceSize size);
 
 /**
  * Unlocks a memory range checking for a given permission
@@ -326,7 +320,7 @@ int ksceKernelUnlockRangeProc(ScePID pid, void *addr, SceSize size);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelUnlockRangeWithMode(SceKernelMemoryRefPerm perm, void *addr, SceSize size);
+int ksceKernelUnlockRangeWithMode(SceKernelMemoryRefPerm perm, const void *addr, SceSize size);
 
 
 SceUID ksceKernelAllocPartitionMemBlock(SceUID part, const char *name, SceKernelMemBlockType type, SceSize size, const SceKernelAllocMemBlockOptKernel *pOpt);

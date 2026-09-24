@@ -66,15 +66,15 @@ VITASDK_BUILD_ASSERT_EQ(0x3C, SceIftuCscParams);
 
 typedef struct SceIftuConvParams {
 	unsigned int size;               //!< Structure size; FW 3.60 does not validate it.
-	unsigned int unk04;
+	unsigned int bilinear;           //!< One of ::SceIftuFilterMode.
 	SceIftuCscParams *csc_params1;   //!< Optional read-only parameters for the CSC register block starting at 0x130.
 	SceIftuCscParams *csc_params2;   //!< Optional read-only parameters for the CSC register block starting at 0x104.
 	unsigned int csc_control;        //!< Raw CSC control-register value.
-	unsigned int unk14;
-	unsigned int unk18;
-	unsigned int unk1C;
+	unsigned int background_color_0; //!< 10-bit background component 0 in the input color space.
+	unsigned int background_color_1; //!< 10-bit background component 1 in the input color space.
+	unsigned int background_color_2; //!< 10-bit background component 2 in the input color space.
 	unsigned int alpha;              //!< Alpha value. The default is 0xFF.
-	unsigned int unk24;
+	unsigned int field_mode;         //!< One of ::SceIftuFieldMode; only the low two bits are used.
 } SceIftuConvParams;
 VITASDK_BUILD_ASSERT_EQ(0x28, SceIftuConvParams);
 
@@ -83,7 +83,7 @@ typedef struct SceIftuFrameBuf {
 	unsigned int width;                    //!< Frame width in pixels; known FW 3.60 callers align it to 16 pixels.
 	unsigned int height;                   //!< Frame height in pixels; known FW 3.60 callers align it to 8 pixels.
 	unsigned int leftover_stride;          //!< Additional bytes after each luma or packed-pixel row.
-	unsigned int leftover_align;	/* if YCbCr: (width >> 1) & 0xF [chroma align?] */
+	unsigned int plane1_2_leftover_stride; //!< Additional bytes after each chroma row.
 	unsigned int paddr0;                   //!< Physical address of plane 0.
 	unsigned int paddr1;                   //!< Physical address of plane 1, or zero when unused.
 	unsigned int paddr2;                   //!< Physical address of plane 2, or zero when unused.
@@ -92,19 +92,17 @@ VITASDK_BUILD_ASSERT_EQ(0x20, SceIftuFrameBuf);
 
 typedef struct SceIftuPlaneState {
 	SceIftuFrameBuf fb;
-	unsigned int unk20;
-	unsigned int src_x;       //!< Horizontal source-sampling offset in unsigned 8.8 fixed-point format.
-	unsigned int src_y;       //!< Vertical source-sampling offset in unsigned 8.8 fixed-point format.
+	unsigned int reserved[3]; //!< Values written to undocumented IFTU registers; their purpose is unknown.
 	unsigned int src_w;       //!< Horizontal source-sampling step per destination pixel in 16.16 fixed-point format.
 	unsigned int src_h;       //!< Vertical source-sampling step per destination pixel in 16.16 fixed-point format.
 	unsigned int dst_x;       //!< Destination X coordinate in pixels.
 	unsigned int dst_y;       //!< Destination Y coordinate in pixels.
-	unsigned int dst_w;
-	unsigned int dst_h;
-	unsigned int vtop_padding;
-	unsigned int vbot_padding;	/* h - aligned_h */
-	unsigned int hleft_padding;
-	unsigned int hright_padding;	/* w - aligned_w */
+	unsigned int src_x;       //!< Horizontal source-sampling offset in unsigned 8.8 fixed-point format.
+	unsigned int src_y;       //!< Vertical source-sampling offset in unsigned 8.8 fixed-point format.
+	unsigned int crop_top;    //!< Number of source pixels cropped from the top.
+	unsigned int crop_bottom; //!< Number of source pixels cropped from the bottom.
+	unsigned int crop_left;   //!< Number of source pixels cropped from the left.
+	unsigned int crop_right;  //!< Number of source pixels cropped from the right.
 } SceIftuPlaneState;
 VITASDK_BUILD_ASSERT_EQ(0x54, SceIftuPlaneState);
 

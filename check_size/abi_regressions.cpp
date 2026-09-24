@@ -53,6 +53,8 @@ CHECK_WORD_OFFSET(SceVoicePortInfo, state, 0x4);
 CHECK_WORD_OFFSET(SceVoicePortInfo, data_size, 0xC);
 CHECK_WORD_OFFSET(SceVoicePortInfo, frame_size, 0x10);
 
+CHECK_WORD_OFFSET(SceAppMgrLaunchParam, process_exit_spawn_mode, 0x20);
+CHECK_WORD_OFFSET(SceCoredumpTriggerParam, output_mode, 0x8);
 CHECK_WORD_OFFSET(SceKernelHeapMemoryOpt, mapping_action, 0x4);
 CHECK_WORD_OFFSET(SceKernelModuleListInfo, nid, 0x48);
 

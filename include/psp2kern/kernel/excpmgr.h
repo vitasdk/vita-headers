@@ -68,11 +68,17 @@ VITASDK_BUILD_ASSERT_EQ(0x28, SceExcpmgrWatchpointState); // size is from FW 3.6
 
 typedef struct SceExcpmgrData {
 	int nestedExceptionCount[4]; //!< Active UNDEF, PABT, or DABT exception depth on each CPU core.
-    int unused[4]; 			//!< Seemingly unused
+	int reserved[4]; //!< Zero-initialized BSS; ignored on FW 3.60.
 	void *ExcpStackTop[4]; //!< Base address of each CPU core's 0x1000-byte exception stack.
 	void *ExcpStackBottom[4]; //!< Address immediately after each CPU core's exception stack, used as its initial stack pointer.
+	void *kernelProcessContext; //!< A pointer to the kernel's ::SceKernelProcessContext,
+	                            //!< used to install TTBR1 and CONTEXTIDR.
+	SceExcpmgrBreakpointState *breakpointState; //!< Fallback breakpoint-register state used when TPIDRPRW is zero.
+	SceExcpmgrWatchpointState *watchpointState; //!< Fallback watchpoint-state pointer;
+	                                            //!< Excpmgr controls and locks the restore path,
+	                                            //!< while Intrmgr reads its register fields.
 } SceExcpmgrData;
-VITASDK_BUILD_ASSERT_EQ(0x40, SceExcpmgrData);
+VITASDK_BUILD_ASSERT_EQ(0x4C, SceExcpmgrData); // size is from FW 3.60
 
 /** Values stored in bits 0-2 of ::SceArmWaypoint::event. */
 typedef enum SceArmWaypointEventType {
@@ -124,7 +130,7 @@ typedef struct SceExcpmgrExceptionContext {
 	uint32_t TPIDRURO;
 	uint32_t TPIDRPRW;
 	uint32_t TTBR1;
-    uint32_t unused68;
+	uint32_t reserved68; //!< Not written or read on FW 3.60; contains indeterminate exception-stack data.
 	uint32_t DACR;
 	uint32_t DFSR;
 	uint32_t IFSR;
@@ -150,12 +156,13 @@ typedef struct SceExcpmgrExceptionContext {
 	uint32_t PMXEVCNTR4;
 	uint32_t PMXEVTYPER5;
 	uint32_t PMXEVCNTR5;
-    uint32_t unusedD0;
-    uint32_t unkD4; 		//<! Comes from SceVfpIntRegs memblock
+	uint32_t reserved_D0; //!< Not written or read on FW 3.60; contains indeterminate exception-stack data.
+	uint32_t waypoint_control; //!< Bit 0 is set during initialization and after exception processing;
+	                          //!< bits 8-12 contain the current index in the waypoint ring buffer.
 	uint32_t DBGSCRext;
-    uint32_t unusedDC[9];
+	uint32_t reserved_DC[9]; //!< Not written or read on FW 3.60; contents are indeterminate exception-stack data.
 	uint64_t VFP_registers[32]; //!< Content of floating-point registers D0-D31.
-    uint32_t unk200[128];       //<! Comes from SceVfpIntRegs memblock
+	SceArmWaypoint waypoints[32]; //!< Circular ARM waypoint trace history.
 } SceExcpmgrExceptionContext;
 VITASDK_BUILD_ASSERT_EQ(0x400, SceExcpmgrExceptionContext); // size is from FW 3.60
 

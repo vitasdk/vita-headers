@@ -29,7 +29,7 @@ typedef void (*SceDebugLedHandler)(int arg0, int arg1, int arg2, int arg3);
  *
  * @return 0 on FW 3.60.
  */
-void ksceKernelSetGPO(SceUInt32 bits);
+int ksceKernelSetGPO(SceUInt32 bits);
 
 /**
  * Get the saved general-purpose output bitfield.

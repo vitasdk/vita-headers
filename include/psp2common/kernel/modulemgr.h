@@ -82,7 +82,7 @@ typedef struct SceKernelSegmentInfo {
 	void *vaddr;       //!< Segment virtual address.
 	SceSize memsz;     //!< Segment size in memory.
 	SceSize filesz;    //!< Segment size in the module file.
-  SceUInt res;    //!< unused
+	SceUInt reserved;  //!< Left unchanged by the FW 3.60 kernel APIs.
 } SceKernelSegmentInfo;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelSegmentInfo);
 
@@ -100,7 +100,7 @@ typedef struct SceKernelModuleInfo {
 	uint16_t modattr;                   //!< Module attributes.
 	uint8_t  modver[2];                 //!< Module version.
 	char module_name[28];               //!< Module name; zero the structure first to ensure NUL termination.
-  SceUInt unk28;
+	SceUInt reserved;                   //!< Left unchanged by the FW 3.60 kernel APIs.
 	void *start_entry;                  //!< Module start entry point.
 	void *stop_entry;                   //!< Module stop entry point.
 	void *exit_entry;                   //!< Module exit entry point.
