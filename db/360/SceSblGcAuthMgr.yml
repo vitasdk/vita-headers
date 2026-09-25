@@ -16,6 +16,16 @@ modules:
         kernel: true
         functions:
           ksceSblGcAuthMgrGcAuthCartAuthentication: 0x68781760
+      SceSblGcAuthMgrMlnpsnlForDriver:
+        nid: 0x29ED0109
+        kernel: true
+        functions:
+          ksceSblGcAuthMgrMlnpsnlAuth1: 0xDABC01F5
+      SceSblGcAuthMgrPkgForDriver:
+        nid: 0x082FBA7D
+        kernel: true
+        functions:
+          ksceSblGcAuthMgrPkgVry: 0xE459A9A8
       SceSblGcAuthMgr:
         kernel: false
         nid: 0x7B13BCF7

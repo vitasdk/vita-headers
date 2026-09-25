@@ -8,6 +8,7 @@
 #define _PSP2_TOUCH_H_
 
 #include <vitasdk/build_utils.h>
+#include <psp2common/touch.h>
 #include <psp2/types.h>
 
 #ifdef __cplusplus
@@ -147,9 +148,24 @@ int sceTouchEnableTouchForce(SceUInt32 port);
  */
 int sceTouchDisableTouchForce(SceUInt32 port);
 
+/**
+ * Get touch-panel device information.
+ *
+ * Only system programs can call this function. It retrieves the cached front
+ * or back panel identity record. The output is copied only after the kernel
+ * getter succeeds.
+ *
+ * @param[in] port_type - One of ::SceTouchPortType.
+ * @param[out] info - Receives the complete 0xC-byte device-information record.
+ *
+ * @return 0 on success, ::SCE_TOUCH_ERROR_INVALID_ARG for an invalid \a port_type,
+ *         ::SCE_TOUCH_ERROR_PRIV_REQUIRED when the caller is not a system
+ *         program, or a kernel user-memory-copy error for an invalid \a info.
+ */
+int sceTouchGetDeviceInfo(SceUInt32 port_type, SceTouchDeviceInfo *info);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_TOUCH_H_ */
-

@@ -35,26 +35,11 @@ typedef struct SceKernelFreeMemorySizeInfo {
 } SceKernelFreeMemorySizeInfo;
 VITASDK_BUILD_ASSERT_EQ(0x10, SceKernelFreeMemorySizeInfo);
 
-typedef struct SceKernelMemBlockInfo {
-	SceSize size;
-	void *mappedBase;
-	SceSize mappedSize;
-	int memoryType;
-	SceUInt32 access;
-	SceKernelMemBlockType type;
-} SceKernelMemBlockInfo;
-VITASDK_BUILD_ASSERT_EQ(0x18, SceKernelMemBlockInfo);
-
 typedef enum SceKernelMemoryAccessType {
 	SCE_KERNEL_MEMORY_ACCESS_X = 0x01, //!< Execute privileges
 	SCE_KERNEL_MEMORY_ACCESS_W = 0x02, //!< Write privileges
 	SCE_KERNEL_MEMORY_ACCESS_R = 0x04  //!< Read privileges
 } SceKernelMemoryAccessType;
-
-typedef enum SceKernelMemoryType {
-	SCE_KERNEL_MEMORY_TYPE_NORMAL_NC = 0x80, //!< Non cached memory type
-	SCE_KERNEL_MEMORY_TYPE_NORMAL    = 0xD0  //!< Cached memory type
-} SceKernelMemoryType;
 
 /**
  * Allocates a new memory block
@@ -90,7 +75,7 @@ int sceKernelGetMemBlockBase(SceUID uid, void **base);
 /**
  * Gets the associated memory block to a given memory location.
  *
- * @param[in] base - Address of the memory location to search
+ * @param[in] addr - Address of the memory location to search
  * @param[in] size - Size of the memory location in bytes
  *
  * @return SceUID of the memory block on success, < 0 on error.
@@ -133,7 +118,7 @@ SceUID sceKernelAllocMemBlockForVM(const char *name, SceSize size);
  * Flushes Virtual Machine caches for the given memory location.
  *
  * @param[in]  uid  - SceUID of the memory block to flush.
- * @param[in]  base - Address of the memory location to flush
+ * @param[in]  data - Address of the memory location to flush
  * @param[in]  size - Size of the memory to flush in bytes
  *
  * @return SceUID of the memory block on success, < 0 on error.
@@ -186,9 +171,70 @@ int sceKernelGetFreeMemorySize(SceKernelFreeMemorySizeInfo *info);
 */
 int sceKernelIsPSVitaTV(void);
 
+typedef struct SceKernelSubbudgetInfo {
+	SceSize size; //!< Must be set to `sizeof(SceKernelSubbudgetInfo)`.
+	SceSize total_size; //!< Total size of the subbudget in bytes.
+	SceSize free_size; //!< Free space in the subbudget in bytes.
+} SceKernelSubbudgetInfo;
+VITASDK_BUILD_ASSERT_EQ(0xC, SceKernelSubbudgetInfo); // size is from FW 3.60
+
+typedef enum SceKernelSubbudgetId {
+	SCE_KERNEL_SUBBUDGET_ID_MAIN = 0,
+	SCE_KERNEL_SUBBUDGET_ID_CDLG = 1 //!< Common-dialog memory subbudget.
+} SceKernelSubbudgetId;
+
+/**
+ * Allocates a user memblock without mapping it.
+ *
+ * FW 3.60 accepts only sizes aligned to 1 MiB and copies at most 31 bytes of
+ * \p name. This function is available only while user remapping is enabled.
+ *
+ * @param[in] name - Memory-block name.
+ * @param[in] size - Allocation size, aligned to 1 MiB.
+ *
+ * @return The memblock UID in the calling process on success, < 0 on error.
+ */
+SceUID sceKernelAllocUnmapMemBlock(const char *name, SceSize size);
+
+/**
+ * Tests a hardware-model capability whose purpose is unknown.
+ *
+ * FW 3.60 accepts only indices 7 and 10. Index 10 identifies the
+ * Teleport-client model: TeleportClient requires it, while TeleportServer
+ * rejects operation when it is present. The purpose of index 7 is unknown;
+ * no caller in the FW 3.60 dumps uses it.
+ *
+ * @param[in] capability_index Capability bit index.
+ *
+ * @return 1 if the capability is present, 0 if it is absent,
+ * ::SCE_KERNEL_ERROR_INVALID_ARGUMENT if the index is unsupported.
+ */
+int sceKernelCheckModelCapability(int capability_index);
+
+/**
+ * Frees a VM memblock tracked by the calling process.
+ *
+ * @param[in] uid - UID previously returned for a tracked VM allocation.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceKernelFreeMemBlockForVM(SceUID uid);
+
+/**
+ * Gets the total and free size of a memory subbudget.
+ *
+ * @param[in] subbudget ::SCE_KERNEL_SUBBUDGET_ID_MAIN or
+ * ::SCE_KERNEL_SUBBUDGET_ID_CDLG.
+ * @param[in,out] info Pointer to a ::SceKernelSubbudgetInfo structure.
+ *
+ * @return 0 on success, < 0 on error.
+ *
+ * @note FW 3.60 requires DIP switch 159 to be enabled.
+ */
+int sceKernelGetSubbudgetInfo(SceKernelSubbudgetId subbudget, SceKernelSubbudgetInfo *info);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_KERNEL_SYSMEM_H_ */
-

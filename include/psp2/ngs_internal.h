@@ -1,5 +1,5 @@
 /**
- * \usergroup{SceNgs}
+ * \usergroup{SceNgsInternal}
  * \usage{psp2/ngs_internal.h,SceNgs_stub}
  */
 
@@ -14,42 +14,47 @@
 extern "C" {
 #endif
 
-typedef SceUInt32 SceNgsHRack;             
+typedef SceUInt32 SceNgsHRack; //!< Opaque rack handle valid only in the calling process.
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsHRack);
-typedef SceUInt32 SceNgsHPatch;            
+typedef SceUInt32 SceNgsHPatch; //!< Opaque patch handle valid only in the calling process.
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsHPatch);
-typedef SceUInt32 SceNgsHSynSystem;        
+typedef SceUInt32 SceNgsHSynSystem; //!< Opaque system handle valid only in the calling process.
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsHSynSystem);
-typedef SceUInt32 SceNgsHVoice;            
+typedef SceUInt32 SceNgsHVoice; //!< Opaque voice handle valid only in the calling process.
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsHVoice);
 typedef SceUInt32 SulphaNgsModuleQueryType;
 VITASDK_BUILD_ASSERT_EQ(4, SulphaNgsModuleQueryType);
-typedef SceUInt32 SceNgsModuleID;          
+typedef SceUInt32 SceNgsModuleID;
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsModuleID);
-typedef void * SceNgsSulphaUpdateCallback; 
+typedef SceUInt32 SceNgsParamsID;
+VITASDK_BUILD_ASSERT_EQ(4, SceNgsParamsID);
+
+typedef struct SceNgsVoiceDefinition SceNgsVoiceDefinition;
+typedef struct SceNgsBufferInfo SceNgsBufferInfo;
+typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
+typedef struct SceNgsRackDescription SceNgsRackDescription;
+typedef struct SceNgsPatchSetupInfo SceNgsPatchSetupInfo;
+typedef struct SceNgsVoicePreset SceNgsVoicePreset;
+typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
+typedef struct SceNgsParamsDescriptor SceNgsParamsDescriptor;
+
+typedef void * SceNgsSulphaUpdateCallback;
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsSulphaUpdateCallback);
 
-typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
-
-typedef void (* SceNgsCallbackFunc)(const SceNgsCallbackInfo* callback_info);
+typedef void (*SceNgsCallbackFunc)(const SceNgsCallbackInfo *callback_info);
 
 typedef SceNgsCallbackFunc SceNgsRackReleaseCallbackFunc;
 typedef SceNgsCallbackFunc SceNgsModuleCallbackFunc;
 typedef SceNgsCallbackFunc SceNgsParamsErrorCallbackFunc;
 
-// missing structs
-typedef struct SceNgsVoicePreset SceNgsVoicePreset;
-typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
-typedef struct SceNgsBufferInfo SceNgsBufferInfo;
-typedef struct SceNgsSystemInitParams SceNgsSystemInitParams;
-typedef struct SceNgsCallbackListInfo SceNgsCallbackListInfo;
+typedef struct SceNgsCallbackListInfo {
+	SceNgsCallbackFunc callback;
+	const SceNgsCallbackInfo *callback_info; //!< Event information copied into user memory for an immediate callback.
+} SceNgsCallbackListInfo;
+VITASDK_BUILD_ASSERT_EQ(0x8, SceNgsCallbackListInfo); // size is from FW 3.60
+
 typedef struct SulphaNgsModuleQuery SulphaNgsModuleQuery;
 typedef struct SulphaNgsRegistration SulphaNgsRegistration;
-typedef struct SceNgsRackDescription SceNgsRackDescription;
-typedef struct SceNgsPatchSetupInfo SceNgsPatchSetupInfo;
-typedef struct SceNgsParamsDescriptor SceNgsParamsDescriptor;
-typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
-typedef struct SceNgsVoiceDefinition SceNgsVoiceDefinition;
 
 SceInt32 sceNgsModuleCheckParamsInRangeInternal(SceNgsHVoice handle, const SceNgsModuleID module_id, const SceNgsParamsDescriptor* descriptor, const SceUInt32 size);
 SceInt32 sceNgsModuleGetNumPresetsInternal(SceNgsHSynSystem handle, const SceNgsModuleID module_id, SceUInt32* num_presets);
@@ -58,17 +63,17 @@ SceInt32 sceNgsPatchCreateRoutingInternal(const SceNgsPatchSetupInfo* info, SceN
 SceInt32 sceNgsPatchRemoveRoutingInternal(SceNgsHPatch handle);
 SceInt32 sceNgsRackGetRequiredMemorySizeInternal(SceNgsHSynSystem handle, const SceNgsRackDescription* rack_description, SceUInt32* user_size);
 SceInt32 sceNgsRackGetVoiceHandleInternal(SceNgsHRack rack_handle, const SceUInt32 index, SceNgsHVoice* voice_handle);
-SceInt32 sceNgsRackInitInternal(SceNgsHSynSystem system_handle, SceNgsBufferInfo *rack_buffer, const SceNgsRackDescription* rack_description, SceNgsHRack* rack_handle);
+SceInt32 sceNgsRackInitInternal(SceNgsHSynSystem system_handle, SceNgsBufferInfo *rack_buffer, const SceNgsRackDescription *rack_description, SceNgsHRack *rack_handle);
 SceInt32 sceNgsRackReleaseInternal(SceNgsHRack handle, const SceNgsRackReleaseCallbackFunc callback);
 SceInt32 sceNgsRackSetParamErrorCallbackInternal(SceNgsHRack rack_handle, const SceNgsParamsErrorCallbackFunc callback);
 SceInt32 sceNgsSulphaGetInfoInternal(const SulphaNgsRegistration* obj_reg, SceNgsBufferInfo* info);
 SceInt32 sceNgsSulphaGetModuleListInternal(SceUInt32* module_ids, SceUInt32 in_array_count, SceUInt32* count);
-SceInt32 sceNgsSulphaGetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback* update_callback, SceNgsBufferInfo* info);
-SceInt32 sceNgsSulphaQueryModuleInternal(SulphaNgsModuleQueryType type, SulphaNgsModuleQuery* debug);
-SceInt32 sceNgsSulphaSetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback update_callback, SceNgsBufferInfo* info);
-SceInt32 sceNgsSystemGetCallbackListInternal(SceNgsHSynSystem handle, SceNgsCallbackListInfo** array, SceUInt32* array_size);
+SceInt32 sceNgsSulphaGetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback *update_callback, SceNgsBufferInfo *info);
+SceInt32 sceNgsSulphaQueryModuleInternal(SulphaNgsModuleQueryType type, SulphaNgsModuleQuery *query);
+SceInt32 sceNgsSulphaSetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback update_callback, SceNgsBufferInfo *info);
+SceInt32 sceNgsSystemGetCallbackListInternal(SceNgsHSynSystem handle, SceNgsCallbackListInfo **list, SceUInt32 *array_size);
 SceInt32 sceNgsSystemGetRequiredMemorySizeInternal(const SceNgsSystemInitParams* params, SceUInt32* size);
-SceInt32 sceNgsSystemInitInternal(SceNgsBufferInfo* buffer_info, const SceUInt32 compiled_sdk_version, const SceNgsSystemInitParams* params, SceNgsHSynSystem* handle);
+SceInt32 sceNgsSystemInitInternal(SceNgsBufferInfo *buffer_info, const SceUInt32 compiled_sdk_version, const SceNgsSystemInitParams *params, SceNgsHSynSystem *handle);
 SceInt32 sceNgsSystemLockInternal(SceNgsHSynSystem handle);
 SceInt32 sceNgsSystemPullDataInternal(SceNgsHSynSystem handle, const SceUInt32 dirty_flags_a, const SceUInt32 dirty_flags_b);
 SceInt32 sceNgsSystemPushDataInternal(SceNgsHSynSystem handle);

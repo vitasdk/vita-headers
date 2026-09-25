@@ -268,7 +268,7 @@ int sceCompatWriteShared32(int location, int value);
 /**
  * Write shared control
  *
- * @param[in] info - A pointer to a ::SceCtrlDataPsp structure.
+ * @param[in] pad_data - Pointer to a ::SceCtrlDataPsp structure.
  *
  * @return 0 on success, < 0 on error.
 */
@@ -302,9 +302,45 @@ int sceCompatGetDevInf(SceIoDevInfo *info);
 */
 int sceCompatGetCurrentSecureTick(SceRtcTick *tick);
 
+/**
+ * Read cached PSP activation data.
+ *
+ * FW 3.60 exposes the 0x1038-byte activation data cached by
+ * ::sceCompatStart to PSPEmu as `flash2:/act.dat`. This function only
+ * succeeds for the PSPEmu process associated with the active SceCompat
+ * instance.
+ *
+ * @param[in] index - Data selector. Must be 0 on FW 3.60.
+ * @param[in] offset - Byte offset in the cached activation data. Must be less
+ *                     than 0x1038.
+ * @param[out] buffer - Buffer that receives the requested bytes.
+ * @param[in] size - Number of bytes to read. The requested range must fit
+ *                   within the 0x1038-byte activation data.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceCompatDatRead(SceUInt32 index, SceUInt32 offset, void *buffer, SceSize size);
+
+/**
+ * Read a PSP IdStorage leaf.
+ *
+ * FW 3.60 accepts PSP keys from 0x100 through 0x13F and maps them to Vita
+ * IdStorage keys 0x0000 through 0x003F. The offset is within the resulting
+ * 0x200-byte leaf. A \a size of 0x200 or greater is treated as 0x200 before
+ * the requested range is checked. This function only succeeds for the PSPEmu
+ * process associated with the active SceCompat instance.
+ *
+ * @param[in] key - PSP IdStorage key from 0x100 through 0x13F.
+ * @param[in] offset - Byte offset within the 0x200-byte leaf.
+ * @param[out] buffer - Buffer that receives the requested bytes.
+ * @param[in] size - Number of bytes to read.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceCompatIdStorageLookup(SceUInt16 key, SceUInt32 offset, void *buffer, SceSize size);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* _PSP2_COMPAT_H_ */
-

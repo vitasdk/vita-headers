@@ -17,19 +17,19 @@ typedef int (* SceClassCallback)(void *item);
 
 typedef struct SceClass {
 	struct SceClass *next;
-	struct SceClass *root;
+	struct SceClass *root; //!< Root UID meta-class returned by ::ksceKernelGetUIDClass.
 	struct SceClass *prev;
 	const char *name;
-	struct SceClass *uidclass;
-	unsigned int attributes;
+	struct SceClass *uidclass; //!< Parent UID class.
+	unsigned int attributes; //!< The low byte is the class identifier assigned during registration.
 	unsigned short itemsize;
 	unsigned short itemsize_aligned;
 	unsigned int unk1C;
-	SceClassCallback create_cb;
-	SceClassCallback destroy_cb;
-	unsigned int magic; /* 0xABCE9DA5 */
+	SceClassCallback create_cb; //!< Constructor callback.
+	SceClassCallback destroy_cb; //!< Destructor callback.
+	unsigned int magic; //!< Must be set to 0xABCE9DA5.
 } SceClass;
-VITASDK_BUILD_ASSERT_EQ(0x2C, SceClass);
+VITASDK_BUILD_ASSERT_EQ(0x2C, SceClass); // size is from FW 3.60
 
 typedef struct SceObjectBase { // size is 0x8-bytes
 	union {

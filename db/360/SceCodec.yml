@@ -1,0 +1,19 @@
+version: 2
+firmware: 3.60
+modules:
+  SceCodec:
+    nid: 0x380F8D0A
+    libraries:
+      SceCodecForDriver:
+        kernel: true
+        nid: 0x7697DFB4
+        functions:
+          ksceCodecGetMicrophoneDetectStatus: 0xCF398D8A
+          ksceCodecGetOutputState: 0x41CFFE48
+          ksceCodecReadRegister: 0x4FA36937
+          ksceCodecSetAudioInputMode: 0xC1DB7BAF
+          ksceCodecSetAudioOutMode: 0xCCDE1B04
+          ksceCodecSetMicrophoneDetectPower: 0xE483B663
+          ksceCodecSetOutputRoute: 0x762BF716
+          ksceCodecSetVolume: 0x8932F886
+          ksceCodecWriteRegister: 0x23BF8884
